@@ -1,0 +1,37 @@
+var group___vibration_analysis_module =
+[
+    [ "vibrationanalysis.c", "vibrationanalysis_8c.html", null ],
+    [ "VibrationAnalysis_data", "struct_vibration_analysis__data.html", [
+      [ "accel_buffer_x", "struct_vibration_analysis__data.html#a1c4f1caaa11915257ec99b3841292f8f", null ],
+      [ "accel_buffer_y", "struct_vibration_analysis__data.html#a6b56e8afc834b7b333f9e9b892528901", null ],
+      [ "accel_buffer_z", "struct_vibration_analysis__data.html#ab01a06062a11abbb405e327a09e71c2b", null ],
+      [ "accels_data_sum_x", "struct_vibration_analysis__data.html#a8375582dc589620ab53390edfb693ffe", null ],
+      [ "accels_data_sum_y", "struct_vibration_analysis__data.html#a2b996437cad1e3f3b4ccc778204414cb", null ],
+      [ "accels_data_sum_z", "struct_vibration_analysis__data.html#a0f0a1b1722c1e486c3357fb779fb56bc", null ],
+      [ "accels_static_bias_x", "struct_vibration_analysis__data.html#a3e5ebbe079a826938c09c1ae8a4ce200", null ],
+      [ "accels_static_bias_y", "struct_vibration_analysis__data.html#aa8d73a97d8b11c051fb44a91bd0e8bd6", null ],
+      [ "accels_static_bias_z", "struct_vibration_analysis__data.html#a37519ec1ea4170dbc56cb69b80b8c337", null ],
+      [ "accels_sum_count", "struct_vibration_analysis__data.html#abc815ad1b428c5d352b467fd3e6bcb62", null ],
+      [ "buffers_size", "struct_vibration_analysis__data.html#a8bebd33e95edd2d27a37091569852851", null ],
+      [ "instances", "struct_vibration_analysis__data.html#aaf077dacd621291d66f629656085940c", null ],
+      [ "window_size", "struct_vibration_analysis__data.html#ac8ff384b85efcd695a76f9aa63f4f658", null ]
+    ] ],
+    [ "FLOAT_TO_FIXED", "group___vibration_analysis_module.html#ga8eae16ae14890baaf9faca178bfd5ca9", null ],
+    [ "MAX_ACCEL_RANGE", "group___vibration_analysis_module.html#ga0c8a7ffed4ffb0e7e225b6b2bf96500f", null ],
+    [ "MAX_QUEUE_SIZE", "group___vibration_analysis_module.html#ga623ec78b7909090dbedac4af1d52abb4", null ],
+    [ "MAX_WINDOW_SIZE", "group___vibration_analysis_module.html#ga52e7bfd213b4cf538c75ac8b8f099ab9", null ],
+    [ "SETTINGS_THROTTLING_MS", "group___vibration_analysis_module.html#ga6a126454dc325a4f285eb113c32fcbda", null ],
+    [ "STACK_SIZE_BYTES", "group___vibration_analysis_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725", null ],
+    [ "TASK_PRIORITY", "group___vibration_analysis_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c", null ],
+    [ "USE_SINGLE_INSTANCE_BUFFERS", "group___vibration_analysis_module.html#gad68c797396a9d0dae7d023d9d540d1e7", null ],
+    [ "VIBRATION_ELEMENTS_COUNT", "group___vibration_analysis_module.html#ga8932653c21d72c94cb75bd2389b1897a", null ],
+    [ "VibrationAnalysisCleanup", "group___vibration_analysis_module.html#gac00bc5354c6a3c9167cf61d1d44075f3", null ],
+    [ "VibrationAnalysisInitialize", "group___vibration_analysis_module.html#ga3dffd21cde6dad2be6f32b18c047876f", null ],
+    [ "VibrationAnalysisStart", "group___vibration_analysis_module.html#ga9afc18d6482a463630b18d52b3e913c9", null ],
+    [ "VibrationAnalysisTask", "group___vibration_analysis_module.html#ga3b1fb042a902db54655c1c5766fb2629", null ],
+    [ "module_enabled", "group___vibration_analysis_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac", null ],
+    [ "queue", "group___vibration_analysis_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30", null ],
+    [ "task", "group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904", null ],
+    [ "taskHandle", "group___vibration_analysis_module.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ],
+    [ "vtd", "group___vibration_analysis_module.html#gae03131bed65ed0a25b1944950b24f3e9", null ]
+];

@@ -1,0 +1,28 @@
+var structtelemetrydata =
+[
+    [ "altitude", "structtelemetrydata.html#ab08a1d071f8224e7c4bc65485b40b7de", null ],
+    [ "altitude_last", "structtelemetrydata.html#ab099aeb0527657b9623616363bf7e312", null ],
+    [ "Attitude", "structtelemetrydata.html#adb22734e5a96d845390342e23931040b", null ],
+    [ "Baro", "structtelemetrydata.html#a95445e792700792865187deaf658b5e2", null ],
+    [ "Battery", "structtelemetrydata.html#ae647a3c9245948eebf6f2830de795cf7", null ],
+    [ "climbrate10s", "structtelemetrydata.html#a63b6e240f43e038f6bf6f0f3afa5a0cd", null ],
+    [ "climbrate1s", "structtelemetrydata.html#ac80b877033cec08df5cf37e3e778b7ba", null ],
+    [ "climbrate3s", "structtelemetrydata.html#a3b86cf3ddb68cc78f5926ca23a7bfa96", null ],
+    [ "climbrate_pointer", "structtelemetrydata.html#a19f608ff64aaac19b03ed88254d1c1a5", null ],
+    [ "climbratebuffer", "structtelemetrydata.html#a52e488ffdddc533c203e4ae73da51082", null ],
+    [ "FlightStatus", "structtelemetrydata.html#a2fe47f67a9d625f0e82acb2c737a5f48", null ],
+    [ "GPS", "structtelemetrydata.html#a878a8fe45c1db4366adc424d748c81e5", null ],
+    [ "GPStime", "structtelemetrydata.html#a3a4e8b302f6609a596012e677703ce64", null ],
+    [ "Gyro", "structtelemetrydata.html#a4776f706ecc0cc2551b4f8be46d8fab1", null ],
+    [ "Home", "structtelemetrydata.html#a710d60dfa73878e93dbdc3cc20be923a", null ],
+    [ "homecourse", "structtelemetrydata.html#a0f68d2d62a22e81fe6780fa32f5ac25a", null ],
+    [ "homedistance", "structtelemetrydata.html#a87891612a54c81eb14cd00594f2a1d7f", null ],
+    [ "last_armed", "structtelemetrydata.html#aa25b2ac0a65e218d0f55e354b35ae00d", null ],
+    [ "max_altitude", "structtelemetrydata.html#a94604fc2dbdb7fb0b4a0d4a479fa4c06", null ],
+    [ "min_altitude", "structtelemetrydata.html#a73da75bceec1ecdb344c7c14b4fd94d2", null ],
+    [ "Position", "structtelemetrydata.html#a43730a36465143ea4a0edb601eceb4d9", null ],
+    [ "Settings", "structtelemetrydata.html#ac8fd1da7d9a229e4cbee9b2f2cff52b8", null ],
+    [ "statusline", "structtelemetrydata.html#aa6ccae299824599d88db344e95f02540", null ],
+    [ "SysAlarms", "structtelemetrydata.html#aedc653134702f8c5af1923ab0c5a10f2", null ],
+    [ "Velocity", "structtelemetrydata.html#a9e13ab1fbc35aa3717dfcb1cef027ebf", null ]
+];

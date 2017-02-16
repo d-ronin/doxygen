@@ -1,0 +1,25 @@
+var struct____attribute____ =
+[
+    [ "channel", "group___v_t_x_config.html#ga19e7199fa0c2f0b636742c6e9cec818b", null ],
+    [ "command", "group___v_t_x_config.html#ga693365a84f6f36a6323ff04a0409e9f7", null ],
+    [ "crc", "group___v_t_x_config.html#ga9fd5a4a8914d9b202579be2acf0f2923", null ],
+    [ "dummy", "group___v_t_x_config.html#gae0b7746cd2a5ecc22d8875fa742406e7", null ],
+    [ "flags", "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2", null ],
+    [ "freq0", "group___v_t_x_config.html#ga9416d7007d8bff8dcec3ed9a3167ce23", null ],
+    [ "freq1", "group___v_t_x_config.html#ga01c075dd85d00ee477a3a836ffbd908f", null ],
+    [ "gcsTelemetryUpdatePeriod", "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d", null ],
+    [ "hour", "group___tau_labs_libraries.html#ga71e693706579ad2249a892ba9c2b5869", null ],
+    [ "length", "group___v_t_x_config.html#ga3ddd0091402d85a50cf9eb63ff2c7d71", null ],
+    [ "loggingUpdatePeriod", "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed", null ],
+    [ "mday", "group___tau_labs_libraries.html#ga75deefd7d4b32263842eafcc8ce14151", null ],
+    [ "min", "group___tau_labs_libraries.html#ga66ccb4164ee0ccce3f2d7b40bd836193", null ],
+    [ "mode", "group___v_t_x_config.html#ga5b2fd634172bbc7ae36e14d6bb074956", null ],
+    [ "mon", "group___tau_labs_libraries.html#gae27dff85db06aa28b04e73dc6834fa23", null ],
+    [ "operation_mode", "group___v_t_x_config.html#gabdf85548aa430ab8cbe7c3cd54121369", null ],
+    [ "pwr", "group___v_t_x_config.html#ga015080f92311cb2608d26a360f593ea8", null ],
+    [ "pwr_level", "group___v_t_x_config.html#ga493118db0a52eb06f4826c6910751b39", null ],
+    [ "sec", "group___tau_labs_libraries.html#gaf03fca3f9a2f184f0895cb5c3a55af96", null ],
+    [ "telemetryUpdatePeriod", "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e", null ],
+    [ "wday", "group___tau_labs_libraries.html#ga652722d66b4003894f4cdfacc105d083", null ],
+    [ "year", "group___tau_labs_libraries.html#ga3bae5d542eaff9ba1984e3bf710f56f2", null ]
+];

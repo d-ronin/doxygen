@@ -1,0 +1,14 @@
+var struct_autotuned_values =
+[
+    [ "converged", "group___config_plugin.html#ga01349ac34ae06409bc63d4d75fc7b557", null ],
+    [ "damping", "group___config_plugin.html#gaff9e6bd56411b261c8313866ed6aaaba", null ],
+    [ "derivativeCutoff", "group___config_plugin.html#ga0c25d859b700b250d5c7631468e13dea", null ],
+    [ "iterations", "group___config_plugin.html#ga5aa52ceceb86ae990902713f22525907", null ],
+    [ "kd", "group___config_plugin.html#ga7546058de885b3a3f61181e130bb6e7f", null ],
+    [ "ki", "group___config_plugin.html#gadd098dfd7ce4d28cc46780eb81dabd5b", null ],
+    [ "kp", "group___config_plugin.html#gaf096662e811f7f3971f12b355d150890", null ],
+    [ "naturalFreq", "group___config_plugin.html#ga0bdffc881bb0b293072c161b551e89d4", null ],
+    [ "noiseSens", "group___config_plugin.html#ga108ba88b4cfefd5164ed5f01cd1f3e2e", null ],
+    [ "outerKi", "group___config_plugin.html#ga2044e8d543b407b0442948ab6d722867", null ],
+    [ "outerKp", "group___config_plugin.html#ga973511ccdf21f62b2ba1d2f91806e628", null ]
+];

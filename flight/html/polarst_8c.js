@@ -1,0 +1,27 @@
+var polarst_8c =
+[
+    [ "PI", "polarst_8c.html#a598a3330b3c21701223ee0ca14316eca", null ],
+    [ "PI_OVER_2", "polarst_8c.html#a27d2bea15134ae7c7f7a2d11379bde53", null ],
+    [ "POLAR_POW", "polarst_8c.html#ac93e05257a848c4e6881bf95aded4e5e", null ],
+    [ "TWO_PI", "polarst_8c.html#a3b947f4b635461030ff2d87833e5049e", null ],
+    [ "Convert_Geodetic_To_Polar_Stereographic", "polarst_8c.html#a7cbb0f9d1038cf294ba05ebc86ae3aa2", null ],
+    [ "Convert_Polar_Stereographic_To_Geodetic", "polarst_8c.html#a031862d993d1a191a7a9d6d1be1f9545", null ],
+    [ "Get_Polar_Stereographic_Parameters", "polarst_8c.html#a809bb2a10fed1ea48f7cdd43ee1274e8", null ],
+    [ "Set_Polar_Stereographic_Parameters", "polarst_8c.html#a7a75b6aac19e10ddef1d050bf2b62c4f", null ],
+    [ "e4", "polarst_8c.html#a65539685c79a10765a00ee8011840e5d", null ],
+    [ "es", "polarst_8c.html#a1c8e4c27784e06b5c04fe7b8c84abe56", null ],
+    [ "es_OVER_2", "polarst_8c.html#ab5ed32cf513d870381be60c311c07399", null ],
+    [ "PI_Over_4", "polarst_8c.html#a7b75c0bd3135a61f8711a2e7b2dd6f54", null ],
+    [ "Polar_a", "polarst_8c.html#aab2379dcc94b02b2282e7462550954e6", null ],
+    [ "Polar_a_mc", "polarst_8c.html#adc4a006c16b7308602b93b1270464162", null ],
+    [ "Polar_Delta_Easting", "polarst_8c.html#a6fb27fe54463e39bdf5161d131f0ce54", null ],
+    [ "Polar_Delta_Northing", "polarst_8c.html#a848db0f263a29d86b26d0d7513ce99a9", null ],
+    [ "Polar_f", "polarst_8c.html#ac13743160f7625b000ad8e5b124e849b", null ],
+    [ "Polar_False_Easting", "polarst_8c.html#afc517cf630a452fc435646bd1d7c35da", null ],
+    [ "Polar_False_Northing", "polarst_8c.html#a4f18a8b64d2520eef49f28b1d3007752", null ],
+    [ "Polar_Origin_int", "polarst_8c.html#abe5e19152c258e86044a5de96a8bffe1", null ],
+    [ "Polar_Origin_Lat", "polarst_8c.html#aafb9786d6aa62d54216415df4b4f24bc", null ],
+    [ "Southern_Hemisphere", "polarst_8c.html#a28372ec37f7332750444a791b4431ff0", null ],
+    [ "tc", "polarst_8c.html#a571da6d58a2b5ddc0316b7c474a2b3af", null ],
+    [ "two_Polar_a", "polarst_8c.html#a3f852e61b6b023214da9879bf995a6cb", null ]
+];

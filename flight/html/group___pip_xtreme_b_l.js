@@ -1,0 +1,28 @@
+var group___pip_xtreme_b_l =
+[
+    [ "LOG_FILENAME", "group___pip_xtreme_b_l.html#ga905b7c29adff0a55966dc2bdd1578a6c", null ],
+    [ "PIOS_INCLUDE_ANNUNC", "group___pip_xtreme_b_l.html#ga464462d5068d115f79148efdffefb418", null ],
+    [ "PIOS_INCLUDE_BL_HELPER", "group___pip_xtreme_b_l.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
+    [ "PIOS_INCLUDE_BL_HELPER_WRITE_SUPPORT", "group___pip_xtreme_b_l.html#gab7e40a288a4552f683f78126cf923761", null ],
+    [ "PIOS_INCLUDE_COM_MSG", "group___pip_xtreme_b_l.html#gaa481fbc97c64c579738c2bf6ea8482d0", null ],
+    [ "PIOS_INCLUDE_GPIO", "group___pip_xtreme_b_l.html#gaeb874e5501a09124bc9f0c0558f302af", null ],
+    [ "PIOS_INCLUDE_IAP", "group___pip_xtreme_b_l.html#ga3442464c6b8e8869621e4b7103782cec", null ],
+    [ "PIOS_INCLUDE_SYS", "group___pip_xtreme_b_l.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
+    [ "PIOS_INCLUDE_USB", "group___pip_xtreme_b_l.html#ga609bad0a7167d95b8aa65c05cd6cf739", null ],
+    [ "PIOS_INCLUDE_USB_HID", "group___pip_xtreme_b_l.html#ga71ac5951782a849bcc916fe21f1df092", null ],
+    [ "PIOS_USB_BOARD_BL_HID_HAS_NO_LENGTH_BYTE", "group___pip_xtreme_b_l.html#ga3d8a8dd4fe04ce0cf958a0eb0d390036", null ],
+    [ "PIOS_USB_BOARD_DEVICE_VER", "group___pip_xtreme_b_l.html#ga7ce8753ec1333024258386fa8db2d06c", null ],
+    [ "PIOS_USB_BOARD_EP_NUM", "group___pip_xtreme_b_l.html#gac4f520b768eb8d2468d648fc0f2346e0", null ],
+    [ "PIOS_USB_BOARD_HID_DATA_LENGTH", "group___pip_xtreme_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae", null ],
+    [ "PIOS_USB_BOARD_PRODUCT_ID", "group___pip_xtreme_b_l.html#gae4177b7c24195f8e3f020b7881e8533f", null ],
+    [ "PIOS_USB_BOARD_SN_SUFFIX", "group___pip_xtreme_b_l.html#ga4b5be4363ddc411b8e1841cde2129485", null ],
+    [ "PIOS_USB_BOARD_VENDOR_ID", "group___pip_xtreme_b_l.html#ga007e101874fb595709b6f50949ac9f35", null ],
+    [ "STARTUP_LOG_ENABLED", "group___pip_xtreme_b_l.html#gac446a4880b98dfebb3ef3ecf17c064c8", null ],
+    [ "PIOS_Board_Init", "group___pip_xtreme_b_l.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
+    [ "PIOS_USB_BOARD_DATA_Init", "group___pip_xtreme_b_l.html#ga5efd94ab761f254827f38dba474cf642", null ],
+    [ "pios_com_telem_usb_id", "group___pip_xtreme_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
+    [ "usb_lang_id", "group___pip_xtreme_b_l.html#gae0f4171e328334a837e94417dfe669a7", null ],
+    [ "usb_product_id", "group___pip_xtreme_b_l.html#gaa983a568a9ffa38ea9c5d12b40cc8177", null ],
+    [ "usb_serial_number", "group___pip_xtreme_b_l.html#ga7fb0a04d4a254721b671a62407337538", null ],
+    [ "usb_vendor_id", "group___pip_xtreme_b_l.html#ga3824ebcfabf732e7e2b7f22af76aa61e", null ]
+];
