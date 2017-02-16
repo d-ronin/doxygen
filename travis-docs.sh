@@ -47,7 +47,8 @@ if [ -n "${GH_REPO_TOKEN}" ] && \
     git config user.email "travis@travis-ci.org"
 
     git add --all
-    git commit --quiet -m "Auto-generated docs from travis-ci build: ${TRAVIS_BUILD_NUMBER}" -m "Commit: ${PROJECT_REV}"
+    # this will fail if no changes so or with true
+    git commit --quiet -m "Auto-generated docs from travis-ci build: ${TRAVIS_BUILD_NUMBER}" -m "Commit: ${PROJECT_REV}" || true
     
     git remote add origin-pages https://${GH_REPO_TOKEN}@${GH_REPO_REF} > /dev/null 2>&1
     git push --set-upstream origin-pages gh-pages > /dev/null 2>&1
