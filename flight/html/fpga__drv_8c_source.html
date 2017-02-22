@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">553ba38</span>
+   &#160;<span id="projectnumber">16303f6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -633,7 +633,7 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> ws2811_dev)</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;{</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(ws2811_dev-&gt;magic == WS2811_MAGIC);</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        uint16_t n_leds = <a class="code" href="group___tau_labs_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(ws2811_dev-&gt;max_idx + 1, 1024);</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
