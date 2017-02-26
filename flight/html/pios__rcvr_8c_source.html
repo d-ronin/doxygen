@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16303f6</span>
+   &#160;<span id="projectnumber">4259048</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('pios__rcvr_8c_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> rcvr_dev-&gt;driver-&gt;read(rcvr_dev-&gt;lower_id, channel);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define MIN_WAKE_INTERVAL_MS 4  </span><span class="comment">/* 250Hz ought to be enough for anyone*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define MIN_WAKE_INTERVAL_uS 4000       </span><span class="comment">/* 250Hz ought to be enough for anyone*/</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#ga659833988d07724d3dfeff4929f423b4">PIOS_RCVR_WaitActivity</a>(uint32_t timeout_ms) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (rcvr_activity) {</div>
@@ -212,14 +212,14 @@ $(document).ready(function(){initNavTree('pios__rcvr_8c_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaa377fe949ee9b1184d82165b39a7476a">PIOS_RCVR_Active</a>() {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_MS) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_uS) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(rcvr_activity);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaf462f5635dcf49c9ca3c594a7538ad65">PIOS_RCVR_ActiveFromISR</a>() {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_MS) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_uS) {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> dont_care;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
