@@ -16,5 +16,5 @@ var searchData=
   ['pwm_20input_20functions',['PWM Input Functions',['../group___p_i_o_s___p_w_m.html',1,'']]],
   ['px4flow_20functions',['PX4Flow Functions',['../group___p_i_o_s___p_x4_f_l_o_w.html',1,'']]],
   ['pios_20flash_20internal_20flash_20driver',['PIOS Flash internal flash driver',['../group___pios_flash_internal.html',1,'']]],
-  ['playuavosd',['PlayUavOsd',['../group___play_uav_osd.html',1,'(Global Namespace)'],['../group___play_u_a_v_o_s_d.html',1,'(Global Namespace)']]]
+  ['playuavosd',['PlayUavOsd',['../group___play_uav_osd.html',1,'']]]
 ];

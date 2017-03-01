@@ -112,6 +112,7 @@ var dir_200b35b1542c93b64136a2bd7f9276c2 =
     [ "pios_tim.h", "pios__tim_8h.html", null ],
     [ "pios_tim_priv.h", "pios__tim__priv_8h.html", "pios__tim__priv_8h" ],
     [ "pios_usb.h", "pios__usb_8h.html", "pios__usb_8h" ],
+    [ "pios_usb_board_data.h", "pios__usb__board__data_8h.html", "pios__usb__board__data_8h" ],
     [ "pios_usb_board_data_priv.h", "pios__usb__board__data__priv_8h.html", "pios__usb__board__data__priv_8h" ],
     [ "pios_usb_cdc_priv.h", "pios__usb__cdc__priv_8h.html", "pios__usb__cdc__priv_8h" ],
     [ "pios_usb_defs.h", "pios__usb__defs_8h.html", "pios__usb__defs_8h" ],

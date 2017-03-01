@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_Mag_Probe(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_MPU_MAG</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_Validate(<span class="keyword">struct</span> pios_mpu_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_Validate(<span class="keyword">struct</span> pios_mpu_dev *dev);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_Config(<span class="keyword">struct</span> <a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> <span class="keyword">const</span> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_MPU_Task(<span class="keywordtype">void</span> *parameters);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_ReadReg(uint8_t reg);</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>pios_mpu_dev *PIOS_MPU_Alloc(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">struct </span>pios_mpu_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">struct </span>pios_mpu_dev *dev;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        dev = (<span class="keyword">struct </span>pios_mpu_dev *)<a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*mpu_dev));</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span> (!dev)</div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> dev;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">static</span> int32_t PIOS_MPU_Validate(<span class="keyword">struct</span> pios_mpu_dev *dev)</div>
@@ -715,7 +715,7 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                *dev = mpu_dev;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                mpu_dev = *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                mpu_dev = *dev;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        }</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        mpu_dev-&gt;com_driver_type = PIOS_MPU_COM_I2C;</div>
@@ -784,7 +784,7 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                *dev = mpu_dev;</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                mpu_dev = *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                mpu_dev = *dev;</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        }</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        mpu_dev-&gt;com_driver_type = PIOS_MPU_COM_SPI;</div>
@@ -1249,7 +1249,6 @@ $(document).ready(function(){initNavTree('pios__mpu_8c_source.html','');});
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___copter_control_b_l_html_ga2414697de79a243562514a0a4344a4dd"><div class="ttname"><a href="group___copter_control_b_l.html#ga2414697de79a243562514a0a4344a4dd">status</a></div><div class="ttdeci">int16_t status</div><div class="ttdef"><b>Definition:</b> <a href="bl_2f1_2main_8c_source.html#l00061">main.c:61</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#ggadabcc04ab28fdab6eb2e43278d4446c4adbacd2c3435e3329126e9fc2fc385e26">PIOS_MPU_SCALE_2000_DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00116">pios_mpu.h:116</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_ga3b7b5a321ee4ab5f54e685c4f694ea80"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#ga3b7b5a321ee4ab5f54e685c4f694ea80">PIOS_MPU_AK8963_ST2_BITM</a></div><div class="ttdeci">#define PIOS_MPU_AK8963_ST2_BITM</div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu__priv_8h_source.html#l00133">pios_mpu_priv.h:133</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_ga5113d84571697f0d1cb7f7a274cc8979"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#ga5113d84571697f0d1cb7f7a274cc8979">PIOS_MPU_SLV0_ADDR_REG</a></div><div class="ttdeci">#define PIOS_MPU_SLV0_ADDR_REG</div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu__priv_8h_source.html#l00042">pios_mpu_priv.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00087">pios_sensors.h:87</a></div></div>

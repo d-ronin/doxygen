@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['bcd_5fdevice_5fbootloader',['BCD_DEVICE_BOOTLOADER',['../group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1',1,'Core::IBoardType']]],
+  ['bcd_5fdevice_5ffirmware',['BCD_DEVICE_FIRMWARE',['../group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81',1,'Core::IBoardType']]],
+  ['bcd_5fdevice_5fupgrader',['BCD_DEVICE_UPGRADER',['../group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aff451dedb1ef558ed3f6d924e49e8e64',1,'Core::IBoardType']]],
   ['beforefirst',['beforeFirst',['../group___notify_plugin.html#ggae06307a2462eb7facbdd57c2992b8dc6af3a07edb74d1ab9b39fd6db3b1d6ad00',1,'NotificationItem']]],
   ['beforesecond',['beforeSecond',['../group___notify_plugin.html#ggae06307a2462eb7facbdd57c2992b8dc6ac0e140c5209cc791f99fc19ddf8fe6f0',1,'NotificationItem']]],
   ['between',['BETWEEN',['../class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cbaabc95b31ce0e072b3e30a5ef80063568',1,'UAVObjectField']]],

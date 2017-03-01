@@ -3,7 +3,6 @@ var group___tau_labs_targets =
     [ "FlyingF4 support files", "group___flying_f4.html", "group___flying_f4" ],
     [ "FC support files", "group___brain_f_p_v.html", "group___brain_f_p_v" ],
     [ "OpenPilot coptercontrol 3D support files", "group___c_c3_d.html", "group___c_c3_d" ],
-    [ "OpenPilot coptercontrol support files", "group___copter_control.html", "group___copter_control" ],
     [ "DiscoveryF4 support files", "group___discovery_f4.html", "group___discovery_f4" ],
     [ "FlyingF3 support files", "group___flying_f3.html", "group___flying_f3" ],
     [ "DTF support files", "group___d_t_fc.html", "group___d_t_fc" ],

@@ -30,7 +30,6 @@ var searchData=
   ['roll',['roll',['../group___h_i_t_l_plugin.html#ga1e4f51848f0c33a0264bc1fc9acb63db',1,'_FLIGHT_PARAM::roll()'],['../group___h_i_t_l_plugin.html#ga8f2327775c3342e13799a4ed6392f23f',1,'Output2Hardware::roll()'],['../group___setup_wizard.html#ga41061bf67fafdf170291f3a518268645',1,'mixerChannelSettings::roll()']]],
   ['rolldesired',['rollDesired',['../group___h_i_t_l_plugin.html#ga56fde0222228b19a5ed9e89efd765da0',1,'Output2Hardware']]],
   ['rollrate',['rollRate',['../group___h_i_t_l_plugin.html#ga81680dc2663395de5b3f4aeaeb9f35f9',1,'Output2Hardware']]],
-  ['runningmode',['runningMode',['../group___core_plugin.html#ga8e598df3f5e0f673451cbaf22bcd71d7',1,'Core::IBoardType::USBInfo']]],
   ['runningthreads',['runningThreads',['../group___t_l_map_widget.html#gae7dc693c162396310de691f67b4b0e99',1,'diagnostics']]],
   ['rxbuffer',['rxBuffer',['../group___u_a_v_talk_plugin.html#ga612e1b395a61ee81d90d8199ba789a86',1,'UAVTalk']]],
   ['rxbytes',['rxBytes',['../group___u_a_v_talk_plugin.html#gadda927fbb6858f5e60b6daf16d5bc94e',1,'Telemetry::TelemetryStats::rxBytes()'],['../group___u_a_v_talk_plugin.html#ga93a6f8b7f60333a7e7afb70085ca7efd',1,'UAVTalk::ComStats::rxBytes()']]],

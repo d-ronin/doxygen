@@ -223,6 +223,7 @@ var hierarchy =
     [ "QList< Core::Core::IOptionsPage * >", "class_q_list.html", null ],
     [ "QList< Core::GlobalMessage * >", "class_q_list.html", null ],
     [ "QList< Core::IBoardType * >", "class_q_list.html", null ],
+    [ "QList< Core::IBoardType::USBInfo >", "class_q_list.html", null ],
     [ "QList< Core::IConnection * >", "class_q_list.html", null ],
     [ "QList< Core::Internal::ShortcutItem * >", "class_q_list.html", null ],
     [ "QList< Core::IOptionsPage * >", "class_q_list.html", null ],

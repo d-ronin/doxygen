@@ -2,7 +2,7 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
 [
     [ "pios_adc.c", "pios__adc_8c.html", "pios__adc_8c" ],
     [ "pios_annuncdac.c", "pios__annuncdac_8c.html", null ],
-    [ "pios_bmi160.c", "pios__bmi160_8c.html", "pios__bmi160_8c" ],
+    [ "pios_bmi160.c", "pios__bmi160_8c.html", null ],
     [ "pios_bmm150.c", "pios__bmm150_8c.html", null ],
     [ "pios_bmp085.c", "pios__bmp085_8c.html", null ],
     [ "pios_bmp280.c", "pios__bmp280_8c.html", null ],

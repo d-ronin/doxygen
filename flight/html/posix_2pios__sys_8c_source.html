@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> fail;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;bmx055&quot;</span>)) {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keyword">struct </span><a class="code" href="structpios__bmx055__cfg.html">pios_bmx055_cfg</a> *bmx055_cfg;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_x055.html#ga1014bdd38922c45ea60bdf8312e7bd39">pios_bmx055_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_x055.html#ga1014bdd38922c45ea60bdf8312e7bd39">pios_bmx055_dev_t</a> dev;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                bmx055_cfg = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*bmx055_cfg));</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                bzero(bmx055_cfg, <span class="keyword">sizeof</span>(*bmx055_cfg));</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> fail;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;bmm150&quot;</span>)) {</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keyword">struct </span><a class="code" href="structpios__bmm150__cfg.html">pios_bmm150_cfg</a> *bmm150_cfg;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_x055.html#gaaacd45237d95b5c612607b43b3db31d3">pios_bmm150_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <a class="code" href="group___p_i_o_s___b_m_x055.html#gaaacd45237d95b5c612607b43b3db31d3">pios_bmm150_dev_t</a> dev;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                bmm150_cfg = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*bmm150_cfg));</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                bzero(bmm150_cfg, <span class="keyword">sizeof</span>(*bmm150_cfg));</div>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> fail;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;flyingpio&quot;</span>)) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <a class="code" href="group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gacd03c613dac1bd6fc177a913e1105b75">pios_flyingpio_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <a class="code" href="group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gacd03c613dac1bd6fc177a913e1105b75">pios_flyingpio_dev_t</a> dev;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="keywordtype">int</span> ret = <a class="code" href="group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#ga57c25a692233d2bed4b473259bc57cbb">PIOS_FLYINGPIO_SPI_Init</a>(&amp;dev, spi_devs[bus_num], dev_num);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
@@ -646,7 +646,6 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_ggaff22ef86d336d60bec130dbec43b0a41a7afb37e007f0484fe04fb70081a82711"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#ggaff22ef86d336d60bec130dbec43b0a41a7afb37e007f0484fe04fb70081a82711">PIOS_BMM_TOP_90DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150_8h_source.html#l00035">pios_bmm150.h:35</a></div></div>
 <div class="ttc" id="structpios__ms5611__cfg_html"><div class="ttname"><a href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a></div><div class="ttdoc">Configuration structure for the MS5611 driver. </div><div class="ttdef"><b>Definition:</b> <a href="pios__ms5611__priv_8h_source.html#l00043">pios_ms5611_priv.h:43</a></div></div>
 <div class="ttc" id="group___aq32_html_gad6409f51ab61c676f1a82e4d50b1fd68"><div class="ttname"><a href="group___aq32.html#gad6409f51ab61c676f1a82e4d50b1fd68">PIOS_COM_OPENLOG</a></div><div class="ttdeci">#define PIOS_COM_OPENLOG</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2pios__board_8h_source.html#l00131">pios_board.h:131</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="structpios__ms5611__cfg_html_a07e19545d4961ed113e3413ad0c4965c"><div class="ttname"><a href="structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c">pios_ms5611_cfg::oversampling</a></div><div class="ttdeci">enum pios_ms5611_osr oversampling</div><div class="ttdef"><b>Definition:</b> <a href="pios__ms5611__priv_8h_source.html#l00046">pios_ms5611_priv.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga1e93fbf23a8e6780569ad5de1668db17"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_ASCII_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00035">pios_sys.h:35</a></div></div>
 <div class="ttc" id="pios__spi__posix__priv_8h_html"><div class="ttname"><a href="pios__spi__posix__priv_8h.html">pios_spi_posix_priv.h</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -103,13 +103,14 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___u_s_b.html','');});
   <div class="summary">
 <a href="#files">Files</a> &#124;
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">USB Functions<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>PIOS interface for USB device driver.  
+<p>Defines for board specific usb information.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
@@ -126,6 +127,25 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__usb__cfg.html">pios_usb_cfg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga71c1891d07024986e5a249d991e1867b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">PIOS_USB_BOARD_CDC_DATA_LENGTH</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:ga71c1891d07024986e5a249d991e1867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76a98428f2f7cad1b787b6f390781738"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">PIOS_USB_BOARD_CDC_MGMT_LENGTH</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga76a98428f2f7cad1b787b6f390781738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6ef33a0055e1eb8c61bd71801907dae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:gab6ef33a0055e1eb8c61bd71801907dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga007e101874fb595709b6f50949ac9f35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga007e101874fb595709b6f50949ac9f35">PIOS_USB_BOARD_VENDOR_ID</a>&#160;&#160;&#160;DRONIN_VID_DRONIN_FIRMWARE</td></tr>
+<tr class="separator:ga007e101874fb595709b6f50949ac9f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4177b7c24195f8e3f020b7881e8533f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#gae4177b7c24195f8e3f020b7881e8533f">PIOS_USB_BOARD_PRODUCT_ID</a>&#160;&#160;&#160;DRONIN_PID_DRONIN_FIRMWARE</td></tr>
+<tr class="separator:gae4177b7c24195f8e3f020b7881e8533f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4f520b768eb8d2468d648fc0f2346e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#gac4f520b768eb8d2468d648fc0f2346e0">PIOS_USB_BOARD_EP_NUM</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gac4f520b768eb8d2468d648fc0f2346e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ce8753ec1333024258386fa8db2d06c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga7ce8753ec1333024258386fa8db2d06c">PIOS_USB_BOARD_DEVICE_VER</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga7754f1bc7f567c7020835590e6d4d070">USB_OP_DEVICE_VER</a>(0, <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga49052e38fe7f9608cde64c04bf6fbd9a">USB_OP_BOARD_MODE_FW</a>)</td></tr>
+<tr class="separator:ga7ce8753ec1333024258386fa8db2d06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b5be4363ddc411b8e1841cde2129485"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga4b5be4363ddc411b8e1841cde2129485">PIOS_USB_BOARD_SN_SUFFIX</a>&#160;&#160;&#160;&quot;+FW&quot;</td></tr>
+<tr class="separator:ga4b5be4363ddc411b8e1841cde2129485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga45bd0a1ecf523ffdf65fc78cbf8574ea"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b.html#ga45bd0a1ecf523ffdf65fc78cbf8574ea">PIOS_USB_Reenumerate</a> ()</td></tr>
@@ -140,8 +160,122 @@ Functions</h2></td></tr>
 <tr class="separator:gadef7295623a029e8d2384dd88f034d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>PIOS interface for USB device driver. </p>
+<p>Defines for board specific usb information. </p>
 <p>PIOS USB device implementation.</p>
+<p>PIOS interface for USB device driver.</p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga71c1891d07024986e5a249d991e1867b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_CDC_DATA_LENGTH&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00037">37</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga76a98428f2f7cad1b787b6f390781738"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_CDC_MGMT_LENGTH&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00038">38</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7ce8753ec1333024258386fa8db2d06c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_DEVICE_VER&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga7754f1bc7f567c7020835590e6d4d070">USB_OP_DEVICE_VER</a>(0, <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga49052e38fe7f9608cde64c04bf6fbd9a">USB_OP_BOARD_MODE_FW</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00070">70</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac4f520b768eb8d2468d648fc0f2346e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_EP_NUM&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00069">69</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab6ef33a0055e1eb8c61bd71801907dae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_HID_DATA_LENGTH&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00039">39</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae4177b7c24195f8e3f020b7881e8533f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_PRODUCT_ID&#160;&#160;&#160;DRONIN_PID_DRONIN_FIRMWARE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00067">67</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4b5be4363ddc411b8e1841cde2129485"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_SN_SUFFIX&#160;&#160;&#160;&quot;+FW&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00071">71</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga007e101874fb595709b6f50949ac9f35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_USB_BOARD_VENDOR_ID&#160;&#160;&#160;DRONIN_VID_DRONIN_FIRMWARE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__usb__board__data_8h_source.html#l00066">66</a> of file <a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga849bc66f0665ff6328b57ec3aa7c03f9"></a>
 <div class="memitem">

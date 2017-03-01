@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('pios__bmm150_8c_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>pios_bmm150_dev *PIOS_BMM_Alloc(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__bmm150__cfg.html">pios_bmm150_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">static</span> int32_t PIOS_BMM_Validate(<span class="keyword">struct</span> pios_bmm150_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">static</span> int32_t PIOS_BMM_Validate(<span class="keyword">struct</span> pios_bmm150_dev *dev);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_BMM_Task(<span class="keywordtype">void</span> *parameters);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('pios__bmm150_8c_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>pios_bmm150_dev *PIOS_BMM_Alloc(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__bmm150__cfg.html">pios_bmm150_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span>pios_bmm150_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span>pios_bmm150_dev *dev;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        dev = (<span class="keyword">struct </span>pios_bmm150_dev *)<a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*bmm_dev));</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (!dev)</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('pios__bmm150_8c_source.html','');});
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> dev;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">static</span> int32_t PIOS_BMM_Validate(<span class="keyword">struct</span> pios_bmm150_dev *dev)</div>
@@ -742,7 +742,6 @@ $(document).ready(function(){initNavTree('pios__bmm150_8c_source.html','');});
 <div class="ttc" id="group___aq32_html_gaa2230ce045fa6f32269efa3202144ffd"><div class="ttname"><a href="group___aq32.html#gaa2230ce045fa6f32269efa3202144ffd">DEBUG_PRINTF</a></div><div class="ttdeci">#define DEBUG_PRINTF(level,...)</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2pios__board_8h_source.html#l00039">pios_board.h:39</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_gaa84236eb6e3a124f490db92971bd9070"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#gaa84236eb6e3a124f490db92971bd9070">BMM150_REG_MAG_Y_LSB</a></div><div class="ttdeci">#define BMM150_REG_MAG_Y_LSB</div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150__priv_8h_source.html#l00037">pios_bmm150_priv.h:37</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00087">pios_sensors.h:87</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_ga9dfac4df9a8d5c19d8f0075a10eca638"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#ga9dfac4df9a8d5c19d8f0075a10eca638">BMM150_REG_MAG_CHIPID</a></div><div class="ttdeci">#define BMM150_REG_MAG_CHIPID</div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150__priv_8h_source.html#l00033">pios_bmm150_priv.h:33</a></div></div>
 <div class="ttc" id="pios__bmm150__priv_8h_html"><div class="ttname"><a href="pios__bmm150__priv_8h.html">pios_bmm150_priv.h</a></div></div>

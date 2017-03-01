@@ -16,6 +16,7 @@ var searchData=
   ['boardid',['boardID',['../group___u_a_v_object_util_plugin.html#gae920502ccf0fd693241d0d4b93dfc535',1,'deviceDescriptorStruct']]],
   ['boardmanager',['BoardManager',['../group___core_plugin.html#ga4f2c52bc9064410a9ea3b15de6b3b172',1,'Core::BoardManager::BoardManager()'],['../group___core_plugin.html#ga93b0c02bac385343c0968723fad3504a',1,'Core::Internal::CoreImpl::boardManager()'],['../group___core_plugin.html#ga01532acba71e5af5bee3777209aebf7d',1,'Core::ICore::boardManager()'],['../group___core_plugin.html#ga7325ec21ffd857f0bd272a845f80e0c9',1,'Core::Internal::MainWindow::boardManager()']]],
   ['boardtypeunknown',['BoardtypeUnknown',['../group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a',1,'BoardtypeUnknown']]],
+  ['bootloaderusbinfo',['bootloaderUSBInfo',['../group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754',1,'Core::IBoardType']]],
   ['bordercolor',['borderColor',['../class_utils_1_1_style_helper.html#a46f75b94128274c99db6fee18dc845b3',1,'Utils::StyleHelper']]],
   ['bottom',['Bottom',['../group___t_l_map_widget.html#ga9c67095a9af32efd25d873638e82a4d6',1,'internals::Rectangle::Bottom()'],['../group___t_l_map_widget.html#ga56065ec26f127c4763bcb6002a1f4e23',1,'internals::RectLatLng::Bottom()']]],
   ['bound',['bound',['../group___t_l_map_widget.html#ga0a978f088a3c28b59ce7bdf4ac3ab238',1,'internals::PureProjection']]],

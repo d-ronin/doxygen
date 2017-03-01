@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('pios__fskdac_8c_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_FSKDAC_cb(<span class="keywordtype">void</span> *ctx, uint16_t *buf, <span class="keywordtype">int</span> len)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#gab10220c0f7905f0817f3f91c62368d19">fskdac_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a> = ctx;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#gab10220c0f7905f0817f3f91c62368d19">fskdac_dev_t</a> dev = ctx;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">bool</span> no_next_c = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
@@ -336,7 +336,6 @@ $(document).ready(function(){initNavTree('pios__fskdac_8c_source.html','');});
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_s_k_d_a_c_html_gab10220c0f7905f0817f3f91c62368d19"><div class="ttname"><a href="group___p_i_o_s___f_s_k_d_a_c.html#gab10220c0f7905f0817f3f91c62368d19">fskdac_dev_t</a></div><div class="ttdeci">struct fskdac_dev_s * fskdac_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__fskdac_8h_source.html#l00039">pios_fskdac.h:39</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_s_k_d_a_c_html_ga2883aeb19f38f83a40f3d9007e42ef21"><div class="ttname"><a href="group___p_i_o_s___f_s_k_d_a_c.html#ga2883aeb19f38f83a40f3d9007e42ef21">PIOS_FSKDAC_Init</a></div><div class="ttdeci">int32_t PIOS_FSKDAC_Init(fskdac_dev_t *fskdac_id, dac_dev_t dac)</div><div class="ttdoc">Allocate and initialise FSKDAC device. </div></div>
 <div class="ttc" id="pios__fskdac_8h_html"><div class="ttname"><a href="pios__fskdac_8h.html">pios_fskdac.h</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>

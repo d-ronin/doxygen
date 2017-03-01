@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -358,6 +358,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>
  }</td></tr>
 <tr class="separator:ga4ea096d9369e2535cca49f9ee93ba04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5da6a391b4825fe57d10ab08b5e6482"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gae5da6a391b4825fe57d10ab08b5e6482">Core::IBoardType::BcdDevice</a> { <a class="el" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1">Core::IBoardType::BCD_DEVICE_BOOTLOADER</a> = 1, 
+<a class="el" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81">Core::IBoardType::BCD_DEVICE_FIRMWARE</a> = 2, 
+<a class="el" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aff451dedb1ef558ed3f6d924e49e8e64">Core::IBoardType::BCD_DEVICE_UPGRADER</a> = 3
+ }</td></tr>
+<tr class="separator:gae5da6a391b4825fe57d10ab08b5e6482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf73287914241594ba6e179f65b63bd61"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaf73287914241594ba6e179f65b63bd61">Core::IVersionControl::Operation</a> { <a class="el" href="group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ab53ae2491f4fe42036cf680c3cc1b67b">Core::IVersionControl::AddOperation</a>, 
 <a class="el" href="group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875">Core::IVersionControl::DeleteOperation</a>, 
 <a class="el" href="group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61a4afe4a1145dbcd2b6f7ebdda837ad06a">Core::IVersionControl::OpenOperation</a>
@@ -1040,6 +1045,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga0ed7555de2d566e21edbb19af678a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80c83327d603cfb00595f59c7503c3d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; GlobalMessage * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga80c83327d603cfb00595f59c7503c3d1">Core::GlobalMessaging::getInfos</a> ()</td></tr>
 <tr class="separator:ga80c83327d603cfb00595f59c7503c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa40e951c34a0c8c4153e942f51d557e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaa40e951c34a0c8c4153e942f51d557e0">Core::IBoardType::USBInfo::USBInfo</a> (int vendorID, int productID, int bcdDevice)</td></tr>
+<tr class="separator:gaa40e951c34a0c8c4153e942f51d557e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7a5ac1921113d9ab3a8181acb704c08"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gab7a5ac1921113d9ab3a8181acb704c08">Core::IBoardType::shortName</a> ()=0</td></tr>
 <tr class="separator:gab7a5ac1921113d9ab3a8181acb704c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4ab160d20fd133acd9df87eaa398e8f"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gad4ab160d20fd133acd9df87eaa398e8f">Core::IBoardType::boardDescription</a> ()=0</td></tr>
@@ -1058,8 +1065,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaf2965319c1d15dcb3563dd224add7858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga265636c3ae87d360bcddaa13cf4d2ce4"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga265636c3ae87d360bcddaa13cf4d2ce4">Core::IBoardType::getHwUAVO</a> ()=0</td></tr>
 <tr class="separator:ga265636c3ae87d360bcddaa13cf4d2ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d8beb4c61fcb291ecef7dbdb8785d9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga6d8beb4c61fcb291ecef7dbdb8785d9f">Core::IBoardType::getVendorID</a> ()</td></tr>
-<tr class="separator:ga6d8beb4c61fcb291ecef7dbdb8785d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4755a106cc7d0da89438881479e0bda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gac4755a106cc7d0da89438881479e0bda">Core::IBoardType::getVendorIDs</a> ()</td></tr>
+<tr class="separator:gac4755a106cc7d0da89438881479e0bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d2ecfabe310535314afc68f856c06bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga5d2ecfabe310535314afc68f856c06bf">Core::IBoardType::getBoardType</a> ()</td></tr>
 <tr class="memdesc:ga5d2ecfabe310535314afc68f856c06bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the board type number.  <a href="#ga5d2ecfabe310535314afc68f856c06bf">More...</a><br/></td></tr>
 <tr class="separator:ga5d2ecfabe310535314afc68f856c06bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1096,8 +1103,16 @@ Functions</h2></td></tr>
 <tr class="separator:ga65e348e3dfcb1d2dde42c7e7fb0700df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf1fbd46aeb3f81120f9229fefa9f7e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaaf1fbd46aeb3f81120f9229fefa9f7e8">Core::IBoardType::getBankFromOutputChannel</a> (int channel)</td></tr>
 <tr class="separator:gaaf1fbd46aeb3f81120f9229fefa9f7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42daca6311468f194ca6fe21ba757739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga42daca6311468f194ca6fe21ba757739">Core::IBoardType::setUSBInfo</a> (USBInfo info)</td></tr>
-<tr class="separator:ga42daca6311468f194ca6fe21ba757739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e86ee23d087eef1dd50c527b93d54a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga5e86ee23d087eef1dd50c527b93d54a1">Core::IBoardType::firmwareUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga5e86ee23d087eef1dd50c527b93d54a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">getFirmwareUSBInfo  <a href="#ga5e86ee23d087eef1dd50c527b93d54a1">More...</a><br/></td></tr>
+<tr class="separator:ga5e86ee23d087eef1dd50c527b93d54a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga662281edbd7c4e4ef1c241bd354d9754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754">Core::IBoardType::bootloaderUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga662281edbd7c4e4ef1c241bd354d9754"><td class="mdescLeft">&#160;</td><td class="mdescRight">getBootloaderUSBInfo  <a href="#ga662281edbd7c4e4ef1c241bd354d9754">More...</a><br/></td></tr>
+<tr class="separator:ga662281edbd7c4e4ef1c241bd354d9754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5caf4d4cf80df4fed07b6ee0f28fcd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">Core::IBoardType::addFirmwareUSBInfo</a> (USBInfo info)</td></tr>
+<tr class="separator:ga5caf4d4cf80df4fed07b6ee0f28fcd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2bc757875b69ebf9d23252dd7f63277"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gab2bc757875b69ebf9d23252dd7f63277">Core::IBoardType::addBootloaderUSBInfo</a> (USBInfo info)</td></tr>
+<tr class="separator:gab2bc757875b69ebf9d23252dd7f63277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2766d577d1343dfbd7f41859363cad29"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_q_list.html">QList</a>&lt; IDevice * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga2766d577d1343dfbd7f41859363cad29">Core::IConnection::availableDevices</a> ()=0</td></tr>
 <tr class="separator:ga2766d577d1343dfbd7f41859363cad29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fa3de80c2899c62813961082ad48e95"><td class="memItemLeft" align="right" valign="top">virtual QIODevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga9fa3de80c2899c62813961082ad48e95">Core::IConnection::openDevice</a> (IDevice *device)=0</td></tr>
@@ -1835,6 +1850,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="memItemLeft" align="right" valign="top">IBoardType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga8c20a34ba137f0263f3d5d17e8193d24">Core::BoardManager::getBoard</a> (int type)</td></tr>
 <tr class="memdesc:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a board from it's type.  <a href="#ga8c20a34ba137f0263f3d5d17e8193d24">More...</a><br/></td></tr>
 <tr class="separator:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eeca841a0808879672b261ef980aa8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; IBoardType::USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga3eeca841a0808879672b261ef980aa8c">Core::BoardManager::getKnownFirmwareUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga3eeca841a0808879672b261ef980aa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownFirmwareUSBInfo  <a href="#ga3eeca841a0808879672b261ef980aa8c">More...</a><br/></td></tr>
+<tr class="separator:ga3eeca841a0808879672b261ef980aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; IBoardType::USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga98d8e2f8ba38b5f68a2a62d69f63c6e4">Core::BoardManager::getKnownBootloaderUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownBootloaderUSBInfo  <a href="#ga98d8e2f8ba38b5f68a2a62d69f63c6e4">More...</a><br/></td></tr>
+<tr class="separator:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -2182,22 +2203,20 @@ Variables</h2></td></tr>
 <tr class="separator:gab425397b209f59d9c9cb215481f4e018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e622955d0d8c0244266ab1702000d92"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga5e622955d0d8c0244266ab1702000d92">Core::IBoardType::USBInfo::product</a></td></tr>
 <tr class="separator:ga5e622955d0d8c0244266ab1702000d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabcd3cddf005c60e8f45ea04eaa929ae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gabcd3cddf005c60e8f45ea04eaa929ae3">Core::IBoardType::USBInfo::UsagePage</a> = 0</td></tr>
-<tr class="separator:gabcd3cddf005c60e8f45ea04eaa929ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9b3ee9d3f84e2dc3c25cb6f90a248ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gae9b3ee9d3f84e2dc3c25cb6f90a248ad">Core::IBoardType::USBInfo::Usage</a> = 0</td></tr>
-<tr class="separator:gae9b3ee9d3f84e2dc3c25cb6f90a248ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f0a1600296012398a514a7874936788"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga9f0a1600296012398a514a7874936788">Core::IBoardType::USBInfo::usagePage</a> = 0</td></tr>
+<tr class="separator:ga9f0a1600296012398a514a7874936788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23bd55f913472aeb0e7c8873682c4196"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga23bd55f913472aeb0e7c8873682c4196">Core::IBoardType::USBInfo::usage</a> = 0</td></tr>
+<tr class="separator:ga23bd55f913472aeb0e7c8873682c4196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa22fe6fa3154cfff62d3e1860c8b7f7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b">Core::IBoardType::USBInfo::vendorID</a> = 0</td></tr>
 <tr class="separator:gaa22fe6fa3154cfff62d3e1860c8b7f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga454be60cf2bba54712173af606a748b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga454be60cf2bba54712173af606a748b8">Core::IBoardType::USBInfo::productID</a> = 0</td></tr>
 <tr class="separator:ga454be60cf2bba54712173af606a748b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18f0e8647d887f9f5e37b406c5bd6976"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga18f0e8647d887f9f5e37b406c5bd6976">Core::IBoardType::USBInfo::bootloaderMode</a> = 0</td></tr>
-<tr class="separator:ga18f0e8647d887f9f5e37b406c5bd6976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e598df3f5e0f673451cbaf22bcd71d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga8e598df3f5e0f673451cbaf22bcd71d7">Core::IBoardType::USBInfo::runningMode</a> = 0</td></tr>
-<tr class="separator:ga8e598df3f5e0f673451cbaf22bcd71d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga874a6af25c4e960a94c79e02c29a8b40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga874a6af25c4e960a94c79e02c29a8b40">Core::IBoardType::USBInfo::bcdDevice</a> = 0</td></tr>
 <tr class="separator:ga874a6af25c4e960a94c79e02c29a8b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga240004d7cf24893e312b4c471e7d18c2"><td class="memItemLeft" align="right" valign="top">USBInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga240004d7cf24893e312b4c471e7d18c2">Core::IBoardType::boardUSBInfo</a></td></tr>
-<tr class="separator:ga240004d7cf24893e312b4c471e7d18c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3da194ef5961d3311d9c6961959f86ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga3da194ef5961d3311d9c6961959f86ce">Core::IBoardType::m_firmwareUSBInfo</a></td></tr>
+<tr class="separator:ga3da194ef5961d3311d9c6961959f86ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf596af0b0dc370a4f726774a90a6b78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaf596af0b0dc370a4f726774a90a6b78d">Core::IBoardType::m_bootloaderUSBInfo</a></td></tr>
+<tr class="separator:gaf596af0b0dc370a4f726774a90a6b78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga254a5750afd5834f9f88056ce6fadb66"><td class="memItemLeft" align="right" valign="top">qint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">Core::IBoardType::boardType</a></td></tr>
 <tr class="memdesc:ga254a5750afd5834f9f88056ce6fadb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numerical board type ID.  <a href="#ga254a5750afd5834f9f88056ce6fadb66">More...</a><br/></td></tr>
 <tr class="separator:ga254a5750afd5834f9f88056ce6fadb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2525,6 +2544,36 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae5da6a391b4825fe57d10ab08b5e6482"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___core_plugin.html#gae5da6a391b4825fe57d10ab08b5e6482">Core::IBoardType::BcdDevice</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1"></a>BCD_DEVICE_BOOTLOADER</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81"></a>BCD_DEVICE_FIRMWARE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggae5da6a391b4825fe57d10ab08b5e6482aff451dedb1ef558ed3f6d924e49e8e64"></a>BCD_DEVICE_UPGRADER</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00243">243</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga01b09218f2a13aaeee6db007ac6bd967"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2555,7 +2604,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00093">93</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00091">91</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -2673,7 +2722,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00149">149</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00148">148</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -2728,7 +2777,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00211">211</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00210">210</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -3428,6 +3477,32 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gab2bc757875b69ebf9d23252dd7f63277"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> Core::IBoardType::addBootloaderUSBInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00250">250</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gadb70e979c6c0d4d960b26251bbfc0baa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3541,6 +3616,32 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="globalmessaging_8cpp_source.html#l00051">51</a> of file <a class="el" href="globalmessaging_8cpp_source.html">globalmessaging.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5caf4d4cf80df4fed07b6ee0f28fcd34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> Core::IBoardType::addFirmwareUSBInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00249">249</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -4303,7 +4404,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga51a98f9d324a17a8160d59f3111e6279">Sparky2</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00213">213</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00212">212</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -4416,6 +4517,34 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00915">915</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga662281edbd7c4e4ef1c241bd354d9754"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt;USBInfo&gt; Core::IBoardType::bootloaderUSBInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getBootloaderUSBInfo </p>
+<dl class="section return"><dt>Returns</dt><dd>List of bootloader USB filters for this board </dd></dl>
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00238">238</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7300,6 +7429,34 @@ template&lt;class Predicate &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ga5e86ee23d087eef1dd50c527b93d54a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt;USBInfo&gt; Core::IBoardType::firmwareUSBInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getFirmwareUSBInfo </p>
+<dl class="section return"><dt>Returns</dt><dd>List of firmware USB filters for this board </dd></dl>
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00232">232</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaf1fee806596e173c1a7aac4bd0864565"></a>
 <div class="memitem">
 <div class="memproto">
@@ -7503,7 +7660,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#ga697a10130452671c38b33842b825821b">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga78f0df6fc65ebe3809d2e501b6a9cb5a">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1</a>, <a class="el" href="group___boards___brotronics.html#gafced506f1444151c8cd2cb23e509e20a">Lux</a>, <a class="el" href="group___boards___d_t_f.html#ga14560e770dc46af34a91bd0b928c0872">Dtfc</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky</a>, <a class="el" href="group___boards___quantec.html#ga49342d30b08cfb929fcbc166962cf286">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga495ba358004dff42df8ed8968bb11d20">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#gaae020cf5fdf639cdb4be245cc5007cf1">Brain</a>, <a class="el" href="group___boards__d_ronin.html#gadf349a8d1b55b0e00e1beb1ab25abddf">Seppuku</a>, and <a class="el" href="group___boards___naze.html#ga19c348d31bce1b24bb6f1e25587a6833">Naze</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00225">225</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00224">224</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7589,7 +7746,7 @@ template&lt;class Predicate &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00086">86</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00088">88</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
 
 </div>
 </div>
@@ -7627,7 +7784,7 @@ template&lt;class Predicate &gt; </div>
 <p>Find a board from it's type. </p>
 <dl class="section return"><dt>Returns</dt><dd>IBoardType* on success, Q_NULLPTR on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="boardmanager_8cpp_source.html#l00120">120</a> of file <a class="el" href="boardmanager_8cpp_source.html">boardmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="boardmanager_8cpp_source.html#l00118">118</a> of file <a class="el" href="boardmanager_8cpp_source.html">boardmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -7667,7 +7824,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___brotronics.html#ga2fc41a648253662ff9471810442b85fa">Lux</a>, <a class="el" href="group___boards___d_t_f.html#ga1d9e8648735295d283ff35aa0ff1f21a">Dtfc</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">BrainRE1</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gae4b4e70bd631e9c406debc211235b39a">CC3D</a>, <a class="el" href="group___boards___brain_f_p_v.html#gaeaf22b5b11043abd9ba0b08df0cc792c">Brain</a>, <a class="el" href="group___boards__d_ronin.html#ga1fd07df2fd474e9e8eec86c5c26261de">Seppuku</a>, and <a class="el" href="group___boards__d_ronin.html#ga141102c49568d73a2d78b92b594c37e8">Simulation</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00144">144</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00143">143</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7693,7 +7850,7 @@ template&lt;class Predicate &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00071">71</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00073">73</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
 
 </div>
 </div>
@@ -7766,7 +7923,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Get the board type number. </p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00141">141</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00140">140</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7821,7 +7978,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00117">117</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00115">115</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7876,7 +8033,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga82875d349e208b89ab8fa2c0f80d5e66">Dtfc</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gad40e45271561c0d031092269ab31fc8c">Revolution</a>, <a class="el" href="group___boards___brotronics.html#gac5cd4721df00bb7cc4713b17b4f7019d">Lux</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gabe002b30ad055f89a5f02f97fdb50eed">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga1aa55a700d51714380d1bd40af5b7859">BrainRE1</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga90c3683158d6862b3e14f88d45d383b8">CC3D</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga6ed654997adfc38d4964c3efdba7c14f">Sparky</a>, and <a class="el" href="group___boards__d_ronin.html#ga8f8fb150520518ddcc26ec3e1697b503">Seppuku</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00187">187</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00186">186</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8083,7 +8240,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#gaff0ce7c7ace2ffc30abf30d46267524b">Dtfc</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gaf0508f4301ba826a160e6b291e2b30b3">Revolution</a>, <a class="el" href="group___boards___quantec.html#ga43894f4269095dab11fd88f96e8646b4">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#gaeb31052828d632c2d38cc524c4903052">AQ32</a>, <a class="el" href="group___boards___brotronics.html#ga51a9bc564c0149ab0cac66c26f73583a">Lux</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga2af601f04033e6066f1612fcf0475ed9">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v.html#gac215d6152d8138396435a61e4f316c31">Brain</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga5b32ee58c9792fbac738b7308bde8435">BrainRE1</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gafe66e5649e143ddf96dfae622a9be543">CC3D</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky</a>, <a class="el" href="group___boards__d_ronin.html#ga2a080f23da04a268c93283306e536449">Seppuku</a>, and <a class="el" href="group___boards___naze.html#gacf7d9f64bf4a46d94956f8600b67a1d5">Naze</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00181">181</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00180">180</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8112,6 +8269,46 @@ template&lt;class Predicate &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ga98d8e2f8ba38b5f68a2a62d69f63c6e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; IBoardType::USBInfo &gt; Core::BoardManager::getKnownBootloaderUSBInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getKnownBootloaderUSBInfo </p>
+<dl class="section return"><dt>Returns</dt><dd>list of all USB information for the boards that are supported. compared to "getKnownVendorIDs", this method returns more detailed info allowing plugins to detect boards in a more fine-grained manner. </dd></dl>
+
+<p>Definition at line <a class="el" href="boardmanager_8cpp_source.html#l00139">139</a> of file <a class="el" href="boardmanager_8cpp_source.html">boardmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3eeca841a0808879672b261ef980aa8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; IBoardType::USBInfo &gt; Core::BoardManager::getKnownFirmwareUSBInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getKnownFirmwareUSBInfo </p>
+<dl class="section return"><dt>Returns</dt><dd>list of all USB information for the boards that are supported. compared to "getKnownVendorIDs", this method returns more detailed info allowing plugins to detect boards in a more fine-grained manner. </dd></dl>
+
+<p>Definition at line <a class="el" href="boardmanager_8cpp_source.html#l00128">128</a> of file <a class="el" href="boardmanager_8cpp_source.html">boardmanager.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaa37a0c8c804e3623c622cf8243bc7ef3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -8127,6 +8324,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>getKnownVendorIDs Get all USB VendorIDs known by the board manager. This can be used by any plugin which uses USB and needs to know what boards are ours. The list is deduplicated. </p>
 <p><a class="el" href="group___core_plugin.html#gaa37a0c8c804e3623c622cf8243bc7ef3" title="getKnownVendorIDs Get all USB VendorIDs known by the board manager. This can be used by any plugin wh...">BoardManager::getKnownVendorIDs</a> Note: the list is deduplicated, each known VendorID appears only once.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>use getKnownFirmwareUSBInfo or getKnownBootloaderUSBInfo instead (shouldn't be filtering based on VID alone anyway since we don't own a VID </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>list of known vendor IDs </dd></dl>
 
 <p>Definition at line <a class="el" href="boardmanager_8cpp_source.html#l00076">76</a> of file <a class="el" href="boardmanager_8cpp_source.html">boardmanager.cpp</a>.</p>
@@ -8376,7 +8574,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gaa2c7c889a364e3554503fed7f39746c7">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gafa06d92c6ef1fb5ad401daee0a6766e8">Sparky2</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00200">200</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00199">199</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8489,29 +8687,22 @@ template&lt;class Predicate &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga6d8beb4c61fcb291ecef7dbdb8785d9f"></a>
+<a class="anchor" id="gac4755a106cc7d0da89438881479e0bda"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::IBoardType::getVendorID </td>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt; int &gt; Core::IBoardType::getVendorIDs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Get USB VendorID. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>use firmwareUSBInfo or bootloaderUSBInfo instead (shouldn't be filtering based on VID alone anyway since we don't own a VID </dd></dl>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00138">138</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00104">104</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
 
 </div>
 </div>
@@ -10387,7 +10578,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga1540970f5247a69634e1fcc2c996ff91">Dtfc</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga6857a9eb96289d1cc34df6d7b00f2fdf">Revolution</a>, <a class="el" href="group___boards___brotronics.html#ga5e5f61cd702bd2ece92488903c0a4416">Lux</a>, <a class="el" href="group___boards__d_ronin.html#ga8b6a8ad6d5ad16bc1047f0b02f90518a">Seppuku</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v.html#gab742b5ec07b3f8e5d4017db01ad1d63a">Brain</a>, <a class="el" href="group___boards___quantec.html#ga3c8acd7eaa6b5db624a1abf838d243ab">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga7c31c9e9a46879eb52244f33b8874eb5">AQ32</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga49a1d5a014b2e47db69dc22030535342">CC3D</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga31e47c5ccf87292f0078e1f00aa71bf1">BrainRE1</a>, <a class="el" href="group___boards___naze.html#gac90e58fb37e84faa907c79476901bd7a">Naze</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#gad1cc49687204bd5c0bf274a079996ddd">Sparky</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00168">168</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00167">167</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -10466,7 +10657,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___naze.html#ga755f53fc8e16b0189e1651f6a799aeeb">Naze</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00221">221</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00220">220</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -11283,7 +11474,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gae37c1072aa8fa5d21f03f2a61ad6ee32">Revolution</a>, <a class="el" href="group___boards___brain_f_p_v.html#gac06dc25a57021a95f574c14226593260">Brain</a>, and <a class="el" href="group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee">Quanton</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00165">165</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00164">164</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -12537,7 +12728,7 @@ template&lt;class Predicate &gt; </div>
 <dd>
 List of board channels </dd></dl>
 
-<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00010">10</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8cpp_source.html#l00012">12</a> of file <a class="el" href="iboardtype_8cpp_source.html">iboardtype.cpp</a>.</p>
 
 </div>
 </div>
@@ -12567,7 +12758,7 @@ List of board channels </dd></dl>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#ga5fa5aedb391862ff1c3e871f638d6f9b">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga59a9b1ecc2f77e3466e2ca090b514b0a">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gaa7377a27f05013c401eacca44f661e45">CC3D</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky</a>, <a class="el" href="group___boards___quantec.html#gaa9c1abb7238239aaad2f75099b4801f0">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga3a497f665c3f1aefb240c799915eaed8">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#ga47c7463ba89b64200624fceb1c2dd8a1">Brain</a>, <a class="el" href="group___boards__d_ronin.html#gacac611c3c089a5eedc0ca3a33a5b77a5">Seppuku</a>, <a class="el" href="group___boards___d_t_f.html#ga25b39a3843d5c59447ab10280bcbfc7c">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga7576cb69193b4d902e26afb83b040f65">Simulation</a>, <a class="el" href="group___boards___brotronics.html#gad740b90578b527834dcda455fecabff5">Lux</a>, and <a class="el" href="group___boards___naze.html#gaadccfb8981fd94565e07cff3ad057791">Naze</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00194">194</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00193">193</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -15303,7 +15494,7 @@ List of board channels </dd></dl>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga1dea55fe3a5bc1597010a72d44731915">Dtfc</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga96c7a11eda4b20daf72b2410787e4e46">Revolution</a>, <a class="el" href="group___boards___brotronics.html#ga4da76d6bd3bf0143650be904d1e63831">Lux</a>, <a class="el" href="group___boards___quantec.html#ga22952c4be1c01642b4c1075a053e4a37">Quanton</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga51c77337cc0332142ce5fbe1dd0f728b">Sparky2</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga064fe5c8e7de70da7d91dfc8a5e9edcf">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#ga4fc085dcd9d6a0c1228ef2bdda5e7ac5">Brain</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga1a0e99b144219163858dde3b349ca256">BrainRE1</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga1b142f8d9620f2406b00d1444fac7bba">CC3D</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga55bf22772b1dd57db236483dde80704e">Sparky</a>, <a class="el" href="group___boards__d_ronin.html#ga965ced0458c3852cc8526fdca85430c7">Seppuku</a>, and <a class="el" href="group___boards___naze.html#gaf515443bcf2da9f99b50e6a87f6fca50">Naze</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00175">175</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00174">174</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -16213,32 +16404,6 @@ List of board channels </dd></dl>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="baseview_8cpp_source.html#l00069">69</a> of file <a class="el" href="baseview_8cpp_source.html">baseview.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga42daca6311468f194ca6fe21ba757739"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> Core::IBoardType::setUSBInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00232">232</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -17719,30 +17884,6 @@ List of board channels </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga4d03cf7a4a46528d289eea825847593a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString IWizard::trCategory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the translated string of the category, how it should appear in the dialog. </p>
-
-</div>
-</div>
 <a class="anchor" id="gac5538fc040c826784167edb4fc359b68"></a>
 <div class="memitem">
 <div class="memproto">
@@ -17767,6 +17908,30 @@ List of board channels </dd></dl>
 <p>Reimplemented in <a class="el" href="group___core_plugin.html#ga5a6e59bc0d5312685098a6fca0ba25a1">Core::Internal::ShortcutSettings</a>, <a class="el" href="group___notify_plugin.html#ga963ad76e88d1a3737bd5d12e493c214a">NotifyPluginOptionsPage</a>, <a class="el" href="group___model_view_plugin.html#ga0026a37d0b02b743a513a6f79b88928e">ModelViewGadgetOptionsPage</a>, <a class="el" href="group___core_plugin.html#ga8ecc36dbd81d6713a27af883d0ae089d">Core::Internal::WorkspaceSettings</a>, <a class="el" href="group___serial_plugin.html#ga65036a91c24758081e8a2cecc44925a0">SerialPluginOptionsPage</a>, <a class="el" href="group___core_plugin.html#ga58870a0e7f11e7805de16107c84770aa">Core::Internal::GeneralSettings</a>, <a class="el" href="group___i_p_conn_plugin.html#gace8ed46c336f3ee28ed2afeae6088da2">IPconnectionOptionsPage</a>, <a class="el" href="group___usage_stats_plugin.html#gaa573b10f352914e148b65b917fd2ef12">UsageStatsOptionPage</a>, and <a class="el" href="group___core_plugin.html#ga3ef0a5ecd73cef99a1324885b89f4067">Core::UAVGadgetOptionsPageDecorator</a>.</p>
 
 <p>Definition at line <a class="el" href="ioptionspage_8h_source.html#l00060">60</a> of file <a class="el" href="ioptionspage_8h_source.html">ioptionspage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d03cf7a4a46528d289eea825847593a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString IWizard::trCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the translated string of the category, how it should appear in the dialog. </p>
 
 </div>
 </div>
@@ -19001,6 +19166,48 @@ List of board channels </dd></dl>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="usbdevice_8cpp_source.html#l00028">28</a> of file <a class="el" href="usbdevice_8cpp_source.html">usbdevice.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa40e951c34a0c8c4153e942f51d557e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::IBoardType::USBInfo::USBInfo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vendorID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>productID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bcdDevice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00072">72</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -20415,7 +20622,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00077">77</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00070">70</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -20439,43 +20646,7 @@ List of board channels </dd></dl>
 
 <p>The numerical board type ID. </p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00237">237</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga240004d7cf24893e312b4c471e7d18c2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">USBInfo Core::IBoardType::boardUSBInfo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00234">234</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga18f0e8647d887f9f5e37b406c5bd6976"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Core::IBoardType::USBInfo::bootloaderMode = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00075">75</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00256">256</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -20611,7 +20782,7 @@ List of board channels </dd></dl>
 
 <p>The channel groups that are driven by timers. </p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00240">240</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00259">259</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -21955,6 +22126,28 @@ List of board channels </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="gaf596af0b0dc370a4f726774a90a6b78d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt;USBInfo&gt; Core::IBoardType::m_bootloaderUSBInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00253">253</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaaf7dc3b2670761aed9b0fcd72e26e3de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -22232,6 +22425,28 @@ List of board channels </dd></dl>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="coreconstants_8h_source.html#l00080">80</a> of file <a class="el" href="coreconstants_8h_source.html">coreconstants.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3da194ef5961d3311d9c6961959f86ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt;USBInfo&gt; Core::IBoardType::m_firmwareUSBInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00252">252</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22621,7 +22836,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00065">65</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00064">64</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22875,7 +23090,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00066">66</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00065">65</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22889,7 +23104,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00070">70</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00069">69</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22960,20 +23175,6 @@ List of board channels </dd></dl>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="coreconstants_8h_source.html#l00112">112</a> of file <a class="el" href="coreconstants_8h_source.html">coreconstants.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8e598df3f5e0f673451cbaf22bcd71d7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Core::IBoardType::USBInfo::runningMode = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00076">76</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -23071,7 +23272,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00064">64</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00063">63</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -23173,31 +23374,31 @@ List of board channels </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gae9b3ee9d3f84e2dc3c25cb6f90a248ad"></a>
+<a class="anchor" id="ga23bd55f913472aeb0e7c8873682c4196"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::IBoardType::USBInfo::Usage = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00068">68</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gabcd3cddf005c60e8f45ea04eaa929ae3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Core::IBoardType::USBInfo::UsagePage = 0</td>
+          <td class="memname">int Core::IBoardType::USBInfo::usage = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00067">67</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9f0a1600296012398a514a7874936788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Core::IBoardType::USBInfo::usagePage = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00066">66</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -23211,7 +23412,7 @@ List of board channels </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00069">69</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00068">68</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>

@@ -15,9 +15,6 @@ var searchData=
   ['usb_5finterface_5fclass',['usb_interface_class',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga8c0df0a6c06d39e56e7b15ba8e9d699e',1,'pios_usb_defs.h']]],
   ['usb_5fop_5fboard_5fids',['usb_op_board_ids',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gaa03fd2fa7b7aa69d420bfea86dc519d3',1,'pios_usb_defs.h']]],
   ['usb_5fop_5fboard_5fmodes',['usb_op_board_modes',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gafbdcb00e985ba79973c56e1da0a87635',1,'pios_usb_defs.h']]],
-  ['usb_5fproduct_5fid_5fmcs',['usb_product_id_mcs',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gac3030ec8c40847490252e07d58725e8b',1,'pios_usb_defs.h']]],
-  ['usb_5fproduct_5fids',['usb_product_ids',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gadd6f0f6378e0d944dffb726322ae5ddf',1,'pios_usb_defs.h']]],
-  ['usb_5fproduct_5fids_5fpidcodes',['usb_product_ids_pidcodes',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga436895933556b2273967a5d50f34daa8',1,'pios_usb_defs.h']]],
   ['usb_5fstandard_5frequests',['usb_standard_requests',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga656cd9a1af7abe6ec812f6ee50b223f9',1,'pios_usb_defs.h']]],
   ['usb_5fstring_5fdesc',['usb_string_desc',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga5a1ae5206971f0c296fa30b24e8725da',1,'pios_usbhook.h']]]
 ];

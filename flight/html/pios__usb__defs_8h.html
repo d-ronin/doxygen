@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -116,7 +116,8 @@ $(document).ready(function(){initNavTree('pios__usb__defs_8h.html','');});
 <div class="title">pios_usb_defs.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<div class="textblock"><code>#include &quot;board_usb_ids.h&quot;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 </div>
 <p><a href="pios__usb__defs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -279,16 +280,6 @@ Macros</h2></td></tr>
 <tr class="separator:gaaecf224ab20cd44947885aa0f07c7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeaaf5b237f2f037d39d943ac4816afd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaeaaf5b237f2f037d39d943ac4816afd0">USB_LANGID_ENGLISH_US</a>&#160;&#160;&#160;0x0409</td></tr>
 <tr class="separator:gaeaaf5b237f2f037d39d943ac4816afd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d3d4fd9bb683d13bc87a3a3ca7bed6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga3d3d4fd9bb683d13bc87a3a3ca7bed6a">USB_VENDOR_ID_CLAYLOGIC</a>&#160;&#160;&#160;0x20A0</td></tr>
-<tr class="separator:ga3d3d4fd9bb683d13bc87a3a3ca7bed6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93167598ac7f64509bed69a86ca3efa4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga93167598ac7f64509bed69a86ca3efa4">USB_VENDOR_ID_OPENPILOT</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga3d3d4fd9bb683d13bc87a3a3ca7bed6a">USB_VENDOR_ID_CLAYLOGIC</a></td></tr>
-<tr class="separator:ga93167598ac7f64509bed69a86ca3efa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40553d23bf4fac888451130c8efba0d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga40553d23bf4fac888451130c8efba0d1">USB_VENDOR_ID_TAULABS</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga3d3d4fd9bb683d13bc87a3a3ca7bed6a">USB_VENDOR_ID_CLAYLOGIC</a></td></tr>
-<tr class="separator:ga40553d23bf4fac888451130c8efba0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd2efd862c3ba842a4d98da733669893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gabd2efd862c3ba842a4d98da733669893">USB_VENDOR_ID_PIDCODES</a>&#160;&#160;&#160;0x1209</td></tr>
-<tr class="separator:gabd2efd862c3ba842a4d98da733669893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32f96758f1f11309894daf277811abf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga32f96758f1f11309894daf277811abf8">USB_VENDOR_ID_MCS</a>&#160;&#160;&#160;0x16D0</td></tr>
-<tr class="separator:ga32f96758f1f11309894daf277811abf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7754f1bc7f567c7020835590e6d4d070"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga7754f1bc7f567c7020835590e6d4d070">USB_OP_DEVICE_VER</a>(board_id, board_mode)</td></tr>
 <tr class="separator:ga7754f1bc7f567c7020835590e6d4d070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -341,12 +332,6 @@ Enumerations</h2></td></tr>
 <tr class="separator:gabc1f843b2823e8539facdbfeb734a5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43113e1b9daab7bfc6e5fe6ff65b0fc7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga43113e1b9daab7bfc6e5fe6ff65b0fc7">usb_cdc_notification</a> </td></tr>
 <tr class="separator:ga43113e1b9daab7bfc6e5fe6ff65b0fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd6f0f6378e0d944dffb726322ae5ddf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gadd6f0f6378e0d944dffb726322ae5ddf">usb_product_ids</a> </td></tr>
-<tr class="separator:gadd6f0f6378e0d944dffb726322ae5ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga436895933556b2273967a5d50f34daa8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga436895933556b2273967a5d50f34daa8">usb_product_ids_pidcodes</a> </td></tr>
-<tr class="separator:ga436895933556b2273967a5d50f34daa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3030ec8c40847490252e07d58725e8b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gac3030ec8c40847490252e07d58725e8b">usb_product_id_mcs</a> </td></tr>
-<tr class="separator:gac3030ec8c40847490252e07d58725e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa03fd2fa7b7aa69d420bfea86dc519d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaa03fd2fa7b7aa69d420bfea86dc519d3">usb_op_board_ids</a> </td></tr>
 <tr class="separator:gaa03fd2fa7b7aa69d420bfea86dc519d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbdcb00e985ba79973c56e1da0a87635"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gafbdcb00e985ba79973c56e1da0a87635">usb_op_board_modes</a> </td></tr>
@@ -535,36 +520,6 @@ Variables</h2></td></tr>
 <tr class="separator:ga74589c60371f7e3893ef4e303a6ce2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf403cb181cb362069801308d723a0b53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf403cb181cb362069801308d723a0b53">USB_CDC_NOTIFICATION_SERIAL_STATE</a> = 0x20</td></tr>
 <tr class="separator:gaf403cb181cb362069801308d723a0b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf58de49e9aa6af1bd57862ef24b3f327"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf58de49e9aa6af1bd57862ef24b3f327">USB_PRODUCT_ID_OPENPILOT_MAIN</a> = 0x415A</td></tr>
-<tr class="separator:gaf58de49e9aa6af1bd57862ef24b3f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bd493f8bd3917d45b4fab046b6d7523"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga5bd493f8bd3917d45b4fab046b6d7523">USB_PRODUCT_ID_CC3D</a> = 0x415B</td></tr>
-<tr class="separator:ga5bd493f8bd3917d45b4fab046b6d7523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3417d6241159fcb15428fc02a100caf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga3417d6241159fcb15428fc02a100caf9">USB_PRODUCT_ID_PIPXTREME</a> = 0x415C</td></tr>
-<tr class="separator:ga3417d6241159fcb15428fc02a100caf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf4bcf402cb1c8ae5d1e953bd62acb3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gacf4bcf402cb1c8ae5d1e953bd62acb3d">USB_PRODUCT_ID_SPARE2</a> = 0x415D</td></tr>
-<tr class="separator:gacf4bcf402cb1c8ae5d1e953bd62acb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa07282bc8e711d5631b861a8afe6014f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaa07282bc8e711d5631b861a8afe6014f">USB_PRODUCT_ID_REVOLUTION</a> = 0x415E</td></tr>
-<tr class="separator:gaa07282bc8e711d5631b861a8afe6014f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d8c174bc113f139b562721418dcf51a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga0d8c174bc113f139b562721418dcf51a">USB_PRODUCT_ID_OSD</a> = 0x4194</td></tr>
-<tr class="separator:ga0d8c174bc113f139b562721418dcf51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf82c7dc922fae0cffa60e95acc05b46c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf82c7dc922fae0cffa60e95acc05b46c">USB_PRODUCT_ID_SPARE</a> = 0x4195</td></tr>
-<tr class="separator:gaf82c7dc922fae0cffa60e95acc05b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea1d1fe0555687317aa0204c1372a252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaea1d1fe0555687317aa0204c1372a252">USB_PRODUCT_ID_SPARKY</a> = 0x41d0</td></tr>
-<tr class="separator:gaea1d1fe0555687317aa0204c1372a252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad282c226ad30c3a47297041a72216ff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gad282c226ad30c3a47297041a72216ff9">USB_PRODUCT_ID_BRAIN</a> = 0x4242</td></tr>
-<tr class="separator:gad282c226ad30c3a47297041a72216ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55fd443f2d73db6fbb18d42e253ca9d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga55fd443f2d73db6fbb18d42e253ca9d6">USB_PRODUCT_ID_DRONINFW</a> = 0x4250</td></tr>
-<tr class="separator:ga55fd443f2d73db6fbb18d42e253ca9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1314795857134a67a0a35f86fca02d67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga1314795857134a67a0a35f86fca02d67">USB_PRODUCT_ID_DRONINBL</a> = 0x427a</td></tr>
-<tr class="separator:ga1314795857134a67a0a35f86fca02d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0285a5935c9e1b917d56f3390abb7517"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga0285a5935c9e1b917d56f3390abb7517">USB_PRODUCT_ID_DISCOVERYF4</a> = <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf82c7dc922fae0cffa60e95acc05b46c">USB_PRODUCT_ID_SPARE</a></td></tr>
-<tr class="separator:ga0285a5935c9e1b917d56f3390abb7517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga987acf80d4e9c88c4e1621d5215c1f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga987acf80d4e9c88c4e1621d5215c1f58">USB_PRODUCT_ID_FLYINGF4</a> = <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf82c7dc922fae0cffa60e95acc05b46c">USB_PRODUCT_ID_SPARE</a></td></tr>
-<tr class="separator:ga987acf80d4e9c88c4e1621d5215c1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga222d1ac4a930e56016b2da1b55d1953b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga222d1ac4a930e56016b2da1b55d1953b">USB_PRODUCT_ID_LUX</a> = 0xf3fc</td></tr>
-<tr class="separator:ga222d1ac4a930e56016b2da1b55d1953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5523d5626a5a361794e703f21b304778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga5523d5626a5a361794e703f21b304778">USB_PRODUCT_ID_DTFC</a> = 0xd7fc</td></tr>
-<tr class="separator:ga5523d5626a5a361794e703f21b304778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga593ac31097712501cf540cb304957cd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga593ac31097712501cf540cb304957cd9">USB_OP_BOARD_ID_OPENPILOT_MAIN</a> = 1</td></tr>
 <tr class="separator:ga593ac31097712501cf540cb304957cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45e12a7abdf8972bd81fd6ed15a6ba8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga45e12a7abdf8972bd81fd6ed15a6ba8a">USB_OP_BOARD_ID_PIPXTREME</a> = 3</td></tr>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -139,9 +139,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaa37a0c8c804e3623c622cf8243bc7ef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gaa37a0c8c804e3623c622cf8243bc7ef3">getKnownVendorIDs</a> ()</td></tr>
 <tr class="memdesc:gaa37a0c8c804e3623c622cf8243bc7ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownVendorIDs Get all USB VendorIDs known by the board manager. This can be used by any plugin which uses USB and needs to know what boards are ours. The list is deduplicated.  <a href="group___core_plugin.html#gaa37a0c8c804e3623c622cf8243bc7ef3">More...</a><br/></td></tr>
 <tr class="separator:gaa37a0c8c804e3623c622cf8243bc7ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37e132b8ad41b05157fcd29b679ce713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">IBoardType::USBInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_board_manager.html#a37e132b8ad41b05157fcd29b679ce713">getKnownUSBInfo</a> ()</td></tr>
-<tr class="memdesc:a37e132b8ad41b05157fcd29b679ce713"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownUSBInfo  <a href="#a37e132b8ad41b05157fcd29b679ce713">More...</a><br/></td></tr>
-<tr class="separator:a37e132b8ad41b05157fcd29b679ce713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eeca841a0808879672b261ef980aa8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">IBoardType::USBInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga3eeca841a0808879672b261ef980aa8c">getKnownFirmwareUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga3eeca841a0808879672b261ef980aa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownFirmwareUSBInfo  <a href="group___core_plugin.html#ga3eeca841a0808879672b261ef980aa8c">More...</a><br/></td></tr>
+<tr class="separator:ga3eeca841a0808879672b261ef980aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">IBoardType::USBInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga98d8e2f8ba38b5f68a2a62d69f63c6e4">getKnownBootloaderUSBInfo</a> ()</td></tr>
+<tr class="memdesc:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">getKnownBootloaderUSBInfo  <a href="group___core_plugin.html#ga98d8e2f8ba38b5f68a2a62d69f63c6e4">More...</a><br/></td></tr>
+<tr class="separator:ga98d8e2f8ba38b5f68a2a62d69f63c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_core_1_1_i_board_type.html">IBoardType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga8c20a34ba137f0263f3d5d17e8193d24">getBoard</a> (int type)</td></tr>
 <tr class="memdesc:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a board from it's type.  <a href="group___core_plugin.html#ga8c20a34ba137f0263f3d5d17e8193d24">More...</a><br/></td></tr>
 <tr class="separator:ga8c20a34ba137f0263f3d5d17e8193d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,24 +184,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a37e132b8ad41b05157fcd29b679ce713"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_q_list.html">QList</a>&lt;<a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">IBoardType::USBInfo</a>*&gt; Core::BoardManager::getKnownUSBInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>getKnownUSBInfo </p>
-<dl class="section return"><dt>Returns</dt><dd>list of all USB information for the boards that are supported. compared to "getKnownVendorIDs", this method returns more detailed info allowing plugins to detect boards in a more fine-grained manner. </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a0a7a3ac9ac181c79d4eb14940fe8bd4f"></a>
 <div class="memitem">
@@ -218,7 +203,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="boardmanager_8h_source.html#l00093">93</a> of file <a class="el" href="boardmanager_8h_source.html">boardmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="boardmanager_8h_source.html#l00101">101</a> of file <a class="el" href="boardmanager_8h_source.html">boardmanager.h</a>.</p>
 
 </div>
 </div>

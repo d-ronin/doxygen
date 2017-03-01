@@ -15,8 +15,6 @@ var searchData=
   ['board_5frev',['board_rev',['../group___uploader.html#ga0fcb7b4c7cbc9015cb66e71d00477149',1,'msg_capabilities_rep_specific']]],
   ['boardrevision',['boardRevision',['../group___u_a_v_object_util_plugin.html#ga5073492aaeea735b5b7a686110cbf104',1,'deviceDescriptorStruct']]],
   ['boardtype',['boardType',['../group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66',1,'Core::IBoardType::boardType()'],['../group___u_a_v_object_util_plugin.html#ga2a96c0269c09447e493055692fd68ad5',1,'deviceDescriptorStruct::boardType()']]],
-  ['boardusbinfo',['boardUSBInfo',['../group___core_plugin.html#ga240004d7cf24893e312b4c471e7d18c2',1,'Core::IBoardType']]],
-  ['bootloadermode',['bootloaderMode',['../group___core_plugin.html#ga18f0e8647d887f9f5e37b406c5bd6976',1,'Core::IBoardType::USBInfo']]],
   ['buffer',['buffer',['../uavobjecttemplate_8m.html#a9295f53f891e8db64c56d4df48cbb933',1,'uavobjecttemplate.m']]],
   ['buffer_5flen',['buffer_len',['../uavobjecttemplate_8m.html#ad706a55b4d75eccfcd59dc78912ae84b',1,'uavobjecttemplate.m']]],
   ['bufferidx',['bufferIdx',['../uavobjecttemplate_8m.html#ae7e33b6114ff5eb16d6c4a6919b1c978',1,'uavobjecttemplate.m']]],

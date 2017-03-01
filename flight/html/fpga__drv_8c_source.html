@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define MIN(a, b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a &lt; _b ? _a : _b; })</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>re1fpga_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>re1fpga_dev *dev;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">static</span> int32_t PIOS_RE1FPGA_WriteReg(uint8_t reg, uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint8_t mask);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">static</span> int32_t PIOS_RE1FPGA_WriteRegDirect(<span class="keyword">enum</span> pios_re1fpga_register reg, uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>);</div>
@@ -582,7 +582,7 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(dev, 0, 0, 0);</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        *dev_out = <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        *dev_out = dev;</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;}</div>
@@ -664,7 +664,6 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="ttc" id="bl__messages_8h_html_ae634662f1116dcacc7a47136a87bb07b"><div class="ttname"><a href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a></div><div class="ttdeci">uint8_t data[XFER_BYTES_PER_PACKET]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00130">bl_messages.h:130</a></div></div>
 <div class="ttc" id="group___brain_r_e1_html_ga9e28dcb577e3996eab9482f75a84558d"><div class="ttname"><a href="group___brain_r_e1.html#ga9e28dcb577e3996eab9482f75a84558d">PIOS_RE1FPGA_SetXOffset</a></div><div class="ttdeci">void PIOS_RE1FPGA_SetXOffset(int8_t x_offset)</div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___brain_r_e1_html_gaf781b9d89bc5ed624bfdab5c7655224c"><div class="ttname"><a href="group___brain_r_e1.html#gaf781b9d89bc5ed624bfdab5c7655224c">PIOS_RE1FPGA_SetXScale</a></div><div class="ttdeci">void PIOS_RE1FPGA_SetXScale(uint8_t x_scale)</div></div>
 <div class="ttc" id="group___brain_r_e1_html_ga92955c8ba05cf252bb9f6ca9a964e4a5"><div class="ttname"><a href="group___brain_r_e1.html#ga92955c8ba05cf252bb9f6ca9a964e4a5">PIOS_RE1FPGA_MPTxPinMode</a></div><div class="ttdeci">int32_t PIOS_RE1FPGA_MPTxPinMode(bool bidrectional, bool invert)</div></div>
 <div class="ttc" id="group___brain_r_e1_html_gabe31089ecd7adf0044f5c9ec074caa1b"><div class="ttname"><a href="group___brain_r_e1.html#gabe31089ecd7adf0044f5c9ec074caa1b">PIOS_RE1FPGA_SetSyncThreshold</a></div><div class="ttdeci">int32_t PIOS_RE1FPGA_SetSyncThreshold(uint8_t threshold)</div></div>

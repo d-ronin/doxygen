@@ -1,7 +1,6 @@
 var group___bootloader =
 [
     [ "PlayUavOsd", "group___play_uav_osd.html", "group___play_uav_osd" ],
-    [ "PlayUAVOSD", "group___play_u_a_v_o_s_d.html", "group___play_u_a_v_o_s_d" ],
     [ "bl_messages", "structbl__messages.html", [
       [ "__attribute__", "structbl__messages.html#a21975d69a688de5e68bd9166e1d2b8a2", null ],
       [ "bl_version", "structbl__messages.html#ad2fb9a70a6046e9121fc9b24e5ea81c1", null ],

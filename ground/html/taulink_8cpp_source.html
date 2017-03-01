@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,191 +130,193 @@ $(document).ready(function(){initNavTree('taulink_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;rfm22bstatus.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">   39</a></span>&#160;<a class="code" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">TauLink::TauLink</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Initialize our USB Structure definition here:</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a> board;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    board.<a class="code" href="group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b">vendorID</a> = 0x20A0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    board.<a class="code" href="group___core_plugin.html#ga454be60cf2bba54712173af606a748b8">productID</a> = 0x415c;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="group___core_plugin.html#ga42daca6311468f194ca6fe21ba757739">setUSBInfo</a>(board);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">boardType</a> = 0x03;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    uavoUtilManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">   54</a></span>&#160;<a class="code" href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">TauLink::~TauLink</a>()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;board_usb_ids.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;rfm22bstatus.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">   40</a></span>&#160;<a class="code" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">TauLink::TauLink</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Common USB IDs</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="group___core_plugin.html#gab2bc757875b69ebf9d23252dd7f63277">addBootloaderUSBInfo</a>(<a class="code" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>(DRONIN_VID_DRONIN_BOOTLOADER, DRONIN_PID_DRONIN_BOOTLOADER, <a class="code" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1">BCD_DEVICE_BOOTLOADER</a>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">addFirmwareUSBInfo</a>(<a class="code" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>(DRONIN_VID_DRONIN_FIRMWARE, DRONIN_PID_DRONIN_FIRMWARE, <a class="code" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81">BCD_DEVICE_FIRMWARE</a>));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Legacy USB IDs</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="group___core_plugin.html#gab2bc757875b69ebf9d23252dd7f63277">addBootloaderUSBInfo</a>(<a class="code" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>(DRONIN_VID_OPENPILOT_PIPX, DRONIN_PID_OPENPILOT_PIPX, <a class="code" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1">BCD_DEVICE_BOOTLOADER</a>));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">addFirmwareUSBInfo</a>(<a class="code" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a>(DRONIN_VID_OPENPILOT_PIPX, DRONIN_PID_OPENPILOT_PIPX, <a class="code" href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81">BCD_DEVICE_FIRMWARE</a>));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">boardType</a> = 0x03;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uavoUtilManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">   55</a></span>&#160;<a class="code" href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">TauLink::~TauLink</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">   60</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">TauLink::shortName</a>()</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;PipXtreme&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">   65</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">TauLink::boardDescription</a>()</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;The TauLink radio modem&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">   71</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">TauLink::queryCapabilities</a>(<a class="code" href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">BoardCapabilities</a> capability)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">switch</span>(capability) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678">BOARD_CAPABILITIES_RADIO</a>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">   82</a></span>&#160;QPixmap <a class="code" href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">TauLink::getBoardPicture</a>()</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> QPixmap(<span class="stringliteral">&quot;:/images/taulink.png&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">   87</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">TauLink::getHwUAVO</a>()</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;HwTauLink&quot;</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">   93</a></span>&#160;HwTauLink * <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">TauLink::getSettings</a>()</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    HwTauLink *wwTauLink = HwTauLink::GetInstance(uavoManager);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Q_ASSERT(wwTauLink);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> wwTauLink;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">  107</a></span>&#160;quint32 <a class="code" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink::getRfmID</a>()</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Modem has instance 0</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    RFM22BStatus *rfm22bStatus = RFM22BStatus::GetInstance(uavoManager,0);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    Q_ASSERT(rfm22bStatus);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    RFM22BStatus::DataFields rfm22b = rfm22bStatus-&gt;getData();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> rfm22b.DeviceID;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">  125</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink::bindRadio</a>(quint32 <span class="keywordtype">id</span>, quint32 baud_rate, <span class="keywordtype">float</span> rf_power, <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode, quint8 min, quint8 max)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    HwTauLink::DataFields settings = <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>()-&gt;getData();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    settings.CoordID = id;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">switch</span>(baud_rate) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">case</span> 9600:</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_9600;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">case</span> 19200:</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_19200;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">case</span> 32000:</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_32000;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">case</span> 64000:</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_64000;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">case</span> 100000:</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_100000;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">case</span> 192000:</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_192000;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// Round to an integer to use a switch statement</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    quint32 rf_power_100 = (rf_power * 100) + 0.5;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">switch</span>(rf_power_100) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_0;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">case</span> 125:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_125;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">case</span> 160:</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_16;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">case</span> 316:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_316;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">case</span> 630:</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_63;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">case</span> 1260:</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_126;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">case</span> 2500:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_25;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">case</span> 5000:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_50;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">case</span> 10000:</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_100;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">switch</span>(linkMode) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a>:</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        settings.Radio = HwTauLink::RADIO_TELEM;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a>:</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        settings.Radio = HwTauLink::RADIO_TELEMPPM;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        settings.Radio = HwTauLink::RADIO_PPM;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    settings.MinChannel = min;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    settings.MaxChannel = max;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>()-&gt;setData(settings);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    uavoUtilManager-&gt;<a class="code" href="group___u_a_v_object_util_plugin.html#ga723ce2560e27e090144a3123d8ffaad0">saveObjectToFlash</a>( <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>());</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
-<div class="ttc" id="group___core_plugin_html_ga254a5750afd5834f9f88056ce6fadb66"><div class="ttname"><a href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">Core::IBoardType::boardType</a></div><div class="ttdeci">qint32 boardType</div><div class="ttdoc">The numerical board type ID. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00237">iboardtype.h:237</a></div></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">   61</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">TauLink::shortName</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;PipXtreme&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">   66</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">TauLink::boardDescription</a>()</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;The TauLink radio modem&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">   72</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">TauLink::queryCapabilities</a>(<a class="code" href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">BoardCapabilities</a> capability)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">switch</span>(capability) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678">BOARD_CAPABILITIES_RADIO</a>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">   83</a></span>&#160;QPixmap <a class="code" href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">TauLink::getBoardPicture</a>()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> QPixmap(<span class="stringliteral">&quot;:/images/taulink.png&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">   88</a></span>&#160;QString <a class="code" href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">TauLink::getHwUAVO</a>()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;HwTauLink&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">   94</a></span>&#160;HwTauLink * <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">TauLink::getSettings</a>()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    HwTauLink *wwTauLink = HwTauLink::GetInstance(uavoManager);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Q_ASSERT(wwTauLink);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> wwTauLink;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">  108</a></span>&#160;quint32 <a class="code" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink::getRfmID</a>()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Modem has instance 0</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    RFM22BStatus *rfm22bStatus = RFM22BStatus::GetInstance(uavoManager,0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    Q_ASSERT(rfm22bStatus);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    RFM22BStatus::DataFields rfm22b = rfm22bStatus-&gt;getData();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> rfm22b.DeviceID;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">  126</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink::bindRadio</a>(quint32 <span class="keywordtype">id</span>, quint32 baud_rate, <span class="keywordtype">float</span> rf_power, <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode, quint8 min, quint8 max)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    HwTauLink::DataFields settings = <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>()-&gt;getData();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    settings.CoordID = id;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">switch</span>(baud_rate) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">case</span> 9600:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_9600;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">case</span> 19200:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_19200;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">case</span> 32000:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_32000;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">case</span> 64000:</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_64000;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">case</span> 100000:</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_100000;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">case</span> 192000:</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        settings.MaxRfSpeed = HwTauLink::MAXRFSPEED_192000;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// Round to an integer to use a switch statement</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    quint32 rf_power_100 = (rf_power * 100) + 0.5;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">switch</span>(rf_power_100) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_0;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">case</span> 125:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_125;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">case</span> 160:</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_16;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">case</span> 316:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_316;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">case</span> 630:</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_63;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">case</span> 1260:</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_126;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">case</span> 2500:</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_25;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">case</span> 5000:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_50;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">case</span> 10000:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        settings.MaxRfPower = HwTauLink::MAXRFPOWER_100;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">switch</span>(linkMode) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a>:</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        settings.Radio = HwTauLink::RADIO_TELEM;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        settings.Radio = HwTauLink::RADIO_TELEMPPM;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        settings.Radio = HwTauLink::RADIO_PPM;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    settings.MinChannel = min;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    settings.MaxChannel = max;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>()-&gt;setData(settings);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    uavoUtilManager-&gt;<a class="code" href="group___u_a_v_object_util_plugin.html#ga723ce2560e27e090144a3123d8ffaad0">saveObjectToFlash</a>( <a class="code" href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">getSettings</a>());</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<div class="ttc" id="group___core_plugin_html_ga254a5750afd5834f9f88056ce6fadb66"><div class="ttname"><a href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">Core::IBoardType::boardType</a></div><div class="ttdeci">qint32 boardType</div><div class="ttdoc">The numerical board type ID. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00256">iboardtype.h:256</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="taulink_8h_html"><div class="ttname"><a href="taulink_8h.html">taulink.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaa22fe6fa3154cfff62d3e1860c8b7f7b"><div class="ttname"><a href="group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b">Core::IBoardType::USBInfo::vendorID</a></div><div class="ttdeci">int vendorID</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00069">iboardtype.h:69</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga429112c10ffe2695d47bec1dbaad98fb"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink::bindRadio</a></div><div class="ttdeci">virtual bool bindRadio(quint32 id, quint32 baud_rate, float rf_power, Core::IBoardType::LinkMode linkMode, quint8 min, quint8 max)</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00125">taulink.cpp:125</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gaec16152e40644ae516aa829b250f0831"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink::getRfmID</a></div><div class="ttdeci">virtual quint32 getRfmID()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00107">taulink.cpp:107</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga429112c10ffe2695d47bec1dbaad98fb"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink::bindRadio</a></div><div class="ttdeci">virtual bool bindRadio(quint32 id, quint32 baud_rate, float rf_power, Core::IBoardType::LinkMode linkMode, quint8 min, quint8 max)</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00126">taulink.cpp:126</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gaec16152e40644ae516aa829b250f0831"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink::getRfmID</a></div><div class="ttdeci">virtual quint32 getRfmID()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00108">taulink.cpp:108</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00211">iboardtype.h:211</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga01b09218f2a13aaeee6db007ac6bd967"><div class="ttname"><a href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">Core::IBoardType::BoardCapabilities</a></div><div class="ttdeci">BoardCapabilities</div><div class="ttdoc">Types of capabilities boards can support. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00093">iboardtype.h:93</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678">Core::IBoardType::BOARD_CAPABILITIES_RADIO</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00095">iboardtype.h:95</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gaf2a2e9537e4db9fbc7612a03f582b11a"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">TauLink::getSettings</a></div><div class="ttdeci">HwTauLink * getSettings()</div><div class="ttdoc">Get the settings object. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00093">taulink.cpp:93</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gaca83ad8ab0bff88ba54faf84bcdeb83d"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">TauLink::~TauLink</a></div><div class="ttdeci">virtual ~TauLink()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00054">taulink.cpp:54</a></div></div>
-<div class="ttc" id="struct_core_1_1_i_board_type_1_1_u_s_b_info_html"><div class="ttname"><a href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">Core::IBoardType::USBInfo</a></div><div class="ttdoc">The USBInfo struct TODO: finalize what we will put there, not everything is relevant. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00063">iboardtype.h:63</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gafcb249e18cf8d26222e0556390cf15fd"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">TauLink::boardDescription</a></div><div class="ttdeci">virtual QString boardDescription()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00065">taulink.cpp:65</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00211">iboardtype.h:211</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00210">iboardtype.h:210</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga01b09218f2a13aaeee6db007ac6bd967"><div class="ttname"><a href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">Core::IBoardType::BoardCapabilities</a></div><div class="ttdeci">BoardCapabilities</div><div class="ttdoc">Types of capabilities boards can support. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00091">iboardtype.h:91</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678">Core::IBoardType::BOARD_CAPABILITIES_RADIO</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00093">iboardtype.h:93</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gaf2a2e9537e4db9fbc7612a03f582b11a"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaf2a2e9537e4db9fbc7612a03f582b11a">TauLink::getSettings</a></div><div class="ttdeci">HwTauLink * getSettings()</div><div class="ttdoc">Get the settings object. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00094">taulink.cpp:94</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gaca83ad8ab0bff88ba54faf84bcdeb83d"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gaca83ad8ab0bff88ba54faf84bcdeb83d">TauLink::~TauLink</a></div><div class="ttdeci">virtual ~TauLink()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00055">taulink.cpp:55</a></div></div>
+<div class="ttc" id="struct_core_1_1_i_board_type_1_1_u_s_b_info_html"><div class="ttname"><a href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">Core::IBoardType::USBInfo</a></div><div class="ttdoc">The USBInfo struct TODO: finalize what we will put there, not everything is relevant. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00062">iboardtype.h:62</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga5caf4d4cf80df4fed07b6ee0f28fcd34"><div class="ttname"><a href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">Core::IBoardType::addFirmwareUSBInfo</a></div><div class="ttdeci">void addFirmwareUSBInfo(USBInfo info)</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00249">iboardtype.h:249</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gafcb249e18cf8d26222e0556390cf15fd"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gafcb249e18cf8d26222e0556390cf15fd">TauLink::boardDescription</a></div><div class="ttdeci">virtual QString boardDescription()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00066">taulink.cpp:66</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00210">iboardtype.h:210</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gab2bc757875b69ebf9d23252dd7f63277"><div class="ttname"><a href="group___core_plugin.html#gab2bc757875b69ebf9d23252dd7f63277">Core::IBoardType::addBootloaderUSBInfo</a></div><div class="ttdeci">void addBootloaderUSBInfo(USBInfo info)</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00250">iboardtype.h:250</a></div></div>
 <div class="ttc" id="group___u_a_v_object_util_plugin_html_ga723ce2560e27e090144a3123d8ffaad0"><div class="ttname"><a href="group___u_a_v_object_util_plugin.html#ga723ce2560e27e090144a3123d8ffaad0">UAVObjectUtilManager::saveObjectToFlash</a></div><div class="ttdeci">void saveObjectToFlash(UAVObject *obj)</div><div class="ttdoc">UAVObjectUtilManager::saveObjectToSD Add a new object to save in the queue. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8cpp_source.html#l00111">uavobjectutilmanager.cpp:111</a></div></div>
 <div class="ttc" id="class_u_a_v_object_util_manager_html"><div class="ttname"><a href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8h_source.html#l00049">uavobjectutilmanager.h:49</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga601f99918f17fa572ca4951a29fbe969"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">TauLink::TauLink</a></div><div class="ttdeci">TauLink()</div><div class="ttdoc">TauLink::TauLink This is the PipXtreme radio modem definition. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00039">taulink.cpp:39</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00211">iboardtype.h:211</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga454be60cf2bba54712173af606a748b8"><div class="ttname"><a href="group___core_plugin.html#ga454be60cf2bba54712173af606a748b8">Core::IBoardType::USBInfo::productID</a></div><div class="ttdeci">int productID</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00070">iboardtype.h:70</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga2fbb5490338e52f79ca75d999ece07a4"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">TauLink::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00087">taulink.cpp:87</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga42daca6311468f194ca6fe21ba757739"><div class="ttname"><a href="group___core_plugin.html#ga42daca6311468f194ca6fe21ba757739">Core::IBoardType::setUSBInfo</a></div><div class="ttdeci">void setUSBInfo(USBInfo info)</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00232">iboardtype.h:232</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga601f99918f17fa572ca4951a29fbe969"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">TauLink::TauLink</a></div><div class="ttdeci">TauLink()</div><div class="ttdoc">TauLink::TauLink This is the PipXtreme radio modem definition. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00040">taulink.cpp:40</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00210">iboardtype.h:210</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81"><div class="ttname"><a href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81">Core::IBoardType::BCD_DEVICE_FIRMWARE</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00245">iboardtype.h:245</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga2fbb5490338e52f79ca75d999ece07a4"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga2fbb5490338e52f79ca75d999ece07a4">TauLink::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00088">taulink.cpp:88</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga452e479c3ed41eaa4cf5c3cb88d73391"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">TauLink::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00082">taulink.cpp:82</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00211">iboardtype.h:211</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_gad12977c68f15b2a03bfecf935e1842ce"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">TauLink::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Return which capabilities this board has. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00071">taulink.cpp:71</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga452e479c3ed41eaa4cf5c3cb88d73391"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga452e479c3ed41eaa4cf5c3cb88d73391">TauLink::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00083">taulink.cpp:83</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00210">iboardtype.h:210</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gad12977c68f15b2a03bfecf935e1842ce"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gad12977c68f15b2a03bfecf935e1842ce">TauLink::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Return which capabilities this board has. </div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00072">taulink.cpp:72</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1"><div class="ttname"><a href="group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1">Core::IBoardType::BCD_DEVICE_BOOTLOADER</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00244">iboardtype.h:244</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
-<div class="ttc" id="group___boards___tau_labs_plugin_html_ga2c9dca8af81dbafd9e93ea73e0d0b19f"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">TauLink::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00060">taulink.cpp:60</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_ga2c9dca8af81dbafd9e93ea73e0d0b19f"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga2c9dca8af81dbafd9e93ea73e0d0b19f">TauLink::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="taulink_8cpp_source.html#l00061">taulink.cpp:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

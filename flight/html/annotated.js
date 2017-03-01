@@ -17,7 +17,6 @@ var annotated =
     [ "bl_fsm_context", "structbl__fsm__context.html", "structbl__fsm__context" ],
     [ "bl_messages", "structbl__messages.html", "structbl__messages" ],
     [ "bl_transition", "structbl__transition.html", "structbl__transition" ],
-    [ "bmi160_dev", "structbmi160__dev.html", "structbmi160__dev" ],
     [ "BoundMinMax", "class_bound_min_max.html", "class_bound_min_max" ],
     [ "BoundSym", "class_bound_sym.html", "class_bound_sym" ],
     [ "CameraStab_data", "struct_camera_stab__data.html", "struct_camera_stab__data" ],

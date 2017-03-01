@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('pios__lis3mdl_8c_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>lis3mdl_dev *PIOS_LIS_Alloc(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__lis3mdl__cfg.html">pios_lis3mdl_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">static</span> int32_t PIOS_LIS_Validate(<span class="keyword">struct</span> lis3mdl_dev *<a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">static</span> int32_t PIOS_LIS_Validate(<span class="keyword">struct</span> lis3mdl_dev *dev);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_LIS_Task(<span class="keywordtype">void</span> *parameters);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('pios__lis3mdl_8c_source.html','');});
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>lis3mdl_dev *PIOS_LIS_Alloc(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__lis3mdl__cfg.html">pios_lis3mdl_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="group___p_i_o_s___l_i_s3_m_d_l.html#gaf7b001a56dd17c7ba4d41beb1f4b4a36">lis3mdl_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="group___p_i_o_s___l_i_s3_m_d_l.html#gaf7b001a56dd17c7ba4d41beb1f4b4a36">lis3mdl_dev_t</a> dev;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        dev = (<span class="keyword">struct </span>lis3mdl_dev *)<a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*dev));</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (!dev)</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('pios__lis3mdl_8c_source.html','');});
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> dev;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">static</span> int32_t PIOS_LIS_Validate(<span class="keyword">struct</span> lis3mdl_dev *dev)</div>
@@ -515,7 +515,6 @@ $(document).ready(function(){initNavTree('pios__lis3mdl_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___l_i_s3_m_d_l_html_gga847440149749ffe972dd2139c44f022fa75a39163951cf164185e7ba988661e62"><div class="ttname"><a href="group___p_i_o_s___l_i_s3_m_d_l.html#gga847440149749ffe972dd2139c44f022fa75a39163951cf164185e7ba988661e62">LIS_REG_MAG_STATUS</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__lis3mdl__priv_8h_source.html#l00038">pios_lis3mdl_priv.h:38</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___copter_control_b_l_html_ga2414697de79a243562514a0a4344a4dd"><div class="ttname"><a href="group___copter_control_b_l.html#ga2414697de79a243562514a0a4344a4dd">status</a></div><div class="ttdeci">int16_t status</div><div class="ttdef"><b>Definition:</b> <a href="bl_2f1_2main_8c_source.html#l00061">main.c:61</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00087">pios_sensors.h:87</a></div></div>
 <div class="ttc" id="group___p_i_o_s___l_i_s3_m_d_l_html_gga7f4cf6aac8d592349028f66dc074bb04aeb6baba487d30f76d324faab60e5bd9e"><div class="ttname"><a href="group___p_i_o_s___l_i_s3_m_d_l.html#gga7f4cf6aac8d592349028f66dc074bb04aeb6baba487d30f76d324faab60e5bd9e">PIOS_LIS_BOTTOM_0DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__lis3mdl_8h_source.html#l00040">pios_lis3mdl.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___l_i_s3_m_d_l_html_gad849780a473d15a2d9bc6439ec499996"><div class="ttname"><a href="group___p_i_o_s___l_i_s3_m_d_l.html#gad849780a473d15a2d9bc6439ec499996">LIS_STATUS_ZYXDA</a></div><div class="ttdeci">#define LIS_STATUS_ZYXDA</div><div class="ttdef"><b>Definition:</b> <a href="pios__lis3mdl__priv_8h_source.html#l00106">pios_lis3mdl_priv.h:106</a></div></div>

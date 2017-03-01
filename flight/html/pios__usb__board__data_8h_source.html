@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/targets/dtfc/fw/pios_usb_board_data.h Source File</title>
+<title>dRonin: flight/PiOS/inc/pios_usb_board_data.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('dtfc_2fw_2pios__usb__board__data_8h_source.html','');});
+$(document).ready(function(){initNavTree('pios__usb__board__data_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('dtfc_2fw_2pios__usb__board__data_8h_so
 <div class="title">pios_usb_board_data.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="dtfc_2fw_2pios__usb__board__data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="pios__usb__board__data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -133,28 +133,55 @@ $(document).ready(function(){initNavTree('dtfc_2fw_2pios__usb__board__data_8h_so
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef PIOS_USB_BOARD_DATA_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_DATA_H</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#ga71c1891d07024986e5a249d991e1867b">   35</a></span>&#160;<span class="preprocessor">#define PIOS_USB_BOARD_CDC_DATA_LENGTH 64</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#ga76a98428f2f7cad1b787b6f390781738">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_CDC_MGMT_LENGTH 32</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#gab6ef33a0055e1eb8c61bd71801907dae">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_HID_DATA_LENGTH 64</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#gac4f520b768eb8d2468d648fc0f2346e0">   39</a></span>&#160;<span class="preprocessor">#define PIOS_USB_BOARD_EP_NUM 4</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__defs_8h.html">pios_usb_defs.h</a>&quot;</span>      <span class="comment">/* USB_* macros */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">   37</a></span>&#160;<span class="preprocessor">#define PIOS_USB_BOARD_CDC_DATA_LENGTH 64</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_CDC_MGMT_LENGTH 32</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_HID_DATA_LENGTH 64</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__defs_8h.html">pios_usb_defs.h</a>&quot;</span>      <span class="comment">/* USB_* macros */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#ga007e101874fb595709b6f50949ac9f35">   43</a></span>&#160;<span class="preprocessor">#define PIOS_USB_BOARD_VENDOR_ID USB_VENDOR_ID_MCS</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#gae4177b7c24195f8e3f020b7881e8533f">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_PRODUCT_ID USB_PRODUCT_ID_DTFC</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if defined(F1_UPGRADER) || defined(BOOTLOADER)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#       define PIOS_USB_BOARD_VENDOR_ID DRONIN_VID_DRONIN_BOOTLOADER</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_USB_BOARD_PRODUCT_ID DRONIN_PID_DRONIN_BOOTLOADER</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#ga7ce8753ec1333024258386fa8db2d06c">   46</a></span>&#160;<span class="preprocessor">#define PIOS_USB_BOARD_DEVICE_VER USB_OP_DEVICE_VER(0, USB_OP_BOARD_MODE_FW)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___d_t_fc.html#ga4b5be4363ddc411b8e1841cde2129485">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_BOARD_SN_SUFFIX &quot;+FW&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_USB_BOARD_DATA_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">         * The bootloader uses a simplified report structure</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">         *   BL: &lt;REPORT_ID&gt;&lt;DATA&gt;...&lt;DATA&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">         *   FW: &lt;REPORT_ID&gt;&lt;LENGTH&gt;&lt;DATA&gt;...&lt;DATA&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">         * This define changes the behaviour in pios_usb_hid.c</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#       define PIOS_USB_BOARD_BL_HID_HAS_NO_LENGTH_BYTE</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#       define PIOS_USB_BOARD_EP_NUM 2</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#       if defined(BOOTLOADER)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#               define PIOS_USB_BOARD_DEVICE_VER USB_OP_DEVICE_VER(0, USB_OP_BOARD_MODE_BL)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#               define PIOS_USB_BOARD_SN_SUFFIX &quot;+BL&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       elif defined (F1_UPGRADER)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#               define PIOS_USB_BOARD_DEVICE_VER USB_OP_DEVICE_VER(0, USB_OP_BOARD_MODE_UP)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#               define PIOS_USB_BOARD_SN_SUFFIX &quot;+UP&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#else  </span><span class="comment">/* Firmware (...or not bootloader or f1 upgrader) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#ga007e101874fb595709b6f50949ac9f35">   66</a></span>&#160;<span class="preprocessor">#       define PIOS_USB_BOARD_VENDOR_ID DRONIN_VID_DRONIN_FIRMWARE</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#gae4177b7c24195f8e3f020b7881e8533f">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_USB_BOARD_PRODUCT_ID DRONIN_PID_DRONIN_FIRMWARE</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#gac4f520b768eb8d2468d648fc0f2346e0">   69</a></span>&#160;<span class="preprocessor">#       define PIOS_USB_BOARD_EP_NUM 4</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#ga7ce8753ec1333024258386fa8db2d06c">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_USB_BOARD_DEVICE_VER USB_OP_DEVICE_VER(0, USB_OP_BOARD_MODE_FW)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___p_i_o_s___u_s_b.html#ga4b5be4363ddc411b8e1841cde2129485">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_USB_BOARD_SN_SUFFIX &quot;+FW&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(F1_UPGRADER) || defined(BOOTLOADER) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_USB_BOARD_DATA_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__usb__defs_8h_html"><div class="ttname"><a href="pios__usb__defs_8h.html">pios_usb_defs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1c0fe066ee3bbbff6911f1b6f0521ee4.html">flight</a></li><li class="navelem"><a class="el" href="dir_ad5991f88461913f443909ae084a39c6.html">targets</a></li><li class="navelem"><a class="el" href="dir_4e0c4e95dde89d54b09e5d11fb29df28.html">dtfc</a></li><li class="navelem"><a class="el" href="dir_a69789d2b1f684b7d015cdbc5dbd0ce0.html">fw</a></li><li class="navelem"><a class="el" href="dtfc_2fw_2pios__usb__board__data_8h.html">pios_usb_board_data.h</a></li>
+    <li class="navelem"><a class="el" href="dir_1c0fe066ee3bbbff6911f1b6f0521ee4.html">flight</a></li><li class="navelem"><a class="el" href="dir_5a3d8bc9852988e902c2cb41a89fd797.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_200b35b1542c93b64136a2bd7f9276c2.html">inc</a></li><li class="navelem"><a class="el" href="pios__usb__board__data_8h.html">pios_usb_board_data.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

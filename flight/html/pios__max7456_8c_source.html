@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -188,14 +188,14 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        uint32_t next_sync_expected;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> poll_vsync_spi (<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> poll_vsync_spi (<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/* Max7456 says 100ns period (10MHz) is OK.  But it may be off-board in</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * some circumstances, so let&#39;s not push our luck.</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#define MAX7456_SPI_SPEED 9000000</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> chip_select(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> chip_select(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a>(dev-&gt;spi_id);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga95d49208781167d4ab48a572accf4fa5">PIOS_SPI_SetClockSpeed</a>(dev-&gt;spi_id, MAX7456_SPI_SPEED);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> chip_unselect(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> chip_unselect(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>(dev-&gt;spi_id, dev-&gt;slave_id, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
@@ -218,13 +218,13 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">// Would be nice to collapse these to single transactions through the spi</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">// layer.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">static</span> uint8_t read_register(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>, uint8_t reg)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">static</span> uint8_t read_register(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev, uint8_t reg)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(dev-&gt;spi_id, reg | 0x80);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(dev-&gt;spi_id, 0xff);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">static</span> uint8_t read_register_sel(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>, uint8_t reg)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">static</span> uint8_t read_register_sel(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev, uint8_t reg)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        uint8_t ret;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
@@ -235,20 +235,20 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> write_register(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>, uint8_t reg, uint8_t val)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> write_register(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev, uint8_t reg, uint8_t val)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(dev-&gt;spi_id, reg);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(dev-&gt;spi_id, val);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> write_register_sel(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>, uint8_t reg, uint8_t val)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> write_register_sel(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev, uint8_t reg, uint8_t val)</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        chip_select(dev);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        write_register(dev, reg, val);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        chip_unselect(dev);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___character_o_s_d.html#gaefbbb6e2ffc81e370c022cf1592251ae">set_mode</a>(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>, uint8_t <a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___character_o_s_d.html#gaefbbb6e2ffc81e370c022cf1592251ae">set_mode</a>(<a class="code" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev, uint8_t <a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        dev-&gt;mode = <a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
@@ -401,7 +401,7 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        reset_hard(dev);</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        *dev_out = <a class="code" href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        *dev_out = dev;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
@@ -681,7 +681,6 @@ $(document).ready(function(){initNavTree('pios__max7456_8c_source.html','');});
 <div class="ttc" id="bl__messages_8h_html_ae634662f1116dcacc7a47136a87bb07b"><div class="ttname"><a href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a></div><div class="ttdeci">uint8_t data[XFER_BYTES_PER_PACKET]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00130">bl_messages.h:130</a></div></div>
 <div class="ttc" id="group___max7456_html_gga9481e6cb8606b29fdeb30a6e3462f5c1a7d7c2525dd5943af093e127497c9a887"><div class="ttname"><a href="group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1a7d7c2525dd5943af093e127497c9a887">MAX7456_REG_VM0</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__max7456__priv_8h_source.html#l00034">pios_max7456_priv.h:34</a></div></div>
 <div class="ttc" id="group___copter_control_b_l_html_ga2414697de79a243562514a0a4344a4dd"><div class="ttname"><a href="group___copter_control_b_l.html#ga2414697de79a243562514a0a4344a4dd">status</a></div><div class="ttdeci">int16_t status</div><div class="ttdef"><b>Definition:</b> <a href="bl_2f1_2main_8c_source.html#l00061">main.c:61</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga2bf82460d8aaa3c04698de473356d5f9"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga2bf82460d8aaa3c04698de473356d5f9">dev</a></div><div class="ttdeci">static struct bmi160_dev * dev</div><div class="ttdoc">Global structure for this device device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8c_source.html#l00099">pios_bmi160.c:99</a></div></div>
 <div class="ttc" id="group___max7456_html_ga61331b0f0b4fe46645e831f9405d912e"><div class="ttname"><a href="group___max7456.html#ga61331b0f0b4fe46645e831f9405d912e">MAX7456_DMM_CLR_R</a></div><div class="ttdeci">#define MAX7456_DMM_CLR_R(val)</div><div class="ttdef"><b>Definition:</b> <a href="pios__max7456__priv_8h_source.html#l00156">pios_max7456_priv.h:156</a></div></div>
 <div class="ttc" id="group___max7456_html_ga193fa6d9edd72ec7bd79d1efa664a8bf"><div class="ttname"><a href="group___max7456.html#ga193fa6d9edd72ec7bd79d1efa664a8bf">MAX7456_STAT_VSYNC_R</a></div><div class="ttdeci">#define MAX7456_STAT_VSYNC_R(val)</div><div class="ttdef"><b>Definition:</b> <a href="pios__max7456__priv_8h_source.html#l00181">pios_max7456_priv.h:181</a></div></div>
 <div class="ttc" id="group___max7456_html_gaae62203441045a30fa880fb8e4913368"><div class="ttname"><a href="group___max7456.html#gaae62203441045a30fa880fb8e4913368">MAX7456_STAT_VSYNC_TRUE</a></div><div class="ttdeci">#define MAX7456_STAT_VSYNC_TRUE</div><div class="ttdef"><b>Definition:</b> <a href="pios__max7456__priv_8h_source.html#l00183">pios_max7456_priv.h:183</a></div></div>

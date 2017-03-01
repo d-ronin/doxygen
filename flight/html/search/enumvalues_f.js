@@ -28,7 +28,6 @@ var searchData=
   ['pios_5fbmi160_5fbottom_5f180deg',['PIOS_BMI160_BOTTOM_180DEG',['../group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a91940e32802d16c48fda58f243be3a22',1,'pios_bmi160.h']]],
   ['pios_5fbmi160_5fbottom_5f270deg',['PIOS_BMI160_BOTTOM_270DEG',['../group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a2f39f7885f88f37db9e0f4c4cd18273d',1,'pios_bmi160.h']]],
   ['pios_5fbmi160_5fbottom_5f90deg',['PIOS_BMI160_BOTTOM_90DEG',['../group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a50a1cf0acf3332cbc423b7601dbb31d1',1,'pios_bmi160.h']]],
-  ['pios_5fbmi160_5fdev_5fmagic',['PIOS_BMI160_DEV_MAGIC',['../group___p_i_o_s___b_m_i160.html#ggae77722f2b5a038d643b317e2cf2201bcaf99281461bacf88b1dfab3a0bcc15bdf',1,'pios_bmi160.c']]],
   ['pios_5fbmi160_5fodr_5f1600_5fhz',['PIOS_BMI160_ODR_1600_Hz',['../group___p_i_o_s___b_m_i160.html#gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639',1,'pios_bmi160.h']]],
   ['pios_5fbmi160_5fodr_5f800_5fhz',['PIOS_BMI160_ODR_800_Hz',['../group___p_i_o_s___b_m_i160.html#gga92abd4d2945d5800dfedfc1f36b2991da431b501d4da2754c07f876ebe36d1361',1,'pios_bmi160.h']]],
   ['pios_5fbmi160_5frange_5f1000dps',['PIOS_BMI160_RANGE_1000DPS',['../group___p_i_o_s___b_m_i160.html#gga5b8fcc194828f4c0b9a30e10a007cb62a2cd8b5d97a8acceb7fefed4d3984ce43',1,'pios_bmi160.h']]],

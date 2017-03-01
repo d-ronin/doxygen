@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">16691a3</span>
+   &#160;<span id="projectnumber">aee8dd3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usb__hid_8c_sourc
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb_8h.html">pios_usb.h</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;pios_usb_board_data.h&quot;</span> <span class="comment">/* PIOS_BOARD_*_DATA_LENGTH */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__board__data_8h.html">pios_usb_board_data.h</a>&quot;</span> <span class="comment">/* PIOS_BOARD_*_DATA_LENGTH */</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* STM32 USB Library Definitions */</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;usb_lib.h&quot;</span></div>
@@ -170,8 +170,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usb__hid_8c_sourc
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> tx_out_cb;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        uintptr_t tx_out_context;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        uint8_t rx_packet_buffer[<a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a>];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        uint8_t tx_packet_buffer[<a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a>];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        uint8_t rx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a>];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        uint8_t tx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a>];</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        uint32_t rx_dropped;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        uint32_t rx_oversize;</div>
@@ -294,9 +294,9 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usb__hid_8c_sourc
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// If endpoint was stalled and there is now space make it valid</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#ifdef PIOS_USB_BOARD_BL_HID_HAS_NO_LENGTH_BYTE</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 1;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 1;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 2;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 2;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a>();</div>
@@ -415,9 +415,9 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usb__hid_8c_sourc
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#ifdef PIOS_USB_BOARD_BL_HID_HAS_NO_LENGTH_BYTE</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 1;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 1;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 2;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor"></span>        uint16_t max_payload_length = <a class="code" href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a> - 2;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> (headroom &gt;= max_payload_length) {</div>
@@ -441,15 +441,16 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usb__hid_8c_sourc
 <div class="ttc" id="group___p_i_o_s___u_s_b_html_ga188f42ea57c840a2b74611428547c92c"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#ga188f42ea57c840a2b74611428547c92c">PIOS_USB_CheckAvailable</a></div><div class="ttdeci">bool PIOS_USB_CheckAvailable(uintptr_t id)</div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_gad8727d3d5a14b22a851789d5c12f4f85"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#gad8727d3d5a14b22a851789d5c12f4f85">PIOS_USB_HID_Init</a></div><div class="ttdeci">int32_t PIOS_USB_HID_Init(uintptr_t *usbhid_id, const struct pios_usb_hid_cfg *cfg, uintptr_t lower_id)</div></div>
+<div class="ttc" id="pios__usb__board__data_8h_html"><div class="ttname"><a href="pios__usb__board__data_8h.html">pios_usb_board_data.h</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_ga5ae8bb7d09627f6ed20ab4f7874227fd"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#ga5ae8bb7d09627f6ed20ab4f7874227fd">pios_usb_hid_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_usb_hid_com_driver</div></div>
 <div class="ttc" id="pios__usb_8h_html"><div class="ttname"><a href="pios__usb_8h.html">pios_usb.h</a></div><div class="ttdoc">USB HID layer functions header. </div></div>
 <div class="ttc" id="pios__usb__hid__priv_8h_html"><div class="ttname"><a href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a></div><div class="ttdoc">USB COM HID private definitions. </div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>
+<div class="ttc" id="group___p_i_o_s___u_s_b_html_gab6ef33a0055e1eb8c61bd71801907dae"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a></div><div class="ttdeci">#define PIOS_USB_BOARD_HID_DATA_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__board__data_8h_source.html#l00039">pios_usb_board_data.h:39</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html_a9e2b92a09aa1fefba09f5668d00e2ef7"><div class="ttname"><a href="structpios__usb__hid__cfg.html#a9e2b92a09aa1fefba09f5668d00e2ef7">pios_usb_hid_cfg::data_rx_ep</a></div><div class="ttdeci">uint8_t data_rx_ep</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00035">pios_usb_hid_priv.h:35</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html_a700e6e6591adae231e06b05411cb321b"><div class="ttname"><a href="structpios__usb__hid__cfg.html#a700e6e6591adae231e06b05411cb321b">pios_usb_hid_cfg::data_tx_ep</a></div><div class="ttdeci">uint8_t data_tx_ep</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00036">pios_usb_hid_priv.h:36</a></div></div>
-<div class="ttc" id="group___aq32_b_l_html_gab6ef33a0055e1eb8c61bd71801907dae"><div class="ttname"><a href="group___aq32_b_l.html#gab6ef33a0055e1eb8c61bd71801907dae">PIOS_USB_BOARD_HID_DATA_LENGTH</a></div><div class="ttdeci">#define PIOS_USB_BOARD_HID_DATA_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__usb__board__data_8h_source.html#l00033">pios_usb_board_data.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_af7137074ee2ca2426304c94b0177cb4d"><div class="ttname"><a href="structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d">pios_com_driver::tx_start</a></div><div class="ttdeci">void(* tx_start)(uintptr_t id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00045">pios_com.h:45</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html"><div class="ttname"><a href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00033">pios_usb_hid_priv.h:33</a></div></div>

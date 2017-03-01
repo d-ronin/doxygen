@@ -14,6 +14,7 @@ var searchData=
   ['qlist_3c_20core_3a_3acore_3a_3aioptionspage_20_2a_20_3e',['QList&lt; Core::Core::IOptionsPage * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aglobalmessage_20_2a_20_3e',['QList&lt; Core::GlobalMessage * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aiboardtype_20_2a_20_3e',['QList&lt; Core::IBoardType * &gt;',['../class_q_list.html',1,'']]],
+  ['qlist_3c_20core_3a_3aiboardtype_3a_3ausbinfo_20_3e',['QList&lt; Core::IBoardType::USBInfo &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aiconnection_20_2a_20_3e',['QList&lt; Core::IConnection * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3ainternal_3a_3ashortcutitem_20_2a_20_3e',['QList&lt; Core::Internal::ShortcutItem * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aioptionspage_20_2a_20_3e',['QList&lt; Core::IOptionsPage * &gt;',['../class_q_list.html',1,'']]],
