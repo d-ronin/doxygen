@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"lux_2fw_2chconf_8h.html#ga3823e336736d522bbfaf780c86746482":[4,0,0,3,9,2,2,22],
 "lux_2fw_2chconf_8h.html#ga3c6800242611cf244a38c4a870e8515a":[4,0,0,3,9,2,2,11],
 "lux_2fw_2chconf_8h.html#ga4785d390f3a787916c5a5c41e953577d":[4,0,0,3,9,2,2,19],
 "lux_2fw_2chconf_8h.html#ga4f461a7b5edbff2405b7b40d2bb238a6":[4,0,0,3,9,2,2,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "manualcontrol_8c.html#gab4d9e85efcf5f9dafe0083f8599dfcf9":[4,0,0,1,18,3,11],
 "manualcontrol_8c.html#gae763f46f543e67fc1ca8e5fe41f67d63":[4,0,0,1,18,3,10],
 "manualcontrol_8c.html#gafb17fcbfc477043c0fe7666d05bbc40b":[4,0,0,1,18,3,5],
-"manualcontrol_8c_source.html":[4,0,0,1,18,3],
-"mgrs_8c.html":[4,0,0,0,2,0]
+"manualcontrol_8c_source.html":[4,0,0,1,18,3]
 };

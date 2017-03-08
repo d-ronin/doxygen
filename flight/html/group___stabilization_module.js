@@ -36,6 +36,7 @@ var group___stabilization_module =
     [ "get_throttle", "group___stabilization_module.html#ga563b10817781bf2d41a996189589402a", null ],
     [ "MODULE_HIPRI_INITCALL", "group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557", null ],
     [ "SettingsUpdatedCb", "group___stabilization_module.html#gad2830dd3bd7e44aa3c2436b2424f9037", null ],
+    [ "stabilization_failsafe_checks", "group___stabilization_module.html#gad4f9c597cc7e801e46ab76d2cb551e2d", null ],
     [ "stabilization_virtual_flybar", "group___stabilization_module.html#ga4d4e94ea99a3cf6e48241364faa65bf2", null ],
     [ "stabilization_virtual_flybar_pirocomp", "group___stabilization_module.html#ga286dd4b805297b12acd0aa9a69780a75", null ],
     [ "StabilizationInitialize", "group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b", null ],

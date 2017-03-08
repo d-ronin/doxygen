@@ -26,6 +26,7 @@ var stabilization_8c =
     [ "get_throttle", "stabilization_8c.html#ga563b10817781bf2d41a996189589402a", null ],
     [ "MODULE_HIPRI_INITCALL", "stabilization_8c.html#gad619c15b0c0589e754d5937b6f7ec557", null ],
     [ "SettingsUpdatedCb", "stabilization_8c.html#gad2830dd3bd7e44aa3c2436b2424f9037", null ],
+    [ "stabilization_failsafe_checks", "stabilization_8c.html#gad4f9c597cc7e801e46ab76d2cb551e2d", null ],
     [ "StabilizationInitialize", "stabilization_8c.html#ga0271ad4d56816c408814d99db9d15b8b", null ],
     [ "StabilizationStart", "stabilization_8c.html#ga6190a7e200476bf20da7b47ac4107973", null ],
     [ "stabilizationTask", "stabilization_8c.html#gaa96452721032acd43f9b128a04406aad", null ],

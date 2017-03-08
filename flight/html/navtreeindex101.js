@@ -1,5 +1,7 @@
 var NAVTREEINDEX101 =
 {
+"stm32f4xx__conf_8h.html#a631dea7b230e600555f979c62af1de21":[4,0,0,2,7,0,6,0],
+"stm32f4xx__conf_8h_source.html":[4,0,0,2,7,0,6],
 "storm32bgc_8c.html":[4,0,0,1,25,0],
 "storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82":[4,0,0,1,25,0,21],
 "storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9":[4,0,0,1,25,0,12],
@@ -28,8 +30,8 @@ var NAVTREEINDEX101 =
 "struct____attribute____.html":[1,6,35,3],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[1,6,35,3,19],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[1,3,24,19],
-"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[1,3,24,4],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[1,6,35,3,4],
+"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[1,3,24,4],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[1,6,35,3,7],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[1,3,24,7],
 "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[1,6,35,3,10],
@@ -61,12 +63,12 @@ var NAVTREEINDEX101 =
 "struct_event_stats.html":[1,29,0,2],
 "struct_event_stats.html#a14d4a710533bb544b4fe350b842dfc9f":[1,29,0,2,1],
 "struct_event_stats.html#a4734c9ef93875b98d9bb205537242be4":[1,29,0,2,0],
+"struct_font_dimensions.html":[1,7,1,8],
 "struct_font_dimensions.html":[1,9,1,8],
 "struct_font_dimensions.html":[1,10,0,8],
-"struct_font_dimensions.html":[1,7,1,8],
+"struct_font_entry.html":[1,10,0,7],
 "struct_font_entry.html":[1,7,1,7],
 "struct_font_entry.html":[1,9,1,7],
-"struct_font_entry.html":[1,10,0,7],
 "struct_g_p_s___r_x___s_t_a_t_s.html":[1,8,7],
 "struct_g_p_s___r_x___s_t_a_t_s.html#a1820743f7205c836af17a100834732b4":[1,8,7,1],
 "struct_g_p_s___r_x___s_t_a_t_s.html#a1a89019cb1163e32575738685ef79317":[1,8,7,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX101 =
 "struct_u_b_x___n_a_v___s_o_l.html#aafca9f9204a38e9bb1646848cafcfb38":[1,8,11,0],
 "struct_u_b_x___n_a_v___s_o_l.html#ab171c210f9cc253577d01441b9e1c439":[1,8,11,10],
 "struct_u_b_x___n_a_v___s_o_l.html#ac6ab9d0036a83196d847e1c4ed2389fb":[1,8,11,12],
-"struct_u_b_x___n_a_v___s_o_l.html#aceeb9bd043b85b904f3a3bcfd1c2dc38":[1,8,11,16],
-"struct_u_b_x___n_a_v___s_o_l.html#ae821898e9ca043790d8f58da75355f38":[1,8,11,8],
-"struct_u_b_x___n_a_v___s_o_l.html#aec3dced166e4dcaa0826b1e851532604":[1,8,11,4]
+"struct_u_b_x___n_a_v___s_o_l.html#aceeb9bd043b85b904f3a3bcfd1c2dc38":[1,8,11,16]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">280d709</span>
+   &#160;<span id="projectnumber">5b0d85f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -196,6 +196,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga563b10817781bf2d41a996189589402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6190a7e200476bf20da7b47ac4107973"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a> ()</td></tr>
 <tr class="separator:ga6190a7e200476bf20da7b47ac4107973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4f9c597cc7e801e46ab76d2cb551e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad4f9c597cc7e801e46ab76d2cb551e2d">stabilization_failsafe_checks</a> (StabilizationDesiredData *stab_desired, ActuatorDesiredData *actuator_desired, SystemSettingsAirframeTypeOptions <a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>, float *input, uint8_t *<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>)</td></tr>
+<tr class="separator:gad4f9c597cc7e801e46ab76d2cb551e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad619c15b0c0589e754d5937b6f7ec557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557">MODULE_HIPRI_INITCALL</a> (<a class="el" href="group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b">StabilizationInitialize</a>, <a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a>)</td></tr>
 <tr class="separator:gad619c15b0c0589e754d5937b6f7ec557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab9d01a7a2b4071bdc27db79eb145f5d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d">bound</a> (float val, float range)</td></tr>
@@ -503,7 +505,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01019">1019</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01030">1030</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -613,7 +615,53 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01109">1109</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01120">1120</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad4f9c597cc7e801e46ab76d2cb551e2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_failsafe_checks </td>
+          <td>(</td>
+          <td class="paramtype">StabilizationDesiredData *&#160;</td>
+          <td class="paramname"><em>stab_desired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActuatorDesiredData *&#160;</td>
+          <td class="paramname"><em>actuator_desired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SystemSettingsAirframeTypeOptions&#160;</td>
+          <td class="paramname"><em>airframe_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00215">215</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -776,7 +824,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module task </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00221">221</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00277">277</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -803,7 +851,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Clear the accumulators and derivatives for all the axes </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01009">1009</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01020">1020</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>

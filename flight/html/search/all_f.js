@@ -26,7 +26,7 @@ var searchData=
   ['objectpersistencequeue',['objectPersistenceQueue',['../group___system_module.html#ga409efe511a9583167ae97f88b838d93f',1,'systemmod.c']]],
   ['objectpersistenceupdatedcb',['objectPersistenceUpdatedCb',['../group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181',1,'RadioComBridge.c']]],
   ['objecttransaction',['objectTransaction',['../group___u_a_v_talk.html#ga7c72592dfa16024d0353a179baac4c8b',1,'uavtalk.c']]],
-  ['objectupdatedcb',['objectUpdatedCb',['../group___system_module.html#gaf33480c6b247620915026fc37bb9232a',1,'objectUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len):&#160;systemmod.c'],['../examplemodevent_8c.html#ad416f611bf4e5d4e0dbe7927e5d0f0e7',1,'ObjectUpdatedCb(UAVObjEvent *ev):&#160;examplemodevent.c']]],
+  ['objectupdatedcb',['ObjectUpdatedCb',['../examplemodevent_8c.html#ad416f611bf4e5d4e0dbe7927e5d0f0e7',1,'ObjectUpdatedCb(UAVObjEvent *ev):&#160;examplemodevent.c'],['../group___system_module.html#gaf33480c6b247620915026fc37bb9232a',1,'objectUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len):&#160;systemmod.c']]],
   ['objid',['objId',['../structuavtalk__min__header.html#a53f2edd4203be08998ea0fbfb09bf7cf',1,'uavtalk_min_header::objId()'],['../structuavtalk__max__header.html#ae86ac377823746b4ec927b0bf9d7d79b',1,'uavtalk_max_header::objId()'],['../struct_u_a_v_talk_input_processor.html#a02e62fc516bd524be74fd36898116d52',1,'UAVTalkInputProcessor::objId()']]],
   ['objlist',['objList',['../group___system_module.html#gaff29ccca83c4f02fbcb3e824211744ed',1,'systemmod.c']]],
   ['objsingleinstancedataoffset',['ObjSingleInstanceDataOffset',['../group___u_a_v_object_handling.html#ga8569271d8e137f2080bb272319a0128d',1,'uavobjectmanager.c']]],

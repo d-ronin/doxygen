@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"pios__fileout_8c.html":[4,0,0,2,2,5],
 "pios__fileout_8c.html#ga1f250524dba77a4edc9d8bf56d5b0baf":[4,0,0,2,2,5,3],
 "pios__fileout_8c.html#ga5e299446fa8190432cdc1a223a32e8e5":[4,0,0,2,2,5,1],
 "pios__fileout_8c.html#ga723198747d044043b78fad73a9435819":[4,0,0,2,2,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "pios__heap_8h.html#ga18a8f50dca1e6b6a6e000ccdf6955629":[4,0,0,2,1,44,3],
 "pios__heap_8h.html#ga28f859a3f736ce01c398002505b53b76":[4,0,0,2,1,44,1],
 "pios__heap_8h.html#ga43be76671b59015bf879afe2c38267a3":[4,0,0,2,1,44,5],
-"pios__heap_8h.html#ga8bb6ac86bf47b7be6720a845e6e5fad3":[4,0,0,2,1,44,2],
-"pios__heap_8h.html#ga9f346e5307fcbe8b926b8a996442d57c":[4,0,0,2,1,44,4]
+"pios__heap_8h.html#ga8bb6ac86bf47b7be6720a845e6e5fad3":[4,0,0,2,1,44,2]
 };
