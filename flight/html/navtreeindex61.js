@@ -1,5 +1,8 @@
 var NAVTREEINDEX61 =
 {
+"group___sparky2.html#gab5089b27d40c7040560009d8b82a7f67":[1,20,13,27],
+"group___sparky2.html#gab5d29657825bb07a7258cbc53637c700":[1,20,13,96],
+"group___sparky2.html#gab5f09e1f881124b5131fd88fc013fddd":[1,20,13,103],
 "group___sparky2.html#gab63edc180a907efe4bad610bbb6c2224":[1,20,13,179],
 "group___sparky2.html#gab98ad41f0f40e6edd46ea98d46edb0af":[1,20,13,17],
 "group___sparky2.html#gaba34640b239b01884e1a4b0b3fe16c31":[1,20,13,155],
@@ -246,8 +249,5 @@ var NAVTREEINDEX61 =
 "group___tau_labs_libraries.html#ga1f6f1a6d23515368ba94d67a3c34c8b4":[1,3,93],
 "group___tau_labs_libraries.html#ga2212575f7dbf4b2452fb7baa81b48115":[1,3,116],
 "group___tau_labs_libraries.html#ga241f797f133a9e48ef8c3e57f3d1106d":[1,3,130],
-"group___tau_labs_libraries.html#ga2c36c280fa284ae25b54eba06a601805":[1,3,59],
-"group___tau_labs_libraries.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef":[1,3,54],
-"group___tau_labs_libraries.html#ga2d6ff5400c99c9303336de626ba0a2bb":[1,3,49],
-"group___tau_labs_libraries.html#ga2db1c881411915e6c1900da4264315f8":[1,3,91]
+"group___tau_labs_libraries.html#ga2c36c280fa284ae25b54eba06a601805":[1,3,59]
 };

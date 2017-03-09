@@ -1,5 +1,8 @@
 var NAVTREEINDEX104 =
 {
+"structmsp__attitude.html":[1,5,0,12],
+"structmsp__attitude.html#a53dce8429ff95377a3ccf554d0ad3e13":[1,5,0,12,2],
+"structmsp__attitude.html#a8d9764cafcb45936c31f3a02f1dc5c01":[1,5,0,12,0],
 "structmsp__attitude.html#adab5ae4296af21f51545676b0edf9c6f":[1,5,0,12,1],
 "structmsp__box.html":[1,5,0,20],
 "structmsp__box.html#ae4dc3587c47c0b80282f734d7ede533a":[1,5,0,20,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX104 =
 "structpios__can__gimbal__message.html#a65e99947570f7f8a6dacf1fcf2301b4b":[1,0,49,2,1],
 "structpios__can__gimbal__message.html#a6f243042c43d4d05d85f4c9225d5b382":[1,0,49,2,2],
 "structpios__can__gimbal__message.html#a76d22dfe17b5517680433cafa36bae83":[1,0,49,2,4],
-"structpios__can__gimbal__message.html#a85c92bd619a570b51ed8f07cb5de97ee":[1,0,49,2,0],
-"structpios__can__gimbal__message.html#ac6b29792276f59dcb477bfe51dc6650a":[1,0,49,2,5],
-"structpios__com__driver.html":[1,0,9,6],
-"structpios__com__driver.html#a48d63b21edaaaa3f75de7fa473ae49ea":[1,0,9,6,3]
+"structpios__can__gimbal__message.html#a85c92bd619a570b51ed8f07cb5de97ee":[1,0,49,2,0]
 };

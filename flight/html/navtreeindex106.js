@@ -1,5 +1,8 @@
 var NAVTREEINDEX106 =
 {
+"structpios__servo__cfg.html#a94528872c23ad53d65dfb81ab86790fd":[1,0,63,5,3],
+"structpios__servo__cfg.html#aa82538113a2882befec9d71e49ca7548":[1,0,63,5,1],
+"structpios__servo__cfg.html#ac1b8636b07f30c4a459b1c09eec6356a":[1,0,63,5,6],
 "structpios__servo__cfg.html#afd81686ed67be0c809afa058df95ad44":[1,0,63,5,5],
 "structpios__spi__cfg.html":[1,0,67,3],
 "structpios__spi__cfg.html#a1318cbf732716210fffe77ecf7e14649":[1,0,67,3,5],
@@ -94,9 +97,9 @@ var NAVTREEINDEX106 =
 "structpios__video__type__boundary.html":[1,0,83,3],
 "structpios__video__type__cfg.html":[1,0,83,4],
 "structpios__ws2811__cfg.html":[1,0,94],
-"structpoint__t.html":[1,9,1,9],
-"structpoint__t.html":[1,10,0,9],
 "structpoint__t.html":[1,7,1,9],
+"structpoint__t.html":[1,10,0,9],
+"structpoint__t.html":[1,9,1,9],
 "structrcvr__activity__fsm.html":[1,6,17,9],
 "structrcvr__activity__fsm.html#a734a4dabb33f34467848db90882fc877":[1,6,17,9,1],
 "structrcvr__activity__fsm.html#acbfbcf2f18825d85bc9c672190f3d357":[1,6,17,9,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX106 =
 "structusb__config__hid__cdc.html":[1,0,44,4],
 "structusb__config__hid__only.html":[1,0,44,5],
 "structusb__configuration__desc.html":[1,0,74,1],
-"structusb__device__desc.html":[1,0,74,0],
-"structusb__endpoint__desc.html":[1,0,74,5],
-"structusb__ep__entry.html":[1,0,76,4],
-"structusb__hid__desc.html":[1,0,74,4]
+"structusb__device__desc.html":[1,0,74,0]
 };
