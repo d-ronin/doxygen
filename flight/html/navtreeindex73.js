@@ -1,5 +1,9 @@
 var NAVTREEINDEX73 =
 {
+"msp__messages_8h.html#a5a2fde6b6f7ae19bb3f993ec4e0ebc48":[4,0,0,0,3,2,78],
+"msp__messages_8h.html#a5c2c22eae3af99cebc66ef46102de6c2":[4,0,0,0,3,2,39],
+"msp__messages_8h.html#a5e01f23499a87ed5c8ab0b7f28ab7f1c":[4,0,0,0,3,2,43],
+"msp__messages_8h.html#a5e89a6331acba7f6d22d7adb0b83734d":[4,0,0,0,3,2,44],
 "msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977":[4,0,0,0,3,2,58],
 "msp__messages_8h.html#a69d33708fea878b38d31b69e8a28f551":[4,0,0,0,3,2,36],
 "msp__messages_8h.html#a6a1b38e18529f6339cedfbed72dd0c28":[4,0,0,0,3,2,81],
@@ -245,9 +249,5 @@ var NAVTREEINDEX73 =
 "naze32_2fw_2_free_r_t_o_s_config_8h_source.html":[4,0,0,3,10,1,0],
 "naze32_2fw_2main_8c.html":[4,0,0,3,10,1,1],
 "naze32_2fw_2main_8c.html#ga32e8ef92fb7d8e24d780cf0635f3217e":[4,0,0,3,10,1,1,7],
-"naze32_2fw_2main_8c.html#ga344bef1b2813ae2f1a6b859d6bb4aa85":[4,0,0,3,10,1,1,0],
-"naze32_2fw_2main_8c.html#ga34774069b8b1e7cbbaf630aec7cdb654":[4,0,0,3,10,1,1,1],
-"naze32_2fw_2main_8c.html#ga7a789e7b91612099a4a1f355b9e97c24":[4,0,0,3,10,1,1,8],
-"naze32_2fw_2main_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb":[4,0,0,3,10,1,1,6],
-"naze32_2fw_2main_8c.html#gaa48800df679ab1e050585d22871c2246":[4,0,0,3,10,1,1,9]
+"naze32_2fw_2main_8c.html#ga344bef1b2813ae2f1a6b859d6bb4aa85":[4,0,0,3,10,1,1,0]
 };

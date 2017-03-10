@@ -1,5 +1,13 @@
 var NAVTREEINDEX106 =
 {
+"structpios__servo__callbacks.html":[1,0,63,4],
+"structpios__servo__callbacks.html#a15993162ed69a020d1d670d9ad90f7e4":[1,0,63,4,1],
+"structpios__servo__callbacks.html#a58033e1ee9bae6eb658bfbb34ba3517b":[1,0,63,4,0],
+"structpios__servo__callbacks.html#a8985006ca335e10b48060b3d00f5fda1":[1,0,63,4,2],
+"structpios__servo__cfg.html":[1,0,63,5],
+"structpios__servo__cfg.html#a01880688c4a5e40c514d26c4d64e5efe":[1,0,63,5,4],
+"structpios__servo__cfg.html#a41b9d93e4e94a3a0c5e40a4e42c6d117":[1,0,63,5,2],
+"structpios__servo__cfg.html#a8d4fe8b46e6d3e13ebb162ea94ebbb0a":[1,0,63,5,0],
 "structpios__servo__cfg.html#a94528872c23ad53d65dfb81ab86790fd":[1,0,63,5,3],
 "structpios__servo__cfg.html#aa82538113a2882befec9d71e49ca7548":[1,0,63,5,1],
 "structpios__servo__cfg.html#ac1b8636b07f30c4a459b1c09eec6356a":[1,0,63,5,6],
@@ -97,9 +105,9 @@ var NAVTREEINDEX106 =
 "structpios__video__type__boundary.html":[1,0,83,3],
 "structpios__video__type__cfg.html":[1,0,83,4],
 "structpios__ws2811__cfg.html":[1,0,94],
-"structpoint__t.html":[1,7,1,9],
 "structpoint__t.html":[1,10,0,9],
 "structpoint__t.html":[1,9,1,9],
+"structpoint__t.html":[1,7,1,9],
 "structrcvr__activity__fsm.html":[1,6,17,9],
 "structrcvr__activity__fsm.html#a734a4dabb33f34467848db90882fc877":[1,6,17,9,1],
 "structrcvr__activity__fsm.html#acbfbcf2f18825d85bc9c672190f3d357":[1,6,17,9,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX106 =
 "structuavtalk__min__header.html#a53f2edd4203be08998ea0fbfb09bf7cf":[1,29,1,4,0],
 "structuavtalk__min__header.html#a7f75bcff0b29fb58f7ca4640b5be8eb6":[1,29,1,4,1],
 "structusb__cdc__acm__func__desc.html":[1,0,74,9],
-"structusb__cdc__callmgmt__func__desc.html":[1,0,74,8],
-"structusb__cdc__header__func__desc.html":[1,0,74,7],
-"structusb__cdc__line__coding.html":[1,0,74,12],
-"structusb__cdc__serial__state__report.html":[1,0,74,13],
-"structusb__cdc__union__func__desc.html":[1,0,74,10],
-"structusb__config__hid__cdc.html":[1,0,44,4],
-"structusb__config__hid__only.html":[1,0,44,5],
-"structusb__configuration__desc.html":[1,0,74,1],
-"structusb__device__desc.html":[1,0,74,0]
+"structusb__cdc__callmgmt__func__desc.html":[1,0,74,8]
 };

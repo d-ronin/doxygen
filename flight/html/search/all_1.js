@@ -232,7 +232,7 @@ var searchData=
   ['available',['available',['../structcharosd__state__t.html#a631762c2d9c6930142875585bd6cd36b',1,'charosd_state_t::available()'],['../structpios__adc__driver.html#a78f4f316d7ca3c5feafa158bef5b3895',1,'pios_adc_driver::available()'],['../structpios__com__driver.html#adca3cddb8dee4b725dbd7b4106b79a55',1,'pios_com_driver::available()']]],
   ['averaging',['Averaging',['../structpios__hmc5983__cfg.html#a44df092d13754a8a2d4a0f987d76706a',1,'pios_hmc5983_cfg']]],
   ['avg_5fcurrent_5flpf_5ffor_5ftime',['avg_current_lpf_for_time',['../group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b',1,'battery.c']]],
-  ['axis_5flock_5faccum',['axis_lock_accum',['../group___stabilization_module.html#ga1b6fc01b4acff35c8b4875e91fb63bce',1,'stabilization.c']]],
+  ['axis_5flock_5faccum',['axis_lock_accum',['../group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db',1,'stabilization.c']]],
   ['axis_5fstrings',['axis_strings',['../group___on_screen_display.html#gabf1aceefe01acec764b88b095c55dbde',1,'osd_menu.c']]],
   ['azim',['azim',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#a74c4856a9ce3011e1de4fb51a80062dc',1,'UBX_NAV_SVINFO_SV']]],
   ['adc_20functions',['ADC Functions',['../group___p_i_o_s___a_d_c.html',1,'']]],
