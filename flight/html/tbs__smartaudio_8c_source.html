@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('tbs__smartaudio_8c_source.html','');})
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">// The CRC is the second last byte, the first byte is dummy</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        buff[n_bytes - 2] = <a class="code" href="group___p_i_o_s___c_r_c.html#ga641f0d2880fbc0d860af0483b46bc77b">PIOS_CRC_updateCRC_TBS</a>(0, &amp;buff[1], n_bytes - 3);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a>(usart_id, buff, n_bytes) &lt; 0) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(usart_id, buff, n_bytes) &lt; 0) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// this is single wire, so flush the same number of bytes out of the rx buffer</span></div>
@@ -487,8 +487,8 @@ $(document).ready(function(){initNavTree('tbs__smartaudio_8c_source.html','');})
 <div class="ttc" id="group___v_t_x_config_html_ga052e4a7a9a0380782154d3b32c999daa"><div class="ttname"><a href="group___v_t_x_config.html#ga052e4a7a9a0380782154d3b32c999daa">tbsvtx_tx_msg</a></div><div class="ttdeci">static int32_t tbsvtx_tx_msg(uintptr_t usart_id, uint8_t *buff, uint8_t n_bytes)</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00095">tbs_smartaudio.c:95</a></div></div>
 <div class="ttc" id="group___v_t_x_config_html_gga716d475c1a58322a7f0bbc8f4109d7bea06c7ab568b49b7228b94b5d964d8c326"><div class="ttname"><a href="group___v_t_x_config.html#gga716d475c1a58322a7f0bbc8f4109d7bea06c7ab568b49b7228b94b5d964d8c326">TBS_SMARTAUDIO_2</a></div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00052">tbs_smartaudio.c:52</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2c639e61f21eac6cb54580eb5e1b85de"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a></div><div class="ttdeci">void PIOS_Thread_Sleep(uint32_t time_ms)</div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga707b575f67fe940b9742e1922e684c68"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a></div><div class="ttdeci">PIOS_COM_SendBuffer(shub_global-&gt;frsky_port, shub_global-&gt;serial_buf, msg_length)</div></div>
 <div class="ttc" id="group___copter_control_b_l_html_gga3758da4ce9164f008216ba0fc2a82edca0e97c69c73117f6c0109b2d7d1d9cedc"><div class="ttname"><a href="group___copter_control_b_l.html#gga3758da4ce9164f008216ba0fc2a82edca0e97c69c73117f6c0109b2d7d1d9cedc">start</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00035">common.h:35</a></div></div>
-<div class="ttc" id="group___p_i_o_s___c_o_m_html_ga06a9a4136683f78051b9e72e5edb32f8"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a></div><div class="ttdeci">int32_t PIOS_COM_SendBuffer(uintptr_t com_id, const uint8_t *buffer, uint16_t len)</div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga716d475c1a58322a7f0bbc8f4109d7be"><div class="ttname"><a href="group___v_t_x_config.html#ga716d475c1a58322a7f0bbc8f4109d7be">TBS_VTX_PROTOCOL</a></div><div class="ttdeci">TBS_VTX_PROTOCOL</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00049">tbs_smartaudio.c:49</a></div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga7d0ba33254b1b5378329fcb5f120c346"><div class="ttname"><a href="group___v_t_x_config.html#ga7d0ba33254b1b5378329fcb5f120c346">tbsvtx_get_state</a></div><div class="ttdeci">int32_t tbsvtx_get_state(uintptr_t usart_id, VTXInfoData *info)</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00156">tbs_smartaudio.c:156</a></div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga015080f92311cb2608d26a360f593ea8"><div class="ttname"><a href="group___v_t_x_config.html#ga015080f92311cb2608d26a360f593ea8">__attribute__::pwr</a></div><div class="ttdeci">uint8_t pwr</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00079">tbs_smartaudio.c:79</a></div></div>

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['camera_20stabilization_20module',['Camera Stabilization Module',['../group___camera_stab.html',1,'']]],
-  ['coptercontrol_203d_20bootloader',['CopterControl 3D bootloader',['../group___c_c3_d_b_l.html',1,'']]],
   ['cmsis',['CMSIS',['../group___c_m_s_i_s.html',1,'']]],
   ['com_20port_20to_20usb_20vcp_20bridge_20module',['Com Port to USB VCP Bridge Module',['../group___com_usb_bridge_module.html',1,'']]],
   ['config',['Config',['../group__config.html',1,'']]],

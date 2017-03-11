@@ -20,7 +20,6 @@ var group___actuator_module =
     [ "MODULE_HIPRI_INITCALL", "group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9", null ],
     [ "process_mixer", "group___actuator_module.html#ga3789e6d40269f7b9c7cfcb9781b4f242", null ],
     [ "scale_channel", "group___actuator_module.html#ga7220b5cc002952f9fa775381b6067bd8", null ],
-    [ "set_channel", "group___actuator_module.html#ga946e76c4f1f0633a73d51bd6471a931f", null ],
     [ "set_failsafe", "group___actuator_module.html#ga6e8c5a2f546ec4906bbeb387959a7b8d", null ],
     [ "throt_curve", "group___actuator_module.html#ga85f9c2a5a055c0292a43f7bf29f09d94", null ],
     [ "typeof", "group___actuator_module.html#ga5e1cca7d4dbf3be32fd23a529c09343e", null ],

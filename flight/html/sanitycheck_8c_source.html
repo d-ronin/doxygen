@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -370,85 +370,83 @@ $(document).ready(function(){initNavTree('sanitycheck_8c_source.html','');});
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">//   INSOutdoor |     INS</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">//   INSIndoor  |     INS          (unsafe)</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#if !defined(SMALLF1)</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span>        StateEstimationData <a class="code" href="group___attitude_module.html#ga6284b520eced53bee05e93510e93a5e5">stateEstimation</a>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        StateEstimationGet(&amp;stateEstimation);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (stateEstimation.AttitudeFilter == STATEESTIMATION_ATTITUDEFILTER_INSINDOOR)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// Anything not allowed is invalid, safe default</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">if</span> (stateEstimation.NavigationFilter != STATEESTIMATION_NAVIGATIONFILTER_INS &amp;&amp;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                stateEstimation.NavigationFilter != STATEESTIMATION_NAVIGATIONFILTER_RAW)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NONE;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">  321</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">check_stabilization_rates</a>()</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MAXIMUM_SAFE_FRACTIONAL_RATE = 0.85;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        int32_t max_safe_rate = <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga898e25c2d8b6ef384db119ff1110cbf6">PIOS_SENSORS_GetMaxGyro</a>() * MAXIMUM_SAFE_FRACTIONAL_RATE;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordtype">float</span> rates[3];</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        StabilizationSettingsManualRateGet(rates);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span> (rates[0] &gt; max_safe_rate || rates[1] &gt; max_safe_rate || rates[2] &gt; max_safe_rate)</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        StabilizationSettingsMaximumRateGet(rates);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span> (rates[0] &gt; max_safe_rate || rates[1] &gt; max_safe_rate || rates[2] &gt; max_safe_rate)</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NONE;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;}</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">  342</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a>(SystemAlarmsConfigErrorOptions error_code)</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">// Get the severity of the alarm given the error code</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        SystemAlarmsAlarmOptions severity;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        StateEstimationData <a class="code" href="group___attitude_module.html#ga6284b520eced53bee05e93510e93a5e5">stateEstimation</a>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        StateEstimationGet(&amp;stateEstimation);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">if</span> (stateEstimation.AttitudeFilter == STATEESTIMATION_ATTITUDEFILTER_INSINDOOR)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="comment">// Anything not allowed is invalid, safe default</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">if</span> (stateEstimation.NavigationFilter != STATEESTIMATION_NAVIGATIONFILTER_INS &amp;&amp;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                stateEstimation.NavigationFilter != STATEESTIMATION_NAVIGATIONFILTER_RAW)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NONE;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">  319</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">check_stabilization_rates</a>()</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MAXIMUM_SAFE_FRACTIONAL_RATE = 0.85;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        int32_t max_safe_rate = <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga898e25c2d8b6ef384db119ff1110cbf6">PIOS_SENSORS_GetMaxGyro</a>() * MAXIMUM_SAFE_FRACTIONAL_RATE;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordtype">float</span> rates[3];</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        StabilizationSettingsManualRateGet(rates);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span> (rates[0] &gt; max_safe_rate || rates[1] &gt; max_safe_rate || rates[2] &gt; max_safe_rate)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        StabilizationSettingsMaximumRateGet(rates);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">if</span> (rates[0] &gt; max_safe_rate || rates[1] &gt; max_safe_rate || rates[2] &gt; max_safe_rate)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> SYSTEMALARMS_CONFIGERROR_NONE;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">  340</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a>(SystemAlarmsConfigErrorOptions error_code)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// Get the severity of the alarm given the error code</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        SystemAlarmsAlarmOptions severity;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> sticky = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> sticky = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="comment">/* Once a sticky error occurs, never change the error code */</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (sticky) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">switch</span> (error_code) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_NONE:</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                severity = SYSTEMALARMS_ALARM_OK;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                error_code = SYSTEMALARMS_CONFIGERROR_UNDEFINED;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                <span class="comment">/* and fall through */</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_DUPLICATEPORTCFG:</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                sticky = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="comment">/* and fall through */</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_AUTOTUNE:</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_ALTITUDEHOLD:</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_MULTIROTOR:</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER:</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_PATHPLANNER:</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_POSITIONHOLD:</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION:</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_UNDEFINED:</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_UNSAFETOARM:</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                severity = SYSTEMALARMS_ALARM_ERROR;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="comment">// Make sure not to set the error code if it didn&#39;t change</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        SystemAlarmsConfigErrorOptions current_error_code;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        SystemAlarmsConfigErrorGet((uint8_t *) &amp;current_error_code);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">if</span> (current_error_code != error_code) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                SystemAlarmsConfigErrorSet((uint8_t *) &amp;error_code);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="comment">// AlarmSet checks only updates on toggle</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_SYSTEMCONFIGURATION, (uint8_t) severity);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="ttc" id="group___tau_labs_libraries_html_ga01463951db48cdec6bf0f5172c4d5314"><div class="ttname"><a href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">check_stabilization_rates</a></div><div class="ttdeci">static int32_t check_stabilization_rates()</div><div class="ttdoc">Check a stabilization mode switch position for safety. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00321">sanitycheck.c:321</a></div></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">/* Once a sticky error occurs, never change the error code */</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (sticky) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">switch</span> (error_code) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_NONE:</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                severity = SYSTEMALARMS_ALARM_OK;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                error_code = SYSTEMALARMS_CONFIGERROR_UNDEFINED;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                <span class="comment">/* and fall through */</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_DUPLICATEPORTCFG:</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                sticky = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">/* and fall through */</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_AUTOTUNE:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_ALTITUDEHOLD:</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_MULTIROTOR:</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_NAVFILTER:</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_PATHPLANNER:</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_POSITIONHOLD:</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_STABILIZATION:</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_UNDEFINED:</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">case</span> SYSTEMALARMS_CONFIGERROR_UNSAFETOARM:</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                severity = SYSTEMALARMS_ALARM_ERROR;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="comment">// Make sure not to set the error code if it didn&#39;t change</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        SystemAlarmsConfigErrorOptions current_error_code;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        SystemAlarmsConfigErrorGet((uint8_t *) &amp;current_error_code);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">if</span> (current_error_code != error_code) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                SystemAlarmsConfigErrorSet((uint8_t *) &amp;error_code);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="comment">// AlarmSet checks only updates on toggle</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_SYSTEMCONFIGURATION, (uint8_t) severity);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="ttc" id="group___tau_labs_libraries_html_ga01463951db48cdec6bf0f5172c4d5314"><div class="ttname"><a href="group___tau_labs_libraries.html#ga01463951db48cdec6bf0f5172c4d5314">check_stabilization_rates</a></div><div class="ttdeci">static int32_t check_stabilization_rates()</div><div class="ttdoc">Check a stabilization mode switch position for safety. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00319">sanitycheck.c:319</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga898e25c2d8b6ef384db119ff1110cbf6"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga898e25c2d8b6ef384db119ff1110cbf6">PIOS_SENSORS_GetMaxGyro</a></div><div class="ttdeci">int32_t PIOS_SENSORS_GetMaxGyro()</div><div class="ttdoc">Get the maximum gyro rate in deg/s. </div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8c_source.html#l00086">pios_sensors.c:86</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00215">pios.h:215</a></div></div>
 <div class="ttc" id="pios__board__info_8h_html"><div class="ttname"><a href="pios__board__info_8h.html">pios_board_info.h</a></div></div>
@@ -459,7 +457,7 @@ $(document).ready(function(){initNavTree('sanitycheck_8c_source.html','');});
 <div class="ttc" id="group___tau_labs_libraries_html_ga08f1806dd1c0c40a7b8ec179690f883c"><div class="ttname"><a href="group___tau_labs_libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c">check_safe_to_arm</a></div><div class="ttdeci">static int32_t check_safe_to_arm()</div><div class="ttdoc">Check it is safe to arm in this position. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00249">sanitycheck.c:249</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gabcb80832a82e492c119a231984eba10a"><div class="ttname"><a href="group___tau_labs_libraries.html#gabcb80832a82e492c119a231984eba10a">configuration_check</a></div><div class="ttdeci">int32_t configuration_check()</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00068">sanitycheck.c:68</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_gae62c697d4457674e78e13375fc1dabc2"><div class="ttname"><a href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a></div><div class="ttdeci">void set_config_error(SystemAlarmsConfigErrorOptions error_code)</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00342">sanitycheck.c:342</a></div></div>
+<div class="ttc" id="group___tau_labs_libraries_html_gae62c697d4457674e78e13375fc1dabc2"><div class="ttname"><a href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a></div><div class="ttdeci">void set_config_error(SystemAlarmsConfigErrorOptions error_code)</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00340">sanitycheck.c:340</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gadd1139478e7c6bc1b6afaaa0d1d114dd"><div class="ttname"><a href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a></div><div class="ttdeci">int32_t AlarmsSet(SystemAlarmsAlarmElem alarm, SystemAlarmsAlarmOptions severity)</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00097">alarms.c:97</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gadd6c95f5fd14d4ae70c1ee9335d9883a"><div class="ttname"><a href="group___tau_labs_libraries.html#gadd6c95f5fd14d4ae70c1ee9335d9883a">check_stabilization_settings</a></div><div class="ttdeci">static int32_t check_stabilization_settings(int index, bool multirotor)</div><div class="ttdoc">Check a stabilization mode switch position for safety. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00182">sanitycheck.c:182</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga2212575f7dbf4b2452fb7baa81b48115"><div class="ttname"><a href="group___tau_labs_libraries.html#ga2212575f7dbf4b2452fb7baa81b48115">TaskMonitorQueryRunning</a></div><div class="ttdeci">bool TaskMonitorQueryRunning(TaskInfoRunningElem task)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00102">taskmonitor.c:102</a></div></div>

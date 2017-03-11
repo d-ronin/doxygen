@@ -14,8 +14,6 @@ var class_output_channel_form =
     [ "setMin", "group___config_plugin.html#ga5eccba3591360bc1c690fe75ccd7e40a", null ],
     [ "setMinmax", "group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463", null ],
     [ "setNeutral", "group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660", null ],
-    [ "setType", "group___config_plugin.html#ga016b46bb4fa22cf5c6ff1374e653c7d7", null ],
-    [ "type", "group___config_plugin.html#ga9da23f434e014555ab930382128388c1", null ],
     [ "updateChannelLimits", "group___config_plugin.html#ga32fadbb58da35d4088500bd070584309", null ],
     [ "ConfigOnputWidget", "group___config_plugin.html#ga92a68401074780ed6cadf27f127892e3", null ]
 ];

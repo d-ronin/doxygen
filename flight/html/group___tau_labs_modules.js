@@ -26,7 +26,7 @@ var group___tau_labs_modules =
     [ "System Module", "group___system_module.html", "group___system_module" ],
     [ "Telemetry Module", "group___telemetry_module.html", "group___telemetry_module" ],
     [ "TxPID Module", "group___tx_p_i_d_module.html", "group___tx_p_i_d_module" ],
-    [ "UAVO to FrSKY Bridge Module", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html", null ],
+    [ "UAVO to FrSKY Bridge Module", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge" ],
     [ "UAVO to FrSKY S.PORT Bridge Module", "group___u_a_v_o_fr_s_k_y_s_port_bridge.html", null ],
     [ "HoTT Telemetry Module", "group___u_a_v_o_ho_t_t_bridge.html", "group___u_a_v_o_ho_t_t_bridge" ],
     [ "UAVO to Lighttelemetry Bridge Module", "group___u_a_v_o_lighttelemetry_bridge.html", "group___u_a_v_o_lighttelemetry_bridge" ],

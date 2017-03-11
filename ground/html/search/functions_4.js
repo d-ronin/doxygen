@@ -67,7 +67,6 @@ var searchData=
   ['disconnect',['disconnect',['../group___core_plugin.html#ga94648c5dfd178bef04f3050534c2ab8d',1,'TelemetryMonitorWidget']]],
   ['disconnectdevice',['disconnectDevice',['../group___core_plugin.html#ga679b06064b497205af5453783acff419',1,'Core::ConnectionManager']]],
   ['disconnected',['disconnected',['../group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76',1,'TelemetryManager::disconnected()'],['../group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640',1,'TelemetryMonitor::disconnected()']]],
-  ['discoveryf4',['DiscoveryF4',['../group___boards___stm.html#gac87884749e97c313a7ae0f297c4fea34',1,'DiscoveryF4']]],
   ['disp',['disp',['../uavobjecttemplate_8m.html#a1c2423418c8e367fca746156bb6d3232',1,'uavobjecttemplate.m']]],
   ['displaytext',['displayText',['../group___path_planner.html#ga14243b35579b422c1343085132072746',1,'WaypointDelegate']]],
   ['disposeexpiretimer',['disposeExpireTimer',['../group___notify_plugin.html#ga701d292a397a1198e167f249475b77e0',1,'NotificationItem']]],

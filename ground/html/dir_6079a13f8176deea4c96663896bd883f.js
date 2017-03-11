@@ -14,7 +14,6 @@ var dir_6079a13f8176deea4c96663896bd883f =
     [ "configautotunewidget.h", "configautotunewidget_8h.html", null ],
     [ "configcamerastabilizationwidget.cpp", "configcamerastabilizationwidget_8cpp.html", null ],
     [ "configcamerastabilizationwidget.h", "configcamerastabilizationwidget_8h.html", null ],
-    [ "configccattitudewidget.cpp", "configccattitudewidget_8cpp.html", "configccattitudewidget_8cpp" ],
     [ "configfactory.h", "configfactory_8h.html", null ],
     [ "configgadget.cpp", "configgadget_8cpp.html", null ],
     [ "configgadget.h", "configgadget_8h.html", null ],

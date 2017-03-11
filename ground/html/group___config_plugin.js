@@ -2,10 +2,6 @@ var group___config_plugin =
 [
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
-    [ "ConfigCCHWWidget", "class_config_c_c_h_w_widget.html", [
-      [ "ConfigCCHWWidget", "group___config_plugin.html#ga7310551f62aff69c196b77b2680efb6b", null ],
-      [ "~ConfigCCHWWidget", "group___config_plugin.html#gaf57cdaf6ac0ff3096be01bbe4e6eea2b", null ]
-    ] ],
     [ "SwashplateServoSettingsStruct", "struct_swashplate_servo_settings_struct.html", [
       [ "Max", "group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1", null ],
       [ "Min", "group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4", null ],
@@ -356,8 +352,6 @@ var group___config_plugin =
       [ "setMin", "group___config_plugin.html#ga5eccba3591360bc1c690fe75ccd7e40a", null ],
       [ "setMinmax", "group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463", null ],
       [ "setNeutral", "group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660", null ],
-      [ "setType", "group___config_plugin.html#ga016b46bb4fa22cf5c6ff1374e653c7d7", null ],
-      [ "type", "group___config_plugin.html#ga9da23f434e014555ab930382128388c1", null ],
       [ "updateChannelLimits", "group___config_plugin.html#ga32fadbb58da35d4088500bd070584309", null ],
       [ "ConfigOnputWidget", "group___config_plugin.html#ga92a68401074780ed6cadf27f127892e3", null ]
     ] ],
@@ -525,7 +519,6 @@ var group___config_plugin =
     [ "ConfigAttitudeWidget", "group___config_plugin.html#ga56d10f1f43df3e0490f765a0e36eba72", null ],
     [ "ConfigAutotuneWidget", "group___config_plugin.html#gaed50d4a819680b38d6f9ecb6f9476f92", null ],
     [ "ConfigCameraStabilizationWidget", "group___config_plugin.html#gaadc56cb83f84d7f34491592b248a111a", null ],
-    [ "ConfigCCHWWidget", "group___config_plugin.html#ga7310551f62aff69c196b77b2680efb6b", null ],
     [ "ConfigCcpmWidget", "group___config_plugin.html#gad02f1999c6fe879b07303698416ff782", null ],
     [ "ConfigFixedWingWidget", "group___config_plugin.html#gaee3501121903de9f9860f69611fd07e6", null ],
     [ "ConfigGadget", "group___config_plugin.html#gae5427c3bad5fe19de2f24710fd629d87", null ],
@@ -583,7 +576,6 @@ var group___config_plugin =
     [ "initLinearCurve", "group___config_plugin.html#ga149a9a0d28a983db45a48ed71c35f21d", null ],
     [ "isComplete", "group___config_plugin.html#ga9961796b522451b6dca6e95c2bb21aad", null ],
     [ "isValidThrottleCurve", "group___config_plugin.html#ga92da8cda852e8b2f1974cac57fbaa99f", null ],
-    [ "LinearEquationsSolving2", "group___config_plugin.html#gae36fbabaf3892d933d17f670d77cb208", null ],
     [ "loadConfiguration", "group___config_plugin.html#ga43acf4e389daaf28085a3773b4abc903", null ],
     [ "MixerCurve", "group___config_plugin.html#ga1124f8bbbfadf0a60fe37c681a323689", null ],
     [ "operator==", "group___config_plugin.html#gaa1b84821bb68ba5f3e6cdc312899f4dd", null ],
@@ -638,7 +630,6 @@ var group___config_plugin =
     [ "showEvent", "group___config_plugin.html#ga400903af96a9e0b31101d06356f267fe", null ],
     [ "showOutputChannelSelectWindow", "group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199", null ],
     [ "SixPointInConstFieldCal", "group___config_plugin.html#gaaf643402ea9690b33d40ec8b79382b54", null ],
-    [ "SixPointInConstFieldCal2", "group___config_plugin.html#ga6ed065f6a9a58eb96dab22485bcf48ee", null ],
     [ "SpinBoxDelegate", "group___config_plugin.html#gabf1b830266511d0237c97b46f49e01f9", null ],
     [ "startInputWizard", "group___config_plugin.html#ga8655bea31bbed90a46bacb2f428301f6", null ],
     [ "startInputWizard", "group___config_plugin.html#gaad3d50c5993be3628b91188aad094505", null ],
@@ -655,7 +646,6 @@ var group___config_plugin =
     [ "~Calibration", "group___config_plugin.html#ga108efb6ccd8c98e5cac950be4bf0ac26", null ],
     [ "~ConfigAttitudeWidget", "group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705", null ],
     [ "~ConfigCameraStabilizationWidget", "group___config_plugin.html#ga6294d4eae582574215951c5213ae4e0b", null ],
-    [ "~ConfigCCHWWidget", "group___config_plugin.html#gaf57cdaf6ac0ff3096be01bbe4e6eea2b", null ],
     [ "~ConfigCcpmWidget", "group___config_plugin.html#ga1c115c3e78572da9895bc485b6ed507e", null ],
     [ "~ConfigFixedWingWidget", "group___config_plugin.html#ga9f0af233f9470bbaab33d70b96644cef", null ],
     [ "~ConfigGadget", "group___config_plugin.html#ga6fbabaaacad7e51739c18053d5aa83fd", null ],
@@ -751,11 +741,9 @@ var group___config_plugin =
     [ "setMixer", "group___config_plugin.html#gabc1d25c95203b38337f954ed47387039", null ],
     [ "setNeutral", "group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660", null ],
     [ "setTempCalRange", "group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1", null ],
-    [ "setType", "group___config_plugin.html#ga016b46bb4fa22cf5c6ff1374e653c7d7", null ],
     [ "showCurve", "group___config_plugin.html#ga134ff28e0d94c61c2a335a9eb02e88af", null ],
     [ "startInputWizard", "group___config_plugin.html#ga12d479e09d53195a2226e61b1690124f", null ],
     [ "tabAboutToChange", "group___config_plugin.html#ga280d7130ca08f8974292483f6b017d72", null ],
-    [ "type", "group___config_plugin.html#ga9da23f434e014555ab930382128388c1", null ],
     [ "updateChannelLimits", "group___config_plugin.html#ga32fadbb58da35d4088500bd070584309", null ],
     [ "UpdateSettingsTable", "group___config_plugin.html#gad4cb5385cbf5e389acf3fd394601df07", null ],
     [ "ConfigOnputWidget", "group___config_plugin.html#ga92a68401074780ed6cadf27f127892e3", null ],

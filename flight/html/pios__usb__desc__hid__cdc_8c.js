@@ -18,6 +18,6 @@ var pios__usb__desc__hid__cdc_8c =
     [ "hid_if", "pios__usb__desc__hid__cdc_8c.html#ga66dd41530dc7e219cf377870362857ce", null ],
     [ "hid_in", "pios__usb__desc__hid__cdc_8c.html#gad74809997499537622da0aaac4d1c3da", null ],
     [ "hid_out", "pios__usb__desc__hid__cdc_8c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d", null ],
-    [ "hid_report_desc", "pios__usb__desc__hid__cdc_8c.html#gac9152fd04fcee523f56e0fda1621cc5b", null ],
+    [ "hid_report_desc", "pios__usb__desc__hid__cdc_8c.html#ga11849b0f12b3bd244a0fddbd50b647c6", null ],
     [ "iad", "pios__usb__desc__hid__cdc_8c.html#gac7a66f23a9fc26df56f67aa5cc34dc5b", null ]
 ];

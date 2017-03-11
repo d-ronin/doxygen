@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,40 +113,9 @@ Macros</h2></td></tr>
 <tr class="separator:ga69649cc38f34627cfb48b51062ebd390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40e1495541cbb4acbe3f1819bd87a9fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_m32_f10x___system___private___defines.html#ga40e1495541cbb4acbe3f1819bd87a9fe">VECT_TAB_OFFSET</a>&#160;&#160;&#160;0x0</td></tr>
 <tr class="separator:ga40e1495541cbb4acbe3f1819bd87a9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69649cc38f34627cfb48b51062ebd390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_m32_f10x___system___private___defines.html#ga69649cc38f34627cfb48b51062ebd390">SYSCLK_FREQ_72MHz</a>&#160;&#160;&#160;72000000</td></tr>
-<tr class="separator:ga69649cc38f34627cfb48b51062ebd390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40e1495541cbb4acbe3f1819bd87a9fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_m32_f10x___system___private___defines.html#ga40e1495541cbb4acbe3f1819bd87a9fe">VECT_TAB_OFFSET</a>&#160;&#160;&#160;0x0</td></tr>
-<tr class="separator:ga40e1495541cbb4acbe3f1819bd87a9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga69649cc38f34627cfb48b51062ebd390"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SYSCLK_FREQ_72MHz&#160;&#160;&#160;72000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>&lt; Uncomment the line corresponding to the desired System clock (SYSCLK) frequency (after reset the HSI is used as SYSCLK source)</p>
-<h1>IMPORTANT NOTE: </h1>
-<ol type="1">
-<li>After each device reset the HSI is used as System clock source.</li>
-<li>Please make sure that the selected System clock doesn't exceed your device's maximum frequency.</li>
-<li>If none of the define below is enabled, the HSI is used as System clock source.</li>
-<li>The System clock configuration functions provided within this file assume that:<ul>
-<li>For Low, Medium and High density Value line devices an external 8MHz crystal is used to drive the System clock.</li>
-<li>For Low, Medium and High density devices an external 8MHz crystal is used to drive the System clock.</li>
-<li>For Connectivity line devices an external 25MHz crystal is used to drive the System clock. If you are using different crystal you have to adapt those functions accordingly.Uncomment the following line if you need to use external SRAM mounted on STM3210E-EVAL board (STM32 High density and XL-density devices) or on STM32100E-EVAL board (STM32 High-density value line devices) as data memory Uncomment the following line if you need to relocate your vector Table in Internal SRAM. </li>
-</ul>
-</li>
-</ol>
-
-<p>Definition at line <a class="el" href="cc3d_2board-info_2cmsis__system_8c_source.html#l00115">115</a> of file <a class="el" href="cc3d_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga69649cc38f34627cfb48b51062ebd390"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,21 +155,6 @@ Macros</h2></td></tr>
 <p>Vector Table base offset field. This value must be a multiple of 0x200. </p>
 
 <p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00128">128</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga40e1495541cbb4acbe3f1819bd87a9fe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VECT_TAB_OFFSET&#160;&#160;&#160;0x0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Vector Table base offset field. This value must be a multiple of 0x200. </p>
-
-<p>Definition at line <a class="el" href="cc3d_2board-info_2cmsis__system_8c_source.html#l00128">128</a> of file <a class="el" href="cc3d_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
 </div>
 </div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__annunc__priv_8h.html">pios_annunc_priv.h</a>&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__annunc.html">pios_annunc</a> pios_annuncs[] = {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        [<a class="code" href="group___flying_f3.html#ga6b517e112ec05ca9b8b8ffc26e1e35f9">PIOS_LED_USB</a>] = {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        [<a class="code" href="group___d_t_fc.html#ga6b517e112ec05ca9b8b8ffc26e1e35f9">PIOS_LED_USB</a>] = {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                .<a class="code" href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pin</a> = {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        .<a class="code" href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">gpio</a> = GPIOB,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        .init = {</div>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;uint8_t pios_adc_num_devices = <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(pios_adc_devs);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keywordtype">void</span> PIOS_ADC_handler() {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="group___c_c3_d_b_l.html#ga2499ecd72ab7c7fd6becbb2282f2e5d8">PIOS_ADC_DMA_Handler</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        PIOS_ADC_DMA_Handler();</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
@@ -435,7 +435,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__tim__priv_8h.html">pios_tim_priv.h</a>&quot;</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> TIM_TimeBaseInitTypeDef <a class="code" href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a> = {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> TIM_TimeBaseInitTypeDef tim_1_2_3_4_time_base = {</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        .TIM_Prescaler = (<a class="code" href="group___aq32.html#ga8f592a960a21018006bd68f30692ab5b">PIOS_SYSCLK</a> / 1000000) - 1,</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        .TIM_ClockDivision = TIM_CKD_DIV1,</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        .TIM_CounterMode = TIM_CounterMode_Up,</div>
@@ -445,7 +445,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a> <a class="code" href="group___aq32.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a> = {</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        .<a class="code" href="structpios__tim__clock__cfg.html#a537f6f4946bc2f5e188a9c3fec55647e">timer</a> = TIM1,</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        .time_base_init = &amp;<a class="code" href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a>,</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        .time_base_init = &amp;tim_1_2_3_4_time_base,</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        .irq = {</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                .init = {</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        .NVIC_IRQChannel                   = TIM1_CC_IRQn,</div>
@@ -458,7 +458,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a> <a class="code" href="group___aq32.html#ga0b6f7586d1c7a594c67b267ae2a52e76">tim_2_cfg</a> = {</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        .<a class="code" href="structpios__tim__clock__cfg.html#a537f6f4946bc2f5e188a9c3fec55647e">timer</a> = TIM2,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        .time_base_init = &amp;<a class="code" href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a>,</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        .time_base_init = &amp;tim_1_2_3_4_time_base,</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        .irq = {</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                .init = {</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        .NVIC_IRQChannel                   = TIM2_IRQn,</div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a> <a class="code" href="group___aq32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a> = {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        .<a class="code" href="structpios__tim__clock__cfg.html#a537f6f4946bc2f5e188a9c3fec55647e">timer</a> = TIM3,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        .time_base_init = &amp;<a class="code" href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a>,</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        .time_base_init = &amp;tim_1_2_3_4_time_base,</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        .irq = {</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                .init = {</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                        .NVIC_IRQChannel                   = TIM3_IRQn,</div>
@@ -484,7 +484,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a> <a class="code" href="group___aq32.html#ga55af106ce8c8f61b05b8e580f159eb5e">tim_4_cfg</a> = {</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        .<a class="code" href="structpios__tim__clock__cfg.html#a537f6f4946bc2f5e188a9c3fec55647e">timer</a> = TIM4,</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        .time_base_init = &amp;<a class="code" href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a>,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        .time_base_init = &amp;tim_1_2_3_4_time_base,</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        .irq = {</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                .init = {</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                        .NVIC_IRQChannel                   = TIM4_IRQn,</div>
@@ -803,7 +803,6 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__annunc_html_a88b452f9d510fde12b2592105e992b34"><div class="ttname"><a href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pios_annunc::pin</a></div><div class="ttdeci">struct stm32_gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00039">pios_annunc_priv.h:39</a></div></div>
-<div class="ttc" id="group___flying_f3_html_ga6b517e112ec05ca9b8b8ffc26e1e35f9"><div class="ttname"><a href="group___flying_f3.html#ga6b517e112ec05ca9b8b8ffc26e1e35f9">PIOS_LED_USB</a></div><div class="ttdeci">#define PIOS_LED_USB</div><div class="ttdef"><b>Definition:</b> <a href="discoveryf4_2board-info_2pios__board_8h_source.html#l00086">pios_board.h:86</a></div></div>
 <div class="ttc" id="pios__rtc__priv_8h_html"><div class="ttname"><a href="pios__rtc__priv_8h.html">pios_rtc_priv.h</a></div><div class="ttdoc">ADC private definitions. </div></div>
 <div class="ttc" id="structpios__usart__cfg_html"><div class="ttname"><a href="structpios__usart__cfg.html">pios_usart_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00039">pios_usart_priv.h:39</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gab0d9d7639c42a8911c2eb90048ee686a"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gab0d9d7639c42a8911c2eb90048ee686a">pios_flash_partition::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00087">pios_flash_priv.h:87</a></div></div>
@@ -817,6 +816,7 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="ttc" id="structstm32__gpio_html_a3d54b128262b814ecf0ad412093b6402"><div class="ttname"><a href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">stm32_gpio::gpio</a></div><div class="ttdeci">GPIO_TypeDef * gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00060">pios_stm32.h:60</a></div></div>
 <div class="ttc" id="structpios__exti__cfg_html"><div class="ttname"><a href="structpios__exti__cfg.html">pios_exti_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__exti_8h_source.html#l00037">pios_exti.h:37</a></div></div>
 <div class="ttc" id="pios__adc__priv_8h_html"><div class="ttname"><a href="pios__adc__priv_8h.html">pios_adc_priv.h</a></div><div class="ttdoc">ADC private definitions. </div></div>
+<div class="ttc" id="group___d_t_fc_html_ga6b517e112ec05ca9b8b8ffc26e1e35f9"><div class="ttname"><a href="group___d_t_fc.html#ga6b517e112ec05ca9b8b8ffc26e1e35f9">PIOS_LED_USB</a></div><div class="ttdeci">#define PIOS_LED_USB</div><div class="ttdef"><b>Definition:</b> <a href="dtfc_2board-info_2pios__board_8h_source.html#l00097">pios_board.h:97</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ggaccc7d029df9e5a96151a68e64f4be7e2a87c92cb693852456c28e74d75b67b00a"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ggaccc7d029df9e5a96151a68e64f4be7e2a87c92cb693852456c28e74d75b67b00a">GPIO0_TX_GPIO1_RX</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00039">pios_rfm22b.h:39</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs__priv_8h_html"><div class="ttname"><a href="pios__flashfs__logfs__priv_8h.html">pios_flashfs_logfs_priv.h</a></div></div>
 <div class="ttc" id="structpios__flash__chip_html"><div class="ttname"><a href="structpios__flash__chip.html">pios_flash_chip</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00065">pios_flash_priv.h:65</a></div></div>
@@ -828,7 +828,6 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="ttc" id="group___pip_xtreme_html_ga4a59a79c24481761e5103d5ec54b497c"><div class="ttname"><a href="group___pip_xtreme.html#ga4a59a79c24481761e5103d5ec54b497c">TAULINK_VERSION_MODULE</a></div><div class="ttdeci">#define TAULINK_VERSION_MODULE</div><div class="ttdef"><b>Definition:</b> <a href="pipxtreme_2board-info_2pios__board_8h_source.html#l00034">pios_board.h:34</a></div></div>
 <div class="ttc" id="group___aq32_html_ga7faa93f4a0aaaeeff604e8207d1531c2"><div class="ttname"><a href="group___aq32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a></div><div class="ttdeci">#define PIOS_IRQ_PRIO_LOW</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2pios__board_8h_source.html#l00178">pios_board.h:178</a></div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html_a2a35b38ff91a638b973191977eab30e1"><div class="ttname"><a href="structpios__usb__cdc__cfg.html#a2a35b38ff91a638b973191977eab30e1">pios_usb_cdc_cfg::ctrl_if</a></div><div class="ttdeci">uint8_t ctrl_if</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00035">pios_usb_cdc_priv.h:35</a></div></div>
-<div class="ttc" id="group___c_c3_d_b_l_html_ga2499ecd72ab7c7fd6becbb2282f2e5d8"><div class="ttname"><a href="group___c_c3_d_b_l.html#ga2499ecd72ab7c7fd6becbb2282f2e5d8">PIOS_ADC_DMA_Handler</a></div><div class="ttdeci">void PIOS_ADC_DMA_Handler()</div><div class="ttdef"><b>Definition:</b> <a href="cc3d_2bl_2pios__board_8c_source.html#l00123">pios_board.c:123</a></div></div>
 <div class="ttc" id="group___pip_xtreme_html_ga1918a9e4f13227a648f0d018e48e416d"><div class="ttname"><a href="group___pip_xtreme.html#ga1918a9e4f13227a648f0d018e48e416d">TAULINK_VERSION_STICK</a></div><div class="ttdeci">#define TAULINK_VERSION_STICK</div><div class="ttdef"><b>Definition:</b> <a href="pipxtreme_2board-info_2pios__board_8h_source.html#l00033">pios_board.h:33</a></div></div>
 <div class="ttc" id="pios__usart__priv_8h_html"><div class="ttname"><a href="pios__usart__priv_8h.html">pios_usart_priv.h</a></div><div class="ttdoc">USART private definitions. </div></div>
 <div class="ttc" id="structflashfs__logfs__cfg_html"><div class="ttname"><a href="structflashfs__logfs__cfg.html">flashfs_logfs_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs__priv_8h_source.html#l00038">pios_flashfs_logfs_priv.h:38</a></div></div>
@@ -873,7 +872,6 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2board__hw__defs
 <div class="ttc" id="structpios__flash__internal__cfg_html"><div class="ttname"><a href="structpios__flash__internal__cfg.html">pios_flash_internal_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__internal__priv_8h_source.html#l00033">pios_flash_internal_priv.h:33</a></div></div>
 <div class="ttc" id="group___unit_tests_html_gacda4321240c5016d2a02b0ab650dd34a"><div class="ttname"><a href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a></div><div class="ttdeci">const struct pios_flash_partition pios_flash_partition_table[]</div><div class="ttdef"><b>Definition:</b> <a href="unittest__init_8c_source.html#l00048">unittest_init.c:48</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html_abd31d71097757582b57064851a5c576a"><div class="ttname"><a href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">pios_usb_hid_cfg::data_if</a></div><div class="ttdeci">uint8_t data_if</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00034">pios_usb_hid_priv.h:34</a></div></div>
-<div class="ttc" id="group___c_c3_d_html_ga3210558c241c6d7903e8d5c92c7ca220"><div class="ttname"><a href="group___c_c3_d.html#ga3210558c241c6d7903e8d5c92c7ca220">tim_1_2_3_4_time_base</a></div><div class="ttdeci">static const TIM_TimeBaseInitTypeDef tim_1_2_3_4_time_base</div><div class="ttdef"><b>Definition:</b> <a href="cc3d_2board-info_2board__hw__defs_8c_source.html#l00329">board_hw_defs.c:329</a></div></div>
 <div class="ttc" id="structpios__tim__channel_html_a07d1ffb5da40643ef9938fa9c4fad017"><div class="ttname"><a href="structpios__tim__channel.html#a07d1ffb5da40643ef9938fa9c4fad017">pios_tim_channel::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00014">pios_tim_priv.h:14</a></div></div>
 <div class="ttc" id="pios__usb__cdc__priv_8h_html"><div class="ttname"><a href="pios__usb__cdc__priv_8h.html">pios_usb_cdc_priv.h</a></div><div class="ttdoc">USB COM CDC private definitions. </div></div>
 <div class="ttc" id="structpios__rtc__cfg_html_a6ed1405edce6d0ed2251dc6936b4eec9"><div class="ttname"><a href="structpios__rtc__cfg.html#a6ed1405edce6d0ed2251dc6936b4eec9">pios_rtc_cfg::clksrc</a></div><div class="ttdeci">uint32_t clksrc</div><div class="ttdef"><b>Definition:</b> <a href="pios__rtc__priv_8h_source.html#l00037">pios_rtc_priv.h:37</a></div></div>

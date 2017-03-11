@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['naze_2ecpp',['naze.cpp',['../naze_8cpp.html',1,'']]],
-  ['naze_2eh',['naze.h',['../naze_8h.html',1,'']]],
-  ['nazeplugin_2ecpp',['nazeplugin.cpp',['../nazeplugin_8cpp.html',1,'']]],
-  ['nazeplugin_2eh',['nazeplugin.h',['../nazeplugin_8h.html',1,'']]],
   ['notificationitem_2ecpp',['notificationitem.cpp',['../notificationitem_8cpp.html',1,'']]],
   ['notificationitem_2eh',['notificationitem.h',['../notificationitem_8h.html',1,'']]],
   ['notifyitemdelegate_2ecpp',['notifyitemdelegate.cpp',['../notifyitemdelegate_8cpp.html',1,'']]],

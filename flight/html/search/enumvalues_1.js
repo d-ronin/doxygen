@@ -45,8 +45,5 @@ var searchData=
   ['bmp085_5fosr_5f1',['BMP085_OSR_1',['../group___p_i_o_s___b_m_p085.html#gga102bb6c1f10fe79ce68dd0f1b66c808aa64060eff72eddbe966fd6134fe97f991',1,'pios_bmp085_priv.h']]],
   ['bmp085_5fosr_5f2',['BMP085_OSR_2',['../group___p_i_o_s___b_m_p085.html#gga102bb6c1f10fe79ce68dd0f1b66c808aafdbe56056900010e4ec11f11ff44901f',1,'pios_bmp085_priv.h']]],
   ['bmp085_5fosr_5f3',['BMP085_OSR_3',['../group___p_i_o_s___b_m_p085.html#gga102bb6c1f10fe79ce68dd0f1b66c808aacd1d9c064e5278b20e986ae5aef83b2e',1,'pios_bmp085_priv.h']]],
-  ['board_5frevision_5f1',['BOARD_REVISION_1',['../group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113a6fc9477140831816a09b34dc4481a260',1,'board_hw_defs.c']]],
-  ['board_5frevision_5f4',['BOARD_REVISION_4',['../group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113ab2aeddf908b4edfe004bc18b53efa34a',1,'board_hw_defs.c']]],
-  ['board_5frevision_5f5',['BOARD_REVISION_5',['../group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113a2778557b5322a5a618cdcb49f3d8c6bf',1,'board_hw_defs.c']]],
-  ['board_5frevision_5f6',['BOARD_REVISION_6',['../group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113ab1eb1fa881ebbf0ffd4514b0bd7bc8d6',1,'board_hw_defs.c']]]
+  ['board_5frevision_5f1',['BOARD_REVISION_1',['../group___flying_p_i_o.html#ggafd500425ba7592375fa8c030c9bb8113a6fc9477140831816a09b34dc4481a260',1,'board_hw_defs.c']]]
 ];

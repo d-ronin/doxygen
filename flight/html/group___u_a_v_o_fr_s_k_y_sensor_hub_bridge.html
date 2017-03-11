@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -100,10 +100,831 @@ $(document).ready(function(){initNavTree('group___u_a_v_o_fr_s_k_y_sensor_hub_br
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">UAVO to FrSKY Bridge Module<div class="ingroups"><a class="el" href="group___tau_labs_modules.html">Tau Labs Modules</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga24e4fa754136a7e6bb0f68882537adf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (BaroAltitudeHandle()!=NULL)</td></tr>
+<tr class="separator:ga24e4fa754136a7e6bb0f68882537adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga707b575f67fe940b9742e1922e684c68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a> (shub_global-&gt;frsky_port, shub_global-&gt;serial_buf, <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8">msg_length</a>)</td></tr>
+<tr class="separator:ga707b575f67fe940b9742e1922e684c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5649daeabb8e3d79a3b26d76e8c52f14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga5649daeabb8e3d79a3b26d76e8c52f14">if</a> (<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga84b2f1b38604a67d2c81b50c8d5fb93b">frame_trigger</a>(FRSKY_FRAME_BATTERY))</td></tr>
+<tr class="separator:ga5649daeabb8e3d79a3b26d76e8c52f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga611a2042a4f6bfb1a9351fd7945e69f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga611a2042a4f6bfb1a9351fd7945e69f8">if</a> (<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga84b2f1b38604a67d2c81b50c8d5fb93b">frame_trigger</a>(FRSKY_FRAME_GPS))</td></tr>
+<tr class="separator:ga611a2042a4f6bfb1a9351fd7945e69f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84b2f1b38604a67d2c81b50c8d5fb93b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga84b2f1b38604a67d2c81b50c8d5fb93b">frame_trigger</a> (uint8_t frame_num)</td></tr>
+<tr class="separator:ga84b2f1b38604a67d2c81b50c8d5fb93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4031d6dd9e49d276faf8ec3964623e1a"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga4031d6dd9e49d276faf8ec3964623e1a">frsky_pack_altitude</a> (float <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">altitude</a>, uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga4031d6dd9e49d276faf8ec3964623e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7a261b4d926d9ae001f4c1a0887cdbc"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gac7a261b4d926d9ae001f4c1a0887cdbc">frsky_pack_temperature_01</a> (float temperature_01, uint8_t *serial_buf)</td></tr>
+<tr class="separator:gac7a261b4d926d9ae001f4c1a0887cdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cef379cf72c5e4b63f12fee9b2d2a2f"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga2cef379cf72c5e4b63f12fee9b2d2a2f">frsky_pack_temperature_02</a> (float temperature_02, uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga2cef379cf72c5e4b63f12fee9b2d2a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e9df4795f655798066debd1fe939258"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga7e9df4795f655798066debd1fe939258">frsky_pack_accel</a> (float accels_x, float accels_y, float accels_z, uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga7e9df4795f655798066debd1fe939258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee79107387ba2d4f199c61cd70e38911"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaee79107387ba2d4f199c61cd70e38911">frsky_pack_cellvoltage</a> (uint8_t cell, float cell_voltage, uint8_t *serial_buf)</td></tr>
+<tr class="separator:gaee79107387ba2d4f199c61cd70e38911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb291480878921394c2e34ec5b776054"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gadb291480878921394c2e34ec5b776054">frsky_pack_fas</a> (float voltage, float current, uint8_t *serial_buf)</td></tr>
+<tr class="separator:gadb291480878921394c2e34ec5b776054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75c259c6b26baa728752dd3b74bade13"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga75c259c6b26baa728752dd3b74bade13">frsky_pack_rpm</a> (uint16_t rpm, uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga75c259c6b26baa728752dd3b74bade13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9164e19d6cbb0037b367fd2c7dbc8a4e"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga9164e19d6cbb0037b367fd2c7dbc8a4e">frsky_pack_fuel</a> (float fuel_level, uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga9164e19d6cbb0037b367fd2c7dbc8a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffb0bf0c4d3f8d429903696395f0f96e"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaffb0bf0c4d3f8d429903696395f0f96e">frsky_pack_gps</a> (float course, int32_t latitude, int32_t longitude, float <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">altitude</a>, float <a class="el" href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a>, uint8_t *serial_buf)</td></tr>
+<tr class="separator:gaffb0bf0c4d3f8d429903696395f0f96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10ba50525df01f4f9748debc1574f4b7"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga10ba50525df01f4f9748debc1574f4b7">frsky_pack_stop</a> (uint8_t *serial_buf)</td></tr>
+<tr class="separator:ga10ba50525df01f4f9748debc1574f4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b124da1010ec0e5832f66e288689cfe"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga3b124da1010ec0e5832f66e288689cfe">frsky_acceleration_unit</a> (float accel)</td></tr>
+<tr class="separator:ga3b124da1010ec0e5832f66e288689cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf83f50bbfd52f22956791400c94c4020"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaf83f50bbfd52f22956791400c94c4020">frsky_serialize_value</a> (uint8_t valueid, uint8_t *<a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, uint8_t *serial_buf, uint8_t *index)</td></tr>
+<tr class="separator:gaf83f50bbfd52f22956791400c94c4020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafaf09061289c723dbe97c6e28b1a92a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaafaf09061289c723dbe97c6e28b1a92a">frsky_write_userdata_byte</a> (uint8_t byte, uint8_t *serial_buf, uint8_t *index)</td></tr>
+<tr class="separator:gaafaf09061289c723dbe97c6e28b1a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gae72aa7aef9e4feba89e34d33d7676ee3"><td class="memItemLeft" align="right" valign="top">case&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gae72aa7aef9e4feba89e34d33d7676ee3">MODULESETTINGS_FRSKYACCELDATA_ATTITUDEANGLES</a></td></tr>
+<tr class="separator:gae72aa7aef9e4feba89e34d33d7676ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93b327132e7f4ba674340959be27b8e3"><td class="memItemLeft" align="right" valign="top">AttitudeActualPitchGet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">accY</a></td></tr>
+<tr class="separator:ga93b327132e7f4ba674340959be27b8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddc7f5b92ef14017e10736d3b5db5354"><td class="memItemLeft" align="right" valign="top">AttitudeActualYawGet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354">accZ</a></td></tr>
+<tr class="separator:gaddc7f5b92ef14017e10736d3b5db5354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b38435c483d1f7870eb6a4d493aa6ff"><td class="memItemLeft" align="right" valign="top">accX *<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">accY</a> *<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354">accZ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga5b38435c483d1f7870eb6a4d493aa6ff">break</a> = GRAVITY / 10.0f</td></tr>
+<tr class="separator:ga5b38435c483d1f7870eb6a4d493aa6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe3b425f585ddebfdc3480ead5c8c0b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8">msg_length</a></td></tr>
+<tr class="separator:gafe3b425f585ddebfdc3480ead5c8c0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga410ce01f24888c77e12de85ef32c6c22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga410ce01f24888c77e12de85ef32c6c22">last_armed</a> = flightStatus.Armed</td></tr>
+<tr class="separator:ga410ce01f24888c77e12de85ef32c6c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e13a4b4ae0cefdac2a413284239caa6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">altitude</a> = baroAltitude.Altitude - altitude_offset</td></tr>
+<tr class="separator:ga0e13a4b4ae0cefdac2a413284239caa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga84b2f1b38604a67d2c81b50c8d5fb93b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool frame_trigger </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frame_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00537">537</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3b124da1010ec0e5832f66e288689cfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int16_t frsky_acceleration_unit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>accel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert acceleration value to frsky acceleration unit </p>
+<dl class="section return"><dt>Returns</dt><dd>Acceleration value </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00814">814</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7e9df4795f655798066debd1fe939258"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_accel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>accels_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>accels_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>accels_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes acceleration values to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00614">614</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4031d6dd9e49d276faf8ec3964623e1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_altitude </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>altitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes altitude to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00563">563</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaee79107387ba2d4f199c61cd70e38911"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_cellvoltage </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cell_voltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00634">634</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadb291480878921394c2e34ec5b776054"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_fas </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>voltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes battery values to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00657">657</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9164e19d6cbb0037b367fd2c7dbc8a4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_fuel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fuel_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes fuel value [0.0 ... 1.0] to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00695">695</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaffb0bf0c4d3f8d429903696395f0f96e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_gps </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>latitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>longitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>altitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes gps values to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00724">724</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga75c259c6b26baa728752dd3b74bade13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_rpm </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>rpm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes rpm value to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00682">682</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga10ba50525df01f4f9748debc1574f4b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_stop </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes stop byte to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00803">803</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac7a261b4d926d9ae001f4c1a0887cdbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_temperature_01 </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>temperature_01</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes baro temperature to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00582">582</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2cef379cf72c5e4b63f12fee9b2d2a2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t frsky_pack_temperature_02 </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>temperature_02</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Writes accel temperature to buffer </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes written to the buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00598">598</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf83f50bbfd52f22956791400c94c4020"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frsky_serialize_value </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>valueid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write value to buffer </p>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00824">824</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaafaf09061289c723dbe97c6e28b1a92a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frsky_write_userdata_byte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>byte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>serial_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write a byte to the buffer and do byte stuffing if needed. </p>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00836">836</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga24e4fa754136a7e6bb0f68882537adf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">BaroAltitudeHandle()!&#160;</td>
+          <td class="paramname"> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">363</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5649daeabb8e3d79a3b26d76e8c52f14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga84b2f1b38604a67d2c81b50c8d5fb93b">frame_trigger</a>(FRSKY_FRAME_BATTERY)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00386">386</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga611a2042a4f6bfb1a9351fd7945e69f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga84b2f1b38604a67d2c81b50c8d5fb93b">frame_trigger</a>(FRSKY_FRAME_GPS)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encodes ARM status and flight mode number as RPM value Since there is no RPM information in any UAVO available, we will intentionally misuse this item to encode other useful information. It will encode flight status as three-digit number as follow: most left digit encodes arm status (200=armed, 100=disarmed) two most right digits encode flight mode number (see FlightStatus UAVO FlightMode enum) To work properly on Taranis, you have to set Blades to "60" in telemetry setting</p>
+<p>Encode GPS status and visible satellites as T1 value We will intentionally misuse this item to encode other useful information. Right-most two digits encode visible satellite count, left-most digit has following meaning: 1 - no GPS connected 2 - no fix 3 - 2D fix 4 - 3D fix 5 - 3D fix and HomeLocation is SET - should be safe for navigation</p>
+<p>Encode GPS HDOP and VDOP as T2 value We will intentionally misuse this item to encode other useful information. VDOP in the upper 16 bits, max 256 (2.56 * 100) HDOP in the lower 16 bits, max 256 (2.56 * 100)</p>
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00435">435</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga707b575f67fe940b9742e1922e684c68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PIOS_COM_SendBuffer </td>
+          <td>(</td>
+          <td class="paramtype">shub_global-&gt;&#160;</td>
+          <td class="paramname"><em>frsky_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shub_global-&gt;&#160;</td>
+          <td class="paramname"><em>serial_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8">msg_length</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga93b327132e7f4ba674340959be27b8e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttitudeActualPitchGet&amp; accY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00347">347</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaddc7f5b92ef14017e10736d3b5db5354"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttitudeActualYawGet&amp; accZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00348">348</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0e13a4b4ae0cefdac2a413284239caa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float altitude = baroAltitude.Altitude - altitude_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00375">375</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5b38435c483d1f7870eb6a4d493aa6ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">accX* <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">accY</a>* <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354">accZ</a>* break = GRAVITY / 10.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00351">351</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga410ce01f24888c77e12de85ef32c6c22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">last_armed = flightStatus.Armed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00373">373</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae72aa7aef9e4feba89e34d33d7676ee3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">case MODULESETTINGS_FRSKYACCELDATA_ATTITUDEANGLES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00346">346</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafe3b425f585ddebfdc3480ead5c8c0b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga7e9df4795f655798066debd1fe939258">frsky_pack_accel</a>(</div>
+<div class="line">                                        accX,</div>
+<div class="line">                                        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">accY</a>,</div>
+<div class="line">                                        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354">accZ</a>,</div>
+<div class="line">                                        shub_global-&gt;serial_buf + <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8">msg_length</a>)</div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga93b327132e7f4ba674340959be27b8e3"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">accY</a></div><div class="ttdeci">AttitudeActualPitchGet &amp; accY</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00347">UAVOFrSKYSensorHubBridge.c:347</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_gafe3b425f585ddebfdc3480ead5c8c0b8"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8">msg_length</a></div><div class="ttdeci">msg_length</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00357">UAVOFrSKYSensorHubBridge.c:357</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga7e9df4795f655798066debd1fe939258"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga7e9df4795f655798066debd1fe939258">frsky_pack_accel</a></div><div class="ttdeci">static uint16_t frsky_pack_accel(float accels_x, float accels_y, float accels_z, uint8_t *serial_buf)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00614">UAVOFrSKYSensorHubBridge.c:614</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_gaddc7f5b92ef14017e10736d3b5db5354"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354">accZ</a></div><div class="ttdeci">AttitudeActualYawGet &amp; accZ</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00348">UAVOFrSKYSensorHubBridge.c:348</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00357">357</a> of file <a class="el" href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html">UAVOFrSKYSensorHubBridge.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

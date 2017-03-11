@@ -462,8 +462,7 @@ var group___core_plugin =
         [ "BOARD_CAPABILITIES_BAROS", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a9f6c413adaed7f2079e0d2f8097a6d68", null ],
         [ "BOARD_CAPABILITIES_RADIO", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678", null ],
         [ "BOARD_CAPABILITIES_OSD", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967aabbda7f62672e4770e45e33604aa6c56", null ],
-        [ "BOARD_CAPABILITIES_UPGRADEABLE", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03", null ],
-        [ "BOARD_DISABILITY_REQUIRESUPGRADER", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a2e8e5cbb0572366e840519f3c3cb9bfe", null ]
+        [ "BOARD_CAPABILITIES_UPGRADEABLE", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03", null ]
       ] ],
       [ "InputType", "group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5", [
         [ "INPUT_TYPE_DISABLED", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a32970c2ba7d902ad19cf317e08d01d8d", null ],
@@ -1065,8 +1064,7 @@ var group___core_plugin =
       [ "BOARD_CAPABILITIES_BAROS", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a9f6c413adaed7f2079e0d2f8097a6d68", null ],
       [ "BOARD_CAPABILITIES_RADIO", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678", null ],
       [ "BOARD_CAPABILITIES_OSD", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967aabbda7f62672e4770e45e33604aa6c56", null ],
-      [ "BOARD_CAPABILITIES_UPGRADEABLE", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03", null ],
-      [ "BOARD_DISABILITY_REQUIRESUPGRADER", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a2e8e5cbb0572366e840519f3c3cb9bfe", null ]
+      [ "BOARD_CAPABILITIES_UPGRADEABLE", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03", null ]
     ] ],
     [ "CommandAttribute", "group___core_plugin.html#ga4d899c1f711159a432afeab3eb78c917", [
       [ "CA_Hide", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917ab40bdce625687830fbabbab74f3566f0", null ],
@@ -1138,7 +1136,6 @@ var group___core_plugin =
     [ "BOARD_CAPABILITIES_OSD", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967aabbda7f62672e4770e45e33604aa6c56", null ],
     [ "BOARD_CAPABILITIES_RADIO", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678", null ],
     [ "BOARD_CAPABILITIES_UPGRADEABLE", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03", null ],
-    [ "BOARD_DISABILITY_REQUIRESUPGRADER", "group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a2e8e5cbb0572366e840519f3c3cb9bfe", null ],
     [ "CA_Hide", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917ab40bdce625687830fbabbab74f3566f0", null ],
     [ "CA_Mask", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917af24dbbade51b0afabda629e630197657", null ],
     [ "CA_NonConfigureable", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917aba521f39f43b4328b76f678656a12d36", null ],

@@ -32,6 +32,5 @@ var searchData=
   ['board_5fcapabilities_5fosd',['BOARD_CAPABILITIES_OSD',['../group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967aabbda7f62672e4770e45e33604aa6c56',1,'Core::IBoardType']]],
   ['board_5fcapabilities_5fradio',['BOARD_CAPABILITIES_RADIO',['../group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a288728a55ec6a807d327586c5d061678',1,'Core::IBoardType']]],
   ['board_5fcapabilities_5fupgradeable',['BOARD_CAPABILITIES_UPGRADEABLE',['../group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03',1,'Core::IBoardType']]],
-  ['board_5fdisability_5frequiresupgrader',['BOARD_DISABILITY_REQUIRESUPGRADER',['../group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a2e8e5cbb0572366e840519f3c3cb9bfe',1,'Core::IBoardType']]],
   ['bootloader',['Bootloader',['../group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064ac18f9b621b18e8d33c36467a92dd0dc9',1,'USBMonitor']]]
 ];

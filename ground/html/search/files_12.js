@@ -65,8 +65,6 @@ var searchData=
   ['spectrogramscopeconfig_2eh',['spectrogramscopeconfig.h',['../spectrogramscopeconfig_8h.html',1,'']]],
   ['splitterorview_2ecpp',['splitterorview.cpp',['../splitterorview_8cpp.html',1,'']]],
   ['splitterorview_2eh',['splitterorview.h',['../splitterorview_8h.html',1,'']]],
-  ['stmplugin_2ecpp',['stmplugin.cpp',['../stmplugin_8cpp.html',1,'']]],
-  ['stmplugin_2eh',['stmplugin.h',['../stmplugin_8h.html',1,'']]],
   ['styleanimator_2ecpp',['styleanimator.cpp',['../styleanimator_8cpp.html',1,'']]],
   ['styleanimator_2eh',['styleanimator.h',['../styleanimator_8h.html',1,'']]],
   ['styledbar_2ecpp',['styledbar.cpp',['../styledbar_8cpp.html',1,'']]],

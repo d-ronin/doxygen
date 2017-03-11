@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('pios__i2c__alt_8c_source.html','');});
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(num_txns);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(num_txns == 1 || num_txns == 2);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    if (num_txns &lt; 1 || num_txns &gt; 2) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (num_txns &lt; 1 || num_txns &gt; 2) {</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
@@ -431,7 +431,7 @@ $(document).ready(function(){initNavTree('pios__i2c__alt_8c_source.html','');});
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">bool</span> valid = PIOS_I2C_validate(i2c_adapter);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    if (<a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a5aa1be6dfb8912d8378a22761c5bde66">sem_busy</a>, 0) == false)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (<a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a5aa1be6dfb8912d8378a22761c5bde66">sem_busy</a>, 0) == false)</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            return -1;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(i2c_adapter-&gt;sem_busy);</div>
@@ -453,7 +453,7 @@ $(document).ready(function(){initNavTree('pios__i2c__alt_8c_source.html','');});
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    uint8_t SReg_1 = i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a30e73fc335e88819c670a95544f79906">cfg</a>-&gt;<a class="code" href="structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8">regs</a>-&gt;SR1; <span class="comment">//read the status register here</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    if (SReg_1 &amp; 0x0001) {      <span class="comment">//we just sent a start - EV5 in ref manual</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (SReg_1 &amp; 0x0001) {      <span class="comment">//we just sent a start - EV5 in ref manual</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a30e73fc335e88819c670a95544f79906">cfg</a>-&gt;<a class="code" href="structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8">regs</a>-&gt;CR1 &amp;= ~0x0800;  <span class="comment">//reset the POS bit so ACK/NACK applied to the current byte</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        I2C_AcknowledgeConfig(i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a30e73fc335e88819c670a95544f79906">cfg</a>-&gt;<a class="code" href="structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8">regs</a>, ENABLE);    <span class="comment">//make sure ACK is on</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        state-&gt;index = 0;              <span class="comment">//reset the index</span></div>
@@ -566,7 +566,7 @@ $(document).ready(function(){initNavTree('pios__i2c__alt_8c_source.html','');});
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keyword">volatile</span> uint32_t SR1Register;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="comment">// Read the I2C1 status register</span></div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    SR1Register = i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a30e73fc335e88819c670a95544f79906">cfg</a>-&gt;<a class="code" href="structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8">regs</a>-&gt;SR1;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    if (SR1Register &amp; 0x0F00) { <span class="comment">//an error</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (SR1Register &amp; 0x0F00) { <span class="comment">//an error</span></div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a98b74dc40da65289c18494530b759724">bus_error</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="comment">// I2C1error.error = ((SR1Register &amp; 0x0F00) &gt;&gt; 8);        //save error</span></div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <span class="comment">// I2C1error.job = job;    //the task</span></div>
@@ -629,6 +629,7 @@ $(document).ready(function(){initNavTree('pios__i2c__alt_8c_source.html','');});
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_af5ae4a1b83b5404462787136ee41be24ac4ee1ff9db4e1aa45ab36da359646268"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#af5ae4a1b83b5404462787136ee41be24ac4ee1ff9db4e1aa45ab36da359646268">PIOS_I2C_DEV_MAGIC</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00107">pios_i2c_priv.h:107</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter__cfg_html_acdad71da492ab5d4582a5b03cd7d1ab2"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html#acdad71da492ab5d4582a5b03cd7d1ab2">pios_i2c_adapter_cfg::event</a></div><div class="ttdeci">struct stm32_irq event</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00044">pios_i2c_priv.h:44</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter__cfg_html_a64d54eb4eb6d9aa0111e3f677afc37ba"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html#a64d54eb4eb6d9aa0111e3f677afc37ba">pios_i2c_adapter_cfg::remap</a></div><div class="ttdeci">uint32_t remap</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00038">pios_i2c_priv.h:38</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>
 <div class="ttc" id="structpios__i2c__txn_html"><div class="ttname"><a href="structpios__i2c__txn.html">pios_i2c_txn</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00040">pios_i2c.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga70d41fcf58bbbd18a9b6cd365d0f2dab"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga70d41fcf58bbbd18a9b6cd365d0f2dab">PIOS_DELAY_WaituS</a></div><div class="ttdeci">int32_t PIOS_DELAY_WaituS(uint32_t uS)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00125">pios_delay.c:125</a></div></div>

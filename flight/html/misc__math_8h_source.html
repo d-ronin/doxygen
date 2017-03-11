@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -278,16 +278,12 @@ $(document).ready(function(){initNavTree('misc__math_8h_source.html','');});
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="group___tau_labs_math.html#gaa2fc1eddf336e7821a5931054c23567c">fastpow2</a> (1.442695040<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a> * p);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#ifdef SMALLF1</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define powapprox fastpow</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define expapprox fastexp</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga16f6be8c451da8978e1885d0924e0be9">  191</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define powapprox powf</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gaf400ecfa0d2805d9cd0159c47f716740">  192</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define expapprox expf</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MISC_MATH_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">/* Use full versions for now on all targets */</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga16f6be8c451da8978e1885d0924e0be9">  188</a></span>&#160;<span class="preprocessor">#define powapprox powf</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gaf400ecfa0d2805d9cd0159c47f716740">  189</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define expapprox expf</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MISC_MATH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___tau_labs_math_html_gaa2fc1eddf336e7821a5931054c23567c"><div class="ttname"><a href="group___tau_labs_math.html#gaa2fc1eddf336e7821a5931054c23567c">fastpow2</a></div><div class="ttdeci">static float fastpow2(float p)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00164">misc_math.h:164</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6"><div class="ttname"><a href="group___tau_labs_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6">interpolate_value</a></div><div class="ttdeci">float interpolate_value(const float fraction, const float beginVal, const float endVal)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00145">misc_math.c:145</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_gab2cad9810e0c0c09e0988b17159e4d1c"><div class="ttname"><a href="group___tau_labs_math.html#gab2cad9810e0c0c09e0988b17159e4d1c">IS_NOT_FINITE</a></div><div class="ttdeci">static bool IS_NOT_FINITE(float x)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00077">misc_math.h:77</a></div></div>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['openpilot_20coptercontrol_203d_20support_20files',['OpenPilot coptercontrol 3D support files',['../group___c_c3_d.html',1,'']]],
   ['osd_20module',['OSD Module',['../group___character_o_s_d.html',1,'']]],
   ['obj',['obj',['../struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232',1,'UAVObjEvent::obj()'],['../struct_u_a_v_talk_input_processor.html#a78153a61f3d6bd1097e51b65f176c341',1,'UAVTalkInputProcessor::obj()']]],
   ['obj0_5fid',['OBJ0_ID',['../group___unit_tests.html#ga23e61ab00d47f48c455b1503d6f27def',1,'unittest.cpp']]],

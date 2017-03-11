@@ -49,10 +49,7 @@ var group___flying_p_i_o =
     [ "TELEM_QUEUE_SIZE", "group___flying_p_i_o.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___flying_p_i_o.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "board_revision", "group___flying_p_i_o.html#gafd500425ba7592375fa8c030c9bb8113", [
-      [ "BOARD_REVISION_1", "group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113a6fc9477140831816a09b34dc4481a260", null ],
-      [ "BOARD_REVISION_4", "group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113ab2aeddf908b4edfe004bc18b53efa34a", null ],
-      [ "BOARD_REVISION_5", "group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113a2778557b5322a5a618cdcb49f3d8c6bf", null ],
-      [ "BOARD_REVISION_6", "group___naze32.html#ggafd500425ba7592375fa8c030c9bb8113ab1eb1fa881ebbf0ffd4514b0bd7bc8d6", null ]
+      [ "BOARD_REVISION_1", "group___flying_p_i_o.html#ggafd500425ba7592375fa8c030c9bb8113a6fc9477140831816a09b34dc4481a260", null ]
     ] ],
     [ "__attribute", "group___flying_p_i_o.html#gad8bb9e0b301c6088a22c54322b66cf30", null ],
     [ "generate_status_message", "group___flying_p_i_o.html#ga3690beeb87da77da92fe8c3cf85210ec", null ],

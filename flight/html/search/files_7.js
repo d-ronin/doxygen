@@ -10,7 +10,6 @@ var searchData=
   ['halconf_2eh',['halconf.h',['../playuavosd_2fw_2halconf_8h.html',1,'']]],
   ['halconf_2eh',['halconf.h',['../lux_2fw_2halconf_8h.html',1,'']]],
   ['halconf_2eh',['halconf.h',['../dtfc_2fw_2halconf_8h.html',1,'']]],
-  ['halconf_2eh',['halconf.h',['../discoveryf4_2fw_2halconf_8h.html',1,'']]],
   ['halconf_2eh',['halconf.h',['../brainre1_2fw_2halconf_8h.html',1,'']]],
   ['halconf_2eh',['halconf.h',['../brain_2fw_2halconf_8h.html',1,'']]]
 ];

@@ -26,7 +26,7 @@ var searchData=
   ['get_5fpacket',['get_packet',['../group___unit_tests.html#ga923f3c951a39fd738bc9d9f83bb55dfc',1,'DsmTest']]],
   ['get_5fpolar_5fstereographic_5fparameters',['Get_Polar_Stereographic_Parameters',['../polarst_8c.html#a809bb2a10fed1ea48f7cdd43ee1274e8',1,'Get_Polar_Stereographic_Parameters(double *a, double *f, double *Latitude_of_True_Scale, double *longitude_Down_from_Pole, double *False_Easting, double *False_Northing):&#160;polarst.c'],['../polarst_8h.html#a809bb2a10fed1ea48f7cdd43ee1274e8',1,'Get_Polar_Stereographic_Parameters(double *a, double *f, double *Latitude_of_True_Scale, double *longitude_Down_from_Pole, double *False_Easting, double *False_Northing):&#160;polarst.c']]],
   ['get_5fprevious_5fcolor',['get_previous_color',['../group___on_screen_display.html#gaf8e6dec72f2c54051426ab1bb6adb7ab',1,'osd_menu.c']]],
-  ['get_5fsbus_5fcfg',['get_sbus_cfg',['../group___flying_p_i_o.html#ga59400bb19c29b96570f1ae359ef0b120',1,'get_sbus_cfg(enum board_revision board_rev):&#160;board_hw_defs.c'],['../group___naze32.html#ga59400bb19c29b96570f1ae359ef0b120',1,'get_sbus_cfg(enum board_revision board_rev):&#160;board_hw_defs.c']]],
+  ['get_5fsbus_5fcfg',['get_sbus_cfg',['../group___flying_p_i_o.html#ga59400bb19c29b96570f1ae359ef0b120',1,'board_hw_defs.c']]],
   ['get_5fservo_5fcfg',['get_servo_cfg',['../group___sparky2.html#ga77a4d80816a920a71e6ab8700b3e92cb',1,'board_hw_defs.c']]],
   ['get_5fthrottle',['get_throttle',['../group___stabilization_module.html#ga563b10817781bf2d41a996189589402a',1,'stabilization.c']]],
   ['get_5fthrust_5fsource',['get_thrust_source',['../group___control.html#gae040edc482da3a5a31865327c1e6e746',1,'transmitter_control.c']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -351,14 +351,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">                for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { \</div>
-<div class="line">                        if (fn-&gt;fn_minit)                               \</div>
+<div class="line">                for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">\</a></div>
+<div class="line"><a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">			if</a> (fn-&gt;fn_minit)                            \</div>
 <div class="line">                                (fn-&gt;fn_minit)();                       \</div>
 <div class="line">                        (wdgfn)();                                      \</div>
 <div class="line">                }                                                       \</div>
 <div class="line">        }</div>
 <div class="ttc" id="structinitmodule__t_html"><div class="ttname"><a href="structinitmodule__t.html">initmodule_t</a></div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__initcall_8h_source.html#l00046">pios_initcall.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_gaa34043b309a5d9e66ea205addc66701d"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a></div><div class="ttdeci">initmodule_t __module_initcall_start[]</div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga6b38c970a2c1607f469526ed3c8b6aaa"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a></div><div class="ttdeci">initmodule_t __module_initcall_end[]</div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="inc_2pios__initcall_8h_source.html#l00069">69</a> of file <a class="el" href="inc_2pios__initcall_8h_source.html">pios_initcall.h</a>.</p>
@@ -379,13 +380,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a>; fn++) { \</div>
-<div class="line">                if (fn-&gt;fn_minit)                               \</div>
+<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a>; fn++) { <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">\</a></div>
+<div class="line"><a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">		if</a> (fn-&gt;fn_minit)                               \</div>
 <div class="line">                (fn-&gt;fn_minit)();                               \</div>
 <div class="line">                (wdgfn)();                                      \</div>
 <div class="line">        } ;                                                     \</div>
-<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { \</div>
-<div class="line">                if (fn-&gt;fn_minit)                               \</div>
+<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">\</a></div>
+<div class="line"><a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">		if</a> (fn-&gt;fn_minit)                               \</div>
 <div class="line">                (fn-&gt;fn_minit)();                               \</div>
 <div class="line">                (wdgfn)();                                      \</div>
 <div class="line">        }                                                       \</div>
@@ -393,6 +394,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="structinitmodule__t_html"><div class="ttname"><a href="structinitmodule__t.html">initmodule_t</a></div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__initcall_8h_source.html#l00046">pios_initcall.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_gaa34043b309a5d9e66ea205addc66701d"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a></div><div class="ttdeci">initmodule_t __module_initcall_start[]</div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga311cfc7efe8ba155f5ff77ca59799f08"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a></div><div class="ttdeci">initmodule_t * __module_hipriinitcall_end</div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga0146ced7faac3dfe0cfd62be9994a437"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a></div><div class="ttdeci">initmodule_t * __module_hipriinitcall_start</div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga6b38c970a2c1607f469526ed3c8b6aaa"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a></div><div class="ttdeci">initmodule_t __module_initcall_end[]</div></div>
 </div><!-- fragment -->
@@ -455,18 +457,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a>; fn++) { \</div>
-<div class="line">                if (fn-&gt;fn_tinit)                              \</div>
+<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a>; fn++) { <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">\</a></div>
+<div class="line"><a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">		if</a> (fn-&gt;fn_tinit)                              \</div>
 <div class="line">                        (fn-&gt;fn_tinit)();                      \</div>
 <div class="line">        }                                                      \</div>
-<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { \</div>
-<div class="line">                if (fn-&gt;fn_tinit)                              \</div>
+<div class="line">        for (<a class="code" href="structinitmodule__t.html">initmodule_t</a> *fn = <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a>; fn &lt; <a class="code" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a>; fn++) { <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">\</a></div>
+<div class="line"><a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">		if</a> (fn-&gt;fn_tinit)                              \</div>
 <div class="line">                        (fn-&gt;fn_tinit)();                      \</div>
 <div class="line">        }                                                      \</div>
 <div class="line">}</div>
 <div class="ttc" id="structinitmodule__t_html"><div class="ttname"><a href="structinitmodule__t.html">initmodule_t</a></div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__initcall_8h_source.html#l00046">pios_initcall.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_gaa34043b309a5d9e66ea205addc66701d"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaa34043b309a5d9e66ea205addc66701d">__module_initcall_start</a></div><div class="ttdeci">initmodule_t __module_initcall_start[]</div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga311cfc7efe8ba155f5ff77ca59799f08"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga311cfc7efe8ba155f5ff77ca59799f08">__module_hipriinitcall_end</a></div><div class="ttdeci">initmodule_t * __module_hipriinitcall_end</div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga0146ced7faac3dfe0cfd62be9994a437"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga0146ced7faac3dfe0cfd62be9994a437">__module_hipriinitcall_start</a></div><div class="ttdeci">initmodule_t * __module_hipriinitcall_start</div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_i_t_c_a_l_l_html_ga6b38c970a2c1607f469526ed3c8b6aaa"><div class="ttname"><a href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga6b38c970a2c1607f469526ed3c8b6aaa">__module_initcall_end</a></div><div class="ttdeci">initmodule_t __module_initcall_end[]</div></div>
 </div><!-- fragment -->

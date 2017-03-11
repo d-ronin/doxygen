@@ -4,8 +4,6 @@ var group___tau_labs_bootloader =
     [ "CopterControl bootloader", "group___copter_control_b_l.html", "group___copter_control_b_l" ],
     [ "FlyingF4 bootloader", "group___flying_f4_b_l.html", "group___flying_f4_b_l" ],
     [ "Update the bootloader stored in a target", "group___bootloader_update.html", "group___bootloader_update" ],
-    [ "CopterControl 3D bootloader", "group___c_c3_d_b_l.html", "group___c_c3_d_b_l" ],
-    [ "DiscoveryF4B bootloader", "group___discovery_f4_b_l.html", "group___discovery_f4_b_l" ],
     [ "Tau Labs Freedom bootloader", "group___pip_xtreme_b_l.html", "group___pip_xtreme_b_l" ],
     [ "Quanton bootloader", "group___quanton_b_l.html", "group___quanton_b_l" ],
     [ "Revolution bootloader", "group___revolution_b_l.html", "group___revolution_b_l" ],

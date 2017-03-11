@@ -74,7 +74,7 @@ var group___p_i_o_s___u_s_b___d_e_s_c =
     [ "hid_out", "group___p_i_o_s___u_s_b___d_e_s_c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d", null ],
     [ "hid_out", "group___p_i_o_s___u_s_b___d_e_s_c.html#gad76c86a5c7e42e823404bf0e7ddff4f2", null ],
     [ "hid_report_desc", "group___p_i_o_s___u_s_b___d_e_s_c.html#ga70fbe0f8d2b3344af71f15511d49c6cf", null ],
-    [ "hid_report_desc", "group___p_i_o_s___u_s_b___d_e_s_c.html#gac9152fd04fcee523f56e0fda1621cc5b", null ],
+    [ "hid_report_desc", "group___p_i_o_s___u_s_b___d_e_s_c.html#ga11849b0f12b3bd244a0fddbd50b647c6", null ],
     [ "iad", "group___p_i_o_s___u_s_b___d_e_s_c.html#ga0dc1bab4cabd04ace89b858ba3f7b259", null ],
     [ "iad", "group___p_i_o_s___u_s_b___d_e_s_c.html#gac7a66f23a9fc26df56f67aa5cc34dc5b", null ]
 ];

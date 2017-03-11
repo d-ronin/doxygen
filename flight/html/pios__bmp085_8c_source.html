@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('pios__bmp085_8c_source.html','');});
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        dev-&gt;cfg = cfg;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>[22];</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        if (PIOS_BMP085_Read(BMP085_CALIB_ADDR, <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, 2) != 0)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (PIOS_BMP085_Read(BMP085_CALIB_ADDR, <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, 2) != 0)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        dev-&gt;AC1 = (<a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>[0] &lt;&lt; 8) | <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>[1];</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">if</span> (PIOS_BMP085_Read(BMP085_CALIB_ADDR, <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, 2) != 0)</div>
@@ -557,6 +557,7 @@ $(document).ready(function(){initNavTree('pios__bmp085_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___i2_c_html_gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00036">pios_i2c.h:36</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga022e5c15d4faa27943abccd3e1b6161c"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga022e5c15d4faa27943abccd3e1b6161c">PIOS_Thread_Create</a></div><div class="ttdeci">struct pios_thread * PIOS_Thread_Create(void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum pios_thread_prio_e prio)</div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_p085_html_ga102bb6c1f10fe79ce68dd0f1b66c808a"><div class="ttname"><a href="group___p_i_o_s___b_m_p085.html#ga102bb6c1f10fe79ce68dd0f1b66c808a">pios_bmp085_osr</a></div><div class="ttdeci">pios_bmp085_osr</div><div class="ttdoc">The valid oversampling rates. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmp085__priv_8h_source.html#l00034">pios_bmp085_priv.h:34</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_p085_html_gga102bb6c1f10fe79ce68dd0f1b66c808aafdbe56056900010e4ec11f11ff44901f"><div class="ttname"><a href="group___p_i_o_s___b_m_p085.html#gga102bb6c1f10fe79ce68dd0f1b66c808aafdbe56056900010e4ec11f11ff44901f">BMP085_OSR_2</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__bmp085__priv_8h_source.html#l00037">pios_bmp085_priv.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_gacde17b263c115e410008da1357dd4ff8"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#gacde17b263c115e410008da1357dd4ff8">PIOS_DELAY_WaitmS</a></div><div class="ttdeci">int32_t PIOS_DELAY_WaitmS(uint32_t mS)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00149">pios_delay.c:149</a></div></div>

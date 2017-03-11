@@ -26,7 +26,6 @@ var modules =
     [ "Target Boards", "group___targets.html", "group___targets" ],
     [ "Lumenier Lux bootloader", "group__lux_b_l.html", "group__lux_b_l" ],
     [ "Lux support files", "group___lumenier.html", "group___lumenier" ],
-    [ "family support files", "group___naze.html", "group___naze" ],
     [ "Boards", "group___boards.html", "group___boards" ],
     [ "UnitTests", "group___unit_tests.html", "group___unit_tests" ],
     [ "Tau Labs Core components", "group___tau_labs_core.html", "group___tau_labs_core" ]

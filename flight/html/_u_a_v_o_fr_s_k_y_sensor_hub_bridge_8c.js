@@ -1,0 +1,28 @@
+var _u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c =
+[
+    [ "frame_trigger", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga84b2f1b38604a67d2c81b50c8d5fb93b", null ],
+    [ "frsky_acceleration_unit", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga3b124da1010ec0e5832f66e288689cfe", null ],
+    [ "frsky_pack_accel", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga7e9df4795f655798066debd1fe939258", null ],
+    [ "frsky_pack_altitude", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga4031d6dd9e49d276faf8ec3964623e1a", null ],
+    [ "frsky_pack_cellvoltage", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gaee79107387ba2d4f199c61cd70e38911", null ],
+    [ "frsky_pack_fas", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gadb291480878921394c2e34ec5b776054", null ],
+    [ "frsky_pack_fuel", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga9164e19d6cbb0037b367fd2c7dbc8a4e", null ],
+    [ "frsky_pack_gps", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gaffb0bf0c4d3f8d429903696395f0f96e", null ],
+    [ "frsky_pack_rpm", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga75c259c6b26baa728752dd3b74bade13", null ],
+    [ "frsky_pack_stop", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga10ba50525df01f4f9748debc1574f4b7", null ],
+    [ "frsky_pack_temperature_01", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gac7a261b4d926d9ae001f4c1a0887cdbc", null ],
+    [ "frsky_pack_temperature_02", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga2cef379cf72c5e4b63f12fee9b2d2a2f", null ],
+    [ "frsky_serialize_value", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gaf83f50bbfd52f22956791400c94c4020", null ],
+    [ "frsky_write_userdata_byte", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gaafaf09061289c723dbe97c6e28b1a92a", null ],
+    [ "if", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga24e4fa754136a7e6bb0f68882537adf0", null ],
+    [ "if", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga5649daeabb8e3d79a3b26d76e8c52f14", null ],
+    [ "if", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga611a2042a4f6bfb1a9351fd7945e69f8", null ],
+    [ "PIOS_COM_SendBuffer", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga707b575f67fe940b9742e1922e684c68", null ],
+    [ "accY", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga93b327132e7f4ba674340959be27b8e3", null ],
+    [ "accZ", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gaddc7f5b92ef14017e10736d3b5db5354", null ],
+    [ "altitude", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga0e13a4b4ae0cefdac2a413284239caa6", null ],
+    [ "break", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga5b38435c483d1f7870eb6a4d493aa6ff", null ],
+    [ "last_armed", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#ga410ce01f24888c77e12de85ef32c6c22", null ],
+    [ "MODULESETTINGS_FRSKYACCELDATA_ATTITUDEANGLES", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gae72aa7aef9e4feba89e34d33d7676ee3", null ],
+    [ "msg_length", "_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c.html#gafe3b425f585ddebfdc3480ead5c8c0b8", null ]
+];

@@ -20,7 +20,6 @@ var searchData=
   ['lineardialgadgetfactory',['LineardialGadgetFactory',['../group___linear_dial_plugin.html#ga65f46ec9f31c70119c149accc51b304e',1,'LineardialGadgetFactory']]],
   ['lineardialgadgetoptionspage',['LineardialGadgetOptionsPage',['../group___linear_dial_plugin.html#gaa49909f8404b5303882872f6bb8ccdb2',1,'LineardialGadgetOptionsPage']]],
   ['lineardialgadgetwidget',['LineardialGadgetWidget',['../group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7',1,'LineardialGadgetWidget']]],
-  ['linearequationssolving2',['LinearEquationsSolving2',['../group___config_plugin.html#gae36fbabaf3892d933d17f670d77cb208',1,'configccattitudewidget.cpp']]],
   ['listmean',['listMean',['../class_calibration.html#a3ea860b5f58d9cc8f288718492fac38a',1,'Calibration::listMean()'],['../group___u_a_v_object_widget_utils.html#ga134c15f52a4eccf9aeb9bbacdc296b80',1,'ConfigTaskWidget::listMean()']]],
   ['listvar',['listVar',['../group___u_a_v_object_widget_utils.html#ga2f33179993858ca636461e78e3a7a3c8',1,'ConfigTaskWidget']]],
   ['lks94projection',['LKS94Projection',['../group___t_l_map_widget.html#gacf511403f6a470bec942524c0e020b77',1,'projections::LKS94Projection']]],

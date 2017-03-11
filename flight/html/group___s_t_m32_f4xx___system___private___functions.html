@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -226,31 +226,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Each time the core clock (HCLK) changes, this function must be called to update SystemCoreClock variable value. Otherwise, any configuration based on this variable will be incorrect.</dd>
-<dd>
-- The system frequency computed by this function is not the real frequency in the chip. It is calculated based on the predefined constant and the selected clock source:</dd></dl>
-<ul>
-<li>If SYSCLK source is HSI, SystemCoreClock will contain the HSI_VALUE(*)</li>
-<li>If SYSCLK source is HSE, SystemCoreClock will contain the HSE_VALUE(**)</li>
-<li>If SYSCLK source is PLL, SystemCoreClock will contain the HSE_VALUE(**) or HSI_VALUE(*) multiplied by the PLL factors.</li>
-</ul>
-<p>(*) HSI_VALUE is a constant defined in stm32f1xx.h file (default value 8 MHz) but the real value may vary depending on the variations in voltage and temperature.</p>
-<p>(**) HSE_VALUE is a constant defined in stm32f1xx.h file (default value 8 MHz or 25 MHz, depedning on the product used), user has to ensure that HSE_VALUE is same as the real frequency of the crystal used. Otherwise, this function may have wrong result.</p>
-<ul>
-<li>The result of this function could be not correct when using fractional value for HSE crystal. <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
-</ul>
 
 <p>Definition at line <a class="el" href="aq32_2board-info_2cmsis__system_8c_source.html#l00286">286</a> of file <a class="el" href="aq32_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
@@ -271,20 +246,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the SystemFrequency variable. </p>
-<p>Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the SystemCoreClock variable.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This function should be used only after reset. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">None</td><td></td></tr>

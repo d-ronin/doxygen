@@ -124,8 +124,6 @@ var searchData=
   ['disconnected',['DISCONNECTED',['../group___v_t_x_config.html#gga275a67132f10277ada3a0ee3d616b647acdaad1112073e3e2ea032424c38c34e1',1,'VTXConfig.c']]],
   ['disconnected_5fcount',['disconnected_count',['../group___control.html#ga6b850dae7ce0baf2e771b211dbc2caa2',1,'transmitter_control.c']]],
   ['disconnectobj',['disconnectObj',['../group___u_a_v_object_handling.html#ga586485bf2fa97e0e27f6d7332733b322',1,'uavobjectmanager.c']]],
-  ['discoveryf4_20support_20files',['DiscoveryF4 support files',['../group___discovery_f4.html',1,'']]],
-  ['discoveryf4b_20bootloader',['DiscoveryF4B bootloader',['../group___discovery_f4_b_l.html',1,'']]],
   ['disp_5fbuffer',['disp_buffer',['../group___on_screen_display.html#ga2a6a32318fe61510f42a0ded6390a42b',1,'osd_utils.c']]],
   ['dist_5funit_5flong',['dist_unit_long',['../group___on_screen_display.html#ga7268e3d5123c98ef63c07df9db3facd2',1,'onscreendisplay.c']]],
   ['dist_5funit_5fshort',['dist_unit_short',['../group___on_screen_display.html#ga767a31f6ef19318b0b58c1443f51e08c',1,'onscreendisplay.c']]],

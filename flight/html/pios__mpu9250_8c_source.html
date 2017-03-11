@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('pios__mpu9250_8c_source.html','');});
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">PIOS_SENSORS_Register</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a0b386dcd14ce22a4ec0f296727338876">PIOS_SENSOR_ACCEL</a>, dev-&gt;accel_queue);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">PIOS_SENSORS_Register</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa15cffcc905e0229f765c0653a43d6fe">PIOS_SENSOR_GYRO</a>, dev-&gt;gyro_queue);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        if (use_mag)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (use_mag)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">PIOS_SENSORS_Register</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a>, dev-&gt;mag_queue);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        return 0;</div>
@@ -916,6 +916,7 @@ $(document).ready(function(){initNavTree('pios__mpu9250_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___thread_html_ga022e5c15d4faa27943abccd3e1b6161c"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga022e5c15d4faa27943abccd3e1b6161c">PIOS_Thread_Create</a></div><div class="ttdeci">struct pios_thread * PIOS_Thread_Create(void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum pios_thread_prio_e prio)</div></div>
 <div class="ttc" id="group___sensors_html_gaf98e8215f830899834524af0097cf760"><div class="ttname"><a href="group___sensors.html#gaf98e8215f830899834524af0097cf760">gyro_scale</a></div><div class="ttdeci">static float gyro_scale[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00113">sensors.c:113</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u60_x0_html_gga0b97f6902b1564a6eedf92c8937a2a67a46d3433cddd40211d81ef07749b2d24a"><div class="ttname"><a href="group___p_i_o_s___m_p_u60_x0.html#gga0b97f6902b1564a6eedf92c8937a2a67a46d3433cddd40211d81ef07749b2d24a">PIOS_MPU60X0_BOTTOM_270DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu60x0_8h_source.html#l00159">pios_mpu60x0.h:159</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___sensors_html_ga85f4f54258c7666b4feadb94bbefb0ee"><div class="ttname"><a href="group___sensors.html#ga85f4f54258c7666b4feadb94bbefb0ee">mag_scale</a></div><div class="ttdeci">static float mag_scale[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00110">sensors.c:110</a></div></div>
 <div class="ttc" id="group___sensors_html_gaf32e1972b8722368277d88031e09c4d1"><div class="ttname"><a href="group___sensors.html#gaf32e1972b8722368277d88031e09c4d1">accel_scale</a></div><div class="ttdeci">static float accel_scale[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00112">sensors.c:112</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>

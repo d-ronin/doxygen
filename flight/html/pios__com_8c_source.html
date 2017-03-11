@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('pios__com_8c_source.html','');});
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span> SendBufferNonBlockingImpl(com_id, buffer, len, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a>(uintptr_t com_id, <span class="keyword">const</span> uint8_t *buffer, uint16_t len)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;int32_t <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(uintptr_t com_id, <span class="keyword">const</span> uint8_t *buffer, uint16_t len)</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keyword">struct </span>pios_com_dev *com_dev = (<span class="keyword">struct </span>pios_com_dev *)com_id;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
@@ -450,7 +450,7 @@ $(document).ready(function(){initNavTree('pios__com_8c_source.html','');});
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_o_m.html#ga7b6113a05ea60bcd661bbc5e10a5fe0e">PIOS_COM_SendChar</a>(uintptr_t com_id, <span class="keywordtype">char</span> c)</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;{</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a>(com_id, (uint8_t *)&amp;c, 1);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(com_id, (uint8_t *)&amp;c, 1);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_o_m.html#gaff37e41578d22e06d0f29394340e1762">PIOS_COM_SendStringNonBlocking</a>(uintptr_t com_id, <span class="keyword">const</span> <span class="keywordtype">char</span> *str)</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('pios__com_8c_source.html','');});
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_o_m.html#gae03e4cae94285f9551800750e0974a84">PIOS_COM_SendString</a>(uintptr_t com_id, <span class="keyword">const</span> <span class="keywordtype">char</span> *str)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a>(com_id, (uint8_t *)str, strlen(str));</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(com_id, (uint8_t *)str, strlen(str));</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;}</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_o_m.html#gaf4608e2b544b62a5130238c2534e19f8">PIOS_COM_SendFormattedStringNonBlocking</a>(uintptr_t com_id, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...)</div>
@@ -481,7 +481,7 @@ $(document).ready(function(){initNavTree('pios__com_8c_source.html','');});
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        va_start(args, format);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga7408e892dd48c6ce39b5821d917a3dd2">vsprintf</a>((<span class="keywordtype">char</span> *)buffer, format, args);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a>(com_id, buffer, (uint16_t)strlen((<span class="keywordtype">char</span> *)buffer));</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(com_id, buffer, (uint16_t)strlen((<span class="keywordtype">char</span> *)buffer));</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___c_o_m.html#ga1b03325c6ae40858f2a5fe049748b35e">PIOS_COM_GetNumReceiveBytesPending</a>(uintptr_t com_id) {</div>
@@ -626,11 +626,11 @@ $(document).ready(function(){initNavTree('pios__com_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga1b03325c6ae40858f2a5fe049748b35e"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga1b03325c6ae40858f2a5fe049748b35e">PIOS_COM_GetNumReceiveBytesPending</a></div><div class="ttdeci">uint16_t PIOS_COM_GetNumReceiveBytesPending(uintptr_t com_id)</div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="pios__delay_8h_html"><div class="ttname"><a href="pios__delay_8h.html">pios_delay.h</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga707b575f67fe940b9742e1922e684c68"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a></div><div class="ttdeci">PIOS_COM_SendBuffer(shub_global-&gt;frsky_port, shub_global-&gt;serial_buf, msg_length)</div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_gaf31c3839043db5312b9b9429102964bd"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#gaf31c3839043db5312b9b9429102964bd">PIOS_COM_SendCharNonBlocking</a></div><div class="ttdeci">int32_t PIOS_COM_SendCharNonBlocking(uintptr_t com_id, char c)</div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga9caa4742456fa958de6f07962d4893c0"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a></div><div class="ttdeci">int32_t PIOS_COM_Init(uintptr_t *com_id, const struct pios_com_driver *driver, uintptr_t lower_id, uint16_t rx_buffer_len, uint16_t tx_buffer_len)</div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga4be8d25f1ea7f6239c7ae7059a37ad2b"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a></div><div class="ttdeci">bool PIOS_Semaphore_Take(struct pios_semaphore *sema, uint32_t timeout_ms)</div><div class="ttdoc">Takes binary semaphore. </div><div class="ttdef"><b>Definition:</b> <a href="pios__semaphore_8c_source.html#l00293">pios_semaphore.c:293</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga7408e892dd48c6ce39b5821d917a3dd2"><div class="ttname"><a href="group___p_i_o_s.html#ga7408e892dd48c6ce39b5821d917a3dd2">vsprintf</a></div><div class="ttdeci">int vsprintf(char *out, const char *format, va_list args)</div><div class="ttdef"><b>Definition:</b> <a href="printf-stdarg_8c_source.html#l00224">printf-stdarg.c:224</a></div></div>
-<div class="ttc" id="group___p_i_o_s___c_o_m_html_ga06a9a4136683f78051b9e72e5edb32f8"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a></div><div class="ttdeci">int32_t PIOS_COM_SendBuffer(uintptr_t com_id, const uint8_t *buffer, uint16_t len)</div></div>
 <div class="ttc" id="circqueue_8c_html_a7177d7c6fc2dc4c0c45d29c3e0e37943"><div class="ttname"><a href="circqueue_8c.html#a7177d7c6fc2dc4c0c45d29c3e0e37943">circ_queue_clear</a></div><div class="ttdeci">void circ_queue_clear(circ_queue_t q)</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_8c_source.html#l00246">circqueue.c:246</a></div></div>
 <div class="ttc" id="pios__mutex_8h_html"><div class="ttname"><a href="pios__mutex_8h.html">pios_mutex.h</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_aae8a141a2e00fb900376f6eae01e8558"><div class="ttname"><a href="structpios__com__driver.html#aae8a141a2e00fb900376f6eae01e8558">pios_com_driver::bind_rx_cb</a></div><div class="ttdeci">void(* bind_rx_cb)(uintptr_t id, pios_com_callback rx_in_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00047">pios_com.h:47</a></div></div>

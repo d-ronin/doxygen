@@ -64,7 +64,7 @@ var searchData=
   ['polish',['polish',['../class_manhattan_style.html#a69c435e6556d68ccfbdbd2226c913510',1,'ManhattanStyle::polish(QWidget *widget)'],['../class_manhattan_style.html#a4ba18ac82b5981cd705a2db4abc674ee',1,'ManhattanStyle::polish(QPalette &amp;pal)'],['../class_manhattan_style.html#a92648f0b5ff41cd6fc94ff98a84ecf37',1,'ManhattanStyle::polish(QApplication *app)']]],
   ['populatewidgets',['populateWidgets',['../group___u_a_v_object_widget_utils.html#gaa3d55f7941db619b9872b0ffdc78ebde',1,'ConfigTaskWidget']]],
   ['populatewidgetsrequested',['populateWidgetsRequested',['../group___u_a_v_object_widget_utils.html#gacc1be196d23d5e483f68a990d8ebfae6',1,'ConfigTaskWidget']]],
-  ['popup',['popup',['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)'],['../class_popup_widget.html#a7fa5f95babcb7743b3dd2e5acee81360',1,'PopupWidget::popUp()']]],
+  ['popup',['popUp',['../class_popup_widget.html#a7fa5f95babcb7743b3dd2e5acee81360',1,'PopupWidget::popUp()'],['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)']]],
   ['popupcurve',['PopupCurve',['../group___config_plugin.html#gaec9845f3048d0bb15ba6b31f4659888f',1,'MixerCurve']]],
   ['popupwidget',['PopupWidget',['../class_popup_widget.html#a65bffb57db36284b740a658485c68798',1,'PopupWidget']]],
   ['port',['Port',['../group___i_p_conn_plugin.html#gaaa57ca41a00de517e859afa3c339099a',1,'IPconnectionConfiguration']]],

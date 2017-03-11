@@ -59,7 +59,6 @@ var searchData=
   ['lineardialplugin',['LineardialPlugin',['../class_lineardial_plugin.html',1,'LineardialPlugin'],['../group___linear_dial_plugin.html',1,'(Global Namespace)']]],
   ['lineardialplugin_2ecpp',['lineardialplugin.cpp',['../lineardialplugin_8cpp.html',1,'']]],
   ['lineardialplugin_2eh',['lineardialplugin.h',['../lineardialplugin_8h.html',1,'']]],
-  ['linearequationssolving2',['LinearEquationsSolving2',['../group___config_plugin.html#gae36fbabaf3892d933d17f670d77cb208',1,'configccattitudewidget.cpp']]],
   ['lineeditimage',['lineeditImage',['../class_manhattan_style_private.html#a3849ed80c66c6a203ef7709552601f3b',1,'ManhattanStylePrivate']]],
   ['lineeditimage_5fdisabled',['lineeditImage_disabled',['../class_manhattan_style_private.html#ab2274e2815b204f7a7faaaab43a17e58',1,'ManhattanStylePrivate']]],
   ['link_5fppm',['LINK_PPM',['../group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07',1,'Core::IBoardType']]],

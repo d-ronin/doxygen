@@ -37,7 +37,7 @@ var searchData=
   ['nmea_5fupdate_5fposition',['NMEA_update_position',['../group___g_s_p_module.html#gafb07ad2b755c0395ac8d7f6e86965c44',1,'NMEA.h']]],
   ['no_5fairspeed_5fsensor_5fpresent',['NO_AIRSPEED_SENSOR_PRESENT',['../group___airspeed_module.html#gae6f3b525d7b4066914fa1673be8d174a',1,'airspeed.c']]],
   ['no_5fparser',['NO_PARSER',['../group___g_s_p_module.html#ga50defead334337d91f632b36aa071214',1,'GPS.h']]],
-  ['no_5fsensors',['NO_SENSORS',['../group___discovery_f4.html#gadb40bd391933623525454a38f7105a5c',1,'NO_SENSORS():&#160;pios_config.h'],['../group___pip_xtreme.html#gadb40bd391933623525454a38f7105a5c',1,'NO_SENSORS():&#160;pios_config.h']]],
+  ['no_5fsensors',['NO_SENSORS',['../group___pip_xtreme.html#gadb40bd391933623525454a38f7105a5c',1,'pios_config.h']]],
   ['nop',['NOP',['../classpx__uploader_1_1uploader.html#ad4e27d11714e5bcfbc8e771b78f4fe77',1,'px_uploader::uploader']]],
   ['north',['north',['../struct_latitude___band___value.html#a4e60379816675c4ee05b875731dac5bf',1,'Latitude_Band_Value']]],
   ['north_5fposition',['NORTH_POSITION',['../group___ground_path_follower.html#gga1223527343fc1b6614c7abf83ed7d170a3f46558976ca7c653cc8c08475bcab2a',1,'NORTH_POSITION():&#160;groundpathfollower.c'],['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a3f46558976ca7c653cc8c08475bcab2a',1,'NORTH_POSITION():&#160;vtol_follower_priv.h']]],

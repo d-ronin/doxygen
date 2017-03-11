@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['discoveryf4_20support_20files',['DiscoveryF4 support files',['../group___discovery_f4.html',1,'']]],
-  ['discoveryf4b_20bootloader',['DiscoveryF4B bootloader',['../group___discovery_f4_b_l.html',1,'']]],
   ['dtf_20support_20files',['DTF support files',['../group___d_t_fc.html',1,'']]],
   ['dtfc_20dtf_20bootloader',['DTFc DTF bootloader',['../group__dtfc_b_l.html',1,'']]],
   ['dronin_20modules',['dRonin Modules',['../group___modules.html',1,'']]],

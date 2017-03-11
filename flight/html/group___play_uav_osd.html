@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -172,7 +172,7 @@ Macros</h2></td></tr>
 <tr class="separator:gadbe2bc366ea08ebb85a0c8ca4c7800e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2d33ccaf63f5d5b66552b95426c0137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___play_uav_osd.html#gac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:gac2d33ccaf63f5d5b66552b95426c0137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2230ce045fa6f32269efa3202144ffd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___play_uav_osd.html#gaa2230ce045fa6f32269efa3202144ffd">DEBUG_PRINTF</a>(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a>,...)&#160;&#160;&#160;{if(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a> &lt;= <a class="el" href="group___sparky2.html#gac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a> &amp;&amp; <a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a> &gt; 0) { <a class="el" href="group___p_i_o_s___c_o_m.html#gaf4608e2b544b62a5130238c2534e19f8">PIOS_COM_SendFormattedStringNonBlocking</a>(<a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a>, __VA_ARGS__); }}</td></tr>
+<tr class="memitem:gaa2230ce045fa6f32269efa3202144ffd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___play_uav_osd.html#gaa2230ce045fa6f32269efa3202144ffd">DEBUG_PRINTF</a>(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a>,...)&#160;&#160;&#160;{<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga611a2042a4f6bfb1a9351fd7945e69f8">if</a>(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a> &lt;= <a class="el" href="group___sparky2.html#gac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a> &amp;&amp; <a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a> &gt; 0) { <a class="el" href="group___p_i_o_s___c_o_m.html#gaf4608e2b544b62a5130238c2534e19f8">PIOS_COM_SendFormattedStringNonBlocking</a>(<a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a>, __VA_ARGS__); }}</td></tr>
 <tr class="separator:gaa2230ce045fa6f32269efa3202144ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga063cb938f1bfd219544fb1fee9497b93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___play_uav_osd.html#ga063cb938f1bfd219544fb1fee9497b93">TELEM_QUEUE_SIZE</a>&#160;&#160;&#160;80</td></tr>
 <tr class="separator:ga063cb938f1bfd219544fb1fee9497b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -522,7 +522,7 @@ TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{if(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a> &lt;= <a class="el" href="group___sparky2.html#gac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a> &amp;&amp; <a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a> &gt; 0) { <a class="el" href="group___p_i_o_s___c_o_m.html#gaf4608e2b544b62a5130238c2534e19f8">PIOS_COM_SendFormattedStringNonBlocking</a>(<a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a>, __VA_ARGS__); }}</td>
+          <td></td><td>&#160;&#160;&#160;{<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga611a2042a4f6bfb1a9351fd7945e69f8">if</a>(<a class="el" href="msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a">level</a> &lt;= <a class="el" href="group___sparky2.html#gac2d33ccaf63f5d5b66552b95426c0137">DEBUG_LEVEL</a> &amp;&amp; <a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a> &gt; 0) { <a class="el" href="group___p_i_o_s___c_o_m.html#gaf4608e2b544b62a5130238c2534e19f8">PIOS_COM_SendFormattedStringNonBlocking</a>(<a class="el" href="group___sparky2.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a>, __VA_ARGS__); }}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2209,8 +2209,6 @@ TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a cl
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="naze32_2fw_2pios__board_8c_source.html#l00054">54</a> of file <a class="el" href="naze32_2fw_2pios__board_8c_source.html">pios_board.c</a>.</p>
 
 </div>
 </div>

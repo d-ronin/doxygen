@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6e50e12</span>
+   &#160;<span id="projectnumber">5eaaf9a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('battery_8c_source.html','');});
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                <span class="comment">// disallow negative values as these are cast to unsigned integral types</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                <span class="comment">// in some telemetry layers</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                if (scaled_voltage &lt; 0.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (scaled_voltage &lt; 0.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                        scaled_voltage = 0.0f;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                        adc_offset_invalid = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (batterySettings.MaxCellVoltage &gt; 0.0f &amp;&amp; scaled_voltage &gt; 2.5f) {</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('battery_8c_source.html','');});
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        <a class="code" href="group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b">avg_current_lpf_for_time</a> = <a class="code" href="group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b">avg_current_lpf_for_time</a> * alpha + (1 - alpha) * flightBatteryData.AvgCurrent;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        if (<a class="code" href="group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b">avg_current_lpf_for_time</a> &gt; 0.1<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (<a class="code" href="group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b">avg_current_lpf_for_time</a> &gt; 0.1<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>)</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                flightBatteryData.EstimatedFlightTime = (energyRemaining / (<a class="code" href="group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b">avg_current_lpf_for_time</a> * 1000.0f)) * 3600.0f; <span class="comment">//in Sec</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                flightBatteryData.EstimatedFlightTime = 9999;</div>
@@ -382,6 +382,7 @@ $(document).ready(function(){initNavTree('battery_8c_source.html','');});
 <div class="ttc" id="group___battery_module_html_ga5a5af537fbeabfb8fcb0535af26b6214"><div class="ttname"><a href="group___battery_module.html#ga5a5af537fbeabfb8fcb0535af26b6214">batteryTaskHandle</a></div><div class="ttdeci">static struct pios_thread * batteryTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="battery_8c_source.html#l00052">battery.c:52</a></div></div>
 <div class="ttc" id="group___control_html_ga8212bdcf43b96930a3cb55cfad7b7133"><div class="ttname"><a href="group___control.html#ga8212bdcf43b96930a3cb55cfad7b7133">lastSysTime</a></div><div class="ttdeci">static uint32_t lastSysTime</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00097">transmitter_control.c:97</a></div></div>
 <div class="ttc" id="group___battery_module_html_ga284f2932eef098230d2a6fd51a16daa3"><div class="ttname"><a href="group___battery_module.html#ga284f2932eef098230d2a6fd51a16daa3">battery_settings_updated</a></div><div class="ttdeci">static bool battery_settings_updated</div><div class="ttdef"><b>Definition:</b> <a href="battery_8c_source.html#l00055">battery.c:55</a></div></div>
+<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
