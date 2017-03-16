@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('circqueue_2unittest_8cpp_source.html',
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">   54</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_circ_queue_test.html">CircQueueTest</a>, CircQueueFillUp) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="structcirc__queue.html">circ_queue_t</a> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a> = <a class="code" href="circqueue_8c.html#adbb7d8aa81db995c0f3388f165d60330">circ_queue_new</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 10);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="structcirc__queue.html">circ_queue_t</a> q = <a class="code" href="circqueue_8c.html#adbb7d8aa81db995c0f3388f165d60330">circ_queue_new</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 10);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ASSERT_TRUE(q);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('circqueue_2unittest_8cpp_source.html',
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="group___unit_tests.html#gaf4ddd46f30de0383f06c10778dffc6ef">  173</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_circ_queue_test.html">CircQueueTest</a>, CircQueueSpin) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="structcirc__queue.html">circ_queue_t</a> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a> = <a class="code" href="circqueue_8c.html#adbb7d8aa81db995c0f3388f165d60330">circ_queue_new</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 99);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="structcirc__queue.html">circ_queue_t</a> q = <a class="code" href="circqueue_8c.html#adbb7d8aa81db995c0f3388f165d60330">circ_queue_new</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 99);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">int</span> write_val=10, read_val=10;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
@@ -307,7 +307,6 @@ $(document).ready(function(){initNavTree('circqueue_2unittest_8cpp_source.html',
 <div class="ttc" id="group___unit_tests_html_ga4bf9318157d109c88258f7c00e9a496c"><div class="ttname"><a href="group___unit_tests.html#ga4bf9318157d109c88258f7c00e9a496c">CircQueueTest::SetUp</a></div><div class="ttdeci">virtual void SetUp()</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_2unittest_8cpp_source.html#l00047">unittest.cpp:47</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="circqueue_8h_html"><div class="ttname"><a href="circqueue_8h.html">circqueue.h</a></div><div class="ttdoc">Public header for 1 reader, 1 writer circular queue. </div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gacbffa34110f15b21994d3d087a0f4e7f"><div class="ttname"><a href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a></div><div class="ttdeci">static float q[4]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00096">attitude.c:96</a></div></div>
 <div class="ttc" id="group___unit_tests_html_ga1a85c2f630b4bd29dff845aa1e7fe47c"><div class="ttname"><a href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a></div><div class="ttdeci">TEST_F(CircQueueTest, CircQueueFillUp)</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_2unittest_8cpp_source.html#l00054">unittest.cpp:54</a></div></div>
 <div class="ttc" id="circqueue_8c_html_a2214df6fc5ba26f92174dfc5c589f379"><div class="ttname"><a href="circqueue_8c.html#a2214df6fc5ba26f92174dfc5c589f379">circ_queue_advance_write</a></div><div class="ttdeci">int circ_queue_advance_write(circ_queue_t q)</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_8c_source.html#l00192">circqueue.c:192</a></div></div>
 <div class="ttc" id="circqueue_8c_html_ae8b06d4a5f5348a52bbfaacb0fdeb6b1"><div class="ttname"><a href="circqueue_8c.html#ae8b06d4a5f5348a52bbfaacb0fdeb6b1">circ_queue_read_pos</a></div><div class="ttdeci">void * circ_queue_read_pos(circ_queue_t q, uint16_t *contig, uint16_t *avail)</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_8c_source.html#l00208">circqueue.c:208</a></div></div>

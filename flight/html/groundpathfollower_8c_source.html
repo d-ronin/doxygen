@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -505,7 +505,7 @@ $(document).ready(function(){initNavTree('groundpathfollower_8c_source.html','')
 <div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="group___ground_path_follower.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">  453</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___ground_path_follower.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">updateNedAccel</a>()</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;{</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordtype">float</span> accel[3];</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4];</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">float</span> q[4];</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordtype">float</span> Rbe[3][3];</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordtype">float</span> accel_ned[3];</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
@@ -599,7 +599,6 @@ $(document).ready(function(){initNavTree('groundpathfollower_8c_source.html','')
 <div class="ttc" id="group___tau_labs_math_html_gaccaead20abfe7057c1a086b5426865df"><div class="ttname"><a href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a></div><div class="ttdeci">void Quaternion2R(float q[4], float Rbe[3][3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00113">coordinate_conversions.c:113</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___ground_path_follower_html_gga1223527343fc1b6614c7abf83ed7d170a06e15744a8bd69fceeeb39ab3614b3f6"><div class="ttname"><a href="group___ground_path_follower.html#gga1223527343fc1b6614c7abf83ed7d170a06e15744a8bd69fceeeb39ab3614b3f6">VELOCITY</a></div><div class="ttdef"><b>Definition:</b> <a href="groundpathfollower_8c_source.html#l00096">groundpathfollower.c:96</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gacbffa34110f15b21994d3d087a0f4e7f"><div class="ttname"><a href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a></div><div class="ttdeci">static float q[4]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00096">attitude.c:96</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2b57ee25cb47d455143fa9f009d8e937"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a></div><div class="ttdeci">void PIOS_Thread_Sleep_Until(uint32_t *previous_ms, uint32_t increment_ms)</div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2c639e61f21eac6cb54580eb5e1b85de"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a></div><div class="ttdeci">void PIOS_Thread_Sleep(uint32_t time_ms)</div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gaa6bafbb8b675e10947b8c78a7b171e92"><div class="ttname"><a href="group___tau_labs_libraries.html#gaa6bafbb8b675e10947b8c78a7b171e92">path_progress</a></div><div class="ttdeci">void path_progress(const PathDesiredData *pathDesired, const float *cur_point, struct path_status *status)</div><div class="ttdoc">Compute progress along path and deviation from it. </div><div class="ttdef"><b>Definition:</b> <a href="paths_8c_source.html#l00062">paths.c:62</a></div></div>

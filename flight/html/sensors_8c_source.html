@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -730,7 +730,7 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;{</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        (void) ctx; (void) obj; (void) len;</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        SensorSettingsData <a class="code" href="group___attitude_module_small_f1.html#ga7e2b26cdc0322ab9457559aa2b94f8fc">sensorSettings</a>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        SensorSettingsData sensorSettings;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        SensorSettingsGet(&amp;sensorSettings);</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        INSSettingsGet(&amp;<a class="code" href="group___sensors.html#gab91f2e4b019b6c71d6047e2f06bdf30d">insSettings</a>);</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
@@ -873,7 +873,6 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="ttc" id="group___tau_labs_math_html_ga51d2a5ec28cbf272fe73aa5ea343a355"><div class="ttname"><a href="group___tau_labs_math.html#ga51d2a5ec28cbf272fe73aa5ea343a355">rot_mult</a></div><div class="ttdeci">void rot_mult(float R[3][3], const float vec[3], float vec_out[3], bool transpose)</div><div class="ttdoc">Rotate a vector by a rotation matrix. </div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00352">coordinate_conversions.c:352</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2b57ee25cb47d455143fa9f009d8e937"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a></div><div class="ttdeci">void PIOS_Thread_Sleep_Until(uint32_t *previous_ms, uint32_t increment_ms)</div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga81a64437be6edb2654bfebcc14321964"><div class="ttname"><a href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">RPY2Quaternion</a></div><div class="ttdeci">void RPY2Quaternion(const float rpy[3], float q[4])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00084">coordinate_conversions.c:84</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_ga7e2b26cdc0322ab9457559aa2b94f8fc"><div class="ttname"><a href="group___attitude_module_small_f1.html#ga7e2b26cdc0322ab9457559aa2b94f8fc">sensorSettings</a></div><div class="ttdeci">static SensorSettingsData sensorSettings</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00068">attitude.c:68</a></div></div>
 <div class="ttc" id="coordinate__conversions_8h_html"><div class="ttname"><a href="coordinate__conversions_8h.html">coordinate_conversions.h</a></div><div class="ttdoc">Header for Coordinate conversions library in coordinate_conversions.c. </div></div>
 <div class="ttc" id="group___sensors_html_ga0ce75f6556b56ffcfee6db75c310c8d8"><div class="ttname"><a href="group___sensors.html#ga0ce75f6556b56ffcfee6db75c310c8d8">accel_bias</a></div><div class="ttdeci">static float accel_bias[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00111">sensors.c:111</a></div></div>
 <div class="ttc" id="structpios__sensor__mag__data_html"><div class="ttname"><a href="structpios__sensor__mag__data.html">pios_sensor_mag_data</a></div><div class="ttdoc">Pios sensor structure for generic mag data. </div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00054">pios_sensors.h:54</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,9 +113,12 @@ $(document).ready(function(){initNavTree('attitude_8c.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">attitude.c File Reference</div>  </div>
+<div class="title">attitude.c File Reference<div class="ingroups"><a class="el" href="group___attitude_module.html">Attitude and state estimation module</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Full attitude estimation algorithm.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;openpilot.h&quot;</code><br/>
 <code>#include &quot;pios.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
@@ -191,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga0f38d1edf9d67d8a8917be9b132a1650">setAttitudeComplementary</a> ()</td></tr>
 <tr class="memdesc:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the AttitudeActual to the complementary filter estimate.  <a href="group___attitude_module.html#ga0f38d1edf9d67d8a8917be9b132a1650">More...</a><br/></td></tr>
 <tr class="separator:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8d5761247c84c64dddb7be876792913"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gac8d5761247c84c64dddb7be876792913">calc_ned_accel</a> (float *<a class="el" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>, float *accels)</td></tr>
+<tr class="memitem:gac8d5761247c84c64dddb7be876792913"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gac8d5761247c84c64dddb7be876792913">calc_ned_accel</a> (float *q, float *accels)</td></tr>
 <tr class="separator:gac8d5761247c84c64dddb7be876792913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd957020bc37a03983ab93527452020b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gafd957020bc37a03983ab93527452020b">cfvert_reset</a> (struct <a class="el" href="structcfvert.html">cfvert</a> *cf, float baro, float time_constant)</td></tr>
 <tr class="memdesc:gafd957020bc37a03983ab93527452020b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the vertical baro complementary filter and zeros the altitude.  <a href="group___attitude_module.html#gafd957020bc37a03983ab93527452020b">More...</a><br/></td></tr>
@@ -287,7 +290,17 @@ Variables</h2></td></tr>
 <tr class="memdesc:ga62b409271acba166dbf31b4fed9af697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the GPS LLA position into NED coordinates.  <a href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">More...</a><br/></td></tr>
 <tr class="separator:ga62b409271acba166dbf31b4fed9af697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Full attitude estimation algorithm. </p>
+<dl class="section author"><dt>Author</dt><dd>The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org</a> Copyright (C) 2010. </dd>
+<dd>
+Tau Labs, <a href="http://taulabs.org">http://taulabs.org</a> Copyright (C) 2012-2016 </dd>
+<dd>
+dRonin, <a href="http://dronin.org">http://dronin.org</a> Copyright (C) 2015-2017 </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
+
+<p>Definition in file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

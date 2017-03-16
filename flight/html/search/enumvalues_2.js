@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['cf_5farming',['CF_ARMING',['../group___attitude_module_small_f1.html#gga198f64773276a5901d9c79690465e5dbaaeeddedb486c25be85918925490e4f7c',1,'CF_ARMING():&#160;attitude.c'],['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4aaeeddedb486c25be85918925490e4f7c',1,'CF_ARMING():&#160;attitude.c']]],
-  ['cf_5finitializing',['CF_INITIALIZING',['../group___attitude_module_small_f1.html#gga198f64773276a5901d9c79690465e5dbaee904149480808a1828f1e546b365411',1,'CF_INITIALIZING():&#160;attitude.c'],['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4aee904149480808a1828f1e546b365411',1,'CF_INITIALIZING():&#160;attitude.c']]],
-  ['cf_5fnormal',['CF_NORMAL',['../group___attitude_module_small_f1.html#gga198f64773276a5901d9c79690465e5dbacfd7a1440ea5820f0b90b2943586a542',1,'CF_NORMAL():&#160;attitude.c'],['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4acfd7a1440ea5820f0b90b2943586a542',1,'CF_NORMAL():&#160;attitude.c']]],
-  ['cf_5fpoweron',['CF_POWERON',['../group___attitude_module_small_f1.html#gga198f64773276a5901d9c79690465e5dba1b205074eafd92be8fbb945482e2c5c2',1,'CF_POWERON():&#160;attitude.c'],['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4a1b205074eafd92be8fbb945482e2c5c2',1,'CF_POWERON():&#160;attitude.c']]],
+  ['cf_5farming',['CF_ARMING',['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4aaeeddedb486c25be85918925490e4f7c',1,'attitude.c']]],
+  ['cf_5finitializing',['CF_INITIALIZING',['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4aee904149480808a1828f1e546b365411',1,'attitude.c']]],
+  ['cf_5fnormal',['CF_NORMAL',['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4acfd7a1440ea5820f0b90b2943586a542',1,'attitude.c']]],
+  ['cf_5fpoweron',['CF_POWERON',['../group___attitude_module.html#gga2a3dfab57b52ff023f9197d9afe06ff4a1b205074eafd92be8fbb945482e2c5c2',1,'attitude.c']]],
   ['color_5faqua',['COLOR_AQUA',['../group___on_screen_display.html#gga33e00617b1083c0f076fe97676ab85b2a3fbd5be8e43fa2c705c409c188b33bc9',1,'osd_menu.c']]],
   ['color_5fblue',['COLOR_BLUE',['../group___on_screen_display.html#gga33e00617b1083c0f076fe97676ab85b2a1340428efccb140dcbdb71aa6176f696',1,'osd_menu.c']]],
   ['color_5fcustom',['COLOR_CUSTOM',['../group___on_screen_display.html#gga33e00617b1083c0f076fe97676ab85b2a244af80de1b56030ddd7e0534df793b1',1,'osd_menu.c']]],

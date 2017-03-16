@@ -1,7 +1,7 @@
 var searchData=
 [
   ['queue_20abstraction',['Queue Abstraction',['../group___p_i_o_s___queue.html',1,'']]],
-  ['q',['Q',['../group___tau_labs_libraries.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps14state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps16state.c'],['../group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f',1,'q():&#160;attitude.c']]],
+  ['q',['Q',['../group___tau_labs_libraries.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps14state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps16state.c']]],
   ['quality',['quality',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#a3d99d4c098bc0ba52408def4080330c5',1,'UBX_NAV_SVINFO_SV::quality()'],['../group___p_i_o_s___s_e_n_s_o_r_s.html#gab43224d206c2684b43a0222465a465cf',1,'pios_sensor_optical_flow_data::quality()']]],
   ['quanton_20support_20files',['Quanton support files',['../group___quanton.html',1,'']]],
   ['quanton_20bootloader',['Quanton bootloader',['../group___quanton_b_l.html',1,'']]],

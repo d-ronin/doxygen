@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('pios__px4flow_8c_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">struct </span>pios_thread *<a class="code" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__semaphore.html">pios_semaphore</a> *data_ready_sema;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">enum</span> pios_px4flow_dev_magic <a class="code" href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gab0474ee7eeda2c4413d5963c8d142020">Rsb</a>[3][3];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___sensors.html#gab0474ee7eeda2c4413d5963c8d142020">Rsb</a>[3][3];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* Local Variables */</span></div>
@@ -383,9 +383,9 @@ $(document).ready(function(){initNavTree('pios__px4flow_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga3ab71287f36a8eb543fb73221d805be4"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga3ab71287f36a8eb543fb73221d805be4">pios_sensor_optical_flow_data::y_dot</a></div><div class="ttdeci">float y_dot</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00063">pios_sensors.h:63</a></div></div>
 <div class="ttc" id="struct_rotation_html"><div class="ttname"><a href="struct_rotation.html">Rotation</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00026">pios_px4flow_priv.h:26</a></div></div>
 <div class="ttc" id="structpios__sensor__optical__flow__data_html"><div class="ttname"><a href="structpios__sensor__optical__flow__data.html">pios_sensor_optical_flow_data</a></div><div class="ttdoc">Pios sensor structure for generic mag data. </div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00061">pios_sensors.h:61</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gab0474ee7eeda2c4413d5963c8d142020"><div class="ttname"><a href="group___attitude_module_small_f1.html#gab0474ee7eeda2c4413d5963c8d142020">Rsb</a></div><div class="ttdeci">static float Rsb[3][3]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00097">attitude.c:97</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00128">pios_heap.c:128</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_gac5ddcec5126e8a38c42a9973f421ee5e"><div class="ttname"><a href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a></div><div class="ttdeci">bool PIOS_Queue_Send(struct pios_queue *queuep, const void *itemp, uint32_t timeout_ms)</div></div>
+<div class="ttc" id="group___sensors_html_gab0474ee7eeda2c4413d5963c8d142020"><div class="ttname"><a href="group___sensors.html#gab0474ee7eeda2c4413d5963c8d142020">Rsb</a></div><div class="ttdeci">static float Rsb[3][3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00119">sensors.c:119</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga69a84b9fd07473298fdcbc221c7683c7"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7">pios_sensor_rangefinder_data::range_status</a></div><div class="ttdeci">uint8_t range_status</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00072">pios_sensors.h:72</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_gaca4d8c0b343ce63582396c429244e028"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">pios_sensor_rangefinder_data::range</a></div><div class="ttdeci">float range</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00071">pios_sensors.h:71</a></div></div>

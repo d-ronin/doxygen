@@ -7,7 +7,6 @@ var searchData=
   ['altitudehold_2ec',['altitudehold.c',['../altitudehold_8c.html',1,'']]],
   ['atmospheric_5fmath_2ec',['atmospheric_math.c',['../atmospheric__math_8c.html',1,'']]],
   ['atmospheric_5fmath_2eh',['atmospheric_math.h',['../atmospheric__math_8h.html',1,'']]],
-  ['attitude_2ec',['attitude.c',['../acro_2attitude_8c.html',1,'']]],
   ['attitude_2ec',['attitude.c',['../attitude_8c.html',1,'']]],
   ['autotune_2ec',['autotune.c',['../autotune_8c.html',1,'']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// ****** find roll, pitch, yaw from quaternion ********</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga0e4bc4f44a08a2e317db0bde882909cc">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga0e4bc4f44a08a2e317db0bde882909cc">Quaternion2RPY</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4], <span class="keywordtype">float</span> rpy[3])</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga0e4bc4f44a08a2e317db0bde882909cc">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga0e4bc4f44a08a2e317db0bde882909cc">Quaternion2RPY</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> q[4], <span class="keywordtype">float</span> rpy[3])</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">float</span> R13, R11, R12, R23, R33;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">float</span> q0s = q[0] * q[0];</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">// ****** find quaternion from roll, pitch, yaw ********</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">RPY2Quaternion</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> rpy[3], <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4])</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">RPY2Quaternion</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> rpy[3], <span class="keywordtype">float</span> q[4])</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">float</span> phi, theta, psi;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">float</span> cphi, sphi, ctheta, stheta, cpsi, spsi;</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//** Find Rbe, that rotates a vector from earth fixed to body frame, from quaternion **</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">  113</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a>(<span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4], <span class="keywordtype">float</span> Rbe[3][3])</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">  113</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a>(<span class="keywordtype">float</span> q[4], <span class="keywordtype">float</span> Rbe[3][3])</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">float</span> q0s = q[0] * q[0], q1s = q[1] * q[1], q2s = q[2] * q[2], q3s = q[3] * q[3];</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// ****** convert Rotation Matrix to Quaternion ********</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// ****** if R converts from e to b, q is rotation from e to b ****</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gad6008216daaf402435c742d0290f9a30">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gad6008216daaf402435c742d0290f9a30">R2Quaternion</a>(<span class="keywordtype">float</span> <a class="code" href="group___tau_labs_libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a>[3][3], <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4])</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gad6008216daaf402435c742d0290f9a30">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gad6008216daaf402435c742d0290f9a30">R2Quaternion</a>(<span class="keywordtype">float</span> <a class="code" href="group___tau_labs_libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a>[3][3], <span class="keywordtype">float</span> q[4])</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">float</span> m[4], <a class="code" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        uint8_t index,<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">// Compute rotation matrix from a rotation vector</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">// To save .text space, uses Quaternion2R()</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4];</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">float</span> q[4];</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordtype">float</span> angle = <a class="code" href="group___tau_labs_math.html#gaf5edfeac1bff286891d26b8c7fcc9958">VectorMagnitude</a>(Rv);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">if</span> (angle &lt;= 0.00048828125<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
@@ -398,14 +398,14 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span>(sqrtf(v[0]*v[0] + v[1]*v[1] + v[2]*v[2]));</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gab25d503661ed9e31c9616b13c72d1ccd">  311</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gab25d503661ed9e31c9616b13c72d1ccd">quat_inverse</a>(<span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4]) </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#gab25d503661ed9e31c9616b13c72d1ccd">  311</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#gab25d503661ed9e31c9616b13c72d1ccd">quat_inverse</a>(<span class="keywordtype">float</span> q[4]) </div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        q[1] = -q[1];</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        q[2] = -q[2];</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        q[3] = -q[3];</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga61bd7b4ee83de9d89b69dea4179edacc">  323</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga61bd7b4ee83de9d89b69dea4179edacc">quat_copy</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4], <span class="keywordtype">float</span> qnew[4]) </div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="group___tau_labs_math.html#ga61bd7b4ee83de9d89b69dea4179edacc">  323</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_math.html#ga61bd7b4ee83de9d89b69dea4179edacc">quat_copy</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> q[4], <span class="keywordtype">float</span> qnew[4]) </div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        qnew[0] = q[0];</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        qnew[1] = q[1];</div>
@@ -450,7 +450,6 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga43ed3db7237f03a6488c8dd7b987b1bd"><div class="ttname"><a href="group___tau_labs_math.html#ga43ed3db7237f03a6488c8dd7b987b1bd">Rv2Rot</a></div><div class="ttdeci">void Rv2Rot(float Rv[3], float R[3][3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00265">coordinate_conversions.c:265</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga51d2a5ec28cbf272fe73aa5ea343a355"><div class="ttname"><a href="group___tau_labs_math.html#ga51d2a5ec28cbf272fe73aa5ea343a355">rot_mult</a></div><div class="ttdeci">void rot_mult(float R[3][3], const float vec[3], float vec_out[3], bool transpose)</div><div class="ttdoc">Rotate a vector by a rotation matrix. </div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00352">coordinate_conversions.c:352</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gacbffa34110f15b21994d3d087a0f4e7f"><div class="ttname"><a href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a></div><div class="ttdeci">static float q[4]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00096">attitude.c:96</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga81a64437be6edb2654bfebcc14321964"><div class="ttname"><a href="group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964">RPY2Quaternion</a></div><div class="ttdeci">void RPY2Quaternion(const float rpy[3], float q[4])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00084">coordinate_conversions.c:84</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga61bd7b4ee83de9d89b69dea4179edacc"><div class="ttname"><a href="group___tau_labs_math.html#ga61bd7b4ee83de9d89b69dea4179edacc">quat_copy</a></div><div class="ttdeci">void quat_copy(const float q[4], float qnew[4])</div><div class="ttdoc">Duplicate a quaternion. </div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00323">coordinate_conversions.c:323</a></div></div>
 <div class="ttc" id="coordinate__conversions_8h_html"><div class="ttname"><a href="coordinate__conversions_8h.html">coordinate_conversions.h</a></div><div class="ttdoc">Header for Coordinate conversions library in coordinate_conversions.c. </div></div>

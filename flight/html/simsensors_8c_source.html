@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="group___sensors.html#gaa97122b8fa3192e8731f969c976d3ed1">  270</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___sensors.html#gaa97122b8fa3192e8731f969c976d3ed1">simulateModelAgnostic</a>()</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">float</span> Rbe[3][3];</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4];</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">float</span> q[4];</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// Simulate accels based on current attitude</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        AttitudeActualData attitudeActual;</div>
@@ -420,7 +420,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a6dadfb959eeadddc8cbbfbf6c16d8326">vel</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> ned_accel[3] = {0,0,0};</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4] = {1,0,0,0};</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> q[4] = {1,0,0,0};</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> rpy[3] = {0,0,0}; <span class="comment">// Low pass filtered actuator</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> baro_offset = 0.0f;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> temperature = 20;</div>
@@ -647,7 +647,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a6dadfb959eeadddc8cbbfbf6c16d8326">vel</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> ned_accel[3] = {0,0,0};</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4] = {1,0,0,0};</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> q[4] = {1,0,0,0};</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> rpy[3] = {0,0,0}; <span class="comment">// Low pass filtered actuator</span></div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> baro_offset = 0.0f;</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keywordtype">float</span> Rbe[3][3];</div>
@@ -929,7 +929,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="msp__messages_8h.html#a6dadfb959eeadddc8cbbfbf6c16d8326">vel</a>[3] = {0,0,0};</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> ned_accel[3] = {0,0,0};</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>[4] = {1,0,0,0};</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> q[4] = {1,0,0,0};</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> rpy[3] = {0,0,0}; <span class="comment">// Low pass filtered actuator</span></div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> baro_offset = 0.0f;</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        <span class="keywordtype">float</span> Rbe[3][3];</div>
@@ -1271,7 +1271,6 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="ttc" id="group___tau_labs_math_html_gaccaead20abfe7057c1a086b5426865df"><div class="ttname"><a href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a></div><div class="ttdeci">void Quaternion2R(float q[4], float Rbe[3][3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00113">coordinate_conversions.c:113</a></div></div>
 <div class="ttc" id="group___attitude_module_html_ga2df5dd1b897f5b24779f6e0ad9b5b119"><div class="ttname"><a href="group___attitude_module.html#ga2df5dd1b897f5b24779f6e0ad9b5b119">homeLocation</a></div><div class="ttdeci">static HomeLocationData homeLocation</div><div class="ttdef"><b>Definition:</b> <a href="attitude_8c_source.html#l00146">attitude.c:146</a></div></div>
 <div class="ttc" id="group___sensors_html_ga4003f7985e24e407bbc2f44b2d289c29"><div class="ttname"><a href="group___sensors.html#ga4003f7985e24e407bbc2f44b2d289c29">overideAttitude</a></div><div class="ttdeci">bool overideAttitude</div><div class="ttdef"><b>Definition:</b> <a href="simsensors_8c_source.html#l00330">simsensors.c:330</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gacbffa34110f15b21994d3d087a0f4e7f"><div class="ttname"><a href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a></div><div class="ttdeci">static float q[4]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00096">attitude.c:96</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2c639e61f21eac6cb54580eb5e1b85de"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a></div><div class="ttdeci">void PIOS_Thread_Sleep(uint32_t time_ms)</div></div>
 <div class="ttc" id="coordinate__conversions_8h_html"><div class="ttname"><a href="coordinate__conversions_8h.html">coordinate_conversions.h</a></div><div class="ttdoc">Header for Coordinate conversions library in coordinate_conversions.c. </div></div>
 <div class="ttc" id="group___sensors_html_ga0ce75f6556b56ffcfee6db75c310c8d8"><div class="ttname"><a href="group___sensors.html#ga0ce75f6556b56ffcfee6db75c310c8d8">accel_bias</a></div><div class="ttdeci">static float accel_bias[3]</div><div class="ttdef"><b>Definition:</b> <a href="simsensors_8c_source.html#l00082">simsensors.c:82</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d444edf</span>
+   &#160;<span id="projectnumber">e5d5d39</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">float</span> h = hsv[0], s = hsv[1], v = hsv[2];</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>, <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>, <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>, t;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>, <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>, q, t;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (s &lt; 0.000001f) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="comment">// achromatic (grey)</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        rgb[2] = <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        rgb[0] = <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        rgb[0] = q;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        rgb[1] = v;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        rgb[2] = <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        <span class="keywordflow">break</span>;</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">case</span> 3:</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        rgb[0] = <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        rgb[1] = <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        rgb[1] = q;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                        rgb[2] = v;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">case</span> 4:</div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">default</span>:                <span class="comment">// case 5:</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        rgb[0] = v;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        rgb[1] = <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        rgb[2] = <a class="code" href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        rgb[2] = q;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
@@ -604,7 +604,6 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="rgbleds_8h_html"><div class="ttname"><a href="rgbleds_8h.html">rgbleds.h</a></div></div>
-<div class="ttc" id="group___attitude_module_small_f1_html_gacbffa34110f15b21994d3d087a0f4e7f"><div class="ttname"><a href="group___attitude_module_small_f1.html#gacbffa34110f15b21994d3d087a0f4e7f">q</a></div><div class="ttdeci">static float q[4]</div><div class="ttdef"><b>Definition:</b> <a href="acro_2attitude_8c_source.html#l00096">attitude.c:96</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga5f4d4e368bc5b651d7c0b006db570bfd"><div class="ttname"><a href="group___tau_labs_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">sin_approx</a></div><div class="ttdeci">static int16_t sin_approx(int32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00084">misc_math.h:84</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div></div>
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>

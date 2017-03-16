@@ -28,7 +28,6 @@ var searchData=
   ['sensor_5fsim_5ftype',['sensor_sim_type',['../group___sensors.html#gaa5e76bc9bc1cc20d2b183069aea687b4',1,'simsensors.c']]],
   ['sensor_5ftext_5fid',['sensor_text_id',['../structhott__vario__message.html#a182aa8ce96edcb712727d43348715db2',1,'hott_vario_message::sensor_text_id()'],['../structhott__gps__message.html#a76a13473a41d87403d74a548433f5c06',1,'hott_gps_message::sensor_text_id()'],['../structhott__gam__message.html#ae7373a6ce627aae5712f84587067de9f',1,'hott_gam_message::sensor_text_id()'],['../structhott__eam__message.html#adc9e5297eda708fc6ca7fd33bf145850',1,'hott_eam_message::sensor_text_id()'],['../structhott__esc__message.html#af96baac89e573557821159eda40a85ac',1,'hott_esc_message::sensor_text_id()']]],
   ['sensors_5fcount',['sensors_count',['../group___sensors.html#ga1d3d2f156a75f85f9df60200c00c5643',1,'simsensors.c']]],
-  ['sensorsettings',['sensorSettings',['../group___attitude_module_small_f1.html#ga7e2b26cdc0322ab9457559aa2b94f8fc',1,'attitude.c']]],
   ['sensorstaskhandle',['sensorsTaskHandle',['../group___sensors.html#gaa0cc6e928facbb4ec97986ab47398fb5',1,'sensorsTaskHandle():&#160;sensors.c'],['../group___sensors.html#gaa0cc6e928facbb4ec97986ab47398fb5',1,'sensorsTaskHandle():&#160;simsensors.c']]],
   ['seq_5fnum',['seq_num',['../struct_p_h_packet_header.html#a3d0a8a439dadc33b716f7e926a9546cf',1,'PHPacketHeader']]],
   ['server',['server',['../structpios__udp__dev.html#a802c81cfccce81f5e9774a3f2fb7a449',1,'pios_udp_dev']]],

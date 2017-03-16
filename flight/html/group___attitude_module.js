@@ -1,5 +1,6 @@
 var group___attitude_module =
 [
+    [ "attitude.c", "attitude_8c.html", null ],
     [ "complementary_filter_state", "structcomplementary__filter__state.html", [
       [ "accel_alpha", "structcomplementary__filter__state.html#a2a0dfc57428cafd19006fe7cd1dee0ce", null ],
       [ "accel_filter_enabled", "structcomplementary__filter__state.html#a7d259f4954fc2a3ed14353faa41f6414", null ],
