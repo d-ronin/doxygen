@@ -1,6 +1,8 @@
 var searchData=
 [
   ['a',['a',['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid']]],
+  ['a1',['a1',['../group___tau_labs_math.html#ga113ae77a5e37c0a78b1b3c1c4457db22',1,'lpfilter_biquad']]],
+  ['a2',['a2',['../group___tau_labs_math.html#ga49fb8824c4ef1a6445cbcdb32666c872',1,'lpfilter_biquad']]],
   ['abort_5foperation',['Abort_Operation',['../group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fa877381fade53fb29c9a261ba8d37fa31',1,'common.h']]],
   ['acc_5frange',['acc_range',['../group___p_i_o_s___b_m_i160.html#ga1389307be8c175c2dd6a6f7bf93fbaa2',1,'pios_bmi160_cfg']]],
   ['accel_5falpha',['accel_alpha',['../structcomplementary__filter__state.html#a2a0dfc57428cafd19006fe7cd1dee0ce',1,'complementary_filter_state']]],
@@ -9,6 +11,7 @@ var searchData=
   ['accel_5fbuffer_5fy',['accel_buffer_y',['../struct_vibration_analysis__data.html#a6b56e8afc834b7b333f9e9b892528901',1,'VibrationAnalysis_data']]],
   ['accel_5fbuffer_5fz',['accel_buffer_z',['../struct_vibration_analysis__data.html#ab01a06062a11abbb405e327a09e71c2b',1,'VibrationAnalysis_data']]],
   ['accel_5fcorrection_5fz',['accel_correction_z',['../structcfvert.html#a1dec2436b9b320194875265b1c43e663',1,'cfvert']]],
+  ['accel_5ffilter',['accel_filter',['../group___sensors.html#ga413f356e6361f4b80d0aa6c8e6637f3e',1,'sensors.c']]],
   ['accel_5ffilter_5fenabled',['accel_filter_enabled',['../structcomplementary__filter__state.html#a7d259f4954fc2a3ed14353faa41f6414',1,'complementary_filter_state']]],
   ['accel_5fscale',['accel_scale',['../group___sensors.html#gaf32e1972b8722368277d88031e09c4d1',1,'sensors.c']]],
   ['accelintegral',['accelIntegral',['../group___fixed_wing_path_follower.html#ga5c47e43d90fc8fbf9c5e7adfb6e36f2b',1,'fixedwingpathfollower.c']]],
@@ -123,6 +126,7 @@ var searchData=
   ['alarmsinitialize',['AlarmsInitialize',['../group___tau_labs_libraries.html#gaa2707dbd32985c54ef5776147c4e0fc2',1,'alarms.c']]],
   ['alarmsset',['AlarmsSet',['../group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd',1,'alarms.c']]],
   ['alarmstring',['AlarmString',['../group___tau_labs_libraries.html#gaa522ae041a9cda97c5db1fbe1e60c360',1,'alarms.h']]],
+  ['alpha',['alpha',['../group___tau_labs_math.html#gafd2ee53f0d0a73b267349c6e661a210c',1,'lpfilter_first_order']]],
   ['alt',['alt',['../structmsp__pid.html#ac916d051d78defcdb0cfc3531be2a4cf',1,'msp_pid::alt()'],['../structmsp__set__pid.html#a3aad6014cece38c2391c445a121e35de',1,'msp_set_pid::alt()'],['../msp__messages_8h.html#aba664b6e466d1419168e215052637774',1,'alt():&#160;msp_messages.h']]],
   ['alt_5fhold',['alt_hold',['../structmsp__wp.html#a70512934aa6da1823e4e60a69243fc86',1,'msp_wp::alt_hold()'],['../structmsp__set__wp.html#ab2257c4226b62bf3432241acb06dd01e',1,'msp_set_wp::alt_hold()'],['../msp__messages_8h.html#af75c958c89ab0ef7259be0b67cd20125',1,'alt_hold():&#160;msp_messages.h']]],
   ['altitude',['altitude',['../structmsp__raw__gps.html#a2fa5634b27c916363e71f167128a4031',1,'msp_raw_gps::altitude()'],['../structmsp__set__raw__gps.html#a711859db3c5226d163e6e3b3a2bc2e16',1,'msp_set_raw_gps::altitude()'],['../structtelemetrydata.html#ab08a1d071f8224e7c4bc65485b40b7de',1,'telemetrydata::altitude()'],['../structhott__vario__message.html#a7650cfdb474f901dc9d25678ac088e40',1,'hott_vario_message::altitude()'],['../structhott__gps__message.html#a8109cc81e797fa2d88438663b22ff0d7',1,'hott_gps_message::altitude()'],['../structhott__gam__message.html#a7d53c8237556b77dd22bbda519d29fa4',1,'hott_gam_message::altitude()'],['../structhott__eam__message.html#a559fd41115cc9eebf5b82050a77d0441',1,'hott_eam_message::altitude()'],['../group___p_i_o_s___s_e_n_s_o_r_s.html#ga36e1ee62fc132c0b2c992ef8efc5bb81',1,'pios_sensor_baro_data::altitude()'],['../msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f',1,'altitude():&#160;msp_messages.h'],['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6',1,'altitude():&#160;UAVOFrSKYSensorHubBridge.c']]],

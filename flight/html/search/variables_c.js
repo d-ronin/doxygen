@@ -59,6 +59,7 @@ var searchData=
   ['low_5fbattery_5fdetect',['low_battery_detect',['../unionrfm22b__int__status__2.html#abbe39085a1aaf48d5f60966c9ee707ba',1,'rfm22b_int_status_2']]],
   ['lower_5fid',['lower_id',['../structpios__adc__dev.html#aa77f358fd46e447f8059a7d9497f7445',1,'pios_adc_dev']]],
   ['lowthrottlezerointegral',['lowThrottleZeroIntegral',['../group___stabilization_module.html#gaf67afab9d5822cab800d87ee04512e53',1,'stabilization.c']]],
+  ['lpfilter_5fbutterworth_5ffactors',['lpfilter_butterworth_factors',['../group___tau_labs_math.html#ga20a6f64830b56bb49252c50dc893b93e',1,'lpfilter.c']]],
   ['lsb_5fvoltage',['lsb_voltage',['../structpios__adc__driver.html#a3fb2f04ae44a49d9a6562889979ec82c',1,'pios_adc_driver']]],
   ['ltr2_5fhigh_5fvalue',['ltr2_high_value',['../struct_u_p_s___constant___value.html#a021706a6a3ce57c2098e42d25c91206a',1,'UPS_Constant_Value']]],
   ['ltr2_5flow_5fvalue',['ltr2_low_value',['../struct_u_p_s___constant___value.html#a53f4a5c90f198dacaef8cb6fc333d172',1,'UPS_Constant_Value']]],

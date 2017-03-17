@@ -39,7 +39,6 @@ var stabilization_8c =
     [ "axis_lock_accum", "stabilization_8c.html#gacef7acd86d1d86bb50b2513cdde406db", null ],
     [ "deadbands", "stabilization_8c.html#gaafbd15fed15f3557b1f9e978ffb4a0e1", null ],
     [ "flightStatusUpdated", "stabilization_8c.html#ga611378d03e1993b9a31e0b0d052f4b00", null ],
-    [ "gyro_alpha", "stabilization_8c.html#gaf51ebd613903cfff91be0878961b04cf", null ],
     [ "gyro_filter_updated", "stabilization_8c.html#ga4960117d78c0e4cc1d62243b231109d9", null ],
     [ "ident_wiggle_points", "stabilization_8c.html#gaf23900e05a20ba9fb4c80d4b11337de1", null ],
     [ "lowThrottleZeroIntegral", "stabilization_8c.html#gaf67afab9d5822cab800d87ee04512e53", null ],

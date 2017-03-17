@@ -51,7 +51,6 @@ var group___stabilization_module =
     [ "axis_lock_accum", "group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db", null ],
     [ "deadbands", "group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1", null ],
     [ "flightStatusUpdated", "group___stabilization_module.html#ga611378d03e1993b9a31e0b0d052f4b00", null ],
-    [ "gyro_alpha", "group___stabilization_module.html#gaf51ebd613903cfff91be0878961b04cf", null ],
     [ "gyro_filter_updated", "group___stabilization_module.html#ga4960117d78c0e4cc1d62243b231109d9", null ],
     [ "ident_wiggle_points", "group___stabilization_module.html#gaf23900e05a20ba9fb4c80d4b11337de1", null ],
     [ "lowThrottleZeroIntegral", "group___stabilization_module.html#gaf67afab9d5822cab800d87ee04512e53", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e5d5d39</span>
+   &#160;<span id="projectnumber">6226cbf</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -124,6 +124,7 @@ $(document).ready(function(){initNavTree('sensors_8c.html','');});
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__queue_8h_source.html">pios_queue.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="misc__math_8h_source.html">misc_math.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="lpfilter_8h_source.html">lpfilter.h</a>&quot;</code><br/>
 <code>#include &quot;accels.h&quot;</code><br/>
 <code>#include &quot;attitudeactual.h&quot;</code><br/>
 <code>#include &quot;attitudesettings.h&quot;</code><br/>
@@ -230,6 +231,10 @@ Variables</h2></td></tr>
 <tr class="memitem:ga61642cecabb634fcd906bd4ff95ccbb1"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___sensors.html#gaa4a9d2444da0ad9373dc8d8fc3d851c8">mag_calibration_algo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga61642cecabb634fcd906bd4ff95ccbb1">mag_calibration_algo</a> = <a class="el" href="group___sensors.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8acb8ba365d61808f93588f4f6ab773121">MAG_CALIBRATION_PRELEMARI</a></td></tr>
 <tr class="memdesc:ga61642cecabb634fcd906bd4ff95ccbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the algorithm to try and null out the magnetometer bias error.  <a href="group___sensors.html#ga61642cecabb634fcd906bd4ff95ccbb1">More...</a><br/></td></tr>
 <tr class="separator:ga61642cecabb634fcd906bd4ff95ccbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f3e9805b24998a48de9a217399ffd19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___tau_labs_math.html#ga3562b89ca3d1c3b285bbb5662380ec03">lpfilter_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga1f3e9805b24998a48de9a217399ffd19">gyro_filter</a></td></tr>
+<tr class="separator:ga1f3e9805b24998a48de9a217399ffd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413f356e6361f4b80d0aa6c8e6637f3e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___tau_labs_math.html#ga3562b89ca3d1c3b285bbb5662380ec03">lpfilter_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga413f356e6361f4b80d0aa6c8e6637f3e">accel_filter</a></td></tr>
+<tr class="separator:ga413f356e6361f4b80d0aa6c8e6637f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acquire sensor data from sensors registered with PIOS_Sensors. </p>

@@ -4,6 +4,28 @@ var group___tau_labs_math =
     [ "coordinate_conversions.h", "coordinate__conversions_8h.html", null ],
     [ "pid.c", "pid_8c.html", null ],
     [ "pid.h", "pid_8h.html", null ],
+    [ "lpfilter_biquad_state", "structlpfilter__biquad__state.html", [
+      [ "x1", "group___tau_labs_math.html#gac2531b4191cc45bec2d2d6f695a2b22f", null ],
+      [ "x2", "group___tau_labs_math.html#gaa5031c178516bd2e25bb173207bceda5", null ],
+      [ "y1", "group___tau_labs_math.html#gaa62de048884109136844ca9014881987", null ],
+      [ "y2", "group___tau_labs_math.html#gaa5b29b20fcd28b3971c68163e83b89e3", null ]
+    ] ],
+    [ "lpfilter_biquad", "structlpfilter__biquad.html", [
+      [ "a1", "group___tau_labs_math.html#ga113ae77a5e37c0a78b1b3c1c4457db22", null ],
+      [ "a2", "group___tau_labs_math.html#ga49fb8824c4ef1a6445cbcdb32666c872", null ],
+      [ "b0", "group___tau_labs_math.html#ga0eabfd1d56a95ca51bf850c534ccb573", null ],
+      [ "s", "group___tau_labs_math.html#gadc042e9ff7f58c0d1256444d51935cc2", null ]
+    ] ],
+    [ "lpfilter_first_order", "structlpfilter__first__order.html", [
+      [ "alpha", "group___tau_labs_math.html#gafd2ee53f0d0a73b267349c6e661a210c", null ],
+      [ "prev", "group___tau_labs_math.html#ga8ee8033cc6ef9f70372d306d85b3e307", null ]
+    ] ],
+    [ "lpfilter_state", "structlpfilter__state.html", [
+      [ "biquad", "group___tau_labs_math.html#ga12adaf39563de9883f7f44713b574f84", null ],
+      [ "first_order", "group___tau_labs_math.html#ga7a97a6d3682491f982b2ac3b20850546", null ],
+      [ "order", "group___tau_labs_math.html#ga2471b0607e6e8bd81dc70ed23fc4e3d2", null ],
+      [ "width", "group___tau_labs_math.html#ga6eabd300c7dc9eeafad6b74c7d19bf8e", null ]
+    ] ],
     [ "pid_deadband", "structpid__deadband.html", [
       [ "cubic_weight", "structpid__deadband.html#afea73b3e016be34697b32fa22416d544", null ],
       [ "integrated_response", "structpid__deadband.html#aeffe5348ae1771bf68110f7af7d67138", null ],
@@ -22,9 +44,11 @@ var group___tau_labs_math =
     [ "cast_uint32_t", "group___tau_labs_math.html#ga676fea0678945be0b1da32705b938e1a", null ],
     [ "expapprox", "group___tau_labs_math.html#gaf400ecfa0d2805d9cd0159c47f716740", null ],
     [ "MAX", "group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f", null ],
+    [ "MAX_FILTER_WIDTH", "group___tau_labs_math.html#ga2a6adfb867e0b12469adf0052f333986", null ],
     [ "MIN", "group___tau_labs_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f", null ],
     [ "powapprox", "group___tau_labs_math.html#ga16f6be8c451da8978e1885d0924e0be9", null ],
     [ "sign", "group___tau_labs_math.html#gac740756f75e53153605d2702b30d2a9d", null ],
+    [ "lpfilter_state_t", "group___tau_labs_math.html#ga3562b89ca3d1c3b285bbb5662380ec03", null ],
     [ "bound_min_max", "group___tau_labs_math.html#gae7fa5c4383337339fe17371cd78d7264", null ],
     [ "bound_sym", "group___tau_labs_math.html#gab53f96ff60025bfea084300f2cec575e", null ],
     [ "circular_modulus_deg", "group___tau_labs_math.html#gab7dbfea1a0ae1bd6758c2cb07b278ebf", null ],
@@ -42,6 +66,11 @@ var group___tau_labs_math =
     [ "interpolate_value", "group___tau_labs_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6", null ],
     [ "IS_NOT_FINITE", "group___tau_labs_math.html#gab2cad9810e0c0c09e0988b17159e4d1c", null ],
     [ "linear_interpolate", "group___tau_labs_math.html#gaa491e6b9634fc7e05afd03b8a56ec135", null ],
+    [ "lpfilter_construct_biquads", "group___tau_labs_math.html#gae4503ce34e88755462cdf61616f54a0f", null ],
+    [ "lpfilter_construct_single_biquad", "group___tau_labs_math.html#ga02d55312f9af7bcb6775243ced7e5e5e", null ],
+    [ "lpfilter_create", "group___tau_labs_math.html#gab7e3eb09a69f70eeb359e350d4abb7c1", null ],
+    [ "lpfilter_run", "group___tau_labs_math.html#gad1d279504b7cb05cc2f721854395489f", null ],
+    [ "lpfilter_run_single", "group___tau_labs_math.html#gaf3ad02d229b1a43feb6bc193f82827b5", null ],
     [ "pid_apply", "group___tau_labs_math.html#gad03a357c11d4b4f48d0b53508c134172", null ],
     [ "pid_apply_antiwindup", "group___tau_labs_math.html#gaf54d5f129b61126e45090a00f76a5e5f", null ],
     [ "pid_apply_setpoint", "group___tau_labs_math.html#ga847b03febebbbe586235c561d5de075e", null ],
@@ -67,6 +96,21 @@ var group___tau_labs_math =
     [ "vector3_distances", "group___tau_labs_math.html#ga776eeeaf240601aab0c3544a13116f8b", null ],
     [ "VectorMagnitude", "group___tau_labs_math.html#gaf5edfeac1bff286891d26b8c7fcc9958", null ],
     [ "vectorn_magnitude", "group___tau_labs_math.html#ga620e572440496e3ca154909081f80ebc", null ],
+    [ "a1", "group___tau_labs_math.html#ga113ae77a5e37c0a78b1b3c1c4457db22", null ],
+    [ "a2", "group___tau_labs_math.html#ga49fb8824c4ef1a6445cbcdb32666c872", null ],
+    [ "alpha", "group___tau_labs_math.html#gafd2ee53f0d0a73b267349c6e661a210c", null ],
+    [ "b0", "group___tau_labs_math.html#ga0eabfd1d56a95ca51bf850c534ccb573", null ],
+    [ "biquad", "group___tau_labs_math.html#ga12adaf39563de9883f7f44713b574f84", null ],
     [ "deriv_gamma", "group___tau_labs_math.html#gae44f14e8a865966dcbdaa4cf15a17fb1", null ],
-    [ "deriv_tau", "group___tau_labs_math.html#ga26636197aa5e198e7059dc70218b3e10", null ]
+    [ "deriv_tau", "group___tau_labs_math.html#ga26636197aa5e198e7059dc70218b3e10", null ],
+    [ "first_order", "group___tau_labs_math.html#ga7a97a6d3682491f982b2ac3b20850546", null ],
+    [ "lpfilter_butterworth_factors", "group___tau_labs_math.html#ga20a6f64830b56bb49252c50dc893b93e", null ],
+    [ "order", "group___tau_labs_math.html#ga2471b0607e6e8bd81dc70ed23fc4e3d2", null ],
+    [ "prev", "group___tau_labs_math.html#ga8ee8033cc6ef9f70372d306d85b3e307", null ],
+    [ "s", "group___tau_labs_math.html#gadc042e9ff7f58c0d1256444d51935cc2", null ],
+    [ "width", "group___tau_labs_math.html#ga6eabd300c7dc9eeafad6b74c7d19bf8e", null ],
+    [ "x1", "group___tau_labs_math.html#gac2531b4191cc45bec2d2d6f695a2b22f", null ],
+    [ "x2", "group___tau_labs_math.html#gaa5031c178516bd2e25bb173207bceda5", null ],
+    [ "y1", "group___tau_labs_math.html#gaa62de048884109136844ca9014881987", null ],
+    [ "y2", "group___tau_labs_math.html#gaa5b29b20fcd28b3971c68163e83b89e3", null ]
 ];

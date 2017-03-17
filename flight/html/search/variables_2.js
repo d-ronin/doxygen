@@ -1,6 +1,7 @@
 var searchData=
 [
   ['b',['b',['../struct_w_m_mtype___ellipsoid.html#a6fa136040ff9c95d8681b3ed1522961a',1,'WMMtype_Ellipsoid']]],
+  ['b0',['b0',['../group___tau_labs_math.html#ga0eabfd1d56a95ca51bf850c534ccb573',1,'lpfilter_biquad']]],
   ['bad_5fsilicon_5frev',['BAD_SILICON_REV',['../classpx__uploader_1_1uploader.html#a14f2c40bcd94aa3cf99a6f0295f60ca7',1,'px_uploader::uploader']]],
   ['balternatesetting',['bAlternateSetting',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga9fd5069255e2ed4e8c8bee39fd5c3e19',1,'usb_interface_desc::bAlternateSetting()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga4cdd7aab185365e51a1e722f43073b8c',1,'bAlternateSetting():&#160;pios_usb_defs.h']]],
   ['band_5f5g8_5fa_5ffreqs',['BAND_5G8_A_FREQS',['../group___on_screen_display.html#gaacb0a3a45ae499fcdde7c1cef4e1ef90',1,'BAND_5G8_A_FREQS():&#160;osd_menu.c'],['../group___v_t_x_config.html#gaacb0a3a45ae499fcdde7c1cef4e1ef90',1,'BAND_5G8_A_FREQS():&#160;VTXConfig.c']]],
@@ -19,7 +20,7 @@ var searchData=
   ['batt_5fcapacity',['batt_capacity',['../structhott__esc__message.html#ae8ffa4116d5e352e06bbc7123537110d',1,'hott_esc_message']]],
   ['batt_5fcell_5fcount',['batt_cell_count',['../structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093',1,'frsky_settings']]],
   ['batt_5fvoltage',['batt_voltage',['../structhott__esc__message.html#af7ebf8d6955cd065962308e5cee3ab2c',1,'hott_esc_message']]],
-  ['battery',['Battery',['../structtelemetrydata.html#ae647a3c9245948eebf6f2830de795cf7',1,'telemetrydata::Battery()'],['../structtelemetry__t.html#a34e6302eb3901de4260bca8b688751e5',1,'telemetry_t::battery()']]],
+  ['battery',['battery',['../structtelemetry__t.html#a34e6302eb3901de4260bca8b688751e5',1,'telemetry_t::battery()'],['../structtelemetrydata.html#ae647a3c9245948eebf6f2830de795cf7',1,'telemetrydata::Battery()']]],
   ['battery_5fsettings',['battery_settings',['../structfrsky__settings.html#ae994d1951f0c2fd5588dee779bdfba5a',1,'frsky_settings']]],
   ['battery_5fsettings_5fupdated',['battery_settings_updated',['../group___battery_module.html#ga284f2932eef098230d2a6fd51a16daa3',1,'battery.c']]],
   ['batterytaskhandle',['batteryTaskHandle',['../group___battery_module.html#ga5a5af537fbeabfb8fcb0535af26b6214',1,'battery.c']]],
@@ -59,6 +60,7 @@ var searchData=
   ['binterfacesubclass',['bInterfaceSubClass',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gaf937eb2ea941b0470ccd69ae9c5478ac',1,'usb_interface_desc::bInterfaceSubClass()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga3b3919d1203cd42550d77287f7585595',1,'bInterfaceSubClass():&#160;pios_usb_defs.h']]],
   ['binterval',['bInterval',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga7d36b247562b49fe4cc7824d9ee0894e',1,'usb_endpoint_desc::bInterval()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#gaff92277eea8536f7de1a88d818c91b9e',1,'bInterval():&#160;pios_usb_defs.h']]],
   ['bintpacksof',['bIntPackSOF',['../_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#a6161d02738dc8972c0a221db2cff0ca4',1,'bIntPackSOF():&#160;pios_usb_hid_istr.c'],['../_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#a6161d02738dc8972c0a221db2cff0ca4',1,'bIntPackSOF():&#160;pios_usb_hid_istr.c']]],
+  ['biquad',['biquad',['../group___tau_labs_math.html#ga12adaf39563de9883f7f44713b574f84',1,'lpfilter_state']]],
   ['bit_5fclear_5fdma_5fchannel',['bit_clear_dma_channel',['../group___p_i_o_s.html#ga7fc10daf5a0a80dbcfbdfe666cb4e23e',1,'pios_ws2811_cfg']]],
   ['bit_5fclear_5fdma_5fstream',['bit_clear_dma_stream',['../group___p_i_o_s.html#ga0b5088e99b872982285f4e9e1af14407',1,'pios_ws2811_cfg']]],
   ['bit_5fclear_5fdma_5ftcif',['bit_clear_dma_tcif',['../group___p_i_o_s.html#ga4c537cda0d5a8011079e0eac29666cba',1,'pios_ws2811_cfg']]],
