@@ -1,5 +1,10 @@
 var NAVTREEINDEX25 =
 {
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a10e85c20a054b4f3566daf03ccc5fa95":[1,13,1,56],
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a13ad001bdde7a61d190b9ca6a81a4c0f":[1,13,1,18,9],
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a13ad001bdde7a61d190b9ca6a81a4c0f":[1,13,1,54],
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a1c3d35c6232dd83c8d85688c758a0124":[1,13,1,18,7],
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a1c3d35c6232dd83c8d85688c758a0124":[1,13,1,22],
 "group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a5560869486fcea5ddc5cda1ecfdc8404":[1,13,1,18,0],
 "group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a5560869486fcea5ddc5cda1ecfdc8404":[1,13,1,25],
 "group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a583f8d734e063487063ed71a4651e1f2":[1,13,1,18,3],
@@ -96,8 +101,8 @@ var NAVTREEINDEX25 =
 "group___d_t_fc.html#ga83406cd61f77db51d8a91643bd6c2e98":[1,20,2,61],
 "group___d_t_fc.html#ga83417f60ff58e7cf0ec45ec85dfef380":[1,20,2,122],
 "group___d_t_fc.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[1,20,2,17],
-"group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,130],
 "group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,131],
+"group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,130],
 "group___d_t_fc.html#ga88ebbd46d7ad2cb2374e4886c3194b5e":[1,20,2,38],
 "group___d_t_fc.html#ga88f1b74712df62b9970b6cbc6bb262e9":[1,20,2,21],
 "group___d_t_fc.html#ga89e68cdd07ab84568fe168af24311299":[1,20,2,106],
@@ -244,10 +249,5 @@ var NAVTREEINDEX25 =
 "group___flight.html#ga32778f8663cc696253d516245bd714f3":[1,6,11,3],
 "group___flight.html#ga35893a57c91ac9ba5372576050814ce6":[1,6,11,5],
 "group___flight.html#ga3e235c3d2beb22ca1bb6fe34a04e3003":[1,6,11,10],
-"group___flight.html#ga43963039dc588774f203539cffe35730":[1,6,11,8],
-"group___flight.html#ga4bd4b1dfa55b5e1d0ba02d20116f34fd":[1,6,11,12],
-"group___flight.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[1,6,11,2],
-"group___flight.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[1,6,11,13],
-"group___flight.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[1,6,11,1],
-"group___flight.html#ga8de91fb2d9ca0ce5c53dac0750e99665":[1,6,11,11]
+"group___flight.html#ga43963039dc588774f203539cffe35730":[1,6,11,8]
 };

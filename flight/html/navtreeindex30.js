@@ -1,5 +1,10 @@
 var NAVTREEINDEX30 =
 {
+"group___max7456.html#ga2e6341d8908156f0a4eece3224e84cdb":[1,0,59,16],
+"group___max7456.html#ga3153ee96cf65d9c8cede0a6841e4c88e":[1,0,59,42],
+"group___max7456.html#ga33ed8dbc033ae5dfc8e43905f0642371":[1,0,59,55],
+"group___max7456.html#ga344ba028afb76f610bc32c733a608c1c":[1,0,59,18],
+"group___max7456.html#ga3be2a9237e649b6050cd3753ef4e4b95":[1,0,59,66],
 "group___max7456.html#ga3c8a228e9e65807bb17fef4e063747eb":[1,0,59,9],
 "group___max7456.html#ga3cb67a6d465ea8feace1dc31b9da8e64":[1,0,59,81],
 "group___max7456.html#ga3f00936eee838508aa241856df103926":[1,0,59,28],
@@ -214,8 +219,8 @@ var NAVTREEINDEX30 =
 "group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,7,1,9,1],
 "group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,7,1,342],
 "group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,9,1,9,1],
-"group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,10,0,9,1],
 "group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,9,1,342],
+"group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,10,0,9,1],
 "group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb":[1,10,0,342],
 "group___on_screen_display.html#ga18b208e329c9f5cef77d2980ab66d808":[1,7,1,47],
 "group___on_screen_display.html#ga18b208e329c9f5cef77d2980ab66d808":[1,9,1,47],
@@ -244,10 +249,5 @@ var NAVTREEINDEX30 =
 "group___on_screen_display.html#ga21a331e2b54e863bfba7463047f76ec5":[1,7,1,228],
 "group___on_screen_display.html#ga21a331e2b54e863bfba7463047f76ec5":[1,9,1,228],
 "group___on_screen_display.html#ga21a331e2b54e863bfba7463047f76ec5":[1,10,0,228],
-"group___on_screen_display.html#ga21ace9d1d0b9109882c7f77767c81fdb":[1,7,1,209],
-"group___on_screen_display.html#ga21ace9d1d0b9109882c7f77767c81fdb":[1,9,1,209],
-"group___on_screen_display.html#ga21ace9d1d0b9109882c7f77767c81fdb":[1,10,0,209],
-"group___on_screen_display.html#ga23b02676cf70112aae2b230c3824763e":[1,7,1,68],
-"group___on_screen_display.html#ga23b02676cf70112aae2b230c3824763e":[1,9,1,68],
-"group___on_screen_display.html#ga23b02676cf70112aae2b230c3824763e":[1,10,0,68]
+"group___on_screen_display.html#ga21ace9d1d0b9109882c7f77767c81fdb":[1,7,1,209]
 };

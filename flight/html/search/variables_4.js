@@ -34,6 +34,7 @@ var searchData=
   ['dc',['dc',['../group___p_i_o_s___v_i_d_e_o.html#ga3d1a1845bd2951adc19f62aa1aef7ff4',1,'pios_video_type_cfg']]],
   ['deadbands',['deadbands',['../group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1',1,'stabilization.c']]],
   ['debug',['DEBUG',['../ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c'],['../rs_8c.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c']]],
+  ['decim_5fwiggle_5fpoints',['decim_wiggle_points',['../group___autotuning_module.html#ga89f6b2699dec33baa1e3e66b0b6f5f5e',1,'autotune.c']]],
   ['decimal_5fdate',['decimal_date',['../group___tau_labs_libraries.html#gac303fbab6953ec4fd25d1c6bc6e613e6',1,'WorldMagModel.c']]],
   ['decimalyear',['DecimalYear',['../struct_w_m_mtype___date.html#a68078d5d0181333dcf11e24171a218f2',1,'WMMtype_Date']]],
   ['decl',['Decl',['../struct_w_m_mtype___geo_magnetic_elements.html#a9a93785970d529cbca6172d59ca0d225',1,'WMMtype_GeoMagneticElements']]],

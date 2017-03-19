@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"circqueue_8h.html#af3e8a86cca2be1d4833ab3b7c833cbea":[4,0,0,0,0,1,2],
+"circqueue_8h.html#afca367b5f5dd3c29b41ce02a7ec809e5":[4,0,0,0,0,1,10],
 "circqueue_8h_source.html":[4,0,0,0,0,1],
 "class_bound_min_max.html":[1,27,9],
 "class_bound_sym.html":[1,27,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "dir_617c77061810062cd9f54b3f0814ca28.html":[4,0,0,3,0,1],
 "dir_61b2cbe5156d0ccf6d4a2fa5182a6763.html":[4,0,0,3,3,2],
 "dir_63bd3cd2777f6c90b36f6729ccb56f9b.html":[4,0,0,1,18],
-"dir_647f6d77571261bda2c5d5d2e2120d04.html":[4,0,0,1,31],
-"dir_66202ddad9a58b7b28a00068057c50c2.html":[4,0,0,5,0],
-"dir_6c1afca738176637bc35c9437a1055be.html":[4,0,0,3,13]
+"dir_647f6d77571261bda2c5d5d2e2120d04.html":[4,0,0,1,31]
 };

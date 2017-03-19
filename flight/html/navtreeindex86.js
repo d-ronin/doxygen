@@ -1,5 +1,10 @@
 var NAVTREEINDEX86 =
 {
+"quanton_2board-info_2pios__board_8h.html#ga422d4d808a71d4b756877ac8e2d16255":[4,0,0,3,10,1,2,37],
+"quanton_2board-info_2pios__board_8h.html#ga4c474f882907575649f7df22afea0d65":[4,0,0,3,10,1,2,26],
+"quanton_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a":[4,0,0,3,10,1,2,63],
+"quanton_2board-info_2pios__board_8h.html#ga55974b8a985ecdc9dfed8c0962c36dd8":[4,0,0,3,10,1,2,65],
+"quanton_2board-info_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf":[4,0,0,3,10,1,2,17],
 "quanton_2board-info_2pios__board_8h.html#ga5c6ed92207820d514741140f5dec7f8a":[4,0,0,3,10,1,2,54],
 "quanton_2board-info_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43":[4,0,0,3,10,1,2,16],
 "quanton_2board-info_2pios__board_8h.html#ga5eae9194437f23b68678de2ba9d9ce4a":[4,0,0,3,10,1,2,34],
@@ -56,8 +61,8 @@ var NAVTREEINDEX86 =
 "quanton_2board-info_2usb__conf_8h.html#ga2623e405d022fc76fe6849e7f4d9023c":[4,0,0,3,10,1,3,14],
 "quanton_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[4,0,0,3,10,1,3,12],
 "quanton_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[4,0,0,3,10,1,3,7],
-"quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,3,10,1,3,10],
 "quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,3,10,1,3,9],
+"quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,3,10,1,3,10],
 "quanton_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[4,0,0,3,10,1,3,6],
 "quanton_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[4,0,0,3,10,1,3,0],
 "quanton_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[4,0,0,3,10,1,3,8],
@@ -244,10 +249,5 @@ var NAVTREEINDEX86 =
 "quanton_2fw_2mcuconf_8h.html#a54203015c2973969adee1dd719010d3a":[4,0,0,3,10,2,5,79],
 "quanton_2fw_2mcuconf_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[4,0,0,3,10,2,5,126],
 "quanton_2fw_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[4,0,0,3,10,2,5,139],
-"quanton_2fw_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[4,0,0,3,10,2,5,204],
-"quanton_2fw_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c":[4,0,0,3,10,2,5,77],
-"quanton_2fw_2mcuconf_8h.html#a58e21948e78c6cf50c04e64363637dd4":[4,0,0,3,10,2,5,10],
-"quanton_2fw_2mcuconf_8h.html#a59976b6c28b2561d2b6bd7e3940ea377":[4,0,0,3,10,2,5,146],
-"quanton_2fw_2mcuconf_8h.html#a5a1f7bc818507d43f4d6592bff2ad486":[4,0,0,3,10,2,5,2],
-"quanton_2fw_2mcuconf_8h.html#a5a90d9b62fd7b1a0180c2aec7d00089d":[4,0,0,3,10,2,5,82]
+"quanton_2fw_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[4,0,0,3,10,2,5,204]
 };

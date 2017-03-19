@@ -1,5 +1,10 @@
 var NAVTREEINDEX95 =
 {
+"sparky_2fw_2mcuconf_8h.html#a314cec15b23670096752964ec5caf3ce":[4,0,0,3,14,2,5,31],
+"sparky_2fw_2mcuconf_8h.html#a32a5323ec55bfb3e6590c8346ee76dc4":[4,0,0,3,14,2,5,24],
+"sparky_2fw_2mcuconf_8h.html#a34bf46924b6d9446721c6dd3b5c09ea7":[4,0,0,3,14,2,5,23],
+"sparky_2fw_2mcuconf_8h.html#a360ce89f2744ed7e4ec5789201f557c3":[4,0,0,3,14,2,5,27],
+"sparky_2fw_2mcuconf_8h.html#a3670f3886d02bb3010016bbf0db0db83":[4,0,0,3,14,2,5,74],
 "sparky_2fw_2mcuconf_8h.html#a39e918aab997f42ca310524e74dc44ae":[4,0,0,3,14,2,5,35],
 "sparky_2fw_2mcuconf_8h.html#a3c45031ace768dff11d3791a466a7ad1":[4,0,0,3,14,2,5,16],
 "sparky_2fw_2mcuconf_8h.html#a3f108deab28dba83858c5a6d5089a322":[4,0,0,3,14,2,5,85],
@@ -244,10 +249,5 @@ var NAVTREEINDEX95 =
 "struct_camera_stab__data.html#add11808b571c32002bea3be6620a2ad3":[1,6,6,2,0],
 "struct_camera_stab__data.html#add632a4c8e765cbe0b9b761d76340d5b":[1,6,6,2,2],
 "struct_device.html":[1,13,1,3],
-"struct_event_callback_info.html":[1,6,22,2],
-"struct_event_callback_info.html#a437283aa345859ce2746a744069f63a5":[1,6,22,2,1],
-"struct_event_callback_info.html#acd9f0dd5803da02a4c264a65ebe44647":[1,6,22,2,2],
-"struct_event_callback_info.html#aede25eb5852126792f5a9da9b084a32f":[1,6,22,2,0],
-"struct_event_stats.html":[1,28,0,2],
-"struct_event_stats.html#a14d4a710533bb544b4fe350b842dfc9f":[1,28,0,2,1]
+"struct_event_callback_info.html":[1,6,22,2]
 };

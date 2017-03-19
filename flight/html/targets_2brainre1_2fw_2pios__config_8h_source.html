@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6226cbf</span>
+   &#160;<span id="projectnumber">fdf4263</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -225,35 +225,36 @@ $(document).ready(function(){initNavTree('targets_2brainre1_2fw_2pios__config_8h
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_QUATERNION_STABILIZATION   /* Stabilization options */</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga05d142ee6019a1a7637bcd4be7c37f7e">  127</a></span>&#160;<span class="preprocessor">#define PIOS_GPS_SETS_HOMELOCATION      </span><span class="comment">/* GPS options */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gab0a79b712ecb50093fe0129a7468198f">  128</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gaabf5c613fb366d3da49a87e7114a09e2">  129</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gaf4039c0d196379cbfb36489300f94ffe">  131</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga6e7afec1958cbda03ec47ff50da7b749">  134</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING              1000</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gad3537a058b1f030fb6243c09a2532112">  135</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             500</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gae97115db8cae2e29462308550992c153">  136</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          150</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gab45890a416f5e2177b434d93d89c362f">  137</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         80</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">  138</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           80</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga33b8e7ed32bafe7b1e55e18b832854ce">  139</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or FreeRTOS</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga9be33d810838161edf9412377209a4cf">  152</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gad45c37db5c6056967bcfcef73128a6ae">  154</a></span>&#160;<span class="preprocessor">#define BRAIN</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga867e829c0aaaf0e6f1c0f229b670e71e">  129</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_DECIMATION 2</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gaabf5c613fb366d3da49a87e7114a09e2">  130</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gaf4039c0d196379cbfb36489300f94ffe">  132</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga6e7afec1958cbda03ec47ff50da7b749">  135</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING              1000</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gad3537a058b1f030fb6243c09a2532112">  136</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             500</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gae97115db8cae2e29462308550992c153">  137</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          150</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gab45890a416f5e2177b434d93d89c362f">  138</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         80</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">  139</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           80</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga33b8e7ed32bafe7b1e55e18b832854ce">  140</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or FreeRTOS</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#ga9be33d810838161edf9412377209a4cf">  153</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="group___brain_r_e1.html#gad45c37db5c6056967bcfcef73128a6ae">  155</a></span>&#160;<span class="preprocessor">#define BRAIN</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -8,6 +8,7 @@ var group___brain_r_e1 =
       [ "mco_pin", "group___brain_r_e1.html#ga70668b4c3a5e86a2ce5c7b20934c973a", null ],
       [ "rst_pin", "group___brain_r_e1.html#ga473e1443aaac0b9aa2e72f87c975ee7d", null ]
     ] ],
+    [ "AUTOTUNE_AVERAGING_DECIMATION", "group___brain_r_e1.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
     [ "AUTOTUNE_AVERAGING_MODE", "group___brain_r_e1.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOOTLOADER_PAUSE_DELAY", "group___brain_r_e1.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "BRAIN", "group___brain_r_e1.html#gad45c37db5c6056967bcfcef73128a6ae", null ],
