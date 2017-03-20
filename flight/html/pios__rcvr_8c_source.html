@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">fdf4263</span>
+   &#160;<span id="projectnumber">5277ba8</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -203,32 +203,39 @@ $(document).ready(function(){initNavTree('pios__rcvr_8c_source.html','');});
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#ga659833988d07724d3dfeff4929f423b4">PIOS_RCVR_WaitActivity</a>(uint32_t timeout_ms) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (rcvr_activity) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(rcvr_activity, timeout_ms);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a>(timeout_ms);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaa377fe949ee9b1184d82165b39a7476a">PIOS_RCVR_Active</a>() {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_uS) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(rcvr_activity);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> result = <a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(rcvr_activity, timeout_ms);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span>(!result) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="comment">// If the semaphore times out, update last wake, to try to avoid</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="comment">// resonance due to jitter, when the update rate of the receiver</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">// matches the timeout.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a>(timeout_ms);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaf462f5635dcf49c9ca3c594a7538ad65">PIOS_RCVR_ActiveFromISR</a>() {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaa377fe949ee9b1184d82165b39a7476a">PIOS_RCVR_Active</a>() {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_uS) {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> dont_care;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga2bf3b406b0431606b13238e9b8b0bd13">PIOS_Semaphore_Give_FromISR</a>(rcvr_activity, &amp;dont_care);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(rcvr_activity);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___r_c_v_r.html#gaf462f5635dcf49c9ca3c594a7538ad65">PIOS_RCVR_ActiveFromISR</a>() {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a>(rcvr_last_wake) &gt;= MIN_WAKE_INTERVAL_uS) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> dont_care;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    rcvr_last_wake = <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="group___p_i_o_s___semaphore.html#ga2bf3b406b0431606b13238e9b8b0bd13">PIOS_Semaphore_Give_FromISR</a>(rcvr_activity, &amp;dont_care);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_gad0eb20f09635f32f75dcb6c5430b8764"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a></div><div class="ttdeci">uint32_t PIOS_DELAY_DiffuS(uint32_t raw)</div><div class="ttdoc">Subtract raw time from now and convert to us. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00168">pios_delay.c:168</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
 <div class="ttc" id="structpios__semaphore_html"><div class="ttname"><a href="structpios__semaphore.html">pios_semaphore</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__semaphore_8h_source.html#l00035">pios_semaphore.h:35</a></div></div>
