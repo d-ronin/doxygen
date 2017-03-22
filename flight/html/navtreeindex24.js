@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"group___com_usb_bridge_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[1,6,7,10],
+"group___com_usb_bridge_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[1,6,7,2],
+"group___com_usb_bridge_module.html#ga98167e5e103d76d5ed3ea6820af60478":[1,6,7,13],
+"group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80":[1,6,7,7],
 "group___com_usb_bridge_module.html#gae9d920339ab8c87f41795a2196f7eec9":[1,6,7,6],
 "group___com_usb_bridge_module.html#gaf633010421f36b1aa2d3ef32a2f34bdf":[1,6,7,12],
 "group___constants.html":[1,3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fab5d62dece14ee5e83c171140cbf377e8":[1,13,1,33],
 "group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715":[1,13,1,15,11],
 "group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715":[1,13,1,49],
-"group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fac3e4960bd05471812a158fc40a2bcd54":[1,13,1,15,3],
-"group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fac3e4960bd05471812a158fc40a2bcd54":[1,13,1,29],
-"group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fad77b02b555d20eb5bcd3218a470c2e50":[1,13,1,15,9],
-"group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fad77b02b555d20eb5bcd3218a470c2e50":[1,13,1,27],
-"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a10e85c20a054b4f3566daf03ccc5fa95":[1,13,1,18,2]
+"group___copter_control_b_l.html#gga882a151e21837eb51e9459f7c213918fac3e4960bd05471812a158fc40a2bcd54":[1,13,1,15,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX50 =
 {
+"group___play_uav_osd.html#ga226ad66a84c916d8f83bcd92598d259c":[1,23,1,64],
+"group___play_uav_osd.html#ga226ad66a84c916d8f83bcd92598d259c":[1,26,0,64],
+"group___play_uav_osd.html#ga229b7b50677f467fa05b5dc684065cb6":[1,19,0,17],
+"group___play_uav_osd.html#ga229b7b50677f467fa05b5dc684065cb6":[1,23,1,17],
 "group___play_uav_osd.html#ga229b7b50677f467fa05b5dc684065cb6":[1,26,0,17],
 "group___play_uav_osd.html#ga2439a3372d8825b721a19c1bba571b0a":[1,19,0,55],
 "group___play_uav_osd.html#ga2439a3372d8825b721a19c1bba571b0a":[1,23,1,55],
@@ -245,9 +249,5 @@ var NAVTREEINDEX50 =
 "group___play_uav_osd.html#gab63edc180a907efe4bad610bbb6c2224":[1,23,1,133],
 "group___play_uav_osd.html#gab63edc180a907efe4bad610bbb6c2224":[1,26,0,133],
 "group___play_uav_osd.html#gab98ad41f0f40e6edd46ea98d46edb0af":[1,19,0,22],
-"group___play_uav_osd.html#gab98ad41f0f40e6edd46ea98d46edb0af":[1,23,1,22],
-"group___play_uav_osd.html#gab98ad41f0f40e6edd46ea98d46edb0af":[1,26,0,22],
-"group___play_uav_osd.html#gaba34640b239b01884e1a4b0b3fe16c31":[1,19,0,119],
-"group___play_uav_osd.html#gaba34640b239b01884e1a4b0b3fe16c31":[1,23,1,119],
-"group___play_uav_osd.html#gaba34640b239b01884e1a4b0b3fe16c31":[1,26,0,119]
+"group___play_uav_osd.html#gab98ad41f0f40e6edd46ea98d46edb0af":[1,23,1,22]
 };

@@ -15,6 +15,9 @@ var targets_2aq32_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_COM", "targets_2aq32_2fw_2pios__config_8h.html#gaf8a678a8ce2142cdd87b127b78a89add", null ],
     [ "PIOS_INCLUDE_COM_FLEXI", "targets_2aq32_2fw_2pios__config_8h.html#ga03981e41d457e7919feb97b60bd62211", null ],
     [ "PIOS_INCLUDE_COM_TELEM", "targets_2aq32_2fw_2pios__config_8h.html#gab42cb0e98e393accdfa60be5698c2b64", null ],
+    [ "PIOS_INCLUDE_DAC", "targets_2aq32_2fw_2pios__config_8h.html#ga639f6a1cd17b535b17f2e4ae80835e7d", null ],
+    [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "targets_2aq32_2fw_2pios__config_8h.html#ga90d918d22c85e3b41434233eac638116", null ],
+    [ "PIOS_INCLUDE_DAC_FSK", "targets_2aq32_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
     [ "PIOS_INCLUDE_DSM", "targets_2aq32_2fw_2pios__config_8h.html#ga543ec4a4aa105d7090ebe2dd3a4dad3b", null ],
     [ "PIOS_INCLUDE_EXTI", "targets_2aq32_2fw_2pios__config_8h.html#gae97f0380f771f6caf94de4982ab00f8c", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2aq32_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
@@ -43,7 +46,6 @@ var targets_2aq32_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_MSP_BRIDGE", "targets_2aq32_2fw_2pios__config_8h.html#ga226ad66a84c916d8f83bcd92598d259c", null ],
     [ "PIOS_INCLUDE_OPENLOG", "targets_2aq32_2fw_2pios__config_8h.html#ga7cdda1c4d728fde7a9771add071a3ff3", null ],
     [ "PIOS_INCLUDE_PPM", "targets_2aq32_2fw_2pios__config_8h.html#ga17d0ce1de0a34c9da0f230944ff38874", null ],
-    [ "PIOS_INCLUDE_PWM", "targets_2aq32_2fw_2pios__config_8h.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
     [ "PIOS_INCLUDE_RCVR", "targets_2aq32_2fw_2pios__config_8h.html#gac34deb93cfe0b86c0c3f3fdd297af181", null ],
     [ "PIOS_INCLUDE_RTC", "targets_2aq32_2fw_2pios__config_8h.html#gaa16397b163ac65bc5fc212b03e69dfa8", null ],
     [ "PIOS_INCLUDE_SBUS", "targets_2aq32_2fw_2pios__config_8h.html#gad90558cccd143e6732c04e78f1dc3c54", null ],
@@ -60,8 +62,10 @@ var targets_2aq32_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_USB_CDC", "targets_2aq32_2fw_2pios__config_8h.html#ga259509d5729961139b455f83b21406a3", null ],
     [ "PIOS_INCLUDE_USB_HID", "targets_2aq32_2fw_2pios__config_8h.html#ga71ac5951782a849bcc916fe21f1df092", null ],
     [ "PIOS_INCLUDE_WDG", "targets_2aq32_2fw_2pios__config_8h.html#gac32d1b30633c310fbeea61674a514850", null ],
+    [ "PIOS_INCLUDE_WS2811", "targets_2aq32_2fw_2pios__config_8h.html#ga2989b6f1854d52ff08b9933bfb9b35fd", null ],
     [ "PIOS_TELEM_PRIORITY_QUEUE", "targets_2aq32_2fw_2pios__config_8h.html#ga10b6d602d36a03da82e31f6eff2e0a83", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2aq32_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ],
     [ "REVOLUTION", "targets_2aq32_2fw_2pios__config_8h.html#ga57eece07b3e190605072adb6c7072917", null ],
+    [ "SYSTEMMOD_RGBLED_SUPPORT", "targets_2aq32_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "WDG_STATS_DIAGNOSTICS", "targets_2aq32_2fw_2pios__config_8h.html#ga92db595596a0136d6e663f929418cbf4", null ]
 ];

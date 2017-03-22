@@ -1,5 +1,9 @@
 var NAVTREEINDEX75 =
 {
+"pios__lis3mdl__priv_8h.html#gad4c5fca856f01f51d862bf9c47f48f43":[4,0,0,2,1,58,14],
+"pios__lis3mdl__priv_8h.html#gad849780a473d15a2d9bc6439ec499996":[4,0,0,2,1,58,35],
+"pios__lis3mdl__priv_8h.html#gadc5ed1ff045bc39af1f716aaea2cfd60":[4,0,0,2,1,58,29],
+"pios__lis3mdl__priv_8h.html#gade4f38489372a239301487e56636975b":[4,0,0,2,1,58,23],
 "pios__lis3mdl__priv_8h.html#gaf4d9bc25bd50529defd7b749dfbc86a9":[4,0,0,2,1,58,26],
 "pios__lis3mdl__priv_8h.html#gaf50fd6dbeecde97126419fccc0121fed":[4,0,0,2,1,58,6],
 "pios__lis3mdl__priv_8h.html#gaf759b7dcce469d3b7db76379bcb7637b":[4,0,0,2,1,58,30],
@@ -245,9 +249,5 @@ var NAVTREEINDEX75 =
 "pios__mpu60x0_8h.html#ga2b3d983c8a9f0ea20e2daf5e7e5200ba":[4,0,0,2,1,64,28],
 "pios__mpu60x0_8h.html#ga2c103668b87a7c7dfb6978f0b3f4053d":[4,0,0,2,1,64,8],
 "pios__mpu60x0_8h.html#ga30171e585a82a79181feb838b09305c5":[4,0,0,2,1,64,29],
-"pios__mpu60x0_8h.html#ga30ff56cd961001090cd9340b11b9ccd8":[4,0,0,2,1,64,19],
-"pios__mpu60x0_8h.html#ga36ecd0af959adc58c097b28fdd32dc98":[4,0,0,2,1,64,33],
-"pios__mpu60x0_8h.html#ga3aeb87b7c8c930b265c1cd354750e6b3":[4,0,0,2,1,64,36],
-"pios__mpu60x0_8h.html#ga3c3e42e078693f6d32be987d3a5805d3":[4,0,0,2,1,64,25],
-"pios__mpu60x0_8h.html#ga3d4b4107c5406bd9601b6e0d340903d7":[4,0,0,2,1,64,18]
+"pios__mpu60x0_8h.html#ga30ff56cd961001090cd9340b11b9ccd8":[4,0,0,2,1,64,19]
 };

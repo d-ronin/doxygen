@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"group___autotuning_module.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aaaf059a2d0fa090f804f246b0c8ffdc89":[1,6,4,12,3],
+"group___battery_module.html":[1,6,5],
+"group___battery_module.html#ga15a98c2af1d0d0351b8b870c68f889f8":[1,6,5,5],
+"group___battery_module.html#ga284f2932eef098230d2a6fd51a16daa3":[1,6,5,8],
 "group___battery_module.html#ga578ae02a5a7f4b77431f4e4bcb5cc121":[1,6,5,4],
 "group___battery_module.html#ga5a5af537fbeabfb8fcb0535af26b6214":[1,6,5,9],
 "group___battery_module.html#ga6e07fcdcbfd804ec4554e366808d38d2":[1,6,5,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX21 =
 "group___brain_f_p_v-_r_e1.html#gabed34fab9b2b2c4c92ecc825c75c9244":[1,21,0,49],
 "group___brain_f_p_v-_r_e1.html#gabf39f1bc59b5af7e8f138bb394770300":[1,21,0,21],
 "group___brain_f_p_v-_r_e1.html#gac040f05fa048688ee0269c2768698a14":[1,21,0,56],
-"group___brain_f_p_v-_r_e1.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[1,21,0,50],
-"group___brain_f_p_v-_r_e1.html#gaca770eaaaa3f1a7e1d64128a50e5680f":[1,21,0,65],
-"group___brain_f_p_v-_r_e1.html#gacc9b34fbd61773571dbe45ac3a3ca081":[1,21,0,14],
-"group___brain_f_p_v-_r_e1.html#gacd240b3acb49442511a220647c7d2e4f":[1,21,0,10],
-"group___brain_f_p_v-_r_e1.html#gad59135d54dcccdf2854a3b39fb0494f5":[1,21,0,23]
+"group___brain_f_p_v-_r_e1.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[1,21,0,50]
 };
