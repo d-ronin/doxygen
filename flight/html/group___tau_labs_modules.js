@@ -14,7 +14,6 @@ var group___tau_labs_modules =
     [ "Stats Module", "group___flight.html", "group___flight" ],
     [ "GeoFence Module", "group___geo_fence.html", "group___geo_fence" ],
     [ "GPS Module", "group___g_p_s_module.html", "group___g_p_s_module" ],
-    [ "Path follower for ground based vehicles", "group___ground_path_follower.html", "group___ground_path_follower" ],
     [ "Logging Module", "group___logging.html", "group___logging" ],
     [ "Control Module", "group___control.html", "group___control" ],
     [ "Path Planner Module", "group___path_planner_module.html", "group___path_planner_module" ],

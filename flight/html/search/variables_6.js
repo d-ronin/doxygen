@@ -48,7 +48,7 @@ var searchData=
   ['flight_5ftime',['flight_time',['../structtelemetry__t.html#aa02c5d25a673fe2c67f9009736c31d37',1,'telemetry_t']]],
   ['flightstatstaskhandle',['flightStatsTaskHandle',['../group___flight.html#ga3e235c3d2beb22ca1bb6fe34a04e3003',1,'flightstatsmodule.c']]],
   ['flightstatus',['FlightStatus',['../structtelemetrydata.html#a2fe47f67a9d625f0e82acb2c737a5f48',1,'telemetrydata']]],
-  ['flightstatusupdated',['flightStatusUpdated',['../group___actuator_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;actuator.c'],['../group___stabilization_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;stabilization.c']]],
+  ['flightstatusupdated',['flightStatusUpdated',['../group___actuator_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;actuator.c'],['../group___stabilization_module.html#gaee62cd2c02fc5aa987797d1137dbf4ca',1,'flightStatusUpdated():&#160;stabilization.c']]],
   ['fn',['fn',['../structrtc__callback__entry.html#a5e02e3a7544f42e127349a18c178be03',1,'rtc_callback_entry']]],
   ['fn_5farg',['fn_arg',['../structfrsky__value__item.html#a8cc5897ab5ab746885f4d91c6d88e96d',1,'frsky_value_item']]],
   ['fn_5fminit',['fn_minit',['../structinitmodule__t.html#ada4d22cb004c06a158b05703774113a0',1,'initmodule_t']]],

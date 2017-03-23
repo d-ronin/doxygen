@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">55a5eab</span>
+   &#160;<span id="projectnumber">ba4f099</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -930,6 +930,9 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 <li>UPDATE_RATE_MS
 : <a class="el" href="group___path_planner_module.html#ga442eca6e635d4bd239fecfe80432799b">pathplanner.c</a>
 </li>
+<li>update_settings()
+: <a class="el" href="group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd">stabilization.c</a>
+</li>
 <li>update_stabilization_desired()
 : <a class="el" href="group___control.html#gaf65ecfe2872f7707121f85894712225e">transmitter_control.c</a>
 </li>
@@ -948,14 +951,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 <li>updateAttitudeINSGPS()
 : <a class="el" href="group___attitude_module.html#gad63d3cf62c303f66aea711afbdc6edba">attitude.c</a>
 </li>
-<li>updateEndpointVelocity()
-: <a class="el" href="group___ground_path_follower.html#ga3da7ef60de2024350218231f5441e88c">groundpathfollower.c</a>
-</li>
 <li>updateFixedDesiredAttitude()
 : <a class="el" href="group___fixed_wing_path_follower.html#ga8ccb5c30c6fb87d076c41d1b5f472a5d">fixedwingpathfollower.c</a>
-</li>
-<li>updateGroundDesiredAttitude()
-: <a class="el" href="group___ground_path_follower.html#ga4e633f1902c2a1b19639fc22d4ccf77a">groundpathfollower.c</a>
 </li>
 <li>UPDATEMODE_MANUAL
 : <a class="el" href="uavobjectmanager_8h.html#afd571f69747daf7681eb869270e27208a12e805e1980a6c1db387c6dd64899211">uavobjectmanager.h</a>
@@ -971,14 +968,12 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 </li>
 <li>updateNedAccel()
 : <a class="el" href="group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">attitude.c</a>
-, <a class="el" href="group___ground_path_follower.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">groundpathfollower.c</a>
 </li>
 <li>updateObject()
 : <a class="el" href="group___telemetry_module.html#gac98fcb58fb5d51626ffda269c41404c3">telemetry.c</a>
 </li>
 <li>updatePathVelocity()
 : <a class="el" href="group___fixed_wing_path_follower.html#ga866a93431f322ad04c66f56dcf589fa3">fixedwingpathfollower.c</a>
-, <a class="el" href="group___ground_path_follower.html#ga866a93431f322ad04c66f56dcf589fa3">groundpathfollower.c</a>
 </li>
 <li>updatePIDs()
 : <a class="el" href="group___tx_p_i_d_module.html#gaf8393d7267577ee01fd7083983d03bfb">txpid.c</a>
@@ -999,12 +994,12 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___system_module.html#gaee0f14515d88d6cdfba7968c0ab4dc58">systemmod.c</a>
 </li>
 <li>updateSettings()
-: <a class="el" href="group___u_a_v_o_mavlink_bridge.html#gad0b9bd8f45359133da342c354426cb80">UAVOMavlinkBridge.c</a>
-, <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
+: <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
 , <a class="el" href="group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80">GPS.c</a>
 , <a class="el" href="group___logging.html#gad0b9bd8f45359133da342c354426cb80">logging.c</a>
 , <a class="el" href="group___radio_com_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">RadioComBridge.c</a>
 , <a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">telemetry.c</a>
+, <a class="el" href="group___u_a_v_o_mavlink_bridge.html#gad0b9bd8f45359133da342c354426cb80">UAVOMavlinkBridge.c</a>
 </li>
 <li>updateStats()
 : <a class="el" href="group___system_module.html#ga8bb5aa227c84456ab4205dd2fc89816e">systemmod.c</a>
@@ -1093,9 +1088,9 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 <li>USART1_EXTI25_IRQHandler
 : <a class="el" href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a9f42399f6862a58b1ec2976a9cb1a247">pios_chibios_transition_priv.h</a>
 </li>
-<li>USART1_IRQHandler
-: <a class="el" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a23182c2feafd217668e6b37c126512a1">pios_chibios_transition_priv.h</a>
-, <a class="el" href="group___flying_p_i_o.html#ga7139cd4baabbbcbab0c1fe6d7d4ae1cc">main.c</a>
+<li>USART1_IRQHandler()
+: <a class="el" href="group___flying_p_i_o.html#ga7139cd4baabbbcbab0c1fe6d7d4ae1cc">main.c</a>
+, <a class="el" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a23182c2feafd217668e6b37c126512a1">pios_chibios_transition_priv.h</a>
 </li>
 <li>USART2_EXTI26_IRQHandler
 : <a class="el" href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ae3a1b49a57210602d1b832e2d3b5287b">pios_chibios_transition_priv.h</a>
@@ -1140,7 +1135,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___telemetry_module.html#ga2b77885d3b4992f77992bf84113980d6">telemetry.c</a>
 </li>
 <li>USB_Cable_Config()
-: <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#aa99b8eac23843be0bca036fae722c788">pios_usb_hid_pwr.c</a>
+: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#aa99b8eac23843be0bca036fae722c788">pios_usb_hid_pwr.c</a>
 </li>
 <li>USB_CDC_CONTROL_LINE_STATE_DTE_PRESENT
 : <a class="el" href="group___p_i_o_s___u_s_b___c_o_m.html#gab0c043a975b4d128b2e2f73ab0557113">pios_usb_cdc_priv.h</a>
@@ -1317,13 +1312,13 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="pios__usb__hid__istr_8h.html#ab084f8c2574dd1fef2ef68123f5e90ab">pios_usb_hid_istr.h</a>
 </li>
 <li>usb_lang_id
-: <a class="el" href="group___sparky_b_l.html#gae0f4171e328334a837e94417dfe669a7">pios_usb_board_data.c</a>
+: <a class="el" href="group___sparky2.html#gae0f4171e328334a837e94417dfe669a7">pios_usb_board_data.c</a>
 </li>
 <li>USB_LANGID_ENGLISH_US
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaeaaf5b237f2f037d39d943ac4816afd0">pios_usb_defs.h</a>
 </li>
 <li>USB_LED_OFF
-: <a class="el" href="group___pip_xtreme.html#ga132bbd1ad203692acb9be1d7234bf655">pios_board.h</a>
+: <a class="el" href="group___d_t_fc.html#ga132bbd1ad203692acb9be1d7234bf655">pios_board.h</a>
 </li>
 <li>USB_LED_ON
 : <a class="el" href="group___pip_xtreme.html#gaf3768e561e7395f80d0558515c972a7c">pios_board.h</a>
@@ -1332,9 +1327,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___d_t_fc.html#ga99ee0fa132865acda6cc6efb09e85043">pios_board.h</a>
 </li>
 <li>USB_LP_CAN1_RX0_IRQHandler()
-: <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#af57bde854fa2b396f29664995a502b19">pios_usb_hid_istr.c</a>
+: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#af57bde854fa2b396f29664995a502b19">pios_usb_hid_istr.c</a>
 , <a class="el" href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a3c7ceb2996902190a3f28e169e247f5b">pios_chibios_transition_priv.h</a>
-, <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#af57bde854fa2b396f29664995a502b19">pios_usb_hid_istr.c</a>
 </li>
 <li>USB_LP_IRQHandler
 : <a class="el" href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ab5032057a517201938fc126d12690f4e">pios_chibios_transition_priv.h</a>
@@ -1376,7 +1370,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___u_s_b___c_o_n_f___exported___defines.html#ga6f747c70ca4e7bed8767794904c3ee5c">usb_conf.h</a>
 </li>
 <li>usb_product_id
-: <a class="el" href="group___d_t_fc.html#ga10c1302b8a7bf9dcf062d274210f6669">pios_usb_board_data.c</a>
+: <a class="el" href="group___pip_xtreme_b_l.html#gaa983a568a9ffa38ea9c5d12b40cc8177">pios_usb_board_data.c</a>
 </li>
 <li>USB_REQ_CLEAR_FEATURE
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gga656cd9a1af7abe6ec812f6ee50b223f9a3e7df41451462e9647ea51127b1029cb">pios_usb_defs.h</a>
@@ -1436,7 +1430,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga71855621792f72443ed5497b313a2517">pios_usb_defs.h</a>
 </li>
 <li>usb_serial_number
-: <a class="el" href="group___aq32_b_l.html#ga7fb0a04d4a254721b671a62407337538">pios_usb_board_data.c</a>
+: <a class="el" href="group___seppuku.html#ga7fb0a04d4a254721b671a62407337538">pios_usb_board_data.c</a>
 </li>
 <li>usb_standard_requests
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga656cd9a1af7abe6ec812f6ee50b223f9">pios_usb_defs.h</a>
@@ -1457,7 +1451,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga05f051e48c96e9d6d2e05804c8023fe2">pios_usbhook.h</a>
 </li>
 <li>usb_vendor_id
-: <a class="el" href="group___d_t_fc.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf">pios_usb_board_data.c</a>
+: <a class="el" href="group__lux.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf">pios_usb_board_data.c</a>
 </li>
 <li>USB_WKUP_IRQHandler
 : <a class="el" href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a4d12138b34d2481fd52e3679197b5956">pios_chibios_transition_priv.h</a>

@@ -7,6 +7,5 @@ var searchData=
   ['gps_2ec',['GPS.c',['../_g_p_s_8c.html',1,'']]],
   ['gps_2eh',['GPS.h',['../_g_p_s_8h.html',1,'']]],
   ['gps_5fairspeed_2ec',['gps_airspeed.c',['../gps__airspeed_8c.html',1,'']]],
-  ['gps_5fairspeed_2eh',['gps_airspeed.h',['../gps__airspeed_8h.html',1,'']]],
-  ['groundpathfollower_2ec',['groundpathfollower.c',['../groundpathfollower_8c.html',1,'']]]
+  ['gps_5fairspeed_2eh',['gps_airspeed.h',['../gps__airspeed_8h.html',1,'']]]
 ];

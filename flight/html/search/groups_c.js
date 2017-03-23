@@ -1,7 +1,6 @@
 var searchData=
 [
   ['programmed_2dio_20expansion_20board_20target',['Programmed-IO expansion board target',['../group___flying_p_i_o.html',1,'']]],
-  ['path_20follower_20for_20ground_20based_20vehicles',['Path follower for ground based vehicles',['../group___ground_path_follower.html',1,'']]],
   ['pios_20max7456_20driver',['PiOS MAX7456 Driver',['../group___max7456.html',1,'']]],
   ['protocol_20library',['Protocol Library',['../group___m_s_p.html',1,'']]],
   ['path_20planner_20module',['Path Planner Module',['../group___path_planner_module.html',1,'']]],

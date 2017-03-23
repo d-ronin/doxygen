@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">55a5eab</span>
+   &#160;<span id="projectnumber">ba4f099</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -297,257 +297,251 @@ $(document).ready(function(){initNavTree('configmodulewidget_8cpp_source.html','
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (objName.compare(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">LoggingSettings::NAME</a>) == 0) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        enableLoggingTab(success &amp;&amp; moduleSettings-&gt;getAdminState_Logging() == ModuleSettings::ADMINSTATE_ENABLED);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// indicate that we can&#39;t tell which modules are running when taskinfo isn&#39;t available</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> haveTaskInfo = taskInfo-&gt;getIsPresentOnHardware();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    ui-&gt;lblAutoHaveTaskInfo-&gt;setVisible(haveTaskInfo);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    ui-&gt;lblAutoNoTaskInfo-&gt;setVisible(!haveTaskInfo);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    ui-&gt;gbAutoModules-&gt;setEnabled(haveTaskInfo);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::toggleBatteryMonitoringPin()</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (!ui-&gt;gb_measureVoltage-&gt;isChecked())</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        ui-&gt;cbVoltagePin-&gt;setCurrentIndex(ui-&gt;cbVoltagePin-&gt;findText(<span class="stringliteral">&quot;NONE&quot;</span>));</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">if</span> (!ui-&gt;gb_measureCurrent-&gt;isChecked())</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        ui-&gt;cbCurrentPin-&gt;setCurrentIndex(ui-&gt;cbCurrentPin-&gt;findText(<span class="stringliteral">&quot;NONE&quot;</span>));</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::toggleBatteryMonitoringGb()</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;cbVoltagePin-&gt;currentText().compare(<span class="stringliteral">&quot;NONE&quot;</span>) != 0)</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        ui-&gt;gb_measureVoltage-&gt;setChecked(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        ui-&gt;gb_measureVoltage-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::toggleBatteryMonitoringPin()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> (!ui-&gt;gb_measureVoltage-&gt;isChecked())</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        ui-&gt;cbVoltagePin-&gt;setCurrentIndex(ui-&gt;cbVoltagePin-&gt;findText(<span class="stringliteral">&quot;NONE&quot;</span>));</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> (!ui-&gt;gb_measureCurrent-&gt;isChecked())</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        ui-&gt;cbCurrentPin-&gt;setCurrentIndex(ui-&gt;cbCurrentPin-&gt;findText(<span class="stringliteral">&quot;NONE&quot;</span>));</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::toggleBatteryMonitoringGb()</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;cbVoltagePin-&gt;currentText().compare(<span class="stringliteral">&quot;NONE&quot;</span>) != 0)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        ui-&gt;gb_measureVoltage-&gt;setChecked(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        ui-&gt;gb_measureVoltage-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;cbCurrentPin-&gt;currentText().compare(<span class="stringliteral">&quot;NONE&quot;</span>) != 0)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        ui-&gt;gb_measureCurrent-&gt;setChecked(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        ui-&gt;gb_measureCurrent-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;cbCurrentPin-&gt;currentText().compare(<span class="stringliteral">&quot;NONE&quot;</span>) != 0)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        ui-&gt;gb_measureCurrent-&gt;setChecked(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        ui-&gt;gb_measureCurrent-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateAirspeedGroupbox(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    Q_UNUSED(obj);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    AirspeedSettings *airspeedSettings;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    AirspeedSettings::DataFields airspeedSettingsData;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    airspeedSettingsData = airspeedSettings-&gt;getData();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    ui-&gt;gb_airspeedGPS-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    ui-&gt;gb_airspeedPitot-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">if</span> (airspeedSettingsData.AirspeedSensorType == AirspeedSettings::AIRSPEEDSENSORTYPE_GPSONLY) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        ui-&gt;gb_airspeedGPS-&gt;setChecked(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;         ui-&gt;gb_airspeedPitot-&gt;setChecked(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTypeGPS(<span class="keywordtype">bool</span> checked)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (checked){</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        AirspeedSettings *airspeedSettings;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        AirspeedSettings::DataFields airspeedSettingsData;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        airspeedSettingsData = airspeedSettings-&gt;getData();</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        airspeedSettingsData.AirspeedSensorType = AirspeedSettings::AIRSPEEDSENSORTYPE_GPSONLY;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        airspeedSettings-&gt;setData(airspeedSettingsData);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTypePitot(<span class="keywordtype">bool</span> checked)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">if</span> (checked){</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        AirspeedSettings *airspeedSettings;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        AirspeedSettings::DataFields airspeedSettingsData;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        airspeedSettingsData = airspeedSettings-&gt;getData();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        airspeedSettingsData.AirspeedSensorType = AirspeedSettings::AIRSPEEDSENSORTYPE_EAGLETREEAIRSPEEDV3;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        airspeedSettings-&gt;setData(airspeedSettingsData);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableBatteryTab(<span class="keywordtype">bool</span> enabled)</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a> = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabBattery);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTab(<span class="keywordtype">bool</span> enabled)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabAirspeed);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableHoTTTelemetryTab(<span class="keywordtype">bool</span> enabled)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabHoTTTelemetry);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableGpsTab(<span class="keywordtype">bool</span> enabled)</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabGPS);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx, enabled);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableLoggingTab(<span class="keywordtype">bool</span> enabled)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabLogging);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx, enabled);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::refreshAdcNames(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;{</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    QStringList names;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = <a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (board)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        names = board-&gt;<a class="code" href="group___core_plugin.html#ga65e348e3dfcb1d2dde42c7e7fb0700df">getAdcNames</a>();</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (names.isEmpty())</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt;= 8; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        QString name;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; names.length())</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            name = names[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] + QString(<span class="stringliteral">&quot; (ADC%1)&quot;</span>).arg(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            name = QString(<span class="stringliteral">&quot;N/A (ADC%1)&quot;</span>).arg(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (i &lt; ui-&gt;cbVoltagePin-&gt;count())</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            ui-&gt;cbVoltagePin-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, name);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (i &lt; ui-&gt;cbCurrentPin-&gt;count())</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            ui-&gt;cbCurrentPin-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, name);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageRatio()</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    ui-&gt;sb_voltageFactor-&gt;setValue(1000.0 / ui-&gt;sb_voltageRatio-&gt;value());</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageFactor()</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;{</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    ui-&gt;sb_voltageRatio-&gt;setValue(1000.0 / ui-&gt;sb_voltageFactor-&gt;value());</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageFactorFromUavo(<span class="keywordtype">float</span> value)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    ui-&gt;sb_voltageRatio-&gt;setValue(1000.0 / (<span class="keywordtype">double</span>)value);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::autoCellDetectionToggled(<span class="keywordtype">bool</span> checked)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    ui-&gt;sbMaxCellVoltage-&gt;setEnabled(checked);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    ui-&gt;lblMaxCellVoltage-&gt;setEnabled(checked);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    ui-&gt;sb_numBatteryCells-&gt;setEnabled(!checked);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    ui-&gt;lblNumBatteryCells-&gt;setEnabled(!checked);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">if</span> (checked) {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">if</span> (ui-&gt;sbMaxCellVoltage-&gt;property(<span class="stringliteral">&quot;ValueBackup&quot;</span>).isValid())</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            ui-&gt;sbMaxCellVoltage-&gt;setValue(ui-&gt;sbMaxCellVoltage-&gt;property(<span class="stringliteral">&quot;ValueBackup&quot;</span>).toDouble());</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            ui-&gt;sbMaxCellVoltage-&gt;setValue(4.2); <span class="comment">// TODO: set this to default UAVO val instead of hardcoding?</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        ui-&gt;sbMaxCellVoltage-&gt;setProperty(<span class="stringliteral">&quot;ValueBackup&quot;</span>, ui-&gt;sbMaxCellVoltage-&gt;value());</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        ui-&gt;sbMaxCellVoltage-&gt;setValue(0.0);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::maxCellVoltageChanged(<span class="keywordtype">double</span> value)</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span> (value &gt; 0.0) {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">if</span> (!ui-&gt;gbAutoCellDetection-&gt;isChecked())</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            ui-&gt;gbAutoCellDetection-&gt;setChecked(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui-&gt;gbAutoCellDetection-&gt;isChecked()) {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        ui-&gt;gbAutoCellDetection-&gt;setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateAirspeedGroupbox(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    Q_UNUSED(obj);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    AirspeedSettings *airspeedSettings;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    AirspeedSettings::DataFields airspeedSettingsData;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    airspeedSettingsData = airspeedSettings-&gt;getData();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    ui-&gt;gb_airspeedGPS-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    ui-&gt;gb_airspeedPitot-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (airspeedSettingsData.AirspeedSensorType == AirspeedSettings::AIRSPEEDSENSORTYPE_GPSONLY) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        ui-&gt;gb_airspeedGPS-&gt;setChecked(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;         ui-&gt;gb_airspeedPitot-&gt;setChecked(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTypeGPS(<span class="keywordtype">bool</span> checked)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (checked){</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        AirspeedSettings *airspeedSettings;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        AirspeedSettings::DataFields airspeedSettingsData;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        airspeedSettingsData = airspeedSettings-&gt;getData();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        airspeedSettingsData.AirspeedSensorType = AirspeedSettings::AIRSPEEDSENSORTYPE_GPSONLY;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        airspeedSettings-&gt;setData(airspeedSettingsData);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTypePitot(<span class="keywordtype">bool</span> checked)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (checked){</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        AirspeedSettings *airspeedSettings;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        airspeedSettings = AirspeedSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        AirspeedSettings::DataFields airspeedSettingsData;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        airspeedSettingsData = airspeedSettings-&gt;getData();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        airspeedSettingsData.AirspeedSensorType = AirspeedSettings::AIRSPEEDSENSORTYPE_EAGLETREEAIRSPEEDV3;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        airspeedSettings-&gt;setData(airspeedSettingsData);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableBatteryTab(<span class="keywordtype">bool</span> enabled)</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a> = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabBattery);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableAirspeedTab(<span class="keywordtype">bool</span> enabled)</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabAirspeed);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableHoTTTelemetryTab(<span class="keywordtype">bool</span> enabled)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabHoTTTelemetry);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx,enabled);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableGpsTab(<span class="keywordtype">bool</span> enabled)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabGPS);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx, enabled);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::enableLoggingTab(<span class="keywordtype">bool</span> enabled)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(ui-&gt;tabLogging);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    ui-&gt;moduleTab-&gt;setTabEnabled(idx, enabled);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::refreshAdcNames(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    QStringList names;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = <a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">if</span> (board)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        names = board-&gt;<a class="code" href="group___core_plugin.html#ga65e348e3dfcb1d2dde42c7e7fb0700df">getAdcNames</a>();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (names.isEmpty())</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt;= 8; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        QString name;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; names.length())</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            name = names[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] + QString(<span class="stringliteral">&quot; (ADC%1)&quot;</span>).arg(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            name = QString(<span class="stringliteral">&quot;N/A (ADC%1)&quot;</span>).arg(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">if</span> (i &lt; ui-&gt;cbVoltagePin-&gt;count())</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            ui-&gt;cbVoltagePin-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, name);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (i &lt; ui-&gt;cbCurrentPin-&gt;count())</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            ui-&gt;cbCurrentPin-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, name);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageRatio()</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;{</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    ui-&gt;sb_voltageFactor-&gt;setValue(1000.0 / ui-&gt;sb_voltageRatio-&gt;value());</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageFactor()</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;{</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    ui-&gt;sb_voltageRatio-&gt;setValue(1000.0 / ui-&gt;sb_voltageFactor-&gt;value());</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::updateVoltageFactorFromUavo(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;{</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    ui-&gt;sb_voltageRatio-&gt;setValue(1000.0 / (<span class="keywordtype">double</span>)value);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::autoCellDetectionToggled(<span class="keywordtype">bool</span> checked)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;{</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    ui-&gt;sbMaxCellVoltage-&gt;setEnabled(checked);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    ui-&gt;lblMaxCellVoltage-&gt;setEnabled(checked);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    ui-&gt;sb_numBatteryCells-&gt;setEnabled(!checked);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    ui-&gt;lblNumBatteryCells-&gt;setEnabled(!checked);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (checked) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">if</span> (ui-&gt;sbMaxCellVoltage-&gt;property(<span class="stringliteral">&quot;ValueBackup&quot;</span>).isValid())</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            ui-&gt;sbMaxCellVoltage-&gt;setValue(ui-&gt;sbMaxCellVoltage-&gt;property(<span class="stringliteral">&quot;ValueBackup&quot;</span>).toDouble());</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            ui-&gt;sbMaxCellVoltage-&gt;setValue(4.2); <span class="comment">// TODO: set this to default UAVO val instead of hardcoding?</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        ui-&gt;sbMaxCellVoltage-&gt;setProperty(<span class="stringliteral">&quot;ValueBackup&quot;</span>, ui-&gt;sbMaxCellVoltage-&gt;value());</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        ui-&gt;sbMaxCellVoltage-&gt;setValue(0.0);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::maxCellVoltageChanged(<span class="keywordtype">double</span> value)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (value &gt; 0.0) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">if</span> (!ui-&gt;gbAutoCellDetection-&gt;isChecked())</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            ui-&gt;gbAutoCellDetection-&gt;setChecked(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui-&gt;gbAutoCellDetection-&gt;isChecked()) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        ui-&gt;gbAutoCellDetection-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;}</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::setupLedTab()</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;{</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    QPointer&lt;UAVObjectManager&gt; objMgr = <a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>();</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">if</span> (!objMgr) <span class="comment">// hope it can only be destructed in this thread</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::setupLedTab()</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;{</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    QPointer&lt;UAVObjectManager&gt; objMgr = <a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>();</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (!objMgr) <span class="comment">// hope it can only be destructed in this thread</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keyword">auto</span> obj = qobject_cast&lt;<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *&gt;(objMgr-&gt;getObject(<span class="stringliteral">&quot;RGBLEDSettings&quot;</span>));</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">if</span> (!obj)</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    connect(obj, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a>, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabUpdate);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    connect(ui-&gt;btnLEDDefaultColor, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    connect(ui-&gt;btnLEDRange1Begin, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    connect(ui-&gt;btnLEDRange1End, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    connect(obj, <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span> (<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>::*)(<span class="keywordtype">bool</span>)<span class="keyword">&gt;</span>(&amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1">UAVDataObject::presentOnHardwareChanged</a>), [=](<span class="keywordtype">bool</span> enable) {</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        tabEnable(ui-&gt;tabLED, enable);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    });</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    tabEnable(ui-&gt;tabLED, obj-&gt;getIsPresentOnHardware());</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::ledTabUpdate(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">auto</span> rgb = qobject_cast&lt;RGBLEDSettings *&gt;(obj);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (!rgb) {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        Q_ASSERT(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;Invalid object!&quot;</span>;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a> = rgb-&gt;getData();</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    ui-&gt;lblLEDDefaultColor-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[2]));</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    ui-&gt;lblLEDRange1Begin-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[2]));</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    ui-&gt;lblLEDRange1End-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[2]));</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keyword">auto</span> obj = qobject_cast&lt;<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *&gt;(objMgr-&gt;getObject(<span class="stringliteral">&quot;RGBLEDSettings&quot;</span>));</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">if</span> (!obj)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    connect(obj, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a>, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabUpdate);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    connect(ui-&gt;btnLEDDefaultColor, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    connect(ui-&gt;btnLEDRange1Begin, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    connect(ui-&gt;btnLEDRange1End, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;ConfigModuleWidget::ledTabSetColor);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    connect(obj, <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span> (<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>::*)(<span class="keywordtype">bool</span>)<span class="keyword">&gt;</span>(&amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1">UAVDataObject::presentOnHardwareChanged</a>), [=](<span class="keywordtype">bool</span> enable) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        tabEnable(ui-&gt;tabLED, enable);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    });</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    tabEnable(ui-&gt;tabLED, obj-&gt;getIsPresentOnHardware());</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::ledTabUpdate(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;{</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">auto</span> rgb = qobject_cast&lt;RGBLEDSettings *&gt;(obj);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">if</span> (!rgb) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        Q_ASSERT(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;Invalid object!&quot;</span>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a> = rgb-&gt;getData();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    ui-&gt;lblLEDDefaultColor-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.DefaultColor[2]));</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    ui-&gt;lblLEDRange1Begin-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeBaseColor[2]));</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    ui-&gt;lblLEDRange1End-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[0]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[1]).arg(<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>.RangeEndColor[2]));</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::ledTabSetColor()</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;{</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    QPointer&lt;QPushButton&gt; btn = qobject_cast&lt;QPushButton *&gt;(sender());</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">if</span> (!btn)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::ledTabSetColor()</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    QPointer&lt;QPushButton&gt; btn = qobject_cast&lt;QPushButton *&gt;(sender());</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordflow">if</span> (!btn)</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    QPointer&lt;UAVObjectManager&gt; objMgr = <a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>();</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">if</span> (!objMgr)</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keyword">auto</span> obj = objMgr-&gt;getObject(<span class="stringliteral">&quot;RGBLEDSettings&quot;</span>);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">if</span> (!obj)</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keyword">auto</span> field = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga0c8a0350ce2c49430124b59842fff131">getField</a>(btn-&gt;property(<span class="stringliteral">&quot;fieldname&quot;</span>).toString());</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">if</span> (!field)</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    QPointer&lt;UAVObjectManager&gt; objMgr = <a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>();</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">if</span> (!objMgr)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">auto</span> obj = objMgr-&gt;getObject(<span class="stringliteral">&quot;RGBLEDSettings&quot;</span>);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> (!obj)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">auto</span> field = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga0c8a0350ce2c49430124b59842fff131">getField</a>(btn-&gt;property(<span class="stringliteral">&quot;fieldname&quot;</span>).toString());</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">if</span> (!field)</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keyword">const</span> QColor initial(field-&gt;getValue(0).toInt(), field-&gt;getValue(1).toInt(), field-&gt;getValue(2).toInt());</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    QColorDialog picker(initial, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    picker.raise();</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">if</span> (picker.exec() != QDialog::Accepted)</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keyword">const</span> QColor initial(field-&gt;getValue(0).toInt(), field-&gt;getValue(1).toInt(), field-&gt;getValue(2).toInt());</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    QColorDialog picker(initial, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    picker.raise();</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">if</span> (picker.exec() != QDialog::Accepted)</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keyword">const</span> QColor &amp;col = picker.selectedColor();</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    field-&gt;setValue(col.red(), 0);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    field-&gt;setValue(col.green(), 1);</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    field-&gt;setValue(col.blue(), 2);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    QPointer&lt;QLabel&gt; lbl(ui-&gt;tabLED-&gt;findChild&lt;QLabel *&gt;(btn-&gt;objectName().replace(<span class="stringliteral">&quot;btn&quot;</span>, <span class="stringliteral">&quot;lbl&quot;</span>)));</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">if</span> (!lbl)</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    lbl-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(col.red()).arg(col.green()).arg(col.blue()));</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::tabEnable(QWidget *tab, <span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;{</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(tab);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;moduleTab-&gt;currentIndex() == <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a>)</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        ui-&gt;moduleTab-&gt;setCurrentIndex(0);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">if</span> (idx &gt;= 0)</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        ui-&gt;moduleTab-&gt;setTabEnabled(idx, enable);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keyword">const</span> QColor &amp;col = picker.selectedColor();</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    field-&gt;setValue(col.red(), 0);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    field-&gt;setValue(col.green(), 1);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    field-&gt;setValue(col.blue(), 2);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    QPointer&lt;QLabel&gt; lbl(ui-&gt;tabLED-&gt;findChild&lt;QLabel *&gt;(btn-&gt;objectName().replace(<span class="stringliteral">&quot;btn&quot;</span>, <span class="stringliteral">&quot;lbl&quot;</span>)));</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">if</span> (!lbl)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    lbl-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;background: rgb(%0, %1, %2);&quot;</span>).arg(col.red()).arg(col.green()).arg(col.blue()));</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;}</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="keywordtype">void</span> ConfigModuleWidget::tabEnable(QWidget *tab, <span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;{</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordtype">int</span> idx = ui-&gt;moduleTab-&gt;indexOf(tab);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">if</span> (ui-&gt;moduleTab-&gt;currentIndex() == <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a>)</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        ui-&gt;moduleTab-&gt;setCurrentIndex(0);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> (idx &gt;= 0)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        ui-&gt;moduleTab-&gt;setTabEnabled(idx, enable);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;}</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
 <div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga945551d9d4d280fe2cd14bc2646d8fbf"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">ConfigTaskWidget::autoLoadWidgets</a></div><div class="ttdeci">void autoLoadWidgets()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00733">configtaskwidget.cpp:733</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gae75127fbfffe10458defc31a6a18c0f8"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">ConfigTaskWidget::setDirty</a></div><div class="ttdeci">void setDirty(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00560">configtaskwidget.cpp:560</a></div></div>

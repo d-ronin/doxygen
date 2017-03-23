@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">55a5eab</span>
+   &#160;<span id="projectnumber">ba4f099</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -205,8 +205,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae8fb9284605593ba78f215bf5546cef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9b0877f7505ea47ba2c7e5321873837"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae9b0877f7505ea47ba2c7e5321873837">calculate_pids</a> (void)</td></tr>
 <tr class="separator:gae9b0877f7505ea47ba2c7e5321873837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2830dd3bd7e44aa3c2436b2424f9037"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad2830dd3bd7e44aa3c2436b2424f9037">SettingsUpdatedCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:gad2830dd3bd7e44aa3c2436b2424f9037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f22b0b7dbf1d6b7ad7439f5418bfacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd">update_settings</a> ()</td></tr>
+<tr class="separator:ga9f22b0b7dbf1d6b7ad7439f5418bfacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga563b10817781bf2d41a996189589402a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga563b10817781bf2d41a996189589402a">get_throttle</a> (StabilizationDesiredData *stabilization_desired, SystemSettingsAirframeTypeOptions *<a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>)</td></tr>
 <tr class="separator:ga563b10817781bf2d41a996189589402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6190a7e200476bf20da7b47ac4107973"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a> ()</td></tr>
@@ -232,34 +232,32 @@ Variables</h2></td></tr>
 <tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaf23900e05a20ba9fb4c80d4b11337de1">ident_wiggle_points</a></td></tr>
 <tr class="separator:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacef7acd86d1d86bb50b2513cdde406db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db">axis_lock_accum</a> [<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>] = {0,0,0}</td></tr>
+<tr class="memitem:gacef7acd86d1d86bb50b2513cdde406db"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db">axis_lock_accum</a> [<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>] = {0,0,0}</td></tr>
 <tr class="separator:gacef7acd86d1d86bb50b2513cdde406db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d12f9314c47dcc57be19ca03b5ac09a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga9d12f9314c47dcc57be19ca03b5ac09a">max_axis_lock</a> = 0</td></tr>
+<tr class="memitem:ga9d12f9314c47dcc57be19ca03b5ac09a"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga9d12f9314c47dcc57be19ca03b5ac09a">max_axis_lock</a> = 0</td></tr>
 <tr class="separator:ga9d12f9314c47dcc57be19ca03b5ac09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94dd677918bcbe2c1ee026d1c1f95fd1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga94dd677918bcbe2c1ee026d1c1f95fd1">max_axislock_rate</a> = 0</td></tr>
+<tr class="memitem:ga94dd677918bcbe2c1ee026d1c1f95fd1"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga94dd677918bcbe2c1ee026d1c1f95fd1">max_axislock_rate</a> = 0</td></tr>
 <tr class="separator:ga94dd677918bcbe2c1ee026d1c1f95fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ed1377fcc1a59ba76172e76b113704d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga0ed1377fcc1a59ba76172e76b113704d">weak_leveling_kp</a> = 0</td></tr>
+<tr class="memitem:ga0ed1377fcc1a59ba76172e76b113704d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga0ed1377fcc1a59ba76172e76b113704d">weak_leveling_kp</a> = 0</td></tr>
 <tr class="separator:ga0ed1377fcc1a59ba76172e76b113704d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1659053cf18ba9ead672d2795fb6941"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gac1659053cf18ba9ead672d2795fb6941">weak_leveling_max</a> = 0</td></tr>
+<tr class="memitem:gac1659053cf18ba9ead672d2795fb6941"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gac1659053cf18ba9ead672d2795fb6941">weak_leveling_max</a> = 0</td></tr>
 <tr class="separator:gac1659053cf18ba9ead672d2795fb6941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf67afab9d5822cab800d87ee04512e53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaf67afab9d5822cab800d87ee04512e53">lowThrottleZeroIntegral</a></td></tr>
+<tr class="memitem:gaf67afab9d5822cab800d87ee04512e53"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaf67afab9d5822cab800d87ee04512e53">lowThrottleZeroIntegral</a></td></tr>
 <tr class="separator:gaf67afab9d5822cab800d87ee04512e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga953d14b1e6e45afc361e0898296bf346"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga953d14b1e6e45afc361e0898296bf346">vbar_decay</a> = 0.991f</td></tr>
-<tr class="separator:ga953d14b1e6e45afc361e0898296bf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9b6ba57cecbcf5f2414e9c87ce43aac"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gab9b6ba57cecbcf5f2414e9c87ce43aac">max_rate_alpha</a> = 0.8f</td></tr>
 <tr class="separator:gab9b6ba57cecbcf5f2414e9c87ce43aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga953d14b1e6e45afc361e0898296bf346"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga953d14b1e6e45afc361e0898296bf346">vbar_decay</a> = 0.991f</td></tr>
+<tr class="separator:ga953d14b1e6e45afc361e0898296bf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b7c75ff9222444babfe603f25b91233"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233">pids</a> [<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>]</td></tr>
 <tr class="separator:ga1b7c75ff9222444babfe603f25b91233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1">deadbands</a> = NULL</td></tr>
 <tr class="separator:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4960117d78c0e4cc1d62243b231109d9"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga4960117d78c0e4cc1d62243b231109d9">gyro_filter_updated</a> = true</td></tr>
-<tr class="separator:ga4960117d78c0e4cc1d62243b231109d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga782f44f9f81b4ad75bb0380f16d5bb58"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga782f44f9f81b4ad75bb0380f16d5bb58">actuatorDesiredUpdated</a> = true</td></tr>
-<tr class="separator:ga782f44f9f81b4ad75bb0380f16d5bb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga611378d03e1993b9a31e0b0d052f4b00"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga611378d03e1993b9a31e0b0d052f4b00">flightStatusUpdated</a> = true</td></tr>
-<tr class="separator:ga611378d03e1993b9a31e0b0d052f4b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5b93293cb0dc8713e8305b38521b9a4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad5b93293cb0dc8713e8305b38521b9a4">systemSettingsUpdated</a> = true</td></tr>
-<tr class="separator:gad5b93293cb0dc8713e8305b38521b9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gac0da75e77e4e4f4b1e6c1fb6de575f65">settings_flag</a> = true</td></tr>
+<tr class="separator:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee62cd2c02fc5aa987797d1137dbf4ca"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaee62cd2c02fc5aa987797d1137dbf4ca">flightStatusUpdated</a> = true</td></tr>
+<tr class="separator:gaee62cd2c02fc5aa987797d1137dbf4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4818f5cc62777e3be1fcec653127d089"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga4818f5cc62777e3be1fcec653127d089">systemSettingsUpdated</a> = true</td></tr>
+<tr class="separator:ga4818f5cc62777e3be1fcec653127d089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control the UAV attitude to StabilizationDesired. </p>

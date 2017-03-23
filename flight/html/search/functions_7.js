@@ -65,8 +65,5 @@ var searchData=
   ['gpsinitialize',['GPSInitialize',['../group___g_p_s_module.html#gaaa9e652434fef66adb2ea7721f3ad640',1,'GPSInitialize(void):&#160;GPS.c'],['../group___g_s_p_module.html#gaaa9e652434fef66adb2ea7721f3ad640',1,'GPSInitialize(void):&#160;GPS.c']]],
   ['gpsstart',['GPSStart',['../group___g_p_s_module.html#ga8050cbef253d91ff25e0df5f1633a96f',1,'GPS.c']]],
   ['gpstask',['gpsTask',['../group___g_p_s_module.html#ga440836c49751969959782e09928b7f09',1,'GPS.c']]],
-  ['groundpathfollowerinitialize',['GroundPathFollowerInitialize',['../group___ground_path_follower.html#ga025f961b3b70a3ee5098c756f7f3507d',1,'groundpathfollower.c']]],
-  ['groundpathfollowerstart',['GroundPathFollowerStart',['../group___ground_path_follower.html#ga844090ee19407a7f78fe00806c3d66a7',1,'groundpathfollower.c']]],
-  ['groundpathfollowertask',['groundPathFollowerTask',['../group___ground_path_follower.html#ga8c929ed628fb66b46d3eab2d9257b9ef',1,'groundpathfollower.c']]],
   ['grouper',['grouper',['../namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7',1,'encode_fonts.grouper()'],['../namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee',1,'encode_images.grouper()']]]
 ];

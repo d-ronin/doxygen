@@ -27,7 +27,6 @@ var searchData=
   ['throttle_5faccumulator',['throttle_accumulator',['../group___autotuning_module.html#gaca84c6d4e5e3ca90a711e4e61805cdc3',1,'autotune.c']]],
   ['throttle_5fexpo',['throttle_expo',['../structmsp__rc__tuning.html#a0e57bb640a051c9705b4f414cf1385df',1,'msp_rc_tuning::throttle_expo()'],['../structmsp__set__rc__tuning.html#a57fac4744a9db58d8bacc2f518b614f6',1,'msp_set_rc_tuning::throttle_expo()'],['../msp__messages_8h.html#af7b68503cc2f8249f54b122cba51df6e',1,'throttle_expo():&#160;msp_messages.h']]],
   ['throttle_5fmid',['throttle_mid',['../structmsp__rc__tuning.html#ac6478c3e9d39aecef1ed919396564f0e',1,'msp_rc_tuning::throttle_mid()'],['../structmsp__set__rc__tuning.html#ad270ea2359619a16061c0eb4fea41dfd',1,'msp_set_rc_tuning::throttle_mid()'],['../msp__messages_8h.html#a7271c3913913391606ae0f55c0e270a5',1,'throttle_mid():&#160;msp_messages.h']]],
-  ['throttleoffset',['throttleOffset',['../group___ground_path_follower.html#gad4114136c3c736edf236c7d1aa4fd7c1',1,'groundpathfollower.c']]],
   ['thrusttodegs',['thrustToDegs',['../group___sensors.html#ga0bfc1acfbf1c0b59ebaeba678cb8c811',1,'simsensors.c']]],
   ['tim_5f10_5f11_5ftime_5fbase',['tim_10_11_time_base',['../group___quanton.html#gab21d9960e57e1814f4cf850cf0922d29',1,'board_hw_defs.c']]],
   ['tim_5f10_5fcfg',['tim_10_cfg',['../group___quanton.html#ga6b142cb12de118cee37c8b497d3a1909',1,'tim_10_cfg():&#160;board_hw_defs.c'],['../group___revolution.html#ga6b142cb12de118cee37c8b497d3a1909',1,'tim_10_cfg():&#160;board_hw_defs.c']]],

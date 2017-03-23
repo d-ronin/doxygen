@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "dRonin", "index.html", [
     [ "Google Material Design Icons", "md_ground_gcs_src_plugins_config_images_ic_icons.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
@@ -98,8 +99,8 @@ var NAVTREEINDEX =
 "providerstrings_8cpp.html",
 "setupwizardplugin_8h.html",
 "systemhealthgadget_8cpp.html",
-"uavobjectsinittemplate_8cpp.html",
-"vehicletrim_8h.html"
+"uavobjectsinit_8h_source.html",
+"vehicletrim_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

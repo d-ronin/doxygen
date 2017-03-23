@@ -111,7 +111,7 @@ var searchData=
   ['flightstatstask',['flightStatsTask',['../group___flight.html#gabedeb0ff4b3e8852925ae7b01338b7c7',1,'flightstatsmodule.c']]],
   ['flightstatstaskhandle',['flightStatsTaskHandle',['../group___flight.html#ga3e235c3d2beb22ca1bb6fe34a04e3003',1,'flightstatsmodule.c']]],
   ['flightstatus',['FlightStatus',['../structtelemetrydata.html#a2fe47f67a9d625f0e82acb2c737a5f48',1,'telemetrydata']]],
-  ['flightstatusupdated',['flightStatusUpdated',['../group___actuator_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;actuator.c'],['../group___stabilization_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;stabilization.c']]],
+  ['flightstatusupdated',['flightStatusUpdated',['../group___actuator_module.html#ga611378d03e1993b9a31e0b0d052f4b00',1,'flightStatusUpdated():&#160;actuator.c'],['../group___stabilization_module.html#gaee62cd2c02fc5aa987797d1137dbf4ca',1,'flightStatusUpdated():&#160;stabilization.c']]],
   ['flighttime_5fupdate',['FLIGHTTIME_update',['../group___character_o_s_d.html#gaffa03458e37a047f7c5a7bfd2a3aeccf',1,'panel.c']]],
   ['float_5fto_5ffixed',['FLOAT_TO_FIXED',['../group___vibration_analysis_module.html#ga8eae16ae14890baaf9faca178bfd5ca9',1,'vibrationanalysis.c']]],
   ['flyingf4_20support_20files',['FlyingF4 support files',['../group___flying_f4.html',1,'']]],

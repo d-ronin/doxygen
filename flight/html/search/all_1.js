@@ -54,7 +54,6 @@ var searchData=
   ['actuator_5fset_5fservo_5fmode',['actuator_set_servo_mode',['../group___actuator_module.html#ga53886cf6bbf80db465e8a56d6735ef1d',1,'actuator.c']]],
   ['actuator_5fsettings_5fupdated',['actuator_settings_updated',['../group___actuator_module.html#gacb12ed460451faae4bc03f774fe95933',1,'actuator.c']]],
   ['actuator_5ftask',['actuator_task',['../group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e',1,'actuator.c']]],
-  ['actuatordesiredupdated',['actuatorDesiredUpdated',['../group___stabilization_module.html#ga782f44f9f81b4ad75bb0380f16d5bb58',1,'stabilization.c']]],
   ['actuatorinitialize',['ActuatorInitialize',['../group___actuator_module.html#gaa23ed2bf1c2252218764708ac5d8b2fb',1,'actuator.c']]],
   ['actuator_20module',['Actuator Module',['../group___actuator_module.html',1,'']]],
   ['actuators',['actuators',['../structflyingpicmd__cfg__fa.html#a8dc7c0c928bc957763f927b0c6650c8b',1,'flyingpicmd_cfg_fa::actuators()'],['../flyingpio__messages_8h.html#a72d9a424ac18e7aea15bfd163047ed67',1,'actuators():&#160;flyingpio_messages.h']]],

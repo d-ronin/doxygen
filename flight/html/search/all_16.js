@@ -44,7 +44,7 @@ var searchData=
   ['veld',['velD',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a3dcace94a7b7317b432bcdeb69271326',1,'UBX_NAV_VELNED']]],
   ['vele',['velE',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a6a8d3e61f2818644777283c0ea93dec8',1,'UBX_NAV_VELNED']]],
   ['veln',['velN',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#ab9c0e5be2137b6287caa0d98942c521d',1,'UBX_NAV_VELNED']]],
-  ['velocity',['Velocity',['../structtelemetrydata.html#a9e13ab1fbc35aa3717dfcb1cef027ebf',1,'telemetrydata::Velocity()'],['../group___ground_path_follower.html#gga1223527343fc1b6614c7abf83ed7d170a06e15744a8bd69fceeeb39ab3614b3f6',1,'VELOCITY():&#160;groundpathfollower.c']]],
+  ['velocity',['Velocity',['../structtelemetrydata.html#a9e13ab1fbc35aa3717dfcb1cef027ebf',1,'telemetrydata']]],
   ['velocity_5factual',['velocity_actual',['../structtelemetry__t.html#a9637d9fa2ca31cd47c5469e711191cb1',1,'telemetry_t']]],
   ['velocity_5fz',['velocity_z',['../structcfvert.html#a557d1abc542ca1e6d3439666e3478b1e',1,'cfvert']]],
   ['verify_5fchannels',['verify_channels',['../group___unit_tests.html#gac89dcb5e47be241627599b616fc3ea15',1,'unittest.cpp']]],

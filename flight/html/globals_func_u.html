@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">55a5eab</span>
+   &#160;<span id="projectnumber">ba4f099</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -545,6 +545,9 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>update_object_instances()
 : <a class="el" href="group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f">telemetry.c</a>
 </li>
+<li>update_settings()
+: <a class="el" href="group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd">stabilization.c</a>
+</li>
 <li>update_stabilization_desired()
 : <a class="el" href="group___control.html#gaf65ecfe2872f7707121f85894712225e">transmitter_control.c</a>
 </li>
@@ -560,25 +563,17 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>updateAttitudeINSGPS()
 : <a class="el" href="group___attitude_module.html#gad63d3cf62c303f66aea711afbdc6edba">attitude.c</a>
 </li>
-<li>updateEndpointVelocity()
-: <a class="el" href="group___ground_path_follower.html#ga3da7ef60de2024350218231f5441e88c">groundpathfollower.c</a>
-</li>
 <li>updateFixedDesiredAttitude()
 : <a class="el" href="group___fixed_wing_path_follower.html#ga8ccb5c30c6fb87d076c41d1b5f472a5d">fixedwingpathfollower.c</a>
 </li>
-<li>updateGroundDesiredAttitude()
-: <a class="el" href="group___ground_path_follower.html#ga4e633f1902c2a1b19639fc22d4ccf77a">groundpathfollower.c</a>
-</li>
 <li>updateNedAccel()
 : <a class="el" href="group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">attitude.c</a>
-, <a class="el" href="group___ground_path_follower.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">groundpathfollower.c</a>
 </li>
 <li>updateObject()
 : <a class="el" href="group___telemetry_module.html#gac98fcb58fb5d51626ffda269c41404c3">telemetry.c</a>
 </li>
 <li>updatePathVelocity()
 : <a class="el" href="group___fixed_wing_path_follower.html#ga866a93431f322ad04c66f56dcf589fa3">fixedwingpathfollower.c</a>
-, <a class="el" href="group___ground_path_follower.html#ga866a93431f322ad04c66f56dcf589fa3">groundpathfollower.c</a>
 </li>
 <li>updatePIDs()
 : <a class="el" href="group___tx_p_i_d_module.html#gaf8393d7267577ee01fd7083983d03bfb">txpid.c</a>
@@ -599,12 +594,12 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="group___system_module.html#gaee0f14515d88d6cdfba7968c0ab4dc58">systemmod.c</a>
 </li>
 <li>updateSettings()
-: <a class="el" href="group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80">GPS.c</a>
+: <a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">telemetry.c</a>
+, <a class="el" href="group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80">GPS.c</a>
+, <a class="el" href="group___logging.html#gad0b9bd8f45359133da342c354426cb80">logging.c</a>
+, <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
 , <a class="el" href="group___u_a_v_o_mavlink_bridge.html#gad0b9bd8f45359133da342c354426cb80">UAVOMavlinkBridge.c</a>
 , <a class="el" href="group___radio_com_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">RadioComBridge.c</a>
-, <a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">telemetry.c</a>
-, <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
-, <a class="el" href="group___logging.html#gad0b9bd8f45359133da342c354426cb80">logging.c</a>
 </li>
 <li>updateStats()
 : <a class="el" href="group___system_module.html#ga8bb5aa227c84456ab4205dd2fc89816e">systemmod.c</a>
@@ -628,7 +623,7 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="group___com_usb_bridge_module.html#ga1bca1a133d679ca1db5477cd1971429e">ComUsbBridge.c</a>
 </li>
 <li>USB_Cable_Config()
-: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#aa99b8eac23843be0bca036fae722c788">pios_usb_hid_pwr.c</a>
+: <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#aa99b8eac23843be0bca036fae722c788">pios_usb_hid_pwr.c</a>
 </li>
 <li>USB_Istr()
 : <a class="el" href="pios__usb__hid__istr_8h.html#ab084f8c2574dd1fef2ef68123f5e90ab">pios_usb_hid_istr.h</a>

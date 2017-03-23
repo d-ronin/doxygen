@@ -16,7 +16,6 @@ var dir_5bb897faab25689a7cb3d40be6c9e044 =
     [ "FlightStats", "dir_5feb3db4a58d4eb0a410d8a93453966f.html", "dir_5feb3db4a58d4eb0a410d8a93453966f" ],
     [ "Geofence", "dir_e7190205dc5c9f5c1d0a63c66b3d8615.html", "dir_e7190205dc5c9f5c1d0a63c66b3d8615" ],
     [ "GPS", "dir_a3b91f878a84da556ffbc9715a0f27d6.html", "dir_a3b91f878a84da556ffbc9715a0f27d6" ],
-    [ "GroundPathFollower", "dir_ba17b8074d18bda0eedcedd311ad7c06.html", "dir_ba17b8074d18bda0eedcedd311ad7c06" ],
     [ "Logging", "dir_a1bed4663175eabbccc37e863932ed04.html", "dir_a1bed4663175eabbccc37e863932ed04" ],
     [ "ManualControl", "dir_63bd3cd2777f6c90b36f6729ccb56f9b.html", "dir_63bd3cd2777f6c90b36f6729ccb56f9b" ],
     [ "MSPUAVOBridge", "dir_4ffb0cd7e5e6ae1a65de17f2b922d80a.html", "dir_4ffb0cd7e5e6ae1a65de17f2b922d80a" ],
