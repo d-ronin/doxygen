@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ba4f099</span>
+   &#160;<span id="projectnumber">cb92ddc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1484,97 +1484,95 @@ $(document).ready(function(){initNavTree('seppuku_2board-info_2board__hw__defs_8
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;                .remap                                         = GPIO_AF_TIM9,</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;        },</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        .line_counter = TIM4,</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        .tim_oc_init                                       = {</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;                .TIM_OCMode       = TIM_OCMode_PWM1,</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;                .TIM_OutputState  = TIM_OutputState_Enable,</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                .TIM_OutputNState = TIM_OutputNState_Disable,</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                .TIM_Pulse        = 1,</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                .TIM_OCPolarity   = TIM_OCPolarity_High,</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                .TIM_OCNPolarity  = TIM_OCPolarity_High,</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                .TIM_OCIdleState  = TIM_OCIdleState_Reset,</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                .TIM_OCNIdleState = TIM_OCNIdleState_Reset,</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;        },</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        .set_bw_levels = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga978815ab877ffa13e04e27609ce32786">set_bw_levels</a>,</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;};</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_VIDEO */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&quot;</span></div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        .tim_oc_init                                       = {</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;                .TIM_OCMode       = TIM_OCMode_PWM1,</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;                .TIM_OutputState  = TIM_OutputState_Enable,</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;                .TIM_OutputNState = TIM_OutputNState_Disable,</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;                .TIM_Pulse        = 1,</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                .TIM_OCPolarity   = TIM_OCPolarity_High,</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                .TIM_OCNPolarity  = TIM_OCPolarity_High,</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                .TIM_OCIdleState  = TIM_OCIdleState_Reset,</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                .TIM_OCNIdleState = TIM_OCNIdleState_Reset,</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        },</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        .set_bw_levels = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga978815ab877ffa13e04e27609ce32786">set_bw_levels</a>,</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;};</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_VIDEO */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&quot;</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> <a class="code" href="group___brain_f_p_v-_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>;</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> <a class="code" href="group___brain_f_p_v-_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ab02a4d7ad3f3dce551947ec2f7ae6913">DMA2_Stream6_IRQHandler</a>() {</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(pios_ws2811);</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;}</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> = {</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        .<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a> = TIM1,</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;        .clock_cfg = {</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB2_COUNTER_CLOCK / 12000000) - 1,</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;                .TIM_Period = 25,       <span class="comment">/* 2.083us/bit */</span></div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        },</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga890d1ea2ffa5de7e360923948b6a9710">interrupt</a> = {</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;                .NVIC_IRQChannel = DMA2_Stream6_IRQn,</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___aq32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        },</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        .bit_clear_dma_tcif = DMA_IT_TCIF6,</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        .fall_time_l = 5,                       <span class="comment">/* 333ns */</span></div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        .fall_time_h = 11,                      <span class="comment">/* 750ns */</span></div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        .led_gpio = GPIOC,</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        .gpio_pin = GPIO_Pin_15,                <span class="comment">/* PC15 */</span></div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        .bit_set_dma_stream = DMA2_Stream4,</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        .bit_set_dma_channel = DMA_Channel_6,   <span class="comment">/* 2/S4/C6: TIM1 CH4|TRIG|COM */</span></div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;        .bit_clear_dma_stream = DMA2_Stream6,</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        .bit_clear_dma_channel = DMA_Channel_0, <span class="comment">/* 0/S6/C0: TIM1 CH1|CH2|CH3 */</span></div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;};</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_DAC)</span></div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__dac_8h.html">pios_dac.h</a>&quot;</span></div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ab02a4d7ad3f3dce551947ec2f7ae6913">DMA2_Stream6_IRQHandler</a>() {</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(pios_ws2811);</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;}</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> = {</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;        .<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a> = TIM1,</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        .clock_cfg = {</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB2_COUNTER_CLOCK / 12000000) - 1,</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                .TIM_Period = 25,       <span class="comment">/* 2.083us/bit */</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        },</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga890d1ea2ffa5de7e360923948b6a9710">interrupt</a> = {</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;                .NVIC_IRQChannel = DMA2_Stream6_IRQn,</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___aq32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        },</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        .bit_clear_dma_tcif = DMA_IT_TCIF6,</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        .fall_time_l = 5,                       <span class="comment">/* 333ns */</span></div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        .fall_time_h = 11,                      <span class="comment">/* 750ns */</span></div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        .led_gpio = GPIOC,</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        .gpio_pin = GPIO_Pin_15,                <span class="comment">/* PC15 */</span></div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        .bit_set_dma_stream = DMA2_Stream4,</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        .bit_set_dma_channel = DMA_Channel_6,   <span class="comment">/* 2/S4/C6: TIM1 CH4|TRIG|COM */</span></div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        .bit_clear_dma_stream = DMA2_Stream6,</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        .bit_clear_dma_channel = DMA_Channel_0, <span class="comment">/* 0/S6/C0: TIM1 CH1|CH2|CH3 */</span></div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;};</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_DAC)</span></div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__dac_8h.html">pios_dac.h</a>&quot;</span></div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a> pios_dac;</div>
 <div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a> pios_dac;</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;<span class="comment">/* DAC 1 is the DAC output on Seppuku; DMA1 Stream 5 Ch7 */</span></div>
 <div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="comment">/* DAC 1 is the DAC output on Seppuku; DMA1 Stream 5 Ch7 */</span></div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#aa6bbc16de4bcffa047dccd2c4b694b2a">DMA1_Stream5_IRQHandler</a>() {</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga2b75536696ba212b8488763b677dfdb6">PIOS_DAC_dma_interrupt_handler</a>(pios_dac);</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;}</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#aa6bbc16de4bcffa047dccd2c4b694b2a">DMA1_Stream5_IRQHandler</a>() {</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga2b75536696ba212b8488763b677dfdb6">PIOS_DAC_dma_interrupt_handler</a>(pios_dac);</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;}</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>dac_dev_s *<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a>;</div>
 <div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>dac_dev_s *<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a>;</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__dac__cfg.html">pios_dac_cfg</a> <a class="code" href="structpios__dac__cfg.html">pios_dac_cfg</a> = {</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga06b2a838489fd6bb8f48615002e024d8">timer</a> = TIM6,</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        .clock_cfg = {</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB1_COUNTER_CLOCK / 600000) - 1,</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;                .TIM_Period = 25-1,     <span class="comment">/* 600000 / 25 = 24000 samples per sec */</span></div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;        },</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga5b914237205f7f70572bf2b5ecf329f0">interrupt</a> = {</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                .NVIC_IRQChannel = DMA1_Stream5_IRQn,</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___aq32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        },</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        .gpio = GPIOA,</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        .gpio_pin = GPIO_Pin_4,</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;        .dma_stream = DMA1_Stream5,</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;        .dma_channel = DMA_Channel_7,</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        .dac_channel = DAC_Channel_1,</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        .dac_trigger = DAC_Trigger_T6_TRGO,</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        .dac_outreg = (uintptr_t) (&amp;DAC-&gt;DHR12L1),</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        .dma_tcif = DMA_IT_TCIF5,</div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;};</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_DAC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__dac__cfg.html">pios_dac_cfg</a> <a class="code" href="structpios__dac__cfg.html">pios_dac_cfg</a> = {</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga06b2a838489fd6bb8f48615002e024d8">timer</a> = TIM6,</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        .clock_cfg = {</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB1_COUNTER_CLOCK / 600000) - 1,</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;                .TIM_Period = 25-1,     <span class="comment">/* 600000 / 25 = 24000 samples per sec */</span></div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        },</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;        .<a class="code" href="group___p_i_o_s.html#ga5b914237205f7f70572bf2b5ecf329f0">interrupt</a> = {</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                .NVIC_IRQChannel = DMA1_Stream5_IRQn,</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___aq32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;        },</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        .gpio = GPIOA,</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        .gpio_pin = GPIO_Pin_4,</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        .dma_stream = DMA1_Stream5,</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        .dma_channel = DMA_Channel_7,</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;        .dac_channel = DAC_Channel_1,</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;        .dac_trigger = DAC_Trigger_T6_TRGO,</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        .dac_outreg = (uintptr_t) (&amp;DAC-&gt;DHR12L1),</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        .dma_tcif = DMA_IT_TCIF5,</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;};</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_DAC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__annunc_html_a88b452f9d510fde12b2592105e992b34"><div class="ttname"><a href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pios_annunc::pin</a></div><div class="ttdeci">struct stm32_gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00039">pios_annunc_priv.h:39</a></div></div>
 <div class="ttc" id="structpios__video__cfg_html"><div class="ttname"><a href="structpios__video__cfg.html">pios_video_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00095">pios_video.h:95</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_i160_html_gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639">PIOS_BMI160_ODR_1600_Hz</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8h_source.html#l00051">pios_bmi160.h:51</a></div></div>
@@ -1604,7 +1602,7 @@ $(document).ready(function(){initNavTree('seppuku_2board-info_2board__hw__defs_8
 <div class="ttc" id="structstm32__gpio_html_a3d54b128262b814ecf0ad412093b6402"><div class="ttname"><a href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">stm32_gpio::gpio</a></div><div class="ttdeci">GPIO_TypeDef * gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00060">pios_stm32.h:60</a></div></div>
 <div class="ttc" id="structpios__exti__cfg_html"><div class="ttname"><a href="structpios__exti__cfg.html">pios_exti_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__exti_8h_source.html#l00037">pios_exti.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543">FLASH_PARTITION_LABEL_AUTOTUNE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash_8h_source.html#l00036">pios_flash.h:36</a></div></div>
-<div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga978815ab877ffa13e04e27609ce32786"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga978815ab877ffa13e04e27609ce32786">pios_video_cfg::set_bw_levels</a></div><div class="ttdeci">void(* set_bw_levels)(uint8_t, uint8_t)</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00105">pios_video.h:105</a></div></div>
+<div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga978815ab877ffa13e04e27609ce32786"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga978815ab877ffa13e04e27609ce32786">pios_video_cfg::set_bw_levels</a></div><div class="ttdeci">void(* set_bw_levels)(uint8_t, uint8_t)</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00104">pios_video.h:104</a></div></div>
 <div class="ttc" id="pios__adc__priv_8h_html"><div class="ttname"><a href="pios__adc__priv_8h.html">pios_adc_priv.h</a></div><div class="ttdoc">ADC private definitions. </div></div>
 <div class="ttc" id="pios__flashfs__logfs__priv_8h_html"><div class="ttname"><a href="pios__flashfs__logfs__priv_8h.html">pios_flashfs_logfs_priv.h</a></div></div>
 <div class="ttc" id="structpios__bmp280__cfg_html"><div class="ttname"><a href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a></div><div class="ttdoc">Configuration structure for the BMP085 driver. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmp280__priv_8h_source.html#l00039">pios_bmp280_priv.h:39</a></div></div>
@@ -1694,7 +1692,7 @@ $(document).ready(function(){initNavTree('seppuku_2board-info_2board__hw__defs_8
 <div class="ttc" id="group___unit_tests_html_gacda4321240c5016d2a02b0ab650dd34a"><div class="ttname"><a href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a></div><div class="ttdeci">const struct pios_flash_partition pios_flash_partition_table[]</div><div class="ttdef"><b>Definition:</b> <a href="unittest__init_8c_source.html#l00048">unittest_init.c:48</a></div></div>
 <div class="ttc" id="group___seppuku_html_ga555d3dd58189fa955dd0ba238e51c61e"><div class="ttname"><a href="group___seppuku.html#ga555d3dd58189fa955dd0ba238e51c61e">tim_3_5_14_time_base</a></div><div class="ttdeci">static const TIM_TimeBaseInitTypeDef tim_3_5_14_time_base</div><div class="ttdef"><b>Definition:</b> <a href="seppuku_2board-info_2board__hw__defs_8c_source.html#l00730">board_hw_defs.c:730</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_i160_html_ga8672e30b8699958482a8a5885e965caa"><div class="ttname"><a href="group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa">pios_bmi160_cfg::exti_cfg</a></div><div class="ttdeci">const struct pios_exti_cfg * exti_cfg</div><div class="ttdef"><b>Definition:</b> <a href="pios__bmi160_8h_source.html#l00070">pios_bmi160.h:70</a></div></div>
-<div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gacf32f403bbd5564027438bf64b33c0b1"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gacf32f403bbd5564027438bf64b33c0b1">BUFFER_WIDTH</a></div><div class="ttdeci">#define BUFFER_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00148">pios_video.h:148</a></div></div>
+<div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gacf32f403bbd5564027438bf64b33c0b1"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gacf32f403bbd5564027438bf64b33c0b1">BUFFER_WIDTH</a></div><div class="ttdeci">#define BUFFER_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00147">pios_video.h:147</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html_abd31d71097757582b57064851a5c576a"><div class="ttname"><a href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">pios_usb_hid_cfg::data_if</a></div><div class="ttdeci">uint8_t data_if</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00034">pios_usb_hid_priv.h:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga85b37fc7c59ec730520859920f0e1efb"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga85b37fc7c59ec730520859920f0e1efb">PIOS_Vsync_ISR</a></div><div class="ttdeci">bool PIOS_Vsync_ISR()</div></div>
 <div class="ttc" id="structpios__tim__channel_html_a07d1ffb5da40643ef9938fa9c4fad017"><div class="ttname"><a href="structpios__tim__channel.html#a07d1ffb5da40643ef9938fa9c4fad017">pios_tim_channel::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00014">pios_tim_priv.h:14</a></div></div>

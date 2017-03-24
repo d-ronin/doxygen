@@ -1,5 +1,13 @@
 var NAVTREEINDEX73 =
 {
+"pios__flash__posix__priv_8h_source.html":[4,0,0,4,4,4],
+"pios__flash__priv_8h.html":[4,0,0,2,1,32],
+"pios__flash__priv_8h.html#ga1812f7c92a96a5d7bdb2b5e2b7f1ccfd":[4,0,0,2,1,32,7],
+"pios__flash__priv_8h.html#ga274c652407562d8b2905ca2f74a42d6c":[4,0,0,2,1,32,3],
+"pios__flash__priv_8h.html#ga2c47edc7894f7a176ada76b6dd108b4a":[4,0,0,2,1,32,6],
+"pios__flash__priv_8h.html#ga3af7e3d9c14aded740da161bed3e5133":[4,0,0,2,1,32,2],
+"pios__flash__priv_8h.html#ga5e29418c0ebf83f8f7d31d49581f3392":[4,0,0,2,1,32,1],
+"pios__flash__priv_8h.html#ga678a11b3f8a34afe096417c2769202ae":[4,0,0,2,1,32,0],
 "pios__flash__priv_8h.html#gadd9970ba39fddca2c2af22396284836f":[4,0,0,2,1,32,8],
 "pios__flash__priv_8h.html#gae7677bce7d388fc66658930f4bf8d836":[4,0,0,2,1,32,5],
 "pios__flash__priv_8h.html#gaf59606f01edaa6e33039ea87a5dd4e52":[4,0,0,2,1,32,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX73 =
 "pios__hmc5883__priv_8h.html#gga5f5fc9d43e021d50e4bbbd3f82f79a14ab6381c9b4159b5debd83cae05295d4b7":[4,0,0,2,1,46,39,6],
 "pios__hmc5883__priv_8h.html#gga5f5fc9d43e021d50e4bbbd3f82f79a14af99581aa4b66a1e0be38bd84f74feded":[4,0,0,2,1,46,39,4],
 "pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119a0ff7330505c4d6f75c01c41dfdaf4400":[4,0,0,2,1,46,38,2],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119a3a6c57f4f57cf89269f02284170de4e7":[4,0,0,2,1,46,38,6],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119a5a7ec80a5785c13df50128099b1257ae":[4,0,0,2,1,46,38,5],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119a6453f9d33a17899b4d4f764ee3db4edb":[4,0,0,2,1,46,38,0],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119aa81ae7e2db9b3e3fdc4714de6b31dffd":[4,0,0,2,1,46,38,7],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119aaec7301513c1bf8b3f61712dde5f8561":[4,0,0,2,1,46,38,4],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353":[4,0,0,2,1,46,38,1],
-"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119af9a84c032f0ee432f8969eacd4fff3bf":[4,0,0,2,1,46,38,3],
-"pios__hmc5883__priv_8h_source.html":[4,0,0,2,1,46],
-"pios__hmc5983_8c.html":[4,0,0,2,0,24]
+"pios__hmc5883__priv_8h.html#gga9b5f48f8223effbfd7dbb15297957119a3a6c57f4f57cf89269f02284170de4e7":[4,0,0,2,1,46,38,6]
 };

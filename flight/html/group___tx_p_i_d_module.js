@@ -2,7 +2,6 @@ var group___tx_p_i_d_module =
 [
     [ "txpid.c", "txpid_8c.html", null ],
     [ "txpid_struct", "structtxpid__struct.html", [
-      [ "accessory", "structtxpid__struct.html#acf23c089e724d19e6d111c173c982a58", null ],
       [ "inst", "structtxpid__struct.html#ae72accee9fa02b92561d1dcc607f6f77", null ],
       [ "sensor", "structtxpid__struct.html#a7cf09d7635bfe099c9501f1dfdbafdb4", null ],
       [ "stab", "structtxpid__struct.html#a45e5ce1376943557a8596e269a68e366", null ],

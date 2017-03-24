@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37af035363c7de9b49ac7b26d1d366eea2e":[1,13,1,53],
 "group___copter_control_b_l.html#ggaa7a384c9d9aaba1daaa6ba46bd884900aab27270f353006b03c91367e05e44b94":[1,13,1,16,1],
 "group___copter_control_b_l.html#ggaa7a384c9d9aaba1daaa6ba46bd884900aab27270f353006b03c91367e05e44b94":[1,13,1,46],
 "group___copter_control_b_l.html#ggaa7a384c9d9aaba1daaa6ba46bd884900ae5e6d66f7159a38e8400f4bb64798fd8":[1,13,1,16,0],
@@ -76,8 +77,8 @@ var NAVTREEINDEX25 =
 "group___d_t_fc.html#ga83406cd61f77db51d8a91643bd6c2e98":[1,20,2,61],
 "group___d_t_fc.html#ga83417f60ff58e7cf0ec45ec85dfef380":[1,20,2,122],
 "group___d_t_fc.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[1,20,2,17],
-"group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,130],
 "group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,131],
+"group___d_t_fc.html#ga86167cdf7eaace383bf74d35f23cb49e":[1,20,2,130],
 "group___d_t_fc.html#ga88ebbd46d7ad2cb2374e4886c3194b5e":[1,20,2,38],
 "group___d_t_fc.html#ga88f1b74712df62b9970b6cbc6bb262e9":[1,20,2,21],
 "group___d_t_fc.html#ga89e68cdd07ab84568fe168af24311299":[1,20,2,106],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "group___flying_f4.html#ga2a5b4da2757e6727567656c3a9025ccd":[1,20,0,26],
 "group___flying_f4.html#ga2a94396f6c828bcf3a1c79e82a3d738a":[1,20,0,36],
 "group___flying_f4.html#ga2adfebbfed450cb79eeda3fa6a233e2d":[1,20,0,37],
-"group___flying_f4.html#ga2af7aee2d6120337db88c160c8c91c03":[1,20,0,86],
-"group___flying_f4.html#ga2be0b313025f4a19c9ac7d5f05d94000":[1,20,0,9]
+"group___flying_f4.html#ga2af7aee2d6120337db88c160c8c91c03":[1,20,0,86]
 };

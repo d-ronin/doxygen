@@ -1,5 +1,13 @@
 var NAVTREEINDEX82 =
 {
+"pios__usb__hid__istr_8h_source.html":[4,0,0,2,1,119],
+"pios__usb__hid__priv_8h.html":[4,0,0,2,1,120],
+"pios__usb__hid__priv_8h.html#ga5ae8bb7d09627f6ed20ab4f7874227fd":[4,0,0,2,1,120,2],
+"pios__usb__hid__priv_8h.html#gac56d93a50756ec83103cdfc4e5a31f3e":[4,0,0,2,1,120,1],
+"pios__usb__hid__priv_8h.html#gad8727d3d5a14b22a851789d5c12f4f85":[4,0,0,2,1,120,0],
+"pios__usb__hid__priv_8h_source.html":[4,0,0,2,1,120],
+"pios__usb__hid__pwr_8h.html":[4,0,0,2,1,121],
+"pios__usb__hid__pwr_8h.html#a02e9f94e1895246777017f97be116ed8":[4,0,0,2,1,121,3],
 "pios__usb__hid__pwr_8h.html#a02e9f94e1895246777017f97be116ed8a148fc074631497c48d617489fc547a40":[4,0,0,2,1,121,3,6],
 "pios__usb__hid__pwr_8h.html#a02e9f94e1895246777017f97be116ed8a51267d4ca34701143000280803ae29a4":[4,0,0,2,1,121,3,3],
 "pios__usb__hid__pwr_8h.html#a02e9f94e1895246777017f97be116ed8a5ed3f4fd6f4c00c4b6a460b7feb35001":[4,0,0,2,1,121,3,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX82 =
 "pipxtreme_2board-info_2pios__board_8h.html#gad7d712390299e8fbbe39f99ab8ca4d4d":[4,0,0,3,8,1,2,17],
 "pipxtreme_2board-info_2pios__board_8h.html#gad9504d2174472de2d678814e430678c9":[4,0,0,3,8,1,2,60],
 "pipxtreme_2board-info_2pios__board_8h.html#gadbe2bc366ea08ebb85a0c8ca4c7800e0":[4,0,0,3,8,1,2,28],
-"pipxtreme_2board-info_2pios__board_8h.html#gaddda4d7dabc9d785ce7b8499336349f1":[4,0,0,3,8,1,2,11],
-"pipxtreme_2board-info_2pios__board_8h.html#gae4912a499d71db827918d7908055ce05":[4,0,0,3,8,1,2,50],
-"pipxtreme_2board-info_2pios__board_8h.html#gaef90e208bce2777c1821abfa2dbe5688":[4,0,0,3,8,1,2,92],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf3768e561e7395f80d0558515c972a7c":[4,0,0,3,8,1,2,87],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf3fc4050161f3aa501a45165d5f4a41f":[4,0,0,3,8,1,2,85],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf4b96ccf49ae818bfad820fb4e76f782":[4,0,0,3,8,1,2,41],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf558afa100d9ca10d944e971190ee07d":[4,0,0,3,8,1,2,77],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf5d5f32c3a2c9f19c94deb70406d96e4":[4,0,0,3,8,1,2,62],
-"pipxtreme_2board-info_2pios__board_8h.html#gaf6410feddf16870e3e65d6a2631f1f51":[4,0,0,3,8,1,2,57]
+"pipxtreme_2board-info_2pios__board_8h.html#gaddda4d7dabc9d785ce7b8499336349f1":[4,0,0,3,8,1,2,11]
 };

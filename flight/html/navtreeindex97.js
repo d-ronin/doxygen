@@ -1,5 +1,13 @@
 var NAVTREEINDEX97 =
 {
+"struct_w_m_mtype___geo_magnetic_elements.html#a7457bb44f79e87703e2c83bab3c71ae9":[1,3,33,8],
+"struct_w_m_mtype___geo_magnetic_elements.html#a9a93785970d529cbca6172d59ca0d225":[1,3,33,0],
+"struct_w_m_mtype___geo_magnetic_elements.html#aa1d50824f5887167ee93d075222f9deb":[1,3,33,4],
+"struct_w_m_mtype___geo_magnetic_elements.html#aa1e42deb6458e019df1619c0fec2ba3c":[1,3,33,7],
+"struct_w_m_mtype___geo_magnetic_elements.html#aac0feb3987db9841acd278f27f0726c7":[1,3,33,9],
+"struct_w_m_mtype___geo_magnetic_elements.html#aaff92c0324d3a717abc215245cbd5238":[1,3,33,3],
+"struct_w_m_mtype___geo_magnetic_elements.html#ab653a08b7f24f25dd253ff9f16f3b01e":[1,3,33,5],
+"struct_w_m_mtype___geo_magnetic_elements.html#adb133f24b128e0dcd3ad2b219d2c42e5":[1,3,33,14],
 "struct_w_m_mtype___geo_magnetic_elements.html#ae3c575b310c43b133f83cf6bd3b14cfe":[1,3,33,6],
 "struct_w_m_mtype___geo_magnetic_elements.html#af6f78344def47740cd5ce0196189ce32":[1,3,33,12],
 "struct_w_m_mtype___geo_magnetic_elements.html#af81004bb2f8cd436246b1b4240d1acc9":[1,3,33,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX97 =
 "structhott__gam__message.html#aaf612153c3592f8128b6321b7735114d":[1,6,26,6,11],
 "structhott__gam__message.html#ab689e11f295c6fb8e94a8de63164a780":[1,6,26,6,19],
 "structhott__gam__message.html#acd723a5ed81424f7ac06a6664df0ef20":[1,6,26,6,13],
-"structhott__gam__message.html#ad194ea79eb64c10249a37914ff4cc1f9":[1,6,26,6,8],
-"structhott__gam__message.html#ad82cb5dc1961d4b9ed8c13a542dfd449":[1,6,26,6,3],
-"structhott__gam__message.html#adaa18479d5d5b8e56c3432b8b60c2d09":[1,6,26,6,9],
-"structhott__gam__message.html#adedbdbc55f2ba3c17845efe17c38947e":[1,6,26,6,14],
-"structhott__gam__message.html#ae7373a6ce627aae5712f84587067de9f":[1,6,26,6,25],
-"structhott__gam__message.html#ae829bd827f1d0cb88be86297a6044127":[1,6,26,6,0],
-"structhott__gam__message.html#aee4a63492d3067b57c3ddd01796ddd70":[1,6,26,6,17],
-"structhott__gam__message.html#af713bf6f3b6218a6afbb09f734d77eb2":[1,6,26,6,29],
-"structhott__gam__message.html#afaef5a06a46109325ec487caf0f4b7f0":[1,6,26,6,31]
+"structhott__gam__message.html#ad194ea79eb64c10249a37914ff4cc1f9":[1,6,26,6,8]
 };

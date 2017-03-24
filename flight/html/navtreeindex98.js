@@ -1,5 +1,13 @@
 var NAVTREEINDEX98 =
 {
+"structhott__gam__message.html#ad82cb5dc1961d4b9ed8c13a542dfd449":[1,6,26,6,3],
+"structhott__gam__message.html#adaa18479d5d5b8e56c3432b8b60c2d09":[1,6,26,6,9],
+"structhott__gam__message.html#adedbdbc55f2ba3c17845efe17c38947e":[1,6,26,6,14],
+"structhott__gam__message.html#ae7373a6ce627aae5712f84587067de9f":[1,6,26,6,25],
+"structhott__gam__message.html#ae829bd827f1d0cb88be86297a6044127":[1,6,26,6,0],
+"structhott__gam__message.html#aee4a63492d3067b57c3ddd01796ddd70":[1,6,26,6,17],
+"structhott__gam__message.html#af713bf6f3b6218a6afbb09f734d77eb2":[1,6,26,6,29],
+"structhott__gam__message.html#afaef5a06a46109325ec487caf0f4b7f0":[1,6,26,6,31],
 "structhott__gps__message.html":[1,6,26,5],
 "structhott__gps__message.html#a024599a8671b8500810e02b5a54991a7":[1,6,26,5,34],
 "structhott__gps__message.html#a030b24a17300e2dc0a9af0887fa1ca29":[1,6,26,5,29],
@@ -88,8 +96,8 @@ var NAVTREEINDEX98 =
 "structlpfilter__biquad__state.html":[1,3,1,4],
 "structlpfilter__first__order.html":[1,3,1,6],
 "structlpfilter__state.html":[1,3,1,7],
-"structmenu__fsm__transition.html":[1,10,0,10],
 "structmenu__fsm__transition.html":[1,9,1,10],
+"structmenu__fsm__transition.html":[1,10,0,10],
 "structmenu__fsm__transition.html":[1,7,1,10],
 "structmsg__capabilities__rep__all.html":[3,0,67],
 "structmsg__capabilities__rep__all.html#a8566e0c67b17e018a73a1eca2410fb33":[3,0,67,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX98 =
 "structmsp__select__setting.html":[1,5,0,32],
 "structmsp__select__setting.html#ab73b5df3dc08fb4c32628d6623b825f3":[1,5,0,32,0],
 "structmsp__servo.html":[1,5,0,4],
-"structmsp__servo.html#ae0492828bcd628f6582431cf241643e8":[1,5,0,4,0],
-"structmsp__servo__conf.html":[1,5,0,31],
-"structmsp__servo__conf.html#a84e75b57c4d2ba0df2bd65ad0ff6df6d":[1,5,0,31,0],
-"structmsp__set__box.html":[1,5,0,21],
-"structmsp__set__box.html#ace3fc17845fa9c4e84a9c72a4633edfd":[1,5,0,21,0],
-"structmsp__set__head.html":[1,5,0,33],
-"structmsp__set__head.html#ae73e6e45fd6f29ea51e8df47606eb369":[1,5,0,33,0],
-"structmsp__set__misc.html":[1,5,0,23],
-"structmsp__set__misc.html#a37555c685db60a4b4b0af4b8c7e5d9e8":[1,5,0,23,4]
+"structmsp__servo.html#ae0492828bcd628f6582431cf241643e8":[1,5,0,4,0]
 };

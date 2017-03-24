@@ -1,5 +1,13 @@
 var NAVTREEINDEX100 =
 {
+"structpios__internal__adc__cfg.html#aaebf99178a47cbe3c440f294bfa0207b":[1,0,57,5,3],
+"structpios__internal__adc__cfg.html#aaf65057cc3e9e3db9c075162b8ecfe1b":[1,0,57,5,5],
+"structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281":[1,0,57,5,0],
+"structpios__internal__adc__cfg.html#ade026429ab4238f63092fa17b4f95e4e":[1,0,57,5,6],
+"structpios__internal__adc__simple__cfg.html":[1,0,57,6],
+"structpios__internal__adc__simple__cfg.html#ad665d0b9d81e4c66d3d3a0c1f0895b53":[1,0,57,6,0],
+"structpios__internal__adc__simple__cfg.html#af809d617f352632f6bbe0e5018b52f21":[1,0,57,6,1],
+"structpios__internal__adc__simple__cfg.html#afa452c4e41d7c54ab3c3bff3faffdeee":[1,0,57,6,2],
 "structpios__lis3mdl__cfg.html":[1,0,24,0],
 "structpios__lis3mdl__cfg.html#a617710474e70b7ea86e99d2c0ba8c2ac":[1,0,24,0,0],
 "structpios__mpu60x0__cfg.html":[1,0,60,1],
@@ -237,17 +245,9 @@ var NAVTREEINDEX100 =
 "structpios__video__type__boundary.html":[1,0,83,3],
 "structpios__video__type__cfg.html":[1,0,83,4],
 "structpios__ws2811__cfg.html":[1,0,94],
+"structpoint__t.html":[1,9,1,9],
 "structpoint__t.html":[1,10,0,9],
 "structpoint__t.html":[1,7,1,9],
-"structpoint__t.html":[1,9,1,9],
 "structrcvr__activity__fsm.html":[1,6,15,9],
-"structrcvr__activity__fsm.html#a734a4dabb33f34467848db90882fc877":[1,6,15,9,1],
-"structrcvr__activity__fsm.html#acbfbcf2f18825d85bc9c672190f3d357":[1,6,15,9,2],
-"structrcvr__activity__fsm.html#af588f6bba28c8f4bb239d268df28124f":[1,6,15,9,0],
-"structrfm22b__device__status.html":[1,0,35,16],
-"structrfm22b__device__status.html#a0e8a44380a568a5ef6042f10482c32bb":[1,0,35,16,3],
-"structrfm22b__device__status.html#a623b1593e03195daa52aa5b7729a4133":[1,0,35,16,1],
-"structrfm22b__device__status.html#a69ba706d8929ce6d8c55d57054987208":[1,0,35,16,2],
-"structrfm22b__device__status.html#aef6e234e828083fb1aafcc81b28d95dc":[1,0,35,16,0],
-"structrfm22b__stats.html":[1,0,35,11]
+"structrcvr__activity__fsm.html#a734a4dabb33f34467848db90882fc877":[1,6,15,9,1]
 };

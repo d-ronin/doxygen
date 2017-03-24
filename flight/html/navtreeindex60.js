@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"group___u_s_b___c_o_n_f___exported___defines.html#gab76257de69c4dfbe6f439d76f5e3e660":[1,16,0,0,42],
+"group___u_s_b___c_o_n_f___exported___defines.html#gab76257de69c4dfbe6f439d76f5e3e660":[1,16,0,0,43],
+"group___u_s_b___c_o_n_f___exported___defines.html#gab76257de69c4dfbe6f439d76f5e3e660":[1,16,0,0,44],
+"group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,27],
+"group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,28],
+"group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,29],
+"group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,30],
 "group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,31],
 "group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,32],
 "group___u_s_b___c_o_n_f___exported___defines.html#gad46a504a2195416b71d51d5d46b773c2":[1,16,0,0,33],
@@ -30,8 +37,8 @@ var NAVTREEINDEX60 =
 "group___unit_tests.html#ga24a114e324d7b9f86337c08c9f2b6c64":[1,27,122],
 "group___unit_tests.html#ga253b9e2c592f3b3754c532aeea4968d4":[1,27,74],
 "group___unit_tests.html#ga2580ac9268922b714cd5d5d8f85083c3":[1,27,110],
-"group___unit_tests.html#ga2866b0186d8c109d2066708d2da2586d":[1,27,45],
 "group___unit_tests.html#ga2866b0186d8c109d2066708d2da2586d":[1,27,1,1],
+"group___unit_tests.html#ga2866b0186d8c109d2066708d2da2586d":[1,27,45],
 "group___unit_tests.html#ga2a37e7c06175d490002101b13fec1c97":[1,27,12,0],
 "group___unit_tests.html#ga2a37e7c06175d490002101b13fec1c97":[1,27,39],
 "group___unit_tests.html#ga2ae66629b7714cae9e6b7fa7513e582a":[1,27,80],
@@ -242,12 +249,5 @@ var NAVTREEINDEX60 =
 "group___v_t_x_config.html#ga9fd5a4a8914d9b202579be2acf0f2923":[1,3,24,2],
 "group___v_t_x_config.html#gaacb0a3a45ae499fcdde7c1cef4e1ef90":[1,6,33,31],
 "group___v_t_x_config.html#gab7f1e9787f8d309756d6c1534ea9009e":[1,6,33,20],
-"group___v_t_x_config.html#gabdf85548aa430ab8cbe7c3cd54121369":[1,6,33,3,15],
-"group___v_t_x_config.html#gabdf85548aa430ab8cbe7c3cd54121369":[1,6,33,43],
-"group___v_t_x_config.html#gabdf85548aa430ab8cbe7c3cd54121369":[1,3,24,15],
-"group___v_t_x_config.html#gad35df4142741edb3e8a06a384611e41f":[1,6,33,4],
-"group___v_t_x_config.html#gad398ee28b78ed0b35f6392e03c9258e7":[1,6,33,48],
-"group___v_t_x_config.html#gad4006cb3d8331da7171bd9472eea37f2":[1,6,33,9],
-"group___v_t_x_config.html#gad8d5ce29ab3073c120d218dee741426c":[1,6,33,30],
-"group___v_t_x_config.html#gae0b7746cd2a5ecc22d8875fa742406e7":[1,6,33,3,3]
+"group___v_t_x_config.html#gabdf85548aa430ab8cbe7c3cd54121369":[1,6,33,3,15]
 };

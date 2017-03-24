@@ -1,5 +1,13 @@
 var NAVTREEINDEX80 =
 {
+"pios__sbus__priv_8h.html#ga047a25f29979d236cb99b3e4881c013d":[4,0,0,2,3,0,4,8],
+"pios__sbus__priv_8h.html#ga0f1599f4ffb8a2eba983f8444e0361e0":[4,0,0,2,3,0,4,10],
+"pios__sbus__priv_8h.html#ga4c24df11147dfeb65b7c3f54d09606c2":[4,0,0,2,3,0,4,5],
+"pios__sbus__priv_8h.html#ga83004ff7d058d0364b9e7b9ce297aeae":[4,0,0,2,3,0,4,0],
+"pios__sbus__priv_8h.html#ga84b556534ba964c839398e13104f4692":[4,0,0,2,3,0,4,7],
+"pios__sbus__priv_8h.html#ga86f6bfbff35cbd88d119bb5b649d5fd7":[4,0,0,2,3,0,4,4],
+"pios__sbus__priv_8h.html#gaa8b10338a1c93ffe8ca0714b5abfac02":[4,0,0,2,3,0,4,11],
+"pios__sbus__priv_8h.html#gab650142b1430ef164ef68b42908b1f8c":[4,0,0,2,3,0,4,1],
 "pios__sbus__priv_8h.html#gabdf62d6d9de1ea010f7174fad933bb08":[4,0,0,2,3,0,4,2],
 "pios__sbus__priv_8h.html#gac3278c8a18f40d9d17052e181bbd7920":[4,0,0,2,3,0,4,3],
 "pios__sbus__priv_8h.html#gae62eb9f5c8bd04153a8950ba4a75c781":[4,0,0,2,3,0,4,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX80 =
 "pios__usb__defs_8h.html#ga08bfe56168bce03e2c33f73d51b12b3c":[4,0,0,2,1,115,31],
 "pios__usb__defs_8h.html#ga09790ada76856d0562b9eef5d9637f6c":[4,0,0,2,1,115,77],
 "pios__usb__defs_8h.html#ga0bfb0e326d9a01072c029cba788d6456":[4,0,0,2,1,115,9],
-"pios__usb__defs_8h.html#ga126420e50e08d0c3b6233ecf663a9d51":[4,0,0,2,1,115,163],
-"pios__usb__defs_8h.html#ga1290bb20dea8bec98ed235a6d8c343e7":[4,0,0,2,1,115,24],
-"pios__usb__defs_8h.html#ga14b15926aabe4d2009fd0de8899ed638":[4,0,0,2,1,115,34],
-"pios__usb__defs_8h.html#ga15c24f2eca3cd0a9c359f4e66cb82523":[4,0,0,2,1,115,70],
-"pios__usb__defs_8h.html#ga15dc30e657ffe4355ba53c2254eb28b5":[4,0,0,2,1,115,69],
-"pios__usb__defs_8h.html#ga178d8d4262520ecfbe1435eff27c90b6":[4,0,0,2,1,115,46],
-"pios__usb__defs_8h.html#ga1ad144333e75b0d867e72f8a337cd510":[4,0,0,2,1,115,117],
-"pios__usb__defs_8h.html#ga1c7eaa2f09ca8253de1711d01e05e02c":[4,0,0,2,1,115,121],
-"pios__usb__defs_8h.html#ga1deca1f1d6e5815b290e6e1015bce5b8":[4,0,0,2,1,115,105]
+"pios__usb__defs_8h.html#ga126420e50e08d0c3b6233ecf663a9d51":[4,0,0,2,1,115,163]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ba4f099</span>
+   &#160;<span id="projectnumber">cb92ddc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -188,7 +188,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Output object: CameraDesired</p>
-<p>This module will periodically calculate the output values for stabilizing the camera. It supports controlling the camera an angle specified by the sticks (provided by AccessoryDesired) or at a rate specified by the sticks. Alternatively it can just try and hold the camera at a fixed angle. This module is designed to be used when the flight control is on the airframe of the aircraft. If the controller is placed on the gimbal using the standard stabilization code will work. </p>
+<p>This module will periodically calculate the output values for stabilizing the camera. It supports controlling the camera an angle specified by the sticks (provided by ManualControlCommand) or at a rate specified by the sticks. Alternatively it can just try and hold the camera at a fixed angle. This module is designed to be used when the flight control is on the airframe of the aircraft. If the controller is placed on the gimbal using the standard stabilization code will work. </p>
 
 <p>Definition at line <a class="el" href="camerastab_8c_source.html#l00065">65</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
 
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Apply feedforward compensation to the outputs to get a faster response from the servos. This code is separate from the code in the mixer to allow different time constants to be used, although for cameras a time constant of 0 is common. The code tracks the difference in the attitude between calls and adds a scaling of the difference to the accumulated "boost". </p>
 
-<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00325">325</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
+<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00329">329</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Relay control messages to an external gimbal </p>
 
-<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00428">428</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
+<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00432">432</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00357">357</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
+<p>Definition at line <a class="el" href="camerastab_8c_source.html#l00361">361</a> of file <a class="el" href="camerastab_8c_source.html">camerastab.c</a>.</p>
 
 </div>
 </div>

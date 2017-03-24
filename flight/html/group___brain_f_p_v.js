@@ -77,6 +77,7 @@ var group___brain_f_p_v =
     [ "PIOS_INCLUDE_WDG", "group___brain_f_p_v.html#gac32d1b30633c310fbeea61674a514850", null ],
     [ "PIOS_LOGFLASH_SECT_SIZE", "group___brain_f_p_v.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
     [ "PIOS_MPU6050_ACCEL", "group___brain_f_p_v.html#ga98ce1bd77aafaf8d94abb18a7d22a942", null ],
+    [ "PIOS_OMIT_TIM2IRQ", "group___brain_f_p_v.html#ga9787c2c824b6c4508c3b5298b40ec1bc", null ],
     [ "PIOS_TELEM_PRIORITY_QUEUE", "group___brain_f_p_v.html#ga10b6d602d36a03da82e31f6eff2e0a83", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "group___brain_f_p_v.html#ga245666dd976970e45363b17f9e55d5bf", null ],
     [ "PIOS_VIDEO_HSYNC_OFFSET", "group___brain_f_p_v.html#ga491ba150016a5e19a48470a28798bc35", null ],

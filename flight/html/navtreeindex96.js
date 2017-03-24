@@ -1,5 +1,13 @@
 var NAVTREEINDEX96 =
 {
+"struct_p_h_ack_nack_packet.html#aac07270becd441ff9dafa3e01945883c":[1,3,19,1],
+"struct_p_h_connection_packet.html":[1,3,22],
+"struct_p_h_connection_packet.html#a047b7d5ea9d5699d06966d96ef4ccfba":[1,3,22,1],
+"struct_p_h_connection_packet.html#a4e11c88e3be1dbcacc324aace217b7e6":[1,3,22,6],
+"struct_p_h_connection_packet.html#a50a68f68b6f7f8d07f91f9076d638dbd":[1,3,22,2],
+"struct_p_h_connection_packet.html#a52261a934b08802064ddd177d22f5a1b":[1,3,22,3],
+"struct_p_h_connection_packet.html#a607b2aff285e735c41dee293f8144be0":[1,3,22,4],
+"struct_p_h_connection_packet.html#aaeff460e39a62242df16ffce090b0760":[1,3,22,5],
 "struct_p_h_connection_packet.html#ac0efb46843892dc7b42a503eeea6d58c":[1,3,22,0],
 "struct_p_h_packet.html":[1,3,18],
 "struct_p_h_packet.html#a930af3e24c9d3aa4a29fa0e72b62f12b":[1,3,18,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX96 =
 "struct_w_m_mtype___geo_magnetic_elements.html#a094afb05e04f6d9654a1a469987600a6":[1,3,33,15],
 "struct_w_m_mtype___geo_magnetic_elements.html#a2290a6a91702f831acd13dc8433c816a":[1,3,33,13],
 "struct_w_m_mtype___geo_magnetic_elements.html#a58fb30f1b03a7cace00a55fb28f6752f":[1,3,33,11],
-"struct_w_m_mtype___geo_magnetic_elements.html#a6c23bd42050e02810a937cd0316b9d8e":[1,3,33,1],
-"struct_w_m_mtype___geo_magnetic_elements.html#a7457bb44f79e87703e2c83bab3c71ae9":[1,3,33,8],
-"struct_w_m_mtype___geo_magnetic_elements.html#a9a93785970d529cbca6172d59ca0d225":[1,3,33,0],
-"struct_w_m_mtype___geo_magnetic_elements.html#aa1d50824f5887167ee93d075222f9deb":[1,3,33,4],
-"struct_w_m_mtype___geo_magnetic_elements.html#aa1e42deb6458e019df1619c0fec2ba3c":[1,3,33,7],
-"struct_w_m_mtype___geo_magnetic_elements.html#aac0feb3987db9841acd278f27f0726c7":[1,3,33,9],
-"struct_w_m_mtype___geo_magnetic_elements.html#aaff92c0324d3a717abc215245cbd5238":[1,3,33,3],
-"struct_w_m_mtype___geo_magnetic_elements.html#ab653a08b7f24f25dd253ff9f16f3b01e":[1,3,33,5],
-"struct_w_m_mtype___geo_magnetic_elements.html#adb133f24b128e0dcd3ad2b219d2c42e5":[1,3,33,14]
+"struct_w_m_mtype___geo_magnetic_elements.html#a6c23bd42050e02810a937cd0316b9d8e":[1,3,33,1]
 };

@@ -85,7 +85,6 @@ var searchData=
   ['lifetime',['lifetime',['../structmsp__misc.html#ac2955d4c5945d012a550579b4274fbc3',1,'msp_misc::lifetime()'],['../structmsp__set__misc.html#a4166f147f944dfe8fcc394792061e1ed',1,'msp_set_misc::lifetime()'],['../msp__messages_8h.html#a569e06e92ec3d06c5ebf7f40d7f9a84e',1,'lifetime():&#160;msp_messages.h']]],
   ['limit',['LIMIT',['../group___on_screen_display.html#gaeeb6817f730ee1cfcb95f62d5fa13561',1,'osd_utils.h']]],
   ['line',['line',['../structpios__exti__cfg.html#ac8acb6d5a45610f65ed2eb066216694b',1,'pios_exti_cfg']]],
-  ['line_5fcounter',['line_counter',['../group___p_i_o_s___v_i_d_e_o.html#ga6b61a0d26a49c30e1a9fc46e9f759d41',1,'pios_video_cfg']]],
   ['linear_5finterpolate',['linear_interpolate',['../group___tau_labs_math.html#gaa491e6b9634fc7e05afd03b8a56ec135',1,'misc_math.c']]],
   ['linearinterpolate',['LinearInterpolate',['../class_linear_interpolate.html',1,'']]],
   ['linearizefg',['LinearizeFG',['../group___tau_labs_libraries.html#gab194242801a5031a5601acf6ded3edf0',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#gab560144e7b798db7faf80a4c37902c88',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps14state.c']]],

@@ -43,6 +43,7 @@ var targets_2playuavosd_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_USB_HID", "targets_2playuavosd_2fw_2pios__config_8h.html#ga71ac5951782a849bcc916fe21f1df092", null ],
     [ "PIOS_INCLUDE_VIDEO", "targets_2playuavosd_2fw_2pios__config_8h.html#ga2c77278e25177483ce8e0d93d12e67a6", null ],
     [ "PIOS_INCLUDE_WDG", "targets_2playuavosd_2fw_2pios__config_8h.html#gac32d1b30633c310fbeea61674a514850", null ],
+    [ "PIOS_OMIT_TIM2IRQ", "targets_2playuavosd_2fw_2pios__config_8h.html#ga9787c2c824b6c4508c3b5298b40ec1bc", null ],
     [ "PIOS_TELEM_PRIORITY_QUEUE", "targets_2playuavosd_2fw_2pios__config_8h.html#ga10b6d602d36a03da82e31f6eff2e0a83", null ],
     [ "PIOS_VIDEO_SPLITBUFFER", "targets_2playuavosd_2fw_2pios__config_8h.html#gad5cf9eb7ddd2ec621eba2cb43828557a", null ],
     [ "PIOS_VIDEO_TIM4_COUNTER", "targets_2playuavosd_2fw_2pios__config_8h.html#ga52804fcdee0d6927e4c5f45fc74d8b48", null ],

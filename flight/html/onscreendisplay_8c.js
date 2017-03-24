@@ -29,6 +29,7 @@ var onscreendisplay_8c =
     [ "draw_map_home_center", "onscreendisplay_8c.html#gac773c163d671bfe5222b3062a5723f47", null ],
     [ "draw_map_uav_center", "onscreendisplay_8c.html#gab85612b67ef819c3b876bdbbdf6c46be", null ],
     [ "drawBattery", "onscreendisplay_8c.html#ga85d7e1ad745a9c81483f8b513db8cebc", null ],
+    [ "get_accessorydesired", "onscreendisplay_8c.html#ga64b9a6456ed54289f371724e88768ace", null ],
     [ "hud_draw_linear_compass", "onscreendisplay_8c.html#ga64f2ef925a40be4acae2a5364cc5ef6a", null ],
     [ "hud_draw_vertical_scale", "onscreendisplay_8c.html#gaca083484bed6d47ad52ba31216514ea6", null ],
     [ "introGraphics", "onscreendisplay_8c.html#ga3c8f34c917bb0b2c93ee0b54260cf9fc", null ],

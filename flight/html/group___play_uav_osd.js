@@ -87,6 +87,7 @@ var group___play_uav_osd =
     [ "PIOS_IRQ_PRIO_MID", "group___play_uav_osd.html#ga5eae9194437f23b68678de2ba9d9ce4a", null ],
     [ "PIOS_LED_ALARM", "group___play_uav_osd.html#gae4912a499d71db827918d7908055ce05", null ],
     [ "PIOS_LED_HEARTBEAT", "group___play_uav_osd.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],
+    [ "PIOS_OMIT_TIM2IRQ", "group___play_uav_osd.html#ga9787c2c824b6c4508c3b5298b40ec1bc", null ],
     [ "PIOS_PERIPHERAL_APB1_CLOCK", "group___play_uav_osd.html#ga422d4d808a71d4b756877ac8e2d16255", null ],
     [ "PIOS_PERIPHERAL_APB2_CLOCK", "group___play_uav_osd.html#gaf6410feddf16870e3e65d6a2631f1f51", null ],
     [ "PIOS_SYSCLK", "group___play_uav_osd.html#ga8f592a960a21018006bd68f30692ab5b", null ],

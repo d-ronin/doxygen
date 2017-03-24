@@ -3,7 +3,6 @@ var structpios__video__cfg =
     [ "hsync_capture", "group___p_i_o_s___v_i_d_e_o.html#ga822673490bf87283e3afab0f52c6d6c4", null ],
     [ "level", "group___p_i_o_s___v_i_d_e_o.html#gae6dcfa0463ff5b2481f48792dccfce08", null ],
     [ "level_dma", "group___p_i_o_s___v_i_d_e_o.html#gab3aa2d83307e0e0ee547797a1a98b09a", null ],
-    [ "line_counter", "group___p_i_o_s___v_i_d_e_o.html#ga6b61a0d26a49c30e1a9fc46e9f759d41", null ],
     [ "mask", "group___p_i_o_s___v_i_d_e_o.html#gab87d8c99facf03ed350046c808ac0d2c", null ],
     [ "mask_dma", "group___p_i_o_s___v_i_d_e_o.html#ga2385bc458b17dc35c7b355e575b4c138", null ],
     [ "pixel_timer", "group___p_i_o_s___v_i_d_e_o.html#ga9d31059ecd1d668ed8b3a581aaf5690c", null ],

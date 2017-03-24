@@ -9,6 +9,7 @@ var searchData=
   ['geofence_5fcontrol_5fupdate',['geofence_control_update',['../group___control.html#ga2987bbb3a3aeed4eff6ad4f596fcb2d4',1,'geofence_control.c']]],
   ['geofenceinitialize',['GeofenceInitialize',['../group___geo_fence.html#ga533d5f1ff77cfb05f9b3ec110704b0ba',1,'geofence.c']]],
   ['geofencestart',['GeofenceStart',['../group___geo_fence.html#gae90b32e760c5cc09ad1590bb3a6a03a7',1,'geofence.c']]],
+  ['get_5faccessorydesired',['get_accessorydesired',['../group___on_screen_display.html#ga64b9a6456ed54289f371724e88768ace',1,'onscreendisplay.c']]],
   ['get_5fcolor',['get_color',['../group___on_screen_display.html#ga67d5abba3a2abbc7335e75afaf0b60b6',1,'osd_menu.c']]],
   ['get_5fcontroller_5fevent',['get_controller_event',['../group___on_screen_display.html#ga450962437d9382d29dcff2220a3efedd',1,'osd_menu.c']]],
   ['get_5fcurve2_5fsource',['get_curve2_source',['../group___actuator_module.html#ga5586adc1dec0583698aab0c7c1f3b5e6',1,'actuator.c']]],

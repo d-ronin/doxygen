@@ -58,7 +58,7 @@ var searchData=
   ['gpsvelqueue',['gpsVelQueue',['../group___attitude_module.html#ga5016167649a7652f46a11d3739daf3fe',1,'attitude.c']]],
   ['graphics_5fbottom',['graphics_bottom',['../group___p_i_o_s___v_i_d_e_o.html#ga2f66faebbdbe640e6dab81dbf7317cf9',1,'pios_video_type_boundary']]],
   ['graphics_5fcolumn_5fstart',['graphics_column_start',['../group___p_i_o_s___v_i_d_e_o.html#ga77eaac1e356c10860261b6b31265b8f1',1,'pios_video_type_cfg']]],
-  ['graphics_5fhight_5freal',['graphics_hight_real',['../group___p_i_o_s___v_i_d_e_o.html#gadc28ec5881f5b746d87710ef83e306c8',1,'pios_video_type_cfg']]],
+  ['graphics_5fheight_5freal',['graphics_height_real',['../group___p_i_o_s___v_i_d_e_o.html#gace5c9c0f1fde8d9d5b5ec8628b7f36da',1,'pios_video_type_cfg']]],
   ['graphics_5fline_5fstart',['graphics_line_start',['../group___p_i_o_s___v_i_d_e_o.html#ga1b3f48374f2b276c5d6b57fe2c5890d6',1,'pios_video_type_cfg']]],
   ['graphics_5fright',['graphics_right',['../group___p_i_o_s___v_i_d_e_o.html#ga39c93fc729c9a784cba57e74456c7dba',1,'pios_video_type_boundary']]],
   ['grot_5ffiltered',['grot_filtered',['../structcomplementary__filter__state.html#a91176df07de5e650a8afe8bec74d3ce1',1,'complementary_filter_state']]],

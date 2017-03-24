@@ -1,5 +1,13 @@
 var NAVTREEINDEX93 =
 {
+"sparky2_2fw_2mcuconf_8h.html#a02ab064f32c429288dce0b15b2e443a1":[4,0,0,3,15,2,5,178],
+"sparky2_2fw_2mcuconf_8h.html#a02b4e3e6222baab7ee448cbbb2273370":[4,0,0,3,15,2,5,95],
+"sparky2_2fw_2mcuconf_8h.html#a02c568ae2c758034cdf478f81b447af3":[4,0,0,3,15,2,5,177],
+"sparky2_2fw_2mcuconf_8h.html#a0324f80d5775896053a81432c0475ac3":[4,0,0,3,15,2,5,12],
+"sparky2_2fw_2mcuconf_8h.html#a0330335b8223bb2fd7b30a8bf6748a25":[4,0,0,3,15,2,5,157],
+"sparky2_2fw_2mcuconf_8h.html#a035ea0d8259c0f89306c6a7d344705f2":[4,0,0,3,15,2,5,58],
+"sparky2_2fw_2mcuconf_8h.html#a050fc59913309402f34dd2ea6ab3cdf8":[4,0,0,3,15,2,5,175],
+"sparky2_2fw_2mcuconf_8h.html#a05b49e91f478558d33b2b862718758fa":[4,0,0,3,15,2,5,94],
 "sparky2_2fw_2mcuconf_8h.html#a061e9a31faab6d787c73d7f21893e483":[4,0,0,3,15,2,5,128],
 "sparky2_2fw_2mcuconf_8h.html#a072aabc3f06ec1702c1fc5eb3c6b01f8":[4,0,0,3,15,2,5,122],
 "sparky2_2fw_2mcuconf_8h.html#a086d8965c7249503bdce6f9b4a7352cb":[4,0,0,3,15,2,5,78],
@@ -241,13 +249,5 @@ var NAVTREEINDEX93 =
 "sparky_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c":[4,0,0,3,14,1,1,1],
 "sparky_2board-info_2cmsis__system_8c.html#ga40e1495541cbb4acbe3f1819bd87a9fe":[4,0,0,3,14,1,1,0],
 "sparky_2board-info_2cmsis__system_8c.html#ga93f514700ccf00d08dbdcff7f1224eb2":[4,0,0,3,14,1,1,3],
-"sparky_2board-info_2cmsis__system_8c.html#gaa3cd3e43291e81e795d642b79b6088e6":[4,0,0,3,14,1,1,5],
-"sparky_2board-info_2cmsis__system_8c.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[4,0,0,3,14,1,1,4],
-"sparky_2board-info_2cmsis__system_8c.html#gae0c36a9591fe6e9c45ecb21a794f0f0f":[4,0,0,3,14,1,1,2],
-"sparky_2board-info_2cmsis__system_8c_source.html":[4,0,0,3,14,1,1],
-"sparky_2board-info_2pios__board_8h.html":[4,0,0,3,14,1,2],
-"sparky_2board-info_2pios__board_8h.html#ga05dca72c42c6c2b33fa62b8ee0fcb2ea":[4,0,0,3,14,1,2,54],
-"sparky_2board-info_2pios__board_8h.html#ga063cb938f1bfd219544fb1fee9497b93":[4,0,0,3,14,1,2,49],
-"sparky_2board-info_2pios__board_8h.html#ga0c26ccb35355e18dad04a55f4549deec":[4,0,0,3,14,1,2,27],
-"sparky_2board-info_2pios__board_8h.html#ga24c6da05c7d0a33b87b0c66cca0700d6":[4,0,0,3,14,1,2,38]
+"sparky_2board-info_2cmsis__system_8c.html#gaa3cd3e43291e81e795d642b79b6088e6":[4,0,0,3,14,1,1,5]
 };

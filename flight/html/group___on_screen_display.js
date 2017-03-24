@@ -337,6 +337,7 @@ var group___on_screen_display =
     [ "ellipse", "group___on_screen_display.html#gad7ea00fa059e0f9ec514b43f176db91c", null ],
     [ "filter_menu", "group___on_screen_display.html#ga12022f9d65b4d987e2188d4fcd626b5f", null ],
     [ "flightmode_menu", "group___on_screen_display.html#ga8d5303718d0df9e311cc8caa1b2f013b", null ],
+    [ "get_accessorydesired", "group___on_screen_display.html#ga64b9a6456ed54289f371724e88768ace", null ],
     [ "get_color", "group___on_screen_display.html#ga67d5abba3a2abbc7335e75afaf0b60b6", null ],
     [ "get_controller_event", "group___on_screen_display.html#ga450962437d9382d29dcff2220a3efedd", null ],
     [ "get_font_info", "group___on_screen_display.html#ga622f68728eda3ab5f67fac3523955faf", null ],
