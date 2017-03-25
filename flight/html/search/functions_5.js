@@ -19,7 +19,7 @@ var searchData=
   ['ep6_5fout_5fcallback',['EP6_OUT_Callback',['../pios__usb__hid__istr_8h.html#ac933ff35b417b10442e984a4db7cd8ac',1,'pios_usb_hid_istr.h']]],
   ['ep7_5fin_5fcallback',['EP7_IN_Callback',['../pios__usb__hid__istr_8h.html#aa5a883a23943769c062b30dd5a875c4a',1,'pios_usb_hid_istr.h']]],
   ['ep7_5fout_5fcallback',['EP7_OUT_Callback',['../pios__usb__hid__istr_8h.html#a644aaec32cb5d54d126f96b2a1b62cbd',1,'pios_usb_hid_istr.h']]],
-  ['error',['error',['../group___bootloader_update.html#ga5879845a39e040157796c1d907f43d24',1,'main.c']]],
+  ['error',['error',['../group___updater.html#ga5879845a39e040157796c1d907f43d24',1,'main.c']]],
   ['euler2r',['Euler2R',['../group___tau_labs_math.html#ga33c35c48faebb53d4d2cd46b67aba8ff',1,'coordinate_conversions.c']]],
   ['eventclearstats',['EventClearStats',['../group___system_module.html#ga17f7c06410e7f0c04e1d1df6beee93d4',1,'EventClearStats():&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga17f7c06410e7f0c04e1d1df6beee93d4',1,'EventClearStats():&#160;systemmod.c']]],
   ['eventgetstats',['EventGetStats',['../group___system_module.html#ga938822e7233dbbb444a5bdde8f626fae',1,'EventGetStats(EventStats *statsOut):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga938822e7233dbbb444a5bdde8f626fae',1,'EventGetStats(EventStats *statsOut):&#160;systemmod.c']]],
@@ -29,12 +29,6 @@ var searchData=
   ['eventperiodicqueuecreate',['EventPeriodicQueueCreate',['../group___system_module.html#ga26f4f21c174d0caf6301734360fc885a',1,'EventPeriodicQueueCreate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga26f4f21c174d0caf6301734360fc885a',1,'EventPeriodicQueueCreate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c']]],
   ['eventperiodicqueueupdate',['EventPeriodicQueueUpdate',['../group___system_module.html#ga914ce570d6529619085bb00319fc05e0',1,'EventPeriodicQueueUpdate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga914ce570d6529619085bb00319fc05e0',1,'EventPeriodicQueueUpdate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c']]],
   ['eventperiodicupdate',['eventPeriodicUpdate',['../group___system_module.html#gaa926a99228262150f436a4011b9c0bfb',1,'systemmod.c']]],
-  ['exampleinitialize',['ExampleInitialize',['../_modules_2_example_2example_8c.html#ac70e0fa975eabecf432dfdb56c0ae5bb',1,'example.c']]],
-  ['examplemodeventinitialize',['ExampleModEventInitialize',['../examplemodevent_8c.html#aa72a062cf6d5b01162f91cec7f034843',1,'ExampleModEventInitialize():&#160;examplemodevent.c'],['../examplemodevent_8h.html#aa72a062cf6d5b01162f91cec7f034843',1,'ExampleModEventInitialize():&#160;examplemodevent.c']]],
-  ['examplemodperiodicinitialize',['ExampleModPeriodicInitialize',['../examplemodperiodic_8c.html#ad41ef61a2f54f09538e8d34e0b7d29bb',1,'ExampleModPeriodicInitialize():&#160;examplemodperiodic.c'],['../examplemodperiodic_8h.html#ad41ef61a2f54f09538e8d34e0b7d29bb',1,'ExampleModPeriodicInitialize():&#160;examplemodperiodic.c']]],
-  ['examplemodthreadinitialize',['ExampleModThreadInitialize',['../examplemodthread_8c.html#a3c38548bf0f917bb1e00b7bf23adbd2e',1,'ExampleModThreadInitialize():&#160;examplemodthread.c'],['../examplemodthread_8h.html#a3c38548bf0f917bb1e00b7bf23adbd2e',1,'ExampleModThreadInitialize():&#160;examplemodthread.c']]],
-  ['examplestart',['ExampleStart',['../_modules_2_example_2example_8c.html#a699bf751ef299199051399f6fcc390c2',1,'example.c']]],
-  ['exampletask',['exampleTask',['../examplemodperiodic_8c.html#ac904082acf1126d7c77493e8ede6ec48',1,'exampleTask(void *parameters):&#160;examplemodperiodic.c'],['../examplemodthread_8c.html#ac904082acf1126d7c77493e8ede6ec48',1,'exampleTask(void *parameters):&#160;examplemodthread.c']]],
   ['expo3',['expo3',['../group___tau_labs_math.html#ga62c8aa7dba26285dc04c2bd181711ff5',1,'misc_math.c']]],
   ['expom',['expoM',['../group___tau_labs_math.html#gaa176231c25bcf83877304a735c40f177',1,'misc_math.c']]]
 ];

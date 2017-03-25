@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('pios__can_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_a_n.html#ga8b12bd1aab9e905a42f0a10062a63fb3">PIOS_CAN_TxData</a>(uintptr_t <span class="keywordtype">id</span>, <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d">pios_can_messages</a>, uint8_t *<a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span>pios_queue * <a class="code" href="group___p_i_o_s___c_a_n.html#ga7bc7bee11532850cbc7e69a68504a42d">PIOS_CAN_RegisterMessageQueue</a>(uintptr_t <span class="keywordtype">id</span>, <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d">pios_can_messages</a> msg_id);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__queue.html">pios_queue</a> * <a class="code" href="group___p_i_o_s___c_a_n.html#ga7bc7bee11532850cbc7e69a68504a42d">PIOS_CAN_RegisterMessageQueue</a>(uintptr_t <span class="keywordtype">id</span>, <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d">pios_can_messages</a> msg_id);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CAN_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
@@ -164,6 +164,7 @@ $(document).ready(function(){initNavTree('pios__can_8h_source.html','');});
 <div class="ttc" id="structpios__can__gimbal__message_html_a6f243042c43d4d05d85f4c9225d5b382"><div class="ttname"><a href="structpios__can__gimbal__message.html#a6f243042c43d4d05d85f4c9225d5b382">pios_can_gimbal_message::fc_yaw</a></div><div class="ttdeci">uint8_t fc_yaw</div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00045">pios_can.h:45</a></div></div>
 <div class="ttc" id="structpios__can__gimbal__message_html"><div class="ttname"><a href="structpios__can__gimbal__message.html">pios_can_gimbal_message</a></div><div class="ttdoc">Message to tell gimbal the desired setpoint and FC state. </div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00042">pios_can.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_a_n_html_ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487"><div class="ttname"><a href="group___p_i_o_s___c_a_n.html#ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487">PIOS_CAN_GIMBAL</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00037">pios_can.h:37</a></div></div>
+<div class="ttc" id="structpios__queue_html"><div class="ttname"><a href="structpios__queue.html">pios_queue</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00034">pios_queue.c:34</a></div></div>
 <div class="ttc" id="structpios__can__gimbal__message_html_ac6b29792276f59dcb477bfe51dc6650a"><div class="ttname"><a href="structpios__can__gimbal__message.html#ac6b29792276f59dcb477bfe51dc6650a">pios_can_gimbal_message::setpoint_yaw</a></div><div class="ttdeci">uint8_t setpoint_yaw</div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00048">pios_can.h:48</a></div></div>
 <div class="ttc" id="structpios__can__gimbal__message_html_a65e99947570f7f8a6dacf1fcf2301b4b"><div class="ttname"><a href="structpios__can__gimbal__message.html#a65e99947570f7f8a6dacf1fcf2301b4b">pios_can_gimbal_message::fc_roll</a></div><div class="ttdeci">int8_t fc_roll</div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00043">pios_can.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

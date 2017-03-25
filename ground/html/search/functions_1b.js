@@ -158,6 +158,7 @@ var searchData=
   ['_7epfdqmlgadget',['~PfdQmlGadget',['../class_pfd_qml_gadget.html#a14a791e928788f5aca7b2430062955b2',1,'PfdQmlGadget']]],
   ['_7epfdqmlgadgetfactory',['~PfdQmlGadgetFactory',['../class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c',1,'PfdQmlGadgetFactory']]],
   ['_7epfdqmlgadgetwidget',['~PfdQmlGadgetWidget',['../class_pfd_qml_gadget_widget.html#a02e8beb8b84aa1aaf39e24a92d3b09b7',1,'PfdQmlGadgetWidget']]],
+  ['_7epikoblx',['~PikoBLX',['../group___boards__d_ronin.html#gaf53a6caaedde20333d3de6aa95d21d24',1,'PikoBLX']]],
   ['_7eplayuavosd',['~PlayUavOsd',['../group___boards__d_ronin.html#ga8c6803ae372778ab44e96b360b5d8c8e',1,'PlayUavOsd']]],
   ['_7eplot2ddata',['~Plot2dData',['../group___scope_plugin.html#ga7e60665e7c88b1df55cfefe356d8ee27',1,'Plot2dData']]],
   ['_7eplot3ddata',['~Plot3dData',['../group___scope_plugin.html#gaba0a6fcc762d6818f231df0e8a975089',1,'Plot3dData']]],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: System Module</title>
+<title>dRonin: System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -108,9 +108,12 @@ $(document).ready(function(){initNavTree('group___system_module.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">System Module<div class="ingroups"><a class="el" href="group___tau_labs_modules.html">Tau Labs Modules</a></div></div>  </div>
+<div class="title">System<div class="ingroups"><a class="el" href="group___modules.html">Modules</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of annunciation and simple color blending for RGB LEDs.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
@@ -136,7 +139,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga9be33d810838161edf9412377209a4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td></tr>
+<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccbe74bc6d9bb1780cc8df6532d38192"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaccbe74bc6d9bb1780cc8df6532d38192">SYSTEM_UPDATE_PERIOD_MS</a>&#160;&#160;&#160;117</td></tr>
 <tr class="separator:gaccbe74bc6d9bb1780cc8df6532d38192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +158,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga107237204bc679179166c17b330533a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga107237204bc679179166c17b330533a5">systemmod_process_rgb_leds</a> (bool led_override, bool led_override_active, uint8_t blink_prio, bool is_armed, bool force_dim)</td></tr>
+<tr class="separator:ga107237204bc679179166c17b330533a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25e6d9910d77be50c3b01c7b738094d9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga25e6d9910d77be50c3b01c7b738094d9">SystemModInitialize</a> (void)</td></tr>
 <tr class="separator:ga25e6d9910d77be50c3b01c7b738094d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee56646202d2b7689523bbb22d47d7cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaee56646202d2b7689523bbb22d47d7cd">systemPeriodicCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj_data, int len)</td></tr>
@@ -163,9 +168,9 @@ Functions</h2></td></tr>
 <tr class="separator:gaf33480c6b247620915026fc37bb9232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcbe694acc4c0e004ec27be36a162e1b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadcbe694acc4c0e004ec27be36a162e1b">processPeriodicUpdates</a> ()</td></tr>
 <tr class="separator:gadcbe694acc4c0e004ec27be36a162e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa366f3eeb13d209096207266c4bb5c27"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa366f3eeb13d209096207266c4bb5c27">eventPeriodicCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:gaa366f3eeb13d209096207266c4bb5c27"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa366f3eeb13d209096207266c4bb5c27">eventPeriodicCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:gaa366f3eeb13d209096207266c4bb5c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa926a99228262150f436a4011b9c0bfb"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa926a99228262150f436a4011b9c0bfb">eventPeriodicUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:gaa926a99228262150f436a4011b9c0bfb"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa926a99228262150f436a4011b9c0bfb">eventPeriodicUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:gaa926a99228262150f436a4011b9c0bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18ad99b143e1b11eebd225e9f585a500"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga18ad99b143e1b11eebd225e9f585a500">configurationUpdatedCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
 <tr class="separator:ga18ad99b143e1b11eebd225e9f585a500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +200,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga34e9f120ad77feee68d20f0a22adeb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10f109820071bea9b310dce65a46d784"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga10f109820071bea9b310dce65a46d784">EventPeriodicCallbackUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, uint16_t periodMs)</td></tr>
 <tr class="separator:ga10f109820071bea9b310dce65a46d784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26f4f21c174d0caf6301734360fc885a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga26f4f21c174d0caf6301734360fc885a">EventPeriodicQueueCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:ga26f4f21c174d0caf6301734360fc885a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga26f4f21c174d0caf6301734360fc885a">EventPeriodicQueueCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:ga26f4f21c174d0caf6301734360fc885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga914ce570d6529619085bb00319fc05e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga914ce570d6529619085bb00319fc05e0">EventPeriodicQueueUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:ga914ce570d6529619085bb00319fc05e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga914ce570d6529619085bb00319fc05e0">EventPeriodicQueueUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:ga914ce570d6529619085bb00319fc05e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -205,7 +210,7 @@ Variables</h2></td></tr>
 <tr class="memitem:gaff29ccca83c4f02fbcb3e824211744ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___system_module.html#ga3da0c8782a25b0b174e36b9f80d02183">PeriodicObjectList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaff29ccca83c4f02fbcb3e824211744ed">objList</a></td></tr>
 <tr class="separator:gaff29ccca83c4f02fbcb3e824211744ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadce68671d7788ce17593ae16d93c747b"><td class="memItemLeft" align="right" valign="top">static struct <br class="typebreak"/>
-pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadce68671d7788ce17593ae16d93c747b">mutex</a></td></tr>
+<a class="el" href="structpios__recursive__mutex.html">pios_recursive_mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadce68671d7788ce17593ae16d93c747b">mutex</a></td></tr>
 <tr class="separator:gadce68671d7788ce17593ae16d93c747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37358461ce40773a6fdd1c6988da4bf7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_event_stats.html">EventStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga37358461ce40773a6fdd1c6988da4bf7">stats</a></td></tr>
 <tr class="separator:ga37358461ce40773a6fdd1c6988da4bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,14 +218,15 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="separator:ga623c45138900250350d43464f282589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8dbcb557784069df82f90fa4d6383536"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga8dbcb557784069df82f90fa4d6383536">idleCounterClear</a></td></tr>
 <tr class="separator:ga8dbcb557784069df82f90fa4d6383536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafb885b70725c5de065dd0dde77c5284"><td class="memItemLeft" align="right" valign="top">static struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaafb885b70725c5de065dd0dde77c5284">systemTaskHandle</a></td></tr>
+<tr class="memitem:gaafb885b70725c5de065dd0dde77c5284"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaafb885b70725c5de065dd0dde77c5284">systemTaskHandle</a></td></tr>
 <tr class="separator:gaafb885b70725c5de065dd0dde77c5284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga409efe511a9583167ae97f88b838d93f"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga409efe511a9583167ae97f88b838d93f">objectPersistenceQueue</a></td></tr>
+<tr class="memitem:ga409efe511a9583167ae97f88b838d93f"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga409efe511a9583167ae97f88b838d93f">objectPersistenceQueue</a></td></tr>
 <tr class="separator:ga409efe511a9583167ae97f88b838d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31adc044d18538d023d203ceb36eb14c"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga31adc044d18538d023d203ceb36eb14c">config_check_needed</a></td></tr>
 <tr class="separator:ga31adc044d18538d023d203ceb36eb14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Implementation of annunciation and simple color blending for RGB LEDs. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga626f4923d805b18534623a7ec6f6c175"></a>
 <div class="memitem">
@@ -274,7 +280,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01031">1031</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01026">1026</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -289,7 +295,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Called periodically to update the WDG statistics </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00675">675</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00670">670</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -340,7 +346,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TASK_PRIORITY&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td>
+          <td class="memname">#define TASK_PRIORITY&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -410,7 +416,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Called whenever a critical configuration component changes </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00648">648</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00643">643</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -480,7 +486,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Clear the statistics counters </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00893">893</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00888">888</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -505,7 +511,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00883">883</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00878">878</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -547,9 +553,10 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1)</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>would be nice to get context record logic in these </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00908">908</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00903">903</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -593,7 +600,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00920">920</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00915">915</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -619,7 +626,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct pios_queue *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
         </tr>
         <tr>
@@ -652,7 +659,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00957">957</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00952">952</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -669,7 +676,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct pios_queue *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
         </tr>
         <tr>
@@ -696,7 +703,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00932">932</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00927">927</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -713,7 +720,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct pios_queue *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
         </tr>
         <tr>
@@ -740,7 +747,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00944">944</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00939">939</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -766,7 +773,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct pios_queue *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
         </tr>
         <tr>
@@ -799,7 +806,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01001">1001</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00996">996</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -826,7 +833,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Called periodically to update the system stats </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00727">727</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00722">722</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -875,7 +882,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Function called in response to object updates </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00573">573</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00568">568</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -902,7 +909,51 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <p>Handle periodic updates for all objects. </p>
 <dl class="section return"><dt>Returns</dt><dd>The system time until the next update (in ms) or -1 if failed </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01037">1037</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01032">1032</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga107237204bc679179166c17b330533a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void systemmod_process_rgb_leds </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>led_override</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>led_override_active</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blink_prio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_armed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_dim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -990,7 +1041,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00404">404</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00399">399</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1067,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00222">222</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00220">220</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1092,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00678">678</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00673">673</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1118,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Called periodically to update the system stats </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00754">754</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00749">749</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1144,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Update system alarms </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00801">801</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00796">796</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1163,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </div><div class="memdoc">
 <p>Called by the RTOS when the CPU is idle, used to measure the CPU idle time. </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00868">868</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00863">863</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1242,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_recursive_mutex* mutex</td>
+          <td class="memname">struct <a class="el" href="structpios__recursive__mutex.html">pios_recursive_mutex</a>* mutex</td>
         </tr>
       </table>
   </td>
@@ -1213,7 +1264,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_queue* objectPersistenceQueue</td>
+          <td class="memname">struct <a class="el" href="structpios__queue.html">pios_queue</a>* objectPersistenceQueue</td>
         </tr>
       </table>
   </td>
@@ -1279,7 +1330,7 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_thread* systemTaskHandle</td>
+          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* systemTaskHandle</td>
         </tr>
       </table>
   </td>

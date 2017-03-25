@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -122,9 +122,9 @@ Macros</h2></td></tr>
 <tr class="separator:ga623ec78b7909090dbedac4af1d52abb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;<a class="el" href="group___sparky2.html#ga8e7da2e5a9c1811977f1878761b0f74d">PIOS_TELEM_STACK_SIZE</a></td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga910a9bd02c7c51bf21728cb63567d653"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga910a9bd02c7c51bf21728cb63567d653">TASK_PRIORITY_RX</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td></tr>
+<tr class="memitem:ga910a9bd02c7c51bf21728cb63567d653"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga910a9bd02c7c51bf21728cb63567d653">TASK_PRIORITY_RX</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga910a9bd02c7c51bf21728cb63567d653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c5976eea2f526e6206fd4b5bd3aa2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga0c5976eea2f526e6206fd4b5bd3aa2cf">TASK_PRIORITY_TX</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td></tr>
+<tr class="memitem:ga0c5976eea2f526e6206fd4b5bd3aa2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga0c5976eea2f526e6206fd4b5bd3aa2cf">TASK_PRIORITY_TX</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga0c5976eea2f526e6206fd4b5bd3aa2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0619a6738fe27ca50e0c5f39b0378d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaa0619a6738fe27ca50e0c5f39b0378d4">REQ_TIMEOUT_MS</a>&#160;&#160;&#160;250</td></tr>
 <tr class="separator:gaa0619a6738fe27ca50e0c5f39b0378d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></td></tr>
+<tr class="memitem:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></td></tr>
 <tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaddf1455de3a98ece44d37cfc7553e40b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaddf1455de3a98ece44d37cfc7553e40b">txErrors</a></td></tr>
 <tr class="separator:gaddf1455de3a98ece44d37cfc7553e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +274,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TASK_PRIORITY_RX&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td>
+          <td class="memname">#define TASK_PRIORITY_RX&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -288,7 +288,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TASK_PRIORITY_TX&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td>
+          <td class="memname">#define TASK_PRIORITY_TX&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,7 +360,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Determine input/output com port as highest priority available </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00546">546</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00544">544</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>SessionManaging object updated callback </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00571">571</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00569">569</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -705,7 +705,7 @@ number of bytes transmitted on success </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00598">598</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00596">596</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ number of bytes transmitted on success </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_queue* queue</td>
+          <td class="memname">struct <a class="el" href="structpios__queue.html">pios_queue</a>* queue</td>
         </tr>
       </table>
   </td>

@@ -21,7 +21,6 @@ var group___tau_labs_modules =
     [ "Sensor acquisition module", "group___sensors.html", "group___sensors" ],
     [ "Stabilization Module", "group___stabilization_module.html", "group___stabilization_module" ],
     [ "Storm32bgc Module", "group___storm32bgc.html", "group___storm32bgc" ],
-    [ "System Module", "group___system_module.html", "group___system_module" ],
     [ "Telemetry Module", "group___telemetry_module.html", "group___telemetry_module" ],
     [ "TxPID Module", "group___tx_p_i_d_module.html", "group___tx_p_i_d_module" ],
     [ "UAVO to FrSKY Bridge Module", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge" ],

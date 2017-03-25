@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: Module</title>
+<title>dRonin: Pixel OSD</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -102,15 +102,13 @@ $(document).ready(function(){initNavTree('group___on_screen_display.html','');})
 <div class="header">
   <div class="summary">
 <a href="#files">Files</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Module<div class="ingroups"><a class="el" href="group__d_ronin.html">Modules</a> &#124; <a class="el" href="group___tau.html">Labs Modules</a> &#124; <a class="el" href="group___modules.html">dRonin Modules</a></div></div>  </div>
+<div class="title">Pixel OSD<div class="ingroups"><a class="el" href="group___modules.html">Modules</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -129,18 +127,13 @@ Files</h2></td></tr>
 <tr class="memdesc:osd__utils_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSD Utility Functions. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:onscreendisplay_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onscreendisplay_8c.html">onscreendisplay.c</a></td></tr>
-<tr class="memdesc:onscreendisplay_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSD gen module, handles OSD draw. Parts from CL-OSD and SUPEROSD projects. <br/></td></tr>
+<tr class="memdesc:onscreendisplay_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process OSD information. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:osd__menu_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="osd__menu_8c.html">osd_menu.c</a></td></tr>
 <tr class="memdesc:osd__menu_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSD Menu. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:osd__utils_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="osd__utils_8c.html">osd_utils.c</a></td></tr>
 <tr class="memdesc:osd__utils_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSD Utility Functions. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceencode__fonts"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceencode__fonts.html">encode_fonts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -240,9 +233,9 @@ Macros</h2></td></tr>
 <tr class="separator:ga5079eb8559efeb4b20f1515516f56456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37c6d7fcb9c177c308ef38e1d51d35e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga37c6d7fcb9c177c308ef38e1d51d35e3">MAX3</a>(a, b, c)&#160;&#160;&#160;<a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(a, <a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(b, c))</td></tr>
 <tr class="separator:ga37c6d7fcb9c177c308ef38e1d51d35e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4887ceeae88266064841cbbc11ef8b53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga4887ceeae88266064841cbbc11ef8b53">MIN3</a>(a, b, c)&#160;&#160;&#160;<a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(a, <a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(b, c))</td></tr>
+<tr class="memitem:ga4887ceeae88266064841cbbc11ef8b53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga4887ceeae88266064841cbbc11ef8b53">MIN3</a>(a, b, c)&#160;&#160;&#160;<a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(a, <a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(b, c))</td></tr>
 <tr class="separator:ga4887ceeae88266064841cbbc11ef8b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeeb6817f730ee1cfcb95f62d5fa13561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaeeb6817f730ee1cfcb95f62d5fa13561">LIMIT</a>(x, l, h)&#160;&#160;&#160;<a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(l, <a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(x, h))</td></tr>
+<tr class="memitem:gaeeb6817f730ee1cfcb95f62d5fa13561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaeeb6817f730ee1cfcb95f62d5fa13561">LIMIT</a>(x, l, h)&#160;&#160;&#160;<a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(l, <a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(x, h))</td></tr>
 <tr class="separator:gaeeb6817f730ee1cfcb95f62d5fa13561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8711ae955f1b5b6452a893418299cbbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga8711ae955f1b5b6452a893418299cbbc">CHECK_COORDS</a>(x, y)&#160;&#160;&#160;<a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga611a2042a4f6bfb1a9351fd7945e69f8">if</a> (x &lt; <a class="el" href="group___p_i_o_s___v_i_d_e_o.html#ga579a1c683104719cfe4effff840052cb">GRAPHICS_LEFT</a> || x &gt; <a class="el" href="group___p_i_o_s___v_i_d_e_o.html#gaf3d8f3e4671bd04b029ee3c07b28a736">GRAPHICS_RIGHT</a> || y &lt; <a class="el" href="group___p_i_o_s___v_i_d_e_o.html#gac3ca44e302411c55f6e7427631b6e09f">GRAPHICS_TOP</a> || y &gt; <a class="el" href="group___p_i_o_s___v_i_d_e_o.html#ga949541c9433b6146a18caa0d65df2543">GRAPHICS_BOTTOM</a>) { return; }</td></tr>
 <tr class="separator:ga8711ae955f1b5b6452a893418299cbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,7 +259,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga83ea8d74b1ef7e6d8257a70dcd848a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;2048</td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_LOW</td></tr>
+<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54ad38805db173a7afca2190b3fcb12bcab">PIOS_THREAD_PRIO_LOW</a></td></tr>
 <tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga573c16040e69c4e26080d5adbd636327"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga573c16040e69c4e26080d5adbd636327">BLINK_INTERVAL_FRAMES</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:ga573c16040e69c4e26080d5adbd636327"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -638,22 +631,6 @@ Variables</h2></td></tr>
 <tr class="separator:ga4bafa2ee6327fb66ad5871067d6891eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62f3ab23f8a586a9ac19813b707a05ac"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_font_entry.html">FontEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga62f3ab23f8a586a9ac19813b707a05ac">fonts</a> [<a class="el" href="group___on_screen_display.html#ga2c8d19f840381baec930eff523e53d1b">NUM_FONTS</a>] = {&amp;<a class="el" href="group___on_screen_display.html#ga0a99d2f95e9cdbc15b05a94a75134ba7">font_font8x10</a>, &amp;<a class="el" href="group___on_screen_display.html#ga76890bef3809ecd73aa8ccb50003bc64">font_font_outlined8x14</a>, &amp;<a class="el" href="group___on_screen_display.html#gaf5239f5f11ea0fc8f249039153034148">font_font12x18</a>, &amp;<a class="el" href="group___on_screen_display.html#ga4bafa2ee6327fb66ad5871067d6891eb">font_font_outlined8x8</a>}</td></tr>
 <tr class="separator:ga62f3ab23f8a586a9ac19813b707a05ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8b3422fb72cc76c846aceab9035f78f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gae8b3422fb72cc76c846aceab9035f78f">FontEntry::width</a></td></tr>
-<tr class="separator:gae8b3422fb72cc76c846aceab9035f78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb770362ccfec2f69ad1473a08d835ac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaeb770362ccfec2f69ad1473a08d835ac">FontEntry::height</a></td></tr>
-<tr class="separator:gaeb770362ccfec2f69ad1473a08d835ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa822ed0ca01e38e0bda330e242eee5af"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaa822ed0ca01e38e0bda330e242eee5af">FontEntry::lookup</a></td></tr>
-<tr class="separator:gaa822ed0ca01e38e0bda330e242eee5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaea5f0562cfe731de03e9872bc848902"><td class="memItemLeft" align="right" valign="top">const uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaaea5f0562cfe731de03e9872bc848902">FontEntry::data</a></td></tr>
-<tr class="separator:gaaea5f0562cfe731de03e9872bc848902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a7f22c09ebeb18689a296fc7b72323e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga3a7f22c09ebeb18689a296fc7b72323e">FontDimensions::width</a></td></tr>
-<tr class="separator:ga3a7f22c09ebeb18689a296fc7b72323e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a3e31e8b25bb8b85bbf0c92135deba7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga0a3e31e8b25bb8b85bbf0c92135deba7">FontDimensions::height</a></td></tr>
-<tr class="separator:ga0a3e31e8b25bb8b85bbf0c92135deba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81fb8e2a2e05583a43c6f92a27f91eae"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga81fb8e2a2e05583a43c6f92a27f91eae">point_t::x</a></td></tr>
-<tr class="separator:ga81fb8e2a2e05583a43c6f92a27f91eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18660dce86a41d7ef5dbc1cf6345cacb"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga18660dce86a41d7ef5dbc1cf6345cacb">point_t::y</a></td></tr>
-<tr class="separator:ga18660dce86a41d7ef5dbc1cf6345cacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52b5c0fc86a398ddf62c5b2bb383374d"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga52b5c0fc86a398ddf62c5b2bb383374d">draw_buffer_level</a></td></tr>
 <tr class="separator:ga52b5c0fc86a398ddf62c5b2bb383374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga67085db0125b910109083e4d2605d7d5"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga67085db0125b910109083e4d2605d7d5">draw_buffer_mask</a></td></tr>
@@ -688,7 +665,7 @@ Variables</h2></td></tr>
 <tr class="separator:gabad4b4fce6df0732ed6d95bbf34b8887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga262760ef6d30ecf31daf5b79c9d10fb4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga262760ef6d30ecf31daf5b79c9d10fb4">has_mag</a> = false</td></tr>
 <tr class="separator:ga262760ef6d30ecf31daf5b79c9d10fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
+<tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
 <tr class="separator:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac41214cc02530d3311d80e6abe4a999e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__semaphore.html">pios_semaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gac41214cc02530d3311d80e6abe4a999e">onScreenDisplaySemaphore</a> = NULL</td></tr>
 <tr class="separator:gac41214cc02530d3311d80e6abe4a999e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -728,10 +705,6 @@ Variables</h2></td></tr>
 <tr class="separator:ga3fe8dcefb84eae270dfa806c290cd13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e62d79e9e6aa22daeabad3d7b2d6d7f"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga8e62d79e9e6aa22daeabad3d7b2d6d7f">VTX_POWER</a> [VTXSETTINGS_POWER_GLOBAL_MAXOPTVAL+1]</td></tr>
 <tr class="separator:ga8e62d79e9e6aa22daeabad3d7b2d6d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2c36a17ccd4cfcc67cae5226988bb0b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gaa2c36a17ccd4cfcc67cae5226988bb0b">menu_fsm_transition::menu_fn</a> )()</td></tr>
-<tr class="separator:gaa2c36a17ccd4cfcc67cae5226988bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1d2d45088b727f913abcfdf5184856e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___on_screen_display.html#gaf99739f43eccdbb8639969899bee036a">menu_fsm_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#gab1d2d45088b727f913abcfdf5184856e">menu_fsm_transition::next_state</a> [<a class="el" href="group___vtol_path_follower.html#gga0cb5a99d49a425cbdeb852658dd4f05fa2ac6ab5fffdbaa83ab8b01968458f2ee">FSM_EVENT_NUM_EVENTS</a>]</td></tr>
-<tr class="separator:gab1d2d45088b727f913abcfdf5184856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5459c19dfddea7967771730f55754a3b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga5459c19dfddea7967771730f55754a3b">frame_counter</a></td></tr>
 <tr class="separator:ga5459c19dfddea7967771730f55754a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8de5548ef7feafc0b756bd94bef873ee"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___on_screen_display.html#gaf99739f43eccdbb8639969899bee036a">menu_fsm_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___on_screen_display.html#ga8de5548ef7feafc0b756bd94bef873ee">current_state</a> = <a class="el" href="group___on_screen_display.html#ga30ad4ced4705e1fbdbc5aa298415bcda">FSM_STATE_TOP</a></td></tr>
@@ -1548,7 +1521,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00055">55</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+<p>Definition at line <a class="el" href="fonts_8h_source.html#l00054">54</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1535,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00053">53</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+<p>Definition at line <a class="el" href="fonts_8h_source.html#l00052">52</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1577,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00054">54</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+<p>Definition at line <a class="el" href="fonts_8h_source.html#l00053">53</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -1618,7 +1591,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00056">56</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+<p>Definition at line <a class="el" href="fonts_8h_source.html#l00055">55</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1704,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(l, <a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(x, h))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group___tau_labs_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(l, <a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(x, h))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1883,7 +1856,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(a, <a class="el" href="group___bootloader.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(b, c))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(a, <a class="el" href="group___common.html#ga74e75242132eaabbc1c512488a135926">MIN</a>(b, c))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1930,7 +1903,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00051">51</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+<p>Definition at line <a class="el" href="fonts_8h_source.html#l00050">50</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -2192,7 +2165,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TASK_PRIORITY&#160;&#160;&#160;PIOS_THREAD_PRIO_LOW</td>
+          <td class="memname">#define TASK_PRIORITY&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54ad38805db173a7afca2190b3fcb12bcab">PIOS_THREAD_PRIO_LOW</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6114,20 +6087,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaaea5f0562cfe731de03e9872bc848902"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint16_t* FontEntry::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00048">48</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gaf2d1612378f07e577393ed7f867195e5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6560,34 +6519,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaeb770362ccfec2f69ad1473a08d835ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t FontEntry::height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00046">46</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga0a3e31e8b25bb8b85bbf0c92135deba7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FontDimensions::height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="osd__utils_8h_source.html#l00158">158</a> of file <a class="el" href="osd__utils_8h_source.html">osd_utils.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga3058a3b69d095860d43d3f2d607d3682"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6707,20 +6638,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="onscreendisplay_8c_source.html#l00134">134</a> of file <a class="el" href="onscreendisplay_8c_source.html">onscreendisplay.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaa822ed0ca01e38e0bda330e242eee5af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t* FontEntry::lookup</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00047">47</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
 </div>
 </div>
@@ -6848,21 +6765,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa2c36a17ccd4cfcc67cae5226988bb0b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* menu_fsm_transition::menu_fn)()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Called while in a state </p>
-
-<p>Definition at line <a class="el" href="osd__menu_8c_source.html#l00249">249</a> of file <a class="el" href="osd__menu_8c_source.html">osd_menu.c</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga94388e9de763758ce4c85cee6aff812e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6946,20 +6848,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="onscreendisplay_8c_source.html#l00177">177</a> of file <a class="el" href="onscreendisplay_8c_source.html">onscreendisplay.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab1d2d45088b727f913abcfdf5184856e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___on_screen_display.html#gaf99739f43eccdbb8639969899bee036a">menu_fsm_state</a> menu_fsm_transition::next_state[<a class="el" href="group___vtol_path_follower.html#gga0cb5a99d49a425cbdeb852658dd4f05fa2ac6ab5fffdbaa83ab8b01968458f2ee">FSM_EVENT_NUM_EVENTS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="osd__menu_8c_source.html#l00250">250</a> of file <a class="el" href="osd__menu_8c_source.html">osd_menu.c</a>.</p>
 
 </div>
 </div>
@@ -7204,7 +7092,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_thread* taskHandle</td>
+          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* taskHandle</td>
         </tr>
       </table>
   </td>
@@ -7257,62 +7145,6 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="osd__menu_8c_source.html#l00110">110</a> of file <a class="el" href="osd__menu_8c_source.html">osd_menu.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gae8b3422fb72cc76c846aceab9035f78f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t FontEntry::width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="fonts_8h_source.html#l00045">45</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3a7f22c09ebeb18689a296fc7b72323e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FontDimensions::width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="osd__utils_8h_source.html#l00158">158</a> of file <a class="el" href="osd__utils_8h_source.html">osd_utils.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga81fb8e2a2e05583a43c6f92a27f91eae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t point_t::x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="osd__utils_8h_source.html#l00163">163</a> of file <a class="el" href="osd__utils_8h_source.html">osd_utils.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga18660dce86a41d7ef5dbc1cf6345cacb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t point_t::y</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="osd__utils_8h_source.html#l00164">164</a> of file <a class="el" href="osd__utils_8h_source.html">osd_utils.h</a>.</p>
 
 </div>
 </div>

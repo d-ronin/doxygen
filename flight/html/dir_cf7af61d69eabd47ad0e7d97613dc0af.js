@@ -1,6 +1,5 @@
 var dir_cf7af61d69eabd47ad0e7d97613dc0af =
 [
-    [ "board.c", "sparky2_2fw_2board_8c.html", "sparky2_2fw_2board_8c" ],
     [ "board.h", "sparky2_2fw_2board_8h.html", "sparky2_2fw_2board_8h" ],
     [ "chconf.h", "sparky2_2fw_2chconf_8h.html", "sparky2_2fw_2chconf_8h" ],
     [ "halconf.h", "sparky2_2fw_2halconf_8h.html", "sparky2_2fw_2halconf_8h" ],

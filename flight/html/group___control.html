@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -323,7 +323,7 @@ FlightStatusControlSourceOptions&#160;</td><td class="memItemRight" valign="bott
 <tr class="separator:ga72a5a2229a25880659d9ece1651fa13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga268212f087ea5b60d62dd5157483da24"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga268212f087ea5b60d62dd5157483da24">scaleChannel</a> (int n, int16_t <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>)</td></tr>
 <tr class="separator:ga268212f087ea5b60d62dd5157483da24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4bfc04ceeb886015c906be656d2292b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga4bfc04ceeb886015c906be656d2292b1">validInputRange</a> (int n, uint16_t <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, uint16_t <a class="el" href="group___copter_control_b_l.html#gaa9fff43968831437a312428836cab362">offset</a>)</td></tr>
+<tr class="memitem:ga4bfc04ceeb886015c906be656d2292b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga4bfc04ceeb886015c906be656d2292b1">validInputRange</a> (int n, uint16_t <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, uint16_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>)</td></tr>
 <tr class="memdesc:ga4bfc04ceeb886015c906be656d2292b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the manual input value is within acceptable limits.  <a href="#ga4bfc04ceeb886015c906be656d2292b1">More...</a><br/></td></tr>
 <tr class="separator:ga4bfc04ceeb886015c906be656d2292b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f2fb4d7d46c51bd7acd93e4b332013d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga1f2fb4d7d46c51bd7acd93e4b332013d">timeDifferenceMs</a> (uint32_t start_time, uint32_t end_time)</td></tr>
@@ -360,7 +360,7 @@ Variables</h2></td></tr>
 <tr class="separator:ga0cfffeff625e66d5b08d5fdf3dfae137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2f0df493e21ef17309b84cb7d17c260"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gae2f0df493e21ef17309b84cb7d17c260">geofence_armed_when_enabled</a></td></tr>
 <tr class="separator:gae2f0df493e21ef17309b84cb7d17c260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
+<tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
 <tr class="separator:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga212c9643d0c95cf1626bc0ec451f399d"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga212c9643d0c95cf1626bc0ec451f399d">pios_rcvr_group_map</a> []</td></tr>
 <tr class="separator:ga212c9643d0c95cf1626bc0ec451f399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -770,9 +770,8 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 </div><div class="memdoc">
 
 <p>Update the altitude desired to current altitude when enabled and enable altitude mode for stabilization. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>: Need compile flag to exclude this from copter control </dd></dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01137">1137</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01136">1136</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -810,7 +809,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 
 <p>Apply deadband to Roll/Pitch/Yaw channels. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01317">1317</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01316">1316</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1716,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 </div><div class="memdoc">
 <p>Convert channel from servo pulse duration (microseconds) to scaled -1/+1 range. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01232">1232</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01231">1231</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1808,7 +1807,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01215">1215</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01214">1214</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1840,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01339">1339</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01338">1338</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2007,7 +2006,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01264">1264</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01263">1263</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2306,7 +2305,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 <p>Determine if the manual input value is within acceptable limits. </p>
 <dl class="section return"><dt>Returns</dt><dd>return TRUE if so, otherwise return FALSE </dd></dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01275">1275</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01274">1274</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2641,7 +2640,7 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_thread* taskHandle</td>
+          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* taskHandle</td>
         </tr>
       </table>
   </td>

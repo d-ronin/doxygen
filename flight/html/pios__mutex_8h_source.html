@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,78 +135,55 @@ $(document).ready(function(){initNavTree('pios__mutex_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FREERTOS)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span>pios_mutex</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        uintptr_t mtx_handle;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct </span>pios_recursive_mutex</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        uintptr_t mtx_handle;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#elif defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span>pios_mutex</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        Mutex mtx;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span>pios_recursive_mutex</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Mutex mtx;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        uint32_t <a class="code" href="group___character_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * The following functions implement the concept of a non-recursive mutex usable</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * with PIOS_INCLUDE_FREERTOS or PIOS_INCLUDE_CHIBIOS.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__mutex.html">pios_mutex</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__recursive__mutex.html">pios_recursive_mutex</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * The following functions implement the concept of a non-recursive mutex usable</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * with PIOS_INCLUDE_CHIBIOS.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * Note that this is not the same as:</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * - binary semaphore</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * - semaphore</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * - recursive mutex</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * see FreeRTOS documentation for details: http://www.freertos.org/a00113.html</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * see ChibiOS documentation for details: http://chibios.sourceforge.net/html/group__synchronization.html</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__mutex.html">pios_mutex</a> *<a class="code" href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a>(<span class="keyword">struct</span> <a class="code" href="structpios__mutex.html">pios_mutex</a> *mtx, uint32_t timeout_ms);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a>(<span class="keyword">struct</span> <a class="code" href="structpios__mutex.html">pios_mutex</a> *mtx);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * The following functions implement the concept of a recursive mutex usable</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * with PIOS_INCLUDE_CHIBIOS.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * Note that this is not the same as:</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * - binary semaphore</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * - semaphore</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * - non-recursive mutex</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * Note that this implementation doesn&#39;t prevent priority inversion.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * Note that this is not the same as:</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * - binary semaphore</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * - semaphore</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * - recursive mutex</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * see FreeRTOS documentation for details: http://www.freertos.org/a00113.html</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * see ChibiOS documentation for details: http://chibios.sourceforge.net/html/group__synchronization.html</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">struct </span>pios_mutex *<a class="code" href="group___p_i_o_s___mutex.html#ga41248dc905f2f2d2d14f348d1ce03e83">PIOS_Mutex_Create</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a>(<span class="keyword">struct</span> pios_mutex *mtx, uint32_t timeout_ms);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a>(<span class="keyword">struct</span> pios_mutex *mtx);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * The following functions implement the concept of a recursive mutex usable</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * with PIOS_INCLUDE_FREERTOS or PIOS_INCLUDE_CHIBIOS.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * Note that this is not the same as:</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * - binary semaphore</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * - semaphore</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * - non-recursive mutex</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * Note that this implementation doesn&#39;t prevent priority inversion.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * see FreeRTOS documentation for details: http://www.freertos.org/a00113.html</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * see ChibiOS documentation for details: http://chibios.sourceforge.net/html/group__synchronization.html</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">struct </span>pios_recursive_mutex *<a class="code" href="group___p_i_o_s___mutex.html#gaa498d1bee6eef61e153ec296d4ff09fe">PIOS_Recursive_Mutex_Create</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga5577c48d192d47f0b1959d1b89bbee1a">PIOS_Recursive_Mutex_Lock</a>(<span class="keyword">struct</span> pios_recursive_mutex *mtx, uint32_t timeout_ms);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga578ba01073615bb1c00bd1d5f5c303bd">PIOS_Recursive_Mutex_Unlock</a>(<span class="keyword">struct</span> pios_recursive_mutex *mtx);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_MUTEX_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___character_o_s_d_html_gac29f7805863b1e57f0e867855d72402e"><div class="ttname"><a href="group___character_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a></div><div class="ttdeci">const uint8_t count</div><div class="ttdef"><b>Definition:</b> <a href="panel_8c_source.html#l00504">panel.c:504</a></div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_gaa498d1bee6eef61e153ec296d4ff09fe"><div class="ttname"><a href="group___p_i_o_s___mutex.html#gaa498d1bee6eef61e153ec296d4ff09fe">PIOS_Recursive_Mutex_Create</a></div><div class="ttdeci">struct pios_recursive_mutex * PIOS_Recursive_Mutex_Create(void)</div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_ga797ea008335af18d3a3c90b627630654"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Mutex_Unlock(struct pios_mutex *mtx)</div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_ga41248dc905f2f2d2d14f348d1ce03e83"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga41248dc905f2f2d2d14f348d1ce03e83">PIOS_Mutex_Create</a></div><div class="ttdeci">struct pios_mutex * PIOS_Mutex_Create(void)</div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_ga5577c48d192d47f0b1959d1b89bbee1a"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga5577c48d192d47f0b1959d1b89bbee1a">PIOS_Recursive_Mutex_Lock</a></div><div class="ttdeci">bool PIOS_Recursive_Mutex_Lock(struct pios_recursive_mutex *mtx, uint32_t timeout_ms)</div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_ga578ba01073615bb1c00bd1d5f5c303bd"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga578ba01073615bb1c00bd1d5f5c303bd">PIOS_Recursive_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Recursive_Mutex_Unlock(struct pios_recursive_mutex *mtx)</div></div>
-<div class="ttc" id="group___p_i_o_s___mutex_html_gaa402155f54d86cc2378e16c3b41d9375"><div class="ttname"><a href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a></div><div class="ttdeci">bool PIOS_Mutex_Lock(struct pios_mutex *mtx, uint32_t timeout_ms)</div></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * see FreeRTOS documentation for details: http://www.freertos.org/a00113.html</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * see ChibiOS documentation for details: http://chibios.sourceforge.net/html/group__synchronization.html</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__recursive__mutex.html">pios_recursive_mutex</a> *<a class="code" href="group___p_i_o_s___mutex.html#ga350001f969f152041c5b96e290ca94f4">PIOS_Recursive_Mutex_Create</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga5577c48d192d47f0b1959d1b89bbee1a">PIOS_Recursive_Mutex_Lock</a>(<span class="keyword">struct</span> <a class="code" href="structpios__recursive__mutex.html">pios_recursive_mutex</a> *mtx, uint32_t timeout_ms);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___mutex.html#ga578ba01073615bb1c00bd1d5f5c303bd">PIOS_Recursive_Mutex_Unlock</a>(<span class="keyword">struct</span> <a class="code" href="structpios__recursive__mutex.html">pios_recursive_mutex</a> *mtx);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_MUTEX_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="structpios__recursive__mutex_html"><div class="ttname"><a href="structpios__recursive__mutex.html">pios_recursive_mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00038">pios_mutex.c:38</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_ga797ea008335af18d3a3c90b627630654"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Mutex_Unlock(struct pios_mutex *mtx)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00104">pios_mutex.c:104</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_ga08da531ac19ae51b91eed114c6e04526"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a></div><div class="ttdeci">struct pios_mutex * PIOS_Mutex_Create(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00043">pios_mutex.c:43</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_ga350001f969f152041c5b96e290ca94f4"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga350001f969f152041c5b96e290ca94f4">PIOS_Recursive_Mutex_Create</a></div><div class="ttdeci">struct pios_recursive_mutex * PIOS_Recursive_Mutex_Create(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00115">pios_mutex.c:115</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_ga5577c48d192d47f0b1959d1b89bbee1a"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga5577c48d192d47f0b1959d1b89bbee1a">PIOS_Recursive_Mutex_Lock</a></div><div class="ttdeci">bool PIOS_Recursive_Mutex_Lock(struct pios_recursive_mutex *mtx, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00139">pios_mutex.c:139</a></div></div>
+<div class="ttc" id="structpios__mutex_html"><div class="ttname"><a href="structpios__mutex.html">pios_mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00034">pios_mutex.c:34</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_ga578ba01073615bb1c00bd1d5f5c303bd"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga578ba01073615bb1c00bd1d5f5c303bd">PIOS_Recursive_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Recursive_Mutex_Unlock(struct pios_recursive_mutex *mtx)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00144">pios_mutex.c:144</a></div></div>
+<div class="ttc" id="group___p_i_o_s___mutex_html_gaa402155f54d86cc2378e16c3b41d9375"><div class="ttname"><a href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a></div><div class="ttdeci">bool PIOS_Mutex_Lock(struct pios_mutex *mtx, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00066">pios_mutex.c:66</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

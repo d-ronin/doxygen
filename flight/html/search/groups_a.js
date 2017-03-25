@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['modules',['Modules',['../group__d_ronin.html',1,'']]],
   ['math_20various_20mathematical_20routines',['Math Various mathematical routines',['../group___miscellaneous_math.html',1,'']]],
+  ['modules',['Modules',['../group___modules.html',1,'']]],
   ['msp_20to_20uavo_20bridge',['MSP to UAVO Bridge',['../group___msp_uavo_bridge.html',1,'']]],
-  ['module',['Module',['../group___on_screen_display.html',1,'']]],
   ['max7456_20functions',['Max7456 Functions',['../group___p_i_o_s___m_a_x7456.html',1,'']]],
   ['module_20functions',['Module Functions',['../group___p_i_o_s___modules.html',1,'']]],
   ['mpu6050_20functions',['MPU6050 Functions',['../group___p_i_o_s___m_p_u6050.html',1,'']]],

@@ -1,12 +1,12 @@
 var searchData=
 [
   ['leave_5flowpowermode',['Leave_LowPowerMode',['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c']]],
-  ['led_5fpwm_5fadd_5fticks',['led_pwm_add_ticks',['../group___bootloader.html#ga316161ec9e0698bb42f258f84ba91236',1,'led_pwm.c']]],
-  ['led_5fpwm_5fconfig',['led_pwm_config',['../group___bootloader.html#gaa3e648497eec1e79a9ebda5f44eedb5e',1,'led_pwm.c']]],
-  ['led_5fpwm_5fon_5fp',['led_pwm_on_p',['../group___bootloader.html#gabebd4b64d3f024e81d276b97661914b3',1,'led_pwm.c']]],
-  ['led_5fpwm_5fupdate_5fleds',['led_pwm_update_leds',['../group___bootloader.html#ga3f824c1ee5eb9b7f632c2a371abb1407',1,'led_pwm.c']]],
-  ['ledpwm',['LedPWM',['../group___copter_control_b_l.html#ga75e30c099232f21fa6e08353b0dfcef7',1,'main.c']]],
-  ['ledupdateperidodiccb',['ledUpdatePeridodicCb',['../group___flying_f4.html#gaa8efb7fbaab4d710300fe2ddc2af4364',1,'main.c']]],
+  ['led_5fpwm_5fadd_5fticks',['led_pwm_add_ticks',['../group___common.html#ga316161ec9e0698bb42f258f84ba91236',1,'led_pwm.c']]],
+  ['led_5fpwm_5fconfig',['led_pwm_config',['../group___common.html#gaa3e648497eec1e79a9ebda5f44eedb5e',1,'led_pwm.c']]],
+  ['led_5fpwm_5fon_5fp',['led_pwm_on_p',['../group___common.html#gabebd4b64d3f024e81d276b97661914b3',1,'led_pwm.c']]],
+  ['led_5fpwm_5fupdate_5fleds',['led_pwm_update_leds',['../group___common.html#ga3f824c1ee5eb9b7f632c2a371abb1407',1,'led_pwm.c']]],
+  ['ledpwm',['LedPWM',['../group___common_f1.html#ga75e30c099232f21fa6e08353b0dfcef7',1,'main.c']]],
+  ['ledupdateperidodiccb',['ledUpdatePeridodicCb',['../group___brain_r_e1.html#gaa8efb7fbaab4d710300fe2ddc2af4364',1,'main.c']]],
   ['linear_5finterpolate',['linear_interpolate',['../group___tau_labs_math.html#gaa491e6b9634fc7e05afd03b8a56ec135',1,'misc_math.c']]],
   ['linearizefg',['LinearizeFG',['../group___tau_labs_libraries.html#gab194242801a5031a5601acf6ded3edf0',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#gab560144e7b798db7faf80a4c37902c88',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps14state.c']]],
   ['linearizeh',['LinearizeH',['../group___tau_labs_libraries.html#ga4b0845323067c77b1a25958c8d81168a',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga7c0662e4a09558eef02efcd11835266f',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps14state.c']]],

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['programmed_2dio_20expansion_20board_20target',['Programmed-IO expansion board target',['../group___flying_p_i_o.html',1,'']]],
   ['pios_20max7456_20driver',['PiOS MAX7456 Driver',['../group___max7456.html',1,'']]],
   ['protocol_20library',['Protocol Library',['../group___m_s_p.html',1,'']]],
+  ['pixel_20osd',['Pixel OSD',['../group___on_screen_display.html',1,'']]],
   ['path_20planner_20module',['Path Planner Module',['../group___path_planner_module.html',1,'']]],
   ['pios_20core_20hardware_20abstraction_20layer',['PIOS Core hardware abstraction layer',['../group___p_i_o_s.html',1,'']]],
   ['pios_5fbmm150',['PIOS_BMM150',['../group___p_i_o_s___b_m_m150.html',1,'']]],
@@ -15,5 +15,7 @@ var searchData=
   ['pwm_20input_20functions',['PWM Input Functions',['../group___p_i_o_s___p_w_m.html',1,'']]],
   ['px4flow_20functions',['PX4Flow Functions',['../group___p_i_o_s___p_x4_f_l_o_w.html',1,'']]],
   ['pios_20flash_20internal_20flash_20driver',['PIOS Flash internal flash driver',['../group___pios_flash_internal.html',1,'']]],
-  ['playuavosd',['PlayUavOsd',['../group___play_uav_osd.html',1,'']]]
+  ['pipxtreme_20radio',['PipXtreme Radio',['../group___pip_x.html',1,'']]],
+  ['playuav_20osd',['PlayUAV OSD',['../group___play_u_a_v_o_s_d.html',1,'']]],
+  ['posix_20simulator',['POSIX Simulator',['../group___sim.html',1,'']]]
 ];

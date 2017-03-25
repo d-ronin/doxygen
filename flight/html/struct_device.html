@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('struct_device.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Device Struct Reference<div class="ingroups"><a class="el" href="group___copter_control_b_l.html">CopterControl bootloader</a></div></div>  </div>
+<div class="title">Device Struct Reference<div class="ingroups"><a class="el" href="group___common_f1.html">STM32F1 Common</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -118,29 +118,156 @@ $(document).ready(function(){initNavTree('struct_device.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ga233c334d07cb137f8460511393f09b1f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga233c334d07cb137f8460511393f09b1f">programmingType</a></td></tr>
-<tr class="separator:ga233c334d07cb137f8460511393f09b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c191d83ffbfc96da5ddb6bfed066afb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga9c191d83ffbfc96da5ddb6bfed066afb">readWriteFlags</a></td></tr>
-<tr class="separator:ga9c191d83ffbfc96da5ddb6bfed066afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34965e275b7c25a39a849f168098b130"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga34965e275b7c25a39a849f168098b130">startOfUserCode</a></td></tr>
-<tr class="separator:ga34965e275b7c25a39a849f168098b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83624b47fe4a34ab22c97ef29934bc80"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga83624b47fe4a34ab22c97ef29934bc80">sizeOfCode</a></td></tr>
-<tr class="separator:ga83624b47fe4a34ab22c97ef29934bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac3d654cfb50d91e3d886848c630d481"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#gaac3d654cfb50d91e3d886848c630d481">sizeOfDescription</a></td></tr>
-<tr class="separator:gaac3d654cfb50d91e3d886848c630d481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae487fa50d1de851605401068ef8730fb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#gae487fa50d1de851605401068ef8730fb">BL_Version</a></td></tr>
-<tr class="separator:gae487fa50d1de851605401068ef8730fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac279d7f2e95b5ea61c2838cace97e0f3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#gac279d7f2e95b5ea61c2838cace97e0f3">devID</a></td></tr>
-<tr class="separator:gac279d7f2e95b5ea61c2838cace97e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94b1db8f05f4e21fc5f00333a46c2352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___copter_control_b_l.html#gad258d4c51629346fceac4679b3209ad9">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga94b1db8f05f4e21fc5f00333a46c2352">devType</a></td></tr>
-<tr class="separator:ga94b1db8f05f4e21fc5f00333a46c2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga676a5d429497021b5ad095b527f935cc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___copter_control_b_l.html#ga676a5d429497021b5ad095b527f935cc">FW_Crc</a></td></tr>
-<tr class="separator:ga676a5d429497021b5ad095b527f935cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233c334d07cb137f8460511393f09b1f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a233c334d07cb137f8460511393f09b1f">programmingType</a></td></tr>
+<tr class="separator:a233c334d07cb137f8460511393f09b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c191d83ffbfc96da5ddb6bfed066afb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a9c191d83ffbfc96da5ddb6bfed066afb">readWriteFlags</a></td></tr>
+<tr class="separator:a9c191d83ffbfc96da5ddb6bfed066afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34965e275b7c25a39a849f168098b130"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a34965e275b7c25a39a849f168098b130">startOfUserCode</a></td></tr>
+<tr class="separator:a34965e275b7c25a39a849f168098b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83624b47fe4a34ab22c97ef29934bc80"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a83624b47fe4a34ab22c97ef29934bc80">sizeOfCode</a></td></tr>
+<tr class="separator:a83624b47fe4a34ab22c97ef29934bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3d654cfb50d91e3d886848c630d481"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#aac3d654cfb50d91e3d886848c630d481">sizeOfDescription</a></td></tr>
+<tr class="separator:aac3d654cfb50d91e3d886848c630d481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae487fa50d1de851605401068ef8730fb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#ae487fa50d1de851605401068ef8730fb">BL_Version</a></td></tr>
+<tr class="separator:ae487fa50d1de851605401068ef8730fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac279d7f2e95b5ea61c2838cace97e0f3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#ac279d7f2e95b5ea61c2838cace97e0f3">devID</a></td></tr>
+<tr class="separator:ac279d7f2e95b5ea61c2838cace97e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b1db8f05f4e21fc5f00333a46c2352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_f1.html#gad258d4c51629346fceac4679b3209ad9">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a94b1db8f05f4e21fc5f00333a46c2352">devType</a></td></tr>
+<tr class="separator:a94b1db8f05f4e21fc5f00333a46c2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676a5d429497021b5ad095b527f935cc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device.html#a676a5d429497021b5ad095b527f935cc">FW_Crc</a></td></tr>
+<tr class="separator:a676a5d429497021b5ad095b527f935cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00036">36</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="ae487fa50d1de851605401068ef8730fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Device::BL_Version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00042">42</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac279d7f2e95b5ea61c2838cace97e0f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Device::devID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00043">43</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94b1db8f05f4e21fc5f00333a46c2352"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_f1.html#gad258d4c51629346fceac4679b3209ad9">DeviceType</a> Device::devType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00044">44</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a676a5d429497021b5ad095b527f935cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Device::FW_Crc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00045">45</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a233c334d07cb137f8460511393f09b1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Device::programmingType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00037">37</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c191d83ffbfc96da5ddb6bfed066afb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Device::readWriteFlags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00038">38</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83624b47fe4a34ab22c97ef29934bc80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Device::sizeOfCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00040">40</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac3d654cfb50d91e3d886848c630d481"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Device::sizeOfDescription</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00041">41</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34965e275b7c25a39a849f168098b130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Device::startOfUserCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="op__dfu_8h_source.html#l00039">39</a> of file <a class="el" href="op__dfu_8h_source.html">op_dfu.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>flight/targets/bl/f1/<a class="el" href="op__dfu_8h_source.html">op_dfu.h</a></li>
 </ul>
 </div><!-- contents -->

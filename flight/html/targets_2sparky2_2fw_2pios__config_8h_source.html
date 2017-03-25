@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -111,18 +111,18 @@ $(document).ready(function(){initNavTree('targets_2sparky2_2fw_2pios__config_8h_
 </div><!--header-->
 <div class="contents">
 <a href="targets_2sparky2_2fw_2pios__config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -130,118 +130,72 @@ $(document).ready(function(){initNavTree('targets_2sparky2_2fw_2pios__config_8h_
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef PIOS_CONFIG_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_CONFIG_H</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* Major features */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga161aa898042f41e015d602a72a618d87">   34</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_CHIBIOS</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga88ebbd46d7ad2cb2374e4886c3194b5e">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BL_HELPER</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__flight__config_8h.html">pios_flight_config.h</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* Major features */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* Enable/Disable PiOS Modules */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga28ae61b1409ab23bb43878990ee0d625">   38</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_ADC</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___sparky2.html#gac7edbfa43685b86203f055c78fdcea8b">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_I2C</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga92db595596a0136d6e663f929418cbf4">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WDG_STATS_DIAGNOSTICS</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga464462d5068d115f79148efdffefb418">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ANNUNC</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga3442464c6b8e8869621e4b7103782cec">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_IAP</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga48264c60bf3326bbbb3d3d9057cde39c">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SERVO</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SPI</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga95aafc3f5062ea4c6f0b33bd678371a8">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SYS</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga94dd4e83fd94230de7eddc5b01773f4e">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_USART</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga609bad0a7167d95b8aa65c05cd6cf739">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_USB</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga71ac5951782a849bcc916fe21f1df092">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_USB_HID</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga259509d5729961139b455f83b21406a3">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_USB_CDC</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_GPIO</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___sparky2.html#gae97f0380f771f6caf94de4982ab00f8c">   51</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_EXTI</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaa16397b163ac65bc5fc212b03e69dfa8">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RTC</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___sparky2.html#gac32d1b30633c310fbeea61674a514850">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_WDG</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga2bd11ed062488227d091c75212261409">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_CAN</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9342ac55ca81b9d977fec30f45813847">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab5d29657825bb07a7258cbc53637c700">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_STORM32BGC</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span> </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/* Variables related to the RFM22B functionality */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga878b6c7a5e981959c4f41d654f9342db">   59</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_RFM22B</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___sparky2.html#gace1ff3845bfdc37404abe261c6316ea2">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RFM22B_COM</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga66ca692c3616d468a144a072ea6ddbd6">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPENLRS</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span> </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* Select the sensors to include */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//#define PIOS_INCLUDE_MPU9250</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga44cdd17f851d008ff8862030b0c2ebd4">   65</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MPU9250_SPI</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga3925877e791baa885fbc268aeb8048c7">   66</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_MPU6000_ACCEL</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga2cc30288b8783fea8d042a8502af4e70">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MS5611</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaab84a3ad4a8e40da601259fa963168ff">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ETASV3</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga331308be9fde6166b4039a2966ce2b50">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV5004</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab48a97d4d9a65fbadfd195d283bc5fbf">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV7002</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga221b4e9f9650231f108d4cbb538bf9fd">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_HCSR04</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/* Com systems to include */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf8a678a8ce2142cdd87b127b78a89add">   76</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_COM</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab42cb0e98e393accdfa60be5698c2b64">   77</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_COM_TELEM</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga03981e41d457e7919feb97b60bd62211">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_COM_FLEXI</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga2439a3372d8825b721a19c1bba571b0a">   80</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_GPS</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaab8c5635b668265d63540a4f3daed710">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_GPS_NMEA_PARSER</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaa3918665ab627c1af88867276f1f204b">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_GPS_UBX_PARSER</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga226ad66a84c916d8f83bcd92598d259c">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MSP_BRIDGE</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaae902a2f64ffd52d66e3e3a562bd267d">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HOTT</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga56becb5b760c6b41904f324bf16b1aa2">   86</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FRSKY_SENSOR_HUB</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga6be60167c37a490b8240548f86841e7e">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FRSKY_SPORT_TELEMETRY</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga02dfa2cb4132a0a46ec69e459209ec1a">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SESSION_MANAGEMENT</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga7cdda1c4d728fde7a9771add071a3ff3">   90</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_OPENLOG</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___sparky2.html#gac34deb93cfe0b86c0c3f3fdd297af181">   93</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_RCVR</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga543ec4a4aa105d7090ebe2dd3a4dad3b">   94</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DSM</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf5008f32ca587c01a06316f630f9d29e">   95</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HSUM</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___sparky2.html#gad90558cccd143e6732c04e78f1dc3c54">   96</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SBUS</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga17d0ce1de0a34c9da0f230944ff38874">   97</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PPM</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___sparky2.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   98</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf9438740f04ee4c48c717dd2ed484e95">   99</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_GCSRCVR</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf6410b66dc97290a31c4ca57170cc771">  100</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RFM22B_RCVR</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga7448277b4e8b562edab90b017696189b">  101</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPENLRS_RCVR</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf2b5a6f5443ea6beccbee0dfaf1307c6">  102</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SRXL</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group___sparky2.html#gae53e0978b4edfd6c67b473bbb88abbbd">  103</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_IBUS</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaab491daf240fca6cc9e3243ce8e8712d">  105</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_FLASH</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga446b36ea5ee33295bce18fc867d8615e">  106</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLASH_JEDEC</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___sparky2.html#gabaec4c77cf420cd9ad55c5f96a10b192">  107</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLASH_INTERNAL</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga83406cd61f77db51d8a91643bd6c2e98">  108</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LOGFS_SETTINGS</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">  110</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga24b8202a96fa1ba8b2a366a80e8547b9">  113</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_INITCALL           </span><span class="comment">/* Include init call structures */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga10b6d602d36a03da82e31f6eff2e0a83">  114</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TELEM_PRIORITY_QUEUE       </span><span class="comment">/* Enable a priority queue in telemetry */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab0a79b712ecb50093fe0129a7468198f">  115</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf4039c0d196379cbfb36489300f94ffe">  117</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga6e7afec1958cbda03ec47ff50da7b749">  120</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING              1000</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group___sparky2.html#gad3537a058b1f030fb6243c09a2532112">  121</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             500</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group___sparky2.html#gae97115db8cae2e29462308550992c153">  122</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          150</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab45890a416f5e2177b434d93d89c362f">  123</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         80</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">  124</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           80</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga33b8e7ed32bafe7b1e55e18b832854ce">  125</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> * This has been calibrated 2013/03/11 using next @ 6d21c7a590619ebbc074e60cab5e134e65c9d32b.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9be33d810838161edf9412377209a4cf">  138</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9c23f32c100ee25c973b1be91fab56dd">  140</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="group___sparky2.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">  141</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___sparky2.html#gac7edbfa43685b86203f055c78fdcea8b">   38</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_I2C</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SPI</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_GPIO</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga2bd11ed062488227d091c75212261409">   41</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_CAN</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9342ac55ca81b9d977fec30f45813847">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* Variables related to the RFM22B functionality */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga878b6c7a5e981959c4f41d654f9342db">   45</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_RFM22B</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___sparky2.html#gace1ff3845bfdc37404abe261c6316ea2">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RFM22B_COM</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga66ca692c3616d468a144a072ea6ddbd6">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPENLRS</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/* Select the sensors to include */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//#define PIOS_INCLUDE_MPU9250</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga44cdd17f851d008ff8862030b0c2ebd4">   51</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MPU9250_SPI</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga3925877e791baa885fbc268aeb8048c7">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_MPU6000_ACCEL</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga2cc30288b8783fea8d042a8502af4e70">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MS5611</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaab84a3ad4a8e40da601259fa963168ff">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ETASV3</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga331308be9fde6166b4039a2966ce2b50">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV5004</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab48a97d4d9a65fbadfd195d283bc5fbf">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV7002</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga221b4e9f9650231f108d4cbb538bf9fd">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_HCSR04</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* Com systems to include */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   62</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___sparky2.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   66</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf6410b66dc97290a31c4ca57170cc771">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RFM22B_RCVR</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga7448277b4e8b562edab90b017696189b">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPENLRS_RCVR</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">   71</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___sparky2.html#gab0a79b712ecb50093fe0129a7468198f">   74</a></span>&#160;<span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___sparky2.html#gaf4039c0d196379cbfb36489300f94ffe">   76</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * This has been calibrated 2013/03/11 using next @ 6d21c7a590619ebbc074e60cab5e134e65c9d32b.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9be33d810838161edf9412377209a4cf">   91</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___sparky2.html#ga9c23f32c100ee25c973b1be91fab56dd">   93</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___sparky2.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">   94</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="pios__flight__config_8h_html"><div class="ttname"><a href="pios__flight__config_8h.html">pios_flight_config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

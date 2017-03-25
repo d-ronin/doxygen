@@ -307,6 +307,7 @@ var hierarchy =
         [ "BrainRE1", "class_brain_r_e1.html", null ],
         [ "Dtfc", "class_dtfc.html", null ],
         [ "Lux", "class_lux.html", null ],
+        [ "PikoBLX", "class_piko_b_l_x.html", null ],
         [ "PlayUavOsd", "class_play_uav_osd.html", null ],
         [ "Quanton", "class_quanton.html", null ],
         [ "Revolution", "class_revolution.html", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,9 +110,12 @@ $(document).ready(function(){initNavTree('bu_2common_2main_8c.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">main.c File Reference</div>  </div>
+<div class="title">main.c File Reference<div class="ingroups"><a class="el" href="group___updater.html">Bootloader Updater</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Starting point for the code.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;pios.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="pios__board__info_8h_source.html">pios_board_info.h</a>&quot;</code><br/>
 </div>
@@ -120,23 +123,31 @@ $(document).ready(function(){initNavTree('bu_2common_2main_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a> (void)</td></tr>
+<tr class="memitem:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a> (void)</td></tr>
 <tr class="separator:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5879845a39e040157796c1d907f43d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#ga5879845a39e040157796c1d907f43d24">error</a> (int)</td></tr>
+<tr class="memitem:ga5879845a39e040157796c1d907f43d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#ga5879845a39e040157796c1d907f43d24">error</a> (int)</td></tr>
 <tr class="separator:ga5879845a39e040157796c1d907f43d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gae326e6cc9f96a8a1e67276237f8d0523"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a></td></tr>
+<tr class="memitem:gae326e6cc9f96a8a1e67276237f8d0523"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a></td></tr>
 <tr class="separator:gae326e6cc9f96a8a1e67276237f8d0523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada518ca9b48fff7bbf389b9632fac787"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a></td></tr>
+<tr class="memitem:gada518ca9b48fff7bbf389b9632fac787"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a></td></tr>
 <tr class="separator:gada518ca9b48fff7bbf389b9632fac787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4dccd413b84105099ae7325ad03e8432"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader_update.html#ga4dccd413b84105099ae7325ad03e8432">_bu_payload_size</a></td></tr>
+<tr class="memitem:ga4dccd413b84105099ae7325ad03e8432"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___updater.html#ga4dccd413b84105099ae7325ad03e8432">_bu_payload_size</a></td></tr>
 <tr class="separator:ga4dccd413b84105099ae7325ad03e8432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Starting point for the code. </p>
+<dl class="section author"><dt>Author</dt><dd>The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org</a> Copyright (C) 2010. </dd>
+<dd>
+Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2012-2013 </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
+
+<p>Definition in file <a class="el" href="bu_2common_2main_8c_source.html">main.c</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

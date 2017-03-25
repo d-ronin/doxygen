@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: UDP Functions</title>
+<title>dRonin: UDP Driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -100,209 +100,10 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___u_d_p.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">UDP Functions</div>  </div>
+<div class="title">UDP Driver<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga723198747d044043b78fad73a9435819"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a> (uintptr_t udp_id, <a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> tx_out_cb, uintptr_t context)</td></tr>
-<tr class="separator:ga723198747d044043b78fad73a9435819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f250524dba77a4edc9d8bf56d5b0baf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a> (uintptr_t udp_id, uint16_t tx_bytes_avail)</td></tr>
-<tr class="separator:ga1f250524dba77a4edc9d8bf56d5b0baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7d42c4c6c196836914b6a4490b47ccf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structpios__fileout__dev.html">pios_fileout_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#gaa7d42c4c6c196836914b6a4490b47ccf">find_file_dev_by_id</a> (uintptr_t tcp)</td></tr>
-<tr class="separator:gaa7d42c4c6c196836914b6a4490b47ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e299446fa8190432cdc1a223a32e8e5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#ga5e299446fa8190432cdc1a223a32e8e5">PIOS_FILEOUT_Init</a> (uintptr_t *<a class="el" href="pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc">file_id</a>, const char *filename, const char *<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>)</td></tr>
-<tr class="separator:ga5e299446fa8190432cdc1a223a32e8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga8176503e758c500d82c847021a1100ff"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__com__driver.html">pios_com_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#ga8176503e758c500d82c847021a1100ff">pios_fileout_com_driver</a></td></tr>
-<tr class="separator:ga8176503e758c500d82c847021a1100ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88134912c15ef97345bf2366a762af27"><td class="memItemLeft" align="right" valign="top">struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html#ga88134912c15ef97345bf2366a762af27">tcpRxTaskHandle</a></td></tr>
-<tr class="separator:ga88134912c15ef97345bf2366a762af27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaa7d42c4c6c196836914b6a4490b47ccf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="structpios__fileout__dev.html">pios_fileout_dev</a>* find_file_dev_by_id </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>tcp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00054">54</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5e299446fa8190432cdc1a223a32e8e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t PIOS_FILEOUT_Init </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t *&#160;</td>
-          <td class="paramname"><em>file_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00063">63</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga723198747d044043b78fad73a9435819"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void PIOS_FILEOUT_RegisterTxCallback </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>udp_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a>&#160;</td>
-          <td class="paramname"><em>tx_out_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00115">115</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1f250524dba77a4edc9d8bf56d5b0baf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void PIOS_FILEOUT_TxStart </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>udp_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>tx_bytes_avail</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>we send everything directly whenever notified of data to send (lazy!)</p>
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00084">84</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ga8176503e758c500d82c847021a1100ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="structpios__com__driver.html">pios_com_driver</a> pios_fileout_com_driver</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        .tx_start   = <a class="code" href="group___p_i_o_s___u_d_p.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a>,</div>
-<div class="line">        .bind_tx_cb = <a class="code" href="group___p_i_o_s___u_d_p.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="group___p_i_o_s___u_d_p_html_ga1f250524dba77a4edc9d8bf56d5b0baf"><div class="ttname"><a href="group___p_i_o_s___u_d_p.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a></div><div class="ttdeci">static void PIOS_FILEOUT_TxStart(uintptr_t udp_id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00084">pios_fileout.c:84</a></div></div>
-<div class="ttc" id="group___p_i_o_s___u_d_p_html_ga723198747d044043b78fad73a9435819"><div class="ttname"><a href="group___p_i_o_s___u_d_p.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a></div><div class="ttdeci">static void PIOS_FILEOUT_RegisterTxCallback(uintptr_t udp_id, pios_com_callback tx_out_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00115">pios_fileout.c:115</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00048">48</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga88134912c15ef97345bf2366a762af27"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct pios_thread* tcpRxTaskHandle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Open file for writing </p>
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00062">62</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

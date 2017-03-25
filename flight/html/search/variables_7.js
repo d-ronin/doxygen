@@ -1,8 +1,8 @@
 var searchData=
 [
   ['g',['G',['../group___tau_labs_libraries.html#ga728acb2fd56f38a4cab69ede7b3a027e',1,'G():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga728acb2fd56f38a4cab69ede7b3a027e',1,'G():&#160;insgps14state.c'],['../group___i_n_s_g_p_s.html#ga728acb2fd56f38a4cab69ede7b3a027e',1,'G():&#160;insgps16state.c']]],
-  ['g_5fargc',['g_argc',['../group___revolution.html#ga56a0ec58e8a4c0f144ab10e9eabc8934',1,'main.c']]],
-  ['g_5fargv',['g_argv',['../group___revolution.html#ga42cc1f3030bc4fced497d4a33ac59959',1,'main.c']]],
+  ['g_5fargc',['g_argc',['../group___sim.html#ga56a0ec58e8a4c0f144ab10e9eabc8934',1,'main.c']]],
+  ['g_5fargv',['g_argv',['../group___sim.html#ga42cc1f3030bc4fced497d4a33ac59959',1,'main.c']]],
   ['g_5ferror_5fnumber',['g_error_number',['../structhott__gam__message.html#aa6a29556ab81f7cee303212ea7a4f6b5',1,'hott_gam_message']]],
   ['gain',['Gain',['../structpios__hmc5883__cfg.html#a82fb6708784acace10b4f5c5a9c8e23e',1,'pios_hmc5883_cfg::Gain()'],['../structpios__hmc5983__cfg.html#a413ddca98eb4ba97b318aabaa13f2bde',1,'pios_hmc5983_cfg::Gain()']]],
   ['gcstelemetryupdateperiod',['gcsTelemetryUpdatePeriod',['../struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d',1,'__attribute__']]],
@@ -19,9 +19,10 @@ var searchData=
   ['get_5fsn',['GET_SN',['../classpx__uploader_1_1uploader.html#a8b53c05343c46dac2476893bebe98c49',1,'px_uploader::uploader']]],
   ['get_5fsync',['GET_SYNC',['../classpx__uploader_1_1uploader.html#a98df4735835b5c245ed09c9228b509df',1,'px_uploader::uploader']]],
   ['gexp',['gexp',['../ecc_8h.html#a4bfe7bd4f17407ec020b8850207bfa25',1,'gexp():&#160;galois.c'],['../galois_8c.html#aaca848efd07888d6d88886ac06b463de',1,'gexp():&#160;galois.c']]],
+  ['given',['given',['../structpios__semaphore.html#a79e343d447cb2e03cf3f07b7baf8576f',1,'pios_semaphore']]],
   ['globalflags',['globalFlags',['../struct_u_b_x___n_a_v___s_v_i_n_f_o.html#a9ea30e93a506e7749f8121ff4e811aae',1,'UBX_NAV_SVINFO']]],
   ['glog',['glog',['../ecc_8h.html#ac5e276c5c2818484cef4185b715f2c70',1,'glog():&#160;galois.c'],['../galois_8c.html#af2e4b45be6be48b610cd9c7ad27de11a',1,'glog():&#160;galois.c']]],
-  ['go_5fdfu',['GO_dfu',['../group___copter_control_b_l.html#ga45c9bb4b375b5f606e1ef13138fd01ae',1,'main.c']]],
+  ['go_5fdfu',['GO_dfu',['../group___common_f1.html#ga45c9bb4b375b5f606e1ef13138fd01ae',1,'main.c']]],
   ['gpio',['gpio',['../structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402',1,'stm32_gpio::gpio()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf73feb9f87520480ed9dd7c264cd47cc',1,'dshot_info::gpio()'],['../group___p_i_o_s.html#ga9f00a167ec05194a200822f3281bc4ed',1,'pios_dac_cfg::gpio()']]],
   ['gpio_5fclk_5ffunc',['gpio_clk_func',['../structpios__sbus__cfg.html#a66cb660c4fe8979c218032c477b12a93',1,'pios_sbus_cfg']]],
   ['gpio_5fclk_5fperiph',['gpio_clk_periph',['../structpios__sbus__cfg.html#af2100d98daffabe98836f12519330975',1,'pios_sbus_cfg']]],

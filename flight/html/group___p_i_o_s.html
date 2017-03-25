@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -351,6 +351,17 @@ Modules</h2></td></tr>
 <tr class="memitem:group___p_i_o_s___w_s2811"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html">WS2811 Functions</a></td></tr>
 <tr class="memdesc:group___p_i_o_s___w_s2811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver for WS2811 LEDs. Uses one timer (generally TIM1 advanced control timer) and two DMAs. First DMA sets the bit high at the beginning of each cycle. Next DMA picks one of two phases to lower the bit at. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___p_i_o_s___f_i_l_e_o_u_t"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_i_l_e_o_u_t.html">File Output Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___p_i_o_s___s_e_r_i_a_l"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html">Serial Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___p_i_o_s___t_c_p"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___t_c_p.html">TCP Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___p_i_o_s___u_d_p"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_d_p.html">UDP Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html">Inline delay subsystem</a></td></tr>
+<tr class="memdesc:group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline delay routines for fine-resolution spinloops. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group___p_i_o_s___u_s_a_r_t"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_a_r_t.html">USART Functions</a></td></tr>
 <tr class="memdesc:group___p_i_o_s___u_s_a_r_t"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIOS interface for USART port. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,8 +375,6 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group___p_i_o_s___v_i_d_e_o"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___v_i_d_e_o.html">Code for OSD video generator</a></td></tr>
 <tr class="memdesc:group___p_i_o_s___v_i_d_e_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output video (black &amp; white pixels) over SPI. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___free_r_t_o_s"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html">FreeRTOS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
@@ -501,7 +510,7 @@ Functions</h2></td></tr>
 <tr class="separator:gaa0649118bc3728b2a62af0b47606ff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7408e892dd48c6ce39b5821d917a3dd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga7408e892dd48c6ce39b5821d917a3dd2">vsprintf</a> (char *out, const char *format, va_list args)</td></tr>
 <tr class="separator:ga7408e892dd48c6ce39b5821d917a3dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf78a52a59a43dc156963dbbab958a468"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#gaf78a52a59a43dc156963dbbab958a468">snprintf</a> (char *buf, size_t <a class="el" href="group___character_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a>, const char *format,...)</td></tr>
+<tr class="memitem:gaf78a52a59a43dc156963dbbab958a468"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#gaf78a52a59a43dc156963dbbab958a468">snprintf</a> (char *buf, size_t <a class="el" href="group___char_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a>, const char *format,...)</td></tr>
 <tr class="separator:gaf78a52a59a43dc156963dbbab958a468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f5af5caf7d5a87f4427cb37d84345ee"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga7f5af5caf7d5a87f4427cb37d84345ee">PIOS_FrSkyRssi_Get</a> ()</td></tr>
 <tr class="separator:ga7f5af5caf7d5a87f4427cb37d84345ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -911,7 +920,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00244">244</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00251">251</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +938,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00245">245</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00252">252</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -949,7 +958,7 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">( (((x) &amp; 0xff00) &gt;&gt; 8) | \</div>
 <div class="line">                                 (((x) &amp; 0x00ff) &lt;&lt; 8) )</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00222">222</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00229">229</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -971,7 +980,7 @@ Variables</h2></td></tr>
 <div class="line">                                 (((x) &amp; 0x0000ff00) &lt;&lt;  8) | \</div>
 <div class="line">                                 (((x) &amp; 0x000000ff) &lt;&lt; 24) )</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00224">224</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00231">231</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +998,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00219">219</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00226">226</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1016,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00220">220</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00227">227</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1044,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00216">216</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00223">223</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00242">242</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00249">249</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1156,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00243">243</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00250">250</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1412,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00215">215</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
+<p>Definition at line <a class="el" href="_pi_o_s_2pios_8h_source.html#l00222">222</a> of file <a class="el" href="_pi_o_s_2pios_8h_source.html">pios.h</a>.</p>
 
 </div>
 </div>

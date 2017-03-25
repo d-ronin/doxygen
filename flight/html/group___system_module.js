@@ -36,6 +36,7 @@ var group___system_module =
     [ "GetFreeIrqStackSize", "group___system_module.html#gab6b5e73b3c4c1fac4c572b3cdbaa76b6", null ],
     [ "objectUpdatedCb", "group___system_module.html#gaf33480c6b247620915026fc37bb9232a", null ],
     [ "processPeriodicUpdates", "group___system_module.html#gadcbe694acc4c0e004ec27be36a162e1b", null ],
+    [ "systemmod_process_rgb_leds", "group___system_module.html#ga107237204bc679179166c17b330533a5", null ],
     [ "SystemModInitialize", "group___system_module.html#ga25e6d9910d77be50c3b01c7b738094d9", null ],
     [ "SystemModStart", "group___system_module.html#gacce857283e17c1584c0944c872f40fce", null ],
     [ "systemPeriodicCb", "group___system_module.html#gaee56646202d2b7689523bbb22d47d7cd", null ],

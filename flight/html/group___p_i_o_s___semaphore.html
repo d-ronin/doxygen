@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -103,7 +103,8 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___semaphore.html','');
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Semaphore Abstraction<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
@@ -134,11 +135,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8ef85c87885473f57f442c9980db7cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives binary semaphore.  <a href="#ga8ef85c87885473f57f442c9980db7cdb">More...</a><br/></td></tr>
 <tr class="separator:ga8ef85c87885473f57f442c9980db7cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a6bf0a60107305779f304f6ac32fbb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___semaphore.html#ga8a6bf0a60107305779f304f6ac32fbb7">PIOS_Semaphore_Take_FromISR</a> (struct <a class="el" href="structpios__semaphore.html">pios_semaphore</a> *sema, bool *woken)</td></tr>
-<tr class="memdesc:ga8a6bf0a60107305779f304f6ac32fbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes binary semaphore from ISR context.  <a href="#ga8a6bf0a60107305779f304f6ac32fbb7">More...</a><br/></td></tr>
 <tr class="separator:ga8a6bf0a60107305779f304f6ac32fbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bf3b406b0431606b13238e9b8b0bd13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___semaphore.html#ga2bf3b406b0431606b13238e9b8b0bd13">PIOS_Semaphore_Give_FromISR</a> (struct <a class="el" href="structpios__semaphore.html">pios_semaphore</a> *sema, bool *woken)</td></tr>
-<tr class="memdesc:ga2bf3b406b0431606b13238e9b8b0bd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives binary semaphore from ISR context.  <a href="#ga2bf3b406b0431606b13238e9b8b0bd13">More...</a><br/></td></tr>
 <tr class="separator:ga2bf3b406b0431606b13238e9b8b0bd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga26dac5d4f59defc61dd2582506579665"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___semaphore.html#ga26dac5d4f59defc61dd2582506579665">pios_semaphore::sema_count</a></td></tr>
+<tr class="separator:ga26dac5d4f59defc61dd2582506579665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Abstracts the concept of a binary semaphore to hide different implementations. </p>
@@ -175,7 +179,7 @@ Functions</h2></td></tr>
 <p>Creates a binary semaphore. </p>
 <dl class="section return"><dt>Returns</dt><dd>instance of <code>struct</code> <a class="el" href="structpios__semaphore.html">pios_semaphore</a> or NULL on failure </dd></dl>
 
-<p>Definition at line <a class="el" href="pios__semaphore_8c_source.html#l00268">268</a> of file <a class="el" href="pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00150">150</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>
@@ -202,7 +206,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success or false on timeout or failure </dd></dl>
 
-<p>Definition at line <a class="el" href="pios__semaphore_8c_source.html#l00320">320</a> of file <a class="el" href="pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00202">202</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>
@@ -230,17 +234,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gives binary semaphore from ISR context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sema</td><td>pointer to instance of <code>struct</code> <a class="el" href="structpios__semaphore.html">pios_semaphore</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">woken</td><td>pointer to bool which will be set true if a context switch is required</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true on success or false on timeout or failure </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__semaphore_8c_source.html#l00378">378</a> of file <a class="el" href="pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00231">231</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>
@@ -278,7 +272,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success or false on timeout or failure </dd></dl>
 
-<p>Definition at line <a class="el" href="pios__semaphore_8c_source.html#l00293">293</a> of file <a class="el" href="pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00175">175</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>
@@ -306,17 +300,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Takes binary semaphore from ISR context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sema</td><td>pointer to instance of <code>struct</code> <a class="el" href="structpios__semaphore.html">pios_semaphore</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">woken</td><td>pointer to bool which will be set true if a context switch is required</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true on success or false on timeout or failure </dd></dl>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00220">220</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
-<p>Definition at line <a class="el" href="pios__semaphore_8c_source.html#l00350">350</a> of file <a class="el" href="pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga26dac5d4f59defc61dd2582506579665"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_semaphore::sema_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00034">34</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,5 @@
 var dir_b2dabdc3331b98112d083157ad3911c6 =
 [
-    [ "board.c", "seppuku_2fw_2board_8c.html", "seppuku_2fw_2board_8c" ],
     [ "board.h", "seppuku_2fw_2board_8h.html", "seppuku_2fw_2board_8h" ],
     [ "chconf.h", "seppuku_2fw_2chconf_8h.html", "seppuku_2fw_2chconf_8h" ],
     [ "halconf.h", "seppuku_2fw_2halconf_8h.html", "seppuku_2fw_2halconf_8h" ],

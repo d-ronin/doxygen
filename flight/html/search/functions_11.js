@@ -26,8 +26,8 @@ var searchData=
   ['rotfrom2vectors',['RotFrom2Vectors',['../group___tau_labs_math.html#ga0848733f9025a839c84f7e7b71d87c63',1,'coordinate_conversions.c']]],
   ['round_5fmgrs',['Round_MGRS',['../mgrs_8c.html#af7df591434ebd5ade7d9961aa5f5c464',1,'mgrs.c']]],
   ['rpy2quaternion',['RPY2Quaternion',['../group___tau_labs_math.html#ga81a64437be6edb2654bfebcc14321964',1,'coordinate_conversions.c']]],
-  ['rssi_5fupdate',['RSSI_update',['../group___character_o_s_d.html#gabe1e5ec56736cab69b039fa8089ef58e',1,'panel.c']]],
-  ['rssiflag_5fupdate',['RSSIFLAG_update',['../group___character_o_s_d.html#ga118e92f4ffa77715471b477d7f770ec8',1,'panel.c']]],
+  ['rssi_5fupdate',['RSSI_update',['../group___char_o_s_d.html#gabe1e5ec56736cab69b039fa8089ef58e',1,'panel.c']]],
+  ['rssiflag_5fupdate',['RSSIFLAG_update',['../group___char_o_s_d.html#ga118e92f4ffa77715471b477d7f770ec8',1,'panel.c']]],
   ['rssitype_5fto_5fchannelgroup',['rssitype_to_channelgroup',['../group___control.html#ga73eb0a5c9401e151b5fd0a3003ce45dd',1,'transmitter_control.c']]],
   ['rungekutta',['RungeKutta',['../group___tau_labs_libraries.html#ga46ea4d984cf502eab4575602fcba7721',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#gac5eaabdd6d05ef0667c934d4ef59eafa',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps14state.c']]],
   ['rv2rot',['Rv2Rot',['../group___tau_labs_math.html#ga43ed3db7237f03a6488c8dd7b987b1bd',1,'coordinate_conversions.c']]]

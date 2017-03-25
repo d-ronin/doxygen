@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___unit_tests.html#ga763ce33e0f19772a9d4e1c35f0771fc1">   61</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, EmptyEncode) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___unit_tests.html#ga763ce33e0f19772a9d4e1c35f0771fc1">   61</a></span>&#160;<a class="code" href="group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, EmptyEncode) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>[4] = {};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90">encode_data</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)p, 0, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)p);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  EXPECT_EQ(0, p[0]);</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  EXPECT_EQ(0, p[3]);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___unit_tests.html#ga6cb7604a151ba35e24a119094d21c49c">   70</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, CorrectEncode) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___unit_tests.html#ga6cb7604a151ba35e24a119094d21c49c">   70</a></span>&#160;<a class="code" href="group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, CorrectEncode) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>[10] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90">encode_data</a>(p, 6, p);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">//fprintf(stdout, &quot;%d %d %d %d\n&quot;, p[6], p[7], p[8], p[9]);</span></div>
@@ -180,14 +180,14 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  EXPECT_EQ(0x3b, p[9]);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___unit_tests.html#gafa3f539e5afb2a2133e3d6d96d16fa61">   80</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, PassEncode) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___unit_tests.html#gafa3f539e5afb2a2133e3d6d96d16fa61">   80</a></span>&#160;<a class="code" href="group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, PassEncode) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>[10] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90">encode_data</a>(p, 6, p);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="ecc_8h.html#a231146bc254c1a49a9d3cc94c84cfd4e">decode_data</a>(p, 6 + <a class="code" href="group___brain_f_p_v-_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="ecc_8h.html#a231146bc254c1a49a9d3cc94c84cfd4e">decode_data</a>(p, 6 + <a class="code" href="group___brain_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  EXPECT_EQ(0, <a class="code" href="ecc_8h.html#a75555933650a50987a9c5b39aff2b26a">check_syndrome</a>());</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___unit_tests.html#gae17e6e4fa21ca3d30ebda5be7da710f7">   87</a></span>&#160;<a class="code" href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, Recover) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___unit_tests.html#gae17e6e4fa21ca3d30ebda5be7da710f7">   87</a></span>&#160;<a class="code" href="group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672">TEST_F</a>(<a class="code" href="class_encode_decode.html">EncodeDecode</a>, Recover) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>[10] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90">encode_data</a>(p, 6, p);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> p2[10];</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  p2[4] = 30;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// verify it flags the error</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="ecc_8h.html#a231146bc254c1a49a9d3cc94c84cfd4e">decode_data</a>(p2, 6 + <a class="code" href="group___brain_f_p_v-_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="ecc_8h.html#a231146bc254c1a49a9d3cc94c84cfd4e">decode_data</a>(p2, 6 + <a class="code" href="group___brain_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  EXPECT_EQ(1, <a class="code" href="ecc_8h.html#a75555933650a50987a9c5b39aff2b26a">check_syndrome</a>());</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// verify it is corrected</span></div>
@@ -207,7 +207,9 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
 <div class="ttc" id="berlekamp_8c_html_a6da28744dd026ab3b7deb96086c74f0d"><div class="ttname"><a href="berlekamp_8c.html#a6da28744dd026ab3b7deb96086c74f0d">correct_errors_erasures</a></div><div class="ttdeci">int correct_errors_erasures(unsigned char codeword[], int csize, int nerasures, int erasures[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00270">berlekamp.c:270</a></div></div>
+<div class="ttc" id="group___unit_tests_html_gaa2806007ccc77d620d2eba58f0ce7672"><div class="ttname"><a href="group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672">TEST_F</a></div><div class="ttdeci">TEST_F(RneFromLLATest, Equator)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_2unittest_8cpp_source.html#l00068">unittest.cpp:68</a></div></div>
 <div class="ttc" id="group___unit_tests_html_ga57e34df1fb9fae48b6cc9a8748eee5de"><div class="ttname"><a href="group___unit_tests.html#ga57e34df1fb9fae48b6cc9a8748eee5de">EncodeDecode::TearDown</a></div><div class="ttdeci">virtual void TearDown()</div><div class="ttdef"><b>Definition:</b> <a href="error__correcting_2unittest_8cpp_source.html#l00057">unittest.cpp:57</a></div></div>
+<div class="ttc" id="group___brain_r_e1_html_ga75691040c0909ea4c06cd3d87f3f01b2"><div class="ttname"><a href="group___brain_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a></div><div class="ttdeci">#define RS_ECC_NPARITY</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_2board-info_2pios__board_8h_source.html#l00158">pios_board.h:158</a></div></div>
 <div class="ttc" id="ecc_8h_html"><div class="ttname"><a href="ecc_8h.html">ecc.h</a></div></div>
 <div class="ttc" id="ecc_8h_html_a75555933650a50987a9c5b39aff2b26a"><div class="ttname"><a href="ecc_8h.html#a75555933650a50987a9c5b39aff2b26a">check_syndrome</a></div><div class="ttdeci">int check_syndrome(void)</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00126">rs.c:126</a></div></div>
 <div class="ttc" id="group___unit_tests_html_gaf0aee81b67cc3376cdf9da5e7f4e8ab7"><div class="ttname"><a href="group___unit_tests.html#gaf0aee81b67cc3376cdf9da5e7f4e8ab7">EncodeDecode::SetUp</a></div><div class="ttdeci">virtual void SetUp()</div><div class="ttdef"><b>Definition:</b> <a href="error__correcting_2unittest_8cpp_source.html#l00053">unittest.cpp:53</a></div></div>
@@ -215,10 +217,8 @@ $(document).ready(function(){initNavTree('error__correcting_2unittest_8cpp_sourc
 <div class="ttc" id="ecc_8h_html_a33cac00a5b8d040514e163b6d4f97b90"><div class="ttname"><a href="ecc_8h.html#a33cac00a5b8d040514e163b6d4f97b90">encode_data</a></div><div class="ttdeci">void encode_data(unsigned char msg[], int nbytes, unsigned char dst[])</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00188">rs.c:188</a></div></div>
 <div class="ttc" id="ecc_8h_html_a8a34d4f9d615ce945b4e6a2c01f27fa8"><div class="ttname"><a href="ecc_8h.html#a8a34d4f9d615ce945b4e6a2c01f27fa8">initialize_ecc</a></div><div class="ttdeci">void initialize_ecc(void)</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00048">rs.c:48</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
-<div class="ttc" id="group___unit_tests_html_ga1a85c2f630b4bd29dff845aa1e7fe47c"><div class="ttname"><a href="group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c">TEST_F</a></div><div class="ttdeci">TEST_F(CircQueueTest, CircQueueFillUp)</div><div class="ttdef"><b>Definition:</b> <a href="circqueue_2unittest_8cpp_source.html#l00054">unittest.cpp:54</a></div></div>
 <div class="ttc" id="class_encode_decode_html"><div class="ttname"><a href="class_encode_decode.html">EncodeDecode</a></div><div class="ttdef"><b>Definition:</b> <a href="error__correcting_2unittest_8cpp_source.html#l00051">unittest.cpp:51</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
-<div class="ttc" id="group___brain_f_p_v-_r_e1_html_ga75691040c0909ea4c06cd3d87f3f01b2"><div class="ttname"><a href="group___brain_f_p_v-_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2">RS_ECC_NPARITY</a></div><div class="ttdeci">#define RS_ECC_NPARITY</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_2board-info_2pios__board_8h_source.html#l00158">pios_board.h:158</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

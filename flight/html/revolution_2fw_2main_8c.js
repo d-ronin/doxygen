@@ -5,7 +5,7 @@ var revolution_2fw_2main_8c =
     [ "InitModules", "revolution_2fw_2main_8c.html#gaceb758200d6e44eb539b54367db255a3", null ],
     [ "initTask", "revolution_2fw_2main_8c.html#gae7ecc4ed0ea5858477b78acaf928c3ef", null ],
     [ "main", "revolution_2fw_2main_8c.html#gae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "PIOS_Board_Init", "revolution_2fw_2main_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
+    [ "PIOS_Board_Init", "revolution_2fw_2main_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "Stack_Change", "revolution_2fw_2main_8c.html#ga7a789e7b91612099a4a1f355b9e97c24", null ],
     [ "initTaskHandle", "revolution_2fw_2main_8c.html#ga396301109ebb6001fe433d642113f734", null ]
 ];

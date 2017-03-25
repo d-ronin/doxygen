@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,49 +135,31 @@ $(document).ready(function(){initNavTree('pios__queue_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FREERTOS)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span>pios_queue</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        uintptr_t queue_handle;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#elif defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;ch.h&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>pios_queue</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Mailbox mb;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        MemoryPool mp;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> *mpb;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_FREERTOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * The following functions implement the concept of a queue usable</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * with PIOS_INCLUDE_FREERTOS or PIOS_INCLUDE_CHIBIOS.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * for details see</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * http://www.freertos.org/a00018.html</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * http://chibios.sourceforge.net/html/group__mailboxes.html</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">struct </span>pios_queue *<a class="code" href="group___p_i_o_s___queue.html#ga8cb0cd2ec5ead7bd6378c33f78c31966">PIOS_Queue_Create</a>(<span class="keywordtype">size_t</span> queue_length, <span class="keywordtype">size_t</span> item_size);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___queue.html#ga9fc96bf9bd5cdd96dadc57e41b4d1784">PIOS_Queue_Delete</a>(<span class="keyword">struct</span> pios_queue *queuep);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(<span class="keyword">struct</span> pios_queue *queuep, <span class="keyword">const</span> <span class="keywordtype">void</span> *itemp, uint32_t timeout_ms);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4">PIOS_Queue_Send_FromISR</a>(<span class="keyword">struct</span> pios_queue *queuep, <span class="keyword">const</span> <span class="keywordtype">void</span> *itemp, <span class="keywordtype">bool</span> *wokenp);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#ga22c308fc25c3d44deab081be3d8bdbcf">PIOS_Queue_Receive</a>(<span class="keyword">struct</span> pios_queue *queuep, <span class="keywordtype">void</span> *itemp, uint32_t timeout_ms);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_QUEUE_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___p_i_o_s___queue_html_ga8cb0cd2ec5ead7bd6378c33f78c31966"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga8cb0cd2ec5ead7bd6378c33f78c31966">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div></div>
-<div class="ttc" id="group___p_i_o_s___queue_html_ga9b33d26fbfc63284bb9d420f539914e4"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4">PIOS_Queue_Send_FromISR</a></div><div class="ttdeci">bool PIOS_Queue_Send_FromISR(struct pios_queue *queuep, const void *itemp, bool *wokenp)</div></div>
-<div class="ttc" id="group___p_i_o_s___queue_html_gac5ddcec5126e8a38c42a9973f421ee5e"><div class="ttname"><a href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a></div><div class="ttdeci">bool PIOS_Queue_Send(struct pios_queue *queuep, const void *itemp, uint32_t timeout_ms)</div></div>
-<div class="ttc" id="group___p_i_o_s___queue_html_ga22c308fc25c3d44deab081be3d8bdbcf"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga22c308fc25c3d44deab081be3d8bdbcf">PIOS_Queue_Receive</a></div><div class="ttdeci">bool PIOS_Queue_Receive(struct pios_queue *queuep, void *itemp, uint32_t timeout_ms)</div></div>
-<div class="ttc" id="group___p_i_o_s___queue_html_ga9fc96bf9bd5cdd96dadc57e41b4d1784"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga9fc96bf9bd5cdd96dadc57e41b4d1784">PIOS_Queue_Delete</a></div><div class="ttdeci">void PIOS_Queue_Delete(struct pios_queue *queuep)</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * The following functions implement the concept of a queue usable</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * with PIOS_INCLUDE_CHIBIOS.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * for details see</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * http://www.freertos.org/a00018.html</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * http://chibios.sourceforge.net/html/group__mailboxes.html</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__queue.html">pios_queue</a> *<a class="code" href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a>(<span class="keywordtype">size_t</span> queue_length, <span class="keywordtype">size_t</span> <a class="code" href="structpios__queue.html#aac1cbafc1b36766bcb395f1ddd43ddcb">item_size</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___queue.html#ga9fc96bf9bd5cdd96dadc57e41b4d1784">PIOS_Queue_Delete</a>(<span class="keyword">struct</span> <a class="code" href="structpios__queue.html">pios_queue</a> *queuep);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(<span class="keyword">struct</span> <a class="code" href="structpios__queue.html">pios_queue</a> *queuep, <span class="keyword">const</span> <span class="keywordtype">void</span> *itemp, uint32_t timeout_ms);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4">PIOS_Queue_Send_FromISR</a>(<span class="keyword">struct</span> <a class="code" href="structpios__queue.html">pios_queue</a> *queuep, <span class="keyword">const</span> <span class="keywordtype">void</span> *itemp, <span class="keywordtype">bool</span> *wokenp);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___queue.html#ga22c308fc25c3d44deab081be3d8bdbcf">PIOS_Queue_Receive</a>(<span class="keyword">struct</span> <a class="code" href="structpios__queue.html">pios_queue</a> *queuep, <span class="keywordtype">void</span> *itemp, uint32_t timeout_ms);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_QUEUE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>
+<div class="ttc" id="group___p_i_o_s___queue_html_ga9b33d26fbfc63284bb9d420f539914e4"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4">PIOS_Queue_Send_FromISR</a></div><div class="ttdeci">bool PIOS_Queue_Send_FromISR(struct pios_queue *queuep, const void *itemp, bool *wokenp)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00141">pios_queue.c:141</a></div></div>
+<div class="ttc" id="group___p_i_o_s___queue_html_gac5ddcec5126e8a38c42a9973f421ee5e"><div class="ttname"><a href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a></div><div class="ttdeci">bool PIOS_Queue_Send(struct pios_queue *queuep, const void *itemp, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00101">pios_queue.c:101</a></div></div>
+<div class="ttc" id="group___p_i_o_s___queue_html_ga22c308fc25c3d44deab081be3d8bdbcf"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga22c308fc25c3d44deab081be3d8bdbcf">PIOS_Queue_Receive</a></div><div class="ttdeci">bool PIOS_Queue_Receive(struct pios_queue *queuep, void *itemp, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00153">pios_queue.c:153</a></div></div>
+<div class="ttc" id="group___p_i_o_s___queue_html_ga9fc96bf9bd5cdd96dadc57e41b4d1784"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga9fc96bf9bd5cdd96dadc57e41b4d1784">PIOS_Queue_Delete</a></div><div class="ttdeci">void PIOS_Queue_Delete(struct pios_queue *queuep)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00089">pios_queue.c:89</a></div></div>
+<div class="ttc" id="structpios__queue_html_aac1cbafc1b36766bcb395f1ddd43ddcb"><div class="ttname"><a href="structpios__queue.html#aac1cbafc1b36766bcb395f1ddd43ddcb">pios_queue::item_size</a></div><div class="ttdeci">uint16_t item_size</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00041">pios_queue.c:41</a></div></div>
+<div class="ttc" id="structpios__queue_html"><div class="ttname"><a href="structpios__queue.html">pios_queue</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00034">pios_queue.c:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

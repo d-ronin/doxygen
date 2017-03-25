@@ -1,6 +1,5 @@
 var dir_d06a443d3554c600e72cefe4acc5229b =
 [
-    [ "circqueue", "dir_a539f40a0c969716aa26154169e57d92.html", "dir_a539f40a0c969716aa26154169e57d92" ],
     [ "coordinate_conversions", "dir_718a8f0ed4430074dbf177bda796619b.html", "dir_718a8f0ed4430074dbf177bda796619b" ],
     [ "dsm", "dir_6df48b5bb20a3f5fd9a013f683d6b354.html", "dir_6df48b5bb20a3f5fd9a013f683d6b354" ],
     [ "error_correcting", "dir_7bcb9dffdfc9d36028b55d1a1a530c26.html", "dir_7bcb9dffdfc9d36028b55d1a1a530c26" ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"dir_668a8ac1efeb3f46977238e292642f2d.html":[6,0,0,0,0,1,10],
 "dir_66c71b9e1539b95f72b4541ab3123b1e.html":[6,0,0,0,0,1,32],
 "dir_67d71a7ed28b8e48971535daa104df4f.html":[6,0,0,0,0,0,1,0,0,1],
 "dir_682a7d12a5379ce0eb74b165e1454394.html":[6,0,0,0,0,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "gcscontrolgadget_8cpp_source.html":[6,0,0,0,0,1,15,3],
 "gcscontrolgadget_8h.html":[6,0,0,0,0,1,15,4],
 "gcscontrolgadget_8h_source.html":[6,0,0,0,0,1,15,4],
-"gcscontrolgadgetconfiguration_8cpp.html":[6,0,0,0,0,1,15,5],
-"gcscontrolgadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,15,5]
+"gcscontrolgadgetconfiguration_8cpp.html":[6,0,0,0,0,1,15,5]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -127,6 +127,7 @@ $(document).ready(function(){initNavTree('attitude_8c.html','');});
 <code>#include &quot;physical_constants.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="coordinate__conversions_8h_source.html">coordinate_conversions.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_world_mag_model_8h_source.html">WorldMagModel.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="insgps_8h_source.html">insgps.h</a>&quot;</code><br/>
 <code>#include &quot;accels.h&quot;</code><br/>
 <code>#include &quot;attitudeactual.h&quot;</code><br/>
 <code>#include &quot;attitudesettings.h&quot;</code><br/>
@@ -148,7 +149,6 @@ $(document).ready(function(){initNavTree('attitude_8c.html','');});
 <code>#include &quot;stateestimation.h&quot;</code><br/>
 <code>#include &quot;systemalarms.h&quot;</code><br/>
 <code>#include &quot;velocityactual.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="insgps_8h_source.html">insgps.h</a>&quot;</code><br/>
 </div>
 <p><a href="attitude_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -164,7 +164,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;2504</td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_HIGH</td></tr>
+<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54abbe1aff2d1bfe2d5c2aeae36e422909d">PIOS_THREAD_PRIO_HIGH</a></td></tr>
 <tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50858e76836ece0d48f2f319744d5c7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga50858e76836ece0d48f2f319744d5c7c">FAILSAFE_TIMEOUT_MS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:ga50858e76836ece0d48f2f319744d5c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,12 +216,11 @@ Functions</h2></td></tr>
 <tr class="separator:gaf7bd85556060be5c23393d3243956df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5de0a7ca8bf423e9f7ada9c3da1ac34e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e">updateNedAccel</a> ()</td></tr>
 <tr class="separator:ga5de0a7ca8bf423e9f7ada9c3da1ac34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0ed77fef94661b3f71152ff2cd735b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaa0ed77fef94661b3f71152ff2cd735b6">settingsUpdatedCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *objEv, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:gaa0ed77fef94661b3f71152ff2cd735b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf179d2bdeba73684f425664481b78b7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaaf179d2bdeba73684f425664481b78b7">apply_accel_filter</a> (const float *raw, float *filtered)</td></tr>
 <tr class="memdesc:gaaf179d2bdeba73684f425664481b78b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A low pass filter on the accels which helps with vibration resistance.  <a href="group___attitude_module.html#gaaf179d2bdeba73684f425664481b78b7">More...</a><br/></td></tr>
 <tr class="separator:gaaf179d2bdeba73684f425664481b78b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa56401136ce036bf887c06f80ea67c09"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaa56401136ce036bf887c06f80ea67c09">getNED</a> (GPSPositionData *gpsPosition, float *NED)</td></tr>
+<tr class="memdesc:gaa56401136ce036bf887c06f80ea67c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the GPS LLA position into NED coordinates.  <a href="group___attitude_module.html#gaa56401136ce036bf887c06f80ea67c09">More...</a><br/></td></tr>
 <tr class="separator:gaa56401136ce036bf887c06f80ea67c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga495f3b515a8ba755fdce36d7ec488b1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga495f3b515a8ba755fdce36d7ec488b1c">accumulate_gyro_compute</a> ()</td></tr>
 <tr class="memdesc:ga495f3b515a8ba755fdce36d7ec488b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the mean gyro accumulated and assign the bias.  <a href="group___attitude_module.html#ga495f3b515a8ba755fdce36d7ec488b1c">More...</a><br/></td></tr>
@@ -245,19 +244,19 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga482eb3758803d8b9cafef7a51060f34c"><td class="memItemLeft" align="right" valign="top">static struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga482eb3758803d8b9cafef7a51060f34c">attitudeTaskHandle</a></td></tr>
+<tr class="memitem:ga482eb3758803d8b9cafef7a51060f34c"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga482eb3758803d8b9cafef7a51060f34c">attitudeTaskHandle</a></td></tr>
 <tr class="separator:ga482eb3758803d8b9cafef7a51060f34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdbe196fd5d94792983e85c67172e844"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gacdbe196fd5d94792983e85c67172e844">gyroQueue</a></td></tr>
+<tr class="memitem:gacdbe196fd5d94792983e85c67172e844"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gacdbe196fd5d94792983e85c67172e844">gyroQueue</a></td></tr>
 <tr class="separator:gacdbe196fd5d94792983e85c67172e844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c4c234ed6af063a0caa20cb45519411"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga9c4c234ed6af063a0caa20cb45519411">accelQueue</a></td></tr>
+<tr class="memitem:ga9c4c234ed6af063a0caa20cb45519411"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga9c4c234ed6af063a0caa20cb45519411">accelQueue</a></td></tr>
 <tr class="separator:ga9c4c234ed6af063a0caa20cb45519411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26a8440c224690e7de90dac94b9d0761"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga26a8440c224690e7de90dac94b9d0761">magQueue</a></td></tr>
+<tr class="memitem:ga26a8440c224690e7de90dac94b9d0761"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga26a8440c224690e7de90dac94b9d0761">magQueue</a></td></tr>
 <tr class="separator:ga26a8440c224690e7de90dac94b9d0761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57e0e91b9579346b0e90e60b3821972f"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga57e0e91b9579346b0e90e60b3821972f">baroQueue</a></td></tr>
+<tr class="memitem:ga57e0e91b9579346b0e90e60b3821972f"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga57e0e91b9579346b0e90e60b3821972f">baroQueue</a></td></tr>
 <tr class="separator:ga57e0e91b9579346b0e90e60b3821972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21f485db66f0826599238a79b756d805"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga21f485db66f0826599238a79b756d805">gpsQueue</a></td></tr>
+<tr class="memitem:ga21f485db66f0826599238a79b756d805"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga21f485db66f0826599238a79b756d805">gpsQueue</a></td></tr>
 <tr class="separator:ga21f485db66f0826599238a79b756d805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5016167649a7652f46a11d3739daf3fe"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga5016167649a7652f46a11d3739daf3fe">gpsVelQueue</a></td></tr>
+<tr class="memitem:ga5016167649a7652f46a11d3739daf3fe"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga5016167649a7652f46a11d3739daf3fe">gpsVelQueue</a></td></tr>
 <tr class="separator:ga5016167649a7652f46a11d3739daf3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f6543ab52bafea6c0858baeeae8db59"><td class="memItemLeft" align="right" valign="top">static AttitudeSettingsData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga8f6543ab52bafea6c0858baeeae8db59">attitudeSettings</a></td></tr>
 <tr class="separator:ga8f6543ab52bafea6c0858baeeae8db59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,8 +268,14 @@ Variables</h2></td></tr>
 <tr class="separator:ga6284b520eced53bee05e93510e93a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga379867b8ed4f0941018f1b0cc81d0b7b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga379867b8ed4f0941018f1b0cc81d0b7b">gyroBiasSettingsUpdated</a> = false</td></tr>
 <tr class="separator:ga379867b8ed4f0941018f1b0cc81d0b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c62d2531c3e579a49d025858bd52a83"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga5c62d2531c3e579a49d025858bd52a83">SENSOR_QUEUE_SIZE</a> = 10</td></tr>
-<tr class="separator:ga5c62d2531c3e579a49d025858bd52a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gac0da75e77e4e4f4b1e6c1fb6de575f65">settings_flag</a> = true</td></tr>
+<tr class="separator:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae10ba1c8efb9a734635be19bd1718524"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gae10ba1c8efb9a734635be19bd1718524">homeloc_flag</a> = true</td></tr>
+<tr class="separator:gae10ba1c8efb9a734635be19bd1718524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec583b104271db57b9b3c06df822320d"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaec583b104271db57b9b3c06df822320d">sensors_flag</a> = true</td></tr>
+<tr class="separator:gaec583b104271db57b9b3c06df822320d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1f97633cb6de4952c4e2fb3aa8c16b4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaa1f97633cb6de4952c4e2fb3aa8c16b4">home_location_updated</a></td></tr>
+<tr class="separator:gaa1f97633cb6de4952c4e2fb3aa8c16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5156866e209e6b8439a9165110f194f8"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga5156866e209e6b8439a9165110f194f8">zeros</a> [3] = {0.0f, 0.0f, 0.0f}</td></tr>
 <tr class="separator:ga5156866e209e6b8439a9165110f194f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf40b54ff53647c74794f31530552529e"><td class="memItemLeft" align="right" valign="top">static struct <br class="typebreak"/>
@@ -279,16 +284,14 @@ Variables</h2></td></tr>
 <tr class="memitem:ga2ee5363877eb71d03d0bf0d2effc3d03"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structcfvert.html">cfvert</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga2ee5363877eb71d03d0bf0d2effc3d03">cfvert</a></td></tr>
 <tr class="memdesc:ga2ee5363877eb71d03d0bf0d2effc3d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">State information for vertical filter.  <a href="group___attitude_module.html#ga2ee5363877eb71d03d0bf0d2effc3d03">More...</a><br/></td></tr>
 <tr class="separator:ga2ee5363877eb71d03d0bf0d2effc3d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50463f9755fec2828ef442d6d3b20e6c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga50463f9755fec2828ef442d6d3b20e6c">dT_expected</a> = 0.001</td></tr>
+<tr class="memitem:ga50463f9755fec2828ef442d6d3b20e6c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga50463f9755fec2828ef442d6d3b20e6c">dT_expected</a> = 0.001f</td></tr>
 <tr class="separator:ga50463f9755fec2828ef442d6d3b20e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62b409271acba166dbf31b4fed9af697"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">T</a> [3]</td></tr>
+<tr class="memdesc:ga62b409271acba166dbf31b4fed9af697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales used in NED transform (local tangent plane approx).  <a href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">More...</a><br/></td></tr>
+<tr class="separator:ga62b409271acba166dbf31b4fed9af697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d40820c42d6849384d5ca19808e58a9"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga6d40820c42d6849384d5ca19808e58a9">cf_q</a> [4]</td></tr>
 <tr class="memdesc:ga6d40820c42d6849384d5ca19808e58a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The complementary filter attitude estimate.  <a href="group___attitude_module.html#ga6d40820c42d6849384d5ca19808e58a9">More...</a><br/></td></tr>
 <tr class="separator:ga6d40820c42d6849384d5ca19808e58a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1f97633cb6de4952c4e2fb3aa8c16b4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#gaa1f97633cb6de4952c4e2fb3aa8c16b4">home_location_updated</a></td></tr>
-<tr class="separator:gaa1f97633cb6de4952c4e2fb3aa8c16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62b409271acba166dbf31b4fed9af697"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">T</a> [3]</td></tr>
-<tr class="memdesc:ga62b409271acba166dbf31b4fed9af697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the GPS LLA position into NED coordinates.  <a href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">More...</a><br/></td></tr>
-<tr class="separator:ga62b409271acba166dbf31b4fed9af697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Full attitude estimation algorithm. </p>

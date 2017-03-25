@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -111,93 +111,93 @@ $(document).ready(function(){initNavTree('lux_2bl_2pios__board_8c_source.html','
 </div><!--header-->
 <div class="contents">
 <a href="lux_2bl_2pios__board_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/* Pull in the board-specific static HW definitions.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * Including .c files is a bit ugly but this allows all of</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * the HW definitions to be const and static to limit their</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * scope.  </span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * NOTE: THIS IS THE ONLY PLACE THAT SHOULD EVER INCLUDE THIS FILE</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;board_hw_defs.c&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__board__info_8h.html">pios_board_info.h</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;pios.h&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__lux_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a">   41</a></span>&#160;uintptr_t <a class="code" href="group___aq32_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * for more details.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* Pull in the board-specific static HW definitions.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * Including .c files is a bit ugly but this allows all of</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * the HW definitions to be const and static to limit their</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * scope.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * NOTE: THIS IS THE ONLY PLACE THAT SHOULD EVER INCLUDE THIS FILE</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;board_hw_defs.c&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__board__info_8h.html">pios_board_info.h</a>&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;pios.h&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__lux_b_l.html#gabda03501745560ca9e546079e20bb392">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___aq32_b_l.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a>()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">/* Delay system */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa">PIOS_DELAY_Init</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ANNUNC)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a>(&amp;<a class="code" href="structpios__annunc__cfg.html">pios_annunc_cfg</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_ANNUNC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FLASH)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Inititialize all flash drivers */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a>(&amp;pios_internal_flash_id, &amp;flash_internal_cfg);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">/* Register the partition table */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gaf59606f01edaa6e33039ea87a5dd4e52">PIOS_FLASH_register_partition_table</a>(<a class="code" href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a>, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(<a class="code" href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a>));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_FLASH */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB)</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Initialize board specific USB data */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">/* Activate the HID-only USB configuration */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        uintptr_t pios_usb_id;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a>(&amp;pios_usb_id, &amp;pios_usb_main_cfg);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; defined(PIOS_INCLUDE_COM_MSG)</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>        uintptr_t pios_usb_hid_id;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___c_o_m.html#gad8727d3d5a14b22a851789d5c12f4f85">PIOS_USB_HID_Init</a>(&amp;pios_usb_hid_id, &amp;<a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a>, pios_usb_id)) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga187560edfa4a2c937b78a0655cbfe8d4">PIOS_COM_MSG_Init</a>(&amp;<a class="code" href="group___aq32_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_b___c_o_m.html#ga5ae8bb7d09627f6ed20ab4f7874227fd">pios_usb_hid_com_driver</a>, pios_usb_hid_id)) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; PIOS_INCLUDE_COM_MSG */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___l_u_x.html#ga513cc36d72b76de2fcb75ff233a79a4a">   43</a></span>&#160;uintptr_t <a class="code" href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___l_u_x.html#gabda03501745560ca9e546079e20bb392">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___a_q32.html#gabda03501745560ca9e546079e20bb392">PIOS_Board_Init</a>()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">/* Delay system */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa">PIOS_DELAY_Init</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ANNUNC)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a>(&amp;<a class="code" href="structpios__annunc__cfg.html">pios_annunc_cfg</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_ANNUNC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FLASH)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Inititialize all flash drivers */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a>(&amp;pios_internal_flash_id, &amp;flash_internal_cfg);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* Register the partition table */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gaf59606f01edaa6e33039ea87a5dd4e52">PIOS_FLASH_register_partition_table</a>(<a class="code" href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a>, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(<a class="code" href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a>));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_FLASH */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Initialize board specific USB data */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">/* Activate the HID-only USB configuration */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        uintptr_t pios_usb_id;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a>(&amp;pios_usb_id, &amp;pios_usb_main_cfg);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; defined(PIOS_INCLUDE_COM_MSG)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>        uintptr_t pios_usb_hid_id;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___c_o_m.html#gad8727d3d5a14b22a851789d5c12f4f85">PIOS_USB_HID_Init</a>(&amp;pios_usb_hid_id, &amp;<a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a>, pios_usb_id)) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga187560edfa4a2c937b78a0655cbfe8d4">PIOS_COM_MSG_Init</a>(&amp;<a class="code" href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_b___c_o_m.html#ga5ae8bb7d09627f6ed20ab4f7874227fd">pios_usb_hid_com_driver</a>, pios_usb_hid_id)) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; PIOS_INCLUDE_COM_MSG */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga187560edfa4a2c937b78a0655cbfe8d4"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga187560edfa4a2c937b78a0655cbfe8d4">PIOS_COM_MSG_Init</a></div><div class="ttdeci">int32_t PIOS_COM_MSG_Init(uintptr_t *com_id, const struct pios_com_driver *driver, uint32_t lower_id)</div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00215">pios.h:215</a></div></div>
+<div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00222">pios.h:222</a></div></div>
 <div class="ttc" id="pios__board__info_8h_html"><div class="ttname"><a href="pios__board__info_8h.html">pios_board_info.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_gad8727d3d5a14b22a851789d5c12f4f85"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#gad8727d3d5a14b22a851789d5c12f4f85">PIOS_USB_HID_Init</a></div><div class="ttdeci">int32_t PIOS_USB_HID_Init(uintptr_t *usbhid_id, const struct pios_usb_hid_cfg *cfg, uintptr_t lower_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga0d086bac039cb8236edb457b7d4da0fa"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa">PIOS_DELAY_Init</a></div><div class="ttdeci">int32_t PIOS_DELAY_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00107">pios_delay.c:107</a></div></div>
-<div class="ttc" id="group___aq32_b_l_html_ga902009c5b1cb57d9f9d60092eb7cacfb"><div class="ttname"><a href="group___aq32_b_l.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a></div><div class="ttdeci">void PIOS_Board_Init()</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00044">pios_board.c:44</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_ga5ae8bb7d09627f6ed20ab4f7874227fd"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#ga5ae8bb7d09627f6ed20ab4f7874227fd">pios_usb_hid_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_usb_hid_com_driver</div></div>
 <div class="ttc" id="structpios__annunc__cfg_html"><div class="ttname"><a href="structpios__annunc__cfg.html">pios_annunc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00047">pios_annunc_priv.h:47</a></div></div>
+<div class="ttc" id="group___a_q32_html_gabda03501745560ca9e546079e20bb392"><div class="ttname"><a href="group___a_q32.html#gabda03501745560ca9e546079e20bb392">PIOS_Board_Init</a></div><div class="ttdeci">void PIOS_Board_Init()</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00044">pios_board.c:44</a></div></div>
 <div class="ttc" id="group___p_i_o_s___l_e_d_html_ga69b0a2fb77d18f0326b1fe0cee3a987d"><div class="ttname"><a href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a></div><div class="ttdeci">int32_t PIOS_ANNUNC_Init(const struct pios_annunc_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_s_c_html_ga92ea05b354edae76dd1315a1e389d506"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a></div><div class="ttdeci">int32_t PIOS_USB_DESC_HID_ONLY_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__desc__hid__only_8c_source.html#l00154">pios_usb_desc_hid_only.c:154</a></div></div>
+<div class="ttc" id="group___a_q32_html_ga513cc36d72b76de2fcb75ff233a79a4a"><div class="ttname"><a href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_usb_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00042">pios_board.c:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gaf59606f01edaa6e33039ea87a5dd4e52"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gaf59606f01edaa6e33039ea87a5dd4e52">PIOS_FLASH_register_partition_table</a></div><div class="ttdeci">void PIOS_FLASH_register_partition_table(const struct pios_flash_partition partition_table[], uint8_t num_partitions)</div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_html_gadef7295623a029e8d2384dd88f034d16"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a></div><div class="ttdeci">int32_t PIOS_USB_Init(uintptr_t *usb_id, const struct pios_usb_cfg *cfg)</div></div>
 <div class="ttc" id="group___unit_tests_html_gacda4321240c5016d2a02b0ab650dd34a"><div class="ttname"><a href="group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a">pios_flash_partition_table</a></div><div class="ttdeci">const struct pios_flash_partition pios_flash_partition_table[]</div><div class="ttdef"><b>Definition:</b> <a href="unittest__init_8c_source.html#l00048">unittest_init.c:48</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>
-<div class="ttc" id="group___p_i_o_s___u_s_b___b_o_a_r_d_html_ga5efd94ab761f254827f38dba474cf642"><div class="ttname"><a href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a></div><div class="ttdeci">int32_t PIOS_USB_BOARD_DATA_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_2fw_2pios__usb__board__data_8c_source.html#l00080">pios_usb_board_data.c:80</a></div></div>
+<div class="ttc" id="group___p_i_o_s___u_s_b___b_o_a_r_d_html_ga5efd94ab761f254827f38dba474cf642"><div class="ttname"><a href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a></div><div class="ttdeci">int32_t PIOS_USB_BOARD_DATA_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2fw_2pios__usb__board__data_8c_source.html#l00066">pios_usb_board_data.c:66</a></div></div>
 <div class="ttc" id="structpios__usb__hid__cfg_html"><div class="ttname"><a href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00033">pios_usb_hid_priv.h:33</a></div></div>
-<div class="ttc" id="group___aq32_b_l_html_ga513cc36d72b76de2fcb75ff233a79a4a"><div class="ttname"><a href="group___aq32_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_usb_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00042">pios_board.c:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -111,9 +111,12 @@ $(document).ready(function(){initNavTree('simulation_2fw_2pios__board_8c.html','
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">pios_board.c File Reference</div>  </div>
+<div class="title">pios_board.c File Reference<div class="ingroups"><a class="el" href="group___sim.html">POSIX Simulator</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Simulation of the board specific initialization routines.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;pios.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="simulation_2fw_2pios__board_8h_source.html">pios_board.h</a>&quot;</code><br/>
 <code>#include &lt;<a class="el" href="pios__com__priv_8h_source.html">pios_com_priv.h</a>&gt;</code><br/>
@@ -140,36 +143,52 @@ $(document).ready(function(){initNavTree('simulation_2fw_2pios__board_8c.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab2c5becd5d93d1b0a989d736bf438a9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#gab2c5becd5d93d1b0a989d736bf438a9a">PIOS_COM_TELEM_RF_RX_BUF_LEN</a>&#160;&#160;&#160;384</td></tr>
+<tr class="memitem:gab2c5becd5d93d1b0a989d736bf438a9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#gab2c5becd5d93d1b0a989d736bf438a9a">PIOS_COM_TELEM_RF_RX_BUF_LEN</a>&#160;&#160;&#160;384</td></tr>
 <tr class="separator:gab2c5becd5d93d1b0a989d736bf438a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43f6102039131d60cf02ba0330e9c52e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga43f6102039131d60cf02ba0330e9c52e">PIOS_COM_TELEM_RF_TX_BUF_LEN</a>&#160;&#160;&#160;384</td></tr>
+<tr class="memitem:ga43f6102039131d60cf02ba0330e9c52e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga43f6102039131d60cf02ba0330e9c52e">PIOS_COM_TELEM_RF_TX_BUF_LEN</a>&#160;&#160;&#160;384</td></tr>
 <tr class="separator:ga43f6102039131d60cf02ba0330e9c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26c0d186420f2a028ebc09e009edf983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga26c0d186420f2a028ebc09e009edf983">PIOS_COM_GPS_RX_BUF_LEN</a>&#160;&#160;&#160;96</td></tr>
+<tr class="memitem:ga26c0d186420f2a028ebc09e009edf983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga26c0d186420f2a028ebc09e009edf983">PIOS_COM_GPS_RX_BUF_LEN</a>&#160;&#160;&#160;96</td></tr>
 <tr class="separator:ga26c0d186420f2a028ebc09e009edf983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7a789e7b91612099a4a1f355b9e97c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga7a789e7b91612099a4a1f355b9e97c24">Stack_Change</a> (void)</td></tr>
+<tr class="memitem:ga7a789e7b91612099a4a1f355b9e97c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga7a789e7b91612099a4a1f355b9e97c24">Stack_Change</a> (void)</td></tr>
 <tr class="separator:ga7a789e7b91612099a4a1f355b9e97c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a> (void)</td></tr>
+<tr class="memitem:ga32c73ccd62cbae6568272cc6949531f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga32c73ccd62cbae6568272cc6949531f2">__early_init</a> (void)</td></tr>
+<tr class="memdesc:ga32c73ccd62cbae6568272cc6949531f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Early initialization code.  <a href="group___sim.html#ga32c73ccd62cbae6568272cc6949531f2">More...</a><br/></td></tr>
+<tr class="separator:ga32c73ccd62cbae6568272cc6949531f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48edc646a1de1ba488bbe7d786df9bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga48edc646a1de1ba488bbe7d786df9bae">boardInit</a> (void)</td></tr>
+<tr class="memdesc:ga48edc646a1de1ba488bbe7d786df9bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare all driver configurations.  <a href="group___sim.html#ga48edc646a1de1ba488bbe7d786df9bae">More...</a><br/></td></tr>
+<tr class="separator:ga48edc646a1de1ba488bbe7d786df9bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a> (void)</td></tr>
 <tr class="separator:ga902009c5b1cb57d9f9d60092eb7cacfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga3c891452abcbf5474447318fead11cf8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__tcp__cfg.html">pios_tcp_cfg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga3c891452abcbf5474447318fead11cf8">pios_tcp_telem_cfg</a></td></tr>
+<tr class="memitem:ga3c891452abcbf5474447318fead11cf8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__tcp__cfg.html">pios_tcp_cfg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga3c891452abcbf5474447318fead11cf8">pios_tcp_telem_cfg</a></td></tr>
 <tr class="separator:ga3c891452abcbf5474447318fead11cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab060f441dd600b08386c0ca1b487217a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#gab060f441dd600b08386c0ca1b487217a">pios_uavo_settings_fs_id</a></td></tr>
+<tr class="memitem:gab060f441dd600b08386c0ca1b487217a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#gab060f441dd600b08386c0ca1b487217a">pios_uavo_settings_fs_id</a></td></tr>
 <tr class="separator:gab060f441dd600b08386c0ca1b487217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14dc9e3d330b80a37a9699c2112358e0"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></td></tr>
+<tr class="memitem:ga14dc9e3d330b80a37a9699c2112358e0"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></td></tr>
 <tr class="separator:ga14dc9e3d330b80a37a9699c2112358e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga952e1f17c9f32da55907c4ffc3f5cd69"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga952e1f17c9f32da55907c4ffc3f5cd69">pios_com_openlog_id</a></td></tr>
+<tr class="memitem:ga952e1f17c9f32da55907c4ffc3f5cd69"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga952e1f17c9f32da55907c4ffc3f5cd69">pios_com_openlog_id</a></td></tr>
 <tr class="separator:ga952e1f17c9f32da55907c4ffc3f5cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae48e848f715b08971e23528feee79339"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#gae48e848f715b08971e23528feee79339">pios_com_telem_rf_id</a></td></tr>
+<tr class="memitem:gae48e848f715b08971e23528feee79339"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#gae48e848f715b08971e23528feee79339">pios_com_telem_rf_id</a></td></tr>
 <tr class="separator:gae48e848f715b08971e23528feee79339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga513cc36d72b76de2fcb75ff233a79a4a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___revolution.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></td></tr>
+<tr class="memitem:ga513cc36d72b76de2fcb75ff233a79a4a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sim.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></td></tr>
 <tr class="separator:ga513cc36d72b76de2fcb75ff233a79a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simulation of the board specific initialization routines. </p>
+<dl class="section author"><dt>Author</dt><dd>The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org</a> Copyright (C) 2011. </dd>
+<dd>
+Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2012-2014 </dd>
+<dd>
+dRonin, <a href="http://dronin.org">http://dronin.org</a> Copyright (C) 2015 </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
+
+<p>Definition in file <a class="el" href="simulation_2fw_2pios__board_8c_source.html">pios_board.c</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

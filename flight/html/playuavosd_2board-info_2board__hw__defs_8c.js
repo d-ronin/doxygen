@@ -1,5 +1,6 @@
 var playuavosd_2board_info_2board__hw__defs_8c =
 [
+    [ "pios_usart_main_cfg", "playuavosd_2board-info_2board__hw__defs_8c.html#ga0e5e1b8910d71466edb2fd6f8d12356c", null ],
     [ "tim_12_cfg", "playuavosd_2board-info_2board__hw__defs_8c.html#ga8a3391113e465d74c92def57807d830e", null ],
     [ "tim_3_cfg", "playuavosd_2board-info_2board__hw__defs_8c.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ],
     [ "tim_5_cfg", "playuavosd_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('structpios__udp__dev.html','');});
 Data Fields</h2></td></tr>
 <tr class="memitem:aa7e8295eb5e32ae22c0ba418e77624f1"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__udp__cfg.html">pios_udp_cfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#aa7e8295eb5e32ae22c0ba418e77624f1">cfg</a></td></tr>
 <tr class="separator:aa7e8295eb5e32ae22c0ba418e77624f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad01df1774a5c4429672469dbad1309e3"><td class="memItemLeft" align="right" valign="top">struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#ad01df1774a5c4429672469dbad1309e3">rxThread</a></td></tr>
+<tr class="memitem:ad01df1774a5c4429672469dbad1309e3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#ad01df1774a5c4429672469dbad1309e3">rxThread</a></td></tr>
 <tr class="separator:ad01df1774a5c4429672469dbad1309e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d46c15339fd00e047ab83898aabc20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#ad5d46c15339fd00e047ab83898aabc20">socket</a></td></tr>
 <tr class="separator:ad5d46c15339fd00e047ab83898aabc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +142,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae0e9d717bbca5d5a4a741632fce620f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af28d13bbdcaa66e0bff96aaa9c964584"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#af28d13bbdcaa66e0bff96aaa9c964584">rx_in_context</a></td></tr>
 <tr class="separator:af28d13bbdcaa66e0bff96aaa9c964584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8545d82807ea56ed914406252da3acbe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#a8545d82807ea56ed914406252da3acbe">rx_buffer</a> [<a class="el" href="group___revolution.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td></tr>
+<tr class="memitem:a8545d82807ea56ed914406252da3acbe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#a8545d82807ea56ed914406252da3acbe">rx_buffer</a> [<a class="el" href="group___sim.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td></tr>
 <tr class="separator:a8545d82807ea56ed914406252da3acbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afebbe09a39ec52adccaecaaea5e84cbd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#afebbe09a39ec52adccaecaaea5e84cbd">tx_buffer</a> [<a class="el" href="group___revolution.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td></tr>
+<tr class="memitem:afebbe09a39ec52adccaecaaea5e84cbd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__udp__dev.html#afebbe09a39ec52adccaecaaea5e84cbd">tx_buffer</a> [<a class="el" href="group___sim.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td></tr>
 <tr class="separator:afebbe09a39ec52adccaecaaea5e84cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -226,7 +226,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pios_udp_dev::rx_buffer[<a class="el" href="group___revolution.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td>
+          <td class="memname">uint8_t pios_udp_dev::rx_buffer[<a class="el" href="group___sim.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -268,7 +268,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_thread* pios_udp_dev::rxThread</td>
+          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* pios_udp_dev::rxThread</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,7 +310,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pios_udp_dev::tx_buffer[<a class="el" href="group___revolution.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td>
+          <td class="memname">uint8_t pios_udp_dev::tx_buffer[<a class="el" href="group___sim.html#gac4db98441aefcf08b59c18f270275432">PIOS_UDP_RX_BUFFER_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

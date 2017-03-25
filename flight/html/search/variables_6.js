@@ -80,9 +80,9 @@ var searchData=
   ['fsm_5ffollow_5fpath',['fsm_follow_path',['../group___vtol_path_follower.html#ga28fde3f6dabb28e2a914188fe679b0c6',1,'vtol_follower_fsm.c']]],
   ['fsm_5fhold_5fposition',['fsm_hold_position',['../group___vtol_path_follower.html#gac7c84f785a63d0ac94d3ae46300a73bb',1,'vtol_follower_fsm.c']]],
   ['fsm_5fland_5fhome',['fsm_land_home',['../group___vtol_path_follower.html#ga3e128e1d10aedb247940407f46d888a1',1,'vtol_follower_fsm.c']]],
-  ['fsm_5ftimer_5fenabled',['fsm_timer_enabled',['../group___bootloader.html#ga27f932c0303f4ec310db42587f7f5355',1,'bl_fsm_context']]],
-  ['fsm_5ftimer_5fremaining_5fus',['fsm_timer_remaining_us',['../group___bootloader.html#ga93802da71566bb4ddf9bf9fbacccccb1',1,'bl_fsm_context']]],
-  ['fsm_5fto_5fdfu_5fstate_5fmap',['fsm_to_dfu_state_map',['../group___bootloader.html#ga42ed271893f4f14875ec66d714985339',1,'main.c']]],
+  ['fsm_5ftimer_5fenabled',['fsm_timer_enabled',['../structbl__fsm__context.html#a27f932c0303f4ec310db42587f7f5355',1,'bl_fsm_context']]],
+  ['fsm_5ftimer_5fremaining_5fus',['fsm_timer_remaining_us',['../structbl__fsm__context.html#a93802da71566bb4ddf9bf9fbacccccb1',1,'bl_fsm_context']]],
+  ['fsm_5fto_5fdfu_5fstate_5fmap',['fsm_to_dfu_state_map',['../group___common.html#ga42ed271893f4f14875ec66d714985339',1,'main.c']]],
   ['fsuspendenabled',['fSuspendEnabled',['../pios__usb__hid__pwr_8h.html#a393e7e35fe633c7431b3de2cccaf892a',1,'fSuspendEnabled():&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a393e7e35fe633c7431b3de2cccaf892a',1,'fSuspendEnabled():&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a393e7e35fe633c7431b3de2cccaf892a',1,'fSuspendEnabled():&#160;pios_usb_hid_pwr.c']]],
   ['ftow',['fTOW',['../struct_u_b_x___n_a_v___s_o_l.html#a7e73f1e4919dbde57008c9f9fad153cf',1,'UBX_NAV_SOL']]],
   ['fuel_5fml',['fuel_ml',['../structhott__gam__message.html#aa4c7bebaa2bd70b39389662839f9c906',1,'hott_gam_message']]],
@@ -90,7 +90,7 @@ var searchData=
   ['full_5fflag',['full_flag',['../structpios__internal__adc__cfg.html#aaf65057cc3e9e3db9c075162b8ecfe1b',1,'pios_internal_adc_cfg']]],
   ['fw',['fw',['../namespacepx__uploader.html#ae5d92eff34708b8893d1a525749758ca',1,'px_uploader']]],
   ['fw_5fbase',['fw_base',['../structpios__board__info.html#ab478e3140ec858f6347f061cf10d8cf5',1,'pios_board_info::fw_base()'],['../pios__board__info_8h.html#a3356e77d605b19f45bdc28482e4fb7f0',1,'fw_base():&#160;pios_board_info.h']]],
-  ['fw_5fcrc',['FW_Crc',['../group___copter_control_b_l.html#ga676a5d429497021b5ad095b527f935cc',1,'Device::FW_Crc()'],['../structbl__messages.html#a10d18056bdd8e6ba7a4237db2c25a149',1,'bl_messages::fw_crc()'],['../structmsg__capabilities__rep__specific.html#ab39e24535eb819b5dd4ec0c420d11c1f',1,'msg_capabilities_rep_specific::fw_crc()'],['../bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6',1,'fw_crc():&#160;bl_messages.h']]],
+  ['fw_5fcrc',['FW_Crc',['../struct_device.html#a676a5d429497021b5ad095b527f935cc',1,'Device::FW_Crc()'],['../structbl__messages.html#a10d18056bdd8e6ba7a4237db2c25a149',1,'bl_messages::fw_crc()'],['../structmsg__capabilities__rep__specific.html#ab39e24535eb819b5dd4ec0c420d11c1f',1,'msg_capabilities_rep_specific::fw_crc()'],['../bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6',1,'fw_crc():&#160;bl_messages.h']]],
   ['fw_5fmaxsize',['fw_maxsize',['../classpx__uploader_1_1uploader.html#af7c42c1ffa8198c562791ebdffb7185e',1,'px_uploader::uploader']]],
   ['fw_5fsize',['fw_size',['../structpios__board__info.html#a0b8e1fae0f06a06384829d6f2dfe5f20',1,'pios_board_info::fw_size()'],['../structbl__messages.html#a50b08001cff6d49c63c0d137ce2f76ce',1,'bl_messages::fw_size()'],['../structmsg__capabilities__rep__specific.html#a180295391516d9662144d8db179ebf2a',1,'msg_capabilities_rep_specific::fw_size()'],['../pios__board__info_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c',1,'fw_size():&#160;pios_board_info.h'],['../bl__messages_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c',1,'fw_size():&#160;bl_messages.h']]]
 ];

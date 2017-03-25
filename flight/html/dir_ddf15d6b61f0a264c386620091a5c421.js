@@ -1,6 +1,5 @@
 var dir_ddf15d6b61f0a264c386620091a5c421 =
 [
-    [ "board.c", "playuavosd_2fw_2board_8c.html", "playuavosd_2fw_2board_8c" ],
     [ "board.h", "playuavosd_2fw_2board_8h.html", "playuavosd_2fw_2board_8h" ],
     [ "chconf.h", "playuavosd_2fw_2chconf_8h.html", "playuavosd_2fw_2chconf_8h" ],
     [ "halconf.h", "playuavosd_2fw_2halconf_8h.html", "playuavosd_2fw_2halconf_8h" ],

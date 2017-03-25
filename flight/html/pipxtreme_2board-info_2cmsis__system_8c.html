@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -111,9 +111,12 @@ $(document).ready(function(){initNavTree('pipxtreme_2board-info_2cmsis__system_8
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">cmsis_system.c File Reference</div>  </div>
+<div class="title">cmsis_system.c File Reference<div class="ingroups"><a class="el" href="group___pip_x.html">PipXtreme Radio</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>CMSIS Cortex-M3 <a class="el" href="struct_device.html">Device</a> Peripheral Access Layer System Source File.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;stm32f10x.h&quot;</code><br/>
 </div>
 <p><a href="pipxtreme_2board-info_2cmsis__system_8c_source.html">Go to the source code of this file.</a></p>
@@ -149,7 +152,28 @@ Variables</h2></td></tr>
 <tr class="memitem:gadfcfe3ca753533ae7c41dc15a1b94f65"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_m32_f10x___system___private___function_prototypes.html#gadfcfe3ca753533ae7c41dc15a1b94f65">hse_value</a> = 8000000</td></tr>
 <tr class="separator:gadfcfe3ca753533ae7c41dc15a1b94f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CMSIS Cortex-M3 <a class="el" href="struct_device.html">Device</a> Peripheral Access Layer System Source File. </p>
+<dl class="section author"><dt>Author</dt><dd>MCD Application Team </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>V3.5.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>11-March-2011<ol type="1">
+<li>This file provides two functions and one global variable to be called from user application:<ul>
+<li><a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2" title="Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst...">SystemInit()</a>: Setups the system clock (System clock source, PLL Multiplier factors, AHB/APBx prescalers and Flash settings). This function is called at startup just after reset and before branch to main program. This call is made inside the "startup_stm32f10x_xx.s" file.</li>
+<li>SystemCoreClock variable: Contains the core clock (HCLK), it can be used by the user application to setup the SysTick timer or configure other parameters.</li>
+<li><a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f" title="Update SystemCoreClock variable according to Clock Register Values. The SystemCoreClock variable cont...">SystemCoreClockUpdate()</a>: Updates the variable SystemCoreClock and must be called whenever the core clock is changed during program execution.</li>
+</ul>
+</li>
+<li>After each device reset the HSI (8 MHz) is used as system clock source. Then <a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2" title="Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst...">SystemInit()</a> function is called, in "startup_stm32f10x_xx.s" file, to configure the system clock before to branch to main program.</li>
+<li>If the system clock source selected by user fails to startup, the <a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2" title="Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst...">SystemInit()</a> function will do nothing and HSI still used as system clock source. User can add some code to deal with this issue inside the <a class="el" href="group___s_t_m32_f10x___system___private___functions.html#ga1ee14ac28e60198cc998586807b51e4c" title="Configures the System clock frequency, HCLK, PCLK2 and PCLK1 prescalers. ">SetSysClock()</a> function.</li>
+<li>The default value of HSE crystal is set to 8 MHz (or 25 MHz, depedning on the product used), refer to "HSE_VALUE" define in "stm32f10x.h" file. When HSE is used as system clock source, directly or through PLL, and you are using different crystal you have to adapt the HSE value to your own configuration.</li>
+</ol>
+</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd></dd></dl>
+<p>THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</p>
+<h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+
+<p>Definition in file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

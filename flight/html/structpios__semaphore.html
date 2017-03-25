@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,34 +113,82 @@ $(document).ready(function(){initNavTree('structpios__semaphore.html','');});
 <div class="title">pios_semaphore Struct Reference<div class="ingroups"><a class="el" href="group___p_i_o_s___semaphore.html">Semaphore Abstraction</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="pios__semaphore_8h_source.html">pios_semaphore.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a26dac5d4f59defc61dd2582506579665"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__semaphore.html#a26dac5d4f59defc61dd2582506579665">sema_count</a></td></tr>
-<tr class="separator:a26dac5d4f59defc61dd2582506579665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26dac5d4f59defc61dd2582506579665"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___semaphore.html#ga26dac5d4f59defc61dd2582506579665">sema_count</a></td></tr>
+<tr class="separator:ga26dac5d4f59defc61dd2582506579665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329c9b68f172444b840daf8aea52a1fe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__semaphore.html#a329c9b68f172444b840daf8aea52a1fe">magic</a></td></tr>
+<tr class="separator:a329c9b68f172444b840daf8aea52a1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e72163fbfcff1b8bd2d2dad2ad9786"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__semaphore.html#a68e72163fbfcff1b8bd2d2dad2ad9786">mutex</a></td></tr>
+<tr class="separator:a68e72163fbfcff1b8bd2d2dad2ad9786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4247dd7c908a86274ecd217b54b99390"><td class="memItemLeft" align="right" valign="top">pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__semaphore.html#a4247dd7c908a86274ecd217b54b99390">cond</a></td></tr>
+<tr class="separator:a4247dd7c908a86274ecd217b54b99390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e343d447cb2e03cf3f07b7baf8576f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__semaphore.html#a79e343d447cb2e03cf3f07b7baf8576f">given</a></td></tr>
+<tr class="separator:a79e343d447cb2e03cf3f07b7baf8576f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="pios__semaphore_8h_source.html#l00035">35</a> of file <a class="el" href="pios__semaphore_8h_source.html">pios_semaphore.h</a>.</p>
+<p>Definition at line <a class="el" href="_common_2pios__semaphore_8c_source.html#l00029">29</a> of file <a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a26dac5d4f59defc61dd2582506579665"></a>
+<a class="anchor" id="a4247dd7c908a86274ecd217b54b99390"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t pios_semaphore::sema_count</td>
+          <td class="memname">pthread_cond_t pios_semaphore::cond</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__semaphore_8h_source.html#l00042">42</a> of file <a class="el" href="pios__semaphore_8h_source.html">pios_semaphore.h</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__semaphore_8c_source.html#l00037">37</a> of file <a class="el" href="posix_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79e343d447cb2e03cf3f07b7baf8576f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pios_semaphore::given</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__semaphore_8c_source.html#l00039">39</a> of file <a class="el" href="posix_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a329c9b68f172444b840daf8aea52a1fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_semaphore::magic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__semaphore_8c_source.html#l00034">34</a> of file <a class="el" href="posix_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68e72163fbfcff1b8bd2d2dad2ad9786"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_mutex_t pios_semaphore::mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__semaphore_8c_source.html#l00036">36</a> of file <a class="el" href="posix_2pios__semaphore_8c_source.html">pios_semaphore.c</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>flight/PiOS/inc/<a class="el" href="pios__semaphore_8h_source.html">pios_semaphore.h</a></li>
+<li>flight/PiOS/Common/<a class="el" href="_common_2pios__semaphore_8c_source.html">pios_semaphore.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

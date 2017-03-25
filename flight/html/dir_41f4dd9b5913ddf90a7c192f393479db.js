@@ -1,6 +1,5 @@
 var dir_41f4dd9b5913ddf90a7c192f393479db =
 [
-    [ "board.c", "lux_2fw_2board_8c.html", "lux_2fw_2board_8c" ],
     [ "board.h", "lux_2fw_2board_8h.html", "lux_2fw_2board_8h" ],
     [ "chconf.h", "lux_2fw_2chconf_8h.html", "lux_2fw_2chconf_8h" ],
     [ "halconf.h", "lux_2fw_2halconf_8h.html", "lux_2fw_2halconf_8h" ],

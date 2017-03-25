@@ -1,6 +1,5 @@
 var dir_adb088d27e37fa63ab69ee00b3aebad3 =
 [
-    [ "board.c", "brain_2fw_2board_8c.html", "brain_2fw_2board_8c" ],
     [ "board.h", "brain_2fw_2board_8h.html", "brain_2fw_2board_8h" ],
     [ "chconf.h", "brain_2fw_2chconf_8h.html", "brain_2fw_2chconf_8h" ],
     [ "halconf.h", "brain_2fw_2halconf_8h.html", "brain_2fw_2halconf_8h" ],

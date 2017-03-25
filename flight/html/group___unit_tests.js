@@ -1,9 +1,5 @@
 var group___unit_tests =
 [
-    [ "CircQueueTest", "class_circ_queue_test.html", [
-      [ "SetUp", "group___unit_tests.html#ga4bf9318157d109c88258f7c00e9a496c", null ],
-      [ "TearDown", "group___unit_tests.html#gaba678e80026bca3fe8c5458a0c325356", null ]
-    ] ],
     [ "CoordConversion", "class_coord_conversion.html", [
       [ "SetUp", "group___unit_tests.html#ga674c64418b5b617a7ce07a471daf3fd1", null ],
       [ "TearDown", "group___unit_tests.html#ga2866b0186d8c109d2066708d2da2586d", null ]
@@ -86,7 +82,6 @@ var group___unit_tests =
     [ "get_packet", "group___unit_tests.html#ga923f3c951a39fd738bc9d9f83bb55dfc", null ],
     [ "pack_channels_10bit", "group___unit_tests.html#ga324a38e7ca4b491d4e26eb46367c51d4", null ],
     [ "pack_channels_11bit", "group___unit_tests.html#gab98573447c2ebc0f380e94a99fcff0d7", null ],
-    [ "SetUp", "group___unit_tests.html#ga4bf9318157d109c88258f7c00e9a496c", null ],
     [ "SetUp", "group___unit_tests.html#ga50a40998055515f7d0020f1cec8a1438", null ],
     [ "SetUp", "group___unit_tests.html#ga674c64418b5b617a7ce07a471daf3fd1", null ],
     [ "SetUp", "group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2", null ],
@@ -101,10 +96,9 @@ var group___unit_tests =
     [ "SetUp", "group___unit_tests.html#ga2a37e7c06175d490002101b13fec1c97", null ],
     [ "SetUp", "group___unit_tests.html#gafaec8c76ac9757b3a7a056e14a8d9af4", null ],
     [ "SetUp", "group___unit_tests.html#ga6143b6807b4ed29675a12d317dda0b87", null ],
-    [ "TearDown", "group___unit_tests.html#gaba678e80026bca3fe8c5458a0c325356", null ],
     [ "TearDown", "group___unit_tests.html#ga161aa2ad4fe314074b883759689f3059", null ],
-    [ "TearDown", "group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038", null ],
     [ "TearDown", "group___unit_tests.html#ga2866b0186d8c109d2066708d2da2586d", null ],
+    [ "TearDown", "group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038", null ],
     [ "TearDown", "group___unit_tests.html#ga57e34df1fb9fae48b6cc9a8748eee5de", null ],
     [ "TearDown", "group___unit_tests.html#ga09ed664a5e8ea60696c9d90cb0804d36", null ],
     [ "TearDown", "group___unit_tests.html#gaf85337e9c8f71fd18768ade22caf09a7", null ],
@@ -116,11 +110,10 @@ var group___unit_tests =
     [ "TearDown", "group___unit_tests.html#gafbf0bbdc7da0879e247bbc1c98be1cc4", null ],
     [ "TearDown", "group___unit_tests.html#gab952540565b701904661081cb34b1576", null ],
     [ "TearDown", "group___unit_tests.html#ga5031a2adb8db0e1125f0f2f2e5d0c82b", null ],
-    [ "TEST_F", "group___unit_tests.html#ga1a85c2f630b4bd29dff845aa1e7fe47c", null ],
     [ "TEST_F", "group___unit_tests.html#gad5681fa0c236a0bfbd91451fb5a0feec", null ],
     [ "TEST_F", "group___unit_tests.html#ga763ce33e0f19772a9d4e1c35f0771fc1", null ],
-    [ "TEST_F", "group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672", null ],
     [ "TEST_F", "group___unit_tests.html#ga616b42d75c14427fb433a0efc0dcc8d0", null ],
+    [ "TEST_F", "group___unit_tests.html#gaa2806007ccc77d620d2eba58f0ce7672", null ],
     [ "TEST_F", "group___unit_tests.html#ga6cb7604a151ba35e24a119094d21c49c", null ],
     [ "TEST_F", "group___unit_tests.html#ga7b82883b4c8ff0d533a5b3923e8845fd", null ],
     [ "TEST_F", "group___unit_tests.html#gafa3f539e5afb2a2133e3d6d96d16fa61", null ],
@@ -138,7 +131,6 @@ var group___unit_tests =
     [ "TEST_F", "group___unit_tests.html#ga548005fd2118ab3d1421a52580886532", null ],
     [ "TEST_F", "group___unit_tests.html#gaa95ae577174d8bd9b9cc50f39e1e4cf3", null ],
     [ "TEST_F", "group___unit_tests.html#ga6f8e4fff0ee826ffd2f764af9d8d971f", null ],
-    [ "TEST_F", "group___unit_tests.html#gaf4ddd46f30de0383f06c10778dffc6ef", null ],
     [ "TEST_F", "group___unit_tests.html#ga2ae66629b7714cae9e6b7fa7513e582a", null ],
     [ "TEST_F", "group___unit_tests.html#gacaef9b0357724dd62343d2e2c12228f6", null ],
     [ "TEST_F", "group___unit_tests.html#gaad108bf9d51537e7a021406dbb72ba8d", null ],
@@ -178,8 +170,8 @@ var group___unit_tests =
     [ "TEST_F", "group___unit_tests.html#gad4c514f614664fe7dffef10007dbfe68", null ],
     [ "TEST_F", "group___unit_tests.html#ga9225942fd650e5f7d87c96687bf93e97", null ],
     [ "TEST_F", "group___unit_tests.html#gaf7b4f8c8368a73384a6f93c929105460", null ],
-    [ "TEST_F", "group___unit_tests.html#ga857a45ca3522f2d7196ecac21eb2f528", null ],
     [ "TEST_F", "group___unit_tests.html#ga64b4ab283359ebc3533f35a7fb7e6fe3", null ],
+    [ "TEST_F", "group___unit_tests.html#ga857a45ca3522f2d7196ecac21eb2f528", null ],
     [ "TEST_F", "group___unit_tests.html#ga30a3881db0cac65935c82be5b0dd3e1b", null ],
     [ "TEST_F", "group___unit_tests.html#ga24a114e324d7b9f86337c08c9f2b6c64", null ],
     [ "TEST_F", "group___unit_tests.html#ga66d2a26c55d24d0da23b04752a7a6fb0", null ],

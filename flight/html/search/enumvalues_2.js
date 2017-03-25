@@ -22,5 +22,5 @@ var searchData=
   ['control_5fevents_5farming',['CONTROL_EVENTS_ARMING',['../group___control.html#gga6db279174b366abaad3f5de70b10655ca3ba849b595e592121378f1534b599c2a',1,'control.h']]],
   ['control_5fevents_5fdisarm',['CONTROL_EVENTS_DISARM',['../group___control.html#gga6db279174b366abaad3f5de70b10655caaf3578a8a437ec3e783c2b84abe3afe2',1,'control.h']]],
   ['control_5fevents_5fnone',['CONTROL_EVENTS_NONE',['../group___control.html#gga6db279174b366abaad3f5de70b10655caa00112d5afc911295d9aa665483dbc02',1,'control.h']]],
-  ['crc_5ffail',['CRC_Fail',['../group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37a865129af1d1ea79ecab6f82c22c71695',1,'common.h']]]
+  ['crc_5ffail',['CRC_Fail',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37a865129af1d1ea79ecab6f82c22c71695',1,'common.h']]]
 ];

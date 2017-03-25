@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___thread.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -112,22 +113,32 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___thread.html','');});
 <p>Abstracts the concept of a thread to hide different implementations.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__thread.html">pios_thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga4d7451032ffd5dc0c3294fa283a204aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga4d7451032ffd5dc0c3294fa283a204aa">PIOS_THREAD_TIMEOUT_MAX</a>&#160;&#160;&#160;0xffffffff</td></tr>
 <tr class="separator:ga4d7451032ffd5dc0c3294fa283a204aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae66efd94087031615f497590a5fdb3ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gae66efd94087031615f497590a5fdb3ab">PIOS_THREAD_STACK_SIZE_MIN</a>&#160;&#160;&#160;(32768)</td></tr>
+<tr class="separator:gae66efd94087031615f497590a5fdb3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaaf67f9ea6e212bc198f6d4302ea21e54"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">pios_thread_prio_e</a> { <a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e">PIOS_THREAD_PRIO_HIGHEST</a>
+<tr class="memitem:gaaf67f9ea6e212bc198f6d4302ea21e54"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">pios_thread_prio_e</a> { <a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54ad38805db173a7afca2190b3fcb12bcab">PIOS_THREAD_PRIO_LOW</a> = 0, 
+<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a>, 
+<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54abbe1aff2d1bfe2d5c2aeae36e422909d">PIOS_THREAD_PRIO_HIGH</a>, 
+<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e">PIOS_THREAD_PRIO_HIGHEST</a>
  }</td></tr>
 <tr class="separator:gaaf67f9ea6e212bc198f6d4302ea21e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga022e5c15d4faa27943abccd3e1b6161c"><td class="memItemLeft" align="right" valign="top">struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga022e5c15d4faa27943abccd3e1b6161c">PIOS_Thread_Create</a> (void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum <a class="el" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">pios_thread_prio_e</a> prio)</td></tr>
-<tr class="separator:ga022e5c15d4faa27943abccd3e1b6161c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0a7798537bda9c830ce5bf7ed4d3451"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gac0a7798537bda9c830ce5bf7ed4d3451">PIOS_Thread_Delete</a> (struct pios_thread *threadp)</td></tr>
+<tr class="memitem:ga30d4f0b56bb65cb60cb99b7e8f6b759e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga30d4f0b56bb65cb60cb99b7e8f6b759e">PIOS_Thread_Create</a> (void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum <a class="el" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">pios_thread_prio_e</a> prio)</td></tr>
+<tr class="separator:ga30d4f0b56bb65cb60cb99b7e8f6b759e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0a7798537bda9c830ce5bf7ed4d3451"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gac0a7798537bda9c830ce5bf7ed4d3451">PIOS_Thread_Delete</a> (struct <a class="el" href="structpios__thread.html">pios_thread</a> *threadp)</td></tr>
 <tr class="separator:gac0a7798537bda9c830ce5bf7ed4d3451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf10c64545c5d65a1426957c432aaadb3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a> (void)</td></tr>
 <tr class="separator:gaf10c64545c5d65a1426957c432aaadb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,9 +146,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga2c639e61f21eac6cb54580eb5e1b85de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b57ee25cb47d455143fa9f009d8e937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a> (uint32_t *previous_ms, uint32_t increment_ms)</td></tr>
 <tr class="separator:ga2b57ee25cb47d455143fa9f009d8e937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab2b02e46c65db61a9d6f1591cb7b463"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gaab2b02e46c65db61a9d6f1591cb7b463">PIOS_Thread_Get_Stack_Usage</a> (struct pios_thread *threadp)</td></tr>
+<tr class="memitem:gaab2b02e46c65db61a9d6f1591cb7b463"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#gaab2b02e46c65db61a9d6f1591cb7b463">PIOS_Thread_Get_Stack_Usage</a> (struct <a class="el" href="structpios__thread.html">pios_thread</a> *threadp)</td></tr>
 <tr class="separator:gaab2b02e46c65db61a9d6f1591cb7b463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09d287bd6511f4991e2119402a9a7b34"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga09d287bd6511f4991e2119402a9a7b34">PIOS_Thread_Get_Runtime</a> (struct pios_thread *threadp)</td></tr>
+<tr class="memitem:ga09d287bd6511f4991e2119402a9a7b34"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga09d287bd6511f4991e2119402a9a7b34">PIOS_Thread_Get_Runtime</a> (struct <a class="el" href="structpios__thread.html">pios_thread</a> *threadp)</td></tr>
 <tr class="separator:ga09d287bd6511f4991e2119402a9a7b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7708d1e49572566decf6908b891c8ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___thread.html#ga7708d1e49572566decf6908b891c8ea6">PIOS_Thread_Scheduler_Suspend</a> (void)</td></tr>
 <tr class="separator:ga7708d1e49572566decf6908b891c8ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +161,20 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Abstracts the concept of a thread to hide different implementations. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gae66efd94087031615f497590a5fdb3ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_THREAD_STACK_SIZE_MIN&#160;&#160;&#160;(32768)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__thread_8h_source.html#l00053">53</a> of file <a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga4d7451032ffd5dc0c3294fa283a204aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,21 +200,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e"></a>PIOS_THREAD_PRIO_HIGHEST</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaaf67f9ea6e212bc198f6d4302ea21e54ad38805db173a7afca2190b3fcb12bcab"></a>PIOS_THREAD_PRIO_LOW</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612"></a>PIOS_THREAD_PRIO_NORMAL</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaaf67f9ea6e212bc198f6d4302ea21e54abbe1aff2d1bfe2d5c2aeae36e422909d"></a>PIOS_THREAD_PRIO_HIGH</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e"></a>PIOS_THREAD_PRIO_HIGHEST</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="pios__thread_8h_source.html#l00076">76</a> of file <a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__thread_8h_source.html#l00055">55</a> of file <a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga022e5c15d4faa27943abccd3e1b6161c"></a>
+<a class="anchor" id="ga30d4f0b56bb65cb60cb99b7e8f6b759e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct pios_thread* PIOS_Thread_Create </td>
+          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a> * PIOS_Thread_Create </td>
           <td>(</td>
           <td class="paramtype">void(*)(void *)&#160;</td>
           <td class="paramname"><em>fp</em>, </td>
@@ -226,6 +257,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00040">40</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gac0a7798537bda9c830ce5bf7ed4d3451"></a>
@@ -235,12 +268,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void PIOS_Thread_Delete </td>
           <td>(</td>
-          <td class="paramtype">struct pios_thread *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td>
           <td class="paramname"><em>threadp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00086">86</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
 
 </div>
 </div>
@@ -251,12 +286,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint32_t PIOS_Thread_Get_Runtime </td>
           <td>(</td>
-          <td class="paramtype">struct pios_thread *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td>
           <td class="paramname"><em>threadp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd></dd></dl>
+
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00144">144</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
 
 </div>
 </div>
@@ -267,12 +305,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint32_t PIOS_Thread_Get_Stack_Usage </td>
           <td>(</td>
-          <td class="paramtype">struct pios_thread *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td>
           <td class="paramname"><em>threadp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd></dd></dl>
+
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00139">139</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
 
 </div>
 </div>
@@ -363,6 +404,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00118">118</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga2b57ee25cb47d455143fa9f009d8e937"></a>
@@ -389,6 +432,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00123">123</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gaf10c64545c5d65a1426957c432aaadb3"></a>
@@ -404,6 +449,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__thread_8c_source.html#l00101">101</a> of file <a class="el" href="posix_2pios__thread_8c_source.html">pios_thread.c</a>.</p>
 
 </div>
 </div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,31 +110,130 @@ $(document).ready(function(){initNavTree('structbl__fsm__context.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">bl_fsm_context Struct Reference<div class="ingroups"><a class="el" href="group___bootloader.html">Bootloaders</a></div></div>  </div>
+<div class="title">bl_fsm_context Struct Reference<div class="ingroups"><a class="el" href="group___common.html">Common</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:gaaf690f9933283c76c26cf93420581e1a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___bootloader.html#ga31f2574038cb70b7ee36f95bf76085c8">bl_states</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#gaaf690f9933283c76c26cf93420581e1a">curr_state</a></td></tr>
-<tr class="separator:gaaf690f9933283c76c26cf93420581e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac280dc5b34112b31f1307be2f2b3778b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbl__messages.html">bl_messages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#gac280dc5b34112b31f1307be2f2b3778b">msg</a></td></tr>
-<tr class="separator:gac280dc5b34112b31f1307be2f2b3778b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27f932c0303f4ec310db42587f7f5355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#ga27f932c0303f4ec310db42587f7f5355">fsm_timer_enabled</a></td></tr>
-<tr class="separator:ga27f932c0303f4ec310db42587f7f5355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93802da71566bb4ddf9bf9fbacccccb1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#ga93802da71566bb4ddf9bf9fbacccccb1">fsm_timer_remaining_us</a></td></tr>
-<tr class="separator:ga93802da71566bb4ddf9bf9fbacccccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6de897f79868b51144473252c97464da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structled__pwm__state.html">led_pwm_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#ga6de897f79868b51144473252c97464da">leds</a></td></tr>
-<tr class="separator:ga6de897f79868b51144473252c97464da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ef163476bc5c445774a760d3bcbd63a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#ga3ef163476bc5c445774a760d3bcbd63a">dfu_device_number</a></td></tr>
-<tr class="separator:ga3ef163476bc5c445774a760d3bcbd63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0cbc9209156c7c0526454f747613840"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structxfer__state.html">xfer_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___bootloader.html#gab0cbc9209156c7c0526454f747613840">xfer</a></td></tr>
-<tr class="separator:gab0cbc9209156c7c0526454f747613840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf690f9933283c76c26cf93420581e1a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___common.html#ga31f2574038cb70b7ee36f95bf76085c8">bl_states</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#aaf690f9933283c76c26cf93420581e1a">curr_state</a></td></tr>
+<tr class="separator:aaf690f9933283c76c26cf93420581e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac280dc5b34112b31f1307be2f2b3778b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbl__messages.html">bl_messages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#ac280dc5b34112b31f1307be2f2b3778b">msg</a></td></tr>
+<tr class="separator:ac280dc5b34112b31f1307be2f2b3778b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f932c0303f4ec310db42587f7f5355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#a27f932c0303f4ec310db42587f7f5355">fsm_timer_enabled</a></td></tr>
+<tr class="separator:a27f932c0303f4ec310db42587f7f5355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93802da71566bb4ddf9bf9fbacccccb1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#a93802da71566bb4ddf9bf9fbacccccb1">fsm_timer_remaining_us</a></td></tr>
+<tr class="separator:a93802da71566bb4ddf9bf9fbacccccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de897f79868b51144473252c97464da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structled__pwm__state.html">led_pwm_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#a6de897f79868b51144473252c97464da">leds</a></td></tr>
+<tr class="separator:a6de897f79868b51144473252c97464da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef163476bc5c445774a760d3bcbd63a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#a3ef163476bc5c445774a760d3bcbd63a">dfu_device_number</a></td></tr>
+<tr class="separator:a3ef163476bc5c445774a760d3bcbd63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cbc9209156c7c0526454f747613840"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structxfer__state.html">xfer_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbl__fsm__context.html#ab0cbc9209156c7c0526454f747613840">xfer</a></td></tr>
+<tr class="separator:ab0cbc9209156c7c0526454f747613840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00118">118</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aaf690f9933283c76c26cf93420581e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___common.html#ga31f2574038cb70b7ee36f95bf76085c8">bl_states</a> bl_fsm_context::curr_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00119">119</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ef163476bc5c445774a760d3bcbd63a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t bl_fsm_context::dfu_device_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00132">132</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27f932c0303f4ec310db42587f7f5355"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bl_fsm_context::fsm_timer_enabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00125">125</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93802da71566bb4ddf9bf9fbacccccb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t bl_fsm_context::fsm_timer_remaining_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00126">126</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6de897f79868b51144473252c97464da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structled__pwm__state.html">led_pwm_state</a> bl_fsm_context::leds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00129">129</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac280dc5b34112b31f1307be2f2b3778b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structbl__messages.html">bl_messages</a> bl_fsm_context::msg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00122">122</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0cbc9209156c7c0526454f747613840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structxfer__state.html">xfer_state</a> bl_fsm_context::xfer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00133">133</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>flight/targets/bl/common/<a class="el" href="bl_2common_2main_8c_source.html">main.c</a></li>
 </ul>
 </div><!-- contents -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,9 +110,12 @@ $(document).ready(function(){initNavTree('brainre1_2fw_2pios__board_8c.html','')
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">pios_board.c File Reference</div>  </div>
+<div class="title">pios_board.c File Reference<div class="ingroups"><a class="el" href="group___brain_r_e1.html">BrainFPV RE1</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The board specific initialization routines.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;board_hw_defs.c&quot;</code><br/>
 <code>#include &lt;pios.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="pios__hal_8h_source.html">pios_hal.h</a>&gt;</code><br/>
@@ -128,13 +131,18 @@ $(document).ready(function(){initNavTree('brainre1_2fw_2pios__board_8c.html','')
 <code>#include &quot;onscreendisplaysettings.h&quot;</code><br/>
 <code>#include &quot;rgbledsettings.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__ir__transponder_8h_source.html">pios_ir_transponder.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__ws2811_8h_source.html">pios_ws2811.h</a>&quot;</code><br/>
 <code>#include &lt;<a class="el" href="pios__board__info_8h_source.html">pios_board_info.h</a>&gt;</code><br/>
 </div>
 <p><a href="brainre1_2fw_2pios__board_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga32c73ccd62cbae6568272cc6949531f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___brain_r_e1.html#ga32c73ccd62cbae6568272cc6949531f2">__early_init</a> (void)</td></tr>
+<tr class="memdesc:ga32c73ccd62cbae6568272cc6949531f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Early initialization code.  <a href="group___brain_r_e1.html#ga32c73ccd62cbae6568272cc6949531f2">More...</a><br/></td></tr>
+<tr class="separator:ga32c73ccd62cbae6568272cc6949531f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48edc646a1de1ba488bbe7d786df9bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___brain_r_e1.html#ga48edc646a1de1ba488bbe7d786df9bae">boardInit</a> (void)</td></tr>
+<tr class="memdesc:ga48edc646a1de1ba488bbe7d786df9bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Board-specific RTOS initialization code.  <a href="group___brain_r_e1.html#ga48edc646a1de1ba488bbe7d786df9bae">More...</a><br/></td></tr>
+<tr class="separator:ga48edc646a1de1ba488bbe7d786df9bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga35bd05421aa6667423406271507c0ae2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___brain_r_e1.html#ga35bd05421aa6667423406271507c0ae2">settingdUpdatedCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
 <tr class="separator:ga35bd05421aa6667423406271507c0ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b0ed4e8687557e464541def703918fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___brain_r_e1.html#ga7b0ed4e8687557e464541def703918fe">check_bor</a> ()</td></tr>
@@ -155,7 +163,15 @@ Variables</h2></td></tr>
 <tr class="memitem:ga6989625716018e17ce36590971457436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a></td></tr>
 <tr class="separator:ga6989625716018e17ce36590971457436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The board specific initialization routines. </p>
+<dl class="section author"><dt>Author</dt><dd>dRonin, <a href="http://dRonin.org/,">http://dRonin.org/,</a> Copyright (C) 2016 </dd>
+<dd>
+Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2012-2013 </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
+
+<p>Definition in file <a class="el" href="brainre1_2fw_2pios__board_8c_source.html">pios_board.c</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

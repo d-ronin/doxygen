@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cb92ddc</span>
+   &#160;<span id="projectnumber">12a6538</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('systemmod_8c.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">systemmod.c File Reference<div class="ingroups"><a class="el" href="group___system_module.html">System Module</a></div></div>  </div>
+<div class="title">systemmod.c File Reference<div class="ingroups"><a class="el" href="group___system_module.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -159,7 +159,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga9be33d810838161edf9412377209a4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;PIOS_THREAD_PRIO_NORMAL</td></tr>
+<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccbe74bc6d9bb1780cc8df6532d38192"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaccbe74bc6d9bb1780cc8df6532d38192">SYSTEM_UPDATE_PERIOD_MS</a>&#160;&#160;&#160;117</td></tr>
 <tr class="separator:gaccbe74bc6d9bb1780cc8df6532d38192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,9 +184,9 @@ Functions</h2></td></tr>
 <tr class="separator:gaf33480c6b247620915026fc37bb9232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcbe694acc4c0e004ec27be36a162e1b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadcbe694acc4c0e004ec27be36a162e1b">processPeriodicUpdates</a> ()</td></tr>
 <tr class="separator:gadcbe694acc4c0e004ec27be36a162e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa366f3eeb13d209096207266c4bb5c27"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa366f3eeb13d209096207266c4bb5c27">eventPeriodicCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:gaa366f3eeb13d209096207266c4bb5c27"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa366f3eeb13d209096207266c4bb5c27">eventPeriodicCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:gaa366f3eeb13d209096207266c4bb5c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa926a99228262150f436a4011b9c0bfb"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa926a99228262150f436a4011b9c0bfb">eventPeriodicUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:gaa926a99228262150f436a4011b9c0bfb"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaa926a99228262150f436a4011b9c0bfb">eventPeriodicUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:gaa926a99228262150f436a4011b9c0bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18ad99b143e1b11eebd225e9f585a500"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga18ad99b143e1b11eebd225e9f585a500">configurationUpdatedCb</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
 <tr class="separator:ga18ad99b143e1b11eebd225e9f585a500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,9 +218,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga34e9f120ad77feee68d20f0a22adeb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10f109820071bea9b310dce65a46d784"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga10f109820071bea9b310dce65a46d784">EventPeriodicCallbackUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, <a class="el" href="uavobjectmanager_8h.html#a7d2d49fa0dec2bf59c61ffe88270c331">UAVObjEventCallback</a> cb, uint16_t periodMs)</td></tr>
 <tr class="separator:ga10f109820071bea9b310dce65a46d784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26f4f21c174d0caf6301734360fc885a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga26f4f21c174d0caf6301734360fc885a">EventPeriodicQueueCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:ga26f4f21c174d0caf6301734360fc885a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga26f4f21c174d0caf6301734360fc885a">EventPeriodicQueueCreate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:ga26f4f21c174d0caf6301734360fc885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga914ce570d6529619085bb00319fc05e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga914ce570d6529619085bb00319fc05e0">EventPeriodicQueueUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct pios_queue *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
+<tr class="memitem:ga914ce570d6529619085bb00319fc05e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga914ce570d6529619085bb00319fc05e0">EventPeriodicQueueUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:ga914ce570d6529619085bb00319fc05e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -228,7 +228,7 @@ Variables</h2></td></tr>
 <tr class="memitem:gaff29ccca83c4f02fbcb3e824211744ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___system_module.html#ga3da0c8782a25b0b174e36b9f80d02183">PeriodicObjectList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaff29ccca83c4f02fbcb3e824211744ed">objList</a></td></tr>
 <tr class="separator:gaff29ccca83c4f02fbcb3e824211744ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadce68671d7788ce17593ae16d93c747b"><td class="memItemLeft" align="right" valign="top">static struct <br class="typebreak"/>
-pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadce68671d7788ce17593ae16d93c747b">mutex</a></td></tr>
+<a class="el" href="structpios__recursive__mutex.html">pios_recursive_mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gadce68671d7788ce17593ae16d93c747b">mutex</a></td></tr>
 <tr class="separator:gadce68671d7788ce17593ae16d93c747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37358461ce40773a6fdd1c6988da4bf7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_event_stats.html">EventStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga37358461ce40773a6fdd1c6988da4bf7">stats</a></td></tr>
 <tr class="separator:ga37358461ce40773a6fdd1c6988da4bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,9 +236,9 @@ pios_recursive_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="separator:ga623c45138900250350d43464f282589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8dbcb557784069df82f90fa4d6383536"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga8dbcb557784069df82f90fa4d6383536">idleCounterClear</a></td></tr>
 <tr class="separator:ga8dbcb557784069df82f90fa4d6383536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafb885b70725c5de065dd0dde77c5284"><td class="memItemLeft" align="right" valign="top">static struct pios_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaafb885b70725c5de065dd0dde77c5284">systemTaskHandle</a></td></tr>
+<tr class="memitem:gaafb885b70725c5de065dd0dde77c5284"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaafb885b70725c5de065dd0dde77c5284">systemTaskHandle</a></td></tr>
 <tr class="separator:gaafb885b70725c5de065dd0dde77c5284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga409efe511a9583167ae97f88b838d93f"><td class="memItemLeft" align="right" valign="top">static struct pios_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga409efe511a9583167ae97f88b838d93f">objectPersistenceQueue</a></td></tr>
+<tr class="memitem:ga409efe511a9583167ae97f88b838d93f"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga409efe511a9583167ae97f88b838d93f">objectPersistenceQueue</a></td></tr>
 <tr class="separator:ga409efe511a9583167ae97f88b838d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31adc044d18538d023d203ceb36eb14c"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga31adc044d18538d023d203ceb36eb14c">config_check_needed</a></td></tr>
 <tr class="separator:ga31adc044d18538d023d203ceb36eb14c"><td class="memSeparator" colspan="2">&#160;</td></tr>

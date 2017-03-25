@@ -14,7 +14,6 @@ var searchData=
   ['vibrationanalysisstart',['VibrationAnalysisStart',['../group___vibration_analysis_module.html#ga9afc18d6482a463630b18d52b3e913c9',1,'vibrationanalysis.c']]],
   ['vibrationanalysistask',['VibrationAnalysisTask',['../group___vibration_analysis_module.html#ga3b1fb042a902db54655c1c5766fb2629',1,'vibrationanalysis.c']]],
   ['vportfree',['vPortFree',['../group___p_i_o_s___h_e_a_p.html#ga55ae4353195ca5dae6aa2e45f7bf9b93',1,'pios_heap.c']]],
-  ['vportinitialiseblocks',['vPortInitialiseBlocks',['../group___p_i_o_s___h_e_a_p.html#ga8bf103ce32ce8473574e9920af8b4eec',1,'pios_heap.c']]],
   ['vprintf',['vprintf',['../group___p_i_o_s.html#gaae4ab8b56862ed0a04505cafb8a05112',1,'printf-stdarg.c']]],
   ['vsprintf',['vsprintf',['../group___p_i_o_s.html#ga7408e892dd48c6ce39b5821d917a3dd2',1,'printf-stdarg.c']]],
   ['vtol_5ffollower_5fcontrol_5faccel',['vtol_follower_control_accel',['../group___vtol_path_follower.html#gad21b62e5d1e75c1b856e79bad01a3162',1,'vtol_follower_control.c']]],

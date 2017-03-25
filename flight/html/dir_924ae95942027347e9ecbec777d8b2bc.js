@@ -1,6 +1,5 @@
 var dir_924ae95942027347e9ecbec777d8b2bc =
 [
-    [ "board.c", "revolution_2fw_2board_8c.html", "revolution_2fw_2board_8c" ],
     [ "board.h", "revolution_2fw_2board_8h.html", "revolution_2fw_2board_8h" ],
     [ "chconf.h", "revolution_2fw_2chconf_8h.html", "revolution_2fw_2chconf_8h" ],
     [ "halconf.h", "revolution_2fw_2halconf_8h.html", "revolution_2fw_2halconf_8h" ],

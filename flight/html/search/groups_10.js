@@ -1,11 +1,12 @@
 var searchData=
 [
+  ['tau_20labs_20pikoblx_20support_20files',['Tau Labs PikoBLX support files',['../group___piko_b_l_x.html',1,'']]],
+  ['tau_20labs_20pikoblx_20bootloader',['Tau Labs PikoBLX bootloader',['../group___piko_b_l_x_b_l.html',1,'']]],
+  ['tcp_20driver',['TCP Driver',['../group___p_i_o_s___t_c_p.html',1,'']]],
   ['thread_20abstraction',['Thread Abstraction',['../group___p_i_o_s___thread.html',1,'']]],
   ['timer_20functions',['Timer Functions',['../group___p_i_o_s___t_i_m.html',1,'']]],
-  ['tau_20labs_20freedom_20bootloader',['Tau Labs Freedom bootloader',['../group___pip_xtreme_b_l.html',1,'']]],
-  ['tau_20labs_20sparky_20support_20files',['Tau Labs Sparky support files',['../group___sparky.html',1,'']]],
-  ['tau_20labs_20sparky2_20support_20files',['Tau Labs Sparky2 support files',['../group___sparky2.html',1,'']]],
-  ['tau_20labs_20sparky_20bootloader',['Tau Labs Sparky bootloader',['../group___sparky_b_l.html',1,'']]],
+  ['tau_20labs_20sparky',['Tau Labs Sparky',['../group___sparky.html',1,'']]],
+  ['tau_20labs_20sparky2',['Tau Labs Sparky2',['../group___sparky2.html',1,'']]],
   ['target_20boards',['Target Boards',['../group___targets.html',1,'']]],
   ['tau_20labs_20bootloaders',['Tau Labs Bootloaders',['../group___tau_labs_bootloader.html',1,'']]],
   ['tau_20labs_20core_20components',['Tau Labs Core components',['../group___tau_labs_core.html',1,'']]],

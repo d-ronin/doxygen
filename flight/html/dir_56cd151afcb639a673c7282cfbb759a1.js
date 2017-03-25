@@ -1,6 +1,5 @@
 var dir_56cd151afcb639a673c7282cfbb759a1 =
 [
-    [ "board.c", "quanton_2fw_2board_8c.html", "quanton_2fw_2board_8c" ],
     [ "board.h", "quanton_2fw_2board_8h.html", "quanton_2fw_2board_8h" ],
     [ "chconf.h", "quanton_2fw_2chconf_8h.html", "quanton_2fw_2chconf_8h" ],
     [ "halconf.h", "quanton_2fw_2halconf_8h.html", "quanton_2fw_2halconf_8h" ],

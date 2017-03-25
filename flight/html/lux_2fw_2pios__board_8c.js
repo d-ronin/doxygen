@@ -1,6 +1,8 @@
 var lux_2fw_2pios__board_8c =
 [
-    [ "PIOS_Board_Init", "lux_2fw_2pios__board_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
+    [ "__early_init", "lux_2fw_2pios__board_8c.html#ga32c73ccd62cbae6568272cc6949531f2", null ],
+    [ "boardInit", "lux_2fw_2pios__board_8c.html#ga48edc646a1de1ba488bbe7d786df9bae", null ],
+    [ "PIOS_Board_Init", "lux_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "pios_can_id", "lux_2fw_2pios__board_8c.html#ga0113e473ea49f167a8f2bff77b02ff1b", null ],
     [ "pios_com_aux_id", "lux_2fw_2pios__board_8c.html#ga83417f60ff58e7cf0ec45ec85dfef380", null ],
     [ "pios_com_can_id", "lux_2fw_2pios__board_8c.html#gafff91b6d9bd153dbcd8222ea2d4f3c52", null ],

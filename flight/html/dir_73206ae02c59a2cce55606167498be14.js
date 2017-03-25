@@ -11,12 +11,16 @@ var dir_73206ae02c59a2cce55606167498be14 =
     [ "pios_heap.c", "_pi_o_s_2posix_2pios__heap_8c.html", "_pi_o_s_2posix_2pios__heap_8c" ],
     [ "pios_iap.c", "posix_2pios__iap_8c.html", "posix_2pios__iap_8c" ],
     [ "pios_irq.c", "posix_2pios__irq_8c.html", "posix_2pios__irq_8c" ],
+    [ "pios_mutex.c", "posix_2pios__mutex_8c.html", "posix_2pios__mutex_8c" ],
+    [ "pios_queue.c", "posix_2pios__queue_8c.html", "posix_2pios__queue_8c" ],
     [ "pios_reset.c", "posix_2pios__reset_8c.html", "posix_2pios__reset_8c" ],
+    [ "pios_semaphore.c", "posix_2pios__semaphore_8c.html", "posix_2pios__semaphore_8c" ],
     [ "pios_serial.c", "pios__serial_8c.html", null ],
     [ "pios_servo.c", "posix_2pios__servo_8c.html", null ],
     [ "pios_spi.c", "posix_2pios__spi_8c.html", null ],
     [ "pios_sys.c", "posix_2pios__sys_8c.html", "posix_2pios__sys_8c" ],
     [ "pios_tcp.c", "pios__tcp_8c.html", null ],
+    [ "pios_thread.c", "posix_2pios__thread_8c.html", "posix_2pios__thread_8c" ],
     [ "pios_udp.c", "pios__udp_8c.html", null ],
     [ "pios_wdg.c", "posix_2pios__wdg_8c.html", "posix_2pios__wdg_8c" ]
 ];

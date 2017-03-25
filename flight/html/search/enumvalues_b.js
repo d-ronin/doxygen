@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['last_5foperation_5ffailed',['Last_operation_failed',['../group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37ad1504cc235ba9b3018ae8f846cbdd32e',1,'common.h']]],
-  ['last_5foperation_5fsuccess',['Last_operation_Success',['../group___copter_control_b_l.html#gga9a9e510f2da4e725074c7191d9d75d37acce93144acfd5bf749409b44531d6329',1,'common.h']]],
+  ['last_5foperation_5ffailed',['Last_operation_failed',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37ad1504cc235ba9b3018ae8f846cbdd32e',1,'common.h']]],
+  ['last_5foperation_5fsuccess',['Last_operation_Success',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37acce93144acfd5bf749409b44531d6329',1,'common.h']]],
   ['lis_5freg_5fmag_5fctrl1',['LIS_REG_MAG_CTRL1',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga847440149749ffe972dd2139c44f022fa9f7c2a0283d7be11b21d386e13f7ceaa',1,'pios_lis3mdl_priv.h']]],
   ['lis_5freg_5fmag_5fctrl2',['LIS_REG_MAG_CTRL2',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga847440149749ffe972dd2139c44f022fa3561053150bf7dde3d9d67186da00f13',1,'pios_lis3mdl_priv.h']]],
   ['lis_5freg_5fmag_5fctrl3',['LIS_REG_MAG_CTRL3',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga847440149749ffe972dd2139c44f022fa4c59f652c6771765b195c6de59635dd4',1,'pios_lis3mdl_priv.h']]],

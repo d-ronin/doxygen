@@ -9,7 +9,6 @@ var dir_5bb897faab25689a7cb3d40be6c9e044 =
     [ "CameraStab", "dir_aaa9b303c7e9e3e9e94cf966bd799309.html", "dir_aaa9b303c7e9e3e9e94cf966bd799309" ],
     [ "CharacterOSD", "dir_aeebb2b9d18d0f069cdabf36cf3d1eaa.html", "dir_aeebb2b9d18d0f069cdabf36cf3d1eaa" ],
     [ "ComUsbBridge", "dir_a344ed5b5e2a0f2f7c5a51e30f8b842e.html", "dir_a344ed5b5e2a0f2f7c5a51e30f8b842e" ],
-    [ "Example", "dir_8172204d758d33508d51d521a803251e.html", "dir_8172204d758d33508d51d521a803251e" ],
     [ "Fault", "dir_4e2c470100af1fcc45f1e9fe4a27a489.html", "dir_4e2c470100af1fcc45f1e9fe4a27a489" ],
     [ "FirmwareIAP", "dir_e1aaaffe2cfedf2cd8376b93dfe7cc7f.html", "dir_e1aaaffe2cfedf2cd8376b93dfe7cc7f" ],
     [ "FixedWingPathFollower", "dir_e6255239c53490e4e72370da68406d04.html", "dir_e6255239c53490e4e72370da68406d04" ],

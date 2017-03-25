@@ -5,6 +5,8 @@ var sparky2_2board_info_2board__hw__defs_8c =
     [ "pios_servo_8_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#ga3fab6b851cf50d78b68e2635a913f704", null ],
     [ "pios_servo_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#gacce35e1843680882ef80c4f80d41ed5c", null ],
     [ "pios_tim_servoport_all_pins", "sparky2_2board-info_2board__hw__defs_8c.html#ga79aded86cca2a67d700f75a40fb4d6de", null ],
+    [ "pios_usart_flexi_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#ga0174e687ba7445d8d419a6b3fd6d5bba", null ],
+    [ "pios_usart_main_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#ga0e5e1b8910d71466edb2fd6f8d12356c", null ],
     [ "pios_usart_rcvr_pc7_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#ga0a24b5fb1c69cadbe7db02cbbd718f70", null ],
     [ "pios_usart_rcvr_pd2_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#gab0e82c4c6a4f3289a8355c568f3b13b4", null ],
     [ "tim_12_cfg", "sparky2_2board-info_2board__hw__defs_8c.html#ga8a3391113e465d74c92def57807d830e", null ],

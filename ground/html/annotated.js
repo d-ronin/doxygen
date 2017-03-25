@@ -274,6 +274,7 @@ var annotated =
     [ "PfdQmlGadgetWidget", "class_pfd_qml_gadget_widget.html", "class_pfd_qml_gadget_widget" ],
     [ "PfdQmlPlugin", "class_pfd_qml_plugin.html", null ],
     [ "PhononObject", "struct_phonon_object.html", "struct_phonon_object" ],
+    [ "PikoBLX", "class_piko_b_l_x.html", "class_piko_b_l_x" ],
     [ "PlayUavOsd", "class_play_uav_osd.html", "class_play_uav_osd" ],
     [ "Plot2dCurveConfiguration", "struct_plot2d_curve_configuration.html", "struct_plot2d_curve_configuration" ],
     [ "Plot2dData", "class_plot2d_data.html", "class_plot2d_data" ],
