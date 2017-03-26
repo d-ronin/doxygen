@@ -15,5 +15,6 @@ var searchData=
   ['homeeditor',['homeEditor',['../classhome_editor.html',1,'']]],
   ['homeitem',['HomeItem',['../classmapcontrol_1_1_home_item.html',1,'mapcontrol']]],
   ['homelocationutil',['HomeLocationUtil',['../class_utils_1_1_home_location_util.html',1,'Utils']]],
+  ['host',['Host',['../struct_i_p_connection_configuration_1_1_host.html',1,'IPConnectionConfiguration']]],
   ['hostosinfo',['HostOsInfo',['../class_utils_1_1_host_os_info.html',1,'Utils']]]
 ];

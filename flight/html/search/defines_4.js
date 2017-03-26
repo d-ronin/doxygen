@@ -38,6 +38,7 @@ var searchData=
   ['dma2_5fstream6_5firqhandler',['DMA2_Stream6_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ab02a4d7ad3f3dce551947ec2f7ae6913',1,'pios_chibios_transition_priv.h']]],
   ['dma2_5fstream7_5firqhandler',['DMA2_Stream7_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a81188a8ce246400520758f8e2ae3a25f',1,'pios_chibios_transition_priv.h']]],
   ['dont_5fbuild_5fif',['DONT_BUILD_IF',['../morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094',1,'morsel.c']]],
+  ['dronin_5fgettime',['DRONIN_GETTIME',['../pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d',1,'pios_posix.h']]],
   ['dsm_5f2nd_5fframe_5fmask',['DSM_2ND_FRAME_MASK',['../dsm_8h.html#a93e02b258974bfdb14297f1e04d480eb',1,'dsm.h']]],
   ['dsm_5fchannels_5fper_5fframe',['DSM_CHANNELS_PER_FRAME',['../dsm_8h.html#a50c5a2ccccb4058b7c96c819a58ffd34',1,'dsm.h']]],
   ['dsm_5fdsm2_5fres_5fmask',['DSM_DSM2_RES_MASK',['../dsm_8h.html#a468b858e1eca59c7326f7b3a2fe1f414',1,'dsm.h']]],

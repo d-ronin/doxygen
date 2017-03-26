@@ -41,6 +41,7 @@ var searchData=
   ['circular_5fmodulus_5frad',['circular_modulus_rad',['../group___tau_labs_math.html#gaba90e72f0f9a03ff25411ec53f5d492b',1,'misc_math.c']]],
   ['cleargraphics',['clearGraphics',['../group___on_screen_display.html#gaef4730e1cc093c1b98a70d8e9241c3de',1,'osd_utils.c']]],
   ['climb_5fupdate',['CLIMB_update',['../group___char_o_s_d.html#ga7eecea3a05bd15243bcf3fad517e89d0',1,'panel.c']]],
+  ['clock_5fgettime',['clock_gettime',['../pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda',1,'pios_posix.h']]],
   ['close',['close',['../classpx__uploader_1_1uploader.html#a45038a6de31ad43299f4d3c09cb127d3',1,'px_uploader::uploader']]],
   ['cmd_5fset_5fangle',['cmd_set_angle',['../group___storm32bgc.html#gaf7d06dfec8bd97a9f24bd999e2c7e2b2',1,'storm32bgc.c']]],
   ['collective_5fcurve',['collective_curve',['../group___actuator_module.html#gaf68bce9df87514badace08f793262388',1,'actuator.c']]],

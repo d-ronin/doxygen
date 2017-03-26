@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['port',['Port',['../group___i_p_conn_plugin.html#ga016b44f60ba95951cdf428d88a119a97',1,'IPconnectionConfiguration']]]
+  ['rotate',['Rotate',['../group___t_l_map_widget.html#ga2a3f69293c42b9c760d0c4e195caaecc',1,'mapcontrol::TLMapWidget']]]
 ];

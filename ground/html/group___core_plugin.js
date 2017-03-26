@@ -1033,7 +1033,9 @@ var group___core_plugin =
       [ "trName", "group___core_plugin.html#gab9597c172a3c0a1ae683edb4c4a3d8c2", null ]
     ] ],
     [ "IPDevice", "class_i_p_device.html", [
-      [ "IPDevice", "group___core_plugin.html#ga010455234abea0dd5af6ce5f06632331", null ]
+      [ "IPDevice", "group___core_plugin.html#ga010455234abea0dd5af6ce5f06632331", null ],
+      [ "host", "group___core_plugin.html#ga03eaeaffeb6292cd5ff8687cb9ce1769", null ],
+      [ "setHost", "group___core_plugin.html#ga072635b2e9d5736e9c2dd193ff7b1e27", null ]
     ] ],
     [ "LoggingDevice", "class_logging_device.html", [
       [ "LoggingDevice", "group___core_plugin.html#gaba24d30b517c7a1f35721b04eb1cc90b", null ]
@@ -1436,6 +1438,7 @@ var group___core_plugin =
     [ "hasGadget", "group___core_plugin.html#ga988eeacf124937c7e90853f95af39ce3", null ],
     [ "hasGadget", "group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643", null ],
     [ "hasUniqueIdentifier", "group___core_plugin.html#ga2f6cd087d32efa11b3979cf128fa1d77", null ],
+    [ "host", "group___core_plugin.html#ga03eaeaffeb6292cd5ff8687cb9ce1769", null ],
     [ "icon", "group___core_plugin.html#ga08aee89ee18cb2f86fef5547c93eb324", null ],
     [ "icon", "group___core_plugin.html#ga112e7a5d2e25d9a38cb8e52ec9f89431", null ],
     [ "icon", "group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d", null ],
@@ -1673,6 +1676,7 @@ var group___core_plugin =
     [ "setESCs", "group___core_plugin.html#gabfda30b1ecc4f11a4dcbd94a7fb2d231", null ],
     [ "setFocus", "group___core_plugin.html#ga3f018a7b33734836caaf6d26346d2847", null ],
     [ "setGadget", "group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f", null ],
+    [ "setHost", "group___core_plugin.html#ga072635b2e9d5736e9c2dd193ff7b1e27", null ],
     [ "setIcon", "group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3", null ],
     [ "setIcon", "group___core_plugin.html#gab9476a9a42bf5a928acb87d58b6e056c", null ],
     [ "setIcon", "group___core_plugin.html#ga2264241e26aef2218c7c7d7fe2193389", null ],

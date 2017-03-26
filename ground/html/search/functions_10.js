@@ -68,7 +68,6 @@ var searchData=
   ['popup',['popup',['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)'],['../class_popup_widget.html#a7fa5f95babcb7743b3dd2e5acee81360',1,'PopupWidget::popUp()']]],
   ['popupcurve',['PopupCurve',['../group___config_plugin.html#gaec9845f3048d0bb15ba6b31f4659888f',1,'MixerCurve']]],
   ['popupwidget',['PopupWidget',['../class_popup_widget.html#a65bffb57db36284b740a658485c68798',1,'PopupWidget']]],
-  ['port',['Port',['../group___i_p_conn_plugin.html#gaaa57ca41a00de517e859afa3c339099a',1,'IPconnectionConfiguration']]],
   ['pos',['Pos',['../group___t_l_map_widget.html#ga1c62f80ba95a32840e72ccfa745f503f',1,'core::RawTile']]],
   ['position',['position',['../group___g_p_s_gadget_plugin.html#ga07f9008aa82b159a457c64d35fdaa3fc',1,'GPSParser']]],
   ['positionactualchanged',['positionActualChanged',['../group___g_c_s_control_gadget_plugin.html#gaa10cdac61400db1034c7954b3c549824',1,'MagicWaypointGadgetWidget']]],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX209 =
 {
+"structpios__hmc5983__cfg.html#a413ddca98eb4ba97b318aabaa13f2bde":[1,0,21,3,2],
+"structpios__hmc5983__cfg.html#a44df092d13754a8a2d4a0f987d76706a":[1,0,21,3,0],
+"structpios__hmc5983__cfg.html#aa837d19f5842901842c1794c9de25f08":[1,0,21,3,3],
+"structpios__hmc5983__cfg.html#aaf4023336aa39df82427b1763d59b94c":[1,0,21,3,6],
+"structpios__hmc5983__cfg.html#aeaf174c5656702b3d07ea4a9f315284c":[1,0,21,3,1],
 "structpios__i2c__adapter.html":[3,0,158],
 "structpios__i2c__adapter.html#a07891f689e89b36732affa16c1c3bf94":[3,0,158,9],
 "structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933":[3,0,158,8],
@@ -107,14 +112,14 @@ var NAVTREEINDEX209 =
 "structpios__rcvr__driver.html":[1,0,64,2],
 "structpios__rcvr__driver.html#a9bde8d770ce562c177d3a8350866eae3":[1,0,64,2,0],
 "structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305":[1,0,64,2,1],
-"structpios__re1fpga__cfg.html":[1,8,2,16],
 "structpios__re1fpga__cfg.html":[1,7,4,16],
-"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[1,8,2,16,1],
+"structpios__re1fpga__cfg.html":[1,8,2,16],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[1,7,4,16,1],
-"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,7,4,16,3],
+"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[1,8,2,16,1],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,8,2,16,3],
-"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[1,7,4,16,2],
+"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,7,4,16,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[1,8,2,16,2],
+"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[1,7,4,16,2],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[1,7,4,16,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[1,8,2,16,0],
 "structpios__recursive__mutex.html":[1,0,34,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX209 =
 "structpios__thread.html#aeea7cd6da7ab43af298693839272121f":[1,0,43,0,1],
 "structpios__tim__callbacks.html":[3,0,196],
 "structpios__tim__callbacks.html#a6b0c1cd868a73b42c8a2228d08103ee3":[3,0,196,1],
-"structpios__tim__callbacks.html#afd5658cf42a5510cc6ed2a662add20fe":[3,0,196,0],
-"structpios__tim__channel.html":[3,0,197],
-"structpios__tim__channel.html#a07d1ffb5da40643ef9938fa9c4fad017":[3,0,197,2],
-"structpios__tim__channel.html#a6500258c79aaab18cc524727753e388e":[3,0,197,0],
-"structpios__tim__channel.html#a66cede40f7ef0785c0941c49ea162b59":[3,0,197,3],
-"structpios__tim__channel.html#ac0c7199f77fa4e99068cda8572e02064":[3,0,197,1]
+"structpios__tim__callbacks.html#afd5658cf42a5510cc6ed2a662add20fe":[3,0,196,0]
 };

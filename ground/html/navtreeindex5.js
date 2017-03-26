@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582":[5,0,157,0],
+"classinput_channel_form.html":[5,0,159],
 "classinput_channel_form.html#a2a08d48cca33c79f7765524beaac4767":[5,0,159,4],
 "classinput_channel_form.html#ab014df8413309ecbbb57eb4ffa8f428e":[5,0,159,1],
 "classinput_channel_form.html#acef0a558bb6c87760e411f5042af7401":[5,0,159,0],
@@ -39,8 +41,8 @@ var NAVTREEINDEX5 =
 "classprojections_1_1_plate_carree_projection_pergo.html":[3,0,33],
 "classsmart_save_button.html":[3,9,8],
 "classtl__dfu_1_1_d_f_u_object.html":[3,2,46,17],
-"classtst___plugin_manager.html":[5,0,384],
-"classtst___plugin_spec.html":[5,0,385],
+"classtst___plugin_manager.html":[5,0,386],
+"classtst___plugin_spec.html":[5,0,387],
 "classuavobject_1_1_u_a_v_meta_data.html":[5,0,14,0],
 "classuavobject_1_1_u_a_v_meta_data.html#a11b180f745b8a0e744123807d67da310":[5,0,14,0,2],
 "classuavobject_1_1_u_a_v_meta_data.html#a52d403f306cc0d46c9e8e48d8071aaca":[5,0,14,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "coreconstants_8h.html":[6,0,0,0,0,1,10,16],
 "coreconstants_8h.html#ga026249c67697bb54937e265ea9099145":[6,0,0,0,0,1,10,16,4],
 "coreconstants_8h.html#ga05ac3ebb994ab8c62e2f0ba17dc12b48":[6,0,0,0,0,1,10,16,37],
-"coreconstants_8h.html#ga0728832ead190842b8b6a1f54f1db318":[6,0,0,0,0,1,10,16,11],
-"coreconstants_8h.html#ga088348a7f32fe0a36bc24dfb67dfbdab":[6,0,0,0,0,1,10,16,130],
-"coreconstants_8h.html#ga0888b3ef54e714d32bc7be88f5ec9665":[6,0,0,0,0,1,10,16,117]
+"coreconstants_8h.html#ga0728832ead190842b8b6a1f54f1db318":[6,0,0,0,0,1,10,16,11]
 };

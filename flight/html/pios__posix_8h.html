@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">12a6538</span>
+   &#160;<span id="projectnumber">cdcfcb6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -107,13 +107,16 @@ $(document).ready(function(){initNavTree('pios__posix_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pios_posix.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
 </div>
 <p><a href="pios__posix_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -125,8 +128,66 @@ Macros</h2></td></tr>
 <tr class="separator:ad402ef43fab77a45eecba0b90f1e4a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4f93e592e9dc7341265971fb626f6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#a8c4f93e592e9dc7341265971fb626f6f">PIOS_SERVO_NUM_TIMERS</a>&#160;&#160;&#160;<a class="el" href="pios__posix_8h.html#ad402ef43fab77a45eecba0b90f1e4a0b">PIOS_SERVO_NUM_OUTPUTS</a></td></tr>
 <tr class="separator:a8c4f93e592e9dc7341265971fb626f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb83f5e91e704391ff796553d5e0f46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#a6fb83f5e91e704391ff796553d5e0f46">CLOCK_MONOTONIC</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a6fb83f5e91e704391ff796553d5e0f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922ce1ae64374c9410c8a999e25e82af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af">CLOCK_REALTIME</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a922ce1ae64374c9410c8a999e25e82af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a0b85de88f5247c70f84416989c95d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d">DRONIN_GETTIME</a></td></tr>
+<tr class="separator:af4a0b85de88f5247c70f84416989c95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6dcac6a5cea7d9c842145e1444d91e22"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a></td></tr>
+<tr class="separator:a6dcac6a5cea7d9c842145e1444d91e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4c144c721b7558fcea0a0b9920246fda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a> (<a class="el" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a> clk_id, struct timespec *t)</td></tr>
+<tr class="separator:a4c144c721b7558fcea0a0b9920246fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a6fb83f5e91e704391ff796553d5e0f46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLOCK_MONOTONIC&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00054">54</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a922ce1ae64374c9410c8a999e25e82af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLOCK_REALTIME&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00057">57</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4a0b85de88f5247c70f84416989c95d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DRONIN_GETTIME</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00062">62</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a9f528d42f3b5ac13e386fd1b18276956"></a>
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +198,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00033">33</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00035">35</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
 
 </div>
 </div>
@@ -151,7 +212,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00035">35</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00037">37</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
 
 </div>
 </div>
@@ -165,7 +226,49 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00036">36</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00038">38</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a6dcac6a5cea7d9c842145e1444d91e22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__posix_8h_source.html#l00060">60</a> of file <a class="el" href="pios__posix_8h_source.html">pios_posix.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4c144c721b7558fcea0a0b9920246fda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int clock_gettime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a>&#160;</td>
+          <td class="paramname"><em>clk_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct timespec *&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

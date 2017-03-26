@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">12a6538</span>
+   &#160;<span id="projectnumber">cdcfcb6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -162,66 +162,61 @@ $(document).ready(function(){initNavTree('ipconnectionplugin_8h_source.html','')
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga65bb74489e016d9863f42f0bb87afd8c">connectionName</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">shortName</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga0e2cb89e71a2cb233e3b6638febf6c22">   69</a></span>&#160;    <a class="code" href="class_i_pconnection_configuration.html">IPconnectionConfiguration</a> * <a class="code" href="group___i_p_conn_plugin.html#ga0e2cb89e71a2cb233e3b6638febf6c22">Config</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_config; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">   70</a></span>&#160;    <a class="code" href="class_i_pconnection_options_page.html">IPconnectionOptionsPage</a> * <a class="code" href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">Optionspage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_optionspage; }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">   69</a></span>&#160;    <a class="code" href="class_i_p_connection_options_page.html">IPConnectionOptionsPage</a> *<a class="code" href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">optionsPage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_optionspage; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span> slots:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> onEnumerationChanged();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">protected</span> slots:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> onEnumerationChanged();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga9fa3de80c2899c62813961082ad48e95">openDevice</a>(QString HostName, <span class="keywordtype">int</span> Port, <span class="keywordtype">bool</span> UseTCP);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QAbstractSocket *ipSocket;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_i_pconnection_configuration.html">IPconnectionConfiguration</a> *m_config;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_i_pconnection_options_page.html">IPconnectionOptionsPage</a> *m_optionspage;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_i_p_device.html">IPDevice</a> dev;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QString errorMsg;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_i_pconnection_plugin.html">   87</a></span>&#160;<span class="keyword">class </span>IPconnection_EXPORT <a class="code" href="class_i_pconnection_plugin.html">IPconnectionPlugin</a></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.dronin.plugins.IPconnection&quot;</span>)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_i_pconnection_plugin.html">IPconnectionPlugin</a>();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ~<a class="code" href="class_i_pconnection_plugin.html">IPconnectionPlugin</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga9fa3de80c2899c62813961082ad48e95">openDevice</a>(QString HostName, <span class="keywordtype">int</span> Port, <span class="keywordtype">bool</span> UseTCP);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QAbstractSocket *ipSocket;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_i_p_connection_configuration.html">IPConnectionConfiguration</a> *m_config;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_i_p_connection_options_page.html">IPConnectionOptionsPage</a> *m_optionspage;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;Core::IDevice *&gt;</a> devices;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString errorMsg;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_i_p_connection_plugin.html">   84</a></span>&#160;<span class="keyword">class </span>IPconnection_EXPORT <a class="code" href="class_i_p_connection_plugin.html">IPConnectionPlugin</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.dronin.plugins.IPConnection&quot;</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_i_p_connection_plugin.html">IPConnectionPlugin</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ~<a class="code" href="class_i_p_connection_plugin.html">IPConnectionPlugin</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">initialize</a>(<span class="keyword">const</span> QStringList &amp;arguments, QString *error_message);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">extensionsInitialized</a>();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">initialize</a>(<span class="keyword">const</span> QStringList &amp;arguments, QString *error_message);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">extensionsInitialized</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_i_p_connection.html">IPConnection</a> *m_connection;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // IPconnectionPLUGIN_H</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_i_p_connection.html">IPConnection</a> *m_connection;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // IPconnectionPLUGIN_H</span></div>
 <div class="ttc" id="group___core_plugin_html_ga9fa3de80c2899c62813961082ad48e95"><div class="ttname"><a href="group___core_plugin.html#ga9fa3de80c2899c62813961082ad48e95">Core::IConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(IDevice *device)=0</div></div>
 <div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00046">idevice.h:46</a></div></div>
+<div class="ttc" id="class_i_p_connection_plugin_html"><div class="ttname"><a href="class_i_p_connection_plugin.html">IPConnectionPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00084">ipconnectionplugin.h:84</a></div></div>
 <div class="ttc" id="iconnection_8h_html"><div class="ttname"><a href="iconnection_8h.html">iconnection.h</a></div></div>
 <div class="ttc" id="class_core_1_1_i_connection_html"><div class="ttname"><a href="class_core_1_1_i_connection.html">Core::IConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00044">iconnection.h:44</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a1db3a7fb242fca02229f9a3be4fd6610"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">ExtensionSystem::IPlugin::extensionsInitialized</a></div><div class="ttdeci">virtual void extensionsInitialized()=0</div></div>
 <div class="ttc" id="group___core_plugin_html_ga5264be67cf0d9ca62aae564737389b1d"><div class="ttname"><a href="group___core_plugin.html#ga5264be67cf0d9ca62aae564737389b1d">Core::IConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00061">iconnection.h:61</a></div></div>
-<div class="ttc" id="class_i_pconnection_options_page_html"><div class="ttname"><a href="class_i_pconnection_options_page.html">IPconnectionOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionoptionspage_8h_source.html#l00044">ipconnectionoptionspage.h:44</a></div></div>
-<div class="ttc" id="class_i_pconnection_configuration_html"><div class="ttname"><a href="class_i_pconnection_configuration.html">IPconnectionConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00036">ipconnectionconfiguration.h:36</a></div></div>
+<div class="ttc" id="class_i_p_connection_configuration_html"><div class="ttname"><a href="class_i_p_connection_configuration.html">IPConnectionConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00038">ipconnectionconfiguration.h:38</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2766d577d1343dfbd7f41859363cad29"><div class="ttname"><a href="group___core_plugin.html#ga2766d577d1343dfbd7f41859363cad29">Core::IConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; IDevice * &gt; availableDevices()=0</div></div>
 <div class="ttc" id="group___core_plugin_html_ga65bb74489e016d9863f42f0bb87afd8c"><div class="ttname"><a href="group___core_plugin.html#ga65bb74489e016d9863f42f0bb87afd8c">Core::IConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()=0</div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga0e2cb89e71a2cb233e3b6638febf6c22"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga0e2cb89e71a2cb233e3b6638febf6c22">IPConnection::Config</a></div><div class="ttdeci">IPconnectionConfiguration * Config() const </div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00069">ipconnectionplugin.h:69</a></div></div>
+<div class="ttc" id="class_i_p_connection_options_page_html"><div class="ttname"><a href="class_i_p_connection_options_page.html">IPConnectionOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionoptionspage_8h_source.html#l00050">ipconnectionoptionspage.h:50</a></div></div>
 <div class="ttc" id="ipdevice_8h_html"><div class="ttname"><a href="ipdevice_8h.html">ipdevice.h</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_gab63780b114a985fc71a96c8ac14c162d"><div class="ttname"><a href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">IPConnection::optionsPage</a></div><div class="ttdeci">IPConnectionOptionsPage * optionsPage() const </div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00069">ipconnectionplugin.h:69</a></div></div>
 <div class="ttc" id="ipconnectionconfiguration_8h_html"><div class="ttname"><a href="ipconnectionconfiguration_8h.html">ipconnectionconfiguration.h</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga83ce2919b33dfc17928e21fb2af08ed6"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">IPConnection::Optionspage</a></div><div class="ttdeci">IPconnectionOptionsPage * Optionspage() const </div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00070">ipconnectionplugin.h:70</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a9f3dc957317279daed393fdf4894e944"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">ExtensionSystem::IPlugin::initialize</a></div><div class="ttdeci">virtual bool initialize(const QStringList &amp;arguments, QString *errorString)=0</div></div>
 <div class="ttc" id="ipconnectionoptionspage_8h_html"><div class="ttname"><a href="ipconnectionoptionspage_8h.html">ipconnectionoptionspage.h</a></div></div>
 <div class="ttc" id="class_i_p_connection_html"><div class="ttname"><a href="class_i_p_connection.html">IPConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00054">ipconnectionplugin.h:54</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; Core::IDevice * &gt;</a></div></div>
 <div class="ttc" id="iplugin_8h_html"><div class="ttname"><a href="iplugin_8h.html">iplugin.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gad436df0a83378128cb8034d83e6734f0"><div class="ttname"><a href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
 <div class="ttc" id="ipconnection__global_8h_html"><div class="ttname"><a href="ipconnection__global_8h.html">ipconnection_global.h</a></div></div>
-<div class="ttc" id="class_i_pconnection_plugin_html"><div class="ttname"><a href="class_i_pconnection_plugin.html">IPconnectionPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00087">ipconnectionplugin.h:87</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a></div><div class="ttdoc">Base class for all plugins. </div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8h_source.html#l00045">iplugin.h:45</a></div></div>
-<div class="ttc" id="class_i_p_device_html"><div class="ttname"><a href="class_i_p_device.html">IPDevice</a></div><div class="ttdoc">The IPDevice class. </div><div class="ttdef"><b>Definition:</b> <a href="ipdevice_8h_source.html#l00037">ipdevice.h:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

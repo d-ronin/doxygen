@@ -58,6 +58,7 @@ var hierarchy =
     [ "mapcontrol::Helper", "classmapcontrol_1_1_helper.html", null ],
     [ "HitlNoiseGeneration", "class_hitl_noise_generation.html", null ],
     [ "Utils::HomeLocationUtil", "class_utils_1_1_home_location_util.html", null ],
+    [ "IPConnectionConfiguration::Host", "struct_i_p_connection_configuration_1_1_host.html", null ],
     [ "Utils::HostOsInfo", "class_utils_1_1_host_os_info.html", null ],
     [ "ExtensionSystem::Internal::IPluginPrivate", "class_extension_system_1_1_internal_1_1_i_plugin_private.html", null ],
     [ "core::KiberTileCache", "classcore_1_1_kiber_tile_cache.html", null ],
@@ -128,6 +129,7 @@ var hierarchy =
     ] ],
     [ "QAbstractTableModel", null, [
       [ "FlightDataModel", "class_flight_data_model.html", null ],
+      [ "IPConnectionOptionsModel", "class_i_p_connection_options_model.html", null ],
       [ "NotifyTableModel", "class_notify_table_model.html", null ]
     ] ],
     [ "QCheckBox", null, [
@@ -225,6 +227,7 @@ var hierarchy =
     [ "QList< Core::IBoardType * >", "class_q_list.html", null ],
     [ "QList< Core::IBoardType::USBInfo >", "class_q_list.html", null ],
     [ "QList< Core::IConnection * >", "class_q_list.html", null ],
+    [ "QList< Core::IDevice * >", "class_q_list.html", null ],
     [ "QList< Core::Internal::ShortcutItem * >", "class_q_list.html", null ],
     [ "QList< Core::IOptionsPage * >", "class_q_list.html", null ],
     [ "QList< Core::IUAVGadget * >", "class_q_list.html", null ],
@@ -383,7 +386,7 @@ var hierarchy =
         [ "DialGadgetOptionsPage", "class_dial_gadget_options_page.html", null ],
         [ "GCSControlGadgetOptionsPage", "class_g_c_s_control_gadget_options_page.html", null ],
         [ "HITLOptionsPage", "class_h_i_t_l_options_page.html", null ],
-        [ "IPconnectionOptionsPage", "class_i_pconnection_options_page.html", null ],
+        [ "IPConnectionOptionsPage", "class_i_p_connection_options_page.html", null ],
         [ "LineardialGadgetOptionsPage", "class_lineardial_gadget_options_page.html", null ],
         [ "ModelViewGadgetOptionsPage", "class_model_view_gadget_options_page.html", null ],
         [ "NotifyPluginOptionsPage", "class_notify_plugin_options_page.html", null ],
@@ -402,7 +405,7 @@ var hierarchy =
         [ "DialGadgetConfiguration", "class_dial_gadget_configuration.html", null ],
         [ "GCSControlGadgetConfiguration", "class_g_c_s_control_gadget_configuration.html", null ],
         [ "HITLConfiguration", "class_h_i_t_l_configuration.html", null ],
-        [ "IPconnectionConfiguration", "class_i_pconnection_configuration.html", null ],
+        [ "IPConnectionConfiguration", "class_i_p_connection_configuration.html", null ],
         [ "LineardialGadgetConfiguration", "class_lineardial_gadget_configuration.html", null ],
         [ "ModelViewGadgetConfiguration", "class_model_view_gadget_configuration.html", null ],
         [ "OPMapGadgetConfiguration", "class_o_p_map_gadget_configuration.html", null ],
@@ -470,7 +473,7 @@ var hierarchy =
         [ "GpsDisplayPlugin", "class_gps_display_plugin.html", null ],
         [ "HITLPlugin", "class_h_i_t_l_plugin.html", null ],
         [ "ImportExportPlugin", "class_import_export_plugin.html", null ],
-        [ "IPconnectionPlugin", "class_i_pconnection_plugin.html", null ],
+        [ "IPConnectionPlugin", "class_i_p_connection_plugin.html", null ],
         [ "KmlExportPlugin", "class_kml_export_plugin.html", null ],
         [ "LineardialPlugin", "class_lineardial_plugin.html", null ],
         [ "LoggingPlugin", "class_logging_plugin.html", null ],
@@ -645,6 +648,7 @@ var hierarchy =
     ] ],
     [ "QStyledItemDelegate", null, [
       [ "BrowserItemDelegate", "class_browser_item_delegate.html", null ],
+      [ "IPConnectionOptionsDelegate", "class_i_p_connection_options_delegate.html", null ],
       [ "WaypointDelegate", "class_waypoint_delegate.html", null ]
     ] ],
     [ "QTableView", null, [

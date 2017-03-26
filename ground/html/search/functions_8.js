@@ -12,7 +12,7 @@ var searchData=
   ['hasoption',['hasOption',['../group___u_a_v_objects_plugin.html#ga4cc0e3cee5960a91435eae1b41162aa4',1,'UAVObjectField']]],
   ['hasuniqueidentifier',['hasUniqueIdentifier',['../group___core_plugin.html#ga2f6cd087d32efa11b3979cf128fa1d77',1,'Core::UniqueIDManager']]],
   ['hasvalue',['HasValue',['../group___t_l_map_widget.html#ga158bba758e9847d68a36eb0efee84342',1,'internals::LoadTask::HasValue()'],['../group___t_l_map_widget.html#ga1224388bdb3b16ffe20514aa23ef0687',1,'internals::Tile::HasValue()']]],
-  ['headerdata',['headerData',['../group___notify_plugin.html#gab211bb28323ebcede08ef838bc6b2789',1,'NotifyTableModel::headerData()'],['../group___path.html#gaa4c59e9669bd77cd6475133fcf529bad',1,'FlightDataModel::headerData()'],['../group___u_a_v_object_browser_plugin.html#gaa19ce01eb026443086adfe5063bbc233',1,'UAVObjectTreeModel::headerData()']]],
+  ['headerdata',['headerData',['../group___i_p_conn_plugin.html#ga5e60b0c2b4579d62ad0416c24083ba34',1,'IPConnectionOptionsModel::headerData()'],['../group___notify_plugin.html#gab211bb28323ebcede08ef838bc6b2789',1,'NotifyTableModel::headerData()'],['../group___path.html#gaa4c59e9669bd77cd6475133fcf529bad',1,'FlightDataModel::headerData()'],['../group___u_a_v_object_browser_plugin.html#gaa19ce01eb026443086adfe5063bbc233',1,'UAVObjectTreeModel::headerData()']]],
   ['height',['Height',['../group___t_l_map_widget.html#ga9c12f3b98a93a81fab566f35d93c7d20',1,'core::Size::Height()'],['../group___t_l_map_widget.html#gaef58ba0ac7584cbe21ca8e4763187ffc',1,'internals::Rectangle::Height()']]],
   ['heightlat',['HeightLat',['../group___t_l_map_widget.html#gac283a070480139930c4a667981e4a0d4',1,'internals::RectLatLng::HeightLat()'],['../group___t_l_map_widget.html#ga54840364c05e0258bc30df133bd36107',1,'internals::SizeLatLng::HeightLat()']]],
   ['helipage',['HeliPage',['../group___setup_wizard.html#ga894cc849703e9f7ead7dc27b2107c325',1,'HeliPage']]],
@@ -38,7 +38,8 @@ var searchData=
   ['homelocationutil',['HomeLocationUtil',['../class_utils_1_1_home_location_util.html#a1e71c83ea9a9ea006277d6e484fc4b48',1,'Utils::HomeLocationUtil']]],
   ['homepositionupdated',['homePositionUpdated',['../group___o_p_map_plugin.html#gae67526d9495209b93360c1fae84e3d47',1,'OPMapGadgetWidget']]],
   ['horizontalgradient',['horizontalGradient',['../class_utils_1_1_style_helper.html#abd442ffaf7f2186cf054efe4264df1c1',1,'Utils::StyleHelper']]],
+  ['host',['host',['../group___core_plugin.html#ga03eaeaffeb6292cd5ff8687cb9ce1769',1,'IPDevice']]],
   ['hostarchitecture',['hostArchitecture',['../class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b',1,'Utils::HostOsInfo']]],
-  ['hostname',['HostName',['../group___i_p_conn_plugin.html#gad855d70f2d3eee8910ee94c261e9f3cb',1,'IPconnectionConfiguration']]],
-  ['hostos',['hostOs',['../class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342',1,'Utils::HostOsInfo']]]
+  ['hostos',['hostOs',['../class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342',1,'Utils::HostOsInfo']]],
+  ['hosts',['hosts',['../group___i_p_conn_plugin.html#ga1ffd61449e355059fe7b564549f3a99a',1,'IPConnectionConfiguration::hosts()'],['../group___i_p_conn_plugin.html#gae63f31984e3308566546eeb0720242a5',1,'IPConnectionOptionsModel::hosts()']]]
 ];

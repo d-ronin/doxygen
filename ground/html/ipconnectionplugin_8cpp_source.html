@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">12a6538</span>
+   &#160;<span id="projectnumber">cdcfcb6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -151,10 +151,10 @@ $(document).ready(function(){initNavTree('ipconnectionplugin_8cpp_source.html','
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ipSocket = NULL;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//create all our objects</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_config = <span class="keyword">new</span> <a class="code" href="class_i_pconnection_configuration.html">IPconnectionConfiguration</a>(<span class="stringliteral">&quot;IP Network Telemetry&quot;</span>, NULL, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#gabd3e5ffc6975c4ef5389faaf21fb55c0">restoresettings</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_config = <span class="keyword">new</span> <a class="code" href="class_i_p_connection_configuration.html">IPConnectionConfiguration</a>(<span class="stringliteral">&quot;IP Network Telemetry&quot;</span>, NULL, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga4675ddbf35bc79afa29274971381c183">readConfig</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_optionspage = <span class="keyword">new</span> <a class="code" href="class_i_pconnection_options_page.html">IPconnectionOptionsPage</a>(m_config,<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_optionspage = <span class="keyword">new</span> <a class="code" href="class_i_p_connection_options_page.html">IPConnectionOptionsPage</a>(m_config,<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//just signal whenever we have a device event...</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QMainWindow *mw = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga7bd137564271d03a3db75c0c71b99ea8">mainWindow</a>();</div>
@@ -177,175 +177,179 @@ $(document).ready(function(){initNavTree('ipconnectionplugin_8cpp_source.html','
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    emit <a class="code" href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">availableDevChanged</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">   81</a></span>&#160;<a class="code" href="class_q_list.html">QList&lt;IDevice *&gt;</a> <a class="code" href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">IPConnection::availableDevices</a>()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_q_list.html">QList &lt;Core::IDevice*&gt;</a> list;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#gaa540a20af79b7ec845405fb81a75dd82">HostName</a>().length()&gt;1)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        dev.<a class="code" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">setDisplayName</a>(m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#gaa540a20af79b7ec845405fb81a75dd82">HostName</a>());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        dev.<a class="code" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">setDisplayName</a>(<span class="stringliteral">&quot;Unconfigured&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    dev.<a class="code" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">setName</a>(m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#gaa540a20af79b7ec845405fb81a75dd82">HostName</a>());</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//we only have one &quot;device&quot; as defined by the configuration m_config</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    list.append(&amp;dev);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> list;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">IPConnection::openDevice</a>(QString HostName, <span class="keywordtype">int</span> Port, <span class="keywordtype">bool</span> UseTCP)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> Timeout = 5 * 1000;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (UseTCP) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        ipSocket = <span class="keyword">new</span> QTcpSocket(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        ipSocket = <span class="keyword">new</span> QUdpSocket(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">   79</a></span>&#160;<a class="code" href="class_q_list.html">QList&lt;IDevice *&gt;</a> <a class="code" href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">IPConnection::availableDevices</a>()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;newHosts = m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga1ffd61449e355059fe7b564549f3a99a">hosts</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// add new devices</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;host : newHosts) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> dev : devices) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> (static_cast&lt;const IPDevice *&gt;(dev)-&gt;host() == host) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (!found) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">auto</span> dev = <span class="keyword">new</span> <a class="code" href="class_i_p_device.html">IPDevice</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            QString name = QString(<span class="stringliteral">&quot;%0://%1:%2&quot;</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    .arg(host.protocol == <a class="code" href="group___i_p_conn_plugin.html#ggac5766cf7f0c2840b2762422b37cafa88a0e299c60e68fe6166492fbc0f4111f8e">IPConnectionConfiguration::ProtocolTcp</a> ? <span class="stringliteral">&quot;tcp&quot;</span> : <span class="stringliteral">&quot;udp&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    .arg(host.hostname)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    .arg(host.port);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            dev-&gt;setDisplayName(name);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            dev-&gt;setName(name);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            dev-&gt;setHost(host);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            devices.append(dev);  <span class="comment">// TODO: memory leak, seems like an awkward interface..?</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// Disable Nagle algorithm to try and get data promptly rather than</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// minimize packets.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    ipSocket-&gt;setSocketOption(QAbstractSocket::LowDelayOption, 1);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Allow reuse of ports, so if we&#39;re running the simulator and GCS on</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// the same host, and simulator crashes leaving ports in FIN_WAIT, we</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// can restart simulator immediately.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    ipSocket-&gt;bind(0, QAbstractSocket::ShareAddress);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//do sanity check on hostname and port...</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span>((HostName.length()==0)||(Port&lt;1)){</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        errorMsg = <span class="stringliteral">&quot;Please configure Host and Port options before opening the connection&quot;</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// clear out removed devices</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; devices.length(); ) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (!newHosts.contains(static_cast&lt;const IPDevice *&gt;(devices.at(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>))-&gt;host())) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            devices.at(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>)-&gt;deleteLater();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            devices.removeAt(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> devices;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">//try to connect...</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        ipSocket-&gt;connectToHost(HostName, Port);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">//in blocking mode so we wait for the connection to succeed</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">if</span> (ipSocket-&gt;waitForConnected(Timeout)) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// tell user what went wrong</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        errorMsg = ipSocket-&gt;errorString ();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">delete</span> ipSocket;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">  118</a></span>&#160;QIODevice *<a class="code" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">IPConnection::openDevice</a>(<a class="code" href="class_core_1_1_i_device.html">Core::IDevice</a> *device)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">auto</span> *dev = qobject_cast&lt;<a class="code" href="class_i_p_device.html">IPDevice</a> *&gt;(device);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (!dev)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> timeout = 5 * 1000;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (dev-&gt;host().protocol == <a class="code" href="group___i_p_conn_plugin.html#ggac5766cf7f0c2840b2762422b37cafa88a0e299c60e68fe6166492fbc0f4111f8e">IPConnectionConfiguration::ProtocolTcp</a>) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        ipSocket = <span class="keyword">new</span> QTcpSocket(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        ipSocket = <span class="keyword">new</span> QUdpSocket(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        ipSocket = NULL;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// Disable Nagle algorithm to try and get data promptly rather than</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// minimize packets.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ipSocket-&gt;setSocketOption(QAbstractSocket::LowDelayOption, 1);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">  136</a></span>&#160;QIODevice *<a class="code" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">IPConnection::openDevice</a>(<a class="code" href="class_core_1_1_i_device.html">Core::IDevice</a> *deviceName)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    Q_UNUSED(deviceName)</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    QString HostName;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">int</span> Port;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> UseTCP;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QMessageBox msgBox;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">//get the configuration info</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    HostName = m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#gaa540a20af79b7ec845405fb81a75dd82">HostName</a>();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    Port = m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga016b44f60ba95951cdf428d88a119a97">Port</a>();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    UseTCP = m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga40b7a131ca4ee4e1c315a0fc12281da8">UseTCP</a>();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> (ipSocket){</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        ipSocket-&gt;close();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">delete</span> ipSocket;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        ipSocket = NULL;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Allow reuse of ports, so if we&#39;re running the simulator and GCS on</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// the same host, and simulator crashes leaving ports in FIN_WAIT, we</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// can restart simulator immediately.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    ipSocket-&gt;bind(0, QAbstractSocket::ShareAddress);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//do sanity check on hostname and port...</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span> (!dev-&gt;host().hostname.length() || dev-&gt;host().port &lt; 1 || dev-&gt;host().port &gt; 65535){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        errorMsg = tr(<span class="stringliteral">&quot;Please configure host and port options before opening the connection&quot;</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// try to connect...</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        ipSocket-&gt;connectToHost(dev-&gt;host().hostname, <span class="keyword">static_cast&lt;</span>quint16<span class="keyword">&gt;</span>(dev-&gt;host().port));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// in blocking mode so we wait for the connection to succeed</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (ipSocket-&gt;waitForConnected(timeout)) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">return</span> ipSocket;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="comment">// tell user what went wrong</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        errorMsg = ipSocket-&gt;errorString();</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">openDevice</a>(HostName, Port, UseTCP);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span>(ipSocket == NULL)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        msgBox.setText((<span class="keyword">const</span> QString )errorMsg);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> ipSocket;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">  167</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">IPConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (ipSocket){</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        ipSocket-&gt;close();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">delete</span> ipSocket;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        ipSocket = NULL;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">delete</span> ipSocket;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        ipSocket = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;Connection Failed&quot;</span>), errorMsg);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">  166</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">IPConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (ipSocket){</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        ipSocket-&gt;close();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">delete</span> ipSocket;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        ipSocket = NULL;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">  177</a></span>&#160;QString <a class="code" href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">IPConnection::connectionName</a>()</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Network telemetry port&quot;</span>);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">  182</a></span>&#160;QString <a class="code" href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">IPConnection::shortName</a>()</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (m_config-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga40b7a131ca4ee4e1c315a0fc12281da8">UseTCP</a>()) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;TCP&quot;</span>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;UDP&quot;</span>);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">  176</a></span>&#160;QString <a class="code" href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">IPConnection::connectionName</a>()</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Network telemetry port&quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">  181</a></span>&#160;QString <a class="code" href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">IPConnection::shortName</a>()</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> tr(<span class="stringliteral">&quot;IP&quot;</span>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;IPConnectionPlugin::IPConnectionPlugin()</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{<span class="comment">//no change from serial plugin</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;IPconnectionPlugin::IPconnectionPlugin()</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{<span class="comment">//no change from serial plugin</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;IPConnectionPlugin::~IPConnectionPlugin()</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{<span class="comment">//manually remove the options page object</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">removeObject</a>(m_connection-&gt;<a class="code" href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">optionsPage</a>());</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;IPconnectionPlugin::~IPconnectionPlugin()</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{<span class="comment">//manually remove the options page object</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">removeObject</a>(m_connection-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">Optionspage</a>());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keywordtype">void</span> IPConnectionPlugin::extensionsInitialized()</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(m_connection);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span> IPconnectionPlugin::extensionsInitialized()</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">bool</span> IPConnectionPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(m_connection);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordtype">bool</span> IPconnectionPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    Q_UNUSED(arguments);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    Q_UNUSED(errorString);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    m_connection = <span class="keyword">new</span> <a class="code" href="class_i_p_connection.html">IPConnection</a>();</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">//must manage this registration of child object ourselves</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">//if we use an autorelease here it causes the GCS to crash</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">//as it is deleting objects as the app closes...</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">addObject</a>(m_connection-&gt;<a class="code" href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">Optionspage</a>());</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    Q_UNUSED(arguments);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    Q_UNUSED(errorString);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    m_connection = <span class="keyword">new</span> <a class="code" href="class_i_p_connection.html">IPConnection</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">//must manage this registration of child object ourselves</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">//if we use an autorelease here it causes the GCS to crash</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">//as it is deleting objects as the app closes...</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">addObject</a>(m_connection-&gt;<a class="code" href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">optionsPage</a>());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">/*void IPConnectionPlugin::readConfig(QSettings *settings, Core::UAVConfigInfo *configInfo)</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">void IPConnectionPlugin::saveConfig(QSettings *settings, Core::UAVConfigInfo *configInfo)</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">}*/</span></div>
 <div class="ttc" id="group___core_plugin_html_ga79b76e167c73d83f42b79f51f66a9c38"><div class="ttname"><a href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">Core::IConnection::availableDevChanged</a></div><div class="ttdeci">void availableDevChanged(IConnection *)</div></div>
 <div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00046">idevice.h:46</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga40b7a131ca4ee4e1c315a0fc12281da8"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga40b7a131ca4ee4e1c315a0fc12281da8">IPconnectionConfiguration::UseTCP</a></div><div class="ttdeci">int UseTCP</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00041">ipconnectionconfiguration.h:41</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_ga1ffd61449e355059fe7b564549f3a99a"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga1ffd61449e355059fe7b564549f3a99a">IPConnectionConfiguration::hosts</a></div><div class="ttdeci">QVector&lt; Host &gt; &amp; hosts()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00067">ipconnectionconfiguration.h:67</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a839e08a78deb150b1148ce10d099067b"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">ExtensionSystem::IPlugin::addObject</a></div><div class="ttdeci">void addObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00291">iplugin.cpp:291</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_ga4675ddbf35bc79afa29274971381c183"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga4675ddbf35bc79afa29274971381c183">IPConnectionConfiguration::readConfig</a></div><div class="ttdeci">void readConfig()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8cpp_source.html#l00071">ipconnectionconfiguration.cpp:71</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___i_p_conn_plugin_html_gac4a01575ebaba4981acc06db6219d0cf"><div class="ttname"><a href="group___i_p_conn_plugin.html#gac4a01575ebaba4981acc06db6219d0cf">IPConnection::~IPConnection</a></div><div class="ttdeci">virtual ~IPConnection()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00066">ipconnectionplugin.cpp:66</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_gaa540a20af79b7ec845405fb81a75dd82"><div class="ttname"><a href="group___i_p_conn_plugin.html#gaa540a20af79b7ec845405fb81a75dd82">IPconnectionConfiguration::HostName</a></div><div class="ttdeci">QString HostName</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00039">ipconnectionconfiguration.h:39</a></div></div>
 <div class="ttc" id="group___i_p_conn_plugin_html_ga9c710379a7f4a05bc733c4bf86e1129c"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga9c710379a7f4a05bc733c4bf86e1129c">IPConnection::IPConnection</a></div><div class="ttdeci">IPConnection()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00049">ipconnectionplugin.cpp:49</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00053">idevice.h:53</a></div></div>
 <div class="ttc" id="group___i_p_conn_plugin_html_ga47d163699366c4d5376336f9b0524c37"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga47d163699366c4d5376336f9b0524c37">IPConnection::onEnumerationChanged</a></div><div class="ttdeci">void onEnumerationChanged()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00074">ipconnectionplugin.cpp:74</a></div></div>
-<div class="ttc" id="class_i_pconnection_options_page_html"><div class="ttname"><a href="class_i_pconnection_options_page.html">IPconnectionOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionoptionspage_8h_source.html#l00044">ipconnectionoptionspage.h:44</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_gabd3e5ffc6975c4ef5389faaf21fb55c0"><div class="ttname"><a href="group___i_p_conn_plugin.html#gabd3e5ffc6975c4ef5389faaf21fb55c0">IPconnectionConfiguration::restoresettings</a></div><div class="ttdeci">void restoresettings()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8cpp_source.html#l00078">ipconnectionconfiguration.cpp:78</a></div></div>
-<div class="ttc" id="class_i_pconnection_configuration_html"><div class="ttname"><a href="class_i_pconnection_configuration.html">IPconnectionConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00036">ipconnectionconfiguration.h:36</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga67dbe0033ff9c0e5cfd350372beb31ff"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">IPConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(Core::IDevice *deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00136">ipconnectionplugin.cpp:136</a></div></div>
+<div class="ttc" id="class_i_p_connection_configuration_html"><div class="ttname"><a href="class_i_p_connection_configuration.html">IPConnectionConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00038">ipconnectionconfiguration.h:38</a></div></div>
+<div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_ga67dbe0033ff9c0e5cfd350372beb31ff"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff">IPConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(Core::IDevice *deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00118">ipconnectionplugin.cpp:118</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga1fddc0c0122f88fbdc9402aebcfa3454"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">IPConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; Core::IDevice * &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00081">ipconnectionplugin.cpp:81</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_gabac2c37830add42060f442679d8bc001"><div class="ttname"><a href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">IPConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00182">ipconnectionplugin.cpp:182</a></div></div>
+<div class="ttc" id="class_i_p_connection_options_page_html"><div class="ttname"><a href="class_i_p_connection_options_page.html">IPConnectionOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionoptionspage_8h_source.html#l00050">ipconnectionoptionspage.h:50</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_ga1fddc0c0122f88fbdc9402aebcfa3454"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454">IPConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; Core::IDevice * &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00079">ipconnectionplugin.cpp:79</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_gabac2c37830add42060f442679d8bc001"><div class="ttname"><a href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">IPConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00181">ipconnectionplugin.cpp:181</a></div></div>
 <div class="ttc" id="ipconnectionplugin_8h_html"><div class="ttname"><a href="ipconnectionplugin_8h.html">ipconnectionplugin.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00055">idevice.h:55</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga7bd137564271d03a3db75c0c71b99ea8"><div class="ttname"><a href="group___core_plugin.html#ga7bd137564271d03a3db75c0c71b99ea8">Core::ICore::mainWindow</a></div><div class="ttdeci">virtual QMainWindow * mainWindow() const =0</div><div class="ttdoc">Returns the main application window. </div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_gab63780b114a985fc71a96c8ac14c162d"><div class="ttname"><a href="group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d">IPConnection::optionsPage</a></div><div class="ttdeci">IPConnectionOptionsPage * optionsPage() const </div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00069">ipconnectionplugin.h:69</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00048">coreimpl.cpp:48</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga83ce2919b33dfc17928e21fb2af08ed6"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga83ce2919b33dfc17928e21fb2af08ed6">IPConnection::Optionspage</a></div><div class="ttdeci">IPconnectionOptionsPage * Optionspage() const </div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00070">ipconnectionplugin.h:70</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_ggac5766cf7f0c2840b2762422b37cafa88a0e299c60e68fe6166492fbc0f4111f8e"><div class="ttname"><a href="group___i_p_conn_plugin.html#ggac5766cf7f0c2840b2762422b37cafa88a0e299c60e68fe6166492fbc0f4111f8e">IPConnectionConfiguration::ProtocolTcp</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00051">ipconnectionconfiguration.h:51</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a7f5bee6ed07af7f475b8b2c55c0d8ed4"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">ExtensionSystem::IPlugin::removeObject</a></div><div class="ttdeci">void removeObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00317">iplugin.cpp:317</a></div></div>
 <div class="ttc" id="class_i_p_connection_html"><div class="ttname"><a href="class_i_p_connection.html">IPConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8h_source.html#l00054">ipconnectionplugin.h:54</a></div></div>
 <div class="ttc" id="group___i_p_conn_plugin_html_ga75cb9b33b52928c030806876f2c2f439"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga75cb9b33b52928c030806876f2c2f439">connection</a></div><div class="ttdeci">IPConnection * connection</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00047">ipconnectionplugin.cpp:47</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_gad141808569c11483f80fe88aba1acd07"><div class="ttname"><a href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">IPConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00167">ipconnectionplugin.cpp:167</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_gad141808569c11483f80fe88aba1acd07"><div class="ttname"><a href="group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07">IPConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00166">ipconnectionplugin.cpp:166</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_af2782659463bdc328aef58f896ae3921"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">ExtensionSystem::IPlugin::addAutoReleasedObject</a></div><div class="ttdeci">void addAutoReleasedObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00306">iplugin.cpp:306</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_ga016b44f60ba95951cdf428d88a119a97"><div class="ttname"><a href="group___i_p_conn_plugin.html#ga016b44f60ba95951cdf428d88a119a97">IPconnectionConfiguration::Port</a></div><div class="ttdeci">int Port</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionconfiguration_8h_source.html#l00040">ipconnectionconfiguration.h:40</a></div></div>
-<div class="ttc" id="group___i_p_conn_plugin_html_gaededdbd9e8bece7b50ea742a592a6f10"><div class="ttname"><a href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">IPConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00177">ipconnectionplugin.cpp:177</a></div></div>
+<div class="ttc" id="class_i_p_device_html"><div class="ttname"><a href="class_i_p_device.html">IPDevice</a></div><div class="ttdoc">The IPDevice class. </div><div class="ttdef"><b>Definition:</b> <a href="ipdevice_8h_source.html#l00038">ipdevice.h:38</a></div></div>
+<div class="ttc" id="group___i_p_conn_plugin_html_gaededdbd9e8bece7b50ea742a592a6f10"><div class="ttname"><a href="group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10">IPConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="ipconnectionplugin_8cpp_source.html#l00176">ipconnectionplugin.cpp:176</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

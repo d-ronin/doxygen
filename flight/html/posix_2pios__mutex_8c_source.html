@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">12a6538</span>
+   &#160;<span id="projectnumber">cdcfcb6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('posix_2pios__mutex_8c_source.html','')
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span>                <span class="keyword">struct </span>timespec abstime;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                clock_gettime(CLOCK_REALTIME, &amp;abstime);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <a class="code" href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a>(<a class="code" href="pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af">CLOCK_REALTIME</a>, &amp;abstime);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                abstime.tv_nsec += (timeout_ms % 1000) * 1000000;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                abstime.tv_sec += timeout_ms / 1000;</div>
@@ -248,6 +248,7 @@ $(document).ready(function(){initNavTree('posix_2pios__mutex_8c_source.html','')
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a>(&amp;mtx-&gt;<a class="code" href="structpios__recursive__mutex.html#a200855903286b62f64a45fd445f52799">mutex</a>);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="ttc" id="pios__posix_8h_html_a4c144c721b7558fcea0a0b9920246fda"><div class="ttname"><a href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a></div><div class="ttdeci">int clock_gettime(clockid_t clk_id, struct timespec *t)</div></div>
 <div class="ttc" id="structpios__recursive__mutex_html"><div class="ttname"><a href="structpios__recursive__mutex.html">pios_recursive_mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00038">pios_mutex.c:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga797ea008335af18d3a3c90b627630654"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Mutex_Unlock(struct pios_mutex *mtx)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00104">pios_mutex.c:104</a></div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga08da531ac19ae51b91eed114c6e04526"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a></div><div class="ttdeci">struct pios_mutex * PIOS_Mutex_Create(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00043">pios_mutex.c:43</a></div></div>
@@ -255,6 +256,7 @@ $(document).ready(function(){initNavTree('posix_2pios__mutex_8c_source.html','')
 <div class="ttc" id="structpios__mutex_html_ab3bba20733c356cab33de69e28e605c9"><div class="ttname"><a href="structpios__mutex.html#ab3bba20733c356cab33de69e28e605c9">pios_mutex::mutex</a></div><div class="ttdeci">pthread_mutex_t mutex</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00035">pios_mutex.c:35</a></div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga5577c48d192d47f0b1959d1b89bbee1a"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga5577c48d192d47f0b1959d1b89bbee1a">PIOS_Recursive_Mutex_Lock</a></div><div class="ttdeci">bool PIOS_Recursive_Mutex_Lock(struct pios_recursive_mutex *mtx, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00139">pios_mutex.c:139</a></div></div>
 <div class="ttc" id="structpios__recursive__mutex_html_a200855903286b62f64a45fd445f52799"><div class="ttname"><a href="structpios__recursive__mutex.html#a200855903286b62f64a45fd445f52799">pios_recursive_mutex::mutex</a></div><div class="ttdeci">struct pios_mutex mutex</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00040">pios_mutex.c:40</a></div></div>
+<div class="ttc" id="pios__posix_8h_html_a922ce1ae64374c9410c8a999e25e82af"><div class="ttname"><a href="pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af">CLOCK_REALTIME</a></div><div class="ttdeci">#define CLOCK_REALTIME</div><div class="ttdef"><b>Definition:</b> <a href="pios__posix_8h_source.html#l00057">pios_posix.h:57</a></div></div>
 <div class="ttc" id="pios__mutex_8h_html"><div class="ttname"><a href="pios__mutex_8h.html">pios_mutex.h</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00049">pios_debug.h:49</a></div></div>

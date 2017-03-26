@@ -213,6 +213,7 @@ var searchData=
   ['drawbox',['drawBox',['../group___on_screen_display.html#gae399f433b1adebe10b6108074e73ee59',1,'osd_utils.c']]],
   ['driver',['driver',['../structpios__adc__dev.html#a6ea4961bb3ffb6cc6806ec80c53237a4',1,'pios_adc_dev::driver()'],['../group___p_i_o_s___f_l_a_s_h.html#ga113d5f9837c72cd491b57bec7a80380f',1,'pios_flash_chip::driver()']]],
   ['dronin_2dstrsep_2eh',['dronin-strsep.h',['../dronin-strsep_8h.html',1,'']]],
+  ['dronin_5fgettime',['DRONIN_GETTIME',['../pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d',1,'pios_posix.h']]],
   ['dry_5fair_5fconstant',['dry_air_constant',['../group___miscellaneous_math.html#ga8bdf11feec806ff62759cc7955a0a66a',1,'AirParameters']]],
   ['ds_5fgpio_5fnumvals',['DS_GPIO_NUMVALS',['../group___p_i_o_s___s_e_r_v_o.html#ga9db208782af9d5e06c3b46aa1e41fcba',1,'pios_servo.c']]],
   ['ds_5fgpioa',['DS_GPIOA',['../group___p_i_o_s___s_e_r_v_o.html#ga716fdd607f75df20fc2d36325de9c389',1,'pios_servo.c']]],

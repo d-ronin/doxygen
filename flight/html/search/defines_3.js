@@ -13,6 +13,8 @@ var searchData=
   ['cdl_5fprepend',['CDL_PREPEND',['../utlist_8h.html#a6c6a7232d281eab4b18563b92e5653bd',1,'utlist.h']]],
   ['cdl_5fsort',['CDL_SORT',['../utlist_8h.html#a13add78e5524efe1ae6bfb1631b2dc17',1,'utlist.h']]],
   ['clear_5fbits',['CLEAR_BITS',['../_s_t_m32_2pios__servo_8c.html#acca7b35dd8aa0d166eaadb28cb878efb',1,'pios_servo.c']]],
+  ['clock_5fmonotonic',['CLOCK_MONOTONIC',['../pios__posix_8h.html#a6fb83f5e91e704391ff796553d5e0f46',1,'pios_posix.h']]],
+  ['clock_5frealtime',['CLOCK_REALTIME',['../pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af',1,'pios_posix.h']]],
   ['comp1_5f2_5f3_5firqhandler',['COMP1_2_3_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a5f844a361c94396f89bed2dae498e2f7',1,'pios_chibios_transition_priv.h']]],
   ['comp4_5f5_5f6_5firqhandler',['COMP4_5_6_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a14fb16f687236c66ba6e6263ba776135',1,'pios_chibios_transition_priv.h']]],
   ['comp7_5firqhandler',['COMP7_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a98844af0fea1f761a3473e4d73f3db6d',1,'pios_chibios_transition_priv.h']]],

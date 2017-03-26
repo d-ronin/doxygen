@@ -16,6 +16,7 @@ var searchData=
   ['qlist_3c_20core_3a_3aiboardtype_20_2a_20_3e',['QList&lt; Core::IBoardType * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aiboardtype_3a_3ausbinfo_20_3e',['QList&lt; Core::IBoardType::USBInfo &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aiconnection_20_2a_20_3e',['QList&lt; Core::IConnection * &gt;',['../class_q_list.html',1,'']]],
+  ['qlist_3c_20core_3a_3aidevice_20_2a_20_3e',['QList&lt; Core::IDevice * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3ainternal_3a_3ashortcutitem_20_2a_20_3e',['QList&lt; Core::Internal::ShortcutItem * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aioptionspage_20_2a_20_3e',['QList&lt; Core::IOptionsPage * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20core_3a_3aiuavgadget_20_2a_20_3e',['QList&lt; Core::IUAVGadget * &gt;',['../class_q_list.html',1,'']]],

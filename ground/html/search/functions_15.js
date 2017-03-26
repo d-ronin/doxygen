@@ -67,7 +67,7 @@ var searchData=
   ['updated',['updated',['../group___u_a_v_objects_plugin.html#ga295ff9d6b0c01a6a8809a4cf9eb027cc',1,'UAVObject']]],
   ['updatedesiredindicator',['updateDesiredIndicator',['../group___g_c_s_control_gadget_plugin.html#gaf3402b55a7601e5b8b3346b40b0f0df7',1,'PositionField']]],
   ['updatedonly',['updatedOnly',['../group___u_a_v_object_browser_plugin.html#gae407428df05b1f28bcb6e8bf2cd86b73',1,'TreeItem']]],
-  ['updateeditorgeometry',['updateEditorGeometry',['../group___config_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb',1,'SpinBoxDelegate::updateEditorGeometry()'],['../group___config_plugin.html#gaa8fa5b648a223ce46e7ede0d8d2374c1',1,'DoubleSpinDelegate::updateEditorGeometry()'],['../group___path_planner.html#ga19057f741d6491a3911c76e747a3479f',1,'WaypointDelegate::updateEditorGeometry()'],['../group___telemetry_scheduler_gadget_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb',1,'SpinBoxDelegate::updateEditorGeometry()'],['../group___u_a_v_object_browser_plugin.html#gaf2e600876c101b4bf562057c6aeeade1',1,'BrowserItemDelegate::updateEditorGeometry()']]],
+  ['updateeditorgeometry',['updateEditorGeometry',['../group___config_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb',1,'SpinBoxDelegate::updateEditorGeometry()'],['../group___config_plugin.html#gaa8fa5b648a223ce46e7ede0d8d2374c1',1,'DoubleSpinDelegate::updateEditorGeometry()'],['../group___i_p_conn_plugin.html#ga2f4aa5071a3cc3adebd6b5ed34b568fe',1,'IPConnectionOptionsDelegate::updateEditorGeometry()'],['../group___path_planner.html#ga19057f741d6491a3911c76e747a3479f',1,'WaypointDelegate::updateEditorGeometry()'],['../group___telemetry_scheduler_gadget_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb',1,'SpinBoxDelegate::updateEditorGeometry()'],['../group___u_a_v_object_browser_plugin.html#gaf2e600876c101b4bf562057c6aeeade1',1,'BrowserItemDelegate::updateEditorGeometry()']]],
   ['updategps',['updateGPS',['../group___g_p_s_gadget_plugin.html#ga9b1c1509701c154ad1c3cdeef0cb522b',1,'TelemetryParser']]],
   ['updategroundresolution',['UpdateGroundResolution',['../group___t_l_map_widget.html#gaafdb82148ca58b162ba477a8e1d520c1',1,'internals::Core']]],
   ['updatehighlight',['updateHighlight',['../group___u_a_v_object_browser_plugin.html#gab8702d2046500fbe3dd7cee66ebcda70',1,'TreeItem']]],
@@ -116,7 +116,6 @@ var searchData=
   ['usememorycache',['UseMemoryCache',['../group___t_l_map_widget.html#gab8af0f7ff32530404f9b50649cffef1b',1,'core::TLMaps::UseMemoryCache()'],['../group___t_l_map_widget.html#ga07a1c9decb34a05e0337db285bb15bc3',1,'mapcontrol::Configuration::UseMemoryCache()'],['../group___o_p_map_plugin.html#gae363a6d1100a72e8a2089d08c192bb87',1,'OPMapGadgetConfiguration::useMemoryCache()']]],
   ['usepixmapcache',['usePixmapCache',['../class_utils_1_1_style_helper.html#a860fc9f1b97b53ba0c3eb70d457889fa',1,'Utils::StyleHelper']]],
   ['usesessionmanaging',['useSessionManaging',['../group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de',1,'Core::Internal::GeneralSettings']]],
-  ['usetcp',['UseTCP',['../group___i_p_conn_plugin.html#ga584108a558af4b69e0494772eb273f94',1,'IPconnectionConfiguration']]],
   ['useudpmirror',['useUDPMirror',['../group___core_plugin.html#ga90989a592d1a849b628a7108bf4ec9ed',1,'Core::Internal::GeneralSettings']]],
   ['usleep',['usleep',['../class_thread.html#a44676f1488d962652d36aa7dacfec50e',1,'Thread']]]
 ];
