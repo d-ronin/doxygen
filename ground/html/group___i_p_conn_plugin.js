@@ -63,11 +63,11 @@ var group___i_p_conn_plugin =
       [ "~IPConnection", "group___i_p_conn_plugin.html#gac4a01575ebaba4981acc06db6219d0cf", null ],
       [ "availableDevices", "group___i_p_conn_plugin.html#ga1fddc0c0122f88fbdc9402aebcfa3454", null ],
       [ "closeDevice", "group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07", null ],
-      [ "connectionName", "group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10", null ],
+      [ "connectionName", "group___i_p_conn_plugin.html#gad90a7dcb04fec838a129fdf7bb72872b", null ],
       [ "onEnumerationChanged", "group___i_p_conn_plugin.html#ga47d163699366c4d5376336f9b0524c37", null ],
       [ "openDevice", "group___i_p_conn_plugin.html#ga67dbe0033ff9c0e5cfd350372beb31ff", null ],
       [ "optionsPage", "group___i_p_conn_plugin.html#gab63780b114a985fc71a96c8ac14c162d", null ],
-      [ "shortName", "group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001", null ]
+      [ "shortName", "group___i_p_conn_plugin.html#gaf0f4903a9be89bac17d5836b4c81976b", null ]
     ] ],
     [ "IPConnectionPlugin", "class_i_p_connection_plugin.html", null ],
     [ "Columns", "group___i_p_conn_plugin.html#ga4529d26796dea9c2af2f62f82b63f702", [
@@ -92,7 +92,7 @@ var group___i_p_conn_plugin =
     [ "clone", "group___i_p_conn_plugin.html#ga2c0fe654660c16a7747c620190ebc8f5", null ],
     [ "closeDevice", "group___i_p_conn_plugin.html#gad141808569c11483f80fe88aba1acd07", null ],
     [ "columnCount", "group___i_p_conn_plugin.html#gac4293ee73d248f71db6d6f9eaa258f55", null ],
-    [ "connectionName", "group___i_p_conn_plugin.html#gaededdbd9e8bece7b50ea742a592a6f10", null ],
+    [ "connectionName", "group___i_p_conn_plugin.html#gad90a7dcb04fec838a129fdf7bb72872b", null ],
     [ "createEditor", "group___i_p_conn_plugin.html#gaf4bd80e194f784ef8ef6d979e0579d44", null ],
     [ "createPage", "group___i_p_conn_plugin.html#gae51519996726dab8f670a99d40620b14", null ],
     [ "data", "group___i_p_conn_plugin.html#ga2823803a9b17157330869e8a988f51e1", null ],
@@ -119,7 +119,7 @@ var group___i_p_conn_plugin =
     [ "setEditorData", "group___i_p_conn_plugin.html#ga9b7e8b16ad78d34174011377b6bd1106", null ],
     [ "setHosts", "group___i_p_conn_plugin.html#ga0bf85b53778b3dc8677bb755e8a9f622", null ],
     [ "setModelData", "group___i_p_conn_plugin.html#ga990d86171c40792a7bf293f9f3b1be1a", null ],
-    [ "shortName", "group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001", null ],
+    [ "shortName", "group___i_p_conn_plugin.html#gaf0f4903a9be89bac17d5836b4c81976b", null ],
     [ "trCategory", "group___i_p_conn_plugin.html#ga3b138c2ad6d81815999cd912ae7da091", null ],
     [ "trName", "group___i_p_conn_plugin.html#ga8b9571433dd06437f9fcc7ab01b4ecb0", null ],
     [ "updateEditorGeometry", "group___i_p_conn_plugin.html#ga2f4aa5071a3cc3adebd6b5ed34b568fe", null ],

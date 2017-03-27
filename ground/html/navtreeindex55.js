@@ -1,9 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690abdbbfac16910eb802bf70df43588787e":[6,0,0,0,0,1,45,5,1,5],
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40":[6,0,0,0,0,1,45,5,1,0],
-"uploader__global_8h_source.html":[6,0,0,0,0,1,45,5],
-"uploadergadget_8cpp.html":[6,0,0,0,0,1,45,6],
 "uploadergadget_8cpp_source.html":[6,0,0,0,0,1,45,6],
 "uploadergadget_8h.html":[6,0,0,0,0,1,45,7],
 "uploadergadget_8h_source.html":[6,0,0,0,0,1,45,7],

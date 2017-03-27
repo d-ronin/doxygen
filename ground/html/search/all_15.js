@@ -123,7 +123,7 @@ var searchData=
   ['uavsettingsimportexportplugin',['UAVSettingsImportExportPlugin',['../class_u_a_v_settings_import_export_plugin.html',1,'']]],
   ['uavsubfieldname',['uavSubFieldName',['../group___scope_plugin.html#ga22ac4a688fa35def44e941b82b0a0b60',1,'PlotData']]],
   ['uavsymbol',['uavSymbol',['../group___o_p_map_plugin.html#ga34e796aad89f226209a7325c28af859a',1,'OPMapGadgetConfiguration::uavSymbol()'],['../group___o_p_map_plugin.html#ga6dc1826f569bf6b39ff56efe116dda82',1,'OPMapGadgetConfiguration::uavSymbol() const ']]],
-  ['uavtalk',['UAVTalk',['../class_u_a_v_talk.html',1,'UAVTalk'],['../group___u_a_v_talk_plugin.html#ga53c36c64288a62b44a285dfb40cee946',1,'UAVTalk::UAVTalk()'],['../class_logging_thread.html#a0dfed803383ab861a16c748421396306',1,'LoggingThread::uavTalk()']]],
+  ['uavtalk',['UAVTalk',['../class_u_a_v_talk.html',1,'UAVTalk'],['../class_logging_thread.html#a0dfed803383ab861a16c748421396306',1,'LoggingThread::uavTalk()'],['../group___u_a_v_talk_plugin.html#ga53c36c64288a62b44a285dfb40cee946',1,'UAVTalk::UAVTalk()']]],
   ['uavtalk_2ecpp',['uavtalk.cpp',['../uavtalk_8cpp.html',1,'']]],
   ['uavtalk_2eh',['uavtalk.h',['../uavtalk_8h.html',1,'']]],
   ['uavtalk_5fglobal_2eh',['uavtalk_global.h',['../uavtalk__global_8h.html',1,'']]],

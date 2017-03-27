@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cdcfcb6</span>
+   &#160;<span id="projectnumber">9708603</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -149,9 +149,9 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5264be67cf0d9ca62aae564737389b1d">   61</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5264be67cf0d9ca62aae564737389b1d">closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName) { Q_UNUSED(deviceName) }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QString connectionName() = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QString connectionName() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">   71</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">shortName</a>() {<span class="keywordflow">return</span> connectionName();}</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae1558b3c420770789f399c23624a057f">   71</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gae1558b3c420770789f399c23624a057f">shortName</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> connectionName();}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">   77</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">suspendPolling</a>() {}</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">   78</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">resumePolling</a>() {}</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="ttc" id="group___core_plugin_html_gae3937027985048723454f1ad7d118d1a"><div class="ttname"><a href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">Core::IConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00078">iconnection.h:78</a></div></div>
 <div class="ttc" id="idevice_8h_html"><div class="ttname"><a href="idevice_8h.html">idevice.h</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gad436df0a83378128cb8034d83e6734f0"><div class="ttname"><a href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gae1558b3c420770789f399c23624a057f"><div class="ttname"><a href="group___core_plugin.html#gae1558b3c420770789f399c23624a057f">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName() const </div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
