@@ -1,5 +1,9 @@
 var NAVTREEINDEX51 =
 {
+"platecarreeprojection_8h_source.html":[6,0,0,0,0,0,2,1,0,7],
+"platecarreeprojectionpergo_8cpp.html":[6,0,0,0,0,0,2,1,0,8],
+"platecarreeprojectionpergo_8cpp_source.html":[6,0,0,0,0,0,2,1,0,8],
+"platecarreeprojectionpergo_8h.html":[6,0,0,0,0,0,2,1,0,9],
 "platecarreeprojectionpergo_8h_source.html":[6,0,0,0,0,0,2,1,0,9],
 "playuavosd_8cpp.html":[6,0,0,0,0,1,3,4],
 "playuavosd_8cpp_source.html":[6,0,0,0,0,1,3,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX51 =
 "scopegadget_8h_source.html":[6,0,0,0,0,1,32,6],
 "scopegadgetconfiguration_8cpp.html":[6,0,0,0,0,1,32,7],
 "scopegadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,32,7],
-"scopegadgetconfiguration_8h.html":[6,0,0,0,0,1,32,8],
-"scopegadgetconfiguration_8h_source.html":[6,0,0,0,0,1,32,8],
-"scopegadgetfactory_8cpp.html":[6,0,0,0,0,1,32,9],
-"scopegadgetfactory_8cpp_source.html":[6,0,0,0,0,1,32,9],
-"scopegadgetfactory_8h.html":[6,0,0,0,0,1,32,10]
+"scopegadgetconfiguration_8h.html":[6,0,0,0,0,1,32,8]
 };

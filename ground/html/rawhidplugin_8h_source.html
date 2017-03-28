@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9708603</span>
+   &#160;<span id="projectnumber">ef10535</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,8 +157,8 @@ $(document).ready(function(){initNavTree('rawhidplugin_8h_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> QIODevice *<a class="code" href="group___core_plugin.html#ga9fa3de80c2899c62813961082ad48e95">openDevice</a>(<a class="code" href="class_core_1_1_i_device.html">Core::IDevice</a> *deviceName);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5264be67cf0d9ca62aae564737389b1d">closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga91f3874d2ca6b35ba6960d54dbfd1dd4">connectionName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gae1558b3c420770789f399c23624a057f">shortName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga65bb74489e016d9863f42f0bb87afd8c">connectionName</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">shortName</a>();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">suspendPolling</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">resumePolling</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -206,6 +206,7 @@ $(document).ready(function(){initNavTree('rawhidplugin_8h_source.html','');});
 <div class="ttc" id="rawhid_8h_html"><div class="ttname"><a href="rawhid_8h.html">rawhid.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2766d577d1343dfbd7f41859363cad29"><div class="ttname"><a href="group___core_plugin.html#ga2766d577d1343dfbd7f41859363cad29">Core::IConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; IDevice * &gt; availableDevices()=0</div></div>
 <div class="ttc" id="group___core_plugin_html_gae3937027985048723454f1ad7d118d1a"><div class="ttname"><a href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">Core::IConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00078">iconnection.h:78</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga65bb74489e016d9863f42f0bb87afd8c"><div class="ttname"><a href="group___core_plugin.html#ga65bb74489e016d9863f42f0bb87afd8c">Core::IConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()=0</div></div>
 <div class="ttc" id="class_raw_h_i_d_html"><div class="ttname"><a href="class_raw_h_i_d.html">RawHID</a></div><div class="ttdef"><b>Definition:</b> <a href="rawhid_8h_source.html#l00135">rawhid.h:135</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
 <div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00084">usbmonitor.h:84</a></div></div>
@@ -216,11 +217,10 @@ $(document).ready(function(){initNavTree('rawhidplugin_8h_source.html','');});
 <div class="ttc" id="rawhid__global_8h_html"><div class="ttname"><a href="rawhid__global_8h.html">rawhid_global.h</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga9bd370fd09da409d89f1dd7612d482cb"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga9bd370fd09da409d89f1dd7612d482cb">RawHIDConnection::deviceOpened</a></div><div class="ttdeci">bool deviceOpened()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8h_source.html#l00068">rawhidplugin.h:68</a></div></div>
 <div class="ttc" id="usbsignalfilter_8h_html"><div class="ttname"><a href="usbsignalfilter_8h.html">usbsignalfilter.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga91f3874d2ca6b35ba6960d54dbfd1dd4"><div class="ttname"><a href="group___core_plugin.html#ga91f3874d2ca6b35ba6960d54dbfd1dd4">Core::IConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName() const =0</div></div>
+<div class="ttc" id="group___core_plugin_html_gad436df0a83378128cb8034d83e6734f0"><div class="ttname"><a href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
 <div class="ttc" id="class_u_s_b_signal_filter_html"><div class="ttname"><a href="class_u_s_b_signal_filter.html">USBSignalFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="usbsignalfilter_8h_source.html#l00037">usbsignalfilter.h:37</a></div></div>
 <div class="ttc" id="class_raw_h_i_d_connection_html"><div class="ttname"><a href="class_raw_h_i_d_connection.html">RawHIDConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8h_source.html#l00051">rawhidplugin.h:51</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a></div><div class="ttdoc">Base class for all plugins. </div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8h_source.html#l00045">iplugin.h:45</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gae1558b3c420770789f399c23624a057f"><div class="ttname"><a href="group___core_plugin.html#gae1558b3c420770789f399c23624a057f">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName() const </div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
 <div class="ttc" id="usbmonitor_8h_html"><div class="ttname"><a href="usbmonitor_8h.html">usbmonitor.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

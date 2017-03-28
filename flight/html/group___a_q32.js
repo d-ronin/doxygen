@@ -60,6 +60,7 @@ var group___a_q32 =
     [ "PIOS_INCLUDE_FLASH", "group___a_q32.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___a_q32.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___a_q32.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
+    [ "PIOS_INCLUDE_FLASH_JEDEC", "group___a_q32.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_HMC5883", "group___a_q32.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "group___a_q32.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_I2C", "group___a_q32.html#gac7edbfa43685b86203f055c78fdcea8b", null ],

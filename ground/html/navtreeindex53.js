@@ -1,5 +1,9 @@
 var NAVTREEINDEX53 =
 {
+"structcore_1_1_size.html":[3,0,20],
+"structcore_1_1_url_factory_1_1geo_coding_struct.html":[3,0,24],
+"structdebug_message_struct.html":[3,2,47,5],
+"structdevice_info.html":[5,0,98],
 "structdevice_info.html#a11c0e01d0d01c04fb37571dfd72120a4":[5,0,98,0],
 "structdevice_info.html#a4c7f3d6cd35d1cd5f8756075d915d704":[5,0,98,2],
 "structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa":[5,0,98,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX53 =
 "uavconfiginfo_8cpp.html":[6,0,0,0,0,1,10,61],
 "uavconfiginfo_8cpp_source.html":[6,0,0,0,0,1,10,61],
 "uavconfiginfo_8h.html":[6,0,0,0,0,1,10,62],
-"uavconfiginfo_8h_source.html":[6,0,0,0,0,1,10,62],
-"uavdataobject_8cpp.html":[6,0,0,0,0,1,40,3],
-"uavdataobject_8cpp_source.html":[6,0,0,0,0,1,40,3],
-"uavdataobject_8h.html":[6,0,0,0,0,1,40,4],
-"uavdataobject_8h_source.html":[6,0,0,0,0,1,40,4]
+"uavconfiginfo_8h_source.html":[6,0,0,0,0,1,10,62]
 };

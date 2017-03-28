@@ -66,6 +66,7 @@ var group___sparky2 =
     [ "PIOS_INCLUDE_FLASH", "group___sparky2.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___sparky2.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___sparky2.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
+    [ "PIOS_INCLUDE_FLASH_JEDEC", "group___sparky2.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_HMC5883", "group___sparky2.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "group___sparky2.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_I2C", "group___sparky2.html#gac7edbfa43685b86203f055c78fdcea8b", null ],

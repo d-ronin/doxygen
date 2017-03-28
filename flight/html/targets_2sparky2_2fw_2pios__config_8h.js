@@ -7,6 +7,7 @@ var targets_2sparky2_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "targets_2sparky2_2fw_2pios__config_8h.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],
     [ "PIOS_INCLUDE_ETASV3", "targets_2sparky2_2fw_2pios__config_8h.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2sparky2_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
+    [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2sparky2_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_HMC5883", "targets_2sparky2_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "targets_2sparky2_2fw_2pios__config_8h.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_I2C", "targets_2sparky2_2fw_2pios__config_8h.html#gac7edbfa43685b86203f055c78fdcea8b", null ],

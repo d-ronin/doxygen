@@ -6,6 +6,7 @@ var targets_2aq32_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "targets_2aq32_2fw_2pios__config_8h.html#ga90d918d22c85e3b41434233eac638116", null ],
     [ "PIOS_INCLUDE_DAC_FSK", "targets_2aq32_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2aq32_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
+    [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2aq32_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_HMC5883", "targets_2aq32_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "targets_2aq32_2fw_2pios__config_8h.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_I2C", "targets_2aq32_2fw_2pios__config_8h.html#gac7edbfa43685b86203f055c78fdcea8b", null ],

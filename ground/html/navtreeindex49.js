@@ -1,5 +1,9 @@
 var NAVTREEINDEX49 =
 {
+"lineardialgadgetconfiguration_8cpp.html":[6,0,0,0,0,1,21,2],
+"lineardialgadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,21,2],
+"lineardialgadgetconfiguration_8h.html":[6,0,0,0,0,1,21,3],
+"lineardialgadgetconfiguration_8h_source.html":[6,0,0,0,0,1,21,3],
 "lineardialgadgetfactory_8cpp.html":[6,0,0,0,0,1,21,4],
 "lineardialgadgetfactory_8cpp_source.html":[6,0,0,0,0,1,21,4],
 "lineardialgadgetfactory_8h.html":[6,0,0,0,0,1,21,5],
@@ -224,12 +228,12 @@ var NAVTREEINDEX49 =
 "namespace_aggregation.html":[4,0,0],
 "namespace_core.html":[4,0,1],
 "namespace_core.html":[5,0,1],
-"namespace_core_1_1_constants.html":[5,0,1,0],
 "namespace_core_1_1_constants.html":[4,0,1,0],
+"namespace_core_1_1_constants.html":[5,0,1,0],
 "namespace_core_1_1_internal.html":[5,0,1,1],
 "namespace_core_1_1_internal.html":[4,0,1,1],
-"namespace_core_1_1_internal_1_1_ui.html":[4,0,1,1,0],
 "namespace_core_1_1_internal_1_1_ui.html":[5,0,1,1,0],
+"namespace_core_1_1_internal_1_1_ui.html":[4,0,1,1,0],
 "namespace_extension_system.html":[4,0,3],
 "namespace_extension_system.html":[5,0,3],
 "namespace_extension_system_1_1_internal.html":[5,0,3,0],
@@ -244,10 +248,6 @@ var NAVTREEINDEX49 =
 "namespace_plugin2.html":[5,0,9],
 "namespace_plugin3.html":[4,0,10],
 "namespace_plugin3.html":[5,0,10],
-"namespace_ui.html":[5,0,16],
 "namespace_ui.html":[4,0,16],
-"namespace_utils.html":[4,0,18],
-"namespace_utils.html":[5,0,18],
-"namespace_welcome.html":[5,0,19],
-"namespace_welcome.html":[4,0,19]
+"namespace_ui.html":[5,0,16]
 };
