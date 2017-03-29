@@ -3,7 +3,7 @@ var _s_t_m32_f0xx_2startup_8c =
     [ "vector", "_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac", null ],
     [ "__attribute", "_s_t_m32_f0xx_2startup_8c.html#aadc803b04570b68b4ba9a8a89cbb65a9", null ],
     [ "_start", "_s_t_m32_f0xx_2startup_8c.html#a8b67a6ff3f33fae9b3f1b142005c0bc2", null ],
-    [ "main", "_s_t_m32_f0xx_2startup_8c.html#ga840291bc02cba5474a4cb46a9b9566fe", null ],
+    [ "main", "_s_t_m32_f0xx_2startup_8c.html#gae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "_ebss", "_s_t_m32_f0xx_2startup_8c.html#ae09fce368f4156276f5f85712265d28b", null ],
     [ "_edata", "_s_t_m32_f0xx_2startup_8c.html#a678387b54786b38004c37c629e83a35a", null ],
     [ "_sbss", "_s_t_m32_f0xx_2startup_8c.html#ab19250c89557d54f0964fc7972b0bcc0", null ],

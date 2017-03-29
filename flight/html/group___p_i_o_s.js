@@ -83,6 +83,7 @@ var group___p_i_o_s =
     [ "Serial Driver", "group___p_i_o_s___s_e_r_i_a_l.html", null ],
     [ "TCP Driver", "group___p_i_o_s___t_c_p.html", null ],
     [ "UDP Driver", "group___p_i_o_s___u_d_p.html", null ],
+    [ "ChibiOS Interface", "group___chibi_o_s.html", "group___chibi_o_s" ],
     [ "Inline delay subsystem", "group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html", "group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y" ],
     [ "USART Functions", "group___p_i_o_s___u_s_a_r_t.html", "group___p_i_o_s___u_s_a_r_t" ],
     [ "Timer Functions", "group___p_i_o_s___t_i_m.html", "group___p_i_o_s___t_i_m" ],

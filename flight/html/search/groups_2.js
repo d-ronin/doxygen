@@ -2,6 +2,7 @@ var searchData=
 [
   ['camera_20stabilization_20module',['Camera Stabilization Module',['../group___camera_stab.html',1,'']]],
   ['character_20osd',['Character OSD',['../group___char_o_s_d.html',1,'']]],
+  ['chibios_20interface',['ChibiOS Interface',['../group___chibi_o_s.html',1,'']]],
   ['cmsis',['CMSIS',['../group___c_m_s_i_s.html',1,'']]],
   ['common',['Common',['../group___common.html',1,'']]],
   ['com_20port_20to_20usb_20vcp_20bridge_20module',['Com Port to USB VCP Bridge Module',['../group___com_usb_bridge_module.html',1,'']]],

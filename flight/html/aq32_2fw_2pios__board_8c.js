@@ -1,7 +1,5 @@
 var aq32_2fw_2pios__board_8c =
 [
-    [ "__early_init", "aq32_2fw_2pios__board_8c.html#ga32c73ccd62cbae6568272cc6949531f2", null ],
-    [ "boardInit", "aq32_2fw_2pios__board_8c.html#ga48edc646a1de1ba488bbe7d786df9bae", null ],
     [ "PIOS_Board_Init", "aq32_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "pios_com_openlog_logging_id", "aq32_2fw_2pios__board_8c.html#ga86167cdf7eaace383bf74d35f23cb49e", null ],
     [ "pios_internal_adc_id", "aq32_2fw_2pios__board_8c.html#gafb354658d0ba22815d8632d97c062c0b", null ],

@@ -58,9 +58,7 @@ var searchData=
   ['stm32_5fgpt_5fuse_5ftim7',['STM32_GPT_USE_TIM7',['../pikoblx_2fw_2mcuconf_8h.html#a841def6dae41ef14c28273dc71c917df',1,'mcuconf.h']]],
   ['stm32_5fgpt_5fuse_5ftim8',['STM32_GPT_USE_TIM8',['../pikoblx_2fw_2mcuconf_8h.html#a1b1fc49ad496637c0d24c274c6c17c01',1,'mcuconf.h']]],
   ['stm32_5fhpre',['STM32_HPRE',['../pikoblx_2fw_2mcuconf_8h.html#a035ea0d8259c0f89306c6a7d344705f2',1,'mcuconf.h']]],
-  ['stm32_5fhse_5fbypass',['STM32_HSE_BYPASS',['../pikoblx_2fw_2board_8h.html#a1db400d06e42524f5e7f6da6888eb056',1,'STM32_HSE_BYPASS():&#160;board.h'],['../pipxtreme_2fw_2board_8h.html#a1db400d06e42524f5e7f6da6888eb056',1,'STM32_HSE_BYPASS():&#160;board.h']]],
   ['stm32_5fhse_5fenabled',['STM32_HSE_ENABLED',['../pikoblx_2fw_2mcuconf_8h.html#ad94c4a0da6c8c7a3d0b800fdc0dbebfa',1,'STM32_HSE_ENABLED():&#160;mcuconf.h'],['../pipxtreme_2fw_2mcuconf_8h.html#ad94c4a0da6c8c7a3d0b800fdc0dbebfa',1,'STM32_HSE_ENABLED():&#160;mcuconf.h']]],
-  ['stm32_5fhseclk',['STM32_HSECLK',['../pikoblx_2fw_2board_8h.html#aad7ccbfca9d4bd146d0d48ad6473912e',1,'STM32_HSECLK():&#160;board.h'],['../pipxtreme_2fw_2board_8h.html#aad7ccbfca9d4bd146d0d48ad6473912e',1,'STM32_HSECLK():&#160;board.h']]],
   ['stm32_5fhsi_5fenabled',['STM32_HSI_ENABLED',['../pikoblx_2fw_2mcuconf_8h.html#a2044f0288f2c20b27d6eee1e1a1e6256',1,'STM32_HSI_ENABLED():&#160;mcuconf.h'],['../pipxtreme_2fw_2mcuconf_8h.html#a2044f0288f2c20b27d6eee1e1a1e6256',1,'STM32_HSI_ENABLED():&#160;mcuconf.h']]],
   ['stm32_5fi2c1sw',['STM32_I2C1SW',['../pikoblx_2fw_2mcuconf_8h.html#a5f73f584e60bf235f5440ce5cee2ca20',1,'mcuconf.h']]],
   ['stm32_5fi2c2sw',['STM32_I2C2SW',['../pikoblx_2fw_2mcuconf_8h.html#a18db0548b32c7d9b8bc4448c670bfd1b',1,'mcuconf.h']]],
@@ -82,8 +80,6 @@ var searchData=
   ['stm32_5ficu_5fuse_5ftim4',['STM32_ICU_USE_TIM4',['../pikoblx_2fw_2mcuconf_8h.html#a91c55b2ce77da8f5c236bc960b30beed',1,'mcuconf.h']]],
   ['stm32_5ficu_5fuse_5ftim8',['STM32_ICU_USE_TIM8',['../pikoblx_2fw_2mcuconf_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d',1,'mcuconf.h']]],
   ['stm32_5flse_5fenabled',['STM32_LSE_ENABLED',['../pikoblx_2fw_2mcuconf_8h.html#a05b49e91f478558d33b2b862718758fa',1,'STM32_LSE_ENABLED():&#160;mcuconf.h'],['../pipxtreme_2fw_2mcuconf_8h.html#a05b49e91f478558d33b2b862718758fa',1,'STM32_LSE_ENABLED():&#160;mcuconf.h']]],
-  ['stm32_5flseclk',['STM32_LSECLK',['../pikoblx_2fw_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793',1,'board.h']]],
-  ['stm32_5flsedrv',['STM32_LSEDRV',['../pikoblx_2fw_2board_8h.html#a744a10171d8d258a2459deafb6d08ce2',1,'board.h']]],
   ['stm32_5flsi_5fenabled',['STM32_LSI_ENABLED',['../pikoblx_2fw_2mcuconf_8h.html#a02b4e3e6222baab7ee448cbbb2273370',1,'STM32_LSI_ENABLED():&#160;mcuconf.h'],['../pipxtreme_2fw_2mcuconf_8h.html#a02b4e3e6222baab7ee448cbbb2273370',1,'STM32_LSI_ENABLED():&#160;mcuconf.h']]],
   ['stm32_5fmcosel',['STM32_MCOSEL',['../pikoblx_2fw_2mcuconf_8h.html#ab395c2abfb2e6fd501ce4529bf09a05f',1,'mcuconf.h']]],
   ['stm32_5fno_5finit',['STM32_NO_INIT',['../pikoblx_2fw_2mcuconf_8h.html#affb519ca907542b6bff9104700c0009d',1,'STM32_NO_INIT():&#160;mcuconf.h'],['../pipxtreme_2fw_2mcuconf_8h.html#affb519ca907542b6bff9104700c0009d',1,'STM32_NO_INIT():&#160;mcuconf.h']]],
@@ -151,7 +147,6 @@ var searchData=
   ['stm32_5fusb_5fuse_5fusb1',['STM32_USB_USE_USB1',['../pikoblx_2fw_2mcuconf_8h.html#a9a1f666e68948aec51fec38353e872c4',1,'mcuconf.h']]],
   ['stm32_5fusbpre',['STM32_USBPRE',['../pikoblx_2fw_2mcuconf_8h.html#a09841e6566ed7d5a9a925b4dbacc80a1',1,'mcuconf.h']]],
   ['stm32f103_5fmcuconf',['STM32F103_MCUCONF',['../pipxtreme_2fw_2mcuconf_8h.html#ad7b7b19561ee40d868f200677e7fef02',1,'mcuconf.h']]],
-  ['stm32f30x',['STM32F30X',['../pikoblx_2fw_2board_8h.html#a83d39c367c3a7e909d2c8b7a94d08bce',1,'board.h']]],
   ['stm32f30x_5fmcuconf',['STM32F30x_MCUCONF',['../pikoblx_2fw_2mcuconf_8h.html#ad8eb4a8bfa66692783a24903d2f81bf8',1,'mcuconf.h']]],
   ['str_5fbuf_5flen',['STR_BUF_LEN',['../logging_8c.html#a54a5d71f269fa06fe95f90cce7c27dc6',1,'logging.c']]]
 ];

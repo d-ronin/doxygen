@@ -2,8 +2,6 @@ var sparky2_2fw_2pios__board_8c =
 [
     [ "PIOS_COM_CAN_RX_BUF_LEN", "sparky2_2fw_2pios__board_8c.html#gadeb3634bfdf8729a0e846fb7897f55ac", null ],
     [ "PIOS_COM_CAN_TX_BUF_LEN", "sparky2_2fw_2pios__board_8c.html#gafbf73f83562b8ce9538e0547ee45fbc8", null ],
-    [ "__early_init", "sparky2_2fw_2pios__board_8c.html#ga32c73ccd62cbae6568272cc6949531f2", null ],
-    [ "boardInit", "sparky2_2fw_2pios__board_8c.html#ga48edc646a1de1ba488bbe7d786df9bae", null ],
     [ "check_bor", "sparky2_2fw_2pios__board_8c.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "PIOS_Board_Init", "sparky2_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "set_vtx_channel", "sparky2_2fw_2pios__board_8c.html#ga9186e4a4e241fcf668b2db00134d0587", null ],

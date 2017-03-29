@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ef10535</span>
+   &#160;<span id="projectnumber">e237380</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2startup_8c_source.html'
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;stm32f4xx.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* prototype for main() that tells us not to worry about it possibly returning */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#ga840291bc02cba5474a4cb46a9b9566fe">   33</a></span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>              <a class="code" href="group___p_i_o_s.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((noreturn));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span>              <a class="code" href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((noreturn));</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* prototype our _main() to avoid prolog/epilog insertion and other related junk */</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span>                    <a class="code" href="group___p_i_o_s.html#gabaa8f446abb569a6f850a328569bec9f">_main</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((noreturn, naked, no_instrument_function));</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2startup_8c_source.html'
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        memset(&amp;irq_stack, 0xa5, <span class="keyword">sizeof</span>(irq_stack) - 64);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">/* call main */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        (void)<a class="code" href="group___p_i_o_s.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        (void)<a class="code" href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaca32348e0cc4ceb7a25f32a1d96f6ca1">  105</a></span>&#160;<span class="keywordtype">void</span> **<a class="code" href="group___p_i_o_s.html#gaca32348e0cc4ceb7a25f32a1d96f6ca1">HARDFAULT_PSP</a>;</div>
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2startup_8c_source.html'
 <div class="ttc" id="group___p_i_o_s_html_ga645dccb83e46094e6a7c889b6e5da119"><div class="ttname"><a href="group___p_i_o_s.html#ga645dccb83e46094e6a7c889b6e5da119">HANDLER</a></div><div class="ttdeci">#define HANDLER(_name)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2startup_8c_source.html#l00119">startup.c:119</a></div></div>
 <div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_a3e7575bd21a66b791e8e50cce56dc782"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#a3e7575bd21a66b791e8e50cce56dc782">_sdata</a></div><div class="ttdeci">char _sdata</div></div>
 <div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_aadc803b04570b68b4ba9a8a89cbb65a9"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#aadc803b04570b68b4ba9a8a89cbb65a9">__attribute</a></div><div class="ttdeci">const void *_vectors[] __attribute((section(&quot;.vectors&quot;)))</div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="group___p_i_o_s.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2startup_8c_source.html#l00033">startup.c:33</a></div></div>
+<div class="ttc" id="group___targets_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="chibi__main_8c_source.html#l00070">chibi_main.c:70</a></div></div>
 <div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_a678387b54786b38004c37c629e83a35a"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#a678387b54786b38004c37c629e83a35a">_edata</a></div><div class="ttdeci">char _edata</div></div>
 <div class="ttc" id="_s_t_m32_f4xx_2startup_8c_html_ga237c367d2c1b3ed1794f0dc8835741a9"><div class="ttname"><a href="_s_t_m32_f4xx_2startup_8c.html#ga237c367d2c1b3ed1794f0dc8835741a9">default_cpu_handler</a></div><div class="ttdeci">static void default_cpu_handler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2startup_8c_source.html#l00110">startup.c:110</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_gaca32348e0cc4ceb7a25f32a1d96f6ca1"><div class="ttname"><a href="group___p_i_o_s.html#gaca32348e0cc4ceb7a25f32a1d96f6ca1">HARDFAULT_PSP</a></div><div class="ttdeci">void ** HARDFAULT_PSP</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2startup_8c_source.html#l00105">startup.c:105</a></div></div>

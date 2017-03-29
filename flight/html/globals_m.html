@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ef10535</span>
+   &#160;<span id="projectnumber">e237380</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -226,10 +226,10 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="msp__messages_8h.html#a6d593948549567caf0a3f3e0a9433d41">msp_messages.h</a>
 </li>
 <li>main()
-: <a class="el" href="group___piko_b_l_x.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main.c</a>
+: <a class="el" href="group___common.html#ga840291bc02cba5474a4cb46a9b9566fe">main.c</a>
 , <a class="el" href="example_8c.html#a0ddf1224851353fc92bfbff6f499fa97">example.c</a>
-, <a class="el" href="group___p_i_o_s.html#ga840291bc02cba5474a4cb46a9b9566fe">startup.c</a>
-, <a class="el" href="group___a_q32.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main.c</a>
+, <a class="el" href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">chibi_main.c</a>
+, <a class="el" href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">startup.c</a>
 </li>
 <li>main_menu()
 : <a class="el" href="group___on_screen_display.html#ga21a331e2b54e863bfba7463047f76ec5">osd_menu.c</a>
@@ -753,7 +753,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="group___g_s_p_module.html#ga4e7de2877937cc195f607f78fe7d6bf7">ubx_cfg.c</a>
 </li>
 <li>MAX_DEL_RETRYS
-: <a class="el" href="group___d_t_fc.html#gab98ad41f0f40e6edd46ea98d46edb0af">pios_board.h</a>
+: <a class="el" href="group___a_q32.html#gab98ad41f0f40e6edd46ea98d46edb0af">pios_board.h</a>
 , <a class="el" href="group___common_f1.html#gab98ad41f0f40e6edd46ea98d46edb0af">common.h</a>
 , <a class="el" href="group___brain.html#gab98ad41f0f40e6edd46ea98d46edb0af">pios_board.h</a>
 </li>
@@ -799,11 +799,11 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mgrs_8c.html#a4ed9e805da6b82cc662002e83173a2b8">mgrs.c</a>
 </li>
 <li>MAX_QUEUE_SIZE
-: <a class="el" href="group___stabilization_module.html#ga623ec78b7909090dbedac4af1d52abb4">stabilization.c</a>
-, <a class="el" href="group___actuator_module.html#ga623ec78b7909090dbedac4af1d52abb4">actuator.c</a>
+: <a class="el" href="group___actuator_module.html#ga623ec78b7909090dbedac4af1d52abb4">actuator.c</a>
 , <a class="el" href="group___altitude_hold_module.html#ga623ec78b7909090dbedac4af1d52abb4">altitudehold.c</a>
 , <a class="el" href="group___fixed_wing_path_follower.html#ga623ec78b7909090dbedac4af1d52abb4">fixedwingpathfollower.c</a>
 , <a class="el" href="group___path_planner_module.html#ga623ec78b7909090dbedac4af1d52abb4">pathplanner.c</a>
+, <a class="el" href="group___stabilization_module.html#ga623ec78b7909090dbedac4af1d52abb4">stabilization.c</a>
 , <a class="el" href="group___telemetry_module.html#ga623ec78b7909090dbedac4af1d52abb4">telemetry.c</a>
 , <a class="el" href="group___vibration_analysis_module.html#ga623ec78b7909090dbedac4af1d52abb4">vibrationanalysis.c</a>
 , <a class="el" href="group___vtol_path_follower.html#ga623ec78b7909090dbedac4af1d52abb4">vtolpathfollower.c</a>
@@ -987,8 +987,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="ups_8c.html#a9973bf85e3f2c94bae1fd11440e54d79">ups.c</a>
 </li>
 <li>MIN_EASTING
-: <a class="el" href="mgrs_8c.html#ab7634eff7b48c510543acd2438abf718">mgrs.c</a>
-, <a class="el" href="utm_8c.html#ab7634eff7b48c510543acd2438abf718">utm.c</a>
+: <a class="el" href="utm_8c.html#ab7634eff7b48c510543acd2438abf718">utm.c</a>
+, <a class="el" href="mgrs_8c.html#ab7634eff7b48c510543acd2438abf718">mgrs.c</a>
 </li>
 <li>MIN_LAT
 : <a class="el" href="utm_8c.html#afb7fd15722eccf2cd90338aac9f88318">utm.c</a>
@@ -1049,46 +1049,40 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="berlekamp_8c.html#a3fa9c2ccc35637876cbb5117bc52fad2">berlekamp.c</a>
 </li>
 <li>module_enabled
-: <a class="el" href="group___storm32bgc.html#ga8a40b3b298ebb34ef7da48a31631e2ac">storm32bgc.c</a>
-, <a class="el" href="group___vibration_analysis_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">vibrationanalysis.c</a>
-, <a class="el" href="group___vtol_path_follower.html#ga8a40b3b298ebb34ef7da48a31631e2ac">vtolpathfollower.c</a>
+: <a class="el" href="group___com_usb_bridge_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">ComUsbBridge.c</a>
+, <a class="el" href="group___altitude_hold_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">altitudehold.c</a>
+, <a class="el" href="group___storm32bgc.html#ga8a40b3b298ebb34ef7da48a31631e2ac">storm32bgc.c</a>
+, <a class="el" href="group___fixed_wing_path_follower.html#ga8a40b3b298ebb34ef7da48a31631e2ac">fixedwingpathfollower.c</a>
 , <a class="el" href="group___flight.html#ga8a40b3b298ebb34ef7da48a31631e2ac">flightstatsmodule.c</a>
 , <a class="el" href="group___g_p_s_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">GPS.c</a>
+, <a class="el" href="group___vtol_path_follower.html#ga8a40b3b298ebb34ef7da48a31631e2ac">vtolpathfollower.c</a>
+, <a class="el" href="group___u_a_v_o_mavlink_bridge.html#ga8a40b3b298ebb34ef7da48a31631e2ac">UAVOMavlinkBridge.c</a>
+, <a class="el" href="group___fault_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">Fault.c</a>
 , <a class="el" href="group___char_o_s_d.html#ga8a40b3b298ebb34ef7da48a31631e2ac">charonscreendisplay.c</a>
-, <a class="el" href="group___altitude_hold_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">altitudehold.c</a>
-, <a class="el" href="group___path_planner_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">pathplanner.c</a>
-, <a class="el" href="group___airspeed_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">airspeed.c</a>
 , <a class="el" href="group___battery_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">battery.c</a>
-, <a class="el" href="group___com_usb_bridge_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">ComUsbBridge.c</a>
-, <a class="el" href="group___fixed_wing_path_follower.html#ga8a40b3b298ebb34ef7da48a31631e2ac">fixedwingpathfollower.c</a>
+, <a class="el" href="group___autotuning_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">autotune.c</a>
 , <a class="el" href="group___msp_uavo_bridge.html#ga8a40b3b298ebb34ef7da48a31631e2ac">mspuavobridge.c</a>
 , <a class="el" href="group___on_screen_display.html#ga8a40b3b298ebb34ef7da48a31631e2ac">onscreendisplay.c</a>
-, <a class="el" href="group___u_a_v_o_mavlink_bridge.html#ga8a40b3b298ebb34ef7da48a31631e2ac">UAVOMavlinkBridge.c</a>
-, <a class="el" href="group___autotuning_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">autotune.c</a>
-, <a class="el" href="group___fault_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">Fault.c</a>
+, <a class="el" href="group___path_planner_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">pathplanner.c</a>
+, <a class="el" href="group___airspeed_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">airspeed.c</a>
 , <a class="el" href="group___logging.html#ga8a40b3b298ebb34ef7da48a31631e2ac">logging.c</a>
 , <a class="el" href="group___v_t_x_config.html#ga8a40b3b298ebb34ef7da48a31631e2ac">VTXConfig.c</a>
+, <a class="el" href="group___vibration_analysis_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">vibrationanalysis.c</a>
 </li>
 <li>MODULE_FLIGHTSTATS_BUILTIN
-: <a class="el" href="group___seppuku.html#ga5852869ec30fde13e651b38fe3aa97c7">pios_config.h</a>
+: <a class="el" href="group___brain_r_e1.html#ga5852869ec30fde13e651b38fe3aa97c7">pios_config.h</a>
 </li>
-<li>MODULE_HIPRI_INITCALL()
-: <a class="el" href="group___control.html#gae763f46f543e67fc1ca8e5fe41f67d63">manualcontrol.c</a>
-, <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaaa976605fb18d70f9083576ba4cebe89">pios_initcall.h</a>
+<li>MODULE_HIPRI_INITCALL
+: <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaaa976605fb18d70f9083576ba4cebe89">pios_initcall.h</a>
 , <a class="el" href="group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9">actuator.c</a>
 , <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gaaa976605fb18d70f9083576ba4cebe89">pios_initcall.h</a>
 , <a class="el" href="group___sensors.html#gabbaf396776f6314b55c5ba1cb8f74229">sensors.c</a>
 , <a class="el" href="group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557">stabilization.c</a>
+, <a class="el" href="group___control.html#gae763f46f543e67fc1ca8e5fe41f67d63">manualcontrol.c</a>
 </li>
 <li>MODULE_INITCALL()
 : <a class="el" href="group___storm32bgc.html#ga5b5df68d5435c4c710e0da179367ba19">storm32bgc.c</a>
-, <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga974aeb6e83921f0fbc1fcdc99e12400a">pios_initcall.h</a>
 , <a class="el" href="group___tx_p_i_d_module.html#gadd0b157bff40a18f9445afc7813be646">txpid.c</a>
-, <a class="el" href="group___vtol_path_follower.html#ga304541063acff929281e0000e4a966da">vtolpathfollower.c</a>
-, <a class="el" href="group___altitude_hold_module.html#gaaaebdd81a11f2af893e6cbec80f9495a">altitudehold.c</a>
-, <a class="el" href="group___on_screen_display.html#ga4050314d22fb65a8d14eccd2e671c885">onscreendisplay.c</a>
-, <a class="el" href="group___g_p_s_module.html#ga26eba01dd90e72f58587731e20e8dc57">GPS.c</a>
-, <a class="el" href="group___flight.html#ga43963039dc588774f203539cffe35730">flightstatsmodule.c</a>
 , <a class="el" href="group___char_o_s_d.html#ga4c0be85448793ab9eedeb64651eb3516">charonscreendisplay.c</a>
 , <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga974aeb6e83921f0fbc1fcdc99e12400a">pios_initcall.h</a>
 , <a class="el" href="group___airspeed_module.html#ga21ecf0efa7ca0f9597649aa8babdc8b0">airspeed.c</a>
@@ -1096,6 +1090,12 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="group___logging.html#ga4bcdc6d8f98fb55017d35f0ea15cd3d0">logging.c</a>
 , <a class="el" href="group___radio_com_bridge_module.html#gac3af1d46c7b58e81ee6fe55f7310226c">RadioComBridge.c</a>
 , <a class="el" href="group___v_t_x_config.html#gab7f1e9787f8d309756d6c1534ea9009e">VTXConfig.c</a>
+, <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#ga974aeb6e83921f0fbc1fcdc99e12400a">pios_initcall.h</a>
+, <a class="el" href="group___flight.html#ga43963039dc588774f203539cffe35730">flightstatsmodule.c</a>
+, <a class="el" href="group___on_screen_display.html#ga4050314d22fb65a8d14eccd2e671c885">onscreendisplay.c</a>
+, <a class="el" href="group___g_p_s_module.html#ga26eba01dd90e72f58587731e20e8dc57">GPS.c</a>
+, <a class="el" href="group___altitude_hold_module.html#gaaaebdd81a11f2af893e6cbec80f9495a">altitudehold.c</a>
+, <a class="el" href="group___vtol_path_follower.html#ga304541063acff929281e0000e4a966da">vtolpathfollower.c</a>
 </li>
 <li>MODULE_INITIALISE_ALL
 : <a class="el" href="group___p_i_o_s___i_n_i_t_c_a_l_l.html#gad2c51bf1fbf4fb42f164e02f35169b9a">pios_initcall.h</a>
@@ -1446,8 +1446,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="berlekamp_8c.html#a04c0acd83f26ff4d737fc48c11cada16">berlekamp.c</a>
 </li>
 <li>mult_polys()
-: <a class="el" href="ecc_8h.html#ad6079f119d46b188fc8f0c8f98cbbc03">ecc.h</a>
-, <a class="el" href="berlekamp_8c.html#ad6079f119d46b188fc8f0c8f98cbbc03">berlekamp.c</a>
+: <a class="el" href="berlekamp_8c.html#ad6079f119d46b188fc8f0c8f98cbbc03">berlekamp.c</a>
+, <a class="el" href="ecc_8h.html#ad6079f119d46b188fc8f0c8f98cbbc03">ecc.h</a>
 </li>
 <li>MULTIROTOR_MIXER_UPPER_BOUND
 : <a class="el" href="group___actuator_module.html#ga0158e3851b1954e451ba2511a98b25ad">actuator.c</a>
@@ -1457,8 +1457,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>mutex
 : <a class="el" href="group___system_module.html#gadce68671d7788ce17593ae16d93c747b">systemmod.c</a>
-, <a class="el" href="group___storm32bgc.html#gadce68671d7788ce17593ae16d93c747b">storm32bgc.c</a>
 , <a class="el" href="group___u_a_v_object_handling.html#gadce68671d7788ce17593ae16d93c747b">uavobjectmanager.c</a>
+, <a class="el" href="group___storm32bgc.html#gadce68671d7788ce17593ae16d93c747b">storm32bgc.c</a>
 </li>
 </ul>
 </div><!-- contents -->

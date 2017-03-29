@@ -1,7 +1,5 @@
 var dtfc_2fw_2pios__board_8c =
 [
-    [ "__early_init", "dtfc_2fw_2pios__board_8c.html#ga32c73ccd62cbae6568272cc6949531f2", null ],
-    [ "boardInit", "dtfc_2fw_2pios__board_8c.html#ga48edc646a1de1ba488bbe7d786df9bae", null ],
     [ "PIOS_Board_Init", "dtfc_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "pios_can_id", "dtfc_2fw_2pios__board_8c.html#ga0113e473ea49f167a8f2bff77b02ff1b", null ],
     [ "pios_com_aux_id", "dtfc_2fw_2pios__board_8c.html#ga83417f60ff58e7cf0ec45ec85dfef380", null ],

@@ -383,7 +383,7 @@ var searchData=
   ['usart6_5firqhandler',['USART6_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ac96cc0070104a0bb891c8bfa911d2bc5',1,'pios_chibios_transition_priv.h']]],
   ['usart_5fconfig',['USART_CONFIG',['../pios__usart__config_8h.html#a41c49336e4c9193862c99407c6d27b44',1,'pios_usart_config.h']]],
   ['usart_5fport',['usart_port',['../group___com_usb_bridge_module.html#ga31a341398b340ff9392fffe8b413d807',1,'ComUsbBridge.c']]],
-  ['usb',['Usb',['../group___common_f1.html#ggaa7a384c9d9aaba1daaa6ba46bd884900ae5e6d66f7159a38e8400f4bb64798fd8',1,'Usb():&#160;common.h'],['../group___common_f1.html#ga779bf099075a999d1074357fccbd466b',1,'USB():&#160;common.h']]],
+  ['usb',['USB',['../group___common_f1.html#ga779bf099075a999d1074357fccbd466b',1,'USB():&#160;common.h'],['../group___common_f1.html#ggaa7a384c9d9aaba1daaa6ba46bd884900ae5e6d66f7159a38e8400f4bb64798fd8',1,'Usb():&#160;common.h']]],
   ['usb2combridgetask',['usb2ComBridgeTask',['../group___com_usb_bridge_module.html#ga1bca1a133d679ca1db5477cd1971429e',1,'ComUsbBridge.c']]],
   ['usb2combridgetaskhandle',['usb2ComBridgeTaskHandle',['../group___com_usb_bridge_module.html#gaf633010421f36b1aa2d3ef32a2f34bdf',1,'ComUsbBridge.c']]],
   ['usb_5factivity_5ftimeout_5fms',['USB_ACTIVITY_TIMEOUT_MS',['../group___telemetry_module.html#ga2b77885d3b4992f77992bf84113980d6',1,'telemetry.c']]],
