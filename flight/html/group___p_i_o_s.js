@@ -10,6 +10,7 @@ var group___p_i_o_s =
     [ "BMP280 Functions", "group___p_i_o_s___b_m_p280.html", "group___p_i_o_s___b_m_p280" ],
     [ "PIOS_BMX055", "group___p_i_o_s___b_m_x055.html", "group___p_i_o_s___b_m_x055" ],
     [ "COM layer functions", "group___p_i_o_s___c_o_m.html", "group___p_i_o_s___c_o_m" ],
+    [ "PiOS TBS Crossfire receiver driver", "group___p_i_o_s___crossfire.html", "group___p_i_o_s___crossfire" ],
     [ "Spektrum/JR DSMx satellite receiver functions", "group___p_i_o_s___d_s_m.html", "group___p_i_o_s___d_s_m" ],
     [ "ETASV3 Functions", "group___p_i_o_s___e_t_a_s_v3.html", "group___p_i_o_s___e_t_a_s_v3" ],
     [ "Flash Partition Abstraction", "group___p_i_o_s___f_l_a_s_h.html", "group___p_i_o_s___f_l_a_s_h" ],

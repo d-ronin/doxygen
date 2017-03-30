@@ -4,7 +4,6 @@ var group___revo_mini =
     [ "USB_OTG_DRIVER", "group___u_s_b___o_t_g___d_r_i_v_e_r.html", "group___u_s_b___o_t_g___d_r_i_v_e_r" ],
     [ "pios_board.c", "revolution_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2revolution_2bl_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "revolution_2bl_2pios__usb__board__data_8c.html", null ],
     [ "board_hw_defs.c", "revolution_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "revolution_2board-info_2cmsis__system_8c.html", null ],
     [ "pios_board.h", "revolution_2board-info_2pios__board_8h.html", null ],
@@ -12,7 +11,6 @@ var group___revo_mini =
     [ "mcuconf.h", "revolution_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "revolution_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2revolution_2fw_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "revolution_2fw_2pios__usb__board__data_8c.html", null ],
     [ "AUTOTUNE_AVERAGING_MODE", "group___revo_mini.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___revo_mini.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___revo_mini.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
@@ -315,7 +313,6 @@ var group___revo_mini =
     [ "TELEM_QUEUE_SIZE", "group___revo_mini.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___revo_mini.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___revo_mini.html#gabda03501745560ca9e546079e20bb392", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___revo_mini.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "pios_com_bridge_id", "group___revo_mini.html#gac040f05fa048688ee0269c2768698a14", null ],
     [ "pios_com_frsky_sensor_hub_id", "group___revo_mini.html#ga5c6ed92207820d514741140f5dec7f8a", null ],
     [ "pios_com_frsky_sport_id", "group___revo_mini.html#gaef90e208bce2777c1821abfa2dbe5688", null ],
@@ -349,13 +346,5 @@ var group___revo_mini =
     [ "tim_9_10_11_time_base", "group___revo_mini.html#ga71d0c7fcf952b2dfd5ffa1ecfe30e37f", null ],
     [ "tim_9_cfg", "group___revo_mini.html#ga3b7c89baef1cb3c6666be9fdbaefcad3", null ],
     [ "tim_apb1_time_base", "group___revo_mini.html#gac5eab6405f67f75d04a86dcf73215d79", null ],
-    [ "tim_apb2_time_base", "group___revo_mini.html#gab63edc180a907efe4bad610bbb6c2224", null ],
-    [ "usb_lang_id", "group___revo_mini.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_lang_id", "group___revo_mini.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___revo_mini.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_product_id", "group___revo_mini.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_serial_number", "group___revo_mini.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_serial_number", "group___revo_mini.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___revo_mini.html#ga3824ebcfabf732e7e2b7f22af76aa61e", null ],
-    [ "usb_vendor_id", "group___revo_mini.html#ga3824ebcfabf732e7e2b7f22af76aa61e", null ]
+    [ "tim_apb2_time_base", "group___revo_mini.html#gab63edc180a907efe4bad610bbb6c2224", null ]
 ];

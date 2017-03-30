@@ -1,0 +1,28 @@
+var pios__usb__board__data_8c =
+[
+    [ "GENERATE_USB_STRING", "pios__usb__board__data_8c.html#ga3fbb0f583e1c38f371916661cfa7f11c", null ],
+    [ "GENERATE_USB_STRING_IMPL", "pios__usb__board__data_8c.html#gaef198f7a860803a9673b9b7ed22d2cea", null ],
+    [ "U16_CHARS1", "pios__usb__board__data_8c.html#ga5ee5b688830f3ab08a8c0be1b2f14bcc", null ],
+    [ "U16_CHARS10", "pios__usb__board__data_8c.html#ga9b91b71143ea0688f959ace6323b3238", null ],
+    [ "U16_CHARS11", "pios__usb__board__data_8c.html#gaece082cbaab0e9e7ccfe84e46e479e6e", null ],
+    [ "U16_CHARS12", "pios__usb__board__data_8c.html#gae4946eeaff39e9963d25a7ce8feda125", null ],
+    [ "U16_CHARS13", "pios__usb__board__data_8c.html#ga10d14eb5d120c5e77b46bd56380d332c", null ],
+    [ "U16_CHARS14", "pios__usb__board__data_8c.html#ga0e25fb5d8ef86cea5ea553167557ae25", null ],
+    [ "U16_CHARS15", "pios__usb__board__data_8c.html#ga83188055503236b9c5d7df878a8ae2a6", null ],
+    [ "U16_CHARS16", "pios__usb__board__data_8c.html#ga2268dd50ea435d1bf3b3b8431ca2d8fa", null ],
+    [ "U16_CHARS17", "pios__usb__board__data_8c.html#gaf8738409a92064fafd91924822b1262b", null ],
+    [ "U16_CHARS2", "pios__usb__board__data_8c.html#gaa01c82843cf5ef30c3698c1e2293a501", null ],
+    [ "U16_CHARS3", "pios__usb__board__data_8c.html#ga2ddd2c87ab6f1eb95633cf5718a20933", null ],
+    [ "U16_CHARS4", "pios__usb__board__data_8c.html#ga1926b636880938fe2b908032f37b1eb8", null ],
+    [ "U16_CHARS5", "pios__usb__board__data_8c.html#ga6f5d8c727db932da2d428986972f02f1", null ],
+    [ "U16_CHARS6", "pios__usb__board__data_8c.html#ga02ce16db4a1cab6e9c6a396f636a9f71", null ],
+    [ "U16_CHARS7", "pios__usb__board__data_8c.html#ga950916daca9645ee163def4fed294852", null ],
+    [ "U16_CHARS8", "pios__usb__board__data_8c.html#gac6aebe39c3c39aec98f80b4cc4c1ebbc", null ],
+    [ "U16_CHARS9", "pios__usb__board__data_8c.html#ga720c4349de23742c911a735ca215f47d", null ],
+    [ "U16_CHARSEQ", "pios__usb__board__data_8c.html#ga1f1183717027604e7fbd9579fedf1841", null ],
+    [ "GENERATE_USB_STRING", "pios__usb__board__data_8c.html#ga45e384920efc10e1bd8dc2513273ce80", null ],
+    [ "GENERATE_USB_STRING", "pios__usb__board__data_8c.html#gaabad822db74c1576425f1826d9e8bfd5", null ],
+    [ "PIOS_USB_BOARD_DATA_Init", "pios__usb__board__data_8c.html#ga5efd94ab761f254827f38dba474cf642", null ],
+    [ "usb_lang_id", "pios__usb__board__data_8c.html#gae0f4171e328334a837e94417dfe669a7", null ],
+    [ "usb_serial_number", "pios__usb__board__data_8c.html#ga7fb0a04d4a254721b671a62407337538", null ]
+];

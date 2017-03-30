@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('ups_8c_source.html','');});
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="ups_8h.html#a880be9d5cd428467ca817c3352854c63">  174</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="ups_8c.html#a880be9d5cd428467ca817c3352854c63">Convert_Geodetic_To_UPS</a> ( <span class="keywordtype">double</span> Latitude,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                               <span class="keywordtype">double</span> longitude,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                               <span class="keywordtype">double</span> <a class="code" href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a>,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                               <span class="keywordtype">char</span>   *Hemisphere,</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                               <span class="keywordtype">double</span> *Easting,</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                               <span class="keywordtype">double</span> *Northing)</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('ups_8c_source.html','');});
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                             <span class="keywordtype">double</span> Easting,</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                             <span class="keywordtype">double</span> Northing,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                             <span class="keywordtype">double</span> *Latitude,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                             <span class="keywordtype">double</span> *longitude)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                             <span class="keywordtype">double</span> *<a class="code" href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a>)</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> *  The function Convert_UPS_To_Geodetic converts UPS (hemisphere, easting, </span></div>
@@ -423,6 +423,7 @@ $(document).ready(function(){initNavTree('ups_8c_source.html','');});
 <div class="ttc" id="ups_8c_html_a0869373f30d95a2e1383c2e70c70f04d"><div class="ttname"><a href="ups_8c.html#a0869373f30d95a2e1383c2e70c70f04d">MIN_SOUTH_LAT</a></div><div class="ttdeci">#define MIN_SOUTH_LAT</div><div class="ttdef"><b>Definition:</b> <a href="ups_8c_source.html#l00106">ups.c:106</a></div></div>
 <div class="ttc" id="ups_8c_html_a046a0e091104962feee45a9e6589d2fc"><div class="ttname"><a href="ups_8c.html#a046a0e091104962feee45a9e6589d2fc">Get_UPS_Parameters</a></div><div class="ttdeci">void Get_UPS_Parameters(double *a, double *f)</div><div class="ttdef"><b>Definition:</b> <a href="ups_8c_source.html#l00158">ups.c:158</a></div></div>
 <div class="ttc" id="ups_8h_html_a24e1ceb4172bd0a6382f72378fd3495e"><div class="ttname"><a href="ups_8h.html#a24e1ceb4172bd0a6382f72378fd3495e">UPS_NORTHING_ERROR</a></div><div class="ttdeci">#define UPS_NORTHING_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="ups_8h_source.html#l00093">ups.h:93</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_affaa89c8c5bcaf3f03054d63bb6629b1"><div class="ttname"><a href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a></div><div class="ttdeci">int32_t longitude</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00042">pios_crossfire.h:42</a></div></div>
 <div class="ttc" id="ups_8c_html_a36816aeb3c889fd707e5e55b43d24873"><div class="ttname"><a href="ups_8c.html#a36816aeb3c889fd707e5e55b43d24873">UPS_False_Easting</a></div><div class="ttdeci">const double UPS_False_Easting</div><div class="ttdef"><b>Definition:</b> <a href="ups_8c_source.html#l00113">ups.c:113</a></div></div>
 <div class="ttc" id="polarst_8c_html_a031862d993d1a191a7a9d6d1be1f9545"><div class="ttname"><a href="polarst_8c.html#a031862d993d1a191a7a9d6d1be1f9545">Convert_Polar_Stereographic_To_Geodetic</a></div><div class="ttdeci">int Convert_Polar_Stereographic_To_Geodetic(double Easting, double Northing, double *Latitude, double *longitude)</div><div class="ttdef"><b>Definition:</b> <a href="polarst_8c_source.html#l00404">polarst.c:404</a></div></div>
 <div class="ttc" id="ups_8c_html_a880be9d5cd428467ca817c3352854c63"><div class="ttname"><a href="ups_8c.html#a880be9d5cd428467ca817c3352854c63">Convert_Geodetic_To_UPS</a></div><div class="ttdeci">int Convert_Geodetic_To_UPS(double Latitude, double longitude, char *Hemisphere, double *Easting, double *Northing)</div><div class="ttdef"><b>Definition:</b> <a href="ups_8c_source.html#l00174">ups.c:174</a></div></div>

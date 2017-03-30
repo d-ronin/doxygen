@@ -1,5 +1,8 @@
 var NAVTREEINDEX54 =
 {
+"uavconfiginfo_8cpp_source.html":[6,0,0,0,0,1,10,61],
+"uavconfiginfo_8h.html":[6,0,0,0,0,1,10,62],
+"uavconfiginfo_8h_source.html":[6,0,0,0,0,1,10,62],
 "uavdataobject_8cpp.html":[6,0,0,0,0,1,40,3],
 "uavdataobject_8cpp_source.html":[6,0,0,0,0,1,40,3],
 "uavdataobject_8h.html":[6,0,0,0,0,1,40,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX54 =
 "uploader__global_8h.html":[6,0,0,0,0,1,45,5],
 "uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690":[6,0,0,0,0,1,45,5,1],
 "uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807":[6,0,0,0,0,1,45,5,1,1],
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e":[6,0,0,0,0,1,45,5,1,4],
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575":[6,0,0,0,0,1,45,5,1,3],
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f":[6,0,0,0,0,1,45,5,1,2],
-"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da":[6,0,0,0,0,1,45,5,1,6]
+"uploader__global_8h.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e":[6,0,0,0,0,1,45,5,1,4]
 };

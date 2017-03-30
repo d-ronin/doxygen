@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="group___tau_labs_libraries.html#gaa6bafbb8b675e10947b8c78a7b171e92">path_progress</a>(&amp;<a class="code" href="group___fixed_wing_path_follower.html#ga228f486906a1318fad1f4f86e1328502">pathDesired</a>, cur, &amp;progress);</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordtype">float</span> groundspeed = 0;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a> = 0;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordtype">float</span> altitudeSetpoint = 0;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="group___fixed_wing_path_follower.html#ga228f486906a1318fad1f4f86e1328502">pathDesired</a>.Mode) {</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">case</span> PATHDESIRED_MODE_CIRCLERIGHT:</div>
@@ -442,8 +442,8 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        </div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="comment">// calculate velocity - can be zero if waypoints are too close</span></div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        VelocityDesiredData velocityDesired;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        velocityDesired.North = progress.<a class="code" href="structpath__status.html#ac36e4cfed92a1fe959ba8f45728e4779">path_direction</a>[0] * groundspeed;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        velocityDesired.East = progress.<a class="code" href="structpath__status.html#ac36e4cfed92a1fe959ba8f45728e4779">path_direction</a>[1] * groundspeed;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        velocityDesired.North = progress.<a class="code" href="structpath__status.html#ac36e4cfed92a1fe959ba8f45728e4779">path_direction</a>[0] * <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        velocityDesired.East = progress.<a class="code" href="structpath__status.html#ac36e4cfed92a1fe959ba8f45728e4779">path_direction</a>[1] * <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        </div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordtype">float</span> error_speed = progress.<a class="code" href="structpath__status.html#a673ce13b12050e471c15f386e8193ac7">error</a> * <a class="code" href="group___fixed_wing_path_follower.html#gad59c2316458be21be87ec11fa497b8fb">fixedwingpathfollowerSettings</a>.HorizontalPosP;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
@@ -745,9 +745,9 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        VelocityActualGet(&amp;velocityActual);</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="keywordtype">float</span> groundspeed = sqrtf(velocityActual.East*velocityActual.East + velocityActual.North*velocityActual.North );</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a> = sqrtf(velocityActual.East*velocityActual.East + velocityActual.North*velocityActual.North );</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <a class="code" href="group___fixed_wing_path_follower.html#ga3e607e4ceecf2c8a0ea02d51eb653679">indicatedAirspeedActualBias</a> = airspeedActual.CalibratedAirspeed - groundspeed;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <a class="code" href="group___fixed_wing_path_follower.html#ga3e607e4ceecf2c8a0ea02d51eb653679">indicatedAirspeedActualBias</a> = airspeedActual.CalibratedAirspeed - <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>;</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        <span class="comment">// note - we do fly by Indicated Airspeed (== calibrated airspeed)</span></div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="comment">// however since airspeed is updated less often than groundspeed, we use sudden changes to groundspeed to offset the airspeed by the same measurement.</span></div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
@@ -783,6 +783,7 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga8e7eeae8e29fc722997bbffe8de08186"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga8e7eeae8e29fc722997bbffe8de08186">downVelIntegral</a></div><div class="ttdeci">static float downVelIntegral</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00162">fixedwingpathfollower.c:162</a></div></div>
 <div class="ttc" id="structpath__status_html_ac36e4cfed92a1fe959ba8f45728e4779"><div class="ttname"><a href="structpath__status.html#ac36e4cfed92a1fe959ba8f45728e4779">path_status::path_direction</a></div><div class="ttdeci">float path_direction[2]</div><div class="ttdef"><b>Definition:</b> <a href="paths_8h_source.html#l00040">paths.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga30d4f0b56bb65cb60cb99b7e8f6b759e"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga30d4f0b56bb65cb60cb99b7e8f6b759e">PIOS_Thread_Create</a></div><div class="ttdeci">struct pios_thread * PIOS_Thread_Create(void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum pios_thread_prio_e prio)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00040">pios_thread.c:40</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_aefe7b920a104fa8e2a7076850709242e"><div class="ttname"><a href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a></div><div class="ttdeci">uint16_t groundspeed</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00043">pios_crossfire.h:43</a></div></div>
 <div class="ttc" id="structpios__thread_html"><div class="ttname"><a href="structpios__thread.html">pios_thread</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00033">pios_thread.c:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2b57ee25cb47d455143fa9f009d8e937"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a></div><div class="ttdeci">void PIOS_Thread_Sleep_Until(uint32_t *previous_ms, uint32_t increment_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00129">pios_thread.c:129</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga29e8013790f71be445feecfd73ff7278"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga29e8013790f71be445feecfd73ff7278">speedIntegral</a></div><div class="ttdeci">static float speedIntegral</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00165">fixedwingpathfollower.c:165</a></div></div>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"scopegadgetconfiguration_8cpp.html":[6,0,0,0,0,1,32,7],
+"scopegadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,32,7],
+"scopegadgetconfiguration_8h.html":[6,0,0,0,0,1,32,8],
 "scopegadgetconfiguration_8h_source.html":[6,0,0,0,0,1,32,8],
 "scopegadgetfactory_8cpp.html":[6,0,0,0,0,1,32,9],
 "scopegadgetfactory_8cpp_source.html":[6,0,0,0,0,1,32,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_w_m_mtype___spherical_harmonic_variables.html#af6906ecd2a98bea39e7d43459d7399cb":[5,0,434,2],
 "struct_welcome_1_1_welcome_mode_private.html":[3,2,48,2],
 "structaccel_gyro_bias.html":[3,6,24],
-"structactuator_channel_settings.html":[3,6,25],
-"structboard_log.html":[3,2,47,3],
-"structbutton_settings_struct.html":[3,2,20,3],
-"structcore_1_1_point.html":[3,0,15]
+"structactuator_channel_settings.html":[3,6,25]
 };

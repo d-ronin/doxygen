@@ -306,7 +306,6 @@ var group___play_u_a_v_o_s_d =
     [ "WDG_STATS_DIAGNOSTICS", "group___play_u_a_v_o_s_d.html#ga92db595596a0136d6e663f929418cbf4", null ],
     [ "PIOS_Board_Init", "group___play_u_a_v_o_s_d.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "PIOS_BOARD_Init_Uavos", "group___play_u_a_v_o_s_d.html#ga2dec40a9db68ab57282e52a77d244752", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___play_u_a_v_o_s_d.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "level_bits", "group___play_u_a_v_o_s_d.html#ga11c0902226e4d67fbe3c03915a5621e2", null ],
     [ "level_mask_bits", "group___play_u_a_v_o_s_d.html#ga1af1755811426df00f4a2077e1bc242c", null ],
     [ "llama_bits", "group___play_u_a_v_o_s_d.html#ga45dd334b361ae9c66263597580a95fee", null ],
@@ -334,13 +333,5 @@ var group___play_u_a_v_o_s_d =
     [ "tim_8_cfg", "group___play_u_a_v_o_s_d.html#ga1b914f100d3601810dea75526ed3434f", null ],
     [ "tim_9_cfg", "group___play_u_a_v_o_s_d.html#ga3b7c89baef1cb3c6666be9fdbaefcad3", null ],
     [ "tim_apb1_time_base", "group___play_u_a_v_o_s_d.html#gac5eab6405f67f75d04a86dcf73215d79", null ],
-    [ "tim_apb2_time_base", "group___play_u_a_v_o_s_d.html#gab63edc180a907efe4bad610bbb6c2224", null ],
-    [ "usb_lang_id", "group___play_u_a_v_o_s_d.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_lang_id", "group___play_u_a_v_o_s_d.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___play_u_a_v_o_s_d.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_product_id", "group___play_u_a_v_o_s_d.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_serial_number", "group___play_u_a_v_o_s_d.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_serial_number", "group___play_u_a_v_o_s_d.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___play_u_a_v_o_s_d.html#gafbdf81ca8fa2c7004409dba39110afb9", null ],
-    [ "usb_vendor_id", "group___play_u_a_v_o_s_d.html#gafbdf81ca8fa2c7004409dba39110afb9", null ]
+    [ "tim_apb2_time_base", "group___play_u_a_v_o_s_d.html#gab63edc180a907efe4bad610bbb6c2224", null ]
 ];

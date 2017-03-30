@@ -13,6 +13,7 @@ var searchData=
   ['pios_5finclude_5fbl_5fhelper',['PIOS_INCLUDE_BL_HELPER',['../pios__flight__config_8h.html#a88ebbd46d7ad2cb2374e4886c3194b5e',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fchibios',['PIOS_INCLUDE_CHIBIOS',['../pios__flight__config_8h.html#a161aa898042f41e015d602a72a618d87',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fcom',['PIOS_INCLUDE_COM',['../pios__flight__config_8h.html#af8a678a8ce2142cdd87b127b78a89add',1,'pios_flight_config.h']]],
+  ['pios_5finclude_5fcrossfire',['PIOS_INCLUDE_CROSSFIRE',['../pios__flight__config_8h.html#a0715ab2ae2b78b086672041ca0731dc3',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fdsm',['PIOS_INCLUDE_DSM',['../pios__flight__config_8h.html#a543ec4a4aa105d7090ebe2dd3a4dad3b',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fexti',['PIOS_INCLUDE_EXTI',['../pios__flight__config_8h.html#ae97f0380f771f6caf94de4982ab00f8c',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fflash',['PIOS_INCLUDE_FLASH',['../pios__flight__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d',1,'PIOS_INCLUDE_FLASH():&#160;pios_flight_config.h'],['../tests_2logfs_2pios__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d',1,'PIOS_INCLUDE_FLASH():&#160;pios_config.h']]],

@@ -23,6 +23,7 @@ var group___tau_labs_modules =
     [ "Storm32bgc Module", "group___storm32bgc.html", "group___storm32bgc" ],
     [ "Telemetry Module", "group___telemetry_module.html", "group___telemetry_module" ],
     [ "TxPID Module", "group___tx_p_i_d_module.html", "group___tx_p_i_d_module" ],
+    [ "UAVO to TBS Crossfire telemetry converter", "group___u_a_v_o_crossfire_telemetry.html", "group___u_a_v_o_crossfire_telemetry" ],
     [ "UAVO to FrSKY Bridge Module", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html", "group___u_a_v_o_fr_s_k_y_sensor_hub_bridge" ],
     [ "UAVO to FrSKY S.PORT Bridge Module", "group___u_a_v_o_fr_s_k_y_s_port_bridge.html", null ],
     [ "HoTT Telemetry Module", "group___u_a_v_o_ho_t_t_bridge.html", "group___u_a_v_o_ho_t_t_bridge" ],

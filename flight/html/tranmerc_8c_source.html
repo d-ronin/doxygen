@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -412,7 +412,7 @@ $(document).ready(function(){initNavTree('tranmerc_8c_source.html','');});
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="tranmerc_8h.html#a70e32b0d0902ce2c4d0cea6cee188fdc">  302</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="tranmerc_8c.html#a70e32b0d0902ce2c4d0cea6cee188fdc">Convert_Geodetic_To_Transverse_Mercator</a> (<span class="keywordtype">double</span> Latitude,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                              <span class="keywordtype">double</span> longitude,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                              <span class="keywordtype">double</span> <a class="code" href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a>,</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                              <span class="keywordtype">double</span> *Easting,</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                              <span class="keywordtype">double</span> *Northing)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('tranmerc_8c_source.html','');});
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> (longitude &lt; 0)</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      temp_int = longitude + 2 * <a class="code" href="tranmerc_8c.html#a598a3330b3c21701223ee0ca14316eca">PI</a>;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      temp_int = longitude;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      temp_int = <a class="code" href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a>;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="tranmerc_8c.html#a7f92811b1e73a983f49fa6e65dfe38b7">TranMerc_Origin_int</a> &lt; 0)</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      temp_Origin = <a class="code" href="tranmerc_8c.html#a7f92811b1e73a983f49fa6e65dfe38b7">TranMerc_Origin_int</a> + 2 * <a class="code" href="tranmerc_8c.html#a598a3330b3c21701223ee0ca14316eca">PI</a>;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">else</span></div>
@@ -570,7 +570,7 @@ $(document).ready(function(){initNavTree('tranmerc_8c_source.html','');});
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                             <span class="keywordtype">double</span> Easting,</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                             <span class="keywordtype">double</span> Northing,</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                             <span class="keywordtype">double</span> *Latitude,</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                             <span class="keywordtype">double</span> *longitude)</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                             <span class="keywordtype">double</span> *<a class="code" href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a>)</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{      <span class="comment">/* BEGIN Convert_Transverse_Mercator_To_Geodetic */</span></div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="comment">/*</span></div>
@@ -746,6 +746,7 @@ $(document).ready(function(){initNavTree('tranmerc_8c_source.html','');});
 <div class="ttc" id="tranmerc_8c_html_a9318f1472a8f66ec940c8de379a51d75"><div class="ttname"><a href="tranmerc_8c.html#a9318f1472a8f66ec940c8de379a51d75">TranMerc_es</a></div><div class="ttdeci">static double TranMerc_es</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8c_source.html#l00130">tranmerc.c:130</a></div></div>
 <div class="ttc" id="tranmerc_8c_html_a2ec7555af537ec6ef77216bc0bc7820d"><div class="ttname"><a href="tranmerc_8c.html#a2ec7555af537ec6ef77216bc0bc7820d">SPHSR</a></div><div class="ttdeci">#define SPHSR(Latitude)</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8c_source.html#l00116">tranmerc.c:116</a></div></div>
 <div class="ttc" id="tranmerc_8c_html_a9f9cb53a5ab33d1c704222c12c0b3a6b"><div class="ttname"><a href="tranmerc_8c.html#a9f9cb53a5ab33d1c704222c12c0b3a6b">TranMerc_cp</a></div><div class="ttdeci">static double TranMerc_cp</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8c_source.html#l00143">tranmerc.c:143</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_affaa89c8c5bcaf3f03054d63bb6629b1"><div class="ttname"><a href="pios__crossfire_8h.html#affaa89c8c5bcaf3f03054d63bb6629b1">longitude</a></div><div class="ttdeci">int32_t longitude</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00042">pios_crossfire.h:42</a></div></div>
 <div class="ttc" id="tranmerc_8h_html_afd756a1a51ae465c8571f8981d20e3f9"><div class="ttname"><a href="tranmerc_8h.html#afd756a1a51ae465c8571f8981d20e3f9">TRANMERC_NO_ERROR</a></div><div class="ttdeci">#define TRANMERC_NO_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8h_source.html#l00091">tranmerc.h:91</a></div></div>
 <div class="ttc" id="tranmerc_8c_html_a7f92811b1e73a983f49fa6e65dfe38b7"><div class="ttname"><a href="tranmerc_8c.html#a7f92811b1e73a983f49fa6e65dfe38b7">TranMerc_Origin_int</a></div><div class="ttdeci">static double TranMerc_Origin_int</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8c_source.html#l00135">tranmerc.c:135</a></div></div>
 <div class="ttc" id="tranmerc_8c_html_adc765510b92127d1317aad481f69fec5"><div class="ttname"><a href="tranmerc_8c.html#adc765510b92127d1317aad481f69fec5">TranMerc_ebs</a></div><div class="ttdeci">static double TranMerc_ebs</div><div class="ttdef"><b>Definition:</b> <a href="tranmerc_8c_source.html#l00131">tranmerc.c:131</a></div></div>

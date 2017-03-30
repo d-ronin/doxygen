@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1020,7 +1020,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        <span class="comment">// we get forward airspeed</span></div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        <a class="code" href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a>(q,Rbe);</div>
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        <span class="keywordtype">double</span> groundspeed[3] = {vel[0], vel[1], vel[2] };</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>[3] = {vel[0], vel[1], vel[2] };</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        <span class="keywordtype">double</span> forwardSpeed = Rbe[0][0] * groundspeed[0] + Rbe[0][1] * groundspeed[1] + Rbe[0][2] * groundspeed[2];</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        <span class="keywordtype">double</span> sidewaysSpeed = Rbe[1][0] * groundspeed[0] + Rbe[1][1] * groundspeed[1] + Rbe[1][2] * groundspeed[2];</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
@@ -1270,6 +1270,7 @@ $(document).ready(function(){initNavTree('simsensors_8c_source.html','');});
 <div class="ttc" id="group___sensors_html_ga26562491bc20c31ac212df09f3f3acf6"><div class="ttname"><a href="group___sensors.html#ga26562491bc20c31ac212df09f3f3acf6">rand_gauss</a></div><div class="ttdeci">static float rand_gauss()</div><div class="ttdef"><b>Definition:</b> <a href="simsensors_8c_source.html#l01106">simsensors.c:1106</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga30d4f0b56bb65cb60cb99b7e8f6b759e"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga30d4f0b56bb65cb60cb99b7e8f6b759e">PIOS_Thread_Create</a></div><div class="ttdeci">struct pios_thread * PIOS_Thread_Create(void(*fp)(void *), const char *namep, size_t stack_bytes, void *argp, enum pios_thread_prio_e prio)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00040">pios_thread.c:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga7e81576c47b0b13f30e21b37055635ed"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">PIOS_SENSORS_Register</a></div><div class="ttdeci">int32_t PIOS_SENSORS_Register(enum pios_sensor_type type, struct pios_queue *queue)</div><div class="ttdoc">Register a sensor with the PIOS_SENSORS interface. </div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8c_source.html#l00052">pios_sensors.c:52</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_aefe7b920a104fa8e2a7076850709242e"><div class="ttname"><a href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a></div><div class="ttdeci">uint16_t groundspeed</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00043">pios_crossfire.h:43</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_gaccaead20abfe7057c1a086b5426865df"><div class="ttname"><a href="group___tau_labs_math.html#gaccaead20abfe7057c1a086b5426865df">Quaternion2R</a></div><div class="ttdeci">void Quaternion2R(float q[4], float Rbe[3][3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00113">coordinate_conversions.c:113</a></div></div>
 <div class="ttc" id="group___attitude_module_html_ga2df5dd1b897f5b24779f6e0ad9b5b119"><div class="ttname"><a href="group___attitude_module.html#ga2df5dd1b897f5b24779f6e0ad9b5b119">homeLocation</a></div><div class="ttdeci">static HomeLocationData homeLocation</div><div class="ttdef"><b>Definition:</b> <a href="attitude_8c_source.html#l00147">attitude.c:147</a></div></div>
 <div class="ttc" id="structpios__thread_html"><div class="ttname"><a href="structpios__thread.html">pios_thread</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00033">pios_thread.c:33</a></div></div>

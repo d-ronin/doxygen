@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -228,7 +228,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga612f9d2da82331c56e2c03695a02eb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga637d723a09262aa949dba0885bfb6317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga637d723a09262aa949dba0885bfb6317">HID_ITEM_SIZE_4</a>&#160;&#160;&#160;3	/* Yes, 4 <a class="el" href="storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9">bytes</a> is represented with a size field = 3 */</td></tr>
 <tr class="separator:ga637d723a09262aa949dba0885bfb6317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95e2ea371267a564ba37735fdb057e4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga95e2ea371267a564ba37735fdb057e4b">HID_SHORT_ITEM</a>(tag, type, size)</td></tr>
+<tr class="memitem:ga95e2ea371267a564ba37735fdb057e4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga95e2ea371267a564ba37735fdb057e4b">HID_SHORT_ITEM</a>(tag, <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, size)</td></tr>
 <tr class="separator:ga95e2ea371267a564ba37735fdb057e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4b88a26af712335b328db9e9cc55b95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf4b88a26af712335b328db9e9cc55b95">HID_LONG_ITEM</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga95e2ea371267a564ba37735fdb057e4b">HID_SHORT_ITEM</a>(<a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gac470ed0868927db147dea941bea55f3f">HID_TAG_RSVD</a>, <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga90fb2b95308ab630c6009ab2f59eef24">HID_ITEM_TYPE_RSVD</a>, <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga612f9d2da82331c56e2c03695a02eb01">HID_ITEM_SIZE_2</a>)</td></tr>
 <tr class="separator:gaf4b88a26af712335b328db9e9cc55b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1066,7 +1066,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
+          <td class="paramname"><a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1083,9 +1083,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(\</div>
 <div class="line">        (((tag)  &amp; 0xF) &lt;&lt; 4) |        \</div>
-<div class="line">        (((<a class="code" href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">type</a>) &amp; 0x3) &lt;&lt; 2) |        \</div>
+<div class="line">        (((<a class="code" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>) &amp; 0x3) &lt;&lt; 2) |        \</div>
 <div class="line">        (((size) &amp; 0x3) &lt;&lt; 0))</div>
-<div class="ttc" id="namespaceencode__fonts_html_ae9feea7fd8360f4b21111bde02496994"><div class="ttname"><a href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">encode_fonts.type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> <a href="encode__fonts_8py_source.html#l00230">encode_fonts.py:230</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_a1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00050">pios_crossfire.h:50</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pios__usb__defs_8h_source.html#l00127">127</a> of file <a class="el" href="pios__usb__defs_8h_source.html">pios_usb_defs.h</a>.</p>
 

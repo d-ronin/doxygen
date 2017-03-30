@@ -69,7 +69,6 @@ var group___piko_b_l_x =
     [ "TELEM_QUEUE_SIZE", "group___piko_b_l_x.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___piko_b_l_x.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___piko_b_l_x.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___piko_b_l_x.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "pios_can_id", "group___piko_b_l_x.html#ga0113e473ea49f167a8f2bff77b02ff1b", null ],
     [ "pios_com_aux_id", "group___piko_b_l_x.html#ga83417f60ff58e7cf0ec45ec85dfef380", null ],
     [ "pios_com_bridge_id", "group___piko_b_l_x.html#gac040f05fa048688ee0269c2768698a14", null ],
@@ -97,9 +96,5 @@ var group___piko_b_l_x =
     [ "tim_1_cfg", "group___piko_b_l_x.html#gae8998ae2740c83f160a18fd0d447c3d9", null ],
     [ "tim_2_3_time_base", "group___piko_b_l_x.html#ga60b39ced2092119b6091f4e1c9785804", null ],
     [ "tim_2_cfg", "group___piko_b_l_x.html#ga0b6f7586d1c7a594c67b267ae2a52e76", null ],
-    [ "tim_3_cfg", "group___piko_b_l_x.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ],
-    [ "usb_lang_id", "group___piko_b_l_x.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___piko_b_l_x.html#ga248e4ab4e834e907dc8da63e25282a77", null ],
-    [ "usb_serial_number", "group___piko_b_l_x.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___piko_b_l_x.html#gafbdf81ca8fa2c7004409dba39110afb9", null ]
+    [ "tim_3_cfg", "group___piko_b_l_x.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ]
 ];

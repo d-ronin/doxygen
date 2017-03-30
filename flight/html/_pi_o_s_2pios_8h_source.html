@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -306,52 +306,56 @@ $(document).ready(function(){initNavTree('_pi_o_s_2pios_8h_source.html','');});
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__ibus_8h.html">pios_ibus.h</a>&gt;</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MAX7456)</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__max7456_8h.html">pios_max7456.h</a>&gt;</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CROSSFIRE)</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__crossfire_8h.html">pios_crossfire.h</a>&gt;</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&gt;</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MAX7456)</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__max7456_8h.html">pios_max7456.h</a>&gt;</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__modules_8h.html">pios_modules.h</a>&gt;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__crc_8h.html">pios_crc.h</a>&gt;</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">  222</a></span>&#160;<span class="preprocessor">#define NELEMENTS(x) (sizeof(x) / sizeof(*(x)))</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaebddcae7f50eeca200c88ea15dd27094">  223</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DONT_BUILD_IF(COND,MSG) typedef char static_assertion_##MSG[(COND)?-1:1]</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaa3d310efe7cd6126823b8721852d7e56">  226</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE16(x) (x)</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gac904d01eec66efc89dba5a687749d5f5">  227</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE32(x) (x)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&gt;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__modules_8h.html">pios_modules.h</a>&gt;</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__crc_8h.html">pios_crc.h</a>&gt;</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">  226</a></span>&#160;<span class="preprocessor">#define NELEMENTS(x) (sizeof(x) / sizeof(*(x)))</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaebddcae7f50eeca200c88ea15dd27094">  227</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DONT_BUILD_IF(COND,MSG) typedef char static_assertion_##MSG[(COND)?-1:1]</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaea91d96b724b4a83b28c7c91cd920db4">  229</a></span>&#160;<span class="preprocessor">        #define CPU_TO_BE16(x) ( (((x) &amp; 0xff00) &gt;&gt; 8) | \</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff) &lt;&lt; 8) )</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gabe5b68e77b7f6870895076278368d201">  231</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_BE32(x) ( (((x) &amp; 0xff000000) &gt;&gt; 24) | \</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff0000) &gt;&gt;  8) | \</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x0000ff00) &lt;&lt;  8) | \</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x000000ff) &lt;&lt; 24) )</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE16(x) ( (((x) &amp; 0xff00) &gt;&gt; 8) | \</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff) &lt;&lt; 8) )</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE32(x) ( (((x) &amp; 0xff000000) &gt;&gt; 24) | \</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff0000) &gt;&gt;  8) | \</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x0000ff00) &lt;&lt;  8) | \</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x000000ff) &lt;&lt; 24) )</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">        #define CPU_TO_BE16(x) (x)</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_BE32(x) (x)</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #error Unsupported architecture!</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* __BYTE_ORDER__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaa0da5576d76569d3a7452897a91ea0e6">  249</a></span>&#160;<span class="preprocessor">#define LE16_TO_CPU(x) CPU_TO_LE16(x)</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#ga488a93b151ee4920c0a117fe66cc2efb">  250</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LE32_TO_CPU(x) CPU_TO_LE32(x)</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gac1d027e9e570b4714b2e7e7fbd4b1e9e">  251</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BE16_TO_CPU(x) CPU_TO_BE16(x)</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gad6fd2e5e0a54fb6300fe98868141175e">  252</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BE32_TO_CPU(x) CPU_TO_BE32(x)</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaa3d310efe7cd6126823b8721852d7e56">  230</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE16(x) (x)</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gac904d01eec66efc89dba5a687749d5f5">  231</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE32(x) (x)</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaea91d96b724b4a83b28c7c91cd920db4">  233</a></span>&#160;<span class="preprocessor">        #define CPU_TO_BE16(x) ( (((x) &amp; 0xff00) &gt;&gt; 8) | \</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff) &lt;&lt; 8) )</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gabe5b68e77b7f6870895076278368d201">  235</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_BE32(x) ( (((x) &amp; 0xff000000) &gt;&gt; 24) | \</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff0000) &gt;&gt;  8) | \</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x0000ff00) &lt;&lt;  8) | \</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x000000ff) &lt;&lt; 24) )</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE16(x) ( (((x) &amp; 0xff00) &gt;&gt; 8) | \</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff) &lt;&lt; 8) )</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_LE32(x) ( (((x) &amp; 0xff000000) &gt;&gt; 24) | \</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x00ff0000) &gt;&gt;  8) | \</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x0000ff00) &lt;&lt;  8) | \</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">                                 (((x) &amp; 0x000000ff) &lt;&lt; 24) )</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">        #define CPU_TO_BE16(x) (x)</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define CPU_TO_BE32(x) (x)</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #error Unsupported architecture!</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* __BYTE_ORDER__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gaa0da5576d76569d3a7452897a91ea0e6">  253</a></span>&#160;<span class="preprocessor">#define LE16_TO_CPU(x) CPU_TO_LE16(x)</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#ga488a93b151ee4920c0a117fe66cc2efb">  254</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LE32_TO_CPU(x) CPU_TO_LE32(x)</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gac1d027e9e570b4714b2e7e7fbd4b1e9e">  255</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BE16_TO_CPU(x) CPU_TO_BE16(x)</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="group___p_i_o_s.html#gad6fd2e5e0a54fb6300fe98868141175e">  256</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BE32_TO_CPU(x) CPU_TO_BE32(x)</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__crc_8h_html"><div class="ttname"><a href="pios__crc_8h.html">pios_crc.h</a></div><div class="ttdoc">CRC functions header. </div></div>
 <div class="ttc" id="pios__usart_8h_html"><div class="ttname"><a href="pios__usart_8h.html">pios_usart.h</a></div><div class="ttdoc">USART functions header. </div></div>
 <div class="ttc" id="pios__flashfs_8h_html"><div class="ttname"><a href="pios__flashfs_8h.html">pios_flashfs.h</a></div></div>
@@ -381,6 +385,7 @@ $(document).ready(function(){initNavTree('_pi_o_s_2pios_8h_source.html','');});
 <div class="ttc" id="pios__mpu_8h_html"><div class="ttname"><a href="pios__mpu_8h.html">pios_mpu.h</a></div></div>
 <div class="ttc" id="pios__rcvr_8h_html"><div class="ttname"><a href="pios__rcvr_8h.html">pios_rcvr.h</a></div><div class="ttdoc">RCVR layer functions header. </div></div>
 <div class="ttc" id="pios__usb_8h_html"><div class="ttname"><a href="pios__usb_8h.html">pios_usb.h</a></div><div class="ttdoc">USB HID layer functions header. </div></div>
+<div class="ttc" id="pios__crossfire_8h_html"><div class="ttname"><a href="pios__crossfire_8h.html">pios_crossfire.h</a></div></div>
 <div class="ttc" id="pios__mpu6050_8h_html"><div class="ttname"><a href="pios__mpu6050_8h.html">pios_mpu6050.h</a></div></div>
 <div class="ttc" id="pios__modules_8h_html"><div class="ttname"><a href="pios__modules_8h.html">pios_modules.h</a></div></div>
 <div class="ttc" id="pios__ppm_8h_html"><div class="ttname"><a href="pios__ppm_8h.html">pios_ppm.h</a></div><div class="ttdoc">PWM Input functions header. </div></div>

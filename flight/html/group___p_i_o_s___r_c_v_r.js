@@ -13,6 +13,7 @@ var group___p_i_o_s___r_c_v_r =
     ] ],
     [ "PIOS_RCVR_Active", "group___p_i_o_s___r_c_v_r.html#gaa377fe949ee9b1184d82165b39a7476a", null ],
     [ "PIOS_RCVR_ActiveFromISR", "group___p_i_o_s___r_c_v_r.html#gaf462f5635dcf49c9ca3c594a7538ad65", null ],
+    [ "PIOS_RCVR_GetLowerDevice", "group___p_i_o_s___r_c_v_r.html#gace12a3768f13c3ac624a6e7c476195b4", null ],
     [ "PIOS_RCVR_Init", "group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a", null ],
     [ "PIOS_RCVR_IRQ_Handler", "group___p_i_o_s___r_c_v_r.html#gac0bb174c5c2f8c808533265e4757cdae", null ],
     [ "PIOS_RCVR_Read", "group___p_i_o_s___r_c_v_r.html#gab540ecaab89fcca1c715f07536609c2e", null ],

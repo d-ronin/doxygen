@@ -152,13 +152,6 @@ var NAVTREEINDEX6 =
 "aq32_2bl_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[4,0,0,3,0,0,0,1],
 "aq32_2bl_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[4,0,0,3,0,0,0,0],
 "aq32_2bl_2pios__board_8c_source.html":[4,0,0,3,0,0,0],
-"aq32_2bl_2pios__usb__board__data_8c.html":[4,0,0,3,0,0,2],
-"aq32_2bl_2pios__usb__board__data_8c.html#ga10c1302b8a7bf9dcf062d274210f6669":[4,0,0,3,0,0,2,2],
-"aq32_2bl_2pios__usb__board__data_8c.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf":[4,0,0,3,0,0,2,4],
-"aq32_2bl_2pios__usb__board__data_8c.html#ga5efd94ab761f254827f38dba474cf642":[4,0,0,3,0,0,2,0],
-"aq32_2bl_2pios__usb__board__data_8c.html#ga7fb0a04d4a254721b671a62407337538":[4,0,0,3,0,0,2,3],
-"aq32_2bl_2pios__usb__board__data_8c.html#gae0f4171e328334a837e94417dfe669a7":[4,0,0,3,0,0,2,1],
-"aq32_2bl_2pios__usb__board__data_8c_source.html":[4,0,0,3,0,0,2],
 "aq32_2board-info_2board__hw__defs_8c.html":[4,0,0,3,0,1,0],
 "aq32_2board-info_2board__hw__defs_8c.html#ga0b6f7586d1c7a594c67b267ae2a52e76":[4,0,0,3,0,1,0,4],
 "aq32_2board-info_2board__hw__defs_8c.html#ga15c536f8b4345ec80bda11df036c165f":[4,0,0,3,0,1,0,2],
@@ -249,5 +242,12 @@ var NAVTREEINDEX6 =
 "aq32_2board-info_2usb__conf_8h.html":[4,0,0,3,0,1,3],
 "aq32_2board-info_2usb__conf_8h.html#ga05fe8f364b0f99dddedd65322b6ed290":[4,0,0,3,0,1,3,13],
 "aq32_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[4,0,0,3,0,1,3,11],
-"aq32_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[4,0,0,3,0,1,3,12]
+"aq32_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[4,0,0,3,0,1,3,12],
+"aq32_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[4,0,0,3,0,1,3,7],
+"aq32_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,3,0,1,3,10],
+"aq32_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,3,0,1,3,9],
+"aq32_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[4,0,0,3,0,1,3,6],
+"aq32_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[4,0,0,3,0,1,3,0],
+"aq32_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[4,0,0,3,0,1,3,8],
+"aq32_2board-info_2usb__conf_8h.html#gaa8f11863644f6e1694371c789a8d57d3":[4,0,0,3,0,1,3,5]
 };

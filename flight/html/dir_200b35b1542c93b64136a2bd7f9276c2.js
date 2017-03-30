@@ -24,6 +24,7 @@ var dir_200b35b1542c93b64136a2bd7f9276c2 =
     [ "pios_com_msg_priv.h", "pios__com__msg__priv_8h.html", "pios__com__msg__priv_8h" ],
     [ "pios_com_priv.h", "pios__com__priv_8h.html", "pios__com__priv_8h" ],
     [ "pios_crc.h", "pios__crc_8h.html", "pios__crc_8h" ],
+    [ "pios_crossfire.h", "pios__crossfire_8h.html", "pios__crossfire_8h" ],
     [ "pios_debug.h", "inc_2pios__debug_8h.html", "inc_2pios__debug_8h" ],
     [ "pios_delay.h", "pios__delay_8h.html", "pios__delay_8h" ],
     [ "pios_dma.h", "pios__dma_8h.html", null ],

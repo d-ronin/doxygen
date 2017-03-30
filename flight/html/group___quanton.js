@@ -4,7 +4,6 @@ var group___quanton =
     [ "USB_OTG_DRIVER", "group___u_s_b___o_t_g___d_r_i_v_e_r.html", "group___u_s_b___o_t_g___d_r_i_v_e_r" ],
     [ "pios_board.c", "quanton_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2quanton_2bl_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "quanton_2bl_2pios__usb__board__data_8c.html", null ],
     [ "board_hw_defs.c", "quanton_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "quanton_2board-info_2cmsis__system_8c.html", null ],
     [ "pios_board.h", "quanton_2board-info_2pios__board_8h.html", null ],
@@ -12,7 +11,6 @@ var group___quanton =
     [ "mcuconf.h", "quanton_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "quanton_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2quanton_2fw_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "quanton_2fw_2pios__usb__board__data_8c.html", null ],
     [ "AUTOTUNE_AVERAGING_MODE", "group___quanton.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___quanton.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___quanton.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
@@ -310,7 +308,6 @@ var group___quanton =
     [ "TELEM_QUEUE_SIZE", "group___quanton.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___quanton.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___quanton.html#gabda03501745560ca9e546079e20bb392", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___quanton.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "external_i2c_adapter_id", "group___quanton.html#ga8b288aad98fe1c6cf3a3bb557e7158a1", null ],
     [ "pios_com_bridge_id", "group___quanton.html#gac040f05fa048688ee0269c2768698a14", null ],
     [ "pios_com_frsky_sensor_hub_id", "group___quanton.html#ga5c6ed92207820d514741140f5dec7f8a", null ],
@@ -346,13 +343,5 @@ var group___quanton =
     [ "tim_3_12_time_base", "group___quanton.html#ga31bbd3d88fb4228b85462211fd70a60c", null ],
     [ "tim_3_cfg", "group___quanton.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ],
     [ "tim_5_cfg", "group___quanton.html#ga2af7aee2d6120337db88c160c8c91c03", null ],
-    [ "tim_8_cfg", "group___quanton.html#ga1b914f100d3601810dea75526ed3434f", null ],
-    [ "usb_lang_id", "group___quanton.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_lang_id", "group___quanton.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___quanton.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_product_id", "group___quanton.html#gaf6444ec8dc36ac435a435c062ffc5f0e", null ],
-    [ "usb_serial_number", "group___quanton.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_serial_number", "group___quanton.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___quanton.html#ga861d6988709ad6656dfc0f803210b141", null ],
-    [ "usb_vendor_id", "group___quanton.html#ga861d6988709ad6656dfc0f803210b141", null ]
+    [ "tim_8_cfg", "group___quanton.html#ga1b914f100d3601810dea75526ed3434f", null ]
 ];

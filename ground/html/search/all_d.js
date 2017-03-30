@@ -218,7 +218,7 @@ var searchData=
   ['mime_5ftype_5fnotify_5ftable',['mime_type_notify_table',['../group___notify_plugin.html#ga326ccffe8d16a6f14d44c2048dea58a7',1,'notifytablemodel.cpp']]],
   ['mimedata',['mimeData',['../group___notify_plugin.html#gad898510a85b3055557ed33dc8e319b51',1,'NotifyTableModel']]],
   ['mimetypes',['mimeTypes',['../group___notify_plugin.html#ga8f52bed133220f83210db9d483d6aa26',1,'NotifyTableModel']]],
-  ['min',['Min',['../group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4',1,'SwashplateServoSettingsStruct::Min()'],['../group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a',1,'OutputChannelForm::min()']]],
+  ['min',['min',['../group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a',1,'OutputChannelForm::min()'],['../group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4',1,'SwashplateServoSettingsStruct::Min()']]],
   ['min_5fheader_5flength',['MIN_HEADER_LENGTH',['../group___u_a_v_talk_plugin.html#ga0d20c7ff6e0eedb2ab1243c6bf957fd3',1,'UAVTalk']]],
   ['minbootloaderversion',['minBootLoaderVersion',['../group___boards___brain_f_p_v.html#gac06dc25a57021a95f574c14226593260',1,'Brain::minBootLoaderVersion()'],['../group___boards___open_pilot_plugin.html#gae37c1072aa8fa5d21f03f2a61ad6ee32',1,'Revolution::minBootLoaderVersion()'],['../group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee',1,'Quanton::minBootLoaderVersion()'],['../group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129',1,'Core::IBoardType::minBootLoaderVersion()']]],
   ['minimize_5fwindow',['MINIMIZE_WINDOW',['../group___core_plugin.html#ga1bec24c27ebb317beb5bd728f2695a32',1,'Core::Constants']]],

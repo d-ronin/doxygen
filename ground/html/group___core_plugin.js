@@ -475,6 +475,7 @@ var group___core_plugin =
         [ "INPUT_TYPE_HOTTSUMH", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02", null ],
         [ "INPUT_TYPE_IBUS", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df", null ],
         [ "INPUT_TYPE_SRXL", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef", null ],
+        [ "INPUT_TYPE_TBSCROSSFIRE", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87", null ],
         [ "INPUT_TYPE_UNKNOWN", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4", null ],
         [ "INPUT_TYPE_ANY", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a84e5ae720c28d2b265284ee122080daf", null ]
       ] ],
@@ -1099,6 +1100,7 @@ var group___core_plugin =
       [ "INPUT_TYPE_HOTTSUMH", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aaf05e6963a9513bb97a3201470de6b02", null ],
       [ "INPUT_TYPE_IBUS", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aac99a1120f746f02f6f2b373a71a64df", null ],
       [ "INPUT_TYPE_SRXL", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef", null ],
+      [ "INPUT_TYPE_TBSCROSSFIRE", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87", null ],
       [ "INPUT_TYPE_UNKNOWN", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4", null ],
       [ "INPUT_TYPE_ANY", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a84e5ae720c28d2b265284ee122080daf", null ]
     ] ],
@@ -1167,6 +1169,7 @@ var group___core_plugin =
     [ "INPUT_TYPE_SBUS", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837", null ],
     [ "INPUT_TYPE_SBUSNONINVERTED", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1", null ],
     [ "INPUT_TYPE_SRXL", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef", null ],
+    [ "INPUT_TYPE_TBSCROSSFIRE", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87", null ],
     [ "INPUT_TYPE_UNKNOWN", "group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4", null ],
     [ "LINK_PPM", "group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07", null ],
     [ "LINK_TELEM", "group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733", null ],

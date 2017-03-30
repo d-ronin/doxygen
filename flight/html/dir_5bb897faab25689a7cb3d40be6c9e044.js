@@ -27,6 +27,7 @@ var dir_5bb897faab25689a7cb3d40be6c9e044 =
     [ "System", "dir_988aaae8538b81463b0ddcb9f76fb79d.html", "dir_988aaae8538b81463b0ddcb9f76fb79d" ],
     [ "Telemetry", "dir_f18dcc632eea705c8e66657862fa3a2e.html", "dir_f18dcc632eea705c8e66657862fa3a2e" ],
     [ "TxPID", "dir_e679dcc584658329a534210867ae3809.html", "dir_e679dcc584658329a534210867ae3809" ],
+    [ "UAVOCrossfireTelemetry", "dir_513274dbdd65bac09242e23278051de6.html", "dir_513274dbdd65bac09242e23278051de6" ],
     [ "UAVOFrSKYSensorHubBridge", "dir_4c0a7202e75f9fc948c619c79b7f4e4f.html", "dir_4c0a7202e75f9fc948c619c79b7f4e4f" ],
     [ "UAVOFrSKYSPortBridge", "dir_0f64456ba8e6fa4b3703f27f548e4b74.html", "dir_0f64456ba8e6fa4b3703f27f548e4b74" ],
     [ "UAVOHoTTBridge", "dir_647f6d77571261bda2c5d5d2e2120d04.html", "dir_647f6d77571261bda2c5d5d2e2120d04" ],

@@ -32,7 +32,7 @@ var searchData=
   ['video_5factive',['video_active',['../group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096',1,'onscreendisplay.c']]],
   ['video_5fmask_5fpin',['video_mask_pin',['../group___seppuku.html#ga2595b780d783e8261af4620f7fabc212',1,'board_hw_defs.c']]],
   ['video_5fstandard',['video_standard',['../structcharosd__state__t.html#a16f23e4a0a060275711860c25456b0b5',1,'charosd_state_t']]],
-  ['voltage',['voltage',['../structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12',1,'hott_gam_message::voltage()'],['../structhott__eam__message.html#af7163783ba91965c0862a51abf22e719',1,'hott_eam_message::voltage()']]],
+  ['voltage',['voltage',['../structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12',1,'hott_gam_message::voltage()'],['../structhott__eam__message.html#af7163783ba91965c0862a51abf22e719',1,'hott_eam_message::voltage()'],['../structcrsf__payload__battery.html#a834169bcfa41c6e84963b4db90de1d8c',1,'crsf_payload_battery::voltage()'],['../pios__crossfire_8h.html#a8e84682150888ae78b9a41959ca02c7b',1,'voltage():&#160;pios_crossfire.h']]],
   ['voltageadcpin',['voltageADCPin',['../group___battery_module.html#ga820ef3ee96badd1176c7715940a7d15b',1,'battery.c']]],
   ['vsense',['vsense',['../structpios__usb__cfg.html#a5a77bb8822ce4859959d3692f3ca165a',1,'pios_usb_cfg']]],
   ['vsync',['vsync',['../group___p_i_o_s___v_i_d_e_o.html#gac63eaa7410fb308909ea4bcaef4a0996',1,'pios_video_cfg']]],

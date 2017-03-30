@@ -13,10 +13,5 @@ var group___piko_b_l_x_b_l =
     [ "PIOS_INCLUDE_USB_HID", "group___piko_b_l_x_b_l.html#ga71ac5951782a849bcc916fe21f1df092", null ],
     [ "hack_rx_pin", "group___piko_b_l_x_b_l.html#ga83e928a230b4000fc9eee377b0b9c25e", null ],
     [ "PIOS_Board_Init", "group___piko_b_l_x_b_l.html#gabda03501745560ca9e546079e20bb392", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___piko_b_l_x_b_l.html#ga5efd94ab761f254827f38dba474cf642", null ],
-    [ "pios_com_telem_usb_id", "group___piko_b_l_x_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
-    [ "usb_lang_id", "group___piko_b_l_x_b_l.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___piko_b_l_x_b_l.html#ga248e4ab4e834e907dc8da63e25282a77", null ],
-    [ "usb_serial_number", "group___piko_b_l_x_b_l.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___piko_b_l_x_b_l.html#gafbdf81ca8fa2c7004409dba39110afb9", null ]
+    [ "pios_com_telem_usb_id", "group___piko_b_l_x_b_l.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ]
 ];

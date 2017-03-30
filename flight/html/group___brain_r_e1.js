@@ -2,13 +2,11 @@ var group___brain_r_e1 =
 [
     [ "pios_board.c", "brainre1_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2brainre1_2bl_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "brainre1_2bl_2pios__usb__board__data_8c.html", null ],
     [ "board_hw_defs.c", "brainre1_2board-info_2board__hw__defs_8c.html", null ],
     [ "pios_board.h", "brainre1_2board-info_2pios__board_8h.html", null ],
     [ "mcuconf.h", "brainre1_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "brainre1_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2brainre1_2fw_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "brainre1_2fw_2pios__usb__board__data_8c.html", null ],
     [ "splash.h", "brainre1_2fw_2splash_8h.html", null ],
     [ "pios_re1fpga_cfg", "structpios__re1fpga__cfg.html", [
       [ "cdone_pin", "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7", null ],
@@ -359,7 +357,6 @@ var group___brain_r_e1 =
     [ "PIOS_RE1FPGA_SetSyncThreshold", "group___brain_r_e1.html#gabe31089ecd7adf0044f5c9ec074caa1b", null ],
     [ "PIOS_RE1FPGA_SetXOffset", "group___brain_r_e1.html#ga9e28dcb577e3996eab9482f75a84558d", null ],
     [ "PIOS_RE1FPGA_SetXScale", "group___brain_r_e1.html#gaf781b9d89bc5ed624bfdab5c7655224c", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___brain_r_e1.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "settingdUpdatedCb", "group___brain_r_e1.html#ga35bd05421aa6667423406271507c0ae2", null ],
     [ "level_bits", "group___brain_r_e1.html#ga11c0902226e4d67fbe3c03915a5621e2", null ],
     [ "level_mask_bits", "group___brain_r_e1.html#ga1af1755811426df00f4a2077e1bc242c", null ],
@@ -389,13 +386,5 @@ var group___brain_r_e1 =
     [ "pios_packet_handler", "group___brain_r_e1.html#gab0199d5aedb7be35cb1d6880ee21f8ac", null ],
     [ "pios_uavo_settings_fs_id", "group___brain_r_e1.html#gab060f441dd600b08386c0ca1b487217a", null ],
     [ "pios_ws2811", "group___brain_r_e1.html#ga6989625716018e17ce36590971457436", null ],
-    [ "pios_ws2811", "group___brain_r_e1.html#ga6989625716018e17ce36590971457436", null ],
-    [ "usb_lang_id", "group___brain_r_e1.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_lang_id", "group___brain_r_e1.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___brain_r_e1.html#gab70ca78a46c094e62ab176d92940ac98", null ],
-    [ "usb_product_id", "group___brain_r_e1.html#ga44210f22a08f6a204148c13983f65584", null ],
-    [ "usb_serial_number", "group___brain_r_e1.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_serial_number", "group___brain_r_e1.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___brain_r_e1.html#ga9912761b8d2a81b117608331de2bc8f8", null ],
-    [ "usb_vendor_id", "group___brain_r_e1.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf", null ]
+    [ "pios_ws2811", "group___brain_r_e1.html#ga6989625716018e17ce36590971457436", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('inc_2pios__struct__helper_8h.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af8c317a42292b61c93aae91e59118a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inc_2pios__struct__helper_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, type, member)</td></tr>
+<tr class="memitem:af8c317a42292b61c93aae91e59118a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inc_2pios__struct__helper_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, member)</td></tr>
 <tr class="separator:af8c317a42292b61c93aae91e59118a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -135,7 +135,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
+          <td class="paramname"><a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -151,10 +151,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">({                      \</div>
-<div class="line">        const <a class="code" href="group___actuator_module.html#ga5e1cca7d4dbf3be32fd23a529c09343e">typeof</a>( ((<a class="code" href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">type</a> *)0)-&gt;member ) *__mptr = (ptr);    \</div>
-<div class="line">        (<a class="code" href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">type</a> *)( (<span class="keywordtype">char</span> *)__mptr - offsetof(<a class="code" href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">type</a>,member) );})</div>
-<div class="ttc" id="namespaceencode__fonts_html_ae9feea7fd8360f4b21111bde02496994"><div class="ttname"><a href="namespaceencode__fonts.html#ae9feea7fd8360f4b21111bde02496994">encode_fonts.type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> <a href="encode__fonts_8py_source.html#l00230">encode_fonts.py:230</a></div></div>
+<div class="line">        const <a class="code" href="group___actuator_module.html#ga5e1cca7d4dbf3be32fd23a529c09343e">typeof</a>( ((<a class="code" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a> *)0)-&gt;member ) *__mptr = (ptr);    \</div>
+<div class="line">        (<a class="code" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a> *)( (<span class="keywordtype">char</span> *)__mptr - offsetof(<a class="code" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>,member) );})</div>
 <div class="ttc" id="group___actuator_module_html_ga5e1cca7d4dbf3be32fd23a529c09343e"><div class="ttname"><a href="group___actuator_module.html#ga5e1cca7d4dbf3be32fd23a529c09343e">typeof</a></div><div class="ttdeci">static typeof(mixerSettings.Mixer1Vector)*get_mixer_vec(int idx)</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00720">actuator.c:720</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_a1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00050">pios_crossfire.h:50</a></div></div>
 </div><!-- fragment --><p>container_of - cast a member of a structure out to the containing structure : the pointer to the member. : the type of the container struct this is embedded in. : the name of the member within the struct. </p>
 
 <p>Definition at line <a class="el" href="inc_2pios__struct__helper_8h_source.html#l00010">10</a> of file <a class="el" href="inc_2pios__struct__helper_8h_source.html">pios_struct_helper.h</a>.</p>

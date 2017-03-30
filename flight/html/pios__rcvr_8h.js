@@ -7,6 +7,7 @@ var pios__rcvr_8h =
     ] ],
     [ "PIOS_RCVR_Active", "pios__rcvr_8h.html#gaa377fe949ee9b1184d82165b39a7476a", null ],
     [ "PIOS_RCVR_ActiveFromISR", "pios__rcvr_8h.html#gaf462f5635dcf49c9ca3c594a7538ad65", null ],
+    [ "PIOS_RCVR_GetLowerDevice", "pios__rcvr_8h.html#gace12a3768f13c3ac624a6e7c476195b4", null ],
     [ "PIOS_RCVR_Read", "pios__rcvr_8h.html#gab540ecaab89fcca1c715f07536609c2e", null ],
     [ "PIOS_RCVR_WaitActivity", "pios__rcvr_8h.html#ga659833988d07724d3dfeff4929f423b4", null ]
 ];

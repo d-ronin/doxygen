@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('flightstatsmodule_8c_source.html','');
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                                <span class="comment">// only get the initial voltage if we reset on arm or if it is uninitialized</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                <span class="keywordflow">if</span> ((<a class="code" href="group___flight.html#gaea755bd167062e5ac2b6868c4e5c7bcd">settings</a>.StatsBehavior == FLIGHTSTATSSETTINGS_STATSBEHAVIOR_RESETONARM)\</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                        || (flightStatsData.InitialBatteryVoltage == 0)){</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                        <span class="keywordtype">float</span> voltage;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#a8e84682150888ae78b9a41959ca02c7b">voltage</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                        FlightBatteryStateVoltageGet(&amp;voltage);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                        flightStatsData.InitialBatteryVoltage = roundf(1000.<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a> * voltage);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                }</div>
@@ -366,6 +366,7 @@ $(document).ready(function(){initNavTree('flightstatsmodule_8c_source.html','');
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
 <div class="ttc" id="group___flight_html_ga35893a57c91ac9ba5372576050814ce6"><div class="ttname"><a href="group___flight.html#ga35893a57c91ac9ba5372576050814ce6">FlightStatsModuleInitialize</a></div><div class="ttdeci">int32_t FlightStatsModuleInitialize(void)</div><div class="ttdef"><b>Definition:</b> <a href="flightstatsmodule_8c_source.html#l00074">flightstatsmodule.c:74</a></div></div>
 <div class="ttc" id="group___flight_html_gae97498adb375e42056c8a8a3a0709a0f"><div class="ttname"><a href="group___flight.html#gae97498adb375e42056c8a8a3a0709a0f">FlightStatModuleStart</a></div><div class="ttdeci">int32_t FlightStatModuleStart(void)</div><div class="ttdef"><b>Definition:</b> <a href="flightstatsmodule_8c_source.html#l00107">flightstatsmodule.c:107</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_a8e84682150888ae78b9a41959ca02c7b"><div class="ttname"><a href="pios__crossfire_8h.html#a8e84682150888ae78b9a41959ca02c7b">voltage</a></div><div class="ttdeci">uint16_t voltage</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00042">pios_crossfire.h:42</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

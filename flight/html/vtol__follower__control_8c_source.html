@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e237380</span>
+   &#160;<span id="projectnumber">78c61cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('vtol__follower__control_8c_source.html
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">// Interpolate desired velocity and altitude along the path</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">float</span> groundspeed = <a class="code" href="group___tau_labs_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6">interpolate_value</a>(progress-&gt;<a class="code" href="structpath__status.html#a4ec0ce142eafe131f8e2d45d1771ebd3">fractional_progress</a>,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a> = <a class="code" href="group___tau_labs_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6">interpolate_value</a>(progress-&gt;<a class="code" href="structpath__status.html#a4ec0ce142eafe131f8e2d45d1771ebd3">fractional_progress</a>,</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            pathDesired-&gt;StartingVelocity, pathDesired-&gt;EndingVelocity);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">float</span> error_speed = <a class="code" href="group___tau_labs_math.html#ga9ee523815da74e83a8bf8eac7614033c">cubic_deadband</a>(progress-&gt;<a class="code" href="structpath__status.html#a673ce13b12050e471c15f386e8193ac7">error</a>,</div>
@@ -832,6 +832,7 @@ $(document).ready(function(){initNavTree('vtol__follower__control_8c_source.html
 <div class="ttc" id="group___vtol_path_follower_html_gabd99495c8858b7684b30c41baf131b3b"><div class="ttname"><a href="group___vtol_path_follower.html#gabd99495c8858b7684b30c41baf131b3b">loiter_errordecayalpha</a></div><div class="ttdeci">static float loiter_errordecayalpha</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00072">vtol_follower_control.c:72</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ga0152285f9e7185a7cff243c0b7bca4dd"><div class="ttname"><a href="group___vtol_path_follower.html#ga0152285f9e7185a7cff243c0b7bca4dd">vtol_follower_control_land</a></div><div class="ttdeci">int32_t vtol_follower_control_land(const float dT, const float *hold_pos_ned, bool *landed)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00317">vtol_follower_control.c:317</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_gaf4065716661678ffdbf9b3a191c55a76"><div class="ttname"><a href="group___tau_labs_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a></div><div class="ttdeci">void cubic_deadband_setup(float w, float b, float *m, float *r)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00266">misc_math.c:266</a></div></div>
+<div class="ttc" id="pios__crossfire_8h_html_aefe7b920a104fa8e2a7076850709242e"><div class="ttname"><a href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a></div><div class="ttdeci">uint16_t groundspeed</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00043">pios_crossfire.h:43</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ggaa1cc793c473ad52ad906c7feecdb3a37aedb9ece820ccb3967caa3a880963724e"><div class="ttname"><a href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37aedb9ece820ccb3967caa3a880963724e">EAST_VELOCITY</a></div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__priv_8h_source.html#l00051">vtol_follower_priv.h:51</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a20d05d3afb0d30e228fd865aeb02cc0d"><div class="ttname"><a href="msp__messages_8h.html#a20d05d3afb0d30e228fd865aeb02cc0d">yaw</a></div><div class="ttdeci">struct _msp_pid_item yaw</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00098">msp_messages.h:98</a></div></div>
 <div class="ttc" id="vtol__follower__priv_8h_html"><div class="ttname"><a href="vtol__follower__priv_8h.html">vtol_follower_priv.h</a></div><div class="ttdoc">Includes for the internal methods. </div></div>

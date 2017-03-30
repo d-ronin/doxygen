@@ -67,7 +67,7 @@ var searchData=
   ['video_5ftype_5fpal_5frows',['VIDEO_TYPE_PAL_ROWS',['../group___p_i_o_s___v_i_d_e_o.html#ga758b7a87c95821e5ddb70b452c733063',1,'pios_video.h']]],
   ['virtualflybar_2ec',['virtualflybar.c',['../virtualflybar_8c.html',1,'']]],
   ['virtualflybar_2eh',['virtualflybar.h',['../virtualflybar_8h.html',1,'']]],
-  ['voltage',['voltage',['../structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12',1,'hott_gam_message::voltage()'],['../structhott__eam__message.html#af7163783ba91965c0862a51abf22e719',1,'hott_eam_message::voltage()']]],
+  ['voltage',['voltage',['../structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12',1,'hott_gam_message::voltage()'],['../structhott__eam__message.html#af7163783ba91965c0862a51abf22e719',1,'hott_eam_message::voltage()'],['../structcrsf__payload__battery.html#a834169bcfa41c6e84963b4db90de1d8c',1,'crsf_payload_battery::voltage()'],['../pios__crossfire_8h.html#a8e84682150888ae78b9a41959ca02c7b',1,'voltage():&#160;pios_crossfire.h']]],
   ['voltageadcpin',['voltageADCPin',['../group___battery_module.html#ga820ef3ee96badd1176c7715940a7d15b',1,'battery.c']]],
   ['vportfree',['vPortFree',['../_free_r_t_o_s_8h.html#afbacf48830e1bfac7c6ae3bbff056567',1,'vPortFree():&#160;FreeRTOS.h'],['../group___p_i_o_s___h_e_a_p.html#ga55ae4353195ca5dae6aa2e45f7bf9b93',1,'vPortFree(void *buf) __attribute__((alias(&quot;PIOS_free&quot;))):&#160;pios_heap.c']]],
   ['vprintf',['vprintf',['../group___p_i_o_s.html#gaae4ab8b56862ed0a04505cafb8a05112',1,'printf-stdarg.c']]],

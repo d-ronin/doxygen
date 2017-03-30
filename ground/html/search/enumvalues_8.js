@@ -15,6 +15,7 @@ var searchData=
   ['input_5ftype_5fsbus',['INPUT_TYPE_SBUS',['../group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a411cfb75a64850fa69d3978fc7f7d837',1,'Core::IBoardType']]],
   ['input_5ftype_5fsbusnoninverted',['INPUT_TYPE_SBUSNONINVERTED',['../group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a4be041ae589a34b4e9825b644e25eda1',1,'Core::IBoardType']]],
   ['input_5ftype_5fsrxl',['INPUT_TYPE_SRXL',['../group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a67a6040e0defa97a56c0b70b29a0e0ef',1,'Core::IBoardType']]],
+  ['input_5ftype_5ftbscrossfire',['INPUT_TYPE_TBSCROSSFIRE',['../group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87',1,'Core::IBoardType']]],
   ['input_5ftype_5funknown',['INPUT_TYPE_UNKNOWN',['../group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4',1,'Core::IBoardType']]],
   ['inrange',['inrange',['../group___notify_plugin.html#ggad1ed4a0107aa4ec10d481f1f209e5909a4cd2df3d72786caddbe5e90598da981a',1,'NotifyPluginOptionsPage']]],
   ['int16',['INT16',['../class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a449ba7536fca8720c9608dd26c74182a',1,'UAVObjectField']]],

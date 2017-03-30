@@ -17,6 +17,7 @@ var pios__hal_8h =
     [ "PIOS_HAL_ConfigureHID", "pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd", null ],
     [ "PIOS_HAL_ConfigureSerialSpeed", "pios__hal_8h.html#gab68be40fb4878e02c12c06d84755933c", null ],
     [ "PIOS_HAL_CriticalError", "pios__hal_8h.html#gab9a9f4422da783012950ae6468130423", null ],
+    [ "PIOS_HAL_GetReceiver", "pios__hal_8h.html#ad4dbe43009fe97381c15321d5b48723a", null ],
     [ "PIOS_HAL_SetReceiver", "pios__hal_8h.html#a1e6053866147fa6e1721537f33a0c542", null ],
     [ "pios_rcvr_group_map", "pios__hal_8h.html#gadabfc71042c7d61e91a696bfe9e93732", null ]
 ];

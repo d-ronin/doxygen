@@ -10,6 +10,7 @@ var pios__modules_8h =
       [ "PIOS_MODULE_UAVOLIGHTTELEMETRYBRIDGE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00", null ],
       [ "PIOS_MODULE_UAVOMAVLINKBRIDGE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a49f3f6173b12473f732cfd0917e0e6ac", null ],
       [ "PIOS_MODULE_UAVOMSPBRIDGE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a10c67c9258a1eaf13e3c98a9c670b035", null ],
+      [ "PIOS_MODULE_UAVOCROSSFIRETELEMETRY", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a3b774a67997319953ab26d5fa51a3955", null ],
       [ "PIOS_MODULE_VTXCONFIG", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a88f4ecaab86bbf6541b0440ec24ff59a", null ],
       [ "PIOS_MODULE_NUM", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c", null ]
     ] ],

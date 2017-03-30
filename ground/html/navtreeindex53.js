@@ -1,5 +1,8 @@
 var NAVTREEINDEX53 =
 {
+"structboard_log.html":[3,2,47,3],
+"structbutton_settings_struct.html":[3,2,20,3],
+"structcore_1_1_point.html":[3,0,15],
 "structcore_1_1_size.html":[3,0,20],
 "structcore_1_1_url_factory_1_1geo_coding_struct.html":[3,0,24],
 "structdebug_message_struct.html":[3,2,47,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX53 =
 "tst__pluginmanager_8cpp_source.html":[6,0,0,0,0,0,1,0,0,0,2],
 "tst__pluginspec_8cpp.html":[6,0,0,0,0,0,1,0,0,1,1],
 "tst__pluginspec_8cpp_source.html":[6,0,0,0,0,0,1,0,0,1,1],
-"uavconfiginfo_8cpp.html":[6,0,0,0,0,1,10,61],
-"uavconfiginfo_8cpp_source.html":[6,0,0,0,0,1,10,61],
-"uavconfiginfo_8h.html":[6,0,0,0,0,1,10,62],
-"uavconfiginfo_8h_source.html":[6,0,0,0,0,1,10,62]
+"uavconfiginfo_8cpp.html":[6,0,0,0,0,1,10,61]
 };

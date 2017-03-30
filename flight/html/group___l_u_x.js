@@ -3,7 +3,6 @@ var group___l_u_x =
     [ "CMSIS", "group___c_m_s_i_s.html", "group___c_m_s_i_s" ],
     [ "pios_board.c", "lux_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2lux_2bl_2pios__config_8h.html", null ],
-    [ "pios_usb_board_data.c", "lux_2bl_2pios__usb__board__data_8c.html", null ],
     [ "board_hw_defs.c", "lux_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "lux_2board-info_2cmsis__system_8c.html", null ],
     [ "pios_board.h", "lux_2board-info_2pios__board_8h.html", null ],
@@ -213,7 +212,6 @@ var group___l_u_x =
     [ "TELEM_QUEUE_SIZE", "group___l_u_x.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___l_u_x.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___l_u_x.html#gabda03501745560ca9e546079e20bb392", null ],
-    [ "PIOS_USB_BOARD_DATA_Init", "group___l_u_x.html#ga5efd94ab761f254827f38dba474cf642", null ],
     [ "pios_can_id", "group___l_u_x.html#ga0113e473ea49f167a8f2bff77b02ff1b", null ],
     [ "pios_com_aux_id", "group___l_u_x.html#ga83417f60ff58e7cf0ec45ec85dfef380", null ],
     [ "pios_com_bridge_id", "group___l_u_x.html#gac040f05fa048688ee0269c2768698a14", null ],
@@ -243,13 +241,5 @@ var group___l_u_x =
     [ "tim_1_cfg", "group___l_u_x.html#gae8998ae2740c83f160a18fd0d447c3d9", null ],
     [ "tim_2_3_time_base", "group___l_u_x.html#ga60b39ced2092119b6091f4e1c9785804", null ],
     [ "tim_2_cfg", "group___l_u_x.html#ga0b6f7586d1c7a594c67b267ae2a52e76", null ],
-    [ "tim_3_cfg", "group___l_u_x.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ],
-    [ "usb_lang_id", "group___l_u_x.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_lang_id", "group___l_u_x.html#gae0f4171e328334a837e94417dfe669a7", null ],
-    [ "usb_product_id", "group___l_u_x.html#ga44210f22a08f6a204148c13983f65584", null ],
-    [ "usb_product_id", "group___l_u_x.html#ga44210f22a08f6a204148c13983f65584", null ],
-    [ "usb_serial_number", "group___l_u_x.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_serial_number", "group___l_u_x.html#ga7fb0a04d4a254721b671a62407337538", null ],
-    [ "usb_vendor_id", "group___l_u_x.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf", null ],
-    [ "usb_vendor_id", "group___l_u_x.html#ga3fe22ad5aaf4ff9360cb1e1ef059e0bf", null ]
+    [ "tim_3_cfg", "group___l_u_x.html#gaf14eff61e8f08bddf3904d6fc4f17f15", null ]
 ];

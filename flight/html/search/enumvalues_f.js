@@ -132,6 +132,7 @@ var searchData=
   ['pios_5fmodule_5fgps',['PIOS_MODULE_GPS',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8d1467ed9bb5a3868b9fc5af9ba245e5',1,'pios_modules.h']]],
   ['pios_5fmodule_5fnum',['PIOS_MODULE_NUM',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c',1,'pios_modules.h']]],
   ['pios_5fmodule_5fstorm32bgc',['PIOS_MODULE_STORM32BGC',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60af2d760598f3bd56510e2e7a53d792404',1,'pios_modules.h']]],
+  ['pios_5fmodule_5fuavocrossfiretelemetry',['PIOS_MODULE_UAVOCROSSFIRETELEMETRY',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a3b774a67997319953ab26d5fa51a3955',1,'pios_modules.h']]],
   ['pios_5fmodule_5fuavofrskysensorhubbridge',['PIOS_MODULE_UAVOFRSKYSENSORHUBBRIDGE',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a794940042ca54c8338fcc65c30cf99d1',1,'pios_modules.h']]],
   ['pios_5fmodule_5fuavofrskysportbridge',['PIOS_MODULE_UAVOFRSKYSPORTBRIDGE',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a7b87496d0763fbcadf2202d9d415e194',1,'pios_modules.h']]],
   ['pios_5fmodule_5fuavohottbridge',['PIOS_MODULE_UAVOHOTTBRIDGE',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a7a1a43442e11770297f126104ddc0cae',1,'pios_modules.h']]],

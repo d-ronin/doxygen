@@ -11,6 +11,7 @@ var pios__flight__config_8h =
     [ "PIOS_INCLUDE_BL_HELPER", "pios__flight__config_8h.html#a88ebbd46d7ad2cb2374e4886c3194b5e", null ],
     [ "PIOS_INCLUDE_CHIBIOS", "pios__flight__config_8h.html#a161aa898042f41e015d602a72a618d87", null ],
     [ "PIOS_INCLUDE_COM", "pios__flight__config_8h.html#af8a678a8ce2142cdd87b127b78a89add", null ],
+    [ "PIOS_INCLUDE_CROSSFIRE", "pios__flight__config_8h.html#a0715ab2ae2b78b086672041ca0731dc3", null ],
     [ "PIOS_INCLUDE_DSM", "pios__flight__config_8h.html#a543ec4a4aa105d7090ebe2dd3a4dad3b", null ],
     [ "PIOS_INCLUDE_EXTI", "pios__flight__config_8h.html#ae97f0380f771f6caf94de4982ab00f8c", null ],
     [ "PIOS_INCLUDE_FLASH", "pios__flight__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d", null ],
