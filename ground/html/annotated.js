@@ -200,8 +200,6 @@ var annotated =
     [ "MagicWaypointGadgetFactory", "class_magic_waypoint_gadget_factory.html", "class_magic_waypoint_gadget_factory" ],
     [ "MagicWaypointGadgetWidget", "class_magic_waypoint_gadget_widget.html", "class_magic_waypoint_gadget_widget" ],
     [ "MagicWaypointPlugin", "class_magic_waypoint_plugin.html", null ],
-    [ "ManhattanStyle", "class_manhattan_style.html", "class_manhattan_style" ],
-    [ "ManhattanStylePrivate", "class_manhattan_style_private.html", "class_manhattan_style_private" ],
     [ "MapRipForm", "class_map_rip_form.html", "class_map_rip_form" ],
     [ "MetadataDialog", "class_metadata_dialog.html", "class_metadata_dialog" ],
     [ "MetaObjectTreeItem", "class_meta_object_tree_item.html", "class_meta_object_tree_item" ],

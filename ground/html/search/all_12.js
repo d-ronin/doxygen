@@ -116,7 +116,6 @@ var searchData=
   ['replaystarted',['replayStarted',['../group___kml_export_plugin.html#gaa48eebb7c92b043ae7171acf39b8996c',1,'KmlExport::replayStarted()'],['../class_log_file.html#ac5942e468655732a7b3e6d0492c978b8',1,'LogFile::replayStarted()']]],
   ['repositorychanged',['repositoryChanged',['../group___core_plugin.html#ga762e65b1f740933d64ce68588d54d456',1,'Core::IVersionControl']]],
   ['req',['req',['../group___u_a_v_talk_plugin.html#gafe5007a7f451f47110150ee417594a38',1,'TransactionKey']]],
-  ['requestedbasecolor',['requestedBaseColor',['../class_utils_1_1_style_helper.html#a4b21b0513444377946d4dc405b5170d5',1,'Utils::StyleHelper']]],
   ['requestedoperation',['requestedOperation',['../group___uploader.html#gaedebd38a15b25d16846b3aff7da7680f',1,'tl_dfu::DFUObject::ThreadJobStruc']]],
   ['requestimage',['requestImage',['../group___o_p_map_plugin.html#ga47800a9f6d3722318713988d27fde449',1,'SvgImageProvider']]],
   ['requestpixmap',['requestPixmap',['../group___q_m_l.html#ga8d12637852381c8b3d6682d4bed9e4c7',1,'SvgImageProvider']]],

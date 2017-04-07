@@ -13,7 +13,6 @@ var searchData=
   ['levellingutil',['LevellingUtil',['../group___levelling_util.html#ga01074f8582e6874acc1a566e55f30b53',1,'LevellingUtil::LevellingUtil(long measurementCount, long measurementRate)'],['../group___levelling_util.html#ga7112024f171b944816a5c7cdeab07642',1,'LevellingUtil::LevellingUtil(long accelMeasurementCount, long accelMeasurementRate, long gyroMeasurementCount, long gyroMeasurementRate)']]],
   ['license',['license',['../class_extension_system_1_1_plugin_spec.html#aa0aea3276267028b56289d0f594089dd',1,'ExtensionSystem::PluginSpec']]],
   ['lifetime',['lifetime',['../group___notify_plugin.html#ga2a7280994bcb9184ba2a3de6aa2d9dd7',1,'NotificationItem']]],
-  ['lightcolored',['lightColored',['../manhattanstyle_8cpp.html#ad084a16dbbe888baaf84ef9c4e717ae0',1,'manhattanstyle.cpp']]],
   ['limitsinitialize',['limitsInitialize',['../group___u_a_v_objects_plugin.html#ga7ceda7a3dfdcca81d80ed887485c4b76',1,'UAVObjectField']]],
   ['lineardialgadget',['LineardialGadget',['../group___linear_dial_plugin.html#gae00c0aad0b87c017df5b0305d6fb1c5b',1,'LineardialGadget']]],
   ['lineardialgadgetconfiguration',['LineardialGadgetConfiguration',['../group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f',1,'LineardialGadgetConfiguration']]],

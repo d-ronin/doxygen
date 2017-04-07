@@ -5,7 +5,7 @@ var group___sparky =
     [ "pios_config.h", "targets_2sparky_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "sparky_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "sparky_2board-info_2cmsis__system_8c.html", null ],
-    [ "pios_board.h", "sparky_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2sparky_2board-info_2pios__board_8h.html", null ],
     [ "mcuconf.h", "sparky_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "sparky_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2sparky_2fw_2pios__config_8h.html", null ],

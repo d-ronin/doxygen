@@ -40,7 +40,6 @@ var searchData=
   ['startsim',['startSim',['../group___h_i_t_l_plugin.html#ga17c6b00bf3f43c686cca76b3286ba75c',1,'_CONNECTION']]],
   ['starttime',['startTime',['../uavobjecttemplate_8m.html#a9927793f1f69327ecd9ebf938e0deb92',1,'uavobjecttemplate.m']]],
   ['state',['state',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1806625ef956622e6727d0b0d50274aa',1,'ExtensionSystem::Internal::PluginSpecPrivate::state()'],['../class_logging_plugin.html#a4d257e23044cbb739db6b9621025e9ca',1,'LoggingPlugin::state()']]],
-  ['state_5fanimating',['State_Animating',['../manhattanstyle_8cpp.html#a046ecbaeae9f8dfaac51535dd713b19c',1,'manhattanstyle.cpp']]],
   ['stats',['stats',['../group___u_a_v_talk_plugin.html#ga35edebb70765f832afb1174152d4e20c',1,'UAVTalk']]],
   ['status',['status',['../group___uploader.html#gaa753649d63a12f49958be1680a0586ee',1,'tl_dfu::DFUObject::statusReport']]],
   ['str1',['str1',['../uavobjecttemplate_8m.html#a879fc3585ccb07eba075553b21960f45',1,'uavobjecttemplate.m']]],

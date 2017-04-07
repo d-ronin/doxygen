@@ -6,7 +6,7 @@ var group___quanton =
     [ "pios_config.h", "targets_2quanton_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "quanton_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "quanton_2board-info_2cmsis__system_8c.html", null ],
-    [ "pios_board.h", "quanton_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2quanton_2board-info_2pios__board_8h.html", null ],
     [ "usb_conf.h", "quanton_2board-info_2usb__conf_8h.html", null ],
     [ "mcuconf.h", "quanton_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "quanton_2fw_2pios__board_8c.html", null ],

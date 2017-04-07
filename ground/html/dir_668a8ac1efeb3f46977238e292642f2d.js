@@ -53,10 +53,6 @@ var dir_668a8ac1efeb3f46977238e292642f2d =
     [ "iview.h", "iview_8h.html", null ],
     [ "mainwindow.cpp", "mainwindow_8cpp.html", "mainwindow_8cpp" ],
     [ "mainwindow.h", "mainwindow_8h.html", null ],
-    [ "manhattanstyle.cpp", "manhattanstyle_8cpp.html", "manhattanstyle_8cpp" ],
-    [ "manhattanstyle.h", "manhattanstyle_8h.html", [
-      [ "ManhattanStyle", "class_manhattan_style.html", "class_manhattan_style" ]
-    ] ],
     [ "minisplitter.cpp", "minisplitter_8cpp.html", null ],
     [ "minisplitter.h", "minisplitter_8h.html", null ],
     [ "modemanager.cpp", "modemanager_8cpp.html", null ],

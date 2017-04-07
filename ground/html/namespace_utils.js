@@ -13,7 +13,6 @@ var namespace_utils =
     [ "QtColorButton", "class_utils_1_1_qt_color_button.html", "class_utils_1_1_qt_color_button" ],
     [ "StyledBar", "class_utils_1_1_styled_bar.html", "class_utils_1_1_styled_bar" ],
     [ "StyledSeparator", "class_utils_1_1_styled_separator.html", "class_utils_1_1_styled_separator" ],
-    [ "StyleHelper", "class_utils_1_1_style_helper.html", null ],
     [ "TreeWidgetColumnStretcher", "class_utils_1_1_tree_widget_column_stretcher.html", "class_utils_1_1_tree_widget_column_stretcher" ],
     [ "WorldMagModel", "class_utils_1_1_world_mag_model.html", "class_utils_1_1_world_mag_model" ]
 ];

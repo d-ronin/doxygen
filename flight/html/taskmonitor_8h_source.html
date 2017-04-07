@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/Libraries/inc/taskmonitor.h Source File</title>
+<title>dRonin: flight/PiOS/inc/taskmonitor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a08a6c2</span>
+   &#160;<span id="projectnumber">6029321</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -132,17 +132,17 @@ $(document).ready(function(){initNavTree('taskmonitor_8h_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__thread_8h.html">pios_thread.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;int32_t <a class="code" href="group___tau_labs_libraries.html#ga1d9cdd0b4255485c84d4a695a4a9ae0f">TaskMonitorInitialize</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;int32_t <a class="code" href="group___tau_labs_libraries.html#gaebd7f92bc303ab61ff11902000f4c029">TaskMonitorAdd</a>(TaskInfoRunningElem <a class="code" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>, <span class="keyword">struct</span> <a class="code" href="structpios__thread.html">pios_thread</a> *handlep);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;int32_t <a class="code" href="group___tau_labs_libraries.html#gab4fa3fb0ef3763252dd61b06ae6d12ca">TaskMonitorAdd</a>(TaskInfoRunningElem <a class="code" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>, <span class="keyword">struct</span> <a class="code" href="structpios__thread.html">pios_thread</a> *handlep);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;int32_t <a class="code" href="group___tau_labs_libraries.html#ga6c09782e470b26f4506a57ada8037664">TaskMonitorRemove</a>(TaskInfoRunningElem <a class="code" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___tau_labs_libraries.html#ga2212575f7dbf4b2452fb7baa81b48115">TaskMonitorQueryRunning</a>(TaskInfoRunningElem <a class="code" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_libraries.html#ga35c7698b89cc04a2fce87ed36b155fc0">TaskMonitorUpdateAll</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // TASKMONITOR_H</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___tau_labs_libraries_html_gab4fa3fb0ef3763252dd61b06ae6d12ca"><div class="ttname"><a href="group___tau_labs_libraries.html#gab4fa3fb0ef3763252dd61b06ae6d12ca">TaskMonitorAdd</a></div><div class="ttdeci">int32_t TaskMonitorAdd(TaskInfoRunningElem task, struct pios_thread *threadp)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00062">taskmonitor.c:62</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga1d9cdd0b4255485c84d4a695a4a9ae0f"><div class="ttname"><a href="group___tau_labs_libraries.html#ga1d9cdd0b4255485c84d4a695a4a9ae0f">TaskMonitorInitialize</a></div><div class="ttdeci">int32_t TaskMonitorInitialize(void)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00045">taskmonitor.c:45</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga35c7698b89cc04a2fce87ed36b155fc0"><div class="ttname"><a href="group___tau_labs_libraries.html#ga35c7698b89cc04a2fce87ed36b155fc0">TaskMonitorUpdateAll</a></div><div class="ttdeci">void TaskMonitorUpdateAll(void)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00111">taskmonitor.c:111</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga6c09782e470b26f4506a57ada8037664"><div class="ttname"><a href="group___tau_labs_libraries.html#ga6c09782e470b26f4506a57ada8037664">TaskMonitorRemove</a></div><div class="ttdeci">int32_t TaskMonitorRemove(TaskInfoRunningElem task)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00081">taskmonitor.c:81</a></div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_gaebd7f92bc303ab61ff11902000f4c029"><div class="ttname"><a href="group___tau_labs_libraries.html#gaebd7f92bc303ab61ff11902000f4c029">TaskMonitorAdd</a></div><div class="ttdeci">int32_t TaskMonitorAdd(TaskInfoRunningElem task, struct pios_thread *handlep)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00062">taskmonitor.c:62</a></div></div>
 <div class="ttc" id="group___vibration_analysis_module_html_ga69fc8f70b915c190e0db499999159904"><div class="ttname"><a href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a></div><div class="ttdeci">static TaskInfoRunningElem task</div><div class="ttdef"><b>Definition:</b> <a href="vibrationanalysis_8c_source.html#l00078">vibrationanalysis.c:78</a></div></div>
 <div class="ttc" id="structpios__thread_html"><div class="ttname"><a href="structpios__thread.html">pios_thread</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00033">pios_thread.c:33</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga2212575f7dbf4b2452fb7baa81b48115"><div class="ttname"><a href="group___tau_labs_libraries.html#ga2212575f7dbf4b2452fb7baa81b48115">TaskMonitorQueryRunning</a></div><div class="ttdeci">bool TaskMonitorQueryRunning(TaskInfoRunningElem task)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00100">taskmonitor.c:100</a></div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('taskmonitor_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1c0fe066ee3bbbff6911f1b6f0521ee4.html">flight</a></li><li class="navelem"><a class="el" href="dir_bf9e3ce02683c07e5d6503b15b0dd4ed.html">Libraries</a></li><li class="navelem"><a class="el" href="dir_1af4b58997215081d17eeb68c814f4c2.html">inc</a></li><li class="navelem"><a class="el" href="taskmonitor_8h.html">taskmonitor.h</a></li>
+    <li class="navelem"><a class="el" href="dir_1c0fe066ee3bbbff6911f1b6f0521ee4.html">flight</a></li><li class="navelem"><a class="el" href="dir_5a3d8bc9852988e902c2cb41a89fd797.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_200b35b1542c93b64136a2bd7f9276c2.html">inc</a></li><li class="navelem"><a class="el" href="taskmonitor_8h.html">taskmonitor.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

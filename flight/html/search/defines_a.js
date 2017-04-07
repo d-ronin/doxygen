@@ -30,6 +30,5 @@ var searchData=
   ['min_5fnorthing',['MIN_NORTHING',['../mgrs_8c.html#a04c0819c07aa428013da167f5000bf5a',1,'MIN_NORTHING():&#160;mgrs.c'],['../utm_8c.html#a04c0819c07aa428013da167f5000bf5a',1,'MIN_NORTHING():&#160;utm.c']]],
   ['min_5fscale_5ffactor',['MIN_SCALE_FACTOR',['../tranmerc_8c.html#a4290a819c4acab9f7bc9359dd911ddc8',1,'tranmerc.c']]],
   ['min_5fsouth_5flat',['MIN_SOUTH_LAT',['../ups_8c.html#a0869373f30d95a2e1383c2e70c70f04d',1,'ups.c']]],
-  ['min_5futm_5flat',['MIN_UTM_LAT',['../mgrs_8c.html#a842a89cda4780a4061f5c3b0bd015337',1,'mgrs.c']]],
-  ['ml',['ML',['../example_8c.html#ac3bdbb4d7366a20e9c412f169a4722ea',1,'example.c']]]
+  ['min_5futm_5flat',['MIN_UTM_LAT',['../mgrs_8c.html#a842a89cda4780a4061f5c3b0bd015337',1,'mgrs.c']]]
 ];

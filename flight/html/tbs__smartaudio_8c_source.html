@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a08a6c2</span>
+   &#160;<span id="projectnumber">6029321</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('tbs__smartaudio_8c_source.html','');})
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="group___v_t_x_config.html#ga7d0ba33254b1b5378329fcb5f120c346">  156</a></span>&#160;int32_t <a class="code" href="group___v_t_x_config.html#ga7d0ba33254b1b5378329fcb5f120c346">tbsvtx_get_state</a>(uintptr_t usart_id, VTXInfoData *info)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// Send dummy 00 byte before, so line goes high</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        uint8_t <a class="code" href="example_8c.html#a6248cb5c33683ab9f937d2a954646849">msg</a>[7] = {0x00, 0xAA, 0x55, 0x03, 0x00, 0x00, 0x00};</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        uint8_t msg[7] = {0x00, 0xAA, 0x55, 0x03, 0x00, 0x00, 0x00};</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">//msg[5] = PIOS_CRC_updateCRC_TBS(0, &amp;msg[1], 4);</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="group___v_t_x_config.html#ga052e4a7a9a0380782154d3b32c999daa">tbsvtx_tx_msg</a>(usart_id, msg, 7);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//uint8_t msg[5] = {0x00, 0xAA, 0x55, 0x03, 0x00};</span></div>
@@ -475,7 +475,6 @@ $(document).ready(function(){initNavTree('tbs__smartaudio_8c_source.html','');})
 <div class="ttc" id="group___v_t_x_config_html_ga01c075dd85d00ee477a3a836ffbd908f"><div class="ttname"><a href="group___v_t_x_config.html#ga01c075dd85d00ee477a3a836ffbd908f">__attribute__::freq1</a></div><div class="ttdeci">uint8_t freq1</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00063">tbs_smartaudio.c:63</a></div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga695e060560808810748a1a5839b6e79d"><div class="ttname"><a href="group___v_t_x_config.html#ga695e060560808810748a1a5839b6e79d">tbsvtx_set_freq</a></div><div class="ttdeci">int32_t tbsvtx_set_freq(uintptr_t usart_id, uint16_t frequency)</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00242">tbs_smartaudio.c:242</a></div></div>
 <div class="ttc" id="pios__crossfire_8h_html_ab2b3adeb2a67e656ff030b56727fd0ac"><div class="ttname"><a href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a></div><div class="ttdeci">uint8_t length</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00047">pios_crossfire.h:47</a></div></div>
-<div class="ttc" id="example_8c_html_a6248cb5c33683ab9f937d2a954646849"><div class="ttname"><a href="example_8c.html#a6248cb5c33683ab9f937d2a954646849">msg</a></div><div class="ttdeci">unsigned char msg[]</div><div class="ttdef"><b>Definition:</b> <a href="example_8c_source.html#l00049">example.c:49</a></div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga3ddd0091402d85a50cf9eb63ff2c7d71"><div class="ttname"><a href="group___v_t_x_config.html#ga3ddd0091402d85a50cf9eb63ff2c7d71">__attribute__::length</a></div><div class="ttdeci">uint8_t length</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00058">tbs_smartaudio.c:58</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga5e15e044cb0abca89b5655a359d1ef03"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga5e15e044cb0abca89b5655a359d1ef03">PIOS_COM_ReceiveBuffer</a></div><div class="ttdeci">uint16_t PIOS_COM_ReceiveBuffer(uintptr_t com_id, uint8_t *buf, uint16_t buf_len, uint32_t timeout_ms)</div></div>
 <div class="ttc" id="group___v_t_x_config_html_ga1fb01f9a112bc4d26b371db63dfb7a1d"><div class="ttname"><a href="group___v_t_x_config.html#ga1fb01f9a112bc4d26b371db63dfb7a1d">tbsvtx_rx_msg</a></div><div class="ttdeci">int32_t tbsvtx_rx_msg(uintptr_t usart_id, uint8_t n_bytes, uint8_t *buff, uint16_t timeout)</div><div class="ttdef"><b>Definition:</b> <a href="tbs__smartaudio_8c_source.html#l00111">tbs_smartaudio.c:111</a></div></div>

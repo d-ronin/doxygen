@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a08a6c2</span>
+   &#160;<span id="projectnumber">6029321</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -141,80 +141,76 @@ $(document).ready(function(){initNavTree('styledbar_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="styledbar_8h.html">styledbar.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stylehelper_8h.html">stylehelper.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QPixmapCache&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QStyle&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;QStyleOption&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QPixmapCache&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QStyle&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QStyleOption&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">   42</a></span>&#160;<a class="code" href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">StyledBar::StyledBar</a>(QWidget *parent)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : QWidget(parent)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    setProperty(<span class="stringliteral">&quot;lightColored&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">StyledBar::setSingleRow</a>(<span class="keywordtype">bool</span> singleRow)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>, singleRow);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">StyledBar::isSingleRow</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> property(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>).toBool();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">StyledBar::setLightColored</a>(<span class="keywordtype">bool</span> <a class="code" href="manhattanstyle_8cpp.html#ad084a16dbbe888baaf84ef9c4e717ae0">lightColored</a>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    setProperty(<span class="stringliteral">&quot;lightColored&quot;</span>, lightColored);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">   65</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">StyledBar::isLightColored</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> property(<span class="stringliteral">&quot;lightColored&quot;</span>).toBool();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">StyledBar::paintEvent</a>(QPaintEvent *event)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_UNUSED(event)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QStyleOption option;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    option.rect = rect();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    option.state = QStyle::State_Horizontal;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    style()-&gt;drawControl(QStyle::CE_ToolBar, &amp;option, &amp;painter, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">   80</a></span>&#160;<a class="code" href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">StyledSeparator::StyledSeparator</a>(QWidget *parent)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    : QWidget(parent)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    setFixedWidth(10);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">StyledSeparator::paintEvent</a>(QPaintEvent *event)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Q_UNUSED(event)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QStyleOption option;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    option.rect = rect();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    option.state = QStyle::State_Horizontal;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    option.palette = palette();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    style()-&gt;drawPrimitive(QStyle::PE_IndicatorToolBarSeparator, &amp;option, &amp;painter, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="class_utils_1_1_styled_separator_html_aa6476d6b1d22b156d30d0e83290d6752"><div class="ttname"><a href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">Utils::StyledSeparator::StyledSeparator</a></div><div class="ttdeci">StyledSeparator(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00080">styledbar.cpp:80</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_acf3eab7743536d9fde75c2acb8fa8f9b"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">Utils::StyledBar::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00070">styledbar.cpp:70</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_separator_html_a5cddfd7427f9e3f1678aed8b9af58674"><div class="ttname"><a href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">Utils::StyledSeparator::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00086">styledbar.cpp:86</a></div></div>
-<div class="ttc" id="manhattanstyle_8cpp_html_ad084a16dbbe888baaf84ef9c4e717ae0"><div class="ttname"><a href="manhattanstyle_8cpp.html#ad084a16dbbe888baaf84ef9c4e717ae0">lightColored</a></div><div class="ttdeci">bool lightColored(const QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="manhattanstyle_8cpp_source.html#l00095">manhattanstyle.cpp:95</a></div></div>
-<div class="ttc" id="stylehelper_8h_html"><div class="ttname"><a href="stylehelper_8h.html">stylehelper.h</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_a503fb0db65136086aa91968b41a27244"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">Utils::StyledBar::isLightColored</a></div><div class="ttdeci">bool isLightColored() const </div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00065">styledbar.cpp:65</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_aee19fe83b95c77581a06826031a6a897"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">Utils::StyledBar::isSingleRow</a></div><div class="ttdeci">bool isSingleRow() const </div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00055">styledbar.cpp:55</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_a191ca303fdd1efdd8ca2e7d78e678bd8"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">Utils::StyledBar::StyledBar</a></div><div class="ttdeci">StyledBar(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00042">styledbar.cpp:42</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_afe1f9422bff36b0b0ab115268f63f8c5"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">Utils::StyledBar::setLightColored</a></div><div class="ttdeci">void setLightColored(bool lightColored)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00060">styledbar.cpp:60</a></div></div>
-<div class="ttc" id="class_utils_1_1_styled_bar_html_ae0468b2fdc01ce1025ef7ec9b1da109f"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">Utils::StyledBar::setSingleRow</a></div><div class="ttdeci">void setSingleRow(bool singleRow)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00050">styledbar.cpp:50</a></div></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">   40</a></span>&#160;<a class="code" href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">StyledBar::StyledBar</a>(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : QWidget(parent)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    setProperty(<span class="stringliteral">&quot;lightColored&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">StyledBar::setSingleRow</a>(<span class="keywordtype">bool</span> singleRow)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    setProperty(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>, singleRow);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">   53</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">StyledBar::isSingleRow</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> property(<span class="stringliteral">&quot;panelwidget_singlerow&quot;</span>).toBool();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">StyledBar::setLightColored</a>(<span class="keywordtype">bool</span> lightColored)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    setProperty(<span class="stringliteral">&quot;lightColored&quot;</span>, lightColored);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">   63</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">StyledBar::isLightColored</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> property(<span class="stringliteral">&quot;lightColored&quot;</span>).toBool();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">StyledBar::paintEvent</a>(QPaintEvent *event)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_UNUSED(event)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QStyleOption option;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    option.rect = rect();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    option.state = QStyle::State_Horizontal;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    style()-&gt;drawControl(QStyle::CE_ToolBar, &amp;option, &amp;painter, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">   78</a></span>&#160;<a class="code" href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">StyledSeparator::StyledSeparator</a>(QWidget *parent)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    : QWidget(parent)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    setFixedWidth(10);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">StyledSeparator::paintEvent</a>(QPaintEvent *event)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_UNUSED(event)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QStyleOption option;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    option.rect = rect();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    option.state = QStyle::State_Horizontal;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    option.palette = palette();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    style()-&gt;drawPrimitive(QStyle::PE_IndicatorToolBarSeparator, &amp;option, &amp;painter, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="ttc" id="class_utils_1_1_styled_separator_html_aa6476d6b1d22b156d30d0e83290d6752"><div class="ttname"><a href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">Utils::StyledSeparator::StyledSeparator</a></div><div class="ttdeci">StyledSeparator(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00078">styledbar.cpp:78</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_acf3eab7743536d9fde75c2acb8fa8f9b"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#acf3eab7743536d9fde75c2acb8fa8f9b">Utils::StyledBar::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00068">styledbar.cpp:68</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_separator_html_a5cddfd7427f9e3f1678aed8b9af58674"><div class="ttname"><a href="class_utils_1_1_styled_separator.html#a5cddfd7427f9e3f1678aed8b9af58674">Utils::StyledSeparator::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00084">styledbar.cpp:84</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_a503fb0db65136086aa91968b41a27244"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#a503fb0db65136086aa91968b41a27244">Utils::StyledBar::isLightColored</a></div><div class="ttdeci">bool isLightColored() const </div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00063">styledbar.cpp:63</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_aee19fe83b95c77581a06826031a6a897"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#aee19fe83b95c77581a06826031a6a897">Utils::StyledBar::isSingleRow</a></div><div class="ttdeci">bool isSingleRow() const </div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00053">styledbar.cpp:53</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_a191ca303fdd1efdd8ca2e7d78e678bd8"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#a191ca303fdd1efdd8ca2e7d78e678bd8">Utils::StyledBar::StyledBar</a></div><div class="ttdeci">StyledBar(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00040">styledbar.cpp:40</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_afe1f9422bff36b0b0ab115268f63f8c5"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#afe1f9422bff36b0b0ab115268f63f8c5">Utils::StyledBar::setLightColored</a></div><div class="ttdeci">void setLightColored(bool lightColored)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00058">styledbar.cpp:58</a></div></div>
+<div class="ttc" id="class_utils_1_1_styled_bar_html_ae0468b2fdc01ce1025ef7ec9b1da109f"><div class="ttname"><a href="class_utils_1_1_styled_bar.html#ae0468b2fdc01ce1025ef7ec9b1da109f">Utils::StyledBar::setSingleRow</a></div><div class="ttdeci">void setSingleRow(bool singleRow)</div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8cpp_source.html#l00048">styledbar.cpp:48</a></div></div>
 <div class="ttc" id="styledbar_8h_html"><div class="ttname"><a href="styledbar_8h.html">styledbar.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

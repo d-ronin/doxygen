@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['basecolor',['baseColor',['../class_utils_1_1_style_helper.html#a1c0f6ddbf4b41a97fd2180fa80052960',1,'Utils::StyleHelper']]],
   ['basecontext',['BaseContext',['../group___core_plugin.html#gac11e47d56487082f8fb09d4b700f5dfb',1,'Core::BaseContext']]],
   ['basemode',['BaseMode',['../group___core_plugin.html#ga001e234367e66731d03715a0d8aaa2a4',1,'Core::BaseMode']]],
   ['basevalidatinglineeditprivate',['BaseValidatingLineEditPrivate',['../struct_utils_1_1_base_validating_line_edit_private.html#a68effbe5d629bc89b20d768bcf6e336b',1,'Utils::BaseValidatingLineEditPrivate']]],
@@ -17,7 +16,6 @@ var searchData=
   ['boardmanager',['BoardManager',['../group___core_plugin.html#ga4f2c52bc9064410a9ea3b15de6b3b172',1,'Core::BoardManager::BoardManager()'],['../group___core_plugin.html#ga93b0c02bac385343c0968723fad3504a',1,'Core::Internal::CoreImpl::boardManager()'],['../group___core_plugin.html#ga01532acba71e5af5bee3777209aebf7d',1,'Core::ICore::boardManager()'],['../group___core_plugin.html#ga7325ec21ffd857f0bd272a845f80e0c9',1,'Core::Internal::MainWindow::boardManager()']]],
   ['boardtypeunknown',['BoardtypeUnknown',['../group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a',1,'BoardtypeUnknown']]],
   ['bootloaderusbinfo',['bootloaderUSBInfo',['../group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754',1,'Core::IBoardType']]],
-  ['bordercolor',['borderColor',['../class_utils_1_1_style_helper.html#a46f75b94128274c99db6fee18dc845b3',1,'Utils::StyleHelper']]],
   ['bottom',['Bottom',['../group___t_l_map_widget.html#ga9c67095a9af32efd25d873638e82a4d6',1,'internals::Rectangle::Bottom()'],['../group___t_l_map_widget.html#ga56065ec26f127c4763bcb6002a1f4e23',1,'internals::RectLatLng::Bottom()']]],
   ['bound',['bound',['../group___t_l_map_widget.html#ga0a978f088a3c28b59ce7bdf4ac3ab238',1,'internals::PureProjection']]],
   ['boundingrect',['boundingRect',['../group___u_a_v_object_widget_utils.html#ga1715832a609af81720fbed8340ddcd51',1,'Edge']]],
@@ -35,7 +33,6 @@ var searchData=
   ['bufferinit',['bufferInit',['../group__buffer.html#ga244e96c8f96cadc0d4bb38847d33453b',1,'bufferInit(cBuffer *buffer, unsigned char *start, unsigned short size):&#160;buffer.cpp'],['../group__buffer.html#ga244e96c8f96cadc0d4bb38847d33453b',1,'bufferInit(cBuffer *buffer, unsigned char *start, unsigned short size):&#160;buffer.cpp']]],
   ['bufferisnotfull',['bufferIsNotFull',['../group__buffer.html#ga8bee3b83e4465e8f6c76caa8906fdeec',1,'bufferIsNotFull(cBuffer *buffer):&#160;buffer.cpp'],['../group__buffer.html#ga8bee3b83e4465e8f6c76caa8906fdeec',1,'bufferIsNotFull(cBuffer *buffer):&#160;buffer.cpp']]],
   ['buttonstate',['buttonState',['../group___g_c_s_control_gadget_plugin.html#ga515dc70507cb41b37c46ed3fd9addc47',1,'GCSControlGadget::buttonState()'],['../group___g_c_s_control_gadget_plugin.html#gaa59744420fc5100a14c1f340a163484e',1,'GCSControlGadgetOptionsPage::buttonState()']]],
-  ['buttontextcolor',['buttonTextColor',['../class_utils_1_1_style_helper.html#aa10831ed568eb03f5b4c6b0c16def7e9',1,'Utils::StyleHelper']]],
   ['bytesavailable',['bytesAvailable',['../group___kml_export_plugin.html#gaffabd78671931a1cce50ce1f889719db',1,'KmlExport::bytesAvailable()'],['../class_log_file.html#a9b005cee5c39390f3bfd483169dd61fa',1,'LogFile::bytesAvailable()'],['../group___raw_h_i_d_plugin.html#ga5bd4826624aa1689aedbfd1832c4ddb4',1,'RawHID::bytesAvailable()']]],
   ['bytestowrite',['bytesToWrite',['../group___kml_export_plugin.html#gaeb9912a829ae7ee7e6856e63982a1c8e',1,'KmlExport::bytesToWrite()'],['../class_log_file.html#a04610a21928198bfa0d62cc93ff6e439',1,'LogFile::bytesToWrite()'],['../group___raw_h_i_d_plugin.html#gaf0246fd49e7dc9cda82b983312f4a782',1,'RawHID::bytesToWrite()']]]
 ];

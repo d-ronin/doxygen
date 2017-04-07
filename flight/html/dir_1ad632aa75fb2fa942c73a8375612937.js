@@ -60,5 +60,6 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
     [ "pios_usb_desc_hid_cdc.c", "pios__usb__desc__hid__cdc_8c.html", "pios__usb__desc__hid__cdc_8c" ],
     [ "pios_usb_desc_hid_only.c", "pios__usb__desc__hid__only_8c.html", "pios__usb__desc__hid__only_8c" ],
     [ "pios_usb_util.c", "pios__usb__util_8c.html", "pios__usb__util_8c" ],
-    [ "printf-stdarg.c", "printf-stdarg_8c.html", "printf-stdarg_8c" ]
+    [ "printf-stdarg.c", "printf-stdarg_8c.html", "printf-stdarg_8c" ],
+    [ "taskmonitor.c", "taskmonitor_8c.html", "taskmonitor_8c" ]
 ];

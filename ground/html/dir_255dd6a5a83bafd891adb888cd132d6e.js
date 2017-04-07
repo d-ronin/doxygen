@@ -47,8 +47,6 @@ var dir_255dd6a5a83bafd891adb888cd132d6e =
       [ "StyledBar", "class_utils_1_1_styled_bar.html", "class_utils_1_1_styled_bar" ],
       [ "StyledSeparator", "class_utils_1_1_styled_separator.html", "class_utils_1_1_styled_separator" ]
     ] ],
-    [ "stylehelper.cpp", "stylehelper_8cpp.html", null ],
-    [ "stylehelper.h", "stylehelper_8h.html", "stylehelper_8h" ],
     [ "svgimageprovider.cpp", "svgimageprovider_8cpp.html", null ],
     [ "svgimageprovider.h", "svgimageprovider_8h.html", null ],
     [ "treewidgetcolumnstretcher.cpp", "treewidgetcolumnstretcher_8cpp.html", null ],

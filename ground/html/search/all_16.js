@@ -69,7 +69,6 @@ var searchData=
   ['versionyahoosatellite',['VersionYahooSatellite',['../group___t_l_map_widget.html#ga41e9afc6aa6f634642d2aaa246c1a60e',1,'core::ProviderStrings']]],
   ['versionyandexmap',['VersionYandexMap',['../group___t_l_map_widget.html#ga4e8dc0424dc67c6a4248f5bb6a770403',1,'core::ProviderStrings']]],
   ['vertical',['vertical',['../group___config_plugin.html#ggac685fb340fffc7f7f70228ddf964dbb1ac986898babbd9e3d8655246308c6c50d',1,'ConfigInputWidget']]],
-  ['verticalgradient',['verticalGradient',['../class_utils_1_1_style_helper.html#a021e1502e2bf7336c1d11b894a5bc52e',1,'Utils::StyleHelper']]],
   ['vgps',['Vgps',['../_o_p_plots_8m.html#ab441b3f8e4278847ca7f9bfdd0e42cd2',1,'OPPlots.m']]],
   ['vibrationanalysis',['VIBRATIONANALYSIS',['../group___scope_plugin.html#gga4c227eca53956a4dda5ee8877b7868c6a1412daaa24267bf3b82a82d8b8427238',1,'SpectrogramScopeConfig']]],
   ['view',['view',['../group___core_plugin.html#ga885a960ed8f9cdcfa3e01e739743f93d',1,'Core::Internal::SplitterOrView']]],

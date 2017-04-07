@@ -25,6 +25,5 @@ var searchData=
   ['event',['event',['../group___u_a_v_talk_plugin.html#ga6cc8fb5745c2e3cc2a6e0e4512542d7c',1,'Telemetry::ObjectQueueInfo']]],
   ['every',['Every',['../uavobjecttemplate_8m.html#a02572c77cf55e0d264a6d4971d8b067c',1,'uavobjecttemplate.m']]],
   ['exit',['EXIT',['../group___core_plugin.html#ga83e07a95322a89ce775c68835ba44e76',1,'Core::Constants']]],
-  ['extbuttonpixmap',['extButtonPixmap',['../class_manhattan_style_private.html#a4dda9d73663627c2c2e1b5e97a7ec125',1,'ManhattanStylePrivate']]],
   ['extension',['extension',['../class_extension_system_1_1_internal_1_1_plugin_manager_private.html#ac92959afcbee3882ac4df6bf9d00d6b2',1,'ExtensionSystem::Internal::PluginManagerPrivate']]]
 ];

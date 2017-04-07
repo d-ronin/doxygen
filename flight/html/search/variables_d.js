@@ -88,7 +88,7 @@ var searchData=
   ['motor',['motor',['../structmsp__motor.html#a7eb90d6170329e136d8fd1ed5fa16439',1,'msp_motor::motor()'],['../structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18',1,'msp_set_motor::motor()'],['../msp__messages_8h.html#adcc2a40c274cb6f3003557633251d4da',1,'motor():&#160;msp_messages.h']]],
   ['mounted',['mounted',['../structlogfs__state.html#a5d12393331e2e5d7d9141f4437e09ccf',1,'logfs_state']]],
   ['mreceive_5fbuffer',['mReceive_Buffer',['../group___common_f1.html#gaca3645a72a378d046abe531d20dcb5b2',1,'main.c']]],
-  ['msg',['msg',['../structbl__fsm__context.html#ac280dc5b34112b31f1307be2f2b3778b',1,'bl_fsm_context::msg()'],['../example_8c.html#a6248cb5c33683ab9f937d2a954646849',1,'msg():&#160;example.c']]],
+  ['msg',['msg',['../structbl__fsm__context.html#ac280dc5b34112b31f1307be2f2b3778b',1,'bl_fsm_context']]],
   ['msg_5fid',['msg_id',['../structmsp__message__list__item.html#a0ad7e46865d54b9deb8dbc258f4ae79b',1,'msp_message_list_item']]],
   ['msg_5flength',['msg_length',['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gafe3b425f585ddebfdc3480ead5c8c0b8',1,'UAVOFrSKYSensorHubBridge.c']]],
   ['msg_5fnum',['msg_num',['../group___flying_p_i_o.html#ga25bd4019d12cde5075363591eea4611a',1,'main.c']]],

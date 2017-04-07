@@ -4,7 +4,7 @@ var group___d_t_fc =
     [ "pios_board.c", "dtfc_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2dtfc_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "dtfc_2board-info_2board__hw__defs_8c.html", null ],
-    [ "pios_board.h", "dtfc_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2dtfc_2board-info_2pios__board_8h.html", null ],
     [ "mcuconf.h", "dtfc_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "dtfc_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2dtfc_2fw_2pios__config_8h.html", null ],

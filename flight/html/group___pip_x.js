@@ -5,7 +5,7 @@ var group___pip_x =
     [ "pios_config.h", "targets_2pipxtreme_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "pipxtreme_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "pipxtreme_2board-info_2cmsis__system_8c.html", null ],
-    [ "pios_board.h", "pipxtreme_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2pipxtreme_2board-info_2pios__board_8h.html", null ],
     [ "pios_board.c", "pipxtreme_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2pipxtreme_2fw_2pios__config_8h.html", null ],
     [ "ADD_ONE_ADC", "group___pip_x.html#ga71450413220212a746f2b6fb1d42c393", null ],

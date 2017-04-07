@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['r',['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___tau_labs_libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
+  ['r',['r',['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___tau_labs_libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
   ['raceband_5ffreqs',['RACEBAND_FREQS',['../group___on_screen_display.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'RACEBAND_FREQS():&#160;osd_menu.c'],['../group___v_t_x_config.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'RACEBAND_FREQS():&#160;VTXConfig.c']]],
   ['radioeventqueue',['radioEventQueue',['../group___radio_com_bridge_module.html#ga6b7aaa5ae15499fdeb823730418ef967',1,'RadioComBridgeData']]],
   ['radiorxtaskhandle',['radioRxTaskHandle',['../group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117',1,'RadioComBridgeData']]],

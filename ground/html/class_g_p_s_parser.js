@@ -7,10 +7,10 @@ var class_g_p_s_parser =
     [ "fixmode", "group___g_p_s_gadget_plugin.html#ga145563ebabd7ea6b135bad3d05cb9085", null ],
     [ "fixSVs", "group___g_p_s_gadget_plugin.html#gacd7414def0621beab61941370e0dc874", null ],
     [ "fixtype", "group___g_p_s_gadget_plugin.html#gadccc59d425cbc0c0f8da68a3438e4e22", null ],
-    [ "packet", "group___g_p_s_gadget_plugin.html#gaa52c8cc41458c01d411d550d1e3f3d96", null ],
     [ "position", "group___g_p_s_gadget_plugin.html#ga07f9008aa82b159a457c64d35fdaa3fc", null ],
     [ "processInputStream", "group___g_p_s_gadget_plugin.html#ga0d2ef23accd7d2cd3e098012f2f8e948", null ],
     [ "satellite", "group___g_p_s_gadget_plugin.html#gace7bc390ce3acaaf985eafad1b4217b3", null ],
+    [ "satellitesDone", "group___g_p_s_gadget_plugin.html#gac48c69aa25b67da711e4ef50f991dade", null ],
     [ "speedheading", "group___g_p_s_gadget_plugin.html#gad43cce1299e39b4fd4f9c43eb2ebbf67", null ],
     [ "sv", "group___g_p_s_gadget_plugin.html#ga5a65377c76fbafb57f377266034c7396", null ]
 ];

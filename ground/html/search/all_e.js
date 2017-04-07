@@ -10,7 +10,6 @@ var searchData=
   ['naturalfreq',['naturalFreq',['../group___config_plugin.html#ga0bdffc881bb0b293072c161b551e89d4',1,'AutotunedValues']]],
   ['navigatestatechanged',['navigateStateChanged',['../group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494',1,'Core::IOutputPane']]],
   ['navigatestateupdate',['navigateStateUpdate',['../group___core_plugin.html#gad0071aa500a2af9ac99b389a357a3c7f',1,'Core::IOutputPane']]],
-  ['navigationwidgetheight',['navigationWidgetHeight',['../class_utils_1_1_style_helper.html#a23b834aa97cbfce9fa4eef57b93514a6',1,'Utils::StyleHelper']]],
   ['ned',['NED',['../_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6',1,'OPPlots.m']]],
   ['ned2lla_5fhomeecef',['NED2LLA_HomeECEF',['../class_utils_1_1_coordinate_conversions.html#ae2c8e0f3a749495b4fce5a42dff87302',1,'Utils::CoordinateConversions']]],
   ['ned2lla_5fhomella',['NED2LLA_HomeLLA',['../class_utils_1_1_coordinate_conversions.html#aa8dc93690408a9522db08f0a13ec12e1',1,'Utils::CoordinateConversions']]],

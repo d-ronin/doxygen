@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a08a6c2</span>
+   &#160;<span id="projectnumber">6029321</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -156,6 +156,10 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>satellite()
 : <a class="el" href="group___g_p_s_gadget_plugin.html#gace7bc390ce3acaaf985eafad1b4217b3">GPSParser</a>
+</li>
+<li>satellitesDone()
+: <a class="el" href="group___g_p_s_gadget_plugin.html#gac48c69aa25b67da711e4ef50f991dade">GPSParser</a>
+, <a class="el" href="class_gps_snr_widget.html#a6da9939269418f44de4d2edcb35134c3">GpsSnrWidget</a>
 </li>
 <li>save()
 : <a class="el" href="group___u_a_v_object_widget_utils.html#gabae71bcf9c71f99595c365fd49b342fc">ConfigTaskWidget</a>
@@ -386,9 +390,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>setBackgroundCheckered()
 : <a class="el" href="class_utils_1_1_qt_color_button.html#a5fde758d6b75cddc7100d7c8ab9d3b55">Utils::QtColorButton</a>
-</li>
-<li>setBaseColor()
-: <a class="el" href="class_utils_1_1_style_helper.html#a81fb3b975c97e4928bceb3e9d99c76c8">Utils::StyleHelper</a>
 </li>
 <li>setBatteryCells()
 : <a class="el" href="group___core_plugin.html#ga2f293c8923eb3ea09c75f414635b95aa">Core::Internal::GeneralSettings</a>
@@ -1558,7 +1559,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="group___core_plugin.html#ga2380f14d6b9cdc20421d32b660881955">USBDevice</a>
 </li>
 <li>setVersion()
-: <a class="el" href="group___core_plugin.html#gabca8cfe88b7b3320fb60709744be4822">Core::UAVConfigInfo</a>
+: <a class="el" href="group___core_plugin.html#ga10f4af0da477f5dc204e90f098536f8e">Core::UAVConfigInfo</a>
 </li>
 <li>setViewOptions()
 : <a class="el" href="group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52">UAVObjectBrowserWidget</a>
@@ -1653,18 +1654,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetZoomStep()
 : <a class="el" href="group___t_l_map_widget.html#ga45d9811a4fc7a2a8c6a677b4501a031d">mapcontrol::MapGraphicItem</a>
 </li>
-<li>shadowColor()
-: <a class="el" href="class_utils_1_1_style_helper.html#a797cfb57c8e925384584714c22e6c172">Utils::StyleHelper</a>
-</li>
 <li>shortcut()
 : <a class="el" href="group___core_plugin.html#ga3cbc83d8c6c353b4b28c436a691ae970">Core::Command</a>
 , <a class="el" href="group___core_plugin.html#ga84659db83eaa89893189a8bb76e5aa64">Core::Internal::CommandPrivate</a>
+, <a class="el" href="group___core_plugin.html#ga0a8d9dc0a089aa779ff29b23b1cd895f">Core::Internal::Shortcut</a>
 </li>
 <li>Shortcut()
 : <a class="el" href="group___core_plugin.html#ga48cb263cbfb499d8cb9b6d536b002bc7">Core::Internal::Shortcut</a>
-</li>
-<li>shortcut()
-: <a class="el" href="group___core_plugin.html#ga0a8d9dc0a089aa779ff29b23b1cd895f">Core::Internal::Shortcut</a>
 </li>
 <li>ShortcutSettings()
 : <a class="el" href="group___core_plugin.html#gaf70df8ce0b86b325f7a03c1cc0dac919">Core::Internal::ShortcutSettings</a>
@@ -1781,18 +1777,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa">Core::Internal::MainWindow</a>
 , <a class="el" href="class_extension_system_1_1_i_plugin.html#a65c16ebd3a6e89918a99af6515fe68cb">ExtensionSystem::IPlugin</a>
 </li>
-<li>sidebarFontPalette()
-: <a class="el" href="class_utils_1_1_style_helper.html#a08c625a0478b81fc3374c2dbbaff376a">Utils::StyleHelper</a>
-</li>
-<li>sidebarFontSize()
-: <a class="el" href="class_utils_1_1_style_helper.html#a0bd38fbc2c4fd8ec8a623db2cea918c4">Utils::StyleHelper</a>
-</li>
-<li>sidebarHighlight()
-: <a class="el" href="class_utils_1_1_style_helper.html#ab169ac3362d3d44b1dbffad5d358cb6f">Utils::StyleHelper</a>
-</li>
-<li>sidebarShadow()
-: <a class="el" href="class_utils_1_1_style_helper.html#a89b239d5d6a8b6e9f7de1d3000a3cdb7">Utils::StyleHelper</a>
-</li>
 <li>Sign()
 : <a class="el" href="group___t_l_map_widget.html#gaee27ced7a956221b25376a3a66d24225">internals::PureProjection</a>
 </li>
@@ -1806,7 +1790,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">SimulationConfiguration</a>
 </li>
 <li>Simulator()
-: <a class="el" href="group___h_i_t_l_plugin.html#ga8599e13b1f45081a08b7dd1f8c2a988b">Simulator</a>
+: <a class="el" href="class_simulator.html#a031573bfcfe2e0f5c9539bcc1c7fc5d9">Simulator</a>
 </li>
 <li>simulatorConnected()
 : <a class="el" href="group___h_i_t_l_plugin.html#gaa228d07fc331cb9526ea7e35657c762c">Simulator</a>
@@ -1833,16 +1817,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="class_calibration.html#a147fed7878b2ce2578f912e377447cc8">Calibration</a>
 </li>
 <li>Size()
-: <a class="el" href="group___t_l_map_widget.html#ga03e339782ac393b92ad72e1d850589f6">core::Size</a>
+: <a class="el" href="group___t_l_map_widget.html#gaf57b3247af9a9399f85615e6ad8a6981">core::Size</a>
 </li>
 <li>size()
 : <a class="el" href="classffft_1_1_dyn_array.html#aab5a878741b62b079c94db354357127d">ffft::DynArray&lt; T &gt;</a>
 </li>
 <li>Size()
 : <a class="el" href="group___t_l_map_widget.html#ga9e982e2f84c0c4faf6fb0a09d57dc18b">internals::RectLatLng</a>
-</li>
-<li>sizeFromContents()
-: <a class="el" href="class_manhattan_style.html#ae73b65e8a877259659ebe19fd11969e6">ManhattanStyle</a>
 </li>
 <li>sizeHint()
 : <a class="el" href="group___u_a_v_object_browser_plugin.html#gaed46b06e0a245805247c1be3c62f97ee">BrowserItemDelegate</a>
@@ -1877,7 +1858,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="group___scope_plugin.html#gaaac18b4298b3bb722d59928336254cd1">SpectrogramData</a>
 </li>
 <li>SpectrogramScopeConfig()
-: <a class="el" href="group___scope_plugin.html#ga8acde1e8cd1057e318cdccaa2d2935b4">SpectrogramScopeConfig</a>
+: <a class="el" href="group___scope_plugin.html#ga28b2d6eb7e9d8b459d67cef767b92fc5">SpectrogramScopeConfig</a>
 </li>
 <li>speed()
 : <a class="el" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration</a>
@@ -1896,7 +1877,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>split()
 : <a class="el" href="group___core_plugin.html#ga3f7c2a5ff1dacd0fd10a5bd17a3fd52a">Core::Internal::SplitterOrView</a>
-, <a class="el" href="group___core_plugin.html#gabcf94b780cce894a494827a231c8cfa0">Core::UAVGadgetManager</a>
+, <a class="el" href="group___core_plugin.html#gaeccb858176046a9efd6e76d0af690e6e">Core::UAVGadgetManager</a>
 </li>
 <li>splitSideBySide()
 : <a class="el" href="group___core_plugin.html#ga65f8524b1999c58d5305b0f8c3cc84ee">Core::UAVGadgetManager</a>
@@ -1906,15 +1887,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SplitterOrView()
 : <a class="el" href="group___core_plugin.html#gad2c8699c073c3d714f6f73036a1efabc">Core::Internal::SplitterOrView</a>
-</li>
-<li>standardIconImplementation()
-: <a class="el" href="class_manhattan_style.html#a391def9791426400daf51a02a5a58786">ManhattanStyle</a>
-</li>
-<li>standardPalette()
-: <a class="el" href="class_manhattan_style.html#a9045a941a0161ceafde31250e553909c">ManhattanStyle</a>
-</li>
-<li>standardPixmap()
-: <a class="el" href="class_manhattan_style.html#a175a432cafb816b4ac5f32966bc8acd3">ManhattanStyle</a>
 </li>
 <li>standardVersionHandlingOK()
 : <a class="el" href="group___core_plugin.html#ga930044c2182f030e9e7dbae1ced5d69e">Core::UAVConfigInfo</a>
@@ -1960,9 +1932,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>statusBar()
 : <a class="el" href="group___core_plugin.html#gad0b6f29ad56dcf30aca0db939eb985a0">Core::Internal::MainWindow</a>
-</li>
-<li>statusBarGradient()
-: <a class="el" href="class_utils_1_1_style_helper.html#a1266d64952f34804e8b500ff0c4e690c">Utils::StyleHelper</a>
 </li>
 <li>step()
 : <a class="el" href="classffft_1_1_osc_sin_cos.html#a442975ce6388271ea78998c080364e08">ffft::OscSinCos&lt; T &gt;</a>
@@ -2067,17 +2036,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>StyledSeparator()
 : <a class="el" href="class_utils_1_1_styled_separator.html#aa6476d6b1d22b156d30d0e83290d6752">Utils::StyledSeparator</a>
 </li>
-<li>styleHint()
-: <a class="el" href="class_manhattan_style.html#a52818c2da80eda9a0961a672d7d0f9d7">ManhattanStyle</a>
-</li>
 <li>subContainers()
 : <a class="el" href="group___core_plugin.html#ga63f59fe25c7e6fa20891fca2ee620f16">Core::Internal::ActionContainerPrivate</a>
-</li>
-<li>subControlRect()
-: <a class="el" href="class_manhattan_style.html#a50a13d81cf4a2ccf6f94f68ce6f9f069">ManhattanStyle</a>
-</li>
-<li>subElementRect()
-: <a class="el" href="class_manhattan_style.html#a5263b6ad64fb081f45d6a1c9553492dd">ManhattanStyle</a>
 </li>
 <li>Subtract()
 : <a class="el" href="group___t_l_map_widget.html#ga1666139610f408d4ec78b5afafdff3d9">internals::PointLatLng</a>

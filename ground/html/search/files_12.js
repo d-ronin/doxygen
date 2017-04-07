@@ -69,8 +69,6 @@ var searchData=
   ['styleanimator_2eh',['styleanimator.h',['../styleanimator_8h.html',1,'']]],
   ['styledbar_2ecpp',['styledbar.cpp',['../styledbar_8cpp.html',1,'']]],
   ['styledbar_2eh',['styledbar.h',['../styledbar_8h.html',1,'']]],
-  ['stylehelper_2ecpp',['stylehelper.cpp',['../stylehelper_8cpp.html',1,'']]],
-  ['stylehelper_2eh',['stylehelper.h',['../stylehelper_8h.html',1,'']]],
   ['summarypage_2ecpp',['summarypage.cpp',['../summarypage_8cpp.html',1,'']]],
   ['summarypage_2eh',['summarypage.h',['../summarypage_8h.html',1,'']]],
   ['surfacepage_2ecpp',['surfacepage.cpp',['../surfacepage_8cpp.html',1,'']]],

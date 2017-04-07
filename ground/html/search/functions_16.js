@@ -23,7 +23,6 @@ var searchData=
   ['version',['version',['../class_extension_system_1_1_plugin_spec.html#aa4e3f800e656d5c849a91247fa4a5b71',1,'ExtensionSystem::PluginSpec::version()'],['../group___core_plugin.html#ga445d72afa775caf72f6d61884a36e7aa',1,'Core::UAVConfigInfo::version()']]],
   ['versioncompare',['versionCompare',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a9b2b47f08743b4cb4dc977755390959a',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
   ['versiondialog',['VersionDialog',['../group___core_plugin.html#ga3a3324c5e62d8d766d8ef28592cb11fa',1,'Core::Internal::VersionDialog']]],
-  ['verticalgradient',['verticalGradient',['../class_utils_1_1_style_helper.html#a021e1502e2bf7336c1d11b894a5bc52e',1,'Utils::StyleHelper']]],
   ['view',['view',['../group___core_plugin.html#ga885a960ed8f9cdcfa3e01e739743f93d',1,'Core::Internal::SplitterOrView']]],
   ['viewoptionschanged',['viewOptionsChanged',['../group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c',1,'UAVObjectBrowserWidget']]],
   ['visibilitychanged',['visibilityChanged',['../group___core_plugin.html#ga3128a309873592d64cddf36d88f76856',1,'Core::IOutputPane']]],

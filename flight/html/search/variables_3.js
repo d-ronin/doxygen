@@ -87,7 +87,6 @@ var searchData=
   ['clock_5fcfg',['clock_cfg',['../group___p_i_o_s.html#gaccd4e9ea18088f8437e0e7c1311e8a87',1,'pios_frsky_rssi_cfg::clock_cfg()'],['../group___p_i_o_s.html#ga45877ae07dece21484b4f5bd3bd4ec43',1,'pios_ws2811_cfg::clock_cfg()'],['../group___p_i_o_s.html#ga65ef061a24ac7629029b77879a408983',1,'pios_dac_cfg::clock_cfg()']]],
   ['cmd',['cmd',['../group___control.html#gadcdf61257c4d3943828d4681ff0d78f6',1,'cmd():&#160;transmitter_control.c'],['../namespacepx__mkfw.html#a0b60f547387864bc5d5a0bd2c549c886',1,'px_mkfw.cmd()']]],
   ['cno',['cno',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#a05f735590e6c4aaa53746a4756695b09',1,'UBX_NAV_SVINFO_SV']]],
-  ['codeword',['codeword',['../example_8c.html#af45402c50a301706fd28b80e00c1868f',1,'example.c']]],
   ['coefffile',['CoeffFile',['../group___tau_labs_libraries.html#gadc4bd811b612e4d628e1dcae6dc76d9b',1,'WorldMagModel.c']]],
   ['com',['com',['../structmsp__bridge.html#aa7e13d38418c73e0ce0272e97cb9172e',1,'msp_bridge']]],
   ['com2usbbridgetaskhandle',['com2UsbBridgeTaskHandle',['../group___com_usb_bridge_module.html#ga0f31bdae65449b270ca0112dc1631067',1,'ComUsbBridge.c']]],

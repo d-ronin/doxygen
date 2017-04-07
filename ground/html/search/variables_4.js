@@ -19,7 +19,6 @@ var searchData=
   ['decimalyear',['DecimalYear',['../struct_w_m_mtype___date.html#a66b662f919345a2e81889ef080947ec1',1,'WMMtype_Date']]],
   ['decl',['Decl',['../struct_w_m_mtype___geo_magnetic_elements.html#a683f5cce0a61ae941ac21ac3245b590a',1,'WMMtype_GeoMagneticElements']]],
   ['decldot',['Decldot',['../struct_w_m_mtype___geo_magnetic_elements.html#ac37defec32ce23551b0d787961d5e615',1,'WMMtype_GeoMagneticElements']]],
-  ['default_5fbase_5fcolor',['DEFAULT_BASE_COLOR',['../class_utils_1_1_style_helper.html#a6691e9a97aaa644214756235ef36738a',1,'Utils::StyleHelper']]],
   ['defaultvalues',['defaultValues',['../class_u_a_v_object_field.html#a33b34642ea8665710ec8da3702965933',1,'UAVObjectField']]],
   ['deg2rad',['DEG2RAD',['../_o_p_plots_8m.html#afb79d9f14bae5ad3ff0e2433ef23e597',1,'OPPlots.m']]],
   ['delt',['delT',['../group___h_i_t_l_plugin.html#gadbdb09f62a5ce0e914e8551ce3bd0bbd',1,'Output2Hardware']]],

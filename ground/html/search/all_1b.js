@@ -127,7 +127,6 @@ var searchData=
   ['_7emagicwaypointgadgetfactory',['~MagicWaypointGadgetFactory',['../group___g_c_s_control_gadget_plugin.html#ga0b16d239f1aa3859ed11c4a572a9e5fd',1,'MagicWaypointGadgetFactory']]],
   ['_7emagicwaypointgadgetwidget',['~MagicWaypointGadgetWidget',['../group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba',1,'MagicWaypointGadgetWidget']]],
   ['_7emainwindow',['~MainWindow',['../group___core_plugin.html#gae98d00a93bc118200eeef9f9bba1dba7',1,'Core::Internal::MainWindow']]],
-  ['_7emanhattanstyle',['~ManhattanStyle',['../class_manhattan_style.html#a6b9736a4e80d76843fcc68abaf59d38a',1,'ManhattanStyle']]],
   ['_7emapripform',['~MapRipForm',['../group___t_l_map_widget.html#gabc703f61b0a3e678f85ec3fa6b9c896a',1,'MapRipForm']]],
   ['_7emetadatadialog',['~MetadataDialog',['../group___telemetry_scheduler_gadget_plugin.html#gae1f623f8f053ac2dc1582cde50cd2d05',1,'MetadataDialog']]],
   ['_7emixercurve',['~MixerCurve',['../group___config_plugin.html#ga1ecc6d88c82c0c4403185f1741bd096c',1,'MixerCurve']]],

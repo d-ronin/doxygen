@@ -69,7 +69,6 @@ var searchData=
   ['replayfinished',['replayFinished',['../group___kml_export_plugin.html#ga2009ff38ac3efaa8c6a250b105639193',1,'KmlExport::replayFinished()'],['../class_log_file.html#a2ec76a32cecae257dda0682cab448572',1,'LogFile::replayFinished()']]],
   ['replaystarted',['replayStarted',['../group___kml_export_plugin.html#gaa48eebb7c92b043ae7171acf39b8996c',1,'KmlExport::replayStarted()'],['../class_log_file.html#ac5942e468655732a7b3e6d0492c978b8',1,'LogFile::replayStarted()']]],
   ['repositorychanged',['repositoryChanged',['../group___core_plugin.html#ga762e65b1f740933d64ce68588d54d456',1,'Core::IVersionControl']]],
-  ['requestedbasecolor',['requestedBaseColor',['../class_utils_1_1_style_helper.html#a4b21b0513444377946d4dc405b5170d5',1,'Utils::StyleHelper']]],
   ['requestimage',['requestImage',['../group___o_p_map_plugin.html#ga47800a9f6d3722318713988d27fde449',1,'SvgImageProvider']]],
   ['requestpixmap',['requestPixmap',['../group___q_m_l.html#ga8d12637852381c8b3d6682d4bed9e4c7',1,'SvgImageProvider']]],
   ['requestupdate',['requestUpdate',['../group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0',1,'UAVObject']]],

@@ -5,8 +5,6 @@ var searchData=
   ['magicwaypointgadgetwidget',['MagicWaypointGadgetWidget',['../class_magic_waypoint_gadget_widget.html',1,'']]],
   ['magicwaypointplugin',['MagicWaypointPlugin',['../class_magic_waypoint_plugin.html',1,'']]],
   ['mainwindow',['MainWindow',['../class_core_1_1_internal_1_1_main_window.html',1,'Core::Internal']]],
-  ['manhattanstyle',['ManhattanStyle',['../class_manhattan_style.html',1,'']]],
-  ['manhattanstyleprivate',['ManhattanStylePrivate',['../class_manhattan_style_private.html',1,'']]],
   ['mapcircle',['MapCircle',['../classmapcontrol_1_1_map_circle.html',1,'mapcontrol']]],
   ['mapgraphicitem',['MapGraphicItem',['../classmapcontrol_1_1_map_graphic_item.html',1,'mapcontrol']]],
   ['mapline',['MapLine',['../classmapcontrol_1_1_map_line.html',1,'mapcontrol']]],

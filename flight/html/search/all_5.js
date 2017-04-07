@@ -123,7 +123,6 @@ var searchData=
   ['events_5funused_5fthrottled',['events_unused_throttled',['../group___u_a_v_object_handling.html#ga6ac18a07a98d0f36e29e967d48f10703',1,'uavobjectmanager.c']]],
   ['eventstats',['EventStats',['../struct_event_stats.html',1,'']]],
   ['evinfo',['evInfo',['../struct_periodic_object_list_struct.html#aa9f3d67a5c62c87059e84abb1cfb857b',1,'PeriodicObjectListStruct']]],
-  ['example_2ec',['example.c',['../example_8c.html',1,'']]],
   ['expapprox',['expapprox',['../group___tau_labs_math.html#gaf400ecfa0d2805d9cd0159c47f716740',1,'misc_math.h']]],
   ['expect_5fcapacity',['expect_capacity',['../group___p_i_o_s___f_l_a_s_h.html#ga33911ac74387cebdbc4bb2fe3d5541a6',1,'pios_flash_jedec_cfg']]],
   ['expect_5fmanufacturer',['expect_manufacturer',['../group___p_i_o_s___f_l_a_s_h.html#gab7416f66a2c392cc5a27e12cbf4e9a07',1,'pios_flash_jedec_cfg']]],

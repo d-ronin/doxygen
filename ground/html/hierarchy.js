@@ -65,7 +65,6 @@ var hierarchy =
     [ "UAVObjectField::LimitStruct", "struct_u_a_v_object_field_1_1_limit_struct.html", null ],
     [ "LLAVCoordinates", "struct_l_l_a_v_coordinates.html", null ],
     [ "internals::LoadTask", "structinternals_1_1_load_task.html", null ],
-    [ "ManhattanStylePrivate", "class_manhattan_style_private.html", null ],
     [ "core::MemoryCache", "classcore_1_1_memory_cache.html", [
       [ "core::TLMaps", "classcore_1_1_t_l_maps.html", null ]
     ] ],
@@ -152,7 +151,8 @@ var hierarchy =
       [ "WaypointDialog", "class_waypoint_dialog.html", null ]
     ] ],
     [ "QFrame", null, [
-      [ "MixerCurve", "class_mixer_curve.html", null ]
+      [ "MixerCurve", "class_mixer_curve.html", null ],
+      [ "OPMapGadgetWidget", "class_o_p_map_gadget_widget.html", null ]
     ] ],
     [ "QGLWidget", null, [
       [ "ModelViewGadgetWidget", "class_model_view_gadget_widget.html", null ]
@@ -618,9 +618,6 @@ var hierarchy =
       [ "VehicleTrim", "class_vehicle_trim.html", null ],
       [ "XmlConfig", "class_xml_config.html", null ]
     ] ],
-    [ "QProxyStyle", null, [
-      [ "ManhattanStyle", "class_manhattan_style.html", null ]
-    ] ],
     [ "QQuickImageProvider", null, [
       [ "SvgImageProvider", "class_svg_image_provider.html", null ]
     ] ],
@@ -721,7 +718,6 @@ var hierarchy =
       [ "opmap_edit_waypoint_dialog", "classopmap__edit__waypoint__dialog.html", null ],
       [ "opmap_statusbar_widget", "classopmap__statusbar__widget.html", null ],
       [ "opmap_zoom_slider_widget", "classopmap__zoom__slider__widget.html", null ],
-      [ "OPMapGadgetWidget", "class_o_p_map_gadget_widget.html", null ],
       [ "PluginDialog", "class_plugin_dialog.html", null ],
       [ "TelemetrySchedulerGadgetWidget", "class_telemetry_scheduler_gadget_widget.html", null ],
       [ "UAVObjectBrowserWidget", "class_u_a_v_object_browser_widget.html", null ],
@@ -796,7 +792,6 @@ var hierarchy =
     [ "core::Size", "structcore_1_1_size.html", null ],
     [ "internals::SizeLatLng", "structinternals_1_1_size_lat_lng.html", null ],
     [ "struct_cBuffer", "structstruct__c_buffer.html", null ],
-    [ "Utils::StyleHelper", "class_utils_1_1_style_helper.html", null ],
     [ "SwashplateServoSettingsStruct", "struct_swashplate_servo_settings_struct.html", null ],
     [ "t_home", "structt__home.html", null ],
     [ "Telemetry::TelemetryStats", "struct_telemetry_1_1_telemetry_stats.html", null ],

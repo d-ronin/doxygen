@@ -13,7 +13,6 @@ var searchData=
   ['qmlviewgadgetwidget',['QmlViewGadgetWidget',['../group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab',1,'QmlViewGadgetWidget']]],
   ['qnotifydebug',['qNotifyDebug',['../group___notify_plugin.html#gaa12b557f54e20bfddabd963a0eccbaac',1,'notifylogging.cpp']]],
   ['qreadonlycheckbox',['QReadOnlyCheckBox',['../class_q_read_only_check_box.html#ae9a0f03898cad27c63ea182fa53e7c1c',1,'QReadOnlyCheckBox']]],
-  ['qt_5fblurimage',['qt_blurImage',['../stylehelper_8h.html#abcad618052e7e82278de007f62d81e9c',1,'stylehelper.h']]],
   ['qt_5fprepend_5fnamespace',['QT_PREPEND_NAMESPACE',['../pluginspec_8cpp.html#aa34bc102ad579639e321354bc66b039f',1,'pluginspec.cpp']]],
   ['qt_5ftranslate_5fnoop',['QT_TRANSLATE_NOOP',['../pathchooser_8cpp.html#a16e29e1b1aa98988fcffee860cd361a3',1,'pathchooser.cpp']]],
   ['qtcolorbutton',['QtColorButton',['../class_utils_1_1_qt_color_button.html#a862470cc17ccbdbf69d12e6b3baffd3f',1,'Utils::QtColorButton']]],

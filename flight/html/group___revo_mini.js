@@ -6,7 +6,7 @@ var group___revo_mini =
     [ "pios_config.h", "targets_2revolution_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "revolution_2board-info_2board__hw__defs_8c.html", null ],
     [ "cmsis_system.c", "revolution_2board-info_2cmsis__system_8c.html", null ],
-    [ "pios_board.h", "revolution_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2revolution_2board-info_2pios__board_8h.html", null ],
     [ "usb_conf.h", "revolution_2board-info_2usb__conf_8h.html", null ],
     [ "mcuconf.h", "revolution_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "revolution_2fw_2pios__board_8c.html", null ],

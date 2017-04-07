@@ -128,5 +128,6 @@ var dir_200b35b1542c93b64136a2bd7f9276c2 =
     [ "pios_usb_util.h", "pios__usb__util_8h.html", "pios__usb__util_8h" ],
     [ "pios_usbhook.h", "pios__usbhook_8h.html", "pios__usbhook_8h" ],
     [ "pios_wdg.h", "pios__wdg_8h.html", "pios__wdg_8h" ],
-    [ "pios_ws2811.h", "pios__ws2811_8h.html", "pios__ws2811_8h" ]
+    [ "pios_ws2811.h", "pios__ws2811_8h.html", "pios__ws2811_8h" ],
+    [ "taskmonitor.h", "taskmonitor_8h.html", "taskmonitor_8h" ]
 ];

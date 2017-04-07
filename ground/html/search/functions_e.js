@@ -6,7 +6,6 @@ var searchData=
   ['namelc',['NAMELC',['../packet-op-uavobjects-template_8c.html#a2354d513d998a039aa93c186576000a6',1,'packet-op-uavobjects-template.c']]],
   ['navigatestatechanged',['navigateStateChanged',['../group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494',1,'Core::IOutputPane']]],
   ['navigatestateupdate',['navigateStateUpdate',['../group___core_plugin.html#gad0071aa500a2af9ac99b389a357a3c7f',1,'Core::IOutputPane']]],
-  ['navigationwidgetheight',['navigationWidgetHeight',['../class_utils_1_1_style_helper.html#a23b834aa97cbfce9fa4eef57b93514a6',1,'Utils::StyleHelper']]],
   ['ned2lla_5fhomeecef',['NED2LLA_HomeECEF',['../class_utils_1_1_coordinate_conversions.html#ae2c8e0f3a749495b4fce5a42dff87302',1,'Utils::CoordinateConversions']]],
   ['ned2lla_5fhomella',['NED2LLA_HomeLLA',['../class_utils_1_1_coordinate_conversions.html#aa8dc93690408a9522db08f0a13ec12e1',1,'Utils::CoordinateConversions']]],
   ['neutral',['neutral',['../group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e',1,'OutputChannelForm']]],

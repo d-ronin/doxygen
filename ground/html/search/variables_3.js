@@ -25,7 +25,6 @@ var searchData=
   ['classname',['className',['../group___usage_stats_plugin.html#ga2ae977df58ffb21d98ca8c86ab332632',1,'widgetActionInfoType']]],
   ['close',['CLOSE',['../group___core_plugin.html#ga0728832ead190842b8b6a1f54f1db318',1,'Core::Constants']]],
   ['closeall',['CLOSEALL',['../group___core_plugin.html#ga18551ff228185c8b7de03d217aa2ad8e',1,'Core::Constants']]],
-  ['closebuttonpixmap',['closeButtonPixmap',['../class_manhattan_style_private.html#a755baa99d391cc119982666881da24ab',1,'ManhattanStylePrivate']]],
   ['closeothers',['CLOSEOTHERS',['../group___core_plugin.html#gac74ced4906f54555abf42a6d3b4b89d7',1,'Core::Constants']]],
   ['coefffile',['CoeffFile',['../worldmagmodel_8cpp.html#ab014184085b9a8939feae7e69ed73d4f',1,'worldmagmodel.cpp']]],
   ['color',['color',['../group___scope_plugin.html#ga287675d34d68fc61f7de6bc82fed788d',1,'Plot2dCurveConfiguration::color()'],['../group___scope_plugin.html#gab12e6f531f6e4242ccbb585aec40b245',1,'Plot3dCurveConfiguration::color()']]],

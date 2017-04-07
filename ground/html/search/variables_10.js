@@ -36,7 +36,6 @@ var searchData=
   ['pressure',['pressure',['../group___h_i_t_l_plugin.html#ga9c1fdbe8d01c5346b54b71beff806a7e',1,'Output2Hardware']]],
   ['product',['product',['../group___core_plugin.html#ga5e622955d0d8c0244266ab1702000d92',1,'Core::IBoardType::USBInfo::product()'],['../group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8',1,'USBPortInfo::product()']]],
   ['productid',['productID',['../group___core_plugin.html#ga454be60cf2bba54712173af606a748b8',1,'Core::IBoardType::USBInfo::productID()'],['../group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97',1,'USBPortInfo::productID()']]],
-  ['progressfadeanimationduration',['progressFadeAnimationDuration',['../class_utils_1_1_style_helper.html#a713d79163742741b8cd374502cc65f24',1,'Utils::StyleHelper']]],
   ['protocol',['protocol',['../group___i_p_conn_plugin.html#gadf271c4cbc8fe6e847812a8e0b4813b8',1,'IPConnectionConfiguration::Host']]],
   ['proxy',['Proxy',['../group___t_l_map_widget.html#ga4851a6205d1885048a3417f736ec8679',1,'core::UrlFactory']]],
   ['pxres1000km',['pxRes1000km',['../group___t_l_map_widget.html#ga5abde0bbaaa9517978da18398333e69b',1,'internals::Core']]],

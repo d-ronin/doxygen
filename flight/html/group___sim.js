@@ -6,7 +6,7 @@ var group___sim =
     [ "usb_conf.h", "simulation_2board-info_2usb__conf_8h.html", null ],
     [ "main.c", "simulation_2fw_2main_8c.html", null ],
     [ "pios_board.c", "simulation_2fw_2pios__board_8c.html", null ],
-    [ "pios_board.h", "simulation_2fw_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2simulation_2fw_2pios__board_8h.html", null ],
     [ "pios_config.h", "targets_2simulation_2fw_2pios__config_8h.html", null ],
     [ "AUTOTUNE_AVERAGING_MODE", "group___sim.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "group___sim.html#gaf4039c0d196379cbfb36489300f94ffe", null ],

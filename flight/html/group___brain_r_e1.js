@@ -3,7 +3,7 @@ var group___brain_r_e1 =
     [ "pios_board.c", "brainre1_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2brainre1_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "brainre1_2board-info_2board__hw__defs_8c.html", null ],
-    [ "pios_board.h", "brainre1_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2brainre1_2board-info_2pios__board_8h.html", null ],
     [ "mcuconf.h", "brainre1_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "brainre1_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2brainre1_2fw_2pios__config_8h.html", null ],

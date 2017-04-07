@@ -5,7 +5,7 @@ var group___brain =
     [ "pios_board.c", "brain_2bl_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2brain_2bl_2pios__config_8h.html", null ],
     [ "board_hw_defs.c", "brain_2board-info_2board__hw__defs_8c.html", null ],
-    [ "pios_board.h", "brain_2board-info_2pios__board_8h.html", null ],
+    [ "pios_board.h", "targets_2brain_2board-info_2pios__board_8h.html", null ],
     [ "usb_conf.h", "brain_2board-info_2usb__conf_8h.html", null ],
     [ "mcuconf.h", "brain_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "brain_2fw_2pios__board_8c.html", null ],
