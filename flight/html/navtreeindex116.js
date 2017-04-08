@@ -1,5 +1,7 @@
 var NAVTREEINDEX116 =
 {
+"sparky_2fw_2mcuconf_8h.html#ga44c0e5a4a20e05dbb598a408cf1ebee7":[4,0,0,4,15,2,0,37],
+"sparky_2fw_2mcuconf_8h.html#ga4566e8af2932b4c596780be65c722d58":[4,0,0,4,15,2,0,26],
 "sparky_2fw_2mcuconf_8h.html#ga47d90eaca23f3eea99d74d1bb3539541":[4,0,0,4,15,2,0,103],
 "sparky_2fw_2mcuconf_8h.html#ga4f49346cf0c36ac85466517ceff6299b":[4,0,0,4,15,2,0,119],
 "sparky_2fw_2mcuconf_8h.html#ga51083eefd4e7d0303f11081df496d2ed":[4,0,0,4,15,2,0,56],
@@ -199,8 +201,8 @@ var NAVTREEINDEX116 =
 "storm32bgc_8c.html#gaf7d06dfec8bd97a9f24bd999e2c7e2b2":[4,0,0,2,23,0,5],
 "storm32bgc_8c.html#gaf904cf55a574991bc3a2f4062007e93b":[4,0,0,2,23,0,1],
 "storm32bgc_8c_source.html":[4,0,0,2,23,0],
-"struct____attribute____.html":[1,1,24],
 "struct____attribute____.html":[1,4,33,3],
+"struct____attribute____.html":[1,1,24],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[1,1,24,19],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[1,4,33,3,19],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[1,1,24,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX116 =
 "struct_event_stats.html#a4734c9ef93875b98d9bb205537242be4":[1,12,0,2,0],
 "struct_font_dimensions.html":[1,5,2,7],
 "struct_font_dimensions.html#a0a3e31e8b25bb8b85bbf0c92135deba7":[1,5,2,7,0],
-"struct_font_dimensions.html#a3a7f22c09ebeb18689a296fc7b72323e":[1,5,2,7,1],
-"struct_font_entry.html":[1,5,2,6],
-"struct_font_entry.html#aa822ed0ca01e38e0bda330e242eee5af":[1,5,2,6,2]
+"struct_font_dimensions.html#a3a7f22c09ebeb18689a296fc7b72323e":[1,5,2,7,1]
 };

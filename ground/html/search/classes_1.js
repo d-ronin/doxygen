@@ -14,7 +14,6 @@ var searchData=
   ['actuatorchannelsettings',['actuatorChannelSettings',['../structactuator_channel_settings.html',1,'']]],
   ['aeroquadplugin',['AeroQuadPlugin',['../class_aero_quad_plugin.html',1,'']]],
   ['aggregate',['Aggregate',['../class_aggregation_1_1_aggregate.html',1,'Aggregation']]],
-  ['airparameters',['AirParameters',['../struct_air_parameters.html',1,'']]],
   ['alarmsmonitorwidget',['AlarmsMonitorWidget',['../class_alarms_monitor_widget.html',1,'']]],
   ['alllayersoftype',['AllLayersOfType',['../classcore_1_1_all_layers_of_type.html',1,'core']]],
   ['animation',['Animation',['../class_animation.html',1,'']]],

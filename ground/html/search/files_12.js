@@ -47,8 +47,6 @@ var searchData=
   ['simulation_2eh',['simulation.h',['../simulation_8h.html',1,'']]],
   ['simulationconfiguration_2ecpp',['simulationconfiguration.cpp',['../simulationconfiguration_8cpp.html',1,'']]],
   ['simulationconfiguration_2eh',['simulationconfiguration.h',['../simulationconfiguration_8h.html',1,'']]],
-  ['simulator_2ecpp',['simulator.cpp',['../simulator_8cpp.html',1,'']]],
-  ['simulator_2eh',['simulator.h',['../simulator_8h.html',1,'']]],
   ['size_2ecpp',['size.cpp',['../size_8cpp.html',1,'']]],
   ['size_2eh',['size.h',['../size_8h.html',1,'']]],
   ['sizelatlng_2ecpp',['sizelatlng.cpp',['../sizelatlng_8cpp.html',1,'']]],

@@ -2,11 +2,7 @@ var searchData=
 [
   ['va',['VA',['../_o_p_plots_8m.html#adbc0f501352771d9673ef29ca61494c8',1,'OPPlots.m']]],
   ['values',['values',['../classuavobject_1_1_u_a_v_object_field.html#a72f9d575e9fd6eaeb6842377e76ec8fe',1,'uavobject.UAVObjectField.values()'],['../struct_u_a_v_object_field_1_1_limit_struct.html#a27188ffa94eb6c560765dd56b0471561',1,'UAVObjectField::LimitStruct::values()']]],
-  ['veldown',['velDown',['../group___h_i_t_l_plugin.html#ga9d5ac871d0c0845dcd9363069268c2d3',1,'Output2Hardware']]],
-  ['veleast',['velEast',['../group___h_i_t_l_plugin.html#gae7889fb60f991558b83af5aef685a35f',1,'Output2Hardware']]],
-  ['velnorth',['velNorth',['../group___h_i_t_l_plugin.html#gaa20e34957a2badaea5d07a49ab029182',1,'Output2Hardware']]],
   ['velocity',['velocity',['../structmapcontrol_1_1custom_data.html#ab084fbb62527f0b71d74c9977c2e3f90',1,'mapcontrol::customData::velocity()'],['../group___path.html#ga64d63cdc6fb603cf2d12672d532f605e',1,'PathPlanData::velocity()']]],
-  ['velocityactualdata',['velocityActualData',['../group___h_i_t_l_plugin.html#ga45f843b87142396306b05148bf19b766',1,'Noise']]],
   ['vendor',['vendor',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
   ['vendorid',['vendorID',['../group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b',1,'Core::IBoardType::USBInfo::vendorID()'],['../group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729',1,'USBPortInfo::vendorID()']]],
   ['version',['version',['../struct_extension_system_1_1_plugin_dependency.html#a2d00bf5564134af5cb2eeddf2074eee8',1,'ExtensionSystem::PluginDependency::version()'],['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a00cf7a310301d427a56b1b23576289bc',1,'ExtensionSystem::Internal::PluginSpecPrivate::version()']]],

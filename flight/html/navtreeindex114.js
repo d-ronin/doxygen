@@ -1,5 +1,7 @@
 var NAVTREEINDEX114 =
 {
+"seppuku_2fw_2mcuconf_8h.html#ga9ccd82d55af1633658db54858378c277":[4,0,0,4,13,2,0,202],
+"seppuku_2fw_2mcuconf_8h.html#ga9d125141e8f301e2b6d590067fd7890e":[4,0,0,4,13,2,0,88],
 "seppuku_2fw_2mcuconf_8h.html#ga9f72e7206a6300a9d86bccf73f85279a":[4,0,0,4,13,2,0,152],
 "seppuku_2fw_2mcuconf_8h.html#gaa0e96044581d47cc827e2cbeb0227a8e":[4,0,0,4,13,2,0,39],
 "seppuku_2fw_2mcuconf_8h.html#gaa1f8569a392f522faadcc52ec0e71b83":[4,0,0,4,13,2,0,86],
@@ -198,8 +200,8 @@ var NAVTREEINDEX114 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[4,0,0,4,16,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[4,0,0,4,16,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[4,0,0,4,16,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,4,16,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,4,16,1,3,10],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[4,0,0,4,16,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[4,0,0,4,16,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[4,0,0,4,16,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[4,0,0,4,16,1,3,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX114 =
 "sparky2_2fw_2mcuconf_8h.html#ga24c4b2fdc18208fbc2211c5b48a2cfc6":[4,0,0,4,16,2,0,27],
 "sparky2_2fw_2mcuconf_8h.html#ga25122dae8d088e5f5a12926e43d78efb":[4,0,0,4,16,2,0,172],
 "sparky2_2fw_2mcuconf_8h.html#ga29204b81c265dd6e124fbcf12a2c8d6f":[4,0,0,4,16,2,0,164],
-"sparky2_2fw_2mcuconf_8h.html#ga2ae899fce9dc050c533cf90d97599d27":[4,0,0,4,16,2,0,57],
-"sparky2_2fw_2mcuconf_8h.html#ga2b4cea50a1c9434b330a6a6f13432e00":[4,0,0,4,16,2,0,69],
-"sparky2_2fw_2mcuconf_8h.html#ga2b5d34aeac1b12c901e2fed5952ae29d":[4,0,0,4,16,2,0,92]
+"sparky2_2fw_2mcuconf_8h.html#ga2ae899fce9dc050c533cf90d97599d27":[4,0,0,4,16,2,0,57]
 };

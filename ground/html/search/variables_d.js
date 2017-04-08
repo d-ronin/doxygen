@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['m',['M',['../group___h_i_t_l_plugin.html#gaa24db2a922b9f638fdaacad6e3f4fb91',1,'AirParameters::M()'],['../uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a',1,'m():&#160;uavobjecttemplate.m']]],
+  ['m',['m',['../uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a',1,'uavobjecttemplate.m']]],
   ['m_5faccelerometerxbias',['m_accelerometerXBias',['../group___setup_wizard.html#ga982c33b20f567fe289dd461ce9bb0df2',1,'accelGyroBias']]],
   ['m_5faccelerometerybias',['m_accelerometerYBias',['../group___setup_wizard.html#ga76b3af5f8c4f87a92045a698eb32c681',1,'accelGyroBias']]],
   ['m_5faccelerometerzbias',['m_accelerometerZBias',['../group___setup_wizard.html#gaa0475cba1c09df9c39a69bbb62711b8e',1,'accelGyroBias']]],
@@ -88,8 +88,6 @@ var searchData=
   ['m_5fxwindowsize',['m_xWindowSize',['../group___scope_plugin.html#gaf008f7f617cf48b623abbd095e483e10',1,'PlotData']]],
   ['majornr',['majorNr',['../group___core_plugin.html#gac05539a177a40beac60eda4492f9e8cd',1,'Core::UAVConfigVersion']]],
   ['manager',['manager',['../class_extension_system_1_1_internal_1_1_plugin_view_private.html#ae2536bd8dab81cd1ae84cf4973b79f7f',1,'ExtensionSystem::Internal::PluginViewPrivate']]],
-  ['manctrlcommand',['manCtrlCommand',['../group___h_i_t_l_plugin.html#ga1af06e35c7befb4f3ffd0bfee9a6efc2',1,'Simulator']]],
-  ['manualcontrolenabled',['manualControlEnabled',['../group___h_i_t_l_plugin.html#gac67de1b6ac74a48c592f55fd17e06ad8',1,'_CONNECTION']]],
   ['manufacturer',['manufacturer',['../group___core_plugin.html#gab425397b209f59d9c9cb215481f4e018',1,'Core::IBoardType::USBInfo::manufacturer()'],['../group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305',1,'USBPortInfo::manufacturer()']]],
   ['map',['map',['../group___t_l_map_widget.html#ga6396890cb9fb3f310392d5d264c01b7b',1,'mapcontrol::MapPointItem']]],
   ['mat',['mat',['../uavobjecttemplate_8m.html#a16a51e808b16c46bbfd36da2e37cd123',1,'uavobjecttemplate.m']]],
@@ -118,7 +116,6 @@ var searchData=
   ['min_5fheader_5flength',['MIN_HEADER_LENGTH',['../group___u_a_v_talk_plugin.html#ga0d20c7ff6e0eedb2ab1243c6bf957fd3',1,'UAVTalk']]],
   ['minimize_5fwindow',['MINIMIZE_WINDOW',['../group___core_plugin.html#ga1bec24c27ebb317beb5bd728f2695a32',1,'Core::Constants']]],
   ['minornr',['minorNr',['../group___core_plugin.html#gad622c08143c80bf70a137d813062c911',1,'Core::UAVConfigVersion']]],
-  ['minoutputperiod',['minOutputPeriod',['../group___h_i_t_l_plugin.html#ga11d8608f07438f05d1950aa62f774d0c',1,'_CONNECTION']]],
   ['missingdatafont',['MissingDataFont',['../group___t_l_map_widget.html#gacaef660cdedd3dc5c76abc6f6872b149',1,'mapcontrol::Configuration']]],
   ['mixerrange',['mixerRange',['../group___config_plugin.html#ga66dd9919d99223fdbf5b3dcff803f863',1,'VehicleConfig']]],
   ['mixertypedescriptions',['mixerTypeDescriptions',['../group___config_plugin.html#ga05f4cbfd3c5b0fcc642f17003888459a',1,'VehicleConfig']]],

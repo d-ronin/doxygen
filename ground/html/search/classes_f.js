@@ -16,7 +16,6 @@ var searchData=
   ['opmapplugin',['OPMapPlugin',['../class_o_p_map_plugin.html',1,'']]],
   ['optionsparser',['OptionsParser',['../class_extension_system_1_1_internal_1_1_options_parser.html',1,'ExtensionSystem::Internal']]],
   ['oscsincos',['OscSinCos',['../classffft_1_1_osc_sin_cos.html',1,'ffft']]],
-  ['output2hardware',['Output2Hardware',['../struct_output2_hardware.html',1,'']]],
   ['outputcalibrationpage',['OutputCalibrationPage',['../class_output_calibration_page.html',1,'']]],
   ['outputcalibrationutil',['OutputCalibrationUtil',['../class_output_calibration_util.html',1,'']]],
   ['outputchannelform',['OutputChannelForm',['../class_output_channel_form.html',1,'']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX121 =
 {
+"structpios__fileout__dev.html#ab91b60fece94660f602d33d02375fe0a":[3,0,150,3],
+"structpios__flash__chip.html":[1,0,13,4],
 "structpios__flash__driver.html":[1,0,13,2],
 "structpios__flash__internal__cfg.html":[3,0,153],
 "structpios__flash__jedec__cfg.html":[1,0,13,1],
@@ -143,8 +145,8 @@ var NAVTREEINDEX121 =
 "structpios__re1fpga__cfg.html":[1,7,2,8],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[1,7,2,8,1],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[1,8,4,8,1],
-"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,8,4,8,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,7,2,8,3],
+"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[1,8,4,8,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[1,7,2,8,2],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[1,8,4,8,2],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[1,8,4,8,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "structpios__spi__cfg.html#a69fc950007087c1670baf71ebfe61d5d":[1,0,68,3,0],
 "structpios__spi__cfg.html#aa190920ba828502df22a5f665027b20d":[1,0,68,3,6],
 "structpios__spi__cfg.html#ac1c73f49ee01a82a50dff4f2eb0fbb8e":[1,0,68,3,8],
-"structpios__spi__cfg.html#ac804df72ee895e7482167ac5452b31aa":[1,0,68,3,2],
-"structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691":[1,0,68,3,4],
-"structpios__spi__cfg.html#ad45aed059de6082ab6c257da0018d867":[1,0,68,3,7]
+"structpios__spi__cfg.html#ac804df72ee895e7482167ac5452b31aa":[1,0,68,3,2]
 };

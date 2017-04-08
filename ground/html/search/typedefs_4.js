@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['objectmap',['ObjectMap',['../group___u_a_v_objects_plugin.html#ga0192835b424e7c3d9196e9f2ba85b525',1,'UAVObjectManager']]]
+  ['pluginargumentdescriptions',['PluginArgumentDescriptions',['../class_extension_system_1_1_plugin_spec.html#acf81cc5fcc20b047203f9da886cbbdee',1,'ExtensionSystem::PluginSpec']]],
+  ['pluginloader',['PluginLoader',['../pluginspec_8cpp.html#ab82b4a18040b81e0149b936d5fc14159',1,'pluginspec.cpp']]],
+  ['pluginspecset',['PluginSpecSet',['../group__extensionsystem.html#ga89fa6f1a0418fbd38abe3aa1208ed1a6',1,'pluginmanager.cpp']]],
+  ['pphononobject',['pPhononObject',['../group___notify_plugin.html#ga29339e638aa7c15d99ff655f2f0e2c89',1,'notifyplugin.h']]]
 ];

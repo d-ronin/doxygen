@@ -1,5 +1,7 @@
 var targets_2pikoblx_2fw_2pios__config_8h =
 [
+    [ "AUTOTUNE_AVERAGING_DECIMATION", "targets_2pikoblx_2fw_2pios__config_8h.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
+    [ "AUTOTUNE_AVERAGING_MODE", "targets_2pikoblx_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2pikoblx_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2pikoblx_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "PIOS_EVENTDISPATCHER_STACK_SIZE", "targets_2pikoblx_2fw_2pios__config_8h.html#ga8de02d8defc3d19ac2f9ad75fc5441c1", null ],

@@ -61,7 +61,6 @@ var searchData=
   ['qlist_3c_20quint16_20_3e',['QList&lt; quint16 &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20quint32_20_3e',['QList&lt; quint32 &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20qvariant_20_3e',['QList&lt; QVariant &gt;',['../class_q_list.html',1,'']]],
-  ['qlist_3c_20simulatorcreator_20_2a_20_3e',['QList&lt; SimulatorCreator * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20treeitem_20_2a_20_3e',['QList&lt; TreeItem * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20uavdataobject_20_2a_20_3e',['QList&lt; UAVDataObject * &gt;',['../class_q_list.html',1,'']]],
   ['qlist_3c_20uavmetaobject_20_2a_20_3e',['QList&lt; UAVMetaObject * &gt;',['../class_q_list.html',1,'']]],

@@ -18,7 +18,6 @@ var searchData=
   ['undo',['UNDO',['../group___core_plugin.html#ga34ddc9153ce99ae69ebbe146e121719f',1,'Core::Constants']]],
   ['unfortunately',['Unfortunately',['../uavobjecttemplate_8m.html#a19514c4629c4f7641a38a76ccfca112f',1,'uavobjecttemplate.m']]],
   ['units',['units',['../class_u_a_v_object_field.html#a1ecf5fdaab2ac408b67623d5d75368c5',1,'UAVObjectField']]],
-  ['univgasconstant',['univGasConstant',['../group___h_i_t_l_plugin.html#gaf6cf658bcff6f341c341ba3f6194761c',1,'AirParameters']]],
   ['unknownobjidlist',['unknownObjIDList',['../uavobjecttemplate_8m.html#a87d64e1f4a03744d89ab122c222a0f31',1,'uavobjecttemplate.m']]],
   ['unused',['unused',['../group___uploader.html#gafa46b8eb51479b86fa9a8bdd0af55910',1,'msg_capabilities_req::unused()'],['../group___uploader.html#ga0f7e76ca943fef6551dff026114fc485',1,'msg_capabilities_rep_all::unused()'],['../group___uploader.html#ga016abbcc1db65c7ef3bb06ec05d41f20',1,'msg_enter_dfu::unused()'],['../group___uploader.html#ga72199c8507c7a26420b4da79e0472209',1,'msg_jump_fw::unused()']]],
   ['unused2',['unused2',['../group___uploader.html#gaca160f9b3ef62d3838b11d5b6ab4f0fc',1,'msg_jump_fw']]],

@@ -17,7 +17,6 @@ var dir_8b22256ffc0f161b5ef261c0476f6e8f =
     [ "emptygadget", "dir_12a1cd817249704b2b737b5c55f6d3cc.html", "dir_12a1cd817249704b2b737b5c55f6d3cc" ],
     [ "gcscontrolplugin", "dir_ff696461226bec4322cb8dfccd124f0a.html", "dir_ff696461226bec4322cb8dfccd124f0a" ],
     [ "gpsdisplay", "dir_a6ffd2b982f8b137ab28f7bf7e26968e.html", "dir_a6ffd2b982f8b137ab28f7bf7e26968e" ],
-    [ "hitl", "dir_b7afe7359ff77e425f1ee1f634875764.html", "dir_b7afe7359ff77e425f1ee1f634875764" ],
     [ "importexport", "dir_ea81275e120f12b6d3f292ff5efbf49b.html", "dir_ea81275e120f12b6d3f292ff5efbf49b" ],
     [ "ipconnection", "dir_a874918cbd21a6c82d6069c6f2e8bd39.html", "dir_a874918cbd21a6c82d6069c6f2e8bd39" ],
     [ "kmlexport", "dir_d07f9e9dbe2e68fde838e0ab31a134e7.html", "dir_d07f9e9dbe2e68fde838e0ab31a134e7" ],

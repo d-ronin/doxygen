@@ -80,7 +80,6 @@ var searchData=
   ['resetdevice',['ResetDevice',['../group___uploader.html#gafbdc3dede843764690ebd5bc074ff5dd',1,'tl_dfu::DFUObject']]],
   ['resetfield',['resetField',['../group___config_plugin.html#ga5d58a26e503e6a3d9a565932148036ce',1,'VehicleConfig']]],
   ['reseticons',['resetIcons',['../group___u_a_v_object_widget_utils.html#ga851955edd99204e2b209b7fa604129fe',1,'smartSaveButton']]],
-  ['resetinitialhomeposition',['resetInitialHomePosition',['../group___h_i_t_l_plugin.html#ga23bcac84c193a077fca82e61e250b99f',1,'Simulator']]],
   ['resetmetadatatodefaults',['resetMetadataToDefaults',['../group___u_a_v_object_util_plugin.html#ga8fadd2e0c6ed3b69a1f8059d2c98054c',1,'UAVObjectUtilManager']]],
   ['resetmixers',['resetMixers',['../group___config_plugin.html#ga2d8c952fda6b946cc3e0d184830c16f4',1,'VehicleConfig']]],
   ['resetmixervector',['resetMixerVector',['../group___config_plugin.html#ga0e4c15b064550ea0899ed4e641ebb635',1,'VehicleConfig']]],

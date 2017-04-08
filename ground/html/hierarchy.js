@@ -1,14 +1,11 @@
 var hierarchy =
 [
     [ "__attribute__", "struct____attribute____.html", null ],
-    [ "_CONNECTION", "struct___c_o_n_n_e_c_t_i_o_n.html", null ],
-    [ "_FLIGHT_PARAM", "struct___f_l_i_g_h_t___p_a_r_a_m.html", null ],
     [ "accelGyroBias", "structaccel_gyro_bias.html", null ],
     [ "Action", "class_action.html", null ],
     [ "ActionContainer", "class_action_container.html", null ],
     [ "ActionManagerPrivate", "class_action_manager_private.html", null ],
     [ "actuatorChannelSettings", "structactuator_channel_settings.html", null ],
-    [ "AirParameters", "struct_air_parameters.html", null ],
     [ "core::AllLayersOfType", "classcore_1_1_all_layers_of_type.html", [
       [ "core::TLMaps", "classcore_1_1_t_l_maps.html", null ]
     ] ],
@@ -56,7 +53,6 @@ var hierarchy =
     [ "core::UrlFactory::geoCodingStruct", "structcore_1_1_url_factory_1_1geo_coding_struct.html", null ],
     [ "GUIConfigDataUnion", "union_g_u_i_config_data_union.html", null ],
     [ "mapcontrol::Helper", "classmapcontrol_1_1_helper.html", null ],
-    [ "HitlNoiseGeneration", "class_hitl_noise_generation.html", null ],
     [ "Utils::HomeLocationUtil", "class_utils_1_1_home_location_util.html", null ],
     [ "IPConnectionConfiguration::Host", "struct_i_p_connection_configuration_1_1_host.html", null ],
     [ "Utils::HostOsInfo", "class_utils_1_1_host_os_info.html", null ],
@@ -81,7 +77,6 @@ var hierarchy =
     [ "msg_status_req", "structmsg__status__req.html", null ],
     [ "msg_wipe_partition", "structmsg__wipe__partition.html", null ],
     [ "msg_xfer_cont", "structmsg__xfer__cont.html", null ],
-    [ "Noise", "struct_noise.html", null ],
     [ "object", null, [
       [ "uavobject.UAVMetaData", "classuavobject_1_1_u_a_v_meta_data.html", null ],
       [ "uavobject.UAVObject", "classuavobject_1_1_u_a_v_object.html", [
@@ -93,7 +88,6 @@ var hierarchy =
     [ "TelemetryMonitor::objStruc", "struct_telemetry_monitor_1_1obj_struc.html", null ],
     [ "ExtensionSystem::Internal::OptionsParser", "class_extension_system_1_1_internal_1_1_options_parser.html", null ],
     [ "ffft::OscSinCos< T >", "classffft_1_1_osc_sin_cos.html", null ],
-    [ "Output2Hardware", "struct_output2_hardware.html", null ],
     [ "OverrideableAction", "class_overrideable_action.html", null ],
     [ "Utils::PathChooserPrivate", "struct_utils_1_1_path_chooser_private.html", null ],
     [ "PathPlanData", "struct_path_plan_data.html", null ],
@@ -266,7 +260,6 @@ var hierarchy =
     [ "QList< quint16 >", "class_q_list.html", null ],
     [ "QList< quint32 >", "class_q_list.html", null ],
     [ "QList< QVariant >", "class_q_list.html", null ],
-    [ "QList< SimulatorCreator * >", "class_q_list.html", null ],
     [ "QList< TreeItem * >", "class_q_list.html", null ],
     [ "QList< UAVDataObject * >", "class_q_list.html", null ],
     [ "QList< UAVMetaObject * >", "class_q_list.html", null ],
@@ -342,7 +335,6 @@ var hierarchy =
           [ "EmptyGadget", "class_empty_gadget.html", null ],
           [ "GCSControlGadget", "class_g_c_s_control_gadget.html", null ],
           [ "GpsDisplayGadget", "class_gps_display_gadget.html", null ],
-          [ "HITLGadget", "class_h_i_t_l_gadget.html", null ],
           [ "ImportExportGadget", "class_import_export_gadget.html", null ],
           [ "LineardialGadget", "class_lineardial_gadget.html", null ],
           [ "LoggingGadget", "class_logging_gadget.html", null ],
@@ -385,7 +377,6 @@ var hierarchy =
         [ "Core::UAVGadgetOptionsPageDecorator", "class_core_1_1_u_a_v_gadget_options_page_decorator.html", null ],
         [ "DialGadgetOptionsPage", "class_dial_gadget_options_page.html", null ],
         [ "GCSControlGadgetOptionsPage", "class_g_c_s_control_gadget_options_page.html", null ],
-        [ "HITLOptionsPage", "class_h_i_t_l_options_page.html", null ],
         [ "IPConnectionOptionsPage", "class_i_p_connection_options_page.html", null ],
         [ "LineardialGadgetOptionsPage", "class_lineardial_gadget_options_page.html", null ],
         [ "ModelViewGadgetOptionsPage", "class_model_view_gadget_options_page.html", null ],
@@ -404,7 +395,6 @@ var hierarchy =
         [ "ConfigGadgetConfiguration", "class_config_gadget_configuration.html", null ],
         [ "DialGadgetConfiguration", "class_dial_gadget_configuration.html", null ],
         [ "GCSControlGadgetConfiguration", "class_g_c_s_control_gadget_configuration.html", null ],
-        [ "HITLConfiguration", "class_h_i_t_l_configuration.html", null ],
         [ "IPConnectionConfiguration", "class_i_p_connection_configuration.html", null ],
         [ "LineardialGadgetConfiguration", "class_lineardial_gadget_configuration.html", null ],
         [ "ModelViewGadgetConfiguration", "class_model_view_gadget_configuration.html", null ],
@@ -424,7 +414,6 @@ var hierarchy =
         [ "EmptyGadgetFactory", "class_empty_gadget_factory.html", null ],
         [ "GCSControlGadgetFactory", "class_g_c_s_control_gadget_factory.html", null ],
         [ "GpsDisplayGadgetFactory", "class_gps_display_gadget_factory.html", null ],
-        [ "HITLFactory", "class_h_i_t_l_factory.html", null ],
         [ "LineardialGadgetFactory", "class_lineardial_gadget_factory.html", null ],
         [ "LoggingGadgetFactory", "class_logging_gadget_factory.html", null ],
         [ "MagicWaypointGadgetFactory", "class_magic_waypoint_gadget_factory.html", null ],
@@ -471,7 +460,6 @@ var hierarchy =
         [ "EmptyPlugin", "class_empty_plugin.html", null ],
         [ "GCSControl", "class_g_c_s_control.html", null ],
         [ "GpsDisplayPlugin", "class_gps_display_plugin.html", null ],
-        [ "HITLPlugin", "class_h_i_t_l_plugin.html", null ],
         [ "ImportExportPlugin", "class_import_export_plugin.html", null ],
         [ "IPConnectionPlugin", "class_i_p_connection_plugin.html", null ],
         [ "KmlExportPlugin", "class_kml_export_plugin.html", null ],
@@ -572,11 +560,6 @@ var hierarchy =
         ] ]
       ] ],
       [ "SignalReceiver", "class_signal_receiver.html", null ],
-      [ "Simulator", "class_simulator.html", [
-        [ "FGSimulator", "class_f_g_simulator.html", null ],
-        [ "XplaneSimulator", "class_xplane_simulator.html", null ]
-      ] ],
-      [ "Simulator", "class_simulator.html", null ],
       [ "smartSaveButton", "classsmart_save_button.html", null ],
       [ "StyleAnimator", "class_style_animator.html", null ],
       [ "SvgImageProvider", "class_svg_image_provider.html", null ],
@@ -710,7 +693,6 @@ var hierarchy =
       [ "ExtensionSystem::PluginErrorView", "class_extension_system_1_1_plugin_error_view.html", null ],
       [ "ExtensionSystem::PluginView", "class_extension_system_1_1_plugin_view.html", null ],
       [ "GpsDisplayWidget", "class_gps_display_widget.html", null ],
-      [ "HITLWidget", "class_h_i_t_l_widget.html", null ],
       [ "ImportExportGadgetWidget", "class_import_export_gadget_widget.html", null ],
       [ "MapRipForm", "class_map_rip_form.html", null ],
       [ "MyMain", "class_my_main.html", null ],
@@ -785,10 +767,6 @@ var hierarchy =
     [ "ConfigTaskWidget::shadow", "struct_config_task_widget_1_1shadow.html", null ],
     [ "Shortcut", "class_shortcut.html", null ],
     [ "Core::Internal::ShortcutItem", "struct_core_1_1_internal_1_1_shortcut_item.html", null ],
-    [ "SimulatorCreator", "class_simulator_creator.html", [
-      [ "FGSimulatorCreator", "class_f_g_simulator_creator.html", null ],
-      [ "XplaneSimulatorCreator", "class_xplane_simulator_creator.html", null ]
-    ] ],
     [ "core::Size", "structcore_1_1_size.html", null ],
     [ "internals::SizeLatLng", "structinternals_1_1_size_lat_lng.html", null ],
     [ "struct_cBuffer", "structstruct__c_buffer.html", null ],

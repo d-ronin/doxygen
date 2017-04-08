@@ -1,5 +1,7 @@
 var group___piko_b_l_x =
 [
+    [ "AUTOTUNE_AVERAGING_DECIMATION", "group___piko_b_l_x.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
+    [ "AUTOTUNE_AVERAGING_MODE", "group___piko_b_l_x.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___piko_b_l_x.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___piko_b_l_x.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
     [ "CAMERASTAB_POI_MODE", "group___piko_b_l_x.html#gaf4039c0d196379cbfb36489300f94ffe", null ],

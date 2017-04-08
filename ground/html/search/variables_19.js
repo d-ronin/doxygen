@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['y',['Y',['../struct_w_m_mtype___geo_magnetic_elements.html#a0b311ece921afc948e5e8dda01f7584a',1,'WMMtype_GeoMagneticElements::Y()'],['../group___h_i_t_l_plugin.html#gafb4f835313c27ac7b01fe3eb77b6bacc',1,'_FLIGHT_PARAM::Y()'],['../_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y():&#160;OPPlots.m']]],
+  ['y',['Y',['../struct_w_m_mtype___geo_magnetic_elements.html#a0b311ece921afc948e5e8dda01f7584a',1,'WMMtype_GeoMagneticElements::Y()'],['../_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y():&#160;OPPlots.m']]],
   ['yaw',['yaw',['../group___setup_wizard.html#ga16a724da7162ceb2c56798d864dac807',1,'mixerChannelSettings']]],
-  ['yawdesired',['yawDesired',['../group___h_i_t_l_plugin.html#gaf01c33ffb5c7695348739d0070122bd7',1,'Output2Hardware']]],
-  ['yawrate',['yawRate',['../group___h_i_t_l_plugin.html#gab54300de73ca6f11f519068435673210',1,'Output2Hardware']]],
   ['ydata',['yData',['../group___scope_plugin.html#ga0544d6bcbe24fc0bb460123547821457',1,'PlotData']]],
   ['ydatahistory',['yDataHistory',['../group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11',1,'Plot2dData']]],
   ['ydot',['Ydot',['../struct_w_m_mtype___geo_magnetic_elements.html#aaecfb6ce93c718489c1d0982d43d56b6',1,'WMMtype_GeoMagneticElements']]],

@@ -22,7 +22,6 @@ var group___g_c_s_plugins =
     [ "GCSControl", "group___g_c_s_control.html", "group___g_c_s_control" ],
     [ "GCSControl Gadget Plugin", "group___g_c_s_control_gadget_plugin.html", "group___g_c_s_control_gadget_plugin" ],
     [ "GPS Gadget Plugin", "group___g_p_s_gadget_plugin.html", "group___g_p_s_gadget_plugin" ],
-    [ "HITL Plugin", "group___h_i_t_l_plugin.html", "group___h_i_t_l_plugin" ],
     [ "IP Telemetry Plugin", "group___i_p_conn_plugin.html", "group___i_p_conn_plugin" ],
     [ "KmlExportPlugin", "group___kml_export_plugin.html", "group___kml_export_plugin" ],
     [ "Linear Dial Plugin", "group___linear_dial_plugin.html", "group___linear_dial_plugin" ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simulatorsettings',['SimulatorSettings',['../group___h_i_t_l_plugin.html#ga052199f1328d3002bce3e45345aa7f4e',1,'simulator.h']]]
+  ['widgetactioninfo',['widgetActionInfo',['../group___usage_stats_plugin.html#gaad77ca38782a40c003770f2ab739470f',1,'usagestatsplugin.h']]]
 ];

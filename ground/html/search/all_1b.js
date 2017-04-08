@@ -64,7 +64,6 @@ var searchData=
   ['_7eemptygadgetfactory',['~EmptyGadgetFactory',['../group___empty_gadget_plugin.html#gabec68115923f555ddd7cc38ba7a3ee80',1,'EmptyGadgetFactory']]],
   ['_7eemptygadgetwidget',['~EmptyGadgetWidget',['../group___empty_gadget_plugin.html#ga31f0094726f11e434e12aaa0a764d467',1,'EmptyGadgetWidget']]],
   ['_7efftreal',['~FFTReal',['../classffft_1_1_f_f_t_real.html#a04f14f3576aac18af45ba22c38fbaf2a',1,'ffft::FFTReal']]],
-  ['_7efgsimulator',['~FGSimulator',['../group___h_i_t_l_plugin.html#ga379c8b16215b0b40514c3b522fabf816',1,'FGSimulator']]],
   ['_7efixedwingpage',['~FixedWingPage',['../group___setup_wizard.html#ga626dba2ab3598a1220f7ee4fae37ed5f',1,'FixedWingPage']]],
   ['_7eflightlogdownload',['~FlightLogDownload',['../group___logging.html#ga11307a9b259a2a3e8a378f8d6d305938',1,'FlightLogDownload']]],
   ['_7egcscontrolgadget',['~GCSControlGadget',['../group___g_c_s_control_gadget_plugin.html#ga109d324fea74699d89e95ea779cd7c18',1,'GCSControlGadget']]],
@@ -79,10 +78,6 @@ var searchData=
   ['_7ehelipage',['~HeliPage',['../group___setup_wizard.html#ga63708ecb9592a865a1927e399656a3f9',1,'HeliPage']]],
   ['_7ehistogramdata',['~HistogramData',['../group___scope_plugin.html#ga4469655db4ea251dc664d6537ac56c5a',1,'HistogramData']]],
   ['_7ehistogramscopeconfig',['~HistogramScopeConfig',['../group___scope_plugin.html#gafbd12c48895f5b324a0048f956c2a773',1,'HistogramScopeConfig']]],
-  ['_7ehitlfactory',['~HITLFactory',['../group___h_i_t_l_plugin.html#ga823205c59cff49942e94bc11bb2c4050',1,'HITLFactory']]],
-  ['_7ehitlgadget',['~HITLGadget',['../group___h_i_t_l_plugin.html#ga92376558188a3a1fdff609f2641758e7',1,'HITLGadget']]],
-  ['_7ehitlnoisegeneration',['~HitlNoiseGeneration',['../group___h_i_t_l_plugin.html#ga86eb1b28193cc2594ee5bd38658eb06a',1,'HitlNoiseGeneration']]],
-  ['_7ehitlwidget',['~HITLWidget',['../group___h_i_t_l_plugin.html#gad53ecce8b7088bb11049d62819ff96f4',1,'HITLWidget']]],
   ['_7ehomeeditor',['~homeEditor',['../group___o_p_map_plugin.html#ga774f5e26cbfa6c2c2fe3fb6a9317abcf',1,'homeEditor']]],
   ['_7eicomboentry',['~IComboEntry',['../class_i_combo_entry.html#a0634df7486aa48c9fbc3fd2d3db6d4a1',1,'IComboEntry']]],
   ['_7eiconfigurableplugin',['~IConfigurablePlugin',['../class_core_1_1_i_configurable_plugin.html#a88fcd256bc60afd70ac67cb5a0ef3a0e',1,'Core::IConfigurablePlugin']]],
@@ -104,7 +99,6 @@ var searchData=
   ['_7eipconnectionconfiguration',['~IPConnectionConfiguration',['../group___i_p_conn_plugin.html#ga0faf2b9cdfdcc4d088db8600b0f538a2',1,'IPConnectionConfiguration']]],
   ['_7eipconnectionoptionspage',['~IPConnectionOptionsPage',['../group___i_p_conn_plugin.html#ga89bfcd906de2d5048fb1ecc9abef3745',1,'IPConnectionOptionsPage']]],
   ['_7eiplugin',['~IPlugin',['../class_extension_system_1_1_i_plugin.html#a92763c9985354dc46cae781e3873a6b2',1,'ExtensionSystem::IPlugin']]],
-  ['_7eisimulator',['~ISimulator',['../class_simulator.html#a2961f34fd868d8f8f3eb71ab002df54f',1,'Simulator']]],
   ['_7eitext1',['~IText1',['../class_i_text1.html#a1efc3fdd0041b272fddf2670da4f65d5',1,'IText1']]],
   ['_7eitext3',['~IText3',['../class_i_text3.html#a1592d15f2c602dcec14aed8e28e30c58',1,'IText3']]],
   ['_7eiuavgadget',['~IUAVGadget',['../group___core_plugin.html#ga817ce9cba005f49f5da1d0e5daca2fa4',1,'Core::IUAVGadget']]],
@@ -196,8 +190,6 @@ var searchData=
   ['_7eshortcutsettings',['~ShortcutSettings',['../group___core_plugin.html#gabeeacedad8a9934f806dee1c668772f8',1,'Core::Internal::ShortcutSettings']]],
   ['_7esimulation',['~Simulation',['../group___boards__d_ronin.html#ga80fad3f57dfaf195a36f7bc49bc88279',1,'Simulation']]],
   ['_7esimulationconfiguration',['~SimulationConfiguration',['../group___boards__d_ronin.html#ga0a7a760f2526bdaf15edf40494111d24',1,'SimulationConfiguration']]],
-  ['_7esimulator',['~Simulator',['../group___h_i_t_l_plugin.html#ga0f49aa04f42060a785adf77346b9de9f',1,'Simulator']]],
-  ['_7esimulatorcreator',['~SimulatorCreator',['../group___h_i_t_l_plugin.html#ga07d44da289771bf1bc8cf9dd01d5cb13',1,'SimulatorCreator']]],
   ['_7esparky',['~Sparky',['../group___boards___tau_labs_plugin.html#gafad187a9e7207b7b14ca0c71eaa7ad48',1,'Sparky']]],
   ['_7esparky2',['~Sparky2',['../group___boards___tau_labs_plugin.html#ga5fa1dd46d1ebf2ec384ba64bfd3fff96',1,'Sparky2']]],
   ['_7espectrogramdata',['~SpectrogramData',['../group___scope_plugin.html#gafe709b6e448db73f8548bc2b76f27d19',1,'SpectrogramData']]],
@@ -257,6 +249,5 @@ var searchData=
   ['_7evehicletrim',['~VehicleTrim',['../class_vehicle_trim.html#a9cc652ba91ee3d1e49def9f4e148b5b4',1,'VehicleTrim']]],
   ['_7ewaypointdialog',['~WaypointDialog',['../group___path_planner.html#ga54d6efacbe7553519262195483f76ed5',1,'WaypointDialog']]],
   ['_7ewelcomemode',['~WelcomeMode',['../group___welcome_plugin.html#ga5c6c667541394b36ddf50c9ae263f9b2',1,'Welcome::WelcomeMode']]],
-  ['_7eworkspacesettings',['~WorkspaceSettings',['../group___core_plugin.html#ga52cc2565aaed4f3542cdeba23e41648f',1,'Core::Internal::WorkspaceSettings']]],
-  ['_7explanesimulator',['~XplaneSimulator',['../group___h_i_t_l_plugin.html#ga0254db12886ca7e399e2d27fef9e185a',1,'XplaneSimulator']]]
+  ['_7eworkspacesettings',['~WorkspaceSettings',['../group___core_plugin.html#ga52cc2565aaed4f3542cdeba23e41648f',1,'Core::Internal::WorkspaceSettings']]]
 ];

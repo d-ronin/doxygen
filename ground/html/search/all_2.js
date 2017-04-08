@@ -2,10 +2,6 @@ var searchData=
 [
   ['b',['b',['../struct_w_m_mtype___ellipsoid.html#a700f1bab0f80706ecc671bdbb000a0a6',1,'WMMtype_Ellipsoid']]],
   ['backgroundcheckered',['backgroundCheckered',['../class_utils_1_1_qt_color_button.html#a4610a035893dd4f90c4ce55ac5a91592',1,'Utils::QtColorButton']]],
-  ['baroalt',['baroAlt',['../group___h_i_t_l_plugin.html#ga107f3bf3d4cc0c45cc8677742d4445eb',1,'Simulator']]],
-  ['baroaltdata',['baroAltData',['../group___h_i_t_l_plugin.html#gab586e8f2c72c1e42c715debf0bd202b1',1,'Noise']]],
-  ['baroaltitudeenabled',['baroAltitudeEnabled',['../group___h_i_t_l_plugin.html#ga6700d3be0f4ef9211d6f34569034b7a8',1,'_CONNECTION']]],
-  ['baroaltrate',['baroAltRate',['../group___h_i_t_l_plugin.html#gab5b66abe21b9a0f00b2dc2bbb28cac6c',1,'_CONNECTION']]],
   ['basecontext',['BaseContext',['../class_core_1_1_base_context.html',1,'Core']]],
   ['basecontext',['BaseContext',['../group___core_plugin.html#gac11e47d56487082f8fb09d4b700f5dfb',1,'Core::BaseContext']]],
   ['baseecef',['BaseECEF',['../_o_p_plots_8m.html#ac1ec51a7dd6d455e7752b2436fd61a0c',1,'OPPlots.m']]],
@@ -41,7 +37,6 @@ var searchData=
   ['bigger',['BIGGER',['../class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba8bf45653fc3846d52b51b1bad7ca342e',1,'UAVObjectField::BIGGER()'],['../group___notify_plugin.html#ggad1ed4a0107aa4ec10d481f1f209e5909a0645a6aff2f8f76e753f1eaf08fd4cb0',1,'NotifyPluginOptionsPage::bigger()']]],
   ['bindradio',['bindRadio',['../group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce',1,'Revolution::bindRadio()'],['../group___boards___tau_labs_plugin.html#ga51a98f9d324a17a8160d59f3111e6279',1,'Sparky2::bindRadio()'],['../group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb',1,'TauLink::bindRadio()'],['../group___core_plugin.html#ga28f83e8abfc251aa17fdde2d08df0644',1,'Core::IBoardType::bindRadio()']]],
   ['bingmapsclienttoken',['BingMapsClientToken',['../group___t_l_map_widget.html#ga4c3a944c12deba7b13251f0c04685ac6',1,'core::ProviderStrings']]],
-  ['binpath',['binPath',['../group___h_i_t_l_plugin.html#ga7bd6d35f193af2ec2365db4a4faaf7e7',1,'_CONNECTION']]],
   ['bitfield',['BITFIELD',['../class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a1a5788021526d853b18af9b5fd11f46d',1,'UAVObjectField']]],
   ['bl_5fbusy',['BL_BUSY',['../namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575',1,'uploader']]],
   ['bl_5fcommands',['bl_commands',['../group___uploader.html#ga2c84b0041b195d381b3641f8f4a80582',1,'tl_dfu']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['name',['NAME',['../classuavobjecttemplate_1_1_n_a_m_e.html',1,'uavobjecttemplate']]],
-  ['noise',['Noise',['../struct_noise.html',1,'']]],
   ['notificationitem',['NotificationItem',['../class_notification_item.html',1,'']]],
   ['notifyitemdelegate',['NotifyItemDelegate',['../class_notify_item_delegate.html',1,'']]],
   ['notifypluginfactory',['NotifyPluginFactory',['../class_notify_plugin_factory.html',1,'']]],

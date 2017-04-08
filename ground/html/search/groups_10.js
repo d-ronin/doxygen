@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['setup_20wizard',['Setup Wizard',['../group___rfm_bind_wizard.html',1,'']]],
-  ['scope_20gadget_20plugin',['Scope Gadget Plugin',['../group___scope_plugin.html',1,'']]],
-  ['serial_20connection_20plugin',['Serial Connection Plugin',['../group___serial_plugin.html',1,'']]],
-  ['setup_20wizard',['Setup Wizard',['../group___setup_wizard.html',1,'']]],
-  ['system_20health_20plugin',['System Health Plugin',['../group___system_health_plugin.html',1,'']]],
-  ['scheduler_20gcs_20plugins',['Scheduler GCS Plugins',['../group___telemetry.html',1,'']]]
+  ['tau_20labs_20boards_20support_20plugin',['Tau Labs boards support Plugin',['../group___boards___tau_labs_plugin.html',1,'']]],
+  ['tau_20link_20gadget_20plugin',['Tau Link Gadget Plugin',['../group___tau_link_gadget_plugin.html',1,'']]],
+  ['telemetry_20scheduler_20gadget_20plugin',['Telemetry Scheduler Gadget Plugin',['../group___telemetry_scheduler_gadget_plugin.html',1,'']]],
+  ['telemetryscheduler_20plugin',['TelemetryScheduler Plugin',['../group___telemetry_scheduler_plugin.html',1,'']]],
+  ['tlmapwidget',['TLMapWidget',['../group___t_l_map_widget.html',1,'']]]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX98 =
 {
+"pios__can__priv_8h.html#ga461562c7b4468aed60ea58efe638d052":[4,0,0,3,1,18,1],
+"pios__can__priv_8h.html#gacb1725d9d79f03cae4959efcc521acc9":[4,0,0,3,1,18,2],
 "pios__can__priv_8h_source.html":[4,0,0,3,1,18],
 "pios__com_8c.html":[4,0,0,3,0,8],
 "pios__com_8c_source.html":[4,0,0,3,0,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX98 =
 "pios__flashfs__logfs_8c.html#a0d20c5513f9d5200fcb8f203df48b0e9":[4,0,0,3,0,17,41],
 "pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630":[4,0,0,3,0,17,44],
 "pios__flashfs__logfs_8c.html#a431ff00458feadb3820732c6bc71e78b":[4,0,0,3,0,17,42],
-"pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556":[4,0,0,3,0,17,37],
-"pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2":[4,0,0,3,0,17,36],
-"pios__flashfs__logfs_8c.html#a7930e82075aa4e3326ad9615090b5d61":[4,0,0,3,0,17,38]
+"pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556":[4,0,0,3,0,17,37]
 };

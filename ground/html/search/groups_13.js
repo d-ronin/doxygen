@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['viewer_20plugin',['Viewer Plugin',['../group___q_m_l.html',1,'']]]
+  ['welcome_20plugin',['Welcome Plugin',['../group___welcome_plugin.html',1,'']]]
 ];
