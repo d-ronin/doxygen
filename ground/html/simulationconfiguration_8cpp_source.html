@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -136,15 +136,15 @@ $(document).ready(function(){initNavTree('simulationconfiguration_8cpp_source.ht
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;hwsimulation.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">   36</a></span>&#160;<a class="code" href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">SimulationConfiguration::SimulationConfiguration</a>(QWidget *parent) :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a>(parent),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ui(new Ui::<a class="code" href="class_simulation_configuration.html">SimulationConfiguration</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">   36</a></span>&#160;<a class="code" href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">SimulationConfiguration::SimulationConfiguration</a>(QWidget *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    : <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a>(parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , ui(new Ui::<a class="code" href="class_simulation_configuration.html">SimulationConfiguration</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *hwSim = <a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>()-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">HwSimulation::NAME</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_ASSERT(hwSim);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    connect(hwSim, SIGNAL(objectUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*)), <span class="keyword">this</span>, SLOT(onLedStateUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*)));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    connect(hwSim, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a>, <span class="keyword">this</span>, &amp;SimulationConfiguration::onLedStateUpdated);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___boards__d_ronin.html#ga0a7a760f2526bdaf15edf40494111d24">   47</a></span>&#160;<a class="code" href="group___boards__d_ronin.html#ga0a7a760f2526bdaf15edf40494111d24">SimulationConfiguration::~SimulationConfiguration</a>()</div>
@@ -167,15 +167,16 @@ $(document).ready(function(){initNavTree('simulationconfiguration_8cpp_source.ht
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="ttc" id="group___boards__d_ronin_html_ga0a7a760f2526bdaf15edf40494111d24"><div class="ttname"><a href="group___boards__d_ronin.html#ga0a7a760f2526bdaf15edf40494111d24">SimulationConfiguration::~SimulationConfiguration</a></div><div class="ttdeci">~SimulationConfiguration()</div><div class="ttdef"><b>Definition:</b> <a href="simulationconfiguration_8cpp_source.html#l00047">simulationconfiguration.cpp:47</a></div></div>
-<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00053">configtaskwidget.h:53</a></div></div>
+<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
 <div class="ttc" id="simulationconfiguration_8h_html"><div class="ttname"><a href="simulationconfiguration_8h.html">simulationconfiguration.h</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga9aac3ae5395f63249cd821e0e5be5bf2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a></div><div class="ttdeci">void objectUpdated(UAVObject *obj)</div><div class="ttdoc">Signal sent whenever any field of the object is updated. </div></div>
 <div class="ttc" id="smartsavebutton_8h_html"><div class="ttname"><a href="smartsavebutton_8h.html">smartsavebutton.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gacbd8a57cc2bde1166c3cdc997e749579"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a></div><div class="ttdeci">() NAME()</div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga9eca4e5ec5f393d196502e2a30ca2cbe"><div class="ttname"><a href="group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe">SimulationConfiguration::SimulationConfiguration</a></div><div class="ttdeci">SimulationConfiguration(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="simulationconfiguration_8cpp_source.html#l00036">simulationconfiguration.cpp:36</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="class_simulation_configuration_html"><div class="ttname"><a href="class_simulation_configuration.html">SimulationConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="simulationconfiguration_8h_source.html#l00040">simulationconfiguration.h:40</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00219">uavobjectmanager.cpp:219</a></div></div>
-<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga516ee05a73ac3c7c9e6132b0d7294b4a"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">ConfigTaskWidget::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdoc">ConfigTaskWidget::getObjectManager Utility function to get a pointer to the object manager...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00278">configtaskwidget.cpp:278</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
+<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga516ee05a73ac3c7c9e6132b0d7294b4a"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">ConfigTaskWidget::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdoc">ConfigTaskWidget::getObjectManager Utility function to get a pointer to the object manager...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00290">configtaskwidget.cpp:290</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

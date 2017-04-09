@@ -34,7 +34,7 @@ var class_tree_item =
     [ "setParentTree", "group___u_a_v_object_browser_plugin.html#gab0eb64f28a5cd5d9e77ff4579014b1bb", null ],
     [ "setUpdatedOnly", "group___u_a_v_object_browser_plugin.html#ga63e16f896af89aa165dcd9c31d42ce83", null ],
     [ "setUpdatedOnlyParent", "group___u_a_v_object_browser_plugin.html#gae74eb4785ae705b5a9ffc056a71fb88a", null ],
-    [ "treeChildren", "group___u_a_v_object_browser_plugin.html#gaa56dc80d617c2c9bd914abe5da774fd8", null ],
+    [ "treeChildren", "group___u_a_v_object_browser_plugin.html#ga158ddaed5b5e8b0129642c55991e3f30", null ],
     [ "update", "group___u_a_v_object_browser_plugin.html#gab6c763d5ea39c359ab56b4d8b1af8f7b", null ],
     [ "updatedOnly", "group___u_a_v_object_browser_plugin.html#gae407428df05b1f28bcb6e8bf2cd86b73", null ],
     [ "updateHighlight", "group___u_a_v_object_browser_plugin.html#gab8702d2046500fbe3dd7cee66ebcda70", null ],

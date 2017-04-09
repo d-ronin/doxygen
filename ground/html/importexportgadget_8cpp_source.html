@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,33 +130,34 @@ $(document).ready(function(){initNavTree('importexportgadget_8cpp_source.html','
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="importexportgadgetwidget_8h.html">importexportgadgetwidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;importexportgadgetconfiguration.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5">   33</a></span>&#160;<a class="code" href="group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5">ImportExportGadget::ImportExportGadget</a>(QString classId, <a class="code" href="class_import_export_gadget_widget.html">ImportExportGadgetWidget</a> *widget, QWidget *parent) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        IUAVGadget(classId, parent),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_widget(widget)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">   39</a></span>&#160;<a class="code" href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">ImportExportGadget::~ImportExportGadget</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">  This is called when a configuration is loaded, and updates the plugin&#39;s settings.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  Careful: the plugin is already drawn before the loadConfiguration method is called the</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  first time, so you have to be careful not to assume all the plugin values are initialized</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  the first time you use them</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">ImportExportGadget::loadConfiguration</a>(IUAVGadgetConfiguration* config)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_widget-&gt;loadConfiguration(qobject_cast&lt;ImportExportGadgetConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="ttc" id="group__importexportplugin_html_ga43425e89a61490abd203a67eb51a61e0"><div class="ttname"><a href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">ImportExportGadget::~ImportExportGadget</a></div><div class="ttdeci">~ImportExportGadget()</div><div class="ttdef"><b>Definition:</b> <a href="importexportgadget_8cpp_source.html#l00039">importexportgadget.cpp:39</a></div></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5">   33</a></span>&#160;<a class="code" href="group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5">ImportExportGadget::ImportExportGadget</a>(QString classId, <a class="code" href="class_import_export_gadget_widget.html">ImportExportGadgetWidget</a> *widget,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                       QWidget *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : IUAVGadget(classId, parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_widget(widget)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">   40</a></span>&#160;<a class="code" href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">ImportExportGadget::~ImportExportGadget</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  This is called when a configuration is loaded, and updates the plugin&#39;s settings.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  Careful: the plugin is already drawn before the loadConfiguration method is called the</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  first time, so you have to be careful not to assume all the plugin values are initialized</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">  the first time you use them</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">ImportExportGadget::loadConfiguration</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_widget-&gt;loadConfiguration(qobject_cast&lt;ImportExportGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="ttc" id="group__importexportplugin_html_ga43425e89a61490abd203a67eb51a61e0"><div class="ttname"><a href="group__importexportplugin.html#ga43425e89a61490abd203a67eb51a61e0">ImportExportGadget::~ImportExportGadget</a></div><div class="ttdeci">~ImportExportGadget()</div><div class="ttdef"><b>Definition:</b> <a href="importexportgadget_8cpp_source.html#l00040">importexportgadget.cpp:40</a></div></div>
 <div class="ttc" id="group__importexportplugin_html_ga449e9c18b4cda73ccd909194aa3485e5"><div class="ttname"><a href="group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5">ImportExportGadget::ImportExportGadget</a></div><div class="ttdeci">ImportExportGadget(QString classId, ImportExportGadgetWidget *widget, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="importexportgadget_8cpp_source.html#l00033">importexportgadget.cpp:33</a></div></div>
 <div class="ttc" id="importexportgadget_8h_html"><div class="ttname"><a href="importexportgadget_8h.html">importexportgadget.h</a></div></div>
-<div class="ttc" id="group__importexportplugin_html_gaffb56b3fb88f123af21ac597a514345a"><div class="ttname"><a href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">ImportExportGadget::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="importexportgadget_8cpp_source.html#l00050">importexportgadget.cpp:50</a></div></div>
+<div class="ttc" id="group__importexportplugin_html_gaffb56b3fb88f123af21ac597a514345a"><div class="ttname"><a href="group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a">ImportExportGadget::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="importexportgadget_8cpp_source.html#l00051">importexportgadget.cpp:51</a></div></div>
 <div class="ttc" id="importexportgadgetwidget_8h_html"><div class="ttname"><a href="importexportgadgetwidget_8h.html">importexportgadgetwidget.h</a></div></div>
-<div class="ttc" id="class_import_export_gadget_widget_html"><div class="ttname"><a href="class_import_export_gadget_widget.html">ImportExportGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="importexportgadgetwidget_8h_source.html#l00024">importexportgadgetwidget.h:24</a></div></div>
+<div class="ttc" id="class_import_export_gadget_widget_html"><div class="ttname"><a href="class_import_export_gadget_widget.html">ImportExportGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="importexportgadgetwidget_8h_source.html#l00023">importexportgadgetwidget.h:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

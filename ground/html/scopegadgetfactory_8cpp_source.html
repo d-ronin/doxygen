@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,48 +132,46 @@ $(document).ready(function(){initNavTree('scopegadgetfactory_8cpp_source.html','
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scopegadget_8h.html">scopegadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60">   34</a></span>&#160;<a class="code" href="group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60">ScopeGadgetFactory::ScopeGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          tr(<span class="stringliteral">&quot;Scope&quot;</span>),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          parent)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">   41</a></span>&#160;<a class="code" href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">ScopeGadgetFactory::~ScopeGadgetFactory</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">   45</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>* <a class="code" href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">ScopeGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_scope_gadget_widget.html">ScopeGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_scope_gadget_widget.html">ScopeGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget.html">ScopeGadget</a>(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">   52</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">ScopeGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">   57</a></span>&#160;IOptionsPage *<a class="code" href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">ScopeGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>(qobject_cast&lt;ScopeGadgetConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="ttc" id="group___scope_plugin_html_gacbb08116cc0c7390601e30b6cfde0cba"><div class="ttname"><a href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">ScopeGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00052">scopegadgetfactory.cpp:52</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60">   34</a></span>&#160;<a class="code" href="group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60">ScopeGadgetFactory::ScopeGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>), tr(<span class="stringliteral">&quot;Scope&quot;</span>), parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">   39</a></span>&#160;<a class="code" href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">ScopeGadgetFactory::~ScopeGadgetFactory</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">   43</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">ScopeGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_scope_gadget_widget.html">ScopeGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_scope_gadget_widget.html">ScopeGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget.html">ScopeGadget</a>(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">   50</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">ScopeGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;ScopeGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">   55</a></span>&#160;IOptionsPage *<a class="code" href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">ScopeGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>(qobject_cast&lt;ScopeGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="ttc" id="group___scope_plugin_html_gacbb08116cc0c7390601e30b6cfde0cba"><div class="ttname"><a href="group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba">ScopeGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00050">scopegadgetfactory.cpp:50</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
-<div class="ttc" id="class_scope_gadget_options_page_html"><div class="ttname"><a href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00055">scopegadgetoptionspage.h:55</a></div></div>
+<div class="ttc" id="class_scope_gadget_options_page_html"><div class="ttname"><a href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00053">scopegadgetoptionspage.h:53</a></div></div>
 <div class="ttc" id="scopegadgetconfiguration_8h_html"><div class="ttname"><a href="scopegadgetconfiguration_8h.html">scopegadgetconfiguration.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="class_scope_gadget_widget_html"><div class="ttname"><a href="class_scope_gadget_widget.html">ScopeGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetwidget_8h_source.html#l00080">scopegadgetwidget.h:80</a></div></div>
-<div class="ttc" id="class_scope_gadget_html"><div class="ttname"><a href="class_scope_gadget.html">ScopeGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadget_8h_source.html#l00043">scopegadget.h:43</a></div></div>
+<div class="ttc" id="class_scope_gadget_widget_html"><div class="ttname"><a href="class_scope_gadget_widget.html">ScopeGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetwidget_8h_source.html#l00082">scopegadgetwidget.h:82</a></div></div>
+<div class="ttc" id="class_scope_gadget_html"><div class="ttname"><a href="class_scope_gadget.html">ScopeGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadget_8h_source.html#l00042">scopegadget.h:42</a></div></div>
 <div class="ttc" id="scopegadgetfactory_8h_html"><div class="ttname"><a href="scopegadgetfactory_8h.html">scopegadgetfactory.h</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_gae7d925002f23646412ea50bf0a6c1658"><div class="ttname"><a href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">ScopeGadgetFactory::~ScopeGadgetFactory</a></div><div class="ttdeci">~ScopeGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00041">scopegadgetfactory.cpp:41</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_gae7d925002f23646412ea50bf0a6c1658"><div class="ttname"><a href="group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658">ScopeGadgetFactory::~ScopeGadgetFactory</a></div><div class="ttdeci">~ScopeGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00039">scopegadgetfactory.cpp:39</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_gace4d87876bb88a527c473e6f363a4a60"><div class="ttname"><a href="group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60">ScopeGadgetFactory::ScopeGadgetFactory</a></div><div class="ttdeci">ScopeGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00034">scopegadgetfactory.cpp:34</a></div></div>
 <div class="ttc" id="scopegadgetoptionspage_8h_html"><div class="ttname"><a href="scopegadgetoptionspage_8h.html">scopegadgetoptionspage.h</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ga38da87ae88b0f1bd3ae63e997528ed56"><div class="ttname"><a href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">ScopeGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00045">scopegadgetfactory.cpp:45</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_ga38da87ae88b0f1bd3ae63e997528ed56"><div class="ttname"><a href="group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56">ScopeGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00043">scopegadgetfactory.cpp:43</a></div></div>
 <div class="ttc" id="scopegadgetwidget_8h_html"><div class="ttname"><a href="scopegadgetwidget_8h.html">scopegadgetwidget.h</a></div><div class="ttdoc">Scope Plugin Gadget Widget. </div></div>
-<div class="ttc" id="group___scope_plugin_html_ga121b0d9857a168a0ad41f980d5c34b63"><div class="ttname"><a href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">ScopeGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00057">scopegadgetfactory.cpp:57</a></div></div>
-<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00042">scopegadgetconfiguration.h:42</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_ga121b0d9857a168a0ad41f980d5c34b63"><div class="ttname"><a href="group___scope_plugin.html#ga121b0d9857a168a0ad41f980d5c34b63">ScopeGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8cpp_source.html#l00055">scopegadgetfactory.cpp:55</a></div></div>
+<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00041">scopegadgetconfiguration.h:41</a></div></div>
 <div class="ttc" id="scopegadget_8h_html"><div class="ttname"><a href="scopegadget_8h.html">scopegadget.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

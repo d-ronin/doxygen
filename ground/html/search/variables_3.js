@@ -13,7 +13,7 @@ var searchData=
   ['capext',['CapExt',['../group___uploader.html#gaff993b6ff97d634dcd24b473b454258a',1,'tl_dfu::device']]],
   ['category',['category',['../group___core_plugin.html#ga46b587255ad7653276bed9059aca7034',1,'PageData::category()'],['../group___u_a_v_objects_plugin.html#gae96da3f59e51fb5c3ca43056bda4a63e',1,'UAVObject::category()']]],
   ['certified',['certified',['../group___u_a_v_object_util_plugin.html#ga49289a9802c5eec2cc8b0b38c7c88500',1,'deviceDescriptorStruct']]],
-  ['channelbanks',['channelBanks',['../group___core_plugin.html#gaa94fd1ec5fb1bc46945ea49ed827822f',1,'Core::IBoardType']]],
+  ['channelbanks',['channelBanks',['../group___core_plugin.html#gadb3667a0ce7a87dcc05de3fb6f3bfd6b',1,'Core::IBoardType']]],
   ['channelmax',['channelMax',['../group___setup_wizard.html#ga204a4e4648453d51e42ad2b82cb68fa8',1,'actuatorChannelSettings']]],
   ['channelmin',['channelMin',['../group___setup_wizard.html#ga51bfc85e00becd45e4e622da70ff9d27',1,'actuatorChannelSettings']]],
   ['channelnames',['channelNames',['../group___config_plugin.html#gaca881ae0a25d7e063b68a36b2f5576bf',1,'VehicleConfig']]],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['waypoint',['waypoint',['../class_path_compiler_1_1waypoint.html',1,'PathCompiler']]],
   ['waypointcurve',['WayPointCurve',['../classmapcontrol_1_1_way_point_curve.html',1,'mapcontrol']]],
   ['waypointdelegate',['WaypointDelegate',['../class_waypoint_delegate.html',1,'']]],
   ['waypointdialog',['WaypointDialog',['../class_waypoint_dialog.html',1,'']]],

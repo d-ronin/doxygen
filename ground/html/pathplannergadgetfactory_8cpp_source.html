@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,31 +130,29 @@ $(document).ready(function(){initNavTree('pathplannergadgetfactory_8cpp_source.h
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathplannergadget_8h.html">pathplannergadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#ga88e48bf90ce31bd235b33782dfe905e9">   30</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#ga88e48bf90ce31bd235b33782dfe905e9">PathPlannerGadgetFactory::PathPlannerGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;PathPlannerGadget&quot;</span>),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          tr(<span class="stringliteral">&quot;Path Planner&quot;</span>),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          parent)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">   37</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">PathPlannerGadgetFactory::~PathPlannerGadgetFactory</a>()</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">   42</a></span>&#160;IUAVGadget* <a class="code" href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">PathPlannerGadgetFactory::createGadget</a>(QWidget *parent) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_path_planner_gadget_widget.html">PathPlannerGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_path_planner_gadget_widget.html">PathPlannerGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_path_planner_gadget.html">PathPlannerGadget</a>(QString(<span class="stringliteral">&quot;PathPlannerGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#ga88e48bf90ce31bd235b33782dfe905e9">   30</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#ga88e48bf90ce31bd235b33782dfe905e9">PathPlannerGadgetFactory::PathPlannerGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;PathPlannerGadget&quot;</span>), tr(<span class="stringliteral">&quot;Path Planner&quot;</span>), parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">   35</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">PathPlannerGadgetFactory::~PathPlannerGadgetFactory</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">   39</a></span>&#160;IUAVGadget *<a class="code" href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">PathPlannerGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_path_planner_gadget_widget.html">PathPlannerGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_path_planner_gadget_widget.html">PathPlannerGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_path_planner_gadget.html">PathPlannerGadget</a>(QString(<span class="stringliteral">&quot;PathPlannerGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="pathplannergadgetwidget_8h_html"><div class="ttname"><a href="pathplannergadgetwidget_8h.html">pathplannergadgetwidget.h</a></div></div>
-<div class="ttc" id="group___path_planner_gadget_plugin_html_ga2dfd582034d463500837f0eaf0d01bd6"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">PathPlannerGadgetFactory::~PathPlannerGadgetFactory</a></div><div class="ttdeci">~PathPlannerGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetfactory_8cpp_source.html#l00037">pathplannergadgetfactory.cpp:37</a></div></div>
+<div class="ttc" id="group___path_planner_gadget_plugin_html_ga2dfd582034d463500837f0eaf0d01bd6"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#ga2dfd582034d463500837f0eaf0d01bd6">PathPlannerGadgetFactory::~PathPlannerGadgetFactory</a></div><div class="ttdeci">~PathPlannerGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetfactory_8cpp_source.html#l00035">pathplannergadgetfactory.cpp:35</a></div></div>
 <div class="ttc" id="class_path_planner_gadget_html"><div class="ttname"><a href="class_path_planner_gadget.html">PathPlannerGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadget_8h_source.html#l00040">pathplannergadget.h:40</a></div></div>
 <div class="ttc" id="pathplannergadget_8h_html"><div class="ttname"><a href="pathplannergadget_8h.html">pathplannergadget.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="class_path_planner_gadget_widget_html"><div class="ttname"><a href="class_path_planner_gadget_widget.html">PathPlannerGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetwidget_8h_source.html#l00037">pathplannergadgetwidget.h:37</a></div></div>
 <div class="ttc" id="group___path_planner_gadget_plugin_html_ga88e48bf90ce31bd235b33782dfe905e9"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#ga88e48bf90ce31bd235b33782dfe905e9">PathPlannerGadgetFactory::PathPlannerGadgetFactory</a></div><div class="ttdeci">PathPlannerGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetfactory_8cpp_source.html#l00030">pathplannergadgetfactory.cpp:30</a></div></div>
 <div class="ttc" id="pathplannergadgetfactory_8h_html"><div class="ttname"><a href="pathplannergadgetfactory_8h.html">pathplannergadgetfactory.h</a></div></div>
-<div class="ttc" id="group___path_planner_gadget_plugin_html_gaae19a3f321bbfe2ff8c6f75d2202d22e"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">PathPlannerGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetfactory_8cpp_source.html#l00042">pathplannergadgetfactory.cpp:42</a></div></div>
+<div class="ttc" id="group___path_planner_gadget_plugin_html_gaae19a3f321bbfe2ff8c6f75d2202d22e"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#gaae19a3f321bbfe2ff8c6f75d2202d22e">PathPlannerGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetfactory_8cpp_source.html#l00039">pathplannergadgetfactory.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

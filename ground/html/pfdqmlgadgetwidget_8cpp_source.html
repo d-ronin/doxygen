@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,27 +140,27 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetwidget_8cpp_source.html','
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;QQmlContext&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;stabilizationdesired.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#ac70dd0ebb4953c8200cf229fb0388e5f">   31</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_widget.html#ac70dd0ebb4953c8200cf229fb0388e5f">PfdQmlGadgetWidget::PfdQmlGadgetWidget</a>(QWindow *parent) :</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QQuickView(parent)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#ac70dd0ebb4953c8200cf229fb0388e5f">   31</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_widget.html#ac70dd0ebb4953c8200cf229fb0388e5f">PfdQmlGadgetWidget::PfdQmlGadgetWidget</a>(QWindow *parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : QQuickView(parent)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    setResizeMode(SizeRootObjectToView);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    objectsToExport &lt;&lt; <span class="stringliteral">&quot;VelocityActual&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       <span class="stringliteral">&quot;PositionActual&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       <span class="stringliteral">&quot;AltitudeHoldDesired&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       <span class="stringliteral">&quot;AttitudeActual&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       <span class="stringliteral">&quot;AirspeedActual&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                       <span class="stringliteral">&quot;Accels&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                       <span class="stringliteral">&quot;Magnetometer&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                       <span class="stringliteral">&quot;VelocityDesired&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                       <span class="stringliteral">&quot;StabilizationDesired&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                       <span class="stringliteral">&quot;PathDesired&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                       <span class="stringliteral">&quot;HomeLocation&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                       <span class="stringliteral">&quot;Waypoint&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                       <span class="stringliteral">&quot;WaypointActive&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                       <span class="stringliteral">&quot;GPSPosition&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                       <span class="stringliteral">&quot;GCSTelemetryStats&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                       <span class="stringliteral">&quot;FlightBatteryState&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    objectsToExport &lt;&lt; <span class="stringliteral">&quot;VelocityActual&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;PositionActual&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;AltitudeHoldDesired&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;AttitudeActual&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;AirspeedActual&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;Accels&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;Magnetometer&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;VelocityDesired&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;StabilizationDesired&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;PathDesired&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;HomeLocation&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;Waypoint&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;WaypointActive&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;GPSPosition&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;GCSTelemetryStats&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;FlightBatteryState&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetwidget_8cpp_source.html','
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        exportUAVOInstance(objectName, 0);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//to expose settings values</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// to expose settings values</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;qmlWidget&quot;</span>, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -177,75 +177,73 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetwidget_8cpp_source.html','
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> PfdQmlGadgetWidget::exportUAVOInstance(<span class="keyword">const</span> QString &amp;objectName, <span class="keywordtype">int</span> instId)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a>* <span class="keywordtype">object</span> = m_objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objectName, instId);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *<span class="keywordtype">object</span> = m_objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objectName, instId);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">object</span>)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        engine()-&gt;rootContext()-&gt;setContextProperty(objectName, <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;[PFDQML] Failed to load object&quot;</span> &lt;&lt; objectName;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> PfdQmlGadgetWidget::resetUAVOExport(<span class="keyword">const</span> QString &amp;objectName, <span class="keywordtype">int</span> instId)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a>* <span class="keywordtype">object</span> = m_objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objectName, instId);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">object</span>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        engine()-&gt;rootContext()-&gt;setContextProperty(objectName, (QObject*)NULL);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;Failed to load object&quot;</span> &lt;&lt; objectName;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">   99</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">PfdQmlGadgetWidget::setQmlFile</a>(QString fn)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    m_qmlFileName = fn;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    engine()-&gt;removeImageProvider(<span class="stringliteral">&quot;svg&quot;</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_svg_image_provider.html">SvgImageProvider</a> *svgProvider = <span class="keyword">new</span> <a class="code" href="class_svg_image_provider.html">SvgImageProvider</a>(fn);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    engine()-&gt;addImageProvider(<span class="stringliteral">&quot;svg&quot;</span>, svgProvider);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    engine()-&gt;clearComponentCache();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//it&#39;s necessary to allow qml side to query svg element position</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;svgRenderer&quot;</span>, svgProvider);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    engine()-&gt;setBaseUrl(QUrl::fromLocalFile(fn));</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    setSource(QUrl::fromLocalFile(fn));</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QQmlError &amp;<a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>, errors()) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        qDebug() &lt;&lt; error.description();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">  120</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">PfdQmlGadgetWidget::setSettingsMap</a>(<span class="keyword">const</span> QVariantMap &amp;settings)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;settings&quot;</span>, settings);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">PfdQmlGadgetWidget::mouseReleaseEvent</a>(QMouseEvent *event)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Reload the schene on the middle mouse button click.</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (event-&gt;button() == Qt::MiddleButton) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">setQmlFile</a>(m_qmlFileName);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    QQuickView::mouseReleaseEvent(event);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="ttc" id="class_pfd_qml_gadget_widget_html_a1502ba1df423b4f0774e5dadc8be3398"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">PfdQmlGadgetWidget::mouseReleaseEvent</a></div><div class="ttdeci">void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00125">pfdqmlgadgetwidget.cpp:125</a></div></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> PfdQmlGadgetWidget::resetUAVOExport(<span class="keyword">const</span> QString &amp;objectName, <span class="keywordtype">int</span> instId)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *<span class="keywordtype">object</span> = m_objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objectName, instId);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">object</span>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        engine()-&gt;rootContext()-&gt;setContextProperty(objectName, (QObject *)NULL);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;Failed to load object&quot;</span> &lt;&lt; objectName;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">PfdQmlGadgetWidget::setQmlFile</a>(QString fn)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    m_qmlFileName = fn;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    engine()-&gt;removeImageProvider(<span class="stringliteral">&quot;svg&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="class_svg_image_provider.html">SvgImageProvider</a> *svgProvider = <span class="keyword">new</span> <a class="code" href="class_svg_image_provider.html">SvgImageProvider</a>(fn);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    engine()-&gt;addImageProvider(<span class="stringliteral">&quot;svg&quot;</span>, svgProvider);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    engine()-&gt;clearComponentCache();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// it&#39;s necessary to allow qml side to query svg element position</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;svgRenderer&quot;</span>, svgProvider);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    engine()-&gt;setBaseUrl(QUrl::fromLocalFile(fn));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    setSource(QUrl::fromLocalFile(fn));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QQmlError &amp;<a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>, errors()) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        qDebug() &lt;&lt; error.description();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">PfdQmlGadgetWidget::setSettingsMap</a>(<span class="keyword">const</span> QVariantMap &amp;settings)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;settings&quot;</span>, settings);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">PfdQmlGadgetWidget::mouseReleaseEvent</a>(QMouseEvent *event)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Reload the schene on the middle mouse button click.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (event-&gt;button() == Qt::MiddleButton) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">setQmlFile</a>(m_qmlFileName);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    QQuickView::mouseReleaseEvent(event);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="ttc" id="class_pfd_qml_gadget_widget_html_a1502ba1df423b4f0774e5dadc8be3398"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#a1502ba1df423b4f0774e5dadc8be3398">PfdQmlGadgetWidget::mouseReleaseEvent</a></div><div class="ttdeci">void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00124">pfdqmlgadgetwidget.cpp:124</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_svg_image_provider_html"><div class="ttname"><a href="class_svg_image_provider.html">SvgImageProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="svgimageprovider_8h_source.html#l00038">svgimageprovider.h:38</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="svgimageprovider_8h_html"><div class="ttname"><a href="svgimageprovider_8h.html">svgimageprovider.h</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_widget_html_ac70dd0ebb4953c8200cf229fb0388e5f"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#ac70dd0ebb4953c8200cf229fb0388e5f">PfdQmlGadgetWidget::PfdQmlGadgetWidget</a></div><div class="ttdeci">PfdQmlGadgetWidget(QWindow *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00031">pfdqmlgadgetwidget.cpp:31</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_widget_html_a09b5734522527945771e50e69b23ae70"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">PfdQmlGadgetWidget::setSettingsMap</a></div><div class="ttdeci">void setSettingsMap(const QVariantMap &amp;settings)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00120">pfdqmlgadgetwidget.cpp:120</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_widget_html_a09b5734522527945771e50e69b23ae70"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#a09b5734522527945771e50e69b23ae70">PfdQmlGadgetWidget::setSettingsMap</a></div><div class="ttdeci">void setSettingsMap(const QVariantMap &amp;settings)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00119">pfdqmlgadgetwidget.cpp:119</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_widget_html_a02e8beb8b84aa1aaf39e24a92d3b09b7"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#a02e8beb8b84aa1aaf39e24a92d3b09b7">PfdQmlGadgetWidget::~PfdQmlGadgetWidget</a></div><div class="ttdeci">~PfdQmlGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00064">pfdqmlgadgetwidget.cpp:64</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_widget_html_ab7df16298baf43631c32dace9a1dffbf"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">PfdQmlGadgetWidget::setQmlFile</a></div><div class="ttdeci">void setQmlFile(QString fn)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00099">pfdqmlgadgetwidget.cpp:99</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_widget_html_ab7df16298baf43631c32dace9a1dffbf"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html#ab7df16298baf43631c32dace9a1dffbf">PfdQmlGadgetWidget::setQmlFile</a></div><div class="ttdeci">void setQmlFile(QString fn)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8cpp_source.html#l00098">pfdqmlgadgetwidget.cpp:98</a></div></div>
 <div class="ttc" id="pfdqmlgadgetwidget_8h_html"><div class="ttname"><a href="pfdqmlgadgetwidget_8h.html">pfdqmlgadgetwidget.h</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a8760c7f0db08dc03416f4c8c3fc08f02"><div class="ttname"><a href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a></div><div class="ttdeci">else error('Your technical computing program does not support file choosers.Please input the file name in the argument. ') end elseif nargin &gt;0 logfile</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00219">uavobjectmanager.cpp:219</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

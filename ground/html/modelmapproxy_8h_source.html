@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,44 +142,54 @@ $(document).ready(function(){initNavTree('modelmapproxy_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using namespace </span>mapcontrol;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_model_map_proxy.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_map_proxy.html">ModelMapProxy</a>:<span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_model_map_proxy.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_map_proxy.html">ModelMapProxy</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">enum</span> {OVERLAY_LINE, OVERLAY_CURVE_RIGHT, OVERLAY_CURVE_LEFT, OVERLAY_CIRCLE_RIGHT, OVERLAY_CIRCLE_LEFT} overlayType;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_model_map_proxy.html">ModelMapProxy</a>(QObject *parent,<a class="code" href="classmapcontrol_1_1_t_l_map_widget.html">TLMapWidget</a> * map,<a class="code" href="class_flight_data_model.html">FlightDataModel</a> * model,QItemSelectionModel * selectionModel);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *findWayPointNumber(<span class="keywordtype">int</span> number);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> createWayPoint(<a class="code" href="structinternals_1_1_point_lat_lng.html">internals::PointLatLng</a> coord);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> deleteWayPoint(<span class="keywordtype">int</span> number);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> deleteAll();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        OVERLAY_LINE,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        OVERLAY_CURVE_RIGHT,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        OVERLAY_CURVE_LEFT,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        OVERLAY_CIRCLE_RIGHT,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        OVERLAY_CIRCLE_LEFT</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } overlayType;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_model_map_proxy.html">ModelMapProxy</a>(QObject *parent, <a class="code" href="classmapcontrol_1_1_t_l_map_widget.html">TLMapWidget</a> *map, <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *model,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                           QItemSelectionModel *selectionModel);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *findWayPointNumber(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> createWayPoint(<a class="code" href="structinternals_1_1_point_lat_lng.html">internals::PointLatLng</a> coord);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> dataChanged ( <span class="keyword">const</span> QModelIndex &amp; topLeft, <span class="keyword">const</span> QModelIndex &amp; bottomRight );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> deleteWayPoint(<span class="keywordtype">int</span> number);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> rowsInserted ( <span class="keyword">const</span> QModelIndex &amp; parent, <span class="keywordtype">int</span> first, <span class="keywordtype">int</span> <a class="code" href="uavobjecttemplate_8m.html#a941fe92761b5f8a1adb7534ed9410993">last</a> );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> rowsRemoved ( <span class="keyword">const</span> QModelIndex &amp; parent, <span class="keywordtype">int</span> first, <span class="keywordtype">int</span> last );</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> WPValuesChanged(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *wp);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> currentRowChanged(QModelIndex,QModelIndex);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> selectedWPChanged(<a class="code" href="class_q_list.html">QList&lt;WayPointItem*&gt;</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    overlayType overlayTranslate(<span class="keywordtype">int</span> type);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> createOverlay(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *from, <a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> * to, overlayType type, QColor color, <span class="keywordtype">double</span> radius);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> createOverlay(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *from, <a class="code" href="classmapcontrol_1_1_home_item.html">HomeItem</a> *to, ModelMapProxy::overlayType type, QColor color);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classmapcontrol_1_1_t_l_map_widget.html">TLMapWidget</a> * myMap;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *model;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> refreshOverlays();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QItemSelectionModel * selection;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // MODELMAPPROXY_H</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> deleteAll();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> dataChanged(<span class="keyword">const</span> QModelIndex &amp;topLeft, <span class="keyword">const</span> QModelIndex &amp;bottomRight);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> rowsInserted(<span class="keyword">const</span> QModelIndex &amp;parent, <span class="keywordtype">int</span> first, <span class="keywordtype">int</span> <a class="code" href="uavobjecttemplate_8m.html#a941fe92761b5f8a1adb7534ed9410993">last</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> rowsRemoved(<span class="keyword">const</span> QModelIndex &amp;parent, <span class="keywordtype">int</span> first, <span class="keywordtype">int</span> last);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> WPValuesChanged(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *wp);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> currentRowChanged(QModelIndex, QModelIndex);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> selectedWPChanged(<a class="code" href="class_q_list.html">QList&lt;WayPointItem *&gt;</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    overlayType overlayTranslate(<span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> createOverlay(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *from, <a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *to, overlayType type, QColor color,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                       <span class="keywordtype">double</span> radius);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> createOverlay(<a class="code" href="classmapcontrol_1_1_way_point_item.html">WayPointItem</a> *from, <a class="code" href="classmapcontrol_1_1_home_item.html">HomeItem</a> *to, ModelMapProxy::overlayType type,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                       QColor color);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classmapcontrol_1_1_t_l_map_widget.html">TLMapWidget</a> *myMap;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *model;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> refreshOverlays();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QItemSelectionModel *selection;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // MODELMAPPROXY_H</span></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a941fe92761b5f8a1adb7534ed9410993"><div class="ttname"><a href="uavobjecttemplate_8m.html#a941fe92761b5f8a1adb7534ed9410993">last</a></div><div class="ttdeci">Trim off last</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00310">uavobjecttemplate.m:310</a></div></div>
 <div class="ttc" id="classmapcontrol_1_1_home_item_html"><div class="ttname"><a href="classmapcontrol_1_1_home_item.html">mapcontrol::HomeItem</a></div><div class="ttdef"><b>Definition:</b> <a href="homeitem_8h_source.html#l00037">homeitem.h:37</a></div></div>
 <div class="ttc" id="class_model_map_proxy_html"><div class="ttname"><a href="class_model_map_proxy.html">ModelMapProxy</a></div><div class="ttdoc">The ModelMapProxy class maps from the FlightDataModel to the OPMap and provides synchronization, both when the model changes updating the UI and if it is modified on the UI propagating changes to the model. </div><div class="ttdef"><b>Definition:</b> <a href="modelmapproxy_8h_source.html#l00051">modelmapproxy.h:51</a></div></div>
@@ -187,7 +197,7 @@ $(document).ready(function(){initNavTree('modelmapproxy_8h_source.html','');});
 <div class="ttc" id="structinternals_1_1_point_lat_lng_html"><div class="ttname"><a href="structinternals_1_1_point_lat_lng.html">internals::PointLatLng</a></div><div class="ttdef"><b>Definition:</b> <a href="pointlatlng_8h_source.html#l00036">pointlatlng.h:36</a></div></div>
 <div class="ttc" id="class_flight_data_model_html"><div class="ttname"><a href="class_flight_data_model.html">FlightDataModel</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00049">flightdatamodel.h:49</a></div></div>
 <div class="ttc" id="classmapcontrol_1_1_way_point_item_html"><div class="ttname"><a href="classmapcontrol_1_1_way_point_item.html">mapcontrol::WayPointItem</a></div><div class="ttdoc">A QGraphicsItem representing a WayPoint. </div><div class="ttdef"><b>Definition:</b> <a href="waypointitem_8h_source.html#l00041">waypointitem.h:41</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="tlmapcontrol_8h_html"><div class="ttname"><a href="tlmapcontrol_8h.html">tlmapcontrol.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -131,47 +131,42 @@ $(document).ready(function(){initNavTree('idevice_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__global_8h.html">core_global.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>Core {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_core_1_1_i_device.html">   46</a></span>&#160;<span class="keyword">class </span>CORE_EXPORT <a class="code" href="class_core_1_1_i_device.html">IDevice</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">   52</a></span>&#160;    QString <a class="code" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">setName</a>(QString theName) { name = theName; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">   54</a></span>&#160;    QString <a class="code" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">getDisplayName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> displayName; }</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">setDisplayName</a>( QString dn ) { displayName = dn; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    bool operator==(const IDevice *idv) const {</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        return name == idv-&gt;getName()  &amp;&amp; displayName == idv-&gt;getDisplayName();</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">   63</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">equals</a>(<span class="keyword">const</span> <a class="code" href="class_core_1_1_i_device.html">IDevice</a> *idv)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> name == idv-&gt;<a class="code" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">getName</a>()  &amp;&amp; displayName == idv-&gt;<a class="code" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">getDisplayName</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString name;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QString displayName;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_core_1_1_i_device.html">   45</a></span>&#160;<span class="keyword">class </span>CORE_EXPORT <a class="code" href="class_core_1_1_i_device.html">IDevice</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">   49</a></span>&#160;    QString <a class="code" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">setName</a>(QString theName) { name = theName; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">   51</a></span>&#160;    QString <a class="code" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">getDisplayName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> displayName; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">setDisplayName</a>(QString dn) { displayName = dn; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    bool operator==(const IDevice *idv) const {</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">        return name == idv-&gt;getName()  &amp;&amp; displayName == idv-&gt;getDisplayName();</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">   60</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">equals</a>(<span class="keyword">const</span> <a class="code" href="class_core_1_1_i_device.html">IDevice</a> *idv)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> name == idv-&gt;<a class="code" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">getName</a>() &amp;&amp; displayName == idv-&gt;<a class="code" href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">getDisplayName</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QString name;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QString displayName;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // IDEVICE_H</span></div>
-<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00046">idevice.h:46</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga815e1b550a4ffe8dbb76636026146145"><div class="ttname"><a href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">Core::IDevice::getName</a></div><div class="ttdeci">QString getName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00052">idevice.h:52</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00053">idevice.h:53</a></div></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // IDEVICE_H</span></div>
+<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00045">idevice.h:45</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga815e1b550a4ffe8dbb76636026146145"><div class="ttname"><a href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">Core::IDevice::getName</a></div><div class="ttdeci">QString getName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00049">idevice.h:49</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00050">idevice.h:50</a></div></div>
 <div class="ttc" id="core__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00055">idevice.h:55</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gac5c0277c3690da70fcb203767846a1ed"><div class="ttname"><a href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">Core::IDevice::equals</a></div><div class="ttdeci">bool equals(const IDevice *idv) const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00063">idevice.h:63</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga8504228d03605f9d90209f4117f4a987"><div class="ttname"><a href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">Core::IDevice::getDisplayName</a></div><div class="ttdeci">QString getDisplayName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00054">idevice.h:54</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00052">idevice.h:52</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gac5c0277c3690da70fcb203767846a1ed"><div class="ttname"><a href="group___core_plugin.html#gac5c0277c3690da70fcb203767846a1ed">Core::IDevice::equals</a></div><div class="ttdeci">bool equals(const IDevice *idv) const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00060">idevice.h:60</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga8504228d03605f9d90209f4117f4a987"><div class="ttname"><a href="group___core_plugin.html#ga8504228d03605f9d90209f4117f4a987">Core::IDevice::getDisplayName</a></div><div class="ttdeci">QString getDisplayName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00051">idevice.h:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

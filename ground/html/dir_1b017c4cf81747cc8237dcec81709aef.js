@@ -4,8 +4,6 @@ var dir_1b017c4cf81747cc8237dcec81709aef =
     [ "homeeditor.h", "homeeditor_8h.html", null ],
     [ "modelmapproxy.cpp", "modelmapproxy_8cpp.html", null ],
     [ "modelmapproxy.h", "modelmapproxy_8h.html", null ],
-    [ "opmap_edit_waypoint_dialog.cpp", "opmap__edit__waypoint__dialog_8cpp.html", null ],
-    [ "opmap_edit_waypoint_dialog.h", "opmap__edit__waypoint__dialog_8h.html", null ],
     [ "opmap_statusbar_widget.cpp", "opmap__statusbar__widget_8cpp.html", null ],
     [ "opmap_statusbar_widget.h", "opmap__statusbar__widget_8h.html", null ],
     [ "opmap_zoom_slider_widget.cpp", "opmap__zoom__slider__widget_8cpp.html", null ],
@@ -21,7 +19,5 @@ var dir_1b017c4cf81747cc8237dcec81709aef =
     [ "opmapgadgetwidget.cpp", "opmapgadgetwidget_8cpp.html", "opmapgadgetwidget_8cpp" ],
     [ "opmapgadgetwidget.h", "opmapgadgetwidget_8h.html", "opmapgadgetwidget_8h" ],
     [ "opmapplugin.cpp", "opmapplugin_8cpp.html", null ],
-    [ "opmapplugin.h", "opmapplugin_8h.html", null ],
-    [ "pathcompiler.cpp", "pathcompiler_8cpp.html", null ],
-    [ "pathcompiler.h", "pathcompiler_8h.html", null ]
+    [ "opmapplugin.h", "opmapplugin_8h.html", null ]
 ];

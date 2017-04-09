@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('rawhidplugin_8cpp_source.html','');});
 <div class="contents">
 <a href="rawhidplugin_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -137,20 +137,20 @@ $(document).ready(function(){initNavTree('rawhidplugin_8cpp_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rawhid__const_8h.html">rawhid_const.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="usbsignalfilter_8h.html">usbsignalfilter.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// **********************************************************************</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">   42</a></span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">RawHIDConnection::RawHIDConnection</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    RawHidHandle = NULL;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// **********************************************************************</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">   40</a></span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">RawHIDConnection::RawHIDConnection</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    RawHidHandle = NULL;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_usbMonitor = <a class="code" href="group___raw_h_i_d_plugin.html#gabcb44085db71f0bd0a1513d25a572b33">USBMonitor::instance</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_usbMonitor = <a class="code" href="group___raw_h_i_d_plugin.html#gabcb44085db71f0bd0a1513d25a572b33">USBMonitor::instance</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_signalFilter = <span class="keyword">new</span> <a class="code" href="class_u_s_b_signal_filter.html">USBSignalFilter</a>(-1, -1, -1, <a class="code" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    connect(m_signalFilter, SIGNAL(deviceDiscovered()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___raw_h_i_d_plugin.html#gae6fbe6bf878bf78034b81d648fd25edb">onDeviceConnected</a>()));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    connect(m_signalFilter, SIGNAL(deviceRemoved()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___raw_h_i_d_plugin.html#gaf84655a7cf624587cf336b550e8c0045">onDeviceDisconnected</a>()));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_signalFilter = <span class="keyword">new</span> <a class="code" href="class_u_s_b_signal_filter.html">USBSignalFilter</a>(-1, -1, -1, <a class="code" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    connect(m_signalFilter, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            &amp;<a class="code" href="group___raw_h_i_d_plugin.html#gae6fbe6bf878bf78034b81d648fd25edb">RawHIDConnection::onDeviceConnected</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    connect(m_signalFilter, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga8e42cdaa700116a4467d8ded1f506ed9">USBSignalFilter::deviceRemoved</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            &amp;<a class="code" href="group___raw_h_i_d_plugin.html#gaf84655a7cf624587cf336b550e8c0045">RawHIDConnection::onDeviceDisconnected</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga5d3dcc8e69d09013ff84a3412f1ccee7">   54</a></span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#ga5d3dcc8e69d09013ff84a3412f1ccee7">RawHIDConnection::~RawHIDConnection</a>()</div>
@@ -174,20 +174,20 @@ $(document).ready(function(){initNavTree('rawhidplugin_8cpp_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        emit <a class="code" href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">availableDevChanged</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga9a33750f32a6e48ba7463beaacf3696d">   85</a></span>&#160;<a class="code" href="class_q_list.html">QList &lt; Core::IDevice*&gt;</a> <a class="code" href="group___raw_h_i_d_plugin.html#ga9a33750f32a6e48ba7463beaacf3696d">RawHIDConnection::availableDevices</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga9a33750f32a6e48ba7463beaacf3696d">   85</a></span>&#160;<a class="code" href="class_q_list.html">QList&lt;Core::IDevice *&gt;</a> <a class="code" href="group___raw_h_i_d_plugin.html#ga9a33750f32a6e48ba7463beaacf3696d">RawHIDConnection::availableDevices</a>()</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_q_list.html">QList &lt; Core::IDevice*&gt;</a> devices;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;Core::IDevice *&gt;</a> devices;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> portsList;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Loop for all vendorIDs known by the board manager</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_core_1_1_board_manager.html">Core::BoardManager</a>* brdMgr = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga01532acba71e5af5bee3777209aebf7d">boardManager</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_core_1_1_board_manager.html">Core::BoardManager</a> *brdMgr = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga01532acba71e5af5bee3777209aebf7d">boardManager</a>();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> brdVID = brdMgr-&gt;<a class="code" href="group___core_plugin.html#gaa37a0c8c804e3623c622cf8243bc7ef3">getKnownVendorIDs</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keywordtype">int</span> vendorID, brdVID) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> vendorID, brdVID) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        RAW_HID_QXTLOG_DEBUG(<span class="stringliteral">&quot;[rawhidplugin] VendorID type known: &quot;</span>, vendorID);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        portsList = m_usbMonitor-&gt;<a class="code" href="group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1">availableDevices</a>(vendorID, -1, -1,<a class="code" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// We currently list devices by their serial number        </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        portsList = m_usbMonitor-&gt;<a class="code" href="group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1">availableDevices</a>(vendorID, -1, -1, <a class="code" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// We currently list devices by their serial number</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_u_s_b_device.html">USBDevice</a> *dev = <span class="keyword">new</span> <a class="code" href="class_u_s_b_device.html">USBDevice</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">foreach</span>(<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> prt, portsList) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> prt, portsList) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            dev-&gt;<a class="code" href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">setName</a>(prt.<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            dev-&gt;<a class="code" href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">setDisplayName</a>(prt.<a class="code" href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">product</a>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            dev-&gt;<a class="code" href="group___core_plugin.html#ga2380f14d6b9cdc20421d32b660881955">setVendorID</a>(prt.<a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a>);</div>
@@ -205,121 +205,120 @@ $(document).ready(function(){initNavTree('rawhidplugin_8cpp_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">closeDevice</a>(deviceName-&gt;<a class="code" href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">getName</a>());</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// We know this device is (should be?) a USB device:</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_u_s_b_device.html">USBDevice</a>* usbDev = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_s_b_device.html">USBDevice</a>*<span class="keyword">&gt;</span>(deviceName);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_u_s_b_device.html">USBDevice</a> *usbDev = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_s_b_device.html">USBDevice</a> *<span class="keyword">&gt;</span>(deviceName);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    Q_ASSERT(usbDev);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    RawHidHandle = <span class="keyword">new</span> <a class="code" href="class_raw_h_i_d.html">RawHID</a>(usbDev);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> RawHidHandle;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">RawHIDConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    Q_UNUSED(deviceName);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (RawHidHandle)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        RAW_HID_QXTLOG_DEBUG(<span class="stringliteral">&quot;Closing the device here&quot;</span>);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        RawHidHandle-&gt;<a class="code" href="group___raw_h_i_d_plugin.html#gad109f6050214525dde9804f5a20bf53f">close</a>();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keyword">delete</span> RawHidHandle;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                RawHidHandle = NULL;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">  136</a></span>&#160;QString <a class="code" href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">RawHIDConnection::connectionName</a>()</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Raw HID USB&quot;</span>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">  141</a></span>&#160;QString <a class="code" href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">RawHIDConnection::shortName</a>()</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;USB&quot;</span>);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">RawHIDConnection::suspendPolling</a>()</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    enablePolling = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">  157</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">RawHIDConnection::resumePolling</a>()</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">  123</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">RawHIDConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    Q_UNUSED(deviceName);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (RawHidHandle) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        RAW_HID_QXTLOG_DEBUG(<span class="stringliteral">&quot;Closing the device here&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        RawHidHandle-&gt;<a class="code" href="group___raw_h_i_d_plugin.html#gad109f6050214525dde9804f5a20bf53f">close</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">delete</span> RawHidHandle;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        RawHidHandle = NULL;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">  134</a></span>&#160;QString <a class="code" href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">RawHIDConnection::connectionName</a>()</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Raw HID USB&quot;</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">  139</a></span>&#160;QString <a class="code" href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">RawHIDConnection::shortName</a>()</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;USB&quot;</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">  147</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">RawHIDConnection::suspendPolling</a>()</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    enablePolling = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">  155</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">RawHIDConnection::resumePolling</a>()</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">// **********************************************************************</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// **********************************************************************</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;RawHIDPlugin::RawHIDPlugin()</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    m_usbMonitor = NULL;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    hidConnection = NULL;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;RawHIDPlugin::~RawHIDPlugin()</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (m_usbMonitor)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">delete</span> m_usbMonitor;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">void</span> RawHIDPlugin::extensionsInitialized()</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        hidConnection = <span class="keyword">new</span> <a class="code" href="class_raw_h_i_d_connection.html">RawHIDConnection</a>();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(hidConnection);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordtype">bool</span> RawHIDPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    Q_UNUSED(arguments);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    Q_UNUSED(errorString);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;RawHIDPlugin::RawHIDPlugin()</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    m_usbMonitor = NULL;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    hidConnection = NULL;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;RawHIDPlugin::~RawHIDPlugin()</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (m_usbMonitor)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">delete</span> m_usbMonitor;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">void</span> RawHIDPlugin::extensionsInitialized()</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    hidConnection = <span class="keyword">new</span> <a class="code" href="class_raw_h_i_d_connection.html">RawHIDConnection</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(hidConnection);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">bool</span> RawHIDPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Q_UNUSED(arguments);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    Q_UNUSED(errorString);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// We have to create the USB Monitor here:</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    m_usbMonitor = <span class="keyword">new</span> <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// We have to create the USB Monitor here:</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_usbMonitor = <span class="keyword">new</span> <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_ga79b76e167c73d83f42b79f51f66a9c38"><div class="ttname"><a href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">Core::IConnection::availableDevChanged</a></div><div class="ttdeci">void availableDevChanged(IConnection *)</div></div>
-<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00046">idevice.h:46</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga5bcd5b32d008f2c5cd5a6d3b7ec23b97"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">USBPortInfo::productID</a></div><div class="ttdeci">int productID</div><div class="ttdoc">Product ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00050">usbmonitor.h:50</a></div></div>
+<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00045">idevice.h:45</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga5bcd5b32d008f2c5cd5a6d3b7ec23b97"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">USBPortInfo::productID</a></div><div class="ttdeci">int productID</div><div class="ttdoc">Product ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00051">usbmonitor.h:51</a></div></div>
 <div class="ttc" id="rawhidplugin_8h_html"><div class="ttname"><a href="rawhidplugin_8h.html">rawhidplugin.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga815e1b550a4ffe8dbb76636026146145"><div class="ttname"><a href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">Core::IDevice::getName</a></div><div class="ttdeci">QString getName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00052">idevice.h:52</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga815e1b550a4ffe8dbb76636026146145"><div class="ttname"><a href="group___core_plugin.html#ga815e1b550a4ffe8dbb76636026146145">Core::IDevice::getName</a></div><div class="ttdeci">QString getName() const </div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00049">idevice.h:49</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gaf84655a7cf624587cf336b550e8c0045"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaf84655a7cf624587cf336b550e8c0045">RawHIDConnection::onDeviceDisconnected</a></div><div class="ttdeci">void onDeviceDisconnected()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00074">rawhidplugin.cpp:74</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gaa37a0c8c804e3623c622cf8243bc7ef3"><div class="ttname"><a href="group___core_plugin.html#gaa37a0c8c804e3623c622cf8243bc7ef3">Core::BoardManager::getKnownVendorIDs</a></div><div class="ttdeci">QList&lt; int &gt; getKnownVendorIDs()</div><div class="ttdoc">getKnownVendorIDs Get all USB VendorIDs known by the board manager. This can be used by any plugin wh...</div><div class="ttdef"><b>Definition:</b> <a href="boardmanager_8cpp_source.html#l00076">boardmanager.cpp:76</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00053">idevice.h:53</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga80b9d6de6f0e054368bb3d920aa36de4"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">RawHIDConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00124">rawhidplugin.cpp:124</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00050">idevice.h:50</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga80b9d6de6f0e054368bb3d920aa36de4"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga80b9d6de6f0e054368bb3d920aa36de4">RawHIDConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00123">rawhidplugin.cpp:123</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga62cc5d3c3c0fe1d81d61ce2f7d5c24be"><div class="ttname"><a href="group___core_plugin.html#ga62cc5d3c3c0fe1d81d61ce2f7d5c24be">USBDevice::setProductID</a></div><div class="ttdeci">void setProductID(int pid)</div><div class="ttdef"><b>Definition:</b> <a href="usbdevice_8h_source.html#l00041">usbdevice.h:41</a></div></div>
 <div class="ttc" id="rawhid_8h_html"><div class="ttname"><a href="rawhid_8h.html">rawhid.h</a></div></div>
-<div class="ttc" id="class_core_1_1_board_manager_html"><div class="ttname"><a href="class_core_1_1_board_manager.html">Core::BoardManager</a></div><div class="ttdef"><b>Definition:</b> <a href="boardmanager_8h_source.html#l00038">boardmanager.h:38</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gad109f6050214525dde9804f5a20bf53f"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad109f6050214525dde9804f5a20bf53f">RawHID::close</a></div><div class="ttdeci">virtual void close()</div><div class="ttdef"><b>Definition:</b> <a href="rawhid_8cpp_source.html#l00285">rawhid.cpp:285</a></div></div>
+<div class="ttc" id="class_core_1_1_board_manager_html"><div class="ttname"><a href="class_core_1_1_board_manager.html">Core::BoardManager</a></div><div class="ttdef"><b>Definition:</b> <a href="boardmanager_8h_source.html#l00037">boardmanager.h:37</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gad109f6050214525dde9804f5a20bf53f"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad109f6050214525dde9804f5a20bf53f">RawHID::close</a></div><div class="ttdeci">virtual void close()</div><div class="ttdef"><b>Definition:</b> <a href="rawhid_8cpp_source.html#l00271">rawhid.cpp:271</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2380f14d6b9cdc20421d32b660881955"><div class="ttname"><a href="group___core_plugin.html#ga2380f14d6b9cdc20421d32b660881955">USBDevice::setVendorID</a></div><div class="ttdeci">void setVendorID(int vid)</div><div class="ttdef"><b>Definition:</b> <a href="usbdevice_8h_source.html#l00040">usbdevice.h:40</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2169d1d082c17498883e6c0497aecb94"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">USBPortInfo::serialNumber</a></div><div class="ttdeci">QString serialNumber</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00043">usbmonitor.h:43</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gac46703708a7e43cffa7712ebab818ba0"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">RawHIDConnection::suspendPolling</a></div><div class="ttdeci">virtual void suspendPolling()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00149">rawhidplugin.cpp:149</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2169d1d082c17498883e6c0497aecb94"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">USBPortInfo::serialNumber</a></div><div class="ttdeci">QString serialNumber</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00044">usbmonitor.h:44</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gac46703708a7e43cffa7712ebab818ba0"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0">RawHIDConnection::suspendPolling</a></div><div class="ttdeci">virtual void suspendPolling()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00147">rawhidplugin.cpp:147</a></div></div>
 <div class="ttc" id="rawhid__const_8h_html"><div class="ttname"><a href="rawhid__const_8h.html">rawhid_const.h</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00091">usbmonitor.h:91</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gaf7da3cc1fc2b9085f5647f0d3822ade1"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1">USBMonitor::availableDevices</a></div><div class="ttdeci">QList&lt; USBPortInfo &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00141">usbmonitor.cpp:141</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">USBMonitor::Running</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00092">usbmonitor.h:92</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gaf7da3cc1fc2b9085f5647f0d3822ade1"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1">USBMonitor::availableDevices</a></div><div class="ttdeci">QList&lt; USBPortInfo &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00142">usbmonitor.cpp:142</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
-<div class="ttc" id="class_raw_h_i_d_html"><div class="ttname"><a href="class_raw_h_i_d.html">RawHID</a></div><div class="ttdef"><b>Definition:</b> <a href="rawhid_8h_source.html#l00135">rawhid.h:135</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gaa6d75047d32946b3823a1cfe7b4d7328"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">RawHIDConnection::RawHIDConnection</a></div><div class="ttdeci">RawHIDConnection()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00042">rawhidplugin.cpp:42</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00055">idevice.h:55</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00048">coreimpl.cpp:48</a></div></div>
+<div class="ttc" id="class_raw_h_i_d_html"><div class="ttname"><a href="class_raw_h_i_d.html">RawHID</a></div><div class="ttdef"><b>Definition:</b> <a href="rawhid_8h_source.html#l00134">rawhid.h:134</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gaa6d75047d32946b3823a1cfe7b4d7328"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaa6d75047d32946b3823a1cfe7b4d7328">RawHIDConnection::RawHIDConnection</a></div><div class="ttdeci">RawHIDConnection()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00040">rawhidplugin.cpp:40</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00052">idevice.h:52</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00046">coreimpl.cpp:46</a></div></div>
 <div class="ttc" id="class_u_s_b_device_html"><div class="ttname"><a href="class_u_s_b_device.html">USBDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="usbdevice_8h_source.html#l00031">usbdevice.h:31</a></div></div>
-<div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00084">usbmonitor.h:84</a></div></div>
+<div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00085">usbmonitor.h:85</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga801246d332b40fb89988b89b64bb2210"><div class="ttname"><a href="group___core_plugin.html#ga801246d332b40fb89988b89b64bb2210">USBDevice::setPath</a></div><div class="ttdeci">void setPath(QString p)</div><div class="ttdef"><b>Definition:</b> <a href="usbdevice_8h_source.html#l00042">usbdevice.h:42</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gae6fbe6bf878bf78034b81d648fd25edb"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gae6fbe6bf878bf78034b81d648fd25edb">RawHIDConnection::onDeviceConnected</a></div><div class="ttdeci">void onDeviceConnected()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00066">rawhidplugin.cpp:66</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga5d3dcc8e69d09013ff84a3412f1ccee7"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga5d3dcc8e69d09013ff84a3412f1ccee7">RawHIDConnection::~RawHIDConnection</a></div><div class="ttdeci">virtual ~RawHIDConnection()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00054">rawhidplugin.cpp:54</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga01532acba71e5af5bee3777209aebf7d"><div class="ttname"><a href="group___core_plugin.html#ga01532acba71e5af5bee3777209aebf7d">Core::ICore::boardManager</a></div><div class="ttdeci">virtual BoardManager * boardManager() const =0</div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gabcb44085db71f0bd0a1513d25a572b33"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gabcb44085db71f0bd0a1513d25a572b33">USBMonitor::instance</a></div><div class="ttdeci">static USBMonitor * instance()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00173">usbmonitor.cpp:173</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga8b2fb49e267664c4838e1205f57538d8"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">USBPortInfo::product</a></div><div class="ttdeci">QString product</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00045">usbmonitor.h:45</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga753e060b5d2c26ebd344c084750bf715"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">RawHIDConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00136">rawhidplugin.cpp:136</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga8e42cdaa700116a4467d8ded1f506ed9"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8e42cdaa700116a4467d8ded1f506ed9">USBSignalFilter::deviceRemoved</a></div><div class="ttdeci">void deviceRemoved()</div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gabcb44085db71f0bd0a1513d25a572b33"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gabcb44085db71f0bd0a1513d25a572b33">USBMonitor::instance</a></div><div class="ttdeci">static USBMonitor * instance()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00176">usbmonitor.cpp:176</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga8b2fb49e267664c4838e1205f57538d8"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">USBPortInfo::product</a></div><div class="ttdeci">QString product</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00046">usbmonitor.h:46</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga753e060b5d2c26ebd344c084750bf715"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga753e060b5d2c26ebd344c084750bf715">RawHIDConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00134">rawhidplugin.cpp:134</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga861af14dd75658d985780004160aefa2"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga861af14dd75658d985780004160aefa2">RawHIDConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(Core::IDevice *deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00110">rawhidplugin.cpp:110</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gadf376fe560ac0b2e750fd4797139f602"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">RawHIDConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00141">rawhidplugin.cpp:141</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gabe7a095aa167ae8addf65d14e2dcc460"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">RawHIDConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00157">rawhidplugin.cpp:157</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gadf376fe560ac0b2e750fd4797139f602"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gadf376fe560ac0b2e750fd4797139f602">RawHIDConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00139">rawhidplugin.cpp:139</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gabe7a095aa167ae8addf65d14e2dcc460"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gabe7a095aa167ae8addf65d14e2dcc460">RawHIDConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00155">rawhidplugin.cpp:155</a></div></div>
 <div class="ttc" id="struct_u_s_b_port_info_html"><div class="ttname"><a href="struct_u_s_b_port_info.html">USBPortInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00042">usbmonitor.h:42</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga9a33750f32a6e48ba7463beaacf3696d"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga9a33750f32a6e48ba7463beaacf3696d">RawHIDConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; Core::IDevice * &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8cpp_source.html#l00085">rawhidplugin.cpp:85</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; Core::IDevice * &gt;</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_af2782659463bdc328aef58f896ae3921"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">ExtensionSystem::IPlugin::addAutoReleasedObject</a></div><div class="ttdeci">void addAutoReleasedObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00306">iplugin.cpp:306</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gad03efb8ec10d2b9b8dfcd589ba584286"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">USBPortInfo::path</a></div><div class="ttdeci">QString path</div><div class="ttdoc">Opaque OS-specific path. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00047">usbmonitor.h:47</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga9d88c3bd1d000b31ad72af4735edaaf2"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a></div><div class="ttdeci">void deviceDiscovered()</div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gad03efb8ec10d2b9b8dfcd589ba584286"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">USBPortInfo::path</a></div><div class="ttdeci">QString path</div><div class="ttdoc">Opaque OS-specific path. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00048">usbmonitor.h:48</a></div></div>
 <div class="ttc" id="usbsignalfilter_8h_html"><div class="ttname"><a href="usbsignalfilter_8h.html">usbsignalfilter.h</a></div></div>
 <div class="ttc" id="class_u_s_b_signal_filter_html"><div class="ttname"><a href="class_u_s_b_signal_filter.html">USBSignalFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="usbsignalfilter_8h_source.html#l00037">usbsignalfilter.h:37</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga506f2c8d425d78dd0ad899f8e5740729"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">USBPortInfo::vendorID</a></div><div class="ttdeci">int vendorID</div><div class="ttdoc">Vendor ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00049">usbmonitor.h:49</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga506f2c8d425d78dd0ad899f8e5740729"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">USBPortInfo::vendorID</a></div><div class="ttdeci">int vendorID</div><div class="ttdoc">Vendor ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00050">usbmonitor.h:50</a></div></div>
 <div class="ttc" id="class_raw_h_i_d_connection_html"><div class="ttname"><a href="class_raw_h_i_d_connection.html">RawHIDConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="rawhidplugin_8h_source.html#l00051">rawhidplugin.h:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

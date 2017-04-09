@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,25 +130,23 @@ $(document).ready(function(){initNavTree('consolegadgetfactory_8cpp_source.html'
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="consolegadget_8h.html">consolegadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___console_plugin.html#ga77777adade86473e7c810b2e0a64e5b0">   31</a></span>&#160;<a class="code" href="group___console_plugin.html#ga77777adade86473e7c810b2e0a64e5b0">ConsoleGadgetFactory::ConsoleGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ConsoleGadget&quot;</span>),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          tr(<span class="stringliteral">&quot;Console&quot;</span>),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">   38</a></span>&#160;<a class="code" href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">ConsoleGadgetFactory::~ConsoleGadgetFactory</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">   43</a></span>&#160;IUAVGadget* <a class="code" href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">ConsoleGadgetFactory::createGadget</a>(QWidget *parent) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_console_gadget_widget.html">ConsoleGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_console_gadget_widget.html">ConsoleGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_console_gadget.html">ConsoleGadget</a>(QString(<span class="stringliteral">&quot;ConsoleGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="ttc" id="group___console_plugin_html_ga906d7deb3783cbcb35b88c42eb8be4d8"><div class="ttname"><a href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">ConsoleGadgetFactory::~ConsoleGadgetFactory</a></div><div class="ttdeci">~ConsoleGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="consolegadgetfactory_8cpp_source.html#l00038">consolegadgetfactory.cpp:38</a></div></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___console_plugin.html#ga77777adade86473e7c810b2e0a64e5b0">   31</a></span>&#160;<a class="code" href="group___console_plugin.html#ga77777adade86473e7c810b2e0a64e5b0">ConsoleGadgetFactory::ConsoleGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ConsoleGadget&quot;</span>), tr(<span class="stringliteral">&quot;Console&quot;</span>), parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">   36</a></span>&#160;<a class="code" href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">ConsoleGadgetFactory::~ConsoleGadgetFactory</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">   40</a></span>&#160;IUAVGadget *<a class="code" href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">ConsoleGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_console_gadget_widget.html">ConsoleGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_console_gadget_widget.html">ConsoleGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_console_gadget.html">ConsoleGadget</a>(QString(<span class="stringliteral">&quot;ConsoleGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="group___console_plugin_html_ga906d7deb3783cbcb35b88c42eb8be4d8"><div class="ttname"><a href="group___console_plugin.html#ga906d7deb3783cbcb35b88c42eb8be4d8">ConsoleGadgetFactory::~ConsoleGadgetFactory</a></div><div class="ttdeci">~ConsoleGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="consolegadgetfactory_8cpp_source.html#l00036">consolegadgetfactory.cpp:36</a></div></div>
 <div class="ttc" id="consolegadgetfactory_8h_html"><div class="ttname"><a href="consolegadgetfactory_8h.html">consolegadgetfactory.h</a></div></div>
-<div class="ttc" id="group___console_plugin_html_gac39d102639ab8db1917e47e48338487b"><div class="ttname"><a href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">ConsoleGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="consolegadgetfactory_8cpp_source.html#l00043">consolegadgetfactory.cpp:43</a></div></div>
+<div class="ttc" id="group___console_plugin_html_gac39d102639ab8db1917e47e48338487b"><div class="ttname"><a href="group___console_plugin.html#gac39d102639ab8db1917e47e48338487b">ConsoleGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="consolegadgetfactory_8cpp_source.html#l00040">consolegadgetfactory.cpp:40</a></div></div>
 <div class="ttc" id="consolegadget_8h_html"><div class="ttname"><a href="consolegadget_8h.html">consolegadget.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="consolegadgetwidget_8h_html"><div class="ttname"><a href="consolegadgetwidget_8h.html">consolegadgetwidget.h</a></div></div>

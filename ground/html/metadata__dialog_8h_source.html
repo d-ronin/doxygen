@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('metadata__dialog_8h_source.html','');}
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#gae7a09a21f10b02c9cfbeca46cf5f8d3d">MetadataDialog</a>(UAVObject::Metadata mdata, QWidget *parent = 0);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#gae1f623f8f053ac2dc1582cde50cd2d05">~MetadataDialog</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#ga909d83e32704eef90c21a022a185f359">   41</a></span>&#160;    UAVObject::Metadata <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#ga909d83e32704eef90c21a022a185f359">getMetadata</a>(){<span class="keywordflow">return</span> *m_mdata;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#gac9372736e58b592c6cb67f4c68b3e3ec">   42</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#gac9372736e58b592c6cb67f4c68b3e3ec">getResetDefaults_flag</a>(){<span class="keywordflow">return</span> resetDefaults_flag;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#ga3e3de255aa48c4ddbad61912d6758062">   43</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#ga3e3de255aa48c4ddbad61912d6758062">getSaveState_flag</a>(){<span class="keywordflow">return</span> saveMetadata_flag;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#ga909d83e32704eef90c21a022a185f359">   41</a></span>&#160;    UAVObject::Metadata <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#ga909d83e32704eef90c21a022a185f359">getMetadata</a>() { <span class="keywordflow">return</span> *m_mdata; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#gac9372736e58b592c6cb67f4c68b3e3ec">   42</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#gac9372736e58b592c6cb67f4c68b3e3ec">getResetDefaults_flag</a>() { <span class="keywordflow">return</span> resetDefaults_flag; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___telemetry_scheduler_gadget_plugin.html#ga3e3de255aa48c4ddbad61912d6758062">   43</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___telemetry_scheduler_gadget_plugin.html#ga3e3de255aa48c4ddbad61912d6758062">getSaveState_flag</a>() { <span class="keywordflow">return</span> saveMetadata_flag; }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;signals:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -153,23 +153,21 @@ $(document).ready(function(){initNavTree('metadata__dialog_8h_source.html','');}
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> saveApplyMetadata();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> resetMetadataToDefaults();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> cancelChanges();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> fillWidgets();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    UAVObject::Metadata *m_mdata;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Ui_MetadataDialog metadata_editor;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> resetDefaults_flag;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> saveMetadata_flag;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> fillWidgets();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    UAVObject::Metadata *m_mdata;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Ui_MetadataDialog metadata_editor;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> resetDefaults_flag;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> saveMetadata_flag;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* METADATA_DIALOG_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* METADATA_DIALOG_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_gac9372736e58b592c6cb67f4c68b3e3ec"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#gac9372736e58b592c6cb67f4c68b3e3ec">MetadataDialog::getResetDefaults_flag</a></div><div class="ttdeci">bool getResetDefaults_flag()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8h_source.html#l00042">metadata_dialog.h:42</a></div></div>
-<div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_gae7a09a21f10b02c9cfbeca46cf5f8d3d"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#gae7a09a21f10b02c9cfbeca46cf5f8d3d">MetadataDialog::MetadataDialog</a></div><div class="ttdeci">MetadataDialog(UAVObject::Metadata mdata, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8cpp_source.html#l00038">metadata_dialog.cpp:38</a></div></div>
+<div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_gae7a09a21f10b02c9cfbeca46cf5f8d3d"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#gae7a09a21f10b02c9cfbeca46cf5f8d3d">MetadataDialog::MetadataDialog</a></div><div class="ttdeci">MetadataDialog(UAVObject::Metadata mdata, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8cpp_source.html#l00037">metadata_dialog.cpp:37</a></div></div>
 <div class="ttc" id="class_metadata_dialog_html"><div class="ttname"><a href="class_metadata_dialog.html">MetadataDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8h_source.html#l00033">metadata_dialog.h:33</a></div></div>
-<div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_gae1f623f8f053ac2dc1582cde50cd2d05"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#gae1f623f8f053ac2dc1582cde50cd2d05">MetadataDialog::~MetadataDialog</a></div><div class="ttdeci">~MetadataDialog()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8cpp_source.html#l00075">metadata_dialog.cpp:75</a></div></div>
+<div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_gae1f623f8f053ac2dc1582cde50cd2d05"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#gae1f623f8f053ac2dc1582cde50cd2d05">MetadataDialog::~MetadataDialog</a></div><div class="ttdeci">~MetadataDialog()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8cpp_source.html#l00077">metadata_dialog.cpp:77</a></div></div>
 <div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_ga909d83e32704eef90c21a022a185f359"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#ga909d83e32704eef90c21a022a185f359">MetadataDialog::getMetadata</a></div><div class="ttdeci">UAVObject::Metadata getMetadata()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8h_source.html#l00041">metadata_dialog.h:41</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
 <div class="ttc" id="group___telemetry_scheduler_gadget_plugin_html_ga3e3de255aa48c4ddbad61912d6758062"><div class="ttname"><a href="group___telemetry_scheduler_gadget_plugin.html#ga3e3de255aa48c4ddbad61912d6758062">MetadataDialog::getSaveState_flag</a></div><div class="ttdeci">bool getSaveState_flag()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__dialog_8h_source.html#l00043">metadata_dialog.h:43</a></div></div>

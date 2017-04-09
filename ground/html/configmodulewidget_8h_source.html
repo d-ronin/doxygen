@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -136,16 +136,16 @@ $(document).ready(function(){initNavTree('configmodulewidget_8h_source.html','')
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobject_8h.html">uavobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">class </span>Modules;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>Modules;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_config_module_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_module_widget.html">ConfigModuleWidget</a>: <span class="keyword">public</span> <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_config_module_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_module_widget.html">ConfigModuleWidget</a> : <span class="keyword">public</span> <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c">ConfigModuleWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">~ConfigModuleWidget</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c">ConfigModuleWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">~ConfigModuleWidget</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> updateAirspeedGroupbox(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('configmodulewidget_8h_source.html','')
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> updateVoltageFactorFromUavo(<span class="keywordtype">float</span> value);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> recheckTabs();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> objectUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> * obj, <span class="keywordtype">bool</span> success);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> objectUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> autoCellDetectionToggled(<span class="keywordtype">bool</span> checked);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> maxCellVoltageChanged(<span class="keywordtype">double</span> value);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> ledTabUpdate(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
@@ -188,14 +188,14 @@ $(document).ready(function(){initNavTree('configmodulewidget_8h_source.html','')
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // CONFIGMODULEWIDGET_H</span></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_config_module_widget_html"><div class="ttname"><a href="class_config_module_widget.html">ConfigModuleWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8h_source.html#l00039">configmodulewidget.h:39</a></div></div>
-<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00053">configtaskwidget.h:53</a></div></div>
+<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gaf3854a41400a7aca6d75e0f2be770f9c"><div class="ttname"><a href="group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c">ConfigModuleWidget::ConfigModuleWidget</a></div><div class="ttdeci">ConfigModuleWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00046">configmodulewidget.cpp:46</a></div></div>
-<div class="ttc" id="group___config_plugin_html_gad3993d8be203127b457a6179cde99d07"><div class="ttname"><a href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">ConfigModuleWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00118">configmodulewidget.cpp:118</a></div></div>
+<div class="ttc" id="group___config_plugin_html_gad3993d8be203127b457a6179cde99d07"><div class="ttname"><a href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">ConfigModuleWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00132">configmodulewidget.cpp:132</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga9ecd35d3d3a34e937a75c62e7d197312"><div class="ttname"><a href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">ConfigModuleWidget::~ConfigModuleWidget</a></div><div class="ttdeci">~ConfigModuleWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00113">configmodulewidget.cpp:113</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga9ecd35d3d3a34e937a75c62e7d197312"><div class="ttname"><a href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">ConfigModuleWidget::~ConfigModuleWidget</a></div><div class="ttdeci">~ConfigModuleWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00127">configmodulewidget.cpp:127</a></div></div>
 <div class="ttc" id="configtaskwidget_8h_html"><div class="ttname"><a href="configtaskwidget_8h.html">configtaskwidget.h</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga8790c539b69a98c32df328411f6c0737"><div class="ttname"><a href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">ConfigModuleWidget::enableControls</a></div><div class="ttdeci">virtual void enableControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00123">configmodulewidget.cpp:123</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga8790c539b69a98c32df328411f6c0737"><div class="ttname"><a href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">ConfigModuleWidget::enableControls</a></div><div class="ttdeci">virtual void enableControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00137">configmodulewidget.cpp:137</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('welcomeplugin_8cpp_source.html','');})
 <div class="contents">
 <a href="welcomeplugin_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('welcomeplugin_8cpp_source.html','');})
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span>Welcome::Internal;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;WelcomePlugin::WelcomePlugin()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  : m_welcomeMode(0)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    : m_welcomeMode(0)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -166,18 +166,20 @@ $(document).ready(function(){initNavTree('welcomeplugin_8cpp_source.html','');})
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QSettings *qSettings = Core::ICore::instance()-&gt;settings();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QString instUUID = qSettings-&gt;value(&quot;Plugins/<a class="code" href="class_usage_stats_plugin.html">UsageStatsPlugin</a>/<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>/UsageStatistics/InstallationUUID&quot;).toString();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_welcomeMode = new WelcomeMode(instUUID);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    addObject(m_welcomeMode);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    return true;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_welcome_1_1_internal_1_1_welcome_plugin.html">WelcomePlugin</a>::extensionsInitialized()</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">activateMode</a>(m_welcomeMode-&gt;uniqueModeName());</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QString instUUID =</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        qSettings-&gt;value(&quot;Plugins/<a class="code" href="class_usage_stats_plugin.html">UsageStatsPlugin</a>/<a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>/UsageStatistics/InstallationUUID&quot;)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            .toString();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_welcomeMode = new WelcomeMode(instUUID);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    addObject(m_welcomeMode);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    return true;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_welcome_1_1_internal_1_1_welcome_plugin.html">WelcomePlugin</a>::extensionsInitialized()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">activateMode</a>(m_welcomeMode-&gt;uniqueModeName());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_ga756ec59f5104cce0abf8a6990a2bba2c"><div class="ttname"><a href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a></div><div class="ttdeci">static ModeManager * instance()</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00062">modemanager.h:62</a></div></div>
 <div class="ttc" id="uniqueidmanager_8h_html"><div class="ttname"><a href="uniqueidmanager_8h.html">uniqueidmanager.h</a></div></div>
 <div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="actionmanager_8h.html">actionmanager.h</a></div></div>
@@ -188,9 +190,9 @@ $(document).ready(function(){initNavTree('welcomeplugin_8cpp_source.html','');})
 <div class="ttc" id="basemode_8h_html"><div class="ttname"><a href="basemode_8h.html">basemode.h</a></div></div>
 <div class="ttc" id="modemanager_8h_html"><div class="ttname"><a href="modemanager_8h.html">modemanager.h</a></div></div>
 <div class="ttc" id="class_welcome_1_1_internal_1_1_welcome_plugin_html"><div class="ttname"><a href="class_welcome_1_1_internal_1_1_welcome_plugin.html">Welcome::Internal::WelcomePlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="welcomeplugin_8h_source.html#l00039">welcomeplugin.h:39</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga9f75e14a1a348f3f46c62b4575dbca9e"><div class="ttname"><a href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">Core::ModeManager::activateMode</a></div><div class="ttdeci">void activateMode(const QString &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00119">modemanager.cpp:119</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga9f75e14a1a348f3f46c62b4575dbca9e"><div class="ttname"><a href="group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e">Core::ModeManager::activateMode</a></div><div class="ttdeci">void activateMode(const QString &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00121">modemanager.cpp:121</a></div></div>
 <div class="ttc" id="coreconstants_8h_html"><div class="ttname"><a href="coreconstants_8h.html">coreconstants.h</a></div></div>
-<div class="ttc" id="class_usage_stats_plugin_html"><div class="ttname"><a href="class_usage_stats_plugin.html">UsageStatsPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="usagestatsplugin_8h_source.html#l00070">usagestatsplugin.h:70</a></div></div>
+<div class="ttc" id="class_usage_stats_plugin_html"><div class="ttname"><a href="class_usage_stats_plugin.html">UsageStatsPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="usagestatsplugin_8h_source.html#l00072">usagestatsplugin.h:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

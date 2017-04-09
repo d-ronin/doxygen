@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -135,33 +135,37 @@ $(document).ready(function(){initNavTree('plotdata2d_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_plot2d_data.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_plot2d_data.html">Plot2dData</a> : <span class="keyword">public</span> <a class="code" href="class_plot_data.html">PlotData</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group___scope_plugin.html#ga47355d48ebe2a3f10f3eeb8c885d91d2">Plot2dData</a>(QString uavObject, QString uavField);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="group___scope_plugin.html#ga7e60665e7c88b1df55cfefe356d8ee27">~Plot2dData</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">   48</a></span>&#160;    QVector&lt;double&gt;* <a class="code" href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">yDataHistory</a>; <span class="comment">//Used for scatterplots</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">   50</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">setUpdatedFlagToTrue</a>(){dataUpdated = <span class="keyword">true</span>;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">   51</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">readAndResetUpdatedFlag</a>(){<span class="keywordtype">bool</span> tmp = dataUpdated; dataUpdated = <span class="keyword">false</span>; <span class="keywordflow">return</span> tmp;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> dataUpdated;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_plot2d_data.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_plot2d_data.html">Plot2dData</a> : <span class="keyword">public</span> <a class="code" href="class_plot_data.html">PlotData</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group___scope_plugin.html#ga47355d48ebe2a3f10f3eeb8c885d91d2">Plot2dData</a>(QString uavObject, QString uavField);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group___scope_plugin.html#ga7e60665e7c88b1df55cfefe356d8ee27">~Plot2dData</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">   47</a></span>&#160;    QVector&lt;double&gt; *<a class="code" href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">yDataHistory</a>; <span class="comment">// Used for scatterplots</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">   49</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">setUpdatedFlagToTrue</a>() { dataUpdated = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">   50</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">readAndResetUpdatedFlag</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">bool</span> tmp = dataUpdated;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        dataUpdated = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // PLOTDATA2D_H</span></div>
-<div class="ttc" id="group___scope_plugin_html_ga5fe24bb29fc32dfa2f955383dc96877e"><div class="ttname"><a href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">Plot2dData::readAndResetUpdatedFlag</a></div><div class="ttdeci">virtual bool readAndResetUpdatedFlag()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00051">plotdata2d.h:51</a></div></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> dataUpdated;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // PLOTDATA2D_H</span></div>
+<div class="ttc" id="group___scope_plugin_html_ga5fe24bb29fc32dfa2f955383dc96877e"><div class="ttname"><a href="group___scope_plugin.html#ga5fe24bb29fc32dfa2f955383dc96877e">Plot2dData::readAndResetUpdatedFlag</a></div><div class="ttdeci">virtual bool readAndResetUpdatedFlag()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00050">plotdata2d.h:50</a></div></div>
 <div class="ttc" id="plotdata_8h_html"><div class="ttname"><a href="plotdata_8h.html">plotdata.h</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ga3f05450290135f9d3b69ab0119718f11"><div class="ttname"><a href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">Plot2dData::yDataHistory</a></div><div class="ttdeci">QVector&lt; double &gt; * yDataHistory</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00048">plotdata2d.h:48</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ga8cf81c5a6f87fc1c97b0054f2cb23f90"><div class="ttname"><a href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">Plot2dData::setUpdatedFlagToTrue</a></div><div class="ttdeci">virtual void setUpdatedFlagToTrue()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00050">plotdata2d.h:50</a></div></div>
-<div class="ttc" id="class_plot2d_data_html"><div class="ttname"><a href="class_plot2d_data.html">Plot2dData</a></div><div class="ttdoc">The Plot2dData class Base class that keeps the data for each curve in the plot. </div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00040">plotdata2d.h:40</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_ga3f05450290135f9d3b69ab0119718f11"><div class="ttname"><a href="group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11">Plot2dData::yDataHistory</a></div><div class="ttdeci">QVector&lt; double &gt; * yDataHistory</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00047">plotdata2d.h:47</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_ga8cf81c5a6f87fc1c97b0054f2cb23f90"><div class="ttname"><a href="group___scope_plugin.html#ga8cf81c5a6f87fc1c97b0054f2cb23f90">Plot2dData::setUpdatedFlagToTrue</a></div><div class="ttdeci">virtual void setUpdatedFlagToTrue()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00049">plotdata2d.h:49</a></div></div>
+<div class="ttc" id="class_plot2d_data_html"><div class="ttname"><a href="class_plot2d_data.html">Plot2dData</a></div><div class="ttdoc">The Plot2dData class Base class that keeps the data for each curve in the plot. </div><div class="ttdef"><b>Definition:</b> <a href="plotdata2d_8h_source.html#l00039">plotdata2d.h:39</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_ga47355d48ebe2a3f10f3eeb8c885d91d2"><div class="ttname"><a href="group___scope_plugin.html#ga47355d48ebe2a3f10f3eeb8c885d91d2">Plot2dData::Plot2dData</a></div><div class="ttdeci">Plot2dData(QString uavObject, QString uavField)</div><div class="ttdoc">Plot2dData::Plot2dData Default 2d constructor. </div><div class="ttdef"><b>Definition:</b> <a href="plotdata_8cpp_source.html#l00042">plotdata.cpp:42</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ga7e60665e7c88b1df55cfefe356d8ee27"><div class="ttname"><a href="group___scope_plugin.html#ga7e60665e7c88b1df55cfefe356d8ee27">Plot2dData::~Plot2dData</a></div><div class="ttdeci">~Plot2dData()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata_8cpp_source.html#l00120">plotdata.cpp:120</a></div></div>
-<div class="ttc" id="class_plot_data_html"><div class="ttname"><a href="class_plot_data.html">PlotData</a></div><div class="ttdef"><b>Definition:</b> <a href="plotdata_8h_source.html#l00044">plotdata.h:44</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_ga7e60665e7c88b1df55cfefe356d8ee27"><div class="ttname"><a href="group___scope_plugin.html#ga7e60665e7c88b1df55cfefe356d8ee27">Plot2dData::~Plot2dData</a></div><div class="ttdeci">~Plot2dData()</div><div class="ttdef"><b>Definition:</b> <a href="plotdata_8cpp_source.html#l00116">plotdata.cpp:116</a></div></div>
+<div class="ttc" id="class_plot_data_html"><div class="ttname"><a href="class_plot_data.html">PlotData</a></div><div class="ttdef"><b>Definition:</b> <a href="plotdata_8h_source.html#l00043">plotdata.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

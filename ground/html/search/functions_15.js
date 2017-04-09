@@ -77,6 +77,7 @@ var searchData=
   ['updateneedle1',['updateNeedle1',['../group___dial_plugin.html#ga20f0bcc550ca92ec3bd40b4cf0b2a38e',1,'DialGadgetWidget']]],
   ['updateneedle2',['updateNeedle2',['../group___dial_plugin.html#gaf88f5db2a7b289050e6dc6a8cda27e0f',1,'DialGadgetWidget']]],
   ['updateneedle3',['updateNeedle3',['../group___dial_plugin.html#gad0f863a46778ffadd8bf6dbdc01c4c81',1,'DialGadgetWidget']]],
+  ['updatenotificationlist',['updateNotificationList',['../group___notify_plugin.html#ga272af3a9d33b7393c225b801bda43420',1,'SoundNotifyPlugin']]],
   ['updatenotifications',['updateNotifications',['../group___notify_plugin.html#gadbd273176d3047b997383d3791fcf3aa',1,'NotifyPluginOptionsPage']]],
   ['updateobject',['updateObject',['../group___u_a_v_settings_import_export.html#ga29ad3937f639f23438feaf21fdb0d2d0',1,'UAVSettingsImportExportManager::updateObject()'],['../group___u_a_v_talk_plugin.html#ga06d53e41c45734baa38c0eb08d684af8',1,'UAVTalk::updateObject()']]],
   ['updateobjectsfromwidgets',['updateObjectsFromWidgets',['../group___u_a_v_object_widget_utils.html#ga4e59f88c43451ae4282077f9a9214cea',1,'ConfigTaskWidget']]],

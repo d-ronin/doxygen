@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -111,18 +111,18 @@ $(document).ready(function(){initNavTree('uavgadgetdecorator_8cpp_source.html','
 </div><!--header-->
 <div class="contents">
 <a href="uavgadgetdecorator_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -134,127 +134,130 @@ $(document).ready(function(){initNavTree('uavgadgetdecorator_8cpp_source.html','
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga506766120c0cac17d0d15b75c88fe2fe">   36</a></span>&#160;<a class="code" href="group___core_plugin.html#ga506766120c0cac17d0d15b75c88fe2fe">UAVGadgetDecorator::UAVGadgetDecorator</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *gadget, <a class="code" href="class_q_list.html">QList&lt;IUAVGadgetConfiguration*&gt;</a> *configurations, <span class="keywordtype">bool</span> loadDefault) :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>(gadget-&gt;classId(), gadget-&gt;parent()),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        m_gadget(gadget),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        m_toolbar(new QComboBox),</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        m_activeConfiguration(0),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_configurations(configurations)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_gadget-&gt;setParent(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_toolbar-&gt;setMinimumContentsLength(15);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config, *m_configurations)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        m_toolbar-&gt;addItem(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    connect(m_toolbar, SIGNAL(activated(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// If a gadget configuration exists, use the first configuration when</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// creating the gadget.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> ((m_configurations-&gt;count() &gt; 0) &amp;&amp; loadDefault ){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Must call loadConfiguration(), or else GCS crashes when</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// changing widgets using Edit Gadgets mode.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    updateToolbar();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">   60</a></span>&#160;<a class="code" href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">UAVGadgetDecorator::~UAVGadgetDecorator</a>()</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">delete</span> m_configurations;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">delete</span> m_toolbar;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">UAVGadgetDecorator::loadConfiguration</a>(<span class="keywordtype">int</span> index) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* config = m_configurations-&gt;at(index);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">UAVGadgetDecorator::loadConfiguration</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_activeConfiguration = config;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> index = m_toolbar-&gt;findText(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    m_toolbar-&gt;setCurrentIndex(index);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_gadget-&gt;<a class="code" href="group___core_plugin.html#gaaf60a82b8643f54a42381600c52bbe8a">loadConfiguration</a>(config);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">UAVGadgetDecorator::configurationChanged</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* config)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (config == m_activeConfiguration)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">UAVGadgetDecorator::configurationAdded</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* config)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_configurations-&gt;append(config);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_toolbar-&gt;addItem(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    updateToolbar();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">UAVGadgetDecorator::configurationToBeDeleted</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* config)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> index = m_configurations-&gt;indexOf(config);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (index &gt;= 0) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        m_toolbar-&gt;removeItem(index);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        m_configurations-&gt;removeAt(index);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    updateToolbar();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">UAVGadgetDecorator::configurationNameChanged</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* config, QString oldName, QString newName)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; m_toolbar-&gt;count(); ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (m_toolbar-&gt;itemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) == oldName)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            m_toolbar-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, newName);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> UAVGadgetDecorator::updateToolbar()</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_toolbar-&gt;setEnabled(m_toolbar-&gt;count() &gt; 1);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">  122</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">UAVGadgetDecorator::saveState</a>(QSettings* qSettings)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (m_activeConfiguration) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        qSettings-&gt;setValue(<span class="stringliteral">&quot;activeConfiguration&quot;</span>,m_activeConfiguration-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">  129</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">UAVGadgetDecorator::restoreState</a>(QSettings* qSetting)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    QString configName = qSetting-&gt;value(<span class="stringliteral">&quot;activeConfiguration&quot;</span>).toString();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config, *m_configurations) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>() == configName) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            m_activeConfiguration = config;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga506766120c0cac17d0d15b75c88fe2fe">   36</a></span>&#160;<a class="code" href="group___core_plugin.html#ga506766120c0cac17d0d15b75c88fe2fe">UAVGadgetDecorator::UAVGadgetDecorator</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *gadget,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                       <a class="code" href="class_q_list.html">QList&lt;IUAVGadgetConfiguration *&gt;</a> *configurations,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                       <span class="keywordtype">bool</span> loadDefault)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>(gadget-&gt;classId(), gadget-&gt;parent())</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    , m_gadget(gadget)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    , m_toolbar(new QComboBox)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    , m_activeConfiguration(0)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    , m_configurations(configurations)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_gadget-&gt;setParent(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_toolbar-&gt;setMinimumContentsLength(15);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config, *m_configurations)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m_toolbar-&gt;addItem(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(m_toolbar, SIGNAL(activated(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// If a gadget configuration exists, use the first configuration when</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// creating the gadget.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> ((m_configurations-&gt;count() &gt; 0) &amp;&amp; loadDefault) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// Must call loadConfiguration(), or else GCS crashes when</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// changing widgets using Edit Gadgets mode.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    updateToolbar();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">   62</a></span>&#160;<a class="code" href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">UAVGadgetDecorator::~UAVGadgetDecorator</a>()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">delete</span> m_configurations;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">delete</span> m_toolbar;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">UAVGadgetDecorator::loadConfiguration</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config = m_configurations-&gt;at(index);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">UAVGadgetDecorator::loadConfiguration</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_activeConfiguration = config;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> index = m_toolbar-&gt;findText(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_toolbar-&gt;setCurrentIndex(index);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_gadget-&gt;<a class="code" href="group___core_plugin.html#gaaf60a82b8643f54a42381600c52bbe8a">loadConfiguration</a>(config);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">   82</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">UAVGadgetDecorator::configurationChanged</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (config == m_activeConfiguration)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">UAVGadgetDecorator::configurationAdded</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    m_configurations-&gt;append(config);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_toolbar-&gt;addItem(config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    updateToolbar();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">UAVGadgetDecorator::configurationToBeDeleted</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> index = m_configurations-&gt;indexOf(config);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (index &gt;= 0) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        m_toolbar-&gt;removeItem(index);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        m_configurations-&gt;removeAt(index);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    updateToolbar();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">  109</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">UAVGadgetDecorator::configurationNameChanged</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config, QString oldName,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                  QString newName)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>() != <a class="code" href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">classId</a>())</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; m_toolbar-&gt;count(); ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (m_toolbar-&gt;itemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) == oldName)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            m_toolbar-&gt;setItemText(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, newName);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> UAVGadgetDecorator::updateToolbar()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    m_toolbar-&gt;setEnabled(m_toolbar-&gt;count() &gt; 1);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">UAVGadgetDecorator::saveState</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (m_activeConfiguration) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        qSettings-&gt;setValue(<span class="stringliteral">&quot;activeConfiguration&quot;</span>, m_activeConfiguration-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">UAVGadgetDecorator::restoreState</a>(QSettings *qSetting)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    QString configName = qSetting-&gt;value(<span class="stringliteral">&quot;activeConfiguration&quot;</span>).toString();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config, *m_configurations) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (config-&gt;<a class="code" href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">name</a>() == configName) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            m_activeConfiguration = config;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">loadConfiguration</a>(config);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gac953657221ba7fda967ada0408332641"><div class="ttname"><a href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">Core::IUAVGadgetConfiguration::classId</a></div><div class="ttdeci">QString classId()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00049">iuavgadgetconfiguration.h:49</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga13653640feaa74b1fec61e88c82406ae"><div class="ttname"><a href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">Core::UAVGadgetDecorator::restoreState</a></div><div class="ttdeci">void restoreState(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00129">uavgadgetdecorator.cpp:129</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga2cb86d2fb668e30c63e1438984b7ec76"><div class="ttname"><a href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">Core::UAVGadgetDecorator::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00071">uavgadgetdecorator.cpp:71</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga3878fde66a57220608960bcc3fbeef2c"><div class="ttname"><a href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">Core::IUAVGadget::classId</a></div><div class="ttdeci">QString classId() const </div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00060">iuavgadget.h:60</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaaf60a82b8643f54a42381600c52bbe8a"><div class="ttname"><a href="group___core_plugin.html#gaaf60a82b8643f54a42381600c52bbe8a">Core::IUAVGadget::loadConfiguration</a></div><div class="ttdeci">virtual void loadConfiguration(IUAVGadgetConfiguration *)</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00063">iuavgadget.h:63</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga3fcfe36e1ac689138c02cd3945178da0"><div class="ttname"><a href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">Core::UAVGadgetDecorator::configurationAdded</a></div><div class="ttdeci">void configurationAdded(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00086">uavgadgetdecorator.cpp:86</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga13653640feaa74b1fec61e88c82406ae"><div class="ttname"><a href="group___core_plugin.html#ga13653640feaa74b1fec61e88c82406ae">Core::UAVGadgetDecorator::restoreState</a></div><div class="ttdeci">void restoreState(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00132">uavgadgetdecorator.cpp:132</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga2cb86d2fb668e30c63e1438984b7ec76"><div class="ttname"><a href="group___core_plugin.html#ga2cb86d2fb668e30c63e1438984b7ec76">Core::UAVGadgetDecorator::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00074">uavgadgetdecorator.cpp:74</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga3878fde66a57220608960bcc3fbeef2c"><div class="ttname"><a href="group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c">Core::IUAVGadget::classId</a></div><div class="ttdeci">QString classId() const </div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00062">iuavgadget.h:62</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaaf60a82b8643f54a42381600c52bbe8a"><div class="ttname"><a href="group___core_plugin.html#gaaf60a82b8643f54a42381600c52bbe8a">Core::IUAVGadget::loadConfiguration</a></div><div class="ttdeci">virtual void loadConfiguration(IUAVGadgetConfiguration *)</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00065">iuavgadget.h:65</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga3fcfe36e1ac689138c02cd3945178da0"><div class="ttname"><a href="group___core_plugin.html#ga3fcfe36e1ac689138c02cd3945178da0">Core::UAVGadgetDecorator::configurationAdded</a></div><div class="ttdeci">void configurationAdded(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00088">uavgadgetdecorator.cpp:88</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga8a003ada3aa27fd0e98e1d91610cd59b"><div class="ttname"><a href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">Core::UAVGadgetDecorator::configurationChanged</a></div><div class="ttdeci">void configurationChanged(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00080">uavgadgetdecorator.cpp:80</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga2ece0a42a537670450430731ea9a1d20"><div class="ttname"><a href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">Core::UAVGadgetDecorator::~UAVGadgetDecorator</a></div><div class="ttdeci">~UAVGadgetDecorator()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00060">uavgadgetdecorator.cpp:60</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gae75d3e369cd07b1bc2fe50a2a00264d4"><div class="ttname"><a href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">Core::UAVGadgetDecorator::configurationToBeDeleted</a></div><div class="ttdeci">void configurationToBeDeleted(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00095">uavgadgetdecorator.cpp:95</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga8a003ada3aa27fd0e98e1d91610cd59b"><div class="ttname"><a href="group___core_plugin.html#ga8a003ada3aa27fd0e98e1d91610cd59b">Core::UAVGadgetDecorator::configurationChanged</a></div><div class="ttdeci">void configurationChanged(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00082">uavgadgetdecorator.cpp:82</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga2ece0a42a537670450430731ea9a1d20"><div class="ttname"><a href="group___core_plugin.html#ga2ece0a42a537670450430731ea9a1d20">Core::UAVGadgetDecorator::~UAVGadgetDecorator</a></div><div class="ttdeci">~UAVGadgetDecorator()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00062">uavgadgetdecorator.cpp:62</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gae75d3e369cd07b1bc2fe50a2a00264d4"><div class="ttname"><a href="group___core_plugin.html#gae75d3e369cd07b1bc2fe50a2a00264d4">Core::UAVGadgetDecorator::configurationToBeDeleted</a></div><div class="ttdeci">void configurationToBeDeleted(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00097">uavgadgetdecorator.cpp:97</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga644f51fd4e29830095d2e70735fa78e9"><div class="ttname"><a href="group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9">Core::IUAVGadgetConfiguration::name</a></div><div class="ttdeci">QString name()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00050">iuavgadgetconfiguration.h:50</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga5ff52091a4bad5f4e04f09035f7ef9ec"><div class="ttname"><a href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">Core::UAVGadgetDecorator::configurationNameChanged</a></div><div class="ttdeci">void configurationNameChanged(IUAVGadgetConfiguration *config, QString oldName, QString newName)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00107">uavgadgetdecorator.cpp:107</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga5ff52091a4bad5f4e04f09035f7ef9ec"><div class="ttname"><a href="group___core_plugin.html#ga5ff52091a4bad5f4e04f09035f7ef9ec">Core::UAVGadgetDecorator::configurationNameChanged</a></div><div class="ttdeci">void configurationNameChanged(IUAVGadgetConfiguration *config, QString oldName, QString newName)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00109">uavgadgetdecorator.cpp:109</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga506766120c0cac17d0d15b75c88fe2fe"><div class="ttname"><a href="group___core_plugin.html#ga506766120c0cac17d0d15b75c88fe2fe">Core::UAVGadgetDecorator::UAVGadgetDecorator</a></div><div class="ttdeci">UAVGadgetDecorator(IUAVGadget *gadget, QList&lt; IUAVGadgetConfiguration * &gt; *configurations, bool loadDefault=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00036">uavgadgetdecorator.cpp:36</a></div></div>
 <div class="ttc" id="uavgadgetdecorator_8h_html"><div class="ttname"><a href="uavgadgetdecorator_8h.html">uavgadgetdecorator.h</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gac05eb0306b2ea9df605c375ec35826d3"><div class="ttname"><a href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">Core::UAVGadgetDecorator::saveState</a></div><div class="ttdeci">void saveState(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00122">uavgadgetdecorator.cpp:122</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gac05eb0306b2ea9df605c375ec35826d3"><div class="ttname"><a href="group___core_plugin.html#gac05eb0306b2ea9df605c375ec35826d3">Core::UAVGadgetDecorator::saveState</a></div><div class="ttdeci">void saveState(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetdecorator_8cpp_source.html#l00125">uavgadgetdecorator.cpp:125</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

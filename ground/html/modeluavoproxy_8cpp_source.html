@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -136,80 +136,80 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8cpp_source.html','');}
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coordinateconversions_8h.html">utils/coordinateconversions.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;homelocation.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga42f653c17585ad777a3b74b7c561cfaa">   38</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga42f653c17585ad777a3b74b7c561cfaa">ModelUavoProxy::ModelUavoProxy</a>(QObject *parent, <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *model):QObject(parent),myModel(model)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_ASSERT(pm != NULL);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_ASSERT(objManager != NULL);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    waypointObj = Waypoint::GetInstance(objManager);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_ASSERT(waypointObj != NULL);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___path.html#ga736230a8add02155bb474dbf91d14d18">   53</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a>()</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Waypoint *wp = Waypoint::GetInstance(objManager,0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_ASSERT(wp);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (wp == NULL)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Make sure the object is acked</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    UAVObject::Metadata initialMeta = wp-&gt;getMetadata();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    UAVObject::Metadata meta = initialMeta;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga92f2e8fef7adb87575582d52a4d90519">UAVObject::SetFlightTelemetryAcked</a>(meta, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    wp-&gt;setMetadata(meta);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> homeLLA[3];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6">NED</a>[3];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    getHomeLocation(homeLLA);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> newInstance;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Get the number of existing waypoints</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> instances = Waypoint::getNumInstances(objManager);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Figure out the total amount of work to do.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> progressMax = myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (instances &gt; progressMax) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        progressMax = instances;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span>(x=0; x&lt;myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>(); x++)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        newInstance = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        Waypoint *wp = NULL;    <span class="comment">// Shadows above wp</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// Create new instances of waypoints if this is more than exist</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>(x &gt;= instances)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga42f653c17585ad777a3b74b7c561cfaa">   38</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga42f653c17585ad777a3b74b7c561cfaa">ModelUavoProxy::ModelUavoProxy</a>(QObject *parent, <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *model)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : QObject(parent)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    , myModel(model)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_ASSERT(pm != NULL);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_ASSERT(objManager != NULL);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    waypointObj = Waypoint::GetInstance(objManager);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Q_ASSERT(waypointObj != NULL);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___path.html#ga736230a8add02155bb474dbf91d14d18">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Waypoint *wp = Waypoint::GetInstance(objManager, 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Q_ASSERT(wp);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (wp == NULL)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Make sure the object is acked</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    UAVObject::Metadata initialMeta = wp-&gt;getMetadata();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    UAVObject::Metadata meta = initialMeta;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga92f2e8fef7adb87575582d52a4d90519">UAVObject::SetFlightTelemetryAcked</a>(meta, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    wp-&gt;setMetadata(meta);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">double</span> homeLLA[3];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6">NED</a>[3];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    getHomeLocation(homeLLA);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> newInstance;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Get the number of existing waypoints</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> instances = Waypoint::getNumInstances(objManager);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Figure out the total amount of work to do.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> progressMax = myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (instances &gt; progressMax) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        progressMax = instances;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (x = 0; x &lt; myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>(); x++) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        newInstance = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        Waypoint *wp = NULL; <span class="comment">// Shadows above wp</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// Create new instances of waypoints if this is more than exist</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (x &gt;= instances) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            newInstance = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            wp=<span class="keyword">new</span> Waypoint;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            wp-&gt;initialize(x,wp-&gt;getMetaObject());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            wp = <span class="keyword">new</span> Waypoint;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            wp-&gt;initialize(x, wp-&gt;getMetaObject());</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">registerObject</a>(wp);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            wp=Waypoint::GetInstance(objManager,x);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        Q_ASSERT(wp);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        Waypoint::DataFields waypoint = wp-&gt;getData();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">// Convert from LLA to NED for sending to the model</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        LLA[0] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a>)).toDouble();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        LLA[1] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a>)).toDouble();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        LLA[2] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189">FlightDataModel::ALTITUDE</a>)).toDouble();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="class_utils_1_1_coordinate_conversions.html">Utils::CoordinateConversions</a>().<a class="code" href="class_utils_1_1_coordinate_conversions.html#a1dc099f580d3a37ef39bb155cc7e4e62">LLA2NED_HomeLLA</a>(LLA, homeLLA, NED);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// Fetch the data from the internal model</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        waypoint.Velocity=myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a>)).toFloat();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        waypoint.Position[Waypoint::POSITION_NORTH] = NED[0];</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        waypoint.Position[Waypoint::POSITION_EAST]  = NED[1];</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        waypoint.Position[Waypoint::POSITION_DOWN]  = NED[2];</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        waypoint.Mode = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a>), Qt::UserRole).toInt();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        waypoint.ModeParameters = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a>)).toFloat();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            wp = Waypoint::GetInstance(objManager, x);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Q_ASSERT(wp);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        Waypoint::DataFields waypoint = wp-&gt;getData();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// Convert from LLA to NED for sending to the model</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        LLA[0] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a>)).toDouble();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        LLA[1] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a>)).toDouble();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        LLA[2] = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189">FlightDataModel::ALTITUDE</a>)).toDouble();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="class_utils_1_1_coordinate_conversions.html">Utils::CoordinateConversions</a>().<a class="code" href="class_utils_1_1_coordinate_conversions.html#a1dc099f580d3a37ef39bb155cc7e4e62">LLA2NED_HomeLLA</a>(LLA, homeLLA, NED);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// Fetch the data from the internal model</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        waypoint.Velocity = myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a>)).toFloat();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        waypoint.Position[Waypoint::POSITION_NORTH] = NED[0];</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        waypoint.Position[Waypoint::POSITION_EAST] = NED[1];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        waypoint.Position[Waypoint::POSITION_DOWN] = NED[2];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        waypoint.Mode =</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a>), Qt::UserRole).toInt();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        waypoint.ModeParameters =</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            myModel-&gt;<a class="code" href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">data</a>(myModel-&gt;index(x, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a>)).toFloat();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (robustUpdate(waypoint, x)) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Successfully updated&quot;</span>;</div>
@@ -219,141 +219,147 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8cpp_source.html','');}
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            emit <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(100 * (x + 1) / progressMax);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span>(newInstance)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            QEventLoop m_eventloop;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            QTimer::singleShot(800, &amp;m_eventloop, SLOT(quit()));</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            m_eventloop.exec();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">/* Continue iterating over any instance indices that aren&#39;t needed to</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">     * represent our model, and mark them invalid.  */</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">for</span> (; x &lt; instances; x++) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        Waypoint *wp = Waypoint::GetInstance(objManager, x);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="comment">// shadows wp above</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        Waypoint::DataFields waypoint = wp-&gt;getData();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        waypoint.Mode = Waypoint::MODE_INVALID;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span> (robustUpdate(waypoint, x)) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Successfully updated&quot;</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            emit <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(100 * (x + 1) / progressMax);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Upload failed&quot;</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            emit <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(100 * (x + 1) / progressMax);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    wp-&gt;setMetadata(initialMeta);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">bool</span> ModelUavoProxy::robustUpdate(Waypoint::DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, <span class="keywordtype">int</span> instance)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    Waypoint *wp = Waypoint::GetInstance(objManager, instance);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    connect(wp, SIGNAL(transactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*,<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">waypointTransactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>)));</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; 10; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            QEventLoop m_eventloop;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            QTimer::singleShot(1000, &amp;m_eventloop, SLOT(quit()));</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            connect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">waypointTransactionSucceeded</a>()), &amp;m_eventloop, SLOT(quit()));</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            connect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">waypointTransactionFailed</a>()), &amp;m_eventloop, SLOT(quit()));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            waypointTransactionResult.insert(instance, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            wp-&gt;setData(data);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            wp-&gt;updated();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            m_eventloop.exec();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">if</span> (waypointTransactionResult.value(instance)) {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                disconnect(wp, SIGNAL(transactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*,<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">waypointTransactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>)));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="comment">// Wait a second for next attempt</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            QTimer::singleShot(500, &amp;m_eventloop, SLOT(quit()));</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            m_eventloop.exec();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    disconnect(wp, SIGNAL(transactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*,<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">waypointTransactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>)));</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// None of the attempt got an ack</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (newInstance) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            QEventLoop m_eventloop;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            QTimer::singleShot(800, &amp;m_eventloop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            m_eventloop.exec();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">/* Continue iterating over any instance indices that aren&#39;t needed to</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">     * represent our model, and mark them invalid.  */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">for</span> (; x &lt; instances; x++) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        Waypoint *wp = Waypoint::GetInstance(objManager, x);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">// shadows wp above</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        Waypoint::DataFields waypoint = wp-&gt;getData();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        waypoint.Mode = Waypoint::MODE_INVALID;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (robustUpdate(waypoint, x)) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Successfully updated&quot;</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            emit <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(100 * (x + 1) / progressMax);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;Upload failed&quot;</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            emit <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(100 * (x + 1) / progressMax);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    wp-&gt;setMetadata(initialMeta);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">bool</span> ModelUavoProxy::robustUpdate(Waypoint::DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, <span class="keywordtype">int</span> instance)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Waypoint *wp = Waypoint::GetInstance(objManager, instance);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    connect(wp, QOverload&lt;UAVObject *, bool&gt;::of(&amp;Waypoint::transactionCompleted), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            &amp;<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; 10; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        QEventLoop m_eventloop;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        QTimer::singleShot(1000, &amp;m_eventloop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">ModelUavoProxy::waypointTransactionSucceeded</a>, &amp;m_eventloop,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">ModelUavoProxy::waypointTransactionFailed</a>, &amp;m_eventloop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        waypointTransactionResult.insert(instance, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        wp-&gt;setData(data);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        wp-&gt;updated();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        m_eventloop.exec();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">if</span> (waypointTransactionResult.value(instance)) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            disconnect(wp, QOverload&lt;UAVObject *, bool&gt;::of(&amp;Waypoint::transactionCompleted), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                       &amp;<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">// Wait a second for next attempt</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        QTimer::singleShot(500, &amp;m_eventloop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        m_eventloop.exec();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    disconnect(wp, QOverload&lt;UAVObject *, bool&gt;::of(&amp;Waypoint::transactionCompleted), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;               &amp;<a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a>);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">  196</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    Q_ASSERT(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>() == Waypoint::OBJID);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    waypointTransactionResult.insert(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>(), success);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span> (success) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Success &quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>();</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        emit <a class="code" href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">waypointTransactionSucceeded</a>();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Failed transaction &quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        emit <a class="code" href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">waypointTransactionFailed</a>();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">  212</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a>()</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">double</span> homeLLA[3];</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    getHomeLocation(homeLLA);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3];</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">pauseValidation</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga951208986321a56cc67eafa5a9d67f0e">removeRows</a>(0,myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>());</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>=0; <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> &lt; Waypoint::getNumInstances(objManager) ; ++<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        Waypoint * wp;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        Waypoint::DataFields wpfields;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// None of the attempt got an ack</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">  200</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    Q_ASSERT(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>() == Waypoint::OBJID);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    waypointTransactionResult.insert(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>(), success);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">if</span> (success) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Success &quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        emit <a class="code" href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">waypointTransactionSucceeded</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Failed transaction &quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        emit <a class="code" href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">waypointTransactionFailed</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">  217</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a>()</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">double</span> homeLLA[3];</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    getHomeLocation(homeLLA);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3];</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">pauseValidation</a>(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        wp = Waypoint::GetInstance(objManager,<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        Q_ASSERT(wp);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span>(!wp)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="comment">// Get the waypoint data from the object manager and prepare a row in the internal model</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        wpfields = wp-&gt;getData();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span> (wpfields.Mode == Waypoint::MODE_INVALID)</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        myModel-&gt;insertRow(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga951208986321a56cc67eafa5a9d67f0e">removeRows</a>(0, myModel-&gt;<a class="code" href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">rowCount</a>());</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = 0; <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> &lt; Waypoint::getNumInstances(objManager); ++<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        Waypoint *wp;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        Waypoint::DataFields wpfields;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        wp = Waypoint::GetInstance(objManager, <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        Q_ASSERT(wp);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (!wp)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">// Get the waypoint data from the object manager and prepare a row in the internal model</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        wpfields = wp-&gt;getData();</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">// Compute the coordinates in LLA</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6">NED</a>[3] = {wpfields.Position[Waypoint::POSITION_NORTH], wpfields.Position[Waypoint::POSITION_EAST], wpfields.Position[Waypoint::POSITION_DOWN]};</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="class_utils_1_1_coordinate_conversions.html">Utils::CoordinateConversions</a>().<a class="code" href="class_utils_1_1_coordinate_conversions.html#aa8dc93690408a9522db08f0a13ec12e1">NED2LLA_HomeLLA</a>(homeLLA, NED, LLA);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">// Store the data</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a>), LLA[0]);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a>), LLA[1]);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189">FlightDataModel::ALTITUDE</a>), LLA[2]);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a>), wpfields.Velocity);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a>), wpfields.Mode);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,<a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a>), wpfields.ModeParameters);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">pauseValidation</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keywordtype">bool</span> ModelUavoProxy::getHomeLocation(<span class="keywordtype">double</span> *homeLLA)</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Compute the coordinates in LLA</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    HomeLocation *home = HomeLocation::GetInstance(objManager);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">if</span> (home == NULL)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    HomeLocation::DataFields homeLocation = home-&gt;getData();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    homeLLA[0] = homeLocation.Latitude / 1e7;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    homeLLA[1] = homeLocation.Longitude / 1e7;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    homeLLA[2] = homeLocation.Altitude;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (wpfields.Mode == Waypoint::MODE_INVALID)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        myModel-&gt;insertRow(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">// Compute the coordinates in LLA</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6">NED</a>[3] = { wpfields.Position[Waypoint::POSITION_NORTH],</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                          wpfields.Position[Waypoint::POSITION_EAST],</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                          wpfields.Position[Waypoint::POSITION_DOWN] };</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="code" href="class_utils_1_1_coordinate_conversions.html">Utils::CoordinateConversions</a>().<a class="code" href="class_utils_1_1_coordinate_conversions.html#aa8dc93690408a9522db08f0a13ec12e1">NED2LLA_HomeLLA</a>(homeLLA, NED, LLA);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// Store the data</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a>), LLA[0]);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a>), LLA[1]);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189">FlightDataModel::ALTITUDE</a>), LLA[2]);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a>), wpfields.Velocity);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a>), wpfields.Mode);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        myModel-&gt;<a class="code" href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">setData</a>(myModel-&gt;index(<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <a class="code" href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a>), wpfields.ModeParameters);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    myModel-&gt;<a class="code" href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">pauseValidation</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">bool</span> ModelUavoProxy::getHomeLocation(<span class="keywordtype">double</span> *homeLLA)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// Compute the coordinates in LLA</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    HomeLocation *home = HomeLocation::GetInstance(objManager);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (home == NULL)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    HomeLocation::DataFields homeLocation = home-&gt;getData();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    homeLLA[0] = homeLocation.Latitude / 1e7;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    homeLLA[1] = homeLocation.Longitude / 1e7;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    homeLLA[2] = homeLocation.Altitude;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga92f2e8fef7adb87575582d52a4d90519"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92f2e8fef7adb87575582d52a4d90519">UAVObject::SetFlightTelemetryAcked</a></div><div class="ttdeci">static void SetFlightTelemetryAcked(Metadata &amp;meta, quint8 val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00449">uavobject.cpp:449</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga92f2e8fef7adb87575582d52a4d90519"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92f2e8fef7adb87575582d52a4d90519">UAVObject::SetFlightTelemetryAcked</a></div><div class="ttdeci">static void SetFlightTelemetryAcked(Metadata &amp;meta, quint8 val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00445">uavobject.cpp:445</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_gaf5825b310723b58fb271811c478954ec"><div class="ttname"><a href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">ModelUavoProxy::waypointTransactionSucceeded</a></div><div class="ttdeci">void waypointTransactionSucceeded()</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gad71bd0967de227335d5fec0b599a54e3"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">UAVObjectManager::registerObject</a></div><div class="ttdeci">bool registerObject(UAVDataObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00054">uavobjectmanager.cpp:54</a></div></div>
-<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00057">flightdatamodel.h:57</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gad71bd0967de227335d5fec0b599a54e3"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">UAVObjectManager::registerObject</a></div><div class="ttdeci">bool registerObject(UAVDataObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00056">uavobjectmanager.cpp:56</a></div></div>
+<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a62e4abf60e84ec15a1d55ccead4a171d">FlightDataModel::LNGPOSITION</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00056">flightdatamodel.h:56</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a6cb875c2764969992994d66ba514a189">FlightDataModel::ALTITUDE</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00057">flightdatamodel.h:57</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_abb3119256791e93ec6e33c8eee7035d6"><div class="ttname"><a href="_o_p_plots_8m.html#abb3119256791e93ec6e33c8eee7035d6">NED</a></div><div class="ttdeci">axis equal end function NED</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00063">OPPlots.m:63</a></div></div>
@@ -361,31 +367,31 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8cpp_source.html','');}
 <div class="ttc" id="class_utils_1_1_coordinate_conversions_html_a1dc099f580d3a37ef39bb155cc7e4e62"><div class="ttname"><a href="class_utils_1_1_coordinate_conversions.html#a1dc099f580d3a37ef39bb155cc7e4e62">Utils::CoordinateConversions::LLA2NED_HomeLLA</a></div><div class="ttdeci">void LLA2NED_HomeLLA(double LLA[3], double homeLLA[3], double NED[3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinateconversions_8cpp_source.html#l00213">coordinateconversions.cpp:213</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga043d5717d69a25de0db1d76753c8997e"><div class="ttname"><a href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">ModelUavoProxy::sendPathPlanToUavProgress</a></div><div class="ttdeci">void sendPathPlanToUavProgress(int percent)</div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
-<div class="ttc" id="group___path_html_ga7c8a098e7b8a37867261f0036502a4fc"><div class="ttname"><a href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">FlightDataModel::rowCount</a></div><div class="ttdeci">int rowCount(const QModelIndex &amp;parent=QModelIndex()) const </div><div class="ttdoc">Return the number of waypoints. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00059">flightdatamodel.cpp:59</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaf465e2bde7a1e41ba94c19eac2ba9b80"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">UAVObject::getInstID</a></div><div class="ttdeci">quint32 getInstID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00118">uavobject.cpp:118</a></div></div>
+<div class="ttc" id="group___path_html_ga7c8a098e7b8a37867261f0036502a4fc"><div class="ttname"><a href="group___path.html#ga7c8a098e7b8a37867261f0036502a4fc">FlightDataModel::rowCount</a></div><div class="ttdeci">int rowCount(const QModelIndex &amp;parent=QModelIndex()) const </div><div class="ttdoc">Return the number of waypoints. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00060">flightdatamodel.cpp:60</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaf465e2bde7a1e41ba94c19eac2ba9b80"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">UAVObject::getInstID</a></div><div class="ttdeci">quint32 getInstID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00117">uavobject.cpp:117</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00099">uavobjecttemplate.h:99</a></div></div>
-<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00059">flightdatamodel.h:59</a></div></div>
-<div class="ttc" id="group___path_html_ga736230a8add02155bb474dbf91d14d18"><div class="ttname"><a href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a></div><div class="ttdeci">bool modelToObjects()</div><div class="ttdoc">Cast from the internal representation to the UAVOs. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00053">modeluavoproxy.cpp:53</a></div></div>
+<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89">FlightDataModel::VELOCITY</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00061">flightdatamodel.h:61</a></div></div>
+<div class="ttc" id="group___path_html_ga736230a8add02155bb474dbf91d14d18"><div class="ttname"><a href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a></div><div class="ttdeci">bool modelToObjects()</div><div class="ttdoc">Cast from the internal representation to the UAVOs. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00055">modeluavoproxy.cpp:55</a></div></div>
 <div class="ttc" id="coordinateconversions_8h_html"><div class="ttname"><a href="coordinateconversions_8h.html">coordinateconversions.h</a></div></div>
-<div class="ttc" id="group___path_html_ga951208986321a56cc67eafa5a9d67f0e"><div class="ttname"><a href="group___path.html#ga951208986321a56cc67eafa5a9d67f0e">FlightDataModel::removeRows</a></div><div class="ttdeci">bool removeRows(int row, int count, const QModelIndex &amp;parent=QModelIndex())</div><div class="ttdoc">FlightDataModel::removeRows Remove waypoints from the model. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00335">flightdatamodel.cpp:335</a></div></div>
-<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00059">flightdatamodel.h:59</a></div></div>
+<div class="ttc" id="group___path_html_ga951208986321a56cc67eafa5a9d67f0e"><div class="ttname"><a href="group___path.html#ga951208986321a56cc67eafa5a9d67f0e">FlightDataModel::removeRows</a></div><div class="ttdeci">bool removeRows(int row, int count, const QModelIndex &amp;parent=QModelIndex())</div><div class="ttdoc">FlightDataModel::removeRows Remove waypoints from the model. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00325">flightdatamodel.cpp:325</a></div></div>
+<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23abc9a6ccea3fe42c5fb3b77401f59e3e0">FlightDataModel::MODE</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00062">flightdatamodel.h:62</a></div></div>
 <div class="ttc" id="class_flight_data_model_html"><div class="ttname"><a href="class_flight_data_model.html">FlightDataModel</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00049">flightdatamodel.h:49</a></div></div>
-<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00059">flightdatamodel.h:59</a></div></div>
+<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a8c8d56fc223af4d252e65152fbf61c5f">FlightDataModel::MODE_PARAMS</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00063">flightdatamodel.h:63</a></div></div>
 <div class="ttc" id="class_utils_1_1_coordinate_conversions_html_aa8dc93690408a9522db08f0a13ec12e1"><div class="ttname"><a href="class_utils_1_1_coordinate_conversions.html#aa8dc93690408a9522db08f0a13ec12e1">Utils::CoordinateConversions::NED2LLA_HomeLLA</a></div><div class="ttdeci">int NED2LLA_HomeLLA(double homeLLA[3], double NED[3], double LLA[3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinateconversions_8cpp_source.html#l00163">coordinateconversions.cpp:163</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaad45ab83a511083bfe60df0c244e9b88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">UAVObject::getObjID</a></div><div class="ttdeci">quint32 getObjID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00110">uavobject.cpp:110</a></div></div>
-<div class="ttc" id="group___path_html_ga8931eaae5c2004c4d42233bcdad3ee4d"><div class="ttname"><a href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">FlightDataModel::setData</a></div><div class="ttdeci">bool setData(const QModelIndex &amp;index, const QVariant &amp;value, int role=Qt::EditRole)</div><div class="ttdoc">FlightDataModel::setData Set the data at a given location. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00186">flightdatamodel.cpp:186</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaad45ab83a511083bfe60df0c244e9b88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">UAVObject::getObjID</a></div><div class="ttdeci">quint32 getObjID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00109">uavobject.cpp:109</a></div></div>
+<div class="ttc" id="group___path_html_ga8931eaae5c2004c4d42233bcdad3ee4d"><div class="ttname"><a href="group___path.html#ga8931eaae5c2004c4d42233bcdad3ee4d">FlightDataModel::setData</a></div><div class="ttdeci">bool setData(const QModelIndex &amp;index, const QVariant &amp;value, int role=Qt::EditRole)</div><div class="ttdoc">FlightDataModel::setData Set the data at a given location. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00181">flightdatamodel.cpp:181</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga42f653c17585ad777a3b74b7c561cfaa"><div class="ttname"><a href="group___o_p_map_plugin.html#ga42f653c17585ad777a3b74b7c561cfaa">ModelUavoProxy::ModelUavoProxy</a></div><div class="ttdeci">ModelUavoProxy(QObject *parent, FlightDataModel *model)</div><div class="ttdoc">Initialize the model uavo proxy. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00038">modeluavoproxy.cpp:38</a></div></div>
-<div class="ttc" id="group___path_html_ga82873db06a72d0d8edf3d7f60d4b5f35"><div class="ttname"><a href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">FlightDataModel::pauseValidation</a></div><div class="ttdeci">void pauseValidation(bool pausing)</div><div class="ttdoc">Prevent validation/correction of data. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00462">flightdatamodel.cpp:462</a></div></div>
+<div class="ttc" id="group___path_html_ga82873db06a72d0d8edf3d7f60d4b5f35"><div class="ttname"><a href="group___path.html#ga82873db06a72d0d8edf3d7f60d4b5f35">FlightDataModel::pauseValidation</a></div><div class="ttdeci">void pauseValidation(bool pausing)</div><div class="ttdoc">Prevent validation/correction of data. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00450">flightdatamodel.cpp:450</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a011779f2c5f2a3505308bb1369101a54"><div class="ttname"><a href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a></div><div class="ttdeci">LLA</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00034">OPPlots.m:34</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_gafd0e6a7bd5963a1363aace5cbdaac47f"><div class="ttname"><a href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">ModelUavoProxy::waypointTransactionFailed</a></div><div class="ttdeci">void waypointTransactionFailed()</div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a9336ebf25087d91c818ee6e9ec29f8c1"><div class="ttname"><a href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00100">OPPlots.m:100</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gadf2e7f7ca1a0ae5d380c107e7dbf9132"><div class="ttname"><a href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a></div><div class="ttdeci">void objectsToModel()</div><div class="ttdoc">Cast from the UAVOs to the internal representation. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00212">modeluavoproxy.cpp:212</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_gadf2e7f7ca1a0ae5d380c107e7dbf9132"><div class="ttname"><a href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a></div><div class="ttdeci">void objectsToModel()</div><div class="ttdoc">Cast from the UAVOs to the internal representation. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00217">modeluavoproxy.cpp:217</a></div></div>
 <div class="ttc" id="modeluavoproxy_8h_html"><div class="ttname"><a href="modeluavoproxy_8h.html">modeluavoproxy.h</a></div></div>
-<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00057">flightdatamodel.h:57</a></div></div>
-<div class="ttc" id="group___path_html_ga3314e011bb5ed88b34ab33bf8f94d41e"><div class="ttname"><a href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">FlightDataModel::data</a></div><div class="ttdeci">QVariant data(const QModelIndex &amp;index, int role=Qt::DisplayRole) const </div><div class="ttdoc">FlightDataModel::data Fetch the data from the model. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00078">flightdatamodel.cpp:78</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga428d73f0e25b47749d707e5c6bd5d34f"><div class="ttname"><a href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a></div><div class="ttdeci">void waypointTransactionCompleted(UAVObject *, bool)</div><div class="ttdoc">Whenever a waypoint transaction is completed. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00196">modeluavoproxy.cpp:196</a></div></div>
+<div class="ttc" id="group___path_html_gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547"><div class="ttname"><a href="group___path.html#gga474bf8bbc3c8c027f09087e98700be23a13024b57ed66f819f1bd7a7be0e11547">FlightDataModel::LATPOSITION</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00055">flightdatamodel.h:55</a></div></div>
+<div class="ttc" id="group___path_html_ga3314e011bb5ed88b34ab33bf8f94d41e"><div class="ttname"><a href="group___path.html#ga3314e011bb5ed88b34ab33bf8f94d41e">FlightDataModel::data</a></div><div class="ttdeci">QVariant data(const QModelIndex &amp;index, int role=Qt::DisplayRole) const </div><div class="ttdoc">FlightDataModel::data Fetch the data from the model. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00079">flightdatamodel.cpp:79</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga428d73f0e25b47749d707e5c6bd5d34f"><div class="ttname"><a href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a></div><div class="ttdeci">void waypointTransactionCompleted(UAVObject *, bool)</div><div class="ttdoc">Whenever a waypoint transaction is completed. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00200">modeluavoproxy.cpp:200</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

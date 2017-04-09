@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -117,61 +117,60 @@ $(document).ready(function(){initNavTree('importsettings_8cpp_source.html','');}
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xmlconfig_8h.html">utils/xmlconfig.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582">    8</a></span>&#160;<a class="code" href="classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582">importSettings::importSettings</a>(QWidget *parent) :</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QDialog(parent),</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    ui(new Ui::<a class="code" href="classimport_settings.html">importSettings</a>)</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582">    8</a></span>&#160;<a class="code" href="classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582">importSettings::importSettings</a>(QWidget *parent)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    : QDialog(parent)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    , ui(new Ui::<a class="code" href="classimport_settings.html">importSettings</a>)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(ui-&gt;cbConfigs,SIGNAL(currentIndexChanged(<span class="keywordtype">int</span>)),<span class="keyword">this</span>,SLOT(updateDetails(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    connect(ui-&gt;btnLoad,SIGNAL(clicked()),<span class="keyword">this</span>,SLOT(accept()));</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QTimer::singleShot(500,<span class="keyword">this</span>,SLOT(repaint()));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(ui-&gt;cbConfigs, SIGNAL(currentIndexChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(updateDetails(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    connect(ui-&gt;btnLoad, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(accept()));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QTimer::singleShot(500, <span class="keyword">this</span>, SLOT(repaint()));</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classimport_settings.html#a133358bf471790d7031c111bf5f0dfb1">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classimport_settings.html#a133358bf471790d7031c111bf5f0dfb1">importSettings::loadFiles</a>(QString path)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QDir myDir(path);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QStringList filters;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    filters &lt;&lt; <span class="stringliteral">&quot;*.xml&quot;</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    QStringList list = myDir.entryList(filters,QDir::Files);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>=0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">foreach</span>(QString fileStr, list)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        fileInfo * info=<span class="keyword">new</span> fileInfo;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        QSettings settings(path+QDir::separator()+fileStr, <a class="code" href="group__importexportplugin.html#ga86ce5e7b6d81b6da071f57e2f237e9f2">XmlConfig::XmlSettingsFormat</a>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        settings.beginGroup(<span class="stringliteral">&quot;General&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        info-&gt;description=settings.value(<span class="stringliteral">&quot;Description&quot;</span>,<span class="stringliteral">&quot;None&quot;</span>).toString();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        info-&gt;details=settings.value(<span class="stringliteral">&quot;Details&quot;</span>,<span class="stringliteral">&quot;None&quot;</span>).toString();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        settings.endGroup();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        info-&gt;file=path+QDir::separator()+fileStr;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        configList.insert(x,info);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ui-&gt;cbConfigs-&gt;addItem(info-&gt;description,x);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ++<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> importSettings::updateDetails(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    fileInfo * info=configList.value(ui-&gt;cbConfigs-&gt;itemData(index).toInt());</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ui-&gt;lblDetails-&gt;setText(info-&gt;details);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">   44</a></span>&#160;QString <a class="code" href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">importSettings::choosenConfig</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    fileInfo * info=configList.value(ui-&gt;cbConfigs-&gt;itemData(ui-&gt;cbConfigs-&gt;currentIndex()).toInt());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    QStringList list = myDir.entryList(filters, QDir::Files);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">foreach</span> (QString fileStr, list) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        fileInfo *info = <span class="keyword">new</span> fileInfo;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        QSettings settings(path + QDir::separator() + fileStr, <a class="code" href="group__importexportplugin.html#ga86ce5e7b6d81b6da071f57e2f237e9f2">XmlConfig::XmlSettingsFormat</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        settings.beginGroup(<span class="stringliteral">&quot;General&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        info-&gt;description = settings.value(<span class="stringliteral">&quot;Description&quot;</span>, <span class="stringliteral">&quot;None&quot;</span>).toString();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        info-&gt;details = settings.value(<span class="stringliteral">&quot;Details&quot;</span>, <span class="stringliteral">&quot;None&quot;</span>).toString();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        settings.endGroup();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        info-&gt;file = path + QDir::separator() + fileStr;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        configList.insert(x, info);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ui-&gt;cbConfigs-&gt;addItem(info-&gt;description, x);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ++<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> importSettings::updateDetails(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    fileInfo *info = configList.value(ui-&gt;cbConfigs-&gt;itemData(index).toInt());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ui-&gt;lblDetails-&gt;setText(info-&gt;details);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">   43</a></span>&#160;QString <a class="code" href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">importSettings::choosenConfig</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    fileInfo *info =</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        configList.value(ui-&gt;cbConfigs-&gt;itemData(ui-&gt;cbConfigs-&gt;currentIndex()).toInt());</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> info-&gt;file;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classimport_settings.html#a48406c5f6bb7dfa94e120ea8f3bb72a6">   50</a></span>&#160;<a class="code" href="classimport_settings.html#a48406c5f6bb7dfa94e120ea8f3bb72a6">importSettings::~importSettings</a>()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">foreach</span>(fileInfo * info,configList.values())</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">delete</span> info;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">foreach</span> (fileInfo *info, configList.values()) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">delete</span> info;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="ttc" id="classimport_settings_html"><div class="ttname"><a href="classimport_settings.html">importSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8h_source.html#l00010">importsettings.h:10</a></div></div>
 <div class="ttc" id="xmlconfig_8h_html"><div class="ttname"><a href="xmlconfig_8h.html">xmlconfig.h</a></div></div>
 <div class="ttc" id="importsettings_8h_html"><div class="ttname"><a href="importsettings_8h.html">importsettings.h</a></div></div>
 <div class="ttc" id="classimport_settings_html_a48406c5f6bb7dfa94e120ea8f3bb72a6"><div class="ttname"><a href="classimport_settings.html#a48406c5f6bb7dfa94e120ea8f3bb72a6">importSettings::~importSettings</a></div><div class="ttdeci">~importSettings()</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00050">importsettings.cpp:50</a></div></div>
-<div class="ttc" id="classimport_settings_html_a16a67f71fc0787a882d94dd33b3ce38b"><div class="ttname"><a href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">importSettings::choosenConfig</a></div><div class="ttdeci">QString choosenConfig()</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00044">importsettings.cpp:44</a></div></div>
+<div class="ttc" id="classimport_settings_html_a16a67f71fc0787a882d94dd33b3ce38b"><div class="ttname"><a href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">importSettings::choosenConfig</a></div><div class="ttdeci">QString choosenConfig()</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00043">importsettings.cpp:43</a></div></div>
 <div class="ttc" id="group__importexportplugin_html_ga86ce5e7b6d81b6da071f57e2f237e9f2"><div class="ttname"><a href="group__importexportplugin.html#ga86ce5e7b6d81b6da071f57e2f237e9f2">XmlConfig::XmlSettingsFormat</a></div><div class="ttdeci">static const QSettings::Format XmlSettingsFormat</div><div class="ttdef"><b>Definition:</b> <a href="xmlconfig_8h_source.html#l00043">xmlconfig.h:43</a></div></div>
 <div class="ttc" id="classimport_settings_html_acb2ef6bf76c3fc81b764a2cfac5b2582"><div class="ttname"><a href="classimport_settings.html#acb2ef6bf76c3fc81b764a2cfac5b2582">importSettings::importSettings</a></div><div class="ttdeci">importSettings(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00008">importsettings.cpp:8</a></div></div>
 <div class="ttc" id="classimport_settings_html_a133358bf471790d7031c111bf5f0dfb1"><div class="ttname"><a href="classimport_settings.html#a133358bf471790d7031c111bf5f0dfb1">importSettings::loadFiles</a></div><div class="ttdeci">void loadFiles(QString path)</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00017">importsettings.cpp:17</a></div></div>

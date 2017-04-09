@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,49 +132,47 @@ $(document).ready(function(){initNavTree('systemhealthgadgetfactory_8cpp_source.
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="systemhealthgadgetoptionspage_8h.html">systemhealthgadgetoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaf19ba5915588fac5dd9f368210271115">   33</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gaf19ba5915588fac5dd9f368210271115">SystemHealthGadgetFactory::SystemHealthGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          tr(<span class="stringliteral">&quot;System Health&quot;</span>),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          parent)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">   40</a></span>&#160;<a class="code" href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">SystemHealthGadgetFactory::~SystemHealthGadgetFactory</a>()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">   44</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>* <a class="code" href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">SystemHealthGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_system_health_gadget_widget.html">SystemHealthGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_widget.html">SystemHealthGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget.html">SystemHealthGadget</a>(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">   50</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">SystemHealthGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">   55</a></span>&#160;IOptionsPage *<a class="code" href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">SystemHealthGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_options_page.html">SystemHealthGadgetOptionsPage</a>(qobject_cast&lt;SystemHealthGadgetConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaf19ba5915588fac5dd9f368210271115">   33</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gaf19ba5915588fac5dd9f368210271115">SystemHealthGadgetFactory::SystemHealthGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>), tr(<span class="stringliteral">&quot;System Health&quot;</span>), parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">   38</a></span>&#160;<a class="code" href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">SystemHealthGadgetFactory::~SystemHealthGadgetFactory</a>()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">   42</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">SystemHealthGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_system_health_gadget_widget.html">SystemHealthGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_widget.html">SystemHealthGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget.html">SystemHealthGadget</a>(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">   48</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">SystemHealthGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;SystemHealthGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">   53</a></span>&#160;IOptionsPage *<a class="code" href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">SystemHealthGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_system_health_gadget_options_page.html">SystemHealthGadgetOptionsPage</a>(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        qobject_cast&lt;SystemHealthGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="systemhealthgadgetoptionspage_8h_html"><div class="ttname"><a href="systemhealthgadgetoptionspage_8h.html">systemhealthgadgetoptionspage.h</a></div></div>
 <div class="ttc" id="group___system_health_plugin_html_gaf19ba5915588fac5dd9f368210271115"><div class="ttname"><a href="group___system_health_plugin.html#gaf19ba5915588fac5dd9f368210271115">SystemHealthGadgetFactory::SystemHealthGadgetFactory</a></div><div class="ttdeci">SystemHealthGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00033">systemhealthgadgetfactory.cpp:33</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_ga569580fcea35d0f1f9433378dd734624"><div class="ttname"><a href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">SystemHealthGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00050">systemhealthgadgetfactory.cpp:50</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga569580fcea35d0f1f9433378dd734624"><div class="ttname"><a href="group___system_health_plugin.html#ga569580fcea35d0f1f9433378dd734624">SystemHealthGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00048">systemhealthgadgetfactory.cpp:48</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="class_system_health_gadget_configuration_html"><div class="ttname"><a href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00037">systemhealthgadgetconfiguration.h:37</a></div></div>
 <div class="ttc" id="class_system_health_gadget_widget_html"><div class="ttname"><a href="class_system_health_gadget_widget.html">SystemHealthGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetwidget_8h_source.html#l00041">systemhealthgadgetwidget.h:41</a></div></div>
 <div class="ttc" id="systemhealthgadgetwidget_8h_html"><div class="ttname"><a href="systemhealthgadgetwidget_8h.html">systemhealthgadgetwidget.h</a></div></div>
 <div class="ttc" id="class_system_health_gadget_html"><div class="ttname"><a href="class_system_health_gadget.html">SystemHealthGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadget_8h_source.html#l00040">systemhealthgadget.h:40</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_ga042cc7fba53df83dbb7e06626f2b1006"><div class="ttname"><a href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">SystemHealthGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00044">systemhealthgadgetfactory.cpp:44</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga042cc7fba53df83dbb7e06626f2b1006"><div class="ttname"><a href="group___system_health_plugin.html#ga042cc7fba53df83dbb7e06626f2b1006">SystemHealthGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00042">systemhealthgadgetfactory.cpp:42</a></div></div>
 <div class="ttc" id="systemhealthgadgetfactory_8h_html"><div class="ttname"><a href="systemhealthgadgetfactory_8h.html">systemhealthgadgetfactory.h</a></div></div>
 <div class="ttc" id="systemhealthgadgetconfiguration_8h_html"><div class="ttname"><a href="systemhealthgadgetconfiguration_8h.html">systemhealthgadgetconfiguration.h</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_ga6d9272ee992e8241b7a4483dce8ff330"><div class="ttname"><a href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">SystemHealthGadgetFactory::~SystemHealthGadgetFactory</a></div><div class="ttdeci">~SystemHealthGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00040">systemhealthgadgetfactory.cpp:40</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga6d9272ee992e8241b7a4483dce8ff330"><div class="ttname"><a href="group___system_health_plugin.html#ga6d9272ee992e8241b7a4483dce8ff330">SystemHealthGadgetFactory::~SystemHealthGadgetFactory</a></div><div class="ttdeci">~SystemHealthGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00038">systemhealthgadgetfactory.cpp:38</a></div></div>
 <div class="ttc" id="systemhealthgadget_8h_html"><div class="ttname"><a href="systemhealthgadget_8h.html">systemhealthgadget.h</a></div></div>
 <div class="ttc" id="class_system_health_gadget_options_page_html"><div class="ttname"><a href="class_system_health_gadget_options_page.html">SystemHealthGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8h_source.html#l00047">systemhealthgadgetoptionspage.h:47</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_gaae1b2e7613b4024f309fd5480fcbe028"><div class="ttname"><a href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">SystemHealthGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00055">systemhealthgadgetfactory.cpp:55</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_gaae1b2e7613b4024f309fd5480fcbe028"><div class="ttname"><a href="group___system_health_plugin.html#gaae1b2e7613b4024f309fd5480fcbe028">SystemHealthGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetfactory_8cpp_source.html#l00053">systemhealthgadgetfactory.cpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

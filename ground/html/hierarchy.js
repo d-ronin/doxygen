@@ -238,7 +238,6 @@ var hierarchy =
     [ "QList< int >", "class_q_list.html", null ],
     [ "QList< MixerNode * >", "class_q_list.html", null ],
     [ "QList< NotificationItem * >", "class_q_list.html", null ],
-    [ "QList< PathCompiler::waypoint >", "class_q_list.html", null ],
     [ "QList< PathPlanData * >", "class_q_list.html", null ],
     [ "QList< Plot2dCurveConfiguration * >", "class_q_list.html", null ],
     [ "QList< Plot3dCurveConfiguration * >", "class_q_list.html", null ],
@@ -536,7 +535,6 @@ var hierarchy =
       [ "NotificationItem", "class_notification_item.html", null ],
       [ "ObjectTransactionInfo", "class_object_transaction_info.html", null ],
       [ "OutputCalibrationUtil", "class_output_calibration_util.html", null ],
-      [ "PathCompiler", "class_path_compiler.html", null ],
       [ "PlotData", "class_plot_data.html", [
         [ "Plot2dData", "class_plot2d_data.html", [
           [ "HistogramData", "class_histogram_data.html", null ],
@@ -697,7 +695,6 @@ var hierarchy =
       [ "MapRipForm", "class_map_rip_form.html", null ],
       [ "MyMain", "class_my_main.html", null ],
       [ "MyTabbedStackWidget", "class_my_tabbed_stack_widget.html", null ],
-      [ "opmap_edit_waypoint_dialog", "classopmap__edit__waypoint__dialog.html", null ],
       [ "opmap_statusbar_widget", "classopmap__statusbar__widget.html", null ],
       [ "opmap_zoom_slider_widget", "classopmap__zoom__slider__widget.html", null ],
       [ "PluginDialog", "class_plugin_dialog.html", null ],
@@ -788,7 +785,6 @@ var hierarchy =
     [ "VehicleConfigurationSource", "class_vehicle_configuration_source.html", [
       [ "SetupWizard", "class_setup_wizard.html", null ]
     ] ],
-    [ "PathCompiler::waypoint", "class_path_compiler_1_1waypoint.html", null ],
     [ "Welcome::WelcomeModePrivate", "struct_welcome_1_1_welcome_mode_private.html", null ],
     [ "widgetActionInfoType", "structwidget_action_info_type.html", null ],
     [ "WizardKindPredicate", "class_wizard_kind_predicate.html", null ],

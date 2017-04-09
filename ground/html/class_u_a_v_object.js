@@ -56,7 +56,7 @@ var class_u_a_v_object =
     [ "category", "group___u_a_v_objects_plugin.html#gae96da3f59e51fb5c3ca43056bda4a63e", null ],
     [ "data", "group___u_a_v_objects_plugin.html#gadb2f4800bd3b6fb89c0f7c9fb67e49ff", null ],
     [ "description", "group___u_a_v_objects_plugin.html#gaeeb0e865791ad6b21d83ef571d1ce48b", null ],
-    [ "fields", "group___u_a_v_objects_plugin.html#gaafc65699167bc5cedfd058400e484df6", null ],
+    [ "fields", "group___u_a_v_objects_plugin.html#gae371ab30c21cdd286b387aa402c4789d", null ],
     [ "instID", "group___u_a_v_objects_plugin.html#gad8d656542a04e9fbef607ff178f6d9d3", null ],
     [ "isSingleInst", "group___u_a_v_objects_plugin.html#gaa279cad3a000cc930e7f386672426bcb", null ],
     [ "name", "group___u_a_v_objects_plugin.html#gadf898ed0961464f4a3f8e05fb28019f5", null ],

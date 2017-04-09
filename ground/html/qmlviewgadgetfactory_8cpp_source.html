@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,47 +132,44 @@ $(document).ready(function(){initNavTree('qmlviewgadgetfactory_8cpp_source.html'
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="qmlviewgadgetoptionspage_8h.html">qmlviewgadgetoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e">   33</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e">QmlViewGadgetFactory::QmlViewGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          tr(<span class="stringliteral">&quot;QML Viewer, QML&quot;</span>),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          parent)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">   40</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">QmlViewGadgetFactory::~QmlViewGadgetFactory</a>()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">   44</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>* <a class="code" href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">QmlViewGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_qml_view_gadget_widget.html">QmlViewGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_widget.html">QmlViewGadgetWidget</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget.html">QmlViewGadget</a>(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">   50</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">QmlViewGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">   55</a></span>&#160;IOptionsPage *<a class="code" href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">QmlViewGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_options_page.html">QmlViewGadgetOptionsPage</a>(qobject_cast&lt;QmlViewGadgetConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e">   33</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e">QmlViewGadgetFactory::QmlViewGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>), tr(<span class="stringliteral">&quot;QML Viewer, QML&quot;</span>), parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">   38</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">QmlViewGadgetFactory::~QmlViewGadgetFactory</a>()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">   42</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">QmlViewGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_qml_view_gadget_widget.html">QmlViewGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_widget.html">QmlViewGadgetWidget</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget.html">QmlViewGadget</a>(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">   48</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">QmlViewGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;QmlViewGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">   53</a></span>&#160;IOptionsPage *<a class="code" href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">QmlViewGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_qml_view_gadget_options_page.html">QmlViewGadgetOptionsPage</a>(qobject_cast&lt;QmlViewGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="class_qml_view_gadget_configuration_html"><div class="ttname"><a href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00034">qmlviewgadgetconfiguration.h:34</a></div></div>
 <div class="ttc" id="class_qml_view_gadget_html"><div class="ttname"><a href="class_qml_view_gadget.html">QmlViewGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadget_8h_source.html#l00040">qmlviewgadget.h:40</a></div></div>
 <div class="ttc" id="qmlviewgadgetfactory_8h_html"><div class="ttname"><a href="qmlviewgadgetfactory_8h.html">qmlviewgadgetfactory.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga2ae87f4b2a912a2e38fe69c6b8b3e3e7"><div class="ttname"><a href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">QmlViewGadgetFactory::~QmlViewGadgetFactory</a></div><div class="ttdeci">~QmlViewGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00040">qmlviewgadgetfactory.cpp:40</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga2ae87f4b2a912a2e38fe69c6b8b3e3e7"><div class="ttname"><a href="group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7">QmlViewGadgetFactory::~QmlViewGadgetFactory</a></div><div class="ttdeci">~QmlViewGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00038">qmlviewgadgetfactory.cpp:38</a></div></div>
 <div class="ttc" id="qmlviewgadgetoptionspage_8h_html"><div class="ttname"><a href="qmlviewgadgetoptionspage_8h.html">qmlviewgadgetoptionspage.h</a></div></div>
 <div class="ttc" id="qmlviewgadget_8h_html"><div class="ttname"><a href="qmlviewgadget_8h.html">qmlviewgadget.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga9000c14dd19e5dbc8e5c8e2ed26b2553"><div class="ttname"><a href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">QmlViewGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00050">qmlviewgadgetfactory.cpp:50</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gab0af6f5774c846fe82b1b073cf0bbb76"><div class="ttname"><a href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">QmlViewGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00055">qmlviewgadgetfactory.cpp:55</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga9000c14dd19e5dbc8e5c8e2ed26b2553"><div class="ttname"><a href="group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553">QmlViewGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00048">qmlviewgadgetfactory.cpp:48</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_gab0af6f5774c846fe82b1b073cf0bbb76"><div class="ttname"><a href="group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76">QmlViewGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00053">qmlviewgadgetfactory.cpp:53</a></div></div>
 <div class="ttc" id="qmlviewgadgetconfiguration_8h_html"><div class="ttname"><a href="qmlviewgadgetconfiguration_8h.html">qmlviewgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="class_qml_view_gadget_options_page_html"><div class="ttname"><a href="class_qml_view_gadget_options_page.html">QmlViewGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8h_source.html#l00047">qmlviewgadgetoptionspage.h:47</a></div></div>
 <div class="ttc" id="qmlviewgadgetwidget_8h_html"><div class="ttname"><a href="qmlviewgadgetwidget_8h.html">qmlviewgadgetwidget.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gadceaaa6e9f968a951f33f6c1a7de1340"><div class="ttname"><a href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">QmlViewGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00044">qmlviewgadgetfactory.cpp:44</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_gadceaaa6e9f968a951f33f6c1a7de1340"><div class="ttname"><a href="group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340">QmlViewGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00042">qmlviewgadgetfactory.cpp:42</a></div></div>
 <div class="ttc" id="class_qml_view_gadget_widget_html"><div class="ttname"><a href="class_qml_view_gadget_widget.html">QmlViewGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetwidget_8h_source.html#l00042">qmlviewgadgetwidget.h:42</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga84b7aa224d691ff4283bf3201a8f3b5e"><div class="ttname"><a href="group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e">QmlViewGadgetFactory::QmlViewGadgetFactory</a></div><div class="ttdeci">QmlViewGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetfactory_8cpp_source.html#l00033">qmlviewgadgetfactory.cpp:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

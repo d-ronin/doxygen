@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -135,23 +135,24 @@ $(document).ready(function(){initNavTree('summarypage_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="class_summary_page.html">SummaryPage</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_summary_page.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_summary_page.html">SummaryPage</a> : <span class="keyword">public</span> <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent = 0);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2">~SummaryPage</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___setup_wizard.html#ga4ae44b0f8e7ea5786172b19103d9a1af">validatePage</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga78bc91ccb12e3cce67b078982da92ac0">initializePage</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Ui::SummaryPage *ui;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> showDiagram();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // SUMMARYPAGE_H</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_summary_page.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_summary_page.html">SummaryPage</a> : <span class="keyword">public</span> <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2">~SummaryPage</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___setup_wizard.html#ga4ae44b0f8e7ea5786172b19103d9a1af">validatePage</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga78bc91ccb12e3cce67b078982da92ac0">initializePage</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Ui::SummaryPage *ui;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> showDiagram();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // SUMMARYPAGE_H</span></div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga78bc91ccb12e3cce67b078982da92ac0"><div class="ttname"><a href="group___setup_wizard.html#ga78bc91ccb12e3cce67b078982da92ac0">SummaryPage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8cpp_source.html#l00051">summarypage.cpp:51</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_gac0ed5703bf2053761d8269cc674138ed"><div class="ttname"><a href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage::SummaryPage</a></div><div class="ttdeci">SummaryPage(SetupWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8cpp_source.html#l00033">summarypage.cpp:33</a></div></div>

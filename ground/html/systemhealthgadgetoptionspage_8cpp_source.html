@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -134,47 +134,47 @@ $(document).ready(function(){initNavTree('systemhealthgadgetoptionspage_8cpp_sou
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QtAlgorithms&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaa498d06c1c8158466c564b455b1044dc">   35</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gaa498d06c1c8158466c564b455b1044dc">SystemHealthGadgetOptionsPage::SystemHealthGadgetOptionsPage</a>(<a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a> *config, QObject *parent) :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        IOptionsPage(parent),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        m_config(config)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//creates options page widget (uses the UI file)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">   42</a></span>&#160;QWidget *<a class="code" href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">SystemHealthGadgetOptionsPage::createPage</a>(QWidget *parent)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_UNUSED(parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    options_page = <span class="keyword">new</span> Ui::SystemHealthGadgetOptionsPage();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//main widget</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//main layout</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setExpectedKind(Utils::PathChooser::File);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;SVG image (*.svg)&quot;</span>));</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose SVG image&quot;</span>));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPath(m_config-&gt;<a class="code" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">getSystemFile</a>());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">SystemHealthGadgetOptionsPage::apply</a>()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    m_config-&gt;<a class="code" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">setSystemFile</a>(options_page-&gt;svgFilePathChooser-&gt;path());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaa498d06c1c8158466c564b455b1044dc">   35</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gaa498d06c1c8158466c564b455b1044dc">SystemHealthGadgetOptionsPage::SystemHealthGadgetOptionsPage</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a> *config, QObject *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    : IOptionsPage(parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_config(config)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// creates options page widget (uses the UI file)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">   43</a></span>&#160;QWidget *<a class="code" href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">SystemHealthGadgetOptionsPage::createPage</a>(QWidget *parent)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Q_UNUSED(parent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    options_page = <span class="keyword">new</span> Ui::SystemHealthGadgetOptionsPage();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// main widget</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// main layout</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setExpectedKind(Utils::PathChooser::File);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;SVG image (*.svg)&quot;</span>));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose SVG image&quot;</span>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    options_page-&gt;svgFilePathChooser-&gt;setPath(m_config-&gt;<a class="code" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">getSystemFile</a>());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">SystemHealthGadgetOptionsPage::apply</a>()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    m_config-&gt;<a class="code" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">setSystemFile</a>(options_page-&gt;svgFilePathChooser-&gt;path());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gabcd1e79513ea408e8c9c6ab98baf6d7f">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___system_health_plugin.html#gabcd1e79513ea408e8c9c6ab98baf6d7f">SystemHealthGadgetOptionsPage::finish</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">delete</span> options_page;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="ttc" id="systemhealthgadgetoptionspage_8h_html"><div class="ttname"><a href="systemhealthgadgetoptionspage_8h.html">systemhealthgadgetoptionspage.h</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_ga4807e799ef6d19b807497d0c74295b32"><div class="ttname"><a href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">SystemHealthGadgetConfiguration::getSystemFile</a></div><div class="ttdeci">QString getSystemFile()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00047">systemhealthgadgetconfiguration.h:47</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_gae877ad975152eb4b4df1076138610d0e"><div class="ttname"><a href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">SystemHealthGadgetConfiguration::setSystemFile</a></div><div class="ttdeci">void setSystemFile(QString filename)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00044">systemhealthgadgetconfiguration.h:44</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga4807e799ef6d19b807497d0c74295b32"><div class="ttname"><a href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">SystemHealthGadgetConfiguration::getSystemFile</a></div><div class="ttdeci">QString getSystemFile()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00048">systemhealthgadgetconfiguration.h:48</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_gae877ad975152eb4b4df1076138610d0e"><div class="ttname"><a href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">SystemHealthGadgetConfiguration::setSystemFile</a></div><div class="ttdeci">void setSystemFile(QString filename)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00045">systemhealthgadgetconfiguration.h:45</a></div></div>
 <div class="ttc" id="group___system_health_plugin_html_gabcd1e79513ea408e8c9c6ab98baf6d7f"><div class="ttname"><a href="group___system_health_plugin.html#gabcd1e79513ea408e8c9c6ab98baf6d7f">SystemHealthGadgetOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00072">systemhealthgadgetoptionspage.cpp:72</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_gaff59ee5d1057c119bc98e72b972cdc77"><div class="ttname"><a href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">SystemHealthGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00066">systemhealthgadgetoptionspage.cpp:66</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_ga6ac5a910e1fb73f88186c7602a7425b0"><div class="ttname"><a href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">SystemHealthGadgetOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00042">systemhealthgadgetoptionspage.cpp:42</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_gaff59ee5d1057c119bc98e72b972cdc77"><div class="ttname"><a href="group___system_health_plugin.html#gaff59ee5d1057c119bc98e72b972cdc77">SystemHealthGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00067">systemhealthgadgetoptionspage.cpp:67</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga6ac5a910e1fb73f88186c7602a7425b0"><div class="ttname"><a href="group___system_health_plugin.html#ga6ac5a910e1fb73f88186c7602a7425b0">SystemHealthGadgetOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00043">systemhealthgadgetoptionspage.cpp:43</a></div></div>
 <div class="ttc" id="class_system_health_gadget_configuration_html"><div class="ttname"><a href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00037">systemhealthgadgetconfiguration.h:37</a></div></div>
 <div class="ttc" id="systemhealthgadgetconfiguration_8h_html"><div class="ttname"><a href="systemhealthgadgetconfiguration_8h.html">systemhealthgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___system_health_plugin_html_gaa498d06c1c8158466c564b455b1044dc"><div class="ttname"><a href="group___system_health_plugin.html#gaa498d06c1c8158466c564b455b1044dc">SystemHealthGadgetOptionsPage::SystemHealthGadgetOptionsPage</a></div><div class="ttdeci">SystemHealthGadgetOptionsPage(SystemHealthGadgetConfiguration *config, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetoptionspage_8cpp_source.html#l00035">systemhealthgadgetoptionspage.cpp:35</a></div></div>

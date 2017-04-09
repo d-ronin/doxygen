@@ -75,7 +75,9 @@ var group___notify_plugin =
       [ "mo", "group___notify_plugin.html#ga2bcc6c8e1e4a48ddc812dc71a4035aaa", null ],
       [ "notify", "group___notify_plugin.html#ga82a15e7062562dabd14047b2e5398889", null ]
     ] ],
-    [ "SoundNotifyPlugin", "class_sound_notify_plugin.html", null ],
+    [ "SoundNotifyPlugin", "class_sound_notify_plugin.html", [
+      [ "updateNotificationList", "group___notify_plugin.html#ga272af3a9d33b7393c225b801bda43420", null ]
+    ] ],
     [ "NotifyPluginFactory", "class_notify_plugin_factory.html", [
       [ "NotifyPluginFactory", "group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126", null ],
       [ "~NotifyPluginFactory", "group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a", null ],
@@ -113,6 +115,7 @@ var group___notify_plugin =
       [ "dragRows", "group___notify_plugin.html#ga87b02089128dd9f2eddbd2e70040201f", null ],
       [ "dropMimeData", "group___notify_plugin.html#ga623fe8a3346c4c0565352170fc44c4a9", null ],
       [ "entryAdded", "group___notify_plugin.html#gaa28f89364ed3f06a9e1ab36b51216b65", null ],
+      [ "entryUpdated", "group___notify_plugin.html#gab017944a3f081cdab810c722a3485517", null ],
       [ "flags", "group___notify_plugin.html#ga19b5a3d99feb4907b2332962b1468b9f", null ],
       [ "headerData", "group___notify_plugin.html#gab211bb28323ebcede08ef838bc6b2789", null ],
       [ "insertRows", "group___notify_plugin.html#ga989fe66cec593e3ae8a3715160d4db33", null ],
@@ -265,5 +268,7 @@ var group___notify_plugin =
     [ "sayOrderValues", "group___notify_plugin.html#ga856cd4e9d78e6c8900f9de74f0f25dac", null ],
     [ "dragRows", "group___notify_plugin.html#ga87b02089128dd9f2eddbd2e70040201f", null ],
     [ "entryUpdated", "group___notify_plugin.html#gacfc979fcc446bc951c04ba8741231190", null ],
-    [ "updateNotifications", "group___notify_plugin.html#gadbd273176d3047b997383d3791fcf3aa", null ]
+    [ "updateNotifications", "group___notify_plugin.html#gadbd273176d3047b997383d3791fcf3aa", null ],
+    [ "entryUpdated", "group___notify_plugin.html#gab017944a3f081cdab810c722a3485517", null ],
+    [ "updateNotificationList", "group___notify_plugin.html#ga272af3a9d33b7393c225b801bda43420", null ]
 ];

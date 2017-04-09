@@ -5,7 +5,6 @@ var searchData=
   ['objecttreeitem',['ObjectTreeItem',['../class_object_tree_item.html',1,'']]],
   ['objstruc',['objStruc',['../struct_telemetry_monitor_1_1obj_struc.html',1,'TelemetryMonitor']]],
   ['openpilotplugin',['OpenPilotPlugin',['../class_open_pilot_plugin.html',1,'']]],
-  ['opmap_5fedit_5fwaypoint_5fdialog',['opmap_edit_waypoint_dialog',['../classopmap__edit__waypoint__dialog.html',1,'']]],
   ['opmap_5fstatusbar_5fwidget',['opmap_statusbar_widget',['../classopmap__statusbar__widget.html',1,'']]],
   ['opmap_5fzoom_5fslider_5fwidget',['opmap_zoom_slider_widget',['../classopmap__zoom__slider__widget.html',1,'']]],
   ['opmapgadget',['OPMapGadget',['../class_o_p_map_gadget.html',1,'']]],

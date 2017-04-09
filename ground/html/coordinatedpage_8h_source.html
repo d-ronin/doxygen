@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,37 +142,38 @@ $(document).ready(function(){initNavTree('coordinatedpage_8h_source.html','');})
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span><a class="code" href="class_coordinated_page.html">CoordinatedPage</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_coordinated_page.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_coordinated_page.html">CoordinatedPage</a> : <span class="keyword">public</span> <a class="code" href="class_radio_probe_page.html">RadioProbePage</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="group___rfm_bind_wizard.html#gab5e7102edfa74c7bdfb45295b362ef70">CoordinatedPage</a>(RfmBindWizard *wizard, QWidget *parent = 0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga057b41ff1b550b4ac9758fdcb6fa359d">~CoordinatedPage</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#ga1f1ef56942da6c655f7f81592fc6e1ee">initializePage</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga76157bcf9d982a9c79c2c096d551dc80">isComplete</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga402ca92f31916c82a26ac04adc61aeb6">validatePage</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Ui::CoordinatedPage *ui;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> m_coordinatorConfigured;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> updateProbe(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> bindCoordinator();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // COORDINATEDPAGE_H</span></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga1f1ef56942da6c655f7f81592fc6e1ee"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga1f1ef56942da6c655f7f81592fc6e1ee">CoordinatedPage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00054">coordinatedpage.cpp:54</a></div></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_coordinated_page.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_coordinated_page.html">CoordinatedPage</a> : <span class="keyword">public</span> <a class="code" href="class_radio_probe_page.html">RadioProbePage</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="group___rfm_bind_wizard.html#gab5e7102edfa74c7bdfb45295b362ef70">CoordinatedPage</a>(RfmBindWizard *wizard, QWidget *parent = 0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga057b41ff1b550b4ac9758fdcb6fa359d">~CoordinatedPage</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#ga1f1ef56942da6c655f7f81592fc6e1ee">initializePage</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga76157bcf9d982a9c79c2c096d551dc80">isComplete</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga402ca92f31916c82a26ac04adc61aeb6">validatePage</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Ui::CoordinatedPage *ui;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> m_coordinatorConfigured;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> updateProbe(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> bindCoordinator();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // COORDINATEDPAGE_H</span></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga1f1ef56942da6c655f7f81592fc6e1ee"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga1f1ef56942da6c655f7f81592fc6e1ee">CoordinatedPage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00055">coordinatedpage.cpp:55</a></div></div>
 <div class="ttc" id="rfmbindwizard_8h_html"><div class="ttname"><a href="rfmbindwizard_8h.html">rfmbindwizard.h</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga76157bcf9d982a9c79c2c096d551dc80"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga76157bcf9d982a9c79c2c096d551dc80">CoordinatedPage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00059">coordinatedpage.cpp:59</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga402ca92f31916c82a26ac04adc61aeb6"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga402ca92f31916c82a26ac04adc61aeb6">CoordinatedPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00064">coordinatedpage.cpp:64</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga76157bcf9d982a9c79c2c096d551dc80"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga76157bcf9d982a9c79c2c096d551dc80">CoordinatedPage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00060">coordinatedpage.cpp:60</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga402ca92f31916c82a26ac04adc61aeb6"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga402ca92f31916c82a26ac04adc61aeb6">CoordinatedPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00065">coordinatedpage.cpp:65</a></div></div>
 <div class="ttc" id="radioprobepage_8h_html"><div class="ttname"><a href="radioprobepage_8h.html">radioprobepage.h</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_gab5e7102edfa74c7bdfb45295b362ef70"><div class="ttname"><a href="group___rfm_bind_wizard.html#gab5e7102edfa74c7bdfb45295b362ef70">CoordinatedPage::CoordinatedPage</a></div><div class="ttdeci">CoordinatedPage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00038">coordinatedpage.cpp:38</a></div></div>
 <div class="ttc" id="class_coordinated_page_html"><div class="ttname"><a href="class_coordinated_page.html">CoordinatedPage</a></div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8h_source.html#l00044">coordinatedpage.h:44</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga057b41ff1b550b4ac9758fdcb6fa359d"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga057b41ff1b550b4ac9758fdcb6fa359d">CoordinatedPage::~CoordinatedPage</a></div><div class="ttdeci">~CoordinatedPage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00049">coordinatedpage.cpp:49</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga057b41ff1b550b4ac9758fdcb6fa359d"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga057b41ff1b550b4ac9758fdcb6fa359d">CoordinatedPage::~CoordinatedPage</a></div><div class="ttdeci">~CoordinatedPage()</div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8cpp_source.html#l00050">coordinatedpage.cpp:50</a></div></div>
 <div class="ttc" id="class_radio_probe_page_html"><div class="ttname"><a href="class_radio_probe_page.html">RadioProbePage</a></div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8h_source.html#l00040">radioprobepage.h:40</a></div></div>
 <div class="ttc" id="connectionmanager_8h_html"><div class="ttname"><a href="connectionmanager_8h.html">connectionmanager.h</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>

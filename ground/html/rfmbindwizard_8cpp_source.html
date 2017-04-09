@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -137,62 +137,66 @@ $(document).ready(function(){initNavTree('rfmbindwizard_8cpp_source.html','');})
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>uploader;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;RfmBindWizard::RfmBindWizard(QWidget *parent) : QWizard(parent),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga70946b4f7e1ee094b1c8c41dbaeafd74">m_ppm</a>(false), <a class="code" href="group___rfm_bind_wizard.html#ga4638d5c2ba06f33a8c1d923bdc924fac">m_maxBps</a>(64000), <a class="code" href="group___rfm_bind_wizard.html#ga2aa6c5a84d0618a037908051dfe8069b">m_connectionManager</a>(0)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setWindowTitle(tr(<span class="stringliteral">&quot;RFM22b Binding Wizard&quot;</span>));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    setOption(QWizard::IndependentPages, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    setWizardStyle(QWizard::ModernStyle);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    setMinimumSize(600, 500);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    resize(600, 500);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    createPages();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___rfm_bind_wizard.html#gaebf072679a6084271f65ed5cd8664fb4">RfmBindWizard::nextId</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">switch</span> (currentId()) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::createPages()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>, <span class="keyword">new</span> <a class="code" href="class_t_l_start_page.html">TLStartPage</a>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>, <span class="keyword">new</span> <a class="code" href="class_configure_page.html">ConfigurePage</a>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>, <span class="keyword">new</span> <a class="code" href="class_coordinator_page.html">CoordinatorPage</a>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>, <span class="keyword">new</span> <a class="code" href="class_coordinated_page.html">CoordinatedPage</a>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>, <span class="keyword">new</span> <a class="code" href="class_t_l_end_page.html">TLEndPage</a>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    setStartId(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    connect(button(QWizard::CustomButton1), SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(customBackClicked()));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    setButtonText(QWizard::CustomButton1, buttonText(QWizard::BackButton));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QWizard::WizardButton&gt;</a> button_layout;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    button_layout &lt;&lt; QWizard::Stretch &lt;&lt; QWizard::CustomButton1 &lt;&lt; QWizard::NextButton &lt;&lt; QWizard::CancelButton &lt;&lt; QWizard::FinishButton;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    setButtonLayout(button_layout);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    connect(<span class="keyword">this</span>, SIGNAL(currentIdChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(pageChanged(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::customBackClicked()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    back();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;RfmBindWizard::RfmBindWizard(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : QWizard(parent)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    , <a class="code" href="group___rfm_bind_wizard.html#ga70946b4f7e1ee094b1c8c41dbaeafd74">m_ppm</a>(false)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    , <a class="code" href="group___rfm_bind_wizard.html#ga4638d5c2ba06f33a8c1d923bdc924fac">m_maxBps</a>(64000)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , <a class="code" href="group___rfm_bind_wizard.html#ga2aa6c5a84d0618a037908051dfe8069b">m_connectionManager</a>(0)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    setWindowTitle(tr(<span class="stringliteral">&quot;RFM22b Binding Wizard&quot;</span>));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    setOption(QWizard::IndependentPages, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    setWizardStyle(QWizard::ModernStyle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    setMinimumSize(600, 500);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    resize(600, 500);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    createPages();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___rfm_bind_wizard.html#gaebf072679a6084271f65ed5cd8664fb4">RfmBindWizard::nextId</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">switch</span> (currentId()) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::createPages()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>, <span class="keyword">new</span> <a class="code" href="class_t_l_start_page.html">TLStartPage</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a00f247b30b557a3e18efd1d78ab46ab4">PAGE_CONFIGURE</a>, <span class="keyword">new</span> <a class="code" href="class_configure_page.html">ConfigurePage</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a4e270f4f00e20f733ff726099c87d5a6">PAGE_COORDINATOR</a>, <span class="keyword">new</span> <a class="code" href="class_coordinator_page.html">CoordinatorPage</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a>, <span class="keyword">new</span> <a class="code" href="class_coordinated_page.html">CoordinatedPage</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    setPage(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>, <span class="keyword">new</span> <a class="code" href="class_t_l_end_page.html">TLEndPage</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    setStartId(<a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    connect(button(QWizard::CustomButton1), &amp;QAbstractButton::clicked, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            &amp;RfmBindWizard::customBackClicked);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    setButtonText(QWizard::CustomButton1, buttonText(QWizard::BackButton));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QWizard::WizardButton&gt;</a> button_layout;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    button_layout &lt;&lt; QWizard::Stretch &lt;&lt; QWizard::CustomButton1 &lt;&lt; QWizard::NextButton</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  &lt;&lt; QWizard::CancelButton &lt;&lt; QWizard::FinishButton;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    setButtonLayout(button_layout);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    connect(<span class="keyword">this</span>, &amp;QWizard::currentIdChanged, <span class="keyword">this</span>, &amp;RfmBindWizard::pageChanged);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::pageChanged(<span class="keywordtype">int</span> currId)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::customBackClicked()</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    button(QWizard::CustomButton1)-&gt;setVisible(currId != <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    button(QWizard::CancelButton)-&gt;setVisible(currId != <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    back();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> RfmBindWizard::pageChanged(<span class="keywordtype">int</span> currId)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    button(QWizard::CustomButton1)-&gt;setVisible(currId != <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    button(QWizard::CancelButton)-&gt;setVisible(currId != <a class="code" href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 <div class="ttc" id="configurepage_8h_html"><div class="ttname"><a href="configurepage_8h.html">configurepage.h</a></div></div>
 <div class="ttc" id="class_t_l_end_page_html"><div class="ttname"><a href="class_t_l_end_page.html">TLEndPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8h_source.html#l00037">tlendpage.h:37</a></div></div>
 <div class="ttc" id="uploadergadgetfactory_8h_html"><div class="ttname"><a href="uploadergadgetfactory_8h.html">uploadergadgetfactory.h</a></div></div>
@@ -208,7 +212,7 @@ $(document).ready(function(){initNavTree('rfmbindwizard_8cpp_source.html','');})
 <div class="ttc" id="coordinatedpage_8h_html"><div class="ttname"><a href="coordinatedpage_8h.html">coordinatedpage.h</a></div></div>
 <div class="ttc" id="class_coordinated_page_html"><div class="ttname"><a href="class_coordinated_page.html">CoordinatedPage</a></div><div class="ttdef"><b>Definition:</b> <a href="coordinatedpage_8h_source.html#l00044">coordinatedpage.h:44</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3"><div class="ttname"><a href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2fca4591070e35f79a40cd6b0b0205f3">PAGE_START</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_8h_source.html#l00096">rfmbindwizard.h:96</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30"><div class="ttname"><a href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a3dec3de5f2f63dadeb7e971a49280f30">PAGE_COORDINATED</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_8h_source.html#l00096">rfmbindwizard.h:96</a></div></div>
 <div class="ttc" id="class_configure_page_html"><div class="ttname"><a href="class_configure_page.html">ConfigurePage</a></div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8h_source.html#l00040">configurepage.h:40</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455"><div class="ttname"><a href="group___rfm_bind_wizard.html#ggac36f475ca5b446f4fde4c9b90bec77c8a82e429858e2344acb277006228f61455">PAGE_END</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_8h_source.html#l00096">rfmbindwizard.h:96</a></div></div>

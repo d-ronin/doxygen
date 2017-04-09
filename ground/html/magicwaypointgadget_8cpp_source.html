@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,26 +133,27 @@ $(document).ready(function(){initNavTree('magicwaypointgadget_8cpp_source.html',
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobject_8h.html">uavobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce">   34</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce">MagicWaypointGadget::MagicWaypointGadget</a>(QString classId, <a class="code" href="class_magic_waypoint_gadget_widget.html">MagicWaypointGadgetWidget</a> *widget, QWidget *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        IUAVGadget(classId, parent),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        m_widget(widget)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">   40</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">MagicWaypointGadget::~MagicWaypointGadget</a>()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">MagicWaypointGadget::loadConfiguration</a>(IUAVGadgetConfiguration* config)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Q_UNUSED(config);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga163d222d9f3681fe93e07da2800e97ae"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">MagicWaypointGadget::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadget_8cpp_source.html#l00045">magicwaypointgadget.cpp:45</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce">   34</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce">MagicWaypointGadget::MagicWaypointGadget</a>(QString classId, <a class="code" href="class_magic_waypoint_gadget_widget.html">MagicWaypointGadgetWidget</a> *widget,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                         QWidget *parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : IUAVGadget(classId, parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_widget(widget)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">   41</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">MagicWaypointGadget::~MagicWaypointGadget</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">MagicWaypointGadget::loadConfiguration</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_UNUSED(config);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga163d222d9f3681fe93e07da2800e97ae"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae">MagicWaypointGadget::loadConfiguration</a></div><div class="ttdeci">void loadConfiguration(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadget_8cpp_source.html#l00046">magicwaypointgadget.cpp:46</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_magic_waypoint_gadget_widget_html"><div class="ttname"><a href="class_magic_waypoint_gadget_widget.html">MagicWaypointGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadgetwidget_8h_source.html#l00036">magicwaypointgadgetwidget.h:36</a></div></div>
 <div class="ttc" id="magicwaypointgadget_8h_html"><div class="ttname"><a href="magicwaypointgadget_8h.html">magicwaypointgadget.h</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga7caf437fa3df4fc4c30bb259b16d5b89"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">MagicWaypointGadget::~MagicWaypointGadget</a></div><div class="ttdeci">~MagicWaypointGadget()</div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadget_8cpp_source.html#l00040">magicwaypointgadget.cpp:40</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga7caf437fa3df4fc4c30bb259b16d5b89"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89">MagicWaypointGadget::~MagicWaypointGadget</a></div><div class="ttdeci">~MagicWaypointGadget()</div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadget_8cpp_source.html#l00041">magicwaypointgadget.cpp:41</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga7c890e89a9d75c8e6498c9b894ba70ce"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce">MagicWaypointGadget::MagicWaypointGadget</a></div><div class="ttdeci">MagicWaypointGadget(QString classId, MagicWaypointGadgetWidget *widget, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="magicwaypointgadget_8cpp_source.html#l00034">magicwaypointgadget.cpp:34</a></div></div>
 <div class="ttc" id="magicwaypointgadgetwidget_8h_html"><div class="ttname"><a href="magicwaypointgadgetwidget_8h.html">magicwaypointgadgetwidget.h</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>

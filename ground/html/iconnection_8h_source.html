@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_list.html">QList &lt;IDevice *&gt;</a> availableDevices() = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_list.html">QList&lt;IDevice *&gt;</a> availableDevices() = 0;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> QIODevice *openDevice(<a class="code" href="class_core_1_1_i_device.html">IDevice</a> *device) = 0;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QString connectionName() = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">   71</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">shortName</a>() {<span class="keywordflow">return</span> connectionName();}</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">   71</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">shortName</a>() { <span class="keywordflow">return</span> connectionName(); }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">   77</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">suspendPolling</a>() {}</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">   78</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">resumePolling</a>() {}</div>
@@ -159,13 +159,13 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaa48b67f79a52bd003d32bb3b72232e95">   85</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#gaa48b67f79a52bd003d32bb3b72232e95">reconnect</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;signals:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> availableDevChanged(<a class="code" href="class_core_1_1_i_connection.html">IConnection</a> *);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">//namespace Core</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // ICONNECTION_H</span></div>
-<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00046">idevice.h:46</a></div></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> availableDevChanged(<a class="code" href="class_core_1_1_i_connection.html">IConnection</a> *);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // ICONNECTION_H</span></div>
+<div class="ttc" id="class_core_1_1_i_device_html"><div class="ttname"><a href="class_core_1_1_i_device.html">Core::IDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00045">idevice.h:45</a></div></div>
 <div class="ttc" id="class_core_1_1_i_connection_html"><div class="ttname"><a href="class_core_1_1_i_connection.html">Core::IConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00044">iconnection.h:44</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gac0a12e1d5a84be9528ce09595b424438"><div class="ttname"><a href="group___core_plugin.html#gac0a12e1d5a84be9528ce09595b424438">Core::IConnection::suspendPolling</a></div><div class="ttdeci">virtual void suspendPolling()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00077">iconnection.h:77</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5264be67cf0d9ca62aae564737389b1d"><div class="ttname"><a href="group___core_plugin.html#ga5264be67cf0d9ca62aae564737389b1d">Core::IConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00061">iconnection.h:61</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('iconnection_8h_source.html','');});
 <div class="ttc" id="core__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gae3937027985048723454f1ad7d118d1a"><div class="ttname"><a href="group___core_plugin.html#gae3937027985048723454f1ad7d118d1a">Core::IConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00078">iconnection.h:78</a></div></div>
 <div class="ttc" id="idevice_8h_html"><div class="ttname"><a href="idevice_8h.html">idevice.h</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gad436df0a83378128cb8034d83e6734f0"><div class="ttname"><a href="group___core_plugin.html#gad436df0a83378128cb8034d83e6734f0">Core::IConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="iconnection_8h_source.html#l00071">iconnection.h:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

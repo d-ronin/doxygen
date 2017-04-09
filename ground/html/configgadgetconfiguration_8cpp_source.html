@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -127,11 +127,11 @@ $(document).ready(function(){initNavTree('configgadgetconfiguration_8cpp_source.
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="configgadgetconfiguration_8h.html">configgadgetconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774">   28</a></span>&#160;<a class="code" href="group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774">ConfigGadgetConfiguration::ConfigGadgetConfiguration</a>(QString classId, QSettings* qSettings, QObject *parent) :</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    IUAVGadgetConfiguration(classId, parent)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_UNUSED(qSettings);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774">   28</a></span>&#160;<a class="code" href="group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774">ConfigGadgetConfiguration::ConfigGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                     QObject *parent)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_UNUSED(qSettings);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___config_plugin.html#gac237bebed60ca183ae60b2b4598acc47">   35</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___config_plugin.html#gac237bebed60ca183ae60b2b4598acc47">ConfigGadgetConfiguration::clone</a>()</div>
@@ -140,10 +140,11 @@ $(document).ready(function(){initNavTree('configgadgetconfiguration_8cpp_source.
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6b1f86f80d200736d29b69452e329040">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">ConfigGadgetConfiguration::saveConfig</a>(QSettings* settings)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_UNUSED(settings)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6b1f86f80d200736d29b69452e329040">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">ConfigGadgetConfiguration::saveConfig</a>(QSettings *settings)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_UNUSED(settings)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_gac953657221ba7fda967ada0408332641"><div class="ttname"><a href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">Core::IUAVGadgetConfiguration::classId</a></div><div class="ttdeci">QString classId()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00049">iuavgadgetconfiguration.h:49</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_ab3cd915d758008bd19d0f2428fbb354a"><div class="ttname"><a href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00257">uavobjecttemplate.m:257</a></div></div>
 <div class="ttc" id="class_config_gadget_configuration_html"><div class="ttname"><a href="class_config_gadget_configuration.html">ConfigGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadgetconfiguration_8h_source.html#l00033">configgadgetconfiguration.h:33</a></div></div>

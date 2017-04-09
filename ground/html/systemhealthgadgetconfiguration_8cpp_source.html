@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,29 +129,32 @@ $(document).ready(function(){initNavTree('systemhealthgadgetconfiguration_8cpp_s
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="systemhealthgadgetconfiguration_8h.html">systemhealthgadgetconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathutils_8h.html">utils/pathutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">   34</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">SystemHealthGadgetConfiguration::SystemHealthGadgetConfiguration</a>(QString classId, QSettings* qSettings, QObject *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    IUAVGadgetConfiguration(classId, parent),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    systemFile(<span class="stringliteral">&quot;Unknown&quot;</span>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//if a saved configuration exists load it</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span>(qSettings != 0) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        QString diagram= qSettings-&gt;value(<span class="stringliteral">&quot;diagram&quot;</span>).toString();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        systemFile = <a class="code" href="class_utils_1_1_path_utils.html">Utils::PathUtils</a>().<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">InsertDataPath</a>(diagram);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">   49</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">SystemHealthGadgetConfiguration::clone</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">SystemHealthGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m-&gt;systemFile=systemFile;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gabbb3ed58da74764c327a4933fbc81a53">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">SystemHealthGadgetConfiguration::saveConfig</a>(QSettings* qSettings)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString diagram = <a class="code" href="class_utils_1_1_path_utils.html">Utils::PathUtils</a>().<a class="code" href="class_utils_1_1_path_utils.html#ae13b2f08493b1d7ba3d640796a34a5c6">RemoveDataPath</a>(systemFile);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    qSettings-&gt;setValue(<span class="stringliteral">&quot;diagram&quot;</span>, diagram);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="ttc" id="group___system_health_plugin_html_gaec4d54c2f539b5bbead55affc7dd496c"><div class="ttname"><a href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">SystemHealthGadgetConfiguration::clone</a></div><div class="ttdeci">IUAVGadgetConfiguration * clone()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8cpp_source.html#l00049">systemhealthgadgetconfiguration.cpp:49</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">   34</a></span>&#160;<a class="code" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">SystemHealthGadgetConfiguration::SystemHealthGadgetConfiguration</a>(QString classId,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                 QSettings *qSettings,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                 QObject *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , systemFile(<span class="stringliteral">&quot;Unknown&quot;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// if a saved configuration exists load it</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (qSettings != 0) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QString diagram = qSettings-&gt;value(<span class="stringliteral">&quot;diagram&quot;</span>).toString();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        systemFile = <a class="code" href="class_utils_1_1_path_utils.html">Utils::PathUtils</a>().<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">InsertDataPath</a>(diagram);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">   51</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">SystemHealthGadgetConfiguration::clone</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___system_health_plugin.html#gae6898d57714b4d34fc5ddc5e47e3af2e">SystemHealthGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m-&gt;systemFile = systemFile;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gabbb3ed58da74764c327a4933fbc81a53">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">SystemHealthGadgetConfiguration::saveConfig</a>(QSettings *qSettings)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString diagram = <a class="code" href="class_utils_1_1_path_utils.html">Utils::PathUtils</a>().<a class="code" href="class_utils_1_1_path_utils.html#ae13b2f08493b1d7ba3d640796a34a5c6">RemoveDataPath</a>(systemFile);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    qSettings-&gt;setValue(<span class="stringliteral">&quot;diagram&quot;</span>, diagram);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="group___system_health_plugin_html_gaec4d54c2f539b5bbead55affc7dd496c"><div class="ttname"><a href="group___system_health_plugin.html#gaec4d54c2f539b5bbead55affc7dd496c">SystemHealthGadgetConfiguration::clone</a></div><div class="ttdeci">IUAVGadgetConfiguration * clone()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8cpp_source.html#l00051">systemhealthgadgetconfiguration.cpp:51</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gac953657221ba7fda967ada0408332641"><div class="ttname"><a href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">Core::IUAVGadgetConfiguration::classId</a></div><div class="ttdeci">QString classId()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00049">iuavgadgetconfiguration.h:49</a></div></div>
 <div class="ttc" id="pathutils_8h_html"><div class="ttname"><a href="pathutils_8h.html">pathutils.h</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_ab3cd915d758008bd19d0f2428fbb354a"><div class="ttname"><a href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00257">uavobjecttemplate.m:257</a></div></div>

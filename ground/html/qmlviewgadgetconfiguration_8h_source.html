@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -135,30 +135,31 @@ $(document).ready(function(){initNavTree('qmlviewgadgetconfiguration_8h_source.h
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_qml_view_gadget_configuration.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Q_OBJECT</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a>(QString classId, QSettings* qSettings = 0, QObject *parent = 0);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//set dial configuration functions</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">setDialFile</a>(QString dialFile){m_defaultDial=dialFile;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//get dial configuration functions</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">   44</a></span>&#160;    QString <a class="code" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">dialFile</a>() {<span class="keywordflow">return</span> m_defaultDial;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings* settings) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QString m_defaultDial; <span class="comment">// The name of the dial&#39;s SVG source file</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // QmlViewGADGETCONFIGURATION_H</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a>(QString classId, QSettings *qSettings = 0,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                        QObject *parent = 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// set dial configuration functions</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">setDialFile</a>(QString dialFile) { m_defaultDial = dialFile; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// get dial configuration functions</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">   45</a></span>&#160;    QString <a class="code" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">dialFile</a>() { <span class="keywordflow">return</span> m_defaultDial; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString m_defaultDial; <span class="comment">// The name of the dial&#39;s SVG source file</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // QmlViewGADGETCONFIGURATION_H</span></div>
 <div class="ttc" id="class_qml_view_gadget_configuration_html"><div class="ttname"><a href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00034">qmlviewgadgetconfiguration.h:34</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga797d73a96488915da65e8cd79ceac1fe"><div class="ttname"><a href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">QmlViewGadgetConfiguration::dialFile</a></div><div class="ttdeci">QString dialFile()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00044">qmlviewgadgetconfiguration.h:44</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga797d73a96488915da65e8cd79ceac1fe"><div class="ttname"><a href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">QmlViewGadgetConfiguration::dialFile</a></div><div class="ttdeci">QString dialFile()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00045">qmlviewgadgetconfiguration.h:45</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab86084dd3556b645fa8020dc33776d88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a></div><div class="ttdeci">UAVDataObject * clone(quint32 instID)</div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga3811e60e4028c59e57997daf43edc66a"><div class="ttname"><a href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">QmlViewGadgetConfiguration::setDialFile</a></div><div class="ttdeci">void setDialFile(QString dialFile)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00041">qmlviewgadgetconfiguration.h:41</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga3811e60e4028c59e57997daf43edc66a"><div class="ttname"><a href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">QmlViewGadgetConfiguration::setDialFile</a></div><div class="ttdeci">void setDialFile(QString dialFile)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00042">qmlviewgadgetconfiguration.h:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

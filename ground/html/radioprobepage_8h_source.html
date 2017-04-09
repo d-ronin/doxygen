@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -149,12 +149,12 @@ $(document).ready(function(){initNavTree('radioprobepage_8h_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *m_boardType;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a> *m_connectionManager;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QMap &lt;UAVObject*, Core::IBoardType*&gt; boardPluginMap;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QMap&lt;UAVObject *, Core::IBoardType *&gt; boardPluginMap;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QTimer probeTimer;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> m_allowProbing;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a>* <a class="code" href="group___rfm_bind_wizard.html#gab3adbfa1c6b06bb4aaa5dbadad985d7c">getBoardType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *<a class="code" href="group___rfm_bind_wizard.html#gab3adbfa1c6b06bb4aaa5dbadad985d7c">getBoardType</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#ga863641a730a868f086e25831ef0b970c">stopProbing</a>();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('radioprobepage_8h_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> probeRadio();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> transactionReceived(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*obj, <span class="keywordtype">bool</span> success);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> transactionReceived(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;signals:</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#gad64c5b476eee0634d189b1711dcfc156">probeChanged</a>(<span class="keywordtype">bool</span>);</div>
@@ -175,15 +175,15 @@ $(document).ready(function(){initNavTree('radioprobepage_8h_source.html','');});
 <div class="ttc" id="group___rfm_bind_wizard_html_gad64c5b476eee0634d189b1711dcfc156"><div class="ttname"><a href="group___rfm_bind_wizard.html#gad64c5b476eee0634d189b1711dcfc156">RadioProbePage::probeChanged</a></div><div class="ttdeci">void probeChanged(bool)</div><div class="ttdoc">Indicate probing of a board has changed. </div></div>
 <div class="ttc" id="rfmbindwizard_8h_html"><div class="ttname"><a href="rfmbindwizard_8h.html">rfmbindwizard.h</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga35de76ab4a59c7b2429c3b14ab6aa831"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga35de76ab4a59c7b2429c3b14ab6aa831">RadioProbePage::RadioProbePage</a></div><div class="ttdeci">RadioProbePage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8cpp_source.html#l00035">radioprobepage.cpp:35</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_gab3adbfa1c6b06bb4aaa5dbadad985d7c"><div class="ttname"><a href="group___rfm_bind_wizard.html#gab3adbfa1c6b06bb4aaa5dbadad985d7c">RadioProbePage::getBoardType</a></div><div class="ttdeci">Core::IBoardType * getBoardType() const </div><div class="ttdoc">Get the board device for probed radio board. </div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8cpp_source.html#l00075">radioprobepage.cpp:75</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_gab3adbfa1c6b06bb4aaa5dbadad985d7c"><div class="ttname"><a href="group___rfm_bind_wizard.html#gab3adbfa1c6b06bb4aaa5dbadad985d7c">RadioProbePage::getBoardType</a></div><div class="ttdeci">Core::IBoardType * getBoardType() const </div><div class="ttdoc">Get the board device for probed radio board. </div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8cpp_source.html#l00078">radioprobepage.cpp:78</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga863641a730a868f086e25831ef0b970c"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga863641a730a868f086e25831ef0b970c">RadioProbePage::stopProbing</a></div><div class="ttdeci">void stopProbing()</div><div class="ttdoc">Stop probing once configured. </div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8cpp_source.html#l00106">radioprobepage.cpp:106</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga863641a730a868f086e25831ef0b970c"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga863641a730a868f086e25831ef0b970c">RadioProbePage::stopProbing</a></div><div class="ttdeci">void stopProbing()</div><div class="ttdoc">Stop probing once configured. </div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8cpp_source.html#l00109">radioprobepage.cpp:109</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="class_radio_probe_page_html"><div class="ttname"><a href="class_radio_probe_page.html">RadioProbePage</a></div><div class="ttdef"><b>Definition:</b> <a href="radioprobepage_8h_source.html#l00040">radioprobepage.h:40</a></div></div>
-<div class="ttc" id="class_core_1_1_connection_manager_html"><div class="ttname"><a href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8h_source.html#l00089">connectionmanager.h:89</a></div></div>
+<div class="ttc" id="class_core_1_1_connection_manager_html"><div class="ttname"><a href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8h_source.html#l00095">connectionmanager.h:95</a></div></div>
 <div class="ttc" id="connectionmanager_8h_html"><div class="ttname"><a href="connectionmanager_8h.html">connectionmanager.h</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga8052dde953ae6e8932c64c6feafbc161"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga8052dde953ae6e8932c64c6feafbc161">RadioProbePage::connectionChanged</a></div><div class="ttdeci">void connectionChanged(QString)</div><div class="ttdoc">Indicate connection changed. </div></div>

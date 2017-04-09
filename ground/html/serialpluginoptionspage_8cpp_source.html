@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -111,105 +111,102 @@ $(document).ready(function(){initNavTree('serialpluginoptionspage_8cpp_source.ht
 </div><!--header-->
 <div class="contents">
 <a href="serialpluginoptionspage_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">* it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">* the Free Software Foundation; either version 3 of the License, or</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">* (at your option) any later version.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">* This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">* for more details.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">* You should have received a copy of the GNU General Public License along</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">* with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="serialpluginoptionspage_8h.html">serialpluginoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="serialpluginconfiguration_8h.html">serialpluginconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;ui_serialpluginoptions.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85">   33</a></span>&#160;<a class="code" href="group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85">SerialPluginOptionsPage::SerialPluginOptionsPage</a>(<a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a> *config, QObject *parent) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        IOptionsPage(parent),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_config(config)</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85">   33</a></span>&#160;<a class="code" href="group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85">SerialPluginOptionsPage::SerialPluginOptionsPage</a>(<a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a> *config, QObject *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : IOptionsPage(parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , m_config(config)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//creates options page widget (uses the UI file)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// creates options page widget (uses the UI file)</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga77331da48998f8e92c60751f5e2ab862">   40</a></span>&#160;QWidget *<a class="code" href="group___serial_plugin.html#ga77331da48998f8e92c60751f5e2ab862">SerialPluginOptionsPage::createPage</a>(QWidget *parent)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_UNUSED(parent);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    options_page = <span class="keyword">new</span> Ui::SerialPluginOptionsPage();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//main widget</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// main widget</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//main layout</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// main layout</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QStringList allowedSpeeds;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    allowedSpeeds&lt;&lt;<span class="stringliteral">&quot;1200&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    allowedSpeeds &lt;&lt; <span class="stringliteral">&quot;1200&quot;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;1800&quot;</span>              <span class="comment">//POSIX ONLY</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;1800&quot;</span> <span class="comment">// POSIX ONLY</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;2400&quot;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;4800&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;9600&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;2400&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;4800&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;9600&quot;</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;14400&quot;</span>             <span class="comment">//WINDOWS ONLY</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;14400&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;19200&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;38400&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;19200&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;38400&quot;</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;56000&quot;</span>             <span class="comment">//WINDOWS ONLY</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;56000&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;57600&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;57600&quot;</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;76800&quot;</span>             <span class="comment">//POSIX ONLY</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;76800&quot;</span> <span class="comment">// POSIX ONLY</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;115200&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;115200&quot;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>                 &lt;&lt;<span class="stringliteral">&quot;128000&quot;</span>            <span class="comment">//WINDOWS ONLY</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;230400&quot;</span>            <span class="comment">//WINDOWS ONLY</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;256000&quot;</span>            <span class="comment">//WINDOWS ONLY</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;460800&quot;</span>            <span class="comment">//WINDOWS ONLY</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                 &lt;&lt;<span class="stringliteral">&quot;921600&quot;</span>            <span class="comment">//WINDOWS ONLY</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>                  &lt;&lt; <span class="stringliteral">&quot;128000&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;230400&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;256000&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;460800&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;921600&quot;</span> <span class="comment">// WINDOWS ONLY</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>                   ;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>        ;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    options_page-&gt;cb_speed-&gt;addItems(allowedSpeeds);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    options_page-&gt;cb_speed-&gt;setCurrentIndex(options_page-&gt;cb_speed-&gt;findText(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>()));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    options_page-&gt;reconnectCB-&gt;setChecked(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">reconnect</a>());</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">SerialPluginOptionsPage::apply</a>()</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">setSpeed</a>(options_page-&gt;cb_speed-&gt;currentText());</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">setReconnect</a>(options_page-&gt;reconnectCB-&gt;isChecked());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0">savesettings</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">SerialPluginOptionsPage::finish</a>()</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">delete</span> options_page;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    options_page-&gt;cb_speed-&gt;addItems(allowedSpeeds);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    options_page-&gt;cb_speed-&gt;setCurrentIndex(options_page-&gt;cb_speed-&gt;findText(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>()));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    options_page-&gt;reconnectCB-&gt;setChecked(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">reconnect</a>());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">SerialPluginOptionsPage::apply</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">setSpeed</a>(options_page-&gt;cb_speed-&gt;currentText());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">setReconnect</a>(options_page-&gt;reconnectCB-&gt;isChecked());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0">savesettings</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">SerialPluginOptionsPage::finish</a>()</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">delete</span> options_page;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="group___serial_plugin_html_ga77331da48998f8e92c60751f5e2ab862"><div class="ttname"><a href="group___serial_plugin.html#ga77331da48998f8e92c60751f5e2ab862">SerialPluginOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00040">serialpluginoptionspage.cpp:40</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_serial_plugin_configuration_html"><div class="ttname"><a href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00038">serialpluginconfiguration.h:38</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga442981f9537c634cbc6bd160f30c0a8a"><div class="ttname"><a href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">SerialPluginOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00092">serialpluginoptionspage.cpp:92</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00043">serialpluginconfiguration.h:43</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga442981f9537c634cbc6bd160f30c0a8a"><div class="ttname"><a href="group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a">SerialPluginOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00091">serialpluginoptionspage.cpp:91</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00044">serialpluginconfiguration.h:44</a></div></div>
 <div class="ttc" id="serialpluginoptionspage_8h_html"><div class="ttname"><a href="serialpluginoptionspage_8h.html">serialpluginoptionspage.h</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_gabbba5e225f4b24b0ff2762edd89a7c85"><div class="ttname"><a href="group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85">SerialPluginOptionsPage::SerialPluginOptionsPage</a></div><div class="ttdeci">SerialPluginOptionsPage(SerialPluginConfiguration *config, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00033">serialpluginoptionspage.cpp:33</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga4a63c76785f20677382b69b52b9537f0"><div class="ttname"><a href="group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0">SerialPluginConfiguration::savesettings</a></div><div class="ttdeci">void savesettings() const </div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00081">serialpluginconfiguration.cpp:81</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga6e476e94e24bb1f9bf91de3c99ff00fc"><div class="ttname"><a href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">SerialPluginConfiguration::setSpeed</a></div><div class="ttdeci">void setSpeed(QString speed)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00055">serialpluginconfiguration.h:55</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga7d5463f2125597e0962512fde1cd83e4"><div class="ttname"><a href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">SerialPluginOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00101">serialpluginoptionspage.cpp:101</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga814b165a291785fc740353fafdfff545"><div class="ttname"><a href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">SerialPluginConfiguration::reconnect</a></div><div class="ttdeci">bool reconnect()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00044">serialpluginconfiguration.h:44</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga4a63c76785f20677382b69b52b9537f0"><div class="ttname"><a href="group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0">SerialPluginConfiguration::savesettings</a></div><div class="ttdeci">void savesettings() const </div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00083">serialpluginconfiguration.cpp:83</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga6e476e94e24bb1f9bf91de3c99ff00fc"><div class="ttname"><a href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">SerialPluginConfiguration::setSpeed</a></div><div class="ttdeci">void setSpeed(QString speed)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00057">serialpluginconfiguration.h:57</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga7d5463f2125597e0962512fde1cd83e4"><div class="ttname"><a href="group___serial_plugin.html#ga7d5463f2125597e0962512fde1cd83e4">SerialPluginOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8cpp_source.html#l00098">serialpluginoptionspage.cpp:98</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga814b165a291785fc740353fafdfff545"><div class="ttname"><a href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">SerialPluginConfiguration::reconnect</a></div><div class="ttdeci">bool reconnect()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00045">serialpluginconfiguration.h:45</a></div></div>
 <div class="ttc" id="serialpluginconfiguration_8h_html"><div class="ttname"><a href="serialpluginconfiguration_8h.html">serialpluginconfiguration.h</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga0c45ba367dc5fa8684b383a1a7a1c75d"><div class="ttname"><a href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">SerialPluginConfiguration::setReconnect</a></div><div class="ttdeci">void setReconnect(bool reconnect)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00056">serialpluginconfiguration.h:56</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga0c45ba367dc5fa8684b383a1a7a1c75d"><div class="ttname"><a href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">SerialPluginConfiguration::setReconnect</a></div><div class="ttdeci">void setReconnect(bool reconnect)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00058">serialpluginconfiguration.h:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

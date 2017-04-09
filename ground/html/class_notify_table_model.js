@@ -6,6 +6,7 @@ var class_notify_table_model =
     [ "dragRows", "group___notify_plugin.html#ga87b02089128dd9f2eddbd2e70040201f", null ],
     [ "dropMimeData", "group___notify_plugin.html#ga623fe8a3346c4c0565352170fc44c4a9", null ],
     [ "entryAdded", "group___notify_plugin.html#gaa28f89364ed3f06a9e1ab36b51216b65", null ],
+    [ "entryUpdated", "group___notify_plugin.html#gab017944a3f081cdab810c722a3485517", null ],
     [ "flags", "group___notify_plugin.html#ga19b5a3d99feb4907b2332962b1468b9f", null ],
     [ "headerData", "group___notify_plugin.html#gab211bb28323ebcede08ef838bc6b2789", null ],
     [ "insertRows", "group___notify_plugin.html#ga989fe66cec593e3ae8a3715160d4db33", null ],

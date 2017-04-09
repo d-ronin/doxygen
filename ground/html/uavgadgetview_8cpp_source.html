@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,35 +158,35 @@ $(document).ready(function(){initNavTree('uavgadgetview_8cpp_source.html','');})
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;using namespace Core;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;using namespace Core::Internal;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5d3c3cc0b5440e09c319b3ea9579385d">   62</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>::<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>(Core::<a class="code" href="class_core_1_1_u_a_v_gadget_manager.html">UAVGadgetManager</a> *uavGadgetManager, <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget, QWidget *parent, <span class="keywordtype">bool</span> restoring) :</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        QWidget(parent),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        m_uavGadgetManager(uavGadgetManager),</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        m_uavGadget(uavGadget),</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        m_toolBar(new QWidget(this)),</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        m_defaultToolBar(new QComboBox(this)),</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        m_uavGadgetList(new QComboBox(this)),</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        m_closeButton(new QToolButton(this)),</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        m_defaultIndex(0),</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        m_activeLabel(new QLabel)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    tl = <span class="keyword">new</span> QVBoxLayout(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    tl-&gt;setSpacing(0);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    tl-&gt;setMargin(0);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// Ugly hack to bypass Qt&#39;s styling antics regarding combobox flyouts.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        m_uavGadgetList-&gt;setView(<span class="keyword">new</span> QListView(m_uavGadgetList));</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        m_uavGadgetList-&gt;setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        m_uavGadgetList-&gt;setMinimumContentsLength(15);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        m_uavGadgetList-&gt;setMaxVisibleItems(40);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        m_uavGadgetList-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *im = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7">uavGadgetInstanceManager</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        QStringList sl = im-&gt;<a class="code" href="group___core_plugin.html#gab697e11f053f6a4e76f749a6aec7a7e9">classIds</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">bool</span> startFromOne = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">foreach</span>(QString classId, sl)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5d3c3cc0b5440e09c319b3ea9579385d">   62</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>::<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>(Core::<a class="code" href="class_core_1_1_u_a_v_gadget_manager.html">UAVGadgetManager</a> *uavGadgetManager, <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             QWidget *parent, <span class="keywordtype">bool</span> restoring)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    : QWidget(parent)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    , m_uavGadgetManager(uavGadgetManager)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    , m_uavGadget(uavGadget)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    , m_toolBar(new QWidget(this))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    , m_defaultToolBar(new QComboBox(this))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    , m_uavGadgetList(new QComboBox(this))</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    , m_closeButton(new QToolButton(this))</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    , m_defaultIndex(0)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    , m_activeLabel(new QLabel)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    tl = <span class="keyword">new</span> QVBoxLayout(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    tl-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    tl-&gt;setMargin(0);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">// Ugly hack to bypass Qt&#39;s styling antics regarding combobox flyouts.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        m_uavGadgetList-&gt;setView(<span class="keyword">new</span> QListView(m_uavGadgetList));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        m_uavGadgetList-&gt;setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        m_uavGadgetList-&gt;setMinimumContentsLength(15);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        m_uavGadgetList-&gt;setMaxVisibleItems(40);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        m_uavGadgetList-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *im = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7">uavGadgetInstanceManager</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        QStringList sl = im-&gt;<a class="code" href="group___core_plugin.html#gab697e11f053f6a4e76f749a6aec7a7e9">classIds</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> startFromOne = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">foreach</span> (QString classId, sl) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span> (classId == QString(<span class="stringliteral">&quot;EmptyGadget&quot;</span>)) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                m_defaultIndex = 0;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                startFromOne = <span class="keyword">true</span>;</div>
@@ -196,209 +196,212 @@ $(document).ready(function(){initNavTree('uavgadgetview_8cpp_source.html','');})
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = startFromOne ? 1 : 0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">for</span> ( ; i &lt; m_uavGadgetList-&gt;count(); i++)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordflow">if</span> (QString::localeAwareCompare(m_uavGadgetList-&gt;itemText(i), im-&gt;<a class="code" href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">gadgetName</a>(classId)) &gt; 0)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                m_uavGadgetList-&gt;insertItem(i, im-&gt;<a class="code" href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">gadgetName</a>(classId), classId);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                m_uavGadgetList-&gt;setItemIcon(i, im-&gt;<a class="code" href="group___core_plugin.html#ga9fdb135aaf62b1ebefb587934d545b3d">gadgetIcon</a>(classId));</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            ++index;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        m_defaultToolBar-&gt;setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        m_activeToolBar = m_defaultToolBar;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        QHBoxLayout *toolBarLayout = <span class="keyword">new</span> QHBoxLayout(m_toolBar);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        toolBarLayout-&gt;setMargin(0);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        toolBarLayout-&gt;setSpacing(0);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        toolBarLayout-&gt;addWidget(m_defaultToolBar);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        m_toolBar-&gt;setLayout(toolBarLayout);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        m_toolBar-&gt;setSizePolicy(QSizePolicy::Maximum, QSizePolicy::MinimumExpanding);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        QWidget *spacerWidget = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        spacerWidget-&gt;setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        m_activeLabel-&gt;setTextFormat(Qt::RichText);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        m_activeLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=#c0392b&gt;&lt;b&gt;&quot;</span> + tr(<span class="stringliteral">&quot;Active&quot;</span>) + <span class="stringliteral">&quot;&lt;/b&gt;&lt;/font&gt;&quot;</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        m_closeButton-&gt;setAutoRaise(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        m_closeButton-&gt;setIcon(QIcon(<span class="stringliteral">&quot;:/core/images/closebutton.png&quot;</span>));</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        m_top = <span class="keyword">new</span> <a class="code" href="class_utils_1_1_styled_bar.html">Utils::StyledBar</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        m_top-&gt;setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        QHBoxLayout *toplayout = <span class="keyword">new</span> QHBoxLayout(m_top);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        toplayout-&gt;setSpacing(0);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        toplayout-&gt;setMargin(0);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        toplayout-&gt;addWidget(m_uavGadgetList);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        toplayout-&gt;addWidget(m_toolBar); <span class="comment">// Custom toolbar stretches</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        toplayout-&gt;addWidget(spacerWidget);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        toplayout-&gt;addWidget(m_activeLabel);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        toplayout-&gt;addWidget(m_closeButton);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        m_top-&gt;setLayout(toplayout);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        tl-&gt;addWidget(m_top);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        connect(m_uavGadgetList, SIGNAL(activated(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">doReplaceGadget</a>(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        connect(m_closeButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">closeView</a>()), Qt::QueuedConnection);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        connect(m_uavGadgetManager, SIGNAL(currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>*)), <span class="keyword">this</span>, SLOT(currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>*)));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> (m_uavGadget) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">setGadget</a>(m_uavGadget);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (!restoring) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">selectionActivated</a>(m_defaultIndex, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">  159</a></span>&#160;<a class="code" href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">UAVGadgetView::~UAVGadgetView</a>()</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">removeGadget</a>();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">  164</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">UAVGadgetView::hasGadget</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> (m_uavGadget == uavGadget);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">  169</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">UAVGadgetView::showToolbar</a>(<span class="keywordtype">bool</span> show)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    m_top-&gt;setHidden(!show);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">  174</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">UAVGadgetView::closeView</a>()</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    m_uavGadgetManager-&gt;closeView(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">  179</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">UAVGadgetView::removeGadget</a>()</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!m_uavGadget)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    tl-&gt;removeWidget(m_uavGadget-&gt;widget());</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    m_uavGadget-&gt;setParent(0);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(0);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    QWidget *toolBar = m_uavGadget-&gt;toolBar();</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (toolBar != 0) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">if</span> (m_activeToolBar == toolBar) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            m_activeToolBar = m_defaultToolBar;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            m_activeToolBar-&gt;setVisible(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        m_toolBar-&gt;layout()-&gt;removeWidget(toolBar);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        toolBar-&gt;setParent(0);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    m_uavGadget = 0;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">  199</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">UAVGadgetView::gadget</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> m_uavGadget;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">  204</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">UAVGadgetView::setGadget</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget)</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (!uavGadget) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">removeGadget</a>();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    m_uavGadget = uavGadget;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    tl-&gt;addWidget(m_uavGadget-&gt;widget());</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    m_uavGadget-&gt;widget()-&gt;show();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">int</span> index = <a class="code" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">indexOfClassId</a>(m_uavGadget-&gt;classId());</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    Q_ASSERT(index &gt;= 0);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    m_uavGadgetList-&gt;setCurrentIndex(index);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    updateToolBar();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">for</span> (; i &lt; m_uavGadgetList-&gt;count(); i++) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">if</span> (QString::localeAwareCompare(m_uavGadgetList-&gt;itemText(i),</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                    im-&gt;<a class="code" href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">gadgetName</a>(classId))</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        &gt; 0)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                m_uavGadgetList-&gt;insertItem(i, im-&gt;<a class="code" href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">gadgetName</a>(classId), classId);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                m_uavGadgetList-&gt;setItemIcon(i, im-&gt;<a class="code" href="group___core_plugin.html#ga9fdb135aaf62b1ebefb587934d545b3d">gadgetIcon</a>(classId));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            ++index;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        m_defaultToolBar-&gt;setSizePolicy(QSizePolicy::MinimumExpanding,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                        QSizePolicy::MinimumExpanding);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        m_activeToolBar = m_defaultToolBar;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        QHBoxLayout *toolBarLayout = <span class="keyword">new</span> QHBoxLayout(m_toolBar);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        toolBarLayout-&gt;setMargin(0);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        toolBarLayout-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        toolBarLayout-&gt;addWidget(m_defaultToolBar);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        m_toolBar-&gt;setLayout(toolBarLayout);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        m_toolBar-&gt;setSizePolicy(QSizePolicy::Maximum, QSizePolicy::MinimumExpanding);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        QWidget *spacerWidget = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        spacerWidget-&gt;setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        m_activeLabel-&gt;setTextFormat(Qt::RichText);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        m_activeLabel-&gt;setText(<span class="stringliteral">&quot;&lt;font color=#c0392b&gt;&lt;b&gt;&quot;</span> + tr(<span class="stringliteral">&quot;Active&quot;</span>) + <span class="stringliteral">&quot;&lt;/b&gt;&lt;/font&gt;&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        m_closeButton-&gt;setAutoRaise(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        m_closeButton-&gt;setIcon(QIcon(<span class="stringliteral">&quot;:/core/images/closebutton.png&quot;</span>));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        m_top = <span class="keyword">new</span> <a class="code" href="class_utils_1_1_styled_bar.html">Utils::StyledBar</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        m_top-&gt;setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        QHBoxLayout *toplayout = <span class="keyword">new</span> QHBoxLayout(m_top);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        toplayout-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        toplayout-&gt;setMargin(0);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        toplayout-&gt;addWidget(m_uavGadgetList);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        toplayout-&gt;addWidget(m_toolBar); <span class="comment">// Custom toolbar stretches</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        toplayout-&gt;addWidget(spacerWidget);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        toplayout-&gt;addWidget(m_activeLabel);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        toplayout-&gt;addWidget(m_closeButton);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        m_top-&gt;setLayout(toplayout);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        tl-&gt;addWidget(m_top);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        connect(m_uavGadgetList, SIGNAL(activated(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">doReplaceGadget</a>(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        connect(m_closeButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">closeView</a>()), Qt::QueuedConnection);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        connect(m_uavGadgetManager, SIGNAL(currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *)), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                SLOT(currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *)));</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (m_uavGadget) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">setGadget</a>(m_uavGadget);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span> (!restoring) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">selectionActivated</a>(m_defaultIndex, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">  162</a></span>&#160;<a class="code" href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">UAVGadgetView::~UAVGadgetView</a>()</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">removeGadget</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">  167</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">UAVGadgetView::hasGadget</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> (m_uavGadget == uavGadget);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">  172</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">UAVGadgetView::showToolbar</a>(<span class="keywordtype">bool</span> show)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    m_top-&gt;setHidden(!show);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">  177</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">UAVGadgetView::closeView</a>()</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    m_uavGadgetManager-&gt;closeView(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">  182</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">UAVGadgetView::removeGadget</a>()</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (!m_uavGadget)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    tl-&gt;removeWidget(m_uavGadget-&gt;widget());</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    m_uavGadget-&gt;setParent(0);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(0);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    QWidget *toolBar = m_uavGadget-&gt;toolBar();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (toolBar != 0) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (m_activeToolBar == toolBar) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            m_activeToolBar = m_defaultToolBar;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            m_activeToolBar-&gt;setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        m_toolBar-&gt;layout()-&gt;removeWidget(toolBar);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        toolBar-&gt;setParent(0);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    m_uavGadget = 0;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">  202</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">UAVGadgetView::gadget</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">return</span> m_uavGadget;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">  207</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">UAVGadgetView::setGadget</a>(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span> (!uavGadget) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">removeGadget</a>();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    m_uavGadget = uavGadget;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    tl-&gt;addWidget(m_uavGadget-&gt;widget());</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    m_uavGadget-&gt;widget()-&gt;show();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">int</span> index = <a class="code" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">indexOfClassId</a>(m_uavGadget-&gt;classId());</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    Q_ASSERT(index &gt;= 0);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    m_uavGadgetList-&gt;setCurrentIndex(index);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordtype">void</span> UAVGadgetView::updateToolBar()</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span> (!m_uavGadget)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    QComboBox *toolBar = m_uavGadget-&gt;toolBar();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (!toolBar)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        toolBar = m_defaultToolBar;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (m_activeToolBar == toolBar)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (toolBar-&gt;count() == 0)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        toolBar-&gt;hide();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">// Ugly hack to bypass Qt&#39;s styling antics regarding combobox flyouts.</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    toolBar-&gt;setView(<span class="keyword">new</span> QListView(toolBar));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    updateToolBar();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">void</span> UAVGadgetView::updateToolBar()</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (!m_uavGadget)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    QComboBox *toolBar = m_uavGadget-&gt;toolBar();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (!toolBar)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        toolBar = m_defaultToolBar;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (m_activeToolBar == toolBar)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">if</span> (toolBar-&gt;count() == 0)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        toolBar-&gt;hide();</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    m_toolBar-&gt;layout()-&gt;addWidget(toolBar);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    m_activeToolBar-&gt;setVisible(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    m_activeToolBar = toolBar;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">  248</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">UAVGadgetView::selectionActivated</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> forceLoadConfiguration)</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">if</span> (index &lt; 0) <span class="comment">// this could happen when called from SplitterOrView::restoreState()</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        index = m_defaultIndex;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    QString classId = m_uavGadgetList-&gt;itemData(index).toString();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">if</span> (m_uavGadget &amp;&amp; (m_uavGadget-&gt;classId() == classId))</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *im = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7">uavGadgetInstanceManager</a>();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *gadgetToRemove = m_uavGadget;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">gadget</a> = im-&gt;<a class="code" href="group___core_plugin.html#gad41f7fe2da8919a8221a4e20bc106a5f">createGadget</a>(classId, <span class="keyword">this</span>, forceLoadConfiguration);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">setGadget</a>(gadget);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    m_uavGadgetManager-&gt;setCurrentGadget(gadget);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    im-&gt;<a class="code" href="group___core_plugin.html#ga204deab3f77d2ebe76925ffd5600e6c7">removeGadget</a>(gadgetToRemove);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">  268</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">UAVGadgetView::doReplaceGadget</a>(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">selectionActivated</a>(index, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">  273</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">UAVGadgetView::indexOfClassId</a>(QString classId)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">return</span> m_uavGadgetList-&gt;findData(classId);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">void</span> UAVGadgetView::currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">gadget</a>)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    m_activeLabel-&gt;setVisible(m_uavGadget == gadget);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">// Ugly hack to bypass Qt&#39;s styling antics regarding combobox flyouts.</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    toolBar-&gt;setView(<span class="keyword">new</span> QListView(toolBar));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    m_toolBar-&gt;layout()-&gt;addWidget(toolBar);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    m_activeToolBar-&gt;setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    m_activeToolBar = toolBar;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">  252</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">UAVGadgetView::selectionActivated</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> forceLoadConfiguration)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">if</span> (index &lt; 0) <span class="comment">// this could happen when called from SplitterOrView::restoreState()</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        index = m_defaultIndex;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    QString classId = m_uavGadgetList-&gt;itemData(index).toString();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span> (m_uavGadget &amp;&amp; (m_uavGadget-&gt;classId() == classId))</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="class_core_1_1_u_a_v_gadget_instance_manager.html">UAVGadgetInstanceManager</a> *im = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7">uavGadgetInstanceManager</a>();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *gadgetToRemove = m_uavGadget;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">gadget</a> = im-&gt;<a class="code" href="group___core_plugin.html#gad41f7fe2da8919a8221a4e20bc106a5f">createGadget</a>(classId, <span class="keyword">this</span>, forceLoadConfiguration);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <a class="code" href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">setGadget</a>(gadget);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    m_uavGadgetManager-&gt;setCurrentGadget(gadget);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    im-&gt;<a class="code" href="group___core_plugin.html#ga204deab3f77d2ebe76925ffd5600e6c7">removeGadget</a>(gadgetToRemove);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">  272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">UAVGadgetView::doReplaceGadget</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">selectionActivated</a>(index, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">  277</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">UAVGadgetView::indexOfClassId</a>(QString classId)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">return</span> m_uavGadgetList-&gt;findData(classId);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keywordtype">void</span> UAVGadgetView::currentGadgetChanged(<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">gadget</a>)</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    m_activeLabel-&gt;setVisible(m_uavGadget == gadget);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="uavgadgetview_8h_html"><div class="ttname"><a href="uavgadgetview_8h.html">uavgadgetview.h</a></div></div>
 <div class="ttc" id="minisplitter_8h_html"><div class="ttname"><a href="minisplitter_8h.html">minisplitter.h</a></div></div>
 <div class="ttc" id="qtcassert_8h_html"><div class="ttname"><a href="qtcassert_8h.html">qtcassert.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga27a04df5393730644b5b522cb538b5f7"><div class="ttname"><a href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">Core::Internal::UAVGadgetView::doReplaceGadget</a></div><div class="ttdeci">void doReplaceGadget(int index)</div><div class="ttdoc">Slot called when the user changes the selected gadget on the view&#39;s dropbox. </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00268">uavgadgetview.cpp:268</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga0d98a8e6e0902672ffc3c977fbebb7b6"><div class="ttname"><a href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">Core::Internal::UAVGadgetView::showToolbar</a></div><div class="ttdeci">void showToolbar(bool show)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00169">uavgadgetview.cpp:169</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga9fdb135aaf62b1ebefb587934d545b3d"><div class="ttname"><a href="group___core_plugin.html#ga9fdb135aaf62b1ebefb587934d545b3d">Core::UAVGadgetInstanceManager::gadgetIcon</a></div><div class="ttdeci">QIcon gadgetIcon(QString classId) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00484">uavgadgetinstancemanager.cpp:484</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga6b3bf8413c3b5d8d7eba4b046104a42c"><div class="ttname"><a href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">Core::Internal::UAVGadgetView::indexOfClassId</a></div><div class="ttdeci">int indexOfClassId(QString classId)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00273">uavgadgetview.cpp:273</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga61a5d78cd9753fa2d7521c742bdc1c99"><div class="ttname"><a href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">Core::Internal::UAVGadgetView::gadget</a></div><div class="ttdeci">IUAVGadget * gadget() const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00199">uavgadgetview.cpp:199</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga27a04df5393730644b5b522cb538b5f7"><div class="ttname"><a href="group___core_plugin.html#ga27a04df5393730644b5b522cb538b5f7">Core::Internal::UAVGadgetView::doReplaceGadget</a></div><div class="ttdeci">void doReplaceGadget(int index)</div><div class="ttdoc">Slot called when the user changes the selected gadget on the view&#39;s dropbox. </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00272">uavgadgetview.cpp:272</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga0d98a8e6e0902672ffc3c977fbebb7b6"><div class="ttname"><a href="group___core_plugin.html#ga0d98a8e6e0902672ffc3c977fbebb7b6">Core::Internal::UAVGadgetView::showToolbar</a></div><div class="ttdeci">void showToolbar(bool show)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00172">uavgadgetview.cpp:172</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga9fdb135aaf62b1ebefb587934d545b3d"><div class="ttname"><a href="group___core_plugin.html#ga9fdb135aaf62b1ebefb587934d545b3d">Core::UAVGadgetInstanceManager::gadgetIcon</a></div><div class="ttdeci">QIcon gadgetIcon(QString classId) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00488">uavgadgetinstancemanager.cpp:488</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga6b3bf8413c3b5d8d7eba4b046104a42c"><div class="ttname"><a href="group___core_plugin.html#ga6b3bf8413c3b5d8d7eba4b046104a42c">Core::Internal::UAVGadgetView::indexOfClassId</a></div><div class="ttdeci">int indexOfClassId(QString classId)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00277">uavgadgetview.cpp:277</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga61a5d78cd9753fa2d7521c742bdc1c99"><div class="ttname"><a href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">Core::Internal::UAVGadgetView::gadget</a></div><div class="ttdeci">IUAVGadget * gadget() const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00202">uavgadgetview.cpp:202</a></div></div>
 <div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="actionmanager_8h.html">actionmanager.h</a></div></div>
 <div class="ttc" id="uavgadgetmanager_8h_html"><div class="ttname"><a href="uavgadgetmanager_8h.html">uavgadgetmanager.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gad41f7fe2da8919a8221a4e20bc106a5f"><div class="ttname"><a href="group___core_plugin.html#gad41f7fe2da8919a8221a4e20bc106a5f">Core::UAVGadgetInstanceManager::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QString classId, QWidget *parent, bool forceLoadConfiguration=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00265">uavgadgetinstancemanager.cpp:265</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gad41f7fe2da8919a8221a4e20bc106a5f"><div class="ttname"><a href="group___core_plugin.html#gad41f7fe2da8919a8221a4e20bc106a5f">Core::UAVGadgetInstanceManager::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QString classId, QWidget *parent, bool forceLoadConfiguration=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00257">uavgadgetinstancemanager.cpp:257</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaff786c8d73de45a91dd8d696e60ccf7d"><div class="ttname"><a href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">Core::Internal::UAVGadgetView::closeView</a></div><div class="ttdeci">void closeView()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00174">uavgadgetview.cpp:174</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaff786c8d73de45a91dd8d696e60ccf7d"><div class="ttname"><a href="group___core_plugin.html#gaff786c8d73de45a91dd8d696e60ccf7d">Core::Internal::UAVGadgetView::closeView</a></div><div class="ttdeci">void closeView()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00177">uavgadgetview.cpp:177</a></div></div>
 <div class="ttc" id="class_utils_1_1_styled_bar_html"><div class="ttname"><a href="class_utils_1_1_styled_bar.html">Utils::StyledBar</a></div><div class="ttdef"><b>Definition:</b> <a href="styledbar_8h_source.html#l00039">styledbar.h:39</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga09521ecca6702f1ce2904776b2c5d643"><div class="ttname"><a href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">Core::Internal::UAVGadgetView::hasGadget</a></div><div class="ttdeci">bool hasGadget(IUAVGadget *uavGadget) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00164">uavgadgetview.cpp:164</a></div></div>
-<div class="ttc" id="class_core_1_1_internal_1_1_u_a_v_gadget_view_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">Core::Internal::UAVGadgetView</a></div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8h_source.html#l00063">uavgadgetview.h:63</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00048">coreimpl.cpp:48</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gacc71a644bd52654f20b8761311a0162f"><div class="ttname"><a href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">Core::Internal::UAVGadgetView::setGadget</a></div><div class="ttdeci">void setGadget(IUAVGadget *uavGadget)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00204">uavgadgetview.cpp:204</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga09521ecca6702f1ce2904776b2c5d643"><div class="ttname"><a href="group___core_plugin.html#ga09521ecca6702f1ce2904776b2c5d643">Core::Internal::UAVGadgetView::hasGadget</a></div><div class="ttdeci">bool hasGadget(IUAVGadget *uavGadget) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00167">uavgadgetview.cpp:167</a></div></div>
+<div class="ttc" id="class_core_1_1_internal_1_1_u_a_v_gadget_view_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">Core::Internal::UAVGadgetView</a></div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8h_source.html#l00061">uavgadgetview.h:61</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00046">coreimpl.cpp:46</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gacc71a644bd52654f20b8761311a0162f"><div class="ttname"><a href="group___core_plugin.html#gacc71a644bd52654f20b8761311a0162f">Core::Internal::UAVGadgetView::setGadget</a></div><div class="ttdeci">void setGadget(IUAVGadget *uavGadget)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00207">uavgadgetview.cpp:207</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gaa34aa4b7d554a9fe5ced59284efcdb04"><div class="ttname"><a href="group___core_plugin.html#gaa34aa4b7d554a9fe5ced59284efcdb04">Q_DECLARE_METATYPE</a></div><div class="ttdeci">Q_DECLARE_METATYPE(Core::Internal::MenuActionContainer *) using namespace Core</div></div>
-<div class="ttc" id="group___core_plugin_html_ga204deab3f77d2ebe76925ffd5600e6c7"><div class="ttname"><a href="group___core_plugin.html#ga204deab3f77d2ebe76925ffd5600e6c7">Core::UAVGadgetInstanceManager::removeGadget</a></div><div class="ttdeci">void removeGadget(IUAVGadget *gadget)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00286">uavgadgetinstancemanager.cpp:286</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gab697e11f053f6a4e76f749a6aec7a7e9"><div class="ttname"><a href="group___core_plugin.html#gab697e11f053f6a4e76f749a6aec7a7e9">Core::UAVGadgetInstanceManager::classIds</a></div><div class="ttdeci">QStringList classIds() const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8h_source.html#l00072">uavgadgetinstancemanager.h:72</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga204deab3f77d2ebe76925ffd5600e6c7"><div class="ttname"><a href="group___core_plugin.html#ga204deab3f77d2ebe76925ffd5600e6c7">Core::UAVGadgetInstanceManager::removeGadget</a></div><div class="ttdeci">void removeGadget(IUAVGadget *gadget)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00285">uavgadgetinstancemanager.cpp:285</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gab697e11f053f6a4e76f749a6aec7a7e9"><div class="ttname"><a href="group___core_plugin.html#gab697e11f053f6a4e76f749a6aec7a7e9">Core::UAVGadgetInstanceManager::classIds</a></div><div class="ttdeci">QStringList classIds() const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8h_source.html#l00071">uavgadgetinstancemanager.h:71</a></div></div>
 <div class="ttc" id="coreimpl_8h_html"><div class="ttname"><a href="coreimpl_8h.html">coreimpl.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gadc1d815c499816d254ba28f10bfcc382"><div class="ttname"><a href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">Core::UAVGadgetInstanceManager::gadgetName</a></div><div class="ttdeci">QString gadgetName(QString classId) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00479">uavgadgetinstancemanager.cpp:479</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaff77698d025839fe1253c9f844047967"><div class="ttname"><a href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">Core::Internal::UAVGadgetView::~UAVGadgetView</a></div><div class="ttdeci">virtual ~UAVGadgetView()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00159">uavgadgetview.cpp:159</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaac6af65fdd02abfd9aa6de75c8ef0b86"><div class="ttname"><a href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">Core::Internal::UAVGadgetView::selectionActivated</a></div><div class="ttdeci">void selectionActivated(int index, bool forceLoadConfiguration)</div><div class="ttdoc">Function used to select the gadget to show on this view. </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00248">uavgadgetview.cpp:248</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gadc1d815c499816d254ba28f10bfcc382"><div class="ttname"><a href="group___core_plugin.html#gadc1d815c499816d254ba28f10bfcc382">Core::UAVGadgetInstanceManager::gadgetName</a></div><div class="ttdeci">QString gadgetName(QString classId) const </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00483">uavgadgetinstancemanager.cpp:483</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaff77698d025839fe1253c9f844047967"><div class="ttname"><a href="group___core_plugin.html#gaff77698d025839fe1253c9f844047967">Core::Internal::UAVGadgetView::~UAVGadgetView</a></div><div class="ttdeci">virtual ~UAVGadgetView()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00162">uavgadgetview.cpp:162</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaac6af65fdd02abfd9aa6de75c8ef0b86"><div class="ttname"><a href="group___core_plugin.html#gaac6af65fdd02abfd9aa6de75c8ef0b86">Core::Internal::UAVGadgetView::selectionActivated</a></div><div class="ttdeci">void selectionActivated(int index, bool forceLoadConfiguration)</div><div class="ttdoc">Function used to select the gadget to show on this view. </div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00252">uavgadgetview.cpp:252</a></div></div>
 <div class="ttc" id="uavgadgetinstancemanager_8h_html"><div class="ttname"><a href="uavgadgetinstancemanager_8h.html">uavgadgetinstancemanager.h</a></div></div>
-<div class="ttc" id="class_core_1_1_u_a_v_gadget_instance_manager_html"><div class="ttname"><a href="class_core_1_1_u_a_v_gadget_instance_manager.html">Core::UAVGadgetInstanceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8h_source.html#l00055">uavgadgetinstancemanager.h:55</a></div></div>
+<div class="ttc" id="class_core_1_1_u_a_v_gadget_instance_manager_html"><div class="ttname"><a href="class_core_1_1_u_a_v_gadget_instance_manager.html">Core::UAVGadgetInstanceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8h_source.html#l00054">uavgadgetinstancemanager.h:54</a></div></div>
 <div class="ttc" id="coreconstants_8h_html"><div class="ttname"><a href="coreconstants_8h.html">coreconstants.h</a></div></div>
 <div class="ttc" id="styledbar_8h_html"><div class="ttname"><a href="styledbar_8h.html">styledbar.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga79f72e55f40ebeb515dd18587828dded"><div class="ttname"><a href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">Core::Internal::UAVGadgetView::removeGadget</a></div><div class="ttdeci">void removeGadget()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00179">uavgadgetview.cpp:179</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga79f72e55f40ebeb515dd18587828dded"><div class="ttname"><a href="group___core_plugin.html#ga79f72e55f40ebeb515dd18587828dded">Core::Internal::UAVGadgetView::removeGadget</a></div><div class="ttdeci">void removeGadget()</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetview_8cpp_source.html#l00182">uavgadgetview.cpp:182</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga6aeba1dab852cf7c211cc2405f124ee7"><div class="ttname"><a href="group___core_plugin.html#ga6aeba1dab852cf7c211cc2405f124ee7">Core::ICore::uavGadgetInstanceManager</a></div><div class="ttdeci">virtual UAVGadgetInstanceManager * uavGadgetInstanceManager() const =0</div></div>
 <div class="ttc" id="class_core_1_1_u_a_v_gadget_manager_html"><div class="ttname"><a href="class_core_1_1_u_a_v_gadget_manager.html">Core::UAVGadgetManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetmanager_8h_source.html#l00059">uavgadgetmanager.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

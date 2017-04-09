@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,38 +140,29 @@ $(document).ready(function(){initNavTree('debuggadget_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_debug_gadget.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_debug_gadget.html">DebugGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_debug_gadget.html">DebugGadget</a>(QString classId, <a class="code" href="class_debug_gadget_widget.html">DebugGadgetWidget</a> *widget, QWidget *parent = 0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ~<a class="code" href="class_debug_gadget.html">DebugGadget</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">   47</a></span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">context</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> m_context;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">   51</a></span>&#160;    QWidget *<a class="code" href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">widget</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> m_widget;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">   55</a></span>&#160;    QString <a class="code" href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">contextHelpId</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> QString();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QWidget *m_widget;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> m_context;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // DEBUGGADGET_H_</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_debug_gadget.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_debug_gadget.html">DebugGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_debug_gadget.html">DebugGadget</a>(QString classId, <a class="code" href="class_debug_gadget_widget.html">DebugGadgetWidget</a> *widget, QWidget *parent = 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="class_debug_gadget.html">DebugGadget</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">   48</a></span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">   49</a></span>&#160;    QWidget *<a class="code" href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">widget</a>() { <span class="keywordflow">return</span> m_widget; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">   50</a></span>&#160;    QString <a class="code" href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">contextHelpId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> QString(); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QWidget *m_widget;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> m_context;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // DEBUGGADGET_H_</span></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="class_debug_gadget_widget_html"><div class="ttname"><a href="class_debug_gadget_widget.html">DebugGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8h_source.html#l00034">debuggadgetwidget.h:34</a></div></div>
-<div class="ttc" id="group___debug_gadget_plugin_html_gaaf1624068acedd32979ab08deddefe6e"><div class="ttname"><a href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">DebugGadget::context</a></div><div class="ttdeci">QList&lt; int &gt; context() const </div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00047">debuggadget.h:47</a></div></div>
+<div class="ttc" id="group___debug_gadget_plugin_html_gaaf1624068acedd32979ab08deddefe6e"><div class="ttname"><a href="group___debug_gadget_plugin.html#gaaf1624068acedd32979ab08deddefe6e">DebugGadget::context</a></div><div class="ttdeci">QList&lt; int &gt; context() const </div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00048">debuggadget.h:48</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="group___debug_gadget_plugin_html_ga08f35a753d418ed6e9d9594bcce8fee8"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">DebugGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00051">debuggadget.h:51</a></div></div>
-<div class="ttc" id="group___debug_gadget_plugin_html_ga123c9f10792e9dcd8f128da2be20f176"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">DebugGadget::contextHelpId</a></div><div class="ttdeci">QString contextHelpId() const </div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00055">debuggadget.h:55</a></div></div>
+<div class="ttc" id="group___debug_gadget_plugin_html_ga08f35a753d418ed6e9d9594bcce8fee8"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga08f35a753d418ed6e9d9594bcce8fee8">DebugGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00049">debuggadget.h:49</a></div></div>
+<div class="ttc" id="group___debug_gadget_plugin_html_ga123c9f10792e9dcd8f128da2be20f176"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga123c9f10792e9dcd8f128da2be20f176">DebugGadget::contextHelpId</a></div><div class="ttdeci">QString contextHelpId() const </div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00050">debuggadget.h:50</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="class_debug_gadget_html"><div class="ttname"><a href="class_debug_gadget.html">DebugGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="debuggadget_8h_source.html#l00041">debuggadget.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

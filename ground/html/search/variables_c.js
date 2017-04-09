@@ -14,7 +14,7 @@ var searchData=
   ['lastwrongsyncbyte',['lastWrongSyncByte',['../uavobjecttemplate_8m.html#a5b68c0ce1664726d2f24f81746f622bf',1,'uavobjecttemplate.m']]],
   ['lastzoom',['lastZoom',['../group___t_l_map_widget.html#gabb9b484aee3edc77c17d7a83295ab5c4',1,'core::TLMaps']]],
   ['lat',['Lat',['../_o_p_plots_8m.html#afdc4c4bc9859d268f8b5d1cc44b8ab7c',1,'OPPlots.m']]],
-  ['latitude',['latitude',['../group___kml_export_plugin.html#ga016e20889ef8618f7e55629b25d916d3',1,'LLAVCoordinates::latitude()'],['../group___o_p_map_plugin.html#ga78f3936ec843f0060648b9503702acd6',1,'PathCompiler::waypoint::latitude()']]],
+  ['latitude',['latitude',['../group___kml_export_plugin.html#ga016e20889ef8618f7e55629b25d916d3',1,'LLAVCoordinates']]],
   ['latposition',['latPosition',['../group___path.html#ga26bc2b561e0a39dfb963cabf9dffadc3',1,'PathPlanData']]],
   ['leastcommonzoom',['leastCommonZoom',['../group___t_l_map_widget.html#gaff18ff2c05d05f69c47cbce061c5ee2b',1,'core::TLMaps']]],
   ['level',['level',['../group___usage_stats_plugin.html#ga8694e4afb65ef1dd93b87ce23e2880f8',1,'debugMessageStruct']]],
@@ -33,5 +33,5 @@ var searchData=
   ['loggingthread',['loggingThread',['../class_logging_plugin.html#a0e2c95cb5a17fd852e075212993e4ba3',1,'LoggingPlugin']]],
   ['loggingupdatemode',['loggingUpdateMode',['../classuavobject_1_1_u_a_v_meta_data.html#a5a8be2e2c52ca37e0fc0d60114f69412',1,'uavobject::UAVMetaData']]],
   ['loggingupdateperiod',['loggingUpdatePeriod',['../classuavobject_1_1_u_a_v_meta_data.html#a8a58e769d0a9e034e2e8ce220c777ed4',1,'uavobject::UAVMetaData']]],
-  ['longitude',['longitude',['../group___kml_export_plugin.html#ga8e62d2f9111c6540084336c5efc3cecb',1,'LLAVCoordinates::longitude()'],['../group___o_p_map_plugin.html#ga698954b834d77d2eb539e287bc6bc9e0',1,'PathCompiler::waypoint::longitude()']]]
+  ['longitude',['longitude',['../group___kml_export_plugin.html#ga8e62d2f9111c6540084336c5efc3cecb',1,'LLAVCoordinates']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('serialplugin_8cpp_source.html','');});
 <div class="contents">
 <a href="serialplugin_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -139,16 +139,16 @@ $(document).ready(function(){initNavTree('serialplugin_8cpp_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QFontMetrics&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gaad6479d49b3483b42c19868c9efcef01">   39</a></span>&#160;<a class="code" href="group___serial_plugin.html#gaad6479d49b3483b42c19868c9efcef01">SerialConnection::SerialConnection</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : enablePolling(true),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      m_deviceOpened(false)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : enablePolling(true)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    , m_deviceOpened(false)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    serialHandle = NULL;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_config = <span class="keyword">new</span> <a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a>(<span class="stringliteral">&quot;Serial Telemetry&quot;</span>, NULL, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_config-&gt;<a class="code" href="group___serial_plugin.html#ga9c071c1ab20bf2139e54c469ab804332">restoresettings</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_optionspage = <span class="keyword">new</span> <a class="code" href="class_serial_plugin_options_page.html">SerialPluginOptionsPage</a>(m_config,<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_optionspage = <span class="keyword">new</span> <a class="code" href="class_serial_plugin_options_page.html">SerialPluginOptionsPage</a>(m_config, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(&amp;<a class="code" href="group___serial_plugin.html#ga85e7842650c7d322059475d90f245748">periodicTimer</a>, SIGNAL(timeout()), <span class="keyword">this</span>, SLOT(periodic()));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(&amp;<a class="code" href="group___serial_plugin.html#ga85e7842650c7d322059475d90f245748">periodicTimer</a>, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;SerialConnection::periodic);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="group___serial_plugin.html#ga85e7842650c7d322059475d90f245748">periodicTimer</a>.start(1000);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
@@ -168,33 +168,33 @@ $(document).ready(function(){initNavTree('serialplugin_8cpp_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> SerialConnection::periodic()</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="group___serial_plugin.html#gaa9616a7f264a903a0a5b13ae05d40375">deviceOpened</a>()) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_q_list.html">QList &lt;Core::IDevice*&gt;</a> newDev = this-&gt;<a class="code" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">availableDevices</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;Core::IDevice *&gt;</a> newDev = this-&gt;<a class="code" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">availableDevices</a>();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// Ignore the output, as now availableDevices signals!</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">   75</a></span>&#160;<a class="code" href="class_q_list.html">QList &lt;IDevice *&gt;</a> <a class="code" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">SerialConnection::availableDevices</a>()</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">   75</a></span>&#160;<a class="code" href="class_q_list.html">QList&lt;IDevice *&gt;</a> <a class="code" href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">SerialConnection::availableDevices</a>()</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_q_list.html">QList &lt;Core::IDevice*&gt;</a> m_available_device_list;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_q_list.html">QList&lt;Core::IDevice *&gt;</a> m_available_device_list;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (enablePolling) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> changed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;QSerialPortInfo&gt;</a> ports = QSerialPortInfo::availablePorts();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">//sort the list by port number (nice idea from PT_Dreamer :))</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        qSort(ports.begin(), ports.end(),<a class="code" href="group___serial_plugin.html#gaa4c0e8072d170555640d0d81de58b8b4">sortPorts</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// sort the list by port number (nice idea from PT_Dreamer :))</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        qSort(ports.begin(), ports.end(), <a class="code" href="group___serial_plugin.html#gaa4c0e8072d170555640d0d81de58b8b4">sortPorts</a>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">bool</span> port_exists;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">foreach</span>(QSerialPortInfo port, ports) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">foreach</span> (QSerialPortInfo port, ports) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            port_exists = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">foreach</span>(IDevice *device, m_available_device_list) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">if</span>(device-&gt;getName() == port.portName()) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">foreach</span> (IDevice *device, m_available_device_list) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">if</span> (device-&gt;getName() == port.portName()) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    port_exists = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span>(!port_exists) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <a class="code" href="class_serial_device.html">SerialDevice</a>* d = <span class="keyword">new</span> <a class="code" href="class_serial_device.html">SerialDevice</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (!port_exists) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <a class="code" href="class_serial_device.html">SerialDevice</a> *d = <span class="keyword">new</span> <a class="code" href="class_serial_device.html">SerialDevice</a>();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                QStringList <a class="code" href="uavobjecttemplate_8m.html#a1c2423418c8e367fca746156bb6d3232">disp</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">if</span> (port.description().length()) {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    QFontMetrics font((QFont()));</div>
@@ -208,149 +208,147 @@ $(document).ready(function(){initNavTree('serialplugin_8cpp_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                changed = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">foreach</span>(IDevice *device,m_available_device_list) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">foreach</span> (IDevice *device, m_available_device_list) {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            port_exists = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">foreach</span>(QSerialPortInfo port, ports) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">if</span>(device-&gt;getName() == port.portName()) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">foreach</span> (QSerialPortInfo port, ports) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">if</span> (device-&gt;getName() == port.portName()) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    port_exists = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span>(!port_exists)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                m_available_device_list.removeOne(device);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                device-&gt;deleteLater();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                changed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (changed) {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            emit <a class="code" href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">availableDevChanged</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> m_available_device_list;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">  134</a></span>&#160;QIODevice *<a class="code" href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">SerialConnection::openDevice</a>(IDevice *deviceName)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (serialHandle){</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">closeDevice</a>(deviceName-&gt;getName());</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QSerialPortInfo&gt;</a> ports = QSerialPortInfo::availablePorts();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">foreach</span>(QSerialPortInfo port, ports) {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">if</span> (port.portName() == deviceName-&gt;getName()) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="comment">//we need to handle port settings here...</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            serialHandle = <span class="keyword">new</span> QSerialPort(port);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">if</span> (serialHandle-&gt;open(QIODevice::ReadWrite)) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                 <span class="keywordflow">if</span> (serialHandle-&gt;setBaudRate(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>().toInt())</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                            &amp;&amp; serialHandle-&gt;setDataBits(QSerialPort::Data8)</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                            &amp;&amp; serialHandle-&gt;setParity(QSerialPort::NoParity)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                            &amp;&amp; serialHandle-&gt;setStopBits(QSerialPort::OneStop)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                            &amp;&amp; serialHandle-&gt;setFlowControl(QSerialPort::NoFlowControl)) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                            <a class="code" href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">m_deviceOpened</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                 }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> serialHandle;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">  160</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">SerialConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Q_UNUSED(deviceName);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">//we have to delete the serial connection we created</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> (serialHandle){</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        serialHandle-&gt;deleteLater();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        serialHandle = NULL;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">m_deviceOpened</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">  172</a></span>&#160;QString <a class="code" href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">SerialConnection::connectionName</a>()</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Serial port&quot;</span>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">  177</a></span>&#160;QString <a class="code" href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">SerialConnection::shortName</a>()</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Serial&quot;</span>);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">  185</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">SerialConnection::suspendPolling</a>()</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;{</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    enablePolling = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">  193</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">SerialConnection::resumePolling</a>()</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;SerialPlugin::SerialPlugin()</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;SerialPlugin::~SerialPlugin()</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">removeObject</a>(m_connection-&gt;<a class="code" href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">Optionspage</a>());</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">void</span> SerialPlugin::extensionsInitialized()</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(m_connection);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">bool</span> SerialPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    Q_UNUSED(arguments);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    Q_UNUSED(errorString);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    m_connection = <span class="keyword">new</span> <a class="code" href="class_serial_connection.html">SerialConnection</a>();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">//must manage this registration of child object ourselves</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">//if we use an autorelease here it causes the GCS to crash</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">//as it is deleting objects as the app closes...</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">addObject</a>(m_connection-&gt;<a class="code" href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">Optionspage</a>());</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (!port_exists) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                m_available_device_list.removeOne(device);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                device-&gt;deleteLater();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                changed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span> (changed) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            emit <a class="code" href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">availableDevChanged</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> m_available_device_list;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">  133</a></span>&#160;QIODevice *<a class="code" href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">SerialConnection::openDevice</a>(IDevice *deviceName)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (serialHandle) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">closeDevice</a>(deviceName-&gt;getName());</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QSerialPortInfo&gt;</a> ports = QSerialPortInfo::availablePorts();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">foreach</span> (QSerialPortInfo port, ports) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span> (port.portName() == deviceName-&gt;getName()) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="comment">// we need to handle port settings here...</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            serialHandle = <span class="keyword">new</span> QSerialPort(port);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">if</span> (serialHandle-&gt;open(QIODevice::ReadWrite)) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">if</span> (serialHandle-&gt;setBaudRate(m_config-&gt;<a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>().toInt())</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    &amp;&amp; serialHandle-&gt;setDataBits(QSerialPort::Data8)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    &amp;&amp; serialHandle-&gt;setParity(QSerialPort::NoParity)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    &amp;&amp; serialHandle-&gt;setStopBits(QSerialPort::OneStop)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    &amp;&amp; serialHandle-&gt;setFlowControl(QSerialPort::NoFlowControl)) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    <a class="code" href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">m_deviceOpened</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">return</span> serialHandle;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">  159</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">SerialConnection::closeDevice</a>(<span class="keyword">const</span> QString &amp;deviceName)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Q_UNUSED(deviceName);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// we have to delete the serial connection we created</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (serialHandle) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        serialHandle-&gt;deleteLater();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        serialHandle = NULL;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">m_deviceOpened</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">  170</a></span>&#160;QString <a class="code" href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">SerialConnection::connectionName</a>()</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Serial port&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">  175</a></span>&#160;QString <a class="code" href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">SerialConnection::shortName</a>()</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;Serial&quot;</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">  183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">SerialConnection::suspendPolling</a>()</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    enablePolling = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">  191</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">SerialConnection::resumePolling</a>()</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    enablePolling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;SerialPlugin::SerialPlugin()</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;SerialPlugin::~SerialPlugin()</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">removeObject</a>(m_connection-&gt;<a class="code" href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">Optionspage</a>());</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keywordtype">void</span> SerialPlugin::extensionsInitialized()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">addAutoReleasedObject</a>(m_connection);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">bool</span> SerialPlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    Q_UNUSED(arguments);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    Q_UNUSED(errorString);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    m_connection = <span class="keyword">new</span> <a class="code" href="class_serial_connection.html">SerialConnection</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// must manage this registration of child object ourselves</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// if we use an autorelease here it causes the GCS to crash</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// as it is deleting objects as the app closes...</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">addObject</a>(m_connection-&gt;<a class="code" href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">Optionspage</a>());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_ga79b76e167c73d83f42b79f51f66a9c38"><div class="ttname"><a href="group___core_plugin.html#ga79b76e167c73d83f42b79f51f66a9c38">Core::IConnection::availableDevChanged</a></div><div class="ttdeci">void availableDevChanged(IConnection *)</div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a2f07e0f444810cc4e54ee2be2ce0ac65"><div class="ttname"><a href="_o_p_plots_8m.html#a2f07e0f444810cc4e54ee2be2ce0ac65">s1</a></div><div class="ttdeci">s1</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00019">OPPlots.m:19</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a839e08a78deb150b1148ce10d099067b"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a839e08a78deb150b1148ce10d099067b">ExtensionSystem::IPlugin::addObject</a></div><div class="ttdeci">void addObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00291">iplugin.cpp:291</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_gae73749bb08c2f53f467809cb6c0a3fc8"><div class="ttname"><a href="group___serial_plugin.html#gae73749bb08c2f53f467809cb6c0a3fc8">SerialConnection::~SerialConnection</a></div><div class="ttdeci">virtual ~SerialConnection()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00053">serialplugin.cpp:53</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga6783c4f6c9faa91aeb0b91fef726a2d4"><div class="ttname"><a href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">SerialConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00177">serialplugin.cpp:177</a></div></div>
-<div class="ttc" id="class_serial_device_html"><div class="ttname"><a href="class_serial_device.html">SerialDevice</a></div><div class="ttdoc">The SerialDevice class. </div><div class="ttdef"><b>Definition:</b> <a href="serialdevice_8h_source.html#l00038">serialdevice.h:38</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga6783c4f6c9faa91aeb0b91fef726a2d4"><div class="ttname"><a href="group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4">SerialConnection::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00175">serialplugin.cpp:175</a></div></div>
+<div class="ttc" id="class_serial_device_html"><div class="ttname"><a href="class_serial_device.html">SerialDevice</a></div><div class="ttdoc">The SerialDevice class. </div><div class="ttdef"><b>Definition:</b> <a href="serialdevice_8h_source.html#l00037">serialdevice.h:37</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga85e7842650c7d322059475d90f245748"><div class="ttname"><a href="group___serial_plugin.html#ga85e7842650c7d322059475d90f245748">SerialConnection::periodicTimer</a></div><div class="ttdeci">QTimer periodicTimer</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00084">serialplugin.h:84</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00053">idevice.h:53</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga85e7842650c7d322059475d90f245748"><div class="ttname"><a href="group___serial_plugin.html#ga85e7842650c7d322059475d90f245748">SerialConnection::periodicTimer</a></div><div class="ttdeci">QTimer periodicTimer</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00083">serialplugin.h:83</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga10075657372ad8ae53f7b18c697b9498"><div class="ttname"><a href="group___core_plugin.html#ga10075657372ad8ae53f7b18c697b9498">Core::IDevice::setName</a></div><div class="ttdeci">void setName(QString theName)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00050">idevice.h:50</a></div></div>
 <div class="ttc" id="class_serial_plugin_options_page_html"><div class="ttname"><a href="class_serial_plugin_options_page.html">SerialPluginOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="serialpluginoptionspage_8h_source.html#l00049">serialpluginoptionspage.h:49</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_gaa5933c2426d549fd1621d1e29529e517"><div class="ttname"><a href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">SerialConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00160">serialplugin.cpp:160</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga9c071c1ab20bf2139e54c469ab804332"><div class="ttname"><a href="group___serial_plugin.html#ga9c071c1ab20bf2139e54c469ab804332">SerialPluginConfiguration::restoresettings</a></div><div class="ttdeci">void restoresettings()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00069">serialpluginconfiguration.cpp:69</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gaa5933c2426d549fd1621d1e29529e517"><div class="ttname"><a href="group___serial_plugin.html#gaa5933c2426d549fd1621d1e29529e517">SerialConnection::closeDevice</a></div><div class="ttdeci">virtual void closeDevice(const QString &amp;deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00159">serialplugin.cpp:159</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga9c071c1ab20bf2139e54c469ab804332"><div class="ttname"><a href="group___serial_plugin.html#ga9c071c1ab20bf2139e54c469ab804332">SerialPluginConfiguration::restoresettings</a></div><div class="ttdeci">void restoresettings()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00072">serialpluginconfiguration.cpp:72</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_gaa4c0e8072d170555640d0d81de58b8b4"><div class="ttname"><a href="group___serial_plugin.html#gaa4c0e8072d170555640d0d81de58b8b4">sortPorts</a></div><div class="ttdeci">bool sortPorts(const QSerialPortInfo &amp;s1, const QSerialPortInfo &amp;s2)</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00061">serialplugin.cpp:61</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_gaad6479d49b3483b42c19868c9efcef01"><div class="ttname"><a href="group___serial_plugin.html#gaad6479d49b3483b42c19868c9efcef01">SerialConnection::SerialConnection</a></div><div class="ttdeci">SerialConnection()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00039">serialplugin.cpp:39</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_gac430f3139892f313e094560f5e2e72d1"><div class="ttname"><a href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">SerialConnection::m_deviceOpened</a></div><div class="ttdeci">bool m_deviceOpened</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00082">serialplugin.h:82</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gac430f3139892f313e094560f5e2e72d1"><div class="ttname"><a href="group___serial_plugin.html#gac430f3139892f313e094560f5e2e72d1">SerialConnection::m_deviceOpened</a></div><div class="ttdeci">bool m_deviceOpened</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00081">serialplugin.h:81</a></div></div>
 <div class="ttc" id="class_serial_plugin_configuration_html"><div class="ttname"><a href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00038">serialpluginconfiguration.h:38</a></div></div>
 <div class="ttc" id="serialplugin_8h_html"><div class="ttname"><a href="serialplugin_8h.html">serialplugin.h</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_gaf86b9d4296b2b9e6429dd643fd113861"><div class="ttname"><a href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">SerialConnection::Optionspage</a></div><div class="ttdeci">SerialPluginOptionsPage * Optionspage() const </div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00067">serialplugin.h:67</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gaf86b9d4296b2b9e6429dd643fd113861"><div class="ttname"><a href="group___serial_plugin.html#gaf86b9d4296b2b9e6429dd643fd113861">SerialConnection::Optionspage</a></div><div class="ttdeci">SerialPluginOptionsPage * Optionspage() const </div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00066">serialplugin.h:66</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_gaa86538693d05fa3051ffebb2821d40fd"><div class="ttname"><a href="group___serial_plugin.html#gaa86538693d05fa3051ffebb2821d40fd">SerialConnection::onEnumerationChanged</a></div><div class="ttdeci">void onEnumerationChanged()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00057">serialplugin.cpp:57</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_gacbed38aeba722578f369ad9b4ef2b822"><div class="ttname"><a href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">SerialConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(Core::IDevice *deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00134">serialplugin.cpp:134</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gacbed38aeba722578f369ad9b4ef2b822"><div class="ttname"><a href="group___serial_plugin.html#gacbed38aeba722578f369ad9b4ef2b822">SerialConnection::openDevice</a></div><div class="ttdeci">virtual QIODevice * openDevice(Core::IDevice *deviceName)</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00133">serialplugin.cpp:133</a></div></div>
 <div class="ttc" id="class_serial_connection_html"><div class="ttname"><a href="class_serial_connection.html">SerialConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00048">serialplugin.h:48</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00055">idevice.h:55</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8"><div class="ttname"><a href="group___core_plugin.html#ga6dc9f15ee9f6cf8ed6e60d0aa0ff15e8">Core::IDevice::setDisplayName</a></div><div class="ttdeci">void setDisplayName(QString dn)</div><div class="ttdef"><b>Definition:</b> <a href="idevice_8h_source.html#l00052">idevice.h:52</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_ga35f8b088eb3166e3e81cc71809806085"><div class="ttname"><a href="group___serial_plugin.html#ga35f8b088eb3166e3e81cc71809806085">SerialConnection::availableDevices</a></div><div class="ttdeci">virtual QList&lt; Core::IDevice * &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00075">serialplugin.cpp:75</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00043">serialpluginconfiguration.h:43</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00044">serialpluginconfiguration.h:44</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a2e63e71737e8b6802b81f6a7c5ca6a0a"><div class="ttname"><a href="_o_p_plots_8m.html#a2e63e71737e8b6802b81f6a7c5ca6a0a">s2</a></div><div class="ttdeci">s2</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00020">OPPlots.m:20</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a7f5bee6ed07af7f475b8b2c55c0d8ed4"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a7f5bee6ed07af7f475b8b2c55c0d8ed4">ExtensionSystem::IPlugin::removeObject</a></div><div class="ttdeci">void removeObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00317">iplugin.cpp:317</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga9616a4134ceba88c6ae5820e29a783c4"><div class="ttname"><a href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">SerialConnection::suspendPolling</a></div><div class="ttdeci">virtual void suspendPolling()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00185">serialplugin.cpp:185</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga4b91aa098a25069f0590a25687bdf25b"><div class="ttname"><a href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">SerialConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00172">serialplugin.cpp:172</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga9616a4134ceba88c6ae5820e29a783c4"><div class="ttname"><a href="group___serial_plugin.html#ga9616a4134ceba88c6ae5820e29a783c4">SerialConnection::suspendPolling</a></div><div class="ttdeci">virtual void suspendPolling()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00183">serialplugin.cpp:183</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga4b91aa098a25069f0590a25687bdf25b"><div class="ttname"><a href="group___serial_plugin.html#ga4b91aa098a25069f0590a25687bdf25b">SerialConnection::connectionName</a></div><div class="ttdeci">virtual QString connectionName()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00170">serialplugin.cpp:170</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; Core::IDevice * &gt;</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_af2782659463bdc328aef58f896ae3921"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">ExtensionSystem::IPlugin::addAutoReleasedObject</a></div><div class="ttdeci">void addAutoReleasedObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00306">iplugin.cpp:306</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_gac4a001507836025006728ab1771116f0"><div class="ttname"><a href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">SerialConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00193">serialplugin.cpp:193</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gac4a001507836025006728ab1771116f0"><div class="ttname"><a href="group___serial_plugin.html#gac4a001507836025006728ab1771116f0">SerialConnection::resumePolling</a></div><div class="ttdeci">virtual void resumePolling()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8cpp_source.html#l00191">serialplugin.cpp:191</a></div></div>
 <div class="ttc" id="serialdevice_8h_html"><div class="ttname"><a href="serialdevice_8h.html">serialdevice.h</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a1c2423418c8e367fca746156bb6d3232"><div class="ttname"><a href="uavobjecttemplate_8m.html#a1c2423418c8e367fca746156bb6d3232">disp</a></div><div class="ttdeci">end for as it was simply a dummy placeholder disp(['Unknown object ID:0x'dec2hex(unknownObjIDList(i, 1), 8) 'appeared 'int2str(unknownObjIDList(i, 2)) 'times.'])</div></div>
-<div class="ttc" id="group___serial_plugin_html_gaa9616a7f264a903a0a5b13ae05d40375"><div class="ttname"><a href="group___serial_plugin.html#gaa9616a7f264a903a0a5b13ae05d40375">SerialConnection::deviceOpened</a></div><div class="ttdeci">bool deviceOpened()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00065">serialplugin.h:65</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_gaa9616a7f264a903a0a5b13ae05d40375"><div class="ttname"><a href="group___serial_plugin.html#gaa9616a7f264a903a0a5b13ae05d40375">SerialConnection::deviceOpened</a></div><div class="ttdeci">bool deviceOpened()</div><div class="ttdef"><b>Definition:</b> <a href="serialplugin_8h_source.html#l00064">serialplugin.h:64</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

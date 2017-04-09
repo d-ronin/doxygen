@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,50 +132,52 @@ $(document).ready(function(){initNavTree('boardtype__unknown_8cpp_source.html','
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a">   35</a></span>&#160;<a class="code" href="group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a">BoardtypeUnknown::BoardtypeUnknown</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent) :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ui(new Ui::<a class="code" href="class_boardtype_unknown.html">BoardtypeUnknown</a>)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">   43</a></span>&#160;<a class="code" href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">BoardtypeUnknown::~BoardtypeUnknown</a>()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">   48</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">BoardtypeUnknown::validatePage</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">BoardtypeUnknown::setFailureType</a>(<a class="code" href="group___setup_wizard.html#ga629a54fcd677f88ee4cff543987309c5">FailureType</a> type)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">switch</span> (type) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90">UNKNOWN_FIRMWARE</a>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ui-&gt;lblReason-&gt;setText(tr(<span class="stringliteral">&quot;The firmware version on the board does not match this version of GCS.&quot;</span>));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2">UNKNOWN_BOARD</a>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        ui-&gt;lblReason-&gt;setText(tr(<span class="stringliteral">&quot;Unknown board type.&quot;</span>));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a">   35</a></span>&#160;<a class="code" href="group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a">BoardtypeUnknown::BoardtypeUnknown</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ui(new Ui::<a class="code" href="class_boardtype_unknown.html">BoardtypeUnknown</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">   44</a></span>&#160;<a class="code" href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">BoardtypeUnknown::~BoardtypeUnknown</a>()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">   49</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">BoardtypeUnknown::validatePage</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">BoardtypeUnknown::setFailureType</a>(<a class="code" href="group___setup_wizard.html#ga629a54fcd677f88ee4cff543987309c5">FailureType</a> type)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90">UNKNOWN_FIRMWARE</a>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ui-&gt;lblReason-&gt;setText(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            tr(<span class="stringliteral">&quot;The firmware version on the board does not match this version of GCS.&quot;</span>));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2">UNKNOWN_BOARD</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ui-&gt;lblReason-&gt;setText(tr(<span class="stringliteral">&quot;Unknown board type.&quot;</span>));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="ttc" id="group___setup_wizard_html_gaa754f768856dc948f57de10cc076b74a"><div class="ttname"><a href="group___setup_wizard.html#gaa754f768856dc948f57de10cc076b74a">BoardtypeUnknown::BoardtypeUnknown</a></div><div class="ttdeci">BoardtypeUnknown(SetupWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00035">boardtype_unknown.cpp:35</a></div></div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga629a54fcd677f88ee4cff543987309c5"><div class="ttname"><a href="group___setup_wizard.html#ga629a54fcd677f88ee4cff543987309c5">BoardtypeUnknown::FailureType</a></div><div class="ttdeci">FailureType</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00045">boardtype_unknown.h:45</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga63ada3891eafc126d01d00f02ff091a8"><div class="ttname"><a href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">BoardtypeUnknown::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00048">boardtype_unknown.cpp:48</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga629a54fcd677f88ee4cff543987309c5"><div class="ttname"><a href="group___setup_wizard.html#ga629a54fcd677f88ee4cff543987309c5">BoardtypeUnknown::FailureType</a></div><div class="ttdeci">FailureType</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00046">boardtype_unknown.h:46</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga63ada3891eafc126d01d00f02ff091a8"><div class="ttname"><a href="group___setup_wizard.html#ga63ada3891eafc126d01d00f02ff091a8">BoardtypeUnknown::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00049">boardtype_unknown.cpp:49</a></div></div>
 <div class="ttc" id="boardtype__unknown_8h_html"><div class="ttname"><a href="boardtype__unknown_8h.html">boardtype_unknown.h</a></div></div>
 <div class="ttc" id="class_boardtype_unknown_html"><div class="ttname"><a href="class_boardtype_unknown.html">BoardtypeUnknown</a></div><div class="ttdoc">The BoardtypeUnknown class tells the user this board type is unknown and unsupported. </div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00041">boardtype_unknown.h:41</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gaa9b6ea99cf10df2c1723bd92044128af"><div class="ttname"><a href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">BoardtypeUnknown::~BoardtypeUnknown</a></div><div class="ttdeci">~BoardtypeUnknown()</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00043">boardtype_unknown.cpp:43</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga630c4a9104d3ab44dec31fc26ee79d23"><div class="ttname"><a href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">BoardtypeUnknown::setFailureType</a></div><div class="ttdeci">void setFailureType(FailureType type)</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00053">boardtype_unknown.cpp:53</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gaa9b6ea99cf10df2c1723bd92044128af"><div class="ttname"><a href="group___setup_wizard.html#gaa9b6ea99cf10df2c1723bd92044128af">BoardtypeUnknown::~BoardtypeUnknown</a></div><div class="ttdeci">~BoardtypeUnknown()</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00044">boardtype_unknown.cpp:44</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga630c4a9104d3ab44dec31fc26ee79d23"><div class="ttname"><a href="group___setup_wizard.html#ga630c4a9104d3ab44dec31fc26ee79d23">BoardtypeUnknown::setFailureType</a></div><div class="ttdeci">void setFailureType(FailureType type)</div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8cpp_source.html#l00054">boardtype_unknown.cpp:54</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
 <div class="ttc" id="setupwizard_8h_html"><div class="ttname"><a href="setupwizard_8h.html">setupwizard.h</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2"><div class="ttname"><a href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2">BoardtypeUnknown::UNKNOWN_BOARD</a></div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00046">boardtype_unknown.h:46</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90"><div class="ttname"><a href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90">BoardtypeUnknown::UNKNOWN_FIRMWARE</a></div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00047">boardtype_unknown.h:47</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2"><div class="ttname"><a href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5afaf5e41159594fd71e4116e0b056b0a2">BoardtypeUnknown::UNKNOWN_BOARD</a></div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00047">boardtype_unknown.h:47</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90"><div class="ttname"><a href="group___setup_wizard.html#gga629a54fcd677f88ee4cff543987309c5a427d5c6650887913c3e1d0ea0a5c4a90">BoardtypeUnknown::UNKNOWN_FIRMWARE</a></div><div class="ttdef"><b>Definition:</b> <a href="boardtype__unknown_8h_source.html#l00048">boardtype_unknown.h:48</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -82,7 +82,7 @@ var group___u_a_v_objects_plugin =
       [ "category", "group___u_a_v_objects_plugin.html#gae96da3f59e51fb5c3ca43056bda4a63e", null ],
       [ "data", "group___u_a_v_objects_plugin.html#gadb2f4800bd3b6fb89c0f7c9fb67e49ff", null ],
       [ "description", "group___u_a_v_objects_plugin.html#gaeeb0e865791ad6b21d83ef571d1ce48b", null ],
-      [ "fields", "group___u_a_v_objects_plugin.html#gaafc65699167bc5cedfd058400e484df6", null ],
+      [ "fields", "group___u_a_v_objects_plugin.html#gae371ab30c21cdd286b387aa402c4789d", null ],
       [ "instID", "group___u_a_v_objects_plugin.html#gad8d656542a04e9fbef607ff178f6d9d3", null ],
       [ "isSingleInst", "group___u_a_v_objects_plugin.html#gaa279cad3a000cc930e7f386672426bcb", null ],
       [ "name", "group___u_a_v_objects_plugin.html#gadf898ed0961464f4a3f8e05fb28019f5", null ],
@@ -165,7 +165,7 @@ var group___u_a_v_objects_plugin =
       [ "units", "class_u_a_v_object_field.html#a1ecf5fdaab2ac408b67623d5d75368c5", null ]
     ] ],
     [ "UAVObjectManager", "class_u_a_v_object_manager.html", [
-      [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga0192835b424e7c3d9196e9f2ba85b525", null ],
+      [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1", null ],
       [ "UAVObjectManager", "group___u_a_v_objects_plugin.html#ga407e523ca4304b00cc600c49f110e60a", null ],
       [ "~UAVObjectManager", "group___u_a_v_objects_plugin.html#ga0b1af95f366fc372f94307f59513933d", null ],
       [ "getDataObjectsVector", "group___u_a_v_objects_plugin.html#ga9109779fef579de13e7600ec2ca35d71", null ],
@@ -218,7 +218,7 @@ var group___u_a_v_objects_plugin =
       [ "setHomeLocation", "group___u_a_v_objects_plugin.html#gafcfa22c5812ed36ca7a2d6e442ba1710", null ],
       [ "setMetadata", "group___u_a_v_object_util_plugin.html#gab813cc6401727303f0787527bbd29ad1", null ]
     ] ],
-    [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga0192835b424e7c3d9196e9f2ba85b525", null ],
+    [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1", null ],
     [ "AccessMode", "group___u_a_v_objects_plugin.html#ga80357a2f38fa4be23200de86614c3d77", [
       [ "ACCESS_READWRITE", "group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77ad710c074e7e275da805bf900c9917d47", null ],
       [ "ACCESS_READONLY", "group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49", null ]
@@ -378,7 +378,7 @@ var group___u_a_v_objects_plugin =
     [ "data", "group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434", null ],
     [ "data", "group___u_a_v_objects_plugin.html#gadb2f4800bd3b6fb89c0f7c9fb67e49ff", null ],
     [ "description", "group___u_a_v_objects_plugin.html#gaeeb0e865791ad6b21d83ef571d1ce48b", null ],
-    [ "fields", "group___u_a_v_objects_plugin.html#gaafc65699167bc5cedfd058400e484df6", null ],
+    [ "fields", "group___u_a_v_objects_plugin.html#gae371ab30c21cdd286b387aa402c4789d", null ],
     [ "instID", "group___u_a_v_objects_plugin.html#gad8d656542a04e9fbef607ff178f6d9d3", null ],
     [ "isSingleInst", "group___u_a_v_objects_plugin.html#gaa279cad3a000cc930e7f386672426bcb", null ],
     [ "name", "group___u_a_v_objects_plugin.html#gadf898ed0961464f4a3f8e05fb28019f5", null ],

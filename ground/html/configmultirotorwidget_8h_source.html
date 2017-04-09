@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('configmultirotorwidget_8h_source.html'
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>Ui_Widget;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_config_multi_rotor_widget.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_multi_rotor_widget.html">ConfigMultiRotorWidget</a>: <span class="keyword">public</span> <a class="code" href="class_vehicle_config.html">VehicleConfig</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_config_multi_rotor_widget.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_multi_rotor_widget.html">ConfigMultiRotorWidget</a> : <span class="keyword">public</span> <a class="code" href="class_vehicle_config.html">VehicleConfig</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('configmultirotorwidget_8h_source.html'
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">float</span> invertMotors;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ResetActuators(<a class="code" href="union_g_u_i_config_data_union.html">GUIConfigDataUnion</a>* configData);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ResetActuators(<a class="code" href="union_g_u_i_config_data_union.html">GUIConfigDataUnion</a> *configData);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> QStringList <a class="code" href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">getChannelDescriptions</a>();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString CHANNELBOXNAME;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString CHANNELLABELNAME;</div>
@@ -182,27 +182,24 @@ $(document).ready(function(){initNavTree('configmultirotorwidget_8h_source.html'
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> throwConfigError(<span class="keywordtype">int</span> numMotors);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;signals:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga716e8f2fab4b0afb5b3c2df16b199259">configurationChanged</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;signals:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga716e8f2fab4b0afb5b3c2df16b199259">configurationChanged</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // CONFIGMULTIROTORWIDGET_H</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // CONFIGMULTIROTORWIDGET_H</span></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga1f8b823890ddd40ac391df9aa59cfd79"><div class="ttname"><a href="group___config_plugin.html#ga1f8b823890ddd40ac391df9aa59cfd79">ConfigMultiRotorWidget::ConfigMultiRotorWidget</a></div><div class="ttdeci">ConfigMultiRotorWidget(Ui_AircraftWidget *aircraft=0, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="configmultirotorwidget_8cpp_source.html#l00049">configmultirotorwidget.cpp:49</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga1f8b823890ddd40ac391df9aa59cfd79"><div class="ttname"><a href="group___config_plugin.html#ga1f8b823890ddd40ac391df9aa59cfd79">ConfigMultiRotorWidget::ConfigMultiRotorWidget</a></div><div class="ttdeci">ConfigMultiRotorWidget(Ui_AircraftWidget *aircraft=0, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="configmultirotorwidget_8cpp_source.html#l00048">configmultirotorwidget.cpp:48</a></div></div>
 <div class="ttc" id="class_config_vehicle_type_widget_html"><div class="ttname"><a href="class_config_vehicle_type_widget.html">ConfigVehicleTypeWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configvehicletypewidget_8h_source.html#l00048">configvehicletypewidget.h:48</a></div></div>
 <div class="ttc" id="class_config_multi_rotor_widget_html"><div class="ttname"><a href="class_config_multi_rotor_widget.html">ConfigMultiRotorWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configmultirotorwidget_8h_source.html#l00043">configmultirotorwidget.h:43</a></div></div>
 <div class="ttc" id="vehicleconfig_8h_html"><div class="ttname"><a href="vehicleconfig_8h.html">vehicleconfig.h</a></div></div>
 <div class="ttc" id="telemetrymanager_8h_html"><div class="ttname"><a href="telemetrymanager_8h.html">telemetrymanager.h</a></div></div>
-<div class="ttc" id="union_g_u_i_config_data_union_html"><div class="ttname"><a href="union_g_u_i_config_data_union.html">GUIConfigDataUnion</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00102">vehicleconfig.h:102</a></div></div>
-<div class="ttc" id="class_vehicle_config_html"><div class="ttname"><a href="class_vehicle_config.html">VehicleConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00112">vehicleconfig.h:112</a></div></div>
+<div class="ttc" id="union_g_u_i_config_data_union_html"><div class="ttname"><a href="union_g_u_i_config_data_union.html">GUIConfigDataUnion</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00106">vehicleconfig.h:106</a></div></div>
+<div class="ttc" id="class_vehicle_config_html"><div class="ttname"><a href="class_vehicle_config.html">VehicleConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00114">vehicleconfig.h:114</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; QString &gt;</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga716e8f2fab4b0afb5b3c2df16b199259"><div class="ttname"><a href="group___config_plugin.html#ga716e8f2fab4b0afb5b3c2df16b199259">ConfigMultiRotorWidget::configurationChanged</a></div><div class="ttdeci">void configurationChanged()</div></div>
-<div class="ttc" id="group___config_plugin_html_ga65301666bc0f14e94e8f718af4e6cc08"><div class="ttname"><a href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a></div><div class="ttdeci">static QStringList getChannelDescriptions()</div><div class="ttdef"><b>Definition:</b> <a href="configvehicletypewidget_8cpp_source.html#l00257">configvehicletypewidget.cpp:257</a></div></div>
-<div class="ttc" id="group___config_plugin_html_gac8ee6c628cb4f8f195395978f8f086bb"><div class="ttname"><a href="group___config_plugin.html#gac8ee6c628cb4f8f195395978f8f086bb">ConfigMultiRotorWidget::~ConfigMultiRotorWidget</a></div><div class="ttdeci">~ConfigMultiRotorWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmultirotorwidget_8cpp_source.html#l00057">configmultirotorwidget.cpp:57</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga65301666bc0f14e94e8f718af4e6cc08"><div class="ttname"><a href="group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08">ConfigVehicleTypeWidget::getChannelDescriptions</a></div><div class="ttdeci">static QStringList getChannelDescriptions()</div><div class="ttdef"><b>Definition:</b> <a href="configvehicletypewidget_8cpp_source.html#l00279">configvehicletypewidget.cpp:279</a></div></div>
+<div class="ttc" id="group___config_plugin_html_gac8ee6c628cb4f8f195395978f8f086bb"><div class="ttname"><a href="group___config_plugin.html#gac8ee6c628cb4f8f195395978f8f086bb">ConfigMultiRotorWidget::~ConfigMultiRotorWidget</a></div><div class="ttdeci">~ConfigMultiRotorWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmultirotorwidget_8cpp_source.html#l00058">configmultirotorwidget.cpp:58</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('coreplugin_8cpp_source.html','');});
 <div class="contents">
 <a href="coreplugin_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coreplugin_8h.html">coreplugin.h</a>&quot;</span></div>
@@ -134,12 +134,12 @@ $(document).ready(function(){initNavTree('coreplugin_8cpp_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using namespace </span>Core::Internal;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;CorePlugin::CorePlugin() :</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_mainWindow(new <a class="code" href="class_core_1_1_internal_1_1_main_window.html">MainWindow</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;CorePlugin::CorePlugin()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : m_mainWindow(new <a class="code" href="class_core_1_1_internal_1_1_main_window.html">MainWindow</a>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    connect(m_mainWindow,SIGNAL(splashMessages(QString)),<span class="keyword">this</span>,SIGNAL(splashMessages(QString)));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    connect(m_mainWindow,SIGNAL(hideSplash()),<span class="keyword">this</span>,SIGNAL(hideSplash()));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    connect(m_mainWindow,SIGNAL(showSplash()),<span class="keyword">this</span>,SIGNAL(showSplash()));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    connect(m_mainWindow, SIGNAL(splashMessages(QString)), <span class="keyword">this</span>, SIGNAL(splashMessages(QString)));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    connect(m_mainWindow, SIGNAL(hideSplash()), <span class="keyword">this</span>, SIGNAL(hideSplash()));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    connect(m_mainWindow, SIGNAL(showSplash()), <span class="keyword">this</span>, SIGNAL(showSplash()));</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;CorePlugin::~CorePlugin()</div>
@@ -149,8 +149,8 @@ $(document).ready(function(){initNavTree('coreplugin_8cpp_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> CorePlugin::initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorMessage)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(arguments.contains(<span class="stringliteral">&quot;crashme&quot;</span>)) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>((arguments.length() &gt; 1) &amp;&amp; (arguments.at(arguments.indexOf(<span class="stringliteral">&quot;crashme&quot;</span>) + 1) == <span class="stringliteral">&quot;yes&quot;</span>)) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (arguments.contains(<span class="stringliteral">&quot;crashme&quot;</span>)) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> ((arguments.length() &gt; 1) &amp;&amp; (arguments.at(arguments.indexOf(<span class="stringliteral">&quot;crashme&quot;</span>) + 1) == <span class="stringliteral">&quot;yes&quot;</span>)) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            QString *<a class="code" href="uavobjecttemplate_8m.html#a3691308f2a4c2f6983f2880d32e29c84">s</a> = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            s-&gt;append(<span class="stringliteral">&quot;crash&quot;</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('coreplugin_8cpp_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    m_mainWindow-&gt;<a class="code" href="group___core_plugin.html#ga4c8ca3dfbbec662f91c1fd39467eb8ee">extensionsInitialized</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00">CorePlugin::remoteArgument</a>(<span class="keyword">const</span> QString&amp; arg)</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00">CorePlugin::remoteArgument</a>(<span class="keyword">const</span> QString &amp;arg)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// An empty argument is sent to trigger activation</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// of the window via QtSingleApplication. It should be</span></div>
@@ -182,12 +182,12 @@ $(document).ready(function(){initNavTree('coreplugin_8cpp_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    m_mainWindow-&gt;<a class="code" href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa">shutdown</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga4c8ca3dfbbec662f91c1fd39467eb8ee"><div class="ttname"><a href="group___core_plugin.html#ga4c8ca3dfbbec662f91c1fd39467eb8ee">Core::Internal::MainWindow::extensionsInitialized</a></div><div class="ttdeci">void extensionsInitialized()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00315">mainwindow.cpp:315</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga4c8ca3dfbbec662f91c1fd39467eb8ee"><div class="ttname"><a href="group___core_plugin.html#ga4c8ca3dfbbec662f91c1fd39467eb8ee">Core::Internal::MainWindow::extensionsInitialized</a></div><div class="ttdeci">void extensionsInitialized()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00317">mainwindow.cpp:317</a></div></div>
 <div class="ttc" id="mainwindow_8h_html"><div class="ttname"><a href="mainwindow_8h.html">mainwindow.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga1fcbdef10ebfdec100d2d0078abb5afa"><div class="ttname"><a href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa">Core::Internal::MainWindow::shutdown</a></div><div class="ttdeci">void shutdown()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01075">mainwindow.cpp:1075</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga1fcbdef10ebfdec100d2d0078abb5afa"><div class="ttname"><a href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa">Core::Internal::MainWindow::shutdown</a></div><div class="ttdeci">void shutdown()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01077">mainwindow.cpp:1077</a></div></div>
 <div class="ttc" id="coreplugin_8h_html"><div class="ttname"><a href="coreplugin_8h.html">coreplugin.h</a></div></div>
 <div class="ttc" id="coreimpl_8h_html"><div class="ttname"><a href="coreimpl_8h.html">coreimpl.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gafd7a49e5ef33d7eb47ac7befd1acaeb5"><div class="ttname"><a href="group___core_plugin.html#gafd7a49e5ef33d7eb47ac7befd1acaeb5">Core::Internal::MainWindow::init</a></div><div class="ttdeci">bool init(QString *errorMessage)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00293">mainwindow.cpp:293</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gafd7a49e5ef33d7eb47ac7befd1acaeb5"><div class="ttname"><a href="group___core_plugin.html#gafd7a49e5ef33d7eb47ac7befd1acaeb5">Core::Internal::MainWindow::init</a></div><div class="ttdeci">bool init(QString *errorMessage)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00296">mainwindow.cpp:296</a></div></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_main_window_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_main_window.html">Core::Internal::MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00078">mainwindow.h:78</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a3691308f2a4c2f6983f2880d32e29c84"><div class="ttname"><a href="uavobjecttemplate_8m.html#a3691308f2a4c2f6983f2880d32e29c84">s</a></div><div class="ttdeci">s</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00258">uavobjecttemplate.m:258</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga576e45eb91d9f6d704e15b26b2783c00"><div class="ttname"><a href="group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00">Core::Internal::CorePlugin::remoteArgument</a></div><div class="ttdeci">void remoteArgument(const QString &amp;=QString())</div><div class="ttdef"><b>Definition:</b> <a href="coreplugin_8cpp_source.html#l00071">coreplugin.cpp:71</a></div></div>

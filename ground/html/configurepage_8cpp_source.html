@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,91 +129,92 @@ $(document).ready(function(){initNavTree('configurepage_8cpp_source.html','');})
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="configurepage_8h.html">configurepage.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;ui_configurepage.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga9db2333404d675e7ac60f7443bb2d519">   31</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga9db2333404d675e7ac60f7443bb2d519">ConfigurePage::ConfigurePage</a>(RfmBindWizard *wizard, QWidget *parent) :</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent), ui(new Ui::<a class="code" href="class_configure_page.html">ConfigurePage</a>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// These lists are a property of the modem hardware (RFM22b) and</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// should be common amongst all the boards</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QStringList MaxRfPowerEnumOptions;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;1.25&quot;</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;1.6&quot;</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;3.16&quot;</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;6.3&quot;</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;12.6&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;25&quot;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;50&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;100&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ui-&gt;cbRfPower-&gt;clear();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ui-&gt;cbRfPower-&gt;insertItems(0, MaxRfPowerEnumOptions);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QStringList MaxRfSpeedEnumOptions;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;9600&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;19200&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;32000&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;64000&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;100000&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;192000&quot;</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ui-&gt;cbBaudRate-&gt;clear();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ui-&gt;cbBaudRate-&gt;insertItems(0, MaxRfSpeedEnumOptions);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ui-&gt;cbBaudRate-&gt;setCurrentText(<span class="stringliteral">&quot;100000&quot;</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ui-&gt;cbLinkMode-&gt;clear();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;Telemetry Only&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a>));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;Telemetry and PPM&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a>));</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;PPM Only&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ui-&gt;cbBaudRate-&gt;setCurrentIndex(0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ui-&gt;sbMinChannel-&gt;setValue(0);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ui-&gt;sbMaxChannel-&gt;setValue(250);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">   71</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">ConfigurePage::~ConfigurePage</a>()</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">ConfigurePage::initializePage</a>()</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    emit completeChanged();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">   81</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">ConfigurePage::isComplete</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">   87</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">ConfigurePage::validatePage</a>()</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    quint32 bps = ui-&gt;cbBaudRate-&gt;currentText().toInt();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">float</span> maxRfPower = ui-&gt;cbRfPower-&gt;currentText().toFloat();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    quint8 minChannel = ui-&gt;sbMinChannel-&gt;value();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    quint8 maxChannel = ui-&gt;sbMaxChannel-&gt;value();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    linkMode = (<span class="keyword">enum</span> <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a>) ui-&gt;cbLinkMode-&gt;currentData().value&lt;<span class="keywordtype">int</span>&gt;();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxBps(bps);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxRfPower(maxRfPower);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMinChannel(minChannel);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxChannel(maxChannel);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setLinkMode(linkMode);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga9db2333404d675e7ac60f7443bb2d519">   31</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga9db2333404d675e7ac60f7443bb2d519">ConfigurePage::ConfigurePage</a>(RfmBindWizard *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    , ui(new Ui::<a class="code" href="class_configure_page.html">ConfigurePage</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// These lists are a property of the modem hardware (RFM22b) and</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// should be common amongst all the boards</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QStringList MaxRfPowerEnumOptions;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;1.25&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;1.6&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;3.16&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;6.3&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;12.6&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;25&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;50&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    MaxRfPowerEnumOptions.append(<span class="stringliteral">&quot;100&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ui-&gt;cbRfPower-&gt;clear();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ui-&gt;cbRfPower-&gt;insertItems(0, MaxRfPowerEnumOptions);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QStringList MaxRfSpeedEnumOptions;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;9600&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;19200&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;32000&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;64000&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;100000&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    MaxRfSpeedEnumOptions.append(<span class="stringliteral">&quot;192000&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ui-&gt;cbBaudRate-&gt;clear();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ui-&gt;cbBaudRate-&gt;insertItems(0, MaxRfSpeedEnumOptions);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ui-&gt;cbBaudRate-&gt;setCurrentText(<span class="stringliteral">&quot;100000&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ui-&gt;cbLinkMode-&gt;clear();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;Telemetry Only&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;Telemetry and PPM&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a>));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ui-&gt;cbLinkMode-&gt;addItem(<span class="stringliteral">&quot;PPM Only&quot;</span>, QVariant(<a class="code" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ui-&gt;cbBaudRate-&gt;setCurrentIndex(0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ui-&gt;sbMinChannel-&gt;setValue(0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ui-&gt;sbMaxChannel-&gt;setValue(250);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">   72</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">ConfigurePage::~ConfigurePage</a>()</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">ConfigurePage::initializePage</a>()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    emit completeChanged();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">   82</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">ConfigurePage::isComplete</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">   88</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">ConfigurePage::validatePage</a>()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    quint32 bps = ui-&gt;cbBaudRate-&gt;currentText().toInt();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">float</span> maxRfPower = ui-&gt;cbRfPower-&gt;currentText().toFloat();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    quint8 minChannel = ui-&gt;sbMinChannel-&gt;value();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    quint8 maxChannel = ui-&gt;sbMaxChannel-&gt;value();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    linkMode = (<span class="keyword">enum</span> <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a>)ui-&gt;cbLinkMode-&gt;currentData().value&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxBps(bps);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxRfPower(maxRfPower);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMinChannel(minChannel);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setMaxChannel(maxChannel);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;setLinkMode(linkMode);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="configurepage_8h_html"><div class="ttname"><a href="configurepage_8h.html">configurepage.h</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga6e065a06dae254a61874a573386f2b54"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">ConfigurePage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdoc">Store the configuration data in the wizard. </div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00087">configurepage.cpp:87</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00212">iboardtype.h:212</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga3ac79fcc784357c45a8a5328c8e72f40"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">ConfigurePage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00076">configurepage.cpp:76</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00212">iboardtype.h:212</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga38c4d0a015e4fafc6b70bdb2f2c94592"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">ConfigurePage::~ConfigurePage</a></div><div class="ttdeci">~ConfigurePage()</div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00071">configurepage.cpp:71</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00043">abstractwizardpage.h:43</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga6e065a06dae254a61874a573386f2b54"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga6e065a06dae254a61874a573386f2b54">ConfigurePage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdoc">Store the configuration data in the wizard. </div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00088">configurepage.cpp:88</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00225">iboardtype.h:225</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga3ac79fcc784357c45a8a5328c8e72f40"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga3ac79fcc784357c45a8a5328c8e72f40">ConfigurePage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00077">configurepage.cpp:77</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00225">iboardtype.h:225</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga38c4d0a015e4fafc6b70bdb2f2c94592"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga38c4d0a015e4fafc6b70bdb2f2c94592">ConfigurePage::~ConfigurePage</a></div><div class="ttdeci">~ConfigurePage()</div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00072">configurepage.cpp:72</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00044">abstractwizardpage.h:44</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga9db2333404d675e7ac60f7443bb2d519"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9db2333404d675e7ac60f7443bb2d519">ConfigurePage::ConfigurePage</a></div><div class="ttdeci">ConfigurePage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00031">configurepage.cpp:31</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00212">iboardtype.h:212</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00225">iboardtype.h:225</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga7ea5dc95d5acce74d8e300c1df3b6ce1"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">ConfigurePage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00081">configurepage.cpp:81</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga7ea5dc95d5acce74d8e300c1df3b6ce1"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga7ea5dc95d5acce74d8e300c1df3b6ce1">ConfigurePage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8cpp_source.html#l00082">configurepage.cpp:82</a></div></div>
 <div class="ttc" id="class_configure_page_html"><div class="ttname"><a href="class_configure_page.html">ConfigurePage</a></div><div class="ttdef"><b>Definition:</b> <a href="configurepage_8h_source.html#l00040">configurepage.h:40</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00212">iboardtype.h:212</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736"><div class="ttname"><a href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00225">iboardtype.h:225</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

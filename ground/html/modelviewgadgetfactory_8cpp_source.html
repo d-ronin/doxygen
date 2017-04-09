@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,38 +133,40 @@ $(document).ready(function(){initNavTree('modelviewgadgetfactory_8cpp_source.htm
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uavgadgetoptionspagedecorator_8h.html">coreplugin/uavgadgetoptionspagedecorator.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77">   34</a></span>&#160;<a class="code" href="group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77">ModelViewGadgetFactory::ModelViewGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), tr(<span class="stringliteral">&quot;ModelView&quot;</span>), parent)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">   38</a></span>&#160;<a class="code" href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">ModelViewGadgetFactory::~ModelViewGadgetFactory</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">   41</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">ModelViewGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget.html">ModelViewGadget</a>(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">   48</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">ModelViewGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">   53</a></span>&#160;IOptionsPage *<a class="code" href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">ModelViewGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_options_page.html">ModelViewGadgetOptionsPage</a>(qobject_cast&lt;ModelViewGadgetConfiguration *&gt;(config));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77">   34</a></span>&#160;<a class="code" href="group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77">ModelViewGadgetFactory::ModelViewGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), tr(<span class="stringliteral">&quot;ModelView&quot;</span>), parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">   39</a></span>&#160;<a class="code" href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">ModelViewGadgetFactory::~ModelViewGadgetFactory</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">   43</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">ModelViewGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget.html">ModelViewGadget</a>(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">   50</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">ModelViewGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;ModelViewGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">   55</a></span>&#160;IOptionsPage *<a class="code" href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">ModelViewGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_model_view_gadget_options_page.html">ModelViewGadgetOptionsPage</a>(qobject_cast&lt;ModelViewGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_gaa2d13e8c20201017fc03b9ffd781247c"><div class="ttname"><a href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">ModelViewGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00048">modelviewgadgetfactory.cpp:48</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_gaa2d13e8c20201017fc03b9ffd781247c"><div class="ttname"><a href="group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c">ModelViewGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00050">modelviewgadgetfactory.cpp:50</a></div></div>
 <div class="ttc" id="modelviewgadgetoptionspage_8h_html"><div class="ttname"><a href="modelviewgadgetoptionspage_8h.html">modelviewgadgetoptionspage.h</a></div></div>
-<div class="ttc" id="class_model_view_gadget_widget_html"><div class="ttname"><a href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetwidget_8h_source.html#l00044">modelviewgadgetwidget.h:44</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_gacccb2300c14739970fbef9a38365c070"><div class="ttname"><a href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">ModelViewGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00053">modelviewgadgetfactory.cpp:53</a></div></div>
+<div class="ttc" id="class_model_view_gadget_widget_html"><div class="ttname"><a href="class_model_view_gadget_widget.html">ModelViewGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetwidget_8h_source.html#l00043">modelviewgadgetwidget.h:43</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_gacccb2300c14739970fbef9a38365c070"><div class="ttname"><a href="group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070">ModelViewGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00055">modelviewgadgetfactory.cpp:55</a></div></div>
 <div class="ttc" id="group___model_view_plugin_html_gab4ca362258332f3214c66cc63ba54d77"><div class="ttname"><a href="group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77">ModelViewGadgetFactory::ModelViewGadgetFactory</a></div><div class="ttdeci">ModelViewGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00034">modelviewgadgetfactory.cpp:34</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="class_model_view_gadget_options_page_html"><div class="ttname"><a href="class_model_view_gadget_options_page.html">ModelViewGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetoptionspage_8h_source.html#l00048">modelviewgadgetoptionspage.h:48</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga10c8c524e828527192c4821b769ab1fe"><div class="ttname"><a href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">ModelViewGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00041">modelviewgadgetfactory.cpp:41</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga10c8c524e828527192c4821b769ab1fe"><div class="ttname"><a href="group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe">ModelViewGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00043">modelviewgadgetfactory.cpp:43</a></div></div>
 <div class="ttc" id="modelviewgadget_8h_html"><div class="ttname"><a href="modelviewgadget_8h.html">modelviewgadget.h</a></div></div>
 <div class="ttc" id="modelviewgadgetfactory_8h_html"><div class="ttname"><a href="modelviewgadgetfactory_8h.html">modelviewgadgetfactory.h</a></div></div>
 <div class="ttc" id="modelviewgadgetwidget_8h_html"><div class="ttname"><a href="modelviewgadgetwidget_8h.html">modelviewgadgetwidget.h</a></div></div>
@@ -172,7 +174,7 @@ $(document).ready(function(){initNavTree('modelviewgadgetfactory_8cpp_source.htm
 <div class="ttc" id="class_model_view_gadget_html"><div class="ttname"><a href="class_model_view_gadget.html">ModelViewGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadget_8h_source.html#l00040">modelviewgadget.h:40</a></div></div>
 <div class="ttc" id="modelviewgadgetconfiguration_8h_html"><div class="ttname"><a href="modelviewgadgetconfiguration_8h.html">modelviewgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="uavgadgetoptionspagedecorator_8h_html"><div class="ttname"><a href="uavgadgetoptionspagedecorator_8h.html">uavgadgetoptionspagedecorator.h</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga7bdf383eb25b1a5226f036371be723b5"><div class="ttname"><a href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">ModelViewGadgetFactory::~ModelViewGadgetFactory</a></div><div class="ttdeci">~ModelViewGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00038">modelviewgadgetfactory.cpp:38</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga7bdf383eb25b1a5226f036371be723b5"><div class="ttname"><a href="group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5">ModelViewGadgetFactory::~ModelViewGadgetFactory</a></div><div class="ttdeci">~ModelViewGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetfactory_8cpp_source.html#l00039">modelviewgadgetfactory.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

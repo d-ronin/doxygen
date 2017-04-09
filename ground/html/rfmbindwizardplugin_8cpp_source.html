@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,61 +138,64 @@ $(document).ready(function(){initNavTree('rfmbindwizardplugin_8cpp_source.html',
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QKeySequence&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="modemanager_8h.html">coreplugin/modemanager.h</a>&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;RfmBindWizardPlugin::RfmBindWizardPlugin() : bindWizardRunning(false)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;RfmBindWizardPlugin::~RfmBindWizardPlugin()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> RfmBindWizardPlugin::initialize(<span class="keyword">const</span> QStringList &amp; args, QString *errMsg)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_UNUSED(args);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Q_UNUSED(errMsg);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Add Menu entry</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_core_1_1_action_manager.html">Core::ActionManager</a> *am   = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">actionManager</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_core_1_1_action_container.html">Core::ActionContainer</a> *ac = am-&gt;<a class="code" href="group___core_plugin.html#ga0bd5e0ad7658056a7c80666200734df8">actionContainer</a>(<a class="code" href="group___core_plugin.html#ga2991b08955afff85a412c40a92e8d55e">Core::Constants::M_TOOLS</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_core_1_1_command.html">Core::Command</a> *cmd = am-&gt;<a class="code" href="group___core_plugin.html#ga316dd0cff29b294cd1b0631677f6357d">registerAction</a>(<span class="keyword">new</span> QAction(<span class="keyword">this</span>),</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                            <span class="stringliteral">&quot;RfmBindWizardPlugin.ShowBindWizard&quot;</span>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <a class="code" href="class_q_list.html">QList&lt;int&gt;</a>() &lt;&lt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                            <a class="code" href="group___core_plugin.html#ga73bcb9a176a2f5b7cec3008d5b0f244c">Core::Constants::C_GLOBAL_ID</a>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>()-&gt;setText(tr(<span class="stringliteral">&quot;Rfm Bind Wizard&quot;</span>));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">addAction</a>(cmd, 1);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">menu</a>()-&gt;addSeparator();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga6479409008a106faa25ceccc055c0bd6">appendGroup</a>(<span class="stringliteral">&quot;Bind Wizard&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#gaae18910476f06c6af0eecd572bf1dd51">addAction</a>(cmd, <span class="stringliteral">&quot;Bind Wizard&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    connect(cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>(), SIGNAL(triggered(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(showBindWizard()));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::extensionsInitialized()</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::shutdown()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::showBindWizard()</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (!bindWizardRunning) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        bindWizardRunning = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        RfmBindWizard *m_wiz = <span class="keyword">new</span> RfmBindWizard();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        connect(m_wiz, SIGNAL(finished(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(bindWizardTerminated()));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        m_wiz-&gt;setAttribute(Qt::WA_DeleteOnClose, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        m_wiz-&gt;setWindowFlags(m_wiz-&gt;windowFlags() | Qt::WindowStaysOnTopHint);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        m_wiz-&gt;show();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::bindWizardTerminated()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    bindWizardRunning = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    disconnect(<span class="keyword">this</span>, SLOT(bindWizardTerminated()));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;RfmBindWizardPlugin::RfmBindWizardPlugin()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : bindWizardRunning(false)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;RfmBindWizardPlugin::~RfmBindWizardPlugin()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> RfmBindWizardPlugin::initialize(<span class="keyword">const</span> QStringList &amp;args, QString *errMsg)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_UNUSED(args);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Q_UNUSED(errMsg);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Add Menu entry</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_core_1_1_action_manager.html">Core::ActionManager</a> *am = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">actionManager</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_core_1_1_action_container.html">Core::ActionContainer</a> *ac = am-&gt;<a class="code" href="group___core_plugin.html#ga0bd5e0ad7658056a7c80666200734df8">actionContainer</a>(<a class="code" href="group___core_plugin.html#ga2991b08955afff85a412c40a92e8d55e">Core::Constants::M_TOOLS</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_core_1_1_command.html">Core::Command</a> *cmd = am-&gt;<a class="code" href="group___core_plugin.html#ga316dd0cff29b294cd1b0631677f6357d">registerAction</a>(<span class="keyword">new</span> QAction(<span class="keyword">this</span>), <span class="stringliteral">&quot;RfmBindWizardPlugin.ShowBindWizard&quot;</span>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                            <a class="code" href="class_q_list.html">QList&lt;int&gt;</a>() &lt;&lt; <a class="code" href="group___core_plugin.html#ga73bcb9a176a2f5b7cec3008d5b0f244c">Core::Constants::C_GLOBAL_ID</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>()-&gt;setText(tr(<span class="stringliteral">&quot;Rfm Bind Wizard&quot;</span>));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">addAction</a>(cmd, 1);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">menu</a>()-&gt;addSeparator();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga6479409008a106faa25ceccc055c0bd6">appendGroup</a>(<span class="stringliteral">&quot;Bind Wizard&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#gaae18910476f06c6af0eecd572bf1dd51">addAction</a>(cmd, <span class="stringliteral">&quot;Bind Wizard&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    connect(cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>(), &amp;QAction::triggered, <span class="keyword">this</span>, &amp;RfmBindWizardPlugin::showBindWizard);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::extensionsInitialized()</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::shutdown()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::showBindWizard()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (!bindWizardRunning) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        bindWizardRunning = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        RfmBindWizard *m_wiz = <span class="keyword">new</span> RfmBindWizard();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        connect(m_wiz, &amp;QDialog::finished, <span class="keyword">this</span>, &amp;RfmBindWizardPlugin::bindWizardTerminated);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        m_wiz-&gt;setAttribute(Qt::WA_DeleteOnClose, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        m_wiz-&gt;setWindowFlags(m_wiz-&gt;windowFlags() | Qt::WindowStaysOnTopHint);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        m_wiz-&gt;show();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> RfmBindWizardPlugin::bindWizardTerminated()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    bindWizardRunning = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    disconnect(<span class="keyword">this</span>, SLOT(bindWizardTerminated()));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="ttc" id="group___core_plugin_html_ga756ec59f5104cce0abf8a6990a2bba2c"><div class="ttname"><a href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a></div><div class="ttdeci">static ModeManager * instance()</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00062">modemanager.h:62</a></div></div>
 <div class="ttc" id="class_core_1_1_action_container_html"><div class="ttname"><a href="class_core_1_1_action_container.html">Core::ActionContainer</a></div><div class="ttdef"><b>Definition:</b> <a href="actioncontainer_8h_source.html#l00040">actioncontainer.h:40</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
@@ -205,15 +208,15 @@ $(document).ready(function(){initNavTree('rfmbindwizardplugin_8cpp_source.html',
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga8e92377ca31ccb08155053b639c13059"><div class="ttname"><a href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">Core::ActionContainer::menu</a></div><div class="ttdeci">virtual QMenu * menu() const =0</div></div>
 <div class="ttc" id="group___core_plugin_html_ga73bcb9a176a2f5b7cec3008d5b0f244c"><div class="ttname"><a href="group___core_plugin.html#ga73bcb9a176a2f5b7cec3008d5b0f244c">Core::Constants::C_GLOBAL_ID</a></div><div class="ttdeci">const int C_GLOBAL_ID</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00090">coreconstants.h:90</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga59c08a546248c7443d069fffc04a6b90"><div class="ttname"><a href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">Core::ModeManager::addAction</a></div><div class="ttdeci">void addAction(Command *command, int priority, QMenu *menu=0)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00224">modemanager.cpp:224</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00048">coreimpl.cpp:48</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga59c08a546248c7443d069fffc04a6b90"><div class="ttname"><a href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">Core::ModeManager::addAction</a></div><div class="ttdeci">void addAction(Command *command, int priority, QMenu *menu=0)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00228">modemanager.cpp:228</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00046">coreimpl.cpp:46</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga6479409008a106faa25ceccc055c0bd6"><div class="ttname"><a href="group___core_plugin.html#ga6479409008a106faa25ceccc055c0bd6">Core::ActionContainer::appendGroup</a></div><div class="ttdeci">virtual void appendGroup(const QString &amp;group)=0</div></div>
 <div class="ttc" id="group___core_plugin_html_gaae18910476f06c6af0eecd572bf1dd51"><div class="ttname"><a href="group___core_plugin.html#gaae18910476f06c6af0eecd572bf1dd51">Core::ActionContainer::addAction</a></div><div class="ttdeci">virtual void addAction(Core::Command *action, const QString &amp;group=QString())=0</div></div>
 <div class="ttc" id="class_core_1_1_action_manager_html"><div class="ttname"><a href="class_core_1_1_action_manager.html">Core::ActionManager</a></div><div class="ttdoc">The action manager is responsible for registration of menus and menu items and keyboard shortcuts...</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8h_source.html#l00047">actionmanager.h:47</a></div></div>
 <div class="ttc" id="rfmbindwizardplugin_8h_html"><div class="ttname"><a href="rfmbindwizardplugin_8h.html">rfmbindwizardplugin.h</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="modemanager_8h_html"><div class="ttname"><a href="modemanager_8h.html">modemanager.h</a></div></div>
-<div class="ttc" id="class_core_1_1_command_html"><div class="ttname"><a href="class_core_1_1_command.html">Core::Command</a></div><div class="ttdoc">The class Command represents an action like a menu item, tool button, or shortcut. You don&#39;t create Command objects directly, instead use {ActionManager::registerAction()} to register an action and retrieve a Command. The Command object represents the user visible action and its properties. If multiple actions are registered with the same ID (but different contexts) the returned Command is the shared one between these actions. </div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00044">command.h:44</a></div></div>
+<div class="ttc" id="class_core_1_1_command_html"><div class="ttname"><a href="class_core_1_1_command.html">Core::Command</a></div><div class="ttdoc">The class Command represents an action like a menu item, tool button, or shortcut. You don&#39;t create Command objects directly, instead use {ActionManager::registerAction()} to register an action and retrieve a Command. The Command object represents the user visible action and its properties. If multiple actions are registered with the same ID (but different contexts) the returned Command is the shared one between these actions. </div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00043">command.h:43</a></div></div>
 <div class="ttc" id="coreconstants_8h_html"><div class="ttname"><a href="coreconstants_8h.html">coreconstants.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

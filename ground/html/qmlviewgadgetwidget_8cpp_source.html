@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,17 +140,17 @@ $(document).ready(function(){initNavTree('qmlviewgadgetwidget_8cpp_source.html',
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QQmlEngine&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QQmlContext&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab">   42</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab">QmlViewGadgetWidget::QmlViewGadgetWidget</a>(QWindow *parent) :</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   QQuickView(parent)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab">   42</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab">QmlViewGadgetWidget::QmlViewGadgetWidget</a>(QWindow *parent)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : QQuickView(parent)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    setResizeMode(SizeRootObjectToView);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QVector&lt;QVector&lt;UAVObject*&gt;&gt; objects = objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga1c0a0f9cb1f520422dcf4cd75535c8ab">getObjectsVector</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QVector&lt;QVector&lt;UAVObject *&gt;&gt; objects = objManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga1c0a0f9cb1f520422dcf4cd75535c8ab">getObjectsVector</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QVector&lt;UAVObject*&gt; &amp;objInst, objects)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QVector&lt;UAVObject *&gt; &amp;objInst, objects)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        engine()-&gt;rootContext()-&gt;setContextProperty(objInst.at(0)-&gt;getName(), objInst.at(0));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;qmlWidget&quot;</span>, <span class="keyword">this</span>);</div>
@@ -170,14 +170,14 @@ $(document).ready(function(){initNavTree('qmlviewgadgetwidget_8cpp_source.html',
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    engine()-&gt;clearComponentCache();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//it&#39;s necessary to allow qml side to query svg element position</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// it&#39;s necessary to allow qml side to query svg element position</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    engine()-&gt;rootContext()-&gt;setContextProperty(<span class="stringliteral">&quot;svgRenderer&quot;</span>, svgProvider);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    engine()-&gt;setBaseUrl(QUrl::fromLocalFile(fn));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; fn;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    setSource(QUrl::fromLocalFile(fn));</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QQmlError &amp;<a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>, errors()) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QQmlError &amp;<a class="code" href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a>, errors()) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        qDebug() &lt;&lt; error.description();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
@@ -191,11 +191,10 @@ $(document).ready(function(){initNavTree('qmlviewgadgetwidget_8cpp_source.html',
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QQuickView::mouseReleaseEvent(event);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga305a28b5ef9bd214c8c80a77d34b04ab"><div class="ttname"><a href="group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab">QmlViewGadgetWidget::QmlViewGadgetWidget</a></div><div class="ttdeci">QmlViewGadgetWidget(QWindow *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetwidget_8cpp_source.html#l00042">qmlviewgadgetwidget.cpp:42</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_svg_image_provider_html"><div class="ttname"><a href="class_svg_image_provider.html">SvgImageProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="svgimageprovider_8h_source.html#l00038">svgimageprovider.h:38</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga1c0a0f9cb1f520422dcf4cd75535c8ab"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga1c0a0f9cb1f520422dcf4cd75535c8ab">UAVObjectManager::getObjectsVector</a></div><div class="ttdeci">QVector&lt; QVector&lt; UAVObject * &gt; &gt; getObjectsVector()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00151">uavobjectmanager.cpp:151</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga1c0a0f9cb1f520422dcf4cd75535c8ab"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga1c0a0f9cb1f520422dcf4cd75535c8ab">UAVObjectManager::getObjectsVector</a></div><div class="ttdeci">QVector&lt; QVector&lt; UAVObject * &gt; &gt; getObjectsVector()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00154">uavobjectmanager.cpp:154</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga603740c506323fe96565cbdabe6b40ac"><div class="ttname"><a href="group___o_p_map_plugin.html#ga603740c506323fe96565cbdabe6b40ac">QmlViewGadgetWidget::mouseReleaseEvent</a></div><div class="ttdeci">void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetwidget_8cpp_source.html#l00084">qmlviewgadgetwidget.cpp:84</a></div></div>
 <div class="ttc" id="svgimageprovider_8h_html"><div class="ttname"><a href="svgimageprovider_8h.html">svgimageprovider.h</a></div></div>

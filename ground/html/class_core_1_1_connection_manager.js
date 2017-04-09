@@ -27,7 +27,7 @@ var class_core_1_1_connection_manager =
     [ "m_availableDevList", "group___core_plugin.html#ga41f481dd82dd9c22a44f9f8c3fb67b13", null ],
     [ "m_connectBtn", "group___core_plugin.html#gae7f2456d42992a7c1979e22333ef8c8c", null ],
     [ "m_connectionDevice", "group___core_plugin.html#ga37d57c467eac74260d1ca5c4ec46c149", null ],
-    [ "m_connectionsList", "group___core_plugin.html#ga3fc983f808dffe4688e191179b08008b", null ],
+    [ "m_connectionsList", "group___core_plugin.html#ga1d0c94520592f543de1baac82405b258", null ],
     [ "m_devList", "group___core_plugin.html#ga59dba38b0aaf7818a55f5324e04cbfb4", null ],
     [ "m_ioDev", "group___core_plugin.html#gae83fe34fd2dab9f0c6459abbfcd6be27", null ],
     [ "m_lastManualConnect", "group___core_plugin.html#gabf8a17eac51091845f93178d10dcd98d", null ],

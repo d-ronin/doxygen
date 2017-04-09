@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('minisplitter_8cpp_source.html','');});
 <div class="contents">
 <a href="minisplitter_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -135,77 +135,78 @@ $(document).ready(function(){initNavTree('minisplitter_8cpp_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>Core {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Internal {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">MiniSplitterHandle</a> : <span class="keyword">public</span> QSplitterHandle</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga65f8058210c0d720960768f24228fed2">   40</a></span>&#160;    <a class="code" href="group___core_plugin.html#ga65f8058210c0d720960768f24228fed2">MiniSplitterHandle</a>(Qt::Orientation orientation, QSplitter *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">MiniSplitterHandle</a> : <span class="keyword">public</span> QSplitterHandle</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga65f8058210c0d720960768f24228fed2">   40</a></span>&#160;        <a class="code" href="group___core_plugin.html#ga65f8058210c0d720960768f24228fed2">MiniSplitterHandle</a>(Qt::Orientation orientation, QSplitter *parent)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            : QSplitterHandle(orientation, parent)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        setMask(QRegion(contentsRect()));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        setAttribute(Qt::WA_MouseNoMask, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">resizeEvent</a>(QResizeEvent *event);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">paintEvent</a>(QPaintEvent *event);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">using namespace </span>Core;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">using namespace </span>Core::Internal;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">MiniSplitterHandle::resizeEvent</a>(QResizeEvent *event)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Warning: We specifically replace the QSplitterHandle::resizeEvent,</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// since there&#39;s no way of doing this while still calling it.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// That&#39;s because it has pretty much identical code (in 4.7.0) which</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// undoes what we do here. And they didn&#39;t make that code configurable :)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// This means that with Qt upgrades it&#39;s worthwhile to see if anything changed</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// in QSplitterHandle::resizeEvent, to see if there&#39;s anything important we miss.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (orientation() == Qt::Horizontal)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        setContentsMargins(6, 0, 6, 0);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        setContentsMargins(0, 6, 0, 6);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    setMask(QRegion(contentsRect()));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QWidget::resizeEvent(event);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">MiniSplitterHandle::paintEvent</a>(QPaintEvent *event)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    painter.fillRect(event-&gt;rect(), QColor(48,48,48));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">   81</a></span>&#160;QSplitterHandle *<a class="code" href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">MiniSplitter::createHandle</a>()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">MiniSplitterHandle</a>(orientation(), <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">   86</a></span>&#160;<a class="code" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">MiniSplitter::MiniSplitter</a>(QWidget *parent)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    : QSplitter(parent)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    setHandleWidth(1);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    setChildrenCollapsible(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    setProperty(<span class="stringliteral">&quot;minisplitter&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga75a5fe680b6339b267c9ca0c56f798b4">   94</a></span>&#160;<a class="code" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">MiniSplitter::MiniSplitter</a>(Qt::Orientation orientation)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    : QSplitter(orientation)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    setHandleWidth(1);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    setChildrenCollapsible(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    setProperty(<span class="stringliteral">&quot;minisplitter&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            setMask(QRegion(contentsRect()));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            setAttribute(Qt::WA_MouseNoMask, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">resizeEvent</a>(QResizeEvent *event);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">paintEvent</a>(QPaintEvent *event);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">using namespace </span>Core;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">using namespace </span>Core::Internal;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">MiniSplitterHandle::resizeEvent</a>(QResizeEvent *event)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Warning: We specifically replace the QSplitterHandle::resizeEvent,</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// since there&#39;s no way of doing this while still calling it.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// That&#39;s because it has pretty much identical code (in 4.7.0) which</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// undoes what we do here. And they didn&#39;t make that code configurable :)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// This means that with Qt upgrades it&#39;s worthwhile to see if anything changed</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// in QSplitterHandle::resizeEvent, to see if there&#39;s anything important we miss.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (orientation() == Qt::Horizontal)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        setContentsMargins(6, 0, 6, 0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        setContentsMargins(0, 6, 0, 6);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    setMask(QRegion(contentsRect()));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QWidget::resizeEvent(event);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">MiniSplitterHandle::paintEvent</a>(QPaintEvent *event)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    painter.fillRect(event-&gt;rect(), QColor(48, 48, 48));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">   82</a></span>&#160;QSplitterHandle *<a class="code" href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">MiniSplitter::createHandle</a>()</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_core_1_1_internal_1_1_mini_splitter_handle.html">MiniSplitterHandle</a>(orientation(), <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">   87</a></span>&#160;<a class="code" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">MiniSplitter::MiniSplitter</a>(QWidget *parent)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    : QSplitter(parent)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    setHandleWidth(1);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    setChildrenCollapsible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    setProperty(<span class="stringliteral">&quot;minisplitter&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga75a5fe680b6339b267c9ca0c56f798b4">   95</a></span>&#160;<a class="code" href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">MiniSplitter::MiniSplitter</a>(Qt::Orientation orientation)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    : QSplitter(orientation)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    setHandleWidth(1);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    setChildrenCollapsible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    setProperty(<span class="stringliteral">&quot;minisplitter&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="minisplitter_8h_html"><div class="ttname"><a href="minisplitter_8h.html">minisplitter.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga0daa81d1f782306819ddd45944ba50cb"><div class="ttname"><a href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">Core::MiniSplitter::MiniSplitter</a></div><div class="ttdeci">MiniSplitter(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00086">minisplitter.cpp:86</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga0daa81d1f782306819ddd45944ba50cb"><div class="ttname"><a href="group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb">Core::MiniSplitter::MiniSplitter</a></div><div class="ttdeci">MiniSplitter(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00087">minisplitter.cpp:87</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga65f8058210c0d720960768f24228fed2"><div class="ttname"><a href="group___core_plugin.html#ga65f8058210c0d720960768f24228fed2">Core::Internal::MiniSplitterHandle::MiniSplitterHandle</a></div><div class="ttdeci">MiniSplitterHandle(Qt::Orientation orientation, QSplitter *parent)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00040">minisplitter.cpp:40</a></div></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_mini_splitter_handle_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_mini_splitter_handle.html">Core::Internal::MiniSplitterHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00037">minisplitter.cpp:37</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gad623d9fe534ec44acb1595afba592a44"><div class="ttname"><a href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">Core::MiniSplitter::createHandle</a></div><div class="ttdeci">QSplitterHandle * createHandle()</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00081">minisplitter.cpp:81</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga7ce2e2f7fcc5dcbe3911272c1075c895"><div class="ttname"><a href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">Core::Internal::MiniSplitterHandle::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00057">minisplitter.cpp:57</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga2e0a77b1add27985302bd6aedf2179a5"><div class="ttname"><a href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">Core::Internal::MiniSplitterHandle::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00075">minisplitter.cpp:75</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gad623d9fe534ec44acb1595afba592a44"><div class="ttname"><a href="group___core_plugin.html#gad623d9fe534ec44acb1595afba592a44">Core::MiniSplitter::createHandle</a></div><div class="ttdeci">QSplitterHandle * createHandle()</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00082">minisplitter.cpp:82</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga7ce2e2f7fcc5dcbe3911272c1075c895"><div class="ttname"><a href="group___core_plugin.html#ga7ce2e2f7fcc5dcbe3911272c1075c895">Core::Internal::MiniSplitterHandle::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00058">minisplitter.cpp:58</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga2e0a77b1add27985302bd6aedf2179a5"><div class="ttname"><a href="group___core_plugin.html#ga2e0a77b1add27985302bd6aedf2179a5">Core::Internal::MiniSplitterHandle::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="minisplitter_8cpp_source.html#l00076">minisplitter.cpp:76</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

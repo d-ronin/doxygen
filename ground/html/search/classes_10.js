@@ -2,7 +2,6 @@ var searchData=
 [
   ['pathchooser',['PathChooser',['../class_utils_1_1_path_chooser.html',1,'Utils']]],
   ['pathchooserprivate',['PathChooserPrivate',['../struct_utils_1_1_path_chooser_private.html',1,'Utils']]],
-  ['pathcompiler',['PathCompiler',['../class_path_compiler.html',1,'']]],
   ['pathfillet',['PathFillet',['../class_path_fillet.html',1,'']]],
   ['pathplandata',['PathPlanData',['../struct_path_plan_data.html',1,'']]],
   ['pathplannergadget',['PathPlannerGadget',['../class_path_planner_gadget.html',1,'']]],

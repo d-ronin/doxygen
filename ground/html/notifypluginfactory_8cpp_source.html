@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,45 +132,42 @@ $(document).ready(function(){initNavTree('notifypluginfactory_8cpp_source.html',
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="notifypluginoptionspage_8h.html">notifypluginoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126">   36</a></span>&#160;<a class="code" href="group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126">NotifyPluginFactory::NotifyPluginFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;Notify Plugin&quot;</span>),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                          tr(<span class="stringliteral">&quot;Notify Plugin&quot;</span>),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                          parent)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">   43</a></span>&#160;<a class="code" href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">NotifyPluginFactory::~NotifyPluginFactory</a>()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">   47</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>* <a class="code" href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">NotifyPluginFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">//  NotifyPluginWidget* gadgetWidget = new NotifyPluginWidget(parent);</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>*)0;<span class="comment">//new NotifyPlugin(QString(&quot;NotifyPlugin&quot;), gadgetWidget, parent);</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">   53</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">NotifyPluginFactory::createConfiguration</a>(<span class="keyword">const</span> QByteArray &amp;state)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> NotifyPluginConfiguration(QString(<span class="stringliteral">&quot;Notify Plugin&quot;</span>), state);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">   58</a></span>&#160;IOptionsPage *<a class="code" href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">NotifyPluginFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_notify_plugin_options_page.html">NotifyPluginOptionsPage</a>(qobject_cast&lt;NotifyPluginConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126">   36</a></span>&#160;<a class="code" href="group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126">NotifyPluginFactory::NotifyPluginFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;Notify Plugin&quot;</span>), tr(<span class="stringliteral">&quot;Notify Plugin&quot;</span>), parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">   41</a></span>&#160;<a class="code" href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">NotifyPluginFactory::~NotifyPluginFactory</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">   45</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">NotifyPluginFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//  NotifyPluginWidget* gadgetWidget = new NotifyPluginWidget(parent);</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *)0; <span class="comment">// new NotifyPlugin(QString(&quot;NotifyPlugin&quot;), gadgetWidget,</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                  <span class="comment">// parent);</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">   52</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">NotifyPluginFactory::createConfiguration</a>(<span class="keyword">const</span> QByteArray &amp;state)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> NotifyPluginConfiguration(QString(<span class="stringliteral">&quot;Notify Plugin&quot;</span>), state);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">   57</a></span>&#160;IOptionsPage *<a class="code" href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">NotifyPluginFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_notify_plugin_options_page.html">NotifyPluginOptionsPage</a>(qobject_cast&lt;NotifyPluginConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
-<div class="ttc" id="class_notify_plugin_options_page_html"><div class="ttname"><a href="class_notify_plugin_options_page.html">NotifyPluginOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="notifypluginoptionspage_8h_source.html#l00058">notifypluginoptionspage.h:58</a></div></div>
-<div class="ttc" id="group___notify_plugin_html_ga04b86d8ce232e043459331bd3ab5d05d"><div class="ttname"><a href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">NotifyPluginFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00058">notifypluginfactory.cpp:58</a></div></div>
+<div class="ttc" id="class_notify_plugin_options_page_html"><div class="ttname"><a href="class_notify_plugin_options_page.html">NotifyPluginOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="notifypluginoptionspage_8h_source.html#l00057">notifypluginoptionspage.h:57</a></div></div>
+<div class="ttc" id="group___notify_plugin_html_ga04b86d8ce232e043459331bd3ab5d05d"><div class="ttname"><a href="group___notify_plugin.html#ga04b86d8ce232e043459331bd3ab5d05d">NotifyPluginFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00057">notifypluginfactory.cpp:57</a></div></div>
 <div class="ttc" id="notifypluginoptionspage_8h_html"><div class="ttname"><a href="notifypluginoptionspage_8h.html">notifypluginoptionspage.h</a></div><div class="ttdoc">Notify Plugin options page header. </div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="group___notify_plugin_html_gaf83c2c3d9f1f2adfa2629f31821c012e"><div class="ttname"><a href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">NotifyPluginFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00047">notifypluginfactory.cpp:47</a></div></div>
-<div class="ttc" id="group___notify_plugin_html_gade4f4f78125740032a0bd6d3e920d131"><div class="ttname"><a href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">NotifyPluginFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(const QByteArray &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00053">notifypluginfactory.cpp:53</a></div></div>
+<div class="ttc" id="group___notify_plugin_html_gaf83c2c3d9f1f2adfa2629f31821c012e"><div class="ttname"><a href="group___notify_plugin.html#gaf83c2c3d9f1f2adfa2629f31821c012e">NotifyPluginFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00045">notifypluginfactory.cpp:45</a></div></div>
+<div class="ttc" id="group___notify_plugin_html_gade4f4f78125740032a0bd6d3e920d131"><div class="ttname"><a href="group___notify_plugin.html#gade4f4f78125740032a0bd6d3e920d131">NotifyPluginFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(const QByteArray &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00052">notifypluginfactory.cpp:52</a></div></div>
 <div class="ttc" id="notifypluginfactory_8h_html"><div class="ttname"><a href="notifypluginfactory_8h.html">notifypluginfactory.h</a></div></div>
 <div class="ttc" id="group___notify_plugin_html_ga3c91b1f9c5a354b8d5886dd3cff94126"><div class="ttname"><a href="group___notify_plugin.html#ga3c91b1f9c5a354b8d5886dd3cff94126">NotifyPluginFactory::NotifyPluginFactory</a></div><div class="ttdeci">NotifyPluginFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00036">notifypluginfactory.cpp:36</a></div></div>
 <div class="ttc" id="notifyplugin_8h_html"><div class="ttname"><a href="notifyplugin_8h.html">notifyplugin.h</a></div></div>
-<div class="ttc" id="group___notify_plugin_html_ga312b0e9ce81892b5388bb21c4f4c426a"><div class="ttname"><a href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">NotifyPluginFactory::~NotifyPluginFactory</a></div><div class="ttdeci">~NotifyPluginFactory()</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00043">notifypluginfactory.cpp:43</a></div></div>
+<div class="ttc" id="group___notify_plugin_html_ga312b0e9ce81892b5388bb21c4f4c426a"><div class="ttname"><a href="group___notify_plugin.html#ga312b0e9ce81892b5388bb21c4f4c426a">NotifyPluginFactory::~NotifyPluginFactory</a></div><div class="ttdeci">~NotifyPluginFactory()</div><div class="ttdef"><b>Definition:</b> <a href="notifypluginfactory_8cpp_source.html#l00041">notifypluginfactory.cpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

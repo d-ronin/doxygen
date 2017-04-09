@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -139,45 +139,46 @@ $(document).ready(function(){initNavTree('gcscontrol_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;QTimer&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gcscontrolgadgetfactory_8h.html">gcscontrolgadgetfactory.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_g_c_s_control.html">   39</a></span>&#160;<span class="keyword">class </span>GCSCONTROLSHARED_EXPORT <a class="code" href="class_g_c_s_control.html">GCSControl</a> : <span class="keyword">public</span> <a class="code" href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.dronin.plugins.GCSControlPlugin&quot;</span>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_g_c_s_control.html">GCSControl</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ~<a class="code" href="class_g_c_s_control.html">GCSControl</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">extensionsInitialized</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">initialize</a>(<span class="keyword">const</span> QStringList &amp; arguments, QString *errorString);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a65c16ebd3a6e89918a99af6515fe68cb">shutdown</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>    SDLGamepad *sdlGamepad;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> beginGCSControl();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> endGCSControl();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> setFlightMode(ManualControlSettings::FlightModePositionOptions flightMode);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> setThrottle(<span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> setRoll(<span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> setPitch(<span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> setYaw(<span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> setChannel(quint8 channel, <span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ManualControlSettings *manControlSettingsUAVO;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    GCSReceiver *m_gcsReceiver;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> firstInstance;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ManualControlSettings::DataFields dataBackup;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ManualControlSettings::Metadata metaBackup;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> hasControl;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QTimer receiverActivity;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_factory.html">GCSControlGadgetFactory</a> *mf;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> objectsUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> receiverActivitySlot();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // GCSCONTROL_H</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_g_c_s_control.html">   39</a></span>&#160;<span class="keyword">class </span>GCSCONTROLSHARED_EXPORT <a class="code" href="class_g_c_s_control.html">GCSControl</a> : <span class="keyword">public</span> <a class="code" href="class_extension_system_1_1_i_plugin.html">ExtensionSystem::IPlugin</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.dronin.plugins.GCSControlPlugin&quot;</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_g_c_s_control.html">GCSControl</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ~<a class="code" href="class_g_c_s_control.html">GCSControl</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">extensionsInitialized</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">initialize</a>(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a65c16ebd3a6e89918a99af6515fe68cb">shutdown</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>    SDLGamepad *sdlGamepad;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> beginGCSControl();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> endGCSControl();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> setFlightMode(ManualControlSettings::FlightModePositionOptions flightMode);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> setThrottle(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> setRoll(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> setPitch(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> setYaw(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> setChannel(quint8 channel, <span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ManualControlSettings *manControlSettingsUAVO;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    GCSReceiver *m_gcsReceiver;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> firstInstance;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ManualControlSettings::DataFields dataBackup;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ManualControlSettings::Metadata metaBackup;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> hasControl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QTimer receiverActivity;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_factory.html">GCSControlGadgetFactory</a> *mf;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> objectsUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> receiverActivitySlot();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // GCSCONTROL_H</span></div>
 <div class="ttc" id="gcscontrol__global_8h_html"><div class="ttname"><a href="gcscontrol__global_8h.html">gcscontrol_global.h</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a1db3a7fb242fca02229f9a3be4fd6610"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">ExtensionSystem::IPlugin::extensionsInitialized</a></div><div class="ttdeci">virtual void extensionsInitialized()=0</div></div>

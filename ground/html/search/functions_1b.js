@@ -135,7 +135,6 @@ var searchData=
   ['_7enotifypluginoptionspage',['~NotifyPluginOptionsPage',['../group___notify_plugin.html#ga3dfd084ec6b7b9f55aeb3a5c475b11d7',1,'NotifyPluginOptionsPage']]],
   ['_7enotyetimplementedpage',['~NotYetImplementedPage',['../group___not_yet_implemented_page.html#gaddca330fa063b9b729adc5f9eb7f3eeb',1,'NotYetImplementedPage']]],
   ['_7eobjecttransactioninfo',['~ObjectTransactionInfo',['../group___u_a_v_talk_plugin.html#ga8b1a7a6e63feac107ca370ce1a68758f',1,'ObjectTransactionInfo']]],
-  ['_7eopmap_5fedit_5fwaypoint_5fdialog',['~opmap_edit_waypoint_dialog',['../group___o_p_map_plugin.html#ga7d3684f9a7139a132614c5f4d9d91910',1,'opmap_edit_waypoint_dialog']]],
   ['_7eopmap_5fstatusbar_5fwidget',['~opmap_statusbar_widget',['../group___o_p_map_plugin.html#gaf9e51f27e900dce668581330be2f272f',1,'opmap_statusbar_widget']]],
   ['_7eopmap_5fzoom_5fslider_5fwidget',['~opmap_zoom_slider_widget',['../group___o_p_map_plugin.html#gab379eba250616b76de62dd392fa0e14d',1,'opmap_zoom_slider_widget']]],
   ['_7eopmapgadget',['~OPMapGadget',['../group___o_p_map_plugin.html#ga041e6faec573a7770cc9ddfdf8694a5e',1,'OPMapGadget']]],

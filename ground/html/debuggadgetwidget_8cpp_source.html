@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,50 +140,50 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QScrollBar&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">   42</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">DebugGadgetWidget::DebugGadgetWidget</a>(QWidget *parent) : QLabel(parent)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_config = <span class="keyword">new</span> Ui_Form();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_config-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_debug_engine.html">DebugEngine</a> *de = <a class="code" href="group___debug_gadget_plugin.html#ga4477585da2aa01a2654b0f6dee7f4de1">DebugEngine::getInstance</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    connect(de, SIGNAL(message(<a class="code" href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a>, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>, <span class="keyword">const</span> QString &amp;)),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keyword">this</span>, SLOT(message(<a class="code" href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a>, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>, <span class="keyword">const</span> QString &amp;)),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                Qt::QueuedConnection);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    connect(m_config-&gt;saveToFile, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(saveLog()));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    connect(m_config-&gt;clearLog, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(clearLog()));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">   54</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">DebugGadgetWidget::~DebugGadgetWidget</a>()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Do nothing</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::saveLog()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString fileName = QFileDialog::getSaveFileName(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Save log File As&quot;</span>),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                    QString(<span class="stringliteral">&quot;gcs-debug-log-%0.html&quot;</span>).arg(QDateTime::currentDateTime().toString(<span class="stringliteral">&quot;yyyyMMdd-hhmmss&quot;</span>)),</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                    tr(<span class="stringliteral">&quot;HTML (*.html)&quot;</span>));</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty())</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(fileName);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly) &amp;&amp;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(m_config-&gt;plainTextEdit-&gt;toHtml().toLatin1()) != -1)) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        QMessageBox::critical(0,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                              tr(<span class="stringliteral">&quot;Log Save&quot;</span>),</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                              QMessageBox::Ok);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::clearLog()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_config-&gt;plainTextEdit-&gt;clear();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::message(<a class="code" href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a> level, <span class="keyword">const</span> QString &amp;msg, <span class="keyword">const</span> QString &amp;<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> line, <span class="keyword">const</span> QString &amp;<span class="keyword">function</span>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">   42</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">DebugGadgetWidget::DebugGadgetWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : QLabel(parent)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_config = <span class="keyword">new</span> Ui_Form();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_config-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_debug_engine.html">DebugEngine</a> *de = <a class="code" href="group___debug_gadget_plugin.html#ga4477585da2aa01a2654b0f6dee7f4de1">DebugEngine::getInstance</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    connect(de, &amp;<a class="code" href="class_debug_engine.html#a82c5fcab0ccf34db65e1752a344ff384">DebugEngine::message</a>, <span class="keyword">this</span>, &amp;DebugGadgetWidget::message, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(m_config-&gt;saveToFile, &amp;QAbstractButton::clicked, <span class="keyword">this</span>, &amp;DebugGadgetWidget::saveLog);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    connect(m_config-&gt;clearLog, &amp;QAbstractButton::clicked, <span class="keyword">this</span>, &amp;DebugGadgetWidget::clearLog);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">   53</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">DebugGadgetWidget::~DebugGadgetWidget</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::saveLog()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString fileName = QFileDialog::getSaveFileName(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Save log File As&quot;</span>),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        QString(<span class="stringliteral">&quot;gcs-debug-log-%0.html&quot;</span>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            .arg(QDateTime::currentDateTime().toString(<span class="stringliteral">&quot;yyyyMMdd-hhmmss&quot;</span>)),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        tr(<span class="stringliteral">&quot;HTML (*.html)&quot;</span>));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty())</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(fileName);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &amp;&amp; (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(m_config-&gt;plainTextEdit-&gt;toHtml().toLatin1()) != -1)) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Log Save&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              QMessageBox::Ok);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::clearLog()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_config-&gt;plainTextEdit-&gt;clear();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> DebugGadgetWidget::message(<a class="code" href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a> level, <span class="keyword">const</span> QString &amp;msg, <span class="keyword">const</span> QString &amp;<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> line, <span class="keyword">const</span> QString &amp;<span class="keyword">function</span>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QColor color;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QString type;</div>
@@ -214,29 +214,33 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifdef QT_DEBUG // only display this extended info to devs</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span>    source = QString(<span class="stringliteral">&quot;[%0:%1 %2]&quot;</span>).arg(file).arg(line).arg(<span class="keyword">function</span>);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>    Q_UNUSED(file); Q_UNUSED(line); Q_UNUSED(<span class="keyword">function</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_config-&gt;plainTextEdit-&gt;setTextColor(color);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_config-&gt;plainTextEdit-&gt;append(QString(<span class="stringliteral">&quot;%0[%1]%2 %3&quot;</span>).arg(QTime::currentTime().toString()).arg(type).arg(source).arg(msg));</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QScrollBar *sb = m_config-&gt;plainTextEdit-&gt;verticalScrollBar();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    sb-&gt;setValue(sb-&gt;maximum());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a5fa8221547f7775e0845c29116aacccb"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a5fa8221547f7775e0845c29116aacccb">DebugEngine::WARNING</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00044">debugengine.h:44</a></div></div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65">DebugEngine::DEBUG</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00042">debugengine.h:42</a></div></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>    Q_UNUSED(file);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    Q_UNUSED(line);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    Q_UNUSED(<span class="keyword">function</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_config-&gt;plainTextEdit-&gt;setTextColor(color);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    m_config-&gt;plainTextEdit-&gt;append(</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        QString(<span class="stringliteral">&quot;%0[%1]%2 %3&quot;</span>).arg(QTime::currentTime().toString()).arg(type).arg(source).arg(msg));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    QScrollBar *sb = m_config-&gt;plainTextEdit-&gt;verticalScrollBar();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    sb-&gt;setValue(sb-&gt;maximum());</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a5fa8221547f7775e0845c29116aacccb"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a5fa8221547f7775e0845c29116aacccb">DebugEngine::WARNING</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00045">debugengine.h:45</a></div></div>
+<div class="ttc" id="class_debug_engine_html_a82c5fcab0ccf34db65e1752a344ff384"><div class="ttname"><a href="class_debug_engine.html#a82c5fcab0ccf34db65e1752a344ff384">DebugEngine::message</a></div><div class="ttdeci">void message(DebugEngine::Level level, const QString &amp;msg, const QString &amp;file=&quot;&quot;, const int line=0, const QString &amp;function=&quot;&quot;)</div></div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65">DebugEngine::DEBUG</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00043">debugengine.h:43</a></div></div>
 <div class="ttc" id="debuggadgetwidget_8h_html"><div class="ttname"><a href="debuggadgetwidget_8h.html">debuggadgetwidget.h</a></div></div>
-<div class="ttc" id="class_debug_engine_html"><div class="ttname"><a href="class_debug_engine.html">DebugEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00036">debugengine.h:36</a></div></div>
+<div class="ttc" id="class_debug_engine_html"><div class="ttname"><a href="class_debug_engine.html">DebugEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00035">debugengine.h:35</a></div></div>
 <div class="ttc" id="group___debug_gadget_plugin_html_ga67e29acbc33b5ca194215ea1c70e9e72"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">DebugGadgetWidget::DebugGadgetWidget</a></div><div class="ttdeci">DebugGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8cpp_source.html#l00042">debuggadgetwidget.cpp:42</a></div></div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954">DebugEngine::FATAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00046">debugengine.h:46</a></div></div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954">DebugEngine::FATAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00047">debugengine.h:47</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a97c04efa65bcf0928abf9260bc5cbf46"><div class="ttname"><a href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a></div><div class="ttdeci">Parse log file</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00107">uavobjecttemplate.m:107</a></div></div>
 <div class="ttc" id="debugengine_8h_html"><div class="ttname"><a href="debugengine_8h.html">debugengine.h</a></div></div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00041">debugengine.h:41</a></div></div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73">DebugEngine::INFO</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00043">debugengine.h:43</a></div></div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00042">debugengine.h:42</a></div></div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73">DebugEngine::INFO</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00044">debugengine.h:44</a></div></div>
 <div class="ttc" id="group___debug_gadget_plugin_html_ga4477585da2aa01a2654b0f6dee7f4de1"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga4477585da2aa01a2654b0f6dee7f4de1">DebugEngine::getInstance</a></div><div class="ttdeci">static DebugEngine * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8cpp_source.html#l00035">debugengine.cpp:35</a></div></div>
-<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8">DebugEngine::CRITICAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00045">debugengine.h:45</a></div></div>
-<div class="ttc" id="group___debug_gadget_plugin_html_ga74a70926720377a2a71c0946408b8127"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">DebugGadgetWidget::~DebugGadgetWidget</a></div><div class="ttdeci">~DebugGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8cpp_source.html#l00054">debuggadgetwidget.cpp:54</a></div></div>
+<div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8">DebugEngine::CRITICAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00046">debugengine.h:46</a></div></div>
+<div class="ttc" id="group___debug_gadget_plugin_html_ga74a70926720377a2a71c0946408b8127"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga74a70926720377a2a71c0946408b8127">DebugGadgetWidget::~DebugGadgetWidget</a></div><div class="ttdeci">~DebugGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8cpp_source.html#l00053">debuggadgetwidget.cpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

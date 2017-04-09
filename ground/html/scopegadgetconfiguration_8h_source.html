@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -139,35 +139,34 @@ $(document).ready(function(){initNavTree('scopegadgetconfiguration_8h_source.htm
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_scope_gadget_configuration.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>(QString classId, QSettings* qSettings = 0, QObject *parent = 0);</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_scope_gadget_configuration.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>(QString classId, QSettings *qSettings = 0,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                      QObject *parent = 0);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~<a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//configurations getter functions</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">   50</a></span>&#160;    <a class="code" href="class_scope_config.html">ScopeConfig</a>* <a class="code" href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">getScope</a>(){<span class="keywordflow">return</span> m_scope;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// configurations getter functions</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">   50</a></span>&#160;    <a class="code" href="class_scope_config.html">ScopeConfig</a> *<a class="code" href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">getScope</a>() { <span class="keywordflow">return</span> m_scope; }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings* settings) <span class="keyword">const</span>; <span class="comment">//THIS SEEMS TO BE UNUSED</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>* <a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>; <span class="comment">// THIS SEEMS TO BE UNUSED</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> applyGuiConfiguration(Ui::ScopeGadgetOptionsPage *options_page);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_scope_config.html">ScopeConfig</a> *m_scope;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // SCOPEGADGETCONFIGURATION_H</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // SCOPEGADGETCONFIGURATION_H</span></div>
 <div class="ttc" id="group___scope_plugin_html_gad77c6650f45b62d917a93db28ddbcc56"><div class="ttname"><a href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">ScopeGadgetConfiguration::getScope</a></div><div class="ttdeci">ScopeConfig * getScope()</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00050">scopegadgetconfiguration.h:50</a></div></div>
 <div class="ttc" id="scopesconfig_8h_html"><div class="ttname"><a href="scopesconfig_8h.html">scopesconfig.h</a></div></div>
-<div class="ttc" id="class_scope_config_html"><div class="ttname"><a href="class_scope_config.html">ScopeConfig</a></div><div class="ttdoc">The ScopeConfig class The parent class for scope configuration classes data sources. </div><div class="ttdef"><b>Definition:</b> <a href="scopesconfig_8h_source.html#l00062">scopesconfig.h:62</a></div></div>
+<div class="ttc" id="class_scope_config_html"><div class="ttname"><a href="class_scope_config.html">ScopeConfig</a></div><div class="ttdoc">The ScopeConfig class The parent class for scope configuration classes data sources. </div><div class="ttdef"><b>Definition:</b> <a href="scopesconfig_8h_source.html#l00056">scopesconfig.h:56</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab86084dd3556b645fa8020dc33776d88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a></div><div class="ttdeci">UAVDataObject * clone(quint32 instID)</div></div>
-<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00042">scopegadgetconfiguration.h:42</a></div></div>
+<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00041">scopegadgetconfiguration.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

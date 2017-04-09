@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,32 +130,30 @@ $(document).ready(function(){initNavTree('taulinkgadgetfactory_8cpp_source.html'
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="taulinkgadget_8h.html">taulinkgadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#gad2365dd07db5c1a65458f05ad4f4c0fb">   30</a></span>&#160;<a class="code" href="group___tau_link_gadget_plugin.html#gad2365dd07db5c1a65458f05ad4f4c0fb">TauLinkGadgetFactory::TauLinkGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;TauLinkGadget&quot;</span>),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          tr(<span class="stringliteral">&quot;Tau Link&quot;</span>),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          parent)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    tauLinkPlugin = (<a class="code" href="class_tau_link_plugin.html">TauLinkPlugin</a> *) parent;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">   38</a></span>&#160;<a class="code" href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">TauLinkGadgetFactory::~TauLinkGadgetFactory</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">   43</a></span>&#160;IUAVGadget* <a class="code" href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">TauLinkGadgetFactory::createGadget</a>(QWidget *parent) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_tau_link_gadget.html">TauLinkGadget</a>(QString(<span class="stringliteral">&quot;TauLinkGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#gad2365dd07db5c1a65458f05ad4f4c0fb">   30</a></span>&#160;<a class="code" href="group___tau_link_gadget_plugin.html#gad2365dd07db5c1a65458f05ad4f4c0fb">TauLinkGadgetFactory::TauLinkGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;TauLinkGadget&quot;</span>), tr(<span class="stringliteral">&quot;Tau Link&quot;</span>), parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    tauLinkPlugin = (<a class="code" href="class_tau_link_plugin.html">TauLinkPlugin</a> *)parent;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">   36</a></span>&#160;<a class="code" href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">TauLinkGadgetFactory::~TauLinkGadgetFactory</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">   40</a></span>&#160;IUAVGadget *<a class="code" href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">TauLinkGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_tau_link_gadget.html">TauLinkGadget</a>(QString(<span class="stringliteral">&quot;TauLinkGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="ttc" id="class_tau_link_gadget_widget_html"><div class="ttname"><a href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8h_source.html#l00035">taulinkgadgetwidget.h:35</a></div></div>
 <div class="ttc" id="taulinkgadget_8h_html"><div class="ttname"><a href="taulinkgadget_8h.html">taulinkgadget.h</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="class_tau_link_plugin_html"><div class="ttname"><a href="class_tau_link_plugin.html">TauLinkPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkplugin_8h_source.html#l00039">taulinkplugin.h:39</a></div></div>
 <div class="ttc" id="taulinkgadgetwidget_8h_html"><div class="ttname"><a href="taulinkgadgetwidget_8h.html">taulinkgadgetwidget.h</a></div></div>
-<div class="ttc" id="group___tau_link_gadget_plugin_html_ga97f9703e3c2e53ccd06e77781d6a65e9"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">TauLinkGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetfactory_8cpp_source.html#l00043">taulinkgadgetfactory.cpp:43</a></div></div>
+<div class="ttc" id="group___tau_link_gadget_plugin_html_ga97f9703e3c2e53ccd06e77781d6a65e9"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga97f9703e3c2e53ccd06e77781d6a65e9">TauLinkGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetfactory_8cpp_source.html#l00040">taulinkgadgetfactory.cpp:40</a></div></div>
 <div class="ttc" id="group___tau_link_gadget_plugin_html_gad2365dd07db5c1a65458f05ad4f4c0fb"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#gad2365dd07db5c1a65458f05ad4f4c0fb">TauLinkGadgetFactory::TauLinkGadgetFactory</a></div><div class="ttdeci">TauLinkGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetfactory_8cpp_source.html#l00030">taulinkgadgetfactory.cpp:30</a></div></div>
 <div class="ttc" id="taulinkgadgetfactory_8h_html"><div class="ttname"><a href="taulinkgadgetfactory_8h.html">taulinkgadgetfactory.h</a></div></div>
-<div class="ttc" id="group___tau_link_gadget_plugin_html_ga70350f9f5334cbb2d5fd03752e086f13"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">TauLinkGadgetFactory::~TauLinkGadgetFactory</a></div><div class="ttdeci">~TauLinkGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetfactory_8cpp_source.html#l00038">taulinkgadgetfactory.cpp:38</a></div></div>
+<div class="ttc" id="group___tau_link_gadget_plugin_html_ga70350f9f5334cbb2d5fd03752e086f13"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga70350f9f5334cbb2d5fd03752e086f13">TauLinkGadgetFactory::~TauLinkGadgetFactory</a></div><div class="ttdeci">~TauLinkGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetfactory_8cpp_source.html#l00036">taulinkgadgetfactory.cpp:36</a></div></div>
 <div class="ttc" id="class_tau_link_gadget_html"><div class="ttname"><a href="class_tau_link_gadget.html">TauLinkGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadget_8h_source.html#l00038">taulinkgadget.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

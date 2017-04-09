@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,31 +138,32 @@ $(document).ready(function(){initNavTree('gpsdisplaywidget_8h_source.html','');}
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>Ui_GpsDisplayWidget;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_gps_display_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gps_display_widget.html">GpsDisplayWidget</a> : <span class="keyword">public</span> QWidget, <span class="keyword">public</span> Ui_GpsDisplayWidget {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="group___g_p_s_gadget_plugin.html#gab1f79fecf5da3b9fde3b8c100406dfd8">GpsDisplayWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group___g_p_s_gadget_plugin.html#gaf71af26494c1e959b1b6b3eabd861e53">~GpsDisplayWidget</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setSVs(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setPosition(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setDateTime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setSpeedHeading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setFixType(<span class="keyword">const</span> QString &amp;fixtype);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setDOP(<span class="keywordtype">double</span> hdop, <span class="keywordtype">double</span> vdop, <span class="keywordtype">double</span> pdop);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_gps_constellation_widget.html">GpsConstellationWidget</a> *gpsConstellation;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QGraphicsSvgItem *marker;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPSDISPLAYWIDGET_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_gps_display_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gps_display_widget.html">GpsDisplayWidget</a> : <span class="keyword">public</span> QWidget, <span class="keyword">public</span> Ui_GpsDisplayWidget</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group___g_p_s_gadget_plugin.html#gab1f79fecf5da3b9fde3b8c100406dfd8">GpsDisplayWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group___g_p_s_gadget_plugin.html#gaf71af26494c1e959b1b6b3eabd861e53">~GpsDisplayWidget</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setSVs(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setPosition(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setDateTime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setSpeedHeading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setFixType(<span class="keyword">const</span> QString &amp;fixtype);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> setDOP(<span class="keywordtype">double</span> hdop, <span class="keywordtype">double</span> vdop, <span class="keywordtype">double</span> pdop);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_gps_constellation_widget.html">GpsConstellationWidget</a> *gpsConstellation;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QGraphicsSvgItem *marker;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPSDISPLAYWIDGET_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_gps_display_widget_html"><div class="ttname"><a href="class_gps_display_widget.html">GpsDisplayWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaywidget_8h_source.html#l00039">gpsdisplaywidget.h:39</a></div></div>
 <div class="ttc" id="gpsconstellationwidget_8h_html"><div class="ttname"><a href="gpsconstellationwidget_8h.html">gpsconstellationwidget.h</a></div></div>
-<div class="ttc" id="group___g_p_s_gadget_plugin_html_gab1f79fecf5da3b9fde3b8c100406dfd8"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gab1f79fecf5da3b9fde3b8c100406dfd8">GpsDisplayWidget::GpsDisplayWidget</a></div><div class="ttdeci">GpsDisplayWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaywidget_8cpp_source.html#l00044">gpsdisplaywidget.cpp:44</a></div></div>
+<div class="ttc" id="group___g_p_s_gadget_plugin_html_gab1f79fecf5da3b9fde3b8c100406dfd8"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gab1f79fecf5da3b9fde3b8c100406dfd8">GpsDisplayWidget::GpsDisplayWidget</a></div><div class="ttdeci">GpsDisplayWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaywidget_8cpp_source.html#l00043">gpsdisplaywidget.cpp:43</a></div></div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_gaf71af26494c1e959b1b6b3eabd861e53"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gaf71af26494c1e959b1b6b3eabd861e53">GpsDisplayWidget::~GpsDisplayWidget</a></div><div class="ttdeci">~GpsDisplayWidget()</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaywidget_8cpp_source.html#l00062">gpsdisplaywidget.cpp:62</a></div></div>
-<div class="ttc" id="class_gps_constellation_widget_html"><div class="ttname"><a href="class_gps_constellation_widget.html">GpsConstellationWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8h_source.html#l00035">gpsconstellationwidget.h:35</a></div></div>
+<div class="ttc" id="class_gps_constellation_widget_html"><div class="ttname"><a href="class_gps_constellation_widget.html">GpsConstellationWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8h_source.html#l00034">gpsconstellationwidget.h:34</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

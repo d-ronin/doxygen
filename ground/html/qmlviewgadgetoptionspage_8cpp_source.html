@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,58 +133,56 @@ $(document).ready(function(){initNavTree('qmlviewgadgetoptionspage_8cpp_source.h
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavdataobject_8h.html">uavdataobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QFileDialog&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QtAlgorithms&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">   39</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">QmlViewGadgetOptionsPage::QmlViewGadgetOptionsPage</a>(<a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a> *config, QObject *parent) :</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        IOptionsPage(parent),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_config(config)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QFileDialog&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QtAlgorithms&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">   38</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">QmlViewGadgetOptionsPage::QmlViewGadgetOptionsPage</a>(<a class="code" href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a> *config,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                   QObject *parent)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : IOptionsPage(parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    , m_config(config)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//creates options page widget (uses the UI file)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// creates options page widget (uses the UI file)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gabea978f47d48fc92ec7e5a0ed8d88fe0">   46</a></span>&#160;QWidget *<a class="code" href="group___o_p_map_plugin.html#gabea978f47d48fc92ec7e5a0ed8d88fe0">QmlViewGadgetOptionsPage::createPage</a>(QWidget *parent)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_UNUSED(parent);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    options_page = <span class="keyword">new</span> Ui::QmlViewGadgetOptionsPage();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//main widget</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// main widget</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QWidget *optionsPageWidget = <span class="keyword">new</span> QWidget;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//main layout</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// main layout</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    options_page-&gt;setupUi(optionsPageWidget);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    options_page-&gt;svgSourceFile-&gt;setExpectedKind(Utils::PathChooser::File);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;QML file (*.qml)&quot;</span>));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose QML file&quot;</span>));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPath(m_config-&gt;<a class="code" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">dialFile</a>());</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">QmlViewGadgetOptionsPage::apply</a>()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    m_config-&gt;<a class="code" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">setDialFile</a>(options_page-&gt;svgSourceFile-&gt;path());</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">QmlViewGadgetOptionsPage::finish</a>()</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="ttc" id="group___o_p_map_plugin_html_gae54bde0f44f72b28df2d9722d829d930"><div class="ttname"><a href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">QmlViewGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00073">qmlviewgadgetoptionspage.cpp:73</a></div></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Restore the contents from the settings:</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    options_page-&gt;svgSourceFile-&gt;setExpectedKind(Utils::PathChooser::File);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPromptDialogFilter(tr(<span class="stringliteral">&quot;QML file (*.qml)&quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPromptDialogTitle(tr(<span class="stringliteral">&quot;Choose QML file&quot;</span>));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    options_page-&gt;svgSourceFile-&gt;setPath(m_config-&gt;<a class="code" href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">dialFile</a>());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> optionsPageWidget;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">QmlViewGadgetOptionsPage::apply</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_config-&gt;<a class="code" href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">setDialFile</a>(options_page-&gt;svgSourceFile-&gt;path());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">QmlViewGadgetOptionsPage::finish</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="ttc" id="group___o_p_map_plugin_html_gae54bde0f44f72b28df2d9722d829d930"><div class="ttname"><a href="group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930">QmlViewGadgetOptionsPage::apply</a></div><div class="ttdeci">void apply()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00071">qmlviewgadgetoptionspage.cpp:71</a></div></div>
 <div class="ttc" id="class_qml_view_gadget_configuration_html"><div class="ttname"><a href="class_qml_view_gadget_configuration.html">QmlViewGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00034">qmlviewgadgetconfiguration.h:34</a></div></div>
 <div class="ttc" id="qmlviewgadgetoptionspage_8h_html"><div class="ttname"><a href="qmlviewgadgetoptionspage_8h.html">qmlviewgadgetoptionspage.h</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_gabea978f47d48fc92ec7e5a0ed8d88fe0"><div class="ttname"><a href="group___o_p_map_plugin.html#gabea978f47d48fc92ec7e5a0ed8d88fe0">QmlViewGadgetOptionsPage::createPage</a></div><div class="ttdeci">QWidget * createPage(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00046">qmlviewgadgetoptionspage.cpp:46</a></div></div>
 <div class="ttc" id="uavdataobject_8h_html"><div class="ttname"><a href="uavdataobject_8h.html">uavdataobject.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga8730978634b18a85389188571ad7fec5"><div class="ttname"><a href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">QmlViewGadgetOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00078">qmlviewgadgetoptionspage.cpp:78</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga8730978634b18a85389188571ad7fec5"><div class="ttname"><a href="group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5">QmlViewGadgetOptionsPage::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00076">qmlviewgadgetoptionspage.cpp:76</a></div></div>
 <div class="ttc" id="qmlviewgadgetconfiguration_8h_html"><div class="ttname"><a href="qmlviewgadgetconfiguration_8h.html">qmlviewgadgetconfiguration.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga797d73a96488915da65e8cd79ceac1fe"><div class="ttname"><a href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">QmlViewGadgetConfiguration::dialFile</a></div><div class="ttdeci">QString dialFile()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00044">qmlviewgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gaf6860d14e2ae756100a2765d50a6d9b0"><div class="ttname"><a href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">QmlViewGadgetOptionsPage::QmlViewGadgetOptionsPage</a></div><div class="ttdeci">QmlViewGadgetOptionsPage(QmlViewGadgetConfiguration *config, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00039">qmlviewgadgetoptionspage.cpp:39</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga3811e60e4028c59e57997daf43edc66a"><div class="ttname"><a href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">QmlViewGadgetConfiguration::setDialFile</a></div><div class="ttdeci">void setDialFile(QString dialFile)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00041">qmlviewgadgetconfiguration.h:41</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga797d73a96488915da65e8cd79ceac1fe"><div class="ttname"><a href="group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe">QmlViewGadgetConfiguration::dialFile</a></div><div class="ttdeci">QString dialFile()</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00045">qmlviewgadgetconfiguration.h:45</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_gaf6860d14e2ae756100a2765d50a6d9b0"><div class="ttname"><a href="group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0">QmlViewGadgetOptionsPage::QmlViewGadgetOptionsPage</a></div><div class="ttdeci">QmlViewGadgetOptionsPage(QmlViewGadgetConfiguration *config, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetoptionspage_8cpp_source.html#l00038">qmlviewgadgetoptionspage.cpp:38</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga3811e60e4028c59e57997daf43edc66a"><div class="ttname"><a href="group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a">QmlViewGadgetConfiguration::setDialFile</a></div><div class="ttdeci">void setDialFile(QString dialFile)</div><div class="ttdef"><b>Definition:</b> <a href="qmlviewgadgetconfiguration_8h_source.html#l00042">qmlviewgadgetconfiguration.h:42</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,35 +138,36 @@ $(document).ready(function(){initNavTree('serialpluginconfiguration_8h_source.ht
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  */</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_serial_plugin_configuration.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a>(QString classId, QSettings* qSettings = 0, QObject *parent = 0);</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">   43</a></span>&#160;    QString <a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>() { <span class="keywordflow">return</span> m_speed; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">reconnect</a>() { <span class="keywordflow">return</span> m_reconnect; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings* settings) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> savesettings() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> restoresettings();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString m_speed;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> m_reconnect;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QSettings* settings;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">setSpeed</a>(QString speed) { m_speed = speed; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">setReconnect</a>(<span class="keywordtype">bool</span> reconnect) { m_reconnect = reconnect; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // SERIALPLUGINCONFIGURATION_H</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a>(QString classId, QSettings *qSettings = 0,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                       QObject *parent = 0);</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">   44</a></span>&#160;    QString <a class="code" href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">speed</a>() { <span class="keywordflow">return</span> m_speed; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">reconnect</a>() { <span class="keywordflow">return</span> m_reconnect; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> savesettings() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> restoresettings();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QString m_speed;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> m_reconnect;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QSettings *settings;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">   57</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">setSpeed</a>(QString speed) { m_speed = speed; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">setReconnect</a>(<span class="keywordtype">bool</span> reconnect) { m_reconnect = reconnect; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // SERIALPLUGINCONFIGURATION_H</span></div>
 <div class="ttc" id="class_serial_plugin_configuration_html"><div class="ttname"><a href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00038">serialpluginconfiguration.h:38</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00043">serialpluginconfiguration.h:43</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga1e6623a11c7e9c8e52411d2568dd4e7c"><div class="ttname"><a href="group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c">SerialPluginConfiguration::speed</a></div><div class="ttdeci">QString speed()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00044">serialpluginconfiguration.h:44</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga6e476e94e24bb1f9bf91de3c99ff00fc"><div class="ttname"><a href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">SerialPluginConfiguration::setSpeed</a></div><div class="ttdeci">void setSpeed(QString speed)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00055">serialpluginconfiguration.h:55</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga6e476e94e24bb1f9bf91de3c99ff00fc"><div class="ttname"><a href="group___serial_plugin.html#ga6e476e94e24bb1f9bf91de3c99ff00fc">SerialPluginConfiguration::setSpeed</a></div><div class="ttdeci">void setSpeed(QString speed)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00057">serialpluginconfiguration.h:57</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab86084dd3556b645fa8020dc33776d88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a></div><div class="ttdeci">UAVDataObject * clone(quint32 instID)</div></div>
-<div class="ttc" id="group___serial_plugin_html_ga814b165a291785fc740353fafdfff545"><div class="ttname"><a href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">SerialPluginConfiguration::reconnect</a></div><div class="ttdeci">bool reconnect()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00044">serialpluginconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga0c45ba367dc5fa8684b383a1a7a1c75d"><div class="ttname"><a href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">SerialPluginConfiguration::setReconnect</a></div><div class="ttdeci">void setReconnect(bool reconnect)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00056">serialpluginconfiguration.h:56</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga814b165a291785fc740353fafdfff545"><div class="ttname"><a href="group___serial_plugin.html#ga814b165a291785fc740353fafdfff545">SerialPluginConfiguration::reconnect</a></div><div class="ttdeci">bool reconnect()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00045">serialpluginconfiguration.h:45</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga0c45ba367dc5fa8684b383a1a7a1c75d"><div class="ttname"><a href="group___serial_plugin.html#ga0c45ba367dc5fa8684b383a1a7a1c75d">SerialPluginConfiguration::setReconnect</a></div><div class="ttdeci">void setReconnect(bool reconnect)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00058">serialpluginconfiguration.h:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

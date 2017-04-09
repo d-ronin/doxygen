@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('uavobjectutilmanager_8h_source.html','
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;QErrorMessage&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;firmwareiapobj.h&gt;</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_u_a_v_object_util_manager.html">   49</a></span>&#160;<span class="keyword">class </span>UAVOBJECTUTIL_EXPORT <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>: <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_u_a_v_object_util_manager.html">   49</a></span>&#160;<span class="keyword">class </span>UAVOBJECTUTIL_EXPORT <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
@@ -154,20 +154,20 @@ $(document).ready(function(){initNavTree('uavobjectutilmanager_8h_source.html','
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gga3f0971e47d6ebe87f97939435cd03da3a80d58d5e87824282131d8df8b346cf46">   57</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga3f0971e47d6ebe87f97939435cd03da3">metadataSetEnum</a> {ALL_METADATA, <a class="code" href="group___u_a_v_objects_plugin.html#gga3f0971e47d6ebe87f97939435cd03da3a80d58d5e87824282131d8df8b346cf46">SETTINGS_METADATA_ONLY</a>, NONSETTINGS_METADATA_ONLY};</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gga3f0971e47d6ebe87f97939435cd03da3a80d58d5e87824282131d8df8b346cf46">   57</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga3f0971e47d6ebe87f97939435cd03da3">metadataSetEnum</a> { ALL_METADATA, <a class="code" href="group___u_a_v_objects_plugin.html#gga3f0971e47d6ebe87f97939435cd03da3a80d58d5e87824282131d8df8b346cf46">SETTINGS_METADATA_ONLY</a>, NONSETTINGS_METADATA_ONLY };</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> setHomeLocation(<span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3], <span class="keywordtype">bool</span> save_to_sdcard);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> getHomeLocation(<span class="keywordtype">bool</span> &amp;set, <span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3]);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> getGPSPosition(<span class="keywordtype">double</span> <a class="code" href="_o_p_plots_8m.html#a011779f2c5f2a3505308bb1369101a54">LLA</a>[3]);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> getBoardModel();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a>* getBoardType();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *getBoardType();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QByteArray getBoardCPUSerial();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    quint32 getFirmwareCRC();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QByteArray getBoardDescription();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> getBoardDescriptionStruct(<a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> &amp;device);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> descriptionToStructure(QByteArray desc,<a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> &amp; struc);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>* getObjectManager();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> descriptionToStructure(QByteArray desc, <a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> &amp;struc);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *getObjectManager();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> saveObjectToFlash(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QMap&lt;QString, UAVObject::Metadata&gt; readMetadata(metadataSetEnum metadataReadType);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QMap&lt;QString, UAVObject::Metadata&gt; readAllNonSettingsMetadata();</div>
@@ -177,28 +177,28 @@ $(document).ready(function(){initNavTree('uavobjectutilmanager_8h_source.html','
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> getBoardRevision();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QString getFirmwareHash();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QString getGcsHash();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    FirmwareIAPObj::DataFields getFirmwareIap();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;signals:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> saveCompleted(<span class="keywordtype">int</span> objectID, <span class="keywordtype">bool</span> status);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> completedMetadataWrite(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QQueue&lt;UAVObject *&gt; queue;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">enum</span> {IDLE, AWAITING_ACK, AWAITING_COMPLETED} saveState;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> saveNextObject();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QTimer failureTimer;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *obm;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QMap&lt;UAVDataObject*, UAVObject::Metadata&gt; metadataSendlist;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> metadataSendSuccess;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> objectPersistenceTransactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a>* obj, <span class="keywordtype">bool</span> success);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> objectPersistenceUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> * obj);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> objectPersistenceOperationFailed();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> metadataTransactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a>*, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    FirmwareIAPObj::DataFields getFirmwareIap();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;signals:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> saveCompleted(<span class="keywordtype">int</span> objectID, <span class="keywordtype">bool</span> status);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> completedMetadataWrite(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QQueue&lt;UAVObject *&gt; queue;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">enum</span> { IDLE, AWAITING_ACK, AWAITING_COMPLETED } saveState;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> saveNextObject();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QTimer failureTimer;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *obm;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QMap&lt;UAVDataObject *, UAVObject::Metadata&gt; metadataSendlist;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> metadataSendSuccess;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> objectPersistenceTransactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> objectPersistenceUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> objectPersistenceOperationFailed();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> metadataTransactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="devicedescriptorstruct_8h_html"><div class="ttname"><a href="devicedescriptorstruct_8h.html">devicedescriptorstruct.h</a></div></div>

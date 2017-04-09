@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,13 +132,13 @@ $(document).ready(function(){initNavTree('setupwizard_2pages_2tlendpage_8cpp_sou
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="configgadgetfactory_8h.html">configgadgetfactory.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga49b22d7eec37c831031e4fb81e47008a">   34</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ui(new Ui::EndPage)</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga49b22d7eec37c831031e4fb81e47008a">   34</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , ui(new Ui::EndPage)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    setFinalPage(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(ui-&gt;inputWizardButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(openInputWizard()));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(ui-&gt;inputWizardButton, &amp;QAbstractButton::clicked, <span class="keyword">this</span>, &amp;TLEndPage::openInputWizard);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a>()</div>
@@ -157,23 +157,24 @@ $(document).ready(function(){initNavTree('setupwizard_2pages_2tlendpage_8cpp_sou
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        configGadgetFactory-&gt;<a class="code" href="group___config_plugin.html#ga12d479e09d53195a2226e61b1690124f">startInputWizard</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        QMessageBox msgBox;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;Unable to open Input Wizard since the Config Plugin is not\nloaded in the current workspace.&quot;</span>));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;Unable to open Input Wizard since the Config Plugin is not\nloaded in &quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          <span class="stringliteral">&quot;the current workspace.&quot;</span>));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        msgBox.setStandardButtons(QMessageBox::Ok);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        msgBox.setDefaultButton(QMessageBox::Ok);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="configgadgetfactory_8h_html"><div class="ttname"><a href="configgadgetfactory_8h.html">configgadgetfactory.h</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00043">abstractwizardpage.h:43</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00044">abstractwizardpage.h:44</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga0cc3b0df91e2874402e9bd4baa3bbaab"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a></div><div class="ttdeci">~TLEndPage()</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00042">tlendpage.cpp:42</a></div></div>
 <div class="ttc" id="modemanager_8h_html"><div class="ttname"><a href="modemanager_8h.html">modemanager.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga12d479e09d53195a2226e61b1690124f"><div class="ttname"><a href="group___config_plugin.html#ga12d479e09d53195a2226e61b1690124f">ConfigGadgetFactory::startInputWizard</a></div><div class="ttdeci">void startInputWizard()</div><div class="ttdef"><b>Definition:</b> <a href="configgadgetfactory_8cpp_source.html#l00080">configgadgetfactory.cpp:80</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga12d479e09d53195a2226e61b1690124f"><div class="ttname"><a href="group___config_plugin.html#ga12d479e09d53195a2226e61b1690124f">ConfigGadgetFactory::startInputWizard</a></div><div class="ttdeci">void startInputWizard()</div><div class="ttdef"><b>Definition:</b> <a href="configgadgetfactory_8cpp_source.html#l00078">configgadgetfactory.cpp:78</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga6fa830927a6580ce1dce66d7e0bd43cc"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a></div><div class="ttdeci">TLEndPage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00034">tlendpage.cpp:34</a></div></div>
-<div class="ttc" id="class_config_gadget_factory_html"><div class="ttname"><a href="class_config_gadget_factory.html">ConfigGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadgetfactory_8h_source.html#l00041">configgadgetfactory.h:41</a></div></div>
+<div class="ttc" id="class_config_gadget_factory_html"><div class="ttname"><a href="class_config_gadget_factory.html">ConfigGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadgetfactory_8h_source.html#l00040">configgadgetfactory.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

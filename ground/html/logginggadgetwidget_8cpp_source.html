@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -136,48 +136,49 @@ $(document).ready(function(){initNavTree('logginggadgetwidget_8cpp_source.html',
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="loggingplugin_8h.html">loggingplugin.h</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e">   37</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e">LoggingGadgetWidget::LoggingGadgetWidget</a>(QWidget *parent) : QLabel(parent)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_logging = <span class="keyword">new</span> Ui_Logging();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_logging-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    scpPlugin = pm-&gt;getObject&lt;<a class="code" href="class_scope_gadget_factory.html">ScopeGadgetFactory</a>&gt;();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e">   37</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e">LoggingGadgetWidget::LoggingGadgetWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : QLabel(parent)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_logging = <span class="keyword">new</span> Ui_Logging();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_logging-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    scpPlugin = pm-&gt;getObject&lt;<a class="code" href="class_scope_gadget_factory.html">ScopeGadgetFactory</a>&gt;();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0">   47</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0">LoggingGadgetWidget::~LoggingGadgetWidget</a>()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Do nothing</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">LoggingGadgetWidget::setPlugin</a>(<a class="code" href="class_logging_plugin.html">LoggingPlugin</a> * p)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">LoggingGadgetWidget::setPlugin</a>(<a class="code" href="class_logging_plugin.html">LoggingPlugin</a> *p)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    loggingPlugin = p;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    connect(p,SIGNAL(<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">stateChanged</a>(QString)),<span class="keyword">this</span>,SLOT(<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">stateChanged</a>(QString)));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    connect(m_logging-&gt;playButton,SIGNAL(clicked()),p-&gt;getLogfile(),SLOT(resumeReplay()));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    connect(m_logging-&gt;pauseButton,SIGNAL(clicked()),p-&gt;getLogfile(),SLOT(pauseReplay()));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    connect(m_logging-&gt;playbackSpeedSpinBox,SIGNAL(valueChanged(<span class="keywordtype">double</span>)),p-&gt;getLogfile(),SLOT(setReplaySpeed(<span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    connect(m_logging-&gt;jumpToTimeSpinBox,SIGNAL(valueChanged(<span class="keywordtype">double</span>)),p-&gt;getLogfile(),SLOT(setReplayTime(<span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> pauseReplay();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> resumeReplay();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">LoggingGadgetWidget::stateChanged</a>(QString status)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    m_logging-&gt;statusLabel-&gt;setText(status);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    connect(p, SIGNAL(<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">stateChanged</a>(QString)), <span class="keyword">this</span>, SLOT(<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">stateChanged</a>(QString)));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    connect(m_logging-&gt;playButton, SIGNAL(clicked()), p-&gt;getLogfile(), SLOT(resumeReplay()));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    connect(m_logging-&gt;pauseButton, SIGNAL(clicked()), p-&gt;getLogfile(), SLOT(pauseReplay()));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    connect(m_logging-&gt;playbackSpeedSpinBox, SIGNAL(valueChanged(<span class="keywordtype">double</span>)), p-&gt;getLogfile(),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            SLOT(setReplaySpeed(<span class="keywordtype">double</span>)));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    connect(m_logging-&gt;jumpToTimeSpinBox, SIGNAL(valueChanged(<span class="keywordtype">double</span>)), p-&gt;getLogfile(),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            SLOT(setReplayTime(<span class="keywordtype">double</span>)));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> pauseReplay();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> resumeReplay();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">LoggingGadgetWidget::stateChanged</a>(QString status)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    m_logging-&gt;statusLabel-&gt;setText(status);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="ttc" id="logginggadgetwidget_8h_html"><div class="ttname"><a href="logginggadgetwidget_8h.html">logginggadgetwidget.h</a></div></div>
-<div class="ttc" id="class_logging_plugin_html"><div class="ttname"><a href="class_logging_plugin.html">LoggingPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8h_source.html#l00113">loggingplugin.h:113</a></div></div>
-<div class="ttc" id="class_scope_gadget_factory_html"><div class="ttname"><a href="class_scope_gadget_factory.html">ScopeGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8h_source.html#l00042">scopegadgetfactory.h:42</a></div></div>
+<div class="ttc" id="class_logging_plugin_html"><div class="ttname"><a href="class_logging_plugin.html">LoggingPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="loggingplugin_8h_source.html#l00108">loggingplugin.h:108</a></div></div>
+<div class="ttc" id="class_scope_gadget_factory_html"><div class="ttname"><a href="class_scope_gadget_factory.html">ScopeGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetfactory_8h_source.html#l00041">scopegadgetfactory.h:41</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga9ff08b035e0189200c2f5d2e2b234dac"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga9ff08b035e0189200c2f5d2e2b234dac">LoggingGadgetWidget::setPlugin</a></div><div class="ttdeci">void setPlugin(LoggingPlugin *p)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00052">logginggadgetwidget.cpp:52</a></div></div>
 <div class="ttc" id="loggingplugin_8h_html"><div class="ttname"><a href="loggingplugin_8h.html">loggingplugin.h</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_gafa54fcc426f5064c9706b1528834d6a0"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0">LoggingGadgetWidget::~LoggingGadgetWidget</a></div><div class="ttdeci">~LoggingGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00047">logginggadgetwidget.cpp:47</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga8d9370f949bfe6eec4f37676feb6de85"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">LoggingGadgetWidget::stateChanged</a></div><div class="ttdeci">void stateChanged(QString status)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00066">logginggadgetwidget.cpp:66</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga8d9370f949bfe6eec4f37676feb6de85"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">LoggingGadgetWidget::stateChanged</a></div><div class="ttdeci">void stateChanged(QString status)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00067">logginggadgetwidget.cpp:67</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga82895cf265acb40f6491abf90e3b018e"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e">LoggingGadgetWidget::LoggingGadgetWidget</a></div><div class="ttdeci">LoggingGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="logginggadgetwidget_8cpp_source.html#l00037">logginggadgetwidget.cpp:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

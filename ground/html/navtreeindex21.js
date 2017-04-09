@@ -1,8 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"group___dial_plugin.html#ga20f0bcc550ca92ec3bd40b4cf0b2a38e":[3,2,16,6,21],
-"group___dial_plugin.html#ga20f0bcc550ca92ec3bd40b4cf0b2a38e":[3,2,16,97],
-"group___dial_plugin.html#ga23d0f11456823786d98a8112a0bc0120":[3,2,16,3,49],
 "group___dial_plugin.html#ga23d0f11456823786d98a8112a0bc0120":[3,2,16,81],
 "group___dial_plugin.html#ga2b36383d1efea1dc3848e79d6b73ab32":[3,2,16,3,9],
 "group___dial_plugin.html#ga2b36383d1efea1dc3848e79d6b73ab32":[3,2,16,29],
@@ -241,7 +238,7 @@ var NAVTREEINDEX21 =
 "group___g_c_s_control_gadget_plugin.html#ga1f4c5dc258f49bb185227cb603dbd088":[3,2,20,5,11],
 "group___g_c_s_control_gadget_plugin.html#ga1f4c5dc258f49bb185227cb603dbd088":[3,2,20,71],
 "group___g_c_s_control_gadget_plugin.html#ga24b8b76a9c4255dc4777eed27af0a5de":[3,2,20,17,4],
-"group___g_c_s_control_gadget_plugin.html#ga24b8b76a9c4255dc4777eed27af0a5de":[3,2,20,63],
+"group___g_c_s_control_gadget_plugin.html#ga24b8b76a9c4255dc4777eed27af0a5de":[3,2,20,62],
 "group___g_c_s_control_gadget_plugin.html#ga279299922ac5990f798325ad238ae58a":[3,2,20,8,16],
 "group___g_c_s_control_gadget_plugin.html#ga279299922ac5990f798325ad238ae58a":[3,2,20,114],
 "group___g_c_s_control_gadget_plugin.html#ga2875164469455c55a959fcd1f56b0e6d":[3,2,20,7,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX21 =
 "group___g_c_s_control_gadget_plugin.html#ga29e9cc85c2d85301be68160330bf4404":[3,2,20,8,3],
 "group___g_c_s_control_gadget_plugin.html#ga29e9cc85c2d85301be68160330bf4404":[3,2,20,101],
 "group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,20,5,1],
-"group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,20,20]
+"group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,20,20],
+"group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba":[3,2,20,15,1],
+"group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba":[3,2,20,94],
+"group___g_c_s_control_gadget_plugin.html#ga3270e904f313cabdad8a5048009ceb25":[3,2,20,15,2]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,8 +132,8 @@ $(document).ready(function(){initNavTree('opmapgadgetfactory_8cpp_source.html','
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="opmapgadgetoptionspage_8h.html">opmapgadgetoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622">   34</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622">OPMapGadgetFactory::OPMapGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                IUAVGadgetFactory(QString(<span class="stringliteral">&quot;OPMapGadget&quot;</span>), tr(<span class="stringliteral">&quot;OPMap&quot;</span>), parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622">   34</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622">OPMapGadgetFactory::OPMapGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;OPMapGadget&quot;</span>), tr(<span class="stringliteral">&quot;OPMap&quot;</span>), parent)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('opmapgadgetfactory_8cpp_source.html','
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga185fdb89aa5cd90c3112f9f39333703c">   43</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> * <a class="code" href="group___o_p_map_plugin.html#ga185fdb89aa5cd90c3112f9f39333703c">OPMapGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga185fdb89aa5cd90c3112f9f39333703c">   43</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="group___o_p_map_plugin.html#ga185fdb89aa5cd90c3112f9f39333703c">OPMapGadgetFactory::createGadget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_o_p_map_gadget_widget.html">OPMapGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_o_p_map_gadget_widget.html">OPMapGadgetWidget</a>(parent);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_o_p_map_gadget.html">OPMapGadget</a>(QString(<span class="stringliteral">&quot;OPMapGadget&quot;</span>), gadgetWidget, parent);</div>
@@ -152,13 +152,12 @@ $(document).ready(function(){initNavTree('opmapgadgetfactory_8cpp_source.html','
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_o_p_map_gadget_configuration.html">OPMapGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;OPMapGadget&quot;</span>), qSettings);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadde2c412f864fe77db6ea353a5e7071b">   54</a></span>&#160;IOptionsPage * <a class="code" href="group___o_p_map_plugin.html#gadde2c412f864fe77db6ea353a5e7071b">OPMapGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gadde2c412f864fe77db6ea353a5e7071b">   54</a></span>&#160;IOptionsPage *<a class="code" href="group___o_p_map_plugin.html#gadde2c412f864fe77db6ea353a5e7071b">OPMapGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_o_p_map_gadget_options_page.html">OPMapGadgetOptionsPage</a>(qobject_cast&lt;OPMapGadgetConfiguration*&gt;(config));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_o_p_map_gadget_options_page.html">OPMapGadgetOptionsPage</a>(qobject_cast&lt;OPMapGadgetConfiguration *&gt;(config));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
-<div class="ttc" id="class_o_p_map_gadget_widget_html"><div class="ttname"><a href="class_o_p_map_gadget_widget.html">OPMapGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetwidget_8h_source.html#l00094">opmapgadgetwidget.h:94</a></div></div>
+<div class="ttc" id="class_o_p_map_gadget_widget_html"><div class="ttname"><a href="class_o_p_map_gadget_widget.html">OPMapGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetwidget_8h_source.html#l00091">opmapgadgetwidget.h:91</a></div></div>
 <div class="ttc" id="opmapgadgetfactory_8h_html"><div class="ttname"><a href="opmapgadgetfactory_8h.html">opmapgadgetfactory.h</a></div></div>
 <div class="ttc" id="class_o_p_map_gadget_configuration_html"><div class="ttname"><a href="class_o_p_map_gadget_configuration.html">OPMapGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8h_source.html#l00036">opmapgadgetconfiguration.h:36</a></div></div>
 <div class="ttc" id="opmapgadgetwidget_8h_html"><div class="ttname"><a href="opmapgadgetwidget_8h.html">opmapgadgetwidget.h</a></div></div>

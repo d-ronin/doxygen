@@ -6,7 +6,7 @@ var class_scope_gadget_widget =
     [ "clearPlotWidget", "group___scope_plugin.html#ga9a19de9754adbab7df27b7db75348346", null ],
     [ "connectUAVO", "group___scope_plugin.html#gae48ddd25c6bea599893a60ab02c375bf", null ],
     [ "deleteLegend", "group___scope_plugin.html#ga16702effa3e6ad5ddf0f94a77e9c430a", null ],
-    [ "getDataSources", "group___scope_plugin.html#gae23ab8c7b7852bc2ac59639923fb8cfc", null ],
+    [ "getDataSources", "group___scope_plugin.html#ga1f430cd6f7727a3e3b51d8608965c0e6", null ],
     [ "getUavObjectFieldUnits", "group___scope_plugin.html#ga4fc130c09e788ead2fe9da284efb780b", null ],
     [ "insertDataSources", "group___scope_plugin.html#ga4682e74303bf7b117006e3d61a6827ce", null ],
     [ "mouseDoubleClickEvent", "group___scope_plugin.html#ga6b657bc6aec409845f48f29bb6fb508d", null ],

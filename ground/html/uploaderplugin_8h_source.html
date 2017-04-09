@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('uploaderplugin_8h_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uploader__global_8h.html">uploader_global.h</a>&quot;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>uploader {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">class </span><a class="code" href="classuploader_1_1_uploader_gadget_factory.html">UploaderGadgetFactory</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span><a class="code" href="classuploader_1_1_uploader_gadget_factory.html">UploaderGadgetFactory</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">using namespace </span>uploader;</div>
@@ -158,17 +158,18 @@ $(document).ready(function(){initNavTree('uploaderplugin_8h_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_PLUGIN_METADATA(IID <span class="stringliteral">&quot;org.dronin.plugins.Uploader&quot;</span>)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_uploader_plugin.html">UploaderPlugin</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   ~<a class="code" href="class_uploader_plugin.html">UploaderPlugin</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ~<a class="code" href="class_uploader_plugin.html">UploaderPlugin</a>();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;   <span class="keywordtype">void</span> extensionsInitialized();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   <span class="keywordtype">bool</span> initialize(<span class="keyword">const</span> QStringList &amp; arguments, QString * errorString);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   <span class="keywordtype">void</span> shutdown();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <a class="code" href="classuploader_1_1_uploader_gadget_factory.html">UploaderGadgetFactory</a> *mf;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">void</span> testStuff();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // UPLOADERPLUGIN_H</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> extensionsInitialized();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> initialize(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> shutdown();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classuploader_1_1_uploader_gadget_factory.html">UploaderGadgetFactory</a> *mf;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> testStuff();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // UPLOADERPLUGIN_H</span></div>
 <div class="ttc" id="class_uploader_plugin_html"><div class="ttname"><a href="class_uploader_plugin.html">UploaderPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="uploaderplugin_8h_source.html#l00054">uploaderplugin.h:54</a></div></div>
 <div class="ttc" id="uploader__global_8h_html"><div class="ttname"><a href="uploader__global_8h.html">uploader_global.h</a></div></div>
 <div class="ttc" id="classuploader_1_1_uploader_gadget_factory_html"><div class="ttname"><a href="classuploader_1_1_uploader_gadget_factory.html">uploader::UploaderGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="uploadergadgetfactory_8h_source.html#l00043">uploadergadgetfactory.h:43</a></div></div>

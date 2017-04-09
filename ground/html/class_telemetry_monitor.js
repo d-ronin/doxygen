@@ -1,6 +1,6 @@
 var class_telemetry_monitor =
 [
-    [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga0db7268f0022d9b98c2cc2f47eaff959", null ],
+    [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084", null ],
     [ "~TelemetryMonitor", "group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e", null ],
     [ "checkSessionObjNacked", "group___u_a_v_talk_plugin.html#gab7f8d5561a8d7fdb10b6a214b5105b8d", null ],
     [ "connected", "group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8h_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modeluavoproxy_8h.html">modeluavoproxy.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;waypoint.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_model_uavo_proxy.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_uavo_proxy.html">ModelUavoProxy</a>:<span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_model_uavo_proxy.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_uavo_proxy.html">ModelUavoProxy</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
@@ -155,20 +155,20 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8h_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">waypointTransactionSucceeded</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">waypointTransactionFailed</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">sendPathPlanToUavProgress</a>(<span class="keywordtype">int</span> percent);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Waypoint         *waypointObj;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_flight_data_model.html">FlightDataModel</a>  *myModel;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QMap&lt;int, bool&gt;  waypointTransactionResult;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objManager;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Waypoint *waypointObj;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_flight_data_model.html">FlightDataModel</a> *myModel;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QMap&lt;int, bool&gt; waypointTransactionResult;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // ModelUavoProxy_H</span></div>
 <div class="ttc" id="group___o_p_map_plugin_html_gaf5825b310723b58fb271811c478954ec"><div class="ttname"><a href="group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec">ModelUavoProxy::waypointTransactionSucceeded</a></div><div class="ttdeci">void waypointTransactionSucceeded()</div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga043d5717d69a25de0db1d76753c8997e"><div class="ttname"><a href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">ModelUavoProxy::sendPathPlanToUavProgress</a></div><div class="ttdeci">void sendPathPlanToUavProgress(int percent)</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00099">uavobjecttemplate.h:99</a></div></div>
-<div class="ttc" id="group___path_html_ga736230a8add02155bb474dbf91d14d18"><div class="ttname"><a href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a></div><div class="ttdeci">bool modelToObjects()</div><div class="ttdoc">Cast from the internal representation to the UAVOs. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00053">modeluavoproxy.cpp:53</a></div></div>
+<div class="ttc" id="group___path_html_ga736230a8add02155bb474dbf91d14d18"><div class="ttname"><a href="group___path.html#ga736230a8add02155bb474dbf91d14d18">ModelUavoProxy::modelToObjects</a></div><div class="ttdeci">bool modelToObjects()</div><div class="ttdoc">Cast from the internal representation to the UAVOs. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00055">modeluavoproxy.cpp:55</a></div></div>
 <div class="ttc" id="class_model_uavo_proxy_html"><div class="ttname"><a href="class_model_uavo_proxy.html">ModelUavoProxy</a></div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8h_source.html#l00034">modeluavoproxy.h:34</a></div></div>
 <div class="ttc" id="class_flight_data_model_html"><div class="ttname"><a href="class_flight_data_model.html">FlightDataModel</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00049">flightdatamodel.h:49</a></div></div>
 <div class="ttc" id="flightdatamodel_8h_html"><div class="ttname"><a href="flightdatamodel_8h.html">flightdatamodel.h</a></div></div>
@@ -176,9 +176,9 @@ $(document).ready(function(){initNavTree('modeluavoproxy_8h_source.html','');});
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_gafd0e6a7bd5963a1363aace5cbdaac47f"><div class="ttname"><a href="group___o_p_map_plugin.html#gafd0e6a7bd5963a1363aace5cbdaac47f">ModelUavoProxy::waypointTransactionFailed</a></div><div class="ttdeci">void waypointTransactionFailed()</div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gadf2e7f7ca1a0ae5d380c107e7dbf9132"><div class="ttname"><a href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a></div><div class="ttdeci">void objectsToModel()</div><div class="ttdoc">Cast from the UAVOs to the internal representation. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00212">modeluavoproxy.cpp:212</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_gadf2e7f7ca1a0ae5d380c107e7dbf9132"><div class="ttname"><a href="group___o_p_map_plugin.html#gadf2e7f7ca1a0ae5d380c107e7dbf9132">ModelUavoProxy::objectsToModel</a></div><div class="ttdeci">void objectsToModel()</div><div class="ttdoc">Cast from the UAVOs to the internal representation. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00217">modeluavoproxy.cpp:217</a></div></div>
 <div class="ttc" id="modeluavoproxy_8h_html"><div class="ttname"><a href="modeluavoproxy_8h.html">modeluavoproxy.h</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_ga428d73f0e25b47749d707e5c6bd5d34f"><div class="ttname"><a href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a></div><div class="ttdeci">void waypointTransactionCompleted(UAVObject *, bool)</div><div class="ttdoc">Whenever a waypoint transaction is completed. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00196">modeluavoproxy.cpp:196</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga428d73f0e25b47749d707e5c6bd5d34f"><div class="ttname"><a href="group___o_p_map_plugin.html#ga428d73f0e25b47749d707e5c6bd5d34f">ModelUavoProxy::waypointTransactionCompleted</a></div><div class="ttdeci">void waypointTransactionCompleted(UAVObject *, bool)</div><div class="ttdoc">Whenever a waypoint transaction is completed. </div><div class="ttdef"><b>Definition:</b> <a href="modeluavoproxy_8cpp_source.html#l00200">modeluavoproxy.cpp:200</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

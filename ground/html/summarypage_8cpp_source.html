@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -131,12 +131,12 @@ $(document).ready(function(){initNavTree('summarypage_8cpp_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="setupwizard_8h.html">setupwizard.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="connectiondiagram_8h.html">uavobjectwidgetutils/connectiondiagram.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">   33</a></span>&#160;<a class="code" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage::SummaryPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ui(new Ui::<a class="code" href="class_summary_page.html">SummaryPage</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">   33</a></span>&#160;<a class="code" href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage::SummaryPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , ui(new Ui::<a class="code" href="class_summary_page.html">SummaryPage</a>)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(ui-&gt;illustrationButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(showDiagram()));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(ui-&gt;illustrationButton, &amp;QAbstractButton::clicked, <span class="keyword">this</span>, &amp;SummaryPage::showDiagram);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2">   41</a></span>&#160;<a class="code" href="group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2">SummaryPage::~SummaryPage</a>()</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('summarypage_8cpp_source.html','');});
 <div class="ttc" id="group___setup_wizard_html_gac0ed5703bf2053761d8269cc674138ed"><div class="ttname"><a href="group___setup_wizard.html#gac0ed5703bf2053761d8269cc674138ed">SummaryPage::SummaryPage</a></div><div class="ttdeci">SummaryPage(SetupWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8cpp_source.html#l00033">summarypage.cpp:33</a></div></div>
 <div class="ttc" id="summarypage_8h_html"><div class="ttname"><a href="summarypage_8h.html">summarypage.h</a></div></div>
 <div class="ttc" id="class_summary_page_html"><div class="ttname"><a href="class_summary_page.html">SummaryPage</a></div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8h_source.html#l00037">summarypage.h:37</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00043">abstractwizardpage.h:43</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00044">abstractwizardpage.h:44</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga4ae44b0f8e7ea5786172b19103d9a1af"><div class="ttname"><a href="group___setup_wizard.html#ga4ae44b0f8e7ea5786172b19103d9a1af">SummaryPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8cpp_source.html#l00046">summarypage.cpp:46</a></div></div>
 <div class="ttc" id="connectiondiagram_8h_html"><div class="ttname"><a href="connectiondiagram_8h.html">connectiondiagram.h</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga8c25c96270b9721692e6931ea63f42a2"><div class="ttname"><a href="group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2">SummaryPage::~SummaryPage</a></div><div class="ttdeci">~SummaryPage()</div><div class="ttdef"><b>Definition:</b> <a href="summarypage_8cpp_source.html#l00041">summarypage.cpp:41</a></div></div>

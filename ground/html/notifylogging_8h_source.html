@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -141,9 +141,11 @@ $(document).ready(function(){initNavTree('notifylogging_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span>QNoDebug <a class="code" href="group___notify_plugin.html#gaa12b557f54e20bfddabd963a0eccbaac">qNotifyDebug</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define qNotifyDebug_if(test) if(test) qNotifyDebug()</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // NOTIFYLOGGING_H</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define qNotifyDebug_if(test)                                                                      \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    if (test)                                                                                      \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    qNotifyDebug()</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // NOTIFYLOGGING_H</span></div>
 <div class="ttc" id="group___notify_plugin_html_gaa12b557f54e20bfddabd963a0eccbaac"><div class="ttname"><a href="group___notify_plugin.html#gaa12b557f54e20bfddabd963a0eccbaac">qNotifyDebug</a></div><div class="ttdeci">QDebug qNotifyDebug()</div><div class="ttdef"><b>Definition:</b> <a href="notifylogging_8cpp_source.html#l00034">notifylogging.cpp:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

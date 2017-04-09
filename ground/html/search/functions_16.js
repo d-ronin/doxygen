@@ -26,6 +26,5 @@ var searchData=
   ['view',['view',['../group___core_plugin.html#ga885a960ed8f9cdcfa3e01e739743f93d',1,'Core::Internal::SplitterOrView']]],
   ['viewoptionschanged',['viewOptionsChanged',['../group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c',1,'UAVObjectBrowserWidget']]],
   ['visibilitychanged',['visibilityChanged',['../group___core_plugin.html#ga3128a309873592d64cddf36d88f76856',1,'Core::IOutputPane']]],
-  ['visualizationchanged',['visualizationChanged',['../group___o_p_map_plugin.html#ga9b1e292fa1cea559f4177ac8adb8d19d',1,'PathCompiler']]],
   ['void',['void',['../group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c',1,'uavobjecttemplate.cpp']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('baseview_8cpp_source.html','');});
 <div class="contents">
 <a href="baseview_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -133,11 +133,11 @@ $(document).ready(function(){initNavTree('baseview_8cpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">   34</a></span>&#160;<a class="code" href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">BaseView::BaseView</a>(QObject *parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        : <a class="code" href="class_core_1_1_i_view.html">IView</a>(parent),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    m_viewName(<span class="stringliteral">&quot;&quot;</span>),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    m_widget(0),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_context(<a class="code" href="class_q_list.html">QList</a>&lt;int&gt;()),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_defaultPosition(<a class="code" href="class_core_1_1_i_view.html">IView</a>::First)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="class_core_1_1_i_view.html">IView</a>(parent)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_viewName(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_widget(0)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_context(<a class="code" href="class_q_list.html">QList</a>&lt;int&gt;())</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    , m_defaultPosition(<a class="code" href="class_core_1_1_i_view.html">IView</a>::First)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -161,48 +161,46 @@ $(document).ready(function(){initNavTree('baseview_8cpp_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> m_viewName;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">   64</a></span>&#160;<a class="code" href="group___core_plugin.html#ga2423997830c6fd1ceb278f80dcbfc010">IView::ViewPosition</a> <a class="code" href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">BaseView::defaultPosition</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> m_defaultPosition;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">BaseView::setUniqueViewName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    m_viewName = name;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">   74</a></span>&#160;QWidget *<a class="code" href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">BaseView::setWidget</a>(QWidget *widget)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QWidget *oldWidget = m_widget;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_widget = <a class="code" href="group___core_plugin.html#ga73210f3a32961fb3c1df6267292cc551">widget</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> oldWidget;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">BaseView::setContext</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    m_context = <a class="code" href="group___core_plugin.html#ga237172a9f51bf4dd4a74c431d4cee707">context</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">BaseView::setDefaultPosition</a>(<a class="code" href="group___core_plugin.html#ga2423997830c6fd1ceb278f80dcbfc010">IView::ViewPosition</a> position)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    m_defaultPosition = position;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">   63</a></span>&#160;<a class="code" href="group___core_plugin.html#ga2423997830c6fd1ceb278f80dcbfc010">IView::ViewPosition</a> <a class="code" href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">BaseView::defaultPosition</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> m_defaultPosition;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">BaseView::setUniqueViewName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    m_viewName = name;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">   73</a></span>&#160;QWidget *<a class="code" href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">BaseView::setWidget</a>(QWidget *widget)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QWidget *oldWidget = m_widget;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_widget = <a class="code" href="group___core_plugin.html#ga73210f3a32961fb3c1df6267292cc551">widget</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> oldWidget;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">BaseView::setContext</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_context = <a class="code" href="group___core_plugin.html#ga237172a9f51bf4dd4a74c431d4cee707">context</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">BaseView::setDefaultPosition</a>(<a class="code" href="group___core_plugin.html#ga2423997830c6fd1ceb278f80dcbfc010">IView::ViewPosition</a> position)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    m_defaultPosition = position;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_ga73210f3a32961fb3c1df6267292cc551"><div class="ttname"><a href="group___core_plugin.html#ga73210f3a32961fb3c1df6267292cc551">Core::BaseView::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00053">baseview.cpp:53</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaaf97d82844aaac02f2116f78c9ec7898"><div class="ttname"><a href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">Core::BaseView::defaultPosition</a></div><div class="ttdeci">IView::ViewPosition defaultPosition() const </div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00064">baseview.cpp:64</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaaf97d82844aaac02f2116f78c9ec7898"><div class="ttname"><a href="group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898">Core::BaseView::defaultPosition</a></div><div class="ttdeci">IView::ViewPosition defaultPosition() const </div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00063">baseview.cpp:63</a></div></div>
 <div class="ttc" id="baseview_8h_html"><div class="ttname"><a href="baseview_8h.html">baseview.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga010e75c3fb8e47962937ebeec0d133f7"><div class="ttname"><a href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">Core::BaseView::setWidget</a></div><div class="ttdeci">QWidget * setWidget(QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00074">baseview.cpp:74</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga4cd8b9c4d6cf47fa0ece91c8783a3c17"><div class="ttname"><a href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">Core::BaseView::setDefaultPosition</a></div><div class="ttdeci">void setDefaultPosition(IView::ViewPosition position)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00086">baseview.cpp:86</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga010e75c3fb8e47962937ebeec0d133f7"><div class="ttname"><a href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">Core::BaseView::setWidget</a></div><div class="ttdeci">QWidget * setWidget(QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00073">baseview.cpp:73</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga4cd8b9c4d6cf47fa0ece91c8783a3c17"><div class="ttname"><a href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">Core::BaseView::setDefaultPosition</a></div><div class="ttdeci">void setDefaultPosition(IView::ViewPosition position)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00085">baseview.cpp:85</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga0b87986502d132344f08be851cdb15d2"><div class="ttname"><a href="group___core_plugin.html#ga0b87986502d132344f08be851cdb15d2">Core::BaseView::~BaseView</a></div><div class="ttdeci">~BaseView()</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00043">baseview.cpp:43</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5d80afbd92e0f0a0a53764a87f8f8c1b"><div class="ttname"><a href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">Core::BaseView::BaseView</a></div><div class="ttdeci">BaseView(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00034">baseview.cpp:34</a></div></div>
 <div class="ttc" id="class_core_1_1_i_view_html"><div class="ttname"><a href="class_core_1_1_i_view.html">Core::IView</a></div><div class="ttdef"><b>Definition:</b> <a href="iview_8h_source.html#l00037">iview.h:37</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gad9c37de2ece6e6152bdb4ceadf0e9618"><div class="ttname"><a href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">Core::BaseView::setUniqueViewName</a></div><div class="ttdeci">void setUniqueViewName(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00069">baseview.cpp:69</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gad9c37de2ece6e6152bdb4ceadf0e9618"><div class="ttname"><a href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">Core::BaseView::setUniqueViewName</a></div><div class="ttdeci">void setUniqueViewName(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00068">baseview.cpp:68</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gab66e855b09d536c08790f53cdd26a853"><div class="ttname"><a href="group___core_plugin.html#gab66e855b09d536c08790f53cdd26a853">Core::BaseView::uniqueViewName</a></div><div class="ttdeci">const char * uniqueViewName() const </div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00058">baseview.cpp:58</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2423997830c6fd1ceb278f80dcbfc010"><div class="ttname"><a href="group___core_plugin.html#ga2423997830c6fd1ceb278f80dcbfc010">Core::IView::ViewPosition</a></div><div class="ttdeci">ViewPosition</div><div class="ttdef"><b>Definition:</b> <a href="iview_8h_source.html#l00041">iview.h:41</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga237172a9f51bf4dd4a74c431d4cee707"><div class="ttname"><a href="group___core_plugin.html#ga237172a9f51bf4dd4a74c431d4cee707">Core::BaseView::context</a></div><div class="ttdeci">QList&lt; int &gt; context() const </div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00048">baseview.cpp:48</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga0d50cefedb506910309b1e83938ae3a3"><div class="ttname"><a href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">Core::BaseView::setContext</a></div><div class="ttdeci">void setContext(const QList&lt; int &gt; &amp;context)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00081">baseview.cpp:81</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga0d50cefedb506910309b1e83938ae3a3"><div class="ttname"><a href="group___core_plugin.html#ga0d50cefedb506910309b1e83938ae3a3">Core::BaseView::setContext</a></div><div class="ttdeci">void setContext(const QList&lt; int &gt; &amp;context)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00080">baseview.cpp:80</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

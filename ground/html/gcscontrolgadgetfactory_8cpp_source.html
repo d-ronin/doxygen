@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,47 +130,44 @@ $(document).ready(function(){initNavTree('gcscontrolgadgetfactory_8cpp_source.ht
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gcscontrolgadget_8h.html">gcscontrolgadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a">   31</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a">GCSControlGadgetFactory::GCSControlGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          tr(<span class="stringliteral">&quot;Controller&quot;</span>),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">   38</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">GCSControlGadgetFactory::~GCSControlGadgetFactory</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">   43</a></span>&#160;IUAVGadget* <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">GCSControlGadgetFactory::createGadget</a>(QWidget *parent) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a>(parent);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>), gadgetWidget, parent, this-&gt;parent());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">   48</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">GCSControlGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_configuration.html">GCSControlGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">   53</a></span>&#160;IOptionsPage *<a class="code" href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">GCSControlGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_options_page.html">GCSControlGadgetOptionsPage</a>(qobject_cast&lt;GCSControlGadgetConfiguration*&gt;(config), this-&gt;parent());</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_gaee4fe12f6708684eb50d0bd348633e8a"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">GCSControlGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00053">gcscontrolgadgetfactory.cpp:53</a></div></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a">   31</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a">GCSControlGadgetFactory::GCSControlGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>), tr(<span class="stringliteral">&quot;Controller&quot;</span>), parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">   36</a></span>&#160;<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">GCSControlGadgetFactory::~GCSControlGadgetFactory</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">   40</a></span>&#160;IUAVGadget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">GCSControlGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a>(parent);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>), gadgetWidget, parent, this-&gt;parent());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">   46</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">GCSControlGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_configuration.html">GCSControlGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;GCSControlGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">   51</a></span>&#160;IOptionsPage *<a class="code" href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">GCSControlGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_g_c_s_control_gadget_options_page.html">GCSControlGadgetOptionsPage</a>(qobject_cast&lt;GCSControlGadgetConfiguration *&gt;(config),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                           this-&gt;parent());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_gaee4fe12f6708684eb50d0bd348633e8a"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a">GCSControlGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00051">gcscontrolgadgetfactory.cpp:51</a></div></div>
 <div class="ttc" id="gcscontrolgadget_8h_html"><div class="ttname"><a href="gcscontrolgadget_8h.html">gcscontrolgadget.h</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga707c9075a9e10d166b1769820e643095"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">GCSControlGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00048">gcscontrolgadgetfactory.cpp:48</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga707c9075a9e10d166b1769820e643095"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095">GCSControlGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00046">gcscontrolgadgetfactory.cpp:46</a></div></div>
 <div class="ttc" id="class_g_c_s_control_gadget_widget_html"><div class="ttname"><a href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetwidget_8h_source.html#l00039">gcscontrolgadgetwidget.h:39</a></div></div>
 <div class="ttc" id="gcscontrolgadgetfactory_8h_html"><div class="ttname"><a href="gcscontrolgadgetfactory_8h.html">gcscontrolgadgetfactory.h</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga36b826b28ef2eea9aef96c03fe2afcb5"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">GCSControlGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00043">gcscontrolgadgetfactory.cpp:43</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga36b826b28ef2eea9aef96c03fe2afcb5"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5">GCSControlGadgetFactory::createGadget</a></div><div class="ttdeci">IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00040">gcscontrolgadgetfactory.cpp:40</a></div></div>
 <div class="ttc" id="class_g_c_s_control_gadget_html"><div class="ttname"><a href="class_g_c_s_control_gadget.html">GCSControlGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00053">gcscontrolgadget.h:53</a></div></div>
 <div class="ttc" id="gcscontrolgadgetwidget_8h_html"><div class="ttname"><a href="gcscontrolgadgetwidget_8h.html">gcscontrolgadgetwidget.h</a></div></div>
 <div class="ttc" id="class_g_c_s_control_gadget_options_page_html"><div class="ttname"><a href="class_g_c_s_control_gadget_options_page.html">GCSControlGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetoptionspage_8h_source.html#l00055">gcscontrolgadgetoptionspage.h:55</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga1e3479dbedd932e780c0413327a44453"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">GCSControlGadgetFactory::~GCSControlGadgetFactory</a></div><div class="ttdeci">~GCSControlGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00038">gcscontrolgadgetfactory.cpp:38</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga1e3479dbedd932e780c0413327a44453"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453">GCSControlGadgetFactory::~GCSControlGadgetFactory</a></div><div class="ttdeci">~GCSControlGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00036">gcscontrolgadgetfactory.cpp:36</a></div></div>
 <div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga4c54b8d610c379bf28bff1793365f00a"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a">GCSControlGadgetFactory::GCSControlGadgetFactory</a></div><div class="ttdeci">GCSControlGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetfactory_8cpp_source.html#l00031">gcscontrolgadgetfactory.cpp:31</a></div></div>
-<div class="ttc" id="class_g_c_s_control_gadget_configuration_html"><div class="ttname"><a href="class_g_c_s_control_gadget_configuration.html">GCSControlGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetconfiguration_8h_source.html#l00049">gcscontrolgadgetconfiguration.h:49</a></div></div>
+<div class="ttc" id="class_g_c_s_control_gadget_configuration_html"><div class="ttname"><a href="class_g_c_s_control_gadget_configuration.html">GCSControlGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetconfiguration_8h_source.html#l00048">gcscontrolgadgetconfiguration.h:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

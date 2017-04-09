@@ -1,6 +1,6 @@
 var class_u_a_v_object_manager =
 [
-    [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga0192835b424e7c3d9196e9f2ba85b525", null ],
+    [ "ObjectMap", "group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1", null ],
     [ "UAVObjectManager", "group___u_a_v_objects_plugin.html#ga407e523ca4304b00cc600c49f110e60a", null ],
     [ "~UAVObjectManager", "group___u_a_v_objects_plugin.html#ga0b1af95f366fc372f94307f59513933d", null ],
     [ "getDataObjectsVector", "group___u_a_v_objects_plugin.html#ga9109779fef579de13e7600ec2ca35d71", null ],

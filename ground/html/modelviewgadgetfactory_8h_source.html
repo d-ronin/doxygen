@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,18 +138,19 @@ $(document).ready(function(){initNavTree('modelviewgadgetfactory_8h_source.html'
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_model_view_gadget_factory.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_factory.html">Core::IUAVGadgetFactory</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *createGadget(QWidget *parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *createConfiguration(QSettings *qSettings);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_core_1_1_i_options_page.html">IOptionsPage</a> *createOptionsPage(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // MODELVIEWGADGETFACTORY_H_</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_model_view_gadget_factory.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_factory.html">Core::IUAVGadgetFactory</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ~<a class="code" href="class_model_view_gadget_factory.html">ModelViewGadgetFactory</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *createGadget(QWidget *parent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *createConfiguration(QSettings *qSettings);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_core_1_1_i_options_page.html">IOptionsPage</a> *createOptionsPage(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // MODELVIEWGADGETFACTORY_H_</span></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_factory_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_factory.html">Core::IUAVGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetfactory_8h_source.html#l00047">iuavgadgetfactory.h:47</a></div></div>
 <div class="ttc" id="iuavgadgetfactory_8h_html"><div class="ttname"><a href="iuavgadgetfactory_8h.html">iuavgadgetfactory.h</a></div></div>

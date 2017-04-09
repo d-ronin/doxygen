@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -131,33 +131,30 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetfactory_8cpp_source.html',
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pfdqmlgadgetoptionspage_8h.html">pfdqmlgadgetoptionspage.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a6f9075efdc851baee7311c7033b31e30">   22</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_factory.html#a6f9075efdc851baee7311c7033b31e30">PfdQmlGadgetFactory::PfdQmlGadgetFactory</a>(QObject *parent) :</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        IUAVGadgetFactory(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                          tr(<span class="stringliteral">&quot;PFD (qml)&quot;</span>),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                          parent)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">   29</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">PfdQmlGadgetFactory::~PfdQmlGadgetFactory</a>()</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">   33</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a>* <a class="code" href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">PfdQmlGadgetFactory::createGadget</a>(QWidget *parent)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_pfd_qml_gadget_widget.html">PfdQmlGadgetWidget</a>* gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_widget.html">PfdQmlGadgetWidget</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget.html">PfdQmlGadget</a>(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>), gadgetWidget, parent);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">   39</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">PfdQmlGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>), qSettings);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">   44</a></span>&#160;IOptionsPage *<a class="code" href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">PfdQmlGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_options_page.html">PfdQmlGadgetOptionsPage</a>(qobject_cast&lt;PfdQmlGadgetConfiguration*&gt;(config));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a6f9075efdc851baee7311c7033b31e30">   22</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_factory.html#a6f9075efdc851baee7311c7033b31e30">PfdQmlGadgetFactory::PfdQmlGadgetFactory</a>(QObject *parent)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : IUAVGadgetFactory(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>), tr(<span class="stringliteral">&quot;PFD (qml)&quot;</span>), parent)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">   27</a></span>&#160;<a class="code" href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">PfdQmlGadgetFactory::~PfdQmlGadgetFactory</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">   31</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a> *<a class="code" href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">PfdQmlGadgetFactory::createGadget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_pfd_qml_gadget_widget.html">PfdQmlGadgetWidget</a> *gadgetWidget = <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_widget.html">PfdQmlGadgetWidget</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget.html">PfdQmlGadget</a>(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>), gadgetWidget, parent);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">   37</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">PfdQmlGadgetFactory::createConfiguration</a>(QSettings *qSettings)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a>(QString(<span class="stringliteral">&quot;PfdQmlGadget&quot;</span>), qSettings);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">   42</a></span>&#160;IOptionsPage *<a class="code" href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">PfdQmlGadgetFactory::createOptionsPage</a>(IUAVGadgetConfiguration *config)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_pfd_qml_gadget_options_page.html">PfdQmlGadgetOptionsPage</a>(qobject_cast&lt;PfdQmlGadgetConfiguration *&gt;(config));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="ttc" id="class_pfd_qml_gadget_html"><div class="ttname"><a href="class_pfd_qml_gadget.html">PfdQmlGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadget_8h_source.html#l00029">pfdqmlgadget.h:29</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_factory_html_a6f9075efdc851baee7311c7033b31e30"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a6f9075efdc851baee7311c7033b31e30">PfdQmlGadgetFactory::PfdQmlGadgetFactory</a></div><div class="ttdeci">PfdQmlGadgetFactory(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00022">pfdqmlgadgetfactory.cpp:22</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
@@ -165,13 +162,13 @@ $(document).ready(function(){initNavTree('pfdqmlgadgetfactory_8cpp_source.html',
 <div class="ttc" id="pfdqmlgadgetconfiguration_8h_html"><div class="ttname"><a href="pfdqmlgadgetconfiguration_8h.html">pfdqmlgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_configuration_html"><div class="ttname"><a href="class_pfd_qml_gadget_configuration.html">PfdQmlGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetconfiguration_8h_source.html#l00023">pfdqmlgadgetconfiguration.h:23</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_factory_html_a1c93695c0b81feb818a804d847d2ed6d"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">PfdQmlGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00033">pfdqmlgadgetfactory.cpp:33</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_factory_html_a1c93695c0b81feb818a804d847d2ed6d"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a1c93695c0b81feb818a804d847d2ed6d">PfdQmlGadgetFactory::createGadget</a></div><div class="ttdeci">Core::IUAVGadget * createGadget(QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00031">pfdqmlgadgetfactory.cpp:31</a></div></div>
 <div class="ttc" id="pfdqmlgadgetwidget_8h_html"><div class="ttname"><a href="pfdqmlgadgetwidget_8h.html">pfdqmlgadgetwidget.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_factory_html_a8fd3534e971a8d3744837e72bc1bd93c"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">PfdQmlGadgetFactory::~PfdQmlGadgetFactory</a></div><div class="ttdeci">~PfdQmlGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00029">pfdqmlgadgetfactory.cpp:29</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_factory_html_a8fd3534e971a8d3744837e72bc1bd93c"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a8fd3534e971a8d3744837e72bc1bd93c">PfdQmlGadgetFactory::~PfdQmlGadgetFactory</a></div><div class="ttdeci">~PfdQmlGadgetFactory()</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00027">pfdqmlgadgetfactory.cpp:27</a></div></div>
 <div class="ttc" id="pfdqmlgadgetfactory_8h_html"><div class="ttname"><a href="pfdqmlgadgetfactory_8h.html">pfdqmlgadgetfactory.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_factory_html_a6dcb32fb151bd18d5f643b991f10d358"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">PfdQmlGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00039">pfdqmlgadgetfactory.cpp:39</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_factory_html_a6dcb32fb151bd18d5f643b991f10d358"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#a6dcb32fb151bd18d5f643b991f10d358">PfdQmlGadgetFactory::createConfiguration</a></div><div class="ttdeci">IUAVGadgetConfiguration * createConfiguration(QSettings *qSettings)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00037">pfdqmlgadgetfactory.cpp:37</a></div></div>
 <div class="ttc" id="pfdqmlgadgetoptionspage_8h_html"><div class="ttname"><a href="pfdqmlgadgetoptionspage_8h.html">pfdqmlgadgetoptionspage.h</a></div></div>
-<div class="ttc" id="class_pfd_qml_gadget_factory_html_adb0a3b170a57ece58a95bf91998ef8eb"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">PfdQmlGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00044">pfdqmlgadgetfactory.cpp:44</a></div></div>
+<div class="ttc" id="class_pfd_qml_gadget_factory_html_adb0a3b170a57ece58a95bf91998ef8eb"><div class="ttname"><a href="class_pfd_qml_gadget_factory.html#adb0a3b170a57ece58a95bf91998ef8eb">PfdQmlGadgetFactory::createOptionsPage</a></div><div class="ttdeci">IOptionsPage * createOptionsPage(IUAVGadgetConfiguration *config)</div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetfactory_8cpp_source.html#l00042">pfdqmlgadgetfactory.cpp:42</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_widget_html"><div class="ttname"><a href="class_pfd_qml_gadget_widget.html">PfdQmlGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetwidget_8h_source.html#l00024">pfdqmlgadgetwidget.h:24</a></div></div>
 <div class="ttc" id="class_pfd_qml_gadget_options_page_html"><div class="ttname"><a href="class_pfd_qml_gadget_options_page.html">PfdQmlGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="pfdqmlgadgetoptionspage_8h_source.html#l00036">pfdqmlgadgetoptionspage.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

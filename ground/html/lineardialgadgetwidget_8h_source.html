@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -146,104 +146,117 @@ $(document).ready(function(){initNavTree('lineardialgadgetwidget_8h_source.html'
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7">LineardialGadgetWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <a class="code" href="group___linear_dial_plugin.html#ga46b2275fc21a5a5fc14809f31be48674">~LineardialGadgetWidget</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga5242e6b2ecad5fb0d80b13f5e989c671">setDialFile</a>(QString dfn);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a">paint</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga659bce00c419425ed6e5e03095b06e3c">   50</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga659bce00c419425ed6e5e03095b06e3c">setRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) { minValue=min; maxValue=max;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">   51</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">setGreenRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) {greenMin=min; greenMax=max;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">   52</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">setYellowRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) {yellowMin=min; yellowMax=max;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">   53</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">setRedRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max) {redMin=min; redMax=max;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81">connectInput</a>(QString obj, QString field);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga68d6c562622c590886f5d3efceac4349">setIndex</a>(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga65e46979b848fd423f40d6b001e04ffa">setDialFont</a>(QString fontProps);</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">   57</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">setFactor</a> (<span class="keywordtype">double</span> val) { factor = val;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">   58</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">setDecimalPlaces</a>(<span class="keywordtype">int</span> val) { places = val;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gae4ba61f22d069348e46919a30913ee34">updateIndex</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *object1);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga80239da240f9678e9cf4d2de3d9f6568">paintEvent</a>(QPaintEvent *event);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga6f18ff48bf1851067cbd13d56f04fd73">resizeEvent</a>(QResizeEvent *event);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   <span class="keywordtype">void</span> moveIndex();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   QSvgRenderer *m_renderer;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   QGraphicsSvgItem *background;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   QGraphicsSvgItem *foreground;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   QGraphicsSvgItem *index;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   QGraphicsSvgItem *green;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   QGraphicsSvgItem *yellow;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   QGraphicsSvgItem *red;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   QGraphicsSvgItem *fieldSymbol;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group___linear_dial_plugin.html#ga46b2275fc21a5a5fc14809f31be48674">~LineardialGadgetWidget</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga5242e6b2ecad5fb0d80b13f5e989c671">setDialFile</a>(QString dfn);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a">paint</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga659bce00c419425ed6e5e03095b06e3c">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga659bce00c419425ed6e5e03095b06e3c">setRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        minValue = min;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        maxValue = max;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">setGreenRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        greenMin = min;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        greenMax = max;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">setYellowRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        yellowMin = min;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        yellowMax = max;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">setRedRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        redMin = min;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        redMax = max;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81">connectInput</a>(QString obj, QString field);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga68d6c562622c590886f5d3efceac4349">setIndex</a>(<span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga65e46979b848fd423f40d6b001e04ffa">setDialFont</a>(QString fontProps);</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">setFactor</a>(<span class="keywordtype">double</span> val) { factor = val; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">setDecimalPlaces</a>(<span class="keywordtype">int</span> val) { places = val; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#gae4ba61f22d069348e46919a30913ee34">updateIndex</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *object1);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga80239da240f9678e9cf4d2de3d9f6568">paintEvent</a>(QPaintEvent *event);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___linear_dial_plugin.html#ga6f18ff48bf1851067cbd13d56f04fd73">resizeEvent</a>(QResizeEvent *event);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   QGraphicsTextItem *fieldName;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   QGraphicsTextItem *fieldValue;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                   <span class="comment">// Simple flag to skip rendering if the</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;   <span class="keywordtype">bool</span> fgenabled; <span class="comment">// layer does not exist.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;   <span class="keywordtype">bool</span> verticalDial; <span class="comment">// True if the dials scales vertically.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;   qreal startX; <span class="comment">// Where we should draw the bargraph</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;   qreal startY; <span class="comment">// green/yellow/red zones.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;   qreal bargraphSize;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;   qreal indexHeight;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;   qreal indexWidth;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;   <span class="keywordtype">double</span> minValue;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;   <span class="keywordtype">double</span> maxValue;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;   <span class="keywordtype">double</span> greenMin;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;   <span class="keywordtype">double</span> greenMax;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;   <span class="keywordtype">double</span> yellowMin;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;   <span class="keywordtype">double</span> yellowMax;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;   <span class="keywordtype">double</span> redMin;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;   <span class="keywordtype">double</span> redMax;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;   <span class="keywordtype">double</span> factor;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;   <span class="keywordtype">int</span> places;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;   <span class="comment">// The Value and target variables</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;   <span class="comment">// are expressed in degrees</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;   <span class="keywordtype">double</span> indexTarget;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;   <span class="keywordtype">double</span> indexValue;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   <span class="comment">// Rotation timer</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;   QTimer dialTimer;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;   <span class="comment">// Name of the fields to read when an update is received:</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;   <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>* obj1;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;   QString field1;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;   QString subfield1;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;   <span class="keywordtype">bool</span> haveSubField1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> moveIndex();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QSvgRenderer *m_renderer;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QGraphicsSvgItem *background;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QGraphicsSvgItem *foreground;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QGraphicsSvgItem *index;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QGraphicsSvgItem *green;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QGraphicsSvgItem *yellow;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QGraphicsSvgItem *red;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QGraphicsSvgItem *fieldSymbol;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    QGraphicsTextItem *fieldName;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QGraphicsTextItem *fieldValue;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// Simple flag to skip rendering if the</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> fgenabled; <span class="comment">// layer does not exist.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> verticalDial; <span class="comment">// True if the dials scales vertically.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    qreal startX; <span class="comment">// Where we should draw the bargraph</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    qreal startY; <span class="comment">// green/yellow/red zones.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    qreal bargraphSize;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    qreal indexHeight;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    qreal indexWidth;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">double</span> minValue;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">double</span> maxValue;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">double</span> greenMin;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">double</span> greenMax;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">double</span> yellowMin;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">double</span> yellowMax;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">double</span> redMin;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">double</span> redMax;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">double</span> factor;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> places;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LINEARDIALGADGETWIDGET_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group___linear_dial_plugin_html_gae4ba61f22d069348e46919a30913ee34"><div class="ttname"><a href="group___linear_dial_plugin.html#gae4ba61f22d069348e46919a30913ee34">LineardialGadgetWidget::updateIndex</a></div><div class="ttdeci">void updateIndex(UAVObject *object1)</div><div class="ttdoc">Called by the UAVObject which got updated. </div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00108">lineardialgadgetwidget.cpp:108</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_gac43bdb344ff4fa3376e0c38358b9ae22"><div class="ttname"><a href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">LineardialGadgetWidget::setRedRange</a></div><div class="ttdeci">void setRedRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00053">lineardialgadgetwidget.h:53</a></div></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// The Value and target variables</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// are expressed in degrees</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">double</span> indexTarget;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">double</span> indexValue;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Rotation timer</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    QTimer dialTimer;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// Name of the fields to read when an update is received:</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj1;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    QString field1;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    QString subfield1;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> haveSubField1;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LINEARDIALGADGETWIDGET_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___linear_dial_plugin_html_gae4ba61f22d069348e46919a30913ee34"><div class="ttname"><a href="group___linear_dial_plugin.html#gae4ba61f22d069348e46919a30913ee34">LineardialGadgetWidget::updateIndex</a></div><div class="ttdeci">void updateIndex(UAVObject *object1)</div><div class="ttdoc">Called by the UAVObject which got updated. </div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00106">lineardialgadgetwidget.cpp:106</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_gac43bdb344ff4fa3376e0c38358b9ae22"><div class="ttname"><a href="group___linear_dial_plugin.html#gac43bdb344ff4fa3376e0c38358b9ae22">LineardialGadgetWidget::setRedRange</a></div><div class="ttdeci">void setRedRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00065">lineardialgadgetwidget.h:65</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga90222159d9de45fe9f4321c30e3f536a"><div class="ttname"><a href="group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a">LineardialGadgetWidget::paint</a></div><div class="ttdeci">void paint()</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00371">lineardialgadgetwidget.cpp:371</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga46b699d52d4dea2d6b6ff2b37a5657b0"><div class="ttname"><a href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">LineardialGadgetWidget::setGreenRange</a></div><div class="ttdeci">void setGreenRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00051">lineardialgadgetwidget.h:51</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga68d6c562622c590886f5d3efceac4349"><div class="ttname"><a href="group___linear_dial_plugin.html#ga68d6c562622c590886f5d3efceac4349">LineardialGadgetWidget::setIndex</a></div><div class="ttdeci">void setIndex(double val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00397">lineardialgadgetwidget.cpp:397</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga90222159d9de45fe9f4321c30e3f536a"><div class="ttname"><a href="group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a">LineardialGadgetWidget::paint</a></div><div class="ttdeci">void paint()</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00370">lineardialgadgetwidget.cpp:370</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga46b699d52d4dea2d6b6ff2b37a5657b0"><div class="ttname"><a href="group___linear_dial_plugin.html#ga46b699d52d4dea2d6b6ff2b37a5657b0">LineardialGadgetWidget::setGreenRange</a></div><div class="ttdeci">void setGreenRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00055">lineardialgadgetwidget.h:55</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga68d6c562622c590886f5d3efceac4349"><div class="ttname"><a href="group___linear_dial_plugin.html#ga68d6c562622c590886f5d3efceac4349">LineardialGadgetWidget::setIndex</a></div><div class="ttdeci">void setIndex(double val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00396">lineardialgadgetwidget.cpp:396</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga65e46979b848fd423f40d6b001e04ffa"><div class="ttname"><a href="group___linear_dial_plugin.html#ga65e46979b848fd423f40d6b001e04ffa">LineardialGadgetWidget::setDialFont</a></div><div class="ttdeci">void setDialFont(QString fontProps)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00352">lineardialgadgetwidget.cpp:352</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga1c62c1ba4256fcbe4654bb904003c3b5"><div class="ttname"><a href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">LineardialGadgetWidget::setDecimalPlaces</a></div><div class="ttdeci">void setDecimalPlaces(int val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00058">lineardialgadgetwidget.h:58</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga1c62c1ba4256fcbe4654bb904003c3b5"><div class="ttname"><a href="group___linear_dial_plugin.html#ga1c62c1ba4256fcbe4654bb904003c3b5">LineardialGadgetWidget::setDecimalPlaces</a></div><div class="ttdeci">void setDecimalPlaces(int val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00074">lineardialgadgetwidget.h:74</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_gae8c680251e4f8898f8653b6aede9fc81"><div class="ttname"><a href="group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81">LineardialGadgetWidget::connectInput</a></div><div class="ttdeci">void connectInput(QString obj, QString field)</div><div class="ttdoc">Connects the widget to the relevant UAVObjects. </div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00067">lineardialgadgetwidget.cpp:67</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga5242e6b2ecad5fb0d80b13f5e989c671"><div class="ttname"><a href="group___linear_dial_plugin.html#ga5242e6b2ecad5fb0d80b13f5e989c671">LineardialGadgetWidget::setDialFile</a></div><div class="ttdeci">void setDialFile(QString dfn)</div><div class="ttdoc">Setup dial using its master SVG template. </div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00152">lineardialgadgetwidget.cpp:152</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga659bce00c419425ed6e5e03095b06e3c"><div class="ttname"><a href="group___linear_dial_plugin.html#ga659bce00c419425ed6e5e03095b06e3c">LineardialGadgetWidget::setRange</a></div><div class="ttdeci">void setRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00050">lineardialgadgetwidget.h:50</a></div></div>
 <div class="ttc" id="class_lineardial_gadget_widget_html"><div class="ttname"><a href="class_lineardial_gadget_widget.html">LineardialGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00041">lineardialgadgetwidget.h:41</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga46b2275fc21a5a5fc14809f31be48674"><div class="ttname"><a href="group___linear_dial_plugin.html#ga46b2275fc21a5a5fc14809f31be48674">LineardialGadgetWidget::~LineardialGadgetWidget</a></div><div class="ttdeci">~LineardialGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00059">lineardialgadgetwidget.cpp:59</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga6f18ff48bf1851067cbd13d56f04fd73"><div class="ttname"><a href="group___linear_dial_plugin.html#ga6f18ff48bf1851067cbd13d56f04fd73">LineardialGadgetWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00389">lineardialgadgetwidget.cpp:389</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga80239da240f9678e9cf4d2de3d9f6568"><div class="ttname"><a href="group___linear_dial_plugin.html#ga80239da240f9678e9cf4d2de3d9f6568">LineardialGadgetWidget::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00376">lineardialgadgetwidget.cpp:376</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga6f18ff48bf1851067cbd13d56f04fd73"><div class="ttname"><a href="group___linear_dial_plugin.html#ga6f18ff48bf1851067cbd13d56f04fd73">LineardialGadgetWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00388">lineardialgadgetwidget.cpp:388</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga80239da240f9678e9cf4d2de3d9f6568"><div class="ttname"><a href="group___linear_dial_plugin.html#ga80239da240f9678e9cf4d2de3d9f6568">LineardialGadgetWidget::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00375">lineardialgadgetwidget.cpp:375</a></div></div>
 <div class="ttc" id="lineardialgadgetconfiguration_8h_html"><div class="ttname"><a href="lineardialgadgetconfiguration_8h.html">lineardialgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_gad4c7bf09ce46f89db163dee80784418b"><div class="ttname"><a href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">LineardialGadgetWidget::setFactor</a></div><div class="ttdeci">void setFactor(double val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00057">lineardialgadgetwidget.h:57</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_gad4c7bf09ce46f89db163dee80784418b"><div class="ttname"><a href="group___linear_dial_plugin.html#gad4c7bf09ce46f89db163dee80784418b">LineardialGadgetWidget::setFactor</a></div><div class="ttdeci">void setFactor(double val)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00073">lineardialgadgetwidget.h:73</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga67af774f5fa476bda0dce880d57348a7"><div class="ttname"><a href="group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7">LineardialGadgetWidget::LineardialGadgetWidget</a></div><div class="ttdeci">LineardialGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8cpp_source.html#l00034">lineardialgadgetwidget.cpp:34</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga109a0d550537110c81433ec36eaea6ba"><div class="ttname"><a href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">LineardialGadgetWidget::setYellowRange</a></div><div class="ttdeci">void setYellowRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00052">lineardialgadgetwidget.h:52</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga109a0d550537110c81433ec36eaea6ba"><div class="ttname"><a href="group___linear_dial_plugin.html#ga109a0d550537110c81433ec36eaea6ba">LineardialGadgetWidget::setYellowRange</a></div><div class="ttdeci">void setYellowRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetwidget_8h_source.html#l00060">lineardialgadgetwidget.h:60</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

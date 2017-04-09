@@ -2,8 +2,6 @@ var searchData=
 [
   ['openpilotplugin_2ecpp',['openpilotplugin.cpp',['../openpilotplugin_8cpp.html',1,'']]],
   ['openpilotplugin_2eh',['openpilotplugin.h',['../openpilotplugin_8h.html',1,'']]],
-  ['opmap_5fedit_5fwaypoint_5fdialog_2ecpp',['opmap_edit_waypoint_dialog.cpp',['../opmap__edit__waypoint__dialog_8cpp.html',1,'']]],
-  ['opmap_5fedit_5fwaypoint_5fdialog_2eh',['opmap_edit_waypoint_dialog.h',['../opmap__edit__waypoint__dialog_8h.html',1,'']]],
   ['opmap_5fstatusbar_5fwidget_2ecpp',['opmap_statusbar_widget.cpp',['../opmap__statusbar__widget_8cpp.html',1,'']]],
   ['opmap_5fstatusbar_5fwidget_2eh',['opmap_statusbar_widget.h',['../opmap__statusbar__widget_8h.html',1,'']]],
   ['opmap_5fzoom_5fslider_5fwidget_2ecpp',['opmap_zoom_slider_widget.cpp',['../opmap__zoom__slider__widget_8cpp.html',1,'']]],

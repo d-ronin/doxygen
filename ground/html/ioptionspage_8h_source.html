@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('ioptionspage_8h_source.html','');});
 <div class="contents">
 <a href="ioptionspage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -144,42 +144,45 @@ $(document).ready(function(){initNavTree('ioptionspage_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8">   46</a></span>&#160;    <a class="code" href="group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8">IOptionsPage</a>(QObject *parent = 0) :</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        QObject(parent),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m_icon(QIcon()) {}</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">   49</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">~IOptionsPage</a>() {}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">setIcon</a>(QIcon icon) { m_icon = icon; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">   52</a></span>&#160;    QIcon <a class="code" href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">icon</a>() { <span class="keywordflow">return</span> m_icon; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/*  gadget options pages can leave these 4 functions as is,</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">        since they are decorated by UAVGadgetOptionsPageDecorator,</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">        all other options pages must override these */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">   57</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">id</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; };</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">   58</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">trName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; };</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">   59</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">category</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DefaultCategory&quot;</span>; };</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">   60</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">trCategory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DefaultCategory&quot;</span>; };</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> QWidget *createPage(QWidget *parent) = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> apply() = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> finish() = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QIcon m_icon;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // IOPTIONSPAGE_H</span></div>
-<div class="ttc" id="group___core_plugin_html_gac858e7a1ee4af77f311dba0b44d22d4d"><div class="ttname"><a href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">Core::IOptionsPage::icon</a></div><div class="ttdeci">QIcon icon()</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00052">ioptionspage.h:52</a></div></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8">   46</a></span>&#160;    <a class="code" href="group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8">IOptionsPage</a>(QObject *parent = 0)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        , m_icon(QIcon())</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">   51</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">~IOptionsPage</a>() {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">setIcon</a>(QIcon icon) { m_icon = icon; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">   54</a></span>&#160;    QIcon <a class="code" href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">icon</a>() { <span class="keywordflow">return</span> m_icon; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/*  gadget options pages can leave these 4 functions as is,</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">        since they are decorated by UAVGadgetOptionsPageDecorator,</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">        all other options pages must override these */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">   59</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">id</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; };</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">   60</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">trName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; };</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">   61</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">category</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DefaultCategory&quot;</span>; };</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">   62</a></span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">trCategory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DefaultCategory&quot;</span>; };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> QWidget *createPage(QWidget *parent) = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> apply() = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> finish() = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QIcon m_icon;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // IOPTIONSPAGE_H</span></div>
+<div class="ttc" id="group___core_plugin_html_gac858e7a1ee4af77f311dba0b44d22d4d"><div class="ttname"><a href="group___core_plugin.html#gac858e7a1ee4af77f311dba0b44d22d4d">Core::IOptionsPage::icon</a></div><div class="ttdeci">QIcon icon()</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00054">ioptionspage.h:54</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga9b695b2de67229131dbe91bd1ef22ef8"><div class="ttname"><a href="group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8">Core::IOptionsPage::IOptionsPage</a></div><div class="ttdeci">IOptionsPage(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00046">ioptionspage.h:46</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga03767437394cdfbfc9e253638a71b132"><div class="ttname"><a href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">Core::IOptionsPage::category</a></div><div class="ttdeci">virtual QString category() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00059">ioptionspage.h:59</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaab16eddf8ad1ee26863b41acaf18feb3"><div class="ttname"><a href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">Core::IOptionsPage::setIcon</a></div><div class="ttdeci">void setIcon(QIcon icon)</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00051">ioptionspage.h:51</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga2984fb6ab0e3b502783dfee7ba596268"><div class="ttname"><a href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">Core::IOptionsPage::id</a></div><div class="ttdeci">virtual QString id() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00057">ioptionspage.h:57</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga03767437394cdfbfc9e253638a71b132"><div class="ttname"><a href="group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132">Core::IOptionsPage::category</a></div><div class="ttdeci">virtual QString category() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00061">ioptionspage.h:61</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaab16eddf8ad1ee26863b41acaf18feb3"><div class="ttname"><a href="group___core_plugin.html#gaab16eddf8ad1ee26863b41acaf18feb3">Core::IOptionsPage::setIcon</a></div><div class="ttdeci">void setIcon(QIcon icon)</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00053">ioptionspage.h:53</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga2984fb6ab0e3b502783dfee7ba596268"><div class="ttname"><a href="group___core_plugin.html#ga2984fb6ab0e3b502783dfee7ba596268">Core::IOptionsPage::id</a></div><div class="ttdeci">virtual QString id() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00059">ioptionspage.h:59</a></div></div>
 <div class="ttc" id="core__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga9bda94026b37720a30f4294560c79244"><div class="ttname"><a href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">Core::IOptionsPage::trName</a></div><div class="ttdeci">virtual QString trName() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00058">ioptionspage.h:58</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gac5538fc040c826784167edb4fc359b68"><div class="ttname"><a href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">Core::IOptionsPage::trCategory</a></div><div class="ttdeci">virtual QString trCategory() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00060">ioptionspage.h:60</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga9bda94026b37720a30f4294560c79244"><div class="ttname"><a href="group___core_plugin.html#ga9bda94026b37720a30f4294560c79244">Core::IOptionsPage::trName</a></div><div class="ttdeci">virtual QString trName() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00060">ioptionspage.h:60</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gac5538fc040c826784167edb4fc359b68"><div class="ttname"><a href="group___core_plugin.html#gac5538fc040c826784167edb4fc359b68">Core::IOptionsPage::trCategory</a></div><div class="ttdeci">virtual QString trCategory() const </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00062">ioptionspage.h:62</a></div></div>
 <div class="ttc" id="class_core_1_1_i_options_page_html"><div class="ttname"><a href="class_core_1_1_i_options_page.html">Core::IOptionsPage</a></div><div class="ttdoc">The IOptionsPage is an interface for providing options pages. </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00042">ioptionspage.h:42</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaaea80acd4f4df67edf6a8027abf6b016"><div class="ttname"><a href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">Core::IOptionsPage::~IOptionsPage</a></div><div class="ttdeci">virtual ~IOptionsPage()</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00049">ioptionspage.h:49</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaaea80acd4f4df67edf6a8027abf6b016"><div class="ttname"><a href="group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016">Core::IOptionsPage::~IOptionsPage</a></div><div class="ttdeci">virtual ~IOptionsPage()</div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00051">ioptionspage.h:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

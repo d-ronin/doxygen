@@ -48,7 +48,7 @@ var group___u_a_v_talk_plugin =
       [ "stop", "group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718", null ]
     ] ],
     [ "TelemetryMonitor", "class_telemetry_monitor.html", [
-      [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga0db7268f0022d9b98c2cc2f47eaff959", null ],
+      [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084", null ],
       [ "~TelemetryMonitor", "group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e", null ],
       [ "checkSessionObjNacked", "group___u_a_v_talk_plugin.html#gab7f8d5561a8d7fdb10b6a214b5105b8d", null ],
       [ "connected", "group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7", null ],
@@ -159,7 +159,7 @@ var group___u_a_v_talk_plugin =
     [ "stop", "group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718", null ],
     [ "Telemetry", "group___u_a_v_talk_plugin.html#ga6998be3c493d7a742d8f54bcf235e823", null ],
     [ "TelemetryManager", "group___u_a_v_talk_plugin.html#gaab121ca26ff1b0985b013d715132a088", null ],
-    [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga0db7268f0022d9b98c2cc2f47eaff959", null ],
+    [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084", null ],
     [ "TransactionKey", "group___u_a_v_talk_plugin.html#gad570ba59a89b2499d1fa950f756f029e", null ],
     [ "TransactionKey", "group___u_a_v_talk_plugin.html#ga01b3c8039cd97c7da26eb79fdeed0003", null ],
     [ "transactionTimeout", "group___u_a_v_talk_plugin.html#gab5d172ba63e07316e086a65c5bcc8d47", null ],

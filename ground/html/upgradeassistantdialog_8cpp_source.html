@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -137,9 +137,9 @@ $(document).ready(function(){initNavTree('upgradeassistantdialog_8cpp_source.htm
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="upgradeassistantdialog_8h.html">upgradeassistantdialog.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;ui_upgradeassistant.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90">   37</a></span>&#160;<a class="code" href="group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90">UpgradeAssistantDialog::UpgradeAssistantDialog</a>(QWidget *parent) :</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QDialog(parent),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ui(new Ui::UpgradeAssistant)</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90">   37</a></span>&#160;<a class="code" href="group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90">UpgradeAssistantDialog::UpgradeAssistantDialog</a>(QWidget *parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : QDialog(parent)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    , ui(new Ui::UpgradeAssistant)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -155,70 +155,70 @@ $(document).ready(function(){initNavTree('upgradeassistantdialog_8cpp_source.htm
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    stepLabels[<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a53a7b75423c01453fe089ae707271189">STEP_BOOT</a>] = ui-&gt;lblBoot;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    stepLabels[<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a9ddebf132c47f8d9e2e2177c0f75f817">STEP_IMPORT</a>] = ui-&gt;lblImport;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>=<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad">STEP_FIRST</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>&lt;<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6">STEP_NUM</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = <a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad">STEP_FIRST</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; <a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6">STEP_NUM</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        originalText[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = <span class="keyword">new</span> QString(stepLabels[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;text());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    connect(ui-&gt;buttonBox, SIGNAL(rejected()), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            SLOT(reject()));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">   63</a></span>&#160;<a class="code" href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">UpgradeAssistantDialog::~UpgradeAssistantDialog</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">UpgradeAssistantDialog::setOperatingMode</a>(<span class="keywordtype">bool</span> upgradingBootloader,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> blankFC)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ui-&gt;lblUpgradeBootloader-&gt;setEnabled(upgradingBootloader);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ui-&gt;lblDownloadSettings-&gt;setEnabled(!blankFC);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    ui-&gt;lblTranslateSettings-&gt;setEnabled(!blankFC);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ui-&gt;lblImport-&gt;setEnabled(!blankFC);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="group___uploader.html#ga245cc1bb639b28a773705eb968b6b770">onStepChanged</a>(curStep);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">   80</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">UpgradeAssistantDialog::PromptUser</a>(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        QString promptText, QString detailText, QStringList buttonText) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> clickIndex=-1;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_q_list.html">QList &lt;QPushButton *&gt;</a> buttons;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QEventLoop loop;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QString &amp;buttLabel, buttonText) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        QPushButton *newButt = <span class="keyword">new</span> QPushButton(buttLabel);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        buttons.append(newButt);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        ui-&gt;buttonBox-&gt;addButton(newButt, QDialogButtonBox::ActionRole);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        connect(newButt, &amp;QPushButton::clicked, &amp;loop, [&amp;, i] (<span class="keywordtype">bool</span> checked) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                Q_UNUSED(checked);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                clickIndex = <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                loop.exit();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            } );</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        i++;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    connect(<span class="keyword">this</span>, &amp;UpgradeAssistantDialog::finished, &amp;loop, &amp;QEventLoop::quit);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    ui-&gt;lblStatus-&gt;setText(promptText);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    ui-&gt;lblDetailStatus-&gt;setText(detailText);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    loop.exec();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">foreach</span> (QPushButton *button, buttons) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ui-&gt;buttonBox-&gt;removeButton(button);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">delete</span> button;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ui-&gt;lblStatus-&gt;setText(tr(<span class="stringliteral">&quot;Auto-upgrade running...&quot;</span>));</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    ui-&gt;lblDetailStatus-&gt;setText(tr(<span class="stringliteral">&quot;Please wait while the upgrader performs automated actions on the flight board.&quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    connect(ui-&gt;buttonBox, &amp;QDialogButtonBox::rejected, <span class="keyword">this</span>, &amp;QDialog::reject);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">   62</a></span>&#160;<a class="code" href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">UpgradeAssistantDialog::~UpgradeAssistantDialog</a>()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">UpgradeAssistantDialog::setOperatingMode</a>(<span class="keywordtype">bool</span> upgradingBootloader, <span class="keywordtype">bool</span> blankFC)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ui-&gt;lblUpgradeBootloader-&gt;setEnabled(upgradingBootloader);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ui-&gt;lblDownloadSettings-&gt;setEnabled(!blankFC);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ui-&gt;lblTranslateSettings-&gt;setEnabled(!blankFC);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ui-&gt;lblImport-&gt;setEnabled(!blankFC);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="group___uploader.html#ga245cc1bb639b28a773705eb968b6b770">onStepChanged</a>(curStep);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">   78</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">UpgradeAssistantDialog::PromptUser</a>(QString promptText, QString detailText,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                       QStringList buttonText)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> clickIndex = -1;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;QPushButton *&gt;</a> buttons;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QEventLoop loop;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QString &amp;buttLabel, buttonText) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        QPushButton *newButt = <span class="keyword">new</span> QPushButton(buttLabel);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        buttons.append(newButt);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ui-&gt;buttonBox-&gt;addButton(newButt, QDialogButtonBox::ActionRole);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        connect(newButt, &amp;QPushButton::clicked, &amp;loop, [&amp;, i](<span class="keywordtype">bool</span> checked) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            Q_UNUSED(checked);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            clickIndex = <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            loop.exit();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        });</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        i++;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    connect(<span class="keyword">this</span>, &amp;UpgradeAssistantDialog::finished, &amp;loop, &amp;QEventLoop::quit);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ui-&gt;lblStatus-&gt;setText(promptText);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    ui-&gt;lblDetailStatus-&gt;setText(detailText);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    loop.exec();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">foreach</span> (QPushButton *button, buttons) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        ui-&gt;buttonBox-&gt;removeButton(button);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">delete</span> button;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ui-&gt;lblStatus-&gt;setText(tr(<span class="stringliteral">&quot;Auto-upgrade running...&quot;</span>));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ui-&gt;lblDetailStatus-&gt;setText(</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        tr(<span class="stringliteral">&quot;Please wait while the upgrader performs automated actions on the flight board.&quot;</span>));</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> clickIndex;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('upgradeassistantdialog_8cpp_source.htm
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">int</span> stepVal = step;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>=<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad">STEP_FIRST</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>&lt;<a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6">STEP_NUM</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = <a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad">STEP_FIRST</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; <a class="code" href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6">STEP_NUM</a>; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++) {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; stepVal) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">// Ensure marked done</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">if</span> (stepLabels[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;isEnabled()) {</div>
@@ -252,27 +252,31 @@ $(document).ready(function(){initNavTree('upgradeassistantdialog_8cpp_source.htm
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        ui-&gt;buttonBox-&gt;setStandardButtons(QDialogButtonBox::Close);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        ui-&gt;lblStatus-&gt;setText(tr(<span class="stringliteral">&quot;Auto-upgrade complete!&quot;</span>));</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        ui-&gt;lblDetailStatus-&gt;setText(tr(<span class="stringliteral">&quot;It may be necessary to reset your flight board (by removing and attaching power and USB) to apply settings.&quot;</span>));</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        ui-&gt;buttonBox-&gt;setStandardButtons(QDialogButtonBox::Abort);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        ui-&gt;lblStatus-&gt;setText(tr(<span class="stringliteral">&quot;Auto-upgrade running...&quot;</span>));</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        ui-&gt;lblDetailStatus-&gt;setText(tr(<span class="stringliteral">&quot;Please wait while the upgrader performs automated actions on the flight board.&quot;</span>));</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span> (isVisible()) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">raise</span>();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">  165</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">UpgradeAssistantDialog::closeEvent</a>(QCloseEvent* event) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    (<a class="code" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>) event;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        ui-&gt;lblDetailStatus-&gt;setText(</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            tr(<span class="stringliteral">&quot;It may be necessary to reset your flight board (by removing and attaching power &quot;</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;               <span class="stringliteral">&quot;and USB) to apply settings.&quot;</span>));</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        ui-&gt;buttonBox-&gt;setStandardButtons(QDialogButtonBox::Abort);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        ui-&gt;lblStatus-&gt;setText(tr(<span class="stringliteral">&quot;Auto-upgrade running...&quot;</span>));</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        ui-&gt;lblDetailStatus-&gt;setText(</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            tr(<span class="stringliteral">&quot;Please wait while the upgrader performs automated actions on the flight board.&quot;</span>));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (isVisible()) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">raise</span>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    reject();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
-<div class="ttc" id="group___uploader_html_ga321b8c6fadb920925f7fad0fe0379c87"><div class="ttname"><a href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">UpgradeAssistantDialog::closeEvent</a></div><div class="ttdeci">void closeEvent(QCloseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00165">upgradeassistantdialog.cpp:165</a></div></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">  168</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">UpgradeAssistantDialog::closeEvent</a>(QCloseEvent *event)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    (<a class="code" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>)event;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    reject();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="ttc" id="group___uploader_html_ga321b8c6fadb920925f7fad0fe0379c87"><div class="ttname"><a href="group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87">UpgradeAssistantDialog::closeEvent</a></div><div class="ttdeci">void closeEvent(QCloseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00168">upgradeassistantdialog.cpp:168</a></div></div>
 <div class="ttc" id="group___uploader_html_ga77a98a88ccfc2d6f0236ec9e053da638"><div class="ttname"><a href="group___uploader.html#ga77a98a88ccfc2d6f0236ec9e053da638">UpgradeAssistantDialog::UpgradeAssistantStep</a></div><div class="ttdeci">UpgradeAssistantStep</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00046">upgradeassistantdialog.h:46</a></div></div>
-<div class="ttc" id="group___uploader_html_gaea10e87c01ae547b8a9ebdd37e45d399"><div class="ttname"><a href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">UpgradeAssistantDialog::PromptUser</a></div><div class="ttdeci">int PromptUser(QString promptText, QString detailText, QStringList buttonText)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00080">upgradeassistantdialog.cpp:80</a></div></div>
+<div class="ttc" id="group___uploader_html_gaea10e87c01ae547b8a9ebdd37e45d399"><div class="ttname"><a href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">UpgradeAssistantDialog::PromptUser</a></div><div class="ttdeci">int PromptUser(QString promptText, QString detailText, QStringList buttonText)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00078">upgradeassistantdialog.cpp:78</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a9ddebf132c47f8d9e2e2177c0f75f817"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a9ddebf132c47f8d9e2e2177c0f75f817">UpgradeAssistantDialog::STEP_IMPORT</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00056">upgradeassistantdialog.h:56</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a07c67d2e649a55c2dabbcd17434ffc1f"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a07c67d2e649a55c2dabbcd17434ffc1f">UpgradeAssistantDialog::STEP_UPGRADEBOOTLOADER</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00050">upgradeassistantdialog.h:50</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a53a7b75423c01453fe089ae707271189"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a53a7b75423c01453fe089ae707271189">UpgradeAssistantDialog::STEP_BOOT</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00055">upgradeassistantdialog.h:55</a></div></div>
@@ -283,14 +287,14 @@ $(document).ready(function(){initNavTree('upgradeassistantdialog_8cpp_source.htm
 <div class="ttc" id="group___uploader_html_ga0e47da6849f0b888ebd949fcfec77a90"><div class="ttname"><a href="group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90">UpgradeAssistantDialog::UpgradeAssistantDialog</a></div><div class="ttdeci">UpgradeAssistantDialog(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00037">upgradeassistantdialog.cpp:37</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3011b15b7e7a7869ea89dfe218764ad">UpgradeAssistantDialog::STEP_FIRST</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00047">upgradeassistantdialog.h:47</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a854ed60a3846f938d6db376e0f3b3cff"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a854ed60a3846f938d6db376e0f3b3cff">UpgradeAssistantDialog::STEP_DOWNLOADSETTINGS</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00051">upgradeassistantdialog.h:51</a></div></div>
-<div class="ttc" id="group___uploader_html_ga523a8cbb5c228bfb1678274a09c4b91d"><div class="ttname"><a href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">UpgradeAssistantDialog::setOperatingMode</a></div><div class="ttdeci">void setOperatingMode(bool upgradingBootloader, bool blankFC)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00068">upgradeassistantdialog.cpp:68</a></div></div>
+<div class="ttc" id="group___uploader_html_ga523a8cbb5c228bfb1678274a09c4b91d"><div class="ttname"><a href="group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d">UpgradeAssistantDialog::setOperatingMode</a></div><div class="ttdeci">void setOperatingMode(bool upgradingBootloader, bool blankFC)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00067">upgradeassistantdialog.cpp:67</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638ab6ba6c9dae0eb16c08ccfe66e1005a0e"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ab6ba6c9dae0eb16c08ccfe66e1005a0e">UpgradeAssistantDialog::STEP_TRANSLATESETTINGS</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00052">upgradeassistantdialog.h:52</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a346336db514620881dffc585abb08657"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a346336db514620881dffc585abb08657">UpgradeAssistantDialog::STEP_CHECKCLOUD</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00049">upgradeassistantdialog.h:49</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga444cf2ff3f0ecbe028adce838d373f5c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a></div><div class="ttdeci">void(NAME)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8cpp_source.html#l00093">uavobjecttemplate.cpp:93</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga444cf2ff3f0ecbe028adce838d373f5c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a></div><div class="ttdeci">void(NAME)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8cpp_source.html#l00092">uavobjecttemplate.cpp:92</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; QPushButton * &gt;</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a46a023cecebac11a9cae261d09c1d882"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a46a023cecebac11a9cae261d09c1d882">UpgradeAssistantDialog::STEP_FLASHFIRMWARE</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00054">upgradeassistantdialog.h:54</a></div></div>
 <div class="ttc" id="group___uploader_html_ga245cc1bb639b28a773705eb968b6b770"><div class="ttname"><a href="group___uploader.html#ga245cc1bb639b28a773705eb968b6b770">UpgradeAssistantDialog::onStepChanged</a></div><div class="ttdeci">void onStepChanged(UpgradeAssistantStep step)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00123">upgradeassistantdialog.cpp:123</a></div></div>
-<div class="ttc" id="group___uploader_html_ga86201ec876be2035701404a6f0bd6a2d"><div class="ttname"><a href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">UpgradeAssistantDialog::~UpgradeAssistantDialog</a></div><div class="ttdeci">~UpgradeAssistantDialog()</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00063">upgradeassistantdialog.cpp:63</a></div></div>
+<div class="ttc" id="group___uploader_html_ga86201ec876be2035701404a6f0bd6a2d"><div class="ttname"><a href="group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d">UpgradeAssistantDialog::~UpgradeAssistantDialog</a></div><div class="ttdeci">~UpgradeAssistantDialog()</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00062">upgradeassistantdialog.cpp:62</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638a8e29c859eaa872af281c27107856fbae"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a8e29c859eaa872af281c27107856fbae">UpgradeAssistantDialog::STEP_ERASESETTINGS</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00053">upgradeassistantdialog.h:53</a></div></div>
 <div class="ttc" id="group___uploader_html_gga77a98a88ccfc2d6f0236ec9e053da638ae5a335d0c9f77d5e549b8fb85921f313"><div class="ttname"><a href="group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ae5a335d0c9f77d5e549b8fb85921f313">UpgradeAssistantDialog::STEP_ENTERLOADER</a></div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00048">upgradeassistantdialog.h:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

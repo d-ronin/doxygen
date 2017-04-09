@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,34 +129,39 @@ $(document).ready(function(){initNavTree('gpsdisplaygadget_8cpp_source.html','')
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gpsdisplaygadget_8h.html">gpsdisplaygadget.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gpsdisplaywidget_8h.html">gpsdisplaywidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#ga748699eae5b29ee0958be37c23a348f8">   30</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#ga748699eae5b29ee0958be37c23a348f8">GpsDisplayGadget::GpsDisplayGadget</a>(QString classId, <a class="code" href="class_gps_display_widget.html">GpsDisplayWidget</a> *widget, QWidget *parent) :</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    IUAVGadget(classId, parent),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    m_widget(widget),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connected(false)</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#ga748699eae5b29ee0958be37c23a348f8">   30</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#ga748699eae5b29ee0958be37c23a348f8">GpsDisplayGadget::GpsDisplayGadget</a>(QString classId, <a class="code" href="class_gps_display_widget.html">GpsDisplayWidget</a> *widget, QWidget *parent)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : IUAVGadget(classId, parent)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    , m_widget(widget)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    , connected(false)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    parser = <span class="keyword">new</span> <a class="code" href="class_telemetry_parser.html">TelemetryParser</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    connect(parser, SIGNAL(sv(<span class="keywordtype">int</span>)), m_widget, SLOT(setSVs(<span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(parser, SIGNAL(position(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget, SLOT(setPosition(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    connect(parser, SIGNAL(speedheading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget, SLOT(setSpeedHeading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(parser, SIGNAL(datetime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget, SLOT(setDateTime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    connect(parser, SIGNAL(satellite(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)), m_widget-&gt;gpsSky, SLOT(updateSat(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    connect(parser, SIGNAL(satellite(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)), m_widget-&gt;gpsSnrWidget, SLOT(updateSat(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    connect(parser, SIGNAL(satellitesDone()), m_widget-&gt;gpsSnrWidget, SLOT(satellitesDone()));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    connect(parser, SIGNAL(fixtype(QString)), m_widget, SLOT(setFixType(QString)));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    connect(parser, SIGNAL(dop(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget, SLOT(setDOP(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">   48</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">GpsDisplayGadget::~GpsDisplayGadget</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(parser, SIGNAL(position(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            SLOT(setPosition(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(parser, SIGNAL(speedheading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            SLOT(setSpeedHeading(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    connect(parser, SIGNAL(datetime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget, SLOT(setDateTime(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    connect(parser, SIGNAL(satellite(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)), m_widget-&gt;gpsSky,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            SLOT(updateSat(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    connect(parser, SIGNAL(satellite(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)), m_widget-&gt;gpsSnrWidget,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            SLOT(updateSat(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    connect(parser, SIGNAL(satellitesDone()), m_widget-&gt;gpsSnrWidget, SLOT(satellitesDone()));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    connect(parser, SIGNAL(fixtype(QString)), m_widget, SLOT(setFixType(QString)));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(parser, SIGNAL(dop(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)), m_widget,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            SLOT(setDOP(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>)));</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">   53</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">GpsDisplayGadget::~GpsDisplayGadget</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">delete</span> m_widget;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="ttc" id="class_gps_display_widget_html"><div class="ttname"><a href="class_gps_display_widget.html">GpsDisplayWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaywidget_8h_source.html#l00039">gpsdisplaywidget.h:39</a></div></div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_ga748699eae5b29ee0958be37c23a348f8"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#ga748699eae5b29ee0958be37c23a348f8">GpsDisplayGadget::GpsDisplayGadget</a></div><div class="ttdeci">GpsDisplayGadget(QString classId, GpsDisplayWidget *widget, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaygadget_8cpp_source.html#l00030">gpsdisplaygadget.cpp:30</a></div></div>
 <div class="ttc" id="gpsdisplaygadget_8h_html"><div class="ttname"><a href="gpsdisplaygadget_8h.html">gpsdisplaygadget.h</a></div></div>
 <div class="ttc" id="gpsdisplaywidget_8h_html"><div class="ttname"><a href="gpsdisplaywidget_8h.html">gpsdisplaywidget.h</a></div></div>
-<div class="ttc" id="class_telemetry_parser_html"><div class="ttname"><a href="class_telemetry_parser.html">TelemetryParser</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetryparser_8h_source.html#l00038">telemetryparser.h:38</a></div></div>
-<div class="ttc" id="group___g_p_s_gadget_plugin_html_ga6ec785be3eefba596601b671573f6401"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">GpsDisplayGadget::~GpsDisplayGadget</a></div><div class="ttdeci">~GpsDisplayGadget()</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaygadget_8cpp_source.html#l00048">gpsdisplaygadget.cpp:48</a></div></div>
+<div class="ttc" id="class_telemetry_parser_html"><div class="ttname"><a href="class_telemetry_parser.html">TelemetryParser</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetryparser_8h_source.html#l00037">telemetryparser.h:37</a></div></div>
+<div class="ttc" id="group___g_p_s_gadget_plugin_html_ga6ec785be3eefba596601b671573f6401"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#ga6ec785be3eefba596601b671573f6401">GpsDisplayGadget::~GpsDisplayGadget</a></div><div class="ttdeci">~GpsDisplayGadget()</div><div class="ttdef"><b>Definition:</b> <a href="gpsdisplaygadget_8cpp_source.html#l00053">gpsdisplaygadget.cpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

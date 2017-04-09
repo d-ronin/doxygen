@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,58 +133,42 @@ $(document).ready(function(){initNavTree('modelviewgadgetconfiguration_8h_source
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_model_view_gadget_configuration.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a>(QString classId, QSettings *qSettings = 0, QObject *parent = 0);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">   41</a></span>&#160;    QString <a class="code" href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">acFilename</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> m_acFilename;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">setAcFilename</a>(QString acFile)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        m_acFilename = acFile;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">   49</a></span>&#160;    QString <a class="code" href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">bgFilename</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> m_bgFilename;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">setBgFilename</a>(QString bgFile)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        m_bgFilename = bgFile;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">vboEnabled</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> m_enableVbo;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">setVboEnabled</a>(<span class="keywordtype">bool</span> vboEnable)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        m_enableVbo = vboEnable;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;signals:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QString m_acFilename;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QString m_bgFilename;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> m_enableVbo; <span class="comment">// Vertex buffer objects, a few GPUs crash if enabled</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // MODELVIEWGADGETCONFIGURATION_H</span></div>
-<div class="ttc" id="group___model_view_plugin_html_ga38f0d11e16e59ffff87290b2a222468e"><div class="ttname"><a href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">ModelViewGadgetConfiguration::acFilename</a></div><div class="ttdeci">QString acFilename()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00041">modelviewgadgetconfiguration.h:41</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_gac9bccdbb077005f2bb94cfc7c9dfefaa"><div class="ttname"><a href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">ModelViewGadgetConfiguration::setBgFilename</a></div><div class="ttdeci">void setBgFilename(QString bgFile)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00053">modelviewgadgetconfiguration.h:53</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga5a6c75e6ec1963b48ad4cd6fd1f80e67"><div class="ttname"><a href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">ModelViewGadgetConfiguration::setAcFilename</a></div><div class="ttdeci">void setAcFilename(QString acFile)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00045">modelviewgadgetconfiguration.h:45</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_model_view_gadget_configuration.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a>(QString classId, QSettings *qSettings = 0,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                          QObject *parent = 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">   43</a></span>&#160;    QString <a class="code" href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">acFilename</a>() { <span class="keywordflow">return</span> m_acFilename; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">setAcFilename</a>(QString acFile) { m_acFilename = acFile; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">   45</a></span>&#160;    QString <a class="code" href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">bgFilename</a>() { <span class="keywordflow">return</span> m_bgFilename; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">setBgFilename</a>(QString bgFile) { m_bgFilename = bgFile; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">   47</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">vboEnabled</a>() { <span class="keywordflow">return</span> m_enableVbo; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">setVboEnabled</a>(<span class="keywordtype">bool</span> vboEnable) { m_enableVbo = vboEnable; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;signals:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QString m_acFilename;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QString m_bgFilename;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> m_enableVbo; <span class="comment">// Vertex buffer objects, a few GPUs crash if enabled</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // MODELVIEWGADGETCONFIGURATION_H</span></div>
+<div class="ttc" id="group___model_view_plugin_html_ga38f0d11e16e59ffff87290b2a222468e"><div class="ttname"><a href="group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e">ModelViewGadgetConfiguration::acFilename</a></div><div class="ttdeci">QString acFilename()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00043">modelviewgadgetconfiguration.h:43</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_gac9bccdbb077005f2bb94cfc7c9dfefaa"><div class="ttname"><a href="group___model_view_plugin.html#gac9bccdbb077005f2bb94cfc7c9dfefaa">ModelViewGadgetConfiguration::setBgFilename</a></div><div class="ttdeci">void setBgFilename(QString bgFile)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00046">modelviewgadgetconfiguration.h:46</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga5a6c75e6ec1963b48ad4cd6fd1f80e67"><div class="ttname"><a href="group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67">ModelViewGadgetConfiguration::setAcFilename</a></div><div class="ttdeci">void setAcFilename(QString acFile)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00044">modelviewgadgetconfiguration.h:44</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
 <div class="ttc" id="class_model_view_gadget_configuration_html"><div class="ttname"><a href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00034">modelviewgadgetconfiguration.h:34</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga82f3e4d2137def4ff8aa56abc69d3bce"><div class="ttname"><a href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">ModelViewGadgetConfiguration::vboEnabled</a></div><div class="ttdeci">bool vboEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00057">modelviewgadgetconfiguration.h:57</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga82f3e4d2137def4ff8aa56abc69d3bce"><div class="ttname"><a href="group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce">ModelViewGadgetConfiguration::vboEnabled</a></div><div class="ttdeci">bool vboEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00047">modelviewgadgetconfiguration.h:47</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab86084dd3556b645fa8020dc33776d88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a></div><div class="ttdeci">UAVDataObject * clone(quint32 instID)</div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga1d269e09831fb3fd6187c831b3b516b1"><div class="ttname"><a href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">ModelViewGadgetConfiguration::bgFilename</a></div><div class="ttdeci">QString bgFilename()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00049">modelviewgadgetconfiguration.h:49</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_gad35eb4d4a2a27f015e4e54b18e3b2b97"><div class="ttname"><a href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">ModelViewGadgetConfiguration::setVboEnabled</a></div><div class="ttdeci">void setVboEnabled(bool vboEnable)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00061">modelviewgadgetconfiguration.h:61</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga1d269e09831fb3fd6187c831b3b516b1"><div class="ttname"><a href="group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1">ModelViewGadgetConfiguration::bgFilename</a></div><div class="ttdeci">QString bgFilename()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00045">modelviewgadgetconfiguration.h:45</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_gad35eb4d4a2a27f015e4e54b18e3b2b97"><div class="ttname"><a href="group___model_view_plugin.html#gad35eb4d4a2a27f015e4e54b18e3b2b97">ModelViewGadgetConfiguration::setVboEnabled</a></div><div class="ttdeci">void setVboEnabled(bool vboEnable)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00048">modelviewgadgetconfiguration.h:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

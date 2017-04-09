@@ -45,7 +45,7 @@ var class_core_1_1_i_board_type =
     [ "getBoardConfiguration", "group___core_plugin.html#ga898213627485fadadf28595898a998e1", null ],
     [ "getBoardPicture", "group___core_plugin.html#gaf2965319c1d15dcb3563dd224add7858", null ],
     [ "getBoardType", "group___core_plugin.html#ga5d2ecfabe310535314afc68f856c06bf", null ],
-    [ "getChannelBanks", "group___core_plugin.html#ga1b4484035fb61e9006f18ba2d407eb9e", null ],
+    [ "getChannelBanks", "group___core_plugin.html#gaf466b4ca5b1f597edffe7fae2b17c37d", null ],
     [ "getConnectionDiagram", "group___core_plugin.html#ga1df38036d8f2a22f792604204f80ee2a", null ],
     [ "getHwUAVO", "group___core_plugin.html#ga265636c3ae87d360bcddaa13cf4d2ce4", null ],
     [ "getInputType", "group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429", null ],
@@ -60,7 +60,7 @@ var class_core_1_1_i_board_type =
     [ "setInputType", "group___core_plugin.html#gaf4ccf9642217d1e6c2c4313ee8e824ff", null ],
     [ "shortName", "group___core_plugin.html#gab7a5ac1921113d9ab3a8181acb704c08", null ],
     [ "boardType", "group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66", null ],
-    [ "channelBanks", "group___core_plugin.html#gaa94fd1ec5fb1bc46945ea49ed827822f", null ],
+    [ "channelBanks", "group___core_plugin.html#gadb3667a0ce7a87dcc05de3fb6f3bfd6b", null ],
     [ "m_bootloaderUSBInfo", "group___core_plugin.html#gaf596af0b0dc370a4f726774a90a6b78d", null ],
     [ "m_firmwareUSBInfo", "group___core_plugin.html#ga3da194ef5961d3311d9c6961959f86ce", null ]
 ];

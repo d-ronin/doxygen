@@ -24,6 +24,6 @@ var class_core_1_1_i_output_pane =
     [ "toggle", "group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c", null ],
     [ "toggle", "group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b", null ],
     [ "togglePage", "group___core_plugin.html#gaa737406ffca155e80dc1af7ee3ff1cdd", null ],
-    [ "toolBarWidgets", "group___core_plugin.html#ga6086193af6e059b86451cd5a3c0d2373", null ],
+    [ "toolBarWidgets", "group___core_plugin.html#ga1ce57ad7f1b3fb82c1a79a7fa8a00477", null ],
     [ "visibilityChanged", "group___core_plugin.html#ga3128a309873592d64cddf36d88f76856", null ]
 ];

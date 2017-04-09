@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('ioutputpane_8h_source.html','');});
 <div class="contents">
 <a href="ioutputpane_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -145,84 +145,69 @@ $(document).ready(function(){initNavTree('ioutputpane_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga47a14795596f88e7b26b737cb94e4348">   47</a></span>&#160;    <a class="code" href="group___core_plugin.html#ga47a14795596f88e7b26b737cb94e4348">IOutputPane</a>(QObject *parent = 0) : QObject(parent) {}</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">   48</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">~IOutputPane</a>() {}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> QWidget *outputWidget(QWidget *parent) = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_list.html">QList&lt;QWidget*&gt;</a> toolBarWidgets() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> QString name() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// -1 don&#39;t show in statusBar</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 100...0 show at front...end</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> priorityInStatusBar() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> clearContents() = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> visibilityChanged(<span class="keywordtype">bool</span> visible) = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga47a14795596f88e7b26b737cb94e4348">   47</a></span>&#160;    <a class="code" href="group___core_plugin.html#ga47a14795596f88e7b26b737cb94e4348">IOutputPane</a>(QObject *parent = 0)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">   51</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">~IOutputPane</a>() {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> QWidget *outputWidget(QWidget *parent) = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_q_list.html">QList&lt;QWidget *&gt;</a> toolBarWidgets() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> QString name() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// -1 don&#39;t show in statusBar</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 100...0 show at front...end</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> priorityInStatusBar() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// This function is called to give the outputwindow focus</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setFocus() = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Wheter the outputpane has focus</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasFocus() = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Wheter the outputpane can be focused at the moment.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// (E.g. the search result window doesn&#39;t want to be focussed if the are no results.)</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canFocus() = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canNavigate() = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canNext() = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canPrevious() = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> goToNext() = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> goToPrev() = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">popup</a>()</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        popup(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd">popup</a>(<span class="keywordtype">bool</span> withFocus)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        emit showPage(withFocus);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">hide</a>()</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        emit hidePage();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> clearContents() = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> visibilityChanged(<span class="keywordtype">bool</span> visible) = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// This function is called to give the outputwindow focus</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setFocus() = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Wheter the outputpane has focus</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasFocus() = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Wheter the outputpane can be focused at the moment.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// (E.g. the search result window doesn&#39;t want to be focussed if the are no results.)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canFocus() = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canNavigate() = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canNext() = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canPrevious() = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> goToNext() = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> goToPrev() = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">   78</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">popup</a>() { <a class="code" href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">popup</a>(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd">popup</a>(<span class="keywordtype">bool</span> withFocus) { emit showPage(withFocus); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">hide</a>() { emit hidePage(); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">   83</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">toggle</a>() { <a class="code" href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">toggle</a>(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">   85</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">toggle</a>(<span class="keywordtype">bool</span> withFocusIfShown) { emit togglePage(withFocusIfShown); }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">navigateStateChanged</a>() { emit navigateStateUpdate(); }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">toggle</a>()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        toggle(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">   94</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">toggle</a>(<span class="keywordtype">bool</span> withFocusIfShown)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        emit togglePage(withFocusIfShown);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">navigateStateChanged</a>()</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        emit navigateStateUpdate();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;signals:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> showPage(<span class="keywordtype">bool</span> withFocus);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> hidePage();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> togglePage(<span class="keywordtype">bool</span> withFocusIfShown);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> navigateStateUpdate();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // IOUTPUTPANE_H</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;signals:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> showPage(<span class="keywordtype">bool</span> withFocus);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> hidePage();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> togglePage(<span class="keywordtype">bool</span> withFocusIfShown);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> navigateStateUpdate();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // IOUTPUTPANE_H</span></div>
 <div class="ttc" id="group___core_plugin_html_ga37eda05403e637a641e31a221f4f16fd"><div class="ttname"><a href="group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd">Core::IOutputPane::popup</a></div><div class="ttdeci">void popup(bool withFocus)</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00079">ioutputpane.h:79</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga64a1d14b461a93a287ed24c9a058674b"><div class="ttname"><a href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">Core::IOutputPane::toggle</a></div><div class="ttdeci">void toggle(bool withFocusIfShown)</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00094">ioutputpane.h:94</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga64a1d14b461a93a287ed24c9a058674b"><div class="ttname"><a href="group___core_plugin.html#ga64a1d14b461a93a287ed24c9a058674b">Core::IOutputPane::toggle</a></div><div class="ttdeci">void toggle(bool withFocusIfShown)</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00085">ioutputpane.h:85</a></div></div>
 <div class="ttc" id="class_core_1_1_i_output_pane_html"><div class="ttname"><a href="class_core_1_1_i_output_pane.html">Core::IOutputPane</a></div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00043">ioutputpane.h:43</a></div></div>
 <div class="ttc" id="core__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga74f2026df82773bb5ed94226666b641e"><div class="ttname"><a href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">Core::IOutputPane::~IOutputPane</a></div><div class="ttdeci">virtual ~IOutputPane()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00048">ioutputpane.h:48</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga1d93873edcf628da2a1db4365f8be494"><div class="ttname"><a href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">Core::IOutputPane::navigateStateChanged</a></div><div class="ttdeci">void navigateStateChanged()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00099">ioutputpane.h:99</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga96646cdb720d2f1a819147ffc22748cb"><div class="ttname"><a href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">Core::IOutputPane::popup</a></div><div class="ttdeci">void popup()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00075">ioutputpane.h:75</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga74f2026df82773bb5ed94226666b641e"><div class="ttname"><a href="group___core_plugin.html#ga74f2026df82773bb5ed94226666b641e">Core::IOutputPane::~IOutputPane</a></div><div class="ttdeci">virtual ~IOutputPane()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00051">ioutputpane.h:51</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga1d93873edcf628da2a1db4365f8be494"><div class="ttname"><a href="group___core_plugin.html#ga1d93873edcf628da2a1db4365f8be494">Core::IOutputPane::navigateStateChanged</a></div><div class="ttdeci">void navigateStateChanged()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00087">ioutputpane.h:87</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga96646cdb720d2f1a819147ffc22748cb"><div class="ttname"><a href="group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb">Core::IOutputPane::popup</a></div><div class="ttdeci">void popup()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00078">ioutputpane.h:78</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga47a14795596f88e7b26b737cb94e4348"><div class="ttname"><a href="group___core_plugin.html#ga47a14795596f88e7b26b737cb94e4348">Core::IOutputPane::IOutputPane</a></div><div class="ttdeci">IOutputPane(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00047">ioutputpane.h:47</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gace5067407c84261c848e18533416a9c7"><div class="ttname"><a href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">Core::IOutputPane::hide</a></div><div class="ttdeci">void hide()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00084">ioutputpane.h:84</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00038">icore.h:38</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga5b1cac6c84e8ad71438a8b1d42a3295c"><div class="ttname"><a href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">Core::IOutputPane::toggle</a></div><div class="ttdeci">void toggle()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00089">ioutputpane.h:89</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gace5067407c84261c848e18533416a9c7"><div class="ttname"><a href="group___core_plugin.html#gace5067407c84261c848e18533416a9c7">Core::IOutputPane::hide</a></div><div class="ttdeci">void hide()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00081">ioutputpane.h:81</a></div></div>
+<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga5b1cac6c84e8ad71438a8b1d42a3295c"><div class="ttname"><a href="group___core_plugin.html#ga5b1cac6c84e8ad71438a8b1d42a3295c">Core::IOutputPane::toggle</a></div><div class="ttdeci">void toggle()</div><div class="ttdef"><b>Definition:</b> <a href="ioutputpane_8h_source.html#l00083">ioutputpane.h:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

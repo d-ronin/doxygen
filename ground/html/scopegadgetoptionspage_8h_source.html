@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -139,82 +139,70 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8h_source.html'
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QColorDialog&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>Core</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>Ui</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">using namespace </span>Core;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_scope_gadget_options_page.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a> :  <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_options_page.html">IOptionsPage</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">   59</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">userRoleShift</a> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea1ca47671f95b0080d7fec89b625ecdae">   60</a></span>&#160;        <a class="code" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea1ca47671f95b0080d7fec89b625ecdae">UR_UAVOBJECT</a>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9d7b3ed8977c973cd47ec9c590888e83">   61</a></span>&#160;        <a class="code" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9d7b3ed8977c973cd47ec9c590888e83">UR_UAVFIELD</a>,</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affeacf5de4c7658c11db0a432311ce7e302e">   62</a></span>&#160;        <a class="code" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affeacf5de4c7658c11db0a432311ce7e302e">UR_SCALE</a>,</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9314bed2c7220cb80e1c7e1c643e7af8">   63</a></span>&#160;        <a class="code" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9314bed2c7220cb80e1c7e1c643e7af8">UR_COLOR</a>,</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea43e3a9f89e27568aa426874ed469620a">   64</a></span>&#160;        <a class="code" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea43e3a9f89e27568aa426874ed469620a">UR_MEAN</a>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affeab9a9633c8bc6a72c30f2a2962ff1e882">   65</a></span>&#160;        UR_MATHFUNCTION</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>(<a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *config, QObject *parent = 0);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QWidget *createPage(QWidget *parent);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> apply();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> finish();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Ui::ScopeGadgetOptionsPage *options_page;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *m_config;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_scope_gadget_options_page.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_options_page.html">IOptionsPage</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">   57</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">userRoleShift</a> { UR_UAVOBJECT, UR_UAVFIELD, UR_SCALE, UR_COLOR, UR_MEAN, UR_MATHFUNCTION };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a>(<a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *config, QObject *parent = 0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QWidget *createPage(QWidget *parent);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> apply();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> finish();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Ui::ScopeGadgetOptionsPage *options_page;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *m_config;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> addPlot2dCurveConfig(QString uavObject, QString uavField, <span class="keywordtype">int</span> scale, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mean,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                              QString mathFunction, QVariant varColor);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> setPlot2dCurveProperties(QListWidgetItem *listWidgetItem, QString uavObject,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                  QString uavField, <span class="keywordtype">int</span> scale, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mean,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                  QString mathFunction, QVariant varColor);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> set2dYAxisWidgetFromDataSource();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> setButtonColor(<span class="keyword">const</span> QColor &amp;color);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> eventFilter(QObject *obj, QEvent *evt);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> addPlot2dCurveConfig(QString uavObject, QString uavField, <span class="keywordtype">int</span> scale, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mean, QString mathFunction, QVariant varColor);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> setPlot2dCurveProperties(QListWidgetItem *listWidgetItem, QString uavObject, QString uavField, <span class="keywordtype">int</span> scale, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mean, QString mathFunction, QVariant varColor);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> set2dYAxisWidgetFromDataSource();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> setButtonColor(<span class="keyword">const</span> QColor &amp;color);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> eventFilter( QObject * obj, QEvent * evt );</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QString dataSourceStyleSheetTemplate;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QListWidgetItem * selectedItem;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> on_lst2dCurves_currentRowChanged(<span class="keywordtype">int</span> currentRow);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> on_lst2dItem_clicked(QListWidgetItem *);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> on_btnAdd2dCurve_clicked();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> on_btnApply2dCurve_clicked();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> on_btnRemove2dCurve_clicked();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> on_cmbUAVObjects_currentIndexChanged(QString val);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> on_cmbUAVObjectsSpectrogram_currentIndexChanged(QString val);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> on_btnColor_clicked();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> on_mathFunctionComboBox_currentIndexChanged(<span class="keywordtype">int</span> currentIndex);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> on_cmbXAxisScatterplot2d_currentIndexChanged(QString currentText);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> on_cmbSpectrogramSource_currentIndexChanged(QString currentIndex);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> on_cmb2dPlotType_currentIndexChanged(QString);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> on_cmb3dPlotType_currentIndexChanged(QString);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // SCOPEGADGETOPTIONSPAGE_H</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QString dataSourceStyleSheetTemplate;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QListWidgetItem *selectedItem;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> on_lst2dCurves_currentRowChanged(<span class="keywordtype">int</span> currentRow);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> on_lst2dItem_clicked(QListWidgetItem *);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> on_btnAdd2dCurve_clicked();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> on_btnApply2dCurve_clicked();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> on_btnRemove2dCurve_clicked();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> on_cmbUAVObjects_currentIndexChanged(QString val);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> on_cmbUAVObjectsSpectrogram_currentIndexChanged(QString val);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> on_btnColor_clicked();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> on_mathFunctionComboBox_currentIndexChanged(<span class="keywordtype">int</span> currentIndex);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> on_cmbXAxisScatterplot2d_currentIndexChanged(QString currentText);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> on_cmbSpectrogramSource_currentIndexChanged(QString currentIndex);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> on_cmb2dPlotType_currentIndexChanged(QString);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> on_cmb3dPlotType_currentIndexChanged(QString);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // SCOPEGADGETOPTIONSPAGE_H</span></div>
 <div class="ttc" id="ioptionspage_8h_html"><div class="ttname"><a href="ioptionspage_8h.html">ioptionspage.h</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ggabc55f54668fc1565f24893b44bc2affea43e3a9f89e27568aa426874ed469620a"><div class="ttname"><a href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea43e3a9f89e27568aa426874ed469620a">ScopeGadgetOptionsPage::UR_MEAN</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00064">scopegadgetoptionspage.h:64</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ggabc55f54668fc1565f24893b44bc2affea1ca47671f95b0080d7fec89b625ecdae"><div class="ttname"><a href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea1ca47671f95b0080d7fec89b625ecdae">ScopeGadgetOptionsPage::UR_UAVOBJECT</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00060">scopegadgetoptionspage.h:60</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ggabc55f54668fc1565f24893b44bc2affea9d7b3ed8977c973cd47ec9c590888e83"><div class="ttname"><a href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9d7b3ed8977c973cd47ec9c590888e83">ScopeGadgetOptionsPage::UR_UAVFIELD</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00061">scopegadgetoptionspage.h:61</a></div></div>
-<div class="ttc" id="class_scope_gadget_options_page_html"><div class="ttname"><a href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00055">scopegadgetoptionspage.h:55</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_gabc55f54668fc1565f24893b44bc2affe"><div class="ttname"><a href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">ScopeGadgetOptionsPage::userRoleShift</a></div><div class="ttdeci">userRoleShift</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00059">scopegadgetoptionspage.h:59</a></div></div>
+<div class="ttc" id="class_scope_gadget_options_page_html"><div class="ttname"><a href="class_scope_gadget_options_page.html">ScopeGadgetOptionsPage</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00053">scopegadgetoptionspage.h:53</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_gabc55f54668fc1565f24893b44bc2affe"><div class="ttname"><a href="group___scope_plugin.html#gabc55f54668fc1565f24893b44bc2affe">ScopeGadgetOptionsPage::userRoleShift</a></div><div class="ttdeci">userRoleShift</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00057">scopegadgetoptionspage.h:57</a></div></div>
 <div class="ttc" id="scopegadgetconfiguration_8h_html"><div class="ttname"><a href="scopegadgetconfiguration_8h.html">scopegadgetconfiguration.h</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ggabc55f54668fc1565f24893b44bc2affea9314bed2c7220cb80e1c7e1c643e7af8"><div class="ttname"><a href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea9314bed2c7220cb80e1c7e1c643e7af8">ScopeGadgetOptionsPage::UR_COLOR</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00063">scopegadgetoptionspage.h:63</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ggabc55f54668fc1565f24893b44bc2affeacf5de4c7658c11db0a432311ce7e302e"><div class="ttname"><a href="group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affeacf5de4c7658c11db0a432311ce7e302e">ScopeGadgetOptionsPage::UR_SCALE</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8h_source.html#l00062">scopegadgetoptionspage.h:62</a></div></div>
 <div class="ttc" id="class_core_1_1_i_options_page_html"><div class="ttname"><a href="class_core_1_1_i_options_page.html">Core::IOptionsPage</a></div><div class="ttdoc">The IOptionsPage is an interface for providing options pages. </div><div class="ttdef"><b>Definition:</b> <a href="ioptionspage_8h_source.html#l00042">ioptionspage.h:42</a></div></div>
-<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00042">scopegadgetconfiguration.h:42</a></div></div>
+<div class="ttc" id="class_scope_gadget_configuration_html"><div class="ttname"><a href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00041">scopegadgetconfiguration.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

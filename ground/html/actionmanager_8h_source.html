@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('actionmanager_8h_source.html','');});
 <div class="contents">
 <a href="actionmanager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -149,31 +149,36 @@ $(document).ready(function(){initNavTree('actionmanager_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667">   51</a></span>&#160;    <a class="code" href="group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667">ActionManager</a>(QObject *parent = 0) : QObject(parent) {}</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">   52</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">~ActionManager</a>() {}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *createMenu(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *createMenuBar(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667">   51</a></span>&#160;    <a class="code" href="group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667">ActionManager</a>(QObject *parent = 0)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        : QObject(parent)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">   55</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">~ActionManager</a>() {}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *registerAction(QAction *action, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context) = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *registerShortcut(QShortcut *shortcut, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context) = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *createMenu(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *createMenuBar(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) = 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *command(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *actionContainer(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // ACTIONMANAGER_H</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *registerAction(QAction *action, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context) = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *registerShortcut(QShortcut *shortcut, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                      <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context) = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_command.html">Command</a> *command(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_core_1_1_action_container.html">ActionContainer</a> *actionContainer(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // ACTIONMANAGER_H</span></div>
 <div class="ttc" id="command_8h_html"><div class="ttname"><a href="command_8h.html">command.h</a></div></div>
 <div class="ttc" id="class_core_1_1_action_container_html"><div class="ttname"><a href="class_core_1_1_action_container.html">Core::ActionContainer</a></div><div class="ttdef"><b>Definition:</b> <a href="actioncontainer_8h_source.html#l00040">actioncontainer.h:40</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gac80d3d645622551a98db65a649abe079"><div class="ttname"><a href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">Core::ActionManager::~ActionManager</a></div><div class="ttdeci">virtual ~ActionManager()</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8h_source.html#l00052">actionmanager.h:52</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gac80d3d645622551a98db65a649abe079"><div class="ttname"><a href="group___core_plugin.html#gac80d3d645622551a98db65a649abe079">Core::ActionManager::~ActionManager</a></div><div class="ttdeci">virtual ~ActionManager()</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8h_source.html#l00055">actionmanager.h:55</a></div></div>
 <div class="ttc" id="core__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gab0f34dc9c6d367a0807cef1003bc3667"><div class="ttname"><a href="group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667">Core::ActionManager::ActionManager</a></div><div class="ttdeci">ActionManager(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8h_source.html#l00051">actionmanager.h:51</a></div></div>
 <div class="ttc" id="class_core_1_1_action_manager_html"><div class="ttname"><a href="class_core_1_1_action_manager.html">Core::ActionManager</a></div><div class="ttdoc">The action manager is responsible for registration of menus and menu items and keyboard shortcuts...</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8h_source.html#l00047">actionmanager.h:47</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="actioncontainer_8h_html"><div class="ttname"><a href="actioncontainer_8h.html">actioncontainer.h</a></div></div>
-<div class="ttc" id="class_core_1_1_command_html"><div class="ttname"><a href="class_core_1_1_command.html">Core::Command</a></div><div class="ttdoc">The class Command represents an action like a menu item, tool button, or shortcut. You don&#39;t create Command objects directly, instead use {ActionManager::registerAction()} to register an action and retrieve a Command. The Command object represents the user visible action and its properties. If multiple actions are registered with the same ID (but different contexts) the returned Command is the shared one between these actions. </div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00044">command.h:44</a></div></div>
+<div class="ttc" id="class_core_1_1_command_html"><div class="ttname"><a href="class_core_1_1_command.html">Core::Command</a></div><div class="ttdoc">The class Command represents an action like a menu item, tool button, or shortcut. You don&#39;t create Command objects directly, instead use {ActionManager::registerAction()} to register an action and retrieve a Command. The Command object represents the user visible action and its properties. If multiple actions are registered with the same ID (but different contexts) the returned Command is the shared one between these actions. </div><div class="ttdef"><b>Definition:</b> <a href="command_8h_source.html#l00043">command.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

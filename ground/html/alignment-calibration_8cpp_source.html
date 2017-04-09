@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -117,37 +117,33 @@ $(document).ready(function(){initNavTree('alignment-calibration_8cpp_source.html
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>Eigen;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">   24</a></span>&#160;<a class="code" href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">calibration_misalignment</a>(Vector3f&amp; rotationVector,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">const</span> Vector3f samples0[],</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keyword">const</span> Vector3f&amp; reference0,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keyword">const</span> Vector3f samples1[],</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">const</span> Vector3f&amp; reference1,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordtype">size_t</span> n_samples)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// Note that this implementation makes the assumption that the angular</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// misalignment is small.  Something based on QUEST would be needed to</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// account for errors larger than a few degrees.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Matrix&lt;double, Dynamic, 3&gt; X(n_samples, 3);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        Matrix&lt;double, Dynamic, 1&gt; <a class="code" href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>(n_samples, 1);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        AngleAxisd reference(Quaterniond().setFromTwoVectors(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        reference0.cast&lt;<span class="keywordtype">double</span>&gt;(), reference1.cast&lt;<span class="keywordtype">double</span>&gt;()));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; n_samples; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                AngleAxisd observation(Quaterniond().setFromTwoVectors(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        samples0[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>].cast&lt;double&gt;(), samples1[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>].cast&lt;double&gt;()));</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">calibration_misalignment</a>(Vector3f &amp;rotationVector, <span class="keyword">const</span> Vector3f samples0[],</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                              <span class="keyword">const</span> Vector3f &amp;reference0, <span class="keyword">const</span> Vector3f samples1[],</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                              <span class="keyword">const</span> Vector3f &amp;reference1, <span class="keywordtype">size_t</span> n_samples)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Note that this implementation makes the assumption that the angular</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// misalignment is small.  Something based on QUEST would be needed to</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// account for errors larger than a few degrees.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Matrix&lt;double, Dynamic, 3&gt; X(n_samples, 3);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Matrix&lt;double, Dynamic, 1&gt; <a class="code" href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>(n_samples, 1);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    AngleAxisd reference(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Quaterniond().setFromTwoVectors(reference0.cast&lt;<span class="keywordtype">double</span>&gt;(), reference1.cast&lt;<span class="keywordtype">double</span>&gt;()));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; n_samples; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        AngleAxisd observation(Quaterniond().setFromTwoVectors(samples0[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>].cast&lt;double&gt;(),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                               samples1[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>].cast&lt;double&gt;()));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        X.row(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) = observation.axis();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        y[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = reference.angle() - observation.angle();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                X.row(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) = observation.axis();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                y[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>] = reference.angle() - observation.angle();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Run linear least squares over the result.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        Vector3d result;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        (X.transpose() * X).ldlt().solve(X.transpose()*<a class="code" href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, &amp;result);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        rotationVector = result.cast&lt;<span class="keywordtype">float</span>&gt;();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Run linear least squares over the result.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Vector3d result;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    (X.transpose() * X).ldlt().solve(X.transpose() * <a class="code" href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, &amp;result);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    rotationVector = result.cast&lt;<span class="keywordtype">float</span>&gt;();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
-<div class="ttc" id="alignment-calibration_8cpp_html_a480455bf97a856dc35e668762201a560"><div class="ttname"><a href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">calibration_misalignment</a></div><div class="ttdeci">void calibration_misalignment(Vector3f &amp;rotationVector, const Vector3f samples0[], const Vector3f &amp;reference0, const Vector3f samples1[], const Vector3f &amp;reference1, size_t n_samples)</div><div class="ttdef"><b>Definition:</b> <a href="alignment-calibration_8cpp_source.html#l00024">alignment-calibration.cpp:24</a></div></div>
+<div class="ttc" id="alignment-calibration_8cpp_html_a480455bf97a856dc35e668762201a560"><div class="ttname"><a href="alignment-calibration_8cpp.html#a480455bf97a856dc35e668762201a560">calibration_misalignment</a></div><div class="ttdeci">void calibration_misalignment(Vector3f &amp;rotationVector, const Vector3f samples0[], const Vector3f &amp;reference0, const Vector3f samples1[], const Vector3f &amp;reference1, size_t n_samples)</div><div class="ttdef"><b>Definition:</b> <a href="alignment-calibration_8cpp_source.html#l00023">alignment-calibration.cpp:23</a></div></div>
 <div class="ttc" id="calibration_8h_html"><div class="ttname"><a href="calibration_8h.html">calibration.h</a></div><div class="ttdoc">Gui-less support class for calibration. </div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><div class="ttname"><a href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a></div><div class="ttdeci">y</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00101">OPPlots.m:101</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

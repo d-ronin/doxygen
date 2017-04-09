@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,58 +112,58 @@ $(document).ready(function(){initNavTree('texteditloggerengine_8h_source.html','
 <div class="contents">
 <a href="texteditloggerengine_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef TEXTEDITLOGGERENGINE_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TEXTEDITLOGGERENGINE_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;qxtloggerengine.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;qxtglobal.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QtGui/QColor&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>QTextEdit;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_text_edit_logger_engine.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_text_edit_logger_engine.html">TextEditLoggerEngine</a> : <span class="keyword">public</span> QxtLoggerEngine</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group___console_plugin.html#gaf57b0c5ea1591a2931695b3e58c8d298">TextEditLoggerEngine</a>(QTextEdit *textEdit);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="group___console_plugin.html#gaf9f579c5f0cbb1b08f7fcd3bd30f8964">~TextEditLoggerEngine</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#gad4e7c7170672faefa715053b281859c2">initLoggerEngine</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21">killLoggerEngine</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga2a9c1df4120a7ceeb25bafac4682e695">writeFormatted</a>(QxtLogger::LogLevel level, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;QVariant&gt;</a> &amp;messages);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga45c5e0aeca53547cd9b538c3cd428689">setLogLevelEnabled</a>(QxtLogger::LogLevels level, <span class="keywordtype">bool</span> enable = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___console_plugin.html#gaaf31edb9cfde3ba4fca139b77f04c0a5">isInitialized</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> writeToTextEdit(<span class="keyword">const</span> QString&amp; str_level, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;QVariant&gt;</a> &amp;msgs, QColor color = QColor(0,0,0));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;qxtloggerengine.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;qxtglobal.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QtGui/QColor&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>QTextEdit;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_text_edit_logger_engine.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_text_edit_logger_engine.html">TextEditLoggerEngine</a> : <span class="keyword">public</span> QxtLoggerEngine</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="group___console_plugin.html#gaf57b0c5ea1591a2931695b3e58c8d298">TextEditLoggerEngine</a>(QTextEdit *textEdit);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group___console_plugin.html#gaf9f579c5f0cbb1b08f7fcd3bd30f8964">~TextEditLoggerEngine</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#gad4e7c7170672faefa715053b281859c2">initLoggerEngine</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21">killLoggerEngine</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga2a9c1df4120a7ceeb25bafac4682e695">writeFormatted</a>(QxtLogger::LogLevel level, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;QVariant&gt;</a> &amp;messages);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___console_plugin.html#ga45c5e0aeca53547cd9b538c3cd428689">setLogLevelEnabled</a>(QxtLogger::LogLevels level, <span class="keywordtype">bool</span> enable = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___console_plugin.html#gaaf31edb9cfde3ba4fca139b77f04c0a5">isInitialized</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> writeToTextEdit(<span class="keyword">const</span> QString &amp;str_level, <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;QVariant&gt;</a> &amp;msgs,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 QColor color = QColor(0, 0, 0));</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QTextEdit *m_textEdit;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // TEXTEDITLOGGERENGINE_H</span></div>
-<div class="ttc" id="group___console_plugin_html_ga54411c88e44357048e786fb83d2abb21"><div class="ttname"><a href="group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21">TextEditLoggerEngine::killLoggerEngine</a></div><div class="ttdeci">void killLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00055">texteditloggerengine.cpp:55</a></div></div>
-<div class="ttc" id="group___console_plugin_html_ga2a9c1df4120a7ceeb25bafac4682e695"><div class="ttname"><a href="group___console_plugin.html#ga2a9c1df4120a7ceeb25bafac4682e695">TextEditLoggerEngine::writeFormatted</a></div><div class="ttdeci">void writeFormatted(QxtLogger::LogLevel level, const QList&lt; QVariant &gt; &amp;messages)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00071">texteditloggerengine.cpp:71</a></div></div>
-<div class="ttc" id="group___console_plugin_html_ga45c5e0aeca53547cd9b538c3cd428689"><div class="ttname"><a href="group___console_plugin.html#ga45c5e0aeca53547cd9b538c3cd428689">TextEditLoggerEngine::setLogLevelEnabled</a></div><div class="ttdeci">void setLogLevelEnabled(QxtLogger::LogLevels level, bool enable=true)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00065">texteditloggerengine.cpp:65</a></div></div>
-<div class="ttc" id="group___console_plugin_html_gaf9f579c5f0cbb1b08f7fcd3bd30f8964"><div class="ttname"><a href="group___console_plugin.html#gaf9f579c5f0cbb1b08f7fcd3bd30f8964">TextEditLoggerEngine::~TextEditLoggerEngine</a></div><div class="ttdeci">~TextEditLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00046">texteditloggerengine.cpp:46</a></div></div>
-<div class="ttc" id="group___console_plugin_html_gad4e7c7170672faefa715053b281859c2"><div class="ttname"><a href="group___console_plugin.html#gad4e7c7170672faefa715053b281859c2">TextEditLoggerEngine::initLoggerEngine</a></div><div class="ttdeci">void initLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00050">texteditloggerengine.cpp:50</a></div></div>
+<div class="ttc" id="group___console_plugin_html_ga54411c88e44357048e786fb83d2abb21"><div class="ttname"><a href="group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21">TextEditLoggerEngine::killLoggerEngine</a></div><div class="ttdeci">void killLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00058">texteditloggerengine.cpp:58</a></div></div>
+<div class="ttc" id="group___console_plugin_html_ga2a9c1df4120a7ceeb25bafac4682e695"><div class="ttname"><a href="group___console_plugin.html#ga2a9c1df4120a7ceeb25bafac4682e695">TextEditLoggerEngine::writeFormatted</a></div><div class="ttdeci">void writeFormatted(QxtLogger::LogLevel level, const QList&lt; QVariant &gt; &amp;messages)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00075">texteditloggerengine.cpp:75</a></div></div>
+<div class="ttc" id="group___console_plugin_html_ga45c5e0aeca53547cd9b538c3cd428689"><div class="ttname"><a href="group___console_plugin.html#ga45c5e0aeca53547cd9b538c3cd428689">TextEditLoggerEngine::setLogLevelEnabled</a></div><div class="ttdeci">void setLogLevelEnabled(QxtLogger::LogLevels level, bool enable=true)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00068">texteditloggerengine.cpp:68</a></div></div>
+<div class="ttc" id="group___console_plugin_html_gaf9f579c5f0cbb1b08f7fcd3bd30f8964"><div class="ttname"><a href="group___console_plugin.html#gaf9f579c5f0cbb1b08f7fcd3bd30f8964">TextEditLoggerEngine::~TextEditLoggerEngine</a></div><div class="ttdeci">~TextEditLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00049">texteditloggerengine.cpp:49</a></div></div>
+<div class="ttc" id="group___console_plugin_html_gad4e7c7170672faefa715053b281859c2"><div class="ttname"><a href="group___console_plugin.html#gad4e7c7170672faefa715053b281859c2">TextEditLoggerEngine::initLoggerEngine</a></div><div class="ttdeci">void initLoggerEngine()</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00053">texteditloggerengine.cpp:53</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; QVariant &gt;</a></div></div>
-<div class="ttc" id="group___console_plugin_html_gaf57b0c5ea1591a2931695b3e58c8d298"><div class="ttname"><a href="group___console_plugin.html#gaf57b0c5ea1591a2931695b3e58c8d298">TextEditLoggerEngine::TextEditLoggerEngine</a></div><div class="ttdeci">TextEditLoggerEngine(QTextEdit *textEdit)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00036">texteditloggerengine.cpp:36</a></div></div>
-<div class="ttc" id="group___console_plugin_html_gaaf31edb9cfde3ba4fca139b77f04c0a5"><div class="ttname"><a href="group___console_plugin.html#gaaf31edb9cfde3ba4fca139b77f04c0a5">TextEditLoggerEngine::isInitialized</a></div><div class="ttdeci">bool isInitialized() const </div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00060">texteditloggerengine.cpp:60</a></div></div>
-<div class="ttc" id="class_text_edit_logger_engine_html"><div class="ttname"><a href="class_text_edit_logger_engine.html">TextEditLoggerEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8h_source.html#l00037">texteditloggerengine.h:37</a></div></div>
+<div class="ttc" id="group___console_plugin_html_gaf57b0c5ea1591a2931695b3e58c8d298"><div class="ttname"><a href="group___console_plugin.html#gaf57b0c5ea1591a2931695b3e58c8d298">TextEditLoggerEngine::TextEditLoggerEngine</a></div><div class="ttdeci">TextEditLoggerEngine(QTextEdit *textEdit)</div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00038">texteditloggerengine.cpp:38</a></div></div>
+<div class="ttc" id="group___console_plugin_html_gaaf31edb9cfde3ba4fca139b77f04c0a5"><div class="ttname"><a href="group___console_plugin.html#gaaf31edb9cfde3ba4fca139b77f04c0a5">TextEditLoggerEngine::isInitialized</a></div><div class="ttdeci">bool isInitialized() const </div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8cpp_source.html#l00063">texteditloggerengine.cpp:63</a></div></div>
+<div class="ttc" id="class_text_edit_logger_engine_html"><div class="ttname"><a href="class_text_edit_logger_engine.html">TextEditLoggerEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="texteditloggerengine_8h_source.html#l00036">texteditloggerengine.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

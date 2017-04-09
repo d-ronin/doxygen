@@ -212,7 +212,7 @@ var NAVTREEINDEX2 =
 "class_mixer_curve_widget.html":[3,9,7],
 "class_mixer_node.html":[3,9,6],
 "class_model_map_proxy.html":[3,2,1,3],
-"class_model_uavo_proxy.html":[3,2,1,16],
+"class_model_uavo_proxy.html":[3,2,1,13],
 "class_model_view_gadget.html":[3,2,27,2],
 "class_model_view_gadget_configuration.html":[3,2,27,3],
 "class_model_view_gadget_factory.html":[3,2,27,4],

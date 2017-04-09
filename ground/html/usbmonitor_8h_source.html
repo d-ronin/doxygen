@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -137,96 +137,97 @@ $(document).ready(function(){initNavTree('usbmonitor_8h_source.html','');});
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_u_s_b_port_info.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">   43</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a>; <span class="comment">// As a string as it can be anything, really...</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">   44</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">manufacturer</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">   45</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">product</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">   47</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">path</a>;       </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a>;       </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a>;      </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">   53</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">getRunState</a>()</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a>&amp;0x00ff;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">   58</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">operator==</a>(<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> <span class="keyword">const</span> &amp;port)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_u_s_b_port_info.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">   44</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a>; <span class="comment">// As a string as it can be anything, really...</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">   45</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">manufacturer</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">   46</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">product</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">   48</a></span>&#160;    QString <a class="code" href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">path</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">   52</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">   54</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">getRunState</a>() { <span class="keywordflow">return</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a> &amp; 0x00ff; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">   56</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">operator==</a>(<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> <span class="keyword">const</span> &amp;port)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">vendorID</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">productID</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a>) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> ((<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <span class="stringliteral">&quot;&quot;</span>) &amp;&amp; (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <span class="stringliteral">&quot;&quot;</span>)) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">/* Don&#39;t compare manufacturer or product strings for identification */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;            <span class="comment">// We ran the gauntlet and came out OK.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#gad2bd5db6bf1d88364ba55c5517db739b">Q_DECLARE_METATYPE</a>(<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_u_s_b_monitor.html">   84</a></span>&#160;<span class="keyword">class </span>RAWHID_EXPORT <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">   89</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">RunState</a> {</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064ac18f9b621b18e8d33c36467a92dd0dc9">   90</a></span>&#160;        Bootloader = 0x01,</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">   91</a></span>&#160;        Running = 0x02,</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064afacf3dc002126ce1b351fe373583f8a3">   92</a></span>&#160;        Upgrader = 0x03,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    };</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *instance();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ~<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> availableDevices();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> availableDevices(<span class="keywordtype">int</span> vid, <span class="keywordtype">int</span> pid, <span class="keywordtype">int</span> boardModel, <span class="keywordtype">int</span> runState);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;signals:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> deviceDiscovered( <span class="keyword">const</span> <a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> &amp;info );</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> deviceRemoved( <span class="keyword">const</span> <a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> &amp;info );</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> periodic();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> knowndevices;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    Q_DISABLE_COPY(<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    static <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *m_instance;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    QTimer periodicTimer;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    struct hid_device_info *prevDevList;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> enumerating;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif // USBMONITOR_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">bcdDevice</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> ((<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <span class="stringliteral">&quot;&quot;</span>) &amp;&amp; (port.<a class="code" href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">serialNumber</a> != <span class="stringliteral">&quot;&quot;</span>)) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">/* Don&#39;t compare manufacturer or product strings for identification */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// We ran the gauntlet and came out OK.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#gad2bd5db6bf1d88364ba55c5517db739b">Q_DECLARE_METATYPE</a>(<a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_u_s_b_monitor.html">   85</a></span>&#160;<span class="keyword">class </span>RAWHID_EXPORT <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">   90</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">RunState</a> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064ac18f9b621b18e8d33c36467a92dd0dc9">   91</a></span>&#160;        Bootloader = 0x01,</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81">   92</a></span>&#160;        Running = 0x02,</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064afacf3dc002126ce1b351fe373583f8a3">   93</a></span>&#160;        Upgrader = 0x03,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *instance();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    ~<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> availableDevices();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> availableDevices(<span class="keywordtype">int</span> vid, <span class="keywordtype">int</span> pid, <span class="keywordtype">int</span> boardModel, <span class="keywordtype">int</span> runState);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;signals:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> deviceDiscovered(<span class="keyword">const</span> <a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> &amp;info);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> deviceRemoved(<span class="keyword">const</span> <a class="code" href="struct_u_s_b_port_info.html">USBPortInfo</a> &amp;info);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> periodic();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;USBPortInfo&gt;</a> knowndevices;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    Q_DISABLE_COPY(<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a>)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    static <a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *m_instance;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    QTimer periodicTimer;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    struct hid_device_info *prevDevList;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> enumerating;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // USBMONITOR_H</span></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gad2bd5db6bf1d88364ba55c5517db739b"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad2bd5db6bf1d88364ba55c5517db739b">Q_DECLARE_METATYPE</a></div><div class="ttdeci">Q_DECLARE_METATYPE(USBPortInfo)</div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga5bcd5b32d008f2c5cd5a6d3b7ec23b97"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">USBPortInfo::productID</a></div><div class="ttdeci">int productID</div><div class="ttdoc">Product ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00050">usbmonitor.h:50</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2ab42268838049538e60aa4a7aa3d305"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">USBPortInfo::manufacturer</a></div><div class="ttdeci">QString manufacturer</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00044">usbmonitor.h:44</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga546927dd722c593c7acfca1cb045494d"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">USBPortInfo::bcdDevice</a></div><div class="ttdeci">int bcdDevice</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00051">usbmonitor.h:51</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2169d1d082c17498883e6c0497aecb94"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">USBPortInfo::serialNumber</a></div><div class="ttdeci">QString serialNumber</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00043">usbmonitor.h:43</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gaff6bf8945a7cdab907cf5adc29bec064"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">USBMonitor::RunState</a></div><div class="ttdeci">RunState</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00089">usbmonitor.h:89</a></div></div>
-<div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00084">usbmonitor.h:84</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga8b2fb49e267664c4838e1205f57538d8"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">USBPortInfo::product</a></div><div class="ttdeci">QString product</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00045">usbmonitor.h:45</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga5bcd5b32d008f2c5cd5a6d3b7ec23b97"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga5bcd5b32d008f2c5cd5a6d3b7ec23b97">USBPortInfo::productID</a></div><div class="ttdeci">int productID</div><div class="ttdoc">Product ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00051">usbmonitor.h:51</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2ab42268838049538e60aa4a7aa3d305"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2ab42268838049538e60aa4a7aa3d305">USBPortInfo::manufacturer</a></div><div class="ttdeci">QString manufacturer</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00045">usbmonitor.h:45</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga546927dd722c593c7acfca1cb045494d"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d">USBPortInfo::bcdDevice</a></div><div class="ttdeci">int bcdDevice</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00052">usbmonitor.h:52</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga2169d1d082c17498883e6c0497aecb94"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">USBPortInfo::serialNumber</a></div><div class="ttdeci">QString serialNumber</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00044">usbmonitor.h:44</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gaff6bf8945a7cdab907cf5adc29bec064"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064">USBMonitor::RunState</a></div><div class="ttdeci">RunState</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00090">usbmonitor.h:90</a></div></div>
+<div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00085">usbmonitor.h:85</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga8b2fb49e267664c4838e1205f57538d8"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">USBPortInfo::product</a></div><div class="ttdeci">QString product</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00046">usbmonitor.h:46</a></div></div>
 <div class="ttc" id="struct_u_s_b_port_info_html"><div class="ttname"><a href="struct_u_s_b_port_info.html">USBPortInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00042">usbmonitor.h:42</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; USBPortInfo &gt;</a></div></div>
 <div class="ttc" id="rawhid__global_8h_html"><div class="ttname"><a href="rawhid__global_8h.html">rawhid_global.h</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gab6d916c34dedc4292a96af9d8abde7ea"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">USBPortInfo::getRunState</a></div><div class="ttdeci">unsigned char getRunState()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00053">usbmonitor.h:53</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_gad03efb8ec10d2b9b8dfcd589ba584286"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">USBPortInfo::path</a></div><div class="ttdeci">QString path</div><div class="ttdoc">Opaque OS-specific path. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00047">usbmonitor.h:47</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga1693c57749a876dc249f7993daa75353"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">USBPortInfo::operator==</a></div><div class="ttdeci">bool operator==(USBPortInfo const &amp;port)</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00058">usbmonitor.h:58</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga506f2c8d425d78dd0ad899f8e5740729"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">USBPortInfo::vendorID</a></div><div class="ttdeci">int vendorID</div><div class="ttdoc">Vendor ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00049">usbmonitor.h:49</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gab6d916c34dedc4292a96af9d8abde7ea"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gab6d916c34dedc4292a96af9d8abde7ea">USBPortInfo::getRunState</a></div><div class="ttdeci">unsigned char getRunState()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00054">usbmonitor.h:54</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gad03efb8ec10d2b9b8dfcd589ba584286"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gad03efb8ec10d2b9b8dfcd589ba584286">USBPortInfo::path</a></div><div class="ttdeci">QString path</div><div class="ttdoc">Opaque OS-specific path. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00048">usbmonitor.h:48</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga1693c57749a876dc249f7993daa75353"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga1693c57749a876dc249f7993daa75353">USBPortInfo::operator==</a></div><div class="ttdeci">bool operator==(USBPortInfo const &amp;port)</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00056">usbmonitor.h:56</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_ga506f2c8d425d78dd0ad899f8e5740729"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729">USBPortInfo::vendorID</a></div><div class="ttdeci">int vendorID</div><div class="ttdoc">Vendor ID. </div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00050">usbmonitor.h:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,28 +138,28 @@ $(document).ready(function(){initNavTree('systemhealthgadgetconfiguration_8h_sou
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">  */</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_system_health_gadget_configuration.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;Q_OBJECT</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a>(QString classId, QSettings* qSettings = 0, QObject *parent = 0);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//set system health configuration functions</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">setSystemFile</a>(QString filename){systemFile=filename;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//get dial configuration functions</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">   47</a></span>&#160;    QString <a class="code" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">getSystemFile</a>() {<span class="keywordflow">return</span> systemFile;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings* settings) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// systemFile contains the source SVG:</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QString systemFile;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a>(QString classId, QSettings *qSettings = 0,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                             QObject *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// set system health configuration functions</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">setSystemFile</a>(QString filename) { systemFile = filename; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// get dial configuration functions</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">   48</a></span>&#160;    QString <a class="code" href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">getSystemFile</a>() { <span class="keywordflow">return</span> systemFile; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> saveConfig(QSettings *settings) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *<a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// systemFile contains the source SVG:</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QString systemFile;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // SYSTEMHEALTHGADGETCONFIGURATION_H</span></div>
-<div class="ttc" id="group___system_health_plugin_html_ga4807e799ef6d19b807497d0c74295b32"><div class="ttname"><a href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">SystemHealthGadgetConfiguration::getSystemFile</a></div><div class="ttdeci">QString getSystemFile()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00047">systemhealthgadgetconfiguration.h:47</a></div></div>
-<div class="ttc" id="group___system_health_plugin_html_gae877ad975152eb4b4df1076138610d0e"><div class="ttname"><a href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">SystemHealthGadgetConfiguration::setSystemFile</a></div><div class="ttdeci">void setSystemFile(QString filename)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00044">systemhealthgadgetconfiguration.h:44</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_ga4807e799ef6d19b807497d0c74295b32"><div class="ttname"><a href="group___system_health_plugin.html#ga4807e799ef6d19b807497d0c74295b32">SystemHealthGadgetConfiguration::getSystemFile</a></div><div class="ttdeci">QString getSystemFile()</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00048">systemhealthgadgetconfiguration.h:48</a></div></div>
+<div class="ttc" id="group___system_health_plugin_html_gae877ad975152eb4b4df1076138610d0e"><div class="ttname"><a href="group___system_health_plugin.html#gae877ad975152eb4b4df1076138610d0e">SystemHealthGadgetConfiguration::setSystemFile</a></div><div class="ttdeci">void setSystemFile(QString filename)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00045">systemhealthgadgetconfiguration.h:45</a></div></div>
 <div class="ttc" id="class_system_health_gadget_configuration_html"><div class="ttname"><a href="class_system_health_gadget_configuration.html">SystemHealthGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetconfiguration_8h_source.html#l00037">systemhealthgadgetconfiguration.h:37</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
 <div class="ttc" id="iuavgadgetconfiguration_8h_html"><div class="ttname"><a href="iuavgadgetconfiguration_8h.html">iuavgadgetconfiguration.h</a></div></div>

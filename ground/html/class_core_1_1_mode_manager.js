@@ -10,7 +10,7 @@ var class_core_1_1_mode_manager =
     [ "currentModeChanged", "group___core_plugin.html#gae6bfcb951bb5f94b642a368c82116faf", null ],
     [ "init", "group___core_plugin.html#ga0602e86f2b78e9b234c3fa737837d266", null ],
     [ "mode", "group___core_plugin.html#ga2f29188b707a73ac13c2312497b99219", null ],
-    [ "modes", "group___core_plugin.html#gafe066d728cdaeffc19eb6407a41e29e0", null ],
+    [ "modes", "group___core_plugin.html#gacb5777b1677fecee4e8a9bca2e41c8ae", null ],
     [ "modesChanged", "group___core_plugin.html#ga804faf96299c957cb3433c46b3804f79", null ],
     [ "newModeOrder", "group___core_plugin.html#ga43ebcb6f603d4f852c917bc5ed76c124", null ],
     [ "reorderModes", "group___core_plugin.html#ga5d0135f443bbd69ffdc3cf24152cf9a0", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1431a2c</span>
+   &#160;<span id="projectnumber">9ce67cd</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,17 +112,17 @@ $(document).ready(function(){initNavTree('authorsdialog_8cpp_source.html','');})
 <div class="contents">
 <a href="authorsdialog_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -163,35 +163,40 @@ $(document).ready(function(){initNavTree('authorsdialog_8cpp_source.html','');})
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QString version = QLatin1String(<a class="code" href="group___core_plugin.html#ga94cc5148063bb8fd71e94b6929e8c9ee">GCS_VERSION_LONG</a>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    version += QDate(2007, 25, 10).toString(Qt::SystemLocaleDate);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QLabel *mainLabel = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;%0 proudly brought to you by this fine team:&quot;</span>).arg(GCS_PROJECT_BRANDING_PRETTY));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QLabel *relCreditsLabel = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;Current release:&quot;</span>));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    relCreditsLabel-&gt;setWordWrap(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QTextBrowser *relCreditsArea = <span class="keyword">new</span> QTextBrowser(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    relCreditsArea-&gt;setSource(QUrl::fromLocalFile(<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">Utils::PathUtils::InsertDataPath</a>(<span class="stringliteral">&quot;%%DATAPATH%%gcsrelauthors.html&quot;</span>)));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QLabel *creditsLabel = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;All time (including previous contributions under OpenPilot and Tau Labs):&quot;</span>));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    creditsLabel-&gt;setWordWrap(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QTextBrowser *creditsArea = <span class="keyword">new</span> QTextBrowser(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    creditsArea-&gt;setSource(QUrl::fromLocalFile(<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">Utils::PathUtils::InsertDataPath</a>(<span class="stringliteral">&quot;%%DATAPATH%%gcsauthors.html&quot;</span>)));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QDialogButtonBox *buttonBox = <span class="keyword">new</span> QDialogButtonBox(QDialogButtonBox::Close);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QPushButton *closeButton = buttonBox-&gt;button(QDialogButtonBox::Close);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QTC_ASSERT(closeButton, );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    buttonBox-&gt;addButton(closeButton, QDialogButtonBox::ButtonRole(QDialogButtonBox::RejectRole | QDialogButtonBox::AcceptRole));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    connect(buttonBox , SIGNAL(rejected()), <span class="keyword">this</span>, SLOT(reject()));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QLabel *logoLabel = <span class="keyword">new</span> QLabel;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    logoLabel-&gt;setPixmap(QPixmap(QLatin1String(<span class="stringliteral">&quot;:/core/gcs_logo_128&quot;</span>)));</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    layout-&gt;addWidget(logoLabel, 0, 0, 1, 2, Qt::AlignHCenter);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    layout-&gt;addWidget(mainLabel, 1, 0, 1, 2, Qt::AlignHCenter);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    layout-&gt;addWidget(relCreditsLabel, 2, 0, 1, 1, Qt::AlignBottom);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    layout-&gt;addWidget(relCreditsArea, 3, 0, 1, 1, Qt::AlignTop);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    layout-&gt;addWidget(creditsLabel, 2, 1, 1, 1, Qt::AlignBottom);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    layout-&gt;addWidget(creditsArea, 3, 1, 1, 1, Qt::AlignTop);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    layout-&gt;addWidget(buttonBox, 4, 0, 1, 2);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QLabel *mainLabel = <span class="keyword">new</span> QLabel(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        tr(<span class="stringliteral">&quot;%0 proudly brought to you by this fine team:&quot;</span>).arg(GCS_PROJECT_BRANDING_PRETTY));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QLabel *relCreditsLabel = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;Current release:&quot;</span>));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    relCreditsLabel-&gt;setWordWrap(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QTextBrowser *relCreditsArea = <span class="keyword">new</span> QTextBrowser(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    relCreditsArea-&gt;setSource(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QUrl::fromLocalFile(<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">Utils::PathUtils::InsertDataPath</a>(<span class="stringliteral">&quot;%%DATAPATH%%gcsrelauthors.html&quot;</span>)));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QLabel *creditsLabel =</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;All time (including previous contributions under OpenPilot and Tau Labs):&quot;</span>));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    creditsLabel-&gt;setWordWrap(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QTextBrowser *creditsArea = <span class="keyword">new</span> QTextBrowser(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    creditsArea-&gt;setSource(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        QUrl::fromLocalFile(<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">Utils::PathUtils::InsertDataPath</a>(<span class="stringliteral">&quot;%%DATAPATH%%gcsauthors.html&quot;</span>)));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QDialogButtonBox *buttonBox = <span class="keyword">new</span> QDialogButtonBox(QDialogButtonBox::Close);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QPushButton *closeButton = buttonBox-&gt;button(QDialogButtonBox::Close);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QTC_ASSERT(closeButton, );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    buttonBox-&gt;addButton(closeButton, QDialogButtonBox::ButtonRole(QDialogButtonBox::RejectRole</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                   | QDialogButtonBox::AcceptRole));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    connect(buttonBox, SIGNAL(rejected()), <span class="keyword">this</span>, SLOT(reject()));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QLabel *logoLabel = <span class="keyword">new</span> QLabel;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    logoLabel-&gt;setPixmap(QPixmap(QLatin1String(<span class="stringliteral">&quot;:/core/gcs_logo_128&quot;</span>)));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    layout-&gt;addWidget(logoLabel, 0, 0, 1, 2, Qt::AlignHCenter);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    layout-&gt;addWidget(mainLabel, 1, 0, 1, 2, Qt::AlignHCenter);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    layout-&gt;addWidget(relCreditsLabel, 2, 0, 1, 1, Qt::AlignBottom);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    layout-&gt;addWidget(relCreditsArea, 3, 0, 1, 1, Qt::AlignTop);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    layout-&gt;addWidget(creditsLabel, 2, 1, 1, 1, Qt::AlignBottom);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    layout-&gt;addWidget(creditsArea, 3, 1, 1, 1, Qt::AlignTop);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    layout-&gt;addWidget(buttonBox, 4, 0, 1, 2);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 <div class="ttc" id="pathutils_8h_html"><div class="ttname"><a href="pathutils_8h.html">pathutils.h</a></div></div>
 <div class="ttc" id="qtcassert_8h_html"><div class="ttname"><a href="qtcassert_8h.html">qtcassert.h</a></div></div>
 <div class="ttc" id="authorsdialog_8h_html"><div class="ttname"><a href="authorsdialog_8h.html">authorsdialog.h</a></div></div>
