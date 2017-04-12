@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"usagestatsplugin_8h.html":[6,0,0,0,0,1,45,3],
+"usagestatsplugin_8h.html#gaa2c4ae2950cc13d46f45f5d2f0900870":[6,0,0,0,0,1,45,3,2],
 "usagestatsplugin_8h.html#gaad77ca38782a40c003770f2ab739470f":[6,0,0,0,0,1,45,3,1],
 "usagestatsplugin_8h.html#gae1c91ba8bd68b47b03732de0efb6abc8":[6,0,0,0,0,1,45,3,0],
 "usagestatsplugin_8h.html#ggaa2c4ae2950cc13d46f45f5d2f0900870a49108408f615fd87c5c3b235dd5f142f":[6,0,0,0,0,1,45,3,2,2],

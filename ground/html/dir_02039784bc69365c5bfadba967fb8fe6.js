@@ -12,7 +12,7 @@ var dir_02039784bc69365c5bfadba967fb8fe6 =
     [ "fixedwingpage.h", "fixedwingpage_8h.html", null ],
     [ "helipage.cpp", "helipage_8cpp.html", null ],
     [ "helipage.h", "helipage_8h.html", null ],
-    [ "inputpage.cpp", "inputpage_8cpp.html", null ],
+    [ "inputpage.cpp", "inputpage_8cpp.html", "inputpage_8cpp" ],
     [ "inputpage.h", "inputpage_8h.html", null ],
     [ "inputpage_notsupported.cpp", "inputpage__notsupported_8cpp.html", null ],
     [ "inputpage_notsupported.h", "inputpage__notsupported_8h.html", null ],

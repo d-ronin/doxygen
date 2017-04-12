@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"scopes2dconfig_8h_source.html":[6,0,0,0,0,1,31,0,9],
+"scopes3dconfig_8h.html":[6,0,0,0,0,1,31,1,2],
 "scopes3dconfig_8h_source.html":[6,0,0,0,0,1,31,1,2],
 "scopesconfig_8h.html":[6,0,0,0,0,1,31,17],
 "scopesconfig_8h.html#ga51d68dee7f98e408c8929a70cc78931d":[6,0,0,0,0,1,31,17,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "structmixer_channel_settings.html":[3,6,22],
 "structmsg__capabilities__rep__all.html":[3,2,45,5],
 "structmsg__capabilities__rep__specific.html":[3,2,45,6],
-"structmsg__capabilities__req.html":[3,2,45,4],
-"structmsg__enter__dfu.html":[3,2,45,7],
-"structmsg__jump__fw.html":[3,2,45,8]
+"structmsg__capabilities__req.html":[3,2,45,4]
 };

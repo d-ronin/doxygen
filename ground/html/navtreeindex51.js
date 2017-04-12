@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"structmsg__enter__dfu.html":[3,2,45,7],
+"structmsg__jump__fw.html":[3,2,45,8],
 "structmsg__op__abort.html":[3,2,45,10],
 "structmsg__op__end.html":[3,2,45,11],
 "structmsg__reset.html":[3,2,45,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "uavitem_8h_source.html":[6,0,0,0,0,0,2,2,25],
 "uavmapfollowtype_8h.html":[6,0,0,0,0,0,2,2,26],
 "uavmapfollowtype_8h_source.html":[6,0,0,0,0,0,2,2,26],
-"uavmetaobject_8cpp.html":[6,0,0,0,0,1,39,5],
-"uavmetaobject_8cpp_source.html":[6,0,0,0,0,1,39,5],
-"uavmetaobject_8h.html":[6,0,0,0,0,1,39,6]
+"uavmetaobject_8cpp.html":[6,0,0,0,0,1,39,5]
 };
