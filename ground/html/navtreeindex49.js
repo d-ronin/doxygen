@@ -1,7 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"plugindetailsview_8cpp_source.html":[6,0,0,0,0,0,1,7],
-"plugindetailsview_8h.html":[6,0,0,0,0,0,1,8],
 "plugindetailsview_8h_source.html":[6,0,0,0,0,0,1,8],
 "pluginerrorview_8cpp.html":[6,0,0,0,0,0,1,9],
 "pluginerrorview_8cpp_source.html":[6,0,0,0,0,0,1,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX49 =
 "scopeplugin_8cpp_source.html":[6,0,0,0,0,1,31,15],
 "scopeplugin_8h.html":[6,0,0,0,0,1,31,16],
 "scopeplugin_8h_source.html":[6,0,0,0,0,1,31,16],
-"scopes2dconfig_8h.html":[6,0,0,0,0,1,31,0,9]
+"scopes2dconfig_8h.html":[6,0,0,0,0,1,31,0,9],
+"scopes2dconfig_8h_source.html":[6,0,0,0,0,1,31,0,9],
+"scopes3dconfig_8h.html":[6,0,0,0,0,1,31,1,2]
 };

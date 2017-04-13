@@ -1,7 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"uavmetaobject_8cpp_source.html":[6,0,0,0,0,1,39,5],
-"uavmetaobject_8h.html":[6,0,0,0,0,1,39,6],
 "uavmetaobject_8h_source.html":[6,0,0,0,0,1,39,6],
 "uavobject_8cpp.html":[6,0,0,0,0,1,39,7],
 "uavobject_8cpp_source.html":[6,0,0,0,0,1,39,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX52 =
 "usagestatsoptionpage_8h.html":[6,0,0,0,0,1,45,1],
 "usagestatsoptionpage_8h_source.html":[6,0,0,0,0,1,45,1],
 "usagestatsplugin_8cpp.html":[6,0,0,0,0,1,45,2],
-"usagestatsplugin_8cpp_source.html":[6,0,0,0,0,1,45,2]
+"usagestatsplugin_8cpp_source.html":[6,0,0,0,0,1,45,2],
+"usagestatsplugin_8h.html":[6,0,0,0,0,1,45,3],
+"usagestatsplugin_8h.html#gaa2c4ae2950cc13d46f45f5d2f0900870":[6,0,0,0,0,1,45,3,2]
 };
