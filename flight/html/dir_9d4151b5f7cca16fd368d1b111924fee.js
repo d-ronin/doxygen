@@ -3,6 +3,7 @@ var dir_9d4151b5f7cca16fd368d1b111924fee =
     [ "inc", "dir_ff73002c805e1fe302acd87c83f6887d.html", "dir_ff73002c805e1fe302acd87c83f6887d" ],
     [ "pios_bl_helper.c", "_s_t_m32_f30x_2pios__bl__helper_8c.html", null ],
     [ "pios_can.c", "_s_t_m32_f30x_2pios__can_8c.html", null ],
+    [ "pios_dma.c", "pios__dma_8c.html", "pios__dma_8c" ],
     [ "pios_dma_hooks.c", "pios__dma__hooks_8c.html", null ],
     [ "pios_exti.c", "_s_t_m32_f30x_2pios__exti_8c.html", null ],
     [ "pios_flash_internal.c", "_s_t_m32_f30x_2pios__flash__internal_8c.html", null ],

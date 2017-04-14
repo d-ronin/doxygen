@@ -12,7 +12,6 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
     [ "pios_com_msg.c", "pios__com__msg_8c.html", null ],
     [ "pios_crc.c", "pios__crc_8c.html", "pios__crc_8c" ],
     [ "pios_crossfire.c", "pios__crossfire_8c.html", null ],
-    [ "pios_dma.c", "pios__dma_8c.html", "pios__dma_8c" ],
     [ "pios_dsm.c", "pios__dsm_8c.html", null ],
     [ "pios_etasv3.c", "pios__etasv3_8c.html", null ],
     [ "pios_flash.c", "pios__flash_8c.html", null ],

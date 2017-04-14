@@ -2,7 +2,6 @@ var NAVTREEINDEX66 =
 {
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,7,12,0,0,2,22],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,7,12,0,0,2,23],
-"group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,14,0,0,2,17],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,13,0,0,2,22],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,0,0,0,2,16],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,0,0,0,2,17],
@@ -12,6 +11,7 @@ var NAVTREEINDEX66 =
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,0,0,0,2,21],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,0,0,0,2,22],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,0,0,0,2,23],
+"group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,14,0,0,2,17],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,3,0,0,2,16],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,3,0,0,2,17],
 "group___s_t_m32_f4xx___system___private___defines.html#ga290dcd27167e925d817e8334111c1c01":[1,8,3,0,0,2,18],
