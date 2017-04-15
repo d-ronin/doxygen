@@ -46,7 +46,6 @@ var dir_200b35b1542c93b64136a2bd7f9276c2 =
     [ "pios_hal.h", "pios__hal_8h.html", "pios__hal_8h" ],
     [ "pios_hcsr04.h", "pios__hcsr04_8h.html", "pios__hcsr04_8h" ],
     [ "pios_heap.h", "pios__heap_8h.html", "pios__heap_8h" ],
-    [ "pios_hmc5843.h", "pios__hmc5843_8h.html", "pios__hmc5843_8h" ],
     [ "pios_hmc5883_priv.h", "pios__hmc5883__priv_8h.html", "pios__hmc5883__priv_8h" ],
     [ "pios_hmc5983.h", "pios__hmc5983_8h.html", "pios__hmc5983_8h" ],
     [ "pios_hsum_priv.h", "pios__hsum__priv_8h.html", "pios__hsum__priv_8h" ],

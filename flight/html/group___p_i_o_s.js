@@ -20,7 +20,6 @@ var group___p_i_o_s =
     [ "Hardware abstraction layer files", "group___p_i_o_s___h_a_l.html", "group___p_i_o_s___h_a_l" ],
     [ "HCSR04 Functions", "group___p_i_o_s___h_c_s_r04.html", "group___p_i_o_s___h_c_s_r04" ],
     [ "Heap Allocation Abstraction", "group___p_i_o_s___h_e_a_p.html", "group___p_i_o_s___h_e_a_p" ],
-    [ "HMC5843 Functions", "group___p_i_o_s___h_m_c5843.html", "group___p_i_o_s___h_m_c5843" ],
     [ "HMC5883 Functions", "group___p_i_o_s___h_m_c5883.html", "group___p_i_o_s___h_m_c5883" ],
     [ "HMC5983 Functions", "group___p_i_o_s___h_m_c5983.html", "group___p_i_o_s___h_m_c5983" ],
     [ "Graupner HoTT receiver functions", "group___p_i_o_s___h_s_u_m.html", "group___p_i_o_s___h_s_u_m" ],

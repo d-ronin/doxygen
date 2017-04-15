@@ -22,7 +22,6 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
     [ "pios_hal.c", "pios__hal_8c.html", "pios__hal_8c" ],
     [ "pios_hcsr04.c", "pios__hcsr04_8c.html", null ],
     [ "pios_heap.c", "_pi_o_s_2_common_2pios__heap_8c.html", "_pi_o_s_2_common_2pios__heap_8c" ],
-    [ "pios_hmc5843.c", "pios__hmc5843_8c.html", null ],
     [ "pios_hmc5883.c", "pios__hmc5883_8c.html", null ],
     [ "pios_hmc5983.c", "pios__hmc5983_8c.html", null ],
     [ "pios_hmc5983_i2c.c", "pios__hmc5983__i2c_8c.html", null ],

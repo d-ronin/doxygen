@@ -1,10 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"pios__can__priv_8h.html#ga461562c7b4468aed60ea58efe638d052":[4,0,0,3,1,18,1],
-"pios__can__priv_8h.html#gacb1725d9d79f03cae4959efcc521acc9":[4,0,0,3,1,18,2],
-"pios__can__priv_8h_source.html":[4,0,0,3,1,18],
-"pios__com_8c.html":[4,0,0,3,0,8],
-"pios__com_8c_source.html":[4,0,0,3,0,8],
 "pios__com_8h.html":[4,0,0,3,1,19],
 "pios__com_8h.html#ga06a9a4136683f78051b9e72e5edb32f8":[4,0,0,3,1,19,6],
 "pios__com_8h.html#ga1b03325c6ae40858f2a5fe049748b35e":[4,0,0,3,1,19,4],
@@ -96,8 +91,8 @@ var NAVTREEINDEX98 =
 "pios__crossfire_8h.html#gab65a3705c413c56ea4c4e787e51e0884":[4,0,0,3,1,24,15],
 "pios__crossfire_8h.html#gab7f9d424348d8f18fbd99e3e0e27db5f":[4,0,0,3,1,24,19],
 "pios__crossfire_8h.html#gac414d5a8a1fc9e6b34150388de6b42ae":[4,0,0,3,1,24,12],
-"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[4,0,0,3,1,24,9],
 "pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[4,0,0,3,1,24,8],
+"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[4,0,0,3,1,24,9],
 "pios__crossfire_8h.html#gadc780303ee10c7d52c240a9a5abe9d41":[4,0,0,3,1,24,10],
 "pios__crossfire_8h.html#gadd03cdba4acdbe0501ee1b3b6ddf8d0d":[4,0,0,3,1,24,18],
 "pios__crossfire_8h.html#gaecddfff0c4a244683f7d975248bd8b8a":[4,0,0,3,1,24,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX98 =
 "pios__flashfs__logfs_8c.html#a0d20c5513f9d5200fcb8f203df48b0e9":[4,0,0,3,0,16,41],
 "pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630":[4,0,0,3,0,16,44],
 "pios__flashfs__logfs_8c.html#a431ff00458feadb3820732c6bc71e78b":[4,0,0,3,0,16,42],
-"pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556":[4,0,0,3,0,16,37]
+"pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556":[4,0,0,3,0,16,37],
+"pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2":[4,0,0,3,0,16,36],
+"pios__flashfs__logfs_8c.html#a7930e82075aa4e3326ad9615090b5d61":[4,0,0,3,0,16,38],
+"pios__flashfs__logfs_8c.html#a82087e4b39241c250086d53813e7fa77":[4,0,0,3,0,16,34],
+"pios__flashfs__logfs_8c.html#a9dd5fbf0841bddc5553ad552ccb89ccd":[4,0,0,3,0,16,1],
+"pios__flashfs__logfs_8c.html#aabdc541dd3e5f12f28b610b773ea867a":[4,0,0,3,0,16,35]
 };

@@ -100,7 +100,7 @@ var searchData=
   ['reserved',['reserved',['../unionrfm22b__ezmac__status__reg.html#a4df8a640674372b4b35bde6028d867b0',1,'rfm22b_ezmac_status_reg::reserved()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa6136a0872216f91100b42ea04333af70',1,'Reserved():&#160;common.h']]],
   ['reserved1',['reserved1',['../struct_u_b_x___n_a_v___s_o_l.html#aa1df4884b23e42bf16bc237341d5001c',1,'UBX_NAV_SOL']]],
   ['reserved2',['reserved2',['../struct_u_b_x___n_a_v___s_o_l.html#a2367f145076ebc428ec4ef901cdda367',1,'UBX_NAV_SOL::reserved2()'],['../struct_u_b_x___n_a_v___s_v_i_n_f_o.html#a2c5c4d3b1882220da507ddacbe43159b',1,'UBX_NAV_SVINFO::reserved2()']]],
-  ['reset',['reset',['../structbl__messages.html#a36205b2ef24b55d4d62198b8d3dda3e0',1,'bl_messages::reset()'],['../bl__messages_8h.html#a6f86af865b628b71939d86976b12c869',1,'reset():&#160;bl_messages.h'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa92793663441ced378f4676b8a6524385',1,'Reset():&#160;common.h']]],
+  ['reset',['reset',['../structbl__messages.html#a36205b2ef24b55d4d62198b8d3dda3e0',1,'bl_messages::reset()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa92793663441ced378f4676b8a6524385',1,'Reset():&#160;common.h'],['../bl__messages_8h.html#a6f86af865b628b71939d86976b12c869',1,'reset():&#160;bl_messages.h']]],
   ['reset_5fcount',['reset_count',['../group___firmware_i_a_p_module.html#ga7e8f2a34c998c86308f69623a2836286',1,'firmwareiap.c']]],
   ['reset_5fdelay_5fms',['RESET_DELAY_MS',['../group___firmware_i_a_p_module.html#ga327cb8c305882a51e4a7566ac3b2e773',1,'firmwareiap.c']]],
   ['reset_5ftimeval',['reset_timeval',['../structcomplementary__filter__state.html#a5b8422bb68fa412d1ff92c82331c18ec',1,'complementary_filter_state']]],
