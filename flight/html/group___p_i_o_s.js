@@ -89,6 +89,7 @@ var group___p_i_o_s =
     [ "Timer Functions", "group___p_i_o_s___t_i_m.html", "group___p_i_o_s___t_i_m" ],
     [ "PIOS Flash internal flash driver", "group___pios_flash_internal.html", null ],
     [ "DAC Functions", "group___p_i_o_s___d_a_c.html", "group___p_i_o_s___d_a_c" ],
+    [ "PiOS DMA-driven DShot driver", "group___p_i_o_s___d_m_a_shot.html", "group___p_i_o_s___d_m_a_shot" ],
     [ "Code for OSD video generator", "group___p_i_o_s___v_i_d_e_o.html", "group___p_i_o_s___v_i_d_e_o" ],
     [ "pios_max7456.c", "pios__max7456_8c.html", null ],
     [ "printf-stdarg.c", "printf-stdarg_8c.html", null ],

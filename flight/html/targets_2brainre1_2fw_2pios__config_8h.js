@@ -13,6 +13,7 @@ var targets_2brainre1_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_BMI160", "targets_2brainre1_2fw_2pios__config_8h.html#ga1e15b364af56c864f6214ade28ffdfc4", null ],
     [ "PIOS_INCLUDE_BMP280", "targets_2brainre1_2fw_2pios__config_8h.html#ga401441fde64a74c578c83d2e616da605", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "targets_2brainre1_2fw_2pios__config_8h.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "targets_2brainre1_2fw_2pios__config_8h.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2brainre1_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_FRSKY_RSSI", "targets_2brainre1_2fw_2pios__config_8h.html#gae89d9c1184427ac23dc28a20dacdef19", null ],
     [ "PIOS_INCLUDE_HMC5883", "targets_2brainre1_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a484cf268e20400bfa2cf159fd86b98be":[5,0,0,3,5,2,56],
 "_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a499a89568e48f659751e632ac34670d4":[5,0,0,3,5,2,16],
 "_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a499bdce3f1172d391e9565e9f9d07a76":[5,0,0,3,5,2,47],
 "_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a578b4afc3dd6695f66e1b7a116c33d41":[5,0,0,3,5,2,46],
@@ -93,8 +94,8 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f10x_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,3,5,12,7],
 "_s_t_m32_f10x_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,3,5,12,4],
 "_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,12,0,0],
-"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,12,0,1],
 "_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,12,0,2],
+"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,12,0,1],
 "_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,12,0,3],
 "_s_t_m32_f10x_2pios__tim_8c_source.html":[5,0,0,3,5,12],
 "_s_t_m32_f10x_2pios__usart_8c.html":[5,0,0,3,5,13],
@@ -117,11 +118,11 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a0f5d1b77943736b224c1034966cc56eb":[5,0,0,3,5,18,10],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40":[5,0,0,3,5,18,6],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c":[5,0,0,3,5,18,3],
-"_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a3250e5a38b921ec75b6ad9b5a9467743":[5,0,0,3,5,18,12],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a393e7e35fe633c7431b3de2cccaf892a":[5,0,0,3,5,18,11],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d":[5,0,0,3,5,18,1],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7720eb7ac1ea6af8e9e76b2eb6f12d65":[5,0,0,3,5,18,0],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7b4c2044bf2be52b9f636d4ccffeccd2":[5,0,0,3,5,18,2],
+"_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a8cb34cdf9e45fd8293cb47aa5f1daab3":[5,0,0,3,5,18,12],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a927a384b5759002b5f933f9c92a800ea":[5,0,0,3,5,18,4],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#aa99b8eac23843be0bca036fae722c788":[5,0,0,3,5,18,7],
 "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#abde06594331cfefcb35ae1166edd52fb":[5,0,0,3,5,18,8],
@@ -235,9 +236,9 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html":[5,0,0,3,6,0,2],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a10b19295cb30ec2e44c0a11f45cf28fe":[5,0,0,3,6,0,2,5],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649":[5,0,0,3,6,0,2,2],
-"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a0cb4ba8c0e16a415465ec638e89ac7b3":[5,0,0,3,6,0,2,2,17],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a0cb4ba8c0e16a415465ec638e89ac7b3":[5,0,0,3,6,0,2,2,27],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a0cb4ba8c0e16a415465ec638e89ac7b3":[5,0,0,3,6,0,2,2,45],
+"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a0cb4ba8c0e16a415465ec638e89ac7b3":[5,0,0,3,6,0,2,2,17],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a145f9aee4e03a5bd9c36d94782d0334a":[5,0,0,3,6,0,2,2,13],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a145f9aee4e03a5bd9c36d94782d0334a":[5,0,0,3,6,0,2,2,41],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a1526b787433324c508c0043ffb4b65b1":[5,0,0,3,6,0,2,2,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3c515aa38bcb0e83c213e715968d9f23":[5,0,0,3,6,0,2,2,35],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a5d973e868fcb553ccbbd250602873bbe":[5,0,0,3,6,0,2,2,3],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a5e49044b221fd62a86bfa94a4aafe191":[5,0,0,3,6,0,2,2,15],
-"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a5e49044b221fd62a86bfa94a4aafe191":[5,0,0,3,6,0,2,2,25],
-"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a5e49044b221fd62a86bfa94a4aafe191":[5,0,0,3,6,0,2,2,43]
+"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a5e49044b221fd62a86bfa94a4aafe191":[5,0,0,3,6,0,2,2,25]
 };

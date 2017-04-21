@@ -4,6 +4,7 @@ var dir_4aa0af5b648d51e2dac4a52d966cf520 =
     [ "pios_bl_helper.c", "_s_t_m32_f4xx_2pios__bl__helper_8c.html", null ],
     [ "pios_can.c", "_s_t_m32_f4xx_2pios__can_8c.html", null ],
     [ "pios_dac.c", "pios__dac_8c.html", null ],
+    [ "pios_dmashot.c", "pios__dmashot_8c.html", "pios__dmashot_8c" ],
     [ "pios_exti.c", "_s_t_m32_f4xx_2pios__exti_8c.html", null ],
     [ "pios_flash_internal.c", "_s_t_m32_f4xx_2pios__flash__internal_8c.html", null ],
     [ "pios_frsky_rssi.c", "pios__frsky__rssi_8c.html", null ],

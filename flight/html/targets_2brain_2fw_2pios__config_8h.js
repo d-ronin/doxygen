@@ -13,6 +13,7 @@ var targets_2brain_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "targets_2brain_2fw_2pios__config_8h.html#ga90d918d22c85e3b41434233eac638116", null ],
     [ "PIOS_INCLUDE_DAC_FSK", "targets_2brain_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "targets_2brain_2fw_2pios__config_8h.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "targets_2brain_2fw_2pios__config_8h.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_ETASV3", "targets_2brain_2fw_2pios__config_8h.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2brain_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2brain_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],

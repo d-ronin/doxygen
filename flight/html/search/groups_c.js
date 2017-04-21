@@ -9,6 +9,7 @@ var searchData=
   ['pios_5fbmx055',['PIOS_BMX055',['../group___p_i_o_s___b_m_x055.html',1,'']]],
   ['pios_20can_20interface_20layer',['PiOS CAN interface layer',['../group___p_i_o_s___c_a_n.html',1,'']]],
   ['pios_20tbs_20crossfire_20receiver_20driver',['PiOS TBS Crossfire receiver driver',['../group___p_i_o_s___crossfire.html',1,'']]],
+  ['pios_20dma_2ddriven_20dshot_20driver',['PiOS DMA-driven DShot driver',['../group___p_i_o_s___d_m_a_shot.html',1,'']]],
   ['pios_5fflyingpio',['PIOS_FLYINGPIO',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html',1,'']]],
   ['pios_20ibus_20receiver_20driver',['PiOS IBus receiver driver',['../group___p_i_o_s___i_bus.html',1,'']]],
   ['pios_5flis3mdl',['PIOS_LIS3MDL',['../group___p_i_o_s___l_i_s3_m_d_l.html',1,'']]],

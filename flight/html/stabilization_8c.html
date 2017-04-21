@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a2cf22</span>
+   &#160;<span id="projectnumber">c2a0720</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -141,6 +141,7 @@ $(document).ready(function(){initNavTree('stabilization_8c.html','');});
 <code>#include &quot;physical_constants.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pid_8h_source.html">pid.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="misc__math_8h_source.html">misc_math.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="virtualflybar_8h_source.html">virtualflybar.h</a>&quot;</code><br/>
 </div>
 <p><a href="stabilization_8c_source.html">Go to the source code of this file.</a></p>
@@ -167,37 +168,37 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga726ca809ffd3d67ab4b8476646f26635"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac7316e32dee7ef7f5340809a6e901a94">PID_GROUP_RATE</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a72ce5e299bef48d82c7df12b830f4362">PID_RATE_ROLL</a> = PID_GROUP_RATE, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac06016a8c64f1a65c3e50fbf8e130d40">PID_RATE_PITCH</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a0c6a71c56e424e9e8dbece3cc8b6e247">PID_RATE_YAW</a>, 
+<tr class="memitem:ga0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac7316e32dee7ef7f5340809a6e901a94">PID_GROUP_RATE</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da72ce5e299bef48d82c7df12b830f4362">PID_RATE_ROLL</a> = PID_GROUP_RATE, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac06016a8c64f1a65c3e50fbf8e130d40">PID_RATE_PITCH</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da0c6a71c56e424e9e8dbece3cc8b6e247">PID_RATE_YAW</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a5f8120c562708e146803407541f87dbb">PID_ATT_ROLL</a> = PID_GROUP_ATT, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ab1e5a0050d3a9b6ac04aa9f2283ab6cb">PID_ATT_PITCH</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac81ceeecde5376af34dd127b8143ec3b">PID_ATT_YAW</a>, 
+&#160;&#160;<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da5f8120c562708e146803407541f87dbb">PID_ATT_ROLL</a> = PID_GROUP_ATT, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dab1e5a0050d3a9b6ac04aa9f2283ab6cb">PID_ATT_PITCH</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac81ceeecde5376af34dd127b8143ec3b">PID_ATT_YAW</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a91ae2485e843e645a7919cc55d99e084">PID_GROUP_VBAR</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a15451bce1f8eb3bd722cde93cbe0618e">PID_VBAR_ROLL</a> = PID_GROUP_VBAR, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635abf7959657bb25c35ccacd81b351d09e6">PID_VBAR_PITCH</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635af7116e8c423b01435c76d3af03d7d637">PID_VBAR_YAW</a>, 
+&#160;&#160;<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da91ae2485e843e645a7919cc55d99e084">PID_GROUP_VBAR</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da15451bce1f8eb3bd722cde93cbe0618e">PID_VBAR_ROLL</a> = PID_GROUP_VBAR, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dabf7959657bb25c35ccacd81b351d09e6">PID_VBAR_PITCH</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2daf7116e8c423b01435c76d3af03d7d637">PID_VBAR_YAW</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a4167403eac2fd0269f805267a8e55490">PID_COORDINATED_FLIGHT_YAW</a>, 
-<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>
+&#160;&#160;<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da4167403eac2fd0269f805267a8e55490">PID_COORDINATED_FLIGHT_YAW</a>, 
+<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2daa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>
 <br/>
  }</td></tr>
-<tr class="separator:ga726ca809ffd3d67ab4b8476646f26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6c8999e5e09a2051669e97456ba1676d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6c8999e5e09a2051669e97456ba1676d">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>+0!=3), stabAxisWrongCount)</td></tr>
+<tr class="memitem:ga6c8999e5e09a2051669e97456ba1676d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6c8999e5e09a2051669e97456ba1676d">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>+0!=3), stabAxisWrongCount)</td></tr>
 <tr class="separator:ga6c8999e5e09a2051669e97456ba1676d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca83a707babce95cd70c1ec0242ad10b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaca83a707babce95cd70c1ec0242ad10b">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a72ce5e299bef48d82c7df12b830f4362">PID_RATE_ROLL</a>+0!=<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9ea2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>)||(PID_ATT_ROLL!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9ea2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>), stabAxisPidEnumMapping1)</td></tr>
+<tr class="memitem:gaca83a707babce95cd70c1ec0242ad10b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaca83a707babce95cd70c1ec0242ad10b">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da72ce5e299bef48d82c7df12b830f4362">PID_RATE_ROLL</a>+0!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>)||(PID_ATT_ROLL!=<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>), stabAxisPidEnumMapping1)</td></tr>
 <tr class="separator:gaca83a707babce95cd70c1ec0242ad10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga472bec063ff4dd41b0b24883a9cb0488"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga472bec063ff4dd41b0b24883a9cb0488">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac06016a8c64f1a65c3e50fbf8e130d40">PID_RATE_PITCH</a>+0!=<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>)||(PID_ATT_PITCH!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>), stabAxisPidEnumMapping2)</td></tr>
+<tr class="memitem:ga472bec063ff4dd41b0b24883a9cb0488"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga472bec063ff4dd41b0b24883a9cb0488">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac06016a8c64f1a65c3e50fbf8e130d40">PID_RATE_PITCH</a>+0!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>)||(PID_ATT_PITCH!=<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>), stabAxisPidEnumMapping2)</td></tr>
 <tr class="separator:ga472bec063ff4dd41b0b24883a9cb0488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56b8cbab2a7d849f0ecd55aaf958b12f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga56b8cbab2a7d849f0ecd55aaf958b12f">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a0c6a71c56e424e9e8dbece3cc8b6e247">PID_RATE_YAW</a>+0!=<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9ea60ae774ecd1cf97a0e91f76970d64491">YAW</a>)||(PID_ATT_YAW!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635ac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9ea60ae774ecd1cf97a0e91f76970d64491">YAW</a>), stabAxisPidEnumMapping3)</td></tr>
+<tr class="memitem:ga56b8cbab2a7d849f0ecd55aaf958b12f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga56b8cbab2a7d849f0ecd55aaf958b12f">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da0c6a71c56e424e9e8dbece3cc8b6e247">PID_RATE_YAW</a>+0!=<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a60ae774ecd1cf97a0e91f76970d64491">YAW</a>)||(PID_ATT_YAW!=<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a60ae774ecd1cf97a0e91f76970d64491">YAW</a>), stabAxisPidEnumMapping3)</td></tr>
 <tr class="separator:ga56b8cbab2a7d849f0ecd55aaf958b12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa96452721032acd43f9b128a04406aad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaa96452721032acd43f9b128a04406aad">stabilizationTask</a> (void *parameters)</td></tr>
 <tr class="separator:gaa96452721032acd43f9b128a04406aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +218,8 @@ Functions</h2></td></tr>
 <tr class="separator:gad4f9c597cc7e801e46ab76d2cb551e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad619c15b0c0589e754d5937b6f7ec557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557">MODULE_HIPRI_INITCALL</a> (<a class="el" href="group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b">StabilizationInitialize</a>, <a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a>)</td></tr>
 <tr class="separator:gad619c15b0c0589e754d5937b6f7ec557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3782701fb17bad618b59523be488b7ac"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga3782701fb17bad618b59523be488b7ac">remap_smoothing_mode</a> (uint8_t m)</td></tr>
+<tr class="separator:ga3782701fb17bad618b59523be488b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -232,7 +235,7 @@ Variables</h2></td></tr>
 <tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaf23900e05a20ba9fb4c80d4b11337de1">ident_wiggle_points</a></td></tr>
 <tr class="separator:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacef7acd86d1d86bb50b2513cdde406db"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db">axis_lock_accum</a> [<a class="el" href="group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>] = {0,0,0}</td></tr>
+<tr class="memitem:gacef7acd86d1d86bb50b2513cdde406db"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db">axis_lock_accum</a> [<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aaacb851954fab4e8ccf0d09acc8ef697">MAX_AXES</a>] = {0,0,0}</td></tr>
 <tr class="separator:gacef7acd86d1d86bb50b2513cdde406db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d12f9314c47dcc57be19ca03b5ac09a"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga9d12f9314c47dcc57be19ca03b5ac09a">max_axis_lock</a> = 0</td></tr>
 <tr class="separator:ga9d12f9314c47dcc57be19ca03b5ac09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,8 +251,10 @@ Variables</h2></td></tr>
 <tr class="separator:gab9b6ba57cecbcf5f2414e9c87ce43aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga953d14b1e6e45afc361e0898296bf346"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga953d14b1e6e45afc361e0898296bf346">vbar_decay</a> = 0.991f</td></tr>
 <tr class="separator:ga953d14b1e6e45afc361e0898296bf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b7c75ff9222444babfe603f25b91233"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233">pids</a> [<a class="el" href="group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>]</td></tr>
+<tr class="memitem:ga1b7c75ff9222444babfe603f25b91233"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233">pids</a> [<a class="el" href="group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2daa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>]</td></tr>
 <tr class="separator:ga1b7c75ff9222444babfe603f25b91233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31e7b34d02a31718075e75ab2528204e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga31e7b34d02a31718075e75ab2528204e">rc_smoothing</a></td></tr>
+<tr class="separator:ga31e7b34d02a31718075e75ab2528204e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1">deadbands</a> = NULL</td></tr>
 <tr class="separator:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gac0da75e77e4e4f4b1e6c1fb6de575f65">settings_flag</a> = true</td></tr>

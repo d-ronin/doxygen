@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i',['i',['../structpid.html#a97ebc09fc39d749940ebdc48926b8bb1',1,'pid::i()'],['../struct__msp__pid__item.html#a825a4bfca75049f9bdeed0c489761773',1,'_msp_pid_item::i()'],['../group___p_i_o_s___s_e_r_v_o.html#gac699cb926e0168ec6823e4577d166396',1,'output_channel::i()'],['../msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d',1,'i():&#160;msp_messages.h'],['../group___p_i_o_s___s_e_r_v_o.html#gaa8abdde030f6f81f6e60953191fb8ac8',1,'i():&#160;pios_servo.c']]],
+  ['i',['i',['../structpid.html#a97ebc09fc39d749940ebdc48926b8bb1',1,'pid::i()'],['../struct__msp__pid__item.html#a825a4bfca75049f9bdeed0c489761773',1,'_msp_pid_item::i()'],['../group___p_i_o_s___s_e_r_v_o.html#ga9dd72b5d528245d162a4c853fc216df5',1,'output_channel::i()'],['../msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d',1,'i():&#160;msp_messages.h'],['../group___p_i_o_s___s_e_r_v_o.html#ga2fd50199e201622e14e6a978ed1b1bd8',1,'i():&#160;pios_servo.c']]],
   ['i2c_5ferrors_5fcount',['i2c_errors_count',['../structmsp__status.html#a68f8c5430239937c7d9856e319277276',1,'msp_status::i2c_errors_count()'],['../msp__messages_8h.html#a942fb8e42559e463a1c8adc53f64fe11',1,'i2c_errors_count():&#160;msp_messages.h']]],
   ['iaccumulator',['iAccumulator',['../structpid.html#afb7f8463c8cefe80b65db478c349a0b1',1,'pid']]],
   ['iad',['iad',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga0dc1bab4cabd04ace89b858ba3f7b259',1,'usb_config_hid_cdc::iad()'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#gac7a66f23a9fc26df56f67aa5cc34dc5b',1,'iad():&#160;pios_usb_desc_hid_cdc.c']]],
@@ -68,6 +68,7 @@ var searchData=
   ['int_5fstatus_5f1',['int_status_1',['../structrfm22b__device__status.html#a69ba706d8929ce6d8c55d57054987208',1,'rfm22b_device_status']]],
   ['int_5fstatus_5f2',['int_status_2',['../structrfm22b__device__status.html#a0e8a44380a568a5ef6042f10482c32bb',1,'rfm22b_device_status']]],
   ['integrated_5fresponse',['integrated_response',['../structpid__deadband.html#aeffe5348ae1771bf68110f7af7d67138',1,'pid_deadband']]],
+  ['integrator_5ftimeout',['integrator_timeout',['../structsmoothcontrol__axis__state.html#a0c3bc71ca70ee12fd3e97cd1142f1faa',1,'smoothcontrol_axis_state']]],
   ['interrupt',['interrupt',['../group___p_i_o_s.html#ga890d1ea2ffa5de7e360923948b6a9710',1,'pios_ws2811_cfg::interrupt()'],['../group___p_i_o_s.html#ga5b914237205f7f70572bf2b5ecf329f0',1,'pios_dac_cfg::interrupt()']]],
   ['interrupt_5fcfg',['interrupt_cfg',['../structpios__mpu60x0__cfg.html#aeadd184c43fe44f818bba2b94d80e099',1,'pios_mpu60x0_cfg::interrupt_cfg()'],['../structpios__mpu9250__cfg.html#a3c13b82391d92481bb8bc3c04b8a1ca3',1,'pios_mpu9250_cfg::interrupt_cfg()']]],
   ['interrupt_5fen',['interrupt_en',['../structpios__mpu60x0__cfg.html#a34f330d80ad1406663dbe14f1ae362cd',1,'pios_mpu60x0_cfg::interrupt_en()'],['../structpios__mpu9250__cfg.html#aa07d6e0b15bcb578f233937d1f51429b',1,'pios_mpu9250_cfg::interrupt_en()']]],

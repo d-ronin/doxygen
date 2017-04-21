@@ -25,6 +25,8 @@ var searchData=
   ['pios_5fcan_5fgimbal_5fmessage',['pios_can_gimbal_message',['../structpios__can__gimbal__message.html',1,'']]],
   ['pios_5fcom_5fdriver',['pios_com_driver',['../structpios__com__driver.html',1,'']]],
   ['pios_5fdac_5fcfg',['pios_dac_cfg',['../structpios__dac__cfg.html',1,'']]],
+  ['pios_5fdmashot_5fcfg',['pios_dmashot_cfg',['../structpios__dmashot__cfg.html',1,'']]],
+  ['pios_5fdmashot_5ftimer_5fcfg',['pios_dmashot_timer_cfg',['../structpios__dmashot__timer__cfg.html',1,'']]],
   ['pios_5fdsm_5fcfg',['pios_dsm_cfg',['../structpios__dsm__cfg.html',1,'']]],
   ['pios_5fdsm_5fdev',['pios_dsm_dev',['../structpios__dsm__dev.html',1,'']]],
   ['pios_5fdsm_5fstate',['pios_dsm_state',['../structpios__dsm__state.html',1,'']]],

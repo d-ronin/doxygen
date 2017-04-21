@@ -12,5 +12,5 @@ var _s_t_m32_f10x_2pios__usb__hid__pwr_8c =
     [ "bESOFcnt", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a0b488c6cee7fca8e5b2f73347998fa62", null ],
     [ "eState", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a0f5d1b77943736b224c1034966cc56eb", null ],
     [ "fSuspendEnabled", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a393e7e35fe633c7431b3de2cccaf892a", null ],
-    [ "ResumeS", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a3250e5a38b921ec75b6ad9b5a9467743", null ]
+    [ "ResumeS", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a8cb34cdf9e45fd8293cb47aa5f1daab3", null ]
 ];

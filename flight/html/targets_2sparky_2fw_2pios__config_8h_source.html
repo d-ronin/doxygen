@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a2cf22</span>
+   &#160;<span id="projectnumber">c2a0720</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -164,31 +164,32 @@ $(document).ready(function(){initNavTree('targets_2sparky_2fw_2pios__config_8h_s
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___sparky.html#gab0a79b712ecb50093fe0129a7468198f">   66</a></span>&#160;<span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* Task stack sizes */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___sparky.html#ga8de02d8defc3d19ac2f9ad75fc5441c1">   71</a></span>&#160;<span class="preprocessor">#define PIOS_EVENTDISPATCHER_STACK_SIZE 1024</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * This has been calibrated 2014/02/21 using chibios @ b89da8ac379646ac421bb65a209210e637bba223.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___sparky.html#ga9be33d810838161edf9412377209a4cf">   84</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (2175780)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___sparky.html#gaf4039c0d196379cbfb36489300f94ffe">   86</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___sparky.html#ga9342ac55ca81b9d977fec30f45813847">   88</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___sparky.html#ga867e829c0aaaf0e6f1c0f229b670e71e">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_DECIMATION 2</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* Task stack sizes */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___sparky.html#ga8de02d8defc3d19ac2f9ad75fc5441c1">   72</a></span>&#160;<span class="preprocessor">#define PIOS_EVENTDISPATCHER_STACK_SIZE 1024</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * This has been calibrated 2014/02/21 using chibios @ b89da8ac379646ac421bb65a209210e637bba223.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___sparky.html#ga9be33d810838161edf9412377209a4cf">   85</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (2175780)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___sparky.html#gaf4039c0d196379cbfb36489300f94ffe">   87</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___sparky.html#ga9342ac55ca81b9d977fec30f45813847">   89</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__flight__config_8h_html"><div class="ttname"><a href="pios__flight__config_8h.html">pios_flight_config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

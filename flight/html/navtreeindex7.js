@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"aq32_2fw_2mcuconf_8h.html#ga4026ae95617bb7ee1cbc32248e97e263":[5,0,0,4,0,2,0,198],
 "aq32_2fw_2mcuconf_8h.html#ga42381c2949b271a74c562c3502403881":[5,0,0,4,0,2,0,36],
 "aq32_2fw_2mcuconf_8h.html#ga42a8bb439be9c6c643c7ab48f02ee662":[5,0,0,4,0,2,0,111],
 "aq32_2fw_2mcuconf_8h.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c":[5,0,0,4,0,2,0,194],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "autotune_8c.html#gaea7ccb1f68c35c1ace876675a6c406d7":[5,0,0,2,4,0,9],
 "autotune_8c.html#gaf23900e05a20ba9fb4c80d4b11337de1":[5,0,0,2,4,0,20],
 "autotune_8c.html#gaf75414849ac65524456b0281dc598576":[5,0,0,2,4,0,11],
-"autotune_8c.html#gaf8774abb57cb1d05b31a8e89791391fc":[5,0,0,2,4,0,1],
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aa21093e10e0706dd23447055eb1e6f39b":[5,0,0,2,4,0,8,4]
+"autotune_8c.html#gaf8774abb57cb1d05b31a8e89791391fc":[5,0,0,2,4,0,1]
 };

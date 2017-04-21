@@ -35,7 +35,7 @@ var searchData=
   ['max7456_5freg_5fvm0',['MAX7456_REG_VM0',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1a7d7c2525dd5943af093e127497c9a887',1,'pios_max7456_priv.h']]],
   ['max7456_5freg_5fvm1',['MAX7456_REG_VM1',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1ad95c5f786ca3863e57a43b47c85a8b9d',1,'pios_max7456_priv.h']]],
   ['max7456_5freg_5fvos',['MAX7456_REG_VOS',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1a06126549ba133d18128bc1d66e788889',1,'pios_max7456_priv.h']]],
-  ['max_5faxes',['MAX_AXES',['../group___camera_stab.html#ggadf764cbdea00d65edcd07bb9953ad2b7aaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;camerastab.c'],['../group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9eaaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;stabilization.h']]],
+  ['max_5faxes',['MAX_AXES',['../group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5aaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;camerastab.c'],['../group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;stabilization.h']]],
   ['medium_5fdensity',['Medium_Density',['../group___common_f1.html#ggad258d4c51629346fceac4679b3209ad9aa3ea3fe11e3705395d454ebb0b528105',1,'common.h']]],
   ['model_5fagnostic',['MODEL_AGNOSTIC',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a7960fc19ecff58403fe8ce9aff5254a8',1,'simsensors.c']]],
   ['model_5fairplane',['MODEL_AIRPLANE',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a760a21ed021ec46ff7bbff4846bc7064',1,'simsensors.c']]],

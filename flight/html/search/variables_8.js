@@ -29,6 +29,7 @@ var searchData=
   ['hid_5fout',['hid_out',['../group___p_i_o_s___u_s_b___d_e_s_c.html#gad76c86a5c7e42e823404bf0e7ddff4f2',1,'usb_config_hid_cdc::hid_out()'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga0bdaf8c80f7739bea621a6d5aa272641',1,'usb_config_hid_only::hid_out()'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d',1,'hid_out():&#160;pios_usb_desc_hid_cdc.c'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d',1,'hid_out():&#160;pios_usb_desc_hid_only.c']]],
   ['hid_5freport_5fdesc',['hid_report_desc',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga11849b0f12b3bd244a0fddbd50b647c6',1,'hid_report_desc():&#160;pios_usb_desc_hid_cdc.c'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga70fbe0f8d2b3344af71f15511d49c6cf',1,'hid_report_desc():&#160;pios_usb_desc_hid_only.c']]],
   ['hid_5freport_5fdescriptor',['Hid_Report_Descriptor',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga94b07af85b2e11b68dd413cb250407dd',1,'Hid_Report_Descriptor():&#160;pios_usbhook.c'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga94b07af85b2e11b68dd413cb250407dd',1,'Hid_Report_Descriptor():&#160;pios_usbhook.c']]],
+  ['high_5fchannel',['high_channel',['../group___p_i_o_s___d_m_a_shot.html#ga92ae5fb74242a7d5db7ab3da649c4ea3',1,'servo_timer']]],
   ['hmsl',['hMSL',['../struct_u_b_x___n_a_v___p_o_s_l_l_h.html#af78fd4a28f1595624f28d0df15bfcfac',1,'UBX_NAV_POSLLH']]],
   ['home',['Home',['../structtelemetrydata.html#a710d60dfa73878e93dbdc3cc20be923a',1,'telemetrydata']]],
   ['home_5farrow',['HOME_ARROW',['../group___on_screen_display.html#ga130ce2bd3e6a2c864209cc4242e9d396',1,'onscreendisplay.c']]],
@@ -42,6 +43,7 @@ var searchData=
   ['hour',['hour',['../group___tau_labs_libraries.html#ga71e693706579ad2249a892ba9c2b5869',1,'__attribute__::hour()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a6685b128ba202f68bbba28ce3877d496',1,'UBX_NAV_TIMEUTC::hour()']]],
   ['hse_5fvalue',['hse_value',['../group___s_t_m32_f10x___system___private___function_prototypes.html#gadfcfe3ca753533ae7c41dc15a1b94f65',1,'cmsis_system.c']]],
   ['hsync_5fcapture',['hsync_capture',['../group___p_i_o_s___v_i_d_e_o.html#ga822673490bf87283e3afab0f52c6d6c4',1,'pios_video_cfg']]],
+  ['hw',['hw',['../group___p_i_o_s___d_m_a_shot.html#ga65adc65e1454ddee73df33d136f4eab4',1,'dma_buffer']]],
   ['hw_5ftype',['hw_type',['../structpios__board__info.html#a3a94af2d49603c2cbef32e8b56e5c057',1,'pios_board_info::hw_type()'],['../pios__board__info_8h.html#a0ee8992bec085f1ae8974025885a455d',1,'hw_type():&#160;pios_board_info.h']]],
   ['hwversion',['hwVersion',['../struct_u_b_x___m_o_n___v_e_r.html#a819db9f5960e6500b8baa50a111c9fc3',1,'UBX_MON_VER']]]
 ];

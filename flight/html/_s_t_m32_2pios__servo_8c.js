@@ -26,7 +26,7 @@ var _s_t_m32_2pios__servo_8c =
     [ "DS_GPIOC", "_s_t_m32_2pios__servo_8c.html#ga5c6a0069049793bc604f72f85ea8f506", null ],
     [ "dshot", "_s_t_m32_2pios__servo_8c.html#gaf5c6f4a8f5545b7b2a2bff79aac38b96", null ],
     [ "dshot_in_use", "_s_t_m32_2pios__servo_8c.html#ga0bc6674ccb22e0f24478e227f21131a2", null ],
-    [ "i", "_s_t_m32_2pios__servo_8c.html#gaa8abdde030f6f81f6e60953191fb8ac8", null ],
+    [ "i", "_s_t_m32_2pios__servo_8c.html#ga2fd50199e201622e14e6a978ed1b1bd8", null ],
     [ "mode", "_s_t_m32_2pios__servo_8c.html#ga9b9989d29283df24c5b281ec32b3b1c7", null ],
     [ "output_channels", "_s_t_m32_2pios__servo_8c.html#ga809ddb8b3a5e737e13c1f5d9f1394ebd", null ],
     [ "pwm_res", "_s_t_m32_2pios__servo_8c.html#gaf76078ad3a81e9760694550485b6e590", null ],
@@ -38,6 +38,7 @@ var _s_t_m32_2pios__servo_8c =
     [ "SYNC_DSHOT_1200", "_s_t_m32_2pios__servo_8c.html#ga111eee63a72c9eb868af0b90d31aa096", null ],
     [ "SYNC_DSHOT_300", "_s_t_m32_2pios__servo_8c.html#gabe391884eff2554ceef1d80735c56e3a", null ],
     [ "SYNC_DSHOT_600", "_s_t_m32_2pios__servo_8c.html#gaf15e66140d00a6103d5cfcb5d0d6cbdf", null ],
+    [ "SYNC_DSHOT_DMA", "_s_t_m32_2pios__servo_8c.html#ga2b1d9f7a5b60f11ea55d85d286a534fc", null ],
     [ "SYNC_PWM", "_s_t_m32_2pios__servo_8c.html#ga93b7611b025cbc2f6774261611af602f", null ],
     [ "UNCONFIGURED", "_s_t_m32_2pios__servo_8c.html#gae015c18e4e55d7f11583ff54d0b6ef75", null ]
 ];

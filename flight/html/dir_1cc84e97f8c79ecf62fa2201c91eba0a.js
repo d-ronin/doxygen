@@ -9,5 +9,7 @@ var dir_1cc84e97f8c79ecf62fa2201c91eba0a =
     [ "misc_math.c", "misc__math_8c.html", "misc__math_8c" ],
     [ "misc_math.h", "misc__math_8h.html", "misc__math_8h" ],
     [ "pid.c", "pid_8c.html", "pid_8c" ],
-    [ "pid.h", "pid_8h.html", "pid_8h" ]
+    [ "pid.h", "pid_8h.html", "pid_8h" ],
+    [ "smoothcontrol.c", "smoothcontrol_8c.html", "smoothcontrol_8c" ],
+    [ "smoothcontrol.h", "smoothcontrol_8h.html", "smoothcontrol_8h" ]
 ];

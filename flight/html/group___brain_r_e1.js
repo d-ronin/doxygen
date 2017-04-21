@@ -67,6 +67,7 @@ var group___brain_r_e1 =
     [ "PIOS_INCLUDE_BMP280", "group___brain_r_e1.html#ga401441fde64a74c578c83d2e616da605", null ],
     [ "PIOS_INCLUDE_COM_MSG", "group___brain_r_e1.html#gaa481fbc97c64c579738c2bf6ea8482d0", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "group___brain_r_e1.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "group___brain_r_e1.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_FLASH", "group___brain_r_e1.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___brain_r_e1.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___brain_r_e1.html#ga446b36ea5ee33295bce18fc867d8615e", null ],

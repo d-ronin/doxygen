@@ -10,6 +10,7 @@ var targets_2seppuku_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_DAC", "targets_2seppuku_2fw_2pios__config_8h.html#ga639f6a1cd17b535b17f2e4ae80835e7d", null ],
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "targets_2seppuku_2fw_2pios__config_8h.html#ga90d918d22c85e3b41434233eac638116", null ],
     [ "PIOS_INCLUDE_DAC_FSK", "targets_2seppuku_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "targets_2seppuku_2fw_2pios__config_8h.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2seppuku_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_GPIO", "targets_2seppuku_2fw_2pios__config_8h.html#gaeb874e5501a09124bc9f0c0558f302af", null ],
     [ "PIOS_INCLUDE_HMC5883", "targets_2seppuku_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],

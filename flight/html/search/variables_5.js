@@ -24,7 +24,7 @@ var searchData=
   ['encode_5fvalue',['encode_value',['../structfrsky__value__item.html#a41495522ac868df2d37fde180a91fcf9',1,'frsky_value_item']]],
   ['end_5faddr',['end_addr',['../structpios__heap.html#a42a79e2acc3c6bd6eaa8a305a57f582f',1,'pios_heap']]],
   ['end_5ftransaction',['end_transaction',['../group___p_i_o_s___f_l_a_s_h.html#ga402f673d2837c885dee54a2898cccb29',1,'pios_flash_driver']]],
-  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#a6453201bbfbbc332f88213f251311400',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
+  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#ac871f8c64bb9fb4cf5533e83ef035852',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
   ['entry',['entry',['../struct_object_event_entry_throttled.html#a55b4d6b43b204db478e2165a94fd02b2',1,'ObjectEventEntryThrottled']]],
   ['entry_5ffn',['entry_fn',['../group___tau_labs_modules.html#gaee6622bae804f1c41177facffb8ca7b3',1,'vtol_fsm_transition::entry_fn()'],['../structbl__transition.html#a313c9c672fccbdb1e07b173fe4b068d7',1,'bl_transition::entry_fn()']]],
   ['eoc',['EOC',['../classpx__uploader_1_1uploader.html#a5a08f62c72ea897ffb07df50852cfce9',1,'px_uploader::uploader']]],

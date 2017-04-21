@@ -12,6 +12,7 @@ var searchData=
   ['register_5fdefault_5fprofile',['register_default_profile',['../group___logging.html#ga406f1cacb994c74bc1a4eaa233b66999',1,'logging.c']]],
   ['register_5fobject',['register_object',['../group___logging.html#ga2a02369f36d2833a71af2cf8e06d23d5',1,'logging.c']]],
   ['registerobject',['registerObject',['../group___radio_com_bridge_module.html#ga3cd5102e2e68971267cfbdbe7b0423f6',1,'registerObject(UAVObjHandle obj):&#160;RadioComBridge.c'],['../group___telemetry_module.html#ga3cd5102e2e68971267cfbdbe7b0423f6',1,'registerObject(UAVObjHandle obj):&#160;telemetry.c']]],
+  ['remap_5fsmoothing_5fmode',['remap_smoothing_mode',['../group___stabilization_module.html#ga3782701fb17bad618b59523be488b7ac',1,'stabilization.c']]],
   ['render_5fosd_5fmenu',['render_osd_menu',['../group___on_screen_display.html#gabdee9b1cd29ac89fa5b15cac1574c2d9',1,'osd_menu.c']]],
   ['render_5fstats',['render_stats',['../group___on_screen_display.html#gaed95ad766b6ef193078db80f2e89bc09',1,'onscreendisplay.c']]],
   ['render_5fuser_5fpage',['render_user_page',['../group___on_screen_display.html#ga49cb573ab0549012b049fb8e900cb67e',1,'onscreendisplay.c']]],

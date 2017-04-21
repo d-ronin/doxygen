@@ -63,6 +63,7 @@ var group___brain =
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "group___brain.html#ga90d918d22c85e3b41434233eac638116", null ],
     [ "PIOS_INCLUDE_DAC_FSK", "group___brain.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "group___brain.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "group___brain.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_ETASV3", "group___brain.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "group___brain.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH", "group___brain.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],

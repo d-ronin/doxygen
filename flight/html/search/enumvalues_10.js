@@ -61,5 +61,5 @@ var searchData=
   ['rfm22b_5fstate_5ftransmitting',['RFM22B_STATE_TRANSMITTING',['../group___p_i_o_s___r_f_m22_b.html#ggaf31f5344b7afb099b3105bfff4debdcaa4c00e17d5562ccd292243c10567302fa',1,'pios_rfm22b_priv.h']]],
   ['rfm22b_5fstate_5ftx_5fmode',['RFM22B_STATE_TX_MODE',['../group___p_i_o_s___r_f_m22_b.html#ggaf31f5344b7afb099b3105bfff4debdcaa1020e8bae5de7c1ae7c43ddb8eebdc1b',1,'pios_rfm22b_priv.h']]],
   ['rfm22b_5ftx_5fstate',['RFM22B_TX_STATE',['../group___p_i_o_s___r_f_m22_b.html#gga65a214d459bb16e293aba7c0f3804d8eab05335b708081cab6a720d7231438927',1,'pios_rfm22b_priv.h']]],
-  ['roll',['ROLL',['../group___camera_stab.html#ggadf764cbdea00d65edcd07bb9953ad2b7a2eeb9fef8a6a516fa6437a44a6efbd52',1,'ROLL():&#160;camerastab.c'],['../group___stabilization_module.html#gga61dadd085c1777f559549e05962b2c9ea2eeb9fef8a6a516fa6437a44a6efbd52',1,'ROLL():&#160;stabilization.h']]]
+  ['roll',['ROLL',['../group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5a2eeb9fef8a6a516fa6437a44a6efbd52',1,'ROLL():&#160;camerastab.c'],['../group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a2eeb9fef8a6a516fa6437a44a6efbd52',1,'ROLL():&#160;stabilization.h']]]
 ];
