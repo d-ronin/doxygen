@@ -45,7 +45,7 @@ var group___l_u_x =
     [ "PIOS_INCLUDE_IAP", "group___l_u_x.html#ga3442464c6b8e8869621e4b7103782cec", null ],
     [ "PIOS_INCLUDE_LIGHTTELEMETRY", "group___l_u_x.html#gac4bc284e13454f25bd55839f3d9b0a10", null ],
     [ "PIOS_INCLUDE_MAVLINK", "group___l_u_x.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7", null ],
-    [ "PIOS_INCLUDE_MPU9250_SPI", "group___l_u_x.html#ga44cdd17f851d008ff8862030b0c2ebd4", null ],
+    [ "PIOS_INCLUDE_MPU", "group___l_u_x.html#ga24a6e0d324a2669cacb50de89b60c0a9", null ],
     [ "PIOS_INCLUDE_PWM", "group___l_u_x.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
     [ "PIOS_INCLUDE_SPI", "group___l_u_x.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_SPI", "group___l_u_x.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],

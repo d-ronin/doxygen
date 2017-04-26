@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -140,75 +140,74 @@ $(document).ready(function(){initNavTree('targets_2seppuku_2fw_2pios__config_8h_
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* Enable/Disable PiOS Modules */</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac7edbfa43685b86203f055c78fdcea8b">   42</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_I2C</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___seppuku.html#gacc93b5bb2caa11a16122f6eb0c619379">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SPI</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaeb874e5501a09124bc9f0c0558f302af">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_GPIO</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9342ac55ca81b9d977fec30f45813847">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga7e4d89ee24fb82e2600f9b9f4e1ecf46">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_TBSVTXCONFIG</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2989b6f1854d52ff08b9933bfb9b35fd">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_WS2811</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga639f6a1cd17b535b17f2e4ae80835e7d">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga3a377b6e3ac53fb86a88489527af7f5a">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC_FSK</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga90d918d22c85e3b41434233eac638116">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC_ANNUNCIATOR</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/* Select the sensors to include */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga1e15b364af56c864f6214ade28ffdfc4">   53</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_BMI160</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga401441fde64a74c578c83d2e616da605">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9f4391f6affd1768e1158448f12accc5">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280_SPI</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac0157b37554ccc372444dec9608329b8">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIS3MDL</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga221b4e9f9650231f108d4cbb538bf9fd">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_ETASV3</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga331308be9fde6166b4039a2966ce2b50">   60</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MPXV5004</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab48a97d4d9a65fbadfd195d283bc5fbf">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV7002</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___seppuku.html#gacf157c23e7623bb0aeb1e71b5daea82e">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPTICALFLOW</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga0e496387ab86b27f3a53fed5888c9c52">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RANGEFINDER</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9d907ffc9ed3e593ff2e33c30e3bb758">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PX4FLOW</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga245666dd976970e45363b17f9e55d5bf">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TOLERATE_MISSING_SENSORS</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/* Com systems to include */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   68</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac4bc284e13454f25bd55839f3d9b0a10">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___seppuku.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   73</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga52804fcdee0d6927e4c5f45fc74d8b48">   76</a></span>&#160;<span class="preprocessor">#define PIOS_VIDEO_TIM4_COUNTER</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2c77278e25177483ce8e0d93d12e67a6">   77</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_VIDEO</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___seppuku.html#gad5cf9eb7ddd2ec621eba2cb43828557a">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_SPLITBUFFER </span><span class="comment">/* Uses 2 1-bit/pixel buffers */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga491ba150016a5e19a48470a28798bc35">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_HSYNC_OFFSET -22</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2fbcb9de63a7854c4e8fc3c6c474455a">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_INPUT_FILTER</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9787c2c824b6c4508c3b5298b40ec1bc">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_OMIT_TIM2IRQ</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga5852869ec30fde13e651b38fe3aa97c7">   83</a></span>&#160;<span class="preprocessor">#define MODULE_FLIGHTSTATS_BUILTIN</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaabf5c613fb366d3da49a87e7114a09e2">   87</a></span>&#160;<span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga8ff5d57d64df909a2e57a54fca3e4d5f">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SYSTEMMOD_RGBLED_VIDEO_HACK</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab0a79b712ecb50093fe0129a7468198f">   89</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaf4039c0d196379cbfb36489300f94ffe">   91</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/* DMA DShot */</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab5ac6fa2e4da575ee16cb9d069522092">   94</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DMASHOT</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9be33d810838161edf9412377209a4cf">  109</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9342ac55ca81b9d977fec30f45813847">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FASTHEAP</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga7e4d89ee24fb82e2600f9b9f4e1ecf46">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_TBSVTXCONFIG</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2989b6f1854d52ff08b9933bfb9b35fd">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_WS2811</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga639f6a1cd17b535b17f2e4ae80835e7d">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga3a377b6e3ac53fb86a88489527af7f5a">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC_FSK</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga90d918d22c85e3b41434233eac638116">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DAC_ANNUNCIATOR</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* Select the sensors to include */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga1e15b364af56c864f6214ade28ffdfc4">   52</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_BMI160</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga401441fde64a74c578c83d2e616da605">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9f4391f6affd1768e1158448f12accc5">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280_SPI</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac0157b37554ccc372444dec9608329b8">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIS3MDL</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga221b4e9f9650231f108d4cbb538bf9fd">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PIOS_INCLUDE_ETASV3</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga331308be9fde6166b4039a2966ce2b50">   59</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MPXV5004</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab48a97d4d9a65fbadfd195d283bc5fbf">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPXV7002</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___seppuku.html#gacf157c23e7623bb0aeb1e71b5daea82e">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPTICALFLOW</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga0e496387ab86b27f3a53fed5888c9c52">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RANGEFINDER</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9d907ffc9ed3e593ff2e33c30e3bb758">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PX4FLOW</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga245666dd976970e45363b17f9e55d5bf">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TOLERATE_MISSING_SENSORS</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* Com systems to include */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   67</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac4bc284e13454f25bd55839f3d9b0a10">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___seppuku.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   72</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga52804fcdee0d6927e4c5f45fc74d8b48">   75</a></span>&#160;<span class="preprocessor">#define PIOS_VIDEO_TIM4_COUNTER</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2c77278e25177483ce8e0d93d12e67a6">   76</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_VIDEO</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___seppuku.html#gad5cf9eb7ddd2ec621eba2cb43828557a">   77</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_SPLITBUFFER </span><span class="comment">/* Uses 2 1-bit/pixel buffers */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga491ba150016a5e19a48470a28798bc35">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_HSYNC_OFFSET -22</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2fbcb9de63a7854c4e8fc3c6c474455a">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_INPUT_FILTER</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9787c2c824b6c4508c3b5298b40ec1bc">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_OMIT_TIM2IRQ</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga5852869ec30fde13e651b38fe3aa97c7">   82</a></span>&#160;<span class="preprocessor">#define MODULE_FLIGHTSTATS_BUILTIN</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaabf5c613fb366d3da49a87e7114a09e2">   86</a></span>&#160;<span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga8ff5d57d64df909a2e57a54fca3e4d5f">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SYSTEMMOD_RGBLED_VIDEO_HACK</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab0a79b712ecb50093fe0129a7468198f">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaf4039c0d196379cbfb36489300f94ffe">   90</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">/* DMA DShot */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___seppuku.html#gab5ac6fa2e4da575ee16cb9d069522092">   93</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DMASHOT</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga9be33d810838161edf9412377209a4cf">  108</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__flight__config_8h_html"><div class="ttname"><a href="pios__flight__config_8h.html">pios_flight_config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

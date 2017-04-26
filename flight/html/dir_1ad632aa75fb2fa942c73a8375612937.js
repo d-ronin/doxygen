@@ -35,7 +35,6 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
     [ "pios_mpu6050.c", "pios__mpu6050_8c.html", null ],
     [ "pios_mpu9150.c", "pios__mpu9150_8c.html", null ],
     [ "pios_mpu9250.c", "pios__mpu9250_8c.html", null ],
-    [ "pios_mpu9250_spi.c", "pios__mpu9250__spi_8c.html", null ],
     [ "pios_mpxv5004.c", "pios__mpxv5004_8c.html", "pios__mpxv5004_8c" ],
     [ "pios_mpxv7002.c", "pios__mpxv7002_8c.html", "pios__mpxv7002_8c" ],
     [ "pios_ms5611.c", "pios__ms5611_8c.html", null ],

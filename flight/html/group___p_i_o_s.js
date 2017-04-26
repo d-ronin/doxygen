@@ -1,7 +1,6 @@
 var group___p_i_o_s =
 [
     [ "Debugging Functions", "group___p_i_o_s___d_e_b_u_g.html", "group___p_i_o_s___d_e_b_u_g" ],
-    [ "GPIO Functions", "group___p_i_o_s___g_p_i_o.html", "group___p_i_o_s___g_p_i_o" ],
     [ "ADC Functions", "group___p_i_o_s___a_d_c.html", "group___p_i_o_s___a_d_c" ],
     [ "Annunciator DAC Functions", "group___p_i_o_s___a_n_n_u_n_c_d_a_c.html", "group___p_i_o_s___a_n_n_u_n_c_d_a_c" ],
     [ "BMI160 Functions", "group___p_i_o_s___b_m_i160.html", "group___p_i_o_s___b_m_i160" ],

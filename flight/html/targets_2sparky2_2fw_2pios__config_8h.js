@@ -13,7 +13,8 @@ var targets_2sparky2_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_I2C", "targets_2sparky2_2fw_2pios__config_8h.html#gac7edbfa43685b86203f055c78fdcea8b", null ],
     [ "PIOS_INCLUDE_LOG_TO_FLASH", "targets_2sparky2_2fw_2pios__config_8h.html#ga9c23f32c100ee25c973b1be91fab56dd", null ],
     [ "PIOS_INCLUDE_MAVLINK", "targets_2sparky2_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7", null ],
-    [ "PIOS_INCLUDE_MPU9250_SPI", "targets_2sparky2_2fw_2pios__config_8h.html#ga44cdd17f851d008ff8862030b0c2ebd4", null ],
+    [ "PIOS_INCLUDE_MPU", "targets_2sparky2_2fw_2pios__config_8h.html#ga24a6e0d324a2669cacb50de89b60c0a9", null ],
+    [ "PIOS_INCLUDE_MPU_MAG", "targets_2sparky2_2fw_2pios__config_8h.html#gab49a0be0e77d9cf169a7db44cc49598a", null ],
     [ "PIOS_INCLUDE_MPXV5004", "targets_2sparky2_2fw_2pios__config_8h.html#ga331308be9fde6166b4039a2966ce2b50", null ],
     [ "PIOS_INCLUDE_MPXV7002", "targets_2sparky2_2fw_2pios__config_8h.html#gab48a97d4d9a65fbadfd195d283bc5fbf", null ],
     [ "PIOS_INCLUDE_MS5611", "targets_2sparky2_2fw_2pios__config_8h.html#ga2cc30288b8783fea8d042a8502af4e70", null ],
@@ -24,6 +25,5 @@ var targets_2sparky2_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_RFM22B_COM", "targets_2sparky2_2fw_2pios__config_8h.html#gace1ff3845bfdc37404abe261c6316ea2", null ],
     [ "PIOS_INCLUDE_RFM22B_RCVR", "targets_2sparky2_2fw_2pios__config_8h.html#gaf6410b66dc97290a31c4ca57170cc771", null ],
     [ "PIOS_INCLUDE_SPI", "targets_2sparky2_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
-    [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2sparky2_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
-    [ "PIOS_MPU6000_ACCEL", "targets_2sparky2_2fw_2pios__config_8h.html#ga3925877e791baa885fbc268aeb8048c7", null ]
+    [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2sparky2_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ]
 ];

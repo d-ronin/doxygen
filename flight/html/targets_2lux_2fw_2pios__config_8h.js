@@ -8,7 +8,7 @@ var targets_2lux_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2lux_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_LIGHTTELEMETRY", "targets_2lux_2fw_2pios__config_8h.html#gac4bc284e13454f25bd55839f3d9b0a10", null ],
     [ "PIOS_INCLUDE_MAVLINK", "targets_2lux_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7", null ],
-    [ "PIOS_INCLUDE_MPU9250_SPI", "targets_2lux_2fw_2pios__config_8h.html#ga44cdd17f851d008ff8862030b0c2ebd4", null ],
+    [ "PIOS_INCLUDE_MPU", "targets_2lux_2fw_2pios__config_8h.html#ga24a6e0d324a2669cacb50de89b60c0a9", null ],
     [ "PIOS_INCLUDE_PWM", "targets_2lux_2fw_2pios__config_8h.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
     [ "PIOS_INCLUDE_SPI", "targets_2lux_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_MPU6000_ACCEL", "targets_2lux_2fw_2pios__config_8h.html#ga3925877e791baa885fbc268aeb8048c7", null ]

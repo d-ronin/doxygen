@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -347,17 +347,9 @@ $(document).ready(function(){initNavTree('targets_2seppuku_2board-info_2pios__bo
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  249</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                                1 </span><span class="comment">/* Should remove all references to this */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">// GPIO</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">// [0]: Output-&gt; Quanton Battery Pin, take care of the voltage divider connected to this pin</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">// [1]-[8]: Input-&gt; Quanton PWN IN Pins 1-8, take care of the RcvrPort configuration in GCS and that the Pins are configured with a PullUp Resistor</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga7696fd8fc19e8634595190b77bcaed2a">  256</a></span>&#160;<span class="preprocessor">#define PIOS_GPIO_PORTS                         {     GPIOC,       GPIOA,       GPIOC,      GPIOC,      GPIOC,      GPIOA,       GPIOB,      GPIOA,      GPIOA }</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="group___seppuku.html#gad5ea41d481554caf8281854dfe9492bf">  257</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GPIO_PINS                          {  GPIO_Pin_15, GPIO_Pin_10, GPIO_Pin_6, GPIO_Pin_7, GPIO_Pin_8, GPIO_Pin_15, GPIO_Pin_3, GPIO_Pin_0, GPIO_Pin_1 }</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group___seppuku.html#gaf4b96ccf49ae818bfad820fb4e76f782">  258</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GPIO_NUM                           9</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SEPPUKU_PIOS_BOARD_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SEPPUKU_PIOS_BOARD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga5c6ed92207820d514741140f5dec7f8a"><div class="ttname"><a href="group___a_q32.html#ga5c6ed92207820d514741140f5dec7f8a">pios_com_frsky_sensor_hub_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sensor_hub_id</div></div>
 <div class="ttc" id="group___quanton_html_ga29c6942e2bb055cc6d2a15ac205c540b"><div class="ttname"><a href="group___quanton.html#ga29c6942e2bb055cc6d2a15ac205c540b">pios_i2c_usart1_adapter_id</a></div><div class="ttdeci">uint32_t pios_i2c_usart1_adapter_id</div></div>

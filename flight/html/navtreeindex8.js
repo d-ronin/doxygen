@@ -1,17 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aa21093e10e0706dd23447055eb1e6f39b":[5,0,0,2,4,0,8,4],
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aa212188919cef420e2de9232d9029a92b":[5,0,0,2,4,0,8,0],
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aa27cb7a2776cd94b4389179078f0d65d7":[5,0,0,2,4,0,8,2],
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aa593de3fe66dd4fb0c156ebe006f13c0d":[5,0,0,2,4,0,8,1],
-"autotune_8c.html#ggac104fc2be1ec1bdac638e8bb7fa4ce7aaaf059a2d0fa090f804f246b0c8ffdc89":[5,0,0,2,4,0,8,3],
-"autotune_8c_source.html":[5,0,0,2,4,0],
-"baro__airspeed__analog_8c.html":[5,0,0,2,1,2],
-"baro__airspeed__analog_8c.html#gabd8c33218836877470893e92f5cfb76a":[5,0,0,2,1,2,0],
-"baro__airspeed__analog_8c_source.html":[5,0,0,2,1,2],
-"baro__airspeed__analog_8h.html":[5,0,0,2,1,0,0],
-"baro__airspeed__analog_8h.html#gabd8c33218836877470893e92f5cfb76a":[5,0,0,2,1,0,0,0],
-"baro__airspeed__analog_8h_source.html":[5,0,0,2,1,0,0],
 "baro__airspeed__etasv3_8c.html":[5,0,0,2,1,3],
 "baro__airspeed__etasv3_8c.html#ga7e7d5fbcdba122ba85607af59516da18":[5,0,0,2,1,3,0],
 "baro__airspeed__etasv3_8c_source.html":[5,0,0,2,1,3],
@@ -249,5 +237,17 @@ var NAVTREEINDEX8 =
 "board_8h.html#ga9498f8f4ae2badbe39c078555ca9c793":[5,0,0,3,3,0,0,1],
 "board_8h.html#gaad7ccbfca9d4bd146d0d48ad6473912e":[5,0,0,3,3,0,0,0],
 "board_8h_source.html":[5,0,0,3,3,0,0],
-"brain_2bl_2pios__board_8c.html":[5,0,0,4,2,0,0]
+"brain_2bl_2pios__board_8c.html":[5,0,0,4,2,0,0],
+"brain_2bl_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,4,2,0,0,1],
+"brain_2bl_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,4,2,0,0,0],
+"brain_2bl_2pios__board_8c_source.html":[5,0,0,4,2,0,0],
+"brain_2board-info_2board__hw__defs_8c.html":[5,0,0,4,2,1,0],
+"brain_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,4,2,1,0,7],
+"brain_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03":[5,0,0,4,2,1,0,5],
+"brain_2board-info_2board__hw__defs_8c.html#ga4bdfc05b71a51b5d90b43d9dc1ba053f":[5,0,0,4,2,1,0,4],
+"brain_2board-info_2board__hw__defs_8c.html#ga561d73b2d409f10c4957d3e7d6025721":[5,0,0,4,2,1,0,0],
+"brain_2board-info_2board__hw__defs_8c.html#ga7699f3d39593ed9c21e9c9efc177c321":[5,0,0,4,2,1,0,6],
+"brain_2board-info_2board__hw__defs_8c.html#ga79aded86cca2a67d700f75a40fb4d6de":[5,0,0,4,2,1,0,1],
+"brain_2board-info_2board__hw__defs_8c.html#ga8a3391113e465d74c92def57807d830e":[5,0,0,4,2,1,0,3],
+"brain_2board-info_2board__hw__defs_8c.html#ga9180e38c2fdbc0a171920dac3c6c1120":[5,0,0,4,2,1,0,2]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -141,14 +141,16 @@ $(document).ready(function(){initNavTree('pios__exti_8h_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structpios__exti__cfg.html#a2e23a11b2a84a08143b9e5ac6a3fe36b">   42</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structstm32__exti.html">stm32_exti</a> <a class="code" href="structpios__exti__cfg.html#a2e23a11b2a84a08143b9e5ac6a3fe36b">exti</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* must be added to any pios_exti_cfg definition for it to be valid */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">   46</a></span>&#160;<span class="preprocessor">#define __exti_config   __attribute__((section(&quot;_exti&quot;)))</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___e_x_t_i.html#gaa35c400a680d3af7d1ec1a0a3f91d93f">PIOS_EXTI_Init</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___e_x_t_i.html#gaf8f7c91129c69c7165d7f9ad8f54aecc">PIOS_EXTI_DeInit</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_EXTI_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* This still exists just as legacy.  No longer do exti_cfg&#39;s need to be in a</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * special section.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">   48</a></span>&#160;<span class="preprocessor">#define __exti_config</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___e_x_t_i.html#gaa35c400a680d3af7d1ec1a0a3f91d93f">PIOS_EXTI_Init</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___e_x_t_i.html#gaf8f7c91129c69c7165d7f9ad8f54aecc">PIOS_EXTI_DeInit</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_EXTI_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__stm32_8h_html"><div class="ttname"><a href="pios__stm32_8h.html">pios_stm32.h</a></div><div class="ttdoc">Types that are specific to the STM32 peripherals. </div></div>
 <div class="ttc" id="structstm32__gpio_html"><div class="ttname"><a href="structstm32__gpio.html">stm32_gpio</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00059">pios_stm32.h:59</a></div></div>
 <div class="ttc" id="group___p_i_o_s___e_x_t_i_html_gaa35c400a680d3af7d1ec1a0a3f91d93f"><div class="ttname"><a href="group___p_i_o_s___e_x_t_i.html#gaa35c400a680d3af7d1ec1a0a3f91d93f">PIOS_EXTI_Init</a></div><div class="ttdeci">int32_t PIOS_EXTI_Init(const struct pios_exti_cfg *cfg)</div></div>

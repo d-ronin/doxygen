@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -285,49 +285,73 @@ $(document).ready(function(){initNavTree('brainre1_8cpp_source.html','');});
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">  206</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1::queryMaxGyroRate</a>()</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span> 2000;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">  211</a></span>&#160;QStringList <a class="code" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1::getAdcNames</a>()</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">return</span> QStringList() &lt;&lt; <span class="stringliteral">&quot;I&quot;</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                         &lt;&lt; <span class="stringliteral">&quot;V&quot;</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                         &lt;&lt; <span class="stringliteral">&quot;R&quot;</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">  218</a></span>&#160;QWidget *<a class="code" href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">BrainRE1::getBoardConfiguration</a>(QWidget *parent, <span class="keywordtype">bool</span> connected)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    Q_UNUSED(connected);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_brain_r_e1_configuration.html">BrainRE1Configuration</a>(parent);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">  224</a></span>&#160;QVector&lt;QVector&lt;int&gt;&gt; <a class="code" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1::getChannelBanks</a>()</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    QVector&lt;QVector&lt;int&gt;&gt; banks;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    HwBrainRE1 *hwBrainRE1 = HwBrainRE1::GetInstance(uavoManager);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (!hwBrainRE1 || (hwBrainRE1-&gt;getMultiPortMode() == 0)) {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        banks.resize(4);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        banks[0] = QVector&lt;int&gt;() &lt;&lt; 1 &lt;&lt; 2 &lt;&lt; 3 &lt;&lt; 4; <span class="comment">// TIM5</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        banks[1] = QVector&lt;int&gt;() &lt;&lt; 5; <span class="comment">// TIM1</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        banks[2] = QVector&lt;int&gt;() &lt;&lt; 6; <span class="comment">// TIM2</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        banks[3] = QVector&lt;int&gt;() &lt;&lt; 7 &lt;&lt; 8; <span class="comment">// TIM8</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        banks.resize(3);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        banks[0] = QVector&lt;int&gt;() &lt;&lt; 1 &lt;&lt; 2; <span class="comment">// TIM5</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        banks[1] = QVector&lt;int&gt;() &lt;&lt; 3; <span class="comment">// TIM1</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        banks[2] = QVector&lt;int&gt;() &lt;&lt; 4; <span class="comment">// TIM2</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> banks;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">switch</span> (settings.SerialPort) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">case</span> HwBrainRE1::SERIALPORT_TBSCROSSFIRE:</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">switch</span> (settings.MultiPortSerial) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">case</span> HwBrainRE1::MULTIPORTSERIAL_TBSCROSSFIRE:</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span> (settings.MultiPortMode == HwBrainRE1::MULTIPORTMODE_DUALSERIAL4PWM)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">switch</span> (settings.MultiPortSerial2) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">case</span> HwBrainRE1::MULTIPORTSERIAL2_TBSCROSSFIRE:</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5ab5a8a2fca5471ba84e3d3b1fbfaffc87">INPUT_TYPE_TBSCROSSFIRE</a>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5aa85b3ae4f26ecca41f8aec403b16bca4">INPUT_TYPE_UNKNOWN</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">  230</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1::queryMaxGyroRate</a>()</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> 2000;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">  235</a></span>&#160;QStringList <a class="code" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1::getAdcNames</a>()</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">return</span> QStringList() &lt;&lt; <span class="stringliteral">&quot;I&quot;</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                         &lt;&lt; <span class="stringliteral">&quot;V&quot;</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                         &lt;&lt; <span class="stringliteral">&quot;R&quot;</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">  242</a></span>&#160;QWidget *<a class="code" href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">BrainRE1::getBoardConfiguration</a>(QWidget *parent, <span class="keywordtype">bool</span> connected)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    Q_UNUSED(connected);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_brain_r_e1_configuration.html">BrainRE1Configuration</a>(parent);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">  248</a></span>&#160;QVector&lt;QVector&lt;int&gt;&gt; <a class="code" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1::getChannelBanks</a>()</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    QVector&lt;QVector&lt;int&gt;&gt; banks;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *uavoManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    HwBrainRE1 *hwBrainRE1 = HwBrainRE1::GetInstance(uavoManager);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (!hwBrainRE1 || (hwBrainRE1-&gt;getMultiPortMode() == 0)) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        banks.resize(4);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        banks[0] = QVector&lt;int&gt;() &lt;&lt; 1 &lt;&lt; 2 &lt;&lt; 3 &lt;&lt; 4; <span class="comment">// TIM5</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        banks[1] = QVector&lt;int&gt;() &lt;&lt; 5; <span class="comment">// TIM1</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        banks[2] = QVector&lt;int&gt;() &lt;&lt; 6; <span class="comment">// TIM2</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        banks[3] = QVector&lt;int&gt;() &lt;&lt; 7 &lt;&lt; 8; <span class="comment">// TIM8</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        banks.resize(3);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        banks[0] = QVector&lt;int&gt;() &lt;&lt; 1 &lt;&lt; 2; <span class="comment">// TIM5</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        banks[1] = QVector&lt;int&gt;() &lt;&lt; 3; <span class="comment">// TIM1</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        banks[2] = QVector&lt;int&gt;() &lt;&lt; 4; <span class="comment">// TIM2</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> banks;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
 <div class="ttc" id="group___boards___brain_f_p_v_plugin_html_gaabbc0011150e910f25f28873b1aa1477"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#gaabbc0011150e910f25f28873b1aa1477">BrainRE1::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00104">brainre1.cpp:104</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c">Core::IBoardType::INPUT_TYPE_PWM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00160">iboardtype.h:160</a></div></div>
 <div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga5b32ee58c9792fbac738b7308bde8435"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga5b32ee58c9792fbac738b7308bde8435">BrainRE1::getInputType</a></div><div class="ttdeci">virtual Core::IBoardType::InputType getInputType()</div><div class="ttdoc">getInputOnPort get the current input type </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00169">brainre1.cpp:169</a></div></div>
@@ -341,13 +365,13 @@ $(document).ready(function(){initNavTree('brainre1_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a31fe1d6cca4c01278726456091ab0168">Core::IBoardType::INPUT_TYPE_DSM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00162">iboardtype.h:162</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3">Core::IBoardType::BOARD_CAPABILITIES_ACCELS</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00094">iboardtype.h:94</a></div></div>
-<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga4da60c54e3adca5a40aa09b4ac5e0e7a"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">BrainRE1::getBoardConfiguration</a></div><div class="ttdeci">virtual QWidget * getBoardConfiguration(QWidget *parent, bool connected)</div><div class="ttdoc">Return a custom configuration widget, if one is provided. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00218">brainre1.cpp:218</a></div></div>
+<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga4da60c54e3adca5a40aa09b4ac5e0e7a"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga4da60c54e3adca5a40aa09b4ac5e0e7a">BrainRE1::getBoardConfiguration</a></div><div class="ttdeci">virtual QWidget * getBoardConfiguration(QWidget *parent, bool connected)</div><div class="ttdoc">Return a custom configuration widget, if one is provided. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00242">brainre1.cpp:242</a></div></div>
 <div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga2f876c5a7ba74ecee8d47f078ba32a82"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga2f876c5a7ba74ecee8d47f078ba32a82">BrainRE1::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00085">brainre1.cpp:85</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga01b09218f2a13aaeee6db007ac6bd967"><div class="ttname"><a href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">Core::IBoardType::BoardCapabilities</a></div><div class="ttdeci">BoardCapabilities</div><div class="ttdoc">Types of capabilities boards can support. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00092">iboardtype.h:92</a></div></div>
-<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga7bbc9416cd2b8f8dc9c34e7a1b71e018"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00206">brainre1.cpp:206</a></div></div>
-<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_gaa8e66c40ca8f591b346702e05136ad43"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1::getChannelBanks</a></div><div class="ttdeci">virtual QVector&lt; QVector&lt; int &gt; &gt; getChannelBanks()</div><div class="ttdoc">Get banks of output PWM channels banks on the board. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00224">brainre1.cpp:224</a></div></div>
+<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga7bbc9416cd2b8f8dc9c34e7a1b71e018"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00230">brainre1.cpp:230</a></div></div>
+<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_gaa8e66c40ca8f591b346702e05136ad43"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1::getChannelBanks</a></div><div class="ttdeci">virtual QVector&lt; QVector&lt; int &gt; &gt; getChannelBanks()</div><div class="ttdoc">Get banks of output PWM channels banks on the board. </div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00248">brainre1.cpp:248</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00099">iboardtype.h:99</a></div></div>
-<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga0d6dfd8523499a2dffd38a07b57b8130"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1::getAdcNames</a></div><div class="ttdeci">virtual QStringList getAdcNames()</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00211">brainre1.cpp:211</a></div></div>
+<div class="ttc" id="group___boards___brain_f_p_v_plugin_html_ga0d6dfd8523499a2dffd38a07b57b8130"><div class="ttname"><a href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1::getAdcNames</a></div><div class="ttdeci">virtual QStringList getAdcNames()</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_8cpp_source.html#l00235">brainre1.cpp:235</a></div></div>
 <div class="ttc" id="struct_core_1_1_i_board_type_1_1_u_s_b_info_html"><div class="ttname"><a href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">Core::IBoardType::USBInfo</a></div><div class="ttdoc">The USBInfo struct. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00062">iboardtype.h:62</a></div></div>
 <div class="ttc" id="uavobjectutilmanager_8h_html"><div class="ttname"><a href="uavobjectutilmanager_8h.html">uavobjectutilmanager.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5caf4d4cf80df4fed07b6ee0f28fcd34"><div class="ttname"><a href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">Core::IBoardType::addFirmwareUSBInfo</a></div><div class="ttdeci">void addFirmwareUSBInfo(USBInfo info)</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00266">iboardtype.h:266</a></div></div>

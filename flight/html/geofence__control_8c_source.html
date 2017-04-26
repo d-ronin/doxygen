@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -178,59 +178,60 @@ $(document).ready(function(){initNavTree('geofence__control_8c_source.html','');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        StabilizationDesiredGet(&amp;stabilization_desired);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        StabilizationDesiredGet(&amp;stabilization_desired);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        stabilization_desired.Thrust = (airframe_type == SYSTEMSETTINGS_AIRFRAMETYPE_HELICP) ? 0 : -1;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        stabilization_desired.Roll = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        stabilization_desired.Roll  = 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        stabilization_desired.Pitch = 0;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        stabilization_desired.Yaw   = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group___control.html#gae2f0df493e21ef17309b84cb7d17c260">geofence_armed_when_enabled</a>) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="comment">/* disable stabilization so outputs do not move when system was not armed */</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        StabilizationDesiredSet(&amp;stabilization_desired);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">  107</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a>()</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// Check if the module is running</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (GeoFenceSettingsHandle()) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                uint8_t alarm_status[SYSTEMALARMS_ALARM_NUMELEM];</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                SystemAlarmsAlarmGet(alarm_status);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> (alarm_status[SYSTEMALARMS_ALARM_GEOFENCE] == SYSTEMALARMS_ALARM_ERROR ||</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        alarm_status[SYSTEMALARMS_ALARM_GEOFENCE] == SYSTEMALARMS_ALARM_CRITICAL) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group___control.html#ga09080629030e894ea64ba0bf710751c3">  124</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a> <a class="code" href="group___control.html#ga09080629030e894ea64ba0bf710751c3">geofence_control_get_events</a>()</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// For now ARM / DISARM events still come from the transmitter.  This</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// means the normal disarm timeout still applies.  To be replaced later</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// by a full state machine determining how long to stay in failsafe before</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// disarming.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a>();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        stabilization_desired.ReprojectionMode = STABILIZATIONDESIRED_REPROJECTIONMODE_NONE;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group___control.html#gae2f0df493e21ef17309b84cb7d17c260">geofence_armed_when_enabled</a>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="comment">/* disable stabilization so outputs do not move when system was not armed */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_DISABLED;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                stabilization_desired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_FAILSAFE;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        StabilizationDesiredSet(&amp;stabilization_desired);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">  108</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a>()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// Check if the module is running</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (GeoFenceSettingsHandle()) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                uint8_t alarm_status[SYSTEMALARMS_ALARM_NUMELEM];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                SystemAlarmsAlarmGet(alarm_status);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">if</span> (alarm_status[SYSTEMALARMS_ALARM_GEOFENCE] == SYSTEMALARMS_ALARM_ERROR ||</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        alarm_status[SYSTEMALARMS_ALARM_GEOFENCE] == SYSTEMALARMS_ALARM_CRITICAL) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___control.html#ga09080629030e894ea64ba0bf710751c3">  125</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a> <a class="code" href="group___control.html#ga09080629030e894ea64ba0bf710751c3">geofence_control_get_events</a>()</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// For now ARM / DISARM events still come from the transmitter.  This</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// means the normal disarm timeout still applies.  To be replaced later</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// by a full state machine determining how long to stay in failsafe before</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// disarming.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="ttc" id="transmitter__control_8h_html"><div class="ttname"><a href="transmitter__control_8h.html">transmitter_control.h</a></div><div class="ttdoc">Process transmitter inputs and use as control source. </div></div>
 <div class="ttc" id="group___control_html_ga51dc43f87515d8de90aebb1465578212"><div class="ttname"><a href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a></div><div class="ttdeci">enum control_events transmitter_control_get_events()</div><div class="ttdoc">Get any control events. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00512">transmitter_control.c:512</a></div></div>
-<div class="ttc" id="group___control_html_ga09080629030e894ea64ba0bf710751c3"><div class="ttname"><a href="group___control.html#ga09080629030e894ea64ba0bf710751c3">geofence_control_get_events</a></div><div class="ttdeci">enum control_events geofence_control_get_events()</div><div class="ttdoc">Get any control events. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00124">geofence_control.c:124</a></div></div>
+<div class="ttc" id="group___control_html_ga09080629030e894ea64ba0bf710751c3"><div class="ttname"><a href="group___control.html#ga09080629030e894ea64ba0bf710751c3">geofence_control_get_events</a></div><div class="ttdeci">enum control_events geofence_control_get_events()</div><div class="ttdoc">Get any control events. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00125">geofence_control.c:125</a></div></div>
 <div class="ttc" id="geofence__control_8h_html"><div class="ttname"><a href="geofence__control_8h.html">geofence_control.h</a></div><div class="ttdoc">Geofence controller that is enabled when out of zone. </div></div>
 <div class="ttc" id="group___control_html_gae2f0df493e21ef17309b84cb7d17c260"><div class="ttname"><a href="group___control.html#gae2f0df493e21ef17309b84cb7d17c260">geofence_armed_when_enabled</a></div><div class="ttdeci">static bool geofence_armed_when_enabled</div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00058">geofence_control.c:58</a></div></div>
 <div class="ttc" id="group___control_html_ga2987bbb3a3aeed4eff6ad4f596fcb2d4"><div class="ttname"><a href="group___control.html#ga2987bbb3a3aeed4eff6ad4f596fcb2d4">geofence_control_update</a></div><div class="ttdeci">int32_t geofence_control_update()</div><div class="ttdoc">Perform any updates to the geofence controller. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00053">geofence_control.c:53</a></div></div>
 <div class="ttc" id="group___control_html_ga4a0900896628f8a53a7ea82f8628968e"><div class="ttname"><a href="group___control.html#ga4a0900896628f8a53a7ea82f8628968e">geofence_control_select</a></div><div class="ttdeci">int32_t geofence_control_select(bool reset_controller)</div><div class="ttdoc">Use geofence control mode. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00061">geofence_control.c:61</a></div></div>
-<div class="ttc" id="group___control_html_gab11b6b0e72d25d30100b761741913f8c"><div class="ttname"><a href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a></div><div class="ttdeci">bool geofence_control_activate()</div><div class="ttdoc">Query if out of bounds and the geofence controller should take over. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00107">geofence_control.c:107</a></div></div>
+<div class="ttc" id="group___control_html_gab11b6b0e72d25d30100b761741913f8c"><div class="ttname"><a href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a></div><div class="ttdeci">bool geofence_control_activate()</div><div class="ttdoc">Query if out of bounds and the geofence controller should take over. </div><div class="ttdef"><b>Definition:</b> <a href="geofence__control_8c_source.html#l00108">geofence_control.c:108</a></div></div>
 <div class="ttc" id="control_8h_html"><div class="ttname"><a href="control_8h.html">control.h</a></div></div>
 <div class="ttc" id="group___control_html_ga6db279174b366abaad3f5de70b10655c"><div class="ttname"><a href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a></div><div class="ttdeci">control_events</div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00035">control.h:35</a></div></div>
 <div class="ttc" id="group___control_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00091">transmitter_control.c:91</a></div></div>

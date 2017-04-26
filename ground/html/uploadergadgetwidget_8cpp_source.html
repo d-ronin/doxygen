@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -743,7 +743,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    connect(&amp;timeout, &amp;QTimer::timeout, &amp;loop, &amp;QEventLoop::quit);</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    connect(reply, &amp;QNetworkReply::finished, &amp;loop, &amp;QEventLoop::quit);</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    timeout.start(20000); <span class="comment">/* 20 seconds */</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    timeout.start(64000); <span class="comment">/* 64 seconds */</span></div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    loop.exec();</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    timeout.stop();</div>

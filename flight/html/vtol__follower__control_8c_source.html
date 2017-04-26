@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -535,274 +535,276 @@ $(document).ready(function(){initNavTree('vtol__follower__control_8c_source.html
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="comment">// Calculate the throttle setting or use pass through from transmitter</span></div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.ThrottleControl == VTOLPATHFOLLOWERSETTINGS_THROTTLECONTROL_FALSE) {</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                stabDesired.Thrust = (system_settings.AirframeType == SYSTEMSETTINGS_AIRFRAMETYPE_HELICP) ? manual_control_command.Collective : manual_control_command.Throttle;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <span class="keywordtype">float</span> downCommand = <a class="code" href="group___vtol_path_follower.html#gad2c1ad5c14192cec0c10508a99b53296">vtol_follower_control_altitude</a>(accelDesired.Down);</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                stabDesired.Thrust = <a class="code" href="group___tau_labs_math.html#gae7fa5c4383337339fe17371cd78d7264">bound_min_max</a>(downCommand, 0, 1);</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        }</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="comment">// Various ways to control the yaw that are essentially manual passthrough. However, because we do not have a fine</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="comment">// grained mechanism of manual setting the yaw as it normally would we need to duplicate that code here</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keywordflow">switch</span>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.YawMode) {</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_RATE:</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                <span class="comment">/* This is awkward.  This allows the transmitter to control the yaw while flying navigation */</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                stabDesired.Yaw = stabSet.ManualRate[STABILIZATIONSETTINGS_MANUALRATE_YAW] * manual_control_command.Yaw;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_RATE;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_AXISLOCK:</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                stabDesired.Yaw = stabSet.ManualRate[STABILIZATIONSETTINGS_MANUALRATE_YAW] * manual_control_command.Yaw;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_ATTITUDE:</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        {</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                stabDesired.Yaw = stabSet.YawMax * manual_control_command.Yaw;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        }</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_PATH:</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        {</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                <span class="comment">// Face forward on the path</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                VelocityDesiredData velocityDesired;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                VelocityDesiredGet(&amp;velocityDesired);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                <span class="keywordtype">float</span> total_vel2 = velocityDesired.East*velocityDesired.East + velocityDesired.North*velocityDesired.North;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                <span class="keywordtype">float</span> path_direction = atan2f(velocityDesired.East, velocityDesired.North) * RAD2DEG;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                <span class="keywordflow">if</span> (total_vel2 &gt; 1) {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                        stabDesired.Yaw = path_direction;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                        stabDesired.Yaw = 0;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_RATE;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                }</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        }</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_POI:</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_POI;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        StabilizationDesiredSet(&amp;stabDesired);</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;}</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">  550</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> threshold, <span class="keywordtype">float</span> expoPercent) {</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <span class="keywordflow">if</span> (input &gt; threshold) {</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                input -= threshold;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input &lt; -threshold) {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                input += threshold;</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                input = 0;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        }</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        input /= (1 - threshold);       <span class="comment">// Normalize to -1 to 1 range.</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        stabDesired.ReprojectionMode = STABILIZATIONDESIRED_REPROJECTIONMODE_NONE;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="comment">// Calculate the throttle setting or use pass through from transmitter</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.ThrottleControl == VTOLPATHFOLLOWERSETTINGS_THROTTLECONTROL_FALSE) {</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                stabDesired.Thrust = (system_settings.AirframeType == SYSTEMSETTINGS_AIRFRAMETYPE_HELICP) ? manual_control_command.Collective : manual_control_command.Throttle;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                <span class="keywordtype">float</span> downCommand = <a class="code" href="group___vtol_path_follower.html#gad2c1ad5c14192cec0c10508a99b53296">vtol_follower_control_altitude</a>(accelDesired.Down);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                stabDesired.Thrust = <a class="code" href="group___tau_labs_math.html#gae7fa5c4383337339fe17371cd78d7264">bound_min_max</a>(downCommand, 0, 1);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        }</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        </div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="comment">// Various ways to control the yaw that are essentially manual passthrough. However, because we do not have a fine</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="comment">// grained mechanism of manual setting the yaw as it normally would we need to duplicate that code here</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keywordflow">switch</span>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.YawMode) {</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_RATE:</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                <span class="comment">/* This is awkward.  This allows the transmitter to control the yaw while flying navigation */</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                stabDesired.Yaw = stabSet.ManualRate[STABILIZATIONSETTINGS_MANUALRATE_YAW] * manual_control_command.Yaw;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_RATE;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_AXISLOCK:</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                stabDesired.Yaw = stabSet.ManualRate[STABILIZATIONSETTINGS_MANUALRATE_YAW] * manual_control_command.Yaw;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_ATTITUDE:</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        {</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                stabDesired.Yaw = stabSet.YawMax * manual_control_command.Yaw;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        }</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_PATH:</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                <span class="comment">// Face forward on the path</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                VelocityDesiredData velocityDesired;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                VelocityDesiredGet(&amp;velocityDesired);</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                <span class="keywordtype">float</span> total_vel2 = velocityDesired.East*velocityDesired.East + velocityDesired.North*velocityDesired.North;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                <span class="keywordtype">float</span> path_direction = atan2f(velocityDesired.East, velocityDesired.North) * RAD2DEG;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                <span class="keywordflow">if</span> (total_vel2 &gt; 1) {</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                        stabDesired.Yaw = path_direction;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                        stabDesired.Yaw = 0;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_RATE;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                }</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        }</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordflow">case</span> VTOLPATHFOLLOWERSETTINGS_YAWMODE_POI:</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_POI;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        }</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        StabilizationDesiredSet(&amp;stabDesired);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;}</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">  552</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> threshold, <span class="keywordtype">float</span> expoPercent) {</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <span class="keywordflow">if</span> (input &gt; threshold) {</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                input -= threshold;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input &lt; -threshold) {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                input += threshold;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                input = 0;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        }</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="comment">/* Confine to desired range */</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="keywordflow">if</span> (input &gt; 1.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                input = 1.0f;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input &lt; -1.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                input = -1.0f;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        }</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___tau_labs_math.html#ga62c8aa7dba26285dc04c2bd181711ff5">expo3</a>(input, expoPercent);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;}</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00581"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">  581</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">vtol_follower_control_loiter</a>(<span class="keywordtype">float</span> dT, <span class="keywordtype">float</span> *hold_pos, <span class="keywordtype">float</span> *att_adj,</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                <span class="keywordtype">float</span> *alt_adj) {</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        LoiterCommandData <a class="code" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>;</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        LoiterCommandGet(&amp;cmd);</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <span class="comment">// XXX TODO reproject when we&#39;re not issuing body-centric commands</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keywordtype">float</span> commands_rp[2] = {</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;                cmd.Roll,</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                cmd.Pitch</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        };</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> CMD_THRESHOLD = 0.2f;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        input /= (1 - threshold);       <span class="comment">// Normalize to -1 to 1 range.</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="comment">/* Confine to desired range */</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordflow">if</span> (input &gt; 1.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                input = 1.0f;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input &lt; -1.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                input = -1.0f;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        }</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___tau_labs_math.html#ga62c8aa7dba26285dc04c2bd181711ff5">expo3</a>(input, expoPercent);</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;}</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">  583</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">vtol_follower_control_loiter</a>(<span class="keywordtype">float</span> dT, <span class="keywordtype">float</span> *hold_pos, <span class="keywordtype">float</span> *att_adj,</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                <span class="keywordtype">float</span> *alt_adj) {</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        LoiterCommandData <a class="code" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        LoiterCommandGet(&amp;cmd);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="comment">// XXX TODO reproject when we&#39;re not issuing body-centric commands</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordtype">float</span> commands_rp[2] = {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                cmd.Roll,</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                cmd.Pitch</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        };</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordtype">float</span> command_mag = <a class="code" href="group___tau_labs_math.html#ga620e572440496e3ca154909081f80ebc">vectorn_magnitude</a>(commands_rp, 2);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordtype">float</span> deadband_mag = <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(command_mag, CMD_THRESHOLD, 40);</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordtype">float</span> down_cmd = 0;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> CMD_THRESHOLD = 0.2f;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordtype">float</span> command_mag = <a class="code" href="group___tau_labs_math.html#ga620e572440496e3ca154909081f80ebc">vectorn_magnitude</a>(commands_rp, 2);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordtype">float</span> deadband_mag = <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(command_mag, CMD_THRESHOLD, 40);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.ThrottleControl &amp;&amp; </div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterAllowAltControl) {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <span class="comment">// Inverted because we want units in &quot;Down&quot; frame</span></div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                <span class="comment">// Doubled to recenter to 1 to -1 scale from 0-1.</span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                <span class="comment">// loiter_deadband clips appropriately.</span></div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                down_cmd = <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(1 - (cmd.Thrust * 2),</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                                <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.Deadband / 100.0f,</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                                <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.Expo);</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        }</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        </div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="comment">// Peak detect and decay of the past command magnitude</span></div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> historic_mag = 0.0f;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="comment">// Initialize altitude command</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        *alt_adj = 0;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="comment">// First reduce by decay constant</span></div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        historic_mag *= <a class="code" href="group___vtol_path_follower.html#ga26e67dbf59cc44ee583f49c2b1b9e35c">loiter_brakealpha</a>;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <span class="comment">// If our current magnitude is greater than the result, increase it.</span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keywordflow">if</span> (deadband_mag &gt; historic_mag) {</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                historic_mag = deadband_mag;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        }</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="comment">// And if we haven&#39;t had any significant command lately, bug out and</span></div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="comment">// do nothing.</span></div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="keywordflow">if</span> ((historic_mag &lt; 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) &amp;&amp; (fabsf(down_cmd) &lt; 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>)) {</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                att_adj[0] = 0;  att_adj[1] = 0;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        }</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="comment">// Normalize our command magnitude.  Command vectors from this</span></div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="comment">// point are normalized.</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">if</span> (command_mag &gt;= 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                commands_rp[0] /= command_mag;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                commands_rp[1] /= command_mag;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                <span class="comment">// Just pick a direction</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                commands_rp[0] = 0.0f;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                commands_rp[1] = -1.0f;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        }</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <span class="comment">// Find our current position error</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        PositionActualData positionActual;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        PositionActualGet(&amp;positionActual);</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keywordtype">float</span> cur_pos_ned[3] = { positionActual.North,</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                positionActual.East, positionActual.Down };</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <span class="keywordtype">float</span> total_poserr_ned[3];</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga776eeeaf240601aab0c3544a13116f8b">vector3_distances</a>(cur_pos_ned, hold_pos, total_poserr_ned, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">if</span> (deadband_mag &gt;= 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#a20d05d3afb0d30e228fd865aeb02cc0d">yaw</a>;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                AttitudeActualYawGet(&amp;yaw);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                <span class="keywordtype">float</span> commands_ne[2];</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                <span class="comment">// 90 degrees here compensates for the above being in roll-pitch</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                <span class="comment">// order vs. north-east (and where yaw is defined).</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                <a class="code" href="group___tau_labs_math.html#gac3abccd20807aab13249846171233abf">vector2_rotate</a>(commands_rp, commands_ne, 90 + yaw);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                VelocityActualData velocityActual;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                VelocityActualGet(&amp;velocityActual);</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                <span class="comment">// Come up with a target velocity for us to fly the command</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                <span class="comment">// at, considering our current momentum in that direction.</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                <span class="keywordtype">float</span> target_vel = <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterInitialMaxVel *</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                        deadband_mag;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                <span class="comment">// Plus whatever current velocity we&#39;re making good in</span></div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                <span class="comment">// that direction..</span></div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                <span class="comment">// find the portion of our current velocity vector parallel to</span></div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                <span class="comment">// cmd.</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <span class="keywordtype">float</span> parallel_sign =</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                        velocityActual.North * commands_ne[0] +</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                        velocityActual.East  * commands_ne[1];</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                <span class="keywordflow">if</span> (parallel_sign &gt; 0) {</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                        <span class="keywordtype">float</span> parallel_mag = sqrtf(</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                                powf(velocityActual.North * commands_ne[0], 2) +</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                                powf(velocityActual.East * commands_ne[1], 2));</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                        target_vel += deadband_mag * parallel_mag;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                }</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                <span class="comment">// Feed the target velocity forward for our new desired position</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                hold_pos[0] = cur_pos_ned[0] +</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                        commands_ne[0] * target_vel *</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterLookaheadTimeConstant;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                hold_pos[1] = cur_pos_ned[1] +</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                        commands_ne[1] * target_vel *</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterLookaheadTimeConstant;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        }</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="comment">// Now put a portion of the error back in.  At full stick</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="comment">// deflection, decay error at specified time constant</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordtype">float</span> scaled_error_alpha = 1 - historic_mag * (1 - <a class="code" href="group___vtol_path_follower.html#gabd99495c8858b7684b30c41baf131b3b">loiter_errordecayalpha</a>);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        hold_pos[0] -= scaled_error_alpha * total_poserr_ned[0];</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        hold_pos[1] -= scaled_error_alpha * total_poserr_ned[1];</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        </div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="comment">// Compute attitude feedforward</span></div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        att_adj[0] = deadband_mag * commands_rp[0] *</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterAttitudeFeedthrough;</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        att_adj[1] = deadband_mag * commands_rp[1] *</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keywordtype">float</span> down_cmd = 0;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.ThrottleControl &amp;&amp; </div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterAllowAltControl) {</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                <span class="comment">// Inverted because we want units in &quot;Down&quot; frame</span></div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                <span class="comment">// Doubled to recenter to 1 to -1 scale from 0-1.</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                <span class="comment">// loiter_deadband clips appropriately.</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                down_cmd = <a class="code" href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a>(1 - (cmd.Thrust * 2),</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                                <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.Deadband / 100.0f,</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                                <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.Expo);</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        }</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        </div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="comment">// Peak detect and decay of the past command magnitude</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> historic_mag = 0.0f;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="comment">// Initialize altitude command</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        *alt_adj = 0;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="comment">// First reduce by decay constant</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        historic_mag *= <a class="code" href="group___vtol_path_follower.html#ga26e67dbf59cc44ee583f49c2b1b9e35c">loiter_brakealpha</a>;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="comment">// If our current magnitude is greater than the result, increase it.</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <span class="keywordflow">if</span> (deadband_mag &gt; historic_mag) {</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                historic_mag = deadband_mag;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        }</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="comment">// And if we haven&#39;t had any significant command lately, bug out and</span></div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// do nothing.</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        <span class="keywordflow">if</span> ((historic_mag &lt; 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) &amp;&amp; (fabsf(down_cmd) &lt; 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>)) {</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                att_adj[0] = 0;  att_adj[1] = 0;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        }</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="comment">// Normalize our command magnitude.  Command vectors from this</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="comment">// point are normalized.</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">if</span> (command_mag &gt;= 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                commands_rp[0] /= command_mag;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                commands_rp[1] /= command_mag;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                <span class="comment">// Just pick a direction</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                commands_rp[0] = 0.0f;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                commands_rp[1] = -1.0f;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        }</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="comment">// Find our current position error</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        PositionActualData positionActual;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        PositionActualGet(&amp;positionActual);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordtype">float</span> cur_pos_ned[3] = { positionActual.North,</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                positionActual.East, positionActual.Down };</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="keywordtype">float</span> total_poserr_ned[3];</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga776eeeaf240601aab0c3544a13116f8b">vector3_distances</a>(cur_pos_ned, hold_pos, total_poserr_ned, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">if</span> (deadband_mag &gt;= 0.001<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>) {</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#a20d05d3afb0d30e228fd865aeb02cc0d">yaw</a>;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                AttitudeActualYawGet(&amp;yaw);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                <span class="keywordtype">float</span> commands_ne[2];</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                <span class="comment">// 90 degrees here compensates for the above being in roll-pitch</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                <span class="comment">// order vs. north-east (and where yaw is defined).</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                <a class="code" href="group___tau_labs_math.html#gac3abccd20807aab13249846171233abf">vector2_rotate</a>(commands_rp, commands_ne, 90 + yaw);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                VelocityActualData velocityActual;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                VelocityActualGet(&amp;velocityActual);</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                <span class="comment">// Come up with a target velocity for us to fly the command</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                <span class="comment">// at, considering our current momentum in that direction.</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                <span class="keywordtype">float</span> target_vel = <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterInitialMaxVel *</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                        deadband_mag;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                <span class="comment">// Plus whatever current velocity we&#39;re making good in</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                <span class="comment">// that direction..</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <span class="comment">// find the portion of our current velocity vector parallel to</span></div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                <span class="comment">// cmd.</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                <span class="keywordtype">float</span> parallel_sign =</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                        velocityActual.North * commands_ne[0] +</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                        velocityActual.East  * commands_ne[1];</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                <span class="keywordflow">if</span> (parallel_sign &gt; 0) {</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                        <span class="keywordtype">float</span> parallel_mag = sqrtf(</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                                powf(velocityActual.North * commands_ne[0], 2) +</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                                powf(velocityActual.East * commands_ne[1], 2));</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                        target_vel += deadband_mag * parallel_mag;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                }</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                <span class="comment">// Feed the target velocity forward for our new desired position</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                hold_pos[0] = cur_pos_ned[0] +</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                        commands_ne[0] * target_vel *</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterLookaheadTimeConstant;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                hold_pos[1] = cur_pos_ned[1] +</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                        commands_ne[1] * target_vel *</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                        <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterLookaheadTimeConstant;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        }</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="comment">// Now put a portion of the error back in.  At full stick</span></div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="comment">// deflection, decay error at specified time constant</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <span class="keywordtype">float</span> scaled_error_alpha = 1 - historic_mag * (1 - <a class="code" href="group___vtol_path_follower.html#gabd99495c8858b7684b30c41baf131b3b">loiter_errordecayalpha</a>);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        hold_pos[0] -= scaled_error_alpha * total_poserr_ned[0];</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        hold_pos[1] -= scaled_error_alpha * total_poserr_ned[1];</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        </div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="comment">// Compute attitude feedforward</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        att_adj[0] = deadband_mag * commands_rp[0] *</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterAttitudeFeedthrough;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        <span class="comment">// If we are being commanded to climb or descend...</span></div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="keywordflow">if</span> (fabsf(down_cmd) &gt;= 0.001f) {</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                <span class="comment">// Forgive all altitude error so when position controller comes</span></div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                <span class="comment">// back we do something sane</span></div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                hold_pos[2] = cur_pos_ned[2];</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        att_adj[1] = deadband_mag * commands_rp[1] *</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterAttitudeFeedthrough;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <span class="comment">// If we are being commanded to climb or descend...</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        <span class="keywordflow">if</span> (fabsf(down_cmd) &gt;= 0.001f) {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                <span class="comment">// Forgive all altitude error so when position controller comes</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                <span class="comment">// back we do something sane</span></div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                <span class="comment">// and output an adjustment for velocity control use</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                <span class="keywordflow">if</span> (down_cmd &lt; 0) { <span class="comment">/* climbing*/</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                        *alt_adj = down_cmd * <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.MaxClimbRate * 0.1f;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                } <span class="keywordflow">else</span> { <span class="comment">/* descending */</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                        *alt_adj = down_cmd * <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.MaxDescentRate * 0.1f;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                }</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        }</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;}</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
-<div class="line"><a name="l00723"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">  723</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">vtol_follower_control_settings_updated</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev,</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;{</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        (void) ctx; (void) obj; (void) len;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        VtolPathFollowerSettingsGet(&amp;<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                hold_pos[2] = cur_pos_ned[2];</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                <span class="comment">// and output an adjustment for velocity control use</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                <span class="keywordflow">if</span> (down_cmd &lt; 0) { <span class="comment">/* climbing*/</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                        *alt_adj = down_cmd * <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.MaxClimbRate * 0.1f;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                } <span class="keywordflow">else</span> { <span class="comment">/* descending */</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                        *alt_adj = down_cmd * <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.MaxDescentRate * 0.1f;</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                }</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        }</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;}</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno"><a class="line" href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">  725</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">vtol_follower_control_settings_updated</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev,</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;{</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        (void) ctx; (void) obj; (void) len;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <span class="comment">// Configure the velocity control PID loops</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ae45cff8467cdb386a31197540e5bdd56">NORTH_VELOCITY</a>],</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KP], <span class="comment">// Kp</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KI], <span class="comment">// Ki</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                0, <span class="comment">// Kd</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_ILIMIT]);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37aedb9ece820ccb3967caa3a880963724e">EAST_VELOCITY</a>],</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KP], <span class="comment">// Kp</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KI], <span class="comment">// Ki</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                0, <span class="comment">// Kd</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_ILIMIT]);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="comment">// Configure the position control (velocity output) PID loops</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a3f46558976ca7c653cc8c08475bcab2a">NORTH_POSITION</a>],</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KP],</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KI],</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                0,</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_ILIMIT]);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a16d8665516d2ff93c39520ff3a7aaa10">EAST_POSITION</a>],</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KP],</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KI],</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                0,</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_ILIMIT]);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="comment">// The parameters for vertical control are shared with Altitude Hold</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        AltitudeHoldSettingsGet(&amp;<a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a545c2f2e31b041e3c0dec80772eacc04">DOWN_POSITION</a>], <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.PositionKp, 0, 0, 0);</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ac40aaeb4635693d0cf03af8e9372708d">DOWN_VELOCITY</a>],</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                      <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.VelocityKp, <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.VelocityKi,</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                      0, 1);  <span class="comment">// Note the ILimit here is 1 because we use this offset to set the throttle offset</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="comment">// Calculate the constants used in the deadband calculation</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <a class="code" href="group___tau_labs_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.EndpointDeadbandWidth,</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.EndpointDeadbandCenterGain,</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            &amp;<a class="code" href="group___vtol_path_follower.html#gaa2575889d62976c0b13458f85f23458c">vtol_end_m</a>, &amp;<a class="code" href="group___vtol_path_follower.html#ga2fa90306327b02b68b72ee525a894866">vtol_end_r</a>);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <a class="code" href="group___tau_labs_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.PathDeadbandWidth,</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;            <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.PathDeadbandCenterGain,</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            &amp;<a class="code" href="group___vtol_path_follower.html#ga605ad82c6f555d6cbf17d4b80112f615">vtol_path_m</a>, &amp;<a class="code" href="group___vtol_path_follower.html#ga7da7c056e8fad13dc9b31d51ad2caa8c">vtol_path_r</a>);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="comment">// calculate the loiter time constants.</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <a class="code" href="group___vtol_path_follower.html#ga26e67dbf59cc44ee583f49c2b1b9e35c">loiter_brakealpha</a> = expf(-(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.UpdatePeriod / 1000.0f) / <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterBrakingTimeConstant);</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        <a class="code" href="group___vtol_path_follower.html#gabd99495c8858b7684b30c41baf131b3b">loiter_errordecayalpha</a> = expf(-(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.UpdatePeriod / 1000.0f) / <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterErrorDecayConstant);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;}</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        VtolPathFollowerSettingsGet(&amp;<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>);</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <span class="comment">// Configure the velocity control PID loops</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ae45cff8467cdb386a31197540e5bdd56">NORTH_VELOCITY</a>],</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KP], <span class="comment">// Kp</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KI], <span class="comment">// Ki</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                0, <span class="comment">// Kd</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_ILIMIT]);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37aedb9ece820ccb3967caa3a880963724e">EAST_VELOCITY</a>],</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KP], <span class="comment">// Kp</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_KI], <span class="comment">// Ki</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                0, <span class="comment">// Kd</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalVelPID[VTOLPATHFOLLOWERSETTINGS_HORIZONTALVELPID_ILIMIT]);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="comment">// Configure the position control (velocity output) PID loops</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a3f46558976ca7c653cc8c08475bcab2a">NORTH_POSITION</a>],</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KP],</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KI],</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                0,</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_ILIMIT]);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a16d8665516d2ff93c39520ff3a7aaa10">EAST_POSITION</a>],</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KP],</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_KI],</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                0,</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.HorizontalPosPI[VTOLPATHFOLLOWERSETTINGS_HORIZONTALPOSPI_ILIMIT]);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="comment">// The parameters for vertical control are shared with Altitude Hold</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        AltitudeHoldSettingsGet(&amp;<a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a545c2f2e31b041e3c0dec80772eacc04">DOWN_POSITION</a>], <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.PositionKp, 0, 0, 0);</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a>(&amp;<a class="code" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a>[<a class="code" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ac40aaeb4635693d0cf03af8e9372708d">DOWN_VELOCITY</a>],</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                      <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.VelocityKp, <a class="code" href="group___vtol_path_follower.html#ga833d8e0c875a93fc327dae79b3a4fea4">altitudeHoldSettings</a>.VelocityKi,</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                      0, 1);  <span class="comment">// Note the ILimit here is 1 because we use this offset to set the throttle offset</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="comment">// Calculate the constants used in the deadband calculation</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <a class="code" href="group___tau_labs_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.EndpointDeadbandWidth,</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;            <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.EndpointDeadbandCenterGain,</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            &amp;<a class="code" href="group___vtol_path_follower.html#gaa2575889d62976c0b13458f85f23458c">vtol_end_m</a>, &amp;<a class="code" href="group___vtol_path_follower.html#ga2fa90306327b02b68b72ee525a894866">vtol_end_r</a>);</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <a class="code" href="group___tau_labs_math.html#gaf4065716661678ffdbf9b3a191c55a76">cubic_deadband_setup</a>(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.PathDeadbandWidth,</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;            <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.PathDeadbandCenterGain,</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            &amp;<a class="code" href="group___vtol_path_follower.html#ga605ad82c6f555d6cbf17d4b80112f615">vtol_path_m</a>, &amp;<a class="code" href="group___vtol_path_follower.html#ga7da7c056e8fad13dc9b31d51ad2caa8c">vtol_path_r</a>);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        <span class="comment">// calculate the loiter time constants.</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <a class="code" href="group___vtol_path_follower.html#ga26e67dbf59cc44ee583f49c2b1b9e35c">loiter_brakealpha</a> = expf(-(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.UpdatePeriod / 1000.0f) / <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterBrakingTimeConstant);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        <a class="code" href="group___vtol_path_follower.html#gabd99495c8858b7684b30c41baf131b3b">loiter_errordecayalpha</a> = expf(-(<a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.UpdatePeriod / 1000.0f) / <a class="code" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a>.LoiterErrorDecayConstant);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;}</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
 <div class="ttc" id="group___vtol_path_follower_html_gad21b62e5d1e75c1b856e79bad01a3162"><div class="ttname"><a href="group___vtol_path_follower.html#gad21b62e5d1e75c1b856e79bad01a3162">vtol_follower_control_accel</a></div><div class="ttdeci">static int32_t vtol_follower_control_accel(float dT)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00342">vtol_follower_control.c:342</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6"><div class="ttname"><a href="group___tau_labs_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6">interpolate_value</a></div><div class="ttdeci">float interpolate_value(const float fraction, const float beginVal, const float endVal)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00145">misc_math.c:145</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga228f486906a1318fad1f4f86e1328502"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga228f486906a1318fad1f4f86e1328502">pathDesired</a></div><div class="ttdeci">static PathDesiredData pathDesired</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00088">fixedwingpathfollower.c:88</a></div></div>
@@ -837,10 +839,10 @@ $(document).ready(function(){initNavTree('vtol__follower__control_8c_source.html
 <div class="ttc" id="msp__messages_8h_html_a20d05d3afb0d30e228fd865aeb02cc0d"><div class="ttname"><a href="msp__messages_8h.html#a20d05d3afb0d30e228fd865aeb02cc0d">yaw</a></div><div class="ttdeci">struct _msp_pid_item yaw</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00098">msp_messages.h:98</a></div></div>
 <div class="ttc" id="vtol__follower__priv_8h_html"><div class="ttname"><a href="vtol__follower__priv_8h.html">vtol_follower_priv.h</a></div><div class="ttdoc">Includes for the internal methods. </div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga9ee523815da74e83a8bf8eac7614033c"><div class="ttname"><a href="group___tau_labs_math.html#ga9ee523815da74e83a8bf8eac7614033c">cubic_deadband</a></div><div class="ttdeci">float cubic_deadband(float in, float w, float b, float m, float r)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00246">misc_math.c:246</a></div></div>
-<div class="ttc" id="group___vtol_path_follower_html_ga5e66d16b252c7eb235b845dca9216d66"><div class="ttname"><a href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">vtol_follower_control_loiter</a></div><div class="ttdeci">bool vtol_follower_control_loiter(float dT, float *hold_pos, float *att_adj, float *alt_adj)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00581">vtol_follower_control.c:581</a></div></div>
+<div class="ttc" id="group___vtol_path_follower_html_ga5e66d16b252c7eb235b845dca9216d66"><div class="ttname"><a href="group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66">vtol_follower_control_loiter</a></div><div class="ttdeci">bool vtol_follower_control_loiter(float dT, float *hold_pos, float *att_adj, float *alt_adj)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00583">vtol_follower_control.c:583</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gaa6bafbb8b675e10947b8c78a7b171e92"><div class="ttname"><a href="group___tau_labs_libraries.html#gaa6bafbb8b675e10947b8c78a7b171e92">path_progress</a></div><div class="ttdeci">void path_progress(const PathDesiredData *pathDesired, const float *cur_point, struct path_status *status)</div><div class="ttdoc">Compute progress along path and deviation from it. </div><div class="ttdef"><b>Definition:</b> <a href="paths_8c_source.html#l00062">paths.c:62</a></div></div>
 <div class="ttc" id="coordinate__conversions_8h_html"><div class="ttname"><a href="coordinate__conversions_8h.html">coordinate_conversions.h</a></div><div class="ttdoc">Header for Coordinate conversions library in coordinate_conversions.c. </div></div>
-<div class="ttc" id="group___vtol_path_follower_html_ga1fb5bf24111b36b2c0c37f1f749d06d8"><div class="ttname"><a href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a></div><div class="ttdeci">static float loiter_deadband(float input, float threshold, float expoPercent)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00550">vtol_follower_control.c:550</a></div></div>
+<div class="ttc" id="group___vtol_path_follower_html_ga1fb5bf24111b36b2c0c37f1f749d06d8"><div class="ttname"><a href="group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8">loiter_deadband</a></div><div class="ttdeci">static float loiter_deadband(float input, float threshold, float expoPercent)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00552">vtol_follower_control.c:552</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_gab53f96ff60025bfea084300f2cec575e"><div class="ttname"><a href="group___tau_labs_math.html#gab53f96ff60025bfea084300f2cec575e">bound_sym</a></div><div class="ttdeci">float bound_sym(float val, float range)</div><div class="ttdoc">Bound input value within range (plus or minus) </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00050">misc_math.c:50</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ga62dfc94c1c12214c2749889b28b6d730"><div class="ttname"><a href="group___vtol_path_follower.html#ga62dfc94c1c12214c2749889b28b6d730">vtol_follower_control_path</a></div><div class="ttdeci">int32_t vtol_follower_control_path(const float dT, const PathDesiredData *pathDesired, struct path_status *progress)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00086">vtol_follower_control.c:86</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga01f26a319e659b2b74a32a52a4a88f95"><div class="ttname"><a href="group___tau_labs_math.html#ga01f26a319e659b2b74a32a52a4a88f95">pid_configure</a></div><div class="ttdeci">void pid_configure(struct pid *pid, float p, float i, float d, float iLim)</div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00199">pid.c:199</a></div></div>
@@ -851,7 +853,7 @@ $(document).ready(function(){initNavTree('vtol__follower__control_8c_source.html
 <div class="ttc" id="group___vtol_path_follower_html_gaaa3c990895862af8f8ec7333c25dd444"><div class="ttname"><a href="group___vtol_path_follower.html#gaaa3c990895862af8f8ec7333c25dd444">vtol_follower_control_impl</a></div><div class="ttdeci">static int32_t vtol_follower_control_impl(const float dT, const float *hold_pos_ned, float alt_rate, bool update_status)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00193">vtol_follower_control.c:193</a></div></div>
 <div class="ttc" id="structpath__status_html_a0931fd2d5f90e4103b4096bae764ca86"><div class="ttname"><a href="structpath__status.html#a0931fd2d5f90e4103b4096bae764ca86">path_status::correction_direction</a></div><div class="ttdeci">float correction_direction[2]</div><div class="ttdef"><b>Definition:</b> <a href="paths_8h_source.html#l00039">paths.h:39</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ga26e67dbf59cc44ee583f49c2b1b9e35c"><div class="ttname"><a href="group___vtol_path_follower.html#ga26e67dbf59cc44ee583f49c2b1b9e35c">loiter_brakealpha</a></div><div class="ttdeci">static float loiter_brakealpha</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00072">vtol_follower_control.c:72</a></div></div>
-<div class="ttc" id="group___vtol_path_follower_html_ga11c00ff1937f75fc54067a5e4a7e9631"><div class="ttname"><a href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">vtol_follower_control_settings_updated</a></div><div class="ttdeci">void vtol_follower_control_settings_updated(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00723">vtol_follower_control.c:723</a></div></div>
+<div class="ttc" id="group___vtol_path_follower_html_ga11c00ff1937f75fc54067a5e4a7e9631"><div class="ttname"><a href="group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631">vtol_follower_control_settings_updated</a></div><div class="ttdeci">void vtol_follower_control_settings_updated(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00725">vtol_follower_control.c:725</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ggaa1cc793c473ad52ad906c7feecdb3a37a545c2f2e31b041e3c0dec80772eacc04"><div class="ttname"><a href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a545c2f2e31b041e3c0dec80772eacc04">DOWN_POSITION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__priv_8h_source.html#l00055">vtol_follower_priv.h:55</a></div></div>
 <div class="ttc" id="group___vtol_path_follower_html_ga583ee7430798aa3c1ab1014d060ab66d"><div class="ttname"><a href="group___vtol_path_follower.html#ga583ee7430798aa3c1ab1014d060ab66d">vtol_follower_control_altrate</a></div><div class="ttdeci">int32_t vtol_follower_control_altrate(const float dT, const float *hold_pos_ned, float alt_adj)</div><div class="ttdef"><b>Definition:</b> <a href="vtol__follower__control_8c_source.html#l00331">vtol_follower_control.c:331</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_gac3abccd20807aab13249846171233abf"><div class="ttname"><a href="group___tau_labs_math.html#gac3abccd20807aab13249846171233abf">vector2_rotate</a></div><div class="ttdeci">void vector2_rotate(const float *original, float *out, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8c_source.html#l00225">misc_math.c:225</a></div></div>

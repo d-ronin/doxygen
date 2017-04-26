@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -697,61 +697,62 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="comment">// TODO implement raw control mode for yaw and base on Accels.Y</span></div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        stabDesired.Yaw = 0;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_MANUAL;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        </div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> (isnan(stabDesired.Roll) || isnan(stabDesired.Pitch) || isnan(stabDesired.Yaw) || isnan(stabDesired.Thrust)) {</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#gaa7e21f740c7666d911929ea1580e57b0">northVelIntegral</a> = 0;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#gac5bce169f17129ca6a0f5fed4faa5b63">eastVelIntegral</a> = 0;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga8e7eeae8e29fc722997bbffe8de08186">downVelIntegral</a> = 0;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga91cebd195b07cac8bc744870fe6dc9d6">bearingIntegral</a> = 0;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga29e8013790f71be445feecfd73ff7278">speedIntegral</a> = 0;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga5c47e43d90fc8fbf9c5e7adfb6e36f2b">accelIntegral</a> = 0;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga1df7dfa2725b5fa43956428737825b61">powerIntegral</a> = 0;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga459995ad471ffc8c2b4dcfb263a92402">airspeedErrorInt</a> = 0;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                result = 0;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                StabilizationDesiredSet(&amp;stabDesired);</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        }</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        FixedWingPathFollowerStatusSet(&amp;fixedwingpathfollowerStatus);</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;}</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
-<div class="line"><a name="l00687"></a><span class="lineno"><a class="line" href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">  687</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">SettingsUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev, <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;{</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        (void) ctx; (void) obj; (void) len;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keywordflow">if</span> (ev == NULL || ev-&gt;<a class="code" href="struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232">obj</a> == FixedWingPathFollowerSettingsHandle())</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                FixedWingPathFollowerSettingsGet(&amp;<a class="code" href="group___fixed_wing_path_follower.html#gad59c2316458be21be87ec11fa497b8fb">fixedwingpathfollowerSettings</a>);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="keywordflow">if</span> (ev == NULL || ev-&gt;<a class="code" href="struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232">obj</a> == FixedWingAirspeedsHandle())</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                FixedWingAirspeedsGet(&amp;<a class="code" href="group___fixed_wing_path_follower.html#ga4a4054359f9e729bdee5628db91630e6">fixedWingAirspeeds</a>);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;}</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
-<div class="line"><a name="l00697"></a><span class="lineno"><a class="line" href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">  697</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">airspeedActualUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev, <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj,</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;{</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        (void) ctx;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        AirspeedActualData airspeedActual;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        AirspeedActualGet(&amp;airspeedActual);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        VelocityActualData velocityActual;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        VelocityActualGet(&amp;velocityActual);</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a> = sqrtf(velocityActual.East*velocityActual.East + velocityActual.North*velocityActual.North );</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <a class="code" href="group___fixed_wing_path_follower.html#ga3e607e4ceecf2c8a0ea02d51eb653679">indicatedAirspeedActualBias</a> = airspeedActual.CalibratedAirspeed - <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        <span class="comment">// note - we do fly by Indicated Airspeed (== calibrated airspeed)</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="comment">// however since airspeed is updated less often than groundspeed, we use sudden changes to groundspeed to offset the airspeed by the same measurement.</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        stabDesired.ReprojectionMode = STABILIZATIONDESIRED_REPROJECTIONMODE_NONE;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        stabDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_MANUAL;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        </div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keywordflow">if</span> (isnan(stabDesired.Roll) || isnan(stabDesired.Pitch) || isnan(stabDesired.Yaw) || isnan(stabDesired.Thrust)) {</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#gaa7e21f740c7666d911929ea1580e57b0">northVelIntegral</a> = 0;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#gac5bce169f17129ca6a0f5fed4faa5b63">eastVelIntegral</a> = 0;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga8e7eeae8e29fc722997bbffe8de08186">downVelIntegral</a> = 0;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga91cebd195b07cac8bc744870fe6dc9d6">bearingIntegral</a> = 0;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga29e8013790f71be445feecfd73ff7278">speedIntegral</a> = 0;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga5c47e43d90fc8fbf9c5e7adfb6e36f2b">accelIntegral</a> = 0;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga1df7dfa2725b5fa43956428737825b61">powerIntegral</a> = 0;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                <a class="code" href="group___fixed_wing_path_follower.html#ga459995ad471ffc8c2b4dcfb263a92402">airspeedErrorInt</a> = 0;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                result = 0;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                StabilizationDesiredSet(&amp;stabDesired);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        }</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        FixedWingPathFollowerStatusSet(&amp;fixedwingpathfollowerStatus);</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;}</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno"><a class="line" href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">  688</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">SettingsUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev, <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;{</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        (void) ctx; (void) obj; (void) len;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="keywordflow">if</span> (ev == NULL || ev-&gt;<a class="code" href="struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232">obj</a> == FixedWingPathFollowerSettingsHandle())</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                FixedWingPathFollowerSettingsGet(&amp;<a class="code" href="group___fixed_wing_path_follower.html#gad59c2316458be21be87ec11fa497b8fb">fixedwingpathfollowerSettings</a>);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">if</span> (ev == NULL || ev-&gt;<a class="code" href="struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232">obj</a> == FixedWingAirspeedsHandle())</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                FixedWingAirspeedsGet(&amp;<a class="code" href="group___fixed_wing_path_follower.html#ga4a4054359f9e729bdee5628db91630e6">fixedWingAirspeeds</a>);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;}</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno"><a class="line" href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">  698</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">airspeedActualUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * ev, <span class="keywordtype">void</span> *ctx, <span class="keywordtype">void</span> *obj,</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;{</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        (void) ctx;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        AirspeedActualData airspeedActual;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        AirspeedActualGet(&amp;airspeedActual);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        VelocityActualData velocityActual;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        VelocityActualGet(&amp;velocityActual);</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a> = sqrtf(velocityActual.East*velocityActual.East + velocityActual.North*velocityActual.North );</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        </div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        <a class="code" href="group___fixed_wing_path_follower.html#ga3e607e4ceecf2c8a0ea02d51eb653679">indicatedAirspeedActualBias</a> = airspeedActual.CalibratedAirspeed - <a class="code" href="pios__crossfire_8h.html#aefe7b920a104fa8e2a7076850709242e">groundspeed</a>;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="comment">// note - we do fly by Indicated Airspeed (== calibrated airspeed)</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <span class="comment">// however since airspeed is updated less often than groundspeed, we use sudden changes to groundspeed to offset the airspeed by the same measurement.</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;}</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga82dd0a9ae27bdb2c3cdd33bb7804861c"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a></div><div class="ttdeci">#define TASK_PRIORITY</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00082">fixedwingpathfollower.c:82</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_gac5bce169f17129ca6a0f5fed4faa5b63"><div class="ttname"><a href="group___fixed_wing_path_follower.html#gac5bce169f17129ca6a0f5fed4faa5b63">eastVelIntegral</a></div><div class="ttdeci">static float eastVelIntegral</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00161">fixedwingpathfollower.c:161</a></div></div>
@@ -769,7 +770,7 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga624a73c94097228b0ccede0442c66d7d"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga624a73c94097228b0ccede0442c66d7d">pathStatus</a></div><div class="ttdeci">static PathStatusData pathStatus</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00089">fixedwingpathfollower.c:89</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00088">pios_sensors.h:88</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga70ec904c96166982bcc61ede7e6a0f4f"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga70ec904c96166982bcc61ede7e6a0f4f">FixedWingPathFollowerStart</a></div><div class="ttdeci">int32_t FixedWingPathFollowerStart()</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00104">fixedwingpathfollower.c:104</a></div></div>
-<div class="ttc" id="group___fixed_wing_path_follower_html_gae162341dc76d7653ff0dd87db296fc33"><div class="ttname"><a href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">SettingsUpdatedCb</a></div><div class="ttdeci">static void SettingsUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00687">fixedwingpathfollower.c:687</a></div></div>
+<div class="ttc" id="group___fixed_wing_path_follower_html_gae162341dc76d7653ff0dd87db296fc33"><div class="ttname"><a href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">SettingsUpdatedCb</a></div><div class="ttdeci">static void SettingsUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00688">fixedwingpathfollower.c:688</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga8ccb5c30c6fb87d076c41d1b5f472a5d"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga8ccb5c30c6fb87d076c41d1b5f472a5d">updateFixedDesiredAttitude</a></div><div class="ttdeci">static uint8_t updateFixedDesiredAttitude()</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00415">fixedwingpathfollower.c:415</a></div></div>
 <div class="ttc" id="struct_u_a_v_obj_event_html_a716555d74d08184a3807881d9ade9232"><div class="ttname"><a href="struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232">UAVObjEvent::obj</a></div><div class="ttdeci">UAVObjHandle obj</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00118">uavobjectmanager.h:118</a></div></div>
 <div class="ttc" id="struct_u_a_v_obj_event_html"><div class="ttname"><a href="struct_u_a_v_obj_event.html">UAVObjEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00117">uavobjectmanager.h:117</a></div></div>
@@ -803,7 +804,7 @@ $(document).ready(function(){initNavTree('fixedwingpathfollower_8c_source.html',
 <div class="ttc" id="group___fixed_wing_path_follower_html_gad59c2316458be21be87ec11fa497b8fb"><div class="ttname"><a href="group___fixed_wing_path_follower.html#gad59c2316458be21be87ec11fa497b8fb">fixedwingpathfollowerSettings</a></div><div class="ttdeci">static FixedWingPathFollowerSettingsData fixedwingpathfollowerSettings</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00090">fixedwingpathfollower.c:90</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga866a93431f322ad04c66f56dcf589fa3"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga866a93431f322ad04c66f56dcf589fa3">updatePathVelocity</a></div><div class="ttdeci">static void updatePathVelocity()</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00346">fixedwingpathfollower.c:346</a></div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga199fcee97cd90f6dacc6eb22cc6f9125"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga199fcee97cd90f6dacc6eb22cc6f9125">pathfollowerTaskHandle</a></div><div class="ttdeci">static struct pios_thread * pathfollowerTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00087">fixedwingpathfollower.c:87</a></div></div>
-<div class="ttc" id="group___fixed_wing_path_follower_html_ga028d9b98e95dc6ed7ea746389557a036"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">airspeedActualUpdatedCb</a></div><div class="ttdeci">static void airspeedActualUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00697">fixedwingpathfollower.c:697</a></div></div>
+<div class="ttc" id="group___fixed_wing_path_follower_html_ga028d9b98e95dc6ed7ea746389557a036"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga028d9b98e95dc6ed7ea746389557a036">airspeedActualUpdatedCb</a></div><div class="ttdeci">static void airspeedActualUpdatedCb(UAVObjEvent *ev, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00698">fixedwingpathfollower.c:698</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a13a6109e91ad12705df96a0f2743c630"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a></div><div class="ttdeci">enum arena_state state</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00073">pios_flashfs_logfs.c:73</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

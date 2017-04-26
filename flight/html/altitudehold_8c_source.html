@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8a8184b</span>
+   &#160;<span id="projectnumber">ce1dd58</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -337,27 +337,29 @@ $(document).ready(function(){initNavTree('altitudehold_8c_source.html','');});
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                        stabilizationDesired.Thrust = <a class="code" href="group___tau_labs_math.html#gae7fa5c4383337339fe17371cd78d7264">bound_min_max</a>(throttle_desired, min_throttle, 1.0<a class="code" href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">f</a>);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        <span class="keywordflow">if</span> (landing) {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                stabilizationDesired.Roll = 0;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                stabilizationDesired.Pitch = 0;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                stabilizationDesired.Yaw = 0;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                stabilizationDesired.Roll = altitudeHoldDesired.Roll;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                stabilizationDesired.Pitch = altitudeHoldDesired.Pitch;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                stabilizationDesired.Yaw = altitudeHoldDesired.Yaw;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        StabilizationDesiredSet(&amp;stabilizationDesired);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        stabilizationDesired.ReprojectionMode = STABILIZATIONDESIRED_REPROJECTIONMODE_NONE;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        <span class="keywordflow">if</span> (landing) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                stabilizationDesired.Roll = 0;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                stabilizationDesired.Pitch = 0;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                stabilizationDesired.Yaw = 0;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_ROLL] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_PITCH] = STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                stabilizationDesired.StabilizationMode[STABILIZATIONDESIRED_STABILIZATIONMODE_YAW] = STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                stabilizationDesired.Roll = altitudeHoldDesired.Roll;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                stabilizationDesired.Pitch = altitudeHoldDesired.Pitch;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                stabilizationDesired.Yaw = altitudeHoldDesired.Yaw;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        StabilizationDesiredSet(&amp;stabilizationDesired);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_gad0eb20f09635f32f75dcb6c5430b8764"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a></div><div class="ttdeci">uint32_t PIOS_DELAY_DiffuS(uint32_t raw)</div><div class="ttdoc">Subtract raw time from now and convert to us. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00159">pios_delay.c:159</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gab4fa3fb0ef3763252dd61b06ae6d12ca"><div class="ttname"><a href="group___tau_labs_libraries.html#gab4fa3fb0ef3763252dd61b06ae6d12ca">TaskMonitorAdd</a></div><div class="ttdeci">int32_t TaskMonitorAdd(TaskInfoRunningElem task, struct pios_thread *threadp)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00062">taskmonitor.c:62</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>

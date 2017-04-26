@@ -78,7 +78,6 @@ var searchData=
   ['use_5f0x76_5faddress',['use_0x76_address',['../structpios__ms5611__cfg.html#ad9d5a4c47ece6925883d165c2ec35098',1,'pios_ms5611_cfg']]],
   ['use_5fbaro_5fsensor',['use_baro_sensor',['../structfrsky__settings.html#ae1624ce1635ed7769f2d3efd96d46d0d',1,'frsky_settings']]],
   ['use_5fcurrent_5fsensor',['use_current_sensor',['../structfrsky__settings.html#ac75a36d378a67390087d0583a8c2242b',1,'frsky_settings']]],
-  ['use_5fmagnetometer',['use_magnetometer',['../structpios__mpu9250__cfg.html#a8a2133c44ec6698f30a93c691334f3d6',1,'pios_mpu9250_cfg']]],
   ['use_5fmpu_5fmag',['use_mpu_mag',['../group___p_i_o_s___m_p_u60_x0.html#ga5992d3ea2ba9540f5984ff652087c851',1,'pios_mpu60x0.h']]],
   ['use_5freal_5fsensors',['use_real_sensors',['../group___sensors.html#ga5eeff3da45a87067d0720659756e3a36',1,'simsensors.c']]],
   ['user_5fcallbacks',['user_callbacks',['../group___p_i_o_s___u_s_b_h_o_o_k.html#gaf0639d3acf09f14bf9f956c29043a0e0',1,'pios_usbhook.c']]],

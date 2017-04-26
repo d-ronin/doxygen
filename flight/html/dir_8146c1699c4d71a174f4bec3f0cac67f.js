@@ -5,6 +5,7 @@ var dir_8146c1699c4d71a174f4bec3f0cac67f =
     [ "pios_annunc.c", "_s_t_m32_2pios__annunc_8c.html", null ],
     [ "pios_debug.c", "_s_t_m32_2pios__debug_8c.html", "_s_t_m32_2pios__debug_8c" ],
     [ "pios_delay.c", "_s_t_m32_2pios__delay_8c.html", "_s_t_m32_2pios__delay_8c" ],
+    [ "pios_exti.c", "pios__exti_8c.html", null ],
     [ "pios_irq.c", "_s_t_m32_2pios__irq_8c.html", "_s_t_m32_2pios__irq_8c" ],
     [ "pios_ppm.c", "pios__ppm_8c.html", null ],
     [ "pios_pwm.c", "pios__pwm_8c.html", null ],
