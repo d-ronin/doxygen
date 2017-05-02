@@ -1,5 +1,12 @@
 var NAVTREEINDEX127 =
 {
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga5c6ed92207820d514741140f5dec7f8a":[5,0,0,4,10,1,2,32],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43":[5,0,0,4,10,1,2,12],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga5eae9194437f23b68678de2ba9d9ce4a":[5,0,0,4,10,1,2,18],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga62e300631856e0c56b1c9b3cbcf5621d":[5,0,0,4,10,1,2,1],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga6ac74d56f67f74f449b252c6ba6bbd61":[5,0,0,4,10,1,2,16],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga7faa93f4a0aaaeeff604e8207d1531c2":[5,0,0,4,10,1,2,17],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[5,0,0,4,10,1,2,7],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga86167cdf7eaace383bf74d35f23cb49e":[5,0,0,4,10,1,2,38],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9":[5,0,0,4,10,1,2,10],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga89e68cdd07ab84568fe168af24311299":[5,0,0,4,10,1,2,27],
@@ -242,12 +249,5 @@ var NAVTREEINDEX127 =
 "targets_2revolution_2board-info_2pios__board_8h.html#gaba34640b239b01884e1a4b0b3fe16c31":[5,0,0,4,12,1,2,59],
 "targets_2revolution_2board-info_2pios__board_8h.html#gabdefeb92517c08b2db19b764db941de9":[5,0,0,4,12,1,2,60],
 "targets_2revolution_2board-info_2pios__board_8h.html#gabed34fab9b2b2c4c92ecc825c75c9244":[5,0,0,4,12,1,2,47],
-"targets_2revolution_2board-info_2pios__board_8h.html#gabf39f1bc59b5af7e8f138bb394770300":[5,0,0,4,12,1,2,18],
-"targets_2revolution_2board-info_2pios__board_8h.html#gac040f05fa048688ee0269c2768698a14":[5,0,0,4,12,1,2,54],
-"targets_2revolution_2board-info_2pios__board_8h.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[5,0,0,4,12,1,2,48],
-"targets_2revolution_2board-info_2pios__board_8h.html#gacc9b34fbd61773571dbe45ac3a3ca081":[5,0,0,4,12,1,2,12],
-"targets_2revolution_2board-info_2pios__board_8h.html#gacd240b3acb49442511a220647c7d2e4f":[5,0,0,4,12,1,2,8],
-"targets_2revolution_2board-info_2pios__board_8h.html#gad2e5852f07d75f8f0720d7f228393da9":[5,0,0,4,12,1,2,22],
-"targets_2revolution_2board-info_2pios__board_8h.html#gad59135d54dcccdf2854a3b39fb0494f5":[5,0,0,4,12,1,2,20],
-"targets_2revolution_2board-info_2pios__board_8h.html#gad6409f51ab61c676f1a82e4d50b1fd68":[5,0,0,4,12,1,2,13]
+"targets_2revolution_2board-info_2pios__board_8h.html#gabf39f1bc59b5af7e8f138bb394770300":[5,0,0,4,12,1,2,18]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX113 =
 {
+"sensors_8c.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[5,0,0,2,21,1,4],
+"sensors_8c.html#ga8525532dd6297d63bac79a149300e0eb":[5,0,0,2,21,1,17],
+"sensors_8c.html#ga855e990099b8d78fb6be1598dd69ccfe":[5,0,0,2,21,1,11],
+"sensors_8c.html#ga85f4f54258c7666b4feadb94bbefb0ee":[5,0,0,2,21,1,32],
+"sensors_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[5,0,0,2,21,1,3],
+"sensors_8c.html#ga8eb684c424469466e72c0bbfb506e458":[5,0,0,2,21,1,2],
 "sensors_8c.html#ga9ac885eb5f47362f09dc7585258027b3":[5,0,0,2,21,1,30],
 "sensors_8c.html#gaa0cc6e928facbb4ec97986ab47398fb5":[5,0,0,2,21,1,35],
 "sensors_8c.html#gaa0ed77fef94661b3f71152ff2cd735b6":[5,0,0,2,21,1,12],
@@ -53,8 +59,8 @@ var NAVTREEINDEX113 =
 "seppuku_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,13,1,3,11],
 "seppuku_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,4,13,1,3,12],
 "seppuku_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,4,13,1,3,7],
-"seppuku_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,13,1,3,10],
 "seppuku_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,13,1,3,9],
+"seppuku_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,13,1,3,10],
 "seppuku_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,4,13,1,3,6],
 "seppuku_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,4,13,1,3,0],
 "seppuku_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,4,13,1,3,8],
@@ -243,11 +249,5 @@ var NAVTREEINDEX113 =
 "seppuku_2fw_2mcuconf_8h.html#gad73fb3ae5b2aca05e0f5155cff7a8b2d":[5,0,0,4,13,2,0,76],
 "seppuku_2fw_2mcuconf_8h.html#gad94c4a0da6c8c7a3d0b800fdc0dbebfa":[5,0,0,4,13,2,0,59],
 "seppuku_2fw_2mcuconf_8h.html#gad9cad374b91eaa3e5ff2a68319d1721a":[5,0,0,4,13,2,0,48],
-"seppuku_2fw_2mcuconf_8h.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[5,0,0,4,13,2,0,193],
-"seppuku_2fw_2mcuconf_8h.html#gada1164056ea271b26c923140f69ace87":[5,0,0,4,13,2,0,106],
-"seppuku_2fw_2mcuconf_8h.html#gadae68423fc725ae1da125e4929e6de73":[5,0,0,4,13,2,0,64],
-"seppuku_2fw_2mcuconf_8h.html#gadc27d1e2fcdedcb56fc15a41e5f43d91":[5,0,0,4,13,2,0,113],
-"seppuku_2fw_2mcuconf_8h.html#gaddcd7b72b6811260a2a9a6ce03756b29":[5,0,0,4,13,2,0,98],
-"seppuku_2fw_2mcuconf_8h.html#gae32ac88b3b64552f9ecec5a038dfc544":[5,0,0,4,13,2,0,189],
-"seppuku_2fw_2mcuconf_8h.html#gae4258a650515c19e5df92b5917399195":[5,0,0,4,13,2,0,169]
+"seppuku_2fw_2mcuconf_8h.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[5,0,0,4,13,2,0,193]
 };

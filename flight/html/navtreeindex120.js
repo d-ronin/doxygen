@@ -1,5 +1,11 @@
 var NAVTREEINDEX120 =
 {
+"structmsp__motor.html#a7eb90d6170329e136d8fd1ed5fa16439":[2,3,0,5,0],
+"structmsp__motor__pins.html":[2,3,0,24],
+"structmsp__motor__pins.html#a338292f7f8dcf7af915bedb1ac0ebbf2":[2,3,0,24,0],
+"structmsp__parser.html":[2,3,0,0],
+"structmsp__parser.html#a1a9f6e9a1f58505d810b30b63de7a184":[2,3,0,0,1],
+"structmsp__parser.html#a388d2fad768ea88ca38d97214ab5b13d":[2,3,0,0,8],
 "structmsp__parser.html#a3d66f13ffd5f7616ea3fe3ed29bb893a":[2,3,0,0,3],
 "structmsp__parser.html#a7d89d3596c2f5e664c28a6a2816597e2":[2,3,0,0,9],
 "structmsp__parser.html#a85b8956f72ebf5c2eb627225a497cdc0":[2,3,0,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX120 =
 "structpios__flash__jedec__cfg.html":[2,0,12,1],
 "structpios__flash__partition.html":[2,0,12,5],
 "structpios__flash__posix__cfg.html":[4,0,159],
-"structpios__flash__posix__cfg.html#a2500c9104009ee9994022a50992362de":[4,0,159,1],
-"structpios__flash__posix__cfg.html#aa5c6b28764ca6dd0694817c639b79d7f":[4,0,159,0],
-"structpios__flash__sector__range.html":[2,0,12,3],
-"structpios__frsky__rssi__cfg.html":[2,0,98],
-"structpios__heap.html":[2,0,18,0],
-"structpios__heap.html#a0b408655d8aa8316ab780590d6c3ad2c":[2,0,18,0,2],
-"structpios__heap.html#a2e4fe3ec1628d6dca8cc4de8f029794c":[2,0,18,0,1]
+"structpios__flash__posix__cfg.html#a2500c9104009ee9994022a50992362de":[4,0,159,1]
 };

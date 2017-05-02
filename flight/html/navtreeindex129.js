@@ -1,5 +1,12 @@
 var NAVTREEINDEX129 =
 {
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga14dc9e3d330b80a37a9699c2112358e0":[5,0,0,4,16,1,2,61],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga1bc522e73c6468736ee7f031d5582eae":[5,0,0,4,16,1,2,40],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga208c18adb2e058348643425b79ae9e14":[5,0,0,4,16,1,2,7],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga20b68de0b754d943d653d816aad86148":[5,0,0,4,16,1,2,73],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga221d57f18aee9009fcb322e99be275e2":[5,0,0,4,16,1,2,36],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga227252944bdc42d8dc02ad5669ee0f90":[5,0,0,4,16,1,2,42],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga24c6da05c7d0a33b87b0c66cca0700d6":[5,0,0,4,16,1,2,44],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[5,0,0,4,16,1,2,43],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga2a5b4da2757e6727567656c3a9025ccd":[5,0,0,4,16,1,2,25],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga2a94396f6c828bcf3a1c79e82a3d738a":[5,0,0,4,16,1,2,35],
@@ -242,12 +249,5 @@ var NAVTREEINDEX129 =
 "telemetry_8c.html#ga251dc0181b1a02544cdee5e599bfc240":[5,0,0,2,25,0,17],
 "telemetry_8c.html#ga2aba27698bc3988dddaaaf3b77c4281d":[5,0,0,2,25,0,18],
 "telemetry_8c.html#ga2b77885d3b4992f77992bf84113980d6":[5,0,0,2,25,0,8],
-"telemetry_8c.html#ga3169751cd5adb9cf1e54b005fc39401a":[5,0,0,2,25,0,0],
-"telemetry_8c.html#ga3cd5102e2e68971267cfbdbe7b0423f6":[5,0,0,2,25,0,12],
-"telemetry_8c.html#ga52bb8385670941f7c5b78c973d2ce66f":[5,0,0,2,25,0,20],
-"telemetry_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,2,25,0,1],
-"telemetry_8c.html#ga7217bd181309545e31cfd20550b6281c":[5,0,0,2,25,0,25],
-"telemetry_8c.html#ga7e80ebad273efc1e33364f6993111e6c":[5,0,0,2,25,0,19],
-"telemetry_8c.html#ga81cb5e5f3ffe893707f4f80599c1904f":[5,0,0,2,25,0,28],
-"telemetry_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[5,0,0,2,25,0,4]
+"telemetry_8c.html#ga3169751cd5adb9cf1e54b005fc39401a":[5,0,0,2,25,0,0]
 };

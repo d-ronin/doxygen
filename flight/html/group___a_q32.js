@@ -43,6 +43,7 @@ var group___a_q32 =
     [ "PIOS_INCLUDE_DAC", "group___a_q32.html#ga639f6a1cd17b535b17f2e4ae80835e7d", null ],
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "group___a_q32.html#ga90d918d22c85e3b41434233eac638116", null ],
     [ "PIOS_INCLUDE_DAC_FSK", "group___a_q32.html#ga3a377b6e3ac53fb86a88489527af7f5a", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "group___a_q32.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "group___a_q32.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH", "group___a_q32.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___a_q32.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],

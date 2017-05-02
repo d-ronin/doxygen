@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">eb30efb</span>
+   &#160;<span id="projectnumber">7281006</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -242,141 +242,124 @@ $(document).ready(function(){initNavTree('pios__px4flow_8c_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">static</span> int32_t PIOS_PX4Flow_ReadData(<span class="keyword">struct</span> <a class="code" href="structpios__sensor__optical__flow__data.html">pios_sensor_optical_flow_data</a> *optical_flow_data, <span class="keyword">struct</span> <a class="code" href="structpios__sensor__rangefinder__data.html">pios_sensor_rangefinder_data</a> *rangefinder_data)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (PIOS_PX4Flow_Validate(dev) != 0) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">/* don&#39;t use PIOS_PX4Flow_Read and PIOS_PX4Flow_Write here because the task could be</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">         * switched out of context in between which would give the sensor less time to capture</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">         * the next sample.</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        uint8_t addr_read[] = {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#gaf972a8146309e18c297b0def4740c789">PIOS_PX4FLOW_FRAMECOUNTER_LSB</a></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        };</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="comment">/* Optical flow structs */</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keyword">struct </span>I2C_Frame</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                uint16_t frame_count; <span class="comment">// counts created I2C frames [#frames]</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                int16_t pixel_flow_x_sum_px10; <span class="comment">// latest x flow measurement in pixels*10 [pixels]</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                int16_t pixel_flow_y_sum_px10; <span class="comment">// latest y flow measurement in pixels*10 [pixels]</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                int16_t flow_comp_x_m1000; <span class="comment">// x velocity*1000 [meters/sec]</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                int16_t flow_comp_y_m1000; <span class="comment">// y velocity*1000 [meters/sec]</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                int16_t qual; <span class="comment">// Optical flow solution quality [0: bad, 255: maximum quality]</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                int16_t gyro_x_R; <span class="comment">// latest gyro x rate [rad/sec]</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                int16_t gyro_y_R; <span class="comment">// latest gyro y rate [rad/sec]</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                int16_t gyro_z_R; <span class="comment">// latest gyro z rate [rad/sec]</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                uint8_t gyro_range; <span class="comment">// gyro range [0 .. 7] equals [50 deg/sec .. 2000 deg/sec]</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                uint8_t sonar_timestamp; <span class="comment">// time since last sonar update [milliseconds]</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                int16_t ground_distance_m1000; <span class="comment">// Ground distance in meters*1000 [meters]. Positive value: distance known. Negative value: Unknown distance</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        } <a class="code" href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((packed)) i2c_frame;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">        // Leaving this struct definition in as aid for future implementation</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">        struct I2C_Integral_Frame</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">        {</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">                uint16_t frame_count_since_last_readout; //number of flow measurements since last I2C readout [#frames]</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">                int16_t pixel_flow_x_integral; //accumulated flow in radians*10000 around x axis since last I2C readout [rad*10000]</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">                int16_t pixel_flow_y_integral; //accumulated flow in radians*10000 around y axis since last I2C readout [rad*10000]</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">                int16_t gyro_x_rate_integral; //accumulated gyro x rates in radians*10000 since last I2C readout [rad*10000]</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">                int16_t gyro_y_rate_integral; //accumulated gyro y rates in radians*10000 since last I2C readout [rad*10000]</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">                int16_t gyro_z_rate_integral; //accumulated gyro z rates in radians*10000 since last I2C readout [rad*10000]</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">                uint32_t integration_timespan; //accumulation timespan in microseconds since last I2C readout [microseconds]</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">                uint32_t sonar_timestamp; // time since last sonar update [microseconds]</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">                int16_t ground_distance_m1000; // Ground distance in meters*1000 [meters*1000]</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">                int16_t gyro_temperature; // Temperature * 100 in centi-degrees Celsius [degcelsius*100]</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">                uint8_t quality; // averaged quality of accumulated flow values [0:bad quality;255: max quality]</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">        } __attribute__((packed)) i2c_integral_frame;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        const struct <a class="code" href="structpios__i2c__txn.html">pios_i2c_txn</a> txn_list[] = {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        .<a class="code" href="structpios__i2c__txn.html#a202db3e74679d070f4f3d27c1dcb0f39">info</a> = __func__,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        .addr = <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#ga9c5d9ccdae6a26387c6715b888a97f5d">PIOS_PX4FLOW_I2C_7_BIT_ADDR</a>,</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                        .rw = <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a>,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        .len = 1,</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        .buf = addr_read,</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                },</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        .info = __func__,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        .addr = <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#ga9c5d9ccdae6a26387c6715b888a97f5d">PIOS_PX4FLOW_I2C_7_BIT_ADDR</a>,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        .rw = <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a>,</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        .len = <span class="keyword">sizeof</span>(i2c_frame),</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                        .buf = (uint8_t *)&amp;i2c_frame,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        };</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">static</span> int32_t PIOS_PX4Flow_ReadData()</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">if</span> (PIOS_PX4Flow_Validate(dev) != 0) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">/* don&#39;t use PIOS_PX4Flow_Read and PIOS_PX4Flow_Write here because the task could be</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">         * switched out of context in between which would give the sensor less time to capture</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">         * the next sample.</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        uint8_t addr_read[] = {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#gaf972a8146309e18c297b0def4740c789">PIOS_PX4FLOW_FRAMECOUNTER_LSB</a></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        };</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">/* Optical flow structs */</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keyword">struct </span>I2C_Frame</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                uint16_t frame_count; <span class="comment">// counts created I2C frames [#frames]</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                int16_t pixel_flow_x_sum_px10; <span class="comment">// latest x flow measurement in pixels*10 [pixels]</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                int16_t pixel_flow_y_sum_px10; <span class="comment">// latest y flow measurement in pixels*10 [pixels]</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                int16_t flow_comp_x_m1000; <span class="comment">// x velocity*1000 [meters/sec]</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                int16_t flow_comp_y_m1000; <span class="comment">// y velocity*1000 [meters/sec]</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                uint16_t qual; <span class="comment">// Optical flow solution quality [0: bad, 255: maximum quality]</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                int16_t gyro_x_R; <span class="comment">// latest gyro x rate [rad/sec]</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                int16_t gyro_y_R; <span class="comment">// latest gyro y rate [rad/sec]</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                int16_t gyro_z_R; <span class="comment">// latest gyro z rate [rad/sec]</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                uint8_t gyro_range; <span class="comment">// gyro range [0 .. 7] equals [50 deg/sec .. 2000 deg/sec]</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                uint8_t sonar_timestamp; <span class="comment">// time since last sonar update [milliseconds]</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                int16_t ground_distance_m1000; <span class="comment">// Ground distance in meters*1000 [meters]. Positive value: distance known. Negative value: Unknown distance</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        } <a class="code" href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((packed)) i2c_frame;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        const struct <a class="code" href="structpios__i2c__txn.html">pios_i2c_txn</a> txn_list[] = {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                        .<a class="code" href="structpios__i2c__txn.html#a202db3e74679d070f4f3d27c1dcb0f39">info</a> = __func__,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                        .addr = <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#ga9c5d9ccdae6a26387c6715b888a97f5d">PIOS_PX4FLOW_I2C_7_BIT_ADDR</a>,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                        .rw = <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a>,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        .len = 1,</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        .buf = addr_read,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                },</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        .info = __func__,</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        .addr = <a class="code" href="group___p_i_o_s___p_x4_f_l_o_w.html#ga9c5d9ccdae6a26387c6715b888a97f5d">PIOS_PX4FLOW_I2C_7_BIT_ADDR</a>,</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        .rw = <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a>,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        .len = <span class="keyword">sizeof</span>(i2c_frame),</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        .buf = (uint8_t *)&amp;i2c_frame,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        };</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">// Perform transfer, and return error if TX fails</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i2_c.html#ga82be0a46a98ad8ed6609e4f2dd27ae46">PIOS_I2C_Transfer</a>(dev-&gt;i2c_id, txn_list, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(txn_list)) != 0)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">// PX4Flow docs state that `quality` is an int16, but that it only takes values</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="comment">// from 0..255. This provides a useful check for corruption.</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (i2c_frame.qual &gt; 255) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__sensor__optical__flow__data.html">pios_sensor_optical_flow_data</a> optical_flow_data = { 0 };</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__sensor__rangefinder__data.html">pios_sensor_rangefinder_data</a> rangefinder_data = { 0 };</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">// Only update rangefinder queue if data is fresh XXX this conditional looks</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">// wrong</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span> (i2c_frame.sonar_timestamp &gt; 0) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                rangefinder_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">range</a> = i2c_frame.ground_distance_m1000 / 1000.0f;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">// Perform transfer, and return error if TX fails</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i2_c.html#ga82be0a46a98ad8ed6609e4f2dd27ae46">PIOS_I2C_Transfer</a>(dev-&gt;i2c_id, txn_list, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(txn_list)) != 0)</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">if</span> (rangefinder_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">range</a> &gt;= 0) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        rangefinder_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga934e7c73d481ddc6e0c2cd16441ad051">range_status</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// PX4Flow docs state that `quality` is an int16, but that it only takes values</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">// from 0..255. This provides a useful check for corruption.</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">if</span> (i2c_frame.qual &lt; 0 || i2c_frame.qual &gt; 255) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="comment">// Only update rangefinder queue if data is fresh</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">if</span> (i2c_frame.sonar_timestamp &gt; 0) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                rangefinder_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">range</a> = i2c_frame.ground_distance_m1000 / 1000.0f;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="comment">// If the range is less than 0, then set the range status to 0</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <span class="keywordflow">if</span> (rangefinder_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">range</a> &lt; 0) {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        rangefinder_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7">range_status</a> = 0;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                        rangefinder_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7">range_status</a> = 1;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(dev-&gt;rangefinder_queue, &amp;rangefinder_data, 0);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">/* Rotate the flow from the sensor frame into the body frame. It&#39;s not</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">          * good to set the z-axis velocity to 0, but the optical flow doesn&#39;t return</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">          * any data along that direction, and moreover if the sensor is always</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">          * mounted vertically then the sensor board mounting yaw angle will not</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">          * affect the vertical results.</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">          */</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordtype">float</span> flow_sensor_frame[3] = {i2c_frame.flow_comp_x_m1000 / 1000.0f, i2c_frame.flow_comp_y_m1000 / 1000.0f, 0 / 1000.0f};</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">float</span> flow_rotated[3];</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga51d2a5ec28cbf272fe73aa5ea343a355">rot_mult</a>(dev-&gt;Rsb, flow_sensor_frame, flow_rotated, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        optical_flow_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga1490814b888f340b9e51b047f6822ec0">x_dot</a> = flow_rotated[0];</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        optical_flow_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga3ab71287f36a8eb543fb73221d805be4">y_dot</a> = flow_rotated[1];</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        optical_flow_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga8e86b79165f522d0dfd81d06f3c1ab59">z_dot</a> = flow_rotated[2];</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        optical_flow_data.<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gab43224d206c2684b43a0222465a465cf">quality</a> = i2c_frame.qual;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(dev-&gt;rangefinder_queue, rangefinder_data, 0);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="comment">/* Rotate the flow from the sensor frame into the body frame. It&#39;s not</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">          * good to set the z-axis velocity to 0, but the optical flow doesn&#39;t return</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">          * any data along that direction, and moreover if the sensor is always</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">          * mounted vertically then the sensor board mounting yaw angle will not</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">          * affect the vertical results.</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">          */</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordtype">float</span> flow_sensor_frame[3] = {i2c_frame.flow_comp_x_m1000 / 1000.0f, i2c_frame.flow_comp_y_m1000 / 1000.0f, 0 / 1000.0f};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">float</span> flow_rotated[3];</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="group___tau_labs_math.html#ga51d2a5ec28cbf272fe73aa5ea343a355">rot_mult</a>(dev-&gt;Rsb, flow_sensor_frame, flow_rotated, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        optical_flow_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga1490814b888f340b9e51b047f6822ec0">x_dot</a> = flow_rotated[0];</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        optical_flow_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga3ab71287f36a8eb543fb73221d805be4">y_dot</a> = flow_rotated[1];</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        optical_flow_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga8e86b79165f522d0dfd81d06f3c1ab59">z_dot</a> = flow_rotated[2];</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        optical_flow_data-&gt;<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gab43224d206c2684b43a0222465a465cf">quality</a> = i2c_frame.qual;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(dev-&gt;optical_flow_queue, optical_flow_data, 0);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a>(dev-&gt;optical_flow_queue, &amp;optical_flow_data, 0);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_PX4Flow_Task(<span class="keywordtype">void</span> *parameters)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">while</span> (PIOS_PX4Flow_Validate(dev) != 0) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                <a class="code" href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a>(100);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        uint32_t now = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <a class="code" href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a>(&amp;now, PX4FLOW_SAMPLE_PERIOD_MS);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                PIOS_PX4Flow_ReadData();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_PX4Flow_Task(<span class="keywordtype">void</span> *parameters)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">while</span> (PIOS_PX4Flow_Validate(dev) != 0) {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                <a class="code" href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a>(100);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        uint32_t now = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <a class="code" href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a>(&amp;now, PX4FLOW_SAMPLE_PERIOD_MS);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keyword">struct </span><a class="code" href="structpios__sensor__optical__flow__data.html">pios_sensor_optical_flow_data</a> optical_flow_data;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="keyword">struct </span><a class="code" href="structpios__sensor__rangefinder__data.html">pios_sensor_rangefinder_data</a> rangefinder_data;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                PIOS_PX4Flow_ReadData(&amp;optical_flow_data, &amp;rangefinder_data);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PX4FLOW */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PX4FLOW */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga934e7c73d481ddc6e0c2cd16441ad051"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga934e7c73d481ddc6e0c2cd16441ad051">pios_sensor_rangefinder_data::range_status</a></div><div class="ttdeci">bool range_status</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00073">pios_sensors.h:73</a></div></div>
 <div class="ttc" id="group___p_i_o_s___p_x4_f_l_o_w_html_gaf972a8146309e18c297b0def4740c789"><div class="ttname"><a href="group___p_i_o_s___p_x4_f_l_o_w.html#gaf972a8146309e18c297b0def4740c789">PIOS_PX4FLOW_FRAMECOUNTER_LSB</a></div><div class="ttdeci">#define PIOS_PX4FLOW_FRAMECOUNTER_LSB</div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00023">pios_px4flow_priv.h:23</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>
 <div class="ttc" id="structpios__semaphore_html"><div class="ttname"><a href="structpios__semaphore.html">pios_semaphore</a></div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00029">pios_semaphore.c:29</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859">PIOS_SENSOR_RANGEFINDER</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00090">pios_sensors.h:90</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859">PIOS_SENSOR_RANGEFINDER</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00092">pios_sensors.h:92</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00220">pios.h:220</a></div></div>
 <div class="ttc" id="group___airspeed_module_html_ga043afd6646bf00b1155399e12818f798"><div class="ttname"><a href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a></div><div class="ttdeci">struct GPSGlobals __attribute__</div></div>
 <div class="ttc" id="pios__px4flow__priv_8h_html"><div class="ttname"><a href="pios__px4flow__priv_8h.html">pios_px4flow_priv.h</a></div></div>
@@ -386,7 +369,6 @@ $(document).ready(function(){initNavTree('pios__px4flow_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_gac5ddcec5126e8a38c42a9973f421ee5e"><div class="ttname"><a href="group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e">PIOS_Queue_Send</a></div><div class="ttdeci">bool PIOS_Queue_Send(struct pios_queue *queuep, const void *itemp, uint32_t timeout_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00101">pios_queue.c:101</a></div></div>
 <div class="ttc" id="group___sensors_html_gab0474ee7eeda2c4413d5963c8d142020"><div class="ttname"><a href="group___sensors.html#gab0474ee7eeda2c4413d5963c8d142020">Rsb</a></div><div class="ttdeci">static float Rsb[3][3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00120">sensors.c:120</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga69a84b9fd07473298fdcbc221c7683c7"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7">pios_sensor_rangefinder_data::range_status</a></div><div class="ttdeci">uint8_t range_status</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00072">pios_sensors.h:72</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_gaca4d8c0b343ce63582396c429244e028"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">pios_sensor_rangefinder_data::range</a></div><div class="ttdeci">float range</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00071">pios_sensors.h:71</a></div></div>
 <div class="ttc" id="struct_rotation_html_ae1ce8bd8745c5c396f35ba042c0c4eab"><div class="ttname"><a href="struct_rotation.html#ae1ce8bd8745c5c396f35ba042c0c4eab">Rotation::pitch_D100</a></div><div class="ttdeci">int16_t pitch_D100</div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00029">pios_px4flow_priv.h:29</a></div></div>
@@ -416,7 +398,7 @@ $(document).ready(function(){initNavTree('pios__px4flow_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___p_x4_f_l_o_w_html_gab1e71fd1d9a0b27e75f98f00ef41d900"><div class="ttname"><a href="group___p_i_o_s___p_x4_f_l_o_w.html#gab1e71fd1d9a0b27e75f98f00ef41d900">PIOS_PX4Flow_Init</a></div><div class="ttdeci">int32_t PIOS_PX4Flow_Init(const struct pios_px4flow_cfg *cfg, const uint32_t i2c_id)</div></div>
 <div class="ttc" id="structpios__i2c__txn_html_a202db3e74679d070f4f3d27c1dcb0f39"><div class="ttname"><a href="structpios__i2c__txn.html#a202db3e74679d070f4f3d27c1dcb0f39">pios_i2c_txn::info</a></div><div class="ttdeci">const char * info</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00041">pios_i2c.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i2_c_html_gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00036">pios_i2c.h:36</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a392d4a81da32fc10b37da52c3481e422"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a392d4a81da32fc10b37da52c3481e422">PIOS_SENSOR_OPTICAL_FLOW</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00089">pios_sensors.h:89</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a392d4a81da32fc10b37da52c3481e422"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a392d4a81da32fc10b37da52c3481e422">PIOS_SENSOR_OPTICAL_FLOW</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00091">pios_sensors.h:91</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__px4flow__cfg_html"><div class="ttname"><a href="structpios__px4flow__cfg.html">pios_px4flow_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00033">pios_px4flow_priv.h:33</a></div></div>
 <div class="ttc" id="structpios__i2c__txn_html"><div class="ttname"><a href="structpios__i2c__txn.html">pios_i2c_txn</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00040">pios_i2c.h:40</a></div></div>

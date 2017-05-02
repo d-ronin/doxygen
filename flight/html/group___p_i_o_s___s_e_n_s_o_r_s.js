@@ -27,7 +27,9 @@ var group___p_i_o_s___s_e_n_s_o_r_s =
     ] ],
     [ "pios_sensor_rangefinder_data", "structpios__sensor__rangefinder__data.html", [
       [ "range", "group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028", null ],
-      [ "range_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7", null ]
+      [ "range_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga934e7c73d481ddc6e0c2cd16441ad051", null ],
+      [ "velocity", "group___p_i_o_s___s_e_n_s_o_r_s.html#gac984a7c87debc740c5189d33fe857ed3", null ],
+      [ "velocity_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#gafc1e0b736d2bd24a4413830bc1496ca8", null ]
     ] ],
     [ "pios_sensor_baro_data", "structpios__sensor__baro__data.html", [
       [ "altitude", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga36e1ee62fc132c0b2c992ef8efc5bb81", null ],
@@ -66,11 +68,13 @@ var group___p_i_o_s___s_e_n_s_o_r_s =
     [ "quality", "group___p_i_o_s___s_e_n_s_o_r_s.html#gab43224d206c2684b43a0222465a465cf", null ],
     [ "queues", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga709b4916518f67978a67e828a2a5f5c2", null ],
     [ "range", "group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028", null ],
-    [ "range_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga69a84b9fd07473298fdcbc221c7683c7", null ],
+    [ "range_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga934e7c73d481ddc6e0c2cd16441ad051", null ],
     [ "sample_rates", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga6b9097c73dc3983021dacb51e7f5b409", null ],
     [ "temperature", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga9f44abb5eea58728c07c17a58155f6e8", null ],
     [ "temperature", "group___p_i_o_s___s_e_n_s_o_r_s.html#gadb57b0d1050bd04870c0ad76832f4287", null ],
     [ "temperature", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga9cb0c320301d3a8028859d3bf920669f", null ],
+    [ "velocity", "group___p_i_o_s___s_e_n_s_o_r_s.html#gac984a7c87debc740c5189d33fe857ed3", null ],
+    [ "velocity_status", "group___p_i_o_s___s_e_n_s_o_r_s.html#gafc1e0b736d2bd24a4413830bc1496ca8", null ],
     [ "x", "group___p_i_o_s___s_e_n_s_o_r_s.html#gaa3675ec6a2d0ed4f805311fef19c0c8b", null ],
     [ "x", "group___p_i_o_s___s_e_n_s_o_r_s.html#gae32485cbb3023e21caf5ac1fd8378fb3", null ],
     [ "x", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga3ec7375b9b8c7ab5ddd50349c76ac818", null ],
