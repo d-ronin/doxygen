@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be4b97e</span>
+   &#160;<span id="projectnumber">7a5243f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('sanitycheck_8c_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// Classify airframe type</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">bool</span> multirotor = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        uint8_t <a class="code" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        uint8_t <a class="code" href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        SystemSettingsAirframeTypeGet(&amp;airframe_type);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">switch</span>(airframe_type) {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">case</span> SYSTEMSETTINGS_AIRFRAMETYPE_QUADX:</div>
@@ -457,12 +457,12 @@ $(document).ready(function(){initNavTree('sanitycheck_8c_source.html','');});
 <div class="ttc" id="group___tau_labs_libraries_html_ga08f1806dd1c0c40a7b8ec179690f883c"><div class="ttname"><a href="group___tau_labs_libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c">check_safe_to_arm</a></div><div class="ttdeci">static int32_t check_safe_to_arm()</div><div class="ttdoc">Check it is safe to arm in this position. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00249">sanitycheck.c:249</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gabcb80832a82e492c119a231984eba10a"><div class="ttname"><a href="group___tau_labs_libraries.html#gabcb80832a82e492c119a231984eba10a">configuration_check</a></div><div class="ttdeci">int32_t configuration_check()</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00068">sanitycheck.c:68</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
+<div class="ttc" id="group___actuator_module_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00101">actuator.c:101</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gae62c697d4457674e78e13375fc1dabc2"><div class="ttname"><a href="group___tau_labs_libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a></div><div class="ttdeci">void set_config_error(SystemAlarmsConfigErrorOptions error_code)</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00340">sanitycheck.c:340</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gadd1139478e7c6bc1b6afaaa0d1d114dd"><div class="ttname"><a href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a></div><div class="ttdeci">int32_t AlarmsSet(SystemAlarmsAlarmElem alarm, SystemAlarmsAlarmOptions severity)</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00097">alarms.c:97</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gadd6c95f5fd14d4ae70c1ee9335d9883a"><div class="ttname"><a href="group___tau_labs_libraries.html#gadd6c95f5fd14d4ae70c1ee9335d9883a">check_stabilization_settings</a></div><div class="ttdeci">static int32_t check_stabilization_settings(int index, bool multirotor)</div><div class="ttdoc">Check a stabilization mode switch position for safety. </div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00182">sanitycheck.c:182</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga2212575f7dbf4b2452fb7baa81b48115"><div class="ttname"><a href="group___tau_labs_libraries.html#ga2212575f7dbf4b2452fb7baa81b48115">TaskMonitorQueryRunning</a></div><div class="ttdeci">bool TaskMonitorQueryRunning(TaskInfoRunningElem task)</div><div class="ttdef"><b>Definition:</b> <a href="taskmonitor_8c_source.html#l00100">taskmonitor.c:100</a></div></div>
 <div class="ttc" id="pios__sensors_8h_html"><div class="ttname"><a href="pios__sensors_8h.html">pios_sensors.h</a></div><div class="ttdoc">Generic interface for sensors. </div></div>
-<div class="ttc" id="group___control_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00091">transmitter_control.c:91</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

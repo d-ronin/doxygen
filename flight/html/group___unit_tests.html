@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be4b97e</span>
+   &#160;<span id="projectnumber">7a5243f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -141,6 +141,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linear_interpolate.html">LinearInterpolate</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_math.html">MatrixMath</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_time.html">Time</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,6 +166,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga43c7b40cedfebb9ea7e6776440e0eeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1413928defccd80b395608d1edfc8c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#gab1413928defccd80b395608d1edfc8c7">OBJ4_SIZE</a>&#160;&#160;&#160;(768)</td></tr>
 <tr class="separator:gab1413928defccd80b395608d1edfc8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga080abdcb9c02438f1cd2bb707af25af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga080abdcb9c02438f1cd2bb707af25af8">restrict</a>&#160;&#160;&#160;/* neuter restrict keyword since it's not in C++ */</td></tr>
+<tr class="separator:ga080abdcb9c02438f1cd2bb707af25af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga836b829d17fee8b1db6d0f71308103ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga836b829d17fee8b1db6d0f71308103ff">PSEUDOINV_CONVERGE_LIMIT</a>&#160;&#160;&#160;19</td></tr>
+<tr class="separator:ga836b829d17fee8b1db6d0f71308103ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -365,6 +371,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga857a45ca3522f2d7196ecac21eb2f528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30a3881db0cac65935c82be5b0dd3e1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga30a3881db0cac65935c82be5b0dd3e1b">TEST_F</a> (<a class="el" href="class_linear_interpolate.html">LinearInterpolate</a>, CollectiveCurve1to1)</td></tr>
 <tr class="separator:ga30a3881db0cac65935c82be5b0dd3e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fbc48f2f3e0b569a42e70dcc9946ebe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga0fbc48f2f3e0b569a42e70dcc9946ebe">MatrixMath::SetUp</a> ()</td></tr>
+<tr class="separator:ga0fbc48f2f3e0b569a42e70dcc9946ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga012c5c947fd958d0dac474521634aa40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga012c5c947fd958d0dac474521634aa40">MatrixMath::TearDown</a> ()</td></tr>
+<tr class="separator:ga012c5c947fd958d0dac474521634aa40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga807bdb259e011f13174697abd6976345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga807bdb259e011f13174697abd6976345">TEST_F</a> (<a class="el" href="class_matrix_math.html">MatrixMath</a>, MultipliesAndInverses)</td></tr>
+<tr class="separator:ga807bdb259e011f13174697abd6976345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga738243bc5546f2f76e3cfdcc38f4c6a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga738243bc5546f2f76e3cfdcc38f4c6a8">TEST_F</a> (<a class="el" href="class_matrix_math.html">MatrixMath</a>, MixerMatrixInverses)</td></tr>
+<tr class="separator:ga738243bc5546f2f76e3cfdcc38f4c6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50a40998055515f7d0020f1cec8a1438"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga50a40998055515f7d0020f1cec8a1438">Time::SetUp</a> ()</td></tr>
 <tr class="separator:ga50a40998055515f7d0020f1cec8a1438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga161aa2ad4fe314074b883759689f3059"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga161aa2ad4fe314074b883759689f3059">Time::TearDown</a> ()</td></tr>
@@ -410,6 +424,8 @@ Variables</h2></td></tr>
 <tr class="separator:gadeab2644468b89d495d396f0e55524e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2398cf58e337f70603e12a997936f0c9"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga2398cf58e337f70603e12a997936f0c9">LogfsTestCookedMultiPart::fs_id_b</a></td></tr>
 <tr class="separator:ga2398cf58e337f70603e12a997936f0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga986be87cb393efd719a76239fd440609"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_tests.html#ga986be87cb393efd719a76239fd440609">simple_4x4</a> []</td></tr>
+<tr class="separator:ga986be87cb393efd719a76239fd440609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Unit test. </p>
@@ -537,6 +553,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00075">75</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga836b829d17fee8b1db6d0f71308103ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PSEUDOINV_CONVERGE_LIMIT&#160;&#160;&#160;19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00044">44</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga080abdcb9c02438f1cd2bb707af25af8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define restrict&#160;&#160;&#160;/* neuter restrict keyword since it's not in C++ */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00041">41</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -717,33 +761,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf32e95ea690177429881d65ee89a43e2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MiscMath::SetUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="group___unit_tests.html#gafaec8c76ac9757b3a7a056e14a8d9af4">LinearInterpolate</a>, <a class="el" href="group___unit_tests.html#ga2a37e7c06175d490002101b13fec1c97">Vector2Clip</a>, <a class="el" href="group___unit_tests.html#gade916660611f66dc899b964b8d064166">CircularModulusDeg</a>, <a class="el" href="group___unit_tests.html#ga3b1ffcc33db9c2489206486310736009">BoundSym</a>, and <a class="el" href="group___unit_tests.html#gaa083f26ac602b6553ebd522ebce74b44">BoundMinMax</a>.</p>
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00051">51</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga45d9c0170889afd941c002093e10d785"></a>
 <div class="memitem">
 <div class="memproto">
@@ -794,7 +811,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa083f26ac602b6553ebd522ebce74b44"></a>
+<a class="anchor" id="gaf32e95ea690177429881d65ee89a43e2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -802,7 +819,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void BoundMinMax::SetUp </td>
+          <td class="memname">virtual void MiscMath::SetUp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -815,9 +832,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
+<p>Reimplemented in <a class="el" href="group___unit_tests.html#ga0fbc48f2f3e0b569a42e70dcc9946ebe">MatrixMath</a>, <a class="el" href="group___unit_tests.html#gafaec8c76ac9757b3a7a056e14a8d9af4">LinearInterpolate</a>, <a class="el" href="group___unit_tests.html#ga2a37e7c06175d490002101b13fec1c97">Vector2Clip</a>, <a class="el" href="group___unit_tests.html#gade916660611f66dc899b964b8d064166">CircularModulusDeg</a>, <a class="el" href="group___unit_tests.html#ga3b1ffcc33db9c2489206486310736009">BoundSym</a>, and <a class="el" href="group___unit_tests.html#gaa083f26ac602b6553ebd522ebce74b44">BoundMinMax</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00061">61</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00055">55</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -845,6 +862,33 @@ Variables</h2></td></tr>
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#ga674c64418b5b617a7ce07a471daf3fd1">CoordConversion</a>.</p>
 
 <p>Definition at line <a class="el" href="coordinate__conversions_2unittest_8cpp_source.html#l00061">61</a> of file <a class="el" href="coordinate__conversions_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa083f26ac602b6553ebd522ebce74b44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void BoundMinMax::SetUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00065">65</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +942,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00140">140</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00144">144</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -952,7 +996,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00180">180</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00184">184</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -979,7 +1023,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00243">243</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00247">247</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1050,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00295">295</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00299">299</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1034,6 +1078,33 @@ Variables</h2></td></tr>
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#ga6ad4da1f7c409b092a28457c4841e361">LogfsTestRaw</a>.</p>
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00337">337</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0fbc48f2f3e0b569a42e70dcc9946ebe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MatrixMath::SetUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="group___unit_tests.html#gaf32e95ea690177429881d65ee89a43e2">MiscMath</a>.</p>
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00361">361</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1089,33 +1160,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaee049bdfbeb6e7117415c472da634038"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MiscMath::TearDown </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="group___unit_tests.html#gab952540565b701904661081cb34b1576">LinearInterpolate</a>, <a class="el" href="group___unit_tests.html#gafbf0bbdc7da0879e247bbc1c98be1cc4">Vector2Clip</a>, <a class="el" href="group___unit_tests.html#gab07ca9308f02057fa2623a51eb709aac">CircularModulusDeg</a>, <a class="el" href="group___unit_tests.html#gac3c27344e8473b0cfba42ddd7e28b509">BoundSym</a>, and <a class="el" href="group___unit_tests.html#ga5b1a04dbcaaa9db5e928c59c87d81a69">BoundMinMax</a>.</p>
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00054">54</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga57e34df1fb9fae48b6cc9a8748eee5de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1163,6 +1207,33 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="dsm_2unittest_8cpp_source.html#l00057">57</a> of file <a class="el" href="dsm_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaee049bdfbeb6e7117415c472da634038"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MiscMath::TearDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="group___unit_tests.html#ga012c5c947fd958d0dac474521634aa40">MatrixMath</a>, <a class="el" href="group___unit_tests.html#gab952540565b701904661081cb34b1576">LinearInterpolate</a>, <a class="el" href="group___unit_tests.html#gafbf0bbdc7da0879e247bbc1c98be1cc4">Vector2Clip</a>, <a class="el" href="group___unit_tests.html#gab07ca9308f02057fa2623a51eb709aac">CircularModulusDeg</a>, <a class="el" href="group___unit_tests.html#gac3c27344e8473b0cfba42ddd7e28b509">BoundSym</a>, and <a class="el" href="group___unit_tests.html#ga5b1a04dbcaaa9db5e928c59c87d81a69">BoundMinMax</a>.</p>
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00058">58</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1287,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00064">64</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00068">68</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1270,7 +1341,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00143">143</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00147">147</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1395,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00183">183</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00187">187</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1422,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00246">246</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00250">250</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1449,7 @@ Variables</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00298">298</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00302">302</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1406,6 +1477,33 @@ Variables</h2></td></tr>
 <p>Reimplemented from <a class="el" href="group___unit_tests.html#ga14c567025394faab5c7628decc578f1f">LogfsTestRaw</a>.</p>
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00347">347</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga012c5c947fd958d0dac474521634aa40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MatrixMath::TearDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="group___unit_tests.html#gaee049bdfbeb6e7117415c472da634038">MiscMath</a>.</p>
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00364">364</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1465,34 +1563,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga616b42d75c14427fb433a0efc0dcc8d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_bound_min_max.html">BoundMinMax</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ValBelowZeroRange&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00068">68</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gaa2806007ccc77d620d2eba58f0ce7672"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1549,6 +1619,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga616b42d75c14427fb433a0efc0dcc8d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bound_min_max.html">BoundMinMax</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValBelowZeroRange&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00072">72</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga7b82883b4c8ff0d533a5b3923e8845fd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1573,7 +1671,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00075">75</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00079">79</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1629,7 +1727,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00082">82</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00086">86</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1783,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00089">89</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00093">93</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1839,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00105">105</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00109">109</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1825,7 +1923,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00121">121</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00125">125</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1909,35 +2007,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00147">147</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga548005fd2118ab3d1421a52580886532"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_bound_sym.html">BoundSym</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NonZeroRange&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00162">162</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00151">151</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -1966,6 +2036,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00165">165</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga548005fd2118ab3d1421a52580886532"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bound_sym.html">BoundSym</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NonZeroRange&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00166">166</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -2081,34 +2179,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga17693a11d324ba463ae792d590bee714"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_circular_modulus_deg.html">CircularModulusDeg</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NullError&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00187">187</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga648a4ec4fd8c6237d8ca35746dd64a9d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2134,6 +2204,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00187">187</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga17693a11d324ba463ae792d590bee714"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_circular_modulus_deg.html">CircularModulusDeg</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NullError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00191">191</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -2189,7 +2287,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00200">200</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00204">204</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -2301,7 +2399,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00213">213</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00217">217</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -2417,34 +2515,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae9b10024a005563e17340713ce445a15"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_circular_modulus_deg.html">CircularModulusDeg</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SweepError&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00226">226</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga8f1ee187cd080ce0789bed7beab73c0e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2470,6 +2540,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="dsm_2unittest_8cpp_source.html#l00228">228</a> of file <a class="el" href="dsm_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae9b10024a005563e17340713ce445a15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_circular_modulus_deg.html">CircularModulusDeg</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SweepError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00230">230</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -2697,34 +2795,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga410c06f25a211c1cd7023ce04a3857d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_vector2_clip.html">Vector2Clip</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TestScale&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00250">250</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga2e5a9acaa02d2c2fa66d03adf200af24"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2750,6 +2820,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00251">251</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga410c06f25a211c1cd7023ce04a3857d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2_clip.html">Vector2Clip</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TestScale&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00254">254</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -3142,7 +3240,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00302">302</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00306">306</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -3170,7 +3268,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00328">328</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00332">332</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -3199,6 +3297,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00357">357</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga807bdb259e011f13174697abd6976345"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix_math.html">MatrixMath</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MultipliesAndInverses&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00368">368</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -3311,6 +3437,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="logfs_2unittest_8cpp_source.html#l00419">419</a> of file <a class="el" href="logfs_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga738243bc5546f2f76e3cfdcc38f4c6a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix_math.html">MatrixMath</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MixerMatrixInverses&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00541">541</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>
@@ -3698,6 +3852,26 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="unittest__init_8c_source.html#l00039">39</a> of file <a class="el" href="unittest__init_8c_source.html">unittest_init.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga986be87cb393efd719a76239fd440609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float simple_4x4[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">     1.0f,  1.0f,  1.0f, 1.0f,</div>
+<div class="line">    -1.0f, -1.0f,  1.0f, 1.0f,</div>
+<div class="line">     1.0f, -1.0f, -1.0f, 1.0f,</div>
+<div class="line">    -1.0f,  1.0f, -1.0f, 1.0f,</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="misc__math_2unittest_8cpp_source.html#l00534">534</a> of file <a class="el" href="misc__math_2unittest_8cpp_source.html">unittest.cpp</a>.</p>
 
 </div>
 </div>

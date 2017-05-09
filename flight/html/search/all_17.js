@@ -13,7 +13,7 @@ var searchData=
   ['wdg_5fexpired',['wdg_expired',['../group___p_i_o_s___w_d_g.html#ga50e5c0c02e49b9be478e347b82eb7f2f',1,'pios_wdg.c']]],
   ['wdg_5flast_5fupdate_5ftime',['wdg_last_update_time',['../group___p_i_o_s___w_d_g.html#gaf5d707b03121ce7360f560ebda3fd46b',1,'pios_wdg.c']]],
   ['wdg_5fregistered_5fflags',['wdg_registered_flags',['../group___p_i_o_s___w_d_g.html#gaab238daf4f2906dc7691f92d408cee6c',1,'pios_wdg.c']]],
-  ['wdg_5fstats_5fdiagnostics',['WDG_STATS_DIAGNOSTICS',['../pios__flight__config_8h.html#a92db595596a0136d6e663f929418cbf4',1,'WDG_STATS_DIAGNOSTICS():&#160;pios_flight_config.h'],['../group___play_u_a_v_o_s_d.html#ga92db595596a0136d6e663f929418cbf4',1,'WDG_STATS_DIAGNOSTICS():&#160;pios_config.h']]],
+  ['wdg_5fstats_5fdiagnostics',['WDG_STATS_DIAGNOSTICS',['../pios__flight__config_8h.html#a92db595596a0136d6e663f929418cbf4',1,'WDG_STATS_DIAGNOSTICS():&#160;pios_flight_config.h'],['../group___play_u_a_v_o_s_d.html#ga92db595596a0136d6e663f929418cbf4',1,'WDG_STATS_DIAGNOSTICS():&#160;pios_config.h'],['../group___s_p_r_f3_e.html#ga92db595596a0136d6e663f929418cbf4',1,'WDG_STATS_DIAGNOSTICS():&#160;pios_config.h']]],
   ['wdg_5fupdated_5fflags',['wdg_updated_flags',['../group___p_i_o_s___w_d_g.html#ga37fde3d7139a4739308ac7a214dbe965',1,'pios_wdg.c']]],
   ['weak',['weak',['../group___p_i_o_s___h_e_a_p.html#gacf66f77446c31149307d114f4e52e89a',1,'pios_heap.c']]],
   ['weak_5fleveling_5fkp',['weak_leveling_kp',['../group___stabilization_module.html#ga0ed1377fcc1a59ba76172e76b113704d',1,'stabilization.c']]],

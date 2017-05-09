@@ -14,5 +14,6 @@ var group___bootloader =
     [ "OpenPilot Revolution Mini", "group___revo_mini.html", "group___revo_mini" ],
     [ "DTFAIR Seppuku", "group___seppuku.html", "group___seppuku" ],
     [ "Tau Labs Sparky", "group___sparky.html", "group___sparky" ],
-    [ "Tau Labs Sparky2", "group___sparky2.html", "group___sparky2" ]
+    [ "Tau Labs Sparky2", "group___sparky2.html", "group___sparky2" ],
+    [ "SP Racing F3 Evo", "group___s_p_r_f3_e.html", "group___s_p_r_f3_e" ]
 ];

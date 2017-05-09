@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be4b97e</span>
+   &#160;<span id="projectnumber">7a5243f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -125,7 +125,6 @@ $(document).ready(function(){initNavTree('actuator_8c.html','');});
 <code>#include &quot;actuatorcommand.h&quot;</code><br/>
 <code>#include &quot;flightstatus.h&quot;</code><br/>
 <code>#include &quot;mixersettings.h&quot;</code><br/>
-<code>#include &quot;mixerstatus.h&quot;</code><br/>
 <code>#include &quot;cameradesired.h&quot;</code><br/>
 <code>#include &quot;manualcontrolcommand.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
@@ -146,11 +145,19 @@ Macros</h2></td></tr>
 <tr class="separator:ga50858e76836ece0d48f2f319744d5c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26733396829a78364e228452a3d426be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga26733396829a78364e228452a3d426be">MAX_MIX_ACTUATORS</a>&#160;&#160;&#160;ACTUATORCOMMAND_CHANNEL_NUMELEM</td></tr>
 <tr class="separator:ga26733396829a78364e228452a3d426be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0158e3851b1954e451ba2511a98b25ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga0158e3851b1954e451ba2511a98b25ad">MULTIROTOR_MIXER_UPPER_BOUND</a>&#160;&#160;&#160;128</td></tr>
-<tr class="separator:ga0158e3851b1954e451ba2511a98b25ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6c954bd2b503584488c9560cd3be28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gada6c954bd2b503584488c9560cd3be28">MIXER_SCALE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:gada6c954bd2b503584488c9560cd3be28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac025c79b8a22a5e226fdc1c08856423"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaac025c79b8a22a5e226fdc1c08856423">compute_one_token_paste</a>(b)&#160;&#160;&#160;<a class="el" href="group___actuator_module.html#ga568206810bad83d13f36a0d7d5fc232d">compute_one_mixer</a>(b-1, &amp;mixerSettings.Mixer ## b ## Vector, mixerSettings.Mixer ## b ## Type)</td></tr>
+<tr class="separator:gaac025c79b8a22a5e226fdc1c08856423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga5665843aba35d577b6358ed5ab0497fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5665843aba35d577b6358ed5ab0497fa">DONT_BUILD_IF</a> (ACTUATORSETTINGS_TIMERUPDATEFREQ_NUMELEM &gt; <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gadb7be3564a51fca2f4044daa877ea7fc">PIOS_SERVO_MAX_BANKS</a>, TooManyServoBanks)</td></tr>
+<tr class="separator:ga5665843aba35d577b6358ed5ab0497fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79c4dc6a758b6ec23a2a6838b1c5322e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga79c4dc6a758b6ec23a2a6838b1c5322e">DONT_BUILD_IF</a> (<a class="el" href="group___actuator_module.html#ga26733396829a78364e228452a3d426be">MAX_MIX_ACTUATORS</a> &gt; ACTUATORCOMMAND_CHANNEL_NUMELEM, TooManyMixers)</td></tr>
+<tr class="separator:ga79c4dc6a758b6ec23a2a6838b1c5322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga206c99c9d0d1ab609b08531e73b6ed83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga206c99c9d0d1ab609b08531e73b6ed83">DONT_BUILD_IF</a> ((MIXERSETTINGS_MIXER1VECTOR_NUMELEM-MIXERSETTINGS_MIXER1VECTOR_ACCESSORY0)&lt; MANUALCONTROLCOMMAND_ACCESSORY_NUMELEM, AccessoryMismatch)</td></tr>
+<tr class="separator:ga206c99c9d0d1ab609b08531e73b6ed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e">actuator_task</a> (void *parameters)</td></tr>
 <tr class="memdesc:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Actuator module task.  <a href="group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e">More...</a><br/></td></tr>
 <tr class="separator:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,18 +169,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga85f9c2a5a055c0292a43f7bf29f09d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf68bce9df87514badace08f793262388"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaf68bce9df87514badace08f793262388">collective_curve</a> (const float input, const float *curve, uint8_t num_points)</td></tr>
 <tr class="separator:gaf68bce9df87514badace08f793262388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53886cf6bbf80db465e8a56d6735ef1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga53886cf6bbf80db465e8a56d6735ef1d">actuator_set_servo_mode</a> (void)</td></tr>
-<tr class="memdesc:ga53886cf6bbf80db465e8a56d6735ef1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the servo update rate.  <a href="group___actuator_module.html#ga53886cf6bbf80db465e8a56d6735ef1d">More...</a><br/></td></tr>
-<tr class="separator:ga53886cf6bbf80db465e8a56d6735ef1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3789e6d40269f7b9c7cfcb9781b4f242"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga3789e6d40269f7b9c7cfcb9781b4f242">process_mixer</a> (const int index, const float curve1, const float curve2, ActuatorDesiredData *desired)</td></tr>
-<tr class="separator:ga3789e6d40269f7b9c7cfcb9781b4f242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c7613770c903132039c37530dab723c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga4c7613770c903132039c37530dab723c">mix_channel</a> (int ct, ActuatorDesiredData *desired, float curve1, float curve2)</td></tr>
-<tr class="separator:ga4c7613770c903132039c37530dab723c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga112acfe5409883ec6bfa6e6e1eebb23b"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
-MixerSettingsMixer1TypeOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga112acfe5409883ec6bfa6e6e1eebb23b">get_mixer_type</a> (int idx)</td></tr>
-<tr class="separator:ga112acfe5409883ec6bfa6e6e1eebb23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e1cca7d4dbf3be32fd23a529c09343e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5e1cca7d4dbf3be32fd23a529c09343e">typeof</a> (mixerSettings.Mixer1Vector)*get_mixer_vec(int idx)</td></tr>
-<tr class="separator:ga5e1cca7d4dbf3be32fd23a529c09343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacde7d1a4e7c4969a5b11e37315053034"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">ActuatorStart</a> ()</td></tr>
 <tr class="memdesc:gacde7d1a4e7c4969a5b11e37315053034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module initialization.  <a href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">More...</a><br/></td></tr>
 <tr class="separator:gacde7d1a4e7c4969a5b11e37315053034"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,10 +179,18 @@ MixerSettingsMixer1TypeOptions&#160;</td><td class="memItemRight" valign="bottom
 <tr class="separator:ga6e58deb47f86039abf936ab1c6f4aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5586adc1dec0583698aab0c7c1f3b5e6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5586adc1dec0583698aab0c7c1f3b5e6">get_curve2_source</a> (ActuatorDesiredData *desired, SystemSettingsAirframeTypeOptions <a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>, MixerSettingsCurve2SourceOptions source)</td></tr>
 <tr class="separator:ga5586adc1dec0583698aab0c7c1f3b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga568206810bad83d13f36a0d7d5fc232d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga568206810bad83d13f36a0d7d5fc232d">compute_one_mixer</a> (int mixnum, int16_t(*vals)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM], MixerSettingsMixer1TypeOptions <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="separator:ga568206810bad83d13f36a0d7d5fc232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d51fb0c28b55d3e210c48503788a594"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga4d51fb0c28b55d3e210c48503788a594">compute_mixer</a> ()</td></tr>
+<tr class="separator:ga4d51fb0c28b55d3e210c48503788a594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53f74eb0ae7002be03b4fae3e463464c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga53f74eb0ae7002be03b4fae3e463464c">fill_desired_vector</a> (ActuatorDesiredData *desired, float val1, float val2, float(*cmd_vector)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM])</td></tr>
+<tr class="separator:ga53f74eb0ae7002be03b4fae3e463464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e0da0de9f6a7a76df02eccd7853c9a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga6e0da0de9f6a7a76df02eccd7853c9a4">post_process_scale_and_commit</a> (float *motor_vect, float dT, bool armed, bool spin_while_armed, bool stabilize_now)</td></tr>
+<tr class="separator:ga6e0da0de9f6a7a76df02eccd7853c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga963e45ec159f02253cb5a56e6af61d76"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga963e45ec159f02253cb5a56e6af61d76">normalize_input_data</a> (uint32_t this_systime, float(*desired_vect)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM], bool *armed, bool *spin_while_armed, bool *stabilize_now)</td></tr>
+<tr class="separator:ga963e45ec159f02253cb5a56e6af61d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a3267eb69f45df86b17705f760373af"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga7a3267eb69f45df86b17705f760373af">channel_failsafe_value</a> (int idx)</td></tr>
 <tr class="separator:ga7a3267eb69f45df86b17705f760373af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5665843aba35d577b6358ed5ab0497fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5665843aba35d577b6358ed5ab0497fa">DONT_BUILD_IF</a> (ACTUATORSETTINGS_TIMERUPDATEFREQ_NUMELEM &gt; <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gadb7be3564a51fca2f4044daa877ea7fc">PIOS_SERVO_MAX_BANKS</a>, TooManyServoBanks)</td></tr>
-<tr class="separator:ga5665843aba35d577b6358ed5ab0497fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -195,18 +198,31 @@ Variables</h2></td></tr>
 <tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
 <tr class="separator:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga611378d03e1993b9a31e0b0d052f4b00"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga611378d03e1993b9a31e0b0d052f4b00">flightStatusUpdated</a> = true</td></tr>
-<tr class="separator:ga611378d03e1993b9a31e0b0d052f4b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4232a52a92e810dc2549a90bd7f5891"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gad4232a52a92e810dc2549a90bd7f5891">manualControlCommandUpdated</a> = true</td></tr>
-<tr class="separator:gad4232a52a92e810dc2549a90bd7f5891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66f2cde210a84b3f404f0dd94f8c62ea"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga66f2cde210a84b3f404f0dd94f8c62ea">flight_status_updated</a> = true</td></tr>
+<tr class="separator:ga66f2cde210a84b3f404f0dd94f8c62ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac06e984663724f37717398baaaaef6b7"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gac06e984663724f37717398baaaaef6b7">manual_control_cmd_updated</a> = true</td></tr>
+<tr class="separator:gac06e984663724f37717398baaaaef6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb12ed460451faae4bc03f774fe95933"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gacb12ed460451faae4bc03f774fe95933">actuator_settings_updated</a> = true</td></tr>
 <tr class="separator:gacb12ed460451faae4bc03f774fe95933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga33c0776f38e10ccb9b721c1568ab3bbe"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga33c0776f38e10ccb9b721c1568ab3bbe">mixer_settings_updated</a> = true</td></tr>
 <tr class="separator:ga33c0776f38e10ccb9b721c1568ab3bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0708d823e057472d4690dbec90db5a91"><td class="memItemLeft" align="right" valign="top">static MixerSettingsData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga0708d823e057472d4690dbec90db5a91">mixerSettings</a></td></tr>
-<tr class="separator:ga0708d823e057472d4690dbec90db5a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8bd39157086bab21c5b5ecc55a39bdb"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+MixerSettingsMixer1TypeOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaa8bd39157086bab21c5b5ecc55a39bdb">types_mixer</a> [<a class="el" href="group___actuator_module.html#ga26733396829a78364e228452a3d426be">MAX_MIX_ACTUATORS</a>]</td></tr>
+<tr class="separator:gaa8bd39157086bab21c5b5ecc55a39bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeea8740d6daee7a45e6cd419f92cf913"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaeea8740d6daee7a45e6cd419f92cf913">motor_mixer</a> [<a class="el" href="group___actuator_module.html#ga26733396829a78364e228452a3d426be">MAX_MIX_ACTUATORS</a> *MIXERSETTINGS_MIXER1VECTOR_NUMELEM]</td></tr>
+<tr class="separator:gaeea8740d6daee7a45e6cd419f92cf913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d6ccb3c032d3f09fd5128c847ec674b"><td class="memItemLeft" align="right" valign="top">static ActuatorSettingsData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5d6ccb3c032d3f09fd5128c847ec674b">actuatorSettings</a></td></tr>
 <tr class="separator:ga5d6ccb3c032d3f09fd5128c847ec674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2850723437c013e81ea5232f44b5e7f1"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></td></tr>
+<tr class="separator:ga2850723437c013e81ea5232f44b5e7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa04da665607d59404d8512e29d60ed46"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaa04da665607d59404d8512e29d60ed46">curve1</a> [MIXERSETTINGS_THROTTLECURVE1_NUMELEM]</td></tr>
+<tr class="separator:gaa04da665607d59404d8512e29d60ed46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga862c7ff05fff688ff8bcdd52249aaa51"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga862c7ff05fff688ff8bcdd52249aaa51">curve2</a> [MIXERSETTINGS_THROTTLECURVE2_NUMELEM]</td></tr>
+<tr class="separator:ga862c7ff05fff688ff8bcdd52249aaa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c686e3a2dfa84c375e555ee4b494c44"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga7c686e3a2dfa84c375e555ee4b494c44">curve2_src</a></td></tr>
+<tr class="separator:ga7c686e3a2dfa84c375e555ee4b494c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Actuator module. Drives the actuators (servos, motors etc). </p>

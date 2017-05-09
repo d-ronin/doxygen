@@ -13,6 +13,7 @@ var group___targets =
     [ "POSIX Simulator", "group___sim.html", "group___sim" ],
     [ "Tau Labs Sparky", "group___sparky.html", "group___sparky" ],
     [ "Tau Labs Sparky2", "group___sparky2.html", "group___sparky2" ],
+    [ "SP Racing F3 Evo", "group___s_p_r_f3_e.html", "group___s_p_r_f3_e" ],
     [ "INIT_TASK_PRIORITY", "group___targets.html#ga344bef1b2813ae2f1a6b859d6bb4aa85", null ],
     [ "INIT_TASK_STACK", "group___targets.html#ga34774069b8b1e7cbbaf630aec7cdb654", null ],
     [ "__early_init", "group___targets.html#ga32c73ccd62cbae6568272cc6949531f2", null ],

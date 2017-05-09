@@ -25,7 +25,7 @@ var searchData=
   ['rawtile_2ecpp',['rawtile.cpp',['../rawtile_8cpp.html',1,'']]],
   ['rawtile_2eh',['rawtile.h',['../rawtile_8h.html',1,'']]],
   ['re',['re',['../struct_w_m_mtype___ellipsoid.html#aa051b086d02950addfe843925a79b3f9',1,'WMMtype_Ellipsoid']]],
-  ['read',['read',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#ab17f9aacac39aa19b98897bc6faafcd0',1,'ExtensionSystem::Internal::PluginSpecPrivate::read()'],['../group___core_plugin.html#ga62813f8316e5bdf825f049c85e1d210d',1,'Core::UAVConfigInfo::read()'],['../class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9af535b59005757ad8251db519a5f4a7e7',1,'ExtensionSystem::PluginSpec::Read()']]],
+  ['read',['Read',['../class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9af535b59005757ad8251db519a5f4a7e7',1,'ExtensionSystem::PluginSpec::Read()'],['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#ab17f9aacac39aa19b98897bc6faafcd0',1,'ExtensionSystem::Internal::PluginSpecPrivate::read()'],['../group___core_plugin.html#ga62813f8316e5bdf825f049c85e1d210d',1,'Core::UAVConfigInfo::read()']]],
   ['readable',['Readable',['../group___uploader.html#ga6af2cb0ef31c6977e89bc0e22aae4d55',1,'tl_dfu::device']]],
   ['readallnonsettingsmetadata',['readAllNonSettingsMetadata',['../group___u_a_v_object_util_plugin.html#ga1bc82b9cb256ba0c3974bab7489aba4a',1,'UAVObjectUtilManager']]],
   ['readandresetautoscalevalue',['readAndResetAutoscaleValue',['../group___scope_plugin.html#ga5adb8d57b4829f746f7437380b663d72',1,'SpectrogramData']]],

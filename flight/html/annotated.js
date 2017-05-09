@@ -69,6 +69,7 @@ var annotated =
     [ "lpfilter_biquad_state", "structlpfilter__biquad__state.html", "structlpfilter__biquad__state" ],
     [ "lpfilter_first_order", "structlpfilter__first__order.html", "structlpfilter__first__order" ],
     [ "lpfilter_state", "structlpfilter__state.html", "structlpfilter__state" ],
+    [ "MatrixMath", "class_matrix_math.html", "class_matrix_math" ],
     [ "menu_fsm_transition", "structmenu__fsm__transition.html", "structmenu__fsm__transition" ],
     [ "MiscMath", "class_misc_math.html", "class_misc_math" ],
     [ "morsel_packed_state", "unionmorsel__packed__state.html", "unionmorsel__packed__state" ],

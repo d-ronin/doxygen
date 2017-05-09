@@ -324,6 +324,8 @@ var annotated =
     [ "SpectrogramData", "class_spectrogram_data.html", "class_spectrogram_data" ],
     [ "SpectrogramScopeConfig", "class_spectrogram_scope_config.html", "class_spectrogram_scope_config" ],
     [ "SpinBoxDelegate", "class_spin_box_delegate.html", "class_spin_box_delegate" ],
+    [ "Sprf3e", "class_sprf3e.html", "class_sprf3e" ],
+    [ "Sprf3eConfiguration", "class_sprf3e_configuration.html", "class_sprf3e_configuration" ],
     [ "struct_cBuffer", "structstruct__c_buffer.html", "structstruct__c_buffer" ],
     [ "StyleAnimator", "class_style_animator.html", "class_style_animator" ],
     [ "SummaryPage", "class_summary_page.html", "class_summary_page" ],

@@ -147,6 +147,9 @@ var searchData=
   ['currentdevicecanread',['currentDeviceCanRead',['../group___common_f1.html#ga2cee1725bfc6f9ac723c3decb193c8c2',1,'op_dfu.c']]],
   ['currentdevicecanwrite',['currentDeviceCanWrite',['../group___common_f1.html#ga1347c5307f6e1b00d3a65e06184d0e09',1,'op_dfu.c']]],
   ['currentprogrammingdestination',['currentProgrammingDestination',['../group___common_f1.html#gabbc56fe66ed81f83684d10b8cae06e82',1,'op_dfu.c']]],
+  ['curve1',['curve1',['../group___actuator_module.html#gaa04da665607d59404d8512e29d60ed46',1,'actuator.c']]],
+  ['curve2',['curve2',['../group___actuator_module.html#ga862c7ff05fff688ff8bcdd52249aaa51',1,'actuator.c']]],
+  ['curve2_5fsrc',['curve2_src',['../group___actuator_module.html#ga7c686e3a2dfa84c375e555ee4b494c44',1,'actuator.c']]],
   ['custom_5ftext',['custom_text',['../structcharosd__state__t.html#a15949ac562cdf89b15d988163d322901',1,'charosd_state_t']]],
   ['cycle_5ftime',['cycle_time',['../structmsp__status.html#a4da4fc29dd11a3f5ecea4376cdfc07a8',1,'msp_status::cycle_time()'],['../msp__messages_8h.html#a9052f3c390670a0a01612b4207a5d216',1,'cycle_time():&#160;msp_messages.h']]]
 ];

@@ -21,7 +21,6 @@ var searchData=
   ['get_5flatitude_5frange',['Get_Latitude_Range',['../mgrs_8c.html#a9c0e8c80251a036f7b1c7b14ae520e91',1,'mgrs.c']]],
   ['get_5fmgrs_5fparameters',['Get_MGRS_Parameters',['../mgrs_8c.html#ae90a899228b2030daaf9eccd802c84a3',1,'Get_MGRS_Parameters(double *a, double *f, char *Ellipsoid_Code):&#160;mgrs.c'],['../mgrs_8h.html#a1a2d739379091894ffd2641350a1589f',1,'Get_MGRS_Parameters(double *a, double *f, char *Ellipsoid_Code):&#160;mgrs.c']]],
   ['get_5fminimum_5flogging_5fperiod',['get_minimum_logging_period',['../group___logging.html#ga4254d3604fba2fb281c7f5002462cb47',1,'logging.c']]],
-  ['get_5fmixer_5ftype',['get_mixer_type',['../group___actuator_module.html#ga112acfe5409883ec6bfa6e6e1eebb23b',1,'actuator.c']]],
   ['get_5fmonotonic_5fus_5ftime',['get_monotonic_us_time',['../group___p_i_o_s___d_e_l_a_y.html#ga60da713f0af44992439ecc77a1096dd2',1,'pios_delay.c']]],
   ['get_5fnext_5fcolor',['get_next_color',['../group___on_screen_display.html#ga7f8c829269342d45759d3def6ad553fe',1,'osd_menu.c']]],
   ['get_5fnext_5fmessage',['get_next_message',['../group___msp_uavo_bridge.html#gad6e9e30e2c1754ef6870c1c8384727b8',1,'mspuavobridge.c']]],

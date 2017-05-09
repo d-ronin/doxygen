@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be4b97e</span>
+   &#160;<span id="projectnumber">7a5243f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -134,6 +134,20 @@ Macros</h2></td></tr>
 <tr class="separator:a5da054c0df014f54c84ea22657f0e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08410681ba3bf94f28eb292acd2e8455"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="misc__math_8h.html#a08410681ba3bf94f28eb292acd2e8455">s_qA</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:a08410681ba3bf94f28eb292acd2e8455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3abbb071ff91dece199dfaa18dbb1ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gaa3abbb071ff91dece199dfaa18dbb1ac">TOL_EPS</a>&#160;&#160;&#160;0.0001f</td></tr>
+<tr class="separator:gaa3abbb071ff91dece199dfaa18dbb1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga836b829d17fee8b1db6d0f71308103ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga836b829d17fee8b1db6d0f71308103ff">PSEUDOINV_CONVERGE_LIMIT</a>&#160;&#160;&#160;75</td></tr>
+<tr class="separator:ga836b829d17fee8b1db6d0f71308103ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga937c2d5c6fe809078b7ba7501d023b1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga937c2d5c6fe809078b7ba7501d023b1c">matrix_mul_check</a>(a, b, out, arows, acolsbrows, bcols)</td></tr>
+<tr class="separator:ga937c2d5c6fe809078b7ba7501d023b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad02530851ff513eccb8c63f65221ad57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gad02530851ff513eccb8c63f65221ad57">matrix_mul_scalar_check</a>(a, scalar, out, rows, cols)</td></tr>
+<tr class="separator:gad02530851ff513eccb8c63f65221ad57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b0090e42a9077c4313d1652b851f226"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga8b0090e42a9077c4313d1652b851f226">matrix_add_check</a>(a, b, out, rows, cols)</td></tr>
+<tr class="separator:ga8b0090e42a9077c4313d1652b851f226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ada1aee5ff404e14e05285429f15420"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga6ada1aee5ff404e14e05285429f15420">matrix_sub_check</a>(a, b, out, rows, cols)</td></tr>
+<tr class="separator:ga6ada1aee5ff404e14e05285429f15420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a28f3e7f624e4709ad1a135066fd907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga4a28f3e7f624e4709ad1a135066fd907">matrix_transpose_check</a>(a, b, out, rows, cols)</td></tr>
+<tr class="separator:ga4a28f3e7f624e4709ad1a135066fd907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga676fea0678945be0b1da32705b938e1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga676fea0678945be0b1da32705b938e1a">cast_uint32_t</a>&#160;&#160;&#160;(uint32_t)</td></tr>
 <tr class="separator:ga676fea0678945be0b1da32705b938e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16f6be8c451da8978e1885d0924e0be9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga16f6be8c451da8978e1885d0924e0be9">powapprox</a>&#160;&#160;&#160;powf</td></tr>
@@ -180,7 +194,33 @@ Functions</h2></td></tr>
 <tr class="memitem:gab2cad9810e0c0c09e0988b17159e4d1c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gab2cad9810e0c0c09e0988b17159e4d1c">IS_NOT_FINITE</a> (float x)</td></tr>
 <tr class="separator:gab2cad9810e0c0c09e0988b17159e4d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f4d4e368bc5b651d7c0b006db570bfd"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">sin_approx</a> (int32_t x)</td></tr>
+<tr class="memdesc:ga5f4d4e368bc5b651d7c0b006db570bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast approximation of sine; 3rd order taylor expansion. Based on <a href="http://www.coranac.com/2009/07/sines/">http://www.coranac.com/2009/07/sines/</a>.  <a href="group___tau_labs_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">More...</a><br/></td></tr>
 <tr class="separator:ga5f4d4e368bc5b651d7c0b006db570bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab066fad7258a2674ce1e4452f52ea72c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gab066fad7258a2674ce1e4452f52ea72c">matrix_mul</a> (const float *a, const float *b, float *out, int arows, int acolsbrows, int bcols)</td></tr>
+<tr class="memdesc:gab066fad7258a2674ce1e4452f52ea72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies out = a b.  <a href="group___tau_labs_math.html#gab066fad7258a2674ce1e4452f52ea72c">More...</a><br/></td></tr>
+<tr class="separator:gab066fad7258a2674ce1e4452f52ea72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7351518c8117b810205f2644e096af14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga7351518c8117b810205f2644e096af14">matrix_mul_scalar</a> (const float *a, float scalar, float *out, int rows, int cols)</td></tr>
+<tr class="memdesc:ga7351518c8117b810205f2644e096af14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a matrix by a scalar Can safely be done in-place. (e.g. is slow and not vectorized/unrolled)  <a href="group___tau_labs_math.html#ga7351518c8117b810205f2644e096af14">More...</a><br/></td></tr>
+<tr class="separator:ga7351518c8117b810205f2644e096af14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9df8de687673ab525cc81a7fef38b295"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga9df8de687673ab525cc81a7fef38b295">matrix_add</a> (const float *a, const float *b, float *out, int rows, int cols)</td></tr>
+<tr class="memdesc:ga9df8de687673ab525cc81a7fef38b295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled)  <a href="group___tau_labs_math.html#ga9df8de687673ab525cc81a7fef38b295">More...</a><br/></td></tr>
+<tr class="separator:ga9df8de687673ab525cc81a7fef38b295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddd594bcd5fc2db0faae806b23039000"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gaddd594bcd5fc2db0faae806b23039000">matrix_sub</a> (const float *a, const float *b, float *out, int rows, int cols)</td></tr>
+<tr class="memdesc:gaddd594bcd5fc2db0faae806b23039000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled)  <a href="group___tau_labs_math.html#gaddd594bcd5fc2db0faae806b23039000">More...</a><br/></td></tr>
+<tr class="separator:gaddd594bcd5fc2db0faae806b23039000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7db4bbfcdc84fac92fffadcc240ed626"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">matrix_transpose</a> (const float *a, float *out, int arows, int acols)</td></tr>
+<tr class="memdesc:ga7db4bbfcdc84fac92fffadcc240ed626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transposes a matrix.  <a href="group___tau_labs_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">More...</a><br/></td></tr>
+<tr class="separator:ga7db4bbfcdc84fac92fffadcc240ed626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6593b4d9436ab8e4c3dbb9f0f20e9b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gaab6593b4d9436ab8e4c3dbb9f0f20e9b">matrix_pseudoinv_convergecheck</a> (const float *a, const float *b, const float *prod, int rows, int cols)</td></tr>
+<tr class="separator:gaab6593b4d9436ab8e4c3dbb9f0f20e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e7f8d70b4a58de62cb0afbae4a943c0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga0e7f8d70b4a58de62cb0afbae4a943c0">matrix_pseudoinv_step</a> (const float *a, float *ainv, int arows, int acols)</td></tr>
+<tr class="separator:ga0e7f8d70b4a58de62cb0afbae4a943c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70ffb04a77a4e6d687aeb96bf94f00fb"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga70ffb04a77a4e6d687aeb96bf94f00fb">matrix_getmaxabs</a> (const float *a, int arows, int acols)</td></tr>
+<tr class="memdesc:ga70ffb04a77a4e6d687aeb96bf94f00fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the largest value in a matrix.  <a href="group___tau_labs_math.html#ga70ffb04a77a4e6d687aeb96bf94f00fb">More...</a><br/></td></tr>
+<tr class="separator:ga70ffb04a77a4e6d687aeb96bf94f00fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12de22eb192643cb63cbcf5ebb112a99"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#ga12de22eb192643cb63cbcf5ebb112a99">matrix_pseudoinv</a> (const float *a, float *out, int arows, int acols)</td></tr>
+<tr class="memdesc:ga12de22eb192643cb63cbcf5ebb112a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a pseudo-inverse of a matrix.  <a href="group___tau_labs_math.html#ga12de22eb192643cb63cbcf5ebb112a99">More...</a><br/></td></tr>
+<tr class="separator:ga12de22eb192643cb63cbcf5ebb112a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe73885a10053c8929715d2336aae9a0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gabe73885a10053c8929715d2336aae9a0">fastlog2</a> (float x)</td></tr>
 <tr class="separator:gabe73885a10053c8929715d2336aae9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2fc1eddf336e7821a5931054c23567c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tau_labs_math.html#gaa2fc1eddf336e7821a5931054c23567c">fastpow2</a> (float <a class="el" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a>)</td></tr>

@@ -310,6 +310,7 @@ var hierarchy =
         [ "Simulation", "class_simulation.html", null ],
         [ "Sparky", "class_sparky.html", null ],
         [ "Sparky2", "class_sparky2.html", null ],
+        [ "Sprf3e", "class_sprf3e.html", null ],
         [ "TauLink", "class_tau_link.html", null ]
       ] ],
       [ "Core::IConnection", "class_core_1_1_i_connection.html", [
@@ -676,6 +677,7 @@ var hierarchy =
         [ "OutputChannelForm", "class_output_channel_form.html", null ],
         [ "SeppukuConfiguration", "class_seppuku_configuration.html", null ],
         [ "SimulationConfiguration", "class_simulation_configuration.html", null ],
+        [ "Sprf3eConfiguration", "class_sprf3e_configuration.html", null ],
         [ "TauLinkGadgetWidget", "class_tau_link_gadget_widget.html", null ],
         [ "VehicleConfig", "class_vehicle_config.html", [
           [ "ConfigCcpmWidget", "class_config_ccpm_widget.html", null ],

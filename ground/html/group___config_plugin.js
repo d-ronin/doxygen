@@ -689,6 +689,7 @@ var group___config_plugin =
     [ "method", "group___config_plugin.html#ga05e7aee4f67f052f8e5bb97a717ac966", null ],
     [ "Min", "group___config_plugin.html#ga68b64812e9062f2c280eebb8ad8961c4", null ],
     [ "mixerRange", "group___config_plugin.html#ga66dd9919d99223fdbf5b3dcff803f863", null ],
+    [ "mixerScale", "group___config_plugin.html#ga3d5e58628505e424b3e97d7b3f75428e", null ],
     [ "mixerTypeDescriptions", "group___config_plugin.html#ga05f4cbfd3c5b0fcc642f17003888459a", null ],
     [ "mixerTypes", "group___config_plugin.html#ga494123875db35fe04e5a0512850e8c02", null ],
     [ "mixerVectors", "group___config_plugin.html#ga0f47a1cc91e5a63c70f0802f3533e193", null ],

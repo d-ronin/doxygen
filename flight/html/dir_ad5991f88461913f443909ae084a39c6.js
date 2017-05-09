@@ -16,5 +16,6 @@ var dir_ad5991f88461913f443909ae084a39c6 =
     [ "seppuku", "dir_942f3a168ec534ab0c635d03fe03fceb.html", "dir_942f3a168ec534ab0c635d03fe03fceb" ],
     [ "simulation", "dir_6c1afca738176637bc35c9437a1055be.html", "dir_6c1afca738176637bc35c9437a1055be" ],
     [ "sparky", "dir_824b469cab351a65f93bf91e6d5d50d1.html", "dir_824b469cab351a65f93bf91e6d5d50d1" ],
-    [ "sparky2", "dir_caa58e1f059b0526e7eb4fea522b2252.html", "dir_caa58e1f059b0526e7eb4fea522b2252" ]
+    [ "sparky2", "dir_caa58e1f059b0526e7eb4fea522b2252.html", "dir_caa58e1f059b0526e7eb4fea522b2252" ],
+    [ "sprf3e", "dir_b5316fad7a40557fbcad8df7db28cb78.html", "dir_b5316fad7a40557fbcad8df7db28cb78" ]
 ];

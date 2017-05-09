@@ -250,6 +250,7 @@ var hierarchy =
         [ "BoundSym", "class_bound_sym.html", null ],
         [ "CircularModulusDeg", "class_circular_modulus_deg.html", null ],
         [ "LinearInterpolate", "class_linear_interpolate.html", null ],
+        [ "MatrixMath", "class_matrix_math.html", null ],
         [ "Vector2Clip", "class_vector2_clip.html", null ]
       ] ],
       [ "Time", "class_time.html", null ]

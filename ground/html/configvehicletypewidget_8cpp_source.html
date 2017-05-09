@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be4b97e</span>
+   &#160;<span id="projectnumber">7a5243f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -749,285 +749,297 @@ $(document).ready(function(){initNavTree('configvehicletypewidget_8cpp_source.ht
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            m_aircraft-&gt;customMixerTable-&gt;item(5, channel)</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                -&gt;setText(QString::number(vconfig-&gt;getMixerVectorValue(</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                    mixerSettings, channel, MixerSettings::MIXER1VECTOR_YAW)));</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        }</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    }</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;}</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::updateObjectsFromWidgets()</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;{</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    MixerSettings *mixerSettings = MixerSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    Q_ASSERT(mixerSettings);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    QPointer&lt;VehicleConfig&gt; vconfig = <span class="keyword">new</span> <a class="code" href="class_vehicle_config.html">VehicleConfig</a>();</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    frameType = SystemSettings::AIRFRAMETYPE_CUSTOM; <span class="comment">// Set airframe type default to &quot;Custom&quot;</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Fixed Wing&quot;</span>) {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        frameType = m_fixedwing-&gt;updateConfigObjectsFromWidgets();</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Multirotor&quot;</span>) {</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        frameType = m_multirotor-&gt;updateConfigObjectsFromWidgets();</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Helicopter&quot;</span>) {</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        frameType = m_heli-&gt;updateConfigObjectsFromWidgets();</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Ground&quot;</span>) {</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        frameType = m_groundvehicle-&gt;updateConfigObjectsFromWidgets();</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        vconfig-&gt;setThrottleCurve(mixerSettings, MixerSettings::MIXER1VECTOR_THROTTLECURVE1,</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                                  m_aircraft-&gt;customThrottle1Curve-&gt;getCurve());</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        vconfig-&gt;setThrottleCurve(mixerSettings, MixerSettings::MIXER1VECTOR_THROTTLECURVE2,</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                                  m_aircraft-&gt;customThrottle2Curve-&gt;getCurve());</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <span class="comment">// Update the table:</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> channel = 0; channel &lt; (int)(ActuatorCommand::CHANNEL_NUMELEM); channel++) {</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;            QComboBox *q = (QComboBox *)m_aircraft-&gt;customMixerTable-&gt;cellWidget(0, channel);</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Disabled&quot;</span>)</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_DISABLED);</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Motor&quot;</span>)</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_MOTOR);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Servo&quot;</span>)</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_SERVO);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraRoll&quot;</span>)</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_CAMERAROLL);</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraPitch&quot;</span>)</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel,</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                                      MixerSettings::MIXER1TYPE_CAMERAPITCH);</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraYaw&quot;</span>)</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_CAMERAYAW);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Accessory0&quot;</span>)</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_ACCESSORY0);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Accessory1&quot;</span>)</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_ACCESSORY1);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Accessory2&quot;</span>)</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_ACCESSORY2);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_THROTTLECURVE1,</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(1, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            m_aircraft-&gt;customMixerTable-&gt;item(6, channel)</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                -&gt;setText(QString::number(vconfig-&gt;getMixerVectorValue(</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                    mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY0)));</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            m_aircraft-&gt;customMixerTable-&gt;item(7, channel)</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                -&gt;setText(QString::number(vconfig-&gt;getMixerVectorValue(</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                    mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY1)));</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;            m_aircraft-&gt;customMixerTable-&gt;item(8, channel)</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                -&gt;setText(QString::number(vconfig-&gt;getMixerVectorValue(</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                    mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY2)));</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        }</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    }</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;}</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::updateObjectsFromWidgets()</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;{</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    MixerSettings *mixerSettings = MixerSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    Q_ASSERT(mixerSettings);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    QPointer&lt;VehicleConfig&gt; vconfig = <span class="keyword">new</span> <a class="code" href="class_vehicle_config.html">VehicleConfig</a>();</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    frameType = SystemSettings::AIRFRAMETYPE_CUSTOM; <span class="comment">// Set airframe type default to &quot;Custom&quot;</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Fixed Wing&quot;</span>) {</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        frameType = m_fixedwing-&gt;updateConfigObjectsFromWidgets();</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Multirotor&quot;</span>) {</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        frameType = m_multirotor-&gt;updateConfigObjectsFromWidgets();</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Helicopter&quot;</span>) {</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        frameType = m_heli-&gt;updateConfigObjectsFromWidgets();</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_aircraft-&gt;aircraftType-&gt;currentText() == <span class="stringliteral">&quot;Ground&quot;</span>) {</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        frameType = m_groundvehicle-&gt;updateConfigObjectsFromWidgets();</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        vconfig-&gt;setThrottleCurve(mixerSettings, MixerSettings::MIXER1VECTOR_THROTTLECURVE1,</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                                  m_aircraft-&gt;customThrottle1Curve-&gt;getCurve());</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        vconfig-&gt;setThrottleCurve(mixerSettings, MixerSettings::MIXER1VECTOR_THROTTLECURVE2,</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                                  m_aircraft-&gt;customThrottle2Curve-&gt;getCurve());</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="comment">// Update the table:</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> channel = 0; channel &lt; (int)(ActuatorCommand::CHANNEL_NUMELEM); channel++) {</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            QComboBox *q = (QComboBox *)m_aircraft-&gt;customMixerTable-&gt;cellWidget(0, channel);</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Disabled&quot;</span>)</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_DISABLED);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Motor&quot;</span>)</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_MOTOR);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;Servo&quot;</span>)</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_SERVO);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraRoll&quot;</span>)</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_CAMERAROLL);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraPitch&quot;</span>)</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel,</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                                      MixerSettings::MIXER1TYPE_CAMERAPITCH);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (q-&gt;currentText() == <span class="stringliteral">&quot;CameraYaw&quot;</span>)</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                vconfig-&gt;setMixerType(mixerSettings, channel, MixerSettings::MIXER1TYPE_CAMERAYAW);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_THROTTLECURVE2,</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(2, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_THROTTLECURVE1,</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(1, channel)-&gt;text().toDouble());</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_ROLL,</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(3, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_THROTTLECURVE2,</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(2, channel)-&gt;text().toDouble());</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_PITCH,</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(4, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_ROLL,</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(3, channel)-&gt;text().toDouble());</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_YAW,</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(5, channel)-&gt;text().toDouble());</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        }</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        <span class="comment">// set the airframe type</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        SystemSettings *systemSettings = SystemSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        Q_ASSERT(systemSettings);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        SystemSettings::DataFields systemSettingsData = systemSettings-&gt;getData();</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        systemSettingsData.AirframeType = frameType;</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        systemSettings-&gt;setData(systemSettingsData);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    }</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="comment">/* Call the superclass fairly late here, because it wants to save things</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="comment">     * we&#39;re still touching.</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga4e59f88c43451ae4282077f9a9214cea">ConfigTaskWidget::updateObjectsFromWidgets</a>();</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    updateCustomAirframeUI();</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;}</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::openHelp()</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;{</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    QDesktopServices::openUrl(</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        QUrl(<span class="stringliteral">&quot;https://github.com/d-ronin/dRonin/wiki/OnlineHelp:-Vehicle-configuration&quot;</span>,</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;             QUrl::StrictMode));</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;}</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::setComboCurrentIndex(QComboBox *box, <span class="keywordtype">int</span> index)</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;{</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <span class="keywordflow">if</span> (index &gt;= 0 &amp;&amp; index &lt; box-&gt;count())</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        box-&gt;setCurrentIndex(index);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;}</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::reverseMultirotorMotor()</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;{</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    m_multirotor-&gt;drawAirframe(frameType);</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::bnLevelTrim_clicked()</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;{</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    QMessageBox msgBox(QMessageBox::Question, tr(<span class="stringliteral">&quot;Trim level&quot;</span>),</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                       tr(<span class="stringliteral">&quot;Use the transmitter trim to set the autopilot for straight and level &quot;</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                          <span class="stringliteral">&quot;flight? (Please see the tooltip for more information.)&quot;</span>),</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                       QMessageBox::Yes | QMessageBox::No, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordtype">int</span> userChoice = msgBox.exec();</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_PITCH,</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(4, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_YAW,</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(5, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY0,</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(6, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY1,</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(7, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            vconfig-&gt;setMixerVectorValue(</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                mixerSettings, channel, MixerSettings::MIXER1VECTOR_ACCESSORY2,</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;                m_aircraft-&gt;customMixerTable-&gt;item(8, channel)-&gt;text().toDouble());</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        }</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        <span class="comment">// set the airframe type</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        SystemSettings *systemSettings = SystemSettings::GetInstance(<a class="code" href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">getObjectManager</a>());</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        Q_ASSERT(systemSettings);</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        SystemSettings::DataFields systemSettingsData = systemSettings-&gt;getData();</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        systemSettingsData.AirframeType = frameType;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        systemSettings-&gt;setData(systemSettingsData);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    }</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="comment">/* Call the superclass fairly late here, because it wants to save things</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="comment">     * we&#39;re still touching.</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga4e59f88c43451ae4282077f9a9214cea">ConfigTaskWidget::updateObjectsFromWidgets</a>();</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    updateCustomAirframeUI();</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;}</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::openHelp()</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;{</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    QDesktopServices::openUrl(</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        QUrl(<span class="stringliteral">&quot;https://github.com/d-ronin/dRonin/wiki/OnlineHelp:-Vehicle-configuration&quot;</span>,</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;             QUrl::StrictMode));</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;}</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::setComboCurrentIndex(QComboBox *box, <span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;{</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="keywordflow">if</span> (index &gt;= 0 &amp;&amp; index &lt; box-&gt;count())</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        box-&gt;setCurrentIndex(index);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;}</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::reverseMultirotorMotor()</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;{</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    m_multirotor-&gt;drawAirframe(frameType);</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;}</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="comment">// If the user cancels, stop here.</span></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keywordflow">if</span> (userChoice != QMessageBox::Yes)</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="comment">// Call bias set function</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <a class="code" href="class_vehicle_trim.html">VehicleTrim</a> vehicleTrim;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5">VehicleTrim::autopilotLevelBiasMessages</a> ret;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    ret = vehicleTrim.<a class="code" href="class_vehicle_trim.html#a58153d5aa2666c30a1f3a4913570f6ce">setAutopilotBias</a>();</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="comment">// Process return state</span></div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5ad25a60ce8684d58bcbb905fc406779f2">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_MISSING_RECEIVER</a>: {</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;No receiver detected&quot;</span>),</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                           tr(<span class="stringliteral">&quot;Transmitter and receiver must be powered on.&quot;</span>), QMessageBox::Ok,</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                           <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    }</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5abad218a93f16f90fbc0e540d2ad811b8">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_ARMED_STATE</a>: {</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle armed&quot;</span>),</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                           tr(<span class="stringliteral">&quot;The autopilot must be disarmed first.&quot;</span>), QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    }</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a61443cd02018d565af2587bbbe0c7f8e">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_FLIGHTMODE</a>: {</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        QMessageBox msgBox(</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle not in Stabilized mode&quot;</span>),</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            tr(<span class="stringliteral">&quot;The autopilot must be in Leveling, Stabilized1, Stabilized2, or Stabilized3 mode.&quot;</span>),</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    }</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a0d1b5f9e46bf219229cd6c3db15de08c">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_STABILIZATIONMODE</a>: {</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        QMessageBox msgBox(QMessageBox::Critical,</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                           tr(<span class="stringliteral">&quot;Incorrect roll and pitch stabilization modes.&quot;</span>),</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                           tr(<span class="stringliteral">&quot;Both roll and pitch must be in Attitude stabilization mode.&quot;</span>),</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                           QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    }</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a23676fda61cdf494afed117bf985ee1b">VehicleTrim::AUTOPILOT_LEVEL_SUCCESS</a>:</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        QMessageBox msgBox(</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            QMessageBox::Information, tr(<span class="stringliteral">&quot;Trim updated&quot;</span>),</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            tr(<span class="stringliteral">&quot;Trim successfully updated, please reset the transmitter&#39;s trim to zero and be sure &quot;</span></div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;               <span class="stringliteral">&quot;to configure stabilization settings to use Attitude mode.&quot;</span>),</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="comment">// Set tab as dirty (i.e. having unsaved changes).</span></div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    }</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::bnServoTrim_clicked()</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;{</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    QMessageBox msgBox(QMessageBox::Question, tr(<span class="stringliteral">&quot;Trim servos&quot;</span>),</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                       <span class="stringliteral">&quot;Use the transmitter trim to set servos for wings-level, constant-speed &quot;</span></div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                       <span class="stringliteral">&quot;flight? (Please see the tooltip for more information.)&quot;</span>,</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                       QMessageBox::Ok | QMessageBox::Cancel, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keywordtype">int</span> cancelAction = msgBox.exec();</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::bnLevelTrim_clicked()</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;{</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    QMessageBox msgBox(QMessageBox::Question, tr(<span class="stringliteral">&quot;Trim level&quot;</span>),</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                       tr(<span class="stringliteral">&quot;Use the transmitter trim to set the autopilot for straight and level &quot;</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                          <span class="stringliteral">&quot;flight? (Please see the tooltip for more information.)&quot;</span>),</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                       QMessageBox::Yes | QMessageBox::No, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keywordtype">int</span> userChoice = msgBox.exec();</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="comment">// If the user cancels, stop here.</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    <span class="keywordflow">if</span> (userChoice != QMessageBox::Yes)</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="comment">// Call bias set function</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <a class="code" href="class_vehicle_trim.html">VehicleTrim</a> vehicleTrim;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5">VehicleTrim::autopilotLevelBiasMessages</a> ret;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    ret = vehicleTrim.<a class="code" href="class_vehicle_trim.html#a58153d5aa2666c30a1f3a4913570f6ce">setAutopilotBias</a>();</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <span class="comment">// Process return state</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5ad25a60ce8684d58bcbb905fc406779f2">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_MISSING_RECEIVER</a>: {</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;No receiver detected&quot;</span>),</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                           tr(<span class="stringliteral">&quot;Transmitter and receiver must be powered on.&quot;</span>), QMessageBox::Ok,</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                           <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    }</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5abad218a93f16f90fbc0e540d2ad811b8">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_ARMED_STATE</a>: {</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle armed&quot;</span>),</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                           tr(<span class="stringliteral">&quot;The autopilot must be disarmed first.&quot;</span>), QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    }</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a61443cd02018d565af2587bbbe0c7f8e">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_FLIGHTMODE</a>: {</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        QMessageBox msgBox(</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle not in Stabilized mode&quot;</span>),</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            tr(<span class="stringliteral">&quot;The autopilot must be in Leveling, Stabilized1, Stabilized2, or Stabilized3 mode.&quot;</span>),</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    }</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a0d1b5f9e46bf219229cd6c3db15de08c">VehicleTrim::AUTOPILOT_LEVEL_FAILED_DUE_TO_STABILIZATIONMODE</a>: {</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        QMessageBox msgBox(QMessageBox::Critical,</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                           tr(<span class="stringliteral">&quot;Incorrect roll and pitch stabilization modes.&quot;</span>),</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                           tr(<span class="stringliteral">&quot;Both roll and pitch must be in Attitude stabilization mode.&quot;</span>),</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                           QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    }</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#a9bfc469085f35982b01d4a7d1c8508c5a23676fda61cdf494afed117bf985ee1b">VehicleTrim::AUTOPILOT_LEVEL_SUCCESS</a>:</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        QMessageBox msgBox(</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            QMessageBox::Information, tr(<span class="stringliteral">&quot;Trim updated&quot;</span>),</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            tr(<span class="stringliteral">&quot;Trim successfully updated, please reset the transmitter&#39;s trim to zero and be sure &quot;</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;               <span class="stringliteral">&quot;to configure stabilization settings to use Attitude mode.&quot;</span>),</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        <span class="comment">// Set tab as dirty (i.e. having unsaved changes).</span></div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    }</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;}</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="comment">// If the user cancels, stop here.</span></div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="keywordflow">if</span> (cancelAction != QMessageBox::Ok)</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="comment">// Call servo trim function</span></div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    <a class="code" href="class_vehicle_trim.html">VehicleTrim</a> vehicleTrim;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acc">VehicleTrim::actuatorTrimMessages</a> ret;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    ret = vehicleTrim.<a class="code" href="class_vehicle_trim.html#a4136ac0da8dfa1891710dfb3fd371fe8">setTrimActuators</a>();</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="comment">// Process return state</span></div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca20670d85fb0302601daff14cd7e7218b">VehicleTrim::ACTUATOR_TRIM_FAILED_DUE_TO_MISSING_RECEIVER</a>: {</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;No receiver detected&quot;</span>),</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                           <span class="stringliteral">&quot;Transmitter and receiver must be powered on.&quot;</span>, QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    }</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca4393902e9b07498d72d14e15ebe048db">VehicleTrim::ACTUATOR_TRIM_FAILED_DUE_TO_FLIGHTMODE</a>: {</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle not in manual mode&quot;</span>),</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                           <span class="stringliteral">&quot;The autopilot must be in manual flight mode.&quot;</span>, QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    }</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca6f01e867c6717c8c7017cb9096e414db">VehicleTrim::ACTUATOR_TRIM_SUCCESS</a>:</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        QMessageBox msgBox(</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;            QMessageBox::Information, tr(<span class="stringliteral">&quot;Trim updated&quot;</span>),</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;            <span class="stringliteral">&quot;Servo trim successfully updated, please reset the transmitter&#39;s trim before flying.&quot;</span>,</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        msgBox.exec();</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <span class="comment">// Set tab as dirty (i.e. having unsaved changes).</span></div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::bnServoTrim_clicked()</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;{</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    QMessageBox msgBox(QMessageBox::Question, tr(<span class="stringliteral">&quot;Trim servos&quot;</span>),</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                       <span class="stringliteral">&quot;Use the transmitter trim to set servos for wings-level, constant-speed &quot;</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                       <span class="stringliteral">&quot;flight? (Please see the tooltip for more information.)&quot;</span>,</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                       QMessageBox::Ok | QMessageBox::Cancel, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordtype">int</span> cancelAction = msgBox.exec();</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="comment">// If the user cancels, stop here.</span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    <span class="keywordflow">if</span> (cancelAction != QMessageBox::Ok)</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    <span class="comment">// Call servo trim function</span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <a class="code" href="class_vehicle_trim.html">VehicleTrim</a> vehicleTrim;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acc">VehicleTrim::actuatorTrimMessages</a> ret;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    ret = vehicleTrim.<a class="code" href="class_vehicle_trim.html#a4136ac0da8dfa1891710dfb3fd371fe8">setTrimActuators</a>();</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    <span class="comment">// Process return state</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <span class="keywordflow">switch</span> (ret) {</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca20670d85fb0302601daff14cd7e7218b">VehicleTrim::ACTUATOR_TRIM_FAILED_DUE_TO_MISSING_RECEIVER</a>: {</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;No receiver detected&quot;</span>),</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                           <span class="stringliteral">&quot;Transmitter and receiver must be powered on.&quot;</span>, QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    }</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca4393902e9b07498d72d14e15ebe048db">VehicleTrim::ACTUATOR_TRIM_FAILED_DUE_TO_FLIGHTMODE</a>: {</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        QMessageBox msgBox(QMessageBox::Critical, tr(<span class="stringliteral">&quot;Vehicle not in manual mode&quot;</span>),</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                           <span class="stringliteral">&quot;The autopilot must be in manual flight mode.&quot;</span>, QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        msgBox.exec();</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    }</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;}</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::addToDirtyMonitor()</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;{</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customMixerTable);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customThrottle1Curve-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customThrottle2Curve-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiThrottleCurve-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fixedWingThrottle-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fixedWingType);</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleThrottle1-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleThrottle2-&gt;getCurveWidget());</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleType);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multirotorFrameType);</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox1);</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox2);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox3);</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox4);</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox5);</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox6);</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox7);</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox8);</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrPitchMixLevel);</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrRollMixLevel);</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrYawMixLevel);</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;triYawChannelBox);</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;aircraftType);</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwEngineChannelBox);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwAileron1ChannelBox);</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwAileron2ChannelBox);</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwElevator1ChannelBox);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwElevator2ChannelBox);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwRudder1ChannelBox);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwRudder2ChannelBox);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;elevonSlider1);</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;elevonSlider2);</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmType);</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmTailChannel);</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmEngineChannel);</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoWChannel);</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoXChannel);</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoYChannel);</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmSingleServo);</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoZChannel);</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleW);</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleX);</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCorrectionAngle);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleZ);</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleY);</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectivePassthrough);</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmLinkRoll);</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmLinkCyclic);</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRevoSlider);</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmREVOspinBox);</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveSlider);</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectivespinBox);</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveScale);</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveScaleBox);</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCyclicScale);</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmPitchScale);</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmPitchScaleBox);</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRollScale);</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRollScaleBox);</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;SwashLvlPositionSlider);</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;SwashLvlPositionSpinBox);</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ThrottleCurve-&gt;getCurveWidget());</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;PitchCurve-&gt;getCurveWidget());</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAdvancedSettingsTable);</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;}</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca6f01e867c6717c8c7017cb9096e414db">VehicleTrim::ACTUATOR_TRIM_SUCCESS</a>:</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        QMessageBox msgBox(</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            QMessageBox::Information, tr(<span class="stringliteral">&quot;Trim updated&quot;</span>),</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;            <span class="stringliteral">&quot;Servo trim successfully updated, please reset the transmitter&#39;s trim before flying.&quot;</span>,</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;            QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;        msgBox.exec();</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;        <span class="comment">// Set tab as dirty (i.e. having unsaved changes).</span></div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    }</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;}</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="keywordtype">void</span> ConfigVehicleTypeWidget::addToDirtyMonitor()</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;{</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customMixerTable);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customThrottle1Curve-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;customThrottle2Curve-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiThrottleCurve-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fixedWingThrottle-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fixedWingType);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleThrottle1-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleThrottle2-&gt;getCurveWidget());</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;groundVehicleType);</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multirotorFrameType);</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox1);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox2);</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox3);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox4);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox5);</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox6);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox7);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;multiMotorChannelBox8);</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrPitchMixLevel);</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrRollMixLevel);</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;mrYawMixLevel);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;triYawChannelBox);</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;aircraftType);</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwEngineChannelBox);</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwAileron1ChannelBox);</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwAileron2ChannelBox);</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwElevator1ChannelBox);</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwElevator2ChannelBox);</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwRudder1ChannelBox);</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;fwRudder2ChannelBox);</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;elevonSlider1);</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_aircraft-&gt;elevonSlider2);</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmType);</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmTailChannel);</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmEngineChannel);</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoWChannel);</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoXChannel);</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoYChannel);</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmSingleServo);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmServoZChannel);</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleW);</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleX);</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCorrectionAngle);</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleZ);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAngleY);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectivePassthrough);</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmLinkRoll);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmLinkCyclic);</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRevoSlider);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmREVOspinBox);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveSlider);</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectivespinBox);</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveScale);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCollectiveScaleBox);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmCyclicScale);</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmPitchScale);</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmPitchScaleBox);</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRollScale);</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmRollScaleBox);</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;SwashLvlPositionSlider);</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;SwashLvlPositionSpinBox);</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ThrottleCurve-&gt;getCurveWidget());</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;PitchCurve-&gt;getCurveWidget());</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga3edd7677e362be586b059c066e0a4e30">addWidget</a>(m_heli-&gt;m_ccpm-&gt;ccpmAdvancedSettingsTable);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;}</div>
 <div class="ttc" id="group___config_plugin_html_ga7edb0b23fc32af7728baa08038a79202"><div class="ttname"><a href="group___config_plugin.html#ga7edb0b23fc32af7728baa08038a79202">ConfigVehicleTypeWidget::~ConfigVehicleTypeWidget</a></div><div class="ttdeci">~ConfigVehicleTypeWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configvehicletypewidget_8cpp_source.html#l00269">configvehicletypewidget.cpp:269</a></div></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gae75127fbfffe10458defc31a6a18c0f8"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">ConfigTaskWidget::setDirty</a></div><div class="ttdeci">void setDirty(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00574">configtaskwidget.cpp:574</a></div></div>
@@ -1042,7 +1054,7 @@ $(document).ready(function(){initNavTree('configvehicletypewidget_8cpp_source.ht
 <div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
 <div class="ttc" id="class_vehicle_trim_html_ae1e51ca922391558f51d783e36c70acca4393902e9b07498d72d14e15ebe048db"><div class="ttname"><a href="class_vehicle_trim.html#ae1e51ca922391558f51d783e36c70acca4393902e9b07498d72d14e15ebe048db">VehicleTrim::ACTUATOR_TRIM_FAILED_DUE_TO_FLIGHTMODE</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicletrim_8h_source.html#l00050">vehicletrim.h:50</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga66dd9919d99223fdbf5b3dcff803f863"><div class="ttname"><a href="group___config_plugin.html#ga66dd9919d99223fdbf5b3dcff803f863">VehicleConfig::mixerRange</a></div><div class="ttdeci">static const double mixerRange</div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00153">vehicleconfig.h:153</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga66dd9919d99223fdbf5b3dcff803f863"><div class="ttname"><a href="group___config_plugin.html#ga66dd9919d99223fdbf5b3dcff803f863">VehicleConfig::mixerRange</a></div><div class="ttdeci">static const double mixerRange</div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfig_8h_source.html#l00154">vehicleconfig.h:154</a></div></div>
 <div class="ttc" id="class_vehicle_trim_html_a58153d5aa2666c30a1f3a4913570f6ce"><div class="ttname"><a href="class_vehicle_trim.html#a58153d5aa2666c30a1f3a4913570f6ce">VehicleTrim::setAutopilotBias</a></div><div class="ttdeci">autopilotLevelBiasMessages setAutopilotBias()</div><div class="ttdoc">VehicleTrim::setFixedWingTrimAutopilotBias Takes the desired roll and pitch, and sets that as the aut...</div><div class="ttdef"><b>Definition:</b> <a href="vehicletrim_8cpp_source.html#l00054">vehicletrim.cpp:54</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gab9d6ec8ac14106374a35144c4ee29233"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gab9d6ec8ac14106374a35144c4ee29233">ConfigTaskWidget::addUAVObjectToWidgetRelation</a></div><div class="ttdeci">void addUAVObjectToWidgetRelation(QString object, QString field, QWidget *widget, int index=0, double scale=1, bool isLimited=false, bool useUnits=false, QList&lt; int &gt; *defaultReloadGroups=0, quint32 instID=0)</div><div class="ttdoc">Add an UAVObject field to widget relation to the management system Note: This is the instance called ...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00181">configtaskwidget.cpp:181</a></div></div>

@@ -40,6 +40,7 @@ var searchData=
   ['no_5fparser',['NO_PARSER',['../group___g_s_p_module.html#ga50defead334337d91f632b36aa071214',1,'GPS.h']]],
   ['no_5fsensors',['NO_SENSORS',['../group___pip_x.html#gadb40bd391933623525454a38f7105a5c',1,'pios_config.h']]],
   ['nop',['NOP',['../classpx__uploader_1_1uploader.html#ad4e27d11714e5bcfbc8e771b78f4fe77',1,'px_uploader::uploader']]],
+  ['normalize_5finput_5fdata',['normalize_input_data',['../group___actuator_module.html#ga963e45ec159f02253cb5a56e6af61d76',1,'actuator.c']]],
   ['north',['north',['../struct_latitude___band___value.html#a4e60379816675c4ee05b875731dac5bf',1,'Latitude_Band_Value']]],
   ['north_5fposition',['NORTH_POSITION',['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a3f46558976ca7c653cc8c08475bcab2a',1,'vtol_follower_priv.h']]],
   ['north_5fvelocity',['NORTH_VELOCITY',['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ae45cff8467cdb386a31197540e5bdd56',1,'vtol_follower_priv.h']]],

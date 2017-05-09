@@ -42,6 +42,8 @@ var searchData=
   ['spectrogramscopeconfig',['SpectrogramScopeConfig',['../class_spectrogram_scope_config.html',1,'']]],
   ['spinboxdelegate',['SpinBoxDelegate',['../class_spin_box_delegate.html',1,'']]],
   ['splitterorview',['SplitterOrView',['../class_core_1_1_internal_1_1_splitter_or_view.html',1,'Core::Internal']]],
+  ['sprf3e',['Sprf3e',['../class_sprf3e.html',1,'']]],
+  ['sprf3econfiguration',['Sprf3eConfiguration',['../class_sprf3e_configuration.html',1,'']]],
   ['struct_5fcbuffer',['struct_cBuffer',['../structstruct__c_buffer.html',1,'']]],
   ['styleanimator',['StyleAnimator',['../class_style_animator.html',1,'']]],
   ['styledbar',['StyledBar',['../class_utils_1_1_styled_bar.html',1,'Utils']]],

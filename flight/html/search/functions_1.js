@@ -4,7 +4,6 @@ var searchData=
   ['accumulate_5fgyro_5fcompute',['accumulate_gyro_compute',['../group___attitude_module.html#ga495f3b515a8ba755fdce36d7ec488b1c',1,'attitude.c']]],
   ['accumulate_5fgyro_5fzero',['accumulate_gyro_zero',['../group___attitude_module.html#gaa5f9a078fc70b1ba078054b1b947176f',1,'attitude.c']]],
   ['activatewaypoint',['activateWaypoint',['../group___path_planner_module.html#ga2979049a21c756329e5ce3d218cd7ca6',1,'pathplanner.c']]],
-  ['actuator_5fset_5fservo_5fmode',['actuator_set_servo_mode',['../group___actuator_module.html#ga53886cf6bbf80db465e8a56d6735ef1d',1,'actuator.c']]],
   ['actuator_5ftask',['actuator_task',['../group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e',1,'actuator.c']]],
   ['actuatorinitialize',['ActuatorInitialize',['../group___actuator_module.html#gaa23ed2bf1c2252218764708ac5d8b2fb',1,'actuator.c']]],
   ['actuatorstart',['ActuatorStart',['../group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034',1,'actuator.c']]],

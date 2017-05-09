@@ -1,5 +1,7 @@
 var misc__math_2unittest_8cpp =
 [
+    [ "PSEUDOINV_CONVERGE_LIMIT", "misc__math_2unittest_8cpp.html#ga836b829d17fee8b1db6d0f71308103ff", null ],
+    [ "restrict", "misc__math_2unittest_8cpp.html#ga080abdcb9c02438f1cd2bb707af25af8", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga616b42d75c14427fb433a0efc0dcc8d0", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga7b82883b4c8ff0d533a5b3923e8845fd", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga132356b391d86ecdf50208ce16363129", null ],
@@ -14,5 +16,8 @@ var misc__math_2unittest_8cpp =
     [ "TEST_F", "misc__math_2unittest_8cpp.html#gae9b10024a005563e17340713ce445a15", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga410c06f25a211c1cd7023ce04a3857d8", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga857a45ca3522f2d7196ecac21eb2f528", null ],
-    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga30a3881db0cac65935c82be5b0dd3e1b", null ]
+    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga30a3881db0cac65935c82be5b0dd3e1b", null ],
+    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga807bdb259e011f13174697abd6976345", null ],
+    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga738243bc5546f2f76e3cfdcc38f4c6a8", null ],
+    [ "simple_4x4", "misc__math_2unittest_8cpp.html#ga986be87cb393efd719a76239fd440609", null ]
 ];

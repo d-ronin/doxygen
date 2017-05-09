@@ -69,8 +69,8 @@ var NAVTREEINDEX3 =
 "class_plugin1_1_1_my_plugin1.html#aa669fad3fa65d610bb17197b34a6d8cf":[5,0,8,0,0],
 "class_plugin1_1_1_my_plugin1.html#ab68d9707ac743bacd4bf109e788e28ea":[5,0,8,0,3],
 "class_plugin1_1_1_my_plugin1.html#abe68963937d1889611b4e3693e585db5":[5,0,8,0,6],
-"class_plugin1_1_1_my_plugin1.html#ac6ef8b07297e70eaf096da48e0dba7f5":[5,0,8,0,2],
 "class_plugin1_1_1_my_plugin1.html#ac6ef8b07297e70eaf096da48e0dba7f5":[5,0,8,0,1],
+"class_plugin1_1_1_my_plugin1.html#ac6ef8b07297e70eaf096da48e0dba7f5":[5,0,8,0,2],
 "class_plugin2_1_1_my_plugin2.html":[5,0,9,0],
 "class_plugin2_1_1_my_plugin2.html#a07363358acc9f69b85d01098a5651001":[5,0,9,0,6],
 "class_plugin2_1_1_my_plugin2.html#a448298d79c5c8340ee73e9e111f8f36e":[5,0,9,0,1],
@@ -175,6 +175,8 @@ var NAVTREEINDEX3 =
 "class_spectrogram_scope_config.html":[3,2,34,24],
 "class_spin_box_delegate.html":[3,8,0,7],
 "class_spin_box_delegate.html":[3,2,11,31],
+"class_sprf3e.html":[3,2,6,8],
+"class_sprf3e_configuration.html":[3,2,6,9],
 "class_style_animator.html":[3,2,14,60],
 "class_summary_page.html":[3,6,15],
 "class_surface_page.html":[3,6,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "class_u_a_v_object_field.html#a8d473734be71fe3a3dbcd1a854b497f2":[3,2,35,4,48],
 "class_u_a_v_object_field.html#a97fe1c3ed2d74eb06ea7e24abf4ce09c":[3,2,35,4,49],
 "class_u_a_v_object_field.html#a9909de3b60e1a954d7356cfc61357b30":[3,2,35,4,44],
-"class_u_a_v_object_field.html#aa82f6e1f5deca501c58b45d902be0ef4":[3,2,35,4,46],
-"class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cb":[3,2,35,4,2],
-"class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba5903966788353f79fdfa23cef3c141bf":[3,2,35,4,2,4]
+"class_u_a_v_object_field.html#aa82f6e1f5deca501c58b45d902be0ef4":[3,2,35,4,46]
 };

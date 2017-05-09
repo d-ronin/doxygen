@@ -194,6 +194,8 @@ var searchData=
   ['_7espectrogramdata',['~SpectrogramData',['../group___scope_plugin.html#gafe709b6e448db73f8548bc2b76f27d19',1,'SpectrogramData']]],
   ['_7espectrogramscopeconfig',['~SpectrogramScopeConfig',['../group___scope_plugin.html#ga12537968c75d08027a1490766226d871',1,'SpectrogramScopeConfig']]],
   ['_7esplitterorview',['~SplitterOrView',['../group___core_plugin.html#ga42605d72009aca0f129477fe21bf7d32',1,'Core::Internal::SplitterOrView']]],
+  ['_7esprf3e',['~Sprf3e',['../group___boards__d_ronin.html#ga374457f20564dbaaa8587920bbe0add4',1,'Sprf3e']]],
+  ['_7esprf3econfiguration',['~Sprf3eConfiguration',['../group___boards__d_ronin.html#ga4edb6819cc8520cb28e1806fae7a3757',1,'Sprf3eConfiguration']]],
   ['_7estrcmpi',['~strcmpi',['../uavobjecttemplate_8m.html#aefe91cd29a8e10e33597631347fd401c',1,'uavobjecttemplate.m']]],
   ['_7esummarypage',['~SummaryPage',['../group___setup_wizard.html#ga8c25c96270b9721692e6931ea63f42a2',1,'SummaryPage']]],
   ['_7esurfacepage',['~SurfacePage',['../group___setup_wizard.html#ga5a8e3eacbff6da1ddd215db6456358c8',1,'SurfacePage']]],
