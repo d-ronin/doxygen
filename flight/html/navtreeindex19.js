@@ -1,6 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"group___a_q32.html#gae4258a650515c19e5df92b5917399195":[2,7,0,256],
 "group___a_q32.html#gae4912a499d71db827918d7908055ce05":[2,8,0,69],
 "group___a_q32.html#gae4912a499d71db827918d7908055ce05":[2,7,0,69],
 "group___a_q32.html#gae4f40dbda591f71bce911d37415746af":[2,8,0,153],
@@ -249,5 +248,6 @@ var NAVTREEINDEX19 =
 "group___battery_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[2,4,5,11],
 "group___battery_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[2,4,5,2],
 "group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b":[2,4,5,7],
-"group___battery_module.html#gafde0a91566f74d38cdffe80c6635576d":[2,4,5,1]
+"group___battery_module.html#gafde0a91566f74d38cdffe80c6635576d":[2,4,5,1],
+"group___bootloader.html":[2,8]
 };

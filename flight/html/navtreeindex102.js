@@ -1,8 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"pios__dma_8c.html":[5,0,0,3,6,3],
-"pios__dma_8c.html#a0a391b0ee006e80f23e36069abc1bbd7":[5,0,0,3,6,3,0],
-"pios__dma_8c.html#a5f61e6f0af52160f6f5e483c857892a3":[5,0,0,3,6,3,2],
 "pios__dma_8c.html#a697f6daba514fea6fcc3846c91c43b2d":[5,0,0,3,6,3,3],
 "pios__dma_8c.html#a88e56c9266e75dfbe8f4e4447fba3acd":[5,0,0,3,6,3,1],
 "pios__dma_8c_source.html":[5,0,0,3,6,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX102 =
 "pios__flight__config_8h.html#a88ebbd46d7ad2cb2374e4886c3194b5e":[5,0,0,3,1,35,8],
 "pios__flight__config_8h.html#a92db595596a0136d6e663f929418cbf4":[5,0,0,3,1,35,44],
 "pios__flight__config_8h.html#a94dd4e83fd94230de7eddc5b01773f4e":[5,0,0,3,1,35,39],
-"pios__flight__config_8h.html#a95aafc3f5062ea4c6f0b33bd678371a8":[5,0,0,3,1,35,37]
+"pios__flight__config_8h.html#a95aafc3f5062ea4c6f0b33bd678371a8":[5,0,0,3,1,35,37],
+"pios__flight__config_8h.html#aa16397b163ac65bc5fc212b03e69dfa8":[5,0,0,3,1,35,32],
+"pios__flight__config_8h.html#aa3918665ab627c1af88867276f1f204b":[5,0,0,3,1,35,21],
+"pios__flight__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d":[5,0,0,3,1,35,14]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"group___bootloader.html":[2,8],
 "group___brain.html":[2,8,3],
 "group___brain.html":[2,7,1],
 "group___brain.html#ga00ad81d320aaeb3ca4899228c4155848":[2,8,3,219],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "group___brain.html#ga5852869ec30fde13e651b38fe3aa97c7":[2,7,1,28],
 "group___brain.html#ga58845293676556a52d2046a00bcfbf9c":[2,8,3,194],
 "group___brain.html#ga58845293676556a52d2046a00bcfbf9c":[2,7,1,194],
-"group___brain.html#ga58e21948e78c6cf50c04e64363637dd4":[2,8,3,127]
+"group___brain.html#ga58e21948e78c6cf50c04e64363637dd4":[2,8,3,127],
+"group___brain.html#ga58e21948e78c6cf50c04e64363637dd4":[2,7,1,127]
 };

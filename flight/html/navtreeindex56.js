@@ -1,12 +1,9 @@
 var NAVTREEINDEX56 =
 {
-"group___quanton.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,8,10,67],
-"group___quanton.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,7,8,66],
-"group___quanton.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,7,8,67],
 "group___quanton.html#gacc9b34fbd61773571dbe45ac3a3ca081":[2,7,8,28],
 "group___quanton.html#gacc9b34fbd61773571dbe45ac3a3ca081":[2,8,10,28],
-"group___quanton.html#gacd240b3acb49442511a220647c7d2e4f":[2,7,8,24],
 "group___quanton.html#gacd240b3acb49442511a220647c7d2e4f":[2,8,10,24],
+"group___quanton.html#gacd240b3acb49442511a220647c7d2e4f":[2,7,8,24],
 "group___quanton.html#gace43c4d497b0be3dbe8c28836fafd0a5":[2,8,10,162],
 "group___quanton.html#gace43c4d497b0be3dbe8c28836fafd0a5":[2,7,8,162],
 "group___quanton.html#gacf157c23e7623bb0aeb1e71b5daea82e":[2,8,10,62],
@@ -103,8 +100,8 @@ var NAVTREEINDEX56 =
 "group___quanton.html#gafb8ec40127fee7c2c398e9e2ec096a71":[2,7,8,127],
 "group___quanton.html#gafb98861d06d9f4145f01c9d4d0fa09dd":[2,8,10,262],
 "group___quanton.html#gafb98861d06d9f4145f01c9d4d0fa09dd":[2,7,8,262],
-"group___quanton.html#gafbb5ae4322aab0bda8084bd23f3eeb56":[2,7,8,185],
 "group___quanton.html#gafbb5ae4322aab0bda8084bd23f3eeb56":[2,8,10,185],
+"group___quanton.html#gafbb5ae4322aab0bda8084bd23f3eeb56":[2,7,8,185],
 "group___quanton.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[2,8,10,314],
 "group___quanton.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[2,7,8,314],
 "group___quanton.html#gafc809d2cdef7438cdb9abda6ea55f372":[2,8,10,21],
@@ -249,5 +246,8 @@ var NAVTREEINDEX56 =
 "group___revo_mini.html#ga1b30eda5a6f930b068db7bc108e0478d":[2,8,11,273],
 "group___revo_mini.html#ga1b30eda5a6f930b068db7bc108e0478d":[2,7,9,273],
 "group___revo_mini.html#ga1b914f100d3601810dea75526ed3434f":[2,8,11,342],
-"group___revo_mini.html#ga1b914f100d3601810dea75526ed3434f":[2,7,9,342]
+"group___revo_mini.html#ga1b914f100d3601810dea75526ed3434f":[2,7,9,342],
+"group___revo_mini.html#ga1bc522e73c6468736ee7f031d5582eae":[2,8,11,85],
+"group___revo_mini.html#ga1bc522e73c6468736ee7f031d5582eae":[2,7,9,85],
+"group___revo_mini.html#ga1d5fe8f458e1bcdfe29bd09061a7f8fa":[2,8,11,174]
 };

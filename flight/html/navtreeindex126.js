@@ -1,8 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"structpios__rfm22b__dev.html#ae19fd5f7bedb1256cb0404952b55cd33":[2,0,34,17,39],
-"structpios__rfm22b__dev.html#ae832e77d3ae846b8de24f1cbc5933c02":[2,0,34,17,20],
-"structpios__rfm22b__dev.html#aff7a6133350534d9bdb99e8e4856dd6e":[2,0,34,17,8],
 "structpios__rtc__cfg.html":[2,0,65,2],
 "structpios__rtc__cfg.html#a6ed1405edce6d0ed2251dc6936b4eec9":[2,0,65,2,0],
 "structpios__rtc__cfg.html#a9ba0d9532d31cd9ff861f59a2d2d7c98":[2,0,65,2,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX126 =
 "structtelemetrydata.html#a2fe47f67a9d625f0e82acb2c737a5f48":[2,4,26,3,10],
 "structtelemetrydata.html#a3a4e8b302f6609a596012e677703ce64":[2,4,26,3,12],
 "structtelemetrydata.html#a3b86cf3ddb68cc78f5926ca23a7bfa96":[2,4,26,3,7],
-"structtelemetrydata.html#a43730a36465143ea4a0edb601eceb4d9":[2,4,26,3,20]
+"structtelemetrydata.html#a43730a36465143ea4a0edb601eceb4d9":[2,4,26,3,20],
+"structtelemetrydata.html#a4776f706ecc0cc2551b4f8be46d8fab1":[2,4,26,3,13],
+"structtelemetrydata.html#a52e488ffdddc533c203e4ae73da51082":[2,4,26,3,9],
+"structtelemetrydata.html#a63b6e240f43e038f6bf6f0f3afa5a0cd":[2,4,26,3,5]
 };

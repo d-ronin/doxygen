@@ -1,8 +1,5 @@
 var NAVTREEINDEX110 =
 {
-"pios__streamfs_8c.html#ga77443fd22c14952870551cd610a7b680":[5,0,0,3,0,52,5],
-"pios__streamfs_8c.html#ga92fc99ddee8ee13d7bed4546c63bef05":[5,0,0,3,0,52,23],
-"pios__streamfs_8c.html#ga936c1d915cad3c58de4a46926bcd1015":[5,0,0,3,0,52,15],
 "pios__streamfs_8c.html#ga9ce3464876f388b7c1157e783c0d6f1c":[5,0,0,3,0,52,27],
 "pios__streamfs_8c.html#gaa074e89c2bd12b18651b0070ad08a6bf":[5,0,0,3,0,52,8],
 "pios__streamfs_8c.html#gaa58a60b054649c194014715c2ce82094":[5,0,0,3,0,52,25],
@@ -249,5 +246,8 @@ var NAVTREEINDEX110 =
 "pios__usb__defs_8h.html#gaaecf224ab20cd44947885aa0f07c7bf7":[5,0,0,3,1,113,59],
 "pios__usb__defs_8h.html#gab25f749c091ce99b6868c949c4e45bc3":[5,0,0,3,1,113,98],
 "pios__usb__defs_8h.html#gab2ae6647dc67249a88a1718089cf5239":[5,0,0,3,1,113,32],
-"pios__usb__defs_8h.html#gab2e781a93220bf6f8befacd3d947fe35":[5,0,0,3,1,113,12]
+"pios__usb__defs_8h.html#gab2e781a93220bf6f8befacd3d947fe35":[5,0,0,3,1,113,12],
+"pios__usb__defs_8h.html#gab393e07556e3858fed36ed2e260d4b4c":[5,0,0,3,1,113,124],
+"pios__usb__defs_8h.html#gab4c9ec39a696333a52ca7e2d72e8b933":[5,0,0,3,1,113,18],
+"pios__usb__defs_8h.html#gab8e1b1fca77a607c39bba2278623d4f4":[5,0,0,3,1,113,91]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"structmsg__xfer__start.html#a8db36028eba159cd3d355dcf3ca90b55":[4,0,85,1],
-"structmsg__xfer__start.html#abf1afc5a5e0d93dc8b6afc4aa32d600d":[4,0,85,2],
-"structmsg__xfer__start.html#ad4ee32f96cd036e1f07392302946dfdc":[4,0,85,0],
 "structmsp__altitude.html":[2,3,0,13],
 "structmsp__altitude.html#a1a748fe8a64146628d76a5d111c66690":[2,3,0,13,1],
 "structmsp__altitude.html#a1c1219ac82d3577f7ff851ff7c0e1f09":[2,3,0,13,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX124 =
 "structpios__board__info.html#abf65ae5cf522219445a2fc436a771365":[4,0,143,3],
 "structpios__can__cfg.html":[2,0,48,3],
 "structpios__can__cfg.html#a070fa7e71f07dc07535c25cc217eaad1":[2,0,48,3,3],
-"structpios__can__cfg.html#a1169d719e75d88777bc55e90dd8dd92a":[2,0,48,3,2]
+"structpios__can__cfg.html#a1169d719e75d88777bc55e90dd8dd92a":[2,0,48,3,2],
+"structpios__can__cfg.html#a5d3838e117b90a333030b232757983b3":[2,0,48,3,5],
+"structpios__can__cfg.html#a7016acbdd73f58d61d12ce8b161f2e14":[2,0,48,3,6],
+"structpios__can__cfg.html#a7d0b815af750d478c67853e7dadc7eff":[2,0,48,3,0]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX109 =
 {
-"pios__rfm22b__regs_8h.html#gac49392feb349f26571122681c045a578":[5,0,0,3,1,89,179],
-"pios__rfm22b__regs_8h.html#gac4a0bd4e4b9481410324a9c457a35fb0":[5,0,0,3,1,89,349],
-"pios__rfm22b__regs_8h.html#gac5148593f10f0e9fb254136e3a9e8fac":[5,0,0,3,1,89,225],
 "pios__rfm22b__regs_8h.html#gac582bbfd360471654ec8b7fb89ba917d":[5,0,0,3,1,89,16],
 "pios__rfm22b__regs_8h.html#gac5a66ebfb91f29de9d4b3be05ae0c7f1":[5,0,0,3,1,89,154],
 "pios__rfm22b__regs_8h.html#gac5e9cc103a3fe953da8dc67f4091328d":[5,0,0,3,1,89,65],
@@ -249,5 +246,8 @@ var NAVTREEINDEX109 =
 "pios__streamfs_8c.html#ga4e6a4b1e57b6865c5a955e02df81380e":[5,0,0,3,0,52,22],
 "pios__streamfs_8c.html#ga5f8af980b87a01d398c7d4bea122a151":[5,0,0,3,0,52,20],
 "pios__streamfs_8c.html#ga6aaf66580fe8acf8206177decc43b8b2":[5,0,0,3,0,52,6],
-"pios__streamfs_8c.html#ga74e75242132eaabbc1c512488a135926":[5,0,0,3,0,52,0]
+"pios__streamfs_8c.html#ga74e75242132eaabbc1c512488a135926":[5,0,0,3,0,52,0],
+"pios__streamfs_8c.html#ga77443fd22c14952870551cd610a7b680":[5,0,0,3,0,52,5],
+"pios__streamfs_8c.html#ga92fc99ddee8ee13d7bed4546c63bef05":[5,0,0,3,0,52,23],
+"pios__streamfs_8c.html#ga936c1d915cad3c58de4a46926bcd1015":[5,0,0,3,0,52,15]
 };
