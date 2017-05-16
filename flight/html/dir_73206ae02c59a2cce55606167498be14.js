@@ -9,6 +9,7 @@ var dir_73206ae02c59a2cce55606167498be14 =
     [ "pios_flyingpio.c", "pios__flyingpio_8c.html", null ],
     [ "pios_gcsrcvr.c", "posix_2pios__gcsrcvr_8c.html", null ],
     [ "pios_heap.c", "_pi_o_s_2posix_2pios__heap_8c.html", "_pi_o_s_2posix_2pios__heap_8c" ],
+    [ "pios_i2c.c", "posix_2pios__i2c_8c.html", null ],
     [ "pios_iap.c", "posix_2pios__iap_8c.html", "posix_2pios__iap_8c" ],
     [ "pios_irq.c", "posix_2pios__irq_8c.html", "posix_2pios__irq_8c" ],
     [ "pios_mutex.c", "posix_2pios__mutex_8c.html", "posix_2pios__mutex_8c" ],

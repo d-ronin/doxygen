@@ -221,6 +221,7 @@ var hierarchy =
     [ "Rotation", "struct_rotation.html", null ],
     [ "rtc_callback_entry", "structrtc__callback__entry.html", null ],
     [ "servo_timer", "structservo__timer.html", null ],
+    [ "SHA1_CTX", "struct_s_h_a1___c_t_x.html", null ],
     [ "slot_header", "structslot__header.html", null ],
     [ "smoothcontrol_axis_state", "structsmoothcontrol__axis__state.html", null ],
     [ "smoothcontrol_state_internal", "structsmoothcontrol__state__internal.html", null ],

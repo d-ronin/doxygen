@@ -1,9 +1,5 @@
 var group___sim =
 [
-    [ "CMSIS", "group___c_m_s_i_s.html", "group___c_m_s_i_s" ],
-    [ "USB_OTG_DRIVER", "group___u_s_b___o_t_g___d_r_i_v_e_r.html", "group___u_s_b___o_t_g___d_r_i_v_e_r" ],
-    [ "cmsis_system.c", "simulation_2board-info_2cmsis__system_8c.html", null ],
-    [ "usb_conf.h", "simulation_2board-info_2usb__conf_8h.html", null ],
     [ "main.c", "simulation_2fw_2main_8c.html", null ],
     [ "pios_board.c", "simulation_2fw_2pios__board_8c.html", null ],
     [ "pios_board.h", "targets_2simulation_2fw_2pios__board_8h.html", null ],

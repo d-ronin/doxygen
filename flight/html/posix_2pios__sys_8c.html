@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">95ef20a</span>
+   &#160;<span id="projectnumber">3a503a2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;unistd.h&gt;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
 <code>#include &lt;sys/mman.h&gt;</code><br/>
 <code>#include &lt;sched.h&gt;</code><br/>
 <code>#include &quot;pios.h&quot;</code><br/>
@@ -121,15 +122,11 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c.html','');});
 <code>#include &quot;<a class="el" href="pios__serial__priv_8h_source.html">pios_serial_priv.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__tcp__priv_8h_source.html">pios_tcp_priv.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__spi__posix__priv_8h_source.html">pios_spi_posix_priv.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__ms5611__priv_8h_source.html">pios_ms5611_priv.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__bmm150__priv_8h_source.html">pios_bmm150_priv.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__bmx055__priv_8h_source.html">pios_bmx055_priv.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pios__flyingpio_8h_source.html">pios_flyingpio.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__hal_8h_source.html">pios_hal.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__adc__priv_8h_source.html">pios_adc_priv.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__rcvr__priv_8h_source.html">pios_rcvr_priv.h</a>&quot;</code><br/>
 <code>#include &quot;manualcontrolsettings.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="sha1_8h_source.html">sha1.h</a>&quot;</code><br/>
 </div>
 <p><a href="posix_2pios__sys_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

@@ -8,7 +8,6 @@ var searchData=
   ['uavtalk_5fstate_5fobjid',['UAVTALK_STATE_OBJID',['../group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691cab98212ea6a045429c1ca8a085116dfb3',1,'uavtalk.h']]],
   ['uavtalk_5fstate_5fsize',['UAVTALK_STATE_SIZE',['../group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca9aa933eedaeac2cc5d5552cf9becf16c',1,'uavtalk.h']]],
   ['uavtalk_5fstate_5fsync',['UAVTALK_STATE_SYNC',['../group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691caae4d844e674556f502e53c92bb96c6c7',1,'uavtalk.h']]],
-  ['uavtalk_5fstate_5ftimestamp',['UAVTALK_STATE_TIMESTAMP',['../group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca1785b6e3aaaa285b9585f38fae2826f1',1,'uavtalk.h']]],
   ['uavtalk_5fstate_5ftype',['UAVTALK_STATE_TYPE',['../group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca1ecd6ed2028baaae08701be647d70702',1,'uavtalk.h']]],
   ['unconnected',['UNCONNECTED',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bba29d18c1b3b6b68b4d20daf998bbd5c29',1,'pios_usb_hid_pwr.h']]],
   ['unknown',['UNKNOWN',['../group___v_t_x_config.html#gga716d475c1a58322a7f0bbc8f4109d7bea6ce26a62afab55d7606ad4e92428b30c',1,'tbs_smartaudio.c']]],

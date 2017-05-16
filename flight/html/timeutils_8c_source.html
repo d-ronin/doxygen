@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">95ef20a</span>
+   &#160;<span id="projectnumber">3a503a2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -159,39 +159,36 @@ $(document).ready(function(){initNavTree('timeutils_8c_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        date_time-&gt;sec = rem % 60;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">/* January 1, 1970 was a Thursday.  */</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        date_time-&gt;wday = (4 + days) % 7;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (date_time-&gt;wday &lt; 0){</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                date_time-&gt;wday += 7;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        y = 1970;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define DIV(a, b) ((a) / (b) - ((a) % (b) &lt; 0))</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LEAPS_THRU_END_OF(y) (DIV (y, 4) - DIV (y, 100) + DIV (y, 400))</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">while</span> (days &lt; 0 || days &gt;= (<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a> (y) ? 366 : 365))</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="comment">/* Guess a corrected year, assuming 365 days per year.  */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                uint16_t yg = y + days / 365 - (days % 365 &lt; 0);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="comment">/* Adjust DAYS and Y to match the guessed year.  */</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                days -= ((yg - y) * 365</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                 + <a class="code" href="timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14">LEAPS_THRU_END_OF</a> (yg - 1)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                 - <a class="code" href="timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14">LEAPS_THRU_END_OF</a> (y - 1));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                y = yg;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        date_time-&gt;year = y - 1900;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (date_time-&gt;year != y - 1900)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="comment">/* The year cannot be represented due to overflow.  */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> uint16_t *ip = <a class="code" href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a>(y)];</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">for</span> (y = 11; days &lt; (uint16_t)ip[y]; --y){</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        days -= ip[y];</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        date_time-&gt;mon = y;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        date_time-&gt;mday = days + 1;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        y = 1970;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define DIV(a, b) ((a) / (b) - ((a) % (b) &lt; 0))</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LEAPS_THRU_END_OF(y) (DIV (y, 4) - DIV (y, 100) + DIV (y, 400))</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">while</span> (days &lt; 0 || days &gt;= (<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a> (y) ? 366 : 365))</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">/* Guess a corrected year, assuming 365 days per year.  */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                uint16_t yg = y + days / 365 - (days % 365 &lt; 0);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="comment">/* Adjust DAYS and Y to match the guessed year.  */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                days -= ((yg - y) * 365</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                 + <a class="code" href="timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14">LEAPS_THRU_END_OF</a> (yg - 1)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                 - <a class="code" href="timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14">LEAPS_THRU_END_OF</a> (y - 1));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                y = yg;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        date_time-&gt;year = y - 1900;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (date_time-&gt;year != y - 1900)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="comment">/* The year cannot be represented due to overflow.  */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> uint16_t *ip = <a class="code" href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a>(y)];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">for</span> (y = 11; days &lt; (uint16_t)ip[y]; --y){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        days -= ip[y];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        date_time-&gt;mon = y;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        date_time-&gt;mday = days + 1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="group___tau_labs_libraries_html_gae6bc10904b2b09a717f1fb81cce017de"><div class="ttname"><a href="group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a></div><div class="ttdeci">#define SECS_PER_DAY</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00045">timeutils.c:45</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_gad43faa5010d2bf324698c46fc53327c3"><div class="ttname"><a href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a></div><div class="ttdeci">static const uint16_t __mon_yday[2][13]</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00037">timeutils.c:37</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga11528d10d5838afd2d0ec2f5841167cf"><div class="ttname"><a href="group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a></div><div class="ttdeci">#define SECS_PER_HOUR</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00044">timeutils.c:44</a></div></div>

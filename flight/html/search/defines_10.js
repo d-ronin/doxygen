@@ -6,6 +6,7 @@ var searchData=
   ['sdio_5firqhandler',['SDIO_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a44b56def4842b9f9ba6ce93e4dfe6361',1,'pios_chibios_transition_priv.h']]],
   ['semaphore_5fmagic',['SEMAPHORE_MAGIC',['../posix_2pios__semaphore_8c.html#a684d0877e4215a721d813d64a6f199fe',1,'pios_semaphore.c']]],
   ['set_5fbits',['SET_BITS',['../_s_t_m32_2pios__servo_8c.html#a03428792c8dfab8bf1671ba455af007e',1,'pios_servo.c']]],
+  ['sha1_5fblock_5fsize',['SHA1_BLOCK_SIZE',['../sha1_8h.html#a4be887a15639aa78e6a129b9c8f4d2b9',1,'sha1.h']]],
   ['smoothcontrol_5fchamfer_5fstart',['SMOOTHCONTROL_CHAMFER_START',['../smoothcontrol_8h.html#a05d4df3b3a13a12bd8ae4ca788cb307c',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fduty_5fcycle',['SMOOTHCONTROL_DUTY_CYCLE',['../smoothcontrol_8h.html#a4cfe64fc9d6e9a8f05f9d84de471d127',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fextended_5fduty_5fcycle',['SMOOTHCONTROL_EXTENDED_DUTY_CYCLE',['../smoothcontrol_8h.html#a5a5b6c0a93ab47c510abc5ad987f7bc8',1,'smoothcontrol.h']]],

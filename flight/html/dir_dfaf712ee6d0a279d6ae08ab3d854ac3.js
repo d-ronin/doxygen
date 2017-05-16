@@ -4,6 +4,7 @@ var dir_dfaf712ee6d0a279d6ae08ab3d854ac3 =
     [ "pios_bl_helper.h", "posix_2inc_2pios__bl__helper_8h.html", "posix_2inc_2pios__bl__helper_8h" ],
     [ "pios_debug.h", "posix_2inc_2pios__debug_8h.html", "posix_2inc_2pios__debug_8h" ],
     [ "pios_fileout_priv.h", "pios__fileout__priv_8h.html", "pios__fileout__priv_8h" ],
+    [ "pios_i2c_priv.h", "posix_2inc_2pios__i2c__priv_8h.html", "posix_2inc_2pios__i2c__priv_8h" ],
     [ "pios_initcall.h", "posix_2inc_2pios__initcall_8h.html", "posix_2inc_2pios__initcall_8h" ],
     [ "pios_irq.h", "posix_2inc_2pios__irq_8h.html", "posix_2inc_2pios__irq_8h" ],
     [ "pios_posix.h", "pios__posix_8h.html", "pios__posix_8h" ],

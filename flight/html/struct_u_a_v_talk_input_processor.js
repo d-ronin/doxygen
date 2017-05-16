@@ -10,7 +10,5 @@ var struct_u_a_v_talk_input_processor =
     [ "rxCount", "struct_u_a_v_talk_input_processor.html#a478ba62595ad5977cbc9c0897e11ee10", null ],
     [ "rxPacketLength", "struct_u_a_v_talk_input_processor.html#a39d9853a0ea6695927ffe0930225cfbe", null ],
     [ "state", "struct_u_a_v_talk_input_processor.html#ae2d58b353cb569cf8fcb956f1b0b3413", null ],
-    [ "timestamp", "struct_u_a_v_talk_input_processor.html#a184962821e9c4b260b39f7bf1c576150", null ],
-    [ "timestampLength", "struct_u_a_v_talk_input_processor.html#ae5fadf5b763839a191f044b2a2492366", null ],
     [ "type", "struct_u_a_v_talk_input_processor.html#a65de259b3813b2be47d056480622bcbc", null ]
 ];

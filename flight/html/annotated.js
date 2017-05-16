@@ -235,6 +235,7 @@ var annotated =
     [ "Rotation", "struct_rotation.html", "struct_rotation" ],
     [ "rtc_callback_entry", "structrtc__callback__entry.html", "structrtc__callback__entry" ],
     [ "servo_timer", "structservo__timer.html", "structservo__timer" ],
+    [ "SHA1_CTX", "struct_s_h_a1___c_t_x.html", "struct_s_h_a1___c_t_x" ],
     [ "slot_header", "structslot__header.html", "structslot__header" ],
     [ "smoothcontrol_axis_state", "structsmoothcontrol__axis__state.html", "structsmoothcontrol__axis__state" ],
     [ "smoothcontrol_state_internal", "structsmoothcontrol__state__internal.html", "structsmoothcontrol__state__internal" ],

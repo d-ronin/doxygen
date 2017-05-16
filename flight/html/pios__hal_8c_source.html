@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">95ef20a</span>
+   &#160;<span id="projectnumber">3a503a2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -778,7 +778,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordflow">case</span> HWSHARED_PORTTYPES_I2C:</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_I2C)</span></div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">if</span> (i2c_id &amp;&amp; i2c_cfg) {</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a10b19295cb30ec2e44c0a11f45cf28fe">PIOS_I2C_Init</a>(i2c_id, i2c_cfg)) {</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a8a87eed8285d31b959c790f61d2dd896">PIOS_I2C_Init</a>(i2c_id, i2c_cfg)) {</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                                <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_CRITICAL);</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                        }</div>
@@ -1312,224 +1312,230 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        }</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;}</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_I2C</span></div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keywordtype">int</span> PIOS_HAL_ConfigureI2C(uint32_t *<span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>) {</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        <span class="keywordflow">if</span> (!*<span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;                <span class="comment">// Not already initialized.</span></div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a10b19295cb30ec2e44c0a11f45cf28fe">PIOS_I2C_Init</a>(<span class="keywordtype">id</span>, cfg)) {</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(0);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;                        <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_CRITICAL);</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;                }</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;        }</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i2_c.html#gaaabd7d33d122ee5c6b33779b1302a84f">PIOS_I2C_CheckClear</a>(*<span class="keywordtype">id</span>) != 0) {</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;                <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_CRITICAL);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;                <span class="keywordflow">return</span> -2;</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        }</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___tau_labs_libraries.html#gad166792501b216a64df3e1ec0017db04">AlarmsGet</a>(SYSTEMALARMS_ALARM_I2C) ==</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;                        SYSTEMALARMS_ALARM_UNINITIALISED) {</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;                <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_OK);</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        }</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_I2C</span></div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keywordtype">int</span> PIOS_HAL_ConfigureI2C(uint32_t *<span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>) {</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;<span class="preprocessor">#ifndef SIM_POSIX</span></div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (!*<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;                <span class="comment">// Not already initialized.</span></div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a8a87eed8285d31b959c790f61d2dd896">PIOS_I2C_Init</a>(<span class="keywordtype">id</span>, cfg)) {</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(0);</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;                        <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_CRITICAL);</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                }</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        }</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i2_c.html#gaaabd7d33d122ee5c6b33779b1302a84f">PIOS_I2C_CheckClear</a>(*<span class="keywordtype">id</span>) != 0) {</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_CRITICAL);</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;                <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        }</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___tau_labs_libraries.html#gad166792501b216a64df3e1ec0017db04">AlarmsGet</a>(SYSTEMALARMS_ALARM_I2C) ==</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;                        SYSTEMALARMS_ALARM_UNINITIALISED) {</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;                <a class="code" href="group___tau_labs_libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a>(SYSTEMALARMS_ALARM_I2C, SYSTEMALARMS_ALARM_OK);</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        }</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;}</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_I2C</span></div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01350"></a><span class="lineno"><a class="line" href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c"> 1350</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c">PIOS_HAL_ConfigureExternalBaro</a>(HwSharedExtBaroOptions baro,</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                uint32_t *i2c_id,</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg)</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;{</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;<span class="preprocessor">#if !defined(PIOS_INCLUDE_I2C)</span></div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (baro == HWSHARED_EXTBARO_NONE) {</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;        }</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        <span class="keywordtype">int</span> ret = PIOS_HAL_ConfigureI2C(i2c_id, i2c_cfg);</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keywordflow">switch</span>(baro) {</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_BMP280)</span></div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_EXTBARO_BMP280:</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                ret = <a class="code" href="group___p_i_o_s___b_m_p280.html#gad0ffd240554352ffd9903531daffb57d">PIOS_BMP280_Init</a>(&amp;external_bmp280_cfg, *i2c_id) ;</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                ret = <a class="code" href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a>();</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_BMP280</span></div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_EXTBARO_MS5611:</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                ret = <a class="code" href="group___p_i_o_s___m_s5611.html#ga31828cf8d806bc616c063b785165ede1">PIOS_MS5611_Init</a>(&amp;external_ms5611_cfg, *i2c_id);</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                ret = <a class="code" href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a>();</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_MS5611</span></div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0); <span class="comment">// Should be unreachable</span></div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        }</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;done:</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <span class="keywordflow">if</span> (ret) {</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>);</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        }</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;</div>
-<div class="line"><a name="l01406"></a><span class="lineno"><a class="line" href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb"> 1406</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb">PIOS_HAL_ConfigureExternalMag</a>(HwSharedMagOptions <a class="code" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>,</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                HwSharedMagOrientationOptions orientation,</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;                uint32_t *i2c_id,</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg)</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;{</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="preprocessor">#if !defined(PIOS_INCLUDE_I2C)</span></div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        <span class="comment">/* internal mag should be handled in pios_board_init */</span></div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        <span class="keywordflow">if</span> (mag == HWSHARED_MAG_NONE || mag == HWSHARED_MAG_INTERNAL) {</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;        }</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <span class="keywordflow">if</span> (PIOS_HAL_ConfigureI2C(i2c_id, i2c_cfg))</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                <span class="keywordflow">goto</span> mag_fail;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        <span class="keywordflow">switch</span> (mag) {</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_HMC5883</span></div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_MAG_EXTERNALHMC5883:</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5883.html#ga2de33c0ac02b42cb114d9af689101498">PIOS_HMC5883_Init</a>(*i2c_id, &amp;external_hmc5883_cfg))</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>();</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SIM_POSIX */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;}</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_I2C</span></div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01353"></a><span class="lineno"><a class="line" href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c"> 1353</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c">PIOS_HAL_ConfigureExternalBaro</a>(HwSharedExtBaroOptions baro,</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;                uint32_t *i2c_id,</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg)</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;{</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;<span class="preprocessor">#if !defined(PIOS_INCLUDE_I2C)</span></div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (baro == HWSHARED_EXTBARO_NONE) {</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        }</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordtype">int</span> ret = PIOS_HAL_ConfigureI2C(i2c_id, i2c_cfg);</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="keywordflow">switch</span>(baro) {</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_BMP280)</span></div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_EXTBARO_BMP280:</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                ret = <a class="code" href="group___p_i_o_s___b_m_p280.html#gad0ffd240554352ffd9903531daffb57d">PIOS_BMP280_Init</a>(&amp;external_bmp280_cfg, *i2c_id) ;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                ret = <a class="code" href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a>();</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_BMP280</span></div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_EXTBARO_MS5611:</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                ret = <a class="code" href="group___p_i_o_s___m_s5611.html#ga31828cf8d806bc616c063b785165ede1">PIOS_MS5611_Init</a>(&amp;external_ms5611_cfg, *i2c_id);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                ret = <a class="code" href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a>();</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_MS5611</span></div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0); <span class="comment">// Should be unreachable</span></div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        }</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;done:</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;        <span class="keywordflow">if</span> (ret) {</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>);</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        }</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"><a class="line" href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb"> 1409</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb">PIOS_HAL_ConfigureExternalMag</a>(HwSharedMagOptions <a class="code" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>,</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                HwSharedMagOrientationOptions orientation,</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                uint32_t *i2c_id,</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg)</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;{</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="preprocessor">#if !defined(PIOS_INCLUDE_I2C)</span></div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (!HwSharedMagOrientationIsValid(orientation)) {</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        }</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        <span class="comment">/* internal mag should be handled in pios_board_init */</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <span class="keywordflow">if</span> (mag == HWSHARED_MAG_NONE || mag == HWSHARED_MAG_INTERNAL) {</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        }</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        <span class="keywordflow">if</span> (PIOS_HAL_ConfigureI2C(i2c_id, i2c_cfg))</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                <span class="keywordflow">goto</span> mag_fail;</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a>())</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;                <span class="comment">/* XXX: Lame.  Move driver to HwShared constants.</span></div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="comment">                 * Note: drivers rotate around vehicle Z-axis, this rotates around ??</span></div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">                 * This is dubious because both the sensor and vehicle Z-axis point down</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">                 * in bottom orientation, whereas this is rotating around an upwards vector. */</span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga9b5f48f8223effbfd7dbb15297957119">pios_hmc5883_orientation</a> hmc5883_orientation = </div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP0DEGCW)      ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a6453f9d33a17899b4d4f764ee3db4edb">PIOS_HMC5883_TOP_0DEG</a>      : </div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP90DEGCW)     ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353">PIOS_HMC5883_TOP_90DEG</a>     : </div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP180DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a0ff7330505c4d6f75c01c41dfdaf4400">PIOS_HMC5883_TOP_180DEG</a>    : </div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP270DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119af9a84c032f0ee432f8969eacd4fff3bf">PIOS_HMC5883_TOP_270DEG</a>    : </div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM0DEGCW)   ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119aaec7301513c1bf8b3f61712dde5f8561">PIOS_HMC5883_BOTTOM_0DEG</a>   : </div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM90DEGCW)  ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119aa81ae7e2db9b3e3fdc4714de6b31dffd">PIOS_HMC5883_BOTTOM_270DEG</a> : </div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM180DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a3a6c57f4f57cf89269f02284170de4e7">PIOS_HMC5883_BOTTOM_180DEG</a> : </div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM270DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a5a7ec80a5785c13df50128099b1257ae">PIOS_HMC5883_BOTTOM_90DEG</a>  : </div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;                        external_hmc5883_cfg.<a class="code" href="structpios__hmc5883__cfg.html#a64d1f9c61e0c29527e1b4b53e357fca8">Default_Orientation</a>;</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;                <a class="code" href="group___p_i_o_s___h_m_c5883.html#gae6ac7898a71fa1715766813683724b67">PIOS_HMC5883_SetOrientation</a>(hmc5883_orientation);</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_HMC5983_I2C</span></div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_MAG_EXTERNALHMC5983:</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5983.html#ga337bb85999059b8d44c4b23b8af98f13">PIOS_HMC5983_Init</a>(*i2c_id, 0, &amp;external_hmc5983_cfg))</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                <span class="keywordflow">if</span> (PIOS_HMC5983_Test())</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;                <span class="comment">/* Annoying to do this, but infecting low-level drivers with UAVO deps is yucky</span></div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;<span class="comment">                 * Note: drivers rotate around vehicle Z-axis, this rotates around ??</span></div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="comment">                 * This is dubious because both the sensor and vehicle Z-axis point down</span></div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;<span class="comment">                 * in bottom orientation, whereas this is rotating around an upwards vector. */</span></div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___h_m_c5983.html#gab3f2da0720cbc9ed9990c883001f2666">pios_hmc5983_orientation</a> hmc5983_orientation = </div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP0DEGCW)      ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a1a9f6bc8417252aa92d69cf9da909ba0">PIOS_HMC5983_TOP_0DEG</a>      : </div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP90DEGCW)     ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666adfeede2a51c93de3d9eb218654fcdec9">PIOS_HMC5983_TOP_90DEG</a>     : </div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP180DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a45f0446eba38d9a11bf52fc418aeb49d">PIOS_HMC5983_TOP_180DEG</a>    : </div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP270DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a193e502c42bd3c971a37cf2bea42c064">PIOS_HMC5983_TOP_270DEG</a>    : </div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM0DEGCW)   ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666ad7c5237037f72ed69eeffc11189b7f13">PIOS_HMC5983_BOTTOM_0DEG</a>   : </div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM90DEGCW)  ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a1e869bd3bca58667e691ee11bb787f4a">PIOS_HMC5983_BOTTOM_270DEG</a> : </div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM180DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a26eda046ed668462bd1490b4703d58b1">PIOS_HMC5983_BOTTOM_180DEG</a> : </div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM270DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a17604c3c171b392e091c137a3f974559">PIOS_HMC5983_BOTTOM_90DEG</a>  : </div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                        external_hmc5983_cfg.<a class="code" href="structpios__hmc5983__cfg.html#aaf4023336aa39df82427b1763d59b94c">Orientation</a>;</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                PIOS_HMC5983_SetOrientation(hmc5983_orientation);</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5983_I2C */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0); <span class="comment">/* Should be unreachable */</span></div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        }</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;mag_fail:</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a>);</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        <span class="keywordflow">return</span> -2;</div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;        <span class="keywordflow">switch</span> (mag) {</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_HMC5883</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_MAG_EXTERNALHMC5883:</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5883.html#ga2de33c0ac02b42cb114d9af689101498">PIOS_HMC5883_Init</a>(*i2c_id, &amp;external_hmc5883_cfg))</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a>())</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;                <span class="comment">/* XXX: Lame.  Move driver to HwShared constants.</span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="comment">                 * Note: drivers rotate around vehicle Z-axis, this rotates around ??</span></div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="comment">                 * This is dubious because both the sensor and vehicle Z-axis point down</span></div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="comment">                 * in bottom orientation, whereas this is rotating around an upwards vector. */</span></div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga9b5f48f8223effbfd7dbb15297957119">pios_hmc5883_orientation</a> hmc5883_orientation = </div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP0DEGCW)      ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a6453f9d33a17899b4d4f764ee3db4edb">PIOS_HMC5883_TOP_0DEG</a>      : </div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP90DEGCW)     ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353">PIOS_HMC5883_TOP_90DEG</a>     : </div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP180DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a0ff7330505c4d6f75c01c41dfdaf4400">PIOS_HMC5883_TOP_180DEG</a>    : </div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP270DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119af9a84c032f0ee432f8969eacd4fff3bf">PIOS_HMC5883_TOP_270DEG</a>    : </div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM0DEGCW)   ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119aaec7301513c1bf8b3f61712dde5f8561">PIOS_HMC5883_BOTTOM_0DEG</a>   : </div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM90DEGCW)  ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119aa81ae7e2db9b3e3fdc4714de6b31dffd">PIOS_HMC5883_BOTTOM_270DEG</a> : </div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM180DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a3a6c57f4f57cf89269f02284170de4e7">PIOS_HMC5883_BOTTOM_180DEG</a> : </div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM270DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119a5a7ec80a5785c13df50128099b1257ae">PIOS_HMC5883_BOTTOM_90DEG</a>  : </div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;                        external_hmc5883_cfg.<a class="code" href="structpios__hmc5883__cfg.html#a64d1f9c61e0c29527e1b4b53e357fca8">Default_Orientation</a>;</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                <a class="code" href="group___p_i_o_s___h_m_c5883.html#gae6ac7898a71fa1715766813683724b67">PIOS_HMC5883_SetOrientation</a>(hmc5883_orientation);</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_HMC5983_I2C</span></div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> HWSHARED_MAG_EXTERNALHMC5983:</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_m_c5983.html#ga337bb85999059b8d44c4b23b8af98f13">PIOS_HMC5983_Init</a>(*i2c_id, 0, &amp;external_hmc5983_cfg))</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;                <span class="keywordflow">if</span> (PIOS_HMC5983_Test())</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;                        <span class="keywordflow">goto</span> mag_fail;</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;                <span class="comment">/* Annoying to do this, but infecting low-level drivers with UAVO deps is yucky</span></div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;<span class="comment">                 * Note: drivers rotate around vehicle Z-axis, this rotates around ??</span></div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;<span class="comment">                 * This is dubious because both the sensor and vehicle Z-axis point down</span></div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;<span class="comment">                 * in bottom orientation, whereas this is rotating around an upwards vector. */</span></div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___h_m_c5983.html#gab3f2da0720cbc9ed9990c883001f2666">pios_hmc5983_orientation</a> hmc5983_orientation = </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP0DEGCW)      ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a1a9f6bc8417252aa92d69cf9da909ba0">PIOS_HMC5983_TOP_0DEG</a>      : </div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP90DEGCW)     ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666adfeede2a51c93de3d9eb218654fcdec9">PIOS_HMC5983_TOP_90DEG</a>     : </div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP180DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a45f0446eba38d9a11bf52fc418aeb49d">PIOS_HMC5983_TOP_180DEG</a>    : </div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_TOP270DEGCW)    ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a193e502c42bd3c971a37cf2bea42c064">PIOS_HMC5983_TOP_270DEG</a>    : </div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM0DEGCW)   ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666ad7c5237037f72ed69eeffc11189b7f13">PIOS_HMC5983_BOTTOM_0DEG</a>   : </div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM90DEGCW)  ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a1e869bd3bca58667e691ee11bb787f4a">PIOS_HMC5983_BOTTOM_270DEG</a> : </div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM180DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a26eda046ed668462bd1490b4703d58b1">PIOS_HMC5983_BOTTOM_180DEG</a> : </div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;                        (orientation == HWSHARED_MAGORIENTATION_BOTTOM270DEGCW) ? <a class="code" href="group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a17604c3c171b392e091c137a3f974559">PIOS_HMC5983_BOTTOM_90DEG</a>  : </div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;                        external_hmc5983_cfg.<a class="code" href="structpios__hmc5983__cfg.html#aaf4023336aa39df82427b1763d59b94c">Orientation</a>;</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;                PIOS_HMC5983_SetOrientation(hmc5983_orientation);</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5983_I2C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0); <span class="comment">/* Should be unreachable */</span></div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        }</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC</span></div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> PIOS_HAL_ConfigureDAC(<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a> dac)</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;{</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;        DACSettingsInitialize();</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;        DACSettingsData <a class="code" href="group___flight.html#gaea755bd167062e5ac2b6868c4e5c7bcd">settings</a>;</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;        DACSettingsGet(&amp;settings);</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;        <span class="keywordflow">switch</span> (settings.DACPrimaryUse) {</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC_FSK</span></div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_FSK1200:</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___a_q32.html#gaba34640b239b01884e1a4b0b3fe16c31">pios_com_lighttelemetry_id</a>) {</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;                }</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;                <a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#gab10220c0f7905f0817f3f91c62368d19">fskdac_dev_t</a> fskdac;</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#ga2883aeb19f38f83a40f3d9007e42ef21">PIOS_FSKDAC_Init</a>(&amp;fskdac, dac)) {</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;mag_fail:</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a5a4ddf59e023cf155e5af7f8304e644f">PIOS_SENSOR_MAG</a>);</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;        <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC</span></div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> PIOS_HAL_ConfigureDAC(<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a> dac)</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;{</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;        DACSettingsInitialize();</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;        DACSettingsData <a class="code" href="group___flight.html#gaea755bd167062e5ac2b6868c4e5c7bcd">settings</a>;</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;        DACSettingsGet(&amp;settings);</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;        <span class="keywordflow">switch</span> (settings.DACPrimaryUse) {</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC_FSK</span></div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_FSK1200:</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___a_q32.html#gaba34640b239b01884e1a4b0b3fe16c31">pios_com_lighttelemetry_id</a>) {</div>
 <div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;                }</div>
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___a_q32.html#gaba34640b239b01884e1a4b0b3fe16c31">pios_com_lighttelemetry_id</a>,</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;                                        &amp;<a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#ga674b3c85cb3592e03429a4f96c874108">pios_fskdac_com_driver</a>,</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;                                        (uintptr_t) fskdac, 0,</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;                                        <a class="code" href="group___p_i_o_s___h_a_l.html#ga97cc415837c8817cb9cd4f63460e57f1">PIOS_COM_LIGHTTELEMETRY_TX_BUF_LEN</a>)) {</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;                }</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;                <a class="code" href="group___p_i_o_s___modules.html#ga039145f6fcbc2953d363dc6dc7ad73ea">PIOS_Modules_Enable</a>(<a class="code" href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00">PIOS_MODULE_UAVOLIGHTTELEMETRYBRIDGE</a>);</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_DAC_FSK</span></div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC_ANNUNCIATOR</span></div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_ANNUNCIATORS:</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___a_n_n_u_n_c_d_a_c.html#gaa89a628a4ac18907983004ac4bf86e23">PIOS_ANNUNCDAC_Init</a>(&amp;pios_dac_annunciator_id, dac)) {</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;                }</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_DISABLED:</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        }</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;}</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;                <a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#gab10220c0f7905f0817f3f91c62368d19">fskdac_dev_t</a> fskdac;</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#ga2883aeb19f38f83a40f3d9007e42ef21">PIOS_FSKDAC_Init</a>(&amp;fskdac, dac)) {</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                }</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___a_q32.html#gaba34640b239b01884e1a4b0b3fe16c31">pios_com_lighttelemetry_id</a>,</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;                                        &amp;<a class="code" href="group___p_i_o_s___f_s_k_d_a_c.html#ga674b3c85cb3592e03429a4f96c874108">pios_fskdac_com_driver</a>,</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;                                        (uintptr_t) fskdac, 0,</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;                                        <a class="code" href="group___p_i_o_s___h_a_l.html#ga97cc415837c8817cb9cd4f63460e57f1">PIOS_COM_LIGHTTELEMETRY_TX_BUF_LEN</a>)) {</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;                }</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;                <a class="code" href="group___p_i_o_s___modules.html#ga039145f6fcbc2953d363dc6dc7ad73ea">PIOS_Modules_Enable</a>(<a class="code" href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00">PIOS_MODULE_UAVOLIGHTTELEMETRYBRIDGE</a>);</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_DAC_FSK</span></div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_DAC_ANNUNCIATOR</span></div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_ANNUNCIATORS:</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___a_n_n_u_n_c_d_a_c.html#gaa89a628a4ac18907983004ac4bf86e23">PIOS_ANNUNCDAC_Init</a>(&amp;pios_dac_annunciator_id, dac)) {</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;                        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;                }</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> DACSETTINGS_DACPRIMARYUSE_DISABLED:</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;        }</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;}</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_ga26c0d186420f2a028ebc09e009edf983"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga26c0d186420f2a028ebc09e009edf983">PIOS_COM_GPS_RX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_GPS_RX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00138">pios_hal.c:138</a></div></div>
 <div class="ttc" id="structpios__rfm22b__cfg_html_a0af79b6085044182779c794792c7e22d"><div class="ttname"><a href="structpios__rfm22b__cfg.html#a0af79b6085044182779c794792c7e22d">pios_rfm22b_cfg::slave_num</a></div><div class="ttdeci">uint32_t slave_num</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00047">pios_rfm22b.h:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ggaad7a4f0b388c5c9323bb4ced4e9356ccade87df0ea8ae8e430c1fc59bad39ecc7"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ggaad7a4f0b388c5c9323bb4ced4e9356ccade87df0ea8ae8e430c1fc59bad39ecc7">RFM22_tx_pwr_txpow_7</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00059">pios_rfm22b.h:59</a></div></div>
@@ -1556,7 +1562,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="msp__messages_8h_html_a8e57cd9cfa53d3871b074072f48f9e98"><div class="ttname"><a href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a></div><div class="ttdeci">struct _msp_pid_item mag</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00104">msp_messages.h:104</a></div></div>
 <div class="ttc" id="group___firmware_i_a_p_module_html_ga9ab76e2043a7668f9ad6ffb17d88be37"><div class="ttname"><a href="group___firmware_i_a_p_module.html#ga9ab76e2043a7668f9ad6ffb17d88be37">board_rev</a></div><div class="ttdeci">static uint8_t board_rev</div><div class="ttdef"><b>Definition:</b> <a href="firmwareiap_8c_source.html#l00071">firmwareiap.c:71</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ggaad7a4f0b388c5c9323bb4ced4e9356cca211047452ea729f5c4836e2732c750e4"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ggaad7a4f0b388c5c9323bb4ced4e9356cca211047452ea729f5c4836e2732c750e4">RFM22_tx_pwr_txpow_2</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00054">pios_rfm22b.h:54</a></div></div>
-<div class="ttc" id="group___p_i_o_s___h_a_l_html_gad550e65c2e4d488138cbaad6a293564c"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c">PIOS_HAL_ConfigureExternalBaro</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalBaro(HwSharedExtBaroOptions baro, uint32_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01350">pios_hal.c:1350</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_a_l_html_gad550e65c2e4d488138cbaad6a293564c"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gad550e65c2e4d488138cbaad6a293564c">PIOS_HAL_ConfigureExternalBaro</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalBaro(HwSharedExtBaroOptions baro, uint32_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01353">pios_hal.c:1353</a></div></div>
 <div class="ttc" id="group___p_i_o_s___modules_html_gga0c75b61e067ee5be01eb6682ce7c8f60a10c67c9258a1eaf13e3c98a9c670b035"><div class="ttname"><a href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a10c67c9258a1eaf13e3c98a9c670b035">PIOS_MODULE_UAVOMSPBRIDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__modules_8h_source.html#l00042">pios_modules.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_m_c5883_html_gae6ac7898a71fa1715766813683724b67"><div class="ttname"><a href="group___p_i_o_s___h_m_c5883.html#gae6ac7898a71fa1715766813683724b67">PIOS_HMC5883_SetOrientation</a></div><div class="ttdeci">int32_t PIOS_HMC5883_SetOrientation(enum pios_hmc5883_orientation orientation)</div></div>
 <div class="ttc" id="group___p_i_o_s___d_s_m_html_ga0539b216120c12744b5b7f7491cdf01a"><div class="ttname"><a href="group___p_i_o_s___d_s_m.html#ga0539b216120c12744b5b7f7491cdf01a">PIOS_DSM_Init</a></div><div class="ttdeci">int32_t PIOS_DSM_Init(uintptr_t *dsm_id, const struct pios_dsm_cfg *cfg, const struct pios_com_driver *driver, uintptr_t lower_id, HwSharedDSMxModeOptions mode)</div></div>
@@ -1576,6 +1582,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_d_a_c_html_gaa89a628a4ac18907983004ac4bf86e23"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c_d_a_c.html#gaa89a628a4ac18907983004ac4bf86e23">PIOS_ANNUNCDAC_Init</a></div><div class="ttdeci">int32_t PIOS_ANNUNCDAC_Init(annuncdac_dev_t *annuncdac_id, dac_dev_t dac)</div><div class="ttdoc">Allocate and initialise ANNUNCDAC device. </div></div>
 <div class="ttc" id="group___p_i_o_s___h_m_c5883_html_gacea6145300c5c975b46bca1acfe800bf"><div class="ttname"><a href="group___p_i_o_s___h_m_c5883.html#gacea6145300c5c975b46bca1acfe800bf">PIOS_HMC5883_Test</a></div><div class="ttdeci">int32_t PIOS_HMC5883_Test(void)</div></div>
 <div class="ttc" id="pios__hmc5983_8h_html"><div class="ttname"><a href="pios__hmc5983_8h.html">pios_hmc5983.h</a></div><div class="ttdoc">HMC5983 functions header. </div></div>
+<div class="ttc" id="posix_2inc_2pios__i2c__priv_8h_html_a8a87eed8285d31b959c790f61d2dd896"><div class="ttname"><a href="posix_2inc_2pios__i2c__priv_8h.html#a8a87eed8285d31b959c790f61d2dd896">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(uint32_t *i2c_id, const char *path)</div></div>
 <div class="ttc" id="pios__com__priv_8h_html"><div class="ttname"><a href="pios__com__priv_8h.html">pios_com_priv.h</a></div><div class="ttdoc">COM private definitions. </div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_gab515a88eb826005906602d23e590fb11"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gab515a88eb826005906602d23e590fb11">PIOS_COM_STORM32BGC_RX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_STORM32BGC_RX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00210">pios_hal.c:210</a></div></div>
 <div class="ttc" id="structpios__sbus__cfg_html_a66cb660c4fe8979c218032c477b12a93"><div class="ttname"><a href="structpios__sbus__cfg.html#a66cb660c4fe8979c218032c477b12a93">pios_sbus_cfg::gpio_clk_func</a></div><div class="ttdeci">void(* gpio_clk_func)(uint32_t periph, FunctionalState state)</div><div class="ttdef"><b>Definition:</b> <a href="pios__sbus__priv_8h_source.html#l00081">pios_sbus_priv.h:81</a></div></div>
@@ -1596,8 +1603,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="pios__rfm22b__rcvr__priv_8h_html"><div class="ttname"><a href="pios__rfm22b__rcvr__priv_8h.html">pios_rfm22b_rcvr_priv.h</a></div><div class="ttdoc">TauLabs Link receiver private functions. </div></div>
 <div class="ttc" id="group___p_i_o_s___s_bus_html_gae62eb9f5c8bd04153a8950ba4a75c781"><div class="ttname"><a href="group___p_i_o_s___s_bus.html#gae62eb9f5c8bd04153a8950ba4a75c781">pios_sbus_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_sbus_rcvr_driver</div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_ga43f6102039131d60cf02ba0330e9c52e"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga43f6102039131d60cf02ba0330e9c52e">PIOS_COM_TELEM_RF_TX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_TELEM_RF_TX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00134">pios_hal.c:134</a></div></div>
-<div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_a10b19295cb30ec2e44c0a11f45cf28fe"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a10b19295cb30ec2e44c0a11f45cf28fe">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(uint32_t *i2c_id, const struct pios_i2c_adapter_cfg *cfg)</div></div>
-<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga1f6e5005cf6070ede34744187bae55eb"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb">PIOS_HAL_ConfigureExternalMag</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalMag(HwSharedMagOptions mag, HwSharedMagOrientationOptions orientation, uint32_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01406">pios_hal.c:1406</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga1f6e5005cf6070ede34744187bae55eb"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga1f6e5005cf6070ede34744187bae55eb">PIOS_HAL_ConfigureExternalMag</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalMag(HwSharedMagOptions mag, HwSharedMagOrientationOptions orientation, uint32_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01409">pios_hal.c:1409</a></div></div>
 <div class="ttc" id="group___p_i_o_s___modules_html_gga0c75b61e067ee5be01eb6682ce7c8f60a794940042ca54c8338fcc65c30cf99d1"><div class="ttname"><a href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a794940042ca54c8338fcc65c30cf99d1">PIOS_MODULE_UAVOFRSKYSENSORHUBBRIDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__modules_8h_source.html#l00037">pios_modules.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_ga106b1def54d7875d1bb094ae0b9976a0"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga106b1def54d7875d1bb094ae0b9976a0">PIOS_COM_TBSVTXCONFIG_RX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_TBSVTXCONFIG_RX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00222">pios_hal.c:222</a></div></div>
 <div class="ttc" id="structpios__bmp280__cfg_html"><div class="ttname"><a href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a></div><div class="ttdoc">Configuration structure for the BMP085 driver. </div><div class="ttdef"><b>Definition:</b> <a href="pios__bmp280__priv_8h_source.html#l00039">pios_bmp280_priv.h:39</a></div></div>

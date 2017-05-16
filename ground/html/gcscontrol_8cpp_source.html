@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">95ef20a</span>
+   &#160;<span id="projectnumber">3a503a2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('gcscontrol_8cpp_source.html','');});
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
 <div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___g_c_s_control.html#ga2eb19dd3bc29d04469e40f45691c8171">  200</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___g_c_s_control.html#ga2eb19dd3bc29d04469e40f45691c8171">GCSControl::setChannel</a>(quint8 channel, <span class="keywordtype">float</span> value)</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (value &gt; 1 || value &lt; -1 || channel &gt; GCSReceiver::CHANNEL_NUMELEM || !hasControl)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (value &gt; 1 || value &lt; -1 || channel &gt;= GCSReceiver::CHANNEL_NUMELEM || !hasControl)</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    quint16 pwmValue;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (value &gt;= 0)</div>

@@ -9,13 +9,10 @@ var uavtalk_8h =
       [ "UAVTALK_STATE_SIZE", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691ca9aa933eedaeac2cc5d5552cf9becf16c", null ],
       [ "UAVTALK_STATE_OBJID", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691cab98212ea6a045429c1ca8a085116dfb3", null ],
       [ "UAVTALK_STATE_INSTID", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691caae164f1909f4dfe3f72b6787482f0964", null ],
-      [ "UAVTALK_STATE_TIMESTAMP", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691ca1785b6e3aaaa285b9585f38fae2826f1", null ],
       [ "UAVTALK_STATE_DATA", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691ca48c5974336aae492175d58113ca410ec", null ],
       [ "UAVTALK_STATE_CS", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691ca366f9ba94ea7dd19bfe5d7cf572d8cf9", null ],
       [ "UAVTALK_STATE_COMPLETE", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a", null ]
     ] ],
-    [ "UAVTalkGetLastTimestamp", "uavtalk_8h.html#ga4134f84aca917fe6e3eca1eaacf0664e", null ],
-    [ "UAVTalkGetOutputStream", "uavtalk_8h.html#ga2f8c8d67e642f7df90500f38273baa61", null ],
     [ "UAVTalkGetPacketInstId", "uavtalk_8h.html#gab86910d482482ca00111ce24dfbc6685", null ],
     [ "UAVTalkGetPacketObjId", "uavtalk_8h.html#ga89971c05ca2331f124e85f4f287c37e2", null ],
     [ "UAVTalkGetStats", "uavtalk_8h.html#gaeccb32b1562a98d5586bb3d4d25715ee", null ],
@@ -31,6 +28,5 @@ var uavtalk_8h =
     [ "UAVTalkSendNack", "uavtalk_8h.html#ga2ef859d444a819ed3e3bb4ea36761c69", null ],
     [ "UAVTalkSendObject", "uavtalk_8h.html#gab4fe52d9c33088b7ebbac9ad4e11b9de", null ],
     [ "UAVTalkSendObjectRequest", "uavtalk_8h.html#gaa69251603e3426610051dc19b3a68494", null ],
-    [ "UAVTalkSendObjectTimestamped", "uavtalk_8h.html#gad5aea81015d8dd5ed7d474ac87fe58fc", null ],
-    [ "UAVTalkSetOutputStream", "uavtalk_8h.html#ga33f8221bbddbf94c7379c3230eac1501", null ]
+    [ "UAVTalkSendObjectTimestamped", "uavtalk_8h.html#gacc0cb5c44deb938d85504b133882407a", null ]
 ];
