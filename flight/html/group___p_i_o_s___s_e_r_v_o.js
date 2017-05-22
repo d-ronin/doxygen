@@ -57,6 +57,7 @@ var group___p_i_o_s___s_e_r_v_o =
     [ "DSHOT_Update", "group___p_i_o_s___s_e_r_v_o.html#gaedd09d5c2bd70c6a479e58cabe5b4cca", null ],
     [ "max_timer_clock", "group___p_i_o_s___s_e_r_v_o.html#ga8f179a4dff831ab9bef433f0709221ae", null ],
     [ "PIOS_PWM_Init", "group___p_i_o_s___s_e_r_v_o.html#gac6c2df6167298a9fc27afd325ee283ef", null ],
+    [ "PIOS_Servo_GetPins", "group___p_i_o_s___s_e_r_v_o.html#gac6dc42811aebe0e74f9cbfd3b62df862", null ],
     [ "PIOS_Servo_Init", "group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d", null ],
     [ "PIOS_Servo_PrepareForReset", "group___p_i_o_s___s_e_r_v_o.html#ga1ccf3b4ed37aba8b784df832dd1e325b", null ],
     [ "PIOS_Servo_Set", "group___p_i_o_s___s_e_r_v_o.html#gaba4a52e086fdb598832d09776cdebde3", null ],

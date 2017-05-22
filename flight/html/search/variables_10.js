@@ -205,5 +205,5 @@ var searchData=
   ['pwm_5fres',['pwm_res',['../group___p_i_o_s___s_e_r_v_o.html#gaa7114b5a1f94e7bc10a5e31b4dd4ae37',1,'output_channel::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#ga86a5130e2ff5acbdf9480ee64432bba7',1,'output_channel::@23::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#gac46fc7a0bfdd7098af518719c42c261d',1,'@24::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf76078ad3a81e9760694550485b6e590',1,'pwm_res():&#160;pios_servo.c']]],
   ['pwr',['pwr',['../group___v_t_x_config.html#ga015080f92311cb2608d26a360f593ea8',1,'__attribute__']]],
   ['pwr_5flevel',['pwr_level',['../group___v_t_x_config.html#ga493118db0a52eb06f4826c6910751b39',1,'__attribute__']]],
-  ['pwr_5fmgmt_5fclk',['Pwr_mgmt_clk',['../structpios__mpu60x0__cfg.html#ad4ef97a93c0b2cfc7e71652b2ec8c546',1,'pios_mpu60x0_cfg::Pwr_mgmt_clk()'],['../structpios__mpu9250__cfg.html#a86984e4647a9e193592d56c24e0fba84',1,'pios_mpu9250_cfg::Pwr_mgmt_clk()']]]
+  ['pwr_5fmgmt_5fclk',['Pwr_mgmt_clk',['../structpios__mpu60x0__cfg.html#ad4ef97a93c0b2cfc7e71652b2ec8c546',1,'pios_mpu60x0_cfg']]]
 ];

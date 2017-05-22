@@ -81,7 +81,7 @@ var searchData=
   ['use_5fmpu_5fmag',['use_mpu_mag',['../group___p_i_o_s___m_p_u60_x0.html#ga5992d3ea2ba9540f5984ff652087c851',1,'pios_mpu60x0.h']]],
   ['use_5freal_5fsensors',['use_real_sensors',['../group___sensors.html#ga5eeff3da45a87067d0720659756e3a36',1,'simsensors.c']]],
   ['user_5fcallbacks',['user_callbacks',['../group___p_i_o_s___u_s_b_h_o_o_k.html#gaf0639d3acf09f14bf9f956c29043a0e0',1,'pios_usbhook.c']]],
-  ['user_5fctl',['User_ctl',['../structpios__mpu60x0__cfg.html#a2fd36500bdaf115a26e2ce8937441a17',1,'pios_mpu60x0_cfg::User_ctl()'],['../structpios__mpu9250__cfg.html#aee9023ce319cb42f643751b6e9b0c489',1,'pios_mpu9250_cfg::User_ctl()']]],
+  ['user_5fctl',['User_ctl',['../structpios__mpu60x0__cfg.html#a2fd36500bdaf115a26e2ce8937441a17',1,'pios_mpu60x0_cfg']]],
   ['user_5fdfu_5frequest',['User_DFU_request',['../group___common_f1.html#ga4e35257eb1d649bd7353cb4a4d37d5fb',1,'main.c']]],
   ['user_5fstandard_5frequests',['User_Standard_Requests',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga8d70d0a7e05cf9c172e4304def6b65b8',1,'User_Standard_Requests():&#160;pios_usbhook.c'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga8d70d0a7e05cf9c172e4304def6b65b8',1,'User_Standard_Requests():&#160;pios_usbhook.c']]],
   ['utm_5fa',['UTM_a',['../utm_8c.html#acd650688ca15f6e5844374324d4a6162',1,'utm.c']]],

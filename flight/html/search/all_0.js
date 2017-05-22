@@ -43,6 +43,7 @@ var searchData=
   ['_5fbu_5fpayload_5fsize',['_bu_payload_size',['../group___updater.html#ga4dccd413b84105099ae7325ad03e8432',1,'main.c']]],
   ['_5fbu_5fpayload_5fstart',['_bu_payload_start',['../group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523',1,'main.c']]],
   ['_5fdevice_5fstate',['_DEVICE_STATE',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bb',1,'pios_usb_hid_pwr.h']]],
+  ['_5fdio_5fprelude',['_DIO_PRELUDE',['../group___p_i_o_s___d_i_o.html#gab68d80b9f84d7597b7b2fdddd067a388',1,'pios_dio.h']]],
   ['_5febss',['_ebss',['../_s_t_m32_f0xx_2startup_8c.html#ae09fce368f4156276f5f85712265d28b',1,'startup.c']]],
   ['_5fedata',['_edata',['../_s_t_m32_f0xx_2startup_8c.html#a678387b54786b38004c37c629e83a35a',1,'startup.c']]],
   ['_5feheap',['_eheap',['../group___p_i_o_s___h_e_a_p.html#ga29d5545f69b3b7a8e74185728a24829e',1,'pios_heap.c']]],

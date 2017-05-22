@@ -42,7 +42,7 @@ var searchData=
   ['decldot',['Decldot',['../struct_w_m_mtype___geo_magnetic_elements.html#a6c23bd42050e02810a937cd0316b9d8e',1,'WMMtype_GeoMagneticElements']]],
   ['default_5ffilter',['default_filter',['../structpios__mpu60x0__cfg.html#a50a6612b9fff2bd96908996d7d734ef3',1,'pios_mpu60x0_cfg']]],
   ['default_5forientation',['Default_Orientation',['../structpios__hmc5883__cfg.html#a64d1f9c61e0c29527e1b4b53e357fca8',1,'pios_hmc5883_cfg']]],
-  ['default_5fsamplerate',['default_samplerate',['../structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f',1,'pios_mpu_cfg::default_samplerate()'],['../structpios__mpu60x0__cfg.html#af4581a0013e107281a5ebefa0745d6ff',1,'pios_mpu60x0_cfg::default_samplerate()'],['../structpios__mpu9250__cfg.html#ab96eaf220fa0034833f3419e7a6b112b',1,'pios_mpu9250_cfg::default_samplerate()']]],
+  ['default_5fsamplerate',['default_samplerate',['../structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f',1,'pios_mpu_cfg::default_samplerate()'],['../structpios__mpu60x0__cfg.html#af4581a0013e107281a5ebefa0745d6ff',1,'pios_mpu60x0_cfg::default_samplerate()']]],
   ['defmetadata',['defMetadata',['../group___u_a_v_object_handling.html#ga5dbee288607289a67fe031c41eea536a',1,'uavobjectmanager.c']]],
   ['deinit',['deinit',['../group___p_i_o_s___u_s_b_h_o_o_k.html#gaba4bab769a440902a88d6261c4b66efd',1,'pios_usb_ifops']]],
   ['deriv_5fgamma',['deriv_gamma',['../group___tau_labs_math.html#gae44f14e8a865966dcbdaa4cf15a17fb1',1,'pid.c']]],

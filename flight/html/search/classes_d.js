@@ -52,7 +52,6 @@ var searchData=
   ['pios_5flis3mdl_5fcfg',['pios_lis3mdl_cfg',['../structpios__lis3mdl__cfg.html',1,'']]],
   ['pios_5fmpu60x0_5fcfg',['pios_mpu60x0_cfg',['../structpios__mpu60x0__cfg.html',1,'']]],
   ['pios_5fmpu60x0_5fdata',['pios_mpu60x0_data',['../structpios__mpu60x0__data.html',1,'']]],
-  ['pios_5fmpu9250_5fcfg',['pios_mpu9250_cfg',['../structpios__mpu9250__cfg.html',1,'']]],
   ['pios_5fmpu_5fcfg',['pios_mpu_cfg',['../structpios__mpu__cfg.html',1,'']]],
   ['pios_5fms5611_5fcfg',['pios_ms5611_cfg',['../structpios__ms5611__cfg.html',1,'']]],
   ['pios_5fmutex',['pios_mutex',['../structpios__mutex.html',1,'']]],

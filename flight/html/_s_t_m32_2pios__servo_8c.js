@@ -11,6 +11,7 @@ var _s_t_m32_2pios__servo_8c =
     [ "ChannelSetup_DShot", "_s_t_m32_2pios__servo_8c.html#gaa54e85a87a93c87d914c24dec6120d44", null ],
     [ "DSHOT_Update", "_s_t_m32_2pios__servo_8c.html#gaedd09d5c2bd70c6a479e58cabe5b4cca", null ],
     [ "max_timer_clock", "_s_t_m32_2pios__servo_8c.html#ga8f179a4dff831ab9bef433f0709221ae", null ],
+    [ "PIOS_Servo_GetPins", "_s_t_m32_2pios__servo_8c.html#gac6dc42811aebe0e74f9cbfd3b62df862", null ],
     [ "PIOS_Servo_Init", "_s_t_m32_2pios__servo_8c.html#ga9d74027bc92b7db6f1b0dc049ba1625d", null ],
     [ "PIOS_Servo_PrepareForReset", "_s_t_m32_2pios__servo_8c.html#ga1ccf3b4ed37aba8b784df832dd1e325b", null ],
     [ "PIOS_Servo_Set", "_s_t_m32_2pios__servo_8c.html#gaba4a52e086fdb598832d09776cdebde3", null ],
