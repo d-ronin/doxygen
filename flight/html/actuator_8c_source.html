@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e785688</span>
+   &#160;<span id="projectnumber">da352cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('actuator_8c_source.html','');});
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="keywordflow">if</span> (manual_control_cmd_updated) {</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                <span class="comment">// just pull out the throttle_val... and accessory0-2 and</span></div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                <span class="comment">// fill direct into the vect</span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                ManualControlCommandThrottleGet(&amp;throttle_val);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                ManualControlCommandThrottleGet(&amp;manual_throt);</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                manual_control_cmd_updated = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                ManualControlCommandAccessoryGet(</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                        &amp;(*desired_vect)[MIXERSETTINGS_MIXER1VECTOR_ACCESSORY0]);</div>

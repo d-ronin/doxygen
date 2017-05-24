@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e785688</span>
+   &#160;<span id="projectnumber">da352cc</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -416,98 +416,84 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__usb__cdc_8c_sourc
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="group___p_i_o_s___u_s_b.html#ga188f42ea57c840a2b74611428547c92c">PIOS_USB_CheckAvailable</a>(usb_cdc_dev-&gt;lower_id) &amp;&amp;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                (control_line_state &amp; <a class="code" href="group___p_i_o_s___u_s_b___c_o_m.html#gab0c043a975b4d128b2e2f73ab0557113">USB_CDC_CONTROL_LINE_STATE_DTE_PRESENT</a>));</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structusb__cdc__line__coding.html">usb_cdc_line_coding</a> line_coding = {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        .<a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gabba439cd113503e9223c9d61865319d2">dwDTERate</a>   = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaa28850e203e2b3cf91efcc655a7a9a32">htousbl</a>(57600),</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        .bCharFormat = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gac4eddf0a8ee341b7b3718d54fd8d3aca">USB_CDC_LINE_CODING_STOP_1</a>,</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        .bParityType = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaac4a8093dc70d2faba2bfbecd8f3925e">USB_CDC_LINE_CODING_PARITY_NONE</a>,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        .bDataBits   = 8,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;};</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;uint8_t *<a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga120d6d9cf08ed1125a62ea6759047914">PIOS_USB_CDC_SetLineCoding</a>(uint16_t Length)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">if</span> (!valid) {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <span class="comment">/* No CDC interface is configured */</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> (Length == 0) {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <span class="comment">/* Report the number of bytes we&#39;re prepared to consume */</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_wLength = <span class="keyword">sizeof</span>(line_coding);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_rLength = <span class="keyword">sizeof</span>(line_coding);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <span class="comment">/* Give out a pointer to the data struct */</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">return</span> ((uint8_t *) &amp;line_coding);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">const</span> uint8_t *<a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga41d64940656273048e2558acb7609dc4">PIOS_USB_CDC_GetLineCoding</a>(uint16_t Length)</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">if</span> (!valid) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="comment">/* No CDC interface is configured */</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">if</span> (Length == 0) {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_wLength = <span class="keyword">sizeof</span>(line_coding);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">return</span> ((uint8_t *) &amp;line_coding);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">struct </span><a class="code" href="structusb__cdc__serial__state__report.html">usb_cdc_serial_state_report</a> uart_state = {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        .<a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaaadf08281b8967b649e2ce6cef9f9279">bmRequestType</a> = 0xA1,</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        .bNotification = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf403cb181cb362069801308d723a0b53">USB_CDC_NOTIFICATION_SERIAL_STATE</a>,</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        .wValue        = 0,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        .wIndex        = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(1),</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        .wLength       = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(2),</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        .bmUartState   = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(0),</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;};</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_USB_CDC_CTRL_EP_IN_Callback(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;{</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">/* Give back UART State Bitmap */</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="comment">/* UART State Bitmap</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">         *   15-7: reserved</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">         *      6:  bOverRun    overrun error</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">         *      5:  bParity     parity error</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">         *      4:  bFraming    framing error</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">         *      3:  bRingSignal RI</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">         *      2:  bBreak      break reception</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">         *      1:  bTxCarrier  DSR</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">         *      0:  bRxCarrier  DCD</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        uart_state.<a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gad0e5711c1eafe5a6c8eeeed328cd58e5">bmUartState</a> = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(0x0003);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        UserToPMABufferCopy((uint8_t *) &amp;uart_state,</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                        GetEPTxAddr(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep),</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        <span class="keyword">sizeof</span>(uart_state));</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        SetEPTxCount(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep, <a class="code" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">PIOS_USB_BOARD_CDC_MGMT_LENGTH</a>);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        SetEPTxValid(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___u_s_b.html#ga188f42ea57c840a2b74611428547c92c">PIOS_USB_CheckAvailable</a>(usb_cdc_dev-&gt;lower_id);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structusb__cdc__line__coding.html">usb_cdc_line_coding</a> line_coding = {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        .<a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gabba439cd113503e9223c9d61865319d2">dwDTERate</a>   = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaa28850e203e2b3cf91efcc655a7a9a32">htousbl</a>(57600),</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        .bCharFormat = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gac4eddf0a8ee341b7b3718d54fd8d3aca">USB_CDC_LINE_CODING_STOP_1</a>,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        .bParityType = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaac4a8093dc70d2faba2bfbecd8f3925e">USB_CDC_LINE_CODING_PARITY_NONE</a>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        .bDataBits   = 8,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;};</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;uint8_t *<a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga120d6d9cf08ed1125a62ea6759047914">PIOS_USB_CDC_SetLineCoding</a>(uint16_t Length)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">if</span> (!valid) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="comment">/* No CDC interface is configured */</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">if</span> (Length == 0) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                <span class="comment">/* Report the number of bytes we&#39;re prepared to consume */</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_wLength = <span class="keyword">sizeof</span>(line_coding);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_rLength = <span class="keyword">sizeof</span>(line_coding);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                <span class="comment">/* Give out a pointer to the data struct */</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <span class="keywordflow">return</span> ((uint8_t *) &amp;line_coding);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">const</span> uint8_t *<a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga41d64940656273048e2558acb7609dc4">PIOS_USB_CDC_GetLineCoding</a>(uint16_t Length)</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (!valid) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">/* No CDC interface is configured */</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (Length == 0) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                pInformation-&gt;Ctrl_Info.Usb_wLength = <span class="keyword">sizeof</span>(line_coding);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="keywordflow">return</span> ((uint8_t *) &amp;line_coding);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structusb__cdc__serial__state__report.html">usb_cdc_serial_state_report</a> uart_state = {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        .<a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaaadf08281b8967b649e2ce6cef9f9279">bmRequestType</a> = 0xA1,</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        .bNotification = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf403cb181cb362069801308d723a0b53">USB_CDC_NOTIFICATION_SERIAL_STATE</a>,</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        .wValue        = 0,</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        .wIndex        = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(1),</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        .wLength       = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(2),</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        .bmUartState   = <a class="code" href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a>(2 <span class="comment">/* DSR */</span> | 1 <span class="comment">/* DCD */</span>),</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;};</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_USB_CDC_CTRL_EP_IN_Callback(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keyword">struct </span>pios_usb_cdc_dev * usb_cdc_dev = (<span class="keyword">struct </span>pios_usb_cdc_dev *)pios_usb_cdc_id;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USB_CDC_validate(usb_cdc_dev);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        UserToPMABufferCopy((<span class="keyword">const</span> uint8_t *) &amp;uart_state,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        GetEPTxAddr(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep),</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        <span class="keyword">sizeof</span>(uart_state));</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        SetEPTxCount(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep, <a class="code" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">PIOS_USB_BOARD_CDC_MGMT_LENGTH</a>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        SetEPTxValid(usb_cdc_dev-&gt;cfg-&gt;ctrl_tx_ep);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;}</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="_s_t_m32_f10x_2pios__usb__hid__istr_8c_html_a0992c19a0f2e317fcd93f755d316a0fd"><div class="ttname"><a href="_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#a0992c19a0f2e317fcd93f755d316a0fd">pEpInt_IN</a></div><div class="ttdeci">void(* pEpInt_IN[7])(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2pios__usb__hid__istr_8c_source.html#l00034">pios_usb_hid_istr.c:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gac4eddf0a8ee341b7b3718d54fd8d3aca"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gac4eddf0a8ee341b7b3718d54fd8d3aca">USB_CDC_LINE_CODING_STOP_1</a></div><div class="ttdeci">USB_CDC_LINE_CODING_STOP_1</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00041">pios_usb_defs.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_ga120d6d9cf08ed1125a62ea6759047914"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga120d6d9cf08ed1125a62ea6759047914">PIOS_USB_CDC_SetLineCoding</a></div><div class="ttdeci">uint8_t * PIOS_USB_CDC_SetLineCoding(uint16_t Length)</div></div>
-<div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gad0e5711c1eafe5a6c8eeeed328cd58e5"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gad0e5711c1eafe5a6c8eeeed328cd58e5">usb_cdc_serial_state_report::bmUartState</a></div><div class="ttdeci">uint16_t bmUartState</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00336">pios_usb_defs.h:336</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_gabd0a960072c895d113d5f574d65a2e35"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#gabd0a960072c895d113d5f574d65a2e35">pios_usb_cdc_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_usb_cdc_com_driver</div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gaf403cb181cb362069801308d723a0b53"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf403cb181cb362069801308d723a0b53">USB_CDC_NOTIFICATION_SERIAL_STATE</a></div><div class="ttdeci">USB_CDC_NOTIFICATION_SERIAL_STATE</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00041">pios_usb_defs.h:41</a></div></div>
 <div class="ttc" id="structusb__cdc__serial__state__report_html"><div class="ttname"><a href="structusb__cdc__serial__state__report.html">usb_cdc_serial_state_report</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00330">pios_usb_defs.h:330</a></div></div>
@@ -520,7 +506,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__usb__cdc_8c_sourc
 <div class="ttc" id="structpios__usb__cdc__cfg_html_a00440e0eaec6a2c120fd8909599e8f61"><div class="ttname"><a href="structpios__usb__cdc__cfg.html#a00440e0eaec6a2c120fd8909599e8f61">pios_usb_cdc_cfg::data_tx_ep</a></div><div class="ttdeci">uint8_t data_tx_ep</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00040">pios_usb_cdc_priv.h:40</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gaf287b1d1736edd7a72c8cdf0e180a789"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaf287b1d1736edd7a72c8cdf0e180a789">htousbs</a></div><div class="ttdeci">#define htousbs(v)</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00077">pios_usb_defs.h:77</a></div></div>
-<div class="ttc" id="group___p_i_o_s___u_s_b___c_o_m_html_gab0c043a975b4d128b2e2f73ab0557113"><div class="ttname"><a href="group___p_i_o_s___u_s_b___c_o_m.html#gab0c043a975b4d128b2e2f73ab0557113">USB_CDC_CONTROL_LINE_STATE_DTE_PRESENT</a></div><div class="ttdeci">#define USB_CDC_CONTROL_LINE_STATE_DTE_PRESENT</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00048">pios_usb_cdc_priv.h:48</a></div></div>
 <div class="ttc" id="structusb__cdc__line__coding_html"><div class="ttname"><a href="structusb__cdc__line__coding.html">usb_cdc_line_coding</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00309">pios_usb_defs.h:309</a></div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html"><div class="ttname"><a href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00034">pios_usb_cdc_priv.h:34</a></div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html_a66e87c604aa767dc74141a0b7e7e3b7f"><div class="ttname"><a href="structpios__usb__cdc__cfg.html#a66e87c604aa767dc74141a0b7e7e3b7f">pios_usb_cdc_cfg::ctrl_tx_ep</a></div><div class="ttdeci">uint8_t ctrl_tx_ep</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00036">pios_usb_cdc_priv.h:36</a></div></div>
