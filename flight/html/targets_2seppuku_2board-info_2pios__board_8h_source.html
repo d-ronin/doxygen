@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ae631c2</span>
+   &#160;<span id="projectnumber">599e561</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -337,19 +337,17 @@ $(document).ready(function(){initNavTree('targets_2seppuku_2board-info_2pios__bo
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga2be0b313025f4a19c9ac7d5f05d94000">  239</a></span>&#160;<span class="preprocessor">#define PIOS_ADC_SUB_DRIVER_MAX_INSTANCES       3</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">// PIOS_ADC_PinGet(0) = IN7</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">// PIOS_ADC_PinGet(1) = IN8</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga208c18adb2e058348643425b79ae9e14">  243</a></span>&#160;<span class="preprocessor">#define PIOS_ADC_MAX_OVERSAMPLING       2</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga645df4566a90656d8b02ee4e63a54dfe">  244</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VREF_PLUS                     3.3</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga208c18adb2e058348643425b79ae9e14">  241</a></span>&#160;<span class="preprocessor">#define PIOS_ADC_MAX_OVERSAMPLING       4</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="group___seppuku.html#ga645df4566a90656d8b02ee4e63a54dfe">  242</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VREF_PLUS                     3.3</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">// USB</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">// USB</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  249</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                                1 </span><span class="comment">/* Should remove all references to this */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SEPPUKU_PIOS_BOARD_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="group___seppuku.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  247</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                                1 </span><span class="comment">/* Should remove all references to this */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SEPPUKU_PIOS_BOARD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga5c6ed92207820d514741140f5dec7f8a"><div class="ttname"><a href="group___a_q32.html#ga5c6ed92207820d514741140f5dec7f8a">pios_com_frsky_sensor_hub_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sensor_hub_id</div></div>
 <div class="ttc" id="group___quanton_html_ga29c6942e2bb055cc6d2a15ac205c540b"><div class="ttname"><a href="group___quanton.html#ga29c6942e2bb055cc6d2a15ac205c540b">pios_i2c_usart1_adapter_id</a></div><div class="ttdeci">uint32_t pios_i2c_usart1_adapter_id</div></div>
