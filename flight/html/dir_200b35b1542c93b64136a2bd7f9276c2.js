@@ -73,6 +73,7 @@ var dir_200b35b1542c93b64136a2bd7f9276c2 =
     [ "pios_ms5611_priv.h", "pios__ms5611__priv_8h.html", "pios__ms5611__priv_8h" ],
     [ "pios_ms5611_spi.h", "pios__ms5611__spi_8h.html", "pios__ms5611__spi_8h" ],
     [ "pios_mutex.h", "pios__mutex_8h.html", "pios__mutex_8h" ],
+    [ "pios_omnip.h", "pios__omnip_8h.html", "pios__omnip_8h" ],
     [ "pios_openlrs.h", "pios__openlrs_8h.html", null ],
     [ "pios_openlrs_priv.h", "pios__openlrs__priv_8h.html", null ],
     [ "pios_openlrs_rcvr_priv.h", "pios__openlrs__rcvr__priv_8h.html", "pios__openlrs__rcvr__priv_8h" ],

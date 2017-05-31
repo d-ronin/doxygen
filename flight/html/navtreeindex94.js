@@ -1,5 +1,9 @@
 var NAVTREEINDEX94 =
 {
+"misc__math_8h.html#ga8b0090e42a9077c4313d1652b851f226":[5,0,0,1,2,7,2],
+"misc__math_8h.html#ga937c2d5c6fe809078b7ba7501d023b1c":[5,0,0,1,2,7,3],
+"misc__math_8h.html#ga98f828fae7db78aa840c2e929da77daf":[5,0,0,1,2,7,24],
+"misc__math_8h.html#ga9d6db4ce358f42764c8483b4d4823db2":[5,0,0,1,2,7,26],
 "misc__math_8h.html#ga9df8de687673ab525cc81a7fef38b295":[5,0,0,1,2,7,31],
 "misc__math_8h.html#ga9ee523815da74e83a8bf8eac7614033c":[5,0,0,1,2,7,20],
 "misc__math_8h.html#gaa176231c25bcf83877304a735c40f177":[5,0,0,1,2,7,23],
@@ -245,9 +249,5 @@ var NAVTREEINDEX94 =
 "namespaceencode__font.html":[4,0,0],
 "namespaceencode__fonts.html":[3,0,1],
 "namespaceencode__fonts.html":[4,0,1],
-"namespaceencode__images.html":[3,0,2],
-"namespaceencode__images.html":[4,0,2],
-"namespacemembers.html":[3,1,0],
-"namespacemembers_func.html":[3,1,1],
-"namespacemembers_vars.html":[3,1,2]
+"namespaceencode__images.html":[3,0,2]
 };

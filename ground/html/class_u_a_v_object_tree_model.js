@@ -22,6 +22,5 @@ var class_u_a_v_object_tree_model =
     [ "setManuallyChangedColor", "group___u_a_v_object_browser_plugin.html#ga9bc5e49ee3b742c3f1b9ff05b71f7d7e", null ],
     [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#gac646e0a8519143e994579def20e30d99", null ],
     [ "setOnlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#gaef0cd94aa30b16dabefb791a32542b10", null ],
-    [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gac3ae57e6538de964006edcdb0affb776", null ],
-    [ "setRecentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#ga2b730043ef2a9acc337b2a6864894456", null ]
+    [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gac3ae57e6538de964006edcdb0affb776", null ]
 ];

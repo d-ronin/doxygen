@@ -9,7 +9,6 @@ var class_u_a_v_object_browser_widget =
     [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#ga37f6886174db3558a66cb8504f16ba2e", null ],
     [ "setOnlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga964995701170a95cc21eb78fb25acb9d", null ],
     [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gae78918a99387bda266b432b5ded9168e", null ],
-    [ "setRecentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#ga7c8fdd1c763ccc45089b7b7158f49630", null ],
     [ "setViewOptions", "group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52", null ],
     [ "showMetaData", "group___u_a_v_object_browser_plugin.html#ga96e35f04d563b34d393bcd810423910d", null ],
     [ "showNotPresent", "group___u_a_v_object_browser_plugin.html#ga7f12daee68bbf2dd93b7f8c08e6d3b21", null ],

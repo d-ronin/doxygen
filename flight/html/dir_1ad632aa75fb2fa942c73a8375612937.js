@@ -40,6 +40,7 @@ var dir_1ad632aa75fb2fa942c73a8375612937 =
     [ "pios_ms5611.c", "pios__ms5611_8c.html", null ],
     [ "pios_ms5611_spi.c", "pios__ms5611__spi_8c.html", null ],
     [ "pios_mutex.c", "_common_2pios__mutex_8c.html", null ],
+    [ "pios_omnip.c", "pios__omnip_8c.html", null ],
     [ "pios_openlrs.c", "pios__openlrs_8c.html", null ],
     [ "pios_openlrs_rcvr.c", "pios__openlrs__rcvr_8c.html", null ],
     [ "pios_px4flow.c", "pios__px4flow_8c.html", null ],

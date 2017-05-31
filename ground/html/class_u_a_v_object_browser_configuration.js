@@ -17,7 +17,6 @@ var class_u_a_v_object_browser_configuration =
     [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#gacca8072929a48ec3361c09b13ba5b807", null ],
     [ "setOnlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#gaf4d1a9bda21db2cc36ab4964ecb69fa4", null ],
     [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gaf53d59e82beee15d1cafdfe22d9fcac6", null ],
-    [ "setRecentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#ga315e76c383270fc3ab6ec717ca0dd0e3", null ],
     [ "setScientificView", "group___u_a_v_object_browser_plugin.html#gac72aa6686e16d9e653a7974c066cd345", null ],
     [ "setShowMetaData", "group___u_a_v_object_browser_plugin.html#ga4105ee0a19a4196780e26ed03880f150", null ],
     [ "showMetaData", "group___u_a_v_object_browser_plugin.html#ga02fed63cf79eb853363190d6db4139c7", null ],
@@ -26,7 +25,6 @@ var class_u_a_v_object_browser_configuration =
     [ "m_notPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#ga33c7d5780e0ab089f52c3b8bb4db5d42", null ],
     [ "m_onlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga71cd3f90f89aecf1db0e52927661c9f4", null ],
     [ "m_recentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#ga37ba368816fa79530f01aa4447c2fc4d", null ],
-    [ "m_recentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#gabdd8aaa583badc5d3c7545480a372138", null ],
     [ "m_showMetaData", "group___u_a_v_object_browser_plugin.html#ga6ae11b3871f2da133017aeffa97aaa0b", null ],
     [ "m_useCategorizedView", "group___u_a_v_object_browser_plugin.html#ga5e0ce819c5383cf9b01ec73c887f67f8", null ],
     [ "m_useScientificView", "group___u_a_v_object_browser_plugin.html#ga45e17799029628f880291ec2324473a5", null ]

@@ -34,6 +34,7 @@ var group___p_i_o_s =
     [ "MPXV7002 Functions", "group___p_i_o_s___m_p_x_v7002.html", "group___p_i_o_s___m_p_x_v7002" ],
     [ "MS5611 Functions", "group___p_i_o_s___m_s5611.html", "group___p_i_o_s___m_s5611" ],
     [ "Mutex Abstraction", "group___p_i_o_s___mutex.html", "group___p_i_o_s___mutex" ],
+    [ "Driver for OmniPreSense mm-wave radar modules", "group___p_i_o_s___o_m_n_i_p.html", "group___p_i_o_s___o_m_n_i_p" ],
     [ "Radio Functions", "group___p_i_o_s___r_f_m22_b.html", "group___p_i_o_s___r_f_m22_b" ],
     [ "PX4Flow Functions", "group___p_i_o_s___p_x4_f_l_o_w.html", "group___p_i_o_s___p_x4_f_l_o_w" ],
     [ "Queue Abstraction", "group___p_i_o_s___queue.html", "group___p_i_o_s___queue" ],

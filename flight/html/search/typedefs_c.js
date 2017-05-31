@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['smoothcontrol_5fstate',['smoothcontrol_state',['../smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503',1,'smoothcontrol.h']]],
-  ['spislave_5ft',['spislave_t',['../group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga98b4e5f700a6b00d161a11f044d60e4b',1,'pios_spislave.h']]]
+  ['resume_5fstate',['RESUME_STATE',['../pios__usb__hid__pwr_8h.html#a78d10fe921914bd2c7772dc97a9a0d1c',1,'pios_usb_hid_pwr.h']]]
 ];

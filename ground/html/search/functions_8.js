@@ -22,7 +22,7 @@ var searchData=
   ['hidepage',['hidePage',['../group___core_plugin.html#gab17c1ab24f6ff4a8e32da73dd6f3a709',1,'Core::IOutputPane']]],
   ['hidesplash',['hideSplash',['../group__extensionsystem.html#gaf43008af6931f85032fb05c4716ffe0b',1,'ExtensionSystem::PluginManager::hideSplash()'],['../group___core_plugin.html#ga4f1b6129368595e3b9372fa0a3d3f370',1,'Core::Internal::CorePlugin::hideSplash()'],['../group___core_plugin.html#gae9cf1dbebb5e4812bc042caf55cdef1a',1,'Core::Internal::MainWindow::hideSplash()']]],
   ['highlighted',['highlighted',['../group___u_a_v_object_browser_plugin.html#ga47c7c59b2ed66695e9c42351fbeb24b2',1,'TreeItem']]],
-  ['highlightmanager',['HighLightManager',['../group___u_a_v_object_browser_plugin.html#ga3e918ce06821d7300b56319253da49cb',1,'HighLightManager']]],
+  ['highlightmanager',['HighLightManager',['../group___u_a_v_object_browser_plugin.html#ga263177a5340ddcc0e376da4c0d40399a',1,'HighLightManager']]],
   ['histogramdata',['HistogramData',['../group___scope_plugin.html#ga72e50dd5614c61d39ec10aa120c47d3b',1,'HistogramData']]],
   ['histogramscopeconfig',['HistogramScopeConfig',['../group___scope_plugin.html#ga3770fc706fe9b5fdd16bad59dfc23fa1',1,'HistogramScopeConfig::HistogramScopeConfig()'],['../group___scope_plugin.html#ga0a412b8c840e9f5bc746d492cafed2a5',1,'HistogramScopeConfig::HistogramScopeConfig(QSettings *qSettings)'],['../group___scope_plugin.html#gaa8c3ad4f914751d27033f2c70ea2fc2c',1,'HistogramScopeConfig::HistogramScopeConfig(Ui::ScopeGadgetOptionsPage *options_page)']]],
   ['homedoubleclick',['homedoubleclick',['../group___t_l_map_widget.html#ga4969d08e38f36b77320b0fd4d2c112ac',1,'mapcontrol::HomeItem']]],

@@ -36,7 +36,7 @@ var searchData=
   ['hidepage',['hidePage',['../group___core_plugin.html#gab17c1ab24f6ff4a8e32da73dd6f3a709',1,'Core::IOutputPane']]],
   ['hidesplash',['hideSplash',['../group__extensionsystem.html#gaf43008af6931f85032fb05c4716ffe0b',1,'ExtensionSystem::PluginManager::hideSplash()'],['../group___core_plugin.html#ga4f1b6129368595e3b9372fa0a3d3f370',1,'Core::Internal::CorePlugin::hideSplash()'],['../group___core_plugin.html#gae9cf1dbebb5e4812bc042caf55cdef1a',1,'Core::Internal::MainWindow::hideSplash()']]],
   ['highlighted',['highlighted',['../group___u_a_v_object_browser_plugin.html#ga47c7c59b2ed66695e9c42351fbeb24b2',1,'TreeItem']]],
-  ['highlightmanager',['HighLightManager',['../class_high_light_manager.html',1,'HighLightManager'],['../group___u_a_v_object_browser_plugin.html#ga3e918ce06821d7300b56319253da49cb',1,'HighLightManager::HighLightManager()']]],
+  ['highlightmanager',['HighLightManager',['../class_high_light_manager.html',1,'HighLightManager'],['../group___u_a_v_object_browser_plugin.html#ga263177a5340ddcc0e376da4c0d40399a',1,'HighLightManager::HighLightManager()']]],
   ['histogram',['HISTOGRAM',['../group___scope_plugin.html#gga0fad4d5fa165d3cf65c53a66501eb830a7f84951522a86b7b7a00ccc4fc58ad5a',1,'Scopes2dConfig']]],
   ['histogramdata',['HistogramData',['../class_histogram_data.html',1,'HistogramData'],['../group___scope_plugin.html#ga72e50dd5614c61d39ec10aa120c47d3b',1,'HistogramData::HistogramData()']]],
   ['histogramplotdata_2ecpp',['histogramplotdata.cpp',['../histogramplotdata_8cpp.html',1,'']]],

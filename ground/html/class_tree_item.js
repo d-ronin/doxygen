@@ -12,7 +12,6 @@ var class_tree_item =
     [ "description", "group___u_a_v_object_browser_plugin.html#gadb051f76eb10bd51ba2b7830601f0046", null ],
     [ "findChildByName", "group___u_a_v_object_browser_plugin.html#ga17e124da1542c7dab530add7dce6d170", null ],
     [ "getChild", "group___u_a_v_object_browser_plugin.html#gae115cb3e046c94117d64ee87764cb3ef", null ],
-    [ "getHiglightExpires", "group___u_a_v_object_browser_plugin.html#gabc3b5a703ec23600e388018db3349369", null ],
     [ "getIsPresentOnHardware", "group___u_a_v_object_browser_plugin.html#ga01344ab7b633c74d85686169b5cec4ef", null ],
     [ "highlighted", "group___u_a_v_object_browser_plugin.html#ga47c7c59b2ed66695e9c42351fbeb24b2", null ],
     [ "insertChild", "group___u_a_v_object_browser_plugin.html#ga1d0b952f15a93167dadb41667ccc5e4c", null ],
@@ -24,10 +23,9 @@ var class_tree_item =
     [ "removeHighlight", "group___u_a_v_object_browser_plugin.html#ga9620f3abc5fda75861a24032594766a6", null ],
     [ "row", "group___u_a_v_object_browser_plugin.html#ga5a062d24b35421360ad1d101c564e9be", null ],
     [ "setChanged", "group___u_a_v_object_browser_plugin.html#ga2562126b279261daaf87d6234bfb807c", null ],
-    [ "setCurrentTime", "group___u_a_v_object_browser_plugin.html#ga2d8b58f0944b4a2b934f1aacc5188f17", null ],
     [ "setData", "group___u_a_v_object_browser_plugin.html#gac71bc85379e761548f4a7d15f049cdd8", null ],
     [ "setDescription", "group___u_a_v_object_browser_plugin.html#ga14cc339bd1ed2fc44cb352461c623031", null ],
-    [ "setHighlight", "group___u_a_v_object_browser_plugin.html#ga59e306591cb8099a247f47cde3e4e78a", null ],
+    [ "setHighlight", "group___u_a_v_object_browser_plugin.html#ga9e1512544386f9f2f46c2cfc130f3a21", null ],
     [ "setHighlightManager", "group___u_a_v_object_browser_plugin.html#gac523fe360648e1e148c4b30f6918c6be", null ],
     [ "setIsDefaultValue", "group___u_a_v_object_browser_plugin.html#ga6d57bda081dc1a3bacd0ffa2d647b759", null ],
     [ "setIsPresentOnHardware", "group___u_a_v_object_browser_plugin.html#gabdebf9689f3be6c2ef6982d699ce3ae4", null ],
@@ -37,6 +35,5 @@ var class_tree_item =
     [ "treeChildren", "group___u_a_v_object_browser_plugin.html#ga158ddaed5b5e8b0129642c55991e3f30", null ],
     [ "update", "group___u_a_v_object_browser_plugin.html#gab6c763d5ea39c359ab56b4d8b1af8f7b", null ],
     [ "updatedOnly", "group___u_a_v_object_browser_plugin.html#gae407428df05b1f28bcb6e8bf2cd86b73", null ],
-    [ "updateHighlight", "group___u_a_v_object_browser_plugin.html#gab8702d2046500fbe3dd7cee66ebcda70", null ],
     [ "isPresentOnHardware", "group___u_a_v_object_browser_plugin.html#gae0ceab4db02dfa4b9b551b8352766cac", null ]
 ];

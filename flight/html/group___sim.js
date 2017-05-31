@@ -46,6 +46,7 @@ var group___sim =
     [ "PIOS_INCLUDE_LOGFS_SETTINGS", "group___sim.html#ga83406cd61f77db51d8a91643bd6c2e98", null ],
     [ "PIOS_INCLUDE_MSP_BRIDGE", "group___sim.html#ga226ad66a84c916d8f83bcd92598d259c", null ],
     [ "PIOS_INCLUDE_OPENLOG", "group___sim.html#ga7cdda1c4d728fde7a9771add071a3ff3", null ],
+    [ "PIOS_INCLUDE_RANGEFINDER", "group___sim.html#ga0e496387ab86b27f3a53fed5888c9c52", null ],
     [ "PIOS_INCLUDE_RCVR", "group___sim.html#gac34deb93cfe0b86c0c3f3fdd297af181", null ],
     [ "PIOS_INCLUDE_RTOS", "group___sim.html#gaa9690634a61cf870007fbda7f6c0d975", null ],
     [ "PIOS_INCLUDE_SERVO", "group___sim.html#ga48264c60bf3326bbbb3d3d9057cde39c", null ],

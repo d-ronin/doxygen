@@ -42,7 +42,7 @@ var searchData=
   ['reloadmap',['ReloadMap',['../group___t_l_map_widget.html#ga0ca3f365c1668226a6788084d56a6c1d',1,'internals::Core::ReloadMap()'],['../group___t_l_map_widget.html#ga912690a1920ab0638d095bea9b7d6362',1,'mapcontrol::TLMapWidget::ReloadMap()']]],
   ['reloadscene',['reloadScene',['../group___model_view_plugin.html#gad031b977be54f4bd5243fa4d6f846f68',1,'ModelViewGadgetWidget']]],
   ['remoteargument',['remoteArgument',['../group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00',1,'Core::Internal::CorePlugin']]],
-  ['remove',['remove',['../class_aggregation_1_1_aggregate.html#a83f9cd3aa5d70ce541280d6366c6459b',1,'Aggregation::Aggregate::remove()'],['../group___u_a_v_object_browser_plugin.html#gac8c19321b7e84ad6ba7a857cf48b21a8',1,'HighLightManager::remove()']]],
+  ['remove',['remove',['../class_aggregation_1_1_aggregate.html#a83f9cd3aa5d70ce541280d6366c6459b',1,'Aggregation::Aggregate']]],
   ['removeadditionalcontext',['removeAdditionalContext',['../group___core_plugin.html#ga313953591f64d54fde23de1526ab1f75',1,'Core::Internal::CoreImpl::removeAdditionalContext()'],['../group___core_plugin.html#gaa15d98e15b7b7af2e1788e3101a4c963',1,'Core::ICore::removeAdditionalContext()'],['../group___core_plugin.html#gae4a57783151dc82cd401ab8171eccfc6',1,'Core::Internal::MainWindow::removeAdditionalContext()']]],
   ['removeallgadgets',['removeAllGadgets',['../group___core_plugin.html#gab4ee04e79366c92b5a26aa8324876c4a',1,'Core::UAVGadgetInstanceManager']]],
   ['removeallobjects',['removeAllObjects',['../group___u_a_v_object_widget_utils.html#ga2e09103bceedaf1f2756c7a688da035c',1,'smartSaveButton']]],

@@ -288,6 +288,7 @@ var searchData=
   ['pios_5fmutex_5fcreate',['PIOS_Mutex_Create',['../group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526',1,'pios_mutex.c']]],
   ['pios_5fmutex_5flock',['PIOS_Mutex_Lock',['../group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375',1,'pios_mutex.c']]],
   ['pios_5fmutex_5funlock',['PIOS_Mutex_Unlock',['../group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654',1,'pios_mutex.c']]],
+  ['pios_5fomnip_5finit',['PIOS_OMNIP_Init',['../group___p_i_o_s___o_m_n_i_p.html#ga6961b6133bff93468c53ed2f465c515b',1,'pios_omnip.h']]],
   ['pios_5fopenlrs_5frcvr_5finit',['PIOS_OpenLRS_Rcvr_Init',['../group___p_i_o_s___r_f_m22b.html#ga07fd16f5b9b8e5d144f74816c64d9955',1,'pios_openlrs_rcvr_priv.h']]],
   ['pios_5fopenlrs_5frcvr_5fupdatechannels',['PIOS_OpenLRS_Rcvr_UpdateChannels',['../group___p_i_o_s___r_f_m22b.html#ga21fb1840c65b2544e3cd0226b357f585',1,'pios_openlrs_rcvr_priv.h']]],
   ['pios_5fpixel_5finit',['PIOS_Pixel_Init',['../group___p_i_o_s___v_i_d_e_o.html#gac87de5ef937f01617cd7cc4811d4e2c8',1,'pios_video.h']]],

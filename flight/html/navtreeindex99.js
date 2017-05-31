@@ -1,5 +1,9 @@
 var NAVTREEINDEX99 =
 {
+"pios__bmx055__priv_8h.html#gadc5e341327eba49b93f291a45f8c82ec":[5,0,0,3,1,15,91],
+"pios__bmx055__priv_8h.html#gadcea61cb743b2f6d661b857f99a24c6f":[5,0,0,3,1,15,110],
+"pios__bmx055__priv_8h.html#gadd2e883ea71ca09094d7d66c3e6b0720":[5,0,0,3,1,15,103],
+"pios__bmx055__priv_8h.html#gadd969e866f789c31d0a0f33c5b7342b7":[5,0,0,3,1,15,35],
 "pios__bmx055__priv_8h.html#gae32fbe098cdbd86c3d17544c9493a46f":[5,0,0,3,1,15,102],
 "pios__bmx055__priv_8h.html#gae6748b72e51b831468eef4e8f003cba5":[5,0,0,3,1,15,71],
 "pios__bmx055__priv_8h.html#gae6a073c18708ed6fdfa90f6d81992a7e":[5,0,0,3,1,15,55],
@@ -154,8 +158,8 @@ var NAVTREEINDEX99 =
 "pios__crossfire_8h.html#gab65a3705c413c56ea4c4e787e51e0884":[5,0,0,3,1,24,15],
 "pios__crossfire_8h.html#gab7f9d424348d8f18fbd99e3e0e27db5f":[5,0,0,3,1,24,19],
 "pios__crossfire_8h.html#gac414d5a8a1fc9e6b34150388de6b42ae":[5,0,0,3,1,24,12],
-"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,24,9],
 "pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,24,8],
+"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,24,9],
 "pios__crossfire_8h.html#gadc780303ee10c7d52c240a9a5abe9d41":[5,0,0,3,1,24,10],
 "pios__crossfire_8h.html#gadd03cdba4acdbe0501ee1b3b6ddf8d0d":[5,0,0,3,1,24,18],
 "pios__crossfire_8h.html#gaecddfff0c4a244683f7d975248bd8b8a":[5,0,0,3,1,24,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX99 =
 "pios__dsm__priv_8h.html":[5,0,0,3,3,0,5],
 "pios__dsm__priv_8h.html#ga0539b216120c12744b5b7f7491cdf01a":[5,0,0,3,3,0,5,3],
 "pios__dsm__priv_8h.html#ga3b6185a4c780141de5fd38f8201cdcb2":[5,0,0,3,3,0,5,2],
-"pios__dsm__priv_8h.html#ga50c5a2ccccb4058b7c96c819a58ffd34":[5,0,0,3,3,0,5,1],
-"pios__dsm__priv_8h.html#ga53ee8b314d4b19508ef3b85f119fecfe":[5,0,0,3,3,0,5,4],
-"pios__dsm__priv_8h.html#ga93e02b258974bfdb14297f1e04d480eb":[5,0,0,3,3,0,5,0],
-"pios__dsm__priv_8h_source.html":[5,0,0,3,3,0,5],
-"pios__etasv3_8c.html":[5,0,0,3,0,13]
+"pios__dsm__priv_8h.html#ga50c5a2ccccb4058b7c96c819a58ffd34":[5,0,0,3,3,0,5,1]
 };

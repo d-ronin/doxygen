@@ -76,7 +76,7 @@ var searchData=
   ['reloadscene',['reloadScene',['../group___model_view_plugin.html#gad031b977be54f4bd5243fa4d6f846f68',1,'ModelViewGadgetWidget']]],
   ['remoteargument',['remoteArgument',['../group___core_plugin.html#ga576e45eb91d9f6d704e15b26b2783c00',1,'Core::Internal::CorePlugin']]],
   ['removals',['removals',['../group___t_l_map_widget.html#gaba9b5e3cf2e51b2a87c5a343968573e9',1,'internals::TileMatrix']]],
-  ['remove',['remove',['../class_aggregation_1_1_aggregate.html#a83f9cd3aa5d70ce541280d6366c6459b',1,'Aggregation::Aggregate::remove()'],['../group___u_a_v_object_browser_plugin.html#gac8c19321b7e84ad6ba7a857cf48b21a8',1,'HighLightManager::remove()']]],
+  ['remove',['remove',['../class_aggregation_1_1_aggregate.html#a83f9cd3aa5d70ce541280d6366c6459b',1,'Aggregation::Aggregate']]],
   ['remove_5fall_5fsplits',['REMOVE_ALL_SPLITS',['../group___core_plugin.html#ga88a3d0898a8b11873092cedcbac1d981',1,'Core::Constants']]],
   ['remove_5fcurrent_5fsplit',['REMOVE_CURRENT_SPLIT',['../group___core_plugin.html#ga333ed74b9c4600e73641e017ff527e10',1,'Core::Constants']]],
   ['removeadditionalcontext',['removeAdditionalContext',['../group___core_plugin.html#ga313953591f64d54fde23de1526ab1f75',1,'Core::Internal::CoreImpl::removeAdditionalContext()'],['../group___core_plugin.html#gaa15d98e15b7b7af2e1788e3101a4c963',1,'Core::ICore::removeAdditionalContext()'],['../group___core_plugin.html#gae4a57783151dc82cd401ab8171eccfc6',1,'Core::Internal::MainWindow::removeAdditionalContext()']]],

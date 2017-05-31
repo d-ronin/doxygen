@@ -1,5 +1,9 @@
 var NAVTREEINDEX81 =
 {
+"group___telemetry_module.html":[2,5,21],
+"group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e":[2,5,21,10],
+"group___telemetry_module.html#ga058925ecc8ea2cd938fb3e9d21edb2ac":[2,5,21,16],
+"group___telemetry_module.html#ga079a96905407622d10643ce69c08b288":[2,5,21,11],
 "group___telemetry_module.html#ga0a113226c2598ffa2ac6052d4e109103":[2,5,21,28],
 "group___telemetry_module.html#ga0c5976eea2f526e6206fd4b5bd3aa2cf":[2,5,21,8],
 "group___telemetry_module.html#ga106697c824177d611d7e7868fd5b8445":[2,5,21,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX81 =
 "group___u_a_v_object_handling.html#ga5dbee288607289a67fe031c41eea536a":[2,2,1,105],
 "group___u_a_v_object_handling.html#ga5e095821a92c8240dd92462a363a1ffe":[2,2,1,46],
 "group___u_a_v_object_handling.html#ga5f40e35848fe223463778b90e8035cbd":[2,2,1,53],
-"group___u_a_v_object_handling.html#ga6282540dd888720334943f3b3ad5f301":[2,2,1,90],
-"group___u_a_v_object_handling.html#ga671a6dde943528e4018beea0f58b23ae":[2,2,1,48],
-"group___u_a_v_object_handling.html#ga6ac18a07a98d0f36e29e967d48f10703":[2,2,1,107],
-"group___u_a_v_object_handling.html#ga6ff4107796c9693e8034e7c77a26f066":[2,2,1,70],
-"group___u_a_v_object_handling.html#ga71adca5b140c651d3f31cbe9a6a2a9c4":[2,2,1,104]
+"group___u_a_v_object_handling.html#ga6282540dd888720334943f3b3ad5f301":[2,2,1,90]
 };
