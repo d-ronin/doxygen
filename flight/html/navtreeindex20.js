@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"group___autotuning_module.html#ga6d0285004afb926ad0ed377eade5bf57":[2,5,4,7],
 "group___autotuning_module.html#ga6ed75f54c1e3ddf0a5729eb75f00c65e":[2,5,4,4],
 "group___autotuning_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[2,5,4,10],
 "group___autotuning_module.html#ga867e829c0aaaf0e6f1c0f229b670e71e":[2,5,4,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "group___brain.html#ga496fb59667d43b64732790b9de5b3ddb":[2,9,3,350],
 "group___brain.html#ga4bdfc05b71a51b5d90b43d9dc1ba053f":[2,8,1,357],
 "group___brain.html#ga4bdfc05b71a51b5d90b43d9dc1ba053f":[2,9,3,357],
-"group___brain.html#ga4caa6d012da62089a2e424c8e2328e84":[2,8,1,332],
-"group___brain.html#ga4caa6d012da62089a2e424c8e2328e84":[2,9,3,332]
+"group___brain.html#ga4caa6d012da62089a2e424c8e2328e84":[2,8,1,332]
 };

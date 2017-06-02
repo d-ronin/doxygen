@@ -1,5 +1,7 @@
 var NAVTREEINDEX119 =
 {
+"struct_p_h_packet_header.html#a19915477b7c7c9c24b293ba4db7c6426":[2,1,17,1],
+"struct_p_h_packet_header.html#a3d0a8a439dadc33b716f7e926a9546cf":[2,1,17,2],
 "struct_p_h_packet_header.html#a93bf1fc396b4d98f870fee75682423b7":[2,1,17,3],
 "struct_p_h_packet_header.html#ab8dbaddf1009694724c1f40b82bcb314":[2,1,17,0],
 "struct_p_h_packet_header.html#ad816b782c8c40b9e03bdf092fd37bb3c":[2,1,17,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX119 =
 "struct_w_m_mtype___geo_magnetic_elements.html#aaff92c0324d3a717abc215245cbd5238":[2,1,33,3],
 "struct_w_m_mtype___geo_magnetic_elements.html#ab653a08b7f24f25dd253ff9f16f3b01e":[2,1,33,5],
 "struct_w_m_mtype___geo_magnetic_elements.html#adb133f24b128e0dcd3ad2b219d2c42e5":[2,1,33,14],
-"struct_w_m_mtype___geo_magnetic_elements.html#ae3c575b310c43b133f83cf6bd3b14cfe":[2,1,33,6],
-"struct_w_m_mtype___geo_magnetic_elements.html#af6f78344def47740cd5ce0196189ce32":[2,1,33,12],
-"struct_w_m_mtype___geo_magnetic_elements.html#af81004bb2f8cd436246b1b4240d1acc9":[2,1,33,10]
+"struct_w_m_mtype___geo_magnetic_elements.html#ae3c575b310c43b133f83cf6bd3b14cfe":[2,1,33,6]
 };

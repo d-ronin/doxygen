@@ -1,5 +1,7 @@
 var NAVTREEINDEX122 =
 {
+"structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0":[2,4,0,3,1],
+"structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026":[2,4,0,3,5],
 "structmsp__raw__imu.html#aa11689878f13ec7ac0f98611c4775fca":[2,4,0,3,2],
 "structmsp__raw__imu.html#aa1a7f9750665bda0288555f2189dd0c2":[2,4,0,3,0],
 "structmsp__raw__imu.html#abb6d948188a5dfff1fab14e720490042":[2,4,0,3,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX122 =
 "structpios__i2c__adapter.html#a86e402105fff70cb533e594bb5d2978a":[4,0,167,0],
 "structpios__i2c__adapter.html#a98b74dc40da65289c18494530b759724":[4,0,167,2],
 "structpios__i2c__adapter.html#aaf09167b75c63288cf1b27cdac3488fc":[4,0,167,12],
-"structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911":[4,0,167,1],
-"structpios__i2c__adapter.html#abe4e844b2ffcd0984dc55c8985bd0401":[4,0,167,3],
-"structpios__i2c__adapter.html#ac60a567d295440253e6edde43b33689f":[4,0,167,13]
+"structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911":[4,0,167,1]
 };

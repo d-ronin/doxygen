@@ -1,5 +1,7 @@
 var NAVTREEINDEX120 =
 {
+"struct_w_m_mtype___geo_magnetic_elements.html#af6f78344def47740cd5ce0196189ce32":[2,1,33,12],
+"struct_w_m_mtype___geo_magnetic_elements.html#af81004bb2f8cd436246b1b4240d1acc9":[2,1,33,10],
 "struct_w_m_mtype___geo_magnetic_elements.html#af97c7b8926ffd4d694c4292916c2c153":[2,1,33,2],
 "struct_w_m_mtype___legendre_function.html":[2,1,30],
 "struct_w_m_mtype___legendre_function.html#a3059147ef5db575cff502086ffd6181e":[2,1,30,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX120 =
 "structhott__gam__message.html#a0909e10c7704f35025fe5e788789c3c9":[2,5,26,6,23],
 "structhott__gam__message.html#a096de54ceedb98afe88d2c7f759639b4":[2,5,26,6,15],
 "structhott__gam__message.html#a0d0d800ae9c938bc41530df61ee98070":[2,5,26,6,10],
-"structhott__gam__message.html#a1d853403359edcc9d85ab34909da4269":[2,5,26,6,20],
-"structhott__gam__message.html#a30b23f5c83618289417c7d5b4001cf7b":[2,5,26,6,7],
-"structhott__gam__message.html#a336f39b1e9ac78438a313b5ddbc7f4da":[2,5,26,6,5]
+"structhott__gam__message.html#a1d853403359edcc9d85ab34909da4269":[2,5,26,6,20]
 };
