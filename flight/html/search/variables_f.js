@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['obj',['obj',['../struct_u_a_v_talk_input_processor.html#a78153a61f3d6bd1097e51b65f176c341',1,'UAVTalkInputProcessor::obj()'],['../struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232',1,'UAVObjEvent::obj()']]],
+  ['obj',['obj',['../struct_u_a_v_talk_input_processor.html#a78153a61f3d6bd1097e51b65f176c341',1,'UAVTalkInputProcessor::obj()'],['../structpending__ack.html#add45fc715a43a9ad0d18cd98ad19cb2f',1,'pending_ack::obj()'],['../struct_u_a_v_obj_event.html#a716555d74d08184a3807881d9ade9232',1,'UAVObjEvent::obj()']]],
   ['obj1',['obj1',['../group___unit_tests.html#ga9a310807ae65fdb582ace246798d9112',1,'LogfsTestRaw']]],
   ['obj1_5falt',['obj1_alt',['../group___unit_tests.html#gab4d553b9c4a87a6f45e032b57f98a751',1,'LogfsTestRaw']]],
   ['obj2',['obj2',['../group___unit_tests.html#ga8ed143a62924cbb11a0150f51b0f39e9',1,'LogfsTestRaw']]],
@@ -35,8 +35,8 @@ var searchData=
   ['otp_5fidtype',['otp_idtype',['../classpx__uploader_1_1uploader.html#a90655d1db70e757b78c558018f6d28d6',1,'px_uploader::uploader']]],
   ['otp_5fpid',['otp_pid',['../classpx__uploader_1_1uploader.html#ac9d4ab398f6e4b05632319199b206ed8',1,'px_uploader::uploader']]],
   ['otp_5fvid',['otp_vid',['../classpx__uploader_1_1uploader.html#a8a63ca5ed6d60048e98291b3f6af7043',1,'px_uploader::uploader']]],
+  ['outcb',['outCb',['../struct_u_a_v_talk_connection_data.html#ac5889ba31f5862e7e723d6f8727f0cf6',1,'UAVTalkConnectionData']]],
   ['output_5fchannels',['output_channels',['../group___p_i_o_s___s_e_r_v_o.html#ga809ddb8b3a5e737e13c1f5d9f1394ebd',1,'pios_servo.c']]],
-  ['outstream',['outStream',['../struct_u_a_v_talk_connection_data.html#a9fbab27aee45e892087f580683fcec5f',1,'UAVTalkConnectionData']]],
   ['overflow',['overflow',['../structpios__tim__callbacks.html#a6b0c1cd868a73b42c8a2228d08103ee3',1,'pios_tim_callbacks']]],
   ['overideattitude',['overideAttitude',['../group___sensors.html#ga4003f7985e24e407bbc2f44b2d289c29',1,'simsensors.c']]],
   ['oversampling',['oversampling',['../structpios__bmp085__cfg.html#a351f2cf9a86ef1b8513801395ca25e64',1,'pios_bmp085_cfg::oversampling()'],['../structpios__bmp280__cfg.html#ae5debf754d3070073a2552c42003ba1f',1,'pios_bmp280_cfg::oversampling()'],['../structpios__internal__adc__cfg.html#a1c08390ebe63500dd873bd5e6aeb1aa6',1,'pios_internal_adc_cfg::oversampling()'],['../structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c',1,'pios_ms5611_cfg::oversampling()']]]

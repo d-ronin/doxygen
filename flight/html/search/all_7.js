@@ -17,7 +17,7 @@ var searchData=
   ['gam_5finvert_5ffuel',['GAM_INVERT_FUEL',['../group___u_a_v_o_ho_t_t_bridge.html#ga4adf22539c054282802fc67eff095a09',1,'uavohottbridge.h']]],
   ['gam_5finvert_5ftemp1',['GAM_INVERT_TEMP1',['../group___u_a_v_o_ho_t_t_bridge.html#ga4c0063da7d76bf78eeacf536a35005a0',1,'uavohottbridge.h']]],
   ['gam_5finvert_5ftemp2',['GAM_INVERT_TEMP2',['../group___u_a_v_o_ho_t_t_bridge.html#ga036c1232d3ab57922e1cc7c66bf3e017',1,'uavohottbridge.h']]],
-  ['gcstelemetrystatsupdated',['gcsTelemetryStatsUpdated',['../group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e',1,'telemetry.c']]],
+  ['gcstelemetrystatsupdated',['gcsTelemetryStatsUpdated',['../group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e',1,'gcsTelemetryStatsUpdated():&#160;telemetry.c'],['../group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb',1,'gcsTelemetryStatsUpdated(telem_t telem):&#160;telemetry.c']]],
   ['gcstelemetryupdateperiod',['gcsTelemetryUpdatePeriod',['../struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d',1,'__attribute__']]],
   ['gdop',['gDOP',['../struct_u_b_x___n_a_v___d_o_p.html#a2b2e6160322047b85f23f1cb527bc6fd',1,'UBX_NAV_DOP']]],
   ['generate_5fstatus_5fmessage',['generate_status_message',['../group___flying_p_i_o.html#ga3690beeb87da77da92fe8c3cf85210ec',1,'main.c']]],

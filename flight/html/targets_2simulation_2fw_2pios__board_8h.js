@@ -1,5 +1,6 @@
 var targets_2simulation_2fw_2pios__board_8h =
 [
+    [ "DEBUG_LEVEL", "targets_2simulation_2fw_2pios__board_8h.html#gac2d33ccaf63f5d5b66552b95426c0137", null ],
     [ "DEBUG_PRINTF", "targets_2simulation_2fw_2pios__board_8h.html#gaa2230ce045fa6f32269efa3202144ffd", null ],
     [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "targets_2simulation_2fw_2pios__board_8h.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_ANNUNC_NUM", "targets_2simulation_2fw_2pios__board_8h.html#ga2784362baeb0cadc92b8decf41587f7f", null ],

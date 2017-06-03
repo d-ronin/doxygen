@@ -16,7 +16,7 @@ var logging_8c =
     [ "register_default_profile", "logging_8c.html#ga406f1cacb994c74bc1a4eaa233b66999", null ],
     [ "register_object", "logging_8c.html#ga2a02369f36d2833a71af2cf8e06d23d5", null ],
     [ "send_data", "logging_8c.html#ga3e8bb197c86fa4ffe7ed8833e8776141", null ],
-    [ "send_data_nonblock", "logging_8c.html#gaadad291b3fd3af3d58ba5c4f339ecea0", null ],
+    [ "send_data_nonblock", "logging_8c.html#gae3c295832a93bcea6397dda7ca48a6d1", null ],
     [ "unregister_object", "logging_8c.html#gad26471332b3b016e52ee575da49d7f93", null ],
     [ "updateSettings", "logging_8c.html#gad0b9bd8f45359133da342c354426cb80", null ],
     [ "writeHeader", "logging_8c.html#gabacf06870031d87fd1c482e5c88bc88b", null ],

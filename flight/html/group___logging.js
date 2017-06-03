@@ -15,7 +15,7 @@ var group___logging =
     [ "register_default_profile", "group___logging.html#ga406f1cacb994c74bc1a4eaa233b66999", null ],
     [ "register_object", "group___logging.html#ga2a02369f36d2833a71af2cf8e06d23d5", null ],
     [ "send_data", "group___logging.html#ga3e8bb197c86fa4ffe7ed8833e8776141", null ],
-    [ "send_data_nonblock", "group___logging.html#gaadad291b3fd3af3d58ba5c4f339ecea0", null ],
+    [ "send_data_nonblock", "group___logging.html#gae3c295832a93bcea6397dda7ca48a6d1", null ],
     [ "unregister_object", "group___logging.html#gad26471332b3b016e52ee575da49d7f93", null ],
     [ "updateSettings", "group___logging.html#gad0b9bd8f45359133da342c354426cb80", null ],
     [ "writeHeader", "group___logging.html#gabacf06870031d87fd1c482e5c88bc88b", null ],

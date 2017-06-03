@@ -18,7 +18,7 @@ var _radio_com_bridge_8c =
     [ "RadioComBridgeStart", "_radio_com_bridge_8c.html#gaa9d3cb78d299687fe6f3f6a6199ce6de", null ],
     [ "radioRxTask", "_radio_com_bridge_8c.html#ga090eaef2ee9c8105a8f1dce84feed15a", null ],
     [ "radioRxTask", "_radio_com_bridge_8c.html#gaab3b568cf50c03bf5713bfea6e366b8e", null ],
-    [ "RadioSendHandler", "_radio_com_bridge_8c.html#ga887fb249a5a31f1a9ef4ed66a941693b", null ],
+    [ "RadioSendHandler", "_radio_com_bridge_8c.html#gad43a7e1ba17479c92c9247622df20c29", null ],
     [ "radioTxTask", "_radio_com_bridge_8c.html#gabcd3a5a7e4271f15705018e5c7a19dd1", null ],
     [ "radioTxTask", "_radio_com_bridge_8c.html#gad30099cd73f116cbb7eff378e2bb4915", null ],
     [ "registerObject", "_radio_com_bridge_8c.html#ga3cd5102e2e68971267cfbdbe7b0423f6", null ],
@@ -26,7 +26,7 @@ var _radio_com_bridge_8c =
     [ "telemetryRxTask", "_radio_com_bridge_8c.html#gafb33ab57963e1e0b7eb46993f92a29c9", null ],
     [ "telemetryTxTask", "_radio_com_bridge_8c.html#ga2aba27698bc3988dddaaaf3b77c4281d", null ],
     [ "telemetryTxTask", "_radio_com_bridge_8c.html#ga487e79b3a248db69ac1e503f15faaa49", null ],
-    [ "UAVTalkSendHandler", "_radio_com_bridge_8c.html#ga0864ad4cea898062ab0643cbb7a18368", null ],
+    [ "UAVTalkSendHandler", "_radio_com_bridge_8c.html#ga12be66ede9092606ec2c60f4af952a0d", null ],
     [ "updateRadioComBridgeStats", "_radio_com_bridge_8c.html#gadc6b3a8165145940130d13b02d373c6e", null ],
     [ "updateSettings", "_radio_com_bridge_8c.html#gad0b9bd8f45359133da342c354426cb80", null ],
     [ "data", "_radio_com_bridge_8c.html#ga818f231e9e554ad12dfd25cd17467e78", null ]

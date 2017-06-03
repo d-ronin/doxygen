@@ -114,7 +114,6 @@ var group___brain_r_e1 =
     [ "PIOS_SERVO_UPDATE_HZ", "group___brain_r_e1.html#gaaf11e7ae7e32bacf0180ba8d6f144488", null ],
     [ "PIOS_SERVOS_INITIAL_POSITION", "group___brain_r_e1.html#gaf5d5f32c3a2c9f19c94deb70406d96e4", null ],
     [ "PIOS_SYSCLK", "group___brain_r_e1.html#ga8f592a960a21018006bd68f30692ab5b", null ],
-    [ "PIOS_TELEM_STACK_SIZE", "group___brain_r_e1.html#ga8e7da2e5a9c1811977f1878761b0f74d", null ],
     [ "PIOS_TIM_MAX_DEVS", "group___brain_r_e1.html#gabed34fab9b2b2c4c92ecc825c75c9244", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "group___brain_r_e1.html#ga245666dd976970e45363b17f9e55d5bf", null ],
     [ "PIOS_USB_ENABLED", "group___brain_r_e1.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
@@ -326,7 +325,6 @@ var group___brain_r_e1 =
     [ "STM32_USB_USE_OTG2", "group___brain_r_e1.html#ga56a0c40fe1260ca2265cc01d42668ca7", null ],
     [ "STM32F4xx_MCUCONF", "group___brain_r_e1.html#ga6c41ac9534659a9a1d50d6772bdb7c91", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___brain_r_e1.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
-    [ "TELEM_QUEUE_SIZE", "group___brain_r_e1.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "VREF_PLUS", "group___brain_r_e1.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "pios_re1fpga_buzzer_types", "group___brain_r_e1.html#ga479d0fd7fd0b0c24672ecc33589245b7", [
       [ "PIOS_RE1FPGA_BUZZER_DC", "group___brain_r_e1.html#gga479d0fd7fd0b0c24672ecc33589245b7a1d4aa611ea767dfba7497d87f3fd6f84", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a7c8911</span>
+   &#160;<span id="projectnumber">c89fbc7</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -107,7 +107,9 @@ $(document).ready(function(){initNavTree('telemetry_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -124,32 +126,51 @@ $(document).ready(function(){initNavTree('telemetry_8c.html','');});
 <code>#include &quot;modulesettings.h&quot;</code><br/>
 <code>#include &quot;sessionmanaging.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pios__mutex_8h_source.html">pios_mutex.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__queue_8h_source.html">pios_queue.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__hal_8h_source.html">pios_hal.h</a>&quot;</code><br/>
 <code>#include &lt;<a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>&gt;</code><br/>
 </div>
 <p><a href="telemetry_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpending__ack.html">pending_ack</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html">telemetry_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga623ec78b7909090dbedac4af1d52abb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga623ec78b7909090dbedac4af1d52abb4">MAX_QUEUE_SIZE</a>&#160;&#160;&#160;<a class="el" href="group___s_p_r_f3_e.html#ga063cb938f1bfd219544fb1fee9497b93">TELEM_QUEUE_SIZE</a></td></tr>
+<tr class="memitem:ga063cb938f1bfd219544fb1fee9497b93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga063cb938f1bfd219544fb1fee9497b93">TELEM_QUEUE_SIZE</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:ga063cb938f1bfd219544fb1fee9497b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf2bedc21f26f6304271304460822971"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaaf2bedc21f26f6304271304460822971">TELEM_STACK_SIZE</a>&#160;&#160;&#160;624</td></tr>
+<tr class="separator:gaaf2bedc21f26f6304271304460822971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga623ec78b7909090dbedac4af1d52abb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga623ec78b7909090dbedac4af1d52abb4">MAX_QUEUE_SIZE</a>&#160;&#160;&#160;<a class="el" href="group___sim.html#ga063cb938f1bfd219544fb1fee9497b93">TELEM_QUEUE_SIZE</a></td></tr>
 <tr class="separator:ga623ec78b7909090dbedac4af1d52abb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;<a class="el" href="group___s_p_r_f3_e.html#ga8e7da2e5a9c1811977f1878761b0f74d">PIOS_TELEM_STACK_SIZE</a></td></tr>
+<tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;<a class="el" href="group___telemetry_module.html#gaaf2bedc21f26f6304271304460822971">TELEM_STACK_SIZE</a></td></tr>
 <tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga910a9bd02c7c51bf21728cb63567d653"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga910a9bd02c7c51bf21728cb63567d653">TASK_PRIORITY_RX</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga910a9bd02c7c51bf21728cb63567d653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c5976eea2f526e6206fd4b5bd3aa2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga0c5976eea2f526e6206fd4b5bd3aa2cf">TASK_PRIORITY_TX</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
 <tr class="separator:ga0c5976eea2f526e6206fd4b5bd3aa2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0619a6738fe27ca50e0c5f39b0378d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaa0619a6738fe27ca50e0c5f39b0378d4">REQ_TIMEOUT_MS</a>&#160;&#160;&#160;250</td></tr>
-<tr class="separator:gaa0619a6738fe27ca50e0c5f39b0378d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaecf13b8dc783db2202ca5c34fe117fc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaecf13b8dc783db2202ca5c34fe117fc3">MAX_RETRIES</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:gaecf13b8dc783db2202ca5c34fe117fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff6904344963e58017ed918f232784dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaff6904344963e58017ed918f232784dc">STATS_UPDATE_PERIOD_MS</a>&#160;&#160;&#160;4000</td></tr>
+<tr class="memitem:gaff6904344963e58017ed918f232784dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaff6904344963e58017ed918f232784dc">STATS_UPDATE_PERIOD_MS</a>&#160;&#160;&#160;1753</td></tr>
 <tr class="separator:gaff6904344963e58017ed918f232784dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3169751cd5adb9cf1e54b005fc39401a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga3169751cd5adb9cf1e54b005fc39401a">CONNECTION_TIMEOUT_MS</a>&#160;&#160;&#160;8000</td></tr>
 <tr class="separator:ga3169751cd5adb9cf1e54b005fc39401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b77885d3b4992f77992bf84113980d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga2b77885d3b4992f77992bf84113980d6">USB_ACTIVITY_TIMEOUT_MS</a>&#160;&#160;&#160;6000</td></tr>
 <tr class="separator:ga2b77885d3b4992f77992bf84113980d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8f85a551793a73b36afa7eeccacf9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaa8f85a551793a73b36afa7eeccacf9c6">MAX_ACKS_PENDING</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:gaa8f85a551793a73b36afa7eeccacf9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf856c8287c579f3ddd56f6fa636432ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaf856c8287c579f3ddd56f6fa636432ab">ACK_TIMEOUT_MS</a>&#160;&#160;&#160;250</td></tr>
+<tr class="separator:gaf856c8287c579f3ddd56f6fa636432ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaf96d05b24c74c23babb77afcd9a72bbd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtelemetry__state.html">telemetry_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a></td></tr>
+<tr class="separator:gaf96d05b24c74c23babb77afcd9a72bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -157,18 +178,22 @@ Functions</h2></td></tr>
 <tr class="separator:ga2aba27698bc3988dddaaaf3b77c4281d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9da5e87898e909e36976b43920385fb7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga9da5e87898e909e36976b43920385fb7">telemetryRxTask</a> (void *parameters)</td></tr>
 <tr class="separator:ga9da5e87898e909e36976b43920385fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e80ebad273efc1e33364f6993111e6c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga7e80ebad273efc1e33364f6993111e6c">transmitData</a> (uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td></tr>
-<tr class="separator:ga7e80ebad273efc1e33364f6993111e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3cd5102e2e68971267cfbdbe7b0423f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga3cd5102e2e68971267cfbdbe7b0423f6">registerObject</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
-<tr class="separator:ga3cd5102e2e68971267cfbdbe7b0423f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac98fcb58fb5d51626ffda269c41404c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gac98fcb58fb5d51626ffda269c41404c3">updateObject</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, int32_t eventType)</td></tr>
-<tr class="separator:gac98fcb58fb5d51626ffda269c41404c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98daad4a1fa692b4bc86f5f14c155e93"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga98daad4a1fa692b4bc86f5f14c155e93">setUpdatePeriod</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, int32_t updatePeriodMs)</td></tr>
-<tr class="separator:ga98daad4a1fa692b4bc86f5f14c155e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga106697c824177d611d7e7868fd5b8445"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga106697c824177d611d7e7868fd5b8445">processObjEvent</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev)</td></tr>
-<tr class="separator:ga106697c824177d611d7e7868fd5b8445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae814519f1aea0a395f56cc34320076f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaae814519f1aea0a395f56cc34320076f">updateTelemetryStats</a> ()</td></tr>
-<tr class="separator:gaae814519f1aea0a395f56cc34320076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad49c925a02e93a49c6e49560dfacce72"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gad49c925a02e93a49c6e49560dfacce72">transmitData</a> (void *ctx, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td></tr>
+<tr class="separator:gad49c925a02e93a49c6e49560dfacce72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9daba3ec53ac8875ed5bdda681b44ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gac9daba3ec53ac8875ed5bdda681b44ba">addAckPending</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t inst_id)</td></tr>
+<tr class="separator:gac9daba3ec53ac8875ed5bdda681b44ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga302dc289b3b63d73a01282976f718e78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78">ackCallback</a> (void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td></tr>
+<tr class="separator:ga302dc289b3b63d73a01282976f718e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8fe36b488a0dd9ccc22fd51dcad52a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gac8fe36b488a0dd9ccc22fd51dcad52a2">registerObject</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
+<tr class="separator:gac8fe36b488a0dd9ccc22fd51dcad52a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga726f32911c9cac57edb22e259c78e74f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga726f32911c9cac57edb22e259c78e74f">updateObject</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, int32_t eventType)</td></tr>
+<tr class="separator:ga726f32911c9cac57edb22e259c78e74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea219686dbd914c9afcd488b0c93de13"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaea219686dbd914c9afcd488b0c93de13">setUpdatePeriod</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, int32_t updatePeriodMs)</td></tr>
+<tr class="separator:gaea219686dbd914c9afcd488b0c93de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80d2f2dcdc75092a1c98f34e3804e963"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga80d2f2dcdc75092a1c98f34e3804e963">processObjEvent</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev)</td></tr>
+<tr class="separator:ga80d2f2dcdc75092a1c98f34e3804e963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f5dbe16417941cebaf5daef40548940"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga7f5dbe16417941cebaf5daef40548940">updateTelemetryStats</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:ga7f5dbe16417941cebaf5daef40548940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01dd0293725feb6c800b12dc50231a4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e">gcsTelemetryStatsUpdated</a> ()</td></tr>
 <tr class="separator:ga01dd0293725feb6c800b12dc50231a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0b9bd8f45359133da342c354426cb80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">updateSettings</a> ()</td></tr>
@@ -179,23 +204,23 @@ Functions</h2></td></tr>
 <tr class="separator:gadefbd4671bb99ddde5f4003872f332dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f">update_object_instances</a> (uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint32_t inst_id)</td></tr>
 <tr class="separator:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84d3762937b74035949fec9da7a6c4cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga84d3762937b74035949fec9da7a6c4cf">registerObjectShim</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
+<tr class="separator:ga84d3762937b74035949fec9da7a6c4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga251dc0181b1a02544cdee5e599bfc240"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga251dc0181b1a02544cdee5e599bfc240">TelemetryStart</a> (void)</td></tr>
 <tr class="separator:ga251dc0181b1a02544cdee5e599bfc240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga058925ecc8ea2cd938fb3e9d21edb2ac"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga058925ecc8ea2cd938fb3e9d21edb2ac">TelemetryInitialize</a> (void)</td></tr>
 <tr class="separator:ga058925ecc8ea2cd938fb3e9d21edb2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644">ackResendOrTimeout</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, int idx)</td></tr>
+<tr class="separator:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe9341b34dfb706c0f819455fd6445bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb">gcsTelemetryStatsUpdated</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:gafe9341b34dfb706c0f819455fd6445bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></td></tr>
-<tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaddf1455de3a98ece44d37cfc7553e40b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaddf1455de3a98ece44d37cfc7553e40b">txErrors</a></td></tr>
-<tr class="separator:gaddf1455de3a98ece44d37cfc7553e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a113226c2598ffa2ac6052d4e109103"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga0a113226c2598ffa2ac6052d4e109103">txRetries</a></td></tr>
-<tr class="separator:ga0a113226c2598ffa2ac6052d4e109103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7217bd181309545e31cfd20550b6281c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga7217bd181309545e31cfd20550b6281c">timeOfLastObjectUpdate</a></td></tr>
-<tr class="separator:ga7217bd181309545e31cfd20550b6281c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81cb5e5f3ffe893707f4f80599c1904f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga81cb5e5f3ffe893707f4f80599c1904f">uavTalkCon</a></td></tr>
-<tr class="separator:ga81cb5e5f3ffe893707f4f80599c1904f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga296e6e5598ee7c5f58ad3eee20f02261"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structtelemetry__state.html">telemetry_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga296e6e5598ee7c5f58ad3eee20f02261">telem_state</a> = { }</td></tr>
+<tr class="separator:ga296e6e5598ee7c5f58ad3eee20f02261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Telemetry module, handles telemetry and UAVObject updates. </p>

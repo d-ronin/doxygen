@@ -12,6 +12,8 @@ var uavtalk__priv_8h =
     [ "UAVTALK_SYNC_VAL", "uavtalk__priv_8h.html#ga5bfcc6866e383a8855278d7abfee6af7", null ],
     [ "UAVTALK_TIMESTAMPED", "uavtalk__priv_8h.html#gaad238b09ddc9b758c5a7c8fa725512b7", null ],
     [ "UAVTALK_TYPE_ACK", "uavtalk__priv_8h.html#ga81d89ae412e4ee87160809b7fce1c5bc", null ],
+    [ "UAVTALK_TYPE_FILEDATA", "uavtalk__priv_8h.html#gae93b742d51c16d61c62ada84510ed63a", null ],
+    [ "UAVTALK_TYPE_FILEREQ", "uavtalk__priv_8h.html#ga090f1f56b46dc3e810621c4519cc9003", null ],
     [ "UAVTALK_TYPE_MASK", "uavtalk__priv_8h.html#ga92bab8b639dcfa69cd9869d7988050e8", null ],
     [ "UAVTALK_TYPE_NACK", "uavtalk__priv_8h.html#gadea3f5fac779f80da5688fb8288e1955", null ],
     [ "UAVTALK_TYPE_OBJ", "uavtalk__priv_8h.html#gaad22b1c0aa6e26566528e38c5f0a9f26", null ],

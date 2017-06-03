@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a7c8911</span>
+   &#160;<span id="projectnumber">c89fbc7</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -180,6 +180,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga81d89ae412e4ee87160809b7fce1c5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadea3f5fac779f80da5688fb8288e1955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gadea3f5fac779f80da5688fb8288e1955">UAVTALK_TYPE_NACK</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x04)</td></tr>
 <tr class="separator:gadea3f5fac779f80da5688fb8288e1955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga090f1f56b46dc3e810621c4519cc9003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga090f1f56b46dc3e810621c4519cc9003">UAVTALK_TYPE_FILEREQ</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x10)</td></tr>
+<tr class="separator:ga090f1f56b46dc3e810621c4519cc9003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae93b742d51c16d61c62ada84510ed63a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gae93b742d51c16d61c62ada84510ed63a">UAVTALK_TYPE_FILEDATA</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x11)</td></tr>
+<tr class="separator:gae93b742d51c16d61c62ada84510ed63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga77a6cac1607c104c038f12326bb40efd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga77a6cac1607c104c038f12326bb40efd">UAVTALK_TYPE_OBJ_TS</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gaad238b09ddc9b758c5a7c8fa725512b7">UAVTALK_TIMESTAMPED</a> | <a class="el" href="group___u_a_v_talk.html#gaad22b1c0aa6e26566528e38c5f0a9f26">UAVTALK_TYPE_OBJ</a>)</td></tr>
 <tr class="separator:ga77a6cac1607c104c038f12326bb40efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3838d0526a7e03620a259b54e106d2ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga3838d0526a7e03620a259b54e106d2ef">CHECKCONHANDLE</a>(handle, variable, failcommand)</td></tr>
@@ -187,8 +191,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0c67fb4d23157d56fe1982e4788938c7"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga0c67fb4d23157d56fe1982e4788938c7">UAVTalkOutputStream</a> )(uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td></tr>
-<tr class="separator:ga0c67fb4d23157d56fe1982e4788938c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25223a323d419d774cd6c4687d197e90"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga25223a323d419d774cd6c4687d197e90">UAVTalkOutputCb</a> )(void *ctx, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td></tr>
+<tr class="separator:ga25223a323d419d774cd6c4687d197e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22fa48eedc6915ae64a1bf8adbfe3066"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a> )(void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td></tr>
+<tr class="separator:ga22fa48eedc6915ae64a1bf8adbfe3066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeff1721eaebd4ab306057b4017f23f36"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a></td></tr>
 <tr class="separator:gaeff1721eaebd4ab306057b4017f23f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5ae4f5e5aa19ffb6f8e688a448e9618"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gad5ae4f5e5aa19ffb6f8e688a448e9618">uavtalk_checksum</a></td></tr>
@@ -214,22 +220,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga91e20b57ed132bab36c9ca723d9bdac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga91e20b57ed132bab36c9ca723d9bdac4">UAVTalkInitialize</a> (<a class="el" href="group___u_a_v_talk.html#ga0c67fb4d23157d56fe1982e4788938c7">UAVTalkOutputStream</a> outputStream)</td></tr>
-<tr class="separator:ga91e20b57ed132bab36c9ca723d9bdac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4fe52d9c33088b7ebbac9ad4e11b9de"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gab4fe52d9c33088b7ebbac9ad4e11b9de">UAVTalkSendObject</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, uint8_t acked, int32_t timeoutMs)</td></tr>
-<tr class="separator:gab4fe52d9c33088b7ebbac9ad4e11b9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f0aa57dfb6e774da5c09d796376ddc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga3f0aa57dfb6e774da5c09d796376ddc8">UAVTalkInitialize</a> (void *ctx, <a class="el" href="group___u_a_v_talk.html#ga25223a323d419d774cd6c4687d197e90">UAVTalkOutputCb</a> outputStream, <a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a> <a class="el" href="group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78">ackCallback</a>)</td></tr>
+<tr class="separator:ga3f0aa57dfb6e774da5c09d796376ddc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0029ef4e286bd483bb24d3aff89c371"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaf0029ef4e286bd483bb24d3aff89c371">UAVTalkSendObject</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, uint8_t acked)</td></tr>
+<tr class="separator:gaf0029ef4e286bd483bb24d3aff89c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc0cb5c44deb938d85504b133882407a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gacc0cb5c44deb938d85504b133882407a">UAVTalkSendObjectTimestamped</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId)</td></tr>
 <tr class="separator:gacc0cb5c44deb938d85504b133882407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa69251603e3426610051dc19b3a68494"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaa69251603e3426610051dc19b3a68494">UAVTalkSendObjectRequest</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, int32_t timeoutMs)</td></tr>
-<tr class="separator:gaa69251603e3426610051dc19b3a68494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab995cc19b4024b1a6303c963e139f522"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gab995cc19b4024b1a6303c963e139f522">UAVTalkSendAck</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId)</td></tr>
-<tr class="separator:gab995cc19b4024b1a6303c963e139f522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ef859d444a819ed3e3bb4ea36761c69"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga2ef859d444a819ed3e3bb4ea36761c69">UAVTalkSendNack</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, uint32_t objId)</td></tr>
-<tr class="separator:ga2ef859d444a819ed3e3bb4ea36761c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75dcc116d1af9cb73a58c233a2d95bed"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga75dcc116d1af9cb73a58c233a2d95bed">UAVTalkSendBuf</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, uint8_t *buf, uint16_t len)</td></tr>
-<tr class="separator:ga75dcc116d1af9cb73a58c233a2d95bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a738a506f26790d1b9c9fac5b6e1d92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga1a738a506f26790d1b9c9fac5b6e1d92">UAVTalkProcessInputStream</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, uint8_t rxbyte)</td></tr>
-<tr class="separator:ga1a738a506f26790d1b9c9fac5b6e1d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb10dc33f197c92673c2138c6ed11ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gacb10dc33f197c92673c2138c6ed11ab0">UAVTalkProcessInputStream</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, uint8_t *rxbytes, int numbytes)</td></tr>
+<tr class="separator:gacb10dc33f197c92673c2138c6ed11ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga174ffb688889f75507fc022eaf33d52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e">UAVTalkProcessInputStreamQuiet</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, uint8_t rxbyte)</td></tr>
 <tr class="separator:ga174ffb688889f75507fc022eaf33d52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11bfbe431f2e79f43a4321b942dc94c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga11bfbe431f2e79f43a4321b942dc94c8">UAVTalkRelayInputStream</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, uint8_t rxbyte)</td></tr>
@@ -240,24 +238,22 @@ Functions</h2></td></tr>
 <tr class="separator:gacf4b4d60a3186b655c6bde6f9ee69b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeccb32b1562a98d5586bb3d4d25715ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaeccb32b1562a98d5586bb3d4d25715ee">UAVTalkGetStats</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, <a class="el" href="struct_u_a_v_talk_stats.html">UAVTalkStats</a> *<a class="el" href="group___u_a_v_object_handling.html#ga8cffbda3c594871182864efec3236f5b">stats</a>)</td></tr>
 <tr class="separator:gaeccb32b1562a98d5586bb3d4d25715ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafea32b2e3331f9e81f48979b0e6c0a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gafea32b2e3331f9e81f48979b0e6c0a0b">UAVTalkResetStats</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection)</td></tr>
-<tr class="separator:gafea32b2e3331f9e81f48979b0e6c0a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga89971c05ca2331f124e85f4f287c37e2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2">UAVTalkGetPacketObjId</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection)</td></tr>
 <tr class="separator:ga89971c05ca2331f124e85f4f287c37e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab86910d482482ca00111ce24dfbc6685"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685">UAVTalkGetPacketInstId</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection)</td></tr>
 <tr class="separator:gab86910d482482ca00111ce24dfbc6685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c72592dfa16024d0353a179baac4c8b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga7c72592dfa16024d0353a179baac4c8b">objectTransaction</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> objectId, uint16_t instId, uint8_t <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, int32_t timeout)</td></tr>
-<tr class="separator:ga7c72592dfa16024d0353a179baac4c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac290a55b79dee2a5c6962d1db57cbe7c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gac290a55b79dee2a5c6962d1db57cbe7c">objectTransaction</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> objectId, uint16_t instId, uint8_t <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="separator:gac290a55b79dee2a5c6962d1db57cbe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf205977dac5bb5a934208bf76283174c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaf205977dac5bb5a934208bf76283174c">sendObject</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, uint8_t <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="separator:gaf205977dac5bb5a934208bf76283174c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45b80b79cff88fa5fe2cd745f79c252a"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga45b80b79cff88fa5fe2cd745f79c252a">sendSingleObject</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, uint8_t <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="separator:ga45b80b79cff88fa5fe2cd745f79c252a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga785f0ff49141c3ea29f2ce0cd6daae7b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga785f0ff49141c3ea29f2ce0cd6daae7b">sendNack</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, uint32_t objId)</td></tr>
 <tr class="separator:ga785f0ff49141c3ea29f2ce0cd6daae7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefd222cc8af1da2d5238c66bdb0ea61e"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaefd222cc8af1da2d5238c66bdb0ea61e">receiveObject</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, uint8_t <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, uint32_t objId, uint16_t instId, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td></tr>
-<tr class="separator:gaefd222cc8af1da2d5238c66bdb0ea61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab285d7622e6f9272e5b6f92f80373cd8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gab285d7622e6f9272e5b6f92f80373cd8">updateAck</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId)</td></tr>
-<tr class="separator:gab285d7622e6f9272e5b6f92f80373cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7be15a892a916e588e1c015511509cd5"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga7be15a892a916e588e1c015511509cd5">receiveObject</a> (<a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *connection)</td></tr>
+<tr class="separator:ga7be15a892a916e588e1c015511509cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d6eae6da855dfa4726ef1e117954f3b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga0d6eae6da855dfa4726ef1e117954f3b">sendBuf</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, uint8_t *buf, uint16_t len)</td></tr>
+<tr class="separator:ga0d6eae6da855dfa4726ef1e117954f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -296,9 +292,9 @@ Functions</h2></td></tr>
 <div class="line">        }</div>
 <div class="ttc" id="struct_u_a_v_talk_connection_data_html"><div class="ttname"><a href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a></div><div class="ttdoc">Information for the physical link. </div><div class="ttdef"><b>Definition:</b> <a href="uavtalk__priv_8h_source.html#l00080">uavtalk_priv.h:80</a></div></div>
 <div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_html_ga5838edf0bdfb0adb1ca475c23c45275a"><div class="ttname"><a href="group___u_a_v_talk.html#ga5838edf0bdfb0adb1ca475c23c45275a">UAVTALK_CANARI</a></div><div class="ttdeci">#define UAVTALK_CANARI</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk__priv_8h_source.html#l00095">uavtalk_priv.h:95</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_html_ga5838edf0bdfb0adb1ca475c23c45275a"><div class="ttname"><a href="group___u_a_v_talk.html#ga5838edf0bdfb0adb1ca475c23c45275a">UAVTALK_CANARI</a></div><div class="ttdeci">#define UAVTALK_CANARI</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk__priv_8h_source.html#l00094">uavtalk_priv.h:94</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00110">110</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00111">111</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00095">95</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00094">94</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +406,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00097">97</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00096">96</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +420,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00098">98</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00097">97</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +434,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00101">101</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00100">100</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +448,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00105">105</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00104">104</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae93b742d51c16d61c62ada84510ed63a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UAVTALK_TYPE_FILEDATA&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x11)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00107">107</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga090f1f56b46dc3e810621c4519cc9003"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UAVTALK_TYPE_FILEREQ&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00106">106</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -466,7 +490,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00099">99</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00098">98</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +504,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00106">106</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00105">105</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +518,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00102">102</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00101">101</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +532,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00104">104</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00103">103</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +546,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00103">103</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00102">102</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +560,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00107">107</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00108">108</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +574,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00100">100</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00099">99</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +588,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00096">96</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00095">95</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
 
 </div>
 </div>
@@ -583,6 +607,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga22fa48eedc6915ae64a1bf8adbfe3066"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* UAVTalkAckCb)(void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavtalk_8h_source.html#l00035">35</a> of file <a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaeff1721eaebd4ab306057b4017f23f36"></a>
 <div class="memitem">
 <div class="memproto">
@@ -593,16 +631,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavtalk_8h_source.html#l00048">48</a> of file <a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8h_source.html#l00049">49</a> of file <a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0c67fb4d23157d56fe1982e4788938c7"></a>
+<a class="anchor" id="ga25223a323d419d774cd6c4687d197e90"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int32_t(* UAVTalkOutputStream)(uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td>
+          <td class="memname">typedef int32_t(* UAVTalkOutputCb)(void *ctx, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, int32_t <a class="el" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -642,12 +680,12 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="uavtalk_8h_source.html#l00050">50</a> of file <a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8h_source.html#l00051">51</a> of file <a class="el" href="uavtalk_8h_source.html">uavtalk.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga7c72592dfa16024d0353a179baac4c8b"></a>
+<a class="anchor" id="gac290a55b79dee2a5c6962d1db57cbe7c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -676,13 +714,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>timeoutMs</em>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -710,11 +742,11 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00191">191</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00158">158</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaefd222cc8af1da2d5238c66bdb0ea61e"></a>
+<a class="anchor" id="ga7be15a892a916e588e1c015511509cd5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -725,42 +757,8 @@ Functions</h2></td></tr>
           <td class="memname">static int32_t receiveObject </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *&#160;</td>
-          <td class="paramname"><em>connection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>connection</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>objId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>instId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -785,7 +783,61 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00735">735</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00630">630</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0d6eae6da855dfa4726ef1e117954f3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t sendBuf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
+          <td class="paramname"><em>connectionHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Send a buffer containing a UAVTalk message through the telemetry link. This function locks the connection prior to sending. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>The data buffer containing the UAVTalk message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The number of bytes to send from the data buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 Success </dd>
+<dd>
+-1 Failure </dd></dl>
+
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00596">596</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -832,7 +884,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00953">953</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00851">851</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -893,7 +945,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00826">826</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00714">714</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1006,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00871">871</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00763">763</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1032,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The object ID, or 0 on error. </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00581">581</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00522">522</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1058,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The object ID, or 0 on error. </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00567">567</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00508">508</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1085,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get communication statistics counters </p>
+<p>Get communication statistics counters since last call (reset afterwards) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
@@ -1042,20 +1094,36 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00087">87</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00089">89</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga91e20b57ed132bab36c9ca723d9bdac4"></a>
+<a class="anchor" id="ga3f0aa57dfb6e774da5c09d796376ddc8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> UAVTalkInitialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#ga0c67fb4d23157d56fe1982e4788938c7">UAVTalkOutputStream</a>&#160;</td>
-          <td class="paramname"><em>outputStream</em></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#ga25223a323d419d774cd6c4687d197e90">UAVTalkOutputCb</a>&#160;</td>
+          <td class="paramname"><em>outputStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a>&#160;</td>
+          <td class="paramname"><em>ackCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1075,12 +1143,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1a738a506f26790d1b9c9fac5b6e1d92"></a>
+<a class="anchor" id="gacb10dc33f197c92673c2138c6ed11ab0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a> UAVTalkProcessInputStream </td>
+          <td class="memname">void UAVTalkProcessInputStream </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
           <td class="paramname"><em>connectionHandle</em>, </td>
@@ -1088,8 +1156,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>rxbyte</em>&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>rxbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numbytes</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1108,7 +1182,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UAVTalkRxState </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00437">437</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00377">377</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1219,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UAVTalkRxState </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00236">236</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00176">176</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1247,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00548">548</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00489">489</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1284,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UAVTalkRxState </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00600">600</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00541">541</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1249,166 +1323,11 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00464">464</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00405">405</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gafea32b2e3331f9e81f48979b0e6c0a0b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UAVTalkResetStats </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
-          <td class="paramname"><em>connectionHandle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset the statistics counters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00107">107</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab995cc19b4024b1a6303c963e139f522"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t UAVTalkSendAck </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
-          <td class="paramname"><em>connectionHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a>&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>instId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Send a ACK through the telemetry link. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connectionHandle</td><td>UAVTalkConnection to be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">objId</td><td>Object ID to send a NACK for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 Success </dd>
-<dd>
--1 Failure </dd></dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00653">653</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga75dcc116d1af9cb73a58c233a2d95bed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t UAVTalkSendBuf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
-          <td class="paramname"><em>connectionHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Send a buffer containing a UAVTalk message through the telemetry link. This function locks the connection prior to sending. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>The data buffer containing the UAVTalk message </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The number of bytes to send from the data buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 Success </dd>
-<dd>
--1 Failure </dd></dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00701">701</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2ef859d444a819ed3e3bb4ea36761c69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t UAVTalkSendNack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
-          <td class="paramname"><em>connectionHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>objId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Send a NACK through the telemetry link. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connectionHandle</td><td>UAVTalkConnection to be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">objId</td><td>Object ID to send a NACK for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 Success </dd>
-<dd>
--1 Failure </dd></dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00676">676</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab4fe52d9c33088b7ebbac9ad4e11b9de"></a>
+<a class="anchor" id="gaf0029ef4e286bd483bb24d3aff89c371"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1434,13 +1353,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>acked</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>timeoutMs</em>&#160;</td>
+          <td class="paramname"><em>acked</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1455,8 +1368,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>Object to send </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">instId</td><td>The instance ID or UAVOBJ_ALL_INSTANCES for all instances. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">acked</td><td>Selects if an ack is required (1:ack required, 0: ack not required) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMs</td><td><a class="el" href="class_time.html">Time</a> to wait for the ack, when zero it will return immediately </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">acked</td><td>True if an ack is requested </td></tr>
   </table>
   </dd>
 </dl>
@@ -1464,60 +1376,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00149">149</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaa69251603e3426610051dc19b3a68494"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t UAVTalkSendObjectRequest </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td>
-          <td class="paramname"><em>connectionHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a>&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>instId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Request an update for the specified object, on success the object data would have been updated by the GCS. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>Object to update </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">instId</td><td>The instance ID or UAVOBJ_ALL_INSTANCES for all instances. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td><a class="el" href="class_time.html">Time</a> to wait for the response, when zero it will return immediately </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 Success </dd>
-<dd>
--1 Failure </dd></dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00132">132</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00116">116</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>
@@ -1565,58 +1424,7 @@ Functions</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00171">171</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab285d7622e6f9272e5b6f92f80373cd8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void updateAck </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_a_v_talk_connection_data.html">UAVTalkConnectionData</a> *&#160;</td>
-          <td class="paramname"><em>connection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a>&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>instId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check if an ack is pending on an object and give response semaphore </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">connection</td><td>UAVTalkConnection to be used </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>Object </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">instId</td><td>The instance ID of UAVOBJ_ALL_INSTANCES for all instances. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00809">809</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
+<p>Definition at line <a class="el" href="uavtalk_8c_source.html#l00138">138</a> of file <a class="el" href="uavtalk_8c_source.html">uavtalk.c</a>.</p>
 
 </div>
 </div>

@@ -4,7 +4,7 @@ var searchData=
   ['uavo',['uavo',['../struct_u_a_v_o_single.html#adc5ae49c5f1cc194e3df35a0652d9a13',1,'UAVOSingle::uavo()'],['../struct_u_a_v_o_multi.html#a718e24f6eadeb8508309dcb0eeeb9bda',1,'UAVOMulti::uavo()'],['../uavobjectmanager_8c.html#ae867d32faead3f589ab1ceb9ecf3e3fd',1,'uavo():&#160;uavobjectmanager.c']]],
   ['uavo_5flist',['uavo_list',['../group___u_a_v_object_handling.html#ga41bc89103a03ee52df38e34f6c0d7935',1,'uavobjectmanager.c']]],
   ['uavomavlinkbridgetaskhandle',['uavoMavlinkBridgeTaskHandle',['../group___u_a_v_o_mavlink_bridge.html#gac39117147e02e0bf6947b739bc842381',1,'UAVOMavlinkBridge.c']]],
-  ['uavtalkcon',['uavTalkCon',['../group___logging.html#ga81cb5e5f3ffe893707f4f80599c1904f',1,'uavTalkCon():&#160;logging.c'],['../group___telemetry_module.html#ga81cb5e5f3ffe893707f4f80599c1904f',1,'uavTalkCon():&#160;telemetry.c']]],
+  ['uavtalkcon',['uavTalkCon',['../structtelemetry__state.html#a2db283098560c9057e07116a4a1e84c4',1,'telemetry_state::uavTalkCon()'],['../group___logging.html#ga81cb5e5f3ffe893707f4f80599c1904f',1,'uavTalkCon():&#160;logging.c']]],
   ['uavtalkeventqueue',['uavtalkEventQueue',['../group___radio_com_bridge_module.html#ga05dec3b438d4b78dfcfbc34c67246f19',1,'RadioComBridgeData']]],
   ['ubloxtxck_5fa',['ubloxTxCK_A',['../group___g_s_p_module.html#gacd42795ff6042970c6a6de48f00f07e5',1,'ubx_cfg.c']]],
   ['ubloxtxck_5fb',['ubloxTxCK_B',['../group___g_s_p_module.html#ga6499bea1e512fb004a237283d802b855',1,'ubx_cfg.c']]],

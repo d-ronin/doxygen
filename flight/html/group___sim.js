@@ -8,6 +8,7 @@ var group___sim =
     [ "CAMERASTAB_POI_MODE", "group___sim.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "CPULOAD_LIMIT_CRITICAL", "group___sim.html#ga33b8e7ed32bafe7b1e55e18b832854ce", null ],
     [ "CPULOAD_LIMIT_WARNING", "group___sim.html#ga08ff1c9a9c1942647c4ee60b087e4ca6", null ],
+    [ "DEBUG_LEVEL", "group___sim.html#gac2d33ccaf63f5d5b66552b95426c0137", null ],
     [ "DEBUG_PRINTF", "group___sim.html#gaa2230ce045fa6f32269efa3202144ffd", null ],
     [ "HEAP_LIMIT_CRITICAL", "group___sim.html#gad3537a058b1f030fb6243c09a2532112", null ],
     [ "HEAP_LIMIT_WARNING", "group___sim.html#ga6e7afec1958cbda03ec47ff50da7b749", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gcstelemetrystatsupdated',['gcsTelemetryStatsUpdated',['../group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e',1,'telemetry.c']]],
+  ['gcstelemetrystatsupdated',['gcsTelemetryStatsUpdated',['../group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e',1,'gcsTelemetryStatsUpdated():&#160;telemetry.c'],['../group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb',1,'gcsTelemetryStatsUpdated(telem_t telem):&#160;telemetry.c']]],
   ['generate_5fstatus_5fmessage',['generate_status_message',['../group___flying_p_i_o.html#ga3690beeb87da77da92fe8c3cf85210ec',1,'main.c']]],
   ['generate_5fusb_5fstring',['GENERATE_USB_STRING',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga45e384920efc10e1bd8dc2513273ce80',1,'GENERATE_USB_STRING(usb_product_id, USB_STR_PROD_LEN, USB_STR_PROD_VAL):&#160;pios_usb_board_data.c'],['../group___p_i_o_s___u_s_b___d_e_s_c.html#gaabad822db74c1576425f1826d9e8bfd5',1,'GENERATE_USB_STRING(usb_vendor_id, USB_STR_VEND_LEN, USB_STR_VEND_VAL):&#160;pios_usb_board_data.c']]],
   ['geofence_5fcontrol_5factivate',['geofence_control_activate',['../group___control.html#gab11b6b0e72d25d30100b761741913f8c',1,'geofence_control.c']]],
