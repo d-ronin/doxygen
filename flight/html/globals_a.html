@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -230,6 +230,20 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 <li>actuator_fc
 : <a class="el" href="flyingpio__messages_8h.html#a6ec1d419ac2d07856ea7004ba7675964">flyingpio_messages.h</a>
 </li>
+<li>actuator_interlock
+: <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">pios_modules.h</a>
+, <a class="el" href="group___actuator_module.html#ga01b4b4c6b9d6afa6a8451f17439074d2">actuator.c</a>
+, <a class="el" href="group___p_i_o_s___modules.html#ga01b4b4c6b9d6afa6a8451f17439074d2">pios_modules.h</a>
+</li>
+<li>ACTUATOR_INTERLOCK_OK
+: <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8">pios_modules.h</a>
+</li>
+<li>ACTUATOR_INTERLOCK_STOPPED
+: <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a4378caaca2604ccc0c3cb6b96addcd85">pios_modules.h</a>
+</li>
+<li>ACTUATOR_INTERLOCK_STOPREQUEST
+: <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802abfb92c377fc8312c3d695d37b9cf76f6">pios_modules.h</a>
+</li>
 <li>actuator_settings_updated
 : <a class="el" href="group___actuator_module.html#gacb12ed460451faae4bc03f774fe95933">actuator.c</a>
 </li>
@@ -307,7 +321,7 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___autotuning_module.html#gaf75414849ac65524456b0281dc598576">autotune.c</a>
 </li>
 <li>AHBPrescTable
-: <a class="el" href="group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d">cmsis_system.c</a>
+: <a class="el" href="group___s_t_m32_f30x___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d">cmsis_system.c</a>
 , <a class="el" href="group___s_t_m32_f0xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d">system_stm32f0xx.c</a>
 , <a class="el" href="group___s_t_m32_f30x___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d">cmsis_system.c</a>
 </li>
@@ -395,9 +409,9 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="msp__messages_8h.html#af75c958c89ab0ef7259be0b67cd20125">msp_messages.h</a>
 </li>
 <li>altitude
-: <a class="el" href="msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f">msp_messages.h</a>
+: <a class="el" href="pios__crossfire_8h.html#a51661d189e8db74a32867069dfa50d7f">pios_crossfire.h</a>
+, <a class="el" href="msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f">msp_messages.h</a>
 , <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">UAVOFrSKYSensorHubBridge.c</a>
-, <a class="el" href="pios__crossfire_8h.html#a51661d189e8db74a32867069dfa50d7f">pios_crossfire.h</a>
 </li>
 <li>altitude_hold_desired()
 : <a class="el" href="group___control.html#ga06bfd2b6503136d1c59c38c57f799d64">transmitter_control.c</a>
@@ -457,7 +471,7 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="msp__messages_8h.html#a7d2106b467fd438acfd170b1b2cc33d3">msp_messages.h</a>
 </li>
 <li>arm_state
-: <a class="el" href="group___control.html#gabc93537d93556a29eb5f2bcaaeaddb34">transmitter_control.c</a>
+: <a class="el" href="group___control.html#ga8c369fabe90f4e505e6598bb22685d99">transmitter_control.c</a>
 </li>
 <li>ARM_STATE_ARMED
 : <a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a5703b08b4383be1fc1f688336caa647c">transmitter_control.c</a>
@@ -490,8 +504,8 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___control.html#ga7296e1a05eac30a060752034ea550e64">transmitter_control.c</a>
 </li>
 <li>asm()
-: <a class="el" href="group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216">startup.c</a>
-, <a class="el" href="group___updater.html#ga739169c4e498e1e5ea35606a2065bd61">bu_payload.c</a>
+: <a class="el" href="group___updater.html#ga739169c4e498e1e5ea35606a2065bd61">bu_payload.c</a>
+, <a class="el" href="group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216">startup.c</a>
 </li>
 <li>ASSERT_CONCAT
 : <a class="el" href="group___on_screen_display.html#ga9fad378d3538885ffce2b40a29334fbb">onscreendisplay.c</a>
@@ -500,10 +514,10 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___on_screen_display.html#gac41c7fb1ca72aa1768dbc146fe1921c6">onscreendisplay.c</a>
 </li>
 <li>assert_param
-: <a class="el" href="stm32f4xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f4xx_conf.h</a>
+: <a class="el" href="stm32f10x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f10x_conf.h</a>
 , <a class="el" href="stm32f30x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f30x_conf.h</a>
 , <a class="el" href="stm32f0xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f0xx_conf.h</a>
-, <a class="el" href="stm32f10x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f10x_conf.h</a>
+, <a class="el" href="stm32f4xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f4xx_conf.h</a>
 </li>
 <li>assumptions1
 : <a class="el" href="group___control.html#ga5ee2d744bf4317f2edff39de54cb0371">transmitter_control.h</a>
@@ -572,11 +586,11 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___camera_stab.html#ga3a49d7b31b2955720346a096cdcf10d0">camerastab.c</a>
 </li>
 <li>AUTOTUNE_AVERAGING_DECIMATION
-: <a class="el" href="group___autotuning_module.html#ga867e829c0aaaf0e6f1c0f229b670e71e">autotune.c</a>
-, <a class="el" href="group___l_u_x.html#ga867e829c0aaaf0e6f1c0f229b670e71e">pios_config.h</a>
+: <a class="el" href="group___piko_b_l_x.html#ga867e829c0aaaf0e6f1c0f229b670e71e">pios_config.h</a>
+, <a class="el" href="group___autotuning_module.html#ga867e829c0aaaf0e6f1c0f229b670e71e">autotune.c</a>
 </li>
 <li>AUTOTUNE_AVERAGING_MODE
-: <a class="el" href="group___l_u_x.html#gab0a79b712ecb50093fe0129a7468198f">pios_config.h</a>
+: <a class="el" href="group___sparky2.html#gab0a79b712ecb50093fe0129a7468198f">pios_config.h</a>
 </li>
 <li>AUTOTUNE_STATE
 : <a class="el" href="group___autotuning_module.html#gac104fc2be1ec1bdac638e8bb7fa4ce7a">autotune.c</a>

@@ -8,6 +8,7 @@ var class_sparky =
     [ "getConnectionDiagram", "group___boards___tau_labs_plugin.html#ga6ed654997adfc38d4964c3efdba7c14f", null ],
     [ "getHwUAVO", "group___boards___tau_labs_plugin.html#ga20cbe067bab385a37bea66e2f97d8d7a", null ],
     [ "getInputType", "group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6", null ],
+    [ "hasAnnunciator", "group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e", null ],
     [ "isInputConfigurationSupported", "group___boards___tau_labs_plugin.html#gad1cc49687204bd5c0bf274a079996ddd", null ],
     [ "queryCapabilities", "group___boards___tau_labs_plugin.html#ga4b25de756ae522bc8ec649c4885a4e91", null ],
     [ "queryMaxGyroRate", "group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e", null ],

@@ -199,7 +199,8 @@ var hierarchy =
       [ "GCSControlGadgetWidget", "class_g_c_s_control_gadget_widget.html", null ],
       [ "LoggingGadgetWidget", "class_logging_gadget_widget.html", null ],
       [ "MagicWaypointGadgetWidget", "class_magic_waypoint_gadget_widget.html", null ],
-      [ "PathPlannerGadgetWidget", "class_path_planner_gadget_widget.html", null ]
+      [ "PathPlannerGadgetWidget", "class_path_planner_gadget_widget.html", null ],
+      [ "ScaledPixmapLabel", "class_scaled_pixmap_label.html", null ]
     ] ],
     [ "QLineEdit", null, [
       [ "Utils::BaseValidatingLineEdit", "class_utils_1_1_base_validating_line_edit.html", [

@@ -1,6 +1,0 @@
-var dir_824b469cab351a65f93bf91e6d5d50d1 =
-[
-    [ "bl", "dir_0067761c404842222b56bc03a6970280.html", "dir_0067761c404842222b56bc03a6970280" ],
-    [ "board-info", "dir_458de8213fe67d66dd840512dd14e079.html", "dir_458de8213fe67d66dd840512dd14e079" ],
-    [ "fw", "dir_e9c0cec5bd7c844586c47324397209ea.html", "dir_e9c0cec5bd7c844586c47324397209ea" ]
-];

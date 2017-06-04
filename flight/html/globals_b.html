@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -371,6 +371,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>bl_compute_partition_crc()
 : <a class="el" href="group___common.html#ga1d9362d9b0de04f1449fbde101db73d4">bl_xfer.c</a>
 </li>
+<li>BL_ConnectEx()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a782f4926b62f4d9cdc6e6497fafff573">serial_4way_avrootloader.h</a>
+</li>
 <li>BL_DETECT_BREAK_TO_BL_TIMER
 : <a class="el" href="group___common.html#ga6fcc2d8a15a5e415fb3e4c79f6fa5af7">main.c</a>
 </li>
@@ -500,6 +503,15 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BL_MSG_WRITE_START
 : <a class="el" href="group___common.html#gga74fb359ddcddf24705ddf121b89a03e6aa7569741800e9c78dc97785818158cad">bl_messages.h</a>
 </li>
+<li>BL_PageErase()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a9aa9248e5babc417e29a6a726c4c24f1">serial_4way_avrootloader.h</a>
+</li>
+<li>BL_ReadEEprom()
+: <a class="el" href="serial__4way__avrootloader_8h.html#ae0e8336ee85dc13d6b430a8c18ee3f05">serial_4way_avrootloader.h</a>
+</li>
+<li>BL_ReadFlash()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a24f656c91a110bcc55e733f6c9c71e16">serial_4way_avrootloader.h</a>
+</li>
 <li>BL_RECOVER_FROM_FAULT_TIMER
 : <a class="el" href="group___common.html#ga9891b2d0e9d30b6cb37bf85d8a240594">main.c</a>
 </li>
@@ -514,6 +526,15 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>bl_send_status()
 : <a class="el" href="group___common.html#gaeb0cc07571fc97ee48c48d7cd4d784f7">main.c</a>
+</li>
+<li>BL_SendBootInit()
+: <a class="el" href="serial__4way__avrootloader_8h.html#ad47f3abcca325954e50c3b0da9962740">serial_4way_avrootloader.h</a>
+</li>
+<li>BL_SendCMDKeepAlive()
+: <a class="el" href="serial__4way__avrootloader_8h.html#abd54faf71739d607aa5a285f4c4ec43b">serial_4way_avrootloader.h</a>
+</li>
+<li>BL_SendCMDRunRestartBootloader()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a325d3c0d7039c3a9669dd792cec5b982">serial_4way_avrootloader.h</a>
 </li>
 <li>BL_STATE_DETECT_BREAK_TO_BL
 : <a class="el" href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a2aa828d44d00293fa21f803aa4b98b50">main.c</a>
@@ -557,11 +578,20 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>bl_transitions
 : <a class="el" href="group___common.html#ga1010081207d22097ea807e2b9c709069">main.c</a>
 </li>
+<li>BL_VerifyFlash()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a1b39d688b6140808bebc8c0bb49deef1">serial_4way_avrootloader.h</a>
+</li>
 <li>bl_version
 : <a class="el" href="bl__messages_8h.html#a2c3553355f2f3caf0d0e9c625cdcede2">bl_messages.h</a>
 </li>
 <li>BL_WAIT_FOR_DFU_TIMER
 : <a class="el" href="group___common.html#gac09dc0fe4a22025f5a0f5e253d338f4f">main.c</a>
+</li>
+<li>BL_WriteEEprom()
+: <a class="el" href="serial__4way__avrootloader_8h.html#a282dc9ae79a63e7e220a23944961d3fc">serial_4way_avrootloader.h</a>
+</li>
+<li>BL_WriteFlash()
+: <a class="el" href="serial__4way__avrootloader_8h.html#aadcb3add74d98ef10ba7c9ddb8aaddc9">serial_4way_avrootloader.h</a>
 </li>
 <li>bl_xfer_completed_p()
 : <a class="el" href="group___common.html#ga7dacdfc19b08975f39acf83db7766d4c">bl_xfer.c</a>
@@ -1221,12 +1251,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga1ad144333e75b0d867e72f8a337cd510">pios_usb_defs.h</a>
 </li>
 <li>BOARD_READABLE
-: <a class="el" href="group___quanton.html#ga9dddfa55bb34063f55fe36728f035954">pios_board.h</a>
+: <a class="el" href="group___l_u_x.html#ga9dddfa55bb34063f55fe36728f035954">pios_board.h</a>
 </li>
 <li>board_rev
-: <a class="el" href="group___firmware_i_a_p_module.html#ga9ab76e2043a7668f9ad6ffb17d88be37">firmwareiap.c</a>
+: <a class="el" href="bl__messages_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37">bl_messages.h</a>
+, <a class="el" href="group___firmware_i_a_p_module.html#ga9ab76e2043a7668f9ad6ffb17d88be37">firmwareiap.c</a>
 , <a class="el" href="pios__board__info_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37">pios_board_info.h</a>
-, <a class="el" href="bl__messages_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37">bl_messages.h</a>
 </li>
 <li>board_revision
 : <a class="el" href="group___flying_p_i_o.html#gafd500425ba7592375fa8c030c9bb8113">board_hw_defs.c</a>
@@ -1238,11 +1268,11 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="pios__board__info_8h.html#ade96ae28594df4a0c9c2e46805262352">pios_board_info.h</a>
 </li>
 <li>BOARD_WRITABLE
-: <a class="el" href="group___brain_r_e1.html#ga62e300631856e0c56b1c9b3cbcf5621d">pios_board.h</a>
+: <a class="el" href="group___quanton.html#ga62e300631856e0c56b1c9b3cbcf5621d">pios_board.h</a>
 </li>
 <li>boardInit()
-: <a class="el" href="group___targets.html#ga48edc646a1de1ba488bbe7d786df9bae">chibi_main.c</a>
-, <a class="el" href="group___chibi_o_s.html#ga48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+: <a class="el" href="group___chibi_o_s.html#ga48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="group___targets.html#ga48edc646a1de1ba488bbe7d786df9bae">chibi_main.c</a>
 </li>
 <li>body
 : <a class="el" href="flyingpio__messages_8h.html#a5a4c26881f58ecc6d7783ad190ebff07">flyingpio_messages.h</a>
@@ -1254,7 +1284,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="group___tau_labs_libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">alarms.c</a>
 </li>
 <li>BOOTLOADER_PAUSE_DELAY
-: <a class="el" href="group___brain_r_e1.html#ga3d99204a6b833d590cd1871a95b1cee4">pios_config.h</a>
+: <a class="el" href="group___a_q32.html#ga3d99204a6b833d590cd1871a95b1cee4">pios_config.h</a>
 </li>
 <li>bound()
 : <a class="el" href="group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d">virtualflybar.c</a>
@@ -1283,11 +1313,26 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>bRequest
 : <a class="el" href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga1e7be110861bd4ff75c86d5214f31543">pios_usb_defs.h</a>
 </li>
+<li>brERRORCOMMAND
+: <a class="el" href="serial__4way__avrootloader_8h.html#a251747c8049540fe73462845efa990b6">serial_4way_avrootloader.h</a>
+</li>
+<li>brERRORCRC
+: <a class="el" href="serial__4way__avrootloader_8h.html#afab0558b88539f689c3dee9d68495d61">serial_4way_avrootloader.h</a>
+</li>
+<li>brERRORVERIFY
+: <a class="el" href="serial__4way__avrootloader_8h.html#a4f85ad445431f752d8dafa329c1750ce">serial_4way_avrootloader.h</a>
+</li>
 <li>BRIDGE_BUF_LEN
 : <a class="el" href="group___com_usb_bridge_module.html#ga76289e2af7e81accedf180f6191030cf">ComUsbBridge.c</a>
 </li>
 <li>brk_ptr
 : <a class="el" href="group___p_i_o_s___h_e_a_p.html#gab216d5e2678c3e3f7a63294dd35c0c74">pios_heap.c</a>
+</li>
+<li>brNONE
+: <a class="el" href="serial__4way__avrootloader_8h.html#a92dda163f1ceb7e6e87925ca08f9a4ca">serial_4way_avrootloader.h</a>
+</li>
+<li>brSUCCESS
+: <a class="el" href="serial__4way__avrootloader_8h.html#a139ac119a8f1d022a48247ee625912e1">serial_4way_avrootloader.h</a>
 </li>
 <li>BRUSHEDSPARKY_V0_1
 : <a class="el" href="group___sparky2.html#ga078db8047bdd7d437ec5056c101f2901">pios_board.h</a>

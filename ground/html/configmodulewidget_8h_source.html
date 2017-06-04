@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -163,39 +163,40 @@ $(document).ready(function(){initNavTree('configmodulewidget_8h_source.html','')
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> maxCellVoltageChanged(<span class="keywordtype">double</span> value);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> ledTabUpdate(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> ledTabSetColor();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> setupLedTab();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/* To activate the appropriate tabs */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> enableBatteryTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> enableAirspeedTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> enableVibrationTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> enableHoTTTelemetryTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> enableGeofenceTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> enableGpsTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> enableLoggingTab(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> tabEnable(QWidget *tab, <span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> refreshAdcNames(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Ui::Modules *ui;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">resizeEvent</a>(QResizeEvent *event);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">enableControls</a>(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // CONFIGMODULEWIDGET_H</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> updateAnnunciatorTab();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> setupLedTab();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* To activate the appropriate tabs */</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> enableBatteryTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> enableAirspeedTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> enableVibrationTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> enableHoTTTelemetryTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> enableGeofenceTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> enableGpsTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> enableLoggingTab(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> tabEnable(QWidget *tab, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> refreshAdcNames(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Ui::Modules *ui;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">resizeEvent</a>(QResizeEvent *event);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">enableControls</a>(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // CONFIGMODULEWIDGET_H</span></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_config_module_widget_html"><div class="ttname"><a href="class_config_module_widget.html">ConfigModuleWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8h_source.html#l00039">configmodulewidget.h:39</a></div></div>
 <div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gaf3854a41400a7aca6d75e0f2be770f9c"><div class="ttname"><a href="group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c">ConfigModuleWidget::ConfigModuleWidget</a></div><div class="ttdeci">ConfigModuleWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00046">configmodulewidget.cpp:46</a></div></div>
-<div class="ttc" id="group___config_plugin_html_gad3993d8be203127b457a6179cde99d07"><div class="ttname"><a href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">ConfigModuleWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00132">configmodulewidget.cpp:132</a></div></div>
+<div class="ttc" id="group___config_plugin_html_gad3993d8be203127b457a6179cde99d07"><div class="ttname"><a href="group___config_plugin.html#gad3993d8be203127b457a6179cde99d07">ConfigModuleWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00137">configmodulewidget.cpp:137</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga9ecd35d3d3a34e937a75c62e7d197312"><div class="ttname"><a href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">ConfigModuleWidget::~ConfigModuleWidget</a></div><div class="ttdeci">~ConfigModuleWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00127">configmodulewidget.cpp:127</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga9ecd35d3d3a34e937a75c62e7d197312"><div class="ttname"><a href="group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312">ConfigModuleWidget::~ConfigModuleWidget</a></div><div class="ttdeci">~ConfigModuleWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00132">configmodulewidget.cpp:132</a></div></div>
 <div class="ttc" id="configtaskwidget_8h_html"><div class="ttname"><a href="configtaskwidget_8h.html">configtaskwidget.h</a></div></div>
 <div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga8790c539b69a98c32df328411f6c0737"><div class="ttname"><a href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">ConfigModuleWidget::enableControls</a></div><div class="ttdeci">virtual void enableControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00137">configmodulewidget.cpp:137</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga8790c539b69a98c32df328411f6c0737"><div class="ttname"><a href="group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737">ConfigModuleWidget::enableControls</a></div><div class="ttdeci">virtual void enableControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="configmodulewidget_8cpp_source.html#l00142">configmodulewidget.cpp:142</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

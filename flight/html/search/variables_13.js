@@ -17,6 +17,7 @@ var searchData=
   ['sector_5fsize',['sector_size',['../group___p_i_o_s___f_l_a_s_h.html#ga68f210e44c44a3709111eeda2c107f26',1,'pios_flash_sector_range']]],
   ['secularvariationused',['SecularVariationUsed',['../struct_w_m_mtype___magnetic_model.html#a75df8ef8af2f06cf375592712bb491d0',1,'WMMtype_MagneticModel']]],
   ['selected',['selected',['../structpios__spi__dev.html#a0596ad5ad91546f4968764d5255c48a6',1,'pios_spi_dev']]],
+  ['selected_5fesc',['selected_esc',['../serial__4way_8h.html#ae7618c84f1e1ba368abe95cb6d099b5a',1,'selected_esc():&#160;serial_4way.h'],['../serial__4way__impl_8h.html#ae7618c84f1e1ba368abe95cb6d099b5a',1,'selected_esc():&#160;serial_4way_impl.h']]],
   ['sem',['sem',['../structstreamfs__state.html#abde63379ea103ea82040fa85837aa15b',1,'streamfs_state']]],
   ['sem_5fbusy',['sem_busy',['../structpios__i2c__adapter.html#a5aa1be6dfb8912d8378a22761c5bde66',1,'pios_i2c_adapter']]],
   ['sem_5fready',['sem_ready',['../structpios__i2c__adapter.html#aaf09167b75c63288cf1b27cdac3488fc',1,'pios_i2c_adapter']]],

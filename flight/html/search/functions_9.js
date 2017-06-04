@@ -33,5 +33,8 @@ var searchData=
   ['is_5fnot_5ffinite',['IS_NOT_FINITE',['../group___tau_labs_math.html#gab2cad9810e0c0c09e0988b17159e4d1c',1,'misc_math.h']]],
   ['is_5fptr_5fin_5fheap_5fp',['is_ptr_in_heap_p',['../group___p_i_o_s___h_e_a_p.html#ga652f00de3dd4045772af1e734819e4d4',1,'pios_heap.c']]],
   ['isarmed',['isArmed',['../group___flight.html#gaa3c3d3ada197adb1e64565dbd64fec59',1,'flightstatsmodule.c']]],
-  ['isbiggerthanavailable',['isBiggerThanAvailable',['../group___common_f1.html#ga8122c172146d51c7fc782ad4981162a6',1,'isBiggerThanAvailable(DFUTransfer type, uint32_t size):&#160;op_dfu.c'],['../group___common_f1.html#ga7111da0ee6b0c162893b1637e86b2758',1,'isBiggerThanAvailable(uint8_t type, uint32_t size):&#160;op_dfu.h']]]
+  ['isbiggerthanavailable',['isBiggerThanAvailable',['../group___common_f1.html#ga8122c172146d51c7fc782ad4981162a6',1,'isBiggerThanAvailable(DFUTransfer type, uint32_t size):&#160;op_dfu.c'],['../group___common_f1.html#ga7111da0ee6b0c162893b1637e86b2758',1,'isBiggerThanAvailable(uint8_t type, uint32_t size):&#160;op_dfu.h']]],
+  ['iseschi',['isEscHi',['../serial__4way__impl_8h.html#a6e6b215476f8b366deb519d63a8da00b',1,'serial_4way_impl.h']]],
+  ['isesclo',['isEscLo',['../serial__4way__impl_8h.html#a43c42b86731e71618d9c2384bb8f1bab',1,'serial_4way_impl.h']]],
+  ['ismcuconnected',['isMcuConnected',['../serial__4way_8h.html#adeff40b9b34c0805be85ad50b2f45782',1,'serial_4way.h']]]
 ];

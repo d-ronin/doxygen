@@ -291,6 +291,7 @@ var annotated =
     [ "Revolution", "class_revolution.html", "class_revolution" ],
     [ "RfmBindWizardPlugin", "class_rfm_bind_wizard_plugin.html", null ],
     [ "SavePage", "class_save_page.html", "class_save_page" ],
+    [ "ScaledPixmapLabel", "class_scaled_pixmap_label.html", "class_scaled_pixmap_label" ],
     [ "Scatterplot2dScopeConfig", "class_scatterplot2d_scope_config.html", "class_scatterplot2d_scope_config" ],
     [ "ScatterplotData", "class_scatterplot_data.html", "class_scatterplot_data" ],
     [ "SchedulerModel", "class_scheduler_model.html", "class_scheduler_model" ],

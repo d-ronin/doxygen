@@ -450,6 +450,13 @@ var group___core_plugin =
       [ "newWarning", "group___core_plugin.html#gad234081b52791d6e60ab9d31628f1dfa", null ]
     ] ],
     [ "IBoardType", "class_core_1_1_i_board_type.html", [
+      [ "AnnunciatorType", "group___core_plugin.html#ga615a5aa573c867267162df009eb6496e", [
+        [ "ANNUNCIATOR_HEARTBEAT", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb", null ],
+        [ "ANNUNCIATOR_ALARM", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f", null ],
+        [ "ANNUNCIATOR_BUZZER", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1", null ],
+        [ "ANNUNCIATOR_RGB", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79", null ],
+        [ "ANNUNCIATOR_DAC", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5", null ]
+      ] ],
       [ "BcdDevice", "group___core_plugin.html#gae5da6a391b4825fe57d10ab08b5e6482", [
         [ "BCD_DEVICE_BOOTLOADER", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1", null ],
         [ "BCD_DEVICE_FIRMWARE", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81", null ],
@@ -501,6 +508,7 @@ var group___core_plugin =
       [ "getInputType", "group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429", null ],
       [ "getRfmID", "group___core_plugin.html#gadb43e205d3e79948ffa5b21d64da0642", null ],
       [ "getVendorIDs", "group___core_plugin.html#gac4755a106cc7d0da89438881479e0bda", null ],
+      [ "hasAnnunciator", "group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8", null ],
       [ "isInputConfigurationSupported", "group___core_plugin.html#ga5b20cc6b2703da7094c9165e7659cb6f", null ],
       [ "isUSBSupported", "group___core_plugin.html#gab83a82cdcbbecdb300e944b744a94729", null ],
       [ "minBootLoaderVersion", "group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129", null ],
@@ -1055,6 +1063,13 @@ var group___core_plugin =
       [ "debugMainWindow", "group___core_plugin.html#ggadc29c2ff13d900c2f185ee95427fb06caf4b0431d5cc108ace609eb877582a059", null ],
       [ "debugUAVGadgetManager", "group___core_plugin.html#gga61dadd085c1777f559549e05962b2c9ea40daeb017da1d9cfcee88d7ac5ebdb9e", null ]
     ] ],
+    [ "AnnunciatorType", "group___core_plugin.html#ga615a5aa573c867267162df009eb6496e", [
+      [ "ANNUNCIATOR_HEARTBEAT", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb", null ],
+      [ "ANNUNCIATOR_ALARM", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f", null ],
+      [ "ANNUNCIATOR_BUZZER", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1", null ],
+      [ "ANNUNCIATOR_RGB", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79", null ],
+      [ "ANNUNCIATOR_DAC", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5", null ]
+    ] ],
     [ "BcdDevice", "group___core_plugin.html#gae5da6a391b4825fe57d10ab08b5e6482", [
       [ "BCD_DEVICE_BOOTLOADER", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1", null ],
       [ "BCD_DEVICE_FIRMWARE", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81", null ],
@@ -1130,6 +1145,11 @@ var group___core_plugin =
       [ "Third", "group___core_plugin.html#gga2423997830c6fd1ceb278f80dcbfc010abeaccba28ffbb72a779d3e298bb60e4d", null ]
     ] ],
     [ "AddOperation", "group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ab53ae2491f4fe42036cf680c3cc1b67b", null ],
+    [ "ANNUNCIATOR_ALARM", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f", null ],
+    [ "ANNUNCIATOR_BUZZER", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1", null ],
+    [ "ANNUNCIATOR_DAC", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5", null ],
+    [ "ANNUNCIATOR_HEARTBEAT", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb", null ],
+    [ "ANNUNCIATOR_RGB", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79", null ],
     [ "BCD_DEVICE_BOOTLOADER", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1", null ],
     [ "BCD_DEVICE_FIRMWARE", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81", null ],
     [ "BCD_DEVICE_UPGRADER", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aff451dedb1ef558ed3f6d924e49e8e64", null ],
@@ -1429,6 +1449,7 @@ var group___core_plugin =
     [ "globalMessaging", "group___core_plugin.html#ga36cb88f703fd8e9cc4662216ba0c9967", null ],
     [ "goToNext", "group___core_plugin.html#ga2ddbd6616a138d34c937f59ece4c3118", null ],
     [ "goToPrev", "group___core_plugin.html#ga292b3bbe41d455040928fab85b78c79d", null ],
+    [ "hasAnnunciator", "group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8", null ],
     [ "hasAttribute", "group___core_plugin.html#ga3a7cc9955526f08640f232578c1dff74", null ],
     [ "hasAttribute", "group___core_plugin.html#ga534d642231f8e08b2641744553f42def", null ],
     [ "hasContext", "group___core_plugin.html#ga6b861e343876351edf5d2fae24a5f0cb", null ],
@@ -1541,8 +1562,8 @@ var group___core_plugin =
     [ "mousePressEvent", "group___core_plugin.html#ga73faf601d8ba03838e2e6c0c82554719", null ],
     [ "name", "group___core_plugin.html#ga75b37730bea5a18036561c69d0e7ce85", null ],
     [ "name", "group___core_plugin.html#ga8e81a766f4f007fecaff02141fce57b0", null ],
-    [ "name", "group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9", null ],
     [ "name", "group___core_plugin.html#gacc4bf28135f3227a9ffb7e415a128402", null ],
+    [ "name", "group___core_plugin.html#ga644f51fd4e29830095d2e70735fa78e9", null ],
     [ "name", "group___core_plugin.html#ga5892453cd69d59f044a66007256caa28", null ],
     [ "name", "group___core_plugin.html#ga1504ed1816cbdb3458ff3439f6355d49", null ],
     [ "name", "group___core_plugin.html#ga3b37cbe32b268315a5b2e8d4c061974c", null ],

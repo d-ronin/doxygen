@@ -7,6 +7,7 @@ var class_piko_b_l_x =
     [ "getBoardPicture", "group___boards__d_ronin.html#ga223db9f43540de0f4dbe6b66d3685131", null ],
     [ "getHwUAVO", "group___boards__d_ronin.html#ga5468f8ace1813cbec9c663c91cda9cf9", null ],
     [ "getInputType", "group___boards__d_ronin.html#gadc5924d249016bfc2dd76e8e6d9fb467", null ],
+    [ "hasAnnunciator", "group___boards__d_ronin.html#ga9f0d49060fa5b107bdd231d77e1374db", null ],
     [ "isInputConfigurationSupported", "group___boards__d_ronin.html#gade152694e4c04773aa0c5e525f1195cc", null ],
     [ "queryCapabilities", "group___boards__d_ronin.html#ga53e5be940891c315974cac7b7deeea81", null ],
     [ "queryMaxGyroRate", "group___boards__d_ronin.html#ga04477fd4b37b3e1feffc82d83d8c70ef", null ],

@@ -6,5 +6,6 @@ var searchData=
   ['uavsettings_20import_2fexport_20plugin',['UAVSettings Import/Export Plugin',['../group___u_a_v_settings_import_export.html',1,'']]],
   ['uavtalk_20plugin',['UAVTalk Plugin',['../group___u_a_v_talk_plugin.html',1,'']]],
   ['uploader_20plugin',['Uploader Plugin',['../group___uploader.html',1,'']]],
-  ['usagestats_20gadget_20plugin',['UsageStats Gadget Plugin',['../group___usage_stats_plugin.html',1,'']]]
+  ['usagestats_20gadget_20plugin',['UsageStats Gadget Plugin',['../group___usage_stats_plugin.html',1,'']]],
+  ['utilities',['Utilities',['../group__utils.html',1,'']]]
 ];

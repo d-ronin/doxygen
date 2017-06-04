@@ -9,6 +9,7 @@ var class_lux =
     [ "getConnectionDiagram", "group___boards___brotronics.html#gac5cd4721df00bb7cc4713b17b4f7019d", null ],
     [ "getHwUAVO", "group___boards___brotronics.html#gae4a5334d14bf6ea478c7a4fdfc972878", null ],
     [ "getInputType", "group___boards___brotronics.html#ga51a9bc564c0149ab0cac66c26f73583a", null ],
+    [ "hasAnnunciator", "group___boards___brotronics.html#ga4fb1639f1717917d0782ce7799f4b6d9", null ],
     [ "isInputConfigurationSupported", "group___boards___brotronics.html#ga5e5f61cd702bd2ece92488903c0a4416", null ],
     [ "queryCapabilities", "group___boards___brotronics.html#ga7e6c7469153d1f28a287e375bbd25321", null ],
     [ "queryMaxGyroRate", "group___boards___brotronics.html#gad740b90578b527834dcda455fecabff5", null ],

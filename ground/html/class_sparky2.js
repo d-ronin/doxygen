@@ -11,6 +11,7 @@ var class_sparky2 =
     [ "getInputType", "group___boards___tau_labs_plugin.html#ga2af601f04033e6066f1612fcf0475ed9", null ],
     [ "getRfmID", "group___boards___tau_labs_plugin.html#gafa06d92c6ef1fb5ad401daee0a6766e8", null ],
     [ "getSettings", "group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e", null ],
+    [ "hasAnnunciator", "group___boards___tau_labs_plugin.html#gafa94085381f6faebdfc9093f745afb2f", null ],
     [ "isInputConfigurationSupported", "group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b", null ],
     [ "queryCapabilities", "group___boards___tau_labs_plugin.html#gacdc6744e86cf20d65830bc14e3cc5eca", null ],
     [ "queryMaxGyroRate", "group___boards___tau_labs_plugin.html#ga59a9b1ecc2f77e3466e2ca090b514b0a", null ],

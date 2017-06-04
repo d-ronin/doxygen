@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -164,12 +164,13 @@ $(document).ready(function(){initNavTree('sparky2_8h_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                           <a class="code" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode, quint8 min, quint8 max);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> QStringList <a class="code" href="group___boards___tau_labs_plugin.html#ga78f0df6fc65ebe3809d2e501b6a9cb5a">getAdcNames</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *uavoUtilManager;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif // SPARKY2_H</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___boards___tau_labs_plugin.html#gafa94085381f6faebdfc9093f745afb2f">hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *uavoUtilManager;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // SPARKY2_H</span></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_gacdc6744e86cf20d65830bc14e3cc5eca"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gacdc6744e86cf20d65830bc14e3cc5eca">Sparky2::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Return which capabilities this board has. </div><div class="ttdef"><b>Definition:</b> <a href="sparky2_8cpp_source.html#l00093">sparky2.cpp:93</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga599a013aa05047b3c7741e35a9c59ab5"><div class="ttname"><a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a></div><div class="ttdeci">InputType</div><div class="ttdoc">Types of input to configure for the default port. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00158">iboardtype.h:158</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga01b09218f2a13aaeee6db007ac6bd967"><div class="ttname"><a href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">Core::IBoardType::BoardCapabilities</a></div><div class="ttdeci">BoardCapabilities</div><div class="ttdoc">Types of capabilities boards can support. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00092">iboardtype.h:92</a></div></div>
@@ -178,8 +179,10 @@ $(document).ready(function(){initNavTree('sparky2_8h_source.html','');});
 <div class="ttc" id="uavobjectutilmanager_8h_html"><div class="ttname"><a href="uavobjectutilmanager_8h.html">uavobjectutilmanager.h</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga3fee90fc0fc1207f830244a53c82e71b"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b">Sparky2::isInputConfigurationSupported</a></div><div class="ttdeci">virtual bool isInputConfigurationSupported(Core::IBoardType::InputType type)</div><div class="ttdoc">Determine if this board supports configuring the receiver. </div><div class="ttdef"><b>Definition:</b> <a href="sparky2_8cpp_source.html#l00133">sparky2.cpp:133</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga4ab987f3509f712a5fcd81b5791a882f"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga4ab987f3509f712a5fcd81b5791a882f">Sparky2::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="sparky2_8cpp_source.html#l00110">sparky2.cpp:110</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00225">iboardtype.h:225</a></div></div>
+<div class="ttc" id="group___boards___tau_labs_plugin_html_gafa94085381f6faebdfc9093f745afb2f"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#gafa94085381f6faebdfc9093f745afb2f">Sparky2::hasAnnunciator</a></div><div class="ttdeci">virtual bool hasAnnunciator(AnnunciatorType annunc)</div><div class="ttdef"><b>Definition:</b> <a href="sparky2_8cpp_source.html#l00416">sparky2.cpp:416</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga4ea096d9369e2535cca49f9ee93ba04d"><div class="ttname"><a href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a></div><div class="ttdeci">LinkMode</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00233">iboardtype.h:233</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga615a5aa573c867267162df009eb6496e"><div class="ttname"><a href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a></div><div class="ttdeci">AnnunciatorType</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00174">iboardtype.h:174</a></div></div>
 <div class="ttc" id="group___boards___tau_labs_plugin_html_ga2dddf503eedf520d420ba3810738e43e"><div class="ttname"><a href="group___boards___tau_labs_plugin.html#ga2dddf503eedf520d420ba3810738e43e">Sparky2::getSettings</a></div><div class="ttdeci">HwSparky2 * getSettings()</div><div class="ttdoc">Get the settings object. </div><div class="ttdef"><b>Definition:</b> <a href="sparky2_8cpp_source.html#l00121">sparky2.cpp:121</a></div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
 <div class="ttc" id="class_u_a_v_object_util_manager_html"><div class="ttname"><a href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8h_source.html#l00049">uavobjectutilmanager.h:49</a></div></div>

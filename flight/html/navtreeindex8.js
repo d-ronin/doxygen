@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"attitude_8c.html#gae10ba1c8efb9a734635be19bd1718524":[5,0,0,2,3,0,39],
 "attitude_8c.html#gaec583b104271db57b9b3c06df822320d":[5,0,0,2,3,0,43],
 "attitude_8c.html#gaf40b54ff53647c74794f31530552529e":[5,0,0,2,3,0,32],
 "attitude_8c.html#gaf7bd85556060be5c23393d3243956df5":[5,0,0,2,3,0,20],
@@ -87,6 +88,12 @@ var NAVTREEINDEX8 =
 "berlekamp_8c.html#afbd3787fc0b3ef38208366c8d5b05b2e":[5,0,0,1,5,0,15],
 "berlekamp_8c.html#afe3883a12ae28716adce4ede69d58191":[5,0,0,1,5,0,12],
 "berlekamp_8c_source.html":[5,0,0,1,5,0],
+"betaflightshim2_8c.html":[5,0,0,2,33,2],
+"betaflightshim2_8c_source.html":[5,0,0,2,33,2],
+"betaflightshim3_8c.html":[5,0,0,2,33,3],
+"betaflightshim3_8c_source.html":[5,0,0,2,33,3],
+"betaflightshim_8c.html":[5,0,0,2,33,1],
+"betaflightshim_8c_source.html":[5,0,0,2,33,1],
 "bl_2common_2main_8c.html":[5,0,0,4,1,0,5],
 "bl_2common_2main_8c.html#ga0c6d40772200a382946f82ef170a8a6a":[5,0,0,4,1,0,5,22],
 "bl_2common_2main_8c.html#ga0f27a8131fc955346e6dd02dcdc3ee7a":[5,0,0,4,1,0,5,13],
@@ -242,12 +249,5 @@ var NAVTREEINDEX8 =
 "bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a17725b71cf966ca5b273676f3a94dded":[5,0,0,4,1,0,0,33,1],
 "bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a3009d4913184dd7040175cbf467b0f83":[5,0,0,4,1,0,0,33,3],
 "bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a425beaa79af183a8020f4cbdf358dddb":[5,0,0,4,1,0,0,33,11],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a4e8e32b97cdafffc9f920cede9f6e8ed":[5,0,0,4,1,0,0,33,13],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a836a78d944383b1f2ffa64cd62518a53":[5,0,0,4,1,0,0,33,2],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a84d11a3d0475f292e7327f53a31e868c":[5,0,0,4,1,0,0,33,4],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6aa1b7e2b730e028b0bf611d1127d34784":[5,0,0,4,1,0,0,33,9],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6aa7569741800e9c78dc97785818158cad":[5,0,0,4,1,0,0,33,14],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6aab60f1597bf8ec961cdb4c6dbe5c2d74":[5,0,0,4,1,0,0,33,0],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6abc1d4bd1128b4e83bdf19546423259fa":[5,0,0,4,1,0,0,33,5],
-"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6acf91edb72c1758e8061f971624707661":[5,0,0,4,1,0,0,33,6]
+"bl__messages_8h.html#gga74fb359ddcddf24705ddf121b89a03e6a4e8e32b97cdafffc9f920cede9f6e8ed":[5,0,0,4,1,0,0,33,13]
 };

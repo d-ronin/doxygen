@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"group___com_usb_bridge_module.html#ga0f31bdae65449b270ca0112dc1631067":[2,5,7,9],
+"group___com_usb_bridge_module.html#ga1bca1a133d679ca1db5477cd1971429e":[2,5,7,8],
+"group___com_usb_bridge_module.html#ga31a341398b340ff9392fffe8b413d807":[2,5,7,11],
+"group___com_usb_bridge_module.html#ga57dc9d638d90570da27e4e5ccad5d9cc":[2,5,7,5],
+"group___com_usb_bridge_module.html#ga76289e2af7e81accedf180f6191030cf":[2,5,7,1],
+"group___com_usb_bridge_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[2,5,7,3],
+"group___com_usb_bridge_module.html#ga8982eb5c87a5037147818ef103ca2c1b":[2,5,7,4],
+"group___com_usb_bridge_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[2,5,7,10],
+"group___com_usb_bridge_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[2,5,7,2],
+"group___com_usb_bridge_module.html#ga98167e5e103d76d5ed3ea6820af60478":[2,5,7,13],
 "group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80":[2,5,7,7],
 "group___com_usb_bridge_module.html#gae9d920339ab8c87f41795a2196f7eec9":[2,5,7,6],
 "group___com_usb_bridge_module.html#gaf633010421f36b1aa2d3ef32a2f34bdf":[2,5,7,12],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "group___constants.html#ga69599ea8c5e798b0d2bc85bf92eb5454":[2,1,0,4],
 "group___constants.html#ga7b759c31aceab1c3192f8fe23890ce2b":[2,1,0,0],
 "group___constants.html#gab943a8c618443769a239363318a38b06":[2,1,0,6],
-"group___control.html":[2,5,15],
-"group___control.html#ga06bfd2b6503136d1c59c38c57f799d64":[2,5,15,28],
-"group___control.html#ga09080629030e894ea64ba0bf710751c3":[2,5,15,49],
-"group___control.html#ga0bee0c81342526c03f10559cf6dbda72":[2,5,15,71],
-"group___control.html#ga0cfffeff625e66d5b08d5fdf3dfae137":[2,5,15,87],
-"group___control.html#ga0d21bfbac2e51bd6331c2baebbe049fa":[2,5,15,13],
-"group___control.html#ga0f0fed3573f7a6e40d7ddb91fa7848e6":[2,5,15,32],
-"group___control.html#ga126fd565398b8adf660ef962ce64cfce":[2,5,15,38],
-"group___control.html#ga16a2fa9b05e1778d508450239854bdef":[2,5,15,69],
-"group___control.html#ga1cc58ced6fdcc946fada40658f7674a7":[2,5,15,36],
-"group___control.html#ga1f2fb4d7d46c51bd7acd93e4b332013d":[2,5,15,73]
+"group___control.html":[2,5,15]
 };

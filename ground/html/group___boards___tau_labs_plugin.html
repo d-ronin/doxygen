@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga73f231850f1a406923692e944725397e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae8fbbe3a7103a633b52ef1832a327a4"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky::getAdcNames</a> ()</td></tr>
 <tr class="separator:gaae8fbbe3a7103a633b52ef1832a327a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cc5d361eb4745cfd31840cdfdb2e75e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
+<tr class="memdesc:ga0cc5d361eb4745cfd31840cdfdb2e75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="#ga0cc5d361eb4745cfd31840cdfdb2e75e">More...</a><br/></td></tr>
+<tr class="separator:ga0cc5d361eb4745cfd31840cdfdb2e75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga603820debb94c5edf9036bcfbc27da36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#ga603820debb94c5edf9036bcfbc27da36">Sparky2::Sparky2</a> ()</td></tr>
 <tr class="memdesc:ga603820debb94c5edf9036bcfbc27da36"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___boards___tau_labs_plugin.html#ga603820debb94c5edf9036bcfbc27da36" title="Sparky2::Sparky2 This is the Sparky board definition. ">Sparky2::Sparky2</a> This is the <a class="el" href="class_sparky.html">Sparky</a> board definition.  <a href="#ga603820debb94c5edf9036bcfbc27da36">More...</a><br/></td></tr>
 <tr class="separator:ga603820debb94c5edf9036bcfbc27da36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +200,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga51a98f9d324a17a8160d59f3111e6279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78f0df6fc65ebe3809d2e501b6a9cb5a"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#ga78f0df6fc65ebe3809d2e501b6a9cb5a">Sparky2::getAdcNames</a> ()</td></tr>
 <tr class="separator:ga78f0df6fc65ebe3809d2e501b6a9cb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa94085381f6faebdfc9093f745afb2f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#gafa94085381f6faebdfc9093f745afb2f">Sparky2::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
+<tr class="separator:gafa94085381f6faebdfc9093f745afb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga601f99918f17fa572ca4951a29fbe969"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969">TauLink::TauLink</a> ()</td></tr>
 <tr class="memdesc:ga601f99918f17fa572ca4951a29fbe969"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___boards___tau_labs_plugin.html#ga601f99918f17fa572ca4951a29fbe969" title="TauLink::TauLink This is the PipXtreme radio modem definition. ">TauLink::TauLink</a> This is the PipXtreme radio modem definition.  <a href="#ga601f99918f17fa572ca4951a29fbe969">More...</a><br/></td></tr>
 <tr class="separator:ga601f99918f17fa572ca4951a29fbe969"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -887,6 +892,69 @@ the selected input type </dd></dl>
 <p>Get the settings object. </p>
 
 <p>Definition at line <a class="el" href="taulink_8cpp_source.html#l00096">96</a> of file <a class="el" href="taulink_8cpp_source.html">taulink.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0cc5d361eb4745cfd31840cdfdb2e75e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sparky::hasAnnunciator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a>&#160;</td>
+          <td class="paramname"><em>annunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the board has the given type of annunciator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annunc</td><td>Annunciator type of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if present </dd></dl>
+
+<p>Reimplemented from <a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">Core::IBoardType</a>.</p>
+
+<p>Definition at line <a class="el" href="sparky_8cpp_source.html#l00303">303</a> of file <a class="el" href="sparky_8cpp_source.html">sparky.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafa94085381f6faebdfc9093f745afb2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sparky2::hasAnnunciator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a>&#160;</td>
+          <td class="paramname"><em>annunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sparky2_8cpp_source.html#l00416">416</a> of file <a class="el" href="sparky2_8cpp_source.html">sparky2.cpp</a>.</p>
 
 </div>
 </div>

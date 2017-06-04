@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -164,6 +164,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga82875d349e208b89ab8fa2c0f80d5e66"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___d_t_f.html#ga82875d349e208b89ab8fa2c0f80d5e66">Dtfc::getConnectionDiagram</a> ()</td></tr>
 <tr class="memdesc:ga82875d349e208b89ab8fa2c0f80d5e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">getConnectionDiagram get the connection diagram for this board  <a href="#ga82875d349e208b89ab8fa2c0f80d5e66">More...</a><br/></td></tr>
 <tr class="separator:ga82875d349e208b89ab8fa2c0f80d5e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadafa48057086834b5810a72eec6c9d7b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___d_t_f.html#gadafa48057086834b5810a72eec6c9d7b">Dtfc::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
+<tr class="memdesc:gadafa48057086834b5810a72eec6c9d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="#gadafa48057086834b5810a72eec6c9d7b">More...</a><br/></td></tr>
+<tr class="separator:gadafa48057086834b5810a72eec6c9d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10248a70ebe5116c7414449ce3a361f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___d_t_f.html#ga10248a70ebe5116c7414449ce3a361f5">DtfcConfiguration::DtfcConfiguration</a> (QWidget *parent=0)</td></tr>
 <tr class="separator:ga10248a70ebe5116c7414449ce3a361f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabe10485a12c7606791eddd5afd37874"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___d_t_f.html#gaabe10485a12c7606791eddd5afd37874">DtfcConfiguration::~DtfcConfiguration</a> ()</td></tr>
@@ -440,6 +443,43 @@ the selected input type </dd></dl>
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429">Core::IBoardType</a>.</p>
 
 <p>Definition at line <a class="el" href="dtfc_8cpp_source.html#l00179">179</a> of file <a class="el" href="dtfc_8cpp_source.html">dtfc.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadafa48057086834b5810a72eec6c9d7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtfc::hasAnnunciator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a>&#160;</td>
+          <td class="paramname"><em>annunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the board has the given type of annunciator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annunc</td><td>Annunciator type of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if present </dd></dl>
+
+<p>Reimplemented from <a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">Core::IBoardType</a>.</p>
+
+<p>Definition at line <a class="el" href="dtfc_8cpp_source.html#l00297">297</a> of file <a class="el" href="dtfc_8cpp_source.html">dtfc.cpp</a>.</p>
 
 </div>
 </div>

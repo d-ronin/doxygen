@@ -25,6 +25,7 @@ var actuator_8c =
     [ "scale_channel", "actuator_8c.html#ga7220b5cc002952f9fa775381b6067bd8", null ],
     [ "set_failsafe", "actuator_8c.html#ga6e8c5a2f546ec4906bbeb387959a7b8d", null ],
     [ "throt_curve", "actuator_8c.html#ga85f9c2a5a055c0292a43f7bf29f09d94", null ],
+    [ "actuator_interlock", "actuator_8c.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ],
     [ "actuator_settings_updated", "actuator_8c.html#gacb12ed460451faae4bc03f774fe95933", null ],
     [ "actuatorSettings", "actuator_8c.html#ga5d6ccb3c032d3f09fd5128c847ec674b", null ],
     [ "airframe_type", "actuator_8c.html#ga2850723437c013e81ea5232f44b5e7f1", null ],

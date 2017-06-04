@@ -8,6 +8,8 @@ var searchData=
   ['uavtalkeventqueue',['uavtalkEventQueue',['../group___radio_com_bridge_module.html#ga05dec3b438d4b78dfcfbc34c67246f19',1,'RadioComBridgeData']]],
   ['ubloxtxck_5fa',['ubloxTxCK_A',['../group___g_s_p_module.html#gacd42795ff6042970c6a6de48f00f07e5',1,'ubx_cfg.c']]],
   ['ubloxtxck_5fb',['ubloxTxCK_B',['../group___g_s_p_module.html#ga6499bea1e512fb004a237283d802b855',1,'ubx_cfg.c']]],
+  ['uint8_5f16_5fu',['uint8_16_u',['../serial__4way_8h.html#aa35c53197c8dc6d8588f0c4230facf7d',1,'serial_4way.h']]],
+  ['uint8_5f32_5fu',['uint8_32_u',['../serial__4way_8h.html#abca83c071e6b8255c0846dde648b662d',1,'serial_4way.h']]],
   ['unconfigured',['UNCONFIGURED',['../group___p_i_o_s___s_e_r_v_o.html#gae015c18e4e55d7f11583ff54d0b6ef75',1,'pios_servo.c']]],
   ['univ_5fgas_5fconstant',['univ_gas_constant',['../group___miscellaneous_math.html#gace263c0740fb27fdab463809a41969f7',1,'AirParameters']]],
   ['unused',['unused',['../structbl__messages.html#a018b55ea600a3058cc68a045cfd06ae9',1,'bl_messages::unused()'],['../structbl__messages.html#ab574d5fd42e33d8884c1d04882ec67ae',1,'bl_messages::unused()'],['../structmsg__capabilities__req.html#aaff4213425dc24d892d462444ba14f00',1,'msg_capabilities_req::unused()'],['../structmsg__capabilities__rep__all.html#a8566e0c67b17e018a73a1eca2410fb33',1,'msg_capabilities_rep_all::unused()'],['../structmsg__enter__dfu.html#abe6e1326752ac726b48dd4e4d8fc11ed',1,'msg_enter_dfu::unused()'],['../structmsg__jump__fw.html#ad8d083159633b7e1e300aa8dae39e838',1,'msg_jump_fw::unused()'],['../structmsg__status__rep.html#adfd3129334e5f67985226f19d86282b4',1,'msg_status_rep::unused()'],['../bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01',1,'unused():&#160;bl_messages.h']]],

@@ -38,6 +38,8 @@ var searchData=
   ['usb_5fwkup_5firqhandler',['USB_WKUP_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a4d12138b34d2481fd52e3679197b5956',1,'pios_chibios_transition_priv.h']]],
   ['usb_5fwkup_5frmp_5firqhandler',['USB_WKUP_RMP_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a6f1b11e47824e08909042fba546f0344',1,'pios_chibios_transition_priv.h']]],
   ['use_5fdll',['USE_DLL',['../mgrs_8h.html#a748b4324767099a12bb868f0be46dbf8',1,'mgrs.h']]],
+  ['use_5fserial_5f4way_5fblheli_5fbootloader',['USE_SERIAL_4WAY_BLHELI_BOOTLOADER',['../serial__4way_8h.html#a1570ef030af710b938185adbb8de586a',1,'serial_4way.h']]],
+  ['use_5fserial_5f4way_5fsk_5fbootloader',['USE_SERIAL_4WAY_SK_BOOTLOADER',['../serial__4way_8h.html#a36231bb94ed3926e19ea6a54ecc93a9d',1,'serial_4way.h']]],
   ['utlist_5fversion',['UTLIST_VERSION',['../utlist_8h.html#a9f3779f3c49ddf609c97f1c3d1f29730',1,'utlist.h']]],
   ['utm_5fa_5ferror',['UTM_A_ERROR',['../utm_8h.html#a63544de09d1cb75585e75ed87eb8ea90',1,'utm.h']]],
   ['utm_5feasting_5ferror',['UTM_EASTING_ERROR',['../utm_8h.html#a7c8201b39825a04d76e0c5c3605ec290',1,'utm.h']]],

@@ -1,5 +1,10 @@
 var pios__modules_8h =
 [
+    [ "actuator_interlock", "pios__modules_8h.html#gad8b5ff876e9f50e2a1e5d14e7c896802", [
+      [ "ACTUATOR_INTERLOCK_OK", "pios__modules_8h.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8", null ],
+      [ "ACTUATOR_INTERLOCK_STOPREQUEST", "pios__modules_8h.html#ggad8b5ff876e9f50e2a1e5d14e7c896802abfb92c377fc8312c3d695d37b9cf76f6", null ],
+      [ "ACTUATOR_INTERLOCK_STOPPED", "pios__modules_8h.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a4378caaca2604ccc0c3cb6b96addcd85", null ]
+    ] ],
     [ "pios_modules", "pios__modules_8h.html#ga0c75b61e067ee5be01eb6682ce7c8f60", [
       [ "PIOS_MODULE_COMUSBBRIDGE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8bf2270419d4161e516e09aeaaff410e", null ],
       [ "PIOS_MODULE_GPS", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8d1467ed9bb5a3868b9fc5af9ba245e5", null ],
@@ -15,5 +20,6 @@ var pios__modules_8h =
       [ "PIOS_MODULE_NUM", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c", null ]
     ] ],
     [ "PIOS_Modules_Enable", "pios__modules_8h.html#ga039145f6fcbc2953d363dc6dc7ad73ea", null ],
-    [ "PIOS_Modules_IsEnabled", "pios__modules_8h.html#gac1560fe3947f8270b373a7ea54b393dc", null ]
+    [ "PIOS_Modules_IsEnabled", "pios__modules_8h.html#gac1560fe3947f8270b373a7ea54b393dc", null ],
+    [ "actuator_interlock", "pios__modules_8h.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ]
 ];

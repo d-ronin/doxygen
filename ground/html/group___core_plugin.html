@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -354,6 +354,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga599a013aa05047b3c7741e35a9c59ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of input to configure for the default port.  <a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">More...</a><br/></td></tr>
 <tr class="separator:ga599a013aa05047b3c7741e35a9c59ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga615a5aa573c867267162df009eb6496e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a> { <br/>
+&#160;&#160;<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">Core::IBoardType::ANNUNCIATOR_HEARTBEAT</a> = 1 &lt;&lt; 0, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">Core::IBoardType::ANNUNCIATOR_ALARM</a> = 1 &lt;&lt; 1, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">Core::IBoardType::ANNUNCIATOR_BUZZER</a> = 1 &lt;&lt; 2, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">Core::IBoardType::ANNUNCIATOR_RGB</a> = 1 &lt;&lt; 3, 
+<br/>
+&#160;&#160;<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">Core::IBoardType::ANNUNCIATOR_DAC</a> = 1 &lt;&lt; 4
+<br/>
+ }</td></tr>
+<tr class="separator:ga615a5aa573c867267162df009eb6496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ea096d9369e2535cca49f9ee93ba04d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> { <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">Core::IBoardType::LINK_TELEM</a>, 
 <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">Core::IBoardType::LINK_TELEM_PPM</a>, 
 <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">Core::IBoardType::LINK_PPM</a>
@@ -1110,6 +1120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga662281edbd7c4e4ef1c241bd354d9754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; USBInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754">Core::IBoardType::bootloaderUSBInfo</a> ()</td></tr>
 <tr class="memdesc:ga662281edbd7c4e4ef1c241bd354d9754"><td class="mdescLeft">&#160;</td><td class="mdescRight">getBootloaderUSBInfo  <a href="#ga662281edbd7c4e4ef1c241bd354d9754">More...</a><br/></td></tr>
 <tr class="separator:ga662281edbd7c4e4ef1c241bd354d9754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fa9b3e61a56a7e60429978ebdbe6a8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">Core::IBoardType::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
+<tr class="memdesc:ga97fa9b3e61a56a7e60429978ebdbe6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="#ga97fa9b3e61a56a7e60429978ebdbe6a8">More...</a><br/></td></tr>
+<tr class="separator:ga97fa9b3e61a56a7e60429978ebdbe6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5caf4d4cf80df4fed07b6ee0f28fcd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga5caf4d4cf80df4fed07b6ee0f28fcd34">Core::IBoardType::addFirmwareUSBInfo</a> (USBInfo info)</td></tr>
 <tr class="separator:ga5caf4d4cf80df4fed07b6ee0f28fcd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2bc757875b69ebf9d23252dd7f63277"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gab2bc757875b69ebf9d23252dd7f63277">Core::IBoardType::addBootloaderUSBInfo</a> (USBInfo info)</td></tr>
@@ -2549,6 +2562,32 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga615a5aa573c867267162df009eb6496e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb"></a>ANNUNCIATOR_HEARTBEAT</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f"></a>ANNUNCIATOR_ALARM</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1"></a>ANNUNCIATOR_BUZZER</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79"></a>ANNUNCIATOR_RGB</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5"></a>ANNUNCIATOR_DAC</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00174">174</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gae5da6a391b4825fe57d10ab08b5e6482"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2575,7 +2614,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00260">260</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00275">275</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -2782,7 +2821,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00225">225</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00233">233</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -3504,7 +3543,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00267">267</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00282">282</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -3646,7 +3685,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00266">266</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00281">281</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -4409,7 +4448,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga51a98f9d324a17a8160d59f3111e6279">Sparky2</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb">TauLink</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00227">227</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00235">235</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -4549,7 +4588,7 @@ Friends</h2></td></tr>
 <p>getBootloaderUSBInfo </p>
 <dl class="section return"><dt>Returns</dt><dd>List of bootloader USB filters for this board </dd></dl>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00255">255</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00263">263</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7458,7 +7497,7 @@ template&lt;class Predicate &gt; </div>
 <p>getFirmwareUSBInfo </p>
 <dl class="section return"><dt>Returns</dt><dd>List of firmware USB filters for this board </dd></dl>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00249">249</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00257">257</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -7665,7 +7704,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#ga697a10130452671c38b33842b825821b">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga78f0df6fc65ebe3809d2e501b6a9cb5a">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga0d6dfd8523499a2dffd38a07b57b8130">BrainRE1</a>, <a class="el" href="group___boards___brotronics.html#gafced506f1444151c8cd2cb23e509e20a">Lux</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gaae8fbbe3a7103a633b52ef1832a327a4">Sparky</a>, <a class="el" href="group___boards___d_t_f.html#ga14560e770dc46af34a91bd0b928c0872">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga4613d7c5fd12e6392f504630d0451d4a">Sprf3e</a>, <a class="el" href="group___boards___quantec.html#ga49342d30b08cfb929fcbc166962cf286">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga495ba358004dff42df8ed8968bb11d20">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#gaae020cf5fdf639cdb4be245cc5007cf1">Brain</a>, <a class="el" href="group___boards__d_ronin.html#ga19867cd9405dd890c5a1787a166deed9">PikoBLX</a>, and <a class="el" href="group___boards__d_ronin.html#gadf349a8d1b55b0e00e1beb1ab25abddf">Seppuku</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00241">241</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00249">249</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8038,7 +8077,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga82875d349e208b89ab8fa2c0f80d5e66">Dtfc</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gad40e45271561c0d031092269ab31fc8c">Revolution</a>, <a class="el" href="group___boards___brotronics.html#gac5cd4721df00bb7cc4713b17b4f7019d">Lux</a>, <a class="el" href="group___boards__d_ronin.html#ga8cad429990ec983e14f58f9a76b3e3ac">Sprf3e</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gabe002b30ad055f89a5f02f97fdb50eed">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga1aa55a700d51714380d1bd40af5b7859">BrainRE1</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga6ed654997adfc38d4964c3efdba7c14f">Sparky</a>, and <a class="el" href="group___boards__d_ronin.html#ga8f8fb150520518ddcc26ec3e1697b503">Seppuku</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00201">201</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00209">209</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8245,7 +8284,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#gaff0ce7c7ace2ffc30abf30d46267524b">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga2ad23c6c65df009686b98f54abf868b0">Sprf3e</a>, <a class="el" href="group___boards___open_pilot_plugin.html#gaf0508f4301ba826a160e6b291e2b30b3">Revolution</a>, <a class="el" href="group___boards___quantec.html#ga43894f4269095dab11fd88f96e8646b4">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#gaeb31052828d632c2d38cc524c4903052">AQ32</a>, <a class="el" href="group___boards___brotronics.html#ga51a9bc564c0149ab0cac66c26f73583a">Lux</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga2af601f04033e6066f1612fcf0475ed9">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v.html#gac215d6152d8138396435a61e4f316c31">Brain</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga5b32ee58c9792fbac738b7308bde8435">BrainRE1</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga5a604b25660f512391d1ef9ef154c2b6">Sparky</a>, <a class="el" href="group___boards__d_ronin.html#gadc5924d249016bfc2dd76e8e6d9fb467">PikoBLX</a>, and <a class="el" href="group___boards__d_ronin.html#ga2a080f23da04a268c93283306e536449">Seppuku</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00195">195</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00203">203</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8579,7 +8618,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gaa2c7c889a364e3554503fed7f39746c7">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#gafa06d92c6ef1fb5ad401daee0a6766e8">Sparky2</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#gaec16152e40644ae516aa829b250f0831">TauLink</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00214">214</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00222">222</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -8967,6 +9006,43 @@ template&lt;class Predicate &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga97fa9b3e61a56a7e60429978ebdbe6a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Core::IBoardType::hasAnnunciator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a>&#160;</td>
+          <td class="paramname"><em>annunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the board has the given type of annunciator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annunc</td><td>Annunciator type of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if present </dd></dl>
+
+<p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#ga6d5afd738d9de98255227748771ffc38">Revolution</a>, <a class="el" href="group___boards___d_t_f.html#gadafa48057086834b5810a72eec6c9d7b">Dtfc</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga5d4511d84f54eea39654f2fbf70501d6">BrainRE1</a>, <a class="el" href="group___boards___brotronics.html#ga4fb1639f1717917d0782ce7799f4b6d9">Lux</a>, <a class="el" href="group___boards__d_ronin.html#ga1f38b957caf45603976161ab3ca45d69">Sprf3e</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga0cc5d361eb4745cfd31840cdfdb2e75e">Sparky</a>, <a class="el" href="group___boards___quantec.html#gaffc554d3224c4ac1a444d74fc1359d32">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga8141bc65021039ef14c95fa98c0cfe4d">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#ga5f8e9a593b0aae473b8eb9b1c801c590">Brain</a>, <a class="el" href="group___boards__d_ronin.html#ga7a566203911561395eeb5428344781dd">Seppuku</a>, <a class="el" href="group___boards__d_ronin.html#ga9f0d49060fa5b107bdd231d77e1374db">PikoBLX</a>, <a class="el" href="group___boards__d_ronin.html#ga1ef0b45c64f6dbefe501c331b5e0a9b0">Simulation</a>, and <a class="el" href="group___boards__d_ronin.html#gaa4f287631c355721070c3a58d97e5341">PlayUavOsd</a>.</p>
+
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00270">270</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -10608,7 +10684,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga1540970f5247a69634e1fcc2c996ff91">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga80760b2f0386674461af8a5d02669271">Sprf3e</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga6857a9eb96289d1cc34df6d7b00f2fdf">Revolution</a>, <a class="el" href="group___boards___brotronics.html#ga5e5f61cd702bd2ece92488903c0a4416">Lux</a>, <a class="el" href="group___boards__d_ronin.html#gade152694e4c04773aa0c5e525f1195cc">PikoBLX</a>, <a class="el" href="group___boards__d_ronin.html#ga8b6a8ad6d5ad16bc1047f0b02f90518a">Seppuku</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga3fee90fc0fc1207f830244a53c82e71b">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v.html#gab742b5ec07b3f8e5d4017db01ad1d63a">Brain</a>, <a class="el" href="group___boards___quantec.html#ga3c8acd7eaa6b5db624a1abf838d243ab">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga7c31c9e9a46879eb52244f33b8874eb5">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga31e47c5ccf87292f0078e1f00aa71bf1">BrainRE1</a>, and <a class="el" href="group___boards___tau_labs_plugin.html#gad1cc49687204bd5c0bf274a079996ddd">Sparky</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00178">178</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00186">186</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -10685,7 +10761,7 @@ template&lt;class Predicate &gt; </div>
 <p>Check whether the board has USB </p>
 <dl class="section return"><dt>Returns</dt><dd>true if usb, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00237">237</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00245">245</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -11502,7 +11578,7 @@ template&lt;class Predicate &gt; </div>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#gae37c1072aa8fa5d21f03f2a61ad6ee32">Revolution</a>, <a class="el" href="group___boards___brain_f_p_v.html#gac06dc25a57021a95f574c14226593260">Brain</a>, and <a class="el" href="group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee">Quanton</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00175">175</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00183">183</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -11845,6 +11921,29 @@ template&lt;class Predicate &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="gacc4bf28135f3227a9ffb7e415a128402"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString Core::IVersionControl::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ga644f51fd4e29830095d2e70735fa78e9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -11867,29 +11966,6 @@ template&lt;class Predicate &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="iuavgadgetconfiguration_8h_source.html#l00050">50</a> of file <a class="el" href="iuavgadgetconfiguration_8h_source.html">iuavgadgetconfiguration.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gacc4bf28135f3227a9ffb7e415a128402"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual QString Core::IVersionControl::name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -12786,7 +12862,7 @@ List of board channels </dd></dl>
 
 <p>Reimplemented in <a class="el" href="group___boards___open_pilot_plugin.html#ga5fa5aedb391862ff1c3e871f638d6f9b">Revolution</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga59a9b1ecc2f77e3466e2ca090b514b0a">Sparky2</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga7bbc9416cd2b8f8dc9c34e7a1b71e018">BrainRE1</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga73f231850f1a406923692e944725397e">Sparky</a>, <a class="el" href="group___boards___quantec.html#gaa9c1abb7238239aaad2f75099b4801f0">Quanton</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga3a497f665c3f1aefb240c799915eaed8">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#ga47c7463ba89b64200624fceb1c2dd8a1">Brain</a>, <a class="el" href="group___boards__d_ronin.html#ga04477fd4b37b3e1feffc82d83d8c70ef">PikoBLX</a>, <a class="el" href="group___boards__d_ronin.html#gacac611c3c089a5eedc0ca3a33a5b77a5">Seppuku</a>, <a class="el" href="group___boards___d_t_f.html#ga25b39a3843d5c59447ab10280bcbfc7c">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga7576cb69193b4d902e26afb83b040f65">Simulation</a>, <a class="el" href="group___boards__d_ronin.html#gaa02193859e42aba1063b2614b7b4c9d1">Sprf3e</a>, and <a class="el" href="group___boards___brotronics.html#gad740b90578b527834dcda455fecabff5">Lux</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00208">208</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00216">216</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -15548,7 +15624,7 @@ List of board channels </dd></dl>
 
 <p>Reimplemented in <a class="el" href="group___boards___d_t_f.html#ga1dea55fe3a5bc1597010a72d44731915">Dtfc</a>, <a class="el" href="group___boards__d_ronin.html#ga21e37728a0b3672099666e78cb76f468">Sprf3e</a>, <a class="el" href="group___boards___open_pilot_plugin.html#ga96c7a11eda4b20daf72b2410787e4e46">Revolution</a>, <a class="el" href="group___boards___brotronics.html#ga4da76d6bd3bf0143650be904d1e63831">Lux</a>, <a class="el" href="group___boards___quantec.html#ga22952c4be1c01642b4c1075a053e4a37">Quanton</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga51c77337cc0332142ce5fbe1dd0f728b">Sparky2</a>, <a class="el" href="group___boards___aero_quad_plugin.html#ga064fe5c8e7de70da7d91dfc8a5e9edcf">AQ32</a>, <a class="el" href="group___boards___brain_f_p_v.html#ga4fc085dcd9d6a0c1228ef2bdda5e7ac5">Brain</a>, <a class="el" href="group___boards___brain_f_p_v_plugin.html#ga1a0e99b144219163858dde3b349ca256">BrainRE1</a>, <a class="el" href="group___boards___tau_labs_plugin.html#ga55bf22772b1dd57db236483dde80704e">Sparky</a>, <a class="el" href="group___boards__d_ronin.html#ga9b8f0a032528ba2fc0e93c842f4c27ea">PikoBLX</a>, and <a class="el" href="group___boards__d_ronin.html#ga965ced0458c3852cc8526fdca85430c7">Seppuku</a>.</p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00189">189</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00197">197</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -20700,7 +20776,7 @@ List of board channels </dd></dl>
 
 <p>The numerical board type ID. </p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00273">273</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00288">288</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -20836,7 +20912,7 @@ List of board channels </dd></dl>
 
 <p>The channel groups that are driven by timers. </p>
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00276">276</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00291">291</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22204,7 +22280,7 @@ List of board channels </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00270">270</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00285">285</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>
@@ -22506,7 +22582,7 @@ List of board channels </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00269">269</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
+<p>Definition at line <a class="el" href="iboardtype_8h_source.html#l00284">284</a> of file <a class="el" href="iboardtype_8h_source.html">iboardtype.h</a>.</p>
 
 </div>
 </div>

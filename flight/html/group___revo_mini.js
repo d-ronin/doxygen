@@ -44,6 +44,7 @@ var group___revo_mini =
     [ "PIOS_I2C_MAX_DEVS", "group___revo_mini.html#gaaf529cbac10eabf14d6ca5ad945e03be", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___revo_mini.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_COM_MSG", "group___revo_mini.html#gaa481fbc97c64c579738c2bf6ea8482d0", null ],
+    [ "PIOS_INCLUDE_DMASHOT", "group___revo_mini.html#gab5ac6fa2e4da575ee16cb9d069522092", null ],
     [ "PIOS_INCLUDE_ETASV3", "group___revo_mini.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "group___revo_mini.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH", "group___revo_mini.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],

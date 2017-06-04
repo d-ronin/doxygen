@@ -1,6 +1,7 @@
 var searchData=
 [
   ['savepage',['SavePage',['../class_save_page.html',1,'']]],
+  ['scaledpixmaplabel',['ScaledPixmapLabel',['../class_scaled_pixmap_label.html',1,'']]],
   ['scatterplot2dscopeconfig',['Scatterplot2dScopeConfig',['../class_scatterplot2d_scope_config.html',1,'']]],
   ['scatterplotdata',['ScatterplotData',['../class_scatterplot_data.html',1,'']]],
   ['schedulermodel',['SchedulerModel',['../class_scheduler_model.html',1,'']]],
@@ -25,8 +26,8 @@ var searchData=
   ['setupwizard',['SetupWizard',['../class_setup_wizard.html',1,'']]],
   ['setupwizardplugin',['SetupWizardPlugin',['../class_setup_wizard_plugin.html',1,'']]],
   ['shadow',['shadow',['../struct_config_task_widget_1_1shadow.html',1,'ConfigTaskWidget']]],
-  ['shortcut',['Shortcut',['../class_shortcut.html',1,'']]],
   ['shortcut',['Shortcut',['../class_core_1_1_internal_1_1_shortcut.html',1,'Core::Internal']]],
+  ['shortcut',['Shortcut',['../class_shortcut.html',1,'']]],
   ['shortcutitem',['ShortcutItem',['../struct_core_1_1_internal_1_1_shortcut_item.html',1,'Core::Internal']]],
   ['shortcutsettings',['ShortcutSettings',['../class_core_1_1_internal_1_1_shortcut_settings.html',1,'Core::Internal']]],
   ['signalreceiver',['SignalReceiver',['../class_signal_receiver.html',1,'']]],

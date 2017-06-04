@@ -42,6 +42,8 @@ var dir_255dd6a5a83bafd891adb888cd132d6e =
     [ "qwineventnotifier_p.h", "qwineventnotifier__p_8h.html", [
       [ "QWinEventNotifier", "class_q_win_event_notifier.html", "class_q_win_event_notifier" ]
     ] ],
+    [ "scaledpixmaplabel.cpp", "scaledpixmaplabel_8cpp.html", null ],
+    [ "scaledpixmaplabel.h", "scaledpixmaplabel_8h.html", null ],
     [ "styledbar.cpp", "styledbar_8cpp.html", null ],
     [ "styledbar.h", "styledbar_8h.html", [
       [ "StyledBar", "class_utils_1_1_styled_bar.html", "class_utils_1_1_styled_bar" ],

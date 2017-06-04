@@ -1,6 +1,10 @@
 var searchData=
 [
   ['d',['d',['../structpid.html#a1c4d7f2ca382af4be8d036cc36bd9c31',1,'pid::d()'],['../struct__msp__pid__item.html#a779053d5efa4b01b9ff45403ac99adc5',1,'_msp_pid_item::d()'],['../msp__messages_8h.html#a4cd140aecf7c77a91e1b41afb65cdf4f',1,'d():&#160;msp_messages.h']]],
+  ['d_5fflash_5faddr_5fh',['D_FLASH_ADDR_H',['../structio_mem__s.html#a0b929f4e140c6ff4745639ce794aba80',1,'ioMem_s']]],
+  ['d_5fflash_5faddr_5fl',['D_FLASH_ADDR_L',['../structio_mem__s.html#a6be9f18f62e8b732a6b5881a7fe65e84',1,'ioMem_s']]],
+  ['d_5fnum_5fbytes',['D_NUM_BYTES',['../structio_mem__s.html#abb595aefb07aecd1aa96d9425916037f',1,'ioMem_s']]],
+  ['d_5fptr_5fi',['D_PTR_I',['../structio_mem__s.html#aa2eb101fa4c25b25ae0205dc84cc021b',1,'ioMem_s']]],
   ['dac_5fchannel',['dac_channel',['../group___p_i_o_s.html#gaace68f64f62e24721ae96379b34bedd3',1,'pios_dac_cfg']]],
   ['dac_5fdev_5ft',['dac_dev_t',['../group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79',1,'pios_dac.h']]],
   ['dac_5foutreg',['dac_outreg',['../group___p_i_o_s.html#ga00975fd00c57ab907a81dd86ab3b6452',1,'pios_dac_cfg']]],

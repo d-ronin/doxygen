@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa8e66c40ca8f591b346702e05136ad43"><td class="memItemLeft" align="right" valign="top">virtual QVector&lt; QVector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___brain_f_p_v_plugin.html#gaa8e66c40ca8f591b346702e05136ad43">BrainRE1::getChannelBanks</a> ()</td></tr>
 <tr class="memdesc:gaa8e66c40ca8f591b346702e05136ad43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get banks of output PWM channels banks on the board.  <a href="#gaa8e66c40ca8f591b346702e05136ad43">More...</a><br/></td></tr>
 <tr class="separator:gaa8e66c40ca8f591b346702e05136ad43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d4511d84f54eea39654f2fbf70501d6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___brain_f_p_v_plugin.html#ga5d4511d84f54eea39654f2fbf70501d6">BrainRE1::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
+<tr class="memdesc:ga5d4511d84f54eea39654f2fbf70501d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="#ga5d4511d84f54eea39654f2fbf70501d6">More...</a><br/></td></tr>
+<tr class="separator:ga5d4511d84f54eea39654f2fbf70501d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Plugin to support boards by BrainFPV. </p>
@@ -436,6 +439,43 @@ Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429">Core::IBoardType</a>.</p>
 
 <p>Definition at line <a class="el" href="brainre1_8cpp_source.html#l00169">169</a> of file <a class="el" href="brainre1_8cpp_source.html">brainre1.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5d4511d84f54eea39654f2fbf70501d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BrainRE1::hasAnnunciator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a>&#160;</td>
+          <td class="paramname"><em>annunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the board has the given type of annunciator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">annunc</td><td>Annunciator type of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if present </dd></dl>
+
+<p>Reimplemented from <a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">Core::IBoardType</a>.</p>
+
+<p>Definition at line <a class="el" href="brainre1_8cpp_source.html#l00271">271</a> of file <a class="el" href="brainre1_8cpp_source.html">brainre1.cpp</a>.</p>
 
 </div>
 </div>

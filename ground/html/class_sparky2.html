@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -168,6 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ga51a98f9d324a17a8160d59f3111e6279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78f0df6fc65ebe3809d2e501b6a9cb5a"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#ga78f0df6fc65ebe3809d2e501b6a9cb5a">getAdcNames</a> ()</td></tr>
 <tr class="separator:ga78f0df6fc65ebe3809d2e501b6a9cb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa94085381f6faebdfc9093f745afb2f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___tau_labs_plugin.html#gafa94085381f6faebdfc9093f745afb2f">hasAnnunciator</a> (<a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc)</td></tr>
+<tr class="separator:gafa94085381f6faebdfc9093f745afb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_core_1_1_i_board_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_core_1_1_i_board_type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_core_1_1_i_board_type.html">Core::IBoardType</a></td></tr>
 <tr class="memitem:gad0bc906965e0aff34de8fb8efe21c378 inherit pub_methods_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">queryChannelBanks</a> ()</td></tr>
 <tr class="memdesc:gad0bc906965e0aff34de8fb8efe21c378 inherit pub_methods_class_core_1_1_i_board_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query number &amp; names of output PWM channels banks on the board.  <a href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">More...</a><br/></td></tr>
@@ -196,6 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga662281edbd7c4e4ef1c241bd354d9754 inherit pub_methods_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_list.html">QList</a>&lt; <a class="el" href="struct_core_1_1_i_board_type_1_1_u_s_b_info.html">USBInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754">bootloaderUSBInfo</a> ()</td></tr>
 <tr class="memdesc:ga662281edbd7c4e4ef1c241bd354d9754 inherit pub_methods_class_core_1_1_i_board_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">getBootloaderUSBInfo  <a href="group___core_plugin.html#ga662281edbd7c4e4ef1c241bd354d9754">More...</a><br/></td></tr>
 <tr class="separator:ga662281edbd7c4e4ef1c241bd354d9754 inherit pub_methods_class_core_1_1_i_board_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fa9b3e61a56a7e60429978ebdbe6a8 inherit pub_methods_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">hasAnnunciator</a> (<a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc)</td></tr>
+<tr class="memdesc:ga97fa9b3e61a56a7e60429978ebdbe6a8 inherit pub_methods_class_core_1_1_i_board_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">More...</a><br/></td></tr>
+<tr class="separator:ga97fa9b3e61a56a7e60429978ebdbe6a8 inherit pub_methods_class_core_1_1_i_board_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -234,6 +239,16 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga599a013aa05047b3c7741e35a9c59ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of input to configure for the default port.  <a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">More...</a><br/></td></tr>
 <tr class="separator:ga599a013aa05047b3c7741e35a9c59ab5 inherit pub_types_class_core_1_1_i_board_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga615a5aa573c867267162df009eb6496e inherit pub_types_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> { <br/>
+&#160;&#160;<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">ANNUNCIATOR_HEARTBEAT</a> = 1 &lt;&lt; 0, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">ANNUNCIATOR_ALARM</a> = 1 &lt;&lt; 1, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">ANNUNCIATOR_BUZZER</a> = 1 &lt;&lt; 2, 
+<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">ANNUNCIATOR_RGB</a> = 1 &lt;&lt; 3, 
+<br/>
+&#160;&#160;<a class="el" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">ANNUNCIATOR_DAC</a> = 1 &lt;&lt; 4
+<br/>
+ }</td></tr>
+<tr class="separator:ga615a5aa573c867267162df009eb6496e inherit pub_types_class_core_1_1_i_board_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ea096d9369e2535cca49f9ee93ba04d inherit pub_types_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">LinkMode</a> { <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da5e1966bf1c4b97bf6bfbe342e2dcf733">LINK_TELEM</a>, 
 <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04dac14485863e86d021ca3185e58056f736">LINK_TELEM_PPM</a>, 
 <a class="el" href="group___core_plugin.html#gga4ea096d9369e2535cca49f9ee93ba04da7ceb23a840641ff7654b664a27dafe07">LINK_PPM</a>

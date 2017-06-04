@@ -280,7 +280,7 @@ var searchData=
   ['modelviewplugin',['ModelViewPlugin',['../class_model_view_plugin.html',1,'ModelViewPlugin'],['../group___model_view_plugin.html',1,'(Global Namespace)']]],
   ['modelviewplugin_2ecpp',['modelviewplugin.cpp',['../modelviewplugin_8cpp.html',1,'']]],
   ['modelviewplugin_2eh',['modelviewplugin.h',['../modelviewplugin_8h.html',1,'']]],
-  ['modemanager',['ModeManager',['../group___core_plugin.html#ga7424a5232a9062d5d715d46cb6dab058',1,'Core::ModeManager::ModeManager()'],['../group___core_plugin.html#ga44ed1e705d67281a9f15bf01533170ec',1,'Core::Internal::CoreImpl::modeManager()'],['../group___core_plugin.html#gae36180b31ba67d38888143d60fceb220',1,'Core::ICore::modeManager()'],['../group___core_plugin.html#gac45c5a592157e5fa6521f7dfa811edae',1,'Core::Internal::MainWindow::modeManager()']]],
+  ['modemanager',['modeManager',['../group___core_plugin.html#ga44ed1e705d67281a9f15bf01533170ec',1,'Core::Internal::CoreImpl::modeManager()'],['../group___core_plugin.html#gae36180b31ba67d38888143d60fceb220',1,'Core::ICore::modeManager()'],['../group___core_plugin.html#gac45c5a592157e5fa6521f7dfa811edae',1,'Core::Internal::MainWindow::modeManager()'],['../group___core_plugin.html#ga7424a5232a9062d5d715d46cb6dab058',1,'Core::ModeManager::ModeManager()']]],
   ['modemanager',['ModeManager',['../class_core_1_1_mode_manager.html',1,'Core']]],
   ['modemanager_2ecpp',['modemanager.cpp',['../modemanager_8cpp.html',1,'']]],
   ['modemanager_2eh',['modemanager.h',['../modemanager_8h.html',1,'']]],

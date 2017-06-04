@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -159,10 +159,13 @@ $(document).ready(function(){initNavTree('sprf3e_8h_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="group___boards__d_ronin.html#ga8cad429990ec983e14f58f9a76b3e3ac">getConnectionDiagram</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> QWidget *<a class="code" href="group___boards__d_ronin.html#ga8f7dbc372c7adc3a863d35340b6e6567">getBoardConfiguration</a>(QWidget *parent, <span class="keywordtype">bool</span> connected);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // SPRF3E_H_</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___boards__d_ronin.html#ga1f38b957caf45603976161ab3ca45d69">hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // SPRF3E_H_</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___boards__d_ronin_html_ga1f38b957caf45603976161ab3ca45d69"><div class="ttname"><a href="group___boards__d_ronin.html#ga1f38b957caf45603976161ab3ca45d69">Sprf3e::hasAnnunciator</a></div><div class="ttdeci">virtual bool hasAnnunciator(AnnunciatorType annunc)</div><div class="ttdoc">Check if the board has the given type of annunciator. </div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00284">sprf3e.cpp:284</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga80760b2f0386674461af8a5d02669271"><div class="ttname"><a href="group___boards__d_ronin.html#ga80760b2f0386674461af8a5d02669271">Sprf3e::isInputConfigurationSupported</a></div><div class="ttdeci">virtual bool isInputConfigurationSupported(Core::IBoardType::InputType type)</div><div class="ttdoc">Determine if this board supports configuring the receiver. </div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00090">sprf3e.cpp:90</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga4613d7c5fd12e6392f504630d0451d4a"><div class="ttname"><a href="group___boards__d_ronin.html#ga4613d7c5fd12e6392f504630d0451d4a">Sprf3e::getAdcNames</a></div><div class="ttdeci">virtual QStringList getAdcNames()</div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00257">sprf3e.cpp:257</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga599a013aa05047b3c7741e35a9c59ab5"><div class="ttname"><a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a></div><div class="ttdeci">InputType</div><div class="ttdoc">Types of input to configure for the default port. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00158">iboardtype.h:158</a></div></div>
@@ -174,6 +177,7 @@ $(document).ready(function(){initNavTree('sprf3e_8h_source.html','');});
 <div class="ttc" id="group___boards__d_ronin_html_gaa02193859e42aba1063b2614b7b4c9d1"><div class="ttname"><a href="group___boards__d_ronin.html#gaa02193859e42aba1063b2614b7b4c9d1">Sprf3e::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00230">sprf3e.cpp:230</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga2ad23c6c65df009686b98f54abf868b0"><div class="ttname"><a href="group___boards__d_ronin.html#ga2ad23c6c65df009686b98f54abf868b0">Sprf3e::getInputType</a></div><div class="ttdeci">virtual Core::IBoardType::InputType getInputType()</div><div class="ttdoc">getInputType get the current input type </div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00151">sprf3e.cpp:151</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga615a5aa573c867267162df009eb6496e"><div class="ttname"><a href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a></div><div class="ttdeci">AnnunciatorType</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00174">iboardtype.h:174</a></div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga21e37728a0b3672099666e78cb76f468"><div class="ttname"><a href="group___boards__d_ronin.html#ga21e37728a0b3672099666e78cb76f468">Sprf3e::setInputType</a></div><div class="ttdeci">virtual bool setInputType(Core::IBoardType::InputType type)</div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00102">sprf3e.cpp:102</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga5ff0151158252d0b0d71e720c1ec6957"><div class="ttname"><a href="group___boards__d_ronin.html#ga5ff0151158252d0b0d71e720c1ec6957">Sprf3e::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_8cpp_source.html#l00267">sprf3e.cpp:267</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,9 +157,11 @@ $(document).ready(function(){initNavTree('lux_8h_source.html','');});
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> QStringList <a class="code" href="group___boards___brotronics.html#gafced506f1444151c8cd2cb23e509e20a">getAdcNames</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> QWidget *<a class="code" href="group___boards___brotronics.html#ga2fc41a648253662ff9471810442b85fa">getBoardConfiguration</a>(QWidget *parent, <span class="keywordtype">bool</span> connected);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // LUX_H</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___boards___brotronics.html#ga4fb1639f1717917d0782ce7799f4b6d9">hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // LUX_H</span></div>
 <div class="ttc" id="group___boards___brotronics_html_gae4a5334d14bf6ea478c7a4fdfc972878"><div class="ttname"><a href="group___boards___brotronics.html#gae4a5334d14bf6ea478c7a4fdfc972878">Lux::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00097">lux.cpp:97</a></div></div>
 <div class="ttc" id="group___boards___brotronics_html_ga2fc41a648253662ff9471810442b85fa"><div class="ttname"><a href="group___boards___brotronics.html#ga2fc41a648253662ff9471810442b85fa">Lux::getBoardConfiguration</a></div><div class="ttdeci">virtual QWidget * getBoardConfiguration(QWidget *parent, bool connected)</div><div class="ttdoc">getBoardConfiguration </div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00285">lux.cpp:285</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga599a013aa05047b3c7741e35a9c59ab5"><div class="ttname"><a href="group___core_plugin.html#ga599a013aa05047b3c7741e35a9c59ab5">Core::IBoardType::InputType</a></div><div class="ttdeci">InputType</div><div class="ttdoc">Types of input to configure for the default port. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00158">iboardtype.h:158</a></div></div>
@@ -169,7 +171,9 @@ $(document).ready(function(){initNavTree('lux_8h_source.html','');});
 <div class="ttc" id="group___boards___brotronics_html_ga7e6c7469153d1f28a287e375bbd25321"><div class="ttname"><a href="group___boards___brotronics.html#ga7e6c7469153d1f28a287e375bbd25321">Lux::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Return which capabilities this board has. </div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00078">lux.cpp:78</a></div></div>
 <div class="ttc" id="class_lux_html"><div class="ttname"><a href="class_lux.html">Lux</a></div><div class="ttdef"><b>Definition:</b> <a href="lux_8h_source.html#l00033">lux.h:33</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga615a5aa573c867267162df009eb6496e"><div class="ttname"><a href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">Core::IBoardType::AnnunciatorType</a></div><div class="ttdeci">AnnunciatorType</div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00174">iboardtype.h:174</a></div></div>
 <div class="ttc" id="group___boards___brotronics_html_gac5cd4721df00bb7cc4713b17b4f7019d"><div class="ttname"><a href="group___boards___brotronics.html#gac5cd4721df00bb7cc4713b17b4f7019d">Lux::getConnectionDiagram</a></div><div class="ttdeci">virtual QString getConnectionDiagram()</div><div class="ttdoc">getConnectionDiagram get the connection diagram for this board </div><div class="ttdef"><b>Definition:</b> <a href="lux_8h_source.html#l00065">lux.h:65</a></div></div>
+<div class="ttc" id="group___boards___brotronics_html_ga4fb1639f1717917d0782ce7799f4b6d9"><div class="ttname"><a href="group___boards___brotronics.html#ga4fb1639f1717917d0782ce7799f4b6d9">Lux::hasAnnunciator</a></div><div class="ttdeci">virtual bool hasAnnunciator(AnnunciatorType annunc)</div><div class="ttdoc">Check if the board has the given type of annunciator. </div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00291">lux.cpp:291</a></div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
 <div class="ttc" id="group___boards___brotronics_html_ga80306e11ca9c414512d59280de146dba"><div class="ttname"><a href="group___boards___brotronics.html#ga80306e11ca9c414512d59280de146dba">Lux::Lux</a></div><div class="ttdeci">Lux()</div><div class="ttdoc">Lux:Lux This is the Lux board definition. </div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00043">lux.cpp:43</a></div></div>
 <div class="ttc" id="group___boards___brotronics_html_ga31148d82801785e641ac29163f3214ee"><div class="ttname"><a href="group___boards___brotronics.html#ga31148d82801785e641ac29163f3214ee">Lux::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="lux_8cpp_source.html#l00092">lux.cpp:92</a></div></div>

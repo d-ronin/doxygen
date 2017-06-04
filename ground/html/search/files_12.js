@@ -2,6 +2,8 @@ var searchData=
 [
   ['savepage_2ecpp',['savepage.cpp',['../savepage_8cpp.html',1,'']]],
   ['savepage_2eh',['savepage.h',['../savepage_8h.html',1,'']]],
+  ['scaledpixmaplabel_2ecpp',['scaledpixmaplabel.cpp',['../scaledpixmaplabel_8cpp.html',1,'']]],
+  ['scaledpixmaplabel_2eh',['scaledpixmaplabel.h',['../scaledpixmaplabel_8h.html',1,'']]],
   ['scatterplotdata_2ecpp',['scatterplotdata.cpp',['../scatterplotdata_8cpp.html',1,'']]],
   ['scatterplotdata_2eh',['scatterplotdata.h',['../scatterplotdata_8h.html',1,'']]],
   ['scatterplotscopeconfig_2ecpp',['scatterplotscopeconfig.cpp',['../scatterplotscopeconfig_8cpp.html',1,'']]],

@@ -1,5 +1,12 @@
 var class_core_1_1_i_board_type =
 [
+    [ "AnnunciatorType", "group___core_plugin.html#ga615a5aa573c867267162df009eb6496e", [
+      [ "ANNUNCIATOR_HEARTBEAT", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb", null ],
+      [ "ANNUNCIATOR_ALARM", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f", null ],
+      [ "ANNUNCIATOR_BUZZER", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1", null ],
+      [ "ANNUNCIATOR_RGB", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79", null ],
+      [ "ANNUNCIATOR_DAC", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5", null ]
+    ] ],
     [ "BcdDevice", "group___core_plugin.html#gae5da6a391b4825fe57d10ab08b5e6482", [
       [ "BCD_DEVICE_BOOTLOADER", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482aba1aeecbe5a021f1a2839064dd1ef7d1", null ],
       [ "BCD_DEVICE_FIRMWARE", "group___core_plugin.html#ggae5da6a391b4825fe57d10ab08b5e6482afa5d4de451c06ed1f5f9887949519e81", null ],
@@ -51,6 +58,7 @@ var class_core_1_1_i_board_type =
     [ "getInputType", "group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429", null ],
     [ "getRfmID", "group___core_plugin.html#gadb43e205d3e79948ffa5b21d64da0642", null ],
     [ "getVendorIDs", "group___core_plugin.html#gac4755a106cc7d0da89438881479e0bda", null ],
+    [ "hasAnnunciator", "group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8", null ],
     [ "isInputConfigurationSupported", "group___core_plugin.html#ga5b20cc6b2703da7094c9165e7659cb6f", null ],
     [ "isUSBSupported", "group___core_plugin.html#gab83a82cdcbbecdb300e944b744a94729", null ],
     [ "minBootLoaderVersion", "group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129", null ],

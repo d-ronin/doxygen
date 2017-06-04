@@ -9,6 +9,7 @@ var class_sprf3e =
     [ "getConnectionDiagram", "group___boards__d_ronin.html#ga8cad429990ec983e14f58f9a76b3e3ac", null ],
     [ "getHwUAVO", "group___boards__d_ronin.html#ga5ff0151158252d0b0d71e720c1ec6957", null ],
     [ "getInputType", "group___boards__d_ronin.html#ga2ad23c6c65df009686b98f54abf868b0", null ],
+    [ "hasAnnunciator", "group___boards__d_ronin.html#ga1f38b957caf45603976161ab3ca45d69", null ],
     [ "isInputConfigurationSupported", "group___boards__d_ronin.html#ga80760b2f0386674461af8a5d02669271", null ],
     [ "queryCapabilities", "group___boards__d_ronin.html#gaa72b7c6c289970800b2b5f153e09dbed", null ],
     [ "queryMaxGyroRate", "group___boards__d_ronin.html#gaa02193859e42aba1063b2614b7b4c9d1", null ],

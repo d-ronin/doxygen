@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c89fbc7</span>
+   &#160;<span id="projectnumber">4b920a4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -133,6 +133,11 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:ga0c75b61e067ee5be01eb6682ce7c8f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8b5ff876e9f50e2a1e5d14e7c896802"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a> { <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8">ACTUATOR_INTERLOCK_OK</a>, 
+<a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802abfb92c377fc8312c3d695d37b9cf76f6">ACTUATOR_INTERLOCK_STOPREQUEST</a>, 
+<a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a4378caaca2604ccc0c3cb6b96addcd85">ACTUATOR_INTERLOCK_STOPPED</a>
+ }</td></tr>
+<tr class="separator:gad8b5ff876e9f50e2a1e5d14e7c896802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -145,10 +150,34 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:gac1284d23cb62644a25ef984759ddf5a4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___modules.html#gac1284d23cb62644a25ef984759ddf5a4">modules_enabled</a> [<a class="el" href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c">PIOS_MODULE_NUM</a>] = {false, }</td></tr>
 <tr class="separator:gac1284d23cb62644a25ef984759ddf5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01b4b4c6b9d6afa6a8451f17439074d2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___modules.html#ga01b4b4c6b9d6afa6a8451f17439074d2">actuator_interlock</a></td></tr>
+<tr class="separator:ga01b4b4c6b9d6afa6a8451f17439074d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Allows control of module enable/disable from PiOS. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="gad8b5ff876e9f50e2a1e5d14e7c896802"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8"></a>ACTUATOR_INTERLOCK_OK</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggad8b5ff876e9f50e2a1e5d14e7c896802abfb92c377fc8312c3d695d37b9cf76f6"></a>ACTUATOR_INTERLOCK_STOPREQUEST</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggad8b5ff876e9f50e2a1e5d14e7c896802a4378caaca2604ccc0c3cb6b96addcd85"></a>ACTUATOR_INTERLOCK_STOPPED</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="pios__modules_8h_source.html#l00056">56</a> of file <a class="el" href="pios__modules_8h_source.html">pios_modules.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga0c75b61e067ee5be01eb6682ce7c8f60"></a>
 <div class="memitem">
 <div class="memproto">
@@ -227,6 +256,20 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga01b4b4c6b9d6afa6a8451f17439074d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a> <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00119">119</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gac1284d23cb62644a25ef984759ddf5a4"></a>
 <div class="memitem">
 <div class="memproto">

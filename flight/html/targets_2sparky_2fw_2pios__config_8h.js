@@ -1,6 +1,5 @@
 var targets_2sparky_2fw_2pios__config_8h =
 [
-    [ "AUTOTUNE_AVERAGING_DECIMATION", "targets_2sparky_2fw_2pios__config_8h.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
     [ "AUTOTUNE_AVERAGING_MODE", "targets_2sparky_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2sparky_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2sparky_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
@@ -13,12 +12,11 @@ var targets_2sparky_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_I2C", "targets_2sparky_2fw_2pios__config_8h.html#gac7edbfa43685b86203f055c78fdcea8b", null ],
     [ "PIOS_INCLUDE_LIGHTTELEMETRY", "targets_2sparky_2fw_2pios__config_8h.html#gac4bc284e13454f25bd55839f3d9b0a10", null ],
     [ "PIOS_INCLUDE_MAVLINK", "targets_2sparky_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7", null ],
-    [ "PIOS_INCLUDE_MPU9150", "targets_2sparky_2fw_2pios__config_8h.html#gaaf81e1561201a25395b8d97f0208a2e1", null ],
+    [ "PIOS_INCLUDE_MPU", "targets_2sparky_2fw_2pios__config_8h.html#ga24a6e0d324a2669cacb50de89b60c0a9", null ],
+    [ "PIOS_INCLUDE_MPU_MAG", "targets_2sparky_2fw_2pios__config_8h.html#gab49a0be0e77d9cf169a7db44cc49598a", null ],
     [ "PIOS_INCLUDE_MPXV5004", "targets_2sparky_2fw_2pios__config_8h.html#ga331308be9fde6166b4039a2966ce2b50", null ],
     [ "PIOS_INCLUDE_MPXV7002", "targets_2sparky_2fw_2pios__config_8h.html#gab48a97d4d9a65fbadfd195d283bc5fbf", null ],
     [ "PIOS_INCLUDE_MS5611", "targets_2sparky_2fw_2pios__config_8h.html#ga2cc30288b8783fea8d042a8502af4e70", null ],
     [ "PIOS_INCLUDE_PWM", "targets_2sparky_2fw_2pios__config_8h.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
-    [ "PIOS_MPU6050_ACCEL", "targets_2sparky_2fw_2pios__config_8h.html#ga98ce1bd77aafaf8d94abb18a7d22a942", null ],
-    [ "PIOS_MPU6050_SIMPLE_INIT_SEQUENCE", "targets_2sparky_2fw_2pios__config_8h.html#ga87693863411f41c0f0d078e49748a472", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2sparky_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ]
 ];
