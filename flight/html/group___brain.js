@@ -98,7 +98,6 @@ var group___brain =
     [ "PIOS_LED_HEARTBEAT", "group___brain.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],
     [ "PIOS_LED_RED", "group___brain.html#ga2adfebbfed450cb79eeda3fa6a233e2d", null ],
     [ "PIOS_LOGFLASH_SECT_SIZE", "group___brain.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
-    [ "PIOS_MPU6050_ACCEL", "group___brain.html#ga98ce1bd77aafaf8d94abb18a7d22a942", null ],
     [ "PIOS_OMIT_TIM2IRQ", "group___brain.html#ga9787c2c824b6c4508c3b5298b40ec1bc", null ],
     [ "PIOS_PERIPHERAL_APB1_CLOCK", "group___brain.html#ga422d4d808a71d4b756877ac8e2d16255", null ],
     [ "PIOS_PERIPHERAL_APB2_CLOCK", "group___brain.html#gaf6410feddf16870e3e65d6a2631f1f51", null ],

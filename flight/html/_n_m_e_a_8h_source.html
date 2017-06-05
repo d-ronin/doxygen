@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4b920a4</span>
+   &#160;<span id="projectnumber">ae64cb0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -133,19 +133,19 @@ $(document).ready(function(){initNavTree('_n_m_e_a_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_g_p_s_8h.html">GPS.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#gab02646e02680b2526a79d3c3e1aa1ff2">   37</a></span>&#160;<span class="preprocessor">#define NMEA_MAX_PACKET_LENGTH          96 // 82 max NMEA msg size plus 12 margin (because some vendors add custom crap) plus CR plus Linefeed</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#gab02646e02680b2526a79d3c3e1aa1ff2">   37</a></span>&#160;<span class="preprocessor">#define NMEA_MAX_PACKET_LENGTH          96 // 82 max NMEA msg size plus 12 margin (because some vendors add custom crap) plus CR plus Linefeed</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="group___g_s_p_module.html#gafb07ad2b755c0395ac8d7f6e86965c44">NMEA_update_position</a>(<span class="keywordtype">char</span> *nmea_sentence, GPSPositionData *GpsData);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="group___g_s_p_module.html#ga5f520a9c350e8e1d1425e655b651cf14">NMEA_checksum</a>(<span class="keywordtype">char</span> *nmea_sentence);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="group___g_s_p_module.html#ga0e248cf833b5f3723e388822f1552aa5">parse_nmea_stream</a>(uint8_t, <span class="keywordtype">char</span> *, GPSPositionData *, <span class="keyword">struct</span> <a class="code" href="struct_g_p_s___r_x___s_t_a_t_s.html">GPS_RX_STATS</a> *);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="group___g_p_s_module.html#gafb07ad2b755c0395ac8d7f6e86965c44">NMEA_update_position</a>(<span class="keywordtype">char</span> *nmea_sentence, GPSPositionData *GpsData);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="group___g_p_s_module.html#ga5f520a9c350e8e1d1425e655b651cf14">NMEA_checksum</a>(<span class="keywordtype">char</span> *nmea_sentence);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="group___g_p_s_module.html#ga0e248cf833b5f3723e388822f1552aa5">parse_nmea_stream</a>(uint8_t, <span class="keywordtype">char</span> *, GPSPositionData *, <span class="keyword">struct</span> <a class="code" href="struct_g_p_s___r_x___s_t_a_t_s.html">GPS_RX_STATS</a> *);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NMEA_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___g_s_p_module_html_ga5f520a9c350e8e1d1425e655b651cf14"><div class="ttname"><a href="group___g_s_p_module.html#ga5f520a9c350e8e1d1425e655b651cf14">NMEA_checksum</a></div><div class="ttdeci">bool NMEA_checksum(char *nmea_sentence)</div></div>
+<div class="ttc" id="group___g_p_s_module_html_ga5f520a9c350e8e1d1425e655b651cf14"><div class="ttname"><a href="group___g_p_s_module.html#ga5f520a9c350e8e1d1425e655b651cf14">NMEA_checksum</a></div><div class="ttdeci">bool NMEA_checksum(char *nmea_sentence)</div></div>
+<div class="ttc" id="group___g_p_s_module_html_gafb07ad2b755c0395ac8d7f6e86965c44"><div class="ttname"><a href="group___g_p_s_module.html#gafb07ad2b755c0395ac8d7f6e86965c44">NMEA_update_position</a></div><div class="ttdeci">bool NMEA_update_position(char *nmea_sentence, GPSPositionData *GpsData)</div></div>
 <div class="ttc" id="_g_p_s_8h_html"><div class="ttname"><a href="_g_p_s_8h.html">GPS.h</a></div><div class="ttdoc">Include file of the GPS module. </div></div>
-<div class="ttc" id="group___g_s_p_module_html_ga0e248cf833b5f3723e388822f1552aa5"><div class="ttname"><a href="group___g_s_p_module.html#ga0e248cf833b5f3723e388822f1552aa5">parse_nmea_stream</a></div><div class="ttdeci">int parse_nmea_stream(uint8_t, char *, GPSPositionData *, struct GPS_RX_STATS *)</div></div>
+<div class="ttc" id="group___g_p_s_module_html_ga0e248cf833b5f3723e388822f1552aa5"><div class="ttname"><a href="group___g_p_s_module.html#ga0e248cf833b5f3723e388822f1552aa5">parse_nmea_stream</a></div><div class="ttdeci">int parse_nmea_stream(uint8_t, char *, GPSPositionData *, struct GPS_RX_STATS *)</div></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html">GPS_RX_STATS</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00044">GPS.h:44</a></div></div>
-<div class="ttc" id="group___g_s_p_module_html_gafb07ad2b755c0395ac8d7f6e86965c44"><div class="ttname"><a href="group___g_s_p_module.html#gafb07ad2b755c0395ac8d7f6e86965c44">NMEA_update_position</a></div><div class="ttdeci">bool NMEA_update_position(char *nmea_sentence, GPSPositionData *GpsData)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -8,5 +8,5 @@ var searchData=
   ['yaw_5fd100',['yaw_D100',['../struct_rotation.html#a8be89cf25915edb4c842055d76cd86c4',1,'Rotation']]],
   ['yaw_5frate',['yaw_rate',['../structmsp__rc__tuning.html#a3a163e1192b9e16cdd6bee082ab1cb97',1,'msp_rc_tuning::yaw_rate()'],['../structmsp__set__rc__tuning.html#a8adef138cb9032a565b98c447c2e1a84',1,'msp_set_rc_tuning::yaw_rate()'],['../msp__messages_8h.html#af22043718bbba992b496d16392642bbb',1,'yaw_rate():&#160;msp_messages.h']]],
   ['ydot',['Ydot',['../struct_w_m_mtype___geo_magnetic_elements.html#a2290a6a91702f831acd13dc8433c816a',1,'WMMtype_GeoMagneticElements']]],
-  ['year',['year',['../group___tau_labs_libraries.html#ga3bae5d542eaff9ba1984e3bf710f56f2',1,'__attribute__::year()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a8ea81fa402795b3daf6ec8bcc9c51eb1',1,'UBX_NAV_TIMEUTC::year()'],['../struct_w_m_mtype___date.html#a82ccdb4608f69fe13225f5add055d3ad',1,'WMMtype_Date::Year()']]]
+  ['year',['Year',['../struct_w_m_mtype___date.html#a82ccdb4608f69fe13225f5add055d3ad',1,'WMMtype_Date::Year()'],['../group___tau_labs_libraries.html#ga3bae5d542eaff9ba1984e3bf710f56f2',1,'__attribute__::year()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a8ea81fa402795b3daf6ec8bcc9c51eb1',1,'UBX_NAV_TIMEUTC::year()']]]
 ];

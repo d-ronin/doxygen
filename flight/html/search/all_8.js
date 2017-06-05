@@ -2,7 +2,7 @@ var searchData=
 [
   ['h',['H',['../struct_w_m_mtype___geo_magnetic_elements.html#ae3c575b310c43b133f83cf6bd3b14cfe',1,'WMMtype_GeoMagneticElements::H()'],['../structuword__t.html#ab56915effa3eeeeca20f0a5d3d0c0146',1,'uword_t::h()'],['../group___i_n_s_g_p_s.html#ga4080397a0d248e4c99d6f284b187f206',1,'H():&#160;insgps14state.c'],['../group___tau_labs_libraries.html#ga4080397a0d248e4c99d6f284b187f206',1,'H():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga4080397a0d248e4c99d6f284b187f206',1,'H():&#160;insgps16state.c']]],
   ['hacc',['hAcc',['../struct_u_b_x___n_a_v___p_o_s_l_l_h.html#af3b4eaeb1feedb8295a519b23a76bf83',1,'UBX_NAV_POSLLH']]],
-  ['hack_5frx_5fpin',['hack_rx_pin',['../group___piko_b_l_x_b_l.html#ga83e928a230b4000fc9eee377b0b9c25e',1,'pios_board.c']]],
+  ['hack_5frx_5fpin',['hack_rx_pin',['../group___piko_b_l_x.html#ga83e928a230b4000fc9eee377b0b9c25e',1,'pios_board.c']]],
   ['hal_5fconf',['HAL_CONF',['../group___h_a_l___c_o_n_f.html',1,'']]],
   ['hal_5flld_5fget_5fcounter_5fvalue',['hal_lld_get_counter_value',['../group__config.html#ga0b58144c58561ea2698a000ee077f15a',1,'hal_lld_get_counter_value():&#160;chconf.h'],['../group__config.html#ga0b58144c58561ea2698a000ee077f15a',1,'hal_lld_get_counter_value():&#160;chconf.h']]],
   ['hal_5fuse_5fadc',['HAL_USE_ADC',['../group___h_a_l___c_o_n_f.html#ga413a1b6c0ca2c9e524df50ceac1275fd',1,'halconf.h']]],
@@ -38,7 +38,7 @@ var searchData=
   ['has_5fbatt',['HAS_BATT',['../group___char_o_s_d.html#ga7db31a0c1517db34f5efde2bcdda5db7',1,'charosd.h']]],
   ['has_5fbattery',['has_battery',['../group___on_screen_display.html#ga41656b37cf2e82a370fc97eda04de8a0',1,'onscreendisplay.c']]],
   ['has_5fcompass',['HAS_COMPASS',['../group___char_o_s_d.html#ga3ede1f63d51d481764b45ca4afb457c7',1,'charosd.h']]],
-  ['has_5fgps',['HAS_GPS',['../group___char_o_s_d.html#gae01cad9c634aac8e56eca5a249f05ed1',1,'HAS_GPS():&#160;charosd.h'],['../group___on_screen_display.html#ga8f00b2fb783933f6963b81b3bc39769a',1,'has_gps():&#160;onscreendisplay.c']]],
+  ['has_5fgps',['has_gps',['../group___on_screen_display.html#ga8f00b2fb783933f6963b81b3bc39769a',1,'has_gps():&#160;onscreendisplay.c'],['../group___char_o_s_d.html#gae01cad9c634aac8e56eca5a249f05ed1',1,'HAS_GPS():&#160;charosd.h']]],
   ['has_5fmag',['has_mag',['../group___on_screen_display.html#ga262760ef6d30ecf31daf5b79c9d10fb4',1,'onscreendisplay.c']]],
   ['has_5fnav',['has_nav',['../group___on_screen_display.html#ga93cae68ddab9b53ebd8f68a815ed919a',1,'has_nav():&#160;onscreendisplay.c'],['../group___char_o_s_d.html#ga6928d85e8dccc600581c933640ef6197',1,'HAS_NAV():&#160;charosd.h']]],
   ['has_5fpitot',['HAS_PITOT',['../group___char_o_s_d.html#ga1fe3963afc68e0de9ef88e80d0159d17',1,'charosd.h']]],

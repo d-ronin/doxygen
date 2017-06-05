@@ -32,7 +32,6 @@ var targets_2brain_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_TBSVTXCONFIG", "targets_2brain_2fw_2pios__config_8h.html#ga7e4d89ee24fb82e2600f9b9f4e1ecf46", null ],
     [ "PIOS_INCLUDE_VIDEO", "targets_2brain_2fw_2pios__config_8h.html#ga2c77278e25177483ce8e0d93d12e67a6", null ],
     [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2brain_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
-    [ "PIOS_MPU6050_ACCEL", "targets_2brain_2fw_2pios__config_8h.html#ga98ce1bd77aafaf8d94abb18a7d22a942", null ],
     [ "PIOS_OMIT_TIM2IRQ", "targets_2brain_2fw_2pios__config_8h.html#ga9787c2c824b6c4508c3b5298b40ec1bc", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2brain_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ],
     [ "PIOS_VIDEO_HSYNC_OFFSET", "targets_2brain_2fw_2pios__config_8h.html#ga491ba150016a5e19a48470a28798bc35", null ],

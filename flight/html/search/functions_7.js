@@ -63,7 +63,7 @@ var searchData=
   ['gps_5fairspeedinitialize',['gps_airspeedInitialize',['../group___airspeed_module.html#ga299e0051e430b00460f5454782c342d7',1,'gps_airspeed.c']]],
   ['gps_5fupdate',['GPS_update',['../group___char_o_s_d.html#gae68a31606483efe6f0e3f2a3ffabc182',1,'panel.c']]],
   ['gpsconfigure',['gpsConfigure',['../group___g_p_s_module.html#ga7be9bd846fadba6003ab5bb8db32a396',1,'GPS.c']]],
-  ['gpsinitialize',['GPSInitialize',['../group___g_p_s_module.html#gaaa9e652434fef66adb2ea7721f3ad640',1,'GPSInitialize(void):&#160;GPS.c'],['../group___g_s_p_module.html#gaaa9e652434fef66adb2ea7721f3ad640',1,'GPSInitialize(void):&#160;GPS.c']]],
+  ['gpsinitialize',['GPSInitialize',['../group___g_p_s_module.html#gaaa9e652434fef66adb2ea7721f3ad640',1,'GPS.c']]],
   ['gpsstart',['GPSStart',['../group___g_p_s_module.html#ga8050cbef253d91ff25e0df5f1633a96f',1,'GPS.c']]],
   ['gpstask',['gpsTask',['../group___g_p_s_module.html#ga440836c49751969959782e09928b7f09',1,'GPS.c']]],
   ['grouper',['grouper',['../namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7',1,'encode_fonts.grouper()'],['../namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee',1,'encode_images.grouper()']]]

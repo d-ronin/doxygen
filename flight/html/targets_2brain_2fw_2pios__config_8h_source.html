@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4b920a4</span>
+   &#160;<span id="projectnumber">ae64cb0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -146,68 +146,67 @@ $(document).ready(function(){initNavTree('targets_2brain_2fw_2pios__config_8h_so
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/* Select the sensors to include */</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___brain.html#ga2cc30288b8783fea8d042a8502af4e70">   48</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MS5611</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___brain.html#ga98ce1bd77aafaf8d94abb18a7d22a942">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_MPU6050_ACCEL</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___brain.html#ga24a6e0d324a2669cacb50de89b60c0a9">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPU</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___brain.html#gab49a0be0e77d9cf169a7db44cc49598a">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPU_MAG</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___brain.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___brain.html#ga221b4e9f9650231f108d4cbb538bf9fd">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___brain.html#gaab84a3ad4a8e40da601259fa963168ff">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ETASV3</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___brain.html#gad2e5852f07d75f8f0720d7f228393da9">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_I2C_ETASV3_ADAPTER pios_i2c_flexi_id</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___brain.html#ga245666dd976970e45363b17f9e55d5bf">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TOLERATE_MISSING_SENSORS</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/* Com systems to include */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___brain.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   59</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___brain.html#gac4bc284e13454f25bd55839f3d9b0a10">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define PIOS_GPS_SETS_HOMELOCATION</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___brain.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   65</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___brain.html#gab5ac6fa2e4da575ee16cb9d069522092">   67</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DMASHOT</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* OSD stuff */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___brain.html#ga52804fcdee0d6927e4c5f45fc74d8b48">   70</a></span>&#160;<span class="preprocessor">#define PIOS_VIDEO_TIM4_COUNTER</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___brain.html#ga2c77278e25177483ce8e0d93d12e67a6">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_VIDEO</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___brain.html#gad5cf9eb7ddd2ec621eba2cb43828557a">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_SPLITBUFFER </span><span class="comment">/* Brain uses 2 1-bit/pixel buffers */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___brain.html#ga491ba150016a5e19a48470a28798bc35">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_HSYNC_OFFSET 15</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___brain.html#ga5852869ec30fde13e651b38fe3aa97c7">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MODULE_FLIGHTSTATS_BUILTIN</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___brain.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___brain.html#gad621ac8b28786134f3c5f833f796201b">   76</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OSD_USE_BRAINFPV_LOGO</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___brain.html#ga9787c2c824b6c4508c3b5298b40ec1bc">   77</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_OMIT_TIM2IRQ</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/* Other Interfaces */</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//#define PIOS_INCLUDE_I2C_ESC</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___brain.html#ga05d142ee6019a1a7637bcd4be7c37f7e">   83</a></span>&#160;<span class="preprocessor">#define PIOS_GPS_SETS_HOMELOCATION      </span><span class="comment">/* GPS options */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___brain.html#gab0a79b712ecb50093fe0129a7468198f">   85</a></span>&#160;<span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___brain.html#gaf4039c0d196379cbfb36489300f94ffe">   87</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group___brain.html#ga9be33d810838161edf9412377209a4cf">  102</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___brain.html#gad45c37db5c6056967bcfcef73128a6ae">  104</a></span>&#160;<span class="preprocessor">#define BRAIN</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___brain.html#ga9c23f32c100ee25c973b1be91fab56dd">  106</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___brain.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">  107</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x1000  </span><span class="comment">/* 4kb */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___brain.html#ga24a6e0d324a2669cacb50de89b60c0a9">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPU</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___brain.html#gab49a0be0e77d9cf169a7db44cc49598a">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MPU_MAG</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___brain.html#ga028c4481fbfca2b3a6ccd75c0aec3098">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___brain.html#ga221b4e9f9650231f108d4cbb538bf9fd">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983_I2C</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___brain.html#gaab84a3ad4a8e40da601259fa963168ff">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ETASV3</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___brain.html#gad2e5852f07d75f8f0720d7f228393da9">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_I2C_ETASV3_ADAPTER pios_i2c_flexi_id</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___brain.html#ga245666dd976970e45363b17f9e55d5bf">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TOLERATE_MISSING_SENSORS</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* Com systems to include */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___brain.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7">   58</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MAVLINK</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___brain.html#gac4bc284e13454f25bd55839f3d9b0a10">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LIGHTTELEMETRY</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define PIOS_GPS_SETS_HOMELOCATION</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* Supported receiver interfaces */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___brain.html#gabad4c3dcdc9a7f45bc23006b85854f0d">   64</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_PWM</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___brain.html#gab5ac6fa2e4da575ee16cb9d069522092">   66</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DMASHOT</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* OSD stuff */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___brain.html#ga52804fcdee0d6927e4c5f45fc74d8b48">   69</a></span>&#160;<span class="preprocessor">#define PIOS_VIDEO_TIM4_COUNTER</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___brain.html#ga2c77278e25177483ce8e0d93d12e67a6">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_VIDEO</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___brain.html#gad5cf9eb7ddd2ec621eba2cb43828557a">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_SPLITBUFFER </span><span class="comment">/* Brain uses 2 1-bit/pixel buffers */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___brain.html#ga491ba150016a5e19a48470a28798bc35">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_VIDEO_HSYNC_OFFSET 15</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___brain.html#ga5852869ec30fde13e651b38fe3aa97c7">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MODULE_FLIGHTSTATS_BUILTIN</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___brain.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___brain.html#gad621ac8b28786134f3c5f833f796201b">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OSD_USE_BRAINFPV_LOGO</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___brain.html#ga9787c2c824b6c4508c3b5298b40ec1bc">   76</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_OMIT_TIM2IRQ</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* Other Interfaces */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//#define PIOS_INCLUDE_I2C_ESC</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___brain.html#ga05d142ee6019a1a7637bcd4be7c37f7e">   82</a></span>&#160;<span class="preprocessor">#define PIOS_GPS_SETS_HOMELOCATION      </span><span class="comment">/* GPS options */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___brain.html#gab0a79b712ecb50093fe0129a7468198f">   84</a></span>&#160;<span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___brain.html#gaf4039c0d196379cbfb36489300f94ffe">   86</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * This has been calibrated 2014/03/01 using chibios @ fbd194c026098076bddd9e45e147828000f39d89</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / xTickCount * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___brain.html#ga9be33d810838161edf9412377209a4cf">  101</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9873737)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group___brain.html#gad45c37db5c6056967bcfcef73128a6ae">  103</a></span>&#160;<span class="preprocessor">#define BRAIN</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___brain.html#ga9c23f32c100ee25c973b1be91fab56dd">  105</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___brain.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">  106</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x1000  </span><span class="comment">/* 4kb */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__flight__config_8h_html"><div class="ttname"><a href="pios__flight__config_8h.html">pios_flight_config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

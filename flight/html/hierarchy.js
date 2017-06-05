@@ -163,8 +163,6 @@ var hierarchy =
     [ "pios_internal_adc_cfg", "structpios__internal__adc__cfg.html", null ],
     [ "pios_internal_adc_simple_cfg", "structpios__internal__adc__simple__cfg.html", null ],
     [ "pios_lis3mdl_cfg", "structpios__lis3mdl__cfg.html", null ],
-    [ "pios_mpu60x0_cfg", "structpios__mpu60x0__cfg.html", null ],
-    [ "pios_mpu60x0_data", "structpios__mpu60x0__data.html", null ],
     [ "pios_mpu_cfg", "structpios__mpu__cfg.html", null ],
     [ "pios_ms5611_cfg", "structpios__ms5611__cfg.html", null ],
     [ "pios_mutex", "structpios__mutex.html", null ],

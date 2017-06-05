@@ -6,6 +6,7 @@ var group___targets =
     [ "AIRDTF DTFc", "group___d_t_fc.html", "group___d_t_fc" ],
     [ "FlyingPi IO Hat", "group___flying_p_i_o.html", "group___flying_p_i_o" ],
     [ "Lumenier LUX", "group___l_u_x.html", "group___l_u_x" ],
+    [ "PikoBLX", "group___piko_b_l_x.html", "group___piko_b_l_x" ],
     [ "PipXtreme Radio", "group___pip_x.html", "group___pip_x" ],
     [ "PlayUAV OSD", "group___play_u_a_v_o_s_d.html", "group___play_u_a_v_o_s_d" ],
     [ "Quantec Quanton", "group___quanton.html", "group___quanton" ],

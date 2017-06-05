@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4b920a4</span>
+   &#160;<span id="projectnumber">ae64cb0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,11 +135,11 @@ $(document).ready(function(){initNavTree('_g_p_s_8h_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;gpstime.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;ubloxinfo.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#ga50defead334337d91f632b36aa071214">   38</a></span>&#160;<span class="preprocessor">#define NO_PARSER       -3 // no parser available</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#ga5bded18aa62ee8b67d01b3ca603eeb44">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_OVERRUN  -2 // message buffer overrun before completing the message</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#ga2d62f8198bfb0f942de4cddd2d54c36c">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_ERROR    -1 // message unparsable by this parser</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#ga95584ed603ef2745ad1ca0cb0e295e0b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_INCOMPLETE       0 // parser needs more data to complete the message</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___g_s_p_module.html#ga07fc45aaedffb1e836fb2d3eff0a3a3a">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_COMPLETE 1 // parser has received a complete message and finished processing</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#ga50defead334337d91f632b36aa071214">   38</a></span>&#160;<span class="preprocessor">#define NO_PARSER       -3 // no parser available</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#ga5bded18aa62ee8b67d01b3ca603eeb44">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_OVERRUN  -2 // message buffer overrun before completing the message</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#ga2d62f8198bfb0f942de4cddd2d54c36c">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_ERROR    -1 // message unparsable by this parser</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#ga95584ed603ef2745ad1ca0cb0e295e0b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_INCOMPLETE       0 // parser needs more data to complete the message</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___g_p_s_module.html#ga07fc45aaedffb1e836fb2d3eff0a3a3a">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARSER_COMPLETE 1 // parser has received a complete message and finished processing</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_g_p_s___r_x___s_t_a_t_s.html">   44</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_g_p_s___r_x___s_t_a_t_s.html">GPS_RX_STATS</a> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_g_p_s___r_x___s_t_a_t_s.html#a2cc140780bc89226502f3903c38c8a30">   45</a></span>&#160;        uint16_t <a class="code" href="struct_g_p_s___r_x___s_t_a_t_s.html#a2cc140780bc89226502f3903c38c8a30">gpsRxReceived</a>;</div>
@@ -148,15 +148,15 @@ $(document).ready(function(){initNavTree('_g_p_s_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_g_p_s___r_x___s_t_a_t_s.html#a89bf9e59acfe33d00d4a319ec4f84cd7">   48</a></span>&#160;        uint16_t <a class="code" href="struct_g_p_s___r_x___s_t_a_t_s.html#a89bf9e59acfe33d00d4a319ec4f84cd7">gpsRxParserError</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;int32_t <a class="code" href="group___g_s_p_module.html#gaaa9e652434fef66adb2ea7721f3ad640">GPSInitialize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;int32_t <a class="code" href="group___g_p_s_module.html#gaaa9e652434fef66adb2ea7721f3ad640">GPSInitialize</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // GPS_H</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html_a2cc140780bc89226502f3903c38c8a30"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html#a2cc140780bc89226502f3903c38c8a30">GPS_RX_STATS::gpsRxReceived</a></div><div class="ttdeci">uint16_t gpsRxReceived</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00045">GPS.h:45</a></div></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html_a1a89019cb1163e32575738685ef79317"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html#a1a89019cb1163e32575738685ef79317">GPS_RX_STATS::gpsRxChkSumError</a></div><div class="ttdeci">uint16_t gpsRxChkSumError</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00046">GPS.h:46</a></div></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html_a89bf9e59acfe33d00d4a319ec4f84cd7"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html#a89bf9e59acfe33d00d4a319ec4f84cd7">GPS_RX_STATS::gpsRxParserError</a></div><div class="ttdeci">uint16_t gpsRxParserError</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00048">GPS.h:48</a></div></div>
-<div class="ttc" id="group___g_s_p_module_html_gaaa9e652434fef66adb2ea7721f3ad640"><div class="ttname"><a href="group___g_s_p_module.html#gaaa9e652434fef66adb2ea7721f3ad640">GPSInitialize</a></div><div class="ttdeci">int32_t GPSInitialize(void)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8c_source.html#l00115">GPS.c:115</a></div></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html_a1820743f7205c836af17a100834732b4"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html#a1820743f7205c836af17a100834732b4">GPS_RX_STATS::gpsRxOverflow</a></div><div class="ttdeci">uint16_t gpsRxOverflow</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00047">GPS.h:47</a></div></div>
+<div class="ttc" id="group___g_p_s_module_html_gaaa9e652434fef66adb2ea7721f3ad640"><div class="ttname"><a href="group___g_p_s_module.html#gaaa9e652434fef66adb2ea7721f3ad640">GPSInitialize</a></div><div class="ttdeci">int32_t GPSInitialize(void)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8c_source.html#l00115">GPS.c:115</a></div></div>
 <div class="ttc" id="struct_g_p_s___r_x___s_t_a_t_s_html"><div class="ttname"><a href="struct_g_p_s___r_x___s_t_a_t_s.html">GPS_RX_STATS</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_p_s_8h_source.html#l00044">GPS.h:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
