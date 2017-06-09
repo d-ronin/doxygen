@@ -75,6 +75,7 @@ var searchData=
   ['gyro_5fcoeff_5fy',['gyro_coeff_y',['../group___sensors.html#ga670dd870c2d79522f3686b1af18a02d7',1,'sensors.c']]],
   ['gyro_5fcoeff_5fz',['gyro_coeff_z',['../group___sensors.html#ga417ca983e1a0bceb407a7a33906bbd28',1,'sensors.c']]],
   ['gyro_5ffilter',['gyro_filter',['../group___sensors.html#ga1f3e9805b24998a48de9a217399ffd19',1,'sensors.c']]],
+  ['gyro_5fqueue',['gyro_queue',['../structflightgear__dev.html#a39679f12069d9b0bd3756ebb6a0c2ddf',1,'flightgear_dev']]],
   ['gyro_5frange',['gyro_range',['../group___p_i_o_s___b_m_i160.html#ga1d68117b602d0f521e6282122756162d',1,'pios_bmi160_cfg']]],
   ['gyro_5fscale',['gyro_scale',['../group___sensors.html#gaf98e8215f830899834524af0097cf760',1,'sensors.c']]],
   ['gyro_5ftemp_5fbias',['gyro_temp_bias',['../group___sensors.html#gae0a0b59c94f51d0ce6a95a8b2cf96923',1,'sensors.c']]],

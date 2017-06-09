@@ -7,7 +7,7 @@ var serial__4way_8h =
     [ "imSK", "serial__4way_8h.html#a0644f1121715e03abce3dc3cf6fa3450", null ],
     [ "USE_SERIAL_4WAY_BLHELI_BOOTLOADER", "serial__4way_8h.html#a1570ef030af710b938185adbb8de586a", null ],
     [ "USE_SERIAL_4WAY_SK_BOOTLOADER", "serial__4way_8h.html#a36231bb94ed3926e19ea6a54ecc93a9d", null ],
-    [ "__attribute__", "serial__4way_8h.html#ga24a97e0513a5c82f8c97b813eb5dadb7", null ],
+    [ "__attribute__", "serial__4way_8h.html#ga9dbba32c19b1cf3715ffea22acbeecf9", null ],
     [ "esc4wayInit", "serial__4way_8h.html#a9a7b80b92c009ea55c30c89728922542", null ],
     [ "esc4wayProcess", "serial__4way_8h.html#aba1d717eb66d5efbd9a22b1b89285850", null ],
     [ "esc4wayRelease", "serial__4way_8h.html#ad90637a3cd69cdf763be0e8f16683d91", null ],

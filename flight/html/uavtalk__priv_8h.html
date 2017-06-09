@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">507bd7b</span>
+   &#160;<span id="projectnumber">a56764a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -109,7 +109,9 @@ $(document).ready(function(){initNavTree('uavtalk__priv_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">uavtalk_priv.h File Reference<div class="ingroups"><a class="el" href="group___u_a_v_talk.html">UAVTalk implementation</a></div></div>  </div>
 </div><!--header-->
@@ -130,6 +132,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuavtalk__max__header.html">uavtalk_max_header</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full UAVTalk header with an instance field.  <a href="structuavtalk__max__header.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfilereq__data.html">filereq_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfileresp__data.html">fileresp_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_input_processor.html">UAVTalkInputProcessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State information for the UAVTalk parser.  <a href="struct_u_a_v_talk_input_processor.html#details">More...</a><br/></td></tr>
@@ -160,7 +166,7 @@ Macros</h2></td></tr>
 <tr class="separator:gac1b331a4920bdbb61309dda4cd5d285b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5bfcc6866e383a8855278d7abfee6af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga5bfcc6866e383a8855278d7abfee6af7">UAVTALK_SYNC_VAL</a>&#160;&#160;&#160;0x3C</td></tr>
 <tr class="separator:ga5bfcc6866e383a8855278d7abfee6af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92bab8b639dcfa69cd9869d7988050e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga92bab8b639dcfa69cd9869d7988050e8">UAVTALK_TYPE_MASK</a>&#160;&#160;&#160;0x78</td></tr>
+<tr class="memitem:ga92bab8b639dcfa69cd9869d7988050e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga92bab8b639dcfa69cd9869d7988050e8">UAVTALK_TYPE_MASK</a>&#160;&#160;&#160;0x70</td></tr>
 <tr class="separator:ga92bab8b639dcfa69cd9869d7988050e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd0e3ec3469d823c6cd09501315ca014"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a>&#160;&#160;&#160;0x20</td></tr>
 <tr class="separator:gabd0e3ec3469d823c6cd09501315ca014"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,12 +182,16 @@ Macros</h2></td></tr>
 <tr class="separator:ga81d89ae412e4ee87160809b7fce1c5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadea3f5fac779f80da5688fb8288e1955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gadea3f5fac779f80da5688fb8288e1955">UAVTALK_TYPE_NACK</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x04)</td></tr>
 <tr class="separator:gadea3f5fac779f80da5688fb8288e1955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga090f1f56b46dc3e810621c4519cc9003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga090f1f56b46dc3e810621c4519cc9003">UAVTALK_TYPE_FILEREQ</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x10)</td></tr>
+<tr class="memitem:ga090f1f56b46dc3e810621c4519cc9003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga090f1f56b46dc3e810621c4519cc9003">UAVTALK_TYPE_FILEREQ</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x08)</td></tr>
 <tr class="separator:ga090f1f56b46dc3e810621c4519cc9003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae93b742d51c16d61c62ada84510ed63a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gae93b742d51c16d61c62ada84510ed63a">UAVTALK_TYPE_FILEDATA</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x11)</td></tr>
+<tr class="memitem:gae93b742d51c16d61c62ada84510ed63a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gae93b742d51c16d61c62ada84510ed63a">UAVTALK_TYPE_FILEDATA</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gabd0e3ec3469d823c6cd09501315ca014">UAVTALK_TYPE_VER</a> | 0x09)</td></tr>
 <tr class="separator:gae93b742d51c16d61c62ada84510ed63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga77a6cac1607c104c038f12326bb40efd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga77a6cac1607c104c038f12326bb40efd">UAVTALK_TYPE_OBJ_TS</a>&#160;&#160;&#160;(<a class="el" href="group___u_a_v_talk.html#gaad238b09ddc9b758c5a7c8fa725512b7">UAVTALK_TIMESTAMPED</a> | <a class="el" href="group___u_a_v_talk.html#gaad22b1c0aa6e26566528e38c5f0a9f26">UAVTALK_TYPE_OBJ</a>)</td></tr>
 <tr class="separator:ga77a6cac1607c104c038f12326bb40efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f1f0adbef89775942c129fb6b8cb438"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga1f1f0adbef89775942c129fb6b8cb438">UAVTALK_FILEDATA_EOF</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga1f1f0adbef89775942c129fb6b8cb438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad7747956e0216d5f12db575a1958f2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaad7747956e0216d5f12db575a1958f2a">UAVTALK_FILEDATA_LAST</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gaad7747956e0216d5f12db575a1958f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3838d0526a7e03620a259b54e106d2ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga3838d0526a7e03620a259b54e106d2ef">CHECKCONHANDLE</a>(handle, variable, failcommand)</td></tr>
 <tr class="separator:ga3838d0526a7e03620a259b54e106d2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -189,6 +199,20 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:gad5ae4f5e5aa19ffb6f8e688a448e9618"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gad5ae4f5e5aa19ffb6f8e688a448e9618">uavtalk_checksum</a></td></tr>
 <tr class="separator:gad5ae4f5e5aa19ffb6f8e688a448e9618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga9dbba32c19b1cf3715ffea22acbeecf9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structfilereq__data.html">filereq_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga9dbba32c19b1cf3715ffea22acbeecf9">__attribute__</a> ((packed))</td></tr>
+<tr class="separator:ga9dbba32c19b1cf3715ffea22acbeecf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga043afd6646bf00b1155399e12818f798"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a></td></tr>
+<tr class="separator:ga043afd6646bf00b1155399e12818f798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894bdfa2d603d8343f8ef01dda6fcd23"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23">offset</a></td></tr>
+<tr class="separator:a894bdfa2d603d8343f8ef01dda6fcd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2585d779da0ab21273a8d92de9a0ebe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uavtalk__priv_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></td></tr>
+<tr class="separator:aa2585d779da0ab21273a8d92de9a0ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Private include file of the UAVTalk library. </p>
@@ -198,7 +222,36 @@ Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 20
 <dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
 
 <p>Definition in file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa2585d779da0ab21273a8d92de9a0ebe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00050">50</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a894bdfa2d603d8343f8ef01dda6fcd23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavtalk__priv_8h_source.html#l00049">49</a> of file <a class="el" href="uavtalk__priv_8h_source.html">uavtalk_priv.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

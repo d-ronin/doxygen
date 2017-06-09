@@ -171,6 +171,8 @@ var searchData=
   ['pios_5fflashfs_5fobjdelete',['PIOS_FLASHFS_ObjDelete',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga93a9e7b90c573b3784dd52781bf11e93',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5fobjload',['PIOS_FLASHFS_ObjLoad',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga159a3e2681cd03a6512dd59348c8a764',1,'pios_flashfs_logfs.c']]],
   ['pios_5fflashfs_5fobjsave',['PIOS_FLASHFS_ObjSave',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga2566e681162e422c1457f10146eda492',1,'pios_flashfs_logfs.c']]],
+  ['pios_5fflightgear_5finit',['PIOS_FLIGHTGEAR_Init',['../group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html#ga8f27923734cafdfda2dccfe27c8bc4ca',1,'PIOS_FLIGHTGEAR_Init(flightgear_dev_t *dev, uint16_t port):&#160;pios_flightgear.c'],['../group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html#ga8f27923734cafdfda2dccfe27c8bc4ca',1,'PIOS_FLIGHTGEAR_Init(flightgear_dev_t *dev, uint16_t port):&#160;pios_flightgear.c']]],
+  ['pios_5fflightgear_5frxtask',['PIOS_FLIGHTGEAR_RxTask',['../group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html#gaf608236653adf09c6a9238e8df3562bd',1,'pios_flightgear.c']]],
   ['pios_5fflyingpio_5freceiver_5fget',['PIOS_FLYINGPIO_Receiver_Get',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gac6cfb5abc02a8960be7c5c92096ca3cf',1,'pios_flyingpio.h']]],
   ['pios_5fflyingpio_5fspi_5finit',['PIOS_FLYINGPIO_SPI_Init',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#ga57c25a692233d2bed4b473259bc57cbb',1,'pios_flyingpio.h']]],
   ['pios_5ffree',['PIOS_free',['../group___p_i_o_s___h_e_a_p.html#ga28f859a3f736ce01c398002505b53b76',1,'pios_heap.c']]],

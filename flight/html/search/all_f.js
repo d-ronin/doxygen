@@ -29,7 +29,7 @@ var searchData=
   ['objlist',['objList',['../group___system_module.html#gaff29ccca83c4f02fbcb3e824211744ed',1,'systemmod.c']]],
   ['objsingleinstancedataoffset',['ObjSingleInstanceDataOffset',['../group___u_a_v_object_handling.html#ga8569271d8e137f2080bb272319a0128d',1,'uavobjectmanager.c']]],
   ['odr',['odr',['../group___p_i_o_s___b_m_i160.html#ga73ad0a4412b41d200b67f93d4951f773',1,'pios_bmi160_cfg']]],
-  ['offset',['offset',['../group___common_f1.html#gaa9fff43968831437a312428836cab362',1,'op_dfu.c']]],
+  ['offset',['offset',['../structfilereq__data.html#a84440ce40c7be2adfb273f3739be25d8',1,'filereq_data::offset()'],['../structfileresp__data.html#a619a30889d50d95838c9dd018fd52988',1,'fileresp_data::offset()'],['../uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23',1,'offset():&#160;uavtalk_priv.h'],['../group___common_f1.html#gaa9fff43968831437a312428836cab362',1,'offset():&#160;op_dfu.c']]],
   ['offset_5faltitude',['OFFSET_ALTITUDE',['../group___u_a_v_o_ho_t_t_bridge.html#ga2c1689546ba984eac529c5320535287f',1,'uavohottbridge.h']]],
   ['offset_5fclimbrate',['OFFSET_CLIMBRATE',['../group___u_a_v_o_ho_t_t_bridge.html#ga7f154765dcc50ab6ca1ede80cd370ea5',1,'uavohottbridge.h']]],
   ['offset_5fclimbrate3s',['OFFSET_CLIMBRATE3S',['../group___u_a_v_o_ho_t_t_bridge.html#gaed1f828e72a6e94eb42e25a5b27d1a93',1,'uavohottbridge.h']]],

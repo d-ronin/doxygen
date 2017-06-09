@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">507bd7b</span>
+   &#160;<span id="projectnumber">a56764a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -133,6 +133,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga25223a323d419d774cd6c4687d197e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22fa48eedc6915ae64a1bf8adbfe3066"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a> )(void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td></tr>
 <tr class="separator:ga22fa48eedc6915ae64a1bf8adbfe3066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90f660f03d86354203453fb06728611a"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga90f660f03d86354203453fb06728611a">UAVTalkFileCb</a> )(void *ctx, uint8_t *buf, uint32_t <a class="el" href="pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc">file_id</a>, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint32_t len)</td></tr>
+<tr class="separator:ga90f660f03d86354203453fb06728611a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeff1721eaebd4ab306057b4017f23f36"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a></td></tr>
 <tr class="separator:gaeff1721eaebd4ab306057b4017f23f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -156,8 +158,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3f0aa57dfb6e774da5c09d796376ddc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga3f0aa57dfb6e774da5c09d796376ddc8">UAVTalkInitialize</a> (void *ctx, <a class="el" href="group___u_a_v_talk.html#ga25223a323d419d774cd6c4687d197e90">UAVTalkOutputCb</a> outputStream, <a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a> <a class="el" href="group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78">ackCallback</a>)</td></tr>
-<tr class="separator:ga3f0aa57dfb6e774da5c09d796376ddc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b29e7c3d3478fdd2cbd0cdaa4285fbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#ga5b29e7c3d3478fdd2cbd0cdaa4285fbb">UAVTalkInitialize</a> (void *ctx, <a class="el" href="group___u_a_v_talk.html#ga25223a323d419d774cd6c4687d197e90">UAVTalkOutputCb</a> outputStream, <a class="el" href="group___u_a_v_talk.html#ga22fa48eedc6915ae64a1bf8adbfe3066">UAVTalkAckCb</a> <a class="el" href="group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78">ackCallback</a>, <a class="el" href="group___u_a_v_talk.html#ga90f660f03d86354203453fb06728611a">UAVTalkFileCb</a> fileCallback)</td></tr>
+<tr class="separator:ga5b29e7c3d3478fdd2cbd0cdaa4285fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0029ef4e286bd483bb24d3aff89c371"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gaf0029ef4e286bd483bb24d3aff89c371">UAVTalkSendObject</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connection, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId, uint8_t acked)</td></tr>
 <tr class="separator:gaf0029ef4e286bd483bb24d3aff89c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc0cb5c44deb938d85504b133882407a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk.html#gacc0cb5c44deb938d85504b133882407a">UAVTalkSendObjectTimestamped</a> (<a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> connectionHandle, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, uint16_t instId)</td></tr>

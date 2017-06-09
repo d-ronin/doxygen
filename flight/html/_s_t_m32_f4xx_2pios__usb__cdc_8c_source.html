@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">507bd7b</span>
+   &#160;<span id="projectnumber">a56764a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__usb__cdc_8c_sourc
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> usb_ctrl_if_enabled;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">bool</span> usb_data_if_enabled;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        uint8_t rx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">PIOS_USB_BOARD_CDC_DATA_LENGTH</a>] <a class="code" href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        uint8_t rx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">PIOS_USB_BOARD_CDC_DATA_LENGTH</a>] <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">volatile</span> <span class="keywordtype">bool</span> rx_active;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">/*</span></div>
@@ -177,10 +177,10 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__usb__cdc_8c_sourc
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">         * that are strictly &lt; maxPacketSize for this interface which means we never have</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">         * to bother with zero length packets (ZLP).</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        uint8_t tx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">PIOS_USB_BOARD_CDC_DATA_LENGTH</a> - 1] <a class="code" href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        uint8_t tx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga71c1891d07024986e5a249d991e1867b">PIOS_USB_BOARD_CDC_DATA_LENGTH</a> - 1] <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">volatile</span> <span class="keywordtype">bool</span> tx_active;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        uint8_t ctrl_tx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">PIOS_USB_BOARD_CDC_MGMT_LENGTH</a>] <a class="code" href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        uint8_t ctrl_tx_packet_buffer[<a class="code" href="group___p_i_o_s___u_s_b.html#ga76a98428f2f7cad1b787b6f390781738">PIOS_USB_BOARD_CDC_MGMT_LENGTH</a>] <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a> ((aligned(4)));</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        uint32_t rx_dropped;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        uint32_t rx_oversize;</div>
@@ -691,7 +691,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__usb__cdc_8c_sourc
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gaff9ee0044c6cb131b2908356adc37dff"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gaff9ee0044c6cb131b2908356adc37dff">USB_REQ_TYPE_CLASS</a></div><div class="ttdeci">#define USB_REQ_TYPE_CLASS</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00229">pios_usb_defs.h:229</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gga656cd9a1af7abe6ec812f6ee50b223f9a1af0d8916fca29961f41fb7433126527"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gga656cd9a1af7abe6ec812f6ee50b223f9a1af0d8916fca29961f41fb7433126527">USB_REQ_SET_INTERFACE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00250">pios_usb_defs.h:250</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_gga656cd9a1af7abe6ec812f6ee50b223f9a68374dc6cca8653dcd52953ba9f80b1c"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#gga656cd9a1af7abe6ec812f6ee50b223f9a68374dc6cca8653dcd52953ba9f80b1c">USB_REQ_GET_INTERFACE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00249">pios_usb_defs.h:249</a></div></div>
-<div class="ttc" id="group___airspeed_module_html_ga043afd6646bf00b1155399e12818f798"><div class="ttname"><a href="group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a></div><div class="ttdeci">struct GPSGlobals __attribute__</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way_8h_source.html#l00043">serial_4way.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b___d_e_f_s_html_ga1f14de3d7b02c5e6ba04cf9334e0d259"><div class="ttname"><a href="group___p_i_o_s___u_s_b___d_e_f_s.html#ga1f14de3d7b02c5e6ba04cf9334e0d259">usb_setup_request::wValue</a></div><div class="ttdeci">uint16_t wValue</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__defs_8h_source.html#l00223">pios_usb_defs.h:223</a></div></div>
 <div class="ttc" id="pios__usbhook_8h_html"><div class="ttname"><a href="pios__usbhook_8h.html">pios_usbhook.h</a></div><div class="ttdoc">APIs for PIOS_USBHOOK layer. </div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_ga1fdfbec3bfa53133f72ac8acff597415"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga1fdfbec3bfa53133f72ac8acff597415">PIOS_USBHOOK_CtrlRx</a></div><div class="ttdeci">void PIOS_USBHOOK_CtrlRx(uint8_t *buf, uint16_t len)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__usbhook_8c_source.html#l00206">pios_usbhook.c:206</a></div></div>
@@ -737,6 +736,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__usb__cdc_8c_sourc
 <div class="ttc" id="structpios__com__driver_html_af7137074ee2ca2426304c94b0177cb4d"><div class="ttname"><a href="structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d">pios_com_driver::tx_start</a></div><div class="ttdeci">void(* tx_start)(uintptr_t id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00045">pios_com.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_gacc76138452196cc99db8c0fbcb1d15f8"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#gacc76138452196cc99db8c0fbcb1d15f8">PIOS_USBHOOK_RegisterIfOps</a></div><div class="ttdeci">void PIOS_USBHOOK_RegisterIfOps(uint8_t ifnum, struct pios_usb_ifops *ifops, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__usbhook_8c_source.html#l00117">pios_usbhook.c:117</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga528568aa0f3011cafec5c453fc030e15"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a></div><div class="ttdeci">uint16_t(* pios_com_callback)(uintptr_t context, uint8_t *buf, uint16_t buf_len, uint16_t *headroom, bool *task_woken)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00041">pios_com.h:41</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_html_ga043afd6646bf00b1155399e12818f798"><div class="ttname"><a href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a></div><div class="ttdeci">typedef __attribute__</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way_8h_source.html#l00043">serial_4way.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

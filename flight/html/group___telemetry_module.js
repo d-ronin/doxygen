@@ -33,6 +33,7 @@ var group___telemetry_module =
     [ "ackHousekeeping", "group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58", null ],
     [ "ackResendOrTimeout", "group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644", null ],
     [ "addAckPending", "group___telemetry_module.html#gac9daba3ec53ac8875ed5bdda681b44ba", null ],
+    [ "fileReqCallback", "group___telemetry_module.html#ga449e738a53e7d2140ef399bd51e2511d", null ],
     [ "gcsTelemetryStatsUpdated", "group___telemetry_module.html#ga01dd0293725feb6c800b12dc50231a4e", null ],
     [ "gcsTelemetryStatsUpdated", "group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb", null ],
     [ "getComPort", "group___telemetry_module.html#ga079a96905407622d10643ce69c08b288", null ],

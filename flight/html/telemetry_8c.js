@@ -17,6 +17,7 @@ var telemetry_8c =
     [ "ackHousekeeping", "telemetry_8c.html#ga659839ec018f0e5accebd2ae20ef5e58", null ],
     [ "ackResendOrTimeout", "telemetry_8c.html#ga4ab4c9d78fdc236b072a3857f7fb3644", null ],
     [ "addAckPending", "telemetry_8c.html#gac9daba3ec53ac8875ed5bdda681b44ba", null ],
+    [ "fileReqCallback", "telemetry_8c.html#ga449e738a53e7d2140ef399bd51e2511d", null ],
     [ "gcsTelemetryStatsUpdated", "telemetry_8c.html#ga01dd0293725feb6c800b12dc50231a4e", null ],
     [ "gcsTelemetryStatsUpdated", "telemetry_8c.html#gafe9341b34dfb706c0f819455fd6445bb", null ],
     [ "getComPort", "telemetry_8c.html#ga079a96905407622d10643ce69c08b288", null ],

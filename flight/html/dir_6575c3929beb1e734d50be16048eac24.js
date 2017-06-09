@@ -6,6 +6,7 @@ var dir_6575c3929beb1e734d50be16048eac24 =
     [ "pios_debug.c", "posix_2pios__debug_8c.html", "posix_2pios__debug_8c" ],
     [ "pios_delay.c", "posix_2pios__delay_8c.html", "posix_2pios__delay_8c" ],
     [ "pios_fileout.c", "pios__fileout_8c.html", "pios__fileout_8c" ],
+    [ "pios_flightgear.c", "pios__flightgear_8c.html", "pios__flightgear_8c" ],
     [ "pios_flyingpio.c", "pios__flyingpio_8c.html", null ],
     [ "pios_gcsrcvr.c", "posix_2pios__gcsrcvr_8c.html", null ],
     [ "pios_heap.c", "_pi_o_s_2posix_2pios__heap_8c.html", "_pi_o_s_2posix_2pios__heap_8c" ],

@@ -2,7 +2,7 @@ var pios__board__info_8h =
 [
     [ "pios_board_info", "structpios__board__info.html", "structpios__board__info" ],
     [ "PIOS_BOARD_INFO_BLOB_MAGIC", "pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938", null ],
-    [ "__attribute__", "pios__board__info_8h.html#ga24a97e0513a5c82f8c97b813eb5dadb7", null ],
+    [ "__attribute__", "pios__board__info_8h.html#ga9dbba32c19b1cf3715ffea22acbeecf9", null ],
     [ "bl_rev", "pios__board__info_8h.html#a63ca217e7d9da1bf80b07a1cf62d5236", null ],
     [ "board_rev", "pios__board__info_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37", null ],
     [ "board_type", "pios__board__info_8h.html#ade96ae28594df4a0c9c2e46805262352", null ],

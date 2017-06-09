@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">507bd7b</span>
+   &#160;<span id="projectnumber">a56764a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -457,7 +457,7 @@ $(document).ready(function(){initNavTree('actuator_8c_source.html','');});
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        }</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordtype">float</span> gain = 1.0f;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a> = 0.0f;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23">offset</a> = 0.0f;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">/* This is a little dubious.  Scale down command ranges to</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">         * fit.  It may cause some cross-axis coupling, though</span></div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('actuator_8c_source.html','');});
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                        motor_vect[ct] = 0;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                                }</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                motor_vect[ct] = motor_vect[ct] * gain + <a class="code" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                motor_vect[ct] = motor_vect[ct] * gain + <a class="code" href="uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23">offset</a>;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                <span class="keywordflow">if</span> (motor_vect[ct] &gt; 0) {</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                        <span class="comment">// Apply curve fitting, mapping the input to the propeller output.</span></div>
@@ -883,6 +883,7 @@ $(document).ready(function(){initNavTree('actuator_8c_source.html','');});
 <div class="ttc" id="group___actuator_module_html_ga6e58deb47f86039abf936ab1c6f4aae9"><div class="ttname"><a href="group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9">MODULE_HIPRI_INITCALL</a></div><div class="ttdeci">MODULE_HIPRI_INITCALL(ActuatorInitialize, ActuatorStart)</div></div>
 <div class="ttc" id="group___actuator_module_html_ga6e0da0de9f6a7a76df02eccd7853c9a4"><div class="ttname"><a href="group___actuator_module.html#ga6e0da0de9f6a7a76df02eccd7853c9a4">post_process_scale_and_commit</a></div><div class="ttdeci">static void post_process_scale_and_commit(float *motor_vect, float dT, bool armed, bool spin_while_armed, bool stabilize_now)</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00314">actuator.c:314</a></div></div>
 <div class="ttc" id="group___u_a_v_object_handling_html_ga3b833197442a5ead219180543075e2c0"><div class="ttname"><a href="group___u_a_v_object_handling.html#ga3b833197442a5ead219180543075e2c0">UAVObjCbSetFlag</a></div><div class="ttdeci">void UAVObjCbSetFlag(UAVObjEvent *objEv, void *ctx, void *obj, int len)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8c_source.html#l01558">uavobjectmanager.c:1558</a></div></div>
+<div class="ttc" id="uavtalk__priv_8h_html_a894bdfa2d603d8343f8ef01dda6fcd23"><div class="ttname"><a href="uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23">offset</a></div><div class="ttdeci">uint32_t offset</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk__priv_8h_source.html#l00049">uavtalk_priv.h:49</a></div></div>
 <div class="ttc" id="group___actuator_module_html_ga85f9c2a5a055c0292a43f7bf29f09d94"><div class="ttname"><a href="group___actuator_module.html#ga85f9c2a5a055c0292a43f7bf29f09d94">throt_curve</a></div><div class="ttdeci">static float throt_curve(const float input, const float *curve, uint8_t num_points)</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00702">actuator.c:702</a></div></div>
 <div class="ttc" id="pios__crossfire_8h_html_a1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00050">pios_crossfire.h:50</a></div></div>
 <div class="ttc" id="group___actuator_module_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00101">actuator.c:101</a></div></div>
@@ -894,7 +895,6 @@ $(document).ready(function(){initNavTree('actuator_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_gadb7be3564a51fca2f4044daa877ea7fc"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#gadb7be3564a51fca2f4044daa877ea7fc">PIOS_SERVO_MAX_BANKS</a></div><div class="ttdeci">#define PIOS_SERVO_MAX_BANKS</div><div class="ttdef"><b>Definition:</b> <a href="pios__servo_8h_source.html#l00035">pios_servo.h:35</a></div></div>
 <div class="ttc" id="structpios__queue_html"><div class="ttname"><a href="structpios__queue.html">pios_queue</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00034">pios_queue.c:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga7b02637900723907df4c7b5aad399e41"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga7b02637900723907df4c7b5aad399e41">PIOS_Servo_Update</a></div><div class="ttdeci">void PIOS_Servo_Update(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00810">pios_servo.c:810</a></div></div>
-<div class="ttc" id="group___common_f1_html_gaa9fff43968831437a312428836cab362"><div class="ttname"><a href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a></div><div class="ttdeci">uint8_t offset</div><div class="ttdef"><b>Definition:</b> <a href="op__dfu_8c_source.html#l00064">op_dfu.c:64</a></div></div>
 <div class="ttc" id="group___actuator_module_html_ga99a334ed9cdb3e7a7c694d5519d08d30"><div class="ttname"><a href="group___actuator_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></div><div class="ttdeci">static struct pios_queue * queue</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00081">actuator.c:81</a></div></div>
 <div class="ttc" id="group___actuator_module_html_gacde7d1a4e7c4969a5b11e37315053034"><div class="ttname"><a href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">ActuatorStart</a></div><div class="ttdeci">int32_t ActuatorStart()</div><div class="ttdoc">Module initialization. </div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00125">actuator.c:125</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga937c2d5c6fe809078b7ba7501d023b1c"><div class="ttname"><a href="group___tau_labs_math.html#ga937c2d5c6fe809078b7ba7501d023b1c">matrix_mul_check</a></div><div class="ttdeci">#define matrix_mul_check(a, b, out, arows, acolsbrows, bcols)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00445">misc_math.h:445</a></div></div>

@@ -216,6 +216,7 @@ var searchData=
   ['inv',['inv',['../structpios__sbus__cfg.html#af25f459d6167f8ba7a038ae53b458c46',1,'pios_sbus_cfg']]],
   ['invalid',['INVALID',['../classpx__uploader_1_1uploader.html#a16fc88cf15c555a90f979427a01cd78a',1,'px_uploader::uploader']]],
   ['invalid_5fpreamble_5fdetected',['invalid_preamble_detected',['../unionrfm22b__int__status__2.html#a92319d2a39179c31ef4ceaff14451baf',1,'rfm22b_int_status_2']]],
+  ['invalid_5fsocket',['INVALID_SOCKET',['../group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html#ga26769957ec1a2beaf223f33b66ee64ab',1,'pios_flightgear.c']]],
   ['invokecallback',['invokeCallback',['../group___u_a_v_object_handling.html#gad8682828352ae8c7713f2ee58adb48cc',1,'uavobjectmanager.c']]],
   ['io',['io',['../structesc_hardware__t.html#a37436ee7727b60f815cd43bc6ae89b43',1,'escHardware_t']]],
   ['io_5f10',['io_10',['../structflyingpi__msg.html#ab6235e3f89b40e54b7e53b9ec7797b05',1,'flyingpi_msg::io_10()'],['../flyingpio__messages_8h.html#aadae002bff06f4427df4ead94dfeefe9',1,'io_10():&#160;flyingpio_messages.h']]],

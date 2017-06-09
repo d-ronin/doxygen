@@ -72,7 +72,7 @@ var searchData=
   ['uavtalkgetpacketinstid',['UAVTalkGetPacketInstId',['../group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685',1,'uavtalk.c']]],
   ['uavtalkgetpacketobjid',['UAVTalkGetPacketObjId',['../group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2',1,'uavtalk.c']]],
   ['uavtalkgetstats',['UAVTalkGetStats',['../group___u_a_v_talk.html#gaeccb32b1562a98d5586bb3d4d25715ee',1,'uavtalk.c']]],
-  ['uavtalkinitialize',['UAVTalkInitialize',['../group___u_a_v_talk.html#ga3f0aa57dfb6e774da5c09d796376ddc8',1,'uavtalk.c']]],
+  ['uavtalkinitialize',['UAVTalkInitialize',['../group___u_a_v_talk.html#ga5b29e7c3d3478fdd2cbd0cdaa4285fbb',1,'uavtalk.c']]],
   ['uavtalkprocessinputstream',['UAVTalkProcessInputStream',['../group___u_a_v_talk.html#gacb10dc33f197c92673c2138c6ed11ab0',1,'uavtalk.c']]],
   ['uavtalkprocessinputstreamquiet',['UAVTalkProcessInputStreamQuiet',['../group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e',1,'uavtalk.c']]],
   ['uavtalkreceiveobject',['UAVTalkReceiveObject',['../group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56',1,'uavtalk.c']]],

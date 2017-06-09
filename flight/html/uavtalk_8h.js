@@ -2,6 +2,7 @@ var uavtalk_8h =
 [
     [ "UAVTalkAckCb", "uavtalk_8h.html#ga22fa48eedc6915ae64a1bf8adbfe3066", null ],
     [ "UAVTalkConnection", "uavtalk_8h.html#gaeff1721eaebd4ab306057b4017f23f36", null ],
+    [ "UAVTalkFileCb", "uavtalk_8h.html#ga90f660f03d86354203453fb06728611a", null ],
     [ "UAVTalkOutputCb", "uavtalk_8h.html#ga25223a323d419d774cd6c4687d197e90", null ],
     [ "UAVTalkRxState", "uavtalk_8h.html#ga8a49dc52ac01b5d0782811f284df691c", [
       [ "UAVTALK_STATE_ERROR", "uavtalk_8h.html#gga8a49dc52ac01b5d0782811f284df691caebd1fa1a1b027dbc4ef710dc07af67c3", null ],
@@ -17,7 +18,7 @@ var uavtalk_8h =
     [ "UAVTalkGetPacketInstId", "uavtalk_8h.html#gab86910d482482ca00111ce24dfbc6685", null ],
     [ "UAVTalkGetPacketObjId", "uavtalk_8h.html#ga89971c05ca2331f124e85f4f287c37e2", null ],
     [ "UAVTalkGetStats", "uavtalk_8h.html#gaeccb32b1562a98d5586bb3d4d25715ee", null ],
-    [ "UAVTalkInitialize", "uavtalk_8h.html#ga3f0aa57dfb6e774da5c09d796376ddc8", null ],
+    [ "UAVTalkInitialize", "uavtalk_8h.html#ga5b29e7c3d3478fdd2cbd0cdaa4285fbb", null ],
     [ "UAVTalkProcessInputStream", "uavtalk_8h.html#gacb10dc33f197c92673c2138c6ed11ab0", null ],
     [ "UAVTalkProcessInputStreamQuiet", "uavtalk_8h.html#ga174ffb688889f75507fc022eaf33d52e", null ],
     [ "UAVTalkReceiveObject", "uavtalk_8h.html#gacf4b4d60a3186b655c6bde6f9ee69b56", null ],

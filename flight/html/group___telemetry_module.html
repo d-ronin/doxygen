@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">507bd7b</span>
+   &#160;<span id="projectnumber">a56764a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -189,6 +189,8 @@ Functions</h2></td></tr>
 <tr class="separator:gadefbd4671bb99ddde5f4003872f332dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f">update_object_instances</a> (uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint32_t inst_id)</td></tr>
 <tr class="separator:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga449e738a53e7d2140ef399bd51e2511d"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga449e738a53e7d2140ef399bd51e2511d">fileReqCallback</a> (void *ctx, uint8_t *buf, uint32_t <a class="el" href="pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc">file_id</a>, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint32_t len)</td></tr>
+<tr class="separator:ga449e738a53e7d2140ef399bd51e2511d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84d3762937b74035949fec9da7a6c4cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga84d3762937b74035949fec9da7a6c4cf">registerObjectShim</a> (<a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
 <tr class="separator:ga84d3762937b74035949fec9da7a6c4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga251dc0181b1a02544cdee5e599bfc240"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga251dc0181b1a02544cdee5e599bfc240">TelemetryStart</a> (void)</td></tr>
@@ -430,8 +432,17 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Callback for when we receive an ack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>Callback context (telemetry subsystem handle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj_id</td><td>The object ID that we got an ack for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inst_id</td><td>The instance ID that we got an ack for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00396">396</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00480">480</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -456,8 +467,15 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks for acks that need resend or expiration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">telem</td><td>Telemetry subsystem handle </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00338">338</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00353">353</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -492,8 +510,16 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Either expires or retransmits a message that expects ack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">telem</td><td>Telemetry subsystem handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>The offset for "which ack" to do this for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00297">297</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00307">307</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -534,9 +560,83 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Adds a message for which we want an ack. Can block if there are already too many ack-required things pending.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">telem</td><td>Telemetry subsystem handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>The object for which we want to wait for an ack. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inst_id</td><td>The instance ID of said object. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Consider nicer wakeup mechanism here. </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00352">352</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00375">375</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga449e738a53e7d2140ef399bd51e2511d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t fileReqCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>file_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Callback for when we receive a request for data. Converts a file id to the actual unit of information, and returns/copies it. Currently only operates on partitions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>Callback context (telemetry subsystem handle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_id</td><td>The requested file_id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset of information requested </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The maximum amount of information to return. A short read is permissable, as long as some bytes are returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes filled, 0 on EOF, negative on error. </dd></dl>
+
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00431">431</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -586,7 +686,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called each time the GCS telemetry stats object is updated. Trigger a flight telemetry stats update if a connection is not yet established. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00625">625</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00709">709</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -612,7 +712,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Determine input/output com port as highest priority available </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00745">745</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00829">829</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -649,7 +749,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Processes queue events </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00432">432</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00516">516</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -692,7 +792,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00210">210</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00214">214</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -718,7 +818,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00129">129</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00132">132</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -767,7 +867,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>SessionManaging object updated callback </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00770">770</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00854">854</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -820,7 +920,7 @@ Variables</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00608">608</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00692">692</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -842,7 +942,7 @@ Variables</h2></td></tr>
 <dd>
 0 on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00172">172</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00175">175</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -869,7 +969,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Telemetry transmit task. Processes queue events and periodic updates. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00552">552</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00636">636</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -891,7 +991,7 @@ Variables</h2></td></tr>
 <dd>
 0 on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00138">138</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00141">141</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -918,7 +1018,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Telemetry transmit task, regular priority </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00479">479</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00563">563</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1071,7 @@ Variables</h2></td></tr>
 <dd>
 number of bytes transmitted on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00589">589</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00673">673</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1115,7 @@ number of bytes transmitted on success </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00797">797</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00881">881</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1164,7 @@ number of bytes transmitted on success </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00243">243</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00247">247</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1190,7 @@ number of bytes transmitted on success </dd></dl>
 </div><div class="memdoc">
 <p>Update the telemetry settings, called on startup. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00731">731</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00815">815</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1217,7 @@ number of bytes transmitted on success </dd></dl>
 </div><div class="memdoc">
 <p>Update telemetry statistics and handle connection handshake </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00639">639</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00723">723</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>

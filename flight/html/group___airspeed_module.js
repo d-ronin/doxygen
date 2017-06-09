@@ -34,7 +34,7 @@ var group___airspeed_module =
     [ "gps_airspeedGet", "group___airspeed_module.html#gac8b8ff60998625430e286f7797c5ce67", null ],
     [ "gps_airspeedInitialize", "group___airspeed_module.html#ga299e0051e430b00460f5454782c342d7", null ],
     [ "MODULE_INITCALL", "group___airspeed_module.html#ga21ecf0efa7ca0f9597649aa8babdc8b0", null ],
-    [ "__attribute__", "group___airspeed_module.html#ga043afd6646bf00b1155399e12818f798", null ],
+    [ "__attribute__", "group___airspeed_module.html#ga342a83c45712b8254dabaf96b288aad8", null ],
     [ "airspeedSensorType", "group___airspeed_module.html#ga478c3f65056ff1cbeefde706008579ed", null ],
     [ "gps", "group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28", null ],
     [ "gpsNew", "group___airspeed_module.html#ga92e7d8d768e91460a03e1f0ef2c9a443", null ],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX95 =
 {
+"lux_2fw_2mcuconf_8h.html#ga945eb1f70822303bd0191ef633e5eaca":[5,0,0,4,7,2,0,88],
+"lux_2fw_2mcuconf_8h.html#ga9464b56116f282eee1fb597fe62f9f7c":[5,0,0,4,7,2,0,130],
+"lux_2fw_2mcuconf_8h.html#ga96007209bf113ea77c7caa986b533ebb":[5,0,0,4,7,2,0,9],
+"lux_2fw_2mcuconf_8h.html#ga9863e1adf0d2aab7bf31b61fe4a6118e":[5,0,0,4,7,2,0,94],
+"lux_2fw_2mcuconf_8h.html#ga98f682be6c4559a663f6279c867cd69a":[5,0,0,4,7,2,0,49],
+"lux_2fw_2mcuconf_8h.html#ga9a1f666e68948aec51fec38353e872c4":[5,0,0,4,7,2,0,131],
+"lux_2fw_2mcuconf_8h.html#ga9a3b7926a68a03e1b00564e5b36f2626":[5,0,0,4,7,2,0,6],
+"lux_2fw_2mcuconf_8h.html#ga9a4cb321d74c57b544a1628faaae1569":[5,0,0,4,7,2,0,114],
+"lux_2fw_2mcuconf_8h.html#ga9c9553fdd3fc1f7790cbcbd784d54d54":[5,0,0,4,7,2,0,120],
+"lux_2fw_2mcuconf_8h.html#ga9d125141e8f301e2b6d590067fd7890e":[5,0,0,4,7,2,0,62],
+"lux_2fw_2mcuconf_8h.html#ga9df33431b70cb65966b572320509c4e8":[5,0,0,4,7,2,0,113],
 "lux_2fw_2mcuconf_8h.html#gaa0e96044581d47cc827e2cbeb0227a8e":[5,0,0,4,7,2,0,32],
 "lux_2fw_2mcuconf_8h.html#gaa4ecf8f03432b8aabf2f96ca370310d6":[5,0,0,4,7,2,0,86],
 "lux_2fw_2mcuconf_8h.html#gaa6279da05e644a4bd3bc531159ad34e6":[5,0,0,4,7,2,0,15],
@@ -238,16 +249,5 @@ var NAVTREEINDEX95 =
 "misc__math_8h.html#gac61b11af4ba8da6fab0e5addf1fe3588":[5,0,0,1,2,7,40],
 "misc__math_8h.html#gac740756f75e53153605d2702b30d2a9d":[5,0,0,1,2,7,14],
 "misc__math_8h.html#gad02530851ff513eccb8c63f65221ad57":[5,0,0,1,2,7,4],
-"misc__math_8h.html#gaddd594bcd5fc2db0faae806b23039000":[5,0,0,1,2,7,38],
-"misc__math_8h.html#gae7fa5c4383337339fe17371cd78d7264":[5,0,0,1,2,7,16],
-"misc__math_8h.html#gaf400ecfa0d2805d9cd0159c47f716740":[5,0,0,1,2,7,1],
-"misc__math_8h.html#gaf4065716661678ffdbf9b3a191c55a76":[5,0,0,1,2,7,21],
-"misc__math_8h.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f":[5,0,0,1,2,7,7],
-"misc__math_8h_source.html":[5,0,0,1,2,7],
-"modules.html":[2],
-"morsel_8c.html":[5,0,0,1,11],
-"morsel_8c.html#a2de728a4f6e2763b05b96ef7cd571655":[5,0,0,1,11,5],
-"morsel_8c.html#aa41cd9e78f7523db1161a2104781c153":[5,0,0,1,11,6],
-"morsel_8c.html#abebad527c81169ea5158ab4e8a5ca7d9":[5,0,0,1,11,7],
-"morsel_8c.html#ad1531469eb98be32afa796b4245f7cdb":[5,0,0,1,11,4]
+"misc__math_8h.html#gaddd594bcd5fc2db0faae806b23039000":[5,0,0,1,2,7,38]
 };
