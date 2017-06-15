@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">908e5ee</span>
+   &#160;<span id="projectnumber">4ddca65</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -455,7 +455,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        <span class="comment">// Ensure the thing rests low during this time</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        GPIO_ResetBits(dev-&gt;cfg-&gt;led_gpio, dev-&gt;cfg-&gt;gpio_pin);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                        <span class="keywordflow">goto</span> epilogue;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                }</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                <span class="comment">/* Otherwise, disable DMA */</span></div>
@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="comment">// Will generate one more transmit complete interrupt.</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                DMA_Cmd(dev-&gt;cfg-&gt;bit_clear_dma_stream, DISABLE);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">goto</span> epilogue;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span> (dev-&gt;eof) {</div>
@@ -473,7 +473,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="comment">/* OK, we have nothing else to fill in, but the last buffer</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">                 * needs to get clocked out */</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">goto</span> epilogue;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        dev-&gt;cur_buf = !dev-&gt;cur_buf;</div>
@@ -487,42 +487,44 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        dev-&gt;eof = fill_dma_buf(buf, &amp;dev-&gt;pixel_data_pos,</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        dev-&gt;pixel_data_end, dev-&gt;gpio_bit);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, <span class="keywordtype">int</span> idx, uint8_t r, uint8_t g,</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                uint8_t b)</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;{</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordflow">if</span> (idx &gt;= dev-&gt;max_leds) {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        dev-&gt;pixel_data[idx] = (<span class="keyword">struct </span>ws2811_pixel_data_s)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                        { .r = r, .g = g, .b = b };</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, uint8_t r, uint8_t g,</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                uint8_t b)</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;{</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; dev-&gt;max_leds; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, r, g, b);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        }</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;{</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">return</span> dev-&gt;max_leds;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_WS2811 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;epilogue:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        (void)0; <span class="comment">/* Fix non-ChibiOS builds. */</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, <span class="keywordtype">int</span> idx, uint8_t r, uint8_t g,</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                uint8_t b)</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;{</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span> (idx &gt;= dev-&gt;max_leds) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        dev-&gt;pixel_data[idx] = (<span class="keyword">struct </span>ws2811_pixel_data_s)</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        { .r = r, .g = g, .b = b };</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, uint8_t r, uint8_t g,</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                uint8_t b)</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; dev-&gt;max_leds; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, r, g, b);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;{</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">return</span> dev-&gt;max_leds;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_WS2811 */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s_html_ga392253e9f6d730c828c6966708ba7fb7"><div class="ttname"><a href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">pios_ws2811_cfg::led_gpio</a></div><div class="ttdeci">GPIO_TypeDef * led_gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00047">pios_ws2811.h:47</a></div></div>
 <div class="ttc" id="pios__stm32_8h_html"><div class="ttname"><a href="pios__stm32_8h.html">pios_stm32.h</a></div><div class="ttdoc">Types that are specific to the STM32 peripherals. </div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga2c71481fd577f1156ba52c2dff39e5d8"><div class="ttname"><a href="group___p_i_o_s.html#ga2c71481fd577f1156ba52c2dff39e5d8">pios_ws2811_cfg::fall_time_h</a></div><div class="ttdeci">uint8_t fall_time_h</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00043">pios_ws2811.h:43</a></div></div>
