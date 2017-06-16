@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ddca65</span>
+   &#160;<span id="projectnumber">1dd76fb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -404,236 +404,164 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__tim_8c_source.htm
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#gae8a61b27afdb07c70d6b863c44284ca6">TIM1_CC_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_CC_irq_handler&quot;)));</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_CC_irq_handler (<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM1);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">        #if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM1);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">// The rest of TIM1 interrupts are overlapped</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">  316</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">TIM1_BRK_TIM9_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_BRK_TIM_9_irq_handler&quot;)));</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_BRK_TIM_9_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">// The rest of TIM1 interrupts are overlapped</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">  322</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">TIM1_BRK_TIM9_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_BRK_TIM_9_irq_handler&quot;)));</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_BRK_TIM_9_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Break)) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM9, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM9);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Break)) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM9, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM9);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">  330</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">TIM1_UP_TIM10_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_UP_TIM_10_irq_handler&quot;)));</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_UP_TIM_10_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">  340</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">TIM1_UP_TIM10_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_UP_TIM_10_irq_handler&quot;)));</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_UP_TIM_10_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Update)) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM10, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM10);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">  357</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">TIM1_TRG_COM_TIM11_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_TRG_COM_TIM_11_irq_handler&quot;)));</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_TRG_COM_TIM_11_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;{</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Trigger | TIM_IT_COM)) {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM11, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM11);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Update)) {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM10, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM10);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">  343</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">TIM1_TRG_COM_TIM11_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_1_TRG_COM_TIM_11_irq_handler&quot;)));</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_1_TRG_COM_TIM_11_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM1, TIM_IT_Trigger | TIM_IT_COM)) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM1);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM11, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM11);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#ifndef PIOS_OMIT_TIM2IRQ</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga38ad4725462bdc5e86c4ead4f04b9fc2">TIM2_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_2_irq_handler&quot;)));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_2_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM2);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#gac8e51d2183b5230cbd5481f8867adce9">TIM3_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_3_irq_handler&quot;)));</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_3_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM3);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;}</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#ifndef PIOS_OMIT_TIM2IRQ</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga38ad4725462bdc5e86c4ead4f04b9fc2">TIM2_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_2_irq_handler&quot;)));</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_2_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#if !defined(PIOS_VIDEO_TIM4_COUNTER)</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga7133f3f78767503641d307386e68bd28">TIM4_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_4_irq_handler&quot;)));</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_4_irq_handler (<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;{</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM2);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#gac8e51d2183b5230cbd5481f8867adce9">TIM3_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_3_irq_handler&quot;)));</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_3_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;{</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM3);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#if !defined(PIOS_VIDEO_TIM4_COUNTER)</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga7133f3f78767503641d307386e68bd28">TIM4_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_4_irq_handler&quot;)));</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_4_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;{</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM4);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !defined(PIOS_VIDEO_TIM4_COUNTER) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga5e66446caf21dd90191dc07a13ce2378">TIM5_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_5_irq_handler&quot;)));</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_5_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;{</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM5);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM4);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !defined(PIOS_VIDEO_TIM4_COUNTER) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga5e66446caf21dd90191dc07a13ce2378">TIM5_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_5_irq_handler&quot;)));</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_5_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM5);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga0839a45f331c4c067939b9c4533bbf4d">TIM6_DAC_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_6_DAC_irq_handler&quot;)));</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_6_DAC_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;{</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="comment">// TODO: Check for DAC</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM6);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga98cff83252098363b2dbca9608df964e">TIM7_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_7_irq_handler&quot;)));</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_7_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM7);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga96e44d6fe80524f038da6254514316a4">TIM8_CC_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_CC_irq_handler&quot;)));</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_CC_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM8);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">// The rest of TIM8 interrupts are overlapped</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">  419</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">TIM8_BRK_TIM12_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_BRK_TIM_12_irq_handler&quot;)));</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_BRK_TIM_12_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;{</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Break)) {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM12, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM12);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        }</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga0839a45f331c4c067939b9c4533bbf4d">TIM6_DAC_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_6_DAC_irq_handler&quot;)));</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_6_DAC_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;{</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="comment">// TODO: Check for DAC</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM6);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga98cff83252098363b2dbca9608df964e">TIM7_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_7_irq_handler&quot;)));</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_7_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;{</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM7);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga96e44d6fe80524f038da6254514316a4">TIM8_CC_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_CC_irq_handler&quot;)));</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_CC_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;{</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM8);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment">// The rest of TIM8 interrupts are overlapped</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">  479</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">TIM8_BRK_TIM12_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_BRK_TIM_12_irq_handler&quot;)));</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_BRK_TIM_12_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Break)) {</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM12, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM12);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">  497</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">TIM8_UP_TIM13_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_UP_TIM_13_irq_handler&quot;)));</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_UP_TIM_13_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;{</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Update)) {</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM13, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM13);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        }</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">  515</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">TIM8_TRG_COM_TIM14_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_TRG_COM_TIM_14_irq_handler&quot;)));</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_TRG_COM_TIM_14_irq_handler (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Trigger | TIM_IT_COM)) {</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM14, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM14);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga4c8359a023f7ede4a9d9f94ea6fb92da"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">TIM8_TRG_COM_TIM14_IRQHandler</a></div><div class="ttdeci">void TIM8_TRG_COM_TIM14_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00515">pios_tim.c:515</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_gac8e51d2183b5230cbd5481f8867adce9"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gac8e51d2183b5230cbd5481f8867adce9">TIM3_IRQHandler</a></div><div class="ttdeci">void TIM3_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00337">pios_tim.c:337</a></div></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;}</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">  433</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">TIM8_UP_TIM13_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_UP_TIM_13_irq_handler&quot;)));</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_UP_TIM_13_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;{</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Update)) {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM13, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM13);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;}</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">  447</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">TIM8_TRG_COM_TIM14_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a> ((alias (&quot;PIOS_TIM_8_TRG_COM_TIM_14_irq_handler&quot;)));</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;static <span class="keywordtype">void</span> PIOS_TIM_8_TRG_COM_TIM_14_irq_handler (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;{</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">if</span> (TIM_GetITStatus(TIM8, TIM_IT_Trigger | TIM_IT_COM)) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a>(TIM8);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (TIM_GetITStatus(TIM14, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 | TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger | TIM_IT_Break)) {</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                <a class="code" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a> (TIM14);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        }</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga4c8359a023f7ede4a9d9f94ea6fb92da"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga4c8359a023f7ede4a9d9f94ea6fb92da">TIM8_TRG_COM_TIM14_IRQHandler</a></div><div class="ttdeci">void TIM8_TRG_COM_TIM14_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00447">pios_tim.c:447</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_gac8e51d2183b5230cbd5481f8867adce9"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gac8e51d2183b5230cbd5481f8867adce9">TIM3_IRQHandler</a></div><div class="ttdeci">void TIM3_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00325">pios_tim.c:325</a></div></div>
 <div class="ttc" id="structpios__tim__clock__cfg_html_abdc708ba1a22f20e3f31502ca32b2c13"><div class="ttname"><a href="structpios__tim__clock__cfg.html#abdc708ba1a22f20e3f31502ca32b2c13">pios_tim_clock_cfg::time_base_init</a></div><div class="ttdeci">const TIM_TimeBaseInitTypeDef * time_base_init</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00008">pios_tim_priv.h:8</a></div></div>
 <div class="ttc" id="_s_t_m32_f4xx_2pios__tim_8c_html_ga7de91dcd95d0f609e1aeff32fe2bc408"><div class="ttname"><a href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">PIOS_TIM_generic_irq_handler</a></div><div class="ttdeci">static void PIOS_TIM_generic_irq_handler(TIM_TypeDef *timer)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00158">pios_tim.c:158</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_gad1fd361bc5ad89facee67c76d1ff8dc0"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">TIM1_UP_TIM10_IRQHandler</a></div><div class="ttdeci">void TIM1_UP_TIM10_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00340">pios_tim.c:340</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_gad1fd361bc5ad89facee67c76d1ff8dc0"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gad1fd361bc5ad89facee67c76d1ff8dc0">TIM1_UP_TIM10_IRQHandler</a></div><div class="ttdeci">void TIM1_UP_TIM10_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00330">pios_tim.c:330</a></div></div>
 <div class="ttc" id="structpios__tim__dev_html"><div class="ttname"><a href="structpios__tim__dev.html">pios_tim_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00042">pios_tim.c:42</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga098245bf4e2f8844b22692b034a266fb"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">TIM1_TRG_COM_TIM11_IRQHandler</a></div><div class="ttdeci">void TIM1_TRG_COM_TIM11_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00357">pios_tim.c:357</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga098245bf4e2f8844b22692b034a266fb"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga098245bf4e2f8844b22692b034a266fb">TIM1_TRG_COM_TIM11_IRQHandler</a></div><div class="ttdeci">void TIM1_TRG_COM_TIM11_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00343">pios_tim.c:343</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga2b129aa6d78b9ba69ff095d8a9c53356"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga2b129aa6d78b9ba69ff095d8a9c53356">pios_tim_dev::num_channels</a></div><div class="ttdeci">uint8_t num_channels</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00046">pios_tim.c:46</a></div></div>
 <div class="ttc" id="structstm32__gpio_html_ab4cf4debf63492af696cf1f340a42824"><div class="ttname"><a href="structstm32__gpio.html#ab4cf4debf63492af696cf1f340a42824">stm32_gpio::init</a></div><div class="ttdeci">GPIO_InitTypeDef init</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00061">pios_stm32.h:61</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga5e66446caf21dd90191dc07a13ce2378"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga5e66446caf21dd90191dc07a13ce2378">TIM5_IRQHandler</a></div><div class="ttdeci">void TIM5_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00376">pios_tim.c:376</a></div></div>
@@ -641,9 +569,10 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__tim_8c_source.htm
 <div class="ttc" id="group___a_q32_html_gabed34fab9b2b2c4c92ecc825c75c9244"><div class="ttname"><a href="group___a_q32.html#gabed34fab9b2b2c4c92ecc825c75c9244">PIOS_TIM_MAX_DEVS</a></div><div class="ttdeci">#define PIOS_TIM_MAX_DEVS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00226">pios_board.h:226</a></div></div>
 <div class="ttc" id="structpios__tim__clock__cfg_html"><div class="ttname"><a href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00006">pios_tim_priv.h:6</a></div></div>
 <div class="ttc" id="structstm32__gpio_html_a3d54b128262b814ecf0ad412093b6402"><div class="ttname"><a href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">stm32_gpio::gpio</a></div><div class="ttdeci">GPIO_TypeDef * gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00060">pios_stm32.h:60</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga301e0d3520f05f672ce047976f75ff6a"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">TIM8_BRK_TIM12_IRQHandler</a></div><div class="ttdeci">void TIM8_BRK_TIM12_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00479">pios_tim.c:479</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga0839a45f331c4c067939b9c4533bbf4d"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga0839a45f331c4c067939b9c4533bbf4d">TIM6_DAC_IRQHandler</a></div><div class="ttdeci">void TIM6_DAC_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00416">pios_tim.c:416</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga301e0d3520f05f672ce047976f75ff6a"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga301e0d3520f05f672ce047976f75ff6a">TIM8_BRK_TIM12_IRQHandler</a></div><div class="ttdeci">void TIM8_BRK_TIM12_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00419">pios_tim.c:419</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga0839a45f331c4c067939b9c4533bbf4d"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga0839a45f331c4c067939b9c4533bbf4d">TIM6_DAC_IRQHandler</a></div><div class="ttdeci">void TIM6_DAC_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00380">pios_tim.c:380</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga7d425167804fd43bc76fe29c11386a6c"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga7d425167804fd43bc76fe29c11386a6c">pios_tim_dev_magic</a></div><div class="ttdeci">pios_tim_dev_magic</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00038">pios_tim.c:38</a></div></div>
 <div class="ttc" id="structpios__tim__callbacks_html_a6b0c1cd868a73b42c8a2228d08103ee3"><div class="ttname"><a href="structpios__tim__callbacks.html#a6b0c1cd868a73b42c8a2228d08103ee3">pios_tim_callbacks::overflow</a></div><div class="ttdeci">void(* overflow)(uintptr_t tim_id, uintptr_t context, uint8_t chan_idx, uint16_t count)</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00022">pios_tim_priv.h:22</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga7f759e8ce7f05929e575efce060cc927"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga7f759e8ce7f05929e575efce060cc927">pios_tim_dev::channels</a></div><div class="ttdeci">const struct pios_tim_channel * channels</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00045">pios_tim.c:45</a></div></div>
@@ -666,14 +595,15 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__tim_8c_source.htm
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="structstm32__irq_html_aef3e74e894b4025023b6be1ab8b4348f"><div class="ttname"><a href="structstm32__irq.html#aef3e74e894b4025023b6be1ab8b4348f">stm32_irq::init</a></div><div class="ttdeci">NVIC_InitTypeDef init</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00036">pios_stm32.h:36</a></div></div>
 <div class="ttc" id="structstm32__gpio_html_a79c5a3ec6b45fc1a2c4921c81f79ca42"><div class="ttname"><a href="structstm32__gpio.html#a79c5a3ec6b45fc1a2c4921c81f79ca42">stm32_gpio::pin_source</a></div><div class="ttdeci">uint8_t pin_source</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00062">pios_stm32.h:62</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga38ad4725462bdc5e86c4ead4f04b9fc2"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga38ad4725462bdc5e86c4ead4f04b9fc2">TIM2_IRQHandler</a></div><div class="ttdeci">void TIM2_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00323">pios_tim.c:323</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga38ad4725462bdc5e86c4ead4f04b9fc2"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga38ad4725462bdc5e86c4ead4f04b9fc2">TIM2_IRQHandler</a></div><div class="ttdeci">void TIM2_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00317">pios_tim.c:317</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_gafe9d43893bcd9da464518dfb482f514f"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gafe9d43893bcd9da464518dfb482f514f">pios_tim_dev::callbacks</a></div><div class="ttdeci">const struct pios_tim_callbacks * callbacks</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00048">pios_tim.c:48</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga7fb516f8826d882ac91cfc093884fcf5"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">TIM8_UP_TIM13_IRQHandler</a></div><div class="ttdeci">void TIM8_UP_TIM13_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00497">pios_tim.c:497</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga7fb516f8826d882ac91cfc093884fcf5"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga7fb516f8826d882ac91cfc093884fcf5">TIM8_UP_TIM13_IRQHandler</a></div><div class="ttdeci">void TIM8_UP_TIM13_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00433">pios_tim.c:433</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga96e44d6fe80524f038da6254514316a4"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga96e44d6fe80524f038da6254514316a4">TIM8_CC_IRQHandler</a></div><div class="ttdeci">void TIM8_CC_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00400">pios_tim.c:400</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_gaf316d2873f98d05747789d96d889491f"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f">PIOS_TIM_InitChannels</a></div><div class="ttdeci">int32_t PIOS_TIM_InitChannels(uintptr_t *tim_id, const struct pios_tim_channel *channels, uint8_t num_channels, const struct pios_tim_callbacks *callbacks, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00133">pios_tim.c:133</a></div></div>
 <div class="ttc" id="structpios__tim__channel_html_ac0c7199f77fa4e99068cda8572e02064"><div class="ttname"><a href="structpios__tim__channel.html#ac0c7199f77fa4e99068cda8572e02064">pios_tim_channel::remap</a></div><div class="ttdeci">uint32_t remap</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00018">pios_tim_priv.h:18</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_gaa9fff718f3bece2774971de5397a5f14"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gaa9fff718f3bece2774971de5397a5f14">PIOS_TIM_SetBankToGPOut</a></div><div class="ttdeci">void PIOS_TIM_SetBankToGPOut(uintptr_t tim_id, TIM_TypeDef *timer)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00110">pios_tim.c:110</a></div></div>
-<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga3b60f6118cdd3449f4ed29fde4704236"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">TIM1_BRK_TIM9_IRQHandler</a></div><div class="ttdeci">void TIM1_BRK_TIM9_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00322">pios_tim.c:322</a></div></div>
+<div class="ttc" id="group___p_i_o_s___t_i_m_html_ga3b60f6118cdd3449f4ed29fde4704236"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga3b60f6118cdd3449f4ed29fde4704236">TIM1_BRK_TIM9_IRQHandler</a></div><div class="ttdeci">void TIM1_BRK_TIM9_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00316">pios_tim.c:316</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="pios__tim_8h_html"><div class="ttname"><a href="pios__tim_8h.html">pios_tim.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_gae8a61b27afdb07c70d6b863c44284ca6"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#gae8a61b27afdb07c70d6b863c44284ca6">TIM1_CC_IRQHandler</a></div><div class="ttdeci">void TIM1_CC_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00307">pios_tim.c:307</a></div></div>
 <div class="ttc" id="structpios__tim__channel_html_a07d1ffb5da40643ef9938fa9c4fad017"><div class="ttname"><a href="structpios__tim__channel.html#a07d1ffb5da40643ef9938fa9c4fad017">pios_tim_channel::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="pios__tim__priv_8h_source.html#l00014">pios_tim_priv.h:14</a></div></div>

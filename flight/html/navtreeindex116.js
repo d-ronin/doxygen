@@ -1,5 +1,9 @@
 var NAVTREEINDEX116 =
 {
+"seppuku_2fw_2mcuconf_8h.html#ga01b2a27910cfaed8a40043c8efe1e9a4":[5,0,0,4,13,2,0,120],
+"seppuku_2fw_2mcuconf_8h.html#ga02086c51746a93818f7b50d8d184bdfc":[5,0,0,4,13,2,0,166],
+"seppuku_2fw_2mcuconf_8h.html#ga02ab064f32c429288dce0b15b2e443a1":[5,0,0,4,13,2,0,178],
+"seppuku_2fw_2mcuconf_8h.html#ga02b4e3e6222baab7ee448cbbb2273370":[5,0,0,4,13,2,0,95],
 "seppuku_2fw_2mcuconf_8h.html#ga02c568ae2c758034cdf478f81b447af3":[5,0,0,4,13,2,0,177],
 "seppuku_2fw_2mcuconf_8h.html#ga0324f80d5775896053a81432c0475ac3":[5,0,0,4,13,2,0,12],
 "seppuku_2fw_2mcuconf_8h.html#ga0330335b8223bb2fd7b30a8bf6748a25":[5,0,0,4,13,2,0,157],
@@ -245,9 +249,5 @@ var NAVTREEINDEX116 =
 "serial__4way__avrootloader_8h.html#aadcb3add74d98ef10ba7c9ddb8aaddc9":[5,0,0,2,33,0,0,1,14],
 "serial__4way__avrootloader_8h.html#abd54faf71739d607aa5a285f4c4ec43b":[5,0,0,2,33,0,0,1,10],
 "serial__4way__avrootloader_8h.html#ad47f3abcca325954e50c3b0da9962740":[5,0,0,2,33,0,0,1,9],
-"serial__4way__avrootloader_8h.html#ae0e8336ee85dc13d6b430a8c18ee3f05":[5,0,0,2,33,0,0,1,7],
-"serial__4way__avrootloader_8h.html#afab0558b88539f689c3dee9d68495d61":[5,0,0,2,33,0,0,1,1],
-"serial__4way__avrootloader_8h_source.html":[5,0,0,2,33,0,0,1],
-"serial__4way__impl_8h.html":[5,0,0,2,33,0,0,2],
-"serial__4way__impl_8h.html#a2bdb365b4c83308bb0bf2c9d101ccc34":[5,0,0,2,33,0,0,2,6]
+"serial__4way__avrootloader_8h.html#ae0e8336ee85dc13d6b430a8c18ee3f05":[5,0,0,2,33,0,0,1,7]
 };

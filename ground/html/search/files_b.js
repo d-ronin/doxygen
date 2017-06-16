@@ -31,6 +31,8 @@ var searchData=
   ['logginggadgetwidget_2eh',['logginggadgetwidget.h',['../logginggadgetwidget_8h.html',1,'']]],
   ['loggingplugin_2ecpp',['loggingplugin.cpp',['../loggingplugin_8cpp.html',1,'']]],
   ['loggingplugin_2eh',['loggingplugin.h',['../loggingplugin_8h.html',1,'']]],
+  ['longlongspinbox_2ecpp',['longlongspinbox.cpp',['../longlongspinbox_8cpp.html',1,'']]],
+  ['longlongspinbox_2eh',['longlongspinbox.h',['../longlongspinbox_8h.html',1,'']]],
   ['lux_2ecpp',['lux.cpp',['../lux_8cpp.html',1,'']]],
   ['lux_2eh',['lux.h',['../lux_8h.html',1,'']]],
   ['luxconfiguration_2ecpp',['luxconfiguration.cpp',['../luxconfiguration_8cpp.html',1,'']]],

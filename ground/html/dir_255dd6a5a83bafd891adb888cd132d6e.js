@@ -16,6 +16,8 @@ var dir_255dd6a5a83bafd891adb888cd132d6e =
     [ "hostosinfo.h", "hostosinfo_8h.html", [
       [ "HostOsInfo", "class_utils_1_1_host_os_info.html", "class_utils_1_1_host_os_info" ]
     ] ],
+    [ "longlongspinbox.cpp", "longlongspinbox_8cpp.html", null ],
+    [ "longlongspinbox.h", "longlongspinbox_8h.html", null ],
     [ "mytabbedstackwidget.cpp", "mytabbedstackwidget_8cpp.html", null ],
     [ "mytabbedstackwidget.h", "mytabbedstackwidget_8h.html", [
       [ "MyTabbedStackWidget", "class_my_tabbed_stack_widget.html", "class_my_tabbed_stack_widget" ]

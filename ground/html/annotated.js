@@ -182,6 +182,7 @@ var annotated =
     [ "LoggingGadgetWidget", "class_logging_gadget_widget.html", "class_logging_gadget_widget" ],
     [ "LoggingPlugin", "class_logging_plugin.html", "class_logging_plugin" ],
     [ "LoggingThread", "class_logging_thread.html", "class_logging_thread" ],
+    [ "LongLongSpinBox", "class_long_long_spin_box.html", "class_long_long_spin_box" ],
     [ "Lux", "class_lux.html", "class_lux" ],
     [ "LuxConfiguration", "class_lux_configuration.html", "class_lux_configuration" ],
     [ "MagicWaypointGadget", "class_magic_waypoint_gadget.html", "class_magic_waypoint_gadget" ],

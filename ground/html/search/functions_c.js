@@ -19,6 +19,7 @@ var searchData=
   ['lineardialgadgetfactory',['LineardialGadgetFactory',['../group___linear_dial_plugin.html#ga65f46ec9f31c70119c149accc51b304e',1,'LineardialGadgetFactory']]],
   ['lineardialgadgetoptionspage',['LineardialGadgetOptionsPage',['../group___linear_dial_plugin.html#gaa49909f8404b5303882872f6bb8ccdb2',1,'LineardialGadgetOptionsPage']]],
   ['lineardialgadgetwidget',['LineardialGadgetWidget',['../group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7',1,'LineardialGadgetWidget']]],
+  ['lineeditchanged',['lineEditChanged',['../group__utils.html#gae8effe7d613d4ab1d444cc91d35acb79',1,'LongLongSpinBox']]],
   ['listmean',['listMean',['../class_calibration.html#a3ea860b5f58d9cc8f288718492fac38a',1,'Calibration::listMean()'],['../group___u_a_v_object_widget_utils.html#ga134c15f52a4eccf9aeb9bbacdc296b80',1,'ConfigTaskWidget::listMean()']]],
   ['listvar',['listVar',['../group___u_a_v_object_widget_utils.html#ga2f33179993858ca636461e78e3a7a3c8',1,'ConfigTaskWidget']]],
   ['lks94projection',['LKS94Projection',['../group___t_l_map_widget.html#gacf511403f6a470bec942524c0e020b77',1,'projections::LKS94Projection']]],
@@ -52,6 +53,7 @@ var searchData=
   ['logginggadgetfactory',['LoggingGadgetFactory',['../group___g_c_s_control_gadget_plugin.html#gaef9e98419a7dd5551cd13876c2c4b357',1,'LoggingGadgetFactory']]],
   ['logginggadgetwidget',['LoggingGadgetWidget',['../group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e',1,'LoggingGadgetWidget']]],
   ['longitude',['longitude',['../group___o_p_map_plugin.html#ga3faeb4ba6e69dd97e9f8451b35e47c7e',1,'OPMapGadgetConfiguration']]],
+  ['longlongspinbox',['LongLongSpinBox',['../group__utils.html#ga3116c3bde1619e5fba42c56e246567cd',1,'LongLongSpinBox']]],
   ['lux',['Lux',['../group___boards___brotronics.html#ga80306e11ca9c414512d59280de146dba',1,'Lux']]],
   ['luxconfiguration',['LuxConfiguration',['../group___boards___brotronics.html#ga1ad8e3514c986e568a746e47d40f3f46',1,'LuxConfiguration']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ddca65</span>
+   &#160;<span id="projectnumber">1dd76fb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,7 +137,15 @@ $(document).ready(function(){initNavTree('inc_2pios__irq_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___i_r_q.html#ga1de42a0676f89b45fe28312ad31e7529">PIOS_IRQ_InISR</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_IRQ_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_IRQ_Prologue() CH_IRQ_PROLOGUE()</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_IRQ_Epilogue() CH_IRQ_EPILOGUE()</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_IRQ_Prologue()</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       define PIOS_IRQ_Epilogue()</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_IRQ_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga1de42a0676f89b45fe28312ad31e7529"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga1de42a0676f89b45fe28312ad31e7529">PIOS_IRQ_InISR</a></div><div class="ttdeci">bool PIOS_IRQ_InISR(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00061">pios_irq.c:61</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>

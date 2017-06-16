@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ddca65</span>
+   &#160;<span id="projectnumber">1dd76fb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -945,151 +945,143 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__i2c_8c_source.htm
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___i2_c.html#ga779ac2da156f2d9720d8e526bf05edb4">PIOS_I2C_EV_IRQ_Handler</a>(uint32_t i2c_id)</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;{</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *i2c_adapter = (<span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *)i2c_id;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *i2c_adapter = (<span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *)i2c_id;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(PIOS_I2C_validate(i2c_adapter) == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(PIOS_I2C_validate(i2c_adapter) == <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        bool woken = false;</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        bool woken = false;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="comment">// reading the event clears the interrupt flags</span></div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        uint32_t event = I2C_GetLastEvent(i2c_adapter-&gt;cfg-&gt;regs);</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Store event for diagnostics */</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        i2c_adapter-&gt;i2c_evirq_history[i2c_adapter-&gt;i2c_evirq_history_pointer] = event;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        i2c_adapter-&gt;i2c_evirq_history_pointer = (i2c_adapter-&gt;i2c_evirq_history_pointer + 1) % I2C_LOG_DEPTH;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">switch</span> (event) {</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_MODE_SELECT:      <span class="comment">/* EV5 */</span></div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a>-&gt;<a class="code" href="structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821">rw</a>) {</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a>:</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                        <span class="keywordflow">if</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a> == i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a6bee97880f26e2f00bb042445b2226cc">last_txn</a>) {</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                                <span class="comment">/* Final transaction */</span></div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649af758f7c4eb70a2e2be5a5e68172b66f6">I2C_EVENT_R_LAST_TXN_STARTED</a>, &amp;woken);</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                                <span class="comment">/* More transactions follow */</span></div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649adf720d567e1ce2f11a2052ce833ea205">I2C_EVENT_R_MORE_TXN_STARTED</a>, &amp;woken);</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                        }</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a>:</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                        <span class="keywordflow">if</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a> == i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a6bee97880f26e2f00bb042445b2226cc">last_txn</a>) {</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                                <span class="comment">/* Final transaction */</span></div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a962096060474bc4288243024649d834d">I2C_EVENT_W_LAST_TXN_STARTED</a>, &amp;woken);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                                <span class="comment">/* More transactions follow */</span></div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649aec7881d497669603b99d5281b68324cb">I2C_EVENT_W_MORE_TXN_STARTED</a>, &amp;woken);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                        }</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;                }</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED:        <span class="comment">/* EV6 */</span></div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED:   <span class="comment">/* EV6 */</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a3e1a8f8faea9cc84f74526ade8887347">last_byte</a> - i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a86e402105fff70cb533e594bb5d2978a">active_byte</a> + 1) {</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a7e577a948ce50cb1981603425be6c5cb">I2C_EVENT_ADDR_SENT_LEN_EQ_0</a>, &amp;woken);</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3c515aa38bcb0e83c213e715968d9f23">I2C_EVENT_ADDR_SENT_LEN_EQ_1</a>, &amp;woken);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8049a68ddd97aad5287076be8c7fd0a7">I2C_EVENT_ADDR_SENT_LEN_EQ_2</a>, &amp;woken);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3bc2169b6937d21e1edd3a94b2ac29f0">I2C_EVENT_ADDR_SENT_LEN_GT_2</a>, &amp;woken);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                }</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_RECEIVED:    <span class="comment">/* EV7 */</span></div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_TRANSMITTED: <span class="comment">/* EV8_2 */</span></div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a3e1a8f8faea9cc84f74526ade8887347">last_byte</a> - i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a86e402105fff70cb533e594bb5d2978a">active_byte</a> + 1) {</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a76509630681ebbb4ae7207d4db8b4d67">I2C_EVENT_TRANSFER_DONE_LEN_EQ_0</a>, &amp;woken);</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a9237a0982ebf246d4436ed66a7f42270">I2C_EVENT_TRANSFER_DONE_LEN_EQ_1</a>, &amp;woken);</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649ac497371a9c719f366e1a940a2a4eab50">I2C_EVENT_TRANSFER_DONE_LEN_EQ_2</a>, &amp;woken);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a145f9aee4e03a5bd9c36d94782d0334a">I2C_EVENT_TRANSFER_DONE_LEN_GT_2</a>, &amp;woken);</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                }</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_TRANSMITTING:        <span class="comment">/* EV8 */</span></div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                <span class="comment">// This event is being ignored. It may be used to speed up transfer by reloading data buffer earlier.</span></div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="preprocessor"></span>                i2c_adapter_log_fault(i2c_adapter, PIOS_I2C_ERROR_EVENT);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c">I2C_EVENT_BUS_ERROR</a>, &amp;woken);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        }</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <span class="comment">// reading the event clears the interrupt flags</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        uint32_t event = I2C_GetLastEvent(i2c_adapter-&gt;cfg-&gt;regs);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Store event for diagnostics */</span></div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        i2c_adapter-&gt;i2c_evirq_history[i2c_adapter-&gt;i2c_evirq_history_pointer] = event;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        i2c_adapter-&gt;i2c_evirq_history_pointer = (i2c_adapter-&gt;i2c_evirq_history_pointer + 1) % I2C_LOG_DEPTH;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">switch</span> (event) {</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_MODE_SELECT:      <span class="comment">/* EV5 */</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a>-&gt;<a class="code" href="structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821">rw</a>) {</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2">PIOS_I2C_TXN_READ</a>:</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                        <span class="keywordflow">if</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a> == i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a6bee97880f26e2f00bb042445b2226cc">last_txn</a>) {</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                                <span class="comment">/* Final transaction */</span></div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649af758f7c4eb70a2e2be5a5e68172b66f6">I2C_EVENT_R_LAST_TXN_STARTED</a>, &amp;woken);</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                                <span class="comment">/* More transactions follow */</span></div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649adf720d567e1ce2f11a2052ce833ea205">I2C_EVENT_R_MORE_TXN_STARTED</a>, &amp;woken);</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                        }</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a>:</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                        <span class="keywordflow">if</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#ab2f3b1e7aa600858ab169abd41ba2911">active_txn</a> == i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a6bee97880f26e2f00bb042445b2226cc">last_txn</a>) {</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                                <span class="comment">/* Final transaction */</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a962096060474bc4288243024649d834d">I2C_EVENT_W_LAST_TXN_STARTED</a>, &amp;woken);</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                                <span class="comment">/* More transactions follow */</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649aec7881d497669603b99d5281b68324cb">I2C_EVENT_W_MORE_TXN_STARTED</a>, &amp;woken);</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                        }</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                }</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED:        <span class="comment">/* EV6 */</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED:   <span class="comment">/* EV6 */</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a3e1a8f8faea9cc84f74526ade8887347">last_byte</a> - i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a86e402105fff70cb533e594bb5d2978a">active_byte</a> + 1) {</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a7e577a948ce50cb1981603425be6c5cb">I2C_EVENT_ADDR_SENT_LEN_EQ_0</a>, &amp;woken);</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3c515aa38bcb0e83c213e715968d9f23">I2C_EVENT_ADDR_SENT_LEN_EQ_1</a>, &amp;woken);</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8049a68ddd97aad5287076be8c7fd0a7">I2C_EVENT_ADDR_SENT_LEN_EQ_2</a>, &amp;woken);</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3bc2169b6937d21e1edd3a94b2ac29f0">I2C_EVENT_ADDR_SENT_LEN_GT_2</a>, &amp;woken);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                }</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_RECEIVED:    <span class="comment">/* EV7 */</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_TRANSMITTED: <span class="comment">/* EV8_2 */</span></div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                <span class="keywordflow">switch</span> (i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a3e1a8f8faea9cc84f74526ade8887347">last_byte</a> - i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a86e402105fff70cb533e594bb5d2978a">active_byte</a> + 1) {</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a76509630681ebbb4ae7207d4db8b4d67">I2C_EVENT_TRANSFER_DONE_LEN_EQ_0</a>, &amp;woken);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a9237a0982ebf246d4436ed66a7f42270">I2C_EVENT_TRANSFER_DONE_LEN_EQ_1</a>, &amp;woken);</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649ac497371a9c719f366e1a940a2a4eab50">I2C_EVENT_TRANSFER_DONE_LEN_EQ_2</a>, &amp;woken);</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a145f9aee4e03a5bd9c36d94782d0334a">I2C_EVENT_TRANSFER_DONE_LEN_GT_2</a>, &amp;woken);</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                }</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        <span class="keywordflow">case</span> I2C_EVENT_MASTER_BYTE_TRANSMITTING:        <span class="comment">/* EV8 */</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <span class="comment">// This event is being ignored. It may be used to speed up transfer by reloading data buffer earlier.</span></div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="preprocessor"></span>                i2c_adapter_log_fault(i2c_adapter, PIOS_I2C_ERROR_EVENT);</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c">I2C_EVENT_BUS_ERROR</a>, &amp;woken);</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        }</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;}</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___i2_c.html#ga3039907b5945c06d4c27e756647fa75c">PIOS_I2C_ER_IRQ_Handler</a>(uint32_t i2c_id)</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;{</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___i2_c.html#ga3039907b5945c06d4c27e756647fa75c">PIOS_I2C_ER_IRQ_Handler</a>(uint32_t i2c_id)</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;{</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *i2c_adapter = (<span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *)i2c_id;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_I2C_validate(i2c_adapter);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        bool woken = false;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        uint32_t event = I2C_GetLastEvent(i2c_adapter-&gt;cfg-&gt;regs);</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        <span class="comment">// clear all flags</span></div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;        I2C_ClearFlag(i2c_adapter-&gt;cfg-&gt;regs,</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                I2C_FLAG_SMBALERT |</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;                I2C_FLAG_TIMEOUT |</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;                I2C_FLAG_PECERR |</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                I2C_FLAG_OVR |</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;                I2C_FLAG_AF |</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;                I2C_FLAG_ARLO |</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;                I2C_FLAG_BERR);</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="preprocessor"></span>        i2c_adapter-&gt;i2c_erirq_history[i2c_adapter-&gt;i2c_erirq_history_pointer] = event;</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        i2c_adapter-&gt;i2c_erirq_history_pointer = (i2c_adapter-&gt;i2c_erirq_history_pointer + 1) % I2C_LOG_DEPTH;</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *i2c_adapter = (<span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *)i2c_id;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_I2C_validate(i2c_adapter);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        bool woken = false;</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        uint32_t event = I2C_GetLastEvent(i2c_adapter-&gt;cfg-&gt;regs);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        <span class="comment">// clear all flags</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        I2C_ClearFlag(i2c_adapter-&gt;cfg-&gt;regs,</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                I2C_FLAG_SMBALERT |</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                I2C_FLAG_TIMEOUT |</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                I2C_FLAG_PECERR |</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                I2C_FLAG_OVR |</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                I2C_FLAG_AF |</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                I2C_FLAG_ARLO |</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                I2C_FLAG_BERR);</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;<span class="preprocessor"></span>        i2c_adapter-&gt;i2c_erirq_history[i2c_adapter-&gt;i2c_erirq_history_pointer] = event;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        i2c_adapter-&gt;i2c_erirq_history_pointer = (i2c_adapter-&gt;i2c_erirq_history_pointer + 1) % I2C_LOG_DEPTH;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        <span class="comment">// explicitly handle NACK</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        <span class="keywordflow">if</span> (event &amp; I2C_FLAG_AF) {</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="preprocessor"></span>                i2c_adapter-&gt;i2c_nack_counter++;</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        <span class="comment">// explicitly handle NACK</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        <span class="keywordflow">if</span> (event &amp; I2C_FLAG_AF) {</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;<span class="preprocessor"></span>                i2c_adapter-&gt;i2c_nack_counter++;</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="preprocessor"></span>                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649ad5903fb98a5310653faddca089e195bf">I2C_EVENT_NACK</a>, &amp;woken);</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        } <span class="keywordflow">else</span> { <span class="comment">/* Mostly bus errors here */</span></div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;<span class="preprocessor"></span>                i2c_adapter_log_fault(i2c_adapter, PIOS_I2C_ERROR_INTERRUPT);</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                <span class="comment">/* Fail hard on any errors for now */</span></div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c">I2C_EVENT_BUS_ERROR</a>, &amp;woken);</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        }</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="preprocessor"></span>                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649ad5903fb98a5310653faddca089e195bf">I2C_EVENT_NACK</a>, &amp;woken);</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        } <span class="keywordflow">else</span> { <span class="comment">/* Mostly bus errors here */</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="preprocessor">#if defined(PIOS_I2C_DIAGNOSTICS)</span></div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="preprocessor"></span>                i2c_adapter_log_fault(i2c_adapter, PIOS_I2C_ERROR_INTERRUPT);</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                <span class="comment">/* Fail hard on any errors for now */</span></div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c">I2C_EVENT_BUS_ERROR</a>, &amp;woken);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;        }</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;}</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22bacf23badff27bc72acc43096130932b19"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22bacf23badff27bc72acc43096130932b19">I2C_STATE_W_MORE_TXN_ADDR</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00071">pios_i2c_priv.h:71</a></div></div>
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22baf1bf5e65204f34bf3ab04ef69831a93d"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22baf1bf5e65204f34bf3ab04ef69831a93d">I2C_STATE_STOPPED</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00053">pios_i2c_priv.h:53</a></div></div>
 <div class="ttc" id="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22ba9a54aa447894965ffef906417ca6e41d"><div class="ttname"><a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba9a54aa447894965ffef906417ca6e41d">I2C_STATE_W_LAST_TXN_PRE_MIDDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00082">pios_i2c_priv.h:82</a></div></div>
@@ -1107,6 +1099,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__i2c_8c_source.htm
 <div class="ttc" id="structstm32__gpio_html_a3d54b128262b814ecf0ad412093b6402"><div class="ttname"><a href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">stm32_gpio::gpio</a></div><div class="ttdeci">GPIO_TypeDef * gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__stm32_8h_source.html#l00060">pios_stm32.h:60</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter_html_ac60a567d295440253e6edde43b33689f"><div class="ttname"><a href="structpios__i2c__adapter.html#ac60a567d295440253e6edde43b33689f">pios_i2c_adapter::state</a></div><div class="ttdeci">enum i2c_adapter_state state</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00140">pios_i2c_priv.h:140</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter_html_a22998be1ea282fe23fcd44c2b559c987"><div class="ttname"><a href="structpios__i2c__adapter.html#a22998be1ea282fe23fcd44c2b559c987">pios_i2c_adapter::nack</a></div><div class="ttdeci">bool nack</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00137">pios_i2c_priv.h:137</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter__cfg_html_a900bd610a99f0518997e6e2564ef15c7"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html#a900bd610a99f0518997e6e2564ef15c7">pios_i2c_adapter_cfg::scl</a></div><div class="ttdeci">struct stm32_gpio scl</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00042">pios_i2c_priv.h:42</a></div></div>
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_a2a8f77797f5dbd873514e92d3d043649a3c515aa38bcb0e83c213e715968d9f23"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a3c515aa38bcb0e83c213e715968d9f23">I2C_EVENT_ADDR_SENT_LEN_EQ_1</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00092">pios_i2c_priv.h:92</a></div></div>
@@ -1168,6 +1161,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__i2c_8c_source.htm
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_a2a8f77797f5dbd873514e92d3d043649"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649">i2c_adapter_event</a></div><div class="ttdeci">i2c_adapter_event</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00084">pios_i2c_priv.h:84</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i2_c_html_gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00037">pios_i2c.h:37</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter__cfg_html_a97b5a8ff68686286ba5f86dda188eb01"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html#a97b5a8ff68686286ba5f86dda188eb01">pios_i2c_adapter_cfg::transfer_timeout_ms</a></div><div class="ttdeci">uint32_t transfer_timeout_ms</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00041">pios_i2c_priv.h:41</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="group___tau_labs_libraries_html_ga319944cc5db9d35c587f3db201c181b2"><div class="ttname"><a href="group___tau_labs_libraries.html#ga319944cc5db9d35c587f3db201c181b2">lock</a></div><div class="ttdeci">static struct pios_mutex * lock</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00043">alarms.c:43</a></div></div>
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649a8f6788d9ae0ccee581093112a2baa65c">I2C_EVENT_BUS_ERROR</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00085">pios_i2c_priv.h:85</a></div></div>
 <div class="ttc" id="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22bac6069f55ff75bb2d10f158444170bd0c"><div class="ttname"><a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22bac6069f55ff75bb2d10f158444170bd0c">I2C_STATE_R_LAST_TXN_PRE_LAST</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00068">pios_i2c_priv.h:68</a></div></div>

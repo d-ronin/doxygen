@@ -20,6 +20,7 @@ var searchData=
   ['logginggadgetwidget',['LoggingGadgetWidget',['../class_logging_gadget_widget.html',1,'']]],
   ['loggingplugin',['LoggingPlugin',['../class_logging_plugin.html',1,'']]],
   ['loggingthread',['LoggingThread',['../class_logging_thread.html',1,'']]],
+  ['longlongspinbox',['LongLongSpinBox',['../class_long_long_spin_box.html',1,'']]],
   ['lux',['Lux',['../class_lux.html',1,'']]],
   ['luxconfiguration',['LuxConfiguration',['../class_lux_configuration.html',1,'']]]
 ];

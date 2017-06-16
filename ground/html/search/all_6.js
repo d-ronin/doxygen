@@ -58,6 +58,7 @@ var searchData=
   ['fixmode',['fixmode',['../group___g_p_s_gadget_plugin.html#ga145563ebabd7ea6b135bad3d05cb9085',1,'GPSParser']]],
   ['fixsvs',['fixSVs',['../group___g_p_s_gadget_plugin.html#gacd7414def0621beab61941370e0dc874',1,'GPSParser']]],
   ['fixtype',['fixtype',['../group___g_p_s_gadget_plugin.html#gadccc59d425cbc0c0f8da68a3438e4e22',1,'GPSParser']]],
+  ['fixup',['fixup',['../group__utils.html#ga5e226ff1c55371d39b91ad647cb3920f',1,'LongLongSpinBox']]],
   ['fixupvalidationerrors',['fixupValidationErrors',['../group___path.html#gae0c9c6a8529b082de1334d3295fbaf54',1,'FlightDataModel']]],
   ['fla',['fla',['../struct_w_m_mtype___ellipsoid.html#a001bda565c83d57cf057d66dcc6f92ea',1,'WMMtype_Ellipsoid']]],
   ['flags',['flags',['../group___i_p_conn_plugin.html#ga9a0174c2929e65c3dd91d71f7e834e7c',1,'IPConnectionOptionsModel::flags()'],['../group___notify_plugin.html#ga19b5a3d99feb4907b2332962b1468b9f',1,'NotifyTableModel::flags()'],['../group___path.html#gaeabf907ec7c9cfc6c410c2dd6678e603',1,'FlightDataModel::flags()'],['../group___telemetry_scheduler_gadget_plugin.html#ga939260a0d8fb556fbdae2eb142accf2c',1,'SchedulerModel::flags()'],['../group___u_a_v_object_browser_plugin.html#ga16ae36c54433edd7b07439edc1264b59',1,'UAVObjectTreeModel::flags()']]],

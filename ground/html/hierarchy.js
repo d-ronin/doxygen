@@ -120,6 +120,9 @@ var hierarchy =
     [ "QAbstractItemModel", null, [
       [ "UAVObjectTreeModel", "class_u_a_v_object_tree_model.html", null ]
     ] ],
+    [ "QAbstractSpinBox", null, [
+      [ "LongLongSpinBox", "class_long_long_spin_box.html", null ]
+    ] ],
     [ "QAbstractTableModel", null, [
       [ "FlightDataModel", "class_flight_data_model.html", null ],
       [ "IPConnectionOptionsModel", "class_i_p_connection_options_model.html", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ddca65</span>
+   &#160;<span id="projectnumber">1dd76fb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -330,37 +330,34 @@ $(document).ready(function(){initNavTree('pios__dac_8c_source.html','');});
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga2b75536696ba212b8488763b677dfdb6">PIOS_DAC_dma_interrupt_handler</a>(<a class="code" href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a> dev)</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        DMA_ClearITPendingBit(dev-&gt;cfg-&gt;dma_stream, dev-&gt;cfg-&gt;dma_tcif);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        dev-&gt;cur_buf = DMA_GetCurrentMemoryTarget(dev-&gt;cfg-&gt;dma_stream);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        DMA_ClearITPendingBit(dev-&gt;cfg-&gt;dma_stream, dev-&gt;cfg-&gt;dma_tcif);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        dev-&gt;cur_buf = DMA_GetCurrentMemoryTarget(dev-&gt;cfg-&gt;dma_stream);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        uint16_t *buf = dev-&gt;cur_buf ? dev-&gt;dma_buf_0 : dev-&gt;dma_buf_1;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        uint16_t *buf = dev-&gt;cur_buf ? dev-&gt;dma_buf_0 : dev-&gt;dma_buf_1;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">bool</span> in_prog;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">bool</span> in_prog;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        in_prog = dev-&gt;dma_cb((<span class="keywordtype">void</span> *)dev-&gt;ctx, buf, DAC_DMA_SAMPLE_COUNT);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        in_prog = dev-&gt;dma_cb((<span class="keywordtype">void</span> *)dev-&gt;ctx, buf, DAC_DMA_SAMPLE_COUNT);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span> (!in_prog) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="comment">// When a callback declares completion, something between the</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="comment">// last 2 to last 0 buffers is lost / not blitted</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                DMA_Cmd(dev-&gt;cfg-&gt;dma_stream, DISABLE);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                dev-&gt;in_progress = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_DAC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">if</span> (!in_prog) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="comment">// When a callback declares completion, something between the</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="comment">// last 2 to last 0 buffers is lost / not blitted</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                DMA_Cmd(dev-&gt;cfg-&gt;dma_stream, DISABLE);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                dev-&gt;in_progress = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_DAC */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="pios__stm32_8h_html"><div class="ttname"><a href="pios__stm32_8h.html">pios_stm32.h</a></div><div class="ttdoc">Types that are specific to the STM32 peripherals. </div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
 <div class="ttc" id="structpios__dac__cfg_html"><div class="ttname"><a href="structpios__dac__cfg.html">pios_dac_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00042">pios_dac.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga3f2176d0aa8eff62d26ef3e3bc0fdec1"><div class="ttname"><a href="group___p_i_o_s.html#ga3f2176d0aa8eff62d26ef3e3bc0fdec1">PIOS_DAC_install_callback</a></div><div class="ttdeci">bool PIOS_DAC_install_callback(dac_dev_t dev, uint8_t priority, fill_dma_cb cb, void *ctx)</div></div>
 <div class="ttc" id="misc__math_8h_html"><div class="ttname"><a href="misc__math_8h.html">misc_math.h</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="pios__dac_8h_html"><div class="ttname"><a href="pios__dac_8h.html">pios_dac.h</a></div></div>
@@ -370,6 +367,7 @@ $(document).ready(function(){initNavTree('pios__dac_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_gaa2ea90307e93894c81eb334f031c4b09"><div class="ttname"><a href="group___p_i_o_s.html#gaa2ea90307e93894c81eb334f031c4b09">fill_dma_cb</a></div><div class="ttdeci">bool(* fill_dma_cb)(void *ctx, uint16_t *buf, int len)</div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00076">pios_dac.h:76</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_gad29a4212158fb9ddf721ac241e09cb79"><div class="ttname"><a href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a></div><div class="ttdeci">struct dac_dev_s * dac_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00040">pios_dac.h:40</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga06b2a838489fd6bb8f48615002e024d8"><div class="ttname"><a href="group___p_i_o_s.html#ga06b2a838489fd6bb8f48615002e024d8">pios_dac_cfg::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00043">pios_dac.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga65ef061a24ac7629029b77879a408983"><div class="ttname"><a href="group___p_i_o_s.html#ga65ef061a24ac7629029b77879a408983">pios_dac_cfg::clock_cfg</a></div><div class="ttdeci">TIM_TimeBaseInitTypeDef clock_cfg</div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00044">pios_dac.h:44</a></div></div>

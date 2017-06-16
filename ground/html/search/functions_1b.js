@@ -115,6 +115,7 @@ var searchData=
   ['_7elogginggadgetfactory',['~LoggingGadgetFactory',['../group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1',1,'LoggingGadgetFactory']]],
   ['_7elogginggadgetwidget',['~LoggingGadgetWidget',['../group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0',1,'LoggingGadgetWidget']]],
   ['_7eloggingthread',['~LoggingThread',['../group___logging.html#ga2c46311ca624b2fdb1291046309cdbb7',1,'LoggingThread']]],
+  ['_7elonglongspinbox',['~LongLongSpinBox',['../group__utils.html#gafc9ba8acbefb59716ebb0bdb858222b0',1,'LongLongSpinBox']]],
   ['_7elux',['~Lux',['../group___boards___brotronics.html#gadde13b8ed31c438799ae68f835cf34a6',1,'Lux']]],
   ['_7eluxconfiguration',['~LuxConfiguration',['../group___boards___brotronics.html#gad495647f1d5b4ec9a6cb0e3859f51dbc',1,'LuxConfiguration']]],
   ['_7emagicwaypointgadget',['~MagicWaypointGadget',['../group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89',1,'MagicWaypointGadget']]],

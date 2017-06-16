@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ddca65</span>
+   &#160;<span id="projectnumber">1dd76fb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -360,115 +360,104 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__can_8c_source.htm
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a8550c9680a59f697a018b283878b0648">CAN1_RX1_IRQHandler</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        PIOS_CAN_RxGeneric();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#abaf66d2aa1abc9dc5a7d682eec529a45">USB_HP_CAN1_TX_IRQHandler</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span>        CH_IRQ_PROLOGUE();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        PIOS_CAN_TxGeneric();</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_CHIBIOS)</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span>        CH_IRQ_EPILOGUE();</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_CHIBIOS) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        PIOS_CAN_RxGeneric();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#abaf66d2aa1abc9dc5a7d682eec529a45">USB_HP_CAN1_TX_IRQHandler</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        PIOS_CAN_TxGeneric();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RxGeneric(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        CAN_ClearITPendingBit(can_dev-&gt;cfg-&gt;regs, CAN_IT_FMP1);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_CAN_validate(can_dev);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RxGeneric(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        CAN_ClearITPendingBit(can_dev-&gt;cfg-&gt;regs, CAN_IT_FMP1);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_CAN_validate(can_dev);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        CanRxMsg RxMessage;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        CAN_Receive(CAN1, CAN_FIFO1, &amp;RxMessage);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordtype">bool</span> rx_need_yield = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">if</span> (RxMessage.StdId == CAN_COM_ID) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <span class="keywordflow">if</span> (can_dev-&gt;rx_in_cb) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                        (void) (can_dev-&gt;rx_in_cb)(can_dev-&gt;rx_in_context, RxMessage.Data, RxMessage.DLC, NULL, &amp;rx_need_yield);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                rx_need_yield = process_received_message(RxMessage);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_TxGeneric(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        CAN_ClearITPendingBit(can_dev-&gt;cfg-&gt;regs, CAN_IT_TME);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_CAN_validate(can_dev);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        CanRxMsg RxMessage;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        CAN_Receive(CAN1, CAN_FIFO1, &amp;RxMessage);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">bool</span> rx_need_yield = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span> (RxMessage.StdId == CAN_COM_ID) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordflow">if</span> (can_dev-&gt;rx_in_cb) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        (void) (can_dev-&gt;rx_in_cb)(can_dev-&gt;rx_in_context, RxMessage.Data, RxMessage.DLC, NULL, &amp;rx_need_yield);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                rx_need_yield = process_received_message(RxMessage);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_TxGeneric(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        CAN_ClearITPendingBit(can_dev-&gt;cfg-&gt;regs, CAN_IT_TME);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_CAN_validate(can_dev);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordtype">bool</span> tx_need_yield = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> (can_dev-&gt;tx_out_cb) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="comment">// Prepare CAN message structure</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                CanTxMsg msg;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                msg.StdId = CAN_COM_ID;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                msg.ExtId = 0;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                msg.IDE = CAN_ID_STD;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                msg.RTR = CAN_RTR_DATA;                 </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                msg.DLC = (can_dev-&gt;tx_out_cb)(can_dev-&gt;tx_out_context, msg.Data, MAX_SEND_LEN, NULL, &amp;tx_need_yield);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordtype">bool</span> tx_need_yield = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (can_dev-&gt;tx_out_cb) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="comment">// Prepare CAN message structure</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                CanTxMsg msg;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                msg.StdId = CAN_COM_ID;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                msg.ExtId = 0;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                msg.IDE = CAN_ID_STD;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                msg.RTR = CAN_RTR_DATA;                 </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                msg.DLC = (can_dev-&gt;tx_out_cb)(can_dev-&gt;tx_out_context, msg.Data, MAX_SEND_LEN, NULL, &amp;tx_need_yield);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                <span class="comment">// Send message and get mailbox number</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <span class="keywordflow">if</span> (msg.DLC &gt; 0) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        CAN_Transmit(can_dev-&gt;cfg-&gt;regs, &amp;msg);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        CAN_ITConfig(can_dev-&gt;cfg-&gt;regs, CAN_IT_TME, DISABLE);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="comment">// TODO: deal with failure to send and keep the message to retransmit</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                <span class="comment">// Send message and get mailbox number</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                <span class="keywordflow">if</span> (msg.DLC &gt; 0) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        CAN_Transmit(can_dev-&gt;cfg-&gt;regs, &amp;msg);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                        CAN_ITConfig(can_dev-&gt;cfg-&gt;regs, CAN_IT_TME, DISABLE);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                }</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                <span class="comment">// TODO: deal with failure to send and keep the message to retransmit</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_a_n.html#ga8b12bd1aab9e905a42f0a10062a63fb3">PIOS_CAN_TxData</a>(uintptr_t <span class="keywordtype">id</span>, <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d">pios_can_messages</a> msg_id, uint8_t *<a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>)</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;{</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// Fetch the size of this message type or error if unknown</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        uint32_t <a class="code" href="storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9">bytes</a>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">switch</span>(msg_id) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___c_a_n.html#ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487">PIOS_CAN_GIMBAL</a>:</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                bytes = <span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code" href="structpios__can__gimbal__message.html">pios_can_gimbal_message</a>);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="comment">// Look up the CAN BUS Standard ID for this message type</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        uint32_t std_id = pios_can_message_stdid[msg_id];</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="comment">// Format and send the message</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        CanTxMsg msg;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        msg.StdId = std_id &amp; 0x7FF;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        msg.ExtId = 0;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        msg.IDE = CAN_ID_STD;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        msg.RTR = CAN_RTR_DATA;                 </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        msg.DLC = (bytes &gt; 8) ? 8 : bytes;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        memcpy(msg.Data, data, msg.DLC);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        CAN_Transmit(can_dev-&gt;cfg-&gt;regs, &amp;msg);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">return</span> msg.DLC;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_CAN */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;int32_t <a class="code" href="group___p_i_o_s___c_a_n.html#ga8b12bd1aab9e905a42f0a10062a63fb3">PIOS_CAN_TxData</a>(uintptr_t <span class="keywordtype">id</span>, <span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___c_a_n.html#gaea0e3673ecb9505faf3d04695da1f39d">pios_can_messages</a> msg_id, uint8_t *<a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>)</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="comment">// Fetch the size of this message type or error if unknown</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        uint32_t <a class="code" href="storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9">bytes</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">switch</span>(msg_id) {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="group___p_i_o_s___c_a_n.html#ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487">PIOS_CAN_GIMBAL</a>:</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                bytes = <span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code" href="structpios__can__gimbal__message.html">pios_can_gimbal_message</a>);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="comment">// Look up the CAN BUS Standard ID for this message type</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        uint32_t std_id = pios_can_message_stdid[msg_id];</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">// Format and send the message</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        CanTxMsg msg;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        msg.StdId = std_id &amp; 0x7FF;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        msg.ExtId = 0;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        msg.IDE = CAN_ID_STD;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        msg.RTR = CAN_RTR_DATA;                 </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        msg.DLC = (bytes &gt; 8) ? 8 : bytes;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        memcpy(msg.Data, data, msg.DLC);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        CAN_Transmit(can_dev-&gt;cfg-&gt;regs, &amp;msg);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">return</span> msg.DLC;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_CAN */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga9b33d26fbfc63284bb9d420f539914e4"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4">PIOS_Queue_Send_FromISR</a></div><div class="ttdeci">bool PIOS_Queue_Send_FromISR(struct pios_queue *queuep, const void *itemp, bool *wokenp)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00141">pios_queue.c:141</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="pios__can__priv_8h_html"><div class="ttname"><a href="pios__can__priv_8h.html">pios_can_priv.h</a></div><div class="ttdoc">PiOS CAN interface header. </div></div>
@@ -488,11 +477,12 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__can_8c_source.htm
 <div class="ttc" id="structpios__can__gimbal__message_html"><div class="ttname"><a href="structpios__can__gimbal__message.html">pios_can_gimbal_message</a></div><div class="ttdoc">Message to tell gimbal the desired setpoint and FC state. </div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00042">pios_can.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_a_n_html_ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487"><div class="ttname"><a href="group___p_i_o_s___c_a_n.html#ggaea0e3673ecb9505faf3d04695da1f39dabd1b1080e8afaa3ba39821c4130e3487">PIOS_CAN_GIMBAL</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__can_8h_source.html#l00037">pios_can.h:37</a></div></div>
 <div class="ttc" id="structpios__queue_html"><div class="ttname"><a href="structpios__queue.html">pios_queue</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00034">pios_queue.c:34</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="group___actuator_module_html_ga99a334ed9cdb3e7a7c694d5519d08d30"><div class="ttname"><a href="group___actuator_module.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></div><div class="ttdeci">static struct pios_queue * queue</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00081">actuator.c:81</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_af7137074ee2ca2426304c94b0177cb4d"><div class="ttname"><a href="structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d">pios_com_driver::tx_start</a></div><div class="ttdeci">void(* tx_start)(uintptr_t id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00045">pios_com.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga528568aa0f3011cafec5c453fc030e15"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a></div><div class="ttdeci">uint16_t(* pios_com_callback)(uintptr_t context, uint8_t *buf, uint16_t buf_len, uint16_t *headroom, bool *task_woken)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00041">pios_com.h:41</a></div></div>
-<div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_gade16213f02f3a003892a75bc5e510065"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065">usb_ep_entry::context</a></div><div class="ttdeci">uintptr_t context</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__usbhook_8c_source.html#l00128">pios_usbhook.c:128</a></div></div>
+<div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_gade16213f02f3a003892a75bc5e510065"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065">usb_ep_entry::context</a></div><div class="ttdeci">uintptr_t context</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__usbhook_8c_source.html#l00124">pios_usbhook.c:124</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

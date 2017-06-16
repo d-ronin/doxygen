@@ -44,6 +44,7 @@ var searchData=
   ['choosenconfig',['choosenConfig',['../classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b',1,'importSettings']]],
   ['classid',['classId',['../group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c',1,'Core::IUAVGadget::classId()'],['../group___core_plugin.html#gac953657221ba7fda967ada0408332641',1,'Core::IUAVGadgetConfiguration::classId()'],['../group___core_plugin.html#gae2a481c6b01740fcec50deb4742b5173',1,'Core::IUAVGadgetFactory::classId()']]],
   ['classids',['classIds',['../group___core_plugin.html#gab697e11f053f6a4e76f749a6aec7a7e9',1,'Core::UAVGadgetInstanceManager']]],
+  ['cleantext',['cleanText',['../group__utils.html#gaebc297083e3dc41be6b9c72efd557b98',1,'LongLongSpinBox']]],
   ['clear',['clear',['../group___u_a_v_objects_plugin.html#ga3d25ad42d17576d9c6218bd1c65345a9',1,'UAVObjectField::clear()'],['../group___t_l_map_widget.html#ga827a2b95ce33f4a2dcbb98cd1b94ea65',1,'internals::Tile::Clear()'],['../group___t_l_map_widget.html#ga77cb176c33480b11c18a63824649e839',1,'internals::TileMatrix::Clear()']]],
   ['clear_5fbuffers',['clear_buffers',['../classffft_1_1_osc_sin_cos.html#a1be4a9ec10517ae2615d2925c05d7d29',1,'ffft::OscSinCos']]],
   ['clearcontents',['clearContents',['../group___core_plugin.html#ga0450bf70f518ec784c29d9d4f7a1ed3b',1,'Core::IOutputPane']]],
