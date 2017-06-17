@@ -4,6 +4,7 @@ var searchData=
   ['debugleaks',['debugLeaks',['../group__extensionsystem.html#gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b',1,'pluginmanager.cpp']]],
   ['debugmainwindow',['debugMainWindow',['../group___core_plugin.html#ggadc29c2ff13d900c2f185ee95427fb06caf4b0431d5cc108ace609eb877582a059',1,'mainwindow.cpp']]],
   ['debuguavgadgetmanager',['debugUAVGadgetManager',['../group___core_plugin.html#gga61dadd085c1777f559549e05962b2c9ea40daeb017da1d9cfcee88d7ac5ebdb9e',1,'uavgadgetmanager.cpp']]],
+  ['dec',['DEC',['../class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4ea4d344c3e703f92a8ef2f7bb2ccea5479',1,'UAVObjectField']]],
   ['default_5fbutton',['default_button',['../group___u_a_v_object_widget_utils.html#ggacf8aa6ed9da799d1973519df03d1ecfaa8a58b5c21f9b09e20e74ab163d47f09a',1,'ConfigTaskWidget']]],
   ['deleted',['Deleted',['../class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9a30ba387e682bf28d58da8c48829bb029',1,'ExtensionSystem::PluginSpec']]],
   ['deleteoperation',['DeleteOperation',['../group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875',1,'Core::IVersionControl']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1dd76fb</span>
+   &#160;<span id="projectnumber">284f78c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('class_u_a_v_talk.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -135,6 +134,8 @@ Inheritance diagram for UAVTalk:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_1_1_com_stats.html">ComStats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_1_1_u_a_v_talk_header.html">UAVTalkHeader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -157,23 +158,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gac9f7d49b556190b1b7d4b845b8b23a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba16247e0963a29b16a6177e685f1321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaba16247e0963a29b16a6177e685f1321">resetStats</a> ()</td></tr>
 <tr class="separator:gaba16247e0963a29b16a6177e685f1321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39bcb007900ed377097079d21ffe3a68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga39bcb007900ed377097079d21ffe3a68">processInputByte</a> (quint8 rxbyte)</td></tr>
-<tr class="separator:ga39bcb007900ed377097079d21ffe3a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:ga7f7ca2a64b0ea5ec26fb64d06bf9e09b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga7f7ca2a64b0ea5ec26fb64d06bf9e09b">RxStateType</a> { <br/>
-&#160;&#160;<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09baf774a734f7889e634d5b363fa3f3c793">STATE_SYNC</a>, 
-<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09baa1450012a1828440751fcb6f17ac250f">STATE_TYPE</a>, 
-<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09ba3257c8699631219b720e0661955ef1f6">STATE_SIZE</a>, 
-<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09ba14ae245b4bee65b20ff1be4e31396df4">STATE_OBJID</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09baadc60771fcd506f0b9714cdb478ecb08">STATE_INSTID</a>, 
-<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09ba38e65dcea6f1e7c9e74726f3e2f0654b">STATE_DATA</a>, 
-<a class="el" href="group___u_a_v_talk_plugin.html#gga7f7ca2a64b0ea5ec26fb64d06bf9e09baed576d42fef7f3e2488c61b3f64402d7">STATE_CS</a>
-<br/>
- }</td></tr>
-<tr class="separator:ga7f7ca2a64b0ea5ec26fb64d06bf9e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dccbcc3403d8f575378fb8c0f580e14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5dccbcc3403d8f575378fb8c0f580e14">processInput</a> ()</td></tr>
+<tr class="separator:ga5dccbcc3403d8f575378fb8c0f580e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -189,8 +175,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ga81519c2c45745383850ccec92be1eb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga474ec2f43670acca29d18ad9965b0440"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga474ec2f43670acca29d18ad9965b0440">transmitSingleObject</a> (<a class="el" href="class_u_a_v_object.html">UAVObject</a> *obj, quint8 type, bool allInstances)</td></tr>
 <tr class="separator:ga474ec2f43670acca29d18ad9965b0440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae15db61cd3e3604aad8fbd52ddc68fff"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gae15db61cd3e3604aad8fbd52ddc68fff">updateCRC</a> (quint8 <a class="el" href="uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce">crc</a>, const quint8 <a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>)</td></tr>
-<tr class="separator:gae15db61cd3e3604aad8fbd52ddc68fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadefd185fb8609e37990694d45282ecd4"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gadefd185fb8609e37990694d45282ecd4">updateCRC</a> (quint8 <a class="el" href="uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce">crc</a>, const quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, qint32 length)</td></tr>
 <tr class="separator:gadefd185fb8609e37990694d45282ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -200,58 +184,34 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ga0047f38af98ba4de8e38500e10b73046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga096422f1ff46ea45de07a92c41827aa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga096422f1ff46ea45de07a92c41827aa5">objMngr</a></td></tr>
 <tr class="separator:ga096422f1ff46ea45de07a92c41827aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga612e1b395a61ee81d90d8199ba789a86"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga612e1b395a61ee81d90d8199ba789a86">rxBuffer</a> [<a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a>]</td></tr>
-<tr class="separator:ga612e1b395a61ee81d90d8199ba789a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42c90f952688168b5fd89a04a2be9ff5"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga42c90f952688168b5fd89a04a2be9ff5">rxBuffer</a> [<a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a> *12]</td></tr>
+<tr class="separator:ga42c90f952688168b5fd89a04a2be9ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f0eb8c42215b435a77b84d7ffdbbfc3"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga7f0eb8c42215b435a77b84d7ffdbbfc3">txBuffer</a> [<a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a>]</td></tr>
 <tr class="separator:ga7f0eb8c42215b435a77b84d7ffdbbfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94d59693bfbe92bf000ee85b559693e0"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga94d59693bfbe92bf000ee85b559693e0">rxTmpBuffer</a> [4]</td></tr>
-<tr class="separator:ga94d59693bfbe92bf000ee85b559693e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59962a309157ed27efad61d5bf85f650"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga59962a309157ed27efad61d5bf85f650">rxType</a></td></tr>
-<tr class="separator:ga59962a309157ed27efad61d5bf85f650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga922e3ea36927c84023cfb0cf719c9aa0"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga922e3ea36927c84023cfb0cf719c9aa0">rxObjId</a></td></tr>
-<tr class="separator:ga922e3ea36927c84023cfb0cf719c9aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72761110b9b683dad5615619c9323674"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga72761110b9b683dad5615619c9323674">rxInstId</a></td></tr>
-<tr class="separator:ga72761110b9b683dad5615619c9323674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52cc4d0f063a520fcf7fc2a10254118b"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga52cc4d0f063a520fcf7fc2a10254118b">rxLength</a></td></tr>
-<tr class="separator:ga52cc4d0f063a520fcf7fc2a10254118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ce408e2fe258de7a15c77540055a81d"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga8ce408e2fe258de7a15c77540055a81d">rxPacketLength</a></td></tr>
-<tr class="separator:ga8ce408e2fe258de7a15c77540055a81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6dc6fd77ce7d02c121d7c197dfdebd2"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gab6dc6fd77ce7d02c121d7c197dfdebd2">rxCSPacket</a></td></tr>
-<tr class="separator:gab6dc6fd77ce7d02c121d7c197dfdebd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfde70d24df43bcff2ab3c3da3f2444f"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gabfde70d24df43bcff2ab3c3da3f2444f">rxCS</a></td></tr>
-<tr class="separator:gabfde70d24df43bcff2ab3c3da3f2444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga380dea6ca845f80612070ed17ea65655"><td class="memItemLeft" align="right" valign="top">qint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga380dea6ca845f80612070ed17ea65655">rxCount</a></td></tr>
-<tr class="separator:ga380dea6ca845f80612070ed17ea65655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa014be97504e5d24ac39f2808976685e"><td class="memItemLeft" align="right" valign="top">qint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaa014be97504e5d24ac39f2808976685e">packetSize</a></td></tr>
-<tr class="separator:gaa014be97504e5d24ac39f2808976685e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacce7e3b2035887b09dce0fdbba0f1b58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk_plugin.html#ga7f7ca2a64b0ea5ec26fb64d06bf9e09b">RxStateType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gacce7e3b2035887b09dce0fdbba0f1b58">rxState</a></td></tr>
-<tr class="separator:gacce7e3b2035887b09dce0fdbba0f1b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4f56d3bf19cf3c7f36eb077761ea471"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gab4f56d3bf19cf3c7f36eb077761ea471">startOffset</a></td></tr>
+<tr class="separator:gab4f56d3bf19cf3c7f36eb077761ea471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57c116a24c20c04bd6e0c925dc7e798d"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga57c116a24c20c04bd6e0c925dc7e798d">filledBytes</a></td></tr>
+<tr class="separator:ga57c116a24c20c04bd6e0c925dc7e798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga35edebb70765f832afb1174152d4e20c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a_v_talk_1_1_com_stats.html">ComStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga35edebb70765f832afb1174152d4e20c">stats</a></td></tr>
 <tr class="separator:ga35edebb70765f832afb1174152d4e20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5198259bc34e6f215c111d731b822e3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5198259bc34e6f215c111d731b822e3f">useUDPMirror</a></td></tr>
-<tr class="separator:ga5198259bc34e6f215c111d731b822e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02f40e7ac97a6778928a5e9869ea5bc8"><td class="memItemLeft" align="right" valign="top">QUdpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga02f40e7ac97a6778928a5e9869ea5bc8">udpSocketTx</a></td></tr>
-<tr class="separator:ga02f40e7ac97a6778928a5e9869ea5bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fe3d99135440f58cb74fb73a4055ef4"><td class="memItemLeft" align="right" valign="top">QUdpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga3fe3d99135440f58cb74fb73a4055ef4">udpSocketRx</a></td></tr>
-<tr class="separator:ga3fe3d99135440f58cb74fb73a4055ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga053813b68171430545f1bc1d69d450a0"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga053813b68171430545f1bc1d69d450a0">rxDataArray</a></td></tr>
-<tr class="separator:ga053813b68171430545f1bc1d69d450a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:gadad9ea7937a0ef8cf1a162fc2265e9c4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gadad9ea7937a0ef8cf1a162fc2265e9c4">TYPE_MASK</a> = 0xF8</td></tr>
+<tr class="memitem:ga01e440648aa2f6781625168390d3d13a"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga01e440648aa2f6781625168390d3d13a">VER_MASK</a> = 0x70</td></tr>
+<tr class="separator:ga01e440648aa2f6781625168390d3d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadad9ea7937a0ef8cf1a162fc2265e9c4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gadad9ea7937a0ef8cf1a162fc2265e9c4">TYPE_MASK</a> = 0x0f</td></tr>
 <tr class="separator:gadad9ea7937a0ef8cf1a162fc2265e9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad838c235ec5ef5e1389791d518faa6e7"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> = 0x20</td></tr>
 <tr class="separator:gad838c235ec5ef5e1389791d518faa6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga160fa827bdb9b5114b132cf644f76d4c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga160fa827bdb9b5114b132cf644f76d4c">TYPE_OBJ</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> | 0x00)</td></tr>
+<tr class="memitem:ga160fa827bdb9b5114b132cf644f76d4c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga160fa827bdb9b5114b132cf644f76d4c">TYPE_OBJ</a> = 0x00</td></tr>
 <tr class="separator:ga160fa827bdb9b5114b132cf644f76d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e1cb8e2b0aa00f08a16af9c858079e9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5e1cb8e2b0aa00f08a16af9c858079e9">TYPE_OBJ_REQ</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> | 0x01)</td></tr>
+<tr class="memitem:ga5e1cb8e2b0aa00f08a16af9c858079e9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5e1cb8e2b0aa00f08a16af9c858079e9">TYPE_OBJ_REQ</a> = 0x01</td></tr>
 <tr class="separator:ga5e1cb8e2b0aa00f08a16af9c858079e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc2b2ad8c68063a80d64666d0e812572"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gafc2b2ad8c68063a80d64666d0e812572">TYPE_OBJ_ACK</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> | 0x02)</td></tr>
+<tr class="memitem:gafc2b2ad8c68063a80d64666d0e812572"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gafc2b2ad8c68063a80d64666d0e812572">TYPE_OBJ_ACK</a> = 0x02</td></tr>
 <tr class="separator:gafc2b2ad8c68063a80d64666d0e812572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec2c5c58b05deb71a40e1248ff82aa52"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaec2c5c58b05deb71a40e1248ff82aa52">TYPE_ACK</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> | 0x03)</td></tr>
+<tr class="memitem:gaec2c5c58b05deb71a40e1248ff82aa52"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaec2c5c58b05deb71a40e1248ff82aa52">TYPE_ACK</a> = 0x03</td></tr>
 <tr class="separator:gaec2c5c58b05deb71a40e1248ff82aa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga809ec3528886e43e38072e2d16787668"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga809ec3528886e43e38072e2d16787668">TYPE_NACK</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gad838c235ec5ef5e1389791d518faa6e7">TYPE_VER</a> | 0x04)</td></tr>
+<tr class="memitem:ga809ec3528886e43e38072e2d16787668"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga809ec3528886e43e38072e2d16787668">TYPE_NACK</a> = 0x04</td></tr>
 <tr class="separator:ga809ec3528886e43e38072e2d16787668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d20c7ff6e0eedb2ab1243c6bf957fd3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga0d20c7ff6e0eedb2ab1243c6bf957fd3">MIN_HEADER_LENGTH</a> = 8</td></tr>
 <tr class="separator:ga0d20c7ff6e0eedb2ab1243c6bf957fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,8 +227,8 @@ Static Protected Attributes</h2></td></tr>
 <tr class="separator:ga71e922ea4fa7f9e0a9fe89ebdd2fe75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa627c86aec4d382c9744541688fb66ef"><td class="memItemLeft" align="right" valign="top">static const quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaa627c86aec4d382c9744541688fb66ef">OBJID_NOTFOUND</a> = 0x0000</td></tr>
 <tr class="separator:gaa627c86aec4d382c9744541688fb66ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa84c0f2f2a83872a6f82f00969d9ddff"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaa84c0f2f2a83872a6f82f00969d9ddff">TX_BUFFER_SIZE</a> = 2 * 1024</td></tr>
-<tr class="separator:gaa84c0f2f2a83872a6f82f00969d9ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e0d45e8d4eaea0c68a44b0258f3ce58"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga1e0d45e8d4eaea0c68a44b0258f3ce58">TX_BACKLOG_SIZE</a> = 2 * 1024</td></tr>
+<tr class="separator:ga1e0d45e8d4eaea0c68a44b0258f3ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5c5c810a2edb31ed325bf2d54e1b289"><td class="memItemLeft" align="right" valign="top">static const quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac5c5c810a2edb31ed325bf2d54e1b289">crc_table</a> [256]</td></tr>
 <tr class="separator:gac5c5c810a2edb31ed325bf2d54e1b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

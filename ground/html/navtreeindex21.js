@@ -1,5 +1,11 @@
 var NAVTREEINDEX21 =
 {
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5":[3,2,14,77,4],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79":[3,2,14,94],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79":[3,2,14,37,0,3],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79":[3,2,14,77,3],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb":[3,2,14,93],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb":[3,2,14,37,0,0],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb":[3,2,14,77,0],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1":[3,2,14,91],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1":[3,2,14,37,0,2],
@@ -229,8 +235,8 @@ var NAVTREEINDEX21 =
 "group___dial_plugin.html#gaeabf2ea71c12b9ce01fcc94833468297":[3,2,16,91],
 "group___dial_plugin.html#gaeac54ffbddafca4f7d4b61d9d8af758a":[3,2,16,5,0],
 "group___dial_plugin.html#gaeac54ffbddafca4f7d4b61d9d8af758a":[3,2,16,21],
-"group___dial_plugin.html#gaecd0eec0153c2fbc4ee5715e8f4eb343":[3,2,16,42],
 "group___dial_plugin.html#gaecd0eec0153c2fbc4ee5715e8f4eb343":[3,2,16,3,22],
+"group___dial_plugin.html#gaecd0eec0153c2fbc4ee5715e8f4eb343":[3,2,16,42],
 "group___dial_plugin.html#gaecfcaa8536ab2e38ca7a6af12a227156":[3,2,16,3,42],
 "group___dial_plugin.html#gaecfcaa8536ab2e38ca7a6af12a227156":[3,2,16,71],
 "group___dial_plugin.html#gaed251d96de4cea86a69a9b52529c5c69":[3,2,16,3,30],
@@ -243,11 +249,5 @@ var NAVTREEINDEX21 =
 "group___dial_plugin.html#gaf88f5db2a7b289050e6dc6a8cda27e0f":[3,2,16,98],
 "group___dial_plugin.html#gaff758445779de3b3d7830a3fb88b7bd9":[3,2,16,3,45],
 "group___dial_plugin.html#gaff758445779de3b3d7830a3fb88b7bd9":[3,2,16,75],
-"group___do_nothing_plugin.html":[3,2,17],
-"group___empty_gadget_plugin.html":[3,2,18],
-"group___empty_gadget_plugin.html#ga31f0094726f11e434e12aaa0a764d467":[3,2,18,3,1],
-"group___empty_gadget_plugin.html#ga31f0094726f11e434e12aaa0a764d467":[3,2,18,14],
-"group___empty_gadget_plugin.html#ga49fd1e7c797821911cc8c1aaf39af255":[3,2,18,3,0],
-"group___empty_gadget_plugin.html#ga49fd1e7c797821911cc8c1aaf39af255":[3,2,18,10],
-"group___empty_gadget_plugin.html#ga4c9294b56cd062b22669146def8c2cde":[3,2,18,1,1]
+"group___do_nothing_plugin.html":[3,2,17]
 };

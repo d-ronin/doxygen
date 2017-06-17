@@ -781,6 +781,7 @@ var hierarchy =
     [ "internals::TileMatrix", "classinternals_1_1_tile_matrix.html", null ],
     [ "TransactionKey", "class_transaction_key.html", null ],
     [ "Core::UAVConfigVersion", "class_core_1_1_u_a_v_config_version.html", null ],
+    [ "UAVTalk::UAVTalkHeader", "struct_u_a_v_talk_1_1_u_a_v_talk_header.html", null ],
     [ "Ui_GpsDisplayWidget", null, [
       [ "GpsDisplayWidget", "class_gps_display_widget.html", null ]
     ] ],

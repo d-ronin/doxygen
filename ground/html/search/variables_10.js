@@ -3,7 +3,6 @@ var searchData=
   ['p_5fmode_5fuavgadget',['P_MODE_UAVGADGET',['../group___core_plugin.html#ga0888b3ef54e714d32bc7be88f5ec9665',1,'Core::Constants']]],
   ['p_5fmode_5fwelcome',['P_MODE_WELCOME',['../group___core_plugin.html#ga74beb1e358e2c4aececb356533024014',1,'Core::Constants']]],
   ['pa',['PA',['../_o_p_plots_8m.html#a1eee7e566c5e608fa3a769ba1cdacfa6',1,'OPPlots.m']]],
-  ['packetsize',['packetSize',['../group___u_a_v_talk_plugin.html#gaa014be97504e5d24ac39f2808976685e',1,'UAVTalk']]],
   ['pad',['pad',['../group___uploader.html#gaaba148a058c8ce74795468e9652ba539',1,'tl_dfu::DFUObject::messagePackets']]],
   ['parameter',['parameter',['../struct_extension_system_1_1_plugin_argument_description.html#a451dd714bb63d9c2125491f142939b01',1,'ExtensionSystem::PluginArgumentDescription']]],
   ['parentname',['parentName',['../group___usage_stats_plugin.html#gaa7ba029ae670009de8baf528b6d9bdbd',1,'widgetActionInfoType']]],

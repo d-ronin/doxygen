@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1dd76fb</span>
+   &#160;<span id="projectnumber">284f78c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -166,69 +166,75 @@ $(document).ready(function(){initNavTree('defaulthwsettingswidget_8cpp_source.ht
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            QSpinBox *sbx = <span class="keyword">new</span> QSpinBox(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span> (fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits().length())</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                sbx-&gt;setSuffix(QString(<span class="stringliteral">&quot; %1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits()));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            wdg = sbx;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837">UAVObjectField::UINT32</a>: {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a> *sbx = <span class="keyword">new</span> <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits().length())</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                sbx-&gt;<a class="code" href="group__utils.html#gaf85279ceff72d660dcced996c030ae43">setSuffix</a>(QString(<span class="stringliteral">&quot; %1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits()));</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            wdg = sbx;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ade54d949f5105c9e1177f6ce38a7e7ba">UAVObjectField::FLOAT32</a>: {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            QDoubleSpinBox *sbx = <span class="keyword">new</span> QDoubleSpinBox(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits().length())</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                sbx-&gt;setSuffix(QString(<span class="stringliteral">&quot; %1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits()));</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            wdg = sbx;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a263153e4740f4e16ffdc57eb00d37774">UAVObjectField::STRING</a>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            wdg = <span class="keyword">new</span> QLineEdit(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            sbx-&gt;setDisplayIntegerBase(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getDisplayIntegerBase());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            sbx-&gt;setPrefix(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getDisplayPrefix());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            wdg = sbx;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837">UAVObjectField::UINT32</a>: {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a> *sbx = <span class="keyword">new</span> <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits().length())</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                sbx-&gt;<a class="code" href="group__utils.html#gaf85279ceff72d660dcced996c030ae43">setSuffix</a>(QString(<span class="stringliteral">&quot; %1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits()));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            sbx-&gt;<a class="code" href="group__utils.html#ga56ff229bb93b615170008b9a6eafc9ae">setDisplayIntegerBase</a>(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getDisplayIntegerBase());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            sbx-&gt;<a class="code" href="group__utils.html#ga2bfa42403ec5c7c93ad87fa94d0d0f2a">setPrefix</a>(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getDisplayPrefix());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            wdg = sbx;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ade54d949f5105c9e1177f6ce38a7e7ba">UAVObjectField::FLOAT32</a>: {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            QDoubleSpinBox *sbx = <span class="keyword">new</span> QDoubleSpinBox(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits().length())</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                sbx-&gt;setSuffix(QString(<span class="stringliteral">&quot; %1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getUnits()));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            wdg = sbx;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        QStringList objRelation;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;objname:%1&quot;</span>).arg(settingsObj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;fieldname:%1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getName()));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;buttongroup:1&quot;</span>));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;haslimits:yes&quot;</span>));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        wdg-&gt;setProperty(<span class="stringliteral">&quot;objrelation&quot;</span>, objRelation);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        lbl = <span class="keyword">new</span> QLabel(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getName(), <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        layout-&gt;addRow(lbl, wdg);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a263153e4740f4e16ffdc57eb00d37774">UAVObjectField::STRING</a>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            wdg = <span class="keyword">new</span> QLineEdit(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        QStringList objRelation;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;objname:%1&quot;</span>).arg(settingsObj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;fieldname:%1&quot;</span>).arg(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getName()));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;buttongroup:1&quot;</span>));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        objRelation.append(QString(<span class="stringliteral">&quot;haslimits:yes&quot;</span>));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        wdg-&gt;setProperty(<span class="stringliteral">&quot;objrelation&quot;</span>, objRelation);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">autoLoadWidgets</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga5310ccc38c0cfd2b406aac4ac0ce887c">loadAllLimits</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaa3d55f7941db619b9872b0ffdc78ebde">populateWidgets</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga7682451eb1e003d337c679fc8a36c6e1">refreshWidgetsValues</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaad59e4e96d1e4a59067aa44828ddaa3f">enableControls</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Have to force the form as clean (unedited by user) since refreshWidgetsValues forces it to</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// dirty.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaef1ebd891852a741315a8b69975876e6">forceConnectedState</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        lbl = <span class="keyword">new</span> QLabel(fields[<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>]-&gt;getName(), <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        layout-&gt;addRow(lbl, wdg);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">autoLoadWidgets</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga5310ccc38c0cfd2b406aac4ac0ce887c">loadAllLimits</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaa3d55f7941db619b9872b0ffdc78ebde">populateWidgets</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga7682451eb1e003d337c679fc8a36c6e1">refreshWidgetsValues</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaad59e4e96d1e4a59067aa44828ddaa3f">enableControls</a>(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaf42e971c9cd69919e3b05ed25643d516">disableMouseWheelEvents</a>();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">  122</a></span>&#160;<a class="code" href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">DefaultHwSettingsWidget::~DefaultHwSettingsWidget</a>()</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">delete</span> defaultHWSettingsWidget;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Have to force the form as clean (unedited by user) since refreshWidgetsValues forces it to</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// dirty.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaef1ebd891852a741315a8b69975876e6">forceConnectedState</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gaf42e971c9cd69919e3b05ed25643d516">disableMouseWheelEvents</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">  126</a></span>&#160;<a class="code" href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">DefaultHwSettingsWidget::~DefaultHwSettingsWidget</a>()</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">delete</span> defaultHWSettingsWidget;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="ttc" id="group__utils_html_ga2bfa42403ec5c7c93ad87fa94d0d0f2a"><div class="ttname"><a href="group__utils.html#ga2bfa42403ec5c7c93ad87fa94d0d0f2a">LongLongSpinBox::setPrefix</a></div><div class="ttdeci">void setPrefix(const QString &amp;prefix)</div><div class="ttdef"><b>Definition:</b> <a href="longlongspinbox_8cpp_source.html#l00071">longlongspinbox.cpp:71</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837">UAVObjectField::UINT32</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00051">uavobjectfield.h:51</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga945551d9d4d280fe2cd14bc2646d8fbf"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">ConfigTaskWidget::autoLoadWidgets</a></div><div class="ttdeci">void autoLoadWidgets()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00747">configtaskwidget.cpp:747</a></div></div>
+<div class="ttc" id="group__utils_html_ga56ff229bb93b615170008b9a6eafc9ae"><div class="ttname"><a href="group__utils.html#ga56ff229bb93b615170008b9a6eafc9ae">LongLongSpinBox::setDisplayIntegerBase</a></div><div class="ttdeci">void setDisplayIntegerBase(int base)</div><div class="ttdef"><b>Definition:</b> <a href="longlongspinbox_8cpp_source.html#l00138">longlongspinbox.cpp:138</a></div></div>
 <div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3ad47a62cf1ae89582cb875a6bc59662ec"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ad47a62cf1ae89582cb875a6bc59662ec">UAVObjectField::INT32</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00048">uavobjectfield.h:48</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga0789663f8a021f1e85e03a41f99639c9"><div class="ttname"><a href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">DefaultHwSettingsWidget::~DefaultHwSettingsWidget</a></div><div class="ttdeci">~DefaultHwSettingsWidget()</div><div class="ttdef"><b>Definition:</b> <a href="defaulthwsettingswidget_8cpp_source.html#l00122">defaulthwsettingswidget.cpp:122</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga0789663f8a021f1e85e03a41f99639c9"><div class="ttname"><a href="group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9">DefaultHwSettingsWidget::~DefaultHwSettingsWidget</a></div><div class="ttdeci">~DefaultHwSettingsWidget()</div><div class="ttdef"><b>Definition:</b> <a href="defaulthwsettingswidget_8cpp_source.html#l00126">defaulthwsettingswidget.cpp:126</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3a6546a8ed8b8449d2829291856d3f8e5d"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a6546a8ed8b8449d2829291856d3f8e5d">UAVObjectField::UINT8</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00049">uavobjectfield.h:49</a></div></div>
 <div class="ttc" id="defaulthwsettingswidget_8h_html"><div class="ttname"><a href="defaulthwsettingswidget_8h.html">defaulthwsettingswidget.h</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gaf42e971c9cd69919e3b05ed25643d516"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gaf42e971c9cd69919e3b05ed25643d516">ConfigTaskWidget::disableMouseWheelEvents</a></div><div class="ttdeci">void disableMouseWheelEvents()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l01456">configtaskwidget.cpp:1456</a></div></div>
-<div class="ttc" id="group__utils_html_gaf85279ceff72d660dcced996c030ae43"><div class="ttname"><a href="group__utils.html#gaf85279ceff72d660dcced996c030ae43">LongLongSpinBox::setSuffix</a></div><div class="ttdeci">void setSuffix(const QString &amp;suffix)</div><div class="ttdef"><b>Definition:</b> <a href="longlongspinbox_8cpp_source.html#l00081">longlongspinbox.cpp:81</a></div></div>
+<div class="ttc" id="group__utils_html_gaf85279ceff72d660dcced996c030ae43"><div class="ttname"><a href="group__utils.html#gaf85279ceff72d660dcced996c030ae43">LongLongSpinBox::setSuffix</a></div><div class="ttdeci">void setSuffix(const QString &amp;suffix)</div><div class="ttdef"><b>Definition:</b> <a href="longlongspinbox_8cpp_source.html#l00083">longlongspinbox.cpp:83</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gab254ef18e03d0c92544eb2f24539f009"><div class="ttname"><a href="group___config_plugin.html#gab254ef18e03d0c92544eb2f24539f009">DefaultHwSettingsWidget::DefaultHwSettingsWidget</a></div><div class="ttdeci">DefaultHwSettingsWidget(UAVObject *settingsObj, QWidget *parent=0)</div><div class="ttdoc">DefaultHwSettingsWidget::DefaultHwSettingsWidget Constructed when either a new board connection is es...</div><div class="ttdef"><b>Definition:</b> <a href="defaulthwsettingswidget_8cpp_source.html#l00045">defaulthwsettingswidget.cpp:45</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga043de5085e6ade44abfb005e320d10ca"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga043de5085e6ade44abfb005e320d10ca">UAVObject::getFields</a></div><div class="ttdeci">QList&lt; UAVObjectField * &gt; getFields()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00214">uavobject.cpp:214</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3ade54d949f5105c9e1177f6ce38a7e7ba"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ade54d949f5105c9e1177f6ce38a7e7ba">UAVObjectField::FLOAT32</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00052">uavobjectfield.h:52</a></div></div>

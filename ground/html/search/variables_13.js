@@ -27,12 +27,13 @@ var searchData=
   ['sin_5fmlambda',['sin_mlambda',['../struct_w_m_mtype___spherical_harmonic_variables.html#af6906ecd2a98bea39e7d43459d7399cb',1,'WMMtype_SphericalHarmonicVariables']]],
   ['sinlat',['sinLat',['../_o_p_plots_8m.html#af000cf7fd57b63001bb8346bebb6472c',1,'OPPlots.m']]],
   ['sinlon',['sinLon',['../_o_p_plots_8m.html#a545ef384c76a9d0cd05e512194aadff7',1,'OPPlots.m']]],
-  ['size',['size',['../structstruct__c_buffer.html#a80e300447a52eb0b66fd4d754aeb9b1c',1,'struct_cBuffer']]],
+  ['size',['size',['../structstruct__c_buffer.html#a80e300447a52eb0b66fd4d754aeb9b1c',1,'struct_cBuffer::size()'],['../group___u_a_v_talk_plugin.html#gacaff29724612ddb732e865845ef459d5',1,'UAVTalk::UAVTalkHeader::size()']]],
   ['sizeofcode',['SizeOfCode',['../group___uploader.html#gabd16f4e0796a41d99e70eaa2251c5767',1,'tl_dfu::device']]],
   ['sizeofdesc',['SizeOfDesc',['../group___uploader.html#gaf447de9e4998d5ea65e26a28d08bd987',1,'tl_dfu::device']]],
   ['split',['SPLIT',['../group___core_plugin.html#gac606ab3edf11d3377855b39076879af2',1,'Core::Constants']]],
   ['split_5fside_5fby_5fside',['SPLIT_SIDE_BY_SIDE',['../group___core_plugin.html#gabececa23956bc46634779f4abbb9bad9',1,'Core::Constants']]],
   ['sqrt2',['SQRT2',['../namespaceffft.html#a489004390ad7d791bf53a724c0f07abb',1,'ffft']]],
+  ['startoffset',['startOffset',['../group___u_a_v_talk_plugin.html#gab4f56d3bf19cf3c7f36eb077761ea471',1,'UAVTalk']]],
   ['starttime',['startTime',['../uavobjecttemplate_8m.html#a9927793f1f69327ecd9ebf938e0deb92',1,'uavobjecttemplate.m']]],
   ['state',['state',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1806625ef956622e6727d0b0d50274aa',1,'ExtensionSystem::Internal::PluginSpecPrivate::state()'],['../class_logging_plugin.html#a4d257e23044cbb739db6b9621025e9ca',1,'LoggingPlugin::state()']]],
   ['stats',['stats',['../group___u_a_v_talk_plugin.html#ga35edebb70765f832afb1174152d4e20c',1,'UAVTalk']]],
@@ -41,5 +42,6 @@ var searchData=
   ['str2',['str2',['../uavobjecttemplate_8m.html#adb74f228c4c77ea5a6be40d6b8ca03ab',1,'uavobjecttemplate.m']]],
   ['str3',['str3',['../uavobjecttemplate_8m.html#adae762842e4f9cef969be5c36459cad2',1,'uavobjecttemplate.m']]],
   ['str4',['str4',['../uavobjecttemplate_8m.html#af1ff2b3c536aeeef7f638664bab25cbb',1,'uavobjecttemplate.m']]],
-  ['str5',['str5',['../uavobjecttemplate_8m.html#af809e0aa98a3cf1766020241a1b82436',1,'uavobjecttemplate.m']]]
+  ['str5',['str5',['../uavobjecttemplate_8m.html#af809e0aa98a3cf1766020241a1b82436',1,'uavobjecttemplate.m']]],
+  ['sync',['sync',['../group___u_a_v_talk_plugin.html#ga4e539f308818147dc55862105ac6a479',1,'UAVTalk::UAVTalkHeader']]]
 ];

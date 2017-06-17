@@ -7,6 +7,7 @@ var searchData=
   ['beforesecond',['beforeSecond',['../group___notify_plugin.html#ggae06307a2462eb7facbdd57c2992b8dc6ac0e140c5209cc791f99fc19ddf8fe6f0',1,'NotificationItem']]],
   ['between',['BETWEEN',['../class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cbaabc95b31ce0e072b3e30a5ef80063568',1,'UAVObjectField']]],
   ['bigger',['BIGGER',['../class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba8bf45653fc3846d52b51b1bad7ca342e',1,'UAVObjectField::BIGGER()'],['../group___notify_plugin.html#ggad1ed4a0107aa4ec10d481f1f209e5909a0645a6aff2f8f76e753f1eaf08fd4cb0',1,'NotifyPluginOptionsPage::bigger()']]],
+  ['bin',['BIN',['../class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4eacdea43e50837631084a658ed0b0dcf83',1,'UAVObjectField']]],
   ['bitfield',['BITFIELD',['../class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a1a5788021526d853b18af9b5fd11f46d',1,'UAVObjectField']]],
   ['bl_5fbusy',['BL_BUSY',['../namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575',1,'uploader']]],
   ['bl_5fmsg_5fcap_5frep',['BL_MSG_CAP_REP',['../group___uploader.html#gga2c84b0041b195d381b3641f8f4a80582a8b6a0e88c440f7c6eb540c46d7b23bc8',1,'tl_dfu']]],

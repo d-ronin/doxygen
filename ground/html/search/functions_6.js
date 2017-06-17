@@ -44,6 +44,7 @@ var searchData=
   ['followmouse',['FollowMouse',['../group___t_l_map_widget.html#gaedd86ba7117c65bc1ad30ff17f18b653',1,'mapcontrol::TLMapWidget']]],
   ['forceconnectedstate',['forceConnectedState',['../group___u_a_v_object_widget_utils.html#gaef1ebd891852a741315a8b69975876e6',1,'ConfigTaskWidget']]],
   ['forceshadowupdates',['forceShadowUpdates',['../group___u_a_v_object_widget_utils.html#gaae2888fd71dce34ad0c33aed78952e23',1,'ConfigTaskWidget']]],
+  ['formatteddata',['formattedData',['../group___u_a_v_object_browser_plugin.html#ga004390520d83374019717bb9efa63512',1,'IntFieldTreeItem']]],
   ['formchanged',['formChanged',['../group___config_plugin.html#gaa777808eac827fbf95642188024fc667',1,'OutputChannelForm']]],
   ['fprintf',['fprintf',['../uavobjecttemplate_8m.html#a4752ab0ce0602125fadef615d6b3a501',1,'fprintf(&apos;\n\n ***dRonin log parser ***\n\n&apos;):&#160;uavobjecttemplate.m'],['../uavobjecttemplate_8m.html#aef47ea75a29979ee7f91f1e679592a14',1,'fprintf([str1 str2 str3 str4 str5]):&#160;uavobjecttemplate.m']]],
   ['fromcartesiantgeodetic',['FromCartesianTGeodetic',['../group___t_l_map_widget.html#ga872656fbcb1b34b5888a600e4782db13',1,'internals::PureProjection']]],

@@ -1,22 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"uavobjecttemplate_8m.html#a642db902c10b284834220079d223b0e0":[6,0,0,0,0,1,39,21,12],
-"uavobjecttemplate_8m.html#a68fc75536e7a45155ef9f2214915c628":[6,0,0,0,0,1,39,21,73],
-"uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce":[6,0,0,0,0,1,39,21,28],
-"uavobjecttemplate_8m.html#a6f6ccfcf58b31cb6412107d9d5281426":[6,0,0,0,0,1,39,21,41],
-"uavobjecttemplate_8m.html#a70527ee1c468ecb0c36f5a50686d5614":[6,0,0,0,0,1,39,21,30],
-"uavobjecttemplate_8m.html#a770a3d65665549f29ddb8ee060c43cbc":[6,0,0,0,0,1,39,21,4],
-"uavobjecttemplate_8m.html#a79178933c5b76091ca04178d14a5ba98":[6,0,0,0,0,1,39,21,15],
-"uavobjecttemplate_8m.html#a7c4c8356cf27a7aade3cb3016b8ffaa7":[6,0,0,0,0,1,39,21,40],
-"uavobjecttemplate_8m.html#a801097d8e760cb705b4f1cc11d3f62fa":[6,0,0,0,0,1,39,21,62],
-"uavobjecttemplate_8m.html#a81a6b3bb0d87a9f13a703c4526596362":[6,0,0,0,0,1,39,21,20],
-"uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02":[6,0,0,0,0,1,39,21,5],
-"uavobjecttemplate_8m.html#a879fc3585ccb07eba075553b21960f45":[6,0,0,0,0,1,39,21,66],
-"uavobjecttemplate_8m.html#a87d64e1f4a03744d89ab122c222a0f31":[6,0,0,0,0,1,39,21,76],
-"uavobjecttemplate_8m.html#a8a6f3c552a6f8f07d85da9f0cff0459e":[6,0,0,0,0,1,39,21,3],
-"uavobjecttemplate_8m.html#a8baabb94ca31201bfb1cf71bf883668e":[6,0,0,0,0,1,39,21,9],
-"uavobjecttemplate_8m.html#a9295f53f891e8db64c56d4df48cbb933":[6,0,0,0,0,1,39,21,22],
-"uavobjecttemplate_8m.html#a93f5af3df07eac5f87e53d1b032209b7":[6,0,0,0,0,1,39,21,77],
 "uavobjecttemplate_8m.html#a941fe92761b5f8a1adb7534ed9410993":[6,0,0,0,0,1,39,21,45],
 "uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46":[6,0,0,0,0,1,39,21,36],
 "uavobjecttemplate_8m.html#a9927793f1f69327ecd9ebf938e0deb92":[6,0,0,0,0,1,39,21,65],
@@ -249,5 +232,12 @@ var NAVTREEINDEX53 =
 "workspacesettings_8h.html":[6,0,0,0,0,1,10,72],
 "workspacesettings_8h_source.html":[6,0,0,0,0,1,10,72],
 "worldmagmodel_8cpp.html":[6,0,0,0,0,0,3,33],
-"worldmagmodel_8cpp.html#ab014184085b9a8939feae7e69ed73d4f":[6,0,0,0,0,0,3,33,0]
+"worldmagmodel_8cpp.html#ab014184085b9a8939feae7e69ed73d4f":[6,0,0,0,0,0,3,33,0],
+"worldmagmodel_8cpp_source.html":[6,0,0,0,0,0,3,33],
+"worldmagmodel_8h.html":[6,0,0,0,0,0,3,34],
+"worldmagmodel_8h_source.html":[6,0,0,0,0,0,3,34],
+"xmlconfig_8cpp.html":[6,0,0,0,0,0,3,35],
+"xmlconfig_8cpp_source.html":[6,0,0,0,0,0,3,35],
+"xmlconfig_8h.html":[6,0,0,0,0,0,3,36],
+"xmlconfig_8h_source.html":[6,0,0,0,0,0,3,36]
 };

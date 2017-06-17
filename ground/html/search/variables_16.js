@@ -5,6 +5,7 @@ var searchData=
   ['velocity',['velocity',['../structmapcontrol_1_1custom_data.html#ab084fbb62527f0b71d74c9977c2e3f90',1,'mapcontrol::customData::velocity()'],['../group___path.html#ga64d63cdc6fb603cf2d12672d532f605e',1,'PathPlanData::velocity()']]],
   ['vendor',['vendor',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
   ['vendorid',['vendorID',['../group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b',1,'Core::IBoardType::USBInfo::vendorID()'],['../group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729',1,'USBPortInfo::vendorID()']]],
+  ['ver_5fmask',['VER_MASK',['../group___u_a_v_talk_plugin.html#ga01e440648aa2f6781625168390d3d13a',1,'UAVTalk']]],
   ['version',['version',['../struct_extension_system_1_1_plugin_dependency.html#a2d00bf5564134af5cb2eeddf2074eee8',1,'ExtensionSystem::PluginDependency::version()'],['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a00cf7a310301d427a56b1b23576289bc',1,'ExtensionSystem::Internal::PluginSpecPrivate::version()']]],
   ['versionbingmaps',['VersionBingMaps',['../group___t_l_map_widget.html#ga98d1eeb119258d3fb9fab1a550604eb0',1,'core::ProviderStrings']]],
   ['versiongooglelabels',['VersionGoogleLabels',['../group___t_l_map_widget.html#gaa55f03ddecd8e241164698587988c456',1,'core::ProviderStrings']]],

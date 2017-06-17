@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"globals_q.html":[6,1,0,15],
+"globals_r.html":[6,1,0,16],
+"globals_s.html":[6,1,0,17],
+"globals_t.html":[6,1,0,18],
+"globals_type.html":[6,1,3],
+"globals_u.html":[6,1,0,19],
 "globals_v.html":[6,1,0,20],
 "globals_vars.html":[6,1,2],
 "globals_w.html":[6,1,0,21],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce":[3,2,8,2],
 "group___boards___open_pilot_plugin.html#gaef49c9e5a2cbbcbce7b6e7ed3867adaf":[3,2,8,1,14],
 "group___boards___open_pilot_plugin.html#gaef49c9e5a2cbbcbce7b6e7ed3867adaf":[3,2,8,14],
-"group___boards___open_pilot_plugin.html#gaf0508f4301ba826a160e6b291e2b30b3":[3,2,8,1,8],
-"group___boards___open_pilot_plugin.html#gaf0508f4301ba826a160e6b291e2b30b3":[3,2,8,8],
-"group___boards___quantec.html":[3,2,9],
-"group___boards___quantec.html#ga22952c4be1c01642b4c1075a053e4a37":[3,2,9,13],
-"group___boards___quantec.html#ga22952c4be1c01642b4c1075a053e4a37":[3,2,9,1,12],
-"group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee":[3,2,9,1,9],
-"group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee":[3,2,9,9]
+"group___boards___open_pilot_plugin.html#gaf0508f4301ba826a160e6b291e2b30b3":[3,2,8,1,8]
 };

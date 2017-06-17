@@ -1,6 +1,12 @@
 var class_u_a_v_object_field =
 [
     [ "LimitStruct", "struct_u_a_v_object_field_1_1_limit_struct.html", "struct_u_a_v_object_field_1_1_limit_struct" ],
+    [ "DisplayType", "class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4e", [
+      [ "DEC", "class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4ea4d344c3e703f92a8ef2f7bb2ccea5479", null ],
+      [ "HEX", "class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4eadfffd0abbb5b1dacf071dd873413127a", null ],
+      [ "BIN", "class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4eacdea43e50837631084a658ed0b0dcf83", null ],
+      [ "OCT", "class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4ea450ed5e5e85fbd989bd336ee898c5145", null ]
+    ] ],
     [ "FieldType", "class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3", [
       [ "INT8", "class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a19e2840fa94a77e0e4d6bcf7fb40e734", null ],
       [ "INT16", "class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a449ba7536fca8720c9608dd26c74182a", null ],
@@ -20,15 +26,17 @@ var class_u_a_v_object_field =
       [ "BIGGER", "class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba8bf45653fc3846d52b51b1bad7ca342e", null ],
       [ "SMALLER", "class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba5903966788353f79fdfa23cef3c141bf", null ]
     ] ],
-    [ "UAVObjectField", "group___u_a_v_objects_plugin.html#gaa9bb044a9d491f8e0fb49b358f34591c", null ],
-    [ "UAVObjectField", "group___u_a_v_objects_plugin.html#gaef13e2e46a6ca234f78bef5a6a768cd0", null ],
+    [ "UAVObjectField", "group___u_a_v_objects_plugin.html#gaa62e1996df4bab0ae7e9099303f90ca0", null ],
+    [ "UAVObjectField", "group___u_a_v_objects_plugin.html#gad3c9a8344d35b44d2e6e131d58670816", null ],
     [ "checkValue", "group___u_a_v_objects_plugin.html#ga8aed4e68eb0697d4776a103bfe5aa059", null ],
     [ "clear", "group___u_a_v_objects_plugin.html#ga3d25ad42d17576d9c6218bd1c65345a9", null ],
-    [ "constructorInitialize", "group___u_a_v_objects_plugin.html#gaba0e7760ca08df8c79c1d4fddf162f10", null ],
+    [ "constructorInitialize", "group___u_a_v_objects_plugin.html#ga1c18ee3983c9618384fd5773663a1b5e", null ],
     [ "fieldUpdated", "class_u_a_v_object_field.html#a03a1f1534e4c805d091fc17e9ab5ad14", null ],
     [ "getDataOffset", "group___u_a_v_objects_plugin.html#gaacffb4e86c637986046b656bb1e8219a", null ],
     [ "getDefaultValue", "group___u_a_v_objects_plugin.html#ga38163096fd9646fb20dd0a436aeea90c", null ],
     [ "getDescription", "group___u_a_v_objects_plugin.html#gaa3d3e046a28fc7998c00a53b19cc64f1", null ],
+    [ "getDisplayIntegerBase", "group___u_a_v_objects_plugin.html#ga97db1360f205df229f7f77d9e0c97e20", null ],
+    [ "getDisplayPrefix", "group___u_a_v_objects_plugin.html#ga8e1f20440dd64ef5cdd2444257d67760", null ],
     [ "getDouble", "group___u_a_v_objects_plugin.html#gac189fe8172d3c25a937b7d0106025dfe", null ],
     [ "getElementName", "group___u_a_v_objects_plugin.html#gac09ad258fa476f2f84f34fa271ff9d75", null ],
     [ "getElementNames", "group___u_a_v_objects_plugin.html#ga5686a3cb18234741a84666023acf4e8e", null ],
@@ -58,6 +66,7 @@ var class_u_a_v_object_field =
     [ "data", "class_u_a_v_object_field.html#ae6a068d71cfd70f70c7e6fb10f217ca5", null ],
     [ "defaultValues", "class_u_a_v_object_field.html#a33b34642ea8665710ec8da3702965933", null ],
     [ "description", "class_u_a_v_object_field.html#a2eff06ba7b78cc0df093b79739513cf6", null ],
+    [ "display", "class_u_a_v_object_field.html#a9e15ec89de2e20f62c462f23eae90301", null ],
     [ "elementLimits", "class_u_a_v_object_field.html#a16abb7c1b891411815fe34473448b9ce", null ],
     [ "elementNames", "class_u_a_v_object_field.html#a5849334da3325c4cac8625bb5910d57d", null ],
     [ "indices", "class_u_a_v_object_field.html#abcdef6cfbf1b85f4c1ce1c128556d7b7", null ],

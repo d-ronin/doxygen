@@ -13,8 +13,6 @@ var searchData=
   ['uavosha1_5fstr',['UAVOSHA1_STR',['../group___core_plugin.html#gaac836dc44aa34c08b486b01e3016f5c8',1,'Core::Constants']]],
   ['uavsubfieldname',['uavSubFieldName',['../group___scope_plugin.html#ga22ac4a688fa35def44e941b82b0a0b60',1,'PlotData']]],
   ['uavtalk',['uavTalk',['../class_logging_thread.html#a0dfed803383ab861a16c748421396306',1,'LoggingThread']]],
-  ['udpsocketrx',['udpSocketRx',['../group___u_a_v_talk_plugin.html#ga3fe3d99135440f58cb74fb73a4055ef4',1,'UAVTalk']]],
-  ['udpsockettx',['udpSocketTx',['../group___u_a_v_talk_plugin.html#ga02f40e7ac97a6778928a5e9869ea5bc8',1,'UAVTalk']]],
   ['undo',['UNDO',['../group___core_plugin.html#ga34ddc9153ce99ae69ebbe146e121719f',1,'Core::Constants']]],
   ['unfortunately',['Unfortunately',['../uavobjecttemplate_8m.html#a19514c4629c4f7641a38a76ccfca112f',1,'uavobjecttemplate.m']]],
   ['units',['units',['../class_u_a_v_object_field.html#a1ecf5fdaab2ac408b67623d5d75368c5',1,'UAVObjectField']]],
@@ -29,7 +27,6 @@ var searchData=
   ['usememorycache',['useMemoryCache',['../group___t_l_map_widget.html#ga97f5eb98d42c3e790237f8e89a92925b',1,'core::TLMaps']]],
   ['useragent',['UserAgent',['../group___t_l_map_widget.html#ga9dbf3d049cf1947db76a0c87dd0821fc',1,'core::UrlFactory']]],
   ['userdefined',['userDefined',['../group___u_a_v_object_util_plugin.html#ga48e724f021e815c98e2143dd6df1695b',1,'deviceDescriptorStruct']]],
-  ['useudpmirror',['useUDPMirror',['../group___u_a_v_talk_plugin.html#ga5198259bc34e6f215c111d731b822e3f',1,'UAVTalk']]],
   ['useunits',['useUnits',['../group___u_a_v_object_widget_utils.html#ga1b6fe7780b0b6cb6a68b9bc319ce20bb',1,'ConfigTaskWidget::shadow::useUnits()'],['../group___u_a_v_object_widget_utils.html#ga7e8fdc3a4c5ebe4945857a8566c6f3a3',1,'ConfigTaskWidget::objectToWidget::useUnits()'],['../group___u_a_v_object_widget_utils.html#gae76fc33278266a95724eb32874ad3277',1,'ConfigTaskWidget::uiRelationAutomation::useUnits()']]],
   ['utilmngr',['utilMngr',['../group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72',1,'ConfigTaskWidget']]]
 ];
