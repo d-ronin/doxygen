@@ -11,5 +11,6 @@ var searchData=
   ['rectangle',['Rectangle',['../structinternals_1_1_rectangle.html',1,'internals']]],
   ['rectlatlng',['RectLatLng',['../structinternals_1_1_rect_lat_lng.html',1,'internals']]],
   ['revolution',['Revolution',['../class_revolution.html',1,'']]],
-  ['rfmbindwizardplugin',['RfmBindWizardPlugin',['../class_rfm_bind_wizard_plugin.html',1,'']]]
+  ['rfmbindwizardplugin',['RfmBindWizardPlugin',['../class_rfm_bind_wizard_plugin.html',1,'']]],
+  ['runguard',['RunGuard',['../class_run_guard.html',1,'']]]
 ];

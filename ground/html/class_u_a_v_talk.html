@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">284f78c</span>
+   &#160;<span id="projectnumber">fee710d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -134,6 +134,8 @@ Inheritance diagram for UAVTalk:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_1_1_com_stats.html">ComStats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_1_1_u_a_v_talk_file_data.html">UAVTalkFileData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_a_v_talk_1_1_u_a_v_talk_header.html">UAVTalkHeader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -143,6 +145,8 @@ Signals</h2></td></tr>
 <tr class="separator:ga2d657cf81a725bce5e859eb6828cf80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0268d5005ed3241192bae731c362f7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac0268d5005ed3241192bae731c362f7e">nackReceived</a> (<a class="el" href="class_u_a_v_object.html">UAVObject</a> *obj)</td></tr>
 <tr class="separator:gac0268d5005ed3241192bae731c362f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae625070bc0bc716b7003f55e35803e64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gae625070bc0bc716b7003f55e35803e64">fileDataReceived</a> (quint32 fileId, quint32 offset, quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, quint32 dataLen, bool eof, bool lastInSeq)</td></tr>
+<tr class="separator:gae625070bc0bc716b7003f55e35803e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -154,10 +158,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gafb99b5df957808785013366dfd5bc636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga884c8680ea2c95bef75fca2c4c95867d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga884c8680ea2c95bef75fca2c4c95867d">sendObjectRequest</a> (<a class="el" href="class_u_a_v_object.html">UAVObject</a> *obj, bool allInstances)</td></tr>
 <tr class="separator:ga884c8680ea2c95bef75fca2c4c95867d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5266218b1b0976f1e0932c1872f3c14b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5266218b1b0976f1e0932c1872f3c14b">requestFile</a> (quint32 fileId, quint32 offset)</td></tr>
+<tr class="separator:ga5266218b1b0976f1e0932c1872f3c14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9f7d49b556190b1b7d4b845b8b23a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a_v_talk_1_1_com_stats.html">ComStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac9f7d49b556190b1b7d4b845b8b23a34">getStats</a> ()</td></tr>
 <tr class="separator:gac9f7d49b556190b1b7d4b845b8b23a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba16247e0963a29b16a6177e685f1321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaba16247e0963a29b16a6177e685f1321">resetStats</a> ()</td></tr>
-<tr class="separator:gaba16247e0963a29b16a6177e685f1321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5dccbcc3403d8f575378fb8c0f580e14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga5dccbcc3403d8f575378fb8c0f580e14">processInput</a> ()</td></tr>
 <tr class="separator:ga5dccbcc3403d8f575378fb8c0f580e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -165,8 +169,10 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:gaf41ae2b1b8730f18bc3992d6777c0627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaf41ae2b1b8730f18bc3992d6777c0627">objectTransaction</a> (<a class="el" href="class_u_a_v_object.html">UAVObject</a> *obj, quint8 type, bool allInstances)</td></tr>
 <tr class="separator:gaf41ae2b1b8730f18bc3992d6777c0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa95319b62b2b1a92e3f0ef753a1c04a3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaa95319b62b2b1a92e3f0ef753a1c04a3">receiveObject</a> (quint8 type, quint32 objId, quint16 instId, quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, qint32 length)</td></tr>
-<tr class="separator:gaa95319b62b2b1a92e3f0ef753a1c04a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b862e3326f429028b4e6b25ca7607ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga9b862e3326f429028b4e6b25ca7607ab">receiveObject</a> (quint8 type, quint32 objId, quint16 instId, quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, quint32 length)</td></tr>
+<tr class="separator:ga9b862e3326f429028b4e6b25ca7607ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4610f8e9ed98bf60bf96a655a249750d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga4610f8e9ed98bf60bf96a655a249750d">receiveFileChunk</a> (quint32 fileId, quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, quint32 length)</td></tr>
+<tr class="separator:ga4610f8e9ed98bf60bf96a655a249750d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06d53e41c45734baa38c0eb08d684af8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_v_object.html">UAVObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga06d53e41c45734baa38c0eb08d684af8">updateObject</a> (quint32 objId, quint16 instId, quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>)</td></tr>
 <tr class="separator:ga06d53e41c45734baa38c0eb08d684af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ea574fb7b47dc949201d4c29b834208"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga1ea574fb7b47dc949201d4c29b834208">transmitNack</a> (quint32 objId)</td></tr>
@@ -177,6 +183,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ga474ec2f43670acca29d18ad9965b0440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadefd185fb8609e37990694d45282ecd4"><td class="memItemLeft" align="right" valign="top">quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gadefd185fb8609e37990694d45282ecd4">updateCRC</a> (quint8 <a class="el" href="uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce">crc</a>, const quint8 *<a class="el" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>, qint32 length)</td></tr>
 <tr class="separator:gadefd185fb8609e37990694d45282ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64ee77a511e19f79956501723492cad4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga64ee77a511e19f79956501723492cad4">transmitFrame</a> (quint32 length, bool incrTxObj=true)</td></tr>
+<tr class="separator:ga64ee77a511e19f79956501723492cad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -213,16 +221,20 @@ Static Protected Attributes</h2></td></tr>
 <tr class="separator:gaec2c5c58b05deb71a40e1248ff82aa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga809ec3528886e43e38072e2d16787668"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga809ec3528886e43e38072e2d16787668">TYPE_NACK</a> = 0x04</td></tr>
 <tr class="separator:ga809ec3528886e43e38072e2d16787668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20d6515cd2a9312210e1c8adaa7b4074"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga20d6515cd2a9312210e1c8adaa7b4074">TYPE_FILEREQ</a> = 0x08</td></tr>
+<tr class="separator:ga20d6515cd2a9312210e1c8adaa7b4074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a78b120b29b9de7c6e5ab72b19c2307"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga8a78b120b29b9de7c6e5ab72b19c2307">TYPE_FILEDATA</a> = 0x09</td></tr>
+<tr class="separator:ga8a78b120b29b9de7c6e5ab72b19c2307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d20c7ff6e0eedb2ab1243c6bf957fd3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga0d20c7ff6e0eedb2ab1243c6bf957fd3">MIN_HEADER_LENGTH</a> = 8</td></tr>
 <tr class="separator:ga0d20c7ff6e0eedb2ab1243c6bf957fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga279763a8abdcb2fae7cb36916b36c1a8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga279763a8abdcb2fae7cb36916b36c1a8">MAX_HEADER_LENGTH</a></td></tr>
+<tr class="memitem:ga279763a8abdcb2fae7cb36916b36c1a8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga279763a8abdcb2fae7cb36916b36c1a8">MAX_HEADER_LENGTH</a> = <a class="el" href="group___u_a_v_talk_plugin.html#ga0d20c7ff6e0eedb2ab1243c6bf957fd3">MIN_HEADER_LENGTH</a> + 2</td></tr>
 <tr class="separator:ga279763a8abdcb2fae7cb36916b36c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga094abac2d747f187a4b22bea1dd28ec0"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga094abac2d747f187a4b22bea1dd28ec0">CHECKSUM_LENGTH</a> = 1</td></tr>
 <tr class="separator:ga094abac2d747f187a4b22bea1dd28ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac89ca6073b8cf1479a5e2468b3691db9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac89ca6073b8cf1479a5e2468b3691db9">MAX_PAYLOAD_LENGTH</a> = 256</td></tr>
-<tr class="separator:gac89ca6073b8cf1479a5e2468b3691db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a37286c5e8b676d49e134f26444a0c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#ga279763a8abdcb2fae7cb36916b36c1a8">MAX_HEADER_LENGTH</a> + <a class="el" href="group___u_a_v_talk_plugin.html#gac89ca6073b8cf1479a5e2468b3691db9">MAX_PAYLOAD_LENGTH</a> + <a class="el" href="group___u_a_v_talk_plugin.html#ga094abac2d747f187a4b22bea1dd28ec0">CHECKSUM_LENGTH</a>)</td></tr>
+<tr class="memitem:gab5a37286c5e8b676d49e134f26444a0c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a> = 256</td></tr>
 <tr class="separator:gab5a37286c5e8b676d49e134f26444a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac89ca6073b8cf1479a5e2468b3691db9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac89ca6073b8cf1479a5e2468b3691db9">MAX_PAYLOAD_LENGTH</a> = (<a class="el" href="group___u_a_v_talk_plugin.html#gab5a37286c5e8b676d49e134f26444a0c">MAX_PACKET_LENGTH</a> - <a class="el" href="group___u_a_v_talk_plugin.html#ga094abac2d747f187a4b22bea1dd28ec0">CHECKSUM_LENGTH</a> - <a class="el" href="group___u_a_v_talk_plugin.html#ga279763a8abdcb2fae7cb36916b36c1a8">MAX_HEADER_LENGTH</a>)</td></tr>
+<tr class="separator:gac89ca6073b8cf1479a5e2468b3691db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71e922ea4fa7f9e0a9fe89ebdd2fe75c"><td class="memItemLeft" align="right" valign="top">static const quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga71e922ea4fa7f9e0a9fe89ebdd2fe75c">ALL_INSTANCES</a> = 0xFFFF</td></tr>
 <tr class="separator:ga71e922ea4fa7f9e0a9fe89ebdd2fe75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa627c86aec4d382c9744541688fb66ef"><td class="memItemLeft" align="right" valign="top">static const quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gaa627c86aec4d382c9744541688fb66ef">OBJID_NOTFOUND</a> = 0x0000</td></tr>
@@ -231,6 +243,10 @@ Static Protected Attributes</h2></td></tr>
 <tr class="separator:ga1e0d45e8d4eaea0c68a44b0258f3ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5c5c810a2edb31ed325bf2d54e1b289"><td class="memItemLeft" align="right" valign="top">static const quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac5c5c810a2edb31ed325bf2d54e1b289">crc_table</a> [256]</td></tr>
 <tr class="separator:gac5c5c810a2edb31ed325bf2d54e1b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04fb1b99e4c20344df5fdf61e5135e77"><td class="memItemLeft" align="right" valign="top">static const quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga04fb1b99e4c20344df5fdf61e5135e77">FILEDATA_FLAG_EOF</a> = 0x01</td></tr>
+<tr class="separator:ga04fb1b99e4c20344df5fdf61e5135e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4a3dcb995f0aaeb6bd170ffa16acacc"><td class="memItemLeft" align="right" valign="top">static const quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac4a3dcb995f0aaeb6bd170ffa16acacc">FILEDATA_FLAG_LAST</a> = 0x02</td></tr>
+<tr class="separator:gac4a3dcb995f0aaeb6bd170ffa16acacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">

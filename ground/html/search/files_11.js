@@ -21,5 +21,8 @@ var searchData=
   ['rfmbindwizard_2ecpp',['rfmbindwizard.cpp',['../rfmbindwizard_8cpp.html',1,'']]],
   ['rfmbindwizard_2eh',['rfmbindwizard.h',['../rfmbindwizard_8h.html',1,'']]],
   ['rfmbindwizardplugin_2ecpp',['rfmbindwizardplugin.cpp',['../rfmbindwizardplugin_8cpp.html',1,'']]],
-  ['rfmbindwizardplugin_2eh',['rfmbindwizardplugin.h',['../rfmbindwizardplugin_8h.html',1,'']]]
+  ['rfmbindwizardplugin_2eh',['rfmbindwizardplugin.h',['../rfmbindwizardplugin_8h.html',1,'']]],
+  ['runguard_2ecpp',['runguard.cpp',['../runguard_8cpp.html',1,'']]],
+  ['runguard_2eh',['runguard.h',['../runguard_8h.html',1,'']]],
+  ['runguard_5fglobal_2eh',['runguard_global.h',['../runguard__global_8h.html',1,'']]]
 ];

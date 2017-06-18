@@ -94,6 +94,7 @@ var searchData=
   ['dostarttempcal',['doStartTempCal',['../group___config_plugin.html#gad79bd9545005476bb15c478607e55a36',1,'Calibration']]],
   ['doublespindelegate',['DoubleSpinDelegate',['../group___config_plugin.html#ga53d62f046bdee3e5b67f2b82aaa08a8a',1,'DoubleSpinDelegate']]],
   ['downloaddescriptionasbytearray',['DownloadDescriptionAsByteArray',['../group___uploader.html#gac6af846d0abbbbf8eaa60fc70473974c',1,'tl_dfu::DFUObject']]],
+  ['downloadfile',['downloadFile',['../group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1',1,'Telemetry::downloadFile()'],['../group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3',1,'TelemetryManager::downloadFile()']]],
   ['downloadfinished',['downloadFinished',['../group___uploader.html#gab8c8a915689270cc1b48e9784b275c75',1,'tl_dfu::DFUObject']]],
   ['downloadpartitionthreaded',['DownloadPartitionThreaded',['../group___uploader.html#gaf78a7740b7588630b7147af22fc5edcc',1,'tl_dfu::DFUObject']]],
   ['drag',['Drag',['../group___t_l_map_widget.html#gaf302579c11ad5c2448be76ada0b19bf5',1,'internals::Core']]],

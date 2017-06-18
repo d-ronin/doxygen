@@ -11,7 +11,7 @@ var searchData=
   ['objmngr',['objMngr',['../group___u_a_v_talk_plugin.html#ga096422f1ff46ea45de07a92c41827aa5',1,'UAVTalk']]],
   ['objname',['objname',['../group___u_a_v_object_widget_utils.html#ga3a6899c9cfb56d74f0bf98300a156bc7',1,'ConfigTaskWidget::uiRelationAutomation']]],
   ['objrequest',['objRequest',['../group___u_a_v_talk_plugin.html#ga35e10d2ea8bcd4f4bd1e32db43857e2c',1,'ObjectTransactionInfo']]],
-  ['offset',['offset',['../class_u_a_v_object_field.html#a8d473734be71fe3a3dbcd1a854b497f2',1,'UAVObjectField']]],
+  ['offset',['offset',['../class_u_a_v_object_field.html#a8d473734be71fe3a3dbcd1a854b497f2',1,'UAVObjectField::offset()'],['../group___u_a_v_talk_plugin.html#ga72e3b3e6ce2fadec7a26308d0c5088bd',1,'UAVTalk::UAVTalkFileData::offset()']]],
   ['open',['OPEN',['../group___core_plugin.html#ga9c2bccd3a88aafefdd2327622cb47a73',1,'Core::Constants']]],
   ['open_5fin_5fexternal_5feditor',['OPEN_IN_EXTERNAL_EDITOR',['../group___core_plugin.html#gaf07120113ef10979e6ee49d688fb42ce',1,'Core::Constants']]],
   ['open_5fwith',['OPEN_WITH',['../group___core_plugin.html#gaead1f37ead69aad73333544a537be09b',1,'Core::Constants']]],

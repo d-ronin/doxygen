@@ -38,6 +38,8 @@ var searchData=
   ['txretries',['txRetries',['../group___u_a_v_talk_plugin.html#ga071780b1d6a06aa36a41efaa190e97ec',1,'Telemetry::TelemetryStats']]],
   ['type',['type',['../group___setup_wizard.html#gae266726733ea9753d4b40ababc4ed7dd',1,'mixerChannelSettings::type()'],['../classuavobject_1_1_u_a_v_object_field.html#acc9aa14ec01184df177b6ef907073d1f',1,'uavobject.UAVObjectField.type()'],['../struct_u_a_v_object_field_1_1_limit_struct.html#a7f346cc2754bc63a0a0ae587b183b3ff',1,'UAVObjectField::LimitStruct::type()'],['../class_u_a_v_object_field.html#ad84e6c3a333d2c62b5159936e42fb737',1,'UAVObjectField::type()'],['../group___u_a_v_talk_plugin.html#ga3f6a18320765c860ab1369b270478a8e',1,'UAVTalk::UAVTalkHeader::type()'],['../group___usage_stats_plugin.html#gab338287a71f90e647a274a490213ff46',1,'widgetActionInfoType::type()']]],
   ['type_5fack',['TYPE_ACK',['../group___u_a_v_talk_plugin.html#gaec2c5c58b05deb71a40e1248ff82aa52',1,'UAVTalk']]],
+  ['type_5ffiledata',['TYPE_FILEDATA',['../group___u_a_v_talk_plugin.html#ga8a78b120b29b9de7c6e5ab72b19c2307',1,'UAVTalk']]],
+  ['type_5ffilereq',['TYPE_FILEREQ',['../group___u_a_v_talk_plugin.html#ga20d6515cd2a9312210e1c8adaa7b4074',1,'UAVTalk']]],
   ['type_5fmask',['TYPE_MASK',['../group___u_a_v_talk_plugin.html#gadad9ea7937a0ef8cf1a162fc2265e9c4',1,'UAVTalk']]],
   ['type_5fnack',['TYPE_NACK',['../group___u_a_v_talk_plugin.html#ga809ec3528886e43e38072e2d16787668',1,'UAVTalk']]],
   ['type_5fobj',['TYPE_OBJ',['../group___u_a_v_talk_plugin.html#ga160fa827bdb9b5114b132cf644f76d4c',1,'UAVTalk']]],

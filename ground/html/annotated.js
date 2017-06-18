@@ -291,6 +291,7 @@ var annotated =
     [ "RebootPage", "class_reboot_page.html", "class_reboot_page" ],
     [ "Revolution", "class_revolution.html", "class_revolution" ],
     [ "RfmBindWizardPlugin", "class_rfm_bind_wizard_plugin.html", null ],
+    [ "RunGuard", "class_run_guard.html", "class_run_guard" ],
     [ "SavePage", "class_save_page.html", "class_save_page" ],
     [ "ScaledPixmapLabel", "class_scaled_pixmap_label.html", "class_scaled_pixmap_label" ],
     [ "Scatterplot2dScopeConfig", "class_scatterplot2d_scope_config.html", "class_scatterplot2d_scope_config" ],

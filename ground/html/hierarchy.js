@@ -764,6 +764,7 @@ var hierarchy =
     [ "core::RawTile", "classcore_1_1_raw_tile.html", null ],
     [ "internals::Rectangle", "structinternals_1_1_rectangle.html", null ],
     [ "internals::RectLatLng", "structinternals_1_1_rect_lat_lng.html", null ],
+    [ "RunGuard", "class_run_guard.html", null ],
     [ "SettingsDialog", null, [
       [ "Core::Internal::SettingsDialog", "class_core_1_1_internal_1_1_settings_dialog.html", null ]
     ] ],
@@ -781,6 +782,7 @@ var hierarchy =
     [ "internals::TileMatrix", "classinternals_1_1_tile_matrix.html", null ],
     [ "TransactionKey", "class_transaction_key.html", null ],
     [ "Core::UAVConfigVersion", "class_core_1_1_u_a_v_config_version.html", null ],
+    [ "UAVTalk::UAVTalkFileData", "struct_u_a_v_talk_1_1_u_a_v_talk_file_data.html", null ],
     [ "UAVTalk::UAVTalkHeader", "struct_u_a_v_talk_1_1_u_a_v_talk_header.html", null ],
     [ "Ui_GpsDisplayWidget", null, [
       [ "GpsDisplayWidget", "class_gps_display_widget.html", null ]

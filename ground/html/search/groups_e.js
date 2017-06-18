@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['raw_20hid_20plugin',['Raw HID Plugin',['../group___raw_h_i_d_plugin.html',1,'']]]
+  ['raw_20hid_20plugin',['Raw HID Plugin',['../group___raw_h_i_d_plugin.html',1,'']]],
+  ['runguard',['RunGuard',['../group__runguard.html',1,'']]]
 ];

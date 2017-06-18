@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5":[3,2,14,92],
+"group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5":[3,2,14,37,0,4],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5":[3,2,14,77,4],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79":[3,2,14,94],
 "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79":[3,2,14,37,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "group___dial_plugin.html#gaf4bf508f606e67bd5355ed00af142027":[3,2,16,35],
 "group___dial_plugin.html#gaf88f5db2a7b289050e6dc6a8cda27e0f":[3,2,16,6,22],
 "group___dial_plugin.html#gaf88f5db2a7b289050e6dc6a8cda27e0f":[3,2,16,98],
-"group___dial_plugin.html#gaff758445779de3b3d7830a3fb88b7bd9":[3,2,16,3,45],
-"group___dial_plugin.html#gaff758445779de3b3d7830a3fb88b7bd9":[3,2,16,75],
-"group___do_nothing_plugin.html":[3,2,17]
+"group___dial_plugin.html#gaff758445779de3b3d7830a3fb88b7bd9":[3,2,16,3,45]
 };
