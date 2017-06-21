@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"globals_m.html":[6,1,0,11],
+"globals_n.html":[6,1,0,12],
 "globals_o.html":[6,1,0,13],
 "globals_p.html":[6,1,0,14],
 "globals_q.html":[6,1,0,15],
@@ -35,10 +37,10 @@ var NAVTREEINDEX8 =
 "gpsdisplaywidget_8cpp_source.html":[6,0,0,0,0,1,16,10],
 "gpsdisplaywidget_8h.html":[6,0,0,0,0,1,16,11],
 "gpsdisplaywidget_8h_source.html":[6,0,0,0,0,1,16,11],
-"gpsitem_8cpp.html":[6,0,0,0,0,0,3,2,2],
-"gpsitem_8cpp_source.html":[6,0,0,0,0,0,3,2,2],
-"gpsitem_8h.html":[6,0,0,0,0,0,3,2,3],
-"gpsitem_8h_source.html":[6,0,0,0,0,0,3,2,3],
+"gpsitem_8cpp.html":[6,0,0,0,0,0,4,2,2],
+"gpsitem_8cpp_source.html":[6,0,0,0,0,0,4,2,2],
+"gpsitem_8h.html":[6,0,0,0,0,0,4,2,3],
+"gpsitem_8h_source.html":[6,0,0,0,0,0,4,2,3],
 "gpsparser_8cpp.html":[6,0,0,0,0,1,16,12],
 "gpsparser_8cpp_source.html":[6,0,0,0,0,1,16,12],
 "gpsparser_8h.html":[6,0,0,0,0,1,16,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "group___boards___open_pilot_plugin.html#gae37c1072aa8fa5d21f03f2a61ad6ee32":[3,2,8,13],
 "group___boards___open_pilot_plugin.html#gae5372488eec83623b6aad34593708034":[3,2,8,1,5],
 "group___boards___open_pilot_plugin.html#gae5372488eec83623b6aad34593708034":[3,2,8,5],
-"group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce":[3,2,8,1,2],
-"group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce":[3,2,8,2],
-"group___boards___open_pilot_plugin.html#gaef49c9e5a2cbbcbce7b6e7ed3867adaf":[3,2,8,1,14]
+"group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce":[3,2,8,1,2]
 };

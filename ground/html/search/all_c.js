@@ -103,7 +103,7 @@ var searchData=
   ['logfile',['LogFile',['../class_log_file.html',1,'LogFile'],['../class_log_file.html#a7a1cbbcbd9207aff498200f43afc000b',1,'LogFile::LogFile()'],['../group___kml_export_plugin.html#ga465cd591372c473372a6d12904c997f6',1,'KmlExport::logFile()'],['../class_logging_thread.html#ab940b3322d9c974b3d3630b9509ef4bb',1,'LoggingThread::logFile()'],['../uavobjecttemplate_8m.html#ad5dc54ad31adc60ebf4dd2ba4348a8a2',1,'logfile():&#160;uavobjecttemplate.m']]],
   ['logfile_2ecpp',['logfile.cpp',['../logfile_8cpp.html',1,'']]],
   ['logfile_2eh',['logfile.h',['../logfile_8h.html',1,'']]],
-  ['logging',['LOGGING',['../class_logging_plugin.html#a56a2221d35b978d39012cbd631af83aca8e92421dfc070a67508f0311f921c0cd',1,'LoggingPlugin::LOGGING()'],['../group___logging.html',1,'(Global Namespace)']]],
+  ['logging',['LOGGING',['../class_logging_plugin.html#a16eeab5c157daf69712e99a76456d38ba8e92421dfc070a67508f0311f921c0cd',1,'LoggingPlugin::LOGGING()'],['../group___logging.html',1,'(Global Namespace)']]],
   ['loggingconnection',['LoggingConnection',['../class_logging_connection.html',1,'LoggingConnection'],['../group___logging.html#ga4e4cd5c90f83710ae2807a8257db1c70',1,'LoggingConnection::LoggingConnection()']]],
   ['loggingdevice',['LoggingDevice',['../class_logging_device.html',1,'LoggingDevice'],['../group___core_plugin.html#gaba24d30b517c7a1f35721b04eb1cc90b',1,'LoggingDevice::LoggingDevice()']]],
   ['loggingdevice_2ecpp',['loggingdevice.cpp',['../loggingdevice_8cpp.html',1,'']]],

@@ -13,6 +13,9 @@ var hierarchy =
       [ "Transition", "class_transition.html", null ]
     ] ],
     [ "ConfigInputWidget::ArmingMethod", "struct_config_input_widget_1_1_arming_method.html", null ],
+    [ "at_flash", "structat__flash.html", null ],
+    [ "at_flash_header", "structat__flash__header.html", null ],
+    [ "at_measurement", "structat__measurement.html", null ],
     [ "AutotunedValues", "struct_autotuned_values.html", null ],
     [ "AutotuneFinalPage", null, [
       [ "AutotuneFinalPage", "class_autotune_final_page.html", null ]

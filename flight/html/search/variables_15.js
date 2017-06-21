@@ -16,6 +16,7 @@ var searchData=
   ['unused2',['unused2',['../structbl__messages.html#ae01591c1d800f4fbb8e842c10f8d18f4',1,'bl_messages::unused2()'],['../structmsg__jump__fw.html#a8711cf2866b008ce3ef8d6be72ff2cfa',1,'msg_jump_fw::unused2()'],['../bl__messages_8h.html#a2a1867588202035ba686a2b92b5f7e3f',1,'unused2():&#160;bl_messages.h']]],
   ['up',['up',['../namespacepx__uploader.html#a812e7d5a4c085bc83b8c650d68adace0',1,'px_uploader']]],
   ['update',['update',['../structmsp__comp__gps.html#a9b745ad7505ed29b51948c2686188647',1,'msp_comp_gps::update()'],['../structpanel__t.html#a86a6baafb13a685ec9ed99cd16a1799d',1,'panel_t::update()'],['../structpios__servo__callbacks.html#a8985006ca335e10b48060b3d00f5fda1',1,'pios_servo_callbacks::update()'],['../group___tx_p_i_d_module.html#ga80072bd0c1ddc10b66d3fecb7a5982df',1,'update():&#160;msp_messages.h']]],
+  ['update_5fcounter',['update_counter',['../group___autotuning_module.html#ga9045d18821a48cbea8fb3477597f39dc',1,'autotune.c']]],
   ['updateperiodms',['updatePeriodMs',['../struct_periodic_object_list_struct.html#a8473f34184b9b0caa6e10095501984f2',1,'PeriodicObjectListStruct']]],
   ['ups_5fa',['UPS_a',['../ups_8c.html#a9e0a017e764862c40241beacea4a525c',1,'ups.c']]],
   ['ups_5fconstant_5ftable',['UPS_Constant_Table',['../mgrs_8c.html#a942a47aae7a4b3deeada722c4fb5e213',1,'mgrs.c']]],

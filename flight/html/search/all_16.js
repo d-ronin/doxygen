@@ -44,7 +44,7 @@ var searchData=
   ['veld',['velD',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a3dcace94a7b7317b432bcdeb69271326',1,'UBX_NAV_VELNED']]],
   ['vele',['velE',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a6a8d3e61f2818644777283c0ea93dec8',1,'UBX_NAV_VELNED']]],
   ['veln',['velN',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#ab9c0e5be2137b6287caa0d98942c521d',1,'UBX_NAV_VELNED']]],
-  ['velocity',['Velocity',['../structtelemetrydata.html#a9e13ab1fbc35aa3717dfcb1cef027ebf',1,'telemetrydata::Velocity()'],['../group___p_i_o_s___s_e_n_s_o_r_s.html#gac984a7c87debc740c5189d33fe857ed3',1,'pios_sensor_rangefinder_data::velocity()']]],
+  ['velocity',['velocity',['../group___p_i_o_s___s_e_n_s_o_r_s.html#gac984a7c87debc740c5189d33fe857ed3',1,'pios_sensor_rangefinder_data::velocity()'],['../structtelemetrydata.html#a9e13ab1fbc35aa3717dfcb1cef027ebf',1,'telemetrydata::Velocity()']]],
   ['velocity_5factual',['velocity_actual',['../structtelemetry__t.html#a9637d9fa2ca31cd47c5469e711191cb1',1,'telemetry_t']]],
   ['velocity_5fstatus',['velocity_status',['../group___p_i_o_s___s_e_n_s_o_r_s.html#gafc1e0b736d2bd24a4413830bc1496ca8',1,'pios_sensor_rangefinder_data']]],
   ['velocity_5fz',['velocity_z',['../structcfvert.html#a557d1abc542ca1e6d3439666e3478b1e',1,'cfvert']]],

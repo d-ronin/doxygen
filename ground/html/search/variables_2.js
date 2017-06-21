@@ -4,6 +4,8 @@ var searchData=
   ['baseecef',['BaseECEF',['../_o_p_plots_8m.html#ac1ec51a7dd6d455e7752b2436fd61a0c',1,'OPPlots.m']]],
   ['bcddevice',['bcdDevice',['../group___core_plugin.html#ga874a6af25c4e960a94c79e02c29a8b40',1,'Core::IBoardType::USBInfo::bcdDevice()'],['../group___raw_h_i_d_plugin.html#ga546927dd722c593c7acfca1cb045494d',1,'USBPortInfo::bcdDevice()']]],
   ['bearing',['bearing',['../group___t_l_map_widget.html#ga473dc356430fb4d398c78d0fdde33ad1',1,'mapcontrol::distBearingAltitude']]],
+  ['beta',['beta',['../group___config_plugin.html#gac64db7aec94a4c605d94d0027c5c1aaf',1,'AutotunedValues']]],
+  ['bias',['bias',['../group___config_plugin.html#gadffe0a2a678121cfe3951099cd811f1a',1,'AutotunedValues']]],
   ['bingmapsclienttoken',['BingMapsClientToken',['../group___t_l_map_widget.html#ga4c3a944c12deba7b13251f0c04685ac6',1,'core::ProviderStrings']]],
   ['bl_5fversion',['bl_version',['../group___uploader.html#gaf949d4e3cec515704c156a9ea1f45bfc',1,'msg_capabilities_rep_specific::bl_version()'],['../structdevice_info.html#a11c0e01d0d01c04fb37571dfd72120a4',1,'deviceInfo::bl_version()'],['../group___uploader.html#ga6f584609b0c34d0a6e9f4f25168bf901',1,'tl_dfu::device::BL_Version()']]],
   ['board',['board',['../struct_u_a_v_object_field_1_1_limit_struct.html#ae5d5e0653c652c0e50c62526f8fbee72',1,'UAVObjectField::LimitStruct::board()'],['../structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa',1,'deviceInfo::board()'],['../group___usage_stats_plugin.html#ga8af3b37c74a2b4bad4a90a9f15120a98',1,'boardLog::board()']]],

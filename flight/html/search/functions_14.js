@@ -122,7 +122,7 @@ var searchData=
   ['updatesettings',['updateSettings',['../group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;ComUsbBridge.c'],['../group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;GPS.c'],['../group___logging.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;logging.c'],['../group___radio_com_bridge_module.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;RadioComBridge.c'],['../group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;telemetry.c'],['../group___u_a_v_o_mavlink_bridge.html#gad0b9bd8f45359133da342c354426cb80',1,'updateSettings():&#160;UAVOMavlinkBridge.c']]],
   ['updatestats',['updateStats',['../group___system_module.html#ga8bb5aa227c84456ab4205dd2fc89816e',1,'systemmod.c']]],
   ['updatesystemalarms',['updateSystemAlarms',['../group___system_module.html#ga4bcd3f188986b2dc083749d0cdc3c1ae',1,'systemmod.c']]],
-  ['updatesystemident',['UpdateSystemIdent',['../group___autotuning_module.html#gad58aa3fe2a4bc727d0a3b28a23f8601b',1,'autotune.c']]],
+  ['updatesystemident',['UpdateSystemIdent',['../group___autotuning_module.html#gabd06ceed98a5cdec86ea930252142a3e',1,'autotune.c']]],
   ['updatetelemetrystats',['updateTelemetryStats',['../group___telemetry_module.html#ga7f5dbe16417941cebaf5daef40548940',1,'telemetry.c']]],
   ['updatetemperaturecomp',['updateTemperatureComp',['../group___sensors.html#ga8525532dd6297d63bac79a149300e0eb',1,'sensors.c']]],
   ['upload',['upload',['../classpx__uploader_1_1uploader.html#a3caa03a31856c7c69779b3a0c6e49554',1,'px_uploader::uploader']]],

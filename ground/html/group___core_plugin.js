@@ -1060,8 +1060,8 @@ var group___core_plugin =
     ] ],
     [ "SerialDevice", "class_serial_device.html", [
       [ "SerialDevice", "group___core_plugin.html#gaad126bede3b0adf49e1fbe3afd7c6c42", null ],
-      [ "debugMainWindow", "group___core_plugin.html#ggadc29c2ff13d900c2f185ee95427fb06caf4b0431d5cc108ace609eb877582a059", null ],
-      [ "debugUAVGadgetManager", "group___core_plugin.html#gga61dadd085c1777f559549e05962b2c9ea40daeb017da1d9cfcee88d7ac5ebdb9e", null ]
+      [ "debugMainWindow", "group___core_plugin.html#gga726ca809ffd3d67ab4b8476646f26635af4b0431d5cc108ace609eb877582a059", null ],
+      [ "debugUAVGadgetManager", "group___core_plugin.html#gga0411cd49bb5b71852cecd93bcbf0ca2da40daeb017da1d9cfcee88d7ac5ebdb9e", null ]
     ] ],
     [ "AnnunciatorType", "group___core_plugin.html#ga615a5aa573c867267162df009eb6496e", [
       [ "ANNUNCIATOR_HEARTBEAT", "group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb", null ],
@@ -1166,8 +1166,8 @@ var group___core_plugin =
     [ "CA_UpdateIcon", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917a838b5063e78a4f22a5aa7fa17c7f9358", null ],
     [ "CA_UpdateText", "group___core_plugin.html#gga4d899c1f711159a432afeab3eb78c917a458aeb773c85933e0dd3e1bbf5a4243c", null ],
     [ "ClassWizard", "group___core_plugin.html#gga90d21d8ad72cb14ddb8486fdff7b51f4ab0cb08b20b12fbf556268c165353035a", null ],
-    [ "debugMainWindow", "group___core_plugin.html#ggadc29c2ff13d900c2f185ee95427fb06caf4b0431d5cc108ace609eb877582a059", null ],
-    [ "debugUAVGadgetManager", "group___core_plugin.html#gga61dadd085c1777f559549e05962b2c9ea40daeb017da1d9cfcee88d7ac5ebdb9e", null ],
+    [ "debugMainWindow", "group___core_plugin.html#gga726ca809ffd3d67ab4b8476646f26635af4b0431d5cc108ace609eb877582a059", null ],
+    [ "debugUAVGadgetManager", "group___core_plugin.html#gga0411cd49bb5b71852cecd93bcbf0ca2da40daeb017da1d9cfcee88d7ac5ebdb9e", null ],
     [ "DeleteOperation", "group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875", null ],
     [ "EA_Disable", "group___core_plugin.html#gga25957afb898f645827d8e7949c831327aefaf5abf9c05ed2a6a6b75b2c1824186", null ],
     [ "EA_Hide", "group___core_plugin.html#gga25957afb898f645827d8e7949c831327aed8a4c98f66c29197b772529c4959190", null ],

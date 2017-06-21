@@ -14,8 +14,6 @@ var searchData=
   ['addackpending',['addAckPending',['../group___telemetry_module.html#gac9daba3ec53ac8875ed5bdda681b44ba',1,'telemetry.c']]],
   ['advance_5fby_5fn',['advance_by_n',['../circqueue_8c.html#acb2fd81d86d11e4af733e563d46fb49a',1,'circqueue.c']]],
   ['advancewaypoint',['advanceWaypoint',['../group___path_planner_module.html#ga50ff7bbde196840bbc8f7f009d6d8664',1,'pathplanner.c']]],
-  ['af_5finit',['af_init',['../group___autotuning_module.html#ga933a023a6d55a95e55d6416e4679353c',1,'autotune.c']]],
-  ['af_5fpredict',['af_predict',['../group___autotuning_module.html#gaf75414849ac65524456b0281dc598576',1,'autotune.c']]],
   ['air_5fdensity_5ffrom_5faltitude',['air_density_from_altitude',['../group___miscellaneous_math.html#gad976cac3b994146b27eccb2bdb1e26ed',1,'atmospheric_math.c']]],
   ['air_5fpressure_5ffrom_5faltitude',['air_pressure_from_altitude',['../group___miscellaneous_math.html#gac358b4fb255019273b8a59205f3fe464',1,'atmospheric_math.c']]],
   ['airspeed_5fupdate',['AIRSPEED_update',['../group___char_o_s_d.html#ga9446fa7cf0633607dfc442413e3b5711',1,'panel.c']]],
@@ -51,6 +49,7 @@ var searchData=
   ['attitudestart',['AttitudeStart',['../group___attitude_module.html#gaaa0dba388f0dec215cb7cbe55ad0356b',1,'attitude.c']]],
   ['attitudetask',['AttitudeTask',['../group___attitude_module.html#ga5b9ca9b050dc607b1927cd4852ca9c6f',1,'attitude.c']]],
   ['attitudeupdated',['attitudeUpdated',['../group___camera_stab.html#ga3a49d7b31b2955720346a096cdcf10d0',1,'camerastab.c']]],
+  ['autotune_5fsave_5faveraging',['autotune_save_averaging',['../group___autotuning_module.html#gacfe3a46f19338440f1191119b113076c',1,'autotune.c']]],
   ['autotuneinitialize',['AutotuneInitialize',['../group___autotuning_module.html#gadcd235231767c9940ae6782d9ad75892',1,'autotune.c']]],
   ['autotunestart',['AutotuneStart',['../group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298',1,'autotune.c']]],
   ['autotunetask',['AutotuneTask',['../group___autotuning_module.html#ga2ceb9c3feb2a39031bd33582d4333c94',1,'autotune.c']]]

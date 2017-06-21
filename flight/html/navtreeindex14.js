@@ -1,13 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"dtfc_2board-info_2cmsis__system_8c.html":[5,0,0,4,5,1,1],
-"dtfc_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c":[5,0,0,4,5,1,1,1],
-"dtfc_2board-info_2cmsis__system_8c.html#ga40e1495541cbb4acbe3f1819bd87a9fe":[5,0,0,4,5,1,1,0],
-"dtfc_2board-info_2cmsis__system_8c.html#ga93f514700ccf00d08dbdcff7f1224eb2":[5,0,0,4,5,1,1,3],
-"dtfc_2board-info_2cmsis__system_8c.html#gaa3cd3e43291e81e795d642b79b6088e6":[5,0,0,4,5,1,1,5],
-"dtfc_2board-info_2cmsis__system_8c.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[5,0,0,4,5,1,1,4],
-"dtfc_2board-info_2cmsis__system_8c.html#gae0c36a9591fe6e9c45ecb21a794f0f0f":[5,0,0,4,5,1,1,2],
-"dtfc_2board-info_2cmsis__system_8c_source.html":[5,0,0,4,5,1,1],
 "dtfc_2fw_2mcuconf_8h.html":[5,0,0,4,5,2,0],
 "dtfc_2fw_2mcuconf_8h.html#ga0015fc8f73017358a7025ba57a265a11":[5,0,0,4,5,2,0,70],
 "dtfc_2fw_2mcuconf_8h.html#ga01b2a27910cfaed8a40043c8efe1e9a4":[5,0,0,4,5,2,0,78],
@@ -249,5 +241,13 @@ var NAVTREEINDEX14 =
 "firmwareiap_8c.html#ga26d3df5cd4f6459d9db24844a6a634af":[5,0,0,2,10,1,5],
 "firmwareiap_8c.html#ga28f4c6eaf25c9d60dd131d1d8c52c346":[5,0,0,2,10,1,1],
 "firmwareiap_8c.html#ga2d3301503424edc14d7c6169b467e9e2":[5,0,0,2,10,1,15],
-"firmwareiap_8c.html#ga327cb8c305882a51e4a7566ac3b2e773":[5,0,0,2,10,1,11]
+"firmwareiap_8c.html#ga327cb8c305882a51e4a7566ac3b2e773":[5,0,0,2,10,1,11],
+"firmwareiap_8c.html#ga3e4c0f97a0e21fa37c18e58f698d51f4":[5,0,0,2,10,1,24],
+"firmwareiap_8c.html#ga49a4972100dc06f7f80d401415698932":[5,0,0,2,10,1,4],
+"firmwareiap_8c.html#ga4baa718244eb51c7710418ed8bc94c7d":[5,0,0,2,10,1,10],
+"firmwareiap_8c.html#ga51a68adfce193c96cadbb89f60972847":[5,0,0,2,10,1,7],
+"firmwareiap_8c.html#ga57974530f884ad4bc482830d5ec6e30d":[5,0,0,2,10,1,17],
+"firmwareiap_8c.html#ga61e65cd331a8694161b769f35fa95d74":[5,0,0,2,10,1,13],
+"firmwareiap_8c.html#ga646ce6e8892ebc7a6aa32d0ba46f9284":[5,0,0,2,10,1,9],
+"firmwareiap_8c.html#ga6ab4c03af8d62e2f4c64841a513250f9":[5,0,0,2,10,1,16]
 };

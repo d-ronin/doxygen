@@ -1,7 +1,7 @@
 var classffft_1_1_f_f_t_real =
 [
     [ "DataType", "classffft_1_1_f_f_t_real.html#a606148f1cf8c3b7d705473932fc063d1", null ],
-    [ "MAX_BIT_DEPTH", "classffft_1_1_f_f_t_real.html#a213e22928caeb49fe6e1984d8f8ed597abec37ae38b07b6e3e1230562f01882a2", null ],
+    [ "MAX_BIT_DEPTH", "classffft_1_1_f_f_t_real.html#a69a4ed5b7507683f5233ddbd34f0e1eeabec37ae38b07b6e3e1230562f01882a2", null ],
     [ "FFTReal", "classffft_1_1_f_f_t_real.html#a627db4d781235302c3a229fc4d7a10ba", null ],
     [ "~FFTReal", "classffft_1_1_f_f_t_real.html#a04f14f3576aac18af45ba22c38fbaf2a", null ],
     [ "do_fft", "classffft_1_1_f_f_t_real.html#a4c5b863a285c5a87f38517735cbf1352", null ],

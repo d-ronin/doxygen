@@ -4,7 +4,7 @@ var searchData=
   ['magicwaypoint_5fmapmode',['MagicWaypoint_MapMode',['../group___o_p_map_plugin.html#gga10cb3e7dfbac87e40e00c1a8c76c16e5abdc1c0b7296fb52149bbda0739034825',1,'opmapgadgetwidget.h']]],
   ['magnetometer_5ffailed',['MAGNETOMETER_FAILED',['../group___config_plugin.html#gga94aacf4645037efa48eebb961cd2be5ba87c88dea4fa9a367365175369f68d7f3',1,'calibration.cpp']]],
   ['majorlossofconfiguration',['MajorLossOfConfiguration',['../group___core_plugin.html#gga568d6a6f7dd5f6d9b7ec976ff7c2284fab2dcca46e2c0d231f1ab7250bfd3dca9',1,'Core::UAVConfigInfo']]],
-  ['max_5fbit_5fdepth',['MAX_BIT_DEPTH',['../classffft_1_1_f_f_t_real.html#a213e22928caeb49fe6e1984d8f8ed597abec37ae38b07b6e3e1230562f01882a2',1,'ffft::FFTReal']]],
+  ['max_5fbit_5fdepth',['MAX_BIT_DEPTH',['../classffft_1_1_f_f_t_real.html#a69a4ed5b7507683f5233ddbd34f0e1eeabec37ae38b07b6e3e1230562f01882a2',1,'ffft::FFTReal']]],
   ['minorlossofconfiguration',['MinorLossOfConfiguration',['../group___core_plugin.html#gga568d6a6f7dd5f6d9b7ec976ff7c2284faf84f7dc0a0a0fa25beb58f473f081ff8',1,'Core::UAVConfigInfo']]],
   ['missingconfiguration',['MissingConfiguration',['../group___core_plugin.html#gga568d6a6f7dd5f6d9b7ec976ff7c2284fa1a847c37ce622aaa288dcd65a29131de',1,'Core::UAVConfigInfo']]],
   ['mix',['mix',['../group___config_plugin.html#ggac685fb340fffc7f7f70228ddf964dbb1a2f00c0717a77ee441b973ebfe659f81b',1,'ConfigInputWidget']]],

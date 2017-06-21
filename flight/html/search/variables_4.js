@@ -35,7 +35,7 @@ var searchData=
   ['datalen',['datalen',['../struct_s_h_a1___c_t_x.html#a15248b549b8f388f336ce9f9265a4e46',1,'SHA1_CTX']]],
   ['datarate',['datarate',['../struct_p_h_connection_packet.html#ac0efb46843892dc7b42a503eeea6d58c',1,'PHConnectionPacket::datarate()'],['../structpios__rfm22b__dev.html#aff7a6133350534d9bdb99e8e4856dd6e',1,'pios_rfm22b_dev::datarate()']]],
   ['datau16',['dataU16',['../group___storm32bgc.html#gae4cb4e356cbc51a90372f39cf3d0d710',1,'storm32bgc.c']]],
-  ['day',['Day',['../struct_w_m_mtype___date.html#ae181b3f6292dbe3b6f89e412c977b1e1',1,'WMMtype_Date::Day()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#af47b128d3c65964f825c689849546c6d',1,'UBX_NAV_TIMEUTC::day()']]],
+  ['day',['day',['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#af47b128d3c65964f825c689849546c6d',1,'UBX_NAV_TIMEUTC::day()'],['../struct_w_m_mtype___date.html#ae181b3f6292dbe3b6f89e412c977b1e1',1,'WMMtype_Date::Day()']]],
   ['dc',['dc',['../group___p_i_o_s___v_i_d_e_o.html#ga3d1a1845bd2951adc19f62aa1aef7ff4',1,'pios_video_type_cfg']]],
   ['deadbands',['deadbands',['../group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1',1,'stabilization.c']]],
   ['debug',['DEBUG',['../ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c'],['../rs_8c.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c']]],

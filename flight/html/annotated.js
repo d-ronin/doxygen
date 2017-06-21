@@ -13,7 +13,6 @@ var annotated =
     [ "arena_header", "structarena__header.html", "structarena__header" ],
     [ "at_flash_header", "structat__flash__header.html", "structat__flash__header" ],
     [ "at_measurement", "structat__measurement.html", "structat__measurement" ],
-    [ "at_queued_data", "structat__queued__data.html", "structat__queued__data" ],
     [ "bl_fsm_context", "structbl__fsm__context.html", "structbl__fsm__context" ],
     [ "bl_messages", "structbl__messages.html", "structbl__messages" ],
     [ "bl_transition", "structbl__transition.html", "structbl__transition" ],

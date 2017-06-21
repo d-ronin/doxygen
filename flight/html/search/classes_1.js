@@ -4,6 +4,5 @@ var searchData=
   ['airparameters',['AirParameters',['../struct_air_parameters.html',1,'']]],
   ['arena_5fheader',['arena_header',['../structarena__header.html',1,'']]],
   ['at_5fflash_5fheader',['at_flash_header',['../structat__flash__header.html',1,'']]],
-  ['at_5fmeasurement',['at_measurement',['../structat__measurement.html',1,'']]],
-  ['at_5fqueued_5fdata',['at_queued_data',['../structat__queued__data.html',1,'']]]
+  ['at_5fmeasurement',['at_measurement',['../structat__measurement.html',1,'']]]
 ];
