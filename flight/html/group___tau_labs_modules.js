@@ -28,7 +28,6 @@ var group___tau_labs_modules =
     [ "HoTT Telemetry Module", "group___u_a_v_o_ho_t_t_bridge.html", "group___u_a_v_o_ho_t_t_bridge" ],
     [ "UAVO to Lighttelemetry Bridge Module", "group___u_a_v_o_lighttelemetry_bridge.html", "group___u_a_v_o_lighttelemetry_bridge" ],
     [ "UAVO to Mavlink Bridge Module", "group___u_a_v_o_mavlink_bridge.html", "group___u_a_v_o_mavlink_bridge" ],
-    [ "UAVO to MSP Bridge Module", "group___u_a_v_o_m_s_p_bridge.html", null ],
     [ "UAVO to Taranis S.PORT converter", "group___u_a_v_o_taranis.html", null ],
     [ "Vibration analysis module", "group___vibration_analysis_module.html", "group___vibration_analysis_module" ],
     [ "VTOL path follower module", "group___vtol_path_follower.html", "group___vtol_path_follower" ],
