@@ -1,5 +1,11 @@
 var NAVTREEINDEX47 =
 {
+"helipage_8cpp.html":[6,0,0,0,0,1,33,0,10],
+"helipage_8cpp_source.html":[6,0,0,0,0,1,33,0,10],
+"helipage_8h.html":[6,0,0,0,0,1,33,0,11],
+"helipage_8h_source.html":[6,0,0,0,0,1,33,0,11],
+"hierarchy.html":[5,1],
+"histogramplotdata_8cpp.html":[6,0,0,0,0,1,31,0,0],
 "histogramplotdata_8cpp_source.html":[6,0,0,0,0,1,31,0,0],
 "histogramplotdata_8h.html":[6,0,0,0,0,1,31,0,1],
 "histogramplotdata_8h_source.html":[6,0,0,0,0,1,31,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX47 =
 "luxconfiguration_8h.html":[6,0,0,0,0,1,2,5],
 "luxconfiguration_8h_source.html":[6,0,0,0,0,1,2,5],
 "magicwaypointgadget_8cpp.html":[6,0,0,0,0,1,22,0],
-"magicwaypointgadget_8cpp_source.html":[6,0,0,0,0,1,22,0],
-"magicwaypointgadget_8h.html":[6,0,0,0,0,1,22,1],
-"magicwaypointgadget_8h_source.html":[6,0,0,0,0,1,22,1],
-"magicwaypointgadgetfactory_8cpp.html":[6,0,0,0,0,1,22,2],
-"magicwaypointgadgetfactory_8cpp_source.html":[6,0,0,0,0,1,22,2],
-"magicwaypointgadgetfactory_8h.html":[6,0,0,0,0,1,22,3],
-"magicwaypointgadgetfactory_8h_source.html":[6,0,0,0,0,1,22,3]
+"magicwaypointgadget_8cpp_source.html":[6,0,0,0,0,1,22,0]
 };

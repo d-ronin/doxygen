@@ -89,17 +89,17 @@ var NAVTREEINDEX =
 "group___u_a_v_object_util_plugin.html#ga723ce2560e27e090144a3123d8ffaad0",
 "group___u_a_v_object_widget_utils.html#gac199a42260bf4a3ddd42f23bae109569",
 "group___u_a_v_objects_plugin.html#ga6c5e6a55d16226d0cfef0d2f512e243e",
-"group___u_a_v_talk_plugin.html#ga01b3c8039cd97c7da26eb79fdeed0003",
-"group___uploader.html#ga4209576f58921d4e19f3ad7a3a41698a",
-"group___usage_stats_plugin.html#ga2ae977df58ffb21d98ca8c86ab332632",
-"histogramplotdata_8cpp_source.html",
-"magicwaypointgadgetwidget_8cpp.html",
-"notifyplugin_8h_source.html",
-"pureimagecache_8cpp_source.html",
-"setupwizardplugin_8cpp_source.html",
-"systemhealthgadget_8cpp_source.html",
-"uavobjectsinittemplate_8cpp.html",
-"vehicletrim_8h.html"
+"group___u_a_v_talk_plugin.html#ga0047f38af98ba4de8e38500e10b73046",
+"group___uploader.html#ga33e544ad20fa638bbf34e7a461d3306e",
+"group___usage_stats_plugin.html#ga0ba9b9a012f84544f18f333e02971286",
+"helipage_8cpp.html",
+"magicwaypointgadget_8h.html",
+"notifyplugin_8cpp.html",
+"providerstrings_8h_source.html",
+"setupwizard_2pages_2tlstartpage_8h_source.html",
+"sysalarmsmessaging__global_8h_source.html",
+"uavobjectmanager_8h_source.html",
+"vehiclepage_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

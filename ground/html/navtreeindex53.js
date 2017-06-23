@@ -1,5 +1,11 @@
 var NAVTREEINDEX53 =
 {
+"uavobjectmanager_8h_source.html":[6,0,0,0,0,1,39,13],
+"uavobjects__global_8h.html":[6,0,0,0,0,1,39,14],
+"uavobjects__global_8h_source.html":[6,0,0,0,0,1,39,14],
+"uavobjectsinit_8h.html":[6,0,0,0,0,1,39,15],
+"uavobjectsinit_8h.html#gaa5848573445b2e80691402f8bd9d2257":[6,0,0,0,0,1,39,15,0],
+"uavobjectsinit_8h_source.html":[6,0,0,0,0,1,39,15],
 "uavobjectsinittemplate_8cpp.html":[6,0,0,0,0,1,39,16],
 "uavobjectsinittemplate_8cpp.html#gaa5848573445b2e80691402f8bd9d2257":[6,0,0,0,0,1,39,16,0],
 "uavobjectsinittemplate_8cpp_source.html":[6,0,0,0,0,1,39,16],
@@ -243,11 +249,5 @@ var NAVTREEINDEX53 =
 "vehicleconfigurationsource_8cpp.html":[6,0,0,0,0,1,33,10],
 "vehicleconfigurationsource_8cpp_source.html":[6,0,0,0,0,1,33,10],
 "vehicleconfigurationsource_8h.html":[6,0,0,0,0,1,33,11],
-"vehicleconfigurationsource_8h_source.html":[6,0,0,0,0,1,33,11],
-"vehiclepage_8cpp.html":[6,0,0,0,0,1,33,0,36],
-"vehiclepage_8cpp_source.html":[6,0,0,0,0,1,33,0,36],
-"vehiclepage_8h.html":[6,0,0,0,0,1,33,0,37],
-"vehiclepage_8h_source.html":[6,0,0,0,0,1,33,0,37],
-"vehicletrim_8cpp.html":[6,0,0,0,0,1,8,57],
-"vehicletrim_8cpp_source.html":[6,0,0,0,0,1,8,57]
+"vehicleconfigurationsource_8h_source.html":[6,0,0,0,0,1,33,11]
 };

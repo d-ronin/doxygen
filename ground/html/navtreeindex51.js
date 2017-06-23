@@ -1,5 +1,11 @@
 var NAVTREEINDEX51 =
 {
+"setupwizard_2pages_2tlstartpage_8h_source.html":[6,0,0,0,0,1,33,0,35],
+"setupwizard_8cpp.html":[6,0,0,0,0,1,33,4],
+"setupwizard_8cpp_source.html":[6,0,0,0,0,1,33,4],
+"setupwizard_8h.html":[6,0,0,0,0,1,33,5],
+"setupwizard_8h_source.html":[6,0,0,0,0,1,33,5],
+"setupwizardplugin_8cpp.html":[6,0,0,0,0,1,33,6],
 "setupwizardplugin_8cpp_source.html":[6,0,0,0,0,1,33,6],
 "setupwizardplugin_8h.html":[6,0,0,0,0,1,33,7],
 "setupwizardplugin_8h_source.html":[6,0,0,0,0,1,33,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX51 =
 "svgimageprovider_8cpp_source.html":[6,0,0,0,0,0,5,26],
 "svgimageprovider_8h.html":[6,0,0,0,0,0,5,27],
 "svgimageprovider_8h_source.html":[6,0,0,0,0,0,5,27],
-"sysalarmsmessaging__global_8h.html":[6,0,0,0,0,1,34,0],
-"sysalarmsmessaging__global_8h_source.html":[6,0,0,0,0,1,34,0],
-"sysalarmsmessagingplugin_8cpp.html":[6,0,0,0,0,1,34,1],
-"sysalarmsmessagingplugin_8cpp_source.html":[6,0,0,0,0,1,34,1],
-"sysalarmsmessagingplugin_8h.html":[6,0,0,0,0,1,34,2],
-"sysalarmsmessagingplugin_8h_source.html":[6,0,0,0,0,1,34,2],
-"systemhealthgadget_8cpp.html":[6,0,0,0,0,1,35,0]
+"sysalarmsmessaging__global_8h.html":[6,0,0,0,0,1,34,0]
 };

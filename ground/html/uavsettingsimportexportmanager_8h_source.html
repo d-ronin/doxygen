@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3526f25</span>
+   &#160;<span id="projectnumber">7c0b91b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,10 +132,10 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8h_sour
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef UAVSETTINGSIMPORTEXPORTFACTORY_H</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UAVSETTINGSIMPORTEXPORTFACTORY_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="uavsettingsimportexport__global_8h.html">uavsettingsimportexport_global.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectutilmanager_8h.html">uavobjectutil/uavobjectutilmanager.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;../../../../../build/ground/gcs/gcsversioninfo.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>QDomNode;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>QDomNode;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="class_u_a_v_object.html">UAVObject</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_u_a_v_settings_import_export_manager.html">   39</a></span>&#160;<span class="keyword">class </span>UAVSETTINGSIMPORTEXPORT_EXPORT <a class="code" href="class_u_a_v_settings_import_export_manager.html">UAVSettingsImportExportManager</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
@@ -144,26 +144,29 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8h_sour
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_u_a_v_settings_import_export_manager.html">UAVSettingsImportExportManager</a>(QObject *parent = 0);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ~<a class="code" href="class_u_a_v_settings_import_export_manager.html">UAVSettingsImportExportManager</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> updateObject(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, QDomNode *node);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> updateObject(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, QDomNode *node);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> importUAVSettings(<span class="keyword">const</span> QByteArray &amp;settings, <span class="keywordtype">bool</span> quiet = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> importUAVSettings();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> exportUAVSettings();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> exportUAVData();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">enum</span> storedData { Settings, Data, Both };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QString createXMLDocument(<span class="keyword">const</span> <span class="keyword">enum</span> storedData, <span class="keyword">const</span> <span class="keywordtype">bool</span> fullExport);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> extensionsInitialized();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> importUAVSettings();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> exportUAVSettings();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> exportUAVData();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setCommandsEnabled(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;signals:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> importAboutToBegin();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> importEnded();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // UAVSETTINGSIMPORTEXPORTFACTORY_H</span></div>
-<div class="ttc" id="uavobjectutilmanager_8h_html"><div class="ttname"><a href="uavobjectutilmanager_8h.html">uavobjectutilmanager.h</a></div></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">enum</span> storedData { Settings, Data, Both };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString createXMLDocument(<span class="keyword">const</span> <span class="keyword">enum</span> storedData, <span class="keyword">const</span> <span class="keywordtype">bool</span> fullExport);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;signals:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> importAboutToBegin();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> importEnded();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // UAVSETTINGSIMPORTEXPORTFACTORY_H</span></div>
 <div class="ttc" id="class_u_a_v_settings_import_export_manager_html"><div class="ttname"><a href="class_u_a_v_settings_import_export_manager.html">UAVSettingsImportExportManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavsettingsimportexportmanager_8h_source.html#l00039">uavsettingsimportexportmanager.h:39</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="uavsettingsimportexport__global_8h_html"><div class="ttname"><a href="uavsettingsimportexport__global_8h.html">uavsettingsimportexport_global.h</a></div></div>

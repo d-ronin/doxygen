@@ -97,7 +97,7 @@ var searchData=
   ['wpdelete',['WPDelete',['../group___t_l_map_widget.html#gaaa258b4ff66c18a118d18d5b0d65860d',1,'mapcontrol::TLMapWidget::WPDelete(WayPointItem *item)'],['../group___t_l_map_widget.html#gaabe518bf31731f810e0c3a388f06b7a5',1,'mapcontrol::TLMapWidget::WPDelete(int number)']]],
   ['wpdeleteall',['WPDeleteAll',['../group___t_l_map_widget.html#ga500635231cb15a121072954768dc0009',1,'mapcontrol::TLMapWidget']]],
   ['wpdeleted',['WPDeleted',['../group___t_l_map_widget.html#gaa0d769329abbb5c08c7b710e61e96841',1,'mapcontrol::TLMapWidget::WPDeleted()'],['../group___t_l_map_widget.html#ga4f73652bac019e1b92fc67c4a2403b2b',1,'mapcontrol::WayPointItem::WPDeleted()']]],
-  ['wpdescription',['WPDESCRIPTION',['../group___path.html#gga474bf8bbc3c8c027f09087e98700be23abdeb17a21ec4f15a000c97765bfc6c8f',1,'FlightDataModel::WPDESCRIPTION()'],['../group___path.html#ga74dde0fc3e328efca591001ae642142d',1,'PathPlanData::wpDescription()']]],
+  ['wpdescription',['wpDescription',['../group___path.html#ga74dde0fc3e328efca591001ae642142d',1,'PathPlanData::wpDescription()'],['../group___path.html#gga474bf8bbc3c8c027f09087e98700be23abdeb17a21ec4f15a000c97765bfc6c8f',1,'FlightDataModel::WPDESCRIPTION()']]],
   ['wpdoubleclicked',['wpdoubleclicked',['../group___t_l_map_widget.html#ga795f053b52b5fe955eee059db5cb0afd',1,'mapcontrol::MapGraphicItem']]],
   ['wpdropped',['WPDropped',['../group___t_l_map_widget.html#gae08b9a33683cbdb80ac273d6dcd75837',1,'mapcontrol::WayPointItem']]],
   ['wpfind',['WPFind',['../group___t_l_map_widget.html#ga7b2bf61466b25171ce248b217cbfb3bb',1,'mapcontrol::TLMapWidget']]],
