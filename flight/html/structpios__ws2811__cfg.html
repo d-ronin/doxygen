@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7c0b91b</span>
+   &#160;<span id="projectnumber">bda2863</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,44 +110,183 @@ $(document).ready(function(){initNavTree('structpios__ws2811__cfg.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">pios_ws2811_cfg Struct Reference<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
+<div class="title">pios_ws2811_cfg Struct Reference<div class="ingroups"><a class="el" href="group___p_i_o_s___w_s2811.html">WS2811 Functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="pios__ws2811_8h_source.html">pios_ws2811.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:gabe2f1b19eec643406df753b11631273b"><td class="memItemLeft" align="right" valign="top">TIM_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a></td></tr>
-<tr class="separator:gabe2f1b19eec643406df753b11631273b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45877ae07dece21484b4f5bd3bd4ec43"><td class="memItemLeft" align="right" valign="top">TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga45877ae07dece21484b4f5bd3bd4ec43">clock_cfg</a></td></tr>
-<tr class="separator:ga45877ae07dece21484b4f5bd3bd4ec43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga302248856259a941c1c4463cc7b3bba3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga302248856259a941c1c4463cc7b3bba3">fall_time_l</a></td></tr>
-<tr class="separator:ga302248856259a941c1c4463cc7b3bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c71481fd577f1156ba52c2dff39e5d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga2c71481fd577f1156ba52c2dff39e5d8">fall_time_h</a></td></tr>
-<tr class="separator:ga2c71481fd577f1156ba52c2dff39e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga890d1ea2ffa5de7e360923948b6a9710"><td class="memItemLeft" align="right" valign="top">NVIC_InitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga890d1ea2ffa5de7e360923948b6a9710">interrupt</a></td></tr>
-<tr class="separator:ga890d1ea2ffa5de7e360923948b6a9710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga392253e9f6d730c828c6966708ba7fb7"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">led_gpio</a></td></tr>
-<tr class="separator:ga392253e9f6d730c828c6966708ba7fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78e5d4cfe5de5b19cab8bbc100a98c1f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a></td></tr>
+<tr class="memitem:ga5ffa5b6470f20d95297a8f5dfa7903bc"><td class="memItemLeft" align="right" valign="top">TIM_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a></td></tr>
+<tr class="separator:ga5ffa5b6470f20d95297a8f5dfa7903bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fd119524a0e835e3cf49f057af45bb6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga0fd119524a0e835e3cf49f057af45bb6">timer_chan</a></td></tr>
+<tr class="separator:ga0fd119524a0e835e3cf49f057af45bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62c2a16542ad2707506c189c5c6eb8a2"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">led_gpio</a></td></tr>
+<tr class="separator:ga62c2a16542ad2707506c189c5c6eb8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78e5d4cfe5de5b19cab8bbc100a98c1f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a></td></tr>
 <tr class="separator:ga78e5d4cfe5de5b19cab8bbc100a98c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84750b203e9d31e7a2acbb8146ce317f"><td class="memItemLeft" align="right" valign="top">DMA_Stream_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga84750b203e9d31e7a2acbb8146ce317f">bit_set_dma_stream</a></td></tr>
-<tr class="separator:ga84750b203e9d31e7a2acbb8146ce317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5673e6440003c65eb2b8c33382563121"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga5673e6440003c65eb2b8c33382563121">bit_set_dma_channel</a></td></tr>
-<tr class="separator:ga5673e6440003c65eb2b8c33382563121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b5088e99b872982285f4e9e1af14407"><td class="memItemLeft" align="right" valign="top">DMA_Stream_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga0b5088e99b872982285f4e9e1af14407">bit_clear_dma_stream</a></td></tr>
-<tr class="separator:ga0b5088e99b872982285f4e9e1af14407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fc10daf5a0a80dbcfbdfe666cb4e23e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga7fc10daf5a0a80dbcfbdfe666cb4e23e">bit_clear_dma_channel</a></td></tr>
-<tr class="separator:ga7fc10daf5a0a80dbcfbdfe666cb4e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c537cda0d5a8011079e0eac29666cba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga4c537cda0d5a8011079e0eac29666cba">bit_clear_dma_tcif</a></td></tr>
-<tr class="separator:ga4c537cda0d5a8011079e0eac29666cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga362b25979c662e2e81cb003ccec4b6c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga362b25979c662e2e81cb003ccec4b6c8">remap</a></td></tr>
+<tr class="separator:ga362b25979c662e2e81cb003ccec4b6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad03ecee48ffb7ae3ee0602e104a2d9fd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gad03ecee48ffb7ae3ee0602e104a2d9fd">timer_dma_source</a></td></tr>
+<tr class="separator:gad03ecee48ffb7ae3ee0602e104a2d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43475e446fb0aed17fc1c281fe3e4567"><td class="memItemLeft" align="right" valign="top">DMA_Channel_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga43475e446fb0aed17fc1c281fe3e4567">dma_chan</a></td></tr>
+<tr class="separator:ga43475e446fb0aed17fc1c281fe3e4567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2defba83309df86e9135f728bbf20a3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gae2defba83309df86e9135f728bbf20a3">dma_tcif</a></td></tr>
+<tr class="separator:gae2defba83309df86e9135f728bbf20a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa302baf7dc52cabb7d200afef5f3bcfb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaa302baf7dc52cabb7d200afef5f3bcfb">dma_irqn</a></td></tr>
+<tr class="separator:gaa302baf7dc52cabb7d200afef5f3bcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45877ae07dece21484b4f5bd3bd4ec43"><td class="memItemLeft" align="right" valign="top">TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a45877ae07dece21484b4f5bd3bd4ec43">clock_cfg</a></td></tr>
+<tr class="separator:a45877ae07dece21484b4f5bd3bd4ec43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302248856259a941c1c4463cc7b3bba3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a302248856259a941c1c4463cc7b3bba3">fall_time_l</a></td></tr>
+<tr class="separator:a302248856259a941c1c4463cc7b3bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c71481fd577f1156ba52c2dff39e5d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a2c71481fd577f1156ba52c2dff39e5d8">fall_time_h</a></td></tr>
+<tr class="separator:a2c71481fd577f1156ba52c2dff39e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890d1ea2ffa5de7e360923948b6a9710"><td class="memItemLeft" align="right" valign="top">NVIC_InitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a890d1ea2ffa5de7e360923948b6a9710">interrupt</a></td></tr>
+<tr class="separator:a890d1ea2ffa5de7e360923948b6a9710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84750b203e9d31e7a2acbb8146ce317f"><td class="memItemLeft" align="right" valign="top">DMA_Stream_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a84750b203e9d31e7a2acbb8146ce317f">bit_set_dma_stream</a></td></tr>
+<tr class="separator:a84750b203e9d31e7a2acbb8146ce317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5673e6440003c65eb2b8c33382563121"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a5673e6440003c65eb2b8c33382563121">bit_set_dma_channel</a></td></tr>
+<tr class="separator:a5673e6440003c65eb2b8c33382563121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5088e99b872982285f4e9e1af14407"><td class="memItemLeft" align="right" valign="top">DMA_Stream_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a0b5088e99b872982285f4e9e1af14407">bit_clear_dma_stream</a></td></tr>
+<tr class="separator:a0b5088e99b872982285f4e9e1af14407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc10daf5a0a80dbcfbdfe666cb4e23e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a7fc10daf5a0a80dbcfbdfe666cb4e23e">bit_clear_dma_channel</a></td></tr>
+<tr class="separator:a7fc10daf5a0a80dbcfbdfe666cb4e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c537cda0d5a8011079e0eac29666cba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html#a4c537cda0d5a8011079e0eac29666cba">bit_clear_dma_tcif</a></td></tr>
+<tr class="separator:a4c537cda0d5a8011079e0eac29666cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="pios__ws2811_8h_source.html#l00039">39</a> of file <a class="el" href="pios__ws2811_8h_source.html">pios_ws2811.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>flight/PiOS/inc/<a class="el" href="pios__ws2811_8h_source.html">pios_ws2811.h</a></li>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00039">39</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a7fc10daf5a0a80dbcfbdfe666cb4e23e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_ws2811_cfg::bit_clear_dma_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00054">54</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b5088e99b872982285f4e9e1af14407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_Stream_TypeDef* pios_ws2811_cfg::bit_clear_dma_stream</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00053">53</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c537cda0d5a8011079e0eac29666cba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_ws2811_cfg::bit_clear_dma_tcif</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00055">55</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5673e6440003c65eb2b8c33382563121"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_ws2811_cfg::bit_set_dma_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00051">51</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84750b203e9d31e7a2acbb8146ce317f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_Stream_TypeDef* pios_ws2811_cfg::bit_set_dma_stream</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00050">50</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45877ae07dece21484b4f5bd3bd4ec43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_TimeBaseInitTypeDef pios_ws2811_cfg::clock_cfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00040">40</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c71481fd577f1156ba52c2dff39e5d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pios_ws2811_cfg::fall_time_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00042">42</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a302248856259a941c1c4463cc7b3bba3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pios_ws2811_cfg::fall_time_l</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00042">42</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a890d1ea2ffa5de7e360923948b6a9710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NVIC_InitTypeDef pios_ws2811_cfg::interrupt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00044">44</a> of file <a class="el" href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>flight/PiOS/STM32F30x/inc/<a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

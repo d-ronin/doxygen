@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7c0b91b</span>
+   &#160;<span id="projectnumber">bda2863</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__can_8c_source.htm
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__can__priv_8h.html">pios_can_priv.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* Provide a COM driver */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RegisterRxCallback(uintptr_t can_id, <a class="code" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> rx_in_cb, uintptr_t <a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065">context</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RegisterTxCallback(uintptr_t can_id, <a class="code" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> tx_out_cb, uintptr_t <a class="code" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065">context</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RegisterRxCallback(uintptr_t can_id, <a class="code" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> rx_in_cb, uintptr_t context);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RegisterTxCallback(uintptr_t can_id, <a class="code" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> tx_out_cb, uintptr_t context);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_TxStart(uintptr_t can_id, uint16_t tx_bytes_avail);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_CAN_RxStart(uintptr_t can_id, uint16_t rx_bytes_avail);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -482,7 +482,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__can_8c_source.htm
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_af7137074ee2ca2426304c94b0177cb4d"><div class="ttname"><a href="structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d">pios_com_driver::tx_start</a></div><div class="ttdeci">void(* tx_start)(uintptr_t id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00045">pios_com.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga528568aa0f3011cafec5c453fc030e15"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a></div><div class="ttdeci">uint16_t(* pios_com_callback)(uintptr_t context, uint8_t *buf, uint16_t buf_len, uint16_t *headroom, bool *task_woken)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00041">pios_com.h:41</a></div></div>
-<div class="ttc" id="group___p_i_o_s___u_s_b_h_o_o_k_html_gade16213f02f3a003892a75bc5e510065"><div class="ttname"><a href="group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065">usb_ep_entry::context</a></div><div class="ttdeci">uintptr_t context</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2pios__usbhook_8c_source.html#l00124">pios_usbhook.c:124</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

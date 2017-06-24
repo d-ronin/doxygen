@@ -24,7 +24,7 @@ var searchData=
   ['latitude_5fmin',['latitude_min',['../structhott__gps__message.html#a1f95c2e248434cd3e7ff403634e0e1cd',1,'hott_gps_message']]],
   ['latitude_5fns',['latitude_ns',['../structhott__gps__message.html#ae5a62dd0344de553ff80d883c5c6cf14',1,'hott_gps_message']]],
   ['latitude_5fsec',['latitude_sec',['../structhott__gps__message.html#aaaa567bd312301ebe7de31224a6dbe98',1,'hott_gps_message']]],
-  ['led_5fgpio',['led_gpio',['../group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7',1,'pios_ws2811_cfg']]],
+  ['led_5fgpio',['led_gpio',['../group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2',1,'pios_ws2811_cfg']]],
   ['led_5fstatus',['led_status',['../structflyingpicmd__actuator__fc.html#a7df9f2a86ab5fce13e33b5d9459faec5',1,'flyingpicmd_actuator_fc::led_status()'],['../flyingpio__messages_8h.html#a9e98ce8ec76c3d7061bed39f6eb6fce6',1,'led_status():&#160;flyingpio_messages.h']]],
   ['leds',['leds',['../structbl__fsm__context.html#a6de897f79868b51144473252c97464da',1,'bl_fsm_context']]],
   ['len',['len',['../unionmorsel__packed__state.html#ad2e9faed4f1189ace67c1cf87860fcd1',1,'morsel_packed_state::len()'],['../struct_u_b_x_header.html#ac3357d02e8f968e15c24c81716054a85',1,'UBXHeader::len()'],['../structpios__i2c__txn.html#af238133c1e4df913933e48fc29c5510b',1,'pios_i2c_txn::len()']]],

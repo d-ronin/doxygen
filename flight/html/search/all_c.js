@@ -32,7 +32,7 @@ var searchData=
   ['le32_5fto_5fcpu',['LE32_TO_CPU',['../group___p_i_o_s.html#ga488a93b151ee4920c0a117fe66cc2efb',1,'pios.h']]],
   ['leaps_5fthru_5fend_5fof',['LEAPS_THRU_END_OF',['../timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14',1,'timeutils.c']]],
   ['leave_5flowpowermode',['Leave_LowPowerMode',['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c']]],
-  ['led_5fgpio',['led_gpio',['../group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7',1,'pios_ws2811_cfg']]],
+  ['led_5fgpio',['led_gpio',['../group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2',1,'pios_ws2811_cfg']]],
   ['led_5fpwm_2ec',['led_pwm.c',['../led__pwm_8c.html',1,'']]],
   ['led_5fpwm_2eh',['led_pwm.h',['../led__pwm_8h.html',1,'']]],
   ['led_5fpwm_5fadd_5fticks',['led_pwm_add_ticks',['../group___common.html#ga316161ec9e0698bb42f258f84ba91236',1,'led_pwm.c']]],

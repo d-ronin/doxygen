@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7c0b91b</span>
+   &#160;<span id="projectnumber">bda2863</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -101,7 +101,12 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___w_s2811.html','');})
 
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a>  </div>
+<a href="#files">Files</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">WS2811 Functions<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
@@ -112,11 +117,662 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___w_s2811.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:pios__ws2811_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__ws2811_8c.html">pios_ws2811.c</a></td></tr>
+<tr class="memitem:pios__ws2811_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__ws2811_8h.html">pios_ws2811.h</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h.html">pios_ws2811_cfg.h</a></td></tr>
+<tr class="memdesc:_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">A driver for ws2811 rgb led controller. this is a port of the CleanFlight/BetaFlight implementation, and in turn ported from LibrePilot. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:_s_t_m32_f30x_2pios__ws2811_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c.html">pios_ws2811.c</a></td></tr>
+<tr class="memdesc:_s_t_m32_f30x_2pios__ws2811_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A driver for ws2811 rgb led controller. this is a port of the CleanFlight/BetaFlight implementation, and in turn ported from LibrePilot. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structws2811__dev__s.html">ws2811_dev_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac20f5b34c542d9894fcc844aeecf6e53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gac20f5b34c542d9894fcc844aeecf6e53">WS2811_BITS_PER_LED</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:gac20f5b34c542d9894fcc844aeecf6e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga867a7539bbd6dd3b8d9945c8ee0e9022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga867a7539bbd6dd3b8d9945c8ee0e9022">WS2811_DELAY_BUFFER_LENGTH</a>&#160;&#160;&#160;42</td></tr>
+<tr class="separator:ga867a7539bbd6dd3b8d9945c8ee0e9022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebe23738f7f57107e743b6ea8ab3f646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaebe23738f7f57107e743b6ea8ab3f646">WS2811_TIMER_HZ</a>&#160;&#160;&#160;24000000</td></tr>
+<tr class="separator:gaebe23738f7f57107e743b6ea8ab3f646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga221b0b18be58d27a6145107b9e52e059"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga221b0b18be58d27a6145107b9e52e059">WS2811_TIMER_PERIOD</a>&#160;&#160;&#160;29</td></tr>
+<tr class="separator:ga221b0b18be58d27a6145107b9e52e059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87441ae558e266fc14a21b4fe39a95cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga87441ae558e266fc14a21b4fe39a95cb">BIT_COMPARE_1</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:ga87441ae558e266fc14a21b4fe39a95cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ef806cf0b0973aae171224e4fe44a41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga9ef806cf0b0973aae171224e4fe44a41">BIT_COMPARE_0</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:ga9ef806cf0b0973aae171224e4fe44a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf62cceaf0e55cf1784f836508fddac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaf62cceaf0e55cf1784f836508fddac90">PIOS_WS2811_MAGIC</a>&#160;&#160;&#160;0x00281100</td></tr>
+<tr class="separator:gaf62cceaf0e55cf1784f836508fddac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga513fcad34ee7cc97221e4f319591d04f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structws2811__dev__s.html">ws2811_dev_s</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a></td></tr>
+<tr class="separator:ga513fcad34ee7cc97221e4f319591d04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga03a2c7b63a6c66ceea7a068a40ab36fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> *dev_out, const struct <a class="el" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>, int max_leds)</td></tr>
+<tr class="memdesc:ga03a2c7b63a6c66ceea7a068a40ab36fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialise WS2811 device.  <a href="#ga03a2c7b63a6c66ceea7a068a40ab36fc">More...</a><br/></td></tr>
+<tr class="separator:ga03a2c7b63a6c66ceea7a068a40ab36fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5cff810f4d02d3844f9af889754e32c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</td></tr>
+<tr class="memdesc:gaf5cff810f4d02d3844f9af889754e32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger an update of the LED strand.  <a href="#gaf5cff810f4d02d3844f9af889754e32c">More...</a><br/></td></tr>
+<tr class="separator:gaf5cff810f4d02d3844f9af889754e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20584f1efdf110e8df6fbe60939fa928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, int idx, uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="memdesc:ga20584f1efdf110e8df6fbe60939fa928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a given LED to a color value.  <a href="#ga20584f1efdf110e8df6fbe60939fa928">More...</a><br/></td></tr>
+<tr class="separator:ga20584f1efdf110e8df6fbe60939fa928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72ea5a79ecf3a73be8625afabcfe27a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="memdesc:ga72ea5a79ecf3a73be8625afabcfe27a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all LEDs to a color value.  <a href="#ga72ea5a79ecf3a73be8625afabcfe27a6">More...</a><br/></td></tr>
+<tr class="separator:ga72ea5a79ecf3a73be8625afabcfe27a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ff4e6655cbf956d974132eb979f8fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</td></tr>
+<tr class="memdesc:ga9ff4e6655cbf956d974132eb979f8fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a DMA completion interrupt on bit_clear_dma_stream.  <a href="#ga9ff4e6655cbf956d974132eb979f8fe6">More...</a><br/></td></tr>
+<tr class="separator:ga9ff4e6655cbf956d974132eb979f8fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cc1a6022889b87d9ae38c56a98bfec0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a> (<a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</td></tr>
+<tr class="memdesc:ga2cc1a6022889b87d9ae38c56a98bfec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out how many LEDs are configured on an interface.  <a href="#ga2cc1a6022889b87d9ae38c56a98bfec0">More...</a><br/></td></tr>
+<tr class="separator:ga2cc1a6022889b87d9ae38c56a98bfec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5ffa5b6470f20d95297a8f5dfa7903bc"><td class="memItemLeft" align="right" valign="top">TIM_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">pios_ws2811_cfg::timer</a></td></tr>
+<tr class="separator:ga5ffa5b6470f20d95297a8f5dfa7903bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fd119524a0e835e3cf49f057af45bb6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga0fd119524a0e835e3cf49f057af45bb6">pios_ws2811_cfg::timer_chan</a></td></tr>
+<tr class="separator:ga0fd119524a0e835e3cf49f057af45bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62c2a16542ad2707506c189c5c6eb8a2"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">pios_ws2811_cfg::led_gpio</a></td></tr>
+<tr class="separator:ga62c2a16542ad2707506c189c5c6eb8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78e5d4cfe5de5b19cab8bbc100a98c1f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">pios_ws2811_cfg::gpio_pin</a></td></tr>
+<tr class="separator:ga78e5d4cfe5de5b19cab8bbc100a98c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga362b25979c662e2e81cb003ccec4b6c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga362b25979c662e2e81cb003ccec4b6c8">pios_ws2811_cfg::remap</a></td></tr>
+<tr class="separator:ga362b25979c662e2e81cb003ccec4b6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad03ecee48ffb7ae3ee0602e104a2d9fd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gad03ecee48ffb7ae3ee0602e104a2d9fd">pios_ws2811_cfg::timer_dma_source</a></td></tr>
+<tr class="separator:gad03ecee48ffb7ae3ee0602e104a2d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43475e446fb0aed17fc1c281fe3e4567"><td class="memItemLeft" align="right" valign="top">DMA_Channel_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga43475e446fb0aed17fc1c281fe3e4567">pios_ws2811_cfg::dma_chan</a></td></tr>
+<tr class="separator:ga43475e446fb0aed17fc1c281fe3e4567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2defba83309df86e9135f728bbf20a3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gae2defba83309df86e9135f728bbf20a3">pios_ws2811_cfg::dma_tcif</a></td></tr>
+<tr class="separator:gae2defba83309df86e9135f728bbf20a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa302baf7dc52cabb7d200afef5f3bcfb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaa302baf7dc52cabb7d200afef5f3bcfb">pios_ws2811_cfg::dma_irqn</a></td></tr>
+<tr class="separator:gaa302baf7dc52cabb7d200afef5f3bcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8241b48ae933e78c8e68064700f84823"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">ws2811_dev_s::magic</a></td></tr>
+<tr class="separator:ga8241b48ae933e78c8e68064700f84823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2847bea8e6daa9b8770a752493d674f2"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga2847bea8e6daa9b8770a752493d674f2">ws2811_dev_s::config</a></td></tr>
+<tr class="separator:ga2847bea8e6daa9b8770a752493d674f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga938e097926fe7625acafac5de9ac856f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga938e097926fe7625acafac5de9ac856f">ws2811_dev_s::dma_active</a></td></tr>
+<tr class="separator:ga938e097926fe7625acafac5de9ac856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74c32165a012c5f5bb050b449baeafbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">ws2811_dev_s::max_leds</a></td></tr>
+<tr class="separator:ga74c32165a012c5f5bb050b449baeafbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga359479a0dcb8558a50c009fbb9e167ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#ga359479a0dcb8558a50c009fbb9e167ca">ws2811_dev_s::buffer_size</a></td></tr>
+<tr class="separator:ga359479a0dcb8558a50c009fbb9e167ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffd608181f33c765714d35c309cec207"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_s2811.html#gaffd608181f33c765714d35c309cec207">ws2811_dev_s::dma_buffer</a> []</td></tr>
+<tr class="separator:gaffd608181f33c765714d35c309cec207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Driver for WS2811 LEDs. Uses one timer (generally TIM1 advanced control timer) and two DMAs. First DMA sets the bit high at the beginning of each cycle. Next DMA picks one of two phases to lower the bit at. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga9ef806cf0b0973aae171224e4fe44a41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIT_COMPARE_0&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00048">48</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga87441ae558e266fc14a21b4fe39a95cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIT_COMPARE_1&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00046">46</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf62cceaf0e55cf1784f836508fddac90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_WS2811_MAGIC&#160;&#160;&#160;0x00281100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00050">50</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac20f5b34c542d9894fcc844aeecf6e53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2811_BITS_PER_LED&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00039">39</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga867a7539bbd6dd3b8d9945c8ee0e9022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2811_DELAY_BUFFER_LENGTH&#160;&#160;&#160;42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00041">41</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaebe23738f7f57107e743b6ea8ab3f646"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2811_TIMER_HZ&#160;&#160;&#160;24000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00043">43</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga221b0b18be58d27a6145107b9e52e059"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2811_TIMER_PERIOD&#160;&#160;&#160;29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00044">44</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga513fcad34ee7cc97221e4f319591d04f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structws2811__dev__s.html">ws2811_dev_s</a>* <a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__ws2811_8h_source.html#l00037">37</a> of file <a class="el" href="pios__ws2811_8h_source.html">pios_ws2811.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga9ff4e6655cbf956d974132eb979f8fe6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_WS2811_dma_interrupt_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles a DMA completion interrupt on bit_clear_dma_stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>WS2811 device handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2cc1a6022889b87d9ae38c56a98bfec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PIOS_WS2811_get_num_leds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find out how many LEDs are configured on an interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>WS2811 device handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of leds configured. </dd></dl>
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00227">227</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga03a2c7b63a6c66ceea7a068a40ab36fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PIOS_WS2811_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> *&#160;</td>
+          <td class="paramname"><em>dev_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_leds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate and initialise WS2811 device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">dev_out</td><td><a class="el" href="struct_device.html">Device</a> handle, only valid when return value is success </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>Configuration structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_leds</td><td>Number of LEDs to update each update cycle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>on success, else failure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00064">64</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga20584f1efdf110e8df6fbe60939fa928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_WS2811_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a given LED to a color value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>WS2811 device handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>index of the led to update </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>the red brightness value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>the green brightness value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>the blue brightness value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00176">176</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga72ea5a79ecf3a73be8625afabcfe27a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_WS2811_set_all </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets all LEDs to a color value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>WS2811 device handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>the red brightness value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>the green brightness value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>the blue brightness value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00219">219</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf5cff810f4d02d3844f9af889754e32c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_WS2811_trigger_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger an update of the LED strand. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>WS2811 device handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00197">197</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga359479a0dcb8558a50c009fbb9e167ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ws2811_dev_s::buffer_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00059">59</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2847bea8e6daa9b8770a752493d674f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a>* ws2811_dev_s::config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00054">54</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga938e097926fe7625acafac5de9ac856f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ws2811_dev_s::dma_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaffd608181f33c765714d35c309cec207"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ws2811_dev_s::dma_buffer[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00061">61</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga43475e446fb0aed17fc1c281fe3e4567"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_Channel_TypeDef* pios_ws2811_cfg::dma_chan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00050">50</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa302baf7dc52cabb7d200afef5f3bcfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pios_ws2811_cfg::dma_irqn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00054">54</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae2defba83309df86e9135f728bbf20a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_ws2811_cfg::dma_tcif</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00052">52</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga78e5d4cfe5de5b19cab8bbc100a98c1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pios_ws2811_cfg::gpio_pin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00044">44</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga62c2a16542ad2707506c189c5c6eb8a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIO_TypeDef * pios_ws2811_cfg::led_gpio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00043">43</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8241b48ae933e78c8e68064700f84823"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ws2811_dev_s::magic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00053">53</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga74c32165a012c5f5bb050b449baeafbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ws2811_dev_s::max_leds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_f30x_2pios__ws2811_8c_source.html">pios_ws2811.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga362b25979c662e2e81cb003ccec4b6c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pios_ws2811_cfg::remap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00046">46</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5ffa5b6470f20d95297a8f5dfa7903bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_TypeDef * pios_ws2811_cfg::timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00040">40</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0fd119524a0e835e3cf49f057af45bb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pios_ws2811_cfg::timer_chan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00041">41</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad03ecee48ffb7ae3ee0602e104a2d9fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pios_ws2811_cfg::timer_dma_source</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00048">48</a> of file <a class="el" href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html">pios_ws2811_cfg.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

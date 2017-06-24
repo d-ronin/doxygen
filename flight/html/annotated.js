@@ -314,5 +314,6 @@ var annotated =
     [ "WMMtype_MagneticModel", "struct_w_m_mtype___magnetic_model.html", "struct_w_m_mtype___magnetic_model" ],
     [ "WMMtype_MagneticResults", "struct_w_m_mtype___magnetic_results.html", "struct_w_m_mtype___magnetic_results" ],
     [ "WMMtype_SphericalHarmonicVariables", "struct_w_m_mtype___spherical_harmonic_variables.html", "struct_w_m_mtype___spherical_harmonic_variables" ],
+    [ "ws2811_dev_s", "structws2811__dev__s.html", "structws2811__dev__s" ],
     [ "xfer_state", "structxfer__state.html", "structxfer__state" ]
 ];

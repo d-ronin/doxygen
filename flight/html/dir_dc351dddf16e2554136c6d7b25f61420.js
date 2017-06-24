@@ -20,7 +20,7 @@ var dir_dc351dddf16e2554136c6d7b25f61420 =
     [ "pios_usbhook.c", "_s_t_m32_f4xx_2pios__usbhook_8c.html", "_s_t_m32_f4xx_2pios__usbhook_8c" ],
     [ "pios_video.c", "pios__video_8c.html", null ],
     [ "pios_video_quadspi.c", "pios__video__quadspi_8c.html", null ],
-    [ "pios_ws2811.c", "pios__ws2811_8c.html", null ],
+    [ "pios_ws2811.c", "_s_t_m32_f4xx_2pios__ws2811_8c.html", null ],
     [ "startup.c", "_s_t_m32_f4xx_2startup_8c.html", "_s_t_m32_f4xx_2startup_8c" ],
     [ "vectors_stm32f4xx.c", "vectors__stm32f4xx_8c.html", "vectors__stm32f4xx_8c" ]
 ];

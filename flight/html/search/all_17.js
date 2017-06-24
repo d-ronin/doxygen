@@ -98,7 +98,12 @@ var searchData=
   ['writeheader',['writeHeader',['../group___logging.html#gabacf06870031d87fd1c482e5c88bc88b',1,'logging.c']]],
   ['written_5fbytes',['written_bytes',['../structstreamfs__footer.html#a431a01c463ac0687f56631f13ff55666',1,'streamfs_footer::written_bytes()'],['../group___logging.html#gad5b0f39d3c0f6a4529f367947772e633',1,'written_bytes():&#160;logging.c'],['../pios__streamfs_8c.html#ad5b0f39d3c0f6a4529f367947772e633',1,'written_bytes():&#160;pios_streamfs.c']]],
   ['wrong_5fpacket_5freceived',['wrong_packet_received',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37a10e85c20a054b4f3566daf03ccc5fa95',1,'common.h']]],
-  ['ws2811_5fdev_5ft',['ws2811_dev_t',['../group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f',1,'pios_ws2811.h']]],
+  ['ws2811_5fbits_5fper_5fled',['WS2811_BITS_PER_LED',['../group___p_i_o_s___w_s2811.html#gac20f5b34c542d9894fcc844aeecf6e53',1,'pios_ws2811.c']]],
+  ['ws2811_5fdelay_5fbuffer_5flength',['WS2811_DELAY_BUFFER_LENGTH',['../group___p_i_o_s___w_s2811.html#ga867a7539bbd6dd3b8d9945c8ee0e9022',1,'pios_ws2811.c']]],
+  ['ws2811_5fdev_5fs',['ws2811_dev_s',['../structws2811__dev__s.html',1,'']]],
+  ['ws2811_5fdev_5ft',['ws2811_dev_t',['../group___p_i_o_s___w_s2811.html#ga513fcad34ee7cc97221e4f319591d04f',1,'pios_ws2811.h']]],
+  ['ws2811_5ftimer_5fhz',['WS2811_TIMER_HZ',['../group___p_i_o_s___w_s2811.html#gaebe23738f7f57107e743b6ea8ab3f646',1,'pios_ws2811.c']]],
+  ['ws2811_5ftimer_5fperiod',['WS2811_TIMER_PERIOD',['../group___p_i_o_s___w_s2811.html#ga221b0b18be58d27a6145107b9e52e059',1,'pios_ws2811.c']]],
   ['wtotallength',['wTotalLength',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga5d8ee63135423fa6ee5de728aa2c4ffd',1,'usb_configuration_desc::wTotalLength()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga866c5d9bb8a60f25805d37b7a5b5f9e8',1,'wTotalLength():&#160;pios_usb_defs.h']]],
   ['wvalue',['wValue',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga1f14de3d7b02c5e6ba04cf9334e0d259',1,'usb_setup_request::wValue()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga6049498eadec3759d00a4063f911a58e',1,'usb_cdc_serial_state_report::wValue()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga7383d0165ad8eab48aa239c005199121',1,'wValue():&#160;pios_usb_defs.h']]],
   ['wwdg_5firqhandler',['WWDG_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#ad4c8a013e3354da6d132cdb91a481c3c',1,'WWDG_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ad4c8a013e3354da6d132cdb91a481c3c',1,'WWDG_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ad4c8a013e3354da6d132cdb91a481c3c',1,'WWDG_IRQHandler():&#160;pios_chibios_transition_priv.h']]]

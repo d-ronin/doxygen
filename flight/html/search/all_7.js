@@ -116,7 +116,7 @@ var searchData=
   ['gpio_5finit',['gpio_init',['../structpios__servo__cfg.html#a41b9d93e4e94a3a0c5e40a4e42c6d117',1,'pios_servo_cfg']]],
   ['gpio_5finv_5fdisable',['gpio_inv_disable',['../structpios__sbus__cfg.html#a843ec7deaae570eeab1dc5770e77dafe',1,'pios_sbus_cfg']]],
   ['gpio_5finv_5fenable',['gpio_inv_enable',['../structpios__sbus__cfg.html#ab2b1ec166136b6e8ecfc96fa0c1319b5',1,'pios_sbus_cfg']]],
-  ['gpio_5fpin',['gpio_pin',['../group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f',1,'pios_ws2811_cfg::gpio_pin()'],['../group___p_i_o_s.html#gabcc06cb27e5dbc4d937098dc976966b1',1,'pios_dac_cfg::gpio_pin()']]],
+  ['gpio_5fpin',['gpio_pin',['../group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f',1,'pios_ws2811_cfg::gpio_pin()'],['../group___p_i_o_s.html#gabcc06cb27e5dbc4d937098dc976966b1',1,'pios_dac_cfg::gpio_pin()']]],
   ['gpioa_5fdio',['GPIOA_DIO',['../group___p_i_o_s___d_i_o.html#ga9b09bd0c827c9b0e48dd2959a956c187',1,'pios_dio.h']]],
   ['gpiob_5fdio',['GPIOB_DIO',['../group___p_i_o_s___d_i_o.html#gae15fe0703c97d17c323706384b9dd260',1,'pios_dio.h']]],
   ['gpioc_5fdio',['GPIOC_DIO',['../group___p_i_o_s___d_i_o.html#ga7294076f43cf37e1aac04365dba989b9',1,'pios_dio.h']]],

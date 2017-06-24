@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7c0b91b</span>
+   &#160;<span id="projectnumber">bda2863</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
+$(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__ws2811_8c_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="title">pios_ws2811.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="pios__ws2811_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="_s_t_m32_f4xx_2pios__ws2811_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -154,13 +154,13 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// interrupt rate of 3.33KHz.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define WS2811_DMA_BUFSIZE (6*24*2)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span>ws2811_dev_s {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span><a class="code" href="structws2811__dev__s.html">ws2811_dev_s</a> {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define WS2811_MAGIC 0x31313832         </span><span class="comment">/* &#39;2811&#39; */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>        uint32_t <a class="code" href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>        uint32_t <a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        uint16_t max_leds;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        uint16_t <a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// This gets clocked out at timer update event to BSRRH</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        uint32_t lame_dma_buf[1];</div>
@@ -194,42 +194,42 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">struct </span>ws2811_pixel_data_s pixel_data[0];</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> *dev_out, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> *dev_out, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">int</span> max_leds)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(max_leds &gt; 0);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(max_leds &lt;= 1024);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*dev) +</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*dev) +</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        <span class="keyword">sizeof</span>(<span class="keyword">struct</span> ws2811_pixel_data_s) * max_leds);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (!dev) {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        dev-&gt;magic = WS2811_MAGIC;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> = WS2811_MAGIC;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        dev-&gt;cfg = <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        dev-&gt;max_leds = max_leds;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a> = max_leds;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        dev-&gt;pixel_data_end = (uint8_t *)(&amp;dev-&gt;pixel_data[max_leds]);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        dev-&gt;gpio_bsrrh_address = (<span class="keyword">volatile</span> uint8_t *)(&amp;cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">led_gpio</a>-&gt;BSRRH);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        dev-&gt;gpio_bsrrl_address = (<span class="keyword">volatile</span> uint8_t *)(&amp;cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">led_gpio</a>-&gt;BSRRL);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        dev-&gt;gpio_bsrrh_address = (<span class="keyword">volatile</span> uint8_t *)(&amp;cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">led_gpio</a>-&gt;BSRRH);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        dev-&gt;gpio_bsrrl_address = (<span class="keyword">volatile</span> uint8_t *)(&amp;cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">led_gpio</a>-&gt;BSRRL);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &amp; 0xff00) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &amp; 0xff00) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="comment">// It really should only be one bit set, but no matter</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">// what it has to be in only one byte (half of the halfword)</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">// to make sense.</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(!(cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &amp; 0xff));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(!(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &amp; 0xff));</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="comment">// Fixup --- store to a byte later (little endian), an</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="comment">// adjusted value.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                dev-&gt;gpio_bit = cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &gt;&gt; 8;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                dev-&gt;gpio_bit = cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a> &gt;&gt; 8;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                dev-&gt;gpio_bsrrh_address++;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                dev-&gt;gpio_bsrrl_address++;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                dev-&gt;gpio_bit = cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                dev-&gt;gpio_bit = cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; <span class="keyword">sizeof</span>(dev-&gt;dma_buf_0)/4; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> ++) {</div>
@@ -244,34 +244,34 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                (dev-&gt;gpio_bit &lt;&lt; 16) |</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                (dev-&gt;gpio_bit &lt;&lt; 24);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(dev, 0, 0, 0);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(dev, 0, 0, 0);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        GPIO_InitTypeDef gpio_cfg = {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                .GPIO_Pin = cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a>,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                .GPIO_Pin = cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">gpio_pin</a>,</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                .GPIO_Mode = GPIO_Mode_OUT,</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                .GPIO_Speed = GPIO_Fast_Speed,</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                .GPIO_OType = GPIO_OType_PP,</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        };</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        GPIO_Init(cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">led_gpio</a>, &amp;gpio_cfg);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        GPIO_Init(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">led_gpio</a>, &amp;gpio_cfg);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        TIM_DeInit(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        TIM_Cmd(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, DISABLE);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        TIM_DeInit(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        TIM_Cmd(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, DISABLE);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        TIM_TimeBaseInit(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        (TIM_TimeBaseInitTypeDef *) &amp;cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga45877ae07dece21484b4f5bd3bd4ec43">clock_cfg</a>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        TIM_TimeBaseInit(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        (TIM_TimeBaseInitTypeDef *) &amp;cfg-&gt;<a class="code" href="structpios__ws2811__cfg.html#a45877ae07dece21484b4f5bd3bd4ec43">clock_cfg</a>);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        TIM_SelectOCxM(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, TIM_Channel_1, TIM_OCMode_Active);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        TIM_SelectOCxM(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, TIM_Channel_2, TIM_OCMode_Active);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        TIM_SelectOCxM(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, TIM_Channel_1, TIM_OCMode_Active);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        TIM_SelectOCxM(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, TIM_Channel_2, TIM_OCMode_Active);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        TIM_SetCompare4(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, 1);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        TIM_SetCompare1(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga302248856259a941c1c4463cc7b3bba3">fall_time_l</a>);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        TIM_SetCompare2(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, cfg-&gt;<a class="code" href="group___p_i_o_s.html#ga2c71481fd577f1156ba52c2dff39e5d8">fall_time_h</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        TIM_SetCompare4(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, 1);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        TIM_SetCompare1(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, cfg-&gt;<a class="code" href="structpios__ws2811__cfg.html#a302248856259a941c1c4463cc7b3bba3">fall_time_l</a>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        TIM_SetCompare2(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, cfg-&gt;<a class="code" href="structpios__ws2811__cfg.html#a2c71481fd577f1156ba52c2dff39e5d8">fall_time_h</a>);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="comment">// Disable all timer interrupts, in case someone inited this timer</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">// before.</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        TIM_ITConfig(cfg-&gt;<a class="code" href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">timer</a>, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 |</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        TIM_ITConfig(cfg-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a>, TIM_IT_Update | TIM_IT_CC1 | TIM_IT_CC2 |</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        TIM_IT_CC3 | TIM_IT_CC4 | TIM_IT_COM | TIM_IT_Trigger |</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        TIM_IT_Break, DISABLE);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
@@ -329,7 +329,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> ws2811_cue_dma(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> ws2811_cue_dma(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev) {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">// ensure timer stopped</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        TIM_Cmd(dev-&gt;cfg-&gt;timer, DISABLE);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">// and reset</span></div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">// Limited to 65535.  In turn this limits us to 2730 LEDs before</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">// overflow. ;)</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        dma_init.DMA_BufferSize = dev-&gt;max_leds * 24;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        dma_init.DMA_BufferSize = dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a> * 24;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        dma_init.DMA_Mode = DMA_Mode_Normal;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        dma_init.DMA_Priority = DMA_Priority_VeryHigh;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        dma_init.DMA_FIFOMode = DMA_FIFOMode_Enable;</div>
@@ -409,9 +409,9 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        TIM_Cmd(dev-&gt;cfg-&gt;timer, ENABLE);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev)</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> == WS2811_MAGIC);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> (dev-&gt;in_progress) {</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="comment">// XXX really need to ensure dead time here too</span></div>
@@ -436,7 +436,7 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        ws2811_cue_dma(dev);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_s2811.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev)</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
@@ -490,12 +490,12 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;}</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, <span class="keywordtype">int</span> idx, uint8_t r, uint8_t g,</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev, <span class="keywordtype">int</span> idx, uint8_t r, uint8_t g,</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                uint8_t b)</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;{</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> == WS2811_MAGIC);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">if</span> (idx &gt;= dev-&gt;max_leds) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">if</span> (idx &gt;= dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a>) {</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
@@ -503,58 +503,59 @@ $(document).ready(function(){initNavTree('pios__ws2811_8c_source.html','');});
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                        { .r = r, .g = g, .b = b };</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev, uint8_t r, uint8_t g,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev, uint8_t r, uint8_t g,</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                uint8_t b)</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> == WS2811_MAGIC);</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; dev-&gt;max_leds; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, r, g, b);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a>; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, r, g, b);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        }</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a> dev)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> dev)</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;magic == WS2811_MAGIC);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> == WS2811_MAGIC);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> dev-&gt;max_leds;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">max_leds</a>;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_WS2811 */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group___p_i_o_s_html_ga392253e9f6d730c828c6966708ba7fb7"><div class="ttname"><a href="group___p_i_o_s.html#ga392253e9f6d730c828c6966708ba7fb7">pios_ws2811_cfg::led_gpio</a></div><div class="ttdeci">GPIO_TypeDef * led_gpio</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00047">pios_ws2811.h:47</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00227">pios_ws2811.c:227</a></div></div>
 <div class="ttc" id="pios__stm32_8h_html"><div class="ttname"><a href="pios__stm32_8h.html">pios_stm32.h</a></div><div class="ttdoc">Types that are specific to the STM32 peripherals. </div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga2c71481fd577f1156ba52c2dff39e5d8"><div class="ttname"><a href="group___p_i_o_s.html#ga2c71481fd577f1156ba52c2dff39e5d8">pios_ws2811_cfg::fall_time_h</a></div><div class="ttdeci">uint8_t fall_time_h</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00043">pios_ws2811.h:43</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga62c2a16542ad2707506c189c5c6eb8a2"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga62c2a16542ad2707506c189c5c6eb8a2">pios_ws2811_cfg::led_gpio</a></div><div class="ttdeci">GPIO_TypeDef * led_gpio</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00043">pios_ws2811_cfg.h:43</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga8241b48ae933e78c8e68064700f84823"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">ws2811_dev_s::magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00053">pios_ws2811.c:53</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga45877ae07dece21484b4f5bd3bd4ec43"><div class="ttname"><a href="group___p_i_o_s.html#ga45877ae07dece21484b4f5bd3bd4ec43">pios_ws2811_cfg::clock_cfg</a></div><div class="ttdeci">TIM_TimeBaseInitTypeDef clock_cfg</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00041">pios_ws2811.h:41</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga78e5d4cfe5de5b19cab8bbc100a98c1f"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">pios_ws2811_cfg::gpio_pin</a></div><div class="ttdeci">uint16_t gpio_pin</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00044">pios_ws2811_cfg.h:44</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga03a2c7b63a6c66ceea7a068a40ab36fc"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a></div><div class="ttdeci">int PIOS_WS2811_init(ws2811_dev_t *dev_out, const struct pios_ws2811_cfg *cfg, int max_leds)</div><div class="ttdoc">Allocate and initialise WS2811 device. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00064">pios_ws2811.c:64</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___unit_tests_html_ga080abdcb9c02438f1cd2bb707af25af8"><div class="ttname"><a href="group___unit_tests.html#ga080abdcb9c02438f1cd2bb707af25af8">restrict</a></div><div class="ttdeci">#define restrict</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_2unittest_8cpp_source.html#l00041">unittest.cpp:41</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga72ea5a79ecf3a73be8625afabcfe27a6"><div class="ttname"><a href="group___p_i_o_s.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a></div><div class="ttdeci">void PIOS_WS2811_set_all(ws2811_dev_t dev, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Sets all LEDs to a color value. </div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga72ea5a79ecf3a73be8625afabcfe27a6"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a></div><div class="ttdeci">void PIOS_WS2811_set_all(ws2811_dev_t dev, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Sets all LEDs to a color value. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00219">pios_ws2811.c:219</a></div></div>
+<div class="ttc" id="structpios__ws2811__cfg_html_a2c71481fd577f1156ba52c2dff39e5d8"><div class="ttname"><a href="structpios__ws2811__cfg.html#a2c71481fd577f1156ba52c2dff39e5d8">pios_ws2811_cfg::fall_time_h</a></div><div class="ttdeci">uint8_t fall_time_h</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00042">pios_ws2811_cfg.h:42</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga74c32165a012c5f5bb050b449baeafbe"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga74c32165a012c5f5bb050b449baeafbe">ws2811_dev_s::max_leds</a></div><div class="ttdeci">int max_leds</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00058">pios_ws2811.c:58</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga03a2c7b63a6c66ceea7a068a40ab36fc"><div class="ttname"><a href="group___p_i_o_s.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a></div><div class="ttdeci">int PIOS_WS2811_init(ws2811_dev_t *dev_out, const struct pios_ws2811_cfg *cfg, int max_leds)</div><div class="ttdoc">Allocate and initialise WS2811 device. </div></div>
-<div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga9ff4e6655cbf956d974132eb979f8fe6"><div class="ttname"><a href="group___p_i_o_s.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a></div><div class="ttdeci">void PIOS_WS2811_dma_interrupt_handler(ws2811_dev_t dev)</div><div class="ttdoc">Handles a DMA completion interrupt on bit_clear_dma_stream. </div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga5ffa5b6470f20d95297a8f5dfa7903bc"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">pios_ws2811_cfg::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00040">pios_ws2811_cfg.h:40</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00176">pios_ws2811.c:176</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga9ff4e6655cbf956d974132eb979f8fe6"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a></div><div class="ttdeci">void PIOS_WS2811_dma_interrupt_handler(ws2811_dev_t dev)</div><div class="ttdoc">Handles a DMA completion interrupt on bit_clear_dma_stream. </div></div>
 <div class="ttc" id="morsel_8c_html_aebddcae7f50eeca200c88ea15dd27094"><div class="ttname"><a href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a></div><div class="ttdeci">#define DONT_BUILD_IF(COND, MSG)</div><div class="ttdef"><b>Definition:</b> <a href="morsel_8c_source.html#l00206">morsel.c:206</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00197">pios_ws2811.c:197</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="pios__ws2811_8h_html"><div class="ttname"><a href="pios__ws2811_8h.html">pios_ws2811.h</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga302248856259a941c1c4463cc7b3bba3"><div class="ttname"><a href="group___p_i_o_s.html#ga302248856259a941c1c4463cc7b3bba3">pios_ws2811_cfg::fall_time_l</a></div><div class="ttdeci">uint8_t fall_time_l</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00043">pios_ws2811.h:43</a></div></div>
+<div class="ttc" id="structws2811__dev__s_html"><div class="ttname"><a href="structws2811__dev__s.html">ws2811_dev_s</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00052">pios_ws2811.c:52</a></div></div>
+<div class="ttc" id="structpios__ws2811__cfg_html_a302248856259a941c1c4463cc7b3bba3"><div class="ttname"><a href="structpios__ws2811__cfg.html#a302248856259a941c1c4463cc7b3bba3">pios_ws2811_cfg::fall_time_l</a></div><div class="ttdeci">uint8_t fall_time_l</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00042">pios_ws2811_cfg.h:42</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
-<div class="ttc" id="structpios__ws2811__cfg_html"><div class="ttname"><a href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00039">pios_ws2811.h:39</a></div></div>
+<div class="ttc" id="structpios__ws2811__cfg_html"><div class="ttname"><a href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__ws2811__cfg_8h_source.html#l00039">pios_ws2811_cfg.h:39</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga78e5d4cfe5de5b19cab8bbc100a98c1f"><div class="ttname"><a href="group___p_i_o_s.html#ga78e5d4cfe5de5b19cab8bbc100a98c1f">pios_ws2811_cfg::gpio_pin</a></div><div class="ttdeci">uint16_t gpio_pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00049">pios_ws2811.h:49</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga513fcad34ee7cc97221e4f319591d04f"><div class="ttname"><a href="group___p_i_o_s.html#ga513fcad34ee7cc97221e4f319591d04f">ws2811_dev_t</a></div><div class="ttdeci">struct ws2811_dev_s * ws2811_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00037">pios_ws2811.h:37</a></div></div>
 <div class="ttc" id="pios__tim__priv_8h_html"><div class="ttname"><a href="pios__tim__priv_8h.html">pios_tim_priv.h</a></div></div>
+<div class="ttc" id="structpios__ws2811__cfg_html_a45877ae07dece21484b4f5bd3bd4ec43"><div class="ttname"><a href="structpios__ws2811__cfg.html#a45877ae07dece21484b4f5bd3bd4ec43">pios_ws2811_cfg::clock_cfg</a></div><div class="ttdeci">TIM_TimeBaseInitTypeDef clock_cfg</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__ws2811__cfg_8h_source.html#l00040">pios_ws2811_cfg.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga70d41fcf58bbbd18a9b6cd365d0f2dab"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga70d41fcf58bbbd18a9b6cd365d0f2dab">PIOS_DELAY_WaituS</a></div><div class="ttdeci">int32_t PIOS_DELAY_WaituS(uint32_t uS)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00116">pios_delay.c:116</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_gabe2f1b19eec643406df753b11631273b"><div class="ttname"><a href="group___p_i_o_s.html#gabe2f1b19eec643406df753b11631273b">pios_ws2811_cfg::timer</a></div><div class="ttdeci">TIM_TypeDef * timer</div><div class="ttdef"><b>Definition:</b> <a href="pios__ws2811_8h_source.html#l00040">pios_ws2811.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_dc351dddf16e2554136c6d7b25f61420.html">STM32F4xx</a></li><li class="navelem"><a class="el" href="pios__ws2811_8c.html">pios_ws2811.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_dc351dddf16e2554136c6d7b25f61420.html">STM32F4xx</a></li><li class="navelem"><a class="el" href="_s_t_m32_f4xx_2pios__ws2811_8c.html">pios_ws2811.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

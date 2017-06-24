@@ -265,8 +265,8 @@ var hierarchy =
     [ "UAVObjEvent", "struct_u_a_v_obj_event.html", null ],
     [ "UAVObjStats", "struct_u_a_v_obj_stats.html", null ],
     [ "UAVOData", "struct_u_a_v_o_data.html", null ],
-    [ "UAVOBase::UAVOInfo", "struct_u_a_v_o_base_1_1_u_a_v_o_info.html", null ],
     [ "UAVOInfo", "struct_u_a_v_o_info.html", null ],
+    [ "UAVOBase::UAVOInfo", "struct_u_a_v_o_base_1_1_u_a_v_o_info.html", null ],
     [ "UAVOMeta", "struct_u_a_v_o_meta.html", null ],
     [ "UAVOMulti", "struct_u_a_v_o_multi.html", null ],
     [ "UAVOMultiInst", "struct_u_a_v_o_multi_inst.html", null ],
@@ -319,5 +319,6 @@ var hierarchy =
     [ "WMMtype_MagneticModel", "struct_w_m_mtype___magnetic_model.html", null ],
     [ "WMMtype_MagneticResults", "struct_w_m_mtype___magnetic_results.html", null ],
     [ "WMMtype_SphericalHarmonicVariables", "struct_w_m_mtype___spherical_harmonic_variables.html", null ],
+    [ "ws2811_dev_s", "structws2811__dev__s.html", null ],
     [ "xfer_state", "structxfer__state.html", null ]
 ];

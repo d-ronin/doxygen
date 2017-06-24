@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7c0b91b</span>
+   &#160;<span id="projectnumber">bda2863</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                uint8_t blink_prio, <span class="keywordtype">bool</span> is_armed, <span class="keywordtype">bool</span> force_dim) {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        uint16_t num_leds = <a class="code" href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        uint16_t num_leds = <a class="code" href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">if</span> (num_leds == 0) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
@@ -566,7 +566,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                <span class="keywordflow">if</span> (led_override) {</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                        <span class="keywordflow">if</span> ((i &gt;= rgbSettings.AnnunciateRangeBegin) &amp;&amp;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                        (i &lt;= rgbSettings.AnnunciateRangeEnd)) {</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                               alarm_color[0],</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                               alarm_color[1],</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                               alarm_color[2]);</div>
@@ -577,13 +577,13 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <span class="keywordflow">if</span> ((i &gt;= rgbSettings.RangeBegin) &amp;&amp;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                                (i &lt;= rgbSettings.RangeEnd)) {</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                        <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                        <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                                        range_color[0], range_color[1],</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                                        range_color[2]);</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                }</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                                rgbSettings.DefaultColor[0],</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                                rgbSettings.DefaultColor[1],</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                                rgbSettings.DefaultColor[2]);</div>
@@ -593,10 +593,10 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="preprocessor"></span>        <span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a>;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">if</span> (!video_active) {</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                <a class="code" href="group___p_i_o_s.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        }</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
@@ -604,16 +604,16 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___on_screen_display_html_gaa0e1b89f80645ac528511ff7bfa2d096"><div class="ttname"><a href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a></div><div class="ttdeci">volatile bool video_active</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00136">onscreendisplay.c:136</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00227">pios_ws2811.c:227</a></div></div>
 <div class="ttc" id="misc__math_8h_html"><div class="ttname"><a href="misc__math_8h.html">misc_math.h</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div></div>
 <div class="ttc" id="group___brain_r_e1_html_ga6989625716018e17ce36590971457436"><div class="ttname"><a href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a></div><div class="ttdeci">ws2811_dev_t pios_ws2811</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_2fw_2pios__board_8c_source.html#l00071">pios_board.c:71</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___system_module_html_ga107237204bc679179166c17b330533a5"><div class="ttname"><a href="group___system_module.html#ga107237204bc679179166c17b330533a5">systemmod_process_rgb_leds</a></div><div class="ttdeci">void systemmod_process_rgb_leds(bool led_override, bool led_override_active, uint8_t blink_prio, bool is_armed, bool force_dim)</div></div>
 <div class="ttc" id="rgbleds_8h_html"><div class="ttname"><a href="rgbleds_8h.html">rgbleds.h</a></div></div>
 <div class="ttc" id="group___tau_labs_math_html_ga5f4d4e368bc5b651d7c0b006db570bfd"><div class="ttname"><a href="group___tau_labs_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">sin_approx</a></div><div class="ttdeci">static int16_t sin_approx(int32_t x)</div><div class="ttdoc">Fast approximation of sine; 3rd order taylor expansion. Based on http://www.coranac.com/2009/07/sines/. </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00088">misc_math.h:88</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div></div>
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00176">pios_ws2811.c:176</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_s2811_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00197">pios_ws2811.c:197</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
