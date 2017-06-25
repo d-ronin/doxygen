@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bda2863</span>
+   &#160;<span id="projectnumber">1e37ad8</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('telemetrymanager_8cpp_source.html','')
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="icore_8h.html">coreplugin/icore.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#gaab121ca26ff1b0985b013d715132a088">   32</a></span>&#160;<a class="code" href="group___u_a_v_talk_plugin.html#gaab121ca26ff1b0985b013d715132a088">TelemetryManager::TelemetryManager</a>()</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : m_connected(false)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : autopilotConnected(false)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Get UAVObjectManager instance</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
@@ -148,76 +148,79 @@ $(document).ready(function(){initNavTree('telemetrymanager_8cpp_source.html','')
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">TelemetryManager::start</a>(QIODevice *dev)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">   50</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">TelemetryManager::isConnected</a>()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    utalk = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(dev, objMngr);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    telemetry = <span class="keyword">new</span> <a class="code" href="class_telemetry.html">Telemetry</a>(utalk, objMngr);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    telemetryMon = <span class="keyword">new</span> <a class="code" href="class_telemetry_monitor.html">TelemetryMonitor</a>(objMngr, telemetry, sessions);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    connect(telemetryMon, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a>, <span class="keyword">this</span>, &amp;TelemetryManager::onConnect);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    connect(telemetryMon, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a>, <span class="keyword">this</span>, &amp;TelemetryManager::onDisconnect);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">TelemetryManager::stop</a>()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    telemetryMon-&gt;disconnect(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    sessions = telemetryMon-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga82d33799cd2b330eb7fa4d67d2c786bb">savedSessions</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    telemetryMon-&gt;deleteLater();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    telemetryMon = NULL;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    telemetry-&gt;deleteLater();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    telemetry = NULL;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    utalk-&gt;deleteLater();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    utalk = NULL;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    onDisconnect();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onConnect()</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_connected = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0">connected</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3">connectedChanged</a>(m_connected);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onDisconnect()</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_connected = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">disconnected</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3">connectedChanged</a>(m_connected);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onGeneralSettingsChanged()</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (!settings-&gt;<a class="code" href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">useSessionManaging</a>()) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span> (dobj) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">  101</a></span>&#160;QByteArray *<a class="code" href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">TelemetryManager::downloadFile</a>(quint32 fileId, quint32 maxSize)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (!telemetry) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> telemetry-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1">downloadFile</a>(fileId, maxSize);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> autopilotConnected;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">TelemetryManager::start</a>(QIODevice *dev)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    utalk = <span class="keyword">new</span> <a class="code" href="class_u_a_v_talk.html">UAVTalk</a>(dev, objMngr);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    telemetry = <span class="keyword">new</span> <a class="code" href="class_telemetry.html">Telemetry</a>(utalk, objMngr);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    telemetryMon = <span class="keyword">new</span> <a class="code" href="class_telemetry_monitor.html">TelemetryMonitor</a>(objMngr, telemetry, sessions);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    connect(telemetryMon, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a>, <span class="keyword">this</span>, &amp;TelemetryManager::onConnect);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    connect(telemetryMon, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a>, <span class="keyword">this</span>, &amp;TelemetryManager::onDisconnect);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">TelemetryManager::stop</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    telemetryMon-&gt;disconnect(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    sessions = telemetryMon-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga82d33799cd2b330eb7fa4d67d2c786bb">savedSessions</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    telemetryMon-&gt;deleteLater();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    telemetryMon = NULL;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    telemetry-&gt;deleteLater();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    telemetry = NULL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    utalk-&gt;deleteLater();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    utalk = NULL;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    onDisconnect();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onConnect()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    autopilotConnected = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0">connected</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onDisconnect()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    autopilotConnected = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">disconnected</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> TelemetryManager::onGeneralSettingsChanged()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (!settings-&gt;<a class="code" href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">useSessionManaging</a>()) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">if</span> (dobj) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">  104</a></span>&#160;QByteArray *<a class="code" href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">TelemetryManager::downloadFile</a>(quint32 fileId, quint32 maxSize)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (!telemetry) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> telemetry-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1">downloadFile</a>(fileId, maxSize);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gaae6597a648e04583059a23fdcdd7d0de"><div class="ttname"><a href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">Core::Internal::GeneralSettings::useSessionManaging</a></div><div class="ttdeci">bool useSessionManaging() const </div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8cpp_source.html#l00286">generalsettings.cpp:286</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2eceda3264145498ea67e6637f9515f3"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3">TelemetryManager::connectedChanged</a></div><div class="ttdeci">void connectedChanged(bool)</div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gac4e867b78642d4f1fe27c5fc97468ce7"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a></div><div class="ttdeci">void connected()</div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga34a5d1ac57fe6d641093dc5de11a61c3"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">TelemetryManager::downloadFile</a></div><div class="ttdeci">QByteArray * downloadFile(quint32 fileId, quint32 maxSize=1048576)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00101">telemetrymanager.cpp:101</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga34a5d1ac57fe6d641093dc5de11a61c3"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">TelemetryManager::downloadFile</a></div><div class="ttdeci">QByteArray * downloadFile(quint32 fileId, quint32 maxSize=1048576)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00104">telemetrymanager.cpp:104</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga738d6ac5554d0f9d1c6adecbbca967a1"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a></div><div class="ttdeci">QMap&lt; quint32, UAVObject * &gt; ObjectMap</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00053">uavobjectmanager.h:53</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group__extensionsystem_html_gafb03a4a58ac4629332ca26b4eb519748"><div class="ttname"><a href="group__extensionsystem.html#gafb03a4a58ac4629332ca26b4eb519748">ExtensionSystem::PluginManager::pluginsLoadEnded</a></div><div class="ttdeci">void pluginsLoadEnded()</div></div>
 <div class="ttc" id="group___core_plugin_html_ga139ef189f70b7b4d4d82ffb4b8146afa"><div class="ttname"><a href="group___core_plugin.html#ga139ef189f70b7b4d4d82ffb4b8146afa">Core::Internal::GeneralSettings::generalSettingsChanged</a></div><div class="ttdeci">void generalSettingsChanged()</div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gaab121ca26ff1b0985b013d715132a088"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gaab121ca26ff1b0985b013d715132a088">TelemetryManager::TelemetryManager</a></div><div class="ttdeci">TelemetryManager()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00032">telemetrymanager.cpp:32</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga73bf9fbd67f3eb0451363525de9cc7de"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">TelemetryManager::isConnected</a></div><div class="ttdeci">bool isConnected()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00050">telemetrymanager.cpp:50</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gabff17bb54c5be0f7c9d474ab9ef6a5c1"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1">Telemetry::downloadFile</a></div><div class="ttdeci">QByteArray * downloadFile(quint32 fileId, quint32 maxSize)</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8cpp_source.html#l00401">telemetry.cpp:401</a></div></div>
 <div class="ttc" id="telemetrymanager_8h_html"><div class="ttname"><a href="telemetrymanager_8h.html">telemetrymanager.h</a></div></div>
@@ -225,14 +228,14 @@ $(document).ready(function(){initNavTree('telemetrymanager_8cpp_source.html','')
 <div class="ttc" id="class_telemetry_html"><div class="ttname"><a href="class_telemetry.html">Telemetry</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00066">telemetry.h:66</a></div></div>
 <div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga8b84e427e29108e21861266a4397b7a9"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">UAVDataObject::setIsPresentOnHardware</a></div><div class="ttdeci">void setIsPresentOnHardware(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00108">uavdataobject.cpp:108</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga59bfea54673b2ab51e9ac1bf3a186718"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">TelemetryManager::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00059">telemetrymanager.cpp:59</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga59bfea54673b2ab51e9ac1bf3a186718"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">TelemetryManager::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00064">telemetrymanager.cpp:64</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga54bec8ecfe469710c7261f567e76c5f0"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0">TelemetryManager::connected</a></div><div class="ttdeci">void connected()</div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga61e671949cc2403327617d9c9a372a76"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">TelemetryManager::disconnected</a></div><div class="ttdeci">void disconnected()</div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga28e48a3688e195cc9c3263ccdeb084c4"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga28e48a3688e195cc9c3263ccdeb084c4">TelemetryManager::~TelemetryManager</a></div><div class="ttdeci">~TelemetryManager()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00046">telemetrymanager.cpp:46</a></div></div>
 <div class="ttc" id="class_telemetry_monitor_html"><div class="ttname"><a href="class_telemetry_monitor.html">TelemetryMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8h_source.html#l00051">telemetrymonitor.h:51</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga48c17e83f41b742abc5c234963093171"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">TelemetryManager::start</a></div><div class="ttdeci">void start(QIODevice *dev)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00050">telemetrymanager.cpp:50</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga48c17e83f41b742abc5c234963093171"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171">TelemetryManager::start</a></div><div class="ttdeci">void start(QIODevice *dev)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00055">telemetrymanager.cpp:55</a></div></div>
 <div class="ttc" id="class_u_a_v_talk_html"><div class="ttname"><a href="class_u_a_v_talk.html">UAVTalk</a></div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8h_source.html#l00046">uavtalk.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga82d33799cd2b330eb7fa4d67d2c786bb"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga82d33799cd2b330eb7fa4d67d2c786bb">TelemetryMonitor::savedSessions</a></div><div class="ttdeci">QHash&lt; quint16, QList&lt; objStruc &gt; &gt; savedSessions()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8h_source.html#l00065">telemetrymonitor.h:65</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga8445fbd983df4d054bb798c760ba0640"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a></div><div class="ttdeci">void disconnected()</div></div>

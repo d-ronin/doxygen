@@ -206,7 +206,7 @@ var searchData=
   ['polarplot',['POLARPLOT',['../group___scope_plugin.html#gga0fad4d5fa165d3cf65c53a66501eb830a6d9b3ec0d944281832f5d0b2d474106a',1,'Scopes2dConfig']]],
   ['populatewidgets',['populateWidgets',['../group___u_a_v_object_widget_utils.html#gaa3d55f7941db619b9872b0ffdc78ebde',1,'ConfigTaskWidget']]],
   ['populatewidgetsrequested',['populateWidgetsRequested',['../group___u_a_v_object_widget_utils.html#gacc1be196d23d5e483f68a990d8ebfae6',1,'ConfigTaskWidget']]],
-  ['popup',['popup',['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)'],['../class_popup_widget.html#a7fa5f95babcb7743b3dd2e5acee81360',1,'PopupWidget::popUp()']]],
+  ['popup',['popUp',['../class_popup_widget.html#a7fa5f95babcb7743b3dd2e5acee81360',1,'PopupWidget::popUp()'],['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)']]],
   ['popupcurve',['PopupCurve',['../group___config_plugin.html#gaec9845f3048d0bb15ba6b31f4659888f',1,'MixerCurve']]],
   ['popupwidget',['PopupWidget',['../class_popup_widget.html',1,'PopupWidget'],['../class_popup_widget.html#a65bffb57db36284b740a658485c68798',1,'PopupWidget::PopupWidget()']]],
   ['popupwidget_2ecpp',['popupwidget.cpp',['../popupwidget_8cpp.html',1,'']]],

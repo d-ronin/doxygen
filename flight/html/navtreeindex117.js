@@ -1,7 +1,5 @@
 var NAVTREEINDEX117 =
 {
-"serial__4way_8h.html#ae5a164dd616eb1c5c1de467a8a164163":[5,0,0,2,33,0,0,0,2],
-"serial__4way_8h.html#ae7618c84f1e1ba368abe95cb6d099b5a":[5,0,0,2,33,0,0,0,13],
 "serial__4way_8h.html#ga9dbba32c19b1cf3715ffea22acbeecf9":[5,0,0,2,33,0,0,0,7],
 "serial__4way_8h_source.html":[5,0,0,2,33,0,0,0],
 "serial__4way__avrootloader_8c.html":[5,0,0,2,33,0,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX117 =
 "sparky2_2fw_2mcuconf_8h.html#ga32a5323ec55bfb3e6590c8346ee76dc4":[5,0,0,4,16,2,0,30],
 "sparky2_2fw_2mcuconf_8h.html#ga360ce89f2744ed7e4ec5789201f557c3":[5,0,0,4,16,2,0,31],
 "sparky2_2fw_2mcuconf_8h.html#ga3670f3886d02bb3010016bbf0db0db83":[5,0,0,4,16,2,0,117],
-"sparky2_2fw_2mcuconf_8h.html#ga39873d5a932294ccab14f1bdd766fffb":[5,0,0,4,16,2,0,74]
+"sparky2_2fw_2mcuconf_8h.html#ga39873d5a932294ccab14f1bdd766fffb":[5,0,0,4,16,2,0,74],
+"sparky2_2fw_2mcuconf_8h.html#ga39e918aab997f42ca310524e74dc44ae":[5,0,0,4,16,2,0,43],
+"sparky2_2fw_2mcuconf_8h.html#ga3bef70abed53b8df90c5edb807077e37":[5,0,0,4,16,2,0,197]
 };

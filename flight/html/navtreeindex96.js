@@ -1,7 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"misc__math_8h.html#ga70ffb04a77a4e6d687aeb96bf94f00fb":[5,0,0,1,2,7,32],
-"misc__math_8h.html#ga7351518c8117b810205f2644e096af14":[5,0,0,1,2,7,34],
 "misc__math_8h.html#ga776eeeaf240601aab0c3544a13116f8b":[5,0,0,1,2,7,44],
 "misc__math_8h.html#ga7db4bbfcdc84fac92fffadcc240ed626":[5,0,0,1,2,7,39],
 "misc__math_8h.html#ga836b829d17fee8b1db6d0f71308103ff":[5,0,0,1,2,7,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX96 =
 "mspuavobridge_8c.html#gad8d18f1a709f521b29e8ca7757d9d89c":[5,0,0,2,17,0,7],
 "mspuavobridge_8c.html#gad918ca939d6feb90791380688d0cc4fa":[5,0,0,2,17,0,4],
 "mspuavobridge_8c.html#gae5936eecf007b59a0f288de0a30f6827":[5,0,0,2,17,0,2],
-"mspuavobridge_8c_source.html":[5,0,0,2,17,0]
+"mspuavobridge_8c_source.html":[5,0,0,2,17,0],
+"namespaceencode__font.html":[3,0,0],
+"namespaceencode__font.html":[4,0,0]
 };

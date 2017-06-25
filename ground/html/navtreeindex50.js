@@ -1,11 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"providerstrings_8h_source.html":[6,0,0,0,0,0,4,0,22],
-"pureimage_8cpp.html":[6,0,0,0,0,0,4,0,23],
-"pureimage_8cpp_source.html":[6,0,0,0,0,0,4,0,23],
-"pureimage_8h.html":[6,0,0,0,0,0,4,0,24],
-"pureimage_8h_source.html":[6,0,0,0,0,0,4,0,24],
-"pureimagecache_8cpp.html":[6,0,0,0,0,0,4,0,25],
 "pureimagecache_8cpp_source.html":[6,0,0,0,0,0,4,0,25],
 "pureimagecache_8h.html":[6,0,0,0,0,0,4,0,26],
 "pureimagecache_8h_source.html":[6,0,0,0,0,0,4,0,26],
@@ -249,5 +243,11 @@ var NAVTREEINDEX50 =
 "setupwizard_2pages_2tlendpage_8h_source.html":[6,0,0,0,0,1,33,0,33],
 "setupwizard_2pages_2tlstartpage_8cpp.html":[6,0,0,0,0,1,33,0,34],
 "setupwizard_2pages_2tlstartpage_8cpp_source.html":[6,0,0,0,0,1,33,0,34],
-"setupwizard_2pages_2tlstartpage_8h.html":[6,0,0,0,0,1,33,0,35]
+"setupwizard_2pages_2tlstartpage_8h.html":[6,0,0,0,0,1,33,0,35],
+"setupwizard_2pages_2tlstartpage_8h_source.html":[6,0,0,0,0,1,33,0,35],
+"setupwizard_8cpp.html":[6,0,0,0,0,1,33,4],
+"setupwizard_8cpp_source.html":[6,0,0,0,0,1,33,4],
+"setupwizard_8h.html":[6,0,0,0,0,1,33,5],
+"setupwizard_8h_source.html":[6,0,0,0,0,1,33,5],
+"setupwizardplugin_8cpp.html":[6,0,0,0,0,1,33,6]
 };

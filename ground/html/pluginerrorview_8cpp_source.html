@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bda2863</span>
+   &#160;<span id="projectnumber">1e37ad8</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -178,14 +178,16 @@ $(document).ready(function(){initNavTree('pluginerrorview_8cpp_source.html','');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9af7d75f1e9edfb5ddf4c01aebc7708abf">PluginSpec::Stopped</a>:</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        text = tr(<span class="stringliteral">&quot;Stopped&quot;</span>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        tooltip = tr(<span class="stringliteral">&quot;Plugin was shut down&quot;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9a30ba387e682bf28d58da8c48829bb029">PluginSpec::Deleted</a>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        text = tr(<span class="stringliteral">&quot;Deleted&quot;</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        tooltip = tr(<span class="stringliteral">&quot;Plugin ended its life cycle and was deleted&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_ui-&gt;state-&gt;setText(text);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    m_ui-&gt;state-&gt;setToolTip(tooltip);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_ui-&gt;errorString-&gt;setText(spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a5c7e05df1ab79d1c67140f72237e92e5">errorString</a>());</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9a30ba387e682bf28d58da8c48829bb029">PluginSpec::Deleted</a>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        text = tr(<span class="stringliteral">&quot;Deleted&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        tooltip = tr(<span class="stringliteral">&quot;Plugin ended its life cycle and was deleted&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_ui-&gt;state-&gt;setText(text);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    m_ui-&gt;state-&gt;setToolTip(tooltip);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    m_ui-&gt;errorString-&gt;setText(spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a5c7e05df1ab79d1c67140f72237e92e5">errorString</a>());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="ttc" id="class_extension_system_1_1_plugin_error_view_html_a327bd28795dc7c380440bc795e814efd"><div class="ttname"><a href="class_extension_system_1_1_plugin_error_view.html#a327bd28795dc7c380440bc795e814efd">ExtensionSystem::PluginErrorView::update</a></div><div class="ttdeci">void update(PluginSpec *spec)</div><div class="ttdef"><b>Definition:</b> <a href="pluginerrorview_8cpp_source.html#l00071">pluginerrorview.cpp:71</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_spec_html_a3d40e1bd1f17eb32b314bcd282b3e3b9af7d75f1e9edfb5ddf4c01aebc7708abf"><div class="ttname"><a href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9af7d75f1e9edfb5ddf4c01aebc7708abf">ExtensionSystem::PluginSpec::Stopped</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginspec_8h_source.html#l00066">pluginspec.h:66</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_spec_html_a3d40e1bd1f17eb32b314bcd282b3e3b9abf1eaab858db15373d08dc8cabbd7cec"><div class="ttname"><a href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9abf1eaab858db15373d08dc8cabbd7cec">ExtensionSystem::PluginSpec::Resolved</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginspec_8h_source.html#l00066">pluginspec.h:66</a></div></div>

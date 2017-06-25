@@ -1,7 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281":[2,0,54,5,0],
-"structpios__internal__adc__cfg.html#ade026429ab4238f63092fa17b4f95e4e":[2,0,54,5,6],
 "structpios__internal__adc__simple__cfg.html":[2,0,54,6],
 "structpios__internal__adc__simple__cfg.html#ad665d0b9d81e4c66d3d3a0c1f0895b53":[2,0,54,6,0],
 "structpios__internal__adc__simple__cfg.html#af809d617f352632f6bbe0e5018b52f21":[2,0,54,6,1],
@@ -44,14 +42,14 @@ var NAVTREEINDEX125 =
 "structpios__rcvr__driver.html":[2,0,60,2],
 "structpios__rcvr__driver.html#a9bde8d770ce562c177d3a8350866eae3":[2,0,60,2,0],
 "structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305":[2,0,60,2,1],
-"structpios__re1fpga__cfg.html":[2,8,4,8],
 "structpios__re1fpga__cfg.html":[2,7,2,8],
-"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,8,4,8,1],
+"structpios__re1fpga__cfg.html":[2,8,4,8],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,7,2,8,1],
+"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,8,4,8,1],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,7,2,8,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,8,4,8,3],
-"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,8,4,8,2],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,7,2,8,2],
+"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,8,4,8,2],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,7,2,8,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,8,4,8,0],
 "structpios__recursive__mutex.html":[2,0,30,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX125 =
 "structpios__ws2811__cfg.html#a45877ae07dece21484b4f5bd3bd4ec43":[2,0,74,3,5],
 "structpios__ws2811__cfg.html#a4c537cda0d5a8011079e0eac29666cba":[2,0,74,3,2],
 "structpios__ws2811__cfg.html#a5673e6440003c65eb2b8c33382563121":[2,0,74,3,3],
-"structpios__ws2811__cfg.html#a7fc10daf5a0a80dbcfbdfe666cb4e23e":[2,0,74,3,0]
+"structpios__ws2811__cfg.html#a7fc10daf5a0a80dbcfbdfe666cb4e23e":[2,0,74,3,0],
+"structpios__ws2811__cfg.html#a84750b203e9d31e7a2acbb8146ce317f":[2,0,74,3,4],
+"structpios__ws2811__cfg.html#a890d1ea2ffa5de7e360923948b6a9710":[2,0,74,3,12]
 };

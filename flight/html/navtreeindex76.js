@@ -1,7 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"group___seppuku.html#gace43c4d497b0be3dbe8c28836fafd0a5":[2,8,13,170],
-"group___seppuku.html#gacf157c23e7623bb0aeb1e71b5daea82e":[2,8,13,65],
 "group___seppuku.html#gacf440a27cf365a1dadff460dd8162422":[2,8,13,330],
 "group___seppuku.html#gacf6b4949732fac0a1ded862174aabba7":[2,8,13,247],
 "group___seppuku.html#gad19de93466026d8b03a895cae792bce9":[2,8,13,103],
@@ -249,5 +247,7 @@ var NAVTREEINDEX76 =
 "group___sparky.html#ga32a5323ec55bfb3e6590c8346ee76dc4":[2,7,12,112],
 "group___sparky.html#ga331308be9fde6166b4039a2966ce2b50":[2,8,14,57],
 "group___sparky.html#ga331308be9fde6166b4039a2966ce2b50":[2,7,12,57],
-"group___sparky.html#ga331e928969979bce99d9037027d9853b":[2,8,14,18]
+"group___sparky.html#ga331e928969979bce99d9037027d9853b":[2,8,14,18],
+"group___sparky.html#ga331e928969979bce99d9037027d9853b":[2,7,12,18],
+"group___sparky.html#ga3442464c6b8e8869621e4b7103782cec":[2,8,14,52]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"posix_2pios__delay_8c.html":[5,0,0,3,2,4],
-"posix_2pios__delay_8c.html#ga0d086bac039cb8236edb457b7d4da0fa":[5,0,0,3,2,4,4],
 "posix_2pios__delay_8c.html#ga572b82db7964223cc415c3ecd49ec192":[5,0,0,3,2,4,2],
 "posix_2pios__delay_8c.html#ga60da713f0af44992439ecc77a1096dd2":[5,0,0,3,2,4,0],
 "posix_2pios__delay_8c.html#ga70d41fcf58bbbd18a9b6cd365d0f2dab":[5,0,0,3,2,4,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX113 =
 "quanton_2fw_2mcuconf_8h.html#ga54203015c2973969adee1dd719010d3a":[5,0,0,4,11,2,0,79],
 "quanton_2fw_2mcuconf_8h.html#ga554728f749ad9aca0102d189cc6bb9e7":[5,0,0,4,11,2,0,126],
 "quanton_2fw_2mcuconf_8h.html#ga562945e4ccd2bca4a4277eaa05ae70a0":[5,0,0,4,11,2,0,139],
-"quanton_2fw_2mcuconf_8h.html#ga56a0c40fe1260ca2265cc01d42668ca7":[5,0,0,4,11,2,0,204]
+"quanton_2fw_2mcuconf_8h.html#ga56a0c40fe1260ca2265cc01d42668ca7":[5,0,0,4,11,2,0,204],
+"quanton_2fw_2mcuconf_8h.html#ga58845293676556a52d2046a00bcfbf9c":[5,0,0,4,11,2,0,77],
+"quanton_2fw_2mcuconf_8h.html#ga58e21948e78c6cf50c04e64363637dd4":[5,0,0,4,11,2,0,10]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bda2863</span>
+   &#160;<span id="projectnumber">1e37ad8</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('configplugin_8cpp_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    connect(telMngr, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">TelemetryManager::disconnected</a>, <span class="keyword">this</span>, &amp;ConfigPlugin::onAutopilotDisconnect);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// And check whether by any chance we are not already connected</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (telMngr-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">isConnected</a>())</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (telMngr-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">isConnected</a>())</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        onAutopilotConnect();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -303,6 +303,7 @@ $(document).ready(function(){initNavTree('configplugin_8cpp_source.html','');});
 <div class="ttc" id="configgadgetfactory_8h_html"><div class="ttname"><a href="configgadgetfactory_8h.html">configgadgetfactory.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5e44e7795213bb2627acfa08a13f6a12"><div class="ttname"><a href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">Core::ICore::actionManager</a></div><div class="ttdeci">virtual ActionManager * actionManager() const =0</div><div class="ttdoc">Returns the application&#39;s action manager. </div></div>
 <div class="ttc" id="class_telemetry_manager_html"><div class="ttname"><a href="class_telemetry_manager.html">TelemetryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8h_source.html#l00041">telemetrymanager.h:41</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga73bf9fbd67f3eb0451363525de9cc7de"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">TelemetryManager::isConnected</a></div><div class="ttdeci">bool isConnected()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8cpp_source.html#l00050">telemetrymanager.cpp:50</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9aac3ae5395f63249cd821e0e5be5bf2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a></div><div class="ttdeci">void objectUpdated(UAVObject *obj)</div><div class="ttdoc">Signal sent whenever any field of the object is updated. </div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00099">uavobjecttemplate.h:99</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga8e92377ca31ccb08155053b639c13059"><div class="ttname"><a href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">Core::ActionContainer::menu</a></div><div class="ttdeci">virtual QMenu * menu() const =0</div></div>
@@ -319,7 +320,6 @@ $(document).ready(function(){initNavTree('configplugin_8cpp_source.html','');});
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga61e671949cc2403327617d9c9a372a76"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">TelemetryManager::disconnected</a></div><div class="ttdeci">void disconnected()</div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_af2782659463bdc328aef58f896ae3921"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">ExtensionSystem::IPlugin::addAutoReleasedObject</a></div><div class="ttdeci">void addAutoReleasedObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00306">iplugin.cpp:306</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga753148204d39c087c9aa27c9dbe9df98"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">TelemetryManager::isConnected</a></div><div class="ttdeci">bool isConnected() const </div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8h_source.html#l00052">telemetrymanager.h:52</a></div></div>
 <div class="ttc" id="class_config_gadget_factory_html"><div class="ttname"><a href="class_config_gadget_factory.html">ConfigGadgetFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadgetfactory_8h_source.html#l00040">configgadgetfactory.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

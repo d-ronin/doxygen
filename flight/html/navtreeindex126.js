@@ -1,7 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"structpios__ws2811__cfg.html#a84750b203e9d31e7a2acbb8146ce317f":[2,0,74,3,4],
-"structpios__ws2811__cfg.html#a890d1ea2ffa5de7e360923948b6a9710":[2,0,74,3,12],
 "structpoint__t.html":[2,6,3,8],
 "structpoint__t.html#a18660dce86a41d7ef5dbc1cf6345cacb":[2,6,3,8,1],
 "structpoint__t.html#a81fb8e2a2e05583a43c6f92a27f91eae":[2,6,3,8,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX126 =
 "systemmod_8c_source.html":[5,0,0,2,24,2],
 "systemmod_8h.html":[5,0,0,2,24,0,1],
 "systemmod_8h.html#ga25e6d9910d77be50c3b01c7b738094d9":[5,0,0,2,24,0,1,0],
-"systemmod_8h_source.html":[5,0,0,2,24,0,1]
+"systemmod_8h_source.html":[5,0,0,2,24,0,1],
+"tablet__control_8c.html":[5,0,0,2,16,4],
+"tablet__control_8c.html#ga0bee0c81342526c03f10559cf6dbda72":[5,0,0,2,16,4,5]
 };

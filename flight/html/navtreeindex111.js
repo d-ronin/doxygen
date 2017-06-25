@@ -1,7 +1,5 @@
 var NAVTREEINDEX111 =
 {
-"pios__usbhook_8h.html#ga7c85e72dd0b0db640d1db8abb5427715":[5,0,0,3,1,120,2],
-"pios__usbhook_8h.html#ga7f8bef536a231085c493d004ec8466d2":[5,0,0,3,1,120,10],
 "pios__usbhook_8h.html#ga80dce006aa14f2a9412e8ee68b4627b0":[5,0,0,3,1,120,19],
 "pios__usbhook_8h.html#ga9ff507855511c9dcf36f8839955e4c86":[5,0,0,3,1,120,9],
 "pios__usbhook_8h.html#gaa9dd93041af333771c368a4eb0171caa":[5,0,0,3,1,120,3],
@@ -152,8 +150,8 @@ var NAVTREEINDEX111 =
 "playuavosd_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,10,1,3,11],
 "playuavosd_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,4,10,1,3,12],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,4,10,1,3,7],
-"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,9],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,10],
+"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,9],
 "playuavosd_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,4,10,1,3,6],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,4,10,1,3,0],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,4,10,1,3,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX111 =
 "playuavosd_2fw_2mcuconf_8h.html#ga5c9e95d0806fd4faa34694d2f7ed8099":[5,0,0,4,10,2,0,83],
 "playuavosd_2fw_2mcuconf_8h.html#ga5df333941ca2fb9dec26a569e802dd57":[5,0,0,4,10,2,0,171],
 "playuavosd_2fw_2mcuconf_8h.html#ga5f5e9b802c24ad1637cd2aaee14606ed":[5,0,0,4,10,2,0,87],
-"playuavosd_2fw_2mcuconf_8h.html#ga5f9c3734d5d06c9ccd5214af5c78c4f8":[5,0,0,4,10,2,0,116]
+"playuavosd_2fw_2mcuconf_8h.html#ga5f9c3734d5d06c9ccd5214af5c78c4f8":[5,0,0,4,10,2,0,116],
+"playuavosd_2fw_2mcuconf_8h.html#ga5fa35e1fea5f5813af76c2d2b9c03215":[5,0,0,4,10,2,0,147],
+"playuavosd_2fw_2mcuconf_8h.html#ga620b74e1fca03c6e11c054d137c56524":[5,0,0,4,10,2,0,151]
 };

@@ -1,11 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"sysalarmsmessaging__global_8h_source.html":[6,0,0,0,0,1,34,0],
-"sysalarmsmessagingplugin_8cpp.html":[6,0,0,0,0,1,34,1],
-"sysalarmsmessagingplugin_8cpp_source.html":[6,0,0,0,0,1,34,1],
-"sysalarmsmessagingplugin_8h.html":[6,0,0,0,0,1,34,2],
-"sysalarmsmessagingplugin_8h_source.html":[6,0,0,0,0,1,34,2],
-"systemhealthgadget_8cpp.html":[6,0,0,0,0,1,35,0],
 "systemhealthgadget_8cpp_source.html":[6,0,0,0,0,1,35,0],
 "systemhealthgadget_8h.html":[6,0,0,0,0,1,35,1],
 "systemhealthgadget_8h_source.html":[6,0,0,0,0,1,35,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX52 =
 "uavobjectfield_8h_source.html":[6,0,0,0,0,1,39,11],
 "uavobjectmanager_8cpp.html":[6,0,0,0,0,1,39,12],
 "uavobjectmanager_8cpp_source.html":[6,0,0,0,0,1,39,12],
-"uavobjectmanager_8h.html":[6,0,0,0,0,1,39,13]
+"uavobjectmanager_8h.html":[6,0,0,0,0,1,39,13],
+"uavobjectmanager_8h_source.html":[6,0,0,0,0,1,39,13],
+"uavobjects__global_8h.html":[6,0,0,0,0,1,39,14],
+"uavobjects__global_8h_source.html":[6,0,0,0,0,1,39,14],
+"uavobjectsinit_8h.html":[6,0,0,0,0,1,39,15],
+"uavobjectsinit_8h.html#gaa5848573445b2e80691402f8bd9d2257":[6,0,0,0,0,1,39,15,0],
+"uavobjectsinit_8h_source.html":[6,0,0,0,0,1,39,15]
 };

@@ -114,7 +114,6 @@ var searchData=
   ['configvehicletypewidget',['ConfigVehicleTypeWidget',['../group___config_plugin.html#ga073c5b646c2487874d095f97989f4358',1,'ConfigVehicleTypeWidget']]],
   ['connectdevice',['connectDevice',['../group___core_plugin.html#gae4e29b41f3deb1349c8f21bfe6f6e597',1,'Core::ConnectionManager']]],
   ['connected',['connected',['../group___core_plugin.html#gaa179b8e4f3d5521f7015fe7a0c2a72cd',1,'TelemetryMonitorWidget::connected()'],['../group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0',1,'TelemetryManager::connected()'],['../group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7',1,'TelemetryMonitor::connected()']]],
-  ['connectedchanged',['connectedChanged',['../group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3',1,'TelemetryManager']]],
   ['connectinput',['connectInput',['../group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81',1,'LineardialGadgetWidget']]],
   ['connectionchanged',['connectionChanged',['../group___rfm_bind_wizard.html#ga8052dde953ae6e8932c64c6feafbc161',1,'RadioProbePage']]],
   ['connectiondiagram',['ConnectionDiagram',['../group___setup_wizard.html#gabbe7cb790894ca7c9c4ec344279890b3',1,'ConnectionDiagram']]],

@@ -42,13 +42,11 @@ var group___u_a_v_talk_plugin =
       [ "TelemetryManager", "group___u_a_v_talk_plugin.html#gaab121ca26ff1b0985b013d715132a088", null ],
       [ "~TelemetryManager", "group___u_a_v_talk_plugin.html#ga28e48a3688e195cc9c3263ccdeb084c4", null ],
       [ "connected", "group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0", null ],
-      [ "connectedChanged", "group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3", null ],
       [ "disconnected", "group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76", null ],
       [ "downloadFile", "group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3", null ],
-      [ "isConnected", "group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98", null ],
+      [ "isConnected", "group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de", null ],
       [ "start", "group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171", null ],
-      [ "stop", "group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718", null ],
-      [ "connected", "group___u_a_v_talk_plugin.html#ga56d36c843acd8e94bffa8611b118373f", null ]
+      [ "stop", "group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718", null ]
     ] ],
     [ "TelemetryMonitor", "class_telemetry_monitor.html", [
       [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084", null ],
@@ -123,7 +121,7 @@ var group___u_a_v_talk_plugin =
     [ "downloadFile", "group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1", null ],
     [ "getStats", "group___u_a_v_talk_plugin.html#gac9f7d49b556190b1b7d4b845b8b23a34", null ],
     [ "getStats", "group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402", null ],
-    [ "isConnected", "group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98", null ],
+    [ "isConnected", "group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de", null ],
     [ "objectTransaction", "group___u_a_v_talk_plugin.html#gaf41ae2b1b8730f18bc3992d6777c0627", null ],
     [ "ObjectTransactionInfo", "group___u_a_v_talk_plugin.html#ga56a113c31769c8841a65cf085c53a33e", null ],
     [ "operator<", "group___u_a_v_talk_plugin.html#ga535141f4efa21d7b4b5d5314c92d1c8e", null ],
@@ -228,7 +226,6 @@ var group___u_a_v_talk_plugin =
     [ "ackReceived", "group___u_a_v_talk_plugin.html#ga2d657cf81a725bce5e859eb6828cf80c", null ],
     [ "connected", "group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0", null ],
     [ "connected", "group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7", null ],
-    [ "connectedChanged", "group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3", null ],
     [ "disconnected", "group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76", null ],
     [ "disconnected", "group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640", null ],
     [ "fileDataReceived", "group___u_a_v_talk_plugin.html#gae625070bc0bc716b7003f55e35803e64", null ],
@@ -239,6 +236,5 @@ var group___u_a_v_talk_plugin =
     [ "processStatsUpdates", "group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9", null ],
     [ "transactionCompleted", "group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607", null ],
     [ "onDeviceConnect", "group___u_a_v_talk_plugin.html#ga496d6211736a7cfd5cee129eb2b8ad95", null ],
-    [ "onDeviceDisconnect", "group___u_a_v_talk_plugin.html#ga1ac9b2c0c21d66d603c639183ebcd7db", null ],
-    [ "connected", "group___u_a_v_talk_plugin.html#ga56d36c843acd8e94bffa8611b118373f", null ]
+    [ "onDeviceDisconnect", "group___u_a_v_talk_plugin.html#ga1ac9b2c0c21d66d603c639183ebcd7db", null ]
 ];

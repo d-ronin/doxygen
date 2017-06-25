@@ -1,7 +1,5 @@
 var NAVTREEINDEX116 =
 {
-"seppuku_2board-info_2cmsis__system_8c.html#gae0c36a9591fe6e9c45ecb21a794f0f0f":[5,0,0,4,13,1,1,6],
-"seppuku_2board-info_2cmsis__system_8c_source.html":[5,0,0,4,13,1,1],
 "seppuku_2board-info_2usb__conf_8h.html":[5,0,0,4,13,1,3],
 "seppuku_2board-info_2usb__conf_8h.html#ga05fe8f364b0f99dddedd65322b6ed290":[5,0,0,4,13,1,3,13],
 "seppuku_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,13,1,3,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX116 =
 "serial__4way_8h.html#aba1d717eb66d5efbd9a22b1b89285850":[5,0,0,2,33,0,0,0,9],
 "serial__4way_8h.html#abca83c071e6b8255c0846dde648b662d":[5,0,0,2,33,0,0,0,15],
 "serial__4way_8h.html#ad90637a3cd69cdf763be0e8f16683d91":[5,0,0,2,33,0,0,0,10],
-"serial__4way_8h.html#adeff40b9b34c0805be85ad50b2f45782":[5,0,0,2,33,0,0,0,11]
+"serial__4way_8h.html#adeff40b9b34c0805be85ad50b2f45782":[5,0,0,2,33,0,0,0,11],
+"serial__4way_8h.html#ae5a164dd616eb1c5c1de467a8a164163":[5,0,0,2,33,0,0,0,2],
+"serial__4way_8h.html#ae7618c84f1e1ba368abe95cb6d099b5a":[5,0,0,2,33,0,0,0,13]
 };

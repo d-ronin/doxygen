@@ -1,7 +1,5 @@
 var NAVTREEINDEX112 =
 {
-"playuavosd_2fw_2mcuconf_8h.html#ga5fa35e1fea5f5813af76c2d2b9c03215":[5,0,0,4,10,2,0,147],
-"playuavosd_2fw_2mcuconf_8h.html#ga620b74e1fca03c6e11c054d137c56524":[5,0,0,4,10,2,0,151],
 "playuavosd_2fw_2mcuconf_8h.html#ga626416dc22cf5f3deff2a8c7d8efa5b2":[5,0,0,4,10,2,0,162],
 "playuavosd_2fw_2mcuconf_8h.html#ga6366c26f605ce31e89deee1af686f5e6":[5,0,0,4,10,2,0,143],
 "playuavosd_2fw_2mcuconf_8h.html#ga639272943cb5b9bdcbd78e5ced2b52a0":[5,0,0,4,10,2,0,81],
@@ -249,5 +247,7 @@ var NAVTREEINDEX112 =
 "posix_2pios__debug_8c.html#gabbc10ed2b3c2b4a793433668661c37c1":[5,0,0,3,2,3,0],
 "posix_2pios__debug_8c.html#gae3876733b5e6b40c8fcbdb683d206068":[5,0,0,3,2,3,1],
 "posix_2pios__debug_8c.html#gaede09e7ce20c100871607d36904bea37":[5,0,0,3,2,3,6],
-"posix_2pios__debug_8c_source.html":[5,0,0,3,2,3]
+"posix_2pios__debug_8c_source.html":[5,0,0,3,2,3],
+"posix_2pios__delay_8c.html":[5,0,0,3,2,4],
+"posix_2pios__delay_8c.html#ga0d086bac039cb8236edb457b7d4da0fa":[5,0,0,3,2,4,4]
 };
