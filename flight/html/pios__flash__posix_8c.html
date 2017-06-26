@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1e37ad8</span>
+   &#160;<span id="projectnumber">c67b37f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -171,6 +171,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>Move into main posix PiOS instead of unit tests </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af838e6155a3c54487f3c5ed542ac0ef8a1a8d5dbd419d5ab261f44f5903b9b4df"></a>FLASH_POSIX_MAGIC</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -247,7 +248,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00089">89</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00097">97</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -289,7 +290,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00100">100</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00110">110</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -365,7 +366,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00147">147</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00157">157</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -439,7 +440,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00124">124</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00134">134</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -460,13 +461,13 @@ Variables</h2></td></tr>
 <div class="line">        .write_data        = <a class="code" href="pios__flash__posix_8c.html#aa9c9beaea052eef53de54670ac4d2c62">PIOS_Flash_Posix_WriteData</a>,</div>
 <div class="line">        .read_data         = <a class="code" href="pios__flash__posix_8c.html#a747ae9fee79002cd3fc9945eab1d75ae">PIOS_Flash_Posix_ReadData</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="pios__flash__posix_8c_html_aee209db8766f9e368cd6ff8fe8fd0186"><div class="ttname"><a href="pios__flash__posix_8c.html#aee209db8766f9e368cd6ff8fe8fd0186">PIOS_Flash_Posix_EndTransaction</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_EndTransaction(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00089">pios_flash_posix.c:89</a></div></div>
-<div class="ttc" id="pios__flash__posix_8c_html_ae3df8a8e68274614b6310f7820521a14"><div class="ttname"><a href="pios__flash__posix_8c.html#ae3df8a8e68274614b6310f7820521a14">PIOS_Flash_Posix_EraseSector</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_EraseSector(uintptr_t chip_id, uint32_t chip_sector, uint32_t chip_offset)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00100">pios_flash_posix.c:100</a></div></div>
-<div class="ttc" id="pios__flash__posix_8c_html_aa9c9beaea052eef53de54670ac4d2c62"><div class="ttname"><a href="pios__flash__posix_8c.html#aa9c9beaea052eef53de54670ac4d2c62">PIOS_Flash_Posix_WriteData</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_WriteData(uintptr_t chip_id, uint32_t chip_offset, const uint8_t *data, uint16_t len)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00124">pios_flash_posix.c:124</a></div></div>
+<div class="ttc" id="pios__flash__posix_8c_html_aee209db8766f9e368cd6ff8fe8fd0186"><div class="ttname"><a href="pios__flash__posix_8c.html#aee209db8766f9e368cd6ff8fe8fd0186">PIOS_Flash_Posix_EndTransaction</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_EndTransaction(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00097">pios_flash_posix.c:97</a></div></div>
+<div class="ttc" id="pios__flash__posix_8c_html_ae3df8a8e68274614b6310f7820521a14"><div class="ttname"><a href="pios__flash__posix_8c.html#ae3df8a8e68274614b6310f7820521a14">PIOS_Flash_Posix_EraseSector</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_EraseSector(uintptr_t chip_id, uint32_t chip_sector, uint32_t chip_offset)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00110">pios_flash_posix.c:110</a></div></div>
+<div class="ttc" id="pios__flash__posix_8c_html_aa9c9beaea052eef53de54670ac4d2c62"><div class="ttname"><a href="pios__flash__posix_8c.html#aa9c9beaea052eef53de54670ac4d2c62">PIOS_Flash_Posix_WriteData</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_WriteData(uintptr_t chip_id, uint32_t chip_offset, const uint8_t *data, uint16_t len)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00134">pios_flash_posix.c:134</a></div></div>
 <div class="ttc" id="pios__flash__posix_8c_html_aedcc4c03796afcb5f7c567e85db86a6d"><div class="ttname"><a href="pios__flash__posix_8c.html#aedcc4c03796afcb5f7c567e85db86a6d">PIOS_Flash_Posix_StartTransaction</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_StartTransaction(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00078">pios_flash_posix.c:78</a></div></div>
-<div class="ttc" id="pios__flash__posix_8c_html_a747ae9fee79002cd3fc9945eab1d75ae"><div class="ttname"><a href="pios__flash__posix_8c.html#a747ae9fee79002cd3fc9945eab1d75ae">PIOS_Flash_Posix_ReadData</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_ReadData(uintptr_t chip_id, uint32_t chip_offset, uint8_t *data, uint16_t len)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00147">pios_flash_posix.c:147</a></div></div>
+<div class="ttc" id="pios__flash__posix_8c_html_a747ae9fee79002cd3fc9945eab1d75ae"><div class="ttname"><a href="pios__flash__posix_8c.html#a747ae9fee79002cd3fc9945eab1d75ae">PIOS_Flash_Posix_ReadData</a></div><div class="ttdeci">static int32_t PIOS_Flash_Posix_ReadData(uintptr_t chip_id, uint32_t chip_offset, uint8_t *data, uint16_t len)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00157">pios_flash_posix.c:157</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00169">169</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00179">179</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
