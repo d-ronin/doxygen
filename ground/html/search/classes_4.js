@@ -21,7 +21,6 @@ var searchData=
   ['dialgadgetwidget',['DialGadgetWidget',['../class_dial_gadget_widget.html',1,'']]],
   ['dialplugin',['DialPlugin',['../class_dial_plugin.html',1,'']]],
   ['distbearingaltitude',['distBearingAltitude',['../structmapcontrol_1_1dist_bearing_altitude.html',1,'mapcontrol']]],
-  ['donothingplugin',['DoNothingPlugin',['../class_do_nothing_plugin.html',1,'']]],
   ['doublespindelegate',['DoubleSpinDelegate',['../class_double_spin_delegate.html',1,'']]],
   ['droninplugin',['DroninPlugin',['../class_dronin_plugin.html',1,'']]],
   ['dtfc',['Dtfc',['../class_dtfc.html',1,'']]],

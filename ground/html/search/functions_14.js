@@ -27,7 +27,6 @@ var searchData=
   ['text',['text',['../class_i_text1.html#a267a15e514091fd1ad988584c68dd288',1,'IText1::text()'],['../class_i_text2.html#a6776765fa459f1ec8abded50f5e24f23',1,'IText2::text()'],['../class_i_text3.html#a2d69ecbbb3b4322bf17b4f88aaa37ad6',1,'IText3::text()']]],
   ['textbubbleslider',['TextBubbleSlider',['../group___config.html#ga36f48122dd6ede58ce2af197545ec5da',1,'TextBubbleSlider::TextBubbleSlider(QWidget *parent=0)'],['../group___config.html#ga946611524e61173f8906a3ade3e95f4f',1,'TextBubbleSlider::TextBubbleSlider(QSlider *, QWidget *parent=0)']]],
   ['textedited',['textEdited',['../group___core_plugin.html#gadd1f5f6b07432b1f0ce05a0f32d2e167',1,'Core::Internal::WorkspaceSettings']]],
-  ['texteditloggerengine',['TextEditLoggerEngine',['../group___console_plugin.html#gaf57b0c5ea1591a2931695b3e58c8d298',1,'TextEditLoggerEngine']]],
   ['textfromvalue',['textFromValue',['../group__utils.html#ga3772319f1d67114f931ba0537e0f2f42',1,'LongLongSpinBox']]],
   ['threadmanager',['threadManager',['../group___core_plugin.html#gaba4a2a04e8b2ec38bd75d51dc3ce7873',1,'Core::Internal::MainWindow']]],
   ['tile',['Tile',['../group___t_l_map_widget.html#ga60a32de8eb056679d219587b8caf1237',1,'internals::Tile::Tile(int zoom, core::Point pos)'],['../group___t_l_map_widget.html#ga0dbddb1e894ab49cd9965e12002f3969',1,'internals::Tile::Tile()'],['../group___t_l_map_widget.html#ga18b470118154d71c8f34a805c8bcc782',1,'internals::Tile::Tile(const Tile &amp;cSource)']]],

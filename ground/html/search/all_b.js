@@ -14,7 +14,6 @@ var searchData=
   ['kibertilecache_2ecpp',['kibertilecache.cpp',['../kibertilecache_8cpp.html',1,'']]],
   ['kibertilecache_2eh',['kibertilecache.h',['../kibertilecache_8h.html',1,'']]],
   ['kill',['kill',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a7581a0cfec32239b633b4689542a56db',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
-  ['killloggerengine',['killLoggerEngine',['../group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21',1,'TextEditLoggerEngine']]],
   ['kind',['Kind',['../group___core_plugin.html#ga90d21d8ad72cb14ddb8486fdff7b51f4',1,'Core::IWizard::Kind()'],['../group___core_plugin.html#gaa6c10b903553ec4f5b93c74ebe8e76b9',1,'Core::IWizard::kind() const =0']]],
   ['kmlexport',['KmlExport',['../class_kml_export.html',1,'KmlExport'],['../group___kml_export_plugin.html#ga38c344f71b8f88760d6cf9114189f6d8',1,'KmlExport::KmlExport()']]],
   ['kmlexport_2ecpp',['kmlexport.cpp',['../kmlexport_8cpp.html',1,'']]],

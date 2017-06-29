@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y',['Y',['../struct_w_m_mtype___geo_magnetic_elements.html#a0b311ece921afc948e5e8dda01f7584a',1,'WMMtype_GeoMagneticElements::Y()'],['../group___config_plugin.html#ga1ec018779068c1467218a9049f5861c0',1,'at_measurement::y()'],['../_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y():&#160;OPPlots.m']]],
+  ['y',['y',['../group___config_plugin.html#ga1ec018779068c1467218a9049f5861c0',1,'at_measurement::y()'],['../struct_w_m_mtype___geo_magnetic_elements.html#a0b311ece921afc948e5e8dda01f7584a',1,'WMMtype_GeoMagneticElements::Y()'],['../_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y():&#160;OPPlots.m']]],
   ['yaw',['yaw',['../group___setup_wizard.html#ga16a724da7162ceb2c56798d864dac807',1,'mixerChannelSettings']]],
   ['ydata',['yData',['../group___scope_plugin.html#ga0544d6bcbe24fc0bb460123547821457',1,'PlotData']]],
   ['ydatahistory',['yDataHistory',['../group___scope_plugin.html#ga3f05450290135f9d3b69ab0119718f11',1,'Plot2dData']]],

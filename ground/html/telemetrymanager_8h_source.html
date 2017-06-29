@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c67b37f</span>
+   &#160;<span id="projectnumber">eced985</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -135,44 +135,46 @@ $(document).ready(function(){initNavTree('telemetrymanager_8h_source.html','');}
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetrymonitor_8h.html">telemetrymonitor.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavtalk_8h.html">uavtalk.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjects/uavobjectmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;QIODevice&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_telemetry_manager.html">   41</a></span>&#160;<span class="keyword">class </span>UAVTALK_EXPORT <a class="code" href="class_telemetry_manager.html">TelemetryManager</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_telemetry_manager.html">TelemetryManager</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~<a class="code" href="class_telemetry_manager.html">TelemetryManager</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> start(QIODevice *dev);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> stop();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> isConnected();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QByteArray *downloadFile(quint32 fileId, quint32 maxSize = 1048576);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;signals:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> connected();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> disconnected();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> onConnect();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> onDisconnect();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> onGeneralSettingsChanged();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_u_a_v_talk.html">UAVTalk</a> *utalk;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_telemetry.html">Telemetry</a> *telemetry;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_telemetry_monitor.html">TelemetryMonitor</a> *telemetryMon;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> autopilotConnected;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QHash&lt;quint16, QList&lt;TelemetryMonitor::objStruc&gt;&gt; sessions;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a> *settings;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // TELEMETRYMANAGER_H</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga56d36c843acd8e94bffa8611b118373f">   44</a></span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> connected READ isConnected NOTIFY connectedChanged)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_telemetry_manager.html">TelemetryManager</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="class_telemetry_manager.html">TelemetryManager</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> start(QIODevice *dev);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> stop();</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">   52</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">isConnected</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_connected; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QByteArray *downloadFile(quint32 fileId, quint32 maxSize = 1048576);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;signals:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> connected();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> disconnected();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> connectedChanged(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> onConnect();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> onDisconnect();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> onGeneralSettingsChanged();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_u_a_v_talk.html">UAVTalk</a> *utalk;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_telemetry.html">Telemetry</a> *telemetry;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_telemetry_monitor.html">TelemetryMonitor</a> *telemetryMon;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> m_connected;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QHash&lt;quint16, QList&lt;TelemetryMonitor::objStruc&gt;&gt; sessions;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a> *settings;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // TELEMETRYMANAGER_H</span></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="telemetry_8h_html"><div class="ttname"><a href="telemetry_8h.html">telemetry.h</a></div></div>
@@ -185,6 +187,7 @@ $(document).ready(function(){initNavTree('telemetrymanager_8h_source.html','');}
 <div class="ttc" id="class_u_a_v_talk_html"><div class="ttname"><a href="class_u_a_v_talk.html">UAVTalk</a></div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8h_source.html#l00046">uavtalk.h:46</a></div></div>
 <div class="ttc" id="generalsettings_8h_html"><div class="ttname"><a href="generalsettings_8h.html">generalsettings.h</a></div></div>
 <div class="ttc" id="uavtalk_8h_html"><div class="ttname"><a href="uavtalk_8h.html">uavtalk.h</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga753148204d39c087c9aa27c9dbe9df98"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">TelemetryManager::isConnected</a></div><div class="ttdeci">bool isConnected() const </div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8h_source.html#l00052">telemetrymanager.h:52</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -6,7 +6,6 @@ var searchData=
   ['keysequencechanged',['keySequenceChanged',['../group___core_plugin.html#ga4e8398381143aeb4216199854fdaf0ab',1,'Core::Command']]],
   ['kibertilecache',['KiberTileCache',['../group___t_l_map_widget.html#gab36dfabac7ab5e960efd54b890b15173',1,'core::KiberTileCache']]],
   ['kill',['kill',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a7581a0cfec32239b633b4689542a56db',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
-  ['killloggerengine',['killLoggerEngine',['../group___console_plugin.html#ga54411c88e44357048e786fb83d2abb21',1,'TextEditLoggerEngine']]],
   ['kind',['kind',['../group___core_plugin.html#gaa6c10b903553ec4f5b93c74ebe8e76b9',1,'Core::IWizard']]],
   ['kmlexport',['KmlExport',['../group___kml_export_plugin.html#ga38c344f71b8f88760d6cf9114189f6d8',1,'KmlExport']]]
 ];

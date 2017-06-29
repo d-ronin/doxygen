@@ -335,7 +335,6 @@ var hierarchy =
         ] ],
         [ "Core::IUAVGadget", "class_core_1_1_i_u_a_v_gadget.html", [
           [ "ConfigGadget", "class_config_gadget.html", null ],
-          [ "ConsoleGadget", "class_console_gadget.html", null ],
           [ "Core::UAVGadgetDecorator", "class_core_1_1_u_a_v_gadget_decorator.html", null ],
           [ "DebugGadget", "class_debug_gadget.html", null ],
           [ "DialGadget", "class_dial_gadget.html", null ],
@@ -415,7 +414,6 @@ var hierarchy =
       ] ],
       [ "Core::IUAVGadgetFactory", "class_core_1_1_i_u_a_v_gadget_factory.html", [
         [ "ConfigGadgetFactory", "class_config_gadget_factory.html", null ],
-        [ "ConsoleGadgetFactory", "class_console_gadget_factory.html", null ],
         [ "DebugGadgetFactory", "class_debug_gadget_factory.html", null ],
         [ "DialGadgetFactory", "class_dial_gadget_factory.html", null ],
         [ "EmptyGadgetFactory", "class_empty_gadget_factory.html", null ],
@@ -453,7 +451,6 @@ var hierarchy =
         [ "BrotronicsPlugin", "class_brotronics_plugin.html", null ],
         [ "BrowserPlugin", "class_browser_plugin.html", null ],
         [ "ConfigPlugin", "class_config_plugin.html", null ],
-        [ "ConsolePlugin", "class_console_plugin.html", null ],
         [ "Core::IConfigurablePlugin", "class_core_1_1_i_configurable_plugin.html", [
           [ "SoundNotifyPlugin", "class_sound_notify_plugin.html", null ],
           [ "UsageStatsPlugin", "class_usage_stats_plugin.html", null ]
@@ -461,7 +458,6 @@ var hierarchy =
         [ "Core::Internal::CorePlugin", "class_core_1_1_internal_1_1_core_plugin.html", null ],
         [ "DebugPlugin", "class_debug_plugin.html", null ],
         [ "DialPlugin", "class_dial_plugin.html", null ],
-        [ "DoNothingPlugin", "class_do_nothing_plugin.html", null ],
         [ "DroninPlugin", "class_dronin_plugin.html", null ],
         [ "DTFPlugin", "class_d_t_f_plugin.html", null ],
         [ "EmptyPlugin", "class_empty_plugin.html", null ],
@@ -644,9 +640,6 @@ var hierarchy =
       [ "MyTabWidget", "class_my_tab_widget.html", null ]
     ] ],
     [ "Utils::QtColorButtonPrivate", "class_utils_1_1_qt_color_button_private.html", null ],
-    [ "QTextEdit", null, [
-      [ "ConsoleGadgetWidget", "class_console_gadget_widget.html", null ]
-    ] ],
     [ "QThread", null, [
       [ "core::TileCacheQueue", "classcore_1_1_tile_cache_queue.html", null ],
       [ "LoggingThread", "class_logging_thread.html", null ],
@@ -760,9 +753,6 @@ var hierarchy =
     ] ],
     [ "QwtScaleDraw", null, [
       [ "TimeScaleDraw", "class_time_scale_draw.html", null ]
-    ] ],
-    [ "QxtLoggerEngine", null, [
-      [ "TextEditLoggerEngine", "class_text_edit_logger_engine.html", null ]
     ] ],
     [ "core::RawTile", "classcore_1_1_raw_tile.html", null ],
     [ "internals::Rectangle", "structinternals_1_1_rectangle.html", null ],

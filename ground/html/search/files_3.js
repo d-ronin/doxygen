@@ -34,8 +34,6 @@ var searchData=
   ['dialgadgetwidget_2eh',['dialgadgetwidget.h',['../dialgadgetwidget_8h.html',1,'']]],
   ['dialplugin_2ecpp',['dialplugin.cpp',['../dialplugin_8cpp.html',1,'']]],
   ['dialplugin_2eh',['dialplugin.h',['../dialplugin_8h.html',1,'']]],
-  ['donothingplugin_2ecpp',['donothingplugin.cpp',['../donothingplugin_8cpp.html',1,'']]],
-  ['donothingplugin_2eh',['donothingplugin.h',['../donothingplugin_8h.html',1,'']]],
   ['droninplugin_2ecpp',['droninplugin.cpp',['../droninplugin_8cpp.html',1,'']]],
   ['droninplugin_2eh',['droninplugin.h',['../droninplugin_8h.html',1,'']]],
   ['dtfc_2ecpp',['dtfc.cpp',['../dtfc_8cpp.html',1,'']]],

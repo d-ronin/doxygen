@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c67b37f</span>
+   &#160;<span id="projectnumber">eced985</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,27 +129,25 @@ $(document).ready(function(){initNavTree('rfmbindwizard_2pages_2tlendpage_8cpp_s
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;ui_endpage.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="modemanager_8h.html">coreplugin/modemanager.h</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="configgadgetfactory_8h.html">configgadgetfactory.h</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">   34</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a>(RfmBindWizard *wizard, QWidget *parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , ui(new Ui::EndPage)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    setFinalPage(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">   42</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">   33</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a>(RfmBindWizard *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , ui(new Ui::EndPage)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    setFinalPage(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">   41</a></span>&#160;<a class="code" href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="configgadgetfactory_8h_html"><div class="ttname"><a href="configgadgetfactory_8h.html">configgadgetfactory.h</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga0cc3b0df91e2874402e9bd4baa3bbaab"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a></div><div class="ttdeci">~TLEndPage()</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00042">tlendpage.cpp:42</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga0cc3b0df91e2874402e9bd4baa3bbaab"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab">TLEndPage::~TLEndPage</a></div><div class="ttdeci">~TLEndPage()</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00041">tlendpage.cpp:41</a></div></div>
 <div class="ttc" id="modemanager_8h_html"><div class="ttname"><a href="modemanager_8h.html">modemanager.h</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga6fa830927a6580ce1dce66d7e0bd43cc"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a></div><div class="ttdeci">TLEndPage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00034">tlendpage.cpp:34</a></div></div>
+<div class="ttc" id="group___rfm_bind_wizard_html_ga6fa830927a6580ce1dce66d7e0bd43cc"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga6fa830927a6580ce1dce66d7e0bd43cc">TLEndPage::TLEndPage</a></div><div class="ttdeci">TLEndPage(RfmBindWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2tlendpage_8cpp_source.html#l00033">tlendpage.cpp:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

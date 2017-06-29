@@ -85,7 +85,7 @@ var searchData=
   ['authorsdialog',['AuthorsDialog',['../group___core_plugin.html#ga8135a04d18c6e023051614472f4e6f9a',1,'Core::Internal::AuthorsDialog']]],
   ['autoconnect',['autoConnect',['../group___core_plugin.html#ga5416b64c1586447c9969590a9bd2f0c2',1,'Core::Internal::GeneralSettings']]],
   ['autoloadwidgets',['autoLoadWidgets',['../group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf',1,'ConfigTaskWidget']]],
-  ['autopilotconnected',['autopilotConnected',['../group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807',1,'ConfigGadgetWidget::autopilotConnected()'],['../group___u_a_v_object_widget_utils.html#ga6812138654a8b49e72c674cee7245781',1,'ConfigTaskWidget::autoPilotConnected()']]],
+  ['autopilotconnected',['autoPilotConnected',['../group___u_a_v_object_widget_utils.html#ga6812138654a8b49e72c674cee7245781',1,'ConfigTaskWidget::autoPilotConnected()'],['../group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807',1,'ConfigGadgetWidget::autopilotConnected()']]],
   ['autopilotdisconnected',['autoPilotDisconnected',['../group___u_a_v_object_widget_utils.html#gab874b1ad732a19472dc1a9d29f23d7ae',1,'ConfigTaskWidget::autoPilotDisconnected()'],['../group___config_plugin.html#ga1ba3ecc94d2a793f945493631cc7be34',1,'ConfigGadgetWidget::autopilotDisconnected()']]],
   ['autoselect',['autoSelect',['../group___core_plugin.html#ga8a3ceff3840ac587a0e118c174fbea7e',1,'Core::Internal::GeneralSettings']]],
   ['autotunefinalpage',['AutotuneFinalPage',['../group___config_plugin.html#ga852eb306c4386465570a15f2e4d19f0e',1,'AutotuneFinalPage']]],

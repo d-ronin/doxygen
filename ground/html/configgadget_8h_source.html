@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c67b37f</span>
+   &#160;<span id="projectnumber">eced985</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,46 +133,43 @@ $(document).ready(function(){initNavTree('configgadget_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONFIGGADGET_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iuavgadget_8h.html">coreplugin/iuavgadget.h</a>&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;../uavobjectwidgetutils/configtaskwidget.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="configtaskwidget_8h.html">uavobjectwidgetutils/configtaskwidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobject_8h.html">uavobject.h</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// class QList&lt;int&gt;;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span>QWidget;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>QString;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span><a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>Ui_ConfigGadget;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// class QList&lt;int&gt;;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>QWidget;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>QString;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span><a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>Ui_ConfigGadget;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">using namespace </span>Core;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_config_gadget.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_gadget.html">ConfigGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_config_gadget.html">ConfigGadget</a>(QString classId, <a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a> *widget, QWidget *parent = 0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ~<a class="code" href="class_config_gadget.html">ConfigGadget</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">   58</a></span>&#160;    QWidget *<a class="code" href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">widget</a>() { <span class="keywordflow">return</span> (QWidget *)m_widget; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> loadConfiguration(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a> *m_widget;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // CONFIGGADGET_H</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_config_gadget.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_config_gadget.html">ConfigGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_config_gadget.html">ConfigGadget</a>(QString classId, <a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a> *widget, QWidget *parent = 0);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ~<a class="code" href="class_config_gadget.html">ConfigGadget</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">   56</a></span>&#160;    QWidget *<a class="code" href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">widget</a>() { <span class="keywordflow">return</span> (QWidget *)m_widget; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> loadConfiguration(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_config_gadget_widget.html">ConfigGadgetWidget</a> *m_widget;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // CONFIGGADGET_H</span></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_config_gadget_widget_html"><div class="ttname"><a href="class_config_gadget_widget.html">ConfigGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadgetwidget_8h_source.html#l00043">configgadgetwidget.h:43</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
-<div class="ttc" id="class_config_gadget_html"><div class="ttname"><a href="class_config_gadget.html">ConfigGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadget_8h_source.html#l00051">configgadget.h:51</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga678f4bf881dd4095ab62f66d69c32546"><div class="ttname"><a href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">ConfigGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="configgadget_8h_source.html#l00058">configgadget.h:58</a></div></div>
+<div class="ttc" id="class_config_gadget_html"><div class="ttname"><a href="class_config_gadget.html">ConfigGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="configgadget_8h_source.html#l00049">configgadget.h:49</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga678f4bf881dd4095ab62f66d69c32546"><div class="ttname"><a href="group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546">ConfigGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="configgadget_8h_source.html#l00056">configgadget.h:56</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="uavobject_8h_html"><div class="ttname"><a href="uavobject_8h.html">uavobject.h</a></div></div>
-<div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
+<div class="ttc" id="configtaskwidget_8h_html"><div class="ttname"><a href="configtaskwidget_8h.html">configtaskwidget.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

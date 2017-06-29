@@ -20,7 +20,6 @@ var searchData=
   ['tempcompcurve',['TempCompCurve',['../class_temp_comp_curve.html',1,'']]],
   ['temphelper',['temphelper',['../struct_config_task_widget_1_1temphelper.html',1,'ConfigTaskWidget']]],
   ['textbubbleslider',['TextBubbleSlider',['../class_text_bubble_slider.html',1,'']]],
-  ['texteditloggerengine',['TextEditLoggerEngine',['../class_text_edit_logger_engine.html',1,'']]],
   ['thread',['Thread',['../class_thread.html',1,'']]],
   ['tile',['Tile',['../classinternals_1_1_tile.html',1,'internals']]],
   ['tilecachequeue',['TileCacheQueue',['../classcore_1_1_tile_cache_queue.html',1,'core']]],

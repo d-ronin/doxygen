@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c67b37f</span>
+   &#160;<span id="projectnumber">eced985</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -106,7 +106,8 @@ $(document).ready(function(){initNavTree('group___u_a_v_talk_plugin.html','');})
 <a href="#var-members">Variables</a> &#124;
 <a href="#signal-members">Signals</a> &#124;
 <a href="#pub-slot-members">Public Slots</a> &#124;
-<a href="#pro-slot-members">Protected Slots</a>  </div>
+<a href="#pro-slot-members">Protected Slots</a> &#124;
+<a href="#prop-members">Properties</a>  </div>
   <div class="headertitle">
 <div class="title">UAVTalk Plugin<div class="ingroups"><a class="el" href="group___g_c_s_plugins.html">GCS Plugins</a></div></div>  </div>
 </div><!--header-->
@@ -175,8 +176,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga48c17e83f41b742abc5c234963093171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59bfea54673b2ab51e9ac1bf3a186718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718">TelemetryManager::stop</a> ()</td></tr>
 <tr class="separator:ga59bfea54673b2ab51e9ac1bf3a186718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73bf9fbd67f3eb0451363525de9cc7de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga73bf9fbd67f3eb0451363525de9cc7de">TelemetryManager::isConnected</a> ()</td></tr>
-<tr class="separator:ga73bf9fbd67f3eb0451363525de9cc7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga753148204d39c087c9aa27c9dbe9df98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">TelemetryManager::isConnected</a> () const </td></tr>
+<tr class="separator:ga753148204d39c087c9aa27c9dbe9df98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34a5d1ac57fe6d641093dc5de11a61c3"><td class="memItemLeft" align="right" valign="top">QByteArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3">TelemetryManager::downloadFile</a> (quint32 fileId, quint32 maxSize=1048576)</td></tr>
 <tr class="separator:ga34a5d1ac57fe6d641093dc5de11a61c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e462b0a7fbd8f611a0ec628b97f0084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084">TelemetryMonitor::TelemetryMonitor</a> (<a class="el" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr, <a class="el" href="class_telemetry.html">Telemetry</a> *tel, QHash&lt; quint16, <a class="el" href="class_q_list.html">QList</a>&lt; objStruc &gt;&gt; sessions)</td></tr>
@@ -367,6 +368,8 @@ Signals</h2></td></tr>
 <tr class="separator:ga54bec8ecfe469710c7261f567e76c5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61e671949cc2403327617d9c9a372a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76">TelemetryManager::disconnected</a> ()</td></tr>
 <tr class="separator:ga61e671949cc2403327617d9c9a372a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2eceda3264145498ea67e6637f9515f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3">TelemetryManager::connectedChanged</a> (bool)</td></tr>
+<tr class="separator:ga2eceda3264145498ea67e6637f9515f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4e867b78642d4f1fe27c5fc97468ce7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a> ()</td></tr>
 <tr class="separator:gac4e867b78642d4f1fe27c5fc97468ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8445fbd983df4d054bb798c760ba0640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a> ()</td></tr>
@@ -397,6 +400,11 @@ Protected Slots</h2></td></tr>
 <tr class="separator:ga496d6211736a7cfd5cee129eb2b8ad95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ac9b2c0c21d66d603c639183ebcd7db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga1ac9b2c0c21d66d603c639183ebcd7db">UAVTalkPlugin::onDeviceDisconnect</a> ()</td></tr>
 <tr class="separator:ga1ac9b2c0c21d66d603c639183ebcd7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="prop-members"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ga56d36c843acd8e94bffa8611b118373f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_talk_plugin.html#ga56d36c843acd8e94bffa8611b118373f">TelemetryManager::connected</a></td></tr>
+<tr class="separator:ga56d36c843acd8e94bffa8611b118373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provide a higher level of telemetry control on top of <a class="el" href="class_u_a_v_talk.html">UAVTalk</a> including setting up transactions and acknowledging their receipt or timeout. </p>
@@ -427,7 +435,7 @@ Protected Slots</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00104">104</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00101">101</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,20 +502,28 @@ Protected Slots</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga73bf9fbd67f3eb0451363525de9cc7de"></a>
+<a class="anchor" id="ga753148204d39c087c9aa27c9dbe9df98"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool TelemetryManager::isConnected </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00050">50</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="telemetrymanager_8h_source.html#l00052">52</a> of file <a class="el" href="telemetrymanager_8h_source.html">telemetrymanager.h</a>.</p>
 
 </div>
 </div>
@@ -926,7 +942,7 @@ Protected Slots</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00055">55</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00050">50</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -943,7 +959,7 @@ Protected Slots</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00064">64</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="telemetrymanager_8cpp_source.html#l00059">59</a> of file <a class="el" href="telemetrymanager_8cpp_source.html">telemetrymanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -2810,6 +2826,30 @@ Protected Slots</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga2eceda3264145498ea67e6637f9515f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> TelemetryManager::connectedChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ga61e671949cc2403327617d9c9a372a76"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3154,6 +3194,29 @@ Protected Slots</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uavtalkplugin_8cpp_source.html#l00079">79</a> of file <a class="el" href="uavtalkplugin_8cpp_source.html">uavtalkplugin.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Properties</h2>
+<a class="anchor" id="ga56d36c843acd8e94bffa8611b118373f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TelemetryManager::connected</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="telemetrymanager_8h_source.html#l00044">44</a> of file <a class="el" href="telemetrymanager_8h_source.html">telemetrymanager.h</a>.</p>
 
 </div>
 </div>
