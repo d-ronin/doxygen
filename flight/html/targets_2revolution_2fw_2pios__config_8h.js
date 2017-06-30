@@ -3,7 +3,6 @@ var targets_2revolution_2fw_2pios__config_8h =
     [ "AUTOTUNE_AVERAGING_MODE", "targets_2revolution_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2revolution_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2revolution_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2revolution_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_INCLUDE_ETASV3", "targets_2revolution_2fw_2pios__config_8h.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2revolution_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2revolution_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],

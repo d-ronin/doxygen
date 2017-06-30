@@ -61,7 +61,6 @@ var group___a_q32 =
     [ "PIOS_INCLUDE_SPI", "group___a_q32.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_SPI", "group___a_q32.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_SYS", "group___a_q32.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
-    [ "PIOS_INCLUDE_TELEMETRY_RF", "group___a_q32.html#gaff4a9228ab4f361775210ace27651441", null ],
     [ "PIOS_INCLUDE_USB", "group___a_q32.html#ga609bad0a7167d95b8aa65c05cd6cf739", null ],
     [ "PIOS_INCLUDE_USB_HID", "group___a_q32.html#ga71ac5951782a849bcc916fe21f1df092", null ],
     [ "PIOS_INCLUDE_WS2811", "group___a_q32.html#ga2989b6f1854d52ff08b9933bfb9b35fd", null ],

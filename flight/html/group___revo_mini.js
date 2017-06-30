@@ -35,7 +35,6 @@ var group___revo_mini =
     [ "PIOS_COM_VCP", "group___revo_mini.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_DSM_NUM_INPUTS", "group___revo_mini.html#gabf39f1bc59b5af7e8f138bb394770300", null ],
     [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___revo_mini.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "group___revo_mini.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_HSUM_MAX_DEVS", "group___revo_mini.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "group___revo_mini.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_I2C_ETASV3_ADAPTER", "group___revo_mini.html#gad2e5852f07d75f8f0720d7f228393da9", null ],

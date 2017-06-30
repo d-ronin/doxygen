@@ -8,8 +8,6 @@ var targets_2playuavosd_2fw_2pios__config_8h =
     [ "IRQSTACK_LIMIT_CRITICAL", "targets_2playuavosd_2fw_2pios__config_8h.html#gab45890a416f5e2177b434d93d89c362f", null ],
     [ "IRQSTACK_LIMIT_WARNING", "targets_2playuavosd_2fw_2pios__config_8h.html#gae97115db8cae2e29462308550992c153", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2playuavosd_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2playuavosd_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2playuavosd_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_INCLUDE_ANNUNC", "targets_2playuavosd_2fw_2pios__config_8h.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "targets_2playuavosd_2fw_2pios__config_8h.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
     [ "PIOS_INCLUDE_CHIBIOS", "targets_2playuavosd_2fw_2pios__config_8h.html#ga161aa898042f41e015d602a72a618d87", null ],

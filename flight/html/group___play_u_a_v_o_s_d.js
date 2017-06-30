@@ -38,8 +38,6 @@ var group___play_u_a_v_o_s_d =
     [ "PIOS_COM_TELEM_RF", "group___play_u_a_v_o_s_d.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "group___play_u_a_v_o_s_d.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "group___play_u_a_v_o_s_d.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "group___play_u_a_v_o_s_d.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "group___play_u_a_v_o_s_d.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___play_u_a_v_o_s_d.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___play_u_a_v_o_s_d.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "group___play_u_a_v_o_s_d.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],

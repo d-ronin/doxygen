@@ -313,7 +313,7 @@ var searchData=
   ['status_5fgpsfix_5fnofix',['STATUS_GPSFIX_NOFIX',['../group___g_p_s_module.html#ga0cf4e1e1bb89b3ea8d58303b610044e2',1,'UBX.h']]],
   ['status_5fgpsfix_5ftimeonly',['STATUS_GPSFIX_TIMEONLY',['../group___g_p_s_module.html#gaad223f22332eeddf57f8064dd9e5460a',1,'UBX.h']]],
   ['status_5fregs',['status_regs',['../structpios__rfm22b__dev.html#ae19fd5f7bedb1256cb0404952b55cd33',1,'pios_rfm22b_dev']]],
-  ['status_5frep',['status_rep',['../structbl__messages.html#a75387ae9dc68c8c043cc9e668c9410d5',1,'bl_messages::status_rep()'],['../bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b',1,'status_rep():&#160;bl_messages.h'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'Status_Rep():&#160;common.h']]],
+  ['status_5frep',['status_rep',['../structbl__messages.html#a75387ae9dc68c8c043cc9e668c9410d5',1,'bl_messages::status_rep()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'Status_Rep():&#160;common.h'],['../bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b',1,'status_rep():&#160;bl_messages.h']]],
   ['status_5freq',['status_req',['../structbl__messages.html#a8c87bc5da88f1064fb3ab42e374fd790',1,'bl_messages::status_req()'],['../bl__messages_8h.html#acc38b6455ded1e1b21a8fc6bce548326',1,'status_req():&#160;bl_messages.h']]],
   ['status_5frequest',['Status_Request',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715',1,'common.h']]],
   ['statusline',['statusline',['../structtelemetrydata.html#aa6ccae299824599d88db344e95f02540',1,'telemetrydata']]],

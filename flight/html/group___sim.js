@@ -53,7 +53,6 @@ var group___sim =
     [ "PIOS_INCLUDE_SERVO", "group___sim.html#ga48264c60bf3326bbbb3d3d9057cde39c", null ],
     [ "PIOS_INCLUDE_SYS", "group___sim.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
     [ "PIOS_INCLUDE_TCP", "group___sim.html#ga27e83ecf992e5685416437279db758e4", null ],
-    [ "PIOS_INCLUDE_TELEMETRY_RF", "group___sim.html#gaff4a9228ab4f361775210ace27651441", null ],
     [ "PIOS_INCLUDE_UDP", "group___sim.html#ga360ac5e44a96f7b92ac6427b4c7e217e", null ],
     [ "PIOS_LED_ALARM", "group___sim.html#gae4912a499d71db827918d7908055ce05", null ],
     [ "PIOS_LED_HEARTBEAT", "group___sim.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],

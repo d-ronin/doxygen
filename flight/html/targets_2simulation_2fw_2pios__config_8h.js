@@ -30,7 +30,6 @@ var targets_2simulation_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_SERVO", "targets_2simulation_2fw_2pios__config_8h.html#ga48264c60bf3326bbbb3d3d9057cde39c", null ],
     [ "PIOS_INCLUDE_SYS", "targets_2simulation_2fw_2pios__config_8h.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
     [ "PIOS_INCLUDE_TCP", "targets_2simulation_2fw_2pios__config_8h.html#ga27e83ecf992e5685416437279db758e4", null ],
-    [ "PIOS_INCLUDE_TELEMETRY_RF", "targets_2simulation_2fw_2pios__config_8h.html#gaff4a9228ab4f361775210ace27651441", null ],
     [ "PIOS_INCLUDE_UDP", "targets_2simulation_2fw_2pios__config_8h.html#ga360ac5e44a96f7b92ac6427b4c7e217e", null ],
     [ "PIOS_RCVR_MAX_CHANNELS", "targets_2simulation_2fw_2pios__config_8h.html#gad9504d2174472de2d678814e430678c9", null ],
     [ "PIOS_RCVR_MAX_DEVS", "targets_2simulation_2fw_2pios__config_8h.html#ga78aa2952a1e1e2bf0a2128a8e297c557", null ],
