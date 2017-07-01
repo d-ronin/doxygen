@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ab53ae2491f4fe42036cf680c3cc1b67b":[3,2,13,89],
+"group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875":[3,2,13,113],
 "group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875":[3,2,13,51,0,1],
 "group___core_plugin.html#ggaf73287914241594ba6e179f65b63bd61ac0e72d90e10b995397b0c578ea5a3875":[3,2,13,87,1],
 "group___debug_gadget_plugin.html":[3,2,14],
@@ -60,8 +62,8 @@ var NAVTREEINDEX21 =
 "group___dial_plugin.html#ga30ac2e08e3864b71a35da761cfdcfc5e":[3,2,15,23],
 "group___dial_plugin.html#ga33eb2b4ead9a0ca8a72912fa67dd8c30":[3,2,15,3,39],
 "group___dial_plugin.html#ga33eb2b4ead9a0ca8a72912fa67dd8c30":[3,2,15,66],
-"group___dial_plugin.html#ga348ba33a6676d7777a8fb313029f71a0":[3,2,15,59],
 "group___dial_plugin.html#ga348ba33a6676d7777a8fb313029f71a0":[3,2,15,3,33],
+"group___dial_plugin.html#ga348ba33a6676d7777a8fb313029f71a0":[3,2,15,59],
 "group___dial_plugin.html#ga35b76a1088cc50996f66ef23da926785":[3,2,15,6,5],
 "group___dial_plugin.html#ga35b76a1088cc50996f66ef23da926785":[3,2,15,50],
 "group___dial_plugin.html#ga3b18986c8923f654c2d96264c83680ab":[3,2,15,3,41],
@@ -86,8 +88,8 @@ var NAVTREEINDEX21 =
 "group___dial_plugin.html#ga4b039739f70d00651a6ca39cf5a1997a":[3,2,15,10],
 "group___dial_plugin.html#ga4cb0aa67ea10afa557dbf083d67f2510":[3,2,15,3,1],
 "group___dial_plugin.html#ga4cb0aa67ea10afa557dbf083d67f2510":[3,2,15,9],
-"group___dial_plugin.html#ga4ce19a0118b1518cf0469e2fc69dc86b":[3,2,15,51],
 "group___dial_plugin.html#ga4ce19a0118b1518cf0469e2fc69dc86b":[3,2,15,6,6],
+"group___dial_plugin.html#ga4ce19a0118b1518cf0469e2fc69dc86b":[3,2,15,51],
 "group___dial_plugin.html#ga516d8434f4958c9501f14624621908b8":[3,2,15,3,4],
 "group___dial_plugin.html#ga516d8434f4958c9501f14624621908b8":[3,2,15,17],
 "group___dial_plugin.html#ga554dde8a86360b5dc635b42a4cf2ae9d":[3,2,15,3,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "group___g_c_s_control.html#ga85f706e0833d00b4cb7349699df40106":[3,2,17,0,0],
 "group___g_c_s_control.html#ga85f706e0833d00b4cb7349699df40106":[3,2,17,1],
 "group___g_c_s_control.html#gab1bfb46df2c00c4cb78ac98349ba2db6":[3,2,17,0,4],
-"group___g_c_s_control.html#gab1bfb46df2c00c4cb78ac98349ba2db6":[3,2,17,5],
-"group___g_c_s_control_gadget_plugin.html":[3,2,18],
-"group___g_c_s_control_gadget_plugin.html#ga00c5e0af9d177e7d271c0d6dcd6f4601":[3,2,18,11,3]
+"group___g_c_s_control.html#gab1bfb46df2c00c4cb78ac98349ba2db6":[3,2,17,5]
 };

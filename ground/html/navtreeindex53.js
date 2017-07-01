@@ -1,6 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"uavobjecttemplate_8m.html#aa5edb0d2e3cd623fe2b2fd3bf1d8308f":[6,0,0,0,0,1,37,21,78],
 "uavobjecttemplate_8m.html#aafbb9d50e573e4009d0650c645566ddd":[6,0,0,0,0,1,37,21,56],
 "uavobjecttemplate_8m.html#ab286bde790d8a8eb7b81391a85f4562b":[6,0,0,0,0,1,37,21,13],
 "uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a":[6,0,0,0,0,1,37,21,51],

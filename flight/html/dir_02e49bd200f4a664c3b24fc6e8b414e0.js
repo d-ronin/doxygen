@@ -13,6 +13,5 @@ var dir_02e49bd200f4a664c3b24fc6e8b414e0 =
     [ "pios_spi_posix_priv.h", "pios__spi__posix__priv_8h.html", "pios__spi__posix__priv_8h" ],
     [ "pios_struct_helper.h", "posix_2inc_2pios__struct__helper_8h.html", "posix_2inc_2pios__struct__helper_8h" ],
     [ "pios_sys.h", "posix_2inc_2pios__sys_8h.html", "posix_2inc_2pios__sys_8h" ],
-    [ "pios_tcp_priv.h", "pios__tcp__priv_8h.html", "pios__tcp__priv_8h" ],
-    [ "pios_udp_priv.h", "pios__udp__priv_8h.html", "pios__udp__priv_8h" ]
+    [ "pios_tcp_priv.h", "pios__tcp__priv_8h.html", "pios__tcp__priv_8h" ]
 ];

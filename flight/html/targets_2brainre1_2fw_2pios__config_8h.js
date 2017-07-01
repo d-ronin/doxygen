@@ -1,13 +1,13 @@
 var targets_2brainre1_2fw_2pios__config_8h =
 [
     [ "AUTOTUNE_AVERAGING_DECIMATION", "targets_2brainre1_2fw_2pios__config_8h.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
-    [ "AUTOTUNE_AVERAGING_MODE", "targets_2brainre1_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BRAIN", "targets_2brainre1_2fw_2pios__config_8h.html#gad45c37db5c6056967bcfcef73128a6ae", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2brainre1_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "FLASH_FREERTOS", "targets_2brainre1_2fw_2pios__config_8h.html#gae1e4007513081657ee47110f2433561d", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2brainre1_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2brainre1_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
     [ "OSD_USE_BRAINFPV_LOGO", "targets_2brainre1_2fw_2pios__config_8h.html#gad621ac8b28786134f3c5f833f796201b", null ],
+    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2brainre1_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_INCLUDE_BMI160", "targets_2brainre1_2fw_2pios__config_8h.html#ga1e15b364af56c864f6214ade28ffdfc4", null ],
     [ "PIOS_INCLUDE_BMP280", "targets_2brainre1_2fw_2pios__config_8h.html#ga401441fde64a74c578c83d2e616da605", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "targets_2brainre1_2fw_2pios__config_8h.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],

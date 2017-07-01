@@ -1,6 +1,5 @@
 var targets_2seppuku_2fw_2pios__config_8h =
 [
-    [ "AUTOTUNE_AVERAGING_MODE", "targets_2seppuku_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2seppuku_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2seppuku_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2seppuku_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],

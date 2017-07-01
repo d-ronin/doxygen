@@ -92,7 +92,7 @@ var searchData=
   ['link_5fled_5foff',['LINK_LED_OFF',['../group___pip_x.html#gaa2ade2af68c0619af4ba06422b9a1fe2',1,'pios_board.h']]],
   ['link_5fled_5fon',['LINK_LED_ON',['../group___pip_x.html#ga2c66e6a029b5b79debcd298ba07b3363',1,'pios_board.h']]],
   ['link_5fled_5ftoggle',['LINK_LED_TOGGLE',['../group___pip_x.html#ga774e69e1743daef0585d50aaed8bd4e8',1,'pios_board.h']]],
-  ['link_5fquality',['link_quality',['../struct_p_h_status_packet.html#ac78a8f872dbb6ece46016b5fdc901037',1,'PHStatusPacket::link_quality()'],['../structrfm22b__stats.html#a8d32fed579e3be2fbc354ab176670af2',1,'rfm22b_stats::link_quality()']]],
+  ['link_5fquality',['link_quality',['../structrfm22b__stats.html#a8d32fed579e3be2fbc354ab176670af2',1,'rfm22b_stats']]],
   ['link_5fstate',['link_state',['../structrfm22b__stats.html#aff1fd3341c07dab52a2a666cb6d7ddd4',1,'rfm22b_stats']]],
   ['linkedmetadataptr',['LinkedMetaDataPtr',['../group___u_a_v_object_handling.html#gadb5582c476cc047b4ca65d5ed03d687a',1,'uavobjectmanager.c']]],
   ['lis3mdl_5fdev_5ft',['lis3mdl_dev_t',['../group___p_i_o_s___l_i_s3_m_d_l.html#gaf7b001a56dd17c7ba4d41beb1f4b4a36',1,'pios_lis3mdl.h']]],

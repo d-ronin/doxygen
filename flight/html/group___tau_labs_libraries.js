@@ -5,7 +5,6 @@ var group___tau_labs_libraries =
     [ "alarms.c", "alarms_8c.html", null ],
     [ "alarms.h", "alarms_8h.html", null ],
     [ "insgps.h", "insgps_8h.html", null ],
-    [ "packet_handler.h", "packet__handler_8h.html", null ],
     [ "paths.h", "paths_8h.html", null ],
     [ "sanitycheck.h", "sanitycheck_8h.html", null ],
     [ "timeutils.h", "timeutils_8h.html", null ],
@@ -17,41 +16,6 @@ var group___tau_labs_libraries =
     [ "WorldMagModel.c", "_world_mag_model_8c.html", null ],
     [ "taskmonitor.h", "taskmonitor_8h.html", null ],
     [ "taskmonitor.h", "taskmonitor_8h.html", null ],
-    [ "PHPacketHeader", "struct_p_h_packet_header.html", [
-      [ "data_size", "struct_p_h_packet_header.html#ab8dbaddf1009694724c1f40b82bcb314", null ],
-      [ "destination_id", "struct_p_h_packet_header.html#a19915477b7c7c9c24b293ba4db7c6426", null ],
-      [ "seq_num", "struct_p_h_packet_header.html#a3d0a8a439dadc33b716f7e926a9546cf", null ],
-      [ "source_id", "struct_p_h_packet_header.html#a93bf1fc396b4d98f870fee75682423b7", null ],
-      [ "type", "struct_p_h_packet_header.html#ad816b782c8c40b9e03bdf092fd37bb3c", null ]
-    ] ],
-    [ "PHPacket", "struct_p_h_packet.html", [
-      [ "data", "struct_p_h_packet.html#ab75944547b63cd1feaaa0727b7505c52", null ],
-      [ "header", "struct_p_h_packet.html#a930af3e24c9d3aa4a29fa0e72b62f12b", null ]
-    ] ],
-    [ "PHAckNackPacket", "struct_p_h_ack_nack_packet.html", [
-      [ "ecc", "struct_p_h_ack_nack_packet.html#a362bb5e45f310d81a10a2bdfa8108ce8", null ],
-      [ "header", "struct_p_h_ack_nack_packet.html#aac07270becd441ff9dafa3e01945883c", null ]
-    ] ],
-    [ "PHPpmPacket", "struct_p_h_ppm_packet.html", [
-      [ "channels", "struct_p_h_ppm_packet.html#a47b34df90a9b106c7be077456b3ba1b2", null ],
-      [ "ecc", "struct_p_h_ppm_packet.html#a4cd9aaabbc588410a6ccc2d333fc224a", null ],
-      [ "header", "struct_p_h_ppm_packet.html#a6dbe9e28bb634aadd35b5c4501589532", null ]
-    ] ],
-    [ "PHStatusPacket", "struct_p_h_status_packet.html", [
-      [ "ecc", "struct_p_h_status_packet.html#a6ae4779221b82cd043d0798111010d42", null ],
-      [ "header", "struct_p_h_status_packet.html#a01617aa2bca7a093aa2dd7a2e7edc47a", null ],
-      [ "link_quality", "struct_p_h_status_packet.html#ac78a8f872dbb6ece46016b5fdc901037", null ],
-      [ "received_rssi", "struct_p_h_status_packet.html#a8dcb964e68ef8dbed6c28e6418dc3e2e", null ]
-    ] ],
-    [ "PHConnectionPacket", "struct_p_h_connection_packet.html", [
-      [ "datarate", "struct_p_h_connection_packet.html#ac0efb46843892dc7b42a503eeea6d58c", null ],
-      [ "ecc", "struct_p_h_connection_packet.html#a047b7d5ea9d5699d06966d96ef4ccfba", null ],
-      [ "frequency_hz", "struct_p_h_connection_packet.html#a50a68f68b6f7f8d07f91f9076d638dbd", null ],
-      [ "header", "struct_p_h_connection_packet.html#a52261a934b08802064ddd177d22f5a1b", null ],
-      [ "max_frequency", "struct_p_h_connection_packet.html#a607b2aff285e735c41dee293f8144be0", null ],
-      [ "max_tx_power", "struct_p_h_connection_packet.html#aaeff460e39a62242df16ffce090b0760", null ],
-      [ "min_frequency", "struct_p_h_connection_packet.html#a4e11c88e3be1dbcacc324aace217b7e6", null ]
-    ] ],
     [ "path_status", "structpath__status.html", [
       [ "correction_direction", "structpath__status.html#a0931fd2d5f90e4103b4096bae764ca86", null ],
       [ "error", "structpath__status.html#a673ce13b12050e471c15f386e8193ac7", null ],
@@ -154,36 +118,12 @@ var group___tau_labs_libraries =
     [ "NUMV", "group___tau_labs_libraries.html#ga75c330715104282de4ad5308020e6d8e", null ],
     [ "NUMW", "group___tau_labs_libraries.html#ga5e19ccd5f155ba2afa55a6a7345d1ef3", null ],
     [ "NUMX", "group___tau_labs_libraries.html#gab18729b0ee7c9a21f49dd4b564aee66d", null ],
-    [ "PH_ACK_NACK_DATA_SIZE", "group___tau_labs_libraries.html#gacd8a2d76b62cf2aaa32ec83728bc27b3", null ],
-    [ "PH_CONNECTION_DATA_SIZE", "group___tau_labs_libraries.html#ga370c8f42d79a33547dd62d0c8ccd4705", null ],
-    [ "PH_MAX_DATA", "group___tau_labs_libraries.html#ga1969c4361ab7507379b1bb37ef17fab3", null ],
-    [ "PH_PACKET_SIZE", "group___tau_labs_libraries.html#ga0cecb993c598d18a292c11983badeee9", null ],
-    [ "PH_PPM_DATA_SIZE", "group___tau_labs_libraries.html#ga4d628824afccbbbff4a386e281ea3bd3", null ],
-    [ "PH_STATUS_DATA_SIZE", "group___tau_labs_libraries.html#ga2d6ff5400c99c9303336de626ba0a2bb", null ],
-    [ "PHPacketSize", "group___tau_labs_libraries.html#ga91db75e63bda6f4f7ad38eed4d59d930", null ],
-    [ "PHPacketSizeECC", "group___tau_labs_libraries.html#ga9c289507ca03f4d1785d7a215b336dd2", null ],
     [ "SECS_PER_DAY", "group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de", null ],
     [ "SECS_PER_HOUR", "group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf", null ],
     [ "SYSTEMALARMS_ALARM_DEFAULT", "group___tau_labs_libraries.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef", null ],
     [ "TRUE", "group___tau_labs_libraries.html#gaa8cecfc5c5c054d2875c03e77b7be15d", null ],
     [ "WMM_MAX_MODEL_DEGREES", "group___tau_labs_libraries.html#gad46655ed60161937257ccf892f0c9779", null ],
     [ "WMM_MAX_SECULAR_VARIATION_MODEL_DEGREES", "group___tau_labs_libraries.html#ga6cea0dcb7405c8243c00ee1aca4ab1b5", null ],
-    [ "PHAckNackPacketHandle", "group___tau_labs_libraries.html#gafd4ce42b4793fdd6ccdba127272056b4", null ],
-    [ "PHConnectionPacketHandle", "group___tau_labs_libraries.html#ga2c36c280fa284ae25b54eba06a601805", null ],
-    [ "PHPacketHandle", "group___tau_labs_libraries.html#gaa252eac3dc3346fec375be8805fd8694", null ],
-    [ "PHPpmPacketHandle", "group___tau_labs_libraries.html#ga64fda6fd21f38899abc02e01a8920fe2", null ],
-    [ "PHStatusPacketHandle", "group___tau_labs_libraries.html#gaba4b593b2564f247de7ae01fe86e908a", null ],
-    [ "PHPacketType", "group___tau_labs_libraries.html#gafc6fe85f3c89dabc11ae43c825fb28ad", [
-      [ "PACKET_TYPE_NONE", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada7bc0b281e9e7e0ef0dfb2ffb37655333", null ],
-      [ "PACKET_TYPE_STATUS", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28adad83911cea88c149916cd281ec9ee5cee", null ],
-      [ "PACKET_TYPE_CON_REQUEST", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada287243cb80381ee8175f3fdcb25b69de", null ],
-      [ "PACKET_TYPE_DATA", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada2062477b6d9ae02203bcb2adfe989055", null ],
-      [ "PACKET_TYPE_DUPLICATE_DATA", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada3392941f745533dd9f815c1d8e88003a", null ],
-      [ "PACKET_TYPE_PPM", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28adad3e2cee14551c12b1123a659b4456d04", null ],
-      [ "PACKET_TYPE_ACK", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada6add2b6716957bc5e01de78127161c27", null ],
-      [ "PACKET_TYPE_ACK_RTS", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada77fe95b0ef25a7e060413a0175ac7747", null ],
-      [ "PACKET_TYPE_NACK", "group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada7b9680cb1a5b7a996450a1c19439779f", null ]
-    ] ],
     [ "AlarmBootReason", "group___tau_labs_libraries.html#ga47354e86580ad415802963e09b3e408a", null ],
     [ "AlarmsClear", "group___tau_labs_libraries.html#gafce7d51ebedc70de373224f839c77399", null ],
     [ "AlarmsClearAll", "group___tau_labs_libraries.html#ga9a68c7084ffef47a37ebf1a0284ecc41", null ],

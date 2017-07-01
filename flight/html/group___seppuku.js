@@ -11,7 +11,6 @@ var group___seppuku =
     [ "mcuconf.h", "seppuku_2fw_2mcuconf_8h.html", null ],
     [ "pios_board.c", "seppuku_2fw_2pios__board_8c.html", null ],
     [ "pios_config.h", "targets_2seppuku_2fw_2pios__config_8h.html", null ],
-    [ "AUTOTUNE_AVERAGING_MODE", "group___seppuku.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___seppuku.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___seppuku.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
     [ "BOOTLOADER_PAUSE_DELAY", "group___seppuku.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],

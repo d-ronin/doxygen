@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"opmapgadgetwidget_8h.html#gga10cb3e7dfbac87e40e00c1a8c76c16e5abdc1c0b7296fb52149bbda0739034825":[6,0,0,0,0,1,23,17,1,1],
+"opmapgadgetwidget_8h.html#gga10cb3e7dfbac87e40e00c1a8c76c16e5afdcda6e378c8e0a54e928947a5fdede8":[6,0,0,0,0,1,23,17,1,0],
 "opmapgadgetwidget_8h_source.html":[6,0,0,0,0,1,23,17],
 "opmapplugin_8cpp.html":[6,0,0,0,0,1,23,18],
 "opmapplugin_8cpp_source.html":[6,0,0,0,0,1,23,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "rawhidplugin_8cpp_source.html":[6,0,0,0,0,1,27,4],
 "rawhidplugin_8h.html":[6,0,0,0,0,1,27,5],
 "rawhidplugin_8h_source.html":[6,0,0,0,0,1,27,5],
-"rawtile_8cpp.html":[6,0,0,0,0,0,4,0,27],
-"rawtile_8cpp.html#ga17ed512ed98b14303d6db91fc1624c5e":[6,0,0,0,0,0,4,0,27,0],
-"rawtile_8cpp.html#ga45a81278b07bda2f00748b2eb7f10e01":[6,0,0,0,0,0,4,0,27,1]
+"rawtile_8cpp.html":[6,0,0,0,0,0,4,0,27]
 };

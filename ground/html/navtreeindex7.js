@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"dtfc_8cpp.html":[6,0,0,0,0,1,4,0],
 "dtfc_8cpp_source.html":[6,0,0,0,0,1,4,0],
 "dtfc_8h.html":[6,0,0,0,0,1,4,1],
 "dtfc_8h_source.html":[6,0,0,0,0,1,4,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "gpsdisplaygadget_8h_source.html":[6,0,0,0,0,1,14,5],
 "gpsdisplaygadgetfactory_8cpp.html":[6,0,0,0,0,1,14,6],
 "gpsdisplaygadgetfactory_8cpp_source.html":[6,0,0,0,0,1,14,6],
-"gpsdisplaygadgetfactory_8h.html":[6,0,0,0,0,1,14,7]
+"gpsdisplaygadgetfactory_8h.html":[6,0,0,0,0,1,14,7],
+"gpsdisplaygadgetfactory_8h_source.html":[6,0,0,0,0,1,14,7]
 };

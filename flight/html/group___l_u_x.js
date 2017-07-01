@@ -7,7 +7,6 @@ var group___l_u_x =
     [ "cmsis_system.c", "lux_2board-info_2cmsis__system_8c.html", null ],
     [ "pios_board.h", "targets_2lux_2board-info_2pios__board_8h.html", null ],
     [ "AUTOTUNE_AVERAGING_DECIMATION", "group___l_u_x.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
-    [ "AUTOTUNE_AVERAGING_MODE", "group___l_u_x.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___l_u_x.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___l_u_x.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
     [ "BOOTLOADER_PAUSE_DELAY", "group___l_u_x.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],

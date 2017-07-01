@@ -79,7 +79,6 @@ var group___p_i_o_s =
     [ "FlightGear driver", "group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html", "group___p_i_o_s___f_l_i_g_h_t_g_e_a_r" ],
     [ "Serial Driver", "group___p_i_o_s___s_e_r_i_a_l.html", null ],
     [ "TCP Driver", "group___p_i_o_s___t_c_p.html", null ],
-    [ "UDP Driver", "group___p_i_o_s___u_d_p.html", null ],
     [ "ChibiOS Interface", "group___chibi_o_s.html", "group___chibi_o_s" ],
     [ "Digital IO subsystem", "group___p_i_o_s___d_i_o.html", "group___p_i_o_s___d_i_o" ],
     [ "Inline delay subsystem", "group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html", "group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y" ],

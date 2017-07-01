@@ -1,6 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"telemetryscheduler__global_8h_source.html":[6,0,0,0,0,1,35,2],
 "telemetryschedulergadget_8cpp.html":[6,0,0,0,0,1,35,3],
 "telemetryschedulergadget_8cpp_source.html":[6,0,0,0,0,1,35,3],
 "telemetryschedulergadget_8h.html":[6,0,0,0,0,1,35,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX52 =
 "uavobjecttemplate_8m.html#a9927793f1f69327ecd9ebf938e0deb92":[6,0,0,0,0,1,37,21,65],
 "uavobjecttemplate_8m.html#a99fa2380aca0e2b2af5106b406042309":[6,0,0,0,0,1,37,21,17],
 "uavobjecttemplate_8m.html#a9d747b37fc6287c5b668e057e1936779":[6,0,0,0,0,1,37,21,34],
-"uavobjecttemplate_8m.html#aa0e419c18b2c9a7cf4dd7515144005a1":[6,0,0,0,0,1,37,21,27]
+"uavobjecttemplate_8m.html#aa0e419c18b2c9a7cf4dd7515144005a1":[6,0,0,0,0,1,37,21,27],
+"uavobjecttemplate_8m.html#aa5edb0d2e3cd623fe2b2fd3bf1d8308f":[6,0,0,0,0,1,37,21,78]
 };

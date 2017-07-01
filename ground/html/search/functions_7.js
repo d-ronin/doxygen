@@ -18,7 +18,6 @@ var searchData=
   ['geolanguage',['geoLanguage',['../group___o_p_map_plugin.html#ga8f21888619007253258e41c8b96beb83',1,'OPMapGadgetConfiguration']]],
   ['get_5fcos',['get_cos',['../classffft_1_1_osc_sin_cos.html#aa903b64bed3d46a27aeb5af7d7154eb3',1,'ffft::OscSinCos']]],
   ['get_5flength',['get_length',['../classffft_1_1_f_f_t_real.html#abdd5b144ba5737c7ad27095d1658c29e',1,'ffft::FFTReal']]],
-  ['get_5fsample_5fdelay',['get_sample_delay',['../group___config_plugin.html#ga5d0633aecc8c620b14793f34d97cc7aa',1,'configautotunewidget.cpp']]],
   ['get_5fsin',['get_sin',['../classffft_1_1_osc_sin_cos.html#a3e336802d9e10288483d477bfdf50c20',1,'ffft::OscSinCos']]],
   ['get_5fsize',['get_size',['../classuavobject_1_1_u_a_v_object.html#a52fe6009add2d12cfcf07f31a65b55c8',1,'uavobject::UAVObject']]],
   ['get_5fstruct',['get_struct',['../classuavobject_1_1_u_a_v_object.html#a3630e10e7bad50b6f2a03b22fd8616ba',1,'uavobject.UAVObject.get_struct()'],['../classuavobject_1_1_u_a_v_object_field.html#a4abee82c924e2fa17da4dfa6ade368bf',1,'uavobject.UAVObjectField.get_struct()']]],

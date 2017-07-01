@@ -25,7 +25,6 @@ var targets_2pipxtreme_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_FRSKY_SPORT_TELEMETRY", "targets_2pipxtreme_2fw_2pios__config_8h.html#ga6be60167c37a490b8240548f86841e7e", null ],
     [ "PIOS_INCLUDE_INITCALL", "targets_2pipxtreme_2fw_2pios__config_8h.html#ga24b8202a96fa1ba8b2a366a80e8547b9", null ],
     [ "PIOS_INCLUDE_LOGFS_SETTINGS", "targets_2pipxtreme_2fw_2pios__config_8h.html#ga83406cd61f77db51d8a91643bd6c2e98", null ],
-    [ "PIOS_INCLUDE_PACKET_HANDLER", "targets_2pipxtreme_2fw_2pios__config_8h.html#gac92bb3ab8db770e774a9b694a133543c", null ],
     [ "PIOS_INCLUDE_PPM", "targets_2pipxtreme_2fw_2pios__config_8h.html#ga17d0ce1de0a34c9da0f230944ff38874", null ],
     [ "PIOS_INCLUDE_RCVR", "targets_2pipxtreme_2fw_2pios__config_8h.html#gac34deb93cfe0b86c0c3f3fdd297af181", null ],
     [ "PIOS_INCLUDE_RFM22B", "targets_2pipxtreme_2fw_2pios__config_8h.html#ga878b6c7a5e981959c4f41d654f9342db", null ],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['phpackettype',['PHPacketType',['../group___tau_labs_libraries.html#gafc6fe85f3c89dabc11ae43c825fb28ad',1,'packet_handler.h']]],
   ['pios_5fadc_5fdev_5fmagic',['pios_adc_dev_magic',['../group___p_i_o_s___a_d_c.html#gad4639b786d45b213ac842a0c4cf3e78d',1,'pios_adc.c']]],
   ['pios_5fbmi160_5facc_5frange',['pios_bmi160_acc_range',['../group___p_i_o_s___b_m_i160.html#gadc52c64babd9845fcf8ad68ea9cc24c0',1,'pios_bmi160.h']]],
   ['pios_5fbmi160_5fgyro_5frange',['pios_bmi160_gyro_range',['../group___p_i_o_s___b_m_i160.html#ga5b8fcc194828f4c0b9a30e10a007cb62',1,'pios_bmi160.h']]],

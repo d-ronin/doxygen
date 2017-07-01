@@ -12,5 +12,6 @@ var manualcontrol_8c =
     [ "manualControlTask", "manualcontrol_8c.html#ga7323ef978c5860ebcd1fa329831ae0f9", null ],
     [ "MODULE_HIPRI_INITCALL", "manualcontrol_8c.html#gae763f46f543e67fc1ca8e5fe41f67d63", null ],
     [ "ok_to_arm", "manualcontrol_8c.html#gab4d9e85efcf5f9dafe0083f8599dfcf9", null ],
-    [ "taskHandle", "manualcontrol_8c.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ]
+    [ "taskHandle", "manualcontrol_8c.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ],
+    [ "vehicle_is_armed", "manualcontrol_8c.html#ga609241269d4ab4f2d3f9842c3a03f6bc", null ]
 ];

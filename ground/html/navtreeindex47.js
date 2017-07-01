@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"importsettings_8cpp_source.html":[6,0,0,0,0,1,9,1,0],
+"importsettings_8h.html":[6,0,0,0,0,1,9,1,1],
 "importsettings_8h_source.html":[6,0,0,0,0,1,9,1,1],
 "importsummary_8cpp.html":[6,0,0,0,0,1,40,0],
 "importsummary_8cpp_source.html":[6,0,0,0,0,1,40,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "mercatorprojection_8h_source.html":[6,0,0,0,0,0,4,1,0,3],
 "mercatorprojectionyandex_8cpp.html":[6,0,0,0,0,0,4,1,0,4],
 "mercatorprojectionyandex_8cpp_source.html":[6,0,0,0,0,0,4,1,0,4],
-"mercatorprojectionyandex_8h.html":[6,0,0,0,0,0,4,1,0,5],
-"mercatorprojectionyandex_8h_source.html":[6,0,0,0,0,0,4,1,0,5],
-"metadata__dialog_8cpp.html":[6,0,0,0,0,1,35,0]
+"mercatorprojectionyandex_8h.html":[6,0,0,0,0,0,4,1,0,5]
 };

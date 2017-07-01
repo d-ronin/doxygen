@@ -1,11 +1,11 @@
 var targets_2brain_2fw_2pios__config_8h =
 [
-    [ "AUTOTUNE_AVERAGING_MODE", "targets_2brain_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BRAIN", "targets_2brain_2fw_2pios__config_8h.html#gad45c37db5c6056967bcfcef73128a6ae", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2brain_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2brain_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2brain_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
     [ "OSD_USE_BRAINFPV_LOGO", "targets_2brain_2fw_2pios__config_8h.html#gad621ac8b28786134f3c5f833f796201b", null ],
+    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2brain_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_I2C_ETASV3_ADAPTER", "targets_2brain_2fw_2pios__config_8h.html#gad2e5852f07d75f8f0720d7f228393da9", null ],
     [ "PIOS_INCLUDE_DAC", "targets_2brain_2fw_2pios__config_8h.html#ga639f6a1cd17b535b17f2e4ae80835e7d", null ],
     [ "PIOS_INCLUDE_DAC_ANNUNCIATOR", "targets_2brain_2fw_2pios__config_8h.html#ga90d918d22c85e3b41434233eac638116", null ],

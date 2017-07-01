@@ -1,6 +1,5 @@
 var targets_2simulation_2fw_2pios__config_8h =
 [
-    [ "AUTOTUNE_AVERAGING_MODE", "targets_2simulation_2fw_2pios__config_8h.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "CAMERASTAB_POI_MODE", "targets_2simulation_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "CPULOAD_LIMIT_CRITICAL", "targets_2simulation_2fw_2pios__config_8h.html#ga33b8e7ed32bafe7b1e55e18b832854ce", null ],
     [ "CPULOAD_LIMIT_WARNING", "targets_2simulation_2fw_2pios__config_8h.html#ga08ff1c9a9c1942647c4ee60b087e4ca6", null ],

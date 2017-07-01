@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">436773c</span>
+   &#160;<span id="projectnumber">9c2d965</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -372,46 +372,33 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">// Packet Handler</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">// Reed-Solomon ECC</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_PACKET_HANDLER)</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uint32_t <a class="code" href="group___brain_r_e1.html#gab0199d5aedb7be35cb1d6880ee21f8ac">pios_packet_handler</a>;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#define PIOS_PACKET_HANDLER (pios_packet_handler)</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_PH_MAX_PACKET 255</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_PH_WIN_SIZE 3</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_PH_MAX_CONNECTIONS 1</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PACKET_HANDLER */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">// Reed-Solomon ECC</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga75691040c0909ea4c06cd3d87f3f01b2">  291</a></span>&#160;<span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga75691040c0909ea4c06cd3d87f3f01b2">  279</a></span>&#160;<span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  285</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  286</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  287</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  288</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  289</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  297</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  298</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  299</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  300</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  301</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___pip_x_html_ga7bf37c2a11a82f3cee715b9e09638dce"><div class="ttname"><a href="group___pip_x.html#ga7bf37c2a11a82f3cee715b9e09638dce">pios_com_radio_id</a></div><div class="ttdeci">uintptr_t pios_com_radio_id</div></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___pip_x_html_ga00c59288b3ddcecb262b920ef5ae6ce1"><div class="ttname"><a href="group___pip_x.html#ga00c59288b3ddcecb262b920ef5ae6ce1">pios_i2c_flexi_adapter_id</a></div><div class="ttdeci">uint32_t pios_i2c_flexi_adapter_id</div></div>
 <div class="ttc" id="group___pip_x_html_ga921f0eb0351c5bfb72fa30333cd8dbe1"><div class="ttname"><a href="group___pip_x.html#ga921f0eb0351c5bfb72fa30333cd8dbe1">pios_com_telem_uart_telem_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_uart_telem_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga2d0de5022c647a603359c8a7514c658e"><div class="ttname"><a href="group___a_q32.html#ga2d0de5022c647a603359c8a7514c658e">pios_com_telem_serial_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_serial_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00122">pios_hal.c:122</a></div></div>
-<div class="ttc" id="group___pip_x_html_ga14dc9e3d330b80a37a9699c2112358e0"><div class="ttname"><a href="group___pip_x.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></div><div class="ttdeci">uintptr_t pios_com_debug_id</div><div class="ttdef"><b>Definition:</b> <a href="simulation_2fw_2pios__board_8c_source.html#l00077">pios_board.c:77</a></div></div>
+<div class="ttc" id="group___pip_x_html_ga14dc9e3d330b80a37a9699c2112358e0"><div class="ttname"><a href="group___pip_x.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></div><div class="ttdeci">uintptr_t pios_com_debug_id</div><div class="ttdef"><b>Definition:</b> <a href="simulation_2fw_2pios__board_8c_source.html#l00076">pios_board.c:76</a></div></div>
 <div class="ttc" id="group___pip_x_html_ga97dbb4b940ab0701eaeaf3058d8dc9db"><div class="ttname"><a href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a></div><div class="ttdeci">uintptr_t pios_ppm_rcvr_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga513cc36d72b76de2fcb75ff233a79a4a"><div class="ttname"><a href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_usb_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00042">pios_board.c:42</a></div></div>
 <div class="ttc" id="group___a_q32_html_gac040f05fa048688ee0269c2768698a14"><div class="ttname"><a href="group___a_q32.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a></div><div class="ttdeci">uintptr_t pios_com_bridge_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00080">pios_hal.c:80</a></div></div>
 <div class="ttc" id="group___pip_x_html_ga5ed4d9bd0cbb6a88a61f0f4a1e13bcff"><div class="ttname"><a href="group___pip_x.html#ga5ed4d9bd0cbb6a88a61f0f4a1e13bcff">pios_com_rf_id</a></div><div class="ttdeci">uintptr_t pios_com_rf_id</div></div>
-<div class="ttc" id="group___brain_r_e1_html_gab0199d5aedb7be35cb1d6880ee21f8ac"><div class="ttname"><a href="group___brain_r_e1.html#gab0199d5aedb7be35cb1d6880ee21f8ac">pios_packet_handler</a></div><div class="ttdeci">uint32_t pios_packet_handler</div></div>
 <div class="ttc" id="group___a_q32_html_gaaeb3e0d65ed5c6e7b921c54e1ad905db"><div class="ttname"><a href="group___a_q32.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db">pios_com_vcp_id</a></div><div class="ttdeci">uintptr_t pios_com_vcp_id</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

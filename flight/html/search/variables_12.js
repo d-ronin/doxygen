@@ -27,7 +27,6 @@ var searchData=
   ['reboot',['REBOOT',['../classpx__uploader_1_1uploader.html#af9e8efe1dca1daa08458da66b3f57943',1,'px_uploader::uploader']]],
   ['receive_5ftimer',['receive_timer',['../structpios__dsm__state.html#af7296b9f7aa4be7e56a8edd0025c5fab',1,'pios_dsm_state']]],
   ['received_5fdata',['received_data',['../structpios__dsm__state.html#a2e6a5a29461343fcc5a352ed031cd2c3',1,'pios_dsm_state']]],
-  ['received_5frssi',['received_rssi',['../struct_p_h_status_packet.html#a8dcb964e68ef8dbed6c28e6418dc3e2e',1,'PHStatusPacket']]],
   ['receiver_5fprotocol',['receiver_protocol',['../structflyingpicmd__cfg__fa.html#a627a9505cd26b5965bb2c1944e6cb40f',1,'flyingpicmd_cfg_fa::receiver_protocol()'],['../flyingpio__messages_8h.html#a354c07f00628e2877125e5336b92ed72',1,'receiver_protocol():&#160;flyingpio_messages.h']]],
   ['regs',['regs',['../structpios__can__cfg.html#aa7c799d5b36b41a1569ea86f855841d5',1,'pios_can_cfg::regs()'],['../structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691',1,'pios_spi_cfg::regs()'],['../structpios__spislave__cfg.html#a85837e996367e0bc5f96490639cbf0c2',1,'pios_spislave_cfg::regs()'],['../structpios__usart__cfg.html#a28b475a517c9d2fee0ab1a87d3c6ca67',1,'pios_usart_cfg::regs()'],['../structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8',1,'pios_i2c_adapter_cfg::regs()']]],
   ['regular_5finverted_5fpwm',['REGULAR_INVERTED_PWM',['../group___p_i_o_s___s_e_r_v_o.html#ga01a008e36f920c1463b98a6d8eeb0949',1,'pios_servo.c']]],
@@ -74,7 +73,6 @@ var searchData=
   ['runningpython3',['runningPython3',['../namespacepx__uploader.html#a9328944406132fa9969b6773b2627bc6',1,'px_uploader']]],
   ['rw',['rw',['../structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821',1,'pios_i2c_txn']]],
   ['rx',['rx',['../structpios__can__cfg.html#a070fa7e71f07dc07535c25cc217eaad1',1,'pios_can_cfg::rx()'],['../structstm32__dma.html#a967c78ffd2d021ac268f1d8c0a2c7e30',1,'stm32_dma::rx()'],['../structpios__usart__cfg.html#a8d393f43a5f748de6580907c5f7d0a48',1,'pios_usart_cfg::rx()']]],
-  ['rx_5fbuffer',['rx_buffer',['../structpios__udp__dev.html#a8545d82807ea56ed914406252da3acbe',1,'pios_udp_dev']]],
   ['rx_5fbuffer_5fwr',['rx_buffer_wr',['../structpios__rfm22b__dev.html#aa31cc789855ee5b29487085603190aa3',1,'pios_rfm22b_dev']]],
   ['rx_5fbyte_5fcount',['rx_byte_count',['../structrfm22b__stats.html#a4a173cf22afe7f957dc268d65ab1833c',1,'rfm22b_stats']]],
   ['rx_5fcorrected',['rx_corrected',['../structrfm22b__stats.html#aff132143dc1206acab2aa0972429aaba',1,'rfm22b_stats']]],
@@ -84,8 +82,8 @@ var searchData=
   ['rx_5ffifo_5falmost_5ffull',['rx_fifo_almost_full',['../unionrfm22b__int__status__1.html#aac8be60db67713c4403c7d646b926807',1,'rfm22b_int_status_1']]],
   ['rx_5ffifo_5fempty',['rx_fifo_empty',['../unionrfm22b__device__status__reg.html#a7267f4c20ecb4780cab5e9765618e6b9',1,'rfm22b_device_status_reg']]],
   ['rx_5fgood',['rx_good',['../structrfm22b__stats.html#aa9b17c04f89e42496f776f7cac5b549d',1,'rfm22b_stats']]],
-  ['rx_5fin_5fcb',['rx_in_cb',['../structstreamfs__state.html#ab2807b9e95b06d372e4446ae0637296b',1,'streamfs_state::rx_in_cb()'],['../structpios__rfm22b__dev.html#ac170322ec2f96932e0f060aa68b6bd12',1,'pios_rfm22b_dev::rx_in_cb()'],['../structpios__udp__dev.html#ae0e9d717bbca5d5a4a741632fce620f4',1,'pios_udp_dev::rx_in_cb()']]],
-  ['rx_5fin_5fcontext',['rx_in_context',['../structstreamfs__state.html#a2c43374da66fcc11a78dcda90dfea328',1,'streamfs_state::rx_in_context()'],['../structpios__rfm22b__dev.html#a70fce9f445ae6ec87f5a559b89e82169',1,'pios_rfm22b_dev::rx_in_context()'],['../structpios__udp__dev.html#af28d13bbdcaa66e0bff96aaa9c964584',1,'pios_udp_dev::rx_in_context()']]],
+  ['rx_5fin_5fcb',['rx_in_cb',['../structstreamfs__state.html#ab2807b9e95b06d372e4446ae0637296b',1,'streamfs_state::rx_in_cb()'],['../structpios__rfm22b__dev.html#ac170322ec2f96932e0f060aa68b6bd12',1,'pios_rfm22b_dev::rx_in_cb()']]],
+  ['rx_5fin_5fcontext',['rx_in_context',['../structstreamfs__state.html#a2c43374da66fcc11a78dcda90dfea328',1,'streamfs_state::rx_in_context()'],['../structpios__rfm22b__dev.html#a70fce9f445ae6ec87f5a559b89e82169',1,'pios_rfm22b_dev::rx_in_context()']]],
   ['rx_5finvert',['rx_invert',['../structpios__usart__params.html#a99ffd0c71779e472938f86ad41ae7914',1,'pios_usart_params']]],
   ['rx_5firq',['rx_irq',['../structpios__can__cfg.html#aa41ccbb16d5707fc13b04968891101d5',1,'pios_can_cfg']]],
   ['rx_5fpacket',['rx_packet',['../structpios__rfm22b__dev.html#a5c60f640fba0c1de0dd67072c84752ad',1,'pios_rfm22b_dev']]],
@@ -101,6 +99,5 @@ var searchData=
   ['rxobjectbytes',['rxObjectBytes',['../struct_u_a_v_talk_stats.html#a5adb8d84e7dfe9f3aa1a03a6c057f2fd',1,'UAVTalkStats']]],
   ['rxobjects',['rxObjects',['../struct_u_a_v_talk_stats.html#abe87f216fd1bb8fdb474a61d467d7b41',1,'UAVTalkStats']]],
   ['rxpacketlength',['rxPacketLength',['../struct_u_a_v_talk_input_processor.html#a39d9853a0ea6695927ffe0930225cfbe',1,'UAVTalkInputProcessor']]],
-  ['rxthread',['rxThread',['../structpios__udp__dev.html#ad01df1774a5c4429672469dbad1309e3',1,'pios_udp_dev']]],
   ['rxtx_5fswap',['rxtx_swap',['../structpios__usart__params.html#a1c5c1308080f8f997c4848c55541bca6',1,'pios_usart_params']]]
 ];

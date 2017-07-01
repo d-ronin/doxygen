@@ -2,7 +2,6 @@ var searchData=
 [
   ['e4',['e4',['../polarst_8c.html#a65539685c79a10765a00ee8011840e5d',1,'polarst.c']]],
   ['eastvelintegral',['eastVelIntegral',['../group___fixed_wing_path_follower.html#gac5bce169f17129ca6a0f5fed4faa5b63',1,'fixedwingpathfollower.c']]],
-  ['ecc',['ecc',['../struct_p_h_ack_nack_packet.html#a362bb5e45f310d81a10a2bdfa8108ce8',1,'PHAckNackPacket::ecc()'],['../struct_p_h_ppm_packet.html#a4cd9aaabbc588410a6ccc2d333fc224a',1,'PHPpmPacket::ecc()'],['../struct_p_h_status_packet.html#a6ae4779221b82cd043d0798111010d42',1,'PHStatusPacket::ecc()'],['../struct_p_h_connection_packet.html#a047b7d5ea9d5699d06966d96ef4ccfba',1,'PHConnectionPacket::ecc()']]],
   ['ecefvx',['ecefVX',['../struct_u_b_x___n_a_v___s_o_l.html#aafca9f9204a38e9bb1646848cafcfb38',1,'UBX_NAV_SOL']]],
   ['ecefvy',['ecefVY',['../struct_u_b_x___n_a_v___s_o_l.html#a579b66433d3effbb0ad527acae2f8379',1,'UBX_NAV_SOL']]],
   ['ecefvz',['ecefVZ',['../struct_u_b_x___n_a_v___s_o_l.html#a3bc6214c289d81550f8750382540c2ec',1,'UBX_NAV_SOL']]],

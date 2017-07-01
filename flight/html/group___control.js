@@ -115,5 +115,6 @@ var group___control =
     [ "pios_rcvr_group_map", "group___control.html#ga212c9643d0c95cf1626bc0ec451f399d", null ],
     [ "settings", "group___control.html#ga3895fad079e5367b06ccf8f08c8819a8", null ],
     [ "settings_updated", "group___control.html#gade9d212034a2a804363c79d594d8f4c2", null ],
-    [ "taskHandle", "group___control.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ]
+    [ "taskHandle", "group___control.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ],
+    [ "vehicle_is_armed", "group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classuavobject_1_1_u_a_v_meta_data.html#acac2f46750953cdd2c0f506a7a627971":[5,0,14,0,1],
 "classuavobject_1_1_u_a_v_meta_data.html#ae382d79f856678583a218692c901d843":[5,0,14,0,8],
 "classuavobject_1_1_u_a_v_meta_data.html#aea4f49d7c54e1f183409310cec519484":[5,0,14,0,7],
 "classuavobject_1_1_u_a_v_meta_data.html#afb6f8a63345f7ac6e36b48400534c798":[5,0,14,0,6],
@@ -46,8 +47,6 @@ var NAVTREEINDEX5 =
 "configattitudewidget_8h.html":[6,0,0,0,0,1,8,7],
 "configattitudewidget_8h_source.html":[6,0,0,0,0,1,8,7],
 "configautotunewidget_8cpp.html":[6,0,0,0,0,1,8,8],
-"configautotunewidget_8cpp.html#ga5d0633aecc8c620b14793f34d97cc7aa":[6,0,0,0,0,1,8,8,1],
-"configautotunewidget_8cpp.html#gac2a94c1eaf485484315f7a55c76c8602":[6,0,0,0,0,1,8,8,0],
 "configautotunewidget_8cpp_source.html":[6,0,0,0,0,1,8,8],
 "configautotunewidget_8h.html":[6,0,0,0,0,1,8,9],
 "configautotunewidget_8h_source.html":[6,0,0,0,0,1,8,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "coreconstants_8h.html#ga730ed9f9def50bbb8a79684683085e91":[6,0,0,0,0,1,9,16,81],
 "coreconstants_8h.html#ga73bcb9a176a2f5b7cec3008d5b0f244c":[6,0,0,0,0,1,9,16,5],
 "coreconstants_8h.html#ga74beb1e358e2c4aececb356533024014":[6,0,0,0,0,1,9,16,118],
-"coreconstants_8h.html#ga76371a58c5ff67166c3ad7c968e7cdae":[6,0,0,0,0,1,9,16,62]
+"coreconstants_8h.html#ga76371a58c5ff67166c3ad7c968e7cdae":[6,0,0,0,0,1,9,16,62],
+"coreconstants_8h.html#ga79482639b023a73967e432824a1746da":[6,0,0,0,0,1,9,16,127]
 };

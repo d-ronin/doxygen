@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">436773c</span>
+   &#160;<span id="projectnumber">9c2d965</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -153,59 +153,58 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2fw_2pios__config_8
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac32d1b30633c310fbeea61674a514850">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_WDG</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga88ebbd46d7ad2cb2374e4886c3194b5e">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BL_HELPER</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga878b6c7a5e981959c4f41d654f9342db">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RFM22B</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac92bb3ab8db770e774a9b694a133543c">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PACKET_HANDLER</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga4e02aca6345939b838580d931c080558">   60</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_TARANIS_SPORT</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6be60167c37a490b8240548f86841e7e">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FRSKY_SPORT_TELEMETRY</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaab491daf240fca6cc9e3243ce8e8712d">   63</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_FLASH</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___pip_x.html#gabaec4c77cf420cd9ad55c5f96a10b192">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLASH_INTERNAL</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga83406cd61f77db51d8a91643bd6c2e98">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LOGFS_SETTINGS</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/* Defaults for Logging */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga905b7c29adff0a55966dc2bdd1578a6c">   68</a></span>&#160;<span class="preprocessor">#define LOG_FILENAME                    &quot;PIOS.LOG&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac446a4880b98dfebb3ef3ecf17c064c8">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STARTUP_LOG_ENABLED             1</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* COM Module */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac81ef7244c62ee5ea3a9a637a07ac921">   72</a></span>&#160;<span class="preprocessor">#define GPS_BAUDRATE                    19200</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa9e5897bdc36e3307e909ae30b1a1d88">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEM_BAUDRATE                  19200</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaab710e5cd3144d9426c4f67f09056fa0">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUXUART_ENABLED                 0</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3ad47d88760ca41eeedb977f164871ef">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUXUART_BAUDRATE                19200</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6e7afec1958cbda03ec47ff50da7b749">   78</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING             220</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad3537a058b1f030fb6243c09a2532112">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             40</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___pip_x.html#gae97115db8cae2e29462308550992c153">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          100</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___pip_x.html#gab45890a416f5e2177b434d93d89c362f">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         60</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           85</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga33b8e7ed32bafe7b1e55e18b832854ce">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* Task stack sizes */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___pip_x.html#gadc6ab1b2dabe88a6d0662808bd239fb1">   86</a></span>&#160;<span class="preprocessor">#define PIOS_ACTUATOR_STACK_SIZE       1020</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacda0b08f8b7294ee27529df7040f8501">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_MANUAL_STACK_SIZE          724</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacdaa2240cb59fe868d0755d13b305455">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SYSTEM_STACK_SIZE          460</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga82daaa6e83ed35f5db1a7ef6fcd28b35">   89</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_STABILIZATION_STACK_SIZE   524</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8e7da2e5a9c1811977f1878761b0f74d">   90</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TELEM_STACK_SIZE           528</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8de02d8defc3d19ac2f9ad75fc5441c1">   91</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_EVENTDISPATCHER_STACK_SIZE 520</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga9be33d810838161edf9412377209a4cf">   92</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD 1995998</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/* PIOS Initcall infrastructure */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga24b8202a96fa1ba8b2a366a80e8547b9">   95</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_INITCALL</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">   97</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___pip_x.html#gab5f01b6384683a674f9774810fac97a3">   99</a></span>&#160;<span class="preprocessor">#define PIOS_NO_TELEM_ON_RF</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga5e19cd37534b1559c2e77d5f8527b05c">  100</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_NO_ALARMS</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/* Turn on debugging signals on the telemetry port */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//#define PIOS_RFM22B_DEBUG_ON_TELEM</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___pip_x.html#gadb40bd391933623525454a38f7105a5c">  105</a></span>&#160;<span class="preprocessor">#define NO_SENSORS</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6a6f1dafbc57cfb289e8040a0e56954c">  107</a></span>&#160;<span class="preprocessor">#define PIPXTREME</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga4e02aca6345939b838580d931c080558">   59</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_TARANIS_SPORT</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6be60167c37a490b8240548f86841e7e">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FRSKY_SPORT_TELEMETRY</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaab491daf240fca6cc9e3243ce8e8712d">   62</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_FLASH</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___pip_x.html#gabaec4c77cf420cd9ad55c5f96a10b192">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLASH_INTERNAL</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga83406cd61f77db51d8a91643bd6c2e98">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_LOGFS_SETTINGS</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* Defaults for Logging */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga905b7c29adff0a55966dc2bdd1578a6c">   67</a></span>&#160;<span class="preprocessor">#define LOG_FILENAME                    &quot;PIOS.LOG&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac446a4880b98dfebb3ef3ecf17c064c8">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STARTUP_LOG_ENABLED             1</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* COM Module */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac81ef7244c62ee5ea3a9a637a07ac921">   71</a></span>&#160;<span class="preprocessor">#define GPS_BAUDRATE                    19200</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa9e5897bdc36e3307e909ae30b1a1d88">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEM_BAUDRATE                  19200</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaab710e5cd3144d9426c4f67f09056fa0">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUXUART_ENABLED                 0</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3ad47d88760ca41eeedb977f164871ef">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AUXUART_BAUDRATE                19200</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6e7afec1958cbda03ec47ff50da7b749">   77</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING             220</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad3537a058b1f030fb6243c09a2532112">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             40</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___pip_x.html#gae97115db8cae2e29462308550992c153">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          100</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___pip_x.html#gab45890a416f5e2177b434d93d89c362f">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         60</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           85</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga33b8e7ed32bafe7b1e55e18b832854ce">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* Task stack sizes */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___pip_x.html#gadc6ab1b2dabe88a6d0662808bd239fb1">   85</a></span>&#160;<span class="preprocessor">#define PIOS_ACTUATOR_STACK_SIZE       1020</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacda0b08f8b7294ee27529df7040f8501">   86</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_MANUAL_STACK_SIZE          724</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacdaa2240cb59fe868d0755d13b305455">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SYSTEM_STACK_SIZE          460</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga82daaa6e83ed35f5db1a7ef6fcd28b35">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_STABILIZATION_STACK_SIZE   524</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8e7da2e5a9c1811977f1878761b0f74d">   89</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_TELEM_STACK_SIZE           528</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8de02d8defc3d19ac2f9ad75fc5441c1">   90</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_EVENTDISPATCHER_STACK_SIZE 520</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga9be33d810838161edf9412377209a4cf">   91</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD 1995998</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/* PIOS Initcall infrastructure */</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga24b8202a96fa1ba8b2a366a80e8547b9">   94</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_INITCALL</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaf0466091a2e46f2b6cb9ee5864be3f6d">   96</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___pip_x.html#gab5f01b6384683a674f9774810fac97a3">   98</a></span>&#160;<span class="preprocessor">#define PIOS_NO_TELEM_ON_RF</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga5e19cd37534b1559c2e77d5f8527b05c">   99</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_NO_ALARMS</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/* Turn on debugging signals on the telemetry port */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//#define PIOS_RFM22B_DEBUG_ON_TELEM</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___pip_x.html#gadb40bd391933623525454a38f7105a5c">  104</a></span>&#160;<span class="preprocessor">#define NO_SENSORS</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6a6f1dafbc57cfb289e8040a0e56954c">  106</a></span>&#160;<span class="preprocessor">#define PIPXTREME</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

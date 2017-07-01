@@ -1,14 +1,5 @@
 var searchData=
 [
-  ['packet_5ftype_5fack',['PACKET_TYPE_ACK',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada6add2b6716957bc5e01de78127161c27',1,'packet_handler.h']]],
-  ['packet_5ftype_5fack_5frts',['PACKET_TYPE_ACK_RTS',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada77fe95b0ef25a7e060413a0175ac7747',1,'packet_handler.h']]],
-  ['packet_5ftype_5fcon_5frequest',['PACKET_TYPE_CON_REQUEST',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada287243cb80381ee8175f3fdcb25b69de',1,'packet_handler.h']]],
-  ['packet_5ftype_5fdata',['PACKET_TYPE_DATA',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada2062477b6d9ae02203bcb2adfe989055',1,'packet_handler.h']]],
-  ['packet_5ftype_5fduplicate_5fdata',['PACKET_TYPE_DUPLICATE_DATA',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada3392941f745533dd9f815c1d8e88003a',1,'packet_handler.h']]],
-  ['packet_5ftype_5fnack',['PACKET_TYPE_NACK',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada7b9680cb1a5b7a996450a1c19439779f',1,'packet_handler.h']]],
-  ['packet_5ftype_5fnone',['PACKET_TYPE_NONE',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28ada7bc0b281e9e7e0ef0dfb2ffb37655333',1,'packet_handler.h']]],
-  ['packet_5ftype_5fppm',['PACKET_TYPE_PPM',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28adad3e2cee14551c12b1123a659b4456d04',1,'packet_handler.h']]],
-  ['packet_5ftype_5fstatus',['PACKET_TYPE_STATUS',['../group___tau_labs_libraries.html#ggafc6fe85f3c89dabc11ae43c825fb28adad83911cea88c149916cd281ec9ee5cee',1,'packet_handler.h']]],
   ['pid_5fatt_5fpitch',['PID_ATT_PITCH',['../group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dab1e5a0050d3a9b6ac04aa9f2283ab6cb',1,'stabilization.c']]],
   ['pid_5fatt_5froll',['PID_ATT_ROLL',['../group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2da5f8120c562708e146803407541f87dbb',1,'stabilization.c']]],
   ['pid_5fatt_5fyaw',['PID_ATT_YAW',['../group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2dac81ceeecde5376af34dd127b8143ec3b',1,'stabilization.c']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['utilities',['Utilities',['../group___math.html',1,'']]],
-  ['udp_20driver',['UDP Driver',['../group___p_i_o_s___u_d_p.html',1,'']]],
   ['usart_20functions',['USART Functions',['../group___p_i_o_s___u_s_a_r_t.html',1,'']]],
   ['usb_20functions',['USB Functions',['../group___p_i_o_s___u_s_b.html',1,'']]],
   ['usb_20board_20layer_20functions',['USB board layer functions',['../group___p_i_o_s___u_s_b___b_o_a_r_d.html',1,'']]],

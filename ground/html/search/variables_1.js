@@ -11,6 +11,7 @@ var searchData=
   ['accuracy',['ACCURACY',['../_o_p_plots_8m.html#a9c5b823c1a5307b015de270505577839',1,'OPPlots.m']]],
   ['acked',['acked',['../group___u_a_v_talk_plugin.html#ga27c9898b3e1a5940f0340891578f6ea5',1,'ObjectTransactionInfo']]],
   ['actionid',['ActionID',['../group___g_c_s_control_gadget_plugin.html#ga03093dd46af520daf9f990be1e2fe9c6',1,'buttonSettingsStruct']]],
+  ['actual',['actual',['../group___config_plugin.html#ga0611cc75cb8313f9609c9bb0552f4968',1,'AutotunedValues']]],
   ['addedobjectsinreverseorder',['addedObjectsInReverseOrder',['../class_extension_system_1_1_internal_1_1_i_plugin_private.html#a33f73d57a0b9908d1dfe74e5084c5747',1,'ExtensionSystem::Internal::IPluginPrivate']]],
   ['additional',['additional',['../group___uploader.html#ga01192dcba25e3738ed22520c2b8fba8a',1,'tl_dfu::DFUObject::statusReport']]],
   ['additional_5fstate',['additional_state',['../group___uploader.html#gaa890fcc3152b51503be73cf33c7e3827',1,'msg_status_rep']]],
@@ -24,5 +25,5 @@ var searchData=
   ['arguments',['arguments',['../class_extension_system_1_1_internal_1_1_plugin_manager_private.html#ae4cd1bb87340f771e64431172280191c',1,'ExtensionSystem::Internal::PluginManagerPrivate::arguments()'],['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#ae1681eb5cafc61fa0736e1a75b557c20',1,'ExtensionSystem::Internal::PluginSpecPrivate::arguments()']]],
   ['armingmethods',['armingMethods',['../group___config_plugin.html#ga9c3c32fe62e0b2eb121c8025212f3767',1,'ConfigInputWidget']]],
   ['armname',['armName',['../group___config_plugin.html#ga899b1a7062fb72b20f3af245629ce609',1,'ConfigInputWidget::ArmingMethod']]],
-  ['aux_5fdata_5flen',['aux_data_len',['../group___config_plugin.html#ga857824167cf3f2d5d8c827882030f94c',1,'at_flash_header']]]
+  ['aux_5fdata_5flen',['aux_data_len',['../group___config_plugin.html#ga192624e7cd3713cd76799f2f96c90116',1,'AutotuneBeginningPage::at_flash_header']]]
 ];

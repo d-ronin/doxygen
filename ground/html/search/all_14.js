@@ -92,7 +92,7 @@ var searchData=
   ['tile_2ecpp',['tile.cpp',['../tile_8cpp.html',1,'']]],
   ['tile_2eh',['tile.h',['../tile_8h.html',1,'']]],
   ['tileat',['TileAt',['../group___t_l_map_widget.html#gacf6a186610bc126a6fdd89149f0452e6',1,'internals::TileMatrix']]],
-  ['tilecachequeue',['TileCacheQueue',['../group___t_l_map_widget.html#gaf4b26a2fbfd128dce8b96fa82f4230dd',1,'core::TileCacheQueue::TileCacheQueue()'],['../group___t_l_map_widget.html#ga6bb4a109ac678df86dff7fe8a1a02944',1,'core::TileCacheQueue::tileCacheQueue()']]],
+  ['tilecachequeue',['tileCacheQueue',['../group___t_l_map_widget.html#ga6bb4a109ac678df86dff7fe8a1a02944',1,'core::TileCacheQueue::tileCacheQueue()'],['../group___t_l_map_widget.html#gaf4b26a2fbfd128dce8b96fa82f4230dd',1,'core::TileCacheQueue::TileCacheQueue()']]],
   ['tilecachequeue',['TileCacheQueue',['../classcore_1_1_tile_cache_queue.html',1,'core']]],
   ['tilecachequeue_2ecpp',['tilecachequeue.cpp',['../tilecachequeue_8cpp.html',1,'']]],
   ['tilecachequeue_2eh',['tilecachequeue.h',['../tilecachequeue_8h.html',1,'']]],

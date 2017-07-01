@@ -1,7 +1,7 @@
 var searchData=
 [
   ['damping',['damping',['../group___config_plugin.html#gaff9e6bd56411b261c8313866ed6aaaba',1,'AutotunedValues']]],
-  ['data',['data',['../group___config_plugin.html#ga65e9887fe3c1b8bce0ae444328049ed1',1,'at_flash::data()'],['../group___u_a_v_objects_plugin.html#gadb2f4800bd3b6fb89c0f7c9fb67e49ff',1,'UAVObject::data()'],['../class_u_a_v_object_field.html#ae6a068d71cfd70f70c7e6fb10f217ca5',1,'UAVObjectField::data()'],['../group___uploader.html#ga4c883023e57010b6bdb0c5173620846d',1,'msg_xfer_cont::data()'],['../group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434',1,'data():&#160;uavobjecttemplate.h']]],
+  ['data',['data',['../group___config_plugin.html#ga6367ef4f4eec79ff7772d80fb838338a',1,'AutotunedValues::data()'],['../group___config_plugin.html#gafe927e543e79fe507e9c47c10d3bead1',1,'AutotuneBeginningPage::at_flash::data()'],['../group___u_a_v_objects_plugin.html#gadb2f4800bd3b6fb89c0f7c9fb67e49ff',1,'UAVObject::data()'],['../class_u_a_v_object_field.html#ae6a068d71cfd70f70c7e6fb10f217ca5',1,'UAVObjectField::data()'],['../group___uploader.html#ga4c883023e57010b6bdb0c5173620846d',1,'msg_xfer_cont::data()'],['../group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434',1,'data():&#160;uavobjecttemplate.h']]],
   ['data1',['data1',['../group___usage_stats_plugin.html#gabb0cc50f8f0fc7bb945b402b345dd1d4',1,'widgetActionInfoType']]],
   ['data2',['data2',['../group___usage_stats_plugin.html#ga28ef05478d5c955b864be1e77935af18',1,'widgetActionInfoType']]],
   ['databuffer',['dataBuffer',['../class_log_file.html#ab722d4f0315c5d3cc71b6b5a8b722fa0',1,'LogFile']]],

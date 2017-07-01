@@ -84,7 +84,6 @@ var group___pip_x =
     [ "PIOS_INCLUDE_IAP", "group___pip_x.html#ga3442464c6b8e8869621e4b7103782cec", null ],
     [ "PIOS_INCLUDE_INITCALL", "group___pip_x.html#ga24b8202a96fa1ba8b2a366a80e8547b9", null ],
     [ "PIOS_INCLUDE_LOGFS_SETTINGS", "group___pip_x.html#ga83406cd61f77db51d8a91643bd6c2e98", null ],
-    [ "PIOS_INCLUDE_PACKET_HANDLER", "group___pip_x.html#gac92bb3ab8db770e774a9b694a133543c", null ],
     [ "PIOS_INCLUDE_PPM", "group___pip_x.html#ga17d0ce1de0a34c9da0f230944ff38874", null ],
     [ "PIOS_INCLUDE_RCVR", "group___pip_x.html#gac34deb93cfe0b86c0c3f3fdd297af181", null ],
     [ "PIOS_INCLUDE_RFM22B", "group___pip_x.html#ga878b6c7a5e981959c4f41d654f9342db", null ],

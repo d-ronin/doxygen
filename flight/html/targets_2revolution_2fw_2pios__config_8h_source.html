@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">436773c</span>
+   &#160;<span id="projectnumber">9c2d965</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -176,33 +176,32 @@ $(document).ready(function(){initNavTree('targets_2revolution_2fw_2pios__config_
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//#define PIOS_INCLUDE_DEBUG_CONSOLE</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/* Flags that alter behaviors - mostly to lower resources for CC */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/* Flags that alter behaviors */</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gab0a79b712ecb50093fe0129a7468198f">   84</a></span>&#160;<span class="preprocessor">#define AUTOTUNE_AVERAGING_MODE</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gaabf5c613fb366d3da49a87e7114a09e2">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gaf4039c0d196379cbfb36489300f94ffe">   87</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * This has been calibrated 2015/12/06 using next @ f7f5c5ffe0a2b2fb9da819e32719f6b3bddacf86.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / vtlist.vt_systime * 1000 + 0.5)</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group___revo_mini.html#ga9be33d810838161edf9412377209a4cf">  102</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9870518)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___revo_mini.html#ga9c23f32c100ee25c973b1be91fab56dd">  104</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">  105</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gaabf5c613fb366d3da49a87e7114a09e2">   84</a></span>&#160;<span class="preprocessor">#define SYSTEMMOD_RGBLED_SUPPORT</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gaf4039c0d196379cbfb36489300f94ffe">   86</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* Alarm Thresholds */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * This has been calibrated 2015/12/06 using next @ f7f5c5ffe0a2b2fb9da819e32719f6b3bddacf86.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * Calibration has been done by disabling the init task, breaking into debugger after</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * approximately after 60 seconds, then doing the following math:</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * IDLE_COUNTS_PER_SEC_AT_NO_LOAD = (uint32_t)((double)idleCounter / vtlist.vt_systime * 1000 + 0.5)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * This has to be redone every time the toolchain, toolchain flags or RTOS</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * configuration like number of task priorities or similar changes.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * A change in the cpu load calculation or the idle task handler will invalidate this as well.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___revo_mini.html#ga9be33d810838161edf9412377209a4cf">  101</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD (9870518)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group___revo_mini.html#ga9c23f32c100ee25c973b1be91fab56dd">  103</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___revo_mini.html#gae78ef0099e559f8b4cd423bb2c0f3b5a">  104</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__flight__config_8h_html"><div class="ttname"><a href="pios__flight__config_8h.html">pios_flight_config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

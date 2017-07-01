@@ -8,7 +8,7 @@ var searchData=
   ['s_5freturntoeditor',['S_RETURNTOEDITOR',['../group___core_plugin.html#gab51aa14ec9c9023785bafb4efa396553',1,'Core::Constants']]],
   ['safe_5farea_5fradius_5flist',['safe_area_radius_list',['../group___o_p_map_plugin.html#ga508cdf04246e0731ce2b58e5d72844d6',1,'opmapgadgetwidget.cpp']]],
   ['safe_5fword',['safe_word',['../group___uploader.html#ga709bf6bbf813c1085a651b926b17847d',1,'msg_jump_fw']]],
-  ['sample_5frate',['sample_rate',['../group___config_plugin.html#ga34d1b15406ed0e496c0d99689537878b',1,'at_flash_header']]],
+  ['sample_5frate',['sample_rate',['../group___config_plugin.html#gadcc18063995c141b146089f9c5029f7f',1,'AutotuneBeginningPage::at_flash_header']]],
   ['save',['SAVE',['../group___core_plugin.html#ga86ee3b2c1b2de5786a3f7bc6b5a253e7',1,'Core::Constants']]],
   ['saveall',['SAVEALL',['../group___core_plugin.html#ga79482639b023a73967e432824a1746da',1,'Core::Constants']]],
   ['saveas',['SAVEAS',['../group___core_plugin.html#gaa13d26deceb0015f1a40623ffd6c3e54',1,'Core::Constants']]],

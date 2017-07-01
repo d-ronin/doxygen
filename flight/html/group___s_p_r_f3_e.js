@@ -6,7 +6,6 @@ var group___s_p_r_f3_e =
     [ "cmsis_system.c", "sprf3e_2board-info_2cmsis__system_8c.html", null ],
     [ "pios_board.h", "targets_2sprf3e_2board-info_2pios__board_8h.html", null ],
     [ "AUTOTUNE_AVERAGING_DECIMATION", "group___s_p_r_f3_e.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
-    [ "AUTOTUNE_AVERAGING_MODE", "group___s_p_r_f3_e.html#gab0a79b712ecb50093fe0129a7468198f", null ],
     [ "BOARD_READABLE", "group___s_p_r_f3_e.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___s_p_r_f3_e.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
     [ "BOOTLOADER_PAUSE_DELAY", "group___s_p_r_f3_e.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],

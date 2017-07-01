@@ -37,12 +37,8 @@ var targets_2sparky2_2board_info_2pios__board_8h =
     [ "PIOS_LED_ALARM", "targets_2sparky2_2board-info_2pios__board_8h.html#gae4912a499d71db827918d7908055ce05", null ],
     [ "PIOS_LED_HEARTBEAT", "targets_2sparky2_2board-info_2pios__board_8h.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],
     [ "PIOS_LED_LINK", "targets_2sparky2_2board-info_2pios__board_8h.html#ga221d57f18aee9009fcb322e99be275e2", null ],
-    [ "PIOS_PACKET_HANDLER", "targets_2sparky2_2board-info_2pios__board_8h.html#gafd6d56ae32dbd38102cd44deb4222e00", null ],
     [ "PIOS_PERIPHERAL_APB1_CLOCK", "targets_2sparky2_2board-info_2pios__board_8h.html#ga422d4d808a71d4b756877ac8e2d16255", null ],
     [ "PIOS_PERIPHERAL_APB2_CLOCK", "targets_2sparky2_2board-info_2pios__board_8h.html#gaf6410feddf16870e3e65d6a2631f1f51", null ],
-    [ "PIOS_PH_MAX_CONNECTIONS", "targets_2sparky2_2board-info_2pios__board_8h.html#ga1bc522e73c6468736ee7f031d5582eae", null ],
-    [ "PIOS_PH_MAX_PACKET", "targets_2sparky2_2board-info_2pios__board_8h.html#ga420851914a6fc4599fd6fa40bb65dd89", null ],
-    [ "PIOS_PH_WIN_SIZE", "targets_2sparky2_2board-info_2pios__board_8h.html#ga227252944bdc42d8dc02ad5669ee0f90", null ],
     [ "PIOS_PPM_NUM_INPUTS", "targets_2sparky2_2board-info_2pios__board_8h.html#ga288a8e6f061b1dbd7930b5ffdf805c69", null ],
     [ "PIOS_PWM_NUM_INPUTS", "targets_2sparky2_2board-info_2pios__board_8h.html#ga24c6da05c7d0a33b87b0c66cca0700d6", null ],
     [ "PIOS_RCVR_MAX_CHANNELS", "targets_2sparky2_2board-info_2pios__board_8h.html#gad9504d2174472de2d678814e430678c9", null ],
@@ -72,6 +68,5 @@ var targets_2sparky2_2board_info_2pios__board_8h =
     [ "pios_com_telem_usb_id", "targets_2sparky2_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_vcp_id", "targets_2sparky2_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ],
     [ "pios_i2c_flexiport_adapter_id", "targets_2sparky2_2board-info_2pios__board_8h.html#ga20b68de0b754d943d653d816aad86148", null ],
-    [ "pios_i2c_mag_pressure_adapter_id", "targets_2sparky2_2board-info_2pios__board_8h.html#ga0bc1cddc7bfac02e5a765f1ff09ad29f", null ],
-    [ "pios_packet_handler", "targets_2sparky2_2board-info_2pios__board_8h.html#gab0199d5aedb7be35cb1d6880ee21f8ac", null ]
+    [ "pios_i2c_mag_pressure_adapter_id", "targets_2sparky2_2board-info_2pios__board_8h.html#ga0bc1cddc7bfac02e5a765f1ff09ad29f", null ]
 ];

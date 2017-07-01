@@ -15,7 +15,6 @@ var searchData=
   ['east_5fposition',['EAST_POSITION',['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37a16d8665516d2ff93c39520ff3a7aaa10',1,'vtol_follower_priv.h']]],
   ['east_5fvelocity',['EAST_VELOCITY',['../group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37aedb9ece820ccb3967caa3a880963724e',1,'vtol_follower_priv.h']]],
   ['eastvelintegral',['eastVelIntegral',['../group___fixed_wing_path_follower.html#gac5bce169f17129ca6a0f5fed4faa5b63',1,'fixedwingpathfollower.c']]],
-  ['ecc',['ecc',['../struct_p_h_ack_nack_packet.html#a362bb5e45f310d81a10a2bdfa8108ce8',1,'PHAckNackPacket::ecc()'],['../struct_p_h_ppm_packet.html#a4cd9aaabbc588410a6ccc2d333fc224a',1,'PHPpmPacket::ecc()'],['../struct_p_h_status_packet.html#a6ae4779221b82cd043d0798111010d42',1,'PHStatusPacket::ecc()'],['../struct_p_h_connection_packet.html#a047b7d5ea9d5699d06966d96ef4ccfba',1,'PHConnectionPacket::ecc()']]],
   ['ecc_2eh',['ecc.h',['../ecc_8h.html',1,'']]],
   ['ecefvx',['ecefVX',['../struct_u_b_x___n_a_v___s_o_l.html#aafca9f9204a38e9bb1646848cafcfb38',1,'UBX_NAV_SOL']]],
   ['ecefvy',['ecefVY',['../struct_u_b_x___n_a_v___s_o_l.html#a579b66433d3effbb0ad527acae2f8379',1,'UBX_NAV_SOL']]],

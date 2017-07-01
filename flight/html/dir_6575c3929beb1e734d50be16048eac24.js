@@ -23,6 +23,5 @@ var dir_6575c3929beb1e734d50be16048eac24 =
     [ "pios_sys.c", "posix_2pios__sys_8c.html", "posix_2pios__sys_8c" ],
     [ "pios_tcp.c", "pios__tcp_8c.html", null ],
     [ "pios_thread.c", "posix_2pios__thread_8c.html", "posix_2pios__thread_8c" ],
-    [ "pios_udp.c", "pios__udp_8c.html", null ],
     [ "pios_wdg.c", "posix_2pios__wdg_8c.html", "posix_2pios__wdg_8c" ]
 ];

@@ -13,9 +13,9 @@ var hierarchy =
       [ "Transition", "class_transition.html", null ]
     ] ],
     [ "ConfigInputWidget::ArmingMethod", "struct_config_input_widget_1_1_arming_method.html", null ],
-    [ "at_flash", "structat__flash.html", null ],
-    [ "at_flash_header", "structat__flash__header.html", null ],
-    [ "at_measurement", "structat__measurement.html", null ],
+    [ "AutotuneBeginning", null, [
+      [ "AutotuneBeginningPage", "class_autotune_beginning_page.html", null ]
+    ] ],
     [ "AutotunedValues", "struct_autotuned_values.html", null ],
     [ "AutotuneFinalPage", null, [
       [ "AutotuneFinalPage", "class_autotune_final_page.html", null ]
@@ -739,6 +739,7 @@ var hierarchy =
         [ "VehiclePage", "class_vehicle_page.html", null ]
       ] ],
       [ "AbstractWizardPage", "class_abstract_wizard_page.html", null ],
+      [ "AutotuneBeginningPage", "class_autotune_beginning_page.html", null ],
       [ "AutotuneFinalPage", "class_autotune_final_page.html", null ],
       [ "AutotuneMeasuredPropertiesPage", "class_autotune_measured_properties_page.html", null ],
       [ "AutotuneSlidersPage", "class_autotune_sliders_page.html", null ]

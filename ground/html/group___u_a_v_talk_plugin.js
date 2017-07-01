@@ -23,7 +23,7 @@ var group___u_a_v_talk_plugin =
     [ "Telemetry", "class_telemetry.html", [
       [ "Telemetry", "group___u_a_v_talk_plugin.html#ga6998be3c493d7a742d8f54bcf235e823", null ],
       [ "~Telemetry", "group___u_a_v_talk_plugin.html#ga5d74297211be2d8d48f38e2632c97de8", null ],
-      [ "downloadFile", "group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1", null ],
+      [ "downloadFile", "group___u_a_v_talk_plugin.html#ga5347a793131a7127acde911848fddcc6", null ],
       [ "getStats", "group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402", null ],
       [ "transactionTimeout", "group___u_a_v_talk_plugin.html#gab5d172ba63e07316e086a65c5bcc8d47", null ]
     ] ],
@@ -44,7 +44,7 @@ var group___u_a_v_talk_plugin =
       [ "connected", "group___u_a_v_talk_plugin.html#ga54bec8ecfe469710c7261f567e76c5f0", null ],
       [ "connectedChanged", "group___u_a_v_talk_plugin.html#ga2eceda3264145498ea67e6637f9515f3", null ],
       [ "disconnected", "group___u_a_v_talk_plugin.html#ga61e671949cc2403327617d9c9a372a76", null ],
-      [ "downloadFile", "group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3", null ],
+      [ "downloadFile", "group___u_a_v_talk_plugin.html#gacb4fbfac2085c8d9140c5b1199a53fe7", null ],
       [ "isConnected", "group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98", null ],
       [ "start", "group___u_a_v_talk_plugin.html#ga48c17e83f41b742abc5c234963093171", null ],
       [ "stop", "group___u_a_v_talk_plugin.html#ga59bfea54673b2ab51e9ac1bf3a186718", null ],
@@ -119,8 +119,8 @@ var group___u_a_v_talk_plugin =
       [ "onDeviceConnect", "group___u_a_v_talk_plugin.html#ga496d6211736a7cfd5cee129eb2b8ad95", null ],
       [ "onDeviceDisconnect", "group___u_a_v_talk_plugin.html#ga1ac9b2c0c21d66d603c639183ebcd7db", null ]
     ] ],
-    [ "downloadFile", "group___u_a_v_talk_plugin.html#ga34a5d1ac57fe6d641093dc5de11a61c3", null ],
-    [ "downloadFile", "group___u_a_v_talk_plugin.html#gabff17bb54c5be0f7c9d474ab9ef6a5c1", null ],
+    [ "downloadFile", "group___u_a_v_talk_plugin.html#gacb4fbfac2085c8d9140c5b1199a53fe7", null ],
+    [ "downloadFile", "group___u_a_v_talk_plugin.html#ga5347a793131a7127acde911848fddcc6", null ],
     [ "getStats", "group___u_a_v_talk_plugin.html#gac9f7d49b556190b1b7d4b845b8b23a34", null ],
     [ "getStats", "group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402", null ],
     [ "isConnected", "group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98", null ],
