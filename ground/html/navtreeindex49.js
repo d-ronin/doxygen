@@ -1,5 +1,15 @@
 var NAVTREEINDEX49 =
 {
+"opmapgadgetoptionspage_8h_source.html":[6,0,0,0,0,1,23,15],
+"opmapgadgetwidget_8cpp.html":[6,0,0,0,0,1,23,16],
+"opmapgadgetwidget_8cpp.html#ga42a1c15ba77f6bec7efc5e15cc2d7a6b":[6,0,0,0,0,1,23,16,3],
+"opmapgadgetwidget_8cpp.html#ga508cdf04246e0731ce2b58e5d72844d6":[6,0,0,0,0,1,23,16,1],
+"opmapgadgetwidget_8cpp.html#ga8974b27951316cb97856a384f680d85e":[6,0,0,0,0,1,23,16,2],
+"opmapgadgetwidget_8cpp.html#ga924197d237c4236b05e045cf5b299e51":[6,0,0,0,0,1,23,16,0],
+"opmapgadgetwidget_8cpp_source.html":[6,0,0,0,0,1,23,16],
+"opmapgadgetwidget_8h.html":[6,0,0,0,0,1,23,17],
+"opmapgadgetwidget_8h.html#ga10cb3e7dfbac87e40e00c1a8c76c16e5":[6,0,0,0,0,1,23,17,1],
+"opmapgadgetwidget_8h.html#ga11ae47f39c6685b33aac90d5bc1ce28f":[6,0,0,0,0,1,23,17,0],
 "opmapgadgetwidget_8h.html#gga10cb3e7dfbac87e40e00c1a8c76c16e5abdc1c0b7296fb52149bbda0739034825":[6,0,0,0,0,1,23,17,1,1],
 "opmapgadgetwidget_8h.html#gga10cb3e7dfbac87e40e00c1a8c76c16e5afdcda6e378c8e0a54e928947a5fdede8":[6,0,0,0,0,1,23,17,1,0],
 "opmapgadgetwidget_8h_source.html":[6,0,0,0,0,1,23,17],
@@ -239,15 +249,5 @@ var NAVTREEINDEX49 =
 "radioprobepage_8h_source.html":[6,0,0,0,0,1,28,0,9],
 "rawhid_8cpp.html":[6,0,0,0,0,1,27,0],
 "rawhid_8cpp_source.html":[6,0,0,0,0,1,27,0],
-"rawhid_8h.html":[6,0,0,0,0,1,27,1],
-"rawhid_8h_source.html":[6,0,0,0,0,1,27,1],
-"rawhid__const_8h.html":[6,0,0,0,0,1,27,2],
-"rawhid__const_8h_source.html":[6,0,0,0,0,1,27,2],
-"rawhid__global_8h.html":[6,0,0,0,0,1,27,3],
-"rawhid__global_8h_source.html":[6,0,0,0,0,1,27,3],
-"rawhidplugin_8cpp.html":[6,0,0,0,0,1,27,4],
-"rawhidplugin_8cpp_source.html":[6,0,0,0,0,1,27,4],
-"rawhidplugin_8h.html":[6,0,0,0,0,1,27,5],
-"rawhidplugin_8h_source.html":[6,0,0,0,0,1,27,5],
-"rawtile_8cpp.html":[6,0,0,0,0,0,4,0,27]
+"rawhid_8h.html":[6,0,0,0,0,1,27,1]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX112 =
 {
-"playuavosd_2fw_2splash_8h.html#ga11c0902226e4d67fbe3c03915a5621e2":[5,0,0,4,10,2,3,10],
-"playuavosd_2fw_2splash_8h.html#ga127e3b5d2f72527c170caad3909d7e81":[5,0,0,4,10,2,3,15],
-"playuavosd_2fw_2splash_8h.html#ga1af1755811426df00f4a2077e1bc242c":[5,0,0,4,10,2,3,11],
-"playuavosd_2fw_2splash_8h.html#ga229b7b50677f467fa05b5dc684065cb6":[5,0,0,4,10,2,3,3],
 "playuavosd_2fw_2splash_8h.html#ga45dd334b361ae9c66263597580a95fee":[5,0,0,4,10,2,3,12],
 "playuavosd_2fw_2splash_8h.html#ga4caa6d012da62089a2e424c8e2328e84":[5,0,0,4,10,2,3,14],
 "playuavosd_2fw_2splash_8h.html#ga6af368e6dd1a66ea298c7eb106bf6230":[5,0,0,4,10,2,3,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX112 =
 "quanton_2bl_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,4,11,0,0,0],
 "quanton_2bl_2pios__board_8c_source.html":[5,0,0,4,11,0,0],
 "quanton_2board-info_2board__hw__defs_8c.html":[5,0,0,4,11,1,0],
-"quanton_2board-info_2board__hw__defs_8c.html#ga0b6f7586d1c7a594c67b267ae2a52e76":[5,0,0,4,11,1,0,11]
+"quanton_2board-info_2board__hw__defs_8c.html#ga0b6f7586d1c7a594c67b267ae2a52e76":[5,0,0,4,11,1,0,11],
+"quanton_2board-info_2board__hw__defs_8c.html#ga15c536f8b4345ec80bda11df036c165f":[5,0,0,4,11,1,0,8],
+"quanton_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,4,11,1,0,15],
+"quanton_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03":[5,0,0,4,11,1,0,14],
+"quanton_2board-info_2board__hw__defs_8c.html#ga31bbd3d88fb4228b85462211fd70a60c":[5,0,0,4,11,1,0,12]
 };

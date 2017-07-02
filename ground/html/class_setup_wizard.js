@@ -1,6 +1,7 @@
 var class_setup_wizard =
 [
-    [ "SetupWizard", "group___setup_wizard.html#ga8f260c27631b936af1a8e2a9475ae2f0", null ],
+    [ "SetupWizard", "group___setup_wizard.html#ga16bfb0fbe7980049081a56b5641062a4", null ],
+    [ "boardIgnored", "group___setup_wizard.html#ga80c35bf2a3dfaef1a6dad29722214751", null ],
     [ "getActuatorSettings", "group___setup_wizard.html#ga47a0be6b075d0075a7ae935c7fe5deed", null ],
     [ "getCalibrationBias", "group___setup_wizard.html#ga721e432d7d0704ca1db897d7516fdc89", null ],
     [ "getConnectionManager", "group___setup_wizard.html#gadf5243c8122542982d190277812b885b", null ],

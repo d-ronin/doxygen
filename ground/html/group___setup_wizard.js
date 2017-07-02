@@ -118,7 +118,8 @@ var group___setup_wizard =
       [ "validatePage", "group___setup_wizard.html#gacce2096fe1c6fff28ae7ff25dfe75e37", null ]
     ] ],
     [ "SetupWizard", "class_setup_wizard.html", [
-      [ "SetupWizard", "group___setup_wizard.html#ga8f260c27631b936af1a8e2a9475ae2f0", null ],
+      [ "SetupWizard", "group___setup_wizard.html#ga16bfb0fbe7980049081a56b5641062a4", null ],
+      [ "boardIgnored", "group___setup_wizard.html#ga80c35bf2a3dfaef1a6dad29722214751", null ],
       [ "getActuatorSettings", "group___setup_wizard.html#ga47a0be6b075d0075a7ae935c7fe5deed", null ],
       [ "getCalibrationBias", "group___setup_wizard.html#ga721e432d7d0704ca1db897d7516fdc89", null ],
       [ "getConnectionManager", "group___setup_wizard.html#gadf5243c8122542982d190277812b885b", null ],
@@ -415,7 +416,7 @@ var group___setup_wizard =
     [ "setRestartNeeded", "group___setup_wizard.html#ga4e9d50c7eb26a93d5ba6edc45213e071", null ],
     [ "setupHardwareSettings", "group___setup_wizard.html#ga2762da9776a1c2608786cb7b1ff6ca6c", null ],
     [ "setupVehicle", "group___setup_wizard.html#gaa307534a6b38e5b7e67060bc8d381b09", null ],
-    [ "SetupWizard", "group___setup_wizard.html#ga8f260c27631b936af1a8e2a9475ae2f0", null ],
+    [ "SetupWizard", "group___setup_wizard.html#ga16bfb0fbe7980049081a56b5641062a4", null ],
     [ "setVehicleSubType", "group___setup_wizard.html#gaceb7a4422958869c876dd43842e6960c", null ],
     [ "setVehicleType", "group___setup_wizard.html#gad78d95f5556264d0ceb480487ffadfb8", null ],
     [ "showEvent", "group___setup_wizard.html#gaccfd0563f0faafb93bacafa8cf873035", null ],
@@ -473,6 +474,7 @@ var group___setup_wizard =
     [ "throttle2", "group___setup_wizard.html#gaaa198e94e22ad3c7474bef8972c5e73d", null ],
     [ "type", "group___setup_wizard.html#gae266726733ea9753d4b40ababc4ed7dd", null ],
     [ "yaw", "group___setup_wizard.html#ga16a724da7162ceb2c56798d864dac807", null ],
+    [ "boardIgnored", "group___setup_wizard.html#ga80c35bf2a3dfaef1a6dad29722214751", null ],
     [ "saveProgress", "group___setup_wizard.html#ga7ec52f13c4dee3a474698106c2ca3bf4", null ],
     [ "customBackClicked", "group___setup_wizard.html#ga57d81c161a6f2b1abc782e81a4707fcc", null ],
     [ "setChannelOutputValue", "group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519", null ],

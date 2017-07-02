@@ -1,11 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gab98ad41f0f40e6edd46ea98d46edb0af":[5,0,0,4,10,1,2,4],
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gaba34640b239b01884e1a4b0b3fe16c31":[5,0,0,4,10,1,2,34],
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gabdefeb92517c08b2db19b764db941de9":[5,0,0,4,10,1,2,35],
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gabed34fab9b2b2c4c92ecc825c75c9244":[5,0,0,4,10,1,2,24],
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gac040f05fa048688ee0269c2768698a14":[5,0,0,4,10,1,2,28],
-"targets_2playuavosd_2board-info_2pios__board_8h.html#gac2d33ccaf63f5d5b66552b95426c0137":[5,0,0,4,10,1,2,2],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[5,0,0,4,10,1,2,25],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#gacc9b34fbd61773571dbe45ac3a3ca081":[5,0,0,4,10,1,2,11],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#gadbe2bc366ea08ebb85a0c8ca4c7800e0":[5,0,0,4,10,1,2,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX130 =
 "targets_2revolution_2fw_2pios__config_8h.html#ga331308be9fde6166b4039a2966ce2b50":[5,0,0,4,12,2,2,14],
 "targets_2revolution_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e":[5,0,0,4,12,2,2,4],
 "targets_2revolution_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[5,0,0,4,12,2,2,11],
-"targets_2revolution_2fw_2pios__config_8h.html#ga66ca692c3616d468a144a072ea6ddbd6":[5,0,0,4,12,2,2,17]
+"targets_2revolution_2fw_2pios__config_8h.html#ga66ca692c3616d468a144a072ea6ddbd6":[5,0,0,4,12,2,2,17],
+"targets_2revolution_2fw_2pios__config_8h.html#ga7448277b4e8b562edab90b017696189b":[5,0,0,4,12,2,2,18],
+"targets_2revolution_2fw_2pios__config_8h.html#ga878b6c7a5e981959c4f41d654f9342db":[5,0,0,4,12,2,2,20],
+"targets_2revolution_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847":[5,0,0,4,12,2,2,3],
+"targets_2revolution_2fw_2pios__config_8h.html#ga973471206d11c2565dc93487f965c6e9":[5,0,0,4,12,2,2,12],
+"targets_2revolution_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,4,12,2,2,1],
+"targets_2revolution_2fw_2pios__config_8h.html#ga9c23f32c100ee25c973b1be91fab56dd":[5,0,0,4,12,2,2,10]
 };

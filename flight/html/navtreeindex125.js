@@ -1,9 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"structpios__spi__cfg.html#adbc1199b6671cd7ab6856b5d76038020":[2,0,63,3,1],
-"structpios__spi__dev.html":[2,0,63,2],
-"structpios__spi__dev.html#a0596ad5ad91546f4968764d5255c48a6":[2,0,63,2,3],
-"structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021":[2,0,63,2,4],
 "structpios__spi__dev.html#a7479cefc1a7a8767ac6f9bdaf88a0aa0":[2,0,63,2,1],
 "structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3":[2,0,63,2,2],
 "structpios__spi__dev.html#acec840247ab3fef68667c277ca26c868":[2,0,63,2,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX125 =
 "structusb__cdc__union__func__desc.html":[2,0,70,10],
 "structusb__config__hid__cdc.html":[2,0,41,5],
 "structusb__config__hid__only.html":[2,0,41,6],
-"structusb__configuration__desc.html":[2,0,70,1]
+"structusb__configuration__desc.html":[2,0,70,1],
+"structusb__device__desc.html":[2,0,70,0],
+"structusb__endpoint__desc.html":[2,0,70,5],
+"structusb__ep__entry.html":[2,0,72,4],
+"structusb__hid__desc.html":[2,0,70,4]
 };

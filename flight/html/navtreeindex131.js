@@ -1,11 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"targets_2revolution_2fw_2pios__config_8h.html#ga7448277b4e8b562edab90b017696189b":[5,0,0,4,12,2,2,18],
-"targets_2revolution_2fw_2pios__config_8h.html#ga878b6c7a5e981959c4f41d654f9342db":[5,0,0,4,12,2,2,20],
-"targets_2revolution_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847":[5,0,0,4,12,2,2,3],
-"targets_2revolution_2fw_2pios__config_8h.html#ga973471206d11c2565dc93487f965c6e9":[5,0,0,4,12,2,2,12],
-"targets_2revolution_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,4,12,2,2,1],
-"targets_2revolution_2fw_2pios__config_8h.html#ga9c23f32c100ee25c973b1be91fab56dd":[5,0,0,4,12,2,2,10],
 "targets_2revolution_2fw_2pios__config_8h.html#gaab84a3ad4a8e40da601259fa963168ff":[5,0,0,4,12,2,2,2],
 "targets_2revolution_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2":[5,0,0,4,12,2,2,27],
 "targets_2revolution_2fw_2pios__config_8h.html#gab48a97d4d9a65fbadfd195d283bc5fbf":[5,0,0,4,12,2,2,15],
@@ -249,5 +243,11 @@ var NAVTREEINDEX131 =
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga8f592a960a21018006bd68f30692ab5b":[5,0,0,4,16,1,2,46],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga95088ad43f3c3f632600c83686b1a583":[5,0,0,4,16,1,2,59],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga9dddfa55bb34063f55fe36728f035954":[5,0,0,4,16,1,2,0],
-"targets_2sparky2_2board-info_2pios__board_8h.html#gaa2230ce045fa6f32269efa3202144ffd":[5,0,0,4,16,1,2,5]
+"targets_2sparky2_2board-info_2pios__board_8h.html#gaa2230ce045fa6f32269efa3202144ffd":[5,0,0,4,16,1,2,5],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db":[5,0,0,4,16,1,2,66],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gaaf11e7ae7e32bacf0180ba8d6f144488":[5,0,0,4,16,1,2,43],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be":[5,0,0,4,16,1,2,29],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gab5089b27d40c7040560009d8b82a7f67":[5,0,0,4,16,1,2,14],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gab5f09e1f881124b5131fd88fc013fddd":[5,0,0,4,16,1,2,30],
+"targets_2sparky2_2board-info_2pios__board_8h.html#gab98ad41f0f40e6edd46ea98d46edb0af":[5,0,0,4,16,1,2,6]
 };

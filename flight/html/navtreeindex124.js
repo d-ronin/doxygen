@@ -1,9 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"structpios__dsm__cfg.html#aa476519b30ef3d42a0abba5ce8498805":[2,0,10,3,0],
-"structpios__dsm__dev.html":[4,0,150],
-"structpios__dsm__dev.html#a03ca4dcf548ecee1772b76d3eefad122":[4,0,150,3],
-"structpios__dsm__dev.html#a3c3f445f03d2131c39f2de7266215c24":[4,0,150,0],
 "structpios__dsm__dev.html#a6b05524f19f5b20d126b467f76828002":[4,0,150,2],
 "structpios__dsm__dev.html#af1374f09784777b8222cd59d6c41ba1f":[4,0,150,1],
 "structpios__dsm__state.html":[4,0,151],
@@ -138,14 +134,14 @@ var NAVTREEINDEX124 =
 "structpios__rcvr__driver.html":[2,0,60,2],
 "structpios__rcvr__driver.html#a9bde8d770ce562c177d3a8350866eae3":[2,0,60,2,0],
 "structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305":[2,0,60,2,1],
-"structpios__re1fpga__cfg.html":[2,7,2,8],
 "structpios__re1fpga__cfg.html":[2,8,4,8],
+"structpios__re1fpga__cfg.html":[2,7,2,8],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,8,4,8,1],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,7,2,8,1],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,8,4,8,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,7,2,8,3],
-"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,8,4,8,2],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,7,2,8,2],
+"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,8,4,8,2],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,7,2,8,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,8,4,8,0],
 "structpios__recursive__mutex.html":[2,0,30,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX124 =
 "structpios__spi__cfg.html#ac804df72ee895e7482167ac5452b31aa":[2,0,63,3,2],
 "structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691":[2,0,63,3,4],
 "structpios__spi__cfg.html#ad45aed059de6082ab6c257da0018d867":[2,0,63,3,7],
-"structpios__spi__cfg.html#adaf88353246da685e0f82e927d72eaed":[2,0,63,3,3]
+"structpios__spi__cfg.html#adaf88353246da685e0f82e927d72eaed":[2,0,63,3,3],
+"structpios__spi__cfg.html#adbc1199b6671cd7ab6856b5d76038020":[2,0,63,3,1],
+"structpios__spi__dev.html":[2,0,63,2],
+"structpios__spi__dev.html#a0596ad5ad91546f4968764d5255c48a6":[2,0,63,2,3],
+"structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021":[2,0,63,2,4]
 };

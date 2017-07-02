@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9c2d965</span>
+   &#160;<span id="projectnumber">955c265</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,6 +158,12 @@ UAVObject::Metadata &gt;&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="separator:ga11c8171d7e380e699b4edf9b6860a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c07eaa903b38480c6eb46b1a312f66e"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_util_plugin.html#ga1c07eaa903b38480c6eb46b1a312f66e">UAVObjectUtilManager::getBoardDescription</a> ()</td></tr>
 <tr class="separator:ga1c07eaa903b38480c6eb46b1a312f66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9828fb09f3b09d6c04e239f6c011575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_util_plugin.html#gab9828fb09f3b09d6c04e239f6c011575">UAVObjectUtilManager::firmwareHashMatchesGcs</a> ()</td></tr>
+<tr class="memdesc:gab9828fb09f3b09d6c04e239f6c011575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if firmware version hash matches GCS version hash.  <a href="#gab9828fb09f3b09d6c04e239f6c011575">More...</a><br/></td></tr>
+<tr class="separator:gab9828fb09f3b09d6c04e239f6c011575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98f67e9aff5a83ea40d1e51019cad9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_object_util_plugin.html#gac98f67e9aff5a83ea40d1e51019cad9f">UAVObjectUtilManager::boardConfigured</a> ()</td></tr>
+<tr class="memdesc:gac98f67e9aff5a83ea40d1e51019cad9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has been configured for flight The heuristic is whether one or more actuators are configured for non-zero output.  <a href="#gac98f67e9aff5a83ea40d1e51019cad9f">More...</a><br/></td></tr>
+<tr class="separator:gac98f67e9aff5a83ea40d1e51019cad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -185,6 +191,26 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The UAVUObjectUtil GCS plugin. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gac98f67e9aff5a83ea40d1e51019cad9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UAVObjectUtilManager::boardConfigured </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the board has been configured for flight The heuristic is whether one or more actuators are configured for non-zero output. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if not configured, true otherwise </dd></dl>
+
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00757">757</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gae920502ccf0fd693241d0d4b93dfc535"></a>
 <div class="memitem">
 <div class="memproto">
@@ -219,6 +245,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gab9828fb09f3b09d6c04e239f6c011575"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UAVObjectUtilManager::firmwareHashMatchesGcs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if firmware version hash matches GCS version hash. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if version doesn't match, true otherwise </dd></dl>
+
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00747">747</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga11c8171d7e380e699b4edf9b6860a236"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +279,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the UAV Board CPU Serial Number, for anyone interested. Return format is a byte array </p>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00524">524</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00525">525</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +297,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the UAV Board Description, for anyone interested. </p>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00544">544</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00545">545</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +316,7 @@ Variables</h2></td></tr>
 <p>Get the UAV Board model, for anyone interested. Return format is: (Board Type &lt;&lt; 8) + BoardRevision.</p>
 <p>NOTE: Should get deprecated as a public method now, in favour of getBoardType and subsequent board capability queries. </p>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00493">493</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00494">494</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +342,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Helper function that makes sure FirmwareIAP is updated and then returns the data </p>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00474">474</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00475">475</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +416,7 @@ Variables</h2></td></tr>
 <p><a class="el" href="group___u_a_v_object_util_plugin.html#ga1bc82b9cb256ba0c3974bab7489aba4a" title="UAVObjectUtilManager::readAllNonSettingsMetadata Convenience function for calling readMetadata...">UAVObjectUtilManager::readAllNonSettingsMetadata</a> Convenience function for calling readMetadata. </p>
 <dl class="section return"><dt>Returns</dt><dd>QMap containing list of all requested UAVO metaadata </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00293">293</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00294">294</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +443,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>QMap containing list of all requested UAVO metaadata </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00304">304</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00305">305</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +463,7 @@ Variables</h2></td></tr>
 <p>UAVObjectUtilManager::resetMetadata Resets all metadata to defaults (from XML definitions) </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00413">413</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00414">414</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -451,7 +497,7 @@ Variables</h2></td></tr>
 <li>Once the objectPersistence UAVO is updated, the board will in turn update it again, once the operation is completed. We need therefore to listen to updates on the objectPersistence object, and check the "Operation" field, which should be set to "completed", or "error". </li>
 </ul>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00110">110</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00111">111</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +524,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00345">345</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00346">346</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +562,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00361">361</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobjectutilmanager_8cpp_source.html#l00362">362</a> of file <a class="el" href="uavobjectutilmanager_8cpp_source.html">uavobjectutilmanager.cpp</a>.</p>
 
 </div>
 </div>

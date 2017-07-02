@@ -1,9 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"structusb__device__desc.html":[2,0,70,0],
-"structusb__endpoint__desc.html":[2,0,70,5],
-"structusb__ep__entry.html":[2,0,72,4],
-"structusb__hid__desc.html":[2,0,70,4],
 "structusb__if__entry.html":[2,0,72,3],
 "structusb__interface__association__desc.html":[2,0,70,2],
 "structusb__interface__desc.html":[2,0,70,3],
@@ -238,8 +234,8 @@ var NAVTREEINDEX126 =
 "targets_2brain_2board-info_2pios__board_8h.html#gaa2230ce045fa6f32269efa3202144ffd":[5,0,0,4,2,1,2,2],
 "targets_2brain_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db":[5,0,0,4,2,1,2,60],
 "targets_2brain_2board-info_2pios__board_8h.html#gaaf11e7ae7e32bacf0180ba8d6f144488":[5,0,0,4,2,1,2,40],
-"targets_2brain_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be":[5,0,0,4,2,1,2,25],
 "targets_2brain_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be":[5,0,0,4,2,1,2,24],
+"targets_2brain_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be":[5,0,0,4,2,1,2,25],
 "targets_2brain_2board-info_2pios__board_8h.html#gab5089b27d40c7040560009d8b82a7f67":[5,0,0,4,2,1,2,10],
 "targets_2brain_2board-info_2pios__board_8h.html#gab5f09e1f881124b5131fd88fc013fddd":[5,0,0,4,2,1,2,26],
 "targets_2brain_2board-info_2pios__board_8h.html#gab98ad41f0f40e6edd46ea98d46edb0af":[5,0,0,4,2,1,2,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX126 =
 "targets_2brain_2board-info_2pios__board_8h.html#gabf39f1bc59b5af7e8f138bb394770300":[5,0,0,4,2,1,2,19],
 "targets_2brain_2board-info_2pios__board_8h.html#gac040f05fa048688ee0269c2768698a14":[5,0,0,4,2,1,2,48],
 "targets_2brain_2board-info_2pios__board_8h.html#gac6f2f934014b1b5a79f6a26cdd75e6ca":[5,0,0,4,2,1,2,44],
-"targets_2brain_2board-info_2pios__board_8h.html#gaca770eaaaa3f1a7e1d64128a50e5680f":[5,0,0,4,2,1,2,57]
+"targets_2brain_2board-info_2pios__board_8h.html#gaca770eaaaa3f1a7e1d64128a50e5680f":[5,0,0,4,2,1,2,57],
+"targets_2brain_2board-info_2pios__board_8h.html#gacc9b34fbd61773571dbe45ac3a3ca081":[5,0,0,4,2,1,2,12],
+"targets_2brain_2board-info_2pios__board_8h.html#gacd240b3acb49442511a220647c7d2e4f":[5,0,0,4,2,1,2,8],
+"targets_2brain_2board-info_2pios__board_8h.html#gad59135d54dcccdf2854a3b39fb0494f5":[5,0,0,4,2,1,2,21],
+"targets_2brain_2board-info_2pios__board_8h.html#gad6409f51ab61c676f1a82e4d50b1fd68":[5,0,0,4,2,1,2,13]
 };

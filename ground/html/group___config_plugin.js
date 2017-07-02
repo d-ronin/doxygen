@@ -265,7 +265,9 @@ var group___config_plugin =
       [ "~ConfigOutputWidget", "group___config_plugin.html#ga583ddecf4689ec9d73a39ac36d47beb5", null ],
       [ "enableControls", "group___config_plugin.html#ga8c6d4684111bd4a10d4940a803faf852", null ]
     ] ],
-    [ "ConfigPlugin", "class_config_plugin.html", null ],
+    [ "ConfigPlugin", "class_config_plugin.html", [
+      [ "launchSetupWizard", "group___config_plugin.html#gaef5fa3097080a8e3cd73cbe423ac2570", null ]
+    ] ],
     [ "ConfigStabilizationWidget", "class_config_stabilization_widget.html", [
       [ "ConfigStabilizationWidget", "group___config_plugin.html#ga7ede076de26384e87d8b8357b391c0b6", null ],
       [ "~ConfigStabilizationWidget", "group___config_plugin.html#gaeca64ce80c3529dc40b452e3bcef2ffd", null ]
@@ -745,6 +747,7 @@ var group___config_plugin =
     [ "channelChanged", "group___config_plugin.html#gabf138ec695ffe189e33d200b031e2687", null ],
     [ "configurationChanged", "group___config_plugin.html#ga716e8f2fab4b0afb5b3c2df16b199259", null ],
     [ "formChanged", "group___config_plugin.html#gaa777808eac827fbf95642188024fc667", null ],
+    [ "launchSetupWizard", "group___config_plugin.html#gaef5fa3097080a8e3cd73cbe423ac2570", null ],
     [ "ValueChanged", "group___config_plugin.html#ga71be1aadf5a0d023bda52f505cf7306f", null ],
     [ "configureTempCurves", "group___config_plugin.html#ga7f1864654eed2d90d8bb5949c9249454", null ],
     [ "deferredLoader", "group___config_plugin.html#ga7a02d30673e6554aa85ef3f4303d5ec0", null ],

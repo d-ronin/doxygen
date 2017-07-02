@@ -15,8 +15,10 @@ var group___u_a_v_object_util_plugin =
       [ "userDefined", "group___u_a_v_object_util_plugin.html#ga48e724f021e815c98e2143dd6df1695b", null ]
     ] ],
     [ "UAVObjectUtilPlugin", "class_u_a_v_object_util_plugin.html", null ],
+    [ "boardConfigured", "group___u_a_v_object_util_plugin.html#gac98f67e9aff5a83ea40d1e51019cad9f", null ],
     [ "boardID", "group___u_a_v_object_util_plugin.html#gae920502ccf0fd693241d0d4b93dfc535", null ],
     [ "deviceDescriptorStruct", "group___u_a_v_object_util_plugin.html#ga09cd541275c17c51873b51573cacbb5d", null ],
+    [ "firmwareHashMatchesGcs", "group___u_a_v_object_util_plugin.html#gab9828fb09f3b09d6c04e239f6c011575", null ],
     [ "getBoardCPUSerial", "group___u_a_v_object_util_plugin.html#ga11c8171d7e380e699b4edf9b6860a236", null ],
     [ "getBoardDescription", "group___u_a_v_object_util_plugin.html#ga1c07eaa903b38480c6eb46b1a312f66e", null ],
     [ "getBoardModel", "group___u_a_v_object_util_plugin.html#ga45c8f562def61c9273af2b243d981114", null ],

@@ -7,7 +7,6 @@ var targets_2brainre1_2fw_2pios__config_8h =
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2brainre1_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2brainre1_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
     [ "OSD_USE_BRAINFPV_LOGO", "targets_2brainre1_2fw_2pios__config_8h.html#gad621ac8b28786134f3c5f833f796201b", null ],
-    [ "PIOS_GPS_SETS_HOMELOCATION", "targets_2brainre1_2fw_2pios__config_8h.html#ga05d142ee6019a1a7637bcd4be7c37f7e", null ],
     [ "PIOS_INCLUDE_BMI160", "targets_2brainre1_2fw_2pios__config_8h.html#ga1e15b364af56c864f6214ade28ffdfc4", null ],
     [ "PIOS_INCLUDE_BMP280", "targets_2brainre1_2fw_2pios__config_8h.html#ga401441fde64a74c578c83d2e616da605", null ],
     [ "PIOS_INCLUDE_DEBUG_CONSOLE", "targets_2brainre1_2fw_2pios__config_8h.html#gaf0466091a2e46f2b6cb9ee5864be3f6d", null ],

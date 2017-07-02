@@ -1,9 +1,5 @@
 var NAVTREEINDEX119 =
 {
-"sprf3e_2fw_2mcuconf_8h.html#ga0e5267b0f1122de3238914c8299877b4":[5,0,0,4,17,2,0,112],
-"sprf3e_2fw_2mcuconf_8h.html#ga11ecef34dc3af18a62f81e90b34dde00":[5,0,0,4,17,2,0,60],
-"sprf3e_2fw_2mcuconf_8h.html#ga12385bdf4411e5e3f9df2d0fc03f9873":[5,0,0,4,17,2,0,19],
-"sprf3e_2fw_2mcuconf_8h.html#ga13e83c85f2c204e9302199f07dfc982e":[5,0,0,4,17,2,0,39],
 "sprf3e_2fw_2mcuconf_8h.html#ga185fbb756bdb2d64582625c10ebff0b8":[5,0,0,4,17,2,0,111],
 "sprf3e_2fw_2mcuconf_8h.html#ga18db0548b32c7d9b8bc4448c670bfd1b":[5,0,0,4,17,2,0,48],
 "sprf3e_2fw_2mcuconf_8h.html#ga1b1fc49ad496637c0d24c274c6c17c01":[5,0,0,4,17,2,0,43],
@@ -233,10 +229,10 @@ var NAVTREEINDEX119 =
 "struct____attribute____.html":[2,1,17],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,1,17,19],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,5,31,3,19],
-"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,5,31,3,4],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,1,17,4],
-"struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,1,17,7],
+"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,5,31,3,4],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,5,31,3,7],
+"struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,1,17,7],
 "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,1,17,10],
 "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,5,31,3,10],
 "struct__msp__pid__item.html":[2,4,0,17],
@@ -249,5 +245,9 @@ var NAVTREEINDEX119 =
 "struct__msp__servo__conf__item.html#a8e6cd54d99bfd18dcfa0a3f4115fd5b2":[2,4,0,30,1],
 "struct__msp__servo__conf__item.html#ae2d468898de8ea337bd259ee7173e734":[2,4,0,30,3],
 "struct_air_parameters.html":[2,3,1,0],
-"struct_camera_stab__data.html":[2,5,6,2]
+"struct_camera_stab__data.html":[2,5,6,2],
+"struct_camera_stab__data.html#a0e9b6f63782d0f88c8c65fa7e7ae9652":[2,5,6,2,4],
+"struct_camera_stab__data.html#a12d1301664f95d70a1773cac5bc7b467":[2,5,6,2,3],
+"struct_camera_stab__data.html#a17866099037f7d0125199c75ce0ebd9c":[2,5,6,2,1],
+"struct_camera_stab__data.html#a647c588eedcb8701c93271fd0b67a537":[2,5,6,2,6]
 };

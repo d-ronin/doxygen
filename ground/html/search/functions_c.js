@@ -6,6 +6,7 @@ var searchData=
   ['languagetypes',['LanguageTypes',['../group___t_l_map_widget.html#ga28c4df400106ab046111295c18abfa28',1,'mapcontrol::Helper']]],
   ['lat',['Lat',['../group___t_l_map_widget.html#gacf58e663626e5a88876d68937505dc64',1,'internals::PointLatLng::Lat()'],['../group___t_l_map_widget.html#ga240d0cc702027ee4199ed6b4d9d7d91f',1,'internals::RectLatLng::Lat()']]],
   ['latitude',['latitude',['../group___o_p_map_plugin.html#gaa2e49a8d2ff144343b4467f078374b0a',1,'OPMapGadgetConfiguration']]],
+  ['launchsetupwizard',['launchSetupWizard',['../group___config_plugin.html#gaef5fa3097080a8e3cd73cbe423ac2570',1,'ConfigPlugin']]],
   ['left',['Left',['../group___t_l_map_widget.html#ga63b6483e8a88de2d85d97e8d97477133',1,'internals::Rectangle::Left()'],['../group___t_l_map_widget.html#gaad643d7228be938282ad2c56a98cbc71',1,'internals::RectLatLng::Left()']]],
   ['leftstickclicked',['leftStickClicked',['../group___g_c_s_control_gadget_plugin.html#ga04d9e7c1a62eff3012500caccbde66d8',1,'GCSControlGadgetWidget']]],
   ['legend',['legend',['../_o_p_plots_8m.html#acc66d65ee6dadbb2f185aed799ac4ff9',1,'legend(s1, s2, s3, s4):&#160;OPPlots.m'],['../_o_p_plots_8m.html#a2bd30f1401cbcf974221dcaaa67fd6fd',1,'legend(s1, s2):&#160;OPPlots.m']]],

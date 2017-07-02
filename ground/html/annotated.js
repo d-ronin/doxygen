@@ -73,7 +73,7 @@ var annotated =
     [ "ConfigMultiRotorWidget", "class_config_multi_rotor_widget.html", "class_config_multi_rotor_widget" ],
     [ "ConfigOsdWidget", "class_config_osd_widget.html", "class_config_osd_widget" ],
     [ "ConfigOutputWidget", "class_config_output_widget.html", "class_config_output_widget" ],
-    [ "ConfigPlugin", "class_config_plugin.html", null ],
+    [ "ConfigPlugin", "class_config_plugin.html", "class_config_plugin" ],
     [ "ConfigStabilizationWidget", "class_config_stabilization_widget.html", "class_config_stabilization_widget" ],
     [ "ConfigTaskWidget", "class_config_task_widget.html", "class_config_task_widget" ],
     [ "ConfigTxPIDWidget", "class_config_tx_p_i_d_widget.html", "class_config_tx_p_i_d_widget" ],

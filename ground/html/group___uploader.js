@@ -116,6 +116,7 @@ var group___uploader =
     [ "UploaderGadgetWidget", "classuploader_1_1_uploader_gadget_widget.html", [
       [ "UploaderGadgetWidget", "group___uploader.html#ga7065a066176fac2b996efaea8fc29a36", null ],
       [ "~UploaderGadgetWidget", "group___uploader.html#ga81ab4c8e328f917680b38093e9c69e6c", null ],
+      [ "active", "group___uploader.html#ga5040dcbf920da570c74a486743231d5d", null ],
       [ "enteredLoader", "group___uploader.html#ga87d448f5964c57b1342f16f75bedc721", null ],
       [ "newBoardSeen", "group___uploader.html#ga39018319f1ee8c5732861b209b79e747", null ]
     ] ],
@@ -241,6 +242,7 @@ var group___uploader =
     [ "uploadingStarting", "group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4ae7aaa0c713c851d5e0d378e90ea7b23a", null ],
     [ "wrong_packet_received", "group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4acec774d3aa736bee25da34c35146dd47", null ],
     [ "__attribute__", "group___uploader.html#ga88d6351e81fa254cec37b8a9a1353401", null ],
+    [ "active", "group___uploader.html#ga5040dcbf920da570c74a486743231d5d", null ],
     [ "CloseBootloaderComs", "group___uploader.html#ga6cb30f71bfc2f1dd1b4338787e6786aa", null ],
     [ "closeEvent", "group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87", null ],
     [ "CRCFromQBArray", "group___uploader.html#ga8b3213586813e0e852bd8e8460f02fc0", null ],
