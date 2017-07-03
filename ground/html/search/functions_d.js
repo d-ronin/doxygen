@@ -41,7 +41,7 @@ var searchData=
   ['min',['min',['../group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a',1,'OutputChannelForm']]],
   ['minbootloaderversion',['minBootLoaderVersion',['../group___boards___brain_f_p_v.html#gac06dc25a57021a95f574c14226593260',1,'Brain::minBootLoaderVersion()'],['../group___boards___open_pilot_plugin.html#gae37c1072aa8fa5d21f03f2a61ad6ee32',1,'Revolution::minBootLoaderVersion()'],['../group___boards___quantec.html#ga37458f529a44848b7e11ac726fc945ee',1,'Quanton::minBootLoaderVersion()'],['../group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129',1,'Core::IBoardType::minBootLoaderVersion()']]],
   ['minimum',['minimum',['../group__utils.html#gae98c84ce99020798ec904f67ecc8e2f1',1,'LongLongSpinBox']]],
-  ['minimumsizehint',['minimumSizeHint',['../group___core_plugin.html#ga653d5db7b113739e805ae097aaa63b25',1,'Core::Internal::SplitterOrView']]],
+  ['minimumsizehint',['minimumSizeHint',['../group__utils.html#ga8c8db23ef6466660caed3ef9c48d2c63',1,'LongLongSpinBox::minimumSizeHint()'],['../group___core_plugin.html#ga653d5db7b113739e805ae097aaa63b25',1,'Core::Internal::SplitterOrView::minimumSizeHint()']]],
   ['minisplitter',['MiniSplitter',['../group___core_plugin.html#ga0daa81d1f782306819ddd45944ba50cb',1,'Core::MiniSplitter::MiniSplitter(QWidget *parent=0)'],['../group___core_plugin.html#ga75a5fe680b6339b267c9ca0c56f798b4',1,'Core::MiniSplitter::MiniSplitter(Qt::Orientation orientation)']]],
   ['minisplitterhandle',['MiniSplitterHandle',['../group___core_plugin.html#ga65f8058210c0d720960768f24228fed2',1,'Core::Internal::MiniSplitterHandle']]],
   ['minzoom',['MinZoom',['../group___t_l_map_widget.html#ga250af1a91662693f711d22d7c8d336ea',1,'mapcontrol::TLMapWidget']]],

@@ -39,7 +39,7 @@ var searchData=
   ['errorstring',['errorString',['../class_extension_system_1_1_plugin_spec.html#a5c7e05df1ab79d1c67140f72237e92e5',1,'ExtensionSystem::PluginSpec']]],
   ['etime',['etime',['../uavobjecttemplate_8m.html#acd1e6295fb7eff6549cd33fe0730fc7e',1,'uavobjecttemplate.m']]],
   ['euler2r',['Euler2R',['../group___config_plugin.html#ga377eb05dfcb626f7b5af01ea1647d9ae',1,'Calibration']]],
-  ['event',['event',['../class_q_win_event_notifier.html#aac2618814439b3975e970515601a6cd0',1,'QWinEventNotifier']]],
+  ['event',['event',['../group__utils.html#gaea41a8cdd05e6dc576eb8de437f48044',1,'LongLongSpinBox::event()'],['../class_q_win_event_notifier.html#aac2618814439b3975e970515601a6cd0',1,'QWinEventNotifier::event()']]],
   ['eventfilter',['eventFilter',['../class_utils_1_1_tree_widget_column_stretcher.html#a947be1428599b1072686b3081457ddba',1,'Utils::TreeWidgetColumnStretcher::eventFilter()'],['../group___core_plugin.html#gadb41d92ceddef6fe4e1f259b5f640ca5',1,'Core::Internal::ShortcutSettings::eventFilter()'],['../group___path_planner.html#gaecfd283ac4a2e4ca1a8950d2afbcb3f1',1,'WaypointDelegate::eventFilter()'],['../group___u_a_v_object_browser_plugin.html#ga8db6822af5a05b88ac98c531bb59e5f1',1,'BrowserItemDelegate::eventFilter()'],['../group___u_a_v_object_widget_utils.html#gae5859445d40d8a43d5fd91927dd56ba9',1,'ConfigTaskWidget::eventFilter()']]],
   ['eventfilteringmainwindow',['EventFilteringMainWindow',['../group___core_plugin.html#gae292d853eb38e063bbf621e7895b45c9',1,'Core::Internal::EventFilteringMainWindow']]],
   ['execdialog',['execDialog',['../group___core_plugin.html#ga39aeb933e3a9148592563c484cbce0cb',1,'Core::Internal::SettingsDialog']]],

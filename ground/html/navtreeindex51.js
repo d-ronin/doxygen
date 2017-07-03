@@ -1,5 +1,9 @@
 var NAVTREEINDEX51 =
 {
+"sprf3e_8cpp.html":[6,0,0,0,0,1,3,14],
+"sprf3e_8cpp_source.html":[6,0,0,0,0,1,3,14],
+"sprf3e_8h.html":[6,0,0,0,0,1,3,15],
+"sprf3e_8h_source.html":[6,0,0,0,0,1,3,15],
 "sprf3econfiguration_8cpp.html":[6,0,0,0,0,1,3,16],
 "sprf3econfiguration_8cpp_source.html":[6,0,0,0,0,1,3,16],
 "sprf3econfiguration_8h.html":[6,0,0,0,0,1,3,17],
@@ -245,9 +249,5 @@ var NAVTREEINDEX51 =
 "telemetrymanager_8cpp.html":[6,0,0,0,0,1,41,2],
 "telemetrymanager_8cpp_source.html":[6,0,0,0,0,1,41,2],
 "telemetrymanager_8h.html":[6,0,0,0,0,1,41,3],
-"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3],
-"telemetrymonitor_8cpp.html":[6,0,0,0,0,1,41,4],
-"telemetrymonitor_8cpp_source.html":[6,0,0,0,0,1,41,4],
-"telemetrymonitor_8h.html":[6,0,0,0,0,1,41,5],
-"telemetrymonitor_8h_source.html":[6,0,0,0,0,1,41,5]
+"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3]
 };

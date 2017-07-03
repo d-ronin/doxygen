@@ -92,13 +92,13 @@ var NAVTREEINDEX =
 "group___u_a_v_talk_plugin.html#ga496d6211736a7cfd5cee129eb2b8ad95",
 "group___uploader.html#gaa726ecf0db7424f9980ac006267b6bbd",
 "group___usage_stats_plugin.html#ggaa2c4ae2950cc13d46f45f5d2f0900870a49108408f615fd87c5c3b235dd5f142f",
-"importexportgadget_8h_source.html",
-"memorycache_8cpp_source.html",
-"opmapgadgetoptionspage_8h_source.html",
-"rawhid_8h_source.html",
-"sprf3econfiguration_8cpp.html",
-"telemetrymonitorwidget_8cpp.html",
-"uavobjecttemplate_8m.html#a8baabb94ca31201bfb1cf71bf883668e"
+"importexportdialog_8h_source.html",
+"maptype_8h.html",
+"opmapgadgetfactory_8h_source.html",
+"radioprobepage_8h_source.html",
+"sprf3e_8cpp.html",
+"telemetrymonitor_8cpp.html",
+"uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

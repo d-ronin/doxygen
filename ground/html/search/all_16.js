@@ -42,7 +42,7 @@ var searchData=
   ['vehicletrim',['VehicleTrim',['../class_vehicle_trim.html',1,'VehicleTrim'],['../class_vehicle_trim.html#a42bf9e01823eb1b8e9ade6d2900d1688',1,'VehicleTrim::VehicleTrim()']]],
   ['vehicletrim_2ecpp',['vehicletrim.cpp',['../vehicletrim_8cpp.html',1,'']]],
   ['vehicletrim_2eh',['vehicletrim.h',['../vehicletrim_8h.html',1,'']]],
-  ['velocity',['velocity',['../structmapcontrol_1_1custom_data.html#ab084fbb62527f0b71d74c9977c2e3f90',1,'mapcontrol::customData::velocity()'],['../group___path.html#ga64d63cdc6fb603cf2d12672d532f605e',1,'PathPlanData::velocity()'],['../group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89',1,'FlightDataModel::VELOCITY()']]],
+  ['velocity',['VELOCITY',['../group___path.html#gga474bf8bbc3c8c027f09087e98700be23a1893f60afdc05d0fc0c762e8f74f6b89',1,'FlightDataModel::VELOCITY()'],['../structmapcontrol_1_1custom_data.html#ab084fbb62527f0b71d74c9977c2e3f90',1,'mapcontrol::customData::velocity()'],['../group___path.html#ga64d63cdc6fb603cf2d12672d532f605e',1,'PathPlanData::velocity()']]],
   ['vendor',['vendor',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a',1,'ExtensionSystem::Internal::PluginSpecPrivate::vendor()'],['../class_extension_system_1_1_plugin_spec.html#a192dfd0c30392c994303743b8ad76d83',1,'ExtensionSystem::PluginSpec::vendor()']]],
   ['vendorid',['vendorID',['../group___core_plugin.html#gaa22fe6fa3154cfff62d3e1860c8b7f7b',1,'Core::IBoardType::USBInfo::vendorID()'],['../group___raw_h_i_d_plugin.html#ga506f2c8d425d78dd0ad899f8e5740729',1,'USBPortInfo::vendorID()']]],
   ['ver_5fmask',['VER_MASK',['../group___u_a_v_talk_plugin.html#ga01e440648aa2f6781625168390d3d13a',1,'UAVTalk']]],
