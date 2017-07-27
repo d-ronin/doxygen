@@ -1,15 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"pikoblx_2fw_2mcuconf_8h.html#ga59976b6c28b2561d2b6bd7e3940ea377":[5,0,0,4,8,2,0,98],
-"pikoblx_2fw_2mcuconf_8h.html#ga5a54e2f2f452568276faa96392039e10":[5,0,0,4,8,2,0,129],
-"pikoblx_2fw_2mcuconf_8h.html#ga5a90d9b62fd7b1a0180c2aec7d00089d":[5,0,0,4,8,2,0,58],
-"pikoblx_2fw_2mcuconf_8h.html#ga5c9e95d0806fd4faa34694d2f7ed8099":[5,0,0,4,8,2,0,59],
-"pikoblx_2fw_2mcuconf_8h.html#ga5f5e9b802c24ad1637cd2aaee14606ed":[5,0,0,4,8,2,0,61],
-"pikoblx_2fw_2mcuconf_8h.html#ga5f73f584e60bf235f5440ce5cee2ca20":[5,0,0,4,8,2,0,47],
-"pikoblx_2fw_2mcuconf_8h.html#ga5f9c3734d5d06c9ccd5214af5c78c4f8":[5,0,0,4,8,2,0,73],
-"pikoblx_2fw_2mcuconf_8h.html#ga626416dc22cf5f3deff2a8c7d8efa5b2":[5,0,0,4,8,2,0,107],
-"pikoblx_2fw_2mcuconf_8h.html#ga6366c26f605ce31e89deee1af686f5e6":[5,0,0,4,8,2,0,95],
-"pikoblx_2fw_2mcuconf_8h.html#ga639272943cb5b9bdcbd78e5ced2b52a0":[5,0,0,4,8,2,0,57],
 "pikoblx_2fw_2mcuconf_8h.html#ga6a1dc0d1f404db00250eee320ee70b60":[5,0,0,4,8,2,0,75],
 "pikoblx_2fw_2mcuconf_8h.html#ga6b4a662792401dae73ae072183bd8e02":[5,0,0,4,8,2,0,52],
 "pikoblx_2fw_2mcuconf_8h.html#ga6d1ec953e37faf6fa7c861b06e7ed790":[5,0,0,4,8,2,0,4],
@@ -249,5 +239,15 @@ var NAVTREEINDEX99 =
 "pios__bmp280_8h.html":[5,0,0,3,1,12],
 "pios__bmp280_8h.html#ga51d84d345a85ef18f35142f51621cb22":[5,0,0,3,1,12,0],
 "pios__bmp280_8h_source.html":[5,0,0,3,1,12],
-"pios__bmp280__priv_8h.html":[5,0,0,3,1,13]
+"pios__bmp280__priv_8h.html":[5,0,0,3,1,13],
+"pios__bmp280__priv_8h.html#ga142d1df355acd292fa3cdce35134978c":[5,0,0,3,1,13,0],
+"pios__bmp280__priv_8h.html#ga15c6b3dfec6cfb1b42692f1530b8f0e5":[5,0,0,3,1,13,4],
+"pios__bmp280__priv_8h.html#ga749eea7e53d9ff4728f0726e78a911b8":[5,0,0,3,1,13,1],
+"pios__bmp280__priv_8h.html#gad0ffd240554352ffd9903531daffb57d":[5,0,0,3,1,13,3],
+"pios__bmp280__priv_8h.html#gae0a53ffb519633664925214b144f3b4d":[5,0,0,3,1,13,2],
+"pios__bmp280__priv_8h_source.html":[5,0,0,3,1,13],
+"pios__bmx055_8c.html":[5,0,0,3,0,6],
+"pios__bmx055_8c_source.html":[5,0,0,3,0,6],
+"pios__bmx055_8h.html":[5,0,0,3,1,14],
+"pios__bmx055_8h.html#ga1014bdd38922c45ea60bdf8312e7bd39":[5,0,0,3,1,14,0]
 };

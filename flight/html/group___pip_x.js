@@ -148,7 +148,6 @@ var group___pip_x =
     [ "TAULINK_VERSION_MODULE", "group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c", null ],
     [ "TAULINK_VERSION_STICK", "group___pip_x.html#ga1918a9e4f13227a648f0d018e48e416d", null ],
     [ "TELEM_BAUDRATE", "group___pip_x.html#gaa9e5897bdc36e3307e909ae30b1a1d88", null ],
-    [ "TELEM_QUEUE_SIZE", "group___pip_x.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "TX_LED_OFF", "group___pip_x.html#ga61bc08f9c0ea60e200f65cd5fb494abf", null ],
     [ "TX_LED_ON", "group___pip_x.html#gab629f3db9a59a10b5bed9e23514c1856", null ],
     [ "TX_LED_TOGGLE", "group___pip_x.html#gaf3fc4050161f3aa501a45165d5f4a41f", null ],

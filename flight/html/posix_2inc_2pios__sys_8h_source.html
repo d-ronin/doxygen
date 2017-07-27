@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,16 +137,20 @@ $(document).ready(function(){initNavTree('posix_2inc_2pios__sys_8h_source.html',
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a>(uint8_t array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>]);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da">PIOS_SYS_SerialNumberGet</a>(<span class="keywordtype">char</span> str[<a class="code" href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a>+1]);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gaeac95fad1cc985eb7c98dd57291d94c5">PIOS_SYS_Args</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_SYS_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gaeac95fad1cc985eb7c98dd57291d94c5">PIOS_SYS_Args</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_SYS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga47eb865f372e29cffdc77c25eed2e15f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_BINARY_LEN</div><div class="ttdef"><b>Definition:</b> <a href="posix_2inc_2pios__sys_8h_source.html#l00034">pios_sys.h:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_gaec647868ac486506b195fa5272cbdb92"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gaec647868ac486506b195fa5272cbdb92">PIOS_SYS_Init</a></div><div class="ttdeci">void PIOS_SYS_Init(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga1e93fbf23a8e6780569ad5de1668db17"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_ASCII_LEN</div><div class="ttdef"><b>Definition:</b> <a href="posix_2inc_2pios__sys_8h_source.html#l00035">pios_sys.h:35</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga2acb35c64cd66c4e731cea5a2c855de0"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a></div><div class="ttdeci">int32_t PIOS_SYS_Reset(void)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga0e7c8023b675c51e2b70d4c41035fca4"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_OsStackUnused(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga06a0b401f67617fc771fa8b32d43e7da"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da">PIOS_SYS_SerialNumberGet</a></div><div class="ttdeci">int32_t PIOS_SYS_SerialNumberGet(char str[PIOS_SYS_SERIAL_NUM_ASCII_LEN+1])</div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_gabe3d4185af99f853a9970f58420f6595"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_IrqStackUnused(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_gaeac95fad1cc985eb7c98dd57291d94c5"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gaeac95fad1cc985eb7c98dd57291d94c5">PIOS_SYS_Args</a></div><div class="ttdeci">void PIOS_SYS_Args(int argc, char *argv[])</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga2e1f3aaafed672c51239e5a84d752b1f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a></div><div class="ttdeci">int32_t PIOS_SYS_SerialNumberGetBinary(uint8_t array[PIOS_SYS_SERIAL_NUM_BINARY_LEN])</div></div>
 </div><!-- fragment --></div><!-- contents -->

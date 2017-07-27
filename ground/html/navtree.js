@@ -85,7 +85,7 @@ var NAVTREEINDEX =
 "group___t_l_map_widget.html#gab198cadea5e879475bc0232d8519064b",
 "group___t_l_map_widget.html#gadf111b2f1982ddca99c4a295856c3968",
 "group___telemetry_scheduler_gadget_plugin.html#gaedbbe99f590cc8a0e230cf23937f7316",
-"group___u_a_v_object_browser_plugin.html#gaa9790dc57ee25280838c1828d5991f92",
+"group___u_a_v_object_browser_plugin.html#gaadbcc539338a28f21acc570915b786df",
 "group___u_a_v_object_widget_utils.html#ga2d7e19cef57df7b30741b4901b5a190f",
 "group___u_a_v_object_widget_utils.html#gaf38e83f721ec231506c2aa0bd3268280",
 "group___u_a_v_objects_plugin.html#ga9a3e58eb1d96fbb375c9e28f870ae1d3",

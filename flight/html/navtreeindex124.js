@@ -1,13 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"structpios__dsm__dev.html#a6b05524f19f5b20d126b467f76828002":[4,0,150,2],
-"structpios__dsm__dev.html#af1374f09784777b8222cd59d6c41ba1f":[4,0,150,1],
-"structpios__dsm__state.html":[4,0,151],
-"structpios__dsm__state.html#a21873b6326ebc7752591a6a726dd5d1f":[4,0,151,1],
-"structpios__dsm__state.html#a2e6a5a29461343fcc5a352ed031cd2c3":[4,0,151,5],
-"structpios__dsm__state.html#a6d1e951d9c03ec9651104491b4ad9b1a":[4,0,151,3],
-"structpios__dsm__state.html#a70f387f5d5e82231a14003705b43fb59":[4,0,151,2],
-"structpios__dsm__state.html#ad73722b14672f205b7bfd9ebdac3b53a":[4,0,151,0],
 "structpios__dsm__state.html#af7296b9f7aa4be7e56a8edd0025c5fab":[4,0,151,4],
 "structpios__exti__cfg.html":[2,0,49,2],
 "structpios__exti__cfg.html#a099174bef966c8ee8091cb1d00343a4b":[2,0,49,2,3],
@@ -142,8 +134,8 @@ var NAVTREEINDEX124 =
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,7,2,8,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,7,2,8,2],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,8,4,8,2],
-"structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,7,2,8,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,8,4,8,0],
+"structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,7,2,8,0],
 "structpios__recursive__mutex.html":[2,0,30,1],
 "structpios__recursive__mutex.html#a200855903286b62f64a45fd445f52799":[2,0,30,1,0],
 "structpios__rfm22b__cfg.html":[2,0,32,10],
@@ -249,5 +241,13 @@ var NAVTREEINDEX124 =
 "structpios__spi__cfg.html#adbc1199b6671cd7ab6856b5d76038020":[2,0,63,3,1],
 "structpios__spi__dev.html":[2,0,63,2],
 "structpios__spi__dev.html#a0596ad5ad91546f4968764d5255c48a6":[2,0,63,2,3],
-"structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021":[2,0,63,2,4]
+"structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021":[2,0,63,2,4],
+"structpios__spi__dev.html#a7479cefc1a7a8767ac6f9bdaf88a0aa0":[2,0,63,2,1],
+"structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3":[2,0,63,2,2],
+"structpios__spi__dev.html#acec840247ab3fef68667c277ca26c868":[2,0,63,2,5],
+"structpios__spi__dev.html#aced38180a5bca026bfe9c925bb358c92":[2,0,63,2,0],
+"structpios__spislave__cfg.html":[2,0,64,1],
+"structpios__spislave__cfg.html#a2700db140f16193edb5e67b0100a7f17":[2,0,64,1,2],
+"structpios__spislave__cfg.html#a85837e996367e0bc5f96490639cbf0c2":[2,0,64,1,4],
+"structpios__spislave__cfg.html#ab20632e82f7aa0973e43a96c212d3e8c":[2,0,64,1,5]
 };

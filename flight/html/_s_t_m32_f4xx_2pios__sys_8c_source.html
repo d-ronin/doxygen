@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -337,63 +337,114 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__sys_8c_source.htm
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">void</span> NVIC_Configuration(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">/* Set the Vector Table base address as specified in .ld file */</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keyword">extern</span> <span class="keywordtype">void</span> *pios_isr_vector_table_base;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        NVIC_SetVectorTable((uint32_t)&amp;pios_isr_vector_table_base, 0x0);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">/* 4 bits for Interrupt priorities so no sub priorities */</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="comment">/* Configure HCLK clock as SysTick clock source. */</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#ifdef USE_FULL_ASSERT</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keywordtype">void</span> assert_failed(uint8_t * file, uint32_t line)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> unused_mem(uint32_t *top, uint32_t *bot, uint32_t pattern)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        uint32_t *<a class="code" href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a> = bot;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">for</span> (; p &lt; top &amp;&amp; *p == pattern; p++);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> (p - bot) * <span class="keyword">sizeof</span>(uint32_t);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_CHIBIOS</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#if !defined(CRT0_STACKS_FILL_PATTERN)</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CRT0_STACKS_FILL_PATTERN    0x55555555 </span><span class="comment">/* ChibiOS ResetHandler */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span><span class="comment">/* c.f. linker */</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">extern</span> uint32_t __main_stack_base__;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">extern</span> uint32_t __main_stack_end__;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">extern</span> uint32_t __process_stack_base__;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">extern</span> uint32_t __process_stack_end__;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> unused_mem(&amp;__main_stack_end__, &amp;__main_stack_base__,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                CRT0_STACKS_FILL_PATTERN);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">/* When serial debugging is implemented, use something like this. */</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">/* printf(&quot;Wrong parameters value: file %s on line %d\r\n&quot;, file, line); */</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">/* Setup the LEDs to Alternate */</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#if defined(PIOS_LED_HEARTBEAT)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga407dfee3486299fb1e22d4f2d4d2c4d9">PIOS_ANNUNC_On</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_HEARTBEAT */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_LED_ALARM)</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_ALARM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="comment">/* Infinite loop */</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#if defined(PIOS_LED_HEARTBEAT)</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_HEARTBEAT */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_LED_ALARM)</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_ALARM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1000000; i++) ;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">return</span> unused_mem(&amp;__process_stack_end__, &amp;__process_stack_base__,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                CRT0_STACKS_FILL_PATTERN);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">/* c.f. linker */</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">extern</span> uint32_t _irq_stack_end;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">extern</span> uint32_t _irq_stack_top;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">return</span> unused_mem(&amp;_irq_stack_top, &amp;_irq_stack_end, 0xa5a5a5a5);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_CHIBIOS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keywordtype">void</span> NVIC_Configuration(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">/* Set the Vector Table base address as specified in .ld file */</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keyword">extern</span> <span class="keywordtype">void</span> *pios_isr_vector_table_base;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        NVIC_SetVectorTable((uint32_t)&amp;pios_isr_vector_table_base, 0x0);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">/* 4 bits for Interrupt priorities so no sub priorities */</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">/* Configure HCLK clock as SysTick clock source. */</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#ifdef USE_FULL_ASSERT</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keywordtype">void</span> assert_failed(uint8_t * file, uint32_t line)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">/* When serial debugging is implemented, use something like this. */</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">/* printf(&quot;Wrong parameters value: file %s on line %d\r\n&quot;, file, line); */</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="comment">/* Setup the LEDs to Alternate */</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#if defined(PIOS_LED_HEARTBEAT)</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga407dfee3486299fb1e22d4f2d4d2c4d9">PIOS_ANNUNC_On</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_HEARTBEAT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_LED_ALARM)</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_ALARM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">/* Infinite loop */</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#if defined(PIOS_LED_HEARTBEAT)</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_HEARTBEAT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_LED_ALARM)</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span>                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_LED_ALARM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1000000; i++) ;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___s_t_m32_f4xx___system___private___functions_html_gae0c36a9591fe6e9c45ecb21a794f0f0f"><div class="ttname"><a href="group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">SystemCoreClockUpdate</a></div><div class="ttdeci">void SystemCoreClockUpdate(void)</div><div class="ttdoc">Update SystemCoreClock variable according to Clock Register Values. The SystemCoreClock variable cont...</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2cmsis__system_8c_source.html#l00291">cmsis_system.c:291</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga47eb865f372e29cffdc77c25eed2e15f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_BINARY_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00034">pios_sys.h:34</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga47eb865f372e29cffdc77c25eed2e15f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_BINARY_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00036">pios_sys.h:36</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_gaec647868ac486506b195fa5272cbdb92"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gaec647868ac486506b195fa5272cbdb92">PIOS_SYS_Init</a></div><div class="ttdeci">void PIOS_SYS_Init(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga0d086bac039cb8236edb457b7d4da0fa"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa">PIOS_DELAY_Init</a></div><div class="ttdeci">int32_t PIOS_DELAY_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00098">pios_delay.c:98</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_gaec0f5ba8e0745b50dd791e12cc04d8aa"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a></div><div class="ttdeci">void PIOS_ANNUNC_Off(uint32_t annunc_id)</div></div>
 <div class="ttc" id="group___s_t_m32_f4xx___system___private___functions_html_ga93f514700ccf00d08dbdcff7f1224eb2"><div class="ttname"><a href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a></div><div class="ttdeci">void SystemInit(void)</div><div class="ttdoc">Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst...</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2cmsis__system_8c_source.html#l00214">cmsis_system.c:214</a></div></div>
 <div class="ttc" id="group___a_q32_html_gae4912a499d71db827918d7908055ce05"><div class="ttname"><a href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a></div><div class="ttdeci">#define PIOS_LED_ALARM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00086">pios_board.h:86</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga1e93fbf23a8e6780569ad5de1668db17"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_ASCII_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00035">pios_sys.h:35</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga1e93fbf23a8e6780569ad5de1668db17"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_ASCII_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00037">pios_sys.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_ga407dfee3486299fb1e22d4f2d4d2c4d9"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#ga407dfee3486299fb1e22d4f2d4d2c4d9">PIOS_ANNUNC_On</a></div><div class="ttdeci">void PIOS_ANNUNC_On(uint32_t annunc_id)</div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga2acb35c64cd66c4e731cea5a2c855de0"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a></div><div class="ttdeci">int32_t PIOS_SYS_Reset(void)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_ga0e7c8023b675c51e2b70d4c41035fca4"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_OsStackUnused(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga06a0b401f67617fc771fa8b32d43e7da"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da">PIOS_SYS_SerialNumberGet</a></div><div class="ttdeci">int32_t PIOS_SYS_SerialNumberGet(char str[PIOS_SYS_SERIAL_NUM_ASCII_LEN+1])</div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_ga06cc4fd9ade92cd7af7d80d1b942eb54"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a></div><div class="ttdeci">void PIOS_ANNUNC_Toggle(uint32_t annunc_id)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_y_s_html_gabe3d4185af99f853a9970f58420f6595"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_IrqStackUnused(void)</div></div>
+<div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
 <div class="ttc" id="group___a_q32_html_ga2a94396f6c828bcf3a1c79e82a3d738a"><div class="ttname"><a href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a></div><div class="ttdeci">#define PIOS_LED_HEARTBEAT</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00085">pios_board.h:85</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga2e1f3aaafed672c51239e5a84d752b1f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a></div><div class="ttdeci">int32_t PIOS_SYS_SerialNumberGetBinary(uint8_t array[PIOS_SYS_SERIAL_NUM_BINARY_LEN])</div></div>
 </div><!-- fragment --></div><!-- contents -->

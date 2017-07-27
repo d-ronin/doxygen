@@ -1,15 +1,5 @@
 var NAVTREEINDEX110 =
 {
-"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aa43e7bee38a6eac8df0ab9de807be3e43":[5,0,0,3,1,111,71,3],
-"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aaab9bd5cca847e2a1874b3ff036c5ed81":[5,0,0,3,1,111,71,2],
-"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aab92ad24807bcb740ca992e6e955c8cb5":[5,0,0,3,1,111,71,4],
-"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aabd25e49b43bbfd34245bb4e830754670":[5,0,0,3,1,111,71,0],
-"pios__usb__defs_8h_source.html":[5,0,0,3,1,111],
-"pios__usb__desc__hid__cdc_8c.html":[5,0,0,3,0,52],
-"pios__usb__desc__hid__cdc_8c.html#ga01dd695368c912334b2f36175515ba62":[5,0,0,3,0,52,2],
-"pios__usb__desc__hid__cdc_8c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d":[5,0,0,3,0,52,17],
-"pios__usb__desc__hid__cdc_8c.html#ga11849b0f12b3bd244a0fddbd50b647c6":[5,0,0,3,0,52,18],
-"pios__usb__desc__hid__cdc_8c.html#ga15a9a7a662d2bce8263b132b33753d75":[5,0,0,3,0,52,1],
 "pios__usb__desc__hid__cdc_8c.html#ga18f1bcfd867862a7b68cf2307ff2df6d":[5,0,0,3,0,52,10],
 "pios__usb__desc__hid__cdc_8c.html#ga45cebf693381151be1d05f36c5ef2555":[5,0,0,3,0,52,7],
 "pios__usb__desc__hid__cdc_8c.html#ga5174d22b28e6e8da2495ff9864fc9d63":[5,0,0,3,0,52,13],
@@ -249,5 +239,15 @@ var NAVTREEINDEX110 =
 "playuavosd_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,4,10,1,0,4],
 "playuavosd_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03":[5,0,0,4,10,1,0,3],
 "playuavosd_2board-info_2board__hw__defs_8c.html#ga3b7c89baef1cb3c6666be9fdbaefcad3":[5,0,0,4,10,1,0,5],
-"playuavosd_2board-info_2board__hw__defs_8c.html#ga8a3391113e465d74c92def57807d830e":[5,0,0,4,10,1,0,1]
+"playuavosd_2board-info_2board__hw__defs_8c.html#ga8a3391113e465d74c92def57807d830e":[5,0,0,4,10,1,0,1],
+"playuavosd_2board-info_2board__hw__defs_8c.html#gab63edc180a907efe4bad610bbb6c2224":[5,0,0,4,10,1,0,7],
+"playuavosd_2board-info_2board__hw__defs_8c.html#gac5eab6405f67f75d04a86dcf73215d79":[5,0,0,4,10,1,0,6],
+"playuavosd_2board-info_2board__hw__defs_8c.html#gaf14eff61e8f08bddf3904d6fc4f17f15":[5,0,0,4,10,1,0,2],
+"playuavosd_2board-info_2board__hw__defs_8c_source.html":[5,0,0,4,10,1,0],
+"playuavosd_2board-info_2cmsis__system_8c.html":[5,0,0,4,10,1,1],
+"playuavosd_2board-info_2cmsis__system_8c.html#ga04586ea638d21afe558db4f2798c38a6":[5,0,0,4,10,1,1,1],
+"playuavosd_2board-info_2cmsis__system_8c.html#ga0fa5a868f5cd056a04b1c42e454b9617":[5,0,0,4,10,1,1,0],
+"playuavosd_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c":[5,0,0,4,10,1,1,5],
+"playuavosd_2board-info_2cmsis__system_8c.html#ga290dcd27167e925d817e8334111c1c01":[5,0,0,4,10,1,1,2],
+"playuavosd_2board-info_2cmsis__system_8c.html#ga40e1495541cbb4acbe3f1819bd87a9fe":[5,0,0,4,10,1,1,4]
 };

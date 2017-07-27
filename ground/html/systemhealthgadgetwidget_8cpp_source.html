@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -450,58 +450,62 @@ $(document).ready(function(){initNavTree('systemhealthgadgetwidget_8cpp_source.h
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            alarmDescriptionFileName =</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-Critical-PathFollower.html&quot;</span>);</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::MANUALCONTROL_UNDEFINED:</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-Undefined.html&quot;</span>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-None.html&quot;</span>);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (itemId.contains(<span class="stringliteral">&quot;StateEstimation-&quot;</span>) || itemId.contains(<span class="stringliteral">&quot;Attitude-&quot;</span>)) {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">switch</span> (systemAlarmsData.StateEstimation) {</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_GYROQUEUENOTUPDATING:</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Gyro-Queue-Not-Updating.html&quot;</span>);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_ACCELEROMETERQUEUENOTUPDATING:</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            alarmDescriptionFileName = QString(</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Accelerometer-Queue-Not-Updating.html&quot;</span>);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::MANUALCONTROL_CHANNELCONFIGURATION:</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            alarmDescriptionFileName =</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-Warning-ChannelConfiguration.html&quot;</span>);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::MANUALCONTROL_UNDEFINED:</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-Undefined.html&quot;</span>);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/ManualControl-None.html&quot;</span>);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (itemId.contains(<span class="stringliteral">&quot;StateEstimation-&quot;</span>) || itemId.contains(<span class="stringliteral">&quot;Attitude-&quot;</span>)) {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">switch</span> (systemAlarmsData.StateEstimation) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_GYROQUEUENOTUPDATING:</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            alarmDescriptionFileName =</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Gyro-Queue-Not-Updating.html&quot;</span>);</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOGPS:</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-GPS.html&quot;</span>);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOMAGNETOMETER:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-Magnetometer.html&quot;</span>);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_ACCELEROMETERQUEUENOTUPDATING:</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            alarmDescriptionFileName = QString(</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Accelerometer-Queue-Not-Updating.html&quot;</span>);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOGPS:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-GPS.html&quot;</span>);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOBAROMETER:</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOMAGNETOMETER:</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-Barometer.html&quot;</span>);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-Magnetometer.html&quot;</span>);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_TOOFEWSATELLITES:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOBAROMETER:</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Too-Few-Satellites.html&quot;</span>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-No-Barometer.html&quot;</span>);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_PDOPTOOHIGH:</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_TOOFEWSATELLITES:</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-PDOP-Too-High.html&quot;</span>);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Too-Few-Satellites.html&quot;</span>);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_UNDEFINED:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_PDOPTOOHIGH:</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            alarmDescriptionFileName =</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Undefined.html&quot;</span>);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-PDOP-Too-High.html&quot;</span>);</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOHOME:</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-NoHome.html&quot;</span>);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-None.html&quot;</span>);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/&quot;</span> + itemId + <span class="stringliteral">&quot;.html&quot;</span>);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span> alarmDescriptionFileName;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_UNDEFINED:</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            alarmDescriptionFileName =</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-Undefined.html&quot;</span>);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">case</span> SystemAlarms::STATEESTIMATION_NOHOME:</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-NoHome.html&quot;</span>);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/StateEstimation-None.html&quot;</span>);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        alarmDescriptionFileName = QString(<span class="stringliteral">&quot;:/systemhealth/html/&quot;</span> + itemId + <span class="stringliteral">&quot;.html&quot;</span>);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">return</span> alarmDescriptionFileName;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga6c929356a6e66fd7c56e9d547e67ef7c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga6c929356a6e66fd7c56e9d547e67ef7c">UAVObjectField::getNumElements</a></div><div class="ttdeci">quint32 getNumElements()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8cpp_source.html#l00639">uavobjectfield.cpp:639</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___system_health_plugin_html_gaefb5569e2941f96ea452bb2e43575aed"><div class="ttname"><a href="group___system_health_plugin.html#gaefb5569e2941f96ea452bb2e43575aed">SystemHealthGadgetWidget::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="systemhealthgadgetwidget_8cpp_source.html#l00192">systemhealthgadgetwidget.cpp:192</a></div></div>

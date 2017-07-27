@@ -1,13 +1,5 @@
 var NAVTREEINDEX117 =
 {
-"smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2c9234fcb35045cd0fbdd6357d9ba2aa":[5,0,0,1,2,11,7],
-"smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae65e95787944be1a5ae8ed327a078a62":[5,0,0,1,2,11,8],
-"smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf20fb982a93c75492f10eb3675d8a91c":[5,0,0,1,2,11,6],
-"smoothcontrol_8h.html#a16e175b650aeebdfccaeb03a070fbe21":[5,0,0,1,2,11,12],
-"smoothcontrol_8h.html#a3548a80d8935204777628ea9ade8e643":[5,0,0,1,2,11,13],
-"smoothcontrol_8h.html#a361aee1d0125a04da6459594a9e1aa1f":[5,0,0,1,2,11,14],
-"smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503":[5,0,0,1,2,11,5],
-"smoothcontrol_8h.html#a46b5627b43a6823c675b29edaaad5f00":[5,0,0,1,2,11,3],
 "smoothcontrol_8h.html#a4cfe64fc9d6e9a8f05f9d84de471d127":[5,0,0,1,2,11,1],
 "smoothcontrol_8h.html#a4fb5cfbc3422f00c33119f2e9b277bad":[5,0,0,1,2,11,10],
 "smoothcontrol_8h.html#a5a5b6c0a93ab47c510abc5ad987f7bc8":[5,0,0,1,2,11,2],
@@ -56,8 +48,8 @@ var NAVTREEINDEX117 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,16,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,4,16,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,4,16,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,16,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,16,1,3,10],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,16,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,4,16,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,4,16,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,4,16,1,3,8],
@@ -249,5 +241,13 @@ var NAVTREEINDEX117 =
 "sparky2_2fw_2mcuconf_8h.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[5,0,0,4,16,2,0,193],
 "sparky2_2fw_2mcuconf_8h.html#gada1164056ea271b26c923140f69ace87":[5,0,0,4,16,2,0,106],
 "sparky2_2fw_2mcuconf_8h.html#gadae68423fc725ae1da125e4929e6de73":[5,0,0,4,16,2,0,64],
-"sparky2_2fw_2mcuconf_8h.html#gadc27d1e2fcdedcb56fc15a41e5f43d91":[5,0,0,4,16,2,0,113]
+"sparky2_2fw_2mcuconf_8h.html#gadc27d1e2fcdedcb56fc15a41e5f43d91":[5,0,0,4,16,2,0,113],
+"sparky2_2fw_2mcuconf_8h.html#gaddcd7b72b6811260a2a9a6ce03756b29":[5,0,0,4,16,2,0,98],
+"sparky2_2fw_2mcuconf_8h.html#gae32ac88b3b64552f9ecec5a038dfc544":[5,0,0,4,16,2,0,189],
+"sparky2_2fw_2mcuconf_8h.html#gae4258a650515c19e5df92b5917399195":[5,0,0,4,16,2,0,169],
+"sparky2_2fw_2mcuconf_8h.html#gae4f40dbda591f71bce911d37415746af":[5,0,0,4,16,2,0,66],
+"sparky2_2fw_2mcuconf_8h.html#gae631e1c4b6541c9d67de9d009196b770":[5,0,0,4,16,2,0,119],
+"sparky2_2fw_2mcuconf_8h.html#gae98fcb3612d26b3cf74c2d28e4994249":[5,0,0,4,16,2,0,131],
+"sparky2_2fw_2mcuconf_8h.html#gaea17e07d4f22e7757ac6193ab9d72a15":[5,0,0,4,16,2,0,16],
+"sparky2_2fw_2mcuconf_8h.html#gaea50a21db71009ebc7951180dc0d29ea":[5,0,0,4,16,2,0,134]
 };

@@ -78,7 +78,6 @@ var targets_2pipxtreme_2board_info_2pios__board_8h =
     [ "RX_LED_TOGGLE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gab042835bb2ee3d2fa589e1b1e8e30d15", null ],
     [ "TAULINK_VERSION_MODULE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga4a59a79c24481761e5103d5ec54b497c", null ],
     [ "TAULINK_VERSION_STICK", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga1918a9e4f13227a648f0d018e48e416d", null ],
-    [ "TELEM_QUEUE_SIZE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "TX_LED_OFF", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga61bc08f9c0ea60e200f65cd5fb494abf", null ],
     [ "TX_LED_ON", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gab629f3db9a59a10b5bed9e23514c1856", null ],
     [ "TX_LED_TOGGLE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaf3fc4050161f3aa501a45165d5f4a41f", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('posix_2pios__spi_8c_source.html','');}
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__spi__dev.html">pios_spi_dev</a> *spi_dev;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        spi_dev = (<span class="keyword">struct </span><a class="code" href="structpios__spi__dev.html">pios_spi_dev</a> *) PIOS_SPI_alloc();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        spi_dev = (<span class="keyword">struct </span><a class="code" href="structpios__spi__dev.html">pios_spi_dev</a> *)PIOS_SPI_alloc();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (!spi_dev) <span class="keywordflow">goto</span> out_fail;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">/* Bind the configuration to the device instance */</span></div>
@@ -163,10 +163,10 @@ $(document).ready(function(){initNavTree('posix_2pios__spi_8c_source.html','');}
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#aced38180a5bca026bfe9c925bb358c92">busy</a> = <a class="code" href="group___p_i_o_s___semaphore.html#gae3b8ab7e4cc3f9ddd090d77b92038158">PIOS_Semaphore_Create</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021">slave_count</a> = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>=0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; <a class="code" href="pios__spi__posix__priv_8h.html#af46b4c50b3b72e504155b2a23ab1cc7a">SPI_MAX_SUBDEV</a>; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordtype">char</span> path[PATH_MAX];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; <a class="code" href="pios__spi__posix__priv_8h.html#af46b4c50b3b72e504155b2a23ab1cc7a">SPI_MAX_SUBDEV</a>; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordtype">char</span> path[PATH_MAX + 2];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="group___p_i_o_s.html#gaf78a52a59a43dc156963dbbab958a468">snprintf</a>(path, PATH_MAX, <span class="stringliteral">&quot;%s.%d&quot;</span>, cfg-&gt;<a class="code" href="structpios__spi__cfg.html#a69fc950007087c1670baf71ebfe61d5d">base_path</a>, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="group___p_i_o_s.html#gaf78a52a59a43dc156963dbbab958a468">snprintf</a>(path, <span class="keyword">sizeof</span>(path), <span class="stringliteral">&quot;%s.%d&quot;</span>, cfg-&gt;<a class="code" href="structpios__spi__cfg.html#a69fc950007087c1670baf71ebfe61d5d">base_path</a>, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3">fd</a> = open(path, O_RDWR);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -178,10 +178,10 @@ $(document).ready(function(){initNavTree('posix_2pios__spi_8c_source.html','');}
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3">fd</a>[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = <a class="code" href="structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3">fd</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>=0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021">slave_count</a>; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021">slave_count</a>; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="comment">/* Twiddle / ensure slave selects are sane. */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>((uint32_t) spi_dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>((uint32_t) spi_dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>((uint32_t)spi_dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>((uint32_t)spi_dev, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
@@ -289,7 +289,7 @@ $(document).ready(function(){initNavTree('posix_2pios__spi_8c_source.html','');}
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">int</span> slave_id = spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a0596ad5ad91546f4968764d5255c48a6">selected</a>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(slave_id &lt; spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a155ee1ed651a3206508decb77f70b021">slave_count</a>)</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(slave_id &gt;= 0);</div>

@@ -32,6 +32,5 @@ var targets_2simulation_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_UDP", "targets_2simulation_2fw_2pios__config_8h.html#ga360ac5e44a96f7b92ac6427b4c7e217e", null ],
     [ "PIOS_RCVR_MAX_CHANNELS", "targets_2simulation_2fw_2pios__config_8h.html#gad9504d2174472de2d678814e430678c9", null ],
     [ "PIOS_RCVR_MAX_DEVS", "targets_2simulation_2fw_2pios__config_8h.html#ga78aa2952a1e1e2bf0a2128a8e297c557", null ],
-    [ "PIOS_TELEM_STACK_SIZE", "targets_2simulation_2fw_2pios__config_8h.html#ga8e7da2e5a9c1811977f1878761b0f74d", null ],
-    [ "TELEM_QUEUE_SIZE", "targets_2simulation_2fw_2pios__config_8h.html#ga063cb938f1bfd219544fb1fee9497b93", null ]
+    [ "PIOS_TELEM_STACK_SIZE", "targets_2simulation_2fw_2pios__config_8h.html#ga8e7da2e5a9c1811977f1878761b0f74d", null ]
 ];

@@ -1,15 +1,5 @@
 var NAVTREEINDEX109 =
 {
-"pios__usart_8h_source.html":[5,0,0,3,3,0,9],
-"pios__usart__config_8h.html":[5,0,0,3,7,0,5],
-"pios__usart__config_8h.html#a41c49336e4c9193862c99407c6d27b44":[5,0,0,3,7,0,5,0],
-"pios__usart__config_8h_source.html":[5,0,0,3,7,0,5],
-"pios__usart__priv_8h.html":[5,0,0,3,3,0,10],
-"pios__usart__priv_8h.html#ga24d5df335fd859a76e054646cf634314":[5,0,0,3,3,0,10,1],
-"pios__usart__priv_8h.html#gaa18aa39830281e33f66deabc31c2a86e":[5,0,0,3,3,0,10,2],
-"pios__usart__priv_8h.html#gad3e86aacccbc14969d50e491cf69afa8":[5,0,0,3,3,0,10,0],
-"pios__usart__priv_8h_source.html":[5,0,0,3,3,0,10],
-"pios__usb_8h.html":[5,0,0,3,1,107],
 "pios__usb_8h.html#ga188f42ea57c840a2b74611428547c92c":[5,0,0,3,1,107,2],
 "pios__usb_8h.html#ga45bd0a1ecf523ffdf65fc78cbf8574ea":[5,0,0,3,1,107,3],
 "pios__usb_8h.html#ga849bc66f0665ff6328b57ec3aa7c03f9":[5,0,0,3,1,107,0],
@@ -249,5 +239,15 @@ var NAVTREEINDEX109 =
 "pios__usb__defs_8h.html#gga656cd9a1af7abe6ec812f6ee50b223f9aa3f531db07d9720f1c27d383f17b41e7":[5,0,0,3,1,111,75,0],
 "pios__usb__defs_8h.html#gga656cd9a1af7abe6ec812f6ee50b223f9ac6f6f92b41b3626f3bee5585bc8ad259":[5,0,0,3,1,111,75,2],
 "pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aa1cb84e32692150ae842c92d23982b410":[5,0,0,3,1,111,71,1],
-"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aa3f1d0811a7b9bcbda126660237ada5af":[5,0,0,3,1,111,71,5]
+"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aa3f1d0811a7b9bcbda126660237ada5af":[5,0,0,3,1,111,71,5],
+"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aa43e7bee38a6eac8df0ab9de807be3e43":[5,0,0,3,1,111,71,3],
+"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aaab9bd5cca847e2a1874b3ff036c5ed81":[5,0,0,3,1,111,71,2],
+"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aab92ad24807bcb740ca992e6e955c8cb5":[5,0,0,3,1,111,71,4],
+"pios__usb__defs_8h.html#gga69bf8b3c0303204ae256d0d0304e9a1aabd25e49b43bbfd34245bb4e830754670":[5,0,0,3,1,111,71,0],
+"pios__usb__defs_8h_source.html":[5,0,0,3,1,111],
+"pios__usb__desc__hid__cdc_8c.html":[5,0,0,3,0,52],
+"pios__usb__desc__hid__cdc_8c.html#ga01dd695368c912334b2f36175515ba62":[5,0,0,3,0,52,2],
+"pios__usb__desc__hid__cdc_8c.html#ga0e5a30c27a737b9c3e117e4e8b755b8d":[5,0,0,3,0,52,17],
+"pios__usb__desc__hid__cdc_8c.html#ga11849b0f12b3bd244a0fddbd50b647c6":[5,0,0,3,0,52,18],
+"pios__usb__desc__hid__cdc_8c.html#ga15a9a7a662d2bce8263b132b33753d75":[5,0,0,3,0,52,1]
 };

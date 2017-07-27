@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Makes the current block of data available to readers and advances write pos. This may fail if the queue contain num_elems -1 elements, in which case the advance may be retried in the future. In this case, data already written to write_pos is preserved and the advance may be retried (or overwritten with new data).</p>
+<p>Makes the current block of data available to the reader and advances write pos. This may fail if the queue contain num_elems -1 elements, in which case the advance may be retried in the future. In this case, data already written to write_pos is preserved and the advance may be retried (or overwritten with new data).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>Handle to circular queue. </td></tr>
@@ -249,11 +249,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Makes multiple elements available to readers. Amt is expected to be equal or less to an 'avail' returned by circ_queue_cur_write_pos.</p>
+<p>Makes multiple elements available to the reader. Amt is expected to be equal or less to an 'avail' returned by circ_queue_cur_write_pos.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>The circular q handle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amt</td><td>The number of bytes we've filled in for readers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amt</td><td>The number of bytes we've filled in for the reader. </td></tr>
   </table>
   </dd>
 </dl>
@@ -521,7 +521,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to the current queue write position. This position is unavailable to any present readers and may be filled in with the desired data without respect to any synchronization. No promise is made that circ_queue_advance_write will succeed, though.</p>
+<p>Get a pointer to the current queue write position. This position is unavailable to the reader and may be filled in with the desired data without respect to any synchronization. No promise is made that circ_queue_advance_write will succeed, though.</p>
 <p>Alternatively, in *contig we return the number of things that can be filled in. We promise that you can circ_queue_advance_write_multi that many. You can also always write one, but no promises you'll be able to advance write.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

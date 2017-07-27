@@ -1,15 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a":[5,0,0,1,4,2,60],
-"msp__messages_8h.html#a2cc78cf2b385ecaec4f45725b5256961":[5,0,0,1,4,2,24],
-"msp__messages_8h.html#a2d7fba7d5b667aa163421d4aec6e2837":[5,0,0,1,4,2,70],
-"msp__messages_8h.html#a30796a2760bea28cab2642d7bccf12c8":[5,0,0,1,4,2,61],
-"msp__messages_8h.html#a30e52243f77d9901755625bd73c58a6a":[5,0,0,1,4,2,37],
-"msp__messages_8h.html#a355dba1a66e323945e1fc01f970891fd":[5,0,0,1,4,2,50],
-"msp__messages_8h.html#a3887c5d04491bd045634abd926176e24":[5,0,0,1,4,2,32],
-"msp__messages_8h.html#a436ed41172781ae5bb2e0c9a2e1d38be":[5,0,0,1,4,2,48],
-"msp__messages_8h.html#a4cd140aecf7c77a91e1b41afb65cdf4f":[5,0,0,1,4,2,20],
-"msp__messages_8h.html#a50d8c6aac428441c68f3d8b24dbb6114":[5,0,0,1,4,2,74],
 "msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f":[5,0,0,1,4,2,8],
 "msp__messages_8h.html#a52187113855feb7ce3c5cee420e1dff8":[5,0,0,1,4,2,29],
 "msp__messages_8h.html#a56098cd7f9314b525ec36398572c505e":[5,0,0,1,4,2,23],
@@ -249,5 +239,15 @@ var NAVTREEINDEX96 =
 "op__dfu_8c.html":[5,0,0,4,1,1,2],
 "op__dfu_8c.html#ga0cfea7d81e98a1eed11dfb4e9fe16704":[5,0,0,4,1,1,2,22],
 "op__dfu_8c.html#ga116631edad477e1dae1a1df22398c06e":[5,0,0,4,1,1,2,40],
-"op__dfu_8c.html#ga1347c5307f6e1b00d3a65e06184d0e09":[5,0,0,4,1,1,2,15]
+"op__dfu_8c.html#ga1347c5307f6e1b00d3a65e06184d0e09":[5,0,0,4,1,1,2,15],
+"op__dfu_8c.html#ga15766c5ec55ae360109b7d9bef6999b5":[5,0,0,4,1,1,2,19],
+"op__dfu_8c.html#ga1b37428de16897c154a5b2c137f164fd":[5,0,0,4,1,1,2,34],
+"op__dfu_8c.html#ga2771d0818cb705a0f5d36539e9996306":[5,0,0,4,1,1,2,6],
+"op__dfu_8c.html#ga2cee1725bfc6f9ac723c3decb193c8c2":[5,0,0,4,1,1,2,14],
+"op__dfu_8c.html#ga33196f517628dd8e2149305b76d75f8e":[5,0,0,4,1,1,2,2],
+"op__dfu_8c.html#ga342208ed1954c6486eac389edf7c7f86":[5,0,0,4,1,1,2,23],
+"op__dfu_8c.html#ga4087ff5eba1dd1ed72c881f9c6ecc662":[5,0,0,4,1,1,2,10],
+"op__dfu_8c.html#ga5125fe846a539f8e8a71d9a21a1b4d4d":[5,0,0,4,1,1,2,24],
+"op__dfu_8c.html#ga51d987c86e99fb64184b4b90a57ff360":[5,0,0,4,1,1,2,27],
+"op__dfu_8c.html#ga55ee7360660cad039fba9c5d63e62ec9":[5,0,0,4,1,1,2,8]
 };

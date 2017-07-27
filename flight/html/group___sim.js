@@ -61,7 +61,6 @@ var group___sim =
     [ "PIOS_TCP_RX_BUFFER_SIZE", "group___sim.html#ga01ec3b0807f0ee1fe8e9dec315ec925b", null ],
     [ "PIOS_TELEM_STACK_SIZE", "group___sim.html#ga8e7da2e5a9c1811977f1878761b0f74d", null ],
     [ "PIOS_UDP_RX_BUFFER_SIZE", "group___sim.html#gac4db98441aefcf08b59c18f270275432", null ],
-    [ "TELEM_QUEUE_SIZE", "group___sim.html#ga063cb938f1bfd219544fb1fee9497b93", null ],
     [ "initTask", "group___sim.html#gae7ecc4ed0ea5858477b78acaf928c3ef", null ],
     [ "main", "group___sim.html#ga0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "PIOS_Board_Init", "group___sim.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],

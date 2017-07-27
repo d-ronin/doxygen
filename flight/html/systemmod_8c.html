@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -133,6 +133,7 @@ $(document).ready(function(){initNavTree('systemmod_8c.html','');});
 <code>#include &quot;<a class="el" href="morsel_8h_source.html">morsel.h</a>&quot;</code><br/>
 <code>#include &quot;annunciatorsettings.h&quot;</code><br/>
 <code>#include &quot;flightstatus.h&quot;</code><br/>
+<code>#include &quot;manualcontrolcommand.h&quot;</code><br/>
 <code>#include &quot;manualcontrolsettings.h&quot;</code><br/>
 <code>#include &quot;objectpersistence.h&quot;</code><br/>
 <code>#include &quot;rfm22bstatus.h&quot;</code><br/>
@@ -206,8 +207,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga95b476fa87e188a38b66aeaa8538a8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5cab46fd40736cedd14e41c99c27389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gad5cab46fd40736cedd14e41c99c27389">DONT_BUILD_IF</a> (ANNUNCIATORSETTINGS_ANNUNCIATEAFTERARMING_MAXOPTVAL!=ANNUNCIATORSETTINGS_ANNUNCIATEANYTIME_MAXOPTVAL, AnnuncSettingsMismatch2)</td></tr>
 <tr class="separator:gad5cab46fd40736cedd14e41c99c27389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6b5e73b3c4c1fac4c572b3cdbaa76b6"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gab6b5e73b3c4c1fac4c572b3cdbaa76b6">GetFreeIrqStackSize</a> (void)</td></tr>
-<tr class="separator:gab6b5e73b3c4c1fac4c572b3cdbaa76b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga97fd430f36f8b065226e2bff9bad1de5">vApplicationIdleHook</a> (void)</td></tr>
 <tr class="separator:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga938822e7233dbbb444a5bdde8f626fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga938822e7233dbbb444a5bdde8f626fae">EventGetStats</a> (<a class="el" href="struct_event_stats.html">EventStats</a> *statsOut)</td></tr>
@@ -222,6 +221,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga26f4f21c174d0caf6301734360fc885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga914ce570d6529619085bb00319fc05e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga914ce570d6529619085bb00319fc05e0">EventPeriodicQueueUpdate</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>, uint16_t periodMs)</td></tr>
 <tr class="separator:ga914ce570d6529619085bb00319fc05e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a4142e6cfcbf272c8fca534761d6567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga4a4142e6cfcbf272c8fca534761d6567">DONT_BUILD_IF</a> (ANNUNCIATORSETTINGS_MANUALBUZZER_MAXOPTVAL &gt; MANUALCONTROLCOMMAND_ACCESSORY_NUMELEM, TooManyManualBuzzers)</td></tr>
+<tr class="separator:ga4a4142e6cfcbf272c8fca534761d6567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

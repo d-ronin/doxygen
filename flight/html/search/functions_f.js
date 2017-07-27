@@ -394,6 +394,8 @@ var searchData=
   ['pios_5fstreamfs_5ftxstart',['PIOS_STREAMFS_TxStart',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gae0b717f844508eb955adaaec9af320cb',1,'pios_streamfs.c']]],
   ['pios_5fsys_5fargs',['PIOS_SYS_Args',['../group___p_i_o_s___s_y_s.html#gaeac95fad1cc985eb7c98dd57291d94c5',1,'pios_sys.h']]],
   ['pios_5fsys_5finit',['PIOS_SYS_Init',['../group___p_i_o_s___s_y_s.html#gaec647868ac486506b195fa5272cbdb92',1,'pios_sys.h']]],
+  ['pios_5fsys_5firqstackunused',['PIOS_SYS_IrqStackUnused',['../group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595',1,'pios_sys.h']]],
+  ['pios_5fsys_5fosstackunused',['PIOS_SYS_OsStackUnused',['../group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4',1,'pios_sys.h']]],
   ['pios_5fsys_5freset',['PIOS_SYS_Reset',['../group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0',1,'pios_sys.h']]],
   ['pios_5fsys_5fserialnumberget',['PIOS_SYS_SerialNumberGet',['../group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da',1,'pios_sys.h']]],
   ['pios_5fsys_5fserialnumbergetbinary',['PIOS_SYS_SerialNumberGetBinary',['../group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f',1,'pios_sys.h']]],

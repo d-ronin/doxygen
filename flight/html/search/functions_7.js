@@ -38,7 +38,6 @@ var searchData=
   ['get_5futm_5fparameters',['Get_UTM_Parameters',['../utm_8c.html#af500460dd3dc5b9af465135cdd40fe59',1,'Get_UTM_Parameters(double *a, double *f, int *override):&#160;utm.c'],['../utm_8h.html#af500460dd3dc5b9af465135cdd40fe59',1,'Get_UTM_Parameters(double *a, double *f, int *override):&#160;utm.c']]],
   ['getcomport',['getComPort',['../group___telemetry_module.html#ga079a96905407622d10643ce69c08b288',1,'telemetry.c']]],
   ['geteventmask',['getEventMask',['../group___u_a_v_object_handling.html#ga4d5c4b56acbb2e636aa006ac36d943e5',1,'getEventMask(UAVObjHandle obj_handle, struct pios_queue *queue):&#160;uavobjectmanager.c'],['../group___u_a_v_object_handling.html#ga4d5c4b56acbb2e636aa006ac36d943e5',1,'getEventMask(UAVObjHandle obj_handle, struct pios_queue *queue):&#160;uavobjectmanager.c']]],
-  ['getfreeirqstacksize',['GetFreeIrqStackSize',['../group___system_module.html#gab6b5e73b3c4c1fac4c572b3cdbaa76b6',1,'systemmod.c']]],
   ['getinstance',['getInstance',['../group___u_a_v_object_handling.html#gaff1de6fe5a8d1db05c736c110f96a932',1,'uavobjectmanager.c']]],
   ['getned',['getNED',['../group___attitude_module.html#gaa56401136ce036bf887c06f80ea67c09',1,'attitude.c']]],
   ['gimbal_5fcan_5fmessage',['gimbal_can_message',['../group___camera_stab.html#ga075b1f2ced744297ada10806df37e83c',1,'camerastab.c']]],

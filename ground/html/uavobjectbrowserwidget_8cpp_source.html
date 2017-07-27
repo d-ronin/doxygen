@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b638c10</span>
+   &#160;<span id="projectnumber">595661c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -661,158 +661,160 @@ $(document).ready(function(){initNavTree('uavobjectbrowserwidget_8cpp_source.htm
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordflow">switch</span> (e-&gt;key()) {</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordflow">case</span> Qt::Key_Escape:</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        searchTextCleared();</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        QWidget::keyPressEvent(e);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    }</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="keywordtype">void</span> UAVObjectBrowserWidget::keyReleaseEvent(QKeyEvent *e)</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordflow">switch</span> (e-&gt;key()) {</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">case</span> Qt::Key_Escape:</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        searchTextCleared();</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        QWidget::keyReleaseEvent(e);</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    }</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;}</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">//============================</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        Q_FALLTHROUGH();</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        QWidget::keyPressEvent(e);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    }</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;}</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="keywordtype">void</span> UAVObjectBrowserWidget::keyReleaseEvent(QKeyEvent *e)</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;{</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">switch</span> (e-&gt;key()) {</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">case</span> Qt::Key_Escape:</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        searchTextCleared();</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        Q_FALLTHROUGH();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        QWidget::keyReleaseEvent(e);</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    }</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;}</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
-<div class="line"><a name="l00657"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">  657</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">UAVOBrowserTreeView::UAVOBrowserTreeView</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> updateTimerPeriod)</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    : QTreeView()</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    , m_updateTreeViewFlag(false)</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;{</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="comment">// Start timer at 100ms</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    m_updateViewTimer.start(updateTimerPeriod);</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="comment">// Connect the timer</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    connect(&amp;m_updateViewTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;UAVOBrowserTreeView::onTimeout_updateView);</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;}</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00668"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">  668</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">UAVOBrowserTreeView::updateTimerPeriod</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> val)</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;{</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keywordflow">if</span> (val == 0) {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="comment">// If val == 0, disable throttling by stopping the timer.</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        m_updateViewTimer.stop();</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="comment">// If the UAVO has a very fast data rate, then don&#39;t go the full speed.</span></div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <span class="keywordflow">if</span> (val &lt; 125) {</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            val = 125; <span class="comment">// Don&#39;t try to draw the browser faster than 8Hz.</span></div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        }</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        m_updateViewTimer.start(val);</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    }</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="keywordtype">void</span> UAVOBrowserTreeView::onTimeout_updateView()</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;{</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordflow">if</span> (m_updateTreeViewFlag == <span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        QModelIndex topLeftIndex = model()-&gt;index(0, 0);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        QModelIndex bottomRightIndex = model()-&gt;index(1, 1);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        QTreeView::dataChanged(topLeftIndex, bottomRightIndex);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    }</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    m_updateTreeViewFlag = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;}</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
-<div class="line"><a name="l00709"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">  709</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">UAVOBrowserTreeView::updateView</a>(<span class="keyword">const</span> QModelIndex &amp;topLeftProxy,</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                                     <span class="keyword">const</span> QModelIndex &amp;bottomRightProxy)</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;{</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    Q_UNUSED(bottomRightProxy);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="comment">// First static_cast from *void to a tree item pointer. This is safe because we know all the</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="comment">// indices are tree items</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    QModelIndex topLeftModel = proxyModel-&gt;mapToSource(topLeftProxy);</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <a class="code" href="class_tree_item.html">TreeItem</a> *treeItemPtr = <span class="keyword">static_cast&lt;</span><a class="code" href="class_tree_item.html">TreeItem</a> *<span class="keyword">&gt;</span>(topLeftModel.internalPointer());</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="comment">// Second, do a dynamic_cast in order to detect if this tree item is a data object</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <a class="code" href="class_data_object_tree_item.html">DataObjectTreeItem</a> *dataObjectTreeItemPtr = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_data_object_tree_item.html">DataObjectTreeItem</a> *<span class="keyword">&gt;</span>(treeItemPtr);</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordflow">if</span> (dataObjectTreeItemPtr == NULL) {</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        <span class="comment">// Do nothing. These QModelIndices are generated by the highlight manager for individual</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="comment">// UAVO fields, which are both updated when updating that UAVO&#39;s branch of the settings or</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="comment">// dynamic data tree.</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    m_updateTreeViewFlag = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;}</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00732"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">  732</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">UAVOBrowserTreeView::dataChanged</a>(<span class="keyword">const</span> QModelIndex &amp;topLeft, <span class="keyword">const</span> QModelIndex &amp;bottomRight,</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                                      <span class="keyword">const</span> QVector&lt;int&gt; &amp;roles)</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;{</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    Q_UNUSED(roles);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="comment">// If the timer is active, then throttle updates...</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keywordflow">if</span> (m_updateViewTimer.isActive()) {</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <a class="code" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">updateView</a>(topLeft, bottomRight);</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    } <span class="keywordflow">else</span> { <span class="comment">// ... otherwise pass them directly on to the treeview.</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        QTreeView::dataChanged(topLeft, bottomRight);</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    }</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;}</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">//============================</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">//============================</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
+<div class="line"><a name="l00659"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">  659</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">UAVOBrowserTreeView::UAVOBrowserTreeView</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> updateTimerPeriod)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    : QTreeView()</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    , m_updateTreeViewFlag(false)</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;{</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="comment">// Start timer at 100ms</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    m_updateViewTimer.start(updateTimerPeriod);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="comment">// Connect the timer</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    connect(&amp;m_updateViewTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;UAVOBrowserTreeView::onTimeout_updateView);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;}</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">  670</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">UAVOBrowserTreeView::updateTimerPeriod</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> val)</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;{</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keywordflow">if</span> (val == 0) {</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="comment">// If val == 0, disable throttling by stopping the timer.</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        m_updateViewTimer.stop();</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="comment">// If the UAVO has a very fast data rate, then don&#39;t go the full speed.</span></div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">if</span> (val &lt; 125) {</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            val = 125; <span class="comment">// Don&#39;t try to draw the browser faster than 8Hz.</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        }</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        m_updateViewTimer.start(val);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    }</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;}</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="keywordtype">void</span> UAVOBrowserTreeView::onTimeout_updateView()</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;{</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordflow">if</span> (m_updateTreeViewFlag == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        QModelIndex topLeftIndex = model()-&gt;index(0, 0);</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        QModelIndex bottomRightIndex = model()-&gt;index(1, 1);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        QTreeView::dataChanged(topLeftIndex, bottomRightIndex);</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    }</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    m_updateTreeViewFlag = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;}</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00711"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">  711</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">UAVOBrowserTreeView::updateView</a>(<span class="keyword">const</span> QModelIndex &amp;topLeftProxy,</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                                     <span class="keyword">const</span> QModelIndex &amp;bottomRightProxy)</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;{</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    Q_UNUSED(bottomRightProxy);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="comment">// First static_cast from *void to a tree item pointer. This is safe because we know all the</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="comment">// indices are tree items</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    QModelIndex topLeftModel = proxyModel-&gt;mapToSource(topLeftProxy);</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <a class="code" href="class_tree_item.html">TreeItem</a> *treeItemPtr = <span class="keyword">static_cast&lt;</span><a class="code" href="class_tree_item.html">TreeItem</a> *<span class="keyword">&gt;</span>(topLeftModel.internalPointer());</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="comment">// Second, do a dynamic_cast in order to detect if this tree item is a data object</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <a class="code" href="class_data_object_tree_item.html">DataObjectTreeItem</a> *dataObjectTreeItemPtr = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_data_object_tree_item.html">DataObjectTreeItem</a> *<span class="keyword">&gt;</span>(treeItemPtr);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordflow">if</span> (dataObjectTreeItemPtr == NULL) {</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="comment">// Do nothing. These QModelIndices are generated by the highlight manager for individual</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="comment">// UAVO fields, which are both updated when updating that UAVO&#39;s branch of the settings or</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="comment">// dynamic data tree.</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    }</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    m_updateTreeViewFlag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;}</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00734"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">  734</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">UAVOBrowserTreeView::dataChanged</a>(<span class="keyword">const</span> QModelIndex &amp;topLeft, <span class="keyword">const</span> QModelIndex &amp;bottomRight,</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                                      <span class="keyword">const</span> QVector&lt;int&gt; &amp;roles)</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;{</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    Q_UNUSED(roles);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="comment">// If the timer is active, then throttle updates...</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordflow">if</span> (m_updateViewTimer.isActive()) {</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <a class="code" href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">updateView</a>(topLeft, bottomRight);</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    } <span class="keywordflow">else</span> { <span class="comment">// ... otherwise pass them directly on to the treeview.</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        QTreeView::dataChanged(topLeft, bottomRight);</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    }</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;}</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">  747</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">TreeSortFilterProxyModel::TreeSortFilterProxyModel</a>(QObject *p)</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    : QSortFilterProxyModel(p)</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;{</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    Q_ASSERT(p);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;}</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
-<div class="line"><a name="l00764"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">  764</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">TreeSortFilterProxyModel::filterAcceptsRow</a>(<span class="keywordtype">int</span> source_row,</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                                                <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(source_row, source_parent))</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="comment">// accept if any of the parents is accepted on it&#39;s own merits</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    QModelIndex parent = source_parent;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">while</span> (parent.isValid()) {</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(parent.row(), parent.parent()))</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        parent = parent.parent();</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    }</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="comment">// accept if any of the children is accepted on it&#39;s own merits</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">hasAcceptedChildren</a>(source_row, source_parent)) {</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    }</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;}</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">  786</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">TreeSortFilterProxyModel::filterAcceptsRowItself</a>(<span class="keywordtype">int</span> source_row,</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;                                                      <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordflow">return</span> QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;}</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
-<div class="line"><a name="l00792"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">  792</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">TreeSortFilterProxyModel::hasAcceptedChildren</a>(<span class="keywordtype">int</span> source_row,</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                                                   <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    QModelIndex item = sourceModel()-&gt;index(source_row, 0, source_parent);</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordflow">if</span> (!item.isValid()) {</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="comment">// qDebug() &lt;&lt; &quot;item invalid&quot; &lt;&lt; source_parent &lt;&lt; source_row;</span></div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    }</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="comment">// check if there are children</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    <span class="keywordtype">int</span> childCount = item.model()-&gt;rowCount(item);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    <span class="keywordflow">if</span> (childCount == 0)</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; childCount; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, item))</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="comment">// recursive call -&gt; NOTICE that this is depth-first searching, you&#39;re probably better off</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="comment">// with breadth first search...</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">hasAcceptedChildren</a>(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, item))</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    }</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;}</div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gad153ae87968c3800ac84f46716479f54"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">TreeSortFilterProxyModel::hasAcceptedChildren</a></div><div class="ttdeci">bool hasAcceptedChildren(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00792">uavobjectbrowserwidget.cpp:792</a></div></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">//============================</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">  749</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">TreeSortFilterProxyModel::TreeSortFilterProxyModel</a>(QObject *p)</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    : QSortFilterProxyModel(p)</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;{</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    Q_ASSERT(p);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;}</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
+<div class="line"><a name="l00766"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">  766</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">TreeSortFilterProxyModel::filterAcceptsRow</a>(<span class="keywordtype">int</span> source_row,</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                                                <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(source_row, source_parent))</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="comment">// accept if any of the parents is accepted on it&#39;s own merits</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    QModelIndex parent = source_parent;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">while</span> (parent.isValid()) {</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(parent.row(), parent.parent()))</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        parent = parent.parent();</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    }</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="comment">// accept if any of the children is accepted on it&#39;s own merits</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">hasAcceptedChildren</a>(source_row, source_parent)) {</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    }</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;}</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
+<div class="line"><a name="l00788"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">  788</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">TreeSortFilterProxyModel::filterAcceptsRowItself</a>(<span class="keywordtype">int</span> source_row,</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                                                      <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordflow">return</span> QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;}</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">  794</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">TreeSortFilterProxyModel::hasAcceptedChildren</a>(<span class="keywordtype">int</span> source_row,</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                                                   <span class="keyword">const</span> QModelIndex &amp;source_parent)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    QModelIndex item = sourceModel()-&gt;index(source_row, 0, source_parent);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    <span class="keywordflow">if</span> (!item.isValid()) {</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="comment">// qDebug() &lt;&lt; &quot;item invalid&quot; &lt;&lt; source_parent &lt;&lt; source_row;</span></div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    }</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    <span class="comment">// check if there are children</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    <span class="keywordtype">int</span> childCount = item.model()-&gt;rowCount(item);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordflow">if</span> (childCount == 0)</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; childCount; ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">filterAcceptsRowItself</a>(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, item))</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="comment">// recursive call -&gt; NOTICE that this is depth-first searching, you&#39;re probably better off</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="comment">// with breadth first search...</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">hasAcceptedChildren</a>(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, item))</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    }</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;}</div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gad153ae87968c3800ac84f46716479f54"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gad153ae87968c3800ac84f46716479f54">TreeSortFilterProxyModel::hasAcceptedChildren</a></div><div class="ttdeci">bool hasAcceptedChildren(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00794">uavobjectbrowserwidget.cpp:794</a></div></div>
 <div class="ttc" id="class_tree_sort_filter_proxy_model_html"><div class="ttname"><a href="class_tree_sort_filter_proxy_model.html">TreeSortFilterProxyModel</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8h_source.html#l00044">uavobjectbrowserwidget.h:44</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga24441264e09197268019d3f5491ebcae"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga24441264e09197268019d3f5491ebcae">UAVObjectManager::getObjectInstancesVector</a></div><div class="ttdeci">QVector&lt; UAVObject * &gt; getObjectInstancesVector(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00248">uavobjectmanager.cpp:248</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gafd2a060786af69aa16df388207e72f06"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gafd2a060786af69aa16df388207e72f06">UAVObjectTreeModel::initializeModel</a></div><div class="ttdeci">void initializeModel(bool categorize=true, bool useScientificFloatNotation=true)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00147">uavobjecttreemodel.cpp:147</a></div></div>
@@ -839,9 +841,9 @@ $(document).ready(function(){initNavTree('uavobjectbrowserwidget_8cpp_source.htm
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gaadeb5af3a70679bcb2b6360274e9c7de"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaadeb5af3a70679bcb2b6360274e9c7de">UAVObject::getMetadata</a></div><div class="ttdeci">virtual Metadata getMetadata()=0</div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga699f601d513ba2d43414d7db3d9f9ac6"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga699f601d513ba2d43414d7db3d9f9ac6">UAVObjectBrowserWidget::doRefreshHiddenObjects</a></div><div class="ttdeci">void doRefreshHiddenObjects()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00358">uavobjectbrowserwidget.cpp:358</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga96556d7a4724a18462706ac54d6cc761"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga96556d7a4724a18462706ac54d6cc761">UAVObjectTreeModel::getMetaDataIndexes</a></div><div class="ttdeci">QList&lt; QModelIndex &gt; getMetaDataIndexes()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00397">uavobjecttreemodel.cpp:397</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gae699767c613edf1278d9dec5ab178c4d"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">TreeSortFilterProxyModel::TreeSortFilterProxyModel</a></div><div class="ttdeci">TreeSortFilterProxyModel(QObject *parent)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00747">uavobjectbrowserwidget.cpp:747</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gae699767c613edf1278d9dec5ab178c4d"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gae699767c613edf1278d9dec5ab178c4d">TreeSortFilterProxyModel::TreeSortFilterProxyModel</a></div><div class="ttdeci">TreeSortFilterProxyModel(QObject *parent)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00749">uavobjectbrowserwidget.cpp:749</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gabbb57c1d93322a8967289d6bf6201caa"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gabbb57c1d93322a8967289d6bf6201caa">UAVObjectBrowserWidget::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdoc">Initializes the model and makes the necessary signal/slot connections. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00268">uavobjectbrowserwidget.cpp:268</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga7d4898a143c404ebb20c73331bd4610c"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">UAVOBrowserTreeView::updateView</a></div><div class="ttdeci">void updateView(const QModelIndex &amp;topLeft, const QModelIndex &amp;bottomRight)</div><div class="ttdoc">UAVOBrowserTreeView::updateView Determines if a view updates lies outside the range of updates queued...</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00709">uavobjectbrowserwidget.cpp:709</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga7d4898a143c404ebb20c73331bd4610c"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga7d4898a143c404ebb20c73331bd4610c">UAVOBrowserTreeView::updateView</a></div><div class="ttdeci">void updateView(const QModelIndex &amp;topLeft, const QModelIndex &amp;bottomRight)</div><div class="ttdoc">UAVOBrowserTreeView::updateView Determines if a view updates lies outside the range of updates queued...</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00711">uavobjectbrowserwidget.cpp:711</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a7e761571cc6ee4432fa664f23fcb7032"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a7e761571cc6ee4432fa664f23fcb7032">UAVObject::UPDATEMODE_MANUAL</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00074">uavobject.h:74</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gae6acba39e9d79df031b677a379ceef9c"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c">UAVObjectBrowserWidget::viewOptionsChanged</a></div><div class="ttdeci">void viewOptionsChanged(bool categorized, bool scientific, bool metadata, bool hideNotPresent)</div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga58eb3c62e766beb46fdb39869c0e156a"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga58eb3c62e766beb46fdb39869c0e156a">UAVObjectTreeModel::getDataObjectIndexes</a></div><div class="ttdeci">QList&lt; QModelIndex &gt; getDataObjectIndexes()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00410">uavobjecttreemodel.cpp:410</a></div></div>
@@ -855,12 +857,12 @@ $(document).ready(function(){initNavTree('uavobjectbrowserwidget_8cpp_source.htm
 <div class="ttc" id="uavobjecttreemodel_8h_html"><div class="ttname"><a href="uavobjecttreemodel_8h.html">uavobjecttreemodel.h</a></div></div>
 <div class="ttc" id="class_u_a_v_object_tree_model_html"><div class="ttname"><a href="class_u_a_v_object_tree_model.html">UAVObjectTreeModel</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8h_source.html#l00056">uavobjecttreemodel.h:56</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a6057e8a8af67f00940fad6f62499b843"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a6057e8a8af67f00940fad6f62499b843">UAVObject::UPDATEMODE_PERIODIC</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00075">uavobject.h:75</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gad62a3c1b8bdc83cb4fc1e016185fce25"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">TreeSortFilterProxyModel::filterAcceptsRow</a></div><div class="ttdeci">bool filterAcceptsRow(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdoc">TreeSortFilterProxyModel::filterAcceptsRow Taken from http://qt-project.org/forums/viewthread/7782. This proxy model will accept rows: </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00764">uavobjectbrowserwidget.cpp:764</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gad62a3c1b8bdc83cb4fc1e016185fce25"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gad62a3c1b8bdc83cb4fc1e016185fce25">TreeSortFilterProxyModel::filterAcceptsRow</a></div><div class="ttdeci">bool filterAcceptsRow(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdoc">TreeSortFilterProxyModel::filterAcceptsRow Taken from http://qt-project.org/forums/viewthread/7782. This proxy model will accept rows: </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00766">uavobjectbrowserwidget.cpp:766</a></div></div>
 <div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga25c4d15cb8b12772d8d6aca9f1f48a3c"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">TreeSortFilterProxyModel::filterAcceptsRowItself</a></div><div class="ttdeci">bool filterAcceptsRowItself(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00786">uavobjectbrowserwidget.cpp:786</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga25c4d15cb8b12772d8d6aca9f1f48a3c"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga25c4d15cb8b12772d8d6aca9f1f48a3c">TreeSortFilterProxyModel::filterAcceptsRowItself</a></div><div class="ttdeci">bool filterAcceptsRowItself(int source_row, const QModelIndex &amp;source_parent) const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00788">uavobjectbrowserwidget.cpp:788</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga334d511c0135d89a4cba9aceb8b9403d"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga334d511c0135d89a4cba9aceb8b9403d">UAVOBrowserTreeView::setModel</a></div><div class="ttdeci">virtual void setModel(QAbstractItemModel *model)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8h_source.html#l00063">uavobjectbrowserwidget.h:63</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gae115cb3e046c94117d64ee87764cb3ef"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gae115cb3e046c94117d64ee87764cb3ef">TreeItem::getChild</a></div><div class="ttdeci">TreeItem * getChild(int index)</div><div class="ttdef"><b>Definition:</b> <a href="treeitem_8cpp_source.html#l00145">treeitem.cpp:145</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gadd1772fff63ae289216671aa857e05c1"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">UAVOBrowserTreeView::dataChanged</a></div><div class="ttdeci">virtual void dataChanged(const QModelIndex &amp;topLeft, const QModelIndex &amp;bottomRight, const QVector&lt; int &gt; &amp;roles=QVector&lt; int &gt;())</div><div class="ttdoc">dataChanged Reimplements QTreeView::dataChanged signal </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00732">uavobjectbrowserwidget.cpp:732</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gadd1772fff63ae289216671aa857e05c1"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gadd1772fff63ae289216671aa857e05c1">UAVOBrowserTreeView::dataChanged</a></div><div class="ttdeci">virtual void dataChanged(const QModelIndex &amp;topLeft, const QModelIndex &amp;bottomRight, const QVector&lt; int &gt; &amp;roles=QVector&lt; int &gt;())</div><div class="ttdoc">dataChanged Reimplements QTreeView::dataChanged signal </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00734">uavobjectbrowserwidget.cpp:734</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga92eb502fc16ba82b924a430acaa55f46"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">UAVObject::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00133">uavobject.cpp:133</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
@@ -869,12 +871,12 @@ $(document).ready(function(){initNavTree('uavobjectbrowserwidget_8cpp_source.htm
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00076">uavobject.h:76</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga2fb82ee596cfb04c957a3c29c470cd52"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52">UAVObjectBrowserWidget::setViewOptions</a></div><div class="ttdeci">void setViewOptions(bool categorized, bool scientific, bool metadata, bool hideNotPresent)</div><div class="ttdoc">UAVObjectBrowserWidget::setViewOptions Sets the viewing options. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00255">uavobjectbrowserwidget.cpp:255</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gaf20e30a1514ed99cf331341a42b5e848"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gaf20e30a1514ed99cf331341a42b5e848">UAVObjectBrowserWidget::refreshHiddenObjects</a></div><div class="ttdeci">void refreshHiddenObjects()</div><div class="ttdoc">Refreshes the hidden object display. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00308">uavobjectbrowserwidget.cpp:308</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gab90a0cc68a8ab76bd30d293afd031f38"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">UAVOBrowserTreeView::UAVOBrowserTreeView</a></div><div class="ttdeci">UAVOBrowserTreeView(unsigned int updateTimerPeriod)</div><div class="ttdoc">UAVOBrowserTreeView::UAVOBrowserTreeView Constructor for reimplementation of QTreeView. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00657">uavobjectbrowserwidget.cpp:657</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_gab90a0cc68a8ab76bd30d293afd031f38"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gab90a0cc68a8ab76bd30d293afd031f38">UAVOBrowserTreeView::UAVOBrowserTreeView</a></div><div class="ttdeci">UAVOBrowserTreeView(unsigned int updateTimerPeriod)</div><div class="ttdoc">UAVOBrowserTreeView::UAVOBrowserTreeView Constructor for reimplementation of QTreeView. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00659">uavobjectbrowserwidget.cpp:659</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gad76114e4c1c4c9aa7acd1b58ad7479b0"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gad76114e4c1c4c9aa7acd1b58ad7479b0">UAVObjectTreeModel::presentOnHardwareChanged</a></div><div class="ttdeci">void presentOnHardwareChanged()</div></div>
 <div class="ttc" id="class_browser_item_delegate_html"><div class="ttname"><a href="class_browser_item_delegate.html">BrowserItemDelegate</a></div><div class="ttdef"><b>Definition:</b> <a href="browseritemdelegate_8h_source.html#l00035">browseritemdelegate.h:35</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga63e16f896af89aa165dcd9c31d42ce83"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga63e16f896af89aa165dcd9c31d42ce83">TreeItem::setUpdatedOnly</a></div><div class="ttdeci">void setUpdatedOnly(bool updated)</div><div class="ttdef"><b>Definition:</b> <a href="treeitem_8cpp_source.html#l00209">treeitem.cpp:209</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga9a903a75f0eb4f7b88c87dc948d8f63a"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">UAVOBrowserTreeView::updateTimerPeriod</a></div><div class="ttdeci">void updateTimerPeriod(unsigned int val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00668">uavobjectbrowserwidget.cpp:668</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga9a903a75f0eb4f7b88c87dc948d8f63a"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga9a903a75f0eb4f7b88c87dc948d8f63a">UAVOBrowserTreeView::updateTimerPeriod</a></div><div class="ttdeci">void updateTimerPeriod(unsigned int val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectbrowserwidget_8cpp_source.html#l00670">uavobjectbrowserwidget.cpp:670</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a9425be9aab51621e317ba7ade564b570"><div class="ttname"><a href="_o_p_plots_8m.html#a9425be9aab51621e317ba7ade564b570">e</a></div><div class="ttdeci">e</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00099">OPPlots.m:99</a></div></div>
 <div class="ttc" id="class_tree_item_html"><div class="ttname"><a href="class_tree_item.html">TreeItem</a></div><div class="ttdef"><b>Definition:</b> <a href="treeitem_8h_source.html#l00096">treeitem.h:96</a></div></div>
 <div class="ttc" id="uavobjectbrowserwidget_8h_html"><div class="ttname"><a href="uavobjectbrowserwidget_8h.html">uavobjectbrowserwidget.h</a></div></div>

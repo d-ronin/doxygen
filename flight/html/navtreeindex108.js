@@ -1,15 +1,5 @@
 var NAVTREEINDEX108 =
 {
-"pios__rfm22b__regs_8h.html#gaf1e0205ad7c5c2c952b4ac797a17c4ca":[5,0,0,3,1,87,339],
-"pios__rfm22b__regs_8h.html#gaf20f39d0f2721a40cac352c26ce8a834":[5,0,0,3,1,87,235],
-"pios__rfm22b__regs_8h.html#gaf2513ddb94f86b767705c883083949b9":[5,0,0,3,1,87,376],
-"pios__rfm22b__regs_8h.html#gaf28c92be7629b34a1f124aae0234a6ef":[5,0,0,3,1,87,30],
-"pios__rfm22b__regs_8h.html#gaf297b0704777e8a2f9c33a487c838e93":[5,0,0,3,1,87,224],
-"pios__rfm22b__regs_8h.html#gaf31fd8c0c55c2bcea8ca965f4c9933e5":[5,0,0,3,1,87,317],
-"pios__rfm22b__regs_8h.html#gaf4c0605c80123a97c3e42e6306608622":[5,0,0,3,1,87,126],
-"pios__rfm22b__regs_8h.html#gaf4e7def9831ec391364814006dae5937":[5,0,0,3,1,87,289],
-"pios__rfm22b__regs_8h.html#gaf56d3073fa82f554c6cfdf36b7975312":[5,0,0,3,1,87,311],
-"pios__rfm22b__regs_8h.html#gaf5e222ff90faa7b7015cbe96b25d0512":[5,0,0,3,1,87,40],
 "pios__rfm22b__regs_8h.html#gaf63303f9130e50916b99b9e06bdc89a0":[5,0,0,3,1,87,406],
 "pios__rfm22b__regs_8h.html#gaf66f5535e837597546016f843da8aabd":[5,0,0,3,1,87,258],
 "pios__rfm22b__regs_8h.html#gaf6a3b70c938cbd0f2193f1819c23c5e8":[5,0,0,3,1,87,51],
@@ -249,5 +239,15 @@ var NAVTREEINDEX108 =
 "pios__tim__priv_8h.html#gaa9fff718f3bece2774971de5397a5f14":[5,0,0,3,1,106,6],
 "pios__tim__priv_8h.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,3,1,106,4],
 "pios__tim__priv_8h_source.html":[5,0,0,3,1,106],
-"pios__usart_8h.html":[5,0,0,3,3,0,9]
+"pios__usart_8h.html":[5,0,0,3,3,0,9],
+"pios__usart_8h_source.html":[5,0,0,3,3,0,9],
+"pios__usart__config_8h.html":[5,0,0,3,7,0,5],
+"pios__usart__config_8h.html#a41c49336e4c9193862c99407c6d27b44":[5,0,0,3,7,0,5,0],
+"pios__usart__config_8h_source.html":[5,0,0,3,7,0,5],
+"pios__usart__priv_8h.html":[5,0,0,3,3,0,10],
+"pios__usart__priv_8h.html#ga24d5df335fd859a76e054646cf634314":[5,0,0,3,3,0,10,1],
+"pios__usart__priv_8h.html#gaa18aa39830281e33f66deabc31c2a86e":[5,0,0,3,3,0,10,2],
+"pios__usart__priv_8h.html#gad3e86aacccbc14969d50e491cf69afa8":[5,0,0,3,3,0,10,0],
+"pios__usart__priv_8h_source.html":[5,0,0,3,3,0,10],
+"pios__usb_8h.html":[5,0,0,3,1,107]
 };
