@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">48988c9</span>
+   &#160;<span id="projectnumber">939a890</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,91 +132,93 @@ $(document).ready(function(){initNavTree('outputcalibrationutil_8cpp_source.html
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vehicleconfigurationhelper_8h.html">vehicleconfigurationhelper.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;manualcontrolsettings.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">   34</a></span>&#160;<a class="code" href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">OutputCalibrationUtil::OutputCalibrationUtil</a>(QObject *parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : QObject(parent)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_outputChannel(-1)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_safeValue(1000)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_uavObjectManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_ASSERT(m_uavObjectManager);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">   45</a></span>&#160;<a class="code" href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">OutputCalibrationUtil::~OutputCalibrationUtil</a>()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">stopChannelOutput</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">OutputCalibrationUtil::startChannelOutput</a>(quint16 channel, quint16 safeValue)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &lt; 0 &amp;&amp; channel &lt; ActuatorCommand::CHANNEL_NUMELEM) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// Start output...</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        m_outputChannel = channel;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        m_safeValue = safeValue;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Starting output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">   36</a></span>&#160;<a class="code" href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">OutputCalibrationUtil::OutputCalibrationUtil</a>(QObject *parent)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    : QObject(parent)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_outputChannel(-1)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    , m_safeValue(1000)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_uavObjectManager = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>&gt;();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_ASSERT(m_uavObjectManager);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">   47</a></span>&#160;<a class="code" href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">OutputCalibrationUtil::~OutputCalibrationUtil</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">stopChannelOutput</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">OutputCalibrationUtil::startChannelOutput</a>(quint16 channel, quint16 safeValue)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &lt; 0 &amp;&amp; channel &lt; ActuatorCommand::CHANNEL_NUMELEM) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Start output...</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        m_outputChannel = channel;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        m_safeValue = safeValue;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Q_ASSERT(actuatorCommand);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        UAVObject::Metadata metaData = actuatorCommand-&gt;getMetadata();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        m_savedActuatorCommandMetadata = metaData;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// Store current data for later restore</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        m_savedActuatorCommandData = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// Enable actuator control from GCS...</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// Store current metadata for later restore</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(metaData, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        metaData.gcsTelemetryUpdatePeriod = 100;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// Apply changes</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        actuatorCommand-&gt;setMetadata(metaData);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; started.&quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">OutputCalibrationUtil::stopChannelOutput</a>()</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &gt;= 0) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Stopping output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// Stop output...</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">setChannelOutputValue</a>(m_safeValue);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Settings output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; to &quot;</span> &lt;&lt; m_safeValue;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// Restore metadata to what it was before</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        Q_ASSERT(actuatorCommand);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// actuatorCommand-&gt;setData(m_savedActuatorCommandData);</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        actuatorCommand-&gt;setMetadata(m_savedActuatorCommandMetadata);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        actuatorCommand-&gt;updated();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; stopped.&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Starting output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Q_ASSERT(actuatorCommand);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        UAVObject::Metadata metaData = actuatorCommand-&gt;getMetadata();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        m_savedActuatorCommandMetadata = metaData;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Store current data for later restore</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        m_savedActuatorCommandData = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Enable actuator control from GCS...</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// Store current metadata for later restore</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga190e264f603dd8ade6b6f9e84debfb4c">UAVObject::SetGcsTelemetryAcked</a>(metaData, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a>(metaData, <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        metaData.gcsTelemetryUpdatePeriod = 100;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// Apply changes</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        actuatorCommand-&gt;setMetadata(metaData);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        actuatorCommand-&gt;updated();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; started.&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">OutputCalibrationUtil::stopChannelOutput</a>()</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &gt;= 0) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Stopping output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// Stop output...</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">setChannelOutputValue</a>(m_safeValue);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Settings output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; to &quot;</span> &lt;&lt; m_safeValue;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// Restore metadata to what it was before</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Q_ASSERT(actuatorCommand);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// actuatorCommand-&gt;setData(m_savedActuatorCommandData);</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        actuatorCommand-&gt;setMetadata(m_savedActuatorCommandMetadata);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        actuatorCommand-&gt;updated();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        m_outputChannel = -1;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">OutputCalibrationUtil::setChannelOutputValue</a>(quint16 value)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &gt;= 0) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// Set output value</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Setting output value for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; to &quot;</span> &lt;&lt; value</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        Q_ASSERT(actuatorCommand);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ActuatorCommand::DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a> = actuatorCommand-&gt;getData();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        data.Channel[m_outputChannel] = value;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        actuatorCommand-&gt;setData(data);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="ttc" id="group___setup_wizard_html_gad4fa78a9ae7280d3f4476614ab1b75bc"><div class="ttname"><a href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">OutputCalibrationUtil::OutputCalibrationUtil</a></div><div class="ttdeci">OutputCalibrationUtil(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00034">outputcalibrationutil.cpp:34</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gabc2baa99b6831e09b1a481dbdcae92ab"><div class="ttname"><a href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">OutputCalibrationUtil::~OutputCalibrationUtil</a></div><div class="ttdeci">~OutputCalibrationUtil()</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00045">outputcalibrationutil.cpp:45</a></div></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Output for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; stopped.&quot;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        m_outputChannel = -1;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">OutputCalibrationUtil::setChannelOutputValue</a>(quint16 value)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (m_outputChannel &gt;= 0) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// Set output value</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Setting output value for channel &quot;</span> &lt;&lt; m_outputChannel &lt;&lt; <span class="stringliteral">&quot; to &quot;</span> &lt;&lt; value</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ActuatorCommand *actuatorCommand = ActuatorCommand::GetInstance(m_uavObjectManager);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        Q_ASSERT(actuatorCommand);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        ActuatorCommand::DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a> = actuatorCommand-&gt;getData();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        data.Channel[m_outputChannel] = value;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        actuatorCommand-&gt;setData(data);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="ttc" id="group___setup_wizard_html_gad4fa78a9ae7280d3f4476614ab1b75bc"><div class="ttname"><a href="group___setup_wizard.html#gad4fa78a9ae7280d3f4476614ab1b75bc">OutputCalibrationUtil::OutputCalibrationUtil</a></div><div class="ttdeci">OutputCalibrationUtil(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00036">outputcalibrationutil.cpp:36</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gabc2baa99b6831e09b1a481dbdcae92ab"><div class="ttname"><a href="group___setup_wizard.html#gabc2baa99b6831e09b1a481dbdcae92ab">OutputCalibrationUtil::~OutputCalibrationUtil</a></div><div class="ttdeci">~OutputCalibrationUtil()</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00047">outputcalibrationutil.cpp:47</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gaa660f23e03de07c425e5162e2dc42c4f"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaa660f23e03de07c425e5162e2dc42c4f">UAVObject::SetFlightAccess</a></div><div class="ttdeci">static void SetFlightAccess(Metadata &amp;meta, AccessMode mode)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00405">uavobject.cpp:405</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga80357a2f38fa4be23200de86614c3d77a97e59f527995175cc60e103001470e49">UAVObject::ACCESS_READONLY</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00084">uavobject.h:84</a></div></div>
@@ -225,9 +227,9 @@ $(document).ready(function(){initNavTree('outputcalibrationutil_8cpp_source.html
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00099">uavobjecttemplate.h:99</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gaa9fa161b9a5607e4ee1086b72f1b70e5"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaa9fa161b9a5607e4ee1086b72f1b70e5">UAVObject::SetFlightTelemetryUpdateMode</a></div><div class="ttdeci">static void SetFlightTelemetryUpdateMode(Metadata &amp;meta, UpdateMode val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00486">uavobject.cpp:486</a></div></div>
 <div class="ttc" id="outputcalibrationutil_8h_html"><div class="ttname"><a href="outputcalibrationutil_8h.html">outputcalibrationutil.h</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gae8a819e164b2c70af5e6e884ffea3519"><div class="ttname"><a href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">OutputCalibrationUtil::setChannelOutputValue</a></div><div class="ttdeci">void setChannelOutputValue(quint16 value)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00104">outputcalibrationutil.cpp:104</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga82c5762c4c3caeebb767eff46035ba59"><div class="ttname"><a href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">OutputCalibrationUtil::stopChannelOutput</a></div><div class="ttdeci">void stopChannelOutput()</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00083">outputcalibrationutil.cpp:83</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga4e257b02b35e22c737c50cbeab039173"><div class="ttname"><a href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">OutputCalibrationUtil::startChannelOutput</a></div><div class="ttdeci">void startChannelOutput(quint16 channel, quint16 safeValue)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00050">outputcalibrationutil.cpp:50</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gae8a819e164b2c70af5e6e884ffea3519"><div class="ttname"><a href="group___setup_wizard.html#gae8a819e164b2c70af5e6e884ffea3519">OutputCalibrationUtil::setChannelOutputValue</a></div><div class="ttdeci">void setChannelOutputValue(quint16 value)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00106">outputcalibrationutil.cpp:106</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga82c5762c4c3caeebb767eff46035ba59"><div class="ttname"><a href="group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59">OutputCalibrationUtil::stopChannelOutput</a></div><div class="ttdeci">void stopChannelOutput()</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00085">outputcalibrationutil.cpp:85</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga4e257b02b35e22c737c50cbeab039173"><div class="ttname"><a href="group___setup_wizard.html#ga4e257b02b35e22c737c50cbeab039173">OutputCalibrationUtil::startChannelOutput</a></div><div class="ttdeci">void startChannelOutput(quint16 channel, quint16 safeValue)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationutil_8cpp_source.html#l00052">outputcalibrationutil.cpp:52</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00076">uavobject.h:76</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga8fdb0f35b52c8dea0a512fd411d2346e"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga8fdb0f35b52c8dea0a512fd411d2346e">UAVObject::SetGcsTelemetryUpdateMode</a></div><div class="ttdeci">static void SetGcsTelemetryUpdateMode(Metadata &amp;meta, UpdateMode val)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00508">uavobject.cpp:508</a></div></div>

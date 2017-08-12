@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">48988c9</span>
+   &#160;<span id="projectnumber">939a890</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,104 +129,104 @@ $(document).ready(function(){initNavTree('mixercurvewidget_8h_source.html','');}
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef MIXERCURVEWIDGET_H_</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIXERCURVEWIDGET_H_</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QGraphicsView&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QtSvg/QSvgRenderer&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QtSvg/QGraphicsSvgItem&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QtCore/QPointer&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mixercurvepoint_8h.html">uavobjectwidgetutils/mixercurvepoint.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mixercurveline_8h.html">uavobjectwidgetutils/mixercurveline.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectwidgetutils__global_8h.html">uavobjectwidgetutils/uavobjectwidgetutils_global.h</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_mixer_curve_widget.html">   40</a></span>&#160;<span class="keyword">class </span>UAVOBJECTWIDGETUTILS_EXPORT <a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a> : <span class="keyword">public</span> QGraphicsView</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___u_a_v_object_widget_utils.html#ga4dec7e6867bf4ed62c5309f7149f0dd0">   48</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_mixer_curve.html">MixerCurve</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uavobjectwidgetutils__global_8h.html">uavobjectwidgetutils/uavobjectwidgetutils_global.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QGraphicsView&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QSvgRenderer&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QGraphicsSvgItem&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QPointer&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="code" href="class_edge.html">Edge</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span><a class="code" href="class_mixer_node.html">MixerNode</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_mixer_curve_widget.html">   42</a></span>&#160;<span class="keyword">class </span>UAVOBJECTWIDGETUTILS_EXPORT <a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a> : <span class="keyword">public</span> QGraphicsView</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="class_mixer_curve_widget.html">MixerCurveWidget</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> itemMoved(<span class="keywordtype">double</span> itemValue); <span class="comment">// Callback when a point is moved, to be updated</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga2c2f4469e3a93a1aa88633e97073ffa1">initCurve</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> *points);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> <a class="code" href="group___config_plugin.html#ga676b2baa08ec2deceb84e56ceddd9c6c">getCurve</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga149a9a0d28a983db45a48ed71c35f21d">initLinearCurve</a>(<span class="keywordtype">int</span> numPoints, <span class="keywordtype">double</span> maxValue = 1, <span class="keywordtype">double</span> minValue = 0);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga0292ee7413de63e428fd0ca9ec2d0f08">setCurve</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> *points);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gae709bb34fd5b4386c7538059fd77e523">setMin</a>(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga6d107a62e8f6d1115afbe9869d5fbf62">getMin</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga122781733f46efdca9586ab7d1cb46e3">setMax</a>(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga218856c51ab9ecff11ecfcf0f6074589">getMax</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga7cd12492effe33f54cbbbc2eed7a5acb">setRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> cmdActivated(<a class="code" href="class_mixer_node.html">MixerNode</a> *node);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> activateCommand(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> isCommandActive(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> showCommand(<span class="keyword">const</span> QString &amp;name, <span class="keywordtype">bool</span> show);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> showCommands(<span class="keywordtype">bool</span> show);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getCmdNode(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setCommandText(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___u_a_v_object_widget_utils.html#ga359d5a2efb6966cba1d78bbdb2e7759d">   69</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> NODE_NUMELEM = 5;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___u_a_v_object_widget_utils.html#ga4dec7e6867bf4ed62c5309f7149f0dd0">   50</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_mixer_curve.html">MixerCurve</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> itemMoved(<span class="keywordtype">double</span> itemValue); <span class="comment">// Callback when a point is moved, to be updated</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga2c2f4469e3a93a1aa88633e97073ffa1">initCurve</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> *points);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> <a class="code" href="group___config_plugin.html#ga676b2baa08ec2deceb84e56ceddd9c6c">getCurve</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga149a9a0d28a983db45a48ed71c35f21d">initLinearCurve</a>(<span class="keywordtype">int</span> numPoints, <span class="keywordtype">double</span> maxValue = 1, <span class="keywordtype">double</span> minValue = 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga0292ee7413de63e428fd0ca9ec2d0f08">setCurve</a>(<span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;double&gt;</a> *points);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gae709bb34fd5b4386c7538059fd77e523">setMin</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga6d107a62e8f6d1115afbe9869d5fbf62">getMin</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga122781733f46efdca9586ab7d1cb46e3">setMax</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga218856c51ab9ecff11ecfcf0f6074589">getMax</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group___config_plugin.html#ga7cd12492effe33f54cbbbc2eed7a5acb">setRange</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> cmdActivated(<a class="code" href="class_mixer_node.html">MixerNode</a> *node);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> activateCommand(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> isCommandActive(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> showCommand(<span class="keyword">const</span> QString &amp;name, <span class="keywordtype">bool</span> show);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> showCommands(<span class="keywordtype">bool</span> show);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getCmdNode(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> setCommandText(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;text);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;signals:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> curveUpdated();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> curveMinChanged(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> curveMaxChanged(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> commandActivated(<a class="code" href="class_mixer_node.html">MixerNode</a> *node);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___u_a_v_object_widget_utils.html#ga359d5a2efb6966cba1d78bbdb2e7759d">   71</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> NODE_NUMELEM = 5;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;signals:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> curveUpdated();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> curveMinChanged(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> curveMaxChanged(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> commandActivated(<a class="code" href="class_mixer_node.html">MixerNode</a> *node);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QGraphicsSvgItem *<a class="code" href="_o_p_plots_8m.html#a4fbe616a6cbdd6d58fdf12c2d18a0846">plot</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> nodePool;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> cmdNodePool;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;Edge *&gt;</a> edgePool;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> nodeList;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">double</span> curveMin;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span> curveMax;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> curveUpdating;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QString posColor0;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QString posColor1;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QString negColor0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QString negColor1;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> initNodes(<span class="keywordtype">int</span> numPoints);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getNode(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getCommandNode(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_edge.html">Edge</a> *getEdge(<span class="keywordtype">int</span> index, <a class="code" href="class_mixer_node.html">MixerNode</a> *sourceNode, <a class="code" href="class_mixer_node.html">MixerNode</a> *destNode);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> setPositiveColor(QString color0 = <span class="stringliteral">&quot;#00ff00&quot;</span>, QString color1 = <span class="stringliteral">&quot;#00ff00&quot;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> setNegativeColor(QString color0 = <span class="stringliteral">&quot;#ff0000&quot;</span>, QString color1 = <span class="stringliteral">&quot;#ff0000&quot;</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> resizeCommands();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QGraphicsSvgItem *<a class="code" href="_o_p_plots_8m.html#a4fbe616a6cbdd6d58fdf12c2d18a0846">plot</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> nodePool;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> cmdNodePool;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;Edge *&gt;</a> edgePool;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;MixerNode *&gt;</a> nodeList;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> curveMin;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">double</span> curveMax;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> curveUpdating;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QString posColor0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QString posColor1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QString negColor0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QString negColor1;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> initNodes(<span class="keywordtype">int</span> numPoints);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getNode(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_mixer_node.html">MixerNode</a> *getCommandNode(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="class_edge.html">Edge</a> *getEdge(<span class="keywordtype">int</span> index, <a class="code" href="class_mixer_node.html">MixerNode</a> *sourceNode, <a class="code" href="class_mixer_node.html">MixerNode</a> *destNode);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> setPositiveColor(QString color0 = <span class="stringliteral">&quot;#00ff00&quot;</span>, QString color1 = <span class="stringliteral">&quot;#00ff00&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> setNegativeColor(QString color0 = <span class="stringliteral">&quot;#ff0000&quot;</span>, QString color1 = <span class="stringliteral">&quot;#ff0000&quot;</span>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga7ccd9c0dd214329e0801e42b6d2858b9">showEvent</a>(QShowEvent *event);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gab7f43f88c7142be2694361b898a0bdc0">resizeEvent</a>(QResizeEvent *event);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MIXERCURVEWIDGET_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group___config_plugin_html_gae709bb34fd5b4386c7538059fd77e523"><div class="ttname"><a href="group___config_plugin.html#gae709bb34fd5b4386c7538059fd77e523">MixerCurve::setMin</a></div><div class="ttdeci">void setMin(double value)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00299">mixercurve.cpp:299</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga149a9a0d28a983db45a48ed71c35f21d"><div class="ttname"><a href="group___config_plugin.html#ga149a9a0d28a983db45a48ed71c35f21d">MixerCurve::initLinearCurve</a></div><div class="ttdeci">void initLinearCurve(int numPoints, double maxValue=1, double minValue=0)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00284">mixercurve.cpp:284</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga122781733f46efdca9586ab7d1cb46e3"><div class="ttname"><a href="group___config_plugin.html#ga122781733f46efdca9586ab7d1cb46e3">MixerCurve::setMax</a></div><div class="ttdeci">void setMax(double value)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00308">mixercurve.cpp:308</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga7ccd9c0dd214329e0801e42b6d2858b9"><div class="ttname"><a href="group___config_plugin.html#ga7ccd9c0dd214329e0801e42b6d2858b9">MixerCurve::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00429">mixercurve.cpp:429</a></div></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> resizeCommands();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga7ccd9c0dd214329e0801e42b6d2858b9">showEvent</a>(QShowEvent *event);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gab7f43f88c7142be2694361b898a0bdc0">resizeEvent</a>(QResizeEvent *event);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MIXERCURVEWIDGET_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___config_plugin_html_gae709bb34fd5b4386c7538059fd77e523"><div class="ttname"><a href="group___config_plugin.html#gae709bb34fd5b4386c7538059fd77e523">MixerCurve::setMin</a></div><div class="ttdeci">void setMin(double value)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00301">mixercurve.cpp:301</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga149a9a0d28a983db45a48ed71c35f21d"><div class="ttname"><a href="group___config_plugin.html#ga149a9a0d28a983db45a48ed71c35f21d">MixerCurve::initLinearCurve</a></div><div class="ttdeci">void initLinearCurve(int numPoints, double maxValue=1, double minValue=0)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00286">mixercurve.cpp:286</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga122781733f46efdca9586ab7d1cb46e3"><div class="ttname"><a href="group___config_plugin.html#ga122781733f46efdca9586ab7d1cb46e3">MixerCurve::setMax</a></div><div class="ttdeci">void setMax(double value)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00310">mixercurve.cpp:310</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga7ccd9c0dd214329e0801e42b6d2858b9"><div class="ttname"><a href="group___config_plugin.html#ga7ccd9c0dd214329e0801e42b6d2858b9">MixerCurve::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00431">mixercurve.cpp:431</a></div></div>
 <div class="ttc" id="uavobjectwidgetutils__global_8h_html"><div class="ttname"><a href="uavobjectwidgetutils__global_8h.html">uavobjectwidgetutils_global.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga218856c51ab9ecff11ecfcf0f6074589"><div class="ttname"><a href="group___config_plugin.html#ga218856c51ab9ecff11ecfcf0f6074589">MixerCurve::getMax</a></div><div class="ttdeci">double getMax()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00313">mixercurve.cpp:313</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga6d107a62e8f6d1115afbe9869d5fbf62"><div class="ttname"><a href="group___config_plugin.html#ga6d107a62e8f6d1115afbe9869d5fbf62">MixerCurve::getMin</a></div><div class="ttdeci">double getMin()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00304">mixercurve.cpp:304</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga218856c51ab9ecff11ecfcf0f6074589"><div class="ttname"><a href="group___config_plugin.html#ga218856c51ab9ecff11ecfcf0f6074589">MixerCurve::getMax</a></div><div class="ttdeci">double getMax()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00315">mixercurve.cpp:315</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga6d107a62e8f6d1115afbe9869d5fbf62"><div class="ttname"><a href="group___config_plugin.html#ga6d107a62e8f6d1115afbe9869d5fbf62">MixerCurve::getMin</a></div><div class="ttdeci">double getMin()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00306">mixercurve.cpp:306</a></div></div>
 <div class="ttc" id="class_edge_html"><div class="ttname"><a href="class_edge.html">Edge</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurveline_8h_source.html#l00040">mixercurveline.h:40</a></div></div>
-<div class="ttc" id="mixercurveline_8h_html"><div class="ttname"><a href="mixercurveline_8h.html">mixercurveline.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga2c2f4469e3a93a1aa88633e97073ffa1"><div class="ttname"><a href="group___config_plugin.html#ga2c2f4469e3a93a1aa88633e97073ffa1">MixerCurve::initCurve</a></div><div class="ttdeci">void initCurve(const QList&lt; double &gt; *points)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00275">mixercurve.cpp:275</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga0292ee7413de63e428fd0ca9ec2d0f08"><div class="ttname"><a href="group___config_plugin.html#ga0292ee7413de63e428fd0ca9ec2d0f08">MixerCurve::setCurve</a></div><div class="ttdeci">void setCurve(const QList&lt; double &gt; *points)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00294">mixercurve.cpp:294</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga7cd12492effe33f54cbbbc2eed7a5acb"><div class="ttname"><a href="group___config_plugin.html#ga7cd12492effe33f54cbbbc2eed7a5acb">MixerCurve::setRange</a></div><div class="ttdeci">double setRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00317">mixercurve.cpp:317</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga2c2f4469e3a93a1aa88633e97073ffa1"><div class="ttname"><a href="group___config_plugin.html#ga2c2f4469e3a93a1aa88633e97073ffa1">MixerCurve::initCurve</a></div><div class="ttdeci">void initCurve(const QList&lt; double &gt; *points)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00277">mixercurve.cpp:277</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga0292ee7413de63e428fd0ca9ec2d0f08"><div class="ttname"><a href="group___config_plugin.html#ga0292ee7413de63e428fd0ca9ec2d0f08">MixerCurve::setCurve</a></div><div class="ttdeci">void setCurve(const QList&lt; double &gt; *points)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00296">mixercurve.cpp:296</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga7cd12492effe33f54cbbbc2eed7a5acb"><div class="ttname"><a href="group___config_plugin.html#ga7cd12492effe33f54cbbbc2eed7a5acb">MixerCurve::setRange</a></div><div class="ttdeci">double setRange(double min, double max)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00319">mixercurve.cpp:319</a></div></div>
 <div class="ttc" id="class_mixer_curve_html"><div class="ttname"><a href="class_mixer_curve.html">MixerCurve</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8h_source.html#l00044">mixercurve.h:44</a></div></div>
-<div class="ttc" id="group___config_plugin_html_gab7f43f88c7142be2694361b898a0bdc0"><div class="ttname"><a href="group___config_plugin.html#gab7f43f88c7142be2694361b898a0bdc0">MixerCurve::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00444">mixercurve.cpp:444</a></div></div>
-<div class="ttc" id="class_mixer_node_html"><div class="ttname"><a href="class_mixer_node.html">MixerNode</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurvepoint_8h_source.html#l00043">mixercurvepoint.h:43</a></div></div>
-<div class="ttc" id="class_mixer_curve_widget_html"><div class="ttname"><a href="class_mixer_curve_widget.html">MixerCurveWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurvewidget_8h_source.html#l00040">mixercurvewidget.h:40</a></div></div>
-<div class="ttc" id="mixercurvepoint_8h_html"><div class="ttname"><a href="mixercurvepoint_8h.html">mixercurvepoint.h</a></div></div>
+<div class="ttc" id="group___config_plugin_html_gab7f43f88c7142be2694361b898a0bdc0"><div class="ttname"><a href="group___config_plugin.html#gab7f43f88c7142be2694361b898a0bdc0">MixerCurve::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00446">mixercurve.cpp:446</a></div></div>
+<div class="ttc" id="class_mixer_node_html"><div class="ttname"><a href="class_mixer_node.html">MixerNode</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurvepoint_8h_source.html#l00044">mixercurvepoint.h:44</a></div></div>
+<div class="ttc" id="class_mixer_curve_widget_html"><div class="ttname"><a href="class_mixer_curve_widget.html">MixerCurveWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="mixercurvewidget_8h_source.html#l00042">mixercurvewidget.h:42</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; double &gt;</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga676b2baa08ec2deceb84e56ceddd9c6c"><div class="ttname"><a href="group___config_plugin.html#ga676b2baa08ec2deceb84e56ceddd9c6c">MixerCurve::getCurve</a></div><div class="ttdeci">QList&lt; double &gt; getCurve()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00280">mixercurve.cpp:280</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga676b2baa08ec2deceb84e56ceddd9c6c"><div class="ttname"><a href="group___config_plugin.html#ga676b2baa08ec2deceb84e56ceddd9c6c">MixerCurve::getCurve</a></div><div class="ttdeci">QList&lt; double &gt; getCurve()</div><div class="ttdef"><b>Definition:</b> <a href="mixercurve_8cpp_source.html#l00282">mixercurve.cpp:282</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a4fbe616a6cbdd6d58fdf12c2d18a0846"><div class="ttname"><a href="_o_p_plots_8m.html#a4fbe616a6cbdd6d58fdf12c2d18a0846">plot</a></div><div class="ttdeci">plot(TimeVA, VA(1,:), TimeVA, VA(2,:), TimeGPSPos, Vgps(1,:), TimeGPSPos, Vgps(2,:))</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

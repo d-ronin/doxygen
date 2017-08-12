@@ -1,16 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"importexportdialog_8h_source.html":[6,0,0,0,0,1,15,2],
-"importexportgadget_8cpp.html":[6,0,0,0,0,1,15,3],
-"importexportgadget_8cpp_source.html":[6,0,0,0,0,1,15,3],
-"importexportgadget_8h.html":[6,0,0,0,0,1,15,4],
-"importexportgadget_8h_source.html":[6,0,0,0,0,1,15,4],
-"importexportgadgetwidget_8cpp.html":[6,0,0,0,0,1,15,5],
-"importexportgadgetwidget_8cpp_source.html":[6,0,0,0,0,1,15,5],
-"importexportgadgetwidget_8h.html":[6,0,0,0,0,1,15,6],
-"importexportgadgetwidget_8h_source.html":[6,0,0,0,0,1,15,6],
-"importexportplugin_8cpp.html":[6,0,0,0,0,1,15,7],
-"importexportplugin_8cpp_source.html":[6,0,0,0,0,1,15,7],
 "importexportplugin_8h.html":[6,0,0,0,0,1,15,8],
 "importexportplugin_8h_source.html":[6,0,0,0,0,1,15,8],
 "importsettings_8cpp.html":[6,0,0,0,0,1,9,1,0],
@@ -249,5 +238,16 @@ var NAVTREEINDEX47 =
 "mapripper_8cpp.html":[6,0,0,0,0,0,4,2,16],
 "mapripper_8cpp_source.html":[6,0,0,0,0,0,4,2,16],
 "mapripper_8h.html":[6,0,0,0,0,0,4,2,17],
-"mapripper_8h_source.html":[6,0,0,0,0,0,4,2,17]
+"mapripper_8h_source.html":[6,0,0,0,0,0,4,2,17],
+"maptype_8h.html":[6,0,0,0,0,0,4,0,16],
+"maptype_8h_source.html":[6,0,0,0,0,0,4,0,16],
+"md_ground_gcs_src_plugins_config_images_ic_icons.html":[0],
+"memorycache_8cpp.html":[6,0,0,0,0,0,4,0,17],
+"memorycache_8cpp_source.html":[6,0,0,0,0,0,4,0,17],
+"memorycache_8h.html":[6,0,0,0,0,0,4,0,18],
+"memorycache_8h_source.html":[6,0,0,0,0,0,4,0,18],
+"mercatorprojection_8cpp.html":[6,0,0,0,0,0,4,1,0,2],
+"mercatorprojection_8cpp_source.html":[6,0,0,0,0,0,4,1,0,2],
+"mercatorprojection_8h.html":[6,0,0,0,0,0,4,1,0,3],
+"mercatorprojection_8h_source.html":[6,0,0,0,0,0,4,1,0,3]
 };

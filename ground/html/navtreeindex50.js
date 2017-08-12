@@ -1,16 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"radioprobepage_8h_source.html":[6,0,0,0,0,1,28,0,9],
-"rawhid_8cpp.html":[6,0,0,0,0,1,27,0],
-"rawhid_8cpp_source.html":[6,0,0,0,0,1,27,0],
-"rawhid_8h.html":[6,0,0,0,0,1,27,1],
-"rawhid_8h_source.html":[6,0,0,0,0,1,27,1],
-"rawhid__const_8h.html":[6,0,0,0,0,1,27,2],
-"rawhid__const_8h_source.html":[6,0,0,0,0,1,27,2],
-"rawhid__global_8h.html":[6,0,0,0,0,1,27,3],
-"rawhid__global_8h_source.html":[6,0,0,0,0,1,27,3],
-"rawhidplugin_8cpp.html":[6,0,0,0,0,1,27,4],
-"rawhidplugin_8cpp_source.html":[6,0,0,0,0,1,27,4],
 "rawhidplugin_8h.html":[6,0,0,0,0,1,27,5],
 "rawhidplugin_8h_source.html":[6,0,0,0,0,1,27,5],
 "rawtile_8cpp.html":[6,0,0,0,0,0,4,0,27],
@@ -249,5 +238,16 @@ var NAVTREEINDEX50 =
 "splitterorview_8cpp.html":[6,0,0,0,0,1,9,2,0],
 "splitterorview_8cpp_source.html":[6,0,0,0,0,1,9,2,0],
 "splitterorview_8h.html":[6,0,0,0,0,1,9,2,1],
-"splitterorview_8h_source.html":[6,0,0,0,0,1,9,2,1]
+"splitterorview_8h_source.html":[6,0,0,0,0,1,9,2,1],
+"sprf3e_8cpp.html":[6,0,0,0,0,1,3,14],
+"sprf3e_8cpp_source.html":[6,0,0,0,0,1,3,14],
+"sprf3e_8h.html":[6,0,0,0,0,1,3,15],
+"sprf3e_8h_source.html":[6,0,0,0,0,1,3,15],
+"sprf3econfiguration_8cpp.html":[6,0,0,0,0,1,3,16],
+"sprf3econfiguration_8cpp_source.html":[6,0,0,0,0,1,3,16],
+"sprf3econfiguration_8h.html":[6,0,0,0,0,1,3,17],
+"sprf3econfiguration_8h_source.html":[6,0,0,0,0,1,3,17],
+"struct____attribute____.html":[3,2,33,7],
+"struct_autotuned_values.html":[3,2,11,11],
+"struct_command_location.html":[3,2,13,11]
 };

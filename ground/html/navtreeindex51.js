@@ -1,16 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"sprf3e_8cpp.html":[6,0,0,0,0,1,3,14],
-"sprf3e_8cpp_source.html":[6,0,0,0,0,1,3,14],
-"sprf3e_8h.html":[6,0,0,0,0,1,3,15],
-"sprf3e_8h_source.html":[6,0,0,0,0,1,3,15],
-"sprf3econfiguration_8cpp.html":[6,0,0,0,0,1,3,16],
-"sprf3econfiguration_8cpp_source.html":[6,0,0,0,0,1,3,16],
-"sprf3econfiguration_8h.html":[6,0,0,0,0,1,3,17],
-"sprf3econfiguration_8h_source.html":[6,0,0,0,0,1,3,17],
-"struct____attribute____.html":[3,2,33,7],
-"struct_autotuned_values.html":[3,2,11,11],
-"struct_command_location.html":[3,2,13,11],
 "struct_config_input_widget_1_1_arming_method.html":[3,2,11,24],
 "struct_config_task_widget_1_1object_to_widget.html":[3,9,2],
 "struct_config_task_widget_1_1shadow.html":[3,9,1],
@@ -249,5 +238,16 @@ var NAVTREEINDEX51 =
 "telemetrymanager_8cpp.html":[6,0,0,0,0,1,41,2],
 "telemetrymanager_8cpp_source.html":[6,0,0,0,0,1,41,2],
 "telemetrymanager_8h.html":[6,0,0,0,0,1,41,3],
-"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3]
+"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3],
+"telemetrymonitor_8cpp.html":[6,0,0,0,0,1,41,4],
+"telemetrymonitor_8cpp_source.html":[6,0,0,0,0,1,41,4],
+"telemetrymonitor_8h.html":[6,0,0,0,0,1,41,5],
+"telemetrymonitor_8h_source.html":[6,0,0,0,0,1,41,5],
+"telemetrymonitorwidget_8cpp.html":[6,0,0,0,0,1,9,57],
+"telemetrymonitorwidget_8cpp_source.html":[6,0,0,0,0,1,9,57],
+"telemetrymonitorwidget_8h.html":[6,0,0,0,0,1,9,58],
+"telemetrymonitorwidget_8h_source.html":[6,0,0,0,0,1,9,58],
+"telemetryparser_8cpp.html":[6,0,0,0,0,1,14,16],
+"telemetryparser_8cpp_source.html":[6,0,0,0,0,1,14,16],
+"telemetryparser_8h.html":[6,0,0,0,0,1,14,17]
 };

@@ -1,16 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"telemetrymonitor_8cpp.html":[6,0,0,0,0,1,41,4],
-"telemetrymonitor_8cpp_source.html":[6,0,0,0,0,1,41,4],
-"telemetrymonitor_8h.html":[6,0,0,0,0,1,41,5],
-"telemetrymonitor_8h_source.html":[6,0,0,0,0,1,41,5],
-"telemetrymonitorwidget_8cpp.html":[6,0,0,0,0,1,9,57],
-"telemetrymonitorwidget_8cpp_source.html":[6,0,0,0,0,1,9,57],
-"telemetrymonitorwidget_8h.html":[6,0,0,0,0,1,9,58],
-"telemetrymonitorwidget_8h_source.html":[6,0,0,0,0,1,9,58],
-"telemetryparser_8cpp.html":[6,0,0,0,0,1,14,16],
-"telemetryparser_8cpp_source.html":[6,0,0,0,0,1,14,16],
-"telemetryparser_8h.html":[6,0,0,0,0,1,14,17],
 "telemetryparser_8h_source.html":[6,0,0,0,0,1,14,17],
 "telemetryscheduler__global_8h.html":[6,0,0,0,0,1,35,2],
 "telemetryscheduler__global_8h_source.html":[6,0,0,0,0,1,35,2],
@@ -249,5 +238,16 @@ var NAVTREEINDEX52 =
 "uavobjecttemplate_8m.html#a79178933c5b76091ca04178d14a5ba98":[6,0,0,0,0,1,37,21,15],
 "uavobjecttemplate_8m.html#a7c4c8356cf27a7aade3cb3016b8ffaa7":[6,0,0,0,0,1,37,21,40],
 "uavobjecttemplate_8m.html#a801097d8e760cb705b4f1cc11d3f62fa":[6,0,0,0,0,1,37,21,62],
-"uavobjecttemplate_8m.html#a81a6b3bb0d87a9f13a703c4526596362":[6,0,0,0,0,1,37,21,20]
+"uavobjecttemplate_8m.html#a81a6b3bb0d87a9f13a703c4526596362":[6,0,0,0,0,1,37,21,20],
+"uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02":[6,0,0,0,0,1,37,21,5],
+"uavobjecttemplate_8m.html#a879fc3585ccb07eba075553b21960f45":[6,0,0,0,0,1,37,21,66],
+"uavobjecttemplate_8m.html#a87d64e1f4a03744d89ab122c222a0f31":[6,0,0,0,0,1,37,21,76],
+"uavobjecttemplate_8m.html#a8a6f3c552a6f8f07d85da9f0cff0459e":[6,0,0,0,0,1,37,21,3],
+"uavobjecttemplate_8m.html#a8baabb94ca31201bfb1cf71bf883668e":[6,0,0,0,0,1,37,21,9],
+"uavobjecttemplate_8m.html#a9295f53f891e8db64c56d4df48cbb933":[6,0,0,0,0,1,37,21,22],
+"uavobjecttemplate_8m.html#a93f5af3df07eac5f87e53d1b032209b7":[6,0,0,0,0,1,37,21,77],
+"uavobjecttemplate_8m.html#a941fe92761b5f8a1adb7534ed9410993":[6,0,0,0,0,1,37,21,45],
+"uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46":[6,0,0,0,0,1,37,21,36],
+"uavobjecttemplate_8m.html#a9927793f1f69327ecd9ebf938e0deb92":[6,0,0,0,0,1,37,21,65],
+"uavobjecttemplate_8m.html#a99fa2380aca0e2b2af5106b406042309":[6,0,0,0,0,1,37,21,17]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">48988c9</span>
+   &#160;<span id="projectnumber">939a890</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -128,36 +128,30 @@ $(document).ready(function(){initNavTree('taulinkgadgetwidget_8h_source.html',''
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef TAULINKGADGETWIDGET_H_</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAULINKGADGETWIDGET_H_</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="configtaskwidget_8h.html">uavobjectwidgetutils/configtaskwidget.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;ui_taulink.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>Ui_TauLink;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="class_tau_link_plugin.html">TauLinkPlugin</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_tau_link_gadget_widget.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a> : <span class="keyword">public</span> <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="group___tau_link_gadget_plugin.html#ga0d80338b9437ca3d6310fcd38328c0d3">TauLinkGadgetWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="group___tau_link_gadget_plugin.html#ga95fca2dbc9940543656e7891ec9042dd">~TauLinkGadgetWidget</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> updateStatus(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="configtaskwidget_8h.html">uavobjectwidgetutils/configtaskwidget.h</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>Ui_TauLink;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="class_tau_link_plugin.html">TauLinkPlugin</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_tau_link_gadget_widget.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a> : <span class="keyword">public</span> <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="group___tau_link_gadget_plugin.html#ga0d80338b9437ca3d6310fcd38328c0d3">TauLinkGadgetWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="group___tau_link_gadget_plugin.html#ga95fca2dbc9940543656e7891ec9042dd">~TauLinkGadgetWidget</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Ui_TauLink *ui;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *rfm22bStatusObj;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Ui_TauLink *ui;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *rfm22bStatusObj;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TAULINKGADGETWIDGET_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_tau_link_gadget_widget_html"><div class="ttname"><a href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8h_source.html#l00035">taulinkgadgetwidget.h:35</a></div></div>
-<div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00052">configtaskwidget.h:52</a></div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TAULINKGADGETWIDGET_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_tau_link_gadget_widget_html"><div class="ttname"><a href="class_tau_link_gadget_widget.html">TauLinkGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8h_source.html#l00033">taulinkgadgetwidget.h:33</a></div></div>
+<div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00055">configtaskwidget.h:55</a></div></div>
 <div class="ttc" id="class_tau_link_plugin_html"><div class="ttname"><a href="class_tau_link_plugin.html">TauLinkPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="taulinkplugin_8h_source.html#l00039">taulinkplugin.h:39</a></div></div>
-<div class="ttc" id="group___tau_link_gadget_plugin_html_ga0d80338b9437ca3d6310fcd38328c0d3"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga0d80338b9437ca3d6310fcd38328c0d3">TauLinkGadgetWidget::TauLinkGadgetWidget</a></div><div class="ttdeci">TauLinkGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8cpp_source.html#l00029">taulinkgadgetwidget.cpp:29</a></div></div>
-<div class="ttc" id="group___tau_link_gadget_plugin_html_ga95fca2dbc9940543656e7891ec9042dd"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga95fca2dbc9940543656e7891ec9042dd">TauLinkGadgetWidget::~TauLinkGadgetWidget</a></div><div class="ttdeci">~TauLinkGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8cpp_source.html#l00060">taulinkgadgetwidget.cpp:60</a></div></div>
+<div class="ttc" id="group___tau_link_gadget_plugin_html_ga0d80338b9437ca3d6310fcd38328c0d3"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga0d80338b9437ca3d6310fcd38328c0d3">TauLinkGadgetWidget::TauLinkGadgetWidget</a></div><div class="ttdeci">TauLinkGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8cpp_source.html#l00031">taulinkgadgetwidget.cpp:31</a></div></div>
+<div class="ttc" id="group___tau_link_gadget_plugin_html_ga95fca2dbc9940543656e7891ec9042dd"><div class="ttname"><a href="group___tau_link_gadget_plugin.html#ga95fca2dbc9940543656e7891ec9042dd">TauLinkGadgetWidget::~TauLinkGadgetWidget</a></div><div class="ttdeci">~TauLinkGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="taulinkgadgetwidget_8cpp_source.html#l00040">taulinkgadgetwidget.cpp:40</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="configtaskwidget_8h_html"><div class="ttname"><a href="configtaskwidget_8h.html">configtaskwidget.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

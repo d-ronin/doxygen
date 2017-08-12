@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"group___boards___quantec.html#gaf97ebd024db824870ba29203fd6d0bb6":[3,2,9,1,5],
 "group___boards___quantec.html#gaf97ebd024db824870ba29203fd6d0bb6":[3,2,9,5],
 "group___boards___quantec.html#gafceea1eeec5e241c7526b8217b6d9ff9":[3,2,9,1,10],
 "group___boards___quantec.html#gafceea1eeec5e241c7526b8217b6d9ff9":[3,2,9,11],
@@ -224,8 +225,8 @@ var NAVTREEINDEX9 =
 "group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,2,2],
 "group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,10],
 "group___config.html":[3,2,12],
-"group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,0,2],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,10],
+"group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,0,2],
 "group___config.html#ga36f48122dd6ede58ce2af197545ec5da":[3,2,12,0,0],
 "group___config.html#ga36f48122dd6ede58ce2af197545ec5da":[3,2,12,8],
 "group___config.html#ga384ac929f1c563899320ee0f821fd7c1":[3,2,12,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "group___config_plugin.html":[3,2,11],
 "group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,37,6],
 "group___config_plugin.html#ga00f0ef17d7a211c8cfa37feb02cc032c":[3,2,11,164],
-"group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[5,0,51,6],
-"group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[3,2,11,123]
+"group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d":[5,0,51,6]
 };

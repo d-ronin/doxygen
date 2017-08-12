@@ -23,6 +23,5 @@ var searchData=
   ['number_5fof_5fdevices',['number_of_devices',['../group___uploader.html#gae5abf6e44b868f3aea940846630bd91a',1,'msg_capabilities_rep_all']]],
   ['numberofpackets',['numberOfPackets',['../group___uploader.html#gac99dc057faeb5993b7a7b440f30b832b',1,'tl_dfu::DFUObject::messagePackets']]],
   ['numbytes',['numBytes',['../group___u_a_v_objects_plugin.html#ga260cfb19e663f64d51ba1258e760a207',1,'UAVObject']]],
-  ['numbytesperelement',['numBytesPerElement',['../class_u_a_v_object_field.html#aed675e1711f18b1ab737f9e8e55dca35',1,'UAVObjectField']]],
-  ['numelements',['numElements',['../class_u_a_v_object_field.html#aa82f6e1f5deca501c58b45d902be0ef4',1,'UAVObjectField::numElements()'],['../uavobjecttemplate_8m.html#a5091f26d230c839edecd7245ab426bd6',1,'numElements():&#160;uavobjecttemplate.m']]]
+  ['numelements',['numElements',['../class_u_a_v_object_field.html#a4347a10fd2a21253b800b3b47a9f6c9b',1,'UAVObjectField::numElements()'],['../uavobjecttemplate_8m.html#a5091f26d230c839edecd7245ab426bd6',1,'numElements():&#160;uavobjecttemplate.m']]]
 ];
