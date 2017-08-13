@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('pios__spi_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pios_spi.h File Reference<div class="ingroups"><a class="el" href="group___p_i_o_s___s_p_i.html">SPI Functions</a></div></div>  </div>
@@ -118,24 +119,27 @@ $(document).ready(function(){initNavTree('pios__spi_8h.html','');});
 
 <p><a href="pios__spi_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7f8b7496a1edc0b9f052239844bb8b40"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structpios__spi__dev.html">pios_spi_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a></td></tr>
+<tr class="separator:ga7f8b7496a1edc0b9f052239844bb8b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8bbe024685ab860a8e5880b2ed2b11e6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga8bbe024685ab860a8e5880b2ed2b11e6">PIOS_SPI_Init</a> (uint32_t *spi_id, const struct <a class="el" href="structpios__spi__cfg.html">pios_spi_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
-<tr class="separator:ga8bbe024685ab860a8e5880b2ed2b11e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95d49208781167d4ab48a572accf4fa5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga95d49208781167d4ab48a572accf4fa5">PIOS_SPI_SetClockSpeed</a> (uint32_t spi_id, uint32_t <a class="el" href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a>)</td></tr>
-<tr class="separator:ga95d49208781167d4ab48a572accf4fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga479cdbfe7e7fef12dc8fedbaf6d104f0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a> (uint32_t spi_id, uint32_t slave_id, bool pin_value)</td></tr>
-<tr class="separator:ga479cdbfe7e7fef12dc8fedbaf6d104f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6483f13379bc83d892c4721fbbd46afa"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a> (uint32_t spi_id, uint8_t b)</td></tr>
-<tr class="separator:ga6483f13379bc83d892c4721fbbd46afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02c8e3abceb458b72e9264884933cff6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a> (uint32_t spi_id, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</td></tr>
-<tr class="separator:ga02c8e3abceb458b72e9264884933cff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga307f60532c61b56c285ce5d680cb14c5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a> (uint32_t spi_id)</td></tr>
-<tr class="separator:ga307f60532c61b56c285ce5d680cb14c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga117fbed6d00c5404e9414ab72175e1c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga117fbed6d00c5404e9414ab72175e1c8">PIOS_SPI_ReleaseBus</a> (uint32_t spi_id)</td></tr>
-<tr class="separator:ga117fbed6d00c5404e9414ab72175e1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga018ed8c0b8d0c9a22faf6faca9b5a895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga018ed8c0b8d0c9a22faf6faca9b5a895">PIOS_SPI_IRQ_Handler</a> (uint32_t spi_id)</td></tr>
-<tr class="separator:ga018ed8c0b8d0c9a22faf6faca9b5a895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21b297a397e91bf31fc599ddad0038a1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga21b297a397e91bf31fc599ddad0038a1">PIOS_SPI_Init</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> *spi_dev, const struct <a class="el" href="structpios__spi__cfg.html">pios_spi_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
+<tr class="separator:ga21b297a397e91bf31fc599ddad0038a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a862c60f1c98c663084189aa27da5a9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga6a862c60f1c98c663084189aa27da5a9">PIOS_SPI_SetClockSpeed</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev, uint32_t <a class="el" href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a>)</td></tr>
+<tr class="separator:ga6a862c60f1c98c663084189aa27da5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b5bd655c2debc91231000a99f390bef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev, uint32_t slave_id, bool pin_value)</td></tr>
+<tr class="separator:ga1b5bd655c2debc91231000a99f390bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba986f2515cfe42f08293c869107ea84"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev, uint8_t b)</td></tr>
+<tr class="separator:gaba986f2515cfe42f08293c869107ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe2e08b39f192e798c498a5fa0ae8dba"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</td></tr>
+<tr class="separator:gafe2e08b39f192e798c498a5fa0ae8dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4d7eff28af84690c0caa8ac3c0abeee"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev)</td></tr>
+<tr class="separator:gaf4d7eff28af84690c0caa8ac3c0abeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fa5be788c14e9e5af848c4a4e37051e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a> (<a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_dev)</td></tr>
+<tr class="separator:ga8fa5be788c14e9e5af848c4a4e37051e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPI functions header. </p>

@@ -4,8 +4,6 @@ var dir_7d432041a987d59b30526ce272f2aad8 =
     [ "pios_bl_helper.c", "_s_t_m32_f10x_2pios__bl__helper_8c.html", null ],
     [ "pios_chibios_transition_priv.h", "_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html", "_s_t_m32_f10x_2pios__chibios__transition__priv_8h" ],
     [ "pios_flash_internal.c", "_s_t_m32_f10x_2pios__flash__internal_8c.html", null ],
-    [ "pios_i2c.c", "_s_t_m32_f10x_2pios__i2c_8c.html", null ],
-    [ "pios_i2c_alt.c", "pios__i2c__alt_8c.html", null ],
     [ "pios_iap.c", "_s_t_m32_f10x_2pios__iap_8c.html", "_s_t_m32_f10x_2pios__iap_8c" ],
     [ "pios_internal_adc_light.c", "pios__internal__adc__light_8c.html", null ],
     [ "pios_rtc.c", "_s_t_m32_f10x_2pios__rtc_8c.html", null ],

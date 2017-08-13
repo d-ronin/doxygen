@@ -30,8 +30,8 @@ var group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c =
     [ "PIOS_INTERNAL_ADC_DMA_Handler", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga5bd59140ceb564b00a50f2f7a499bb7b", null ],
     [ "PIOS_INTERNAL_ADC_DoStep", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gabf176f4f56549a98a6ed31cb1da4228e", null ],
     [ "PIOS_INTERNAL_ADC_Init", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gaadcc59c3c914db44f36af39959ff6848", null ],
-    [ "PIOS_INTERNAL_ADC_Init", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga24dec792533e0f27e35c3ea6d1bbd9e1", null ],
-    [ "PIOS_INTERNAL_ADC_LIGHT_Init", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga1512d09972af90e9d8925b23659ca998", null ],
+    [ "PIOS_INTERNAL_ADC_Init", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc", null ],
+    [ "PIOS_INTERNAL_ADC_LIGHT_Init", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gaebc190f7aa02c8554fb98c2e69fad141", null ],
     [ "pios_internal_adc_driver", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab", null ],
     [ "pios_internal_adc_driver", "group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab", null ]
 ];

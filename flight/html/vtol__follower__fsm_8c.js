@@ -46,7 +46,6 @@ var vtol__follower__fsm_8c =
     [ "vtol_fsm_timer_set", "vtol__follower__fsm_8c.html#gaacaa06c3ef0c6b5a0204686d00484f20", null ],
     [ "curr_state", "vtol__follower__fsm_8c.html#ga52c3e79ad63a8a393d7cbe04ad0c3f01", null ],
     [ "current_goal", "vtol__follower__fsm_8c.html#ga4d90c3029324c9b02686d0e6ac31133f", null ],
-    [ "DT", "vtol__follower__fsm_8c.html#ga6017ffae59f47b16d8bf2070452f1405", null ],
     [ "fsm_follow_path", "vtol__follower__fsm_8c.html#ga28fde3f6dabb28e2a914188fe679b0c6", null ],
     [ "fsm_hold_position", "vtol__follower__fsm_8c.html#gac7c84f785a63d0ac94d3ae46300a73bb", null ],
     [ "fsm_land_home", "vtol__follower__fsm_8c.html#ga3e128e1d10aedb247940407f46d888a1", null ],

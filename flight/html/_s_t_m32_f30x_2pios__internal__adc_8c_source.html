@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -130,17 +130,17 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_PinConfig(uint32_t internal_adc_id);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_DMAConfig(uint32_t internal_adc_id);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga24dec792533e0f27e35c3ea6d1bbd9e1">PIOS_INTERNAL_ADC_Init</a>(uint32_t *internal_adc_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_Converter_Config(uint32_t internal_adc_id);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_INTERNAL_ADC_Available(uint32_t internal_adc_id, uint32_t pin);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">static</span> int32_t PIOS_INTERNAL_ADC_PinGet(uint32_t internal_adc_id, uint32_t pin);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> uint8_t PIOS_INTERNAL_ADC_NumberOfChannels(uint32_t internal_adc_id);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> PIOS_INTERNAL_ADC_LSB_Voltage(uint32_t internal_adc_id);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_PinConfig(uintptr_t internal_adc_id);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_DMAConfig(uintptr_t internal_adc_id);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(uintptr_t *internal_adc_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_Converter_Config(uintptr_t internal_adc_id);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_INTERNAL_ADC_Available(uintptr_t internal_adc_id, uint32_t pin);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">static</span> int32_t PIOS_INTERNAL_ADC_PinGet(uintptr_t internal_adc_id, uint32_t pin);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> uint8_t PIOS_INTERNAL_ADC_NumberOfChannels(uintptr_t internal_adc_id);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> PIOS_INTERNAL_ADC_LSB_Voltage(uintptr_t internal_adc_id);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__adc__driver.html">pios_adc_driver</a> <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a> = {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                .<a class="code" href="structpios__adc__driver.html#a78f4f316d7ca3c5feafa158bef5b3895">available</a> = PIOS_INTERNAL_ADC_Available,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                .<a class="code" href="structpios__adc__driver.html#a35544674ddd8c465240663b2ac161642">available</a> = PIOS_INTERNAL_ADC_Available,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                .get_pin = PIOS_INTERNAL_ADC_PinGet,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                .number_of_channels = PIOS_INTERNAL_ADC_NumberOfChannels,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                .lsb_voltage = PIOS_INTERNAL_ADC_LSB_Voltage,</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> (adc_dev);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_PinConfig(uint32_t internal_adc_id)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_PinConfig(uintptr_t internal_adc_id)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span> (!PIOS_INTERNAL_ADC_validate(adc_dev)) {</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                GPIO_Init(adc_dev-&gt;cfg-&gt;adc_pins[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>].port, (GPIO_InitTypeDef*) &amp;GPIO_InitStructure);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_DMAConfig(uint32_t internal_adc_id)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_DMAConfig(uintptr_t internal_adc_id)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span> (!PIOS_INTERNAL_ADC_validate(adc_dev)) {</div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        NVIC_InitTypeDef NVICInit = adc_dev-&gt;cfg-&gt;dma.irq.init;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        NVIC_Init(&amp;NVICInit);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_Converter_Config(uint32_t internal_adc_id)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_INTERNAL_ADC_Converter_Config(uintptr_t internal_adc_id)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
@@ -420,7 +420,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        ADC_StartConversion(adc_dev-&gt;cfg-&gt;adc_dev_master);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga24dec792533e0f27e35c3ea6d1bbd9e1">PIOS_INTERNAL_ADC_Init</a>(uint32_t * internal_adc_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(uintptr_t * internal_adc_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(internal_adc_id); <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(cfg);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        adc_dev-&gt;cfg = <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        *internal_adc_id = (uint32_t) adc_dev;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        *internal_adc_id = (uintptr_t) adc_dev;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        adc_dev-&gt;number_used_master_channels = 0;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        adc_dev-&gt;number_used_slave_channels = 0;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
@@ -477,15 +477,15 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        driver_instances[current_instances] = adc_dev;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        ++current_instances;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        PIOS_INTERNAL_ADC_PinConfig((uint32_t) adc_dev);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        PIOS_INTERNAL_ADC_PinConfig((uintptr_t) adc_dev);</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        PIOS_INTERNAL_DMAConfig((uint32_t) adc_dev);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        PIOS_INTERNAL_DMAConfig((uintptr_t) adc_dev);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        PIOS_INTERNAL_ADC_Converter_Config((uint32_t) adc_dev);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        PIOS_INTERNAL_ADC_Converter_Config((uintptr_t) adc_dev);</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_INTERNAL_ADC_Available(uint32_t internal_adc_id, uint32_t pin)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_INTERNAL_ADC_Available(uintptr_t internal_adc_id, uint32_t pin)</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;{</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="comment">/* Check if pin exists */</span></div>
@@ -495,7 +495,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">static</span> uint8_t PIOS_INTERNAL_ADC_NumberOfChannels(uint32_t internal_adc_id)</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">static</span> uint8_t PIOS_INTERNAL_ADC_NumberOfChannels(uintptr_t internal_adc_id)</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keywordflow">if</span> (!PIOS_INTERNAL_ADC_validate(adc_dev))</div>
@@ -504,7 +504,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keyword">static</span> int32_t PIOS_INTERNAL_ADC_PinGet(uint32_t internal_adc_id, uint32_t pin)</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keyword">static</span> int32_t PIOS_INTERNAL_ADC_PinGet(uintptr_t internal_adc_id, uint32_t pin)</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;{</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        int32_t result;</div>
@@ -580,7 +580,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        }</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;}</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> PIOS_INTERNAL_ADC_LSB_Voltage(uint32_t internal_adc_id)</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> PIOS_INTERNAL_ADC_LSB_Voltage(uintptr_t internal_adc_id)</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;{</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keyword">struct </span>pios_internal_adc_dev * adc_dev = (<span class="keyword">struct </span>pios_internal_adc_dev *) internal_adc_id;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keywordflow">if</span> (!PIOS_INTERNAL_ADC_validate(adc_dev)) {</div>
@@ -592,13 +592,13 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__internal__adc__cfg_html"><div class="ttname"><a href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__internal__adc__priv_8h_source.html#l00054">pios_internal_adc_priv.h:54</a></div></div>
 <div class="ttc" id="group___char_o_s_d_html_gac29f7805863b1e57f0e867855d72402e"><div class="ttname"><a href="group___char_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a></div><div class="ttdeci">const uint8_t count</div><div class="ttdef"><b>Definition:</b> <a href="panel_8c_source.html#l00504">panel.c:504</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c_html_gad0f8b2886a98358b41966677d7c184fc"><div class="ttname"><a href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_INTERNAL_ADC_Init(uintptr_t *internal_adc_id, const struct pios_internal_adc_cfg *cfg)</div></div>
+<div class="ttc" id="structpios__adc__driver_html_a35544674ddd8c465240663b2ac161642"><div class="ttname"><a href="structpios__adc__driver.html#a35544674ddd8c465240663b2ac161642">pios_adc_driver::available</a></div><div class="ttdeci">bool(* available)(uintptr_t id, uint32_t device_pin)</div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8h_source.html#l00041">pios_adc.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
-<div class="ttc" id="structpios__adc__driver_html_a78f4f316d7ca3c5feafa158bef5b3895"><div class="ttname"><a href="structpios__adc__driver.html#a78f4f316d7ca3c5feafa158bef5b3895">pios_adc_driver::available</a></div><div class="ttdeci">bool(* available)(uint32_t id, uint32_t device_pin)</div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8h_source.html#l00041">pios_adc.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
-<div class="ttc" id="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c_html_ga24dec792533e0f27e35c3ea6d1bbd9e1"><div class="ttname"><a href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga24dec792533e0f27e35c3ea6d1bbd9e1">PIOS_INTERNAL_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_INTERNAL_ADC_Init(uint32_t *internal_adc_id, const struct pios_internal_adc_cfg *cfg)</div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c_html_ga7d936d31e2f61867467fac3ccbd561ab"><div class="ttname"><a href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a></div><div class="ttdeci">const struct pios_adc_driver pios_internal_adc_driver</div></div>
-<div class="ttc" id="group___a_q32_html_ga645df4566a90656d8b02ee4e63a54dfe"><div class="ttname"><a href="group___a_q32.html#ga645df4566a90656d8b02ee4e63a54dfe">VREF_PLUS</a></div><div class="ttdeci">#define VREF_PLUS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00233">pios_board.h:233</a></div></div>
+<div class="ttc" id="group___a_q32_html_ga645df4566a90656d8b02ee4e63a54dfe"><div class="ttname"><a href="group___a_q32.html#ga645df4566a90656d8b02ee4e63a54dfe">VREF_PLUS</a></div><div class="ttdeci">#define VREF_PLUS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00224">pios_board.h:224</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="structpios__adc__driver_html"><div class="ttname"><a href="structpios__adc__driver.html">pios_adc_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8h_source.html#l00038">pios_adc.h:38</a></div></div>
 <div class="ttc" id="pios__dma_8c_html_a88e56c9266e75dfbe8f4e4447fba3acd"><div class="ttname"><a href="pios__dma_8c.html#a88e56c9266e75dfbe8f4e4447fba3acd">PIOS_DMA_Install_Interrupt_handler</a></div><div class="ttdeci">int8_t PIOS_DMA_Install_Interrupt_handler(DMA_Channel_TypeDef *channel, void *function)</div><div class="ttdef"><b>Definition:</b> <a href="pios__dma_8c_source.html#l00040">pios_dma.c:40</a></div></div>

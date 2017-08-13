@@ -10,8 +10,6 @@ var dir_fad6fa281ca7e047076b33e1c7de279c =
     [ "pios_bmi160.h", "pios__bmi160_8h.html", "pios__bmi160_8h" ],
     [ "pios_bmm150.h", "pios__bmm150_8h.html", "pios__bmm150_8h" ],
     [ "pios_bmm150_priv.h", "pios__bmm150__priv_8h.html", "pios__bmm150__priv_8h" ],
-    [ "pios_bmp085.h", "pios__bmp085_8h.html", "pios__bmp085_8h" ],
-    [ "pios_bmp085_priv.h", "pios__bmp085__priv_8h.html", "pios__bmp085__priv_8h" ],
     [ "pios_bmp280.h", "pios__bmp280_8h.html", "pios__bmp280_8h" ],
     [ "pios_bmp280_priv.h", "pios__bmp280__priv_8h.html", "pios__bmp280__priv_8h" ],
     [ "pios_bmx055.h", "pios__bmx055_8h.html", "pios__bmx055_8h" ],

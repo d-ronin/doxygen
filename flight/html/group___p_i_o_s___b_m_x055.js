@@ -215,6 +215,6 @@ var group___p_i_o_s___b_m_x055 =
       [ "PIOS_BMX_BOTTOM_180DEG", "group___p_i_o_s___b_m_x055.html#ggad982ea8ce8497d06b5e54339f50ce7f9a3869d873bc03e3f3111433ba7f460f55", null ],
       [ "PIOS_BMX_BOTTOM_270DEG", "group___p_i_o_s___b_m_x055.html#ggad982ea8ce8497d06b5e54339f50ce7f9a499bea2043dec28f60c93eaa5ca4070f", null ]
     ] ],
-    [ "PIOS_BMM150_SPI_Init", "group___p_i_o_s___b_m_x055.html#ga32fc6c8f5f2f55292d45b4362828785c", null ],
-    [ "PIOS_BMX055_SPI_Init", "group___p_i_o_s___b_m_x055.html#ga440a100beda1c3dc0989c02f6b90d1a5", null ]
+    [ "PIOS_BMM150_SPI_Init", "group___p_i_o_s___b_m_x055.html#gad0461f7e88780d03da011b938d5de887", null ],
+    [ "PIOS_BMX055_SPI_Init", "group___p_i_o_s___b_m_x055.html#ga27758d31a79ce885033f331c2b5e6899", null ]
 ];

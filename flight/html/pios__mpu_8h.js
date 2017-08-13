@@ -89,13 +89,13 @@ var pios__mpu_8h =
       [ "PIOS_MPU_NUM", "pios__mpu_8h.html#ggaaffbfd684b812c02cbff16399baca438a4d59ed9b2895d81aa0f4a073dd723fd9", null ]
     ] ],
     [ "PIOS_MPU_GetType", "pios__mpu_8h.html#ga1f57ad5fc58b91108d3e95f9da02ed03", null ],
-    [ "PIOS_MPU_I2C_Init", "pios__mpu_8h.html#gaffcf87011f6f0a647263271b2fd26c69", null ],
+    [ "PIOS_MPU_I2C_Init", "pios__mpu_8h.html#ga339dd5b77b0a88f45e3f3dc2736fe504", null ],
     [ "PIOS_MPU_IRQHandler", "pios__mpu_8h.html#ga2c48f0dc4c8d21a6a9d7704f11662df5", null ],
     [ "PIOS_MPU_SetAccelBandwidth", "pios__mpu_8h.html#gaba6d239c9a3214357a05a30197f048e0", null ],
     [ "PIOS_MPU_SetAccelRange", "pios__mpu_8h.html#gae520bc3aa72e1e76215c954f28046d7c", null ],
     [ "PIOS_MPU_SetGyroBandwidth", "pios__mpu_8h.html#ga68362058bd311562a3d1808ec0463991", null ],
     [ "PIOS_MPU_SetGyroRange", "pios__mpu_8h.html#ga6a0c7b604f7ecd28f8e39dc6684d4a52", null ],
     [ "PIOS_MPU_SetSampleRate", "pios__mpu_8h.html#ga0f2be8fd34fb4e181bdae28aa193e39b", null ],
-    [ "PIOS_MPU_SPI_Init", "pios__mpu_8h.html#ga436e445ce665637356794d50f8b5ad71", null ],
+    [ "PIOS_MPU_SPI_Init", "pios__mpu_8h.html#ga7d62c583654ef78fcb792fad417c2be0", null ],
     [ "PIOS_MPU_Test", "pios__mpu_8h.html#ga714096bc5ac3896c187abfdb0f6f31d6", null ]
 ];

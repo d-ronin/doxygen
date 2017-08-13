@@ -56,7 +56,7 @@ var group___p_i_o_s___b_m_i160 =
     [ "PIOS_BMI160_TOP_180DEG", "group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1ab444253d78ff78a11d1c6fa14f97ddb4", null ],
     [ "PIOS_BMI160_TOP_270DEG", "group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a2058c0f0cfc8714f521f03f054821ae2", null ],
     [ "PIOS_BMI160_TOP_90DEG", "group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1aeb8b17571729060282aa3c1b43800462", null ],
-    [ "PIOS_BMI160_Init", "group___p_i_o_s___b_m_i160.html#gab48aaae34701e78452db80a54c04657e", null ],
+    [ "PIOS_BMI160_Init", "group___p_i_o_s___b_m_i160.html#ga27fc60b45760f043f5f55b7de2a03bf5", null ],
     [ "PIOS_BMI160_IRQHandler", "group___p_i_o_s___b_m_i160.html#ga5cdfa54b263acb87e8b5c2b781c72ac8", null ],
     [ "acc_range", "group___p_i_o_s___b_m_i160.html#ga1389307be8c175c2dd6a6f7bf93fbaa2", null ],
     [ "exti_cfg", "group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa", null ],

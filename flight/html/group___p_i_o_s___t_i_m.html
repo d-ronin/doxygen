@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -152,6 +152,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga629ae378138057ecd954a51dcfe31a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga091c161ba7b19b91067616f0cbd768fc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a> (const struct <a class="el" href="structpios__tim__clock__cfg.html">pios_tim_clock_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
 <tr class="separator:ga091c161ba7b19b91067616f0cbd768fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79bf983742a32a9dcaead3b0806f6550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550">PIOS_TIM_InitTimerPin</a> (uintptr_t tim_id, int idx)</td></tr>
+<tr class="separator:ga79bf983742a32a9dcaead3b0806f6550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga281bc5808570e749abd7764aada8d1b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___t_i_m.html#ga281bc5808570e749abd7764aada8d1b0">PIOS_TIM_InitAllTimerPins</a> (uintptr_t tim_id)</td></tr>
 <tr class="separator:ga281bc5808570e749abd7764aada8d1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9fff718f3bece2774971de5397a5f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___t_i_m.html#gaa9fff718f3bece2774971de5397a5f14">PIOS_TIM_SetBankToGPOut</a> (uintptr_t tim_id, TIM_TypeDef *timer)</td></tr>
@@ -391,7 +393,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00158">158</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00167">167</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -409,7 +411,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00094">94</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00109">109</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -455,7 +457,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00133">133</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00142">142</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -474,6 +476,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00068">68</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga79bf983742a32a9dcaead3b0806f6550"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_TIM_InitTimerPin </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>tim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00094">94</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -501,7 +531,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00110">110</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00119">119</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -519,7 +549,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00341">341</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00350">350</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -537,7 +567,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00349">349</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00358">358</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -555,7 +585,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00357">357</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00366">366</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -573,7 +603,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00365">365</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00374">374</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -591,7 +621,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00315">315</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00324">324</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -609,7 +639,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00316">316</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00325">325</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -627,7 +657,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00307">307</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00316">316</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -645,7 +675,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00343">343</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00352">352</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -663,7 +693,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00342">342</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00351">351</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -681,7 +711,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00346">346</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00355">355</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -699,7 +729,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00330">330</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00339">339</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -717,7 +747,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00329">329</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00338">338</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -735,7 +765,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00317">317</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00326">326</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -753,7 +783,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00325">325</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00334">334</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -771,7 +801,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00370">370</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00379">379</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -789,7 +819,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00376">376</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00385">385</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -807,7 +837,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00380">380</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00389">389</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -825,7 +855,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00333">333</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00342">342</a> of file <a class="el" href="_s_t_m32_f0xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -843,7 +873,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00388">388</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00397">397</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -861,7 +891,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00405">405</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00414">414</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -879,7 +909,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00419">419</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00428">428</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -897,7 +927,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00400">400</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00409">409</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -915,7 +945,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00421">421</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html#l00430">430</a> of file <a class="el" href="_s_t_m32_f30x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -933,7 +963,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00447">447</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00456">456</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -951,7 +981,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00394">394</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00403">403</a> of file <a class="el" href="_s_t_m32_f10x_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>
@@ -969,7 +999,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00433">433</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html#l00442">442</a> of file <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c_source.html">pios_tim.c</a>.</p>
 
 </div>
 </div>

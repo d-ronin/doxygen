@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -148,10 +148,10 @@ $(document).ready(function(){initNavTree('posix_2pios__i2c_8c_source.html','');}
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> fd;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__mutex.html">pios_mutex</a> *<a class="code" href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">lock</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__mutex.html">pios_mutex</a> *<a class="code" href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">lock</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;int32_t <a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a8a87eed8285d31b959c790f61d2dd896">PIOS_I2C_Init</a>(uint32_t *i2c_id, <span class="keyword">const</span> <span class="keywordtype">char</span> *path)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;int32_t <a class="code" href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a>(<a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> *i2c_id, <span class="keyword">const</span> <span class="keywordtype">char</span> *path)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *dev;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -165,9 +165,9 @@ $(document).ready(function(){initNavTree('posix_2pios__i2c_8c_source.html','');}
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                .<a class="code" href="structpios__i2c__adapter.html#a07891f689e89b36732affa16c1c3bf94">magic</a> = PIOS_I2C_MAGIC,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        };</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        dev-&gt;<a class="code" href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">lock</a> = <a class="code" href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        dev-&gt;<a class="code" href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">lock</a> = <a class="code" href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (!dev-&gt;<a class="code" href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">lock</a>) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (!dev-&gt;<a class="code" href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">lock</a>) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -178,13 +178,13 @@ $(document).ready(function(){initNavTree('posix_2pios__i2c_8c_source.html','');}
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        *i2c_id = (uintptr_t) dev;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        *i2c_id = dev;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">/* No error */</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i2_c.html#ga82be0a46a98ad8ed6609e4f2dd27ae46">PIOS_I2C_Transfer</a>(uint32_t i2c_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__txn.html">pios_i2c_txn</a> txn_list[], uint32_t num_txns)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;int32_t <a class="code" href="group___p_i_o_s___i2_c.html#gaff71841b65f69b2ba46464053726661c">PIOS_I2C_Transfer</a>(<a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> i2c_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__txn.html">pios_i2c_txn</a> txn_list[], uint32_t num_txns)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *dev = (<span class="keyword">struct </span><a class="code" href="structpios__i2c__adapter.html">pios_i2c_adapter</a> *)i2c_id;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -214,34 +214,34 @@ $(document).ready(function(){initNavTree('posix_2pios__i2c_8c_source.html','');}
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                .nmsgs = num_txns</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        };</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a>(dev-&gt;<a class="code" href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">lock</a>, <a class="code" href="group___p_i_o_s___mutex.html#ga2193a3297c6728574794ee2e9ea717c3">PIOS_MUTEX_TIMEOUT_MAX</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="group___p_i_o_s___mutex.html#gaa402155f54d86cc2378e16c3b41d9375">PIOS_Mutex_Lock</a>(dev-&gt;<a class="code" href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">lock</a>, <a class="code" href="group___p_i_o_s___mutex.html#ga2193a3297c6728574794ee2e9ea717c3">PIOS_MUTEX_TIMEOUT_MAX</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span> (ioctl(dev-&gt;fd, I2C_RDWR, &amp;msgset) &lt; 0) {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                perror(<span class="stringliteral">&quot;i2c-ioctl&quot;</span>); <span class="comment">/* XXX remove */</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                ret = -1;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a>(dev-&gt;<a class="code" href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">lock</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a>(dev-&gt;<a class="code" href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">lock</a>);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_I2C */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="posix_2inc_2pios__i2c__priv_8h_html_a8a87eed8285d31b959c790f61d2dd896"><div class="ttname"><a href="posix_2inc_2pios__i2c__priv_8h.html#a8a87eed8285d31b959c790f61d2dd896">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(uint32_t *i2c_id, const char *path)</div></div>
-<div class="ttc" id="structpios__i2c__adapter_html_a07891f689e89b36732affa16c1c3bf94"><div class="ttname"><a href="structpios__i2c__adapter.html#a07891f689e89b36732affa16c1c3bf94">pios_i2c_adapter::magic</a></div><div class="ttdeci">enum pios_i2c_adapter_magic magic</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00129">pios_i2c_priv.h:129</a></div></div>
+<div class="ttc" id="structpios__i2c__adapter_html_a07891f689e89b36732affa16c1c3bf94"><div class="ttname"><a href="structpios__i2c__adapter.html#a07891f689e89b36732affa16c1c3bf94">pios_i2c_adapter::magic</a></div><div class="ttdeci">enum pios_i2c_adapter_magic magic</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00131">pios_i2c_priv.h:131</a></div></div>
 <div class="ttc" id="structpios__i2c__txn_html_a0d544e19d0f73acb6bf43743bc5e1480"><div class="ttname"><a href="structpios__i2c__txn.html#a0d544e19d0f73acb6bf43743bc5e1480">pios_i2c_txn::buf</a></div><div class="ttdeci">uint8_t * buf</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00045">pios_i2c.h:45</a></div></div>
 <div class="ttc" id="pios__i2c_8h_html"><div class="ttname"><a href="pios__i2c_8h.html">pios_i2c.h</a></div><div class="ttdoc">Debug helper functions header. </div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga797ea008335af18d3a3c90b627630654"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Mutex_Unlock(struct pios_mutex *mtx)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00104">pios_mutex.c:104</a></div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga08da531ac19ae51b91eed114c6e04526"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga08da531ac19ae51b91eed114c6e04526">PIOS_Mutex_Create</a></div><div class="ttdeci">struct pios_mutex * PIOS_Mutex_Create(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00043">pios_mutex.c:43</a></div></div>
-<div class="ttc" id="group___p_i_o_s___i2_c_html_ga82be0a46a98ad8ed6609e4f2dd27ae46"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga82be0a46a98ad8ed6609e4f2dd27ae46">PIOS_I2C_Transfer</a></div><div class="ttdeci">int32_t PIOS_I2C_Transfer(uint32_t i2c_id, const struct pios_i2c_txn txn_list[], uint32_t num_txns)</div></div>
-<div class="ttc" id="structpios__i2c__adapter_html_a204be78954ca92dd0c961d9b994d9933"><div class="ttname"><a href="structpios__i2c__adapter.html#a204be78954ca92dd0c961d9b994d9933">pios_i2c_adapter::lock</a></div><div class="ttdeci">struct pios_mutex * lock</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00132">pios_i2c_priv.h:132</a></div></div>
+<div class="ttc" id="posix_2inc_2pios__i2c__priv_8h_html_a4638989ec4e4f44464061eb000f4d702"><div class="ttname"><a href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(pios_i2c_t *i2c_id, const char *path)</div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i2_c_html_gaff71841b65f69b2ba46464053726661c"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gaff71841b65f69b2ba46464053726661c">PIOS_I2C_Transfer</a></div><div class="ttdeci">int32_t PIOS_I2C_Transfer(pios_i2c_t i2c_id, const struct pios_i2c_txn txn_list[], uint32_t num_txns)</div></div>
 <div class="ttc" id="structpios__i2c__txn_html_a22a5ef8fef7182f36899d8410be0dc27"><div class="ttname"><a href="structpios__i2c__txn.html#a22a5ef8fef7182f36899d8410be0dc27">pios_i2c_txn::addr</a></div><div class="ttdeci">uint16_t addr</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00042">pios_i2c.h:42</a></div></div>
-<div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2inc_2pios__i2c__priv_8h_source.html#l00128">pios_i2c_priv.h:128</a></div></div>
+<div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00130">pios_i2c_priv.h:130</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i2_c_html_gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca">PIOS_I2C_TXN_WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00037">pios_i2c.h:37</a></div></div>
 <div class="ttc" id="pios__mutex_8h_html"><div class="ttname"><a href="pios__mutex_8h.html">pios_mutex.h</a></div></div>
 <div class="ttc" id="structpios__i2c__txn_html_af238133c1e4df913933e48fc29c5510b"><div class="ttname"><a href="structpios__i2c__txn.html#af238133c1e4df913933e48fc29c5510b">pios_i2c_txn::len</a></div><div class="ttdeci">uint32_t len</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00044">pios_i2c.h:44</a></div></div>
+<div class="ttc" id="structpios__i2c__adapter_html_aadd6ccb22370ece92d5377b8c2089b13"><div class="ttname"><a href="structpios__i2c__adapter.html#aadd6ccb22370ece92d5377b8c2089b13">pios_i2c_adapter::lock</a></div><div class="ttdeci">struct pios_mutex * lock</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00134">pios_i2c_priv.h:134</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__mutex_html"><div class="ttname"><a href="structpios__mutex.html">pios_mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00034">pios_mutex.c:34</a></div></div>
 <div class="ttc" id="structpios__i2c__txn_html"><div class="ttname"><a href="structpios__i2c__txn.html">pios_i2c_txn</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00040">pios_i2c.h:40</a></div></div>

@@ -11,5 +11,5 @@ var pios__bmx055_8h =
       [ "PIOS_BMX_BOTTOM_180DEG", "pios__bmx055_8h.html#ggad982ea8ce8497d06b5e54339f50ce7f9a3869d873bc03e3f3111433ba7f460f55", null ],
       [ "PIOS_BMX_BOTTOM_270DEG", "pios__bmx055_8h.html#ggad982ea8ce8497d06b5e54339f50ce7f9a499bea2043dec28f60c93eaa5ca4070f", null ]
     ] ],
-    [ "PIOS_BMX055_SPI_Init", "pios__bmx055_8h.html#ga440a100beda1c3dc0989c02f6b90d1a5", null ]
+    [ "PIOS_BMX055_SPI_Init", "pios__bmx055_8h.html#ga27758d31a79ce885033f331c2b5e6899", null ]
 ];

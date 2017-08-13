@@ -18,7 +18,7 @@ var group___p_i_o_s___p_x4_f_l_o_w =
     [ "PIOS_PX4FLOW_FRAMECOUNTER_LSB", "group___p_i_o_s___p_x4_f_l_o_w.html#gaf972a8146309e18c297b0def4740c789", null ],
     [ "PIOS_PX4FLOW_FRAMECOUNTER_SINCE_LAST_I2C_READING_LSB", "group___p_i_o_s___p_x4_f_l_o_w.html#gae12574eb09b328b95064325c67f85499", null ],
     [ "PIOS_PX4FLOW_I2C_7_BIT_ADDR", "group___p_i_o_s___p_x4_f_l_o_w.html#ga9c5d9ccdae6a26387c6715b888a97f5d", null ],
-    [ "PIOS_PX4Flow_Init", "group___p_i_o_s___p_x4_f_l_o_w.html#gab1e71fd1d9a0b27e75f98f00ef41d900", null ],
+    [ "PIOS_PX4Flow_Init", "group___p_i_o_s___p_x4_f_l_o_w.html#ga31bffa771b2e49289c7fd4fba6e41269", null ],
     [ "PIOS_PX4Flow_IRQHandler", "group___p_i_o_s___p_x4_f_l_o_w.html#ga2af50867c4ac406178177a4bc49d57e7", null ],
     [ "PIOS_PX4Flow_SetRotation", "group___p_i_o_s___p_x4_f_l_o_w.html#gaec4c96f74993c9f69ad3a180da934aef", null ],
     [ "PIOS_PX4Flow_Test", "group___p_i_o_s___p_x4_f_l_o_w.html#ga47aefebddefef4e01e0cf4110f271b63", null ]

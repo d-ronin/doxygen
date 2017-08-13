@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -203,8 +203,8 @@ Functions</h2></td></tr>
 <tr class="separator:gad390e0e9fd6fc7cb1a9211c24bdaf28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b52809950cbf0eeb9acbf093462a917"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga4b52809950cbf0eeb9acbf093462a917">PIOS_FLASH_read_data</a> (uintptr_t partition_id, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
 <tr class="separator:ga4b52809950cbf0eeb9acbf093462a917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a23c23702dd0004514c87ce4a5520dc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga9a23c23702dd0004514c87ce4a5520dc">PIOS_Flash_Jedec_Init</a> (uintptr_t *flash_id, uint32_t spi_id, uint32_t slave_num, const struct <a class="el" href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
-<tr class="separator:ga9a23c23702dd0004514c87ce4a5520dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbee4664d4d77e405b0025f201921961"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gafbee4664d4d77e405b0025f201921961">PIOS_Flash_Jedec_Init</a> (uintptr_t *flash_id, <a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_id, uint32_t slave_num, const struct <a class="el" href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
+<tr class="separator:gafbee4664d4d77e405b0025f201921961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd9ef7fdca7628e050c8c63e6934c613"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gadd9ef7fdca7628e050c8c63e6934c613">PIOS_Flash_Jedec_ReadOTPData</a> (uintptr_t chip_id, uint32_t chip_offset, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
 <tr class="separator:gadd9ef7fdca7628e050c8c63e6934c613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga451a4ab8dbdc0f53823ac54604df8aee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga451a4ab8dbdc0f53823ac54604df8aee">PIOS_Flash_Jedec_GetCapacity</a> (uintptr_t chip_id)</td></tr>
@@ -704,7 +704,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9a23c23702dd0004514c87ce4a5520dc"></a>
+<a class="anchor" id="gafbee4664d4d77e405b0025f201921961"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -717,7 +717,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a>&#160;</td>
           <td class="paramname"><em>spi_id</em>, </td>
         </tr>
         <tr>

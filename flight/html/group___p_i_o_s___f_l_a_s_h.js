@@ -73,7 +73,7 @@ var group___p_i_o_s___f_l_a_s_h =
     [ "PIOS_FLASH_get_num_partitions", "group___p_i_o_s___f_l_a_s_h.html#gae1e540b9b876e9bc4ffb796be502ea7f", null ],
     [ "PIOS_FLASH_get_partition_size", "group___p_i_o_s___f_l_a_s_h.html#ga419099f2eaa0b46517ceda9492c8b202", null ],
     [ "PIOS_Flash_Jedec_GetCapacity", "group___p_i_o_s___f_l_a_s_h.html#ga451a4ab8dbdc0f53823ac54604df8aee", null ],
-    [ "PIOS_Flash_Jedec_Init", "group___p_i_o_s___f_l_a_s_h.html#ga9a23c23702dd0004514c87ce4a5520dc", null ],
+    [ "PIOS_Flash_Jedec_Init", "group___p_i_o_s___f_l_a_s_h.html#gafbee4664d4d77e405b0025f201921961", null ],
     [ "PIOS_Flash_Jedec_ReadOTPData", "group___p_i_o_s___f_l_a_s_h.html#gadd9ef7fdca7628e050c8c63e6934c613", null ],
     [ "PIOS_FLASH_read_data", "group___p_i_o_s___f_l_a_s_h.html#ga4b52809950cbf0eeb9acbf093462a917", null ],
     [ "PIOS_FLASH_register_partition_table", "group___p_i_o_s___f_l_a_s_h.html#gaf59606f01edaa6e33039ea87a5dd4e52", null ],

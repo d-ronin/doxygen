@@ -11,5 +11,5 @@ var pios__bmm150_8h =
       [ "PIOS_BMM_BOTTOM_180DEG", "pios__bmm150_8h.html#ggaff22ef86d336d60bec130dbec43b0a41ad74bdcc5ae3c325af7d4c460f314a184", null ],
       [ "PIOS_BMM_BOTTOM_270DEG", "pios__bmm150_8h.html#ggaff22ef86d336d60bec130dbec43b0a41a6d023cbcae48e4e543a1e5728b24fcf9", null ]
     ] ],
-    [ "PIOS_BMM150_SPI_Init", "pios__bmm150_8h.html#ga32fc6c8f5f2f55292d45b4362828785c", null ]
+    [ "PIOS_BMM150_SPI_Init", "pios__bmm150_8h.html#gad0461f7e88780d03da011b938d5de887", null ]
 ];

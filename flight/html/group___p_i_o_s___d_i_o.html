@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___d_i_o.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga24a9fd72fa3f40c4fdd6e617a2c81b23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23">DIO_NULL</a>&#160;&#160;&#160;((uintptr_t) 0)</td></tr>
+<tr class="separator:ga24a9fd72fa3f40c4fdd6e617a2c81b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga57314fe3306fd02b396aedcdc58749ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#ga57314fe3306fd02b396aedcdc58749ec">DIO_BASE</a>&#160;&#160;&#160;( (uintptr_t) GPIOA )</td></tr>
 <tr class="separator:ga57314fe3306fd02b396aedcdc58749ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6acf0efbc8a31adc4677e95a64b47bd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#ga6acf0efbc8a31adc4677e95a64b47bd1">DIO_PORT_OFFSET</a>(port)&#160;&#160;&#160;(((uintptr_t) (port)) - <a class="el" href="group___p_i_o_s___d_i_o.html#ga57314fe3306fd02b396aedcdc58749ec">DIO_BASE</a>)</td></tr>
@@ -137,6 +139,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga6a6dd4d8f70f15aef930b06d950d1dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace3ccccaff882fc02d25698c43f10fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a>(dio)&#160;&#160;&#160;((dio) &amp; 0xffff)</td></tr>
 <tr class="separator:gace3ccccaff882fc02d25698c43f10fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82405942bead35bac29c1e3bde6b1af1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#ga82405942bead35bac29c1e3bde6b1af1">_DIO_PRELUDE_RET</a>(s)</td></tr>
+<tr class="separator:ga82405942bead35bac29c1e3bde6b1af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab68d80b9f84d7597b7b2fdddd067a388"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#gab68d80b9f84d7597b7b2fdddd067a388">_DIO_PRELUDE</a></td></tr>
 <tr class="separator:gab68d80b9f84d7597b7b2fdddd067a388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e6f6b343b4f8d562e94393d70ebdb83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_i_o.html#ga1e6f6b343b4f8d562e94393d70ebdb83">DIO_SETREGS_FOURWIDE</a>(reglow, reghigh, idx, val)</td></tr>
@@ -215,12 +219,38 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">GPIO_TypeDef * gp = <a class="code" href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a>(t); \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (t == <a class="code" href="group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23">DIO_NULL</a>) { <span class="keywordflow">return</span>; } \</div>
+<div class="line">        GPIO_TypeDef * gp = <a class="code" href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a>(t); \</div>
 <div class="line">        uint16_t pin = <a class="code" href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a>(t);</div>
-<div class="ttc" id="group___p_i_o_s___d_i_o_html_gace3ccccaff882fc02d25698c43f10fea"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a></div><div class="ttdeci">#define GET_DIO_PIN(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00180">pios_dio.h:180</a></div></div>
-<div class="ttc" id="group___p_i_o_s___d_i_o_html_ga6a6dd4d8f70f15aef930b06d950d1dfc"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a></div><div class="ttdeci">#define GET_DIO_PORT(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00178">pios_dio.h:178</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_gace3ccccaff882fc02d25698c43f10fea"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a></div><div class="ttdeci">#define GET_DIO_PIN(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00182">pios_dio.h:182</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_ga6a6dd4d8f70f15aef930b06d950d1dfc"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a></div><div class="ttdeci">#define GET_DIO_PORT(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00180">pios_dio.h:180</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_ga24a9fd72fa3f40c4fdd6e617a2c81b23"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23">DIO_NULL</a></div><div class="ttdeci">#define DIO_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00086">pios_dio.h:86</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00182">182</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00189">189</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga82405942bead35bac29c1e3bde6b1af1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DIO_PRELUDE_RET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (t == <a class="code" href="group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23">DIO_NULL</a>) { <span class="keywordflow">return</span> (s); } \</div>
+<div class="line">        GPIO_TypeDef * gp = <a class="code" href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a>(t); \</div>
+<div class="line">        uint16_t pin = <a class="code" href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a>(t);</div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_gace3ccccaff882fc02d25698c43f10fea"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#gace3ccccaff882fc02d25698c43f10fea">GET_DIO_PIN</a></div><div class="ttdeci">#define GET_DIO_PIN(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00182">pios_dio.h:182</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_ga6a6dd4d8f70f15aef930b06d950d1dfc"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga6a6dd4d8f70f15aef930b06d950d1dfc">GET_DIO_PORT</a></div><div class="ttdeci">#define GET_DIO_PORT(dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00180">pios_dio.h:180</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_i_o_html_ga24a9fd72fa3f40c4fdd6e617a2c81b23"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23">DIO_NULL</a></div><div class="ttdeci">#define DIO_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00086">pios_dio.h:86</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00184">184</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +264,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00165">165</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00167">167</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +292,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00169">169</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00171">171</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga24a9fd72fa3f40c4fdd6e617a2c81b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DIO_NULL&#160;&#160;&#160;((uintptr_t) 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00086">86</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +324,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00167">167</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00169">169</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +362,7 @@ Functions</h2></td></tr>
 <div class="line">                (reg) = ((reg) &amp; ~(1 &lt;&lt; (__pos))) | ( (val) &lt;&lt; __pos); \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00244">244</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00252">252</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +400,7 @@ Functions</h2></td></tr>
 <div class="line">                (reg) = ((reg) &amp; ~(3 &lt;&lt; (__pos * 2))) | ( (val) &lt;&lt; (__pos * 2)); \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00238">238</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00246">246</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +450,7 @@ Functions</h2></td></tr>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00227">227</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00235">235</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +468,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00180">180</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00182">182</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +486,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00178">178</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00180">180</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +504,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00171">171</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00173">173</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +522,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00172">172</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00174">174</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +540,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00173">173</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00175">175</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +558,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00174">174</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00176">176</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +576,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00175">175</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00177">177</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +594,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00176">176</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00178">178</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +691,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00186">186</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00194">194</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +725,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00197">197</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00205">205</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -721,7 +765,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00399">399</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00407">407</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +817,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00291">291</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00299">299</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +876,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00263">263</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00271">271</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +910,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00312">312</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00320">320</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -911,7 +955,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00368">368</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00376">376</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -970,7 +1014,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00326">326</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00334">334</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1048,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00217">217</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00225">225</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1093,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00208">208</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00216">216</a> of file <a class="el" href="_s_t_m32_2inc_2pios__dio_8h_source.html">pios_dio.h</a>.</p>
 
 </div>
 </div>

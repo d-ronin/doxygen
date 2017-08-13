@@ -16,13 +16,14 @@ var vtol__follower__priv_8h =
       [ "DOWN_POSITION", "vtol__follower__priv_8h.html#ggaa1cc793c473ad52ad906c7feecdb3a37a545c2f2e31b041e3c0dec80772eacc04", null ],
       [ "VTOL_PID_NUM", "vtol__follower__priv_8h.html#ggaa1cc793c473ad52ad906c7feecdb3a37ac92fcbf75f1c93775999e6788aa2342d", null ]
     ] ],
-    [ "vtol_follower_control_altrate", "vtol__follower__priv_8h.html#ga583ee7430798aa3c1ab1014d060ab66d", null ],
+    [ "vtol_follower_control_altrate", "vtol__follower__priv_8h.html#ga4bde896955b52b18b38bfb169fb41f61", null ],
     [ "vtol_follower_control_attitude", "vtol__follower__priv_8h.html#gaf74c8d82d0da6f0684a18142a4443feb", null ],
-    [ "vtol_follower_control_endpoint", "vtol__follower__priv_8h.html#gae89f0d901a743824a6d0804e8478a9c8", null ],
-    [ "vtol_follower_control_land", "vtol__follower__priv_8h.html#ga0152285f9e7185a7cff243c0b7bca4dd", null ],
+    [ "vtol_follower_control_endpoint", "vtol__follower__priv_8h.html#ga933c9e672f1d310326f12149b084332c", null ],
+    [ "vtol_follower_control_land", "vtol__follower__priv_8h.html#ga3bb184686da274df1ce2c02d0b7d5484", null ],
     [ "vtol_follower_control_loiter", "vtol__follower__priv_8h.html#ga5e66d16b252c7eb235b845dca9216d66", null ],
-    [ "vtol_follower_control_path", "vtol__follower__priv_8h.html#ga62dfc94c1c12214c2749889b28b6d730", null ],
+    [ "vtol_follower_control_path", "vtol__follower__priv_8h.html#gaa888e9f4c0744cc967fdea6fc25024b7", null ],
     [ "vtol_follower_control_settings_updated", "vtol__follower__priv_8h.html#ga11c00ff1937f75fc54067a5e4a7e9631", null ],
     [ "vtol_follower_fsm_activate_goal", "vtol__follower__priv_8h.html#ga039469a77d5cf372122c15b804f556ac", null ],
-    [ "vtol_follower_fsm_update", "vtol__follower__priv_8h.html#gaf39bd45642b5b246242f59102ed2e828", null ]
+    [ "vtol_follower_fsm_update", "vtol__follower__priv_8h.html#gaf39bd45642b5b246242f59102ed2e828", null ],
+    [ "DT", "vtol__follower__priv_8h.html#ga6017ffae59f47b16d8bf2070452f1405", null ]
 ];

@@ -37,6 +37,7 @@ var group___p_i_o_s___t_i_m =
     [ "PIOS_TIM_InitAllTimerPins", "group___p_i_o_s___t_i_m.html#ga281bc5808570e749abd7764aada8d1b0", null ],
     [ "PIOS_TIM_InitChannels", "group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f", null ],
     [ "PIOS_TIM_InitClock", "group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc", null ],
+    [ "PIOS_TIM_InitTimerPin", "group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550", null ],
     [ "PIOS_TIM_SetBankToGPOut", "group___p_i_o_s___t_i_m.html#gaa9fff718f3bece2774971de5397a5f14", null ],
     [ "TIM14_IRQHandler", "group___p_i_o_s___t_i_m.html#ga422d57e8efb93bfbfa13cf343587af8c", null ],
     [ "TIM15_IRQHandler", "group___p_i_o_s___t_i_m.html#gae5ad04756b88bd027fc9be69e221d5d9", null ],

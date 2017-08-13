@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -797,90 +797,81 @@ $(document).ready(function(){initNavTree('playuavosd_2board-info_2board__hw__def
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment"> * SPI3 Interface</span></div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment"> * Used for MAX7456</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="keywordtype">void</span> PIOS_SPI_telem_flash_irq_handler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#afa8adfdb9eabaaa2b325d11112297a18">DMA1_Stream0_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_SPI_max7456_irq_handler&quot;)));</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#aa6bbc16de4bcffa047dccd2c4b694b2a">DMA1_Stream5_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_SPI_max7456_irq_handler&quot;)));</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;static const struct <a class="code" href="structpios__spi__cfg.html">pios_spi_cfg</a> pios_spi_max7456_cfg = {</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        .<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a> = SPI3,</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        .remap = GPIO_AF_SPI3,</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        .init = {</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                .SPI_Mode              = SPI_Mode_Master,</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                .SPI_Direction         = SPI_Direction_2Lines_FullDuplex,</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                .SPI_DataSize          = SPI_DataSize_8b,</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                .SPI_NSS               = SPI_NSS_Soft,</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                .SPI_FirstBit          = SPI_FirstBit_MSB,</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                .SPI_CRCPolynomial     = 7,</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                .SPI_CPOL              = SPI_CPOL_Low,</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                .SPI_CPHA              = SPI_CPHA_1Edge,</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                .SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8,</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        },</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        .sclk = {</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                .init = {</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                        .GPIO_Pin = GPIO_Pin_10,</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                },</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        },</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        .miso = {</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                .init = {</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                        .GPIO_Pin = GPIO_Pin_11,</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                        .GPIO_Speed = GPIO_Speed_50MHz,</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                },</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        },</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        .mosi = {</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                .init = {</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                        .GPIO_Pin = GPIO_Pin_12,</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                        .GPIO_Speed = GPIO_Speed_50MHz,</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                },</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        },</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        .slave_count = 1,</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        .ssel = {</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                { <span class="comment">// MAX7456</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                        .gpio = GPIOA,</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                        .init = {</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                                .GPIO_Pin = GPIO_Pin_15,</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                                .GPIO_Speed = GPIO_Speed_50MHz,</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                                .GPIO_Mode  = GPIO_Mode_OUT,</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                                .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                                .GPIO_PuPd = GPIO_PuPd_UP</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                        }</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                },</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        },</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;};</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;uint32_t pios_spi_max7456_id;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="keywordtype">void</span> PIOS_SPI_max7456_irq_handler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;{</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="comment">/* Call into the generic code to handle the IRQ for this specific device */</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga018ed8c0b8d0c9a22faf6faca9b5a895">PIOS_SPI_IRQ_Handler</a>(pios_spi_max7456_id);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;}</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="preprocessor">#endif // defined(PIOS_INCLUDE_SPI)</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__spi__cfg.html">pios_spi_cfg</a> pios_spi_max7456_cfg = {</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        .<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a> = SPI3,</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        .remap = GPIO_AF_SPI3,</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        .init = {</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                .SPI_Mode              = SPI_Mode_Master,</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                .SPI_Direction         = SPI_Direction_2Lines_FullDuplex,</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                .SPI_DataSize          = SPI_DataSize_8b,</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                .SPI_NSS               = SPI_NSS_Soft,</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                .SPI_FirstBit          = SPI_FirstBit_MSB,</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                .SPI_CRCPolynomial     = 7,</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                .SPI_CPOL              = SPI_CPOL_Low,</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                .SPI_CPHA              = SPI_CPHA_1Edge,</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                .SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8,</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        },</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        .sclk = {</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                .init = {</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                        .GPIO_Pin = GPIO_Pin_10,</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                },</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        },</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        .miso = {</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                .init = {</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                        .GPIO_Pin = GPIO_Pin_11,</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                        .GPIO_Speed = GPIO_Speed_50MHz,</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                },</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        },</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        .mosi = {</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                .init = {</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                        .GPIO_Pin = GPIO_Pin_12,</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                        .GPIO_Speed = GPIO_Speed_50MHz,</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                        .GPIO_Mode = GPIO_Mode_AF,</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                },</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        },</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        .slave_count = 1,</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        .ssel = {</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                { <span class="comment">// MAX7456</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                        .gpio = GPIOA,</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                        .init = {</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                                .GPIO_Pin = GPIO_Pin_15,</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                                .GPIO_Speed = GPIO_Speed_50MHz,</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                                .GPIO_Mode  = GPIO_Mode_OUT,</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                                .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                                .GPIO_PuPd = GPIO_PuPd_UP</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                        }</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                },</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        },</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;};</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> pios_spi_max7456_id;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="preprocessor">#endif // defined(PIOS_INCLUDE_SPI)</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___play_u_a_v_o_s_d_html_ga8a3391113e465d74c92def57807d830e"><div class="ttname"><a href="group___play_u_a_v_o_s_d.html#ga8a3391113e465d74c92def57807d830e">tim_12_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_12_cfg</div><div class="ttdef"><b>Definition:</b> <a href="playuavosd_2board-info_2board__hw__defs_8c_source.html#l00322">board_hw_defs.c:322</a></div></div>
 <div class="ttc" id="structpios__annunc_html_a88b452f9d510fde12b2592105e992b34"><div class="ttname"><a href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pios_annunc::pin</a></div><div class="ttdeci">struct stm32_gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00039">pios_annunc_priv.h:39</a></div></div>
 <div class="ttc" id="structpios__video__cfg_html"><div class="ttname"><a href="structpios__video__cfg.html">pios_video_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00095">pios_video.h:95</a></div></div>
-<div class="ttc" id="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h_html_aa6bbc16de4bcffa047dccd2c4b694b2a"><div class="ttname"><a href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#aa6bbc16de4bcffa047dccd2c4b694b2a">DMA1_Stream5_IRQHandler</a></div><div class="ttdeci">#define DMA1_Stream5_IRQHandler</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h_source.html#l00041">pios_chibios_transition_priv.h:41</a></div></div>
 <div class="ttc" id="group___play_u_a_v_o_s_d_html_gaf14eff61e8f08bddf3904d6fc4f17f15"><div class="ttname"><a href="group___play_u_a_v_o_s_d.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_3_cfg</div><div class="ttdef"><b>Definition:</b> <a href="playuavosd_2board-info_2board__hw__defs_8c_source.html#l00270">board_hw_defs.c:270</a></div></div>
 <div class="ttc" id="pios__rtc__priv_8h_html"><div class="ttname"><a href="pios__rtc__priv_8h.html">pios_rtc_priv.h</a></div><div class="ttdoc">ADC private definitions. </div></div>
 <div class="ttc" id="structpios__usart__cfg_html"><div class="ttname"><a href="structpios__usart__cfg.html">pios_usart_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00039">pios_usart_priv.h:39</a></div></div>
 <div class="ttc" id="structpios__can__cfg_html_aa7c799d5b36b41a1569ea86f855841d5"><div class="ttname"><a href="structpios__can__cfg.html#aa7c799d5b36b41a1569ea86f855841d5">pios_can_cfg::regs</a></div><div class="ttdeci">CAN_TypeDef * regs</div><div class="ttdef"><b>Definition:</b> <a href="pios__can__priv_8h_source.html#l00036">pios_can_priv.h:36</a></div></div>
 <div class="ttc" id="group___play_u_a_v_o_s_d_html_gab63edc180a907efe4bad610bbb6c2224"><div class="ttname"><a href="group___play_u_a_v_o_s_d.html#gab63edc180a907efe4bad610bbb6c2224">tim_apb2_time_base</a></div><div class="ttdeci">static const TIM_TimeBaseInitTypeDef tim_apb2_time_base</div><div class="ttdef"><b>Definition:</b> <a href="playuavosd_2board-info_2board__hw__defs_8c_source.html#l00261">board_hw_defs.c:261</a></div></div>
-<div class="ttc" id="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h_html_afa8adfdb9eabaaa2b325d11112297a18"><div class="ttname"><a href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#afa8adfdb9eabaaa2b325d11112297a18">DMA1_Stream0_IRQHandler</a></div><div class="ttdeci">#define DMA1_Stream0_IRQHandler</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h_source.html#l00036">pios_chibios_transition_priv.h:36</a></div></div>
+<div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gab0d9d7639c42a8911c2eb90048ee686a"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gab0d9d7639c42a8911c2eb90048ee686a">pios_flash_partition::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00087">pios_flash_priv.h:87</a></div></div>
 <div class="ttc" id="pios__spi__priv_8h_html"><div class="ttname"><a href="pios__spi__priv_8h.html">pios_spi_priv.h</a></div><div class="ttdoc">SPI private definitions. </div></div>
-<div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00202">pios.h:202</a></div></div>
+<div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00199">pios.h:199</a></div></div>
 <div class="ttc" id="structpios__flash__partition_html"><div class="ttname"><a href="structpios__flash__partition.html">pios_flash_partition</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00081">pios_flash_priv.h:81</a></div></div>
 <div class="ttc" id="pios__video_8h_html"><div class="ttname"><a href="pios__video_8h.html">pios_video.h</a></div><div class="ttdoc">OSD gen module, handles OSD draw. Parts from CL-OSD and SUPEROSD projects. </div></div>
 <div class="ttc" id="pios__com__priv_8h_html"><div class="ttname"><a href="pios__com__priv_8h.html">pios_com_priv.h</a></div><div class="ttdoc">COM private definitions. </div></div>
@@ -892,9 +883,8 @@ $(document).ready(function(){initNavTree('playuavosd_2board-info_2board__hw__def
 <div class="ttc" id="structpios__exti__cfg_html"><div class="ttname"><a href="structpios__exti__cfg.html">pios_exti_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__exti_8h_source.html#l00037">pios_exti.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga978815ab877ffa13e04e27609ce32786"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga978815ab877ffa13e04e27609ce32786">pios_video_cfg::set_bw_levels</a></div><div class="ttdeci">void(* set_bw_levels)(uint8_t, uint8_t)</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00104">pios_video.h:104</a></div></div>
 <div class="ttc" id="group___play_u_a_v_o_s_d_html_ga0e5e1b8910d71466edb2fd6f8d12356c"><div class="ttname"><a href="group___play_u_a_v_o_s_d.html#ga0e5e1b8910d71466edb2fd6f8d12356c">pios_usart_main_cfg</a></div><div class="ttdeci">static const struct pios_usart_cfg pios_usart_main_cfg</div><div class="ttdef"><b>Definition:</b> <a href="playuavosd_2board-info_2board__hw__defs_8c_source.html#l00177">board_hw_defs.c:177</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga018ed8c0b8d0c9a22faf6faca9b5a895"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga018ed8c0b8d0c9a22faf6faca9b5a895">PIOS_SPI_IRQ_Handler</a></div><div class="ttdeci">void PIOS_SPI_IRQ_Handler(uint32_t spi_id)</div></div>
 <div class="ttc" id="pios__flashfs__logfs__priv_8h_html"><div class="ttname"><a href="pios__flashfs__logfs__priv_8h.html">pios_flashfs_logfs_priv.h</a></div></div>
-<div class="ttc" id="group___a_q32_html_ga6ac74d56f67f74f449b252c6ba6bbd61"><div class="ttname"><a href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a></div><div class="ttdeci">#define PIOS_IRQ_PRIO_HIGHEST</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00182">pios_board.h:182</a></div></div>
+<div class="ttc" id="group___a_q32_html_ga6ac74d56f67f74f449b252c6ba6bbd61"><div class="ttname"><a href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a></div><div class="ttdeci">#define PIOS_IRQ_PRIO_HIGHEST</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00173">pios_board.h:173</a></div></div>
 <div class="ttc" id="pios__can__priv_8h_html"><div class="ttname"><a href="pios__can__priv_8h.html">pios_can_priv.h</a></div><div class="ttdoc">PiOS CAN interface header. </div></div>
 <div class="ttc" id="structpios__flash__chip_html"><div class="ttname"><a href="structpios__flash__chip.html">pios_flash_chip</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00065">pios_flash_priv.h:65</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html"><div class="ttname"><a href="pios__flash__internal__priv_8h.html">pios_flash_internal_priv.h</a></div></div>
@@ -905,7 +895,7 @@ $(document).ready(function(){initNavTree('playuavosd_2board-info_2board__hw__def
 <div class="ttc" id="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h_html_a958e0e8e85df9b2d33b349ae5db14f02"><div class="ttname"><a href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a958e0e8e85df9b2d33b349ae5db14f02">RTC_WKUP_IRQHandler</a></div><div class="ttdeci">#define RTC_WKUP_IRQHandler</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h_source.html#l00028">pios_chibios_transition_priv.h:28</a></div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html_a2a35b38ff91a638b973191977eab30e1"><div class="ttname"><a href="structpios__usb__cdc__cfg.html#a2a35b38ff91a638b973191977eab30e1">pios_usb_cdc_cfg::ctrl_if</a></div><div class="ttdeci">uint8_t ctrl_if</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00035">pios_usb_cdc_priv.h:35</a></div></div>
 <div class="ttc" id="group___a_q32_html_gae4912a499d71db827918d7908055ce05"><div class="ttname"><a href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a></div><div class="ttdeci">#define PIOS_LED_ALARM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00086">pios_board.h:86</a></div></div>
-<div class="ttc" id="group___a_q32_html_ga5eae9194437f23b68678de2ba9d9ce4a"><div class="ttname"><a href="group___a_q32.html#ga5eae9194437f23b68678de2ba9d9ce4a">PIOS_IRQ_PRIO_MID</a></div><div class="ttdeci">#define PIOS_IRQ_PRIO_MID</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00180">pios_board.h:180</a></div></div>
+<div class="ttc" id="group___a_q32_html_ga5eae9194437f23b68678de2ba9d9ce4a"><div class="ttname"><a href="group___a_q32.html#ga5eae9194437f23b68678de2ba9d9ce4a">PIOS_IRQ_PRIO_MID</a></div><div class="ttdeci">#define PIOS_IRQ_PRIO_MID</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00171">pios_board.h:171</a></div></div>
 <div class="ttc" id="pios__usart__priv_8h_html"><div class="ttname"><a href="pios__usart__priv_8h.html">pios_usart_priv.h</a></div><div class="ttdoc">USART private definitions. </div></div>
 <div class="ttc" id="structflashfs__logfs__cfg_html"><div class="ttname"><a href="structflashfs__logfs__cfg.html">flashfs_logfs_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs__priv_8h_source.html#l00038">pios_flashfs_logfs_priv.h:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_f_s_html_ga1fe17f8582e422dfe871844653d7d6f9"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h_f_s.html#ga1fe17f8582e422dfe871844653d7d6f9">flashfs_logfs_cfg::fs_magic</a></div><div class="ttdeci">uint32_t fs_magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs__priv_8h_source.html#l00039">pios_flashfs_logfs_priv.h:39</a></div></div>

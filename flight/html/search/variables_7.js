@@ -15,7 +15,7 @@ var searchData=
   ['get_5fcrc',['GET_CRC',['../classpx__uploader_1_1uploader.html#a8c5c290fb7542dcfa51ab6ce0914718c',1,'px_uploader::uploader']]],
   ['get_5fdevice',['GET_DEVICE',['../classpx__uploader_1_1uploader.html#ae03b426ef1ceb16a6707105765aadf97',1,'px_uploader::uploader']]],
   ['get_5fotp',['GET_OTP',['../classpx__uploader_1_1uploader.html#abf6aadf5e935224b5086bf631f5dab9c',1,'px_uploader::uploader']]],
-  ['get_5fpin',['get_pin',['../structpios__adc__driver.html#ad310fb99761e7717588d465bf65db8de',1,'pios_adc_driver']]],
+  ['get_5fpin',['get_pin',['../structpios__adc__driver.html#a9362aa0b30e34dccd3fa9bb97ad8a7d1',1,'pios_adc_driver']]],
   ['get_5fsn',['GET_SN',['../classpx__uploader_1_1uploader.html#a8b53c05343c46dac2476893bebe98c49',1,'px_uploader::uploader']]],
   ['get_5fsync',['GET_SYNC',['../classpx__uploader_1_1uploader.html#a98df4735835b5c245ed09c9228b509df',1,'px_uploader::uploader']]],
   ['gexp',['gexp',['../ecc_8h.html#a4bfe7bd4f17407ec020b8850207bfa25',1,'gexp():&#160;galois.c'],['../galois_8c.html#aaca848efd07888d6d88886ac06b463de',1,'gexp():&#160;galois.c']]],

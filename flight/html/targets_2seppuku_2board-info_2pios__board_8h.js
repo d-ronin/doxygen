@@ -23,11 +23,6 @@ var targets_2seppuku_2board_info_2pios__board_8h =
     [ "PIOS_GCSRCVR_TIMEOUT_MS", "targets_2seppuku_2board-info_2pios__board_8h.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_HSUM_MAX_DEVS", "targets_2seppuku_2board-info_2pios__board_8h.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "targets_2seppuku_2board-info_2pios__board_8h.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
-    [ "PIOS_I2C_ADAPTER_0", "targets_2seppuku_2board-info_2pios__board_8h.html#ga4c474f882907575649f7df22afea0d65", null ],
-    [ "PIOS_I2C_ADAPTER_1", "targets_2seppuku_2board-info_2pios__board_8h.html#ga1a176f8aaf8e5dad9e28cff05b5f9cb3", null ],
-    [ "PIOS_I2C_ADAPTER_2", "targets_2seppuku_2board-info_2pios__board_8h.html#ga0cafb777327b3dcb8c341e5c16ad4026", null ],
-    [ "PIOS_I2C_ETASV3_ADAPTER", "targets_2seppuku_2board-info_2pios__board_8h.html#gad2e5852f07d75f8f0720d7f228393da9", null ],
-    [ "PIOS_I2C_MAX_DEVS", "targets_2seppuku_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be", null ],
     [ "PIOS_IRQ_PRIO_HIGH", "targets_2seppuku_2board-info_2pios__board_8h.html#gab5f09e1f881124b5131fd88fc013fddd", null ],
     [ "PIOS_IRQ_PRIO_HIGHEST", "targets_2seppuku_2board-info_2pios__board_8h.html#ga6ac74d56f67f74f449b252c6ba6bbd61", null ],
     [ "PIOS_IRQ_PRIO_LOW", "targets_2seppuku_2board-info_2pios__board_8h.html#ga7faa93f4a0aaaeeff604e8207d1531c2", null ],
@@ -59,8 +54,5 @@ var targets_2seppuku_2board_info_2pios__board_8h =
     [ "pios_com_storm32bgc_id", "targets_2seppuku_2board-info_2pios__board_8h.html#gafbc6816a3f67d49dc16b726bfbaf75a3", null ],
     [ "pios_com_telem_serial_id", "targets_2seppuku_2board-info_2pios__board_8h.html#ga2d0de5022c647a603359c8a7514c658e", null ],
     [ "pios_com_telem_usb_id", "targets_2seppuku_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
-    [ "pios_com_vcp_id", "targets_2seppuku_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ],
-    [ "pios_i2c_internal_adapter_id", "targets_2seppuku_2board-info_2pios__board_8h.html#ga55974b8a985ecdc9dfed8c0962c36dd8", null ],
-    [ "pios_i2c_usart1_adapter_id", "targets_2seppuku_2board-info_2pios__board_8h.html#ga29c6942e2bb055cc6d2a15ac205c540b", null ],
-    [ "pios_i2c_usart3_adapter_id", "targets_2seppuku_2board-info_2pios__board_8h.html#gacf440a27cf365a1dadff460dd8162422", null ]
+    [ "pios_com_vcp_id", "targets_2seppuku_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ]
 ];

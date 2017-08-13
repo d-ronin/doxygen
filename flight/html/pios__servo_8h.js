@@ -7,6 +7,7 @@ var pios__servo_8h =
       [ "SHOT_DSHOT600", "pios__servo_8h.html#gga917cc8820f8432b25b61e24c0d619904a88674977b35c46a483a43b5cf823e0f4", null ],
       [ "SHOT_DSHOT1200", "pios__servo_8h.html#gga917cc8820f8432b25b61e24c0d619904aa6b393cc177b4dfaf7ef5461bedaee27", null ]
     ] ],
+    [ "PIOS_Servo_DisableChannel", "pios__servo_8h.html#gaf3c9c148e8f9d54901aca2b9ce950aa1", null ],
     [ "PIOS_Servo_GetPins", "pios__servo_8h.html#gac6dc42811aebe0e74f9cbfd3b62df862", null ],
     [ "PIOS_Servo_PrepareForReset", "pios__servo_8h.html#ga1ccf3b4ed37aba8b784df832dd1e325b", null ],
     [ "PIOS_Servo_Set", "pios__servo_8h.html#gaba4a52e086fdb598832d09776cdebde3", null ],

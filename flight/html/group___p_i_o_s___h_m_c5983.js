@@ -77,6 +77,6 @@ var group___p_i_o_s___h_m_c5983 =
       [ "PIOS_HMC5983_BOTTOM_180DEG", "group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a26eda046ed668462bd1490b4703d58b1", null ],
       [ "PIOS_HMC5983_BOTTOM_270DEG", "group___p_i_o_s___h_m_c5983.html#ggab3f2da0720cbc9ed9990c883001f2666a1e869bd3bca58667e691ee11bb787f4a", null ]
     ] ],
-    [ "PIOS_HMC5983_Init", "group___p_i_o_s___h_m_c5983.html#ga337bb85999059b8d44c4b23b8af98f13", null ],
+    [ "PIOS_HMC5983_Init", "group___p_i_o_s___h_m_c5983.html#ga1dd50ec60a5cd1e82c15db63a820c890", null ],
     [ "PIOS_HMC5983_IRQHandler", "group___p_i_o_s___h_m_c5983.html#ga0c41136f8c1921b3032a45bff462600f", null ]
 ];

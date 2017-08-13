@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -196,10 +196,10 @@ Functions</h2></td></tr>
 <tr class="separator:gaa96452721032acd43f9b128a04406aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8fb9284605593ba78f215bf5546cef6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae8fb9284605593ba78f215bf5546cef6">zero_pids</a> (void)</td></tr>
 <tr class="separator:gae8fb9284605593ba78f215bf5546cef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9b0877f7505ea47ba2c7e5321873837"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae9b0877f7505ea47ba2c7e5321873837">calculate_pids</a> (void)</td></tr>
-<tr class="separator:gae9b0877f7505ea47ba2c7e5321873837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f22b0b7dbf1d6b7ad7439f5418bfacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd">update_settings</a> ()</td></tr>
-<tr class="separator:ga9f22b0b7dbf1d6b7ad7439f5418bfacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafee8d48edb67b78838f9ef3eea4cd62a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gafee8d48edb67b78838f9ef3eea4cd62a">calculate_pids</a> (float dT)</td></tr>
+<tr class="separator:gafee8d48edb67b78838f9ef3eea4cd62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe35ba3a9cb8c902aa2ed4a0e65e3c2c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c">update_settings</a> (float dT)</td></tr>
+<tr class="separator:gafe35ba3a9cb8c902aa2ed4a0e65e3c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga563b10817781bf2d41a996189589402a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga563b10817781bf2d41a996189589402a">get_throttle</a> (StabilizationDesiredData *stabilization_desired, SystemSettingsAirframeTypeOptions *<a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>)</td></tr>
 <tr class="separator:ga563b10817781bf2d41a996189589402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6190a7e200476bf20da7b47ac4107973"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a> ()</td></tr>
@@ -491,7 +491,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae9b0877f7505ea47ba2c7e5321873837"></a>
+<a class="anchor" id="gafee8d48edb67b78838f9ef3eea4cd62a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -501,8 +501,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void calculate_pids </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dT</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -918,7 +918,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9f22b0b7dbf1d6b7ad7439f5418bfacd"></a>
+<a class="anchor" id="gafe35ba3a9cb8c902aa2ed4a0e65e3c2c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -928,7 +928,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void update_settings </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dT</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -939,7 +940,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01150">1150</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01160">1160</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>

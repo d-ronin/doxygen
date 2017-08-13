@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>jedec_flash_dev {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        uint32_t spi_id;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_id;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        uint32_t slave_num;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        uint32_t capacity_bytes;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> flash_dev-&gt;capacity_bytes;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;int32_t <a class="code" href="group___p_i_o_s___f_l_a_s_h.html#ga9a23c23702dd0004514c87ce4a5520dc">PIOS_Flash_Jedec_Init</a>(uintptr_t *chip_id, uint32_t spi_id, uint32_t slave_num, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;int32_t <a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gafbee4664d4d77e405b0025f201921961">PIOS_Flash_Jedec_Init</a>(uintptr_t *chip_id, <a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_id, uint32_t slave_num, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a> *<a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span>jedec_flash_dev *flash_dev = PIOS_Flash_Jedec_alloc();</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (flash_dev == NULL)</div>
@@ -257,18 +257,18 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">static</span> int32_t PIOS_Flash_Jedec_ClaimBus(<span class="keyword">struct</span> jedec_flash_dev *flash_dev)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a>(flash_dev-&gt;spi_id) &lt; 0)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a>(flash_dev-&gt;spi_id) &lt; 0)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>(flash_dev-&gt;spi_id, flash_dev-&gt;slave_num, 0);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a>(flash_dev-&gt;spi_id, flash_dev-&gt;slave_num, 0);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">static</span> int32_t PIOS_Flash_Jedec_ReleaseBus(<span class="keyword">struct</span> jedec_flash_dev *flash_dev)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>(flash_dev-&gt;spi_id, flash_dev-&gt;slave_num, 1);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga117fbed6d00c5404e9414ab72175e1c8">PIOS_SPI_ReleaseBus</a>(flash_dev-&gt;spi_id);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a>(flash_dev-&gt;spi_id, flash_dev-&gt;slave_num, 1);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a>(flash_dev-&gt;spi_id);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        uint8_t out[] = {</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                JEDEC_WRITE_ENABLE,</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        };</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out));</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out));</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">return</span> 0;</div>
@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                0,</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        };</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        uint8_t in[2] = {0,0};</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,in,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,in,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                0,</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        };</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        uint8_t in[4];</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,in,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,in,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                <span class="keywordflow">return</span> -3;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (PIOS_Flash_Jedec_ClaimBus(flash_dev) != 0)</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
@@ -444,13 +444,13 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">if</span> (PIOS_Flash_Jedec_ClaimBus(flash_dev) != 0)</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        }</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="comment">/* Clock out data to flash */</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,data,NULL,len) &lt; 0) {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,data,NULL,len) &lt; 0) {</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
@@ -468,8 +468,8 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">if</span> (PIOS_Flash_Jedec_ClaimBus(flash_dev) &lt; 0)</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(flash_dev-&gt;spi_id, JEDEC_READ_STATUS);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(flash_dev-&gt;spi_id, JEDEC_READ_STATUS) &amp; JEDEC_STATUS_BUSY);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a>(flash_dev-&gt;spi_id, JEDEC_READ_STATUS);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a>(flash_dev-&gt;spi_id, JEDEC_READ_STATUS) &amp; JEDEC_STATUS_BUSY);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
@@ -495,13 +495,13 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                (chip_offset &gt;&gt;  0) &amp; 0xff,</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        };</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        }</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="comment">/* Copy the transfer data to the buffer */</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,NULL,data,len) &lt; 0) {</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,NULL,data,len) &lt; 0) {</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                <span class="keywordflow">return</span> -3;</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        }</div>
@@ -529,13 +529,13 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                (chip_offset &gt;&gt;  0) &amp; 0xff,</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        };</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,out,NULL,<span class="keyword">sizeof</span>(out)) &lt; 0) {</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        }</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="comment">/* Copy the transfer data to the buffer */</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,NULL,data,len) &lt; 0) {</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(flash_dev-&gt;spi_id,NULL,data,len) &lt; 0) {</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                PIOS_Flash_Jedec_ReleaseBus(flash_dev);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="keywordflow">return</span> -3;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        }</div>
@@ -558,27 +558,28 @@ $(document).ready(function(){initNavTree('pios__flash__jedec_8c_source.html','')
 <div class="ttc" id="pios__crossfire_8h_html_a8ca86f57427b6c3eef55ddd257f05b39"><div class="ttname"><a href="pios__crossfire_8h.html#a8ca86f57427b6c3eef55ddd257f05b39">capacity</a></div><div class="ttdeci">uint8_t capacity[3]</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00044">pios_crossfire.h:44</a></div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga9f80c0f562536f093d9c7c4dd7d77904"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga9f80c0f562536f093d9c7c4dd7d77904">PIOS_SEMAPHORE_TIMEOUT_MAX</a></div><div class="ttdeci">#define PIOS_SEMAPHORE_TIMEOUT_MAX</div><div class="ttdef"><b>Definition:</b> <a href="pios__semaphore_8h_source.html#l00030">pios_semaphore.h:30</a></div></div>
 <div class="ttc" id="structpios__semaphore_html"><div class="ttname"><a href="structpios__semaphore.html">pios_semaphore</a></div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00029">pios_semaphore.c:29</a></div></div>
+<div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gac5d1cda8a86d1d45f48b520061009016"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gac5d1cda8a86d1d45f48b520061009016">pios_jedec_flash_driver</a></div><div class="ttdeci">const struct pios_flash_driver pios_jedec_flash_driver</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga1b5bd655c2debc91231000a99f390bef"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a></div><div class="ttdeci">int32_t PIOS_SPI_RC_PinSet(pios_spi_t spi_dev, uint32_t slave_id, bool pin_value)</div></div>
+<div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gafbee4664d4d77e405b0025f201921961"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gafbee4664d4d77e405b0025f201921961">PIOS_Flash_Jedec_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Jedec_Init(uintptr_t *flash_id, pios_spi_t spi_id, uint32_t slave_num, const struct pios_flash_jedec_cfg *cfg)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gaf4d7eff28af84690c0caa8ac3c0abeee"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ClaimBus(pios_spi_t spi_dev)</div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00123">pios_heap.c:123</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga307f60532c61b56c285ce5d680cb14c5"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ClaimBus(uint32_t spi_id)</div></div>
 <div class="ttc" id="bl__messages_8h_html_ae634662f1116dcacc7a47136a87bb07b"><div class="ttname"><a href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a></div><div class="ttdeci">uint8_t data[XFER_BYTES_PER_PACKET]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00129">bl_messages.h:129</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gadd9ef7fdca7628e050c8c63e6934c613"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gadd9ef7fdca7628e050c8c63e6934c613">PIOS_Flash_Jedec_ReadOTPData</a></div><div class="ttdeci">int32_t PIOS_Flash_Jedec_ReadOTPData(uintptr_t chip_id, uint32_t chip_offset, uint8_t *data, uint16_t len)</div></div>
-<div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga9a23c23702dd0004514c87ce4a5520dc"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga9a23c23702dd0004514c87ce4a5520dc">PIOS_Flash_Jedec_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Jedec_Init(uintptr_t *flash_id, uint32_t spi_id, uint32_t slave_num, const struct pios_flash_jedec_cfg *cfg)</div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga1f061c6145fecd978cde0ee76bc03250"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga1f061c6145fecd978cde0ee76bc03250">JEDEC_MEMORYTYPE_ANY</a></div><div class="ttdeci">#define JEDEC_MEMORYTYPE_ANY</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__jedec__priv_8h_source.html#l00044">pios_flash_jedec_priv.h:44</a></div></div>
 <div class="ttc" id="group___common_f1_html_ga2414697de79a243562514a0a4344a4dd"><div class="ttname"><a href="group___common_f1.html#ga2414697de79a243562514a0a4344a4dd">status</a></div><div class="ttdeci">int16_t status</div><div class="ttdef"><b>Definition:</b> <a href="bl_2f1_2main_8c_source.html#l00061">main.c:61</a></div></div>
 <div class="ttc" id="pios__flash__jedec__priv_8h_html"><div class="ttname"><a href="pios__flash__jedec__priv_8h.html">pios_flash_jedec_priv.h</a></div><div class="ttdoc">Driver for talking to most JEDEC flash chips. </div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_gae3b8ab7e4cc3f9ddd090d77b92038158"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#gae3b8ab7e4cc3f9ddd090d77b92038158">PIOS_Semaphore_Create</a></div><div class="ttdeci">struct pios_semaphore * PIOS_Semaphore_Create(void)</div><div class="ttdoc">Creates a binary semaphore. </div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00150">pios_semaphore.c:150</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gaba986f2515cfe42f08293c869107ea84"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a></div><div class="ttdeci">uint8_t PIOS_SPI_TransferByte(pios_spi_t spi_dev, uint8_t b)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gafe2e08b39f192e798c498a5fa0ae8dba"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a></div><div class="ttdeci">int32_t PIOS_SPI_TransferBlock(pios_spi_t spi_dev, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga8ef85c87885473f57f442c9980db7cdb"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a></div><div class="ttdeci">bool PIOS_Semaphore_Give(struct pios_semaphore *sema)</div><div class="ttdoc">Gives binary semaphore. </div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00202">pios_semaphore.c:202</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga117fbed6d00c5404e9414ab72175e1c8"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga117fbed6d00c5404e9414ab72175e1c8">PIOS_SPI_ReleaseBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ReleaseBus(uint32_t spi_id)</div></div>
 <div class="ttc" id="structpios__flash__jedec__cfg_html"><div class="ttname"><a href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__jedec__priv_8h_source.html#l00046">pios_flash_jedec_priv.h:46</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2c639e61f21eac6cb54580eb5e1b85de"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a></div><div class="ttdeci">void PIOS_Thread_Sleep(uint32_t time_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00118">pios_thread.c:118</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga6483f13379bc83d892c4721fbbd46afa"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a></div><div class="ttdeci">uint8_t PIOS_SPI_TransferByte(uint32_t spi_id, uint8_t b)</div></div>
 <div class="ttc" id="pios__flash__priv_8h_html"><div class="ttname"><a href="pios__flash__priv_8h.html">pios_flash_priv.h</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga479cdbfe7e7fef12dc8fedbaf6d104f0"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a></div><div class="ttdeci">int32_t PIOS_SPI_RC_PinSet(uint32_t spi_id, uint32_t slave_id, bool pin_value)</div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga4be8d25f1ea7f6239c7ae7059a37ad2b"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a></div><div class="ttdeci">bool PIOS_Semaphore_Take(struct pios_semaphore *sema, uint32_t timeout_ms)</div><div class="ttdoc">Takes binary semaphore. </div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00175">pios_semaphore.c:175</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga02c8e3abceb458b72e9264884933cff6"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a></div><div class="ttdeci">int32_t PIOS_SPI_TransferBlock(uint32_t spi_id, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga8fa5be788c14e9e5af848c4a4e37051e"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ReleaseBus(pios_spi_t spi_dev)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga451a4ab8dbdc0f53823ac54604df8aee"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga451a4ab8dbdc0f53823ac54604df8aee">PIOS_Flash_Jedec_GetCapacity</a></div><div class="ttdeci">uint32_t PIOS_Flash_Jedec_GetCapacity(uintptr_t chip_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga636ba15f7a7c82f4ae652adf1090a6f8"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga636ba15f7a7c82f4ae652adf1090a6f8">JEDEC_MANUFACTURER_ANY</a></div><div class="ttdeci">#define JEDEC_MANUFACTURER_ANY</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__jedec__priv_8h_source.html#l00037">pios_flash_jedec_priv.h:37</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>

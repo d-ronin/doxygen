@@ -8,7 +8,7 @@ var pios__flash__jedec__priv_8h =
     [ "JEDEC_MANUFACTURER_WINBOND", "pios__flash__jedec__priv_8h.html#gaff548546cbb0802c765ea134be355f8f", null ],
     [ "JEDEC_MEMORYTYPE_ANY", "pios__flash__jedec__priv_8h.html#ga1f061c6145fecd978cde0ee76bc03250", null ],
     [ "PIOS_Flash_Jedec_GetCapacity", "pios__flash__jedec__priv_8h.html#ga451a4ab8dbdc0f53823ac54604df8aee", null ],
-    [ "PIOS_Flash_Jedec_Init", "pios__flash__jedec__priv_8h.html#ga9a23c23702dd0004514c87ce4a5520dc", null ],
+    [ "PIOS_Flash_Jedec_Init", "pios__flash__jedec__priv_8h.html#gafbee4664d4d77e405b0025f201921961", null ],
     [ "PIOS_Flash_Jedec_ReadOTPData", "pios__flash__jedec__priv_8h.html#gadd9ef7fdca7628e050c8c63e6934c613", null ],
     [ "pios_jedec_flash_driver", "pios__flash__jedec__priv_8h.html#gac5d1cda8a86d1d45f48b520061009016", null ]
 ];

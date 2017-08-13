@@ -8,13 +8,14 @@ var group___p_i_o_s___i2_c =
       [ "len", "structpios__i2c__txn.html#af238133c1e4df913933e48fc29c5510b", null ],
       [ "rw", "structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821", null ]
     ] ],
+    [ "pios_i2c_t", "group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6", null ],
     [ "pios_i2c_txn_direction", "group___p_i_o_s___i2_c.html#ga317e7ea68e21f759a0326df96f278a2b", [
       [ "PIOS_I2C_TXN_READ", "group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2bad792429208f1a6cfeccea519a221c4c2", null ],
       [ "PIOS_I2C_TXN_WRITE", "group___p_i_o_s___i2_c.html#gga317e7ea68e21f759a0326df96f278a2ba46f0bf6cbe98473562192f85efa6dfca", null ]
     ] ],
-    [ "PIOS_I2C_CheckClear", "group___p_i_o_s___i2_c.html#gaaabd7d33d122ee5c6b33779b1302a84f", null ],
-    [ "PIOS_I2C_ER_IRQ_Handler", "group___p_i_o_s___i2_c.html#ga3039907b5945c06d4c27e756647fa75c", null ],
-    [ "PIOS_I2C_EV_IRQ_Handler", "group___p_i_o_s___i2_c.html#ga779ac2da156f2d9720d8e526bf05edb4", null ],
-    [ "PIOS_I2C_Transfer", "group___p_i_o_s___i2_c.html#ga82be0a46a98ad8ed6609e4f2dd27ae46", null ],
-    [ "PIOS_I2C_Transfer_Callback", "group___p_i_o_s___i2_c.html#ga29a3d795901b2ad013a11454cd587e57", null ]
+    [ "PIOS_I2C_CheckClear", "group___p_i_o_s___i2_c.html#ga4b1eb637def8eab1e651248b646c41a2", null ],
+    [ "PIOS_I2C_ER_IRQ_Handler", "group___p_i_o_s___i2_c.html#ga7ee09f2116c09720941e51ee69c3d1ed", null ],
+    [ "PIOS_I2C_EV_IRQ_Handler", "group___p_i_o_s___i2_c.html#ga4a166268d523d4b711f2a3a4d807bfe2", null ],
+    [ "PIOS_I2C_Transfer", "group___p_i_o_s___i2_c.html#gaff71841b65f69b2ba46464053726661c", null ],
+    [ "PIOS_I2C_Transfer_Callback", "group___p_i_o_s___i2_c.html#ga210f517040937b8edc804dbfd4221afb", null ]
 ];

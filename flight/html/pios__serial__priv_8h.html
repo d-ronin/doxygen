@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -130,6 +130,8 @@ $(document).ready(function(){initNavTree('pios__serial__priv_8h.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:acef67275a59302a5f9100cab90e5e84c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__serial__priv_8h.html#acef67275a59302a5f9100cab90e5e84c">PIOS_SERIAL_Init</a> (uintptr_t *serial_id, const char *path)</td></tr>
 <tr class="separator:acef67275a59302a5f9100cab90e5e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21381275290d0ef9e23bf65d1baec3da"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__serial__priv_8h.html#a21381275290d0ef9e23bf65d1baec3da">PIOS_SERIAL_InitFromFd</a> (uintptr_t *serial_id, int readfd, int writefd, bool dont_touch_line)</td></tr>
+<tr class="separator:a21381275290d0ef9e23bf65d1baec3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -160,6 +162,44 @@ The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org<
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21381275290d0ef9e23bf65d1baec3da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t PIOS_SERIAL_InitFromFd </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t *&#160;</td>
+          <td class="paramname"><em>serial_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>readfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>writefd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dont_touch_line</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('pios__max7456_8h.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="pios__spi_8h_source.html">pios_spi.h</a>&gt;</code><br/>
 </div>
 <p><a href="pios__max7456_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -165,9 +166,9 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga58e28450415c985198e6514ce1ba5f99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga58e28450415c985198e6514ce1ba5f99">PIOS_MAX7456_wait_vsync</a> ()</td></tr>
 <tr class="separator:ga58e28450415c985198e6514ce1ba5f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e4233e93ba83adf23e5933a8de310d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga2e4233e93ba83adf23e5933a8de310d2">PIOS_MAX7456_init</a> (<a class="el" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> *dev_out, uint32_t spi_handle, uint32_t slave_idx)</td></tr>
-<tr class="memdesc:ga2e4233e93ba83adf23e5933a8de310d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialise MAX7456 device.  <a href="group___p_i_o_s.html#ga2e4233e93ba83adf23e5933a8de310d2">More...</a><br/></td></tr>
-<tr class="separator:ga2e4233e93ba83adf23e5933a8de310d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf1c9945f28cdba22ed5569036d4f4f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#gadf1c9945f28cdba22ed5569036d4f4f1">PIOS_MAX7456_init</a> (<a class="el" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> *dev_out, <a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_handle, uint32_t slave_idx)</td></tr>
+<tr class="memdesc:gadf1c9945f28cdba22ed5569036d4f4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialise MAX7456 device.  <a href="group___p_i_o_s.html#gadf1c9945f28cdba22ed5569036d4f4f1">More...</a><br/></td></tr>
+<tr class="separator:gadf1c9945f28cdba22ed5569036d4f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46919392a16e8904db85572993c906db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s.html#ga46919392a16e8904db85572993c906db">PIOS_MAX7456_clear</a> (<a class="el" href="group___p_i_o_s.html#gad3c06e407f8c751b5d704fe797f0890a">max7456_dev_t</a> dev)</td></tr>
 <tr class="memdesc:ga46919392a16e8904db85572993c906db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the screen.  <a href="group___p_i_o_s.html#ga46919392a16e8904db85572993c906db">More...</a><br/></td></tr>
 <tr class="separator:ga46919392a16e8904db85572993c906db"><td class="memSeparator" colspan="2">&#160;</td></tr>

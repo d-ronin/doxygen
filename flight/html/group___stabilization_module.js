@@ -32,7 +32,7 @@ var group___stabilization_module =
       [ "PID_MAX", "group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2daa9ba8c316889eca7f244f9e458323e1c", null ]
     ] ],
     [ "bound", "group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d", null ],
-    [ "calculate_pids", "group___stabilization_module.html#gae9b0877f7505ea47ba2c7e5321873837", null ],
+    [ "calculate_pids", "group___stabilization_module.html#gafee8d48edb67b78838f9ef3eea4cd62a", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#ga6c8999e5e09a2051669e97456ba1676d", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#gaca83a707babce95cd70c1ec0242ad10b", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#ga472bec063ff4dd41b0b24883a9cb0488", null ],
@@ -46,7 +46,7 @@ var group___stabilization_module =
     [ "StabilizationInitialize", "group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b", null ],
     [ "StabilizationStart", "group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973", null ],
     [ "stabilizationTask", "group___stabilization_module.html#gaa96452721032acd43f9b128a04406aad", null ],
-    [ "update_settings", "group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd", null ],
+    [ "update_settings", "group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c", null ],
     [ "zero_pids", "group___stabilization_module.html#gae8fb9284605593ba78f215bf5546cef6", null ],
     [ "axis_lock_accum", "group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db", null ],
     [ "deadbands", "group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1", null ],

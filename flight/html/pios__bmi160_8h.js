@@ -27,6 +27,6 @@ var pios__bmi160_8h =
       [ "PIOS_BMI160_BOTTOM_180DEG", "pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1a91940e32802d16c48fda58f243be3a22", null ],
       [ "PIOS_BMI160_BOTTOM_270DEG", "pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1a2f39f7885f88f37db9e0f4c4cd18273d", null ]
     ] ],
-    [ "PIOS_BMI160_Init", "pios__bmi160_8h.html#gab48aaae34701e78452db80a54c04657e", null ],
+    [ "PIOS_BMI160_Init", "pios__bmi160_8h.html#ga27fc60b45760f043f5f55b7de2a03bf5", null ],
     [ "PIOS_BMI160_IRQHandler", "pios__bmi160_8h.html#ga5cdfa54b263acb87e8b5c2b781c72ac8", null ]
 ];

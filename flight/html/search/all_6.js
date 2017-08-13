@@ -29,7 +29,6 @@ var searchData=
   ['fc_5fpitch',['fc_pitch',['../structpios__can__gimbal__message.html#a85c92bd619a570b51ed8f07cb5de97ee',1,'pios_can_gimbal_message::fc_pitch()'],['../pios__can_8h.html#a99b2a61059ca76b5da500d2fd38c79ca',1,'fc_pitch():&#160;pios_can.h']]],
   ['fc_5froll',['fc_roll',['../structpios__can__gimbal__message.html#a65e99947570f7f8a6dacf1fcf2301b4b',1,'pios_can_gimbal_message::fc_roll()'],['../pios__can_8h.html#a34c5c135152f6506b8fd602734c91c78',1,'fc_roll():&#160;pios_can.h']]],
   ['fc_5fyaw',['fc_yaw',['../structpios__can__gimbal__message.html#a6f243042c43d4d05d85f4c9225d5b382',1,'pios_can_gimbal_message::fc_yaw()'],['../pios__can_8h.html#adfe5a5da3a8c6018141c61e9a340f337',1,'fc_yaw():&#160;pios_can.h']]],
-  ['fd',['fd',['../structpios__spi__dev.html#aae8efe7e8ee308686ec88be9cb6921e3',1,'pios_spi_dev']]],
   ['fdot',['Fdot',['../struct_w_m_mtype___geo_magnetic_elements.html#aaff92c0324d3a717abc215245cbd5238',1,'WMMtype_GeoMagneticElements']]],
   ['fffilteraccumulator',['FFfilterAccumulator',['../struct_camera_stab__data.html#add632a4c8e765cbe0b9b761d76340d5b',1,'CameraStab_data']]],
   ['fflastattitude',['FFlastAttitude',['../struct_camera_stab__data.html#a12d1301664f95d70a1773cac5bc7b467',1,'CameraStab_data']]],

@@ -11,5 +11,5 @@ var pios__lis3mdl_8h =
       [ "PIOS_LIS_BOTTOM_180DEG", "pios__lis3mdl_8h.html#gga7f4cf6aac8d592349028f66dc074bb04a0166d10aaa9b48f4f6b44acbcf6292d2", null ],
       [ "PIOS_LIS_BOTTOM_270DEG", "pios__lis3mdl_8h.html#gga7f4cf6aac8d592349028f66dc074bb04a80036d1cc6c18e36da5c3e798acb6e1f", null ]
     ] ],
-    [ "PIOS_LIS3MDL_SPI_Init", "pios__lis3mdl_8h.html#gaee2c20215c10e240a90f77b236574395", null ]
+    [ "PIOS_LIS3MDL_SPI_Init", "pios__lis3mdl_8h.html#ga07cd31b27df780ee3adef77fbfed5540", null ]
 ];

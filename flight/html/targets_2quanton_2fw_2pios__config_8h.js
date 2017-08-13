@@ -2,7 +2,6 @@ var targets_2quanton_2fw_2pios__config_8h =
 [
     [ "CAMERASTAB_POI_MODE", "targets_2quanton_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2quanton_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
-    [ "PIOS_INCLUDE_ETASV3", "targets_2quanton_2fw_2pios__config_8h.html#gaab84a3ad4a8e40da601259fa963168ff", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2quanton_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "targets_2quanton_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_HMC5883", "targets_2quanton_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],

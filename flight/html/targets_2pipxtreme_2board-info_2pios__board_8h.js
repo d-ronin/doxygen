@@ -40,8 +40,6 @@ var targets_2pipxtreme_2board_info_2pios__board_8h =
     [ "PIOS_FLASH_PAGE_SIZE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga3e665bca6b220ec8f873603ef659e8e3", null ],
     [ "PIOS_FLASH_SIZE", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga38d6d481307c5ebcad8c7f626b1959cb", null ],
     [ "PIOS_GCSRCVR_TIMEOUT_MS", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
-    [ "PIOS_I2C_MAIN_ADAPTER", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga8cb8c34b4b60e509e1c1f6ff8f3344e1", null ],
-    [ "PIOS_I2C_MAX_DEVS", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaaf529cbac10eabf14d6ca5ad945e03be", null ],
     [ "PIOS_IRQ_PRIO_HIGH", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gab5f09e1f881124b5131fd88fc013fddd", null ],
     [ "PIOS_IRQ_PRIO_HIGHEST", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga6ac74d56f67f74f449b252c6ba6bbd61", null ],
     [ "PIOS_IRQ_PRIO_LOW", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga7faa93f4a0aaaeeff604e8207d1531c2", null ],
@@ -94,6 +92,5 @@ var targets_2pipxtreme_2board_info_2pios__board_8h =
     [ "pios_com_telem_uart_telem_id", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga921f0eb0351c5bfb72fa30333cd8dbe1", null ],
     [ "pios_com_telem_usb_id", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_vcp_id", "targets_2pipxtreme_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ],
-    [ "pios_i2c_flexi_adapter_id", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga00c59288b3ddcecb262b920ef5ae6ce1", null ],
     [ "pios_ppm_rcvr_id", "targets_2pipxtreme_2board-info_2pios__board_8h.html#ga97dbb4b940ab0701eaeaf3058d8dc9db", null ]
 ];

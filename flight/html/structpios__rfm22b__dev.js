@@ -36,7 +36,7 @@ var structpios__rfm22b__dev =
     [ "rx_packet_stats", "structpios__rfm22b__dev.html#acae5126a75716a87ed65f6d354df1d6a", null ],
     [ "sema_isr", "structpios__rfm22b__dev.html#aafda07543f41afc93aaccda13db2f3aa", null ],
     [ "slave_num", "structpios__rfm22b__dev.html#a4e0db01351dfac40720073969a7fafae", null ],
-    [ "spi_id", "structpios__rfm22b__dev.html#a7fae761882f21a9a0088db1f81dd41da", null ],
+    [ "spi_id", "structpios__rfm22b__dev.html#a6801d0cd697e2370c9397b5252505e93", null ],
     [ "state", "structpios__rfm22b__dev.html#a1901b2795c21dac5661bc70ef5d71213", null ],
     [ "stats", "structpios__rfm22b__dev.html#abb8511852ba38b8de9c19aaae6a495f0", null ],
     [ "status_regs", "structpios__rfm22b__dev.html#ae19fd5f7bedb1256cb0404952b55cd33", null ],

@@ -21,7 +21,7 @@ var pios__max7456_8h =
     [ "PIOS_MAX7456_clear", "pios__max7456_8h.html#ga46919392a16e8904db85572993c906db", null ],
     [ "PIOS_MAX7456_download_char", "pios__max7456_8h.html#gae4d5113b876885b76aae66c9eeb43f3a", null ],
     [ "PIOS_MAX7456_get_extents", "pios__max7456_8h.html#ga8308731befa1daa74d56c9d455f0f414", null ],
-    [ "PIOS_MAX7456_init", "pios__max7456_8h.html#ga2e4233e93ba83adf23e5933a8de310d2", null ],
+    [ "PIOS_MAX7456_init", "pios__max7456_8h.html#gadf1c9945f28cdba22ed5569036d4f4f1", null ],
     [ "PIOS_MAX7456_put", "pios__max7456_8h.html#gadc686e0c139892c9f17d95374f6240a4", null ],
     [ "PIOS_MAX7456_puts", "pios__max7456_8h.html#gac91e760e451affa454a979bbd75ab9eb", null ],
     [ "PIOS_MAX7456_set_mode", "pios__max7456_8h.html#ga994aef2d12d09acde98e48ad749f7e70", null ],

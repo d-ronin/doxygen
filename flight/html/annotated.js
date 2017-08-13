@@ -139,7 +139,6 @@ var annotated =
     [ "pios_annunc_cfg", "structpios__annunc__cfg.html", "structpios__annunc__cfg" ],
     [ "pios_bmi160_cfg", "structpios__bmi160__cfg.html", "structpios__bmi160__cfg" ],
     [ "pios_bmm150_cfg", "structpios__bmm150__cfg.html", "structpios__bmm150__cfg" ],
-    [ "pios_bmp085_cfg", "structpios__bmp085__cfg.html", "structpios__bmp085__cfg" ],
     [ "pios_bmp280_cfg", "structpios__bmp280__cfg.html", "structpios__bmp280__cfg" ],
     [ "pios_bmx055_cfg", "structpios__bmx055__cfg.html", "structpios__bmx055__cfg" ],
     [ "pios_board_info", "structpios__board__info.html", "structpios__board__info" ],

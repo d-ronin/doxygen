@@ -15,7 +15,7 @@ var fpga__drv_8h =
     ] ],
     [ "PIOS_RE1FPGA_Buzzer", "fpga__drv_8h.html#gac0f420e01e3f5d08542bd9e71603bcc2", null ],
     [ "PIOS_RE1FPGA_GetHWRevision", "fpga__drv_8h.html#gaedb51dfee2f47c10c67c0501a3486c55", null ],
-    [ "PIOS_RE1FPGA_Init", "fpga__drv_8h.html#gaae3feef011a4df2db377ca8ad865d878", null ],
+    [ "PIOS_RE1FPGA_Init", "fpga__drv_8h.html#ga559d0f2aa78db18a7605705db062ca2c", null ],
     [ "PIOS_RE1FPGA_MPTxPinMode", "fpga__drv_8h.html#ga92955c8ba05cf252bb9f6ca9a964e4a5", null ],
     [ "PIOS_RE1FPGA_MPTxPinPullUpDown", "fpga__drv_8h.html#ga4398ad859e6aef4d219fb728bd96a5b1", null ],
     [ "PIOS_RE1FPGA_SerialRxInvert", "fpga__drv_8h.html#ga60eee2775e452fc02a88147e3874d916", null ],

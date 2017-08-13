@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -174,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga956e12d1248d0481acd1238fe6b3ffc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga692adb03fe506d1b770955f0fb26cd00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga692adb03fe506d1b770955f0fb26cd00">PIOS_Servo_SetFraction</a> (uint8_t <a class="el" href="msp__messages_8h.html#a1850f7a537e61c36a312fd979808e81d">servo</a>, uint16_t fraction, uint16_t max_val, uint16_t min_val)</td></tr>
 <tr class="separator:ga692adb03fe506d1b770955f0fb26cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3c9c148e8f9d54901aca2b9ce950aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf3c9c148e8f9d54901aca2b9ce950aa1">PIOS_Servo_DisableChannel</a> (int channel)</td></tr>
+<tr class="separator:gaf3c9c148e8f9d54901aca2b9ce950aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ccf3b4ed37aba8b784df832dd1e325b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga1ccf3b4ed37aba8b784df832dd1e325b">PIOS_Servo_PrepareForReset</a> ()</td></tr>
 <tr class="memdesc:ga1ccf3b4ed37aba8b784df832dd1e325b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the APB clock used by a given timer.  <a href="#ga1ccf3b4ed37aba8b784df832dd1e325b">More...</a><br/></td></tr>
 <tr class="separator:ga1ccf3b4ed37aba8b784df832dd1e325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +212,8 @@ Variables</h2></td></tr>
 <tr class="memitem:ga0a84a6b886368158e9650a3044cbe140"><td class="memItemLeft" align="right" valign="top">static const struct <br class="typebreak"/>
 <a class="el" href="structpios__servo__cfg.html">pios_servo_cfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga0a84a6b886368158e9650a3044cbe140">servo_cfg</a></td></tr>
 <tr class="separator:ga0a84a6b886368158e9650a3044cbe140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e2708bc7022dbf8177e7ef6698ad7d7"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga4e2708bc7022dbf8177e7ef6698ad7d7">channel_mask</a> = 0</td></tr>
+<tr class="separator:ga4e2708bc7022dbf8177e7ef6698ad7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga716fdd607f75df20fc2d36325de9c389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga716fdd607f75df20fc2d36325de9c389">DS_GPIOA</a> = 0</td></tr>
 <tr class="separator:ga716fdd607f75df20fc2d36325de9c389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0caded115482411de7d9c37a9da845ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga0caded115482411de7d9c37a9da845ee">DS_GPIOB</a></td></tr>
@@ -316,7 +320,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00066">66</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00068">68</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -332,7 +336,7 @@ Variables</h2></td></tr>
 
 <p>The counter rate for the channel, used to calculate compare values. </p>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00059">59</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00061">61</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -401,7 +405,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00217">217</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00225">225</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -437,7 +441,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00227">227</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00235">235</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -479,7 +483,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00253">253</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00261">261</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -515,7 +519,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00180">180</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00188">188</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -540,7 +544,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00642">642</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00667">667</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -580,7 +584,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00906">906</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00938">938</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -610,6 +614,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaf3c9c148e8f9d54901aca2b9ce950aa1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_Servo_DisableChannel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00158">158</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gac6dc42811aebe0e74f9cbfd3b62df862"></a>
 <div class="memitem">
 <div class="memproto">
@@ -634,7 +656,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00156">156</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00163">163</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -653,7 +675,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialise Servos </p>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00107">107</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00109">109</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -684,7 +706,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00897">897</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00929">929</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -720,7 +742,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00585">585</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00606">606</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -776,7 +798,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00519">519</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00536">536</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -826,7 +848,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00296">296</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00304">304</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -862,7 +884,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00492">492</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00509">509</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -881,7 +903,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Update the timer for HPWM/OneShot </p>
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00810">810</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00839">839</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -922,6 +944,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4e2708bc7022dbf8177e7ef6698ad7d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t channel_mask = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00057">57</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gac39058296b01a35ecb5283832af6a13c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -932,7 +976,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00174">174</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00182">182</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -946,7 +990,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -960,7 +1004,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1018,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -988,7 +1032,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1046,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00060">60</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00062">62</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1060,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00060">60</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00062">62</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1074,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00088">88</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00090">90</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1088,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00088">88</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00090">90</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1110,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00098">98</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00100">100</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1124,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00080">80</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00082">82</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1162,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00175">175</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00183">183</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1176,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00084">84</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00086">86</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1212,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00092">92</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00094">94</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1226,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00177">177</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00185">185</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1240,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00079">79</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00081">81</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1222,21 +1266,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00176">176</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gac46fc7a0bfdd7098af518719c42c261d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t { ... } pwm_res</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00059">59</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00184">184</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1280,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00059">59</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00061">61</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac46fc7a0bfdd7098af518719c42c261d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t { ... } pwm_res</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00061">61</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00087">87</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00089">89</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1322,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00087">87</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00089">89</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1336,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1350,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1372,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00096">96</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00098">98</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1416,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00094">94</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00096">96</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1430,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1444,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1458,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1472,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1442,7 +1486,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1500,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00173">173</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00181">181</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1470,7 +1514,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00056">56</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00058">58</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>
@@ -1484,7 +1528,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00078">78</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
+<p>Definition at line <a class="el" href="_s_t_m32_2pios__servo_8c_source.html#l00080">80</a> of file <a class="el" href="_s_t_m32_2pios__servo_8c_source.html">pios_servo.c</a>.</p>
 
 </div>
 </div>

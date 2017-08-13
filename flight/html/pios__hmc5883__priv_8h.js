@@ -58,7 +58,7 @@ var pios__hmc5883__priv_8h =
       [ "PIOS_HMC5883_Sensitivity_5_6Ga", "pios__hmc5883__priv_8h.html#gga5f5fc9d43e021d50e4bbbd3f82f79a14ab6381c9b4159b5debd83cae05295d4b7", null ],
       [ "PIOS_HMC5883_Sensitivity_8_1Ga", "pios__hmc5883__priv_8h.html#gga5f5fc9d43e021d50e4bbbd3f82f79a14a5e708c5edb93f1999088564b0ca896c1", null ]
     ] ],
-    [ "PIOS_HMC5883_Init", "pios__hmc5883__priv_8h.html#ga2de33c0ac02b42cb114d9af689101498", null ],
+    [ "PIOS_HMC5883_Init", "pios__hmc5883__priv_8h.html#ga8131d2872f033102f17640b32819a57d", null ],
     [ "PIOS_HMC5883_IRQHandler", "pios__hmc5883__priv_8h.html#gab0704d6b1a42b8adb4d8918fc1b19fc4", null ],
     [ "PIOS_HMC5883_SetOrientation", "pios__hmc5883__priv_8h.html#gae6ac7898a71fa1715766813683724b67", null ],
     [ "PIOS_HMC5883_Test", "pios__hmc5883__priv_8h.html#gacea6145300c5c975b46bca1acfe800bf", null ]

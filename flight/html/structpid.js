@@ -1,6 +1,7 @@
 var structpid =
 [
     [ "d", "structpid.html#a1c4d7f2ca382af4be8d036cc36bd9c31", null ],
+    [ "dT", "structpid.html#a3aab1589139c585c36689d0627a4dfaf", null ],
     [ "i", "structpid.html#a97ebc09fc39d749940ebdc48926b8bb1", null ],
     [ "iAccumulator", "structpid.html#afb7f8463c8cefe80b65db478c349a0b1", null ],
     [ "iLim", "structpid.html#a2a3ee941dff64851693d27d04ece04f3", null ],

@@ -66,8 +66,6 @@ var group___pip_x =
     [ "PIOS_FLASH_PAGE_SIZE", "group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3", null ],
     [ "PIOS_FLASH_SIZE", "group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb", null ],
     [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___pip_x.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
-    [ "PIOS_I2C_MAIN_ADAPTER", "group___pip_x.html#ga8cb8c34b4b60e509e1c1f6ff8f3344e1", null ],
-    [ "PIOS_I2C_MAX_DEVS", "group___pip_x.html#gaaf529cbac10eabf14d6ca5ad945e03be", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___pip_x.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___pip_x.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "group___pip_x.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
@@ -167,7 +165,6 @@ var group___pip_x =
     [ "pios_com_telem_usb_id", "group___pip_x.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_telem_usb_id", "group___pip_x.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_vcp_id", "group___pip_x.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ],
-    [ "pios_i2c_flexi_adapter_id", "group___pip_x.html#ga00c59288b3ddcecb262b920ef5ae6ce1", null ],
     [ "pios_ppm_rcvr_id", "group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db", null ],
     [ "pios_uavo_settings_fs_id", "group___pip_x.html#gab060f441dd600b08386c0ca1b487217a", null ]
 ];

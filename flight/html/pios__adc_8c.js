@@ -8,7 +8,7 @@ var pios__adc_8c =
     [ "PIOS_ADC_DevicePinGet", "pios__adc_8c.html#ga99e9080cf4eb3114f15ad00364a5b4d0", null ],
     [ "PIOS_ADC_GetChannelRaw", "pios__adc_8c.html#gaabc5ba93d4758f49252f94b8429e1c8a", null ],
     [ "PIOS_ADC_GetChannelVolt", "pios__adc_8c.html#ga2644c0d549a6795f303fbe4e667bf3d1", null ],
-    [ "PIOS_ADC_Init", "pios__adc_8c.html#gae120a825a76a2207d0e90abd773f32fc", null ],
+    [ "PIOS_ADC_Init", "pios__adc_8c.html#ga8a9178a11e2ccd209eed618a63eb552c", null ],
     [ "PIOS_ADC_validate", "pios__adc_8c.html#gabfdd6f2a96032400e8ea191d9350f89e", null ],
     [ "pios_adc_dev", "pios__adc_8c.html#gab32db3584e1b8779726fcabc7aa2dc9a", null ],
     [ "sub_device_list", "pios__adc_8c.html#gac3879188928794830d595d88f5be01c9", null ]

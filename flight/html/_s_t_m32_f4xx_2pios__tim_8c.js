@@ -11,6 +11,7 @@ var _s_t_m32_f4xx_2pios__tim_8c =
     [ "PIOS_TIM_InitAllTimerPins", "_s_t_m32_f4xx_2pios__tim_8c.html#ga281bc5808570e749abd7764aada8d1b0", null ],
     [ "PIOS_TIM_InitChannels", "_s_t_m32_f4xx_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f", null ],
     [ "PIOS_TIM_InitClock", "_s_t_m32_f4xx_2pios__tim_8c.html#ga091c161ba7b19b91067616f0cbd768fc", null ],
+    [ "PIOS_TIM_InitTimerPin", "_s_t_m32_f4xx_2pios__tim_8c.html#ga79bf983742a32a9dcaead3b0806f6550", null ],
     [ "PIOS_TIM_SetBankToGPOut", "_s_t_m32_f4xx_2pios__tim_8c.html#gaa9fff718f3bece2774971de5397a5f14", null ],
     [ "TIM1_BRK_TIM9_IRQHandler", "_s_t_m32_f4xx_2pios__tim_8c.html#ga3b60f6118cdd3449f4ed29fde4704236", null ],
     [ "TIM1_CC_IRQHandler", "_s_t_m32_f4xx_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6", null ],

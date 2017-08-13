@@ -12,7 +12,6 @@ var searchData=
   ['pios_5fannunc_5fcfg',['pios_annunc_cfg',['../structpios__annunc__cfg.html',1,'']]],
   ['pios_5fbmi160_5fcfg',['pios_bmi160_cfg',['../structpios__bmi160__cfg.html',1,'']]],
   ['pios_5fbmm150_5fcfg',['pios_bmm150_cfg',['../structpios__bmm150__cfg.html',1,'']]],
-  ['pios_5fbmp085_5fcfg',['pios_bmp085_cfg',['../structpios__bmp085__cfg.html',1,'']]],
   ['pios_5fbmp280_5fcfg',['pios_bmp280_cfg',['../structpios__bmp280__cfg.html',1,'']]],
   ['pios_5fbmx055_5fcfg',['pios_bmx055_cfg',['../structpios__bmx055__cfg.html',1,'']]],
   ['pios_5fboard_5finfo',['pios_board_info',['../structpios__board__info.html',1,'']]],

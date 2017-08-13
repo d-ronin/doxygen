@@ -104,7 +104,7 @@ var searchData=
   ['update_5fgyros',['update_gyros',['../group___sensors.html#gaf4811a522a04e2eed244bacf6d0267c2',1,'sensors.c']]],
   ['update_5fmags',['update_mags',['../group___sensors.html#ga03da80c572ff03c73dd65f5559f5f4b3',1,'sensors.c']]],
   ['update_5fobject_5finstances',['update_object_instances',['../group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f',1,'telemetry.c']]],
-  ['update_5fsettings',['update_settings',['../group___stabilization_module.html#ga9f22b0b7dbf1d6b7ad7439f5418bfacd',1,'stabilization.c']]],
+  ['update_5fsettings',['update_settings',['../group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c',1,'stabilization.c']]],
   ['update_5fstabilization_5fdesired',['update_stabilization_desired',['../group___control.html#gaf65ecfe2872f7707121f85894712225e',1,'transmitter_control.c']]],
   ['update_5ftelemetry',['update_telemetry',['../group___char_o_s_d.html#gafac530e48320d050bad2d80dd2d2ee7b',1,'charonscreendisplay.c']]],
   ['updateattitudecomplementary',['updateAttitudeComplementary',['../group___attitude_module.html#ga13a4c91692dac51e1ccb8d460c09dbc3',1,'attitude.c']]],

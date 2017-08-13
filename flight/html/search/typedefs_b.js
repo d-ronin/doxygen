@@ -7,7 +7,9 @@ var searchData=
   ['pios_5fbmx055_5fdev_5ft',['pios_bmx055_dev_t',['../group___p_i_o_s___b_m_x055.html#ga1014bdd38922c45ea60bdf8312e7bd39',1,'pios_bmx055.h']]],
   ['pios_5fcom_5fcallback',['pios_com_callback',['../group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15',1,'pios_com.h']]],
   ['pios_5fflyingpio_5fdev_5ft',['pios_flyingpio_dev_t',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gacd03c613dac1bd6fc177a913e1105b75',1,'pios_flyingpio.h']]],
+  ['pios_5fi2c_5ft',['pios_i2c_t',['../group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6',1,'pios_i2c.h']]],
   ['pios_5finternal_5fadc_5ft',['pios_internal_adc_t',['../group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga16217108e9416a60da7e6c9e5a48c2c5',1,'pios_internal_adc_simple.h']]],
   ['pios_5fmpu_5fdev_5ft',['pios_mpu_dev_t',['../group___p_i_o_s___m_p_u.html#ga8d1629885182d00fe0a521d98b48e76f',1,'pios_mpu.h']]],
+  ['pios_5fspi_5ft',['pios_spi_t',['../group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40',1,'pios_spi.h']]],
   ['pios_5fusbhook_5fepcb',['pios_usbhook_epcb',['../group___p_i_o_s___u_s_b_h_o_o_k.html#gabde82ac9a77ef9dd47ea25351ed1b929',1,'pios_usbhook.h']]]
 ];

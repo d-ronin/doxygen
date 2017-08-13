@@ -126,7 +126,6 @@ var hierarchy =
     [ "pios_annunc_cfg", "structpios__annunc__cfg.html", null ],
     [ "pios_bmi160_cfg", "structpios__bmi160__cfg.html", null ],
     [ "pios_bmm150_cfg", "structpios__bmm150__cfg.html", null ],
-    [ "pios_bmp085_cfg", "structpios__bmp085__cfg.html", null ],
     [ "pios_bmp280_cfg", "structpios__bmp280__cfg.html", null ],
     [ "pios_bmx055_cfg", "structpios__bmx055__cfg.html", null ],
     [ "pios_board_info", "structpios__board__info.html", null ],

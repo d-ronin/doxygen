@@ -1,8 +1,10 @@
 var group___p_i_o_s___d_i_o =
 [
     [ "_DIO_PRELUDE", "group___p_i_o_s___d_i_o.html#gab68d80b9f84d7597b7b2fdddd067a388", null ],
+    [ "_DIO_PRELUDE_RET", "group___p_i_o_s___d_i_o.html#ga82405942bead35bac29c1e3bde6b1af1", null ],
     [ "DIO_BASE", "group___p_i_o_s___d_i_o.html#ga57314fe3306fd02b396aedcdc58749ec", null ],
     [ "DIO_MAKE_TAG", "group___p_i_o_s___d_i_o.html#ga52e3f34170894a80a94f8b11c0f7dadd", null ],
+    [ "DIO_NULL", "group___p_i_o_s___d_i_o.html#ga24a9fd72fa3f40c4fdd6e617a2c81b23", null ],
     [ "DIO_PORT_OFFSET", "group___p_i_o_s___d_i_o.html#ga6acf0efbc8a31adc4677e95a64b47bd1", null ],
     [ "DIO_SETREG_ONEWIDE", "group___p_i_o_s___d_i_o.html#ga40d064a2717b654e6be854be5c968f7b", null ],
     [ "DIO_SETREG_TWOWIDE", "group___p_i_o_s___d_i_o.html#ga313549585338ba48e4ac738f8c040992", null ],

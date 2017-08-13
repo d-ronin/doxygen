@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -133,38 +133,38 @@ $(document).ready(function(){initNavTree('pios__spi_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__spi__dev.html">pios_spi_dev</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Public Functions */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpios__spi__dev.html">pios_spi_dev</a> *<a class="code" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga8bbe024685ab860a8e5880b2ed2b11e6">PIOS_SPI_Init</a>(uint32_t * spi_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__spi__cfg.html">pios_spi_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga95d49208781167d4ab48a572accf4fa5">PIOS_SPI_SetClockSpeed</a>(uint32_t spi_id, uint32_t <a class="code" href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a>(uint32_t spi_id, uint32_t slave_id, <span class="keywordtype">bool</span> pin_value);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;uint8_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a>(uint32_t spi_id, uint8_t b);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a>(uint32_t spi_id, <span class="keyword">const</span> uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a>(uint32_t spi_id);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga117fbed6d00c5404e9414ab72175e1c8">PIOS_SPI_ReleaseBus</a>(uint32_t spi_id);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group___p_i_o_s___s_p_i.html#ga018ed8c0b8d0c9a22faf6faca9b5a895">PIOS_SPI_IRQ_Handler</a>(uint32_t spi_id);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* Public Functions */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga21b297a397e91bf31fc599ddad0038a1">PIOS_SPI_Init</a>(pios_spi_t * spi_dev, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__spi__cfg.html">pios_spi_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga6a862c60f1c98c663084189aa27da5a9">PIOS_SPI_SetClockSpeed</a>(pios_spi_t spi_dev, uint32_t <a class="code" href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a>(pios_spi_t spi_dev, uint32_t slave_id, <span class="keywordtype">bool</span> pin_value);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;uint8_t <a class="code" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a>(pios_spi_t spi_dev, uint8_t b);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(pios_spi_t spi_dev, <span class="keyword">const</span> uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a>(pios_spi_t spi_dev);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a>(pios_spi_t spi_dev);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_SPI_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="msp__messages_8h_html_a12633132d07532aac2bd05fa1d5c8a72"><div class="ttname"><a href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a></div><div class="ttdeci">uint16_t speed</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00101">msp_messages.h:101</a></div></div>
 <div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga018ed8c0b8d0c9a22faf6faca9b5a895"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga018ed8c0b8d0c9a22faf6faca9b5a895">PIOS_SPI_IRQ_Handler</a></div><div class="ttdeci">void PIOS_SPI_IRQ_Handler(uint32_t spi_id)</div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga307f60532c61b56c285ce5d680cb14c5"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga307f60532c61b56c285ce5d680cb14c5">PIOS_SPI_ClaimBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ClaimBus(uint32_t spi_id)</div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga95d49208781167d4ab48a572accf4fa5"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga95d49208781167d4ab48a572accf4fa5">PIOS_SPI_SetClockSpeed</a></div><div class="ttdeci">int32_t PIOS_SPI_SetClockSpeed(uint32_t spi_id, uint32_t speed)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga1b5bd655c2debc91231000a99f390bef"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a></div><div class="ttdeci">int32_t PIOS_SPI_RC_PinSet(pios_spi_t spi_dev, uint32_t slave_id, bool pin_value)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gaf4d7eff28af84690c0caa8ac3c0abeee"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ClaimBus(pios_spi_t spi_dev)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga7f8b7496a1edc0b9f052239844bb8b40"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a></div><div class="ttdeci">struct pios_spi_dev * pios_spi_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__spi_8h_source.html#l00036">pios_spi.h:36</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga117fbed6d00c5404e9414ab72175e1c8"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga117fbed6d00c5404e9414ab72175e1c8">PIOS_SPI_ReleaseBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ReleaseBus(uint32_t spi_id)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gaba986f2515cfe42f08293c869107ea84"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a></div><div class="ttdeci">uint8_t PIOS_SPI_TransferByte(pios_spi_t spi_dev, uint8_t b)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga6a862c60f1c98c663084189aa27da5a9"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga6a862c60f1c98c663084189aa27da5a9">PIOS_SPI_SetClockSpeed</a></div><div class="ttdeci">int32_t PIOS_SPI_SetClockSpeed(pios_spi_t spi_dev, uint32_t speed)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga21b297a397e91bf31fc599ddad0038a1"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga21b297a397e91bf31fc599ddad0038a1">PIOS_SPI_Init</a></div><div class="ttdeci">int32_t PIOS_SPI_Init(pios_spi_t *spi_dev, const struct pios_spi_cfg *cfg)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_gafe2e08b39f192e798c498a5fa0ae8dba"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a></div><div class="ttdeci">int32_t PIOS_SPI_TransferBlock(pios_spi_t spi_dev, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div></div>
 <div class="ttc" id="structpios__spi__cfg_html"><div class="ttname"><a href="structpios__spi__cfg.html">pios_spi_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00043">pios_spi_priv.h:43</a></div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga6483f13379bc83d892c4721fbbd46afa"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga6483f13379bc83d892c4721fbbd46afa">PIOS_SPI_TransferByte</a></div><div class="ttdeci">uint8_t PIOS_SPI_TransferByte(uint32_t spi_id, uint8_t b)</div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga479cdbfe7e7fef12dc8fedbaf6d104f0"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga479cdbfe7e7fef12dc8fedbaf6d104f0">PIOS_SPI_RC_PinSet</a></div><div class="ttdeci">int32_t PIOS_SPI_RC_PinSet(uint32_t spi_id, uint32_t slave_id, bool pin_value)</div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga02c8e3abceb458b72e9264884933cff6"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga02c8e3abceb458b72e9264884933cff6">PIOS_SPI_TransferBlock</a></div><div class="ttdeci">int32_t PIOS_SPI_TransferBlock(uint32_t spi_id, const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div></div>
-<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga8bbe024685ab860a8e5880b2ed2b11e6"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga8bbe024685ab860a8e5880b2ed2b11e6">PIOS_SPI_Init</a></div><div class="ttdeci">int32_t PIOS_SPI_Init(uint32_t *spi_id, const struct pios_spi_cfg *cfg)</div></div>
+<div class="ttc" id="group___p_i_o_s___s_p_i_html_ga8fa5be788c14e9e5af848c4a4e37051e"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ReleaseBus(pios_spi_t spi_dev)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

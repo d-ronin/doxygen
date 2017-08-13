@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">939a890</span>
+   &#160;<span id="projectnumber">4e1fe3f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('pios__rfm22b__com_8c_source.html','');
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> PIOS_RFM22B_COM_Available(uintptr_t rfm22b_id)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___r_f_m22_b.html#ga5d2ba4c573bc63f53ccb80f3bdbbc8e4">PIOS_RFM22B_LinkStatus</a>(rfm22b_id);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___r_f_m22_b.html#ga3ee007a5c1f1c9e3c9bc621346396586">PIOS_RFM22B_LinkStatus</a>(rfm22b_id);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B_COM */</span><span class="preprocessor"></span></div>
@@ -226,11 +226,11 @@ $(document).ready(function(){initNavTree('pios__rfm22b__com_8c_source.html','');
 <div class="ttc" id="struct____attribute_____html"><div class="ttname"><a href="struct____attribute____.html">__attribute__</a></div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8h_source.html#l00033">timeutils.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga8cd3db3cb3747da3d74a8d766230b325"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga8cd3db3cb3747da3d74a8d766230b325">pios_rfm22b_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_rfm22b_com_driver</div></div>
 <div class="ttc" id="structpios__rfm22b__dev_html_ac170322ec2f96932e0f060aa68b6bd12"><div class="ttname"><a href="structpios__rfm22b__dev.html#ac170322ec2f96932e0f060aa68b6bd12">pios_rfm22b_dev::rx_in_cb</a></div><div class="ttdeci">pios_com_callback rx_in_cb</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00199">pios_rfm22b_priv.h:199</a></div></div>
-<div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga5d2ba4c573bc63f53ccb80f3bdbbc8e4"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga5d2ba4c573bc63f53ccb80f3bdbbc8e4">PIOS_RFM22B_LinkStatus</a></div><div class="ttdeci">bool PIOS_RFM22B_LinkStatus(uint32_t rfm22b_id)</div></div>
 <div class="ttc" id="structpios__rfm22b__dev_html_ab861d6c14abc749f20e45226bd606840"><div class="ttname"><a href="structpios__rfm22b__dev.html#ab861d6c14abc749f20e45226bd606840">pios_rfm22b_dev::tx_out_cb</a></div><div class="ttdeci">pios_com_callback tx_out_cb</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00201">pios_rfm22b_priv.h:201</a></div></div>
 <div class="ttc" id="structpios__rfm22b__dev_html_a70fce9f445ae6ec87f5a559b89e82169"><div class="ttname"><a href="structpios__rfm22b__dev.html#a70fce9f445ae6ec87f5a559b89e82169">pios_rfm22b_dev::rx_in_context</a></div><div class="ttdeci">uint32_t rx_in_context</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00200">pios_rfm22b_priv.h:200</a></div></div>
 <div class="ttc" id="structpios__rfm22b__dev_html_a6d55d5cf2cee09fb6e56c1f918dc31ea"><div class="ttname"><a href="structpios__rfm22b__dev.html#a6d55d5cf2cee09fb6e56c1f918dc31ea">pios_rfm22b_dev::tx_out_context</a></div><div class="ttdeci">uint32_t tx_out_context</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00202">pios_rfm22b_priv.h:202</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga32b5d05bee460d2bac428ac980eba8c8"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga32b5d05bee460d2bac428ac980eba8c8">PIOS_RFM22B_Validate</a></div><div class="ttdeci">bool PIOS_RFM22B_Validate(struct pios_rfm22b_dev *rfm22b_dev)</div></div>
+<div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga3ee007a5c1f1c9e3c9bc621346396586"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga3ee007a5c1f1c9e3c9bc621346396586">PIOS_RFM22B_LinkStatus</a></div><div class="ttdeci">bool PIOS_RFM22B_LinkStatus(uintptr_t rfm22b_id)</div></div>
 <div class="ttc" id="bl__messages_8h_html_ac0544a0a50047efef4eb9dee1db56d01"><div class="ttname"><a href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a></div><div class="ttdeci">uint8_t unused[4]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00070">bl_messages.h:70</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga528568aa0f3011cafec5c453fc030e15"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a></div><div class="ttdeci">uint16_t(* pios_com_callback)(uintptr_t context, uint8_t *buf, uint16_t buf_len, uint16_t *headroom, bool *task_woken)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00041">pios_com.h:41</a></div></div>
 <div class="ttc" id="pios__rfm22b__priv_8h_html"><div class="ttname"><a href="pios__rfm22b__priv_8h.html">pios_rfm22b_priv.h</a></div><div class="ttdoc">RFM22B private definitions. </div></div>

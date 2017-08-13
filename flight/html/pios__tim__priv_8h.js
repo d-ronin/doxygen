@@ -6,5 +6,6 @@ var pios__tim__priv_8h =
     [ "PIOS_TIM_InitAllTimerPins", "pios__tim__priv_8h.html#ga281bc5808570e749abd7764aada8d1b0", null ],
     [ "PIOS_TIM_InitChannels", "pios__tim__priv_8h.html#gaf316d2873f98d05747789d96d889491f", null ],
     [ "PIOS_TIM_InitClock", "pios__tim__priv_8h.html#ga091c161ba7b19b91067616f0cbd768fc", null ],
+    [ "PIOS_TIM_InitTimerPin", "pios__tim__priv_8h.html#ga79bf983742a32a9dcaead3b0806f6550", null ],
     [ "PIOS_TIM_SetBankToGPOut", "pios__tim__priv_8h.html#gaa9fff718f3bece2774971de5397a5f14", null ]
 ];
