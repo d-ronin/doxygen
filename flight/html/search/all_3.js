@@ -432,7 +432,6 @@ var searchData=
   ['connection_5foffset',['CONNECTION_OFFSET',['../group___control.html#gac2811ce4b010139833054b551e503219',1,'transmitter_control.c']]],
   ['connection_5ftimeout_5fms',['CONNECTION_TIMEOUT_MS',['../group___telemetry_module.html#ga3169751cd5adb9cf1e54b005fc39401a',1,'telemetry.c']]],
   ['connectobj',['connectObj',['../group___u_a_v_object_handling.html#gacd7022477bea6f6da9205eeabc214cae',1,'uavobjectmanager.c']]],
-  ['constant',['CONSTANT',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a83972670b57415508523b5641bb46116',1,'simsensors.c']]],
   ['constants',['Constants',['../group___constants.html',1,'']]],
   ['container_5fof',['container_of',['../inc_2pios__struct__helper_8h.html#af8c317a42292b61c93aae91e59118a46',1,'container_of():&#160;pios_struct_helper.h'],['../posix_2inc_2pios__struct__helper_8h.html#af8c317a42292b61c93aae91e59118a46',1,'container_of():&#160;pios_struct_helper.h']]],
   ['content',['content',['../namespaceencode__fonts.html#aeaa26bef03c01209d05df65db387500a',1,'encode_fonts']]],

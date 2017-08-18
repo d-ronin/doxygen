@@ -82,6 +82,7 @@ var searchData=
   ['use_5fbaro_5fsensor',['use_baro_sensor',['../structfrsky__settings.html#ae1624ce1635ed7769f2d3efd96d46d0d',1,'frsky_settings']]],
   ['use_5fcurrent_5fsensor',['use_current_sensor',['../structfrsky__settings.html#ac75a36d378a67390087d0583a8c2242b',1,'frsky_settings']]],
   ['use_5freal_5fsensors',['use_real_sensors',['../group___sensors.html#ga5eeff3da45a87067d0720659756e3a36',1,'simsensors.c']]],
+  ['use_5fyasim',['use_yasim',['../group___sensors.html#ga7a900e3042abc895d66915c43101d00f',1,'simsensors.c']]],
   ['user_5fcallbacks',['user_callbacks',['../group___p_i_o_s___u_s_b_h_o_o_k.html#gaf0639d3acf09f14bf9f956c29043a0e0',1,'pios_usbhook.c']]],
   ['user_5fdfu_5frequest',['User_DFU_request',['../group___common_f1.html#ga4e35257eb1d649bd7353cb4a4d37d5fb',1,'main.c']]],
   ['user_5fstandard_5frequests',['User_Standard_Requests',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga8d70d0a7e05cf9c172e4304def6b65b8',1,'User_Standard_Requests():&#160;pios_usbhook.c'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga8d70d0a7e05cf9c172e4304def6b65b8',1,'User_Standard_Requests():&#160;pios_usbhook.c']]],

@@ -1,9 +1,5 @@
 var NAVTREEINDEX120 =
 {
-"structbl__messages.html#a018b55ea600a3058cc68a045cfd06ae9":[2,8,1,0,30],
-"structbl__messages.html#a0982a60d6a847df619915539274349bc":[2,8,1,0,6],
-"structbl__messages.html#a10d18056bdd8e6ba7a4237db2c25a149":[2,8,1,0,16],
-"structbl__messages.html#a1b23489d9d21389b652e3d857cb217e6":[2,8,1,0,21],
 "structbl__messages.html#a2001824d2cf34ba3a4f75ae61371ec0b":[2,8,1,0,23],
 "structbl__messages.html#a2118fd6226cbf592868cca2bce503105":[2,8,1,0,35],
 "structbl__messages.html#a233ff8d8de65de65c1a0c1a152bf993c":[2,8,1,0,34],
@@ -249,5 +245,9 @@ var NAVTREEINDEX120 =
 "structhott__gps__message.html#a080054a22b4839f3534bee6753b66b9b":[2,5,25,5,15],
 "structhott__gps__message.html#a0fe796cf91c4fcb4c46bdaa22f20a3c4":[2,5,25,5,10],
 "structhott__gps__message.html#a12c8dbdd60a9366cb8e05564dfbcb25e":[2,5,25,5,8],
-"structhott__gps__message.html#a1a1236afd7d67d8bf481646d4b55f088":[2,5,25,5,27]
+"structhott__gps__message.html#a1a1236afd7d67d8bf481646d4b55f088":[2,5,25,5,27],
+"structhott__gps__message.html#a1f95c2e248434cd3e7ff403634e0e1cd":[2,5,25,5,22],
+"structhott__gps__message.html#a3428ecebe2a61bb0b90e984ff0ca5f4e":[2,5,25,5,3],
+"structhott__gps__message.html#a5093b17238c5109684185c9c7977a5bf":[2,5,25,5,6],
+"structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688":[2,5,25,5,14]
 };

@@ -15,8 +15,7 @@ var group___sensors =
       [ "MAG_CALIBRATION_NORMALIZE_LENGTH", "group___sensors.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8a566b052171d9d352158b7d7652b4280a", null ]
     ] ],
     [ "sensor_sim_type", "group___sensors.html#ga6423b17c1c5cfe30ec2b9cabedc03f70", [
-      [ "CONSTANT", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a83972670b57415508523b5641bb46116", null ],
-      [ "MODEL_AGNOSTIC", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a7960fc19ecff58403fe8ce9aff5254a8", null ],
+      [ "MODEL_YASIM", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a5436e3c9f75c3ad50eed1cc05dea49d4", null ],
       [ "MODEL_QUADCOPTER", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70af0e5a574aa71ec14e1b4d7288086995c", null ],
       [ "MODEL_AIRPLANE", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a760a21ed021ec46ff7bbff4846bc7064", null ],
       [ "MODEL_CAR", "group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70ab7b5347f7118bc133ff0b6dddd3b0cf4", null ]
@@ -32,11 +31,10 @@ var group___sensors =
     [ "settingsUpdatedCb", "group___sensors.html#gaa0ed77fef94661b3f71152ff2cd735b6", null ],
     [ "SimSensorsInitialize", "group___sensors.html#ga77c72b2858445a0da937c44827412ae7", null ],
     [ "SimSensorsStart", "group___sensors.html#ga3f802fb20f7c9eeb7f43ee99a0149e75", null ],
-    [ "simulateConstant", "group___sensors.html#ga5ab0d957374f5ecf80c1727dadd7bc6f", null ],
-    [ "simulateModelAgnostic", "group___sensors.html#gaa97122b8fa3192e8731f969c976d3ed1", null ],
     [ "simulateModelAirplane", "group___sensors.html#gafb414681d83ce8257ccbc3d48ed1b23f", null ],
     [ "simulateModelCar", "group___sensors.html#ga639c7ad4b39ee77380686ddfe1d39094", null ],
     [ "simulateModelQuadcopter", "group___sensors.html#gacdc8ab173877d09842b6b485e569a00e", null ],
+    [ "simulateYasim", "group___sensors.html#ga5347d74a25c6e8fc11d5b384108542e9", null ],
     [ "update_accels", "group___sensors.html#ga24a6c2bdc84b211472a38661e15e1ca5", null ],
     [ "update_baro", "group___sensors.html#gae207e3c3618dc01a9afe6162d4778fc7", null ],
     [ "update_gyros", "group___sensors.html#gaf4811a522a04e2eed244bacf6d0267c2", null ],
@@ -58,14 +56,14 @@ var group___sensors =
     [ "mag_bias", "group___sensors.html#ga9ac885eb5f47362f09dc7585258027b3", null ],
     [ "mag_calibration_algo", "group___sensors.html#ga61642cecabb634fcd906bd4ff95ccbb1", null ],
     [ "mag_scale", "group___sensors.html#ga85f4f54258c7666b4feadb94bbefb0ee", null ],
-    [ "overideAttitude", "group___sensors.html#ga4003f7985e24e407bbc2f44b2d289c29", null ],
     [ "rotate", "group___sensors.html#ga7b5d500a07716e6400df97ab6d20c36e", null ],
     [ "Rsb", "group___sensors.html#gab0474ee7eeda2c4413d5963c8d142020", null ],
+    [ "sens_rate", "group___sensors.html#gaa80035ba8a646bbe834df0949148c02b", null ],
     [ "sensor_sim_type", "group___sensors.html#gaa5e76bc9bc1cc20d2b183069aea687b4", null ],
     [ "sensors_count", "group___sensors.html#ga1d3d2f156a75f85f9df60200c00c5643", null ],
     [ "sensorsTaskHandle", "group___sensors.html#gaa0cc6e928facbb4ec97986ab47398fb5", null ],
     [ "sensorsTaskHandle", "group___sensors.html#gaa0cc6e928facbb4ec97986ab47398fb5", null ],
-    [ "thrustToDegs", "group___sensors.html#ga0bfc1acfbf1c0b59ebaeba678cb8c811", null ],
     [ "use_real_sensors", "group___sensors.html#ga5eeff3da45a87067d0720659756e3a36", null ],
+    [ "use_yasim", "group___sensors.html#ga7a900e3042abc895d66915c43101d00f", null ],
     [ "z_accel_offset", "group___sensors.html#gae01f97490c48bd179d24f05740f905f9", null ]
 ];

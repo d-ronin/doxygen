@@ -38,6 +38,5 @@ var searchData=
   ['outcb',['outCb',['../struct_u_a_v_talk_connection_data.html#ac5889ba31f5862e7e723d6f8727f0cf6',1,'UAVTalkConnectionData']]],
   ['output_5fchannels',['output_channels',['../group___p_i_o_s___s_e_r_v_o.html#ga809ddb8b3a5e737e13c1f5d9f1394ebd',1,'pios_servo.c']]],
   ['overflow',['overflow',['../structpios__tim__callbacks.html#a6b0c1cd868a73b42c8a2228d08103ee3',1,'pios_tim_callbacks']]],
-  ['overideattitude',['overideAttitude',['../group___sensors.html#ga4003f7985e24e407bbc2f44b2d289c29',1,'simsensors.c']]],
   ['oversampling',['oversampling',['../structpios__bmp280__cfg.html#ae5debf754d3070073a2552c42003ba1f',1,'pios_bmp280_cfg::oversampling()'],['../structpios__internal__adc__cfg.html#a1c08390ebe63500dd873bd5e6aeb1aa6',1,'pios_internal_adc_cfg::oversampling()'],['../structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c',1,'pios_ms5611_cfg::oversampling()']]]
 ];

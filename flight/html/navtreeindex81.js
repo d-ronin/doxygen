@@ -1,7 +1,5 @@
 var NAVTREEINDEX81 =
 {
-"group___tau_labs_math.html#gaa491e6b9634fc7e05afd03b8a56ec135":[2,1,1,41],
-"group___tau_labs_math.html#gaa5031c178516bd2e25bb173207bceda5":[2,1,1,95],
 "group___tau_labs_math.html#gaa5031c178516bd2e25bb173207bceda5":[2,1,1,4,1],
 "group___tau_labs_math.html#gaa5b29b20fcd28b3971c68163e83b89e3":[2,1,1,97],
 "group___tau_labs_math.html#gaa5b29b20fcd28b3971c68163e83b89e3":[2,1,1,4,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX81 =
 "group___u_a_v_o_mavlink_bridge.html#ga50e0dc2de7d1dd7f6b56db87f46a66e8":[2,5,27,8],
 "group___u_a_v_o_mavlink_bridge.html#ga60402e3a940e9d2cbb3b16093913735a":[2,5,27,12],
 "group___u_a_v_o_mavlink_bridge.html#ga664a8296f4395fdaa1b31d7a418b49a4":[2,5,27,13],
-"group___u_a_v_o_mavlink_bridge.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[2,5,27,3]
+"group___u_a_v_o_mavlink_bridge.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[2,5,27,3],
+"group___u_a_v_o_mavlink_bridge.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[2,5,27,14],
+"group___u_a_v_o_mavlink_bridge.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[2,5,27,2]
 };

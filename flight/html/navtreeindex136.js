@@ -1,9 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"vtolpathfollower_8c.html#ga304541063acff929281e0000e4a966da":[5,0,0,2,36,3,3],
-"vtolpathfollower_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,2,36,3,0],
-"vtolpathfollower_8c.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[5,0,0,2,36,3,2],
-"vtolpathfollower_8c.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[5,0,0,2,36,3,8],
 "vtolpathfollower_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[5,0,0,2,36,3,1],
 "vtolpathfollower_8c.html#ga9538403f2d70b8d5bd8ae92c1520b9c8":[5,0,0,2,36,3,6],
 "vtolpathfollower_8c.html#ga961a79aed22b448a7401bcca54fbeed4":[5,0,0,2,36,3,5],

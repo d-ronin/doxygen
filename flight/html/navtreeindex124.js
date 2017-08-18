@@ -1,9 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"structrtc__callback__entry.html":[2,0,47,0],
-"structrtc__callback__entry.html#a5e02e3a7544f42e127349a18c178be03":[2,0,47,0,1],
-"structrtc__callback__entry.html#a886416cff4fc356291f400814c21696c":[2,0,47,0,0],
-"structservo__timer.html":[2,0,85,3],
 "structslot__header.html":[2,0,12,2],
 "structslot__header.html#a5bfcf2f73ad00e1f416dd3b9a557b7a3":[2,0,12,2,3],
 "structslot__header.html#a61928fad0e752c278fb8485aa199240d":[2,0,12,2,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX124 =
 "targets_2aq32_2bl_2pios__config_8h.html#gabaec4c77cf420cd9ad55c5f96a10b192":[5,0,0,4,0,0,1,4],
 "targets_2aq32_2bl_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379":[5,0,0,4,0,0,1,7],
 "targets_2aq32_2bl_2pios__config_8h_source.html":[5,0,0,4,0,0,1],
-"targets_2aq32_2board-info_2pios__board_8h.html":[5,0,0,4,0,1,2]
+"targets_2aq32_2board-info_2pios__board_8h.html":[5,0,0,4,0,1,2],
+"targets_2aq32_2board-info_2pios__board_8h.html#ga05dca72c42c6c2b33fa62b8ee0fcb2ea":[5,0,0,4,0,1,2,46],
+"targets_2aq32_2board-info_2pios__board_8h.html#ga208c18adb2e058348643425b79ae9e14":[5,0,0,4,0,1,2,4],
+"targets_2aq32_2board-info_2pios__board_8h.html#ga24c6da05c7d0a33b87b0c66cca0700d6":[5,0,0,4,0,1,2,32],
+"targets_2aq32_2board-info_2pios__board_8h.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[5,0,0,4,0,1,2,31]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX79 =
 {
-"group___sparky2.html#gabf39f1bc59b5af7e8f138bb394770300":[2,7,13,38],
-"group___sparky2.html#gac040f05fa048688ee0269c2768698a14":[2,8,15,310],
 "group___sparky2.html#gac040f05fa048688ee0269c2768698a14":[2,7,13,310],
 "group___sparky2.html#gac08fa5f6e6f65e2c919ffd636fc888eb":[2,8,15,190],
 "group___sparky2.html#gac08fa5f6e6f65e2c919ffd636fc888eb":[2,7,13,190],
@@ -25,8 +23,8 @@ var NAVTREEINDEX79 =
 "group___sparky2.html#gacba56aaa8c0bd717ad217771ee8300c2":[2,7,13,207],
 "group___sparky2.html#gacbf13880831c81c27d5c7f65c737f70f":[2,8,15,132],
 "group___sparky2.html#gacbf13880831c81c27d5c7f65c737f70f":[2,7,13,132],
-"group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,8,15,69],
 "group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,8,15,68],
+"group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,8,15,69],
 "group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,7,13,68],
 "group___sparky2.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,7,13,69],
 "group___sparky2.html#gacc9b34fbd61773571dbe45ac3a3ca081":[2,8,15,32],
@@ -83,10 +81,10 @@ var NAVTREEINDEX79 =
 "group___sparky2.html#gae4258a650515c19e5df92b5917399195":[2,7,13,266],
 "group___sparky2.html#gae4912a499d71db827918d7908055ce05":[2,8,15,77],
 "group___sparky2.html#gae4912a499d71db827918d7908055ce05":[2,7,13,77],
-"group___sparky2.html#gae4f40dbda591f71bce911d37415746af":[2,8,15,163],
 "group___sparky2.html#gae4f40dbda591f71bce911d37415746af":[2,7,13,163],
-"group___sparky2.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,8,15,34],
+"group___sparky2.html#gae4f40dbda591f71bce911d37415746af":[2,8,15,163],
 "group___sparky2.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,7,13,34],
+"group___sparky2.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,8,15,34],
 "group___sparky2.html#gae631e1c4b6541c9d67de9d009196b770":[2,8,15,216],
 "group___sparky2.html#gae631e1c4b6541c9d67de9d009196b770":[2,7,13,216],
 "group___sparky2.html#gae78ef0099e559f8b4cd423bb2c0f3b5a":[2,8,15,80],
@@ -249,5 +247,7 @@ var NAVTREEINDEX79 =
 "group___storm32bgc.html#gaf80009bfc91bb3a08bc688861145091b":[2,5,19,26],
 "group___storm32bgc.html#gaf904cf55a574991bc3a2f4062007e93b":[2,5,19,2],
 "group___system_module.html":[2,6,4],
-"group___system_module.html#ga107237204bc679179166c17b330533a5":[2,6,4,27]
+"group___system_module.html#ga107237204bc679179166c17b330533a5":[2,6,4,27],
+"group___system_module.html#ga10f109820071bea9b310dce65a46d784":[2,6,4,20],
+"group___system_module.html#ga17f7c06410e7f0c04e1d1df6beee93d4":[2,6,4,17]
 };
