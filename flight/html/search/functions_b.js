@@ -6,9 +6,9 @@ var searchData=
   ['led_5fpwm_5fon_5fp',['led_pwm_on_p',['../group___common.html#gabebd4b64d3f024e81d276b97661914b3',1,'led_pwm.c']]],
   ['led_5fpwm_5fupdate_5fleds',['led_pwm_update_leds',['../group___common.html#ga3f824c1ee5eb9b7f632c2a371abb1407',1,'led_pwm.c']]],
   ['ledpwm',['LedPWM',['../group___common_f1.html#ga75e30c099232f21fa6e08353b0dfcef7',1,'main.c']]],
-  ['linear_5finterpolate',['linear_interpolate',['../group___tau_labs_math.html#gaa491e6b9634fc7e05afd03b8a56ec135',1,'misc_math.c']]],
-  ['linearizefg',['LinearizeFG',['../group___i_n_s_g_p_s.html#gab560144e7b798db7faf80a4c37902c88',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps14state.c'],['../group___tau_labs_libraries.html#gab194242801a5031a5601acf6ded3edf0',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps13state.c']]],
-  ['linearizeh',['LinearizeH',['../group___i_n_s_g_p_s.html#ga7c0662e4a09558eef02efcd11835266f',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps14state.c'],['../group___tau_labs_libraries.html#ga4b0845323067c77b1a25958c8d81168a',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps13state.c']]],
+  ['linear_5finterpolate',['linear_interpolate',['../group___flight_math.html#gaa491e6b9634fc7e05afd03b8a56ec135',1,'misc_math.c']]],
+  ['linearizefg',['LinearizeFG',['../group___i_n_s_g_p_s.html#gab560144e7b798db7faf80a4c37902c88',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps14state.c'],['../group___libraries.html#gab194242801a5031a5601acf6ded3edf0',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps13state.c']]],
+  ['linearizeh',['LinearizeH',['../group___i_n_s_g_p_s.html#ga7c0662e4a09558eef02efcd11835266f',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps14state.c'],['../group___libraries.html#ga4b0845323067c77b1a25958c8d81168a',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps13state.c']]],
   ['lla_5fto_5fned',['lla_to_ned',['../group___on_screen_display.html#gafe48278bdfb70633647317b54e927d07',1,'osd_utils.c']]],
   ['logall',['logAll',['../group___logging.html#gae82c53135dcf3db27840ed00577cb3d6',1,'logging.c']]],
   ['logfs_5factivate_5farena',['logfs_activate_arena',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gaa2ccf74ef0fb13aeebf22101113bf05e',1,'pios_flashfs_logfs.c']]],
@@ -33,9 +33,9 @@ var searchData=
   ['loggingtask',['loggingTask',['../group___logging.html#ga0a9dfd6edce86ce599fcaeca9aab266e',1,'logging.c']]],
   ['logsettings',['logSettings',['../group___logging.html#ga25447c2e569c52ca72f4b2a456e7b574',1,'logging.c']]],
   ['loiter_5fdeadband',['loiter_deadband',['../group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8',1,'vtol_follower_control.c']]],
-  ['lpfilter_5fconstruct_5fbiquads',['lpfilter_construct_biquads',['../group___tau_labs_math.html#gae4503ce34e88755462cdf61616f54a0f',1,'lpfilter.c']]],
-  ['lpfilter_5fconstruct_5fsingle_5fbiquad',['lpfilter_construct_single_biquad',['../group___tau_labs_math.html#ga02d55312f9af7bcb6775243ced7e5e5e',1,'lpfilter.c']]],
-  ['lpfilter_5fcreate',['lpfilter_create',['../group___tau_labs_math.html#gab7e3eb09a69f70eeb359e350d4abb7c1',1,'lpfilter.c']]],
-  ['lpfilter_5frun',['lpfilter_run',['../group___tau_labs_math.html#gad1d279504b7cb05cc2f721854395489f',1,'lpfilter.c']]],
-  ['lpfilter_5frun_5fsingle',['lpfilter_run_single',['../group___tau_labs_math.html#gaf3ad02d229b1a43feb6bc193f82827b5',1,'lpfilter.c']]]
+  ['lpfilter_5fconstruct_5fbiquads',['lpfilter_construct_biquads',['../group___flight_math.html#gae4503ce34e88755462cdf61616f54a0f',1,'lpfilter.c']]],
+  ['lpfilter_5fconstruct_5fsingle_5fbiquad',['lpfilter_construct_single_biquad',['../group___flight_math.html#ga02d55312f9af7bcb6775243ced7e5e5e',1,'lpfilter.c']]],
+  ['lpfilter_5fcreate',['lpfilter_create',['../group___flight_math.html#gab7e3eb09a69f70eeb359e350d4abb7c1',1,'lpfilter.c']]],
+  ['lpfilter_5frun',['lpfilter_run',['../group___flight_math.html#gad1d279504b7cb05cc2f721854395489f',1,'lpfilter.c']]],
+  ['lpfilter_5frun_5fsingle',['lpfilter_run_single',['../group___flight_math.html#gaf3ad02d229b1a43feb6bc193f82827b5',1,'lpfilter.c']]]
 ];

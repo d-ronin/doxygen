@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d97fee2</span>
+   &#160;<span id="projectnumber">763596a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -130,31 +130,31 @@ $(document).ready(function(){initNavTree('timeutils_8c_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* Test for leap year. Nonzero if YEAR is a leap year (every 4 years,</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> except every 100th isn&#39;t, and every 400th is). */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">   33</a></span>&#160;<span class="preprocessor"># define __isleap(year) \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">   33</a></span>&#160;<span class="preprocessor"># define __isleap(year) \</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"> ((year) % 4 == 0 &amp;&amp; ((year) % 100 != 0 || (year) % 400 == 0))</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* How many days come before each month (0-12).  */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">   37</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> uint16_t <a class="code" href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[2][13] = {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___libraries.html#gad43faa5010d2bf324698c46fc53327c3">   37</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> uint16_t <a class="code" href="group___libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[2][13] = {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">/* Normal years.  */</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365},</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">/* Leap years.  */</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">   44</a></span>&#160;<span class="preprocessor">#define SECS_PER_HOUR   (60 * 60)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SECS_PER_DAY    (SECS_PER_HOUR * 24)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">   44</a></span>&#160;<span class="preprocessor">#define SECS_PER_HOUR   (60 * 60)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___libraries.html#gae6bc10904b2b09a717f1fb81cce017de">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SECS_PER_DAY    (SECS_PER_HOUR * 24)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___tau_labs_libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___tau_labs_libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">date_from_timestamp</a>(uint32_t timestamp, DateTimeT *date_time)</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">date_from_timestamp</a>(uint32_t timestamp, DateTimeT *date_time)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        uint16_t y;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        int16_t days;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        uint32_t rem;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        days = timestamp / <a class="code" href="group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        rem = timestamp % <a class="code" href="group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        days = timestamp / <a class="code" href="group___libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        rem = timestamp % <a class="code" href="group___libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        date_time-&gt;hour = rem / <a class="code" href="group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        rem %= <a class="code" href="group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        date_time-&gt;hour = rem / <a class="code" href="group___libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        rem %= <a class="code" href="group___libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        date_time-&gt;min = rem / 60;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        date_time-&gt;sec = rem % 60;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">/* January 1, 1970 was a Thursday.  */</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('timeutils_8c_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define DIV(a, b) ((a) / (b) - ((a) % (b) &lt; 0))</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LEAPS_THRU_END_OF(y) (DIV (y, 4) - DIV (y, 100) + DIV (y, 400))</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">while</span> (days &lt; 0 || days &gt;= (<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a> (y) ? 366 : 365))</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">while</span> (days &lt; 0 || days &gt;= (<a class="code" href="group___libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a> (y) ? 366 : 365))</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">/* Guess a corrected year, assuming 365 days per year.  */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                uint16_t yg = y + days / 365 - (days % 365 &lt; 0);</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('timeutils_8c_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="comment">/* The year cannot be represented due to overflow.  */</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> uint16_t *ip = <a class="code" href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[<a class="code" href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a>(y)];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> uint16_t *ip = <a class="code" href="group___libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a>[<a class="code" href="group___libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a>(y)];</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">for</span> (y = 11; days &lt; (uint16_t)ip[y]; --y){</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
@@ -189,13 +189,13 @@ $(document).ready(function(){initNavTree('timeutils_8c_source.html','');});
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        date_time-&gt;mon = y;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        date_time-&gt;mday = days + 1;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="group___tau_labs_libraries_html_gae6bc10904b2b09a717f1fb81cce017de"><div class="ttname"><a href="group___tau_labs_libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a></div><div class="ttdeci">#define SECS_PER_DAY</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00045">timeutils.c:45</a></div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_gad43faa5010d2bf324698c46fc53327c3"><div class="ttname"><a href="group___tau_labs_libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a></div><div class="ttdeci">static const uint16_t __mon_yday[2][13]</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00037">timeutils.c:37</a></div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_ga11528d10d5838afd2d0ec2f5841167cf"><div class="ttname"><a href="group___tau_labs_libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a></div><div class="ttdeci">#define SECS_PER_HOUR</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00044">timeutils.c:44</a></div></div>
+<div class="ttc" id="group___libraries_html_ga11528d10d5838afd2d0ec2f5841167cf"><div class="ttname"><a href="group___libraries.html#ga11528d10d5838afd2d0ec2f5841167cf">SECS_PER_HOUR</a></div><div class="ttdeci">#define SECS_PER_HOUR</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00044">timeutils.c:44</a></div></div>
+<div class="ttc" id="group___libraries_html_gae6bc10904b2b09a717f1fb81cce017de"><div class="ttname"><a href="group___libraries.html#gae6bc10904b2b09a717f1fb81cce017de">SECS_PER_DAY</a></div><div class="ttdeci">#define SECS_PER_DAY</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00045">timeutils.c:45</a></div></div>
+<div class="ttc" id="group___libraries_html_ga69c006c2a42ec890584877c7c0e2f72f"><div class="ttname"><a href="group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">date_from_timestamp</a></div><div class="ttdeci">void date_from_timestamp(uint32_t timestamp, DateTimeT *date_time)</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00051">timeutils.c:51</a></div></div>
+<div class="ttc" id="group___libraries_html_ga775e1e8c08b79c5cf245b9f03ef70908"><div class="ttname"><a href="group___libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a></div><div class="ttdeci">#define __isleap(year)</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00033">timeutils.c:33</a></div></div>
 <div class="ttc" id="timeutils_8c_html_a08e34981bd911e8f61169bae496fdb14"><div class="ttname"><a href="timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14">LEAPS_THRU_END_OF</a></div><div class="ttdeci">#define LEAPS_THRU_END_OF(y)</div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_ga775e1e8c08b79c5cf245b9f03ef70908"><div class="ttname"><a href="group___tau_labs_libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908">__isleap</a></div><div class="ttdeci">#define __isleap(year)</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00033">timeutils.c:33</a></div></div>
+<div class="ttc" id="group___libraries_html_gad43faa5010d2bf324698c46fc53327c3"><div class="ttname"><a href="group___libraries.html#gad43faa5010d2bf324698c46fc53327c3">__mon_yday</a></div><div class="ttdeci">static const uint16_t __mon_yday[2][13]</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00037">timeutils.c:37</a></div></div>
 <div class="ttc" id="timeutils_8h_html"><div class="ttname"><a href="timeutils_8h.html">timeutils.h</a></div><div class="ttdoc">Time conversion functions. </div></div>
-<div class="ttc" id="group___tau_labs_libraries_html_ga69c006c2a42ec890584877c7c0e2f72f"><div class="ttname"><a href="group___tau_labs_libraries.html#ga69c006c2a42ec890584877c7c0e2f72f">date_from_timestamp</a></div><div class="ttdeci">void date_from_timestamp(uint32_t timestamp, DateTimeT *date_time)</div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8c_source.html#l00051">timeutils.c:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

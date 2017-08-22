@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s',['s',['../group___tau_labs_math.html#gadc042e9ff7f58c0d1256444d51935cc2',1,'lpfilter_biquad']]],
+  ['s',['s',['../group___flight_math.html#gadc042e9ff7f58c0d1256444d51935cc2',1,'lpfilter_biquad']]],
   ['sacc',['sAcc',['../struct_u_b_x___n_a_v___s_o_l.html#a2f523fbe2cf2e2eeb885e5e54d633f17',1,'UBX_NAV_SOL::sAcc()'],['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a50bfd12e0c7398ab16e312e6a9332e7d',1,'UBX_NAV_VELNED::sAcc()']]],
   ['safe_5fword',['safe_word',['../structbl__messages.html#a8fea9ef26e8fc36e75676dde3f9dfea2',1,'bl_messages::safe_word()'],['../structmsg__jump__fw.html#a709bf6bbf813c1085a651b926b17847d',1,'msg_jump_fw::safe_word()'],['../bl__messages_8h.html#a53c2fece0d9cc7136ed1ad90ac8937c0',1,'safe_word():&#160;bl_messages.h']]],
   ['sample_5frate',['sample_rate',['../structat__flash__header.html#a34d1b15406ed0e496c0d99689537878b',1,'at_flash_header']]],
@@ -10,7 +10,7 @@ var searchData=
   ['sclk',['sclk',['../structpios__spi__cfg.html#aa190920ba828502df22a5f665027b20d',1,'pios_spi_cfg']]],
   ['sda',['sda',['../structpios__i2c__adapter__cfg.html#a429bb7d5f0918ade96becff15a633875',1,'pios_i2c_adapter_cfg']]],
   ['sea_5flevel_5fpress',['sea_level_press',['../group___miscellaneous_math.html#gaf74fede69a109db2c5872668c5a44fa8',1,'AirParameters']]],
-  ['sec',['sec',['../group___tau_labs_libraries.html#gaf03fca3f9a2f184f0895cb5c3a55af96',1,'__attribute__::sec()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#adf8744b17bc7095cc06d9f0909bd865d',1,'UBX_NAV_TIMEUTC::sec()']]],
+  ['sec',['sec',['../group___libraries.html#gaf03fca3f9a2f184f0895cb5c3a55af96',1,'__attribute__::sec()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#adf8744b17bc7095cc06d9f0909bd865d',1,'UBX_NAV_TIMEUTC::sec()']]],
   ['sector_5fblocks',['sector_blocks',['../group___p_i_o_s___f_l_a_s_h.html#gabc92c134949e9566f6bf5f446bed6e2a',1,'pios_flash_chip']]],
   ['sector_5ferase',['sector_erase',['../group___p_i_o_s___f_l_a_s_h.html#gae824eeb4a55e49fa84a48f1d43ae788c',1,'pios_flash_jedec_cfg']]],
   ['sector_5fsize',['sector_size',['../group___p_i_o_s___f_l_a_s_h.html#ga68f210e44c44a3709111eeda2c107f26',1,'pios_flash_sector_range']]],
@@ -89,7 +89,7 @@ var searchData=
   ['startofusercode',['startOfUserCode',['../struct_device.html#a34965e275b7c25a39a849f168098b130',1,'Device']]],
   ['state',['state',['../struct_s_h_a1___c_t_x.html#a81d7f6018258ee84f001284c6ff9d2d5',1,'SHA1_CTX::state()'],['../struct_u_a_v_talk_input_processor.html#ae2d58b353cb569cf8fcb956f1b0b3413',1,'UAVTalkInputProcessor::state()'],['../structmsp__parser.html#a388d2fad768ea88ca38d97214ab5b13d',1,'msp_parser::state()'],['../structarena__header.html#a5e4eba89d3d72203e7dd0a324da74689',1,'arena_header::state()'],['../structslot__header.html#a5bfcf2f73ad00e1f416dd3b9a557b7a3',1,'slot_header::state()'],['../unionrfm22b__device__status__reg.html#a715d5782f305828e091c9f162f0fa5df',1,'rfm22b_device_status_reg::state()'],['../structpios__rfm22b__dev.html#a1901b2795c21dac5661bc70ef5d71213',1,'pios_rfm22b_dev::state()'],['../structpios__i2c__adapter.html#ac60a567d295440253e6edde43b33689f',1,'pios_i2c_adapter::state()'],['../structpios__dsm__dev.html#a03ca4dcf548ecee1772b76d3eefad122',1,'pios_dsm_dev::state()'],['../group___unit_tests.html#ga97f95fa5c6d4f1297acfc0860244cc18',1,'DsmTest::state()'],['../pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630',1,'state():&#160;pios_flashfs_logfs.c']]],
   ['stateestimation',['stateEstimation',['../group___attitude_module.html#ga6284b520eced53bee05e93510e93a5e5',1,'attitude.c']]],
-  ['static_5ffn',['static_fn',['../group___tau_labs_modules.html#ga7c1cd3e781499d4a07757203b35d2d51',1,'vtol_fsm_transition']]],
+  ['static_5ffn',['static_fn',['../group___modules.html#ga7c1cd3e781499d4a07757203b35d2d51',1,'vtol_fsm_transition']]],
   ['stats',['stats',['../struct_u_a_v_talk_connection_data.html#ac81dea7c4ec7ecc0fb400374796e4caf',1,'UAVTalkConnectionData::stats()'],['../structpios__rfm22b__dev.html#abb8511852ba38b8de9c19aaae6a495f0',1,'pios_rfm22b_dev::stats()'],['../group___system_module.html#ga37358461ce40773a6fdd1c6988da4bf7',1,'stats():&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga8cffbda3c594871182864efec3236f5b',1,'stats():&#160;uavobjectmanager.c']]],
   ['status',['status',['../group___common_f1.html#ga2414697de79a243562514a0a4344a4dd',1,'main.c']]],
   ['status_5fregs',['status_regs',['../structpios__rfm22b__dev.html#ae19fd5f7bedb1256cb0404952b55cd33',1,'pios_rfm22b_dev']]],

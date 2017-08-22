@@ -8,10 +8,10 @@ var group___vtol_path_follower =
     [ "vtol_follower_priv.h", "vtol__follower__priv_8h.html", null ],
     [ "vtolpathfollower.c", "vtolpathfollower_8c.html", null ],
     [ "vtol_fsm_transition", "structvtol__fsm__transition.html", [
-      [ "entry_fn", "group___tau_labs_modules.html#gaee6622bae804f1c41177facffb8ca7b3", null ],
-      [ "next_state", "group___tau_labs_modules.html#ga07d4010f28091289bd740f33c9131ce8", null ],
-      [ "static_fn", "group___tau_labs_modules.html#ga7c1cd3e781499d4a07757203b35d2d51", null ],
-      [ "timeout", "group___tau_labs_modules.html#ga1cc2043f2c25a4c271ff1ee71c1b4515", null ]
+      [ "entry_fn", "group___modules.html#gaee6622bae804f1c41177facffb8ca7b3", null ],
+      [ "next_state", "group___modules.html#ga07d4010f28091289bd740f33c9131ce8", null ],
+      [ "static_fn", "group___modules.html#ga7c1cd3e781499d4a07757203b35d2d51", null ],
+      [ "timeout", "group___modules.html#ga1cc2043f2c25a4c271ff1ee71c1b4515", null ]
     ] ],
     [ "MAX_QUEUE_SIZE", "group___vtol_path_follower.html#ga623ec78b7909090dbedac4af1d52abb4", null ],
     [ "MILLI", "group___vtol_path_follower.html#gadeb4b9151c69e22165f63162cc43e459", null ],

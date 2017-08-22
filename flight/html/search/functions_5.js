@@ -23,7 +23,7 @@ var searchData=
   ['esc4wayinit',['esc4wayInit',['../serial__4way_8h.html#a9a7b80b92c009ea55c30c89728922542',1,'serial_4way.h']]],
   ['esc4wayprocess',['esc4wayProcess',['../serial__4way_8h.html#aba1d717eb66d5efbd9a22b1b89285850',1,'serial_4way.h']]],
   ['esc4wayrelease',['esc4wayRelease',['../serial__4way_8h.html#ad90637a3cd69cdf763be0e8f16683d91',1,'serial_4way.h']]],
-  ['euler2r',['Euler2R',['../group___tau_labs_math.html#ga33c35c48faebb53d4d2cd46b67aba8ff',1,'coordinate_conversions.c']]],
+  ['euler2r',['Euler2R',['../group___flight_math.html#ga33c35c48faebb53d4d2cd46b67aba8ff',1,'coordinate_conversions.c']]],
   ['eventclearstats',['EventClearStats',['../group___system_module.html#ga17f7c06410e7f0c04e1d1df6beee93d4',1,'EventClearStats():&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga17f7c06410e7f0c04e1d1df6beee93d4',1,'EventClearStats():&#160;systemmod.c']]],
   ['eventgetstats',['EventGetStats',['../group___system_module.html#ga938822e7233dbbb444a5bdde8f626fae',1,'EventGetStats(EventStats *statsOut):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga938822e7233dbbb444a5bdde8f626fae',1,'EventGetStats(EventStats *statsOut):&#160;systemmod.c']]],
   ['eventperiodiccallbackcreate',['EventPeriodicCallbackCreate',['../group___system_module.html#ga34e9f120ad77feee68d20f0a22adeb51',1,'EventPeriodicCallbackCreate(UAVObjEvent *ev, UAVObjEventCallback cb, uint16_t periodMs):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga34e9f120ad77feee68d20f0a22adeb51',1,'EventPeriodicCallbackCreate(UAVObjEvent *ev, UAVObjEventCallback cb, uint16_t periodMs):&#160;systemmod.c']]],
@@ -32,6 +32,6 @@ var searchData=
   ['eventperiodicqueuecreate',['EventPeriodicQueueCreate',['../group___system_module.html#ga26f4f21c174d0caf6301734360fc885a',1,'EventPeriodicQueueCreate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga26f4f21c174d0caf6301734360fc885a',1,'EventPeriodicQueueCreate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c']]],
   ['eventperiodicqueueupdate',['EventPeriodicQueueUpdate',['../group___system_module.html#ga914ce570d6529619085bb00319fc05e0',1,'EventPeriodicQueueUpdate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c'],['../group___u_a_v_object_handling.html#ga914ce570d6529619085bb00319fc05e0',1,'EventPeriodicQueueUpdate(UAVObjEvent *ev, struct pios_queue *queue, uint16_t periodMs):&#160;systemmod.c']]],
   ['eventperiodicupdate',['eventPeriodicUpdate',['../group___system_module.html#gaa926a99228262150f436a4011b9c0bfb',1,'systemmod.c']]],
-  ['expo3',['expo3',['../group___tau_labs_math.html#ga62c8aa7dba26285dc04c2bd181711ff5',1,'misc_math.c']]],
-  ['expom',['expoM',['../group___tau_labs_math.html#gaa176231c25bcf83877304a735c40f177',1,'misc_math.c']]]
+  ['expo3',['expo3',['../group___flight_math.html#ga62c8aa7dba26285dc04c2bd181711ff5',1,'misc_math.c']]],
+  ['expom',['expoM',['../group___flight_math.html#gaa176231c25bcf83877304a735c40f177',1,'misc_math.c']]]
 ];

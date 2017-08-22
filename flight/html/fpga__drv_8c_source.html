@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d97fee2</span>
+   &#160;<span id="projectnumber">763596a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <span class="keywordflow">if</span> (PIOS_RE1FPGA_ClaimBus() != 0)</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        n_leds = <a class="code" href="group___tau_labs_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(ws2811_dev-&gt;max_idx + 1, 1024);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        n_leds = <a class="code" href="group___flight_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(ws2811_dev-&gt;max_idx + 1, 1024);</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a>(dev-&gt;spi_id, 0x7f &amp; RE1FPGA_REG_LED);</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i.html#gafe2e08b39f192e798c498a5fa0ae8dba">PIOS_SPI_TransferBlock</a>(dev-&gt;spi_id, (uint8_t*)ws2811_dev-&gt;pixel_data, NULL,</div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;{</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(ws2811_dev-&gt;<a class="code" href="group___p_i_o_s___w_s2811.html#ga8241b48ae933e78c8e68064700f84823">magic</a> == WS2811_MAGIC);</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        uint16_t n_leds = <a class="code" href="group___tau_labs_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(ws2811_dev-&gt;max_idx + 1, 1024);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        uint16_t n_leds = <a class="code" href="group___flight_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(ws2811_dev-&gt;max_idx + 1, 1024);</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="keywordflow">return</span> n_leds;</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;}</div>
@@ -680,11 +680,11 @@ $(document).ready(function(){initNavTree('fpga__drv_8c_source.html','');});
 <div class="ttc" id="group___brain_r_e1_html_ggac92c153a128d4b69256e038024f213f8af0754743007865edd6d6ccf5fd04be37"><div class="ttname"><a href="group___brain_r_e1.html#ggac92c153a128d4b69256e038024f213f8af0754743007865edd6d6ccf5fd04be37">PIOS_RE1FPGA_IR_PROTOCOL_ILAP</a></div><div class="ttdef"><b>Definition:</b> <a href="fpga__drv_8h_source.html#l00052">fpga_drv.h:52</a></div></div>
 <div class="ttc" id="group___brain_r_e1_html_ga6114193b0ad014638b1cfb777b7042f8"><div class="ttname"><a href="group___brain_r_e1.html#ga6114193b0ad014638b1cfb777b7042f8">PIOS_RE1FPGA_SetIRProtocol</a></div><div class="ttdeci">int32_t PIOS_RE1FPGA_SetIRProtocol(enum pios_re1fpga_ir_protocols ir_protocol)</div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
-<div class="ttc" id="group___tau_labs_math_html_ga3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="group___tau_labs_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00041">misc_math.h:41</a></div></div>
 <div class="ttc" id="group___brain_r_e1_html_ga4398ad859e6aef4d219fb728bd96a5b1"><div class="ttname"><a href="group___brain_r_e1.html#ga4398ad859e6aef4d219fb728bd96a5b1">PIOS_RE1FPGA_MPTxPinPullUpDown</a></div><div class="ttdeci">int32_t PIOS_RE1FPGA_MPTxPinPullUpDown(bool enable, bool pullup)</div></div>
 <div class="ttc" id="structpios__re1fpga__cfg_html"><div class="ttname"><a href="structpios__re1fpga__cfg.html">pios_re1fpga_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="fpga__drv_8h_source.html#l00038">fpga_drv.h:38</a></div></div>
 <div class="ttc" id="pios__crossfire_8h_html_a1d127017fb298b889f4ba24752d08b8e"><div class="ttname"><a href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00050">pios_crossfire.h:50</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00176">pios_ws2811.c:176</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="group___flight_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00041">misc_math.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00197">pios_ws2811.c:197</a></div></div>
 <div class="ttc" id="fpga__drv_8h_html"><div class="ttname"><a href="fpga__drv_8h.html">fpga_drv.h</a></div></div>
 <div class="ttc" id="pios__ws2811_8h_html"><div class="ttname"><a href="pios__ws2811_8h.html">pios_ws2811.h</a></div></div>

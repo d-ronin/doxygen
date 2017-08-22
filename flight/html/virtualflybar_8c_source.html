@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d97fee2</span>
+   &#160;<span id="projectnumber">763596a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('virtualflybar_8c_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="group___stabilization_module.html#ga75cb70d8cff86b29cbd4b042b87e02e5">vbar_integral</a>[axis] = <a class="code" href="group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d">bound</a>(<a class="code" href="group___stabilization_module.html#ga75cb70d8cff86b29cbd4b042b87e02e5">vbar_integral</a>[axis], settings-&gt;VbarMaxAngle);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Compute the normal PID controller output</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">float</span> pid_out = <a class="code" href="group___tau_labs_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a>(pid, NULL,  0,  gyro);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">float</span> pid_out = <a class="code" href="group___flight_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a>(pid, NULL,  0,  gyro);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Command signal can indicate how much to disregard the gyro feedback (fast flips)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (settings-&gt;VbarGyroSuppress &gt; 0.0f) {</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('virtualflybar_8c_source.html','');});
 <div class="ttc" id="group___stabilization_module_html_ga286dd4b805297b12acd0aa9a69780a75"><div class="ttname"><a href="group___stabilization_module.html#ga286dd4b805297b12acd0aa9a69780a75">stabilization_virtual_flybar_pirocomp</a></div><div class="ttdeci">int stabilization_virtual_flybar_pirocomp(float z_gyro, float dT)</div><div class="ttdef"><b>Definition:</b> <a href="virtualflybar_8c_source.html#l00079">virtualflybar.c:79</a></div></div>
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
 <div class="ttc" id="stabilization_8h_html"><div class="ttname"><a href="stabilization_8h.html">stabilization.h</a></div><div class="ttdoc">Attitude stabilization module. </div></div>
-<div class="ttc" id="group___tau_labs_math_html_ga674dd92443c0a6b02bd28947131c98e3"><div class="ttname"><a href="group___tau_labs_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a></div><div class="ttdeci">float pid_apply_setpoint(struct pid *pid, struct pid_deadband *deadband, const float setpoint, const float measured)</div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00134">pid.c:134</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga674dd92443c0a6b02bd28947131c98e3"><div class="ttname"><a href="group___flight_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a></div><div class="ttdeci">float pid_apply_setpoint(struct pid *pid, struct pid_deadband *deadband, const float setpoint, const float measured)</div><div class="ttdef"><b>Definition:</b> <a href="pid_8c_source.html#l00134">pid.c:134</a></div></div>
 <div class="ttc" id="structpid_html"><div class="ttname"><a href="structpid.html">pid</a></div><div class="ttdef"><b>Definition:</b> <a href="pid_8h_source.html#l00042">pid.h:42</a></div></div>
 <div class="ttc" id="pid_8h_html"><div class="ttname"><a href="pid_8h.html">pid.h</a></div><div class="ttdoc">PID Control algorithms. </div></div>
 </div><!-- fragment --></div><!-- contents -->
