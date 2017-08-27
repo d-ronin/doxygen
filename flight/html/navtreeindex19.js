@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"group___attitude_module.html#ga50858e76836ece0d48f2f319744d5c7c":[2,4,3,3],
-"group___attitude_module.html#ga5156866e209e6b8439a9165110f194f8":[2,4,3,50],
 "group___attitude_module.html#ga57e0e91b9579346b0e90e60b3821972f":[2,4,3,32],
 "group___attitude_module.html#ga5b9ca9b050dc607b1927cd4852ca9c6f":[2,4,3,13],
 "group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e":[2,4,3,28],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "group___brain.html#ga42381c2949b271a74c562c3502403881":[2,6,3,144],
 "group___brain.html#ga42381c2949b271a74c562c3502403881":[2,5,1,144],
 "group___brain.html#ga42a8bb439be9c6c643c7ab48f02ee662":[2,5,1,219],
-"group___brain.html#ga42a8bb439be9c6c643c7ab48f02ee662":[2,6,3,219]
+"group___brain.html#ga42a8bb439be9c6c643c7ab48f02ee662":[2,6,3,219],
+"group___brain.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c":[2,5,1,302],
+"group___brain.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c":[2,6,3,302]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">763596a</span>
+   &#160;<span id="projectnumber">2233090</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -130,26 +130,31 @@ $(document).ready(function(){initNavTree('bu__payload_8c_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* This is needed to make ccache aware the binary has changed. Without it,</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   ccache will always return old cached files. */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">   30</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a>[] = <a class="code" href="pios__stringify_8h.html#a535c7880ab1eea2a5bb39bdf71f2f860">__stringify</a>(BU_HASH);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((<a class="code" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a>)) dummy[] = <a class="code" href="pios__stringify_8h.html#a535c7880ab1eea2a5bb39bdf71f2f860">__stringify</a>(BU_HASH);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">asm</span>(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="stringliteral">&quot;.section .rodata\n&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216">asm</a>(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        &quot;.section .rodata\n&quot;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="stringliteral">&quot;.global _bu_payload_start\n&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="stringliteral">&quot;_bu_payload_start:\n&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="stringliteral">&quot;.incbin \&quot;&quot;</span> <a class="code" href="pios__stringify_8h.html#a535c7880ab1eea2a5bb39bdf71f2f860">__stringify</a>(BU_PAYLOAD_FILE) <span class="stringliteral">&quot;\&quot;\n&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="stringliteral">&quot;.global _bu_payload_end\n&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="stringliteral">&quot;_bu_payload_end:\n&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        &quot;.global <a class="code" href="group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a>\n&quot;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        &quot;<a class="code" href="group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a>:\n&quot;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        &quot;.incbin \&quot;&quot; <a class="code" href="pios__stringify_8h.html#a535c7880ab1eea2a5bb39bdf71f2f860">__stringify</a>(BU_PAYLOAD_FILE) &quot;\&quot;\n&quot;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        &quot;.global <a class="code" href="group___updater.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a>\n&quot;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        &quot;<a class="code" href="group___updater.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a>:\n&quot;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="stringliteral">&quot;.global _bu_payload_size\n&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="stringliteral">&quot;_bu_payload_size:\n&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="stringliteral">&quot;.word _bu_payload_end - _bu_payload_start\n&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="stringliteral">&quot;.previous\n&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        &quot;.global <a class="code" href="group___updater.html#ga4dccd413b84105099ae7325ad03e8432">_bu_payload_size</a>\n&quot;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        &quot;<a class="code" href="group___updater.html#ga4dccd413b84105099ae7325ad03e8432">_bu_payload_size</a>:\n&quot;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        &quot;.word <a class="code" href="group___updater.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a> - <a class="code" href="group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a>\n&quot;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        &quot;.previous\n&quot;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="ttc" id="pios__stringify_8h_html_a535c7880ab1eea2a5bb39bdf71f2f860"><div class="ttname"><a href="pios__stringify_8h.html#a535c7880ab1eea2a5bb39bdf71f2f860">__stringify</a></div><div class="ttdeci">#define __stringify(x...)</div><div class="ttdef"><b>Definition:</b> <a href="pios__stringify_8h_source.html#l00012">pios_stringify.h:12</a></div></div>
+<div class="ttc" id="group___updater_html_gada518ca9b48fff7bbf389b9632fac787"><div class="ttname"><a href="group___updater.html#gada518ca9b48fff7bbf389b9632fac787">_bu_payload_end</a></div><div class="ttdeci">const uint32_t _bu_payload_end</div></div>
 <div class="ttc" id="pios__stringify_8h_html"><div class="ttname"><a href="pios__stringify_8h.html">pios_stringify.h</a></div></div>
-<div class="ttc" id="group___updater_html_ga6a8565a07d7bb760284de4fa78703d79"><div class="ttname"><a href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a></div><div class="ttdeci">static const char dummy[]</div><div class="ttdef"><b>Definition:</b> <a href="bu__payload_8c_source.html#l00030">bu_payload.c:30</a></div></div>
+<div class="ttc" id="group___updater_html_ga4dccd413b84105099ae7325ad03e8432"><div class="ttname"><a href="group___updater.html#ga4dccd413b84105099ae7325ad03e8432">_bu_payload_size</a></div><div class="ttdeci">const uint32_t _bu_payload_size</div></div>
+<div class="ttc" id="bl__messages_8h_html_ac0544a0a50047efef4eb9dee1db56d01"><div class="ttname"><a href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a></div><div class="ttdeci">uint8_t unused[4]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00070">bl_messages.h:70</a></div></div>
+<div class="ttc" id="group___updater_html_gae326e6cc9f96a8a1e67276237f8d0523"><div class="ttname"><a href="group___updater.html#gae326e6cc9f96a8a1e67276237f8d0523">_bu_payload_start</a></div><div class="ttdeci">const uint32_t _bu_payload_start</div></div>
+<div class="ttc" id="group___p_i_o_s_html_ga53b028c9298f9d903cfdbb1a6c12a216"><div class="ttname"><a href="group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216">asm</a></div><div class="ttdeci">register void *stack_pointer asm(&quot;sp&quot;)</div></div>
+<div class="ttc" id="group___u_a_v_talk_html_ga043afd6646bf00b1155399e12818f798"><div class="ttname"><a href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a></div><div class="ttdeci">typedef __attribute__</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way_8h_source.html#l00043">serial_4way.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

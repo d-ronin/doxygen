@@ -1,7 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"frsky__packing_8c.html#ad6d5c6ab9846c1e3fa8538c2d8b754ac":[5,0,0,1,9,3],
-"frsky__packing_8c.html#ae192df985843624e89a769504aaa58a0":[5,0,0,1,9,15],
 "frsky__packing_8c.html#af64200a471cf2a7f02072e7cc784bdd2":[5,0,0,1,9,2],
 "frsky__packing_8c.html#af74abd09e5bab55781e91f7998815ea7":[5,0,0,1,9,11],
 "frsky__packing_8c_source.html":[5,0,0,1,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX15 =
 "globals_vars_f.html":[5,1,2,6],
 "globals_vars_g.html":[5,1,2,7],
 "globals_vars_h.html":[5,1,2,8],
-"globals_vars_i.html":[5,1,2,9]
+"globals_vars_i.html":[5,1,2,9],
+"globals_vars_j.html":[5,1,2,10],
+"globals_vars_k.html":[5,1,2,11]
 };

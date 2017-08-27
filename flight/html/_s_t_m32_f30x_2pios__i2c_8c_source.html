@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">763596a</span>
+   &#160;<span id="projectnumber">2233090</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -651,8 +651,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__i2c_8c_source.htm
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="comment">/* Make sure the done/ready semaphore is consumed before we start */</span></div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a285c7d92b47f1f1d917e0591e3a6706f">sem_ready</a>, 0);</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a> = false;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649aef5af4537470d505c74d022cebc6366f">I2C_EVENT_START</a>, &amp;<a class="code" href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a>);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordtype">bool</span> dummy = false;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649aef5af4537470d505c74d022cebc6366f">I2C_EVENT_START</a>, &amp;dummy);</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="comment">/* Wait for the transfer to complete */</span></div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keywordtype">bool</span> semaphore_success = (<a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(i2c_adapter-&gt;sem_ready, i2c_adapter-&gt;cfg-&gt;transfer_timeout_ms) == true);</div>
@@ -851,7 +851,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__i2c_8c_source.htm
 <div class="ttc" id="group___p_i_o_s___i2_c_html_gaff71841b65f69b2ba46464053726661c"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#gaff71841b65f69b2ba46464053726661c">PIOS_I2C_Transfer</a></div><div class="ttdeci">int32_t PIOS_I2C_Transfer(pios_i2c_t i2c_id, const struct pios_i2c_txn txn_list[], uint32_t num_txns)</div></div>
 <div class="ttc" id="structpios__i2c__txn_html_a22a5ef8fef7182f36899d8410be0dc27"><div class="ttname"><a href="structpios__i2c__txn.html#a22a5ef8fef7182f36899d8410be0dc27">pios_i2c_txn::addr</a></div><div class="ttdeci">uint16_t addr</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00042">pios_i2c.h:42</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00130">pios_i2c_priv.h:130</a></div></div>
-<div class="ttc" id="group___updater_html_ga6a8565a07d7bb760284de4fa78703d79"><div class="ttname"><a href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a></div><div class="ttdeci">static const char dummy[]</div><div class="ttdef"><b>Definition:</b> <a href="bu__payload_8c_source.html#l00030">bu_payload.c:30</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i2_c_html_ga7ee09f2116c09720941e51ee69c3d1ed"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga7ee09f2116c09720941e51ee69c3d1ed">PIOS_I2C_ER_IRQ_Handler</a></div><div class="ttdeci">void PIOS_I2C_ER_IRQ_Handler(pios_i2c_t i2c_id)</div></div>
 <div class="ttc" id="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22ba35a5d616d4db99e0ba1c159912c38641"><div class="ttname"><a href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba35a5d616d4db99e0ba1c159912c38641">I2C_STATE_BUS_ERROR</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h_source.html#l00051">pios_i2c_priv.h:51</a></div></div>
 <div class="ttc" id="group___libraries_html_ga319944cc5db9d35c587f3db201c181b2"><div class="ttname"><a href="group___libraries.html#ga319944cc5db9d35c587f3db201c181b2">lock</a></div><div class="ttdeci">static struct pios_mutex * lock</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00043">alarms.c:43</a></div></div>

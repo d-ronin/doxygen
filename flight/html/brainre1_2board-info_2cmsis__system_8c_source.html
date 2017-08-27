@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">763596a</span>
+   &#160;<span id="projectnumber">2233090</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -366,503 +366,497 @@ $(document).ready(function(){initNavTree('brainre1_2board-info_2cmsis__system_8c
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    RCC-&gt;CR |= RCC_CR_PLLON;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="comment">/* Wait till the main PLL is ready */</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0)</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    {</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="preprocessor">#if defined(STM32F427_437xx) || defined(STM32F429_439xx) || defined(STM32F446xx)</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Enable the Over-drive to extend the clock frequency to 180 Mhz */</span></div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    PWR-&gt;CR |= PWR_CR_ODEN;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">while</span>((PWR-&gt;CSR &amp; PWR_CSR_ODRDY) == 0)</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    {</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    }</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    PWR-&gt;CR |= PWR_CR_ODSWEN;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordflow">while</span>((PWR-&gt;CSR &amp; PWR_CSR_ODSWRDY) == 0)</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    {</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    }</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_5WS;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F427_437x || STM32F429_439xx || STM32F446xx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor">#if defined(STM32F40_41xxx)</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_5WS;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F40_41xxx  */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor">#if defined(STM32F401xx)</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F401xx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="comment">/* Select the main PLL as system clock source */</span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  }</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  { <span class="comment">/* If HSE fails to start-up, the application will have wrong clock</span></div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">         configuration. User can add here some code to deal with this error */</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  }</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="preprocessor">#elif defined(STM32F411xE)</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(USE_HSE_BYPASS)</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="preprocessor"></span><span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment">/*            PLL (clocked by HSE) used as System clock source                */</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  __IO uint32_t StartUpCounter = 0, HSEStatus = 0;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="comment">/* Enable HSE and HSE BYPASS */</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  RCC-&gt;CR |= ((uint32_t)RCC_CR_HSEON | RCC_CR_HSEBYP);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="comment">/* Wait till HSE is ready and if Time out is reached exit */</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">#if defined(STM32F427_437xx) || defined(STM32F429_439xx) || defined(STM32F446xx)</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Enable the Over-drive to extend the clock frequency to 180 Mhz */</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    PWR-&gt;CR |= PWR_CR_ODEN;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordflow">while</span>((PWR-&gt;CSR &amp; PWR_CSR_ODRDY) == 0);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    PWR-&gt;CR |= PWR_CR_ODSWEN;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordflow">while</span>((PWR-&gt;CSR &amp; PWR_CSR_ODSWRDY) == 0);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_5WS;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F427_437x || STM32F429_439xx || STM32F446xx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="preprocessor">#if defined(STM32F40_41xxx)</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_5WS;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F40_41xxx  */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor">#if defined(STM32F401xx)</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F401xx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="comment">/* Select the main PLL as system clock source */</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  }</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  { <span class="comment">/* If HSE fails to start-up, the application will have wrong clock</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="comment">         configuration. User can add here some code to deal with this error */</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="preprocessor">#elif defined(STM32F411xE)</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(USE_HSE_BYPASS)</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="preprocessor"></span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">/*            PLL (clocked by HSE) used as System clock source                */</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  __IO uint32_t StartUpCounter = 0, HSEStatus = 0;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="comment">/* Enable HSE and HSE BYPASS */</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  RCC-&gt;CR |= ((uint32_t)RCC_CR_HSEON | RCC_CR_HSEBYP);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="comment">/* Wait till HSE is ready and if Time out is reached exit */</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  {</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    HSEStatus = RCC-&gt;CR &amp; RCC_CR_HSERDY;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    StartUpCounter++;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  } <span class="keywordflow">while</span>((HSEStatus == 0) &amp;&amp; (StartUpCounter != HSE_STARTUP_TIMEOUT));</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">if</span> ((RCC-&gt;CR &amp; RCC_CR_HSERDY) != RESET)</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  {</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    HSEStatus = RCC-&gt;CR &amp; RCC_CR_HSERDY;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    StartUpCounter++;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  } <span class="keywordflow">while</span>((HSEStatus == 0) &amp;&amp; (StartUpCounter != HSE_STARTUP_TIMEOUT));</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordflow">if</span> ((RCC-&gt;CR &amp; RCC_CR_HSERDY) != RESET)</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  {</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    HSEStatus = (uint32_t)0x01;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;  }</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  {</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    HSEStatus = (uint32_t)0x00;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  }</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    HSEStatus = (uint32_t)0x01;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  }</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  {</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    HSEStatus = (uint32_t)0x00;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  }</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;  <span class="keywordflow">if</span> (HSEStatus == (uint32_t)0x01)</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="comment">/* Select regulator voltage output Scale 1 mode */</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    RCC-&gt;APB1ENR |= RCC_APB1ENR_PWREN;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    PWR-&gt;CR |= PWR_CR_VOS;</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  <span class="keywordflow">if</span> (HSEStatus == (uint32_t)0x01)</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  {</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="comment">/* Select regulator voltage output Scale 1 mode */</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    RCC-&gt;APB1ENR |= RCC_APB1ENR_PWREN;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    PWR-&gt;CR |= PWR_CR_VOS;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="comment">/* HCLK = SYSCLK / 1*/</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_HPRE_DIV1;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">/* PCLK2 = HCLK / 2*/</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_PPRE2_DIV1;</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="comment">/* HCLK = SYSCLK / 1*/</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_HPRE_DIV1;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="comment">/* PCLK1 = HCLK / 4*/</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_PPRE1_DIV2;</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="comment">/* PCLK2 = HCLK / 2*/</span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_PPRE2_DIV1;</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="comment">/* PCLK1 = HCLK / 4*/</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_PPRE1_DIV2;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="comment">/* Configure the main PLL */</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    RCC-&gt;PLLCFGR = <a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#ga0fa5a868f5cd056a04b1c42e454b9617">PLL_M</a> | (PLL_N &lt;&lt; 6) | (((PLL_P &gt;&gt; 1) -1) &lt;&lt; 16) |</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                   (RCC_PLLCFGR_PLLSRC_HSE) | (<a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#gac958257ddb2537c539cffdb3a4543067">PLL_Q</a> &lt;&lt; 24);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="comment">/* Enable the main PLL */</span></div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    RCC-&gt;CR |= RCC_CR_PLLON;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="comment">/* Wait till the main PLL is ready */</span></div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0)</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    }</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="comment">/* Select the main PLL as system clock source */</span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    }</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  { <span class="comment">/* If HSE fails to start-up, the application will have wrong clock</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">         configuration. User can add here some code to deal with this error */</span></div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  }</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#else </span><span class="comment">/* HSI will be used as PLL clock source */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Select regulator voltage output Scale 1 mode */</span></div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  RCC-&gt;APB1ENR |= RCC_APB1ENR_PWREN;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  PWR-&gt;CR |= PWR_CR_VOS;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="comment">/* Configure the main PLL */</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    RCC-&gt;PLLCFGR = <a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#ga0fa5a868f5cd056a04b1c42e454b9617">PLL_M</a> | (PLL_N &lt;&lt; 6) | (((PLL_P &gt;&gt; 1) -1) &lt;&lt; 16) |</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                   (RCC_PLLCFGR_PLLSRC_HSE) | (<a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#gac958257ddb2537c539cffdb3a4543067">PLL_Q</a> &lt;&lt; 24);</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="comment">/* Enable the main PLL */</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    RCC-&gt;CR |= RCC_CR_PLLON;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="comment">/* Wait till the main PLL is ready */</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0)</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    {</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    }</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="comment">/* Select the main PLL as system clock source */</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    }</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  }</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  { <span class="comment">/* If HSE fails to start-up, the application will have wrong clock</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="comment">         configuration. User can add here some code to deal with this error */</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  }</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor">#else </span><span class="comment">/* HSI will be used as PLL clock source */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Select regulator voltage output Scale 1 mode */</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  RCC-&gt;APB1ENR |= RCC_APB1ENR_PWREN;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  PWR-&gt;CR |= PWR_CR_VOS;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  <span class="comment">/* HCLK = SYSCLK / 1*/</span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_HPRE_DIV1;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="comment">/* PCLK2 = HCLK / 2*/</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_PPRE2_DIV1;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="comment">/* HCLK = SYSCLK / 1*/</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_HPRE_DIV1;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="comment">/* PCLK1 = HCLK / 4*/</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_PPRE1_DIV2;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="comment">/* PCLK2 = HCLK / 2*/</span></div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_PPRE2_DIV1;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="comment">/* Configure the main PLL */</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  RCC-&gt;PLLCFGR = <a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#ga0fa5a868f5cd056a04b1c42e454b9617">PLL_M</a> | (PLL_N &lt;&lt; 6) | (((PLL_P &gt;&gt; 1) -1) &lt;&lt; 16) | (<a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#gac958257ddb2537c539cffdb3a4543067">PLL_Q</a> &lt;&lt; 24);</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="comment">/* PCLK1 = HCLK / 4*/</span></div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_PPRE1_DIV2;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="comment">/* Enable the main PLL */</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  RCC-&gt;CR |= RCC_CR_PLLON;</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  <span class="comment">/* Configure the main PLL */</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  RCC-&gt;PLLCFGR = <a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#ga0fa5a868f5cd056a04b1c42e454b9617">PLL_M</a> | (PLL_N &lt;&lt; 6) | (((PLL_P &gt;&gt; 1) -1) &lt;&lt; 16) | (<a class="code" href="group___s_t_m32_f4xx___system___private___defines.html#gac958257ddb2537c539cffdb3a4543067">PLL_Q</a> &lt;&lt; 24);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  <span class="comment">/* Enable the main PLL */</span></div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  RCC-&gt;CR |= RCC_CR_PLLON;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  <span class="comment">/* Wait till the main PLL is ready */</span></div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0)</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  }</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  <span class="comment">/* Select the main PLL as system clock source */</span></div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  {</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  }</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_HSE_BYPASS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F40_41xxx || STM32F427_437xx || STM32F429_439xx || STM32F401xx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="preprocessor">#if defined(STM32F446xx)</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if SYSCLK_FREQ == 180000000</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure 48MHz clock for USB */</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  <span class="comment">// Set 48MHz clock source</span></div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  RCC_48MHzClockSourceConfig(RCC_48MHZCLKSource_PLLSAI);</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <span class="comment">// Enable PLLSAI</span></div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  RCC_PLLSAICmd(DISABLE);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="preprocessor">  #define RCC_PLLSAI_GET_FLAG() ((RCC-&gt;CR &amp; (RCC_CR_PLLSAIRDY)) == (RCC_CR_PLLSAIRDY))</span></div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor"></span>  <span class="comment">// wait for PLLSAI to be disabled</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="keywordflow">while</span> (RCC_PLLSAI_GET_FLAG() != 0)</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  {}</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  RCC_PLLSAIConfig(PLLSAI_M, PLLSAI_N, PLLSAI_P, PLLSAI_Q);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  RCC_PLLSAICmd(ENABLE);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  <span class="comment">// wait for PLLSAI to be enabled</span></div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  <span class="keywordflow">while</span> (RCC_PLLSAI_GET_FLAG() == 0)</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  {}</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="preprocessor"></span>  RCC_48MHzClockSourceConfig(RCC_48MHZCLKSource_PLL);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SYSCLK_FREQ == 180000000 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F446xx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="preprocessor">#ifdef DATA_IN_ExtSRAM</span></div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="keywordtype">void</span> SystemInit_ExtMemCtl(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;{</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;<span class="comment">/*-- GPIOs Configuration -----------------------------------------------------*/</span></div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;<span class="comment"> +-------------------+--------------------+------------------+--------------+</span></div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment"> +                       SRAM pins assignment                               +</span></div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment"> +-------------------+--------------------+------------------+--------------+</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment"> | PD0  &lt;-&gt; FMC_D2  | PE0  &lt;-&gt; FMC_NBL0 | PF0  &lt;-&gt; FMC_A0 | PG0 &lt;-&gt; FMC_A10 |</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="comment"> | PD1  &lt;-&gt; FMC_D3  | PE1  &lt;-&gt; FMC_NBL1 | PF1  &lt;-&gt; FMC_A1 | PG1 &lt;-&gt; FMC_A11 |</span></div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="comment"> | PD4  &lt;-&gt; FMC_NOE | PE3  &lt;-&gt; FMC_A19  | PF2  &lt;-&gt; FMC_A2 | PG2 &lt;-&gt; FMC_A12 |</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment"> | PD5  &lt;-&gt; FMC_NWE | PE4  &lt;-&gt; FMC_A20  | PF3  &lt;-&gt; FMC_A3 | PG3 &lt;-&gt; FMC_A13 |</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment"> | PD8  &lt;-&gt; FMC_D13 | PE7  &lt;-&gt; FMC_D4   | PF4  &lt;-&gt; FMC_A4 | PG4 &lt;-&gt; FMC_A14 |</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="comment"> | PD9  &lt;-&gt; FMC_D14 | PE8  &lt;-&gt; FMC_D5   | PF5  &lt;-&gt; FMC_A5 | PG5 &lt;-&gt; FMC_A15 |</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="comment"> | PD10 &lt;-&gt; FMC_D15 | PE9  &lt;-&gt; FMC_D6   | PF12 &lt;-&gt; FMC_A6 | PG9 &lt;-&gt; FMC_NE2 |</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="comment"> | PD11 &lt;-&gt; FMC_A16 | PE10 &lt;-&gt; FMC_D7   | PF13 &lt;-&gt; FMC_A7 |-----------------+</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="comment"> | PD12 &lt;-&gt; FMC_A17 | PE11 &lt;-&gt; FMC_D8   | PF14 &lt;-&gt; FMC_A8 |</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="comment"> | PD13 &lt;-&gt; FMC_A18 | PE12 &lt;-&gt; FMC_D9   | PF15 &lt;-&gt; FMC_A9 |</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment"> | PD14 &lt;-&gt; FMC_D0  | PE13 &lt;-&gt; FMC_D10  |-----------------+</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="comment"> | PD15 &lt;-&gt; FMC_D1  | PE14 &lt;-&gt; FMC_D11  |</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="comment"> |                  | PE15 &lt;-&gt; FMC_D12  |</span></div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="comment"> +------------------+------------------+</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;   <span class="comment">/* Enable GPIOD, GPIOE, GPIOF and GPIOG interface clock */</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;  RCC-&gt;AHB1ENR   |= 0x00000078;</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;  <span class="comment">/* Connect PDx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  GPIOD-&gt;AFR[0]  = 0x00cc00cc;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;  GPIOD-&gt;AFR[1]  = 0xcccccccc;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  <span class="comment">/* Configure PDx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  GPIOD-&gt;MODER   = 0xaaaa0a0a;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="comment">/* Configure PDx pins speed to 100 MHz */</span></div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  GPIOD-&gt;OSPEEDR = 0xffff0f0f;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <span class="comment">/* Configure PDx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  GPIOD-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="comment">/* No pull-up, pull-down for PDx pins */</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  GPIOD-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="comment">/* Connect PEx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  GPIOE-&gt;AFR[0]  = 0xcccccccc;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  GPIOE-&gt;AFR[1]  = 0xcccccccc;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <span class="comment">/* Configure PEx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  GPIOE-&gt;MODER   = 0xaaaaaaaa;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="comment">/* Configure PEx pins speed to 100 MHz */</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  GPIOE-&gt;OSPEEDR = 0xffffffff;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <span class="comment">/* Configure PEx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  GPIOE-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="comment">/* No pull-up, pull-down for PEx pins */</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  GPIOE-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  <span class="comment">/* Connect PFx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  GPIOF-&gt;AFR[0]  = 0x00cccccc;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  GPIOF-&gt;AFR[1]  = 0xcccc0000;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;  <span class="comment">/* Configure PFx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;  GPIOF-&gt;MODER   = 0xaa000aaa;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;  <span class="comment">/* Configure PFx pins speed to 100 MHz */</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  GPIOF-&gt;OSPEEDR = 0xff000fff;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <span class="comment">/* Configure PFx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  GPIOF-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <span class="comment">/* No pull-up, pull-down for PFx pins */</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  GPIOF-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <span class="comment">/* Connect PGx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  GPIOG-&gt;AFR[0]  = 0x00cccccc;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  GPIOG-&gt;AFR[1]  = 0x000000c0;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="comment">/* Configure PGx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  GPIOG-&gt;MODER   = 0x00080aaa;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;  <span class="comment">/* Configure PGx pins speed to 100 MHz */</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  GPIOG-&gt;OSPEEDR = 0x000c0fff;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="comment">/* Configure PGx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  GPIOG-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="comment">/* No pull-up, pull-down for PGx pins */</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  GPIOG-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">/*-- FMC Configuration ------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="comment">/* Enable the FMC/FSMC interface clock */</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  RCC-&gt;AHB3ENR         |= 0x00000001;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="preprocessor">#if defined(STM32F427_437xx) || defined(STM32F429_439xx) || defined(STM32F446xx)</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure and enable Bank1_SRAM2 */</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  FMC_Bank1-&gt;BTCR[2]  = 0x00001011;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  FMC_Bank1-&gt;BTCR[3]  = 0x00000201;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  FMC_Bank1E-&gt;BWTR[2] = 0x0fffffff;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F427_437xx || STM32F429_439xx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="preprocessor">#if defined(STM32F40_41xxx)</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure and enable Bank1_SRAM2 */</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  FSMC_Bank1-&gt;BTCR[2]  = 0x00001011;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  FSMC_Bank1-&gt;BTCR[3]  = 0x00000201;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  FSMC_Bank1E-&gt;BWTR[2] = 0x0fffffff;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* STM32F40_41xxx */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="comment">  Bank1_SRAM2 is configured as follow:</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="comment">  In case of FSMC configuration</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AddressSetupTime = 1;</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AddressHoldTime = 0;</span></div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_DataSetupTime = 2;</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_BusTurnAroundDuration = 0;</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_CLKDivision = 0;</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_DataLatency = 0;</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AccessMode = FMC_AccessMode_A;</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_Bank = FSMC_Bank1_NORSRAM2;</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_DataAddressMux = FSMC_DataAddressMux_Disable;</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_MemoryType = FSMC_MemoryType_SRAM;</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_MemoryDataWidth = FSMC_MemoryDataWidth_16b;</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_BurstAccessMode = FSMC_BurstAccessMode_Disable;</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_AsynchronousWait = FSMC_AsynchronousWait_Disable;</span></div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignalPolarity = FSMC_WaitSignalPolarity_Low;</span></div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WrapMode = FSMC_WrapMode_Disable;</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignalActive = FSMC_WaitSignalActive_BeforeWaitState;</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteOperation = FSMC_WriteOperation_Enable;</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignal = FSMC_WaitSignal_Disable;</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_ExtendedMode = FSMC_ExtendedMode_Disable;</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteBurst = FSMC_WriteBurst_Disable;</span></div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_ReadWriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">  In case of FMC configuration</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AddressSetupTime = 1;</span></div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AddressHoldTime = 0;</span></div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_DataSetupTime = 2;</span></div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_BusTurnAroundDuration = 0;</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_CLKDivision = 0;</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_DataLatency = 0;</span></div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AccessMode = FMC_AccessMode_A;</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_Bank = FMC_Bank1_NORSRAM2;</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_DataAddressMux = FMC_DataAddressMux_Disable;</span></div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_MemoryType = FMC_MemoryType_SRAM;</span></div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_MemoryDataWidth = FMC_MemoryDataWidth_16b;</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_BurstAccessMode = FMC_BurstAccessMode_Disable;</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_AsynchronousWait = FMC_AsynchronousWait_Disable;</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignalPolarity = FMC_WaitSignalPolarity_Low;</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WrapMode = FMC_WrapMode_Disable;</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignalActive = FMC_WaitSignalActive_BeforeWaitState;</span></div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteOperation = FMC_WriteOperation_Enable;</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignal = FMC_WaitSignal_Disable;</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ExtendedMode = FMC_ExtendedMode_Disable;</span></div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteBurst = FMC_WriteBurst_Disable;</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ContinousClock = FMC_CClock_SyncOnly;</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ReadWriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;}</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DATA_IN_ExtSRAM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="preprocessor">#ifdef DATA_IN_ExtSDRAM</span></div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="keywordtype">void</span> SystemInit_ExtMemCtl(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;{</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <span class="keyword">register</span> uint32_t tmpreg = 0, timeout = 0xFFFF;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="keyword">register</span> uint32_t index;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  <span class="comment">/* Enable GPIOC, GPIOD, GPIOE, GPIOF, GPIOG, GPIOH and GPIOI interface</span></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="comment">      clock */</span></div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  RCC-&gt;AHB1ENR |= 0x000001FC;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="comment">/* Connect PCx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  GPIOC-&gt;AFR[0]  = 0x0000000c;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  GPIOC-&gt;AFR[1]  = 0x00007700;</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="comment">/* Configure PCx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  GPIOC-&gt;MODER   = 0x00a00002;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;  <span class="comment">/* Configure PCx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  GPIOC-&gt;OSPEEDR = 0x00a00002;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  <span class="comment">/* Configure PCx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  GPIOC-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="comment">/* No pull-up, pull-down for PCx pins */</span></div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  GPIOC-&gt;PUPDR   = 0x00500000;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  <span class="comment">/* Connect PDx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  GPIOD-&gt;AFR[0]  = 0x000000CC;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  GPIOD-&gt;AFR[1]  = 0xCC000CCC;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="comment">/* Configure PDx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  GPIOD-&gt;MODER   = 0xA02A000A;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="comment">/* Configure PDx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  GPIOD-&gt;OSPEEDR = 0xA02A000A;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="comment">/* Configure PDx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  GPIOD-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  <span class="comment">/* No pull-up, pull-down for PDx pins */</span></div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  GPIOD-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="comment">/* Connect PEx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  GPIOE-&gt;AFR[0]  = 0xC00000CC;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  GPIOE-&gt;AFR[1]  = 0xCCCCCCCC;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="comment">/* Configure PEx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  GPIOE-&gt;MODER   = 0xAAAA800A;</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  <span class="comment">/* Configure PEx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  GPIOE-&gt;OSPEEDR = 0xAAAA800A;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="comment">/* Configure PEx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  GPIOE-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  <span class="comment">/* No pull-up, pull-down for PEx pins */</span></div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;  GPIOE-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="comment">/* Connect PFx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  GPIOF-&gt;AFR[0]  = 0xcccccccc;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;  GPIOF-&gt;AFR[1]  = 0xcccccccc;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  <span class="comment">/* Configure PFx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  GPIOF-&gt;MODER   = 0xAA800AAA;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  <span class="comment">/* Configure PFx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;  GPIOF-&gt;OSPEEDR = 0xAA800AAA;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  <span class="comment">/* Configure PFx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;  GPIOF-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  <span class="comment">/* No pull-up, pull-down for PFx pins */</span></div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  GPIOF-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;  <span class="comment">/* Connect PGx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;  GPIOG-&gt;AFR[0]  = 0xcccccccc;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  GPIOG-&gt;AFR[1]  = 0xcccccccc;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="comment">/* Configure PGx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  GPIOG-&gt;MODER   = 0xaaaaaaaa;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  <span class="comment">/* Configure PGx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  GPIOG-&gt;OSPEEDR = 0xaaaaaaaa;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  <span class="comment">/* Configure PGx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;  GPIOG-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  <span class="comment">/* No pull-up, pull-down for PGx pins */</span></div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  GPIOG-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;  <span class="comment">/* Connect PHx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  GPIOH-&gt;AFR[0]  = 0x00C0CC00;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  GPIOH-&gt;AFR[1]  = 0xCCCCCCCC;</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="comment">/* Configure PHx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  GPIOH-&gt;MODER   = 0xAAAA08A0;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  <span class="comment">/* Configure PHx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  GPIOH-&gt;OSPEEDR = 0xAAAA08A0;</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="comment">/* Configure PHx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  GPIOH-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="comment">/* No pull-up, pull-down for PHx pins */</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  GPIOH-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  <span class="comment">/* Connect PIx pins to FMC Alternate function */</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  GPIOI-&gt;AFR[0]  = 0xCCCCCCCC;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  GPIOI-&gt;AFR[1]  = 0x00000CC0;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;  <span class="comment">/* Configure PIx pins in Alternate function mode */</span></div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;  GPIOI-&gt;MODER   = 0x0028AAAA;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;  <span class="comment">/* Configure PIx pins speed to 50 MHz */</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  GPIOI-&gt;OSPEEDR = 0x0028AAAA;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  <span class="comment">/* Configure PIx pins Output type to push-pull */</span></div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;  GPIOI-&gt;OTYPER  = 0x00000000;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;  <span class="comment">/* No pull-up, pull-down for PIx pins */</span></div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  GPIOI-&gt;PUPDR   = 0x00000000;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="comment">/*-- FMC Configuration ------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  <span class="comment">/* Enable the FMC interface clock */</span></div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  RCC-&gt;AHB3ENR |= 0x00000001;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  <span class="comment">/* Configure and enable SDRAM bank1 */</span></div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  FMC_Bank5_6-&gt;SDCR[0] = 0x000039D0;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  FMC_Bank5_6-&gt;SDTR[0] = 0x01115351;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  <span class="comment">/* SDRAM initialization sequence */</span></div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="comment">/* Clock enable command */</span></div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000011;</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  {</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  }</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  <span class="comment">/* Delay */</span></div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  <span class="keywordflow">for</span> (index = 0; index&lt;1000; index++);</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;  <span class="comment">/* PALL command */</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000012;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;  timeout = 0xFFFF;</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  {</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  }</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="comment">/* Auto refresh command */</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000073;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;  timeout = 0xFFFF;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  {</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  }</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="comment">/* MRD register program */</span></div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00046014;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  timeout = 0xFFFF;</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  {</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  }</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  <span class="comment">/* Set refresh count */</span></div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDRTR;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  FMC_Bank5_6-&gt;SDRTR = (tmpreg | (0x0000027C&lt;&lt;1));</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;  <span class="comment">/* Disable write protection */</span></div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDCR[0];</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;  FMC_Bank5_6-&gt;SDCR[0] = (tmpreg &amp; 0xFFFFFDFF);</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="comment">  Bank1_SDRAM is configured as follow:</span></div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_LoadToActiveDelay = 2;</span></div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_ExitSelfRefreshDelay = 6;</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_SelfRefreshTime = 4;</span></div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RowCycleDelay = 6;</span></div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_WriteRecoveryTime = 2;</span></div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RPDelay = 2;</span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RCDDelay = 2;</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_Bank = SDRAM_BANK;</span></div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ColumnBitsNumber = FMC_ColumnBits_Number_8b;</span></div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_RowBitsNumber = FMC_RowBits_Number_11b;</span></div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDMemoryDataWidth = FMC_SDMemory_Width_16b;</span></div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_InternalBankNumber = FMC_InternalBank_Number_4;</span></div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_CASLatency = FMC_CAS_Latency_3;</span></div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_WriteProtection = FMC_Write_Protection_Disable;</span></div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDClockPeriod = FMC_SDClock_Period_2;</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ReadBurst = FMC_Read_Burst_disable;</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ReadPipeDelay = FMC_ReadPipe_Delay_1;</span></div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDRAMTimingStruct = &amp;FMC_SDRAMTimingInitStructure;</span></div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;}</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DATA_IN_ExtSDRAM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;<span class="comment">/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/</span></div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  <span class="comment">/* Wait till the main PLL is ready */</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  <span class="keywordflow">while</span>((RCC-&gt;CR &amp; RCC_CR_PLLRDY) == 0)</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  {</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  }</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <span class="comment">/* Configure Flash prefetch, Instruction cache, Data cache and wait state */</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  FLASH-&gt;ACR = FLASH_ACR_PRFTEN | FLASH_ACR_ICEN |FLASH_ACR_DCEN |FLASH_ACR_LATENCY_2WS;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  <span class="comment">/* Select the main PLL as system clock source */</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  RCC-&gt;CFGR &amp;= (uint32_t)((uint32_t)~(RCC_CFGR_SW));</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  RCC-&gt;CFGR |= RCC_CFGR_SW_PLL;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  <span class="comment">/* Wait till the main PLL is used as system clock source */</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  <span class="keywordflow">while</span> ((RCC-&gt;CFGR &amp; (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  {</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  }</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_HSE_BYPASS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F40_41xxx || STM32F427_437xx || STM32F429_439xx || STM32F401xx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="preprocessor">#if defined(STM32F446xx)</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if SYSCLK_FREQ == 180000000</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure 48MHz clock for USB */</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  <span class="comment">// Set 48MHz clock source</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  RCC_48MHzClockSourceConfig(RCC_48MHZCLKSource_PLLSAI);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <span class="comment">// Enable PLLSAI</span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  RCC_PLLSAICmd(DISABLE);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="preprocessor">  #define RCC_PLLSAI_GET_FLAG() ((RCC-&gt;CR &amp; (RCC_CR_PLLSAIRDY)) == (RCC_CR_PLLSAIRDY))</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="preprocessor"></span>  <span class="comment">// wait for PLLSAI to be disabled</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  <span class="keywordflow">while</span> (RCC_PLLSAI_GET_FLAG() != 0)</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  {}</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  RCC_PLLSAIConfig(PLLSAI_M, PLLSAI_N, PLLSAI_P, PLLSAI_Q);</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  RCC_PLLSAICmd(ENABLE);</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  <span class="comment">// wait for PLLSAI to be enabled</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  <span class="keywordflow">while</span> (RCC_PLLSAI_GET_FLAG() == 0)</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  {}</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="preprocessor"></span>  RCC_48MHzClockSourceConfig(RCC_48MHZCLKSource_PLL);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SYSCLK_FREQ == 180000000 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F446xx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="preprocessor">#ifdef DATA_IN_ExtSRAM</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="keywordtype">void</span> SystemInit_ExtMemCtl(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;{</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;<span class="comment">/*-- GPIOs Configuration -----------------------------------------------------*/</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="comment"> +-------------------+--------------------+------------------+--------------+</span></div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="comment"> +                       SRAM pins assignment                               +</span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="comment"> +-------------------+--------------------+------------------+--------------+</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="comment"> | PD0  &lt;-&gt; FMC_D2  | PE0  &lt;-&gt; FMC_NBL0 | PF0  &lt;-&gt; FMC_A0 | PG0 &lt;-&gt; FMC_A10 |</span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;<span class="comment"> | PD1  &lt;-&gt; FMC_D3  | PE1  &lt;-&gt; FMC_NBL1 | PF1  &lt;-&gt; FMC_A1 | PG1 &lt;-&gt; FMC_A11 |</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="comment"> | PD4  &lt;-&gt; FMC_NOE | PE3  &lt;-&gt; FMC_A19  | PF2  &lt;-&gt; FMC_A2 | PG2 &lt;-&gt; FMC_A12 |</span></div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;<span class="comment"> | PD5  &lt;-&gt; FMC_NWE | PE4  &lt;-&gt; FMC_A20  | PF3  &lt;-&gt; FMC_A3 | PG3 &lt;-&gt; FMC_A13 |</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment"> | PD8  &lt;-&gt; FMC_D13 | PE7  &lt;-&gt; FMC_D4   | PF4  &lt;-&gt; FMC_A4 | PG4 &lt;-&gt; FMC_A14 |</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment"> | PD9  &lt;-&gt; FMC_D14 | PE8  &lt;-&gt; FMC_D5   | PF5  &lt;-&gt; FMC_A5 | PG5 &lt;-&gt; FMC_A15 |</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment"> | PD10 &lt;-&gt; FMC_D15 | PE9  &lt;-&gt; FMC_D6   | PF12 &lt;-&gt; FMC_A6 | PG9 &lt;-&gt; FMC_NE2 |</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="comment"> | PD11 &lt;-&gt; FMC_A16 | PE10 &lt;-&gt; FMC_D7   | PF13 &lt;-&gt; FMC_A7 |-----------------+</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="comment"> | PD12 &lt;-&gt; FMC_A17 | PE11 &lt;-&gt; FMC_D8   | PF14 &lt;-&gt; FMC_A8 |</span></div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment"> | PD13 &lt;-&gt; FMC_A18 | PE12 &lt;-&gt; FMC_D9   | PF15 &lt;-&gt; FMC_A9 |</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment"> | PD14 &lt;-&gt; FMC_D0  | PE13 &lt;-&gt; FMC_D10  |-----------------+</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="comment"> | PD15 &lt;-&gt; FMC_D1  | PE14 &lt;-&gt; FMC_D11  |</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="comment"> |                  | PE15 &lt;-&gt; FMC_D12  |</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="comment"> +------------------+------------------+</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;   <span class="comment">/* Enable GPIOD, GPIOE, GPIOF and GPIOG interface clock */</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  RCC-&gt;AHB1ENR   |= 0x00000078;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="comment">/* Connect PDx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  GPIOD-&gt;AFR[0]  = 0x00cc00cc;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  GPIOD-&gt;AFR[1]  = 0xcccccccc;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;  <span class="comment">/* Configure PDx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;  GPIOD-&gt;MODER   = 0xaaaa0a0a;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  <span class="comment">/* Configure PDx pins speed to 100 MHz */</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;  GPIOD-&gt;OSPEEDR = 0xffff0f0f;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  <span class="comment">/* Configure PDx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;  GPIOD-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  <span class="comment">/* No pull-up, pull-down for PDx pins */</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  GPIOD-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  <span class="comment">/* Connect PEx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  GPIOE-&gt;AFR[0]  = 0xcccccccc;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  GPIOE-&gt;AFR[1]  = 0xcccccccc;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="comment">/* Configure PEx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  GPIOE-&gt;MODER   = 0xaaaaaaaa;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  <span class="comment">/* Configure PEx pins speed to 100 MHz */</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  GPIOE-&gt;OSPEEDR = 0xffffffff;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  <span class="comment">/* Configure PEx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  GPIOE-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <span class="comment">/* No pull-up, pull-down for PEx pins */</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  GPIOE-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="comment">/* Connect PFx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  GPIOF-&gt;AFR[0]  = 0x00cccccc;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  GPIOF-&gt;AFR[1]  = 0xcccc0000;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="comment">/* Configure PFx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  GPIOF-&gt;MODER   = 0xaa000aaa;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  <span class="comment">/* Configure PFx pins speed to 100 MHz */</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  GPIOF-&gt;OSPEEDR = 0xff000fff;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  <span class="comment">/* Configure PFx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  GPIOF-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;  <span class="comment">/* No pull-up, pull-down for PFx pins */</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;  GPIOF-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  <span class="comment">/* Connect PGx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  GPIOG-&gt;AFR[0]  = 0x00cccccc;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  GPIOG-&gt;AFR[1]  = 0x000000c0;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <span class="comment">/* Configure PGx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  GPIOG-&gt;MODER   = 0x00080aaa;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="comment">/* Configure PGx pins speed to 100 MHz */</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  GPIOG-&gt;OSPEEDR = 0x000c0fff;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <span class="comment">/* Configure PGx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  GPIOG-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="comment">/* No pull-up, pull-down for PGx pins */</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  GPIOG-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">/*-- FMC Configuration ------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="comment">/* Enable the FMC/FSMC interface clock */</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  RCC-&gt;AHB3ENR         |= 0x00000001;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="preprocessor">#if defined(STM32F427_437xx) || defined(STM32F429_439xx) || defined(STM32F446xx)</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure and enable Bank1_SRAM2 */</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  FMC_Bank1-&gt;BTCR[2]  = 0x00001011;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  FMC_Bank1-&gt;BTCR[3]  = 0x00000201;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  FMC_Bank1E-&gt;BWTR[2] = 0x0fffffff;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F427_437xx || STM32F429_439xx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="preprocessor">#if defined(STM32F40_41xxx)</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="preprocessor"></span>  <span class="comment">/* Configure and enable Bank1_SRAM2 */</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  FSMC_Bank1-&gt;BTCR[2]  = 0x00001011;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  FSMC_Bank1-&gt;BTCR[3]  = 0x00000201;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  FSMC_Bank1E-&gt;BWTR[2] = 0x0fffffff;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* STM32F40_41xxx */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="comment">  Bank1_SRAM2 is configured as follow:</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="comment">  In case of FSMC configuration</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AddressSetupTime = 1;</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AddressHoldTime = 0;</span></div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_DataSetupTime = 2;</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_BusTurnAroundDuration = 0;</span></div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_CLKDivision = 0;</span></div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_DataLatency = 0;</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="comment">  NORSRAMTimingStructure.FSMC_AccessMode = FMC_AccessMode_A;</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_Bank = FSMC_Bank1_NORSRAM2;</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_DataAddressMux = FSMC_DataAddressMux_Disable;</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_MemoryType = FSMC_MemoryType_SRAM;</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_MemoryDataWidth = FSMC_MemoryDataWidth_16b;</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_BurstAccessMode = FSMC_BurstAccessMode_Disable;</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_AsynchronousWait = FSMC_AsynchronousWait_Disable;</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignalPolarity = FSMC_WaitSignalPolarity_Low;</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WrapMode = FSMC_WrapMode_Disable;</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignalActive = FSMC_WaitSignalActive_BeforeWaitState;</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteOperation = FSMC_WriteOperation_Enable;</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WaitSignal = FSMC_WaitSignal_Disable;</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_ExtendedMode = FSMC_ExtendedMode_Disable;</span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteBurst = FSMC_WriteBurst_Disable;</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_ReadWriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="comment">  FSMC_NORSRAMInitStructure.FSMC_WriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="comment">  In case of FMC configuration</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AddressSetupTime = 1;</span></div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AddressHoldTime = 0;</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_DataSetupTime = 2;</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_BusTurnAroundDuration = 0;</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_CLKDivision = 0;</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_DataLatency = 0;</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">  NORSRAMTimingStructure.FMC_AccessMode = FMC_AccessMode_A;</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_Bank = FMC_Bank1_NORSRAM2;</span></div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_DataAddressMux = FMC_DataAddressMux_Disable;</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_MemoryType = FMC_MemoryType_SRAM;</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_MemoryDataWidth = FMC_MemoryDataWidth_16b;</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_BurstAccessMode = FMC_BurstAccessMode_Disable;</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_AsynchronousWait = FMC_AsynchronousWait_Disable;</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignalPolarity = FMC_WaitSignalPolarity_Low;</span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WrapMode = FMC_WrapMode_Disable;</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignalActive = FMC_WaitSignalActive_BeforeWaitState;</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteOperation = FMC_WriteOperation_Enable;</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WaitSignal = FMC_WaitSignal_Disable;</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ExtendedMode = FMC_ExtendedMode_Disable;</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteBurst = FMC_WriteBurst_Disable;</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ContinousClock = FMC_CClock_SyncOnly;</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_ReadWriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">  FMC_NORSRAMInitStructure.FMC_WriteTimingStruct = &amp;NORSRAMTimingStructure;</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;}</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DATA_IN_ExtSRAM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="preprocessor">#ifdef DATA_IN_ExtSDRAM</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="keywordtype">void</span> SystemInit_ExtMemCtl(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;{</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  <span class="keyword">register</span> uint32_t tmpreg = 0, timeout = 0xFFFF;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  <span class="keyword">register</span> uint32_t index;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <span class="comment">/* Enable GPIOC, GPIOD, GPIOE, GPIOF, GPIOG, GPIOH and GPIOI interface</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="comment">      clock */</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  RCC-&gt;AHB1ENR |= 0x000001FC;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="comment">/* Connect PCx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  GPIOC-&gt;AFR[0]  = 0x0000000c;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  GPIOC-&gt;AFR[1]  = 0x00007700;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <span class="comment">/* Configure PCx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  GPIOC-&gt;MODER   = 0x00a00002;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="comment">/* Configure PCx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  GPIOC-&gt;OSPEEDR = 0x00a00002;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="comment">/* Configure PCx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  GPIOC-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="comment">/* No pull-up, pull-down for PCx pins */</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  GPIOC-&gt;PUPDR   = 0x00500000;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  <span class="comment">/* Connect PDx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  GPIOD-&gt;AFR[0]  = 0x000000CC;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  GPIOD-&gt;AFR[1]  = 0xCC000CCC;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="comment">/* Configure PDx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  GPIOD-&gt;MODER   = 0xA02A000A;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <span class="comment">/* Configure PDx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  GPIOD-&gt;OSPEEDR = 0xA02A000A;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  <span class="comment">/* Configure PDx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  GPIOD-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="comment">/* No pull-up, pull-down for PDx pins */</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  GPIOD-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <span class="comment">/* Connect PEx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  GPIOE-&gt;AFR[0]  = 0xC00000CC;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  GPIOE-&gt;AFR[1]  = 0xCCCCCCCC;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  <span class="comment">/* Configure PEx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  GPIOE-&gt;MODER   = 0xAAAA800A;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  <span class="comment">/* Configure PEx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  GPIOE-&gt;OSPEEDR = 0xAAAA800A;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="comment">/* Configure PEx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  GPIOE-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="comment">/* No pull-up, pull-down for PEx pins */</span></div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  GPIOE-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="comment">/* Connect PFx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  GPIOF-&gt;AFR[0]  = 0xcccccccc;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  GPIOF-&gt;AFR[1]  = 0xcccccccc;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  <span class="comment">/* Configure PFx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;  GPIOF-&gt;MODER   = 0xAA800AAA;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="comment">/* Configure PFx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  GPIOF-&gt;OSPEEDR = 0xAA800AAA;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  <span class="comment">/* Configure PFx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;  GPIOF-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  <span class="comment">/* No pull-up, pull-down for PFx pins */</span></div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  GPIOF-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;  <span class="comment">/* Connect PGx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  GPIOG-&gt;AFR[0]  = 0xcccccccc;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;  GPIOG-&gt;AFR[1]  = 0xcccccccc;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  <span class="comment">/* Configure PGx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  GPIOG-&gt;MODER   = 0xaaaaaaaa;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;  <span class="comment">/* Configure PGx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;  GPIOG-&gt;OSPEEDR = 0xaaaaaaaa;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;  <span class="comment">/* Configure PGx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  GPIOG-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="comment">/* No pull-up, pull-down for PGx pins */</span></div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  GPIOG-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  <span class="comment">/* Connect PHx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  GPIOH-&gt;AFR[0]  = 0x00C0CC00;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;  GPIOH-&gt;AFR[1]  = 0xCCCCCCCC;</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  <span class="comment">/* Configure PHx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  GPIOH-&gt;MODER   = 0xAAAA08A0;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;  <span class="comment">/* Configure PHx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;  GPIOH-&gt;OSPEEDR = 0xAAAA08A0;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  <span class="comment">/* Configure PHx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  GPIOH-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="comment">/* No pull-up, pull-down for PHx pins */</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  GPIOH-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  <span class="comment">/* Connect PIx pins to FMC Alternate function */</span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  GPIOI-&gt;AFR[0]  = 0xCCCCCCCC;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  GPIOI-&gt;AFR[1]  = 0x00000CC0;</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="comment">/* Configure PIx pins in Alternate function mode */</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  GPIOI-&gt;MODER   = 0x0028AAAA;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  <span class="comment">/* Configure PIx pins speed to 50 MHz */</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  GPIOI-&gt;OSPEEDR = 0x0028AAAA;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  <span class="comment">/* Configure PIx pins Output type to push-pull */</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  GPIOI-&gt;OTYPER  = 0x00000000;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;  <span class="comment">/* No pull-up, pull-down for PIx pins */</span></div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;  GPIOI-&gt;PUPDR   = 0x00000000;</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="comment">/*-- FMC Configuration ------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  <span class="comment">/* Enable the FMC interface clock */</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;  RCC-&gt;AHB3ENR |= 0x00000001;</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  <span class="comment">/* Configure and enable SDRAM bank1 */</span></div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  FMC_Bank5_6-&gt;SDCR[0] = 0x000039D0;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  FMC_Bank5_6-&gt;SDTR[0] = 0x01115351;</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  <span class="comment">/* SDRAM initialization sequence */</span></div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <span class="comment">/* Clock enable command */</span></div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000011;</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;  {</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  }</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  <span class="comment">/* Delay */</span></div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  <span class="keywordflow">for</span> (index = 0; index&lt;1000; index++);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="comment">/* PALL command */</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000012;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  timeout = 0xFFFF;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  {</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;  }</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;  <span class="comment">/* Auto refresh command */</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00000073;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  timeout = 0xFFFF;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  {</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  }</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;  <span class="comment">/* MRD register program */</span></div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  FMC_Bank5_6-&gt;SDCMR = 0x00046014;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  timeout = 0xFFFF;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  <span class="keywordflow">while</span>((tmpreg != 0) &amp; (timeout-- &gt; 0))</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  {</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDSR &amp; 0x00000020;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  }</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="comment">/* Set refresh count */</span></div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDRTR;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  FMC_Bank5_6-&gt;SDRTR = (tmpreg | (0x0000027C&lt;&lt;1));</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="comment">/* Disable write protection */</span></div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  tmpreg = FMC_Bank5_6-&gt;SDCR[0];</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  FMC_Bank5_6-&gt;SDCR[0] = (tmpreg &amp; 0xFFFFFDFF);</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;<span class="comment">  Bank1_SDRAM is configured as follow:</span></div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_LoadToActiveDelay = 2;</span></div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_ExitSelfRefreshDelay = 6;</span></div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_SelfRefreshTime = 4;</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RowCycleDelay = 6;</span></div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_WriteRecoveryTime = 2;</span></div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RPDelay = 2;</span></div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="comment">  FMC_SDRAMTimingInitStructure.FMC_RCDDelay = 2;</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_Bank = SDRAM_BANK;</span></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ColumnBitsNumber = FMC_ColumnBits_Number_8b;</span></div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_RowBitsNumber = FMC_RowBits_Number_11b;</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDMemoryDataWidth = FMC_SDMemory_Width_16b;</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_InternalBankNumber = FMC_InternalBank_Number_4;</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_CASLatency = FMC_CAS_Latency_3;</span></div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_WriteProtection = FMC_Write_Protection_Disable;</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDClockPeriod = FMC_SDClock_Period_2;</span></div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ReadBurst = FMC_Read_Burst_disable;</span></div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_ReadPipeDelay = FMC_ReadPipe_Delay_1;</span></div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;<span class="comment">  FMC_SDRAMInitStructure.FMC_SDRAMTimingStruct = &amp;FMC_SDRAMTimingInitStructure;</span></div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;}</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DATA_IN_ExtSDRAM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="comment">/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/</span></div>
 <div class="ttc" id="brainre1_2board-info_2cmsis__system_8c_html_ga1ee14ac28e60198cc998586807b51e4c"><div class="ttname"><a href="brainre1_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c">SetSysClock</a></div><div class="ttdeci">static void SetSysClock(void)</div><div class="ttdoc">Configures the System clock source, PLL Multiplier and Divider factors, AHB/APBx prescalers and Flash...</div><div class="ttdef"><b>Definition:</b> <a href="brainre1_2board-info_2cmsis__system_8c_source.html#l00425">cmsis_system.c:425</a></div></div>
 <div class="ttc" id="group___s_t_m32_f4xx___system___private___functions_html_gae0c36a9591fe6e9c45ecb21a794f0f0f"><div class="ttname"><a href="group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">SystemCoreClockUpdate</a></div><div class="ttdeci">void SystemCoreClockUpdate(void)</div><div class="ttdoc">Update SystemCoreClock variable according to Clock Register Values. The SystemCoreClock variable cont...</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2cmsis__system_8c_source.html#l00291">cmsis_system.c:291</a></div></div>
 <div class="ttc" id="group___s_t_m32_f4xx___system___private___functions_html_ga93f514700ccf00d08dbdcff7f1224eb2"><div class="ttname"><a href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a></div><div class="ttdeci">void SystemInit(void)</div><div class="ttdoc">Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst...</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2cmsis__system_8c_source.html#l00214">cmsis_system.c:214</a></div></div>

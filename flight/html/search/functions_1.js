@@ -43,7 +43,7 @@ var searchData=
   ['applyff',['applyFF',['../group___camera_stab.html#ga1f237b22b58b962ec6dd33ab78623717',1,'camerastab.c']]],
   ['armedflag_5fupdate',['ARMEDFLAG_update',['../group___char_o_s_d.html#gacee12cae48509c0b5bcd6af2af75b529',1,'panel.c']]],
   ['arming_5fposition',['arming_position',['../group___control.html#ga7296e1a05eac30a060752034ea550e64',1,'transmitter_control.c']]],
-  ['asm',['asm',['../group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216',1,'asm(&quot;sp&quot;):&#160;startup.c'],['../group___updater.html#ga739169c4e498e1e5ea35606a2065bd61',1,'asm(&quot;.section .rodata\n&quot;&quot;.global _bu_payload_start\n&quot;&quot;_bu_payload_start:\n&quot;&quot;.incbin \&quot;&quot;__stringify(BU_PAYLOAD_FILE)&quot;\&quot;\n&quot;&quot;.global _bu_payload_end\n&quot;&quot;_bu_payload_end:\n&quot;&quot;.global _bu_payload_size\n&quot;&quot;_bu_payload_size:\n&quot;&quot;.word _bu_payload_end - _bu_payload_start\n&quot;&quot;.previous\n&quot;):&#160;bu_payload.c']]],
+  ['asm',['asm',['../group___p_i_o_s.html#ga53b028c9298f9d903cfdbb1a6c12a216',1,'startup.c']]],
   ['at_5fnew_5factuators',['at_new_actuators',['../group___autotuning_module.html#gac74087c60fbd25709e25f5d0af9a63c8',1,'autotune.c']]],
   ['attitudeinitialize',['AttitudeInitialize',['../group___attitude_module.html#gab3e9047ab7c9b02bd61091a4a2e8f572',1,'attitude.c']]],
   ['attitudestart',['AttitudeStart',['../group___attitude_module.html#gaaa0dba388f0dec215cb7cbe55ad0356b',1,'attitude.c']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">763596a</span>
+   &#160;<span id="projectnumber">2233090</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -911,7 +911,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__i2c_8c_source.htm
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <span class="comment">/* Make sure the done/ready semaphore is consumed before we start */</span></div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(i2c_adapter-&gt;<a class="code" href="structpios__i2c__adapter.html#a285c7d92b47f1f1d917e0591e3a6706f">sem_ready</a>, 0);</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordtype">bool</span> dummy = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        i2c_adapter_inject_event(i2c_adapter, <a class="code" href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#a2a8f77797f5dbd873514e92d3d043649aef5af4537470d505c74d022cebc6366f">I2C_EVENT_START</a>, &amp;dummy);</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="comment">/* Wait for the transfer to complete */</span></div>
@@ -1142,7 +1142,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__i2c_8c_source.htm
 <div class="ttc" id="structpios__i2c__txn_html_a22a5ef8fef7182f36899d8410be0dc27"><div class="ttname"><a href="structpios__i2c__txn.html#a22a5ef8fef7182f36899d8410be0dc27">pios_i2c_txn::addr</a></div><div class="ttdeci">uint16_t addr</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00042">pios_i2c.h:42</a></div></div>
 <div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00130">pios_i2c_priv.h:130</a></div></div>
 <div class="ttc" id="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22ba54d7de62d45eedae87c953a3d1788270"><div class="ttname"><a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba54d7de62d45eedae87c953a3d1788270">I2C_STATE_W_MORE_TXN_PRE_MIDDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00077">pios_i2c_priv.h:77</a></div></div>
-<div class="ttc" id="group___updater_html_ga6a8565a07d7bb760284de4fa78703d79"><div class="ttname"><a href="group___updater.html#ga6a8565a07d7bb760284de4fa78703d79">dummy</a></div><div class="ttdeci">static const char dummy[]</div><div class="ttdef"><b>Definition:</b> <a href="bu__payload_8c_source.html#l00030">bu_payload.c:30</a></div></div>
 <div class="ttc" id="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_html_ac73b69ffe53544057fa2e4751fd9c22ba52e2270d20004c901234dc2a18a7c2a1"><div class="ttname"><a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba52e2270d20004c901234dc2a18a7c2a1">I2C_STATE_W_LAST_TXN_POST_LAST</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00084">pios_i2c_priv.h:84</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i2_c_html_ga7ee09f2116c09720941e51ee69c3d1ed"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga7ee09f2116c09720941e51ee69c3d1ed">PIOS_I2C_ER_IRQ_Handler</a></div><div class="ttdeci">void PIOS_I2C_ER_IRQ_Handler(pios_i2c_t i2c_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>
