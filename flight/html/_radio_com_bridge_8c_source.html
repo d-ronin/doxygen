@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">2233090</span>
+   &#160;<span id="projectnumber">ccca807</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -558,230 +558,232 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_USB */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordflow">if</span> (outputPort) {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                ret = <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(outputPort, buf, length);</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                ret = -1;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        }</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;}</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00529"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">  529</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">RadioSendHandler</a>(<span class="keywordtype">void</span> *ctx, uint8_t * buf, int32_t <a class="code" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;{</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        (void) NULL;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        uint32_t outputPort = <a class="code" href="group___pip_x.html#ga066ea00739405cf7c4688aea4efbfab6">PIOS_COM_RFM22B</a>;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="comment">// Don&#39;t send any data unless the radio port is available.</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordflow">if</span> (outputPort &amp;&amp; <a class="code" href="group___p_i_o_s___c_o_m.html#ga5af0bd94df12381d390fae8925f99a03">PIOS_COM_Available</a>(outputPort)) {</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a>(outputPort, buf, length);</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        }</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;}</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">  543</a></span>&#160;<span class="preprocessor">#define MetaObjectId(x) (x+1)</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00551"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">  551</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">ProcessTelemetryStream</a>(<a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> inConnectionHandle,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                                   <a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> outConnectionHandle,</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                                   uint8_t rxbyte)</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;{</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="comment">// Keep reading until we receive a completed packet.</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <a class="code" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a> <a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a> =</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            <a class="code" href="group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e">UAVTalkProcessInputStreamQuiet</a>(inConnectionHandle, rxbyte);</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">if</span> (state == <a class="code" href="group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a">UAVTALK_STATE_COMPLETE</a>) {</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                <span class="comment">// We only want to unpack certain telemetry objects</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                uint32_t objId = <a class="code" href="group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2">UAVTalkGetPacketObjId</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                <span class="keywordflow">switch</span> (objId) {</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_OBJID:</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                <span class="keywordflow">case</span> RFM22BRECEIVER_OBJID:</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID):</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BRECEIVER_OBJID):</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BSTATUS_OBJID):</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                        <span class="comment">// These objects are received here and only here</span></div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OBJID:</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(OBJECTPERSISTENCE_OBJID):</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                        <span class="comment">// Handle saving settings on modem</span></div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                        ObjectPersistenceData objectPersistence;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                        ObjectPersistenceGet(&amp;objectPersistence);</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                        <span class="keywordflow">if</span> (objectPersistence.ObjectID != HWTAULINK_OBJID &amp;&amp;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                                objectPersistence.ObjectID != <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID)) {</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                                <span class="comment">// relay packet to remote modem except for requests to save</span></div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                                <span class="comment">// the settings which happens locally</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                        }</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                ret = <a class="code" href="group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809">PIOS_COM_SendBufferStallTimeout</a>(outputPort, buf, length,</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                                <a class="code" href="group___radio_com_bridge_module.html#gac18e85b738a2394b23bf27717911cc7a">RETRY_TIMEOUT_MS</a>);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                ret = -1;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        }</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">  530</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">RadioSendHandler</a>(<span class="keywordtype">void</span> *ctx, uint8_t * buf, int32_t <a class="code" href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a>)</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;{</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        (void) NULL;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        uint32_t outputPort = <a class="code" href="group___pip_x.html#ga066ea00739405cf7c4688aea4efbfab6">PIOS_COM_RFM22B</a>;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="comment">// Don&#39;t send any data unless the radio port is available.</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (outputPort &amp;&amp; <a class="code" href="group___p_i_o_s___c_o_m.html#ga5af0bd94df12381d390fae8925f99a03">PIOS_COM_Available</a>(outputPort)) {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809">PIOS_COM_SendBufferStallTimeout</a>(outputPort, buf, length,</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                                <a class="code" href="group___radio_com_bridge_module.html#gac18e85b738a2394b23bf27717911cc7a">RETRY_TIMEOUT_MS</a>);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        }</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">  545</a></span>&#160;<span class="preprocessor">#define MetaObjectId(x) (x+1)</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00553"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">  553</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">ProcessTelemetryStream</a>(<a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> inConnectionHandle,</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                                   <a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> outConnectionHandle,</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                                   uint8_t rxbyte)</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;{</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="comment">// Keep reading until we receive a completed packet.</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <a class="code" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a> <a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a> =</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            <a class="code" href="group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e">UAVTalkProcessInputStreamQuiet</a>(inConnectionHandle, rxbyte);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keywordflow">if</span> (state == <a class="code" href="group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a">UAVTALK_STATE_COMPLETE</a>) {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                <span class="comment">// We only want to unpack certain telemetry objects</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                uint32_t objId = <a class="code" href="group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2">UAVTalkGetPacketObjId</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                <span class="keywordflow">switch</span> (objId) {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_OBJID:</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                <span class="keywordflow">case</span> RFM22BRECEIVER_OBJID:</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID):</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BRECEIVER_OBJID):</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BSTATUS_OBJID):</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                        <span class="comment">// These objects are received here and only here</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OBJID:</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(OBJECTPERSISTENCE_OBJID):</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                        <span class="comment">// Handle saving settings on modem</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                        ObjectPersistenceData objectPersistence;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                        ObjectPersistenceGet(&amp;objectPersistence);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                        <span class="keywordflow">if</span> (objectPersistence.ObjectID != HWTAULINK_OBJID &amp;&amp;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                                objectPersistence.ObjectID != <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID)) {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                                <span class="comment">// relay packet to remote modem except for requests to save</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                                <span class="comment">// the settings which happens locally</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                        }</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                <span class="keywordflow">case</span> RFM22BSTATUS_OBJID:</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                        uint32_t inst_id = <a class="code" href="group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685">UAVTalkGetPacketInstId</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                        <span class="keywordflow">if</span> (inst_id == 0) {</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                                <span class="comment">// dealing with local modem</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                                <span class="comment">// for remote modem</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                        }</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                }</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                        <span class="comment">// all other packets are transparently relayed to the remote modem</span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                }</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        }</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;}</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">  616</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">ProcessRadioStream</a>(<a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> inConnectionHandle,</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                               <a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> outConnectionHandle,</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                               uint8_t rxbyte)</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;{</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="comment">// Keep reading until we receive a completed packet.</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <a class="code" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a> <a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a> =</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <a class="code" href="group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e">UAVTalkProcessInputStreamQuiet</a>(inConnectionHandle, rxbyte);</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="keywordflow">if</span> (state == <a class="code" href="group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a">UAVTALK_STATE_COMPLETE</a>) {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                <span class="comment">// We only want to unpack certain objects from the remote modem</span></div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                <span class="comment">// Similarly we only want to relay certain objects to the telemetry port</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                uint32_t objId = <a class="code" href="group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2">UAVTalkGetPacketObjId</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                <span class="keywordflow">switch</span> (objId) {</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_OBJID:</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BSTATUS_OBJID):</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID):</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                        <span class="comment">// Ignore object...</span></div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                        <span class="comment">// These objects are shadowed by the modem and are not transmitted to the telemetry port</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                        <span class="comment">// - RFM22BSTATUS_OBJID : ground station will receive the OPLM link status instead</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                        <span class="comment">// - HWTAULINK_OBJID : ground station will read and write the OPLM settings instead</span></div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                <span class="keywordflow">case</span> RFM22BRECEIVER_OBJID:</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BRECEIVER_OBJID):</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                        <span class="comment">// Receive object locally</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                        <span class="comment">// These objects are received by the modem and are not transmitted to the telemetry port</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                        <span class="comment">// - RFM22BRECEIVER_OBJID : sent periodically from flight controller, not needed to echo</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                        <span class="comment">// some objects will send back a response to the remote modem</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                <span class="keywordflow">case</span> FLIGHTBATTERYSTATE_OBJID:</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                <span class="keywordflow">case</span> FLIGHTSTATUS_OBJID:</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                <span class="keywordflow">case</span> POSITIONACTUAL_OBJID:</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                <span class="keywordflow">case</span> VELOCITYACTUAL_OBJID:</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                <span class="keywordflow">case</span> BAROALTITUDE_OBJID:</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                        <span class="comment">// process the battery voltage locally for relaying to taranis</span></div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                <span class="keywordflow">case</span> RFM22BSTATUS_OBJID:</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                {</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                        uint32_t inst_id = <a class="code" href="group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685">UAVTalkGetPacketInstId</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                        <span class="keywordflow">if</span> (inst_id == 0) {</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                                <span class="comment">// instance 0 is from modem. do not pass this version</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                                <span class="comment">// process the remote link state locally for relaying to taranis</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                                <span class="comment">// for remote modem</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                        }</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                }</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                        <span class="comment">// all other packets are relayed to the telemetry port</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle,</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                                           outConnectionHandle);</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                }</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        }</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;}</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
-<div class="line"><a name="l00684"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">  684</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">objectPersistenceUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * objEv, <span class="keywordtype">void</span> *ctx,</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;{</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        (void) objEv; (void) ctx; (void) obj; (void) len;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="comment">// Get the ObjectPersistence object.</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        ObjectPersistenceData obj_per;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        ObjectPersistenceGet(&amp;obj_per);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                <span class="keywordflow">case</span> RFM22BSTATUS_OBJID:</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                {</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                        uint32_t inst_id = <a class="code" href="group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685">UAVTalkGetPacketInstId</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                        <span class="keywordflow">if</span> (inst_id == 0) {</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                                <span class="comment">// dealing with local modem</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                                <span class="comment">// for remote modem</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                        }</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                }</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                        <span class="comment">// all other packets are transparently relayed to the remote modem</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        }</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;}</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">  618</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">ProcessRadioStream</a>(<a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> inConnectionHandle,</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                               <a class="code" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a> outConnectionHandle,</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                               uint8_t rxbyte)</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;{</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        <span class="comment">// Keep reading until we receive a completed packet.</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <a class="code" href="group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c">UAVTalkRxState</a> <a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a> =</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <a class="code" href="group___u_a_v_talk.html#ga174ffb688889f75507fc022eaf33d52e">UAVTalkProcessInputStreamQuiet</a>(inConnectionHandle, rxbyte);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="keywordflow">if</span> (state == <a class="code" href="group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a">UAVTALK_STATE_COMPLETE</a>) {</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                <span class="comment">// We only want to unpack certain objects from the remote modem</span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                <span class="comment">// Similarly we only want to relay certain objects to the telemetry port</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                uint32_t objId = <a class="code" href="group___u_a_v_talk.html#ga89971c05ca2331f124e85f4f287c37e2">UAVTalkGetPacketObjId</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keywordflow">switch</span> (objId) {</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_OBJID:</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BSTATUS_OBJID):</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(HWTAULINK_OBJID):</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                        <span class="comment">// Ignore object...</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                        <span class="comment">// These objects are shadowed by the modem and are not transmitted to the telemetry port</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                        <span class="comment">// - RFM22BSTATUS_OBJID : ground station will receive the OPLM link status instead</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                        <span class="comment">// - HWTAULINK_OBJID : ground station will read and write the OPLM settings instead</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                <span class="keywordflow">case</span> RFM22BRECEIVER_OBJID:</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a>(RFM22BRECEIVER_OBJID):</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                        <span class="comment">// Receive object locally</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                        <span class="comment">// These objects are received by the modem and are not transmitted to the telemetry port</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                        <span class="comment">// - RFM22BRECEIVER_OBJID : sent periodically from flight controller, not needed to echo</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                        <span class="comment">// some objects will send back a response to the remote modem</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                <span class="keywordflow">case</span> FLIGHTBATTERYSTATE_OBJID:</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                <span class="keywordflow">case</span> FLIGHTSTATUS_OBJID:</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                <span class="keywordflow">case</span> POSITIONACTUAL_OBJID:</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                <span class="keywordflow">case</span> VELOCITYACTUAL_OBJID:</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                <span class="keywordflow">case</span> BAROALTITUDE_OBJID:</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                        <span class="comment">// process the battery voltage locally for relaying to taranis</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                <span class="keywordflow">case</span> RFM22BSTATUS_OBJID:</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                {</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                        uint32_t inst_id = <a class="code" href="group___u_a_v_talk.html#gab86910d482482ca00111ce24dfbc6685">UAVTalkGetPacketInstId</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                        <span class="keywordflow">if</span> (inst_id == 0) {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                                <span class="comment">// instance 0 is from modem. do not pass this version</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                                <span class="comment">// process the remote link state locally for relaying to taranis</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a>(inConnectionHandle);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                                <span class="comment">// for remote modem</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                                <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle, outConnectionHandle);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                        }</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                }</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                        <span class="comment">// all other packets are relayed to the telemetry port</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                        <a class="code" href="group___u_a_v_talk.html#ga4b6fda53a32a7c37c5c695ebfa7e864e">UAVTalkRelayPacket</a>(inConnectionHandle,</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                                           outConnectionHandle);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                }</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        }</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00686"></a><span class="lineno"><a class="line" href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">  686</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">objectPersistenceUpdatedCb</a>(<a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> * objEv, <span class="keywordtype">void</span> *ctx,</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                <span class="keywordtype">void</span> *obj, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;{</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        (void) objEv; (void) ctx; (void) obj; (void) len;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="comment">// Get the ObjectPersistence object.</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        ObjectPersistenceData obj_per;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="comment">// Is this concerning our setting object?</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordflow">if</span> (obj_per.ObjectID == HWTAULINK_OBJID) {</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                <span class="comment">// Is this a save, load, or delete?</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                <span class="keywordtype">bool</span> success = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                <span class="keywordflow">switch</span> (obj_per.Operation) {</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_LOAD:</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                        {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="preprocessor"></span>                                <span class="comment">// Load the settings.</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                                <span class="keywordtype">void</span> *obj =</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                                        success = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                                        <span class="comment">// Load selected instance</span></div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                                        success =</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                                            (<a class="code" href="group___u_a_v_object_handling.html#gaf028fed8e3025656c7436ce6a7340e44">UAVObjLoad</a></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;                                             (obj,</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                                              obj_per.InstanceID) == 0);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                                }</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                        }</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_SAVE:</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                        {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="preprocessor"></span>                                <span class="keywordtype">void</span> *obj =</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                                        success = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                                        <span class="comment">// Save selected instance</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                                        success =</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                                            <a class="code" href="group___u_a_v_object_handling.html#gab06b41f74db97895f2de3ec8772ddcd9">UAVObjSave</a>(obj,</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                                                       obj_per.</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                                                       InstanceID) == 0;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                                }</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                        }</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_DELETE:</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                        {</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="preprocessor">#if 0 &amp;&amp; defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="preprocessor"></span>                                <span class="keywordtype">void</span> *obj =</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                                        success = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                                        <span class="comment">// Save selected instance</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                                        success =</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                                            UAVObjDelete(obj,</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                                                         obj_per.</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                                                         InstanceID) == 0;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                                }</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                        }</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                }</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                <span class="keywordflow">if</span> (success == <span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                        obj_per.Operation =</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                            OBJECTPERSISTENCE_OPERATION_COMPLETED;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                        ObjectPersistenceSet(&amp;obj_per);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                }</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        }</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;}</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        ObjectPersistenceGet(&amp;obj_per);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="comment">// Is this concerning our setting object?</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <span class="keywordflow">if</span> (obj_per.ObjectID == HWTAULINK_OBJID) {</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                <span class="comment">// Is this a save, load, or delete?</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                <span class="keywordtype">bool</span> success = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                <span class="keywordflow">switch</span> (obj_per.Operation) {</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_LOAD:</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                        {</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="preprocessor"></span>                                <span class="comment">// Load the settings.</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                                <span class="keywordtype">void</span> *obj =</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                                        success = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                                        <span class="comment">// Load selected instance</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;                                        success =</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                                            (<a class="code" href="group___u_a_v_object_handling.html#gaf028fed8e3025656c7436ce6a7340e44">UAVObjLoad</a></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                                             (obj,</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                                              obj_per.InstanceID) == 0);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                                }</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                        }</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_SAVE:</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                        {</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="preprocessor"></span>                                <span class="keywordtype">void</span> *obj =</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                                        success = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                                        <span class="comment">// Save selected instance</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                                        success =</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                                            <a class="code" href="group___u_a_v_object_handling.html#gab06b41f74db97895f2de3ec8772ddcd9">UAVObjSave</a>(obj,</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                                                       obj_per.</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                                                       InstanceID) == 0;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                                }</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                        }</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                <span class="keywordflow">case</span> OBJECTPERSISTENCE_OPERATION_DELETE:</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                        {</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="preprocessor">#if 0 &amp;&amp; defined(PIOS_INCLUDE_LOGFS_SETTINGS)</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="preprocessor"></span>                                <span class="keywordtype">void</span> *obj =</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                                    <a class="code" href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a>(obj_per.ObjectID);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                                <span class="keywordflow">if</span> (obj == 0) {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                                        success = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                                        <span class="comment">// Save selected instance</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                                        success =</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                                            UAVObjDelete(obj,</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                                                         obj_per.</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                                                         InstanceID) == 0;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                                }</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                        }</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                }</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                <span class="keywordflow">if</span> (success == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                        obj_per.Operation =</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                            OBJECTPERSISTENCE_OPERATION_COMPLETED;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                        ObjectPersistenceSet(&amp;obj_per);</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                }</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        }</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;}</div>
 <div class="ttc" id="msp__messages_8h_html_a12633132d07532aac2bd05fa1d5c8a72"><div class="ttname"><a href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a></div><div class="ttdeci">uint16_t speed</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00101">msp_messages.h:101</a></div></div>
-<div class="ttc" id="group___radio_com_bridge_module_html_gad43a7e1ba17479c92c9247622df20c29"><div class="ttname"><a href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">RadioSendHandler</a></div><div class="ttdeci">static int32_t RadioSendHandler(void *ctx, uint8_t *buf, int32_t length)</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00529">RadioComBridge.c:529</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_gad43a7e1ba17479c92c9247622df20c29"><div class="ttname"><a href="group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29">RadioSendHandler</a></div><div class="ttdeci">static int32_t RadioSendHandler(void *ctx, uint8_t *buf, int32_t length)</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00530">RadioComBridge.c:530</a></div></div>
 <div class="ttc" id="group___u_a_v_object_handling_html_ga17a9665c830f577232ad694ab4baaea6"><div class="ttname"><a href="group___u_a_v_object_handling.html#ga17a9665c830f577232ad694ab4baaea6">UAVObjGetByID</a></div><div class="ttdeci">UAVObjHandle UAVObjGetByID(uint32_t id)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8c_source.html#l00408">uavobjectmanager.c:408</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga4643f009ab86f8fea8f4bcd8f9229822"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga4643f009ab86f8fea8f4bcd8f9229822">RadioComBridgeData::telemetryRxTaskHandle</a></div><div class="ttdeci">struct pios_thread * telemetryRxTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00083">RadioComBridge.c:83</a></div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>
@@ -796,6 +798,7 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="ttc" id="group___radio_com_bridge_module_html_gaed609dafd971885f4714e1658bebdfa9"><div class="ttname"><a href="group___radio_com_bridge_module.html#gaed609dafd971885f4714e1658bebdfa9">RadioComBridgeData::radioUAVTalkCon</a></div><div class="ttdeci">UAVTalkConnection radioUAVTalkCon</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00090">RadioComBridge.c:90</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_html_gaeccb32b1562a98d5586bb3d4d25715ee"><div class="ttname"><a href="group___u_a_v_talk.html#gaeccb32b1562a98d5586bb3d4d25715ee">UAVTalkGetStats</a></div><div class="ttdeci">void UAVTalkGetStats(UAVTalkConnection connection, UAVTalkStats *stats)</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8c_source.html#l00092">uavtalk.c:92</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_gadc6b3a8165145940130d13b02d373c6e"><div class="ttname"><a href="group___radio_com_bridge_module.html#gadc6b3a8165145940130d13b02d373c6e">updateRadioComBridgeStats</a></div><div class="ttdeci">static void updateRadioComBridgeStats()</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00267">RadioComBridge.c:267</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_gac18e85b738a2394b23bf27717911cc7a"><div class="ttname"><a href="group___radio_com_bridge_module.html#gac18e85b738a2394b23bf27717911cc7a">RETRY_TIMEOUT_MS</a></div><div class="ttdeci">#define RETRY_TIMEOUT_MS</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00072">RadioComBridge.c:72</a></div></div>
 <div class="ttc" id="pios__rfm22b_8h_html"><div class="ttname"><a href="pios__rfm22b_8h.html">pios_rfm22b.h</a></div><div class="ttdoc">RFM22B functions header. </div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga66502e89490dc27c35986c30c8c77bdd"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga66502e89490dc27c35986c30c8c77bdd">PIOS_WDG_PPMINPUT</a></div><div class="ttdeci">#define PIOS_WDG_PPMINPUT</div><div class="ttdef"><b>Definition:</b> <a href="pios__wdg_8h_source.html#l00040">pios_wdg.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga181128f13ffdec27ea07e13fc4a4e1ab"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga181128f13ffdec27ea07e13fc4a4e1ab">PIOS_WDG_RegisterFlag</a></div><div class="ttdeci">bool PIOS_WDG_RegisterFlag(uint16_t flag_requested)</div><div class="ttdoc">Register a module against the watchdog. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00082">pios_wdg.c:82</a></div></div>
@@ -835,7 +838,7 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="ttc" id="group___radio_com_bridge_module_html_ga3c92a13c091d2fb76a1c71c79cfd9c95"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga3c92a13c091d2fb76a1c71c79cfd9c95">RadioComBridgeData::radioTxTaskHandle</a></div><div class="ttdeci">struct pios_thread * radioTxTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00084">RadioComBridge.c:84</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga2aba27698bc3988dddaaaf3b77c4281d"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga2aba27698bc3988dddaaaf3b77c4281d">telemetryTxTask</a></div><div class="ttdeci">static void telemetryTxTask(void *parameters)</div></div>
 <div class="ttc" id="eventdispatcher_8h_html"><div class="ttname"><a href="eventdispatcher_8h.html">eventdispatcher.h</a></div><div class="ttdoc">Event dispatcher, distributes object events as callbacks. Alternative to using tasks and queues...</div></div>
-<div class="ttc" id="group___radio_com_bridge_module_html_ga7a09b8c51a6b38f7fcd498d4b6ec9a88"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a></div><div class="ttdeci">#define MetaObjectId(x)</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00543">RadioComBridge.c:543</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_ga7a09b8c51a6b38f7fcd498d4b6ec9a88"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga7a09b8c51a6b38f7fcd498d4b6ec9a88">MetaObjectId</a></div><div class="ttdeci">#define MetaObjectId(x)</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00545">RadioComBridge.c:545</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="struct_radio_com_bridge_data_html"><div class="ttname"><a href="struct_radio_com_bridge_data.html">RadioComBridgeData</a></div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00080">RadioComBridge.c:80</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html_a34a55b89fda6526f21cfdcab529d0f99a891a979761ba03c0e1acbc14e19913d3"><div class="ttname"><a href="uavobjectmanager_8h.html#a34a55b89fda6526f21cfdcab529d0f99a891a979761ba03c0e1acbc14e19913d3">EV_UPDATED_MANUAL</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00096">uavobjectmanager.h:96</a></div></div>
@@ -844,7 +847,6 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="ttc" id="struct_u_a_v_talk_stats_html"><div class="ttname"><a href="struct_u_a_v_talk_stats.html">UAVTalkStats</a></div><div class="ttdoc">Tracking statistics for a UAVTalk connection. </div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8h_source.html#l00040">uavtalk.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2c639e61f21eac6cb54580eb5e1b85de"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2c639e61f21eac6cb54580eb5e1b85de">PIOS_Thread_Sleep</a></div><div class="ttdeci">void PIOS_Thread_Sleep(uint32_t time_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00118">pios_thread.c:118</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_ga06cc4fd9ade92cd7af7d80d1b942eb54"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a></div><div class="ttdeci">void PIOS_ANNUNC_Toggle(uint32_t annunc_id)</div></div>
-<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga707b575f67fe940b9742e1922e684c68"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68">PIOS_COM_SendBuffer</a></div><div class="ttdeci">PIOS_COM_SendBuffer(shub_global-&gt;frsky_port, shub_global-&gt;serial_buf, msg_length)</div></div>
 <div class="ttc" id="uavobjectmanager_8h_html_a34a55b89fda6526f21cfdcab529d0f99ae8feac7890d0b7768f94787ec9393abf"><div class="ttname"><a href="uavobjectmanager_8h.html#a34a55b89fda6526f21cfdcab529d0f99ae8feac7890d0b7768f94787ec9393abf">EV_UPDATED_PERIODIC</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00097">uavobjectmanager.h:97</a></div></div>
 <div class="ttc" id="group___u_a_v_object_handling_html_gaae667549a56c88218bec0137aa840535"><div class="ttname"><a href="group___u_a_v_object_handling.html#gaae667549a56c88218bec0137aa840535">UAVObjConnectQueue</a></div><div class="ttdeci">int32_t UAVObjConnectQueue(UAVObjHandle obj_handle, struct pios_queue *queue, uint8_t eventMask)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8c_source.html#l01522">uavobjectmanager.c:1522</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga9da5e87898e909e36976b43920385fb7"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga9da5e87898e909e36976b43920385fb7">telemetryRxTask</a></div><div class="ttdeci">static void telemetryRxTask(void *parameters)</div></div>
@@ -858,15 +860,16 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="ttc" id="group___radio_com_bridge_module_html_ga87a6834d60ae889d7c6cc4db49f26ad9"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga87a6834d60ae889d7c6cc4db49f26ad9">RadioComBridgeInitialize</a></div><div class="ttdeci">static int32_t RadioComBridgeInitialize(void)</div><div class="ttdoc">Initialise the module. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00205">RadioComBridge.c:205</a></div></div>
 <div class="ttc" id="structpios__queue_html"><div class="ttname"><a href="structpios__queue.html">pios_queue</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00034">pios_queue.c:34</a></div></div>
 <div class="ttc" id="bl__messages_8h_html_ac0544a0a50047efef4eb9dee1db56d01"><div class="ttname"><a href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a></div><div class="ttdeci">uint8_t unused[4]</div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00070">bl_messages.h:70</a></div></div>
-<div class="ttc" id="group___radio_com_bridge_module_html_gacf1368837676db2a20f793e414561dac"><div class="ttname"><a href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">ProcessTelemetryStream</a></div><div class="ttdeci">static void ProcessTelemetryStream(UAVTalkConnection inConnectionHandle, UAVTalkConnection outConnectionHandle, uint8_t rxbyte)</div><div class="ttdoc">Process a byte of data received on the telemetry stream. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00551">RadioComBridge.c:551</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_gacf1368837676db2a20f793e414561dac"><div class="ttname"><a href="group___radio_com_bridge_module.html#gacf1368837676db2a20f793e414561dac">ProcessTelemetryStream</a></div><div class="ttdeci">static void ProcessTelemetryStream(UAVTalkConnection inConnectionHandle, UAVTalkConnection outConnectionHandle, uint8_t rxbyte)</div><div class="ttdoc">Process a byte of data received on the telemetry stream. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00553">RadioComBridge.c:553</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga6b7aaa5ae15499fdeb823730418ef967"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga6b7aaa5ae15499fdeb823730418ef967">RadioComBridgeData::radioEventQueue</a></div><div class="ttdeci">struct pios_queue * radioEventQueue</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00094">RadioComBridge.c:94</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_html_gacf4b4d60a3186b655c6bde6f9ee69b56"><div class="ttname"><a href="group___u_a_v_talk.html#gacf4b4d60a3186b655c6bde6f9ee69b56">UAVTalkReceiveObject</a></div><div class="ttdeci">int32_t UAVTalkReceiveObject(UAVTalkConnection connectionHandle)</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8c_source.html#l00525">uavtalk.c:525</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_gae57b471306e6f2b53ad7977322d5cc9f"><div class="ttname"><a href="group___radio_com_bridge_module.html#gae57b471306e6f2b53ad7977322d5cc9f">RadioComBridgeData::telemetryTxTaskHandle</a></div><div class="ttdeci">struct pios_thread * telemetryTxTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00082">RadioComBridge.c:82</a></div></div>
 <div class="ttc" id="group___u_a_v_object_handling_html_gaf028fed8e3025656c7436ce6a7340e44"><div class="ttname"><a href="group___u_a_v_object_handling.html#gaf028fed8e3025656c7436ce6a7340e44">UAVObjLoad</a></div><div class="ttdeci">int32_t UAVObjLoad(UAVObjHandle obj_handle, uint16_t instId)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8c_source.html#l00821">uavobjectmanager.c:821</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga3d16e5de491dfd7c361575b398679dd3"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga3d16e5de491dfd7c361575b398679dd3">EVENT_QUEUE_SIZE</a></div><div class="ttdeci">#define EVENT_QUEUE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00073">RadioComBridge.c:73</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga749b492e33b73201cbe671f79d85f4db"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga749b492e33b73201cbe671f79d85f4db">MAX_PORT_DELAY</a></div><div class="ttdeci">#define MAX_PORT_DELAY</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00074">RadioComBridge.c:74</a></div></div>
+<div class="ttc" id="group___p_i_o_s___c_o_m_html_gad567038eee06d57f4b2300e255318809"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809">PIOS_COM_SendBufferStallTimeout</a></div><div class="ttdeci">int32_t PIOS_COM_SendBufferStallTimeout(uintptr_t com_id, const uint8_t *buffer, uint16_t len, uint32_t max_ms)</div></div>
 <div class="ttc" id="group___u_a_v_talk_html_gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a"><div class="ttname"><a href="group___u_a_v_talk.html#gga8a49dc52ac01b5d0782811f284df691ca561921fc000ac7610e879f9b1f63e54a">UAVTALK_STATE_COMPLETE</a></div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8h_source.html#l00054">uavtalk.h:54</a></div></div>
-<div class="ttc" id="group___radio_com_bridge_module_html_ga2f0a2f213f513d8adb8ac50014cf1181"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">objectPersistenceUpdatedCb</a></div><div class="ttdeci">static void objectPersistenceUpdatedCb(UAVObjEvent *objEv, void *ctx, void *obj, int len)</div><div class="ttdoc">Callback that is called when the ObjectPersistence UAVObject is changed. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00684">RadioComBridge.c:684</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_ga2f0a2f213f513d8adb8ac50014cf1181"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181">objectPersistenceUpdatedCb</a></div><div class="ttdeci">static void objectPersistenceUpdatedCb(UAVObjEvent *objEv, void *ctx, void *obj, int len)</div><div class="ttdoc">Callback that is called when the ObjectPersistence UAVObject is changed. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00686">RadioComBridge.c:686</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_gad0b9bd8f45359133da342c354426cb80"><div class="ttname"><a href="group___radio_com_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">updateSettings</a></div><div class="ttdeci">static void updateSettings()</div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00189">RadioComBridge.c:189</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga7686f653fec80f247c74a84599f46e2f"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga7686f653fec80f247c74a84599f46e2f">RFM22B_PPM_NUM_CHANNELS</a></div><div class="ttdeci">#define RFM22B_PPM_NUM_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00040">pios_rfm22b.h:40</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_html_ga5b29e7c3d3478fdd2cbd0cdaa4285fbb"><div class="ttname"><a href="group___u_a_v_talk.html#ga5b29e7c3d3478fdd2cbd0cdaa4285fbb">UAVTalkInitialize</a></div><div class="ttdeci">UAVTalkConnection UAVTalkInitialize(void *ctx, UAVTalkOutputCb outputStream, UAVTalkAckCb ackCallback, UAVTalkFileCb fileCallback)</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk_8c_source.html#l00060">uavtalk.c:60</a></div></div>
@@ -887,7 +890,7 @@ $(document).ready(function(){initNavTree('_radio_com_bridge_8c_source.html','');
 <div class="ttc" id="group___pip_x_html_ga90f3d4dc6bd056e049c23be962747064"><div class="ttname"><a href="group___pip_x.html#ga90f3d4dc6bd056e049c23be962747064">PIOS_COM_TELEMETRY</a></div><div class="ttdeci">#define PIOS_COM_TELEMETRY</div><div class="ttdef"><b>Definition:</b> <a href="targets_2pipxtreme_2board-info_2pios__board_8h_source.html#l00169">pios_board.h:169</a></div></div>
 <div class="ttc" id="group___radio_com_bridge_module_html_ga12be66ede9092606ec2c60f4af952a0d"><div class="ttname"><a href="group___radio_com_bridge_module.html#ga12be66ede9092606ec2c60f4af952a0d">UAVTalkSendHandler</a></div><div class="ttdeci">static int32_t UAVTalkSendHandler(void *ctx, uint8_t *buf, int32_t length)</div><div class="ttdoc">Transmit data buffer to the com port. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00499">RadioComBridge.c:499</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga5af0bd94df12381d390fae8925f99a03"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga5af0bd94df12381d390fae8925f99a03">PIOS_COM_Available</a></div><div class="ttdeci">bool PIOS_COM_Available(uintptr_t com_id)</div></div>
-<div class="ttc" id="group___radio_com_bridge_module_html_gade4bbfe7bfd08af2a781379ed60292f6"><div class="ttname"><a href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">ProcessRadioStream</a></div><div class="ttdeci">static void ProcessRadioStream(UAVTalkConnection inConnectionHandle, UAVTalkConnection outConnectionHandle, uint8_t rxbyte)</div><div class="ttdoc">Process a byte of data received on the radio data stream. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00616">RadioComBridge.c:616</a></div></div>
+<div class="ttc" id="group___radio_com_bridge_module_html_gade4bbfe7bfd08af2a781379ed60292f6"><div class="ttname"><a href="group___radio_com_bridge_module.html#gade4bbfe7bfd08af2a781379ed60292f6">ProcessRadioStream</a></div><div class="ttdeci">static void ProcessRadioStream(UAVTalkConnection inConnectionHandle, UAVTalkConnection outConnectionHandle, uint8_t rxbyte)</div><div class="ttdoc">Process a byte of data received on the radio data stream. </div><div class="ttdef"><b>Definition:</b> <a href="_radio_com_bridge_8c_source.html#l00618">RadioComBridge.c:618</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a13a6109e91ad12705df96a0f2743c630"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a></div><div class="ttdeci">enum arena_state state</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00073">pios_flashfs_logfs.c:73</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -8,6 +8,7 @@ var pios__com_8h =
     [ "PIOS_COM_ReceiveBuffer", "pios__com_8h.html#ga5e15e044cb0abca89b5655a359d1ef03", null ],
     [ "PIOS_COM_SendBuffer", "pios__com_8h.html#ga06a9a4136683f78051b9e72e5edb32f8", null ],
     [ "PIOS_COM_SendBufferNonBlocking", "pios__com_8h.html#ga60982fe515c4938f64fd872b8992a55b", null ],
+    [ "PIOS_COM_SendBufferStallTimeout", "pios__com_8h.html#gad567038eee06d57f4b2300e255318809", null ],
     [ "PIOS_COM_SendChar", "pios__com_8h.html#ga7b6113a05ea60bcd661bbc5e10a5fe0e", null ],
     [ "PIOS_COM_SendCharNonBlocking", "pios__com_8h.html#gaf31c3839043db5312b9b9429102964bd", null ],
     [ "PIOS_COM_SendFormattedString", "pios__com_8h.html#ga1e351c526477c605ee404318ba3c0b79", null ],

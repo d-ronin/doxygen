@@ -26,6 +26,7 @@ var group___p_i_o_s___c_o_m =
     [ "PIOS_COM_ReceiveBuffer", "group___p_i_o_s___c_o_m.html#ga5e15e044cb0abca89b5655a359d1ef03", null ],
     [ "PIOS_COM_SendBuffer", "group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8", null ],
     [ "PIOS_COM_SendBufferNonBlocking", "group___p_i_o_s___c_o_m.html#ga60982fe515c4938f64fd872b8992a55b", null ],
+    [ "PIOS_COM_SendBufferStallTimeout", "group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809", null ],
     [ "PIOS_COM_SendChar", "group___p_i_o_s___c_o_m.html#ga7b6113a05ea60bcd661bbc5e10a5fe0e", null ],
     [ "PIOS_COM_SendCharNonBlocking", "group___p_i_o_s___c_o_m.html#gaf31c3839043db5312b9b9429102964bd", null ],
     [ "PIOS_COM_SendFormattedString", "group___p_i_o_s___c_o_m.html#ga1e351c526477c605ee404318ba3c0b79", null ],

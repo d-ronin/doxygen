@@ -69,6 +69,7 @@ var searchData=
   ['pios_5fcom_5freceivebuffer',['PIOS_COM_ReceiveBuffer',['../group___p_i_o_s___c_o_m.html#ga5e15e044cb0abca89b5655a359d1ef03',1,'pios_com.h']]],
   ['pios_5fcom_5fsendbuffer',['PIOS_COM_SendBuffer',['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga707b575f67fe940b9742e1922e684c68',1,'PIOS_COM_SendBuffer(shub_global-&gt;frsky_port, shub_global-&gt;serial_buf, msg_length):&#160;UAVOFrSKYSensorHubBridge.c'],['../group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8',1,'PIOS_COM_SendBuffer(uintptr_t com_id, const uint8_t *buffer, uint16_t len):&#160;pios_com.h']]],
   ['pios_5fcom_5fsendbuffernonblocking',['PIOS_COM_SendBufferNonBlocking',['../group___p_i_o_s___c_o_m.html#ga60982fe515c4938f64fd872b8992a55b',1,'pios_com.h']]],
+  ['pios_5fcom_5fsendbufferstalltimeout',['PIOS_COM_SendBufferStallTimeout',['../group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809',1,'pios_com.h']]],
   ['pios_5fcom_5fsendchar',['PIOS_COM_SendChar',['../group___p_i_o_s___c_o_m.html#ga7b6113a05ea60bcd661bbc5e10a5fe0e',1,'pios_com.h']]],
   ['pios_5fcom_5fsendcharnonblocking',['PIOS_COM_SendCharNonBlocking',['../group___p_i_o_s___c_o_m.html#gaf31c3839043db5312b9b9429102964bd',1,'pios_com.h']]],
   ['pios_5fcom_5fsendformattedstring',['PIOS_COM_SendFormattedString',['../group___p_i_o_s___c_o_m.html#ga1e351c526477c605ee404318ba3c0b79',1,'pios_com.h']]],

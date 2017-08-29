@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">2233090</span>
+   &#160;<span id="projectnumber">ccca807</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -156,6 +156,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7b6113a05ea60bcd661bbc5e10a5fe0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60982fe515c4938f64fd872b8992a55b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___c_o_m.html#ga60982fe515c4938f64fd872b8992a55b">PIOS_COM_SendBufferNonBlocking</a> (uintptr_t com_id, const uint8_t *buffer, uint16_t len)</td></tr>
 <tr class="separator:ga60982fe515c4938f64fd872b8992a55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad567038eee06d57f4b2300e255318809"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___c_o_m.html#gad567038eee06d57f4b2300e255318809">PIOS_COM_SendBufferStallTimeout</a> (uintptr_t com_id, const uint8_t *buffer, uint16_t len, uint32_t max_ms)</td></tr>
+<tr class="separator:gad567038eee06d57f4b2300e255318809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06a9a4136683f78051b9e72e5edb32f8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___c_o_m.html#ga06a9a4136683f78051b9e72e5edb32f8">PIOS_COM_SendBuffer</a> (uintptr_t com_id, const uint8_t *buffer, uint16_t len)</td></tr>
 <tr class="separator:ga06a9a4136683f78051b9e72e5edb32f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff37e41578d22e06d0f29394340e1762"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___c_o_m.html#gaff37e41578d22e06d0f29394340e1762">PIOS_COM_SendStringNonBlocking</a> (uintptr_t com_id, const char *str)</td></tr>
@@ -504,6 +506,44 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad567038eee06d57f4b2300e255318809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t PIOS_COM_SendBufferStallTimeout </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>com_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_ms</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

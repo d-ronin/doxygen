@@ -1,5 +1,7 @@
 var NAVTREEINDEX121 =
 {
+"structhott__gps__message.html#a7bbbfc989843e86665e73202778dc1c4":[2,4,30,5,9],
+"structhott__gps__message.html#a8109cc81e797fa2d88438663b22ff0d7":[2,4,30,5,2],
 "structhott__gps__message.html#a89cad2a670a70c01f538e97aa995afea":[2,4,30,5,1],
 "structhott__gps__message.html#a902c9b63ce90d41d8e09d51849afcd31":[2,4,30,5,32],
 "structhott__gps__message.html#a95f3d7cae0bdcf2d2ae251bd14c03b23":[2,4,30,5,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "structmsp__set__misc.html#ac0f754f233eec76fb70f6906d1f0a45b":[2,1,2,23,10],
 "structmsp__set__misc.html#ad70b116e73d1a117bc27516992d9ff1c":[2,1,2,23,1],
 "structmsp__set__motor.html":[2,1,2,6],
-"structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18":[2,1,2,6,0],
-"structmsp__set__pid.html":[2,1,2,19],
-"structmsp__set__pid.html#a17aed73cd9e549410b4acd21a2f003a1":[2,1,2,19,8]
+"structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18":[2,1,2,6,0]
 };
