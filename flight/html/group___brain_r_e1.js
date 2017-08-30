@@ -330,7 +330,6 @@ var group___brain_r_e1 =
       [ "PIOS_RE1FPGA_STATUS_BLUE_CUSTOM_GREEN", "group___brain_r_e1.html#ggab4323dcc80d30de696a5bf3af65bb529a2b931947fb715e0af092293584e8ce3f", null ],
       [ "PIOS_RE1FPGA_STATUS_GREEN_CUSTOM_BLUE", "group___brain_r_e1.html#ggab4323dcc80d30de696a5bf3af65bb529aa5cfc8e0d234aaefa1810f584c9cf40b", null ]
     ] ],
-    [ "check_bor", "group___brain_r_e1.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "PIOS_Board_Init", "group___brain_r_e1.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "PIOS_RE1FPGA_Buzzer", "group___brain_r_e1.html#gac0f420e01e3f5d08542bd9e71603bcc2", null ],
     [ "PIOS_RE1FPGA_GetHWRevision", "group___brain_r_e1.html#gaedb51dfee2f47c10c67c0501a3486c55", null ],

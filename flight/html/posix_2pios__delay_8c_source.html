@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ccca807</span>
+   &#160;<span id="projectnumber">5c36622</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -234,11 +234,22 @@ $(document).ready(function(){initNavTree('posix_2pios__delay_8c_source.html','')
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> diff;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">  173</a></span>&#160;uint32_t <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">PIOS_DELAY_GetuS</a>()</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80">PIOS_DELAY_GetRaw</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#gaf474339ea05285a6a4fe90ff4328893b">  183</a></span>&#160;uint32_t <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#gaf474339ea05285a6a4fe90ff4328893b">PIOS_DELAY_GetuSSince</a>(uint32_t t)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">PIOS_DELAY_GetuS</a>() - t;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_gad0eb20f09635f32f75dcb6c5430b8764"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#gad0eb20f09635f32f75dcb6c5430b8764">PIOS_DELAY_DiffuS</a></div><div class="ttdeci">uint32_t PIOS_DELAY_DiffuS(uint32_t raw)</div><div class="ttdoc">Subtract raw time from now and convert to us. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00159">pios_delay.c:159</a></div></div>
 <div class="ttc" id="pios__posix_8h_html_a4c144c721b7558fcea0a0b9920246fda"><div class="ttname"><a href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a></div><div class="ttdeci">int clock_gettime(clockid_t clk_id, struct timespec *t)</div></div>
+<div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga069586911fc7a5a023d4f58d340ad909"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">PIOS_DELAY_GetuS</a></div><div class="ttdeci">uint32_t PIOS_DELAY_GetuS()</div><div class="ttdoc">Query the Delay timer for the current uS. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00173">pios_delay.c:173</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga60da713f0af44992439ecc77a1096dd2"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga60da713f0af44992439ecc77a1096dd2">get_monotonic_us_time</a></div><div class="ttdeci">static uint32_t get_monotonic_us_time(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00073">pios_delay.c:73</a></div></div>
 <div class="ttc" id="pios__posix_8h_html_a6dcac6a5cea7d9c842145e1444d91e22"><div class="ttname"><a href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a></div><div class="ttdeci">int clockid_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__posix_8h_source.html#l00060">pios_posix.h:60</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga572b82db7964223cc415c3ecd49ec192"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga572b82db7964223cc415c3ecd49ec192">PIOS_DELAY_DiffuS2</a></div><div class="ttdeci">uint32_t PIOS_DELAY_DiffuS2(uint32_t raw, uint32_t baseline)</div><div class="ttdoc">Subrtact two raw times and convert to us. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00164">pios_delay.c:164</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_gaf474339ea05285a6a4fe90ff4328893b"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#gaf474339ea05285a6a4fe90ff4328893b">PIOS_DELAY_GetuSSince</a></div><div class="ttdeci">uint32_t PIOS_DELAY_GetuSSince(uint32_t t)</div><div class="ttdoc">Calculate time in microseconds since a previous time. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00183">pios_delay.c:183</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga0d086bac039cb8236edb457b7d4da0fa"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa">PIOS_DELAY_Init</a></div><div class="ttdeci">int32_t PIOS_DELAY_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00098">pios_delay.c:98</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga98d0d3c2d565d6cc4af403bb45c3d7b4"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga98d0d3c2d565d6cc4af403bb45c3d7b4">base_time</a></div><div class="ttdeci">static uint32_t base_time</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00042">pios_delay.c:42</a></div></div>
 <div class="ttc" id="pios__posix_8h_html_a6fb83f5e91e704391ff796553d5e0f46"><div class="ttname"><a href="pios__posix_8h.html#a6fb83f5e91e704391ff796553d5e0f46">CLOCK_MONOTONIC</a></div><div class="ttdeci">#define CLOCK_MONOTONIC</div><div class="ttdef"><b>Definition:</b> <a href="pios__posix_8h_source.html#l00054">pios_posix.h:54</a></div></div>

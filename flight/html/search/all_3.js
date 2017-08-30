@@ -284,7 +284,7 @@ var searchData=
   ['charosd_5fstate_5ft',['charosd_state_t',['../structcharosd__state__t.html',1,'']]],
   ['chconf_2eh',['chconf.h',['../_pi_o_s_2_s_t_m32_2inc_2chconf_8h.html',1,'']]],
   ['chconf_2eh',['chconf.h',['../targets_2pipxtreme_2fw_2chconf_8h.html',1,'']]],
-  ['check_5fbor',['check_bor',['../group___brain.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___brain_r_e1.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___seppuku.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___sparky2.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c']]],
+  ['check_5fbor',['check_bor',['../group___targets.html#ga7b0ed4e8687557e464541def703918fe',1,'chibi_main.c']]],
   ['check_5fcoord_5fx',['CHECK_COORD_X',['../group___on_screen_display.html#ga343196edeceaf7ae778bd48a4dd54ae2',1,'osd_utils.h']]],
   ['check_5fcoord_5fy',['CHECK_COORD_Y',['../group___on_screen_display.html#ga5710f0f091e0d7b7e9aac84b2fb80ed3',1,'osd_utils.h']]],
   ['check_5fcoords',['CHECK_COORDS',['../group___on_screen_display.html#ga8711ae955f1b5b6452a893418299cbbc',1,'osd_utils.h']]],

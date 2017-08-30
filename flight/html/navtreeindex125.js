@@ -1,11 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"targets_2aq32_2board-info_2pios__board_8h.html#ga422d4d808a71d4b756877ac8e2d16255":[5,0,0,4,0,1,2,29],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,4,0,1,2,53],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf":[5,0,0,4,0,1,2,17],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga5c6ed92207820d514741140f5dec7f8a":[5,0,0,4,0,1,2,44],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43":[5,0,0,4,0,1,2,16],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga5eae9194437f23b68678de2ba9d9ce4a":[5,0,0,4,0,1,2,26],
 "targets_2aq32_2board-info_2pios__board_8h.html#ga62e300631856e0c56b1c9b3cbcf5621d":[5,0,0,4,0,1,2,1],
 "targets_2aq32_2board-info_2pios__board_8h.html#ga645df4566a90656d8b02ee4e63a54dfe":[5,0,0,4,0,1,2,42],
 "targets_2aq32_2board-info_2pios__board_8h.html#ga6ac74d56f67f74f449b252c6ba6bbd61":[5,0,0,4,0,1,2,24],
@@ -249,5 +243,11 @@ var NAVTREEINDEX125 =
 "targets_2brainre1_2board-info_2pios__board_8h.html#gaf5d5f32c3a2c9f19c94deb70406d96e4":[5,0,0,4,3,1,2,40],
 "targets_2brainre1_2board-info_2pios__board_8h.html#gaf6410feddf16870e3e65d6a2631f1f51":[5,0,0,4,3,1,2,34],
 "targets_2brainre1_2board-info_2pios__board_8h.html#gaf730749ee9284efdad9a53e3f9de9418":[5,0,0,4,3,1,2,17],
-"targets_2brainre1_2board-info_2pios__board_8h.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[5,0,0,4,3,1,2,56]
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[5,0,0,4,3,1,2,56],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafc809d2cdef7438cdb9abda6ea55f372":[5,0,0,4,3,1,2,7],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafd42c6e3ae013294396f05fd9760bbf7":[5,0,0,4,3,1,2,30],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaffe7c0cd799a61d0dbaed25e9496c4bb":[5,0,0,4,3,1,2,20],
+"targets_2brainre1_2board-info_2pios__board_8h_source.html":[5,0,0,4,3,1,2],
+"targets_2brainre1_2fw_2pios__config_8h.html":[5,0,0,4,3,2,2],
+"targets_2brainre1_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098":[5,0,0,4,3,2,2,13]
 };

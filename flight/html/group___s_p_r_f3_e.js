@@ -49,7 +49,6 @@ var group___s_p_r_f3_e =
     [ "PIOS_INCLUDE_MAVLINK", "group___s_p_r_f3_e.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7", null ],
     [ "PIOS_INCLUDE_MPU", "group___s_p_r_f3_e.html#ga24a6e0d324a2669cacb50de89b60c0a9", null ],
     [ "PIOS_INCLUDE_MPU_MAG", "group___s_p_r_f3_e.html#gab49a0be0e77d9cf169a7db44cc49598a", null ],
-    [ "PIOS_INCLUDE_PWM", "group___s_p_r_f3_e.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
     [ "PIOS_INCLUDE_SPI", "group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_SPI", "group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_SYS", "group___s_p_r_f3_e.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],

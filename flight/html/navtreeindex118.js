@@ -1,11 +1,5 @@
 var NAVTREEINDEX118 =
 {
-"sprf3e_2fw_2mcuconf_8h.html#gade0c8b4992afc59bd1256c66c794bdeb":[5,0,0,4,17,2,0,124],
-"sprf3e_2fw_2mcuconf_8h.html#gadee0147236bd6ccd062536f468d188f4":[5,0,0,4,17,2,0,126],
-"sprf3e_2fw_2mcuconf_8h.html#gae631e1c4b6541c9d67de9d009196b770":[5,0,0,4,17,2,0,77],
-"sprf3e_2fw_2mcuconf_8h.html#gae8ffecb53d7e6d0986cbb875cd98e0e8":[5,0,0,4,17,2,0,1],
-"sprf3e_2fw_2mcuconf_8h.html#gaf105fbdfb7b9076472b373ed0c7b3fef":[5,0,0,4,17,2,0,106],
-"sprf3e_2fw_2mcuconf_8h.html#gaf172c422c6aeaa11a0a6ff0227b4637a":[5,0,0,4,17,2,0,25],
 "sprf3e_2fw_2mcuconf_8h.html#gaf9be48d9e825a860764b4a928124f046":[5,0,0,4,17,2,0,87],
 "sprf3e_2fw_2mcuconf_8h.html#gafb8ec40127fee7c2c398e9e2ec096a71":[5,0,0,4,17,2,0,29],
 "sprf3e_2fw_2mcuconf_8h.html#gafd104f0cde2014ea9788f9e3f71de00a":[5,0,0,4,17,2,0,50],
@@ -125,8 +119,8 @@ var NAVTREEINDEX118 =
 "storm32bgc_8c_source.html":[5,0,0,2,23,0],
 "struct____attribute____.html":[2,1,18],
 "struct____attribute____.html":[2,4,37,3],
-"struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,4,37,3,19],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,1,18,19],
+"struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,4,37,3,19],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,1,18,4],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,4,37,3,4],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,1,18,7],
@@ -249,5 +243,11 @@ var NAVTREEINDEX118 =
 "struct_u_a_v_o_multi.html#a2512d4c2267924e345079a69ae78b209":[2,2,1,10,0],
 "struct_u_a_v_o_multi.html#a718e24f6eadeb8508309dcb0eeeb9bda":[2,2,1,10,2],
 "struct_u_a_v_o_multi.html#a9502c6a24b6d21d6ec4e48fbe166f1c4":[2,2,1,10,1],
-"struct_u_a_v_o_multi_inst.html":[2,2,1,9]
+"struct_u_a_v_o_multi_inst.html":[2,2,1,9],
+"struct_u_a_v_o_multi_inst.html#a571693c984fd7e8e845fe57fca2d21d9":[2,2,1,9,1],
+"struct_u_a_v_o_multi_inst.html#ab48732994d9762f9493940dc57e60f8b":[2,2,1,9,0],
+"struct_u_a_v_o_single.html":[2,2,1,8],
+"struct_u_a_v_o_single.html#a411e3c7c88a81c2f1cd74cab9a3ab5ec":[2,2,1,8,0],
+"struct_u_a_v_o_single.html#adc5ae49c5f1cc194e3df35a0652d9a13":[2,2,1,8,1],
+"struct_u_a_v_obj_event.html":[4,0,248]
 };

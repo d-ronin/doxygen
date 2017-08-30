@@ -18,7 +18,7 @@ var searchData=
   ['charonscreendisplayinitialize',['CharOnScreenDisplayInitialize',['../group___char_o_s_d.html#ga4788848a76c0657baf71fa5768403f71',1,'charonscreendisplay.c']]],
   ['charonscreendisplaystart',['CharOnScreenDisplayStart',['../group___char_o_s_d.html#ga9c8e02bdc4f70eea3c46bdf18f5f2ae0',1,'charonscreendisplay.c']]],
   ['charonscreendisplaytask',['CharOnScreenDisplayTask',['../group___char_o_s_d.html#gaa023773acaaf814646ee6305e4428f28',1,'charonscreendisplay.c']]],
-  ['check_5fbor',['check_bor',['../group___brain.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___brain_r_e1.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___seppuku.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c'],['../group___sparky2.html#ga7b0ed4e8687557e464541def703918fe',1,'check_bor():&#160;pios_board.c']]],
+  ['check_5fbor',['check_bor',['../group___targets.html#ga7b0ed4e8687557e464541def703918fe',1,'chibi_main.c']]],
   ['check_5fhome_5flocation',['check_home_location',['../group___attitude_module.html#ga822997c683cd93901d24a78b838be731',1,'attitude.c']]],
   ['check_5fsafe_5fautonomous',['check_safe_autonomous',['../group___libraries.html#ga6209acbff7034720890b0398f8517743',1,'sanitycheck.c']]],
   ['check_5fsafe_5fto_5farm',['check_safe_to_arm',['../group___libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c',1,'sanitycheck.c']]],

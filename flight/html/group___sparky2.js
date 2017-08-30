@@ -304,7 +304,6 @@ var group___sparky2 =
     [ "STM32_USB_USE_OTG2", "group___sparky2.html#ga56a0c40fe1260ca2265cc01d42668ca7", null ],
     [ "STM32F4xx_MCUCONF", "group___sparky2.html#ga6c41ac9534659a9a1d50d6772bdb7c91", null ],
     [ "VREF_PLUS", "group___sparky2.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
-    [ "check_bor", "group___sparky2.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "get_servo_cfg", "group___sparky2.html#ga77a4d80816a920a71e6ab8700b3e92cb", null ],
     [ "get_usart_rcvr_cfg", "group___sparky2.html#gaa363a58e3ee9c224103a8bf63b844d67", null ],
     [ "PIOS_Board_Init", "group___sparky2.html#gabda03501745560ca9e546079e20bb392", null ],

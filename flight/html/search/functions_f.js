@@ -285,6 +285,7 @@ var searchData=
   ['pios_5fpx4flow_5ftest',['PIOS_PX4Flow_Test',['../group___p_i_o_s___p_x4_f_l_o_w.html#ga47aefebddefef4e01e0cf4110f271b63',1,'pios_px4flow_priv.h']]],
   ['pios_5fqueue_5fcreate',['PIOS_Queue_Create',['../group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52',1,'pios_queue.c']]],
   ['pios_5fqueue_5fdelete',['PIOS_Queue_Delete',['../group___p_i_o_s___queue.html#ga9fc96bf9bd5cdd96dadc57e41b4d1784',1,'pios_queue.c']]],
+  ['pios_5fqueue_5fgetitemsize',['PIOS_Queue_GetItemSize',['../group___p_i_o_s___queue.html#gac75848cc936540bc3b825fa4af173ef6',1,'pios_queue.c']]],
   ['pios_5fqueue_5freceive',['PIOS_Queue_Receive',['../group___p_i_o_s___queue.html#ga22c308fc25c3d44deab081be3d8bdbcf',1,'pios_queue.c']]],
   ['pios_5fqueue_5fsend',['PIOS_Queue_Send',['../group___p_i_o_s___queue.html#gac5ddcec5126e8a38c42a9973f421ee5e',1,'pios_queue.c']]],
   ['pios_5fqueue_5fsend_5ffromisr',['PIOS_Queue_Send_FromISR',['../group___p_i_o_s___queue.html#ga9b33d26fbfc63284bb9d420f539914e4',1,'pios_queue.c']]],

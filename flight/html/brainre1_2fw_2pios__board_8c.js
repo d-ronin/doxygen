@@ -1,6 +1,5 @@
 var brainre1_2fw_2pios__board_8c =
 [
-    [ "check_bor", "brainre1_2fw_2pios__board_8c.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "PIOS_Board_Init", "brainre1_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "settingdUpdatedCb", "brainre1_2fw_2pios__board_8c.html#ga35bd05421aa6667423406271507c0ae2", null ],
     [ "pios_com_logging_id", "brainre1_2fw_2pios__board_8c.html#ga88d8898b87dd36e904ef44a757344a14", null ],

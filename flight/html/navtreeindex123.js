@@ -1,11 +1,5 @@
 var NAVTREEINDEX123 =
 {
-"structpios__mutex.html":[2,0,29,0],
-"structpios__mutex.html#ab3bba20733c356cab33de69e28e605c9":[2,0,29,0,0],
-"structpios__ppm__cfg.html":[2,0,56,3],
-"structpios__ppm__cfg.html#a2b60f6cdabad556a4de0d2617cfe3309":[2,0,56,3,1],
-"structpios__ppm__cfg.html#acecc33ca315a3edeb437b6073c1ec1b5":[2,0,56,3,2],
-"structpios__ppm__cfg.html#af794b04692c8fdb2e06b8a58601c99ce":[2,0,56,3,0],
 "structpios__pwm__cfg.html":[2,0,58,3],
 "structpios__pwm__cfg.html#a7f64d325db8aca0d737d94648b079b36":[2,0,58,3,2],
 "structpios__pwm__cfg.html#acf9d41bfa9ce5ee489fcb27a98605e5c":[2,0,58,3,1],
@@ -27,14 +21,14 @@ var NAVTREEINDEX123 =
 "structpios__rcvr__driver.html":[2,0,59,2],
 "structpios__rcvr__driver.html#a9bde8d770ce562c177d3a8350866eae3":[2,0,59,2,0],
 "structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305":[2,0,59,2,1],
-"structpios__re1fpga__cfg.html":[2,5,2,8],
 "structpios__re1fpga__cfg.html":[2,6,4,8],
+"structpios__re1fpga__cfg.html":[2,5,2,8],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,5,2,8,1],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,6,4,8,1],
-"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,5,2,8,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,6,4,8,3],
-"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,5,2,8,2],
+"structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,5,2,8,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,6,4,8,2],
+"structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,5,2,8,2],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,5,2,8,0],
 "structpios__re1fpga__cfg.html#ad2c23fbdea25e5a36c5489a5a8ff26f7":[2,6,4,8,0],
 "structpios__recursive__mutex.html":[2,0,29,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX123 =
 "structslot__header.html#a61928fad0e752c278fb8485aa199240d":[2,0,12,2,1],
 "structslot__header.html#aa004e58ab0609d8c239530017730b5c1":[2,0,12,2,0],
 "structslot__header.html#ada9f3086c54142732ee8e98e88a65d3a":[2,0,12,2,2],
-"structsmoothcontrol__axis__state.html":[4,0,230]
+"structsmoothcontrol__axis__state.html":[4,0,230],
+"structsmoothcontrol__axis__state.html#a0c3bc71ca70ee12fd3e97cd1142f1faa":[4,0,230,2],
+"structsmoothcontrol__axis__state.html#a2b882bb47d838d07712c3c00be9577af":[4,0,230,3],
+"structsmoothcontrol__axis__state.html#a33584dd602e6ef9926e4e5b83b47bbe2":[4,0,230,4],
+"structsmoothcontrol__axis__state.html#a6af73f34b3fcda9d6907c7f57b65f69c":[4,0,230,0],
+"structsmoothcontrol__axis__state.html#a91e25d05ac1ba8176da320ecefd7caed":[4,0,230,1],
+"structsmoothcontrol__state__internal.html":[4,0,231]
 };

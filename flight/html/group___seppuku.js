@@ -305,7 +305,6 @@ var group___seppuku =
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___seppuku.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "SYSTEMMOD_RGBLED_VIDEO_HACK", "group___seppuku.html#ga8ff5d57d64df909a2e57a54fca3e4d5f", null ],
     [ "VREF_PLUS", "group___seppuku.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
-    [ "check_bor", "group___seppuku.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "PIOS_Board_Init", "group___seppuku.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "external_i2c_adapter_id", "group___seppuku.html#ga8b288aad98fe1c6cf3a3bb557e7158a1", null ],
     [ "pios_com_bridge_id", "group___seppuku.html#gac040f05fa048688ee0269c2768698a14", null ],

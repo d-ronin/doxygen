@@ -1,13 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"osd__menu_8c.html#gaee33af82ea1fd722f6b757f844fa40e1":[5,0,0,2,18,3,3],
-"osd__menu_8c.html#gaf6672b7da6a1bf376b3da8d37e87d6bd":[5,0,0,2,18,3,20],
-"osd__menu_8c.html#gaf8e6dec72f2c54051426ab1bb6adb7ab":[5,0,0,2,18,3,19],
-"osd__menu_8c.html#gaf99739f43eccdbb8639969899bee036a":[5,0,0,2,18,3,9],
-"osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a0d36904c1e8ef3978abfe51c57b70423":[5,0,0,2,18,3,10,3],
-"osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a1340428efccb140dcbdb71aa6176f696":[5,0,0,2,18,3,10,7],
-"osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a244af80de1b56030ddd7e0534df793b1":[5,0,0,2,18,3,10,9],
-"osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a278276a8155620ed5e155c80d35316cc":[5,0,0,2,18,3,10,8],
 "osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a3fbd5be8e43fa2c705c409c188b33bc9":[5,0,0,2,18,3,10,6],
 "osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a592503b9434c1e751a92f3fc536d7950":[5,0,0,2,18,3,10,2],
 "osd__menu_8c.html#gga33e00617b1083c0f076fe97676ab85b2a62e38716718c8c9c4809b7ee9499edb7":[5,0,0,2,18,3,10,10],
@@ -249,5 +241,13 @@ var NAVTREEINDEX96 =
 "panel_8c.html#ga9a857c2c32836963565c85a736967dd0":[5,0,0,2,7,6,8],
 "panel_8c.html#ga9c44a1dbaa87653fba7e47ded71012d8":[5,0,0,2,7,6,15],
 "panel_8c.html#gaa728a7a3c569130fdb8000ff90ecc973":[5,0,0,2,7,6,16],
-"panel_8c.html#gaa97dfc1a2fe8d8d6383e57fb50b58301":[5,0,0,2,7,6,41]
+"panel_8c.html#gaa97dfc1a2fe8d8d6383e57fb50b58301":[5,0,0,2,7,6,41],
+"panel_8c.html#gaa9876b1335e46a6de7027c8f8cc3539b":[5,0,0,2,7,6,4],
+"panel_8c.html#gaad5189cb34c173c488365f8414f436ab":[5,0,0,2,7,6,30],
+"panel_8c.html#gaba8284bc2cc0444b9d735665c42d1b09":[5,0,0,2,7,6,39],
+"panel_8c.html#gabdb40b9556dd023f35aa1bb5cea72bb2":[5,0,0,2,7,6,5],
+"panel_8c.html#gabe1e5ec56736cab69b039fa8089ef58e":[5,0,0,2,7,6,32],
+"panel_8c.html#gabe5e60ddbe9d2e93256c81e80465034d":[5,0,0,2,7,6,9],
+"panel_8c.html#gac174129986fce93a3240504458351308":[5,0,0,2,7,6,31],
+"panel_8c.html#gac29f7805863b1e57f0e867855d72402e":[5,0,0,2,7,6,50]
 };

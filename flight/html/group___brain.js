@@ -315,7 +315,6 @@ var group___brain =
     [ "STM32_USB_USE_OTG2", "group___brain.html#ga56a0c40fe1260ca2265cc01d42668ca7", null ],
     [ "STM32F4xx_MCUCONF", "group___brain.html#ga6c41ac9534659a9a1d50d6772bdb7c91", null ],
     [ "VREF_PLUS", "group___brain.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
-    [ "check_bor", "group___brain.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "PIOS_Board_Init", "group___brain.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "level_bits", "group___brain.html#ga11c0902226e4d67fbe3c03915a5621e2", null ],
     [ "level_mask_bits", "group___brain.html#ga1af1755811426df00f4a2077e1bc242c", null ],
