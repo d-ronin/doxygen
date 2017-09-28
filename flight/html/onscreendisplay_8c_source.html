@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">262cc53</span>
+   &#160;<span id="projectnumber">0c23501</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1446,11 +1446,11 @@ $(document).ready(function(){initNavTree('onscreendisplay_8c_source.html','');})
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                                <a class="code" href="group___p_i_o_s.html#gaa0649118bc3728b2a62af0b47606ff51">sprintf</a>(tmp_str, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;GND&quot;</span>);</div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYPAGESETTINGS_SPEEDSCALESOURCE_GPS:</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                                <span class="keywordflow">if</span> (GPSVelocityHandle()) {</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                                        GPSVelocityNorthGet(&amp;tmp);</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                                        GPSVelocityEastGet(&amp;tmp1);</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                                        tmp = sqrt(tmp * tmp + tmp1 * tmp1);</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                                        speed_valid = <a class="code" href="group___on_screen_display.html#ga8f00b2fb783933f6963b81b3bc39769a">has_gps</a>;</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                                <span class="keywordflow">if</span> (<a class="code" href="group___on_screen_display.html#ga8f00b2fb783933f6963b81b3bc39769a">has_gps</a> &amp;&amp; GPSPositionHandle()) {</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                                        GPSPositionGroundspeedGet(&amp;tmp);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                                        uint8_t <a class="code" href="msp__messages_8h.html#ab28bedaa845748de3c712f8ee3353c22">fix</a>;</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                                        GPSPositionStatusGet(&amp;fix);</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                                        speed_valid = fix != GPSPOSITION_STATUS_NOFIX;</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                                }</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                                <a class="code" href="group___p_i_o_s.html#gaa0649118bc3728b2a62af0b47606ff51">sprintf</a>(tmp_str, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;GND&quot;</span>);</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                                <span class="keywordflow">break</span>;</div>
@@ -2057,6 +2057,7 @@ $(document).ready(function(){initNavTree('onscreendisplay_8c_source.html','');})
 <div class="ttc" id="group___on_screen_display_html_ga5079eb8559efeb4b20f1515516f56456"><div class="ttname"><a href="group___on_screen_display.html#ga5079eb8559efeb4b20f1515516f56456">TEXT_HA_RIGHT</a></div><div class="ttdeci">#define TEXT_HA_RIGHT</div><div class="ttdef"><b>Definition:</b> <a href="osd__utils_8h_source.html#l00135">osd_utils.h:135</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga39587fadab896acdf29c648e7328efa7"><div class="ttname"><a href="group___on_screen_display.html#ga39587fadab896acdf29c648e7328efa7">introText</a></div><div class="ttdeci">void introText(int16_t x, int16_t y)</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l01028">onscreendisplay.c:1028</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga41656b37cf2e82a370fc97eda04de8a0"><div class="ttname"><a href="group___on_screen_display.html#ga41656b37cf2e82a370fc97eda04de8a0">has_battery</a></div><div class="ttdeci">static bool has_battery</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00178">onscreendisplay.c:178</a></div></div>
+<div class="ttc" id="msp__messages_8h_html_ab28bedaa845748de3c712f8ee3353c22"><div class="ttname"><a href="msp__messages_8h.html#ab28bedaa845748de3c712f8ee3353c22">fix</a></div><div class="ttdeci">uint8_t fix</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
 <div class="ttc" id="pios__board__info_8h_html_ae44044441c2e7618a5ebc9b4e377793b"><div class="ttname"><a href="pios__board__info_8h.html#ae44044441c2e7618a5ebc9b4e377793b">pios_board_info_blob</a></div><div class="ttdeci">const struct pios_board_info pios_board_info_blob</div></div>
 <div class="ttc" id="group___on_screen_display_html_gab85612b67ef819c3b876bdbbdf6c46be"><div class="ttname"><a href="group___on_screen_display.html#gab85612b67ef819c3b876bdbbdf6c46be">draw_map_uav_center</a></div><div class="ttdeci">void draw_map_uav_center(int width_px, int height_px, int width_m, int height_m, bool show_wp, bool show_uav, bool show_tablet)</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00867">onscreendisplay.c:867</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga20dacb0faf2139854223617aef1590eb"><div class="ttname"><a href="group___on_screen_display.html#ga20dacb0faf2139854223617aef1590eb">METRIC_SPEED_UNIT</a></div><div class="ttdeci">const char METRIC_SPEED_UNIT[]</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00130">onscreendisplay.c:130</a></div></div>
