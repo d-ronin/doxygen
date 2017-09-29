@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"aq32_2board-info_2board__hw__defs_8c.html#ga8fa34328b6fc6dbd579df2882242fe03":[5,0,0,4,0,1,0,0],
-"aq32_2board-info_2board__hw__defs_8c.html#gad3ea54016297828fa3b2fad1ce1b7f34":[5,0,0,4,0,1,0,3],
 "aq32_2board-info_2board__hw__defs_8c.html#gaf14eff61e8f08bddf3904d6fc4f17f15":[5,0,0,4,0,1,0,5],
 "aq32_2board-info_2board__hw__defs_8c.html#gafc822ecb1f389546a9df1f56affef247":[5,0,0,4,0,1,0,1],
 "aq32_2board-info_2board__hw__defs_8c_source.html":[5,0,0,4,0,1,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX6 =
 "aq32_2fw_2pios__board_8c_source.html":[5,0,0,4,0,2,1],
 "atmospheric__math_8c.html":[5,0,0,1,2,0],
 "atmospheric__math_8c.html#ga19956132ba464a31ae11b330577c3698":[5,0,0,1,2,0,2],
-"atmospheric__math_8c.html#ga690d550d4baeb61e83a2eb947dfe270a":[5,0,0,1,2,0,3]
+"atmospheric__math_8c.html#ga690d550d4baeb61e83a2eb947dfe270a":[5,0,0,1,2,0,3],
+"atmospheric__math_8c.html#gac358b4fb255019273b8a59205f3fe464":[5,0,0,1,2,0,1],
+"atmospheric__math_8c.html#gad976cac3b994146b27eccb2bdb1e26ed":[5,0,0,1,2,0,0]
 };

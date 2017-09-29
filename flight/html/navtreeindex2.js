@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,1],
-"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,2],
 "_s_t_m32_f10x_2pios__tim_8c_source.html":[5,0,0,3,5,8],
 "_s_t_m32_f10x_2pios__usart_8c.html":[5,0,0,3,5,9],
 "_s_t_m32_f10x_2pios__usart_8c_source.html":[5,0,0,3,5,9],
@@ -172,8 +170,8 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22b":[5,0,0,3,6,0,2,2],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba0150e4e3b19fa26b36711b9780b7800d":[5,0,0,3,6,0,2,2,13],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba0150e4e3b19fa26b36711b9780b7800d":[5,0,0,3,6,0,2,2,39],
-"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,6,0,2,2,23],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,6,0,2,2,51],
+"_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,6,0,2,2,23],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba1981fea3596cb9bdbc29858f600ba8d5":[5,0,0,3,6,0,2,2,49],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba278d98c644c404d2bf910686b8b469a9":[5,0,0,3,6,0,2,2,21],
 "_s_t_m32_f30x_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba2c78d59f7d26725aeac3011d408fa83c":[5,0,0,3,6,0,2,2,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "_s_t_m32_f30x_2pios__iap_8c.html#ga727e2ab4e4516e678c92361691368cde":[5,0,0,3,6,7,8],
 "_s_t_m32_f30x_2pios__iap_8c.html#ga8bec76f66d6e57d6812ad00800a857ff":[5,0,0,3,6,7,5],
 "_s_t_m32_f30x_2pios__iap_8c.html#ga934ab6403364f7db094874c8b22ac39b":[5,0,0,3,6,7,10],
-"_s_t_m32_f30x_2pios__iap_8c.html#gaa146b4c361d3c35e63e9d4cd7f0b6951":[5,0,0,3,6,7,7]
+"_s_t_m32_f30x_2pios__iap_8c.html#gaa146b4c361d3c35e63e9d4cd7f0b6951":[5,0,0,3,6,7,7],
+"_s_t_m32_f30x_2pios__iap_8c.html#gaac06a8f0df9d20557e2fd6db4cec035f":[5,0,0,3,6,7,9],
+"_s_t_m32_f30x_2pios__iap_8c.html#gac2ea21e01c9a49570619658c0c2642de":[5,0,0,3,6,7,15]
 };

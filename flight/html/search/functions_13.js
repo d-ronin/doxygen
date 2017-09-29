@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tablet_5fcontrol_5fget_5fevents',['tablet_control_get_events',['../group___control.html#gaac5e3efaaa07ab552af74fecf4726748',1,'tablet_control.c']]],
   ['tablet_5fcontrol_5finitialize',['tablet_control_initialize',['../group___control.html#ga16a2fa9b05e1778d508450239854bdef',1,'tablet_control.c']]],
   ['tablet_5fcontrol_5fselect',['tablet_control_select',['../group___control.html#ga72ecc808e52960fdd4fc2fe42bf5f633',1,'tablet_control.c']]],
   ['tablet_5fcontrol_5fupdate',['tablet_control_update',['../group___control.html#ga0bee0c81342526c03f10559cf6dbda72',1,'tablet_control.c']]],
@@ -54,8 +53,8 @@ var searchData=
   ['timedifferencems',['timeDifferenceMs',['../group___control.html#ga1f2fb4d7d46c51bd7acd93e4b332013d',1,'transmitter_control.c']]],
   ['timer_5fapb_5fclock',['timer_apb_clock',['../group___p_i_o_s___s_e_r_v_o.html#ga7e194c19170203b1cc07134635df9988',1,'pios_servo.c']]],
   ['transmitdata',['transmitData',['../group___telemetry_module.html#gad49c925a02e93a49c6e49560dfacce72',1,'telemetry.c']]],
-  ['transmitter_5fcontrol_5fget_5fevents',['transmitter_control_get_events',['../group___control.html#ga51dc43f87515d8de90aebb1465578212',1,'transmitter_control.c']]],
   ['transmitter_5fcontrol_5fget_5fflight_5fmode',['transmitter_control_get_flight_mode',['../group___control.html#ga71762ca401b9c08895878db9731fde77',1,'transmitter_control.c']]],
+  ['transmitter_5fcontrol_5fget_5fstatus',['transmitter_control_get_status',['../group___control.html#ga8fd08c09ab8f5c837de78099706118f2',1,'transmitter_control.c']]],
   ['transmitter_5fcontrol_5finitialize',['transmitter_control_initialize',['../group___control.html#ga27653bb9e2abe9498b31e9f748f158d8',1,'transmitter_control.c']]],
   ['transmitter_5fcontrol_5fselect',['transmitter_control_select',['../group___control.html#ga6ffb050d1f10ab7aa441ce65629e26bd',1,'transmitter_control.c']]],
   ['transmitter_5fcontrol_5fupdate',['transmitter_control_update',['../group___control.html#gad28dba2f07e1f4fe872ccf01941c3c84',1,'transmitter_control.c']]],

@@ -17,9 +17,5 @@ var searchData=
   ['color_5fyellow',['COLOR_YELLOW',['../group___on_screen_display.html#gga33e00617b1083c0f076fe97676ab85b2ab03862907066c68204ee9df1ee04aa29',1,'osd_menu.c']]],
   ['configured',['CONFIGURED',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bba0bf587663d046cc18f999b169ca42ae0',1,'pios_usb_hid_pwr.h']]],
   ['connected',['CONNECTED',['../group___v_t_x_config.html#gga275a67132f10277ada3a0ee3d616b647a7a691a2430ec26878897b5fbc9c22a4c',1,'VTXConfig.c']]],
-  ['control_5fevents_5farm',['CONTROL_EVENTS_ARM',['../group___control.html#gga6db279174b366abaad3f5de70b10655caa1925993cc62becc38a19a51a2dc2712',1,'control.h']]],
-  ['control_5fevents_5farming',['CONTROL_EVENTS_ARMING',['../group___control.html#gga6db279174b366abaad3f5de70b10655ca3ba849b595e592121378f1534b599c2a',1,'control.h']]],
-  ['control_5fevents_5fdisarm',['CONTROL_EVENTS_DISARM',['../group___control.html#gga6db279174b366abaad3f5de70b10655caaf3578a8a437ec3e783c2b84abe3afe2',1,'control.h']]],
-  ['control_5fevents_5fnone',['CONTROL_EVENTS_NONE',['../group___control.html#gga6db279174b366abaad3f5de70b10655caa00112d5afc911295d9aa665483dbc02',1,'control.h']]],
   ['crc_5ffail',['CRC_Fail',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37a865129af1d1ea79ecab6f82c22c71695',1,'common.h']]]
 ];

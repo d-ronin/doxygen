@@ -7,7 +7,6 @@ var searchData=
   ['tbs_5fch',['TBS_CH',['../group___v_t_x_config.html#gad398ee28b78ed0b35f6392e03c9258e7',1,'tbs_smartaudio.c']]],
   ['tc',['tc',['../polarst_8c.html#a571da6d58a2b5ddc0316b7c474a2b3af',1,'polarst.c']]],
   ['tcif',['tcif',['../group___p_i_o_s___d_m_a_shot.html#ga7144df2b35373c59aea1fc48438ddb72',1,'pios_dmashot_timer_cfg']]],
-  ['tcprxtaskhandle',['tcpRxTaskHandle',['../group___p_i_o_s___f_i_l_e_o_u_t.html#ga88134912c15ef97345bf2366a762af27',1,'pios_fileout.c']]],
   ['tdop',['tDOP',['../struct_u_b_x___n_a_v___d_o_p.html#a12bd31e6a5d13f568b90a13f3888c694',1,'UBX_NAV_DOP']]],
   ['telem_5fstate',['telem_state',['../group___telemetry_module.html#ga296e6e5598ee7c5f58ad3eee20f02261',1,'telemetry.c']]],
   ['telemetry',['telemetry',['../structcharosd__state__t.html#a4c9acd1be18082ac3a524e3634c30a8b',1,'charosd_state_t']]],

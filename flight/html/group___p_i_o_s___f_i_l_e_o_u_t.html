@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -123,8 +123,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ga8176503e758c500d82c847021a1100ff"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__com__driver.html">pios_com_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga8176503e758c500d82c847021a1100ff">pios_fileout_com_driver</a></td></tr>
 <tr class="separator:ga8176503e758c500d82c847021a1100ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88134912c15ef97345bf2366a762af27"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga88134912c15ef97345bf2366a762af27">tcpRxTaskHandle</a></td></tr>
-<tr class="separator:ga88134912c15ef97345bf2366a762af27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -183,8 +181,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Open file for writing </p>
 
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00065">65</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00064">64</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
 
 </div>
 </div>
@@ -226,7 +225,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00117">117</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00116">116</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
 
 </div>
 </div>
@@ -263,7 +262,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>we send everything directly whenever notified of data to send (lazy!)</p>
 
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00086">86</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00085">85</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
 
 </div>
 </div>
@@ -281,25 +280,10 @@ Variables</h2></td></tr>
 <div class="line">        .tx_start   = <a class="code" href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a>,</div>
 <div class="line">        .bind_tx_cb = <a class="code" href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga1f250524dba77a4edc9d8bf56d5b0baf"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a></div><div class="ttdeci">static void PIOS_FILEOUT_TxStart(uintptr_t udp_id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00086">pios_fileout.c:86</a></div></div>
-<div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga723198747d044043b78fad73a9435819"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a></div><div class="ttdeci">static void PIOS_FILEOUT_RegisterTxCallback(uintptr_t udp_id, pios_com_callback tx_out_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00117">pios_fileout.c:117</a></div></div>
+<div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga1f250524dba77a4edc9d8bf56d5b0baf"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a></div><div class="ttdeci">static void PIOS_FILEOUT_TxStart(uintptr_t udp_id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00085">pios_fileout.c:85</a></div></div>
+<div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga723198747d044043b78fad73a9435819"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga723198747d044043b78fad73a9435819">PIOS_FILEOUT_RegisterTxCallback</a></div><div class="ttdeci">static void PIOS_FILEOUT_RegisterTxCallback(uintptr_t udp_id, pios_com_callback tx_out_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00116">pios_fileout.c:116</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00050">50</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga88134912c15ef97345bf2366a762af27"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* tcpRxTaskHandle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Open file for writing </p>
-
-<p>Definition at line <a class="el" href="pios__fileout_8c_source.html#l00064">64</a> of file <a class="el" href="pios__fileout_8c_source.html">pios_fileout.c</a>.</p>
 
 </div>
 </div>

@@ -1,13 +1,5 @@
 var NAVTREEINDEX109 =
 {
-"pios__usb__util_8h_source.html":[5,0,0,3,1,117],
-"pios__usbhook_8h.html":[5,0,0,3,1,118],
-"pios__usbhook_8h.html#ga05f051e48c96e9d6d2e05804c8023fe2":[5,0,0,3,1,118,21],
-"pios__usbhook_8h.html#ga06e0b17915984330f3244e3dcc26c80e":[5,0,0,3,1,118,14],
-"pios__usbhook_8h.html#ga0b91e1af1f658ed36ac3da1414dd1dae":[5,0,0,3,1,118,6],
-"pios__usbhook_8h.html#ga1c1263ee96f36ccbfc0e662b85e044bf":[5,0,0,3,1,118,20],
-"pios__usbhook_8h.html#ga1fdfbec3bfa53133f72ac8acff597415":[5,0,0,3,1,118,4],
-"pios__usbhook_8h.html#ga59b142c7def8bcde4564793de82198d6":[5,0,0,3,1,118,12],
 "pios__usbhook_8h.html#ga5a1ae5206971f0c296fa30b24e8725da":[5,0,0,3,1,118,1],
 "pios__usbhook_8h.html#ga6704b03262547936a31c1c9798c7cee0":[5,0,0,3,1,118,5],
 "pios__usbhook_8h.html#ga7c85e72dd0b0db640d1db8abb5427715":[5,0,0,3,1,118,2],
@@ -162,8 +154,8 @@ var NAVTREEINDEX109 =
 "playuavosd_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,10,1,3,11],
 "playuavosd_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,4,10,1,3,12],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,4,10,1,3,7],
-"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,9],
 "playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,10],
+"playuavosd_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,10,1,3,9],
 "playuavosd_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,4,10,1,3,6],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,4,10,1,3,0],
 "playuavosd_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,4,10,1,3,8],
@@ -249,5 +241,13 @@ var NAVTREEINDEX109 =
 "playuavosd_2fw_2mcuconf_8h.html#ga5339fe32096faad20bbcf31d2d5b45d1":[5,0,0,4,10,2,0,185],
 "playuavosd_2fw_2mcuconf_8h.html#ga54203015c2973969adee1dd719010d3a":[5,0,0,4,10,2,0,79],
 "playuavosd_2fw_2mcuconf_8h.html#ga554728f749ad9aca0102d189cc6bb9e7":[5,0,0,4,10,2,0,126],
-"playuavosd_2fw_2mcuconf_8h.html#ga562945e4ccd2bca4a4277eaa05ae70a0":[5,0,0,4,10,2,0,139]
+"playuavosd_2fw_2mcuconf_8h.html#ga562945e4ccd2bca4a4277eaa05ae70a0":[5,0,0,4,10,2,0,139],
+"playuavosd_2fw_2mcuconf_8h.html#ga56a0c40fe1260ca2265cc01d42668ca7":[5,0,0,4,10,2,0,204],
+"playuavosd_2fw_2mcuconf_8h.html#ga58845293676556a52d2046a00bcfbf9c":[5,0,0,4,10,2,0,77],
+"playuavosd_2fw_2mcuconf_8h.html#ga58e21948e78c6cf50c04e64363637dd4":[5,0,0,4,10,2,0,10],
+"playuavosd_2fw_2mcuconf_8h.html#ga59976b6c28b2561d2b6bd7e3940ea377":[5,0,0,4,10,2,0,146],
+"playuavosd_2fw_2mcuconf_8h.html#ga5a1f7bc818507d43f4d6592bff2ad486":[5,0,0,4,10,2,0,2],
+"playuavosd_2fw_2mcuconf_8h.html#ga5a90d9b62fd7b1a0180c2aec7d00089d":[5,0,0,4,10,2,0,82],
+"playuavosd_2fw_2mcuconf_8h.html#ga5c9e95d0806fd4faa34694d2f7ed8099":[5,0,0,4,10,2,0,83],
+"playuavosd_2fw_2mcuconf_8h.html#ga5df333941ca2fb9dec26a569e802dd57":[5,0,0,4,10,2,0,171]
 };

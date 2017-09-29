@@ -9,6 +9,7 @@ var dir_02e49bd200f4a664c3b24fc6e8b414e0 =
     [ "pios_initcall.h", "posix_2inc_2pios__initcall_8h.html", "posix_2inc_2pios__initcall_8h" ],
     [ "pios_irq.h", "posix_2inc_2pios__irq_8h.html", "posix_2inc_2pios__irq_8h" ],
     [ "pios_posix.h", "pios__posix_8h.html", "pios__posix_8h" ],
+    [ "pios_rtc_priv.h", "posix_2inc_2pios__rtc__priv_8h.html", "posix_2inc_2pios__rtc__priv_8h" ],
     [ "pios_serial_priv.h", "pios__serial__priv_8h.html", "pios__serial__priv_8h" ],
     [ "pios_spi_posix_priv.h", "pios__spi__posix__priv_8h.html", "pios__spi__posix__priv_8h" ],
     [ "pios_struct_helper.h", "posix_2inc_2pios__struct__helper_8h.html", "posix_2inc_2pios__struct__helper_8h" ],

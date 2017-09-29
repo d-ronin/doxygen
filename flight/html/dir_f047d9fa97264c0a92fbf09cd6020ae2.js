@@ -17,7 +17,7 @@ var dir_f047d9fa97264c0a92fbf09cd6020ae2 =
     [ "pios_flash_jedec.c", "pios__flash__jedec_8c.html", null ],
     [ "pios_flashfs_logfs.c", "pios__flashfs__logfs_8c.html", "pios__flashfs__logfs_8c" ],
     [ "pios_fskdac.c", "pios__fskdac_8c.html", null ],
-    [ "pios_gcsrcvr.c", "_common_2pios__gcsrcvr_8c.html", null ],
+    [ "pios_gcsrcvr.c", "pios__gcsrcvr_8c.html", null ],
     [ "pios_hal.c", "pios__hal_8c.html", "pios__hal_8c" ],
     [ "pios_hcsr04.c", "pios__hcsr04_8c.html", null ],
     [ "pios_heap.c", "_pi_o_s_2_common_2pios__heap_8c.html", "_pi_o_s_2_common_2pios__heap_8c" ],

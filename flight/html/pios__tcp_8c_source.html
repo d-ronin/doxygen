@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('pios__tcp_8c_source.html','');});
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__thread.html">pios_thread</a> *<a class="code" href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga88134912c15ef97345bf2366a762af27">tcpRxTaskHandle</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">struct </span><a class="code" href="structpios__thread.html">pios_thread</a> *tcpRxTaskHandle;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;int32_t <a class="code" href="pios__tcp__priv_8h.html#a49400c5424e34d985666d7776ca25c76">PIOS_TCP_Init</a>(uintptr_t *tcp_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__tcp__cfg.html">pios_tcp_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        pios_tcp_dev *tcp_dev = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(pios_tcp_dev));</div>
@@ -416,7 +416,6 @@ $(document).ready(function(){initNavTree('pios__tcp_8c_source.html','');});
 <div class="ttc" id="pios__tcp__priv_8h_html"><div class="ttname"><a href="pios__tcp__priv_8h.html">pios_tcp_priv.h</a></div><div class="ttdoc">TCP private definitions. </div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
-<div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga88134912c15ef97345bf2366a762af27"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga88134912c15ef97345bf2366a762af27">tcpRxTaskHandle</a></div><div class="ttdeci">struct pios_thread * tcpRxTaskHandle</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00064">pios_fileout.c:64</a></div></div>
 <div class="ttc" id="pios__crossfire_8h_html_ab2b3adeb2a67e656ff030b56727fd0ac"><div class="ttname"><a href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a></div><div class="ttdeci">uint8_t length</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00047">pios_crossfire.h:47</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gae66efd94087031615f497590a5fdb3ab"><div class="ttname"><a href="group___p_i_o_s___thread.html#gae66efd94087031615f497590a5fdb3ab">PIOS_THREAD_STACK_SIZE_MIN</a></div><div class="ttdeci">#define PIOS_THREAD_STACK_SIZE_MIN</div><div class="ttdef"><b>Definition:</b> <a href="pios__thread_8h_source.html#l00055">pios_thread.h:55</a></div></div>

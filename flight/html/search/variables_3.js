@@ -104,6 +104,7 @@ var searchData=
   ['contents',['contents',['../structcirc__queue.html#afa27dbf3b7f7210a1d0122bc99c76d43',1,'circ_queue']]],
   ['context',['context',['../group___p_i_o_s___t_i_m.html#ga033f5003c8e58968e84535f26fa19bf2',1,'pios_tim_dev::context()'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga67da66c4a26e52d3273da619b0af0cc3',1,'usb_if_entry::context()'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#gade16213f02f3a003892a75bc5e510065',1,'usb_ep_entry::context()']]],
   ['control_5finterval',['control_interval',['../structsmoothcontrol__state__internal.html#a8f8d22d5a8c6d2fa614a98197cd02cb3',1,'smoothcontrol_state_internal']]],
+  ['control_5fstatus',['control_status',['../group___control.html#gaad546ed9f8ad3081d01c7abb5fd08d9a',1,'transmitter_control.c']]],
   ['convert_5fdistance',['convert_distance',['../group___on_screen_display.html#ga525a4d4935765d70fa757023c41062de',1,'onscreendisplay.c']]],
   ['convert_5fdistance_5fdivider',['convert_distance_divider',['../group___on_screen_display.html#ga9ab738925834f9f467784b422904903c',1,'onscreendisplay.c']]],
   ['convert_5fspeed',['convert_speed',['../group___on_screen_display.html#ga0577979b73f4239cadf872495c3d1791',1,'onscreendisplay.c']]],

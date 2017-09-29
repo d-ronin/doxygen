@@ -87,7 +87,7 @@ var dir_fad6fa281ca7e047076b33e1c7de279c =
     [ "pios_rfm22b_rcvr_priv.h", "pios__rfm22b__rcvr__priv_8h.html", "pios__rfm22b__rcvr__priv_8h" ],
     [ "pios_rfm22b_regs.h", "pios__rfm22b__regs_8h.html", "pios__rfm22b__regs_8h" ],
     [ "pios_rtc.h", "pios__rtc_8h.html", "pios__rtc_8h" ],
-    [ "pios_rtc_priv.h", "pios__rtc__priv_8h.html", "pios__rtc__priv_8h" ],
+    [ "pios_rtc_priv.h", "inc_2pios__rtc__priv_8h.html", "inc_2pios__rtc__priv_8h" ],
     [ "pios_semaphore.h", "pios__semaphore_8h.html", "pios__semaphore_8h" ],
     [ "pios_sensors.h", "pios__sensors_8h.html", "pios__sensors_8h" ],
     [ "pios_servo.h", "pios__servo_8h.html", "pios__servo_8h" ],

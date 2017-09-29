@@ -5,7 +5,6 @@ var searchData=
   ['failed_5fjump',['failed_jump',['../group___common_f1.html#gga9a9e510f2da4e725074c7191d9d75d37a77b323a446c491f5e635b3eaaa37cfd4',1,'common.h']]],
   ['failsafe_5fcontrol_2ec',['failsafe_control.c',['../failsafe__control_8c.html',1,'']]],
   ['failsafe_5fcontrol_2eh',['failsafe_control.h',['../failsafe__control_8h.html',1,'']]],
-  ['failsafe_5fcontrol_5fget_5fevents',['failsafe_control_get_events',['../group___control.html#ga4741ee1f75fdb35137c598e00e3fcbae',1,'failsafe_control.c']]],
   ['failsafe_5fcontrol_5finitialize',['failsafe_control_initialize',['../group___control.html#ga7ce4be6cb90b629500ec2db534d375f6',1,'failsafe_control.c']]],
   ['failsafe_5fcontrol_5fselect',['failsafe_control_select',['../group___control.html#gad1912458768a13e3fee44acb5992f1d0',1,'failsafe_control.c']]],
   ['failsafe_5fcontrol_5fupdate',['failsafe_control_update',['../group___control.html#gab5211c13a168641b8f8aa3df9c8b26c2',1,'failsafe_control.c']]],

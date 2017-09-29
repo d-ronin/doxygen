@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -109,7 +109,6 @@ $(document).ready(function(){initNavTree('transmitter__control_8c.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -154,20 +153,8 @@ Macros</h2></td></tr>
 <tr class="separator:gaae590ca386f9aae8c8b5c3dbee14d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa896c98cb7043f78c533039f379af145"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaa896c98cb7043f78c533039f379af145">MIN_MEANINGFUL_RANGE</a>&#160;&#160;&#160;40</td></tr>
 <tr class="separator:gaa896c98cb7043f78c533039f379af145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gabc93537d93556a29eb5f2bcaaeaddb34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gabc93537d93556a29eb5f2bcaaeaddb34">arm_state</a> { <br/>
-&#160;&#160;<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a2f34987e2e81245760bad38d871bd766">ARM_STATE_DISARMED</a>, 
-<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34ac4458565983bb606e296625d52d1796e">ARM_STATE_ARMING</a>, 
-<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a674765fd3a3ca18183bb7a1e6ecb8c72">ARM_STATE_ARMED_STILL_HOLDING</a>, 
-<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a5703b08b4383be1fc1f688336caa647c">ARM_STATE_ARMED</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a3acfa92fa110deef1868533b64bf5de5">ARM_STATE_DISARMING</a>, 
-<a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34adaa0e7a55229d40c4d8733c00604b3a3">ARM_STATE_DISARMED_STILL_HOLDING</a>
-<br/>
- }</td></tr>
-<tr class="separator:gabc93537d93556a29eb5f2bcaaeaddb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71a74dea431ba8a773753ddec35e10f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga71a74dea431ba8a773753ddec35e10f2">RECEIVER_TIMER_FIRED</a>&#160;&#160;&#160;0xffffffff</td></tr>
+<tr class="separator:ga71a74dea431ba8a773753ddec35e10f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -203,9 +190,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaf8e9c1f83d82625a00f42db7a40d4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f25a8982ae99130a366c8a339c3d335"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga2f25a8982ae99130a366c8a339c3d335">set_loiter_command</a> (ManualControlCommandData *<a class="el" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>, SystemSettingsAirframeTypeOptions *<a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>)</td></tr>
 <tr class="separator:ga2f25a8982ae99130a366c8a339c3d335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab345c897718f58190926ac49670270bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gab345c897718f58190926ac49670270bc">set_armed_if_changed</a> (uint8_t new_arm)</td></tr>
-<tr class="memdesc:gab345c897718f58190926ac49670270bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the appropriate event to change the arm status.  <a href="group___control.html#gab345c897718f58190926ac49670270bc">More...</a><br/></td></tr>
-<tr class="separator:gab345c897718f58190926ac49670270bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a> (void)</td></tr>
 <tr class="memdesc:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the aircraft is safe to arm based on alarms.  <a href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">More...</a><br/></td></tr>
 <tr class="separator:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,9 +205,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6ffb050d1f10ab7aa441ce65629e26bd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga6ffb050d1f10ab7aa441ce65629e26bd">transmitter_control_select</a> (bool reset_controller)</td></tr>
 <tr class="memdesc:ga6ffb050d1f10ab7aa441ce65629e26bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select and use transmitter control.  <a href="group___control.html#ga6ffb050d1f10ab7aa441ce65629e26bd">More...</a><br/></td></tr>
 <tr class="separator:ga6ffb050d1f10ab7aa441ce65629e26bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51dc43f87515d8de90aebb1465578212"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a> ()</td></tr>
-<tr class="memdesc:ga51dc43f87515d8de90aebb1465578212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any control events.  <a href="group___control.html#ga51dc43f87515d8de90aebb1465578212">More...</a><br/></td></tr>
-<tr class="separator:ga51dc43f87515d8de90aebb1465578212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fd08c09ab8f5c837de78099706118f2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___control.html#ga1b6a1d5c5701f7bd6c4cf4c4a6a2f231">control_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga8fd08c09ab8f5c837de78099706118f2">transmitter_control_get_status</a> ()</td></tr>
+<tr class="memdesc:ga8fd08c09ab8f5c837de78099706118f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any control events.  <a href="group___control.html#ga8fd08c09ab8f5c837de78099706118f2">More...</a><br/></td></tr>
+<tr class="separator:ga8fd08c09ab8f5c837de78099706118f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71762ca401b9c08895878db9731fde77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga71762ca401b9c08895878db9731fde77">transmitter_control_get_flight_mode</a> ()</td></tr>
 <tr class="memdesc:ga71762ca401b9c08895878db9731fde77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query what the flight mode <em>would</em> be if this is selected.  <a href="group___control.html#ga71762ca401b9c08895878db9731fde77">More...</a><br/></td></tr>
 <tr class="separator:ga71762ca401b9c08895878db9731fde77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +215,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga7296e1a05eac30a060752034ea550e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa143ed12d454d87209a61c6a41087c7c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaa143ed12d454d87209a61c6a41087c7c">disarming_position</a> (ManualControlCommandData *<a class="el" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>, ManualControlSettingsData *<a class="el" href="group___stabilization_module.html#ga8bf4ac3d6681874b9c0c5effe66fb21f">settings</a>)</td></tr>
 <tr class="separator:gaa143ed12d454d87209a61c6a41087c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58d5b8b33392bd17a6b13ebe72b89155"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga58d5b8b33392bd17a6b13ebe72b89155">disarm_commanded</a> (ManualControlCommandData *<a class="el" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>, ManualControlSettingsData *<a class="el" href="group___stabilization_module.html#ga8bf4ac3d6681874b9c0c5effe66fb21f">settings</a>)</td></tr>
+<tr class="separator:ga58d5b8b33392bd17a6b13ebe72b89155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7668231582cbe152c919d7523277376"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gae7668231582cbe152c919d7523277376">reset_receiver_timer</a> ()</td></tr>
+<tr class="separator:gae7668231582cbe152c919d7523277376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfa7190c4cd9bc78c79f397495d72703"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gabfa7190c4cd9bc78c79f397495d72703">check_receiver_timer</a> (uint32_t threshold)</td></tr>
+<tr class="separator:gabfa7190c4cd9bc78c79f397495d72703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga595d7ebc121be98581bb9816478a6d3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga595d7ebc121be98581bb9816478a6d3a">updateRcvrActivitySample</a> (uintptr_t rcvr_id, uint16_t samples[], uint8_t max_channels)</td></tr>
 <tr class="separator:ga595d7ebc121be98581bb9816478a6d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac18d7e7f5f3a9df4cb804d69a6a10ac8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gac18d7e7f5f3a9df4cb804d69a6a10ac8">updateRcvrActivityCompare</a> (uintptr_t rcvr_id, struct <a class="el" href="structrcvr__activity__fsm.html">rcvr_activity_fsm</a> *fsm)</td></tr>
@@ -261,12 +251,12 @@ SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bot
 <tr class="separator:ga8212bdcf43b96930a3cb55cfad7b7133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9806aa55418cb04b856e5c505dc34e2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaa9806aa55418cb04b856e5c505dc34e2">flight_mode_value</a></td></tr>
 <tr class="separator:gaa9806aa55418cb04b856e5c505dc34e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga234e4018ff96495bc57d17f6b6b0a44f"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga234e4018ff96495bc57d17f6b6b0a44f">pending_control_event</a></td></tr>
-<tr class="separator:ga234e4018ff96495bc57d17f6b6b0a44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad546ed9f8ad3081d01c7abb5fd08d9a"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___control.html#ga1b6a1d5c5701f7bd6c4cf4c4a6a2f231">control_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gaad546ed9f8ad3081d01c7abb5fd08d9a">control_status</a></td></tr>
+<tr class="separator:gaad546ed9f8ad3081d01c7abb5fd08d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade9d212034a2a804363c79d594d8f4c2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gade9d212034a2a804363c79d594d8f4c2">settings_updated</a></td></tr>
 <tr class="separator:gade9d212034a2a804363c79d594d8f4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c369fabe90f4e505e6598bb22685d99"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___control.html#gabc93537d93556a29eb5f2bcaaeaddb34">arm_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga8c369fabe90f4e505e6598bb22685d99">arm_state</a> = <a class="el" href="group___control.html#ggabc93537d93556a29eb5f2bcaaeaddb34a2f34987e2e81245760bad38d871bd766">ARM_STATE_DISARMED</a></td></tr>
-<tr class="separator:ga8c369fabe90f4e505e6598bb22685d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ce79772381dd45988152d4c5eab2456"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga1ce79772381dd45988152d4c5eab2456">receiver_timer</a> = <a class="el" href="group___control.html#ga71a74dea431ba8a773753ddec35e10f2">RECEIVER_TIMER_FIRED</a></td></tr>
+<tr class="separator:ga1ce79772381dd45988152d4c5eab2456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles R/C link and flight mode. </p>

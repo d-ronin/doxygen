@@ -25,6 +25,7 @@ var targets_2simulation_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_OPENLOG", "targets_2simulation_2fw_2pios__config_8h.html#ga7cdda1c4d728fde7a9771add071a3ff3", null ],
     [ "PIOS_INCLUDE_RANGEFINDER", "targets_2simulation_2fw_2pios__config_8h.html#ga0e496387ab86b27f3a53fed5888c9c52", null ],
     [ "PIOS_INCLUDE_RCVR", "targets_2simulation_2fw_2pios__config_8h.html#gac34deb93cfe0b86c0c3f3fdd297af181", null ],
+    [ "PIOS_INCLUDE_RTC", "targets_2simulation_2fw_2pios__config_8h.html#gaa16397b163ac65bc5fc212b03e69dfa8", null ],
     [ "PIOS_INCLUDE_RTOS", "targets_2simulation_2fw_2pios__config_8h.html#gaa9690634a61cf870007fbda7f6c0d975", null ],
     [ "PIOS_INCLUDE_SERVO", "targets_2simulation_2fw_2pios__config_8h.html#ga48264c60bf3326bbbb3d3d9057cde39c", null ],
     [ "PIOS_INCLUDE_SYS", "targets_2simulation_2fw_2pios__config_8h.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],

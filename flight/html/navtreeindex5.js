@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"_u_a_v_o_taranis_8c.html":[5,0,0,2,34,0],
-"_u_a_v_o_taranis_8c_source.html":[5,0,0,2,34,0],
 "_u_b_x_8c.html":[5,0,0,2,14,3],
 "_u_b_x_8c_source.html":[5,0,0,2,14,3],
 "_u_b_x_8h.html":[5,0,0,2,14,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "aq32_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,4,0,1,0,9],
 "aq32_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03":[5,0,0,4,0,1,0,7],
 "aq32_2board-info_2board__hw__defs_8c.html#ga55af106ce8c8f61b05b8e580f159eb5e":[5,0,0,4,0,1,0,6],
-"aq32_2board-info_2board__hw__defs_8c.html#ga7699f3d39593ed9c21e9c9efc177c321":[5,0,0,4,0,1,0,8]
+"aq32_2board-info_2board__hw__defs_8c.html#ga7699f3d39593ed9c21e9c9efc177c321":[5,0,0,4,0,1,0,8],
+"aq32_2board-info_2board__hw__defs_8c.html#ga8fa34328b6fc6dbd579df2882242fe03":[5,0,0,4,0,1,0,0],
+"aq32_2board-info_2board__hw__defs_8c.html#gad3ea54016297828fa3b2fad1ce1b7f34":[5,0,0,4,0,1,0,3]
 };

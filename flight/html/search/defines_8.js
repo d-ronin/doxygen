@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['i2c1_5fer_5firqhandler',['I2C1_ER_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#ad8e382b9ce2bb267c7414c7185637654',1,'I2C1_ER_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ad8e382b9ce2bb267c7414c7185637654',1,'I2C1_ER_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ad8e382b9ce2bb267c7414c7185637654',1,'I2C1_ER_IRQHandler():&#160;pios_chibios_transition_priv.h']]],
-  ['i2c1_5fev_5fexti23_5firqhandler',['I2C1_EV_EXTI23_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#ae11a4ed68656b005a1932147ae7a6d27',1,'pios_chibios_transition_priv.h']]],
-  ['i2c1_5fev_5firqhandler',['I2C1_EV_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a83e61d3d4eb31c12a4369f6b1d9fa742',1,'I2C1_EV_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a83e61d3d4eb31c12a4369f6b1d9fa742',1,'I2C1_EV_IRQHandler():&#160;pios_chibios_transition_priv.h']]],
-  ['i2c2_5fer_5firqhandler',['I2C2_ER_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a1a98d05b127fa293a1210397bda82007',1,'I2C2_ER_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a1a98d05b127fa293a1210397bda82007',1,'I2C2_ER_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a1a98d05b127fa293a1210397bda82007',1,'I2C2_ER_IRQHandler():&#160;pios_chibios_transition_priv.h']]],
-  ['i2c2_5fev_5fexti24_5firqhandler',['I2C2_EV_EXTI24_IRQHandler',['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#aa9560fdc42e784140fe7faefa15efcef',1,'pios_chibios_transition_priv.h']]],
-  ['i2c2_5fev_5firqhandler',['I2C2_EV_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a0b8dacb7ac76cfc954fd0db2d5e53025',1,'I2C2_EV_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a0b8dacb7ac76cfc954fd0db2d5e53025',1,'I2C2_EV_IRQHandler():&#160;pios_chibios_transition_priv.h']]],
-  ['i2c3_5fer_5firqhandler',['I2C3_ER_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a0fbd550a02ce90cd4a45bf2e580bc73e',1,'pios_chibios_transition_priv.h']]],
-  ['i2c3_5fev_5firqhandler',['I2C3_EV_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a7abf157f6d7780a8161f64bd0db757e6',1,'pios_chibios_transition_priv.h']]],
-  ['i2c_5fconfig',['I2C_CONFIG',['../pios__i2c__config_8h.html#adc3b63b528a64b09bf9fe54b1e46790c',1,'pios_i2c_config.h']]],
-  ['imarm_5fblb',['imARM_BLB',['../serial__4way_8h.html#a33236cebdffb32b66da07bba4072e622',1,'serial_4way.h']]],
-  ['imatm_5fblb',['imATM_BLB',['../serial__4way_8h.html#a9eb51c915e06160f1725fe0fecc4f97f',1,'serial_4way.h']]],
-  ['imc2',['imC2',['../serial__4way_8h.html#ae5a164dd616eb1c5c1de467a8a164163',1,'serial_4way.h']]],
-  ['imsil_5fblb',['imSIL_BLB',['../serial__4way_8h.html#a798e875f129248d449af0684b619cc34',1,'serial_4way.h']]],
-  ['imsk',['imSK',['../serial__4way_8h.html#a0644f1121715e03abce3dc3cf6fa3450',1,'serial_4way.h']]],
-  ['init_5fcheck_5fuavo',['INIT_CHECK_UAVO',['../mspuavobridge_8c.html#ad140dbf3a827a225940b7f63eec87f84',1,'mspuavobridge.c']]],
-  ['irqstack_5flimit_5fcritical',['IRQSTACK_LIMIT_CRITICAL',['../pios__flight__config_8h.html#ab45890a416f5e2177b434d93d89c362f',1,'pios_flight_config.h']]],
-  ['irqstack_5flimit_5fwarning',['IRQSTACK_LIMIT_WARNING',['../pios__flight__config_8h.html#ae97115db8cae2e29462308550992c153',1,'pios_flight_config.h']]]
+  ['hash_5frng_5firqhandler',['HASH_RNG_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a02197754de1bce261e192d5e5221f20e',1,'pios_chibios_transition_priv.h']]],
+  ['heap_5flimit_5fcritical',['HEAP_LIMIT_CRITICAL',['../pios__flight__config_8h.html#ad3537a058b1f030fb6243c09a2532112',1,'pios_flight_config.h']]],
+  ['heap_5flimit_5fwarning',['HEAP_LIMIT_WARNING',['../pios__flight__config_8h.html#a6e7afec1958cbda03ec47ff50da7b749',1,'pios_flight_config.h']]]
 ];

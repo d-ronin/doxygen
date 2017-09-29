@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"group___attitude_module.html#ga5b9ca9b050dc607b1927cd4852ca9c6f":[2,4,3,13],
-"group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e":[2,4,3,28],
 "group___attitude_module.html#ga6284b520eced53bee05e93510e93a5e5":[2,4,3,48],
 "group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697":[2,4,3,49],
 "group___attitude_module.html#ga6604331f3424247baba9350e067288e6":[2,4,3,25],
@@ -73,8 +71,8 @@ var NAVTREEINDEX19 =
 "group___bootloader.html":[2,6],
 "group___brain.html":[2,6,3],
 "group___brain.html":[2,5,1],
-"group___brain.html#ga00ad81d320aaeb3ca4899228c4155848":[2,5,1,210],
 "group___brain.html#ga00ad81d320aaeb3ca4899228c4155848":[2,6,3,210],
+"group___brain.html#ga00ad81d320aaeb3ca4899228c4155848":[2,5,1,210],
 "group___brain.html#ga00b873df699111f00e6093ed5759e08e":[2,6,3,126],
 "group___brain.html#ga00b873df699111f00e6093ed5759e08e":[2,5,1,126],
 "group___brain.html#ga01b2a27910cfaed8a40043c8efe1e9a4":[2,5,1,228],
@@ -131,8 +129,8 @@ var NAVTREEINDEX19 =
 "group___brain.html#ga14406df3e82b63f96a67959b5dbff667":[2,5,1,113],
 "group___brain.html#ga19080c8c395ae24df995fa57a2291465":[2,6,3,108],
 "group___brain.html#ga19080c8c395ae24df995fa57a2291465":[2,5,1,108],
-"group___brain.html#ga1a241d0b75f05fe97673e1bd71bff136":[2,5,1,207],
 "group___brain.html#ga1a241d0b75f05fe97673e1bd71bff136":[2,6,3,207],
+"group___brain.html#ga1a241d0b75f05fe97673e1bd71bff136":[2,5,1,207],
 "group___brain.html#ga1af1755811426df00f4a2077e1bc242c":[2,5,1,317],
 "group___brain.html#ga1af1755811426df00f4a2077e1bc242c":[2,6,3,317],
 "group___brain.html#ga1b1fc49ad496637c0d24c274c6c17c01":[2,6,3,164],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "group___brain.html#ga42a8bb439be9c6c643c7ab48f02ee662":[2,6,3,219],
 "group___brain.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c":[2,5,1,302],
 "group___brain.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c":[2,6,3,302],
-"group___brain.html#ga43838b989448ecf9013b0e07e8bba565":[2,6,3,180]
+"group___brain.html#ga43838b989448ecf9013b0e07e8bba565":[2,6,3,180],
+"group___brain.html#ga43838b989448ecf9013b0e07e8bba565":[2,5,1,180],
+"group___brain.html#ga43f939b526e5a4c85156061acaa090f9":[2,6,3,169]
 };

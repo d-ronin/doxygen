@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_s_t_m32_2pios__debug_8c.html#ga8ac0ce4c2f2fa85c17f8de9740bc2026":[5,0,0,3,3,3,3],
-"_s_t_m32_2pios__debug_8c.html#gae3876733b5e6b40c8fcbdb683d206068":[5,0,0,3,3,3,1],
 "_s_t_m32_2pios__debug_8c.html#gaede09e7ce20c100871607d36904bea37":[5,0,0,3,3,3,6],
 "_s_t_m32_2pios__debug_8c_source.html":[5,0,0,3,3,3],
 "_s_t_m32_2pios__delay_8c.html":[5,0,0,3,3,4],
@@ -119,10 +117,10 @@ var NAVTREEINDEX1 =
 "_s_t_m32_f0xx_2pios__tim_8c.html#gae5ad04756b88bd027fc9be69e221d5d9":[5,0,0,3,4,4,9],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,3,4,4,12],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,3,4,4,4],
+"_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,4,4,0,0],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,4,4,0,1],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,4,4,0,2],
 "_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,4,4,0,3],
-"_s_t_m32_f0xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,4,4,0,0],
 "_s_t_m32_f0xx_2pios__tim_8c_source.html":[5,0,0,3,4,4],
 "_s_t_m32_f0xx_2pios__usart_8c.html":[5,0,0,3,4,5],
 "_s_t_m32_f0xx_2pios__usart_8c_source.html":[5,0,0,3,4,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "_s_t_m32_f10x_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,3,5,8,8],
 "_s_t_m32_f10x_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,3,5,8,4],
 "_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,0],
+"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,1],
+"_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,2],
 "_s_t_m32_f10x_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,5,8,0,3]
 };

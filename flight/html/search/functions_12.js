@@ -21,7 +21,6 @@ var searchData=
   ['sensorstask',['SensorsTask',['../group___sensors.html#ga855e990099b8d78fb6be1598dd69ccfe',1,'SensorsTask(void *parameters):&#160;sensors.c'],['../simsensors_8c.html#ga855e990099b8d78fb6be1598dd69ccfe',1,'SensorsTask(void *parameters):&#160;simsensors.c']]],
   ['serialupdate',['SerialUpdate',['../group___i_n_s_g_p_s.html#ga4ae89830422fa564e86fd0fc2aa6267a',1,'SerialUpdate(float H[NUMV][NUMX], float R[NUMV], float Z[NUMV], float Y[NUMV], float P[NUMX][NUMX], float X[NUMX], uint16_t SensorsUsed):&#160;insgps14state.c'],['../group___libraries.html#gadc7350401ea330a4b250a3c6fb8a4468',1,'SerialUpdate(float H[NUMV][NUMX], float R[NUMV], float Z[NUMV], float Y[NUMV], float P[NUMX][NUMX], float X[NUMX], uint16_t SensorsUsed):&#160;insgps13state.c']]],
   ['session_5fmanaging_5fupdated',['session_managing_updated',['../group___telemetry_module.html#gadefbd4671bb99ddde5f4003872f332dd',1,'telemetry.c']]],
-  ['set_5farmed_5fif_5fchanged',['set_armed_if_changed',['../group___control.html#gab345c897718f58190926ac49670270bc',1,'transmitter_control.c']]],
   ['set_5fbaudrate',['set_baudrate',['../group___msp_uavo_bridge.html#ga157d180d3c1eb2ad5eb00ffe46e2358d',1,'mspuavobridge.c']]],
   ['set_5fconfig_5ferror',['set_config_error',['../group___libraries.html#gae62c697d4457674e78e13375fc1dabc2',1,'sanitycheck.c']]],
   ['set_5ffailsafe',['set_failsafe',['../group___actuator_module.html#ga6e8c5a2f546ec4906bbeb387959a7b8d',1,'actuator.c']]],

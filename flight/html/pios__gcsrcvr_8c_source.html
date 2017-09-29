@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('_common_2pios__gcsrcvr_8c_source.html','');});
+$(document).ready(function(){initNavTree('pios__gcsrcvr_8c_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_common_2pios__gcsrcvr_8c_source.html'
 <div class="title">pios_gcsrcvr.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_common_2pios__gcsrcvr_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="pios__gcsrcvr_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_common_2pios__gcsrcvr_8c_source.html'
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span>pios_gcsrcvr_dev {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">enum</span> pios_gcsrcvr_dev_magic <a class="code" href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        uint8_t supv_timer;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        uint16_t supv_timer;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> Fresh;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
@@ -235,20 +235,21 @@ $(document).ready(function(){initNavTree('_common_2pios__gcsrcvr_8c_source.html'
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">/* </span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">         * RTC runs at 625Hz.</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span>(++(gcsrcvr_dev-&gt;supv_timer) &lt; (<a class="code" href="group___a_q32.html#ga7f93f74c93a49c6f7b372dbb55b851f6">PIOS_GCSRCVR_TIMEOUT_MS</a> * 1000 / 625)) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> ((++gcsrcvr_dev-&gt;supv_timer) &lt; (<a class="code" href="group___a_q32.html#ga7f93f74c93a49c6f7b372dbb55b851f6">PIOS_GCSRCVR_TIMEOUT_MS</a> * 1000 / 625)) {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        gcsrcvr_dev-&gt;supv_timer = 0;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (!gcsrcvr_dev-&gt;Fresh)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (!gcsrcvr_dev-&gt;Fresh) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">for</span> (int32_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; GCSRECEIVER_CHANNEL_NUMELEM; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        gcsreceiverdata.Channel[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = <a class="code" href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        gcsrcvr_dev-&gt;Fresh = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_GCSRCVR */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        gcsrcvr_dev-&gt;Fresh = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_GCSRCVR */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__rcvr__driver_html_af8311763de593fff9c2ea958b5258305"><div class="ttname"><a href="structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305">pios_rcvr_driver::read</a></div><div class="ttdeci">int32_t(* read)(uintptr_t id, uint8_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00035">pios_rcvr.h:35</a></div></div>
 <div class="ttc" id="pios__gcsrcvr__priv_8h_html"><div class="ttname"><a href="pios__gcsrcvr__priv_8h.html">pios_gcsrcvr_priv.h</a></div><div class="ttdoc">GCS receiver private functions. </div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
@@ -269,7 +270,7 @@ $(document).ready(function(){initNavTree('_common_2pios__gcsrcvr_8c_source.html'
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_f047d9fa97264c0a92fbf09cd6020ae2.html">Common</a></li><li class="navelem"><a class="el" href="_common_2pios__gcsrcvr_8c.html">pios_gcsrcvr.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_f047d9fa97264c0a92fbf09cd6020ae2.html">Common</a></li><li class="navelem"><a class="el" href="pios__gcsrcvr_8c.html">pios_gcsrcvr.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

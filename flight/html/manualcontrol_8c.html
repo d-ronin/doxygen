@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -140,6 +140,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4e8e7d6fdd1f5c6f8a0f341e4b61f025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga4e8e7d6fdd1f5c6f8a0f341e4b61f025">UPDATE_PERIOD_MS</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:ga4e8e7d6fdd1f5c6f8a0f341e4b61f025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b63bf1972b3dad943ab7e31454959f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(x)</td></tr>
+<tr class="separator:a33b63bf1972b3dad943ab7e31454959f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,15 +151,6 @@ Functions</h2></td></tr>
 FlightStatusControlSourceOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">control_source_select</a> ()</td></tr>
 <tr class="memdesc:ga5e0cfaff8777cef85564c6db20469bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">control_source_select Determine which sub-module to use for the main control source of the flight controller.  <a href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">More...</a><br/></td></tr>
 <tr class="separator:ga5e0cfaff8777cef85564c6db20469bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9062e44a51cfc95175507f7d7e76c9be"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga9062e44a51cfc95175507f7d7e76c9be">control_event_arm</a> ()</td></tr>
-<tr class="memdesc:ga9062e44a51cfc95175507f7d7e76c9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the control system requests to arm the FC.  <a href="group___control.html#ga9062e44a51cfc95175507f7d7e76c9be">More...</a><br/></td></tr>
-<tr class="separator:ga9062e44a51cfc95175507f7d7e76c9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f0fed3573f7a6e40d7ddb91fa7848e6"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#ga0f0fed3573f7a6e40d7ddb91fa7848e6">control_event_arming</a> ()</td></tr>
-<tr class="memdesc:ga0f0fed3573f7a6e40d7ddb91fa7848e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the control system requests to start arming the FC.  <a href="group___control.html#ga0f0fed3573f7a6e40d7ddb91fa7848e6">More...</a><br/></td></tr>
-<tr class="separator:ga0f0fed3573f7a6e40d7ddb91fa7848e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb17fcbfc477043c0fe7666d05bbc40b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gafb17fcbfc477043c0fe7666d05bbc40b">control_event_disarm</a> ()</td></tr>
-<tr class="memdesc:gafb17fcbfc477043c0fe7666d05bbc40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the control system requests to disarm the FC.  <a href="group___control.html#gafb17fcbfc477043c0fe7666d05bbc40b">More...</a><br/></td></tr>
-<tr class="separator:gafb17fcbfc477043c0fe7666d05bbc40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a> (void)</td></tr>
 <tr class="memdesc:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the aircraft is safe to arm based on alarms.  <a href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">More...</a><br/></td></tr>
 <tr class="separator:gab4d9e85efcf5f9dafe0083f8599dfcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +174,28 @@ Variables</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
 
 <p>Definition in file <a class="el" href="manualcontrol_8c_source.html">manualcontrol.c</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a33b63bf1972b3dad943ab7e31454959f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GO_STATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
+<div class="line">                                        arm_state = (x); \</div>
+<div class="line">                                        arm_state_time = (now); \</div>
+<div class="line">                                } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -149,6 +149,7 @@ var searchData=
   ['dio_5ftoggle',['dio_toggle',['../group___p_i_o_s___d_i_o.html#ga1d92467854c7d4a9db7c0ba4aaf0fa2d',1,'pios_dio.h']]],
   ['dio_5fwrite',['dio_write',['../group___p_i_o_s___d_i_o.html#gad935cbfbd4f7b81786fe41a19b6ea487',1,'pios_dio.h']]],
   ['direction_5fto_5fhome',['direction_to_home',['../structmsp__comp__gps.html#ae0b308fc944bde7238a13aed8d761662',1,'msp_comp_gps::direction_to_home()'],['../msp__messages_8h.html#a72ab2fb8a8769f8173cd68da32533799',1,'direction_to_home():&#160;msp_messages.h']]],
+  ['disarm_5fcommanded',['disarm_commanded',['../group___control.html#ga58d5b8b33392bd17a6b13ebe72b89155',1,'transmitter_control.c']]],
   ['disarming_5fposition',['disarming_position',['../group___control.html#gaa143ed12d454d87209a61c6a41087c7c',1,'transmitter_control.c']]],
   ['disconnect',['disconnect',['../structpios__usb__cfg.html#a9fbf346e4e1e462a23bb099f5de704a8',1,'pios_usb_cfg']]],
   ['disconnected',['DISCONNECTED',['../group___v_t_x_config.html#gga275a67132f10277ada3a0ee3d616b647acdaad1112073e3e2ea032424c38c34e1',1,'VTXConfig.c']]],

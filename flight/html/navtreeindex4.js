@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba0150e4e3b19fa26b36711b9780b7800d":[5,0,0,3,7,0,4,3,13],
-"_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba0150e4e3b19fa26b36711b9780b7800d":[5,0,0,3,7,0,4,3,39],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,7,0,4,3,23],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,7,0,4,3,51],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba1981fea3596cb9bdbc29858f600ba8d5":[5,0,0,3,7,0,4,3,49],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "_u_a_v_o_mavlink_bridge_8c.html#gac4c1dc0eaee28f2612a6dc46296b3df9":[5,0,0,2,32,0,4],
 "_u_a_v_o_mavlink_bridge_8c.html#gad0b9bd8f45359133da342c354426cb80":[5,0,0,2,32,0,9],
 "_u_a_v_o_mavlink_bridge_8c.html#gafe7b7ec53bf7665ec9f01e00f2fdbbea":[5,0,0,2,32,0,6],
-"_u_a_v_o_mavlink_bridge_8c_source.html":[5,0,0,2,32,0]
+"_u_a_v_o_mavlink_bridge_8c_source.html":[5,0,0,2,32,0],
+"_u_a_v_o_taranis_8c.html":[5,0,0,2,34,0],
+"_u_a_v_o_taranis_8c_source.html":[5,0,0,2,34,0]
 };

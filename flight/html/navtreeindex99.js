@@ -1,10 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"pios__bmx055__priv_8h.html#gab2874319bb44ab401d463998f360334e":[5,0,0,3,1,13,9],
-"pios__bmx055__priv_8h.html#gab6129d4b734b8650b5dd2d3e9a317c31":[5,0,0,3,1,13,31],
-"pios__bmx055__priv_8h.html#gabbebaeace399e056f761bfa2b69b4eab":[5,0,0,3,1,13,39],
-"pios__bmx055__priv_8h.html#gabd4d6f69d755bd5b24935dc4b2ab8893":[5,0,0,3,1,13,107],
-"pios__bmx055__priv_8h.html#gac006c4aec51d6fb963212be94476e5ad":[5,0,0,3,1,13,97],
 "pios__bmx055__priv_8h.html#gac3d8d48e6ed7709ff3dd42d6acd0a01b":[5,0,0,3,1,13,130],
 "pios__bmx055__priv_8h.html#gac3fc3242fca574e91edb6b6fbebdb7cf":[5,0,0,3,1,13,38],
 "pios__bmx055__priv_8h.html#gac65c5fcf7dc6d98f689c928ab233f9c6":[5,0,0,3,1,13,89],
@@ -175,8 +170,8 @@ var NAVTREEINDEX99 =
 "pios__crossfire_8h.html#gab65a3705c413c56ea4c4e787e51e0884":[5,0,0,3,1,22,15],
 "pios__crossfire_8h.html#gab7f9d424348d8f18fbd99e3e0e27db5f":[5,0,0,3,1,22,19],
 "pios__crossfire_8h.html#gac414d5a8a1fc9e6b34150388de6b42ae":[5,0,0,3,1,22,12],
-"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,22,8],
 "pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,22,9],
+"pios__crossfire_8h.html#gac80fa85c9f210ce3d2575f986c047a68":[5,0,0,3,1,22,8],
 "pios__crossfire_8h.html#gadc780303ee10c7d52c240a9a5abe9d41":[5,0,0,3,1,22,10],
 "pios__crossfire_8h.html#gadd03cdba4acdbe0501ee1b3b6ddf8d0d":[5,0,0,3,1,22,18],
 "pios__crossfire_8h.html#gaecddfff0c4a244683f7d975248bd8b8a":[5,0,0,3,1,22,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX99 =
 "pios__dmashot_8h.html#ga580aaa2186df6fd2b006884340f802bd":[5,0,0,3,7,0,2,1],
 "pios__dmashot_8h.html#ga767daeafe9be8da644d17373a247ed77":[5,0,0,3,7,0,2,12],
 "pios__dmashot_8h.html#ga849977259da4e1934b92a7dbe57a8e16":[5,0,0,3,7,0,2,7],
-"pios__dmashot_8h.html#ga8883e99193f7eb319590341b107ff35e":[5,0,0,3,7,0,2,5]
+"pios__dmashot_8h.html#ga8883e99193f7eb319590341b107ff35e":[5,0,0,3,7,0,2,5],
+"pios__dmashot_8h.html#gaaa1b6aa7e48c843d9af72aa782fbfe6f":[5,0,0,3,7,0,2,6],
+"pios__dmashot_8h.html#gaaaab9a4a508886e9f73992b53dc931d5":[5,0,0,3,7,0,2,9],
+"pios__dmashot_8h.html#gab4dbaf1af681800aca0e6603403288f0":[5,0,0,3,7,0,2,8],
+"pios__dmashot_8h.html#gae71d32b242044b9007a564ad9472e1c0":[5,0,0,3,7,0,2,3],
+"pios__dmashot_8h.html#gae88950afad5c51fa2e45f5b400f26a6c":[5,0,0,3,7,0,2,14]
 };

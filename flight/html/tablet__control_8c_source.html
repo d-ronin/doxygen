@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">0c23501</span>
+   &#160;<span id="projectnumber">20d1aa4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -270,75 +270,66 @@ $(document).ready(function(){initNavTree('tablet__control_8c_source.html','');})
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="comment">// Update mode if changed</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">if</span> (mode != flightStatus.FlightMode) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                flightStatus.FlightMode = <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                FlightStatusSet(&amp;flightStatus);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }               </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group___control.html#gaac5e3efaaa07ab552af74fecf4726748">  191</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a> <a class="code" href="group___control.html#gaac5e3efaaa07ab552af74fecf4726748">tablet_control_get_events</a>()</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// For now ARM / DISARM events still come from the transmitter</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a>();</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">  203</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">tabletInfo_to_ned</a>(TabletInfoData *tabletInfo, <span class="keywordtype">float</span> *NED)</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="comment">// TODO: Abstract out this code and also precompute the part based</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="comment">// on home location.</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        HomeLocationData <a class="code" href="group___attitude_module.html#ga2df5dd1b897f5b24779f6e0ad9b5b119">homeLocation</a>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        HomeLocationGet(&amp;homeLocation);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        GPSPositionData gpsPosition;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        GPSPositionGet(&amp;gpsPosition);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#a69d33708fea878b38d31b69e8a28f551">lat</a> = homeLocation.Latitude / 10.0e6f * DEG2RAD;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#aba664b6e466d1419168e215052637774">alt</a> = homeLocation.Altitude;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">T</a>[3];</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        T[0] = alt+6.378137E6f;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        T[1] = cosf(lat)*(alt+6.378137E6f);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        T[2] = -1.0f;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">// Tablet altitude is in WSG84 but we use height above the geoid elsewhere so use the</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">// GPS GeoidSeparation as a proxy</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="comment">// [WARNING] Android altitude can be either referenced to WGS84 ellipsoid or EGM1996 geoid. See:</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">// http://stackoverflow.com/questions/11168306/is-androids-gps-altitude-incorrect-due-to-not-including-geoid-height</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="comment">// and https://code.google.com/p/android/issues/detail?id=53471</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">// This means that &quot;(tabletInfo-&gt;Altitude + gpsPosition.GeoidSeparation - homeLocation.Altitude)&quot;</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// will be correct or incorrect depending on the device.</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">float</span> dL[3] = {(tabletInfo-&gt;Latitude - homeLocation.Latitude) / 10.0e6f * DEG2RAD,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                (tabletInfo-&gt;Longitude - homeLocation.Longitude) / 10.0e6f * DEG2RAD,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                (tabletInfo-&gt;Altitude + gpsPosition.GeoidSeparation - homeLocation.Altitude)};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="comment">/* TODO: unsafe! */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                flightStatus.FlightMode = <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                FlightStatusSet(&amp;flightStatus);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }               </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">  196</a></span>&#160;<span class="keyword">static</span> int32_t <a class="code" href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">tabletInfo_to_ned</a>(TabletInfoData *tabletInfo, <span class="keywordtype">float</span> *NED)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// TODO: Abstract out this code and also precompute the part based</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="comment">// on home location.</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        HomeLocationData <a class="code" href="group___attitude_module.html#ga2df5dd1b897f5b24779f6e0ad9b5b119">homeLocation</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        HomeLocationGet(&amp;homeLocation);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        GPSPositionData gpsPosition;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        GPSPositionGet(&amp;gpsPosition);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#a69d33708fea878b38d31b69e8a28f551">lat</a> = homeLocation.Latitude / 10.0e6f * DEG2RAD;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#aba664b6e466d1419168e215052637774">alt</a> = homeLocation.Altitude;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">T</a>[3];</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        T[0] = alt+6.378137E6f;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        T[1] = cosf(lat)*(alt+6.378137E6f);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        T[2] = -1.0f;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="comment">// Tablet altitude is in WSG84 but we use height above the geoid elsewhere so use the</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">// GPS GeoidSeparation as a proxy</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="comment">// [WARNING] Android altitude can be either referenced to WGS84 ellipsoid or EGM1996 geoid. See:</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">// http://stackoverflow.com/questions/11168306/is-androids-gps-altitude-incorrect-due-to-not-including-geoid-height</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="comment">// and https://code.google.com/p/android/issues/detail?id=53471</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="comment">// This means that &quot;(tabletInfo-&gt;Altitude + gpsPosition.GeoidSeparation - homeLocation.Altitude)&quot;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="comment">// will be correct or incorrect depending on the device.</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordtype">float</span> dL[3] = {(tabletInfo-&gt;Latitude - homeLocation.Latitude) / 10.0e6f * DEG2RAD,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                (tabletInfo-&gt;Longitude - homeLocation.Longitude) / 10.0e6f * DEG2RAD,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                (tabletInfo-&gt;Altitude + gpsPosition.GeoidSeparation - homeLocation.Altitude)};</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        NED[0] = T[0] * dL[0];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        NED[1] = T[1] * dL[1];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        NED[2] = T[2] * dL[2];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        NED[0] = T[0] * dL[0];</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        NED[1] = T[1] * dL[1];</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        NED[2] = T[2] * dL[2];</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="ttc" id="tablet__control_8h_html"><div class="ttname"><a href="tablet__control_8h.html">tablet_control.h</a></div><div class="ttdoc">Use tablet for control source. </div></div>
 <div class="ttc" id="group___fixed_wing_path_follower_html_ga228f486906a1318fad1f4f86e1328502"><div class="ttname"><a href="group___fixed_wing_path_follower.html#ga228f486906a1318fad1f4f86e1328502">pathDesired</a></div><div class="ttdeci">static PathDesiredData pathDesired</div><div class="ttdef"><b>Definition:</b> <a href="fixedwingpathfollower_8c_source.html#l00088">fixedwingpathfollower.c:88</a></div></div>
 <div class="ttc" id="transmitter__control_8h_html"><div class="ttname"><a href="transmitter__control_8h.html">transmitter_control.h</a></div><div class="ttdoc">Process transmitter inputs and use as control source. </div></div>
-<div class="ttc" id="group___control_html_ga51dc43f87515d8de90aebb1465578212"><div class="ttname"><a href="group___control.html#ga51dc43f87515d8de90aebb1465578212">transmitter_control_get_events</a></div><div class="ttdeci">enum control_events transmitter_control_get_events()</div><div class="ttdoc">Get any control events. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00524">transmitter_control.c:524</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a69d33708fea878b38d31b69e8a28f551"><div class="ttname"><a href="msp__messages_8h.html#a69d33708fea878b38d31b69e8a28f551">lat</a></div><div class="ttdeci">uint32_t lat</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___control_html_ga0bee0c81342526c03f10559cf6dbda72"><div class="ttname"><a href="group___control.html#ga0bee0c81342526c03f10559cf6dbda72">tablet_control_update</a></div><div class="ttdeci">int32_t tablet_control_update()</div><div class="ttdoc">Process updates for the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00067">tablet_control.c:67</a></div></div>
 <div class="ttc" id="group___libraries_html_gadd1139478e7c6bc1b6afaaa0d1d114dd"><div class="ttname"><a href="group___libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a></div><div class="ttdeci">int32_t AlarmsSet(SystemAlarmsAlarmElem alarm, SystemAlarmsAlarmOptions severity)</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00097">alarms.c:97</a></div></div>
-<div class="ttc" id="group___control_html_gaac5e3efaaa07ab552af74fecf4726748"><div class="ttname"><a href="group___control.html#gaac5e3efaaa07ab552af74fecf4726748">tablet_control_get_events</a></div><div class="ttdeci">enum control_events tablet_control_get_events()</div><div class="ttdoc">Get any control events. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00191">tablet_control.c:191</a></div></div>
 <div class="ttc" id="group___attitude_module_html_ga62b409271acba166dbf31b4fed9af697"><div class="ttname"><a href="group___attitude_module.html#ga62b409271acba166dbf31b4fed9af697">T</a></div><div class="ttdeci">static float T[3]</div><div class="ttdoc">Scales used in NED transform (local tangent plane approx). </div><div class="ttdef"><b>Definition:</b> <a href="attitude_8c_source.html#l00210">attitude.c:210</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_aba664b6e466d1419168e215052637774"><div class="ttname"><a href="msp__messages_8h.html#aba664b6e466d1419168e215052637774">alt</a></div><div class="ttdeci">struct _msp_pid_item alt</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00099">msp_messages.h:99</a></div></div>
 <div class="ttc" id="group___attitude_module_html_ga2df5dd1b897f5b24779f6e0ad9b5b119"><div class="ttname"><a href="group___attitude_module.html#ga2df5dd1b897f5b24779f6e0ad9b5b119">homeLocation</a></div><div class="ttdeci">static HomeLocationData homeLocation</div><div class="ttdef"><b>Definition:</b> <a href="attitude_8c_source.html#l00147">attitude.c:147</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga9b9989d29283df24c5b281ec32b3b1c7"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a></div><div class="ttdeci">enum channel_mode mode</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00058">pios_servo.c:58</a></div></div>
 <div class="ttc" id="group___control_html_ga16a2fa9b05e1778d508450239854bdef"><div class="ttname"><a href="group___control.html#ga16a2fa9b05e1778d508450239854bdef">tablet_control_initialize</a></div><div class="ttdeci">int32_t tablet_control_initialize()</div><div class="ttdoc">Initialize the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00058">tablet_control.c:58</a></div></div>
 <div class="ttc" id="control_8h_html"><div class="ttname"><a href="control_8h.html">control.h</a></div></div>
-<div class="ttc" id="group___control_html_ga6db279174b366abaad3f5de70b10655c"><div class="ttname"><a href="group___control.html#ga6db279174b366abaad3f5de70b10655c">control_events</a></div><div class="ttdeci">control_events</div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00035">control.h:35</a></div></div>
 <div class="ttc" id="group___control_html_ga49f72131efa1135207a829f2237aa898"><div class="ttname"><a href="group___control.html#ga49f72131efa1135207a829f2237aa898">FOLLOWME_RADIUS</a></div><div class="ttdeci">#define FOLLOWME_RADIUS</div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00055">tablet_control.c:55</a></div></div>
 <div class="ttc" id="group___control_html_gad909990f9741639a3f4017f474cc8728"><div class="ttname"><a href="group___control.html#gad909990f9741639a3f4017f474cc8728">HOME_ALTITUDE_OFFSET</a></div><div class="ttdeci">#define HOME_ALTITUDE_OFFSET</div><div class="ttdoc">Private constants. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00054">tablet_control.c:54</a></div></div>
-<div class="ttc" id="group___control_html_gadcc16c79fa4dc36e54fc3f6f3d787748"><div class="ttname"><a href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">tabletInfo_to_ned</a></div><div class="ttdeci">static int32_t tabletInfo_to_ned(TabletInfoData *tabletInfo, float *NED)</div><div class="ttdoc">Private methods. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00203">tablet_control.c:203</a></div></div>
+<div class="ttc" id="group___control_html_gadcc16c79fa4dc36e54fc3f6f3d787748"><div class="ttname"><a href="group___control.html#gadcc16c79fa4dc36e54fc3f6f3d787748">tabletInfo_to_ned</a></div><div class="ttdeci">static int32_t tabletInfo_to_ned(TabletInfoData *tabletInfo, float *NED)</div><div class="ttdoc">Private methods. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00196">tablet_control.c:196</a></div></div>
 <div class="ttc" id="group___control_html_ga72ecc808e52960fdd4fc2fe42bf5f633"><div class="ttname"><a href="group___control.html#ga72ecc808e52960fdd4fc2fe42bf5f633">tablet_control_select</a></div><div class="ttdeci">int32_t tablet_control_select(bool reset_controller)</div><div class="ttdoc">Use the values for the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00079">tablet_control.c:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

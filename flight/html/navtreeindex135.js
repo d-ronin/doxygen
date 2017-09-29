@@ -1,14 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"vectors__stm32f30x_8c.html#gae93e0ca64a1196614305e8fb0f934cc6":[5,0,0,3,6,21,39],
-"vectors__stm32f30x_8c.html#gaecb039356f5447d178398ce19716a5e5":[5,0,0,3,6,21,34],
-"vectors__stm32f30x_8c.html#gaef5ecd9aa5c79599d6e13d627bccd933":[5,0,0,3,6,21,29],
-"vectors__stm32f30x_8c.html#gaf2086766394e4d1b904c8c606332ee87":[5,0,0,3,6,21,59],
-"vectors__stm32f30x_8c.html#gaf3bd936674d03387b3fbc7b23ac49493":[5,0,0,3,6,21,27],
-"vectors__stm32f30x_8c.html#gaf4e7f7a30685280c61aeb5b7d8c00e25":[5,0,0,3,6,21,63],
-"vectors__stm32f30x_8c_source.html":[5,0,0,3,6,21],
-"vectors__stm32f4xx_8c.html":[5,0,0,3,7,22],
-"vectors__stm32f4xx_8c.html#ga00ad54696a7bfc560abb0204bbc8c71a":[5,0,0,3,7,22,63],
 "vectors__stm32f4xx_8c.html#ga015d5c07ddbb9c51c66a77065a08c22a":[5,0,0,3,7,22,51],
 "vectors__stm32f4xx_8c.html#ga03be10db0a301a884516b2bec72fd339":[5,0,0,3,7,22,36],
 "vectors__stm32f4xx_8c.html#ga05944aa0595b1daead2f9f88f04ba2ea":[5,0,0,3,7,22,64],

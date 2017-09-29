@@ -14,8 +14,8 @@ var transmitter__control_8h =
     [ "DONT_BUILD_IF", "transmitter__control_8h.html#gadf40b3848c50b350d73afefd0f87c016", null ],
     [ "DONT_BUILD_IF", "transmitter__control_8h.html#ga87aac48aeb5f13e8b214c38bf36a4dee", null ],
     [ "DONT_BUILD_IF", "transmitter__control_8h.html#ga3e5cf4158e669c935bf6eaebe3f6053c", null ],
-    [ "transmitter_control_get_events", "transmitter__control_8h.html#ga51dc43f87515d8de90aebb1465578212", null ],
     [ "transmitter_control_get_flight_mode", "transmitter__control_8h.html#ga71762ca401b9c08895878db9731fde77", null ],
+    [ "transmitter_control_get_status", "transmitter__control_8h.html#ga8fd08c09ab8f5c837de78099706118f2", null ],
     [ "transmitter_control_initialize", "transmitter__control_8h.html#ga27653bb9e2abe9498b31e9f748f158d8", null ],
     [ "transmitter_control_select", "transmitter__control_8h.html#ga6ffb050d1f10ab7aa441ce65629e26bd", null ],
     [ "transmitter_control_update", "transmitter__control_8h.html#gad28dba2f07e1f4fe872ccf01941c3c84", null ]

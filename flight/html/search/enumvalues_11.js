@@ -10,7 +10,15 @@ var searchData=
   ['smoothcontrol_5fnone',['SMOOTHCONTROL_NONE',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf20fb982a93c75492f10eb3675d8a91c',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fnormal',['SMOOTHCONTROL_NORMAL',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2c9234fcb35045cd0fbdd6357d9ba2aa',1,'smoothcontrol.h']]],
   ['start',['start',['../group___common_f1.html#gga3758da4ce9164f008216ba0fc2a82edca0e97c69c73117f6c0109b2d7d1d9cedc',1,'common.h']]],
+  ['status_5farm_5finvalid',['STATUS_ARM_INVALID',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5',1,'control.h']]],
+  ['status_5farm_5fvalid',['STATUS_ARM_VALID',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15',1,'control.h']]],
+  ['status_5fdisarm',['STATUS_DISARM',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a3d6963298db6408617fbf998745be6d4',1,'control.h']]],
+  ['status_5fdisconnected',['STATUS_DISCONNECTED',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a97207f3457ed3b04ca92ff55d1aec3d6',1,'control.h']]],
+  ['status_5ferror',['STATUS_ERROR',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bde228d9506a863d51ffbc868ff67f7',1,'control.h']]],
+  ['status_5finvalid_5ffor_5fdisarmed',['STATUS_INVALID_FOR_DISARMED',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032',1,'control.h']]],
+  ['status_5fnormal',['STATUS_NORMAL',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576',1,'control.h']]],
   ['status_5frep',['Status_Rep',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'common.h']]],
   ['status_5frequest',['Status_Request',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715',1,'common.h']]],
+  ['status_5fsafetytimeout',['STATUS_SAFETYTIMEOUT',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a19b41f016f92677af9a541576339f01b',1,'control.h']]],
   ['suspended',['SUSPENDED',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bba1c2114335a42993ac5cc5dbf65f83d41',1,'pios_usb_hid_pwr.h']]]
 ];

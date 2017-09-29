@@ -28,6 +28,7 @@ var searchData=
   ['receive_5ftimer',['receive_timer',['../structpios__dsm__state.html#af7296b9f7aa4be7e56a8edd0025c5fab',1,'pios_dsm_state']]],
   ['received_5fdata',['received_data',['../structpios__dsm__state.html#a2e6a5a29461343fcc5a352ed031cd2c3',1,'pios_dsm_state']]],
   ['receiver_5fprotocol',['receiver_protocol',['../structflyingpicmd__cfg__fa.html#a627a9505cd26b5965bb2c1944e6cb40f',1,'flyingpicmd_cfg_fa::receiver_protocol()'],['../flyingpio__messages_8h.html#a354c07f00628e2877125e5336b92ed72',1,'receiver_protocol():&#160;flyingpio_messages.h']]],
+  ['receiver_5ftimer',['receiver_timer',['../group___control.html#ga1ce79772381dd45988152d4c5eab2456',1,'transmitter_control.c']]],
   ['regs',['regs',['../structpios__can__cfg.html#aa7c799d5b36b41a1569ea86f855841d5',1,'pios_can_cfg::regs()'],['../structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691',1,'pios_spi_cfg::regs()'],['../structpios__spislave__cfg.html#a85837e996367e0bc5f96490639cbf0c2',1,'pios_spislave_cfg::regs()'],['../structpios__usart__cfg.html#a28b475a517c9d2fee0ab1a87d3c6ca67',1,'pios_usart_cfg::regs()'],['../structpios__i2c__adapter__cfg.html#a95ddab3fd4ef85d8be23e8be9a00aaf8',1,'pios_i2c_adapter_cfg::regs()']]],
   ['regular_5finverted_5fpwm',['REGULAR_INVERTED_PWM',['../group___p_i_o_s___s_e_r_v_o.html#ga01a008e36f920c1463b98a6d8eeb0949',1,'pios_servo.c']]],
   ['regular_5fpwm',['REGULAR_PWM',['../group___p_i_o_s___s_e_r_v_o.html#gafd2b0857fad8ec4937130f7c12622c29',1,'pios_servo.c']]],
