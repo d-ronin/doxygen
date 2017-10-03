@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d60a035</span>
+   &#160;<span id="projectnumber">63dc908</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -111,18 +111,18 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 </div><!--header-->
 <div class="contents">
 <a href="pluginmanager_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * for more details.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
@@ -525,7 +525,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="stringliteral">    }</span></div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="stringliteral">    resolveDependencies();</span></div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="stringliteral">    // ensure deterministic plugin load order by sorting</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="stringliteral">    qSort(pluginSpecs.begin(), pluginSpecs.end(), lessThanByPluginName);</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="stringliteral">    std::sort(pluginSpecs.begin(), pluginSpecs.end(), lessThanByPluginName);</span></div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="stringliteral">    emit q-&gt;pluginsChanged();</span></div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="stringliteral">}</span></div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="stringliteral"></span></div>
@@ -567,7 +567,6 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="stringliteral">            return spec;</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="stringliteral">    return 0;</span></div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="stringliteral">}</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="stringliteral"></span></div>
 <div class="ttc" id="group__extensionsystem_html_gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b"><div class="ttname"><a href="group__extensionsystem.html#gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b">debugLeaks</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00050">pluginmanager.cpp:50</a></div></div>
 <div class="ttc" id="group__extensionsystem_html_ga4d9a60e36e831bdafbe905ae247b3cf3"><div class="ttname"><a href="group__extensionsystem.html#ga4d9a60e36e831bdafbe905ae247b3cf3">ExtensionSystem::Internal::PluginManagerPrivate::addObject</a></div><div class="ttdeci">void addObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00496">pluginmanager.cpp:496</a></div></div>
 <div class="ttc" id="group__extensionsystem_html_ga38c08e6dbab3c28d6b00dac7e1e6f976"><div class="ttname"><a href="group__extensionsystem.html#ga38c08e6dbab3c28d6b00dac7e1e6f976">ExtensionSystem::Internal::PluginManagerPrivate::setPluginPaths</a></div><div class="ttdeci">void setPluginPaths(const QStringList &amp;paths)</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00666">pluginmanager.cpp:666</a></div></div>

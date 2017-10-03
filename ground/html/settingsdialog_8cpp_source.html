@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d60a035</span>
+   &#160;<span id="projectnumber">63dc908</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('settingsdialog_8cpp_source.html','');}
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;Core::IOptionsPage *&gt;</a> rc =</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        ExtensionSystem::PluginManager::instance()-&gt;getObjects&lt;IOptionsPage&gt;();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    qStableSort(rc.begin(), rc.end(), <a class="code" href="group___core_plugin.html#ga59869c2fab9a0f266809a3544c2f02e6">optionsPageLessThan</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::stable_sort(rc.begin(), rc.end(), <a class="code" href="group___core_plugin.html#ga59869c2fab9a0f266809a3544c2f02e6">optionsPageLessThan</a>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> rc;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
