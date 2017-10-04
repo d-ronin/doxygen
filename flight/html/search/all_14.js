@@ -101,6 +101,7 @@ var searchData=
   ['throt_5fcurve',['throt_curve',['../group___actuator_module.html#ga85f9c2a5a055c0292a43f7bf29f09d94',1,'actuator.c']]],
   ['throttle',['throttle',['../structtelemetry__t.html#a6040678c473e6e4c6f6ad012a527a4ea',1,'telemetry_t']]],
   ['throttle_5faccumulator',['throttle_accumulator',['../group___autotuning_module.html#gaabfc967d71bb709b7f051507856dd9fa',1,'autotune.c']]],
+  ['throttle_5fepsilon',['THROTTLE_EPSILON',['../group___stabilization_module.html#ga08fdaad54ebf8c7720af3ca2aff1a196',1,'stabilization.c']]],
   ['throttle_5fexpo',['throttle_expo',['../structmsp__rc__tuning.html#a0e57bb640a051c9705b4f414cf1385df',1,'msp_rc_tuning::throttle_expo()'],['../structmsp__set__rc__tuning.html#a57fac4744a9db58d8bacc2f518b614f6',1,'msp_set_rc_tuning::throttle_expo()'],['../msp__messages_8h.html#af7b68503cc2f8249f54b122cba51df6e',1,'throttle_expo():&#160;msp_messages.h']]],
   ['throttle_5fmid',['throttle_mid',['../structmsp__rc__tuning.html#ac6478c3e9d39aecef1ed919396564f0e',1,'msp_rc_tuning::throttle_mid()'],['../structmsp__set__rc__tuning.html#ad270ea2359619a16061c0eb4fea41dfd',1,'msp_set_rc_tuning::throttle_mid()'],['../msp__messages_8h.html#a7271c3913913391606ae0f55c0e270a5',1,'throttle_mid():&#160;msp_messages.h']]],
   ['tick_5fcounter',['tick_counter',['../structsmoothcontrol__state__internal.html#a32ca1a345fb7ae8878db47400ad3de16',1,'smoothcontrol_state_internal']]],

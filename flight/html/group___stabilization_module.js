@@ -11,7 +11,8 @@ var group___stabilization_module =
     [ "HORIZON_MODE_MAX_BLEND", "group___stabilization_module.html#ga029559db214f383e36fbddd71408174b", null ],
     [ "MAX_QUEUE_SIZE", "group___stabilization_module.html#ga623ec78b7909090dbedac4af1d52abb4", null ],
     [ "STACK_SIZE_BYTES", "group___stabilization_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725", null ],
-    [ "TASK_PRIORITY", "group___stabilization_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c", [
+    [ "TASK_PRIORITY", "group___stabilization_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c", null ],
+    [ "THROTTLE_EPSILON", "group___stabilization_module.html#ga08fdaad54ebf8c7720af3ca2aff1a196", [
       [ "ROLL", "group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a2eeb9fef8a6a516fa6437a44a6efbd52", null ],
       [ "PITCH", "group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635aa4ed247aa19723caf868d2b2dd5cf4ff", null ],
       [ "YAW", "group___stabilization_module.html#gga726ca809ffd3d67ab4b8476646f26635a60ae774ecd1cf97a0e91f76970d64491", null ],
@@ -37,7 +38,7 @@ var group___stabilization_module =
     [ "DONT_BUILD_IF", "group___stabilization_module.html#gaca83a707babce95cd70c1ec0242ad10b", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#ga472bec063ff4dd41b0b24883a9cb0488", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#ga56b8cbab2a7d849f0ecd55aaf958b12f", null ],
-    [ "get_throttle", "group___stabilization_module.html#ga563b10817781bf2d41a996189589402a", null ],
+    [ "get_throttle", "group___stabilization_module.html#ga1af047cbbb03e56a0ad3e8fe2b118961", null ],
     [ "MODULE_HIPRI_INITCALL", "group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557", null ],
     [ "remap_smoothing_mode", "group___stabilization_module.html#ga3782701fb17bad618b59523be488b7ac", null ],
     [ "stabilization_failsafe_checks", "group___stabilization_module.html#gad4f9c597cc7e801e46ab76d2cb551e2d", null ],

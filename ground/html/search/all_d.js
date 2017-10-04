@@ -182,7 +182,7 @@ var searchData=
   ['memorycache_2ecpp',['memorycache.cpp',['../memorycache_8cpp.html',1,'']]],
   ['memorycache_2eh',['memorycache.h',['../memorycache_8h.html',1,'']]],
   ['memorycachecapacity',['MemoryCacheCapacity',['../group___t_l_map_widget.html#ga1ac798743593d55d294a659bf03cd367',1,'core::KiberTileCache']]],
-  ['memorycachesize',['memoryCacheSize',['../group___t_l_map_widget.html#gae96e4700fe984a52afd8c8016dc1295b',1,'core::KiberTileCache::memoryCacheSize()'],['../group___t_l_map_widget.html#ga79164b194a65febe6f0b0f29fec3e002',1,'core::KiberTileCache::MemoryCacheSize()']]],
+  ['memorycachesize',['MemoryCacheSize',['../group___t_l_map_widget.html#ga79164b194a65febe6f0b0f29fec3e002',1,'core::KiberTileCache::MemoryCacheSize()'],['../group___t_l_map_widget.html#gae96e4700fe984a52afd8c8016dc1295b',1,'core::KiberTileCache::memoryCacheSize()']]],
   ['menu',['menu',['../group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059',1,'Core::ActionContainer::menu()'],['../group___core_plugin.html#ga243949a2b2abff30862e34f6313f28c0',1,'Core::Internal::ActionContainerPrivate::menu()'],['../group___core_plugin.html#gad2fa92d740f205ff2f12edad0b8fee36',1,'Core::Internal::MenuActionContainer::menu()']]],
   ['menu_5fbar',['MENU_BAR',['../group___core_plugin.html#ga50fb439908e7b14837faae97dded27a8',1,'Core::Constants']]],
   ['menuactioncontainer',['MenuActionContainer',['../class_core_1_1_internal_1_1_menu_action_container.html',1,'Core::Internal']]],

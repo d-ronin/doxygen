@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -512,8 +512,8 @@ $(document).ready(function(){initNavTree('pios__dsm_8c_source.html','');});
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                state-&gt;<a class="code" href="structpios__dsm__state.html#af7296b9f7aa4be7e56a8edd0025c5fab">receive_timer</a> = 0;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        }</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="comment">/* activate failsafe if no frames have arrived in 102.4ms */</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;<a class="code" href="structpios__dsm__state.html#a70f387f5d5e82231a14003705b43fb59">failsafe_timer</a> &gt; 64) {</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="comment">/* activate failsafe if no frames have arrived in ~250ms */</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;<a class="code" href="structpios__dsm__state.html#a70f387f5d5e82231a14003705b43fb59">failsafe_timer</a> &gt; 156) {</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                PIOS_DSM_ResetChannels(dsm_dev);</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                state-&gt;<a class="code" href="structpios__dsm__state.html#a70f387f5d5e82231a14003705b43fb59">failsafe_timer</a> = 0;</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        }</div>

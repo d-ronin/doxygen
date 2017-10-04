@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -163,6 +163,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga029559db214f383e36fbddd71408174b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga029559db214f383e36fbddd71408174b">HORIZON_MODE_MAX_BLEND</a>&#160;&#160;&#160;0.85f</td></tr>
 <tr class="memdesc:ga029559db214f383e36fbddd71408174b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stick position that maximally transitions to rate.  <a href="group___stabilization_module.html#ga029559db214f383e36fbddd71408174b">More...</a><br/></td></tr>
 <tr class="separator:ga029559db214f383e36fbddd71408174b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08fdaad54ebf8c7720af3ca2aff1a196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga08fdaad54ebf8c7720af3ca2aff1a196">THROTTLE_EPSILON</a>&#160;&#160;&#160;0.000001f</td></tr>
+<tr class="memdesc:ga08fdaad54ebf8c7720af3ca2aff1a196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum sane positive value for throttle.  <a href="group___stabilization_module.html#ga08fdaad54ebf8c7720af3ca2aff1a196">More...</a><br/></td></tr>
+<tr class="separator:ga08fdaad54ebf8c7720af3ca2aff1a196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad8153387de4b8b6d66178321f047a6cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad8153387de4b8b6d66178321f047a6cb">get_deadband</a>(axis)&#160;&#160;&#160;(<a class="el" href="group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1">deadbands</a> ? (<a class="el" href="group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1">deadbands</a> + axis) : NULL)</td></tr>
 <tr class="separator:gad8153387de4b8b6d66178321f047a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -208,8 +211,8 @@ Functions</h2></td></tr>
 <tr class="separator:gafee8d48edb67b78838f9ef3eea4cd62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe35ba3a9cb8c902aa2ed4a0e65e3c2c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c">update_settings</a> (float dT)</td></tr>
 <tr class="separator:gafe35ba3a9cb8c902aa2ed4a0e65e3c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga563b10817781bf2d41a996189589402a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga563b10817781bf2d41a996189589402a">get_throttle</a> (StabilizationDesiredData *stabilization_desired, SystemSettingsAirframeTypeOptions *<a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>)</td></tr>
-<tr class="separator:ga563b10817781bf2d41a996189589402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1af047cbbb03e56a0ad3e8fe2b118961"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1af047cbbb03e56a0ad3e8fe2b118961">get_throttle</a> (ActuatorDesiredData *actuator_desired, SystemSettingsAirframeTypeOptions *<a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>)</td></tr>
+<tr class="separator:ga1af047cbbb03e56a0ad3e8fe2b118961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6190a7e200476bf20da7b47ac4107973"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a> ()</td></tr>
 <tr class="separator:ga6190a7e200476bf20da7b47ac4107973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0271ad4d56816c408814d99db9d15b8b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b">StabilizationInitialize</a> ()</td></tr>

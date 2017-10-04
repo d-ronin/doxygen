@@ -1,5 +1,7 @@
 var NAVTREEINDEX124 =
 {
+"structsmoothcontrol__state__internal.html#a41f136afc3f482ec010cd6fe2df0e6c2":[4,0,231,4],
+"structsmoothcontrol__state__internal.html#a8f8d22d5a8c6d2fa614a98197cd02cb3":[4,0,231,1],
 "structsmoothcontrol__state__internal.html#ab3a8d4c9578cc5933312ea587ea6404f":[4,0,231,0],
 "structstm32__dma.html":[2,0,64,4],
 "structstm32__dma.html#a4ef0eab3e87fc579e24c36e51d31b88a":[2,0,64,4,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX124 =
 "targets_2aq32_2board-info_2pios__board_8h.html#ga62e300631856e0c56b1c9b3cbcf5621d":[5,0,0,4,0,1,2,1],
 "targets_2aq32_2board-info_2pios__board_8h.html#ga645df4566a90656d8b02ee4e63a54dfe":[5,0,0,4,0,1,2,42],
 "targets_2aq32_2board-info_2pios__board_8h.html#ga6ac74d56f67f74f449b252c6ba6bbd61":[5,0,0,4,0,1,2,24],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga7abaa7b2a334f64bfc43df02807d0f3f":[5,0,0,4,0,1,2,34],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga7f93f74c93a49c6f7b372dbb55b851f6":[5,0,0,4,0,1,2,20],
-"targets_2aq32_2board-info_2pios__board_8h.html#ga7faa93f4a0aaaeeff604e8207d1531c2":[5,0,0,4,0,1,2,25]
+"targets_2aq32_2board-info_2pios__board_8h.html#ga7abaa7b2a334f64bfc43df02807d0f3f":[5,0,0,4,0,1,2,34]
 };

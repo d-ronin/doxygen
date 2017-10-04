@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -423,8 +423,8 @@ $(document).ready(function(){initNavTree('pios__hsum_8c_source.html','');});
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                state-&gt;frame_length = HSUM_MAX_FRAME_LENGTH;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="comment">/* activate failsafe if no frames have arrived in 102.4ms */</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;failsafe_timer &gt; 64) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="comment">/* activate failsafe if no frames have arrived in ~250ms */</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;failsafe_timer &gt; 156) {</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                PIOS_HSUM_ResetChannels(hsum_dev);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                state-&gt;failsafe_timer = 0;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                state-&gt;tx_connected = 0;</div>

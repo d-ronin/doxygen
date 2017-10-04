@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -373,12 +373,12 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">         * RTC runs this callback at 625 Hz (T=1.6 ms)</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">         * Frame period is either 14 ms or 21 ms</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">         * We will reset the rx buffer if nothing is received for 8 ms (5 ticks)</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">         * We will failsafe if 4 frames (low rate) are lost</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">         * (4 * 21) / 1.6 ~ 53 ticks</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">         * We will failsafe if 12 frames (low rate) are lost</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">         * (12 * 21) / 1.6 ~ 158 ticks</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;rx_timer &gt;= 5)</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                dev-&gt;rx_buffer_pos = 0;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;failsafe_timer &gt;= 53)</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> (++dev-&gt;failsafe_timer &gt;= 158)</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                PIOS_SRXL_ResetChannels(dev, <a class="code" href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a>);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>

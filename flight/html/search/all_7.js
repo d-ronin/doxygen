@@ -66,7 +66,7 @@ var searchData=
   ['get_5fservo_5fcfg',['get_servo_cfg',['../group___sparky2.html#ga77a4d80816a920a71e6ab8700b3e92cb',1,'board_hw_defs.c']]],
   ['get_5fsn',['GET_SN',['../classpx__uploader_1_1uploader.html#a8b53c05343c46dac2476893bebe98c49',1,'px_uploader::uploader']]],
   ['get_5fsync',['GET_SYNC',['../classpx__uploader_1_1uploader.html#a98df4735835b5c245ed09c9228b509df',1,'px_uploader::uploader']]],
-  ['get_5fthrottle',['get_throttle',['../group___stabilization_module.html#ga563b10817781bf2d41a996189589402a',1,'stabilization.c']]],
+  ['get_5fthrottle',['get_throttle',['../group___stabilization_module.html#ga1af047cbbb03e56a0ad3e8fe2b118961',1,'stabilization.c']]],
   ['get_5fthrust_5fsource',['get_thrust_source',['../group___control.html#gae040edc482da3a5a31865327c1e6e746',1,'transmitter_control.c']]],
   ['get_5ftime',['get_time',['../group___firmware_i_a_p_module.html#ga6ab4c03af8d62e2f4c64841a513250f9',1,'firmwareiap.c']]],
   ['get_5ftransverse_5fmercator_5fparameters',['Get_Transverse_Mercator_Parameters',['../tranmerc_8c.html#acf52127e133c94709f21f03ce8326b6c',1,'Get_Transverse_Mercator_Parameters(double *a, double *f, double *Origin_Latitude, double *Central_Meridian, double *False_Easting, double *False_Northing, double *Scale_Factor):&#160;tranmerc.c'],['../tranmerc_8h.html#acf52127e133c94709f21f03ce8326b6c',1,'Get_Transverse_Mercator_Parameters(double *a, double *f, double *Origin_Latitude, double *Central_Meridian, double *False_Easting, double *False_Northing, double *Scale_Factor):&#160;tranmerc.c']]],

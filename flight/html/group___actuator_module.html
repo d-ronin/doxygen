@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -168,8 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4d51fb0c28b55d3e210c48503788a594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53f74eb0ae7002be03b4fae3e463464c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga53f74eb0ae7002be03b4fae3e463464c">fill_desired_vector</a> (ActuatorDesiredData *desired, float val1, float val2, float(*cmd_vector)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM])</td></tr>
 <tr class="separator:ga53f74eb0ae7002be03b4fae3e463464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e0da0de9f6a7a76df02eccd7853c9a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga6e0da0de9f6a7a76df02eccd7853c9a4">post_process_scale_and_commit</a> (float *motor_vect, float dT, bool armed, bool spin_while_armed, bool stabilize_now)</td></tr>
-<tr class="separator:ga6e0da0de9f6a7a76df02eccd7853c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53e517b453c9caac9d22fa4c2a81c688"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga53e517b453c9caac9d22fa4c2a81c688">post_process_scale_and_commit</a> (float *motor_vect, float *desired_vect, float dT, bool armed, bool spin_while_armed, bool stabilize_now, float *maxpoweradd_bucket)</td></tr>
+<tr class="separator:ga53e517b453c9caac9d22fa4c2a81c688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga963e45ec159f02253cb5a56e6af61d76"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga963e45ec159f02253cb5a56e6af61d76">normalize_input_data</a> (uint32_t this_systime, float(*desired_vect)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM], bool *armed, bool *spin_while_armed, bool *stabilize_now)</td></tr>
 <tr class="separator:ga963e45ec159f02253cb5a56e6af61d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a3267eb69f45df86b17705f760373af"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga7a3267eb69f45df86b17705f760373af">channel_failsafe_value</a> (int idx)</td></tr>
@@ -342,7 +342,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 <p>Note this code depends on the UAVObjects for the mixers being all being the same and in sequence. If you change the object definition, make sure you check the code!</p>
 <dl class="section return"><dt>Returns</dt><dd>-1 if error, 0 if success </dd></dl>
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00554">554</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00589">589</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00754">754</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00792">792</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the output value, in [-1,1] </dd></dl>
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00721">721</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00759">759</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
@@ -777,11 +777,11 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00466">466</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00520">520</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga6e0da0de9f6a7a76df02eccd7853c9a4"></a>
+<a class="anchor" id="ga53e517b453c9caac9d22fa4c2a81c688"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -793,6 +793,12 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
           <td>(</td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>motor_vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>desired_vect</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -816,7 +822,13 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>stabilize_now</em>&#160;</td>
+          <td class="paramname"><em>stabilize_now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>maxpoweradd_bucket</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -868,7 +880,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </div><div class="memdoc">
 <p>Convert channel from -1/+1 to servo pulse duration in microseconds </p>
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00729">729</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00767">767</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
@@ -894,7 +906,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </div><div class="memdoc">
 <p>Set actuator output to the neutral values (failsafe) </p>
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00773">773</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00811">811</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>
@@ -947,7 +959,7 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the output value, in [0,1] </dd></dl>
 
-<p>Definition at line <a class="el" href="actuator_8c_source.html#l00706">706</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
+<p>Definition at line <a class="el" href="actuator_8c_source.html#l00744">744</a> of file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
 
 </div>
 </div>

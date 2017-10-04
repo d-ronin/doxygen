@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -362,8 +362,8 @@ $(document).ready(function(){initNavTree('pios__sbus_8c_source.html','');});
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                state-&gt;receive_timer = 0;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">/* activate failsafe if no frames have arrived in 48ms */</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;failsafe_timer &gt; 30) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">/* Activate failsafe if no frames have arrived in ~250ms. */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (++state-&gt;failsafe_timer &gt; 156) {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                PIOS_SBus_ResetChannels(state);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                state-&gt;failsafe_timer = 0;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>

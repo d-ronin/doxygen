@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -266,197 +266,204 @@ $(document).ready(function(){initNavTree('outputchannelform_8cpp_source.html',''
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">  181</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">OutputChannelForm::setMinmax</a>(<span class="keywordtype">int</span> minimum, <span class="keywordtype">int</span> maximum)</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">if</span> (minMaxFixed) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        ui.actuatorMin-&gt;setValue(limitMin);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        ui.actuatorMax-&gt;setValue(limitMax);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        ui.actuatorMin-&gt;setValue(minimum);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        ui.actuatorMax-&gt;setValue(maximum);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    setChannelRange();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    inhibitRangeChanges = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (minMaxFixed) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ui.actuatorMin-&gt;setValue(limitMin);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        ui.actuatorMax-&gt;setValue(limitMax);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        ui.actuatorMin-&gt;setValue(minimum);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        ui.actuatorMax-&gt;setValue(maximum);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">  196</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">OutputChannelForm::setNeutral</a>(<span class="keywordtype">int</span> value)</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    ui.actuatorNeutral-&gt;setValue(value);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::alignFields()</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    inhibitRangeChanges = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    setChannelRange();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">  201</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">OutputChannelForm::setNeutral</a>(<span class="keywordtype">int</span> value)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">int</span> actuatorWidth = 0;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMin-&gt;minimumSize().width());</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMin-&gt;sizeHint().width());</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMax-&gt;minimumSize().width());</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMax-&gt;sizeHint().width());</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        form-&gt;ui.actuatorMin-&gt;setMinimumSize(actuatorWidth, 0);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        form-&gt;ui.actuatorMax-&gt;setMinimumSize(actuatorWidth, 0);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    ui.actuatorNeutral-&gt;setValue(value);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::alignFields()</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">int</span> actuatorWidth = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMin-&gt;minimumSize().width());</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMin-&gt;sizeHint().width());</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMax-&gt;minimumSize().width());</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        actuatorWidth = fmax(actuatorWidth, form-&gt;ui.actuatorMax-&gt;sizeHint().width());</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">  221</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">OutputChannelForm::setAssignment</a>(<span class="keyword">const</span> QString &amp;assignment)</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    ui.actuatorName-&gt;setText(assignment);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    QFontMetrics metrics(ui.actuatorName-&gt;font());</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">int</span> width = metrics.width(assignment) + 1;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (form == <span class="keyword">this</span>)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span> (form-&gt;ui.actuatorName-&gt;minimumSize().width() &lt; width)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            form-&gt;ui.actuatorName-&gt;setMinimumSize(width, 0);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            width = form-&gt;ui.actuatorName-&gt;minimumSize().width();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    ui.actuatorName-&gt;setMinimumSize(width, 0);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::setChannelRange()</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (minMaxFixed) { <span class="comment">// special case Dshot</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        ui.actuatorNeutral-&gt;setRange(limitMin, limitMax);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &lt; ui.actuatorMax-&gt;value()) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMin-&gt;value(), ui.actuatorMax-&gt;value());</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &gt; ui.actuatorMax-&gt;value()) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMax-&gt;value(), ui.actuatorMin-&gt;value());</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="comment">// when the min and max is equal, disable this slider to prevent crash</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// from Qt bug: https://bugreports.qt.io/browse/QTBUG-43398</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMin-&gt;value() - 1, ui.actuatorMin-&gt;value() + 1);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(ui.actuatorMin-&gt;value());</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Force a full slider update</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    updateSlider();</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::reverseChannel()</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">// can&#39;t reverse Dshot at this time</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">if</span> (!ui.actuatorMin-&gt;isEnabled() || !ui.actuatorMax-&gt;isEnabled())</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">// Swap the min &amp; max values</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">int</span> temp = ui.actuatorMax-&gt;value();</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    ui.actuatorMax-&gt;setValue(ui.actuatorMin-&gt;value());</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    ui.actuatorMin-&gt;setValue(temp);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// Force slider update</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    setChannelRange();</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::updateSlider()</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// Invert the slider</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &gt; ui.actuatorMax-&gt;value()) {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        ui.actuatorNeutral-&gt;setInvertedAppearance(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">// Set the QSlider groove colors so that the fill is on the side of the minimum value</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        ui.actuatorNeutral-&gt;setProperty(<span class="stringliteral">&quot;state&quot;</span>, <span class="stringliteral">&quot;inverted&quot;</span>);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        ui.actuatorNeutral-&gt;setInvertedAppearance(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">// Set the QSlider groove colors so that the fill is on the side of the minimum value</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        ui.actuatorNeutral-&gt;setProperty(<span class="stringliteral">&quot;state&quot;</span>, <span class="stringliteral">&quot;normal&quot;</span>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// Force refresh of style sheet.</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    ui.actuatorNeutral-&gt;setStyle(QApplication::style());</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::sendChannelTest(<span class="keywordtype">int</span> value)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;{</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">int</span> in_value = value;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    QSlider *ob = (QSlider *)QObject::sender();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (!ob)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">if</span> (ui.actuatorLink-&gt;checkState() &amp;&amp; parent()) { <span class="comment">// the channel is linked to other channels</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms =</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            parent()-&gt;findChildren&lt;OutputChannelForm *&gt;();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="comment">// set the linked channels of the parent widget to the same value</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">foreach</span> (OutputChannelForm *outputChannelForm, outputChannelForms) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">this</span> == outputChannelForm)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">if</span> (!outputChannelForm-&gt;ui.actuatorLink-&gt;checkState())</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordtype">int</span> val = in_value;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">if</span> (val &lt; outputChannelForm-&gt;ui.actuatorNeutral-&gt;minimum())</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                val = outputChannelForm-&gt;ui.actuatorNeutral-&gt;minimum();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordflow">if</span> (val &gt; outputChannelForm-&gt;ui.actuatorNeutral-&gt;maximum())</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                val = outputChannelForm-&gt;ui.actuatorNeutral-&gt;maximum();</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">if</span> (outputChannelForm-&gt;ui.actuatorNeutral-&gt;value() == val)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            outputChannelForm-&gt;ui.actuatorNeutral-&gt;setValue(val);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        form-&gt;ui.actuatorMin-&gt;setMinimumSize(actuatorWidth, 0);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        form-&gt;ui.actuatorMax-&gt;setMinimumSize(actuatorWidth, 0);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">  226</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">OutputChannelForm::setAssignment</a>(<span class="keyword">const</span> QString &amp;assignment)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ui.actuatorName-&gt;setText(assignment);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    QFontMetrics metrics(ui.actuatorName-&gt;font());</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">int</span> width = metrics.width(assignment) + 1;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">foreach</span> (OutputChannelForm *form, parent()-&gt;findChildren&lt;OutputChannelForm *&gt;()) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (form == <span class="keyword">this</span>)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span> (form-&gt;ui.actuatorName-&gt;minimumSize().width() &lt; width)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            form-&gt;ui.actuatorName-&gt;setMinimumSize(width, 0);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            width = form-&gt;ui.actuatorName-&gt;minimumSize().width();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    ui.actuatorName-&gt;setMinimumSize(width, 0);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::setChannelRange()</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">if</span> (inhibitRangeChanges) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (minMaxFixed) { <span class="comment">// special case Dshot</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        ui.actuatorNeutral-&gt;setRange(limitMin, limitMax);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &lt; ui.actuatorMax-&gt;value()) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMin-&gt;value(), ui.actuatorMax-&gt;value());</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &gt; ui.actuatorMax-&gt;value()) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMax-&gt;value(), ui.actuatorMin-&gt;value());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">// when the min and max is equal, disable this slider to prevent crash</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="comment">// from Qt bug: https://bugreports.qt.io/browse/QTBUG-43398</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        ui.actuatorNeutral-&gt;setRange(ui.actuatorMin-&gt;value() - 1, ui.actuatorMin-&gt;value() + 1);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        ui.actuatorNeutral-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">setNeutral</a>(ui.actuatorMin-&gt;value());</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">// Force a full slider update</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    updateSlider();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::reverseChannel()</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">// can&#39;t reverse Dshot at this time</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span> (!ui.actuatorMin-&gt;isEnabled() || !ui.actuatorMax-&gt;isEnabled())</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// Swap the min &amp; max values</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">setMinmax</a>(ui.actuatorMax-&gt;value(), ui.actuatorMin-&gt;value());</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    setChannelRange();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::updateSlider()</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// Invert the slider</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">if</span> (ui.actuatorMin-&gt;value() &gt; ui.actuatorMax-&gt;value()) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ui.actuatorNeutral-&gt;setInvertedAppearance(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">// Set the QSlider groove colors so that the fill is on the side of the minimum value</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        ui.actuatorNeutral-&gt;setProperty(<span class="stringliteral">&quot;state&quot;</span>, <span class="stringliteral">&quot;inverted&quot;</span>);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        ui.actuatorNeutral-&gt;setInvertedAppearance(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="comment">// Set the QSlider groove colors so that the fill is on the side of the minimum value</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        ui.actuatorNeutral-&gt;setProperty(<span class="stringliteral">&quot;state&quot;</span>, <span class="stringliteral">&quot;normal&quot;</span>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">// Force refresh of style sheet.</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    ui.actuatorNeutral-&gt;setStyle(QApplication::style());</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::sendChannelTest(<span class="keywordtype">int</span> value)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> in_value = value;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    QSlider *ob = (QSlider *)QObject::sender();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> (!ob)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">if</span> (ui.actuatorLink-&gt;checkState() &amp;&amp; parent()) { <span class="comment">// the channel is linked to other channels</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;OutputChannelForm *&gt;</a> outputChannelForms =</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            parent()-&gt;findChildren&lt;OutputChannelForm *&gt;();</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">// set the linked channels of the parent widget to the same value</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">foreach</span> (OutputChannelForm *outputChannelForm, outputChannelForms) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">this</span> == outputChannelForm)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="keywordflow">if</span> (!outputChannelForm-&gt;ui.actuatorLink-&gt;checkState())</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordtype">int</span> val = in_value;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">if</span> (val &lt; outputChannelForm-&gt;ui.actuatorNeutral-&gt;minimum())</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                val = outputChannelForm-&gt;ui.actuatorNeutral-&gt;minimum();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (val &gt; outputChannelForm-&gt;ui.actuatorNeutral-&gt;maximum())</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                val = outputChannelForm-&gt;ui.actuatorNeutral-&gt;maximum();</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">if</span> (!m_inChannelTest)</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// we are not in Test Output mode</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span> (outputChannelForm-&gt;ui.actuatorNeutral-&gt;value() == val)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    emit <a class="code" href="group___config_plugin.html#gabf138ec695ffe189e33d200b031e2687">channelChanged</a>(<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>(), value);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::notifyFormChanged()</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// If we are not in Test Output mode, set form as dirty</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">if</span> (!m_inChannelTest) {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        emit <a class="code" href="group___config_plugin.html#gaa777808eac827fbf95642188024fc667">formChanged</a>();</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    setChannelRange();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">  363</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">OutputChannelForm::updateChannelLimits</a>(<span class="keywordtype">int</span> minPulse, <span class="keywordtype">int</span> maxPulse, <span class="keywordtype">bool</span> digitalProtocol)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    limitMin = minPulse;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    limitMax = maxPulse;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    minMaxFixed = digitalProtocol;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">if</span> (digitalProtocol) {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="comment">// digital protocol like Dshot, fix min to 0, max to maxPulse, and neutral range goes</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="comment">// between minPulse and maxPulse</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        ui.actuatorMin-&gt;setRange(0, 0);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        ui.actuatorMax-&gt;setRange(limitMax, limitMax);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        ui.actuatorMin-&gt;setRange(limitMin, limitMax);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        ui.actuatorMax-&gt;setRange(limitMin, limitMax);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="comment">// these are fixed with digital protocols like Dshot</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    ui.actuatorMin-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    ui.actuatorMax-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    ui.pb_reverseActuator-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    setChannelRange();</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    alignFields();</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            outputChannelForm-&gt;ui.actuatorNeutral-&gt;setValue(val);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (!m_inChannelTest)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// we are not in Test Output mode</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    emit <a class="code" href="group___config_plugin.html#gabf138ec695ffe189e33d200b031e2687">channelChanged</a>(<a class="code" href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">index</a>(), value);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keywordtype">void</span> OutputChannelForm::notifyFormChanged()</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">// If we are not in Test Output mode, set form as dirty</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">if</span> (!m_inChannelTest) {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        emit <a class="code" href="group___config_plugin.html#gaa777808eac827fbf95642188024fc667">formChanged</a>();</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    setChannelRange();</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">  370</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">OutputChannelForm::updateChannelLimits</a>(<span class="keywordtype">int</span> minPulse, <span class="keywordtype">int</span> maxPulse, <span class="keywordtype">bool</span> digitalProtocol)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;{</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    limitMin = minPulse;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    limitMax = maxPulse;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    minMaxFixed = digitalProtocol;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">if</span> (digitalProtocol) {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// digital protocol like Dshot, fix min to 0, max to maxPulse, and neutral range goes</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">// between minPulse and maxPulse</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        ui.actuatorMin-&gt;setRange(0, 0);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        ui.actuatorMax-&gt;setRange(limitMax, limitMax);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        ui.actuatorMin-&gt;setRange(limitMin, limitMax);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        ui.actuatorMax-&gt;setRange(limitMin, limitMax);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">// these are fixed with digital protocols like Dshot</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    ui.actuatorMin-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    ui.actuatorMax-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    ui.pb_reverseActuator-&gt;setEnabled(!minMaxFixed &amp;&amp; !m_inChannelTest);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    setChannelRange();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    alignFields();</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;}</div>
 <div class="ttc" id="group___config_plugin_html_ga6b25b9aa17895f0d557626e4dea077dd"><div class="ttname"><a href="group___config_plugin.html#ga6b25b9aa17895f0d557626e4dea077dd">OutputChannelForm::~OutputChannelForm</a></div><div class="ttdeci">~OutputChannelForm()</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00096">outputchannelform.cpp:96</a></div></div>
 <div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00055">configtaskwidget.h:55</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gabf138ec695ffe189e33d200b031e2687"><div class="ttname"><a href="group___config_plugin.html#gabf138ec695ffe189e33d200b031e2687">OutputChannelForm::channelChanged</a></div><div class="ttdeci">void channelChanged(int index, int value)</div></div>
 <div class="ttc" id="group___config_plugin_html_ga4c5a273b2e501a0ba78fa8f0dfdd9463"><div class="ttname"><a href="group___config_plugin.html#ga4c5a273b2e501a0ba78fa8f0dfdd9463">OutputChannelForm::setMinmax</a></div><div class="ttdeci">void setMinmax(int minimum, int maximum)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00181">outputchannelform.cpp:181</a></div></div>
-<div class="ttc" id="group___config_plugin_html_gacdf981958669fa47fe697e39fa529a16"><div class="ttname"><a href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">OutputChannelForm::setAssignment</a></div><div class="ttdeci">void setAssignment(const QString &amp;assignment)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00221">outputchannelform.cpp:221</a></div></div>
+<div class="ttc" id="group___config_plugin_html_gacdf981958669fa47fe697e39fa529a16"><div class="ttname"><a href="group___config_plugin.html#gacdf981958669fa47fe697e39fa529a16">OutputChannelForm::setAssignment</a></div><div class="ttdeci">void setAssignment(const QString &amp;assignment)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00226">outputchannelform.cpp:226</a></div></div>
 <div class="ttc" id="class_output_channel_form_html"><div class="ttname"><a href="class_output_channel_form.html">OutputChannelForm</a></div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00033">outputchannelform.h:33</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga2086e4a8bc1572b98114b0272313ed2a"><div class="ttname"><a href="group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a">OutputChannelForm::min</a></div><div class="ttdeci">int min() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00090">outputchannelform.h:90</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga2086e4a8bc1572b98114b0272313ed2a"><div class="ttname"><a href="group___config_plugin.html#ga2086e4a8bc1572b98114b0272313ed2a">OutputChannelForm::min</a></div><div class="ttdeci">int min() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00092">outputchannelform.h:92</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga5eccba3591360bc1c690fe75ccd7e40a"><div class="ttname"><a href="group___config_plugin.html#ga5eccba3591360bc1c690fe75ccd7e40a">OutputChannelForm::setMin</a></div><div class="ttdeci">void setMin(int minimum)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00173">outputchannelform.cpp:173</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga306e95f301ee75290ea828d4c7e04a60"><div class="ttname"><a href="group___config_plugin.html#ga306e95f301ee75290ea828d4c7e04a60">OutputChannelForm::enableChannelTest</a></div><div class="ttdeci">void enableChannelTest(bool state)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00104">outputchannelform.cpp:104</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gaf42e971c9cd69919e3b05ed25643d516"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gaf42e971c9cd69919e3b05ed25643d516">ConfigTaskWidget::disableMouseWheelEvents</a></div><div class="ttdeci">void disableMouseWheelEvents()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l01428">configtaskwidget.cpp:1428</a></div></div>
 <div class="ttc" id="outputchannelform_8h_html"><div class="ttname"><a href="outputchannelform_8h.html">outputchannelform.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga32fadbb58da35d4088500bd070584309"><div class="ttname"><a href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">OutputChannelForm::updateChannelLimits</a></div><div class="ttdeci">void updateChannelLimits(int minPulse, int maxPulse, bool digitalProtocol=false)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00363">outputchannelform.cpp:363</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga32fadbb58da35d4088500bd070584309"><div class="ttname"><a href="group___config_plugin.html#ga32fadbb58da35d4088500bd070584309">OutputChannelForm::updateChannelLimits</a></div><div class="ttdeci">void updateChannelLimits(int minPulse, int maxPulse, bool digitalProtocol=false)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00370">outputchannelform.cpp:370</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gab6aa727faf64aaa61ecbd48b63514e5a"><div class="ttname"><a href="group___config_plugin.html#gab6aa727faf64aaa61ecbd48b63514e5a">OutputChannelForm::setMax</a></div><div class="ttdeci">void setMax(int maximum)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00165">outputchannelform.cpp:165</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga5b19b5a7b71ecffbf0b3f5ac2cbae18d"><div class="ttname"><a href="group___config_plugin.html#ga5b19b5a7b71ecffbf0b3f5ac2cbae18d">OutputChannelForm::OutputChannelForm</a></div><div class="ttdeci">OutputChannelForm(const int index, QWidget *parent=NULL, const bool showLegend=false)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00035">outputchannelform.cpp:35</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga46c4da3a30cc25c1178b9f9a125c8660"><div class="ttname"><a href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">OutputChannelForm::setNeutral</a></div><div class="ttdeci">void setNeutral(int value)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00196">outputchannelform.cpp:196</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga04c058165995634381c105cad76f4209"><div class="ttname"><a href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">OutputChannelForm::index</a></div><div class="ttdeci">int index() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00080">outputchannelform.h:80</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga46c4da3a30cc25c1178b9f9a125c8660"><div class="ttname"><a href="group___config_plugin.html#ga46c4da3a30cc25c1178b9f9a125c8660">OutputChannelForm::setNeutral</a></div><div class="ttdeci">void setNeutral(int value)</div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8cpp_source.html#l00201">outputchannelform.cpp:201</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga04c058165995634381c105cad76f4209"><div class="ttname"><a href="group___config_plugin.html#ga04c058165995634381c105cad76f4209">OutputChannelForm::index</a></div><div class="ttdeci">int index() const </div><div class="ttdef"><b>Definition:</b> <a href="outputchannelform_8h_source.html#l00082">outputchannelform.h:82</a></div></div>
 <div class="ttc" id="configoutputwidget_8h_html"><div class="ttname"><a href="configoutputwidget_8h.html">configoutputwidget.h</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga516ee05a73ac3c7c9e6132b0d7294b4a"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga516ee05a73ac3c7c9e6132b0d7294b4a">ConfigTaskWidget::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdoc">ConfigTaskWidget::getObjectManager Utility function to get a pointer to the object manager...</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00251">configtaskwidget.cpp:251</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gaa777808eac827fbf95642188024fc667"><div class="ttname"><a href="group___config_plugin.html#gaa777808eac827fbf95642188024fc667">OutputChannelForm::formChanged</a></div><div class="ttdeci">void formChanged()</div></div>

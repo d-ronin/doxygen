@@ -22,7 +22,7 @@ var group___actuator_module =
     [ "get_curve2_source", "group___actuator_module.html#ga5586adc1dec0583698aab0c7c1f3b5e6", null ],
     [ "MODULE_HIPRI_INITCALL", "group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9", null ],
     [ "normalize_input_data", "group___actuator_module.html#ga963e45ec159f02253cb5a56e6af61d76", null ],
-    [ "post_process_scale_and_commit", "group___actuator_module.html#ga6e0da0de9f6a7a76df02eccd7853c9a4", null ],
+    [ "post_process_scale_and_commit", "group___actuator_module.html#ga53e517b453c9caac9d22fa4c2a81c688", null ],
     [ "scale_channel", "group___actuator_module.html#ga7220b5cc002952f9fa775381b6067bd8", null ],
     [ "set_failsafe", "group___actuator_module.html#ga6e8c5a2f546ec4906bbeb387959a7b8d", null ],
     [ "throt_curve", "group___actuator_module.html#ga85f9c2a5a055c0292a43f7bf29f09d94", null ],

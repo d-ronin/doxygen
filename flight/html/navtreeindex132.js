@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"transmitter__control_8c.html#gabfa7190c4cd9bc78c79f397495d72703":[5,0,0,2,16,5,9],
+"transmitter__control_8c.html#gac18d7e7f5f3a9df4cb804d69a6a10ac8":[5,0,0,2,16,5,31],
 "transmitter__control_8c.html#gac2811ce4b010139833054b551e503219":[5,0,0,2,16,5,1],
 "transmitter__control_8c.html#gaca1cddf447b75c493f6e3e19ff1dd0c6":[5,0,0,2,16,5,20],
 "transmitter__control_8c.html#gad28dba2f07e1f4fe872ccf01941c3c84":[5,0,0,2,16,5,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "uavobjectmanager_8h.html#gaf7923732ed9e6eb1e367180cb339ca3d":[5,0,0,6,0,1,40],
 "uavobjectmanager_8h_source.html":[5,0,0,6,0,1],
 "uavocrossfiretelemetry_8c.html":[5,0,0,2,27,1],
-"uavocrossfiretelemetry_8c_source.html":[5,0,0,2,27,1],
-"uavocrossfiretelemetry_8h.html":[5,0,0,2,27,0,0],
-"uavocrossfiretelemetry_8h.html#ga2d39f1e11201f3d74b1b337159dd3d7c":[5,0,0,2,27,0,0,0]
+"uavocrossfiretelemetry_8c_source.html":[5,0,0,2,27,1]
 };

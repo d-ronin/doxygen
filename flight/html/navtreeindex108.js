@@ -1,5 +1,6 @@
 var NAVTREEINDEX108 =
 {
+"pios__usb__defs_8h.html#ga5ad4440b4eb1935d66b154d274f8a272":[5,0,0,3,1,109,122],
 "pios__usb__defs_8h.html#ga5d5b7225b99998b8360b8767a2900e3f":[5,0,0,3,1,109,145],
 "pios__usb__defs_8h.html#ga5dea10335db536b79859b0202750cd1b":[5,0,0,3,1,109,29],
 "pios__usb__defs_8h.html#ga612f9d2da82331c56e2c03695a02eb01":[5,0,0,3,1,109,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX108 =
 "pios__usbhook_8h.html#ga06e0b17915984330f3244e3dcc26c80e":[5,0,0,3,1,118,14],
 "pios__usbhook_8h.html#ga0b91e1af1f658ed36ac3da1414dd1dae":[5,0,0,3,1,118,6],
 "pios__usbhook_8h.html#ga1c1263ee96f36ccbfc0e662b85e044bf":[5,0,0,3,1,118,20],
-"pios__usbhook_8h.html#ga1fdfbec3bfa53133f72ac8acff597415":[5,0,0,3,1,118,4],
-"pios__usbhook_8h.html#ga59b142c7def8bcde4564793de82198d6":[5,0,0,3,1,118,12]
+"pios__usbhook_8h.html#ga1fdfbec3bfa53133f72ac8acff597415":[5,0,0,3,1,118,4]
 };

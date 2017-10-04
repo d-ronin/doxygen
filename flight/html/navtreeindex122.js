@@ -1,5 +1,7 @@
 var NAVTREEINDEX122 =
 {
+"structmsp__set__pid.html#abef0a3a844e0f0c21914b8eb09d8781a":[2,1,2,19,1],
+"structmsp__set__pid.html#ac94f8647db36dd40daa9f4320a85f089":[2,1,2,19,5],
 "structmsp__set__pid.html#aeb2947f6e75b80ceb6ea65bf277fbbd9":[2,1,2,19,7],
 "structmsp__set__raw__gps.html":[2,1,2,10],
 "structmsp__set__raw__gps.html#a20cd6f219fd137aada071dbed454fb06":[2,1,2,10,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX122 =
 "structpios__ppm__cfg.html#acecc33ca315a3edeb437b6073c1ec1b5":[2,0,56,3,2],
 "structpios__ppm__cfg.html#af794b04692c8fdb2e06b8a58601c99ce":[2,0,56,3,0],
 "structpios__pwm__cfg.html":[2,0,58,3],
-"structpios__pwm__cfg.html#a7f64d325db8aca0d737d94648b079b36":[2,0,58,3,2],
-"structpios__pwm__cfg.html#acf9d41bfa9ce5ee489fcb27a98605e5c":[2,0,58,3,1],
-"structpios__pwm__cfg.html#af31383785c675e1d43b4e517b1d323ae":[2,0,58,3,0]
+"structpios__pwm__cfg.html#a7f64d325db8aca0d737d94648b079b36":[2,0,58,3,2]
 };

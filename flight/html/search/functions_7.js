@@ -28,7 +28,7 @@ var searchData=
   ['get_5fprevious_5fcolor',['get_previous_color',['../group___on_screen_display.html#gaf8e6dec72f2c54051426ab1bb6adb7ab',1,'osd_menu.c']]],
   ['get_5fsbus_5fcfg',['get_sbus_cfg',['../group___flying_p_i_o.html#ga59400bb19c29b96570f1ae359ef0b120',1,'board_hw_defs.c']]],
   ['get_5fservo_5fcfg',['get_servo_cfg',['../group___sparky2.html#ga77a4d80816a920a71e6ab8700b3e92cb',1,'board_hw_defs.c']]],
-  ['get_5fthrottle',['get_throttle',['../group___stabilization_module.html#ga563b10817781bf2d41a996189589402a',1,'stabilization.c']]],
+  ['get_5fthrottle',['get_throttle',['../group___stabilization_module.html#ga1af047cbbb03e56a0ad3e8fe2b118961',1,'stabilization.c']]],
   ['get_5fthrust_5fsource',['get_thrust_source',['../group___control.html#gae040edc482da3a5a31865327c1e6e746',1,'transmitter_control.c']]],
   ['get_5ftime',['get_time',['../group___firmware_i_a_p_module.html#ga6ab4c03af8d62e2f4c64841a513250f9',1,'firmwareiap.c']]],
   ['get_5ftransverse_5fmercator_5fparameters',['Get_Transverse_Mercator_Parameters',['../tranmerc_8c.html#acf52127e133c94709f21f03ce8326b6c',1,'Get_Transverse_Mercator_Parameters(double *a, double *f, double *Origin_Latitude, double *Central_Meridian, double *False_Easting, double *False_Northing, double *Scale_Factor):&#160;tranmerc.c'],['../tranmerc_8h.html#acf52127e133c94709f21f03ce8326b6c',1,'Get_Transverse_Mercator_Parameters(double *a, double *f, double *Origin_Latitude, double *Central_Meridian, double *False_Easting, double *False_Northing, double *Scale_Factor):&#160;tranmerc.c']]],

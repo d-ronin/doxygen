@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">63dc908</span>
+   &#160;<span id="projectnumber">7af4ddb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -433,11 +433,12 @@ $(document).ready(function(){initNavTree('pios__crossfire_8c_source.html','');})
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span>(!PIOS_Crossfire_Validate(dev))</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> dev-&gt;failsafe_timer &gt; 32;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_CROSSFIRE</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">/* ~250ms to failsafe. */</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> dev-&gt;failsafe_timer &gt; 156;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;}</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#endif // PIOS_INCLUDE_CROSSFIRE</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__crc_8h_html"><div class="ttname"><a href="pios__crc_8h.html">pios_crc.h</a></div><div class="ttdoc">CRC functions header. </div></div>
 <div class="ttc" id="group___p_i_o_s___crossfire_html_ga8dacb9efa2801a340a21ce9d43678cc2"><div class="ttname"><a href="group___p_i_o_s___crossfire.html#ga8dacb9efa2801a340a21ce9d43678cc2">PIOS_Crossfire_SendTelemetry</a></div><div class="ttdeci">int PIOS_Crossfire_SendTelemetry(uintptr_t crsf_id, uint8_t *buf, uint8_t bytes)</div></div>
 <div class="ttc" id="group___i_n_s_g_p_s_html_ga8df5a9c6b80931e9a78e1ce3aa7fc8d7"><div class="ttname"><a href="group___i_n_s_g_p_s.html#ga8df5a9c6b80931e9a78e1ce3aa7fc8d7">F</a></div><div class="ttdeci">float F[NUMX][NUMX]</div><div class="ttdef"><b>Definition:</b> <a href="insgps14state_8c_source.html#l00063">insgps14state.c:63</a></div></div>
