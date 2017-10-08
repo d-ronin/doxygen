@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7af4ddb</span>
+   &#160;<span id="projectnumber">5383439</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -570,11 +570,11 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="group___t_l_map_widget.html#ga6fbdb5c07fae2a4400184e0c621ad750">internals::Core</a>
 , <a class="el" href="group___t_l_map_widget.html#ga84dad486217f752968b4f3e82824b64d">mapcontrol::TLMapWidget</a>
 </li>
-<li>SetCurrentPositionGPixel()
-: <a class="el" href="group___t_l_map_widget.html#ga8d0da9c286137deb71b187c5b003d968">internals::Core</a>
-</li>
 <li>SetcurrentPositionGPixel()
 : <a class="el" href="group___t_l_map_widget.html#ga68af707707e7a27c72969b84ffcdc206">internals::Core</a>
+</li>
+<li>SetCurrentPositionGPixel()
+: <a class="el" href="group___t_l_map_widget.html#ga8d0da9c286137deb71b187c5b003d968">internals::Core</a>
 </li>
 <li>SetCurrentRegion()
 : <a class="el" href="group___t_l_map_widget.html#gaddaa2d4fdadeb35b3d6e5c36414ad438">internals::Core</a>
@@ -853,6 +853,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="group___core_plugin.html#gaf4ccf9642217d1e6c2c4313ee8e824ff">Core::IBoardType</a>
 , <a class="el" href="group___boards___d_t_f.html#ga1dea55fe3a5bc1597010a72d44731915">Dtfc</a>
 , <a class="el" href="group___boards___brotronics.html#ga4da76d6bd3bf0143650be904d1e63831">Lux</a>
+, <a class="el" href="group___boards__d_ronin.html#ga8de76e925233897e2ec8773f9b2bcdc9">OmnibusF3</a>
 , <a class="el" href="group___boards__d_ronin.html#ga9b8f0a032528ba2fc0e93c842f4c27ea">PikoBLX</a>
 , <a class="el" href="group___boards___quantec.html#ga22952c4be1c01642b4c1075a053e4a37">Quanton</a>
 , <a class="el" href="group___boards___open_pilot_plugin.html#ga96c7a11eda4b20daf72b2410787e4e46">Revolution</a>
@@ -1603,7 +1604,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="group___core_plugin.html#ga2380f14d6b9cdc20421d32b660881955">USBDevice</a>
 </li>
 <li>setVersion()
-: <a class="el" href="group___core_plugin.html#gabca8cfe88b7b3320fb60709744be4822">Core::UAVConfigInfo</a>
+: <a class="el" href="group___core_plugin.html#ga10f4af0da477f5dc204e90f098536f8e">Core::UAVConfigInfo</a>
 </li>
 <li>setViewOptions()
 : <a class="el" href="group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52">UAVObjectBrowserWidget</a>
@@ -1704,12 +1705,10 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>shortcut()
 : <a class="el" href="group___core_plugin.html#ga3cbc83d8c6c353b4b28c436a691ae970">Core::Command</a>
 , <a class="el" href="group___core_plugin.html#ga84659db83eaa89893189a8bb76e5aa64">Core::Internal::CommandPrivate</a>
+, <a class="el" href="group___core_plugin.html#ga0a8d9dc0a089aa779ff29b23b1cd895f">Core::Internal::Shortcut</a>
 </li>
 <li>Shortcut()
 : <a class="el" href="group___core_plugin.html#ga48cb263cbfb499d8cb9b6d536b002bc7">Core::Internal::Shortcut</a>
-</li>
-<li>shortcut()
-: <a class="el" href="group___core_plugin.html#ga0a8d9dc0a089aa779ff29b23b1cd895f">Core::Internal::Shortcut</a>
 </li>
 <li>ShortcutSettings()
 : <a class="el" href="group___core_plugin.html#gaf70df8ce0b86b325f7a03c1cc0dac919">Core::Internal::ShortcutSettings</a>
@@ -1724,6 +1723,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="group___i_p_conn_plugin.html#gabac2c37830add42060f442679d8bc001">IPConnection</a>
 , <a class="el" href="group___logging.html#gaf569eb0407d501102e1257c067a05295">LoggingConnection</a>
 , <a class="el" href="group___boards___brotronics.html#ga0b01712245ba9a90bf84985b4858f115">Lux</a>
+, <a class="el" href="group___boards__d_ronin.html#gaa58a610c874c37968f5aefd85e902608">OmnibusF3</a>
 , <a class="el" href="group___boards__d_ronin.html#ga7e3f63bde77683310a9ab06891dcc650">PikoBLX</a>
 , <a class="el" href="group___boards__d_ronin.html#gaaa7277e6bb2963fc614e4dde1e98d284">PlayUavOsd</a>
 , <a class="el" href="group___boards___quantec.html#gab687582af9051f5955c3c797244dcb64">Quanton</a>
@@ -1796,8 +1796,8 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>showTempCalMessage()
 : <a class="el" href="class_calibration.html#a6d1fe12509a4d29e08cb8d76e7d81b20">Calibration</a>
 </li>
-<li>ShowTileGridLines()
-: <a class="el" href="group___t_l_map_widget.html#ga7d4c45a8ff530246190a41ab8ffc0c98">mapcontrol::TLMapWidget</a>
+<li>ShowTileGridLines
+: <a class="el" href="group___t_l_map_widget.html#ga97329a418d7d298412cfe30e09f56fff">mapcontrol::TLMapWidget</a>
 </li>
 <li>showTileGridLines
 : <a class="el" href="group___o_p_map_plugin.html#gaa46dc27228fb9c47c0c10f520d6099ab">OPMapGadgetConfiguration</a>
@@ -1857,7 +1857,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="class_calibration.html#a147fed7878b2ce2578f912e377447cc8">Calibration</a>
 </li>
 <li>Size()
-: <a class="el" href="group___t_l_map_widget.html#gab8baf4ac21066099566fc15ba5f9542d">core::Size</a>
+: <a class="el" href="group___t_l_map_widget.html#gaf57b3247af9a9399f85615e6ad8a6981">core::Size</a>
 </li>
 <li>size()
 : <a class="el" href="classffft_1_1_dyn_array.html#aab5a878741b62b079c94db354357127d">ffft::DynArray&lt; T &gt;</a>
@@ -1876,7 +1876,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="group__utils.html#gace8cec5dafaa1abc817894cc35a640f7">ScaledPixmapLabel</a>
 </li>
 <li>SizeLatLng()
-: <a class="el" href="group___t_l_map_widget.html#gaac692b4a2979e688baced1205991cf2a">internals::SizeLatLng</a>
+: <a class="el" href="group___t_l_map_widget.html#ga1d7d8f77f50a09f416f4fd64170db374">internals::SizeLatLng</a>
 </li>
 <li>SizeOfCode
 : <a class="el" href="group___uploader.html#gabd16f4e0796a41d99e70eaa2251c5767">tl_dfu::device</a>
@@ -1918,7 +1918,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="group___scope_plugin.html#gaaac18b4298b3bb722d59928336254cd1">SpectrogramData</a>
 </li>
 <li>SpectrogramScopeConfig()
-: <a class="el" href="group___scope_plugin.html#ga40e298cc36738756669408e5cb4d4166">SpectrogramScopeConfig</a>
+: <a class="el" href="group___scope_plugin.html#ga28b2d6eb7e9d8b459d67cef767b92fc5">SpectrogramScopeConfig</a>
 </li>
 <li>SpectrogramType
 : <a class="el" href="group___scope_plugin.html#ga4c227eca53956a4dda5ee8877b7868c6">SpectrogramScopeConfig</a>
@@ -2003,13 +2003,13 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </li>
 <li>state
 : <a class="el" href="class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1806625ef956622e6727d0b0d50274aa">ExtensionSystem::Internal::PluginSpecPrivate</a>
+, <a class="el" href="class_extension_system_1_1_plugin_spec.html#a2ce7fae71669e79fc1e4a227afee2c78">ExtensionSystem::PluginSpec</a>
 </li>
 <li>State
 : <a class="el" href="class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9">ExtensionSystem::PluginSpec</a>
 </li>
-<li>state()
-: <a class="el" href="class_extension_system_1_1_plugin_spec.html#a2ce7fae71669e79fc1e4a227afee2c78">ExtensionSystem::PluginSpec</a>
-, <a class="el" href="class_logging_plugin.html#ae4b58354ecf67dd121229c169e93d570">LoggingPlugin</a>
+<li>state
+: <a class="el" href="class_logging_plugin.html#ae4b58354ecf67dd121229c169e93d570">LoggingPlugin</a>
 </li>
 <li>stateChanged()
 : <a class="el" href="group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85">LoggingGadgetWidget</a>

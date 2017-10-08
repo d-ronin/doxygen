@@ -350,7 +350,7 @@ var searchData=
   ['currentposition',['CurrentPosition',['../group___t_l_map_widget.html#ga44a14bf2d358ec5f93c7a99416e20732',1,'internals::Core::CurrentPosition()'],['../group___t_l_map_widget.html#ga1a4eff9b0200201f53ab297430804bc8',1,'mapcontrol::TLMapWidget::CurrentPosition()']]],
   ['currentviewarea',['CurrentViewArea',['../group___t_l_map_widget.html#ga228af41d307f46e0d759a52f0305d39a',1,'internals::Core']]],
   ['currentwidget',['currentWidget',['../class_my_tabbed_stack_widget.html#a54de7410a5b308e2ea32fe95da7a1ed9',1,'MyTabbedStackWidget']]],
-  ['curve',['curve',['../group___scope_plugin.html#ga4a0647f875271067323cf2ad3868afa4',1,'ScatterplotData::curve()'],['../group___config_plugin.html#ga4f0e02687c32159b95bf341adf36853e',1,'ExpoCurve::ExpoPlotElements::Curve()']]],
+  ['curve',['Curve',['../group___config_plugin.html#ga4f0e02687c32159b95bf341adf36853e',1,'ExpoCurve::ExpoPlotElements::Curve()'],['../group___scope_plugin.html#ga4a0647f875271067323cf2ad3868afa4',1,'ScatterplotData::curve()']]],
   ['curvemaxchanged',['curveMaxChanged',['../group___u_a_v_object_widget_utils.html#gabf78aa6aaa393045db87deb6a481c3b1',1,'MixerCurveWidget']]],
   ['curveminchanged',['curveMinChanged',['../group___u_a_v_object_widget_utils.html#gac254f263b61538dfab5f1f2a06a7bb12',1,'MixerCurveWidget']]],
   ['curveupdated',['curveUpdated',['../group___u_a_v_object_widget_utils.html#ga90255ec9acd8db01306ae5f9af229f39',1,'MixerCurveWidget']]],

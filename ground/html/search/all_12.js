@@ -179,7 +179,7 @@ var searchData=
   ['runguard_2ecpp',['runguard.cpp',['../runguard_8cpp.html',1,'']]],
   ['runguard_2eh',['runguard.h',['../runguard_8h.html',1,'']]],
   ['runguard_5fglobal_2eh',['runguard_global.h',['../runguard__global_8h.html',1,'']]],
-  ['running',['running',['../group___core_plugin.html#ga3261fc81ed05713dec36b68d4a86b2d9',1,'Animation::running()'],['../class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9a7f0dc635a9c4606801a7e8382001e20f',1,'ExtensionSystem::PluginSpec::Running()'],['../group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81',1,'USBMonitor::Running()']]],
+  ['running',['Running',['../class_extension_system_1_1_plugin_spec.html#a3d40e1bd1f17eb32b314bcd282b3e3b9a7f0dc635a9c4606801a7e8382001e20f',1,'ExtensionSystem::PluginSpec::Running()'],['../group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81',1,'USBMonitor::Running()'],['../group___core_plugin.html#ga3261fc81ed05713dec36b68d4a86b2d9',1,'Animation::running()']]],
   ['runningthreads',['runningThreads',['../group___t_l_map_widget.html#gae7dc693c162396310de691f67b4b0e99',1,'diagnostics']]],
   ['runstate',['RunState',['../group___raw_h_i_d_plugin.html#gaff6bf8945a7cdab907cf5adc29bec064',1,'USBMonitor']]],
   ['runwizard',['runWizard',['../group___core_plugin.html#ga40d63dbc6350512777b72c0b7a9faa38',1,'Core::IWizard']]],

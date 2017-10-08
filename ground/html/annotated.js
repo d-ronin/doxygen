@@ -228,6 +228,7 @@ var annotated =
     [ "NotYetImplementedPage", "class_not_yet_implemented_page.html", "class_not_yet_implemented_page" ],
     [ "ObjectTransactionInfo", "class_object_transaction_info.html", "class_object_transaction_info" ],
     [ "ObjectTreeItem", "class_object_tree_item.html", "class_object_tree_item" ],
+    [ "OmnibusF3", "class_omnibus_f3.html", "class_omnibus_f3" ],
     [ "OpenPilotPlugin", "class_open_pilot_plugin.html", null ],
     [ "opmap_statusbar_widget", "classopmap__statusbar__widget.html", "classopmap__statusbar__widget" ],
     [ "opmap_zoom_slider_widget", "classopmap__zoom__slider__widget.html", "classopmap__zoom__slider__widget" ],

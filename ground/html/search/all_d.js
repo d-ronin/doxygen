@@ -117,7 +117,7 @@ var searchData=
   ['main_2ecpp',['main.cpp',['../plugins_2uavobjects_2tests_2main_8cpp.html',1,'']]],
   ['main_2eh',['main.h',['../main_8h.html',1,'']]],
   ['mainwindow',['MainWindow',['../class_core_1_1_internal_1_1_main_window.html',1,'Core::Internal']]],
-  ['mainwindow',['mainWindow',['../group___core_plugin.html#gad583b7ea7f5c09f09ec4a779616c05d9',1,'Core::Internal::CoreImpl::mainWindow()'],['../group___core_plugin.html#ga7bd137564271d03a3db75c0c71b99ea8',1,'Core::ICore::mainWindow()'],['../group___core_plugin.html#gaf9db4b672c4d3104f5541893e08e1809',1,'Core::Internal::CoreImpl::MainWindow()'],['../group___core_plugin.html#ga34c4b4207b46d11a4100c9b19f0e81bb',1,'Core::Internal::MainWindow::MainWindow()']]],
+  ['mainwindow',['MainWindow',['../group___core_plugin.html#gaf9db4b672c4d3104f5541893e08e1809',1,'Core::Internal::CoreImpl::MainWindow()'],['../group___core_plugin.html#ga34c4b4207b46d11a4100c9b19f0e81bb',1,'Core::Internal::MainWindow::MainWindow()'],['../group___core_plugin.html#gad583b7ea7f5c09f09ec4a779616c05d9',1,'Core::Internal::CoreImpl::mainWindow()'],['../group___core_plugin.html#ga7bd137564271d03a3db75c0c71b99ea8',1,'Core::ICore::mainWindow()']]],
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
   ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
   ['majorlossofconfiguration',['MajorLossOfConfiguration',['../group___core_plugin.html#gga568d6a6f7dd5f6d9b7ec976ff7c2284fab2dcca46e2c0d231f1ab7250bfd3dca9',1,'Core::UAVConfigInfo']]],

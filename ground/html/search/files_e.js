@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['omnibusf3_2ecpp',['omnibusf3.cpp',['../omnibusf3_8cpp.html',1,'']]],
+  ['omnibusf3_2eh',['omnibusf3.h',['../omnibusf3_8h.html',1,'']]],
   ['openpilotplugin_2ecpp',['openpilotplugin.cpp',['../openpilotplugin_8cpp.html',1,'']]],
   ['openpilotplugin_2eh',['openpilotplugin.h',['../openpilotplugin_8h.html',1,'']]],
   ['opmap_5fstatusbar_5fwidget_2ecpp',['opmap_statusbar_widget.cpp',['../opmap__statusbar__widget_8cpp.html',1,'']]],
