@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3b62ca2</span>
+   &#160;<span id="projectnumber">f50d226</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -148,76 +148,82 @@ $(document).ready(function(){initNavTree('optionsparser_8cpp_source.html','');})
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> OptionsParser::checkForTestOption(QStringList pluginTests)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">foreach</span> (QString plugin, pluginTests) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">pluginByName</a>(plugin);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                              <span class="stringliteral">&quot;Invalid test option, the plugin &#39;%0&#39; does not exist.&quot;</span>).arg(plugin));</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a25ce55fe8bc3538c6fe2c5ac18be1f66">testSpecs</a>.append(spec);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> OptionsParser::checkForNoLoadOption(QStringList pluginNoLoad)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">foreach</span> (QString plugin, pluginNoLoad) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">pluginByName</a>(plugin);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                              <span class="stringliteral">&quot;Invalid no-load option, the plugin &#39;%0&#39; does not exist.&quot;</span>).arg(plugin));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a1654aed9c8c9d015cc3ef398f405613e">pluginSpecs</a>.removeAll(spec);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">delete</span> spec;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#gaeafdcf8c4ecb2d7311ce9d2e9246e664">resolveDependencies</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> OptionsParser::checkForPluginOption(QStringList pluginOptions)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">foreach</span> (QString option, pluginOptions) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        QString simplified = option.simplified().replace(<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        QString argument;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        QString value;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span>(option.contains(<span class="stringliteral">&quot;=&quot;</span>)) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span>(simplified.split(<span class="stringliteral">&quot;=&quot;</span>).length() != 2) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                m_errorStrings.append(QCoreApplication::translate((<span class="stringliteral">&quot;PluginManager&quot;</span>),</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        <span class="stringliteral">&quot;Wrong plugin options syntax: %0&quot;</span>).arg(option));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            argument = simplified.split(<span class="stringliteral">&quot;=&quot;</span>).at(0);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            value = simplified.split(<span class="stringliteral">&quot;=&quot;</span>).at(1);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            argument = option;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> requiresParameter;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#gaed5d2239cf54d612a3e668de2538fdf0">pluginForOption</a>(argument, &amp;requiresParameter);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    <span class="stringliteral">&quot;No Plugin was found for given argument: %0&quot;</span>).arg(argument));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a648a51e79049f3a3e0b67596befc8639">addArgument</a>(argument);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>(!value.isEmpty())</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a648a51e79049f3a3e0b67596befc8639">addArgument</a>(value);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (pluginTests.length() == 1 &amp;&amp; pluginTests.at(0).toLower() == QStringLiteral(<span class="stringliteral">&quot;all&quot;</span>)) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> spec : m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a1654aed9c8c9d015cc3ef398f405613e">pluginSpecs</a>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a25ce55fe8bc3538c6fe2c5ac18be1f66">testSpecs</a>.append(spec);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">foreach</span> (QString plugin, pluginTests) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">pluginByName</a>(plugin);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                              <span class="stringliteral">&quot;Invalid test option, the plugin &#39;%0&#39; does not exist.&quot;</span>).arg(plugin));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a25ce55fe8bc3538c6fe2c5ac18be1f66">testSpecs</a>.append(spec);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> OptionsParser::checkForNoLoadOption(QStringList pluginNoLoad)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">foreach</span> (QString plugin, pluginNoLoad) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">pluginByName</a>(plugin);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                              <span class="stringliteral">&quot;Invalid no-load option, the plugin &#39;%0&#39; does not exist.&quot;</span>).arg(plugin));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            m_pmPrivate-&gt;<a class="code" href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a1654aed9c8c9d015cc3ef398f405613e">pluginSpecs</a>.removeAll(spec);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">delete</span> spec;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#gaeafdcf8c4ecb2d7311ce9d2e9246e664">resolveDependencies</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> OptionsParser::checkForPluginOption(QStringList pluginOptions)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">foreach</span> (QString option, pluginOptions) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        QString simplified = option.simplified().replace(<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        QString argument;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        QString value;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(option.contains(<span class="stringliteral">&quot;=&quot;</span>)) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span>(simplified.split(<span class="stringliteral">&quot;=&quot;</span>).length() != 2) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                m_errorStrings.append(QCoreApplication::translate((<span class="stringliteral">&quot;PluginManager&quot;</span>),</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="stringliteral">&quot;Wrong plugin options syntax: %0&quot;</span>).arg(option));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            argument = simplified.split(<span class="stringliteral">&quot;=&quot;</span>).at(0);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            value = simplified.split(<span class="stringliteral">&quot;=&quot;</span>).at(1);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            argument = option;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">bool</span> requiresParameter;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_spec.html">PluginSpec</a> *spec = m_pmPrivate-&gt;<a class="code" href="group__extensionsystem.html#gaed5d2239cf54d612a3e668de2538fdf0">pluginForOption</a>(argument, &amp;requiresParameter);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (!spec) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            m_errorStrings.append(QCoreApplication::translate(<span class="stringliteral">&quot;PluginManager&quot;</span>,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="stringliteral">&quot;No Plugin was found for given argument: %0&quot;</span>).arg(argument));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a648a51e79049f3a3e0b67596befc8639">addArgument</a>(argument);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(!value.isEmpty())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            spec-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a648a51e79049f3a3e0b67596befc8639">addArgument</a>(value);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="ttc" id="optionsparser_8h_html"><div class="ttname"><a href="optionsparser_8h.html">optionsparser.h</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_options_parser_html_aa7b18b131adb722eb43ad2fd8a01212b"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_options_parser.html#aa7b18b131adb722eb43ad2fd8a01212b">ExtensionSystem::Internal::OptionsParser::OptionsParser</a></div><div class="ttdeci">OptionsParser(PluginManagerPrivate *pmPrivate)</div><div class="ttdef"><b>Definition:</b> <a href="optionsparser_8cpp_source.html#l00035">optionsparser.cpp:35</a></div></div>
-<div class="ttc" id="group__extensionsystem_html_gaed5d2239cf54d612a3e668de2538fdf0"><div class="ttname"><a href="group__extensionsystem.html#gaed5d2239cf54d612a3e668de2538fdf0">ExtensionSystem::Internal::PluginManagerPrivate::pluginForOption</a></div><div class="ttdeci">PluginSpec * pluginForOption(const QString &amp;option, bool *requiresArgument) const </div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00711">pluginmanager.cpp:711</a></div></div>
+<div class="ttc" id="group__extensionsystem_html_gaed5d2239cf54d612a3e668de2538fdf0"><div class="ttname"><a href="group__extensionsystem.html#gaed5d2239cf54d612a3e668de2538fdf0">ExtensionSystem::Internal::PluginManagerPrivate::pluginForOption</a></div><div class="ttdeci">PluginSpec * pluginForOption(const QString &amp;option, bool *requiresArgument) const </div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00720">pluginmanager.cpp:720</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_plugin_manager_private_html_ae4cd1bb87340f771e64431172280191c"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#ae4cd1bb87340f771e64431172280191c">ExtensionSystem::Internal::PluginManagerPrivate::arguments</a></div><div class="ttdeci">QStringList arguments</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager__p_8h_source.html#l00069">pluginmanager_p.h:69</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_plugin_manager_private_html"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html">ExtensionSystem::Internal::PluginManagerPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager__p_8h_source.html#l00046">pluginmanager_p.h:46</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_plugin_manager_private_html_a25ce55fe8bc3538c6fe2c5ac18be1f66"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a25ce55fe8bc3538c6fe2c5ac18be1f66">ExtensionSystem::Internal::PluginManagerPrivate::testSpecs</a></div><div class="ttdeci">QList&lt; PluginSpec * &gt; testSpecs</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager__p_8h_source.html#l00064">pluginmanager_p.h:64</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_options_parser_html_a4ab0ba57acf22896bb43d5067b591dea"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_options_parser.html#a4ab0ba57acf22896bb43d5067b591dea">ExtensionSystem::Internal::OptionsParser::parse</a></div><div class="ttdeci">QStringList parse(QStringList pluginOptions, QStringList pluginTests, QStringList pluginNoLoad)</div><div class="ttdef"><b>Definition:</b> <a href="optionsparser_8cpp_source.html#l00040">optionsparser.cpp:40</a></div></div>
-<div class="ttc" id="group__extensionsystem_html_gaeafdcf8c4ecb2d7311ce9d2e9246e664"><div class="ttname"><a href="group__extensionsystem.html#gaeafdcf8c4ecb2d7311ce9d2e9246e664">ExtensionSystem::Internal::PluginManagerPrivate::resolveDependencies</a></div><div class="ttdeci">void resolveDependencies()</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00703">pluginmanager.cpp:703</a></div></div>
+<div class="ttc" id="group__extensionsystem_html_gaeafdcf8c4ecb2d7311ce9d2e9246e664"><div class="ttname"><a href="group__extensionsystem.html#gaeafdcf8c4ecb2d7311ce9d2e9246e664">ExtensionSystem::Internal::PluginManagerPrivate::resolveDependencies</a></div><div class="ttdeci">void resolveDependencies()</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00712">pluginmanager.cpp:712</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_spec_html_a648a51e79049f3a3e0b67596befc8639"><div class="ttname"><a href="class_extension_system_1_1_plugin_spec.html#a648a51e79049f3a3e0b67596befc8639">ExtensionSystem::PluginSpec::addArgument</a></div><div class="ttdeci">void addArgument(const QString &amp;argument)</div><div class="ttdef"><b>Definition:</b> <a href="pluginspec_8cpp_source.html#l00290">pluginspec.cpp:290</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_spec_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_spec.html">ExtensionSystem::PluginSpec</a></div><div class="ttdoc">Contains the information of the plugins xml description file and information about the plugin&#39;s curre...</div><div class="ttdef"><b>Definition:</b> <a href="pluginspec_8h_source.html#l00063">pluginspec.h:63</a></div></div>
-<div class="ttc" id="group__extensionsystem_html_ga30a333d4d21ef402dbaca5f3142ac666"><div class="ttname"><a href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">ExtensionSystem::Internal::PluginManagerPrivate::pluginByName</a></div><div class="ttdeci">PluginSpec * pluginByName(const QString &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00734">pluginmanager.cpp:734</a></div></div>
+<div class="ttc" id="group__extensionsystem_html_ga30a333d4d21ef402dbaca5f3142ac666"><div class="ttname"><a href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">ExtensionSystem::Internal::PluginManagerPrivate::pluginByName</a></div><div class="ttdeci">PluginSpec * pluginByName(const QString &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00743">pluginmanager.cpp:743</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_internal_1_1_plugin_manager_private_html_a1654aed9c8c9d015cc3ef398f405613e"><div class="ttname"><a href="class_extension_system_1_1_internal_1_1_plugin_manager_private.html#a1654aed9c8c9d015cc3ef398f405613e">ExtensionSystem::Internal::PluginManagerPrivate::pluginSpecs</a></div><div class="ttdeci">QList&lt; PluginSpec * &gt; pluginSpecs</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager__p_8h_source.html#l00063">pluginmanager_p.h:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

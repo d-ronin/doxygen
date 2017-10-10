@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">3b62ca2</span>
+   &#160;<span id="projectnumber">f50d226</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -145,9 +145,15 @@ $(document).ready(function(){initNavTree('uavobjectsplugin_8h_source.html','');}
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">extensionsInitialized</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">initialize</a>(<span class="keyword">const</span> QStringList &amp;arguments, QString *errorString);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_extension_system_1_1_i_plugin.html#a65c16ebd3a6e89918a99af6515fe68cb">shutdown</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // UAVOBJECTSPLUGIN_H</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef WITH_TESTS</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> testEnumFields();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> testIntFields();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // UAVOBJECTSPLUGIN_H</span></div>
 <div class="ttc" id="uavobjects__global_8h_html"><div class="ttname"><a href="uavobjects__global_8h.html">uavobjects_global.h</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a1db3a7fb242fca02229f9a3be4fd6610"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a1db3a7fb242fca02229f9a3be4fd6610">ExtensionSystem::IPlugin::extensionsInitialized</a></div><div class="ttdeci">virtual void extensionsInitialized()=0</div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_a9f3dc957317279daed393fdf4894e944"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#a9f3dc957317279daed393fdf4894e944">ExtensionSystem::IPlugin::initialize</a></div><div class="ttdeci">virtual bool initialize(const QStringList &amp;arguments, QString *errorString)=0</div></div>

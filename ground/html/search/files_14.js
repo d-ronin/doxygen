@@ -43,6 +43,7 @@ var searchData=
   ['uavobjectsplugin_2eh',['uavobjectsplugin.h',['../uavobjectsplugin_8h.html',1,'']]],
   ['uavobjectstest_2ecpp',['uavobjectstest.cpp',['../uavobjectstest_8cpp.html',1,'']]],
   ['uavobjectstest_2eh',['uavobjectstest.h',['../uavobjectstest_8h.html',1,'']]],
+  ['uavobjectstests_2ecpp',['uavobjectstests.cpp',['../uavobjectstests_8cpp.html',1,'']]],
   ['uavobjecttemplate_2ecpp',['uavobjecttemplate.cpp',['../uavobjecttemplate_8cpp.html',1,'']]],
   ['uavobjecttemplate_2eh',['uavobjecttemplate.h',['../uavobjecttemplate_8h.html',1,'']]],
   ['uavobjecttemplate_2em',['uavobjecttemplate.m',['../uavobjecttemplate_8m.html',1,'']]],

@@ -98,8 +98,8 @@ var NAVTREEINDEX =
 "qreadonlycheckbox_8h_source.html",
 "sparky2_8cpp.html",
 "taulinkgadgetfactory_8cpp.html",
-"uavobjecttemplate_8m.html#a4752ab0ce0602125fadef615d6b3a501",
-"winutils_8h.html#a8a09ecaa3bd4054c9ec43e90ec1a355ea055926f2ac80f7c474b764ea9268b07f"
+"uavobjecttemplate_8m.html#a2a89187d8e8e8fba509ef9ab5f815d88",
+"winutils_8h.html#a88cd1d3b7b4907b09a4fa1baf2794a4b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

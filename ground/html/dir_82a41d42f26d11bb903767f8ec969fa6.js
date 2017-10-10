@@ -21,6 +21,7 @@ var dir_82a41d42f26d11bb903767f8ec969fa6 =
     [ "uavobjectsinittemplate.cpp", "uavobjectsinittemplate_8cpp.html", "uavobjectsinittemplate_8cpp" ],
     [ "uavobjectsplugin.cpp", "uavobjectsplugin_8cpp.html", null ],
     [ "uavobjectsplugin.h", "uavobjectsplugin_8h.html", null ],
+    [ "uavobjectstests.cpp", "uavobjectstests_8cpp.html", null ],
     [ "uavobjecttemplate.cpp", "uavobjecttemplate_8cpp.html", "uavobjecttemplate_8cpp" ],
     [ "uavobjecttemplate.h", "uavobjecttemplate_8h.html", "uavobjecttemplate_8h" ],
     [ "uavobjecttemplate.m", "uavobjecttemplate_8m.html", "uavobjecttemplate_8m" ],
