@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">f50d226</span>
+   &#160;<span id="projectnumber">cd8780b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('cache_8cpp_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifdef DEBUG_GetGeocoderFromCache</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;Entered GetGeocoderFromCache&quot;</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>        QString ret=QString::null;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>        QString ret;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        QString filename=geoCache+QString(urlEnd)+<span class="stringliteral">&quot;.geo&quot;</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef DEBUG_GetGeocoderFromCache</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;GetGeocoderFromCache: Does file exist?:&quot;</span>&lt;&lt;filename;</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('cache_8cpp_source.html','');});
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#ga1c59fdf57a8e404d9069644cc2a06d68">   90</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___t_l_map_widget.html#ga1c59fdf57a8e404d9069644cc2a06d68">Cache::CacheGeocoder</a>(<span class="keyword">const</span> QString &amp;urlEnd, <span class="keyword">const</span> QString &amp;content)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        QString ret=QString::null;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        QString ret;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        QString filename=geoCache+QString(urlEnd)+<span class="stringliteral">&quot;.geo&quot;</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#ifdef DEBUG_CACHE</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;CacheGeocoder: Filename:&quot;</span>&lt;&lt;filename;</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('cache_8cpp_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef DEBUG_CACHE</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;Entered GetPlacemarkFromCache&quot;</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif //DEBUG_CACHE</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span>        QString ret=QString::null;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span>        QString ret;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        QString filename=placemarkCache+QString(urlEnd)+<span class="stringliteral">&quot;.plc&quot;</span>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#ifdef DEBUG_CACHE</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;GetPlacemarkFromCache: Does file exist?:&quot;</span>&lt;&lt;filename;</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('cache_8cpp_source.html','');});
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#ga605683519dbd3609033f61edfdbd6da3">  158</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___t_l_map_widget.html#ga605683519dbd3609033f61edfdbd6da3">Cache::CachePlacemark</a>(<span class="keyword">const</span> QString &amp;urlEnd, <span class="keyword">const</span> QString &amp;content)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        QString ret=QString::null;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        QString ret;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        QString filename=placemarkCache+QString(urlEnd)+<span class="stringliteral">&quot;.plc&quot;</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#ifdef DEBUG_CACHE</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor"></span>        qDebug()&lt;&lt;<span class="stringliteral">&quot;CachePlacemark: Filename:&quot;</span>&lt;&lt;filename;</div>
