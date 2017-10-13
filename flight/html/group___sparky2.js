@@ -13,7 +13,6 @@ var group___sparky2 =
     [ "pios_config.h", "targets_2sparky2_2fw_2pios__config_8h.html", null ],
     [ "BOARD_READABLE", "group___sparky2.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___sparky2.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___sparky2.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "BRUSHEDSPARKY_V0_1", "group___sparky2.html#ga078db8047bdd7d437ec5056c101f2901", null ],
     [ "BRUSHEDSPARKY_V0_2", "group___sparky2.html#gad8ce6ef6e839caa1c74ddc8d22beafe9", null ],
     [ "CAMERASTAB_POI_MODE", "group___sparky2.html#gaf4039c0d196379cbfb36489300f94ffe", null ],

@@ -17,7 +17,6 @@ var group___brain_r_e1 =
     [ "AUTOTUNE_AVERAGING_DECIMATION", "group___brain_r_e1.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
     [ "BOARD_READABLE", "group___brain_r_e1.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___brain_r_e1.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___brain_r_e1.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "BRAIN", "group___brain_r_e1.html#gad45c37db5c6056967bcfcef73128a6ae", null ],
     [ "CAMERASTAB_POI_MODE", "group___brain_r_e1.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "DEBUG_PRINTF", "group___brain_r_e1.html#gaa2230ce045fa6f32269efa3202144ffd", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9486e7c</span>
+   &#160;<span id="projectnumber">dcfa33a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -147,8 +147,10 @@ Macros</h2></td></tr>
 <tr class="separator:gaeaff7570caa39f05be4e96cfeb58efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ffa3a32e59f6376b79235ba24d62dbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(s)&#160;&#160;&#160;((s) * 1000 * 1000)</td></tr>
 <tr class="separator:ga9ffa3a32e59f6376b79235ba24d62dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fcc2d8a15a5e415fb3e4c79f6fa5af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga6fcc2d8a15a5e415fb3e4c79f6fa5af7">BL_DETECT_BREAK_TO_BL_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td></tr>
-<tr class="separator:ga6fcc2d8a15a5e415fb3e4c79f6fa5af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7eb5ea618db28dda28f1088838b7e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gab7eb5ea618db28dda28f1088838b7e15">BL_DETECT_BREAK_TO_BL_TIMER_WITH_VSENSE</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(2)</td></tr>
+<tr class="separator:gab7eb5ea618db28dda28f1088838b7e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49d8715a02825b5cde9967033fab2824"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga49d8715a02825b5cde9967033fab2824">BL_DETECT_BREAK_TO_BL_TIMER_NO_VSENSE</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td></tr>
+<tr class="separator:ga49d8715a02825b5cde9967033fab2824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac09dc0fe4a22025f5a0f5e253d338f4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gac09dc0fe4a22025f5a0f5e253d338f4f">BL_WAIT_FOR_DFU_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(6)</td></tr>
 <tr class="separator:gac09dc0fe4a22025f5a0f5e253d338f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9891b2d0e9d30b6cb37bf85d8a240594"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga9891b2d0e9d30b6cb37bf85d8a240594">BL_RECOVER_FROM_FAULT_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(10)</td></tr>
@@ -320,6 +322,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ga42ed271893f4f14875ec66d714985339"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga42ed271893f4f14875ec66d714985339">fsm_to_dfu_state_map</a> []</td></tr>
 <tr class="separator:ga42ed271893f4f14875ec66d714985339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb3b9cb9ff6301d47dd97effb82dc1d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gafb3b9cb9ff6301d47dd97effb82dc1d8">have_vsense</a></td></tr>
+<tr class="separator:gafb3b9cb9ff6301d47dd97effb82dc1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1010081207d22097ea807e2b9c709069"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structbl__transition.html">bl_transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga1010081207d22097ea807e2b9c709069">bl_transitions</a> [<a class="el" href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8af93ea79cff477ccf2583a988089a899b">BL_STATE_NUM_STATES</a>]</td></tr>
 <tr class="separator:ga1010081207d22097ea807e2b9c709069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -329,17 +333,31 @@ Variables</h2></td></tr>
 <p>LED PWM emulation for the unified bootloader.</p>
 <p>Data transfer functions for the unified bootloader.</p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga6fcc2d8a15a5e415fb3e4c79f6fa5af7"></a>
+<a class="anchor" id="ga49d8715a02825b5cde9967033fab2824"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BL_DETECT_BREAK_TO_BL_TIMER&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td>
+          <td class="memname">#define BL_DETECT_BREAK_TO_BL_TIMER_NO_VSENSE&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00048">48</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00046">46</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab7eb5ea618db28dda28f1088838b7e15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BL_DETECT_BREAK_TO_BL_TIMER_WITH_VSENSE&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00045">45</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -423,7 +441,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00052">52</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00049">49</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -437,7 +455,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00051">51</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00048">48</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -608,7 +626,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00101">101</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00098">98</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -648,7 +666,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00054">54</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00051">51</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -704,7 +722,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00070">70</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00067">67</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -791,7 +809,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00256">256</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00255">255</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -817,7 +835,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00425">425</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00431">431</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -853,7 +871,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00405">405</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00411">411</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -879,7 +897,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00393">393</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00399">399</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -915,7 +933,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00272">272</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00271">271</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -941,7 +959,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00267">267</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00266">266</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -967,7 +985,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00285">285</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00284">284</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1021,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00261">261</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00260">260</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1058,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>Should check if we're in the right state for this </dd></dl>
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00528">528</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00537">537</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1094,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00556">556</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00565">565</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1120,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00542">542</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00551">551</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1320,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00299">299</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00298">298</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1346,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00363">363</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00369">369</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1372,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00387">387</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00393">393</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1398,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00381">381</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00387">387</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1424,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00293">293</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00292">292</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1450,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00315">315</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00321">321</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1458,7 +1476,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00369">369</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00375">375</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1484,7 +1502,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00307">307</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00313">313</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1510,7 +1528,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00375">375</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00381">381</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1675,7 +1693,7 @@ Variables</h2></td></tr>
 <p>CortexM3 CPU vectors</p>
 <p>CortexM3 CPU vectors </p>
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00435">435</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00441">441</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1732,7 +1750,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00577">577</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00586">586</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +1773,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00151">151</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00150">150</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -1789,27 +1807,41 @@ Variables</h2></td></tr>
 <div class="line">        [<a class="code" href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a4ce24d9c390c89027072ade56af48a9c">BL_STATE_DFU_READ_IN_PROGRESS</a>]  = <a class="code" href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5aa277c0eecc2439010bed6f9762a778fa">DFU_READING</a>,</div>
 <div class="line">        [<a class="code" href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a3b7f6dd9df75cdb7dfae8d6fc8a4451e">BL_STATE_DFU_WRITE_IN_PROGRESS</a>] = <a class="code" href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a257e1083cde1b9047188ace4706489c8">DFU_WRITING</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8abd67c80739baaca8018d5ffe3c27924d"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8abd67c80739baaca8018d5ffe3c27924d">BL_STATE_WAIT_FOR_DFU</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00058">main.c:58</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5ace648968a6c4f6f5fcc6c479a2d875aa"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5ace648968a6c4f6f5fcc6c479a2d875aa">DFU_OUTSIDE_DEV_CAP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00081">main.c:81</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a6bcae174974fbc09cb5fd28f4598ea1d"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a6bcae174974fbc09cb5fd28f4598ea1d">DFU_LAST_OP_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00076">main.c:76</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a961d028bb3cc08d0eef33266c050baed"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a961d028bb3cc08d0eef33266c050baed">DFU_FAILED_JUMP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00083">main.c:83</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8ac92283b53d3ebe3c04083c91107a9352"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8ac92283b53d3ebe3c04083c91107a9352">BL_STATE_JUMPING_TO_APP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00059">main.c:59</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a257e1083cde1b9047188ace4706489c8"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a257e1083cde1b9047188ace4706489c8">DFU_WRITING</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00072">main.c:72</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8adf159d1544c01bf5aa3577962905b14a"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8adf159d1544c01bf5aa3577962905b14a">BL_STATE_DFU_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00063">main.c:63</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5aa277c0eecc2439010bed6f9762a778fa"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5aa277c0eecc2439010bed6f9762a778fa">DFU_READING</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00077">main.c:77</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a2aa828d44d00293fa21f803aa4b98b50"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a2aa828d44d00293fa21f803aa4b98b50">BL_STATE_DETECT_BREAK_TO_BL</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00057">main.c:57</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a7f7fb4dd43b2dc42173dd48908a62df7"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a7f7fb4dd43b2dc42173dd48908a62df7">BL_STATE_DFU_OPERATION_OK</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00062">main.c:62</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5abd89c9922117610e92013af9854d4e75"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5abd89c9922117610e92013af9854d4e75">DFU_BL_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00078">main.c:78</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8ae12e84999c94059873440f9b15ec63f4"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8ae12e84999c94059873440f9b15ec63f4">BL_STATE_FSM_FAULT</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00055">main.c:55</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a6750bb1bc3aa5e183a24e5f1eebbc134"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a6750bb1bc3aa5e183a24e5f1eebbc134">DFU_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00071">main.c:71</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a87f7ff194620e83391ef1f37e5c000ac"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a87f7ff194620e83391ef1f37e5c000ac">BL_STATE_JUMP_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00060">main.c:60</a></div></div>
-<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a0161dad87f4ca40e4d9bcc0230c2b842"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a0161dad87f4ca40e4d9bcc0230c2b842">DFU_LAST_OP_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00079">main.c:79</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a3b7f6dd9df75cdb7dfae8d6fc8a4451e"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a3b7f6dd9df75cdb7dfae8d6fc8a4451e">BL_STATE_DFU_WRITE_IN_PROGRESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00065">main.c:65</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a80517e5050c7234614ceb525c5fc4a30"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a80517e5050c7234614ceb525c5fc4a30">BL_STATE_DFU_OPERATION_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00061">main.c:61</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a6ecb7d5fe195166c4c63c4e1c64bad62"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a6ecb7d5fe195166c4c63c4e1c64bad62">BL_STATE_INIT</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00056">main.c:56</a></div></div>
-<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a4ce24d9c390c89027072ade56af48a9c"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a4ce24d9c390c89027072ade56af48a9c">BL_STATE_DFU_READ_IN_PROGRESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00064">main.c:64</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8abd67c80739baaca8018d5ffe3c27924d"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8abd67c80739baaca8018d5ffe3c27924d">BL_STATE_WAIT_FOR_DFU</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00055">main.c:55</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5ace648968a6c4f6f5fcc6c479a2d875aa"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5ace648968a6c4f6f5fcc6c479a2d875aa">DFU_OUTSIDE_DEV_CAP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00078">main.c:78</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a6bcae174974fbc09cb5fd28f4598ea1d"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a6bcae174974fbc09cb5fd28f4598ea1d">DFU_LAST_OP_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00073">main.c:73</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a961d028bb3cc08d0eef33266c050baed"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a961d028bb3cc08d0eef33266c050baed">DFU_FAILED_JUMP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00080">main.c:80</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8ac92283b53d3ebe3c04083c91107a9352"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8ac92283b53d3ebe3c04083c91107a9352">BL_STATE_JUMPING_TO_APP</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00056">main.c:56</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a257e1083cde1b9047188ace4706489c8"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a257e1083cde1b9047188ace4706489c8">DFU_WRITING</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00069">main.c:69</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8adf159d1544c01bf5aa3577962905b14a"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8adf159d1544c01bf5aa3577962905b14a">BL_STATE_DFU_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00060">main.c:60</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5aa277c0eecc2439010bed6f9762a778fa"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5aa277c0eecc2439010bed6f9762a778fa">DFU_READING</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00074">main.c:74</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a2aa828d44d00293fa21f803aa4b98b50"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a2aa828d44d00293fa21f803aa4b98b50">BL_STATE_DETECT_BREAK_TO_BL</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00054">main.c:54</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a7f7fb4dd43b2dc42173dd48908a62df7"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a7f7fb4dd43b2dc42173dd48908a62df7">BL_STATE_DFU_OPERATION_OK</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00059">main.c:59</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5abd89c9922117610e92013af9854d4e75"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5abd89c9922117610e92013af9854d4e75">DFU_BL_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00075">main.c:75</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8ae12e84999c94059873440f9b15ec63f4"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8ae12e84999c94059873440f9b15ec63f4">BL_STATE_FSM_FAULT</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00052">main.c:52</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a6750bb1bc3aa5e183a24e5f1eebbc134"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a6750bb1bc3aa5e183a24e5f1eebbc134">DFU_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00068">main.c:68</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a87f7ff194620e83391ef1f37e5c000ac"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a87f7ff194620e83391ef1f37e5c000ac">BL_STATE_JUMP_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00057">main.c:57</a></div></div>
+<div class="ttc" id="group___common_html_ggac7bf2f42d83376caaec963c96905ebf5a0161dad87f4ca40e4d9bcc0230c2b842"><div class="ttname"><a href="group___common.html#ggac7bf2f42d83376caaec963c96905ebf5a0161dad87f4ca40e4d9bcc0230c2b842">DFU_LAST_OP_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00076">main.c:76</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a3b7f6dd9df75cdb7dfae8d6fc8a4451e"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a3b7f6dd9df75cdb7dfae8d6fc8a4451e">BL_STATE_DFU_WRITE_IN_PROGRESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00062">main.c:62</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a80517e5050c7234614ceb525c5fc4a30"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a80517e5050c7234614ceb525c5fc4a30">BL_STATE_DFU_OPERATION_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00058">main.c:58</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a6ecb7d5fe195166c4c63c4e1c64bad62"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a6ecb7d5fe195166c4c63c4e1c64bad62">BL_STATE_INIT</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00053">main.c:53</a></div></div>
+<div class="ttc" id="group___common_html_gga31f2574038cb70b7ee36f95bf76085c8a4ce24d9c390c89027072ade56af48a9c"><div class="ttname"><a href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8a4ce24d9c390c89027072ade56af48a9c">BL_STATE_DFU_READ_IN_PROGRESS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00061">main.c:61</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00087">87</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00084">84</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafb3b9cb9ff6301d47dd97effb82dc1d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool have_vsense</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bl_2common_2main_8c_source.html#l00133">133</a> of file <a class="el" href="bl_2common_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>

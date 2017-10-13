@@ -49,6 +49,7 @@ var searchData=
   ['hash_5frng_5firqhandler',['HASH_RNG_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a02197754de1bce261e192d5e5221f20e',1,'pios_chibios_transition_priv.h']]],
   ['hasseverity',['hasSeverity',['../group___libraries.html#ga80202f5db85c05e86e4d5d4889961c2c',1,'alarms.c']]],
   ['hasthrottle',['hasThrottle',['../struct_object_event_entry.html#a7734ba2555249f40564901e8fa141b89',1,'ObjectEventEntry']]],
+  ['have_5fvsense',['have_vsense',['../group___common.html#gafb3b9cb9ff6301d47dd97effb82dc1d8',1,'main.c']]],
   ['hdop',['hDOP',['../struct_u_b_x___n_a_v___d_o_p.html#a04de37f3f6aaf991ce6435808faed53b',1,'UBX_NAV_DOP']]],
   ['hdot',['Hdot',['../struct_w_m_mtype___geo_magnetic_elements.html#aa1e42deb6458e019df1619c0fec2ba3c',1,'WMMtype_GeoMagneticElements']]],
   ['header',['header',['../struct_u_b_x_packet.html#aa1e79029fc57ab8ba520dfaf0c66f660',1,'UBXPacket']]],

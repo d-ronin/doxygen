@@ -13,6 +13,7 @@ var searchData=
   ['has_5fmag',['has_mag',['../group___on_screen_display.html#ga262760ef6d30ecf31daf5b79c9d10fb4',1,'onscreendisplay.c']]],
   ['has_5fnav',['has_nav',['../group___on_screen_display.html#ga93cae68ddab9b53ebd8f68a815ed919a',1,'onscreendisplay.c']]],
   ['hasthrottle',['hasThrottle',['../struct_object_event_entry.html#a7734ba2555249f40564901e8fa141b89',1,'ObjectEventEntry']]],
+  ['have_5fvsense',['have_vsense',['../group___common.html#gafb3b9cb9ff6301d47dd97effb82dc1d8',1,'main.c']]],
   ['hdop',['hDOP',['../struct_u_b_x___n_a_v___d_o_p.html#a04de37f3f6aaf991ce6435808faed53b',1,'UBX_NAV_DOP']]],
   ['hdot',['Hdot',['../struct_w_m_mtype___geo_magnetic_elements.html#aa1e42deb6458e019df1619c0fec2ba3c',1,'WMMtype_GeoMagneticElements']]],
   ['header',['header',['../struct_u_b_x_packet.html#aa1e79029fc57ab8ba520dfaf0c66f660',1,'UBXPacket']]],

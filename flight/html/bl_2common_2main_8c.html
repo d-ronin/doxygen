@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9486e7c</span>
+   &#160;<span id="projectnumber">dcfa33a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -144,8 +144,10 @@ Macros</h2></td></tr>
 <tr class="separator:gaeaff7570caa39f05be4e96cfeb58efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ffa3a32e59f6376b79235ba24d62dbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(s)&#160;&#160;&#160;((s) * 1000 * 1000)</td></tr>
 <tr class="separator:ga9ffa3a32e59f6376b79235ba24d62dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fcc2d8a15a5e415fb3e4c79f6fa5af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga6fcc2d8a15a5e415fb3e4c79f6fa5af7">BL_DETECT_BREAK_TO_BL_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td></tr>
-<tr class="separator:ga6fcc2d8a15a5e415fb3e4c79f6fa5af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7eb5ea618db28dda28f1088838b7e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gab7eb5ea618db28dda28f1088838b7e15">BL_DETECT_BREAK_TO_BL_TIMER_WITH_VSENSE</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(2)</td></tr>
+<tr class="separator:gab7eb5ea618db28dda28f1088838b7e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49d8715a02825b5cde9967033fab2824"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga49d8715a02825b5cde9967033fab2824">BL_DETECT_BREAK_TO_BL_TIMER_NO_VSENSE</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7f931bc67b924518fc682022f1ec2831">MSEC_TO_USEC</a>(500)</td></tr>
+<tr class="separator:ga49d8715a02825b5cde9967033fab2824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac09dc0fe4a22025f5a0f5e253d338f4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gac09dc0fe4a22025f5a0f5e253d338f4f">BL_WAIT_FOR_DFU_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(6)</td></tr>
 <tr class="separator:gac09dc0fe4a22025f5a0f5e253d338f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9891b2d0e9d30b6cb37bf85d8a240594"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga9891b2d0e9d30b6cb37bf85d8a240594">BL_RECOVER_FROM_FAULT_TIMER</a>&#160;&#160;&#160;<a class="el" href="group___common.html#ga9ffa3a32e59f6376b79235ba24d62dbc">SEC_TO_USEC</a>(10)</td></tr>
@@ -265,6 +267,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ga42ed271893f4f14875ec66d714985339"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga42ed271893f4f14875ec66d714985339">fsm_to_dfu_state_map</a> []</td></tr>
 <tr class="separator:ga42ed271893f4f14875ec66d714985339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb3b9cb9ff6301d47dd97effb82dc1d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gafb3b9cb9ff6301d47dd97effb82dc1d8">have_vsense</a></td></tr>
+<tr class="separator:gafb3b9cb9ff6301d47dd97effb82dc1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1010081207d22097ea807e2b9c709069"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structbl__transition.html">bl_transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga1010081207d22097ea807e2b9c709069">bl_transitions</a> [<a class="el" href="group___common.html#gga31f2574038cb70b7ee36f95bf76085c8af93ea79cff477ccf2583a988089a899b">BL_STATE_NUM_STATES</a>]</td></tr>
 <tr class="separator:ga1010081207d22097ea807e2b9c709069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -74,7 +74,8 @@ var group___common =
       [ "entry_fn", "structbl__transition.html#a313c9c672fccbdb1e07b173fe4b068d7", null ],
       [ "next_state", "structbl__transition.html#a965629351798a74ff69aed9a3f8f72d6", null ]
     ] ],
-    [ "BL_DETECT_BREAK_TO_BL_TIMER", "group___common.html#ga6fcc2d8a15a5e415fb3e4c79f6fa5af7", null ],
+    [ "BL_DETECT_BREAK_TO_BL_TIMER_NO_VSENSE", "group___common.html#ga49d8715a02825b5cde9967033fab2824", null ],
+    [ "BL_DETECT_BREAK_TO_BL_TIMER_WITH_VSENSE", "group___common.html#gab7eb5ea618db28dda28f1088838b7e15", null ],
     [ "BL_INCLUDE_CAP_EXTENSIONS", "group___common.html#gae6ee538e14601bd60332e712dce18023", null ],
     [ "BL_MSG_COMMAND_MASK", "group___common.html#gab334c641d9f908e3a9d9e8553d78c08a", null ],
     [ "BL_MSG_FLAGS_ECHO_REP", "group___common.html#ga795bf99abe3eae3fd888b8a52fb24f09", null ],
@@ -186,5 +187,6 @@ var group___common =
     [ "PIOS_Board_Init", "group___common.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
     [ "process_packet_rx", "group___common.html#ga59bf0888321d9ef018e8c078d01fab88", null ],
     [ "bl_transitions", "group___common.html#ga1010081207d22097ea807e2b9c709069", null ],
-    [ "fsm_to_dfu_state_map", "group___common.html#ga42ed271893f4f14875ec66d714985339", null ]
+    [ "fsm_to_dfu_state_map", "group___common.html#ga42ed271893f4f14875ec66d714985339", null ],
+    [ "have_vsense", "group___common.html#gafb3b9cb9ff6301d47dd97effb82dc1d8", null ]
 ];

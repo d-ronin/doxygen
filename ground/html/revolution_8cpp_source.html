@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9486e7c</span>
+   &#160;<span id="projectnumber">dcfa33a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -508,17 +508,18 @@ $(document).ready(function(){initNavTree('revolution_8cpp_source.html','');});
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb">ANNUNCIATOR_HEARTBEAT</a>:</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79">ANNUNCIATOR_RGB</a>:</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">ANNUNCIATOR_ALARM</a>:</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">if</span> (uavoUtilManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga20e8da6668f3dfb1231b33e7b44af01c">getBoardRevision</a>() == 3)</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">ANNUNCIATOR_BUZZER</a>:</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">ANNUNCIATOR_DAC</a>:</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    }</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea6107521cf9a071d510ef950872e029b1">ANNUNCIATOR_BUZZER</a>:</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="comment">/* TODO: would be nice to have a distinct &quot;revision&quot; for this */</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea050ec18498ff2e8f0042d6b9a386be2f">ANNUNCIATOR_ALARM</a>:</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">if</span> (uavoUtilManager-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga20e8da6668f3dfb1231b33e7b44af01c">getBoardRevision</a>() == 3)</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">ANNUNCIATOR_DAC</a>:</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    }</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c"><div class="ttname"><a href="group___core_plugin.html#gga599a013aa05047b3c7741e35a9c59ab5a7c55fd7edcb4bc2fc1fd699f9972525c">Core::IBoardType::INPUT_TYPE_PWM</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00160">iboardtype.h:160</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5"><div class="ttname"><a href="group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea1fcd68e3a8ae34852cc1d71f749ef2f5">Core::IBoardType::ANNUNCIATOR_DAC</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00179">iboardtype.h:179</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga254a5750afd5834f9f88056ce6fadb66"><div class="ttname"><a href="group___core_plugin.html#ga254a5750afd5834f9f88056ce6fadb66">Core::IBoardType::boardType</a></div><div class="ttdeci">qint32 boardType</div><div class="ttdoc">The numerical board type ID. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00288">iboardtype.h:288</a></div></div>

@@ -1,6 +1,7 @@
 var bl_2common_2main_8c =
 [
-    [ "BL_DETECT_BREAK_TO_BL_TIMER", "bl_2common_2main_8c.html#ga6fcc2d8a15a5e415fb3e4c79f6fa5af7", null ],
+    [ "BL_DETECT_BREAK_TO_BL_TIMER_NO_VSENSE", "bl_2common_2main_8c.html#ga49d8715a02825b5cde9967033fab2824", null ],
+    [ "BL_DETECT_BREAK_TO_BL_TIMER_WITH_VSENSE", "bl_2common_2main_8c.html#gab7eb5ea618db28dda28f1088838b7e15", null ],
     [ "BL_RECOVER_FROM_FAULT_TIMER", "bl_2common_2main_8c.html#ga9891b2d0e9d30b6cb37bf85d8a240594", null ],
     [ "BL_WAIT_FOR_DFU_TIMER", "bl_2common_2main_8c.html#gac09dc0fe4a22025f5a0f5e253d338f4f", null ],
     [ "MSEC_TO_USEC", "bl_2common_2main_8c.html#ga7f931bc67b924518fc682022f1ec2831", null ],
@@ -74,5 +75,6 @@ var bl_2common_2main_8c =
     [ "PIOS_Board_Init", "bl_2common_2main_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
     [ "process_packet_rx", "bl_2common_2main_8c.html#ga59bf0888321d9ef018e8c078d01fab88", null ],
     [ "bl_transitions", "bl_2common_2main_8c.html#ga1010081207d22097ea807e2b9c709069", null ],
-    [ "fsm_to_dfu_state_map", "bl_2common_2main_8c.html#ga42ed271893f4f14875ec66d714985339", null ]
+    [ "fsm_to_dfu_state_map", "bl_2common_2main_8c.html#ga42ed271893f4f14875ec66d714985339", null ],
+    [ "have_vsense", "bl_2common_2main_8c.html#gafb3b9cb9ff6301d47dd97effb82dc1d8", null ]
 ];

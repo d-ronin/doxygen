@@ -13,7 +13,6 @@ var group___brain =
     [ "splash.h", "brain_2fw_2splash_8h.html", null ],
     [ "BOARD_READABLE", "group___brain.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___brain.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___brain.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "BRAIN", "group___brain.html#gad45c37db5c6056967bcfcef73128a6ae", null ],
     [ "CAMERASTAB_POI_MODE", "group___brain.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "DEBUG_PRINTF", "group___brain.html#gaa2230ce045fa6f32269efa3202144ffd", null ],

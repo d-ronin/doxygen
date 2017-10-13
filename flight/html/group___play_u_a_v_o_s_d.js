@@ -6,7 +6,6 @@ var group___play_u_a_v_o_s_d =
     [ "usb_conf.h", "playuavosd_2board-info_2usb__conf_8h.html", null ],
     [ "BOARD_READABLE", "group___play_u_a_v_o_s_d.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___play_u_a_v_o_s_d.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___play_u_a_v_o_s_d.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "CPULOAD_LIMIT_CRITICAL", "group___play_u_a_v_o_s_d.html#ga33b8e7ed32bafe7b1e55e18b832854ce", null ],
     [ "CPULOAD_LIMIT_WARNING", "group___play_u_a_v_o_s_d.html#ga08ff1c9a9c1942647c4ee60b087e4ca6", null ],
     [ "DEBUG_LEVEL", "group___play_u_a_v_o_s_d.html#gac2d33ccaf63f5d5b66552b95426c0137", null ],

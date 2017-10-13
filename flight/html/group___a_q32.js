@@ -12,7 +12,6 @@ var group___a_q32 =
     [ "pios_config.h", "targets_2aq32_2fw_2pios__config_8h.html", null ],
     [ "BOARD_READABLE", "group___a_q32.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___a_q32.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___a_q32.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "CAMERASTAB_POI_MODE", "group___a_q32.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "DEBUG_PRINTF", "group___a_q32.html#gaa2230ce045fa6f32269efa3202144ffd", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "group___a_q32.html#ga9be33d810838161edf9412377209a4cf", null ],

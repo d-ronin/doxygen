@@ -1,6 +1,5 @@
 var targets_2playuavosd_2bl_2pios__config_8h =
 [
-    [ "BOOTLOADER_PAUSE_DELAY", "targets_2playuavosd_2bl_2pios__config_8h.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "PIOS_INCLUDE_ANNUNC", "targets_2playuavosd_2bl_2pios__config_8h.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_COM_MSG", "targets_2playuavosd_2bl_2pios__config_8h.html#gaa481fbc97c64c579738c2bf6ea8482d0", null ],
     [ "PIOS_INCLUDE_DELAY", "targets_2playuavosd_2bl_2pios__config_8h.html#ga609c3fff40cb5d2fbeb6aa2e1c5b6951", null ],

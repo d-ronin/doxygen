@@ -9,7 +9,6 @@ var group___l_u_x =
     [ "AUTOTUNE_AVERAGING_DECIMATION", "group___l_u_x.html#ga867e829c0aaaf0e6f1c0f229b670e71e", null ],
     [ "BOARD_READABLE", "group___l_u_x.html#ga9dddfa55bb34063f55fe36728f035954", null ],
     [ "BOARD_WRITABLE", "group___l_u_x.html#ga62e300631856e0c56b1c9b3cbcf5621d", null ],
-    [ "BOOTLOADER_PAUSE_DELAY", "group___l_u_x.html#ga3d99204a6b833d590cd1871a95b1cee4", null ],
     [ "DEBUG_PRINTF", "group___l_u_x.html#gaa2230ce045fa6f32269efa3202144ffd", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "group___l_u_x.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MAX_DEL_RETRYS", "group___l_u_x.html#gab98ad41f0f40e6edd46ea98d46edb0af", null ],

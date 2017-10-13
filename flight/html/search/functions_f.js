@@ -430,6 +430,7 @@ var searchData=
   ['pios_5fusb_5fcheckavailable',['PIOS_USB_CheckAvailable',['../group___p_i_o_s___u_s_b.html#ga188f42ea57c840a2b74611428547c92c',1,'pios_usb.h']]],
   ['pios_5fusb_5fdesc_5fhid_5fcdc_5finit',['PIOS_USB_DESC_HID_CDC_Init',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga15a9a7a662d2bce8263b132b33753d75',1,'pios_usb_desc_hid_cdc.c']]],
   ['pios_5fusb_5fdesc_5fhid_5fonly_5finit',['PIOS_USB_DESC_HID_ONLY_Init',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506',1,'pios_usb_desc_hid_only.c']]],
+  ['pios_5fusb_5fhavevsense',['PIOS_USB_HaveVSense',['../group___p_i_o_s___u_s_b.html#ga994f0eec70ffb3c90648a792854e9f0b',1,'pios_usb.h']]],
   ['pios_5fusb_5fhid_5fchangeconnectionstate',['PIOS_USB_HID_ChangeConnectionState',['../group___p_i_o_s___u_s_b___h_i_d.html#ga7bc7de75840613b8ba148d493d12598b',1,'pios_usb_hid.h']]],
   ['pios_5fusb_5fhid_5fcheckavailable',['PIOS_USB_HID_CheckAvailable',['../group___p_i_o_s___u_s_b___h_i_d.html#ga2d215927e0302a88603e843e9975277e',1,'pios_usb_hid.h']]],
   ['pios_5fusb_5fhid_5finit',['PIOS_USB_HID_Init',['../group___p_i_o_s___u_s_b___c_o_m.html#gad8727d3d5a14b22a851789d5c12f4f85',1,'pios_usb_hid_priv.h']]],
