@@ -62,6 +62,7 @@ var searchData=
   ['rpm',['rpm',['../structhott__gam__message.html#a604d96b48e788781436eba0181d66f47',1,'hott_gam_message::rpm()'],['../structhott__eam__message.html#acf9c06dbca6180c5ba8d27cbe4f45435',1,'hott_eam_message::rpm()'],['../structhott__esc__message.html#a08c88c1c0526936f6fc0a51ecdde53d4',1,'hott_esc_message::rpm()']]],
   ['rpm2',['rpm2',['../structhott__gam__message.html#a0909e10c7704f35025fe5e788789c3c9',1,'hott_gam_message']]],
   ['rsb',['Rsb',['../group___sensors.html#gab0474ee7eeda2c4413d5963c8d142020',1,'sensors.c']]],
+  ['rscode_5fdebug',['rscode_debug',['../ecc_8h.html#a2f713197100f1af7f683efc48c2d9e86',1,'rscode_debug():&#160;rs.c'],['../rs_8c.html#a2f713197100f1af7f683efc48c2d9e86',1,'rscode_debug():&#160;rs.c']]],
   ['rssi',['rssi',['../structmsp__analog.html#a152747308cae47992636f2f4dfc34a25',1,'msp_analog::rssi()'],['../structtelemetry__t.html#a51c117a02cf3b4a0903b5741ccb91bc6',1,'telemetry_t::rssi()'],['../structrfm22b__stats.html#af292c65ed2be928fd2c5e4639c2cf025',1,'rfm22b_stats::rssi()'],['../msp__messages_8h.html#afb0dc2ef1295b6bbe7a561d3d8552dda',1,'rssi():&#160;msp_messages.h']]],
   ['rssi_5fabove_5fthreshold',['rssi_above_threshold',['../unionrfm22b__int__status__2.html#a910c6f8e362b42a37681b4df64d60081',1,'rfm22b_int_status_2']]],
   ['rssi_5fdbm',['rssi_dBm',['../structpios__rfm22b__dev.html#a7efa2c785a1c9feaff4db472c1f22805',1,'pios_rfm22b_dev']]],

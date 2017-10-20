@@ -19,9 +19,9 @@ var ecc_8h =
     [ "mult_polys", "ecc_8h.html#ad6079f119d46b188fc8f0c8f98cbbc03", null ],
     [ "scale_poly", "ecc_8h.html#adeed254ee2d542d7da8d54d5d5762f17", null ],
     [ "zero_poly", "ecc_8h.html#afe3883a12ae28716adce4ede69d58191", null ],
-    [ "DEBUG", "ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078", null ],
     [ "gexp", "ecc_8h.html#a4bfe7bd4f17407ec020b8850207bfa25", null ],
     [ "glog", "ecc_8h.html#ac5e276c5c2818484cef4185b715f2c70", null ],
     [ "pBytes", "ecc_8h.html#ae92bed6593d875f29f79a12f10e84b5b", null ],
+    [ "rscode_debug", "ecc_8h.html#a2f713197100f1af7f683efc48c2d9e86", null ],
     [ "synBytes", "ecc_8h.html#a5dd915356908211565387e01d4a9cd8d", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">dcfa33a</span>
+   &#160;<span id="projectnumber">8f291b0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> (sum == 0) </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      { </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="berlekamp_8c.html#ae09cb9bf932c3f2be9e053859c764cc5">ErrorLocs</a>[<a class="code" href="berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6">NErrors</a>] = (255-r); <a class="code" href="berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6">NErrors</a>++; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">//if (DEBUG) fprintf(stderr, &quot;Root found at r = %d, (255-r) = %d\n&quot;, r, (255-r));</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">//if (rscode_debug) fprintf(stderr, &quot;Root found at r = %d, (255-r) = %d\n&quot;, r, (255-r));</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
@@ -401,7 +401,7 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">/* first check for illegal error locs */</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6">NErrors</a>; r++) {</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="berlekamp_8c.html#ae09cb9bf932c3f2be9e053859c764cc5">ErrorLocs</a>[r] &gt;= csize) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="comment">//if (DEBUG) fprintf(stderr, &quot;Error loc i=%d outside of codeword length %d\n&quot;, i, csize);</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="comment">//if (rscode_debug) fprintf(stderr, &quot;Error loc i=%d outside of codeword length %d\n&quot;, i, csize);</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">return</span>(0);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      }</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
@@ -422,14 +422,14 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      </div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      err = <a class="code" href="ecc_8h.html#a67e5fdd13f145fe895d82b04bc7bffc3">gmult</a>(num, <a class="code" href="ecc_8h.html#aea2f56d785c0dfc8af1f9bc2c78294f4">ginv</a>(denom));</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="comment">//if (DEBUG) fprintf(stderr, &quot;Error magnitude %#x at loc %d\n&quot;, err, csize-i);</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="comment">//if (rscode_debug) fprintf(stderr, &quot;Error magnitude %#x at loc %d\n&quot;, err, csize-i);</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      codeword[csize-i-1] ^= err;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">return</span>(1);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">//if (DEBUG &amp;&amp; NErrors) fprintf(stderr, &quot;Uncorrectable codeword\n&quot;);</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">//if (rscode_debug &amp;&amp; NErrors) fprintf(stderr, &quot;Uncorrectable codeword\n&quot;);</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">return</span>(0);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  }</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>

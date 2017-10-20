@@ -1,7 +1,7 @@
 var posix_2pios__debug_8c =
 [
     [ "PIOS_DEBUG_Init", "posix_2pios__debug_8c.html#gabbc10ed2b3c2b4a793433668661c37c1", null ],
-    [ "PIOS_DEBUG_Panic", "posix_2pios__debug_8c.html#gae3876733b5e6b40c8fcbdb683d206068", null ],
+    [ "PIOS_DEBUG_Panic", "posix_2pios__debug_8c.html#ga0b99ad95012ef56f8f490902384f07e3", null ],
     [ "PIOS_DEBUG_PinHigh", "posix_2pios__debug_8c.html#ga7eabdd0ec4d323e1ae683708e32694a3", null ],
     [ "PIOS_DEBUG_PinLow", "posix_2pios__debug_8c.html#ga8ac0ce4c2f2fa85c17f8de9740bc2026", null ],
     [ "PIOS_DEBUG_PinValue4BitL", "posix_2pios__debug_8c.html#ga4d4cd4268ab3201b753eadde5a58c0b4", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">dcfa33a</span>
+   &#160;<span id="projectnumber">8f291b0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('ecc_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ecc_8h.html#a5dd915356908211565387e01d4a9cd8d">synBytes</a>[<a class="code" href="ecc_8h.html#a8521f0d9a069c55226a07fc055408eed">MAXDEG</a>];</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* print debugging info */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078">DEBUG</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ecc_8h.html#a2f713197100f1af7f683efc48c2d9e86">rscode_debug</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Reed Solomon encode/decode routines */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ecc_8h.html#a8a34d4f9d615ce945b4e6a2c01f27fa8">initialize_ecc</a> (<span class="keywordtype">void</span>);</div>
@@ -210,7 +210,6 @@ $(document).ready(function(){initNavTree('ecc_8h_source.html','');});
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ecc_8h.html#aedca0b4d3e5bef4c830e5e82b8ebe655">copy_poly</a>(<span class="keywordtype">int</span> dst[], <span class="keywordtype">int</span> src[]);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ecc_8h.html#afe3883a12ae28716adce4ede69d58191">zero_poly</a>(<span class="keywordtype">int</span> poly[]);</div>
-<div class="ttc" id="ecc_8h_html_a48f76a8c0dc23567f303ed6aa221e078"><div class="ttname"><a href="ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078">DEBUG</a></div><div class="ttdeci">int DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00041">rs.c:41</a></div></div>
 <div class="ttc" id="ecc_8h_html_aea2f56d785c0dfc8af1f9bc2c78294f4"><div class="ttname"><a href="ecc_8h.html#aea2f56d785c0dfc8af1f9bc2c78294f4">ginv</a></div><div class="ttdeci">int ginv(int elt)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00160">galois.c:160</a></div></div>
 <div class="ttc" id="ecc_8h_html_a65eb83f04917d12d687aaa70449a3036"><div class="ttname"><a href="ecc_8h.html#a65eb83f04917d12d687aaa70449a3036">init_galois_tables</a></div><div class="ttdeci">void init_galois_tables(void)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00103">galois.c:103</a></div></div>
 <div class="ttc" id="ecc_8h_html_a5dd915356908211565387e01d4a9cd8d"><div class="ttname"><a href="ecc_8h.html#a5dd915356908211565387e01d4a9cd8d">synBytes</a></div><div class="ttdeci">int synBytes[MAXDEG]</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00036">rs.c:36</a></div></div>
@@ -232,6 +231,7 @@ $(document).ready(function(){initNavTree('ecc_8h_source.html','');});
 <div class="ttc" id="ecc_8h_html_aedca0b4d3e5bef4c830e5e82b8ebe655"><div class="ttname"><a href="ecc_8h.html#aedca0b4d3e5bef4c830e5e82b8ebe655">copy_poly</a></div><div class="ttdeci">void copy_poly(int dst[], int src[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00200">berlekamp.c:200</a></div></div>
 <div class="ttc" id="ecc_8h_html_ad6079f119d46b188fc8f0c8f98cbbc03"><div class="ttname"><a href="ecc_8h.html#ad6079f119d46b188fc8f0c8f98cbbc03">mult_polys</a></div><div class="ttdeci">void mult_polys(int dst[], int p1[], int p2[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00128">berlekamp.c:128</a></div></div>
 <div class="ttc" id="ecc_8h_html_a6da28744dd026ab3b7deb96086c74f0d"><div class="ttname"><a href="ecc_8h.html#a6da28744dd026ab3b7deb96086c74f0d">correct_errors_erasures</a></div><div class="ttdeci">int correct_errors_erasures(unsigned char codeword[], int csize, int nerasures, int erasures[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00270">berlekamp.c:270</a></div></div>
+<div class="ttc" id="ecc_8h_html_a2f713197100f1af7f683efc48c2d9e86"><div class="ttname"><a href="ecc_8h.html#a2f713197100f1af7f683efc48c2d9e86">rscode_debug</a></div><div class="ttdeci">int rscode_debug</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00041">rs.c:41</a></div></div>
 <div class="ttc" id="ecc_8h_html_ae92bed6593d875f29f79a12f10e84b5b"><div class="ttname"><a href="ecc_8h.html#ae92bed6593d875f29f79a12f10e84b5b">pBytes</a></div><div class="ttdeci">int pBytes[MAXDEG]</div><div class="ttdef"><b>Definition:</b> <a href="rs_8c_source.html#l00033">rs.c:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

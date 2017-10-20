@@ -42,7 +42,6 @@ var searchData=
   ['dc',['dc',['../group___p_i_o_s___v_i_d_e_o.html#ga3d1a1845bd2951adc19f62aa1aef7ff4',1,'pios_video_type_cfg']]],
   ['dcmi_5firqhandler',['DCMI_IRQHandler',['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a1021a99f7f8638d49c4ba6bcaa2d68b1',1,'pios_chibios_transition_priv.h']]],
   ['deadbands',['deadbands',['../group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1',1,'stabilization.c']]],
-  ['debug',['DEBUG',['../ecc_8h.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c'],['../rs_8c.html#a48f76a8c0dc23567f303ed6aa221e078',1,'DEBUG():&#160;rs.c']]],
   ['debug_5fcheck_5fsyndrome',['debug_check_syndrome',['../rs_8c.html#a503801e9bcd8e179d6b5ba5b185ff0d1',1,'rs.c']]],
   ['debug_5fdelay',['DEBUG_DELAY',['../group___on_screen_display.html#gad2979c59efeeb3591b34ca1d3a711b88',1,'osd_utils.h']]],
   ['debug_5flevel',['DEBUG_LEVEL',['../group___pip_x.html#gac2d33ccaf63f5d5b66552b95426c0137',1,'DEBUG_LEVEL():&#160;pios_board.h'],['../group___play_u_a_v_o_s_d.html#gac2d33ccaf63f5d5b66552b95426c0137',1,'DEBUG_LEVEL():&#160;pios_board.h'],['../group___sim.html#gac2d33ccaf63f5d5b66552b95426c0137',1,'DEBUG_LEVEL():&#160;pios_board.h'],['../group___sparky2.html#gac2d33ccaf63f5d5b66552b95426c0137',1,'DEBUG_LEVEL():&#160;pios_board.h']]],

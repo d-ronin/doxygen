@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">dcfa33a</span>
+   &#160;<span id="projectnumber">8f291b0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('posix_2inc_2pios__debug_8h_source.html
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga8ac0ce4c2f2fa85c17f8de9740bc2026">PIOS_DEBUG_PinLow</a>(uint8_t pin);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga2e5f7854424b8a04f1972f6cdd13fdbd">PIOS_DEBUG_PinValue8Bit</a>(uint8_t <a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga4d4cd4268ab3201b753eadde5a58c0b4">PIOS_DEBUG_PinValue4BitL</a>(uint8_t <a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gae3876733b5e6b40c8fcbdb683d206068">PIOS_DEBUG_Panic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga0b99ad95012ef56f8f490902384f07e3">PIOS_DEBUG_Panic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_DEBUG_Assert(test) if (!(test)) PIOS_DEBUG_Panic(PIOS_DEBUG_AssertMsg);</span></div>
@@ -153,9 +153,9 @@ $(document).ready(function(){initNavTree('posix_2inc_2pios__debug_8h_source.html
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaede09e7ce20c100871607d36904bea37"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaede09e7ce20c100871607d36904bea37">PIOS_DEBUG_AssertMsg</a></div><div class="ttdeci">const char * PIOS_DEBUG_AssertMsg</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__debug_8c_source.html#l00034">pios_debug.c:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga798f6007adad3e5de566d49c17695899"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga798f6007adad3e5de566d49c17695899">PIOS_DEBUG_Init</a></div><div class="ttdeci">void PIOS_DEBUG_Init(const struct pios_tim_channel *channels, uint8_t num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__debug_8c_source.html#l00044">pios_debug.c:44</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga8ac0ce4c2f2fa85c17f8de9740bc2026"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga8ac0ce4c2f2fa85c17f8de9740bc2026">PIOS_DEBUG_PinLow</a></div><div class="ttdeci">void PIOS_DEBUG_PinLow(uint8_t pin)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__debug_8c_source.html#l00057">pios_debug.c:57</a></div></div>
-<div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gae3876733b5e6b40c8fcbdb683d206068"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gae3876733b5e6b40c8fcbdb683d206068">PIOS_DEBUG_Panic</a></div><div class="ttdeci">void PIOS_DEBUG_Panic(const char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__debug_8c_source.html#l00074">pios_debug.c:74</a></div></div>
 <div class="ttc" id="storm32bgc_8c_html_a17956fe0129d3d4c94ebc06cfef2ad82"><div class="ttname"><a href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a></div><div class="ttdeci">uint16_t value</div><div class="ttdef"><b>Definition:</b> <a href="storm32bgc_8c_source.html#l00155">storm32bgc.c:155</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga4d4cd4268ab3201b753eadde5a58c0b4"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga4d4cd4268ab3201b753eadde5a58c0b4">PIOS_DEBUG_PinValue4BitL</a></div><div class="ttdeci">void PIOS_DEBUG_PinValue4BitL(uint8_t value)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__debug_8c_source.html#l00066">pios_debug.c:66</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga0b99ad95012ef56f8f490902384f07e3"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga0b99ad95012ef56f8f490902384f07e3">PIOS_DEBUG_Panic</a></div><div class="ttdeci">void PIOS_DEBUG_Panic(const char *msg) __attribute__((noreturn))</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__debug_8c_source.html#l00074">pios_debug.c:74</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

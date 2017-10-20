@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">dcfa33a</span>
+   &#160;<span id="projectnumber">8f291b0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="comment">/* If we get an edge and no clocking.. make sure the message is</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">         * invalidated / not reused */</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        rx_buf.id = 0;</div>
@@ -311,63 +311,61 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="comment">/* Brings up System using CMSIS functions, enables the LEDs. */</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="group___p_i_o_s___s_y_s.html#gaec647868ac486506b195fa5272cbdb92">PIOS_SYS_Init</a>();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__board__info.html">pios_board_info</a> *bdinfo = &amp;<a class="code" href="pios__board__info_8h.html#ae44044441c2e7618a5ebc9b4e377793b">pios_board_info_blob</a>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ANNUNC)</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span>        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__annunc__cfg.html">pios_annunc_cfg</a> *led_cfg = PIOS_BOARD_HW_DEFS_GetLedCfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(led_cfg);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a>(led_cfg);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_ANNUNC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga16217108e9416a60da7e6c9e5a48c2c5">pios_internal_adc_t</a> adc_dev;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;adc_dev, &amp;internal_adc_cfg)) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;<a class="code" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, (uintptr_t )adc_dev)) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">//outputs</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___d_t_fc.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a>);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___flying_p_i_o.html#ga58dc7fd76064279bf988f0d863f87a76">tim_14_cfg</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;<a class="code" href="structpios__servo__cfg.html">pios_servo_cfg</a>);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga98b4e5f700a6b00d161a11f044d60e4b">spislave_t</a> spislave_dev;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        tx_buf.id = 0x33;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        tx_buf.crc8 = 0x22;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">int</span> initial_msg_len;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="group___flying_p_i_o.html#ga3690beeb87da77da92fe8c3cf85210ec">generate_status_message</a>(&amp;initial_msg_len);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ANNUNC)</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor"></span>        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__annunc__cfg.html">pios_annunc_cfg</a> *led_cfg = PIOS_BOARD_HW_DEFS_GetLedCfg(0);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(led_cfg);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="group___p_i_o_s___l_e_d.html#ga69b0a2fb77d18f0326b1fe0cee3a987d">PIOS_ANNUNC_Init</a>(led_cfg);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_ANNUNC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga16217108e9416a60da7e6c9e5a48c2c5">pios_internal_adc_t</a> adc_dev;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gad0f8b2886a98358b41966677d7c184fc">PIOS_INTERNAL_ADC_Init</a>(&amp;adc_dev, &amp;internal_adc_cfg)) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>(&amp;<a class="code" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, &amp;<a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga7d936d31e2f61867467fac3ccbd561ab">pios_internal_adc_driver</a>, (uintptr_t )adc_dev)) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">//outputs</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___d_t_fc.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___flying_p_i_o.html#ga58dc7fd76064279bf988f0d863f87a76">tim_14_cfg</a>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a>(&amp;<a class="code" href="structpios__servo__cfg.html">pios_servo_cfg</a>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga98b4e5f700a6b00d161a11f044d60e4b">spislave_t</a> spislave_dev;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        tx_buf.id = 0x33;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        tx_buf.crc8 = 0x22;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">int</span> initial_msg_len;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="group___flying_p_i_o.html#ga3690beeb87da77da92fe8c3cf85210ec">generate_status_message</a>(&amp;initial_msg_len);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga63e399501f16f8cebdf1929f6774a63c">PIOS_SPISLAVE_Init</a>(&amp;spislave_dev, &amp;<a class="code" href="structpios__spislave__cfg.html">pios_spislave_cfg</a>, initial_msg_len);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga63e399501f16f8cebdf1929f6774a63c">PIOS_SPISLAVE_Init</a>(&amp;spislave_dev, &amp;<a class="code" href="structpios__spislave__cfg.html">pios_spislave_cfg</a>, initial_msg_len);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        uint32_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>=0;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        uint32_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>=0;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga22c2d46cb898f9bb17aa9ca4647a2d80">PIOS_SPISLAVE_PollSS</a>(spislave_dev);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gabf176f4f56549a98a6ed31cb1da4228e">PIOS_INTERNAL_ADC_DoStep</a>(adc_dev);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                i++;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                i &amp;= 0x3ffff;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="group___flying_p_i_o.html#gaa69d891b714c986144d7f6e72ad73578">inited</a>) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <span class="comment">// Distinctive &quot;ready&quot; blip when host is not controlling</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        <span class="comment">// LED.</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        <span class="keywordflow">if</span> ((i == 0xc000) || (i == 0) || (i==0x18000)) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                        }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <a class="code" href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga22c2d46cb898f9bb17aa9ca4647a2d80">PIOS_SPISLAVE_PollSS</a>(spislave_dev);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#gabf176f4f56549a98a6ed31cb1da4228e">PIOS_INTERNAL_ADC_DoStep</a>(adc_dev);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                i++;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                i &amp;= 0x3ffff;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="group___flying_p_i_o.html#gaa69d891b714c986144d7f6e72ad73578">inited</a>) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                        <span class="comment">// Distinctive &quot;ready&quot; blip when host is not controlling</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="comment">// LED.</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <span class="keywordflow">if</span> ((i == 0xc000) || (i == 0) || (i==0x18000)) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
 <div class="ttc" id="structflyingpiresp__io__10_html_a23af026ed2ab7c086102c7cb77ac0946"><div class="ttname"><a href="structflyingpiresp__io__10.html#a23af026ed2ab7c086102c7cb77ac0946">flyingpiresp_io_10::valid_messages_recvd</a></div><div class="ttdeci">uint16_t valid_messages_recvd</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00045">flyingpio_messages.h:45</a></div></div>
 <div class="ttc" id="group___common_html_ga840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="group___common.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00441">main.c:441</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_p_i___s_l_a_v_e_html_ga63e399501f16f8cebdf1929f6774a63c"><div class="ttname"><a href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga63e399501f16f8cebdf1929f6774a63c">PIOS_SPISLAVE_Init</a></div><div class="ttdeci">int32_t PIOS_SPISLAVE_Init(spislave_t *spislave_id, const struct pios_spislave_cfg *cfg, int initial_tx_size)</div></div>
@@ -389,14 +387,12 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ggab3256a57f692c2f2784d914ad5a5895da8408e57d6177365df6cce65e8692880a"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da8408e57d6177365df6cce65e8692880a">PIOS_RCVR_NODRIVER</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00052">pios_rcvr.h:52</a></div></div>
 <div class="ttc" id="systemmod_8h_html"><div class="ttname"><a href="systemmod_8h.html">systemmod.h</a></div><div class="ttdoc">System module. </div></div>
 <div class="ttc" id="structflyingpicmd__actuator__fc_html_a099c5c8c8272856d4459d390d0c8b3d9"><div class="ttname"><a href="structflyingpicmd__actuator__fc.html#a099c5c8c8272856d4459d390d0c8b3d9">flyingpicmd_actuator_fc::values</a></div><div class="ttdeci">uint16_t values[FPPROTO_MAX_SERVOS]</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00014">flyingpio_messages.h:14</a></div></div>
-<div class="ttc" id="structpios__board__info_html_a7c5ba691095b534927e3f0b6cc7202d6"><div class="ttname"><a href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">pios_board_info::board_rev</a></div><div class="ttdeci">uint8_t board_rev</div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00011">pios_board_info.h:11</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_gaa69d891b714c986144d7f6e72ad73578"><div class="ttname"><a href="group___flying_p_i_o.html#gaa69d891b714c986144d7f6e72ad73578">inited</a></div><div class="ttdeci">static bool inited</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00047">main.c:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c_html_ga16217108e9416a60da7e6c9e5a48c2c5"><div class="ttname"><a href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga16217108e9416a60da7e6c9e5a48c2c5">pios_internal_adc_t</a></div><div class="ttdeci">struct pios_internal_adc_dev * pios_internal_adc_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__internal__adc__simple_8h_source.html#l00040">pios_internal_adc_simple.h:40</a></div></div>
 <div class="ttc" id="structflyingpiresp__io__10_html"><div class="ttname"><a href="structflyingpiresp__io__10.html">flyingpiresp_io_10</a></div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00041">flyingpio_messages.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_gaec647868ac486506b195fa5272cbdb92"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gaec647868ac486506b195fa5272cbdb92">PIOS_SYS_Init</a></div><div class="ttdeci">void PIOS_SYS_Init(void)</div></div>
 <div class="ttc" id="structflyingpicmd__actuator__fc_html_a7df9f2a86ab5fce13e33b5d9459faec5"><div class="ttname"><a href="structflyingpicmd__actuator__fc.html#a7df9f2a86ab5fce13e33b5d9459faec5">flyingpicmd_actuator_fc::led_status</a></div><div class="ttdeci">uint16_t led_status</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00016">flyingpio_messages.h:16</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_gaec0f5ba8e0745b50dd791e12cc04d8aa"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a></div><div class="ttdeci">void PIOS_ANNUNC_Off(uint32_t annunc_id)</div></div>
-<div class="ttc" id="pios__board__info_8h_html_ae44044441c2e7618a5ebc9b4e377793b"><div class="ttname"><a href="pios__board__info_8h.html#ae44044441c2e7618a5ebc9b4e377793b">pios_board_info_blob</a></div><div class="ttdeci">const struct pios_board_info pios_board_info_blob</div></div>
 <div class="ttc" id="group___common_html_ga902009c5b1cb57d9f9d60092eb7cacfb"><div class="ttname"><a href="group___common.html#ga902009c5b1cb57d9f9d60092eb7cacfb">PIOS_Board_Init</a></div><div class="ttdeci">void PIOS_Board_Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00044">pios_board.c:44</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga692adb03fe506d1b770955f0fb26cd00"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga692adb03fe506d1b770955f0fb26cd00">PIOS_Servo_SetFraction</a></div><div class="ttdeci">void PIOS_Servo_SetFraction(uint8_t servo, uint16_t fraction, uint16_t max_val, uint16_t min_val)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00536">pios_servo.c:536</a></div></div>
 <div class="ttc" id="flyingpio__messages_8h_html_ac73ef292083c0a49899cc7bc0f0f69df"><div class="ttname"><a href="flyingpio__messages_8h.html#ac73ef292083c0a49899cc7bc0f0f69df">FPPROTO_MAX_ADCCHANS</a></div><div class="ttdeci">#define FPPROTO_MAX_ADCCHANS</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00004">flyingpio_messages.h:4</a></div></div>
@@ -432,7 +428,6 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_gab540ecaab89fcca1c715f07536609c2e"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#gab540ecaab89fcca1c715f07536609c2e">PIOS_RCVR_Read</a></div><div class="ttdeci">int32_t PIOS_RCVR_Read(uintptr_t rcvr_id, uint8_t channel)</div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga58dc7fd76064279bf988f0d863f87a76"><div class="ttname"><a href="group___flying_p_i_o.html#ga58dc7fd76064279bf988f0d863f87a76">tim_14_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_14_cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2board-info_2board__hw__defs_8c_source.html#l00228">board_hw_defs.c:228</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga422d57e8efb93bfbfa13cf343587af8c"><div class="ttname"><a href="group___flying_p_i_o.html#ga422d57e8efb93bfbfa13cf343587af8c">TIM14_IRQHandler</a></div><div class="ttdeci">void TIM14_IRQHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f0xx_2pios__tim_8c_source.html#l00350">pios_tim.c:350</a></div></div>
-<div class="ttc" id="structpios__board__info_html"><div class="ttname"><a href="structpios__board__info.html">pios_board_info</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00008">pios_board_info.h:8</a></div></div>
 <div class="ttc" id="structpios__servo__cfg_html_a94528872c23ad53d65dfb81ab86790fd"><div class="ttname"><a href="structpios__servo__cfg.html#a94528872c23ad53d65dfb81ab86790fd">pios_servo_cfg::num_channels</a></div><div class="ttdeci">uint8_t num_channels</div><div class="ttdef"><b>Definition:</b> <a href="pios__servo__priv_8h_source.html#l00043">pios_servo_priv.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga1ffcba6811cce798c0a6bc014a691dc7"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga1ffcba6811cce798c0a6bc014a691dc7">PIOS_WDG_Init</a></div><div class="ttdeci">uint16_t PIOS_WDG_Init()</div><div class="ttdoc">Initialize the watchdog timer for a specified timeout. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00061">pios_wdg.c:61</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga7b02637900723907df4c7b5aad399e41"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga7b02637900723907df4c7b5aad399e41">PIOS_Servo_Update</a></div><div class="ttdeci">void PIOS_Servo_Update(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00839">pios_servo.c:839</a></div></div>

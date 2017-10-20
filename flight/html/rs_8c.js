@@ -10,8 +10,8 @@ var rs_8c =
     [ "print_parity", "rs_8c.html#af1d5ad8eec1a2c678b86613c54aea50e", null ],
     [ "print_syndrome", "rs_8c.html#aa384f9a066adf385c9375141085cf90e", null ],
     [ "zero_fill_from", "rs_8c.html#a37c8e69893100c575b5d81b9808d5838", null ],
-    [ "DEBUG", "rs_8c.html#a48f76a8c0dc23567f303ed6aa221e078", null ],
     [ "genPoly", "rs_8c.html#abc09b23ea6197988bec9d69c3e92eb20", null ],
     [ "pBytes", "rs_8c.html#ae92bed6593d875f29f79a12f10e84b5b", null ],
+    [ "rscode_debug", "rs_8c.html#a2f713197100f1af7f683efc48c2d9e86", null ],
     [ "synBytes", "rs_8c.html#a5dd915356908211565387e01d4a9cd8d", null ]
 ];
