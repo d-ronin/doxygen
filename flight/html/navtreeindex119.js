@@ -1,5 +1,13 @@
 var NAVTREEINDEX119 =
 {
+"serial__4way__impl_8h.html#ab2bb23ea805455526e81aaa10f98d8bb":[5,0,0,2,33,0,0,2,13],
+"serial__4way__impl_8h.html#ab67e58585c649396f2136d6a6c4709b3":[5,0,0,2,33,0,0,2,3],
+"serial__4way__impl_8h.html#abb65e417c7d445030a0f6f96936d9a27":[5,0,0,2,33,0,0,2,2],
+"serial__4way__impl_8h.html#ac5a858b366c39b2097cc1be489bfb20f":[5,0,0,2,33,0,0,2,8],
+"serial__4way__impl_8h.html#ae7618c84f1e1ba368abe95cb6d099b5a":[5,0,0,2,33,0,0,2,15],
+"serial__4way__impl_8h.html#af3bfca741f8ea4ae100ee11b9f041a91":[5,0,0,2,33,0,0,2,14],
+"serial__4way__impl_8h_source.html":[5,0,0,2,33,0,0,2],
+"serial__4way__stk500v2_8c.html":[5,0,0,2,33,0,4],
 "serial__4way__stk500v2_8c_source.html":[5,0,0,2,33,0,4],
 "serial__4way__stk500v2_8h.html":[5,0,0,2,33,0,0,3],
 "serial__4way__stk500v2_8h.html#a1ae7bef2bbed21700778ea170d522c65":[5,0,0,2,33,0,0,3,2],
@@ -145,8 +153,8 @@ var NAVTREEINDEX119 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,4,17,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,4,17,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,4,17,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,17,1,3,9],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,4,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,4,17,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,4,17,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,4,17,1,3,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX119 =
 "sparky2_2fw_2mcuconf_8h.html#ga5a90d9b62fd7b1a0180c2aec7d00089d":[5,0,0,4,17,2,0,82],
 "sparky2_2fw_2mcuconf_8h.html#ga5c9e95d0806fd4faa34694d2f7ed8099":[5,0,0,4,17,2,0,83],
 "sparky2_2fw_2mcuconf_8h.html#ga5df333941ca2fb9dec26a569e802dd57":[5,0,0,4,17,2,0,171],
-"sparky2_2fw_2mcuconf_8h.html#ga5f5e9b802c24ad1637cd2aaee14606ed":[5,0,0,4,17,2,0,87],
-"sparky2_2fw_2mcuconf_8h.html#ga5f9c3734d5d06c9ccd5214af5c78c4f8":[5,0,0,4,17,2,0,116],
-"sparky2_2fw_2mcuconf_8h.html#ga5fa35e1fea5f5813af76c2d2b9c03215":[5,0,0,4,17,2,0,147],
-"sparky2_2fw_2mcuconf_8h.html#ga620b74e1fca03c6e11c054d137c56524":[5,0,0,4,17,2,0,151],
-"sparky2_2fw_2mcuconf_8h.html#ga626416dc22cf5f3deff2a8c7d8efa5b2":[5,0,0,4,17,2,0,162],
-"sparky2_2fw_2mcuconf_8h.html#ga6366c26f605ce31e89deee1af686f5e6":[5,0,0,4,17,2,0,143],
-"sparky2_2fw_2mcuconf_8h.html#ga639272943cb5b9bdcbd78e5ced2b52a0":[5,0,0,4,17,2,0,81],
-"sparky2_2fw_2mcuconf_8h.html#ga65cadd46c1d4b5739f1ef3a623faf196":[5,0,0,4,17,2,0,4],
-"sparky2_2fw_2mcuconf_8h.html#ga66f4dea2ca69a6afdc2a05593ddb4999":[5,0,0,4,17,2,0,104]
+"sparky2_2fw_2mcuconf_8h.html#ga5f5e9b802c24ad1637cd2aaee14606ed":[5,0,0,4,17,2,0,87]
 };

@@ -216,6 +216,7 @@ var annotated =
     [ "pios_video_type_cfg", "structpios__video__type__cfg.html", "structpios__video__type__cfg" ],
     [ "pios_ws2811_cfg", "structpios__ws2811__cfg.html", "structpios__ws2811__cfg" ],
     [ "point_t", "structpoint__t.html", "structpoint__t" ],
+    [ "QuatRPYTest", "class_quat_r_p_y_test.html", "class_quat_r_p_y_test" ],
     [ "RadioComBridgeData", "struct_radio_com_bridge_data.html", "struct_radio_com_bridge_data" ],
     [ "rcvr_activity_fsm", "structrcvr__activity__fsm.html", "structrcvr__activity__fsm" ],
     [ "rfm22b_device_status", "structrfm22b__device__status.html", "structrfm22b__device__status" ],

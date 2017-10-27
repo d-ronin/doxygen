@@ -1,5 +1,13 @@
 var NAVTREEINDEX102 =
 {
+"pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1a50a1cf0acf3332cbc423b7601dbb31d1":[5,0,0,3,1,7,3,5],
+"pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1a91940e32802d16c48fda58f243be3a22":[5,0,0,3,1,7,3,6],
+"pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1ab444253d78ff78a11d1c6fa14f97ddb4":[5,0,0,3,1,7,3,2],
+"pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1aeb8b17571729060282aa3c1b43800462":[5,0,0,3,1,7,3,1],
+"pios__bmi160_8h.html#gga88d6c9670d34cefe4b808d3311ae24f1af25b73a2252a346c08b99cbde1d8772a":[5,0,0,3,1,7,3,4],
+"pios__bmi160_8h.html#gga92abd4d2945d5800dfedfc1f36b2991da431b501d4da2754c07f876ebe36d1361":[5,0,0,3,1,7,2,0],
+"pios__bmi160_8h.html#gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639":[5,0,0,3,1,7,2,1],
+"pios__bmi160_8h.html#ggadc52c64babd9845fcf8ad68ea9cc24c0a3012924bebc96cee13e20786dff9ee62":[5,0,0,3,1,7,0,0],
 "pios__bmi160_8h.html#ggadc52c64babd9845fcf8ad68ea9cc24c0a3f4e13bd16eb93bd50c4c59a7f80f32b":[5,0,0,3,1,7,0,3],
 "pios__bmi160_8h.html#ggadc52c64babd9845fcf8ad68ea9cc24c0a8e69ef89877c304bfec0b0ec09f96754":[5,0,0,3,1,7,0,1],
 "pios__bmi160_8h.html#ggadc52c64babd9845fcf8ad68ea9cc24c0ad7775f40c8d6ccbb54d9fdd575a03ec3":[5,0,0,3,1,7,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX102 =
 "pios__board__info_8c_source.html":[5,0,0,3,0,6],
 "pios__board__info_8h.html":[5,0,0,3,1,14],
 "pios__board__info_8h.html#a0ee8992bec085f1ae8974025885a455d":[5,0,0,3,1,14,12],
-"pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938":[5,0,0,3,1,14,1],
-"pios__board__info_8h.html#a3356e77d605b19f45bdc28482e4fb7f0":[5,0,0,3,1,14,10],
-"pios__board__info_8h.html#a4905da54723c4f058fd92985207da4fe":[5,0,0,3,1,14,8],
-"pios__board__info_8h.html#a57f54349f4fd1cbbb52058812e146af2":[5,0,0,3,1,14,13],
-"pios__board__info_8h.html#a63ca217e7d9da1bf80b07a1cf62d5236":[5,0,0,3,1,14,3],
-"pios__board__info_8h.html#a6c495c36811a3a72f93187d62f25a4ec":[5,0,0,3,1,14,9],
-"pios__board__info_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37":[5,0,0,3,1,14,4],
-"pios__board__info_8h.html#ab7933de80266621f65bc8259afbfbad6":[5,0,0,3,1,14,6],
-"pios__board__info_8h.html#ade96ae28594df4a0c9c2e46805262352":[5,0,0,3,1,14,5]
+"pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938":[5,0,0,3,1,14,1]
 };

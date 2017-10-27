@@ -1,5 +1,8 @@
 var NAVTREEINDEX84 =
 {
+"group___storm32bgc.html#gaf80009bfc91bb3a08bc688861145091b":[2,4,23,26],
+"group___storm32bgc.html#gaf904cf55a574991bc3a2f4062007e93b":[2,4,23,2],
+"group___system_module.html":[2,4,24],
 "group___system_module.html#ga107237204bc679179166c17b330533a5":[2,4,24,27],
 "group___system_module.html#ga10f109820071bea9b310dce65a46d784":[2,4,24,20],
 "group___system_module.html#ga17f7c06410e7f0c04e1d1df6beee93d4":[2,4,24,17],
@@ -246,8 +249,5 @@ var NAVTREEINDEX84 =
 "group___u_a_v_o_m_s_p_bridge.html":[2,4,33],
 "group___u_a_v_o_mavlink_bridge.html":[2,4,32],
 "group___u_a_v_o_mavlink_bridge.html#ga0cdd1555afabbed6436cb004b56ea036":[2,4,32,4],
-"group___u_a_v_o_mavlink_bridge.html#ga0cfefa3610c14cb992f25f2d8421f3c8":[2,4,32,6],
-"group___u_a_v_o_mavlink_bridge.html#ga2eb00de51fa4a286aafd50b104dab1fd":[2,4,32,1],
-"group___u_a_v_o_mavlink_bridge.html#ga395aae71a3c1e7738efd4960de30af8b":[2,4,32,11],
-"group___u_a_v_o_mavlink_bridge.html#ga50e0dc2de7d1dd7f6b56db87f46a66e8":[2,4,32,8]
+"group___u_a_v_o_mavlink_bridge.html#ga0cfefa3610c14cb992f25f2d8421f3c8":[2,4,32,6]
 };

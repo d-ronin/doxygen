@@ -1,5 +1,14 @@
 var NAVTREEINDEX137 =
 {
+"uavobjectmanager_8h.html#ga6282540dd888720334943f3b3ad5f301":[5,0,0,6,0,1,69],
+"uavobjectmanager_8h.html#ga671a6dde943528e4018beea0f58b23ae":[5,0,0,6,0,1,27],
+"uavobjectmanager_8h.html#ga6ff4107796c9693e8034e7c77a26f066":[5,0,0,6,0,1,50],
+"uavobjectmanager_8h.html#ga74aba825a99924f3c8e3f7c209409ab6":[5,0,0,6,0,1,31],
+"uavobjectmanager_8h.html#ga74b0fdf730a72251d862ca233316cbcd":[5,0,0,6,0,1,66],
+"uavobjectmanager_8h.html#ga78e3c762f51cb6b295c7b8f787fa2ba1":[5,0,0,6,0,1,57],
+"uavobjectmanager_8h.html#ga88eab3d936394b3dffd65db8a148b9b1":[5,0,0,6,0,1,65],
+"uavobjectmanager_8h.html#ga90b88ba1823a707558d3056663d0c0c9":[5,0,0,6,0,1,55],
+"uavobjectmanager_8h.html#ga955799ae236e66aef4070f79d530d73c":[5,0,0,6,0,1,43],
 "uavobjectmanager_8h.html#ga961f3df74e4106ee108a10b57536302f":[5,0,0,6,0,1,62],
 "uavobjectmanager_8h.html#ga9b6a21cc5abcfe4af811f65a3744d4f3":[5,0,0,6,0,1,45],
 "uavobjectmanager_8h.html#gaa8751dc09767d568385113ea4d208666":[5,0,0,6,0,1,34],
@@ -240,14 +249,5 @@ var NAVTREEINDEX137 =
 "ubx__cfg_8c.html#ga336e3f7ae3ecb4571725c0af39878caa":[5,0,0,2,14,4,46],
 "ubx__cfg_8c.html#ga33cf404d44e9336c6ba67fa3842d10c4":[5,0,0,2,14,4,22],
 "ubx__cfg_8c.html#ga3728ccc45f24da5b0eb7392fa3b65ec4":[5,0,0,2,14,4,37],
-"ubx__cfg_8c.html#ga382afaacca34d9799e2a124977e000a3":[5,0,0,2,14,4,9],
-"ubx__cfg_8c.html#ga3a0633a515f83a0cdbbac6ad8c099aac":[5,0,0,2,14,4,24],
-"ubx__cfg_8c.html#ga444675fabaa8e35cbdd8e9165c476aa9":[5,0,0,2,14,4,55],
-"ubx__cfg_8c.html#ga44fde20e2d24dfa09af3e75bc475ed33":[5,0,0,2,14,4,45],
-"ubx__cfg_8c.html#ga46885c0dbeb61ea2e16da414c4435690":[5,0,0,2,14,4,48],
-"ubx__cfg_8c.html#ga48a7cd0c7e1b594623e04fc5fa301601":[5,0,0,2,14,4,52],
-"ubx__cfg_8c.html#ga499e1ae1534f1e6e4873b96d305a4782":[5,0,0,2,14,4,42],
-"ubx__cfg_8c.html#ga49e3fc423f89fc323d1eab88934c3410":[5,0,0,2,14,4,43],
-"ubx__cfg_8c.html#ga4bf50d2ce1cde8191f3b330ea0471747":[5,0,0,2,14,4,17],
-"ubx__cfg_8c.html#ga4c7f4efbdba996818ac093721d7dc968":[5,0,0,2,14,4,31]
+"ubx__cfg_8c.html#ga382afaacca34d9799e2a124977e000a3":[5,0,0,2,14,4,9]
 };

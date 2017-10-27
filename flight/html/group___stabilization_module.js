@@ -33,6 +33,7 @@ var group___stabilization_module =
       [ "PID_MAX", "group___stabilization_module.html#gga0411cd49bb5b71852cecd93bcbf0ca2daa9ba8c316889eca7f244f9e458323e1c", null ]
     ] ],
     [ "bound", "group___stabilization_module.html#gaab9d01a7a2b4071bdc27db79eb145f5d", null ],
+    [ "calculate_attitude_errors", "group___stabilization_module.html#gac7cd8c1e2e1fac4f629193cdb9b2b933", null ],
     [ "calculate_pids", "group___stabilization_module.html#gafee8d48edb67b78838f9ef3eea4cd62a", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#ga6c8999e5e09a2051669e97456ba1676d", null ],
     [ "DONT_BUILD_IF", "group___stabilization_module.html#gaca83a707babce95cd70c1ec0242ad10b", null ],

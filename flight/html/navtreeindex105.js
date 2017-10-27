@@ -1,5 +1,13 @@
 var NAVTREEINDEX105 =
 {
+"pios__hal_8c.html#gafae65f122836cc5d5709d7525b8fc1e4":[5,0,0,3,0,18,16],
+"pios__hal_8c.html#gafe2986a0f0cf7d5929d9d612148f7993":[5,0,0,3,0,18,1],
+"pios__hal_8c_source.html":[5,0,0,3,0,18],
+"pios__hal_8h.html":[5,0,0,3,1,41],
+"pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd":[5,0,0,3,1,41,2],
+"pios__hal_8h.html#a1e6053866147fa6e1721537f33a0c542":[5,0,0,3,1,41,6],
+"pios__hal_8h.html#a6dcb0f1c109e2ca59aef625031a5b9bb":[5,0,0,3,1,41,1],
+"pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53b":[5,0,0,3,1,41,0],
 "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba0afdf7259a142761cb51f21a602c6f41":[5,0,0,3,1,41,0,7],
 "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba13d145efa3c26a70a00f2321c2564b70":[5,0,0,3,1,41,0,8],
 "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba2e24b798af9934434ef518953082b2c5":[5,0,0,3,1,41,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX105 =
 "pios__internal__adc__simple_8h_source.html":[5,0,0,3,4,0,0],
 "pios__ir__transponder_8c.html":[5,0,0,3,0,26],
 "pios__ir__transponder_8c_source.html":[5,0,0,3,0,26],
-"pios__ir__transponder_8h.html":[5,0,0,3,1,53],
-"pios__ir__transponder_8h.html#a6682b25761a639b3f3905d4907f33b88":[5,0,0,3,1,53,1],
-"pios__ir__transponder_8h.html#af3310503a1b6a4225dd1a78416d16860":[5,0,0,3,1,53,0],
-"pios__ir__transponder_8h_source.html":[5,0,0,3,1,53],
-"pios__lis3mdl_8c.html":[5,0,0,3,0,27],
-"pios__lis3mdl_8c_source.html":[5,0,0,3,0,27],
-"pios__lis3mdl_8h.html":[5,0,0,3,1,55],
-"pios__lis3mdl_8h.html#ga07cd31b27df780ee3adef77fbfed5540":[5,0,0,3,1,55,2],
-"pios__lis3mdl_8h.html#ga7f4cf6aac8d592349028f66dc074bb04":[5,0,0,3,1,55,1]
+"pios__ir__transponder_8h.html":[5,0,0,3,1,53]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"encode__fonts_8py.html#ae9feea7fd8360f4b21111bde02496994":[5,0,0,2,18,0,0,17],
+"encode__fonts_8py.html#aeaa26bef03c01209d05df65db387500a":[5,0,0,2,18,0,0,3],
 "encode__fonts_8py.html#aee1e46ab90f657763b6ba507083a16f7":[5,0,0,2,18,0,0,2],
 "encode__fonts_8py.html#ga453d85b4420536db4f90b231a4020ac9":[5,0,0,2,18,0,0,10],
 "encode__fonts_8py_source.html":[5,0,0,2,18,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "frsky__packing_8c.html#a5ce777c3d71ccbfffe475f4c3f056f2b":[5,0,0,1,9,4],
 "frsky__packing_8c.html#a5e5fe08f2c404f8e5947e58a4fdcc30b":[5,0,0,1,9,14],
 "frsky__packing_8c.html#a6f1518e50d63e7c99ac0777623ecd4a7":[5,0,0,1,9,1],
-"frsky__packing_8c.html#a7c8219301594c41c773f9d92a20ba314":[5,0,0,1,9,9],
-"frsky__packing_8c.html#a922190172126e109b39f2b25bec06953":[5,0,0,1,9,7],
-"frsky__packing_8c.html#a9a450255d36332486953057ddfc16f87":[5,0,0,1,9,6]
+"frsky__packing_8c.html#a7c8219301594c41c773f9d92a20ba314":[5,0,0,1,9,9]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX112 =
 {
+"pios__usb__defs_8h.html#ga95b5c4abb7a9446850b31cd8f807acbd":[5,0,0,3,1,109,27],
+"pios__usb__defs_8h.html#ga95e2ea371267a564ba37735fdb057e4b":[5,0,0,3,1,109,21],
+"pios__usb__defs_8h.html#ga9674bda677f9898106ec2b6fe5f5723d":[5,0,0,3,1,109,100],
+"pios__usb__defs_8h.html#ga969a604033b72573d59a740badf6920e":[5,0,0,3,1,109,86],
+"pios__usb__defs_8h.html#ga98316a0d3fa2f9df4b6c5315b3f4c48d":[5,0,0,3,1,109,168],
+"pios__usb__defs_8h.html#ga9a71248c522943951b5af70ec9c14c02":[5,0,0,3,1,109,10],
+"pios__usb__defs_8h.html#gaa03fd2fa7b7aa69d420bfea86dc519d3":[5,0,0,3,1,109,73],
+"pios__usb__defs_8h.html#gaa28850e203e2b3cf91efcc655a7a9a32":[5,0,0,3,1,109,50],
 "pios__usb__defs_8h.html#gaa3981956837e183c8d5036b8d4eecfc2":[5,0,0,3,1,109,56],
 "pios__usb__defs_8h.html#gaaa89a59587d705cd31dfa9eb169ac794":[5,0,0,3,1,109,22],
 "pios__usb__defs_8h.html#gaac4a8093dc70d2faba2bfbecd8f3925e":[5,0,0,3,1,109,136],
@@ -241,13 +249,5 @@ var NAVTREEINDEX112 =
 "pios__video_8h.html#gac3ca44e302411c55f6e7427631b6e09f":[5,0,0,3,7,0,6,7],
 "pios__video_8h.html#gac46f2715467f7b9af717ab4cace06d77":[5,0,0,3,7,0,6,23],
 "pios__video_8h.html#gac52aa8fef8f8e3886d6e58eaa370bc68":[5,0,0,3,7,0,6,2],
-"pios__video_8h.html#gac87de5ef937f01617cd7cc4811d4e2c8":[5,0,0,3,7,0,6,16],
-"pios__video_8h.html#gacf32f403bbd5564027438bf64b33c0b1":[5,0,0,3,7,0,6,1],
-"pios__video_8h.html#gacf64e3bc2c0ea982792bee51ac29ec40":[5,0,0,3,7,0,6,10],
-"pios__video_8h.html#gade05f7a7a94aa2f6e3cb97138cb3aeff":[5,0,0,3,7,0,6,13],
-"pios__video_8h.html#gae28915631d3c0e759537c80e85d2a9be":[5,0,0,3,7,0,6,4],
-"pios__video_8h.html#gae35d2b4b79f91abc5fcae2fc21c5af41":[5,0,0,3,7,0,6,18],
-"pios__video_8h.html#gaf3d8f3e4671bd04b029ee3c07b28a736":[5,0,0,3,7,0,6,6],
-"pios__video_8h.html#gga485e4d08492b247cf4009bd6365bf539a168ebacb895ce56d42edc5260599f10e":[5,0,0,3,7,0,6,14,0],
-"pios__video_8h.html#gga485e4d08492b247cf4009bd6365bf539a6db86271129c872e92e5264b73c5afb7":[5,0,0,3,7,0,6,14,2]
+"pios__video_8h.html#gac87de5ef937f01617cd7cc4811d4e2c8":[5,0,0,3,7,0,6,16]
 };

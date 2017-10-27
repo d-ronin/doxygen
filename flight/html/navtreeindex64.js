@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"group___s_t_m32_f0xx___system___private___defines.html":[2,5,3,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,12,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,4,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,13,0,2,2],
@@ -18,6 +19,7 @@ var NAVTREEINDEX64 =
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,14,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,15,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,0,0,2,2],
+"group___s_t_m32_f0xx___system___private___defines.html":[2,6,11,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,0,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,3,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,6,0,2,2],
@@ -194,7 +196,6 @@ var NAVTREEINDEX64 =
 "group___s_t_m32_f0xx___system___private___includes.html":[2,6,8,0,2,0],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,9,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,10,0,2,3],
-"group___s_t_m32_f0xx___system___private___macros.html":[2,6,11,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,3,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,12,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,4,0,2,3],
@@ -214,6 +215,7 @@ var NAVTREEINDEX64 =
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,14,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,15,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,0,0,2,3],
+"group___s_t_m32_f0xx___system___private___macros.html":[2,6,11,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,0,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,3,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,6,0,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,6,6,0,2,1],
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,1,0,2,1],
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,6,7,0,2,1],
-"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,6,8,0,2,1],
-"group___s_t_m32_f0xx___system___private___variables.html":[2,6,9,0,2,4],
-"group___s_t_m32_f0xx___system___private___variables.html":[2,6,10,0,2,4]
+"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,6,8,0,2,1]
 };

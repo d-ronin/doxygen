@@ -232,6 +232,7 @@ var hierarchy =
     [ "telemetrydata", "structtelemetrydata.html", null ],
     [ "Test", null, [
       [ "CoordConversion", "class_coord_conversion.html", [
+        [ "QuatRPYTest", "class_quat_r_p_y_test.html", null ],
         [ "RneFromLLATest", "class_rne_from_l_l_a_test.html", null ]
       ] ],
       [ "DsmTest", "class_dsm_test.html", null ],
@@ -256,8 +257,8 @@ var hierarchy =
     [ "UAVObjEvent", "struct_u_a_v_obj_event.html", null ],
     [ "UAVObjStats", "struct_u_a_v_obj_stats.html", null ],
     [ "UAVOData", "struct_u_a_v_o_data.html", null ],
-    [ "UAVOBase::UAVOInfo", "struct_u_a_v_o_base_1_1_u_a_v_o_info.html", null ],
     [ "UAVOInfo", "struct_u_a_v_o_info.html", null ],
+    [ "UAVOBase::UAVOInfo", "struct_u_a_v_o_base_1_1_u_a_v_o_info.html", null ],
     [ "UAVOMeta", "struct_u_a_v_o_meta.html", null ],
     [ "UAVOMulti", "struct_u_a_v_o_multi.html", null ],
     [ "UAVOMultiInst", "struct_u_a_v_o_multi_inst.html", null ],

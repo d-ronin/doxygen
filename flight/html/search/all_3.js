@@ -12,6 +12,7 @@ var searchData=
   ['calc_5fned_5faccel',['calc_ned_accel',['../group___attitude_module.html#gac8d5761247c84c64dddb7be876792913',1,'attitude.c']]],
   ['calc_5ftext_5fdimensions',['calc_text_dimensions',['../group___on_screen_display.html#gab599188c28c23c834baf563821f7253b',1,'osd_utils.c']]],
   ['calcfirmcrc',['CalcFirmCRC',['../group___common_f1.html#ga9eb702c0c89bbf54545553d141c5cfa6',1,'op_dfu.c']]],
+  ['calculate_5fattitude_5ferrors',['calculate_attitude_errors',['../group___stabilization_module.html#gac7cd8c1e2e1fac4f629193cdb9b2b933',1,'stabilization.c']]],
   ['calculate_5fpids',['calculate_pids',['../group___stabilization_module.html#gafee8d48edb67b78838f9ef3eea4cd62a',1,'stabilization.c']]],
   ['call_5fhandler',['call_handler',['../group___m_s_p.html#gaa5e4b4c4f441ebab7c0e2455595f8d38',1,'msp.c']]],
   ['callbacks',['callbacks',['../group___p_i_o_s___t_i_m.html#gafe9d43893bcd9da464518dfb482f514f',1,'pios_tim_dev']]],

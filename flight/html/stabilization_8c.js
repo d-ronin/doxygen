@@ -23,6 +23,7 @@ var stabilization_8c =
     [ "PID_VBAR_YAW", "stabilization_8c.html#gga0411cd49bb5b71852cecd93bcbf0ca2daf7116e8c423b01435c76d3af03d7d637", null ],
     [ "PID_COORDINATED_FLIGHT_YAW", "stabilization_8c.html#gga0411cd49bb5b71852cecd93bcbf0ca2da4167403eac2fd0269f805267a8e55490", null ],
     [ "PID_MAX", "stabilization_8c.html#gga0411cd49bb5b71852cecd93bcbf0ca2daa9ba8c316889eca7f244f9e458323e1c", null ],
+    [ "calculate_attitude_errors", "stabilization_8c.html#gac7cd8c1e2e1fac4f629193cdb9b2b933", null ],
     [ "calculate_pids", "stabilization_8c.html#gafee8d48edb67b78838f9ef3eea4cd62a", null ],
     [ "DONT_BUILD_IF", "stabilization_8c.html#ga6c8999e5e09a2051669e97456ba1676d", null ],
     [ "DONT_BUILD_IF", "stabilization_8c.html#gaca83a707babce95cd70c1ec0242ad10b", null ],
