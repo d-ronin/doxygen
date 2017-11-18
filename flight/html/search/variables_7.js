@@ -18,6 +18,8 @@ var searchData=
   ['get_5fpin',['get_pin',['../structpios__adc__driver.html#a9362aa0b30e34dccd3fa9bb97ad8a7d1',1,'pios_adc_driver']]],
   ['get_5fsn',['GET_SN',['../classpx__uploader_1_1uploader.html#a8b53c05343c46dac2476893bebe98c49',1,'px_uploader::uploader']]],
   ['get_5fsync',['GET_SYNC',['../classpx__uploader_1_1uploader.html#a98df4735835b5c245ed09c9228b509df',1,'px_uploader::uploader']]],
+  ['getdata_5fcb',['getdata_cb',['../group___p_i_o_s___s_e_n_s_o_r_s.html#gabf3454f789dce3836726395225e16742',1,'PIOS_Sensor']]],
+  ['getdata_5fctx',['getdata_ctx',['../group___p_i_o_s___s_e_n_s_o_r_s.html#ga70346b3459ff5d126d61e0034d6400da',1,'PIOS_Sensor']]],
   ['gexp',['gexp',['../ecc_8h.html#a4bfe7bd4f17407ec020b8850207bfa25',1,'gexp():&#160;galois.c'],['../galois_8c.html#aaca848efd07888d6d88886ac06b463de',1,'gexp():&#160;galois.c']]],
   ['given',['given',['../structpios__semaphore.html#a79e343d447cb2e03cf3f07b7baf8576f',1,'pios_semaphore']]],
   ['globalflags',['globalFlags',['../struct_u_b_x___n_a_v___s_v_i_n_f_o.html#a9ea30e93a506e7749f8121ff4e811aae',1,'UBX_NAV_SVINFO']]],

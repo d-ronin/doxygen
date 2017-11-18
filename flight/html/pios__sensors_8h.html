@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">c0cc368</span>
+   &#160;<span id="projectnumber">1923be9</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('pios__sensors_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -144,6 +145,12 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pios sensor structure for generic baro data.  <a href="structpios__sensor__baro__data.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gac5964cb3d83085fe578b9de1d0ba879e"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gac5964cb3d83085fe578b9de1d0ba879e">PIOS_SENSOR_Callback_t</a> )(void *ctx, void *output, int ms_to_wait, int *next_call)</td></tr>
+<tr class="memdesc:gac5964cb3d83085fe578b9de1d0ba879e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that calls into sensor to get data.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gac5964cb3d83085fe578b9de1d0ba879e">More...</a><br/></td></tr>
+<tr class="separator:gac5964cb3d83085fe578b9de1d0ba879e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gadad1b67d985a6c9c150a70d23aac96a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> { <br/>
@@ -154,7 +161,7 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a392d4a81da32fc10b37da52c3481e422">PIOS_SENSOR_OPTICAL_FLOW</a>, 
 <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859">PIOS_SENSOR_RANGEFINDER</a>, 
-<a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a022b8f5e76ed6659cdf85b004be20170">PIOS_SENSOR_LAST</a>
+<a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a48ed4c1b15aedb58550d4bc4035e46e7">PIOS_SENSOR_NUM</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:gadad1b67d985a6c9c150a70d23aac96a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The types of sensors this module supports.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">More...</a><br/></td></tr>
@@ -166,14 +173,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga382f3e734c0289835d99e3a8410a28bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the PIOS_SENSORS interface.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga382f3e734c0289835d99e3a8410a28bd">More...</a><br/></td></tr>
 <tr class="separator:ga382f3e734c0289835d99e3a8410a28bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e81576c47b0b13f30e21b37055635ed"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">PIOS_SENSORS_Register</a> (enum <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, struct <a class="el" href="structpios__queue.html">pios_queue</a> *<a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a>)</td></tr>
-<tr class="memdesc:ga7e81576c47b0b13f30e21b37055635ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a sensor with the PIOS_SENSORS interface.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">More...</a><br/></td></tr>
+<tr class="memdesc:ga7e81576c47b0b13f30e21b37055635ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a queue-based sensor with the PIOS_SENSORS interface.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga7e81576c47b0b13f30e21b37055635ed">More...</a><br/></td></tr>
 <tr class="separator:ga7e81576c47b0b13f30e21b37055635ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33076968a01458ec4c02aee135f1bba1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga33076968a01458ec4c02aee135f1bba1">PIOS_SENSORS_RegisterCallback</a> (enum <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gac5964cb3d83085fe578b9de1d0ba879e">PIOS_SENSOR_Callback_t</a> callback, void *ctx)</td></tr>
+<tr class="memdesc:ga33076968a01458ec4c02aee135f1bba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback-based sensor with the PIOS_SENSORS interface.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga33076968a01458ec4c02aee135f1bba1">More...</a><br/></td></tr>
+<tr class="separator:ga33076968a01458ec4c02aee135f1bba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec307d7810722bc86d390c8d58079975"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaec307d7810722bc86d390c8d58079975">PIOS_SENSORS_IsRegistered</a> (enum <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="memdesc:gaec307d7810722bc86d390c8d58079975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a sensor type is registered with the PIOS_SENSORS interface.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaec307d7810722bc86d390c8d58079975">More...</a><br/></td></tr>
 <tr class="separator:gaec307d7810722bc86d390c8d58079975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a3a1151ce437f21b0fb09bbb4391c74"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga0a3a1151ce437f21b0fb09bbb4391c74">PIOS_SENSORS_GetQueue</a> (enum <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:ga0a3a1151ce437f21b0fb09bbb4391c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data queue for a sensor type.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga0a3a1151ce437f21b0fb09bbb4391c74">More...</a><br/></td></tr>
-<tr class="separator:ga0a3a1151ce437f21b0fb09bbb4391c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77bbbd3e48c9ff22d516ea51ec129dae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga77bbbd3e48c9ff22d516ea51ec129dae">PIOS_SENSORS_GetData</a> (enum <a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0">pios_sensor_type</a> <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, void *buf, int ms_to_wait)</td></tr>
+<tr class="memdesc:ga77bbbd3e48c9ff22d516ea51ec129dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data for a sensor type.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga77bbbd3e48c9ff22d516ea51ec129dae">More...</a><br/></td></tr>
+<tr class="separator:ga77bbbd3e48c9ff22d516ea51ec129dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6be593f500f0cc9edc08ad8ed92aa67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga6be593f500f0cc9edc08ad8ed92aa67f">PIOS_SENSORS_SetMaxGyro</a> (int32_t <a class="el" href="flyingpio__messages_8h.html#a1c9c70c1732a780f440d526a6b7ef271">rate</a>)</td></tr>
 <tr class="memdesc:ga6be593f500f0cc9edc08ad8ed92aa67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum gyro rate in deg/s.  <a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga6be593f500f0cc9edc08ad8ed92aa67f">More...</a><br/></td></tr>
 <tr class="separator:ga6be593f500f0cc9edc08ad8ed92aa67f"><td class="memSeparator" colspan="2">&#160;</td></tr>

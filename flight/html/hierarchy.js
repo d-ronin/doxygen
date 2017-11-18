@@ -174,6 +174,7 @@ var hierarchy =
     [ "pios_rtc_cfg", "structpios__rtc__cfg.html", null ],
     [ "pios_sbus_cfg", "structpios__sbus__cfg.html", null ],
     [ "pios_semaphore", "structpios__semaphore.html", null ],
+    [ "PIOS_Sensor", "struct_p_i_o_s___sensor.html", null ],
     [ "pios_sensor_accel_data", "structpios__sensor__accel__data.html", null ],
     [ "pios_sensor_baro_data", "structpios__sensor__baro__data.html", null ],
     [ "pios_sensor_gyro_data", "structpios__sensor__gyro__data.html", null ],

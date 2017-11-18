@@ -187,6 +187,7 @@ var annotated =
     [ "pios_rtc_cfg", "structpios__rtc__cfg.html", "structpios__rtc__cfg" ],
     [ "pios_sbus_cfg", "structpios__sbus__cfg.html", "structpios__sbus__cfg" ],
     [ "pios_semaphore", "structpios__semaphore.html", "structpios__semaphore" ],
+    [ "PIOS_Sensor", "struct_p_i_o_s___sensor.html", "struct_p_i_o_s___sensor" ],
     [ "pios_sensor_accel_data", "structpios__sensor__accel__data.html", "structpios__sensor__accel__data" ],
     [ "pios_sensor_baro_data", "structpios__sensor__baro__data.html", "structpios__sensor__baro__data" ],
     [ "pios_sensor_gyro_data", "structpios__sensor__gyro__data.html", "structpios__sensor__gyro__data" ],

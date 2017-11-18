@@ -1,5 +1,16 @@
 var NAVTREEINDEX84 =
 {
+"group___storm32bgc.html#gaa63646cc391ba616a77dfe7033446b29":[2,4,23,13],
+"group___storm32bgc.html#gabd5222f9cb77e8558c987933aefad4fb":[2,4,23,25],
+"group___storm32bgc.html#gaccae87293e038add70d18ed5204a793a":[2,4,23,17],
+"group___storm32bgc.html#gad7c735b181202c02bbc87b25977806ac":[2,4,23,10],
+"group___storm32bgc.html#gadce68671d7788ce17593ae16d93c747b":[2,4,23,20],
+"group___storm32bgc.html#gadde0b2302957cbda17f5d7c3c160d73a":[2,4,23,8],
+"group___storm32bgc.html#gade2bbc31cd3b5b6d839556f56de61957":[2,4,23,7],
+"group___storm32bgc.html#gae4cb4e356cbc51a90372f39cf3d0d710":[2,4,23,18],
+"group___storm32bgc.html#gaf186569e1be7a8ed7a79d6ab491b321e":[2,4,23,11],
+"group___storm32bgc.html#gaf451e438d3a9cc3749c601810198dfd7":[2,4,23,15],
+"group___storm32bgc.html#gaf7d06dfec8bd97a9f24bd999e2c7e2b2":[2,4,23,6],
 "group___storm32bgc.html#gaf80009bfc91bb3a08bc688861145091b":[2,4,23,26],
 "group___storm32bgc.html#gaf904cf55a574991bc3a2f4062007e93b":[2,4,23,2],
 "group___system_module.html":[2,4,24],
@@ -238,16 +249,5 @@ var NAVTREEINDEX84 =
 "group___u_a_v_o_ho_t_t_bridge.html#gaedc71f8c7b2509a604584d197cef930b":[2,4,30,60],
 "group___u_a_v_o_ho_t_t_bridge.html#gaef13068f656a74f7161f95c59758ef2a":[2,4,30,70],
 "group___u_a_v_o_ho_t_t_bridge.html#gaeffa61bc9a796601c41e57170d745017":[2,4,30,109],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf1b712d032cae590fbeeb9bf027bcaef":[2,4,30,29],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf2f30f2c1874beea4294419bc8d33573":[2,4,30,36],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf469cf62c559d9b8885ee9c06ff3147b":[2,4,30,33],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf53a8dfa09b58303a9f45d3fef3d2326":[2,4,30,23],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf5c4a96407b267bb6e6a705dbd595296":[2,4,30,32],
-"group___u_a_v_o_ho_t_t_bridge.html#gaf82f16878d263fe8fa5fff42e41526e7":[2,4,30,98],
-"group___u_a_v_o_ho_t_t_bridge.html#gaff7c1090d0d36df1891cb738f8cea451":[2,4,30,102],
-"group___u_a_v_o_lighttelemetry_bridge.html":[2,4,31],
-"group___u_a_v_o_m_s_p_bridge.html":[2,4,33],
-"group___u_a_v_o_mavlink_bridge.html":[2,4,32],
-"group___u_a_v_o_mavlink_bridge.html#ga0cdd1555afabbed6436cb004b56ea036":[2,4,32,4],
-"group___u_a_v_o_mavlink_bridge.html#ga0cfefa3610c14cb992f25f2d8421f3c8":[2,4,32,6]
+"group___u_a_v_o_ho_t_t_bridge.html#gaf1b712d032cae590fbeeb9bf027bcaef":[2,4,30,29]
 };

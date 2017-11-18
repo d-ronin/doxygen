@@ -1,5 +1,16 @@
 var NAVTREEINDEX80 =
 {
+"group___sparky.html#ga7596c3cedf52aef9c8c56f2fd5609605":[2,6,15,238],
+"group___sparky.html#ga7596c3cedf52aef9c8c56f2fd5609605":[2,5,13,238],
+"group___sparky.html#ga79299533b189180627e0e148401954b7":[2,6,15,87],
+"group___sparky.html#ga79299533b189180627e0e148401954b7":[2,5,13,87],
+"group___sparky.html#ga7abaa7b2a334f64bfc43df02807d0f3f":[2,6,15,75],
+"group___sparky.html#ga7abaa7b2a334f64bfc43df02807d0f3f":[2,5,13,75],
+"group___sparky.html#ga7b366b1eb660467c7ef9667705ad8308":[2,6,15,205],
+"group___sparky.html#ga7b366b1eb660467c7ef9667705ad8308":[2,5,13,205],
+"group___sparky.html#ga7f657adda8b7f6aa955f0806a29b0b9d":[2,6,15,180],
+"group___sparky.html#ga7f657adda8b7f6aa955f0806a29b0b9d":[2,5,13,180],
+"group___sparky.html#ga7f93f74c93a49c6f7b372dbb55b851f6":[2,6,15,35],
 "group___sparky.html#ga7f93f74c93a49c6f7b372dbb55b851f6":[2,5,13,35],
 "group___sparky.html#ga7faa93f4a0aaaeeff604e8207d1531c2":[2,6,15,66],
 "group___sparky.html#ga7faa93f4a0aaaeeff604e8207d1531c2":[2,5,13,66],
@@ -238,16 +249,5 @@ var NAVTREEINDEX80 =
 "group___sparky.html#gafda450bd11b4c1408739367b23c9f852":[2,6,15,183],
 "group___sparky.html#gafda450bd11b4c1408739367b23c9f852":[2,5,13,183],
 "group___sparky.html#gafe588bf112fc8f8a22c767aa3d3bcbb7":[2,6,15,192],
-"group___sparky.html#gafe588bf112fc8f8a22c767aa3d3bcbb7":[2,5,13,192],
-"group___sparky.html#gaff4ce61159313e9c4b43dd1c0f61fd47":[2,6,15,102],
-"group___sparky.html#gaff4ce61159313e9c4b43dd1c0f61fd47":[2,5,13,102],
-"group___sparky.html#gaffb519ca907542b6bff9104700c0009d":[2,6,15,153],
-"group___sparky.html#gaffb519ca907542b6bff9104700c0009d":[2,5,13,153],
-"group___sparky.html#gaffe7c0cd799a61d0dbaed25e9496c4bb":[2,6,15,29],
-"group___sparky.html#gaffe7c0cd799a61d0dbaed25e9496c4bb":[2,5,13,29],
-"group___sparky.html#gafff91b6d9bd153dbcd8222ea2d4f3c52":[2,6,15,223],
-"group___sparky.html#gafff91b6d9bd153dbcd8222ea2d4f3c52":[2,5,13,223],
-"group___sparky2.html":[2,6,16],
-"group___sparky2.html":[2,5,14],
-"group___sparky2.html#ga00ad81d320aaeb3ca4899228c4155848":[2,6,16,198]
+"group___sparky.html#gafe588bf112fc8f8a22c767aa3d3bcbb7":[2,5,13,192]
 };

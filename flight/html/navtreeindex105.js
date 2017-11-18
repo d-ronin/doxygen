@@ -1,5 +1,16 @@
 var NAVTREEINDEX105 =
 {
+"pios__hal_8c.html#gab68be40fb4878e02c12c06d84755933c":[5,0,0,3,0,18,28],
+"pios__hal_8c.html#gab9a9f4422da783012950ae6468130423":[5,0,0,3,0,18,29],
+"pios__hal_8c.html#gabeababa7579275ec794f713e42899ec9":[5,0,0,3,0,18,4],
+"pios__hal_8c.html#gac040f05fa048688ee0269c2768698a14":[5,0,0,3,0,18,32],
+"pios__hal_8c.html#gac178c38c3cc72d6faca3e7044b662a6e":[5,0,0,3,0,18,12],
+"pios__hal_8c.html#gad1f1b3c4d58b400075aa96af53ac0cfd":[5,0,0,3,0,18,24],
+"pios__hal_8c.html#gad50594cd0f55c56e186df5dcf16a4256":[5,0,0,3,0,18,3],
+"pios__hal_8c.html#gad6a7e6bafb8759a0ef15c382cbdc1b84":[5,0,0,3,0,18,19],
+"pios__hal_8c.html#gadabfc71042c7d61e91a696bfe9e93732":[5,0,0,3,0,18,35],
+"pios__hal_8c.html#gadacbbe5c70c1cde1889fb1fae380db33":[5,0,0,3,0,18,15],
+"pios__hal_8c.html#gaea6d2579ff8ed74c27c193880efa23ee":[5,0,0,3,0,18,10],
 "pios__hal_8c.html#gafae65f122836cc5d5709d7525b8fc1e4":[5,0,0,3,0,18,16],
 "pios__hal_8c.html#gafe2986a0f0cf7d5929d9d612148f7993":[5,0,0,3,0,18,1],
 "pios__hal_8c_source.html":[5,0,0,3,0,18],
@@ -238,16 +249,5 @@ var NAVTREEINDEX105 =
 "pios__internal__adc__priv_8h.html":[5,0,0,3,1,52],
 "pios__internal__adc__priv_8h.html#ga7d936d31e2f61867467fac3ccbd561ab":[5,0,0,3,1,52,1],
 "pios__internal__adc__priv_8h.html#gad0f8b2886a98358b41966677d7c184fc":[5,0,0,3,1,52,0],
-"pios__internal__adc__priv_8h_source.html":[5,0,0,3,1,52],
-"pios__internal__adc__simple_8c.html":[5,0,0,3,4,2],
-"pios__internal__adc__simple_8c_source.html":[5,0,0,3,4,2],
-"pios__internal__adc__simple_8h.html":[5,0,0,3,4,0,0],
-"pios__internal__adc__simple_8h.html#ga16217108e9416a60da7e6c9e5a48c2c5":[5,0,0,3,4,0,0,0],
-"pios__internal__adc__simple_8h.html#ga7d936d31e2f61867467fac3ccbd561ab":[5,0,0,3,4,0,0,3],
-"pios__internal__adc__simple_8h.html#gaadcc59c3c914db44f36af39959ff6848":[5,0,0,3,4,0,0,2],
-"pios__internal__adc__simple_8h.html#gabf176f4f56549a98a6ed31cb1da4228e":[5,0,0,3,4,0,0,1],
-"pios__internal__adc__simple_8h_source.html":[5,0,0,3,4,0,0],
-"pios__ir__transponder_8c.html":[5,0,0,3,0,26],
-"pios__ir__transponder_8c_source.html":[5,0,0,3,0,26],
-"pios__ir__transponder_8h.html":[5,0,0,3,1,53]
+"pios__internal__adc__priv_8h_source.html":[5,0,0,3,1,52]
 };

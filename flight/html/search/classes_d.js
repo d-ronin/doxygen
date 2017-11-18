@@ -60,6 +60,7 @@ var searchData=
   ['pios_5frtc_5fcfg',['pios_rtc_cfg',['../structpios__rtc__cfg.html',1,'']]],
   ['pios_5fsbus_5fcfg',['pios_sbus_cfg',['../structpios__sbus__cfg.html',1,'']]],
   ['pios_5fsemaphore',['pios_semaphore',['../structpios__semaphore.html',1,'']]],
+  ['pios_5fsensor',['PIOS_Sensor',['../struct_p_i_o_s___sensor.html',1,'']]],
   ['pios_5fsensor_5faccel_5fdata',['pios_sensor_accel_data',['../structpios__sensor__accel__data.html',1,'']]],
   ['pios_5fsensor_5fbaro_5fdata',['pios_sensor_baro_data',['../structpios__sensor__baro__data.html',1,'']]],
   ['pios_5fsensor_5fgyro_5fdata',['pios_sensor_gyro_data',['../structpios__sensor__gyro__data.html',1,'']]],

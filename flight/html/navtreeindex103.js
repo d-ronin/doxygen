@@ -1,5 +1,16 @@
 var NAVTREEINDEX103 =
 {
+"pios__bmx055__priv_8h.html#gafdf3ebc38000bd10178e3b919e2a2588":[5,0,0,3,1,13,43],
+"pios__bmx055__priv_8h.html#gafe0e27199805cb9a23421a8eab03e058":[5,0,0,3,1,13,111],
+"pios__bmx055__priv_8h.html#gafe9f9531f485849bc2623bfa13d66581":[5,0,0,3,1,13,2],
+"pios__bmx055__priv_8h.html#gaffb0c11731221b5ec0f05d68f9798e96":[5,0,0,3,1,13,127],
+"pios__bmx055__priv_8h_source.html":[5,0,0,3,1,13],
+"pios__board__info_8c.html":[5,0,0,3,0,6],
+"pios__board__info_8c.html#a1fbbc483637b89028069cb50c934889b":[5,0,0,3,0,6,0],
+"pios__board__info_8c_source.html":[5,0,0,3,0,6],
+"pios__board__info_8h.html":[5,0,0,3,1,14],
+"pios__board__info_8h.html#a0ee8992bec085f1ae8974025885a455d":[5,0,0,3,1,14,12],
+"pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938":[5,0,0,3,1,14,1],
 "pios__board__info_8h.html#a3356e77d605b19f45bdc28482e4fb7f0":[5,0,0,3,1,14,10],
 "pios__board__info_8h.html#a4905da54723c4f058fd92985207da4fe":[5,0,0,3,1,14,8],
 "pios__board__info_8h.html#a57f54349f4fd1cbbb52058812e146af2":[5,0,0,3,1,14,13],
@@ -238,16 +249,5 @@ var NAVTREEINDEX103 =
 "pios__exti_8h_source.html":[5,0,0,3,1,27],
 "pios__fileout_8c.html":[5,0,0,3,2,5],
 "pios__fileout_8c.html#ga1f250524dba77a4edc9d8bf56d5b0baf":[5,0,0,3,2,5,3],
-"pios__fileout_8c.html#ga5e299446fa8190432cdc1a223a32e8e5":[5,0,0,3,2,5,1],
-"pios__fileout_8c.html#ga723198747d044043b78fad73a9435819":[5,0,0,3,2,5,2],
-"pios__fileout_8c.html#ga8176503e758c500d82c847021a1100ff":[5,0,0,3,2,5,4],
-"pios__fileout_8c.html#gaa7d42c4c6c196836914b6a4490b47ccf":[5,0,0,3,2,5,0],
-"pios__fileout_8c_source.html":[5,0,0,3,2,5],
-"pios__fileout__priv_8h.html":[5,0,0,3,2,0,3],
-"pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895":[5,0,0,3,2,0,3,1],
-"pios__fileout__priv_8h.html#ga5e299446fa8190432cdc1a223a32e8e5":[5,0,0,3,2,0,3,2],
-"pios__fileout__priv_8h.html#ga8176503e758c500d82c847021a1100ff":[5,0,0,3,2,0,3,3],
-"pios__fileout__priv_8h_source.html":[5,0,0,3,2,0,3],
-"pios__flash_8c.html":[5,0,0,3,0,13],
-"pios__flash_8c_source.html":[5,0,0,3,0,13]
+"pios__fileout_8c.html#ga5e299446fa8190432cdc1a223a32e8e5":[5,0,0,3,2,5,1]
 };

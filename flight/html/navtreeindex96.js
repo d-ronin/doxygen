@@ -1,5 +1,16 @@
 var NAVTREEINDEX96 =
 {
+"lpfilter_8c.html#gae4503ce34e88755462cdf61616f54a0f":[5,0,0,1,2,4,1],
+"lpfilter_8c.html#gaf3ad02d229b1a43feb6bc193f82827b5":[5,0,0,1,2,4,5],
+"lpfilter_8c_source.html":[5,0,0,1,2,4],
+"lpfilter_8h.html":[5,0,0,1,2,5],
+"lpfilter_8h.html#ga3562b89ca3d1c3b285bbb5662380ec03":[5,0,0,1,2,5,0],
+"lpfilter_8h.html#gab7e3eb09a69f70eeb359e350d4abb7c1":[5,0,0,1,2,5,1],
+"lpfilter_8h.html#gad1d279504b7cb05cc2f721854395489f":[5,0,0,1,2,5,2],
+"lpfilter_8h.html#gaf3ad02d229b1a43feb6bc193f82827b5":[5,0,0,1,2,5,3],
+"lpfilter_8h_source.html":[5,0,0,1,2,5],
+"lux_2bl_2pios__board_8c.html":[5,0,0,4,7,0,0],
+"lux_2bl_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,4,7,0,0,1],
 "lux_2bl_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,4,7,0,0,0],
 "lux_2bl_2pios__board_8c_source.html":[5,0,0,4,7,0,0],
 "lux_2board-info_2board__hw__defs_8c.html":[5,0,0,4,7,1,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX96 =
 "mgrs_8c.html#aae5441c22ed0ae42706ac311d78cfc50":[5,0,0,1,3,0,48],
 "mgrs_8c.html#aaefe24e97c3d630442ac0fca0d54e317":[5,0,0,1,3,0,35],
 "mgrs_8c.html#ab6ab41029504202a595fb5665bd88b25":[5,0,0,1,3,0,63],
-"mgrs_8c.html#ab7634eff7b48c510543acd2438abf718":[5,0,0,1,3,0,37],
-"mgrs_8c.html#ac42eff35a513ace6d43b254cbeecaec1":[5,0,0,1,3,0,18],
-"mgrs_8c.html#ac5aef92f1ab637fcfe58de12014d558c":[5,0,0,1,3,0,10],
-"mgrs_8c.html#ac96d3b70bf5fe64a509c2d7083327bec":[5,0,0,1,3,0,9],
-"mgrs_8c.html#acae5451b59016f98ead5f2fa94c5d4cc":[5,0,0,1,3,0,29],
-"mgrs_8c.html#accdbf2b64a22de4b844d2cf657875fc7":[5,0,0,1,3,0,32],
-"mgrs_8c.html#acde9de589307ceabae246cab52b2cf75":[5,0,0,1,3,0,61],
-"mgrs_8c.html#ad541accf21edfd520ef730cceed89caa":[5,0,0,1,3,0,14],
-"mgrs_8c.html#ae440a1f1db941ff01361c4e2b65f0968":[5,0,0,1,3,0,20],
-"mgrs_8c.html#ae6cc9d5de3bc5887ad622bfac66b3be8":[5,0,0,1,3,0,54],
-"mgrs_8c.html#ae839772fc9c448d1e1b666d997c17bb1":[5,0,0,1,3,0,26],
-"mgrs_8c.html#ae90a899228b2030daaf9eccd802c84a3":[5,0,0,1,3,0,60]
+"mgrs_8c.html#ab7634eff7b48c510543acd2438abf718":[5,0,0,1,3,0,37]
 };
