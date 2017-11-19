@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('failsafe__control_8c_source.html','');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        SystemSettingsAirframeTypeGet(&amp;airframe_type);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        StabilizationDesiredData stabilization_desired;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        stabilization_desired.Thrust = (airframe_type == SYSTEMSETTINGS_AIRFRAMETYPE_HELICP) ? 0 : -1;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        stabilization_desired.Thrust = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        stabilization_desired.Roll = 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        stabilization_desired.Pitch = 0;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        stabilization_desired.Yaw   = 0;</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('failsafe__control_8c_source.html','');
 <div class="ttc" id="group___control_html_gad1912458768a13e3fee44acb5992f1d0"><div class="ttname"><a href="group___control.html#gad1912458768a13e3fee44acb5992f1d0">failsafe_control_select</a></div><div class="ttdeci">int32_t failsafe_control_select(bool reset_controller)</div><div class="ttdoc">Use failsafe mode. </div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00061">failsafe_control.c:61</a></div></div>
 <div class="ttc" id="group___control_html_gab5211c13a168641b8f8aa3df9c8b26c2"><div class="ttname"><a href="group___control.html#gab5211c13a168641b8f8aa3df9c8b26c2">failsafe_control_update</a></div><div class="ttdeci">int32_t failsafe_control_update()</div><div class="ttdoc">Perform any updates to the failsafe controller. </div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00051">failsafe_control.c:51</a></div></div>
 <div class="ttc" id="failsafe__control_8h_html"><div class="ttname"><a href="failsafe__control_8h.html">failsafe_control.h</a></div><div class="ttdoc">Failsafe controller when transmitter control is lost. </div></div>
-<div class="ttc" id="group___actuator_module_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00101">actuator.c:101</a></div></div>
+<div class="ttc" id="group___actuator_module_html_ga2850723437c013e81ea5232f44b5e7f1"><div class="ttname"><a href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></div><div class="ttdeci">static SystemSettingsAirframeTypeOptions airframe_type</div><div class="ttdef"><b>Definition:</b> <a href="actuator_8c_source.html#l00102">actuator.c:102</a></div></div>
 <div class="ttc" id="control_8h_html"><div class="ttname"><a href="control_8h.html">control.h</a></div></div>
 <div class="ttc" id="group___control_html_ga7ce4be6cb90b629500ec2db534d375f6"><div class="ttname"><a href="group___control.html#ga7ce4be6cb90b629500ec2db534d375f6">failsafe_control_initialize</a></div><div class="ttdeci">int32_t failsafe_control_initialize()</div><div class="ttdoc">Initialize the failsafe controller. </div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00045">failsafe_control.c:45</a></div></div>
 <div class="ttc" id="group___control_html_ga0cfffeff625e66d5b08d5fdf3dfae137"><div class="ttname"><a href="group___control.html#ga0cfffeff625e66d5b08d5fdf3dfae137">armed_when_enabled</a></div><div class="ttdeci">static bool armed_when_enabled</div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00056">failsafe_control.c:56</a></div></div>

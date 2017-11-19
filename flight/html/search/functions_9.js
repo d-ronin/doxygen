@@ -30,6 +30,7 @@ var searchData=
   ['interpolate_5fvalue',['interpolate_value',['../group___flight_math.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6',1,'misc_math.c']]],
   ['intrographics',['introGraphics',['../group___on_screen_display.html#ga3c8f34c917bb0b2c93ee0b54260cf9fc',1,'onscreendisplay.c']]],
   ['introtext',['introText',['../group___on_screen_display.html#ga39587fadab896acdf29c648e7328efa7',1,'onscreendisplay.c']]],
+  ['is_5flow_5fthrottle_5ffor_5farming',['is_low_throttle_for_arming',['../group___control.html#ga84bf951a81f53c4d25d2de935085449f',1,'transmitter_control.c']]],
   ['is_5fnot_5ffinite',['IS_NOT_FINITE',['../group___flight_math.html#gab2cad9810e0c0c09e0988b17159e4d1c',1,'misc_math.h']]],
   ['is_5fptr_5fin_5fheap_5fp',['is_ptr_in_heap_p',['../group___p_i_o_s___h_e_a_p.html#ga652f00de3dd4045772af1e734819e4d4',1,'pios_heap.c']]],
   ['isarmed',['isArmed',['../group___flight.html#gaa3c3d3ada197adb1e64565dbd64fec59',1,'flightstatsmodule.c']]],

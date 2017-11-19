@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -152,13 +152,13 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span>pios_srxl_frame_multiplex12 {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        uint8_t sync;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        uint16_t chan[12];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((packed));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span>pios_srxl_frame_multiplex16 {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        uint8_t sync;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        uint16_t chan[16];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((packed));</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span>pios_srxl_frame_weatronic16 {</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        uint8_t <a class="code" href="group___common_f1.html#ga2414697de79a243562514a0a4344a4dd">status</a>; <span class="comment">// bit 4 seems to be failsafe flag</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        uint8_t junk1; <span class="comment">// unknown</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        int16_t chan[16];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <a class="code" href="group___u_a_v_talk.html#ga043afd6646bf00b1155399e12818f798">__attribute__</a>((packed));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* weatronic 16 is currently the largest */</span></div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        uint32_t rx_timer;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        uint32_t failsafe_timer;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        uint8_t frame_length;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* Private Functions */</span></div>
@@ -388,6 +388,7 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_SRXL) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___storm32bgc_html_ga788345f67dc9abfdbd8812123a18d574"><div class="ttname"><a href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a></div><div class="ttdeci">union @12 crc</div></div>
 <div class="ttc" id="structpios__rcvr__driver_html_af8311763de593fff9c2ea958b5258305"><div class="ttname"><a href="structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305">pios_rcvr_driver::read</a></div><div class="ttdeci">int32_t(* read)(uintptr_t id, uint8_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00035">pios_rcvr.h:35</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2pios_8h_source.html#l00199">pios.h:199</a></div></div>
 <div class="ttc" id="pios__srxl_8h_html"><div class="ttname"><a href="pios__srxl_8h.html">pios_srxl.h</a></div></div>
@@ -406,7 +407,6 @@ $(document).ready(function(){initNavTree('pios__srxl_8c_source.html','');});
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="structpios__rcvr__driver_html"><div class="ttname"><a href="structpios__rcvr__driver.html">pios_rcvr_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00033">pios_rcvr.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00048">pios_rcvr.h:48</a></div></div>
-<div class="ttc" id="group___storm32bgc_html_ga92726b51438833e3c93db63f3b37f73b"><div class="ttname"><a href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a></div><div class="ttdeci">union @8 crc</div></div>
 <div class="ttc" id="morsel_8c_html_aebddcae7f50eeca200c88ea15dd27094"><div class="ttname"><a href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a></div><div class="ttdeci">#define DONT_BUILD_IF(COND, MSG)</div><div class="ttdef"><b>Definition:</b> <a href="morsel_8c_source.html#l00206">morsel.c:206</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_aae8a141a2e00fb900376f6eae01e8558"><div class="ttname"><a href="structpios__com__driver.html#aae8a141a2e00fb900376f6eae01e8558">pios_com_driver::bind_rx_cb</a></div><div class="ttdeci">void(* bind_rx_cb)(uintptr_t id, pios_com_callback rx_in_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00047">pios_com.h:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_r_x_l_html_gad0d268d3f8dbcbe7374802f83d03886e"><div class="ttname"><a href="group___p_i_o_s___s_r_x_l.html#gad0d268d3f8dbcbe7374802f83d03886e">pios_srxl_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_srxl_rcvr_driver</div></div>

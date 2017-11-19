@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -180,6 +180,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga8e88322b72071ee70302594e7fc87bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga692adb03fe506d1b770955f0fb26cd00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga692adb03fe506d1b770955f0fb26cd00">PIOS_Servo_SetFraction</a> (uint8_t <a class="el" href="msp__messages_8h.html#a1850f7a537e61c36a312fd979808e81d">servo</a>, uint16_t fraction, uint16_t max_val, uint16_t min_val)</td></tr>
 <tr class="separator:ga692adb03fe506d1b770955f0fb26cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fc39ec9ed716c6dfe2ddc2c6e119bf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga1fc39ec9ed716c6dfe2ddc2c6e119bf3">PIOS_Servo_IsDshot</a> (uint8_t <a class="el" href="msp__messages_8h.html#a1850f7a537e61c36a312fd979808e81d">servo</a>)</td></tr>
+<tr class="separator:ga1fc39ec9ed716c6dfe2ddc2c6e119bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba4a52e086fdb598832d09776cdebde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaba4a52e086fdb598832d09776cdebde3">PIOS_Servo_Set</a> (uint8_t <a class="el" href="msp__messages_8h.html#a1850f7a537e61c36a312fd979808e81d">servo</a>, float position)</td></tr>
 <tr class="separator:gaba4a52e086fdb598832d09776cdebde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedd09d5c2bd70c6a479e58cabe5b4cca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaedd09d5c2bd70c6a479e58cabe5b4cca">DSHOT_Update</a> ()</td></tr>
@@ -225,13 +227,13 @@ Variables</h2></td></tr>
 <tr class="separator:gad11f485abea8e1773f944e3da8922151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b9989d29283df24c5b281ec32b3b1c7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf21001704588d21e61c566facf69ec3d">channel_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a></td></tr>
 <tr class="separator:ga9b9989d29283df24c5b281ec32b3b1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fd50199e201622e14e6a978ed1b1bd8"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:gac46fc7a0bfdd7098af518719c42c261d"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf76078ad3a81e9760694550485b6e590">pwm_res</a></td></tr>
-<tr class="separator:gac46fc7a0bfdd7098af518719c42c261d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadddca6d751db94f5aad9722d2f826b94"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structdshot__info.html">dshot_info</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf5c6f4a8f5545b7b2a2bff79aac38b96">dshot</a></td></tr>
-<tr class="separator:gadddca6d751db94f5aad9722d2f826b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fd50199e201622e14e6a978ed1b1bd8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga2fd50199e201622e14e6a978ed1b1bd8">i</a></td></tr>
-<tr class="separator:ga2fd50199e201622e14e6a978ed1b1bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga228afb5a399881f085cfa091e7d91215"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ga64216b5f0effe0e97fce9f7e5d19aa3d"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf76078ad3a81e9760694550485b6e590">pwm_res</a></td></tr>
+<tr class="separator:ga64216b5f0effe0e97fce9f7e5d19aa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fa680c0e95061e0b446c664c48fe18d"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structdshot__info.html">dshot_info</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gaf5c6f4a8f5545b7b2a2bff79aac38b96">dshot</a></td></tr>
+<tr class="separator:ga5fa680c0e95061e0b446c664c48fe18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga228afb5a399881f085cfa091e7d91215"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga228afb5a399881f085cfa091e7d91215">i</a></td></tr>
+<tr class="separator:ga228afb5a399881f085cfa091e7d91215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga809ddb8b3a5e737e13c1f5d9f1394ebd"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structoutput__channel.html">output_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga809ddb8b3a5e737e13c1f5d9f1394ebd">output_channels</a></td></tr>
 <tr class="separator:ga809ddb8b3a5e737e13c1f5d9f1394ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc76f98425308ca88680039f02839930"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_v_o.html#gabc76f98425308ca88680039f02839930">servo_tim_id</a></td></tr>

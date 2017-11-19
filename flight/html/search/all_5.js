@@ -50,7 +50,7 @@ var searchData=
   ['endcap_5fflat',['ENDCAP_FLAT',['../group___on_screen_display.html#ga641c3b1637ddc9afc830592c1a0eeabc',1,'osd_utils.h']]],
   ['endcap_5fnone',['ENDCAP_NONE',['../group___on_screen_display.html#ga14e07a3bda68e5760ec79776f9db755a',1,'osd_utils.h']]],
   ['endcap_5fround',['ENDCAP_ROUND',['../group___on_screen_display.html#ga8767b9e16ffb49e028073102a1e674eb',1,'osd_utils.h']]],
-  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#ac871f8c64bb9fb4cf5533e83ef035852',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
+  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#a50589427ec9a275224f2ef8afd42c754',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
   ['enter_5flowpowermode',['Enter_LowPowerMode',['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7720eb7ac1ea6af8e9e76b2eb6f12d65',1,'Enter_LowPowerMode(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a7720eb7ac1ea6af8e9e76b2eb6f12d65',1,'Enter_LowPowerMode(void):&#160;pios_usb_hid_pwr.c']]],
   ['enterdfu',['EnterDFU',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fac3e4960bd05471812a158fc40a2bcd54',1,'common.h']]],
   ['entry',['entry',['../struct_object_event_entry_throttled.html#a55b4d6b43b204db478e2165a94fd02b2',1,'ObjectEventEntryThrottled']]],

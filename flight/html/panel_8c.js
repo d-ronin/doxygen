@@ -39,7 +39,7 @@ var panel_8c =
     [ "STD_PANEL", "panel_8c.html#ga3dc8cb625d9eb965875899d2893a19d6", null ],
     [ "STD_PANEL", "panel_8c.html#gae84db9734e5ed288e80cf04621349774", null ],
     [ "STD_PANEL", "panel_8c.html#ga22259427b2480ea229d7424bae375e37", null ],
-    [ "STD_PANEL", "panel_8c.html#gaba8284bc2cc0444b9d735665c42d1b09", null ],
+    [ "STD_PANEL", "panel_8c.html#ga685eb4dabeba279882854e11a6750532", null ],
     [ "STD_PANEL", "panel_8c.html#ga388df72203e043c803563e8510fa8215", null ],
     [ "STD_PANEL", "panel_8c.html#gaa97dfc1a2fe8d8d6383e57fb50b58301", null ],
     [ "STD_PANEL", "panel_8c.html#ga244eb79d5f0e2b87009b0655d0b34db1", null ],

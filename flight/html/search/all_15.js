@@ -337,7 +337,7 @@ var searchData=
   ['update_5fperiod_5fms',['UPDATE_PERIOD_MS',['../group___control.html#ga4e8e7d6fdd1f5c6f8a0f341e4b61f025',1,'manualcontrol.c']]],
   ['update_5frate_5fms',['UPDATE_RATE_MS',['../group___path_planner_module.html#ga442eca6e635d4bd239fecfe80432799b',1,'pathplanner.c']]],
   ['update_5fsettings',['update_settings',['../group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c',1,'stabilization.c']]],
-  ['update_5fstabilization_5fdesired',['update_stabilization_desired',['../group___control.html#gaf65ecfe2872f7707121f85894712225e',1,'transmitter_control.c']]],
+  ['update_5fstabilization_5fdesired',['update_stabilization_desired',['../group___control.html#gae3ba4f486d275e51072f31f078296f83',1,'transmitter_control.c']]],
   ['update_5ft',['update_t',['../group___char_o_s_d.html#ga4069e49ca81e2ccf183f3e65cf111dae',1,'charosd.h']]],
   ['update_5ftelemetry',['update_telemetry',['../group___char_o_s_d.html#gafac530e48320d050bad2d80dd2d2ee7b',1,'charonscreendisplay.c']]],
   ['updateattitudecomplementary',['updateAttitudeComplementary',['../group___attitude_module.html#ga13a4c91692dac51e1ccb8d460c09dbc3',1,'attitude.c']]],

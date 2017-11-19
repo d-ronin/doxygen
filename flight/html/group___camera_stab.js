@@ -14,10 +14,10 @@ var group___camera_stab =
     ] ],
     [ "LOAD_DELAY", "group___camera_stab.html#gaf684656de99549dab1fc3b5964f4f4a6", null ],
     [ "SAMPLE_PERIOD_MS", "group___camera_stab.html#gafde0a91566f74d38cdffe80c6635576d", [
-      [ "ROLL", "group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5a2eeb9fef8a6a516fa6437a44a6efbd52", null ],
-      [ "PITCH", "group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5aa4ed247aa19723caf868d2b2dd5cf4ff", null ],
-      [ "YAW", "group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5a60ae774ecd1cf97a0e91f76970d64491", null ],
-      [ "MAX_AXES", "group___camera_stab.html#gga99fb83031ce9923c84392b4e92f956b5aaacb851954fab4e8ccf0d09acc8ef697", null ]
+      [ "ROLL", "group___camera_stab.html#gga726ca809ffd3d67ab4b8476646f26635a2eeb9fef8a6a516fa6437a44a6efbd52", null ],
+      [ "PITCH", "group___camera_stab.html#gga726ca809ffd3d67ab4b8476646f26635aa4ed247aa19723caf868d2b2dd5cf4ff", null ],
+      [ "YAW", "group___camera_stab.html#gga726ca809ffd3d67ab4b8476646f26635a60ae774ecd1cf97a0e91f76970d64491", null ],
+      [ "MAX_AXES", "group___camera_stab.html#gga726ca809ffd3d67ab4b8476646f26635aaacb851954fab4e8ccf0d09acc8ef697", null ]
     ] ],
     [ "applyFF", "group___camera_stab.html#ga1f237b22b58b962ec6dd33ab78623717", null ],
     [ "attitudeUpdated", "group___camera_stab.html#ga3a49d7b31b2955720346a096cdcf10d0", null ],

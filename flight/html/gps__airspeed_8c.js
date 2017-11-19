@@ -6,6 +6,5 @@ var gps__airspeed_8c =
     [ "SAMPLING_DELAY_MS_GPS", "gps__airspeed_8c.html#gaa3a111dbdad764a2e7bf526900a2dd6d", null ],
     [ "gps_airspeedGet", "gps__airspeed_8c.html#gac8b8ff60998625430e286f7797c5ce67", null ],
     [ "gps_airspeedInitialize", "gps__airspeed_8c.html#ga299e0051e430b00460f5454782c342d7", null ],
-    [ "__attribute__", "gps__airspeed_8c.html#ga342a83c45712b8254dabaf96b288aad8", null ],
     [ "gps", "gps__airspeed_8c.html#gad418ce0c236d030cb672515e667a7f28", null ]
 ];

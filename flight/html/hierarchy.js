@@ -23,6 +23,7 @@ var hierarchy =
     [ "crsf_payload_gps", "structcrsf__payload__gps.html", null ],
     [ "Device", "struct_device.html", null ],
     [ "dma_buffer", "uniondma__buffer.html", null ],
+    [ "dshot_command", "structdshot__command.html", null ],
     [ "dshot_info", "structdshot__info.html", null ],
     [ "escHardware_t", "structesc_hardware__t.html", null ],
     [ "EventCallbackInfo", "struct_event_callback_info.html", null ],

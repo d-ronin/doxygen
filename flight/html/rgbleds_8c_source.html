@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_THROTTLE:</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        StabilizationDesiredThrustGet(&amp;tmp_float);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                        fraction = float_to_u16(tmp_float);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                        fraction = float_to_u16(fabsf(tmp_float));</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY0:</div>
@@ -604,7 +604,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___on_screen_display_html_gaa0e1b89f80645ac528511ff7bfa2d096"><div class="ttname"><a href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a></div><div class="ttdeci">volatile bool video_active</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00136">onscreendisplay.c:136</a></div></div>
+<div class="ttc" id="group___on_screen_display_html_gaa0e1b89f80645ac528511ff7bfa2d096"><div class="ttname"><a href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a></div><div class="ttdeci">volatile bool video_active</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00137">onscreendisplay.c:137</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00227">pios_ws2811.c:227</a></div></div>
 <div class="ttc" id="misc__math_8h_html"><div class="ttname"><a href="misc__math_8h.html">misc_math.h</a></div></div>

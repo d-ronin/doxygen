@@ -35,6 +35,7 @@ var searchData=
   ['pbytes',['pBytes',['../ecc_8h.html#ae92bed6593d875f29f79a12f10e84b5b',1,'pBytes():&#160;rs.c'],['../rs_8c.html#ae92bed6593d875f29f79a12f10e84b5b',1,'pBytes():&#160;rs.c']]],
   ['pcup',['Pcup',['../struct_w_m_mtype___legendre_function.html#a3059147ef5db575cff502086ffd6181e',1,'WMMtype_LegendreFunction']]],
   ['pdop',['pDOP',['../struct_u_b_x___n_a_v___d_o_p.html#a1ad5dc519aeceb3054f3a4a0ab8fc5ea',1,'UBX_NAV_DOP::pDOP()'],['../struct_u_b_x___n_a_v___s_o_l.html#ac6ab9d0036a83196d847e1c4ed2389fb',1,'UBX_NAV_SOL::pDOP()']]],
+  ['pending_5fcmd',['pending_cmd',['../group___actuator_module.html#gac5209ca6655df19899970a4a9176ab8d',1,'actuator.c']]],
   ['pepint_5fin',['pEpInt_IN',['../_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#a0992c19a0f2e317fcd93f755d316a0fd',1,'pEpInt_IN():&#160;pios_usb_hid_istr.c'],['../_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#a0992c19a0f2e317fcd93f755d316a0fd',1,'pEpInt_IN():&#160;pios_usb_hid_istr.c']]],
   ['pepint_5fout',['pEpInt_OUT',['../_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#a549396ff4348c565f52117dd27ad52ca',1,'pEpInt_OUT():&#160;pios_usb_hid_istr.c'],['../_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#a549396ff4348c565f52117dd27ad52ca',1,'pEpInt_OUT():&#160;pios_usb_hid_istr.c']]],
   ['period',['period',['../structmsp__message__list__item.html#a72e3f5eb7bbffcee32b4850616149126',1,'msp_message_list_item::period()'],['../group___p_i_o_s___s_e_r_v_o.html#gaa9f838d2acbd8714ba8ce996f11a43f2',1,'timer_bank::period()'],['../group___p_i_o_s___v_i_d_e_o.html#ga355ae2a8b2f33aad951d69c62b4aca1a',1,'pios_video_type_cfg::period()']]],
@@ -193,7 +194,7 @@ var searchData=
   ['pwm_5f2_5fperiod_5fus',['pwm_2_period_us',['../structled__pwm__state.html#a2e7238e5a5826081e0911e26c20bf351',1,'led_pwm_state']]],
   ['pwm_5f2_5fsweep_5fsteps',['pwm_2_sweep_steps',['../structled__pwm__state.html#a689ddd487a2599dd4829ffd8ac3ed4e0',1,'led_pwm_state']]],
   ['pwm_5fpin',['pwm_pin',['../structmsp__motor__pins.html#a338292f7f8dcf7af915bedb1ac0ebbf2',1,'msp_motor_pins::pwm_pin()'],['../msp__messages_8h.html#aad953bc380dd58ea5ad2f6a080a2e536',1,'pwm_pin():&#160;msp_messages.h']]],
-  ['pwm_5fres',['pwm_res',['../group___p_i_o_s___s_e_r_v_o.html#gaa7114b5a1f94e7bc10a5e31b4dd4ae37',1,'output_channel::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#ga86a5130e2ff5acbdf9480ee64432bba7',1,'output_channel::@23::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#gac46fc7a0bfdd7098af518719c42c261d',1,'@24::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf76078ad3a81e9760694550485b6e590',1,'pwm_res():&#160;pios_servo.c']]],
+  ['pwm_5fres',['pwm_res',['../group___p_i_o_s___s_e_r_v_o.html#gaa7114b5a1f94e7bc10a5e31b4dd4ae37',1,'output_channel::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#ga6e319938a3a68962799437e9678bf66e',1,'output_channel::@27::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#ga64216b5f0effe0e97fce9f7e5d19aa3d',1,'@28::pwm_res()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf76078ad3a81e9760694550485b6e590',1,'pwm_res():&#160;pios_servo.c']]],
   ['pwr',['pwr',['../group___v_t_x_config.html#ga015080f92311cb2608d26a360f593ea8',1,'__attribute__']]],
   ['pwr_5flevel',['pwr_level',['../group___v_t_x_config.html#ga493118db0a52eb06f4826c6910751b39',1,'__attribute__']]]
 ];

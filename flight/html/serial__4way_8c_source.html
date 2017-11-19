@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -424,17 +424,17 @@ $(document).ready(function(){initNavTree('serial__4way_8c_source.html','');});
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">  POSSIBILITY OF SUCH DAMAGE. */</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;uint16_t _crc_xmodem_update (uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>, uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;uint16_t _crc_xmodem_update (uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>, uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>) {</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        crc = crc ^ ((uint16_t)data &lt;&lt; 8);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>=0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; 8; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++){</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> &amp; 0x8000)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> = (<a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> &lt;&lt; 1) ^ 0x1021;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> &amp; 0x8000)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> = (<a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> &lt;&lt; 1) ^ 0x1021;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> &lt;&lt;= 1;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> &lt;&lt;= 1;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">// * End copyright</span></div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
@@ -1019,6 +1019,7 @@ $(document).ready(function(){initNavTree('serial__4way_8c_source.html','');});
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="group___storm32bgc_html_ga788345f67dc9abfdbd8812123a18d574"><div class="ttname"><a href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a></div><div class="ttdeci">union @12 crc</div></div>
 <div class="ttc" id="group___pip_x_html_ga61bc08f9c0ea60e200f65cd5fb494abf"><div class="ttname"><a href="group___pip_x.html#ga61bc08f9c0ea60e200f65cd5fb494abf">TX_LED_OFF</a></div><div class="ttdeci">#define TX_LED_OFF</div><div class="ttdef"><b>Definition:</b> <a href="targets_2pipxtreme_2board-info_2pios__board_8h_source.html#l00116">pios_board.h:116</a></div></div>
 <div class="ttc" id="serial__4way_8h_html_a9eb51c915e06160f1725fe0fecc4f97f"><div class="ttname"><a href="serial__4way_8h.html#a9eb51c915e06160f1725fe0fecc4f97f">imATM_BLB</a></div><div class="ttdeci">#define imATM_BLB</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way_8h_source.html#l00030">serial_4way.h:30</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a1b39d688b6140808bebc8c0bb49deef1"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a1b39d688b6140808bebc8c0bb49deef1">BL_VerifyFlash</a></div><div class="ttdeci">uint8_t BL_VerifyFlash(ioMem_t *pMem)</div></div>
@@ -1061,7 +1062,6 @@ $(document).ready(function(){initNavTree('serial__4way_8c_source.html','');});
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a24f656c91a110bcc55e733f6c9c71e16"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a24f656c91a110bcc55e733f6c9c71e16">BL_ReadFlash</a></div><div class="ttdeci">uint8_t BL_ReadFlash(uint8_t interface_mode, ioMem_t *pMem)</div></div>
 <div class="ttc" id="serial__4way__impl_8h_html_ab2bb23ea805455526e81aaa10f98d8bb"><div class="ttname"><a href="serial__4way__impl_8h.html#ab2bb23ea805455526e81aaa10f98d8bb">setEscLo</a></div><div class="ttdeci">void setEscLo(uint8_t selEsc)</div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3282c57027468fb75bf7026c186e2906"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3282c57027468fb75bf7026c186e2906">PIOS_IRQ_Disable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Disable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00040">pios_irq.c:40</a></div></div>
-<div class="ttc" id="group___storm32bgc_html_ga92726b51438833e3c93db63f3b37f73b"><div class="ttname"><a href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a></div><div class="ttdeci">union @8 crc</div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a139ac119a8f1d022a48247ee625912e1"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a139ac119a8f1d022a48247ee625912e1">brSUCCESS</a></div><div class="ttdeci">#define brSUCCESS</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way__avrootloader_8h_source.html#l00023">serial_4way_avrootloader.h:23</a></div></div>
 <div class="ttc" id="serial__4way_8h_html_aba1d717eb66d5efbd9a22b1b89285850"><div class="ttname"><a href="serial__4way_8h.html#aba1d717eb66d5efbd9a22b1b89285850">esc4wayProcess</a></div><div class="ttdeci">void esc4wayProcess(struct serialPort_s *mspPort)</div></div>
 <div class="ttc" id="serial__4way_8h_html"><div class="ttname"><a href="serial__4way_8h.html">serial_4way.h</a></div></div>

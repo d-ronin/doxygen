@@ -52,7 +52,7 @@ var bl__messages_8h =
     ] ],
     [ "dfu_partition_label", "bl__messages_8h.html#ga54adf70880c786a1fecf7859d48b01f0", null ],
     [ "__attribute__", "bl__messages_8h.html#ga81fbad142b003248686d741feb03eabe", null ],
-    [ "__attribute__", "bl__messages_8h.html#a7e028aa8efa4bf6f91214c3321a6e0c9", null ],
+    [ "__attribute__", "bl__messages_8h.html#adecf47ce4e8997006a5cca83db7a50f7", null ],
     [ "bl_version", "bl__messages_8h.html#a2c3553355f2f3caf0d0e9c625cdcede2", null ],
     [ "board_rev", "bl__messages_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37", null ],
     [ "cap_extension_magic", "bl__messages_8h.html#a388d6c197242b0c799200ee185d7ac2a", null ],

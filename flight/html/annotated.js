@@ -32,6 +32,7 @@ var annotated =
     [ "crsf_payload_gps", "structcrsf__payload__gps.html", "structcrsf__payload__gps" ],
     [ "Device", "struct_device.html", "struct_device" ],
     [ "dma_buffer", "uniondma__buffer.html", "uniondma__buffer" ],
+    [ "dshot_command", "structdshot__command.html", "structdshot__command" ],
     [ "dshot_info", "structdshot__info.html", "structdshot__info" ],
     [ "DsmTest", "class_dsm_test.html", "class_dsm_test" ],
     [ "EncodeDecode", "class_encode_decode.html", "class_encode_decode" ],

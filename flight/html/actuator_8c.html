@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('actuator_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -133,6 +134,11 @@ $(document).ready(function(){initNavTree('actuator_8c.html','');});
 </div>
 <p><a href="actuator_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdshot__command.html">dshot_command</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga623ec78b7909090dbedac4af1d52abb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga623ec78b7909090dbedac4af1d52abb4">MAX_QUEUE_SIZE</a>&#160;&#160;&#160;2</td></tr>
@@ -147,8 +153,24 @@ Macros</h2></td></tr>
 <tr class="separator:ga26733396829a78364e228452a3d426be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada6c954bd2b503584488c9560cd3be28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gada6c954bd2b503584488c9560cd3be28">MIXER_SCALE</a>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:gada6c954bd2b503584488c9560cd3be28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab084abfca8fc40de17f8a3d9092d232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaab084abfca8fc40de17f8a3d9092d232">ACTUATOR_EPSILON</a>&#160;&#160;&#160;0.00001f</td></tr>
+<tr class="separator:gaab084abfca8fc40de17f8a3d9092d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77035023a47441d44c9d72b8b28770f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga77035023a47441d44c9d72b8b28770f4">DSHOT_COMMAND_DONTSPIN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga77035023a47441d44c9d72b8b28770f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f910cead41035f9953dbb90398d36a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga0f910cead41035f9953dbb90398d36a9">DSHOT_COMMAND_NO3DMODE</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:ga0f910cead41035f9953dbb90398d36a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16ed3ad9fbe692ba15b12f207d3d08df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga16ed3ad9fbe692ba15b12f207d3d08df">DSHOT_COMMAND_3DMODE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga16ed3ad9fbe692ba15b12f207d3d08df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cc76a07cc04fa388959faec7a2d8c51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5cc76a07cc04fa388959faec7a2d8c51">DSHOT_COUNT_EXCESSIVE</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ga5cc76a07cc04fa388959faec7a2d8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac025c79b8a22a5e226fdc1c08856423"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaac025c79b8a22a5e226fdc1c08856423">compute_one_token_paste</a>(b)&#160;&#160;&#160;<a class="el" href="group___actuator_module.html#ga568206810bad83d13f36a0d7d5fc232d">compute_one_mixer</a>(b-1, &amp;mixerSettings.Mixer ## b ## Vector, mixerSettings.Mixer ## b ## Type)</td></tr>
 <tr class="separator:gaac025c79b8a22a5e226fdc1c08856423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9700a8bf888bf57d839ad38fa7e5b7b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuator_8c.html#a9700a8bf888bf57d839ad38fa7e5b7b1">DSHOT_DEADBAND_NORMAL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a9700a8bf888bf57d839ad38fa7e5b7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065b51e9d9b2ce4ad5dc1ac15d1f4433"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuator_8c.html#a065b51e9d9b2ce4ad5dc1ac15d1f4433">DSHOT_DEADBAND_3D</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a065b51e9d9b2ce4ad5dc1ac15d1f4433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac738422e642ec416b4dfc88ca034f597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuator_8c.html#ac738422e642ec416b4dfc88ca034f597">DSHOT_DEADBAND_3DREV</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ac738422e642ec416b4dfc88ca034f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -161,14 +183,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e">actuator_task</a> (void *parameters)</td></tr>
 <tr class="memdesc:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Actuator module task.  <a href="group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e">More...</a><br/></td></tr>
 <tr class="separator:ga4c6cfb67ea6b930740d4f9a3d3659a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7220b5cc002952f9fa775381b6067bd8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga7220b5cc002952f9fa775381b6067bd8">scale_channel</a> (float <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, int idx)</td></tr>
-<tr class="separator:ga7220b5cc002952f9fa775381b6067bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25cbed534e573decba14ba61a716c454"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga25cbed534e573decba14ba61a716c454">scale_channel</a> (float <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, int idx, bool active_cmd)</td></tr>
+<tr class="separator:ga25cbed534e573decba14ba61a716c454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e8c5a2f546ec4906bbeb387959a7b8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga6e8c5a2f546ec4906bbeb387959a7b8d">set_failsafe</a> ()</td></tr>
 <tr class="separator:ga6e8c5a2f546ec4906bbeb387959a7b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85f9c2a5a055c0292a43f7bf29f09d94"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga85f9c2a5a055c0292a43f7bf29f09d94">throt_curve</a> (const float input, const float *curve, uint8_t num_points)</td></tr>
-<tr class="separator:ga85f9c2a5a055c0292a43f7bf29f09d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf68bce9df87514badace08f793262388"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaf68bce9df87514badace08f793262388">collective_curve</a> (const float input, const float *curve, uint8_t num_points)</td></tr>
 <tr class="separator:gaf68bce9df87514badace08f793262388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga164a8a953140af4d2f724a74c1ca9b01"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga164a8a953140af4d2f724a74c1ca9b01">actuator_get_dshot_command</a> (bool armed)</td></tr>
+<tr class="separator:ga164a8a953140af4d2f724a74c1ca9b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2047690c019a9b835033f44645ae8304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga2047690c019a9b835033f44645ae8304">actuator_send_dshot_command</a> (uint8_t cmd_id, uint8_t num_to_send, uint16_t <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga4e2708bc7022dbf8177e7ef6698ad7d7">channel_mask</a>)</td></tr>
+<tr class="separator:ga2047690c019a9b835033f44645ae8304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20a9b586b797b05e7e30d335efaa0204"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga20a9b586b797b05e7e30d335efaa0204">actuator_send_dshot_command_now</a> (uint8_t cmd_id, uint8_t num_to_send, uint16_t <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga4e2708bc7022dbf8177e7ef6698ad7d7">channel_mask</a>)</td></tr>
+<tr class="separator:ga20a9b586b797b05e7e30d335efaa0204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacde7d1a4e7c4969a5b11e37315053034"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">ActuatorStart</a> ()</td></tr>
 <tr class="memdesc:gacde7d1a4e7c4969a5b11e37315053034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module initialization.  <a href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">More...</a><br/></td></tr>
 <tr class="separator:gacde7d1a4e7c4969a5b11e37315053034"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,8 +203,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaa23ed2bf1c2252218764708ac5d8b2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e58deb47f86039abf936ab1c6f4aae9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9">MODULE_HIPRI_INITCALL</a> (<a class="el" href="group___actuator_module.html#gaa23ed2bf1c2252218764708ac5d8b2fb">ActuatorInitialize</a>, <a class="el" href="group___actuator_module.html#gacde7d1a4e7c4969a5b11e37315053034">ActuatorStart</a>)</td></tr>
 <tr class="separator:ga6e58deb47f86039abf936ab1c6f4aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5586adc1dec0583698aab0c7c1f3b5e6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga5586adc1dec0583698aab0c7c1f3b5e6">get_curve2_source</a> (ActuatorDesiredData *desired, SystemSettingsAirframeTypeOptions <a class="el" href="group___control.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>, MixerSettingsCurve2SourceOptions source)</td></tr>
-<tr class="separator:ga5586adc1dec0583698aab0c7c1f3b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6083f0aefcc7cb7c68ce9ea222e6f094"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga6083f0aefcc7cb7c68ce9ea222e6f094">get_curve2_source</a> (ActuatorDesiredData *desired, SystemSettingsAirframeTypeOptions <a class="el" href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>, MixerSettingsCurve2SourceOptions source, float throttle_val)</td></tr>
+<tr class="separator:ga6083f0aefcc7cb7c68ce9ea222e6f094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga568206810bad83d13f36a0d7d5fc232d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga568206810bad83d13f36a0d7d5fc232d">compute_one_mixer</a> (int mixnum, int16_t(*vals)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM], MixerSettingsMixer1TypeOptions <a class="el" href="pios__crossfire_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
 <tr class="separator:ga568206810bad83d13f36a0d7d5fc232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d51fb0c28b55d3e210c48503788a594"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga4d51fb0c28b55d3e210c48503788a594">compute_mixer</a> ()</td></tr>
@@ -189,6 +215,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga53e517b453c9caac9d22fa4c2a81c688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga963e45ec159f02253cb5a56e6af61d76"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga963e45ec159f02253cb5a56e6af61d76">normalize_input_data</a> (uint32_t this_systime, float(*desired_vect)[MIXERSETTINGS_MIXER1VECTOR_NUMELEM], bool *armed, bool *spin_while_armed, bool *stabilize_now)</td></tr>
 <tr class="separator:ga963e45ec159f02253cb5a56e6af61d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4296fab457f26f4f4de6e9c9aaeadf6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaf4296fab457f26f4f4de6e9c9aaeadf6">actuator_settings_update</a> ()</td></tr>
+<tr class="separator:gaf4296fab457f26f4f4de6e9c9aaeadf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2f5b3dc35dcc6424fd8f9cb031baba7"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gab2f5b3dc35dcc6424fd8f9cb031baba7">scale_channel_dshot</a> (float <a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, int idx, bool active_command)</td></tr>
+<tr class="separator:gab2f5b3dc35dcc6424fd8f9cb031baba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a3267eb69f45df86b17705f760373af"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga7a3267eb69f45df86b17705f760373af">channel_failsafe_value</a> (int idx)</td></tr>
 <tr class="separator:ga7a3267eb69f45df86b17705f760373af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -216,8 +246,6 @@ MixerSettingsMixer1TypeOptions&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:ga2850723437c013e81ea5232f44b5e7f1"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
 SystemSettingsAirframeTypeOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a></td></tr>
 <tr class="separator:ga2850723437c013e81ea5232f44b5e7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa04da665607d59404d8512e29d60ed46"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaa04da665607d59404d8512e29d60ed46">curve1</a> [MIXERSETTINGS_THROTTLECURVE1_NUMELEM]</td></tr>
-<tr class="separator:gaa04da665607d59404d8512e29d60ed46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga862c7ff05fff688ff8bcdd52249aaa51"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga862c7ff05fff688ff8bcdd52249aaa51">curve2</a> [MIXERSETTINGS_THROTTLECURVE2_NUMELEM]</td></tr>
 <tr class="separator:ga862c7ff05fff688ff8bcdd52249aaa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c686e3a2dfa84c375e555ee4b494c44"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
@@ -225,6 +253,15 @@ MixerSettingsCurve2SourceOptions&#160;</td><td class="memItemRight" valign="bott
 <tr class="separator:ga7c686e3a2dfa84c375e555ee4b494c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01b4b4c6b9d6afa6a8451f17439074d2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">actuator_interlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga01b4b4c6b9d6afa6a8451f17439074d2">actuator_interlock</a> = <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8">ACTUATOR_INTERLOCK_OK</a></td></tr>
 <tr class="separator:ga01b4b4c6b9d6afa6a8451f17439074d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45737103949f8579385cc29d2d6c51f9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdshot__command.html">dshot_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#ga45737103949f8579385cc29d2d6c51f9">__attribute__</a></td></tr>
+<tr class="separator:ga45737103949f8579385cc29d2d6c51f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5209ca6655df19899970a4a9176ab8d"><td class="memItemLeft" align="right" valign="top">static volatile struct <br class="typebreak"/>
+<a class="el" href="structdshot__command.html">dshot_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gac5209ca6655df19899970a4a9176ab8d">pending_cmd</a></td></tr>
+<tr class="separator:gac5209ca6655df19899970a4a9176ab8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7cf5fbb92e85eb753a489d4d30b2120"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structdshot__command.html">dshot_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gae7cf5fbb92e85eb753a489d4d30b2120">cur_cmd</a></td></tr>
+<tr class="separator:gae7cf5fbb92e85eb753a489d4d30b2120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff127257a3ae8f3e2151789ab01c1a34"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___actuator_module.html#gaff127257a3ae8f3e2151789ab01c1a34">desired_3d_mask</a></td></tr>
+<tr class="separator:gaff127257a3ae8f3e2151789ab01c1a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Actuator module. Drives the actuators (servos, motors etc). </p>
@@ -237,7 +274,44 @@ The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org<
 <dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
 
 <p>Definition in file <a class="el" href="actuator_8c_source.html">actuator.c</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a065b51e9d9b2ce4ad5dc1ac15d1f4433"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DSHOT_DEADBAND_3D&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac738422e642ec416b4dfc88ca034f597"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DSHOT_DEADBAND_3DREV&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9700a8bf888bf57d839ad38fa7e5b7b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DSHOT_DEADBAND_NORMAL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

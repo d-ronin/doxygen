@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -696,7 +696,7 @@ $(document).ready(function(){initNavTree('pios__rfm22b_8c_source.html','');});
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                rfm22b_dev-&gt;<a class="code" href="structpios__rfm22b__dev.html#a544fe7fb823f6bee1be18cac4577c295">packet_time</a> *= 2;  <span class="comment">// double the time to allow a send and receive in each slice</span></div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="comment">// Find the first N channels that meet the min/max criteria out of the random channel list.</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        uint32_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> = 0;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        uint32_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> = 0;</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="keyword">const</span> uint8_t CRC_INC = 0x39;</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordflow">if</span> (coordinator) {</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                crc = <a class="code" href="group___p_i_o_s___c_r_c.html#ga7a3781ede0c0bbd4c15f6513597e09f8">PIOS_CRC_updateByte</a>(rfm22b_dev-&gt;<a class="code" href="structpios__rfm22b__dev.html#ac608ccb62cbd144c8053aaacb8c14fcf">deviceID</a>, CRC_INC);</div>
@@ -1776,7 +1776,7 @@ $(document).ready(function(){initNavTree('pios__rfm22b_8c_source.html','');});
 <div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;                             <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; RFM22B_PPM_NUM_CHANNELS + 1; ++<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>) {</div>
 <div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;                                crc = <a class="code" href="group___p_i_o_s___c_r_c.html#ga7a3781ede0c0bbd4c15f6513597e09f8">PIOS_CRC_updateByte</a>(crc, p[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>]);</div>
 <div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;                        }</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;                        p[RFM22B_PPM_NUM_CHANNELS + 1] = <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a>;</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;                        p[RFM22B_PPM_NUM_CHANNELS + 1] = <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a>;</div>
 <div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;                }</div>
 <div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;        }</div>
 <div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;</div>
@@ -2396,6 +2396,7 @@ $(document).ready(function(){initNavTree('pios__rfm22b_8c_source.html','');});
 <div class="line"><a name="l02647"></a><span class="lineno"> 2647</span>&#160;</div>
 <div class="line"><a name="l02648"></a><span class="lineno"> 2648</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l02649"></a><span class="lineno"> 2649</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___storm32bgc_html_ga788345f67dc9abfdbd8812123a18d574"><div class="ttname"><a href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a></div><div class="ttdeci">union @12 crc</div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_gga84a5e3d3e45fb1ec7af8cc2ba5df20ada020c272f1ba8d9c5caea3257bbf7ed60"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#gga84a5e3d3e45fb1ec7af8cc2ba5df20ada020c272f1ba8d9c5caea3257bbf7ed60">RADIO_STATE_UNINITIALIZED</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00052">pios_rfm22b_priv.h:52</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_gga84a5e3d3e45fb1ec7af8cc2ba5df20ada63afcd178bb451bd96ae0d377de711db"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#gga84a5e3d3e45fb1ec7af8cc2ba5df20ada63afcd178bb451bd96ae0d377de711db">RADIO_STATE_RX_MODE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00054">pios_rfm22b_priv.h:54</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_gacf8d905fcfccc1596662681668e80bd1"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#gacf8d905fcfccc1596662681668e80bd1">PIOS_RFM22B_ReceivePacket</a></div><div class="ttdeci">bool PIOS_RFM22B_ReceivePacket(uintptr_t rfm22b_id, uint8_t *p)</div></div>
@@ -2630,7 +2631,6 @@ $(document).ready(function(){initNavTree('pios__rfm22b_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_ga06cc4fd9ade92cd7af7d80d1b942eb54"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a></div><div class="ttdeci">void PIOS_ANNUNC_Toggle(uint32_t annunc_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_gafbc8332b916471b9e9e085587e2eaf43"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#gafbc8332b916471b9e9e085587e2eaf43">RFM22_header_cntl2_synclen_3210</a></div><div class="ttdeci">#define RFM22_header_cntl2_synclen_3210</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__regs_8h_source.html#l00394">pios_rfm22b_regs.h:394</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00048">pios_rcvr.h:48</a></div></div>
-<div class="ttc" id="group___storm32bgc_html_ga92726b51438833e3c93db63f3b37f73b"><div class="ttname"><a href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a></div><div class="ttdeci">union @8 crc</div></div>
 <div class="ttc" id="group___pip_x_html_ga2c66e6a029b5b79debcd298ba07b3363"><div class="ttname"><a href="group___pip_x.html#ga2c66e6a029b5b79debcd298ba07b3363">LINK_LED_ON</a></div><div class="ttdeci">#define LINK_LED_ON</div><div class="ttdef"><b>Definition:</b> <a href="targets_2pipxtreme_2board-info_2pios__board_8h_source.html#l00107">pios_board.h:107</a></div></div>
 <div class="ttc" id="uavtalk__priv_8h_html_a894bdfa2d603d8343f8ef01dda6fcd23"><div class="ttname"><a href="uavtalk__priv_8h.html#a894bdfa2d603d8343f8ef01dda6fcd23">offset</a></div><div class="ttdeci">uint32_t offset</div><div class="ttdef"><b>Definition:</b> <a href="uavtalk__priv_8h_source.html#l00049">uavtalk_priv.h:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_gac68773e95b5dee8eda639f43a1dd0b72"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#gac68773e95b5dee8eda639f43a1dd0b72">RFM22B_RX_PACKET_STATS_LEN</a></div><div class="ttdeci">#define RFM22B_RX_PACKET_STATS_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b__priv_8h_source.html#l00093">pios_rfm22b_priv.h:93</a></div></div>

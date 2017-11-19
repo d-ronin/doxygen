@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba0150e4e3b19fa26b36711b9780b7800d":[5,0,0,3,7,0,4,3,39],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,7,0,4,3,23],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba175360d96f13e8b518d3c54649d29837":[5,0,0,3,7,0,4,3,51],
 "_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h.html#ac73b69ffe53544057fa2e4751fd9c22ba1981fea3596cb9bdbc29858f600ba8d5":[5,0,0,3,7,0,4,3,49],
@@ -114,10 +115,10 @@ var NAVTREEINDEX4 =
 "_s_t_m32_f4xx_2pios__tim_8c.html#gad1fd361bc5ad89facee67c76d1ff8dc0":[5,0,0,3,7,12,11],
 "_s_t_m32_f4xx_2pios__tim_8c.html#gae8a61b27afdb07c70d6b863c44284ca6":[5,0,0,3,7,12,9],
 "_s_t_m32_f4xx_2pios__tim_8c.html#gaf316d2873f98d05747789d96d889491f":[5,0,0,3,7,12,4],
+"_s_t_m32_f4xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,7,12,0,0],
 "_s_t_m32_f4xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,7,12,0,1],
 "_s_t_m32_f4xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,7,12,0,2],
 "_s_t_m32_f4xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,7,12,0,3],
-"_s_t_m32_f4xx_2pios__tim_8c.html#gga7d425167804fd43bc76fe29c11386a6ca0c5dc16440e893937250b8ab7e88f777":[5,0,0,3,7,12,0,0],
 "_s_t_m32_f4xx_2pios__tim_8c_source.html":[5,0,0,3,7,12],
 "_s_t_m32_f4xx_2pios__usart_8c.html":[5,0,0,3,7,13],
 "_s_t_m32_f4xx_2pios__usart_8c_source.html":[5,0,0,3,7,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_u_a_v_o_mavlink_bridge_8c.html#gad0b9bd8f45359133da342c354426cb80":[5,0,0,2,32,0,9],
 "_u_a_v_o_mavlink_bridge_8c.html#gafe7b7ec53bf7665ec9f01e00f2fdbbea":[5,0,0,2,32,0,6],
 "_u_a_v_o_mavlink_bridge_8c_source.html":[5,0,0,2,32,0],
-"_u_a_v_o_taranis_8c.html":[5,0,0,2,34,0],
-"_u_a_v_o_taranis_8c_source.html":[5,0,0,2,34,0]
+"_u_a_v_o_taranis_8c.html":[5,0,0,2,34,0]
 };

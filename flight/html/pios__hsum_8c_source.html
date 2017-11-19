@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1923be9</span>
+   &#160;<span id="projectnumber">4cfb3cb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('pios__hsum_8c_source.html','');});
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="comment">/* check crc before processing */</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="keywordflow">if</span> (hsum_dev-&gt;proto == <a class="code" href="group___p_i_o_s___h_s_u_m.html#gga2f4bc34f9fc3d0c402b412e6f654b363a931985fdfb0ed18d26ee14d2e0508b81">PIOS_HSUM_PROTO_SUMD</a>) {</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        <span class="comment">/* SUMD has 16 bit CCITT CRC */</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        uint16_t <a class="code" href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a> = 0;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        uint16_t <a class="code" href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a> = 0;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                        uint8_t *s = &amp;(state-&gt;received_data[0]);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        <span class="keywordtype">int</span> len = state-&gt;byte_count - 2;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; len; n++) {</div>
@@ -433,6 +433,7 @@ $(document).ready(function(){initNavTree('pios__hsum_8c_source.html','');});
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_HSUM */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="group___storm32bgc_html_ga788345f67dc9abfdbd8812123a18d574"><div class="ttname"><a href="group___storm32bgc.html#ga788345f67dc9abfdbd8812123a18d574">crc</a></div><div class="ttdeci">union @12 crc</div></div>
 <div class="ttc" id="group___p_i_o_s___h_s_u_m_html_ga5a9ba340f2387edbc7ba46faa96e6449"><div class="ttname"><a href="group___p_i_o_s___h_s_u_m.html#ga5a9ba340f2387edbc7ba46faa96e6449">pios_hsum_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_hsum_rcvr_driver</div></div>
 <div class="ttc" id="structpios__rcvr__driver_html_af8311763de593fff9c2ea958b5258305"><div class="ttname"><a href="structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305">pios_rcvr_driver::read</a></div><div class="ttdeci">int32_t(* read)(uintptr_t id, uint8_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00035">pios_rcvr.h:35</a></div></div>
 <div class="ttc" id="group___a_q32_html_ga2a5b4da2757e6727567656c3a9025ccd"><div class="ttname"><a href="group___a_q32.html#ga2a5b4da2757e6727567656c3a9025ccd">PIOS_HSUM_NUM_INPUTS</a></div><div class="ttdeci">#define PIOS_HSUM_NUM_INPUTS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00201">pios_board.h:201</a></div></div>
@@ -450,7 +451,6 @@ $(document).ready(function(){initNavTree('pios__hsum_8c_source.html','');});
 <div class="ttc" id="structpios__rcvr__driver_html"><div class="ttname"><a href="structpios__rcvr__driver.html">pios_rcvr_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00033">pios_rcvr.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_s_u_m_html_gga2f4bc34f9fc3d0c402b412e6f654b363a931985fdfb0ed18d26ee14d2e0508b81"><div class="ttname"><a href="group___p_i_o_s___h_s_u_m.html#gga2f4bc34f9fc3d0c402b412e6f654b363a931985fdfb0ed18d26ee14d2e0508b81">PIOS_HSUM_PROTO_SUMD</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hsum__priv_8h_source.html#l00033">pios_hsum_priv.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ggab3256a57f692c2f2784d914ad5a5895da2aa8c41419029589d123f942ceb9a0ed">PIOS_RCVR_TIMEOUT</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00048">pios_rcvr.h:48</a></div></div>
-<div class="ttc" id="group___storm32bgc_html_ga92726b51438833e3c93db63f3b37f73b"><div class="ttname"><a href="group___storm32bgc.html#ga92726b51438833e3c93db63f3b37f73b">crc</a></div><div class="ttdeci">union @8 crc</div></div>
 <div class="ttc" id="structpios__com__driver_html_aae8a141a2e00fb900376f6eae01e8558"><div class="ttname"><a href="structpios__com__driver.html#aae8a141a2e00fb900376f6eae01e8558">pios_com_driver::bind_rx_cb</a></div><div class="ttdeci">void(* bind_rx_cb)(uintptr_t id, pios_com_callback rx_in_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00047">pios_com.h:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_s_u_m_html_gga2f4bc34f9fc3d0c402b412e6f654b363a727783f48f28bc3a478da3746a426178"><div class="ttname"><a href="group___p_i_o_s___h_s_u_m.html#gga2f4bc34f9fc3d0c402b412e6f654b363a727783f48f28bc3a478da3746a426178">PIOS_HSUM_PROTO_SUMH</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hsum__priv_8h_source.html#l00034">pios_hsum_priv.h:34</a></div></div>
