@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">24f5bfb</span>
+   &#160;<span id="projectnumber">c4302a9</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -161,54 +161,53 @@ $(document).ready(function(){initNavTree('uavobjecttemplate_8h_source.html','');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> quint32 OBJID = $(OBJIDHEX);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString <a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString DESCRIPTION;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString CATEGORY;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> ISSINGLEINST = $(ISSINGLEINST);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> ISSETTINGS = $(ISSETTINGS);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> quint32 NUMBYTES = $(NUMBYTES);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga60a05c5b447a3a5aa8b86d0b55205f2d">QHash&lt;QString, QString&gt;</a> FIELD_DESCRIPTIONS;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Functions</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    $(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a>)();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    DataFields <a class="code" href="group___u_a_v_objects_plugin.html#ga54464b81a93ee378fa968d757d41e224">getData</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga7bfb4a458bedf2838118bc3069a93f1e">setData</a>(<span class="keyword">const</span> DataFields&amp; <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga70dc88d1d9ca2e85da5f1285ee578d36">getDefaultMetadata</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>* <a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>(quint32 instID);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>* <a class="code" href="group___u_a_v_objects_plugin.html#ga46e0ca858c7ae3bd991cbd13319515f6">dirtyClone</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> $(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a>)* GetInstance(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>* objMngr, quint32 instID = 0);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> qint32 getNumInstances(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>* objMngr) {<span class="keywordflow">return</span> objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(OBJID);}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;$(PROPERTY_GETTERS)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;$(PROPERTY_SETTERS)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;signals:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;$(PROPERTY_NOTIFICATIONS)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> emitNotifications();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">   99</a></span>&#160;    DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> setDefaultFieldValues();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // $(NAMEUC)_H</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> ISSINGLEINST = $(ISSINGLEINST);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> ISSETTINGS = $(ISSETTINGS);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> quint32 NUMBYTES = $(NUMBYTES);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="group___u_a_v_objects_plugin.html#gac3106e123d559219bd2242b554f6d237">QHash&lt;QString, QString&gt;</a> FIELD_DESCRIPTIONS;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Functions</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    $(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a>)();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    DataFields <a class="code" href="group___u_a_v_objects_plugin.html#ga54464b81a93ee378fa968d757d41e224">getData</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga7bfb4a458bedf2838118bc3069a93f1e">setData</a>(<span class="keyword">const</span> DataFields&amp; <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Metadata <a class="code" href="group___u_a_v_objects_plugin.html#ga70dc88d1d9ca2e85da5f1285ee578d36">getDefaultMetadata</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>* <a class="code" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a>(quint32 instID);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a>* <a class="code" href="group___u_a_v_objects_plugin.html#ga46e0ca858c7ae3bd991cbd13319515f6">dirtyClone</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> $(<a class="code" href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a>)* GetInstance(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>* objMngr, quint32 instID = 0);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> qint32 getNumInstances(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a>* objMngr) {<span class="keywordflow">return</span> objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(OBJID);}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;$(PROPERTY_GETTERS)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;$(PROPERTY_SETTERS)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;signals:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;$(PROPERTY_NOTIFICATIONS)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> emitNotifications();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">   98</a></span>&#160;    DataFields <a class="code" href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> setDefaultFieldValues();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // $(NAMEUC)_H</span></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga70dc88d1d9ca2e85da5f1285ee578d36"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga70dc88d1d9ca2e85da5f1285ee578d36">getDefaultMetadata</a></div><div class="ttdeci">Metadata getDefaultMetadata()</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga54464b81a93ee378fa968d757d41e224"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga54464b81a93ee378fa968d757d41e224">getData</a></div><div class="ttdeci">DataFields getData()</div></div>
 <div class="ttc" id="group___uploader_html_ga88d6351e81fa254cec37b8a9a1353401"><div class="ttname"><a href="group___uploader.html#ga88d6351e81fa254cec37b8a9a1353401">__attribute__</a></div><div class="ttdeci">__attribute__((packed))</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga46e0ca858c7ae3bd991cbd13319515f6"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga46e0ca858c7ae3bd991cbd13319515f6">dirtyClone</a></div><div class="ttdeci">UAVDataObject * dirtyClone()</div></div>
 <div class="ttc" id="uavdataobject_8h_html"><div class="ttname"><a href="uavdataobject_8h.html">uavdataobject.h</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00099">uavobjecttemplate.h:99</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00098">uavobjecttemplate.h:98</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gacbd8a57cc2bde1166c3cdc997e749579"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gacbd8a57cc2bde1166c3cdc997e749579">NAME</a></div><div class="ttdeci">() NAME()</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga7bfb4a458bedf2838118bc3069a93f1e"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga7bfb4a458bedf2838118bc3069a93f1e">setData</a></div><div class="ttdeci">void setData(const DataFields &amp;data)</div></div>
 <div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga60a05c5b447a3a5aa8b86d0b55205f2d"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga60a05c5b447a3a5aa8b86d0b55205f2d">QHash&lt; QString, QString &gt;</a></div><div class="ttdeci">const QString(NAME) const QString(NAME) const QString(NAME) const QHash&lt; QString, QString &gt;(NAME)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8cpp_source.html#l00050">uavobjecttemplate.cpp:50</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gac3106e123d559219bd2242b554f6d237"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac3106e123d559219bd2242b554f6d237">QHash&lt; QString, QString &gt;</a></div><div class="ttdeci">const QString(NAME) const QString(NAME) const QHash&lt; QString, QString &gt;(NAME)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8cpp_source.html#l00049">uavobjecttemplate.cpp:49</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab86084dd3556b645fa8020dc33776d88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone</a></div><div class="ttdeci">UAVDataObject * clone(quint32 instID)</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab285ecd0299f701264d624cad6e51ef1"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">UAVObjectManager::getNumInstances</a></div><div class="ttdeci">qint32 getNumInstances(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00279">uavobjectmanager.cpp:279</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>

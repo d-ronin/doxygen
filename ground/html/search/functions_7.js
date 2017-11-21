@@ -54,7 +54,6 @@ var searchData=
   ['getbytesavailable',['getBytesAvailable',['../group___raw_h_i_d_plugin.html#ga7a009b110ddd862add0a221ad4072e75',1,'RawHIDReadThread']]],
   ['getbytestowrite',['getBytesToWrite',['../group___raw_h_i_d_plugin.html#ga33316914e9994a7ee878bffe07175781',1,'RawHIDWriteThread']]],
   ['getcalibrationbias',['getCalibrationBias',['../group___setup_wizard.html#ga721e432d7d0704ca1db897d7516fdc89',1,'SetupWizard::getCalibrationBias()'],['../group___setup_wizard.html#gaf2f5219c56dd0761211a299510a603f7',1,'VehicleConfigurationSource::getCalibrationBias()']]],
-  ['getcategory',['getCategory',['../group___u_a_v_objects_plugin.html#gae829aa2dbab661a65f9f805caa8c67d1',1,'UAVObject']]],
   ['getcbcurvesource',['getCBCurveSource',['../group___config_plugin.html#ga8822c0ca3bfdc63eaa942da572b0b8af',1,'MixerCurve']]],
   ['getcentertilexylocation',['GetcenterTileXYLocation',['../group___t_l_map_widget.html#gad81fc0035925c351630e24e790d7df2d',1,'internals::Core']]],
   ['getcentertilexylocationlast',['GetcenterTileXYLocationLast',['../group___t_l_map_widget.html#ga616220d474720ed46411357fb48ce323',1,'internals::Core']]],

@@ -12,7 +12,7 @@ var class_u_a_v_object_tree_model =
     [ "getSettingsTree", "group___u_a_v_object_browser_plugin.html#ga65564af37704d64b262417b4e5795b76", null ],
     [ "headerData", "group___u_a_v_object_browser_plugin.html#gaa19ce01eb026443086adfe5063bbc233", null ],
     [ "index", "group___u_a_v_object_browser_plugin.html#ga9b9e52145b78d333effe586a41478701", null ],
-    [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gafd2a060786af69aa16df388207e72f06", null ],
+    [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gad5ecb680f1c4d4aa0a2b581664e11937", null ],
     [ "instanceRemove", "group___u_a_v_object_browser_plugin.html#ga011c3ae2f42ae7645b041e06a53336b5", null ],
     [ "newObject", "group___u_a_v_object_browser_plugin.html#gafd9deb057c76e2910dd13055abcbad3e", null ],
     [ "parent", "group___u_a_v_object_browser_plugin.html#ga8d23a2cd6d6b785179ebd12426f142e3", null ],

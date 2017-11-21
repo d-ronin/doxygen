@@ -90,10 +90,9 @@ var NAVTREEINDEX1 =
 "class_calibration.html#abf64232b5acd7d93c98cf1394b0547d8":[5,0,51,37],
 "class_calibration.html#acd2d18249304f970ea2b88be25ffacf4":[5,0,51,35],
 "class_calibration.html#af4e5bef968bb97384e8720dfcf075ed9":[5,0,51,3],
-"class_category_tree_item.html":[3,2,39,16],
 "class_color_map.html":[3,2,32,3],
-"class_command_private.html":[5,0,55],
-"class_commands_file.html":[5,0,56],
+"class_command_private.html":[5,0,54],
+"class_commands_file.html":[5,0,55],
 "class_config_attitude_widget.html":[3,2,11,10],
 "class_config_autotune_widget.html":[3,2,11,16],
 "class_config_camera_stabilization_widget.html":[3,2,11,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1f765a1f76bd2ba2f296f84289e9b44f":[5,0,3,0,4,13],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1fdbeffffeb8b7a7dbb2d30417674d83":[5,0,3,0,4,16],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a20718c1d11fe66633f33bfccc7dbfdf6":[5,0,3,0,4,12],
-"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a32dd76917c01771fb0ad25ff50193fbc":[5,0,3,0,4,9]
+"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a32dd76917c01771fb0ad25ff50193fbc":[5,0,3,0,4,9],
+"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a":[5,0,3,0,4,25]
 };

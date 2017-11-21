@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"group___config_plugin.html#ga6367ef4f4eec79ff7772d80fb838338a":[3,2,11,11,5],
 "group___config_plugin.html#ga6367ef4f4eec79ff7772d80fb838338a":[3,2,11,286],
 "group___config_plugin.html#ga63fe84e8399ffe3db8ffa9c83b109c66":[3,2,11,22,0],
 "group___config_plugin.html#ga63fe84e8399ffe3db8ffa9c83b109c66":[3,2,11,50],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "group___config_plugin.html#gadd098dfd7ce4d28cc46780eb81dabd5b":[3,2,11,11,9],
 "group___config_plugin.html#gadd098dfd7ce4d28cc46780eb81dabd5b":[3,2,11,301],
 "group___config_plugin.html#gadde0ad4527ea2096cecb195d2a635014":[3,2,11,40,0],
-"group___config_plugin.html#gadde0ad4527ea2096cecb195d2a635014":[3,2,11,248]
+"group___config_plugin.html#gadde0ad4527ea2096cecb195d2a635014":[3,2,11,248],
+"group___config_plugin.html#gadffe0a2a678121cfe3951099cd811f1a":[3,2,11,11,2]
 };

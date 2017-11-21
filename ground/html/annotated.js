@@ -52,7 +52,6 @@ var annotated =
     [ "BrowserPlugin", "class_browser_plugin.html", null ],
     [ "buttonSettingsStruct", "structbutton_settings_struct.html", "structbutton_settings_struct" ],
     [ "Calibration", "class_calibration.html", "class_calibration" ],
-    [ "CategoryTreeItem", "class_category_tree_item.html", "class_category_tree_item" ],
     [ "ColorMap", "class_color_map.html", "class_color_map" ],
     [ "CommandLocation", "struct_command_location.html", "struct_command_location" ],
     [ "CommandPrivate", "class_command_private.html", null ],

@@ -144,10 +144,6 @@ var group___u_a_v_object_browser_plugin =
       [ "ArrayFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gaa011115b44f5875931af40aa93a80e97", null ],
       [ "isDefaultValue", "group___u_a_v_object_browser_plugin.html#ga06e7d2b010b487d121c5eccb93bfc57e", null ]
     ] ],
-    [ "CategoryTreeItem", "class_category_tree_item.html", [
-      [ "CategoryTreeItem", "group___u_a_v_object_browser_plugin.html#ga5a4f089a4b8fcd73732c6c80f5dce098", null ],
-      [ "CategoryTreeItem", "group___u_a_v_object_browser_plugin.html#ga49d31d4518d9d141b13b83447872ccad", null ]
-    ] ],
     [ "UAVObjectBrowser", "class_u_a_v_object_browser.html", [
       [ "UAVObjectBrowser", "group___u_a_v_object_browser_plugin.html#ga9723050126ebdcc8952f6190cf8f7dbf", null ],
       [ "~UAVObjectBrowser", "group___u_a_v_object_browser_plugin.html#gacacc07d4e73a9da5c6faee7763dde1b4", null ],
@@ -156,7 +152,6 @@ var group___u_a_v_object_browser_plugin =
     ] ],
     [ "UAVObjectBrowserConfiguration", "class_u_a_v_object_browser_configuration.html", [
       [ "UAVObjectBrowserConfiguration", "group___u_a_v_object_browser_plugin.html#ga70fd7664c3f0a9a97f0003bc04e5dc42", null ],
-      [ "categorizedView", "group___u_a_v_object_browser_plugin.html#gadc4b65d3776b63289a8e2981af3d218b", null ],
       [ "clone", "group___u_a_v_object_browser_plugin.html#ga0bf31a4c146a973fe414471258c40b9a", null ],
       [ "hideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gadc74a12c9795dd272ad7dd988157053d", null ],
       [ "manuallyChangedColor", "group___u_a_v_object_browser_plugin.html#ga3c96e42ba99892a40daa0e4140285ccd", null ],
@@ -166,7 +161,6 @@ var group___u_a_v_object_browser_plugin =
       [ "recentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#ga3aabfce2aedab253f923829311c4e07d", null ],
       [ "saveConfig", "group___u_a_v_object_browser_plugin.html#gadb33bf1275b4c9f13153755f9f333042", null ],
       [ "scientificView", "group___u_a_v_object_browser_plugin.html#ga70ab8d21181971d5e78925921d9ce52c", null ],
-      [ "setCategorizedView", "group___u_a_v_object_browser_plugin.html#ga733d1a12782c0f87157f99566bde9e70", null ],
       [ "setHideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gae223fe253a4549c2052627d5cdaad544", null ],
       [ "setManuallyChangedColor", "group___u_a_v_object_browser_plugin.html#gab8f25b7b00cb2f219ac53627e4ae7fba", null ],
       [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#gacca8072929a48ec3361c09b13ba5b807", null ],
@@ -181,7 +175,6 @@ var group___u_a_v_object_browser_plugin =
       [ "m_onlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga71cd3f90f89aecf1db0e52927661c9f4", null ],
       [ "m_recentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#ga37ba368816fa79530f01aa4447c2fc4d", null ],
       [ "m_showMetaData", "group___u_a_v_object_browser_plugin.html#ga6ae11b3871f2da133017aeffa97aaa0b", null ],
-      [ "m_useCategorizedView", "group___u_a_v_object_browser_plugin.html#ga5e0ce819c5383cf9b01ec73c887f67f8", null ],
       [ "m_useScientificView", "group___u_a_v_object_browser_plugin.html#ga45e17799029628f880291ec2324473a5", null ]
     ] ],
     [ "UAVObjectBrowserFactory", "class_u_a_v_object_browser_factory.html", [
@@ -220,10 +213,10 @@ var group___u_a_v_object_browser_plugin =
       [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#ga37f6886174db3558a66cb8504f16ba2e", null ],
       [ "setOnlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga964995701170a95cc21eb78fb25acb9d", null ],
       [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gae78918a99387bda266b432b5ded9168e", null ],
-      [ "setViewOptions", "group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52", null ],
+      [ "setViewOptions", "group___u_a_v_object_browser_plugin.html#ga43d07f593c64f43a5d3afa38bf18e572", null ],
       [ "showMetaData", "group___u_a_v_object_browser_plugin.html#ga96e35f04d563b34d393bcd810423910d", null ],
       [ "showNotPresent", "group___u_a_v_object_browser_plugin.html#ga7f12daee68bbf2dd93b7f8c08e6d3b21", null ],
-      [ "viewOptionsChanged", "group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c", null ]
+      [ "viewOptionsChanged", "group___u_a_v_object_browser_plugin.html#gaee00ba234dd093100767bf6b1ef9cb4d", null ]
     ] ],
     [ "UAVObjectTreeModel", "class_u_a_v_object_tree_model.html", [
       [ "UAVObjectTreeModel", "group___u_a_v_object_browser_plugin.html#ga34df3d243262f9f7ed6051bf1c9e59aa", null ],
@@ -238,7 +231,7 @@ var group___u_a_v_object_browser_plugin =
       [ "getSettingsTree", "group___u_a_v_object_browser_plugin.html#ga65564af37704d64b262417b4e5795b76", null ],
       [ "headerData", "group___u_a_v_object_browser_plugin.html#gaa19ce01eb026443086adfe5063bbc233", null ],
       [ "index", "group___u_a_v_object_browser_plugin.html#ga9b9e52145b78d333effe586a41478701", null ],
-      [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gafd2a060786af69aa16df388207e72f06", null ],
+      [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gad5ecb680f1c4d4aa0a2b581664e11937", null ],
       [ "instanceRemove", "group___u_a_v_object_browser_plugin.html#ga011c3ae2f42ae7645b041e06a53336b5", null ],
       [ "newObject", "group___u_a_v_object_browser_plugin.html#gafd9deb057c76e2910dd13055abcbad3e", null ],
       [ "parent", "group___u_a_v_object_browser_plugin.html#ga8d23a2cd6d6b785179ebd12426f142e3", null ],
@@ -266,9 +259,6 @@ var group___u_a_v_object_browser_plugin =
     [ "ArrayFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gac1bacf7300e5dcaad4bb7da856408a99", null ],
     [ "ArrayFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gaa011115b44f5875931af40aa93a80e97", null ],
     [ "BrowserItemDelegate", "group___u_a_v_object_browser_plugin.html#ga899f28003767ba6b8f1bef3ae72eb8c9", null ],
-    [ "categorizedView", "group___u_a_v_object_browser_plugin.html#gadc4b65d3776b63289a8e2981af3d218b", null ],
-    [ "CategoryTreeItem", "group___u_a_v_object_browser_plugin.html#ga5a4f089a4b8fcd73732c6c80f5dce098", null ],
-    [ "CategoryTreeItem", "group___u_a_v_object_browser_plugin.html#ga49d31d4518d9d141b13b83447872ccad", null ],
     [ "changed", "group___u_a_v_object_browser_plugin.html#ga092f37d4eb04a9889985eadb5066ff6e", null ],
     [ "childCount", "group___u_a_v_object_browser_plugin.html#ga55ffe6dd27750e479034b93e753f87af", null ],
     [ "childrenAreDefaultValue", "group___u_a_v_object_browser_plugin.html#ga2fb80e1fef736aac6eaf2c66ec5f3cd0", null ],
@@ -391,7 +381,7 @@ var group___u_a_v_object_browser_plugin =
     [ "setRecentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#gae78918a99387bda266b432b5ded9168e", null ],
     [ "setUpdatedOnly", "group___u_a_v_object_browser_plugin.html#ga63e16f896af89aa165dcd9c31d42ce83", null ],
     [ "setUpdatedOnlyParent", "group___u_a_v_object_browser_plugin.html#gae74eb4785ae705b5a9ffc056a71fb88a", null ],
-    [ "setViewOptions", "group___u_a_v_object_browser_plugin.html#ga2fb82ee596cfb04c957a3c29c470cd52", null ],
+    [ "setViewOptions", "group___u_a_v_object_browser_plugin.html#ga43d07f593c64f43a5d3afa38bf18e572", null ],
     [ "showMetaData", "group___u_a_v_object_browser_plugin.html#ga02fed63cf79eb853363190d6db4139c7", null ],
     [ "sizeHint", "group___u_a_v_object_browser_plugin.html#gaed46b06e0a245805247c1be3c62f97ee", null ],
     [ "TopTreeItem", "group___u_a_v_object_browser_plugin.html#gaf9396b0e4b1f80d5d2eb271a4421aad9", null ],
@@ -429,12 +419,11 @@ var group___u_a_v_object_browser_plugin =
     [ "m_index", "group___u_a_v_object_browser_plugin.html#gab2e489418a60e96de39035e776c4e1e6", null ],
     [ "presentOnHardwareChanged", "group___u_a_v_object_browser_plugin.html#gad76114e4c1c4c9aa7acd1b58ad7479b0", null ],
     [ "updateHighlight", "group___u_a_v_object_browser_plugin.html#ga5ae4647be88003018c5023b9a603aea7", null ],
-    [ "viewOptionsChanged", "group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c", null ],
+    [ "viewOptionsChanged", "group___u_a_v_object_browser_plugin.html#gaee00ba234dd093100767bf6b1ef9cb4d", null ],
     [ "doRefreshHiddenObjects", "group___u_a_v_object_browser_plugin.html#ga699f601d513ba2d43414d7db3d9f9ac6", null ],
-    [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gafd2a060786af69aa16df388207e72f06", null ],
+    [ "initializeModel", "group___u_a_v_object_browser_plugin.html#gad5ecb680f1c4d4aa0a2b581664e11937", null ],
     [ "instanceRemove", "group___u_a_v_object_browser_plugin.html#ga011c3ae2f42ae7645b041e06a53336b5", null ],
     [ "newObject", "group___u_a_v_object_browser_plugin.html#gafd9deb057c76e2910dd13055abcbad3e", null ],
-    [ "setCategorizedView", "group___u_a_v_object_browser_plugin.html#ga733d1a12782c0f87157f99566bde9e70", null ],
     [ "setHideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gae223fe253a4549c2052627d5cdaad544", null ],
     [ "setManuallyChangedColor", "group___u_a_v_object_browser_plugin.html#gab8f25b7b00cb2f219ac53627e4ae7fba", null ],
     [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#gacca8072929a48ec3361c09b13ba5b807", null ],
@@ -452,6 +441,5 @@ var group___u_a_v_object_browser_plugin =
     [ "m_onlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga71cd3f90f89aecf1db0e52927661c9f4", null ],
     [ "m_recentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#ga37ba368816fa79530f01aa4447c2fc4d", null ],
     [ "m_showMetaData", "group___u_a_v_object_browser_plugin.html#ga6ae11b3871f2da133017aeffa97aaa0b", null ],
-    [ "m_useCategorizedView", "group___u_a_v_object_browser_plugin.html#ga5e0ce819c5383cf9b01ec73c887f67f8", null ],
     [ "m_useScientificView", "group___u_a_v_object_browser_plugin.html#ga45e17799029628f880291ec2324473a5", null ]
 ];

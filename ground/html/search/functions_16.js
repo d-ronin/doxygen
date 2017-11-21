@@ -27,7 +27,7 @@ var searchData=
   ['versioncompare',['versionCompare',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a9b2b47f08743b4cb4dc977755390959a',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
   ['versiondialog',['VersionDialog',['../group___core_plugin.html#ga3a3324c5e62d8d766d8ef28592cb11fa',1,'Core::Internal::VersionDialog']]],
   ['view',['view',['../group___core_plugin.html#ga885a960ed8f9cdcfa3e01e739743f93d',1,'Core::Internal::SplitterOrView']]],
-  ['viewoptionschanged',['viewOptionsChanged',['../group___u_a_v_object_browser_plugin.html#gae6acba39e9d79df031b677a379ceef9c',1,'UAVObjectBrowserWidget']]],
+  ['viewoptionschanged',['viewOptionsChanged',['../group___u_a_v_object_browser_plugin.html#gaee00ba234dd093100767bf6b1ef9cb4d',1,'UAVObjectBrowserWidget']]],
   ['visibilitychanged',['visibilityChanged',['../group___core_plugin.html#ga3128a309873592d64cddf36d88f76856',1,'Core::IOutputPane']]],
   ['void',['void',['../group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c',1,'uavobjecttemplate.cpp']]]
 ];

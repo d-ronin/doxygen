@@ -1,7 +1,6 @@
 var class_u_a_v_object_browser_configuration =
 [
     [ "UAVObjectBrowserConfiguration", "group___u_a_v_object_browser_plugin.html#ga70fd7664c3f0a9a97f0003bc04e5dc42", null ],
-    [ "categorizedView", "group___u_a_v_object_browser_plugin.html#gadc4b65d3776b63289a8e2981af3d218b", null ],
     [ "clone", "group___u_a_v_object_browser_plugin.html#ga0bf31a4c146a973fe414471258c40b9a", null ],
     [ "hideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gadc74a12c9795dd272ad7dd988157053d", null ],
     [ "manuallyChangedColor", "group___u_a_v_object_browser_plugin.html#ga3c96e42ba99892a40daa0e4140285ccd", null ],
@@ -11,7 +10,6 @@ var class_u_a_v_object_browser_configuration =
     [ "recentlyUpdatedTimeout", "group___u_a_v_object_browser_plugin.html#ga3aabfce2aedab253f923829311c4e07d", null ],
     [ "saveConfig", "group___u_a_v_object_browser_plugin.html#gadb33bf1275b4c9f13153755f9f333042", null ],
     [ "scientificView", "group___u_a_v_object_browser_plugin.html#ga70ab8d21181971d5e78925921d9ce52c", null ],
-    [ "setCategorizedView", "group___u_a_v_object_browser_plugin.html#ga733d1a12782c0f87157f99566bde9e70", null ],
     [ "setHideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gae223fe253a4549c2052627d5cdaad544", null ],
     [ "setManuallyChangedColor", "group___u_a_v_object_browser_plugin.html#gab8f25b7b00cb2f219ac53627e4ae7fba", null ],
     [ "setNotPresentOnHwColor", "group___u_a_v_object_browser_plugin.html#gacca8072929a48ec3361c09b13ba5b807", null ],
@@ -26,6 +24,5 @@ var class_u_a_v_object_browser_configuration =
     [ "m_onlyHighlightChangedValues", "group___u_a_v_object_browser_plugin.html#ga71cd3f90f89aecf1db0e52927661c9f4", null ],
     [ "m_recentlyUpdatedColor", "group___u_a_v_object_browser_plugin.html#ga37ba368816fa79530f01aa4447c2fc4d", null ],
     [ "m_showMetaData", "group___u_a_v_object_browser_plugin.html#ga6ae11b3871f2da133017aeffa97aaa0b", null ],
-    [ "m_useCategorizedView", "group___u_a_v_object_browser_plugin.html#ga5e0ce819c5383cf9b01ec73c887f67f8", null ],
     [ "m_useScientificView", "group___u_a_v_object_browser_plugin.html#ga45e17799029628f880291ec2324473a5", null ]
 ];

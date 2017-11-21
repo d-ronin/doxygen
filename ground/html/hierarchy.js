@@ -571,7 +571,6 @@ var hierarchy =
       [ "TelemetryMonitor", "class_telemetry_monitor.html", null ],
       [ "TreeItem", "class_tree_item.html", [
         [ "ArrayFieldTreeItem", "class_array_field_tree_item.html", null ],
-        [ "CategoryTreeItem", "class_category_tree_item.html", null ],
         [ "FieldTreeItem", "class_field_tree_item.html", [
           [ "EnumFieldTreeItem", "class_enum_field_tree_item.html", null ],
           [ "FloatFieldTreeItem", "class_float_field_tree_item.html", null ],

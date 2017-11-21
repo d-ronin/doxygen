@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,11],
 "group___config.html":[3,2,12],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,0,2],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,10],
@@ -11,14 +10,14 @@ var NAVTREEINDEX10 =
 "group___config.html#ga51e91e7a3d6ac7c424c2dccfccc02e93":[3,2,12,1],
 "group___config.html#ga6f2f6df1a1fdd54b91d5103c752399ef":[3,2,12,4],
 "group___config.html#ga6f2f6df1a1fdd54b91d5103c752399ef":[3,2,12,0,5],
-"group___config.html#ga75507724e69d5e7c5927c6ade2d988db":[3,2,12,11],
 "group___config.html#ga75507724e69d5e7c5927c6ade2d988db":[3,2,12,0,6],
+"group___config.html#ga75507724e69d5e7c5927c6ade2d988db":[3,2,12,11],
 "group___config.html#ga946611524e61173f8906a3ade3e95f4f":[3,2,12,0,1],
 "group___config.html#ga946611524e61173f8906a3ade3e95f4f":[3,2,12,9],
 "group___config.html#gab0705ae2ed8315a664fdab88f9b03d1b":[3,2,12,3],
 "group___config.html#gab0705ae2ed8315a664fdab88f9b03d1b":[3,2,12,0,4],
-"group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,5],
 "group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,0,7],
+"group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,5],
 "group___config.html#gac43a151be5c23295b05bfd26c6cffb7e":[3,2,12,0,8],
 "group___config.html#gac43a151be5c23295b05bfd26c6cffb7e":[3,2,12,6],
 "group___config.html#gaf2fd3f93705d124c2a6c660edf425568":[3,2,12,0,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "group___config_plugin.html#ga62d98ed212936a33d9e9240f27aa7497":[3,2,11,22,10],
 "group___config_plugin.html#ga62d98ed212936a33d9e9240f27aa7497":[3,2,11,205],
 "group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,33,7],
-"group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,231]
+"group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,231],
+"group___config_plugin.html#ga6367ef4f4eec79ff7772d80fb838338a":[3,2,11,11,5]
 };

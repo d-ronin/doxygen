@@ -2,7 +2,6 @@ var class_telemetry_monitor =
 [
     [ "TelemetryMonitor", "group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084", null ],
     [ "~TelemetryMonitor", "group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e", null ],
-    [ "checkSessionObjNacked", "group___u_a_v_talk_plugin.html#gab7f8d5561a8d7fdb10b6a214b5105b8d", null ],
     [ "connected", "group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7", null ],
     [ "disconnected", "group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640", null ],
     [ "flightStatsUpdated", "group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766", null ],

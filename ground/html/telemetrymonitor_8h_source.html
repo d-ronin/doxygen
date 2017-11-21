@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">24f5bfb</span>
+   &#160;<span id="projectnumber">c4302a9</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -171,70 +171,66 @@ $(document).ready(function(){initNavTree('telemetrymonitor_8h_source.html','');}
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">transactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">processStatsUpdates</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">flightStatsUpdated</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#gab7f8d5561a8d7fdb10b6a214b5105b8d">checkSessionObjNacked</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> sessionObjUnpackedCB(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> objectRetrieveTimeoutCB();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> sessionRetrieveTimeoutCB();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> sessionInitialRetrieveTimeoutCB();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> saveSession();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> newInstanceSlot(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;UAVDataObject *&gt;</a> delayedUpdate;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">enum</span> connectionStatusEnum {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        CON_DISCONNECTED,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        CON_INITIALIZING,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        CON_SESSION_INITIALIZING,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        CON_RETRIEVING_OBJECTS,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        CON_CONNECTED_UNMANAGED,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        CON_CONNECTED_MANAGED</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> STATS_UPDATE_PERIOD_MS = 1600;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> STATS_CONNECT_PERIOD_MS = 350;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> CONNECTION_TIMEOUT_MS = 8000;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_REQUESTS_IN_FLIGHT = 3;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    connectionStatusEnum connectionStatus;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="class_telemetry.html">Telemetry</a> *tel;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    QQueue&lt;UAVObject *&gt; queue;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    GCSTelemetryStats *gcsStatsObj;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    FlightTelemetryStats *flightStatsObj;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QTimer *statsTimer;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    QTime *connectionTimer;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    SessionManaging *sessionObj;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> startRetrievingObjects();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> retrieveNextObject();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    quint16 sessionID;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    quint8 numberOfObjects;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QTimer *objectRetrieveTimeout;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    QTimer *sessionRetrieveTimeout;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    QTimer *sessionInitialRetrieveTimeout;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> retries;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> requestsInFlight;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> changeObjectInstances(quint32 objID, quint32 instID, <span class="keywordtype">bool</span> delayed);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> startSessionRetrieving(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *session);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> sessionFallback();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">bool</span> isManaged;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QHash&lt;quint16, QList&lt;objStruc&gt;&gt; sessions;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> sessionObjRetries;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a> *settings;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // TELEMETRYMONITOR_H</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> sessionObjUnpackedCB(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> objectRetrieveTimeoutCB();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> sessionInitialRetrieveTimeoutCB();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> saveSession();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> newInstanceSlot(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_q_list.html">QList&lt;UAVDataObject *&gt;</a> delayedUpdate;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">enum</span> connectionStatusEnum {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        CON_DISCONNECTED,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        CON_INITIALIZING,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        CON_SESSION_INITIALIZING,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        CON_RETRIEVING_OBJECTS,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        CON_CONNECTED_UNMANAGED,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        CON_CONNECTED_MANAGED</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> STATS_UPDATE_PERIOD_MS = 1600;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> STATS_CONNECT_PERIOD_MS = 350;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> CONNECTION_TIMEOUT_MS = 8000;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_REQUESTS_IN_FLIGHT = 3;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    connectionStatusEnum connectionStatus;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_telemetry.html">Telemetry</a> *tel;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QQueue&lt;UAVObject *&gt; queue;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    GCSTelemetryStats *gcsStatsObj;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    FlightTelemetryStats *flightStatsObj;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QTimer *statsTimer;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QTime *connectionTimer;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    SessionManaging *sessionObj;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> startRetrievingObjects();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> retrieveNextObject();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    quint16 sessionID;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    quint8 numberOfObjects;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    QTimer *objectRetrieveTimeout;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    QTimer *sessionInitialRetrieveTimeout;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> retries;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> requestsInFlight;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> changeObjectInstances(quint32 objID, quint32 instID, <span class="keywordtype">bool</span> delayed);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> startSessionRetrieving(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *session);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> sessionFallback();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> isManaged;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    QHash&lt;quint16, QList&lt;objStruc&gt;&gt; sessions;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> sessionObjRetries;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a> *settings;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // TELEMETRYMONITOR_H</span></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gac4e867b78642d4f1fe27c5fc97468ce7"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a></div><div class="ttdeci">void connected()</div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="telemetry_8h_html"><div class="ttname"><a href="telemetry_8h.html">telemetry.h</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga9e37ac4fbdf8e31abcef0e0acbe38901"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga9e37ac4fbdf8e31abcef0e0acbe38901">TelemetryMonitor::objStruc::instID</a></div><div class="ttdeci">quint32 instID</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8h_source.html#l00059">telemetrymonitor.h:59</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga6e462b0a7fbd8f611a0ec628b97f0084"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084">TelemetryMonitor::TelemetryMonitor</a></div><div class="ttdeci">TelemetryMonitor(UAVObjectManager *objMngr, Telemetry *tel, QHash&lt; quint16, QList&lt; objStruc &gt;&gt; sessions)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00062">telemetrymonitor.cpp:62</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga31c0b7ae632d68a5584d1f0696e35766"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a></div><div class="ttdeci">void flightStatsUpdated(UAVObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00341">telemetrymonitor.cpp:341</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga31c0b7ae632d68a5584d1f0696e35766"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a></div><div class="ttdeci">void flightStatsUpdated(UAVObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00338">telemetrymonitor.cpp:338</a></div></div>
 <div class="ttc" id="struct_telemetry_monitor_1_1obj_struc_html"><div class="ttname"><a href="struct_telemetry_monitor_1_1obj_struc.html">TelemetryMonitor::objStruc</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8h_source.html#l00056">telemetrymonitor.h:56</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_gab7f8d5561a8d7fdb10b6a214b5105b8d"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gab7f8d5561a8d7fdb10b6a214b5105b8d">TelemetryMonitor::checkSessionObjNacked</a></div><div class="ttdeci">void checkSessionObjNacked(UAVObject *, bool, bool)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00354">telemetrymonitor.cpp:354</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2b5452341c351cd2d67c46469b855607"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">TelemetryMonitor::transactionCompleted</a></div><div class="ttdeci">void transactionCompleted(UAVObject *obj, bool success)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00299">telemetrymonitor.cpp:299</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_gabe2f26f1992e78356a82b135aeac951e"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a></div><div class="ttdeci">~TelemetryMonitor()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00114">telemetrymonitor.cpp:114</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2e16b3d1a298f851879d22749d1e38e9"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a></div><div class="ttdeci">void processStatsUpdates()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00610">telemetrymonitor.cpp:610</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2b5452341c351cd2d67c46469b855607"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">TelemetryMonitor::transactionCompleted</a></div><div class="ttdeci">void transactionCompleted(UAVObject *obj, bool success)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00297">telemetrymonitor.cpp:297</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_gabe2f26f1992e78356a82b135aeac951e"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a></div><div class="ttdeci">~TelemetryMonitor()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00110">telemetrymonitor.cpp:110</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2e16b3d1a298f851879d22749d1e38e9"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a></div><div class="ttdeci">void processStatsUpdates()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00557">telemetrymonitor.cpp:557</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gafeb9237a3ecd750861ef011af3b12413"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gafeb9237a3ecd750861ef011af3b12413">TelemetryMonitor::objStruc::objID</a></div><div class="ttdeci">quint32 objID</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8h_source.html#l00058">telemetrymonitor.h:58</a></div></div>
 <div class="ttc" id="class_telemetry_html"><div class="ttname"><a href="class_telemetry.html">Telemetry</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00066">telemetry.h:66</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gac7898d4b74305c568adefb289da72ebc"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">TelemetryMonitor::telemetryUpdated</a></div><div class="ttdeci">void telemetryUpdated(double txRate, double rxRate)</div></div>
