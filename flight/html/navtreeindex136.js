@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"timeutils_8c.html#gae6bc10904b2b09a717f1fb81cce017de":[5,0,0,1,14,3],
-"timeutils_8c_source.html":[5,0,0,1,14],
 "timeutils_8h.html":[5,0,0,1,1,7],
 "timeutils_8h.html#ga69c006c2a42ec890584877c7c0e2f72f":[5,0,0,1,1,7,0],
 "timeutils_8h_source.html":[5,0,0,1,1,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "uavobjectmanager_8c.html#gaf7923732ed9e6eb1e367180cb339ca3d":[5,0,0,6,1,46],
 "uavobjectmanager_8c.html#gaff1de6fe5a8d1db05c736c110f96a932":[5,0,0,6,1,22],
 "uavobjectmanager_8c_source.html":[5,0,0,6,1],
-"uavobjectmanager_8h.html":[5,0,0,6,0,1]
+"uavobjectmanager_8h.html":[5,0,0,6,0,1],
+"uavobjectmanager_8h.html#a04b37fd239d7727a21668d35d11ad7df":[5,0,0,6,0,1,17],
+"uavobjectmanager_8h.html#a04b37fd239d7727a21668d35d11ad7dfa88d5dcaffa414c5fe3e778789366bad3":[5,0,0,6,0,1,17,1]
 };

@@ -43,7 +43,6 @@ var group___p_i_o_s___s_e_n_s_o_r_s =
       [ "temperature", "group___p_i_o_s___s_e_n_s_o_r_s.html#ga9cb0c320301d3a8028859d3bf920669f", null ]
     ] ],
     [ "PIOS_SENSOR_Callback_t", "group___p_i_o_s___s_e_n_s_o_r_s.html#gac5964cb3d83085fe578b9de1d0ba879e", null ],
-    [ "PIOS_SENSOR_Callback_t", "group___p_i_o_s___s_e_n_s_o_r_s.html#gac5964cb3d83085fe578b9de1d0ba879e", null ],
     [ "pios_sensor_type", "group___p_i_o_s___s_e_n_s_o_r_s.html#gadad1b67d985a6c9c150a70d23aac96a0", [
       [ "PIOS_SENSOR_ACCEL", "group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a0b386dcd14ce22a4ec0f296727338876", null ],
       [ "PIOS_SENSOR_GYRO", "group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa15cffcc905e0229f765c0653a43d6fe", null ],

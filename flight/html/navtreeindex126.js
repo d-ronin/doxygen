@@ -1,7 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"structmsp__set__misc.html#ad70b116e73d1a117bc27516992d9ff1c":[2,1,2,23,1],
-"structmsp__set__motor.html":[2,1,2,6],
 "structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18":[2,1,2,6,0],
 "structmsp__set__pid.html":[2,1,2,19],
 "structmsp__set__pid.html#a17aed73cd9e549410b4acd21a2f003a1":[2,1,2,19,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX126 =
 "structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676":[2,0,25,0,1],
 "structpios__mpu__cfg.html#ab09d091960139e4cebd5e29e459184e6":[2,0,25,0,2],
 "structpios__mpu__cfg.html#abf2358ba0ef34f017eff9021f198075f":[2,0,25,0,0],
-"structpios__ms5611__cfg.html":[2,0,28,5]
+"structpios__ms5611__cfg.html":[2,0,28,5],
+"structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c":[2,0,28,5,0],
+"structpios__ms5611__cfg.html#a9e5737bd6a7bb20da4ac013fb0726845":[2,0,28,5,1]
 };

@@ -1,6 +1,5 @@
 var pios__sensors_8c =
 [
-    [ "PIOS_SENSOR_Callback_t", "pios__sensors_8c.html#gac5964cb3d83085fe578b9de1d0ba879e", null ],
     [ "PIOS_SENSORS_GetData", "pios__sensors_8c.html#ga77bbbd3e48c9ff22d516ea51ec129dae", null ],
     [ "PIOS_SENSORS_GetMaxGyro", "pios__sensors_8c.html#ga898e25c2d8b6ef384db119ff1110cbf6", null ],
     [ "PIOS_SENSORS_GetMissing", "pios__sensors_8c.html#ga27618579efcb571cfd29b287e6f687f1", null ],
