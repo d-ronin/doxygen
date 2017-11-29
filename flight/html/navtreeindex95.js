@@ -1,5 +1,7 @@
 var NAVTREEINDEX95 =
 {
+"inc_2pios__debug_8h_source.html":[5,0,0,3,1,23],
+"inc_2pios__dio_8h.html":[5,0,0,3,1,25],
 "inc_2pios__dio_8h.html#a5e0c5fed64305e86eab7afaa6d9d25bc":[5,0,0,3,1,25,0],
 "inc_2pios__dio_8h_source.html":[5,0,0,3,1,25],
 "inc_2pios__initcall_8h.html":[5,0,0,3,1,50],
@@ -247,7 +249,5 @@ var NAVTREEINDEX95 =
 "logging_8c.html#a54a5d71f269fa06fe95f90cce7c27dc6":[5,0,0,2,15,0,3],
 "logging_8c.html#a704af9306e63d92f73459616f02a91df":[5,0,0,2,15,0,0],
 "logging_8c.html#ga06e5cbdb6f54a7ac2e618155de71410b":[5,0,0,2,15,0,21],
-"logging_8c.html#ga0a9dfd6edce86ce599fcaeca9aab266e":[5,0,0,2,15,0,9],
-"logging_8c.html#ga248394dd3e1576e630f8e825ab5d1de5":[5,0,0,2,15,0,1],
-"logging_8c.html#ga25447c2e569c52ca72f4b2a456e7b574":[5,0,0,2,15,0,10]
+"logging_8c.html#ga0a9dfd6edce86ce599fcaeca9aab266e":[5,0,0,2,15,0,9]
 };

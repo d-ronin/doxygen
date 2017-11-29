@@ -263,6 +263,7 @@ var searchData=
   ['ds_5fgpiob',['DS_GPIOB',['../group___p_i_o_s___s_e_r_v_o.html#ga0caded115482411de7d9c37a9da845ee',1,'pios_servo.c']]],
   ['ds_5fgpioc',['DS_GPIOC',['../group___p_i_o_s___s_e_r_v_o.html#ga5c6a0069049793bc604f72f85ea8f506',1,'pios_servo.c']]],
   ['dshot',['dshot',['../group___p_i_o_s___s_e_r_v_o.html#ga58fdb679979f7e039d73418c190c7919',1,'output_channel::dshot()'],['../group___p_i_o_s___s_e_r_v_o.html#ga67e11e452c4c5bf297851048ef03a8d5',1,'output_channel::@27::dshot()'],['../group___p_i_o_s___s_e_r_v_o.html#ga5fa680c0e95061e0b446c664c48fe18d',1,'@28::dshot()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf5c6f4a8f5545b7b2a2bff79aac38b96',1,'dshot():&#160;pios_servo.c']]],
+  ['dshot_5fcmd_5fbeacon3',['DSHOT_CMD_BEACON3',['../group___p_i_o_s___modules.html#ga92eb298fba7d77e623ebe4b3bbdaf7ed',1,'pios_modules.h']]],
   ['dshot_5fcommand',['dshot_command',['../structdshot__command.html',1,'']]],
   ['dshot_5fcommand_5f3dmode',['DSHOT_COMMAND_3DMODE',['../group___actuator_module.html#ga16ed3ad9fbe692ba15b12f207d3d08df',1,'actuator.c']]],
   ['dshot_5fcommand_5fdontspin',['DSHOT_COMMAND_DONTSPIN',['../group___actuator_module.html#ga77035023a47441d44c9d72b8b28770f4',1,'actuator.c']]],

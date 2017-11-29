@@ -9,6 +9,7 @@ var searchData=
   ['pios_5fdsm_5fnum_5finputs',['PIOS_DSM_NUM_INPUTS',['../dsm_8h.html#abf39f1bc59b5af7e8f138bb394770300',1,'dsm.h']]],
   ['pios_5ffileout_5ftx_5fbuffer_5fsize',['PIOS_FILEOUT_TX_BUFFER_SIZE',['../pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895',1,'pios_fileout_priv.h']]],
   ['pios_5finclude_5f4way',['PIOS_INCLUDE_4WAY',['../pios__flight__config_8h.html#ad830410b5e6793203bad6382c5242746',1,'pios_flight_config.h']]],
+  ['pios_5finclude_5factuator_5fannunciator',['PIOS_INCLUDE_ACTUATOR_ANNUNCIATOR',['../pios__flight__config_8h.html#a934399cbc20d23f53c1961ea6959e5b7',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fadc',['PIOS_INCLUDE_ADC',['../pios__flight__config_8h.html#a28ae61b1409ab23bb43878990ee0d625',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fannunc',['PIOS_INCLUDE_ANNUNC',['../pios__flight__config_8h.html#a464462d5068d115f79148efdffefb418',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fbl_5fhelper',['PIOS_INCLUDE_BL_HELPER',['../pios__flight__config_8h.html#a88ebbd46d7ad2cb2374e4886c3194b5e',1,'pios_flight_config.h']]],

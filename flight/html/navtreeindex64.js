@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"group___s_p_r_f3_e.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,5,15,21],
+"group___s_p_r_f3_e.html#gae631e1c4b6541c9d67de9d009196b770":[2,6,17,154],
 "group___s_p_r_f3_e.html#gae631e1c4b6541c9d67de9d009196b770":[2,5,15,154],
 "group___s_p_r_f3_e.html#gae8ffecb53d7e6d0986cbb875cd98e0e8":[2,6,17,78],
 "group___s_p_r_f3_e.html#gae8ffecb53d7e6d0986cbb875cd98e0e8":[2,5,15,78],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,6,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,15,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,16,0,2,3],
-"group___s_t_m32_f0xx___system___private___macros.html":[2,5,7,0,2,3],
-"group___s_t_m32_f0xx___system___private___macros.html":[2,6,17,0,2,3],
-"group___s_t_m32_f0xx___system___private___macros.html":[2,5,8,0,2,3]
+"group___s_t_m32_f0xx___system___private___macros.html":[2,5,7,0,2,3]
 };

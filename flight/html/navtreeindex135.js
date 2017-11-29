@@ -1,5 +1,10 @@
 var NAVTREEINDEX135 =
 {
+"targets_2sparky_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9":[5,0,0,4,16,1,2,10],
+"targets_2sparky_2board-info_2pios__board_8h.html#ga89e68cdd07ab84568fe168af24311299":[5,0,0,4,16,1,2,44],
+"targets_2sparky_2board-info_2pios__board_8h.html#ga8e66b285628ba1cb8e22932297f4b952":[5,0,0,4,16,1,2,26],
+"targets_2sparky_2board-info_2pios__board_8h.html#ga8f592a960a21018006bd68f30692ab5b":[5,0,0,4,16,1,2,41],
+"targets_2sparky_2board-info_2pios__board_8h.html#ga95088ad43f3c3f632600c83686b1a583":[5,0,0,4,16,1,2,51],
 "targets_2sparky_2board-info_2pios__board_8h.html#ga9dddfa55bb34063f55fe36728f035954":[5,0,0,4,16,1,2,0],
 "targets_2sparky_2board-info_2pios__board_8h.html#gaa2230ce045fa6f32269efa3202144ffd":[5,0,0,4,16,1,2,2],
 "targets_2sparky_2board-info_2pios__board_8h.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db":[5,0,0,4,16,1,2,58],
@@ -244,10 +249,5 @@ var NAVTREEINDEX135 =
 "timeutils_8c.html":[5,0,0,1,14],
 "timeutils_8c.html#a08e34981bd911e8f61169bae496fdb14":[5,0,0,1,14,2],
 "timeutils_8c.html#a5ceda26a59b995f39bf22eb1061c781a":[5,0,0,1,14,1],
-"timeutils_8c.html#ga11528d10d5838afd2d0ec2f5841167cf":[5,0,0,1,14,4],
-"timeutils_8c.html#ga69c006c2a42ec890584877c7c0e2f72f":[5,0,0,1,14,5],
-"timeutils_8c.html#ga775e1e8c08b79c5cf245b9f03ef70908":[5,0,0,1,14,0],
-"timeutils_8c.html#gad43faa5010d2bf324698c46fc53327c3":[5,0,0,1,14,6],
-"timeutils_8c.html#gae6bc10904b2b09a717f1fb81cce017de":[5,0,0,1,14,3],
-"timeutils_8c_source.html":[5,0,0,1,14]
+"timeutils_8c.html#ga11528d10d5838afd2d0ec2f5841167cf":[5,0,0,1,14,4]
 };

@@ -7,6 +7,7 @@ var pios__flight__config_8h =
     [ "IRQSTACK_LIMIT_CRITICAL", "pios__flight__config_8h.html#ab45890a416f5e2177b434d93d89c362f", null ],
     [ "IRQSTACK_LIMIT_WARNING", "pios__flight__config_8h.html#ae97115db8cae2e29462308550992c153", null ],
     [ "PIOS_INCLUDE_4WAY", "pios__flight__config_8h.html#ad830410b5e6793203bad6382c5242746", null ],
+    [ "PIOS_INCLUDE_ACTUATOR_ANNUNCIATOR", "pios__flight__config_8h.html#a934399cbc20d23f53c1961ea6959e5b7", null ],
     [ "PIOS_INCLUDE_ADC", "pios__flight__config_8h.html#a28ae61b1409ab23bb43878990ee0d625", null ],
     [ "PIOS_INCLUDE_ANNUNC", "pios__flight__config_8h.html#a464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "pios__flight__config_8h.html#a88ebbd46d7ad2cb2374e4886c3194b5e", null ],

@@ -8,7 +8,7 @@ var searchData=
   ['ackresendortimeout',['ackResendOrTimeout',['../group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644',1,'telemetry.c']]],
   ['activatewaypoint',['activateWaypoint',['../group___path_planner_module.html#ga2979049a21c756329e5ce3d218cd7ca6',1,'pathplanner.c']]],
   ['actuator_5fget_5fdshot_5fcommand',['actuator_get_dshot_command',['../group___actuator_module.html#ga164a8a953140af4d2f724a74c1ca9b01',1,'actuator.c']]],
-  ['actuator_5fsend_5fdshot_5fcommand',['actuator_send_dshot_command',['../group___actuator_module.html#ga2047690c019a9b835033f44645ae8304',1,'actuator.c']]],
+  ['actuator_5fsend_5fdshot_5fcommand',['actuator_send_dshot_command',['../group___actuator_module.html#ga2047690c019a9b835033f44645ae8304',1,'actuator_send_dshot_command(uint8_t cmd_id, uint8_t num_to_send, uint16_t channel_mask):&#160;actuator.c'],['../group___p_i_o_s___modules.html#ga2047690c019a9b835033f44645ae8304',1,'actuator_send_dshot_command(uint8_t cmd_id, uint8_t num_to_send, uint16_t channel_mask):&#160;actuator.c']]],
   ['actuator_5fsend_5fdshot_5fcommand_5fnow',['actuator_send_dshot_command_now',['../group___actuator_module.html#ga20a9b586b797b05e7e30d335efaa0204',1,'actuator.c']]],
   ['actuator_5fsettings_5fupdate',['actuator_settings_update',['../group___actuator_module.html#gaf4296fab457f26f4f4de6e9c9aaeadf6',1,'actuator.c']]],
   ['actuator_5ftask',['actuator_task',['../group___actuator_module.html#ga4c6cfb67ea6b930740d4f9a3d3659a8e',1,'actuator.c']]],
