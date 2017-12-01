@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">5465924</span>
+   &#160;<span id="projectnumber">6b208f0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -356,16 +356,18 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="group___flying_p_i_o.html#gaa69d891b714c986144d7f6e72ad73578">inited</a>) {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                        <span class="comment">// Distinctive &quot;ready&quot; blip when host is not controlling</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="comment">// LED.</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <span class="keywordflow">if</span> ((i == 0xc000) || (i == 0) || (i==0x18000)) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="comment">// LED.  On most of the time, which 3 quick flashes off.</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <span class="keywordflow">if</span> ((i == 0) || (i == 0x8000) || (i == 0x10000)) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((i == 0x4000) || (i == 0xc000) || (i == 0x14000)) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                <a class="code" href="group___p_i_o_s___a_n_n_u_n_c.html#ga407dfee3486299fb1e22d4f2d4d2c4d9">PIOS_ANNUNC_On</a>(<a class="code" href="group___a_q32.html#ga2a94396f6c828bcf3a1c79e82a3d738a">PIOS_LED_HEARTBEAT</a>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="ttc" id="structflyingpiresp__io__10_html_a23af026ed2ab7c086102c7cb77ac0946"><div class="ttname"><a href="structflyingpiresp__io__10.html#a23af026ed2ab7c086102c7cb77ac0946">flyingpiresp_io_10::valid_messages_recvd</a></div><div class="ttdeci">uint16_t valid_messages_recvd</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio__messages_8h_source.html#l00045">flyingpio_messages.h:45</a></div></div>
 <div class="ttc" id="group___common_html_ga840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="group___common.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="bl_2common_2main_8c_source.html#l00441">main.c:441</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_p_i___s_l_a_v_e_html_ga63e399501f16f8cebdf1929f6774a63c"><div class="ttname"><a href="group___p_i_o_s___s_p_i___s_l_a_v_e.html#ga63e399501f16f8cebdf1929f6774a63c">PIOS_SPISLAVE_Init</a></div><div class="ttdeci">int32_t PIOS_SPISLAVE_Init(spislave_t *spislave_id, const struct pios_spislave_cfg *cfg, int initial_tx_size)</div></div>
@@ -422,7 +424,6 @@ $(document).ready(function(){initNavTree('flyingpio_2fw_2main_8c_source.html',''
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga956e12d1248d0481acd1238fe6b3ffc2"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga956e12d1248d0481acd1238fe6b3ffc2">PIOS_Servo_SetMode</a></div><div class="ttdeci">int PIOS_Servo_SetMode(const uint16_t *out_rate, const int banks, const uint16_t *channel_max, const uint16_t *channel_min)</div><div class="ttdoc">PIOS_Servo_SetMode Sets the PWM output frequency and resolution. An output rate of 0 indicates Synchr...</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00304">pios_servo.c:304</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_ga9d74027bc92b7db6f1b0dc049ba1625d"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#ga9d74027bc92b7db6f1b0dc049ba1625d">PIOS_Servo_Init</a></div><div class="ttdeci">int32_t PIOS_Servo_Init(const struct pios_servo_cfg *cfg)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00109">pios_servo.c:109</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga0bf60da545bf36717bd2c9ce3d13bf81"><div class="ttname"><a href="group___flying_p_i_o.html#ga0bf60da545bf36717bd2c9ce3d13bf81">TIM1_BRK_UP_TRG_COM_IRQHandler</a></div><div class="ttdeci">void TIM1_BRK_UP_TRG_COM_IRQHandler(void)</div></div>
-<div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_ga06cc4fd9ade92cd7af7d80d1b942eb54"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#ga06cc4fd9ade92cd7af7d80d1b942eb54">PIOS_ANNUNC_Toggle</a></div><div class="ttdeci">void PIOS_ANNUNC_Toggle(uint32_t annunc_id)</div></div>
 <div class="ttc" id="structpios__ppm__cfg_html"><div class="ttname"><a href="structpios__ppm__cfg.html">pios_ppm_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__ppm__priv_8h_source.html#l00036">pios_ppm_priv.h:36</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_gab540ecaab89fcca1c715f07536609c2e"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#gab540ecaab89fcca1c715f07536609c2e">PIOS_RCVR_Read</a></div><div class="ttdeci">int32_t PIOS_RCVR_Read(uintptr_t rcvr_id, uint8_t channel)</div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga58dc7fd76064279bf988f0d863f87a76"><div class="ttname"><a href="group___flying_p_i_o.html#ga58dc7fd76064279bf988f0d863f87a76">tim_14_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_14_cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2board-info_2board__hw__defs_8c_source.html#l00228">board_hw_defs.c:228</a></div></div>
