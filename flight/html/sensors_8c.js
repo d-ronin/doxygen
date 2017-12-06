@@ -3,19 +3,15 @@ var sensors_8c =
     [ "MAX_TIME_BETWEEN_VALID_BARO_DATAS_MS", "sensors_8c.html#gafb9e43c8c182eff348ecd412a4a214b8", null ],
     [ "REQUIRED_GOOD_CYCLES", "sensors_8c.html#ga3e6e968c6bc5695cc2dc301c12a9f935", null ],
     [ "SENSOR_PERIOD", "sensors_8c.html#ga8eb684c424469466e72c0bbfb506e458", null ],
-    [ "STACK_SIZE_BYTES", "sensors_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725", null ],
-    [ "TASK_PRIORITY", "sensors_8c.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c", null ],
     [ "mag_calibration_algo", "sensors_8c.html#gaa4a9d2444da0ad9373dc8d8fc3d851c8", [
       [ "MAG_CALIBRATION_PRELEMARI", "sensors_8c.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8acb8ba365d61808f93588f4f6ab773121", null ],
       [ "MAG_CALIBRATION_NORMALIZE_LENGTH", "sensors_8c.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8a566b052171d9d352158b7d7652b4280a", null ]
     ] ],
     [ "mag_calibration_fix_length", "sensors_8c.html#ga25e38021534dad2cca531b1df90535a7", null ],
     [ "mag_calibration_prelemari", "sensors_8c.html#gabf4e06dee561adebe58aa5c6794f0f58", null ],
-    [ "MODULE_HIPRI_INITCALL", "sensors_8c.html#gabbaf396776f6314b55c5ba1cb8f74229", null ],
-    [ "SensorsInitialize", "sensors_8c.html#ga5e029d54d151a3973c7c182e580962be", null ],
-    [ "SensorsStart", "sensors_8c.html#ga4981f960fb768de7443d0bb4cb09e61a", null ],
-    [ "SensorsTask", "sensors_8c.html#ga855e990099b8d78fb6be1598dd69ccfe", null ],
-    [ "settingsUpdatedCb", "sensors_8c.html#gaa0ed77fef94661b3f71152ff2cd735b6", null ],
+    [ "sensors_init", "sensors_8c.html#ga4a6be989571629f866eef0e8f330254a", null ],
+    [ "sensors_settings_update", "sensors_8c.html#gae4a9b3081d01dd794323729ce85b591b", null ],
+    [ "sensors_step", "sensors_8c.html#ga5deff28f9052bf4e18c4077091252b7e", null ],
     [ "update_accels", "sensors_8c.html#ga24a6c2bdc84b211472a38661e15e1ca5", null ],
     [ "update_baro", "sensors_8c.html#gae207e3c3618dc01a9afe6162d4778fc7", null ],
     [ "update_gyros", "sensors_8c.html#gaf4811a522a04e2eed244bacf6d0267c2", null ],
@@ -38,6 +34,6 @@ var sensors_8c =
     [ "mag_scale", "sensors_8c.html#ga85f4f54258c7666b4feadb94bbefb0ee", null ],
     [ "rotate", "sensors_8c.html#ga7b5d500a07716e6400df97ab6d20c36e", null ],
     [ "Rsb", "sensors_8c.html#gab0474ee7eeda2c4413d5963c8d142020", null ],
-    [ "sensorsTaskHandle", "sensors_8c.html#gaa0cc6e928facbb4ec97986ab47398fb5", null ],
+    [ "settings_updated", "sensors_8c.html#ga20f7441302496e7d3b819a5939a36b14", null ],
     [ "z_accel_offset", "sensors_8c.html#gae01f97490c48bd179d24f05740f905f9", null ]
 ];

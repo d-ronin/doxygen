@@ -56,7 +56,7 @@ var searchData=
   ['initialization',['initialization',['../structcomplementary__filter__state.html#a28dd748e22efb34aa6dddf4873b1c445',1,'complementary_filter_state']]],
   ['inittaskhandle',['initTaskHandle',['../group___targets.html#ga396301109ebb6001fe433d642113f734',1,'initTaskHandle():&#160;chibi_main.c'],['../group___sim.html#ga396301109ebb6001fe433d642113f734',1,'initTaskHandle():&#160;main.c']]],
   ['inputs',['inputs',['../struct_camera_stab__data.html#a70a7f78deaaa00117c112fa44a14843b',1,'CameraStab_data']]],
-  ['inssettings',['insSettings',['../group___attitude_module.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;attitude.c'],['../group___sensors.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;sensors.c']]],
+  ['inssettings',['insSettings',['../group___attitude_module.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;attitude.c'],['../group___stabilization_module.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;sensors.c']]],
   ['inst',['inst',['../structtxpid__struct.html#ae72accee9fa02b92561d1dcc607f6f77',1,'txpid_struct']]],
   ['inst_5fid',['inst_id',['../structpending__ack.html#a227760c8e59588db02cb5885f724e33e',1,'pending_ack']]],
   ['instance',['instance',['../struct_u_a_v_o_multi_inst.html#ab48732994d9762f9493940dc57e60f8b',1,'UAVOMultiInst::instance()'],['../uavobjectmanager_8c.html#a9eba2b5756444f64b374ac6725a8f120',1,'instance():&#160;uavobjectmanager.c']]],

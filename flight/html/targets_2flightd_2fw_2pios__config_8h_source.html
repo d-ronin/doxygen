@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/targets/simulation/fw/pios_config.h Source File</title>
+<title>dRonin: flight/targets/flightd/fw/pios_config.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('targets_2simulation_2fw_2pios__config_8h_source.html','');});
+$(document).ready(function(){initNavTree('targets_2flightd_2fw_2pios__config_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('targets_2simulation_2fw_2pios__config_
 <div class="title">pios_config.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="targets_2simulation_2fw_2pios__config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="targets_2flightd_2fw_2pios__config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -209,14 +209,20 @@ $(document).ready(function(){initNavTree('targets_2simulation_2fw_2pios__config_
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_POSIX_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___sim.html#gaf159b3948a9d1cc2f7ec6d3ba148bd31">  113</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if !(defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___sim.html#ga73d02ccef77cc8bad13d281e320d7112">  116</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS_YASIM</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_POSIX_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_5633b480798156acc71f69dca61b8a93.html">targets</a></li><li class="navelem"><a class="el" href="dir_6651ae6b02af0adb90a4ec92d7ab210f.html">simulation</a></li><li class="navelem"><a class="el" href="dir_23f3a6912b58bb914e71645a2b495e33.html">fw</a></li><li class="navelem"><a class="el" href="targets_2simulation_2fw_2pios__config_8h.html">pios_config.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_5633b480798156acc71f69dca61b8a93.html">targets</a></li><li class="navelem"><a class="el" href="dir_1d607c0dee6649c40e93ac2385c2d852.html">flightd</a></li><li class="navelem"><a class="el" href="dir_28c4d48cd0049ff493a7955e5ae873a6.html">fw</a></li><li class="navelem"><a class="el" href="targets_2flightd_2fw_2pios__config_8h.html">pios_config.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

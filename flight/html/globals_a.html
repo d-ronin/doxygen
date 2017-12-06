@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -155,14 +155,13 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa877381fade53fb29c9a261ba8d37fa31">common.h</a>
 </li>
 <li>accel_bias
-: <a class="el" href="group___sensors.html#ga0ce75f6556b56ffcfee6db75c310c8d8">sensors.c</a>
-, <a class="el" href="group___sensors.html#ga0ce75f6556b56ffcfee6db75c310c8d8">simsensors.c</a>
+: <a class="el" href="group___stabilization_module.html#ga0ce75f6556b56ffcfee6db75c310c8d8">sensors.c</a>
 </li>
 <li>accel_filter
-: <a class="el" href="group___sensors.html#ga413f356e6361f4b80d0aa6c8e6637f3e">sensors.c</a>
+: <a class="el" href="group___stabilization_module.html#ga413f356e6361f4b80d0aa6c8e6637f3e">sensors.c</a>
 </li>
 <li>accel_scale
-: <a class="el" href="group___sensors.html#gaf32e1972b8722368277d88031e09c4d1">sensors.c</a>
+: <a class="el" href="group___stabilization_module.html#gaf32e1972b8722368277d88031e09c4d1">sensors.c</a>
 </li>
 <li>accelIntegral
 : <a class="el" href="group___fixed_wing_path_follower.html#ga5c47e43d90fc8fbf9c5e7adfb6e36f2b">fixedwingpathfollower.c</a>
@@ -171,7 +170,7 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___attitude_module.html#ga9c4c234ed6af063a0caa20cb45519411">attitude.c</a>
 </li>
 <li>accelsData
-: <a class="el" href="group___sensors.html#gac199bf93795982fa6e61ec77dbc2533f">sensors.c</a>
+: <a class="el" href="group___stabilization_module.html#gac199bf93795982fa6e61ec77dbc2533f">sensors.c</a>
 </li>
 <li>ACCESS_READONLY
 : <a class="el" href="uavobjectmanager_8h.html#a04b37fd239d7727a21668d35d11ad7dfa88d5dcaffa414c5fe3e778789366bad3">uavobjectmanager.h</a>
@@ -191,11 +190,11 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 <li>accx
 : <a class="el" href="msp__messages_8h.html#ac5db03f0fef1866c96a8fe1c5a3e5259">msp_messages.h</a>
 </li>
-<li>accY
-: <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">UAVOFrSKYSensorHubBridge.c</a>
-</li>
 <li>accy
 : <a class="el" href="msp__messages_8h.html#ad1b7dedef4a2459acd36e9cf127f62ac">msp_messages.h</a>
+</li>
+<li>accY
+: <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3">UAVOFrSKYSensorHubBridge.c</a>
 </li>
 <li>accz
 : <a class="el" href="msp__messages_8h.html#a8dbc59928e417263871a6a1d9c930756">msp_messages.h</a>
@@ -237,8 +236,9 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___actuator_module.html#ga164a8a953140af4d2f724a74c1ca9b01">actuator.c</a>
 </li>
 <li>actuator_interlock
-: <a class="el" href="group___p_i_o_s___modules.html#ga01b4b4c6b9d6afa6a8451f17439074d2">pios_modules.h</a>
+: <a class="el" href="group___p_i_o_s___modules.html#gad8b5ff876e9f50e2a1e5d14e7c896802">pios_modules.h</a>
 , <a class="el" href="group___actuator_module.html#ga01b4b4c6b9d6afa6a8451f17439074d2">actuator.c</a>
+, <a class="el" href="group___p_i_o_s___modules.html#ga01b4b4c6b9d6afa6a8451f17439074d2">pios_modules.h</a>
 </li>
 <li>ACTUATOR_INTERLOCK_OK
 : <a class="el" href="group___p_i_o_s___modules.html#ggad8b5ff876e9f50e2a1e5d14e7c896802a8eef6d01d3d018a2252e7430d4f281b8">pios_modules.h</a>
@@ -411,8 +411,8 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="msp__messages_8h.html#af75c958c89ab0ef7259be0b67cd20125">msp_messages.h</a>
 </li>
 <li>altitude
-: <a class="el" href="msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f">msp_messages.h</a>
-, <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">UAVOFrSKYSensorHubBridge.c</a>
+: <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga0e13a4b4ae0cefdac2a413284239caa6">UAVOFrSKYSensorHubBridge.c</a>
+, <a class="el" href="msp__messages_8h.html#a51661d189e8db74a32867069dfa50d7f">msp_messages.h</a>
 , <a class="el" href="pios__crossfire_8h.html#a51661d189e8db74a32867069dfa50d7f">pios_crossfire.h</a>
 </li>
 <li>altitude_hold_desired()
@@ -494,10 +494,10 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 : <a class="el" href="group___on_screen_display.html#gac41c7fb1ca72aa1768dbc146fe1921c6">onscreendisplay.c</a>
 </li>
 <li>assert_param
-: <a class="el" href="stm32f0xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f0xx_conf.h</a>
-, <a class="el" href="stm32f30x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f30x_conf.h</a>
+: <a class="el" href="stm32f10x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f10x_conf.h</a>
 , <a class="el" href="stm32f4xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f4xx_conf.h</a>
-, <a class="el" href="stm32f10x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f10x_conf.h</a>
+, <a class="el" href="stm32f30x__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f30x_conf.h</a>
+, <a class="el" href="stm32f0xx__conf_8h.html#a631dea7b230e600555f979c62af1de21">stm32f0xx_conf.h</a>
 </li>
 <li>assumptions1
 : <a class="el" href="group___control.html#ga5ee2d744bf4317f2edff39de54cb0371">transmitter_control.h</a>
@@ -552,7 +552,7 @@ $(document).ready(function(){initNavTree('globals_a.html','');});
 </li>
 <li>AUTOTUNE_AVERAGING_DECIMATION
 : <a class="el" href="group___autotuning_module.html#ga867e829c0aaaf0e6f1c0f229b670e71e">autotune.c</a>
-, <a class="el" href="group___brain_r_e1.html#ga867e829c0aaaf0e6f1c0f229b670e71e">pios_config.h</a>
+, <a class="el" href="group___s_p_r_f3_e.html#ga867e829c0aaaf0e6f1c0f229b670e71e">pios_config.h</a>
 </li>
 <li>autotune_save_averaging()
 : <a class="el" href="group___autotuning_module.html#gacfe3a46f19338440f1191119b113076c">autotune.c</a>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"dronin-strsep_8h.html":[5,0,0,3,2,0,0],
 "dronin-strsep_8h.html#a0d1112b993837e11bf1737040ebdf2b4":[5,0,0,3,2,0,0,0],
 "dronin-strsep_8h_source.html":[5,0,0,3,2,0,0],
 "dsm_2task_8h.html":[5,0,0,5,1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "ecc_8h.html#affaac463542a40708765b460819c3a11":[5,0,0,1,5,2,4],
 "ecc_8h_source.html":[5,0,0,1,5,2],
 "encode__font_8py.html":[5,0,0,2,7,5],
-"encode__font_8py.html#a90db3400a55cca9dc45669fb6cdff36d":[5,0,0,2,7,5,0]
+"encode__font_8py.html#a90db3400a55cca9dc45669fb6cdff36d":[5,0,0,2,7,5,0],
+"encode__font_8py_source.html":[5,0,0,2,7,5]
 };

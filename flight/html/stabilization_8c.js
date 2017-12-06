@@ -47,7 +47,6 @@ var stabilization_8c =
     [ "max_axislock_rate", "stabilization_8c.html#ga94dd677918bcbe2c1ee026d1c1f95fd1", null ],
     [ "max_rate_alpha", "stabilization_8c.html#gab9b6ba57cecbcf5f2414e9c87ce43aac", null ],
     [ "pids", "stabilization_8c.html#ga1b7c75ff9222444babfe603f25b91233", null ],
-    [ "queue", "stabilization_8c.html#ga99a334ed9cdb3e7a7c694d5519d08d30", null ],
     [ "rc_smoothing", "stabilization_8c.html#ga31e7b34d02a31718075e75ab2528204e", null ],
     [ "settings", "stabilization_8c.html#ga8bf4ac3d6681874b9c0c5effe66fb21f", null ],
     [ "settings_flag", "stabilization_8c.html#gac0da75e77e4e4f4b1e6c1fb6de575f65", null ],

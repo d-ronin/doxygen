@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/Modules/Sensors/simulated/simsensors.c File Reference</title>
+<title>dRonin: flight/Modules/Stabilization/simulated/simsensors.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -106,11 +106,6 @@ $(document).ready(function(){initNavTree('simsensors_8c.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">simsensors.c File Reference</div>  </div>
 </div><!--header-->
@@ -120,121 +115,14 @@ $(document).ready(function(){initNavTree('simsensors_8c.html','');});
 <code>#include &quot;openpilot.h&quot;</code><br/>
 <code>#include &quot;physical_constants.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
-<code>#include &quot;accels.h&quot;</code><br/>
-<code>#include &quot;actuatordesired.h&quot;</code><br/>
-<code>#include &quot;airspeedactual.h&quot;</code><br/>
-<code>#include &quot;attitudeactual.h&quot;</code><br/>
-<code>#include &quot;attitudesimulated.h&quot;</code><br/>
-<code>#include &quot;attitudesettings.h&quot;</code><br/>
-<code>#include &quot;baroairspeed.h&quot;</code><br/>
-<code>#include &quot;baroaltitude.h&quot;</code><br/>
-<code>#include &quot;gyros.h&quot;</code><br/>
-<code>#include &quot;gyrosbias.h&quot;</code><br/>
-<code>#include &quot;flightstatus.h&quot;</code><br/>
-<code>#include &quot;gpsposition.h&quot;</code><br/>
-<code>#include &quot;gpsvelocity.h&quot;</code><br/>
-<code>#include &quot;homelocation.h&quot;</code><br/>
-<code>#include &quot;magnetometer.h&quot;</code><br/>
-<code>#include &quot;magbias.h&quot;</code><br/>
-<code>#include &quot;ratedesired.h&quot;</code><br/>
-<code>#include &quot;systemsettings.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="coordinate__conversions_8h_source.html">coordinate_conversions.h</a>&quot;</code><br/>
 </div>
 <p><a href="simsensors_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;1540</td></tr>
-<tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54abbe1aff2d1bfe2d5c2aeae36e422909d">PIOS_THREAD_PRIO_HIGH</a></td></tr>
-<tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eb684c424469466e72c0bbfb506e458"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga8eb684c424469466e72c0bbfb506e458">SENSOR_PERIOD</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga8eb684c424469466e72c0bbfb506e458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga6423b17c1c5cfe30ec2b9cabedc03f70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga6423b17c1c5cfe30ec2b9cabedc03f70">sensor_sim_type</a> { <a class="el" href="group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a5436e3c9f75c3ad50eed1cc05dea49d4">MODEL_YASIM</a>, 
-<a class="el" href="group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70af0e5a574aa71ec14e1b4d7288086995c">MODEL_QUADCOPTER</a>, 
-<a class="el" href="group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a760a21ed021ec46ff7bbff4846bc7064">MODEL_AIRPLANE</a>, 
-<a class="el" href="group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70ab7b5347f7118bc133ff0b6dddd3b0cf4">MODEL_CAR</a>
- }</td></tr>
-<tr class="separator:ga6423b17c1c5cfe30ec2b9cabedc03f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga26562491bc20c31ac212df09f3f3acf6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga26562491bc20c31ac212df09f3f3acf6">rand_gauss</a> ()</td></tr>
-<tr class="separator:ga26562491bc20c31ac212df09f3f3acf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga855e990099b8d78fb6be1598dd69ccfe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simsensors_8c.html#ga855e990099b8d78fb6be1598dd69ccfe">SensorsTask</a> (void *parameters)</td></tr>
-<tr class="separator:ga855e990099b8d78fb6be1598dd69ccfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdc8ab173877d09842b6b485e569a00e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#gacdc8ab173877d09842b6b485e569a00e">simulateModelQuadcopter</a> ()</td></tr>
-<tr class="separator:gacdc8ab173877d09842b6b485e569a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb414681d83ce8257ccbc3d48ed1b23f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#gafb414681d83ce8257ccbc3d48ed1b23f">simulateModelAirplane</a> ()</td></tr>
-<tr class="separator:gafb414681d83ce8257ccbc3d48ed1b23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga639c7ad4b39ee77380686ddfe1d39094"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga639c7ad4b39ee77380686ddfe1d39094">simulateModelCar</a> ()</td></tr>
-<tr class="separator:ga639c7ad4b39ee77380686ddfe1d39094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5347d74a25c6e8fc11d5b384108542e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga5347d74a25c6e8fc11d5b384108542e9">simulateYasim</a> ()</td></tr>
-<tr class="separator:ga5347d74a25c6e8fc11d5b384108542e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga278a31d8423730b9c42de5859ed989c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga278a31d8423730b9c42de5859ed989c4">magOffsetEstimation</a> (MagnetometerData *<a class="el" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>)</td></tr>
-<tr class="separator:ga278a31d8423730b9c42de5859ed989c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e029d54d151a3973c7c182e580962be"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga5e029d54d151a3973c7c182e580962be">SensorsInitialize</a> (void)</td></tr>
-<tr class="separator:ga5e029d54d151a3973c7c182e580962be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4981f960fb768de7443d0bb4cb09e61a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga4981f960fb768de7443d0bb4cb09e61a">SensorsStart</a> (void)</td></tr>
-<tr class="separator:ga4981f960fb768de7443d0bb4cb09e61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77c72b2858445a0da937c44827412ae7"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga77c72b2858445a0da937c44827412ae7">SimSensorsInitialize</a> (void)</td></tr>
-<tr class="separator:ga77c72b2858445a0da937c44827412ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f802fb20f7c9eeb7f43ee99a0149e75"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga3f802fb20f7c9eeb7f43ee99a0149e75">SimSensorsStart</a> (void)</td></tr>
-<tr class="separator:ga3f802fb20f7c9eeb7f43ee99a0149e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:gaa0cc6e928facbb4ec97986ab47398fb5"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#gaa0cc6e928facbb4ec97986ab47398fb5">sensorsTaskHandle</a></td></tr>
-<tr class="separator:gaa0cc6e928facbb4ec97986ab47398fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ce75f6556b56ffcfee6db75c310c8d8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga0ce75f6556b56ffcfee6db75c310c8d8">accel_bias</a> [3]</td></tr>
-<tr class="separator:ga0ce75f6556b56ffcfee6db75c310c8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5eeff3da45a87067d0720659756e3a36"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga5eeff3da45a87067d0720659756e3a36">use_real_sensors</a></td></tr>
-<tr class="separator:ga5eeff3da45a87067d0720659756e3a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa80035ba8a646bbe834df0949148c02b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#gaa80035ba8a646bbe834df0949148c02b">sens_rate</a> = 500</td></tr>
-<tr class="separator:gaa80035ba8a646bbe834df0949148c02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5e76bc9bc1cc20d2b183069aea687b4"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___sensors.html#ga6423b17c1c5cfe30ec2b9cabedc03f70">sensor_sim_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#gaa5e76bc9bc1cc20d2b183069aea687b4">sensor_sim_type</a></td></tr>
-<tr class="separator:gaa5e76bc9bc1cc20d2b183069aea687b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a900e3042abc895d66915c43101d00f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga7a900e3042abc895d66915c43101d00f">use_yasim</a></td></tr>
-<tr class="separator:ga7a900e3042abc895d66915c43101d00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d3d2f156a75f85f9df60200c00c5643"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sensors.html#ga1d3d2f156a75f85f9df60200c00c5643">sensors_count</a></td></tr>
-<tr class="separator:ga1d3d2f156a75f85f9df60200c00c5643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga855e990099b8d78fb6be1598dd69ccfe"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SensorsTask </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>parameters</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simsensors_8c_source.html#l00178">178</a> of file <a class="el" href="simsensors_8c_source.html">simsensors.c</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_84cbccaa40138d521c3102dda2be2c75.html">Modules</a></li><li class="navelem"><a class="el" href="dir_bb776d5f1cf958b756cc56bf060a7bcf.html">Sensors</a></li><li class="navelem"><a class="el" href="dir_cb3651fa254c471cd6871ea9f993f042.html">simulated</a></li><li class="navelem"><a class="el" href="simsensors_8c.html">simsensors.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_84cbccaa40138d521c3102dda2be2c75.html">Modules</a></li><li class="navelem"><a class="el" href="dir_b27851ebedaab084b7dc7e5ae28051db.html">Stabilization</a></li><li class="navelem"><a class="el" href="dir_c10fd021f202e8624554ca06754a63b3.html">simulated</a></li><li class="navelem"><a class="el" href="simsensors_8c.html">simsensors.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

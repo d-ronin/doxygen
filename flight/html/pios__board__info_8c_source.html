@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('pios__board__info_8c_source.html','');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__board__info_8h.html">pios_board_info.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(SIM_POSIX)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(FLIGHT_POSIX)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__board__info.html">pios_board_info</a> <a class="code" href="pios__board__info_8h.html#ae44044441c2e7618a5ebc9b4e377793b">pios_board_info_blob</a> = {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="pios__board__info_8c.html#a1fbbc483637b89028069cb50c934889b">    9</a></span>&#160;<span class="preprocessor"></span><span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__board__info.html">pios_board_info</a> <a class="code" href="struct____attribute____.html">__attribute__</a>((__used__)) <a class="code" href="struct____attribute____.html">__attribute__</a>((__section__(&quot;.boardinfo&quot;))) pios_board_info_blob = {</div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -893,9 +893,9 @@ $(document).ready(function(){initNavTree('systemmod_8c_source.html','');});
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        }</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <span class="comment">// Check CPU load</span></div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="preprocessor">#ifdef SIM_POSIX</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="preprocessor">#ifdef FLIGHT_POSIX</span></div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="preprocessor"></span>        <span class="comment">// XXX do something meaningful here in the future.</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="comment">// Right now CPU monitoring on simulator is worthless.</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="comment">// Right now CPU monitoring on posix is worthless.</span></div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <a class="code" href="group___libraries.html#gafce7d51ebedc70de373224f839c77399">AlarmsClear</a>(SYSTEMALARMS_ALARM_CPUOVERLOAD);</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (stats.CPULoad &gt; <a class="code" href="pios__flight__config_8h.html#a33b8e7ed32bafe7b1e55e18b832854ce">CPULOAD_LIMIT_CRITICAL</a>) {</div>

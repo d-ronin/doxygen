@@ -6,7 +6,6 @@ var searchData=
   ['radiorxtask',['radioRxTask',['../group___radio_com_bridge_module.html#ga090eaef2ee9c8105a8f1dce84feed15a',1,'radioRxTask(void *parameters):&#160;RadioComBridge.c'],['../group___radio_com_bridge_module.html#gaab3b568cf50c03bf5713bfea6e366b8e',1,'radioRxTask(__attribute__((unused)) void *parameters):&#160;RadioComBridge.c']]],
   ['radiosendhandler',['RadioSendHandler',['../group___radio_com_bridge_module.html#gad43a7e1ba17479c92c9247622df20c29',1,'RadioComBridge.c']]],
   ['radiotxtask',['radioTxTask',['../group___radio_com_bridge_module.html#gabcd3a5a7e4271f15705018e5c7a19dd1',1,'radioTxTask(void *parameters):&#160;RadioComBridge.c'],['../group___radio_com_bridge_module.html#gad30099cd73f116cbb7eff378e2bb4915',1,'radioTxTask(__attribute__((unused)) void *parameters):&#160;RadioComBridge.c']]],
-  ['rand_5fgauss',['rand_gauss',['../group___sensors.html#ga26562491bc20c31ac212df09f3f3acf6',1,'simsensors.c']]],
   ['randomize_5fint',['randomize_int',['../group___flight_math.html#gac61b11af4ba8da6fab0e5addf1fe3588',1,'misc_math.c']]],
   ['receiveobject',['receiveObject',['../group___u_a_v_talk.html#ga7be15a892a916e588e1c015511509cd5',1,'uavtalk.c']]],
   ['register_5fdefault_5fprofile',['register_default_profile',['../group___logging.html#ga406f1cacb994c74bc1a4eaa233b66999',1,'logging.c']]],

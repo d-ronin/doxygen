@@ -21,7 +21,6 @@ var dir_84cbccaa40138d521c3102dda2be2c75 =
     [ "OnScreenDisplay", "dir_29def791ce5f0e29e6158ba59e70b035.html", "dir_29def791ce5f0e29e6158ba59e70b035" ],
     [ "PathPlanner", "dir_386f7cd5a39704399bb9e4f687394736.html", "dir_386f7cd5a39704399bb9e4f687394736" ],
     [ "RadioComBridge", "dir_07637267a5531a36502697593c09bf71.html", "dir_07637267a5531a36502697593c09bf71" ],
-    [ "Sensors", "dir_bb776d5f1cf958b756cc56bf060a7bcf.html", "dir_bb776d5f1cf958b756cc56bf060a7bcf" ],
     [ "Stabilization", "dir_b27851ebedaab084b7dc7e5ae28051db.html", "dir_b27851ebedaab084b7dc7e5ae28051db" ],
     [ "Storm32Bgc", "dir_227504a002b51b56491793dd0d6d76c8.html", "dir_227504a002b51b56491793dd0d6d76c8" ],
     [ "System", "dir_9bfa50bfc5bf56b48d43d06eca55d8e1.html", "dir_9bfa50bfc5bf56b48d43d06eca55d8e1" ],

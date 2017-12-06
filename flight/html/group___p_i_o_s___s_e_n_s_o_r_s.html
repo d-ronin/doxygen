@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -215,6 +215,8 @@ Variables</h2></td></tr>
 <tr class="separator:gabf3454f789dce3836726395225e16742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70346b3459ff5d126d61e0034d6400da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga70346b3459ff5d126d61e0034d6400da">PIOS_Sensor::getdata_ctx</a></td></tr>
 <tr class="separator:ga70346b3459ff5d126d61e0034d6400da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe66d971b0831206eb02a21465a50456"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#gafe66d971b0831206eb02a21465a50456">PIOS_Sensor::next_time</a></td></tr>
+<tr class="separator:gafe66d971b0831206eb02a21465a50456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga713d7b0c80d51807dc4aabe7a6db6950"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga713d7b0c80d51807dc4aabe7a6db6950">PIOS_Sensor::sample_rate</a></td></tr>
 <tr class="separator:ga713d7b0c80d51807dc4aabe7a6db6950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0bf2cbfee895c45aa2cf5132896ae311"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga0bf2cbfee895c45aa2cf5132896ae311">PIOS_Sensor::missing</a>: 1</td></tr>
@@ -352,9 +354,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the data for a sensor type. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>keep track of next time it <em>could</em> have data to use in scheduling. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>could use elapsed time to properly adjust </dd></dl>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00096">96</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00099">99</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -373,7 +375,7 @@ Variables</h2></td></tr>
 
 <p>Get the maximum gyro rate in deg/s. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00125">125</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00151">151</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -393,7 +395,7 @@ Variables</h2></td></tr>
 
 <p>Determine if an optional but expected sensor is missing. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00158">158</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00184">184</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -413,7 +415,7 @@ Variables</h2></td></tr>
 
 <p>Get the sample rate of a sensor (Hz) </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00139">139</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00165">165</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -432,7 +434,7 @@ Variables</h2></td></tr>
 
 <p>Initialize the PIOS_SENSORS interface. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00044">44</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00047">47</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -452,7 +454,7 @@ Variables</h2></td></tr>
 
 <p>Checks if a sensor type is registered with the PIOS_SENSORS interface. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00081">81</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00084">84</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -500,7 +502,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00051">51</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00054">54</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -530,7 +532,7 @@ Variables</h2></td></tr>
 
 <p>Register a queue-based sensor with the PIOS_SENSORS interface. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00075">75</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00078">78</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -566,7 +568,7 @@ Variables</h2></td></tr>
 
 <p>Register a callback-based sensor with the PIOS_SENSORS interface. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00061">61</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00064">64</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -586,7 +588,7 @@ Variables</h2></td></tr>
 
 <p>Set the maximum gyro rate in deg/s. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00120">120</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00146">146</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -606,7 +608,7 @@ Variables</h2></td></tr>
 
 <p>Assert that an optional (non-accel/gyro), but expected sensor is missing. </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00149">149</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00175">175</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -636,7 +638,7 @@ Variables</h2></td></tr>
 
 <p>Set the sample rate of a sensor (Hz) </p>
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00130">130</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00156">156</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -665,7 +667,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00035">35</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00036">36</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -679,7 +681,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00036">36</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00037">37</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -701,7 +703,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00042">42</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00045">45</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>
@@ -711,6 +713,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t PIOS_Sensor::missing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00042">42</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafe66d971b0831206eb02a21465a50456"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t PIOS_Sensor::next_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -785,7 +801,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00038">38</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__sensors_8c_source.html#l00041">41</a> of file <a class="el" href="pios__sensors_8c_source.html">pios_sensors.c</a>.</p>
 
 </div>
 </div>

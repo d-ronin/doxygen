@@ -1,9 +1,5 @@
 var group___sim =
 [
-    [ "main.c", "simulation_2fw_2main_8c.html", null ],
-    [ "pios_board.c", "simulation_2fw_2pios__board_8c.html", null ],
-    [ "pios_board.h", "targets_2simulation_2fw_2pios__board_8h.html", null ],
-    [ "pios_config.h", "targets_2simulation_2fw_2pios__config_8h.html", null ],
     [ "CAMERASTAB_POI_MODE", "group___sim.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "CPULOAD_LIMIT_CRITICAL", "group___sim.html#ga33b8e7ed32bafe7b1e55e18b832854ce", null ],
     [ "CPULOAD_LIMIT_WARNING", "group___sim.html#ga08ff1c9a9c1942647c4ee60b087e4ca6", null ],
@@ -51,6 +47,8 @@ var group___sim =
     [ "PIOS_INCLUDE_RTC", "group___sim.html#gaa16397b163ac65bc5fc212b03e69dfa8", null ],
     [ "PIOS_INCLUDE_RTOS", "group___sim.html#gaa9690634a61cf870007fbda7f6c0d975", null ],
     [ "PIOS_INCLUDE_SERVO", "group___sim.html#ga48264c60bf3326bbbb3d3d9057cde39c", null ],
+    [ "PIOS_INCLUDE_SIMSENSORS", "group___sim.html#gaf159b3948a9d1cc2f7ec6d3ba148bd31", null ],
+    [ "PIOS_INCLUDE_SIMSENSORS_YASIM", "group___sim.html#ga73d02ccef77cc8bad13d281e320d7112", null ],
     [ "PIOS_INCLUDE_SYS", "group___sim.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
     [ "PIOS_INCLUDE_TCP", "group___sim.html#ga27e83ecf992e5685416437279db758e4", null ],
     [ "PIOS_INCLUDE_UDP", "group___sim.html#ga360ac5e44a96f7b92ac6427b4c7e217e", null ],

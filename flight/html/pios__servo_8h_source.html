@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('pios__servo_8h_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* Public Functions */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga956e12d1248d0481acd1238fe6b3ffc2">PIOS_Servo_SetMode</a>(<span class="keyword">const</span> uint16_t *out_rate, <span class="keyword">const</span> <span class="keywordtype">int</span> banks, <span class="keyword">const</span> uint16_t *channel_max, <span class="keyword">const</span> uint16_t *channel_min);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifndef SIM_POSIX</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifndef FLIGHT_POSIX</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#ga692adb03fe506d1b770955f0fb26cd00">PIOS_Servo_SetFraction</a>(uint8_t <a class="code" href="msp__messages_8h.html#a1850f7a537e61c36a312fd979808e81d">servo</a>, uint16_t fraction,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                uint16_t max_val, uint16_t min_val);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___s_e_r_v_o.html#gaf3c9c148e8f9d54901aca2b9ce950aa1">PIOS_Servo_DisableChannel</a>(<span class="keywordtype">int</span> channel);</div>

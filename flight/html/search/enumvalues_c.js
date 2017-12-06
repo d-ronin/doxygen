@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['mag_5fcalibration_5fnormalize_5flength',['MAG_CALIBRATION_NORMALIZE_LENGTH',['../group___sensors.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8a566b052171d9d352158b7d7652b4280a',1,'sensors.c']]],
-  ['mag_5fcalibration_5fprelemari',['MAG_CALIBRATION_PRELEMARI',['../group___sensors.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8acb8ba365d61808f93588f4f6ab773121',1,'sensors.c']]],
+  ['mag_5fcalibration_5fnormalize_5flength',['MAG_CALIBRATION_NORMALIZE_LENGTH',['../group___stabilization_module.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8a566b052171d9d352158b7d7652b4280a',1,'sensors.c']]],
+  ['mag_5fcalibration_5fprelemari',['MAG_CALIBRATION_PRELEMARI',['../group___stabilization_module.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8acb8ba365d61808f93588f4f6ab773121',1,'sensors.c']]],
   ['max7456_5freg_5fcmah',['MAX7456_REG_CMAH',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1aaa9755cb01bdcbfb42cd5b0361f6ef4f',1,'pios_max7456_priv.h']]],
   ['max7456_5freg_5fcmal',['MAX7456_REG_CMAL',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1ae145a396917bd9617bb9483dbaf8a335',1,'pios_max7456_priv.h']]],
   ['max7456_5freg_5fcmdi',['MAX7456_REG_CMDI',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1a67f4d5bfefa86715f7157df982269ef6',1,'pios_max7456_priv.h']]],
@@ -37,10 +37,6 @@ var searchData=
   ['max7456_5freg_5fvos',['MAX7456_REG_VOS',['../group___max7456.html#gga9481e6cb8606b29fdeb30a6e3462f5c1a06126549ba133d18128bc1d66e788889',1,'pios_max7456_priv.h']]],
   ['max_5faxes',['MAX_AXES',['../group___camera_stab.html#gga726ca809ffd3d67ab4b8476646f26635aaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;camerastab.c'],['../group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388aaacb851954fab4e8ccf0d09acc8ef697',1,'MAX_AXES():&#160;stabilization.h']]],
   ['medium_5fdensity',['Medium_Density',['../group___common_f1.html#ggad258d4c51629346fceac4679b3209ad9aa3ea3fe11e3705395d454ebb0b528105',1,'common.h']]],
-  ['model_5fairplane',['MODEL_AIRPLANE',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a760a21ed021ec46ff7bbff4846bc7064',1,'simsensors.c']]],
-  ['model_5fcar',['MODEL_CAR',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70ab7b5347f7118bc133ff0b6dddd3b0cf4',1,'simsensors.c']]],
-  ['model_5fquadcopter',['MODEL_QUADCOPTER',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70af0e5a574aa71ec14e1b4d7288086995c',1,'simsensors.c']]],
-  ['model_5fyasim',['MODEL_YASIM',['../group___sensors.html#gga6423b17c1c5cfe30ec2b9cabedc03f70a5436e3c9f75c3ad50eed1cc05dea49d4',1,'simsensors.c']]],
   ['ms5611_5fosr_5f1024',['MS5611_OSR_1024',['../group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3a26d56baed9a0b84d0b05eb809f9a5596',1,'pios_ms5611_priv.h']]],
   ['ms5611_5fosr_5f2048',['MS5611_OSR_2048',['../group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3a443ca046dbc9a4b28f86c7197b9da9a7',1,'pios_ms5611_priv.h']]],
   ['ms5611_5fosr_5f256',['MS5611_OSR_256',['../group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3aeef4ce47c7f22cd8c666c900bcda67e5',1,'pios_ms5611_priv.h']]],

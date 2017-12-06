@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -198,15 +198,14 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 <li>sendSingleObject()
 : <a class="el" href="group___u_a_v_talk.html#ga45b80b79cff88fa5fe2cd745f79c252a">uavtalk.c</a>
 </li>
-<li>SensorsInitialize()
-: <a class="el" href="group___sensors.html#ga5e029d54d151a3973c7c182e580962be">sensors.c</a>
+<li>sensors_init()
+: <a class="el" href="group___stabilization_module.html#ga4a6be989571629f866eef0e8f330254a">sensors.c</a>
 </li>
-<li>SensorsStart()
-: <a class="el" href="group___sensors.html#ga4981f960fb768de7443d0bb4cb09e61a">sensors.c</a>
+<li>sensors_settings_update()
+: <a class="el" href="group___stabilization_module.html#gae4a9b3081d01dd794323729ce85b591b">sensors.c</a>
 </li>
-<li>SensorsTask()
-: <a class="el" href="group___sensors.html#ga855e990099b8d78fb6be1598dd69ccfe">sensors.c</a>
-, <a class="el" href="simsensors_8c.html#ga855e990099b8d78fb6be1598dd69ccfe">simsensors.c</a>
+<li>sensors_step()
+: <a class="el" href="group___stabilization_module.html#ga5deff28f9052bf4e18c4077091252b7e">sensors.c</a>
 </li>
 <li>SerialUpdate()
 : <a class="el" href="group___i_n_s_g_p_s.html#ga4ae89830422fa564e86fd0fc2aa6267a">insgps14state.c</a>
@@ -234,8 +233,8 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 : <a class="el" href="group___control.html#ga72a5a2229a25880659d9ece1651fa13d">transmitter_control.c</a>
 </li>
 <li>Set_MGRS_Parameters()
-: <a class="el" href="mgrs_8h.html#a55e143fc31cd0937c1b2b97244fcfb9d">mgrs.h</a>
-, <a class="el" href="mgrs_8c.html#ab6ab41029504202a595fb5665bd88b25">mgrs.c</a>
+: <a class="el" href="mgrs_8c.html#ab6ab41029504202a595fb5665bd88b25">mgrs.c</a>
+, <a class="el" href="mgrs_8h.html#a55e143fc31cd0937c1b2b97244fcfb9d">mgrs.h</a>
 </li>
 <li>set_mode()
 : <a class="el" href="group___char_o_s_d.html#gaefbbb6e2ffc81e370c022cf1592251ae">charonscreendisplay.c</a>
@@ -293,7 +292,7 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 : <a class="el" href="group___attitude_module.html#ga6604331f3424247baba9350e067288e6">attitude.c</a>
 </li>
 <li>SetSysClock()
-: <a class="el" href="quanton_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c">cmsis_system.c</a>
+: <a class="el" href="revolution_2board-info_2cmsis__system_8c.html#ga1ee14ac28e60198cc998586807b51e4c">cmsis_system.c</a>
 , <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#ga1ee14ac28e60198cc998586807b51e4c">system_stm32f0xx.c</a>
 , <a class="el" href="group___s_t_m32_f30x___system___private___functions.html#ga1ee14ac28e60198cc998586807b51e4c">cmsis_system.c</a>
 </li>
@@ -311,9 +310,6 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 </li>
 <li>SettingsUpdatedCb()
 : <a class="el" href="group___fixed_wing_path_follower.html#gae162341dc76d7653ff0dd87db296fc33">fixedwingpathfollower.c</a>
-</li>
-<li>settingsUpdatedCb()
-: <a class="el" href="group___sensors.html#gaa0ed77fef94661b3f71152ff2cd735b6">sensors.c</a>
 </li>
 <li>setUpdatePeriod()
 : <a class="el" href="group___telemetry_module.html#gaea219686dbd914c9afcd488b0c93de13">telemetry.c</a>
@@ -350,24 +346,6 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 </li>
 <li>simple_malloc()
 : <a class="el" href="group___p_i_o_s___h_e_a_p.html#gad10107cdc1269b95bdaacea8d44e538c">pios_heap.c</a>
-</li>
-<li>SimSensorsInitialize()
-: <a class="el" href="group___sensors.html#ga77c72b2858445a0da937c44827412ae7">simsensors.c</a>
-</li>
-<li>SimSensorsStart()
-: <a class="el" href="group___sensors.html#ga3f802fb20f7c9eeb7f43ee99a0149e75">simsensors.c</a>
-</li>
-<li>simulateModelAirplane()
-: <a class="el" href="group___sensors.html#gafb414681d83ce8257ccbc3d48ed1b23f">simsensors.c</a>
-</li>
-<li>simulateModelCar()
-: <a class="el" href="group___sensors.html#ga639c7ad4b39ee77380686ddfe1d39094">simsensors.c</a>
-</li>
-<li>simulateModelQuadcopter()
-: <a class="el" href="group___sensors.html#gacdc8ab173877d09842b6b485e569a00e">simsensors.c</a>
-</li>
-<li>simulateYasim()
-: <a class="el" href="group___sensors.html#ga5347d74a25c6e8fc11d5b384108542e9">simsensors.c</a>
 </li>
 <li>sin_approx()
 : <a class="el" href="group___flight_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">misc_math.h</a>
@@ -446,7 +424,7 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 : <a class="el" href="group___on_screen_display.html#ga53e2f2ae7cf52a0d4ae8afcae21475c6">osd_menu.c</a>
 </li>
 <li>STD_PANEL()
-: <a class="el" href="group___char_o_s_d.html#gae84db9734e5ed288e80cf04621349774">panel.c</a>
+: <a class="el" href="group___char_o_s_d.html#ga244eb79d5f0e2b87009b0655d0b34db1">panel.c</a>
 </li>
 <li>sticklimits_menu()
 : <a class="el" href="group___on_screen_display.html#ga7b3229d84cc25b0f9e8af0fdfde295fd">osd_menu.c</a>
@@ -527,16 +505,18 @@ $(document).ready(function(){initNavTree('globals_func_s.html','');});
 : <a class="el" href="dronin-strsep_8h.html#a0d1112b993837e11bf1737040ebdf2b4">dronin-strsep.h</a>
 </li>
 <li>Suspend()
-: <a class="el" href="pios__usb__hid__pwr_8h.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.h</a>
-, <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.c</a>
+: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.c</a>
+, <a class="el" href="pios__usb__hid__pwr_8h.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.h</a>
+, <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.c</a>
 </li>
 <li>SystemCoreClockUpdate()
-: <a class="el" href="group___s_t_m32_f10x___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">cmsis_system.c</a>
+: <a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">cmsis_system.c</a>
 , <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">system_stm32f0xx.c</a>
+, <a class="el" href="group___s_t_m32_f30x___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">cmsis_system.c</a>
 </li>
 <li>SystemInit()
-: <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">system_stm32f0xx.c</a>
-, <a class="el" href="group___s_t_m32_f30x___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">cmsis_system.c</a>
+: <a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">cmsis_system.c</a>
+, <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">system_stm32f0xx.c</a>
 </li>
 <li>systemmod_process_rgb_leds()
 : <a class="el" href="group___system_module.html#ga107237204bc679179166c17b330533a5">rgbleds.h</a>

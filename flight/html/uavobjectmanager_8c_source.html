@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6b208f0</span>
+   &#160;<span id="projectnumber">1b4ea27</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1424,7 +1424,7 @@ $(document).ready(function(){initNavTree('uavobjectmanager_8c_source.html','');}
 <div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;        <span class="keyword">event</span>-&gt;cb(msg, event-&gt;cbInfo.cbCtx, obj_data, len);</div>
 <div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;}</div>
 <div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;</div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;<span class="preprocessor">#if (!defined(SIM_POSIX)) &amp;&amp; defined(__arm__)</span></div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;<span class="preprocessor">#if (!defined(FLIGHT_POSIX)) &amp;&amp; defined(__arm__)</span></div>
 <div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group___u_a_v_object_handling.html#gad8682828352ae8c7713f2ee58adb48cc">invokeCallback</a>(<span class="keyword">struct</span> <a class="code" href="struct_object_event_entry.html">ObjectEventEntry</a> *event, <a class="code" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *msg,</div>
 <div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;                <span class="keywordtype">void</span> *obj_data, <span class="keywordtype">int</span> len) {</div>
 <div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;        <span class="comment">/* If we&#39;re inlined, we need to force these to the right parameter</span></div>

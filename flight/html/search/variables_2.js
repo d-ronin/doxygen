@@ -51,7 +51,7 @@ var searchData=
   ['bfunctionclass',['bFunctionClass',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga29a82765e766cecea56a883db16dd78e',1,'usb_interface_association_desc::bFunctionClass()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga1ed25bc3320ca90e4d3acb4410aea704',1,'bFunctionClass():&#160;pios_usb_defs.h']]],
   ['bfunctionprotocol',['bFunctionProtocol',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gae62dbcef82dd75a085f93d53a9c3e515',1,'usb_interface_association_desc::bFunctionProtocol()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga2b3b905ab34e6e28b57c3ddc51b3487c',1,'bFunctionProtocol():&#160;pios_usb_defs.h']]],
   ['bfunctionsubclass',['bFunctionSubClass',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga8bd62c9bba867dfd7abbba86be72499f',1,'usb_interface_association_desc::bFunctionSubClass()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#gab25f749c091ce99b6868c949c4e45bc3',1,'bFunctionSubClass():&#160;pios_usb_defs.h']]],
-  ['bias_5fcorrect_5fgyro',['bias_correct_gyro',['../group___sensors.html#ga04a6e11e7193041c0246b2b3bb669731',1,'sensors.c']]],
+  ['bias_5fcorrect_5fgyro',['bias_correct_gyro',['../group___stabilization_module.html#ga04a6e11e7193041c0246b2b3bb669731',1,'sensors.c']]],
   ['bind',['bind',['../structpios__dsm__cfg.html#aa476519b30ef3d42a0abba5ce8498805',1,'pios_dsm_cfg']]],
   ['bind_5frx_5fcb',['bind_rx_cb',['../structpios__com__driver.html#aae8a141a2e00fb900376f6eae01e8558',1,'pios_com_driver']]],
   ['bind_5ftx_5fcb',['bind_tx_cb',['../structpios__com__driver.html#ad150f93a1699421e395ab79888e8e544',1,'pios_com_driver']]],

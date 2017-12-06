@@ -1,10 +1,10 @@
 var searchData=
 [
   ['main_2ec',['main.c',['../bl_2common_2main_8c.html',1,'']]],
-  ['main_2ec',['main.c',['../simulation_2fw_2main_8c.html',1,'']]],
+  ['main_2ec',['main.c',['../flyingpio_2fw_2main_8c.html',1,'']]],
   ['main_2ec',['main.c',['../bl_2f1_2main_8c.html',1,'']]],
   ['main_2ec',['main.c',['../bu_2common_2main_8c.html',1,'']]],
-  ['main_2ec',['main.c',['../flyingpio_2fw_2main_8c.html',1,'']]],
+  ['main_2ec',['main.c',['../flightd_2fw_2main_8c.html',1,'']]],
   ['manualcontrol_2ec',['manualcontrol.c',['../manualcontrol_8c.html',1,'']]],
   ['mcuconf_2eh',['mcuconf.h',['../lux_2fw_2mcuconf_8h.html',1,'']]],
   ['mcuconf_2eh',['mcuconf.h',['../sparky2_2fw_2mcuconf_8h.html',1,'']]],
