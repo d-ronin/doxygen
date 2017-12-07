@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">1b4ea27</span>
+   &#160;<span id="projectnumber">e99c5e0</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('uavdataobject_8cpp_source.html','');})
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    mobj = NULL;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;isSet = isSet;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;isPresentOnHardware = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga9f3e150d973455c643bc5f582433cd51">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga9f3e150d973455c643bc5f582433cd51">UAVDataObject::initialize</a>(quint32 instID, <a class="code" href="class_u_a_v_meta_object.html">UAVMetaObject</a> *mobj)</div>
@@ -178,16 +178,16 @@ $(document).ready(function(){initNavTree('uavdataobject_8cpp_source.html','');})
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">  103</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">UAVDataObject::getIsPresentOnHardware</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> isPresentOnHardware;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">UAVDataObject::setIsPresentOnHardware</a>(<span class="keywordtype">bool</span> value)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> temp = isPresentOnHardware;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    isPresentOnHardware = value;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (temp != isPresentOnHardware) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> temp = <a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a> = value;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (temp != <a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a>) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        emit <a class="code" href="group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1">presentOnHardwareChanged</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        emit <a class="code" href="group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1">presentOnHardwareChanged</a>(isPresentOnHardware);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        emit <a class="code" href="group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1">presentOnHardwareChanged</a>(<a class="code" href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">isPresentOnHardware</a>);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga565410bc4fc71be87c359024f6cc8f3c"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga565410bc4fc71be87c359024f6cc8f3c">UAVObject::getDefaultMetadata</a></div><div class="ttdeci">virtual Metadata getDefaultMetadata()=0</div></div>
@@ -197,6 +197,7 @@ $(document).ready(function(){initNavTree('uavdataobject_8cpp_source.html','');})
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga442400ff0a37c73b50d6e5ad9533ace4"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga442400ff0a37c73b50d6e5ad9533ace4">UAVMetaObject::setData</a></div><div class="ttdeci">void setData(const Metadata &amp;mdata)</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00106">uavmetaobject.cpp:106</a></div></div>
 <div class="ttc" id="uavdataobject_8h_html"><div class="ttname"><a href="uavdataobject_8h.html">uavdataobject.h</a></div></div>
 <div class="ttc" id="class_u_a_v_meta_object_html"><div class="ttname"><a href="class_u_a_v_meta_object.html">UAVMetaObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8h_source.html#l00033">uavmetaobject.h:33</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga61cc18bab87b5f1deb2fb09564f7de1f"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f">UAVDataObject::isPresentOnHardware</a></div><div class="ttdeci">bool isPresentOnHardware</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00040">uavdataobject.h:40</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae14c5b7e20f137db436d3c1e7d1949ec"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae14c5b7e20f137db436d3c1e7d1949ec">UAVDataObject::getMetaObject</a></div><div class="ttdeci">UAVMetaObject * getMetaObject()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00099">uavdataobject.cpp:99</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga241aeafcb174351ac76df2ff55b019e2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">UAVDataObject::getIsPresentOnHardware</a></div><div class="ttdeci">bool getIsPresentOnHardware() const </div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00103">uavdataobject.cpp:103</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga98ff6f0f25a431f4efce59fcbe9176e5"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga98ff6f0f25a431f4efce59fcbe9176e5">UAVDataObject::UAVDataObject</a></div><div class="ttdeci">UAVDataObject(quint32 objID, bool isSingleInst, bool isSet, const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00041">uavdataobject.cpp:41</a></div></div>

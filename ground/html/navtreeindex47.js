@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"importexportdialog_8h.html":[6,0,0,0,0,1,15,2],
+"importexportdialog_8h_source.html":[6,0,0,0,0,1,15,2],
 "importexportgadget_8cpp.html":[6,0,0,0,0,1,15,3],
 "importexportgadget_8cpp_source.html":[6,0,0,0,0,1,15,3],
 "importexportgadget_8h.html":[6,0,0,0,0,1,15,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "mapripform_8h_source.html":[6,0,0,0,0,0,4,2,15],
 "mapripper_8cpp.html":[6,0,0,0,0,0,4,2,16],
 "mapripper_8cpp_source.html":[6,0,0,0,0,0,4,2,16],
-"mapripper_8h.html":[6,0,0,0,0,0,4,2,17],
-"mapripper_8h_source.html":[6,0,0,0,0,0,4,2,17],
-"maptype_8h.html":[6,0,0,0,0,0,4,0,16]
+"mapripper_8h.html":[6,0,0,0,0,0,4,2,17]
 };

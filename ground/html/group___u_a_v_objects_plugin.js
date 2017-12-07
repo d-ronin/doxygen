@@ -14,7 +14,8 @@ var group___u_a_v_objects_plugin =
       [ "presentOnHardwareChanged", "group___u_a_v_objects_plugin.html#ga1070461651642568bd35e8728c1bdbb1", null ],
       [ "presentOnHardwareChanged", "group___u_a_v_objects_plugin.html#ga55220139bcfafcbf1c4ec1fb0d204b71", null ],
       [ "setIsPresentOnHardware", "group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9", null ],
-      [ "setMetadata", "group___u_a_v_objects_plugin.html#ga968c4e54cd5088bed83546338e44de6b", null ]
+      [ "setMetadata", "group___u_a_v_objects_plugin.html#ga968c4e54cd5088bed83546338e44de6b", null ],
+      [ "isPresentOnHardware", "group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f", null ]
     ] ],
     [ "UAVMetaObject", "class_u_a_v_meta_object.html", [
       [ "UAVMetaObject", "group___u_a_v_objects_plugin.html#ga82e8ae42383522ae0507b881d11abba5", null ],
@@ -414,5 +415,6 @@ var group___u_a_v_objects_plugin =
     [ "updateRequested", "group___u_a_v_objects_plugin.html#ga13ce31a6262476db602eec857d9b40c1", null ],
     [ "requestUpdate", "group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0", null ],
     [ "requestUpdateAllInstances", "group___u_a_v_objects_plugin.html#ga0a1e84e69bf26a58ffab4245b27b5ac4", null ],
-    [ "updated", "group___u_a_v_objects_plugin.html#ga295ff9d6b0c01a6a8809a4cf9eb027cc", null ]
+    [ "updated", "group___u_a_v_objects_plugin.html#ga295ff9d6b0c01a6a8809a4cf9eb027cc", null ],
+    [ "isPresentOnHardware", "group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f", null ]
 ];

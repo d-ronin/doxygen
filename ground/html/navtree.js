@@ -88,18 +88,18 @@ var NAVTREEINDEX =
 "group___u_a_v_object_browser_plugin.html#ga9b9e52145b78d333effe586a41478701",
 "group___u_a_v_object_widget_utils.html#ga1846362502f57645af53b826ee5537ad",
 "group___u_a_v_object_widget_utils.html#gaef1ebd891852a741315a8b69975876e6",
-"group___u_a_v_objects_plugin.html#ga98ff6f0f25a431f4efce59fcbe9176e5",
-"group___u_a_v_talk_plugin.html#ga496d6211736a7cfd5cee129eb2b8ad95",
-"group___uploader.html#gaa726ecf0db7424f9980ac006267b6bbd",
-"group___usage_stats_plugin.html#ggaa2c4ae2950cc13d46f45f5d2f0900870a49108408f615fd87c5c3b235dd5f142f",
-"importexportgadget_8cpp.html",
-"maptype_8h_source.html",
-"opmapgadgetfactory_8cpp.html",
-"radioprobepage_8cpp.html",
-"splitterorview_8cpp_source.html",
-"telemetrymanager_8cpp_source.html",
-"uavobjecttemplate_8m.html#a770a3d65665549f29ddb8ee060c43cbc",
-"xmlconfig_8h.html"
+"group___u_a_v_objects_plugin.html#ga989154cd5faf0b302825b540583aab8d",
+"group___u_a_v_talk_plugin.html#ga495b5acf35424dbdf221e81f0024ae92",
+"group___uploader.html#ga9de9e55dbc443089543487afbb18c4ce",
+"group___usage_stats_plugin.html#gafcf9befe739d5197b71f33b5ce889940",
+"importexportdialog_8h.html",
+"mapripper_8h_source.html",
+"opmapgadgetconfiguration_8h.html",
+"qwineventnotifier__p_8h.html",
+"spectrogramscopeconfig_8h_source.html",
+"telemetry_8h_source.html",
+"uavobjecttemplate_8m.html#a6f6ccfcf58b31cb6412107d9d5281426",
+"xmlconfig_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

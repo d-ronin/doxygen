@@ -223,7 +223,7 @@ var searchData=
   ['ismouseovermarker',['IsMouseOverMarker',['../group___t_l_map_widget.html#ga974c2e697780b93234f9001d03d5e89f',1,'mapcontrol::MapGraphicItem']]],
   ['isnowplaying',['isNowPlaying',['../group___notify_plugin.html#gabd9ee81e318805b60e89e7045eb7deaa',1,'NotificationItem']]],
   ['isnumeric',['isNumeric',['../group___u_a_v_objects_plugin.html#ga0cb4699ef66456e8555df061e967bc49',1,'UAVObjectField']]],
-  ['ispresentonhardware',['isPresentOnHardware',['../group___u_a_v_object_browser_plugin.html#gae0ceab4db02dfa4b9b551b8352766cac',1,'TreeItem']]],
+  ['ispresentonhardware',['isPresentOnHardware',['../group___u_a_v_object_browser_plugin.html#gae0ceab4db02dfa4b9b551b8352766cac',1,'TreeItem::isPresentOnHardware()'],['../group___u_a_v_objects_plugin.html#ga61cc18bab87b5f1deb2fb09564f7de1f',1,'UAVDataObject::isPresentOnHardware()']]],
   ['isreal',['isReal',['../assertions_8h.html#a3a1d461f3ef729a8b358e8e67d05de29',1,'assertions.h']]],
   ['isrestartneeded',['isRestartNeeded',['../group___setup_wizard.html#ga882149361d85310b21ac7b62e5fa0abd',1,'SetupWizard::isRestartNeeded()'],['../group___setup_wizard.html#ga53deeed450e4e532d976fde372be6a54',1,'VehicleConfigurationSource::isRestartNeeded()']]],
   ['issequential',['isSequential',['../group___raw_h_i_d_plugin.html#gaf9b8ab547528829a7ef19c1d9a9e692a',1,'RawHID']]],
