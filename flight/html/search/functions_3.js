@@ -61,6 +61,7 @@ var searchData=
   ['configuration_5fcheck',['configuration_check',['../group___libraries.html#gabcb80832a82e492c119a231984eba10a',1,'sanitycheck.c']]],
   ['configurationupdatedcb',['configurationUpdatedCb',['../group___system_module.html#ga18ad99b143e1b11eebd225e9f585a500',1,'systemmod.c']]],
   ['connectobj',['connectObj',['../group___u_a_v_object_handling.html#gacd7022477bea6f6da9205eeabc214cae',1,'uavobjectmanager.c']]],
+  ['construct_5ftrampoline',['construct_trampoline',['../group___modules.html#gae4c0ee0fce09abb1ca193b98e1c0afa2',1,'loadable.c']]],
   ['control_5fsource_5fselect',['control_source_select',['../group___control.html#ga5e0cfaff8777cef85564c6db20469bf9',1,'manualcontrol.c']]],
   ['convert_5fgeodetic_5fto_5fmgrs',['Convert_Geodetic_To_MGRS',['../mgrs_8c.html#a2e720e2665c02b0046e144d26bb1bad8',1,'Convert_Geodetic_To_MGRS(double Latitude, double Longitude, int Precision, char *MGRS):&#160;mgrs.c'],['../mgrs_8h.html#a51a474e7723889a666d299a036ed214f',1,'Convert_Geodetic_To_MGRS(double Latitude, double Longitude, int Precision, char *MGRS):&#160;mgrs.c']]],
   ['convert_5fgeodetic_5fto_5fpolar_5fstereographic',['Convert_Geodetic_To_Polar_Stereographic',['../polarst_8c.html#a7cbb0f9d1038cf294ba05ebc86ae3aa2',1,'Convert_Geodetic_To_Polar_Stereographic(double Latitude, double longitude, double *Easting, double *Northing):&#160;polarst.c'],['../polarst_8h.html#a7cbb0f9d1038cf294ba05ebc86ae3aa2',1,'Convert_Geodetic_To_Polar_Stereographic(double Latitude, double longitude, double *Easting, double *Northing):&#160;polarst.c']]],

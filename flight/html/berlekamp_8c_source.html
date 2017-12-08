@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="ecc_8h.html#ad6079f119d46b188fc8f0c8f98cbbc03">  128</a></span>&#160;<a class="code" href="berlekamp_8c.html#ad6079f119d46b188fc8f0c8f98cbbc03">mult_polys</a> (<span class="keywordtype">int</span> dst[], <span class="keywordtype">int</span> p1[], <span class="keywordtype">int</span> p2[])</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, j;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">int</span> tmp1[<a class="code" href="ecc_8h.html#a8521f0d9a069c55226a07fc055408eed">MAXDEG</a>*2];</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">for</span> (i=0; i &lt; (<a class="code" href="ecc_8h.html#a8521f0d9a069c55226a07fc055408eed">MAXDEG</a>*2); i++) dst[i] = 0;</div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                         <span class="keywordtype">int</span> nerasures,</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                         <span class="keywordtype">int</span> erasures[])</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">int</span> r, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, j, err;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">int</span> r, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>, err;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="comment">/* If you want to take advantage of erasure correction, be sure to</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">     set NErasures and ErasureLocs[] with the locations of erasures. </span></div>
@@ -454,6 +454,7 @@ $(document).ready(function(){initNavTree('berlekamp_8c_source.html','');});
 <div class="ttc" id="ecc_8h_html_a67e5fdd13f145fe895d82b04bc7bffc3"><div class="ttname"><a href="ecc_8h.html#a67e5fdd13f145fe895d82b04bc7bffc3">gmult</a></div><div class="ttdeci">int gmult(int a, int b)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00150">galois.c:150</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_a4cd140aecf7c77a91e1b41afb65cdf4f"><div class="ttname"><a href="msp__messages_8h.html#a4cd140aecf7c77a91e1b41afb65cdf4f">d</a></div><div class="ttdeci">uint8_t d</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00098">msp_messages.h:98</a></div></div>
 <div class="ttc" id="berlekamp_8c_html_afe3883a12ae28716adce4ede69d58191"><div class="ttname"><a href="berlekamp_8c.html#afe3883a12ae28716adce4ede69d58191">zero_poly</a></div><div class="ttdeci">void zero_poly(int poly[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00213">berlekamp.c:213</a></div></div>
+<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="berlekamp_8c_html_aedca0b4d3e5bef4c830e5e82b8ebe655"><div class="ttname"><a href="berlekamp_8c.html#aedca0b4d3e5bef4c830e5e82b8ebe655">copy_poly</a></div><div class="ttdeci">void copy_poly(int dst[], int src[])</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00200">berlekamp.c:200</a></div></div>
 <div class="ttc" id="berlekamp_8c_html_af4e660925f042049e868812cd11cd752"><div class="ttname"><a href="berlekamp_8c.html#af4e660925f042049e868812cd11cd752">NErasures</a></div><div class="ttdeci">static int NErasures</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00059">berlekamp.c:59</a></div></div>
 <div class="ttc" id="berlekamp_8c_html_a4271137cd45b58ebcfd7d9828bb9cccc"><div class="ttname"><a href="berlekamp_8c.html#a4271137cd45b58ebcfd7d9828bb9cccc">compute_modified_omega</a></div><div class="ttdeci">static void compute_modified_omega(void)</div><div class="ttdef"><b>Definition:</b> <a href="berlekamp_8c_source.html#l00115">berlekamp.c:115</a></div></div>

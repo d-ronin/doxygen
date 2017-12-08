@@ -20,6 +20,8 @@ var searchData=
   ['matrix_5ftranspose',['matrix_transpose',['../group___flight_math.html#ga7db4bbfcdc84fac92fffadcc240ed626',1,'misc_math.h']]],
   ['max_5ftimer_5fclock',['max_timer_clock',['../group___p_i_o_s___s_e_r_v_o.html#ga8f179a4dff831ab9bef433f0709221ae',1,'pios_servo.c']]],
   ['measurementeq',['MeasurementEq',['../group___i_n_s_g_p_s.html#ga5032060f6c979a9a7a0fe81d8b4ea8fb',1,'MeasurementEq(float X[NUMX], float Be[3], float Y[NUMV]):&#160;insgps14state.c'],['../group___libraries.html#gaca3696f8c0cc70efb18eb3896b2d9176',1,'MeasurementEq(float X[NUMX], float Be[3], float Y[NUMV]):&#160;insgps13state.c']]],
+  ['memmanagehandler_5fc',['MemManageHandler_C',['../group___modules.html#gad2c5dcbbda929a09877ac44bb15f8268',1,'loadable.c']]],
+  ['memmanagevector',['MemManageVector',['../group___modules.html#gaaa66e59d2268d15525c36a29c78413b9',1,'loadable.c']]],
   ['mkdesc',['mkdesc',['../namespacepx__mkfw.html#aea94a6d2b06b762f3e6d6b9bc582eed0',1,'px_mkfw']]],
   ['modified_5fberlekamp_5fmassey',['Modified_Berlekamp_Massey',['../berlekamp_8c.html#a3fa9c2ccc35637876cbb5117bc52fad2',1,'berlekamp.c']]],
   ['module_5fhipri_5finitcall',['MODULE_HIPRI_INITCALL',['../group___actuator_module.html#ga6e58deb47f86039abf936ab1c6f4aae9',1,'MODULE_HIPRI_INITCALL(ActuatorInitialize, ActuatorStart):&#160;actuator.c'],['../group___control.html#gae763f46f543e67fc1ca8e5fe41f67d63',1,'MODULE_HIPRI_INITCALL(ManualControlInitialize, ManualControlStart):&#160;manualcontrol.c'],['../group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557',1,'MODULE_HIPRI_INITCALL(StabilizationInitialize, StabilizationStart):&#160;stabilization.c']]],

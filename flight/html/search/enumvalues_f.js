@@ -119,6 +119,7 @@ var searchData=
   ['pios_5flis_5ftop_5f180deg',['PIOS_LIS_TOP_180DEG',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga7f4cf6aac8d592349028f66dc074bb04a0ec2fcd5b7a1bc9303abe7ad00960ef8',1,'pios_lis3mdl.h']]],
   ['pios_5flis_5ftop_5f270deg',['PIOS_LIS_TOP_270DEG',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga7f4cf6aac8d592349028f66dc074bb04ae5a51dac58b70f7a5b549642a7ed37fb',1,'pios_lis3mdl.h']]],
   ['pios_5flis_5ftop_5f90deg',['PIOS_LIS_TOP_90DEG',['../group___p_i_o_s___l_i_s3_m_d_l.html#gga7f4cf6aac8d592349028f66dc074bb04abc7658cddd0c951a9368261c903e2f42',1,'pios_lis3mdl.h']]],
+  ['pios_5fmodule_5fautotune',['PIOS_MODULE_AUTOTUNE',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a0c32ea27cab578c43879d30e70700ba4',1,'pios_modules.h']]],
   ['pios_5fmodule_5fcomusbbridge',['PIOS_MODULE_COMUSBBRIDGE',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8bf2270419d4161e516e09aeaaff410e',1,'pios_modules.h']]],
   ['pios_5fmodule_5fgps',['PIOS_MODULE_GPS',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8d1467ed9bb5a3868b9fc5af9ba245e5',1,'pios_modules.h']]],
   ['pios_5fmodule_5fnum',['PIOS_MODULE_NUM',['../group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c',1,'pios_modules.h']]],

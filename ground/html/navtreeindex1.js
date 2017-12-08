@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"browserplugin_8cpp_source.html":[6,0,0,0,0,1,36,2],
 "browserplugin_8h.html":[6,0,0,0,0,1,36,3],
 "browserplugin_8h_source.html":[6,0,0,0,0,1,36,3],
 "buffer_8cpp.html":[6,0,0,0,0,1,14,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1f765a1f76bd2ba2f296f84289e9b44f":[5,0,3,0,4,13],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a1fdbeffffeb8b7a7dbb2d30417674d83":[5,0,3,0,4,16],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a20718c1d11fe66633f33bfccc7dbfdf6":[5,0,3,0,4,12],
-"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a32dd76917c01771fb0ad25ff50193fbc":[5,0,3,0,4,9],
-"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a":[5,0,3,0,4,25]
+"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a32dd76917c01771fb0ad25ff50193fbc":[5,0,3,0,4,9]
 };

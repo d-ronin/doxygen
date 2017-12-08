@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3628c7ebcd80e71dd74fc0df729aac7a":[5,0,3,0,4,25],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a3bf586c7c6de7d0e8cbffc91a9895b25":[5,0,3,0,4,2],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a45c4fa79923c8d0624258b8f733125f1":[5,0,3,0,4,22],
 "class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a477c1550169cba561d0cede9d8dc5c2b":[5,0,3,0,4,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "class_my_tabbed_stack_widget.html#a9f0e64fce4a1b4f26e9aa6fee22ab7f5":[5,0,216,1],
 "class_my_tabbed_stack_widget.html#ab4617839c400d58c804ba6b86dc33cc1":[5,0,216,2],
 "class_my_tabbed_stack_widget.html#adb5bf6edcd958fc360a1c8ac429c7a9d":[5,0,216,11],
-"class_not_yet_implemented_page.html":[3,7,1],
-"class_notification_item.html":[3,2,26,2]
+"class_not_yet_implemented_page.html":[3,7,1]
 };

@@ -23,7 +23,8 @@ var bl__messages_8h =
       [ "DFU_PARTITION_BL", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997fea5722b7b547679e553019b9c3ec8a4d41", null ],
       [ "DFU_PARTITION_SETTINGS", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3", null ],
       [ "DFU_PARTITION_AUTOTUNE", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3", null ],
-      [ "DFU_PARTITION_LOG", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2", null ]
+      [ "DFU_PARTITION_LOG", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2", null ],
+      [ "DFU_PARTITION_LOADABLE_EXTENSION", "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c", null ]
     ] ],
     [ "__attribute__", "bl__messages_8h.html#ga88d6351e81fa254cec37b8a9a1353401", null ],
     [ "PACK", "bl__messages_8h.html#ga122970ba3b5a72403763c8d6df04fb9f", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;{</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">float</span> Rib[3][3], Rie[3][3];</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        uint8_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>,j,k;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        uint8_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>,<a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>,k;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">// identity rotation in case of error</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">for</span> (i=0;i&lt;3;i++){</div>
@@ -370,7 +370,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// Rbe = Rbi*Rie = Rib&#39;*Rie</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">for</span> (i=0;i&lt;3;i++)</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="keywordflow">for</span>(j=0;j&lt;3;j++){</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        Rbe[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>][j]=0;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        Rbe[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>][<a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>]=0;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <span class="keywordflow">for</span>(k=0;k&lt;3;k++)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                Rbe[i][j] += Rib[k][i]*Rie[k][j];</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                }</div>
@@ -474,6 +474,7 @@ $(document).ready(function(){initNavTree('coordinate__conversions_8c_source.html
 <div class="ttc" id="coordinate__conversions_8h_html"><div class="ttname"><a href="coordinate__conversions_8h.html">coordinate_conversions.h</a></div><div class="ttdoc">Header for Coordinate conversions library in coordinate_conversions.c. </div></div>
 <div class="ttc" id="group___flight_math_html_ga6dc0e97647b4b3a5689c46aa415fe0b8"><div class="ttname"><a href="group___flight_math.html#ga6dc0e97647b4b3a5689c46aa415fe0b8">CrossProduct</a></div><div class="ttdeci">void CrossProduct(const float v1[3], const float v2[3], float result[3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00316">coordinate_conversions.c:316</a></div></div>
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
+<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="group___flight_math_html_gab25d503661ed9e31c9616b13c72d1ccd"><div class="ttname"><a href="group___flight_math.html#gab25d503661ed9e31c9616b13c72d1ccd">quat_inverse</a></div><div class="ttdeci">void quat_inverse(float q[4])</div><div class="ttdoc">Compute the inverse of a quaternion. </div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00333">coordinate_conversions.c:333</a></div></div>
 <div class="ttc" id="group___flight_math_html_ga0848733f9025a839c84f7e7b71d87c63"><div class="ttname"><a href="group___flight_math.html#ga0848733f9025a839c84f7e7b71d87c63">RotFrom2Vectors</a></div><div class="ttdeci">uint8_t RotFrom2Vectors(const float v1b[3], const float v1e[3], const float v2b[3], const float v2e[3], float Rbe[3][3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00231">coordinate_conversions.c:231</a></div></div>
 <div class="ttc" id="group___flight_math_html_ga0e4bc4f44a08a2e317db0bde882909cc"><div class="ttname"><a href="group___flight_math.html#ga0e4bc4f44a08a2e317db0bde882909cc">Quaternion2RPY</a></div><div class="ttdeci">void Quaternion2RPY(const float q[4], float rpy[3])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00062">coordinate_conversions.c:62</a></div></div>

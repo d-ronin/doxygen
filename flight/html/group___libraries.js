@@ -17,6 +17,19 @@ var group___libraries =
     [ "WorldMagModel.c", "_world_mag_model_8c.html", null ],
     [ "taskmonitor.h", "taskmonitor_8h.html", null ],
     [ "taskmonitor.h", "taskmonitor_8h.html", null ],
+    [ "loadable_extension", "structloadable__extension.html", [
+      [ "entry_offset", "structloadable__extension.html#a44fa83b73923e63a1c3976eb4b498a57", null ],
+      [ "header_crc", "structloadable__extension.html#ae6263a3532583e788082f08e4ab43eb1", null ],
+      [ "length", "structloadable__extension.html#a0bdbe69f4536923acb6e916ff7d42a07", null ],
+      [ "magic", "structloadable__extension.html#aa740c78434707eabe77b7ea328a611f6", null ],
+      [ "payload_crc", "structloadable__extension.html#a787b3968e3b3f567f47abbda5f32cba8", null ],
+      [ "ram_seg_copylen", "structloadable__extension.html#a6ea2a88fbde83825ee86ab4be52227dc", null ],
+      [ "ram_seg_copyoff", "structloadable__extension.html#aef855de78e991af018ff18687f4ce801", null ],
+      [ "ram_seg_gotlen", "structloadable__extension.html#a9e1fccfb378555a95d3de6d3223561cf", null ],
+      [ "ram_seg_len", "structloadable__extension.html#a8a8076385774c86ec234629728f02e53", null ],
+      [ "require_version", "structloadable__extension.html#a5b6ee7148f5a0df54248d8884712995d", null ],
+      [ "reserved", "structloadable__extension.html#a6d599bfcf04c2aea8075e2c77fe4e7f7", null ]
+    ] ],
     [ "path_status", "structpath__status.html", [
       [ "correction_direction", "structpath__status.html#a0931fd2d5f90e4103b4096bae764ca86", null ],
       [ "error", "structpath__status.html#a673ce13b12050e471c15f386e8193ac7", null ],
@@ -110,6 +123,7 @@ var group___libraries =
       [ "Zdot", "struct_w_m_mtype___geo_magnetic_elements.html#a094afb05e04f6d9654a1a469987600a6", null ]
     ] ],
     [ "__isleap", "group___libraries.html#ga775e1e8c08b79c5cf245b9f03ef70908", null ],
+    [ "DECLARE_LOADABLE_EXTENSION", "group___libraries.html#gacf8cde6cdbd6608d78b3416b8a0c3665", null ],
     [ "FALSE", "group___libraries.html#gaa93f0eb578d23995850d61f7d61c55c1", null ],
     [ "LONGEST_MESSAGE", "group___libraries.html#ga1b621f9acff685fd554b1788d45a4601", null ],
     [ "NUMPCUP", "group___libraries.html#ga317a00300e1470e0a8f9dcfa14283bed", null ],
@@ -144,6 +158,8 @@ var group___libraries =
     [ "configuration_check", "group___libraries.html#gabcb80832a82e492c119a231984eba10a", null ],
     [ "CovariancePrediction", "group___libraries.html#ga9d0a534dd25bcd432804e56518620795", null ],
     [ "date_from_timestamp", "group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f", null ],
+    [ "DONT_BUILD_IF", "group___libraries.html#gaa99d283e35ed86126e5536d3f1a5f4ae", null ],
+    [ "DONT_BUILD_IF", "group___libraries.html#gaba8097277e7fab481c945116e3710857", null ],
     [ "DONT_BUILD_IF", "group___libraries.html#ga3b0090a668a361b14c9833616d9afc8e", null ],
     [ "hasSeverity", "group___libraries.html#ga80202f5db85c05e86e4d5d4889961c2c", null ],
     [ "ins_get_num_states", "group___libraries.html#ga62f40f528dea50baf8d414d1f55469af", null ],

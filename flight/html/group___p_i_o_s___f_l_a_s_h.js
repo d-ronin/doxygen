@@ -10,6 +10,7 @@ var group___p_i_o_s___f_l_a_s_h =
     [ "pios_flash_driver", "structpios__flash__driver.html", [
       [ "end_transaction", "group___p_i_o_s___f_l_a_s_h.html#ga402f673d2837c885dee54a2898cccb29", null ],
       [ "erase_sector", "group___p_i_o_s___f_l_a_s_h.html#ga00975ee28fff7d559b0ea1362091660b", null ],
+      [ "get_pointer", "group___p_i_o_s___f_l_a_s_h.html#ga3996ba7fb425713797aed9c691b2328c", null ],
       [ "read_data", "group___p_i_o_s___f_l_a_s_h.html#ga9282fd3e183f9eed7828940bcfe09194", null ],
       [ "start_transaction", "group___p_i_o_s___f_l_a_s_h.html#gab8cbffe6e06265f6d7777fd9faff1d6a", null ],
       [ "write_data", "group___p_i_o_s___f_l_a_s_h.html#ga9b47d41e4bce17794eb4324e46a704bc", null ]
@@ -56,12 +57,14 @@ var group___p_i_o_s___f_l_a_s_h =
       [ "FLASH_PARTITION_LABEL_SETTINGS", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a35ba86347414aeed88afa7eca6e8e541", null ],
       [ "FLASH_PARTITION_LABEL_AUTOTUNE", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543", null ],
       [ "FLASH_PARTITION_LABEL_LOG", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b", null ],
+      [ "FLASH_PARTITION_LABEL_LOADABLE_EXTENSION", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685", null ],
       [ "FLASH_PARTITION_NUM_LABELS", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01", null ]
     ] ],
     [ "FLASH_PARTITION_LABEL_AUTOTUNE", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543", null ],
     [ "FLASH_PARTITION_LABEL_BL", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a3137c8381d092dac75ce1e0186be7ed5", null ],
     [ "FLASH_PARTITION_LABEL_EE", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a787ef2f2c159e212eb1abdd84cad9fef", null ],
     [ "FLASH_PARTITION_LABEL_FW", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a6a2bde87805511bad8594803d8e85b73", null ],
+    [ "FLASH_PARTITION_LABEL_LOADABLE_EXTENSION", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685", null ],
     [ "FLASH_PARTITION_LABEL_LOG", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b", null ],
     [ "FLASH_PARTITION_LABEL_SETTINGS", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a35ba86347414aeed88afa7eca6e8e541", null ],
     [ "FLASH_PARTITION_NUM_LABELS", "group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01", null ],
@@ -70,6 +73,7 @@ var group___p_i_o_s___f_l_a_s_h =
     [ "PIOS_FLASH_erase_range", "group___p_i_o_s___f_l_a_s_h.html#ga8d12d95c9902d85f21d486b6af80bbd2", null ],
     [ "PIOS_FLASH_find_partition_id", "group___p_i_o_s___f_l_a_s_h.html#ga48244562c8191753001dd4876cf84aca", null ],
     [ "PIOS_FLASH_fixup_partitions_for_capacity", "group___p_i_o_s___f_l_a_s_h.html#gadd9970ba39fddca2c2af22396284836f", null ],
+    [ "PIOS_FLASH_get_address", "group___p_i_o_s___f_l_a_s_h.html#ga29787f497592345d5bf80d7d522970d8", null ],
     [ "PIOS_FLASH_get_num_partitions", "group___p_i_o_s___f_l_a_s_h.html#gae1e540b9b876e9bc4ffb796be502ea7f", null ],
     [ "PIOS_FLASH_get_partition_size", "group___p_i_o_s___f_l_a_s_h.html#ga419099f2eaa0b46517ceda9492c8b202", null ],
     [ "PIOS_Flash_Jedec_GetCapacity", "group___p_i_o_s___f_l_a_s_h.html#ga451a4ab8dbdc0f53823ac54604df8aee", null ],
@@ -90,6 +94,7 @@ var group___p_i_o_s___f_l_a_s_h =
     [ "expect_manufacturer", "group___p_i_o_s___f_l_a_s_h.html#gab7416f66a2c392cc5a27e12cbf4e9a07", null ],
     [ "expect_memorytype", "group___p_i_o_s___f_l_a_s_h.html#gacfb5714f6cef5d14a78a38ebe2369b43", null ],
     [ "first_sector", "group___p_i_o_s___f_l_a_s_h.html#gae9f4c27c2d520045bc8ec9242d332ed3", null ],
+    [ "get_pointer", "group___p_i_o_s___f_l_a_s_h.html#ga3996ba7fb425713797aed9c691b2328c", null ],
     [ "label", "group___p_i_o_s___f_l_a_s_h.html#gadd0221169fb111227a813a6e8822fcec", null ],
     [ "last_sector", "group___p_i_o_s___f_l_a_s_h.html#ga54f595478ecc371d8fb796448cde0137", null ],
     [ "last_sector", "group___p_i_o_s___f_l_a_s_h.html#ga53e2b427af23650c06c526ca5ad5ca25", null ],

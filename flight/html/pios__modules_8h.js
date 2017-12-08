@@ -18,10 +18,12 @@ var pios__modules_8h =
       [ "PIOS_MODULE_UAVOMSPBRIDGE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a10c67c9258a1eaf13e3c98a9c670b035", null ],
       [ "PIOS_MODULE_UAVOCROSSFIRETELEMETRY", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a3b774a67997319953ab26d5fa51a3955", null ],
       [ "PIOS_MODULE_VTXCONFIG", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a88f4ecaab86bbf6541b0440ec24ff59a", null ],
+      [ "PIOS_MODULE_AUTOTUNE", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a0c32ea27cab578c43879d30e70700ba4", null ],
       [ "PIOS_MODULE_NUM", "pios__modules_8h.html#gga0c75b61e067ee5be01eb6682ce7c8f60a56046aebafecf023ca53de243ff23a4c", null ]
     ] ],
     [ "actuator_send_dshot_command", "pios__modules_8h.html#ga2047690c019a9b835033f44645ae8304", null ],
     [ "PIOS_Modules_Enable", "pios__modules_8h.html#ga039145f6fcbc2953d363dc6dc7ad73ea", null ],
     [ "PIOS_Modules_IsEnabled", "pios__modules_8h.html#gac1560fe3947f8270b373a7ea54b393dc", null ],
+    [ "system_annunc_custom_string", "pios__modules_8h.html#gac374c4b31e49061afbb7dd23bcd1a3f7", null ],
     [ "actuator_interlock", "pios__modules_8h.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ]
 ];

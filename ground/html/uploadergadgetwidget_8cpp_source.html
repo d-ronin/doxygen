@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -1430,565 +1430,593 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;            QTableWidgetItem *label;</div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;            QTableWidgetItem *size;</div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;            <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;            QString name;</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;            m_widget-&gt;partitionBrowserGB-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;            m_widget-&gt;partitionBrowserTW-&gt;setRowCount(dev.<a class="code" href="group___uploader.html#ga5520e776ad3920f6a3cf5dbca46d9fb0">PartitionSizes</a>.length());</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, dev.<a class="code" href="group___uploader.html#ga5520e776ad3920f6a3cf5dbca46d9fb0">PartitionSizes</a>) {</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                <span class="keywordflow">switch</span> (index) {</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea21fd6b3ea09d1ff3bca44a7facf73e8e">DFU_PARTITION_FW</a>:</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                    name = <span class="stringliteral">&quot;Firmware&quot;</span>;</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea6a3d4ee0f00e71f903a165e9fbb10c93">DFU_PARTITION_DESC</a>:</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;                    name = <span class="stringliteral">&quot;Metadata&quot;</span>;</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea5722b7b547679e553019b9c3ec8a4d41">DFU_PARTITION_BL</a>:</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                    name = <span class="stringliteral">&quot;Bootloader&quot;</span>;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3">DFU_PARTITION_SETTINGS</a>:</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                    name = <span class="stringliteral">&quot;Settings&quot;</span>;</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3">DFU_PARTITION_AUTOTUNE</a>:</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                    name = <span class="stringliteral">&quot;AutoTune&quot;</span>;</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2">DFU_PARTITION_LOG</a>:</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                    name = <span class="stringliteral">&quot;Log&quot;</span>;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                    name = QString::number(index);</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                }</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                label = <span class="keyword">new</span> QTableWidgetItem(name);</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                size = <span class="keyword">new</span> QTableWidgetItem(QString::number(i));</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                size-&gt;setTextAlignment(Qt::AlignRight);</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                m_widget-&gt;partitionBrowserTW-&gt;setItem(index, 0, label);</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                m_widget-&gt;partitionBrowserTW-&gt;setItem(index, 1, size);</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                ++index;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;            }</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;            m_widget-&gt;partitionBrowserTW-&gt;setRowCount(0);</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        }</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;        <a class="code" href="structdevice_info.html">deviceInfo</a> info;</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a> = brdMgr-&gt;<a class="code" href="group___core_plugin.html#ga8c20a34ba137f0263f3d5d17e8193d24">getBoard</a>(dev.<a class="code" href="group___uploader.html#ga6dfbf5113f62a7d7f7c71c618744ea0d">ID</a> &gt;&gt; 8);</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        <span class="keywordflow">if</span> (!info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Board not supported!&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        }</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        info.<a class="code" href="structdevice_info.html#a11c0e01d0d01c04fb37571dfd72120a4">bl_version</a> = QString::number(dev.<a class="code" href="group___uploader.html#ga6f584609b0c34d0a6e9f4f25168bf901">BL_Version</a>, 16);</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        info.<a class="code" href="structdevice_info.html#a4c7f3d6cd35d1cd5f8756075d915d704">cpu_serial</a> = <span class="stringliteral">&quot;Not Available&quot;</span>;</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        info.<a class="code" href="structdevice_info.html#ac8171c63846102b491a666633b80aea4">hw_revision</a> = QString::number(dev.<a class="code" href="group___uploader.html#gaa726ecf0db7424f9980ac006267b6bbd">HW_Rev</a>);</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        info.<a class="code" href="structdevice_info.html#afca090b1aeead1545be65b70fb65f05a">max_code_size</a> = QString::number(dev.<a class="code" href="group___uploader.html#gabd16f4e0796a41d99e70eaa2251c5767">SizeOfCode</a>);</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        DeviceInformationUpdate(info);</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        iapUpdated = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        <span class="keywordflow">if</span> (!inUpgrader) {</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Connection to bootloader successful&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;            <span class="keywordflow">if</span> (FirmwareLoadFromFile(getImagePath(info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;shortName()), &amp;loadedFile)) {</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                FirmwareLoadedClear(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;                FirmwareLoadedUpdate(loadedFile);</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                setStatusInfo(tr(<span class="stringliteral">&quot;Ready to flash firmware&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                this-&gt;activateWindow();</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;                m_widget-&gt;flashButton-&gt;setFocus();</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;            }</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Connected to upgrader-loader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;            <span class="keywordtype">int</span> row_count = 0;</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;            QString name;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>, dev.<a class="code" href="group___uploader.html#ga5520e776ad3920f6a3cf5dbca46d9fb0">PartitionSizes</a>) {</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                <span class="keywordflow">if</span> (i &lt;= 0) {</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                    <span class="comment">/* PartitionSizes is now sparse; there may be 0 sized parts</span></div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;<span class="comment">                     * in the middle.</span></div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="comment">                     */</span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                    ++index;</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                }</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                <span class="keywordflow">switch</span> (index) {</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea21fd6b3ea09d1ff3bca44a7facf73e8e">DFU_PARTITION_FW</a>:</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                    name = <span class="stringliteral">&quot;Firmware&quot;</span>;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea6a3d4ee0f00e71f903a165e9fbb10c93">DFU_PARTITION_DESC</a>:</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                    name = <span class="stringliteral">&quot;Metadata&quot;</span>;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea5722b7b547679e553019b9c3ec8a4d41">DFU_PARTITION_BL</a>:</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                    name = <span class="stringliteral">&quot;Bootloader&quot;</span>;</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3">DFU_PARTITION_SETTINGS</a>:</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                    name = <span class="stringliteral">&quot;Settings&quot;</span>;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3">DFU_PARTITION_AUTOTUNE</a>:</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                    name = <span class="stringliteral">&quot;AutoTune&quot;</span>;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2">DFU_PARTITION_LOG</a>:</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                    name = <span class="stringliteral">&quot;Log&quot;</span>;</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c">DFU_PARTITION_LOADABLE_EXTENSION</a>:</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;                    name = <span class="stringliteral">&quot;Extension&quot;</span>;</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;                    name = QString::number(index);</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;                }</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;                label = <span class="keyword">new</span> QTableWidgetItem(name);</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;                size = <span class="keyword">new</span> QTableWidgetItem(QString::number(i));</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;                label-&gt;setData(Qt::UserRole, index);</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                size-&gt;setData(Qt::UserRole, index);</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;                size-&gt;setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;                m_widget-&gt;partitionBrowserTW-&gt;setRowCount(row_count + 1);</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;                m_widget-&gt;partitionBrowserTW-&gt;setItem(row_count, 0, label);</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;                m_widget-&gt;partitionBrowserTW-&gt;setItem(row_count, 1, size);</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;                ++index;</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                ++row_count;</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;            }</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;            m_widget-&gt;partitionBrowserGB-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;            m_widget-&gt;partitionBrowserTW-&gt;setRowCount(0);</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        }</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        <a class="code" href="structdevice_info.html">deviceInfo</a> info;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;        info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a> = brdMgr-&gt;<a class="code" href="group___core_plugin.html#ga8c20a34ba137f0263f3d5d17e8193d24">getBoard</a>(dev.<a class="code" href="group___uploader.html#ga6dfbf5113f62a7d7f7c71c618744ea0d">ID</a> &gt;&gt; 8);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        <span class="keywordflow">if</span> (!info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Board not supported!&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        }</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <span class="keywordflow">if</span> (triggerUpgrading) {</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;            <span class="keywordflow">if</span> (currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;                <span class="keywordtype">bool</span> canBeUpgraded = currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;queryCapabilities(</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                    <a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a>);</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        info.<a class="code" href="structdevice_info.html#a11c0e01d0d01c04fb37571dfd72120a4">bl_version</a> = QString::number(dev.<a class="code" href="group___uploader.html#ga6f584609b0c34d0a6e9f4f25168bf901">BL_Version</a>, 16);</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        info.<a class="code" href="structdevice_info.html#a4c7f3d6cd35d1cd5f8756075d915d704">cpu_serial</a> = <span class="stringliteral">&quot;Not Available&quot;</span>;</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        info.<a class="code" href="structdevice_info.html#ac8171c63846102b491a666633b80aea4">hw_revision</a> = QString::number(dev.<a class="code" href="group___uploader.html#gaa726ecf0db7424f9980ac006267b6bbd">HW_Rev</a>);</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        info.<a class="code" href="structdevice_info.html#afca090b1aeead1545be65b70fb65f05a">max_code_size</a> = QString::number(dev.<a class="code" href="group___uploader.html#gabd16f4e0796a41d99e70eaa2251c5767">SizeOfCode</a>);</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        DeviceInformationUpdate(info);</div>
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                <span class="keywordflow">if</span> (canBeUpgraded) {</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                    doUpgradeOperation(blankFC, dev);</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                }</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;            }</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        }</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        emit <a class="code" href="group___uploader.html#ga87d448f5964c57b1342f16f75bedc721">enteredLoader</a>();</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Could not open coms with the bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;        setUploaderStatus((<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>));</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    }</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;}</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onBootloaderRemoved()</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;{</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;    conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;    setStatusInfo(tr(<span class="stringliteral">&quot;Bootloader disconnection detected&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dab33439d514d09fbf0133fc46a6fc07f4">uploader::STATUSICON_INFO</a>);</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    DeviceInformationClear();</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    FirmwareOnDeviceClear(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;    PartitionBrowserClear();</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;    <span class="keywordflow">if</span> (uploaderStatus != <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">uploader::UPGRADING_CATCHLOADER</a>) {</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;        setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>);</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;    }</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;}</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::startRescue()</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;{</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;    setStatusInfo(tr(<span class="stringliteral">&quot;Trying to detect bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dab33439d514d09fbf0133fc46a6fc07f4">uploader::STATUSICON_INFO</a>);</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(100);</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    connect(&amp;rescueTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;UploaderGadgetWidget::onRescueTimer,</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;            Qt::UniqueConnection);</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    rescueTimer.start(200);</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    connect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;            &amp;UploaderGadgetWidget::onDeviceDiscovered, Qt::UniqueConnection);</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;    connect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;            &amp;UploaderGadgetWidget::onDeviceDiscovered, Qt::UniqueConnection);</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;}</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onRescueTimer()</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;{</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(m_widget-&gt;progressBar-&gt;value() - 1);</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    <span class="keywordflow">if</span> (m_widget-&gt;progressBar-&gt;value() &lt;= 0) {</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;        disconnect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;                   &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        disconnect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;                   &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        rescueTimer.disconnect();</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Failed to detect bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>);</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;        conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    }</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;}</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onDeviceDiscovered()</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;{</div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;    rescueTimer.stop();</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(0);</div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;    disconnect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;               &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    disconnect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;               &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;}</div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onStatusUpdate(QString text, <span class="keywordtype">int</span> progress)</div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;{</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;    <span class="keywordflow">if</span> (!text.isEmpty())</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;        setStatusInfo(text, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;    <span class="keywordflow">if</span> (progress != -1)</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;        m_widget-&gt;progressBar-&gt;setValue(progress);</div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;}</div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::triggerPartitionDownload(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;{</div>
-<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
-<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;    <span class="keywordtype">int</span> size = m_widget-&gt;partitionBrowserTW-&gt;item(index, 1)-&gt;text().toInt();</div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;</div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;    setStatusInfo(<span class="stringliteral">&quot;&quot;</span>, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>);</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;    tempArray.clear();</div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    dfu.DownloadPartitionThreaded(&amp;tempArray, (<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index, size);</div>
-<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;}</div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionSave()</div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;{</div>
-<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;row();</div>
-<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;</div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;    QEventLoop loop;</div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;</div>
-<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;    <span class="keywordtype">bool</span> operationSuccess = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;</div>
-<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;    <span class="comment">/* disconnects when loop comes out of scope */</span></div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;    connect(&amp;dfu, &amp;DFUObject::downloadFinished, &amp;loop, [&amp;](<span class="keywordtype">bool</span> status) {</div>
-<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;        operationSuccess = status;</div>
-<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;        loop.exit();</div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;    });</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;        iapUpdated = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <span class="keywordflow">if</span> (!inUpgrader) {</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Connection to bootloader successful&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;            <span class="keywordflow">if</span> (FirmwareLoadFromFile(getImagePath(info.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;shortName()), &amp;loadedFile)) {</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;                FirmwareLoadedClear(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;                FirmwareLoadedUpdate(loadedFile);</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;                setStatusInfo(tr(<span class="stringliteral">&quot;Ready to flash firmware&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;                this-&gt;activateWindow();</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;                m_widget-&gt;flashButton-&gt;setFocus();</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;            }</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Connected to upgrader-loader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;        }</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        <span class="keywordflow">if</span> (triggerUpgrading) {</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;            <span class="keywordflow">if</span> (currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;                <span class="keywordtype">bool</span> canBeUpgraded = currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;queryCapabilities(</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;                    <a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a>);</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;                <span class="keywordflow">if</span> (canBeUpgraded) {</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;                    doUpgradeOperation(blankFC, dev);</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;                }</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;            }</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;        }</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;        emit <a class="code" href="group___uploader.html#ga87d448f5964c57b1342f16f75bedc721">enteredLoader</a>();</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Could not open coms with the bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        setUploaderStatus((<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>));</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    }</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;}</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onBootloaderRemoved()</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;{</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;    conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    setStatusInfo(tr(<span class="stringliteral">&quot;Bootloader disconnection detected&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dab33439d514d09fbf0133fc46a6fc07f4">uploader::STATUSICON_INFO</a>);</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    DeviceInformationClear();</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;    FirmwareOnDeviceClear(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;    PartitionBrowserClear();</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    <span class="keywordflow">if</span> (uploaderStatus != <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">uploader::UPGRADING_CATCHLOADER</a>) {</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>);</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    }</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;}</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::startRescue()</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;{</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;    setStatusInfo(tr(<span class="stringliteral">&quot;Trying to detect bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dab33439d514d09fbf0133fc46a6fc07f4">uploader::STATUSICON_INFO</a>);</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(100);</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;    connect(&amp;rescueTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;UploaderGadgetWidget::onRescueTimer,</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;            Qt::UniqueConnection);</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;    rescueTimer.start(200);</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    connect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;            &amp;UploaderGadgetWidget::onDeviceDiscovered, Qt::UniqueConnection);</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;    connect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;            &amp;UploaderGadgetWidget::onDeviceDiscovered, Qt::UniqueConnection);</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;}</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onRescueTimer()</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;{</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(m_widget-&gt;progressBar-&gt;value() - 1);</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;    <span class="keywordflow">if</span> (m_widget-&gt;progressBar-&gt;value() &lt;= 0) {</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;        disconnect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;                   &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;        disconnect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;                   &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;        rescueTimer.disconnect();</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Failed to detect bootloader&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;        setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>);</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;        conMngr-&gt;<a class="code" href="group___core_plugin.html#gaffc78d62ba1226c3d690158e30db4dee">resumePolling</a>();</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;    }</div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;}</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onDeviceDiscovered()</div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;{</div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;    rescueTimer.stop();</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;    m_widget-&gt;progressBar-&gt;setValue(0);</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;    disconnect(usbFilterBL, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;               &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;    disconnect(usbFilterUP, &amp;<a class="code" href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;               &amp;UploaderGadgetWidget::onDeviceDiscovered);</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;}</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;</div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onStatusUpdate(QString text, <span class="keywordtype">int</span> progress)</div>
+<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;{</div>
+<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;    <span class="keywordflow">if</span> (!text.isEmpty())</div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;        setStatusInfo(text, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
+<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;    <span class="keywordflow">if</span> (progress != -1)</div>
+<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;        m_widget-&gt;progressBar-&gt;setValue(progress);</div>
+<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;}</div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::triggerPartitionDownload(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;{</div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;</div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;    triggerPartitionDownload(index);</div>
-<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;</div>
-<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;    loop.exec();</div>
-<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;</div>
-<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;    <span class="keywordflow">if</span> (operationSuccess) {</div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition download success&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;        QString filename =</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;            QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save File&quot;</span>), QDir::homePath(), <span class="stringliteral">&quot;*.bin&quot;</span>);</div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;        <span class="keywordflow">if</span> (filename.isEmpty()) {</div>
-<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Save cancelled&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;        }</div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;        <span class="keywordflow">if</span> (!filename.endsWith(<span class="stringliteral">&quot;.bin&quot;</span>, Qt::CaseInsensitive))</div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;            filename.append(<span class="stringliteral">&quot;.bin&quot;</span>);</div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;        QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(filename);</div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly)) {</div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;            <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(tempArray);</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;            <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Partition written to file&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;        } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Error could not open file for save&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition download failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    }</div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;</div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;}</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;    <a class="code" href="structtl__dfu_1_1device.html">tl_dfu::device</a> dev = dfu.findCapabilities();</div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;    <span class="keywordtype">int</span> size = dev.<a class="code" href="group___uploader.html#ga5520e776ad3920f6a3cf5dbca46d9fb0">PartitionSizes</a>[index];</div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;</div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;    setStatusInfo(<span class="stringliteral">&quot;&quot;</span>, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
+<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>);</div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;    tempArray.clear();</div>
+<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;    dfu.DownloadPartitionThreaded(&amp;tempArray, (<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index, size);</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;}</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;</div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionSave()</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;{</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;data(Qt::UserRole).toInt();</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    QEventLoop loop;</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;</div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;    <span class="keywordtype">bool</span> operationSuccess = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    <span class="comment">/* disconnects when loop comes out of scope */</span></div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    connect(&amp;dfu, &amp;DFUObject::downloadFinished, &amp;loop, [&amp;](<span class="keywordtype">bool</span> status) {</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;        operationSuccess = status;</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;        loop.exit();</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    });</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    triggerPartitionDownload(index);</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;</div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    loop.exec();</div>
 <div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;</div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionFlash()</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;{</div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;    QString filename =</div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;        QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open File&quot;</span>), QDir::homePath(), <span class="stringliteral">&quot;*.bin&quot;</span>);</div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;    <span class="keywordflow">if</span> (filename.isEmpty()) {</div>
-<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Flash cancelled&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;    }</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(filename);</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::ReadOnly)) {</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Could not open file for read&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    }</div>
-<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;    tempArray.clear();</div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;    tempArray = <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.readAll();</div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;</div>
-<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;row();</div>
-<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;    <span class="keywordtype">int</span> size = m_widget-&gt;partitionBrowserTW-&gt;item(index, 1)-&gt;text().toInt();</div>
-<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;</div>
-<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;    <span class="keywordflow">if</span> (tempArray.length() &gt; size) {</div>
-<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;File bigger than partition size&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;    }</div>
-<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::warning(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Warning&quot;</span>),</div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;                             tr(<span class="stringliteral">&quot;Are you sure you want to flash the selected partition?&quot;</span>),</div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;                             QMessageBox::Yes, QMessageBox::No)</div>
-<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;        != QMessageBox::Yes)</div>
-<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;    setStatusInfo(<span class="stringliteral">&quot;&quot;</span>, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>);</div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;</div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;    <a class="code" href="group___uploader.html#ga5668196b7ff4028f1f71803e9ff5c7c4">tl_dfu::Status</a> operationSuccess = <a class="code" href="group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4a563943e44f2724d6fd4f42d093712350">DFUidle</a>;</div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;</div>
-<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;    QEventLoop loop;</div>
-<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;</div>
-<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;    <span class="comment">/* disconnects when loop comes out of scope */</span></div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;    connect(&amp;dfu, &amp;DFUObject::uploadFinished, &amp;loop, [&amp;](<a class="code" href="group___uploader.html#ga5668196b7ff4028f1f71803e9ff5c7c4">tl_dfu::Status</a> status) {</div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;        operationSuccess = status;</div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;        loop.exit();</div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;    });</div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;</div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;    dfu.UploadPartitionThreaded(tempArray, (<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index, size);</div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;    <span class="keywordflow">if</span> (operationSuccess) {</div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition download success&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;        QString filename =</div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;            QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save File&quot;</span>), QDir::homePath(), <span class="stringliteral">&quot;*.bin&quot;</span>);</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;        <span class="keywordflow">if</span> (filename.isEmpty()) {</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Save cancelled&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;            setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;        }</div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;        <span class="keywordflow">if</span> (!filename.endsWith(<span class="stringliteral">&quot;.bin&quot;</span>, Qt::CaseInsensitive))</div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;            filename.append(<span class="stringliteral">&quot;.bin&quot;</span>);</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;        QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(filename);</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly)) {</div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;            <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(tempArray);</div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;            <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Partition written to file&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;        } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;            setStatusInfo(tr(<span class="stringliteral">&quot;Error could not open file for save&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition download failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;    }</div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;</div>
+<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;}</div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;</div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionFlash()</div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;{</div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;    QString filename =</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;        QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open File&quot;</span>), QDir::homePath(), <span class="stringliteral">&quot;*.bin&quot;</span>);</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;    <span class="keywordflow">if</span> (filename.isEmpty()) {</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Flash cancelled&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;    }</div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(filename);</div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::ReadOnly)) {</div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Could not open file for read&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;    }</div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;    tempArray.clear();</div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;    tempArray = <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.readAll();</div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;</div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;    loop.exec();</div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;</div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;    <span class="keywordflow">if</span> (operationSuccess == <a class="code" href="group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4a9e44395ad4ded84b53a90b8664d86947">Last_operation_Success</a>)</div>
-<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition upload success&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition upload failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;}</div>
-<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;</div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionErase()</div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;{</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;row();</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::warning(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Warning&quot;</span>),</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;                             tr(<span class="stringliteral">&quot;Are you sure you want erase the selected partition?&quot;</span>),</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;                             QMessageBox::Yes, QMessageBox::No)</div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;        != QMessageBox::Yes)</div>
-<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;    <span class="keywordflow">if</span> (dfu.WipePartition((<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index))</div>
-<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition erased&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition erasure failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;}</div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onBootButtonClick()</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;{</div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;    <span class="keywordtype">bool</span> safeboot = (sender() == m_widget-&gt;safeBootButton);</div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;</div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;    <span class="keywordflow">if</span> (telMngr-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">isConnected</a>()) {</div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;        haltOrReset(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    }</div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;</div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;</div>
-<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;    dfu.JumpToApp(safeboot);</div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;    dfu.CloseBootloaderComs();</div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;}</div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;</div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::CheckAutopilotReady()</div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;{</div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;    <span class="keywordflow">if</span> (telemetryConnected &amp;&amp; iapUpdated) {</div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;        onAutopilotReady();</div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;    }</div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;}</div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;</div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::CheckInBootloaderState()</div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;{</div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    <span class="keywordflow">if</span> (uploaderStatus != <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>) {</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Cannot perform the selected operation if not in bootloader state&quot;</span>),</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;                      <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;    } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;}</div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;data(Qt::UserRole).toInt();</div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;    <a class="code" href="structtl__dfu_1_1device.html">tl_dfu::device</a> dev = dfu.findCapabilities();</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;    <span class="keywordtype">int</span> size = dev.<a class="code" href="group___uploader.html#ga5520e776ad3920f6a3cf5dbca46d9fb0">PartitionSizes</a>[index];</div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;</div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;    <span class="keywordflow">if</span> (tempArray.length() &gt; size) {</div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;File bigger than partition size&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;    }</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::warning(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Warning&quot;</span>),</div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;                             tr(<span class="stringliteral">&quot;Are you sure you want to flash the selected partition?&quot;</span>),</div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;                             QMessageBox::Yes, QMessageBox::No)</div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;        != QMessageBox::Yes)</div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    setStatusInfo(<span class="stringliteral">&quot;&quot;</span>, <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>);</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>);</div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;    <a class="code" href="group___uploader.html#ga5668196b7ff4028f1f71803e9ff5c7c4">tl_dfu::Status</a> operationSuccess = <a class="code" href="group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4a563943e44f2724d6fd4f42d093712350">DFUidle</a>;</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;</div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;    QEventLoop loop;</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;</div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;    <span class="comment">/* disconnects when loop comes out of scope */</span></div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;    connect(&amp;dfu, &amp;DFUObject::uploadFinished, &amp;loop, [&amp;](<a class="code" href="group___uploader.html#ga5668196b7ff4028f1f71803e9ff5c7c4">tl_dfu::Status</a> status) {</div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;        operationSuccess = status;</div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        loop.exit();</div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;    });</div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;    dfu.UploadPartitionThreaded(tempArray, (<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index, size);</div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;</div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;    loop.exec();</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;    <span class="keywordflow">if</span> (operationSuccess == <a class="code" href="group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4a9e44395ad4ded84b53a90b8664d86947">Last_operation_Success</a>)</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition upload success&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition upload failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;    setUploaderStatus(<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>);</div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;}</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onPartitionErase()</div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;{</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;    <span class="keywordtype">int</span> index = m_widget-&gt;partitionBrowserTW-&gt;selectedItems().first()-&gt;data(Qt::UserRole).toInt();</div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;</div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::warning(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Warning&quot;</span>),</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;                             tr(<span class="stringliteral">&quot;Are you sure you want erase the selected partition?&quot;</span>),</div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;                             QMessageBox::Yes, QMessageBox::No)</div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;        != QMessageBox::Yes)</div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;    <span class="keywordflow">if</span> (dfu.WipePartition((<a class="code" href="group___uploader.html#ga7a55292dbba91b1d8a44bc6b127997fe">dfu_partition_label</a>)index))</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition erased&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>);</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Partition erasure failed&quot;</span>), <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;}</div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::onBootButtonClick()</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;{</div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;    <span class="keywordtype">bool</span> safeboot = (sender() == m_widget-&gt;safeBootButton);</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    <span class="keywordflow">if</span> (telMngr-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga753148204d39c087c9aa27c9dbe9df98">isConnected</a>()) {</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;        haltOrReset(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    }</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;    <span class="keywordflow">if</span> (!CheckInBootloaderState())</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;</div>
-<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;QString UploaderGadgetWidget::LoadFirmwareFileDialog(QString boardName)</div>
-<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;{</div>
-<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;    QFileDialog::Options options;</div>
-<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;    QString selectedFilter;</div>
-<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;    boardName = boardName.toLower();</div>
-<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;</div>
-<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;    QString fwDirectoryStr = getImagePath(boardName);</div>
-<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;</div>
-<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;    QString fileName = QFileDialog::getOpenFileName(</div>
-<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;        <span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Select firmware file&quot;</span>), fwDirectoryStr, tr(<span class="stringliteral">&quot;Firmware (fw_*.tlfw);;&quot;</span></div>
-<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;                                                             <span class="stringliteral">&quot;Bootloader Update (bu_*.tlfw);;&quot;</span></div>
-<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;                                                             <span class="stringliteral">&quot;All (*.tlfw *.opfw *.bin)&quot;</span>),</div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;        &amp;selectedFilter, options);</div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;    <span class="keywordflow">return</span> fileName;</div>
-<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;}</div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;</div>
-<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::setStatusInfo(QString str, <a class="code" href="group___uploader.html#ga769c7820b34912a5b82a8d29aa47308d">uploader::StatusIcon</a> ic)</div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;{</div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    qDebug() &lt;&lt; str;</div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;</div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;    QPixmap px;</div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;    m_widget-&gt;statusLabel-&gt;setText(str);</div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;    <span class="keywordflow">switch</span> (ic) {</div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>:</div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/system-run.svg&quot;</span>));</div>
-<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>:</div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/dialog-apply.svg&quot;</span>));</div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>:</div>
-<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/process-stop.svg&quot;</span>));</div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/gtk-info.svg&quot;</span>));</div>
-<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;    }</div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    m_widget-&gt;statusPic-&gt;setPixmap(px);</div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;}</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;</div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690">uploader::UploaderStatus</a> UploaderGadgetWidget::getUploaderStatus()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    <span class="keywordflow">return</span> uploaderStatus;</div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;}</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;</div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::haveSettingsPart()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;    <span class="comment">/* Would be nice to determine this in a nicer way */</span></div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    <span class="keywordflow">if</span> (m_widget-&gt;partitionBrowserTW-&gt;rowCount() &gt;= <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3">DFU_PARTITION_SETTINGS</a>) {</div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    }</div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;</div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;}</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;</div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::setUploaderStatus(<span class="keyword">const</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690">uploader::UploaderStatus</a> &amp;value)</div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;{</div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;    uploaderStatus = value;</div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;    <span class="keywordflow">switch</span> (uploaderStatus) {</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>:</div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;</div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;</div>
-<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807">uploader::ENTERING_LOADER</a>:</div>
-<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;</div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>:</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;    dfu.JumpToApp(safeboot);</div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;    dfu.CloseBootloaderComs();</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;}</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;</div>
+<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::CheckAutopilotReady()</div>
+<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;{</div>
+<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;    <span class="keywordflow">if</span> (telemetryConnected &amp;&amp; iapUpdated) {</div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;        onAutopilotReady();</div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;    }</div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;}</div>
+<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;</div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::CheckInBootloaderState()</div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;{</div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;    <span class="keywordflow">if</span> (uploaderStatus != <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>) {</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;        setStatusInfo(tr(<span class="stringliteral">&quot;Cannot perform the selected operation if not in bootloader state&quot;</span>),</div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;                      <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>);</div>
+<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;}</div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;QString UploaderGadgetWidget::LoadFirmwareFileDialog(QString boardName)</div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;{</div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;    QFileDialog::Options options;</div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;    QString selectedFilter;</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;    boardName = boardName.toLower();</div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;</div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;    QString fwDirectoryStr = getImagePath(boardName);</div>
+<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;</div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;    QString fileName = QFileDialog::getOpenFileName(</div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;        <span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Select firmware file&quot;</span>), fwDirectoryStr, tr(<span class="stringliteral">&quot;Firmware (fw_*.tlfw);;&quot;</span></div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;                                                             <span class="stringliteral">&quot;Bootloader Update (bu_*.tlfw);;&quot;</span></div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;                                                             <span class="stringliteral">&quot;All (*.tlfw *.opfw *.bin)&quot;</span>),</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;        &amp;selectedFilter, options);</div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    <span class="keywordflow">return</span> fileName;</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;}</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::setStatusInfo(QString str, <a class="code" href="group___uploader.html#ga769c7820b34912a5b82a8d29aa47308d">uploader::StatusIcon</a> ic)</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;{</div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    qDebug() &lt;&lt; str;</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;    QPixmap px;</div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    m_widget-&gt;statusLabel-&gt;setText(str);</div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;    <span class="keywordflow">switch</span> (ic) {</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308da13af96448b88ff31b53c18995e183a3f">uploader::STATUSICON_RUNNING</a>:</div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/system-run.svg&quot;</span>));</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308dabd6d1a4a2f86959c7bf6e8f7f55d09d2">uploader::STATUSICON_OK</a>:</div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/dialog-apply.svg&quot;</span>));</div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group___uploader.html#gga769c7820b34912a5b82a8d29aa47308daed4e66e1c35899adda386f9f4cef9350">uploader::STATUSICON_FAIL</a>:</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/process-stop.svg&quot;</span>));</div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;        px.load(QString(<span class="stringliteral">&quot;:/uploader/images/gtk-info.svg&quot;</span>));</div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    }</div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;    m_widget-&gt;statusPic-&gt;setPixmap(px);</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;}</div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;<a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690">uploader::UploaderStatus</a> UploaderGadgetWidget::getUploaderStatus()<span class="keyword"> const</span></div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;    <span class="keywordflow">return</span> uploaderStatus;</div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;}</div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;</div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::haveSettingsPart()<span class="keyword"> const</span></div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;    <span class="comment">/* Would be nice to determine this in a nicer way */</span></div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;    <span class="keywordflow">if</span> (m_widget-&gt;partitionBrowserTW-&gt;rowCount() &gt;= <a class="code" href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3">DFU_PARTITION_SETTINGS</a>) {</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    }</div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;</div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;}</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::setUploaderStatus(<span class="keyword">const</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690">uploader::UploaderStatus</a> &amp;value)</div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;{</div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;    uploaderStatus = value;</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;    <span class="keywordflow">switch</span> (uploaderStatus) {</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">uploader::DISCONNECTED</a>:</div>
 <div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;</div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;</div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;</div>
 <div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;        <span class="keywordflow">if</span> (!loadedFile.isEmpty())</div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;            m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;            m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;</div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(haveSettingsPart());</div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807">uploader::ENTERING_LOADER</a>:</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::ActionsContextMenu);</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e">uploader::CONNECTED_TO_TELEMETRY</a>:</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Enter bootloader&quot;</span>));</div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Reboot&quot;</span>));</div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690abdbbfac16910eb802bf70df43588787e">uploader::UPGRADING</a>:</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">uploader::UPGRADING_CATCHLOADER</a>:</div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>:</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;</div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">uploader::BL_SITTING</a>:</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Rescue&quot;</span>));</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Boot&quot;</span>));</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;</div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;        <span class="keywordflow">if</span> (!loadedFile.isEmpty())</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;            m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;            m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;</div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(haveSettingsPart());</div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::ActionsContextMenu);</div>
 <div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;    }</div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;}</div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;</div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::openHelp()</div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;{</div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;    QDesktopServices::openUrl(QUrl(</div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;        <span class="stringliteral">&quot;https://github.com/d-ronin/dRonin/wiki/OnlineHelp:-Uploader-Plugin&quot;</span>, QUrl::StrictMode));</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;}</div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;</div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;QString UploaderGadgetWidget::getImagePath(QString boardName, QString imageType)</div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;{</div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    QString imageName = QString(<span class="stringliteral">&quot;%1_%2&quot;</span>).arg(imageType).arg(boardName.toLower());</div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;    QString imageNameWithSuffix = QString(<span class="stringliteral">&quot;%1.tlfw&quot;</span>).arg(imageName);</div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;</div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    QStringList paths = QStringList()</div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        <span class="comment">/* Relative paths first; try in application bundle or build dir */</span></div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> <span class="comment">// uh, right here?</span></div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../firmware&quot;</span> <span class="comment">// windows installed path</span></div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;        <span class="comment">/* Added ../build to these to make sure our assumptions are right</span></div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">         * about it being a build tree */</span></div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../../../../build&quot;</span> <span class="comment">// windows / linux build</span></div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../../../../../../../build&quot;</span> <span class="comment">// OSX build</span></div>
-<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../Resources/firmware&quot;</span> <span class="comment">// OSX app bundle</span></div>
-<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;/usr/local/&quot;</span> GCS_PROJECT_BRANDING_PRETTY <span class="stringliteral">&quot;/firmware&quot;</span>; <span class="comment">// leenucks deb</span></div>
-<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;</div>
-<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;    <span class="keywordflow">foreach</span> (QString path, paths) {</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;        QDir pathDir = QDir(QCoreApplication::applicationDirPath());</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e">uploader::CONNECTED_TO_TELEMETRY</a>:</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;        m_widget-&gt;rescueButton-&gt;setText(tr(<span class="stringliteral">&quot;Enter bootloader&quot;</span>));</div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;        m_widget-&gt;bootButton-&gt;setText(tr(<span class="stringliteral">&quot;Reboot&quot;</span>));</div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;</div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;</div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690abdbbfac16910eb802bf70df43588787e">uploader::UPGRADING</a>:</div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">uploader::UPGRADING_CATCHLOADER</a>:</div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">uploader::BL_BUSY</a>:</div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;        m_widget-&gt;progressBar-&gt;setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;</div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        m_widget-&gt;rescueButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;        m_widget-&gt;openButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;        m_widget-&gt;bootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;        m_widget-&gt;safeBootButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;        m_widget-&gt;flashButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;        m_widget-&gt;exportConfigButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;        m_widget-&gt;partitionBrowserTW-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;    }</div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;}</div>
 <div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        <span class="keywordflow">if</span> (pathDir.cd(path)) {</div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;            <span class="comment">/* Two things to try. */</span></div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;            QString perTargetPath = QString(<span class="stringliteral">&quot;%1/%2/%3&quot;</span>)</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;                                        .arg(pathDir.absolutePath())</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;                                        .arg(imageName)</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;                                        .arg(imageNameWithSuffix);</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;</div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;            <span class="keywordflow">if</span> (QFile::exists(perTargetPath)) {</div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;                <span class="keywordflow">return</span> perTargetPath;</div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;            }</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;            QString directPath =</div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;                QString(<span class="stringliteral">&quot;%1/%2&quot;</span>).arg(pathDir.absolutePath()).arg(imageNameWithSuffix);</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;<span class="keywordtype">void</span> UploaderGadgetWidget::openHelp()</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;{</div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;    QDesktopServices::openUrl(QUrl(</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;        <span class="stringliteral">&quot;https://github.com/d-ronin/dRonin/wiki/OnlineHelp:-Uploader-Plugin&quot;</span>, QUrl::StrictMode));</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;}</div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;</div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;QString UploaderGadgetWidget::getImagePath(QString boardName, QString imageType)</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;{</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    QString imageName = QString(<span class="stringliteral">&quot;%1_%2&quot;</span>).arg(imageType).arg(boardName.toLower());</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    QString imageNameWithSuffix = QString(<span class="stringliteral">&quot;%1.tlfw&quot;</span>).arg(imageName);</div>
 <div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;</div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;            <span class="keywordflow">if</span> (QFile::exists(directPath)) {</div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;                <span class="keywordflow">return</span> directPath;</div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;            }</div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;        }</div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;    }</div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;</div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;    <span class="comment">/* This is sane for file dialogs, too. */</span></div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;}</div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::FirmwareLoadFromFile(QString filename, QByteArray *contents)</div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;{</div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    QFileInfo fileinfo = QFileInfo(filename);</div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;    QStringList paths = QStringList()</div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;        <span class="comment">/* Relative paths first; try in application bundle or build dir */</span></div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> <span class="comment">// uh, right here?</span></div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../firmware&quot;</span> <span class="comment">// windows installed path</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;        <span class="comment">/* Added ../build to these to make sure our assumptions are right</span></div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="comment">         * about it being a build tree */</span></div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../../../../build&quot;</span> <span class="comment">// windows / linux build</span></div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../../../../../../../build&quot;</span> <span class="comment">// OSX build</span></div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;../Resources/firmware&quot;</span> <span class="comment">// OSX app bundle</span></div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;/usr/local/&quot;</span> GCS_PROJECT_BRANDING_PRETTY <span class="stringliteral">&quot;/firmware&quot;</span>; <span class="comment">// leenucks deb</span></div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;    <span class="keywordflow">foreach</span> (QString path, paths) {</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;        QDir pathDir = QDir(QCoreApplication::applicationDirPath());</div>
 <div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;    <span class="keywordflow">if</span> (!fileinfo.exists())</div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;</div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(fileinfo.filePath());</div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::ReadOnly))</div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;    *contents = <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.readAll();</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;</div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;}</div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;        <span class="keywordflow">if</span> (pathDir.cd(path)) {</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;            <span class="comment">/* Two things to try. */</span></div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;            QString perTargetPath = QString(<span class="stringliteral">&quot;%1/%2/%3&quot;</span>)</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;                                        .arg(pathDir.absolutePath())</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;                                        .arg(imageName)</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;                                        .arg(imageNameWithSuffix);</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;            <span class="keywordflow">if</span> (QFile::exists(perTargetPath)) {</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;                <span class="keywordflow">return</span> perTargetPath;</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;            }</div>
 <div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;</div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::FirmwareCheckForUpdate(<a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> device)</div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;{</div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;    <span class="keywordflow">if</span> (currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;        <span class="keywordtype">bool</span> canBeUpgraded =</div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;            currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;queryCapabilities(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a>);</div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;</div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;        <span class="keywordflow">if</span> (!canBeUpgraded) {</div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;        }</div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;    }</div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;</div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;    <span class="keyword">const</span> QString gcsRev(GCS_REVISION);</div>
-<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;    <span class="keywordflow">if</span> (gcsRev.contains(<span class="charliteral">&#39;:&#39;</span>)) {</div>
-<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;        QString gcsShort = gcsRev.mid(gcsRev.indexOf(<span class="charliteral">&#39;:&#39;</span>) + 1, 8);</div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;        <span class="keywordflow">if</span> ((gcsShort != device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>) &amp;&amp; (ignoredRev != device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>)) {</div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;            QMessageBox msgBox;</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;            msgBox.setText(</div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;                tr(<span class="stringliteral">&quot;The firmware version on your board does not match this version of GCS.&quot;</span>));</div>
-<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;            msgBox.setInformativeText(</div>
-<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;                tr(<span class="stringliteral">&quot;Do you want to upgrade the firmware to a compatible version?&quot;</span>));</div>
-<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;            msgBox.setDetailedText(QString(<span class="stringliteral">&quot;Firmware git hash: %1\nGCS git hash: %2&quot;</span>)</div>
-<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;                                       .arg(device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>)</div>
-<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;                                       .arg(gcsShort));</div>
-<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;            msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::Ignore);</div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;            msgBox.setDefaultButton(QMessageBox::Yes);</div>
-<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;</div>
-<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;            <span class="keywordtype">int</span> val = msgBox.exec();</div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;            QString directPath =</div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;                QString(<span class="stringliteral">&quot;%1/%2&quot;</span>).arg(pathDir.absolutePath()).arg(imageNameWithSuffix);</div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;</div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;            <span class="keywordflow">if</span> (QFile::exists(directPath)) {</div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;                <span class="keywordflow">return</span> directPath;</div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;            }</div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;        }</div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;    }</div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;</div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;    <span class="comment">/* This is sane for file dialogs, too. */</span></div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;}</div>
+<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;</div>
+<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::FirmwareLoadFromFile(QString filename, QByteArray *contents)</div>
+<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;{</div>
+<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;    QFileInfo fileinfo = QFileInfo(filename);</div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;</div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;    <span class="keywordflow">if</span> (!fileinfo.exists())</div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;</div>
+<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;    QFile <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>(fileinfo.filePath());</div>
+<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::ReadOnly))</div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;    *contents = <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.readAll();</div>
+<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;</div>
+<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;}</div>
 <div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;</div>
-<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;            <span class="keywordflow">if</span> (val == QMessageBox::Yes)</div>
-<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == QMessageBox::Ignore)</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;                ignoredRev = device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>;</div>
-<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;        }</div>
-<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;    }</div>
-<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;}</div>
-<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;</div>
-<div class="line"><a name="l01996"></a><span class="lineno"><a class="line" href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d"> 1996</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d">UploaderGadgetWidget::active</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;    <span class="keywordflow">switch</span> (uploaderStatus) {</div>
-<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">DISCONNECTED</a>:</div>
-<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e">CONNECTED_TO_TELEMETRY</a>:</div>
-<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;        <span class="keywordflow">return</span> upgraderActive;</div>
-<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807">ENTERING_LOADER</a>:</div>
-<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">BL_SITTING</a>:</div>
-<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">BL_BUSY</a>:</div>
-<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690abdbbfac16910eb802bf70df43588787e">UPGRADING</a>:</div>
-<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">UPGRADING_CATCHLOADER</a>:</div>
-<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;    }</div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;}</div>
+<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;<span class="keywordtype">bool</span> UploaderGadgetWidget::FirmwareCheckForUpdate(<a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> device)</div>
+<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;{</div>
+<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;    <span class="keywordflow">if</span> (currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>) {</div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;        <span class="keywordtype">bool</span> canBeUpgraded =</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;            currentBoard.<a class="code" href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">board</a>-&gt;queryCapabilities(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a>);</div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;</div>
+<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;        <span class="keywordflow">if</span> (!canBeUpgraded) {</div>
+<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;        }</div>
+<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;    }</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;    <span class="keyword">const</span> QString gcsRev(GCS_REVISION);</div>
+<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;    <span class="keywordflow">if</span> (gcsRev.contains(<span class="charliteral">&#39;:&#39;</span>)) {</div>
+<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;        QString gcsShort = gcsRev.mid(gcsRev.indexOf(<span class="charliteral">&#39;:&#39;</span>) + 1, 8);</div>
+<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;        <span class="keywordflow">if</span> ((gcsShort != device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>) &amp;&amp; (ignoredRev != device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>)) {</div>
+<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;            QMessageBox msgBox;</div>
+<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;            msgBox.setText(</div>
+<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;                tr(<span class="stringliteral">&quot;The firmware version on your board does not match this version of GCS.&quot;</span>));</div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;            msgBox.setInformativeText(</div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;                tr(<span class="stringliteral">&quot;Do you want to upgrade the firmware to a compatible version?&quot;</span>));</div>
+<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;            msgBox.setDetailedText(QString(<span class="stringliteral">&quot;Firmware git hash: %1\nGCS git hash: %2&quot;</span>)</div>
+<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;                                       .arg(device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>)</div>
+<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;                                       .arg(gcsShort));</div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;            msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::Ignore);</div>
+<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;            msgBox.setDefaultButton(QMessageBox::Yes);</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;</div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;            <span class="keywordtype">int</span> val = msgBox.exec();</div>
+<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;</div>
+<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;            <span class="keywordflow">if</span> (val == QMessageBox::Yes)</div>
+<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == QMessageBox::Ignore)</div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;                ignoredRev = device.<a class="code" href="group___u_a_v_object_util_plugin.html#ga7c265729bc1bc959e63a3c8f0f1543e8">gitHash</a>;</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;        }</div>
+<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;    }</div>
+<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;}</div>
+<div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;</div>
+<div class="line"><a name="l02024"></a><span class="lineno"><a class="line" href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d"> 2024</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d">UploaderGadgetWidget::active</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;    <span class="keywordflow">switch</span> (uploaderStatus) {</div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690acb69c2963ad1d6ea453e46e48b68ab40">DISCONNECTED</a>:</div>
+<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6f34924bb42c3b036dedf26458bb370e">CONNECTED_TO_TELEMETRY</a>:</div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;        <span class="keywordflow">return</span> upgraderActive;</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807">ENTERING_LOADER</a>:</div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a82f99896fbb0858cbbfe3b92a01eca7f">BL_SITTING</a>:</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575">BL_BUSY</a>:</div>
+<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690abdbbfac16910eb802bf70df43588787e">UPGRADING</a>:</div>
+<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a9068a448064dd9c673d038228a0531da">UPGRADING_CATCHLOADER</a>:</div>
+<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;    }</div>
+<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;}</div>
 <div class="ttc" id="group___uploader_html_ga77a98a88ccfc2d6f0236ec9e053da638"><div class="ttname"><a href="group___uploader.html#ga77a98a88ccfc2d6f0236ec9e053da638">UpgradeAssistantDialog::UpgradeAssistantStep</a></div><div class="ttdeci">UpgradeAssistantStep</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8h_source.html#l00046">upgradeassistantdialog.h:46</a></div></div>
 <div class="ttc" id="group___u_a_v_settings_import_export_html_ga6e52410598f9227184e55b40fc48df2a"><div class="ttname"><a href="group___u_a_v_settings_import_export.html#ga6e52410598f9227184e55b40fc48df2a">UAVSettingsImportExportManager::importUAVSettings</a></div><div class="ttdeci">bool importUAVSettings(const QByteArray &amp;settings, bool quiet=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavsettingsimportexportmanager_8cpp_source.html#l00110">uavsettingsimportexportmanager.cpp:110</a></div></div>
 <div class="ttc" id="group___uploader_html_gaea10e87c01ae547b8a9ebdd37e45d399"><div class="ttname"><a href="group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399">UpgradeAssistantDialog::PromptUser</a></div><div class="ttdeci">int PromptUser(QString promptText, QString detailText, QStringList buttonText)</div><div class="ttdef"><b>Definition:</b> <a href="upgradeassistantdialog_8cpp_source.html#l00078">upgradeassistantdialog.cpp:78</a></div></div>
@@ -2034,7 +2062,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="ttc" id="group___u_a_v_object_util_plugin_html_ga69f44ea76d04a61aac18e4393eba4e84"><div class="ttname"><a href="group___u_a_v_object_util_plugin.html#ga69f44ea76d04a61aac18e4393eba4e84">deviceDescriptorStruct::gitTag</a></div><div class="ttdeci">QString gitTag</div><div class="ttdef"><b>Definition:</b> <a href="devicedescriptorstruct_8h_source.html#l00039">devicedescriptorstruct.h:39</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9aac3ae5395f63249cd821e0e5be5bf2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a></div><div class="ttdeci">void objectUpdated(UAVObject *obj)</div><div class="ttdoc">Signal sent whenever any field of the object is updated. </div></div>
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a5d21e0e40b21748b8af27ff489a76f03">Core::IBoardType::BOARD_CAPABILITIES_UPGRADEABLE</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00099">iboardtype.h:99</a></div></div>
-<div class="ttc" id="group___uploader_html_ga5040dcbf920da570c74a486743231d5d"><div class="ttname"><a href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d">uploader::UploaderGadgetWidget::active</a></div><div class="ttdeci">bool active() const </div><div class="ttdoc">active </div><div class="ttdef"><b>Definition:</b> <a href="uploadergadgetwidget_8cpp_source.html#l01996">uploadergadgetwidget.cpp:1996</a></div></div>
+<div class="ttc" id="group___uploader_html_ga5040dcbf920da570c74a486743231d5d"><div class="ttname"><a href="group___uploader.html#ga5040dcbf920da570c74a486743231d5d">uploader::UploaderGadgetWidget::active</a></div><div class="ttdeci">bool active() const </div><div class="ttdoc">active </div><div class="ttdef"><b>Definition:</b> <a href="uploadergadgetwidget_8cpp_source.html#l02024">uploadergadgetwidget.cpp:2024</a></div></div>
 <div class="ttc" id="group___uploader_html_gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3"><div class="ttname"><a href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3">tl_dfu::DFU_PARTITION_AUTOTUNE</a></div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00101">bl_messages.h:101</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga262e29bf6a8d1cf1fb92dfe93b96621e"><div class="ttname"><a href="group___core_plugin.html#ga262e29bf6a8d1cf1fb92dfe93b96621e">Core::ActionManager::command</a></div><div class="ttdeci">virtual Command * command(const QString &amp;id) const =0</div><div class="ttdoc">Returns the Command object that is known to the system under the given string id. ...</div></div>
@@ -2086,6 +2114,7 @@ $(document).ready(function(){initNavTree('uploadergadgetwidget_8cpp_source.html'
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="group___uploader_html_gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3"><div class="ttname"><a href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3">tl_dfu::DFU_PARTITION_SETTINGS</a></div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00100">bl_messages.h:100</a></div></div>
 <div class="ttc" id="structdevice_info_html_ac8171c63846102b491a666633b80aea4"><div class="ttname"><a href="structdevice_info.html#ac8171c63846102b491a666633b80aea4">deviceInfo::hw_revision</a></div><div class="ttdeci">QString hw_revision</div><div class="ttdef"><b>Definition:</b> <a href="uploader__global_8h_source.html#l00052">uploader_global.h:52</a></div></div>
+<div class="ttc" id="group___uploader_html_gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c"><div class="ttname"><a href="group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c">tl_dfu::DFU_PARTITION_LOADABLE_EXTENSION</a></div><div class="ttdef"><b>Definition:</b> <a href="bl__messages_8h_source.html#l00103">bl_messages.h:103</a></div></div>
 <div class="ttc" id="group___u_a_v_object_util_plugin_html_ga49289a9802c5eec2cc8b0b38c7c88500"><div class="ttname"><a href="group___u_a_v_object_util_plugin.html#ga49289a9802c5eec2cc8b0b38c7c88500">deviceDescriptorStruct::certified</a></div><div class="ttdeci">bool certified</div><div class="ttdef"><b>Definition:</b> <a href="devicedescriptorstruct_8h_source.html#l00049">devicedescriptorstruct.h:49</a></div></div>
 <div class="ttc" id="namespaceuploader_html_aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807"><div class="ttname"><a href="namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a6490cdc12cc97adfcc89f39adda55807">uploader::ENTERING_LOADER</a></div><div class="ttdef"><b>Definition:</b> <a href="uploader__global_8h_source.html#l00038">uploader_global.h:38</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga9d88c3bd1d000b31ad72af4735edaaf2"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga9d88c3bd1d000b31ad72af4735edaaf2">USBSignalFilter::deviceDiscovered</a></div><div class="ttdeci">void deviceDiscovered()</div></div>

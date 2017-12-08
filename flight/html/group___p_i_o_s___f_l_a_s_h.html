@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -178,6 +178,7 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543">FLASH_PARTITION_LABEL_AUTOTUNE</a>, 
 <a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b">FLASH_PARTITION_LABEL_LOG</a>, 
+<a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685">FLASH_PARTITION_LABEL_LOADABLE_EXTENSION</a>, 
 <a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01">FLASH_PARTITION_NUM_LABELS</a>
 <br/>
  }</td></tr>
@@ -203,6 +204,8 @@ Functions</h2></td></tr>
 <tr class="separator:gad390e0e9fd6fc7cb1a9211c24bdaf28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b52809950cbf0eeb9acbf093462a917"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga4b52809950cbf0eeb9acbf093462a917">PIOS_FLASH_read_data</a> (uintptr_t partition_id, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
 <tr class="separator:ga4b52809950cbf0eeb9acbf093462a917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29787f497592345d5bf80d7d522970d8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga29787f497592345d5bf80d7d522970d8">PIOS_FLASH_get_address</a> (uintptr_t partition_id, uint32_t *partition_size)</td></tr>
+<tr class="separator:ga29787f497592345d5bf80d7d522970d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbee4664d4d77e405b0025f201921961"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gafbee4664d4d77e405b0025f201921961">PIOS_Flash_Jedec_Init</a> (uintptr_t *flash_id, <a class="el" href="group___p_i_o_s___s_p_i.html#ga7f8b7496a1edc0b9f052239844bb8b40">pios_spi_t</a> spi_id, uint32_t slave_num, const struct <a class="el" href="structpios__flash__jedec__cfg.html">pios_flash_jedec_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
 <tr class="separator:gafbee4664d4d77e405b0025f201921961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd9ef7fdca7628e050c8c63e6934c613"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gadd9ef7fdca7628e050c8c63e6934c613">PIOS_Flash_Jedec_ReadOTPData</a> (uintptr_t chip_id, uint32_t chip_offset, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
@@ -236,6 +239,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga9b47d41e4bce17794eb4324e46a704bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9282fd3e183f9eed7828940bcfe09194"><td class="memItemLeft" align="right" valign="top">int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga9282fd3e183f9eed7828940bcfe09194">pios_flash_driver::read_data</a> )(uintptr_t chip_id, uint32_t chip_offset, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
 <tr class="separator:ga9282fd3e183f9eed7828940bcfe09194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3996ba7fb425713797aed9c691b2328c"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga3996ba7fb425713797aed9c691b2328c">pios_flash_driver::get_pointer</a> )(uintptr_t chip_id, uint32_t chip_offset)</td></tr>
+<tr class="separator:ga3996ba7fb425713797aed9c691b2328c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10a19d41b10c9f25f0856a0fb8f5615f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga10a19d41b10c9f25f0856a0fb8f5615f">pios_flash_sector_range::base_sector</a></td></tr>
 <tr class="separator:ga10a19d41b10c9f25f0856a0fb8f5615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54f595478ecc371d8fb796448cde0137"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga54f595478ecc371d8fb796448cde0137">pios_flash_sector_range::last_sector</a></td></tr>
@@ -280,7 +285,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00097">97</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00098">98</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +299,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00094">94</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00095">95</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +313,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00090">90</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00091">91</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +327,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00091">91</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00092">92</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -336,7 +341,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00095">95</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00096">96</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +355,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00092">92</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00093">93</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +369,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00096">96</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00097">97</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +383,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00093">93</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00094">94</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -502,6 +507,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543"></a>FLASH_PARTITION_LABEL_AUTOTUNE</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b"></a>FLASH_PARTITION_LABEL_LOG</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685"></a>FLASH_PARTITION_LABEL_LOADABLE_EXTENSION</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01"></a>FLASH_PARTITION_NUM_LABELS</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -635,6 +642,32 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga29787f497592345d5bf80d7d522970d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* PIOS_FLASH_get_address </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>partition_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>partition_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -909,7 +942,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00048">48</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00049">49</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +956,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00083">83</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00084">84</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +970,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00067">67</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00068">68</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +984,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00086">86</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00087">87</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -965,7 +998,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00066">66</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00067">67</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1082,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00084">84</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00085">85</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3996ba7fb425713797aed9c691b2328c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* pios_flash_driver::get_pointer)(uintptr_t chip_id, uint32_t chip_offset)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00042">42</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1110,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00082">82</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00083">83</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1124,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00049">49</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00050">50</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00085">85</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00086">86</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1152,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00070">70</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00071">71</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1166,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00068">68</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00069">69</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1206,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00069">69</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00070">70</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1234,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00050">50</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00051">51</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1248,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00087">87</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__priv_8h_source.html#l00088">88</a> of file <a class="el" href="pios__flash__priv_8h_source.html">pios_flash_priv.h</a>.</p>
 
 </div>
 </div>

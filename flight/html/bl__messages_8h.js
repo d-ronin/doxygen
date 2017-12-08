@@ -69,6 +69,7 @@ var bl__messages_8h =
     [ "DFU_PARTITION_BL", "bl__messages_8h.html#a1682a8364e0b019cc3367b24a4125b57", null ],
     [ "DFU_PARTITION_DESC", "bl__messages_8h.html#ab8f123dfd049277430010ac6e9ab99a1", null ],
     [ "DFU_PARTITION_FW", "bl__messages_8h.html#ab1763c481df86e1568031ab40041d502", null ],
+    [ "DFU_PARTITION_LOADABLE_EXTENSION", "bl__messages_8h.html#a3a4d4381b94378082109566c18d8eaa3", null ],
     [ "DFU_PARTITION_LOG", "bl__messages_8h.html#a12e3ca6c3a3c5f3e2327e36133876203", null ],
     [ "DFU_PARTITION_SETTINGS", "bl__messages_8h.html#acfa1836ada8bfa6a73d478d6e6fdc940", null ],
     [ "enter_dfu", "bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942", null ],

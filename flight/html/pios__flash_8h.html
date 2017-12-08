@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -127,6 +127,7 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616afe4c95b47681f492a7afdb09c2014543">FLASH_PARTITION_LABEL_AUTOTUNE</a>, 
 <a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b">FLASH_PARTITION_LABEL_LOG</a>, 
+<a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685">FLASH_PARTITION_LABEL_LOADABLE_EXTENSION</a>, 
 <a class="el" href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01">FLASH_PARTITION_NUM_LABELS</a>
 <br/>
  }</td></tr>
@@ -152,6 +153,8 @@ Functions</h2></td></tr>
 <tr class="separator:gad390e0e9fd6fc7cb1a9211c24bdaf28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b52809950cbf0eeb9acbf093462a917"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga4b52809950cbf0eeb9acbf093462a917">PIOS_FLASH_read_data</a> (uintptr_t partition_id, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint8_t *<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>, uint16_t len)</td></tr>
 <tr class="separator:ga4b52809950cbf0eeb9acbf093462a917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29787f497592345d5bf80d7d522970d8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___f_l_a_s_h.html#ga29787f497592345d5bf80d7d522970d8">PIOS_FLASH_get_address</a> (uintptr_t partition_id, uint32_t *partition_size)</td></tr>
+<tr class="separator:ga29787f497592345d5bf80d7d522970d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2012-2013 </dd></dl>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,11],
 "group___config.html":[3,2,12],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,0,2],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "group___config_plugin.html#ga62d98ed212936a33d9e9240f27aa7497":[3,2,11,22,10],
 "group___config_plugin.html#ga62d98ed212936a33d9e9240f27aa7497":[3,2,11,205],
 "group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,33,7],
-"group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,231],
-"group___config_plugin.html#ga6367ef4f4eec79ff7772d80fb838338a":[3,2,11,11,5]
+"group___config_plugin.html#ga630d5ced68d6c22fa36f9a37cd704d01":[3,2,11,231]
 };

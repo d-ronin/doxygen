@@ -16,6 +16,7 @@ var searchData=
   ['get_5fdevice',['GET_DEVICE',['../classpx__uploader_1_1uploader.html#ae03b426ef1ceb16a6707105765aadf97',1,'px_uploader::uploader']]],
   ['get_5fotp',['GET_OTP',['../classpx__uploader_1_1uploader.html#abf6aadf5e935224b5086bf631f5dab9c',1,'px_uploader::uploader']]],
   ['get_5fpin',['get_pin',['../structpios__adc__driver.html#a9362aa0b30e34dccd3fa9bb97ad8a7d1',1,'pios_adc_driver']]],
+  ['get_5fpointer',['get_pointer',['../group___p_i_o_s___f_l_a_s_h.html#ga3996ba7fb425713797aed9c691b2328c',1,'pios_flash_driver']]],
   ['get_5fsn',['GET_SN',['../classpx__uploader_1_1uploader.html#a8b53c05343c46dac2476893bebe98c49',1,'px_uploader::uploader']]],
   ['get_5fsync',['GET_SYNC',['../classpx__uploader_1_1uploader.html#a98df4735835b5c245ed09c9228b509df',1,'px_uploader::uploader']]],
   ['getdata_5fcb',['getdata_cb',['../group___p_i_o_s___s_e_n_s_o_r_s.html#gabf3454f789dce3836726395225e16742',1,'PIOS_Sensor']]],

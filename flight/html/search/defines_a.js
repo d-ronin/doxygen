@@ -32,5 +32,9 @@ var searchData=
   ['ll_5fforeach',['LL_FOREACH',['../utlist_8h.html#a487c0ce49f397e1743caae16a797e4bb',1,'utlist.h']]],
   ['ll_5fprepend',['LL_PREPEND',['../utlist_8h.html#a851fb4b583b0dc000097eeee6dd551d4',1,'utlist.h']]],
   ['ll_5fsort',['LL_SORT',['../utlist_8h.html#a0b2137d4a0c157cb7a1a30d9340ece31',1,'utlist.h']]],
+  ['loadable_5fextension_5fmagic',['LOADABLE_EXTENSION_MAGIC',['../loadable__extension_8h.html#ad34da1c55830ae7f40ae47cb38523519',1,'loadable_extension.h']]],
+  ['loadable_5fextension_5funprogrammed',['LOADABLE_EXTENSION_UNPROGRAMMED',['../loadable__extension_8h.html#a8f11fed2815aa07d8992c70ca1f2fa1a',1,'loadable_extension.h']]],
+  ['loadable_5frequire_5fversion_5finvalid',['LOADABLE_REQUIRE_VERSION_INVALID',['../loadable__extension_8h.html#a292481a8d78d870f5dcfdae54059e964',1,'loadable_extension.h']]],
+  ['loadable_5frequire_5fversion_5fwired',['LOADABLE_REQUIRE_VERSION_WIRED',['../loadable__extension_8h.html#a96b5634ff81b183fd64c81118e35058d',1,'loadable_extension.h']]],
   ['log_5fheader',['LOG_HEADER',['../logging_8c.html#a704af9306e63d92f73459616f02a91df',1,'logging.c']]]
 ];

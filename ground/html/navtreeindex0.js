@@ -209,6 +209,7 @@ var NAVTREEINDEX0 =
 "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997fea5722b7b547679e553019b9c3ec8a4d41":[6,0,0,0,0,1,42,0,1,2],
 "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997fea6a3d4ee0f00e71f903a165e9fbb10c93":[6,0,0,0,0,1,42,0,1,1],
 "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feaa9ccdfeab9bd9abbc87bd62916f9eac3":[6,0,0,0,0,1,42,0,1,4],
+"bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c":[6,0,0,0,0,1,42,0,1,6],
 "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3":[6,0,0,0,0,1,42,0,1,3],
 "bl__messages_8h.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2":[6,0,0,0,0,1,42,0,1,5],
 "bl__messages_8h_source.html":[6,0,0,0,0,1,42,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "browseritemdelegate_8cpp_source.html":[6,0,0,0,0,1,36,0],
 "browseritemdelegate_8h.html":[6,0,0,0,0,1,36,1],
 "browseritemdelegate_8h_source.html":[6,0,0,0,0,1,36,1],
-"browserplugin_8cpp.html":[6,0,0,0,0,1,36,2],
-"browserplugin_8cpp_source.html":[6,0,0,0,0,1,36,2]
+"browserplugin_8cpp.html":[6,0,0,0,0,1,36,2]
 };

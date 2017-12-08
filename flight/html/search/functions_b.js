@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['layout_5fextension_5fram',['layout_extension_ram',['../group___modules.html#ga0c2e9cbc4c2d79687176d806096ddda2',1,'loadable.c']]],
   ['leave_5flowpowermode',['Leave_LowPowerMode',['../_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c'],['../_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a6c7ca414693c535f48a636ca862ed49d',1,'Leave_LowPowerMode(void):&#160;pios_usb_hid_pwr.c']]],
   ['led_5fpwm_5fadd_5fticks',['led_pwm_add_ticks',['../group___common.html#ga316161ec9e0698bb42f258f84ba91236',1,'led_pwm.c']]],
   ['led_5fpwm_5fconfig',['led_pwm_config',['../group___common.html#gaa3e648497eec1e79a9ebda5f44eedb5e',1,'led_pwm.c']]],
@@ -10,6 +11,8 @@ var searchData=
   ['linearizefg',['LinearizeFG',['../group___i_n_s_g_p_s.html#gab560144e7b798db7faf80a4c37902c88',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps14state.c'],['../group___libraries.html#gab194242801a5031a5601acf6ded3edf0',1,'LinearizeFG(float X[NUMX], float U[NUMU], float F[NUMX][NUMX], float G[NUMX][NUMW]):&#160;insgps13state.c']]],
   ['linearizeh',['LinearizeH',['../group___i_n_s_g_p_s.html#ga7c0662e4a09558eef02efcd11835266f',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps14state.c'],['../group___libraries.html#ga4b0845323067c77b1a25958c8d81168a',1,'LinearizeH(float X[NUMX], float Be[3], float H[NUMV][NUMX]):&#160;insgps13state.c']]],
   ['lla_5fto_5fned',['lla_to_ned',['../group___on_screen_display.html#gafe48278bdfb70633647317b54e927d07',1,'osd_utils.c']]],
+  ['loadable_5finitialize',['loadable_initialize',['../group___modules.html#gaf27f242c4bbd591f476ae4555a9c7590',1,'loadable.c']]],
+  ['loadable_5fstart',['loadable_start',['../group___modules.html#ga87b8938a4be1ab7df003877c7b804f82',1,'loadable.c']]],
   ['logall',['logAll',['../group___logging.html#gae82c53135dcf3db27840ed00577cb3d6',1,'logging.c']]],
   ['logfs_5factivate_5farena',['logfs_activate_arena',['../group___p_i_o_s___f_l_a_s_h_f_s.html#gaa2ccf74ef0fb13aeebf22101113bf05e',1,'pios_flashfs_logfs.c']]],
   ['logfs_5fappend_5fto_5flog',['logfs_append_to_log',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga97f0152bae614f90e02ab554e506ad26',1,'pios_flashfs_logfs.c']]],
@@ -33,6 +36,7 @@ var searchData=
   ['loggingtask',['loggingTask',['../group___logging.html#ga0a9dfd6edce86ce599fcaeca9aab266e',1,'logging.c']]],
   ['logsettings',['logSettings',['../group___logging.html#ga25447c2e569c52ca72f4b2a456e7b574',1,'logging.c']]],
   ['loiter_5fdeadband',['loiter_deadband',['../group___vtol_path_follower.html#ga1fb5bf24111b36b2c0c37f1f749d06d8',1,'vtol_follower_control.c']]],
+  ['loopy',['loopy',['../modtest_8c.html#a73a5870ca766ec0c4fc8326dbfbf64dd',1,'modtest.c']]],
   ['lpfilter_5fconstruct_5fbiquads',['lpfilter_construct_biquads',['../group___flight_math.html#gae4503ce34e88755462cdf61616f54a0f',1,'lpfilter.c']]],
   ['lpfilter_5fconstruct_5fsingle_5fbiquad',['lpfilter_construct_single_biquad',['../group___flight_math.html#ga02d55312f9af7bcb6775243ced7e5e5e',1,'lpfilter.c']]],
   ['lpfilter_5fcreate',['lpfilter_create',['../group___flight_math.html#gab7e3eb09a69f70eeb359e350d4abb7c1',1,'lpfilter.c']]],

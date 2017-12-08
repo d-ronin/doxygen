@@ -151,6 +151,7 @@ var searchData=
   ['currentprogrammingdestination',['currentProgrammingDestination',['../group___common_f1.html#gabbc56fe66ed81f83684d10b8cae06e82',1,'op_dfu.c']]],
   ['curve2',['curve2',['../group___actuator_module.html#ga862c7ff05fff688ff8bcdd52249aaa51',1,'actuator.c']]],
   ['curve2_5fsrc',['curve2_src',['../group___actuator_module.html#ga7c686e3a2dfa84c375e555ee4b494c44',1,'actuator.c']]],
+  ['custom_5fblink_5fstring',['custom_blink_string',['../group___system_module.html#gaef0b84d0870d07081cfd983766e6102d',1,'systemmod.c']]],
   ['custom_5ftext',['custom_text',['../structcharosd__state__t.html#a15949ac562cdf89b15d988163d322901',1,'charosd_state_t']]],
   ['cycle_5ftime',['cycle_time',['../structmsp__status.html#a4da4fc29dd11a3f5ecea4376cdfc07a8',1,'msp_status::cycle_time()'],['../msp__messages_8h.html#a9052f3c390670a0a01612b4207a5d216',1,'cycle_time():&#160;msp_messages.h']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -127,10 +127,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;640</td></tr>
-<tr class="separator:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td></tr>
-<tr class="separator:ga82dd0a9ae27bdb2c3cdd33bb7804861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75a96c22d218b3612a5bcd1d07cbacc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga75a96c22d218b3612a5bcd1d07cbacc4">AUTOTUNE_STATE_PERIOD_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:ga75a96c22d218b3612a5bcd1d07cbacc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga867e829c0aaaf0e6f1c0f229b670e71e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga867e829c0aaaf0e6f1c0f229b670e71e">AUTOTUNE_AVERAGING_DECIMATION</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga867e829c0aaaf0e6f1c0f229b670e71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d0285004afb926ad0ed377eade5bf57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga6d0285004afb926ad0ed377eade5bf57">ATFLASH_MAGIC</a>&#160;&#160;&#160;0x656e755480008041	/* A...Tune */</td></tr>
@@ -145,8 +143,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2ceb9c3feb2a39031bd33582d4333c94"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga2ceb9c3feb2a39031bd33582d4333c94">AutotuneTask</a> (void *parameters)</td></tr>
-<tr class="separator:ga2ceb9c3feb2a39031bd33582d4333c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e1fec617433ad535e6f572b855f70bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga3e1fec617433ad535e6f572b855f70bc">autotune_step</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
+<tr class="separator:ga3e1fec617433ad535e6f572b855f70bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcd235231767c9940ae6782d9ad75892"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gadcd235231767c9940ae6782d9ad75892">AutotuneInitialize</a> (void)</td></tr>
 <tr class="separator:gadcd235231767c9940ae6782d9ad75892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a975e6b1043a32ec5c88aaf7a9bc298"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298">AutotuneStart</a> (void)</td></tr>
@@ -162,8 +160,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:gac6e2c894babe71154b4ed29cbdac9b3b"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structat__measurement.html">at_measurement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gac6e2c894babe71154b4ed29cbdac9b3b">at_averages</a></td></tr>
 <tr class="separator:gac6e2c894babe71154b4ed29cbdac9b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gaa0ed8350d96aa81aa079fa3c8d5a134e">taskHandle</a></td></tr>
-<tr class="separator:gaa0ed8350d96aa81aa079fa3c8d5a134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a40b3b298ebb34ef7da48a31631e2ac"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac">module_enabled</a></td></tr>
 <tr class="separator:ga8a40b3b298ebb34ef7da48a31631e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabfc967d71bb709b7f051507856dd9fa"><td class="memItemLeft" align="right" valign="top">static volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gaabfc967d71bb709b7f051507856dd9fa">throttle_accumulator</a></td></tr>
@@ -174,7 +170,11 @@ Variables</h2></td></tr>
 <tr class="separator:gabd4de671c763079f8094cc063c7d958b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gaf23900e05a20ba9fb4c80d4b11337de1">ident_wiggle_points</a></td></tr>
 <tr class="separator:gaf23900e05a20ba9fb4c80d4b11337de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89f6b2699dec33baa1e3e66b0b6f5f5e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga89f6b2699dec33baa1e3e66b0b6f5f5e">decim_wiggle_points</a></td></tr>
+<tr class="memitem:gaa82516ca4c90ad2473dda6f2eb43bb98"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="group___autotuning_module.html#gaccf89780733911b196b1df6702d71012">autotune_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#gaa82516ca4c90ad2473dda6f2eb43bb98">state</a> = <a class="el" href="group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012a212188919cef420e2de9232d9029a92b">AT_INIT</a></td></tr>
+<tr class="separator:gaa82516ca4c90ad2473dda6f2eb43bb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63f2eb5b4fcec2383601b1cf39fbbbe1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga63f2eb5b4fcec2383601b1cf39fbbbe1">save_needed</a> = false</td></tr>
+<tr class="separator:ga63f2eb5b4fcec2383601b1cf39fbbbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89f6b2699dec33baa1e3e66b0b6f5f5e"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___autotuning_module.html#ga89f6b2699dec33baa1e3e66b0b6f5f5e">decim_wiggle_points</a></td></tr>
 <tr class="separator:ga89f6b2699dec33baa1e3e66b0b6f5f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -189,7 +189,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00066">66</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00065">65</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -203,35 +203,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00060">60</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00059">59</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga8ba6b61bd4ff2677b6d5f6be4c5d8725"></a>
+<a class="anchor" id="ga75a96c22d218b3612a5bcd1d07cbacc4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STACK_SIZE_BYTES&#160;&#160;&#160;640</td>
+          <td class="memname">#define AUTOTUNE_STATE_PERIOD_MS&#160;&#160;&#160;100</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="autotune_8c_source.html#l00056">56</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga82dd0a9ae27bdb2c3cdd33bb7804861c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TASK_PRIORITY&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a7df12e55a5f062ebcc3c1d9488799612">PIOS_THREAD_PRIO_NORMAL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00057">57</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -252,7 +238,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00064">64</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00063">63</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -301,7 +287,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00149">149</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00146">146</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -326,7 +312,56 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00214">214</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00211">211</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3e1fec617433ad535e6f572b855f70bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void autotune_step </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Module periodic task. </p>
+
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00260">260</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -366,34 +401,7 @@ Variables</h2></td></tr>
 <p>Initialise the module, called on startup </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or -1 if initialisation failed </dd></dl>
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00135">135</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2ceb9c3feb2a39031bd33582d4333c94"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void AutotuneTask </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>parameters</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Module thread, should not return. </p>
-
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00263">263</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00128">128</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -435,7 +443,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00202">202</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00199">199</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -458,18 +466,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00082">82</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00081">81</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ga89f6b2699dec33baa1e3e66b0b6f5f5e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint16_t decim_wiggle_points</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="autotune_8c_source.html#l00093">93</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
@@ -508,11 +524,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00086">86</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00084">84</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaa0ed8350d96aa81aa079fa3c8d5a134e"></a>
+<a class="anchor" id="ga63f2eb5b4fcec2383601b1cf39fbbbe1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -520,7 +536,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structpios__thread.html">pios_thread</a>* taskHandle</td>
+          <td class="memname">bool save_needed = false</td>
         </tr>
       </table>
   </td>
@@ -530,7 +546,29 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00085">85</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00092">92</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa82516ca4c90ad2473dda6f2eb43bb98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___autotuning_module.html#gaccf89780733911b196b1df6702d71012">autotune_state</a> state = <a class="el" href="group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012a212188919cef420e2de9232d9029a92b">AT_INIT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00091">91</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -552,7 +590,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00088">88</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00086">86</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -574,7 +612,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00090">90</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00088">88</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>
@@ -596,7 +634,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autotune_8c_source.html#l00089">89</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
+<p>Definition at line <a class="el" href="autotune_8c_source.html#l00087">87</a> of file <a class="el" href="autotune_8c_source.html">autotune.c</a>.</p>
 
 </div>
 </div>

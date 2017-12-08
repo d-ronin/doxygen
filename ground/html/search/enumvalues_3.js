@@ -12,6 +12,7 @@ var searchData=
   ['dfu_5fpartition_5fbl',['DFU_PARTITION_BL',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea5722b7b547679e553019b9c3ec8a4d41',1,'tl_dfu']]],
   ['dfu_5fpartition_5fdesc',['DFU_PARTITION_DESC',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea6a3d4ee0f00e71f903a165e9fbb10c93',1,'tl_dfu']]],
   ['dfu_5fpartition_5ffw',['DFU_PARTITION_FW',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997fea21fd6b3ea09d1ff3bca44a7facf73e8e',1,'tl_dfu']]],
+  ['dfu_5fpartition_5floadable_5fextension',['DFU_PARTITION_LOADABLE_EXTENSION',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feadac570fef1060ba6fb6c2f7f9a0ba23c',1,'tl_dfu']]],
   ['dfu_5fpartition_5flog',['DFU_PARTITION_LOG',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feafc3a3c77089a4480a5c6b4e6a69d70a2',1,'tl_dfu']]],
   ['dfu_5fpartition_5fsettings',['DFU_PARTITION_SETTINGS',['../group___uploader.html#gga7a55292dbba91b1d8a44bc6b127997feaee07f6612e39b0d73a7314fe713e43e3',1,'tl_dfu']]],
   ['dfuidle',['DFUidle',['../group___uploader.html#gga5668196b7ff4028f1f71803e9ff5c7c4a563943e44f2724d6fd4f42d093712350',1,'tl_dfu']]],

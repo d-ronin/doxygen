@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -150,12 +150,12 @@ $(document).ready(function(){initNavTree('pios__thread_8h_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="group___p_i_o_s___thread.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e">PIOS_THREAD_PRIO_HIGHEST</a> = HIGHPRIO,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define PIOS_THREAD_STACK_SIZE_MIN THD_WA_SIZE(4096 + PORT_INT_REQUIRED_STACK)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define PIOS_THREAD_STACK_SIZE_MIN THD_WA_SIZE(256 + PORT_INT_REQUIRED_STACK)</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* Posix or targets without threading */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___p_i_o_s___thread.html#gae66efd94087031615f497590a5fdb3ab">   55</a></span>&#160;<span class="preprocessor">#define PIOS_THREAD_STACK_SIZE_MIN (32768)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* Posix or targets without threading or default for extensions */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___p_i_o_s___thread.html#gae66efd94087031615f497590a5fdb3ab">   55</a></span>&#160;<span class="preprocessor">#define PIOS_THREAD_STACK_SIZE_MIN (4096)</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">   57</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___p_i_o_s___thread.html#gaaf67f9ea6e212bc198f6d4302ea21e54">pios_thread_prio_e</a></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>

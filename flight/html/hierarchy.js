@@ -54,6 +54,7 @@ var hierarchy =
     [ "ioMem_s", "structio_mem__s.html", null ],
     [ "Latitude_Band_Value", "struct_latitude___band___value.html", null ],
     [ "led_pwm_state", "structled__pwm__state.html", null ],
+    [ "loadable_extension", "structloadable__extension.html", null ],
     [ "logfs_state", "structlogfs__state.html", null ],
     [ "lpfilter_biquad", "structlpfilter__biquad.html", null ],
     [ "lpfilter_biquad_state", "structlpfilter__biquad__state.html", null ],

@@ -54,7 +54,7 @@ var searchData=
   ['attitudetask',['AttitudeTask',['../group___attitude_module.html#ga5b9ca9b050dc607b1927cd4852ca9c6f',1,'attitude.c']]],
   ['attitudeupdated',['attitudeUpdated',['../group___camera_stab.html#ga3a49d7b31b2955720346a096cdcf10d0',1,'camerastab.c']]],
   ['autotune_5fsave_5faveraging',['autotune_save_averaging',['../group___autotuning_module.html#gacfe3a46f19338440f1191119b113076c',1,'autotune.c']]],
+  ['autotune_5fstep',['autotune_step',['../group___autotuning_module.html#ga3e1fec617433ad535e6f572b855f70bc',1,'autotune.c']]],
   ['autotuneinitialize',['AutotuneInitialize',['../group___autotuning_module.html#gadcd235231767c9940ae6782d9ad75892',1,'autotune.c']]],
-  ['autotunestart',['AutotuneStart',['../group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298',1,'autotune.c']]],
-  ['autotunetask',['AutotuneTask',['../group___autotuning_module.html#ga2ceb9c3feb2a39031bd33582d4333c94',1,'autotune.c']]]
+  ['autotunestart',['AutotuneStart',['../group___autotuning_module.html#ga4a975e6b1043a32ec5c88aaf7a9bc298',1,'autotune.c']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -440,7 +440,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;{ <span class="comment">/* Check_Zone */</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a> = 0;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">int</span> num_digits = 0;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">int</span> error_code = <a class="code" href="mgrs_8h.html#adacb0c376a969836b9450f16c731c790">MGRS_NO_ERROR</a>;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
@@ -450,7 +450,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  j = <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordflow">while</span> (isdigit((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)MGRS[i]))</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    i++;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  num_digits = i - j;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  num_digits = i - <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordflow">if</span> (num_digits &lt;= 2)</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">if</span> (num_digits &gt; 0)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      *zone_exists = <a class="code" href="mgrs_8c.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -501,7 +501,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;{ <span class="comment">/* Make_MGRS_String */</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordtype">int</span> j;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">double</span> divisor;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordtype">int</span> east;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordtype">int</span> north;</div>
@@ -572,7 +572,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordtype">int</span> num_digits;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordtype">int</span> num_letters;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a> = 0;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keywordtype">int</span> error_code = <a class="code" href="mgrs_8h.html#adacb0c376a969836b9450f16c731c790">MGRS_NO_ERROR</a>;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keywordflow">while</span> (MGRS[i] == <span class="charliteral">&#39; &#39;</span>)</div>
@@ -580,7 +580,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  j = <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">while</span> (isdigit((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)MGRS[i]))</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    i++;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  num_digits = i - j;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  num_digits = i - <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keywordflow">if</span> (num_digits &lt;= 2)</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">if</span> (num_digits &gt; 0)</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    {</div>
@@ -600,7 +600,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="keywordflow">while</span> (isalpha((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)MGRS[i]))</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    i++;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  num_letters = i - j;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  num_letters = i - <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="keywordflow">if</span> (num_letters == 3)</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  {</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="comment">/* get letters */</span></div>
@@ -619,7 +619,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  j = <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <span class="keywordflow">while</span> (isdigit((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)MGRS[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>]))</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    i++;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  num_digits = i - j;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  num_digits = i - <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <span class="keywordflow">if</span> ((num_digits &lt;= 10) &amp;&amp; (num_digits%2 == 0))</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  {</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordtype">int</span> n;</div>
@@ -1572,6 +1572,7 @@ $(document).ready(function(){initNavTree('mgrs_8c_source.html','');});
 <div class="ttc" id="mgrs_8c_html_a6bdf7b683c1271b7faa0dead846b23b7"><div class="ttname"><a href="mgrs_8c.html#a6bdf7b683c1271b7faa0dead846b23b7">Convert_MGRS_To_UPS</a></div><div class="ttdeci">int Convert_MGRS_To_UPS(char *MGRS, char *Hemisphere, double *Easting, double *Northing)</div><div class="ttdef"><b>Definition:</b> <a href="mgrs_8c_source.html#l01259">mgrs.c:1259</a></div></div>
 <div class="ttc" id="ups_8c_html_ab9a2752ac1b06301227f3d03ef1fba93"><div class="ttname"><a href="ups_8c.html#ab9a2752ac1b06301227f3d03ef1fba93">Convert_UPS_To_Geodetic</a></div><div class="ttdeci">int Convert_UPS_To_Geodetic(char Hemisphere, double Easting, double Northing, double *Latitude, double *longitude)</div><div class="ttdef"><b>Definition:</b> <a href="ups_8c_source.html#l00244">ups.c:244</a></div></div>
 <div class="ttc" id="mgrs_8c_html_a212460e743fecb084d717bb2180c5a56"><div class="ttname"><a href="mgrs_8c.html#a212460e743fecb084d717bb2180c5a56">DEG_TO_RAD</a></div><div class="ttdeci">#define DEG_TO_RAD</div><div class="ttdef"><b>Definition:</b> <a href="mgrs_8c_source.html#l00103">mgrs.c:103</a></div></div>
+<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="ups_8h_html_a289da213d072eb0e949696f99e4daa28"><div class="ttname"><a href="ups_8h.html#a289da213d072eb0e949696f99e4daa28">UPS_HEMISPHERE_ERROR</a></div><div class="ttdeci">#define UPS_HEMISPHERE_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="ups_8h_source.html#l00091">ups.h:91</a></div></div>
 <div class="ttc" id="mgrs_8h_html_acb8da89cb8109d3f00c0eb4841a4de9f"><div class="ttname"><a href="mgrs_8h.html#acb8da89cb8109d3f00c0eb4841a4de9f">MGRS_HEMISPHERE_ERROR</a></div><div class="ttdeci">#define MGRS_HEMISPHERE_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="mgrs_8h_source.html#l00101">mgrs.h:101</a></div></div>
 <div class="ttc" id="mgrs_8c_html_acde9de589307ceabae246cab52b2cf75"><div class="ttname"><a href="mgrs_8c.html#acde9de589307ceabae246cab52b2cf75">Make_MGRS_String</a></div><div class="ttdeci">int Make_MGRS_String(char *MGRS, int Zone, int Letters[MGRS_LETTERS], double Easting, double Northing, int Precision)</div><div class="ttdef"><b>Definition:</b> <a href="mgrs_8c_source.html#l00373">mgrs.c:373</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -351,17 +351,27 @@ $(document).ready(function(){initNavTree('_s_t_m32_f4xx_2pios__flash__internal_8
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">/* Provide a flash driver to external drivers */</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__flash__driver.html">pios_flash_driver</a> <a class="code" href="pios__flash__internal__priv_8h.html#aec6795f96bf8837f814eb2a25d066446">pios_internal_flash_driver</a> = {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        .<a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gab8cbffe6e06265f6d7777fd9faff1d6a">start_transaction</a> = PIOS_Flash_Internal_StartTransaction,</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        .end_transaction   = PIOS_Flash_Internal_EndTransaction,</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        .erase_sector      = PIOS_Flash_Internal_EraseSector,</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        .write_data        = PIOS_Flash_Internal_WriteData,</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        .read_data         = PIOS_Flash_Internal_ReadData,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> * PIOS_Flash_Internal_GetPointer(uintptr_t chip_id, uint32_t chip_offset)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">struct </span>pios_internal_flash_dev *flash_dev = (<span class="keyword">struct </span>pios_internal_flash_dev *)chip_id;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(PIOS_Flash_Internal_Validate(flash_dev));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span> *)(FLASH_BASE + chip_offset);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* defined(PIOS_INCLUDE_FLASH_INTERNAL) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">/* Provide a flash driver to external drivers */</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__flash__driver.html">pios_flash_driver</a> <a class="code" href="pios__flash__internal__priv_8h.html#aec6795f96bf8837f814eb2a25d066446">pios_internal_flash_driver</a> = {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        .<a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gab8cbffe6e06265f6d7777fd9faff1d6a">start_transaction</a> = PIOS_Flash_Internal_StartTransaction,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        .end_transaction   = PIOS_Flash_Internal_EndTransaction,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        .erase_sector      = PIOS_Flash_Internal_EraseSector,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        .write_data        = PIOS_Flash_Internal_WriteData,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        .read_data         = PIOS_Flash_Internal_ReadData,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        .get_pointer       = PIOS_Flash_Internal_GetPointer,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;};</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* defined(PIOS_INCLUDE_FLASH_INTERNAL) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga9f80c0f562536f093d9c7c4dd7d77904"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga9f80c0f562536f093d9c7c4dd7d77904">PIOS_SEMAPHORE_TIMEOUT_MAX</a></div><div class="ttdeci">#define PIOS_SEMAPHORE_TIMEOUT_MAX</div><div class="ttdef"><b>Definition:</b> <a href="pios__semaphore_8h_source.html#l00030">pios_semaphore.h:30</a></div></div>

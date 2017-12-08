@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('group___libraries.html','');});
 <div class="title">Libraries</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structures relating to loadable extensions.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
@@ -169,6 +172,8 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structloadable__extension.html">loadable_extension</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpath__status.html">path_status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____attribute____.html">__attribute__</a></td></tr>
@@ -198,6 +203,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga1b621f9acff685fd554b1788d45a4601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d3bb27ef6cc29ecd8bb4e97512c8fef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef">SYSTEMALARMS_ALARM_DEFAULT</a>&#160;&#160;&#160;SYSTEMALARMS_ALARM_UNINITIALISED</td></tr>
 <tr class="separator:ga2d3bb27ef6cc29ecd8bb4e97512c8fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf8cde6cdbd6608d78b3416b8a0c3665"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gacf8cde6cdbd6608d78b3416b8a0c3665">DECLARE_LOADABLE_EXTENSION</a>(ent_func)</td></tr>
+<tr class="separator:gacf8cde6cdbd6608d78b3416b8a0c3665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8cecfc5c5c054d2875c03e77b7be15d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&#160;&#160;&#160;((uint16_t)1)</td></tr>
 <tr class="separator:gaa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;&#160;&#160;((uint16_t)0)</td></tr>
@@ -386,6 +393,10 @@ Functions</h2></td></tr>
 <tr class="separator:gaca3696f8c0cc70efb18eb3896b2d9176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b0845323067c77b1a25958c8d81168a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga4b0845323067c77b1a25958c8d81168a">LinearizeH</a> (float <a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>], float <a class="el" href="group___i_n_s_g_p_s.html#gab41e99aaac91af4fb41d43cb5a869e59">Be</a>[3], float <a class="el" href="group___i_n_s_g_p_s.html#ga4080397a0d248e4c99d6f284b187f206">H</a>[<a class="el" href="group___i_n_s_g_p_s.html#ga75c330715104282de4ad5308020e6d8e">NUMV</a>][<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>])</td></tr>
 <tr class="separator:ga4b0845323067c77b1a25958c8d81168a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa99d283e35ed86126e5536d3f1a5f4ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gaa99d283e35ed86126e5536d3f1a5f4ae">DONT_BUILD_IF</a> (TASKINFO_RUNNING_NUMELEM!=TASKINFO_STACKREMAINING_NUMELEM, taskelems1)</td></tr>
+<tr class="separator:gaa99d283e35ed86126e5536d3f1a5f4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba8097277e7fab481c945116e3710857"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gaba8097277e7fab481c945116e3710857">DONT_BUILD_IF</a> (TASKINFO_RUNNING_NUMELEM!=TASKINFO_RUNNINGTIME_NUMELEM, taskelems2)</td></tr>
+<tr class="separator:gaba8097277e7fab481c945116e3710857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d9cdd0b4255485c84d4a695a4a9ae0f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga1d9cdd0b4255485c84d4a695a4a9ae0f">TaskMonitorInitialize</a> (void)</td></tr>
 <tr class="separator:ga1d9cdd0b4255485c84d4a695a4a9ae0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4fa3fb0ef3763252dd61b06ae6d12ca"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gab4fa3fb0ef3763252dd61b06ae6d12ca">TaskMonitorAdd</a> (TaskInfoRunningElem <a class="el" href="group___vibration_analysis_module.html#ga69fc8f70b915c190e0db499999159904">task</a>, struct <a class="el" href="structpios__thread.html">pios_thread</a> *threadp)</td></tr>
@@ -459,6 +470,7 @@ Variables</h2></td></tr>
 <tr class="separator:ga59b45f974aa6da3aa844babec00fa02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Structures relating to loadable extensions. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga775e1e8c08b79c5cf245b9f03ef70908"></a>
 <div class="memitem">
@@ -475,6 +487,51 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="timeutils_8c_source.html#l00033">33</a> of file <a class="el" href="timeutils_8c_source.html">timeutils.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacf8cde6cdbd6608d78b3416b8a0c3665"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_LOADABLE_EXTENSION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ent_func</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keywordtype">char</span> <a class="code" href="_s_t_m32_f0xx_2startup_8c.html#aa233554543f5f8eefca2b8f0b92eee07">_sidata</a>; \</div>
+<div class="line">extern <span class="keywordtype">char</span> _eidata; \</div>
+<div class="line"> \</div>
+<div class="line">extern <span class="keywordtype">char</span> _copylen; \</div>
+<div class="line">extern <span class="keywordtype">char</span> _gotlen; \</div>
+<div class="line">extern <span class="keywordtype">char</span> _ramlen; \</div>
+<div class="line"> \</div>
+<div class="line">const <span class="keyword">struct </span><a class="code" href="structloadable__extension.html">loadable_extension</a> lext <a class="code" href="struct____attribute____.html">__attribute__</a>((section (&quot;.extension_header&quot;))) = { \</div>
+<div class="line">        .magic = <a class="code" href="loadable__extension_8h.html#ad34da1c55830ae7f40ae47cb38523519">LOADABLE_EXTENSION_MAGIC</a>, \</div>
+<div class="line">        .length = (uint32_t) &amp;_eidata, \</div>
+<div class="line">        .<a class="code" href="structloadable__extension.html#a5b6ee7148f5a0df54248d8884712995d">require_version</a> = <a class="code" href="loadable__extension_8h.html#a96b5634ff81b183fd64c81118e35058d">LOADABLE_REQUIRE_VERSION_WIRED</a>, \</div>
+<div class="line">        .<a class="code" href="structloadable__extension.html#a44fa83b73923e63a1c3976eb4b498a57">entry_offset</a> = (uint32_t) ent_func, \</div>
+<div class="line">        .ram_seg_copyoff = (uint32_t) &amp;<a class="code" href="_s_t_m32_f0xx_2startup_8c.html#aa233554543f5f8eefca2b8f0b92eee07">_sidata</a>, \</div>
+<div class="line">        <span class="comment">/* These next &amp; opers are lies, because they&#39;re lengths, not offsets */</span> \</div>
+<div class="line">        .<a class="code" href="structloadable__extension.html#a8a8076385774c86ec234629728f02e53">ram_seg_len</a> = (uint32_t) &amp;_ramlen, \</div>
+<div class="line">        .ram_seg_copylen = (uint32_t) &amp;_copylen, \</div>
+<div class="line">        .<a class="code" href="structloadable__extension.html#a9e1fccfb378555a95d3de6d3223561cf">ram_seg_gotlen</a> = (uint32_t) &amp;_gotlen, \</div>
+<div class="line">}</div>
+<div class="ttc" id="structloadable__extension_html"><div class="ttname"><a href="structloadable__extension.html">loadable_extension</a></div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00036">loadable_extension.h:36</a></div></div>
+<div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_aa233554543f5f8eefca2b8f0b92eee07"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#aa233554543f5f8eefca2b8f0b92eee07">_sidata</a></div><div class="ttdeci">char _sidata</div></div>
+<div class="ttc" id="structloadable__extension_html_a5b6ee7148f5a0df54248d8884712995d"><div class="ttname"><a href="structloadable__extension.html#a5b6ee7148f5a0df54248d8884712995d">loadable_extension::require_version</a></div><div class="ttdeci">uint32_t require_version</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00046">loadable_extension.h:46</a></div></div>
+<div class="ttc" id="structloadable__extension_html_a44fa83b73923e63a1c3976eb4b498a57"><div class="ttname"><a href="structloadable__extension.html#a44fa83b73923e63a1c3976eb4b498a57">loadable_extension::entry_offset</a></div><div class="ttdeci">uint32_t entry_offset</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00058">loadable_extension.h:58</a></div></div>
+<div class="ttc" id="struct____attribute_____html"><div class="ttname"><a href="struct____attribute____.html">__attribute__</a></div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8h_source.html#l00033">timeutils.h:33</a></div></div>
+<div class="ttc" id="loadable__extension_8h_html_a96b5634ff81b183fd64c81118e35058d"><div class="ttname"><a href="loadable__extension_8h.html#a96b5634ff81b183fd64c81118e35058d">LOADABLE_REQUIRE_VERSION_WIRED</a></div><div class="ttdeci">#define LOADABLE_REQUIRE_VERSION_WIRED</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00045">loadable_extension.h:45</a></div></div>
+<div class="ttc" id="structloadable__extension_html_a8a8076385774c86ec234629728f02e53"><div class="ttname"><a href="structloadable__extension.html#a8a8076385774c86ec234629728f02e53">loadable_extension::ram_seg_len</a></div><div class="ttdeci">uint32_t ram_seg_len</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00048">loadable_extension.h:48</a></div></div>
+<div class="ttc" id="loadable__extension_8h_html_ad34da1c55830ae7f40ae47cb38523519"><div class="ttname"><a href="loadable__extension_8h.html#ad34da1c55830ae7f40ae47cb38523519">LOADABLE_EXTENSION_MAGIC</a></div><div class="ttdeci">#define LOADABLE_EXTENSION_MAGIC</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00037">loadable_extension.h:37</a></div></div>
+<div class="ttc" id="structloadable__extension_html_a9e1fccfb378555a95d3de6d3223561cf"><div class="ttname"><a href="structloadable__extension.html#a9e1fccfb378555a95d3de6d3223561cf">loadable_extension::ram_seg_gotlen</a></div><div class="ttdeci">uint32_t ram_seg_gotlen</div><div class="ttdef"><b>Definition:</b> <a href="loadable__extension_8h_source.html#l00053">loadable_extension.h:53</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="loadable__extension_8h_source.html#l00063">63</a> of file <a class="el" href="loadable__extension_8h_source.html">loadable_extension.h</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1069,7 @@ Variables</h2></td></tr>
 <p>Check the system is safe for autonomous flight. </p>
 <p>If an autonomous mode is available, make sure all the configurations are valid for it </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00290">290</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00291">291</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1098,7 @@ Variables</h2></td></tr>
 <p>If the system is disarmed, look for a variety of conditions that make it unsafe to arm (that might not be dangerous to engage once flying).</p>
 <p>Note this does not check every possible situation that prevents arming. In particular, transmitter_control checks for failsafe and ranges and switch arming configuration to allow/prevent arming. </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00249">249</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00250">250</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1127,7 @@ Variables</h2></td></tr>
 <p>Check the rates achieved via stabilization are ones that can be tracked by the gyros as configured. </p>
 <dl class="section return"><dt>Returns</dt><dd>error code if not </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00319">319</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00320">320</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1116,7 +1173,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SYSTEMALARMS_CONFIGERROR_NONE or SYSTEMALARMS_CONFIGERROR_MULTIROTOR </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00182">182</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00183">183</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1218,6 +1275,58 @@ Variables</h2></td></tr>
 <p>Convert UNIX timestamp to date/time Based on code from GNU C Library </p>
 
 <p>Definition at line <a class="el" href="timeutils_8c_source.html#l00051">51</a> of file <a class="el" href="timeutils_8c_source.html">timeutils.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa99d283e35ed86126e5536d3f1a5f4ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">TASKINFO_RUNNING_NUMELEM!&#160;</td>
+          <td class="paramname"> = <code>TASKINFO_STACKREMAINING_NUMELEM</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">taskelems1&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaba8097277e7fab481c945116e3710857"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">TASKINFO_RUNNING_NUMELEM!&#160;</td>
+          <td class="paramname"> = <code>TASKINFO_RUNNINGTIME_NUMELEM</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">taskelems2&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2251,7 +2360,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00340">340</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00341">341</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -2322,7 +2431,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Register a task handle with the library </p>
 
-<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00062">62</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
+<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00067">67</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
 
 </div>
 </div>
@@ -2341,7 +2450,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialize library </p>
 
-<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00045">45</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
+<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00050">50</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2469,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Query if a task is running </p>
 
-<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00100">100</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
+<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00105">105</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
 
 </div>
 </div>
@@ -2379,7 +2488,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove a task handle from the library </p>
 
-<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00081">81</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
+<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00086">86</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
 
 </div>
 </div>
@@ -2398,7 +2507,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Update the status of all tasks </p>
 
-<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00111">111</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
+<p>Definition at line <a class="el" href="taskmonitor_8c_source.html#l00116">116</a> of file <a class="el" href="taskmonitor_8c_source.html">taskmonitor.c</a>.</p>
 
 </div>
 </div>

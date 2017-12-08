@@ -66,6 +66,7 @@ var annotated =
     [ "Latitude_Band_Value", "struct_latitude___band___value.html", "struct_latitude___band___value" ],
     [ "led_pwm_state", "structled__pwm__state.html", "structled__pwm__state" ],
     [ "LinearInterpolate", "class_linear_interpolate.html", "class_linear_interpolate" ],
+    [ "loadable_extension", "structloadable__extension.html", "structloadable__extension" ],
     [ "logfs_state", "structlogfs__state.html", "structlogfs__state" ],
     [ "LogfsTestCooked", "class_logfs_test_cooked.html", "class_logfs_test_cooked" ],
     [ "LogfsTestCookedMultiPart", "class_logfs_test_cooked_multi_part.html", "class_logfs_test_cooked_multi_part" ],

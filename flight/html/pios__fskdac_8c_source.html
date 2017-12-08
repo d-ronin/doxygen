@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -312,13 +312,13 @@ $(document).ready(function(){initNavTree('pios__fskdac_8c_source.html','');});
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                uint16_t freq = ((dev-&gt;send_state &amp; 0x8000) || (no_next_c)) ?</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                        3277 : 6008;            <span class="comment">/* 1200 mark / 2200 space */</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; SAMPLES_PER_BIT; j++) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a> = 0; <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a> &lt; SAMPLES_PER_BIT; <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>++) {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        dev-&gt;phase_accum += freq;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        uint16_t result = 32768 +</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                ((<a class="code" href="group___flight_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">sin_approx</a>(dev-&gt;phase_accum &gt;&gt; 1) * 6) &gt;&gt; 2);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        buf[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> + j] = result &amp; 0xFFF0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        buf[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> + <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>] = result &amp; 0xFFF0;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                dev-&gt;send_state &lt;&lt;= 1;</div>
@@ -342,6 +342,7 @@ $(document).ready(function(){initNavTree('pios__fskdac_8c_source.html','');});
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_s_k_d_a_c_html_ga674b3c85cb3592e03429a4f96c874108"><div class="ttname"><a href="group___p_i_o_s___f_s_k_d_a_c.html#ga674b3c85cb3592e03429a4f96c874108">pios_fskdac_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_fskdac_com_driver</div></div>
+<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_gad29a4212158fb9ddf721ac241e09cb79"><div class="ttname"><a href="group___p_i_o_s.html#gad29a4212158fb9ddf721ac241e09cb79">dac_dev_t</a></div><div class="ttdeci">struct dac_dev_s * dac_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00040">pios_dac.h:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_af7137074ee2ca2426304c94b0177cb4d"><div class="ttname"><a href="structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d">pios_com_driver::tx_start</a></div><div class="ttdeci">void(* tx_start)(uintptr_t id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00045">pios_com.h:45</a></div></div>

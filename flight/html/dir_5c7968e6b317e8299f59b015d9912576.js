@@ -4,6 +4,7 @@ var dir_5c7968e6b317e8299f59b015d9912576 =
     [ "circqueue.h", "circqueue_8h.html", "circqueue_8h" ],
     [ "frsky_packing.h", "frsky__packing_8h.html", "frsky__packing_8h" ],
     [ "insgps.h", "insgps_8h.html", "insgps_8h" ],
+    [ "loadable_extension.h", "loadable__extension_8h.html", "loadable__extension_8h" ],
     [ "morsel.h", "morsel_8h.html", "morsel_8h" ],
     [ "paths.h", "paths_8h.html", "paths_8h" ],
     [ "sanitycheck.h", "sanitycheck_8h.html", "sanitycheck_8h" ],

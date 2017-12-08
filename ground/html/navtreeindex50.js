@@ -1,5 +1,8 @@
 var NAVTREEINDEX50 =
 {
+"quanton_8cpp_source.html":[6,0,0,0,0,1,6,2],
+"quanton_8h.html":[6,0,0,0,0,1,6,3],
+"quanton_8h_source.html":[6,0,0,0,0,1,6,3],
 "qwineventnotifier__p_8h.html":[6,0,0,0,0,0,5,21],
 "qwineventnotifier__p_8h_source.html":[6,0,0,0,0,0,5,21],
 "radioprobepage_8cpp.html":[6,0,0,0,0,1,28,0,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX50 =
 "spectrogramplotdata_8cpp.html":[6,0,0,0,0,1,29,1,2],
 "spectrogramplotdata_8cpp_source.html":[6,0,0,0,0,1,29,1,2],
 "spectrogramplotdata_8h.html":[6,0,0,0,0,1,29,1,3],
-"spectrogramplotdata_8h_source.html":[6,0,0,0,0,1,29,1,3],
-"spectrogramscopeconfig_8cpp.html":[6,0,0,0,0,1,29,1,4],
-"spectrogramscopeconfig_8cpp_source.html":[6,0,0,0,0,1,29,1,4],
-"spectrogramscopeconfig_8h.html":[6,0,0,0,0,1,29,1,5]
+"spectrogramplotdata_8h_source.html":[6,0,0,0,0,1,29,1,3]
 };

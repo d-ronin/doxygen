@@ -5,6 +5,7 @@ var searchData=
   ['flash_5fpartition_5flabel_5fbl',['FLASH_PARTITION_LABEL_BL',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a3137c8381d092dac75ce1e0186be7ed5',1,'pios_flash.h']]],
   ['flash_5fpartition_5flabel_5fee',['FLASH_PARTITION_LABEL_EE',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a787ef2f2c159e212eb1abdd84cad9fef',1,'pios_flash.h']]],
   ['flash_5fpartition_5flabel_5ffw',['FLASH_PARTITION_LABEL_FW',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a6a2bde87805511bad8594803d8e85b73',1,'pios_flash.h']]],
+  ['flash_5fpartition_5flabel_5floadable_5fextension',['FLASH_PARTITION_LABEL_LOADABLE_EXTENSION',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f54f6ca2215d056fd8bfe7a31c0685',1,'pios_flash.h']]],
   ['flash_5fpartition_5flabel_5flog',['FLASH_PARTITION_LABEL_LOG',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b',1,'pios_flash.h']]],
   ['flash_5fpartition_5flabel_5fsettings',['FLASH_PARTITION_LABEL_SETTINGS',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a35ba86347414aeed88afa7eca6e8e541',1,'pios_flash.h']]],
   ['flash_5fpartition_5fnum_5flabels',['FLASH_PARTITION_NUM_LABELS',['../group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a017fbb04541488363bc59f89a8915f01',1,'pios_flash.h']]],

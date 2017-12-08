@@ -144,6 +144,7 @@ var searchData=
   ['pios_5fflash_5ferase_5frange',['PIOS_FLASH_erase_range',['../group___p_i_o_s___f_l_a_s_h.html#ga8d12d95c9902d85f21d486b6af80bbd2',1,'pios_flash.h']]],
   ['pios_5fflash_5ffind_5fpartition_5fid',['PIOS_FLASH_find_partition_id',['../group___p_i_o_s___f_l_a_s_h.html#ga48244562c8191753001dd4876cf84aca',1,'pios_flash.h']]],
   ['pios_5fflash_5ffixup_5fpartitions_5ffor_5fcapacity',['PIOS_FLASH_fixup_partitions_for_capacity',['../group___p_i_o_s___f_l_a_s_h.html#gadd9970ba39fddca2c2af22396284836f',1,'pios_flash_priv.h']]],
+  ['pios_5fflash_5fget_5faddress',['PIOS_FLASH_get_address',['../group___p_i_o_s___f_l_a_s_h.html#ga29787f497592345d5bf80d7d522970d8',1,'pios_flash.h']]],
   ['pios_5fflash_5fget_5fnum_5fpartitions',['PIOS_FLASH_get_num_partitions',['../group___p_i_o_s___f_l_a_s_h.html#gae1e540b9b876e9bc4ffb796be502ea7f',1,'pios_flash.h']]],
   ['pios_5fflash_5fget_5fpartition_5fsize',['PIOS_FLASH_get_partition_size',['../group___p_i_o_s___f_l_a_s_h.html#ga419099f2eaa0b46517ceda9492c8b202',1,'pios_flash.h']]],
   ['pios_5fflash_5finternal_5finit',['PIOS_Flash_Internal_Init',['../pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587',1,'pios_flash_internal_priv.h']]],

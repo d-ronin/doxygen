@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2startup_8c_source.html'
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;struct cm3_vectors {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span>    *initial_stack;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac">vector</a>  *entry;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac">vector</a>  *<a class="code" href="modtest_8c.html#a614d1b54cb6bda6d74b542d9bd768a2a">entry</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac">vector</a>  *vectors[14];</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2startup_8c_source.html'
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">struct </span>cm3_vectors cpu_vectors <a class="code" href="_s_t_m32_f0xx_2startup_8c.html#aadc803b04570b68b4ba9a8a89cbb65a9">__attribute</a>((section(&quot;.cpu_vectors&quot;))) = {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                .initial_stack = &amp;irq_stack[<span class="keyword">sizeof</span>(irq_stack)],</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                .entry = (<a class="code" href="_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac">vector</a> *)<a class="code" href="group___p_i_o_s.html#gabaa8f446abb569a6f850a328569bec9f">_main</a>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                .<a class="code" href="modtest_8c.html#a614d1b54cb6bda6d74b542d9bd768a2a">entry</a> = (<a class="code" href="_s_t_m32_f0xx_2startup_8c.html#a3c46a32d92954306e54f6e9acdd9eaac">vector</a> *)<a class="code" href="group___p_i_o_s.html#gabaa8f446abb569a6f850a328569bec9f">_main</a>,</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                .vectors = {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                NMI_Handler,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                HardFault_Handler,</div>
@@ -241,6 +241,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2startup_8c_source.html'
 <div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_aadc803b04570b68b4ba9a8a89cbb65a9"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#aadc803b04570b68b4ba9a8a89cbb65a9">__attribute</a></div><div class="ttdeci">const void *_vectors[] __attribute((section(&quot;.vectors&quot;)))</div></div>
 <div class="ttc" id="group___targets_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="chibi__main_8c_source.html#l00072">chibi_main.c:72</a></div></div>
 <div class="ttc" id="_s_t_m32_f0xx_2startup_8c_html_a678387b54786b38004c37c629e83a35a"><div class="ttname"><a href="_s_t_m32_f0xx_2startup_8c.html#a678387b54786b38004c37c629e83a35a">_edata</a></div><div class="ttdeci">char _edata</div></div>
+<div class="ttc" id="modtest_8c_html_a614d1b54cb6bda6d74b542d9bd768a2a"><div class="ttname"><a href="modtest_8c.html#a614d1b54cb6bda6d74b542d9bd768a2a">entry</a></div><div class="ttdeci">static void entry()</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00040">modtest.c:40</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga237c367d2c1b3ed1794f0dc8835741a9"><div class="ttname"><a href="group___p_i_o_s.html#ga237c367d2c1b3ed1794f0dc8835741a9">default_cpu_handler</a></div><div class="ttdeci">static void default_cpu_handler(void)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2startup_8c_source.html#l00108">startup.c:108</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

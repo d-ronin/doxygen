@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('sha1_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*********************** FUNCTION DEFINITIONS ***********************/</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="sha1_8c.html#abb2cc76580c751343d3ecfb5f6e88b39">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sha1_8c.html#abb2cc76580c751343d3ecfb5f6e88b39">sha1_transform</a>(<a class="code" href="struct_s_h_a1___c_t_x.html">SHA1_CTX</a> *ctx, <span class="keyword">const</span> uint8_t <a class="code" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a>[])</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        uint32_t a, b, c, <a class="code" href="msp__messages_8h.html#a4cd140aecf7c77a91e1b41afb65cdf4f">d</a>, e, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, j, t, m[80];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        uint32_t a, b, c, <a class="code" href="msp__messages_8h.html#a4cd140aecf7c77a91e1b41afb65cdf4f">d</a>, e, <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>, t, m[80];</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">for</span> (i = 0, j = 0; i &lt; 16; ++<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, j += 4)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                m[i] = (data[j] &lt;&lt; 24) + (data[j + 1] &lt;&lt; 16) + (data[j + 2] &lt;&lt; 8) + (data[j + 3]);</div>
@@ -271,6 +271,7 @@ $(document).ready(function(){initNavTree('sha1_8c_source.html','');});
 <div class="ttc" id="struct_s_h_a1___c_t_x_html_a81d7f6018258ee84f001284c6ff9d2d5"><div class="ttname"><a href="struct_s_h_a1___c_t_x.html#a81d7f6018258ee84f001284c6ff9d2d5">SHA1_CTX::state</a></div><div class="ttdeci">uint32_t state[5]</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8h_source.html#l00024">sha1.h:24</a></div></div>
 <div class="ttc" id="struct_s_h_a1___c_t_x_html_a186a2675342a9a0b4647fc5a5099d331"><div class="ttname"><a href="struct_s_h_a1___c_t_x.html#a186a2675342a9a0b4647fc5a5099d331">SHA1_CTX::bitlen</a></div><div class="ttdeci">uint64_t bitlen</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8h_source.html#l00023">sha1.h:23</a></div></div>
 <div class="ttc" id="sha1_8h_html"><div class="ttname"><a href="sha1_8h.html">sha1.h</a></div></div>
+<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="sha1_8c_html_a81c0538c322ff66ca03b753ca8733782"><div class="ttname"><a href="sha1_8c.html#a81c0538c322ff66ca03b753ca8733782">sha1_final</a></div><div class="ttdeci">void sha1_final(SHA1_CTX *ctx, uint8_t hash[])</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8c_source.html#l00108">sha1.c:108</a></div></div>
 <div class="ttc" id="struct_s_h_a1___c_t_x_html_a342f2130fe73e2aa02265d073e6fbc87"><div class="ttname"><a href="struct_s_h_a1___c_t_x.html#a342f2130fe73e2aa02265d073e6fbc87">SHA1_CTX::k</a></div><div class="ttdeci">uint32_t k[4]</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8h_source.html#l00025">sha1.h:25</a></div></div>
 <div class="ttc" id="struct_s_h_a1___c_t_x_html_afe82f39439d4b87ff49ba2fa3a0bf312"><div class="ttname"><a href="struct_s_h_a1___c_t_x.html#afe82f39439d4b87ff49ba2fa3a0bf312">SHA1_CTX::data</a></div><div class="ttdeci">uint8_t data[64]</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8h_source.html#l00021">sha1.h:21</a></div></div>

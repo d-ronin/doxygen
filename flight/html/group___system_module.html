@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">e99c5e0</span>
+   &#160;<span id="projectnumber">b0697f3</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -188,6 +188,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga95b476fa87e188a38b66aeaa8538a8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5cab46fd40736cedd14e41c99c27389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gad5cab46fd40736cedd14e41c99c27389">DONT_BUILD_IF</a> (ANNUNCIATORSETTINGS_ANNUNCIATEAFTERARMING_MAXOPTVAL!=ANNUNCIATORSETTINGS_ANNUNCIATEANYTIME_MAXOPTVAL, AnnuncSettingsMismatch2)</td></tr>
 <tr class="separator:gad5cab46fd40736cedd14e41c99c27389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac374c4b31e49061afbb7dd23bcd1a3f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gac374c4b31e49061afbb7dd23bcd1a3f7">system_annunc_custom_string</a> (const char *string)</td></tr>
+<tr class="separator:gac374c4b31e49061afbb7dd23bcd1a3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga97fd430f36f8b065226e2bff9bad1de5">vApplicationIdleHook</a> (void)</td></tr>
 <tr class="separator:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga938822e7233dbbb444a5bdde8f626fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga938822e7233dbbb444a5bdde8f626fae">EventGetStats</a> (<a class="el" href="struct_event_stats.html">EventStats</a> *statsOut)</td></tr>
@@ -224,6 +226,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga409efe511a9583167ae97f88b838d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31adc044d18538d023d203ceb36eb14c"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#ga31adc044d18538d023d203ceb36eb14c">config_check_needed</a></td></tr>
 <tr class="separator:ga31adc044d18538d023d203ceb36eb14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef0b84d0870d07081cfd983766e6102d"><td class="memItemLeft" align="right" valign="top">static const char *volatile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___system_module.html#gaef0b84d0870d07081cfd983766e6102d">custom_blink_string</a></td></tr>
+<tr class="separator:gaef0b84d0870d07081cfd983766e6102d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Implementation of annunciation and simple color blending for RGB LEDs. </p>
@@ -280,7 +284,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01033">1033</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01049">1049</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -295,7 +299,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called periodically to update the WDG statistics </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00703">703</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00719">719</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -416,7 +420,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called whenever a critical configuration component changes </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00676">676</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00692">692</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -518,7 +522,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Clear the statistics counters </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00895">895</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00911">911</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -543,7 +547,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00885">885</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00901">901</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -586,9 +590,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1)</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>would be nice to get context record logic in these </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>would be nice to get context record logic in these </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00910">910</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00926">926</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -632,7 +636,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00922">922</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00938">938</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -691,7 +695,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00959">959</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00975">975</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -735,7 +739,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00934">934</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00950">950</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -779,7 +783,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00946">946</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00962">962</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -838,7 +842,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success (0), failure (-1) </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01003">1003</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01019">1019</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -887,7 +891,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Function called in response to object updates </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00601">601</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00617">617</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -914,7 +918,25 @@ Variables</h2></td></tr>
 <p>Handle periodic updates for all objects. </p>
 <dl class="section return"><dt>Returns</dt><dd>The system time until the next update (in ms) or -1 if failed </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01039">1039</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l01055">1055</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac374c4b31e49061afbb7dd23bcd1a3f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void system_annunc_custom_string </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00401">401</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -978,7 +1000,7 @@ Variables</h2></td></tr>
 <p>Initialize the module, called on startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or -1 if initialization failed </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00186">186</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00187">187</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1020,7 @@ Variables</h2></td></tr>
 <p>Create the module task. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or -1 if initialization failed </dd></dl>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00165">165</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00166">166</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1068,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00400">400</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00406">406</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1094,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00221">221</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00222">222</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1119,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00706">706</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00722">722</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1145,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called periodically to update the system stats </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00755">755</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00771">771</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1171,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Update system alarms </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00803">803</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00819">819</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1190,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called by the RTOS when the CPU is idle, used to measure the CPU idle time. </p>
 
-<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00870">870</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00886">886</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>
@@ -1192,6 +1214,28 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="systemmod_8c_source.html#l00140">140</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaef0b84d0870d07081cfd983766e6102d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* volatile custom_blink_string</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="systemmod_8c_source.html#l00141">141</a> of file <a class="el" href="systemmod_8c_source.html">systemmod.c</a>.</p>
 
 </div>
 </div>

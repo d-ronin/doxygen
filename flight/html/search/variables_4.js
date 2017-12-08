@@ -74,6 +74,7 @@ var searchData=
   ['dfu_5fpartition_5fbl',['DFU_PARTITION_BL',['../bl__messages_8h.html#a1682a8364e0b019cc3367b24a4125b57',1,'bl_messages.h']]],
   ['dfu_5fpartition_5fdesc',['DFU_PARTITION_DESC',['../bl__messages_8h.html#ab8f123dfd049277430010ac6e9ab99a1',1,'bl_messages.h']]],
   ['dfu_5fpartition_5ffw',['DFU_PARTITION_FW',['../bl__messages_8h.html#ab1763c481df86e1568031ab40041d502',1,'bl_messages.h']]],
+  ['dfu_5fpartition_5floadable_5fextension',['DFU_PARTITION_LOADABLE_EXTENSION',['../bl__messages_8h.html#a3a4d4381b94378082109566c18d8eaa3',1,'bl_messages.h']]],
   ['dfu_5fpartition_5flog',['DFU_PARTITION_LOG',['../bl__messages_8h.html#a12e3ca6c3a3c5f3e2327e36133876203',1,'bl_messages.h']]],
   ['dfu_5fpartition_5fsettings',['DFU_PARTITION_SETTINGS',['../bl__messages_8h.html#acfa1836ada8bfa6a73d478d6e6fdc940',1,'bl_messages.h']]],
   ['differential',['differential',['../structsmoothcontrol__axis__state.html#a91e25d05ac1ba8176da320ecefd7caed',1,'smoothcontrol_axis_state']]],

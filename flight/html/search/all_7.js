@@ -60,6 +60,7 @@ var searchData=
   ['get_5fotp',['GET_OTP',['../classpx__uploader_1_1uploader.html#abf6aadf5e935224b5086bf631f5dab9c',1,'px_uploader::uploader']]],
   ['get_5fpacket',['get_packet',['../group___unit_tests.html#ga923f3c951a39fd738bc9d9f83bb55dfc',1,'DsmTest']]],
   ['get_5fpin',['get_pin',['../structpios__adc__driver.html#a9362aa0b30e34dccd3fa9bb97ad8a7d1',1,'pios_adc_driver']]],
+  ['get_5fpointer',['get_pointer',['../group___p_i_o_s___f_l_a_s_h.html#ga3996ba7fb425713797aed9c691b2328c',1,'pios_flash_driver']]],
   ['get_5fpolar_5fstereographic_5fparameters',['Get_Polar_Stereographic_Parameters',['../polarst_8c.html#a809bb2a10fed1ea48f7cdd43ee1274e8',1,'Get_Polar_Stereographic_Parameters(double *a, double *f, double *Latitude_of_True_Scale, double *longitude_Down_from_Pole, double *False_Easting, double *False_Northing):&#160;polarst.c'],['../polarst_8h.html#a809bb2a10fed1ea48f7cdd43ee1274e8',1,'Get_Polar_Stereographic_Parameters(double *a, double *f, double *Latitude_of_True_Scale, double *longitude_Down_from_Pole, double *False_Easting, double *False_Northing):&#160;polarst.c']]],
   ['get_5fprevious_5fcolor',['get_previous_color',['../group___on_screen_display.html#gaf8e6dec72f2c54051426ab1bb6adb7ab',1,'osd_menu.c']]],
   ['get_5fsbus_5fcfg',['get_sbus_cfg',['../group___flying_p_i_o.html#ga59400bb19c29b96570f1ae359ef0b120',1,'board_hw_defs.c']]],
