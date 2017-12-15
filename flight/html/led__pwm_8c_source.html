@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">90c5ea6</span>
+   &#160;<span id="projectnumber">79dbcf6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -225,8 +225,8 @@ $(document).ready(function(){initNavTree('led__pwm_8c_source.html','');});
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> ((leds-&gt;<a class="code" href="structled__pwm__state.html#a487afebde1564dc3122e905909a3758f">uptime_us</a> - leds-&gt;last_ws2811_us) &gt;= WS2811_UPDATE_INTERVAL) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                leds-&gt;last_ws2811_us = leds-&gt;<a class="code" href="structled__pwm__state.html#a487afebde1564dc3122e905909a3758f">uptime_us</a>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, led1_fraction,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        led2_fraction / 2, 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga72ea5a79ecf3a73be8625afabcfe27a6">PIOS_WS2811_set_all</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, led1_fraction / 2,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        led2_fraction / 3, 0);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">90c5ea6</span>
+   &#160;<span id="projectnumber">79dbcf6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -420,190 +420,204 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        RGBLEDSettingsRangeColorBlendModeOptions blend_mode =</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                rgbSettings.RangeColorBlendMode;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span> (!is_armed) {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                blend_source = rgbSettings.RangeColorBlendUnarmedSource;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// future: would be nice to have per-index variance too for &quot;motion&quot;</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">switch</span> (blend_source) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ALWAYSUSEBASECOLOR:</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIMEHALFSECONDPERIOD:</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        fraction = (tmpui32 % 500) * 65535 / 500;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                        }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIMESECONDPERIOD:</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                        fraction = (tmpui32 % 1000) * 65535 / 1000;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIME2SECONDPERIOD:</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        fraction = (tmpui32 % 2000) * 65535 / 2000;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIME4SECONDPERIOD:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        fraction = (tmpui32 % 4000) * 65535 / 4000;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                        }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_THROTTLE:</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        StabilizationDesiredThrustGet(&amp;tmp_float);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                        fraction = float_to_u16(fabsf(tmp_float));</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY0:</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                        fraction = accessory_desired_get_u16(0);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY1:</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                        fraction = accessory_desired_get_u16(1);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_USB</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (rgbSettings.DimWhenUSB == RGBLEDSETTINGS_DIMWHENUSB_TRUE) {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b.html#ga849bc66f0665ff6328b57ec3aa7c03f9">PIOS_USB_CableConnected</a>(0)) {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                        force_dim = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (!is_armed) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                blend_source = rgbSettings.RangeColorBlendUnarmedSource;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="comment">// future: would be nice to have per-index variance too for &quot;motion&quot;</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">switch</span> (blend_source) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ALWAYSUSEBASECOLOR:</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIMEHALFSECONDPERIOD:</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                        fraction = (tmpui32 % 500) * 65535 / 500;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIMESECONDPERIOD:</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        fraction = (tmpui32 % 1000) * 65535 / 1000;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                        }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIME2SECONDPERIOD:</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        fraction = (tmpui32 % 2000) * 65535 / 2000;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                        }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_TIME4SECONDPERIOD:</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                        tmpui32 = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        fraction = (tmpui32 % 4000) * 65535 / 4000;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                        <span class="keywordflow">if</span> (blend_mode == RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                <span class="comment">/* Force to sinusodial modes for time */</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                                blend_mode = RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                        }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_THROTTLE:</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                        StabilizationDesiredThrustGet(&amp;tmp_float);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                        fraction = float_to_u16(fabsf(tmp_float));</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY2:</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                        fraction = accessory_desired_get_u16(2);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY0:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                        fraction = accessory_desired_get_u16(0);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">switch</span> (blend_mode) {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH:</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                        <span class="keywordflow">break</span>;  <span class="comment">// Do nothing.  It&#39;s sawtooth already</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE:</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        fraction = sinusodialize(fraction);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_TRIANGLE:</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                        <span class="keywordflow">if</span> (fraction &gt;= 32768) {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                <span class="comment">// Relies on unsigned wraparound magic</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                fraction = 65535 - fraction * 2;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                fraction *= 2;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                        }</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SQUARE:</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                        <span class="keywordflow">if</span> (fraction &gt; 32768) {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                fraction = 65535;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                fraction = 0;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                        }</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <span class="keywordflow">switch</span> (rgbSettings.RangeColorBlendType) {</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARRGBFADE:</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                        range_color[0] = linear_interp_u16(</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                        rgbSettings.RangeBaseColor[0],</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                                        rgbSettings.RangeEndColor[0],</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                                        fraction);</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                        range_color[1] = linear_interp_u16(</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                                        rgbSettings.RangeBaseColor[1],</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                        rgbSettings.RangeEndColor[1],</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                        fraction);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                        range_color[2] = linear_interp_u16(</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                        rgbSettings.RangeBaseColor[2],</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                        rgbSettings.RangeEndColor[2],</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY1:</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                        fraction = accessory_desired_get_u16(1);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDSOURCE_ACCESSORY2:</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                        fraction = accessory_desired_get_u16(2);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">switch</span> (blend_mode) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SAWTOOTH:</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                        <span class="keywordflow">break</span>;  <span class="comment">// Do nothing.  It&#39;s sawtooth already</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SINE:</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                        fraction = sinusodialize(fraction);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_TRIANGLE:</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                        <span class="keywordflow">if</span> (fraction &gt;= 32768) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                <span class="comment">// Relies on unsigned wraparound magic</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                                fraction = 65535 - fraction * 2;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                fraction *= 2;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDMODE_SQUARE:</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        <span class="keywordflow">if</span> (fraction &gt; 32768) {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                fraction = 65535;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                fraction = 0;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                        }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">switch</span> (rgbSettings.RangeColorBlendType) {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARRGBFADE:</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                        range_color[0] = linear_interp_u16(</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                        rgbSettings.RangeBaseColor[0],</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                        rgbSettings.RangeEndColor[0],</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                        fraction);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARINHSV:</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                        interp_in_hsv(<span class="keyword">false</span>, rgbSettings.RangeBaseColor,</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                                        rgbSettings.RangeEndColor,</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                        range_color,</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                                        fraction);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARINHSVBACKWARDSHUE:</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                        interp_in_hsv(<span class="keyword">true</span>, rgbSettings.RangeBaseColor,</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                                        rgbSettings.RangeEndColor,</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                        range_color,</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                        fraction);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">if</span> (force_dim) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                range_color[0] /= 2;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                range_color[1] /= 2;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                range_color[2] /= 2;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        }</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        uint8_t alarm_color[3] = { 0, 0, 0 };</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                        range_color[1] = linear_interp_u16(</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                                        rgbSettings.RangeBaseColor[1],</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                                        rgbSettings.RangeEndColor[1],</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                        fraction);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                        range_color[2] = linear_interp_u16(</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                        rgbSettings.RangeBaseColor[2],</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                        rgbSettings.RangeEndColor[2],</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                                        fraction);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARINHSV:</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                        interp_in_hsv(<span class="keyword">false</span>, rgbSettings.RangeBaseColor,</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                        rgbSettings.RangeEndColor,</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                        range_color,</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                        fraction);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <span class="keywordflow">case</span> RGBLEDSETTINGS_RANGECOLORBLENDTYPE_LINEARINHSVBACKWARDSHUE:</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                        interp_in_hsv(<span class="keyword">true</span>, rgbSettings.RangeBaseColor,</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                                        rgbSettings.RangeEndColor,</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                                        range_color,</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                                        fraction);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        }</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">if</span> (led_override &amp;&amp; led_override_active) {</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                <span class="comment">// pick a meaningful color based on prio</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                <span class="keywordflow">if</span> (blink_prio &gt;= SYSTEMALARMS_ALARM_CRITICAL) {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                        alarm_color[0] = 255; <span class="comment">// RED</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                        alarm_color[1] = 32;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                        alarm_color[2] = 32;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (blink_prio &gt;= SYSTEMALARMS_ALARM_WARNING) {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                        alarm_color[0] = 255; <span class="comment">// YELLOW</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                        alarm_color[1] = 200;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                        alarm_color[2] = 32;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                        alarm_color[0] = 32; <span class="comment">// GREEN</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                        alarm_color[1] = 200;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                        alarm_color[2] = 32;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                }</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        }</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_leds; i++) {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                <span class="keywordflow">if</span> (led_override) {</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                        <span class="keywordflow">if</span> ((i &gt;= rgbSettings.AnnunciateRangeBegin) &amp;&amp;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                        (i &lt;= rgbSettings.AnnunciateRangeEnd)) {</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                               alarm_color[0],</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                                               alarm_color[1],</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                               alarm_color[2]);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                        }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                <span class="keywordflow">if</span> ((i &gt;= rgbSettings.RangeBegin) &amp;&amp;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                                (i &lt;= rgbSettings.RangeEnd)) {</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                        <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                                        range_color[0], range_color[1],</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                                        range_color[2]);</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                }</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                                rgbSettings.DefaultColor[0],</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                                rgbSettings.DefaultColor[1],</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                                rgbSettings.DefaultColor[2]);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        uint8_t alarm_color[3] = { 0, 0, 0 };</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordflow">if</span> (led_override &amp;&amp; led_override_active) {</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                <span class="comment">// pick a meaningful color based on prio</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <span class="keywordflow">if</span> (blink_prio &gt;= SYSTEMALARMS_ALARM_CRITICAL) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                        alarm_color[0] = 255; <span class="comment">// RED</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                        alarm_color[1] = 32;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                        alarm_color[2] = 32;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (blink_prio &gt;= SYSTEMALARMS_ALARM_WARNING) {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                        alarm_color[0] = 255; <span class="comment">// YELLOW</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                        alarm_color[1] = 200;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                        alarm_color[2] = 32;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                        alarm_color[0] = 32; <span class="comment">// GREEN</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                        alarm_color[1] = 200;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                        alarm_color[2] = 32;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                }</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        }</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordflow">if</span> (force_dim) {</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                range_color[0] = (range_color[0] + 2) / 3;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                range_color[1] = (range_color[1] + 2) / 3;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                range_color[2] = (range_color[2] + 2) / 3;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                alarm_color[0] = (alarm_color[0] + 2) / 3;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                alarm_color[1] = (alarm_color[1] + 2) / 3;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                alarm_color[2] = (alarm_color[2] + 2) / 3;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                rgbSettings.DefaultColor[0] = (rgbSettings.DefaultColor[0] + 2) / 3;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                rgbSettings.DefaultColor[1] = (rgbSettings.DefaultColor[1] + 2) / 3;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                rgbSettings.DefaultColor[2] = (rgbSettings.DefaultColor[2] + 2) / 3;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_leds; i++) {</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                <span class="keywordflow">if</span> (led_override) {</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                        <span class="keywordflow">if</span> ((i &gt;= rgbSettings.AnnunciateRangeBegin) &amp;&amp;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                                        (i &lt;= rgbSettings.AnnunciateRangeEnd)) {</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                                               alarm_color[0],</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                                               alarm_color[1],</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                                               alarm_color[2]);</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                        }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                }</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">#ifdef SYSTEMMOD_RGBLED_VIDEO_HACK</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor"></span>        <span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a>;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">if</span> (!video_active) {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        }</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                <span class="keywordflow">if</span> ((i &gt;= rgbSettings.RangeBegin) &amp;&amp;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                                (i &lt;= rgbSettings.RangeEnd)) {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                        <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                                        range_color[0], range_color[1],</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                                        range_color[2]);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                }</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>, i,</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                                rgbSettings.DefaultColor[0],</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                                rgbSettings.DefaultColor[1],</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                                rgbSettings.DefaultColor[2]);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        }</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="preprocessor">#ifdef SYSTEMMOD_RGBLED_VIDEO_HACK</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="preprocessor"></span>        <span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a>;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">if</span> (!video_active) {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a>(<a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___on_screen_display_html_gaa0e1b89f80645ac528511ff7bfa2d096"><div class="ttname"><a href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a></div><div class="ttdeci">volatile bool video_active</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00137">onscreendisplay.c:137</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_ga2cc1a6022889b87d9ae38c56a98bfec0"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga2cc1a6022889b87d9ae38c56a98bfec0">PIOS_WS2811_get_num_leds</a></div><div class="ttdeci">int PIOS_WS2811_get_num_leds(ws2811_dev_t dev)</div><div class="ttdoc">Find out how many LEDs are configured on an interface. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00227">pios_ws2811.c:227</a></div></div>
@@ -616,6 +630,7 @@ $(document).ready(function(){initNavTree('rgbleds_8c_source.html','');});
 <div class="ttc" id="namespacepx__mkfw_html_ada4502124cbbf5a9984df3a21e079434"><div class="ttname"><a href="namespacepx__mkfw.html#ada4502124cbbf5a9984df3a21e079434">px_mkfw.f</a></div><div class="ttdeci">tuple f</div><div class="ttdef"><b>Definition:</b> <a href="px__mkfw_8py_source.html#l00081">px_mkfw.py:81</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_ga20584f1efdf110e8df6fbe60939fa928"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga20584f1efdf110e8df6fbe60939fa928">PIOS_WS2811_set</a></div><div class="ttdeci">void PIOS_WS2811_set(ws2811_dev_t dev, int idx, uint8_t r, uint8_t g, uint8_t b)</div><div class="ttdoc">Set a given LED to a color value. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00176">pios_ws2811.c:176</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_gaf5cff810f4d02d3844f9af889754e32c"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#gaf5cff810f4d02d3844f9af889754e32c">PIOS_WS2811_trigger_update</a></div><div class="ttdeci">void PIOS_WS2811_trigger_update(ws2811_dev_t dev)</div><div class="ttdoc">Trigger an update of the LED strand. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00197">pios_ws2811.c:197</a></div></div>
+<div class="ttc" id="group___p_i_o_s___u_s_b_html_ga849bc66f0665ff6328b57ec3aa7c03f9"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#ga849bc66f0665ff6328b57ec3aa7c03f9">PIOS_USB_CableConnected</a></div><div class="ttdeci">bool PIOS_USB_CableConnected(uintptr_t id)</div></div>
 <div class="ttc" id="msp__messages_8h_html_a6519522ad9a6f45e7a8d25d31392a977"><div class="ttname"><a href="msp__messages_8h.html#a6519522ad9a6f45e7a8d25d31392a977">p</a></div><div class="ttdeci">uint8_t p</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00096">msp_messages.h:96</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
