@@ -102,7 +102,6 @@ var searchData=
   ['buffer',['buffer',['../group___p_i_o_s___d_m_a_shot.html#ga93bb083d7b70fb30ae670709b7c77f44',1,'servo_timer::buffer()'],['../group___common_f1.html#ga4087ff5eba1dd1ed72c881f9c6ecc662',1,'Buffer():&#160;op_dfu.c']]],
   ['buffer_5fsize',['buffer_size',['../group___p_i_o_s___w_s2811.html#ga359479a0dcb8558a50c009fbb9e167ca',1,'ws2811_dev_s']]],
   ['buffers_5fsize',['buffers_size',['../struct_vibration_analysis__data.html#a8bebd33e95edd2d27a37091569852851',1,'VibrationAnalysis_data']]],
-  ['bus_5ferror',['bus_error',['../structpios__i2c__adapter.html#a98b74dc40da65289c18494530b759724',1,'pios_i2c_adapter']]],
   ['busy',['busy',['../structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b',1,'pios_spi_dev']]],
   ['bx',['Bx',['../struct_w_m_mtype___magnetic_results.html#ab47b493b060af6221ee19270b4a39529',1,'WMMtype_MagneticResults']]],
   ['by',['By',['../struct_w_m_mtype___magnetic_results.html#aa6dcc4f5525f563fd38032ca8ffbf02d',1,'WMMtype_MagneticResults']]],

@@ -6,7 +6,6 @@ var dir_4b9474a4fbfb8ccb88460c15476c3b9a =
     [ "pios_dma.c", "pios__dma_8c.html", "pios__dma_8c" ],
     [ "pios_dma_hooks.c", "pios__dma__hooks_8c.html", null ],
     [ "pios_flash_internal.c", "_s_t_m32_f30x_2pios__flash__internal_8c.html", null ],
-    [ "pios_i2c.c", "_s_t_m32_f30x_2pios__i2c_8c.html", null ],
     [ "pios_iap.c", "_s_t_m32_f30x_2pios__iap_8c.html", "_s_t_m32_f30x_2pios__iap_8c" ],
     [ "pios_internal_adc.c", "_s_t_m32_f30x_2pios__internal__adc_8c.html", null ],
     [ "pios_rtc.c", "_s_t_m32_f30x_2pios__rtc_8c.html", null ],
@@ -18,7 +17,6 @@ var dir_4b9474a4fbfb8ccb88460c15476c3b9a =
     [ "pios_usb_hid.c", "_s_t_m32_f30x_2pios__usb__hid_8c.html", null ],
     [ "pios_usb_hid_istr.c", "_s_t_m32_f30x_2pios__usb__hid__istr_8c.html", "_s_t_m32_f30x_2pios__usb__hid__istr_8c" ],
     [ "pios_usb_hid_pwr.c", "_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html", "_s_t_m32_f30x_2pios__usb__hid__pwr_8c" ],
-    [ "pios_usbhook.c", "_s_t_m32_f30x_2pios__usbhook_8c.html", "_s_t_m32_f30x_2pios__usbhook_8c" ],
     [ "pios_ws2811.c", "_s_t_m32_f30x_2pios__ws2811_8c.html", "_s_t_m32_f30x_2pios__ws2811_8c" ],
     [ "startup.c", "_s_t_m32_f30x_2startup_8c.html", "_s_t_m32_f30x_2startup_8c" ],
     [ "vectors_stm32f30x.c", "vectors__stm32f30x_8c.html", "vectors__stm32f30x_8c" ]

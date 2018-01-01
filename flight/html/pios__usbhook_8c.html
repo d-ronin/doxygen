@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/PiOS/STM32F10x/pios_usbhook.c File Reference</title>
+<title>dRonin: flight/PiOS/STM32/pios_usbhook.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">79dbcf6</span>
+   &#160;<span id="projectnumber">be3307d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usbhook_8c.html','');});
+$(document).ready(function(){initNavTree('pios__usbhook_8c.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -121,9 +121,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usbhook_8c.html',
 <code>#include &quot;<a class="el" href="pios__usb__cdc__priv_8h_source.html">pios_usb_cdc_priv.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__usb__board__data_8h_source.html">pios_usb_board_data.h</a>&quot;</code><br/>
 <code>#include &quot;usb_lib.h&quot;</code><br/>
-<code>#include &quot;stm32f10x.h&quot;</code><br/>
 </div>
-<p><a href="_s_t_m32_f10x_2pios__usbhook_8c_source.html">Go to the source code of this file.</a></p>
+<p><a href="pios__usbhook_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -171,10 +170,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga90dd371bc8980d6874747e303c393804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4530e0caacf57bfa0fbbc53a54d48ec1"><td class="memItemLeft" align="right" valign="top">static const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga4530e0caacf57bfa0fbbc53a54d48ec1">PIOS_USBHOOK_GetHIDDescriptor</a> (uint16_t Length)</td></tr>
 <tr class="separator:ga4530e0caacf57bfa0fbbc53a54d48ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga120d6d9cf08ed1125a62ea6759047914"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga120d6d9cf08ed1125a62ea6759047914">PIOS_USB_CDC_SetLineCoding</a> (uint16_t Length)</td></tr>
-<tr class="separator:ga120d6d9cf08ed1125a62ea6759047914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41d64940656273048e2558acb7609dc4"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#ga41d64940656273048e2558acb7609dc4">PIOS_USB_CDC_GetLineCoding</a> (uint16_t Length)</td></tr>
-<tr class="separator:ga41d64940656273048e2558acb7609dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf660c51dbd2a8174a34e43b02f6774e0"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaf660c51dbd2a8174a34e43b02f6774e0">PIOS_USB_CDC_SetLineCoding</a> (uint16_t Length)</td></tr>
+<tr class="separator:gaf660c51dbd2a8174a34e43b02f6774e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa001d7fe6ba14dccc0b0cf8fe21d5548"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaa001d7fe6ba14dccc0b0cf8fe21d5548">PIOS_USB_CDC_GetLineCoding</a> (uint16_t Length)</td></tr>
+<tr class="separator:gaa001d7fe6ba14dccc0b0cf8fe21d5548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacbf6b3b4149e51a74c2f4255f0f8a199"><td class="memItemLeft" align="right" valign="top">RESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gacbf6b3b4149e51a74c2f4255f0f8a199">PIOS_USB_CDC_SetControlLineState</a> (void)</td></tr>
 <tr class="separator:gacbf6b3b4149e51a74c2f4255f0f8a199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -206,7 +205,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_7d432041a987d59b30526ce272f2aad8.html">STM32F10x</a></li><li class="navelem"><a class="el" href="_s_t_m32_f10x_2pios__usbhook_8c.html">pios_usbhook.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_d3629d3fad44a8d46c44f2ba0be200e2.html">STM32</a></li><li class="navelem"><a class="el" href="pios__usbhook_8c.html">pios_usbhook.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

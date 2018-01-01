@@ -38,7 +38,6 @@ var searchData=
   ['pios_5fhmc5883_5fcfg',['pios_hmc5883_cfg',['../structpios__hmc5883__cfg.html',1,'']]],
   ['pios_5fhmc5883_5fdata',['pios_hmc5883_data',['../structpios__hmc5883__data.html',1,'']]],
   ['pios_5fhmc5983_5fcfg',['pios_hmc5983_cfg',['../structpios__hmc5983__cfg.html',1,'']]],
-  ['pios_5fi2c_5fadapter',['pios_i2c_adapter',['../structpios__i2c__adapter.html',1,'']]],
   ['pios_5fi2c_5fadapter_5fcfg',['pios_i2c_adapter_cfg',['../structpios__i2c__adapter__cfg.html',1,'']]],
   ['pios_5fi2c_5ftxn',['pios_i2c_txn',['../structpios__i2c__txn.html',1,'']]],
   ['pios_5finternal_5fadc_5fcfg',['pios_internal_adc_cfg',['../structpios__internal__adc__cfg.html',1,'']]],

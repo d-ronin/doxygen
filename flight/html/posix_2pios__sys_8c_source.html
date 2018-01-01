@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">79dbcf6</span>
+   &#160;<span id="projectnumber">be3307d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -189,9 +189,9 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span><span class="keywordtype">char</span> mag_orientation = 255;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">int</span> num_i2c = 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> i2c_devs[16];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a> i2c_devs[16];</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> <a class="code" href="group___quanton.html#gacbbeed759a2489db90c23f94394b5e7b">external_i2c_adapter_id</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a> <a class="code" href="group___quanton.html#gacbbeed759a2489db90c23f94394b5e7b">external_i2c_adapter_id</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__px4flow__priv_8h.html">pios_px4flow_priv.h</a>&quot;</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__hmc5883__priv_8h.html">pios_hmc5883_priv.h</a>&quot;</span></div>
@@ -364,7 +364,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                px4_cfg = <a class="code" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a>(<span class="keyword">sizeof</span>(*px4_cfg));</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                external_i2c_adapter_id = i2c_devs[bus_num];</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <a class="code" href="group___quanton.html#gacbbeed759a2489db90c23f94394b5e7b">external_i2c_adapter_id</a> = i2c_devs[bus_num];</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;hmc5883&quot;</span>)) {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a>(HWSHARED_MAG_EXTERNALHMC5883,</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                        mag_orientation,</div>
@@ -1051,6 +1051,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="pios__hmc5883__priv_8h_html"><div class="ttname"><a href="pios__hmc5883__priv_8h.html">pios_hmc5883_priv.h</a></div></div>
 <div class="ttc" id="sha1_8c_html_ac76f432bbb54af1e40dec5d695e5c6dc"><div class="ttname"><a href="sha1_8c.html#ac76f432bbb54af1e40dec5d695e5c6dc">sha1_init</a></div><div class="ttdeci">void sha1_init(SHA1_CTX *ctx)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8c_source.html#l00078">sha1.c:78</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ga1e39d33a3e7a747a3032bdd2457a840a"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a></div><div class="ttdeci">int32_t PIOS_RCVR_Init(uintptr_t *rcvr_id, const struct pios_rcvr_driver *driver, const uintptr_t lower_id)</div></div>
+<div class="ttc" id="group___p_i_o_s___i2_c_html_ga25edbe47452e3d0c0e6a6f0403dacbd6"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a></div><div class="ttdeci">struct pios_i2c_adapter * pios_i2c_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00048">pios_i2c.h:48</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_p_i_html_ga21b297a397e91bf31fc599ddad0038a1"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga21b297a397e91bf31fc599ddad0038a1">PIOS_SPI_Init</a></div><div class="ttdeci">int32_t PIOS_SPI_Init(pios_spi_t *spi_dev, const struct pios_spi_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_y_i_n_g_p_i_o_html_gacd03c613dac1bd6fc177a913e1105b75"><div class="ttname"><a href="group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gacd03c613dac1bd6fc177a913e1105b75">pios_flyingpio_dev_t</a></div><div class="ttdeci">struct pios_flyingpio_dev * pios_flyingpio_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__flyingpio_8h_source.html#l00031">pios_flyingpio.h:31</a></div></div>
 <div class="ttc" id="group___p_i_o_s___o_m_n_i_p_html_ga6961b6133bff93468c53ed2f465c515b"><div class="ttname"><a href="group___p_i_o_s___o_m_n_i_p.html#ga6961b6133bff93468c53ed2f465c515b">PIOS_OMNIP_Init</a></div><div class="ttdeci">int32_t PIOS_OMNIP_Init(omnip_dev_t *dev, const struct pios_com_driver *driver, uintptr_t lower_id)</div><div class="ttdoc">Allocate and initialise OMNIP device. </div></div>
@@ -1060,7 +1061,6 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="pios__serial__priv_8h_html_a69d61c65fae2028c70135677e630d139"><div class="ttname"><a href="pios__serial__priv_8h.html#a69d61c65fae2028c70135677e630d139">pios_serial_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_serial_com_driver</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga2acb35c64cd66c4e731cea5a2c855de0"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a></div><div class="ttdeci">int32_t PIOS_SYS_Reset(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga0e7c8023b675c51e2b70d4c41035fca4"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_OsStackUnused(void)</div></div>
-<div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00130">pios_i2c_priv.h:130</a></div></div>
 <div class="ttc" id="structpios__spi__cfg_html"><div class="ttname"><a href="structpios__spi__cfg.html">pios_spi_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00043">pios_spi_priv.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_ga1014bdd38922c45ea60bdf8312e7bd39"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#ga1014bdd38922c45ea60bdf8312e7bd39">pios_bmx055_dev_t</a></div><div class="ttdeci">struct pios_bmx055_dev * pios_bmx055_dev_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__bmx055_8h_source.html#l00051">pios_bmx055.h:51</a></div></div>
 <div class="ttc" id="sha1_8c_html_a5eef8fbc279a72b61ca07fae2ce3f9d7"><div class="ttname"><a href="sha1_8c.html#a5eef8fbc279a72b61ca07fae2ce3f9d7">sha1_update</a></div><div class="ttdeci">void sha1_update(SHA1_CTX *ctx, const uint8_t data[], size_t len)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8c_source.html#l00093">sha1.c:93</a></div></div>

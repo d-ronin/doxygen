@@ -185,7 +185,7 @@ var searchData=
   ['prog_5fmulti',['PROG_MULTI',['../classpx__uploader_1_1uploader.html#a44d40e8bd35a2c94b1a07ef9327ec6d3',1,'px_uploader::uploader']]],
   ['prog_5fmulti_5fmax',['PROG_MULTI_MAX',['../classpx__uploader_1_1uploader.html#a569bd21ace7729ab0b33ddbefb385ad4',1,'px_uploader::uploader']]],
   ['programmingtype',['programmingType',['../struct_device.html#a233c334d07cb137f8460511393f09b1f',1,'Device']]],
-  ['protocolvalue',['ProtocolValue',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga271c451896dad2b849277faad3eb3ea6',1,'ProtocolValue():&#160;pios_usbhook.c'],['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga271c451896dad2b849277faad3eb3ea6',1,'ProtocolValue():&#160;pios_usbhook.c']]],
+  ['protocolvalue',['ProtocolValue',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga271c451896dad2b849277faad3eb3ea6',1,'pios_usbhook.c']]],
   ['prres',['prRes',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#adf2342e560319acf1b48051a49463b09',1,'UBX_NAV_SVINFO_SV']]],
   ['ptr',['ptr',['../group___p_i_o_s___d_m_a_shot.html#gaeebeb063da1e701e45fde451090250a5',1,'dma_buffer']]],
   ['pwm_5f1_5fenabled',['pwm_1_enabled',['../structled__pwm__state.html#ac6d70bdff914e51eee31459a60e423ca',1,'led_pwm_state']]],

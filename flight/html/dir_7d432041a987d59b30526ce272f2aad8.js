@@ -14,6 +14,5 @@ var dir_7d432041a987d59b30526ce272f2aad8 =
     [ "pios_usb_cdc.c", "_s_t_m32_f10x_2pios__usb__cdc_8c.html", null ],
     [ "pios_usb_hid.c", "_s_t_m32_f10x_2pios__usb__hid_8c.html", null ],
     [ "pios_usb_hid_istr.c", "_s_t_m32_f10x_2pios__usb__hid__istr_8c.html", "_s_t_m32_f10x_2pios__usb__hid__istr_8c" ],
-    [ "pios_usb_hid_pwr.c", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c" ],
-    [ "pios_usbhook.c", "_s_t_m32_f10x_2pios__usbhook_8c.html", "_s_t_m32_f10x_2pios__usbhook_8c" ]
+    [ "pios_usb_hid_pwr.c", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html", "_s_t_m32_f10x_2pios__usb__hid__pwr_8c" ]
 ];

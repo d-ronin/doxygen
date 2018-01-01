@@ -6,6 +6,7 @@ var dir_d3629d3fad44a8d46c44f2ba0be200e2 =
     [ "pios_debug.c", "_s_t_m32_2pios__debug_8c.html", "_s_t_m32_2pios__debug_8c" ],
     [ "pios_delay.c", "_s_t_m32_2pios__delay_8c.html", "_s_t_m32_2pios__delay_8c" ],
     [ "pios_exti.c", "pios__exti_8c.html", null ],
+    [ "pios_i2c.c", "_s_t_m32_2pios__i2c_8c.html", null ],
     [ "pios_irq.c", "_s_t_m32_2pios__irq_8c.html", "_s_t_m32_2pios__irq_8c" ],
     [ "pios_ppm.c", "pios__ppm_8c.html", null ],
     [ "pios_pwm.c", "pios__pwm_8c.html", null ],
@@ -14,5 +15,6 @@ var dir_d3629d3fad44a8d46c44f2ba0be200e2 =
     [ "pios_spi.c", "_s_t_m32_2pios__spi_8c.html", null ],
     [ "pios_spislave.c", "pios__spislave_8c.html", null ],
     [ "pios_usb_board_data.c", "pios__usb__board__data_8c.html", "pios__usb__board__data_8c" ],
+    [ "pios_usbhook.c", "pios__usbhook_8c.html", "pios__usbhook_8c" ],
     [ "pios_wdg.c", "_s_t_m32_2pios__wdg_8c.html", "_s_t_m32_2pios__wdg_8c" ]
 ];

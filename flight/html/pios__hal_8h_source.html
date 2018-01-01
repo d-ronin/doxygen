@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">79dbcf6</span>
+   &#160;<span id="projectnumber">be3307d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('pios__hal_8h_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> PIOS_HAL_ConfigurePort(HwSharedPortTypesOptions port_type,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__usart__cfg.html">pios_usart_cfg</a> *usart_port_cfg,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__com__driver.html">pios_com_driver</a> *com_driver,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> *i2c_id,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a> *i2c_id,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a> *ppm_cfg,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__pwm__cfg.html">pios_pwm_cfg</a> *pwm_cfg,</div>
@@ -208,12 +208,12 @@ $(document).ready(function(){initNavTree('pios__hal_8h_source.html','');});
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_I2C</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#ga63b3a99ba0001c1a79a69bf39afecf8b">PIOS_HAL_ConfigureExternalBaro</a>(HwSharedExtBaroOptions baro,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> *i2c_id,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a> *i2c_id,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a>(HwSharedMagOptions <a class="code" href="msp__messages_8h.html#a8e57cd9cfa53d3871b074072f48f9e98">mag</a>,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                HwSharedMagOrientationOptions orientation,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="structpios__i2c__adapter.html">pios_i2c_t</a> *i2c_id,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a> *i2c_id,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a> *i2c_cfg);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
@@ -278,10 +278,10 @@ $(document).ready(function(){initNavTree('pios__hal_8h_source.html','');});
 <div class="ttc" id="pios__hal_8h_html_aafe5055d05a85237ff35d915dff9a53ba0afdf7259a142761cb51f21a602c6f41"><div class="ttname"><a href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba0afdf7259a142761cb51f21a602c6f41">PIOS_HAL_PANIC_SPI</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8h_source.html#l00053">pios_hal.h:53</a></div></div>
 <div class="ttc" id="pios__fskdac_8h_html"><div class="ttname"><a href="pios__fskdac_8h.html">pios_fskdac.h</a></div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html"><div class="ttname"><a href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00034">pios_usb_cdc_priv.h:34</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i2_c_html_ga25edbe47452e3d0c0e6a6f0403dacbd6"><div class="ttname"><a href="group___p_i_o_s___i2_c.html#ga25edbe47452e3d0c0e6a6f0403dacbd6">pios_i2c_t</a></div><div class="ttdeci">struct pios_i2c_adapter * pios_i2c_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__i2c_8h_source.html#l00048">pios_i2c.h:48</a></div></div>
 <div class="ttc" id="pios__ppm__priv_8h_html"><div class="ttname"><a href="pios__ppm__priv_8h.html">pios_ppm_priv.h</a></div><div class="ttdoc">ppm private structures. </div></div>
 <div class="ttc" id="pios__hal_8h_html_aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8"><div class="ttname"><a href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad02483414ee968bb2cf98d0e0d65f2a8">PIOS_HAL_PANIC_ADC</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8h_source.html#l00055">pios_hal.h:55</a></div></div>
 <div class="ttc" id="pios__usb__hid__priv_8h_html"><div class="ttname"><a href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a></div><div class="ttdoc">USB COM HID private definitions. </div></div>
-<div class="ttc" id="structpios__i2c__adapter_html"><div class="ttname"><a href="structpios__i2c__adapter.html">pios_i2c_adapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f4xx_2inc_2pios__i2c__priv_8h_source.html#l00130">pios_i2c_priv.h:130</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_gadabfc71042c7d61e91a696bfe9e93732"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gadabfc71042c7d61e91a696bfe9e93732">pios_rcvr_group_map</a></div><div class="ttdeci">uintptr_t pios_rcvr_group_map[]</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00068">pios_hal.c:68</a></div></div>
 <div class="ttc" id="storm32bgc_8c_html_a17956fe0129d3d4c94ebc06cfef2ad82"><div class="ttname"><a href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a></div><div class="ttdeci">uint16_t value</div><div class="ttdef"><b>Definition:</b> <a href="storm32bgc_8c_source.html#l00155">storm32bgc.c:155</a></div></div>
 <div class="ttc" id="pios__hal_8h_html_a08801aba33501d19d79d2be3362e15dd"><div class="ttname"><a href="pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd">PIOS_HAL_ConfigureHID</a></div><div class="ttdeci">void PIOS_HAL_ConfigureHID(HwSharedUSB_HIDPortOptions port_type, uintptr_t usb_id, const struct pios_usb_hid_cfg *hid_cfg)</div></div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('pios__hal_8h_source.html','');});
 <div class="ttc" id="structpios__usb__hid__cfg_html"><div class="ttname"><a href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__hid__priv_8h_source.html#l00033">pios_usb_hid_priv.h:33</a></div></div>
 <div class="ttc" id="pios__rfm22b__priv_8h_html"><div class="ttname"><a href="pios__rfm22b__priv_8h.html">pios_rfm22b_priv.h</a></div><div class="ttdoc">RFM22B private definitions. </div></div>
 <div class="ttc" id="pios__openlrs__priv_8h_html"><div class="ttname"><a href="pios__openlrs__priv_8h.html">pios_openlrs_priv.h</a></div><div class="ttdoc">Implements an OpenLRS driver for the RFM22B. </div></div>
-<div class="ttc" id="structpios__i2c__adapter__cfg_html"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2inc_2pios__i2c__priv_8h_source.html#l00036">pios_i2c_priv.h:36</a></div></div>
+<div class="ttc" id="structpios__i2c__adapter__cfg_html"><div class="ttname"><a href="structpios__i2c__adapter__cfg.html">pios_i2c_adapter_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__i2c__priv_8h_source.html#l00036">pios_i2c_priv.h:36</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

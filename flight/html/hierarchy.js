@@ -154,7 +154,6 @@ var hierarchy =
     [ "pios_hmc5883_cfg", "structpios__hmc5883__cfg.html", null ],
     [ "pios_hmc5883_data", "structpios__hmc5883__data.html", null ],
     [ "pios_hmc5983_cfg", "structpios__hmc5983__cfg.html", null ],
-    [ "pios_i2c_adapter", "structpios__i2c__adapter.html", null ],
     [ "pios_i2c_adapter_cfg", "structpios__i2c__adapter__cfg.html", null ],
     [ "pios_i2c_txn", "structpios__i2c__txn.html", null ],
     [ "pios_internal_adc_cfg", "structpios__internal__adc__cfg.html", null ],
