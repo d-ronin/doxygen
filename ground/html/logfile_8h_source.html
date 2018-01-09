@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('logfile_8h_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_log_file.html#a7a1cbbcbd9207aff498200f43afc000b">LogFile</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_log_file.html#a6497750599050cde3613ae741a837a74">LogFile</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    qint64 <a class="code" href="class_log_file.html#a9b005cee5c39390f3bfd483169dd61fa">bytesAvailable</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_log_file.html#a04610a21928198bfa0d62cc93ff6e439">   45</a></span>&#160;    qint64 <a class="code" href="class_log_file.html#a04610a21928198bfa0d62cc93ff6e439">bytesToWrite</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_log_file.html#a2082be2198b8903edeb0bfc83d69dbac">file</a>.bytesToWrite(); }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_log_file.html#ad517c5a30953ceec11b5eac1d83d4d3d">open</a>(OpenMode mode);</div>
@@ -204,7 +204,6 @@ $(document).ready(function(){initNavTree('logfile_8h_source.html','');});
 <div class="ttc" id="class_log_file_html_ac5942e468655732a7b3e6d0492c978b8"><div class="ttname"><a href="class_log_file.html#ac5942e468655732a7b3e6d0492c978b8">LogFile::replayStarted</a></div><div class="ttdeci">void replayStarted()</div></div>
 <div class="ttc" id="class_log_file_html_a04610a21928198bfa0d62cc93ff6e439"><div class="ttname"><a href="class_log_file.html#a04610a21928198bfa0d62cc93ff6e439">LogFile::bytesToWrite</a></div><div class="ttdeci">qint64 bytesToWrite() const </div><div class="ttdef"><b>Definition:</b> <a href="logfile_8h_source.html#l00045">logfile.h:45</a></div></div>
 <div class="ttc" id="class_log_file_html_a831f8e55896d31e6bedd805a0d429dbf"><div class="ttname"><a href="class_log_file.html#a831f8e55896d31e6bedd805a0d429dbf">LogFile::startReplay</a></div><div class="ttdeci">bool startReplay()</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8cpp_source.html#l00253">logfile.cpp:253</a></div></div>
-<div class="ttc" id="class_log_file_html_a7a1cbbcbd9207aff498200f43afc000b"><div class="ttname"><a href="class_log_file.html#a7a1cbbcbd9207aff498200f43afc000b">LogFile::LogFile</a></div><div class="ttdeci">LogFile(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8cpp_source.html#l00035">logfile.cpp:35</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae812e608461959ae131d5aca91d97434"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae812e608461959ae131d5aca91d97434">data</a></div><div class="ttdeci">DataFields data</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8h_source.html#l00098">uavobjecttemplate.h:98</a></div></div>
 <div class="ttc" id="class_log_file_html_ab722d4f0315c5d3cc71b6b5a8b722fa0"><div class="ttname"><a href="class_log_file.html#ab722d4f0315c5d3cc71b6b5a8b722fa0">LogFile::dataBuffer</a></div><div class="ttdeci">QByteArray dataBuffer</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8h_source.html#l00074">logfile.h:74</a></div></div>
 <div class="ttc" id="class_log_file_html"><div class="ttname"><a href="class_log_file.html">LogFile</a></div><div class="ttdef"><b>Definition:</b> <a href="logfile_8h_source.html#l00039">logfile.h:39</a></div></div>
@@ -221,6 +220,7 @@ $(document).ready(function(){initNavTree('logfile_8h_source.html','');});
 <div class="ttc" id="class_log_file_html_a148ec54d47b9dc4fec33058e4c849240"><div class="ttname"><a href="class_log_file.html#a148ec54d47b9dc4fec33058e4c849240">LogFile::pauseReplay</a></div><div class="ttdeci">void pauseReplay()</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8cpp_source.html#l00341">logfile.cpp:341</a></div></div>
 <div class="ttc" id="class_log_file_html_aef839a3a5211389d9d302206012d4402"><div class="ttname"><a href="class_log_file.html#aef839a3a5211389d9d302206012d4402">LogFile::lastTimeStamp</a></div><div class="ttdeci">quint32 lastTimeStamp</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8h_source.html#l00078">logfile.h:78</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; quint32 &gt;</a></div></div>
+<div class="ttc" id="class_log_file_html_a6497750599050cde3613ae741a837a74"><div class="ttname"><a href="class_log_file.html#a6497750599050cde3613ae741a837a74">LogFile::LogFile</a></div><div class="ttdeci">LogFile(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="logfile_8cpp_source.html#l00035">logfile.cpp:35</a></div></div>
 <div class="ttc" id="class_log_file_html_a2ec76a32cecae257dda0682cab448572"><div class="ttname"><a href="class_log_file.html#a2ec76a32cecae257dda0682cab448572">LogFile::replayFinished</a></div><div class="ttdeci">void replayFinished()</div></div>
 <div class="ttc" id="class_log_file_html_a85878eac521376c7251e56fb9fd3a8ea"><div class="ttname"><a href="class_log_file.html#a85878eac521376c7251e56fb9fd3a8ea">LogFile::readReady</a></div><div class="ttdeci">void readReady()</div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>

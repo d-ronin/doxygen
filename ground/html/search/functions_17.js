@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['waypointdelegate',['WaypointDelegate',['../group___path_planner.html#ga91775a49b804a156874199ff12e57110',1,'WaypointDelegate']]],
+  ['waypointdelegate',['WaypointDelegate',['../group___path_planner.html#gaa7f68ace1e8c096b9725e496fe7bf94b',1,'WaypointDelegate']]],
   ['waypointdeleted',['waypointdeleted',['../group___t_l_map_widget.html#gad0bb9ce622beb314a984fa559fb1d894',1,'mapcontrol::WayPointCurve']]],
   ['waypointdialog',['WaypointDialog',['../group___path_planner.html#ga79559741b9fcf0a36768f7df92746760',1,'WaypointDialog']]],
   ['waypointdoubleclick',['waypointdoubleclick',['../group___t_l_map_widget.html#ga94099ae67d892548f27f41b816f4735f',1,'mapcontrol::WayPointItem']]],
@@ -24,7 +24,7 @@ var searchData=
   ['wipepartition',['WipePartition',['../group___uploader.html#gaa7eb45d02e2942f295cbf312ca1c9c0a',1,'tl_dfu::DFUObject']]],
   ['wizardkindpredicate',['WizardKindPredicate',['../group___core_plugin.html#ga7ad7e94acedad1cb0bddb6f54079afb7',1,'WizardKindPredicate']]],
   ['wizardsofkind',['wizardsOfKind',['../group___core_plugin.html#ga40a38812ddc1fe7b881cd2a15665455e',1,'Core::IWizard']]],
-  ['workspacesettings',['WorkspaceSettings',['../group___core_plugin.html#ga17c90a13ced98ccf424faf0ffe0a9b83',1,'Core::Internal::WorkspaceSettings']]],
+  ['workspacesettings',['WorkspaceSettings',['../group___core_plugin.html#ga576648702310105c5e0be638cf294cd9',1,'Core::Internal::WorkspaceSettings']]],
   ['worldmagmodel',['WorldMagModel',['../class_utils_1_1_world_mag_model.html#a19051f71771da61c9b0bb00bc6744f45',1,'Utils::WorldMagModel']]],
   ['wpcirclecreate',['WPCircleCreate',['../group___t_l_map_widget.html#ga1ef6bedd7e2086f2da1cd912fb954604',1,'mapcontrol::TLMapWidget::WPCircleCreate(WayPointItem *center, WayPointItem *radius, bool clockwise, QColor color)'],['../group___t_l_map_widget.html#ga2c3a8d96910193bb3944e20a0bdd7515',1,'mapcontrol::TLMapWidget::WPCircleCreate(HomeItem *center, WayPointItem *radius, bool clockwise, QColor color)']]],
   ['wpcreate',['WPCreate',['../group___t_l_map_widget.html#gaa02ccf7e98605dc746e78da026009ffe',1,'mapcontrol::TLMapWidget::WPCreate()'],['../group___t_l_map_widget.html#ga5cd7018b7db9f93fc0cae2390c282051',1,'mapcontrol::TLMapWidget::WPCreate(WayPointItem *item)'],['../group___t_l_map_widget.html#gaa0e6796c3b277aae09a5bfbdd112235e',1,'mapcontrol::TLMapWidget::WPCreate(internals::PointLatLng const &amp;coord, int const &amp;altitude)'],['../group___t_l_map_widget.html#ga4b28387efd3210fb7ea0398a4e4cb791',1,'mapcontrol::TLMapWidget::WPCreate(internals::PointLatLng const &amp;coord, int const &amp;altitude, QString const &amp;description)'],['../group___t_l_map_widget.html#ga22b7ba4f84db0cb8a523d522e27b05c8',1,'mapcontrol::TLMapWidget::WPCreate(const distBearingAltitude &amp;relativeCoord, const QString &amp;description)']]],

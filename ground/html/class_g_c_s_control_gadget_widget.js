@@ -1,6 +1,6 @@
 var class_g_c_s_control_gadget_widget =
 [
-    [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga631488a05f2911312aa2701deafc099e", null ],
+    [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga422fa61ed86529a1290b6eb5db80af56", null ],
     [ "allowGcsControl", "group___g_c_s_control_gadget_plugin.html#gac95edd086f31b90b8dd3e9d992fe870e", null ],
     [ "armedChanged", "group___g_c_s_control_gadget_plugin.html#ga52d0c855f166eaa650aa7acda3bd55be", null ],
     [ "controlEnabled", "group___g_c_s_control_gadget_plugin.html#ga29e9cc85c2d85301be68160330bf4404", null ],

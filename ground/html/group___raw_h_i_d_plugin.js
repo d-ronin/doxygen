@@ -74,7 +74,7 @@ var group___raw_h_i_d_plugin =
         [ "Running", "group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064a1a9efe940184d4bec69cb5d343eaaf81", null ],
         [ "Upgrader", "group___raw_h_i_d_plugin.html#ggaff6bf8945a7cdab907cf5adc29bec064afacf3dc002126ce1b351fe373583f8a3", null ]
       ] ],
-      [ "USBMonitor", "group___raw_h_i_d_plugin.html#ga1de6bdbd3deee4991e3b910e6d274121", null ],
+      [ "USBMonitor", "group___raw_h_i_d_plugin.html#gaaf1f324313a11922f37999942bae85c5", null ],
       [ "~USBMonitor", "group___raw_h_i_d_plugin.html#ga0a472129bd25e3c7972ce78ca52ed19d", null ],
       [ "availableDevices", "group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1", null ],
       [ "availableDevices", "group___raw_h_i_d_plugin.html#ga8b0ce433f3d1f5907b290b1f4185984d", null ],
@@ -128,7 +128,7 @@ var group___raw_h_i_d_plugin =
     [ "stop", "group___raw_h_i_d_plugin.html#ga219936e8de4d3e3f2373f2b2ce81e1ab", null ],
     [ "stop", "group___raw_h_i_d_plugin.html#ga4e6cbc367b5d7b73720381421ccedb9b", null ],
     [ "suspendPolling", "group___raw_h_i_d_plugin.html#gac46703708a7e43cffa7712ebab818ba0", null ],
-    [ "USBMonitor", "group___raw_h_i_d_plugin.html#ga1de6bdbd3deee4991e3b910e6d274121", null ],
+    [ "USBMonitor", "group___raw_h_i_d_plugin.html#gaaf1f324313a11922f37999942bae85c5", null ],
     [ "USBSignalFilter", "group___raw_h_i_d_plugin.html#gaeb1142598d1c4c45e0e8b400e07ad003", null ],
     [ "USBSignalFilter", "group___raw_h_i_d_plugin.html#gaf6ed76b2db174955ed0add9984fd06c1", null ],
     [ "writeData", "group___raw_h_i_d_plugin.html#ga59184fec2a68eecf3e08e81303b8cdbe", null ],

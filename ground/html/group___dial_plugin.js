@@ -3,13 +3,13 @@ var group___dial_plugin =
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
     [ "DialGadget", "class_dial_gadget.html", [
-      [ "DialGadget", "group___dial_plugin.html#gaef5c9e1077a9a230622054bcc5337958", null ],
+      [ "DialGadget", "group___dial_plugin.html#gaac21e286eec9473735fef4fe95d985e3", null ],
       [ "~DialGadget", "group___dial_plugin.html#ga9fc6ec1cdb4ac0de853c9b35950c4d11", null ],
       [ "loadConfiguration", "group___dial_plugin.html#ga571fd73249a763cfe4850be854e3dbc6", null ],
       [ "widget", "group___dial_plugin.html#ga1afd77bac7b60ceae978b7e74f9eddee", null ]
     ] ],
     [ "DialGadgetConfiguration", "class_dial_gadget_configuration.html", [
-      [ "DialGadgetConfiguration", "group___dial_plugin.html#ga5818a8a26f5b9e63b9bc37f459ca6594", null ],
+      [ "DialGadgetConfiguration", "group___dial_plugin.html#ga632789202d92a6ef41b1d24f3ac883a5", null ],
       [ "clone", "group___dial_plugin.html#ga4cb0aa67ea10afa557dbf083d67f2510", null ],
       [ "dialBackground", "group___dial_plugin.html#ga42da3303d7a4c92c6123be6942435f47", null ],
       [ "dialFile", "group___dial_plugin.html#ga620e44289c1d546a4fdd1c604d889eaa", null ],
@@ -66,20 +66,20 @@ var group___dial_plugin =
       [ "setN3ObjField", "group___dial_plugin.html#ga7704e9b8d322543225f40ea1f3ae3334", null ]
     ] ],
     [ "DialGadgetFactory", "class_dial_gadget_factory.html", [
-      [ "DialGadgetFactory", "group___dial_plugin.html#ga96aa76f96e82147d1054198b8e5baccc", null ],
+      [ "DialGadgetFactory", "group___dial_plugin.html#gaf4932f2d3bfdc8a9874333465696709a", null ],
       [ "~DialGadgetFactory", "group___dial_plugin.html#gaa1a6c5c829367397107f9bf058d3838f", null ],
       [ "createConfiguration", "group___dial_plugin.html#ga19fedc047658860b63df440fcd9d58c0", null ],
       [ "createGadget", "group___dial_plugin.html#gaa66ae505f320ed3092d13c52533951fb", null ],
       [ "createOptionsPage", "group___dial_plugin.html#gabea23502f0a1a7c8b37131c0a24faeb8", null ]
     ] ],
     [ "DialGadgetOptionsPage", "class_dial_gadget_options_page.html", [
-      [ "DialGadgetOptionsPage", "group___dial_plugin.html#gaeac54ffbddafca4f7d4b61d9d8af758a", null ],
+      [ "DialGadgetOptionsPage", "group___dial_plugin.html#ga4445979126d26eb907960b914fc381ca", null ],
       [ "apply", "group___dial_plugin.html#gaacfb7eb82dfc96795090f651e40bd640", null ],
       [ "createPage", "group___dial_plugin.html#gac2ea2636090b7981bddc06307c640fbb", null ],
       [ "finish", "group___dial_plugin.html#gacc0c745076376c99081b3c52d916e209", null ]
     ] ],
     [ "DialGadgetWidget", "class_dial_gadget_widget.html", [
-      [ "DialGadgetWidget", "group___dial_plugin.html#gac5397a4cc992266439aa3e8b1513c209", null ],
+      [ "DialGadgetWidget", "group___dial_plugin.html#ga12dcd8870869edf79fb0d8b030833067", null ],
       [ "~DialGadgetWidget", "group___dial_plugin.html#ga3e34cc3b776a627597b4c4823b358741", null ],
       [ "connectNeedles", "group___dial_plugin.html#ga4b039739f70d00651a6ca39cf5a1997a", null ],
       [ "enableSmoothUpdates", "group___dial_plugin.html#ga6b6e527e9c2516f6dec2f6332a288a9f", null ],
@@ -115,11 +115,11 @@ var group___dial_plugin =
     [ "dialBackground", "group___dial_plugin.html#ga42da3303d7a4c92c6123be6942435f47", null ],
     [ "dialFile", "group___dial_plugin.html#ga620e44289c1d546a4fdd1c604d889eaa", null ],
     [ "dialForeground", "group___dial_plugin.html#ga516d8434f4958c9501f14624621908b8", null ],
-    [ "DialGadget", "group___dial_plugin.html#gaef5c9e1077a9a230622054bcc5337958", null ],
-    [ "DialGadgetConfiguration", "group___dial_plugin.html#ga5818a8a26f5b9e63b9bc37f459ca6594", null ],
-    [ "DialGadgetFactory", "group___dial_plugin.html#ga96aa76f96e82147d1054198b8e5baccc", null ],
-    [ "DialGadgetOptionsPage", "group___dial_plugin.html#gaeac54ffbddafca4f7d4b61d9d8af758a", null ],
-    [ "DialGadgetWidget", "group___dial_plugin.html#gac5397a4cc992266439aa3e8b1513c209", null ],
+    [ "DialGadget", "group___dial_plugin.html#gaac21e286eec9473735fef4fe95d985e3", null ],
+    [ "DialGadgetConfiguration", "group___dial_plugin.html#ga632789202d92a6ef41b1d24f3ac883a5", null ],
+    [ "DialGadgetFactory", "group___dial_plugin.html#gaf4932f2d3bfdc8a9874333465696709a", null ],
+    [ "DialGadgetOptionsPage", "group___dial_plugin.html#ga4445979126d26eb907960b914fc381ca", null ],
+    [ "DialGadgetWidget", "group___dial_plugin.html#ga12dcd8870869edf79fb0d8b030833067", null ],
     [ "dialNeedle1", "group___dial_plugin.html#ga30ac2e08e3864b71a35da761cfdcfc5e", null ],
     [ "dialNeedle2", "group___dial_plugin.html#ga08a35848cfbe48ecdb7c63f3a3f461b8", null ],
     [ "dialNeedle3", "group___dial_plugin.html#gacca23f23b817f81e3956ef1bb758dcd7", null ],

@@ -1,6 +1,6 @@
 var class_config_ccpm_widget =
 [
-    [ "ConfigCcpmWidget", "group___config_plugin.html#gad02f1999c6fe879b07303698416ff782", null ],
+    [ "ConfigCcpmWidget", "group___config_plugin.html#ga648c92862d593b6223f2ddf51180e03a", null ],
     [ "~ConfigCcpmWidget", "group___config_plugin.html#ga1c115c3e78572da9895bc485b6ed507e", null ],
     [ "getMixer", "group___config_plugin.html#ga655f5771884dcc4da79423c9f233ccca", null ],
     [ "resizeEvent", "group___config_plugin.html#gaa76c187cd732f13b15ee909af137487f", null ],

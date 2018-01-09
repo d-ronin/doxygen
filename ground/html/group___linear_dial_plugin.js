@@ -3,13 +3,13 @@ var group___linear_dial_plugin =
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
     [ "LineardialGadget", "class_lineardial_gadget.html", [
-      [ "LineardialGadget", "group___linear_dial_plugin.html#gae00c0aad0b87c017df5b0305d6fb1c5b", null ],
+      [ "LineardialGadget", "group___linear_dial_plugin.html#gacfb8970b9e9e09df974632b8de422320", null ],
       [ "~LineardialGadget", "group___linear_dial_plugin.html#gaee31b5207ca412de6722401f392a8fd0", null ],
       [ "loadConfiguration", "group___linear_dial_plugin.html#ga6bdccc9d4347fd8f04ea5e893877a30f", null ],
       [ "widget", "group___linear_dial_plugin.html#ga65e61a0bf52e2ab9b2fe4ba7e3ae3b96", null ]
     ] ],
     [ "LineardialGadgetConfiguration", "class_lineardial_gadget_configuration.html", [
-      [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f", null ],
+      [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d", null ],
       [ "clone", "group___linear_dial_plugin.html#ga4b5d2c9802ec3b863732d6f707a1befe", null ],
       [ "getDecimalPlaces", "group___linear_dial_plugin.html#gab0a4ac1f433766548d4f87e0d4c1c499", null ],
       [ "getDialFile", "group___linear_dial_plugin.html#ga44cbe980684b267ae41060c0428e00ce", null ],
@@ -38,20 +38,20 @@ var group___linear_dial_plugin =
       [ "setYellowRange", "group___linear_dial_plugin.html#gae1437ef9469c5a813ad0c76f04b186d2", null ]
     ] ],
     [ "LineardialGadgetFactory", "class_lineardial_gadget_factory.html", [
-      [ "LineardialGadgetFactory", "group___linear_dial_plugin.html#ga65f46ec9f31c70119c149accc51b304e", null ],
+      [ "LineardialGadgetFactory", "group___linear_dial_plugin.html#ga2e8e722cb5067c49de2e69c18db268ba", null ],
       [ "~LineardialGadgetFactory", "group___linear_dial_plugin.html#ga85102065ae14d80cf83202637c76b94c", null ],
       [ "createConfiguration", "group___linear_dial_plugin.html#ga280a4a9d168f6d6b477c30630fdb128b", null ],
       [ "createGadget", "group___linear_dial_plugin.html#gad0365f5bab013eac15acf924e0bc2821", null ],
       [ "createOptionsPage", "group___linear_dial_plugin.html#gab8b7a7edac05d576e192c715acf48a22", null ]
     ] ],
     [ "LineardialGadgetOptionsPage", "class_lineardial_gadget_options_page.html", [
-      [ "LineardialGadgetOptionsPage", "group___linear_dial_plugin.html#gaa49909f8404b5303882872f6bb8ccdb2", null ],
+      [ "LineardialGadgetOptionsPage", "group___linear_dial_plugin.html#ga6882b07c60af42f960177166bbaf8b9e", null ],
       [ "apply", "group___linear_dial_plugin.html#gace7e2623dbc910a445c0f4f772fb85cb", null ],
       [ "createPage", "group___linear_dial_plugin.html#ga7498a19341fff9fe87afe47efb379a00", null ],
       [ "finish", "group___linear_dial_plugin.html#ga5afd30269776667128093b5ec5bef9de", null ]
     ] ],
     [ "LineardialGadgetWidget", "class_lineardial_gadget_widget.html", [
-      [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7", null ],
+      [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga62c6ad8540bd06d64ff5544988a1cbe0", null ],
       [ "~LineardialGadgetWidget", "group___linear_dial_plugin.html#ga46b2275fc21a5a5fc14809f31be48674", null ],
       [ "connectInput", "group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81", null ],
       [ "paint", "group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a", null ],
@@ -91,11 +91,11 @@ var group___linear_dial_plugin =
     [ "getSourceObjectField", "group___linear_dial_plugin.html#ga1de5843a26127b379137ee870ec74b89", null ],
     [ "getYellowMax", "group___linear_dial_plugin.html#ga2c58391f9aa712de50504d4437b54ded", null ],
     [ "getYellowMin", "group___linear_dial_plugin.html#gad39b6746e6b3b7c0e6d20794d2f494d9", null ],
-    [ "LineardialGadget", "group___linear_dial_plugin.html#gae00c0aad0b87c017df5b0305d6fb1c5b", null ],
-    [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f", null ],
-    [ "LineardialGadgetFactory", "group___linear_dial_plugin.html#ga65f46ec9f31c70119c149accc51b304e", null ],
-    [ "LineardialGadgetOptionsPage", "group___linear_dial_plugin.html#gaa49909f8404b5303882872f6bb8ccdb2", null ],
-    [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7", null ],
+    [ "LineardialGadget", "group___linear_dial_plugin.html#gacfb8970b9e9e09df974632b8de422320", null ],
+    [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d", null ],
+    [ "LineardialGadgetFactory", "group___linear_dial_plugin.html#ga2e8e722cb5067c49de2e69c18db268ba", null ],
+    [ "LineardialGadgetOptionsPage", "group___linear_dial_plugin.html#ga6882b07c60af42f960177166bbaf8b9e", null ],
+    [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga62c6ad8540bd06d64ff5544988a1cbe0", null ],
     [ "loadConfiguration", "group___linear_dial_plugin.html#ga6bdccc9d4347fd8f04ea5e893877a30f", null ],
     [ "paint", "group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a", null ],
     [ "paintEvent", "group___linear_dial_plugin.html#ga80239da240f9678e9cf4d2de3d9f6568", null ],

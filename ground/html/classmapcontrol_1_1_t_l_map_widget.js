@@ -1,6 +1,6 @@
 var classmapcontrol_1_1_t_l_map_widget =
 [
-    [ "TLMapWidget", "group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb", null ],
+    [ "TLMapWidget", "group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228", null ],
     [ "~TLMapWidget", "group___t_l_map_widget.html#ga862da29725bbaf0eb3ed5bb02f712c72", null ],
     [ "CanDragMap", "group___t_l_map_widget.html#ga086bc9e133d51e8a8bc0b939a9d33576", null ],
     [ "closeEvent", "group___t_l_map_widget.html#gac64358b61d5cac3262e9e1c71e76e13a", null ],

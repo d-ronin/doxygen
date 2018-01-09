@@ -1,6 +1,6 @@
 var class_serial_plugin_options_page =
 [
-    [ "SerialPluginOptionsPage", "group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85", null ],
+    [ "SerialPluginOptionsPage", "group___serial_plugin.html#ga45bbd5e32b60e0ab09c208fd582b817b", null ],
     [ "apply", "group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a", null ],
     [ "category", "group___serial_plugin.html#ga11d58b7fe11ee48ac5a865eaea4d9a13", null ],
     [ "createPage", "group___serial_plugin.html#ga77331da48998f8e92c60751f5e2ab862", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -202,29 +202,29 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    , m_additionalContexts(m_globalContext)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    , m_dontSaveSettings(false)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    , m_actionManager(new <a class="code" href="class_core_1_1_internal_1_1_action_manager_private.html">ActionManagerPrivate</a>(this))</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    , m_modeManager(0)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    , <a class="code" href="group___rfm_bind_wizard.html#ga2aa6c5a84d0618a037908051dfe8069b">m_connectionManager</a>(0)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    , m_boardManager(0)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    , m_versionDialog(0)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    , m_authorsDialog(0)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    , m_activeContext(0)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    , m_modeManager(nullptr)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    , <a class="code" href="group___rfm_bind_wizard.html#ga2aa6c5a84d0618a037908051dfe8069b">m_connectionManager</a>(nullptr)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    , m_boardManager(nullptr)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    , m_versionDialog(nullptr)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    , m_authorsDialog(nullptr)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    , m_activeContext(nullptr)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    , m_generalSettings(new <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">GeneralSettings</a>)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    , m_shortcutSettings(new <a class="code" href="class_core_1_1_internal_1_1_shortcut_settings.html">ShortcutSettings</a>)</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    , m_workspaceSettings(new <a class="code" href="class_core_1_1_internal_1_1_workspace_settings.html">WorkspaceSettings</a>)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    , m_focusToEditor(0)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    , m_newAction(0)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    , m_openAction(0)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    , m_openWithAction(0)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    , m_saveAllAction(0)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    , m_exitAction(0)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    , m_optionsAction(0)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    , m_focusToEditor(nullptr)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    , m_newAction(nullptr)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    , m_openAction(nullptr)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    , m_openWithAction(nullptr)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    , m_saveAllAction(nullptr)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    , m_exitAction(nullptr)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    , m_optionsAction(nullptr)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    ,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;#ifdef Q_OS_MAC</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    m_minimizeAction(0)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    , m_zoomAction(0)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    ,</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;#endif <span class="comment">/* Q_OS_MAC */</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    m_toggleFullScreenAction(0)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    m_toggleFullScreenAction(nullptr)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// keep this in sync with main() in app/main.cpp</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    m_settings = <span class="keyword">new</span> QSettings(QDir::tempPath() + QDir::separator() + GCS_PROJECT_BRANDING</div>
@@ -351,13 +351,13 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    pm-&gt;removeObject(m_generalSettings);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    pm-&gt;removeObject(m_workspaceSettings);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">delete</span> m_globalMessaging;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    m_globalMessaging = 0;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    m_globalMessaging = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">delete</span> m_shortcutSettings;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    m_shortcutSettings = 0;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    m_shortcutSettings = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">delete</span> m_generalSettings;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    m_generalSettings = 0;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    m_generalSettings = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">delete</span> m_workspaceSettings;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    m_workspaceSettings = 0;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    m_workspaceSettings = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Copy working settings back to original settings file. Do this in scope so that</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// we are guaranteed that the originalSettings file is closed. This minimizes the risk</span></div>
@@ -380,16 +380,16 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">delete</span> m_settings;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    m_settings = 0;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    m_settings = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keyword">delete</span> m_uniqueIDManager;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    m_uniqueIDManager = 0;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    m_uniqueIDManager = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    pm-&gt;removeObject(m_coreImpl);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">delete</span> m_coreImpl;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    m_coreImpl = 0;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    m_coreImpl = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">delete</span> m_modeManager;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    m_modeManager = 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    m_modeManager = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gafd7a49e5ef33d7eb47ac7befd1acaeb5">  296</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#gafd7a49e5ef33d7eb47ac7befd1acaeb5">MainWindow::init</a>(QString *errorMessage)</div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            SIGNAL(<a class="code" href="group___core_plugin.html#ga350b11b63b05d92bfd77b029c1171221">splashMessages</a>(QString)));</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    m_uavGadgetInstanceManager-&gt;<a class="code" href="group___core_plugin.html#ga5b0113d08404691baef3c9eb158f00c8">readSettings</a>(qs);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="group___core_plugin.html#gadef90c414cbb6c8ddb7bd051ac4f6dd3">readSettings</a>(qs);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="group___core_plugin.html#ga2e2046e52215d00dbfdaafe7858b6937">readSettings</a>(qs);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="code" href="group___core_plugin.html#ga63b04fba7b802e0b931cb68d4cf78968">updateContext</a>();</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    emit <a class="code" href="group___core_plugin.html#ga350b11b63b05d92bfd77b029c1171221">splashMessages</a>(tr(<span class="stringliteral">&quot;Preparing to open core&quot;</span>));</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
@@ -566,7 +566,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    emit m_coreImpl-&gt;<a class="code" href="group___core_plugin.html#ga36e71fe35d26feb63b78a56f08159f17">coreAboutToClose</a>();</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">if</span> (!m_dontSaveSettings) {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <a class="code" href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd">saveSettings</a>(m_settings);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <a class="code" href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197">saveSettings</a>(m_settings);</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        m_uavGadgetInstanceManager-&gt;<a class="code" href="group___core_plugin.html#ga4256305b1cf5b29402b70613b706139c">saveSettings</a>(m_settings);</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    }</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keyword">event</span>-&gt;accept();</div>
@@ -574,7 +574,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">// Check for desktop file manager file drop events</span></div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> isDesktopFileManagerDrop(<span class="keyword">const</span> QMimeData *d, QStringList *files = 0)</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> isDesktopFileManagerDrop(<span class="keyword">const</span> QMimeData *d, QStringList *files = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;{</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keywordflow">if</span> (files)</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        files-&gt;clear();</div>
@@ -822,7 +822,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>()-&gt;setMenuRole(QAction::PreferencesRole);</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="preprocessor"></span>    mtools-&gt;<a class="code" href="group___core_plugin.html#gaae18910476f06c6af0eecd572bf1dd51">addAction</a>(cmd, <a class="code" href="group___core_plugin.html#gaa9d110a5d72f47a9f4893a54bebdef9d">Constants::G_DEFAULT_THREE</a>);</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    connect(m_optionsAction, SIGNAL(triggered()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga18a22906e317f7beddef59f9557a80ee">showOptionsDialog</a>()));</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    connect(m_optionsAction, SIGNAL(triggered()), <span class="keyword">this</span>, SLOT(<a class="code" href="group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6">showOptionsDialog</a>()));</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="preprocessor">#ifdef Q_OS_MAC</span></div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Minimize Action</span></div>
@@ -978,7 +978,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;{</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;}</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
-<div class="line"><a name="l00882"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga18a22906e317f7beddef59f9557a80ee">  882</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga18a22906e317f7beddef59f9557a80ee">MainWindow::showOptionsDialog</a>(<span class="keyword">const</span> QString &amp;category, <span class="keyword">const</span> QString &amp;page, QWidget *parent)</div>
+<div class="line"><a name="l00882"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6">  882</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6">MainWindow::showOptionsDialog</a>(<span class="keyword">const</span> QString &amp;category, <span class="keyword">const</span> QString &amp;page, QWidget *parent)</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;{</div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    emit m_coreImpl-&gt;<a class="code" href="group___core_plugin.html#gafba7e27b9e0330206e2c77eebbeb7038">optionsDialogRequested</a>();</div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordflow">if</span> (!parent)</div>
@@ -993,7 +993,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    emit m_coreImpl-&gt;<a class="code" href="group___core_plugin.html#ga5deecf671e1390e1489d696dd89f112d">saveSettingsRequested</a>();</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <a class="code" href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd">saveSettings</a>();</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <a class="code" href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197">saveSettings</a>();</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;}</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
 <div class="line"><a name="l00900"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga627d7b538a0d60645e6c339bd787eeee">  900</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga627d7b538a0d60645e6c339bd787eeee">MainWindow::exit</a>()</div>
@@ -1102,7 +1102,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    m_contextWidgets.remove(widget);</div>
 <div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    <span class="keywordflow">if</span> (m_activeContext == context)</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        updateContextObject(0);</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        updateContextObject(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;}</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;</div>
 <div class="line"><a name="l01009"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaf4ca5d0d3d18ddcb7d54b6596bbf4797"> 1009</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaf4ca5d0d3d18ddcb7d54b6596bbf4797">MainWindow::changeEvent</a>(QEvent *<a class="code" href="_o_p_plots_8m.html#a9425be9aab51621e317ba7ade564b570">e</a>)</div>
@@ -1136,9 +1136,9 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    if (qobject_cast&lt;QMenuBar *&gt;(now))</div>
 <div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        return;</div>
 <div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <a class="code" href="class_core_1_1_i_context.html">IContext</a> *newContext = 0;</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <a class="code" href="class_core_1_1_i_context.html">IContext</a> *newContext = <span class="keywordtype">nullptr</span>;</div>
 <div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    if (focusWidget()) {</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <a class="code" href="class_core_1_1_i_context.html">IContext</a> *context = 0;</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <a class="code" href="class_core_1_1_i_context.html">IContext</a> *context = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        QWidget *p = focusWidget();</div>
 <div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        <span class="keywordflow">while</span> (p) {</div>
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;            context = m_contextWidgets.value(p);</div>
@@ -1162,22 +1162,22 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        emit m_coreImpl-&gt;<a class="code" href="group___core_plugin.html#ga682fdb2c297d6f8d9b7340dbb58699ec">contextAboutToChange</a>(context);</div>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        <a class="code" href="group___core_plugin.html#ga63b04fba7b802e0b931cb68d4cf78968">updateContext</a>();</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___core_plugin.html#gga726ca809ffd3d67ab4b8476646f26635af4b0431d5cc108ace609eb877582a059">debugMainWindow</a>)</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;new context object =&quot;</span> &lt;&lt; context &lt;&lt; (context ? context-&gt;<a class="code" href="group___core_plugin.html#gafa470639238652ef10e435b6c28d9282">widget</a>() : 0)</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                     &lt;&lt; (context ? context-&gt;<a class="code" href="group___core_plugin.html#gafa470639238652ef10e435b6c28d9282">widget</a>()-&gt;metaObject()-&gt;className() : 0);</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;new context object =&quot;</span> &lt;&lt; context &lt;&lt; (context ? context-&gt;<a class="code" href="group___core_plugin.html#gafa470639238652ef10e435b6c28d9282">widget</a>() : <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                     &lt;&lt; (context ? context-&gt;<a class="code" href="group___core_plugin.html#gafa470639238652ef10e435b6c28d9282">widget</a>()-&gt;metaObject()-&gt;className() : <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        emit m_coreImpl-&gt;<a class="code" href="group___core_plugin.html#ga61aa6225c352ac731243c640d281c56e">contextChanged</a>(context);</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    }</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;}</div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
 <div class="line"><a name="l01072"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8dffd013e2adedc8c0b8700def6786f9"> 1072</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga8dffd013e2adedc8c0b8700def6786f9">MainWindow::resetContext</a>()</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;{</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    updateContextObject(0);</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    updateContextObject(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;}</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;</div>
 <div class="line"><a name="l01077"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa"> 1077</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga1fcbdef10ebfdec100d2d0078abb5afa">MainWindow::shutdown</a>()</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;{</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    disconnect(QApplication::instance(), SIGNAL(focusChanged(QWidget *, QWidget *)), <span class="keyword">this</span>,</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;               SLOT(updateFocusWidget(QWidget *, QWidget *)));</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    m_activeContext = 0;</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    m_activeContext = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
 <div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    <span class="comment">// We have to remove all the existing gagdets at his point, not</span></div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <span class="comment">// later!</span></div>
@@ -1279,7 +1279,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *fullScreenKey = <span class="stringliteral">&quot;FullScreen&quot;</span>;</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *modePriorities = <span class="stringliteral">&quot;ModePriorities&quot;</span>;</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
-<div class="line"><a name="l01183"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gadef90c414cbb6c8ddb7bd051ac4f6dd3"> 1183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gadef90c414cbb6c8ddb7bd051ac4f6dd3">MainWindow::readSettings</a>(QSettings *qs, <span class="keywordtype">bool</span> workspaceDiffOnly)</div>
+<div class="line"><a name="l01183"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga2e2046e52215d00dbfdaafe7858b6937"> 1183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e2046e52215d00dbfdaafe7858b6937">MainWindow::readSettings</a>(QSettings *qs, <span class="keywordtype">bool</span> workspaceDiffOnly)</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;{</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;    <span class="keywordflow">if</span> (!qs) {</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        qs = m_settings;</div>
@@ -1324,7 +1324,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    qs-&gt;endGroup();</div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;}</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd"> 1228</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd">MainWindow::saveSettings</a>(QSettings *qs)</div>
+<div class="line"><a name="l01228"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197"> 1228</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197">MainWindow::saveSettings</a>(QSettings *qs)</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;{</div>
 <div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <span class="keywordflow">if</span> (m_dontSaveSettings)</div>
 <div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -1368,7 +1368,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    qs-&gt;endGroup();</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;}</div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;</div>
-<div class="line"><a name="l01272"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga73d4a9b5000444898214e4cd5e9c4ba2"> 1272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gadef90c414cbb6c8ddb7bd051ac4f6dd3">MainWindow::readSettings</a>(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs)</div>
+<div class="line"><a name="l01272"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gacf35992eaeea08a0ecb0751b05bd28a7"> 1272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga2e2046e52215d00dbfdaafe7858b6937">MainWindow::readSettings</a>(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs)</div>
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;{</div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;    <span class="keywordflow">if</span> (!qs) {</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        qs = m_settings;</div>
@@ -1390,7 +1390,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;    qs-&gt;endGroup();</div>
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;}</div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;</div>
-<div class="line"><a name="l01294"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gabaed765ca937cc2a9a6656707af51b73"> 1294</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd">MainWindow::saveSettings</a>(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs)</div>
+<div class="line"><a name="l01294"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gae368eafa38158afc4638378c6943ee5e"> 1294</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197">MainWindow::saveSettings</a>(<a class="code" href="class_core_1_1_i_configurable_plugin.html">IConfigurablePlugin</a> *plugin, QSettings *qs)</div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;{</div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    <span class="keywordflow">if</span> (m_dontSaveSettings)</div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -1505,7 +1505,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;{</div>
 <div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keywordflow">if</span> (m_versionDialog) {</div>
 <div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        m_versionDialog-&gt;deleteLater();</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        m_versionDialog = 0;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        m_versionDialog = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    }</div>
 <div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;}</div>
 <div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
@@ -1522,7 +1522,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;{</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    <span class="keywordflow">if</span> (m_authorsDialog) {</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;        m_authorsDialog-&gt;deleteLater();</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        m_authorsDialog = 0;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        m_authorsDialog = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;    }</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;}</div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;</div>
@@ -1551,21 +1551,21 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;<span class="comment">// Display a warning with an additional button to open</span></div>
 <div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;<span class="comment">// the debugger settings dialog if settingsId is nonempty.</span></div>
 <div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaf0d1f8838353576747cfa4b184a6b2f4"> 1455</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#gaf0d1f8838353576747cfa4b184a6b2f4">MainWindow::showWarningWithOptions</a>(<span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString &amp;text,</div>
+<div class="line"><a name="l01455"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga44304fc53dbc13ee49b30c747bd2a166"> 1455</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga44304fc53dbc13ee49b30c747bd2a166">MainWindow::showWarningWithOptions</a>(<span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString &amp;text,</div>
 <div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                                        <span class="keyword">const</span> QString &amp;details, <span class="keyword">const</span> QString &amp;settingsCategory,</div>
 <div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                                        <span class="keyword">const</span> QString &amp;settingsId, QWidget *parent)</div>
 <div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;{</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    <span class="keywordflow">if</span> (parent == 0)</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    <span class="keywordflow">if</span> (parent == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        parent = <span class="keyword">this</span>;</div>
 <div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    QMessageBox msgBox(QMessageBox::Warning, title, text, QMessageBox::Ok, parent);</div>
 <div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    <span class="keywordflow">if</span> (details.isEmpty())</div>
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        msgBox.setDetailedText(details);</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    QAbstractButton *settingsButton = 0;</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    QAbstractButton *settingsButton = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    <span class="keywordflow">if</span> (!settingsId.isEmpty() || !settingsCategory.isEmpty())</div>
 <div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        settingsButton = msgBox.addButton(tr(<span class="stringliteral">&quot;Settings...&quot;</span>), QMessageBox::AcceptRole);</div>
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    msgBox.exec();</div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    <span class="keywordflow">if</span> (settingsButton &amp;&amp; msgBox.clickedButton() == settingsButton) {</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#ga18a22906e317f7beddef59f9557a80ee">showOptionsDialog</a>(settingsCategory, settingsId);</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6">showOptionsDialog</a>(settingsCategory, settingsId);</div>
 <div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    }</div>
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;}</div>
@@ -1610,11 +1610,9 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_ga07112a6a39d461f7bba7e470077ef3f4"><div class="ttname"><a href="group___core_plugin.html#ga07112a6a39d461f7bba7e470077ef3f4">Core::Command::setAttribute</a></div><div class="ttdeci">virtual void setAttribute(CommandAttribute attr)=0</div></div>
 <div class="ttc" id="group___core_plugin_html_gga726ca809ffd3d67ab4b8476646f26635af4b0431d5cc108ace609eb877582a059"><div class="ttname"><a href="group___core_plugin.html#gga726ca809ffd3d67ab4b8476646f26635af4b0431d5cc108ace609eb877582a059">debugMainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00096">mainwindow.cpp:96</a></div></div>
 <div class="ttc" id="baseview_8h_html"><div class="ttname"><a href="baseview_8h.html">baseview.h</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaf0d1f8838353576747cfa4b184a6b2f4"><div class="ttname"><a href="group___core_plugin.html#gaf0d1f8838353576747cfa4b184a6b2f4">Core::Internal::MainWindow::showWarningWithOptions</a></div><div class="ttdeci">bool showWarningWithOptions(const QString &amp;title, const QString &amp;text, const QString &amp;details=QString(), const QString &amp;settingsCategory=QString(), const QString &amp;settingsId=QString(), QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01455">mainwindow.cpp:1455</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga316dd0cff29b294cd1b0631677f6357d"><div class="ttname"><a href="group___core_plugin.html#ga316dd0cff29b294cd1b0631677f6357d">Core::ActionManager::registerAction</a></div><div class="ttdeci">virtual Command * registerAction(QAction *action, const QString &amp;id, const QList&lt; int &gt; &amp;context)=0</div><div class="ttdoc">Makes an action known to the system under the specified string id. </div></div>
 <div class="ttc" id="group___core_plugin_html_ga5831ce204fcff78e2b9a0981d6af4a4c"><div class="ttname"><a href="group___core_plugin.html#ga5831ce204fcff78e2b9a0981d6af4a4c">Core::Constants::G_WINDOW</a></div><div class="ttdeci">const char *const G_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00164">coreconstants.h:164</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga61aa6225c352ac731243c640d281c56e"><div class="ttname"><a href="group___core_plugin.html#ga61aa6225c352ac731243c640d281c56e">Core::ICore::contextChanged</a></div><div class="ttdeci">void contextChanged(Core::IContext *context)</div><div class="ttdoc">Sent just after a new context became the current context (meaning that its widget got focus)...</div></div>
-<div class="ttc" id="group___core_plugin_html_ga1400c8a8dc0525a89892b399cdbe00dd"><div class="ttname"><a href="group___core_plugin.html#ga1400c8a8dc0525a89892b399cdbe00dd">Core::Internal::MainWindow::saveSettings</a></div><div class="ttdeci">void saveSettings(QSettings *qs=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01228">mainwindow.cpp:1228</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga615e7fc83cead9cfc1d43aa8b748a688"><div class="ttname"><a href="group___core_plugin.html#ga615e7fc83cead9cfc1d43aa8b748a688">Core::Constants::GOTO_OTHER_SPLIT</a></div><div class="ttdeci">const char *const GOTO_OTHER_SPLIT</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00131">coreconstants.h:131</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2991b08955afff85a412c40a92e8d55e"><div class="ttname"><a href="group___core_plugin.html#ga2991b08955afff85a412c40a92e8d55e">Core::Constants::M_TOOLS</a></div><div class="ttdeci">const char *const M_TOOLS</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00083">coreconstants.h:83</a></div></div>
 <div class="ttc" id="class_core_1_1_i_mode_html"><div class="ttname"><a href="class_core_1_1_i_mode.html">Core::IMode</a></div><div class="ttdef"><b>Definition:</b> <a href="imode_8h_source.html#l00041">imode.h:41</a></div></div>
@@ -1656,6 +1654,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_ga71aab5cd1940b131cfa9089cf7b6a6cc"><div class="ttname"><a href="group___core_plugin.html#ga71aab5cd1940b131cfa9089cf7b6a6cc">Core::Constants::G_FILE_SAVE</a></div><div class="ttdeci">const char *const G_FILE_SAVE</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00171">coreconstants.h:171</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gac1345c7f33f14242e6b865e1c72426a9"><div class="ttname"><a href="group___core_plugin.html#gac1345c7f33f14242e6b865e1c72426a9">Core::Internal::MainWindow::contextObject</a></div><div class="ttdeci">IContext * contextObject(QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00979">mainwindow.cpp:979</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga34c4b4207b46d11a4100c9b19f0e81bb"><div class="ttname"><a href="group___core_plugin.html#ga34c4b4207b46d11a4100c9b19f0e81bb">Core::Internal::MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00098">mainwindow.cpp:98</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaa1eefab1730c1cc9cc503959a97e9197"><div class="ttname"><a href="group___core_plugin.html#gaa1eefab1730c1cc9cc503959a97e9197">Core::Internal::MainWindow::saveSettings</a></div><div class="ttdeci">void saveSettings(QSettings *qs=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01228">mainwindow.cpp:1228</a></div></div>
 <div class="ttc" id="group___rfm_bind_wizard_html_ga2aa6c5a84d0618a037908051dfe8069b"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga2aa6c5a84d0618a037908051dfe8069b">m_connectionManager</a></div><div class="ttdeci">Core::ConnectionManager * m_connectionManager</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_8h_source.html#l00112">rfmbindwizard.h:112</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gae913d5d04138374d54ecfdabbc3d01ad"><div class="ttname"><a href="group___core_plugin.html#gae913d5d04138374d54ecfdabbc3d01ad">Core::Constants::ABOUT_AUTHORS</a></div><div class="ttdeci">const char *const ABOUT_AUTHORS</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00149">coreconstants.h:149</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga097c433a1e3ae316de47ded726e0f639"><div class="ttname"><a href="group___core_plugin.html#ga097c433a1e3ae316de47ded726e0f639">Core::Internal::ActionManagerPrivate::readSettings</a></div><div class="ttdeci">void readSettings(QSettings *settings)</div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8cpp_source.html#l00469">actionmanager.cpp:469</a></div></div>
@@ -1669,6 +1668,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_gac45c5a592157e5fa6521f7dfa811edae"><div class="ttname"><a href="group___core_plugin.html#gac45c5a592157e5fa6521f7dfa811edae">Core::Internal::MainWindow::modeManager</a></div><div class="ttdeci">Core::ModeManager * modeManager() const </div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00969">mainwindow.cpp:969</a></div></div>
 <div class="ttc" id="settingsdialog_8h_html"><div class="ttname"><a href="settingsdialog_8h.html">settingsdialog.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gaa1e79ec44fa23eff837ff6fa6cc50385"><div class="ttname"><a href="group___core_plugin.html#gaa1e79ec44fa23eff837ff6fa6cc50385">Core::Internal::GeneralSettings::saveSettings</a></div><div class="ttdeci">void saveSettings(QSettings *qs)</div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8cpp_source.html#l00200">generalsettings.cpp:200</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga44304fc53dbc13ee49b30c747bd2a166"><div class="ttname"><a href="group___core_plugin.html#ga44304fc53dbc13ee49b30c747bd2a166">Core::Internal::MainWindow::showWarningWithOptions</a></div><div class="ttdeci">bool showWarningWithOptions(const QString &amp;title, const QString &amp;text, const QString &amp;details=QString(), const QString &amp;settingsCategory=QString(), const QString &amp;settingsId=QString(), QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01455">mainwindow.cpp:1455</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga01b34fc1e361fb10f26bce17e7f1abd7"><div class="ttname"><a href="group___core_plugin.html#ga01b34fc1e361fb10f26bce17e7f1abd7">Core::Command::setDefaultText</a></div><div class="ttdeci">virtual void setDefaultText(const QString &amp;text)=0</div></div>
 <div class="ttc" id="iwizard_8h_html"><div class="ttname"><a href="iwizard_8h.html">iwizard.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gacb5777b1677fecee4e8a9bca2e41c8ae"><div class="ttname"><a href="group___core_plugin.html#gacb5777b1677fecee4e8a9bca2e41c8ae">Core::ModeManager::modes</a></div><div class="ttdeci">QVector&lt; IMode * &gt; modes() const </div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00070">modemanager.h:70</a></div></div>
@@ -1680,7 +1680,6 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="class_core_1_1_internal_1_1_settings_dialog_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_settings_dialog.html">Core::Internal::SettingsDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="settingsdialog_8h_source.html#l00043">settingsdialog.h:43</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga4256305b1cf5b29402b70613b706139c"><div class="ttname"><a href="group___core_plugin.html#ga4256305b1cf5b29402b70613b706139c">Core::UAVGadgetInstanceManager::saveSettings</a></div><div class="ttdeci">void saveSettings(QSettings *qs)</div><div class="ttdef"><b>Definition:</b> <a href="uavgadgetinstancemanager_8cpp_source.html#l00199">uavgadgetinstancemanager.cpp:199</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga2edd476d12d600aebca7dbced9b8d282"><div class="ttname"><a href="group___core_plugin.html#ga2edd476d12d600aebca7dbced9b8d282">Core::Internal::MainWindow::uavGadgetInstanceManager</a></div><div class="ttdeci">UAVGadgetInstanceManager * uavGadgetInstanceManager() const </div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00964">mainwindow.cpp:964</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gadef90c414cbb6c8ddb7bd051ac4f6dd3"><div class="ttname"><a href="group___core_plugin.html#gadef90c414cbb6c8ddb7bd051ac4f6dd3">Core::Internal::MainWindow::readSettings</a></div><div class="ttdeci">void readSettings(QSettings *qs=0, bool workspaceDiffOnly=false)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01183">mainwindow.cpp:1183</a></div></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_authors_dialog_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_authors_dialog.html">Core::Internal::AuthorsDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="authorsdialog_8h_source.html#l00036">authorsdialog.h:36</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gad9782b056c9573b858d82ce59218a44e"><div class="ttname"><a href="group___core_plugin.html#gad9782b056c9573b858d82ce59218a44e">Core::Internal::GeneralSettings::readSettings</a></div><div class="ttdeci">void readSettings(QSettings *qs)</div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8cpp_source.html#l00170">generalsettings.cpp:170</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga671bf73078069470c19965a3d948b6fa"><div class="ttname"><a href="group___core_plugin.html#ga671bf73078069470c19965a3d948b6fa">Core::Internal::MainWindow::dragEnterEvent</a></div><div class="ttdeci">virtual void dragEnterEvent(QDragEnterEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00505">mainwindow.cpp:505</a></div></div>
@@ -1738,6 +1737,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_ga192b99d6e0131b46373653b9062fc396"><div class="ttname"><a href="group___core_plugin.html#ga192b99d6e0131b46373653b9062fc396">Core::Internal::WorkspaceSettings::iconName</a></div><div class="ttdeci">QString iconName(int i) const </div><div class="ttdef"><b>Definition:</b> <a href="workspacesettings_8h_source.html#l00067">workspacesettings.h:67</a></div></div>
 <div class="ttc" id="classimport_settings_html_a16a67f71fc0787a882d94dd33b3ce38b"><div class="ttname"><a href="classimport_settings.html#a16a67f71fc0787a882d94dd33b3ce38b">importSettings::choosenConfig</a></div><div class="ttdeci">QString choosenConfig()</div><div class="ttdef"><b>Definition:</b> <a href="importsettings_8cpp_source.html#l00043">importsettings.cpp:43</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga9f0968263dea29529229d46e5f7cbf68"><div class="ttname"><a href="group___core_plugin.html#ga9f0968263dea29529229d46e5f7cbf68">Core::Constants::HIDE_TOOLBARS</a></div><div class="ttdeci">const char *const HIDE_TOOLBARS</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00134">coreconstants.h:134</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga95a6b4415fd471c43823a5c18e58d5d6"><div class="ttname"><a href="group___core_plugin.html#ga95a6b4415fd471c43823a5c18e58d5d6">Core::Internal::MainWindow::showOptionsDialog</a></div><div class="ttdeci">bool showOptionsDialog(const QString &amp;category=QString(), const QString &amp;page=QString(), QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00882">mainwindow.cpp:882</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga1b43a0185eb3abefdae4d893e653843d"><div class="ttname"><a href="group___core_plugin.html#ga1b43a0185eb3abefdae4d893e653843d">Core::ICore::coreOpened</a></div><div class="ttdeci">void coreOpened()</div><div class="ttdoc">Emitted after all plugins have been loaded and the main window shown. </div></div>
 <div class="ttc" id="group___core_plugin_html_ga9edb60253a233526349538b2fcb2e093"><div class="ttname"><a href="group___core_plugin.html#ga9edb60253a233526349538b2fcb2e093">Core::Command::setDefaultKeySequence</a></div><div class="ttdeci">virtual void setDefaultKeySequence(const QKeySequence &amp;key)=0</div></div>
 <div class="ttc" id="group___core_plugin_html_gab51aa14ec9c9023785bafb4efa396553"><div class="ttname"><a href="group___core_plugin.html#gab51aa14ec9c9023785bafb4efa396553">Core::Constants::S_RETURNTOEDITOR</a></div><div class="ttdeci">const char *const S_RETURNTOEDITOR</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00151">coreconstants.h:151</a></div></div>
@@ -1749,6 +1749,7 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="group___core_plugin_html_ga350b11b63b05d92bfd77b029c1171221"><div class="ttname"><a href="group___core_plugin.html#ga350b11b63b05d92bfd77b029c1171221">Core::Internal::MainWindow::splashMessages</a></div><div class="ttdeci">void splashMessages(QString)</div></div>
 <div class="ttc" id="group___core_plugin_html_ga8d401d3b5afe3409bb5980bb0c5cbd37"><div class="ttname"><a href="group___core_plugin.html#ga8d401d3b5afe3409bb5980bb0c5cbd37">Core::Constants::GCS_NAME</a></div><div class="ttdeci">const char *const GCS_NAME</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00038">coreconstants.h:38</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga68db58071fb0d35ee9d75b0b2186511a"><div class="ttname"><a href="group___core_plugin.html#ga68db58071fb0d35ee9d75b0b2186511a">Core::Constants::G_FILE</a></div><div class="ttdeci">const char *const G_FILE</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00160">coreconstants.h:160</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga2e2046e52215d00dbfdaafe7858b6937"><div class="ttname"><a href="group___core_plugin.html#ga2e2046e52215d00dbfdaafe7858b6937">Core::Internal::MainWindow::readSettings</a></div><div class="ttdeci">void readSettings(QSettings *qs=nullptr, bool workspaceDiffOnly=false)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l01183">mainwindow.cpp:1183</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga8075f826c38d7ad64455fce1e27364b9"><div class="ttname"><a href="group___core_plugin.html#ga8075f826c38d7ad64455fce1e27364b9">Core::Constants::G_FILE_NEW</a></div><div class="ttdeci">const char *const G_FILE_NEW</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00168">coreconstants.h:168</a></div></div>
 <div class="ttc" id="class_core_1_1_u_a_v_config_info_html"><div class="ttname"><a href="class_core_1_1_u_a_v_config_info.html">Core::UAVConfigInfo</a></div><div class="ttdoc">The Config Info is a helper-class to handle version changes in GCS configuration files. </div><div class="ttdef"><b>Definition:</b> <a href="uavconfiginfo_8h_source.html#l00053">uavconfiginfo.h:53</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga1a2a9935fbe66257754f6cf21e596c01"><div class="ttname"><a href="group___core_plugin.html#ga1a2a9935fbe66257754f6cf21e596c01">Core::Internal::ActionManagerPrivate::createMenu</a></div><div class="ttdeci">ActionContainer * createMenu(const QString &amp;id)</div><div class="ttdoc">Creates a new menu with the given string id. </div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8cpp_source.html#l00284">actionmanager.cpp:284</a></div></div>
@@ -1767,7 +1768,6 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html','');});
 <div class="ttc" id="workspacesettings_8h_html"><div class="ttname"><a href="workspacesettings_8h.html">workspacesettings.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga3ec130bab28be18162ff49816e062c07"><div class="ttname"><a href="group___core_plugin.html#ga3ec130bab28be18162ff49816e062c07">Core::Internal::ActionManagerPrivate::actionContainer</a></div><div class="ttdeci">ActionContainer * actionContainer(int uid) const </div><div class="ttdef"><b>Definition:</b> <a href="actionmanager_8cpp_source.html#l00453">actionmanager.cpp:453</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga448ae0ec57eeaf4fafc1323489437506"><div class="ttname"><a href="group___core_plugin.html#ga448ae0ec57eeaf4fafc1323489437506">Core::UAVConfigInfo::setNameOfConfigurable</a></div><div class="ttdeci">void setNameOfConfigurable(const QString nameOfConfigurable)</div><div class="ttdef"><b>Definition:</b> <a href="uavconfiginfo_8h_source.html#l00069">uavconfiginfo.h:69</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga18a22906e317f7beddef59f9557a80ee"><div class="ttname"><a href="group___core_plugin.html#ga18a22906e317f7beddef59f9557a80ee">Core::Internal::MainWindow::showOptionsDialog</a></div><div class="ttdeci">bool showOptionsDialog(const QString &amp;category=QString(), const QString &amp;page=QString(), QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00882">mainwindow.cpp:882</a></div></div>
 <div class="ttc" id="class_core_1_1_internal_1_1_action_manager_private_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_action_manager_private.html">Core::Internal::ActionManagerPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="actionmanager__p_8h_source.html#l00057">actionmanager_p.h:57</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga1c54e927ddd67d0667f28e18d083fe87"><div class="ttname"><a href="group___core_plugin.html#ga1c54e927ddd67d0667f28e18d083fe87">Core::Constants::ABOUT_GCS</a></div><div class="ttdeci">const char *const ABOUT_GCS</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00147">coreconstants.h:147</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5426092301e2717f66c384e4a33fe5c6"><div class="ttname"><a href="group___core_plugin.html#ga5426092301e2717f66c384e4a33fe5c6">Core::Internal::MainWindow::generalSettings</a></div><div class="ttdeci">Internal::GeneralSettings * generalSettings() const </div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00974">mainwindow.cpp:974</a></div></div>

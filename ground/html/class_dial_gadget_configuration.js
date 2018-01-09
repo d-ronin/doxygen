@@ -1,6 +1,6 @@
 var class_dial_gadget_configuration =
 [
-    [ "DialGadgetConfiguration", "group___dial_plugin.html#ga5818a8a26f5b9e63b9bc37f459ca6594", null ],
+    [ "DialGadgetConfiguration", "group___dial_plugin.html#ga632789202d92a6ef41b1d24f3ac883a5", null ],
     [ "clone", "group___dial_plugin.html#ga4cb0aa67ea10afa557dbf083d67f2510", null ],
     [ "dialBackground", "group___dial_plugin.html#ga42da3303d7a4c92c6123be6942435f47", null ],
     [ "dialFile", "group___dial_plugin.html#ga620e44289c1d546a4fdd1c604d889eaa", null ],

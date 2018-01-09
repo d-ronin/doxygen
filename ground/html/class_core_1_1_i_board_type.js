@@ -49,7 +49,7 @@ var class_core_1_1_i_board_type =
     [ "firmwareUSBInfo", "group___core_plugin.html#ga5e86ee23d087eef1dd50c527b93d54a1", null ],
     [ "getAdcNames", "group___core_plugin.html#ga65e348e3dfcb1d2dde42c7e7fb0700df", null ],
     [ "getBankFromOutputChannel", "group___core_plugin.html#gaaf1fbd46aeb3f81120f9229fefa9f7e8", null ],
-    [ "getBoardConfiguration", "group___core_plugin.html#ga898213627485fadadf28595898a998e1", null ],
+    [ "getBoardConfiguration", "group___core_plugin.html#gae3d2f82db11e868e3b1db485b76b5a87", null ],
     [ "getBoardPicture", "group___core_plugin.html#gaf2965319c1d15dcb3563dd224add7858", null ],
     [ "getBoardType", "group___core_plugin.html#ga5d2ecfabe310535314afc68f856c06bf", null ],
     [ "getChannelBanks", "group___core_plugin.html#gaf466b4ca5b1f597edffe7fae2b17c37d", null ],

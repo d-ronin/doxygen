@@ -1,6 +1,6 @@
 var class_long_long_spin_box =
 [
-    [ "LongLongSpinBox", "group__utils.html#ga3116c3bde1619e5fba42c56e246567cd", null ],
+    [ "LongLongSpinBox", "group__utils.html#ga2d95303d94c9f5f7e13200ab7569463a", null ],
     [ "~LongLongSpinBox", "group__utils.html#gafc9ba8acbefb59716ebb0bdb858222b0", null ],
     [ "cleanText", "group__utils.html#gaebc297083e3dc41be6b9c72efd557b98", null ],
     [ "displayIntegerBase", "group__utils.html#ga75c0c335fd7562f97a68a2c6f288df8b", null ],
@@ -23,7 +23,7 @@ var class_long_long_spin_box =
     [ "singleStep", "group__utils.html#ga1ef1c9611d192708ef4263e0b1d37cd5", null ],
     [ "stepBy", "group__utils.html#gaafb82ff541d09cba2176f73984da1713", null ],
     [ "stepEnabled", "group__utils.html#ga19e0e1227d73488f60b3266dff732f49", null ],
-    [ "stripped", "group__utils.html#gacd8949c71e1716b8d6738a23d2d661e8", null ],
+    [ "stripped", "group__utils.html#ga784e1cf46225a1d43a05b54256a6629d", null ],
     [ "suffix", "group__utils.html#ga2be8a73c4e35840f1bbf5774126a3ad5", null ],
     [ "textFromValue", "group__utils.html#ga3772319f1d67114f931ba0537e0f2f42", null ],
     [ "updateEdit", "group__utils.html#ga2a0b71f8fa0ed871d35a2737074a595e", null ],

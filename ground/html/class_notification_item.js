@@ -11,7 +11,7 @@ var class_notification_item =
     [ "repeat30seconds", "group___notify_plugin.html#ggad07cd750a618959d7508a1de10ba1028a18a34ac252d2f02c618ee1a4aae6ce9e", null ],
     [ "repeat1minute", "group___notify_plugin.html#ggad07cd750a618959d7508a1de10ba1028a014d745bf7f8943763a58f8c55d5891b", null ],
     [ "eDefaultTimeout", "group___notify_plugin.html#ggab8b5de7f4dde3334fc2f0680cf268101a8fee5829d0108684543cf01a53af668f", null ],
-    [ "NotificationItem", "group___notify_plugin.html#ga382be87567eab960b4bd89e2c7238ba8", null ],
+    [ "NotificationItem", "group___notify_plugin.html#ga75a539fef47b66f0b794685b9f2fdebe", null ],
     [ "copyTo", "group___notify_plugin.html#ga308d07be5a887bb4e35319a55c70fb06", null ],
     [ "DECLARE_SOUND", "group___notify_plugin.html#gafd8fcfb284be8c92e29aba742748d4b8", null ],
     [ "deserialize", "group___notify_plugin.html#ga02e47b11a2cd7d0e9b608c497afbf359", null ],

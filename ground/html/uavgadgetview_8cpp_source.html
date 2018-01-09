@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('uavgadgetview_8cpp_source.html','');})
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;using namespace Core;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;using namespace Core::Internal;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5d3c3cc0b5440e09c319b3ea9579385d">   62</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>::<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>(Core::<a class="code" href="class_core_1_1_u_a_v_gadget_manager.html">UAVGadgetManager</a> *uavGadgetManager, <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget,</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga8646cb8d962660e6a8c926affdce84c9">   62</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>::<a class="code" href="class_core_1_1_internal_1_1_u_a_v_gadget_view.html">UAVGadgetView</a>(Core::<a class="code" href="class_core_1_1_u_a_v_gadget_manager.html">UAVGadgetManager</a> *uavGadgetManager, <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *uavGadget,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             QWidget *parent, <span class="keywordtype">bool</span> restoring)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    : QWidget(parent)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    , m_uavGadgetManager(uavGadgetManager)</div>
@@ -284,18 +284,18 @@ $(document).ready(function(){initNavTree('uavgadgetview_8cpp_source.html','');})
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    tl-&gt;removeWidget(m_uavGadget-&gt;widget());</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    m_uavGadget-&gt;setParent(0);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(0);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    m_uavGadget-&gt;setParent(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_uavGadget-&gt;widget()-&gt;setParent(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    QWidget *toolBar = m_uavGadget-&gt;toolBar();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (toolBar != 0) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (toolBar != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (m_activeToolBar == toolBar) {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            m_activeToolBar = m_defaultToolBar;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            m_activeToolBar-&gt;setVisible(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        m_toolBar-&gt;layout()-&gt;removeWidget(toolBar);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        toolBar-&gt;setParent(0);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        toolBar-&gt;setParent(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    m_uavGadget = 0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    m_uavGadget = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">  202</a></span>&#160;<a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a> *<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">UAVGadgetView::gadget</a>()<span class="keyword"> const</span></div>

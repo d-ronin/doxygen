@@ -1,6 +1,6 @@
 var class_model_view_gadget_configuration =
 [
-    [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343", null ],
+    [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e", null ],
     [ "acFilename", "group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e", null ],
     [ "bgFilename", "group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1", null ],
     [ "clone", "group___model_view_plugin.html#gafe85c40e0602f4bb0a8f54637fd87b2c", null ],

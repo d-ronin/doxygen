@@ -1,6 +1,6 @@
 var class_core_1_1_i_options_page =
 [
-    [ "IOptionsPage", "group___core_plugin.html#ga9b695b2de67229131dbe91bd1ef22ef8", null ],
+    [ "IOptionsPage", "group___core_plugin.html#ga0616c4a2cd6977ce315b0f2b0512464f", null ],
     [ "~IOptionsPage", "group___core_plugin.html#gaaea80acd4f4df67edf6a8027abf6b016", null ],
     [ "apply", "group___core_plugin.html#ga05fa0c9b91da02a0f2fed11d2d6afed0", null ],
     [ "category", "group___core_plugin.html#ga03767437394cdfbfc9e253638a71b132", null ],

@@ -14,7 +14,7 @@ var class_upgrade_assistant_dialog =
       [ "STEP_DONE", "group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3cbd49ec08e901cdc5e1f762d50a524", null ],
       [ "STEP_NUM", "group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6", null ]
     ] ],
-    [ "UpgradeAssistantDialog", "group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90", null ],
+    [ "UpgradeAssistantDialog", "group___uploader.html#ga68776108e582fdcef209c8ae430c918e", null ],
     [ "~UpgradeAssistantDialog", "group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d", null ],
     [ "closeEvent", "group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87", null ],
     [ "onStepChanged", "group___uploader.html#ga245cc1bb639b28a773705eb968b6b770", null ],

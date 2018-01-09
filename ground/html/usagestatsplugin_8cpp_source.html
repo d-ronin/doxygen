@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('usagestatsplugin_8cpp_source.html','')
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;UsageStatsPlugin::~UsageStatsPlugin()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga1ac91d45ba8e5a39f9e2da76a12a04a6">saveSettings</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#gaa80860eed6f27201adbbc844ff3c5160">saveSettings</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> UsageStatsPlugin::readConfig(QSettings *qSettings, <a class="code" href="class_core_1_1_u_a_v_config_info.html">Core::UAVConfigInfo</a> *configInfo)</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('usagestatsplugin_8cpp_source.html','')
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (mw)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            searchForWidgets(mw, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga1ac91d45ba8e5a39f9e2da76a12a04a6">saveSettings</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#gaa80860eed6f27201adbbc844ff3c5160">saveSettings</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">void</span> UsageStatsPlugin::addNewBoardSeen(<a class="code" href="structdevice_info.html">deviceInfo</a> board, <a class="code" href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a> device)</div>
@@ -511,7 +511,6 @@ $(document).ready(function(){initNavTree('usagestatsplugin_8cpp_source.html','')
 <div class="ttc" id="group___usage_stats_plugin_html_ggaa2c4ae2950cc13d46f45f5d2f0900870a614a80360877accb031652479303e41c"><div class="ttname"><a href="group___usage_stats_plugin.html#ggaa2c4ae2950cc13d46f45f5d2f0900870a614a80360877accb031652479303e41c">WIDGET_BUTTON</a></div><div class="ttdef"><b>Definition:</b> <a href="usagestatsplugin_8h_source.html#l00050">usagestatsplugin.h:50</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a82c5fcab0ccf34db65e1752a344ff384"><div class="ttname"><a href="class_debug_engine.html#a82c5fcab0ccf34db65e1752a344ff384">DebugEngine::message</a></div><div class="ttdeci">void message(DebugEngine::Level level, const QString &amp;msg, const QString &amp;file=&quot;&quot;, const int line=0, const QString &amp;function=&quot;&quot;)</div></div>
-<div class="ttc" id="group___core_plugin_html_ga1ac91d45ba8e5a39f9e2da76a12a04a6"><div class="ttname"><a href="group___core_plugin.html#ga1ac91d45ba8e5a39f9e2da76a12a04a6">Core::ICore::saveSettings</a></div><div class="ttdeci">virtual void saveSettings(IConfigurablePlugin *plugin, QSettings *qs=0)=0</div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65">DebugEngine::DEBUG</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00043">debugengine.h:43</a></div></div>
 <div class="ttc" id="group___usage_stats_plugin_html_ga8a15701178e800c9808461bd7aa4bdb9"><div class="ttname"><a href="group___usage_stats_plugin.html#ga8a15701178e800c9808461bd7aa4bdb9">UsageStatsPlugin::updateSettings</a></div><div class="ttdeci">void updateSettings()</div><div class="ttdef"><b>Definition:</b> <a href="usagestatsplugin_8cpp_source.html#l00133">usagestatsplugin.cpp:133</a></div></div>
 <div class="ttc" id="class_app_close_hook_html"><div class="ttname"><a href="class_app_close_hook.html">AppCloseHook</a></div><div class="ttdef"><b>Definition:</b> <a href="usagestatsplugin_8h_source.html#l00120">usagestatsplugin.h:120</a></div></div>
@@ -556,6 +555,7 @@ $(document).ready(function(){initNavTree('usagestatsplugin_8cpp_source.html','')
 <div class="ttc" id="structdevice_info_html_a647448a132fb029f6f4ab940ac71e8aa"><div class="ttname"><a href="structdevice_info.html#a647448a132fb029f6f4ab940ac71e8aa">deviceInfo::board</a></div><div class="ttdeci">QPointer&lt; Core::IBoardType &gt; board</div><div class="ttdef"><b>Definition:</b> <a href="uploader__global_8h_source.html#l00048">uploader_global.h:48</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73">DebugEngine::INFO</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00044">debugengine.h:44</a></div></div>
 <div class="ttc" id="group___debug_gadget_plugin_html_ga4477585da2aa01a2654b0f6dee7f4de1"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga4477585da2aa01a2654b0f6dee7f4de1">DebugEngine::getInstance</a></div><div class="ttdeci">static DebugEngine * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8cpp_source.html#l00035">debugengine.cpp:35</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaa80860eed6f27201adbbc844ff3c5160"><div class="ttname"><a href="group___core_plugin.html#gaa80860eed6f27201adbbc844ff3c5160">Core::ICore::saveSettings</a></div><div class="ttdeci">virtual void saveSettings(IConfigurablePlugin *plugin, QSettings *qs=nullptr)=0</div></div>
 <div class="ttc" id="classdevice_descriptor_struct_html"><div class="ttname"><a href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a></div><div class="ttdef"><b>Definition:</b> <a href="devicedescriptorstruct_8h_source.html#l00034">devicedescriptorstruct.h:34</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a2ddff45f2c3bcbd0653af3b82d6b2ed8">DebugEngine::CRITICAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00046">debugengine.h:46</a></div></div>
 <div class="ttc" id="class_extension_system_1_1_i_plugin_html_af2782659463bdc328aef58f896ae3921"><div class="ttname"><a href="class_extension_system_1_1_i_plugin.html#af2782659463bdc328aef58f896ae3921">ExtensionSystem::IPlugin::addAutoReleasedObject</a></div><div class="ttdeci">void addAutoReleasedObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="iplugin_8cpp_source.html#l00306">iplugin.cpp:306</a></div></div>

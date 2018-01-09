@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('usbmonitor_8cpp_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define printf USB_MON_QXTLOG_DEBUG</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *USBMonitor::m_instance = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="class_u_s_b_monitor.html">USBMonitor</a> *USBMonitor::m_instance = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#ga1de6bdbd3deee4991e3b910e6d274121">   51</a></span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#ga1de6bdbd3deee4991e3b910e6d274121">USBMonitor::USBMonitor</a>(QObject *parent)</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___raw_h_i_d_plugin.html#gaaf1f324313a11922f37999942bae85c5">   51</a></span>&#160;<a class="code" href="group___raw_h_i_d_plugin.html#gaaf1f324313a11922f37999942bae85c5">USBMonitor::USBMonitor</a>(QObject *parent)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    : QObject(parent)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_instance = <span class="keyword">this</span>;</div>
@@ -271,9 +271,9 @@ $(document).ready(function(){initNavTree('usbmonitor_8cpp_source.html','');});
 <div class="ttc" id="rawhid_8h_html"><div class="ttname"><a href="rawhid_8h.html">rawhid.h</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga2169d1d082c17498883e6c0497aecb94"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2169d1d082c17498883e6c0497aecb94">USBPortInfo::serialNumber</a></div><div class="ttdeci">QString serialNumber</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00044">usbmonitor.h:44</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gaf7da3cc1fc2b9085f5647f0d3822ade1"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaf7da3cc1fc2b9085f5647f0d3822ade1">USBMonitor::availableDevices</a></div><div class="ttdeci">QList&lt; USBPortInfo &gt; availableDevices()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00142">usbmonitor.cpp:142</a></div></div>
-<div class="ttc" id="group___raw_h_i_d_plugin_html_ga1de6bdbd3deee4991e3b910e6d274121"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga1de6bdbd3deee4991e3b910e6d274121">USBMonitor::USBMonitor</a></div><div class="ttdeci">USBMonitor(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00051">usbmonitor.cpp:51</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gab2f32b160f38299dd97b8bce113ac016"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gab2f32b160f38299dd97b8bce113ac016">USBMonitor::deviceDiscovered</a></div><div class="ttdeci">void deviceDiscovered(const USBPortInfo &amp;info)</div></div>
 <div class="ttc" id="class_u_s_b_monitor_html"><div class="ttname"><a href="class_u_s_b_monitor.html">USBMonitor</a></div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00085">usbmonitor.h:85</a></div></div>
+<div class="ttc" id="group___raw_h_i_d_plugin_html_gaaf1f324313a11922f37999942bae85c5"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gaaf1f324313a11922f37999942bae85c5">USBMonitor::USBMonitor</a></div><div class="ttdeci">USBMonitor(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00051">usbmonitor.cpp:51</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_gabcb44085db71f0bd0a1513d25a572b33"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#gabcb44085db71f0bd0a1513d25a572b33">USBMonitor::instance</a></div><div class="ttdeci">static USBMonitor * instance()</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8cpp_source.html#l00176">usbmonitor.cpp:176</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga8b2fb49e267664c4838e1205f57538d8"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga8b2fb49e267664c4838e1205f57538d8">USBPortInfo::product</a></div><div class="ttdeci">QString product</div><div class="ttdef"><b>Definition:</b> <a href="usbmonitor_8h_source.html#l00046">usbmonitor.h:46</a></div></div>
 <div class="ttc" id="group___raw_h_i_d_plugin_html_ga2184059e85771292590afbb9087ee225"><div class="ttname"><a href="group___raw_h_i_d_plugin.html#ga2184059e85771292590afbb9087ee225">USBMonitor::deviceRemoved</a></div><div class="ttdeci">void deviceRemoved(const USBPortInfo &amp;info)</div></div>

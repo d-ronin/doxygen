@@ -19,18 +19,18 @@ var group___boards___brain_f_p_v =
       [ "shortName", "group___boards___brain_f_p_v.html#gac712c33c26fbe7b094ee96a40291dd01", null ]
     ] ],
     [ "BrainConfiguration", "class_brain_configuration.html", [
-      [ "BrainConfiguration", "group___boards___brain_f_p_v.html#ga19a2d0c924691e44fb4cec8c301fc48e", null ],
+      [ "BrainConfiguration", "group___boards___brain_f_p_v.html#gaab3209dd857cb08df5828c6f7080792a", null ],
       [ "~BrainConfiguration", "group___boards___brain_f_p_v.html#gac113fc2c6aa9fde502a2d24448eda81a", null ]
     ] ],
     [ "BrainFPVPlugin", "class_brain_f_p_v_plugin.html", null ],
     [ "BrainRE1Configuration", "class_brain_r_e1_configuration.html", [
-      [ "BrainRE1Configuration", "group___boards___brain_f_p_v.html#gaacbc843979b563823c9e27fc7e94abbc", null ],
+      [ "BrainRE1Configuration", "group___boards___brain_f_p_v.html#ga9b38d08e30ec9abb9e280d7705754105", null ],
       [ "~BrainRE1Configuration", "group___boards___brain_f_p_v.html#gaecec83d5e60ac0a9633f7e67f7ded636", null ]
     ] ],
     [ "boardDescription", "group___boards___brain_f_p_v.html#ga252ac15b41636edcdf2729d4786495a4", null ],
     [ "Brain", "group___boards___brain_f_p_v.html#ga92daf9737361454abbb5988a89b7ff40", null ],
-    [ "BrainConfiguration", "group___boards___brain_f_p_v.html#ga19a2d0c924691e44fb4cec8c301fc48e", null ],
-    [ "BrainRE1Configuration", "group___boards___brain_f_p_v.html#gaacbc843979b563823c9e27fc7e94abbc", null ],
+    [ "BrainConfiguration", "group___boards___brain_f_p_v.html#gaab3209dd857cb08df5828c6f7080792a", null ],
+    [ "BrainRE1Configuration", "group___boards___brain_f_p_v.html#ga9b38d08e30ec9abb9e280d7705754105", null ],
     [ "getAdcNames", "group___boards___brain_f_p_v.html#gaae020cf5fdf639cdb4be245cc5007cf1", null ],
     [ "getBoardConfiguration", "group___boards___brain_f_p_v.html#gaeaf22b5b11043abd9ba0b08df0cc792c", null ],
     [ "getBoardPicture", "group___boards___brain_f_p_v.html#gad098a5c3cf0aed1f08fee79cfdfa9f9b", null ],

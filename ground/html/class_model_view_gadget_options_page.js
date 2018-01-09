@@ -1,6 +1,6 @@
 var class_model_view_gadget_options_page =
 [
-    [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga86839ae520e5a8d7d38e0349ab8110db", null ],
+    [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga38216ef60f69041b0546fd7817174889", null ],
     [ "apply", "group___model_view_plugin.html#ga77c3c23e38d3018c84f464c0ef5402e5", null ],
     [ "category", "group___model_view_plugin.html#ga7ac23d7285b3e6b2541b45329d26d973", null ],
     [ "createPage", "group___model_view_plugin.html#ga5a42eda3ce28f2971be7b426347d588a", null ],

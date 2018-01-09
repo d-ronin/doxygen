@@ -1,6 +1,6 @@
 var class_core_1_1_u_a_v_gadget_instance_manager =
 [
-    [ "UAVGadgetInstanceManager", "group___core_plugin.html#ga44c56bcdae955e258b4c48a4c607ab52", null ],
+    [ "UAVGadgetInstanceManager", "group___core_plugin.html#ga42526fc6f0e17d78054c70f81045d018", null ],
     [ "~UAVGadgetInstanceManager", "group___core_plugin.html#gac38f918ffe991bf8a225fc1daad5f7de", null ],
     [ "applyChanges", "group___core_plugin.html#ga7cd1bf8e5387d0c7cff1d5696266ddbb", null ],
     [ "canDeleteConfiguration", "group___core_plugin.html#ga9d4a8c428b1550c2a2c831bb0c5f85b6", null ],

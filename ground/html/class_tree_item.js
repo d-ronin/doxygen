@@ -1,7 +1,7 @@
 var class_tree_item =
 [
-    [ "TreeItem", "group___u_a_v_object_browser_plugin.html#gaee288dea1233cde85e888cd709a5385e", null ],
-    [ "TreeItem", "group___u_a_v_object_browser_plugin.html#ga18da596c178ccc1c830ac82d1896be1d", null ],
+    [ "TreeItem", "group___u_a_v_object_browser_plugin.html#ga1068df812c7fbcbb1f4f24481463e988", null ],
+    [ "TreeItem", "group___u_a_v_object_browser_plugin.html#ga28875ad0e2d833b412e03b07c962a232", null ],
     [ "~TreeItem", "group___u_a_v_object_browser_plugin.html#ga859429185d908c3e54861bbbfb185425", null ],
     [ "appendChild", "group___u_a_v_object_browser_plugin.html#gac7f432ac0587ca037e80857eefd622f8", null ],
     [ "apply", "group___u_a_v_object_browser_plugin.html#gaca25a01ba924019208f39d7c7ae2f593", null ],

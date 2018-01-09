@@ -1,6 +1,6 @@
 var class_import_summary_dialog =
 [
-    [ "ImportSummaryDialog", "group___u_a_v_settings_import_export.html#ga048499710b01571b8b3766a14c929342", null ],
+    [ "ImportSummaryDialog", "group___u_a_v_settings_import_export.html#ga5e0fdbf3f820650931fffc0b3b5f49e2", null ],
     [ "~ImportSummaryDialog", "group___u_a_v_settings_import_export.html#gaf410b79676dfd8f6636650a3d9ef48e2", null ],
     [ "addLine", "group___u_a_v_settings_import_export.html#ga16fa18af8950ac368ac63851b4c8e409", null ],
     [ "changeEvent", "group___u_a_v_settings_import_export.html#ga31da7a0667d03f1e71cd5012bee5b544", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('pathplannergadgetwidget_8cpp_source.ht
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathfillet_8h.html">algorithms/pathfillet.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pluginmanager_8h.html">extensionsystem/pluginmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#gaa5a16b8b25c368ba63764246fe417001">   40</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#gaa5a16b8b25c368ba63764246fe417001">PathPlannerGadgetWidget::PathPlannerGadgetWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___path_planner_gadget_plugin.html#gac65421378cc826cb75c64fd4cb70c5df">   40</a></span>&#160;<a class="code" href="group___path_planner_gadget_plugin.html#gac65421378cc826cb75c64fd4cb70c5df">PathPlannerGadgetWidget::PathPlannerGadgetWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : QLabel(parent)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    , prevModel(NULL)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('pathplannergadgetwidget_8cpp_source.ht
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="class_i_path_algorithm.html">IPathAlgorithm</a> *algo = <span class="keyword">new</span> <a class="code" href="class_path_fillet.html">PathFillet</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// Only process is successfully configured and the verification of the model succeeds</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    QString err;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">if</span> (algo-&gt;<a class="code" href="group___path.html#ga4157a802d06807c33e402f6a51f9f366">configure</a>(<span class="keyword">this</span>) &amp;&amp; algo-&gt;<a class="code" href="group___path.html#ga115e5e8fbbb0f1e2a1208be63bafdb5e">verifyPath</a>(model, err)) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">if</span> (algo-&gt;<a class="code" href="group___path.html#gad5da6e7bc4909c5ed4543fea8896e329">configure</a>(<span class="keyword">this</span>) &amp;&amp; algo-&gt;<a class="code" href="group___path.html#ga115e5e8fbbb0f1e2a1208be63bafdb5e">verifyPath</a>(model, err)) {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="comment">// If unsuccessful delete the cached model</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span> (!algo-&gt;<a class="code" href="group___path.html#ga7c93a036e8d5904a4c76444e38ec96b9">processPath</a>(model)) {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keyword">delete</span> prevModel;</div>
@@ -287,9 +287,8 @@ $(document).ready(function(){initNavTree('pathplannergadgetwidget_8cpp_source.ht
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
 <div class="ttc" id="pathplannergadgetwidget_8h_html"><div class="ttname"><a href="pathplannergadgetwidget_8h.html">pathplannergadgetwidget.h</a></div></div>
-<div class="ttc" id="group___path_planner_gadget_plugin_html_gaa5a16b8b25c368ba63764246fe417001"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#gaa5a16b8b25c368ba63764246fe417001">PathPlannerGadgetWidget::PathPlannerGadgetWidget</a></div><div class="ttdeci">PathPlannerGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetwidget_8cpp_source.html#l00040">pathplannergadgetwidget.cpp:40</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
-<div class="ttc" id="group___path_html_ga4157a802d06807c33e402f6a51f9f366"><div class="ttname"><a href="group___path.html#ga4157a802d06807c33e402f6a51f9f366">IPathAlgorithm::configure</a></div><div class="ttdeci">virtual bool configure(QWidget *callingUi=0)=0</div></div>
+<div class="ttc" id="group___path_html_gad5da6e7bc4909c5ed4543fea8896e329"><div class="ttname"><a href="group___path.html#gad5da6e7bc4909c5ed4543fea8896e329">IPathAlgorithm::configure</a></div><div class="ttdeci">virtual bool configure(QWidget *callingUi=nullptr)=0</div></div>
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga043d5717d69a25de0db1d76753c8997e"><div class="ttname"><a href="group___o_p_map_plugin.html#ga043d5717d69a25de0db1d76753c8997e">ModelUavoProxy::sendPathPlanToUavProgress</a></div><div class="ttdeci">void sendPathPlanToUavProgress(int percent)</div></div>
 <div class="ttc" id="group___path_html_gae8b76411094a9ad3164eab0996436da6"><div class="ttname"><a href="group___path.html#gae8b76411094a9ad3164eab0996436da6">FlightDataModel::writeToFile</a></div><div class="ttdeci">bool writeToFile(QString filename)</div><div class="ttdoc">FlightDataModel::writeToFile Write the waypoints to an xml file. </div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8cpp_source.html#l00346">flightdatamodel.cpp:346</a></div></div>
@@ -305,6 +304,7 @@ $(document).ready(function(){initNavTree('pathplannergadgetwidget_8cpp_source.ht
 <div class="ttc" id="group___path_planner_gadget_plugin_html_ga7a9758a518eef6a55f9386ed8a552e29"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#ga7a9758a518eef6a55f9386ed8a552e29">PathPlannerGadgetWidget::~PathPlannerGadgetWidget</a></div><div class="ttdeci">~PathPlannerGadgetWidget()</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetwidget_8cpp_source.html#l00056">pathplannergadgetwidget.cpp:56</a></div></div>
 <div class="ttc" id="group___path_planner_gadget_plugin_html_ga906747f7512d66ab544506fdd8ba5fc2"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#ga906747f7512d66ab544506fdd8ba5fc2">PathPlannerGadgetWidget::setModel</a></div><div class="ttdeci">void setModel(FlightDataModel *model, QItemSelectionModel *selection)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetwidget_8cpp_source.html#l00061">pathplannergadgetwidget.cpp:61</a></div></div>
 <div class="ttc" id="class_flight_data_model_html"><div class="ttname"><a href="class_flight_data_model.html">FlightDataModel</a></div><div class="ttdef"><b>Definition:</b> <a href="flightdatamodel_8h_source.html#l00049">flightdatamodel.h:49</a></div></div>
+<div class="ttc" id="group___path_planner_gadget_plugin_html_gac65421378cc826cb75c64fd4cb70c5df"><div class="ttname"><a href="group___path_planner_gadget_plugin.html#gac65421378cc826cb75c64fd4cb70c5df">PathPlannerGadgetWidget::PathPlannerGadgetWidget</a></div><div class="ttdeci">PathPlannerGadgetWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="pathplannergadgetwidget_8cpp_source.html#l00040">pathplannergadgetwidget.cpp:40</a></div></div>
 <div class="ttc" id="waypointdialog_8h_html"><div class="ttname"><a href="waypointdialog_8h.html">waypointdialog.h</a></div></div>
 <div class="ttc" id="class_i_path_algorithm_html"><div class="ttname"><a href="class_i_path_algorithm.html">IPathAlgorithm</a></div><div class="ttdef"><b>Definition:</b> <a href="ipathalgorithm_8h_source.html#l00031">ipathalgorithm.h:31</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>

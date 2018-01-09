@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('modelviewgadgetconfiguration_8cpp_sour
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modelviewgadgetconfiguration_8h.html">modelviewgadgetconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathutils_8h.html">utils/pathutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343">   30</a></span>&#160;<a class="code" href="group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343">ModelViewGadgetConfiguration::ModelViewGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e">   30</a></span>&#160;<a class="code" href="group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e">ModelViewGadgetConfiguration::ModelViewGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                           QObject *parent)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    , m_acFilename(<span class="stringliteral">&quot;../share/models/multi/test_quad/test_quad_X.3ds&quot;</span>)</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('modelviewgadgetconfiguration_8cpp_sour
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , m_enableVbo(false)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// if a saved configuration exists load it</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (qSettings != 0) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (qSettings != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        QString modelFile = qSettings-&gt;value(<span class="stringliteral">&quot;acFilename&quot;</span>).toString();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        QString bgFile = qSettings-&gt;value(<span class="stringliteral">&quot;bgFilename&quot;</span>).toString();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_enableVbo = qSettings-&gt;value(<span class="stringliteral">&quot;enableVbo&quot;</span>).toBool();</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('modelviewgadgetconfiguration_8cpp_sour
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___model_view_plugin.html#gafe85c40e0602f4bb0a8f54637fd87b2c">   47</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___model_view_plugin.html#gafe85c40e0602f4bb0a8f54637fd87b2c">ModelViewGadgetConfiguration::clone</a>()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a> *mv = <span class="keyword">new</span> <a class="code" href="group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343">ModelViewGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a> *mv = <span class="keyword">new</span> <a class="code" href="group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e">ModelViewGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    mv-&gt;m_acFilename = m_acFilename;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mv-&gt;m_bgFilename = m_bgFilename;</div>
@@ -164,8 +164,8 @@ $(document).ready(function(){initNavTree('modelviewgadgetconfiguration_8cpp_sour
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_gac953657221ba7fda967ada0408332641"><div class="ttname"><a href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">Core::IUAVGadgetConfiguration::classId</a></div><div class="ttdeci">QString classId()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00049">iuavgadgetconfiguration.h:49</a></div></div>
 <div class="ttc" id="pathutils_8h_html"><div class="ttname"><a href="pathutils_8h.html">pathutils.h</a></div></div>
+<div class="ttc" id="group___model_view_plugin_html_ga20312a319e174a728c316446ee88dc8e"><div class="ttname"><a href="group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e">ModelViewGadgetConfiguration::ModelViewGadgetConfiguration</a></div><div class="ttdeci">ModelViewGadgetConfiguration(QString classId, QSettings *qSettings=nullptr, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8cpp_source.html#l00030">modelviewgadgetconfiguration.cpp:30</a></div></div>
 <div class="ttc" id="group___model_view_plugin_html_gafe85c40e0602f4bb0a8f54637fd87b2c"><div class="ttname"><a href="group___model_view_plugin.html#gafe85c40e0602f4bb0a8f54637fd87b2c">ModelViewGadgetConfiguration::clone</a></div><div class="ttdeci">IUAVGadgetConfiguration * clone()</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8cpp_source.html#l00047">modelviewgadgetconfiguration.cpp:47</a></div></div>
-<div class="ttc" id="group___model_view_plugin_html_ga68c5b45bcb3a5b4f35186957e765e343"><div class="ttname"><a href="group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343">ModelViewGadgetConfiguration::ModelViewGadgetConfiguration</a></div><div class="ttdeci">ModelViewGadgetConfiguration(QString classId, QSettings *qSettings=0, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8cpp_source.html#l00030">modelviewgadgetconfiguration.cpp:30</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga991afe345a15d1edd6d3ccbf72f8c702"><div class="ttname"><a href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">Core::IUAVGadgetConfiguration::saveConfig</a></div><div class="ttdeci">virtual void saveConfig() const </div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00057">iuavgadgetconfiguration.h:57</a></div></div>
 <div class="ttc" id="class_model_view_gadget_configuration_html"><div class="ttname"><a href="class_model_view_gadget_configuration.html">ModelViewGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="modelviewgadgetconfiguration_8h_source.html#l00034">modelviewgadgetconfiguration.h:34</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html"><div class="ttname"><a href="class_utils_1_1_path_utils.html">Utils::PathUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8h_source.html#l00040">pathutils.h:40</a></div></div>

@@ -1,6 +1,6 @@
 var class_scope_gadget_widget =
 [
-    [ "ScopeGadgetWidget", "group___scope_plugin.html#ga2810fbb794c4531b885259a5100bcf79", null ],
+    [ "ScopeGadgetWidget", "group___scope_plugin.html#gae4efc4e800b665181a3d093c831813ec", null ],
     [ "~ScopeGadgetWidget", "group___scope_plugin.html#gaa4f8465d4475c6035056db0bb194b9fa", null ],
     [ "addLegend", "group___scope_plugin.html#ga3f88f383dc322a2516c1e6b874e341a0", null ],
     [ "clearPlotWidget", "group___scope_plugin.html#ga9a19de9754adbab7df27b7db75348346", null ],

@@ -1,7 +1,7 @@
 var class_int_field_tree_item =
 [
-    [ "IntFieldTreeItem", "group___u_a_v_object_browser_plugin.html#ga4ca34e25fd72802feaeb4123607bb7c4", null ],
-    [ "IntFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gab944da4a69d80c272ecb2cd56cb68a21", null ],
+    [ "IntFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gaf53a60a0cc8c2ea43ecf0a3e1e9c161e", null ],
+    [ "IntFieldTreeItem", "group___u_a_v_object_browser_plugin.html#gaf76cc3ec35b83ef70c21404cd44806c8", null ],
     [ "apply", "group___u_a_v_object_browser_plugin.html#ga24ca9e240126f614a138454ca00bd6b1", null ],
     [ "createEditor", "group___u_a_v_object_browser_plugin.html#ga1ce7bba5d398e5db5afb25a1fdecc2cd", null ],
     [ "formattedData", "group___u_a_v_object_browser_plugin.html#ga004390520d83374019717bb9efa63512", null ],

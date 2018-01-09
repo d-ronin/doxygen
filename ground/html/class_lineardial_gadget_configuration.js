@@ -1,6 +1,6 @@
 var class_lineardial_gadget_configuration =
 [
-    [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f", null ],
+    [ "LineardialGadgetConfiguration", "group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d", null ],
     [ "clone", "group___linear_dial_plugin.html#ga4b5d2c9802ec3b863732d6f707a1befe", null ],
     [ "getDecimalPlaces", "group___linear_dial_plugin.html#gab0a4ac1f433766548d4f87e0d4c1c499", null ],
     [ "getDialFile", "group___linear_dial_plugin.html#ga44cbe980684b267ae41060c0428e00ce", null ],

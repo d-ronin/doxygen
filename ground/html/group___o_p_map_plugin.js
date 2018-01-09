@@ -3,7 +3,7 @@ var group___o_p_map_plugin =
     [ "Ui", "namespace_ui.html", null ],
     [ "Core", "namespace_core.html", null ],
     [ "homeEditor", "classhome_editor.html", [
-      [ "homeEditor", "group___o_p_map_plugin.html#ga0036d5e97a686e97c193d02489b4d5fb", null ],
+      [ "homeEditor", "group___o_p_map_plugin.html#ga063ac8737b12ddb8d120d408d485cd4f", null ],
       [ "~homeEditor", "group___o_p_map_plugin.html#ga774f5e26cbfa6c2c2fe3fb6a9317abcf", null ]
     ] ],
     [ "ModelMapProxy", "class_model_map_proxy.html", [
@@ -14,21 +14,21 @@ var group___o_p_map_plugin =
       [ "findWayPointNumber", "group___o_p_map_plugin.html#gabc5719db39d81801af2bce5a5dd3eee9", null ]
     ] ],
     [ "opmap_statusbar_widget", "classopmap__statusbar__widget.html", [
-      [ "opmap_statusbar_widget", "group___o_p_map_plugin.html#gacb2a078a376c25f8ca59214a7a231122", null ],
+      [ "opmap_statusbar_widget", "group___o_p_map_plugin.html#gabefa0bc6bf3aeb359730d07df5f6fb1b", null ],
       [ "~opmap_statusbar_widget", "group___o_p_map_plugin.html#gaf9e51f27e900dce668581330be2f272f", null ]
     ] ],
     [ "opmap_zoom_slider_widget", "classopmap__zoom__slider__widget.html", [
-      [ "opmap_zoom_slider_widget", "group___o_p_map_plugin.html#ga95e119b3d479e4740f8231bef84b59ac", null ],
+      [ "opmap_zoom_slider_widget", "group___o_p_map_plugin.html#gaa52fc0b0514d34591f65368ac0954e5e", null ],
       [ "~opmap_zoom_slider_widget", "group___o_p_map_plugin.html#gab379eba250616b76de62dd392fa0e14d", null ]
     ] ],
     [ "OPMapGadget", "class_o_p_map_gadget.html", [
-      [ "OPMapGadget", "group___o_p_map_plugin.html#ga6782261a51cde76c6b7fd104e0fc8607", null ],
+      [ "OPMapGadget", "group___o_p_map_plugin.html#gaf52c5305480382fdb397433d0015c020", null ],
       [ "~OPMapGadget", "group___o_p_map_plugin.html#ga041e6faec573a7770cc9ddfdf8694a5e", null ],
       [ "loadConfiguration", "group___o_p_map_plugin.html#ga8a10d4d6d7feb8ab2c2dd928cc46c260", null ],
       [ "widget", "group___o_p_map_plugin.html#ga4c0dd792243fff2dc45fd98929145d27", null ]
     ] ],
     [ "OPMapGadgetConfiguration", "class_o_p_map_gadget_configuration.html", [
-      [ "OPMapGadgetConfiguration", "group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be", null ],
+      [ "OPMapGadgetConfiguration", "group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9", null ],
       [ "accessMode", "group___o_p_map_plugin.html#ga2a0ae25b0c5f6fb24f2b2f791a9fe997", null ],
       [ "cacheLocation", "group___o_p_map_plugin.html#gabcd898428bb8b8e721deabdec17009e0", null ],
       [ "clone", "group___o_p_map_plugin.html#gad04d5a814a94033d32e4bbb42321c105", null ],
@@ -76,14 +76,14 @@ var group___o_p_map_plugin =
       [ "zoommo", "group___o_p_map_plugin.html#gac07e4414a740f31223ffb1ce430ca3e8", null ]
     ] ],
     [ "OPMapGadgetFactory", "class_o_p_map_gadget_factory.html", [
-      [ "OPMapGadgetFactory", "group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622", null ],
+      [ "OPMapGadgetFactory", "group___o_p_map_plugin.html#ga9173aa59cac1d7da411b1805126d9fd2", null ],
       [ "~OPMapGadgetFactory", "group___o_p_map_plugin.html#ga20558255cdd8731aa6edd40d797d2c02", null ],
       [ "createConfiguration", "group___o_p_map_plugin.html#ga7f75947f3d08a110f8289998a41f44ee", null ],
       [ "createGadget", "group___o_p_map_plugin.html#ga185fdb89aa5cd90c3112f9f39333703c", null ],
       [ "createOptionsPage", "group___o_p_map_plugin.html#gadde2c412f864fe77db6ea353a5e7071b", null ]
     ] ],
     [ "OPMapGadgetOptionsPage", "class_o_p_map_gadget_options_page.html", [
-      [ "OPMapGadgetOptionsPage", "group___o_p_map_plugin.html#ga23f0a8c69cfb41e42f3304d1b4a4cd34", null ],
+      [ "OPMapGadgetOptionsPage", "group___o_p_map_plugin.html#gabfa5fef47f74eee89d763bdc0eae0fc5", null ],
       [ "apply", "group___o_p_map_plugin.html#ga8b2ec9377a2fb5a144b5c5aab349225f", null ],
       [ "createPage", "group___o_p_map_plugin.html#gaec7ef2751680eb7ff0f4f6abdf2fd4c4", null ],
       [ "finish", "group___o_p_map_plugin.html#ga7d645e14473ae14e762cc694e85e28a8", null ]
@@ -94,7 +94,7 @@ var group___o_p_map_plugin =
       [ "locked", "group___o_p_map_plugin.html#ga4cc9a1ca8d219f1aa6d823fab6080f02", null ]
     ] ],
     [ "OPMapGadgetWidget", "class_o_p_map_gadget_widget.html", [
-      [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga7fe62a2d1a8b920f3e44900dee8d9d5a", null ],
+      [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga222e0e42308e538e45d1f2a543261cf7", null ],
       [ "~OPMapGadgetWidget", "group___o_p_map_plugin.html#ga7c7775d0011bd9d0f8ca0219f48bc193", null ],
       [ "closeEvent", "group___o_p_map_plugin.html#ga07f947001ed1fdf9d099f170e5116aa2", null ],
       [ "contextMenuEvent", "group___o_p_map_plugin.html#gab4575b0db17580cc1a575aafa2fc5710", null ],
@@ -137,33 +137,33 @@ var group___o_p_map_plugin =
       [ "waypointTransactionSucceeded", "group___o_p_map_plugin.html#gaf5825b310723b58fb271811c478954ec", null ]
     ] ],
     [ "QmlViewGadget", "class_qml_view_gadget.html", [
-      [ "QmlViewGadget", "group___o_p_map_plugin.html#ga20a7caf16d8ece4d83abc6c96c5a6556", null ],
+      [ "QmlViewGadget", "group___o_p_map_plugin.html#ga70c55052f8ea646130e94cb26ec08d29", null ],
       [ "~QmlViewGadget", "group___o_p_map_plugin.html#gacae7d443d2a8754279dd055180fc2622", null ],
       [ "loadConfiguration", "group___o_p_map_plugin.html#ga38c57a339a1bd7d6c6295d9f4fdcd016", null ],
       [ "widget", "group___o_p_map_plugin.html#ga7687b494af7a9e5b6f9550ff75f4a98c", null ]
     ] ],
     [ "QmlViewGadgetConfiguration", "class_qml_view_gadget_configuration.html", [
-      [ "QmlViewGadgetConfiguration", "group___o_p_map_plugin.html#gac44e73d868f1af30be54bb966ffc1998", null ],
+      [ "QmlViewGadgetConfiguration", "group___o_p_map_plugin.html#gab0e493e426adde831392021cea8ad2c4", null ],
       [ "clone", "group___o_p_map_plugin.html#gab4f87dbc27b19e319ea02819e3574853", null ],
       [ "dialFile", "group___o_p_map_plugin.html#ga797d73a96488915da65e8cd79ceac1fe", null ],
       [ "saveConfig", "group___o_p_map_plugin.html#gada9019ef4d25aa0e87788713af1d1d72", null ],
       [ "setDialFile", "group___o_p_map_plugin.html#ga3811e60e4028c59e57997daf43edc66a", null ]
     ] ],
     [ "QmlViewGadgetFactory", "class_qml_view_gadget_factory.html", [
-      [ "QmlViewGadgetFactory", "group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e", null ],
+      [ "QmlViewGadgetFactory", "group___o_p_map_plugin.html#ga07d3e962a2099c56ae9a6bf30e722553", null ],
       [ "~QmlViewGadgetFactory", "group___o_p_map_plugin.html#ga2ae87f4b2a912a2e38fe69c6b8b3e3e7", null ],
       [ "createConfiguration", "group___o_p_map_plugin.html#ga9000c14dd19e5dbc8e5c8e2ed26b2553", null ],
       [ "createGadget", "group___o_p_map_plugin.html#gadceaaa6e9f968a951f33f6c1a7de1340", null ],
       [ "createOptionsPage", "group___o_p_map_plugin.html#gab0af6f5774c846fe82b1b073cf0bbb76", null ]
     ] ],
     [ "QmlViewGadgetOptionsPage", "class_qml_view_gadget_options_page.html", [
-      [ "QmlViewGadgetOptionsPage", "group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0", null ],
+      [ "QmlViewGadgetOptionsPage", "group___o_p_map_plugin.html#gab037af34349f13f600985b67e254ad74", null ],
       [ "apply", "group___o_p_map_plugin.html#gae54bde0f44f72b28df2d9722d829d930", null ],
       [ "createPage", "group___o_p_map_plugin.html#gabea978f47d48fc92ec7e5a0ed8d88fe0", null ],
       [ "finish", "group___o_p_map_plugin.html#ga8730978634b18a85389188571ad7fec5", null ]
     ] ],
     [ "QmlViewGadgetWidget", "class_qml_view_gadget_widget.html", [
-      [ "QmlViewGadgetWidget", "group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab", null ],
+      [ "QmlViewGadgetWidget", "group___o_p_map_plugin.html#ga5ced1b3c9506d3ab20d4bfbe9ee13027", null ],
       [ "~QmlViewGadgetWidget", "group___o_p_map_plugin.html#gab474fe9554896c3815e74bd3979a54a9", null ],
       [ "enableSmoothUpdates", "group___o_p_map_plugin.html#ga6c243c31f5bf4653f0bbd7b10527beb3", null ],
       [ "mouseReleaseEvent", "group___o_p_map_plugin.html#ga603740c506323fe96565cbdabe6b40ac", null ],
@@ -207,7 +207,7 @@ var group___o_p_map_plugin =
     [ "getUserImageLocation", "group___o_p_map_plugin.html#ga2850b41441065cc1eefef00485f72459", null ],
     [ "getUserImageVerticalScale", "group___o_p_map_plugin.html#ga88c5753eccbe21cb720910a47efce3fe", null ],
     [ "goHome", "group___o_p_map_plugin.html#gab81157189920148cb4178548aeef4b92", null ],
-    [ "homeEditor", "group___o_p_map_plugin.html#ga0036d5e97a686e97c193d02489b4d5fb", null ],
+    [ "homeEditor", "group___o_p_map_plugin.html#ga063ac8737b12ddb8d120d408d485cd4f", null ],
     [ "latitude", "group___o_p_map_plugin.html#gaa2e49a8d2ff144343b4467f078374b0a", null ],
     [ "loadConfiguration", "group___o_p_map_plugin.html#ga8a10d4d6d7feb8ab2c2dd928cc46c260", null ],
     [ "loadConfiguration", "group___o_p_map_plugin.html#ga38c57a339a1bd7d6c6295d9f4fdcd016", null ],
@@ -219,18 +219,18 @@ var group___o_p_map_plugin =
     [ "mouseMoveEvent", "group___o_p_map_plugin.html#gac0a4e19ec058721095f125dfba28ea79", null ],
     [ "mouseReleaseEvent", "group___o_p_map_plugin.html#ga603740c506323fe96565cbdabe6b40ac", null ],
     [ "opacity", "group___o_p_map_plugin.html#ga9cc98eb40adba9b8b721443c2d15f01e", null ],
-    [ "opmap_statusbar_widget", "group___o_p_map_plugin.html#gacb2a078a376c25f8ca59214a7a231122", null ],
-    [ "opmap_zoom_slider_widget", "group___o_p_map_plugin.html#ga95e119b3d479e4740f8231bef84b59ac", null ],
-    [ "OPMapGadget", "group___o_p_map_plugin.html#ga6782261a51cde76c6b7fd104e0fc8607", null ],
-    [ "OPMapGadgetConfiguration", "group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be", null ],
-    [ "OPMapGadgetFactory", "group___o_p_map_plugin.html#ga348bc36551d757fe6accc824bda0f622", null ],
-    [ "OPMapGadgetOptionsPage", "group___o_p_map_plugin.html#ga23f0a8c69cfb41e42f3304d1b4a4cd34", null ],
-    [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga7fe62a2d1a8b920f3e44900dee8d9d5a", null ],
-    [ "QmlViewGadget", "group___o_p_map_plugin.html#ga20a7caf16d8ece4d83abc6c96c5a6556", null ],
-    [ "QmlViewGadgetConfiguration", "group___o_p_map_plugin.html#gac44e73d868f1af30be54bb966ffc1998", null ],
-    [ "QmlViewGadgetFactory", "group___o_p_map_plugin.html#ga84b7aa224d691ff4283bf3201a8f3b5e", null ],
-    [ "QmlViewGadgetOptionsPage", "group___o_p_map_plugin.html#gaf6860d14e2ae756100a2765d50a6d9b0", null ],
-    [ "QmlViewGadgetWidget", "group___o_p_map_plugin.html#ga305a28b5ef9bd214c8c80a77d34b04ab", null ],
+    [ "opmap_statusbar_widget", "group___o_p_map_plugin.html#gabefa0bc6bf3aeb359730d07df5f6fb1b", null ],
+    [ "opmap_zoom_slider_widget", "group___o_p_map_plugin.html#gaa52fc0b0514d34591f65368ac0954e5e", null ],
+    [ "OPMapGadget", "group___o_p_map_plugin.html#gaf52c5305480382fdb397433d0015c020", null ],
+    [ "OPMapGadgetConfiguration", "group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9", null ],
+    [ "OPMapGadgetFactory", "group___o_p_map_plugin.html#ga9173aa59cac1d7da411b1805126d9fd2", null ],
+    [ "OPMapGadgetOptionsPage", "group___o_p_map_plugin.html#gabfa5fef47f74eee89d763bdc0eae0fc5", null ],
+    [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga222e0e42308e538e45d1f2a543261cf7", null ],
+    [ "QmlViewGadget", "group___o_p_map_plugin.html#ga70c55052f8ea646130e94cb26ec08d29", null ],
+    [ "QmlViewGadgetConfiguration", "group___o_p_map_plugin.html#gab0e493e426adde831392021cea8ad2c4", null ],
+    [ "QmlViewGadgetFactory", "group___o_p_map_plugin.html#ga07d3e962a2099c56ae9a6bf30e722553", null ],
+    [ "QmlViewGadgetOptionsPage", "group___o_p_map_plugin.html#gab037af34349f13f600985b67e254ad74", null ],
+    [ "QmlViewGadgetWidget", "group___o_p_map_plugin.html#ga5ced1b3c9506d3ab20d4bfbe9ee13027", null ],
     [ "requestImage", "group___o_p_map_plugin.html#ga47800a9f6d3722318713988d27fde449", null ],
     [ "resizeEvent", "group___o_p_map_plugin.html#ga5364db038789e0e4ad94ae0606391100", null ],
     [ "saveConfig", "group___o_p_map_plugin.html#gada9019ef4d25aa0e87788713af1d1d72", null ],

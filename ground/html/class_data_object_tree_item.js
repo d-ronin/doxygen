@@ -1,7 +1,7 @@
 var class_data_object_tree_item =
 [
-    [ "DataObjectTreeItem", "group___u_a_v_object_browser_plugin.html#gabc056eda5e72e5f0bebe3fd41fd5f552", null ],
-    [ "DataObjectTreeItem", "group___u_a_v_object_browser_plugin.html#ga1a938e6bed78334aef5b0a9c4050e847", null ],
+    [ "DataObjectTreeItem", "group___u_a_v_object_browser_plugin.html#gaeef2e20a6149947bff110d58e4c1d270", null ],
+    [ "DataObjectTreeItem", "group___u_a_v_object_browser_plugin.html#ga39af96317a277cfa5c61776cdf792f4e", null ],
     [ "appendChild", "group___u_a_v_object_browser_plugin.html#gad6969eb7eec7fb1db74f36805edeb287", null ],
     [ "apply", "group___u_a_v_object_browser_plugin.html#gaf4e450281b4dd9e3f06aaf84b7547d84", null ],
     [ "doRefreshHiddenObjects", "group___u_a_v_object_browser_plugin.html#gadeecd40178c0218ae6e4576b1a7acced", null ],

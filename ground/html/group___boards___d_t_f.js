@@ -19,13 +19,13 @@ var group___boards___d_t_f =
       [ "shortName", "group___boards___d_t_f.html#ga4f0b9413847f5a7898e7a51260cbfca9", null ]
     ] ],
     [ "DtfcConfiguration", "class_dtfc_configuration.html", [
-      [ "DtfcConfiguration", "group___boards___d_t_f.html#ga10248a70ebe5116c7414449ce3a361f5", null ],
+      [ "DtfcConfiguration", "group___boards___d_t_f.html#ga44e057a8992da626ea2ebfb2cbc2ab1d", null ],
       [ "~DtfcConfiguration", "group___boards___d_t_f.html#gaabe10485a12c7606791eddd5afd37874", null ]
     ] ],
     [ "DTFPlugin", "class_d_t_f_plugin.html", null ],
     [ "boardDescription", "group___boards___d_t_f.html#ga6cf93718acc2c62a6efd696722e3cbc7", null ],
     [ "Dtfc", "group___boards___d_t_f.html#ga5abb3ddd92f6df9d5350249cad54465b", null ],
-    [ "DtfcConfiguration", "group___boards___d_t_f.html#ga10248a70ebe5116c7414449ce3a361f5", null ],
+    [ "DtfcConfiguration", "group___boards___d_t_f.html#ga44e057a8992da626ea2ebfb2cbc2ab1d", null ],
     [ "getAdcNames", "group___boards___d_t_f.html#ga14560e770dc46af34a91bd0b928c0872", null ],
     [ "getBoardConfiguration", "group___boards___d_t_f.html#ga1d9e8648735295d283ff35aa0ff1f21a", null ],
     [ "getBoardPicture", "group___boards___d_t_f.html#gafcd6207b8b5ecc6128df9407918ee366", null ],

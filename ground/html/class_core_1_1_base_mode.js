@@ -1,6 +1,6 @@
 var class_core_1_1_base_mode =
 [
-    [ "BaseMode", "group___core_plugin.html#ga001e234367e66731d03715a0d8aaa2a4", null ],
+    [ "BaseMode", "group___core_plugin.html#ga243bf14ed1b37015739ff8cec44a5b4d", null ],
     [ "~BaseMode", "group___core_plugin.html#ga608e9b9a30ea7632f45add52726c8377", null ],
     [ "context", "group___core_plugin.html#ga931f95d0ee3f352b7e43bbba9e228480", null ],
     [ "icon", "group___core_plugin.html#ga112e7a5d2e25d9a38cb8e52ec9f89431", null ],

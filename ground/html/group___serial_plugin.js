@@ -22,7 +22,7 @@ var group___serial_plugin =
     ] ],
     [ "SerialPlugin", "class_serial_plugin.html", null ],
     [ "SerialPluginConfiguration", "class_serial_plugin_configuration.html", [
-      [ "SerialPluginConfiguration", "group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e", null ],
+      [ "SerialPluginConfiguration", "group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640", null ],
       [ "~SerialPluginConfiguration", "group___serial_plugin.html#ga02088820254dad5d594d652f0d1ac556", null ],
       [ "clone", "group___serial_plugin.html#ga894fb8aa5280cdfb94f844d09f21e64d", null ],
       [ "reconnect", "group___serial_plugin.html#ga814b165a291785fc740353fafdfff545", null ],
@@ -34,7 +34,7 @@ var group___serial_plugin =
       [ "speed", "group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c", null ]
     ] ],
     [ "SerialPluginOptionsPage", "class_serial_plugin_options_page.html", [
-      [ "SerialPluginOptionsPage", "group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85", null ],
+      [ "SerialPluginOptionsPage", "group___serial_plugin.html#ga45bbd5e32b60e0ab09c208fd582b817b", null ],
       [ "apply", "group___serial_plugin.html#ga442981f9537c634cbc6bd160f30c0a8a", null ],
       [ "category", "group___serial_plugin.html#ga11d58b7fe11ee48ac5a865eaea4d9a13", null ],
       [ "createPage", "group___serial_plugin.html#ga77331da48998f8e92c60751f5e2ab862", null ],
@@ -63,8 +63,8 @@ var group___serial_plugin =
     [ "saveConfig", "group___serial_plugin.html#ga01715638b8bff47aaa76961d1cd11f59", null ],
     [ "savesettings", "group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0", null ],
     [ "SerialConnection", "group___serial_plugin.html#gaad6479d49b3483b42c19868c9efcef01", null ],
-    [ "SerialPluginConfiguration", "group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e", null ],
-    [ "SerialPluginOptionsPage", "group___serial_plugin.html#gabbba5e225f4b24b0ff2762edd89a7c85", null ],
+    [ "SerialPluginConfiguration", "group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640", null ],
+    [ "SerialPluginOptionsPage", "group___serial_plugin.html#ga45bbd5e32b60e0ab09c208fd582b817b", null ],
     [ "shortName", "group___serial_plugin.html#ga6783c4f6c9faa91aeb0b91fef726a2d4", null ],
     [ "sortPorts", "group___serial_plugin.html#gaa4c0e8072d170555640d0d81de58b8b4", null ],
     [ "speed", "group___serial_plugin.html#ga1e6623a11c7e9c8e52411d2568dd4e7c", null ],

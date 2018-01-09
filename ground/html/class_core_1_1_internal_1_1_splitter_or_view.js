@@ -1,6 +1,6 @@
 var class_core_1_1_internal_1_1_splitter_or_view =
 [
-    [ "SplitterOrView", "group___core_plugin.html#gad2c8699c073c3d714f6f73036a1efabc", null ],
+    [ "SplitterOrView", "group___core_plugin.html#ga842746aa8d1b792e24d1bf4de3f85f17", null ],
     [ "~SplitterOrView", "group___core_plugin.html#ga42605d72009aca0f129477fe21bf7d32", null ],
     [ "findFirstView", "group___core_plugin.html#ga9527e06232dae22e08f41dd4644a4157", null ],
     [ "findNextView", "group___core_plugin.html#ga473bc573c4330a7de38e9ca7222b72c5", null ],

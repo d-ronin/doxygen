@@ -1,6 +1,6 @@
 var class_u_a_v_settings_import_export_manager =
 [
-    [ "UAVSettingsImportExportManager", "group___u_a_v_settings_import_export.html#gac32b68bf12c1286fbbdd1106af7f518f", null ],
+    [ "UAVSettingsImportExportManager", "group___u_a_v_settings_import_export.html#ga49509a708cabd6d102ef8c59cab9036c", null ],
     [ "~UAVSettingsImportExportManager", "group___u_a_v_settings_import_export.html#ga5acc73b4062afbd9ae2bdc31032512a9", null ],
     [ "exportUAVData", "group___u_a_v_settings_import_export.html#gad0bd9cdf24c5c2a88512ae945ae6a447", null ],
     [ "exportUAVSettings", "group___u_a_v_settings_import_export.html#gaddb5f9ed40ca86b0a8dbd622a8e3e274", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -175,8 +175,8 @@ $(document).ready(function(){initNavTree('uavgadgetmanager_8cpp_source.html','')
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaafe1ad3bbbc0f406d14529f20d61b981">   75</a></span>&#160;UAVGadgetManager::UAVGadgetManager(<a class="code" href="class_core_1_1_i_core.html">ICore</a> *core, QString name, QIcon icon, <span class="keywordtype">int</span> priority,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                   QString uniqueName, QWidget *parent)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    : m_showToolbars(true)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    , m_splitterOrView(0)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    , m_currentGadget(0)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    , m_splitterOrView(nullptr)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    , m_currentGadget(nullptr)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    , m_core(core)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    , m_name(name)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    , m_icon(icon)</div>
@@ -203,13 +203,13 @@ $(document).ready(function(){initNavTree('uavgadgetmanager_8cpp_source.html','')
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            SLOT(modeChanged(<a class="code" href="class_core_1_1_i_mode.html">Core::IMode</a> *)));</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// other setup</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    m_splitterOrView = <span class="keyword">new</span> <a class="code" href="class_core_1_1_internal_1_1_splitter_or_view.html">SplitterOrView</a>(<span class="keyword">this</span>, 0, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    m_splitterOrView = <span class="keyword">new</span> <a class="code" href="class_core_1_1_internal_1_1_splitter_or_view.html">SplitterOrView</a>(<span class="keyword">this</span>, <span class="keyword">nullptr</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// SplitterOrView with 0 as gadget calls our setCurrentGadget, which relies on</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// currentSplitterOrView(),</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// which needs our m_splitterorView to be set, which isn&#39;t set yet at that time.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// So directly set our currentGadget to 0, and do it again.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    m_currentGadget = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    m_currentGadget = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    setCurrentGadget(m_splitterOrView-&gt;<a class="code" href="group___core_plugin.html#ga885a960ed8f9cdcfa3e01e739743f93d">view</a>()-&gt;<a class="code" href="group___core_plugin.html#ga61a5d78cd9753fa2d7521c742bdc1c99">gadget</a>());</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QHBoxLayout *layout = <span class="keyword">new</span> QHBoxLayout(m_widget);</div>
@@ -283,8 +283,8 @@ $(document).ready(function(){initNavTree('uavgadgetmanager_8cpp_source.html','')
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<a class="code" href="class_core_1_1_internal_1_1_splitter_or_view.html">Core::Internal::SplitterOrView</a> *UAVGadgetManager::currentSplitterOrView()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (!m_splitterOrView) <span class="comment">// this is only for startup</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_splitter_or_view.html">SplitterOrView</a> *view = m_currentGadget ? m_splitterOrView-&gt;<a class="code" href="group___core_plugin.html#ga52a86e796c14405fa7b471c1d9bfae40">findView</a>(m_currentGadget) : 0;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_splitter_or_view.html">SplitterOrView</a> *view = m_currentGadget ? m_splitterOrView-&gt;<a class="code" href="group___core_plugin.html#ga52a86e796c14405fa7b471c1d9bfae40">findView</a>(m_currentGadget) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> view;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
@@ -514,7 +514,7 @@ $(document).ready(function(){initNavTree('uavgadgetmanager_8cpp_source.html','')
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    m_splitterOrView-&gt;<a class="code" href="group___core_plugin.html#gabd07fabb713be54a103c57a8842eacee">unsplitAll</a>(currentGadget);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="comment">// Zeroing the current gadget means setCurrentGadget will do something when we call it.</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    m_currentGadget = 0;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    m_currentGadget = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    setCurrentGadget(currentGadget);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// Remove all other gadgets from the instance manager.</span></div>

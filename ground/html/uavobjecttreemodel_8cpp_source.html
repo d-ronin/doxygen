@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('uavobjecttreemodel_8cpp_source.html','
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga34df3d243262f9f7ed6051bf1c9e59aa">   50</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#ga34df3d243262f9f7ed6051bf1c9e59aa">UAVObjectTreeModel::UAVObjectTreeModel</a>(QObject *parent, <span class="keywordtype">bool</span> useScientificNotation)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga224aaa0a697df85fdfb6648a10c6e948">   50</a></span>&#160;<a class="code" href="group___u_a_v_object_browser_plugin.html#ga224aaa0a697df85fdfb6648a10c6e948">UAVObjectTreeModel::UAVObjectTreeModel</a>(QObject *parent, <span class="keywordtype">bool</span> useScientificNotation)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    : QAbstractItemModel(parent)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    , m_rootItem(NULL)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    , m_recentlyUpdatedColor(QColor(255, 230, 230))</div>
@@ -410,7 +410,7 @@ $(document).ready(function(){initNavTree('uavobjecttreemodel_8cpp_source.html','
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;QModelIndex <a class="code" href="group___u_a_v_object_browser_plugin.html#ga9b9e52145b78d333effe586a41478701">UAVObjectTreeModel::index</a>(<a class="code" href="class_tree_item.html">TreeItem</a> *item)</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">if</span> (item-&gt;<a class="code" href="group___u_a_v_object_browser_plugin.html#gaa3a7ba624312b6be70872634db291881">parent</a>() == 0)</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">if</span> (item-&gt;<a class="code" href="group___u_a_v_object_browser_plugin.html#gaa3a7ba624312b6be70872634db291881">parent</a>() == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> QModelIndex();</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    QModelIndex root = <a class="code" href="group___u_a_v_object_browser_plugin.html#ga9b9e52145b78d333effe586a41478701">index</a>(item-&gt;<a class="code" href="group___u_a_v_object_browser_plugin.html#gaa3a7ba624312b6be70872634db291881">parent</a>());</div>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('uavobjecttreemodel_8cpp_source.html','
 <div class="line"><a name="l00474"></a><span class="lineno"><a class="line" href="group___u_a_v_object_browser_plugin.html#ga16ae36c54433edd7b07439edc1264b59">  474</a></span>&#160;Qt::ItemFlags <a class="code" href="group___u_a_v_object_browser_plugin.html#ga16ae36c54433edd7b07439edc1264b59">UAVObjectTreeModel::flags</a>(<span class="keyword">const</span> QModelIndex &amp;index)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">if</span> (!index.isValid())</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="keywordflow">if</span> (index.column() == <a class="code" href="group___u_a_v_object_browser_plugin.html#gad4ee9a1203f812d975a410765ddb8710">TreeItem::dataColumn</a>) {</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <a class="code" href="class_tree_item.html">TreeItem</a> *item = <span class="keyword">static_cast&lt;</span><a class="code" href="class_tree_item.html">TreeItem</a> *<span class="keyword">&gt;</span>(index.internalPointer());</div>
@@ -610,7 +610,7 @@ $(document).ready(function(){initNavTree('uavobjecttreemodel_8cpp_source.html','
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">return</span> findMetaObjectTreeItem(metaObject);</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;}</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<a class="code" href="class_data_object_tree_item.html">DataObjectTreeItem</a> *UAVObjectTreeModel::findDataObjectTreeItem(<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *obj)</div>
@@ -649,7 +649,7 @@ $(document).ready(function(){initNavTree('uavobjecttreemodel_8cpp_source.html','
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
 <div class="ttc" id="class_field_tree_item_html"><div class="ttname"><a href="class_field_tree_item.html">FieldTreeItem</a></div><div class="ttdef"><b>Definition:</b> <a href="fieldtreeitem_8h_source.html#l00051">fieldtreeitem.h:51</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html_a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837"><div class="ttname"><a href="class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a9e78f4bc590d0a313c2fbdd157a82837">UAVObjectField::UINT32</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00051">uavobjectfield.h:51</a></div></div>
-<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga34df3d243262f9f7ed6051bf1c9e59aa"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga34df3d243262f9f7ed6051bf1c9e59aa">UAVObjectTreeModel::UAVObjectTreeModel</a></div><div class="ttdeci">UAVObjectTreeModel(QObject *parent=0, bool useScientificNotation=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00050">uavobjecttreemodel.cpp:50</a></div></div>
+<div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga224aaa0a697df85fdfb6648a10c6e948"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga224aaa0a697df85fdfb6648a10c6e948">UAVObjectTreeModel::UAVObjectTreeModel</a></div><div class="ttdeci">UAVObjectTreeModel(QObject *parent=nullptr, bool useScientificNotation=false)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00050">uavobjecttreemodel.cpp:50</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gaa9790dc57ee25280838c1828d5991f92"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gaa9790dc57ee25280838c1828d5991f92">TopTreeItem::findMetaObjectTreeItemByObjectId</a></div><div class="ttdeci">MetaObjectTreeItem * findMetaObjectTreeItemByObjectId(quint32 objectId)</div><div class="ttdef"><b>Definition:</b> <a href="treeitem_8h_source.html#l00238">treeitem.h:238</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_gaa19ce01eb026443086adfe5063bbc233"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#gaa19ce01eb026443086adfe5063bbc233">UAVObjectTreeModel::headerData</a></div><div class="ttdeci">QVariant headerData(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttreemodel_8cpp_source.html#l00488">uavobjecttreemodel.cpp:488</a></div></div>
 <div class="ttc" id="group___u_a_v_object_browser_plugin_html_ga5ae4647be88003018c5023b9a603aea7"><div class="ttname"><a href="group___u_a_v_object_browser_plugin.html#ga5ae4647be88003018c5023b9a603aea7">HighLightManager::updateHighlight</a></div><div class="ttdeci">void updateHighlight(TreeItem *)</div></div>

@@ -62,7 +62,7 @@ var group___scope_plugin =
       [ "createStandard", "group___scope_plugin.html#ga1900e4d813aed6169f83d1d83c3746e3", null ]
     ] ],
     [ "ScopeGadget", "class_scope_gadget.html", [
-      [ "ScopeGadget", "group___scope_plugin.html#ga3f75e488a9369b654162e789b9f7d4c8", null ],
+      [ "ScopeGadget", "group___scope_plugin.html#ga1799d330213eac4bf22f6672cb72ebb1", null ],
       [ "~ScopeGadget", "group___scope_plugin.html#ga814c8fd9020778e2cb89a7ab8a49995b", null ],
       [ "context", "group___scope_plugin.html#gad13cd805d94869e729a8eb14728e2551", null ],
       [ "contextHelpId", "group___scope_plugin.html#gad4bf2378223ce3ef188714a3ce9d9fb3", null ],
@@ -70,7 +70,7 @@ var group___scope_plugin =
       [ "widget", "group___scope_plugin.html#ga64f4c7f063a7d85c79728a770d411cb2", null ]
     ] ],
     [ "ScopeGadgetConfiguration", "class_scope_gadget_configuration.html", [
-      [ "ScopeGadgetConfiguration", "group___scope_plugin.html#ga08c3c3b7c00b5fca9d78f97f6ae66381", null ],
+      [ "ScopeGadgetConfiguration", "group___scope_plugin.html#gaf71d11d6c1aa1be8fa0d3cbe2854a4f4", null ],
       [ "~ScopeGadgetConfiguration", "group___scope_plugin.html#ga3a4bf5369afe5c90183e5de5b9a64c99", null ],
       [ "applyGuiConfiguration", "group___scope_plugin.html#gaa68457b9b187faa4190e2f5d1343cbbb", null ],
       [ "clone", "group___scope_plugin.html#ga85df073ffa0cd27035a937df7c2cff8e", null ],
@@ -78,7 +78,7 @@ var group___scope_plugin =
       [ "saveConfig", "group___scope_plugin.html#ga1019b17dbc40bb39cb4deb12fe85912e", null ]
     ] ],
     [ "ScopeGadgetFactory", "class_scope_gadget_factory.html", [
-      [ "ScopeGadgetFactory", "group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60", null ],
+      [ "ScopeGadgetFactory", "group___scope_plugin.html#ga4f3b84011654f09b2c752a11f78b6287", null ],
       [ "~ScopeGadgetFactory", "group___scope_plugin.html#gae7d925002f23646412ea50bf0a6c1658", null ],
       [ "createConfiguration", "group___scope_plugin.html#gacbb08116cc0c7390601e30b6cfde0cba", null ],
       [ "createGadget", "group___scope_plugin.html#ga38da87ae88b0f1bd3ae63e997528ed56", null ],
@@ -93,7 +93,7 @@ var group___scope_plugin =
         [ "UR_MEAN", "group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affea43e3a9f89e27568aa426874ed469620a", null ],
         [ "UR_MATHFUNCTION", "group___scope_plugin.html#ggabc55f54668fc1565f24893b44bc2affeab9a9633c8bc6a72c30f2a2962ff1e882", null ]
       ] ],
-      [ "ScopeGadgetOptionsPage", "group___scope_plugin.html#ga3680539fc8bb7716884d7e3da9caff3a", null ],
+      [ "ScopeGadgetOptionsPage", "group___scope_plugin.html#gafb2b8d53be95c10579797723dbbba6c5", null ],
       [ "apply", "group___scope_plugin.html#gaf046ff419274a440bbca457fd018c3e1", null ],
       [ "createPage", "group___scope_plugin.html#ga4032bc264c49c13a4bf81d5835a33206", null ],
       [ "finish", "group___scope_plugin.html#ga106935101fc319a034138e2c37c02f8c", null ]
@@ -103,7 +103,7 @@ var group___scope_plugin =
       [ "label", "group___scope_plugin.html#gadd46f1edfb468453018c231b7a1e92f2", null ]
     ] ],
     [ "ScopeGadgetWidget", "class_scope_gadget_widget.html", [
-      [ "ScopeGadgetWidget", "group___scope_plugin.html#ga2810fbb794c4531b885259a5100bcf79", null ],
+      [ "ScopeGadgetWidget", "group___scope_plugin.html#gae4efc4e800b665181a3d093c831813ec", null ],
       [ "~ScopeGadgetWidget", "group___scope_plugin.html#gaa4f8465d4475c6035056db0bb194b9fa", null ],
       [ "addLegend", "group___scope_plugin.html#ga3f88f383dc322a2516c1e6b874e341a0", null ],
       [ "clearPlotWidget", "group___scope_plugin.html#ga9a19de9754adbab7df27b7db75348346", null ],
@@ -512,11 +512,11 @@ var group___scope_plugin =
     [ "Scatterplot2dScopeConfig", "group___scope_plugin.html#ga3f0c68575d63ef6831f8e28d5835e056", null ],
     [ "Scatterplot2dScopeConfig", "group___scope_plugin.html#gab4f886463a61e05057f4fc3043b08f9e", null ],
     [ "ScatterplotData", "group___scope_plugin.html#ga1e171be371a5e44f814dc012e182f99b", null ],
-    [ "ScopeGadget", "group___scope_plugin.html#ga3f75e488a9369b654162e789b9f7d4c8", null ],
-    [ "ScopeGadgetConfiguration", "group___scope_plugin.html#ga08c3c3b7c00b5fca9d78f97f6ae66381", null ],
-    [ "ScopeGadgetFactory", "group___scope_plugin.html#gace4d87876bb88a527c473e6f363a4a60", null ],
-    [ "ScopeGadgetOptionsPage", "group___scope_plugin.html#ga3680539fc8bb7716884d7e3da9caff3a", null ],
-    [ "ScopeGadgetWidget", "group___scope_plugin.html#ga2810fbb794c4531b885259a5100bcf79", null ],
+    [ "ScopeGadget", "group___scope_plugin.html#ga1799d330213eac4bf22f6672cb72ebb1", null ],
+    [ "ScopeGadgetConfiguration", "group___scope_plugin.html#gaf71d11d6c1aa1be8fa0d3cbe2854a4f4", null ],
+    [ "ScopeGadgetFactory", "group___scope_plugin.html#ga4f3b84011654f09b2c752a11f78b6287", null ],
+    [ "ScopeGadgetOptionsPage", "group___scope_plugin.html#gafb2b8d53be95c10579797723dbbba6c5", null ],
+    [ "ScopeGadgetWidget", "group___scope_plugin.html#gae4efc4e800b665181a3d093c831813ec", null ],
     [ "SeriesPlotData", "group___scope_plugin.html#ga82d1767158aa15b3c4306bc74960692e", null ],
     [ "setBinWidth", "group___scope_plugin.html#ga692ce41b341567916c0ff62a541b4138", null ],
     [ "setCurve", "group___scope_plugin.html#gac306ab453dd4daa43ebd0565b7f73783", null ],

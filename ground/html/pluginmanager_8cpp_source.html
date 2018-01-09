@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> one-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a822492851bc8d91f2e82960fbf6303ff">name</a>() &lt; two-&gt;<a class="code" href="class_extension_system_1_1_plugin_spec.html#a822492851bc8d91f2e82960fbf6303ff">name</a>();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="class_extension_system_1_1_plugin_manager.html">PluginManager</a> *PluginManager::m_instance = 0;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="class_extension_system_1_1_plugin_manager.html">PluginManager</a> *PluginManager::m_instance = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<a class="code" href="class_extension_system_1_1_plugin_manager.html">PluginManager</a> *PluginManager::instance()</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;PluginManager::~PluginManager()</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">delete</span> d;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    d = 0;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    d = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">void</span> PluginManager::addObject(QObject *obj)</div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="stringliteral">{</span></div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="stringliteral">    {</span></div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="stringliteral">        QWriteLocker lock(&amp;(q-&gt;m_lock));</span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="stringliteral">        if (obj == 0) {</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="stringliteral">        if (obj == nullptr) {</span></div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="stringliteral">            qWarning() &lt;&lt; &quot;PluginManagerPrivate::addObject(): trying to add null object&quot;;</span></div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="stringliteral">            return;</span></div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="stringliteral">        }</span></div>
@@ -382,7 +382,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00530"></a><span class="lineno"><a class="line" href="group__extensionsystem.html#gabc89590fec7337cbde0b99711da09329">  530</a></span>&#160;<span class="stringliteral">void PluginManagerPrivate::removeObject(QObject *obj)</span></div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="stringliteral">{</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="stringliteral">    if (obj == 0) {</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="stringliteral">    if (obj == nullptr) {</span></div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="stringliteral">        qWarning() &lt;&lt; &quot;PluginManagerPrivate::removeObject(): trying to remove null object&quot;;</span></div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="stringliteral">        return;</span></div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="stringliteral">    }</span></div>
@@ -566,7 +566,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="stringliteral">            }</span></div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="stringliteral">        }</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="stringliteral">    }</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="stringliteral">    return 0;</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="stringliteral">    return nullptr;</span></div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="stringliteral">}</span></div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00743"></a><span class="lineno"><a class="line" href="group__extensionsystem.html#ga30a333d4d21ef402dbaca5f3142ac666">  743</a></span>&#160;<span class="stringliteral">PluginSpec *PluginManagerPrivate::pluginByName(const QString &amp;name) const</span></div>
@@ -574,7 +574,7 @@ $(document).ready(function(){initNavTree('pluginmanager_8cpp_source.html','');})
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="stringliteral">    foreach (PluginSpec *spec, pluginSpecs)</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="stringliteral">        if (spec-&gt;name() == name)</span></div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="stringliteral">            return spec;</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="stringliteral">    return 0;</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="stringliteral">    return nullptr;</span></div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="stringliteral">}</span></div>
 <div class="ttc" id="group__extensionsystem_html_gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b"><div class="ttname"><a href="group__extensionsystem.html#gga06fc87d81c62e9abb8790b6e5713c55ba7aa36ea7ef68ed42b8cbbc435990537b">debugLeaks</a></div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00050">pluginmanager.cpp:50</a></div></div>
 <div class="ttc" id="group__extensionsystem_html_ga4d9a60e36e831bdafbe905ae247b3cf3"><div class="ttname"><a href="group__extensionsystem.html#ga4d9a60e36e831bdafbe905ae247b3cf3">ExtensionSystem::Internal::PluginManagerPrivate::addObject</a></div><div class="ttdeci">void addObject(QObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8cpp_source.html#l00505">pluginmanager.cpp:505</a></div></div>

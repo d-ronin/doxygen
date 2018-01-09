@@ -1,6 +1,6 @@
 var class_g_c_s_control_gadget_options_page =
 [
-    [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga133610c0fce1048e9c145e0e6f4ff7b8", null ],
+    [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga399b933b8ae9b0ae309de6ee63bec0a5", null ],
     [ "~GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga1dbf3c631b0254ac184bfa202ea00b17", null ],
     [ "apply", "group___g_c_s_control_gadget_plugin.html#gad8fa5da9631986d02639e5b520028c91", null ],
     [ "axesValues", "group___g_c_s_control_gadget_plugin.html#ga2875164469455c55a959fcd1f56b0e6d", null ],

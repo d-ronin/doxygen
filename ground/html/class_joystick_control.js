@@ -1,6 +1,6 @@
 var class_joystick_control =
 [
-    [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga77373f65ad7f3da249f63ebd5d64a736", null ],
+    [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga1dd1a66c2f90aa3d78d0d17d88fc54be", null ],
     [ "~JoystickControl", "group___g_c_s_control_gadget_plugin.html#gafb2a1d3ac608e7378bba52d774b825d0", null ],
     [ "changePosition", "group___g_c_s_control_gadget_plugin.html#ga38032aee1ab31edefa56c0274624604c", null ],
     [ "mouseMoveEvent", "group___g_c_s_control_gadget_plugin.html#ga4522aafc5f2b7dae7d64ac4368189272", null ],

@@ -1,6 +1,6 @@
 var class_utils_1_1_qt_color_button =
 [
-    [ "QtColorButton", "class_utils_1_1_qt_color_button.html#a862470cc17ccbdbf69d12e6b3baffd3f", null ],
+    [ "QtColorButton", "class_utils_1_1_qt_color_button.html#a235fb6760c3c4ff932ee5e1fa4288b32", null ],
     [ "~QtColorButton", "class_utils_1_1_qt_color_button.html#ab59d7fd36eca0eb26a51569377968efc", null ],
     [ "color", "class_utils_1_1_qt_color_button.html#a92e2a2c0c46041074dddcbdc67ae682a", null ],
     [ "colorChanged", "class_utils_1_1_qt_color_button.html#a795089187f11a4615620dafa852246c9", null ],

@@ -1,6 +1,6 @@
 var class_model_view_gadget_widget =
 [
-    [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga7b299b7e0c58f0bca02228b6376370a6", null ],
+    [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga2e8d189ad18421cb9164d86ee072866c", null ],
     [ "~ModelViewGadgetWidget", "group___model_view_plugin.html#gafd8359344ca9b61a21a93e1256e9247a", null ],
     [ "reloadScene", "group___model_view_plugin.html#gad031b977be54f4bd5243fa4d6f846f68", null ],
     [ "setAcFilename", "group___model_view_plugin.html#ga61a44ab1922172cfaee66b78fde29538", null ],

@@ -6,7 +6,7 @@ var class_i_p_connection_options_page =
       [ "ColumnPort", "group___i_p_conn_plugin.html#gga4529d26796dea9c2af2f62f82b63f702a504966fbf5fbc5e425d04aabb9abc24b", null ],
       [ "ColumnCount", "group___i_p_conn_plugin.html#gga4529d26796dea9c2af2f62f82b63f702aee2b019f55cecbe5be4d60f87d52ef13", null ]
     ] ],
-    [ "IPConnectionOptionsPage", "group___i_p_conn_plugin.html#ga7fe4f84805a55e7cab17b8cfa5a1e10d", null ],
+    [ "IPConnectionOptionsPage", "group___i_p_conn_plugin.html#ga2bd99334a33f466c4083a4bfc3e339ed", null ],
     [ "~IPConnectionOptionsPage", "group___i_p_conn_plugin.html#ga89bfcd906de2d5048fb1ecc9abef3745", null ],
     [ "apply", "group___i_p_conn_plugin.html#ga50b363d50f6f4d957dc0eca54e3cf7ba", null ],
     [ "availableDevChanged", "group___i_p_conn_plugin.html#gab8671eed45ad523119da2e0b515de91f", null ],

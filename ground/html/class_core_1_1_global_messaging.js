@@ -1,6 +1,6 @@
 var class_core_1_1_global_messaging =
 [
-    [ "GlobalMessaging", "group___core_plugin.html#ga38edb7cbf48000dc01e7b3221af4f2e5", null ],
+    [ "GlobalMessaging", "group___core_plugin.html#ga14431cd298499d35d25cd5e20934efd6", null ],
     [ "addErrorMessage", "group___core_plugin.html#ga6a4a87e17bd2e18c6edfdcfcf2c8110f", null ],
     [ "addInfoMessage", "group___core_plugin.html#gab22b7c8008fd1803cb7c9454e9b0b6ec", null ],
     [ "addMessage", "group___core_plugin.html#ga84d8602d51725819aa01a780228ec680", null ],

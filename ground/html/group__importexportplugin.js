@@ -3,7 +3,7 @@ var group__importexportplugin =
     [ "Ui", "namespace_ui.html", null ],
     [ "XmlConfig", "class_xml_config.html", null ],
     [ "ImportExportDialog", "class_import_export_dialog.html", [
-      [ "ImportExportDialog", "class_import_export_dialog.html#a17dc61f63ec24be1769d63152c116f16", null ],
+      [ "ImportExportDialog", "class_import_export_dialog.html#a780b592b3e493473b51d2f1b0591759e", null ],
       [ "~ImportExportDialog", "class_import_export_dialog.html#a6cfd90d46c386291e6a6f2d952aa3682", null ],
       [ "changeEvent", "class_import_export_dialog.html#ada03b1366da59449ce7d8b2e38f7a4b5", null ]
     ] ],
@@ -14,7 +14,7 @@ var group__importexportplugin =
       [ "widget", "class_import_export_gadget.html#a048a83f292ca28210ab659bed378f33b", null ]
     ] ],
     [ "ImportExportGadgetWidget", "class_import_export_gadget_widget.html", [
-      [ "ImportExportGadgetWidget", "group__importexportplugin.html#gaa6f8e207b497782f1c00bebfcdf362e6", null ],
+      [ "ImportExportGadgetWidget", "group__importexportplugin.html#ga2906dacdc0972d4344cbb740bc190da7", null ],
       [ "~ImportExportGadgetWidget", "group__importexportplugin.html#ga96b1b166720e190f43ce5a83b0440ba8", null ],
       [ "changeEvent", "group__importexportplugin.html#gac24ae66f22b367d4a3854a11092b6732", null ],
       [ "done", "class_import_export_gadget_widget.html#a56d9e25717ccdedcbc394a2cec2c7e58", null ]
@@ -22,7 +22,7 @@ var group__importexportplugin =
     [ "ImportExportPlugin", "class_import_export_plugin.html", null ],
     [ "changeEvent", "group__importexportplugin.html#gac24ae66f22b367d4a3854a11092b6732", null ],
     [ "ImportExportGadget", "group__importexportplugin.html#ga449e9c18b4cda73ccd909194aa3485e5", null ],
-    [ "ImportExportGadgetWidget", "group__importexportplugin.html#gaa6f8e207b497782f1c00bebfcdf362e6", null ],
+    [ "ImportExportGadgetWidget", "group__importexportplugin.html#ga2906dacdc0972d4344cbb740bc190da7", null ],
     [ "loadConfiguration", "group__importexportplugin.html#gaffb56b3fb88f123af21ac597a514345a", null ],
     [ "readXmlFile", "group__importexportplugin.html#gaaac43e2b7105e05bbc6c996a6d1e7944", null ],
     [ "writeXmlFile", "group__importexportplugin.html#ga2e9b6064b59c93e1c7bebdce1a672d68", null ],

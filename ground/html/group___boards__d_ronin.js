@@ -60,7 +60,7 @@ var group___boards__d_ronin =
       [ "shortName", "group___boards__d_ronin.html#gab77c1702f9fca9fc3d0afc7c347c50cf", null ]
     ] ],
     [ "SeppukuConfiguration", "class_seppuku_configuration.html", [
-      [ "SeppukuConfiguration", "group___boards__d_ronin.html#gab1ca4636e436c4ec51512c955233e6cc", null ],
+      [ "SeppukuConfiguration", "group___boards__d_ronin.html#ga98d3babad77e9d27c82f0d8480433fe6", null ],
       [ "~SeppukuConfiguration", "group___boards__d_ronin.html#gabf49660bff7cc41d54f316c52da83988", null ]
     ] ],
     [ "Simulation", "class_simulation.html", [
@@ -76,7 +76,7 @@ var group___boards__d_ronin =
       [ "shortName", "group___boards__d_ronin.html#ga667548fa3df6cebd9ed2ce799000defe", null ]
     ] ],
     [ "SimulationConfiguration", "class_simulation_configuration.html", [
-      [ "SimulationConfiguration", "group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe", null ],
+      [ "SimulationConfiguration", "group___boards__d_ronin.html#ga85e521630b35ce538dbdfcc5b5e25b95", null ],
       [ "~SimulationConfiguration", "group___boards__d_ronin.html#ga0a7a760f2526bdaf15edf40494111d24", null ]
     ] ],
     [ "Sprf3e", "class_sprf3e.html", [
@@ -97,7 +97,7 @@ var group___boards__d_ronin =
       [ "shortName", "group___boards__d_ronin.html#gabdcefdefe02a4e2b58c4374eac9792e1", null ]
     ] ],
     [ "Sprf3eConfiguration", "class_sprf3e_configuration.html", [
-      [ "Sprf3eConfiguration", "group___boards__d_ronin.html#ga370d5bcfe9975c09c4c6253f4acb51d3", null ],
+      [ "Sprf3eConfiguration", "group___boards__d_ronin.html#ga525b85b215b4117809c41e204991e04e", null ],
       [ "~Sprf3eConfiguration", "group___boards__d_ronin.html#ga4edb6819cc8520cb28e1806fae7a3757", null ]
     ] ],
     [ "boardDescription", "group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f", null ],
@@ -156,7 +156,7 @@ var group___boards__d_ronin =
     [ "queryMaxGyroRate", "group___boards__d_ronin.html#ga04477fd4b37b3e1feffc82d83d8c70ef", null ],
     [ "queryMaxGyroRate", "group___boards__d_ronin.html#gaa6b7509b4ea10ec0e8648a4a64c77de4", null ],
     [ "Seppuku", "group___boards__d_ronin.html#ga2d006c6602f4b5232f147f4ff3cb342c", null ],
-    [ "SeppukuConfiguration", "group___boards__d_ronin.html#gab1ca4636e436c4ec51512c955233e6cc", null ],
+    [ "SeppukuConfiguration", "group___boards__d_ronin.html#ga98d3babad77e9d27c82f0d8480433fe6", null ],
     [ "setInputType", "group___boards__d_ronin.html#ga965ced0458c3852cc8526fdca85430c7", null ],
     [ "setInputType", "group___boards__d_ronin.html#ga9b8f0a032528ba2fc0e93c842f4c27ea", null ],
     [ "setInputType", "group___boards__d_ronin.html#ga8de76e925233897e2ec8773f9b2bcdc9", null ],
@@ -168,9 +168,9 @@ var group___boards__d_ronin =
     [ "shortName", "group___boards__d_ronin.html#gaaa7277e6bb2963fc614e4dde1e98d284", null ],
     [ "shortName", "group___boards__d_ronin.html#ga667548fa3df6cebd9ed2ce799000defe", null ],
     [ "Simulation", "group___boards__d_ronin.html#ga5b224cc5b36bcc8eb29689aff223de41", null ],
-    [ "SimulationConfiguration", "group___boards__d_ronin.html#ga9eca4e5ec5f393d196502e2a30ca2cbe", null ],
+    [ "SimulationConfiguration", "group___boards__d_ronin.html#ga85e521630b35ce538dbdfcc5b5e25b95", null ],
     [ "Sprf3e", "group___boards__d_ronin.html#gaf46acc5f43d7fd39338ee2c45b49a602", null ],
-    [ "Sprf3eConfiguration", "group___boards__d_ronin.html#ga370d5bcfe9975c09c4c6253f4acb51d3", null ],
+    [ "Sprf3eConfiguration", "group___boards__d_ronin.html#ga525b85b215b4117809c41e204991e04e", null ],
     [ "~OmnibusF3", "group___boards__d_ronin.html#gaefeecffee670fab2e00efdbe356adbd0", null ],
     [ "~PikoBLX", "group___boards__d_ronin.html#gaf53a6caaedde20333d3de6aa95d21d24", null ],
     [ "~PlayUavOsd", "group___boards__d_ronin.html#ga8c6803ae372778ab44e96b360b5d8c8e", null ],

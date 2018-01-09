@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -132,10 +132,10 @@ $(document).ready(function(){initNavTree('baseview_8cpp_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">   34</a></span>&#160;<a class="code" href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">BaseView::BaseView</a>(QObject *parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga877d060400c2d1fa6d21a10252822957">   34</a></span>&#160;<a class="code" href="group___core_plugin.html#ga877d060400c2d1fa6d21a10252822957">BaseView::BaseView</a>(QObject *parent)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="class_core_1_1_i_view.html">IView</a>(parent)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_viewName(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_widget(0)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_widget(nullptr)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_context(<a class="code" href="class_q_list.html">QList</a>&lt;int&gt;())</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    , m_defaultPosition(<a class="code" href="class_core_1_1_i_view.html">IView</a>::First)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
@@ -192,8 +192,8 @@ $(document).ready(function(){initNavTree('baseview_8cpp_source.html','');});
 <div class="ttc" id="baseview_8h_html"><div class="ttname"><a href="baseview_8h.html">baseview.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga010e75c3fb8e47962937ebeec0d133f7"><div class="ttname"><a href="group___core_plugin.html#ga010e75c3fb8e47962937ebeec0d133f7">Core::BaseView::setWidget</a></div><div class="ttdeci">QWidget * setWidget(QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00073">baseview.cpp:73</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga4cd8b9c4d6cf47fa0ece91c8783a3c17"><div class="ttname"><a href="group___core_plugin.html#ga4cd8b9c4d6cf47fa0ece91c8783a3c17">Core::BaseView::setDefaultPosition</a></div><div class="ttdeci">void setDefaultPosition(IView::ViewPosition position)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00085">baseview.cpp:85</a></div></div>
+<div class="ttc" id="group___core_plugin_html_ga877d060400c2d1fa6d21a10252822957"><div class="ttname"><a href="group___core_plugin.html#ga877d060400c2d1fa6d21a10252822957">Core::BaseView::BaseView</a></div><div class="ttdeci">BaseView(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00034">baseview.cpp:34</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga0b87986502d132344f08be851cdb15d2"><div class="ttname"><a href="group___core_plugin.html#ga0b87986502d132344f08be851cdb15d2">Core::BaseView::~BaseView</a></div><div class="ttdeci">~BaseView()</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00043">baseview.cpp:43</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga5d80afbd92e0f0a0a53764a87f8f8c1b"><div class="ttname"><a href="group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b">Core::BaseView::BaseView</a></div><div class="ttdeci">BaseView(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00034">baseview.cpp:34</a></div></div>
 <div class="ttc" id="class_core_1_1_i_view_html"><div class="ttname"><a href="class_core_1_1_i_view.html">Core::IView</a></div><div class="ttdef"><b>Definition:</b> <a href="iview_8h_source.html#l00037">iview.h:37</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gad9c37de2ece6e6152bdb4ceadf0e9618"><div class="ttname"><a href="group___core_plugin.html#gad9c37de2ece6e6152bdb4ceadf0e9618">Core::BaseView::setUniqueViewName</a></div><div class="ttdeci">void setUniqueViewName(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00068">baseview.cpp:68</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gab66e855b09d536c08790f53cdd26a853"><div class="ttname"><a href="group___core_plugin.html#gab66e855b09d536c08790f53cdd26a853">Core::BaseView::uniqueViewName</a></div><div class="ttdeci">const char * uniqueViewName() const </div><div class="ttdef"><b>Definition:</b> <a href="baseview_8cpp_source.html#l00058">baseview.cpp:58</a></div></div>

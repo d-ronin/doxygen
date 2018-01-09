@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -143,10 +143,10 @@ $(document).ready(function(){initNavTree('histogramplotdata_8cpp_source.html',''
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga72e50dd5614c61d39ec10aa120c47d3b">   48</a></span>&#160;<a class="code" href="group___scope_plugin.html#ga72e50dd5614c61d39ec10aa120c47d3b">HistogramData::HistogramData</a>(QString uavObject, QString uavField, <span class="keywordtype">double</span> binWidth,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                             uint numberOfBins)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    : <a class="code" href="class_plot2d_data.html">Plot2dData</a>(uavObject, uavField)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    , histogram(0)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    , histogramBins(0)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    , histogramInterval(0)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    , intervalSeriesData(0)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    , histogram(nullptr)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    , histogramBins(nullptr)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    , histogramInterval(nullptr)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    , intervalSeriesData(nullptr)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this-&gt;binWidth = binWidth;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this-&gt;numberOfBins = numberOfBins;</div>

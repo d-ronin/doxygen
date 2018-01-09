@@ -1,6 +1,6 @@
 var class_dial_gadget_widget =
 [
-    [ "DialGadgetWidget", "group___dial_plugin.html#gac5397a4cc992266439aa3e8b1513c209", null ],
+    [ "DialGadgetWidget", "group___dial_plugin.html#ga12dcd8870869edf79fb0d8b030833067", null ],
     [ "~DialGadgetWidget", "group___dial_plugin.html#ga3e34cc3b776a627597b4c4823b358741", null ],
     [ "connectNeedles", "group___dial_plugin.html#ga4b039739f70d00651a6ca39cf5a1997a", null ],
     [ "enableSmoothUpdates", "group___dial_plugin.html#ga6b6e527e9c2516f6dec2f6332a288a9f", null ],

@@ -56,7 +56,7 @@ var class_config_input_widget =
       [ "wizardFinish", "group___config_plugin.html#ggaff6f51e26da0007601686dea42662026a05c6d240437bb431db8eab662f682479", null ],
       [ "wizardNone", "group___config_plugin.html#ggaff6f51e26da0007601686dea42662026aaaa99fe9278c167cddeef5610d52ea7a", null ]
     ] ],
-    [ "ConfigInputWidget", "group___config_plugin.html#ga5453669d3da8b5752b88e14cfca3ba03", null ],
+    [ "ConfigInputWidget", "group___config_plugin.html#ga45b4e4dd7daef8b4b8f846a20b19915c", null ],
     [ "~ConfigInputWidget", "group___config_plugin.html#gaa2ae4d78db5c283094de22747cd958b8", null ],
     [ "addMessage", "group___config_plugin.html#ga9cff0dc3fe7dfedf519e70c565cfe4e9", null ],
     [ "addWarning", "group___config_plugin.html#gabe2e73b6d14d8cf861680289d3318509", null ],

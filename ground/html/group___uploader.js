@@ -93,7 +93,7 @@ var group___uploader =
         [ "STEP_DONE", "group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638ad3cbd49ec08e901cdc5e1f762d50a524", null ],
         [ "STEP_NUM", "group___uploader.html#gga77a98a88ccfc2d6f0236ec9e053da638a28a83fcd58567ee4e9c99f15488da7e6", null ]
       ] ],
-      [ "UpgradeAssistantDialog", "group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90", null ],
+      [ "UpgradeAssistantDialog", "group___uploader.html#ga68776108e582fdcef209c8ae430c918e", null ],
       [ "~UpgradeAssistantDialog", "group___uploader.html#ga86201ec876be2035701404a6f0bd6a2d", null ],
       [ "closeEvent", "group___uploader.html#ga321b8c6fadb920925f7fad0fe0379c87", null ],
       [ "onStepChanged", "group___uploader.html#ga245cc1bb639b28a773705eb968b6b770", null ],
@@ -101,20 +101,20 @@ var group___uploader =
       [ "setOperatingMode", "group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d", null ]
     ] ],
     [ "UploaderGadget", "classuploader_1_1_uploader_gadget.html", [
-      [ "UploaderGadget", "group___uploader.html#ga5da04d2657da81f1ed94dc7127d5e8a0", null ],
+      [ "UploaderGadget", "group___uploader.html#gabd5b662f09ee8130556f49b4d9bd0eab", null ],
       [ "~UploaderGadget", "group___uploader.html#ga9de9e55dbc443089543487afbb18c4ce", null ],
       [ "loadConfiguration", "group___uploader.html#ga2e0bc07715e77fe2da83fa0f1ffe7ac1", null ],
       [ "widget", "group___uploader.html#ga05b0bbbcc13abdff51863b5259859d65", null ]
     ] ],
     [ "UploaderGadgetFactory", "classuploader_1_1_uploader_gadget_factory.html", [
-      [ "UploaderGadgetFactory", "group___uploader.html#ga33e544ad20fa638bbf34e7a461d3306e", null ],
+      [ "UploaderGadgetFactory", "group___uploader.html#ga5f03e3ffd98c0e16c0ae9cd0d70ebad6", null ],
       [ "~UploaderGadgetFactory", "group___uploader.html#ga7509287bf0bfbf3b364591ac90155886", null ],
       [ "createConfiguration", "group___uploader.html#gada950b4297da08d576452a67d7c42f59", null ],
       [ "createGadget", "group___uploader.html#gaec0b67dc3c2b6c12df29c01be93457fb", null ],
       [ "newBoardSeen", "group___uploader.html#ga351bbb7dae5032910e0681a86a1a4be2", null ]
     ] ],
     [ "UploaderGadgetWidget", "classuploader_1_1_uploader_gadget_widget.html", [
-      [ "UploaderGadgetWidget", "group___uploader.html#ga7065a066176fac2b996efaea8fc29a36", null ],
+      [ "UploaderGadgetWidget", "group___uploader.html#ga9a0bf1af93f4208e065382a88dda1b58", null ],
       [ "~UploaderGadgetWidget", "group___uploader.html#ga81ab4c8e328f917680b38093e9c69e6c", null ],
       [ "active", "group___uploader.html#ga5040dcbf920da570c74a486743231d5d", null ],
       [ "enteredLoader", "group___uploader.html#ga87d448f5964c57b1342f16f75bedc721", null ],
@@ -264,10 +264,10 @@ var group___uploader =
     [ "ResetDevice", "group___uploader.html#gafbdc3dede843764690ebd5bc074ff5dd", null ],
     [ "run", "group___uploader.html#gadb19927303aa24b5505dce3adbb532a2", null ],
     [ "setOperatingMode", "group___uploader.html#ga523a8cbb5c228bfb1678274a09c4b91d", null ],
-    [ "UpgradeAssistantDialog", "group___uploader.html#ga0e47da6849f0b888ebd949fcfec77a90", null ],
-    [ "UploaderGadget", "group___uploader.html#ga5da04d2657da81f1ed94dc7127d5e8a0", null ],
-    [ "UploaderGadgetFactory", "group___uploader.html#ga33e544ad20fa638bbf34e7a461d3306e", null ],
-    [ "UploaderGadgetWidget", "group___uploader.html#ga7065a066176fac2b996efaea8fc29a36", null ],
+    [ "UpgradeAssistantDialog", "group___uploader.html#ga68776108e582fdcef209c8ae430c918e", null ],
+    [ "UploaderGadget", "group___uploader.html#gabd5b662f09ee8130556f49b4d9bd0eab", null ],
+    [ "UploaderGadgetFactory", "group___uploader.html#ga5f03e3ffd98c0e16c0ae9cd0d70ebad6", null ],
+    [ "UploaderGadgetWidget", "group___uploader.html#ga9a0bf1af93f4208e065382a88dda1b58", null ],
     [ "UploadPartitionThreaded", "group___uploader.html#gac7822936396e87504217ecce5b21e739", null ],
     [ "widget", "group___uploader.html#ga05b0bbbcc13abdff51863b5259859d65", null ],
     [ "WipePartition", "group___uploader.html#gaa7eb45d02e2942f295cbf312ca1c9c0a", null ],

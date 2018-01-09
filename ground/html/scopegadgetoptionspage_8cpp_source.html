@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,10 +142,10 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8cpp_source.htm
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;qpalette.h&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#ga3680539fc8bb7716884d7e3da9caff3a">   44</a></span>&#160;<a class="code" href="group___scope_plugin.html#ga3680539fc8bb7716884d7e3da9caff3a">ScopeGadgetOptionsPage::ScopeGadgetOptionsPage</a>(<a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *config, QObject *parent)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___scope_plugin.html#gafb2b8d53be95c10579797723dbbba6c5">   44</a></span>&#160;<a class="code" href="group___scope_plugin.html#gafb2b8d53be95c10579797723dbbba6c5">ScopeGadgetOptionsPage::ScopeGadgetOptionsPage</a>(<a class="code" href="class_scope_gadget_configuration.html">ScopeGadgetConfiguration</a> *config, QObject *parent)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : IOptionsPage(parent)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    , m_config(config)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    , selectedItem(0)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    , selectedItem(nullptr)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// nothing to do here...</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
@@ -425,7 +425,7 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8cpp_source.htm
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">bool</span> parseOK = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    QListWidgetItem *listItem = options_page-&gt;lst2dCurves-&gt;currentItem();</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (listItem == 0)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (listItem == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">// Fetch data from teh listItem. The data is stored by user role + offset</span></div>
@@ -695,7 +695,7 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8cpp_source.htm
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordflow">if</span> (listItem == selectedItem) {</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        listItem-&gt;setSelected(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        options_page-&gt;lst2dCurves-&gt;setCurrentRow(-1);</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        selectedItem = 0;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        selectedItem = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        selectedItem = listItem;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    }</div>
@@ -727,7 +727,6 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8cpp_source.htm
 <div class="ttc" id="histogramscopeconfig_8h_html"><div class="ttname"><a href="histogramscopeconfig_8h.html">histogramscopeconfig.h</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_ggac3cffd2a84d02f4ebfba6df970d03e97af135d74488370bcdd47ee9744b513263"><div class="ttname"><a href="group___scope_plugin.html#ggac3cffd2a84d02f4ebfba6df970d03e97af135d74488370bcdd47ee9744b513263">Scatterplot2dScopeConfig::TIMESERIES2D</a></div><div class="ttdef"><b>Definition:</b> <a href="scatterplotscopeconfig_8h_source.html#l00042">scatterplotscopeconfig.h:42</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_gad77c6650f45b62d917a93db28ddbcc56"><div class="ttname"><a href="group___scope_plugin.html#gad77c6650f45b62d917a93db28ddbcc56">ScopeGadgetConfiguration::getScope</a></div><div class="ttdeci">ScopeConfig * getScope()</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetconfiguration_8h_source.html#l00050">scopegadgetconfiguration.h:50</a></div></div>
-<div class="ttc" id="group___scope_plugin_html_ga3680539fc8bb7716884d7e3da9caff3a"><div class="ttname"><a href="group___scope_plugin.html#ga3680539fc8bb7716884d7e3da9caff3a">ScopeGadgetOptionsPage::ScopeGadgetOptionsPage</a></div><div class="ttdeci">ScopeGadgetOptionsPage(ScopeGadgetConfiguration *config, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8cpp_source.html#l00044">scopegadgetoptionspage.cpp:44</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_gga4c227eca53956a4dda5ee8877b7868c6a1412daaa24267bf3b82a82d8b8427238"><div class="ttname"><a href="group___scope_plugin.html#gga4c227eca53956a4dda5ee8877b7868c6a1412daaa24267bf3b82a82d8b8427238">SpectrogramScopeConfig::VIBRATIONANALYSIS</a></div><div class="ttdef"><b>Definition:</b> <a href="spectrogramscopeconfig_8h_source.html#l00042">spectrogramscopeconfig.h:42</a></div></div>
 <div class="ttc" id="class_u_a_v_object_field_html"><div class="ttname"><a href="class_u_a_v_object_field.html">UAVObjectField</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8h_source.html#l00040">uavobjectfield.h:40</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gac05d3c2bd0fd07947707562f66ddfc18"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">UAVObject::isSingleInstance</a></div><div class="ttdeci">bool isSingleInstance()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00125">uavobject.cpp:125</a></div></div>
@@ -760,6 +759,7 @@ $(document).ready(function(){initNavTree('scopegadgetoptionspage_8cpp_source.htm
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab285ecd0299f701264d624cad6e51ef1"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">UAVObjectManager::getNumInstances</a></div><div class="ttdeci">qint32 getNumInstances(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00279">uavobjectmanager.cpp:279</a></div></div>
 <div class="ttc" id="group___scope_plugin_html_ggac3cffd2a84d02f4ebfba6df970d03e97a8ac04199dbef37beba1b81fe42278b3a"><div class="ttname"><a href="group___scope_plugin.html#ggac3cffd2a84d02f4ebfba6df970d03e97a8ac04199dbef37beba1b81fe42278b3a">Scatterplot2dScopeConfig::SERIES2D</a></div><div class="ttdef"><b>Definition:</b> <a href="scatterplotscopeconfig_8h_source.html#l00042">scatterplotscopeconfig.h:42</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gae6f6111691f2ea395e6b87ea3b76af01"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae6f6111691f2ea395e6b87ea3b76af01">UAVObjectField::getType</a></div><div class="ttdeci">FieldType getType() const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8cpp_source.html#l00556">uavobjectfield.cpp:556</a></div></div>
+<div class="ttc" id="group___scope_plugin_html_gafb2b8d53be95c10579797723dbbba6c5"><div class="ttname"><a href="group___scope_plugin.html#gafb2b8d53be95c10579797723dbbba6c5">ScopeGadgetOptionsPage::ScopeGadgetOptionsPage</a></div><div class="ttdeci">ScopeGadgetOptionsPage(ScopeGadgetConfiguration *config, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="scopegadgetoptionspage_8cpp_source.html#l00044">scopegadgetoptionspage.cpp:44</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,7 +1,7 @@
 var class_g_p_s_parser =
 [
     [ "~GPSParser", "group___g_p_s_gadget_plugin.html#ga6773ae49e6fecc274191f0d0e29294d8", null ],
-    [ "GPSParser", "group___g_p_s_gadget_plugin.html#ga15bb435154bfad7f732bc090c496915e", null ],
+    [ "GPSParser", "group___g_p_s_gadget_plugin.html#ga630005849854d80e5bbc8e8054c7ccef", null ],
     [ "datetime", "group___g_p_s_gadget_plugin.html#ga95a0ee3f47dc682adcdfd74c2d06c616", null ],
     [ "dop", "group___g_p_s_gadget_plugin.html#ga53672aaf2037c7a9b389c15e69bc4d80", null ],
     [ "fixmode", "group___g_p_s_gadget_plugin.html#ga145563ebabd7ea6b135bad3d05cb9085", null ],

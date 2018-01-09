@@ -1,6 +1,6 @@
 var class_serial_plugin_configuration =
 [
-    [ "SerialPluginConfiguration", "group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e", null ],
+    [ "SerialPluginConfiguration", "group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640", null ],
     [ "~SerialPluginConfiguration", "group___serial_plugin.html#ga02088820254dad5d594d652f0d1ac556", null ],
     [ "clone", "group___serial_plugin.html#ga894fb8aa5280cdfb94f844d09f21e64d", null ],
     [ "reconnect", "group___serial_plugin.html#ga814b165a291785fc740353fafdfff545", null ],

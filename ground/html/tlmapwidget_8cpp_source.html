@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>mapcontrol</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb">   41</a></span>&#160;    <a class="code" href="group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb">TLMapWidget::TLMapWidget</a>(QWidget *parent, <a class="code" href="classmapcontrol_1_1_configuration.html">Configuration</a> *config) : QGraphicsView(parent),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        configuration(config),UAV(0),GPS(0),Home(0),followmouse(true),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        compassRose(0),windCompass(0),showuav(false),showhome(false),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        diagTimer(0),diagGraphItem(0),showDiag(false),overlayOpacity(1),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        windspeedTxt(0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228">   41</a></span>&#160;    <a class="code" href="group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228">TLMapWidget::TLMapWidget</a>(QWidget *parent, <a class="code" href="classmapcontrol_1_1_configuration.html">Configuration</a> *config) : QGraphicsView(parent),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        configuration(config),UAV(nullptr),GPS(nullptr),Home(nullptr),followmouse(true),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        compassRose(nullptr),windCompass(nullptr),showuav(false),showhome(false),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        diagTimer(nullptr),diagGraphItem(nullptr),showDiag(false),overlayOpacity(1),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        windspeedTxt(nullptr)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        this-&gt;setScene(<span class="keyword">new</span> QGraphicsScene(<span class="keyword">this</span>));</div>
@@ -182,21 +182,21 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        showDiag=value;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(!showDiag)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem!=0)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keyword">delete</span> diagGraphItem;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                diagGraphItem=0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                diagGraphItem=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span>(diagTimer!=0)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span>(diagTimer!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keyword">delete</span> diagTimer;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                diagTimer=0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                diagTimer=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>!=0)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keyword">delete</span> <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>=0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">else</span></div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            diagTimer=<span class="keyword">new</span> QTimer();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            connect(diagTimer,SIGNAL(timeout()),<span class="keyword">this</span>,SLOT(diagRefresh()));</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            diagTimer-&gt;start(500);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>==0)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>==<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>=<span class="keyword">new</span> <a class="code" href="classmapcontrol_1_1_g_p_s_item.html">GPSItem</a>(map,<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>-&gt;setParentItem(map);</div>
@@ -216,9 +216,9 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#gabea2233ab3c4820a1ab8c85f8d53c255">  117</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___t_l_map_widget.html#gabea2233ab3c4820a1ab8c85f8d53c255">TLMapWidget::SetUavPic</a>(QString UAVPic)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>!=0)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>-&gt;SetUavPic(UAVPic);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>!=0)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="group___t_l_map_widget.html#gae64fbee5691d8097a981ef642e31d44c">GPS</a>-&gt;SetUavPic(UAVPic);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group___t_l_map_widget.html#ga257d1baefc299cc15d2b81579f6e2279">  179</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___t_l_map_widget.html#ga257d1baefc299cc15d2b81579f6e2279">TLMapWidget::SetShowUAV</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;value)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>(value &amp;&amp; <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>==0)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>(value &amp;&amp; <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>==<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        {</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>=<span class="keyword">new</span> <a class="code" href="classmapcontrol_1_1_u_a_v_item.html">UAVItem</a>(map,<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>-&gt;setParentItem(map);</div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!value)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>!=0)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keyword">delete</span> <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <a class="code" href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">UAV</a>=NULL;</div>
@@ -614,7 +614,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        <span class="keywordflow">if</span>(showDiag)</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem==0)</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem==<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            {</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                diagGraphItem=<span class="keyword">new</span> QGraphicsTextItem();</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                scene()-&gt;addItem(diagGraphItem);</div>
@@ -626,10 +626,10 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            diagGraphItem-&gt;setPlainText(core-&gt;<a class="code" href="group___t_l_map_widget.html#ga32889efb3fd780403d2005980b0a7dfc">GetDiagnostics</a>().<a class="code" href="group___t_l_map_widget.html#gac7639db946ccc37305c9a915ab7816cc">toString</a>());</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        }</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem!=0)</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <span class="keywordflow">if</span>(diagGraphItem!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            {</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <span class="keyword">delete</span> diagGraphItem;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            diagGraphItem=0;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            diagGraphItem=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    }</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
@@ -651,7 +651,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <span class="keywordflow">if</span>(!value &amp;&amp; compassRose)</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        {</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;            <span class="keyword">delete</span> compassRose;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            compassRose=0;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            compassRose=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        }</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    }</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
@@ -684,7 +684,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <span class="keywordflow">if</span> (!value &amp;&amp; windCompass) {</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            <span class="keyword">delete</span> windspeedTxt;</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            <span class="keyword">delete</span> windCompass;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            windCompass=0;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            windCompass=<span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        }</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    }</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
@@ -767,6 +767,7 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="ttc" id="group___t_l_map_widget_html_ga994158b1d9756ffe47d3c64031eec1ef"><div class="ttname"><a href="group___t_l_map_widget.html#ga994158b1d9756ffe47d3c64031eec1ef">mapcontrol::TLMapWidget::WPRenumber</a></div><div class="ttdeci">void WPRenumber(WayPointItem *item, int const &amp;newnumber)</div><div class="ttdoc">Renumbers the WayPoint and all others as needed. </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00508">tlmapwidget.cpp:508</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_ga1a4eff9b0200201f53ab297430804bc8"><div class="ttname"><a href="group___t_l_map_widget.html#ga1a4eff9b0200201f53ab297430804bc8">mapcontrol::TLMapWidget::CurrentPosition</a></div><div class="ttdeci">internals::PointLatLng CurrentPosition() const </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8h_source.html#l00224">tlmapwidget.h:224</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_gabfcf42818881ea9ccf6b7f2ec6fa9c70"><div class="ttname"><a href="group___t_l_map_widget.html#gabfcf42818881ea9ccf6b7f2ec6fa9c70">mapcontrol::TLMapWidget::WPLineCreate</a></div><div class="ttdeci">MapLine * WPLineCreate(WayPointItem *from, WayPointItem *to, QColor color)</div><div class="ttdoc">Create a line between two waypoint items. </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00125">tlmapwidget.cpp:125</a></div></div>
+<div class="ttc" id="group___t_l_map_widget_html_ga855a961044010db7f605c1cda7227228"><div class="ttname"><a href="group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228">mapcontrol::TLMapWidget::TLMapWidget</a></div><div class="ttdeci">Q_ENUMS(internals::MouseWheelZoomType::Types) Q_ENUMS(core TLMapWidget(QWidget *parent=nullptr, Configuration *config=new Configuration)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00041">tlmapwidget.cpp:41</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_gaaa258b4ff66c18a118d18d5b0d65860d"><div class="ttname"><a href="group___t_l_map_widget.html#gaaa258b4ff66c18a118d18d5b0d65860d">mapcontrol::TLMapWidget::WPDelete</a></div><div class="ttdeci">void WPDelete(WayPointItem *item)</div><div class="ttdoc">Deletes the WayPoint. </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00396">tlmapwidget.cpp:396</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="classmapcontrol_1_1_home_item_html"><div class="ttname"><a href="classmapcontrol_1_1_home_item.html">mapcontrol::HomeItem</a></div><div class="ttdef"><b>Definition:</b> <a href="homeitem_8h_source.html#l00037">homeitem.h:37</a></div></div>
@@ -813,7 +814,6 @@ $(document).ready(function(){initNavTree('tlmapwidget_8cpp_source.html','');});
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_gad5cb4063e84276f330cc56c866084e2e"><div class="ttname"><a href="group___t_l_map_widget.html#gad5cb4063e84276f330cc56c866084e2e">mapcontrol::TLMapWidget::deleteAllOverlays</a></div><div class="ttdeci">void deleteAllOverlays()</div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00480">tlmapwidget.cpp:480</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_gad333d3a8fdea2555f991d3e1479a5651"><div class="ttname"><a href="group___t_l_map_widget.html#gad333d3a8fdea2555f991d3e1479a5651">mapcontrol::TLMapWidget::UAVReachedWayPoint</a></div><div class="ttdeci">void UAVReachedWayPoint(int const &amp;waypointnumber, WayPointItem *waypoint)</div><div class="ttdoc">Fires When a WayPoint is Reached. </div></div>
-<div class="ttc" id="group___t_l_map_widget_html_ga67843d3ac4f352f1cea922f9aedc91eb"><div class="ttname"><a href="group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb">mapcontrol::TLMapWidget::TLMapWidget</a></div><div class="ttdeci">Q_ENUMS(internals::MouseWheelZoomType::Types) Q_ENUMS(core TLMapWidget(QWidget *parent=0, Configuration *config=new Configuration)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8cpp_source.html#l00041">tlmapwidget.cpp:41</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_ga10820264fc94dee4c279f60f6ed02309"><div class="ttname"><a href="group___t_l_map_widget.html#ga10820264fc94dee4c279f60f6ed02309">internals::Core::OnMapClose</a></div><div class="ttdeci">void OnMapClose()</div><div class="ttdef"><b>Definition:</b> <a href="core_8cpp_source.html#l00440">core.cpp:440</a></div></div>
 <div class="ttc" id="group___t_l_map_widget_html_ga6c4641bff16c343b2edf9e0e88f6bb47"><div class="ttname"><a href="group___t_l_map_widget.html#ga6c4641bff16c343b2edf9e0e88f6bb47">mapcontrol::TLMapWidget::OnCurrentPositionChanged</a></div><div class="ttdeci">void OnCurrentPositionChanged(internals::PointLatLng point)</div><div class="ttdoc">Fires when map position changes. </div></div>
 <div class="ttc" id="group___t_l_map_widget_html_gabecf05784a727cc1e50b6d05e65ec6bc"><div class="ttname"><a href="group___t_l_map_widget.html#gabecf05784a727cc1e50b6d05e65ec6bc">mapcontrol::TLMapWidget::UAV</a></div><div class="ttdeci">UAVItem * UAV</div><div class="ttdef"><b>Definition:</b> <a href="tlmapwidget_8h_source.html#l00360">tlmapwidget.h:360</a></div></div>

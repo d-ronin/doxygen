@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('loggingplugin_8cpp_source.html','');})
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="keywordtype">void</span> LoggingPlugin::stopLogging()</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    emit <a class="code" href="class_logging_plugin.html#a98a1e57b1e2f83725350e1ef0058e99e">stopLoggingSignal</a>();</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    disconnect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="class_logging_plugin.html#a98a1e57b1e2f83725350e1ef0058e99e">stopLoggingSignal</a>()), 0, 0);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    disconnect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="class_logging_plugin.html#a98a1e57b1e2f83725350e1ef0058e99e">stopLoggingSignal</a>()), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keywordtype">void</span> LoggingPlugin::loggingStopped()</div>

@@ -1,6 +1,6 @@
 var class_core_1_1_internal_1_1_workspace_settings =
 [
-    [ "WorkspaceSettings", "group___core_plugin.html#ga17c90a13ced98ccf424faf0ffe0a9b83", null ],
+    [ "WorkspaceSettings", "group___core_plugin.html#ga576648702310105c5e0be638cf294cd9", null ],
     [ "~WorkspaceSettings", "group___core_plugin.html#ga52cc2565aaed4f3542cdeba23e41648f", null ],
     [ "apply", "group___core_plugin.html#gabfff6f413d139681a9bc4b6d750b2746", null ],
     [ "category", "group___core_plugin.html#ga09ec0904c7d7ef400eb3251043b2520e", null ],

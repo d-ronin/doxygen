@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('shortcutsettings_8cpp_source.html','')
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;using namespace Core;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;using namespace Core::Internal;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaf70df8ce0b86b325f7a03c1cc0dac919">   54</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_shortcut_settings.html">ShortcutSettings</a>::<a class="code" href="class_core_1_1_internal_1_1_shortcut_settings.html">ShortcutSettings</a>(QObject *parent)</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaecf9c3a5349237d974010d411fde596a">   54</a></span>&#160;<a class="code" href="class_core_1_1_internal_1_1_shortcut_settings.html">ShortcutSettings</a>::<a class="code" href="class_core_1_1_internal_1_1_shortcut_settings.html">ShortcutSettings</a>(QObject *parent)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    : <a class="code" href="class_core_1_1_i_options_page.html">IOptionsPage</a>(parent)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('shortcutsettings_8cpp_source.html','')
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">new</span> <a class="code" href="class_utils_1_1_tree_widget_column_stretcher.html">Utils::TreeWidgetColumnStretcher</a>(m_page-&gt;commandList, 1);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    commandChanged(0);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    commandChanged(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> w;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('shortcutsettings_8cpp_source.html','')
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">if</span> (c-&gt;action() &amp;&amp; c-&gt;action()-&gt;isSeparator())</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        QTreeWidgetItem *item = 0;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        QTreeWidgetItem *item = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="struct_core_1_1_internal_1_1_shortcut_item.html">ShortcutItem</a> *<a class="code" href="uavobjecttemplate_8m.html#a3691308f2a4c2f6983f2880d32e29c84">s</a> = <span class="keyword">new</span> <a class="code" href="struct_core_1_1_internal_1_1_shortcut_item.html">ShortcutItem</a>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        m_scitems &lt;&lt; <a class="code" href="uavobjecttemplate_8m.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        item = <span class="keyword">new</span> QTreeWidgetItem(m_page-&gt;commandList);</div>

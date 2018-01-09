@@ -1,6 +1,6 @@
 var class_o_p_map_gadget_widget =
 [
-    [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga7fe62a2d1a8b920f3e44900dee8d9d5a", null ],
+    [ "OPMapGadgetWidget", "group___o_p_map_plugin.html#ga222e0e42308e538e45d1f2a543261cf7", null ],
     [ "~OPMapGadgetWidget", "group___o_p_map_plugin.html#ga7c7775d0011bd9d0f8ca0219f48bc193", null ],
     [ "closeEvent", "group___o_p_map_plugin.html#ga07f947001ed1fdf9d099f170e5116aa2", null ],
     [ "contextMenuEvent", "group___o_p_map_plugin.html#gab4575b0db17580cc1a575aafa2fc5710", null ],

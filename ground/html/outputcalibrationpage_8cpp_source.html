@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -131,12 +131,12 @@ $(document).ready(function(){initNavTree('outputcalibrationpage_8cpp_source.html
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;systemalarms.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjects/uavobjectmanager.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga4975a50caf4226865af2d1d03e0fe82c">   33</a></span>&#160;<a class="code" href="group___setup_wizard.html#ga4975a50caf4226865af2d1d03e0fe82c">OutputCalibrationPage::OutputCalibrationPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#ga7c1460c1bc108d9ac9b3049b03eb879b">   33</a></span>&#160;<a class="code" href="group___setup_wizard.html#ga7c1460c1bc108d9ac9b3049b03eb879b">OutputCalibrationPage::OutputCalibrationPage</a>(<a class="code" href="class_setup_wizard.html">SetupWizard</a> *wizard, QWidget *parent)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <a class="code" href="class_abstract_wizard_page.html">AbstractWizardPage</a>(wizard, parent)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , ui(new Ui::<a class="code" href="class_output_calibration_page.html">OutputCalibrationPage</a>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_vehicleBoundsItem(0)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    , m_vehicleBoundsItem(nullptr)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , m_currentWizardIndex(-1)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_calibrationUtil(0)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    , m_calibrationUtil(nullptr)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('outputcalibrationpage_8cpp_source.html
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (m_calibrationUtil) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">delete</span> m_calibrationUtil;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        m_calibrationUtil = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        m_calibrationUtil = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">delete</span> ui;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('outputcalibrationpage_8cpp_source.html
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (m_calibrationUtil) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">delete</span> m_calibrationUtil;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        m_calibrationUtil = 0;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        m_calibrationUtil = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    m_calibrationUtil = <span class="keyword">new</span> <a class="code" href="class_output_calibration_util.html">OutputCalibrationUtil</a>();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
@@ -567,6 +567,7 @@ $(document).ready(function(){initNavTree('outputcalibrationpage_8cpp_source.html
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        debugLogChannelValues();</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    }</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+<div class="ttc" id="group___setup_wizard_html_ga7c1460c1bc108d9ac9b3049b03eb879b"><div class="ttname"><a href="group___setup_wizard.html#ga7c1460c1bc108d9ac9b3049b03eb879b">OutputCalibrationPage::OutputCalibrationPage</a></div><div class="ttdeci">OutputCalibrationPage(SetupWizard *wizard, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationpage_8cpp_source.html#l00033">outputcalibrationpage.cpp:33</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_gaccfd0563f0faafb93bacafa8cf873035"><div class="ttname"><a href="group___setup_wizard.html#gaccfd0563f0faafb93bacafa8cf873035">OutputCalibrationPage::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationpage_8cpp_source.html#l00281">outputcalibrationpage.cpp:281</a></div></div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ggaa22bfa88d750f2b46f66702a723e8342a8ba2396f556369fc544b1707dbf8c09c"><div class="ttname"><a href="group___setup_wizard.html#ggaa22bfa88d750f2b46f66702a723e8342a8ba2396f556369fc544b1707dbf8c09c">VehicleConfigurationSource::MULTI_ROTOR_TRI_Y</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfigurationsource_8h_source.html#l00076">vehicleconfigurationsource.h:76</a></div></div>
@@ -576,7 +577,6 @@ $(document).ready(function(){initNavTree('outputcalibrationpage_8cpp_source.html
 <div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="class_output_calibration_page_html"><div class="ttname"><a href="class_output_calibration_page.html">OutputCalibrationPage</a></div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationpage_8h_source.html#l00041">outputcalibrationpage.h:41</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ggaa22bfa88d750f2b46f66702a723e8342a56e3277bdc9f88f083c256ede9413965"><div class="ttname"><a href="group___setup_wizard.html#ggaa22bfa88d750f2b46f66702a723e8342a56e3277bdc9f88f083c256ede9413965">VehicleConfigurationSource::MULTI_ROTOR_QUAD_PLUS</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfigurationsource_8h_source.html#l00078">vehicleconfigurationsource.h:78</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga4975a50caf4226865af2d1d03e0fe82c"><div class="ttname"><a href="group___setup_wizard.html#ga4975a50caf4226865af2d1d03e0fe82c">OutputCalibrationPage::OutputCalibrationPage</a></div><div class="ttdeci">OutputCalibrationPage(SetupWizard *wizard, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationpage_8cpp_source.html#l00033">outputcalibrationpage.cpp:33</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga3e208c77155e8ab46a19849174aae3b6"><div class="ttname"><a href="group___setup_wizard.html#ga3e208c77155e8ab46a19849174aae3b6">OutputCalibrationPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="outputcalibrationpage_8cpp_source.html#l00269">outputcalibrationpage.cpp:269</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_gga734c812e17554d4f7ca67f1008abdd6cabcb2f6e54ba9328be0b892238b38cd03"><div class="ttname"><a href="group___setup_wizard.html#gga734c812e17554d4f7ca67f1008abdd6cabcb2f6e54ba9328be0b892238b38cd03">VehicleConfigurationSource::ESC_ONESHOT42</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicleconfigurationsource_8h_source.html#l00094">vehicleconfigurationsource.h:94</a></div></div>

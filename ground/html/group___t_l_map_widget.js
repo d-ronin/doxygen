@@ -611,7 +611,7 @@ var group___t_l_map_widget =
       [ "relativeCoord", "group___t_l_map_widget.html#ga796e0d11cb8fbb8c404f7b6ba251e8a0", null ]
     ] ],
     [ "MapRipForm", "class_map_rip_form.html", [
-      [ "MapRipForm", "group___t_l_map_widget.html#ga992a9478361267f44a0935b7fb7c8476", null ],
+      [ "MapRipForm", "group___t_l_map_widget.html#ga4da2420b817ca4628c9d68fc2c22b1f2", null ],
       [ "~MapRipForm", "group___t_l_map_widget.html#gabc703f61b0a3e678f85ec3fa6b9c896a", null ],
       [ "cancelRequest", "group___t_l_map_widget.html#gada316d63680a0cc029958b0d0eb33f4a", null ],
       [ "SetNumberOfTiles", "group___t_l_map_widget.html#ga7f74961ce862f3c6173a9634b3de2e53", null ],
@@ -629,7 +629,7 @@ var group___t_l_map_widget =
     ] ],
     [ "Helper", "classmapcontrol_1_1_helper.html", null ],
     [ "TLMapWidget", "classmapcontrol_1_1_t_l_map_widget.html", [
-      [ "TLMapWidget", "group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb", null ],
+      [ "TLMapWidget", "group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228", null ],
       [ "~TLMapWidget", "group___t_l_map_widget.html#ga862da29725bbaf0eb3ed5bb02f712c72", null ],
       [ "CanDragMap", "group___t_l_map_widget.html#ga086bc9e133d51e8a8bc0b939a9d33576", null ],
       [ "closeEvent", "group___t_l_map_widget.html#gac64358b61d5cac3262e9e1c71e76e13a", null ],
@@ -999,7 +999,7 @@ var group___t_l_map_widget =
     [ "MakeGeocoderUrl", "group___t_l_map_widget.html#gabd18ec712252a81e8af3c1a61228b41b", null ],
     [ "MakeImageUrl", "group___t_l_map_widget.html#ga7339895a709cbc83dfac87ec5e1a42ff", null ],
     [ "MakeReverseGeocoderUrl", "group___t_l_map_widget.html#gad12026ac0e1b17ce9cdbd8da9b4521db", null ],
-    [ "MapRipForm", "group___t_l_map_widget.html#ga992a9478361267f44a0935b7fb7c8476", null ],
+    [ "MapRipForm", "group___t_l_map_widget.html#ga4da2420b817ca4628c9d68fc2c22b1f2", null ],
     [ "MapRipper", "group___t_l_map_widget.html#ga8c3645377b4deb3dc4d498de823ff3fd", null ],
     [ "MapTypeFromString", "group___t_l_map_widget.html#gae829b229cde8f7beebc9f3c0981f674c", null ],
     [ "MapTypes", "group___t_l_map_widget.html#gad4c683c34a93de153146c87382c53719", null ],
@@ -1228,7 +1228,7 @@ var group___t_l_map_widget =
     [ "TileSize", "group___t_l_map_widget.html#ga745313ff69d0f869f456ccbc312cc2bf", null ],
     [ "TLMaps", "group___t_l_map_widget.html#ga67a52606413c42ea2987eec6b0e6640b", null ],
     [ "TLMaps", "group___t_l_map_widget.html#ga231d3e51cae0220d2a82e1bd4c71a179", null ],
-    [ "TLMapWidget", "group___t_l_map_widget.html#ga67843d3ac4f352f1cea922f9aedc91eb", null ],
+    [ "TLMapWidget", "group___t_l_map_widget.html#ga855a961044010db7f605c1cda7227228", null ],
     [ "Top", "group___t_l_map_widget.html#gaa6e68777faa43b088a20ae9e33b964dd", null ],
     [ "Top", "group___t_l_map_widget.html#ga1c2062c6fe46c3769c4e9a0d5eef59b8", null ],
     [ "toString", "group___t_l_map_widget.html#gac7639db946ccc37305c9a915ab7816cc", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('longlongspinbox_8h_source.html','');})
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a>(QWidget *parent = Q_NULLPTR);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ~<a class="code" href="class_long_long_spin_box.html">LongLongSpinBox</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    qint64 value() <span class="keyword">const</span>;</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('longlongspinbox_8h_source.html','');})
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> QString textFromValue(qint64 val) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> fixup(QString &amp;str) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> updateEdit();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString stripped(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">int</span> *pos = Q_NULLPTR) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString stripped(<span class="keyword">const</span> QString &amp;text, <span class="keywordtype">int</span> *pos = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    qint64 validateAndInterpret(QString &amp;input, <span class="keywordtype">int</span> &amp;pos, QValidator::State &amp;state) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> StepEnabled stepEnabled() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> stepBy(<span class="keywordtype">int</span> steps) <span class="keyword">override</span>;</div>

@@ -1,6 +1,6 @@
 var class_core_1_1_i_u_a_v_gadget =
 [
-    [ "IUAVGadget", "group___core_plugin.html#gab05dd4230eb4f599db6c08439bc6216c", null ],
+    [ "IUAVGadget", "group___core_plugin.html#ga5cd6775bc0005071aa31784b5633094a", null ],
     [ "~IUAVGadget", "group___core_plugin.html#ga817ce9cba005f49f5da1d0e5daca2fa4", null ],
     [ "activeConfiguration", "group___core_plugin.html#gaae57a0547d1a44549001909d0f3d8ccc", null ],
     [ "classId", "group___core_plugin.html#ga3878fde66a57220608960bcc3fbeef2c", null ],

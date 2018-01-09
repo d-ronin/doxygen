@@ -3,7 +3,7 @@ var class_core_1_1_mode_manager =
     [ "ModeManager", "group___core_plugin.html#ga7424a5232a9062d5d715d46cb6dab058", null ],
     [ "activateMode", "group___core_plugin.html#ga9f75e14a1a348f3f46c62b4575dbca9e", null ],
     [ "activateModeByWorkspaceName", "group___core_plugin.html#gadd4b3b24c51d0993e61aab8ee9e76f48", null ],
-    [ "addAction", "group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90", null ],
+    [ "addAction", "group___core_plugin.html#ga54dcfd34b6c460546b661facc8b28e61", null ],
     [ "addWidget", "group___core_plugin.html#ga44a336b5464c757765a238ac56da3cc3", null ],
     [ "currentMode", "group___core_plugin.html#ga8b622df4a78ae2e368474999c0698306", null ],
     [ "currentModeAboutToChange", "group___core_plugin.html#gaa77e7371f833a065f7608953552acb2e", null ],

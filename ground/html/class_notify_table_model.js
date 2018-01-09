@@ -1,6 +1,6 @@
 var class_notify_table_model =
 [
-    [ "NotifyTableModel", "group___notify_plugin.html#ga7c99d26f6ccdab1cb80b8cfdfaa9d814", null ],
+    [ "NotifyTableModel", "group___notify_plugin.html#ga2f75e3be86bd12fa7c41834b2cfe32c0", null ],
     [ "columnCount", "group___notify_plugin.html#gaf90f7b29e6b11f9e569df9adf0c0f01f", null ],
     [ "data", "group___notify_plugin.html#gacf622323e5cab0f1ecdeb6d35e4b8039", null ],
     [ "dragRows", "group___notify_plugin.html#ga87b02089128dd9f2eddbd2e70040201f", null ],

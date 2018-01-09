@@ -1,5 +1,5 @@
 var class_meta_object_tree_item =
 [
-    [ "MetaObjectTreeItem", "group___u_a_v_object_browser_plugin.html#gaccbd935f55017692b1051678b5f53ad8", null ],
-    [ "MetaObjectTreeItem", "group___u_a_v_object_browser_plugin.html#ga13e8806399befff9a6db4becc66810d7", null ]
+    [ "MetaObjectTreeItem", "group___u_a_v_object_browser_plugin.html#ga44b622845d87b918afa2e293317f4b0c", null ],
+    [ "MetaObjectTreeItem", "group___u_a_v_object_browser_plugin.html#ga9743c7d6e4e9469021e94783284d01b2", null ]
 ];

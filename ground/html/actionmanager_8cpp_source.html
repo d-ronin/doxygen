@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">using namespace </span>Core;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">using namespace </span>Core::Internal;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<a class="code" href="class_core_1_1_internal_1_1_action_manager_private.html">ActionManagerPrivate</a> *ActionManagerPrivate::m_instance = 0;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<a class="code" href="class_core_1_1_internal_1_1_action_manager_private.html">ActionManagerPrivate</a> *ActionManagerPrivate::m_instance = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
 <div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga12aef0a3b78b0e37f3db4a05e4e89615">  218</a></span>&#160;<a class="code" href="group___core_plugin.html#ga12aef0a3b78b0e37f3db4a05e4e89615">ActionManagerPrivate::ActionManagerPrivate</a>(<a class="code" href="class_core_1_1_internal_1_1_main_window.html">MainWindow</a> *mainWnd)</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    : <a class="code" href="class_core_1_1_action_manager.html">ActionManager</a>(mainWnd)</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga85856b30617fb3861bb25b1745e88ab1">  320</a></span>&#160;<a class="code" href="class_core_1_1_command.html">Command</a> *<a class="code" href="group___core_plugin.html#ga85856b30617fb3861bb25b1745e88ab1">ActionManagerPrivate::registerAction</a>(QAction *action, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>,</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                              <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context)</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = 0;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="class_core_1_1_command.html">Command</a> *c = registerOverridableAction(action, <span class="keywordtype">id</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    a = <span class="keyword">static_cast&lt;</span><a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *<span class="keyword">&gt;</span>(c);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span> (a)</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<a class="code" href="class_core_1_1_command.html">Command</a> *ActionManagerPrivate::registerOverridableAction(QAction *action, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>,</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                                         <span class="keywordtype">bool</span> checkUnique)</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = 0;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> uid = <a class="code" href="group___core_plugin.html#ga023f468a9492c282025fde5109e3d368">UniqueIDManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga753353ca9958604a964c9cf807b77e60">uniqueIdentifier</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_core_1_1_internal_1_1_command_private.html">CommandPrivate</a> *c = m_idCmdMap.value(uid, 0)) {</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        a = qobject_cast&lt;<a class="code" href="class_core_1_1_internal_1_1_overrideable_action.html">OverrideableAction</a> *&gt;(c);</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga887455dd80ccba90125634d83982950d">  377</a></span>&#160;<a class="code" href="class_core_1_1_command.html">Command</a> *<a class="code" href="group___core_plugin.html#ga887455dd80ccba90125634d83982950d">ActionManagerPrivate::registerShortcut</a>(QShortcut *shortcut, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>,</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> &amp;context)</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_shortcut.html">Shortcut</a> *sc = 0;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="class_core_1_1_internal_1_1_shortcut.html">Shortcut</a> *sc = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">int</span> uid = <a class="code" href="group___core_plugin.html#ga023f468a9492c282025fde5109e3d368">UniqueIDManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga753353ca9958604a964c9cf807b77e60">uniqueIdentifier</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_core_1_1_internal_1_1_command_private.html">CommandPrivate</a> *c = m_idCmdMap.value(uid, 0)) {</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        sc = qobject_cast&lt;<a class="code" href="class_core_1_1_internal_1_1_shortcut.html">Shortcut</a> *&gt;(c);</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">if</span> (it == m_idCmdMap.constEnd()) {</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">if</span> (warnAboutFindFailures)</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;ActionManagerPrivate::command(): failed to find :&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="charliteral">&#39;/&#39;</span> &lt;&lt; uid;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">return</span> it.value();</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
@@ -368,7 +368,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">if</span> (warnAboutFindFailures)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;ActionManagerPrivate::actionContainer(): failed to find :&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="charliteral">&#39;/&#39;</span></div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                       &lt;&lt; uid;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">return</span> it.value();</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
@@ -380,7 +380,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">if</span> (warnAboutFindFailures)</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;ActionManagerPrivate::command(): failed to find :&quot;</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                       &lt;&lt; <a class="code" href="group___core_plugin.html#ga023f468a9492c282025fde5109e3d368">UniqueIDManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga238c5f6580483438c581dfa0c5be022c">stringForUniqueIdentifier</a>(uid) &lt;&lt; <span class="charliteral">&#39;/&#39;</span> &lt;&lt; uid;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">return</span> it.value();</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
@@ -392,7 +392,7 @@ $(document).ready(function(){initNavTree('actionmanager_8cpp_source.html','');})
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">if</span> (warnAboutFindFailures)</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;ActionManagerPrivate::actionContainer(): failed to find :&quot;</span></div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                       &lt;&lt; <a class="code" href="group___core_plugin.html#ga023f468a9492c282025fde5109e3d368">UniqueIDManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga238c5f6580483438c581dfa0c5be022c">stringForUniqueIdentifier</a>(uid) &lt;&lt; uid;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordflow">return</span> it.value();</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;}</div>

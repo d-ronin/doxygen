@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -181,9 +181,9 @@ $(document).ready(function(){initNavTree('pluginmanager_8h_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        QReadLocker lock(&amp;m_lock);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;QObject *&gt;</a> all = allObjects();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        T *result = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        T *result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">foreach</span> (QObject *obj, all) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> ((result = Aggregation::query&lt;T&gt;(obj)) != 0)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> ((result = Aggregation::query&lt;T&gt;(obj)) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> result;</div>

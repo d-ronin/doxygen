@@ -3,7 +3,7 @@ var group___g_c_s_control_gadget_plugin =
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
     [ "GCSControlGadget", "class_g_c_s_control_gadget.html", [
-      [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#gaa2bb4808899771140d27bd47b54ccb8c", null ],
+      [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#ga53ec92fc982298ed1b111894526e86b5", null ],
       [ "~GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#ga109d324fea74699d89e95ea779cd7c18", null ],
       [ "axesValues", "group___g_c_s_control_gadget_plugin.html#ga575f8651147d4a9a96a360d3ac4c600f", null ],
       [ "buttonState", "group___g_c_s_control_gadget_plugin.html#ga515dc70507cb41b37c46ed3fd9addc47", null ],
@@ -29,7 +29,7 @@ var group___g_c_s_control_gadget_plugin =
       [ "port", "group___g_c_s_control_gadget_plugin.html#ga0f8fc6e0cdd5eac4d00a2b169f94c7a3", null ]
     ] ],
     [ "GCSControlGadgetConfiguration", "class_g_c_s_control_gadget_configuration.html", [
-      [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#ga564a596fece84d06f7a2ff0f9151d140", null ],
+      [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#gae641b528a03bb75aab0fb839827008b7", null ],
       [ "clone", "group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f", null ],
       [ "getbuttonSettings", "group___g_c_s_control_gadget_plugin.html#ga024292274c2307cd9e45e6a7fbbba208", null ],
       [ "getChannelsMapping", "group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473", null ],
@@ -49,14 +49,14 @@ var group___g_c_s_control_gadget_plugin =
       [ "setUDPControlSettings", "group___g_c_s_control_gadget_plugin.html#ga3bcc78712b1d750a1426bd1342f0897a", null ]
     ] ],
     [ "GCSControlGadgetFactory", "class_g_c_s_control_gadget_factory.html", [
-      [ "GCSControlGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a", null ],
+      [ "GCSControlGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga2e6bb8ee70e1d9d3a9124ddd8a8f330c", null ],
       [ "~GCSControlGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga1e3479dbedd932e780c0413327a44453", null ],
       [ "createConfiguration", "group___g_c_s_control_gadget_plugin.html#ga707c9075a9e10d166b1769820e643095", null ],
       [ "createGadget", "group___g_c_s_control_gadget_plugin.html#ga36b826b28ef2eea9aef96c03fe2afcb5", null ],
       [ "createOptionsPage", "group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a", null ]
     ] ],
     [ "GCSControlGadgetOptionsPage", "class_g_c_s_control_gadget_options_page.html", [
-      [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga133610c0fce1048e9c145e0e6f4ff7b8", null ],
+      [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga399b933b8ae9b0ae309de6ee63bec0a5", null ],
       [ "~GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga1dbf3c631b0254ac184bfa202ea00b17", null ],
       [ "apply", "group___g_c_s_control_gadget_plugin.html#gad8fa5da9631986d02639e5b520028c91", null ],
       [ "axesValues", "group___g_c_s_control_gadget_plugin.html#ga2875164469455c55a959fcd1f56b0e6d", null ],
@@ -76,7 +76,7 @@ var group___g_c_s_control_gadget_plugin =
       [ "updateButtonFunction", "group___g_c_s_control_gadget_plugin.html#ga98bbb0244baf8177656bc529e5b421a9", null ]
     ] ],
     [ "GCSControlGadgetWidget", "class_g_c_s_control_gadget_widget.html", [
-      [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga631488a05f2911312aa2701deafc099e", null ],
+      [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga422fa61ed86529a1290b6eb5db80af56", null ],
       [ "allowGcsControl", "group___g_c_s_control_gadget_plugin.html#gac95edd086f31b90b8dd3e9d992fe870e", null ],
       [ "armedChanged", "group___g_c_s_control_gadget_plugin.html#ga52d0c855f166eaa650aa7acda3bd55be", null ],
       [ "controlEnabled", "group___g_c_s_control_gadget_plugin.html#ga29e9cc85c2d85301be68160330bf4404", null ],
@@ -95,7 +95,7 @@ var group___g_c_s_control_gadget_plugin =
       [ "updateSticks", "group___g_c_s_control_gadget_plugin.html#ga279299922ac5990f798325ad238ae58a", null ]
     ] ],
     [ "JoystickControl", "class_joystick_control.html", [
-      [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga77373f65ad7f3da249f63ebd5d64a736", null ],
+      [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga1dd1a66c2f90aa3d78d0d17d88fc54be", null ],
       [ "~JoystickControl", "group___g_c_s_control_gadget_plugin.html#gafb2a1d3ac608e7378bba52d774b825d0", null ],
       [ "changePosition", "group___g_c_s_control_gadget_plugin.html#ga38032aee1ab31edefa56c0274624604c", null ],
       [ "mouseMoveEvent", "group___g_c_s_control_gadget_plugin.html#ga4522aafc5f2b7dae7d64ac4368189272", null ],
@@ -106,7 +106,7 @@ var group___g_c_s_control_gadget_plugin =
       [ "resizeEvent", "group___g_c_s_control_gadget_plugin.html#gaae12f9fa1f0456ecc47b044a2b2db9da", null ]
     ] ],
     [ "LoggingGadget", "class_logging_gadget.html", [
-      [ "LoggingGadget", "group___g_c_s_control_gadget_plugin.html#gaf04a39f8faf77df7657801a58bf39bf9", null ],
+      [ "LoggingGadget", "group___g_c_s_control_gadget_plugin.html#ga66322ef68413cb93409e7edaeb9139d2", null ],
       [ "~LoggingGadget", "group___g_c_s_control_gadget_plugin.html#gabcd5577c6960598473ac23935c47c958", null ],
       [ "context", "group___g_c_s_control_gadget_plugin.html#gadceb403447b87bafeda8fad2855d01bf", null ],
       [ "contextHelpId", "group___g_c_s_control_gadget_plugin.html#gaf63d806b2f5ac3cdf4c71fe9a241f7a8", null ],
@@ -114,13 +114,13 @@ var group___g_c_s_control_gadget_plugin =
       [ "widget", "group___g_c_s_control_gadget_plugin.html#gaaa54cb505c0bcf94b159b6fb51cea991", null ]
     ] ],
     [ "LoggingGadgetFactory", "class_logging_gadget_factory.html", [
-      [ "LoggingGadgetFactory", "group___g_c_s_control_gadget_plugin.html#gaef9e98419a7dd5551cd13876c2c4b357", null ],
+      [ "LoggingGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8", null ],
       [ "~LoggingGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga6ddd468f9f7b722281dc55df5d991dc1", null ],
       [ "createGadget", "group___g_c_s_control_gadget_plugin.html#ga95ee0680e9c323e77341bef36195bdf5", null ],
       [ "setPlugin", "group___g_c_s_control_gadget_plugin.html#ga00c5e0af9d177e7d271c0d6dcd6f4601", null ]
     ] ],
     [ "LoggingGadgetWidget", "class_logging_gadget_widget.html", [
-      [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e", null ],
+      [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#gae936c37b875fdef1ba49413da616f9d4", null ],
       [ "~LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0", null ],
       [ "pause", "group___g_c_s_control_gadget_plugin.html#gab36252efc1545bad1c46720b2fd92a22", null ],
       [ "play", "group___g_c_s_control_gadget_plugin.html#gabd0c6db2a3fecf6afb525d40bc12431c", null ],
@@ -128,7 +128,7 @@ var group___g_c_s_control_gadget_plugin =
       [ "stateChanged", "group___g_c_s_control_gadget_plugin.html#ga8d9370f949bfe6eec4f37676feb6de85", null ]
     ] ],
     [ "MagicWaypointGadget", "class_magic_waypoint_gadget.html", [
-      [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce", null ],
+      [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga1739bf2da1daa797e064fc9c3c4873ac", null ],
       [ "~MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89", null ],
       [ "context", "group___g_c_s_control_gadget_plugin.html#ga7521519a1bb7dd420c9e4d2f1bf49a2f", null ],
       [ "contextHelpId", "group___g_c_s_control_gadget_plugin.html#gab2c239e4a2ee9921f9c9c0c79f769c3e", null ],
@@ -136,12 +136,12 @@ var group___g_c_s_control_gadget_plugin =
       [ "widget", "group___g_c_s_control_gadget_plugin.html#ga361c7a72cf1a95a2cf36f858d5b9bee5", null ]
     ] ],
     [ "MagicWaypointGadgetFactory", "class_magic_waypoint_gadget_factory.html", [
-      [ "MagicWaypointGadgetFactory", "group___g_c_s_control_gadget_plugin.html#gae7ad3cb8d55b05f06354047f33941fc1", null ],
+      [ "MagicWaypointGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga3e9931094151dd66cce9ebe8719ab4b2", null ],
       [ "~MagicWaypointGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga0b16d239f1aa3859ed11c4a572a9e5fd", null ],
       [ "createGadget", "group___g_c_s_control_gadget_plugin.html#gac8c3a2facf7fe1515b2d277b58ee9d0b", null ]
     ] ],
     [ "MagicWaypointGadgetWidget", "class_magic_waypoint_gadget_widget.html", [
-      [ "MagicWaypointGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga6b1ff9f71795c087e84d4d30b1a60c6d", null ],
+      [ "MagicWaypointGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga14c9eef25550e8bdf11ccdb62fc7aeba", null ],
       [ "~MagicWaypointGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba", null ],
       [ "pathDesiredChanged", "group___g_c_s_control_gadget_plugin.html#ga3270e904f313cabdad8a5048009ceb25", null ],
       [ "positionActualChanged", "group___g_c_s_control_gadget_plugin.html#gaa10cdac61400db1034c7954b3c549824", null ],
@@ -152,7 +152,7 @@ var group___g_c_s_control_gadget_plugin =
     ] ],
     [ "MagicWaypointPlugin", "class_magic_waypoint_plugin.html", null ],
     [ "PositionField", "class_position_field.html", [
-      [ "PositionField", "group___g_c_s_control_gadget_plugin.html#ga41712deeb21d497420f784aacbf72e29", null ],
+      [ "PositionField", "group___g_c_s_control_gadget_plugin.html#ga1fed5ba3034fa016d847684a7e0e25a3", null ],
       [ "~PositionField", "group___g_c_s_control_gadget_plugin.html#ga4d08deed807894efd521d1f56338650d", null ],
       [ "mouseMoveEvent", "group___g_c_s_control_gadget_plugin.html#gafb1fc61ba09724c992e090e61ea70a77", null ],
       [ "mousePressEvent", "group___g_c_s_control_gadget_plugin.html#ga4e4feaca4c455eaf3f781ac5c02eb0ad", null ],
@@ -179,11 +179,11 @@ var group___g_c_s_control_gadget_plugin =
     [ "createOptionsPage", "group___g_c_s_control_gadget_plugin.html#gaee4fe12f6708684eb50d0bd348633e8a", null ],
     [ "createPage", "group___g_c_s_control_gadget_plugin.html#ga581ba836a94117d6d887ee555a4917c6", null ],
     [ "finish", "group___g_c_s_control_gadget_plugin.html#ga99dea02a466b40903d82ed298e62a038", null ],
-    [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#gaa2bb4808899771140d27bd47b54ccb8c", null ],
-    [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#ga564a596fece84d06f7a2ff0f9151d140", null ],
-    [ "GCSControlGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga4c54b8d610c379bf28bff1793365f00a", null ],
-    [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga133610c0fce1048e9c145e0e6f4ff7b8", null ],
-    [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga631488a05f2911312aa2701deafc099e", null ],
+    [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#ga53ec92fc982298ed1b111894526e86b5", null ],
+    [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#gae641b528a03bb75aab0fb839827008b7", null ],
+    [ "GCSControlGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga2e6bb8ee70e1d9d3a9124ddd8a8f330c", null ],
+    [ "GCSControlGadgetOptionsPage", "group___g_c_s_control_gadget_plugin.html#ga399b933b8ae9b0ae309de6ee63bec0a5", null ],
+    [ "GCSControlGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga422fa61ed86529a1290b6eb5db80af56", null ],
     [ "getbuttonSettings", "group___g_c_s_control_gadget_plugin.html#ga024292274c2307cd9e45e6a7fbbba208", null ],
     [ "getChannelsMapping", "group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473", null ],
     [ "getChannelsReverse", "group___g_c_s_control_gadget_plugin.html#ga643521630f66ed868de507d649278971", null ],
@@ -193,16 +193,16 @@ var group___g_c_s_control_gadget_plugin =
     [ "getUDPControl", "group___g_c_s_control_gadget_plugin.html#ga0354d422f9780a2e5fb610c0decf3e13", null ],
     [ "getUDPControlHost", "group___g_c_s_control_gadget_plugin.html#ga3d756308c4f352759b919076507be2de", null ],
     [ "getUDPControlPort", "group___g_c_s_control_gadget_plugin.html#gab4759362f125b28eca65edb170d6d179", null ],
-    [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga77373f65ad7f3da249f63ebd5d64a736", null ],
+    [ "JoystickControl", "group___g_c_s_control_gadget_plugin.html#ga1dd1a66c2f90aa3d78d0d17d88fc54be", null ],
     [ "loadConfiguration", "group___g_c_s_control_gadget_plugin.html#ga163d222d9f3681fe93e07da2800e97ae", null ],
     [ "loadConfiguration", "group___g_c_s_control_gadget_plugin.html#ga7e66a1250e46435b2c92ff170afafeec", null ],
     [ "loadConfiguration", "group___g_c_s_control_gadget_plugin.html#ga439722d2b4016bbfaad9486b20c35a1a", null ],
-    [ "LoggingGadget", "group___g_c_s_control_gadget_plugin.html#gaf04a39f8faf77df7657801a58bf39bf9", null ],
-    [ "LoggingGadgetFactory", "group___g_c_s_control_gadget_plugin.html#gaef9e98419a7dd5551cd13876c2c4b357", null ],
-    [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e", null ],
-    [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce", null ],
-    [ "MagicWaypointGadgetFactory", "group___g_c_s_control_gadget_plugin.html#gae7ad3cb8d55b05f06354047f33941fc1", null ],
-    [ "MagicWaypointGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga6b1ff9f71795c087e84d4d30b1a60c6d", null ],
+    [ "LoggingGadget", "group___g_c_s_control_gadget_plugin.html#ga66322ef68413cb93409e7edaeb9139d2", null ],
+    [ "LoggingGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga1e3e843b8f04ef019c3a374910efebb8", null ],
+    [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#gae936c37b875fdef1ba49413da616f9d4", null ],
+    [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga1739bf2da1daa797e064fc9c3c4873ac", null ],
+    [ "MagicWaypointGadgetFactory", "group___g_c_s_control_gadget_plugin.html#ga3e9931094151dd66cce9ebe8719ab4b2", null ],
+    [ "MagicWaypointGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga14c9eef25550e8bdf11ccdb62fc7aeba", null ],
     [ "mouseMoveEvent", "group___g_c_s_control_gadget_plugin.html#gafb1fc61ba09724c992e090e61ea70a77", null ],
     [ "mouseMoveEvent", "group___g_c_s_control_gadget_plugin.html#ga4522aafc5f2b7dae7d64ac4368189272", null ],
     [ "mousePressEvent", "group___g_c_s_control_gadget_plugin.html#ga4e4feaca4c455eaf3f781ac5c02eb0ad", null ],
@@ -211,7 +211,7 @@ var group___g_c_s_control_gadget_plugin =
     [ "paint", "group___g_c_s_control_gadget_plugin.html#gaf79331833d41cf9af3b151a0f18663e0", null ],
     [ "paintEvent", "group___g_c_s_control_gadget_plugin.html#gad910afda0ec90e5e5e1dd3abd854f709", null ],
     [ "paintEvent", "group___g_c_s_control_gadget_plugin.html#ga10ed4b7da97f80c638a3eec5a81344c8", null ],
-    [ "PositionField", "group___g_c_s_control_gadget_plugin.html#ga41712deeb21d497420f784aacbf72e29", null ],
+    [ "PositionField", "group___g_c_s_control_gadget_plugin.html#ga1fed5ba3034fa016d847684a7e0e25a3", null ],
     [ "resizeEvent", "group___g_c_s_control_gadget_plugin.html#ga4f1879516e3c2fb610a4ebe9f5cb217e", null ],
     [ "resizeEvent", "group___g_c_s_control_gadget_plugin.html#gaae12f9fa1f0456ecc47b044a2b2db9da", null ],
     [ "saveConfig", "group___g_c_s_control_gadget_plugin.html#ga5b7df7d2f0deddc5241efd65f199fb05", null ],

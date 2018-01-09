@@ -1,6 +1,6 @@
 var class_g_c_s_control_gadget =
 [
-    [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#gaa2bb4808899771140d27bd47b54ccb8c", null ],
+    [ "GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#ga53ec92fc982298ed1b111894526e86b5", null ],
     [ "~GCSControlGadget", "group___g_c_s_control_gadget_plugin.html#ga109d324fea74699d89e95ea779cd7c18", null ],
     [ "axesValues", "group___g_c_s_control_gadget_plugin.html#ga575f8651147d4a9a96a360d3ac4c600f", null ],
     [ "buttonState", "group___g_c_s_control_gadget_plugin.html#ga515dc70507cb41b37c46ed3fd9addc47", null ],

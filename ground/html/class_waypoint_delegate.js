@@ -1,6 +1,6 @@
 var class_waypoint_delegate =
 [
-    [ "WaypointDelegate", "group___path_planner.html#ga91775a49b804a156874199ff12e57110", null ],
+    [ "WaypointDelegate", "group___path_planner.html#gaa7f68ace1e8c096b9725e496fe7bf94b", null ],
     [ "createEditor", "group___path_planner.html#ga8244740cc7a6bf781698edeebe341d8f", null ],
     [ "displayText", "group___path_planner.html#ga14243b35579b422c1343085132072746", null ],
     [ "eventFilter", "group___path_planner.html#gaecfd283ac4a2e4ca1a8950d2afbcb3f1", null ],

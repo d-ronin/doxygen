@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Do nothing</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___u_a_v_settings_import_export.html#gac32b68bf12c1286fbbdd1106af7f518f">   66</a></span>&#160;<a class="code" href="group___u_a_v_settings_import_export.html#gac32b68bf12c1286fbbdd1106af7f518f">UAVSettingsImportExportManager::UAVSettingsImportExportManager</a>(QObject *parent)</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___u_a_v_settings_import_export.html#ga49509a708cabd6d102ef8c59cab9036c">   66</a></span>&#160;<a class="code" href="group___u_a_v_settings_import_export.html#ga49509a708cabd6d102ef8c59cab9036c">UAVSettingsImportExportManager::UAVSettingsImportExportManager</a>(QObject *parent)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    : QObject(parent)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> core = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>();</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;End import&quot;</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (swui.<a class="code" href="group___u_a_v_settings_import_export.html#ga6d91ad4b56fab54135e137a709afa192">numLines</a>() &lt; 1) {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Unable to import settings&quot;</span>),</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        QMessageBox::critical(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Unable to import settings&quot;</span>),</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                              tr(<span class="stringliteral">&quot;No settings found in XML dump&quot;</span>), QMessageBox::Ok);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">// ask for file name</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    QString fileName;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    QString filters = tr(<span class="stringliteral">&quot;UAVObjects XML files (*.uav);; XML files (*.xml)&quot;</span>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    fileName = QFileDialog::getOpenFileName(0, tr(<span class="stringliteral">&quot;Import UAV Settings&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    fileName = QFileDialog::getOpenFileName(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Import UAV Settings&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty()) {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
@@ -560,7 +560,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    QString fileName;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    QString filters = tr(<span class="stringliteral">&quot;UAVObjects XML files (*.uav)&quot;</span>);</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    fileName = QFileDialog::getSaveFileName(0, tr(<span class="stringliteral">&quot;Save UAVSettings File As&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    fileName = QFileDialog::getSaveFileName(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Save UAVSettings File As&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty()) {</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    }</div>
@@ -581,7 +581,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly) &amp;&amp; (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(xml.toLatin1()) != -1)) {</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        QMessageBox::critical(0, tr(<span class="stringliteral">&quot;UAV Settings Export&quot;</span>),</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        QMessageBox::critical(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;UAV Settings Export&quot;</span>),</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                              tr(<span class="stringliteral">&quot;Unable to save settings: &quot;</span>) + fileName, QMessageBox::Ok);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    }</div>
@@ -595,7 +595,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">// Slot called by the menu manager on user action</span></div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_settings_import_export.html#gad0bd9cdf24c5c2a88512ae945ae6a447">UAVSettingsImportExportManager::exportUAVData</a>()</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;{</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::question(0, tr(<span class="stringliteral">&quot;Are you sure?&quot;</span>),</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordflow">if</span> (QMessageBox::question(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Are you sure?&quot;</span>),</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                              tr(<span class="stringliteral">&quot;This option is only useful for passing your current &quot;</span></div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                                 <span class="stringliteral">&quot;system data to the technical support staff. &quot;</span></div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                                 <span class="stringliteral">&quot;Do you really want to export?&quot;</span>),</div>
@@ -608,7 +608,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    QString fileName;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    QString filters = tr(<span class="stringliteral">&quot;UAVObjects XML files (*.uav)&quot;</span>);</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    fileName = QFileDialog::getSaveFileName(0, tr(<span class="stringliteral">&quot;Save UAVData File As&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    fileName = QFileDialog::getSaveFileName(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Save UAVData File As&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, filters);</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">if</span> (fileName.isEmpty()) {</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    }</div>
@@ -629,7 +629,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.open(QIODevice::WriteOnly) &amp;&amp; (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(xml.toLatin1()) != -1)) {</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        QMessageBox::critical(0, tr(<span class="stringliteral">&quot;UAV Data Export&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save data: &quot;</span>) + fileName,</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        QMessageBox::critical(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;UAV Data Export&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save data: &quot;</span>) + fileName,</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                              QMessageBox::Ok);</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
@@ -674,6 +674,7 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="actionmanager_8h.html">actionmanager.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga8e2fb85a38cf8aedef4ada147ef05f83"><div class="ttname"><a href="group___core_plugin.html#ga8e2fb85a38cf8aedef4ada147ef05f83">Core::Constants::G_HELP_HELP</a></div><div class="ttdeci">const char *const G_HELP_HELP</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00201">coreconstants.h:201</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga66d26fa392336cb3555c5f4f5ee2f1cc"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga66d26fa392336cb3555c5f4f5ee2f1cc">UAVObjectField::getNumElements</a></div><div class="ttdeci">int getNumElements() const </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectfield_8cpp_source.html#l00655">uavobjectfield.cpp:655</a></div></div>
+<div class="ttc" id="group___u_a_v_settings_import_export_html_ga49509a708cabd6d102ef8c59cab9036c"><div class="ttname"><a href="group___u_a_v_settings_import_export.html#ga49509a708cabd6d102ef8c59cab9036c">UAVSettingsImportExportManager::UAVSettingsImportExportManager</a></div><div class="ttdeci">UAVSettingsImportExportManager(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="uavsettingsimportexportmanager_8cpp_source.html#l00066">uavsettingsimportexportmanager.cpp:66</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5e44e7795213bb2627acfa08a13f6a12"><div class="ttname"><a href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">Core::ICore::actionManager</a></div><div class="ttdeci">virtual ActionManager * actionManager() const =0</div><div class="ttdoc">Returns the application&#39;s action manager. </div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="group___u_a_v_settings_import_export_html_gad0bd9cdf24c5c2a88512ae945ae6a447"><div class="ttname"><a href="group___u_a_v_settings_import_export.html#gad0bd9cdf24c5c2a88512ae945ae6a447">UAVSettingsImportExportManager::exportUAVData</a></div><div class="ttdeci">void exportUAVData()</div></div>
@@ -722,7 +723,6 @@ $(document).ready(function(){initNavTree('uavsettingsimportexportmanager_8cpp_so
 <div class="ttc" id="classdevice_descriptor_struct_html"><div class="ttname"><a href="classdevice_descriptor_struct.html">deviceDescriptorStruct</a></div><div class="ttdef"><b>Definition:</b> <a href="devicedescriptorstruct_8h_source.html#l00034">devicedescriptorstruct.h:34</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9c113847ecf6bd99cf7efe3535620e66"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9c113847ecf6bd99cf7efe3535620e66">UAVDataObject::clone</a></div><div class="ttdeci">virtual UAVDataObject * clone(quint32 instID=0)=0</div></div>
-<div class="ttc" id="group___u_a_v_settings_import_export_html_gac32b68bf12c1286fbbdd1106af7f518f"><div class="ttname"><a href="group___u_a_v_settings_import_export.html#gac32b68bf12c1286fbbdd1106af7f518f">UAVSettingsImportExportManager::UAVSettingsImportExportManager</a></div><div class="ttdeci">UAVSettingsImportExportManager(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavsettingsimportexportmanager_8cpp_source.html#l00066">uavsettingsimportexportmanager.cpp:66</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a8760c7f0db08dc03416f4c8c3fc08f02"><div class="ttname"><a href="uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02">error</a></div><div class="ttdeci">else error('Your technical computing program does not support file choosers.Please input the file name in the argument. ') end elseif nargin &gt;0 logfile</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab0eb14551119e370daee5cf188961831"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab0eb14551119e370daee5cf188961831">UAVObjectUtilManager::getBoardDescriptionStruct</a></div><div class="ttdeci">bool getBoardDescriptionStruct(deviceDescriptorStruct &amp;device)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8cpp_source.html#l00661">uavobjectutilmanager.cpp:661</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>

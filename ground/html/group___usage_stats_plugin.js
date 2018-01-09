@@ -3,7 +3,7 @@ var group___usage_stats_plugin =
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
     [ "UsageStatsOptionPage", "class_usage_stats_option_page.html", [
-      [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga0ba9b9a012f84544f18f333e02971286", null ],
+      [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga8444f7d5b58ce0e8aa0d3c348c43923b", null ],
       [ "~UsageStatsOptionPage", "group___usage_stats_plugin.html#ga56533f7b0a9065384ebdf99fa3626006", null ],
       [ "apply", "group___usage_stats_plugin.html#ga6d38ab14fe321a510df306c7ed91cbd3", null ],
       [ "category", "group___usage_stats_plugin.html#ga2c7940c64444fc8fba272cfbb89e9f40", null ],
@@ -63,7 +63,7 @@ var group___usage_stats_plugin =
     [ "id", "group___usage_stats_plugin.html#gab9f33fda50999936235ac45e73fb02e0", null ],
     [ "trCategory", "group___usage_stats_plugin.html#gaa573b10f352914e148b65b917fd2ef12", null ],
     [ "trName", "group___usage_stats_plugin.html#ga248afbba4dbf4ef3f268c1eb114e48e0", null ],
-    [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga0ba9b9a012f84544f18f333e02971286", null ],
+    [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga8444f7d5b58ce0e8aa0d3c348c43923b", null ],
     [ "~UsageStatsOptionPage", "group___usage_stats_plugin.html#ga56533f7b0a9065384ebdf99fa3626006", null ],
     [ "board", "group___usage_stats_plugin.html#ga8af3b37c74a2b4bad4a90a9f15120a98", null ],
     [ "className", "group___usage_stats_plugin.html#ga2ae977df58ffb21d98ca8c86ab332632", null ],

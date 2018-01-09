@@ -1,6 +1,6 @@
 var class_config_gadget_factory =
 [
-    [ "ConfigGadgetFactory", "group___config_plugin.html#ga7785d39aeb34203184e554b3f3efda71", null ],
+    [ "ConfigGadgetFactory", "group___config_plugin.html#ga5c197e853f64f4f4654ea01f532294b9", null ],
     [ "~ConfigGadgetFactory", "group___config_plugin.html#gad9021aa0495e8db3dbaf86f04d7ae1e1", null ],
     [ "createConfiguration", "group___config_plugin.html#gad4b30018cb53b866caf602b7f5409b0c", null ],
     [ "createGadget", "group___config_plugin.html#ga0a27d1d7799dadf3e68617090af3054c", null ],

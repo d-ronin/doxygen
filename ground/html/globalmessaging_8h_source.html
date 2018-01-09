@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,8 +140,8 @@ $(document).ready(function(){initNavTree('globalmessaging_8h_source.html','');})
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a>(QString brief, QString description, <a class="code" href="group___core_plugin.html#ga51bd6651e9cc7b45aeaff9bd5991be3d">MessageType</a> type,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           QObject *parent = 0);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a>(<a class="code" href="group___core_plugin.html#ga51bd6651e9cc7b45aeaff9bd5991be3d">MessageType</a> = <a class="code" href="group___core_plugin.html#gga51bd6651e9cc7b45aeaff9bd5991be3da1b81696793f3033d6741d6b8a59ac60a">ERROR</a>, QObject *parent = 0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a>(<a class="code" href="group___core_plugin.html#ga51bd6651e9cc7b45aeaff9bd5991be3d">MessageType</a> = <a class="code" href="group___core_plugin.html#gga51bd6651e9cc7b45aeaff9bd5991be3da1b81696793f3033d6741d6b8a59ac60a">ERROR</a>, QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setActive(<span class="keywordtype">bool</span> value);</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga05b5cb5bd16c393a06028e18827e1869">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga05b5cb5bd16c393a06028e18827e1869">isActive</a>() { <span class="keywordflow">return</span> m_active; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaf3383d5bfaeb02ba674ed8d30b1fa762">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#gaf3383d5bfaeb02ba674ed8d30b1fa762">setText</a>(QString brief, QString description)</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('globalmessaging_8h_source.html','');})
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_core_1_1_global_messaging.html">GlobalMessaging</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_core_1_1_global_messaging.html">GlobalMessaging</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a> *addErrorMessage(QString brief, QString description);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a> *addWarningMessage(QString brief, QString description);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_core_1_1_global_message.html">GlobalMessage</a> *addInfoMessage(QString brief, QString description);</div>

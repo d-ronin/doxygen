@@ -1,6 +1,6 @@
 var class_logging_gadget_widget =
 [
-    [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#ga82895cf265acb40f6491abf90e3b018e", null ],
+    [ "LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#gae936c37b875fdef1ba49413da616f9d4", null ],
     [ "~LoggingGadgetWidget", "group___g_c_s_control_gadget_plugin.html#gafa54fcc426f5064c9706b1528834d6a0", null ],
     [ "pause", "group___g_c_s_control_gadget_plugin.html#gab36252efc1545bad1c46720b2fd92a22", null ],
     [ "play", "group___g_c_s_control_gadget_plugin.html#gabd0c6db2a3fecf6afb525d40bc12431c", null ],

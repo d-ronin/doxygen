@@ -1,6 +1,6 @@
 var class_telemetry_monitor_widget =
 [
-    [ "TelemetryMonitorWidget", "group___core_plugin.html#gad504dfdc75617a3ffeca5fe48d5d4213", null ],
+    [ "TelemetryMonitorWidget", "group___core_plugin.html#gac6daec181041b0907ebc6fdb894dddc9", null ],
     [ "~TelemetryMonitorWidget", "group___core_plugin.html#gaabfd0e1f4c040820ba4ad3c945d57fae", null ],
     [ "connected", "group___core_plugin.html#gaa179b8e4f3d5521f7015fe7a0c2a72cd", null ],
     [ "disconnect", "group___core_plugin.html#ga94648c5dfd178bef04f3050534c2ab8d", null ],

@@ -1,8 +1,8 @@
 var group___config =
 [
     [ "TextBubbleSlider", "class_text_bubble_slider.html", [
-      [ "TextBubbleSlider", "group___config.html#ga36f48122dd6ede58ce2af197545ec5da", null ],
-      [ "TextBubbleSlider", "group___config.html#ga946611524e61173f8906a3ade3e95f4f", null ],
+      [ "TextBubbleSlider", "group___config.html#gaa5bc243d585ad79eb59052e26d7161c6", null ],
+      [ "TextBubbleSlider", "group___config.html#gaebda11e2a5bcdf587ed78f2de1e914a8", null ],
       [ "~TextBubbleSlider", "group___config.html#ga0d16cdfa68728a214371e47301f6bc83", null ],
       [ "construct", "group___config.html#ga51e91e7a3d6ac7c424c2dccfccc02e93", null ],
       [ "paintEvent", "group___config.html#gab0705ae2ed8315a664fdab88f9b03d1b", null ],
@@ -19,8 +19,8 @@ var group___config =
     [ "setMaximum", "group___config.html#gac0a14bfa318699fb34465e8cc44c1577", null ],
     [ "setMinimum", "group___config.html#gac43a151be5c23295b05bfd26c6cffb7e", null ],
     [ "sliderPosFromValue", "group___config.html#gaf2fd3f93705d124c2a6c660edf425568", null ],
-    [ "TextBubbleSlider", "group___config.html#ga36f48122dd6ede58ce2af197545ec5da", null ],
-    [ "TextBubbleSlider", "group___config.html#ga946611524e61173f8906a3ade3e95f4f", null ],
+    [ "TextBubbleSlider", "group___config.html#gaa5bc243d585ad79eb59052e26d7161c6", null ],
+    [ "TextBubbleSlider", "group___config.html#gaebda11e2a5bcdf587ed78f2de1e914a8", null ],
     [ "~TextBubbleSlider", "group___config.html#ga0d16cdfa68728a214371e47301f6bc83", null ],
     [ "setIndicatorValue", "group___config.html#ga75507724e69d5e7c5927c6ade2d988db", null ]
 ];

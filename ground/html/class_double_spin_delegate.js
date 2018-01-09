@@ -1,6 +1,6 @@
 var class_double_spin_delegate =
 [
-    [ "DoubleSpinDelegate", "group___config_plugin.html#ga53d62f046bdee3e5b67f2b82aaa08a8a", null ],
+    [ "DoubleSpinDelegate", "group___config_plugin.html#ga3700cc938f3eacdf23c12d7a9a4a6d3d", null ],
     [ "createEditor", "group___config_plugin.html#ga33340622f34643415ef4fc706e9a6350", null ],
     [ "setDecimals", "group___config_plugin.html#ga11e87a1f2a87beb99eff9abd3ed39c70", null ],
     [ "setEditorData", "group___config_plugin.html#ga7016b6a15b52b4f03fe882a1ceac795a", null ],

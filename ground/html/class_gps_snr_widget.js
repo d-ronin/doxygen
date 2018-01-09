@@ -1,6 +1,6 @@
 var class_gps_snr_widget =
 [
-    [ "GpsSnrWidget", "class_gps_snr_widget.html#a7ea7b55afc5cd80d895ea0150d16f10b", null ],
+    [ "GpsSnrWidget", "class_gps_snr_widget.html#ab789c7b52b7c9013a3cbfc4c33b6787e", null ],
     [ "~GpsSnrWidget", "class_gps_snr_widget.html#a81e2e0638608c2aaee946080fa3c5101", null ],
     [ "resizeEvent", "class_gps_snr_widget.html#a0590fc0d2e8dc75bb780adc0d546631a", null ],
     [ "satellitesDone", "class_gps_snr_widget.html#a6da9939269418f44de4d2edcb35134c3", null ],

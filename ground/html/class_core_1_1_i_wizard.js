@@ -5,7 +5,7 @@ var class_core_1_1_i_wizard =
       [ "ClassWizard", "group___core_plugin.html#gga90d21d8ad72cb14ddb8486fdff7b51f4ab0cb08b20b12fbf556268c165353035a", null ],
       [ "ProjectWizard", "group___core_plugin.html#gga90d21d8ad72cb14ddb8486fdff7b51f4a458498ed994138c90140befda7a20b58", null ]
     ] ],
-    [ "IWizard", "group___core_plugin.html#ga0316d3bb75bea70865e85986aa4ed08e", null ],
+    [ "IWizard", "group___core_plugin.html#gadb1cfb63b3cfe2aded27fefe9a1bf17d", null ],
     [ "~IWizard", "group___core_plugin.html#gac105c31c0637a11c0ae093f4045b920e", null ],
     [ "category", "group___core_plugin.html#ga36d083fbed01321396b7f13cabcf1e88", null ],
     [ "description", "group___core_plugin.html#ga4f4ab96df11d7229b9c4513d38f0b09c", null ],

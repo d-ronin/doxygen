@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('gpsconstellationwidget_8cpp_source.htm
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * Initialize the widget</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#gaa8d0d3435153893cbf167a1e5820d979">   35</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#gaa8d0d3435153893cbf167a1e5820d979">GpsConstellationWidget::GpsConstellationWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#gad390deed6eb7d172636e2a6a5c166636">   35</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#gad390deed6eb7d172636e2a6a5c166636">GpsConstellationWidget::GpsConstellationWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : QGraphicsView(parent)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('gpsconstellationwidget_8cpp_source.htm
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___g_p_s_gadget_plugin.html#gaa4c124f26c71bf318147e079011fe137">   83</a></span>&#160;<a class="code" href="group___g_p_s_gadget_plugin.html#gaa4c124f26c71bf318147e079011fe137">GpsConstellationWidget::~GpsConstellationWidget</a>()</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">delete</span> scene;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    scene = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    scene = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// delete renderer;</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// renderer = 0;</span></div>
@@ -288,12 +288,12 @@ $(document).ready(function(){initNavTree('gpsconstellationwidget_8cpp_source.htm
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> QPointF(x, y);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_gaa4c124f26c71bf318147e079011fe137"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gaa4c124f26c71bf318147e079011fe137">GpsConstellationWidget::~GpsConstellationWidget</a></div><div class="ttdeci">~GpsConstellationWidget()</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00083">gpsconstellationwidget.cpp:83</a></div></div>
-<div class="ttc" id="group___g_p_s_gadget_plugin_html_gaa8d0d3435153893cbf167a1e5820d979"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gaa8d0d3435153893cbf167a1e5820d979">GpsConstellationWidget::GpsConstellationWidget</a></div><div class="ttdeci">GpsConstellationWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00035">gpsconstellationwidget.cpp:35</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00140">OPPlots.m:140</a></div></div>
 <div class="ttc" id="gpsconstellationwidget_8h_html"><div class="ttname"><a href="gpsconstellationwidget_8h.html">gpsconstellationwidget.h</a></div></div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_ga6b206d00a88aa90134aba5ca815355a9"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#ga6b206d00a88aa90134aba5ca815355a9">GpsConstellationWidget::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00092">gpsconstellationwidget.cpp:92</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a9336ebf25087d91c818ee6e9ec29f8c1"><div class="ttname"><a href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00100">OPPlots.m:100</a></div></div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_gaa995e2d09a888698ad0aae9ba0a91ebf"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gaa995e2d09a888698ad0aae9ba0a91ebf">GpsConstellationWidget::updateSat</a></div><div class="ttdeci">void updateSat(int index, int prn, int elevation, int azimuth, int snr)</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00111">gpsconstellationwidget.cpp:111</a></div></div>
+<div class="ttc" id="group___g_p_s_gadget_plugin_html_gad390deed6eb7d172636e2a6a5c166636"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#gad390deed6eb7d172636e2a6a5c166636">GpsConstellationWidget::GpsConstellationWidget</a></div><div class="ttdeci">GpsConstellationWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00035">gpsconstellationwidget.cpp:35</a></div></div>
 <div class="ttc" id="group___g_p_s_gadget_plugin_html_ga33f2f0f0eba2737a2917b206fda14a11"><div class="ttname"><a href="group___g_p_s_gadget_plugin.html#ga33f2f0f0eba2737a2917b206fda14a11">GpsConstellationWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="gpsconstellationwidget_8cpp_source.html#l00105">gpsconstellationwidget.cpp:105</a></div></div>
 <div class="ttc" id="_o_p_plots_8m_html_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><div class="ttname"><a href="_o_p_plots_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a></div><div class="ttdeci">y</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00101">OPPlots.m:101</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

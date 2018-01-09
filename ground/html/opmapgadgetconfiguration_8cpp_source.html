@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('opmapgadgetconfiguration_8cpp_source.h
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathutils_8h.html">utils/pathutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be">   32</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be">OPMapGadgetConfiguration::OPMapGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9">   32</a></span>&#160;<a class="code" href="group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9">OPMapGadgetConfiguration::OPMapGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                   QObject *parent)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , m_mapProvider(<span class="stringliteral">&quot;GoogleHybrid&quot;</span>)</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('opmapgadgetconfiguration_8cpp_source.h
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// if a saved configuration exists load it</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (qSettings != 0) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (qSettings != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        QString <a class="code" href="group___o_p_map_plugin.html#ga377c1d600009ec04bfa92e3a259c7071">mapProvider</a> = qSettings-&gt;value(<span class="stringliteral">&quot;mapProvider&quot;</span>).toString();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="group___o_p_map_plugin.html#ga0e5e3cbf297d14ff236edcf0ce5f4c8f">zoom</a> = qSettings-&gt;value(<span class="stringliteral">&quot;defaultZoom&quot;</span>).toInt();</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('opmapgadgetconfiguration_8cpp_source.h
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group___o_p_map_plugin.html#gad04d5a814a94033d32e4bbb42321c105">  100</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___o_p_map_plugin.html#gad04d5a814a94033d32e4bbb42321c105">OPMapGadgetConfiguration::clone</a>()</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_o_p_map_gadget_configuration.html">OPMapGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be">OPMapGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_o_p_map_gadget_configuration.html">OPMapGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9">OPMapGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    m-&gt;m_mapProvider = m_mapProvider;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    m-&gt;m_defaultZoom = m_defaultZoom;</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('opmapgadgetconfiguration_8cpp_source.h
 <div class="ttc" id="group___o_p_map_plugin_html_ga2a0ae25b0c5f6fb24f2b2f791a9fe997"><div class="ttname"><a href="group___o_p_map_plugin.html#ga2a0ae25b0c5f6fb24f2b2f791a9fe997">OPMapGadgetConfiguration::accessMode</a></div><div class="ttdeci">QString accessMode() const </div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8h_source.html#l00066">opmapgadgetconfiguration.h:66</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga6dc1826f569bf6b39ff56efe116dda82"><div class="ttname"><a href="group___o_p_map_plugin.html#ga6dc1826f569bf6b39ff56efe116dda82">OPMapGadgetConfiguration::uavSymbol</a></div><div class="ttdeci">QString uavSymbol() const </div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8h_source.html#l00069">opmapgadgetconfiguration.h:69</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga377c1d600009ec04bfa92e3a259c7071"><div class="ttname"><a href="group___o_p_map_plugin.html#ga377c1d600009ec04bfa92e3a259c7071">OPMapGadgetConfiguration::mapProvider</a></div><div class="ttdeci">QString mapProvider() const </div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8h_source.html#l00061">opmapgadgetconfiguration.h:61</a></div></div>
-<div class="ttc" id="group___o_p_map_plugin_html_gad087f5e0479a0571692363c3771744be"><div class="ttname"><a href="group___o_p_map_plugin.html#gad087f5e0479a0571692363c3771744be">OPMapGadgetConfiguration::OPMapGadgetConfiguration</a></div><div class="ttdeci">OPMapGadgetConfiguration(QString classId, QSettings *qSettings=0, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8cpp_source.html#l00032">opmapgadgetconfiguration.cpp:32</a></div></div>
+<div class="ttc" id="group___o_p_map_plugin_html_ga7fdb7e3d84f74e069f57c52ecaef20b9"><div class="ttname"><a href="group___o_p_map_plugin.html#ga7fdb7e3d84f74e069f57c52ecaef20b9">OPMapGadgetConfiguration::OPMapGadgetConfiguration</a></div><div class="ttdeci">OPMapGadgetConfiguration(QString classId, QSettings *qSettings=nullptr, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8cpp_source.html#l00032">opmapgadgetconfiguration.cpp:32</a></div></div>
 <div class="ttc" id="group___o_p_map_plugin_html_ga7e3ff578900f8a9c8915321046955fc7"><div class="ttname"><a href="group___o_p_map_plugin.html#ga7e3ff578900f8a9c8915321046955fc7">OPMapGadgetConfiguration::saveConfig</a></div><div class="ttdeci">void saveConfig() const </div><div class="ttdef"><b>Definition:</b> <a href="opmapgadgetconfiguration_8cpp_source.html#l00122">opmapgadgetconfiguration.cpp:122</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html"><div class="ttname"><a href="class_utils_1_1_path_utils.html">Utils::PathUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8h_source.html#l00040">pathutils.h:40</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html_a58a574f94e7fde2e7746820edba96ce2"><div class="ttname"><a href="class_utils_1_1_path_utils.html#a58a574f94e7fde2e7746820edba96ce2">Utils::PathUtils::InsertStoragePath</a></div><div class="ttdeci">QString InsertStoragePath(QString path)</div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8cpp_source.html#l00135">pathutils.cpp:135</a></div></div>

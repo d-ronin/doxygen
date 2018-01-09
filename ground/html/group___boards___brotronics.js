@@ -20,7 +20,7 @@ var group___boards___brotronics =
       [ "shortName", "group___boards___brotronics.html#ga0b01712245ba9a90bf84985b4858f115", null ]
     ] ],
     [ "LuxConfiguration", "class_lux_configuration.html", [
-      [ "LuxConfiguration", "group___boards___brotronics.html#ga1ad8e3514c986e568a746e47d40f3f46", null ],
+      [ "LuxConfiguration", "group___boards___brotronics.html#ga6a60e3da082c46ad314263fe2d869d06", null ],
       [ "~LuxConfiguration", "group___boards___brotronics.html#gad495647f1d5b4ec9a6cb0e3859f51dbc", null ]
     ] ],
     [ "boardDescription", "group___boards___brotronics.html#ga4f9328dfa90ca254ca73daa00289c6a1", null ],
@@ -33,7 +33,7 @@ var group___boards___brotronics =
     [ "hasAnnunciator", "group___boards___brotronics.html#ga4fb1639f1717917d0782ce7799f4b6d9", null ],
     [ "isInputConfigurationSupported", "group___boards___brotronics.html#ga5e5f61cd702bd2ece92488903c0a4416", null ],
     [ "Lux", "group___boards___brotronics.html#ga80306e11ca9c414512d59280de146dba", null ],
-    [ "LuxConfiguration", "group___boards___brotronics.html#ga1ad8e3514c986e568a746e47d40f3f46", null ],
+    [ "LuxConfiguration", "group___boards___brotronics.html#ga6a60e3da082c46ad314263fe2d869d06", null ],
     [ "queryCapabilities", "group___boards___brotronics.html#ga7e6c7469153d1f28a287e375bbd25321", null ],
     [ "queryMaxGyroRate", "group___boards___brotronics.html#gad740b90578b527834dcda455fecabff5", null ],
     [ "setInputType", "group___boards___brotronics.html#ga4da76d6bd3bf0143650be904d1e63831", null ],

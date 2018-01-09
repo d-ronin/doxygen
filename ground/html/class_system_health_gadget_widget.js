@@ -1,6 +1,6 @@
 var class_system_health_gadget_widget =
 [
-    [ "SystemHealthGadgetWidget", "group___system_health_plugin.html#ga8c9b20860af6995ec8b6970079e00477", null ],
+    [ "SystemHealthGadgetWidget", "group___system_health_plugin.html#gace66093765675c2f29a87068689e8763", null ],
     [ "~SystemHealthGadgetWidget", "group___system_health_plugin.html#gaafd1c69ed4569708eef2b628c1125ea8", null ],
     [ "mousePressEvent", "group___system_health_plugin.html#ga2558a85d789a3f51c15c92ac329b26d7", null ],
     [ "paint", "group___system_health_plugin.html#ga58a24548867f2bb40b36dfc3e0fc4b9e", null ],

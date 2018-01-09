@@ -1,6 +1,6 @@
 var class_log_file =
 [
-    [ "LogFile", "class_log_file.html#a7a1cbbcbd9207aff498200f43afc000b", null ],
+    [ "LogFile", "class_log_file.html#a6497750599050cde3613ae741a837a74", null ],
     [ "bytesAvailable", "class_log_file.html#a9b005cee5c39390f3bfd483169dd61fa", null ],
     [ "bytesToWrite", "class_log_file.html#a04610a21928198bfa0d62cc93ff6e439", null ],
     [ "close", "class_log_file.html#a562305d5cd6f15bbebf4c0ad29fb553c", null ],

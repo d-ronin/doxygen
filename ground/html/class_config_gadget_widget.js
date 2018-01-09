@@ -13,7 +13,7 @@ var class_config_gadget_widget =
       [ "autotune", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a446519617d79946d8c73fedbaf8b4e60", null ],
       [ "osd", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561", null ]
     ] ],
-    [ "ConfigGadgetWidget", "group___config_plugin.html#gafc45c197f2917c39166b7d228d592784", null ],
+    [ "ConfigGadgetWidget", "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc", null ],
     [ "~ConfigGadgetWidget", "group___config_plugin.html#gaeafab35f30d35ed548cda276953b8ad5", null ],
     [ "autopilotConnected", "group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807", null ],
     [ "autopilotDisconnected", "group___config_plugin.html#ga1ba3ecc94d2a793f945493631cc7be34", null ],

@@ -1,6 +1,6 @@
 var class_my_tabbed_stack_widget =
 [
-    [ "MyTabbedStackWidget", "class_my_tabbed_stack_widget.html#a45f38b17b9cbdb32460e12c2ccfd5bc5", null ],
+    [ "MyTabbedStackWidget", "class_my_tabbed_stack_widget.html#ac285ccc2e0c3860fc02734b733867598", null ],
     [ "currentAboutToShow", "class_my_tabbed_stack_widget.html#a9f0e64fce4a1b4f26e9aa6fee22ab7f5", null ],
     [ "currentChanged", "class_my_tabbed_stack_widget.html#ab4617839c400d58c804ba6b86dc33cc1", null ],
     [ "currentIndex", "class_my_tabbed_stack_widget.html#a791fd756fe24cbd0e0334335701915e1", null ],

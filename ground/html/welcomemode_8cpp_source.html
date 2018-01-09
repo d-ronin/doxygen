@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('welcomemode_8cpp_source.html','');});
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QVector&lt;IMode *&gt; modes = <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#gacb5777b1677fecee4e8a9bca2e41c8ae">modes</a>();</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QStringList modeNames;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="group___core_plugin.html#gaccbaa8bb681f8edbb321c1c05be26b9f">IMode</a> *mode, modes)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="group___core_plugin.html#gaddeec2893f82616165b8baaa16999356">IMode</a> *mode, modes)</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        modeNames.append(mode-&gt;name());</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">auto</span> buttons = m_d-&gt;<a class="code" href="group___welcome_plugin.html#gaa6a0765661618a3824000c506df6de9d">quickView</a>-&gt;rootObject()-&gt;findChild&lt;QObject *&gt;(<span class="stringliteral">&quot;modeButtons&quot;</span>);</div>
@@ -265,12 +265,12 @@ $(document).ready(function(){initNavTree('welcomemode_8cpp_source.html','');});
 <div class="ttc" id="pathutils_8h_html"><div class="ttname"><a href="pathutils_8h.html">pathutils.h</a></div></div>
 <div class="ttc" id="group___welcome_plugin_html_gaa6a0765661618a3824000c506df6de9d"><div class="ttname"><a href="group___welcome_plugin.html#gaa6a0765661618a3824000c506df6de9d">Welcome::WelcomeModePrivate::quickView</a></div><div class="ttdeci">QQuickView * quickView</div><div class="ttdef"><b>Definition:</b> <a href="welcomemode_8cpp_source.html#l00062">welcomemode.cpp:62</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga753353ca9958604a964c9cf807b77e60"><div class="ttname"><a href="group___core_plugin.html#ga753353ca9958604a964c9cf807b77e60">Core::UniqueIDManager::uniqueIdentifier</a></div><div class="ttdeci">int uniqueIdentifier(const QString &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="uniqueidmanager_8cpp_source.html#l00051">uniqueidmanager.cpp:51</a></div></div>
+<div class="ttc" id="group___core_plugin_html_gaddeec2893f82616165b8baaa16999356"><div class="ttname"><a href="group___core_plugin.html#gaddeec2893f82616165b8baaa16999356">Core::IMode::IMode</a></div><div class="ttdeci">IMode(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="imode_8h_source.html#l00045">imode.h:45</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga756ec59f5104cce0abf8a6990a2bba2c"><div class="ttname"><a href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a></div><div class="ttdeci">static ModeManager * instance()</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00062">modemanager.h:62</a></div></div>
 <div class="ttc" id="pluginmanager_8h_html"><div class="ttname"><a href="pluginmanager_8h.html">pluginmanager.h</a></div></div>
 <div class="ttc" id="group___welcome_plugin_html_gabf623de0434e61036632f9a4dd3f06d3"><div class="ttname"><a href="group___welcome_plugin.html#gabf623de0434e61036632f9a4dd3f06d3">Welcome::WelcomeMode::triggerAction</a></div><div class="ttdeci">void triggerAction(const QString &amp;actionId)</div><div class="ttdef"><b>Definition:</b> <a href="welcomemode_8cpp_source.html#l00143">welcomemode.cpp:143</a></div></div>
 <div class="ttc" id="uniqueidmanager_8h_html"><div class="ttname"><a href="uniqueidmanager_8h.html">uniqueidmanager.h</a></div></div>
 <div class="ttc" id="group___welcome_plugin_html_gae1d1437fdc5e83102dc1da5cc809834f"><div class="ttname"><a href="group___welcome_plugin.html#gae1d1437fdc5e83102dc1da5cc809834f">Welcome::WelcomeMode::priority</a></div><div class="ttdeci">int priority() const </div><div class="ttdef"><b>Definition:</b> <a href="welcomemode_8cpp_source.html#l00111">welcomemode.cpp:111</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaccbaa8bb681f8edbb321c1c05be26b9f"><div class="ttname"><a href="group___core_plugin.html#gaccbaa8bb681f8edbb321c1c05be26b9f">Core::IMode::IMode</a></div><div class="ttdeci">IMode(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="imode_8h_source.html#l00045">imode.h:45</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gad0a5b162b3b87854267c5508b62a9346"><div class="ttname"><a href="group___core_plugin.html#gad0a5b162b3b87854267c5508b62a9346">Core::Constants::C_WELCOME_MODE</a></div><div class="ttdeci">const char *const C_WELCOME_MODE</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00091">coreconstants.h:91</a></div></div>
 <div class="ttc" id="struct_welcome_1_1_welcome_mode_private_html"><div class="ttname"><a href="struct_welcome_1_1_welcome_mode_private.html">Welcome::WelcomeModePrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="welcomemode_8cpp_source.html#l00058">welcomemode.cpp:58</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gacb5777b1677fecee4e8a9bca2e41c8ae"><div class="ttname"><a href="group___core_plugin.html#gacb5777b1677fecee4e8a9bca2e41c8ae">Core::ModeManager::modes</a></div><div class="ttdeci">QVector&lt; IMode * &gt; modes() const </div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8h_source.html#l00070">modemanager.h:70</a></div></div>

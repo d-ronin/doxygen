@@ -10,7 +10,7 @@ var group___config_plugin =
       [ "Used", "group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac", null ]
     ] ],
     [ "ConfigCcpmWidget", "class_config_ccpm_widget.html", [
-      [ "ConfigCcpmWidget", "group___config_plugin.html#gad02f1999c6fe879b07303698416ff782", null ],
+      [ "ConfigCcpmWidget", "group___config_plugin.html#ga648c92862d593b6223f2ddf51180e03a", null ],
       [ "~ConfigCcpmWidget", "group___config_plugin.html#ga1c115c3e78572da9895bc485b6ed507e", null ],
       [ "getMixer", "group___config_plugin.html#ga655f5771884dcc4da79423c9f233ccca", null ],
       [ "resizeEvent", "group___config_plugin.html#gaa76c187cd732f13b15ee909af137487f", null ],
@@ -20,17 +20,17 @@ var group___config_plugin =
       [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gaf1f904d5df6619518f3228b2d5d238d0", null ]
     ] ],
     [ "ConfigFixedWingWidget", "class_config_fixed_wing_widget.html", [
-      [ "ConfigFixedWingWidget", "group___config_plugin.html#gaee3501121903de9f9860f69611fd07e6", null ],
+      [ "ConfigFixedWingWidget", "group___config_plugin.html#ga63260cdf032f79c1c5cecc41bb1a4ce9", null ],
       [ "~ConfigFixedWingWidget", "group___config_plugin.html#ga9f0af233f9470bbaab33d70b96644cef", null ],
       [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gaf1f904d5df6619518f3228b2d5d238d0", null ]
     ] ],
     [ "ConfigGroundVehicleWidget", "class_config_ground_vehicle_widget.html", [
-      [ "ConfigGroundVehicleWidget", "group___config_plugin.html#ga7d15969655ebd8ccde81977fd63cc516", null ],
+      [ "ConfigGroundVehicleWidget", "group___config_plugin.html#gaeec4ee008a5e3f4a045e4e5b47b32758", null ],
       [ "~ConfigGroundVehicleWidget", "group___config_plugin.html#ga9104e5fbab423b4e0f0b1f7bc92b4a87", null ],
       [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gaf1f904d5df6619518f3228b2d5d238d0", null ]
     ] ],
     [ "ConfigMultiRotorWidget", "class_config_multi_rotor_widget.html", [
-      [ "ConfigMultiRotorWidget", "group___config_plugin.html#ga1f8b823890ddd40ac391df9aa59cfd79", null ],
+      [ "ConfigMultiRotorWidget", "group___config_plugin.html#ga38e85355ab22dfd04787592d0a47347a", null ],
       [ "~ConfigMultiRotorWidget", "group___config_plugin.html#gac8ee6c628cb4f8f195395978f8f086bb", null ],
       [ "configurationChanged", "group___config_plugin.html#ga716e8f2fab4b0afb5b3c2df16b199259", null ],
       [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gaf1f904d5df6619518f3228b2d5d238d0", null ]
@@ -43,7 +43,7 @@ var group___config_plugin =
       [ "UAVObject", "group___config_plugin.html#ga1a1fbf9187086cc92fac84f33f19402f", null ]
     ] ],
     [ "VehicleConfig", "class_vehicle_config.html", [
-      [ "VehicleConfig", "group___config_plugin.html#ga369dba1a2bcda89963b25078cbf89fd9", null ],
+      [ "VehicleConfig", "group___config_plugin.html#ga1f721670521eb23a5d733b5c34096a21", null ],
       [ "~VehicleConfig", "group___config_plugin.html#ga440451fa05e53fc37b5dfafc439cd681", null ],
       [ "getCurveMax", "group___config_plugin.html#ga7d87a7cb73a87543dc94b23e4e4132d8", null ],
       [ "getCurveMin", "group___config_plugin.html#gae535c3bae8862f72e05f9247a3921b78", null ],
@@ -67,7 +67,7 @@ var group___config_plugin =
     ] ],
     [ "Thread", "class_thread.html", null ],
     [ "ConfigAttitudeWidget", "class_config_attitude_widget.html", [
-      [ "ConfigAttitudeWidget", "group___config_plugin.html#ga56d10f1f43df3e0490f765a0e36eba72", null ],
+      [ "ConfigAttitudeWidget", "group___config_plugin.html#ga0c45c1f74a393884ee2ca556b0b3151a", null ],
       [ "~ConfigAttitudeWidget", "group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705", null ],
       [ "resizeEvent", "group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531", null ],
       [ "showEvent", "group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39", null ],
@@ -112,25 +112,25 @@ var group___config_plugin =
       [ "AutotuneFinalPage", "group___config_plugin.html#ga852eb306c4386465570a15f2e4d19f0e", null ]
     ] ],
     [ "ConfigAutotuneWidget", "class_config_autotune_widget.html", [
-      [ "ConfigAutotuneWidget", "group___config_plugin.html#gaed50d4a819680b38d6f9ecb6f9476f92", null ]
+      [ "ConfigAutotuneWidget", "group___config_plugin.html#ga9d943609b560c671923d57797ece07b9", null ]
     ] ],
     [ "ConfigCameraStabilizationWidget", "class_config_camera_stabilization_widget.html", [
-      [ "ConfigCameraStabilizationWidget", "group___config_plugin.html#gaadc56cb83f84d7f34491592b248a111a", null ],
+      [ "ConfigCameraStabilizationWidget", "group___config_plugin.html#ga75e27fbf7a90d67b52a163a30241a0da", null ],
       [ "~ConfigCameraStabilizationWidget", "group___config_plugin.html#ga6294d4eae582574215951c5213ae4e0b", null ]
     ] ],
     [ "ConfigGadget", "class_config_gadget.html", [
-      [ "ConfigGadget", "group___config_plugin.html#gae5427c3bad5fe19de2f24710fd629d87", null ],
+      [ "ConfigGadget", "group___config_plugin.html#gae88b68cb98f08911abe7e3f977e70bad", null ],
       [ "~ConfigGadget", "group___config_plugin.html#ga6fbabaaacad7e51739c18053d5aa83fd", null ],
       [ "loadConfiguration", "group___config_plugin.html#ga43acf4e389daaf28085a3773b4abc903", null ],
       [ "widget", "group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546", null ]
     ] ],
     [ "ConfigGadgetConfiguration", "class_config_gadget_configuration.html", [
-      [ "ConfigGadgetConfiguration", "group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774", null ],
+      [ "ConfigGadgetConfiguration", "group___config_plugin.html#ga1a5e68d2f43df251d7e78385d2de3f98", null ],
       [ "clone", "group___config_plugin.html#gac237bebed60ca183ae60b2b4598acc47", null ],
       [ "saveConfig", "group___config_plugin.html#ga6b1f86f80d200736d29b69452e329040", null ]
     ] ],
     [ "ConfigGadgetFactory", "class_config_gadget_factory.html", [
-      [ "ConfigGadgetFactory", "group___config_plugin.html#ga7785d39aeb34203184e554b3f3efda71", null ],
+      [ "ConfigGadgetFactory", "group___config_plugin.html#ga5c197e853f64f4f4654ea01f532294b9", null ],
       [ "~ConfigGadgetFactory", "group___config_plugin.html#gad9021aa0495e8db3dbaf86f04d7ae1e1", null ],
       [ "createConfiguration", "group___config_plugin.html#gad4b30018cb53b866caf602b7f5409b0c", null ],
       [ "createGadget", "group___config_plugin.html#ga0a27d1d7799dadf3e68617090af3054c", null ],
@@ -138,7 +138,7 @@ var group___config_plugin =
       [ "startInputWizard", "group___config_plugin.html#ga12d479e09d53195a2226e61b1690124f", null ]
     ] ],
     [ "ConfigGadgetOptionsPage", "class_config_gadget_options_page.html", [
-      [ "ConfigGadgetOptionsPage", "group___config_plugin.html#ga2d5af20878472037582f441a56bca28c", null ],
+      [ "ConfigGadgetOptionsPage", "group___config_plugin.html#ga2966ffa4b74e53a2b2cb23426fca4a05", null ],
       [ "apply", "group___config_plugin.html#gab4d162de9174c38e3567e117a5b5c70f", null ],
       [ "createPage", "group___config_plugin.html#ga28c537e8f2468debe3c869bda53fd6c9", null ],
       [ "finish", "group___config_plugin.html#gae12bea8fac88d0fd0b9d3c95b0e62472", null ]
@@ -157,7 +157,7 @@ var group___config_plugin =
         [ "autotune", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a446519617d79946d8c73fedbaf8b4e60", null ],
         [ "osd", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a88682e4baafa6941f37810aa606a3561", null ]
       ] ],
-      [ "ConfigGadgetWidget", "group___config_plugin.html#gafc45c197f2917c39166b7d228d592784", null ],
+      [ "ConfigGadgetWidget", "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc", null ],
       [ "~ConfigGadgetWidget", "group___config_plugin.html#gaeafab35f30d35ed548cda276953b8ad5", null ],
       [ "autopilotConnected", "group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807", null ],
       [ "autopilotDisconnected", "group___config_plugin.html#ga1ba3ecc94d2a793f945493631cc7be34", null ],
@@ -228,7 +228,7 @@ var group___config_plugin =
         [ "wizardFinish", "group___config_plugin.html#ggaff6f51e26da0007601686dea42662026a05c6d240437bb431db8eab662f682479", null ],
         [ "wizardNone", "group___config_plugin.html#ggaff6f51e26da0007601686dea42662026aaaa99fe9278c167cddeef5610d52ea7a", null ]
       ] ],
-      [ "ConfigInputWidget", "group___config_plugin.html#ga5453669d3da8b5752b88e14cfca3ba03", null ],
+      [ "ConfigInputWidget", "group___config_plugin.html#ga45b4e4dd7daef8b4b8f846a20b19915c", null ],
       [ "~ConfigInputWidget", "group___config_plugin.html#gaa2ae4d78db5c283094de22747cd958b8", null ],
       [ "addMessage", "group___config_plugin.html#ga9cff0dc3fe7dfedf519e70c565cfe4e9", null ],
       [ "addWarning", "group___config_plugin.html#gabe2e73b6d14d8cf861680289d3318509", null ],
@@ -249,19 +249,19 @@ var group___config_plugin =
       [ "uavoOption", "group___config_plugin.html#ga3c35124dde789d121bc1a0140c0b682e", null ]
     ] ],
     [ "ConfigModuleWidget", "class_config_module_widget.html", [
-      [ "ConfigModuleWidget", "group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c", null ],
+      [ "ConfigModuleWidget", "group___config_plugin.html#ga1bf77fa2168d5730dfbfc2899d83b7ef", null ],
       [ "~ConfigModuleWidget", "group___config_plugin.html#ga9ecd35d3d3a34e937a75c62e7d197312", null ],
       [ "enableControls", "group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737", null ],
       [ "resizeEvent", "group___config_plugin.html#gad3993d8be203127b457a6179cde99d07", null ]
     ] ],
     [ "ConfigOsdWidget", "class_config_osd_widget.html", [
-      [ "ConfigOsdWidget", "group___config_plugin.html#ga125c5157490abae9f8d049960b8a007c", null ],
+      [ "ConfigOsdWidget", "group___config_plugin.html#ga1d92c9867f9e8a3d1b76d18e67463fa6", null ],
       [ "~ConfigOsdWidget", "group___config_plugin.html#gac65dd0179d3ebd376363447f7b1c8d6f", null ],
       [ "enableControls", "group___config_plugin.html#ga76df976b825f939b3c637d614e2f668a", null ],
       [ "resizeEvent", "group___config_plugin.html#gac8c4580cbf52e30fb2e08c7c9c1357e5", null ]
     ] ],
     [ "ConfigOutputWidget", "class_config_output_widget.html", [
-      [ "ConfigOutputWidget", "group___config_plugin.html#gae97fadc2217af00fbdcd40904dffdfcd", null ],
+      [ "ConfigOutputWidget", "group___config_plugin.html#ga615dce02849a13e1c6ec08acd50a5fcd", null ],
       [ "~ConfigOutputWidget", "group___config_plugin.html#ga583ddecf4689ec9d73a39ac36d47beb5", null ],
       [ "enableControls", "group___config_plugin.html#ga8c6d4684111bd4a10d4940a803faf852", null ]
     ] ],
@@ -269,22 +269,22 @@ var group___config_plugin =
       [ "launchSetupWizard", "group___config_plugin.html#gaef5fa3097080a8e3cd73cbe423ac2570", null ]
     ] ],
     [ "ConfigStabilizationWidget", "class_config_stabilization_widget.html", [
-      [ "ConfigStabilizationWidget", "group___config_plugin.html#ga7ede076de26384e87d8b8357b391c0b6", null ],
+      [ "ConfigStabilizationWidget", "group___config_plugin.html#ga50fb38f02cd96b756038eb4ac53551ac", null ],
       [ "~ConfigStabilizationWidget", "group___config_plugin.html#gaeca64ce80c3529dc40b452e3bcef2ffd", null ]
     ] ],
     [ "ConfigTxPIDWidget", "class_config_tx_p_i_d_widget.html", [
-      [ "ConfigTxPIDWidget", "group___config_plugin.html#ga2ecc01b090b6955e7204c19432ad8628", null ],
+      [ "ConfigTxPIDWidget", "group___config_plugin.html#ga7005fd2562e0f1e2803477919a6eee55", null ],
       [ "~ConfigTxPIDWidget", "group___config_plugin.html#ga2c39980676875ea742391215e79d5262", null ]
     ] ],
     [ "ConfigVehicleTypeWidget", "class_config_vehicle_type_widget.html", [
-      [ "ConfigVehicleTypeWidget", "group___config_plugin.html#ga073c5b646c2487874d095f97989f4358", null ],
+      [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gae7dec39543b16d8fd48a99b5d547ebf6", null ],
       [ "~ConfigVehicleTypeWidget", "group___config_plugin.html#ga7edb0b23fc32af7728baa08038a79202", null ],
       [ "resizeEvent", "group___config_plugin.html#gaa35315a56ddec502ecc1c683b51364d8", null ],
       [ "showEvent", "group___config_plugin.html#gab830a9c8fbb8c286953a005382701f94", null ]
     ] ],
     [ "SpinBoxDelegate", "class_spin_box_delegate.html", [
-      [ "SpinBoxDelegate", "group___config_plugin.html#gabf1b830266511d0237c97b46f49e01f9", null ],
-      [ "SpinBoxDelegate", "group___telemetry_scheduler_gadget_plugin.html#gabf1b830266511d0237c97b46f49e01f9", null ],
+      [ "SpinBoxDelegate", "group___config_plugin.html#gaf9ede7b7ba5c2da539579953e30399fa", null ],
+      [ "SpinBoxDelegate", "group___telemetry_scheduler_gadget_plugin.html#gaf9ede7b7ba5c2da539579953e30399fa", null ],
       [ "createEditor", "group___config_plugin.html#ga4fc1b4a209668b60b0834bdb1d36e1c0", null ],
       [ "createEditor", "group___telemetry_scheduler_gadget_plugin.html#gac8f09d5e036c7bd963db0e66e9ac1bfb", null ],
       [ "setEditorData", "group___config_plugin.html#gacbac1fc1091ef04b08ca9683a1d6f0ee", null ],
@@ -295,7 +295,7 @@ var group___config_plugin =
       [ "updateEditorGeometry", "group___telemetry_scheduler_gadget_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb", null ]
     ] ],
     [ "DoubleSpinDelegate", "class_double_spin_delegate.html", [
-      [ "DoubleSpinDelegate", "group___config_plugin.html#ga53d62f046bdee3e5b67f2b82aaa08a8a", null ],
+      [ "DoubleSpinDelegate", "group___config_plugin.html#ga3700cc938f3eacdf23c12d7a9a4a6d3d", null ],
       [ "createEditor", "group___config_plugin.html#ga33340622f34643415ef4fc706e9a6350", null ],
       [ "setDecimals", "group___config_plugin.html#ga11e87a1f2a87beb99eff9abd3ed39c70", null ],
       [ "setEditorData", "group___config_plugin.html#ga7016b6a15b52b4f03fe882a1ceac795a", null ],
@@ -308,12 +308,12 @@ var group___config_plugin =
       [ "ValueChanged", "group___config_plugin.html#ga71be1aadf5a0d023bda52f505cf7306f", null ]
     ] ],
     [ "DefaultHwSettingsWidget", "class_default_hw_settings_widget.html", [
-      [ "DefaultHwSettingsWidget", "group___config_plugin.html#gab254ef18e03d0c92544eb2f24539f009", null ],
+      [ "DefaultHwSettingsWidget", "group___config_plugin.html#ga9a3249c94fe2acafbef29df63bbcb132", null ],
       [ "~DefaultHwSettingsWidget", "group___config_plugin.html#ga0789663f8a021f1e85e03a41f99639c9", null ]
     ] ],
     [ "ExpoCurve", "class_expo_curve.html", [
       [ "ExpoPlotElements_t", "group___config_plugin.html#gadaa961e4a26918a96047fabfa71dca59", null ],
-      [ "ExpoCurve", "group___config_plugin.html#gab91ed7e9049530695187d75ffac16714", null ],
+      [ "ExpoCurve", "group___config_plugin.html#ga462c07d21ff1248a8c4916701441f341", null ],
       [ "init", "group___config_plugin.html#ga4f562384607ca5e90b84dd28422ff4a9", null ],
       [ "plotData", "group___config_plugin.html#ga23f5a0cba6e45a933f9efe8c941b8e72", null ],
       [ "plotDataPitch", "group___config_plugin.html#gafe692f6e960f0ac0e4127d6e88468971", null ],
@@ -329,7 +329,7 @@ var group___config_plugin =
         [ "MIXERCURVE_THROTTLE", "group___config_plugin.html#gga58a5506035df5fabbf4feffb36632595a7dbbc543ccc2e9b4f8ba98d66717a836", null ],
         [ "MIXERCURVE_OTHER", "group___config_plugin.html#gga58a5506035df5fabbf4feffb36632595adc44b10adb428e4fdde5f964bbc339b8", null ]
       ] ],
-      [ "MixerCurve", "group___config_plugin.html#ga1124f8bbbfadf0a60fe37c681a323689", null ],
+      [ "MixerCurve", "group___config_plugin.html#ga35d6673e0a561c51d1a31d67d8426b94", null ],
       [ "~MixerCurve", "group___config_plugin.html#ga1ecc6d88c82c0c4403185f1741bd096c", null ],
       [ "GenerateCurve", "group___config_plugin.html#gad1f7dbb9fdd65436b5886e20fa930d27", null ],
       [ "getCBCurveSource", "group___config_plugin.html#ga8822c0ca3bfdc63eaa942da572b0b8af", null ],
@@ -372,14 +372,14 @@ var group___config_plugin =
       [ "ConfigOnputWidget", "group___config_plugin.html#ga92a68401074780ed6cadf27f127892e3", null ]
     ] ],
     [ "QReadOnlyCheckBox", "class_q_read_only_check_box.html", [
-      [ "QReadOnlyCheckBox", "class_q_read_only_check_box.html#ae9a0f03898cad27c63ea182fa53e7c1c", null ],
+      [ "QReadOnlyCheckBox", "class_q_read_only_check_box.html#ab0974631ee78a9381210a91ca2536ff4", null ],
       [ "mousePressEvent", "class_q_read_only_check_box.html#a12a140c2ca4e42f08239ccb78f6cf4a6", null ],
       [ "mouseReleaseEvent", "class_q_read_only_check_box.html#aceded5dafb60500782cee72c94f74bc8", null ],
       [ "setReadOnly", "class_q_read_only_check_box.html#a76cf82821c265fc9b09939e8eb36545b", null ],
       [ "readOnly", "class_q_read_only_check_box.html#a36faecdbb66e2d9151515356bd0cc42f", null ]
     ] ],
     [ "TempCompCurve", "class_temp_comp_curve.html", [
-      [ "TempCompCurve", "group___config_plugin.html#gadde0ad4527ea2096cecb195d2a635014", null ],
+      [ "TempCompCurve", "group___config_plugin.html#ga4223f62af452dc0793ad284d5ece35b9", null ],
       [ "plotData", "group___config_plugin.html#ga19bcca9caf37d6e7360270c37542d1b5", null ]
     ] ],
     [ "ExpoPlotElements_t", "group___config_plugin.html#gadaa961e4a26918a96047fabfa71dca59", null ],
@@ -533,25 +533,25 @@ var group___config_plugin =
     [ "clone", "group___config_plugin.html#gac237bebed60ca183ae60b2b4598acc47", null ],
     [ "computeScaleBias", "group___config_plugin.html#gaae10034ae031c64a977309fed00e7a91", null ],
     [ "computeTempCal", "group___config_plugin.html#ga00f7ee1317e4c7b92b8c60a5f513698d", null ],
-    [ "ConfigAttitudeWidget", "group___config_plugin.html#ga56d10f1f43df3e0490f765a0e36eba72", null ],
-    [ "ConfigAutotuneWidget", "group___config_plugin.html#gaed50d4a819680b38d6f9ecb6f9476f92", null ],
-    [ "ConfigCameraStabilizationWidget", "group___config_plugin.html#gaadc56cb83f84d7f34491592b248a111a", null ],
-    [ "ConfigCcpmWidget", "group___config_plugin.html#gad02f1999c6fe879b07303698416ff782", null ],
-    [ "ConfigFixedWingWidget", "group___config_plugin.html#gaee3501121903de9f9860f69611fd07e6", null ],
-    [ "ConfigGadget", "group___config_plugin.html#gae5427c3bad5fe19de2f24710fd629d87", null ],
-    [ "ConfigGadgetConfiguration", "group___config_plugin.html#ga60e6c6cfd7819f53b6a76447ba34d774", null ],
-    [ "ConfigGadgetFactory", "group___config_plugin.html#ga7785d39aeb34203184e554b3f3efda71", null ],
-    [ "ConfigGadgetOptionsPage", "group___config_plugin.html#ga2d5af20878472037582f441a56bca28c", null ],
-    [ "ConfigGadgetWidget", "group___config_plugin.html#gafc45c197f2917c39166b7d228d592784", null ],
-    [ "ConfigGroundVehicleWidget", "group___config_plugin.html#ga7d15969655ebd8ccde81977fd63cc516", null ],
-    [ "ConfigInputWidget", "group___config_plugin.html#ga5453669d3da8b5752b88e14cfca3ba03", null ],
-    [ "ConfigModuleWidget", "group___config_plugin.html#gaf3854a41400a7aca6d75e0f2be770f9c", null ],
-    [ "ConfigMultiRotorWidget", "group___config_plugin.html#ga1f8b823890ddd40ac391df9aa59cfd79", null ],
-    [ "ConfigOsdWidget", "group___config_plugin.html#ga125c5157490abae9f8d049960b8a007c", null ],
-    [ "ConfigOutputWidget", "group___config_plugin.html#gae97fadc2217af00fbdcd40904dffdfcd", null ],
-    [ "ConfigStabilizationWidget", "group___config_plugin.html#ga7ede076de26384e87d8b8357b391c0b6", null ],
-    [ "ConfigTxPIDWidget", "group___config_plugin.html#ga2ecc01b090b6955e7204c19432ad8628", null ],
-    [ "ConfigVehicleTypeWidget", "group___config_plugin.html#ga073c5b646c2487874d095f97989f4358", null ],
+    [ "ConfigAttitudeWidget", "group___config_plugin.html#ga0c45c1f74a393884ee2ca556b0b3151a", null ],
+    [ "ConfigAutotuneWidget", "group___config_plugin.html#ga9d943609b560c671923d57797ece07b9", null ],
+    [ "ConfigCameraStabilizationWidget", "group___config_plugin.html#ga75e27fbf7a90d67b52a163a30241a0da", null ],
+    [ "ConfigCcpmWidget", "group___config_plugin.html#ga648c92862d593b6223f2ddf51180e03a", null ],
+    [ "ConfigFixedWingWidget", "group___config_plugin.html#ga63260cdf032f79c1c5cecc41bb1a4ce9", null ],
+    [ "ConfigGadget", "group___config_plugin.html#gae88b68cb98f08911abe7e3f977e70bad", null ],
+    [ "ConfigGadgetConfiguration", "group___config_plugin.html#ga1a5e68d2f43df251d7e78385d2de3f98", null ],
+    [ "ConfigGadgetFactory", "group___config_plugin.html#ga5c197e853f64f4f4654ea01f532294b9", null ],
+    [ "ConfigGadgetOptionsPage", "group___config_plugin.html#ga2966ffa4b74e53a2b2cb23426fca4a05", null ],
+    [ "ConfigGadgetWidget", "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc", null ],
+    [ "ConfigGroundVehicleWidget", "group___config_plugin.html#gaeec4ee008a5e3f4a045e4e5b47b32758", null ],
+    [ "ConfigInputWidget", "group___config_plugin.html#ga45b4e4dd7daef8b4b8f846a20b19915c", null ],
+    [ "ConfigModuleWidget", "group___config_plugin.html#ga1bf77fa2168d5730dfbfc2899d83b7ef", null ],
+    [ "ConfigMultiRotorWidget", "group___config_plugin.html#ga38e85355ab22dfd04787592d0a47347a", null ],
+    [ "ConfigOsdWidget", "group___config_plugin.html#ga1d92c9867f9e8a3d1b76d18e67463fa6", null ],
+    [ "ConfigOutputWidget", "group___config_plugin.html#ga615dce02849a13e1c6ec08acd50a5fcd", null ],
+    [ "ConfigStabilizationWidget", "group___config_plugin.html#ga50fb38f02cd96b756038eb4ac53551ac", null ],
+    [ "ConfigTxPIDWidget", "group___config_plugin.html#ga7005fd2562e0f1e2803477919a6eee55", null ],
+    [ "ConfigVehicleTypeWidget", "group___config_plugin.html#gae7dec39543b16d8fd48a99b5d547ebf6", null ],
     [ "connectSensor", "group___config_plugin.html#ga136ee34ff849bbeb76c30cd543e7419b", null ],
     [ "createConfiguration", "group___config_plugin.html#gad4b30018cb53b866caf602b7f5409b0c", null ],
     [ "createEditor", "group___config_plugin.html#ga33340622f34643415ef4fc706e9a6350", null ],
@@ -559,15 +559,15 @@ var group___config_plugin =
     [ "createGadget", "group___config_plugin.html#ga0a27d1d7799dadf3e68617090af3054c", null ],
     [ "createOptionsPage", "group___config_plugin.html#ga371219573cd1b14bbc5d533577281f7b", null ],
     [ "createPage", "group___config_plugin.html#ga28c537e8f2468debe3c869bda53fd6c9", null ],
-    [ "DefaultHwSettingsWidget", "group___config_plugin.html#gab254ef18e03d0c92544eb2f24539f009", null ],
-    [ "DoubleSpinDelegate", "group___config_plugin.html#ga53d62f046bdee3e5b67f2b82aaa08a8a", null ],
+    [ "DefaultHwSettingsWidget", "group___config_plugin.html#ga9a3249c94fe2acafbef29df63bbcb132", null ],
+    [ "DoubleSpinDelegate", "group___config_plugin.html#ga3700cc938f3eacdf23c12d7a9a4a6d3d", null ],
     [ "enableComboBoxes", "group___config_plugin.html#ga80929dea8a5f354f9d7df8162e027b29", null ],
     [ "enableControls", "group___config_plugin.html#ga76df976b825f939b3c637d614e2f668a", null ],
     [ "enableControls", "group___config_plugin.html#ga8790c539b69a98c32df328411f6c0737", null ],
     [ "enableControls", "group___config_plugin.html#ga8c6d4684111bd4a10d4940a803faf852", null ],
     [ "enableControls", "group___config_plugin.html#ga39ced7c878bb56024b9bdd2bdb90d68f", null ],
     [ "Euler2R", "group___config_plugin.html#ga377eb05dfcb626f7b5af01ea1647d9ae", null ],
-    [ "ExpoCurve", "group___config_plugin.html#gab91ed7e9049530695187d75ffac16714", null ],
+    [ "ExpoCurve", "group___config_plugin.html#ga462c07d21ff1248a8c4916701441f341", null ],
     [ "finish", "group___config_plugin.html#gae12bea8fac88d0fd0b9d3c95b0e62472", null ],
     [ "getCBCurveSource", "group___config_plugin.html#ga8822c0ca3bfdc63eaa942da572b0b8af", null ],
     [ "getChannelDescriptions", "group___config_plugin.html#ga65301666bc0f14e94e8f718af4e6cc08", null ],
@@ -597,7 +597,7 @@ var group___config_plugin =
     [ "isComplete", "group___config_plugin.html#ga9961796b522451b6dca6e95c2bb21aad", null ],
     [ "isValidThrottleCurve", "group___config_plugin.html#ga92da8cda852e8b2f1974cac57fbaa99f", null ],
     [ "loadConfiguration", "group___config_plugin.html#ga43acf4e389daaf28085a3773b4abc903", null ],
-    [ "MixerCurve", "group___config_plugin.html#ga1124f8bbbfadf0a60fe37c681a323689", null ],
+    [ "MixerCurve", "group___config_plugin.html#ga35d6673e0a561c51d1a31d67d8426b94", null ],
     [ "operator==", "group___config_plugin.html#gaa1b84821bb68ba5f3e6cdc312899f4dd", null ],
     [ "OutputChannelForm", "group___config_plugin.html#ga5b19b5a7b71ecffbf0b3f5ac2cbae18d", null ],
     [ "PACK", "group___config_plugin.html#gae4805b7106b1b5319a4c271650d89abe", null ],
@@ -650,18 +650,18 @@ var group___config_plugin =
     [ "showEvent", "group___config_plugin.html#ga400903af96a9e0b31101d06356f267fe", null ],
     [ "showOutputChannelSelectWindow", "group___config_plugin.html#ga1d96277e7fa36802dd699badb261f199", null ],
     [ "SixPointInConstFieldCal", "group___config_plugin.html#gaaf643402ea9690b33d40ec8b79382b54", null ],
-    [ "SpinBoxDelegate", "group___config_plugin.html#gabf1b830266511d0237c97b46f49e01f9", null ],
+    [ "SpinBoxDelegate", "group___config_plugin.html#gaf9ede7b7ba5c2da539579953e30399fa", null ],
     [ "startInputWizard", "group___config_plugin.html#ga8655bea31bbed90a46bacb2f428301f6", null ],
     [ "startInputWizard", "group___config_plugin.html#gaad3d50c5993be3628b91188aad094505", null ],
     [ "storeLevelingMeasurement", "group___config_plugin.html#ga2a04c8742b7da61b9b835b43d114fcd4", null ],
     [ "storeSixPointMeasurement", "group___config_plugin.html#gaccd918a485a64e4d0f751050f84e660a", null ],
     [ "storeTempCalMeasurement", "group___config_plugin.html#ga08dbde1fd3231dc4ec7f6a6132adcc80", null ],
     [ "storeYawOrientationMeasurement", "group___config_plugin.html#ga6fccee84da02f1786403f41fa7f42340", null ],
-    [ "TempCompCurve", "group___config_plugin.html#gadde0ad4527ea2096cecb195d2a635014", null ],
+    [ "TempCompCurve", "group___config_plugin.html#ga4223f62af452dc0793ad284d5ece35b9", null ],
     [ "updateEditorGeometry", "group___config_plugin.html#gaa8fa5b648a223ce46e7ede0d8d2374c1", null ],
     [ "updateEditorGeometry", "group___config_plugin.html#ga3a90cff710ddd79a11b31054f9c963fb", null ],
     [ "updateTempCompCalibrationDisplay", "group___config_plugin.html#gaa6f828b26cfbaecba7ebb8f1ab90fea4", null ],
-    [ "VehicleConfig", "group___config_plugin.html#ga369dba1a2bcda89963b25078cbf89fd9", null ],
+    [ "VehicleConfig", "group___config_plugin.html#ga1f721670521eb23a5d733b5c34096a21", null ],
     [ "widget", "group___config_plugin.html#ga678f4bf881dd4095ab62f66d69c32546", null ],
     [ "~Calibration", "group___config_plugin.html#ga108efb6ccd8c98e5cac950be4bf0ac26", null ],
     [ "~ConfigAttitudeWidget", "group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705", null ],

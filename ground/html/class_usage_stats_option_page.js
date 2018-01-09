@@ -1,6 +1,6 @@
 var class_usage_stats_option_page =
 [
-    [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga0ba9b9a012f84544f18f333e02971286", null ],
+    [ "UsageStatsOptionPage", "group___usage_stats_plugin.html#ga8444f7d5b58ce0e8aa0d3c348c43923b", null ],
     [ "~UsageStatsOptionPage", "group___usage_stats_plugin.html#ga56533f7b0a9065384ebdf99fa3626006", null ],
     [ "apply", "group___usage_stats_plugin.html#ga6d38ab14fe321a510df306c7ed91cbd3", null ],
     [ "category", "group___usage_stats_plugin.html#ga2c7940c64444fc8fba272cfbb89e9f40", null ],

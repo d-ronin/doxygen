@@ -1,6 +1,6 @@
 var class_pfd_qml_gadget_configuration =
 [
-    [ "PfdQmlGadgetConfiguration", "class_pfd_qml_gadget_configuration.html#a54f1c01beaedf27b9942cfef21e02c68", null ],
+    [ "PfdQmlGadgetConfiguration", "class_pfd_qml_gadget_configuration.html#a680220a13b582a40ed2df4632a00b604", null ],
     [ "clone", "class_pfd_qml_gadget_configuration.html#ae59cb9a40d269c0a2eec2c7f0fdaa2cb", null ],
     [ "qmlFile", "class_pfd_qml_gadget_configuration.html#a04e7dc7124f00f2af8f09f7d005f4e30", null ],
     [ "saveConfig", "class_pfd_qml_gadget_configuration.html#a39ab7cc5f5a6acd0276363dfc9552279", null ],

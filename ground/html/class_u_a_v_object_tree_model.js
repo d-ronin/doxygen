@@ -1,6 +1,6 @@
 var class_u_a_v_object_tree_model =
 [
-    [ "UAVObjectTreeModel", "group___u_a_v_object_browser_plugin.html#ga34df3d243262f9f7ed6051bf1c9e59aa", null ],
+    [ "UAVObjectTreeModel", "group___u_a_v_object_browser_plugin.html#ga224aaa0a697df85fdfb6648a10c6e948", null ],
     [ "~UAVObjectTreeModel", "group___u_a_v_object_browser_plugin.html#ga162709965b0a670c87305d09bf3d5e76", null ],
     [ "columnCount", "group___u_a_v_object_browser_plugin.html#gafe7737e489b53e92c325a27785e690cd", null ],
     [ "data", "group___u_a_v_object_browser_plugin.html#ga7e2af1d5c89b55437fb74df890b24a53", null ],

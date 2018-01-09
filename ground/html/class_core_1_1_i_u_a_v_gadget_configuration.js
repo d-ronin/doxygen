@@ -1,6 +1,6 @@
 var class_core_1_1_i_u_a_v_gadget_configuration =
 [
-    [ "IUAVGadgetConfiguration", "group___core_plugin.html#gacdfdf0b1e39b5002472b76b6564ce51f", null ],
+    [ "IUAVGadgetConfiguration", "group___core_plugin.html#gae5857c8af8285fd33057038677d220b6", null ],
     [ "classId", "group___core_plugin.html#gac953657221ba7fda967ada0408332641", null ],
     [ "clone", "group___core_plugin.html#ga35f72dc89919925fd591fa509ebbf7dc", null ],
     [ "locked", "group___core_plugin.html#ga3e1a13f5823a638abfeedbde21a72027", null ],

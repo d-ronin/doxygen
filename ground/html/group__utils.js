@@ -1,7 +1,7 @@
 var group__utils =
 [
     [ "LongLongSpinBox", "class_long_long_spin_box.html", [
-      [ "LongLongSpinBox", "group__utils.html#ga3116c3bde1619e5fba42c56e246567cd", null ],
+      [ "LongLongSpinBox", "group__utils.html#ga2d95303d94c9f5f7e13200ab7569463a", null ],
       [ "~LongLongSpinBox", "group__utils.html#gafc9ba8acbefb59716ebb0bdb858222b0", null ],
       [ "cleanText", "group__utils.html#gaebc297083e3dc41be6b9c72efd557b98", null ],
       [ "displayIntegerBase", "group__utils.html#ga75c0c335fd7562f97a68a2c6f288df8b", null ],
@@ -24,7 +24,7 @@ var group__utils =
       [ "singleStep", "group__utils.html#ga1ef1c9611d192708ef4263e0b1d37cd5", null ],
       [ "stepBy", "group__utils.html#gaafb82ff541d09cba2176f73984da1713", null ],
       [ "stepEnabled", "group__utils.html#ga19e0e1227d73488f60b3266dff732f49", null ],
-      [ "stripped", "group__utils.html#gacd8949c71e1716b8d6738a23d2d661e8", null ],
+      [ "stripped", "group__utils.html#ga784e1cf46225a1d43a05b54256a6629d", null ],
       [ "suffix", "group__utils.html#ga2be8a73c4e35840f1bbf5774126a3ad5", null ],
       [ "textFromValue", "group__utils.html#ga3772319f1d67114f931ba0537e0f2f42", null ],
       [ "updateEdit", "group__utils.html#ga2a0b71f8fa0ed871d35a2737074a595e", null ],
@@ -36,7 +36,7 @@ var group__utils =
       [ "valueFromText", "group__utils.html#gafc42f2e43061f484692fdb4c5b740d20", null ]
     ] ],
     [ "ScaledPixmapLabel", "class_scaled_pixmap_label.html", [
-      [ "ScaledPixmapLabel", "group__utils.html#gaa19719ba326722e40fa045d25e978030", null ],
+      [ "ScaledPixmapLabel", "group__utils.html#ga3ecaa1b88e58bf7c2f78127f25ef32ca", null ],
       [ "heightForWidth", "group__utils.html#gafa5b2290efe8b203722ca600b536f434", null ],
       [ "resizeEvent", "group__utils.html#gad448120c252998a7d47754dd41f3add3", null ],
       [ "scaledPixmap", "group__utils.html#gacb334a5da62ca0b640dc229f7ea9f712", null ],
@@ -48,14 +48,14 @@ var group__utils =
     [ "event", "group__utils.html#gaea41a8cdd05e6dc576eb8de437f48044", null ],
     [ "fixup", "group__utils.html#ga5e226ff1c55371d39b91ad647cb3920f", null ],
     [ "heightForWidth", "group__utils.html#gafa5b2290efe8b203722ca600b536f434", null ],
-    [ "LongLongSpinBox", "group__utils.html#ga3116c3bde1619e5fba42c56e246567cd", null ],
+    [ "LongLongSpinBox", "group__utils.html#ga2d95303d94c9f5f7e13200ab7569463a", null ],
     [ "maximum", "group__utils.html#ga609209b61b4bc46a6f3e982a580cdc2a", null ],
     [ "minimum", "group__utils.html#gae98c84ce99020798ec904f67ecc8e2f1", null ],
     [ "minimumSizeHint", "group__utils.html#ga8c8db23ef6466660caed3ef9c48d2c63", null ],
     [ "prefix", "group__utils.html#ga74e1dde4ccb5dc05c97b8d3f5ccfb186", null ],
     [ "resizeEvent", "group__utils.html#gad448120c252998a7d47754dd41f3add3", null ],
     [ "scaledPixmap", "group__utils.html#gacb334a5da62ca0b640dc229f7ea9f712", null ],
-    [ "ScaledPixmapLabel", "group__utils.html#gaa19719ba326722e40fa045d25e978030", null ],
+    [ "ScaledPixmapLabel", "group__utils.html#ga3ecaa1b88e58bf7c2f78127f25ef32ca", null ],
     [ "setDisplayIntegerBase", "group__utils.html#ga56ff229bb93b615170008b9a6eafc9ae", null ],
     [ "setLineEdit", "group__utils.html#gaafdc3866c2f9ed31b7450985e1073016", null ],
     [ "setMaximum", "group__utils.html#ga24eb171162e83e646933851b161308ea", null ],
@@ -68,7 +68,7 @@ var group__utils =
     [ "sizeHint", "group__utils.html#gace8cec5dafaa1abc817894cc35a640f7", null ],
     [ "stepBy", "group__utils.html#gaafb82ff541d09cba2176f73984da1713", null ],
     [ "stepEnabled", "group__utils.html#ga19e0e1227d73488f60b3266dff732f49", null ],
-    [ "stripped", "group__utils.html#gacd8949c71e1716b8d6738a23d2d661e8", null ],
+    [ "stripped", "group__utils.html#ga784e1cf46225a1d43a05b54256a6629d", null ],
     [ "suffix", "group__utils.html#ga2be8a73c4e35840f1bbf5774126a3ad5", null ],
     [ "textFromValue", "group__utils.html#ga3772319f1d67114f931ba0537e0f2f42", null ],
     [ "updateEdit", "group__utils.html#ga2a0b71f8fa0ed871d35a2737074a595e", null ],

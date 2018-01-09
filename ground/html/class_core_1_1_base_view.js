@@ -1,6 +1,6 @@
 var class_core_1_1_base_view =
 [
-    [ "BaseView", "group___core_plugin.html#ga5d80afbd92e0f0a0a53764a87f8f8c1b", null ],
+    [ "BaseView", "group___core_plugin.html#ga877d060400c2d1fa6d21a10252822957", null ],
     [ "~BaseView", "group___core_plugin.html#ga0b87986502d132344f08be851cdb15d2", null ],
     [ "context", "group___core_plugin.html#ga237172a9f51bf4dd4a74c431d4cee707", null ],
     [ "defaultPosition", "group___core_plugin.html#gaaf97d82844aaac02f2116f78c9ec7898", null ],

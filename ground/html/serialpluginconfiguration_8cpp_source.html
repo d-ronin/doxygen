@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('serialpluginconfiguration_8cpp_source.
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathutils_8h.html">utils/pathutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="icore_8h.html">coreplugin/icore.h</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e">   41</a></span>&#160;<a class="code" href="group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e">SerialPluginConfiguration::SerialPluginConfiguration</a>(QString classId, QSettings *qSettings,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640">   41</a></span>&#160;<a class="code" href="group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640">SerialPluginConfiguration::SerialPluginConfiguration</a>(QString classId, QSettings *qSettings,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                     QObject *parent)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , m_speed(<span class="stringliteral">&quot;115200&quot;</span>)</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('serialpluginconfiguration_8cpp_source.
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___serial_plugin.html#ga894fb8aa5280cdfb94f844d09f21e64d">   56</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___serial_plugin.html#ga894fb8aa5280cdfb94f844d09f21e64d">SerialPluginConfiguration::clone</a>()</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e">SerialPluginConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640">SerialPluginConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m-&gt;m_speed = m_speed;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m-&gt;m_reconnect = m_reconnect;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a>;</div>
@@ -180,7 +180,6 @@ $(document).ready(function(){initNavTree('serialpluginconfiguration_8cpp_source.
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="group___core_plugin_html_gac953657221ba7fda967ada0408332641"><div class="ttname"><a href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">Core::IUAVGadgetConfiguration::classId</a></div><div class="ttdeci">QString classId()</div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00049">iuavgadgetconfiguration.h:49</a></div></div>
 <div class="ttc" id="pathutils_8h_html"><div class="ttname"><a href="pathutils_8h.html">pathutils.h</a></div></div>
-<div class="ttc" id="group___serial_plugin_html_ga15a723a8f3215c718070ef32ea6fff2e"><div class="ttname"><a href="group___serial_plugin.html#ga15a723a8f3215c718070ef32ea6fff2e">SerialPluginConfiguration::SerialPluginConfiguration</a></div><div class="ttdeci">SerialPluginConfiguration(QString classId, QSettings *qSettings=0, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00041">serialpluginconfiguration.cpp:41</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_ab3cd915d758008bd19d0f2428fbb354a"><div class="ttname"><a href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00257">uavobjecttemplate.m:257</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_ga9c071c1ab20bf2139e54c469ab804332"><div class="ttname"><a href="group___serial_plugin.html#ga9c071c1ab20bf2139e54c469ab804332">SerialPluginConfiguration::restoresettings</a></div><div class="ttdeci">void restoresettings()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00072">serialpluginconfiguration.cpp:72</a></div></div>
 <div class="ttc" id="class_serial_plugin_configuration_html"><div class="ttname"><a href="class_serial_plugin_configuration.html">SerialPluginConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8h_source.html#l00038">serialpluginconfiguration.h:38</a></div></div>
@@ -191,6 +190,7 @@ $(document).ready(function(){initNavTree('serialpluginconfiguration_8cpp_source.
 <div class="ttc" id="group___core_plugin_html_ga991afe345a15d1edd6d3ccbf72f8c702"><div class="ttname"><a href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">Core::IUAVGadgetConfiguration::saveConfig</a></div><div class="ttdeci">virtual void saveConfig() const </div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00057">iuavgadgetconfiguration.h:57</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_ga894fb8aa5280cdfb94f844d09f21e64d"><div class="ttname"><a href="group___serial_plugin.html#ga894fb8aa5280cdfb94f844d09f21e64d">SerialPluginConfiguration::clone</a></div><div class="ttdeci">IUAVGadgetConfiguration * clone()</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00056">serialpluginconfiguration.cpp:56</a></div></div>
 <div class="ttc" id="group___serial_plugin_html_ga4a63c76785f20677382b69b52b9537f0"><div class="ttname"><a href="group___serial_plugin.html#ga4a63c76785f20677382b69b52b9537f0">SerialPluginConfiguration::savesettings</a></div><div class="ttdeci">void savesettings() const </div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00083">serialpluginconfiguration.cpp:83</a></div></div>
+<div class="ttc" id="group___serial_plugin_html_ga3f9a3d1d7be86aa9f7a2ce95eee82640"><div class="ttname"><a href="group___serial_plugin.html#ga3f9a3d1d7be86aa9f7a2ce95eee82640">SerialPluginConfiguration::SerialPluginConfiguration</a></div><div class="ttdeci">SerialPluginConfiguration(QString classId, QSettings *qSettings=nullptr, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="serialpluginconfiguration_8cpp_source.html#l00041">serialpluginconfiguration.cpp:41</a></div></div>
 <div class="ttc" id="serialpluginconfiguration_8h_html"><div class="ttname"><a href="serialpluginconfiguration_8h.html">serialpluginconfiguration.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

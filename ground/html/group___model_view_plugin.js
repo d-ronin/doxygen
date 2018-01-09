@@ -3,13 +3,13 @@ var group___model_view_plugin =
     [ "Core", "namespace_core.html", null ],
     [ "Ui", "namespace_ui.html", null ],
     [ "ModelViewGadget", "class_model_view_gadget.html", [
-      [ "ModelViewGadget", "group___model_view_plugin.html#ga411c180daebc524f226c60cef529bcd4", null ],
+      [ "ModelViewGadget", "group___model_view_plugin.html#gae49191501b49adb9d423a4ccb1163b1c", null ],
       [ "~ModelViewGadget", "group___model_view_plugin.html#ga0b914fe76448332e8f22649b75984f4d", null ],
       [ "loadConfiguration", "group___model_view_plugin.html#gae2075c43d77a6afba12fa43cbda0af36", null ],
       [ "widget", "group___model_view_plugin.html#ga9240ecd7243b93f3188923a7a28926b1", null ]
     ] ],
     [ "ModelViewGadgetConfiguration", "class_model_view_gadget_configuration.html", [
-      [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343", null ],
+      [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e", null ],
       [ "acFilename", "group___model_view_plugin.html#ga38f0d11e16e59ffff87290b2a222468e", null ],
       [ "bgFilename", "group___model_view_plugin.html#ga1d269e09831fb3fd6187c831b3b516b1", null ],
       [ "clone", "group___model_view_plugin.html#gafe85c40e0602f4bb0a8f54637fd87b2c", null ],
@@ -20,14 +20,14 @@ var group___model_view_plugin =
       [ "vboEnabled", "group___model_view_plugin.html#ga82f3e4d2137def4ff8aa56abc69d3bce", null ]
     ] ],
     [ "ModelViewGadgetFactory", "class_model_view_gadget_factory.html", [
-      [ "ModelViewGadgetFactory", "group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77", null ],
+      [ "ModelViewGadgetFactory", "group___model_view_plugin.html#gac00f78d67358aa7d0bbdfbd35ccba33a", null ],
       [ "~ModelViewGadgetFactory", "group___model_view_plugin.html#ga7bdf383eb25b1a5226f036371be723b5", null ],
       [ "createConfiguration", "group___model_view_plugin.html#gaa2d13e8c20201017fc03b9ffd781247c", null ],
       [ "createGadget", "group___model_view_plugin.html#ga10c8c524e828527192c4821b769ab1fe", null ],
       [ "createOptionsPage", "group___model_view_plugin.html#gacccb2300c14739970fbef9a38365c070", null ]
     ] ],
     [ "ModelViewGadgetOptionsPage", "class_model_view_gadget_options_page.html", [
-      [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga86839ae520e5a8d7d38e0349ab8110db", null ],
+      [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga38216ef60f69041b0546fd7817174889", null ],
       [ "apply", "group___model_view_plugin.html#ga77c3c23e38d3018c84f464c0ef5402e5", null ],
       [ "category", "group___model_view_plugin.html#ga7ac23d7285b3e6b2541b45329d26d973", null ],
       [ "createPage", "group___model_view_plugin.html#ga5a42eda3ce28f2971be7b426347d588a", null ],
@@ -37,7 +37,7 @@ var group___model_view_plugin =
       [ "trName", "group___model_view_plugin.html#ga957813f49ad4050f6d8fe39c8ddb8db9", null ]
     ] ],
     [ "ModelViewGadgetWidget", "class_model_view_gadget_widget.html", [
-      [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga7b299b7e0c58f0bca02228b6376370a6", null ],
+      [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga2e8d189ad18421cb9164d86ee072866c", null ],
       [ "~ModelViewGadgetWidget", "group___model_view_plugin.html#gafd8359344ca9b61a21a93e1256e9247a", null ],
       [ "reloadScene", "group___model_view_plugin.html#gad031b977be54f4bd5243fa4d6f846f68", null ],
       [ "setAcFilename", "group___model_view_plugin.html#ga61a44ab1922172cfaee66b78fde29538", null ],
@@ -58,11 +58,11 @@ var group___model_view_plugin =
     [ "finish", "group___model_view_plugin.html#ga9ba47bc802df977b1f8cc5f1c8b70ca3", null ],
     [ "id", "group___model_view_plugin.html#ga4ef97dfb27bc7bf0761a6ef8c9992461", null ],
     [ "loadConfiguration", "group___model_view_plugin.html#gae2075c43d77a6afba12fa43cbda0af36", null ],
-    [ "ModelViewGadget", "group___model_view_plugin.html#ga411c180daebc524f226c60cef529bcd4", null ],
-    [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga68c5b45bcb3a5b4f35186957e765e343", null ],
-    [ "ModelViewGadgetFactory", "group___model_view_plugin.html#gab4ca362258332f3214c66cc63ba54d77", null ],
-    [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga86839ae520e5a8d7d38e0349ab8110db", null ],
-    [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga7b299b7e0c58f0bca02228b6376370a6", null ],
+    [ "ModelViewGadget", "group___model_view_plugin.html#gae49191501b49adb9d423a4ccb1163b1c", null ],
+    [ "ModelViewGadgetConfiguration", "group___model_view_plugin.html#ga20312a319e174a728c316446ee88dc8e", null ],
+    [ "ModelViewGadgetFactory", "group___model_view_plugin.html#gac00f78d67358aa7d0bbdfbd35ccba33a", null ],
+    [ "ModelViewGadgetOptionsPage", "group___model_view_plugin.html#ga38216ef60f69041b0546fd7817174889", null ],
+    [ "ModelViewGadgetWidget", "group___model_view_plugin.html#ga2e8d189ad18421cb9164d86ee072866c", null ],
     [ "reloadScene", "group___model_view_plugin.html#gad031b977be54f4bd5243fa4d6f846f68", null ],
     [ "saveConfig", "group___model_view_plugin.html#gaa2ed9dd347aecb4518cf716e3fbd9288", null ],
     [ "setAcFilename", "group___model_view_plugin.html#ga5a6c75e6ec1963b48ad4cd6fd1f80e67", null ],

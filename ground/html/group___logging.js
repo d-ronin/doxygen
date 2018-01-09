@@ -2,13 +2,13 @@ var group___logging =
 [
     [ "Ui", "namespace_ui.html", null ],
     [ "FlightLogDownload", "class_flight_log_download.html", [
-      [ "FlightLogDownload", "group___logging.html#gab9bcc7b1cf4b85b9cf4305dfaff6dcaa", null ],
+      [ "FlightLogDownload", "group___logging.html#gafa8d640258446f35f1b1b7b1f2085075", null ],
       [ "~FlightLogDownload", "group___logging.html#ga11307a9b259a2a3e8a378f8d6d305938", null ]
     ] ],
     [ "availableDevices", "group___logging.html#ga0ed63dc5111dcd536bacc7655b878e8f", null ],
     [ "closeDevice", "group___logging.html#gaeb291639744d4248ab7422d57444ea0a", null ],
     [ "connectionName", "group___logging.html#gaca41f5a7a58289c24cdf4975b9718091", null ],
-    [ "FlightLogDownload", "group___logging.html#gab9bcc7b1cf4b85b9cf4305dfaff6dcaa", null ],
+    [ "FlightLogDownload", "group___logging.html#gafa8d640258446f35f1b1b7b1f2085075", null ],
     [ "LoggingConnection", "group___logging.html#ga4e4cd5c90f83710ae2807a8257db1c70", null ],
     [ "openDevice", "group___logging.html#ga592075585208489ed59844d9d7175015", null ],
     [ "openFile", "group___logging.html#gabd55e7242d33b800b73a8ff3fc56deb5", null ],

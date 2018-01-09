@@ -1,6 +1,6 @@
 var class_core_1_1_i_u_a_v_gadget_factory =
 [
-    [ "IUAVGadgetFactory", "group___core_plugin.html#gab8877ea5e27cd09cf547036e6a13f067", null ],
+    [ "IUAVGadgetFactory", "group___core_plugin.html#ga0713fdb3c9f666bf5d2528da8595e6e7", null ],
     [ "~IUAVGadgetFactory", "group___core_plugin.html#ga225d48c074de84253a05eac20285115b", null ],
     [ "classId", "group___core_plugin.html#gae2a481c6b01740fcec50deb4742b5173", null ],
     [ "createConfiguration", "group___core_plugin.html#gae26104d7db90a65069c2bb654ecd5026", null ],

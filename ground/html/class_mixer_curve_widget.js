@@ -1,6 +1,6 @@
 var class_mixer_curve_widget =
 [
-    [ "MixerCurveWidget", "group___u_a_v_object_widget_utils.html#gafcc28d34cf4bf00ed61926b4cbdd5a7e", null ],
+    [ "MixerCurveWidget", "group___u_a_v_object_widget_utils.html#ga922a52b2d60ddb4227f39c8c5b011e06", null ],
     [ "~MixerCurveWidget", "group___u_a_v_object_widget_utils.html#ga95ab335915408821a081b9be9b837866", null ],
     [ "activateCommand", "group___u_a_v_object_widget_utils.html#gad39c4c8427b031af1e9042f750301ec8", null ],
     [ "cmdActivated", "group___u_a_v_object_widget_utils.html#ga1846362502f57645af53b826ee5537ad", null ],

@@ -1,6 +1,6 @@
 var class_core_1_1_action_manager =
 [
-    [ "ActionManager", "group___core_plugin.html#gab0f34dc9c6d367a0807cef1003bc3667", null ],
+    [ "ActionManager", "group___core_plugin.html#gae0d944e0790cdcc27bf691c8e52d8f47", null ],
     [ "~ActionManager", "group___core_plugin.html#gac80d3d645622551a98db65a649abe079", null ],
     [ "actionContainer", "group___core_plugin.html#ga0bd5e0ad7658056a7c80666200734df8", null ],
     [ "command", "group___core_plugin.html#ga262e29bf6a8d1cf1fb92dfe93b96621e", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -215,17 +215,17 @@ $(document).ready(function(){initNavTree('actioncontainer_8cpp_source.html','');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga243949a2b2abff30862e34f6313f28c0">  220</a></span>&#160;QMenu *<a class="code" href="group___core_plugin.html#ga243949a2b2abff30862e34f6313f28c0">ActionContainerPrivate::menu</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
 <div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaf2d8e7b9ed6b98c22dd1eea1443737ce">  225</a></span>&#160;QMenuBar *<a class="code" href="group___core_plugin.html#gaf2d8e7b9ed6b98c22dd1eea1443737ce">ActionContainerPrivate::menuBar</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga506d6f367240b15d691c878fa0e9935d">  230</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___core_plugin.html#ga506d6f367240b15d691c878fa0e9935d">ActionContainerPrivate::canAddAction</a>(<a class="code" href="class_core_1_1_command.html">Command</a> *action)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> (action-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>() != 0);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> (action-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>() != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga7fa37dae076bbf750250911084354f3c">  235</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga9ca5ea32ad53e24a2086f781e5677f1c">ActionContainerPrivate::addAction</a>(<a class="code" href="class_core_1_1_command.html">Command</a> *action, <span class="keywordtype">int</span> pos, <span class="keywordtype">bool</span> setpos)</div>
@@ -289,7 +289,7 @@ $(document).ready(function(){initNavTree('actioncontainer_8cpp_source.html','');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">if</span> (baId == -1)</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (Command *cmd = am-&gt;<a class="code" href="group___core_plugin.html#ga5a55bb1c0b2a8c78afc2ba6dbaf2427d">command</a>(baId))</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span> cmd-&gt;action();</div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('actioncontainer_8cpp_source.html','');
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span> (QMenu *<a class="code" href="group___core_plugin.html#ga243949a2b2abff30862e34f6313f28c0">menu</a> = container-&gt;menu())</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group___core_plugin.html#ga243949a2b2abff30862e34f6313f28c0">menu</a>-&gt;menuAction();</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">int</span> ActionContainerPrivate::calcPosition(<span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> prevKey)<span class="keyword"> const</span></div>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('actioncontainer_8cpp_source.html','');
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaae5e916660a2963852273a4bb2c2b2f5">  328</a></span>&#160;<a class="code" href="group___core_plugin.html#gaae5e916660a2963852273a4bb2c2b2f5">MenuActionContainer::MenuActionContainer</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    : <a class="code" href="class_core_1_1_internal_1_1_action_container_private.html">ActionContainerPrivate</a>(id)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    , m_menu(0)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    , m_menu(nullptr)</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;{</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="group___core_plugin.html#gaa38318117b2644daea6897b102055a8f">setEmptyAction</a>(<a class="code" href="group___core_plugin.html#gga25957afb898f645827d8e7949c831327aefaf5abf9c05ed2a6a6b75b2c1824186">EA_Disable</a>);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('actioncontainer_8cpp_source.html','');
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gaaeb681e958e32ea22b8d3084b82893c1">  417</a></span>&#160;<a class="code" href="group___core_plugin.html#gaaeb681e958e32ea22b8d3084b82893c1">MenuBarActionContainer::MenuBarActionContainer</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    : <a class="code" href="class_core_1_1_internal_1_1_action_container_private.html">ActionContainerPrivate</a>(id)</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    , m_menuBar(0)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    , m_menuBar(nullptr)</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="group___core_plugin.html#gaa38318117b2644daea6897b102055a8f">setEmptyAction</a>(<a class="code" href="group___core_plugin.html#gga25957afb898f645827d8e7949c831327a2492c1e5772bc04b21150f29a3620354">EA_None</a>);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;}</div>

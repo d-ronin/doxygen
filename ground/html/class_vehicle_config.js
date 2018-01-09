@@ -1,6 +1,6 @@
 var class_vehicle_config =
 [
-    [ "VehicleConfig", "group___config_plugin.html#ga369dba1a2bcda89963b25078cbf89fd9", null ],
+    [ "VehicleConfig", "group___config_plugin.html#ga1f721670521eb23a5d733b5c34096a21", null ],
     [ "~VehicleConfig", "group___config_plugin.html#ga440451fa05e53fc37b5dfafc439cd681", null ],
     [ "getCurveMax", "group___config_plugin.html#ga7d87a7cb73a87543dc94b23e4e4132d8", null ],
     [ "getCurveMin", "group___config_plugin.html#gae535c3bae8862f72e05f9247a3921b78", null ],

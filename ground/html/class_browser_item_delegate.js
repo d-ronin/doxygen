@@ -1,6 +1,6 @@
 var class_browser_item_delegate =
 [
-    [ "BrowserItemDelegate", "group___u_a_v_object_browser_plugin.html#ga899f28003767ba6b8f1bef3ae72eb8c9", null ],
+    [ "BrowserItemDelegate", "group___u_a_v_object_browser_plugin.html#ga2442cf9680e3110926b052f2af9a7357", null ],
     [ "createEditor", "group___u_a_v_object_browser_plugin.html#ga16c2a6f63557c8fe5ade68a4b8f43009", null ],
     [ "eventFilter", "group___u_a_v_object_browser_plugin.html#ga8db6822af5a05b88ac98c531bb59e5f1", null ],
     [ "setEditorData", "group___u_a_v_object_browser_plugin.html#ga07845c2f048ab9c2344102bbfb627b01", null ],

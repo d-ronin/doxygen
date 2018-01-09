@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('lineardialgadgetconfiguration_8cpp_sou
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lineardialgadgetconfiguration_8h.html">lineardialgadgetconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pathutils_8h.html">utils/pathutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f">   34</a></span>&#160;<a class="code" href="group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f">LineardialGadgetConfiguration::LineardialGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d">   34</a></span>&#160;<a class="code" href="group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d">LineardialGadgetConfiguration::LineardialGadgetConfiguration</a>(QString classId, QSettings *qSettings,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                             QObject *parent)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : IUAVGadgetConfiguration(classId, parent)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , dialFile(<span class="stringliteral">&quot;Unknown&quot;</span>)</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('lineardialgadgetconfiguration_8cpp_sou
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    , decimalPlaces(0)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// if a saved configuration exists load it</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (qSettings != 0) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (qSettings != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        QString dFile = qSettings-&gt;value(<span class="stringliteral">&quot;dFile&quot;</span>).toString();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        dialFile = <a class="code" href="class_utils_1_1_path_utils.html">Utils::PathUtils</a>().<a class="code" href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">InsertDataPath</a>(dFile);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        sourceDataObject = qSettings-&gt;value(<span class="stringliteral">&quot;sourceDataObject&quot;</span>).toString();</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('lineardialgadgetconfiguration_8cpp_sou
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___linear_dial_plugin.html#ga4b5d2c9802ec3b863732d6f707a1befe">   75</a></span>&#160;IUAVGadgetConfiguration *<a class="code" href="group___linear_dial_plugin.html#ga4b5d2c9802ec3b863732d6f707a1befe">LineardialGadgetConfiguration::clone</a>()</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_lineardial_gadget_configuration.html">LineardialGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f">LineardialGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_lineardial_gadget_configuration.html">LineardialGadgetConfiguration</a> *<a class="code" href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a> = <span class="keyword">new</span> <a class="code" href="group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d">LineardialGadgetConfiguration</a>(this-&gt;<a class="code" href="group___core_plugin.html#gac953657221ba7fda967ada0408332641">classId</a>());</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m-&gt;dialFile = dialFile;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m-&gt;sourceDataObject = sourceDataObject;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m-&gt;sourceObjectField = sourceObjectField;</div>
@@ -210,11 +210,11 @@ $(document).ready(function(){initNavTree('lineardialgadgetconfiguration_8cpp_sou
 <div class="ttc" id="uavobjecttemplate_8m_html_ab3cd915d758008bd19d0f2428fbb354a"><div class="ttname"><a href="uavobjecttemplate_8m.html#ab3cd915d758008bd19d0f2428fbb354a">m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00257">uavobjecttemplate.m:257</a></div></div>
 <div class="ttc" id="class_lineardial_gadget_configuration_html"><div class="ttname"><a href="class_lineardial_gadget_configuration.html">LineardialGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetconfiguration_8h_source.html#l00037">lineardialgadgetconfiguration.h:37</a></div></div>
 <div class="ttc" id="group___linear_dial_plugin_html_ga4b5d2c9802ec3b863732d6f707a1befe"><div class="ttname"><a href="group___linear_dial_plugin.html#ga4b5d2c9802ec3b863732d6f707a1befe">LineardialGadgetConfiguration::clone</a></div><div class="ttdeci">IUAVGadgetConfiguration * clone()</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetconfiguration_8cpp_source.html#l00075">lineardialgadgetconfiguration.cpp:75</a></div></div>
-<div class="ttc" id="group___linear_dial_plugin_html_ga49b8e3de979573e8574a47a355fb537f"><div class="ttname"><a href="group___linear_dial_plugin.html#ga49b8e3de979573e8574a47a355fb537f">LineardialGadgetConfiguration::LineardialGadgetConfiguration</a></div><div class="ttdeci">LineardialGadgetConfiguration(QString classId, QSettings *qSettings=0, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetconfiguration_8cpp_source.html#l00034">lineardialgadgetconfiguration.cpp:34</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html_ae13b2f08493b1d7ba3d640796a34a5c6"><div class="ttname"><a href="class_utils_1_1_path_utils.html#ae13b2f08493b1d7ba3d640796a34a5c6">Utils::PathUtils::RemoveDataPath</a></div><div class="ttdeci">static QString RemoveDataPath(QString path)</div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8cpp_source.html#l00067">pathutils.cpp:67</a></div></div>
 <div class="ttc" id="lineardialgadgetconfiguration_8h_html"><div class="ttname"><a href="lineardialgadgetconfiguration_8h.html">lineardialgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga991afe345a15d1edd6d3ccbf72f8c702"><div class="ttname"><a href="group___core_plugin.html#ga991afe345a15d1edd6d3ccbf72f8c702">Core::IUAVGadgetConfiguration::saveConfig</a></div><div class="ttdeci">virtual void saveConfig() const </div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00057">iuavgadgetconfiguration.h:57</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html"><div class="ttname"><a href="class_utils_1_1_path_utils.html">Utils::PathUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8h_source.html#l00040">pathutils.h:40</a></div></div>
+<div class="ttc" id="group___linear_dial_plugin_html_ga303193341855c30d7eb4b17d25a5645d"><div class="ttname"><a href="group___linear_dial_plugin.html#ga303193341855c30d7eb4b17d25a5645d">LineardialGadgetConfiguration::LineardialGadgetConfiguration</a></div><div class="ttdeci">LineardialGadgetConfiguration(QString classId, QSettings *qSettings=nullptr, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="lineardialgadgetconfiguration_8cpp_source.html#l00034">lineardialgadgetconfiguration.cpp:34</a></div></div>
 <div class="ttc" id="class_utils_1_1_path_utils_html_ac0b4cac7c56d6239e1dfe637e3982dfb"><div class="ttname"><a href="class_utils_1_1_path_utils.html#ac0b4cac7c56d6239e1dfe637e3982dfb">Utils::PathUtils::InsertDataPath</a></div><div class="ttdeci">static QString InsertDataPath(QString path)</div><div class="ttdef"><b>Definition:</b> <a href="pathutils_8cpp_source.html#l00084">pathutils.cpp:84</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

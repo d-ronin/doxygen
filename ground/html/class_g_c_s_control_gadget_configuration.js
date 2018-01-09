@@ -1,6 +1,6 @@
 var class_g_c_s_control_gadget_configuration =
 [
-    [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#ga564a596fece84d06f7a2ff0f9151d140", null ],
+    [ "GCSControlGadgetConfiguration", "group___g_c_s_control_gadget_plugin.html#gae641b528a03bb75aab0fb839827008b7", null ],
     [ "clone", "group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f", null ],
     [ "getbuttonSettings", "group___g_c_s_control_gadget_plugin.html#ga024292274c2307cd9e45e6a7fbbba208", null ],
     [ "getChannelsMapping", "group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473", null ],

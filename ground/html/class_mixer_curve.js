@@ -4,7 +4,7 @@ var class_mixer_curve =
       [ "MIXERCURVE_THROTTLE", "group___config_plugin.html#gga58a5506035df5fabbf4feffb36632595a7dbbc543ccc2e9b4f8ba98d66717a836", null ],
       [ "MIXERCURVE_OTHER", "group___config_plugin.html#gga58a5506035df5fabbf4feffb36632595adc44b10adb428e4fdde5f964bbc339b8", null ]
     ] ],
-    [ "MixerCurve", "group___config_plugin.html#ga1124f8bbbfadf0a60fe37c681a323689", null ],
+    [ "MixerCurve", "group___config_plugin.html#ga35d6673e0a561c51d1a31d67d8426b94", null ],
     [ "~MixerCurve", "group___config_plugin.html#ga1ecc6d88c82c0c4403185f1741bd096c", null ],
     [ "GenerateCurve", "group___config_plugin.html#gad1f7dbb9fdd65436b5886e20fa930d27", null ],
     [ "getCBCurveSource", "group___config_plugin.html#ga8822c0ca3bfdc63eaa942da572b0b8af", null ],

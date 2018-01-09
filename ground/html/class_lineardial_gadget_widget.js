@@ -1,6 +1,6 @@
 var class_lineardial_gadget_widget =
 [
-    [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga67af774f5fa476bda0dce880d57348a7", null ],
+    [ "LineardialGadgetWidget", "group___linear_dial_plugin.html#ga62c6ad8540bd06d64ff5544988a1cbe0", null ],
     [ "~LineardialGadgetWidget", "group___linear_dial_plugin.html#ga46b2275fc21a5a5fc14809f31be48674", null ],
     [ "connectInput", "group___linear_dial_plugin.html#gae8c680251e4f8898f8653b6aede9fc81", null ],
     [ "paint", "group___linear_dial_plugin.html#ga90222159d9de45fe9f4321c30e3f536a", null ],

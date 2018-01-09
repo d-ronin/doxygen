@@ -1,6 +1,6 @@
 var class_magic_waypoint_gadget =
 [
-    [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga7c890e89a9d75c8e6498c9b894ba70ce", null ],
+    [ "MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga1739bf2da1daa797e064fc9c3c4873ac", null ],
     [ "~MagicWaypointGadget", "group___g_c_s_control_gadget_plugin.html#ga7caf437fa3df4fc4c30bb259b16d5b89", null ],
     [ "context", "group___g_c_s_control_gadget_plugin.html#ga7521519a1bb7dd420c9e4d2f1bf49a2f", null ],
     [ "contextHelpId", "group___g_c_s_control_gadget_plugin.html#gab2c239e4a2ee9921f9c9c0c79f769c3e", null ],

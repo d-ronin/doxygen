@@ -1,6 +1,6 @@
 var class_u_a_v_object_browser_configuration =
 [
-    [ "UAVObjectBrowserConfiguration", "group___u_a_v_object_browser_plugin.html#ga70fd7664c3f0a9a97f0003bc04e5dc42", null ],
+    [ "UAVObjectBrowserConfiguration", "group___u_a_v_object_browser_plugin.html#gad0ebfc375ac64389bb2cf499635dbefb", null ],
     [ "clone", "group___u_a_v_object_browser_plugin.html#ga0bf31a4c146a973fe414471258c40b9a", null ],
     [ "hideNotPresentOnHw", "group___u_a_v_object_browser_plugin.html#gadc74a12c9795dd272ad7dd988157053d", null ],
     [ "manuallyChangedColor", "group___u_a_v_object_browser_plugin.html#ga3c96e42ba99892a40daa0e4140285ccd", null ],

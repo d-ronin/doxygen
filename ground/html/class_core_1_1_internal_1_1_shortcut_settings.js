@@ -1,6 +1,6 @@
 var class_core_1_1_internal_1_1_shortcut_settings =
 [
-    [ "ShortcutSettings", "group___core_plugin.html#gaf70df8ce0b86b325f7a03c1cc0dac919", null ],
+    [ "ShortcutSettings", "group___core_plugin.html#gaecf9c3a5349237d974010d411fde596a", null ],
     [ "~ShortcutSettings", "group___core_plugin.html#gabeeacedad8a9934f806dee1c668772f8", null ],
     [ "apply", "group___core_plugin.html#ga9687a6a6adca6b21a1a107bb21f2413a", null ],
     [ "category", "group___core_plugin.html#gae3538343d97ec3f12f40c6850e470e69", null ],

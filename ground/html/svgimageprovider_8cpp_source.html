@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('svgimageprovider_8cpp_source.html','')
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(!QFileInfo::exists(fn)) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">//it&#39;s really missing this time</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;[SvgImageProvider::loadRenderer]SVG file not found:&quot;</span> &lt;&lt; svgFile;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        renderer = <span class="keyword">new</span> QSvgRenderer(fn);</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('svgimageprovider_8cpp_source.html','')
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (!renderer-&gt;isValid()) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;[SvgImageProvider::loadRenderer]Failed to load svg file:&quot;</span> &lt;&lt; svgFile;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">delete</span> renderer;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        m_renderers.insert(svgFile, renderer);</div>

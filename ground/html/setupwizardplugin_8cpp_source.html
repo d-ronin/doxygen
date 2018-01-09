@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('setupwizardplugin_8cpp_source.html',''
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                            <a class="code" href="class_q_list.html">QList&lt;int&gt;</a>() &lt;&lt; <a class="code" href="group___core_plugin.html#ga73bcb9a176a2f5b7cec3008d5b0f244c">Core::Constants::C_GLOBAL_ID</a>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    cmd-&gt;<a class="code" href="group___core_plugin.html#ga68bf6b0115ef45e9a734956f3b0d40c5">action</a>()-&gt;setText(tr(<span class="stringliteral">&quot;Vehicle Setup Wizard&quot;</span>));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">addAction</a>(cmd, 1);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="group___core_plugin.html#ga756ec59f5104cce0abf8a6990a2bba2c">Core::ModeManager::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#ga54dcfd34b6c460546b661facc8b28e61">addAction</a>(cmd, 1);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">menu</a>()-&gt;addSeparator();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ac-&gt;<a class="code" href="group___core_plugin.html#ga6479409008a106faa25ceccc055c0bd6">appendGroup</a>(<span class="stringliteral">&quot;Wizard&quot;</span>);</div>
@@ -249,11 +249,11 @@ $(document).ready(function(){initNavTree('setupwizardplugin_8cpp_source.html',''
 <div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="actionmanager_8h.html">actionmanager.h</a></div></div>
 <div class="ttc" id="class_config_plugin_html"><div class="ttname"><a href="class_config_plugin.html">ConfigPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="configplugin_8h_source.html#l00041">configplugin.h:41</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga5e44e7795213bb2627acfa08a13f6a12"><div class="ttname"><a href="group___core_plugin.html#ga5e44e7795213bb2627acfa08a13f6a12">Core::ICore::actionManager</a></div><div class="ttdeci">virtual ActionManager * actionManager() const =0</div><div class="ttdoc">Returns the application&#39;s action manager. </div></div>
+<div class="ttc" id="group___core_plugin_html_ga54dcfd34b6c460546b661facc8b28e61"><div class="ttname"><a href="group___core_plugin.html#ga54dcfd34b6c460546b661facc8b28e61">Core::ModeManager::addAction</a></div><div class="ttdeci">void addAction(Command *command, int priority, QMenu *menu=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00228">modemanager.cpp:228</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga80c35bf2a3dfaef1a6dad29722214751"><div class="ttname"><a href="group___setup_wizard.html#ga80c35bf2a3dfaef1a6dad29722214751">SetupWizard::boardIgnored</a></div><div class="ttdeci">void boardIgnored(QByteArray uuid)</div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga8e92377ca31ccb08155053b639c13059"><div class="ttname"><a href="group___core_plugin.html#ga8e92377ca31ccb08155053b639c13059">Core::ActionContainer::menu</a></div><div class="ttdeci">virtual QMenu * menu() const =0</div></div>
 <div class="ttc" id="group___core_plugin_html_ga73bcb9a176a2f5b7cec3008d5b0f244c"><div class="ttname"><a href="group___core_plugin.html#ga73bcb9a176a2f5b7cec3008d5b0f244c">Core::Constants::C_GLOBAL_ID</a></div><div class="ttdeci">const int C_GLOBAL_ID</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00090">coreconstants.h:90</a></div></div>
-<div class="ttc" id="group___core_plugin_html_ga59c08a546248c7443d069fffc04a6b90"><div class="ttname"><a href="group___core_plugin.html#ga59c08a546248c7443d069fffc04a6b90">Core::ModeManager::addAction</a></div><div class="ttdeci">void addAction(Command *command, int priority, QMenu *menu=0)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00228">modemanager.cpp:228</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga1b8ce8070e58b69888be921bbb6b03ce"><div class="ttname"><a href="group___core_plugin.html#ga1b8ce8070e58b69888be921bbb6b03ce">Core::Constants::MODE_WELCOME</a></div><div class="ttdeci">const char *const MODE_WELCOME</div><div class="ttdef"><b>Definition:</b> <a href="coreconstants_8h_source.html#l00068">coreconstants.h:68</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gadd4b3b24c51d0993e61aab8ee9e76f48"><div class="ttname"><a href="group___core_plugin.html#gadd4b3b24c51d0993e61aab8ee9e76f48">Core::ModeManager::activateModeByWorkspaceName</a></div><div class="ttdeci">void activateModeByWorkspaceName(const QString &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="modemanager_8cpp_source.html#l00128">modemanager.cpp:128</a></div></div>
 <div class="ttc" id="configplugin_8h_html"><div class="ttname"><a href="configplugin_8h.html">configplugin.h</a></div></div>

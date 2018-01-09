@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;QScrollBar&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">   42</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">DebugGadgetWidget::DebugGadgetWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___debug_gadget_plugin.html#ga07f1597d4ea9159cbb5b0ad1c80aea6b">   42</a></span>&#160;<a class="code" href="group___debug_gadget_plugin.html#ga07f1597d4ea9159cbb5b0ad1c80aea6b">DebugGadgetWidget::DebugGadgetWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : QLabel(parent)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_config = <span class="keyword">new</span> Ui_Form();</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &amp;&amp; (<a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.write(m_config-&gt;plainTextEdit-&gt;toHtml().toLatin1()) != -1)) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a>.close();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Log Save&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QMessageBox::critical(<span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Log Save&quot;</span>), tr(<span class="stringliteral">&quot;Unable to save log: &quot;</span>) + fileName,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              QMessageBox::Ok);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
@@ -232,10 +232,10 @@ $(document).ready(function(){initNavTree('debuggadgetwidget_8cpp_source.html',''
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a188d04c51c0ebbee5fdf749bf79ebc65">DebugEngine::DEBUG</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00043">debugengine.h:43</a></div></div>
 <div class="ttc" id="debuggadgetwidget_8h_html"><div class="ttname"><a href="debuggadgetwidget_8h.html">debuggadgetwidget.h</a></div></div>
 <div class="ttc" id="class_debug_engine_html"><div class="ttname"><a href="class_debug_engine.html">DebugEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00035">debugengine.h:35</a></div></div>
-<div class="ttc" id="group___debug_gadget_plugin_html_ga67e29acbc33b5ca194215ea1c70e9e72"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga67e29acbc33b5ca194215ea1c70e9e72">DebugGadgetWidget::DebugGadgetWidget</a></div><div class="ttdeci">DebugGadgetWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8cpp_source.html#l00042">debuggadgetwidget.cpp:42</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a1c696245acbc98577f7dcfcb3675c954">DebugEngine::FATAL</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00047">debugengine.h:47</a></div></div>
 <div class="ttc" id="uavobjecttemplate_8m_html_a97c04efa65bcf0928abf9260bc5cbf46"><div class="ttname"><a href="uavobjecttemplate_8m.html#a97c04efa65bcf0928abf9260bc5cbf46">file</a></div><div class="ttdeci">Parse log file</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00107">uavobjecttemplate.m:107</a></div></div>
 <div class="ttc" id="debugengine_8h_html"><div class="ttname"><a href="debugengine_8h.html">debugengine.h</a></div></div>
+<div class="ttc" id="group___debug_gadget_plugin_html_ga07f1597d4ea9159cbb5b0ad1c80aea6b"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga07f1597d4ea9159cbb5b0ad1c80aea6b">DebugGadgetWidget::DebugGadgetWidget</a></div><div class="ttdeci">DebugGadgetWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="debuggadgetwidget_8cpp_source.html#l00042">debuggadgetwidget.cpp:42</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4">DebugEngine::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00042">debugengine.h:42</a></div></div>
 <div class="ttc" id="class_debug_engine_html_a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73"><div class="ttname"><a href="class_debug_engine.html#a086dd547ca21cd6ac7b6ff290b525ac4a9e10598906f48f601bcab6e10d615c73">DebugEngine::INFO</a></div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8h_source.html#l00044">debugengine.h:44</a></div></div>
 <div class="ttc" id="group___debug_gadget_plugin_html_ga4477585da2aa01a2654b0f6dee7f4de1"><div class="ttname"><a href="group___debug_gadget_plugin.html#ga4477585da2aa01a2654b0f6dee7f4de1">DebugEngine::getInstance</a></div><div class="ttdeci">static DebugEngine * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="debugengine_8cpp_source.html#l00035">debugengine.cpp:35</a></div></div>

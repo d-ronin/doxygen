@@ -1,7 +1,7 @@
 var class_core_1_1_global_message =
 [
-    [ "GlobalMessage", "group___core_plugin.html#ga4221065546e0e2ac93ead9ecc246c70f", null ],
-    [ "GlobalMessage", "group___core_plugin.html#ga695a4804697eca5a8ed43aa5de802b4d", null ],
+    [ "GlobalMessage", "group___core_plugin.html#ga5be65d52fbb71401a800c144e3c1fcbe", null ],
+    [ "GlobalMessage", "group___core_plugin.html#ga945ef84d917bface1df5488fb1a782ae", null ],
     [ "changed", "group___core_plugin.html#ga7fa44bc2a2dc20b8a175e2bb0ca0f042", null ],
     [ "getBrief", "group___core_plugin.html#ga26d2a51122184b81f51d6ed401efc997", null ],
     [ "getDescription", "group___core_plugin.html#gae6a7c0268d0400189aab24dfe2a85c60", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -167,12 +167,12 @@ $(document).ready(function(){initNavTree('command_8cpp_source.html','');});
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
 <div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="group___core_plugin.html#gad734a314cde2a62a35d6e430ddbea197">  224</a></span>&#160;QAction *<a class="code" href="group___core_plugin.html#gad734a314cde2a62a35d6e430ddbea197">CommandPrivate::action</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga84659db83eaa89893189a8bb76e5aa64">  229</a></span>&#160;QShortcut *<a class="code" href="group___core_plugin.html#ga84659db83eaa89893189a8bb76e5aa64">CommandPrivate::shortcut</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga5639adbdd06c41c271817051fa4f46cc">  234</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___core_plugin.html#ga5639adbdd06c41c271817051fa4f46cc">CommandPrivate::setAttribute</a>(<a class="code" href="group___core_plugin.html#ga4d899c1f711159a432afeab3eb78c917">CommandAttribute</a> attr)</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('command_8cpp_source.html','');});
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga48cb263cbfb499d8cb9b6d536b002bc7">  263</a></span>&#160;<a class="code" href="group___core_plugin.html#ga48cb263cbfb499d8cb9b6d536b002bc7">Shortcut::Shortcut</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    : <a class="code" href="class_core_1_1_internal_1_1_command_private.html">CommandPrivate</a>(id)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    , m_shortcut(0)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    , m_shortcut(nullptr)</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('command_8cpp_source.html','');});
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga1cf8a6592c0894b3ae9bf66cfe62f963">  348</a></span>&#160;<a class="code" href="group___core_plugin.html#ga1cf8a6592c0894b3ae9bf66cfe62f963">Action::Action</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    : <a class="code" href="class_core_1_1_internal_1_1_command_private.html">CommandPrivate</a>(id)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    , m_action(0)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    , m_action(nullptr)</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('command_8cpp_source.html','');});
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="group___core_plugin.html#ga6f14414c6a5bec07b396e4563d738efb">  420</a></span>&#160;<a class="code" href="group___core_plugin.html#ga6f14414c6a5bec07b396e4563d738efb">OverrideableAction::OverrideableAction</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    : <a class="code" href="class_core_1_1_internal_1_1_action.html">Action</a>(id)</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    , m_currentAction(0)</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    , m_currentAction(nullptr)</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    , m_active(false)</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    , m_contextInitialized(false)</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
@@ -365,9 +365,9 @@ $(document).ready(function(){initNavTree('command_8cpp_source.html','');});
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    m_context = context;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    QAction *oldAction = m_currentAction;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    m_currentAction = 0;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    m_currentAction = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; m_context.size(); ++<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">if</span> (QAction *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = m_contextActionMap.value(m_context.at(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>), 0)) {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">if</span> (QAction *<a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a> = m_contextActionMap.value(m_context.at(<a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>), <span class="keyword">nullptr</span>)) {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            m_currentAction = <a class="code" href="_o_p_plots_8m.html#ab6991d210d93a78cdbdf6de1889c1259">a</a>;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        }</div>

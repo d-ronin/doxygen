@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">be3307d</span>
+   &#160;<span id="projectnumber">a99b608</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -144,10 +144,10 @@ $(document).ready(function(){initNavTree('connectiondiagram_8cpp_source.html',''
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;QFileDialog&gt;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gabbe7cb790894ca7c9c4ec344279890b3">   48</a></span>&#160;<a class="code" href="group___setup_wizard.html#gabbe7cb790894ca7c9c4ec344279890b3">ConnectionDiagram::ConnectionDiagram</a>(QWidget *parent)</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___setup_wizard.html#gad5c3b319f14124bef25fc639b3e53ca8">   48</a></span>&#160;<a class="code" href="group___setup_wizard.html#gad5c3b319f14124bef25fc639b3e53ca8">ConnectionDiagram::ConnectionDiagram</a>(QWidget *parent)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    : QDialog(parent)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    , ui(new Ui::<a class="code" href="class_connection_diagram.html">ConnectionDiagram</a>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    , m_background(0)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    , m_background(nullptr)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    utilMngr = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
@@ -353,6 +353,7 @@ $(document).ready(function(){initNavTree('connectiondiagram_8cpp_source.html',''
 <div class="ttc" id="_o_p_plots_8m_html_a25ed1bcb423b0b7200f485fc5ff71c8e"><div class="ttname"><a href="_o_p_plots_8m.html#a25ed1bcb423b0b7200f485fc5ff71c8e">z</a></div><div class="ttdeci">z</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00102">OPPlots.m:102</a></div></div>
 <div class="ttc" id="connectiondiagram_8h_html"><div class="ttname"><a href="connectiondiagram_8h.html">connectiondiagram.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga043de5085e6ade44abfb005e320d10ca"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga043de5085e6ade44abfb005e320d10ca">UAVObject::getFields</a></div><div class="ttdeci">QList&lt; UAVObjectField * &gt; getFields()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00198">uavobject.cpp:198</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gad5c3b319f14124bef25fc639b3e53ca8"><div class="ttname"><a href="group___setup_wizard.html#gad5c3b319f14124bef25fc639b3e53ca8">ConnectionDiagram::ConnectionDiagram</a></div><div class="ttdeci">ConnectionDiagram(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="connectiondiagram_8cpp_source.html#l00048">connectiondiagram.cpp:48</a></div></div>
 <div class="ttc" id="class_connection_diagram_html"><div class="ttname"><a href="class_connection_diagram.html">ConnectionDiagram</a></div><div class="ttdef"><b>Definition:</b> <a href="connectiondiagram_8h_source.html#l00049">connectiondiagram.h:49</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga92eb502fc16ba82b924a430acaa55f46"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">UAVObject::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00133">uavobject.cpp:133</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
@@ -360,7 +361,6 @@ $(document).ready(function(){initNavTree('connectiondiagram_8cpp_source.html',''
 <div class="ttc" id="group___core_plugin_html_gab7a5ac1921113d9ab3a8181acb704c08"><div class="ttname"><a href="group___core_plugin.html#gab7a5ac1921113d9ab3a8181acb704c08">Core::IBoardType::shortName</a></div><div class="ttdeci">virtual QString shortName()=0</div></div>
 <div class="ttc" id="group___setup_wizard_html_ga286bacde8e23a0b374d72fb979203bb8"><div class="ttname"><a href="group___setup_wizard.html#ga286bacde8e23a0b374d72fb979203bb8">ConnectionDiagram::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="connectiondiagram_8cpp_source.html#l00075">connectiondiagram.cpp:75</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gabbe7cb790894ca7c9c4ec344279890b3"><div class="ttname"><a href="group___setup_wizard.html#gabbe7cb790894ca7c9c4ec344279890b3">ConnectionDiagram::ConnectionDiagram</a></div><div class="ttdeci">ConnectionDiagram(QWidget *parent=Q_NULLPTR)</div><div class="ttdef"><b>Definition:</b> <a href="connectiondiagram_8cpp_source.html#l00048">connectiondiagram.cpp:48</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gac3a1293716fa3eb310ed257ade7f6722"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">UAVObjectUtilManager::getBoardType</a></div><div class="ttdeci">Core::IBoardType * getBoardType()</div><div class="ttdoc">Get the IBoardType corresponding to the connected board. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8cpp_source.html#l00511">uavobjectutilmanager.cpp:511</a></div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
