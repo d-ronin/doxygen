@@ -1,5 +1,6 @@
 var NAVTREEINDEX95 =
 {
+"led__pwm_8h_source.html":[5,0,0,5,1,0,4],
 "loadable_8c.html":[5,0,0,3,15,0],
 "loadable_8c.html#ga02e3057354d07e2d526b246b7977713d":[5,0,0,3,15,0,11],
 "loadable_8c.html#ga0c2e9cbc4c2d79687176d806096ddda2":[5,0,0,3,15,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX95 =
 "lux_2fw_2mcuconf_8h.html#gaa6279da05e644a4bd3bc531159ad34e6":[5,0,0,5,8,2,0,15],
 "lux_2fw_2mcuconf_8h.html#gaab9d5547752dc673dc08c01b257bbc5e":[5,0,0,5,8,2,0,41],
 "lux_2fw_2mcuconf_8h.html#gab395c2abfb2e6fd501ce4529bf09a05f":[5,0,0,5,8,2,0,68],
-"lux_2fw_2mcuconf_8h.html#gab70d9b5c3764aac6282d594d8f6a88ec":[5,0,0,5,8,2,0,76],
-"lux_2fw_2mcuconf_8h.html#gab879e56e8632bb4beb029c28133cc504":[5,0,0,5,8,2,0,81]
+"lux_2fw_2mcuconf_8h.html#gab70d9b5c3764aac6282d594d8f6a88ec":[5,0,0,5,8,2,0,76]
 };

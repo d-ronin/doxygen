@@ -1,5 +1,6 @@
 var NAVTREEINDEX98 =
 {
+"omnibusf3_2board-info_2cmsis__system_8c_source.html":[5,0,0,5,9,1,1],
 "omnibusf3_2fw_2mcuconf_8h.html":[5,0,0,5,9,2,0],
 "omnibusf3_2fw_2mcuconf_8h.html#ga0015fc8f73017358a7025ba57a265a11":[5,0,0,5,9,2,0,70],
 "omnibusf3_2fw_2mcuconf_8h.html#ga01b2a27910cfaed8a40043c8efe1e9a4":[5,0,0,5,9,2,0,78],
@@ -248,6 +249,5 @@ var NAVTREEINDEX98 =
 "op__dfu_8c.html#ga6c435d21e1e77b6e71943e6ecac43154":[5,0,0,5,1,1,2,32],
 "op__dfu_8c.html#ga6f3335509cc4943e20df66f72483910c":[5,0,0,5,1,1,2,17],
 "op__dfu_8c.html#ga7dd4853474086e75f278ea07c2f0b506":[5,0,0,5,1,1,2,29],
-"op__dfu_8c.html#ga80f6f95b1bc0667183dbf26b5439a289":[5,0,0,5,1,1,2,28],
-"op__dfu_8c.html#ga8122c172146d51c7fc782ad4981162a6":[5,0,0,5,1,1,2,4]
+"op__dfu_8c.html#ga80f6f95b1bc0667183dbf26b5439a289":[5,0,0,5,1,1,2,28]
 };

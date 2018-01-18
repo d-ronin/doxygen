@@ -1,5 +1,7 @@
 var NAVTREEINDEX122 =
 {
+"struct_font_entry.html":[2,4,18,6],
+"struct_font_entry.html#aa822ed0ca01e38e0bda330e242eee5af":[2,4,18,6,2],
 "struct_font_entry.html#aaea5f0562cfe731de03e9872bc848902":[2,4,18,6,0],
 "struct_font_entry.html#ae8b3422fb72cc76c846aceab9035f78f":[2,4,18,6,3],
 "struct_font_entry.html#aeb770362ccfec2f69ad1473a08d835ac":[2,4,18,6,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX122 =
 "struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f":[2,1,23,2],
 "struct_w_m_mtype___date.html":[2,1,24],
 "struct_w_m_mtype___date.html#a68078d5d0181333dcf11e24171a218f2":[2,1,24,1],
-"struct_w_m_mtype___date.html#a7f47a103df8618aac10b109fd5b149c4":[2,1,24,2],
-"struct_w_m_mtype___date.html#a82ccdb4608f69fe13225f5add055d3ad":[2,1,24,3],
-"struct_w_m_mtype___date.html#ae181b3f6292dbe3b6f89e412c977b1e1":[2,1,24,0]
+"struct_w_m_mtype___date.html#a7f47a103df8618aac10b109fd5b149c4":[2,1,24,2]
 };

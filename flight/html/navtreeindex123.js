@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"struct_w_m_mtype___date.html#a82ccdb4608f69fe13225f5add055d3ad":[2,1,24,3],
+"struct_w_m_mtype___date.html#ae181b3f6292dbe3b6f89e412c977b1e1":[2,1,24,0],
 "struct_w_m_mtype___ellipsoid.html":[2,1,21],
 "struct_w_m_mtype___ellipsoid.html#a15d66d7d6873c33670330e639d548626":[2,1,21,3],
 "struct_w_m_mtype___ellipsoid.html#a4bfc3186db2254aa1de93bfd694b420b":[2,1,21,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "structhott__eam__message.html#a9dc730d1a00dd4520954af97be60bc0c":[2,4,30,7,15],
 "structhott__eam__message.html#a9dece9262839deeb948bffdf08747c4d":[2,4,30,7,11],
 "structhott__eam__message.html#aa7d4d3bb4a093f812e0143239895aa39":[2,4,30,7,25],
-"structhott__eam__message.html#ac1a250663c1e9ce1a985c36af60632ba":[2,4,30,7,10],
-"structhott__eam__message.html#acf9c06dbca6180c5ba8d27cbe4f45435":[2,4,30,7,26],
-"structhott__eam__message.html#ad8b5324deef0fb86153311689e33d12e":[2,4,30,7,30]
+"structhott__eam__message.html#ac1a250663c1e9ce1a985c36af60632ba":[2,4,30,7,10]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX96 =
 {
+"lux_2fw_2mcuconf_8h.html#gab879e56e8632bb4beb029c28133cc504":[5,0,0,5,8,2,0,81],
 "lux_2fw_2mcuconf_8h.html#gabb1ff66eb6982d137ed179e590485583":[5,0,0,5,8,2,0,125],
 "lux_2fw_2mcuconf_8h.html#gabd53222576d825b8a23d1d9fd6d78a6a":[5,0,0,5,8,2,0,17],
 "lux_2fw_2mcuconf_8h.html#gabdbb6a582b057e5065023d7b0fb27821":[5,0,0,5,8,2,0,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX96 =
 "modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f":[5,0,0,2,0,8],
 "modtest_8c_source.html":[5,0,0,2,0],
 "modules.html":[2],
-"morsel_8c.html":[5,0,0,1,11],
-"morsel_8c.html#a2de728a4f6e2763b05b96ef7cd571655":[5,0,0,1,11,5]
+"morsel_8c.html":[5,0,0,1,11]
 };
