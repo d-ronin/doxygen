@@ -7,6 +7,7 @@ var struct_u_a_v_talk_connection_data =
     [ "iproc", "struct_u_a_v_talk_connection_data.html#aa032a7b051df7fcc53accec1d7ba602b", null ],
     [ "lock", "struct_u_a_v_talk_connection_data.html#a87acd60d4ce12fee04c02f3dd25e4a0c", null ],
     [ "outCb", "struct_u_a_v_talk_connection_data.html#ac5889ba31f5862e7e723d6f8727f0cf6", null ],
+    [ "reqCb", "struct_u_a_v_talk_connection_data.html#a1910e583007cf2e4d28f94d16204af61", null ],
     [ "rxBuffer", "struct_u_a_v_talk_connection_data.html#a183fa5adb153369530ac1ff53c4f3f8f", null ],
     [ "stats", "struct_u_a_v_talk_connection_data.html#ac81dea7c4ec7ecc0fb400374796e4caf", null ],
     [ "txBuffer", "struct_u_a_v_talk_connection_data.html#a63bb147699417c91ed5176745eb46211", null ],

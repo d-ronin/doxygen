@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a351c5a</span>
+   &#160;<span id="projectnumber">d0cefe4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,6 +137,8 @@ $(document).ready(function(){initNavTree('telemetry_8c.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpending__ack.html">pending_ack</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpending__req.html">pending_req</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html">telemetry_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,6 +166,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga2b77885d3b4992f77992bf84113980d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8f85a551793a73b36afa7eeccacf9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaa8f85a551793a73b36afa7eeccacf9c6">MAX_ACKS_PENDING</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:gaa8f85a551793a73b36afa7eeccacf9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ca82e46888b71c1d9f53a47e223ff1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga5ca82e46888b71c1d9f53a47e223ff1b">MAX_REQS_PENDING</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ga5ca82e46888b71c1d9f53a47e223ff1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf856c8287c579f3ddd56f6fa636432ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gaf856c8287c579f3ddd56f6fa636432ab">ACK_TIMEOUT_MS</a>&#160;&#160;&#160;250</td></tr>
 <tr class="separator:gaf856c8287c579f3ddd56f6fa636432ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -184,6 +188,8 @@ Functions</h2></td></tr>
 <tr class="separator:gac9daba3ec53ac8875ed5bdda681b44ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga302dc289b3b63d73a01282976f718e78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78">ackCallback</a> (void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td></tr>
 <tr class="separator:ga302dc289b3b63d73a01282976f718e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6726f16909707a822e9ba3ab6b0613d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga6726f16909707a822e9ba3ab6b0613d2">reqCallback</a> (void *ctx, uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint16_t inst_id)</td></tr>
+<tr class="separator:ga6726f16909707a822e9ba3ab6b0613d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8fe36b488a0dd9ccc22fd51dcad52a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gac8fe36b488a0dd9ccc22fd51dcad52a2">registerObject</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj)</td></tr>
 <tr class="separator:gac8fe36b488a0dd9ccc22fd51dcad52a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga726f32911c9cac57edb22e259c78e74f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga726f32911c9cac57edb22e259c78e74f">updateObject</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, <a class="el" href="uavobjectmanager_8h.html#a1534f957379f73e9eab328845f95ad23">UAVObjHandle</a> obj, int32_t eventType)</td></tr>
@@ -216,6 +222,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
 <tr class="separator:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga007b6d628b2388d567eda733a38e953b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga007b6d628b2388d567eda733a38e953b">sendRequestedObjs</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:ga007b6d628b2388d567eda733a38e953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe9341b34dfb706c0f819455fd6445bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb">gcsTelemetryStatsUpdated</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
 <tr class="separator:gafe9341b34dfb706c0f819455fd6445bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">

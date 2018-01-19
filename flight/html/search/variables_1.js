@@ -31,7 +31,6 @@ var searchData=
   ['accx',['accx',['../structmsp__raw__imu.html#aa1a7f9750665bda0288555f2189dd0c2',1,'msp_raw_imu::accx()'],['../msp__messages_8h.html#ac5db03f0fef1866c96a8fe1c5a3e5259',1,'accx():&#160;msp_messages.h']]],
   ['accy',['accy',['../structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0',1,'msp_raw_imu::accy()'],['../msp__messages_8h.html#ad1b7dedef4a2459acd36e9cf127f62ac',1,'accy():&#160;msp_messages.h'],['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga93b327132e7f4ba674340959be27b8e3',1,'accY():&#160;UAVOFrSKYSensorHubBridge.c']]],
   ['accz',['accz',['../structmsp__raw__imu.html#aa11689878f13ec7ac0f98611c4775fca',1,'msp_raw_imu::accz()'],['../msp__messages_8h.html#a8dbc59928e417263871a6a1d9c930756',1,'accz():&#160;msp_messages.h'],['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gaddc7f5b92ef14017e10736d3b5db5354',1,'accZ():&#160;UAVOFrSKYSensorHubBridge.c']]],
-  ['ack_5fmutex',['ack_mutex',['../structtelemetry__state.html#ad4550ae3bce2746ffcf5b1e323ab627b',1,'telemetry_state']]],
   ['ackcb',['ackCb',['../struct_u_a_v_talk_connection_data.html#aced0920927be4acbed96623c736b6f39',1,'UAVTalkConnectionData']]],
   ['acks',['acks',['../structtelemetry__state.html#a117d825a002b8624962067ee0becced6',1,'telemetry_state']]],
   ['active_5farena_5fid',['active_arena_id',['../structlogfs__state.html#a5bcf852bc8ba378be9bf82a602070073',1,'logfs_state']]],

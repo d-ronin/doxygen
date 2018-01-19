@@ -1,5 +1,13 @@
 var NAVTREEINDEX123 =
 {
+"struct_w_m_mtype___coord_geodetic.html#ad607d07209c8321f31ff85601254410b":[2,1,22,0],
+"struct_w_m_mtype___coord_spherical.html":[2,1,23],
+"struct_w_m_mtype___coord_spherical.html#a94d857d131a4281543b46b4f3dc2a28e":[2,1,23,1],
+"struct_w_m_mtype___coord_spherical.html#ac23771e3c14027441154228a3526bbfc":[2,1,23,0],
+"struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f":[2,1,23,2],
+"struct_w_m_mtype___date.html":[2,1,24],
+"struct_w_m_mtype___date.html#a68078d5d0181333dcf11e24171a218f2":[2,1,24,1],
+"struct_w_m_mtype___date.html#a7f47a103df8618aac10b109fd5b149c4":[2,1,24,2],
 "struct_w_m_mtype___date.html#a82ccdb4608f69fe13225f5add055d3ad":[2,1,24,3],
 "struct_w_m_mtype___date.html#ae181b3f6292dbe3b6f89e412c977b1e1":[2,1,24,0],
 "struct_w_m_mtype___ellipsoid.html":[2,1,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX123 =
 "structhott__eam__message.html#a70dbe89ba94517e7e541134f46e8ea2c":[2,4,30,7,24],
 "structhott__eam__message.html#a7ce30f7ca55432c26fb2b4ab846aca6f":[2,4,30,7,19],
 "structhott__eam__message.html#a83db3bd9d818ac381eb9e7dc8825d91f":[2,4,30,7,12],
-"structhott__eam__message.html#a86ea2312d9f4abbc3836d418f48ddf6e":[2,4,30,7,22],
-"structhott__eam__message.html#a8aeba613c5caac50f7afb7dfc052dd8f":[2,4,30,7,1],
-"structhott__eam__message.html#a9064a0e7fcf613d5567e46d49b091eeb":[2,4,30,7,4],
-"structhott__eam__message.html#a94a3a08ce42ff183a40f94ebf93ea8e8":[2,4,30,7,8],
-"structhott__eam__message.html#a9b54574afb4d68c35d36a857c6da0c47":[2,4,30,7,21],
-"structhott__eam__message.html#a9dc730d1a00dd4520954af97be60bc0c":[2,4,30,7,15],
-"structhott__eam__message.html#a9dece9262839deeb948bffdf08747c4d":[2,4,30,7,11],
-"structhott__eam__message.html#aa7d4d3bb4a093f812e0143239895aa39":[2,4,30,7,25],
-"structhott__eam__message.html#ac1a250663c1e9ce1a985c36af60632ba":[2,4,30,7,10]
+"structhott__eam__message.html#a86ea2312d9f4abbc3836d418f48ddf6e":[2,4,30,7,22]
 };

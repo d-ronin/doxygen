@@ -1,7 +1,7 @@
 var searchData=
 [
   ['vacc',['vAcc',['../struct_u_b_x___n_a_v___p_o_s_l_l_h.html#acd74a5379c0196b551432578f7ef6e4f',1,'UBX_NAV_POSLLH']]],
-  ['valid',['valid',['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a7709acce4beceb6a24a8f239923fb026',1,'UBX_NAV_TIMEUTC']]],
+  ['valid',['valid',['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a7709acce4beceb6a24a8f239923fb026',1,'UBX_NAV_TIMEUTC::valid()'],['../structpending__req.html#a0f4e4c66407896e6623399eb97ae7581',1,'pending_req::valid()']]],
   ['valid_5fmessages_5frecvd',['valid_messages_recvd',['../structflyingpiresp__io__10.html#a23af026ed2ab7c086102c7cb77ac0946',1,'flyingpiresp_io_10::valid_messages_recvd()'],['../flyingpio__messages_8h.html#a0eeff5dbc9e164b9953091b0ba502335',1,'valid_messages_recvd():&#160;flyingpio_messages.h']]],
   ['valid_5fpacket_5freceived',['valid_packet_received',['../unionrfm22b__ezmac__status__reg.html#a0cb5f34fa9bbcda0a913c2e55f467bf3',1,'rfm22b_ezmac_status_reg::valid_packet_received()'],['../unionrfm22b__int__status__1.html#a7ed29a9ebaaea9faaa1322de663a4341',1,'rfm22b_int_status_1::valid_packet_received()']]],
   ['valid_5fpreamble_5fdetected',['valid_preamble_detected',['../unionrfm22b__int__status__2.html#ac0392fc85b055c96cba30eafcfb7e785',1,'rfm22b_int_status_2']]],

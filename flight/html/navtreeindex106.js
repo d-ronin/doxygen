@@ -1,5 +1,12 @@
 var NAVTREEINDEX106 =
 {
+"pios__max7456_8h.html#gaeb137459ea1bae0577674ae8282917cc":[5,0,0,4,1,57,15],
+"pios__max7456_8h.html#gaefb78899481e6e78839f09cfcb1434d2":[5,0,0,4,1,57,11],
+"pios__max7456_8h_source.html":[5,0,0,4,1,57],
+"pios__max7456__priv_8h.html":[5,0,0,4,1,58],
+"pios__max7456__priv_8h.html#ga01813b7ea16a3724145ec69df2625dee":[5,0,0,4,1,58,13],
+"pios__max7456__priv_8h.html#ga021e254be07a7101c1048c08c1af4ff1":[5,0,0,4,1,58,45],
+"pios__max7456__priv_8h.html#ga041207c1f3f657f079596090e5056247":[5,0,0,4,1,58,98],
 "pios__max7456__priv_8h.html#ga082129d7abd61e50c2a201d23a2d4021":[5,0,0,4,1,58,91],
 "pios__max7456__priv_8h.html#ga08a1a29395503227cba31f7d29f8143c":[5,0,0,4,1,58,39],
 "pios__max7456__priv_8h.html#ga08a58984df01a902e8ec4c5d4c1430b3":[5,0,0,4,1,58,43],
@@ -242,12 +249,5 @@ var NAVTREEINDEX106 =
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca6653a7665f7eaffaf1e4d047b844d69f":[5,0,0,4,1,60,9,0],
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca6ad7fdc121b7f51cb2fdffb1da5fb50d":[5,0,0,4,1,60,9,5],
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca72540e8aa49bb11506b1ece40878565b":[5,0,0,4,1,60,9,7],
-"pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20caa0f826b1a7a209cf0d2ca06ef965e2c6":[5,0,0,4,1,60,9,6],
-"pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20caf97dce95df4287682eb0e4d17aaad704":[5,0,0,4,1,60,9,3],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7a0335a6910ad25a124d268a99b55e7ff0":[5,0,0,4,1,60,4,5],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7a6ac0f3d86c045c9da60ebaae403a0769":[5,0,0,4,1,60,4,3],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7a797e2d605002acb8bb4af72d7754af53":[5,0,0,4,1,60,4,6],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7aad9c42fe544636edac04a6950366950e":[5,0,0,4,1,60,4,0],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7ab6e85035fae44f7baebb08410bc57477":[5,0,0,4,1,60,4,1],
-"pios__mpu_8h.html#ggad60dce70fdf90cebbfef5e0fa96800b7acf65c9951af0950d7f47aee00786712a":[5,0,0,4,1,60,4,2]
+"pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20caa0f826b1a7a209cf0d2ca06ef965e2c6":[5,0,0,4,1,60,9,6]
 };

@@ -7,10 +7,16 @@ var group___telemetry_module =
       [ "retry_count", "structpending__ack.html#a876349df28724f6c7e7deb5931c421e9", null ],
       [ "timeout", "structpending__ack.html#a657fe27657ec6134c1433ce6a32a5388", null ]
     ] ],
+    [ "pending_req", "structpending__req.html", [
+      [ "inst_id", "structpending__req.html#a1ff0e97266d24872bf9ad4fd0cc48479", null ],
+      [ "obj_id", "structpending__req.html#adcbd3ca8a0bc13fb7251c47fc0528e8d", null ],
+      [ "valid", "structpending__req.html#a0f4e4c66407896e6623399eb97ae7581", null ]
+    ] ],
     [ "telemetry_state", "structtelemetry__state.html", [
-      [ "ack_mutex", "structtelemetry__state.html#ad4550ae3bce2746ffcf5b1e323ab627b", null ],
       [ "acks", "structtelemetry__state.html#a117d825a002b8624962067ee0becced6", null ],
       [ "queue", "structtelemetry__state.html#aa009247b2bf06f229ac643e6286f15d6", null ],
+      [ "reqack_mutex", "structtelemetry__state.html#ac87454caa79b6a5f16fb3f7d953f50f8", null ],
+      [ "reqs", "structtelemetry__state.html#ab8f16fb399fc98d554059fd459a84ea3", null ],
       [ "time_of_last_update", "structtelemetry__state.html#a5dd07ea97e720687eb5134c619c7d8c7", null ],
       [ "tx_errors", "structtelemetry__state.html#a3fa25c5612dc7096843e8079996a5c1e", null ],
       [ "tx_retries", "structtelemetry__state.html#a3aa3f6c1f863529438ea5abcc9dc6c0b", null ],
@@ -20,6 +26,7 @@ var group___telemetry_module =
     [ "CONNECTION_TIMEOUT_MS", "group___telemetry_module.html#ga3169751cd5adb9cf1e54b005fc39401a", null ],
     [ "MAX_ACKS_PENDING", "group___telemetry_module.html#gaa8f85a551793a73b36afa7eeccacf9c6", null ],
     [ "MAX_QUEUE_SIZE", "group___telemetry_module.html#ga623ec78b7909090dbedac4af1d52abb4", null ],
+    [ "MAX_REQS_PENDING", "group___telemetry_module.html#ga5ca82e46888b71c1d9f53a47e223ff1b", null ],
     [ "MAX_RETRIES", "group___telemetry_module.html#gaecf13b8dc783db2202ca5c34fe117fc3", null ],
     [ "STACK_SIZE_BYTES", "group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725", null ],
     [ "STATS_UPDATE_PERIOD_MS", "group___telemetry_module.html#gaff6904344963e58017ed918f232784dc", null ],
@@ -40,6 +47,8 @@ var group___telemetry_module =
     [ "processObjEvent", "group___telemetry_module.html#ga80d2f2dcdc75092a1c98f34e3804e963", null ],
     [ "registerObject", "group___telemetry_module.html#gac8fe36b488a0dd9ccc22fd51dcad52a2", null ],
     [ "registerObjectShim", "group___telemetry_module.html#ga84d3762937b74035949fec9da7a6c4cf", null ],
+    [ "reqCallback", "group___telemetry_module.html#ga6726f16909707a822e9ba3ab6b0613d2", null ],
+    [ "sendRequestedObjs", "group___telemetry_module.html#ga007b6d628b2388d567eda733a38e953b", null ],
     [ "session_managing_updated", "group___telemetry_module.html#gadefbd4671bb99ddde5f4003872f332dd", null ],
     [ "setUpdatePeriod", "group___telemetry_module.html#gaea219686dbd914c9afcd488b0c93de13", null ],
     [ "TelemetryInitialize", "group___telemetry_module.html#ga058925ecc8ea2cd938fb3e9d21edb2ac", null ],

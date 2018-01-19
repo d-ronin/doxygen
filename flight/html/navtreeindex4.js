@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_u_a_v_o_lighttelemetry_bridge_8c_source.html":[5,0,0,3,31,0],
 "_u_a_v_o_m_s_p_bridge_8c.html":[5,0,0,3,33,4],
 "_u_a_v_o_m_s_p_bridge_8c_source.html":[5,0,0,3,33,4],
 "_u_a_v_o_mavlink_bridge_8c.html":[5,0,0,3,32,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "alarms_8c_source.html":[5,0,0,1,7],
 "alarms_8h.html":[5,0,0,1,1,0],
 "alarms_8h.html#ga0f241880ab969542907c4216fe85aa70":[5,0,0,1,1,0,7],
-"alarms_8h.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef":[5,0,0,1,1,0,0],
-"alarms_8h.html#ga47354e86580ad415802963e09b3e408a":[5,0,0,1,1,0,1]
+"alarms_8h.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef":[5,0,0,1,1,0,0]
 };

@@ -16,6 +16,7 @@ var searchData=
   ['sendevent',['sendEvent',['../group___u_a_v_object_handling.html#gaf470f037f3153c45788d69a16f2111d5',1,'uavobjectmanager.c']]],
   ['sendnack',['sendNack',['../group___u_a_v_talk.html#ga785f0ff49141c3ea29f2ce0cd6daae7b',1,'uavtalk.c']]],
   ['sendobject',['sendObject',['../group___u_a_v_talk.html#gaf205977dac5bb5a934208bf76283174c',1,'uavtalk.c']]],
+  ['sendrequestedobjs',['sendRequestedObjs',['../group___telemetry_module.html#ga007b6d628b2388d567eda733a38e953b',1,'telemetry.c']]],
   ['sendsingleobject',['sendSingleObject',['../group___u_a_v_talk.html#ga45b80b79cff88fa5fe2cd745f79c252a',1,'uavtalk.c']]],
   ['sensors_5finit',['sensors_init',['../group___stabilization_module.html#ga4a6be989571629f866eef0e8f330254a',1,'sensors.c']]],
   ['sensors_5fsettings_5fupdate',['sensors_settings_update',['../group___stabilization_module.html#gae4a9b3081d01dd794323729ce85b591b',1,'sensors.c']]],

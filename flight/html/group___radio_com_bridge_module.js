@@ -37,6 +37,7 @@ var group___radio_com_bridge_module =
     [ "radioTxTask", "group___radio_com_bridge_module.html#gabcd3a5a7e4271f15705018e5c7a19dd1", null ],
     [ "radioTxTask", "group___radio_com_bridge_module.html#gad30099cd73f116cbb7eff378e2bb4915", null ],
     [ "registerObject", "group___radio_com_bridge_module.html#ga3cd5102e2e68971267cfbdbe7b0423f6", null ],
+    [ "TelemetryReqCallback", "group___radio_com_bridge_module.html#gad51a396cedcfbd88eb295be4ea1e5c13", null ],
     [ "telemetryRxTask", "group___radio_com_bridge_module.html#ga9da5e87898e909e36976b43920385fb7", null ],
     [ "telemetryRxTask", "group___radio_com_bridge_module.html#gafb33ab57963e1e0b7eb46993f92a29c9", null ],
     [ "telemetryTxTask", "group___radio_com_bridge_module.html#ga2aba27698bc3988dddaaaf3b77c4281d", null ],

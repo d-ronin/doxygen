@@ -132,6 +132,7 @@ var annotated =
     [ "panel_t", "structpanel__t.html", "structpanel__t" ],
     [ "path_status", "structpath__status.html", "structpath__status" ],
     [ "pending_ack", "structpending__ack.html", "structpending__ack" ],
+    [ "pending_req", "structpending__req.html", "structpending__req" ],
     [ "PeriodicObjectListStruct", "struct_periodic_object_list_struct.html", "struct_periodic_object_list_struct" ],
     [ "pid", "structpid.html", "structpid" ],
     [ "pid_deadband", "structpid__deadband.html", "structpid__deadband" ],
