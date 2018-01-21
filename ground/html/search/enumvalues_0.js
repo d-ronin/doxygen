@@ -20,7 +20,6 @@ var searchData=
   ['annunciator_5fheartbeat',['ANNUNCIATOR_HEARTBEAT',['../group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea5b0d30e0af1244cb88af714cd0d94cfb',1,'Core::IBoardType']]],
   ['annunciator_5frgb',['ANNUNCIATOR_RGB',['../group___core_plugin.html#gga615a5aa573c867267162df009eb6496ea4e98e8c917cdb73d1acac091465d1f79',1,'Core::IBoardType']]],
   ['apply_5fbutton',['apply_button',['../group___u_a_v_object_widget_utils.html#ggacf8aa6ed9da799d1973519df03d1ecfaaeebf9f5769535bd71cb2907073cf1492',1,'ConfigTaskWidget']]],
-  ['arm_5falways_5farmed',['ARM_ALWAYS_ARMED',['../group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbad0a4540e4ecbc5c87747745bf951f5fa',1,'ConfigInputWidget']]],
   ['arm_5falways_5fdisarmed',['ARM_ALWAYS_DISARMED',['../group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba76540a4b9f25acf57e570dcbb322246b',1,'ConfigInputWidget']]],
   ['arm_5fcorners',['ARM_CORNERS',['../group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba71812ee2474648b729ee2eff088c4c8d',1,'ConfigInputWidget']]],
   ['arm_5finvalid',['ARM_INVALID',['../group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba63c8371429a5c8f06a3043ae41fa83d5',1,'ConfigInputWidget']]],

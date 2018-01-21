@@ -54,6 +54,6 @@ var searchData=
   ['csvfile',['csvfile',['../uavobjecttemplate_8m.html#ace96426774cd0a55ead4146bc21c0a22',1,'uavobjecttemplate.m']]],
   ['current_5fpacket_5fnumber',['current_packet_number',['../group___uploader.html#ga4525eebcb033f5c014356e5a04e7cd9d',1,'msg_xfer_cont']]],
   ['current_5fstate',['current_state',['../group___uploader.html#ga5824e2e7482a50431e1f414cf0d6f9d1',1,'msg_status_rep']]],
-  ['curve',['curve',['../group___scope_plugin.html#ga4a0647f875271067323cf2ad3868afa4',1,'ScatterplotData::curve()'],['../group___config_plugin.html#ga4f0e02687c32159b95bf341adf36853e',1,'ExpoCurve::ExpoPlotElements::Curve()']]],
+  ['curve',['Curve',['../group___config_plugin.html#ga4f0e02687c32159b95bf341adf36853e',1,'ExpoCurve::ExpoPlotElements::Curve()'],['../group___scope_plugin.html#ga4a0647f875271067323cf2ad3868afa4',1,'ScatterplotData::curve()']]],
   ['cut',['CUT',['../group___core_plugin.html#ga81faf7dc9520b27201aca63aa91304ba',1,'Core::Constants']]]
 ];

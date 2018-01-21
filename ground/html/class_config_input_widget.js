@@ -3,7 +3,6 @@ var class_config_input_widget =
     [ "ArmingMethodType", "group___config_plugin.html#gaec8e4632b567f74217c7d76a3b7258cb", [
       [ "ARM_INVALID", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba63c8371429a5c8f06a3043ae41fa83d5", null ],
       [ "ARM_ALWAYS_DISARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba76540a4b9f25acf57e570dcbb322246b", null ],
-      [ "ARM_ALWAYS_ARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbad0a4540e4ecbc5c87747745bf951f5fa", null ],
       [ "ARM_SWITCH", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbaac21db4e8446e0d25102d7164fb6d9f9", null ],
       [ "ARM_ROLL_LEFT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba7748bba653a106b04be28a89ff3dbfe5", null ],
       [ "ARM_ROLL_RIGHT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba54aa07d5016aaaed41c2dffc1835042a", null ],

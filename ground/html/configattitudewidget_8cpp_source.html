@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">000e89e</span>
+   &#160;<span id="projectnumber">a026d3c</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -175,238 +175,273 @@ $(document).ready(function(){initNavTree('configattitudewidget_8cpp_source.html'
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga0c45c1f74a393884ee2ca556b0b3151a">   75</a></span>&#160;<a class="code" href="group___config_plugin.html#ga0c45c1f74a393884ee2ca556b0b3151a">ConfigAttitudeWidget::ConfigAttitudeWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    : <a class="code" href="class_config_task_widget.html">ConfigTaskWidget</a>(parent)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    , m_ui(new Ui_AttitudeWidget())</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    , board_has_accelerometer(false)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    , board_has_magnetometer(false)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Initialization of the Paper plane widget</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setScene(<span class="keyword">new</span> QGraphicsScene(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    paperplane = <span class="keyword">new</span> QGraphicsSvgItem();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    paperplane-&gt;setSharedRenderer(<span class="keyword">new</span> QSvgRenderer());</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    paperplane-&gt;renderer()-&gt;load(QString(<span class="stringliteral">&quot;:/configgadget/images/paper-plane.svg&quot;</span>));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    paperplane-&gt;setElementId(<span class="stringliteral">&quot;plane-horizontal&quot;</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_ui-&gt;sixPointHelp-&gt;scene()-&gt;addItem(paperplane);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setSceneRect(paperplane-&gt;boundingRect());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a> *<a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a> = pm-&gt;getObject&lt;<a class="code" href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a>&gt;();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    Q_ASSERT(utilMngr);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (utilMngr != NULL) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = utilMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (board != NULL) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            board_has_accelerometer =</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                board-&gt;<a class="code" href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">queryCapabilities</a>(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3">Core::IBoardType::BOARD_CAPABILITIES_ACCELS</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            board_has_magnetometer =</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                board-&gt;<a class="code" href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">queryCapabilities</a>(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a769644e0a335cd070adf4c24017a462f">Core::IBoardType::BOARD_CAPABILITIES_MAGS</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_ui-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Initialization of the Paper plane widget</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setScene(<span class="keyword">new</span> QGraphicsScene(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    paperplane = <span class="keyword">new</span> QGraphicsSvgItem();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    paperplane-&gt;setSharedRenderer(<span class="keyword">new</span> QSvgRenderer());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    paperplane-&gt;renderer()-&gt;load(QString(<span class="stringliteral">&quot;:/configgadget/images/paper-plane.svg&quot;</span>));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    paperplane-&gt;setElementId(<span class="stringliteral">&quot;plane-horizontal&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    m_ui-&gt;sixPointHelp-&gt;scene()-&gt;addItem(paperplane);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setSceneRect(paperplane-&gt;boundingRect());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// keep calibration selection in sync with board</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_object_widget_utils.html#ga6812138654a8b49e72c674cee7245781">ConfigTaskWidget::autoPilotConnected</a>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">this</span>, &amp;ConfigAttitudeWidget::updateCalibrationEnabled);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (Q_LIKELY(<a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>)) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">auto</span> uavoMan = <a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9a99c93b8210149fd59246e2648a9c59">getObjectManager</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (Q_LIKELY(uavoMan)) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">auto</span> mag = uavoMan-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(QStringLiteral(<span class="stringliteral">&quot;Magnetometer&quot;</span>));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (mag) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                connect(mag, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga2b9ae613f54e59b358dbf2e31d32d9ad">UAVObject::objectUnpacked</a>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <span class="keyword">this</span>, &amp;ConfigAttitudeWidget::updateCalibrationEnabled);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    updateCalibrationEnabled();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// Must set up the UI (above) before setting up the UAVO mappings or refreshWidgetValues</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// will be dealing with some null pointers</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">addUAVObject</a>(<span class="stringliteral">&quot;AttitudeSettings&quot;</span>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">addUAVObject</a>(<span class="stringliteral">&quot;SensorSettings&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">if</span> (board_has_magnetometer) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">addUAVObject</a>(<span class="stringliteral">&quot;INSSettings&quot;</span>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">autoLoadWidgets</a>();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Configure the calibration object</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#gab7f3ea695cee64e92f8fe59d546b134d">initialize</a>(board_has_accelerometer, board_has_magnetometer);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Configure the calibration UI</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_ui-&gt;cbCalibrateAccels-&gt;setChecked(board_has_accelerometer);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_ui-&gt;cbCalibrateMags-&gt;setChecked(board_has_magnetometer);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (!board_has_accelerometer</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        || !board_has_magnetometer) { <span class="comment">// If both are not available, don&#39;t provide any choices.</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        m_ui-&gt;cbCalibrateAccels-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        m_ui-&gt;cbCalibrateMags-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Must connect the graphs to the calibration object to see the calibration results</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#ga7f1864654eed2d90d8bb5949c9249454">configureTempCurves</a>(m_ui-&gt;xGyroTemp, m_ui-&gt;yGyroTemp, m_ui-&gt;zGyroTemp);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Connect the signals</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    connect(m_ui-&gt;yawOrientationStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga9ba51fd00806dc7450dc193b478a7b28">Calibration::doStartOrientation</a>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    connect(m_ui-&gt;levelingStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga9d350030ba25465f896d5108164d2421">Calibration::doStartNoBiasLeveling</a>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    connect(m_ui-&gt;levelingAndBiasStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga0c3aedb47a4bab6ef55317de7d13d15a">Calibration::doStartBiasAndLeveling</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    connect(m_ui-&gt;sixPointStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga5bea779241f9d9bb50e2c670ea588a43">Calibration::doStartSixPoint</a>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    connect(m_ui-&gt;sixPointSave, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga0d28935bfd66742e8551ddbdd98ce941">Calibration::doSaveSixPointPosition</a>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    connect(m_ui-&gt;sixPointCancel, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga5a9bae0780189e6dfd1aadaa825232e0">Calibration::doCancelSixPoint</a>);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    connect(m_ui-&gt;cbCalibrateAccels, &amp;QAbstractButton::clicked, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            &amp;ConfigAttitudeWidget::configureSixPoint);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    connect(m_ui-&gt;cbCalibrateMags, &amp;QAbstractButton::clicked, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            &amp;ConfigAttitudeWidget::configureSixPoint);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    connect(m_ui-&gt;startTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#gad79bd9545005476bb15c478607e55a36">Calibration::doStartTempCal</a>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    connect(m_ui-&gt;acceptTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga410796ba6e560144c62ec42a8b7bc9b9">Calibration::doAcceptTempCal</a>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    connect(m_ui-&gt;cancelTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#gaee6c4261672e5a8c194c331a71963622">Calibration::doCancelTempCalPoint</a>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    connect(m_ui-&gt;tempCalRange, QOverload&lt;int&gt;::of(&amp;QSpinBox::valueChanged), &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1">Calibration::setTempCalRange</a>);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// only allow the calibration to be accepted after min temperature change</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a7d28d53212a12e83b021eb3d32e06bcd">Calibration::tempCalProgressChanged</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>](<span class="keywordtype">int</span> progress) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (!m_ui-&gt;acceptTempCal)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        if (progress &gt;= 100)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_ui-&gt;acceptTempCal-&gt;isEnabled())</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    });</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1">setTempCalRange</a>(m_ui-&gt;tempCalRange-&gt;value());</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Let calibration update the UI</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a61c4cc0da63c12d3c5bd4a85a5b26e63">Calibration::yawOrientationProgressChanged</a>, m_ui-&gt;pb_yawCalibration,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">addUAVObject</a>(<span class="stringliteral">&quot;INSSettings&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga9cf93d9471cb86b7d1c0bcc0744336e9">setNotMandatory</a>(<span class="stringliteral">&quot;INSSettings&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">autoLoadWidgets</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// Configure the calibration object</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#gab7f3ea695cee64e92f8fe59d546b134d">initialize</a>(<span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// Configure the calibration selection</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    updateCalibrationEnabled();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Must connect the graphs to the calibration object to see the calibration results</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#ga7f1864654eed2d90d8bb5949c9249454">configureTempCurves</a>(m_ui-&gt;xGyroTemp, m_ui-&gt;yGyroTemp, m_ui-&gt;zGyroTemp);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Connect the signals</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    connect(m_ui-&gt;yawOrientationStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga9ba51fd00806dc7450dc193b478a7b28">Calibration::doStartOrientation</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    connect(m_ui-&gt;levelingStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga9d350030ba25465f896d5108164d2421">Calibration::doStartNoBiasLeveling</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    connect(m_ui-&gt;levelingAndBiasStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga0c3aedb47a4bab6ef55317de7d13d15a">Calibration::doStartBiasAndLeveling</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    connect(m_ui-&gt;sixPointStart, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga5bea779241f9d9bb50e2c670ea588a43">Calibration::doStartSixPoint</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    connect(m_ui-&gt;sixPointSave, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga0d28935bfd66742e8551ddbdd98ce941">Calibration::doSaveSixPointPosition</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    connect(m_ui-&gt;sixPointCancel, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga5a9bae0780189e6dfd1aadaa825232e0">Calibration::doCancelSixPoint</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    connect(m_ui-&gt;cbCalibrateAccels, &amp;QAbstractButton::clicked, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            &amp;ConfigAttitudeWidget::configureSixPoint);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    connect(m_ui-&gt;cbCalibrateMags, &amp;QAbstractButton::clicked, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            &amp;ConfigAttitudeWidget::configureSixPoint);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    connect(m_ui-&gt;startTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#gad79bd9545005476bb15c478607e55a36">Calibration::doStartTempCal</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    connect(m_ui-&gt;acceptTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga410796ba6e560144c62ec42a8b7bc9b9">Calibration::doAcceptTempCal</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    connect(m_ui-&gt;cancelTempCal, &amp;QAbstractButton::clicked, &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#gaee6c4261672e5a8c194c331a71963622">Calibration::doCancelTempCalPoint</a>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    connect(m_ui-&gt;tempCalRange, QOverload&lt;int&gt;::of(&amp;QSpinBox::valueChanged), &amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            &amp;<a class="code" href="group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1">Calibration::setTempCalRange</a>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// only allow the calibration to be accepted after min temperature change</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a7d28d53212a12e83b021eb3d32e06bcd">Calibration::tempCalProgressChanged</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>](<span class="keywordtype">int</span> progress) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (!m_ui-&gt;acceptTempCal)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        if (progress &gt;= 100)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_ui-&gt;acceptTempCal-&gt;isEnabled())</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            m_ui-&gt;acceptTempCal-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    });</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1">setTempCalRange</a>(m_ui-&gt;tempCalRange-&gt;value());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// Let calibration update the UI</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a61c4cc0da63c12d3c5bd4a85a5b26e63">Calibration::yawOrientationProgressChanged</a>, m_ui-&gt;pb_yawCalibration,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            &amp;QProgressBar::setValue);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a34770d5a2df9d4dd5e5845c8c0633a63">Calibration::levelingProgressChanged</a>, m_ui-&gt;accelBiasProgress,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            &amp;QProgressBar::setValue);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a7d28d53212a12e83b021eb3d32e06bcd">Calibration::tempCalProgressChanged</a>, m_ui-&gt;tempCalProgress,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            &amp;QProgressBar::setValue);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a6d1fe12509a4d29e08cb8d76e7d81b20">Calibration::showTempCalMessage</a>, m_ui-&gt;tempCalMessage, &amp;QLabel::setText);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a147fed7878b2ce2578f912e377447cc8">Calibration::sixPointProgressChanged</a>, m_ui-&gt;sixPointProgress,</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            &amp;QProgressBar::setValue);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a34770d5a2df9d4dd5e5845c8c0633a63">Calibration::levelingProgressChanged</a>, m_ui-&gt;accelBiasProgress,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            &amp;QProgressBar::setValue);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a7d28d53212a12e83b021eb3d32e06bcd">Calibration::tempCalProgressChanged</a>, m_ui-&gt;tempCalProgress,</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            &amp;QProgressBar::setValue);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a6d1fe12509a4d29e08cb8d76e7d81b20">Calibration::showTempCalMessage</a>, m_ui-&gt;tempCalMessage, &amp;QLabel::setText);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a147fed7878b2ce2578f912e377447cc8">Calibration::sixPointProgressChanged</a>, m_ui-&gt;sixPointProgress,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            &amp;QProgressBar::setValue);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a3cd34992a8bea67dbc42f5a4dbe1d08d">Calibration::showSixPointMessage</a>, m_ui-&gt;sixPointCalibInstructions,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            &amp;QTextEdit::setText);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#abf64232b5acd7d93c98cf1394b0547d8">Calibration::updatePlane</a>, <span class="keyword">this</span>, &amp;ConfigAttitudeWidget::displayPlane);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// Let the calibration gadget control some control enables</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a5c0c4477675b95dc0417496eb667f187">Calibration::toggleSavePosition</a>, m_ui-&gt;sixPointSave,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;sixPointStart, &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;sixPointCancel,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            &amp;QWidget::setDisabled);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;yawOrientationStart,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;levelingStart, &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;levelingAndBiasStart,</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;startTempCal, &amp;QWidget::setEnabled);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;acceptTempCal, &amp;QWidget::setDisabled);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;cancelTempCal, &amp;QWidget::setDisabled);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// Let the calibration gadget mark the tab as dirty, i.e. having unsaved data.</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a4e681ad78dc398b52b137dad1fe8e18b">Calibration::calibrationCompleted</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            &amp;ConfigAttitudeWidget::do_SetDirty);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// Let the calibration class mark the widget as busy</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#af4e5bef968bb97384e8720dfcf075ed9">Calibration::calibrationBusy</a>, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            &amp;ConfigAttitudeWidget::onCalibrationBusy);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    m_ui-&gt;sixPointStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    m_ui-&gt;yawOrientationStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    m_ui-&gt;levelingStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    m_ui-&gt;levelingAndBiasStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    refreshWidgetsValues();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">  212</a></span>&#160;<a class="code" href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">ConfigAttitudeWidget::~ConfigAttitudeWidget</a>()</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// Do nothing</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">  217</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">ConfigAttitudeWidget::showEvent</a>(QShowEvent *event)</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    Q_UNUSED(event)</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">  223</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">ConfigAttitudeWidget::resizeEvent</a>(QResizeEvent *event)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    Q_UNUSED(event)</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::displayPlane(<span class="keywordtype">int</span> position)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    QString displayElement;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">switch</span> (position) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-horizontal&quot;</span>;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-left&quot;</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-flip&quot;</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-right&quot;</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-up&quot;</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-down&quot;</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a3cd34992a8bea67dbc42f5a4dbe1d08d">Calibration::showSixPointMessage</a>, m_ui-&gt;sixPointCalibInstructions,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            &amp;QTextEdit::setText);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#abf64232b5acd7d93c98cf1394b0547d8">Calibration::updatePlane</a>, <span class="keyword">this</span>, &amp;ConfigAttitudeWidget::displayPlane);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// Let the calibration gadget control some control enables</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a5c0c4477675b95dc0417496eb667f187">Calibration::toggleSavePosition</a>, m_ui-&gt;sixPointSave,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;sixPointStart, &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;sixPointCancel,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            &amp;QWidget::setDisabled);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;yawOrientationStart,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;levelingStart, &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;levelingAndBiasStart,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;startTempCal, &amp;QWidget::setEnabled);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;acceptTempCal, &amp;QWidget::setDisabled);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a>, m_ui-&gt;cancelTempCal, &amp;QWidget::setDisabled);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Let the calibration gadget mark the tab as dirty, i.e. having unsaved data.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#a4e681ad78dc398b52b137dad1fe8e18b">Calibration::calibrationCompleted</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            &amp;ConfigAttitudeWidget::do_SetDirty);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// Let the calibration class mark the widget as busy</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    connect(&amp;<a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>, &amp;<a class="code" href="class_calibration.html#af4e5bef968bb97384e8720dfcf075ed9">Calibration::calibrationBusy</a>, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            &amp;ConfigAttitudeWidget::onCalibrationBusy);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    m_ui-&gt;sixPointStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    m_ui-&gt;yawOrientationStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    m_ui-&gt;levelingStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    m_ui-&gt;levelingAndBiasStart-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    refreshWidgetsValues();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">  205</a></span>&#160;<a class="code" href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">ConfigAttitudeWidget::~ConfigAttitudeWidget</a>()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">  210</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">ConfigAttitudeWidget::showEvent</a>(QShowEvent *event)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    Q_UNUSED(event)</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">  216</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">ConfigAttitudeWidget::resizeEvent</a>(QResizeEvent *event)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    Q_UNUSED(event)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::displayPlane(<span class="keywordtype">int</span> position)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    QString displayElement;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">switch</span> (position) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-horizontal&quot;</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-left&quot;</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-flip&quot;</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-right&quot;</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-up&quot;</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        displayElement = <span class="stringliteral">&quot;plane-down&quot;</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    paperplane-&gt;setElementId(displayElement);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setSceneRect(paperplane-&gt;boundingRect());</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">/********** UI Functions *************/</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    paperplane-&gt;setElementId(displayElement);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    m_ui-&gt;sixPointHelp-&gt;setSceneRect(paperplane-&gt;boundingRect());</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    m_ui-&gt;sixPointHelp-&gt;fitInView(paperplane, Qt::KeepAspectRatio);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">/********** UI Functions *************/</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::refreshWidgetsValues(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga7682451eb1e003d337c679fc8a36c6e1">ConfigTaskWidget::refreshWidgetsValues</a>();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::do_SetDirty()</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::configureSixPoint()</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> (!m_ui-&gt;cbCalibrateAccels-&gt;isChecked() &amp;&amp; !m_ui-&gt;cbCalibrateMags-&gt;isChecked()) {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;No sensors chosen&quot;</span>, <span class="stringliteral">&quot;At least one of the sensors must be &quot;</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                                            <span class="stringliteral">&quot;chosen. \n\nResetting six-point &quot;</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                                            <span class="stringliteral">&quot;sensor calibration selection.&quot;</span>);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        m_ui-&gt;cbCalibrateAccels-&gt;setChecked(<span class="keyword">true</span> &amp;&amp; board_has_accelerometer);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        m_ui-&gt;cbCalibrateMags-&gt;setChecked(<span class="keyword">true</span> &amp;&amp; board_has_magnetometer);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#gab7f3ea695cee64e92f8fe59d546b134d">initialize</a>(m_ui-&gt;cbCalibrateAccels-&gt;isChecked(),</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                           m_ui-&gt;cbCalibrateMags-&gt;isChecked());</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::onCalibrationBusy(<span class="keywordtype">bool</span> busy)</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment">// Show the UI is blocking</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (busy)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        QApplication::setOverrideCursor(Qt::WaitCursor);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        QApplication::restoreOverrideCursor();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::refreshWidgetsValues(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#ga7682451eb1e003d337c679fc8a36c6e1">ConfigTaskWidget::refreshWidgetsValues</a>();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::do_SetDirty()</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">setDirty</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::configureSixPoint()</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (!m_ui-&gt;cbCalibrateAccels-&gt;isChecked() &amp;&amp; !m_ui-&gt;cbCalibrateMags-&gt;isChecked()) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;No sensors chosen&quot;</span>, <span class="stringliteral">&quot;At least one of the sensors must be &quot;</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                                            <span class="stringliteral">&quot;chosen. \n\nResetting six-point &quot;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                                            <span class="stringliteral">&quot;sensor calibration selection.&quot;</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">// set checkboxes to default state</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        updateCalibrationEnabled();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <a class="code" href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">calibration</a>.<a class="code" href="group___config_plugin.html#gab7f3ea695cee64e92f8fe59d546b134d">initialize</a>(m_ui-&gt;cbCalibrateAccels-&gt;isChecked(),</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                               m_ui-&gt;cbCalibrateMags-&gt;isChecked());</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::onCalibrationBusy(<span class="keywordtype">bool</span> busy)</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// Show the UI is blocking</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span> (busy)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        QApplication::setOverrideCursor(Qt::WaitCursor);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        QApplication::restoreOverrideCursor();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keywordtype">void</span> ConfigAttitudeWidget::updateCalibrationEnabled()</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;{</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">bool</span> have_mag = <span class="keyword">false</span>, have_accel = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">if</span> (Q_LIKELY(<a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>)) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *board = <a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">getBoardType</a>();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (board) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            have_accel = board-&gt;<a class="code" href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">queryCapabilities</a>(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3">Core::IBoardType::BOARD_CAPABILITIES_ACCELS</a>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="comment">// some boards don&#39;t have this capability, but can still have an external mag</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            have_mag = board-&gt;<a class="code" href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">queryCapabilities</a>(<a class="code" href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967a769644e0a335cd070adf4c24017a462f">Core::IBoardType::BOARD_CAPABILITIES_MAGS</a>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keyword">auto</span> uavoMan = <a class="code" href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">utilMngr</a>-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9a99c93b8210149fd59246e2648a9c59">getObjectManager</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">if</span> (Q_LIKELY(uavoMan)) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="keyword">auto</span> mag = qobject_cast&lt;<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *&gt;(</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                        uavoMan-&gt;getObject(QStringLiteral(<span class="stringliteral">&quot;Magnetometer&quot;</span>)));</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">if</span> (mag &amp;&amp; mag-&gt;getIsPresentOnHardware()) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                <span class="comment">// if any of the fields have data, the mag must be present</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                <span class="keyword">const</span> <span class="keyword">auto</span> fields = mag-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga043de5085e6ade44abfb005e320d10ca">getFields</a>();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> f : fields) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                    <span class="keywordflow">if</span> (f-&gt;getValue() != f-&gt;getDefaultValue())</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                        have_mag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    m_ui-&gt;cbCalibrateAccels-&gt;setEnabled(have_accel);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    m_ui-&gt;cbCalibrateMags-&gt;setEnabled(have_mag);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (!have_accel)</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        m_ui-&gt;cbCalibrateAccels-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">if</span> (!have_mag)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        m_ui-&gt;cbCalibrateMags-&gt;setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (!m_ui-&gt;cbCalibrateAccels-&gt;isChecked() &amp;&amp; !m_ui-&gt;cbCalibrateMags-&gt;isChecked()) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        m_ui-&gt;cbCalibrateAccels-&gt;setChecked(have_accel);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        m_ui-&gt;cbCalibrateMags-&gt;setChecked(have_mag);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
 <div class="ttc" id="class_calibration_html_abf64232b5acd7d93c98cf1394b0547d8"><div class="ttname"><a href="class_calibration.html#abf64232b5acd7d93c98cf1394b0547d8">Calibration::updatePlane</a></div><div class="ttdeci">void updatePlane(int position)</div><div class="ttdoc">Change the UAV visualization. </div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga945551d9d4d280fe2cd14bc2646d8fbf"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">ConfigTaskWidget::autoLoadWidgets</a></div><div class="ttdeci">void autoLoadWidgets()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00707">configtaskwidget.cpp:707</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gae75127fbfffe10458defc31a6a18c0f8"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">ConfigTaskWidget::setDirty</a></div><div class="ttdeci">void setDirty(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00535">configtaskwidget.cpp:535</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga4578f848dc694e8ac27688a491212e72"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga4578f848dc694e8ac27688a491212e72">ConfigTaskWidget::utilMngr</a></div><div class="ttdeci">UAVObjectUtilManager * utilMngr</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00332">configtaskwidget.h:332</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga3a79765d89dea1538f1c4393e19a2f39"><div class="ttname"><a href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">ConfigAttitudeWidget::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00217">configattitudewidget.cpp:217</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga3a79765d89dea1538f1c4393e19a2f39"><div class="ttname"><a href="group___config_plugin.html#ga3a79765d89dea1538f1c4393e19a2f39">ConfigAttitudeWidget::showEvent</a></div><div class="ttdeci">void showEvent(QShowEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00210">configattitudewidget.cpp:210</a></div></div>
+<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga9cf93d9471cb86b7d1c0bcc0744336e9"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga9cf93d9471cb86b7d1c0bcc0744336e9">ConfigTaskWidget::setNotMandatory</a></div><div class="ttdeci">void setNotMandatory(QString object)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00208">configtaskwidget.cpp:208</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga0d28935bfd66742e8551ddbdd98ce941"><div class="ttname"><a href="group___config_plugin.html#ga0d28935bfd66742e8551ddbdd98ce941">Calibration::doSaveSixPointPosition</a></div><div class="ttdeci">void doSaveSixPointPosition()</div><div class="ttdoc">Indicates UAV is in a position to collect data during 6pt calibration. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00656">calibration.cpp:656</a></div></div>
 <div class="ttc" id="class_calibration_html_a4e681ad78dc398b52b137dad1fe8e18b"><div class="ttname"><a href="class_calibration.html#a4e681ad78dc398b52b137dad1fe8e18b">Calibration::calibrationCompleted</a></div><div class="ttdeci">void calibrationCompleted()</div><div class="ttdoc">Indicate that a calibration process has successfully completed and the results saved to UAVO...</div></div>
+<div class="ttc" id="group___u_a_v_object_widget_utils_html_ga6812138654a8b49e72c674cee7245781"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga6812138654a8b49e72c674cee7245781">ConfigTaskWidget::autoPilotConnected</a></div><div class="ttdeci">void autoPilotConnected()</div></div>
 <div class="ttc" id="group___config_plugin_html_ga5bea779241f9d9bb50e2c670ea588a43"><div class="ttname"><a href="group___config_plugin.html#ga5bea779241f9d9bb50e2c670ea588a43">Calibration::doStartSixPoint</a></div><div class="ttdeci">void doStartSixPoint()</div><div class="ttdoc">Start the six point calibration routine. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00538">calibration.cpp:538</a></div></div>
 <div class="ttc" id="class_config_task_widget_html"><div class="ttname"><a href="class_config_task_widget.html">ConfigTaskWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8h_source.html#l00055">configtaskwidget.h:55</a></div></div>
-<div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3"><div class="ttname"><a href="group___core_plugin.html#gga01b09218f2a13aaeee6db007ac6bd967ac0d0ee8be489c9d3b7b41f1463fea3f3">Core::IBoardType::BOARD_CAPABILITIES_ACCELS</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00094">iboardtype.h:94</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga895658576c504c370a7a7929a832f1b1"><div class="ttname"><a href="group___config_plugin.html#ga895658576c504c370a7a7929a832f1b1">Calibration::setTempCalRange</a></div><div class="ttdeci">void setTempCalRange(int r)</div><div class="ttdoc">Set temperature calibration range. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00804">calibration.cpp:804</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga0c45c1f74a393884ee2ca556b0b3151a"><div class="ttname"><a href="group___config_plugin.html#ga0c45c1f74a393884ee2ca556b0b3151a">ConfigAttitudeWidget::ConfigAttitudeWidget</a></div><div class="ttdeci">ConfigAttitudeWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00075">configattitudewidget.cpp:75</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga2b9ae613f54e59b358dbf2e31d32d9ad"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga2b9ae613f54e59b358dbf2e31d32d9ad">UAVObject::objectUnpacked</a></div><div class="ttdeci">void objectUnpacked(UAVObject *obj)</div><div class="ttdoc">objectUnpacked: triggered whenever an object is unpacked (i.e. arrives from the telemetry link) ...</div></div>
 <div class="ttc" id="configattitudewidget_8h_html"><div class="ttname"><a href="configattitudewidget_8h.html">configattitudewidget.h</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga6422c7d13c247e91f9f9f9bc1d5a8531"><div class="ttname"><a href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">ConfigAttitudeWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00223">configattitudewidget.cpp:223</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga6a068a00a4c75c776ee941255797e705"><div class="ttname"><a href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">ConfigAttitudeWidget::~ConfigAttitudeWidget</a></div><div class="ttdeci">~ConfigAttitudeWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00212">configattitudewidget.cpp:212</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga6422c7d13c247e91f9f9f9bc1d5a8531"><div class="ttname"><a href="group___config_plugin.html#ga6422c7d13c247e91f9f9f9bc1d5a8531">ConfigAttitudeWidget::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00216">configattitudewidget.cpp:216</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga6a068a00a4c75c776ee941255797e705"><div class="ttname"><a href="group___config_plugin.html#ga6a068a00a4c75c776ee941255797e705">ConfigAttitudeWidget::~ConfigAttitudeWidget</a></div><div class="ttdeci">~ConfigAttitudeWidget()</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00205">configattitudewidget.cpp:205</a></div></div>
 <div class="ttc" id="class_calibration_html_a7d28d53212a12e83b021eb3d32e06bcd"><div class="ttname"><a href="class_calibration.html#a7d28d53212a12e83b021eb3d32e06bcd">Calibration::tempCalProgressChanged</a></div><div class="ttdeci">void tempCalProgressChanged(int)</div><div class="ttdoc">Indicate what the progress is for temperature calibration. </div></div>
 <div class="ttc" id="class_thread_html"><div class="ttname"><a href="class_thread.html">Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00067">configattitudewidget.cpp:67</a></div></div>
 <div class="ttc" id="assertions_8h_html"><div class="ttname"><a href="assertions_8h.html">assertions.h</a></div></div>
@@ -418,15 +453,17 @@ $(document).ready(function(){initNavTree('configattitudewidget_8cpp_source.html'
 <div class="ttc" id="group___core_plugin_html_gac4aef79d19d7ee487afee6655808e722"><div class="ttname"><a href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">Core::IBoardType::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)=0</div><div class="ttdoc">Query capabilities of the board. </div></div>
 <div class="ttc" id="group___config_plugin_html_ga9d350030ba25465f896d5108164d2421"><div class="ttname"><a href="group___config_plugin.html#ga9d350030ba25465f896d5108164d2421">Calibration::doStartNoBiasLeveling</a></div><div class="ttdeci">void doStartNoBiasLeveling()</div><div class="ttdoc">Start collecting data while vehicle is level. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00488">calibration.cpp:488</a></div></div>
 <div class="ttc" id="class_calibration_html_a6d1fe12509a4d29e08cb8d76e7d81b20"><div class="ttname"><a href="class_calibration.html#a6d1fe12509a4d29e08cb8d76e7d81b20">Calibration::showTempCalMessage</a></div><div class="ttdeci">void showTempCalMessage(QString message)</div><div class="ttdoc">Show an instruction or message from temperature calibration. </div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga9a99c93b8210149fd59246e2648a9c59"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9a99c93b8210149fd59246e2648a9c59">UAVObjectUtilManager::getObjectManager</a></div><div class="ttdeci">UAVObjectManager * getObjectManager()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8cpp_source.html#l00078">uavobjectutilmanager.cpp:78</a></div></div>
 <div class="ttc" id="class_calibration_html_a147fed7878b2ce2578f912e377447cc8"><div class="ttname"><a href="class_calibration.html#a147fed7878b2ce2578f912e377447cc8">Calibration::sixPointProgressChanged</a></div><div class="ttdeci">void sixPointProgressChanged(int)</div><div class="ttdoc">Indicate what the progress is for six point collection. </div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
-<div class="ttc" id="class_u_a_v_object_util_manager_html"><div class="ttname"><a href="class_u_a_v_object_util_manager.html">UAVObjectUtilManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8h_source.html#l00049">uavobjectutilmanager.h:49</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga5a9bae0780189e6dfd1aadaa825232e0"><div class="ttname"><a href="group___config_plugin.html#ga5a9bae0780189e6dfd1aadaa825232e0">Calibration::doCancelSixPoint</a></div><div class="ttdeci">void doCancelSixPoint()</div><div class="ttdoc">Cancels the six point calibration routine. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00630">calibration.cpp:630</a></div></div>
 <div class="ttc" id="class_calibration_html_a3cd34992a8bea67dbc42f5a4dbe1d08d"><div class="ttname"><a href="class_calibration.html#a3cd34992a8bea67dbc42f5a4dbe1d08d">Calibration::showSixPointMessage</a></div><div class="ttdeci">void showSixPointMessage(QString message)</div><div class="ttdoc">Show an instruction to the user for six point calibration. </div></div>
 <div class="ttc" id="group___config_plugin_html_gaee6c4261672e5a8c194c331a71963622"><div class="ttname"><a href="group___config_plugin.html#gaee6c4261672e5a8c194c331a71963622">Calibration::doCancelTempCalPoint</a></div><div class="ttdeci">void doCancelTempCalPoint()</div><div class="ttdoc">Cancels the temperature calibration routine. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00770">calibration.cpp:770</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga043de5085e6ade44abfb005e320d10ca"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga043de5085e6ade44abfb005e320d10ca">UAVObject::getFields</a></div><div class="ttdeci">QList&lt; UAVObjectField * &gt; getFields()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00198">uavobject.cpp:198</a></div></div>
 <div class="ttc" id="class_calibration_html_a61c4cc0da63c12d3c5bd4a85a5b26e63"><div class="ttname"><a href="class_calibration.html#a61c4cc0da63c12d3c5bd4a85a5b26e63">Calibration::yawOrientationProgressChanged</a></div><div class="ttdeci">void yawOrientationProgressChanged(int)</div><div class="ttdoc">Indicate what the progress is for yaw orientation. </div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga82f371b1291826ec74341dddfe827c83"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga82f371b1291826ec74341dddfe827c83">ConfigTaskWidget::addUAVObject</a></div><div class="ttdeci">void addUAVObject(QString objectName, QList&lt; int &gt; *reloadGroups=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00087">configtaskwidget.cpp:87</a></div></div>
 <div class="ttc" id="class_thread_html_a44676f1488d962652d36aa7dacfec50e"><div class="ttname"><a href="class_thread.html#a44676f1488d962652d36aa7dacfec50e">Thread::usleep</a></div><div class="ttdeci">static void usleep(unsigned long usecs)</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8cpp_source.html#l00070">configattitudewidget.cpp:70</a></div></div>
+<div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
 <div class="ttc" id="calibration_8h_html"><div class="ttname"><a href="calibration_8h.html">calibration.h</a></div><div class="ttdoc">Gui-less support class for calibration. </div></div>
 <div class="ttc" id="group___config_plugin_html_ga0c3aedb47a4bab6ef55317de7d13d15a"><div class="ttname"><a href="group___config_plugin.html#ga0c3aedb47a4bab6ef55317de7d13d15a">Calibration::doStartBiasAndLeveling</a></div><div class="ttdeci">void doStartBiasAndLeveling()</div><div class="ttdoc">Start collecting data while vehicle is level. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00481">calibration.cpp:481</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
@@ -435,9 +472,10 @@ $(document).ready(function(){initNavTree('configattitudewidget_8cpp_source.html'
 <div class="ttc" id="class_calibration_html_af4e5bef968bb97384e8720dfcf075ed9"><div class="ttname"><a href="class_calibration.html#af4e5bef968bb97384e8720dfcf075ed9">Calibration::calibrationBusy</a></div><div class="ttdeci">void calibrationBusy(bool busy)</div><div class="ttdoc">Indicate whether the calibration is busy. </div></div>
 <div class="ttc" id="group___config_plugin_html_ga410796ba6e560144c62ec42a8b7bc9b9"><div class="ttname"><a href="group___config_plugin.html#ga410796ba6e560144c62ec42a8b7bc9b9">Calibration::doAcceptTempCal</a></div><div class="ttdeci">void doAcceptTempCal()</div><div class="ttdoc">Accept gyro temp calibration data. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00747">calibration.cpp:747</a></div></div>
 <div class="ttc" id="class_calibration_html_acd2d18249304f970ea2b88be25ffacf4"><div class="ttname"><a href="class_calibration.html#acd2d18249304f970ea2b88be25ffacf4">Calibration::toggleControls</a></div><div class="ttdeci">void toggleControls(bool enable)</div><div class="ttdoc">Indicate whether to enable or disable controls. </div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gac3a1293716fa3eb310ed257ade7f6722"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac3a1293716fa3eb310ed257ade7f6722">UAVObjectUtilManager::getBoardType</a></div><div class="ttdeci">Core::IBoardType * getBoardType()</div><div class="ttdoc">Get the IBoardType corresponding to the connected board. </div><div class="ttdef"><b>Definition:</b> <a href="uavobjectutilmanager_8cpp_source.html#l00511">uavobjectutilmanager.cpp:511</a></div></div>
 <div class="ttc" id="group___config_plugin_html_ga7f1864654eed2d90d8bb5949c9249454"><div class="ttname"><a href="group___config_plugin.html#ga7f1864654eed2d90d8bb5949c9249454">Calibration::configureTempCurves</a></div><div class="ttdeci">void configureTempCurves(TempCompCurve *x, TempCompCurve *y, TempCompCurve *z)</div><div class="ttdoc">Set up the curves. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l01104">calibration.cpp:1104</a></div></div>
-<div class="ttc" id="group___config_plugin_html_ga4b85d588b6292a6f8755725ccca770fb"><div class="ttname"><a href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">ConfigAttitudeWidget::calibration</a></div><div class="ttdeci">Calibration calibration</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8h_source.html#l00063">configattitudewidget.h:63</a></div></div>
+<div class="ttc" id="group___config_plugin_html_ga4b85d588b6292a6f8755725ccca770fb"><div class="ttname"><a href="group___config_plugin.html#ga4b85d588b6292a6f8755725ccca770fb">ConfigAttitudeWidget::calibration</a></div><div class="ttdeci">Calibration calibration</div><div class="ttdef"><b>Definition:</b> <a href="configattitudewidget_8h_source.html#l00064">configattitudewidget.h:64</a></div></div>
 <div class="ttc" id="group___config_plugin_html_gad79bd9545005476bb15c478607e55a36"><div class="ttname"><a href="group___config_plugin.html#gad79bd9545005476bb15c478607e55a36">Calibration::doStartTempCal</a></div><div class="ttdeci">void doStartTempCal()</div><div class="ttdoc">Start collecting gyro temp calibration data. </div><div class="ttdef"><b>Definition:</b> <a href="calibration_8cpp_source.html#l00704">calibration.cpp:704</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -175,7 +175,6 @@ var group___config_plugin =
       [ "ArmingMethodType", "group___config_plugin.html#gaec8e4632b567f74217c7d76a3b7258cb", [
         [ "ARM_INVALID", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba63c8371429a5c8f06a3043ae41fa83d5", null ],
         [ "ARM_ALWAYS_DISARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba76540a4b9f25acf57e570dcbb322246b", null ],
-        [ "ARM_ALWAYS_ARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbad0a4540e4ecbc5c87747745bf951f5fa", null ],
         [ "ARM_SWITCH", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbaac21db4e8446e0d25102d7164fb6d9f9", null ],
         [ "ARM_ROLL_LEFT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba7748bba653a106b04be28a89ff3dbfe5", null ],
         [ "ARM_ROLL_RIGHT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba54aa07d5016aaaed41c2dffc1835042a", null ],
@@ -386,7 +385,6 @@ var group___config_plugin =
     [ "ArmingMethodType", "group___config_plugin.html#gaec8e4632b567f74217c7d76a3b7258cb", [
       [ "ARM_INVALID", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba63c8371429a5c8f06a3043ae41fa83d5", null ],
       [ "ARM_ALWAYS_DISARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba76540a4b9f25acf57e570dcbb322246b", null ],
-      [ "ARM_ALWAYS_ARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbad0a4540e4ecbc5c87747745bf951f5fa", null ],
       [ "ARM_SWITCH", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbaac21db4e8446e0d25102d7164fb6d9f9", null ],
       [ "ARM_ROLL_LEFT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba7748bba653a106b04be28a89ff3dbfe5", null ],
       [ "ARM_ROLL_RIGHT", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba54aa07d5016aaaed41c2dffc1835042a", null ],
@@ -464,7 +462,6 @@ var group___config_plugin =
     [ "ACCELEROMETER_FAILED", "group___config_plugin.html#gga94aacf4645037efa48eebb961cd2be5bacc43b217d15eaba87a83e4c8b2f4e7bd", null ],
     [ "acro", "group___config_plugin.html#ggacaf6a4fddc50fe17f03bed7e270ddc8ca782ad1c93bcdc2b5dc9460073fa8e744", null ],
     [ "aircraft", "group___config_plugin.html#gga63fe84e8399ffe3db8ffa9c83b109c66a0daadf1249382ad3b13cd539bcafc8a5", null ],
-    [ "ARM_ALWAYS_ARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cbad0a4540e4ecbc5c87747745bf951f5fa", null ],
     [ "ARM_ALWAYS_DISARMED", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba76540a4b9f25acf57e570dcbb322246b", null ],
     [ "ARM_CORNERS", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba71812ee2474648b729ee2eff088c4c8d", null ],
     [ "ARM_INVALID", "group___config_plugin.html#ggaec8e4632b567f74217c7d76a3b7258cba63c8371429a5c8f06a3043ae41fa83d5", null ],

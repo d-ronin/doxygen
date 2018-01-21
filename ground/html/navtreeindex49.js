@@ -1,8 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"opmapgadget_8h_source.html":[6,0,0,0,0,1,23,9],
-"opmapgadgetconfiguration_8cpp.html":[6,0,0,0,0,1,23,10],
-"opmapgadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,23,10],
 "opmapgadgetconfiguration_8h.html":[6,0,0,0,0,1,23,11],
 "opmapgadgetconfiguration_8h_source.html":[6,0,0,0,0,1,23,11],
 "opmapgadgetfactory_8cpp.html":[6,0,0,0,0,1,23,12],
@@ -249,5 +246,8 @@ var NAVTREEINDEX49 =
 "quantecplugin_8cpp_source.html":[6,0,0,0,0,1,6,0],
 "quantecplugin_8h.html":[6,0,0,0,0,1,6,1],
 "quantecplugin_8h_source.html":[6,0,0,0,0,1,6,1],
-"quanton_8cpp.html":[6,0,0,0,0,1,6,2]
+"quanton_8cpp.html":[6,0,0,0,0,1,6,2],
+"quanton_8cpp_source.html":[6,0,0,0,0,1,6,2],
+"quanton_8h.html":[6,0,0,0,0,1,6,3],
+"quanton_8h_source.html":[6,0,0,0,0,1,6,3]
 };
