@@ -1,5 +1,7 @@
 var NAVTREEINDEX139 =
 {
+"vectors__stm32f4xx_8c.html#ga951ef6b9669d7229cc20eb36c4ed6d76":[5,0,0,4,7,21,17],
+"vectors__stm32f4xx_8c.html#ga962e492fca169f575b163bb0bacdc03d":[5,0,0,4,7,21,76],
 "vectors__stm32f4xx_8c.html#ga9a88bd32032026c57ae5f7685f0e86ae":[5,0,0,4,7,21,77],
 "vectors__stm32f4xx_8c.html#ga9b52b435e765f418d0b20373ebf7d3de":[5,0,0,4,7,21,15],
 "vectors__stm32f4xx_8c.html#ga9c27c83d8c59cb384efcca34a7aaf531":[5,0,0,4,7,21,40],

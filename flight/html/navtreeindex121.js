@@ -1,5 +1,7 @@
 var NAVTREEINDEX121 =
 {
+"sprf3e_2fw_2mcuconf_8h.html#ga32a5323ec55bfb3e6590c8346ee76dc4":[5,0,0,5,18,2,0,24],
+"sprf3e_2fw_2mcuconf_8h.html#ga34bf46924b6d9446721c6dd3b5c09ea7":[5,0,0,5,18,2,0,23],
 "sprf3e_2fw_2mcuconf_8h.html#ga360ce89f2744ed7e4ec5789201f557c3":[5,0,0,5,18,2,0,27],
 "sprf3e_2fw_2mcuconf_8h.html#ga3670f3886d02bb3010016bbf0db0db83":[5,0,0,5,18,2,0,74],
 "sprf3e_2fw_2mcuconf_8h.html#ga39e918aab997f42ca310524e74dc44ae":[5,0,0,5,18,2,0,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "struct_device.html#aac3d654cfb50d91e3d886848c630d481":[2,6,2,4,7],
 "struct_device.html#ac279d7f2e95b5ea61c2838cace97e0f3":[2,6,2,4,1],
 "struct_device.html#ae487fa50d1de851605401068ef8730fb":[2,6,2,4,0],
-"struct_event_callback_info.html":[2,4,24,2],
-"struct_event_callback_info.html#a437283aa345859ce2746a744069f63a5":[2,4,24,2,1],
-"struct_event_callback_info.html#acd9f0dd5803da02a4c264a65ebe44647":[2,4,24,2,2]
+"struct_event_callback_info.html":[2,4,24,2]
 };

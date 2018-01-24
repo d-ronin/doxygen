@@ -1,5 +1,7 @@
 var NAVTREEINDEX115 =
 {
+"printf-stdarg_8c.html#ga5bf270eda1fe4ed63535e31fab16433e":[5,0,0,4,0,54,2],
+"printf-stdarg_8c.html#ga6fd5dddc97219412ab1c4483ce144aef":[5,0,0,4,0,54,0],
 "printf-stdarg_8c.html#ga7408e892dd48c6ce39b5821d917a3dd2":[5,0,0,4,0,54,11],
 "printf-stdarg_8c.html#ga8d00fb4b337425dfeb7aadc10e96fe87":[5,0,0,4,0,54,7],
 "printf-stdarg_8c.html#ga98631211a4a8aee62f572375d5b637be":[5,0,0,4,0,54,5],
@@ -67,8 +69,8 @@ var NAVTREEINDEX115 =
 "quanton_2board-info_2usb__conf_8h.html#ga2623e405d022fc76fe6849e7f4d9023c":[5,0,0,5,13,1,3,14],
 "quanton_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,13,1,3,12],
 "quanton_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,13,1,3,7],
-"quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,13,1,3,9],
 "quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,13,1,3,10],
+"quanton_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,13,1,3,9],
 "quanton_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,13,1,3,6],
 "quanton_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,13,1,3,0],
 "quanton_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,13,1,3,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX115 =
 "quanton_2fw_2mcuconf_8h.html#gac7d6b8123d2eacf524927fc68f70baa1":[5,0,0,5,13,2,0,203],
 "quanton_2fw_2mcuconf_8h.html#gacb9e4ecbe8f121a049306536fa66542c":[5,0,0,5,13,2,0,159],
 "quanton_2fw_2mcuconf_8h.html#gacba56aaa8c0bd717ad217771ee8300c2":[5,0,0,5,13,2,0,110],
-"quanton_2fw_2mcuconf_8h.html#gacbf13880831c81c27d5c7f65c737f70f":[5,0,0,5,13,2,0,35],
-"quanton_2fw_2mcuconf_8h.html#gace43c4d497b0be3dbe8c28836fafd0a5":[5,0,0,5,13,2,0,68],
-"quanton_2fw_2mcuconf_8h.html#gacf6b4949732fac0a1ded862174aabba7":[5,0,0,5,13,2,0,145]
+"quanton_2fw_2mcuconf_8h.html#gacbf13880831c81c27d5c7f65c737f70f":[5,0,0,5,13,2,0,35]
 };

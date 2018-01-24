@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"group___revo_mini.html#ga6366c26f605ce31e89deee1af686f5e6":[2,6,13,234],
 "group___revo_mini.html#ga6366c26f605ce31e89deee1af686f5e6":[2,5,12,234],
 "group___revo_mini.html#ga639272943cb5b9bdcbd78e5ced2b52a0":[2,6,13,172],
 "group___revo_mini.html#ga639272943cb5b9bdcbd78e5ced2b52a0":[2,5,12,172],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "group___revo_mini.html#gac1360f0e97a4f7df89fd715f42ebaea7":[2,6,13,120],
 "group___revo_mini.html#gac1360f0e97a4f7df89fd715f42ebaea7":[2,5,12,120],
 "group___revo_mini.html#gac4bc284e13454f25bd55839f3d9b0a10":[2,6,13,48],
-"group___revo_mini.html#gac4bc284e13454f25bd55839f3d9b0a10":[2,5,12,48],
-"group___revo_mini.html#gac582474e7199168a6fb09792124d6546":[2,6,13,117]
+"group___revo_mini.html#gac4bc284e13454f25bd55839f3d9b0a10":[2,5,12,48]
 };

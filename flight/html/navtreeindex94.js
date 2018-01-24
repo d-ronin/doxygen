@@ -1,5 +1,6 @@
 var NAVTREEINDEX94 =
 {
+"halconf_8h.html#ga413a1b6c0ca2c9e524df50ceac1275fd":[5,0,0,4,3,0,2,3],
 "halconf_8h.html#ga4f938eff7370feb8de8411e255d21b01":[5,0,0,4,3,0,2,26],
 "halconf_8h.html#ga5294d9d12e4186c781df3b2f1d8bd80b":[5,0,0,4,3,0,2,2],
 "halconf_8h.html#ga7125642404a6fd3d4985d1cb6e1b7b0a":[5,0,0,4,3,0,2,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX94 =
 "insgps_8h.html#gaff5e5ac00ae43701b4dae7eeb9cdfea8":[5,0,0,1,1,3,22],
 "insgps_8h_source.html":[5,0,0,1,1,3],
 "led__pwm_8c.html":[5,0,0,5,1,0,3],
-"led__pwm_8c.html#ga316161ec9e0698bb42f258f84ba91236":[5,0,0,5,1,0,3,0],
-"led__pwm_8c.html#ga3f824c1ee5eb9b7f632c2a371abb1407":[5,0,0,5,1,0,3,3]
+"led__pwm_8c.html#ga316161ec9e0698bb42f258f84ba91236":[5,0,0,5,1,0,3,0]
 };

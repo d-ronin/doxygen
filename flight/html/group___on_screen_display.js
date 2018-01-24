@@ -184,6 +184,7 @@ var group___on_screen_display =
       [ "FSM_STATE_STICKLIMITS_PITCHEXH", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aad6934519bb82876af4fee99bad40239d", null ],
       [ "FSM_STATE_STICKLIMITS_YAWEXH", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aa68163686d05b371d92ea7085de5511a3", null ],
       [ "FSM_STATE_STICKLIMITS_ACROINSANITYFACTOR", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aab236af89ea8f95d6d0207b8a6c89772e", null ],
+      [ "FSM_STATE_STICKLIMITS_CAMERATILT", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aadb53d1148742d813339794717b1491b4", null ],
       [ "FSM_STATE_STICKLIMITS_SAVEEXIT", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aa430a94d8fbfeff60c009f7232a50afa5", null ],
       [ "FSM_STATE_STICKLIMITS_EXIT", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aa80f3fb2a0a5f30a23482ab3cbbe4d22f", null ],
       [ "FSM_STATE_VTX_BAND", "group___on_screen_display.html#ggaf99739f43eccdbb8639969899bee036aab00fd586dcdd1c0006b693600fe8cfb1", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"group___quanton.html#gaaf11e7ae7e32bacf0180ba8d6f144488":[2,6,12,77],
 "group___quanton.html#gaaf11e7ae7e32bacf0180ba8d6f144488":[2,5,11,77],
 "group___quanton.html#gab060f441dd600b08386c0ca1b487217a":[2,6,12,314],
 "group___quanton.html#gab060f441dd600b08386c0ca1b487217a":[2,5,11,314],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117":[2,4,20,1,3],
 "group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117":[2,4,20,36],
 "group___revo_mini.html":[2,6,13],
-"group___revo_mini.html":[2,5,12],
-"group___revo_mini.html#ga00ad81d320aaeb3ca4899228c4155848":[2,6,13,193]
+"group___revo_mini.html":[2,5,12]
 };

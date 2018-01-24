@@ -1,5 +1,7 @@
 var NAVTREEINDEX125 =
 {
+"structmsp__comp__gps.html#a521322d2678b2b5857a100fe2aecc529":[2,1,2,11,1],
+"structmsp__comp__gps.html#a9b745ad7505ed29b51948c2686188647":[2,1,2,11,2],
 "structmsp__comp__gps.html#ae0b308fc944bde7238a13aed8d761662":[2,1,2,11,0],
 "structmsp__ident.html":[2,1,2,1],
 "structmsp__ident.html#a9e83fef8cefa33d42158a8225781a7ad":[2,1,2,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX125 =
 "structpios__com__driver.html#adca3cddb8dee4b725dbd7b4106b79a55":[2,0,7,6,0],
 "structpios__com__driver.html#af7137074ee2ca2426304c94b0177cb4d":[2,0,7,6,5],
 "structpios__dac__cfg.html":[2,0,95],
-"structpios__dmashot__cfg.html":[2,0,85,1],
-"structpios__dmashot__timer__cfg.html":[2,0,85,0],
-"structpios__dsm__cfg.html":[2,0,9,3]
+"structpios__dmashot__cfg.html":[2,0,85,1]
 };

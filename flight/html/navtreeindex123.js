@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"struct_w_m_mtype___coord_geodetic.html#a830561cbe026055e7aadb6c004b31f08":[2,1,22,2],
+"struct_w_m_mtype___coord_geodetic.html#aaf9acfaad6b8964779cbd7f0bfa96170":[2,1,22,1],
 "struct_w_m_mtype___coord_geodetic.html#ad607d07209c8321f31ff85601254410b":[2,1,22,0],
 "struct_w_m_mtype___coord_spherical.html":[2,1,23],
 "struct_w_m_mtype___coord_spherical.html#a94d857d131a4281543b46b4f3dc2a28e":[2,1,23,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "structhott__eam__message.html#a5f57d8b4c701cd85881e35463ceba90d":[2,4,30,7,20],
 "structhott__eam__message.html#a6cfcab9e99f565abfab145591487c977":[2,4,30,7,3],
 "structhott__eam__message.html#a70dbe89ba94517e7e541134f46e8ea2c":[2,4,30,7,24],
-"structhott__eam__message.html#a7ce30f7ca55432c26fb2b4ab846aca6f":[2,4,30,7,19],
-"structhott__eam__message.html#a83db3bd9d818ac381eb9e7dc8825d91f":[2,4,30,7,12],
-"structhott__eam__message.html#a86ea2312d9f4abbc3836d418f48ddf6e":[2,4,30,7,22]
+"structhott__eam__message.html#a7ce30f7ca55432c26fb2b4ab846aca6f":[2,4,30,7,19]
 };

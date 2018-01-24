@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"structpios__tcp__cfg.html":[4,0,201],
+"structpios__tcp__cfg.html#a23004e4175e28dd6a53db5545026bede":[4,0,201,1],
 "structpios__tcp__cfg.html#a480f68a9cbfca2d202f307202c9a1378":[4,0,201,0],
 "structpios__thread.html":[2,0,39,0],
 "structpios__thread.html#a970f291be267c776b1df3fb0a2e16fa9":[2,0,39,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "structvtol__fsm__transition.html":[2,4,36,7],
 "structws2811__dev__s.html":[2,0,73,4],
 "structxfer__state.html":[2,6,1,1],
-"structxfer__state.html#a02a0adc328c96bb10a68e49ff0f8d17f":[2,6,1,1,6],
-"structxfer__state.html#a24756cfa2aab43f3f540fa526d2c5468":[2,6,1,1,4],
-"structxfer__state.html#a34748cd12f21df88d9b89d3eda134a2a":[2,6,1,1,2]
+"structxfer__state.html#a02a0adc328c96bb10a68e49ff0f8d17f":[2,6,1,1,6]
 };
