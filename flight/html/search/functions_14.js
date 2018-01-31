@@ -108,7 +108,7 @@ var searchData=
   ['update_5fsettings',['update_settings',['../group___stabilization_module.html#gafe35ba3a9cb8c902aa2ed4a0e65e3c2c',1,'stabilization.c']]],
   ['update_5fstabilization_5fdesired',['update_stabilization_desired',['../group___control.html#gae3ba4f486d275e51072f31f078296f83',1,'transmitter_control.c']]],
   ['update_5ftelemetry',['update_telemetry',['../group___char_o_s_d.html#gafac530e48320d050bad2d80dd2d2ee7b',1,'charonscreendisplay.c']]],
-  ['updateattitudecomplementary',['updateAttitudeComplementary',['../group___attitude_module.html#ga13a4c91692dac51e1ccb8d460c09dbc3',1,'attitude.c']]],
+  ['updateattitudecomplementary',['updateAttitudeComplementary',['../group___attitude_module.html#ga89ad5008c0510c1404e335cf04a46c23',1,'attitude.c']]],
   ['updateattitudeinsgps',['updateAttitudeINSGPS',['../group___attitude_module.html#gad63d3cf62c303f66aea711afbdc6edba',1,'attitude.c']]],
   ['updatefixeddesiredattitude',['updateFixedDesiredAttitude',['../group___fixed_wing_path_follower.html#ga8ccb5c30c6fb87d076c41d1b5f472a5d',1,'fixedwingpathfollower.c']]],
   ['updatenedaccel',['updateNedAccel',['../group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e',1,'attitude.c']]],

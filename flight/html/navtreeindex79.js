@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"group___sparky.html#ga5e05655f08ac72b3e0d51c4b7a030c43":[2,6,15,27],
 "group___sparky.html#ga5e05655f08ac72b3e0d51c4b7a030c43":[2,5,13,27],
 "group___sparky.html#ga5eae9194437f23b68678de2ba9d9ce4a":[2,6,15,67],
 "group___sparky.html#ga5eae9194437f23b68678de2ba9d9ce4a":[2,5,13,67],
@@ -83,8 +84,8 @@ var NAVTREEINDEX79 =
 "group___sparky.html#ga868d30e39ec6441e34b33a9db1028d60":[2,5,13,174],
 "group___sparky.html#ga877fa83cee0173d5f451b77e59180725":[2,6,15,147],
 "group___sparky.html#ga877fa83cee0173d5f451b77e59180725":[2,5,13,147],
-"group___sparky.html#ga87dac50603730367a564c5ba63c6e9a1":[2,6,15,122],
 "group___sparky.html#ga87dac50603730367a564c5ba63c6e9a1":[2,5,13,122],
+"group___sparky.html#ga87dac50603730367a564c5ba63c6e9a1":[2,6,15,122],
 "group___sparky.html#ga88f1b74712df62b9970b6cbc6bb262e9":[2,6,15,23],
 "group___sparky.html#ga88f1b74712df62b9970b6cbc6bb262e9":[2,5,13,23],
 "group___sparky.html#ga89e68cdd07ab84568fe168af24311299":[2,6,15,82],
@@ -127,8 +128,8 @@ var NAVTREEINDEX79 =
 "group___sparky.html#ga98f682be6c4559a663f6279c867cd69a":[2,5,13,133],
 "group___sparky.html#ga9a1f666e68948aec51fec38353e872c4":[2,6,15,215],
 "group___sparky.html#ga9a1f666e68948aec51fec38353e872c4":[2,5,13,215],
-"group___sparky.html#ga9a3b7926a68a03e1b00564e5b36f2626":[2,5,13,90],
 "group___sparky.html#ga9a3b7926a68a03e1b00564e5b36f2626":[2,6,15,90],
+"group___sparky.html#ga9a3b7926a68a03e1b00564e5b36f2626":[2,5,13,90],
 "group___sparky.html#ga9a4cb321d74c57b544a1628faaae1569":[2,6,15,198],
 "group___sparky.html#ga9a4cb321d74c57b544a1628faaae1569":[2,5,13,198],
 "group___sparky.html#ga9be33d810838161edf9412377209a4cf":[2,6,15,13],
@@ -245,9 +246,8 @@ var NAVTREEINDEX79 =
 "group___sparky.html#gad94c4a0da6c8c7a3d0b800fdc0dbebfa":[2,5,13,129],
 "group___sparky.html#gad9504d2174472de2d678814e430678c9":[2,6,15,74],
 "group___sparky.html#gad9504d2174472de2d678814e430678c9":[2,5,13,74],
-"group___sparky.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[2,6,15,206],
 "group___sparky.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[2,5,13,206],
+"group___sparky.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa":[2,6,15,206],
 "group___sparky.html#gade0c8b4992afc59bd1256c66c794bdeb":[2,6,15,208],
-"group___sparky.html#gade0c8b4992afc59bd1256c66c794bdeb":[2,5,13,208],
-"group___sparky.html#gadeb3634bfdf8729a0e846fb7897f55ac":[2,6,15,17]
+"group___sparky.html#gade0c8b4992afc59bd1256c66c794bdeb":[2,5,13,208]
 };

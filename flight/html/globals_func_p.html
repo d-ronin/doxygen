@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bf8542d</span>
+   &#160;<span id="projectnumber">d8c8628</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -203,6 +203,9 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 <li>pid_apply_setpoint()
 : <a class="el" href="group___flight_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid.c</a>
 </li>
+<li>pid_apply_setpoint_antiwindup()
+: <a class="el" href="group___flight_math.html#gafacfdf207d48bac27a0e8d101a6bbcc2">pid.c</a>
+</li>
 <li>pid_configure()
 : <a class="el" href="group___flight_math.html#ga6a80b10e52b545cf5640a626c166a377">pid.c</a>
 </li>
@@ -300,7 +303,7 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 : <a class="el" href="group___p_i_o_s___b_m_x055.html#ga27758d31a79ce885033f331c2b5e6899">pios_bmx055.h</a>
 </li>
 <li>PIOS_Board_Init()
-: <a class="el" href="group___pip_x.html#ga902009c5b1cb57d9f9d60092eb7cacfb">pios_board.c</a>
+: <a class="el" href="group___piko_b_l_x.html#gabda03501745560ca9e546079e20bb392">pios_board.c</a>
 , <a class="el" href="group___targets.html#gabda03501745560ca9e546079e20bb392">chibi_main.c</a>
 , <a class="el" href="group___a_q32.html#gabda03501745560ca9e546079e20bb392">pios_board.c</a>
 , <a class="el" href="group___common.html#ga902009c5b1cb57d9f9d60092eb7cacfb">main.c</a>
@@ -1194,8 +1197,8 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 : <a class="el" href="group___p_i_o_s___r_t_c.html#ga882b48b1e7ce218715dbcc6268387eb7">pios_rtc_priv.h</a>
 </li>
 <li>PIOS_RTC_MsPerTick()
-: <a class="el" href="group___p_i_o_s___d_e_l_a_y.html#gad34cae8cd02b5e6de39366292722edba">pios_delay.c</a>
-, <a class="el" href="group___p_i_o_s___r_t_c.html#gad34cae8cd02b5e6de39366292722edba">pios_rtc.h</a>
+: <a class="el" href="group___p_i_o_s___r_t_c.html#gad34cae8cd02b5e6de39366292722edba">pios_rtc.h</a>
+, <a class="el" href="group___p_i_o_s___d_e_l_a_y.html#gad34cae8cd02b5e6de39366292722edba">pios_delay.c</a>
 </li>
 <li>PIOS_RTC_Rate()
 : <a class="el" href="group___p_i_o_s___r_t_c.html#ga67f1e1979b94ff871968e14497974af1">pios_rtc.h</a>
@@ -1425,23 +1428,23 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 : <a class="el" href="_s_t_m32_f10x_2pios__tim_8c.html#ga629ae378138057ecd954a51dcfe31a37">pios_tim.c</a>
 </li>
 <li>PIOS_TIM_generic_irq_handler()
-: <a class="el" href="_s_t_m32_f30x_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">pios_tim.c</a>
+: <a class="el" href="_s_t_m32_f4xx_2pios__tim_8c.html#ga7de91dcd95d0f609e1aeff32fe2bc408">pios_tim.c</a>
 </li>
 <li>PIOS_TIM_InitAllTimerPins()
 : <a class="el" href="group___p_i_o_s___t_i_m.html#ga281bc5808570e749abd7764aada8d1b0">pios_tim_priv.h</a>
 , <a class="el" href="group___p_i_o_s___t_i_m.html#ga281bc5808570e749abd7764aada8d1b0">pios_tim.c</a>
 </li>
 <li>PIOS_TIM_InitChannels()
-: <a class="el" href="group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f">pios_tim_priv.h</a>
-, <a class="el" href="group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f">pios_tim.c</a>
+: <a class="el" href="group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f">pios_tim.c</a>
+, <a class="el" href="group___p_i_o_s___t_i_m.html#gaf316d2873f98d05747789d96d889491f">pios_tim_priv.h</a>
 </li>
 <li>PIOS_TIM_InitClock()
-: <a class="el" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">pios_tim_priv.h</a>
-, <a class="el" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">pios_tim.c</a>
+: <a class="el" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">pios_tim.c</a>
+, <a class="el" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">pios_tim_priv.h</a>
 </li>
 <li>PIOS_TIM_InitTimerPin()
-: <a class="el" href="group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550">pios_tim_priv.h</a>
-, <a class="el" href="group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550">pios_tim.c</a>
+: <a class="el" href="group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550">pios_tim.c</a>
+, <a class="el" href="group___p_i_o_s___t_i_m.html#ga79bf983742a32a9dcaead3b0806f6550">pios_tim_priv.h</a>
 </li>
 <li>PIOS_TIM_SetBankToGPOut()
 : <a class="el" href="group___p_i_o_s___t_i_m.html#gaa9fff718f3bece2774971de5397a5f14">pios_tim_priv.h</a>
@@ -1454,8 +1457,8 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 : <a class="el" href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">pios_usart_priv.h</a>
 </li>
 <li>PIOS_USB_BOARD_DATA_Init()
-: <a class="el" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">pios_usb_board_data_priv.h</a>
-, <a class="el" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga5efd94ab761f254827f38dba474cf642">pios_usb_board_data.c</a>
+: <a class="el" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga5efd94ab761f254827f38dba474cf642">pios_usb_board_data.c</a>
+, <a class="el" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">pios_usb_board_data_priv.h</a>
 </li>
 <li>PIOS_USB_CableConnected()
 : <a class="el" href="group___p_i_o_s___u_s_b.html#ga849bc66f0665ff6328b57ec3aa7c03f9">pios_usb.h</a>
@@ -1500,12 +1503,12 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 : <a class="el" href="group___p_i_o_s___u_s_b___h_i_d.html#ga4f30a843d1680813d9ae2784e63ba6ff">pios_usb_hid.h</a>
 </li>
 <li>PIOS_USB_HID_RegisterHidDescriptor()
-: <a class="el" href="group___p_i_o_s___u_s_b___h_i_d.html#gab90f1c47b587196a2db9f82b0893c12b">pios_usb_hid.h</a>
-, <a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaba51a804e2ee3df6834af3d37d15ecd0">pios_usbhook.c</a>
+: <a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaba51a804e2ee3df6834af3d37d15ecd0">pios_usbhook.c</a>
+, <a class="el" href="group___p_i_o_s___u_s_b___h_i_d.html#gab90f1c47b587196a2db9f82b0893c12b">pios_usb_hid.h</a>
 </li>
 <li>PIOS_USB_HID_RegisterHidReport()
-: <a class="el" href="group___p_i_o_s___u_s_b___h_i_d.html#ga24ffa70cf0e157835a2e6ea2dfb7f916">pios_usb_hid.h</a>
-, <a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaa26752754b2018e8584247b715c9500c">pios_usbhook.c</a>
+: <a class="el" href="group___p_i_o_s___u_s_b_h_o_o_k.html#gaa26752754b2018e8584247b715c9500c">pios_usbhook.c</a>
+, <a class="el" href="group___p_i_o_s___u_s_b___h_i_d.html#ga24ffa70cf0e157835a2e6ea2dfb7f916">pios_usb_hid.h</a>
 </li>
 <li>PIOS_USB_Init()
 : <a class="el" href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">pios_usb_priv.h</a>
@@ -1756,11 +1759,12 @@ $(document).ready(function(){initNavTree('globals_func_p.html','');});
 <li>PowerOff()
 : <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a7b4c2044bf2be52b9f636d4ccffeccd2">pios_usb_hid_pwr.c</a>
 , <a class="el" href="pios__usb__hid__pwr_8h.html#a134c0b1d19e0473277c77e89364ae98a">pios_usb_hid_pwr.h</a>
+, <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a7b4c2044bf2be52b9f636d4ccffeccd2">pios_usb_hid_pwr.c</a>
 </li>
 <li>PowerOn()
-: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c">pios_usb_hid_pwr.c</a>
+: <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c">pios_usb_hid_pwr.c</a>
 , <a class="el" href="pios__usb__hid__pwr_8h.html#a23cb7957e66d04c1411f2151b19c6c5c">pios_usb_hid_pwr.h</a>
-, <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c">pios_usb_hid_pwr.c</a>
+, <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a23cb7957e66d04c1411f2151b19c6c5c">pios_usb_hid_pwr.c</a>
 </li>
 <li>PPMInputTask()
 : <a class="el" href="group___radio_com_bridge_module.html#ga7137f2ef5a5de3164b0f451c04ef5e48">RadioComBridge.c</a>

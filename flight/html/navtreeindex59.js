@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"group___revo_mini.html":[2,5,12],
 "group___revo_mini.html#ga00ad81d320aaeb3ca4899228c4155848":[2,6,13,193],
 "group___revo_mini.html#ga00ad81d320aaeb3ca4899228c4155848":[2,5,12,193],
 "group___revo_mini.html#ga00b873df699111f00e6093ed5759e08e":[2,6,13,109],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "group___revo_mini.html#ga620b74e1fca03c6e11c054d137c56524":[2,5,12,242],
 "group___revo_mini.html#ga626416dc22cf5f3deff2a8c7d8efa5b2":[2,6,13,253],
 "group___revo_mini.html#ga626416dc22cf5f3deff2a8c7d8efa5b2":[2,5,12,253],
-"group___revo_mini.html#ga62e300631856e0c56b1c9b3cbcf5621d":[2,6,13,12],
-"group___revo_mini.html#ga62e300631856e0c56b1c9b3cbcf5621d":[2,5,12,12]
+"group___revo_mini.html#ga62e300631856e0c56b1c9b3cbcf5621d":[2,6,13,12]
 };

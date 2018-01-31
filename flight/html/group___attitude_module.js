@@ -51,7 +51,7 @@ var group___attitude_module =
     [ "setNavigationINSGPS", "group___attitude_module.html#gaf7bd85556060be5c23393d3243956df5", null ],
     [ "setNavigationNone", "group___attitude_module.html#ga9ef260a856c3edf49810a55a5f1ac167", null ],
     [ "setNavigationRaw", "group___attitude_module.html#ga6604331f3424247baba9350e067288e6", null ],
-    [ "updateAttitudeComplementary", "group___attitude_module.html#ga13a4c91692dac51e1ccb8d460c09dbc3", null ],
+    [ "updateAttitudeComplementary", "group___attitude_module.html#ga89ad5008c0510c1404e335cf04a46c23", null ],
     [ "updateAttitudeINSGPS", "group___attitude_module.html#gad63d3cf62c303f66aea711afbdc6edba", null ],
     [ "updateNedAccel", "group___attitude_module.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e", null ],
     [ "accelQueue", "group___attitude_module.html#ga9c4c234ed6af063a0caa20cb45519411", null ],

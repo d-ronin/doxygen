@@ -1,5 +1,8 @@
 var NAVTREEINDEX128 =
 {
+"structws2811__dev__s.html":[2,0,73,4],
+"structxfer__state.html":[2,6,1,1],
+"structxfer__state.html#a02a0adc328c96bb10a68e49ff0f8d17f":[2,6,1,1,6],
 "structxfer__state.html#a24756cfa2aab43f3f540fa526d2c5468":[2,6,1,1,4],
 "structxfer__state.html#a34748cd12f21df88d9b89d3eda134a2a":[2,6,1,1,2],
 "structxfer__state.html#a35360692afd0766ce74f3c40d02b8dca":[2,6,1,1,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX128 =
 "targets_2brain_2fw_2pios__config_8h.html#ga24a6e0d324a2669cacb50de89b60c0a9":[5,0,0,5,2,2,2,19],
 "targets_2brain_2fw_2pios__config_8h.html#ga2c77278e25177483ce8e0d93d12e67a6":[5,0,0,5,2,2,2,25],
 "targets_2brain_2fw_2pios__config_8h.html#ga2cc30288b8783fea8d042a8502af4e70":[5,0,0,5,2,2,2,21],
-"targets_2brain_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a":[5,0,0,5,2,2,2,7],
-"targets_2brain_2fw_2pios__config_8h.html#ga446b36ea5ee33295bce18fc867d8615e":[5,0,0,5,2,2,2,11],
-"targets_2brain_2fw_2pios__config_8h.html#ga491ba150016a5e19a48470a28798bc35":[5,0,0,5,2,2,2,29],
-"targets_2brain_2fw_2pios__config_8h.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[5,0,0,5,2,2,2,18]
+"targets_2brain_2fw_2pios__config_8h.html#ga3a377b6e3ac53fb86a88489527af7f5a":[5,0,0,5,2,2,2,7]
 };

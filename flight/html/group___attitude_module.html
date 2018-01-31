@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">bf8542d</span>
+   &#160;<span id="projectnumber">d8c8628</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -157,9 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9ef260a856c3edf49810a55a5f1ac167"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga9ef260a856c3edf49810a55a5f1ac167">setNavigationNone</a> ()</td></tr>
 <tr class="memdesc:ga9ef260a856c3edf49810a55a5f1ac167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide no navigation updates (indoor flying or without gps)  <a href="#ga9ef260a856c3edf49810a55a5f1ac167">More...</a><br/></td></tr>
 <tr class="separator:ga9ef260a856c3edf49810a55a5f1ac167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga13a4c91692dac51e1ccb8d460c09dbc3"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga13a4c91692dac51e1ccb8d460c09dbc3">updateAttitudeComplementary</a> (float dT, bool first_run, bool secondary, bool raw_gps)</td></tr>
-<tr class="memdesc:ga13a4c91692dac51e1ccb8d460c09dbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the complementary filter attitude estimate.  <a href="#ga13a4c91692dac51e1ccb8d460c09dbc3">More...</a><br/></td></tr>
-<tr class="separator:ga13a4c91692dac51e1ccb8d460c09dbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89ad5008c0510c1404e335cf04a46c23"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga89ad5008c0510c1404e335cf04a46c23">updateAttitudeComplementary</a> (float dT, bool first_run, bool secondary, bool raw_gps, bool vel_compass)</td></tr>
+<tr class="memdesc:ga89ad5008c0510c1404e335cf04a46c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the complementary filter attitude estimate.  <a href="#ga89ad5008c0510c1404e335cf04a46c23">More...</a><br/></td></tr>
+<tr class="separator:ga89ad5008c0510c1404e335cf04a46c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___attitude_module.html#ga0f38d1edf9d67d8a8917be9b132a1650">setAttitudeComplementary</a> ()</td></tr>
 <tr class="memdesc:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the AttitudeActual to the complementary filter estimate.  <a href="#ga0f38d1edf9d67d8a8917be9b132a1650">More...</a><br/></td></tr>
 <tr class="separator:ga0f38d1edf9d67d8a8917be9b132a1650"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,7 +367,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01011">1011</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01037">1037</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Variables</h2></td></tr>
 <p>Compute the mean gyro accumulated and assign the bias. </p>
 <p>If accumulating data and enough samples acquired then recompute the gyro bias based on the mean accumulated </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00977">977</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01003">1003</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ Variables</h2></td></tr>
 <p>Zero the gyro accumulators. </p>
 <p>Zero the accumulation of gyro data </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00998">998</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01024">1024</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ Variables</h2></td></tr>
 
 <p>A low pass filter on the accels which helps with vibration resistance. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01414">1414</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01440">1440</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the acceleration in the NED frame. This is used by the altitude controller. Returns the down component for convenience. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00833">833</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00859">859</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -609,7 +609,7 @@ Variables</h2></td></tr>
 
 <p>Predict the position in the future. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00867">867</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00893">893</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ Variables</h2></td></tr>
 
 <p>Resets the vertical baro complementary filter and zeros the altitude. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00854">854</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00880">880</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ Variables</h2></td></tr>
 
 <p>Update the baro feedback. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00885">885</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00911">911</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ Variables</h2></td></tr>
 <p>Determine if it is safe to set the home location then do it. </p>
 <p>Check if it is safe to update the home location and do it </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01496">1496</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01522">1522</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 for success, -1 for failure </dd></dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01437">1437</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01463">1463</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -807,7 +807,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01545">1545</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01571">1571</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -835,7 +835,7 @@ Variables</h2></td></tr>
 <p>Set the AttitudeActual to the complementary filter estimate. </p>
 <p>Set the AttitudeActual UAVO to the complementary filter estimate </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00963">963</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00989">989</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ Variables</h2></td></tr>
 
 <p>Set the attitude to the current INSGPS estimate. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01376">1376</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01402">1402</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Variables</h2></td></tr>
 
 <p>Set the navigation to the current INSGPS estimate. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01401">1401</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01427">1427</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -917,7 +917,7 @@ Variables</h2></td></tr>
 <p>Provide no navigation updates (indoor flying or without gps) </p>
 <p>Set the navigation information to the raw estimates. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00951">951</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00977">977</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -944,11 +944,11 @@ Variables</h2></td></tr>
 
 <p>Set the navigation information to the raw estimates. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00896">896</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00922">922</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga13a4c91692dac51e1ccb8d460c09dbc3"></a>
+<a class="anchor" id="ga89ad5008c0510c1404e335cf04a46c23"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -977,7 +977,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>raw_gps</em>&#160;</td>
+          <td class="paramname"><em>raw_gps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>vel_compass</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1002,7 +1008,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00488">488</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00493">493</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1048,7 @@ Variables</h2></td></tr>
 <p>Use the INSGPS fusion algorithm in either indoor or outdoor mode (use GPS) [in] first_run This is the first run so trigger reinitialization [in] outdoor_mode If true use the GPS for position, if false weakly pull to (0,0)</p>
 <dl class="section return"><dt>Returns</dt><dd>0 for success, -1 for failure </dd></dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01040">1040</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01066">1066</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1075,7 @@ Variables</h2></td></tr>
 <p>Keep a running filtered version of the acceleration in the NED frame </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>this is redundant with another set when in INS modes... </dd></dl>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l01453">1453</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l01479">1479</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1188,7 @@ Variables</h2></td></tr>
 
 <p>The complementary filter attitude estimate. </p>
 
-<p>Definition at line <a class="el" href="attitude_8c_source.html#l00481">481</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
+<p>Definition at line <a class="el" href="attitude_8c_source.html#l00486">486</a> of file <a class="el" href="attitude_8c_source.html">attitude.c</a>.</p>
 
 </div>
 </div>

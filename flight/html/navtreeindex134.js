@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[5,0,0,5,17,1,2,11],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga86167cdf7eaace383bf74d35f23cb49e":[5,0,0,5,17,1,2,58],
+"targets_2sparky2_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9":[5,0,0,5,17,1,2,15],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga89e68cdd07ab84568fe168af24311299":[5,0,0,5,17,1,2,45],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga8cf509525c6f0e6c2b2a88f9a4cc34d7":[5,0,0,5,17,1,2,48],
 "targets_2sparky2_2board-info_2pios__board_8h.html#ga8f592a960a21018006bd68f30692ab5b":[5,0,0,5,17,1,2,42],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "targets_2sprf3e_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379":[5,0,0,5,18,2,2,13],
 "targets_2sprf3e_2fw_2pios__config_8h_source.html":[5,0,0,5,18,2,2],
 "taskmonitor_8c.html":[5,0,0,4,0,55],
-"taskmonitor_8c.html#ga1d9cdd0b4255485c84d4a695a4a9ae0f":[5,0,0,4,0,55,3],
-"taskmonitor_8c.html#ga2212575f7dbf4b2452fb7baa81b48115":[5,0,0,4,0,55,4],
-"taskmonitor_8c.html#ga319944cc5db9d35c587f3db201c181b2":[5,0,0,4,0,55,9],
-"taskmonitor_8c.html#ga35c7698b89cc04a2fce87ed36b155fc0":[5,0,0,4,0,55,6]
+"taskmonitor_8c.html#ga1d9cdd0b4255485c84d4a695a4a9ae0f":[5,0,0,4,0,55,3]
 };

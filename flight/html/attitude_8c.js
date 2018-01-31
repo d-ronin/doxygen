@@ -28,7 +28,7 @@ var attitude_8c =
     [ "setNavigationINSGPS", "attitude_8c.html#gaf7bd85556060be5c23393d3243956df5", null ],
     [ "setNavigationNone", "attitude_8c.html#ga9ef260a856c3edf49810a55a5f1ac167", null ],
     [ "setNavigationRaw", "attitude_8c.html#ga6604331f3424247baba9350e067288e6", null ],
-    [ "updateAttitudeComplementary", "attitude_8c.html#ga13a4c91692dac51e1ccb8d460c09dbc3", null ],
+    [ "updateAttitudeComplementary", "attitude_8c.html#ga89ad5008c0510c1404e335cf04a46c23", null ],
     [ "updateAttitudeINSGPS", "attitude_8c.html#gad63d3cf62c303f66aea711afbdc6edba", null ],
     [ "updateNedAccel", "attitude_8c.html#ga5de0a7ca8bf423e9f7ada9c3da1ac34e", null ],
     [ "accelQueue", "attitude_8c.html#ga9c4c234ed6af063a0caa20cb45519411", null ],

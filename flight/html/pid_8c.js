@@ -3,6 +3,7 @@ var pid_8c =
     [ "pid_apply", "pid_8c.html#ga173a3f497f444827b07299891ad25e34", null ],
     [ "pid_apply_antiwindup", "pid_8c.html#ga2b5f222011bbf7ab8a1273148d117d10", null ],
     [ "pid_apply_setpoint", "pid_8c.html#ga674dd92443c0a6b02bd28947131c98e3", null ],
+    [ "pid_apply_setpoint_antiwindup", "pid_8c.html#gafacfdf207d48bac27a0e8d101a6bbcc2", null ],
     [ "pid_configure", "pid_8c.html#ga6a80b10e52b545cf5640a626c166a377", null ],
     [ "pid_configure_deadband", "pid_8c.html#ga68bebd40bee3d6bc99857995fb61b652", null ],
     [ "pid_configure_derivative", "pid_8c.html#ga90a5d55ff766104f2cf9b4f2cc28d60f", null ],
