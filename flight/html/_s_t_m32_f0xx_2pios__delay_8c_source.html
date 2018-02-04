@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d8c8628</span>
+   &#160;<span id="projectnumber">1dd05b2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -129,9 +129,9 @@ $(document).ready(function(){initNavTree('_s_t_m32_f0xx_2pios__delay_8c_source.h
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* Project Includes */</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;pios.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* This will result in a value like 39062 -- about 16 bits */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#gaf7041cedd1528e143fe946ae452524dd">   36</a></span>&#160;<span class="preprocessor">#define SYSTICK_HZ 1024</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#gaa13b9cc06b364c7c60f262fb81e0920f">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RTC_DIVIDER 4   </span><span class="comment">/* Must be power of 2; this results in 256Hz &quot;RTC&quot; */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* This will result in a value of 32000 -- about 15 bits */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#gaf7041cedd1528e143fe946ae452524dd">   36</a></span>&#160;<span class="preprocessor">#define SYSTICK_HZ 1250</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#gaa13b9cc06b364c7c60f262fb81e0920f">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RTC_DIVIDER 2   </span><span class="comment">/* Must be power of 2; this results in 625Hz &quot;RTC&quot; */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___p_i_o_s___d_e_l_a_y.html#ga4a89906615cf6571caee85e80344c63f">   39</a></span>&#160;<span class="preprocessor">#define PIOS_RTC_MAX_CALLBACKS 3</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>

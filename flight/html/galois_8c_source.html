@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d8c8628</span>
+   &#160;<span id="projectnumber">1dd05b2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('galois_8c_source.html','');});
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">/* multiplication using logarithms */</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="galois_8c.html#a67e5fdd13f145fe895d82b04bc7bffc3">  150</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="galois_8c.html#a67e5fdd13f145fe895d82b04bc7bffc3">gmult</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>,<a class="code" href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>,<a class="code" href="loadabletest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">if</span> (a==0 || b == 0) <span class="keywordflow">return</span> (0);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  i = <a class="code" href="galois_8c.html#af2e4b45be6be48b610cd9c7ad27de11a">glog</a>[a];</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  j = <a class="code" href="galois_8c.html#af2e4b45be6be48b610cd9c7ad27de11a">glog</a>[b];</div>
@@ -275,11 +275,11 @@ $(document).ready(function(){initNavTree('galois_8c_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="ttc" id="galois_8c_html_a67e5fdd13f145fe895d82b04bc7bffc3"><div class="ttname"><a href="galois_8c.html#a67e5fdd13f145fe895d82b04bc7bffc3">gmult</a></div><div class="ttdeci">int gmult(int a, int b)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00150">galois.c:150</a></div></div>
+<div class="ttc" id="loadabletest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="loadabletest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="loadabletest_8c_source.html#l00012">loadabletest.c:12</a></div></div>
 <div class="ttc" id="galois_8c_html_aaca848efd07888d6d88886ac06b463de"><div class="ttname"><a href="galois_8c.html#aaca848efd07888d6d88886ac06b463de">gexp</a></div><div class="ttdeci">const int gexp[512]</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00045">galois.c:45</a></div></div>
 <div class="ttc" id="ecc_8h_html"><div class="ttname"><a href="ecc_8h.html">ecc.h</a></div></div>
 <div class="ttc" id="galois_8c_html_aea2f56d785c0dfc8af1f9bc2c78294f4"><div class="ttname"><a href="galois_8c.html#aea2f56d785c0dfc8af1f9bc2c78294f4">ginv</a></div><div class="ttdeci">int ginv(int elt)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00160">galois.c:160</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
-<div class="ttc" id="modtest_8c_html_ae2441537eae97e547ba743a5daa31e7f"><div class="ttname"><a href="modtest_8c.html#ae2441537eae97e547ba743a5daa31e7f">j</a></div><div class="ttdeci">volatile int j</div><div class="ttdef"><b>Definition:</b> <a href="modtest_8c_source.html#l00012">modtest.c:12</a></div></div>
 <div class="ttc" id="galois_8c_html_af2e4b45be6be48b610cd9c7ad27de11a"><div class="ttname"><a href="galois_8c.html#af2e4b45be6be48b610cd9c7ad27de11a">glog</a></div><div class="ttdeci">const int glog[256]</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00079">galois.c:79</a></div></div>
 <div class="ttc" id="galois_8c_html_a65eb83f04917d12d687aaa70449a3036"><div class="ttname"><a href="galois_8c.html#a65eb83f04917d12d687aaa70449a3036">init_galois_tables</a></div><div class="ttdeci">void init_galois_tables(void)</div><div class="ttdef"><b>Definition:</b> <a href="galois_8c_source.html#l00103">galois.c:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

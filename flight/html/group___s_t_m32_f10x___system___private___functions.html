@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">d8c8628</span>
+   &#160;<span id="projectnumber">1dd05b2</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -147,12 +147,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configures the System clock frequency, HCLK, PCLK2 and PCLK1 prescalers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
@@ -160,7 +154,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00428">428</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
+<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00425">425</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
 </div>
 </div>
@@ -187,12 +181,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup the external memory controller. Called in startup_stm32f10x.s before jump to __main. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td>Sets System clock frequency to 72MHz and configure HCLK, PCLK2 and PCLK1 prescalers. </td></tr>
@@ -200,12 +188,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function should be used only after reset. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
@@ -213,7 +195,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l01021">1021</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
+<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l01010">1010</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
 </div>
 </div>
@@ -243,13 +225,7 @@ Functions</h2></td></tr>
 <p>(*) HSI_VALUE is a constant defined in stm32f1xx.h file (default value 8 MHz) but the real value may vary depending on the variations in voltage and temperature.</p>
 <p>(**) HSE_VALUE is a constant defined in stm32f1xx.h file (default value 8 MHz or 25 MHz, depedning on the product used), user has to ensure that HSE_VALUE is same as the real frequency of the crystal used. Otherwise, this function may have wrong result.</p>
 <ul>
-<li>The result of this function could be not correct when using fractional value for HSE crystal. <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
+<li>The result of this function could be not correct when using fractional value for HSE crystal. <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
   </table>
@@ -258,7 +234,7 @@ Functions</h2></td></tr>
 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00315">315</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
+<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00313">313</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
 </div>
 </div>
@@ -278,12 +254,6 @@ Functions</h2></td></tr>
 
 <p>Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the SystemCoreClock variable. </p>
 <dl class="section note"><dt>Note</dt><dd>This function should be used only after reset. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
@@ -291,7 +261,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00221">221</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
+<p>Definition at line <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html#l00220">220</a> of file <a class="el" href="pipxtreme_2board-info_2cmsis__system_8c_source.html">cmsis_system.c</a>.</p>
 
 </div>
 </div>

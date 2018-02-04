@@ -3,7 +3,7 @@ var searchData=
   ['datadownload',['DataDownload',['../group___common_f1.html#ga33196f517628dd8e2149305b76d75f8e',1,'op_dfu.c']]],
   ['date_5ffrom_5ftimestamp',['date_from_timestamp',['../group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f',1,'timeutils.c']]],
   ['debug_5fcheck_5fsyndrome',['debug_check_syndrome',['../rs_8c.html#a503801e9bcd8e179d6b5ba5b185ff0d1',1,'rs.c']]],
-  ['declare_5floadable_5fextension',['DECLARE_LOADABLE_EXTENSION',['../modtest_8c.html#ac841aa995d97882ea20e164732c1339a',1,'modtest.c']]],
+  ['declare_5floadable_5fextension',['DECLARE_LOADABLE_EXTENSION',['../loadabletest_8c.html#ac841aa995d97882ea20e164732c1339a',1,'loadabletest.c']]],
   ['decode_5fdata',['decode_data',['../ecc_8h.html#a231146bc254c1a49a9d3cc94c84cfd4e',1,'decode_data(unsigned char data[], int nbytes):&#160;rs.c'],['../rs_8c.html#a231146bc254c1a49a9d3cc94c84cfd4e',1,'decode_data(unsigned char data[], int nbytes):&#160;rs.c']]],
   ['default_5fcpu_5fhandler',['default_cpu_handler',['../group___p_i_o_s.html#ga237c367d2c1b3ed1794f0dc8835741a9',1,'default_cpu_handler(void):&#160;startup.c'],['../_s_t_m32_f4xx_2startup_8c.html#ga237c367d2c1b3ed1794f0dc8835741a9',1,'default_cpu_handler(void):&#160;startup.c']]],
   ['default_5fio_5fhandler',['default_io_handler',['../group___p_i_o_s.html#ga8250b541b5af4579865f6abfec390d11',1,'default_io_handler(void):&#160;vectors_stm32f30x.c'],['../vectors__stm32f4xx_8c.html#ga8250b541b5af4579865f6abfec390d11',1,'default_io_handler(void):&#160;vectors_stm32f4xx.c']]],
@@ -45,7 +45,7 @@ var searchData=
   ['drawbattery',['drawBattery',['../group___on_screen_display.html#ga85d7e1ad745a9c81483f8b513db8cebc',1,'onscreendisplay.c']]],
   ['drawbox',['drawBox',['../group___on_screen_display.html#gae399f433b1adebe10b6108074e73ee59',1,'osd_utils.c']]],
   ['dshot_5fupdate',['DSHOT_Update',['../group___p_i_o_s___s_e_r_v_o.html#gaedd09d5c2bd70c6a479e58cabe5b4cca',1,'pios_servo.c']]],
-  ['dumb_5fregtask',['dumb_regtask',['../modtest_8c.html#aaa6e90a3d8f1e28cb94a18ed9e2f53ad',1,'modtest.c']]],
-  ['dumb_5ftest_5fdelay',['dumb_test_delay',['../modtest_8c.html#a61daf6d989d4aae9351f3a7cb3e3c89a',1,'modtest.c']]],
-  ['dumb_5ftest_5ftwo',['dumb_test_two',['../modtest_8c.html#a1b9fce05ab16055b7edd0a3082ca384f',1,'modtest.c']]]
+  ['dumb_5fregtask',['dumb_regtask',['../loadabletest_8c.html#aaa6e90a3d8f1e28cb94a18ed9e2f53ad',1,'loadabletest.c']]],
+  ['dumb_5ftest_5fdelay',['dumb_test_delay',['../loadabletest_8c.html#a61daf6d989d4aae9351f3a7cb3e3c89a',1,'loadabletest.c']]],
+  ['dumb_5ftest_5ftwo',['dumb_test_two',['../loadabletest_8c.html#a1b9fce05ab16055b7edd0a3082ca384f',1,'loadabletest.c']]]
 ];
