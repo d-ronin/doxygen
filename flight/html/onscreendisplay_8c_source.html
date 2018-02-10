@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">8c83877</span>
+   &#160;<span id="projectnumber">9967799</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1289,7 +1289,7 @@ $(document).ready(function(){initNavTree('onscreendisplay_8c_source.html','');})
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        <span class="keywordflow">if</span> (page-&gt;Compass) {</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                <span class="keywordtype">bool</span> do_compass = <a class="code" href="group___on_screen_display.html#ga262760ef6d30ecf31daf5b79c9d10fb4">has_mag</a>;</div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                <span class="keywordflow">if</span> (!do_compass) {</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                <span class="keywordflow">if</span> (!do_compass &amp;&amp; <a class="code" href="group___on_screen_display.html#ga93cae68ddab9b53ebd8f68a815ed919a">has_nav</a>) {</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;                        StateEstimationAttitudeFilterGet(&amp;tmp_uint8);</div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                        <span class="keywordflow">if</span> (tmp_uint8 == STATEESTIMATION_ATTITUDEFILTER_COMPLEMENTARYVELCOMPASS) {</div>
@@ -1972,40 +1972,42 @@ $(document).ready(function(){initNavTree('onscreendisplay_8c_source.html','');})
 <div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;                                <a class="code" href="group___on_screen_display.html#gaed95ad766b6ef193078db80f2e89bc09">render_stats</a>();</div>
 <div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_MENU:</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;                                <span class="keywordflow">if</span> ((arm_status == FLIGHTSTATUS_ARMED_DISARMED) ||</div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;                                                (<a class="code" href="group___on_screen_display.html#gadfded7681d3482f0c07dfefcf178d8a1">osd_settings</a>.DisableMenuWhenArmed == ONSCREENDISPLAYSETTINGS_DISABLEMENUWHENARMED_DISABLED)) {</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;                                        <a class="code" href="group___on_screen_display.html#gabdee9b1cd29ac89fa5b15cac1574c2d9">render_osd_menu</a>();</div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;                                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                                }</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;                                <a class="code" href="group___on_screen_display.html#ga3757ee1e6d6c6dd97110a07178058ffa">write_string</a>(<span class="stringliteral">&quot;MENU DISABLED&quot;</span>, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga526249453651c8423daab80ffd501472">GRAPHICS_X_MIDDLE</a>, 50, 0, 0, <a class="code" href="group___on_screen_display.html#ga71c50a4a9e2443d8fc50d985d564c36e">TEXT_VA_TOP</a>, <a class="code" href="group___on_screen_display.html#ga0265aa8fd163f9a872be7f2083ce0ec4">TEXT_HA_CENTER</a>, 0, 3);</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM1:</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM2:</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM3:</div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM4:</div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;                                <a class="code" href="group___on_screen_display.html#ga49cb573ab0549012b049fb8e900cb67e">render_user_page</a>(&amp;osd_page_settings);</div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;                        }</div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;</div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;                        <span class="comment">//drawBox(0, 0, 351, 240);</span></div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;<span class="preprocessor">#ifdef OSD_USE_MENU</span></div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;<span class="preprocessor"></span>                                <span class="keywordflow">if</span> ((arm_status == FLIGHTSTATUS_ARMED_DISARMED) ||</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;                                                (<a class="code" href="group___on_screen_display.html#gadfded7681d3482f0c07dfefcf178d8a1">osd_settings</a>.DisableMenuWhenArmed == ONSCREENDISPLAYSETTINGS_DISABLEMENUWHENARMED_DISABLED)) {</div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;                                        <a class="code" href="group___on_screen_display.html#gabdee9b1cd29ac89fa5b15cac1574c2d9">render_osd_menu</a>();</div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;                                }</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;<span class="preprocessor"></span>                                <a class="code" href="group___on_screen_display.html#ga3757ee1e6d6c6dd97110a07178058ffa">write_string</a>(<span class="stringliteral">&quot;MENU DISABLED&quot;</span>, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga526249453651c8423daab80ffd501472">GRAPHICS_X_MIDDLE</a>, 50, 0, 0, <a class="code" href="group___on_screen_display.html#ga71c50a4a9e2443d8fc50d985d564c36e">TEXT_VA_TOP</a>, <a class="code" href="group___on_screen_display.html#ga0265aa8fd163f9a872be7f2083ce0ec4">TEXT_HA_CENTER</a>, 0, 3);</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM1:</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM2:</div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM3:</div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;                        <span class="keywordflow">case</span> ONSCREENDISPLAYSETTINGS_PAGECONFIG_CUSTOM4:</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;                                <a class="code" href="group___on_screen_display.html#ga49cb573ab0549012b049fb8e900cb67e">render_user_page</a>(&amp;osd_page_settings);</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;                        }</div>
 <div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;</div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;                        <a class="code" href="group___on_screen_display.html#ga5459c19dfddea7967771730f55754a3b">frame_counter</a>++;</div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;                        last_page = current_page;</div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;                        last_arm_status = arm_status;</div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;                        video_system_last = video_system_act;</div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="preprocessor">#ifdef DEBUG_TIMING</span></div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<span class="preprocessor"></span>                        out_ticks = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;                        in_time   = out_ticks - in_ticks;</div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;                        <span class="keywordtype">char</span> tmp_str[50];</div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;                        <a class="code" href="group___p_i_o_s.html#gaa0649118bc3728b2a62af0b47606ff51">sprintf</a>(tmp_str, <span class="stringliteral">&quot;%03d %03d&quot;</span>, (<span class="keywordtype">int</span>)in_time, (<span class="keywordtype">int</span>)out_time);</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;                        <a class="code" href="group___on_screen_display.html#ga3757ee1e6d6c6dd97110a07178058ffa">write_string</a>(tmp_str, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga526249453651c8423daab80ffd501472">GRAPHICS_X_MIDDLE</a>, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#gacf64e3bc2c0ea982792bee51ac29ec40">GRAPHICS_Y_MIDDLE</a> - 20, 0, 0, <a class="code" href="group___on_screen_display.html#ga71c50a4a9e2443d8fc50d985d564c36e">TEXT_VA_TOP</a>, <a class="code" href="group___on_screen_display.html#ga0265aa8fd163f9a872be7f2083ce0ec4">TEXT_HA_CENTER</a>, 0, <a class="code" href="group___on_screen_display.html#ga13ddc414631b5b91745a8d995201f3df">FONT8X10</a>);</div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<span class="preprocessor"></span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;                        <a class="code" href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;                }</div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;        }</div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;}</div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;</div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;                        <span class="comment">//drawBox(0, 0, 351, 240);</span></div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;</div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;                        <a class="code" href="group___on_screen_display.html#ga5459c19dfddea7967771730f55754a3b">frame_counter</a>++;</div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;                        last_page = current_page;</div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;                        last_arm_status = arm_status;</div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;                        video_system_last = video_system_act;</div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<span class="preprocessor">#ifdef DEBUG_TIMING</span></div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;<span class="preprocessor"></span>                        out_ticks = <a class="code" href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a>();</div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;                        in_time   = out_ticks - in_ticks;</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;                        <span class="keywordtype">char</span> tmp_str[50];</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;                        <a class="code" href="group___p_i_o_s.html#gaa0649118bc3728b2a62af0b47606ff51">sprintf</a>(tmp_str, <span class="stringliteral">&quot;%03d %03d&quot;</span>, (<span class="keywordtype">int</span>)in_time, (<span class="keywordtype">int</span>)out_time);</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;                        <a class="code" href="group___on_screen_display.html#ga3757ee1e6d6c6dd97110a07178058ffa">write_string</a>(tmp_str, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga526249453651c8423daab80ffd501472">GRAPHICS_X_MIDDLE</a>, <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#gacf64e3bc2c0ea982792bee51ac29ec40">GRAPHICS_Y_MIDDLE</a> - 20, 0, 0, <a class="code" href="group___on_screen_display.html#ga71c50a4a9e2443d8fc50d985d564c36e">TEXT_VA_TOP</a>, <a class="code" href="group___on_screen_display.html#ga0265aa8fd163f9a872be7f2083ce0ec4">TEXT_HA_CENTER</a>, 0, <a class="code" href="group___on_screen_display.html#ga13ddc414631b5b91745a8d995201f3df">FONT8X10</a>);</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<span class="preprocessor"></span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;                        <a class="code" href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;                }</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;        }</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;}</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;</div>
 <div class="ttc" id="group___on_screen_display_html_gaa0e1b89f80645ac528511ff7bfa2d096"><div class="ttname"><a href="group___on_screen_display.html#gaa0e1b89f80645ac528511ff7bfa2d096">video_active</a></div><div class="ttdeci">volatile bool video_active</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00137">onscreendisplay.c:137</a></div></div>
 <div class="ttc" id="osd__utils_8h_html"><div class="ttname"><a href="osd__utils_8h.html">osd_utils.h</a></div><div class="ttdoc">OSD Utility Functions. </div></div>
 <div class="ttc" id="struct_font_entry_html"><div class="ttname"><a href="struct_font_entry.html">FontEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="fonts_8h_source.html#l00043">fonts.h:43</a></div></div>
@@ -2154,7 +2156,7 @@ $(document).ready(function(){initNavTree('onscreendisplay_8c_source.html','');})
 <div class="ttc" id="group___p_i_o_s___modules_html_gga0c75b61e067ee5be01eb6682ce7c8f60a8d1467ed9bb5a3868b9fc5af9ba245e5"><div class="ttname"><a href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a8d1467ed9bb5a3868b9fc5af9ba245e5">PIOS_MODULE_GPS</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__modules_8h_source.html#l00035">pios_modules.h:35</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga622f68728eda3ab5f67fac3523955faf"><div class="ttname"><a href="group___on_screen_display.html#ga622f68728eda3ab5f67fac3523955faf">get_font_info</a></div><div class="ttdeci">const struct FontEntry * get_font_info(int font)</div><div class="ttdef"><b>Definition:</b> <a href="osd__utils_8c_source.html#l01290">osd_utils.c:1290</a></div></div>
 <div class="ttc" id="_w_m_m_internal_8h_html"><div class="ttname"><a href="_w_m_m_internal_8h.html">WMMInternal.h</a></div><div class="ttdoc">Include file of the WorldMagModel internal functionality. </div></div>
-<div class="ttc" id="group___on_screen_display_html_gabdee9b1cd29ac89fa5b15cac1574c2d9"><div class="ttname"><a href="group___on_screen_display.html#gabdee9b1cd29ac89fa5b15cac1574c2d9">render_osd_menu</a></div><div class="ttdeci">void render_osd_menu()</div><div class="ttdef"><b>Definition:</b> <a href="osd__menu_8c_source.html#l00991">osd_menu.c:991</a></div></div>
+<div class="ttc" id="group___on_screen_display_html_gabdee9b1cd29ac89fa5b15cac1574c2d9"><div class="ttname"><a href="group___on_screen_display.html#gabdee9b1cd29ac89fa5b15cac1574c2d9">render_osd_menu</a></div><div class="ttdeci">void render_osd_menu()</div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ggade05f7a7a94aa2f6e3cb97138cb3aeffaddf95af40aea8e68282bacd4d3b9ac71"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ggade05f7a7a94aa2f6e3cb97138cb3aeffaddf95af40aea8e68282bacd4d3b9ac71">PIOS_VIDEO_3D_DISABLED</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00046">pios_video.h:46</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga13ddc414631b5b91745a8d995201f3df"><div class="ttname"><a href="group___on_screen_display.html#ga13ddc414631b5b91745a8d995201f3df">FONT8X10</a></div><div class="ttdeci">#define FONT8X10</div><div class="ttdef"><b>Definition:</b> <a href="fonts_8h_source.html#l00052">fonts.h:52</a></div></div>
 <div class="ttc" id="group___u_a_v_object_handling_html_ga264590c39739a19082e2c32d91f6e3ce"><div class="ttname"><a href="group___u_a_v_object_handling.html#ga264590c39739a19082e2c32d91f6e3ce">UAVObjGetNumInstances</a></div><div class="ttdeci">uint16_t UAVObjGetNumInstances(UAVObjHandle obj)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8c_source.html#l00517">uavobjectmanager.c:517</a></div></div>

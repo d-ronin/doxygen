@@ -3,6 +3,7 @@ var targets_2seppuku_2fw_2pios__config_8h =
     [ "CAMERASTAB_POI_MODE", "targets_2seppuku_2fw_2pios__config_8h.html#gaf4039c0d196379cbfb36489300f94ffe", null ],
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2seppuku_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "targets_2seppuku_2fw_2pios__config_8h.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
+    [ "OSD_USE_MENU", "targets_2seppuku_2fw_2pios__config_8h.html#ga2830c2da01675c3b650bcfd8e312b883", null ],
     [ "PIOS_INCLUDE_BMI160", "targets_2seppuku_2fw_2pios__config_8h.html#ga1e15b364af56c864f6214ade28ffdfc4", null ],
     [ "PIOS_INCLUDE_BMP280", "targets_2seppuku_2fw_2pios__config_8h.html#ga401441fde64a74c578c83d2e616da605", null ],
     [ "PIOS_INCLUDE_BMP280_SPI", "targets_2seppuku_2fw_2pios__config_8h.html#ga9f4391f6affd1768e1158448f12accc5", null ],

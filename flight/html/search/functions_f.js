@@ -25,8 +25,6 @@ var searchData=
   ['pid_5fconfigure_5fdeadband',['pid_configure_deadband',['../group___flight_math.html#ga68bebd40bee3d6bc99857995fb61b652',1,'pid.c']]],
   ['pid_5fconfigure_5fderivative',['pid_configure_derivative',['../group___flight_math.html#ga90a5d55ff766104f2cf9b4f2cc28d60f',1,'pid.c']]],
   ['pid_5fzero',['pid_zero',['../group___flight_math.html#ga2e2dbc48e2b186b32beebd99e18f79e9',1,'pid.c']]],
-  ['pidatt_5fmenu',['pidatt_menu',['../group___on_screen_display.html#ga840286fef15f5c44dfee44329ab05894',1,'osd_menu.c']]],
-  ['pidrate_5fmenu',['pidrate_menu',['../group___on_screen_display.html#ga4df16369adce184a7db95e7ef62ca4a5',1,'osd_menu.c']]],
   ['pios_5fadc_5fallocate',['PIOS_ADC_Allocate',['../group___p_i_o_s___a_d_c.html#ga3f88d2b5c8038eb36d2aec1bdf982c9c',1,'pios_adc.c']]],
   ['pios_5fadc_5favailable',['PIOS_ADC_Available',['../group___p_i_o_s___a_d_c.html#ga3f5f671e8a6057b26861ce21789f3733',1,'pios_adc.c']]],
   ['pios_5fadc_5fdevicepinget',['PIOS_ADC_DevicePinGet',['../group___p_i_o_s___a_d_c.html#ga99e9080cf4eb3114f15ad00364a5b4d0',1,'pios_adc.c']]],

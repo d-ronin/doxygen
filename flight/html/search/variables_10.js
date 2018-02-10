@@ -46,8 +46,6 @@ var searchData=
   ['phi',['phi',['../struct_w_m_mtype___coord_geodetic.html#a830561cbe026055e7aadb6c004b31f08',1,'WMMtype_CoordGeodetic']]],
   ['phig',['phig',['../struct_w_m_mtype___coord_spherical.html#a94d857d131a4281543b46b4f3dc2a28e',1,'WMMtype_CoordSpherical']]],
   ['pi_5fover_5f4',['PI_Over_4',['../polarst_8c.html#a7b75c0bd3135a61f8711a2e7b2dd6f54',1,'polarst.c']]],
-  ['pid_5fstrings',['pid_strings',['../group___on_screen_display.html#ga1fd52ef5b0ace8a28eedd664a8a33d4f',1,'osd_menu.c']]],
-  ['pid_5fstrings_5fatt',['pid_strings_att',['../group___on_screen_display.html#ga915fd38d0c731a81dbc48cefb2e11230',1,'osd_menu.c']]],
   ['pids',['pids',['../group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233',1,'stabilization.c']]],
   ['pin',['pin',['../structpios__annunc.html#a88b452f9d510fde12b2592105e992b34',1,'pios_annunc::pin()'],['../structpios__exti__cfg.html#a099174bef966c8ee8091cb1d00343a4b',1,'pios_exti_cfg::pin()'],['../structadc__pin.html#a20be5a8bbbb9954f4d52fb44da32c9e3',1,'adc_pin::pin()'],['../structpios__tim__channel.html#a6500258c79aaab18cc524727753e388e',1,'pios_tim_channel::pin()'],['../group___p_i_o_s___s_e_r_v_o.html#ga13df35c08fb8193f563f3c9bc390a668',1,'dshot_info::pin()']]],
   ['pin_5fsource',['pin_source',['../structstm32__gpio.html#a79c5a3ec6b45fc1a2c4921c81f79ca42',1,'stm32_gpio']]],

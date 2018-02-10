@@ -11,7 +11,6 @@ var searchData=
   ['holdposition',['holdPosition',['../group___path_planner_module.html#gaf676426729fd76923bfebdba9254a8af',1,'pathplanner.c']]],
   ['homedirection_5fupdate',['HOMEDIRECTION_update',['../group___char_o_s_d.html#ga3b6500bfc137f8287456bb30420122f3',1,'panel.c']]],
   ['homedistance_5fupdate',['HOMEDISTANCE_update',['../group___char_o_s_d.html#ga24479edc1bedb156f57dd823207d760d',1,'panel.c']]],
-  ['homeloc_5fmenu',['homeloc_menu',['../group___on_screen_display.html#gaf6672b7da6a1bf376b3da8d37e87d6bd',1,'osd_menu.c']]],
   ['horizon_5fupdate',['HORIZON_update',['../group___char_o_s_d.html#gaad5189cb34c173c488365f8414f436ab',1,'panel.c']]],
   ['hud_5fdraw_5flinear_5fcompass',['hud_draw_linear_compass',['../group___on_screen_display.html#ga64f2ef925a40be4acae2a5364cc5ef6a',1,'onscreendisplay.c']]],
   ['hud_5fdraw_5fvertical_5fscale',['hud_draw_vertical_scale',['../group___on_screen_display.html#gaca083484bed6d47ad52ba31216514ea6',1,'onscreendisplay.c']]]

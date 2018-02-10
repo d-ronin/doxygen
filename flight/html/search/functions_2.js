@@ -7,7 +7,6 @@ var searchData=
   ['baro_5fairspeedgetanalog',['baro_airspeedGetAnalog',['../group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a',1,'baro_airspeed_analog.c']]],
   ['baro_5fairspeedgetetasv3',['baro_airspeedGetETASV3',['../group___airspeed_module.html#ga7e7d5fbcdba122ba85607af59516da18',1,'baro_airspeed_etasv3.c']]],
   ['baseofadresstype',['baseOfAdressType',['../group___common_f1.html#ga90ec1a350e3192abce917e9f10b989ec',1,'baseOfAdressType(DFUTransfer type):&#160;op_dfu.c'],['../group___common_f1.html#gabf73792a7a60a0d6422d1f6ea2352779',1,'baseOfAdressType(uint8_t type):&#160;op_dfu.h']]],
-  ['battery_5fmenu',['battery_menu',['../group___on_screen_display.html#ga23039507bd6d7d5acdc4bb22c4da40d2',1,'osd_menu.c']]],
   ['batteryinitialize',['BatteryInitialize',['../group___battery_module.html#ga578ae02a5a7f4b77431f4e4bcb5cc121',1,'battery.c']]],
   ['batterystart',['BatteryStart',['../group___battery_module.html#ga15a98c2af1d0d0351b8b870c68f889f8',1,'battery.c']]],
   ['batterytask',['batteryTask',['../group___battery_module.html#ga6e07fcdcbfd804ec4554e366808d38d2',1,'battery.c']]],

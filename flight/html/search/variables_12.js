@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r',['r',['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
-  ['raceband_5ffreqs',['RACEBAND_FREQS',['../group___on_screen_display.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'RACEBAND_FREQS():&#160;osd_menu.c'],['../group___v_t_x_config.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'RACEBAND_FREQS():&#160;VTXConfig.c']]],
+  ['raceband_5ffreqs',['RACEBAND_FREQS',['../group___v_t_x_config.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'VTXConfig.c']]],
   ['radioeventqueue',['radioEventQueue',['../group___radio_com_bridge_module.html#ga6b7aaa5ae15499fdeb823730418ef967',1,'RadioComBridgeData']]],
   ['radiorxtaskhandle',['radioRxTaskHandle',['../group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117',1,'RadioComBridgeData']]],
   ['radiotxretries',['radioTxRetries',['../group___radio_com_bridge_module.html#ga11fea13a487748f5c63aeb8df71bc851',1,'RadioComBridgeData']]],
@@ -59,8 +59,6 @@ var searchData=
   ['rfm22b_5frcvr_5fid',['rfm22b_rcvr_id',['../structpios__rfm22b__dev.html#a4a0ae74b74659d50b349888cc0917c25',1,'pios_rfm22b_dev']]],
   ['rfm22b_5fstate',['rfm22b_state',['../structpios__rfm22b__dev.html#a3619d49bfe3fd361ff74dfdba07c45c0',1,'pios_rfm22b_dev']]],
   ['rfxtalcap',['RFXtalCap',['../structpios__rfm22b__cfg.html#a20784354b27515bed19c3fa02b880a10',1,'pios_rfm22b_cfg']]],
-  ['rgbled_5fcolor_5fnames',['RGBLED_COLOR_NAMES',['../group___on_screen_display.html#gac7d6b61ff9a2cd77f0720f0c3c7107cd',1,'osd_menu.c']]],
-  ['rgbled_5fcolor_5fvalues',['RGBLED_COLOR_VALUES',['../group___on_screen_display.html#ga87ef04b5d1097b717bf75cf569480962',1,'osd_menu.c']]],
   ['ringer',['ringer',['../structsmoothcontrol__state__internal.html#a3aacf915e784077e43e08d7ae3c5e2bd',1,'smoothcontrol_state_internal']]],
   ['roll',['roll',['../structmsp__pid.html#a6d298477afe665d8807b169579715bab',1,'msp_pid::roll()'],['../structmsp__set__pid.html#aeb2947f6e75b80ceb6ea65bf277fbbd9',1,'msp_set_pid::roll()'],['../structcrsf__payload__attitude.html#a41f91822275e96e23783dd27a5f6dce3',1,'crsf_payload_attitude::roll()'],['../msp__messages_8h.html#a81538db66ddb6f7192cb5f79426436d2',1,'roll():&#160;msp_messages.h'],['../pios__crossfire_8h.html#ac1c338715ac9be841d38bed1aa0c9cd6',1,'roll():&#160;pios_crossfire.h']]],
   ['roll_5fd100',['roll_D100',['../struct_rotation.html#a39ec75e57bb1fb00c8ae5bdde5451fc3',1,'Rotation']]],

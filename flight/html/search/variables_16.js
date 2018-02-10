@@ -48,7 +48,7 @@ var searchData=
   ['vtol_5fpath_5fr',['vtol_path_r',['../group___vtol_path_follower.html#ga7da7c056e8fad13dc9b31d51ad2caa8c',1,'vtol_follower_control.c']]],
   ['vtol_5fpids',['vtol_pids',['../group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4',1,'vtol_pids():&#160;vtol_follower_control.c'],['../group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4',1,'vtol_pids():&#160;vtol_follower_control.c']]],
   ['vtolpathfollowersettingsdata',['vtolPathFollowerSettingsData',['../structtxpid__struct.html#a5b5e9d53be8938d06b0f35ff371ff187',1,'txpid_struct']]],
-  ['vtx_5fpower',['VTX_POWER',['../group___on_screen_display.html#ga8e62d79e9e6aa22daeabad3d7b2d6d7f',1,'VTX_POWER():&#160;osd_menu.c'],['../group___v_t_x_config.html#ga8e62d79e9e6aa22daeabad3d7b2d6d7f',1,'VTX_POWER():&#160;VTXConfig.c']]],
+  ['vtx_5fpower',['VTX_POWER',['../group___v_t_x_config.html#ga8e62d79e9e6aa22daeabad3d7b2d6d7f',1,'VTXConfig.c']]],
   ['vtx_5fprotocol',['vtx_protocol',['../group___v_t_x_config.html#ga18b50ca78f133a834942795a1d1e5f5f',1,'tbs_smartaudio.c']]],
   ['vtx_5ftype',['vtx_type',['../group___v_t_x_config.html#ga7492ed56c36e0a8a64b62068dd643df8',1,'VTXConfig.c']]],
   ['vtxconfigport',['vtxConfigPort',['../group___v_t_x_config.html#ga531eb03d3b2c83d6162a90fd315c51ff',1,'VTXConfig.c']]],

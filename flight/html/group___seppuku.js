@@ -18,6 +18,7 @@ var group___seppuku =
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "group___seppuku.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "MAX_DEL_RETRYS", "group___seppuku.html#gab98ad41f0f40e6edd46ea98d46edb0af", null ],
     [ "MODULE_FLIGHTSTATS_BUILTIN", "group___seppuku.html#ga5852869ec30fde13e651b38fe3aa97c7", null ],
+    [ "OSD_USE_MENU", "group___seppuku.html#ga2830c2da01675c3b650bcfd8e312b883", null ],
     [ "PIOS_ADC_MAX_OVERSAMPLING", "group___seppuku.html#ga208c18adb2e058348643425b79ae9e14", null ],
     [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___seppuku.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_ANNUNCIATOR_BUZZER", "group___seppuku.html#gafc809d2cdef7438cdb9abda6ea55f372", null ],

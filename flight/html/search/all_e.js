@@ -26,7 +26,7 @@ var searchData=
   ['next_5fpacket',['Next_Packet',['../group___common_f1.html#ga648c8e3066059c1bc314367bcae79b2f',1,'op_dfu.c']]],
   ['next_5fpacket_5fnumber',['next_packet_number',['../structxfer__state.html#aa8c32410e42e5116e054f3125eda8993',1,'xfer_state']]],
   ['next_5fpos',['next_pos',['../circqueue_8c.html#aab8f7c3d94c422599a3a9d9d717f6556',1,'circqueue.c']]],
-  ['next_5fstate',['next_state',['../structmenu__fsm__transition.html#ab1d2d45088b727f913abcfdf5184856e',1,'menu_fsm_transition::next_state()'],['../group___modules.html#ga07d4010f28091289bd740f33c9131ce8',1,'vtol_fsm_transition::next_state()'],['../structbl__transition.html#a965629351798a74ff69aed9a3f8f72d6',1,'bl_transition::next_state()']]],
+  ['next_5fstate',['next_state',['../group___modules.html#ga07d4010f28091289bd740f33c9131ce8',1,'vtol_fsm_transition::next_state()'],['../structbl__transition.html#a965629351798a74ff69aed9a3f8f72d6',1,'bl_transition::next_state()']]],
   ['next_5ftime',['next_time',['../group___p_i_o_s___s_e_n_s_o_r_s.html#gafe66d971b0831206eb02a21465a50456',1,'PIOS_Sensor']]],
   ['ninterfaceprotocol',['nInterfaceProtocol',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga1e2e09e7b88f6a84a53129afefdc75d3',1,'usb_interface_desc::nInterfaceProtocol()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga056d861642d341ddff9b5b6bb5b24ea9',1,'nInterfaceProtocol():&#160;pios_usb_defs.h']]],
   ['nmax',['nMax',['../struct_w_m_mtype___magnetic_model.html#ad87a370d713ab72ff5ca801d1a3a2d4c',1,'WMMtype_MagneticModel']]],

@@ -39,7 +39,6 @@ var searchData=
   ['vtolpathfollowerinitialize',['VtolPathFollowerInitialize',['../group___vtol_path_follower.html#gaec33cc9b4cda3af1231529c8ef0dc9d1',1,'vtolpathfollower.c']]],
   ['vtolpathfollowerstart',['VtolPathFollowerStart',['../group___vtol_path_follower.html#ga961a79aed22b448a7401bcca54fbeed4',1,'vtolpathfollower.c']]],
   ['vtolpathfollowertask',['vtolPathFollowerTask',['../group___vtol_path_follower.html#ga9538403f2d70b8d5bd8ae92c1520b9c8',1,'vtolpathfollower.c']]],
-  ['vtx_5fmenu',['vtx_menu',['../group___on_screen_display.html#gaca3d0e1ba5b2dbc271a01b7c063cd991',1,'osd_menu.c']]],
   ['vtxconfiginitialize',['VTXConfigInitialize',['../group___v_t_x_config.html#ga1010e435ffdf2b78c64171263315f71e',1,'VTXConfig.c']]],
   ['vtxconfigstart',['VTXConfigStart',['../group___v_t_x_config.html#ga51b7b23f50db0bbf7f6f16c42b863db5',1,'VTXConfig.c']]],
   ['vtxconfigtask',['vtxConfigTask',['../group___v_t_x_config.html#ga8372402ba8a1b77ea5691b5da83d683a',1,'VTXConfig.c']]]

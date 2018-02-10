@@ -35,6 +35,7 @@ var group___brain_r_e1 =
     [ "oplogo_height", "group___brain_r_e1.html#gad597c9294ddf261757376a00574b70a7", null ],
     [ "oplogo_width", "group___brain_r_e1.html#ga6fbf7c815a43034051914432356d0c60", null ],
     [ "OSD_USE_BRAINFPV_LOGO", "group___brain_r_e1.html#gad621ac8b28786134f3c5f833f796201b", null ],
+    [ "OSD_USE_MENU", "group___brain_r_e1.html#ga2830c2da01675c3b650bcfd8e312b883", null ],
     [ "PIOS_ADC_MAX_OVERSAMPLING", "group___brain_r_e1.html#ga208c18adb2e058348643425b79ae9e14", null ],
     [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___brain_r_e1.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_ADC_USE_ADC2", "group___brain_r_e1.html#ga4702cf9b653ef86dee4bbfba49907768", null ],
