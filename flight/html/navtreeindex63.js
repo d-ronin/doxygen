@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"group___s_t_m32_f0xx___system___private___defines.html":[2,6,7,0,2,2],
+"group___s_t_m32_f0xx___system___private___defines.html":[2,6,8,0,2,2],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,9,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,10,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,11,0,2,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "group___s_t_m32_f0xx___system___private___variables.html":[2,5,15,0,2,4],
 "group___s_t_m32_f0xx___system___private___variables.html":[2,6,0,0,2,4],
 "group___s_t_m32_f0xx___system___private___variables.html":[2,5,0,0,2,4],
-"group___s_t_m32_f0xx___system___private___variables.html":[2,6,3,0,2,4],
-"group___s_t_m32_f0xx___system___private___variables.html":[2,5,1,0,2,4],
-"group___s_t_m32_f0xx___system___private___variables.html":[2,6,6,0,2,4]
+"group___s_t_m32_f0xx___system___private___variables.html":[2,6,3,0,2,4]
 };

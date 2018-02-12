@@ -20,5 +20,6 @@ var searchData=
   ['status_5frep',['Status_Rep',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf',1,'common.h']]],
   ['status_5frequest',['Status_Request',['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fab91702aa5a803e1be0897d2a8e53d715',1,'common.h']]],
   ['status_5fsafetytimeout',['STATUS_SAFETYTIMEOUT',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a19b41f016f92677af9a541576339f01b',1,'control.h']]],
+  ['status_5ftoggle_5farm',['STATUS_TOGGLE_ARM',['../group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24',1,'control.h']]],
   ['suspended',['SUSPENDED',['../pios__usb__hid__pwr_8h.html#a26f487b1eb7b2d6b83b0d08414c542bba1c2114335a42993ac5cc5dbf65f83d41',1,'pios_usb_hid_pwr.h']]]
 ];

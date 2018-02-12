@@ -1,5 +1,7 @@
 var NAVTREEINDEX117 =
 {
+"seppuku_2fw_2mcuconf_8h.html#ga7f657adda8b7f6aa955f0806a29b0b9d":[5,0,0,5,15,2,0,144],
+"seppuku_2fw_2mcuconf_8h.html#ga7fe3dc866ef2fdf7f3280ff2a81a0206":[5,0,0,5,15,2,0,42],
 "seppuku_2fw_2mcuconf_8h.html#ga811cfbd049f0ab00976def9593849d32":[5,0,0,5,15,2,0,114],
 "seppuku_2fw_2mcuconf_8h.html#ga8307c6c43bf456405efe19e5908d5a25":[5,0,0,5,15,2,0,174],
 "seppuku_2fw_2mcuconf_8h.html#ga836b06331ed123d7742dd7aba7db02fd":[5,0,0,5,15,2,0,101],
@@ -247,7 +249,5 @@ var NAVTREEINDEX117 =
 "sparky2_2board-info_2cmsis__system_8c_source.html":[5,0,0,5,17,1,1],
 "sparky2_2board-info_2usb__conf_8h.html":[5,0,0,5,17,1,3],
 "sparky2_2board-info_2usb__conf_8h.html#ga05fe8f364b0f99dddedd65322b6ed290":[5,0,0,5,17,1,3,13],
-"sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,17,1,3,11],
-"sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,17,1,3,12],
-"sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,17,1,3,7]
+"sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,17,1,3,11]
 };

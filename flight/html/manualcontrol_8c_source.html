@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">9967799</span>
+   &#160;<span id="projectnumber">6c51f65</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -311,162 +311,167 @@ $(document).ready(function(){initNavTree('manualcontrol_8c_source.html','');});
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">                                 */</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a>) ||</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>)) {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMING);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a97207f3457ed3b04ca92ff55d1aec3d6">STATUS_DISCONNECTED</a>) ||</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032">STATUS_INVALID_FOR_DISARMED</a>)) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                                ManualControlSettingsArmTimeOptions arm_enum;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                ManualControlSettingsArmTimeGet(&amp;arm_enum);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                arm_time = (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_250) ? 250 :</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_500) ? 500 :</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_1000) ? 1000 :</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_2000) ? 2000 : 1000;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMING:</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                <span class="comment">/* Anything !&quot;ARM_*&quot; -&gt; SAFETY</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">                                 *</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">                                 * state_time &gt; ArmTime + ARM_INVALID -&gt; HOLDING</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">                                 * state_time &gt; ArmTime + ARM_VALID -&gt; ARMED</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">                                 */</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                <span class="keywordflow">if</span> ((status != <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a>) &amp;&amp;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                                (status != <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>)) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___thread.html#gae9bea383f568e575d7d7c2d3da855831">PIOS_Thread_Period_Elapsed</a>(arm_state_time, arm_time)) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                        <span class="keywordflow">if</span> (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMED);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                                <span class="comment">/* Must be STATUS_ARM_INVALID */</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                                <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_HOLDING);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                        }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_HOLDING:</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                <span class="comment">/* ARM_VALID -&gt; ARMED</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">                                 * NONE -&gt; ARMED</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">                                 *</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">                                 * ARM_INVALID -&gt; Stay here</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">                                 *</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">                                 * Anything else -&gt; SAFETY</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">                                 */</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) ||</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576">STATUS_NORMAL</a>)) {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMED);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a>) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                        <span class="comment">/* TODO: could consider having a maximum</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">                                         * time before we go to safety */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMED:</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                <span class="comment">/* &quot;DISARM&quot; -&gt; SAFETY (lower layer&#39;s job to check</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">                                 *      DisarmTime)</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">                                 */</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                <span class="keywordflow">if</span> (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a3d6963298db6408617fbf998745be6d4">STATUS_DISARM</a>) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                FlightStatusArmedOptions armed, prev_armed;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) ||</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24">STATUS_TOGGLE_ARM</a>)) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMING);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a97207f3457ed3b04ca92ff55d1aec3d6">STATUS_DISCONNECTED</a>) ||</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032">STATUS_INVALID_FOR_DISARMED</a>)) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                ManualControlSettingsArmTimeOptions arm_enum;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                ManualControlSettingsArmTimeGet(&amp;arm_enum);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                arm_time = (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_250) ? 250 :</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_500) ? 500 :</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_1000) ? 1000 :</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                        (arm_enum == MANUALCONTROLSETTINGS_ARMTIME_2000) ? 2000 : 1000;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMING:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                <span class="comment">/* Anything !&quot;ARM_*&quot; -&gt; SAFETY</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">                                 *</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">                                 * state_time &gt; ArmTime + ARM_INVALID -&gt; HOLDING</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">                                 * state_time &gt; ArmTime + ARM_VALID -&gt; ARMED</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">                                 */</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                <span class="keywordflow">if</span> ((status != <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a>) &amp;&amp;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                                (status != <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) &amp;&amp;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                (status != <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24">STATUS_TOGGLE_ARM</a>)) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___thread.html#gae9bea383f568e575d7d7c2d3da855831">PIOS_Thread_Period_Elapsed</a>(arm_state_time, arm_time)) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                        <span class="keywordflow">if</span> (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                                <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMED);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                                <span class="comment">/* Must be STATUS_ARM_INVALID</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">                                                 * or STATUS_TOGGLE_ARM */</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                                <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_HOLDING);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_HOLDING:</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                <span class="comment">/* ARM_VALID -&gt; ARMED</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">                                 * NONE -&gt; ARMED</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">                                 *</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">                                 * ARM_INVALID -&gt; Stay here</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">                                 *</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">                                 * Anything else -&gt; SAFETY</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">                                 */</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a>) ||</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576">STATUS_NORMAL</a>)) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_ARMED);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a>) ||</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                                (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24">STATUS_TOGGLE_ARM</a>)) {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                        <span class="comment">/* TODO: could consider having a maximum</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">                                         * time before we go to safety */</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMED:</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="comment">/* &quot;DISARM&quot; -&gt; SAFETY (lower layer&#39;s job to check</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">                                 *      DisarmTime)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">                                 */</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                <span class="keywordflow">if</span> (status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a3d6963298db6408617fbf998745be6d4">STATUS_DISARM</a> ||</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                                status == <a class="code" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24">STATUS_TOGGLE_ARM</a>) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                        <a class="code" href="manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f">GO_STATE</a>(ARM_STATE_SAFETY);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                }</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                FlightStatusArmedGet(&amp;prev_armed);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="keywordflow">switch</span> (arm_state) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_SAFETY:</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_DISARMED:</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                armed = FLIGHTSTATUS_ARMED_DISARMED;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                <a class="code" href="group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc">vehicle_is_armed</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMING:</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                armed = FLIGHTSTATUS_ARMED_ARMING;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_HOLDING:</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                <span class="comment">/* For now consider &quot;HOLDING&quot; an armed state,</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">                                 * like old code does.  (Necessary to get the</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">                                 * &quot;initial spin while armed&quot; that causes user</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">                                 * to release arming position).</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">                                 *</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">                                 * TODO: do something different because</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">                                 * control position invalid.</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">                                 */</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMED:</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                armed = FLIGHTSTATUS_ARMED_ARMED;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                <a class="code" href="group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc">vehicle_is_armed</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">if</span> (armed != prev_armed) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                        FlightStatusArmedSet(&amp;armed);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="comment">// Wait until next update</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <a class="code" href="group___p_i_o_s___r_c_v_r.html#ga659833988d07724d3dfeff4929f423b4">PIOS_RCVR_WaitActivity</a>(<a class="code" href="group___control.html#ga4e8e7d6fdd1f5c6f8a0f341e4b61f025">UPDATE_PERIOD_MS</a>);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <a class="code" href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a>(<a class="code" href="group___p_i_o_s___w_d_g.html#gae4ef7bf1e30f15798fd614ed0c7ba5fd">PIOS_WDG_MANUAL</a>);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">  348</a></span>&#160;<span class="keyword">static</span> FlightStatusControlSourceOptions <a class="code" href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">control_source_select</a>()</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="comment">// If the geofence controller is triggered, it takes precendence</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">// over even transmitter or failsafe. This means this must be</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// EXTREMELY robust. The current behavior of geofence is simply</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">// to shut off the motors.</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a>()) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_GEOFENCE;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        ManualControlCommandData <a class="code" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        ManualControlCommandGet(&amp;cmd);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">if</span> (cmd.Connected != MANUALCONTROLCOMMAND_CONNECTED_TRUE) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_FAILSAFE;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group___control.html#ga71762ca401b9c08895878db9731fde77">transmitter_control_get_flight_mode</a>() ==</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                   MANUALCONTROLSETTINGS_FLIGHTMODEPOSITION_TABLETCONTROL) {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_TABLET;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_TRANSMITTER;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
-<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">  374</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="comment">// read alarms</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        SystemAlarmsData alarms;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        SystemAlarmsGet(&amp;alarms);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="comment">// Check each alarm</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; SYSTEMALARMS_ALARM_NUMELEM; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">if</span> (alarms.Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] &gt;= SYSTEMALARMS_ALARM_ERROR &amp;&amp;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                        <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> != SYSTEMALARMS_ALARM_GPS &amp;&amp;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                        <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> != SYSTEMALARMS_ALARM_TELEMETRY)</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        uint8_t flight_mode;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        FlightStatusFlightModeGet(&amp;flight_mode);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">if</span> (flight_mode == FLIGHTSTATUS_FLIGHTMODE_FAILSAFE) {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                <span class="comment">/* Separately mask FAILSAFE arming here. */</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                FlightStatusArmedOptions armed, prev_armed;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                FlightStatusArmedGet(&amp;prev_armed);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">switch</span> (arm_state) {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_SAFETY:</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_DISARMED:</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                armed = FLIGHTSTATUS_ARMED_DISARMED;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                <a class="code" href="group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc">vehicle_is_armed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMING:</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                armed = FLIGHTSTATUS_ARMED_ARMING;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_HOLDING:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                <span class="comment">/* For now consider &quot;HOLDING&quot; an armed state,</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">                                 * like old code does.  (Necessary to get the</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">                                 * &quot;initial spin while armed&quot; that causes user</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">                                 * to release arming position).</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">                                 *</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">                                 * TODO: do something different because</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">                                 * control position invalid.</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">                                 */</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                        <span class="keywordflow">case</span> ARM_STATE_ARMED:</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                armed = FLIGHTSTATUS_ARMED_ARMED;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                <a class="code" href="group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc">vehicle_is_armed</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <span class="keywordflow">if</span> (armed != prev_armed) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                        FlightStatusArmedSet(&amp;armed);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="comment">// Wait until next update</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <a class="code" href="group___p_i_o_s___r_c_v_r.html#ga659833988d07724d3dfeff4929f423b4">PIOS_RCVR_WaitActivity</a>(<a class="code" href="group___control.html#ga4e8e7d6fdd1f5c6f8a0f341e4b61f025">UPDATE_PERIOD_MS</a>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <a class="code" href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a>(<a class="code" href="group___p_i_o_s___w_d_g.html#gae4ef7bf1e30f15798fd614ed0c7ba5fd">PIOS_WDG_MANUAL</a>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">  353</a></span>&#160;<span class="keyword">static</span> FlightStatusControlSourceOptions <a class="code" href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">control_source_select</a>()</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="comment">// If the geofence controller is triggered, it takes precendence</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment">// over even transmitter or failsafe. This means this must be</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">// EXTREMELY robust. The current behavior of geofence is simply</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// to shut off the motors.</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___control.html#gab11b6b0e72d25d30100b761741913f8c">geofence_control_activate</a>()) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_GEOFENCE;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        ManualControlCommandData <a class="code" href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        ManualControlCommandGet(&amp;cmd);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">if</span> (cmd.Connected != MANUALCONTROLCOMMAND_CONNECTED_TRUE) {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_FAILSAFE;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group___control.html#ga71762ca401b9c08895878db9731fde77">transmitter_control_get_flight_mode</a>() ==</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                   MANUALCONTROLSETTINGS_FLIGHTMODEPOSITION_TABLETCONTROL) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_TABLET;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">return</span> FLIGHTSTATUS_CONTROLSOURCE_TRANSMITTER;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">  379</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="comment">// read alarms</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        SystemAlarmsData alarms;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        SystemAlarmsGet(&amp;alarms);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="comment">// Check each alarm</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; SYSTEMALARMS_ALARM_NUMELEM; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                <span class="keywordflow">if</span> (alarms.Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] &gt;= SYSTEMALARMS_ALARM_ERROR &amp;&amp;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> != SYSTEMALARMS_ALARM_GPS &amp;&amp;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> != SYSTEMALARMS_ALARM_TELEMETRY)</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        uint8_t flight_mode;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        FlightStatusFlightModeGet(&amp;flight_mode);</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">if</span> (flight_mode == FLIGHTSTATUS_FLIGHTMODE_FAILSAFE) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <span class="comment">/* Separately mask FAILSAFE arming here. */</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
 <div class="ttc" id="tablet__control_8h_html"><div class="ttname"><a href="tablet__control_8h.html">tablet_control.h</a></div><div class="ttdoc">Use tablet for control source. </div></div>
 <div class="ttc" id="group___control_html_ga7323ef978c5860ebcd1fa329831ae0f9"><div class="ttname"><a href="group___control.html#ga7323ef978c5860ebcd1fa329831ae0f9">manualControlTask</a></div><div class="ttdeci">static void manualControlTask(void *parameters)</div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00112">manualcontrol.c:112</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_gaf10c64545c5d65a1426957c432aaadb3"><div class="ttname"><a href="group___p_i_o_s___thread.html#gaf10c64545c5d65a1426957c432aaadb3">PIOS_Thread_Systime</a></div><div class="ttdeci">uint32_t PIOS_Thread_Systime(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00101">pios_thread.c:101</a></div></div>
@@ -478,7 +483,7 @@ $(document).ready(function(){initNavTree('manualcontrol_8c_source.html','');});
 <div class="ttc" id="group___control_html_ga609241269d4ab4f2d3f9842c3a03f6bc"><div class="ttname"><a href="group___control.html#ga609241269d4ab4f2d3f9842c3a03f6bc">vehicle_is_armed</a></div><div class="ttdeci">bool vehicle_is_armed</div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00071">manualcontrol.c:71</a></div></div>
 <div class="ttc" id="group___control_html_gad1912458768a13e3fee44acb5992f1d0"><div class="ttname"><a href="group___control.html#gad1912458768a13e3fee44acb5992f1d0">failsafe_control_select</a></div><div class="ttdeci">int32_t failsafe_control_select(bool reset_controller)</div><div class="ttdoc">Use failsafe mode. </div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00061">failsafe_control.c:61</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga181128f13ffdec27ea07e13fc4a4e1ab"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga181128f13ffdec27ea07e13fc4a4e1ab">PIOS_WDG_RegisterFlag</a></div><div class="ttdeci">bool PIOS_WDG_RegisterFlag(uint16_t flag_requested)</div><div class="ttdoc">Register a module against the watchdog. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00082">pios_wdg.c:82</a></div></div>
-<div class="ttc" id="group___control_html_gab4d9e85efcf5f9dafe0083f8599dfcf9"><div class="ttname"><a href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a></div><div class="ttdeci">bool ok_to_arm(void)</div><div class="ttdoc">Determine if the aircraft is safe to arm based on alarms. </div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00374">manualcontrol.c:374</a></div></div>
+<div class="ttc" id="group___control_html_gab4d9e85efcf5f9dafe0083f8599dfcf9"><div class="ttname"><a href="group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9">ok_to_arm</a></div><div class="ttdeci">bool ok_to_arm(void)</div><div class="ttdoc">Determine if the aircraft is safe to arm based on alarms. </div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00379">manualcontrol.c:379</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga4698d93015624e320b5c7c980c4edecd"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a></div><div class="ttdeci">bool PIOS_WDG_UpdateFlag(uint16_t flag)</div><div class="ttdoc">Function called by modules to indicate they are still running. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00098">pios_wdg.c:98</a></div></div>
 <div class="ttc" id="group___control_html_ga0bee0c81342526c03f10559cf6dbda72"><div class="ttname"><a href="group___control.html#ga0bee0c81342526c03f10559cf6dbda72">tablet_control_update</a></div><div class="ttdeci">int32_t tablet_control_update()</div><div class="ttdoc">Process updates for the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00067">tablet_control.c:67</a></div></div>
 <div class="ttc" id="group___control_html_ga6ffb050d1f10ab7aa441ce65629e26bd"><div class="ttname"><a href="group___control.html#ga6ffb050d1f10ab7aa441ce65629e26bd">transmitter_control_select</a></div><div class="ttdeci">int32_t transmitter_control_select(bool reset_controller)</div><div class="ttdoc">Select and use transmitter control. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00534">transmitter_control.c:534</a></div></div>
@@ -506,16 +511,17 @@ $(document).ready(function(){initNavTree('manualcontrol_8c_source.html','');});
 <div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a97207f3457ed3b04ca92ff55d1aec3d6"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a97207f3457ed3b04ca92ff55d1aec3d6">STATUS_DISCONNECTED</a></div><div class="ttdoc">RX is disconnected. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00034">control.h:34</a></div></div>
 <div class="ttc" id="group___control_html_ga16a2fa9b05e1778d508450239854bdef"><div class="ttname"><a href="group___control.html#ga16a2fa9b05e1778d508450239854bdef">tablet_control_initialize</a></div><div class="ttdeci">int32_t tablet_control_initialize()</div><div class="ttdoc">Initialize the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00058">tablet_control.c:58</a></div></div>
 <div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576">STATUS_NORMAL</a></div><div class="ttdoc">Things are &quot;normal&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00040">control.h:40</a></div></div>
-<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a></div><div class="ttdoc">User requested arm, controls in valid pos. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00042">control.h:42</a></div></div>
+<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15">STATUS_ARM_VALID</a></div><div class="ttdoc">User requested arm, controls in valid pos. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00043">control.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ga659833988d07724d3dfeff4929f423b4"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ga659833988d07724d3dfeff4929f423b4">PIOS_RCVR_WaitActivity</a></div><div class="ttdeci">bool PIOS_RCVR_WaitActivity(uint32_t timeout_ms)</div></div>
 <div class="ttc" id="group___control_html_ga82dd0a9ae27bdb2c3cdd33bb7804861c"><div class="ttname"><a href="group___control.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c">TASK_PRIORITY</a></div><div class="ttdeci">#define TASK_PRIORITY</div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00061">manualcontrol.c:61</a></div></div>
 <div class="ttc" id="group___control_html_gad28dba2f07e1f4fe872ccf01941c3c84"><div class="ttname"><a href="group___control.html#gad28dba2f07e1f4fe872ccf01941c3c84">transmitter_control_update</a></div><div class="ttdeci">int32_t transmitter_control_update()</div><div class="ttdoc">Process inputs and arming. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00261">transmitter_control.c:261</a></div></div>
 <div class="ttc" id="control_8h_html"><div class="ttname"><a href="control_8h.html">control.h</a></div></div>
-<div class="ttc" id="group___control_html_ga5e0cfaff8777cef85564c6db20469bf9"><div class="ttname"><a href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">control_source_select</a></div><div class="ttdeci">static FlightStatusControlSourceOptions control_source_select()</div><div class="ttdoc">control_source_select Determine which sub-module to use for the main control source of the flight con...</div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00348">manualcontrol.c:348</a></div></div>
+<div class="ttc" id="group___control_html_ga5e0cfaff8777cef85564c6db20469bf9"><div class="ttname"><a href="group___control.html#ga5e0cfaff8777cef85564c6db20469bf9">control_source_select</a></div><div class="ttdeci">static FlightStatusControlSourceOptions control_source_select()</div><div class="ttdoc">control_source_select Determine which sub-module to use for the main control source of the flight con...</div><div class="ttdef"><b>Definition:</b> <a href="manualcontrol_8c_source.html#l00353">manualcontrol.c:353</a></div></div>
 <div class="ttc" id="group___control_html_ga7ce4be6cb90b629500ec2db534d375f6"><div class="ttname"><a href="group___control.html#ga7ce4be6cb90b629500ec2db534d375f6">failsafe_control_initialize</a></div><div class="ttdeci">int32_t failsafe_control_initialize()</div><div class="ttdoc">Initialize the failsafe controller. </div><div class="ttdef"><b>Definition:</b> <a href="failsafe__control_8c_source.html#l00045">failsafe_control.c:45</a></div></div>
-<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a></div><div class="ttdoc">User requested arm, controls in invalid pos. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00041">control.h:41</a></div></div>
+<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5">STATUS_ARM_INVALID</a></div><div class="ttdoc">User requested arm, controls in invalid pos. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00042">control.h:42</a></div></div>
 <div class="ttc" id="group___control_html_ga27653bb9e2abe9498b31e9f748f158d8"><div class="ttname"><a href="group___control.html#ga27653bb9e2abe9498b31e9f748f158d8">transmitter_control_initialize</a></div><div class="ttdeci">int32_t transmitter_control_initialize()</div><div class="ttdoc">Initialize the transmitter control mode. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00145">transmitter_control.c:145</a></div></div>
-<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032">STATUS_INVALID_FOR_DISARMED</a></div><div class="ttdoc">Arming switch is in a state that doesn&#39;t. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00045">control.h:45</a></div></div>
+<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032">STATUS_INVALID_FOR_DISARMED</a></div><div class="ttdoc">Arming switch is in a state that doesn&#39;t. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00046">control.h:46</a></div></div>
+<div class="ttc" id="group___control_html_gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24"><div class="ttname"><a href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24">STATUS_TOGGLE_ARM</a></div><div class="ttdoc">For corners. Request we be the &quot;opposite&quot; mode. </div><div class="ttdef"><b>Definition:</b> <a href="control_8h_source.html#l00041">control.h:41</a></div></div>
 <div class="ttc" id="group___control_html_gadcdf61257c4d3943828d4681ff0d78f6"><div class="ttname"><a href="group___control.html#gadcdf61257c4d3943828d4681ff0d78f6">cmd</a></div><div class="ttdeci">static ManualControlCommandData cmd</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00093">transmitter_control.c:93</a></div></div>
 <div class="ttc" id="group___control_html_ga71762ca401b9c08895878db9731fde77"><div class="ttname"><a href="group___control.html#ga71762ca401b9c08895878db9731fde77">transmitter_control_get_flight_mode</a></div><div class="ttdeci">uint8_t transmitter_control_get_flight_mode()</div><div class="ttdoc">Query what the flight mode would be if this is selected. </div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00590">transmitter_control.c:590</a></div></div>
 <div class="ttc" id="group___control_html_ga72ecc808e52960fdd4fc2fe42bf5f633"><div class="ttname"><a href="group___control.html#ga72ecc808e52960fdd4fc2fe42bf5f633">tablet_control_select</a></div><div class="ttdeci">int32_t tablet_control_select(bool reset_controller)</div><div class="ttdoc">Use the values for the tablet controller. </div><div class="ttdef"><b>Definition:</b> <a href="tablet__control_8c_source.html#l00079">tablet_control.c:79</a></div></div>

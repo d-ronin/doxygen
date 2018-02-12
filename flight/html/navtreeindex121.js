@@ -1,5 +1,7 @@
 var NAVTREEINDEX121 =
 {
+"struct_object_event_entry.html#a999fe73dad2faa0ca431839fa067b635":[2,2,1,3,1],
+"struct_object_event_entry.html#ad54d4661559ed5ab21227ee2e4cb97db":[2,2,1,3,2],
 "struct_object_event_entry.html#af10cb19d61193416975d2cb2c78bf620":[2,2,1,3,5],
 "struct_object_event_entry_throttled.html":[2,2,1,4],
 "struct_object_event_entry_throttled.html#a55b4d6b43b204db478e2165a94fd02b2":[2,2,1,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "struct_w_m_mtype___geo_magnetic_elements.html#af97c7b8926ffd4d694c4292916c2c153":[2,1,28,2],
 "struct_w_m_mtype___legendre_function.html":[2,1,25],
 "struct_w_m_mtype___legendre_function.html#a3059147ef5db575cff502086ffd6181e":[2,1,25,1],
-"struct_w_m_mtype___legendre_function.html#a8f1880bdef934eee3bd52155cd214343":[2,1,25,0],
-"struct_w_m_mtype___magnetic_model.html":[2,1,20],
-"struct_w_m_mtype___magnetic_model.html#a49af71fa7bdc1e238de0f59b941ab70c":[2,1,20,0]
+"struct_w_m_mtype___legendre_function.html#a8f1880bdef934eee3bd52155cd214343":[2,1,25,0]
 };

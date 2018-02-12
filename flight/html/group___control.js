@@ -38,6 +38,7 @@ var group___control =
       [ "STATUS_SAFETYTIMEOUT", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a19b41f016f92677af9a541576339f01b", null ],
       [ "STATUS_DISARM", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a3d6963298db6408617fbf998745be6d4", null ],
       [ "STATUS_NORMAL", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576", null ],
+      [ "STATUS_TOGGLE_ARM", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5dcc4baf651930145b7821233c237d24", null ],
       [ "STATUS_ARM_INVALID", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a5bf9d2aba2005cab35223edf74eb74b5", null ],
       [ "STATUS_ARM_VALID", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15", null ],
       [ "STATUS_INVALID_FOR_DISARMED", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032", null ]

@@ -1,5 +1,7 @@
 var NAVTREEINDEX125 =
 {
+"structpios__hmc5883__cfg.html#a236d1b5f3c3858bc2edd263841c37ace":[2,0,18,1,3],
+"structpios__hmc5883__cfg.html#a64d1f9c61e0c29527e1b4b53e357fca8":[2,0,18,1,0],
 "structpios__hmc5883__cfg.html#a82fb6708784acace10b4f5c5a9c8e23e":[2,0,18,1,2],
 "structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612":[2,0,18,1,1],
 "structpios__hmc5883__cfg.html#ab04e80aeca39b18767e5e6cbe1f39654":[2,0,18,1,4],
@@ -83,8 +85,8 @@ var NAVTREEINDEX125 =
 "structpios__rcvr__driver.html#af8311763de593fff9c2ea958b5258305":[2,0,59,2,1],
 "structpios__re1fpga__cfg.html":[2,6,4,8],
 "structpios__re1fpga__cfg.html":[2,5,2,8],
-"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,5,2,8,1],
 "structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,6,4,8,1],
+"structpios__re1fpga__cfg.html#a16a14f03c9b2a8236f095deafb11b0b4":[2,5,2,8,1],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,5,2,8,3],
 "structpios__re1fpga__cfg.html#a473e1443aaac0b9aa2e72f87c975ee7d":[2,6,4,8,3],
 "structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a":[2,6,4,8,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX125 =
 "structpios__usb__cfg.html":[2,0,66,2],
 "structpios__usb__cfg.html#a5a77bb8822ce4859959d3692f3ca165a":[2,0,66,2,2],
 "structpios__usb__cfg.html#a9fbf346e4e1e462a23bb099f5de704a8":[2,0,66,2,0],
-"structpios__usb__cfg.html#acf35c94952c92310b680586289e5b5b0":[2,0,66,2,1],
-"structpios__usb__hid__cfg.html":[2,0,68,3],
-"structpios__usb__hid__cfg.html#a700e6e6591adae231e06b05411cb321b":[2,0,68,3,2]
+"structpios__usb__cfg.html#acf35c94952c92310b680586289e5b5b0":[2,0,66,2,1]
 };

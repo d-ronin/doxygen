@@ -1,5 +1,7 @@
 var NAVTREEINDEX122 =
 {
+"struct_w_m_mtype___magnetic_model.html":[2,1,20],
+"struct_w_m_mtype___magnetic_model.html#a49af71fa7bdc1e238de0f59b941ab70c":[2,1,20,0],
 "struct_w_m_mtype___magnetic_model.html#a75df8ef8af2f06cf375592712bb491d0":[2,1,20,3],
 "struct_w_m_mtype___magnetic_model.html#a957006fac5ca68a6c677f6f09d0c05b4":[2,1,20,2],
 "struct_w_m_mtype___magnetic_model.html#ad87a370d713ab72ff5ca801d1a3a2d4c":[2,1,20,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX122 =
 "structhott__esc__message.html#adb282892fdf969567ca968101c80be66":[2,4,30,8,9],
 "structhott__esc__message.html#add4b2ae269328a20703ba4fecc582309":[2,4,30,8,13],
 "structhott__esc__message.html#ae8ffa4116d5e352e06bbc7123537110d":[2,4,30,8,2],
-"structhott__esc__message.html#af6c62320110c16e065201b5e858093c6":[2,4,30,8,0],
-"structhott__esc__message.html#af7ebf8d6955cd065962308e5cee3ab2c":[2,4,30,8,3],
-"structhott__esc__message.html#af96baac89e573557821159eda40a85ac":[2,4,30,8,14]
+"structhott__esc__message.html#af6c62320110c16e065201b5e858093c6":[2,4,30,8,0]
 };

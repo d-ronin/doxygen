@@ -1,5 +1,7 @@
 var NAVTREEINDEX113 =
 {
+"playuavosd_2fw_2splash_8h.html#gaee29d3f9d3eaa4058199a5758ac440b7":[5,0,0,5,12,2,3,6],
+"playuavosd_2fw_2splash_8h.html#gaf86e444fa138139729d7f5a796d53db0":[5,0,0,5,12,2,3,4],
 "playuavosd_2fw_2splash_8h.html#gaf91f874eb9a22f0bdd58907fca9a9c8c":[5,0,0,5,12,2,3,5],
 "playuavosd_2fw_2splash_8h_source.html":[5,0,0,5,12,2,3],
 "polarst_8c.html":[5,0,0,1,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX113 =
 "quanton_2board-info_2board__hw__defs_8c.html#ga15c536f8b4345ec80bda11df036c165f":[5,0,0,5,13,1,0,8],
 "quanton_2board-info_2board__hw__defs_8c.html#ga1b914f100d3601810dea75526ed3434f":[5,0,0,5,13,1,0,15],
 "quanton_2board-info_2board__hw__defs_8c.html#ga2af7aee2d6120337db88c160c8c91c03":[5,0,0,5,13,1,0,14],
-"quanton_2board-info_2board__hw__defs_8c.html#ga31bbd3d88fb4228b85462211fd70a60c":[5,0,0,5,13,1,0,12],
-"quanton_2board-info_2board__hw__defs_8c.html#ga561d73b2d409f10c4957d3e7d6025721":[5,0,0,5,13,1,0,0],
-"quanton_2board-info_2board__hw__defs_8c.html#ga6b142cb12de118cee37c8b497d3a1909":[5,0,0,5,13,1,0,5]
+"quanton_2board-info_2board__hw__defs_8c.html#ga31bbd3d88fb4228b85462211fd70a60c":[5,0,0,5,13,1,0,12]
 };

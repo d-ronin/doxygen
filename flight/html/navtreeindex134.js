@@ -1,5 +1,7 @@
 var NAVTREEINDEX134 =
 {
+"telemetry_8c.html#ga079a96905407622d10643ce69c08b288":[5,0,0,3,25,0,21],
+"telemetry_8c.html#ga0c5976eea2f526e6206fd4b5bd3aa2cf":[5,0,0,3,25,0,9],
 "telemetry_8c.html#ga251dc0181b1a02544cdee5e599bfc240":[5,0,0,3,25,0,31],
 "telemetry_8c.html#ga296e6e5598ee7c5f58ad3eee20f02261":[5,0,0,3,25,0,38],
 "telemetry_8c.html#ga2aba27698bc3988dddaaaf3b77c4281d":[5,0,0,3,25,0,32],
@@ -247,7 +249,5 @@ var NAVTREEINDEX134 =
 "uavobjectmanager_8c.html#ga4b0485179787b019d9da516583780bdf":[5,0,0,7,1,16],
 "uavobjectmanager_8c.html#ga4d5c4b56acbb2e636aa006ac36d943e5":[5,0,0,7,1,21],
 "uavobjectmanager_8c.html#ga527cdae54acb8f3a91c9a42d00a1875f":[5,0,0,7,1,10],
-"uavobjectmanager_8c.html#ga52c0794e99c2ae401c5ed7f25a67e51a":[5,0,0,7,1,62],
-"uavobjectmanager_8c.html#ga532ccb2e759fca49c89e425b872eed1c":[5,0,0,7,1,44],
-"uavobjectmanager_8c.html#ga54607c2130bc133553b18ece1c4d1540":[5,0,0,7,1,76]
+"uavobjectmanager_8c.html#ga52c0794e99c2ae401c5ed7f25a67e51a":[5,0,0,7,1,62]
 };

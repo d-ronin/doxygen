@@ -1,5 +1,7 @@
 var NAVTREEINDEX94 =
 {
+"insgps14state_8c.html#ga1e937c74de694acd09ca8502f8ba85c4":[5,0,0,1,10,17],
+"insgps14state_8c.html#ga1f6f1a6d23515368ba94d67a3c34c8b4":[5,0,0,1,10,16],
 "insgps14state_8c.html#ga33be75afa533a464a8571e241a6caa10":[5,0,0,1,10,23],
 "insgps14state_8c.html#ga37848fdaaf6ee155638ba5bb1521fffe":[5,0,0,1,10,10],
 "insgps14state_8c.html#ga3fe918c2170203272e71960c340ba560":[5,0,0,1,10,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX94 =
 "lux_2bl_2pios__board_8c.html":[5,0,0,5,8,0,0],
 "lux_2bl_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,5,8,0,0,1],
 "lux_2bl_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,5,8,0,0,0],
-"lux_2bl_2pios__board_8c_source.html":[5,0,0,5,8,0,0],
-"lux_2board-info_2board__hw__defs_8c.html":[5,0,0,5,8,1,0],
-"lux_2board-info_2board__hw__defs_8c.html#ga0b6f7586d1c7a594c67b267ae2a52e76":[5,0,0,5,8,1,0,8]
+"lux_2bl_2pios__board_8c_source.html":[5,0,0,5,8,0,0]
 };

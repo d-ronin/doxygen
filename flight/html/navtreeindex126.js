@@ -1,5 +1,7 @@
 var NAVTREEINDEX126 =
 {
+"structpios__usb__hid__cfg.html":[2,0,68,3],
+"structpios__usb__hid__cfg.html#a700e6e6591adae231e06b05411cb321b":[2,0,68,3,2],
 "structpios__usb__hid__cfg.html#a9e2b92a09aa1fefba09f5668d00e2ef7":[2,0,68,3,1],
 "structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a":[2,0,68,3,0],
 "structpios__usb__ifops.html":[2,0,71,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX126 =
 "systemmod_8c.html#ga95b476fa87e188a38b66aeaa8538a8c0":[5,0,0,3,24,2,10],
 "systemmod_8c.html#ga97fd430f36f8b065226e2bff9bad1de5":[5,0,0,3,24,2,31],
 "systemmod_8c.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,3,24,2,1],
-"systemmod_8c.html#gaa366f3eeb13d209096207266c4bb5c27":[5,0,0,3,24,2,17],
-"systemmod_8c.html#gaa926a99228262150f436a4011b9c0bfb":[5,0,0,3,24,2,20],
-"systemmod_8c.html#gaafb885b70725c5de065dd0dde77c5284":[5,0,0,3,24,2,40]
+"systemmod_8c.html#gaa366f3eeb13d209096207266c4bb5c27":[5,0,0,3,24,2,17]
 };
