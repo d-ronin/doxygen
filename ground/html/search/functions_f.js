@@ -16,6 +16,7 @@ var searchData=
   ['omnibusf3',['OmnibusF3',['../group___boards__d_ronin.html#gaa227879acfa06faad7573f0ff8009e53',1,'OmnibusF3']]],
   ['onautopilotconnect',['onAutopilotConnect',['../group___config_plugin.html#ga4f8e913d92b646252bb6d82dfd028c52',1,'ConfigGadgetWidget::onAutopilotConnect()'],['../group___u_a_v_object_widget_utils.html#gaf5b2ddc9de02820e89c8133f5625607d',1,'ConfigTaskWidget::onAutopilotConnect()']]],
   ['onautopilotdisconnect',['onAutopilotDisconnect',['../group___config_plugin.html#gaa57c964c58914d045daa972b9a1b87ce',1,'ConfigGadgetWidget::onAutopilotDisconnect()'],['../group___u_a_v_object_widget_utils.html#ga306b82fa3b114ce5c336dfda60ae479d',1,'ConfigTaskWidget::onAutopilotDisconnect()']]],
+  ['onboardrgbleds',['onBoardRgbLeds',['../class_seppuku.html#ae5ff59027cbd5d6cf14aec6486fc1e8f',1,'Seppuku::onBoardRgbLeds()'],['../group___core_plugin.html#gad756e71b79e52cd7aaf1b5698f5a2876',1,'Core::IBoardType::onBoardRgbLeds()']]],
   ['oncurrentpositionchanged',['OnCurrentPositionChanged',['../group___t_l_map_widget.html#ga2491a90fa3143792bc6f14153750d5d2',1,'internals::Core::OnCurrentPositionChanged()'],['../group___t_l_map_widget.html#ga6c4641bff16c343b2edf9e0e88f6bb47',1,'mapcontrol::TLMapWidget::OnCurrentPositionChanged()']]],
   ['ondeviceconnect',['onDeviceConnect',['../group___u_a_v_talk_plugin.html#ga496d6211736a7cfd5cee129eb2b8ad95',1,'UAVTalkPlugin']]],
   ['ondeviceconnected',['onDeviceConnected',['../group___raw_h_i_d_plugin.html#gae6fbe6bf878bf78034b81d648fd25edb',1,'RawHIDConnection']]],

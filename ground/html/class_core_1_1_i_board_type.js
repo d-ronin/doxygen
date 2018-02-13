@@ -62,6 +62,7 @@ var class_core_1_1_i_board_type =
     [ "isInputConfigurationSupported", "group___core_plugin.html#ga5b20cc6b2703da7094c9165e7659cb6f", null ],
     [ "isUSBSupported", "group___core_plugin.html#gab83a82cdcbbecdb300e944b744a94729", null ],
     [ "minBootLoaderVersion", "group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129", null ],
+    [ "onBoardRgbLeds", "group___core_plugin.html#gad756e71b79e52cd7aaf1b5698f5a2876", null ],
     [ "queryCapabilities", "group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722", null ],
     [ "queryChannelBanks", "group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378", null ],
     [ "queryMaxGyroRate", "group___core_plugin.html#ga36d6cb7f9e73a7a25fd355c78f0861d4", null ],

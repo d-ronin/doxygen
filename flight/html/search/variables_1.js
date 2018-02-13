@@ -92,7 +92,7 @@ var searchData=
   ['arena_5fstate_5freserved',['ARENA_STATE_RESERVED',['../pios__flashfs__logfs_8c.html#aabdc541dd3e5f12f28b610b773ea867a',1,'pios_flashfs_logfs.c']]],
   ['args',['args',['../namespacepx__mkfw.html#aef3e1f2be0a40ecf2ff3d71c72e84a56',1,'px_mkfw.args()'],['../namespacepx__uploader.html#a2a73048aed4fc37b1cbe425e2bbd932c',1,'px_uploader.args()']]],
   ['arm_5fcount',['arm_count',['../structmsp__misc.html#ab9f524ef58ed0b6719122f49410605c9',1,'msp_misc::arm_count()'],['../structmsp__set__misc.html#a777483f102218ef424c3e4d3aee66b22',1,'msp_set_misc::arm_count()'],['../msp__messages_8h.html#a7d2106b467fd438acfd170b1b2cc33d3',1,'arm_count():&#160;msp_messages.h']]],
-  ['arm_5fstatus',['arm_status',['../structtelemetry__t.html#ac9f8ef6b4d9e6ec6b3cc2c53ec9e50fa',1,'telemetry_t']]],
+  ['arm_5fstatus',['arm_status',['../structtelemetry__t.html#aabc391d405b81debb520bfa983f961e3',1,'telemetry_t']]],
   ['armed_5fwhen_5fenabled',['armed_when_enabled',['../group___control.html#ga0cfffeff625e66d5b08d5fdf3dfae137',1,'failsafe_control.c']]],
   ['arming_5fcount',['arming_count',['../structcomplementary__filter__state.html#a25592bc35eb34062d082854dd0dbce44',1,'complementary_filter_state']]],
   ['ascii',['ascii',['../structhott__vario__message.html#ac5e9c9732a13a0e273e44f914d23d7cc',1,'hott_vario_message']]],

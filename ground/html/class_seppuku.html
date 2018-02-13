@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6c51f65</span>
+   &#160;<span id="projectnumber">020e58f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga7a566203911561395eeb5428344781dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards__d_ronin.html#ga7a566203911561395eeb5428344781dd">hasAnnunciator</a> (<a class="el" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc)</td></tr>
 <tr class="memdesc:ga7a566203911561395eeb5428344781dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board has the given type of annunciator.  <a href="group___boards__d_ronin.html#ga7a566203911561395eeb5428344781dd">More...</a><br/></td></tr>
 <tr class="separator:ga7a566203911561395eeb5428344781dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ff59027cbd5d6cf14aec6486fc1e8f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_seppuku.html#ae5ff59027cbd5d6cf14aec6486fc1e8f">onBoardRgbLeds</a> () const override</td></tr>
+<tr class="memdesc:ae5ff59027cbd5d6cf14aec6486fc1e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of RGB LEDs located on the board The first n LEDs in the chain will apply to on-board LEDs rather than external ones.  <a href="#ae5ff59027cbd5d6cf14aec6486fc1e8f">More...</a><br/></td></tr>
+<tr class="separator:ae5ff59027cbd5d6cf14aec6486fc1e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_core_1_1_i_board_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_core_1_1_i_board_type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_core_1_1_i_board_type.html">Core::IBoardType</a></td></tr>
 <tr class="memitem:gad0bc906965e0aff34de8fb8efe21c378 inherit pub_methods_class_core_1_1_i_board_type"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">queryChannelBanks</a> ()</td></tr>
 <tr class="memdesc:gad0bc906965e0aff34de8fb8efe21c378 inherit pub_methods_class_core_1_1_i_board_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query number &amp; names of output PWM channels banks on the board.  <a href="group___core_plugin.html#gad0bc906965e0aff34de8fb8efe21c378">More...</a><br/></td></tr>
@@ -279,7 +282,38 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="seppuku_8h_source.html#l00036">36</a> of file <a class="el" href="seppuku_8h_source.html">seppuku.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae5ff59027cbd5d6cf14aec6486fc1e8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Seppuku::onBoardRgbLeds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of RGB LEDs located on the board The first n LEDs in the chain will apply to on-board LEDs rather than external ones. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of RGB LEDs on the PCB </dd></dl>
+
+<p>Reimplemented from <a class="el" href="group___core_plugin.html#gad756e71b79e52cd7aaf1b5698f5a2876">Core::IBoardType</a>.</p>
+
+<p>Definition at line <a class="el" href="seppuku_8h_source.html#l00055">55</a> of file <a class="el" href="seppuku_8h_source.html">seppuku.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>ground/gcs/src/plugins/boards_dronin/<a class="el" href="seppuku_8h_source.html">seppuku.h</a></li>
 <li>ground/gcs/src/plugins/boards_dronin/<a class="el" href="seppuku_8cpp_source.html">seppuku.cpp</a></li>
 </ul>

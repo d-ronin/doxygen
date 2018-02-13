@@ -160,7 +160,7 @@ var searchData=
   ['matfile',['matfile',['../_o_p_plots_8m.html#aba69459d5095ae56cf63e6a66b89648b',1,'matfile():&#160;OPPlots.m'],['../uavobjecttemplate_8m.html#aba69459d5095ae56cf63e6a66b89648b',1,'matfile():&#160;uavobjecttemplate.m']]],
   ['mathfunction',['mathFunction',['../group___scope_plugin.html#gaa8ea6880a7faa36947144d2df62d6642',1,'PlotData::mathFunction()'],['../group___scope_plugin.html#gac0be9d46aeaed52d3ee1e796946969ed',1,'Plot2dCurveConfiguration::mathFunction()'],['../group___scope_plugin.html#ga344f163230a632804af76085d5ed4ae1',1,'Plot3dCurveConfiguration::mathFunction()']]],
   ['matout',['matOut',['../uavobjecttemplate_8m.html#ad3acc5b1fa419f640f3ab7e9dbcd3675',1,'uavobjecttemplate.m']]],
-  ['matrix',['Matrix',['../group___t_l_map_widget.html#ga4ac91c5f728a51e821a9cec0abf347fd',1,'internals::Core::Matrix()'],['../group___t_l_map_widget.html#gaecc6fdfe28242560867ab83c02820b20',1,'internals::TileMatrix::matrix()']]],
+  ['matrix',['matrix',['../group___t_l_map_widget.html#gaecc6fdfe28242560867ab83c02820b20',1,'internals::TileMatrix::matrix()'],['../group___t_l_map_widget.html#ga4ac91c5f728a51e821a9cec0abf347fd',1,'internals::Core::Matrix()']]],
   ['max',['Max',['../group___config_plugin.html#ga30259c7dfef707f2d0999fed8adaf6b1',1,'SwashplateServoSettingsStruct::Max()'],['../group___config_plugin.html#gac5e9e5be40f804ee632232a3e980ee0d',1,'OutputChannelForm::max()']]],
   ['max_5fbit_5fdepth',['MAX_BIT_DEPTH',['../classffft_1_1_f_f_t_real.html#a69a4ed5b7507683f5233ddbd34f0e1eeabec37ae38b07b6e3e1230562f01882a2',1,'ffft::FFTReal']]],
   ['max_5fcode_5fsize',['max_code_size',['../structdevice_info.html#afca090b1aeead1545be65b70fb65f05a',1,'deviceInfo']]],

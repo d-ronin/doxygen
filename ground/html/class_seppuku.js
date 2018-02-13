@@ -11,6 +11,7 @@ var class_seppuku =
     [ "getInputType", "group___boards__d_ronin.html#ga2a080f23da04a268c93283306e536449", null ],
     [ "hasAnnunciator", "group___boards__d_ronin.html#ga7a566203911561395eeb5428344781dd", null ],
     [ "isInputConfigurationSupported", "group___boards__d_ronin.html#ga8b6a8ad6d5ad16bc1047f0b02f90518a", null ],
+    [ "onBoardRgbLeds", "class_seppuku.html#ae5ff59027cbd5d6cf14aec6486fc1e8f", null ],
     [ "queryCapabilities", "group___boards__d_ronin.html#gacc3d7e735a9aae2cb42a317255a566db", null ],
     [ "queryMaxGyroRate", "group___boards__d_ronin.html#gacac611c3c089a5eedc0ca3a33a5b77a5", null ],
     [ "setInputType", "group___boards__d_ronin.html#ga965ced0458c3852cc8526fdca85430c7", null ],

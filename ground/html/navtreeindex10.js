@@ -1,12 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,3,2],
 "group___boards__d_ronin.html#gafe92f24ac8cd3f02fcb71c6471d9373f":[3,2,6,11],
 "group___config.html":[3,2,12],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,0,2],
 "group___config.html#ga0d16cdfa68728a214371e47301f6bc83":[3,2,12,10],
 "group___config.html#ga384ac929f1c563899320ee0f821fd7c1":[3,2,12,2],
-"group___config.html#ga51e91e7a3d6ac7c424c2dccfccc02e93":[3,2,12,0,3],
 "group___config.html#ga51e91e7a3d6ac7c424c2dccfccc02e93":[3,2,12,1],
+"group___config.html#ga51e91e7a3d6ac7c424c2dccfccc02e93":[3,2,12,0,3],
 "group___config.html#ga6f2f6df1a1fdd54b91d5103c752399ef":[3,2,12,0,5],
 "group___config.html#ga6f2f6df1a1fdd54b91d5103c752399ef":[3,2,12,4],
 "group___config.html#ga75507724e69d5e7c5927c6ade2d988db":[3,2,12,0,6],
@@ -15,8 +16,8 @@ var NAVTREEINDEX10 =
 "group___config.html#gaa5bc243d585ad79eb59052e26d7161c6":[3,2,12,8],
 "group___config.html#gab0705ae2ed8315a664fdab88f9b03d1b":[3,2,12,3],
 "group___config.html#gab0705ae2ed8315a664fdab88f9b03d1b":[3,2,12,0,4],
-"group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,0,7],
 "group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,5],
+"group___config.html#gac0a14bfa318699fb34465e8cc44c1577":[3,2,12,0,7],
 "group___config.html#gac43a151be5c23295b05bfd26c6cffb7e":[3,2,12,6],
 "group___config.html#gac43a151be5c23295b05bfd26c6cffb7e":[3,2,12,0,8],
 "group___config.html#gaebda11e2a5bcdf587ed78f2de1e914a8":[3,2,12,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc":[3,2,11,22,1],
 "group___config_plugin.html#ga5c4b23a3eaa7f779c326706cd09f07fc":[3,2,11,132],
 "group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807":[3,2,11,22,3],
-"group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807":[3,2,11,332],
-"group___config_plugin.html#ga5d58a26e503e6a3d9a565932148036ce":[3,2,11,198]
+"group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807":[3,2,11,332]
 };

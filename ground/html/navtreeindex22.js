@@ -1,5 +1,8 @@
 var NAVTREEINDEX22 =
 {
+"group___empty_gadget_plugin.html#ga63d0e82af824af86460f01e088918c98":[3,2,16,8],
+"group___empty_gadget_plugin.html#ga640557d465e9e57a080f459f9ba33c53":[3,2,16,1,2],
+"group___empty_gadget_plugin.html#ga640557d465e9e57a080f459f9ba33c53":[3,2,16,5],
 "group___empty_gadget_plugin.html#ga9ce48ac1c22eba730811d0885ecc9606":[3,2,16,1,3],
 "group___empty_gadget_plugin.html#ga9ce48ac1c22eba730811d0885ecc9606":[3,2,16,6],
 "group___empty_gadget_plugin.html#gab440d5ebfcaa5f5209827a9c6907f7d2":[3,2,16,2,0],
@@ -86,8 +89,8 @@ var NAVTREEINDEX22 =
 "group___g_c_s_control_gadget_plugin.html#ga29e9cc85c2d85301be68160330bf4404":[3,2,18,101],
 "group___g_c_s_control_gadget_plugin.html#ga2e6bb8ee70e1d9d3a9124ddd8a8f330c":[3,2,18,6,0],
 "group___g_c_s_control_gadget_plugin.html#ga2e6bb8ee70e1d9d3a9124ddd8a8f330c":[3,2,18,36],
-"group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,18,5,1],
 "group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,18,20],
+"group___g_c_s_control_gadget_plugin.html#ga2fcb5b20028b10d2b13fcebe34b82f0f":[3,2,18,5,1],
 "group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba":[3,2,18,15,1],
 "group___g_c_s_control_gadget_plugin.html#ga2ffd0cf503fdefb31aa45a42b5cf63ba":[3,2,18,94],
 "group___g_c_s_control_gadget_plugin.html#ga3270e904f313cabdad8a5048009ceb25":[3,2,18,15,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX22 =
 "group___g_c_s_control_gadget_plugin.html#gac95edd086f31b90b8dd3e9d992fe870e":[3,2,18,18],
 "group___g_c_s_control_gadget_plugin.html#gacad03ad4b99da2390b6a712a475b4987":[3,2,18,8,13],
 "group___g_c_s_control_gadget_plugin.html#gacad03ad4b99da2390b6a712a475b4987":[3,2,18,107],
-"group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473":[3,2,18,5,3],
-"group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473":[3,2,18,40],
-"group___g_c_s_control_gadget_plugin.html#gad8fa5da9631986d02639e5b520028c91":[3,2,18,7,2],
-"group___g_c_s_control_gadget_plugin.html#gad8fa5da9631986d02639e5b520028c91":[3,2,18,19]
+"group___g_c_s_control_gadget_plugin.html#gad8ea955332edf856259dc191fdca5473":[3,2,18,5,3]
 };

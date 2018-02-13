@@ -7,7 +7,7 @@ var searchData=
   ['validreturnpressed',['validReturnPressed',['../class_utils_1_1_base_validating_line_edit.html#a4eabb0eea13a9067d93e1fffd1e3fc6d',1,'Utils::BaseValidatingLineEdit']]],
   ['value',['value',['../group__utils.html#ga8aa747a199257cc16eba026108fde35c',1,'LongLongSpinBox']]],
   ['valueasdouble',['valueAsDouble',['../group___scope_plugin.html#ga7a54fec6758e8641d8baaefca4deddc9',1,'PlotData']]],
-  ['valuechanged',['valueChanged',['../class_long_long_spin_box.html#af832dd4215e98c80594d296560bc8301',1,'LongLongSpinBox::valueChanged()'],['../class_long_long_spin_box.html#ace373e9f774f2c883b7f95afc7d1e5f2',1,'LongLongSpinBox::valueChanged()'],['../group___config_plugin.html#ga71be1aadf5a0d023bda52f505cf7306f',1,'DoubleSpinDelegate::ValueChanged()']]],
+  ['valuechanged',['ValueChanged',['../group___config_plugin.html#ga71be1aadf5a0d023bda52f505cf7306f',1,'DoubleSpinDelegate::ValueChanged()'],['../class_long_long_spin_box.html#af832dd4215e98c80594d296560bc8301',1,'LongLongSpinBox::valueChanged()'],['../class_long_long_spin_box.html#ace373e9f774f2c883b7f95afc7d1e5f2',1,'LongLongSpinBox::valueChanged()']]],
   ['valuefromtext',['valueFromText',['../group__utils.html#gafc42f2e43061f484692fdb4c5b740d20',1,'LongLongSpinBox']]],
   ['valuerange2',['valueRange2',['../group___notify_plugin.html#ga55c7c963b3a43675f58dfe2af221b0c2',1,'NotificationItem']]],
   ['valuetosoundlist',['valueToSoundList',['../group___notify_plugin.html#ga52304989291ca82805ab0749694bfbce',1,'notificationitem.cpp']]],
