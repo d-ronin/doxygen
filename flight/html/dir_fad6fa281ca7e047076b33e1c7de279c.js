@@ -37,8 +37,6 @@ var dir_fad6fa281ca7e047076b33e1c7de279c =
     [ "pios_flight_config.h", "pios__flight__config_8h.html", "pios__flight__config_8h" ],
     [ "pios_flyingpio.h", "pios__flyingpio_8h.html", "pios__flyingpio_8h" ],
     [ "pios_flyingpio_priv.h", "pios__flyingpio__priv_8h.html", null ],
-    [ "pios_frsky_rssi.h", "pios__frsky__rssi_8h.html", "pios__frsky__rssi_8h" ],
-    [ "pios_frsky_rssi_priv.h", "pios__frsky__rssi__priv_8h.html", "pios__frsky__rssi__priv_8h" ],
     [ "pios_fskdac.h", "pios__fskdac_8h.html", "pios__fskdac_8h" ],
     [ "pios_gcsrcvr_priv.h", "pios__gcsrcvr__priv_8h.html", "pios__gcsrcvr__priv_8h" ],
     [ "pios_hal.h", "pios__hal_8h.html", "pios__hal_8h" ],

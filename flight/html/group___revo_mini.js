@@ -43,7 +43,6 @@ var group___revo_mini =
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___revo_mini.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___revo_mini.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___revo_mini.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
-    [ "PIOS_INCLUDE_FRSKY_RSSI", "group___revo_mini.html#gae89d9c1184427ac23dc28a20dacdef19", null ],
     [ "PIOS_INCLUDE_HMC5883", "group___revo_mini.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "group___revo_mini.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_I2C", "group___revo_mini.html#gac7edbfa43685b86203f055c78fdcea8b", null ],

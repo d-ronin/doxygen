@@ -34,7 +34,6 @@ var searchData=
   ['pios_5fflash_5fpartition',['pios_flash_partition',['../structpios__flash__partition.html',1,'']]],
   ['pios_5fflash_5fposix_5fcfg',['pios_flash_posix_cfg',['../structpios__flash__posix__cfg.html',1,'']]],
   ['pios_5fflash_5fsector_5frange',['pios_flash_sector_range',['../structpios__flash__sector__range.html',1,'']]],
-  ['pios_5ffrsky_5frssi_5fcfg',['pios_frsky_rssi_cfg',['../structpios__frsky__rssi__cfg.html',1,'']]],
   ['pios_5fheap',['pios_heap',['../structpios__heap.html',1,'']]],
   ['pios_5fhmc5883_5fcfg',['pios_hmc5883_cfg',['../structpios__hmc5883__cfg.html',1,'']]],
   ['pios_5fhmc5883_5fdata',['pios_hmc5883_data',['../structpios__hmc5883__data.html',1,'']]],

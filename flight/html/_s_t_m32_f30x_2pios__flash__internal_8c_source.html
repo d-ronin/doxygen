@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">020e58f</span>
+   &#160;<span id="projectnumber">cccce1f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -258,15 +258,15 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__flash__internal_8
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">static</span> int32_t PIOS_Flash_Internal_WriteData(uintptr_t chip_id, uint32_t chip_offset, <span class="keyword">const</span> uint8_t *data, uint16_t len)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(data);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>((chip_offset &amp; 0x0001) == 0)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>((chip_offset &amp; 0x0001) == 0);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        struct pios_internal_flash_dev *flash_dev = (struct pios_internal_flash_dev *)chip_id;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">struct </span>pios_internal_flash_dev *flash_dev = (<span class="keyword">struct </span>pios_internal_flash_dev *)chip_id;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (!PIOS_Flash_Internal_Validate(flash_dev))</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                return -1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span> (!PIOS_Flash_Internal_Validate(flash_dev))</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">/* Write the data */</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        for (uint16_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; i &lt; (len &amp; ~1); i += 2) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">for</span> (uint16_t <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; (len &amp; ~1); <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> += 2) {</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">/* Check if content has been changed prior to write.</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">                 * This should enhance performance and make this compatible with the F3 chip.</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">                 */</span></div>
@@ -329,7 +329,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__flash__internal_8
 <div class="ttc" id="pios__flash__priv_8h_html"><div class="ttname"><a href="pios__flash__priv_8h.html">pios_flash_priv.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga4be8d25f1ea7f6239c7ae7059a37ad2b"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a></div><div class="ttdeci">bool PIOS_Semaphore_Take(struct pios_semaphore *sema, uint32_t timeout_ms)</div><div class="ttdoc">Takes binary semaphore. </div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00175">pios_semaphore.c:175</a></div></div>
 <div class="ttc" id="structpios__flash__internal__cfg_html"><div class="ttname"><a href="structpios__flash__internal__cfg.html">pios_flash_internal_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__internal__priv_8h_source.html#l00033">pios_flash_internal_priv.h:33</a></div></div>
-<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="pios__semaphore_8h_html"><div class="ttname"><a href="pios__semaphore_8h.html">pios_semaphore.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gab8cbffe6e06265f6d7777fd9faff1d6a"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gab8cbffe6e06265f6d7777fd9faff1d6a">pios_flash_driver::start_transaction</a></div><div class="ttdeci">int32_t(* start_transaction)(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00036">pios_flash_priv.h:36</a></div></div>

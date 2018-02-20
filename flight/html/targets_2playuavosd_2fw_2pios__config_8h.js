@@ -17,7 +17,6 @@ var targets_2playuavosd_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_FASTHEAP", "targets_2playuavosd_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH", "targets_2playuavosd_2fw_2pios__config_8h.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "targets_2playuavosd_2fw_2pios__config_8h.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
-    [ "PIOS_INCLUDE_FRSKY_RSSI", "targets_2playuavosd_2fw_2pios__config_8h.html#gae89d9c1184427ac23dc28a20dacdef19", null ],
     [ "PIOS_INCLUDE_GPS", "targets_2playuavosd_2fw_2pios__config_8h.html#ga2439a3372d8825b721a19c1bba571b0a", null ],
     [ "PIOS_INCLUDE_GPS_NMEA_PARSER", "targets_2playuavosd_2fw_2pios__config_8h.html#gaab8c5635b668265d63540a4f3daed710", null ],
     [ "PIOS_INCLUDE_GPS_UBX_PARSER", "targets_2playuavosd_2fw_2pios__config_8h.html#gaa3918665ab627c1af88867276f1f204b", null ],

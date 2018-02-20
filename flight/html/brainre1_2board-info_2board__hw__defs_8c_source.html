@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">020e58f</span>
+   &#160;<span id="projectnumber">cccce1f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1228,314 +1228,246 @@ $(document).ready(function(){initNavTree('brainre1_2board-info_2board__hw__defs_
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;};</div>
 <div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_SERVO) &amp;&amp; defined(PIOS_INCLUDE_TIM) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FRSKY_RSSI)</span></div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__frsky__rssi__priv_8h.html">pios_frsky_rssi_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="keyword">const</span> TIM_TimeBaseInitTypeDef pios_frsky_rssi_time_base ={</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        .TIM_Prescaler = 6,</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        .TIM_ClockDivision = TIM_CKD_DIV1,</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        .TIM_CounterMode = TIM_CounterMode_Up,</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        .TIM_Period = 0xFFFF,</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;        .TIM_RepetitionCounter = 0x0000,</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;};</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__frsky__rssi__cfg.html">pios_frsky_rssi_cfg</a> <a class="code" href="structpios__frsky__rssi__cfg.html">pios_frsky_rssi_cfg</a> = {</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        .<a class="code" href="group___p_i_o_s.html#gaccd4e9ea18088f8437e0e7c1311e8a87">clock_cfg</a> = {</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                .<a class="code" href="structpios__tim__clock__cfg.html#a537f6f4946bc2f5e188a9c3fec55647e">timer</a> = TIM8,</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                .time_base_init = &amp;pios_frsky_rssi_time_base,</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_VIDEO_QUADSPI)</span></div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__video_8h.html">pios_video.h</a>&gt;</span></div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fpga__drv_8h.html">fpga_drv.h</a>&quot;</span></div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_vsync_cfg <a class="code" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">__exti_config</a> = {</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        .vector = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga85b37fc7c59ec730520859920f0e1efb">PIOS_Vsync_ISR</a>,</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        .line   = EXTI_Line5,</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        .pin    = {</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;                .gpio = GPIOB,</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;                .init = {</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;                        .GPIO_Pin   = GPIO_Pin_5,</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL,</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                },</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        },</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;        .channels = {</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;                {</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;                        .timer = TIM8,</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;                        .timer_chan = TIM_Channel_2,</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;                        .pin   = {</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;                                .gpio = GPIOC,</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;                                .init = {</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;                                        .GPIO_Pin   = GPIO_Pin_7,</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;                                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;                                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;                                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;                                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;                                },</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;                                .pin_source = GPIO_PinSource7,</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;                        },</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;                        .remap = GPIO_AF_TIM8,</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;                },</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;                {</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;                        .timer = TIM8,</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;                        .timer_chan = TIM_Channel_1,</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;                        .pin   = {</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;                                .gpio = GPIOC,</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;                                .init = {</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;                                        .GPIO_Pin   = GPIO_Pin_7,</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;                                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;                                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;                                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                                },</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                                .pin_source = GPIO_PinSource7,</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;                        },</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;                        .remap = GPIO_AF_TIM8,</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;                },</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        },</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        .ic2 = {</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;                .TIM_ICPolarity = TIM_ICPolarity_Falling,</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;                .TIM_ICSelection = TIM_ICSelection_IndirectTI,</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;                .TIM_ICPrescaler = TIM_ICPSC_DIV1,</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;                .TIM_ICFilter = 0x0,</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;        },</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        .ic1 = {</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                .TIM_ICPolarity = TIM_ICPolarity_Rising,</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                .TIM_ICSelection = TIM_ICSelection_DirectTI,</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                .TIM_ICPrescaler = TIM_ICPSC_DIV1,</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                .TIM_ICFilter = 0x0,</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        }</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;};</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_FRSKY_RSSI */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_VIDEO_QUADSPI)</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__video_8h.html">pios_video.h</a>&gt;</span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fpga__drv_8h.html">fpga_drv.h</a>&quot;</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_vsync_cfg <a class="code" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">__exti_config</a> = {</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;        .vector = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga85b37fc7c59ec730520859920f0e1efb">PIOS_Vsync_ISR</a>,</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        .line   = EXTI_Line5,</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        .pin    = {</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;                .gpio = GPIOB,</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;                .init = {</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;                        .GPIO_Pin   = GPIO_Pin_5,</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL,</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;                },</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        },</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        .irq                                       = {</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                .init                                  = {</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                        .NVIC_IRQChannel    =  EXTI9_5_IRQn,</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;                },</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        },</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        .exti                                      = {</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;                .init                                  = {</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                        .EXTI_Line    = EXTI_Line5, <span class="comment">// matches above GPIO pin</span></div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;                        .EXTI_Mode    = EXTI_Mode_Interrupt,</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Falling,</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;                },</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        },</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;};</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_hsync_cfg __exti_config = {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga80058030e4245438ea8a76bd5c98b133">PIOS_Hsync_ISR</a>,</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        .line   = EXTI_Line2,</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        .pin    = {</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;                .init = {</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                        .GPIO_Pin   = GPIO_Pin_2,</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL,</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                },</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;        },</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;        .irq                                       = {</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;                .init                                  = {</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;                        .NVIC_IRQChannel    =  EXTI2_IRQn,</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                },</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        },</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;        .exti                                      = {</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;                .init                                  = {</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;                        .EXTI_Line    = EXTI_Line2, <span class="comment">// matches above GPIO pin</span></div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;                        .EXTI_Mode    = EXTI_Mode_Interrupt,</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Falling,</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                },</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;        },</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;};</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__video__cfg.html">pios_video_cfg</a> <a class="code" href="structpios__video__cfg.html">pios_video_cfg</a> = {</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        .qspi_init = {</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;                .QSPI_SShift     = QSPI_SShift_NoShift,</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;                .QSPI_Prescaler  = 12,  <span class="comment">// 180MHz / 12 = 15MHz</span></div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                .QSPI_CKMode     = QSPI_CKMode_Mode0,</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                .QSPI_CSHTime    = QSPI_CSHTime_1Cycle,</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                .QSPI_FSize      = 0x1F,</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;                .QSPI_FSelect    = QSPI_FSelect_1,</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;                .QSPI_DFlash     = QSPI_DFlash_Disable,</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        },</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;        .pixel_dma = DMA2,</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        .dma     = {</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;                .irq                                       = {</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;                        .flags = (DMA_IT_TCIF7),</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;                        .init  = {</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;                                .NVIC_IRQChannel    = DMA2_Stream7_IRQn,</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;                                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;                                .NVIC_IRQChannelSubPriority        = 0,</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;                                .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;                        },</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;                },</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;                <span class="comment">/*.rx = {},*/</span></div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;                .tx                                        = {</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;                        .channel = DMA2_Stream7,</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;                        .init    = {</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;                                .DMA_Channel            = DMA_Channel_3,</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;                                .DMA_PeripheralBaseAddr = (uint32_t)&amp;(QUADSPI-&gt;DR),</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;                                .DMA_DIR                = DMA_DIR_MemoryToPeripheral,</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;                                .DMA_BufferSize         = 400,</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;                                .DMA_PeripheralInc      = DMA_PeripheralInc_Disable,</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;                                .DMA_MemoryInc          = DMA_MemoryInc_Enable,</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;                                .DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte,</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                                .DMA_MemoryDataSize     = DMA_MemoryDataSize_Word,</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;                                .DMA_Mode               = DMA_Mode_Normal,</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;                                .DMA_Priority           = DMA_Priority_VeryHigh,</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;                                .DMA_FIFOMode           = DMA_FIFOMode_Enable,</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                                .DMA_FIFOThreshold      = DMA_FIFOThreshold_Full,</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                                .DMA_MemoryBurst        = DMA_MemoryBurst_INC4,</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                                .DMA_PeripheralBurst    = DMA_PeripheralBurst_Single,</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                        },</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                },</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        },</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        .sclk                                          = {</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                .gpio = GPIOB,</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;                .init = {</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                        .GPIO_Pin   = GPIO_Pin_2,</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;                },</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        },</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        .bk1_io0                                       = {</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;                .init = {</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                        .GPIO_Pin   = GPIO_Pin_9,</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;                },</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        },</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        .bk1_io1                                       = {</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;                .init = {</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                        .GPIO_Pin   = GPIO_Pin_10,</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;                },</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        },</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        .vsync = &amp;pios_exti_vsync_cfg,</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        .hsync = &amp;pios_exti_hsync_cfg,</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        .set_bw_levels = <a class="code" href="group___brain_r_e1.html#ga7924832a7be4285eda1e042a23273f42">PIOS_RE1FPGA_SetBwLevels</a>,</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        .set_x_offset = <a class="code" href="group___brain_r_e1.html#ga9e28dcb577e3996eab9482f75a84558d">PIOS_RE1FPGA_SetXOffset</a>,</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        .set_x_scale = <a class="code" href="group___brain_r_e1.html#gaf781b9d89bc5ed624bfdab5c7655224c">PIOS_RE1FPGA_SetXScale</a>,</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        .set_3d_config = <a class="code" href="group___brain_r_e1.html#ga13058fcec614d7819823e8276b74d3b8">PIOS_RE1FPGA_Set3DConfig</a>,</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;};</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* if defined(PIOS_INCLUDE_VIDEO) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RE1_FPGA)</span></div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="fpga__drv_8h.html">fpga_drv.h</a>&quot;</span></div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__re1fpga__cfg.html">pios_re1fpga_cfg</a> <a class="code" href="structpios__re1fpga__cfg.html">pios_re1fpga_cfg</a> = {</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        .<a class="code" href="structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a">mco_pin</a> = {</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                .<a class="code" href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">gpio</a> = GPIOA,</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                .init = {</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                        .GPIO_Pin   = GPIO_Pin_8,</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                },</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        },</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        .rst_pin = {</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;                .gpio = GPIOB,</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;                .init = {</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;                        .GPIO_Pin   = GPIO_Pin_10,</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;                        .GPIO_Mode  = GPIO_Mode_OUT,</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_DOWN</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                },</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        },</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        .cdone_pin = {</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                .gpio = GPIOB,</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                .init = {</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                        .GPIO_Pin   = GPIO_Pin_0,</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;                },</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        },</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        .cresetb_pin = {</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                .gpio = GPIOB,</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                .init = {</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                        .GPIO_Pin   = GPIO_Pin_1,</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                        .GPIO_Mode  = GPIO_Mode_OUT,</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                },</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;        },</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;};</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_RE1_FPGA) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_BMI160)</span></div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__bmi160_8h.html">pios_bmi160.h</a>&quot;</span></div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_bmi160_cfg __exti_config = {</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___b_m_i160.html#ga5cdfa54b263acb87e8b5c2b781c72ac8">PIOS_BMI160_IRQHandler</a>,</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        .line = EXTI_Line13,</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;        .pin = {</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                .init = {</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                        .GPIO_Pin = GPIO_Pin_13,</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,  <span class="comment">// XXXX</span></div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                },</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;        },</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        .irq = {</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                .init = {</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                        .NVIC_IRQChannel = EXTI15_10_IRQn,</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga5eae9194437f23b68678de2ba9d9ce4a">PIOS_IRQ_PRIO_MID</a>,</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                },</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        },</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        .exti = {</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                .init = {</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                        .EXTI_Line = EXTI_Line13, <span class="comment">// matches above GPIO pin</span></div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                },</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;        },</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;};</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__bmi160__cfg.html">pios_bmi160_cfg</a> <a class="code" href="structpios__bmi160__cfg.html">pios_bmi160_cfg</a> = {</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        .<a class="code" href="group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa">exti_cfg</a> = &amp;pios_exti_bmi160_cfg,</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        .orientation = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a3fd5e47aedfb9b984d4665d9159affbd">PIOS_BMI160_TOP_0DEG</a>,</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        .odr = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639">PIOS_BMI160_ODR_1600_Hz</a>,</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;        .acc_range = <a class="code" href="group___p_i_o_s___b_m_i160.html#ggadc52c64babd9845fcf8ad68ea9cc24c0ad7775f40c8d6ccbb54d9fdd575a03ec3">PIOS_BMI160_RANGE_8G</a>,</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        .gyro_range = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga5b8fcc194828f4c0b9a30e10a007cb62aac0da9623c0d295cc4de7c3632a9fe5b">PIOS_BMI160_RANGE_2000DPS</a>,</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        .temperature_interleaving = 50</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;};</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_BMI160 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;        .irq                                       = {</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;                .init                                  = {</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;                        .NVIC_IRQChannel    =  EXTI9_5_IRQn,</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;                },</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;        },</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        .exti                                      = {</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;                .init                                  = {</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;                        .EXTI_Line    = EXTI_Line5, <span class="comment">// matches above GPIO pin</span></div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;                        .EXTI_Mode    = EXTI_Mode_Interrupt,</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Falling,</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;                },</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;        },</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;};</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_hsync_cfg __exti_config = {</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___v_i_d_e_o.html#ga80058030e4245438ea8a76bd5c98b133">PIOS_Hsync_ISR</a>,</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;        .line   = EXTI_Line2,</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        .pin    = {</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;                .init = {</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;                        .GPIO_Pin   = GPIO_Pin_2,</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL,</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                },</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        },</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        .irq                                       = {</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;                .init                                  = {</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;                        .NVIC_IRQChannel    =  EXTI2_IRQn,</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;                },</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        },</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;        .exti                                      = {</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;                .init                                  = {</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                        .EXTI_Line    = EXTI_Line2, <span class="comment">// matches above GPIO pin</span></div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                        .EXTI_Mode    = EXTI_Mode_Interrupt,</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Falling,</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;                },</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        },</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;};</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__video__cfg.html">pios_video_cfg</a> <a class="code" href="structpios__video__cfg.html">pios_video_cfg</a> = {</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        .qspi_init = {</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                .QSPI_SShift     = QSPI_SShift_NoShift,</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;                .QSPI_Prescaler  = 12,  <span class="comment">// 180MHz / 12 = 15MHz</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;                .QSPI_CKMode     = QSPI_CKMode_Mode0,</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;                .QSPI_CSHTime    = QSPI_CSHTime_1Cycle,</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                .QSPI_FSize      = 0x1F,</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                .QSPI_FSelect    = QSPI_FSelect_1,</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                .QSPI_DFlash     = QSPI_DFlash_Disable,</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        },</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        .pixel_dma = DMA2,</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        .dma     = {</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;                .irq                                       = {</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;                        .flags = (DMA_IT_TCIF7),</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                        .init  = {</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                                .NVIC_IRQChannel    = DMA2_Stream7_IRQn,</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;                                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;                                .NVIC_IRQChannelSubPriority        = 0,</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;                                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;                        },</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                },</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                <span class="comment">/*.rx = {},*/</span></div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                .tx                                        = {</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                        .channel = DMA2_Stream7,</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                        .init    = {</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;                                .DMA_Channel            = DMA_Channel_3,</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                                .DMA_PeripheralBaseAddr = (uint32_t)&amp;(QUADSPI-&gt;DR),</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;                                .DMA_DIR                = DMA_DIR_MemoryToPeripheral,</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;                                .DMA_BufferSize         = 400,</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                                .DMA_PeripheralInc      = DMA_PeripheralInc_Disable,</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;                                .DMA_MemoryInc          = DMA_MemoryInc_Enable,</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;                                .DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte,</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;                                .DMA_MemoryDataSize     = DMA_MemoryDataSize_Word,</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;                                .DMA_Mode               = DMA_Mode_Normal,</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;                                .DMA_Priority           = DMA_Priority_VeryHigh,</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;                                .DMA_FIFOMode           = DMA_FIFOMode_Enable,</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;                                .DMA_FIFOThreshold      = DMA_FIFOThreshold_Full,</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                                .DMA_MemoryBurst        = DMA_MemoryBurst_INC4,</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                                .DMA_PeripheralBurst    = DMA_PeripheralBurst_Single,</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                        },</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;                },</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        },</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        .sclk                                          = {</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                .gpio = GPIOB,</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                .init = {</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                        .GPIO_Pin   = GPIO_Pin_2,</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;                },</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        },</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;        .bk1_io0                                       = {</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;                .init = {</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                        .GPIO_Pin   = GPIO_Pin_9,</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;                },</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;        },</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;        .bk1_io1                                       = {</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                .init = {</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;                        .GPIO_Pin   = GPIO_Pin_10,</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_NOPULL</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;                },</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;        },</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        .vsync = &amp;pios_exti_vsync_cfg,</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;        .hsync = &amp;pios_exti_hsync_cfg,</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        .set_bw_levels = <a class="code" href="group___brain_r_e1.html#ga7924832a7be4285eda1e042a23273f42">PIOS_RE1FPGA_SetBwLevels</a>,</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        .set_x_offset = <a class="code" href="group___brain_r_e1.html#ga9e28dcb577e3996eab9482f75a84558d">PIOS_RE1FPGA_SetXOffset</a>,</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        .set_x_scale = <a class="code" href="group___brain_r_e1.html#gaf781b9d89bc5ed624bfdab5c7655224c">PIOS_RE1FPGA_SetXScale</a>,</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;        .set_3d_config = <a class="code" href="group___brain_r_e1.html#ga13058fcec614d7819823e8276b74d3b8">PIOS_RE1FPGA_Set3DConfig</a>,</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;};</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* if defined(PIOS_INCLUDE_VIDEO) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RE1_FPGA)</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="fpga__drv_8h.html">fpga_drv.h</a>&quot;</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__re1fpga__cfg.html">pios_re1fpga_cfg</a> <a class="code" href="structpios__re1fpga__cfg.html">pios_re1fpga_cfg</a> = {</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        .<a class="code" href="structpios__re1fpga__cfg.html#a70668b4c3a5e86a2ce5c7b20934c973a">mco_pin</a> = {</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;                .<a class="code" href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">gpio</a> = GPIOA,</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;                .init = {</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;                        .GPIO_Pin   = GPIO_Pin_8,</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;                        .GPIO_Mode  = GPIO_Mode_AF,</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;                },</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        },</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        .rst_pin = {</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;                .gpio = GPIOB,</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;                .init = {</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;                        .GPIO_Pin   = GPIO_Pin_10,</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;                        .GPIO_Mode  = GPIO_Mode_OUT,</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_DOWN</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                },</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;        },</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        .cdone_pin = {</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                .gpio = GPIOB,</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                .init = {</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                        .GPIO_Pin   = GPIO_Pin_0,</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                },</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        },</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        .cresetb_pin = {</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                .gpio = GPIOB,</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;                .init = {</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                        .GPIO_Pin   = GPIO_Pin_1,</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;                        .GPIO_Mode  = GPIO_Mode_OUT,</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;                        .GPIO_OType = GPIO_OType_PP,</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;                },</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        },</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;};</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_RE1_FPGA) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_BMI160)</span></div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__bmi160_8h.html">pios_bmi160.h</a>&quot;</span></div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_bmi160_cfg __exti_config = {</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___b_m_i160.html#ga5cdfa54b263acb87e8b5c2b781c72ac8">PIOS_BMI160_IRQHandler</a>,</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        .line = EXTI_Line13,</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        .pin = {</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;                .init = {</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                        .GPIO_Pin = GPIO_Pin_13,</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;                        .GPIO_Speed = GPIO_Speed_2MHz,  <span class="comment">// XXXX</span></div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;                },</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        },</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        .irq = {</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                .init = {</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                        .NVIC_IRQChannel = EXTI15_10_IRQn,</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga5eae9194437f23b68678de2ba9d9ce4a">PIOS_IRQ_PRIO_MID</a>,</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                },</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        },</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        .exti = {</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                .init = {</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                        .EXTI_Line = EXTI_Line13, <span class="comment">// matches above GPIO pin</span></div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                },</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        },</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;};</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__bmi160__cfg.html">pios_bmi160_cfg</a> <a class="code" href="structpios__bmi160__cfg.html">pios_bmi160_cfg</a> = {</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        .<a class="code" href="group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa">exti_cfg</a> = &amp;pios_exti_bmi160_cfg,</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        .orientation = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga88d6c9670d34cefe4b808d3311ae24f1a3fd5e47aedfb9b984d4665d9159affbd">PIOS_BMI160_TOP_0DEG</a>,</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        .odr = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga92abd4d2945d5800dfedfc1f36b2991daed92ce3197babb881b08f4f3aeda4639">PIOS_BMI160_ODR_1600_Hz</a>,</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        .acc_range = <a class="code" href="group___p_i_o_s___b_m_i160.html#ggadc52c64babd9845fcf8ad68ea9cc24c0ad7775f40c8d6ccbb54d9fdd575a03ec3">PIOS_BMI160_RANGE_8G</a>,</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        .gyro_range = <a class="code" href="group___p_i_o_s___b_m_i160.html#gga5b8fcc194828f4c0b9a30e10a007cb62aac0da9623c0d295cc4de7c3632a9fe5b">PIOS_BMI160_RANGE_2000DPS</a>,</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        .temperature_interleaving = 50</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;};</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_BMI160 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___brain_r_e1_html_ga7924832a7be4285eda1e042a23273f42"><div class="ttname"><a href="group___brain_r_e1.html#ga7924832a7be4285eda1e042a23273f42">PIOS_RE1FPGA_SetBwLevels</a></div><div class="ttdeci">void PIOS_RE1FPGA_SetBwLevels(uint8_t black, uint8_t white)</div></div>
 <div class="ttc" id="structpios__annunc_html_a88b452f9d510fde12b2592105e992b34"><div class="ttname"><a href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pios_annunc::pin</a></div><div class="ttdeci">struct stm32_gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00039">pios_annunc_priv.h:39</a></div></div>
 <div class="ttc" id="structpios__video__cfg_html"><div class="ttname"><a href="structpios__video__cfg.html">pios_video_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00095">pios_video.h:95</a></div></div>
@@ -1643,7 +1575,6 @@ $(document).ready(function(){initNavTree('brainre1_2board-info_2board__hw__defs_
 <div class="ttc" id="pios__usb__desc__hid__only__priv_8h_html"><div class="ttname"><a href="pios__usb__desc__hid__only__priv_8h.html">pios_usb_desc_hid_only_priv.h</a></div><div class="ttdoc">Defines the API to set up the HID-only USB descriptor config. </div></div>
 <div class="ttc" id="group___brain_html_ga8a3391113e465d74c92def57807d830e"><div class="ttname"><a href="group___brain.html#ga8a3391113e465d74c92def57807d830e">tim_12_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_12_cfg</div><div class="ttdef"><b>Definition:</b> <a href="brain_2board-info_2board__hw__defs_8c_source.html#l00702">board_hw_defs.c:702</a></div></div>
 <div class="ttc" id="pios__flash__priv_8h_html"><div class="ttname"><a href="pios__flash__priv_8h.html">pios_flash_priv.h</a></div></div>
-<div class="ttc" id="pios__frsky__rssi__priv_8h_html"><div class="ttname"><a href="pios__frsky__rssi__priv_8h.html">pios_frsky_rssi_priv.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_t_c_html_ga882b48b1e7ce218715dbcc6268387eb7"><div class="ttname"><a href="group___p_i_o_s___r_t_c.html#ga882b48b1e7ce218715dbcc6268387eb7">PIOS_RTC_irq_handler</a></div><div class="ttdeci">void PIOS_RTC_irq_handler(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gga0b2f5069f81f627316a591a77e020616a6a2bde87805511bad8594803d8e85b73"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a6a2bde87805511bad8594803d8e85b73">FLASH_PARTITION_LABEL_FW</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash_8h_source.html#l00033">pios_flash.h:33</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga113d5f9837c72cd491b57bec7a80380f"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga113d5f9837c72cd491b57bec7a80380f">pios_flash_chip::driver</a></div><div class="ttdeci">const struct pios_flash_driver * driver</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00067">pios_flash_priv.h:67</a></div></div>
@@ -1671,8 +1602,6 @@ $(document).ready(function(){initNavTree('brainre1_2board-info_2board__hw__defs_
 <div class="ttc" id="group___a_q32_html_gafc809d2cdef7438cdb9abda6ea55f372"><div class="ttname"><a href="group___a_q32.html#gafc809d2cdef7438cdb9abda6ea55f372">PIOS_ANNUNCIATOR_BUZZER</a></div><div class="ttdeci">#define PIOS_ANNUNCIATOR_BUZZER</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00087">pios_board.h:87</a></div></div>
 <div class="ttc" id="structpios__usb__cfg_html_acf35c94952c92310b680586289e5b5b0"><div class="ttname"><a href="structpios__usb__cfg.html#acf35c94952c92310b680586289e5b5b0">pios_usb_cfg::irq</a></div><div class="ttdeci">struct stm32_irq irq</div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__priv_8h_source.html#l00037">pios_usb_priv.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga678a11b3f8a34afe096417c2769202ae"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga678a11b3f8a34afe096417c2769202ae">FLASH_SECTOR_128KB</a></div><div class="ttdeci">#define FLASH_SECTOR_128KB</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00098">pios_flash_priv.h:98</a></div></div>
-<div class="ttc" id="structpios__frsky__rssi__cfg_html"><div class="ttname"><a href="structpios__frsky__rssi__cfg.html">pios_frsky_rssi_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__frsky__rssi__priv_8h_source.html#l00035">pios_frsky_rssi_priv.h:35</a></div></div>
-<div class="ttc" id="group___p_i_o_s_html_gaccd4e9ea18088f8437e0e7c1311e8a87"><div class="ttname"><a href="group___p_i_o_s.html#gaccd4e9ea18088f8437e0e7c1311e8a87">pios_frsky_rssi_cfg::clock_cfg</a></div><div class="ttdeci">struct pios_tim_clock_cfg clock_cfg</div><div class="ttdef"><b>Definition:</b> <a href="pios__frsky__rssi__priv_8h_source.html#l00036">pios_frsky_rssi_priv.h:36</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gga0b2f5069f81f627316a591a77e020616a79f2635b231db7c023078eb323c5845b">FLASH_PARTITION_LABEL_LOG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash_8h_source.html#l00037">pios_flash.h:37</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_aec6795f96bf8837f814eb2a25d066446"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#aec6795f96bf8837f814eb2a25d066446">pios_internal_flash_driver</a></div><div class="ttdeci">const struct pios_flash_driver pios_internal_flash_driver</div></div>
 <div class="ttc" id="pios__rcvr__priv_8h_html"><div class="ttname"><a href="pios__rcvr__priv_8h.html">pios_rcvr_priv.h</a></div><div class="ttdoc">USART private definitions. </div></div>

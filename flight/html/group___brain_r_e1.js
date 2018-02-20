@@ -67,7 +67,6 @@ var group___brain_r_e1 =
     [ "PIOS_INCLUDE_FLASH_INTERNAL", "group___brain_r_e1.html#gabaec4c77cf420cd9ad55c5f96a10b192", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___brain_r_e1.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
     [ "PIOS_INCLUDE_FLASH_JEDEC", "group___brain_r_e1.html#ga446b36ea5ee33295bce18fc867d8615e", null ],
-    [ "PIOS_INCLUDE_FRSKY_RSSI", "group___brain_r_e1.html#gae89d9c1184427ac23dc28a20dacdef19", null ],
     [ "PIOS_INCLUDE_HMC5883", "group___brain_r_e1.html#ga028c4481fbfca2b3a6ccd75c0aec3098", null ],
     [ "PIOS_INCLUDE_HMC5983_I2C", "group___brain_r_e1.html#ga221b4e9f9650231f108d4cbb538bf9fd", null ],
     [ "PIOS_INCLUDE_HPWM", "group___brain_r_e1.html#ga22304f900a747efafdc79bfe05288716", null ],

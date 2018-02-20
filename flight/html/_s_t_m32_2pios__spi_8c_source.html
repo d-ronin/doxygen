@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">020e58f</span>
+   &#160;<span id="projectnumber">cccce1f</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -315,34 +315,34 @@ $(document).ready(function(){initNavTree('_s_t_m32_2pios__spi_8c_source.html',''
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#gaf4d7eff28af84690c0caa8ac3c0abeee">PIOS_SPI_ClaimBus</a>(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev)</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (<a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b">busy</a>, <a class="code" href="group___p_i_o_s___semaphore.html#ga9f80c0f562536f093d9c7c4dd7d77904">PIOS_SEMAPHORE_TIMEOUT_MAX</a>) != true)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                return -1;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___semaphore.html#ga4be8d25f1ea7f6239c7ae7059a37ad2b">PIOS_Semaphore_Take</a>(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b">busy</a>, <a class="code" href="group___p_i_o_s___semaphore.html#ga9f80c0f562536f093d9c7c4dd7d77904">PIOS_SEMAPHORE_TIMEOUT_MAX</a>) != <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        return 0;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a>(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(spi_dev-&gt;busy);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="group___p_i_o_s___semaphore.html#ga8ef85c87885473f57f442c9980db7cdb">PIOS_Semaphore_Give</a>(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b">busy</a>);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        return 0;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_p_i.html#ga1b5bd655c2debc91231000a99f390bef">PIOS_SPI_RC_PinSet</a>(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev, uint32_t slave_id, <span class="keywordtype">bool</span> pin_value)</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(slave_id &lt;= spi_dev-&gt;cfg-&gt;slave_count)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(slave_id &lt;= spi_dev-&gt;cfg-&gt;<a class="code" href="structpios__spi__cfg.html#ad45aed059de6082ab6c257da0018d867">slave_count</a>);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a> (pin_value) {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                GPIO_SetBits(spi_dev-&gt;cfg-&gt;ssel[slave_id].gpio, spi_dev-&gt;cfg-&gt;ssel[slave_id].init.GPIO_Pin);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (pin_value) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                GPIO_SetBits(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ac1c73f49ee01a82a50dff4f2eb0fbb8e">ssel</a>[slave_id].<a class="code" href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">gpio</a>, spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ac1c73f49ee01a82a50dff4f2eb0fbb8e">ssel</a>[slave_id].<a class="code" href="structstm32__gpio.html#ab4cf4debf63492af696cf1f340a42824">init</a>.GPIO_Pin);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                GPIO_ResetBits(spi_dev-&gt;cfg-&gt;ssel[slave_id].gpio, spi_dev-&gt;cfg-&gt;ssel[slave_id].init.GPIO_Pin);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                GPIO_ResetBits(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ac1c73f49ee01a82a50dff4f2eb0fbb8e">ssel</a>[slave_id].<a class="code" href="structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402">gpio</a>, spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ac1c73f49ee01a82a50dff4f2eb0fbb8e">ssel</a>[slave_id].<a class="code" href="structstm32__gpio.html#ab4cf4debf63492af696cf1f340a42824">init</a>.GPIO_Pin);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> 0;</div>
@@ -351,7 +351,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_2pios__spi_8c_source.html',''
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;uint8_t <a class="code" href="group___p_i_o_s___s_p_i.html#gaba986f2515cfe42f08293c869107ea84">PIOS_SPI_TransferByte</a>(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev, uint8_t b)</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        uint8_t rx_byte;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
@@ -360,53 +360,53 @@ $(document).ready(function(){initNavTree('_s_t_m32_2pios__spi_8c_source.html',''
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">/* Make sure the RXNE flag is cleared by reading the DR register */</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        SPI_ReceiveData8(spi_dev-&gt;cfg-&gt;regs);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        SPI_ReceiveData8(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="comment">/* Wait until the TXE goes high */</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        while (SPI_I2S_GetFlagStatus(spi_dev-&gt;cfg-&gt;regs, SPI_I2S_FLAG_TXE) == RESET);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, SPI_I2S_FLAG_TXE) == RESET);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">/* Start the transfer */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        SPI_SendData8(spi_dev-&gt;cfg-&gt;regs, b);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        SPI_SendData8(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, b);</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">/* Wait until there is a byte to read */</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        while (SPI_I2S_GetFlagStatus(spi_dev-&gt;cfg-&gt;regs, SPI_I2S_FLAG_RXNE) == RESET);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, SPI_I2S_FLAG_RXNE) == RESET);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="comment">/* Read the rx&#39;d byte */</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        rx_byte = SPI_ReceiveData8(spi_dev-&gt;cfg-&gt;regs);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        rx_byte = SPI_ReceiveData8(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">/* Wait until the TXE goes high */</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        while (!(spi_dev-&gt;cfg-&gt;regs-&gt;SR &amp; SPI_I2S_FLAG_TXE));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">while</span> (!(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>-&gt;SR &amp; SPI_I2S_FLAG_TXE));</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="comment">/* Wait for SPI transfer to have fully completed */</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        while (spi_dev-&gt;cfg-&gt;regs-&gt;SR &amp; SPI_I2S_FLAG_BSY);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">while</span> (spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>-&gt;SR &amp; SPI_I2S_FLAG_BSY);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">/* Return received byte */</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        return rx_byte;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> rx_byte;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;static int32_t SPI_PIO_TransferBlock(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                const uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword">static</span> int32_t SPI_PIO_TransferBlock(<a class="code" href="structpios__spi__dev.html">pios_spi_t</a> spi_dev,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keyword">const</span> uint8_t *send_buffer, uint8_t *receive_buffer, uint16_t len)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;{</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        uint8_t b;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_SPI_validate(spi_dev);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        while (len--) {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">while</span> (len--) {</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <span class="comment">/* get the byte to send */</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                b = send_buffer ? *(send_buffer++) : 0xff;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="comment">/* Wait until the TXE goes high */</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;cfg-&gt;regs, SPI_I2S_FLAG_TXE) == RESET);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, SPI_I2S_FLAG_TXE) == RESET);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="comment">/* Start the transfer */</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                SPI_SendData8(spi_dev-&gt;cfg-&gt;regs, b);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                SPI_SendData8(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, b);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="comment">/* Wait until there is a byte to read */</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;cfg-&gt;regs, SPI_I2S_FLAG_RXNE) == RESET);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keywordflow">while</span> (SPI_I2S_GetFlagStatus(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>, SPI_I2S_FLAG_RXNE) == RESET);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="comment">/* Read the rx&#39;d byte */</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                b = SPI_ReceiveData8(spi_dev-&gt;cfg-&gt;regs);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                b = SPI_ReceiveData8(spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="comment">/* save the received byte */</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <span class="keywordflow">if</span> (receive_buffer)</div>
@@ -414,7 +414,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_2pios__spi_8c_source.html',''
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">/* Wait for SPI transfer to have fully completed */</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">while</span> (spi_dev-&gt;cfg-&gt;regs-&gt;SR &amp; SPI_I2S_FLAG_BSY);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">while</span> (spi_dev-&gt;<a class="code" href="structpios__spi__dev.html#a40269ca3f337509938581bfccc245552">cfg</a>-&gt;<a class="code" href="structpios__spi__cfg.html#ad167dc65625a3dd4255886c4523b5691">regs</a>-&gt;SR &amp; SPI_I2S_FLAG_BSY);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
@@ -456,7 +456,6 @@ $(document).ready(function(){initNavTree('_s_t_m32_2pios__spi_8c_source.html',''
 <div class="ttc" id="group___p_i_o_s___s_p_i_html_ga8fa5be788c14e9e5af848c4a4e37051e"><div class="ttname"><a href="group___p_i_o_s___s_p_i.html#ga8fa5be788c14e9e5af848c4a4e37051e">PIOS_SPI_ReleaseBus</a></div><div class="ttdeci">int32_t PIOS_SPI_ReleaseBus(pios_spi_t spi_dev)</div></div>
 <div class="ttc" id="structpios__spi__cfg_html_ac804df72ee895e7482167ac5452b31aa"><div class="ttname"><a href="structpios__spi__cfg.html#ac804df72ee895e7482167ac5452b31aa">pios_spi_cfg::miso</a></div><div class="ttdeci">struct stm32_gpio miso</div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00048">pios_spi_priv.h:48</a></div></div>
 <div class="ttc" id="structpios__spi__cfg_html_adbc1199b6671cd7ab6856b5d76038020"><div class="ttname"><a href="structpios__spi__cfg.html#adbc1199b6671cd7ab6856b5d76038020">pios_spi_cfg::init</a></div><div class="ttdeci">SPI_InitTypeDef init</div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00046">pios_spi_priv.h:46</a></div></div>
-<div class="ttc" id="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge_html_ga24e4fa754136a7e6bb0f68882537adf0"><div class="ttname"><a href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga24e4fa754136a7e6bb0f68882537adf0">if</a></div><div class="ttdeci">if(BaroAltitudeHandle()!=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_u_a_v_o_fr_s_k_y_sensor_hub_bridge_8c_source.html#l00363">UAVOFrSKYSensorHubBridge.c:363</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__spi__dev_html_aeac11213c625a3544d9595b7a9db968b"><div class="ttname"><a href="structpios__spi__dev.html#aeac11213c625a3544d9595b7a9db968b">pios_spi_dev::busy</a></div><div class="ttdeci">struct pios_semaphore * busy</div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00040">pios_spi_priv.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

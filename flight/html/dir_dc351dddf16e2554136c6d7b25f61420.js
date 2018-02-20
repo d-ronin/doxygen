@@ -6,7 +6,6 @@ var dir_dc351dddf16e2554136c6d7b25f61420 =
     [ "pios_dac.c", "pios__dac_8c.html", null ],
     [ "pios_dmashot.c", "pios__dmashot_8c.html", "pios__dmashot_8c" ],
     [ "pios_flash_internal.c", "_s_t_m32_f4xx_2pios__flash__internal_8c.html", null ],
-    [ "pios_frsky_rssi.c", "pios__frsky__rssi_8c.html", null ],
     [ "pios_iap.c", "_s_t_m32_f4xx_2pios__iap_8c.html", "_s_t_m32_f4xx_2pios__iap_8c" ],
     [ "pios_internal_adc.c", "_s_t_m32_f4xx_2pios__internal__adc_8c.html", null ],
     [ "pios_rtc.c", "_s_t_m32_f4xx_2pios__rtc_8c.html", null ],

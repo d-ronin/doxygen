@@ -176,8 +176,6 @@ var searchData=
   ['pios_5fflyingpio_5freceiver_5fget',['PIOS_FLYINGPIO_Receiver_Get',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#gac6cfb5abc02a8960be7c5c92096ca3cf',1,'pios_flyingpio.h']]],
   ['pios_5fflyingpio_5fspi_5finit',['PIOS_FLYINGPIO_SPI_Init',['../group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#ga80118359fe8586c63fe5e7d397af3a1b',1,'pios_flyingpio.h']]],
   ['pios_5ffree',['PIOS_free',['../group___p_i_o_s___h_e_a_p.html#ga28f859a3f736ce01c398002505b53b76',1,'pios_heap.c']]],
-  ['pios_5ffrskyrssi_5fget',['PIOS_FrSkyRssi_Get',['../group___p_i_o_s.html#ga7f5af5caf7d5a87f4427cb37d84345ee',1,'pios_frsky_rssi.h']]],
-  ['pios_5ffrskyrssi_5finit',['PIOS_FrSkyRssi_Init',['../group___p_i_o_s.html#ga6cd3957ee56978ac76ceccd311e993b2',1,'pios_frsky_rssi_priv.h']]],
   ['pios_5ffskdac_5finit',['PIOS_FSKDAC_Init',['../group___p_i_o_s___f_s_k_d_a_c.html#ga2883aeb19f38f83a40f3d9007e42ef21',1,'pios_fskdac.h']]],
   ['pios_5fgcsrcvr_5finit',['PIOS_GCSRCVR_Init',['../group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c',1,'pios_gcsrcvr_priv.h']]],
   ['pios_5fhal_5fconfigurecdc',['PIOS_HAL_ConfigureCDC',['../pios__hal_8h.html#a6dcb0f1c109e2ca59aef625031a5b9bb',1,'pios_hal.h']]],
