@@ -1,8 +1,8 @@
 var flightd_2fw_2pios__board_8c =
 [
     [ "PIOS_COM_GPS_RX_BUF_LEN", "flightd_2fw_2pios__board_8c.html#ga26c0d186420f2a028ebc09e009edf983", null ],
-    [ "PIOS_COM_TELEM_RF_RX_BUF_LEN", "flightd_2fw_2pios__board_8c.html#gab2c5becd5d93d1b0a989d736bf438a9a", null ],
-    [ "PIOS_COM_TELEM_RF_TX_BUF_LEN", "flightd_2fw_2pios__board_8c.html#ga43f6102039131d60cf02ba0330e9c52e", null ],
+    [ "PIOS_COM_TELEM_TCP_RX_BUF_LEN", "flightd_2fw_2pios__board_8c.html#ga3010e7f4b4def67c978e083c50e5b901", null ],
+    [ "PIOS_COM_TELEM_TCP_TX_BUF_LEN", "flightd_2fw_2pios__board_8c.html#ga01c7d40a3ca879b679f2cd1d886c98ca", null ],
     [ "PIOS_Board_Init", "flightd_2fw_2pios__board_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb", null ],
     [ "Stack_Change", "flightd_2fw_2pios__board_8c.html#ga7a789e7b91612099a4a1f355b9e97c24", null ],
     [ "pios_com_debug_id", "flightd_2fw_2pios__board_8c.html#ga14dc9e3d330b80a37a9699c2112358e0", null ],
