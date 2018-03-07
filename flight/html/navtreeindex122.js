@@ -1,5 +1,7 @@
 var NAVTREEINDEX122 =
 {
+"structat__flash__header.html#a355ac9a4c6dfb03651e1031ba625ce95":[2,4,4,1,1],
+"structat__flash__header.html#a857824167cf3f2d5d8c827882030f94c":[2,4,4,1,0],
 "structat__flash__header.html#aadd5f96ff5a45fb7191e46368e37eb7e":[2,4,4,1,4],
 "structat__flash__header.html#aedccbc0fdfb74428ab5c34c5bcdc0bad":[2,4,4,1,2],
 "structat__measurement.html":[2,4,4,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX122 =
 "structhott__gam__message.html#aa0410593fd4b3bfb8e9042cb5f783532":[2,4,30,6,30],
 "structhott__gam__message.html#aa4c7bebaa2bd70b39389662839f9c906":[2,4,30,6,16],
 "structhott__gam__message.html#aa53771150a51fe80663ddcb93e57fee7":[2,4,30,6,33],
-"structhott__gam__message.html#aa6a29556ab81f7cee303212ea7a4f6b5":[2,4,30,6,18],
-"structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12":[2,4,30,6,32],
-"structhott__gam__message.html#aaf612153c3592f8128b6321b7735114d":[2,4,30,6,11]
+"structhott__gam__message.html#aa6a29556ab81f7cee303212ea7a4f6b5":[2,4,30,6,18]
 };

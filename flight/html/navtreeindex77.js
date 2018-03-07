@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"group___seppuku.html#gab5f09e1f881124b5131fd88fc013fddd":[2,6,14,71],
+"group___seppuku.html#gab61440cd331858b31458b3ce72abf906":[2,6,14,115],
 "group___seppuku.html#gab70d9b5c3764aac6282d594d8f6a88ec":[2,6,14,214],
 "group___seppuku.html#gab879e56e8632bb4beb029c28133cc504":[2,6,14,220],
 "group___seppuku.html#gab98ad41f0f40e6edd46ea98d46edb0af":[2,6,14,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "group___sparky.html#ga27fd8ee5368f1d18800f60f190b53d44":[2,6,15,194],
 "group___sparky.html#ga27fd8ee5368f1d18800f60f190b53d44":[2,5,13,194],
 "group___sparky.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[2,6,15,72],
-"group___sparky.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[2,5,13,72],
-"group___sparky.html#ga29204b81c265dd6e124fbcf12a2c8d6f":[2,6,15,193],
-"group___sparky.html#ga29204b81c265dd6e124fbcf12a2c8d6f":[2,5,13,193]
+"group___sparky.html#ga288a8e6f061b1dbd7930b5ffdf805c69":[2,5,13,72]
 };

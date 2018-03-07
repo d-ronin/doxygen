@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,7,0,0,4,3],
+"group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,7,0,0,4,4],
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,7,0,0,4,5],
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,7,0,0,4,6],
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,7,0,0,4,7],
@@ -9,7 +11,7 @@ var NAVTREEINDEX76 =
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,8,0,0,4,3],
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,8,0,0,4,4],
 "group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,8,0,0,4,5],
-"group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,8,0,0,4,6],
+"group___s_t_m32_f4xx___system___private___variables.html#gacdc3ef54c0704c90e69a8a84fb2d970d":[2,6,8,0,0,4,7],
 "group___sensors.html":[2,4,22],
 "group___seppuku.html":[2,6,14],
 "group___seppuku.html#ga00ad81d320aaeb3ca4899228c4155848":[2,6,14,198],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "group___seppuku.html#gab48a97d4d9a65fbadfd195d283bc5fbf":[2,6,14,58],
 "group___seppuku.html#gab5089b27d40c7040560009d8b82a7f67":[2,6,14,26],
 "group___seppuku.html#gab5ac6fa2e4da575ee16cb9d069522092":[2,6,14,46],
-"group___seppuku.html#gab5e7265edffef2f0b796b755ca4cfbad":[2,6,14,219],
-"group___seppuku.html#gab5f09e1f881124b5131fd88fc013fddd":[2,6,14,71],
-"group___seppuku.html#gab61440cd331858b31458b3ce72abf906":[2,6,14,115]
+"group___seppuku.html#gab5e7265edffef2f0b796b755ca4cfbad":[2,6,14,219]
 };

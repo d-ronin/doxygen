@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">dfd6d0c</span>
+   &#160;<span id="projectnumber">95d2ce6</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -298,12 +298,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga173a3f497f444827b07299891ad25e34"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga173a3f497f444827b07299891ad25e34">pid_apply</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, const float err)</td></tr>
 <tr class="memdesc:ga173a3f497f444827b07299891ad25e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods to use the pid structures.  <a href="#ga173a3f497f444827b07299891ad25e34">More...</a><br/></td></tr>
 <tr class="separator:ga173a3f497f444827b07299891ad25e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b5f222011bbf7ab8a1273148d117d10"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga2b5f222011bbf7ab8a1273148d117d10">pid_apply_antiwindup</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, const float err, float min_bound, float max_bound)</td></tr>
-<tr class="separator:ga2b5f222011bbf7ab8a1273148d117d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac965c1e7ddcf29b28c5e97496cdfb1c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gac965c1e7ddcf29b28c5e97496cdfb1c0">pid_apply_antiwindup</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, const float err, float min_bound, float max_bound, float aw_bound)</td></tr>
+<tr class="separator:gac965c1e7ddcf29b28c5e97496cdfb1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga674dd92443c0a6b02bd28947131c98e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga674dd92443c0a6b02bd28947131c98e3">pid_apply_setpoint</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *deadband, const float setpoint, const float measured)</td></tr>
 <tr class="separator:ga674dd92443c0a6b02bd28947131c98e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafacfdf207d48bac27a0e8d101a6bbcc2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gafacfdf207d48bac27a0e8d101a6bbcc2">pid_apply_setpoint_antiwindup</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *deadband, const float setpoint, const float measured, float min_bound, float max_bound)</td></tr>
-<tr class="separator:gafacfdf207d48bac27a0e8d101a6bbcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfc6d85c8a169074f74b6893bd3f9e3d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gadfc6d85c8a169074f74b6893bd3f9e3d">pid_apply_setpoint_antiwindup</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>, struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *deadband, const float setpoint, const float measured, float min_bound, float max_bound, float aw_bound)</td></tr>
+<tr class="separator:gadfc6d85c8a169074f74b6893bd3f9e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e2dbc48e2b186b32beebd99e18f79e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga2e2dbc48e2b186b32beebd99e18f79e9">pid_zero</a> (struct <a class="el" href="structpid.html">pid</a> *<a class="el" href="structpid.html">pid</a>)</td></tr>
 <tr class="separator:ga2e2dbc48e2b186b32beebd99e18f79e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90a5d55ff766104f2cf9b4f2cc28d60f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga90a5d55ff766104f2cf9b4f2cc28d60f">pid_configure_derivative</a> (float cutoff, float g)</td></tr>
@@ -2205,7 +2205,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2b5f222011bbf7ab8a1273148d117d10"></a>
+<a class="anchor" id="gac965c1e7ddcf29b28c5e97496cdfb1c0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2231,7 +2231,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_bound</em>&#160;</td>
+          <td class="paramname"><em>max_bound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aw_bound</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2247,6 +2253,7 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">err</td><td>The error term </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">min_bound</td><td>The minimum output </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_bound</td><td>The maximum output </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aw_bound</td><td>The absolute boundary for slope-related anti-windup. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dT</td><td>The time step </td></tr>
   </table>
   </dd>
@@ -2254,7 +2261,7 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Output the computed controller value</dd></dl>
 <p>based on "Feedback Systems" by Astrom and Murray, PID control chapter. </p>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00085">85</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00086">86</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
@@ -2305,11 +2312,11 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Output the computed controller value</dd></dl>
 <p>This version of apply uses setpoint weighting for the derivative component so the gain on the gyro derivative can be different than the gain on the setpoint derivative </p>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00135">135</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00141">141</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gafacfdf207d48bac27a0e8d101a6bbcc2"></a>
+<a class="anchor" id="gadfc6d85c8a169074f74b6893bd3f9e3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2347,7 +2354,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_bound</em>&#160;</td>
+          <td class="paramname"><em>max_bound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aw_bound</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2356,8 +2369,20 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Update the PID computation with setpoint weighting on the derivative and apply anti windup limit </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>The PID struture which stores temporary information </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">err</td><td>The error term </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_bound</td><td>The minimum output </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_bound</td><td>The maximum output </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aw_bound</td><td>The absolute boundary for slope-related anti-windup. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Output the computed controller value </dd></dl>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00172">172</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00187">187</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
@@ -2419,7 +2444,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00260">260</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00280">280</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
@@ -2462,7 +2487,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00278">278</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00298">298</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
@@ -2499,7 +2524,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00247">247</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00267">267</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>
@@ -2524,7 +2549,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pid_8c_source.html#l00232">232</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+<p>Definition at line <a class="el" href="pid_8c_source.html#l00252">252</a> of file <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
 
 </div>
 </div>

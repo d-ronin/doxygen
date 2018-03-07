@@ -51,6 +51,7 @@ var group___actuator_module =
     [ "curve2_src", "group___actuator_module.html#ga7c686e3a2dfa84c375e555ee4b494c44", null ],
     [ "desired_3d_mask", "group___actuator_module.html#gaff127257a3ae8f3e2151789ab01c1a34", null ],
     [ "flight_status_updated", "group___actuator_module.html#ga66f2cde210a84b3f404f0dd94f8c62ea", null ],
+    [ "hangtime_leakybucket_timeconstant", "group___actuator_module.html#gac5e293fba6cbbad2ebd5182b3d9fa3e5", null ],
     [ "manual_control_cmd_updated", "group___actuator_module.html#gac06e984663724f37717398baaaaef6b7", null ],
     [ "mixer_settings_updated", "group___actuator_module.html#ga33c0776f38e10ccb9b721c1568ab3bbe", null ],
     [ "motor_mixer", "group___actuator_module.html#gaeea8740d6daee7a45e6cd419f92cf913", null ],

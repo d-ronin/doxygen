@@ -1,5 +1,7 @@
 var NAVTREEINDEX111 =
 {
+"pios__usb__hid__priv_8h.html#ga5ae8bb7d09627f6ed20ab4f7874227fd":[5,0,0,4,1,112,2],
+"pios__usb__hid__priv_8h.html#gac56d93a50756ec83103cdfc4e5a31f3e":[5,0,0,4,1,112,1],
 "pios__usb__hid__priv_8h.html#gad8727d3d5a14b22a851789d5c12f4f85":[5,0,0,4,1,112,0],
 "pios__usb__hid__priv_8h_source.html":[5,0,0,4,1,112],
 "pios__usb__hid__pwr_8h.html":[5,0,0,4,1,113],
@@ -247,7 +249,5 @@ var NAVTREEINDEX111 =
 "playuavosd_2board-info_2usb__conf_8h.html#gab76257de69c4dfbe6f439d76f5e3e660":[5,0,0,5,12,1,3,4],
 "playuavosd_2board-info_2usb__conf_8h.html#gad46a504a2195416b71d51d5d46b773c2":[5,0,0,5,12,1,3,3],
 "playuavosd_2board-info_2usb__conf_8h_source.html":[5,0,0,5,12,1,3],
-"playuavosd_2fw_2mcuconf_8h.html":[5,0,0,5,12,2,0],
-"playuavosd_2fw_2mcuconf_8h.html#ga00ad81d320aaeb3ca4899228c4155848":[5,0,0,5,12,2,0,102],
-"playuavosd_2fw_2mcuconf_8h.html#ga00b873df699111f00e6093ed5759e08e":[5,0,0,5,12,2,0,18]
+"playuavosd_2fw_2mcuconf_8h.html":[5,0,0,5,12,2,0]
 };

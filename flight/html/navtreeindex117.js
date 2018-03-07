@@ -1,5 +1,7 @@
 var NAVTREEINDEX117 =
 {
+"seppuku_2fw_2mcuconf_8h.html#ga9c9553fdd3fc1f7790cbcbd784d54d54":[5,0,0,5,15,2,0,183],
+"seppuku_2fw_2mcuconf_8h.html#ga9ccd82d55af1633658db54858378c277":[5,0,0,5,15,2,0,202],
 "seppuku_2fw_2mcuconf_8h.html#ga9d125141e8f301e2b6d590067fd7890e":[5,0,0,5,15,2,0,88],
 "seppuku_2fw_2mcuconf_8h.html#ga9f72e7206a6300a9d86bccf73f85279a":[5,0,0,5,15,2,0,152],
 "seppuku_2fw_2mcuconf_8h.html#gaa0e96044581d47cc827e2cbeb0227a8e":[5,0,0,5,15,2,0,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX117 =
 "sparky2_2fw_2mcuconf_8h.html#ga02c568ae2c758034cdf478f81b447af3":[5,0,0,5,17,2,0,177],
 "sparky2_2fw_2mcuconf_8h.html#ga0324f80d5775896053a81432c0475ac3":[5,0,0,5,17,2,0,12],
 "sparky2_2fw_2mcuconf_8h.html#ga0330335b8223bb2fd7b30a8bf6748a25":[5,0,0,5,17,2,0,157],
-"sparky2_2fw_2mcuconf_8h.html#ga035ea0d8259c0f89306c6a7d344705f2":[5,0,0,5,17,2,0,58],
-"sparky2_2fw_2mcuconf_8h.html#ga050fc59913309402f34dd2ea6ab3cdf8":[5,0,0,5,17,2,0,175],
-"sparky2_2fw_2mcuconf_8h.html#ga05b49e91f478558d33b2b862718758fa":[5,0,0,5,17,2,0,94]
+"sparky2_2fw_2mcuconf_8h.html#ga035ea0d8259c0f89306c6a7d344705f2":[5,0,0,5,17,2,0,58]
 };

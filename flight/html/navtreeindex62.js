@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"group___s_p_r_f3_e.html#ga8ba9d34083f9ce9a3422d8bb01f83c19":[2,6,17,85],
+"group___s_p_r_f3_e.html#ga8ba9d34083f9ce9a3422d8bb01f83c19":[2,5,15,85],
 "group___s_p_r_f3_e.html#ga8de02d8defc3d19ac2f9ad75fc5441c1":[2,6,17,29],
 "group___s_p_r_f3_e.html#ga8de02d8defc3d19ac2f9ad75fc5441c1":[2,5,15,29],
 "group___s_p_r_f3_e.html#ga8e66b285628ba1cb8e22932297f4b952":[2,6,17,56],
@@ -122,8 +124,8 @@ var NAVTREEINDEX62 =
 "group___s_p_r_f3_e.html#gac7edbfa43685b86203f055c78fdcea8b":[2,5,15,42],
 "group___s_p_r_f3_e.html#gacaddfb7f3f796800cf2fc2f779403aa6":[2,6,17,237],
 "group___s_p_r_f3_e.html#gacaddfb7f3f796800cf2fc2f779403aa6":[2,5,15,237],
-"group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,6,17,48],
 "group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,6,17,49],
+"group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,6,17,48],
 "group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,5,15,48],
 "group___s_p_r_f3_e.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,5,15,49],
 "group___s_p_r_f3_e.html#gacc9b34fbd61773571dbe45ac3a3ca081":[2,6,17,19],
@@ -234,7 +236,7 @@ var NAVTREEINDEX62 =
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,6,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,7,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,8,0,2,2],
-"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,9,0,2,5],
+"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,10,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,11,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,3,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,12,0,2,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,16,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,8,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,17,0,2,5],
-"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,9,0,2,5],
-"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,10,0,2,5],
-"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,11,0,2,5]
+"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,9,0,2,5]
 };

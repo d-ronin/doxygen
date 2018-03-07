@@ -1,5 +1,7 @@
 var NAVTREEINDEX114 =
 {
+"quanton_2board-info_2usb__conf_8h.html":[5,0,0,5,13,1,3],
+"quanton_2board-info_2usb__conf_8h.html#ga05fe8f364b0f99dddedd65322b6ed290":[5,0,0,5,13,1,3,13],
 "quanton_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,13,1,3,11],
 "quanton_2board-info_2usb__conf_8h.html#ga2623e405d022fc76fe6849e7f4d9023c":[5,0,0,5,13,1,3,14],
 "quanton_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,13,1,3,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX114 =
 "revolution_2board-info_2board__hw__defs_8c.html#ga9180e38c2fdbc0a171920dac3c6c1120":[5,0,0,5,14,1,0,1],
 "revolution_2board-info_2board__hw__defs_8c.html#gab63edc180a907efe4bad610bbb6c2224":[5,0,0,5,14,1,0,14],
 "revolution_2board-info_2board__hw__defs_8c.html#gac5eab6405f67f75d04a86dcf73215d79":[5,0,0,5,14,1,0,13],
-"revolution_2board-info_2board__hw__defs_8c.html#gad2e2d1f80607fc5d0bd9806ba937d6dc":[5,0,0,5,14,1,0,3],
-"revolution_2board-info_2board__hw__defs_8c.html#gae8998ae2740c83f160a18fd0d447c3d9":[5,0,0,5,14,1,0,5],
-"revolution_2board-info_2board__hw__defs_8c.html#gaf14eff61e8f08bddf3904d6fc4f17f15":[5,0,0,5,14,1,0,7]
+"revolution_2board-info_2board__hw__defs_8c.html#gad2e2d1f80607fc5d0bd9806ba937d6dc":[5,0,0,5,14,1,0,3]
 };

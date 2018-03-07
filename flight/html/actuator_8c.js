@@ -47,6 +47,7 @@ var actuator_8c =
     [ "curve2_src", "actuator_8c.html#ga7c686e3a2dfa84c375e555ee4b494c44", null ],
     [ "desired_3d_mask", "actuator_8c.html#gaff127257a3ae8f3e2151789ab01c1a34", null ],
     [ "flight_status_updated", "actuator_8c.html#ga66f2cde210a84b3f404f0dd94f8c62ea", null ],
+    [ "hangtime_leakybucket_timeconstant", "actuator_8c.html#gac5e293fba6cbbad2ebd5182b3d9fa3e5", null ],
     [ "manual_control_cmd_updated", "actuator_8c.html#gac06e984663724f37717398baaaaef6b7", null ],
     [ "mixer_settings_updated", "actuator_8c.html#ga33c0776f38e10ccb9b721c1568ab3bbe", null ],
     [ "motor_mixer", "actuator_8c.html#gaeea8740d6daee7a45e6cd419f92cf913", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12":[2,4,30,6,32],
+"structhott__gam__message.html#aaf612153c3592f8128b6321b7735114d":[2,4,30,6,11],
 "structhott__gam__message.html#ab689e11f295c6fb8e94a8de63164a780":[2,4,30,6,19],
 "structhott__gam__message.html#acd723a5ed81424f7ac06a6664df0ef20":[2,4,30,6,13],
 "structhott__gam__message.html#ad194ea79eb64c10249a37914ff4cc1f9":[2,4,30,6,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "structmsp__raw__imu.html#a214452d3d19ad211f205b7531a659ed6":[2,1,2,3,7],
 "structmsp__raw__imu.html#a43db29e01b471e6835e5572445876010":[2,1,2,3,4],
 "structmsp__raw__imu.html#a53e6504185f5594c848c4937389b85b0":[2,1,2,3,1],
-"structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026":[2,1,2,3,5],
-"structmsp__raw__imu.html#aa11689878f13ec7ac0f98611c4775fca":[2,1,2,3,2],
-"structmsp__raw__imu.html#aa1a7f9750665bda0288555f2189dd0c2":[2,1,2,3,0]
+"structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026":[2,1,2,3,5]
 };
