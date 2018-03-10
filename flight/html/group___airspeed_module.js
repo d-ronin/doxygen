@@ -12,7 +12,6 @@ var group___airspeed_module =
       [ "RbeCol1_old", "struct_g_p_s_globals.html#af241b2b3c538c5df7d613496b1d54949", null ]
     ] ],
     [ "BARO_TEMPERATURE_OFFSET", "group___airspeed_module.html#ga6b379c48bf98a556529861e56fb66e3d", null ],
-    [ "BARO_TRUEAIRSPEED_TIME_CONSTANT_S", "group___airspeed_module.html#gafa7c04d005a2b6c49feea2377a0f8a57", null ],
     [ "GPS_AIRSPEED_BIAS_KI", "group___airspeed_module.html#ga3b573f7ca0593bed1c710f0b5cc0f894", null ],
     [ "GPS_AIRSPEED_BIAS_KI", "group___airspeed_module.html#ga3b573f7ca0593bed1c710f0b5cc0f894", null ],
     [ "GPS_AIRSPEED_BIAS_KP", "group___airspeed_module.html#gadef909795ba9c041c5a84f60ab68a76b", null ],
@@ -39,5 +38,6 @@ var group___airspeed_module =
     [ "gpsNew", "group___airspeed_module.html#ga92e7d8d768e91460a03e1f0ef2c9a443", null ],
     [ "gpsSamplePeriod_ms", "group___airspeed_module.html#gace8d84ee5e0be483c5d6ea9fdc8bff98", null ],
     [ "module_enabled", "group___airspeed_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac", null ],
+    [ "tasFilterTau", "group___airspeed_module.html#ga86f8ee94f456abc2614ea147cb9c382a", null ],
     [ "taskHandle", "group___airspeed_module.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ]
 ];

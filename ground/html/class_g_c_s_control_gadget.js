@@ -11,8 +11,7 @@ var class_g_c_s_control_gadget =
     [ "gamepads", "group___g_c_s_control_gadget_plugin.html#ga1cb6abc684939d2e560ae07ca3a72cda", null ],
     [ "loadConfiguration", "group___g_c_s_control_gadget_plugin.html#ga439722d2b4016bbfaad9486b20c35a1a", null ],
     [ "manualControlCommandUpdated", "group___g_c_s_control_gadget_plugin.html#gaac625204097cbd30812c0143a80ce3ea", null ],
-    [ "readUDPCommand", "group___g_c_s_control_gadget_plugin.html#ga69fe9e7fd531e69ac57247eb50f59874", null ],
-    [ "sticksChangedLocally", "group___g_c_s_control_gadget_plugin.html#gae9a31787be607e3bf9b8b6b6a3e47983", null ],
+    [ "sticksChangedLocally", "group___g_c_s_control_gadget_plugin.html#ga907052a64261706ebf69247bed5d69b8", null ],
     [ "sticksChangedRemotely", "group___g_c_s_control_gadget_plugin.html#gadf32420d5e7ad8ff1d32752209406e28", null ],
     [ "widget", "group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f", null ]
 ];

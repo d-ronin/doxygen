@@ -18,7 +18,5 @@ var group___p_i_o_s___m_s5611 =
       [ "MS5611_OSR_4096", "group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3a04b0d6cfe18bcce2c7ddc8fe21f7f6a2", null ]
     ] ],
     [ "PIOS_MS5611_Init", "group___p_i_o_s___m_s5611.html#gae108503f762eeeeaaf6e105249ba8891", null ],
-    [ "PIOS_MS5611_SPI_Init", "group___p_i_o_s___m_s5611.html#ga6d97a80c294aea51408e545356c3ffc4", null ],
-    [ "PIOS_MS5611_SPI_Test", "group___p_i_o_s___m_s5611.html#gadb327cd4828fdb62e20ccf9a69d48636", null ],
-    [ "PIOS_MS5611_Test", "group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b", null ]
+    [ "PIOS_MS5611_SPI_Init", "group___p_i_o_s___m_s5611.html#ga6d97a80c294aea51408e545356c3ffc4", null ]
 ];

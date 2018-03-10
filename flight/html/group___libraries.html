@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -370,15 +370,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga08f1806dd1c0c40a7b8ec179690f883c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c">check_safe_to_arm</a> ()</td></tr>
 <tr class="memdesc:ga08f1806dd1c0c40a7b8ec179690f883c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check it is safe to arm in this position.  <a href="#ga08f1806dd1c0c40a7b8ec179690f883c">More...</a><br/></td></tr>
 <tr class="separator:ga08f1806dd1c0c40a7b8ec179690f883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd6c95f5fd14d4ae70c1ee9335d9883a"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gadd6c95f5fd14d4ae70c1ee9335d9883a">check_stabilization_settings</a> (int index, bool multirotor)</td></tr>
-<tr class="memdesc:gadd6c95f5fd14d4ae70c1ee9335d9883a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a stabilization mode switch position for safety.  <a href="#gadd6c95f5fd14d4ae70c1ee9335d9883a">More...</a><br/></td></tr>
-<tr class="separator:gadd6c95f5fd14d4ae70c1ee9335d9883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60c5e9627f313afd5461477ff3dd6f8d"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga60c5e9627f313afd5461477ff3dd6f8d">check_stabilization_settings</a> (int index, bool multirotor, SharedDefsThrustModeStabBankOptions thrust_mode)</td></tr>
+<tr class="memdesc:ga60c5e9627f313afd5461477ff3dd6f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a stabilization mode switch position for safety.  <a href="#ga60c5e9627f313afd5461477ff3dd6f8d">More...</a><br/></td></tr>
+<tr class="separator:ga60c5e9627f313afd5461477ff3dd6f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01463951db48cdec6bf0f5172c4d5314"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga01463951db48cdec6bf0f5172c4d5314">check_stabilization_rates</a> ()</td></tr>
 <tr class="memdesc:ga01463951db48cdec6bf0f5172c4d5314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a stabilization mode switch position for safety.  <a href="#ga01463951db48cdec6bf0f5172c4d5314">More...</a><br/></td></tr>
 <tr class="separator:ga01463951db48cdec6bf0f5172c4d5314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6209acbff7034720890b0398f8517743"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga6209acbff7034720890b0398f8517743">check_safe_autonomous</a> ()</td></tr>
 <tr class="memdesc:ga6209acbff7034720890b0398f8517743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the system is safe for autonomous flight.  <a href="#ga6209acbff7034720890b0398f8517743">More...</a><br/></td></tr>
 <tr class="separator:ga6209acbff7034720890b0398f8517743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb4ee43ed017a2dc95ffa619e34e9cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gabb4ee43ed017a2dc95ffa619e34e9cef">DONT_BUILD_IF</a> (MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!=MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_NUMELEM, StabSettingsNumElem)</td></tr>
+<tr class="separator:gabb4ee43ed017a2dc95ffa619e34e9cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga377bdf29072c428603281201592be0a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga377bdf29072c428603281201592be0a7">DONT_BUILD_IF</a> (MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!=MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_NUMELEM, StabSettingsNumElem2)</td></tr>
+<tr class="separator:ga377bdf29072c428603281201592be0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d0a534dd25bcd432804e56518620795"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga9d0a534dd25bcd432804e56518620795">CovariancePrediction</a> (float <a class="el" href="group___i_n_s_g_p_s.html#ga8df5a9c6b80931e9a78e1ce3aa7fc8d7">F</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>][<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>], float <a class="el" href="group___i_n_s_g_p_s.html#ga728acb2fd56f38a4cab69ede7b3a027e">G</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>][<a class="el" href="group___i_n_s_g_p_s.html#ga5e19ccd5f155ba2afa55a6a7345d1ef3">NUMW</a>], float <a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[<a class="el" href="group___i_n_s_g_p_s.html#ga5e19ccd5f155ba2afa55a6a7345d1ef3">NUMW</a>], float dT, float <a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>][<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>])</td></tr>
 <tr class="separator:ga9d0a534dd25bcd432804e56518620795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc7350401ea330a4b250a3c6fb8a4468"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gadc7350401ea330a4b250a3c6fb8a4468">SerialUpdate</a> (float <a class="el" href="group___i_n_s_g_p_s.html#ga4080397a0d248e4c99d6f284b187f206">H</a>[<a class="el" href="group___i_n_s_g_p_s.html#ga75c330715104282de4ad5308020e6d8e">NUMV</a>][<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>], float <a class="el" href="group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a>[<a class="el" href="group___i_n_s_g_p_s.html#ga75c330715104282de4ad5308020e6d8e">NUMV</a>], float Z[<a class="el" href="group___i_n_s_g_p_s.html#ga75c330715104282de4ad5308020e6d8e">NUMV</a>], float Y[<a class="el" href="group___i_n_s_g_p_s.html#ga75c330715104282de4ad5308020e6d8e">NUMV</a>], float <a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>][<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>], float <a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[<a class="el" href="group___i_n_s_g_p_s.html#gab18729b0ee7c9a21f49dd4b564aee66d">NUMX</a>], uint16_t SensorsUsed)</td></tr>
@@ -1069,7 +1073,7 @@ Variables</h2></td></tr>
 <p>Check the system is safe for autonomous flight. </p>
 <p>If an autonomous mode is available, make sure all the configurations are valid for it </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00291">291</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00304">304</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1102,7 @@ Variables</h2></td></tr>
 <p>If the system is disarmed, look for a variety of conditions that make it unsafe to arm (that might not be dangerous to engage once flying).</p>
 <p>Note this does not check every possible situation that prevents arming. In particular, transmitter_control checks for failsafe and ranges and switch arming configuration to allow/prevent arming. </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00250">250</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00263">263</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1127,11 +1131,11 @@ Variables</h2></td></tr>
 <p>Check the rates achieved via stabilization are ones that can be tracked by the gyros as configured. </p>
 <dl class="section return"><dt>Returns</dt><dd>error code if not </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00320">320</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00333">333</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gadd6c95f5fd14d4ae70c1ee9335d9883a"></a>
+<a class="anchor" id="ga60c5e9627f313afd5461477ff3dd6f8d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1148,7 +1152,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>multirotor</em>&#160;</td>
+          <td class="paramname"><em>multirotor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SharedDefsThrustModeStabBankOptions&#160;</td>
+          <td class="paramname"><em>thrust_mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1173,7 +1183,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SYSTEMALARMS_CONFIGERROR_NONE or SYSTEMALARMS_CONFIGERROR_MULTIROTOR </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00183">183</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00192">192</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1201,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Run a preflight check over the hardware configuration and currently active modules </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00068">68</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00069">69</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1318,6 +1328,58 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">taskelems2&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gabb4ee43ed017a2dc95ffa619e34e9cef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!&#160;</td>
+          <td class="paramname"> = <code>MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_NUMELEM</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StabSettingsNumElem&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga377bdf29072c428603281201592be0a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!&#160;</td>
+          <td class="paramname"> = <code>MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_NUMELEM</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StabSettingsNumElem2&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -2360,7 +2422,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00341">341</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00354">354</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>

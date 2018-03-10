@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -137,6 +137,10 @@ $(document).ready(function(){initNavTree('stabilization_8c.html','');});
 <code>#include &quot;systemsettings.h&quot;</code><br/>
 <code>#include &quot;manualcontrolcommand.h&quot;</code><br/>
 <code>#include &quot;vbarsettings.h&quot;</code><br/>
+<code>#include &quot;altitudeholdsettings.h&quot;</code><br/>
+<code>#include &quot;altitudeholdstate.h&quot;</code><br/>
+<code>#include &quot;positionactual.h&quot;</code><br/>
+<code>#include &quot;velocityactual.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="coordinate__conversions_8h_source.html">coordinate_conversions.h</a>&quot;</code><br/>
 <code>#include &quot;physical_constants.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pid_8h_source.html">pid.h</a>&quot;</code><br/>
@@ -224,8 +228,12 @@ Functions</h2></td></tr>
 <tr class="separator:gac7cd8c1e2e1fac4f629193cdb9b2b933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad619c15b0c0589e754d5937b6f7ec557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gad619c15b0c0589e754d5937b6f7ec557">MODULE_HIPRI_INITCALL</a> (<a class="el" href="group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b">StabilizationInitialize</a>, <a class="el" href="group___stabilization_module.html#ga6190a7e200476bf20da7b47ac4107973">StabilizationStart</a>)</td></tr>
 <tr class="separator:gad619c15b0c0589e754d5937b6f7ec557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae51ec8d7a8c86236d4ae3aab1d917796"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae51ec8d7a8c86236d4ae3aab1d917796">calculate_thrust</a> (StabilizationDesiredThrustModeOptions <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>, FlightStatusData *flightStatus, SystemSettingsAirframeTypeOptions <a class="el" href="group___actuator_module.html#ga2850723437c013e81ea5232f44b5e7f1">airframe_type</a>, float desired_thrust)</td></tr>
+<tr class="separator:gae51ec8d7a8c86236d4ae3aab1d917796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3782701fb17bad618b59523be488b7ac"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga3782701fb17bad618b59523be488b7ac">remap_smoothing_mode</a> (uint8_t m)</td></tr>
 <tr class="separator:ga3782701fb17bad618b59523be488b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f43a6de9003f69ea7ebe8878e35aebf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga0f43a6de9003f69ea7ebe8878e35aebf">calculate_vert_pids</a> (float dT)</td></tr>
+<tr class="separator:ga0f43a6de9003f69ea7ebe8878e35aebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -255,18 +263,12 @@ Variables</h2></td></tr>
 <tr class="separator:gab9b6ba57cecbcf5f2414e9c87ce43aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga953d14b1e6e45afc361e0898296bf346"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga953d14b1e6e45afc361e0898296bf346">vbar_decay</a> = 0.991f</td></tr>
 <tr class="separator:ga953d14b1e6e45afc361e0898296bf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b7c75ff9222444babfe603f25b91233"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233">pids</a> [<a class="el" href="group___stabilization_module.html#ggabc5c98fcc1211af2b80116dd6e0a035daa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>]</td></tr>
+<tr class="memitem:ga1b7c75ff9222444babfe603f25b91233"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga1b7c75ff9222444babfe603f25b91233">pids</a> [<a class="el" href="group___stabilization_module.html#ggabc5c98fcc1211af2b80116dd6e0a035daa9ba8c316889eca7f244f9e458323e1c">PID_MAX</a>]</td></tr>
 <tr class="separator:ga1b7c75ff9222444babfe603f25b91233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31e7b34d02a31718075e75ab2528204e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga31e7b34d02a31718075e75ab2528204e">rc_smoothing</a></td></tr>
+<tr class="memitem:ga31e7b34d02a31718075e75ab2528204e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga31e7b34d02a31718075e75ab2528204e">rc_smoothing</a></td></tr>
 <tr class="separator:ga31e7b34d02a31718075e75ab2528204e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid__deadband.html">pid_deadband</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaafbd15fed15f3557b1f9e978ffb4a0e1">deadbands</a> = NULL</td></tr>
 <tr class="separator:gaafbd15fed15f3557b1f9e978ffb4a0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gac0da75e77e4e4f4b1e6c1fb6de575f65">settings_flag</a> = true</td></tr>
-<tr class="separator:gac0da75e77e4e4f4b1e6c1fb6de575f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee62cd2c02fc5aa987797d1137dbf4ca"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaee62cd2c02fc5aa987797d1137dbf4ca">flightStatusUpdated</a> = true</td></tr>
-<tr class="separator:gaee62cd2c02fc5aa987797d1137dbf4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4818f5cc62777e3be1fcec653127d089"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga4818f5cc62777e3be1fcec653127d089">systemSettingsUpdated</a> = true</td></tr>
-<tr class="separator:ga4818f5cc62777e3be1fcec653127d089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control the UAV attitude to StabilizationDesired. </p>

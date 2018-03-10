@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('baro__airspeed__analog_8c_source.html'
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;baroairspeed.h&quot;</span>       <span class="comment">// object that will be updated by the module</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__thread_8h.html">pios_thread.h</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPXV7002) || defined (PIOS_INCLUDE_MPXV5004)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPXV7002) || defined (PIOS_INCLUDE_MPXV5004) || defined (PIOS_INCLUDE_ADC)</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define SAMPLING_DELAY_MS_MPXV                  10     //Update at 100Hz</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CALIBRATION_IDLE_MS                     2000   //Time to wait before calibrating, in [ms]</span></div>
@@ -167,84 +167,95 @@ $(document).ready(function(){initNavTree('baro__airspeed__analog_8c_source.html'
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                calibrationCount++; <span class="comment">/*DO NOT MOVE FROM BEFORE sensorCalibration=... LINE, OR ELSE WILL HAVE DIVIDE BY ZERO */</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                uint16_t sensorCalibration;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV7002){</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                sensorCalibration=<a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga520aa61ca1d841e66d5e882a03d36d53">PIOS_MPXV7002_Calibrate</a>(airspeedADCPin, calibrationCount-CALIBRATION_IDLE_MS/SAMPLING_DELAY_MS_MPXV);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga41b25e0b6038d2a270e131d793dfcbfa">PIOS_MPXV7002_UpdateCalibration</a>(sensorCalibration); <span class="comment">//This makes sense for the user if the initial calibration was not good and the user does not wish to reboot.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV5004){</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                sensorCalibration=<a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga19180270b31548797abd9fa9ab186ea8">PIOS_MPXV5004_Calibrate</a>(airspeedADCPin, calibrationCount-CALIBRATION_IDLE_MS/SAMPLING_DELAY_MS_MPXV);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="group___p_i_o_s___m_p_x_v5004.html#gabee93eb3cfa3b209d265726ca2619e67">PIOS_MPXV5004_UpdateCalibration</a>(sensorCalibration); <span class="comment">//This makes sense for the user if the initial calibration was not good and the user does not wish to reboot.</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                baroAirspeedData-&gt;BaroConnected = BAROAIRSPEED_BAROCONNECTED_TRUE;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPXV7002) || defined (PIOS_INCLUDE_MPXV5004) </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV7002){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                sensorCalibration=<a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga520aa61ca1d841e66d5e882a03d36d53">PIOS_MPXV7002_Calibrate</a>(airspeedADCPin, calibrationCount-CALIBRATION_IDLE_MS/SAMPLING_DELAY_MS_MPXV);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga41b25e0b6038d2a270e131d793dfcbfa">PIOS_MPXV7002_UpdateCalibration</a>(sensorCalibration); <span class="comment">//This makes sense for the user if the initial calibration was not good and the user does not wish to reboot.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV5004){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                sensorCalibration=<a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga19180270b31548797abd9fa9ab186ea8">PIOS_MPXV5004_Calibrate</a>(airspeedADCPin, calibrationCount-CALIBRATION_IDLE_MS/SAMPLING_DELAY_MS_MPXV);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="group___p_i_o_s___m_p_x_v5004.html#gabee93eb3cfa3b209d265726ca2619e67">PIOS_MPXV5004_UpdateCalibration</a>(sensorCalibration); <span class="comment">//This makes sense for the user if the initial calibration was not good and the user does not wish to reboot.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="comment">//Set settings UAVO. The airspeed UAVO is set elsewhere in the function.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span> (calibrationCount == (CALIBRATION_IDLE_MS + CALIBRATION_COUNT_MS)/SAMPLING_DELAY_MS_MPXV)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                AirspeedSettingsZeroPointSet(&amp;sensorCalibration);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">//Get CAS</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">float</span> calibratedAirspeed=0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV7002){</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                calibratedAirspeed = <a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga4b633792da46f4b0fe82dcd3d17f416c">PIOS_MPXV7002_ReadAirspeed</a>(airspeedADCPin);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">if</span> (calibratedAirspeed &lt; 0) <span class="comment">//This only occurs when there&#39;s a bad ADC reading.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="comment">//Get sensor value, just for telemetry purposes.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="comment">//This is a silly waste of resources, and should probably be removed at some point in the future.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="comment">//At this time, PIOS_MPXV7002_Measure() should become a static function and be removed from the header file.</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="comment">//Moreover, due to the way the ADC driver is currently written, this code will return 0 more often than</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="comment">//not. This is something that will have to change on the ADC side of things.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                baroAirspeedData-&gt;SensorValue=<a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga705251be57f475b27e6b587ab5bc9e92">PIOS_MPXV7002_Measure</a>(airspeedADCPin);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV5004){</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                calibratedAirspeed = <a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga04bd08ddc5bad453125a67cdde7446a5">PIOS_MPXV5004_ReadAirspeed</a>(airspeedADCPin);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">if</span> (calibratedAirspeed &lt; 0) <span class="comment">//This only occurs when there&#39;s a bad ADC reading.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="comment">//Get sensor value, just for telemetry purposes.</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="comment">//This is a silly waste of resources, and should probably be removed at some point in the future.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="comment">//At this time, PIOS_MPXV7002_Measure() should become a static function and be removed from the header file.</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="comment">//Moreover, due to the way the ADC driver is currently written, this code will return 0 more often than</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">//not. This is something that will have to change on the ADC side of things.</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                baroAirspeedData-&gt;SensorValue=<a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga9d1a16484451fe9fa859327b682d1765">PIOS_MPXV5004_Measure</a>(airspeedADCPin);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">//Filter CAS</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">float</span> alpha=SAMPLING_DELAY_MS_MPXV/(SAMPLING_DELAY_MS_MPXV + ANALOG_BARO_AIRSPEED_TIME_CONSTANT_MS); <span class="comment">//Low pass filter.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">float</span> filteredAirspeed = calibratedAirspeed*(alpha) + baroAirspeedData-&gt;CalibratedAirspeed*(1.0f-alpha);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">//Set two values, one for the UAVO airspeed sensor reading, and the other for the GPS corrected one</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        baroAirspeedData-&gt;CalibratedAirspeed = filteredAirspeed;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">baro_airspeedGetAnalog</a>(BaroAirspeedData *baroAirspeedData, uint32_t *lastSysTime, uint8_t airspeedSensorType, int8_t airspeedADCPin)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">/* Do nothing when driver support not compiled. */</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a>(lastSysTime, 1000);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                baroAirspeedData-&gt;BaroConnected = BAROAIRSPEED_BAROCONNECTED_TRUE;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="comment">//Set settings UAVO. The airspeed UAVO is set elsewhere in the function.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span> (calibrationCount == (CALIBRATION_IDLE_MS + CALIBRATION_COUNT_MS)/SAMPLING_DELAY_MS_MPXV)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                AirspeedSettingsZeroPointSet(&amp;sensorCalibration);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">//Get CAS</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">float</span> calibratedAirspeed=0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPXV7002) || defined (PIOS_INCLUDE_MPXV5004) </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV7002){</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                calibratedAirspeed = <a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga4b633792da46f4b0fe82dcd3d17f416c">PIOS_MPXV7002_ReadAirspeed</a>(airspeedADCPin);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">if</span> (calibratedAirspeed &lt; 0) <span class="comment">//This only occurs when there&#39;s a bad ADC reading.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="comment">//Get sensor value, just for telemetry purposes.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="comment">//This is a silly waste of resources, and should probably be removed at some point in the future.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="comment">//At this time, PIOS_MPXV7002_Measure() should become a static function and be removed from the header file.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="comment">//Moreover, due to the way the ADC driver is currently written, this code will return 0 more often than</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="comment">//not. This is something that will have to change on the ADC side of things.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                baroAirspeedData-&gt;SensorValue=<a class="code" href="group___p_i_o_s___m_p_x_v7002.html#ga705251be57f475b27e6b587ab5bc9e92">PIOS_MPXV7002_Measure</a>(airspeedADCPin);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(airspeedSensorType==AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_DIYDRONESMPXV5004){</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                calibratedAirspeed = <a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga04bd08ddc5bad453125a67cdde7446a5">PIOS_MPXV5004_ReadAirspeed</a>(airspeedADCPin);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span> (calibratedAirspeed &lt; 0) <span class="comment">//This only occurs when there&#39;s a bad ADC reading.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="comment">//Get sensor value, just for telemetry purposes.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="comment">//This is a silly waste of resources, and should probably be removed at some point in the future.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">//At this time, PIOS_MPXV7002_Measure() should become a static function and be removed from the header file.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="comment">//Moreover, due to the way the ADC driver is currently written, this code will return 0 more often than</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="comment">//not. This is something that will have to change on the ADC side of things.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                baroAirspeedData-&gt;SensorValue=<a class="code" href="group___p_i_o_s___m_p_x_v5004.html#ga9d1a16484451fe9fa859327b682d1765">PIOS_MPXV5004_Measure</a>(airspeedADCPin);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (airspeedSensorType == AIRSPEEDSETTINGS_AIRSPEEDSENSORTYPE_RAWANALOG) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="comment">// will return raw ADC reading in mV (typically in range [0, 3300])</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                calibratedAirspeed = <a class="code" href="group___p_i_o_s___a_d_c.html#gaabc5ba93d4758f49252f94b8429e1c8a">PIOS_ADC_GetChannelRaw</a>(airspeedADCPin);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                baroAirspeedData-&gt;SensorValue = calibratedAirspeed;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">//Filter CAS</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">float</span> alpha=SAMPLING_DELAY_MS_MPXV/(SAMPLING_DELAY_MS_MPXV + ANALOG_BARO_AIRSPEED_TIME_CONSTANT_MS); <span class="comment">//Low pass filter.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">float</span> filteredAirspeed = calibratedAirspeed*(alpha) + baroAirspeedData-&gt;CalibratedAirspeed*(1.0f-alpha);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">//Set two values, one for the UAVO airspeed sensor reading, and the other for the GPS corrected one</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        baroAirspeedData-&gt;CalibratedAirspeed = filteredAirspeed;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">baro_airspeedGetAnalog</a>(BaroAirspeedData *baroAirspeedData, uint32_t *lastSysTime, uint8_t airspeedSensorType, int8_t airspeedADCPin)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="comment">/* Do nothing when driver support not compiled. */</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a>(lastSysTime, 1000);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v5004_html_ga04bd08ddc5bad453125a67cdde7446a5"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v5004.html#ga04bd08ddc5bad453125a67cdde7446a5">PIOS_MPXV5004_ReadAirspeed</a></div><div class="ttdeci">float PIOS_MPXV5004_ReadAirspeed(uint8_t airspeedADCPin)</div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v5004_html_gabee93eb3cfa3b209d265726ca2619e67"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v5004.html#gabee93eb3cfa3b209d265726ca2619e67">PIOS_MPXV5004_UpdateCalibration</a></div><div class="ttdeci">void PIOS_MPXV5004_UpdateCalibration(uint16_t zeroPoint)</div></div>
-<div class="ttc" id="group___airspeed_module_html_ga478c3f65056ff1cbeefde706008579ed"><div class="ttname"><a href="group___airspeed_module.html#ga478c3f65056ff1cbeefde706008579ed">airspeedSensorType</a></div><div class="ttdeci">static uint8_t airspeedSensorType</div><div class="ttdef"><b>Definition:</b> <a href="airspeed_8c_source.html#l00097">airspeed.c:97</a></div></div>
+<div class="ttc" id="group___airspeed_module_html_ga478c3f65056ff1cbeefde706008579ed"><div class="ttname"><a href="group___airspeed_module.html#ga478c3f65056ff1cbeefde706008579ed">airspeedSensorType</a></div><div class="ttdeci">static uint8_t airspeedSensorType</div><div class="ttdef"><b>Definition:</b> <a href="airspeed_8c_source.html#l00095">airspeed.c:95</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v7002_html_ga4b633792da46f4b0fe82dcd3d17f416c"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v7002.html#ga4b633792da46f4b0fe82dcd3d17f416c">PIOS_MPXV7002_ReadAirspeed</a></div><div class="ttdeci">float PIOS_MPXV7002_ReadAirspeed(uint8_t airspeedADCPin)</div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v7002_html_ga41b25e0b6038d2a270e131d793dfcbfa"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v7002.html#ga41b25e0b6038d2a270e131d793dfcbfa">PIOS_MPXV7002_UpdateCalibration</a></div><div class="ttdeci">void PIOS_MPXV7002_UpdateCalibration(uint16_t zeroPoint)</div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v7002_html_ga520aa61ca1d841e66d5e882a03d36d53"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v7002.html#ga520aa61ca1d841e66d5e882a03d36d53">PIOS_MPXV7002_Calibrate</a></div><div class="ttdeci">uint16_t PIOS_MPXV7002_Calibrate(uint8_t airspeedADCPin, uint16_t calibrationCount)</div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v7002_html_ga705251be57f475b27e6b587ab5bc9e92"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v7002.html#ga705251be57f475b27e6b587ab5bc9e92">PIOS_MPXV7002_Measure</a></div><div class="ttdeci">uint16_t PIOS_MPXV7002_Measure(uint8_t airspeedADCPin)</div></div>
-<div class="ttc" id="group___airspeed_module_html_gabd8c33218836877470893e92f5cfb76a"><div class="ttname"><a href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">baro_airspeedGetAnalog</a></div><div class="ttdeci">void baro_airspeedGetAnalog(BaroAirspeedData *baroAirspeedData, uint32_t *lastSysTime, uint8_t airspeedSensorType, int8_t airspeedADCPin)</div><div class="ttdef"><b>Definition:</b> <a href="baro__airspeed__analog_8c_source.html#l00139">baro_airspeed_analog.c:139</a></div></div>
+<div class="ttc" id="group___airspeed_module_html_gabd8c33218836877470893e92f5cfb76a"><div class="ttname"><a href="group___airspeed_module.html#gabd8c33218836877470893e92f5cfb76a">baro_airspeedGetAnalog</a></div><div class="ttdeci">void baro_airspeedGetAnalog(BaroAirspeedData *baroAirspeedData, uint32_t *lastSysTime, uint8_t airspeedSensorType, int8_t airspeedADCPin)</div><div class="ttdef"><b>Definition:</b> <a href="baro__airspeed__analog_8c_source.html#l00149">baro_airspeed_analog.c:149</a></div></div>
 <div class="ttc" id="group___p_i_o_s___thread_html_ga2b57ee25cb47d455143fa9f009d8e937"><div class="ttname"><a href="group___p_i_o_s___thread.html#ga2b57ee25cb47d455143fa9f009d8e937">PIOS_Thread_Sleep_Until</a></div><div class="ttdeci">void PIOS_Thread_Sleep_Until(uint32_t *previous_ms, uint32_t increment_ms)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__thread_8c_source.html#l00129">pios_thread.c:129</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v5004_html_ga9d1a16484451fe9fa859327b682d1765"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v5004.html#ga9d1a16484451fe9fa859327b682d1765">PIOS_MPXV5004_Measure</a></div><div class="ttdeci">uint16_t PIOS_MPXV5004_Measure(uint8_t airspeedADCPin)</div></div>
-<div class="ttc" id="group___control_html_ga8212bdcf43b96930a3cb55cfad7b7133"><div class="ttname"><a href="group___control.html#ga8212bdcf43b96930a3cb55cfad7b7133">lastSysTime</a></div><div class="ttdeci">static uint32_t lastSysTime</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00096">transmitter_control.c:96</a></div></div>
+<div class="ttc" id="group___p_i_o_s___a_d_c_html_gaabc5ba93d4758f49252f94b8429e1c8a"><div class="ttname"><a href="group___p_i_o_s___a_d_c.html#gaabc5ba93d4758f49252f94b8429e1c8a">PIOS_ADC_GetChannelRaw</a></div><div class="ttdeci">int32_t PIOS_ADC_GetChannelRaw(uint32_t channel)</div><div class="ttdoc">Reads from an ADC channel this is an abstraction of the lower devices channels are sequentially added...</div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8c_source.html#l00159">pios_adc.c:159</a></div></div>
+<div class="ttc" id="group___control_html_ga8212bdcf43b96930a3cb55cfad7b7133"><div class="ttname"><a href="group___control.html#ga8212bdcf43b96930a3cb55cfad7b7133">lastSysTime</a></div><div class="ttdeci">static uint32_t lastSysTime</div><div class="ttdef"><b>Definition:</b> <a href="transmitter__control_8c_source.html#l00095">transmitter_control.c:95</a></div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_x_v5004_html_ga19180270b31548797abd9fa9ab186ea8"><div class="ttname"><a href="group___p_i_o_s___m_p_x_v5004.html#ga19180270b31548797abd9fa9ab186ea8">PIOS_MPXV5004_Calibrate</a></div><div class="ttdeci">uint16_t PIOS_MPXV5004_Calibrate(uint8_t airspeedADCPin, uint16_t calibrationCount)</div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

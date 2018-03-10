@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -133,47 +133,47 @@ $(document).ready(function(){initNavTree('gcscontrolgadget_8h_source.html','');}
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gcscontrolgadgetconfiguration_8h.html">gcscontrolgadgetconfiguration.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QUdpSocket&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QHostAddress&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gcscontrol_8h.html">gcscontrolplugin/gcscontrol.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;sdlgamepad/sdlgamepad.h&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// UAVOs</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;manualcontrolcommand.h&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">namespace </span>Core {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span><a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">using namespace </span>Core;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_g_c_s_control_gadget.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>(QString classId, <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *widget, QWidget *parent = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                     QObject *plugin = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ~<a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">   61</a></span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">   62</a></span>&#160;    QWidget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">widget</a>() { <span class="keywordflow">return</span> (QWidget *)m_widget; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">   63</a></span>&#160;    QString <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">contextHelpId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> QString(); }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> loadConfiguration(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ManualControlCommand *getManualControlCommand();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_g_c_s_control.html">GCSControl</a> *getGcsControl();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> constrain(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> setGcsReceiver(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QHostAddress&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gcscontrol_8h.html">gcscontrolplugin/gcscontrol.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;sdlgamepad/sdlgamepad.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// UAVOs</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;manualcontrolcommand.h&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_i_u_a_v_gadget.html">IUAVGadget</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span><a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">using namespace </span>Core;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_g_c_s_control_gadget.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>(QString classId, <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *widget, QWidget *parent = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                     QObject *plugin = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="class_g_c_s_control_gadget.html">GCSControlGadget</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">   60</a></span>&#160;    <a class="code" href="class_q_list.html">QList&lt;int&gt;</a> <a class="code" href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">   61</a></span>&#160;    QWidget *<a class="code" href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">widget</a>() { <span class="keywordflow">return</span> (QWidget *)m_widget; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">   62</a></span>&#160;    QString <a class="code" href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">contextHelpId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> QString(); }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> loadConfiguration(<a class="code" href="class_core_1_1_i_u_a_v_gadget_configuration.html">IUAVGadgetConfiguration</a> *config);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ManualControlCommand *getManualControlCommand();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_g_c_s_control.html">GCSControl</a> *getGcsControl();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> constrain(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> setGcsReceiver(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">double</span> rightY, <span class="keywordtype">double</span> arming);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QTime joystickTime;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a> *m_widget;</div>
@@ -196,38 +196,36 @@ $(document).ready(function(){initNavTree('gcscontrolgadget_8h_source.html','');}
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">double</span> bound(<span class="keywordtype">double</span> input);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">double</span> wrap(<span class="keywordtype">double</span> input);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> channelReverse[8];</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QUdpSocket *control_sock;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;signals:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> sticksChangedRemotely(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">protected</span> slots:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> manualControlCommandUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> sticksChangedLocally(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> readUDPCommand();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> flightModeChanged(ManualControlSettings::FlightModePositionOptions mode);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> enableControl(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// signals from joystick</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> gamepads(quint8 count);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">void</span> buttonState(ButtonNumber number, <span class="keywordtype">bool</span> pressed);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> axesValues(QListInt16 values);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // GCSControlGADGET_H_</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;signals:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> sticksChangedRemotely(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span> slots:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> manualControlCommandUpdated(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> sticksChangedLocally(<span class="keywordtype">double</span> leftX, <span class="keywordtype">double</span> leftY, <span class="keywordtype">double</span> rightX, <span class="keywordtype">double</span> rightY, <span class="keywordtype">double</span> arming);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> flightModeChanged(ManualControlSettings::FlightModePositionOptions mode);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> enableControl(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// signals from joystick</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> gamepads(quint8 count);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined(USE_SDL)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">void</span> buttonState(ButtonNumber number, <span class="keywordtype">bool</span> pressed);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> axesValues(QListInt16 values);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // GCSControlGADGET_H_</span></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget.html">Core::IUAVGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadget_8h_source.html#l00045">iuavgadget.h:45</a></div></div>
 <div class="ttc" id="class_g_c_s_control_html"><div class="ttname"><a href="class_g_c_s_control.html">GCSControl</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrol_8h_source.html#l00039">gcscontrol.h:39</a></div></div>
-<div class="ttc" id="class_g_c_s_control_gadget_widget_html"><div class="ttname"><a href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetwidget_8h_source.html#l00039">gcscontrolgadgetwidget.h:39</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga36c99e15ded265f21ddeb3b0ef9a344f"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">GCSControlGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00062">gcscontrolgadget.h:62</a></div></div>
-<div class="ttc" id="class_g_c_s_control_gadget_html"><div class="ttname"><a href="class_g_c_s_control_gadget.html">GCSControlGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00053">gcscontrolgadget.h:53</a></div></div>
+<div class="ttc" id="class_g_c_s_control_gadget_widget_html"><div class="ttname"><a href="class_g_c_s_control_gadget_widget.html">GCSControlGadgetWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetwidget_8h_source.html#l00037">gcscontrolgadgetwidget.h:37</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga36c99e15ded265f21ddeb3b0ef9a344f"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga36c99e15ded265f21ddeb3b0ef9a344f">GCSControlGadget::widget</a></div><div class="ttdeci">QWidget * widget()</div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00061">gcscontrolgadget.h:61</a></div></div>
+<div class="ttc" id="class_g_c_s_control_gadget_html"><div class="ttname"><a href="class_g_c_s_control_gadget.html">GCSControlGadget</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00052">gcscontrolgadget.h:52</a></div></div>
 <div class="ttc" id="structbutton_settings_struct_html"><div class="ttname"><a href="structbutton_settings_struct.html">buttonSettingsStruct</a></div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadgetconfiguration_8h_source.html#l00033">gcscontrolgadgetconfiguration.h:33</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_gaebdfdbcaa43f61addf35752163d359d7"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">GCSControlGadget::context</a></div><div class="ttdeci">QList&lt; int &gt; context() const </div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00061">gcscontrolgadget.h:61</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_gaebdfdbcaa43f61addf35752163d359d7"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#gaebdfdbcaa43f61addf35752163d359d7">GCSControlGadget::context</a></div><div class="ttdeci">QList&lt; int &gt; context() const </div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00060">gcscontrolgadget.h:60</a></div></div>
 <div class="ttc" id="iuavgadget_8h_html"><div class="ttname"><a href="iuavgadget_8h.html">iuavgadget.h</a></div></div>
 <div class="ttc" id="gcscontrolgadgetconfiguration_8h_html"><div class="ttname"><a href="gcscontrolgadgetconfiguration_8h.html">gcscontrolgadgetconfiguration.h</a></div></div>
 <div class="ttc" id="class_core_1_1_i_u_a_v_gadget_configuration_html"><div class="ttname"><a href="class_core_1_1_i_u_a_v_gadget_configuration.html">Core::IUAVGadgetConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="iuavgadgetconfiguration_8h_source.html#l00044">iuavgadgetconfiguration.h:44</a></div></div>
-<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga5be6c84c2994367f7f86e3553cf68b19"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">GCSControlGadget::contextHelpId</a></div><div class="ttdeci">QString contextHelpId() const </div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00063">gcscontrolgadget.h:63</a></div></div>
+<div class="ttc" id="group___g_c_s_control_gadget_plugin_html_ga5be6c84c2994367f7f86e3553cf68b19"><div class="ttname"><a href="group___g_c_s_control_gadget_plugin.html#ga5be6c84c2994367f7f86e3553cf68b19">GCSControlGadget::contextHelpId</a></div><div class="ttdeci">QString contextHelpId() const </div><div class="ttdef"><b>Definition:</b> <a href="gcscontrolgadget_8h_source.html#l00062">gcscontrolgadget.h:62</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList&lt; int &gt;</a></div></div>
 <div class="ttc" id="gcscontrol_8h_html"><div class="ttname"><a href="gcscontrol_8h.html">gcscontrol.h</a></div></div>

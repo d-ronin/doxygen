@@ -40,7 +40,7 @@ var searchData=
   ['flightdatamodel',['FlightDataModel',['../group___path.html#ga777bf842aa77abc4db16f1275fac0df0',1,'FlightDataModel']]],
   ['flightlogdownload',['FlightLogDownload',['../group___logging.html#gafa8d640258446f35f1b1b7b1f2085075',1,'FlightLogDownload']]],
   ['flightmodechanged',['flightModeChanged',['../group___g_c_s_control_gadget_plugin.html#gae73b1e75e2295e95a422874769549eb3',1,'GCSControlGadget::flightModeChanged()'],['../group___g_c_s_control_gadget_plugin.html#ga5045cdeb5eeffcc473383a1773da6329',1,'GCSControlGadgetWidget::flightModeChanged()']]],
-  ['flightmodechangedlocaly',['flightModeChangedLocaly',['../group___g_c_s_control_gadget_plugin.html#ga0fdceff1bef5d40634291e52a2d7d2f9',1,'GCSControlGadgetWidget']]],
+  ['flightmodechangedlocally',['flightModeChangedLocally',['../group___g_c_s_control_gadget_plugin.html#ga865bcc649ddf4d69d842ced9aec21d8e',1,'GCSControlGadgetWidget']]],
   ['flightstatsupdated',['flightStatsUpdated',['../group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766',1,'TelemetryMonitor']]],
   ['floatfieldtreeitem',['FloatFieldTreeItem',['../group___u_a_v_object_browser_plugin.html#ga00bf7a8f847e1131f255fa1f2e4e5d6e',1,'FloatFieldTreeItem::FloatFieldTreeItem(UAVObjectField *field, int index, const QList&lt; QVariant &gt; &amp;data, bool scientific=false, TreeItem *parent=nullptr)'],['../group___u_a_v_object_browser_plugin.html#ga1b52afa29abb497b7917ffe61a06116d',1,'FloatFieldTreeItem::FloatFieldTreeItem(UAVObjectField *field, int index, const QVariant &amp;data, bool scientific=false, TreeItem *parent=nullptr)']]],
   ['followmouse',['FollowMouse',['../group___t_l_map_widget.html#gaedd86ba7117c65bc1ad30ff17f18b653',1,'mapcontrol::TLMapWidget']]],

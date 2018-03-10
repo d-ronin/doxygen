@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -150,8 +150,6 @@ Macros</h2></td></tr>
 <tr class="separator:ga3b573f7ca0593bed1c710f0b5cc0f894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe7fe22962ad888bcf99af49ef1d3e78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gabe7fe22962ad888bcf99af49ef1d3e78">GPS_AIRSPEED_TIME_CONSTANT_MS</a>&#160;&#160;&#160;500.0f</td></tr>
 <tr class="separator:gabe7fe22962ad888bcf99af49ef1d3e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa7c04d005a2b6c49feea2377a0f8a57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gafa7c04d005a2b6c49feea2377a0f8a57">BARO_TRUEAIRSPEED_TIME_CONSTANT_S</a>&#160;&#160;&#160;1.0f</td></tr>
-<tr class="separator:gafa7c04d005a2b6c49feea2377a0f8a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b379c48bf98a556529861e56fb66e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga6b379c48bf98a556529861e56fb66e3d">BARO_TEMPERATURE_OFFSET</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:ga6b379c48bf98a556529861e56fb66e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadef909795ba9c041c5a84f60ab68a76b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gadef909795ba9c041c5a84f60ab68a76b">GPS_AIRSPEED_BIAS_KP</a>&#160;&#160;&#160;0.1f</td></tr>
@@ -198,6 +196,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga478c3f65056ff1cbeefde706008579ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace8d84ee5e0be483c5d6ea9fdc8bff98"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gace8d84ee5e0be483c5d6ea9fdc8bff98">gpsSamplePeriod_ms</a></td></tr>
 <tr class="separator:gace8d84ee5e0be483c5d6ea9fdc8bff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86f8ee94f456abc2614ea147cb9c382a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga86f8ee94f456abc2614ea147cb9c382a">tasFilterTau</a> = 0.1f</td></tr>
+<tr class="separator:ga86f8ee94f456abc2614ea147cb9c382a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad418ce0c236d030cb672515e667a7f28"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="struct_g_p_s_globals.html">GPSGlobals</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gad418ce0c236d030cb672515e667a7f28">gps</a></td></tr>
 <tr class="separator:gad418ce0c236d030cb672515e667a7f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -209,20 +209,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define BARO_TEMPERATURE_OFFSET&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00088">88</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gafa7c04d005a2b6c49feea2377a0f8a57"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BARO_TRUEAIRSPEED_TIME_CONSTANT_S&#160;&#160;&#160;1.0f</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -255,7 +241,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00084">84</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00083">83</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -283,7 +269,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00083">83</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00082">82</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -311,7 +297,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00085">85</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00084">84</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -339,7 +325,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00081">81</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00080">80</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -383,7 +369,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00079">79</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00078">78</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -403,7 +389,7 @@ Variables</h2></td></tr>
 <p>Initialise the module, called on startup </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or -1 if initialisation failed </dd></dl>
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00156">156</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00154">154</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -422,7 +408,7 @@ Variables</h2></td></tr>
 <p>Initialise the module, called on startup </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or -1 if initialisation failed </dd></dl>
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00114">114</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00111">111</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -449,7 +435,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module thread, should not return. </p>
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00203">203</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00200">200</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -529,7 +515,7 @@ Variables</h2></td></tr>
 <p>Output object: BaroAirspeed</p>
 <p>This module will periodically update the value of the BaroAirspeed object. </p>
 
-<p>Definition at line <a class="el" href="baro__airspeed__analog_8c_source.html#l00139">139</a> of file <a class="el" href="baro__airspeed__analog_8c_source.html">baro_airspeed_analog.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__airspeed__analog_8c_source.html#l00149">149</a> of file <a class="el" href="baro__airspeed__analog_8c_source.html">baro_airspeed_analog.c</a>.</p>
 
 </div>
 </div>
@@ -596,7 +582,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00131">131</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00128">128</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -680,7 +666,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00097">97</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00095">95</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -716,7 +702,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00095">95</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00093">93</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -738,7 +724,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00098">98</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00096">96</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -760,7 +746,29 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00094">94</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00092">92</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga86f8ee94f456abc2614ea147cb9c382a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float tasFilterTau = 0.1f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00097">97</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>
@@ -782,7 +790,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00093">93</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed_8c_source.html#l00091">91</a> of file <a class="el" href="airspeed_8c_source.html">airspeed.c</a>.</p>
 
 </div>
 </div>

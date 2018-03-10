@@ -1,7 +1,6 @@
 var airspeed_8c =
 [
     [ "BARO_TEMPERATURE_OFFSET", "airspeed_8c.html#ga6b379c48bf98a556529861e56fb66e3d", null ],
-    [ "BARO_TRUEAIRSPEED_TIME_CONSTANT_S", "airspeed_8c.html#gafa7c04d005a2b6c49feea2377a0f8a57", null ],
     [ "GPS_AIRSPEED_BIAS_KI", "airspeed_8c.html#ga3b573f7ca0593bed1c710f0b5cc0f894", null ],
     [ "GPS_AIRSPEED_BIAS_KP", "airspeed_8c.html#gadef909795ba9c041c5a84f60ab68a76b", null ],
     [ "GPS_AIRSPEED_TIME_CONSTANT_MS", "airspeed_8c.html#gabe7fe22962ad888bcf99af49ef1d3e78", null ],
@@ -20,5 +19,6 @@ var airspeed_8c =
     [ "gpsSamplePeriod_ms", "airspeed_8c.html#gace8d84ee5e0be483c5d6ea9fdc8bff98", null ],
     [ "module_enabled", "airspeed_8c.html#ga8a40b3b298ebb34ef7da48a31631e2ac", null ],
     [ "settingsUpdated", "airspeed_8c.html#ga6619f89fc54d593566773fa21e0375f3", null ],
+    [ "tasFilterTau", "airspeed_8c.html#ga86f8ee94f456abc2614ea147cb9c382a", null ],
     [ "taskHandle", "airspeed_8c.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ]
 ];

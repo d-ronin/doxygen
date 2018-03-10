@@ -52,7 +52,7 @@ var searchData=
   ['inited',['inited',['../group___flying_p_i_o.html#gaa69d891b714c986144d7f6e72ad73578',1,'main.c']]],
   ['initial_5fconsumed_5fenergy',['initial_consumed_energy',['../group___flight.html#ga8de91fb2d9ca0ce5c53dac0750e99665',1,'flightstatsmodule.c']]],
   ['initialization',['initialization',['../structcomplementary__filter__state.html#a28dd748e22efb34aa6dddf4873b1c445',1,'complementary_filter_state']]],
-  ['inittaskhandle',['initTaskHandle',['../group___targets.html#ga396301109ebb6001fe433d642113f734',1,'initTaskHandle():&#160;chibi_main.c'],['../group___sim.html#ga396301109ebb6001fe433d642113f734',1,'initTaskHandle():&#160;main.c']]],
+  ['inittaskhandle',['initTaskHandle',['../group___sim.html#ga396301109ebb6001fe433d642113f734',1,'main.c']]],
   ['inputs',['inputs',['../struct_camera_stab__data.html#a70a7f78deaaa00117c112fa44a14843b',1,'CameraStab_data']]],
   ['inssettings',['insSettings',['../group___attitude_module.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;attitude.c'],['../group___stabilization_module.html#gab91f2e4b019b6c71d6047e2f06bdf30d',1,'insSettings():&#160;sensors.c']]],
   ['inst',['inst',['../structtxpid__struct.html#ae72accee9fa02b92561d1dcc607f6f77',1,'txpid_struct']]],

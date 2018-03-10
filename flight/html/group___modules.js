@@ -2,7 +2,6 @@ var group___modules =
 [
     [ "Actuator Module", "group___actuator_module.html", "group___actuator_module" ],
     [ "Airspeed Module", "group___airspeed_module.html", "group___airspeed_module" ],
-    [ "Altitude hold module", "group___altitude_hold_module.html", "group___altitude_hold_module" ],
     [ "Attitude and state estimation module", "group___attitude_module.html", "group___attitude_module" ],
     [ "Autotuning Module", "group___autotuning_module.html", "group___autotuning_module" ],
     [ "Battery Module", "group___battery_module.html", "group___battery_module" ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -525,7 +525,7 @@ $(document).ready(function(){initNavTree('brain_2fw_2pios__board_8c_source.html'
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> ((<a class="code" href="group___p_i_o_s___m_s5611.html#gae108503f762eeeeaaf6e105249ba8891">PIOS_MS5611_Init</a>(&amp;<a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a>, pios_i2c_internal_id) != 0)</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        || (<a class="code" href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a>() != 0))</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        || (PIOS_MS5611_Test() != 0))</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <a class="code" href="group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423">PIOS_HAL_CriticalError</a>(<a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>, <a class="code" href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba2e24b798af9934434ef518953082b2c5">PIOS_HAL_PANIC_BARO</a>);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor"></span></div>
@@ -655,7 +655,6 @@ $(document).ready(function(){initNavTree('brain_2fw_2pios__board_8c_source.html'
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;}</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_ga339dd5b77b0a88f45e3f3dc2736fe504"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#ga339dd5b77b0a88f45e3f3dc2736fe504">PIOS_MPU_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_MPU_I2C_Init(pios_mpu_dev_t *dev, pios_i2c_t i2c_id, const struct pios_mpu_cfg *cfg)</div><div class="ttdoc">Initialize the MPU-xxxx 6/9-axis sensor on I2C. </div></div>
-<div class="ttc" id="group___p_i_o_s___m_s5611_html_ga3ed1cd7951ec1f9e2715de101ce3982b"><div class="ttname"><a href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a></div><div class="ttdeci">int32_t PIOS_MS5611_Test(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___m_p_u_html_gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf"><div class="ttname"><a href="group___p_i_o_s___m_p_u.html#gga16b33104a3113b41ef7f3051ac270c98a112af623ab310cc201404d88f6850eaf">PIOS_MPU_SCALE_2G</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__mpu_8h_source.html#l00120">pios_mpu.h:120</a></div></div>
 <div class="ttc" id="structpios__video__cfg_html"><div class="ttname"><a href="structpios__video__cfg.html">pios_video_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00095">pios_video.h:95</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>

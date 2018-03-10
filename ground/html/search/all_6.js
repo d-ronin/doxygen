@@ -75,7 +75,7 @@ var searchData=
   ['flightlogdownload_2ecpp',['flightlogdownload.cpp',['../flightlogdownload_8cpp.html',1,'']]],
   ['flightlogdownload_2eh',['flightlogdownload.h',['../flightlogdownload_8h.html',1,'']]],
   ['flightmodechanged',['flightModeChanged',['../group___g_c_s_control_gadget_plugin.html#gae73b1e75e2295e95a422874769549eb3',1,'GCSControlGadget::flightModeChanged()'],['../group___g_c_s_control_gadget_plugin.html#ga5045cdeb5eeffcc473383a1773da6329',1,'GCSControlGadgetWidget::flightModeChanged()']]],
-  ['flightmodechangedlocaly',['flightModeChangedLocaly',['../group___g_c_s_control_gadget_plugin.html#ga0fdceff1bef5d40634291e52a2d7d2f9',1,'GCSControlGadgetWidget']]],
+  ['flightmodechangedlocally',['flightModeChangedLocally',['../group___g_c_s_control_gadget_plugin.html#ga865bcc649ddf4d69d842ced9aec21d8e',1,'GCSControlGadgetWidget']]],
   ['flightstatsupdated',['flightStatsUpdated',['../group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766',1,'TelemetryMonitor']]],
   ['float32',['FLOAT32',['../class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3ade54d949f5105c9e1177f6ce38a7e7ba',1,'UAVObjectField']]],
   ['floatfieldtreeitem',['FloatFieldTreeItem',['../class_float_field_tree_item.html',1,'FloatFieldTreeItem'],['../group___u_a_v_object_browser_plugin.html#ga00bf7a8f847e1131f255fa1f2e4e5d6e',1,'FloatFieldTreeItem::FloatFieldTreeItem(UAVObjectField *field, int index, const QList&lt; QVariant &gt; &amp;data, bool scientific=false, TreeItem *parent=nullptr)'],['../group___u_a_v_object_browser_plugin.html#ga1b52afa29abb497b7917ffe61a06116d',1,'FloatFieldTreeItem::FloatFieldTreeItem(UAVObjectField *field, int index, const QVariant &amp;data, bool scientific=false, TreeItem *parent=nullptr)']]],

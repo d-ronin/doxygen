@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -152,8 +152,6 @@ Macros</h2></td></tr>
 <tr class="separator:ga3b573f7ca0593bed1c710f0b5cc0f894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe7fe22962ad888bcf99af49ef1d3e78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gabe7fe22962ad888bcf99af49ef1d3e78">GPS_AIRSPEED_TIME_CONSTANT_MS</a>&#160;&#160;&#160;500.0f</td></tr>
 <tr class="separator:gabe7fe22962ad888bcf99af49ef1d3e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa7c04d005a2b6c49feea2377a0f8a57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gafa7c04d005a2b6c49feea2377a0f8a57">BARO_TRUEAIRSPEED_TIME_CONSTANT_S</a>&#160;&#160;&#160;1.0f</td></tr>
-<tr class="separator:gafa7c04d005a2b6c49feea2377a0f8a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b379c48bf98a556529861e56fb66e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga6b379c48bf98a556529861e56fb66e3d">BARO_TEMPERATURE_OFFSET</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:ga6b379c48bf98a556529861e56fb66e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -180,12 +178,14 @@ Variables</h2></td></tr>
 <tr class="separator:ga8a40b3b298ebb34ef7da48a31631e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92e7d8d768e91460a03e1f0ef2c9a443"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga92e7d8d768e91460a03e1f0ef2c9a443">gpsNew</a> = false</td></tr>
 <tr class="separator:ga92e7d8d768e91460a03e1f0ef2c9a443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6619f89fc54d593566773fa21e0375f3"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___geo_fence.html#ga6619f89fc54d593566773fa21e0375f3">settingsUpdated</a> = false</td></tr>
+<tr class="memitem:ga6619f89fc54d593566773fa21e0375f3"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___geo_fence.html#ga6619f89fc54d593566773fa21e0375f3">settingsUpdated</a> = true</td></tr>
 <tr class="separator:ga6619f89fc54d593566773fa21e0375f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga478c3f65056ff1cbeefde706008579ed"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga478c3f65056ff1cbeefde706008579ed">airspeedSensorType</a></td></tr>
 <tr class="separator:ga478c3f65056ff1cbeefde706008579ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace8d84ee5e0be483c5d6ea9fdc8bff98"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#gace8d84ee5e0be483c5d6ea9fdc8bff98">gpsSamplePeriod_ms</a></td></tr>
 <tr class="separator:gace8d84ee5e0be483c5d6ea9fdc8bff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86f8ee94f456abc2614ea147cb9c382a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___airspeed_module.html#ga86f8ee94f456abc2614ea147cb9c382a">tasFilterTau</a> = 0.1f</td></tr>
+<tr class="separator:ga86f8ee94f456abc2614ea147cb9c382a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Airspeed module. </p>

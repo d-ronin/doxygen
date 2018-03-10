@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -1368,7 +1368,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                ret = <a class="code" href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a>();</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                ret = PIOS_BMP280_Test();</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;</div>
@@ -1381,7 +1381,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                ret = <a class="code" href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a>();</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                ret = PIOS_MS5611_Test();</div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                <span class="keywordflow">if</span> (ret) <span class="keywordflow">goto</span> done;</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
@@ -1542,7 +1542,6 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="structpios__rfm22b__cfg_html_a0af79b6085044182779c794792c7e22d"><div class="ttname"><a href="structpios__rfm22b__cfg.html#a0af79b6085044182779c794792c7e22d">pios_rfm22b_cfg::slave_num</a></div><div class="ttdeci">uint32_t slave_num</div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00047">pios_rfm22b.h:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ggaad7a4f0b388c5c9323bb4ced4e9356ccade87df0ea8ae8e430c1fc59bad39ecc7"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ggaad7a4f0b388c5c9323bb4ced4e9356ccade87df0ea8ae8e430c1fc59bad39ecc7">RFM22_tx_pwr_txpow_7</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00059">pios_rfm22b.h:59</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_gad1f1b3c4d58b400075aa96af53ac0cfd"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gad1f1b3c4d58b400075aa96af53ac0cfd">PIOS_COM_TELEM_USB_RX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_TELEM_USB_RX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00147">pios_hal.c:147</a></div></div>
-<div class="ttc" id="group___p_i_o_s___m_s5611_html_ga3ed1cd7951ec1f9e2715de101ce3982b"><div class="ttname"><a href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a></div><div class="ttdeci">int32_t PIOS_MS5611_Test(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___h_s_u_m_html_ga5a9ba340f2387edbc7ba46faa96e6449"><div class="ttname"><a href="group___p_i_o_s___h_s_u_m.html#ga5a9ba340f2387edbc7ba46faa96e6449">pios_hsum_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_hsum_rcvr_driver</div></div>
 <div class="ttc" id="msp__messages_8h_html_a12633132d07532aac2bd05fa1d5c8a72"><div class="ttname"><a href="msp__messages_8h.html#a12633132d07532aac2bd05fa1d5c8a72">speed</a></div><div class="ttdeci">uint16_t speed</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00101">msp_messages.h:101</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_ga5daecec0e050f839067e823a07cb055d"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga5daecec0e050f839067e823a07cb055d">BT_COMMAND_DELAY</a></div><div class="ttdeci">#define BT_COMMAND_DELAY</div><div class="ttdoc">Configure a [flexi/main/rcvr/etc] port. </div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01224">pios_hal.c:1224</a></div></div>
@@ -1617,7 +1616,7 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_gaec0f5ba8e0745b50dd791e12cc04d8aa"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a></div><div class="ttdeci">void PIOS_ANNUNC_Off(uint32_t annunc_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___h_m_c5883_html_gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353"><div class="ttname"><a href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353">PIOS_HMC5883_TOP_90DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hmc5883__priv_8h_source.html#l00101">pios_hmc5883_priv.h:101</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22b_html_ga2b3355f4beecda150f5c95c1cca34fd2"><div class="ttname"><a href="group___p_i_o_s___r_f_m22b.html#ga2b3355f4beecda150f5c95c1cca34fd2">PIOS_RFM22B_Rcvr_Init</a></div><div class="ttdeci">int32_t PIOS_RFM22B_Rcvr_Init(uintptr_t *rfm22b_rcvr_id, uint32_t rfm22b_id)</div></div>
-<div class="ttc" id="group___libraries_html_gae62c697d4457674e78e13375fc1dabc2"><div class="ttname"><a href="group___libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a></div><div class="ttdeci">void set_config_error(SystemAlarmsConfigErrorOptions error_code)</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00341">sanitycheck.c:341</a></div></div>
+<div class="ttc" id="group___libraries_html_gae62c697d4457674e78e13375fc1dabc2"><div class="ttname"><a href="group___libraries.html#gae62c697d4457674e78e13375fc1dabc2">set_config_error</a></div><div class="ttdeci">void set_config_error(SystemAlarmsConfigErrorOptions error_code)</div><div class="ttdef"><b>Definition:</b> <a href="sanitycheck_8c_source.html#l00354">sanitycheck.c:354</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga5b80e376ca5a2aae2dc421a0f7ead7e3"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga5b80e376ca5a2aae2dc421a0f7ead7e3">PIOS_RFM22B_DeviceID</a></div><div class="ttdeci">uint32_t PIOS_RFM22B_DeviceID(uintptr_t rfb22b_id)</div></div>
 <div class="ttc" id="structpios__pwm__cfg_html"><div class="ttname"><a href="structpios__pwm__cfg.html">pios_pwm_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__pwm__priv_8h_source.html#l00038">pios_pwm_priv.h:38</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga8cd3db3cb3747da3d74a8d766230b325"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga8cd3db3cb3747da3d74a8d766230b325">pios_rfm22b_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_rfm22b_com_driver</div></div>
@@ -1637,7 +1636,6 @@ $(document).ready(function(){initNavTree('pios__hal_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___h_a_l_html_ga52a25dcca51355de8e0e7caebf6dd12b"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga52a25dcca51355de8e0e7caebf6dd12b">PIOS_COM_GPS_TX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_GPS_TX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00143">pios_hal.c:143</a></div></div>
 <div class="ttc" id="pios__usart__priv_8h_html"><div class="ttname"><a href="pios__usart__priv_8h.html">pios_usart_priv.h</a></div><div class="ttdoc">USART private definitions. </div></div>
 <div class="ttc" id="posix_2inc_2pios__i2c__priv_8h_html_a4638989ec4e4f44464061eb000f4d702"><div class="ttname"><a href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(pios_i2c_t *i2c_id, const char *path)</div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_p280_html_ga51d84d345a85ef18f35142f51621cb22"><div class="ttname"><a href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a></div><div class="ttdeci">int32_t PIOS_BMP280_Test()</div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga49f0e0259a9db3551d437e5d74fd48a1"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a></div><div class="ttdeci">void PIOS_WDG_Clear(void)</div><div class="ttdoc">Clear the watchdog timer. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00140">pios_wdg.c:140</a></div></div>
 <div class="ttc" id="structpios__dsm__cfg_html"><div class="ttname"><a href="structpios__dsm__cfg.html">pios_dsm_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__dsm__priv_8h_source.html#l00117">pios_dsm_priv.h:117</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_f_m22_b_html_ga19b8e746fa77d0a1264ac55132753f13"><div class="ttname"><a href="group___p_i_o_s___r_f_m22_b.html#ga19b8e746fa77d0a1264ac55132753f13">PIOS_RFM22B_Reinit</a></div><div class="ttdeci">void PIOS_RFM22B_Reinit(uintptr_t rfb22b_id)</div></div>

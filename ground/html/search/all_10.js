@@ -255,7 +255,7 @@ var searchData=
   ['promptuser',['PromptUser',['../group___uploader.html#gaea10e87c01ae547b8a9ebdd37e45d399',1,'UpgradeAssistantDialog']]],
   ['proto_5freg_5fhandoff_5fop_5fuavtalk',['proto_reg_handoff_op_uavtalk',['../packet-op-uavtalk_8c.html#a346ca0c8b50ebe32748b9033707e6c0c',1,'packet-op-uavtalk.c']]],
   ['proto_5fregister_5fop_5fuavtalk',['proto_register_op_uavtalk',['../packet-op-uavtalk_8c.html#a39fcb0b80360398a264092b633777d1c',1,'packet-op-uavtalk.c']]],
-  ['protocol',['Protocol',['../group___i_p_conn_plugin.html#gac5766cf7f0c2840b2762422b37cafa88',1,'IPConnectionConfiguration::Protocol()'],['../group___i_p_conn_plugin.html#gadf271c4cbc8fe6e847812a8e0b4813b8',1,'IPConnectionConfiguration::Host::protocol()']]],
+  ['protocol',['protocol',['../group___i_p_conn_plugin.html#gadf271c4cbc8fe6e847812a8e0b4813b8',1,'IPConnectionConfiguration::Host::protocol()'],['../group___i_p_conn_plugin.html#gac5766cf7f0c2840b2762422b37cafa88',1,'IPConnectionConfiguration::Protocol()']]],
   ['protocoltcp',['ProtocolTcp',['../group___i_p_conn_plugin.html#ggac5766cf7f0c2840b2762422b37cafa88a0e299c60e68fe6166492fbc0f4111f8e',1,'IPConnectionConfiguration']]],
   ['protocoludp',['ProtocolUdp',['../group___i_p_conn_plugin.html#ggac5766cf7f0c2840b2762422b37cafa88a5ea9bb8665f07fac8fc49cc107fcb769',1,'IPConnectionConfiguration']]],
   ['providerchanged',['providerChanged',['../group___t_l_map_widget.html#ga19cc407500250e1c43e975e30ea90112',1,'mapcontrol::MapRipper']]],

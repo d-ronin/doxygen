@@ -18,7 +18,7 @@ var searchData=
   ['ned_5fnorth',['NED_NORTH',['../group___path.html#gga474bf8bbc3c8c027f09087e98700be23a17bce9ec0e6fab7e3abc296781e3acbe',1,'FlightDataModel']]],
   ['nelements',['nelements',['../classuavobject_1_1_u_a_v_object_field.html#a1041dbb74c1678d16fba30515fb1f47c',1,'uavobject::UAVObjectField']]],
   ['networkerrors',['networkerrors',['../group___t_l_map_widget.html#ga818b2b21d317fac5193b04d2c0e32c82',1,'diagnostics']]],
-  ['neutral',['neutral',['../group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e',1,'OutputChannelForm::neutral()'],['../group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d',1,'SwashplateServoSettingsStruct::Neutral()']]],
+  ['neutral',['Neutral',['../group___config_plugin.html#gad228ac505087eafb0d00d4aab3b3e76d',1,'SwashplateServoSettingsStruct::Neutral()'],['../group___config_plugin.html#ga7ec2288bf27bf15dfb962c5e965d008e',1,'OutputChannelForm::neutral()']]],
   ['never',['never',['../group___notify_plugin.html#gga546675e5018635cd1bdc203d6927155da908fb8bab8f2e2e5aae18d53fe643c1e',1,'NotificationItem']]],
   ['new',['NEW',['../group___core_plugin.html#ga9dd395d533e9222eaf46cbd786386c6d',1,'Core::Constants']]],
   ['newboardseen',['newBoardSeen',['../group___uploader.html#ga351bbb7dae5032910e0681a86a1a4be2',1,'uploader::UploaderGadgetFactory::newBoardSeen()'],['../group___uploader.html#ga39018319f1ee8c5732861b209b79e747',1,'uploader::UploaderGadgetWidget::newBoardSeen()']]],

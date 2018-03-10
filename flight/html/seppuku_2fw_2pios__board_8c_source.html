@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -516,7 +516,7 @@ $(document).ready(function(){initNavTree('seppuku_2fw_2pios__board_8c_source.htm
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___b_m_p280.html#ga549623a3a8e955473cd448f76684b77c">PIOS_BMP280_SPI_Init</a>(&amp;<a class="code" href="structpios__bmp280__cfg.html">pios_bmp280_cfg</a>, pios_spi_gyro_accel_id,</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                        1)) {</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a>()) {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (PIOS_BMP280_Test()) {</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                <a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga02d099f3d3a51697cc15d9b570d1cd0c">PIOS_SENSORS_SetMissing</a>(<a class="code" href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0aa17c455b7f9000f88b8d60d6c3ab1db0">PIOS_SENSOR_BARO</a>);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        }</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_BMP280_SPI */</span><span class="preprocessor"></span></div>
@@ -627,7 +627,6 @@ $(document).ready(function(){initNavTree('seppuku_2fw_2pios__board_8c_source.htm
 <div class="ttc" id="group___p_i_o_s___w_s2811_html_ga03a2c7b63a6c66ceea7a068a40ab36fc"><div class="ttname"><a href="group___p_i_o_s___w_s2811.html#ga03a2c7b63a6c66ceea7a068a40ab36fc">PIOS_WS2811_init</a></div><div class="ttdeci">int PIOS_WS2811_init(ws2811_dev_t *dev_out, const struct pios_ws2811_cfg *cfg, int max_leds)</div><div class="ttdoc">Allocate and initialise WS2811 device. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f30x_2pios__ws2811_8c_source.html#l00064">pios_ws2811.c:64</a></div></div>
 <div class="ttc" id="group___a_q32_html_gae4912a499d71db827918d7908055ce05"><div class="ttname"><a href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a></div><div class="ttdeci">#define PIOS_LED_ALARM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00086">pios_board.h:86</a></div></div>
 <div class="ttc" id="pios__hal_8h_html_aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22"><div class="ttname"><a href="pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22">PIOS_HAL_PANIC_IMU</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8h_source.html#l00046">pios_hal.h:46</a></div></div>
-<div class="ttc" id="group___p_i_o_s___b_m_p280_html_ga51d84d345a85ef18f35142f51621cb22"><div class="ttname"><a href="group___p_i_o_s___b_m_p280.html#ga51d84d345a85ef18f35142f51621cb22">PIOS_BMP280_Test</a></div><div class="ttdeci">int32_t PIOS_BMP280_Test()</div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga49f0e0259a9db3551d437e5d74fd48a1"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a></div><div class="ttdeci">void PIOS_WDG_Clear(void)</div><div class="ttdoc">Clear the watchdog timer. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00140">pios_wdg.c:140</a></div></div>
 <div class="ttc" id="structpios__servo__cfg_html"><div class="ttname"><a href="structpios__servo__cfg.html">pios_servo_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__servo__priv_8h_source.html#l00037">pios_servo_priv.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga6ac589f6cd807d6bc4285ae0f1469987"><div class="ttname"><a href="group___p_i_o_s.html#ga6ac589f6cd807d6bc4285ae0f1469987">PIOS_DAC_init</a></div><div class="ttdeci">int PIOS_DAC_init(dac_dev_t *dev_out, const struct pios_dac_cfg *cfg)</div><div class="ttdoc">Allocate and initialise DAC device. </div></div>

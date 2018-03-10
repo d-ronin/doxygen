@@ -2,7 +2,6 @@ var dir_84cbccaa40138d521c3102dda2be2c75 =
 [
     [ "Actuator", "dir_524d7e3399b21788be72f0330b2c6ef7.html", "dir_524d7e3399b21788be72f0330b2c6ef7" ],
     [ "Airspeed", "dir_45e7419b7c80b67eccb778d6078d57cb.html", "dir_45e7419b7c80b67eccb778d6078d57cb" ],
-    [ "AltitudeHold", "dir_26bda0f243addd3825de45c31706dc35.html", "dir_26bda0f243addd3825de45c31706dc35" ],
     [ "Attitude", "dir_9130b27fd95349d49326874151611ab5.html", "dir_9130b27fd95349d49326874151611ab5" ],
     [ "Autotune", "dir_699efa47fc8189332307a03e6845dcd9.html", "dir_699efa47fc8189332307a03e6845dcd9" ],
     [ "Battery", "dir_4d114b02f62f75f8afe91d2a40399b04.html", "dir_4d114b02f62f75f8afe91d2a40399b04" ],

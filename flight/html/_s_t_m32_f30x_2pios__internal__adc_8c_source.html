@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -157,8 +157,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">struct </span>adc_accumulator {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        uint32_t accumulator;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        uint32_t <a class="code" href="group___char_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">volatile</span> uint32_t accumulator;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">volatile</span> uint32_t <a class="code" href="group___char_o_s_d.html#gac29f7805863b1e57f0e867855d72402e">count</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">struct </span>pios_internal_adc_dev * driver_instances[<a class="code" href="group___d_t_fc.html#ga8e66b285628ba1cb8e22932297f4b952">PIOS_INTERNAL_ADC_MAX_INSTANCES</a>];</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        ADC_InitStructure.ADC_ContinuousConvMode = ADC_ContinuousConvMode_Enable;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        ADC_InitStructure.ADC_ExternalTrigConvEvent = ADC_ExternalTrigConvEvent_0;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        ADC_InitStructure.ADC_ExternalTrigEventEdge = ADC_ExternalTrigEventEdge_None;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Left;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        ADC_InitStructure.ADC_NbrOfRegChannel = adc_dev-&gt;regular_group_size;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
@@ -513,8 +513,8 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        }</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        result = adc_dev-&gt;accumulator[pin].accumulator / (adc_dev-&gt;accumulator[pin].count ? : 1);</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        adc_dev-&gt;accumulator[pin].accumulator = 0;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        adc_dev-&gt;accumulator[pin].count = 0;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        adc_dev-&gt;accumulator[pin].accumulator = result;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        adc_dev-&gt;accumulator[pin].count = 1;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;}</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
@@ -586,7 +586,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f30x_2pios__internal__adc_8c_
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keywordflow">if</span> (!PIOS_INTERNAL_ADC_validate(adc_dev)) {</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        }</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___a_q32.html#ga645df4566a90656d8b02ee4e63a54dfe">VREF_PLUS</a> / (((uint32_t)1 &lt;&lt; 12) - 1);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___a_q32.html#ga645df4566a90656d8b02ee4e63a54dfe">VREF_PLUS</a> / (((uint32_t)1 &lt;&lt; 16) - 16);</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="preprocessor"></span></div>

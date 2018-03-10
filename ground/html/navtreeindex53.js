@@ -1,15 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"uavobjecttemplate_8m.html#a642db902c10b284834220079d223b0e0":[6,0,0,0,0,1,37,22,12],
-"uavobjecttemplate_8m.html#a68fc75536e7a45155ef9f2214915c628":[6,0,0,0,0,1,37,22,73],
-"uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce":[6,0,0,0,0,1,37,22,28],
-"uavobjecttemplate_8m.html#a6f6ccfcf58b31cb6412107d9d5281426":[6,0,0,0,0,1,37,22,41],
-"uavobjecttemplate_8m.html#a70527ee1c468ecb0c36f5a50686d5614":[6,0,0,0,0,1,37,22,30],
-"uavobjecttemplate_8m.html#a770a3d65665549f29ddb8ee060c43cbc":[6,0,0,0,0,1,37,22,4],
-"uavobjecttemplate_8m.html#a79178933c5b76091ca04178d14a5ba98":[6,0,0,0,0,1,37,22,15],
-"uavobjecttemplate_8m.html#a7c4c8356cf27a7aade3cb3016b8ffaa7":[6,0,0,0,0,1,37,22,40],
-"uavobjecttemplate_8m.html#a801097d8e760cb705b4f1cc11d3f62fa":[6,0,0,0,0,1,37,22,62],
-"uavobjecttemplate_8m.html#a81a6b3bb0d87a9f13a703c4526596362":[6,0,0,0,0,1,37,22,20],
 "uavobjecttemplate_8m.html#a8760c7f0db08dc03416f4c8c3fc08f02":[6,0,0,0,0,1,37,22,5],
 "uavobjecttemplate_8m.html#a879fc3585ccb07eba075553b21960f45":[6,0,0,0,0,1,37,22,66],
 "uavobjecttemplate_8m.html#a87d64e1f4a03744d89ab122c222a0f31":[6,0,0,0,0,1,37,22,76],
@@ -249,5 +239,12 @@ var NAVTREEINDEX53 =
 "workspacesettings_8h.html":[6,0,0,0,0,1,9,72],
 "workspacesettings_8h_source.html":[6,0,0,0,0,1,9,72],
 "worldmagmodel_8cpp.html":[6,0,0,0,0,0,5,33],
-"worldmagmodel_8cpp.html#ab014184085b9a8939feae7e69ed73d4f":[6,0,0,0,0,0,5,33,0]
+"worldmagmodel_8cpp.html#ab014184085b9a8939feae7e69ed73d4f":[6,0,0,0,0,0,5,33,0],
+"worldmagmodel_8cpp_source.html":[6,0,0,0,0,0,5,33],
+"worldmagmodel_8h.html":[6,0,0,0,0,0,5,34],
+"worldmagmodel_8h_source.html":[6,0,0,0,0,0,5,34],
+"xmlconfig_8cpp.html":[6,0,0,0,0,0,5,35],
+"xmlconfig_8cpp_source.html":[6,0,0,0,0,0,5,35],
+"xmlconfig_8h.html":[6,0,0,0,0,0,5,36],
+"xmlconfig_8h_source.html":[6,0,0,0,0,0,5,36]
 };

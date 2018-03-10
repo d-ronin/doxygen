@@ -1,15 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"spectrogramscopeconfig_8cpp.html":[6,0,0,0,0,1,29,1,4],
-"spectrogramscopeconfig_8cpp_source.html":[6,0,0,0,0,1,29,1,4],
-"spectrogramscopeconfig_8h.html":[6,0,0,0,0,1,29,1,5],
-"spectrogramscopeconfig_8h_source.html":[6,0,0,0,0,1,29,1,5],
-"splitterorview_8cpp.html":[6,0,0,0,0,1,9,2,0],
-"splitterorview_8cpp_source.html":[6,0,0,0,0,1,9,2,0],
-"splitterorview_8h.html":[6,0,0,0,0,1,9,2,1],
-"splitterorview_8h_source.html":[6,0,0,0,0,1,9,2,1],
-"sprf3e_8cpp.html":[6,0,0,0,0,1,3,16],
-"sprf3e_8cpp_source.html":[6,0,0,0,0,1,3,16],
 "sprf3e_8h.html":[6,0,0,0,0,1,3,17],
 "sprf3e_8h_source.html":[6,0,0,0,0,1,3,17],
 "sprf3econfiguration_8cpp.html":[6,0,0,0,0,1,3,18],
@@ -249,5 +239,15 @@ var NAVTREEINDEX51 =
 "taulinkplugin_8cpp.html":[6,0,0,0,0,1,34,6],
 "taulinkplugin_8cpp_source.html":[6,0,0,0,0,1,34,6],
 "taulinkplugin_8h.html":[6,0,0,0,0,1,34,7],
-"taulinkplugin_8h_source.html":[6,0,0,0,0,1,34,7]
+"taulinkplugin_8h_source.html":[6,0,0,0,0,1,34,7],
+"telemetry_8cpp.html":[6,0,0,0,0,1,41,0],
+"telemetry_8cpp_source.html":[6,0,0,0,0,1,41,0],
+"telemetry_8h.html":[6,0,0,0,0,1,41,1],
+"telemetry_8h_source.html":[6,0,0,0,0,1,41,1],
+"telemetrymanager_8cpp.html":[6,0,0,0,0,1,41,2],
+"telemetrymanager_8cpp_source.html":[6,0,0,0,0,1,41,2],
+"telemetrymanager_8h.html":[6,0,0,0,0,1,41,3],
+"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3],
+"telemetrymonitor_8cpp.html":[6,0,0,0,0,1,41,4],
+"telemetrymonitor_8cpp_source.html":[6,0,0,0,0,1,41,4]
 };

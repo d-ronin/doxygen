@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">a446b08</span>
+   &#160;<span id="projectnumber">05afa7b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('pios__ms5611_8c_source.html','');});
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___p_i_o_s___i2_c.html#gaff71841b65f69b2ba46464053726661c">PIOS_I2C_Transfer</a>(dev-&gt;i2c_id, txn_list, <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(txn_list));</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;int32_t <a class="code" href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a>()</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;int32_t PIOS_MS5611_Test()</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">if</span> (PIOS_MS5611_Validate(dev) != 0)</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="keywordflow">return</span> -1;</div>
@@ -497,7 +497,6 @@ $(document).ready(function(){initNavTree('pios__ms5611_8c_source.html','');});
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___p_i_o_s___m_s5611_html_ga3ed1cd7951ec1f9e2715de101ce3982b"><div class="ttname"><a href="group___p_i_o_s___m_s5611.html#ga3ed1cd7951ec1f9e2715de101ce3982b">PIOS_MS5611_Test</a></div><div class="ttdeci">int32_t PIOS_MS5611_Test(void)</div></div>
 <div class="ttc" id="pios__ms5611__priv_8h_html"><div class="ttname"><a href="pios__ms5611__priv_8h.html">pios_ms5611_priv.h</a></div><div class="ttdoc">MS5611 functions header. </div></div>
 <div class="ttc" id="group___p_i_o_s___queue_html_ga55dc58e643a7f63bc49830263d52db52"><div class="ttname"><a href="group___p_i_o_s___queue.html#ga55dc58e643a7f63bc49830263d52db52">PIOS_Queue_Create</a></div><div class="ttdeci">struct pios_queue * PIOS_Queue_Create(size_t queue_length, size_t item_size)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__queue_8c_source.html#l00047">pios_queue.c:47</a></div></div>
 <div class="ttc" id="group___p_i_o_s___semaphore_html_ga9f80c0f562536f093d9c7c4dd7d77904"><div class="ttname"><a href="group___p_i_o_s___semaphore.html#ga9f80c0f562536f093d9c7c4dd7d77904">PIOS_SEMAPHORE_TIMEOUT_MAX</a></div><div class="ttdeci">#define PIOS_SEMAPHORE_TIMEOUT_MAX</div><div class="ttdef"><b>Definition:</b> <a href="pios__semaphore_8h_source.html#l00030">pios_semaphore.h:30</a></div></div>

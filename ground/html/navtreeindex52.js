@@ -1,15 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"telemetry_8cpp.html":[6,0,0,0,0,1,41,0],
-"telemetry_8cpp_source.html":[6,0,0,0,0,1,41,0],
-"telemetry_8h.html":[6,0,0,0,0,1,41,1],
-"telemetry_8h_source.html":[6,0,0,0,0,1,41,1],
-"telemetrymanager_8cpp.html":[6,0,0,0,0,1,41,2],
-"telemetrymanager_8cpp_source.html":[6,0,0,0,0,1,41,2],
-"telemetrymanager_8h.html":[6,0,0,0,0,1,41,3],
-"telemetrymanager_8h_source.html":[6,0,0,0,0,1,41,3],
-"telemetrymonitor_8cpp.html":[6,0,0,0,0,1,41,4],
-"telemetrymonitor_8cpp_source.html":[6,0,0,0,0,1,41,4],
 "telemetrymonitor_8h.html":[6,0,0,0,0,1,41,5],
 "telemetrymonitor_8h_source.html":[6,0,0,0,0,1,41,5],
 "telemetrymonitorwidget_8cpp.html":[6,0,0,0,0,1,9,57],
@@ -249,5 +239,15 @@ var NAVTREEINDEX52 =
 "uavobjecttemplate_8m.html#a5a187172ec19a6a62d3f6965b71939f4":[6,0,0,0,0,1,37,22,18],
 "uavobjecttemplate_8m.html#a5b68c0ce1664726d2f24f81746f622bf":[6,0,0,0,0,1,37,22,49],
 "uavobjecttemplate_8m.html#a5e36941b3d856737e81516acd45edc50":[6,0,0,0,0,1,37,22,39],
-"uavobjecttemplate_8m.html#a6219c46730d06d3988d873698318eada":[6,0,0,0,0,1,37,22,74]
+"uavobjecttemplate_8m.html#a6219c46730d06d3988d873698318eada":[6,0,0,0,0,1,37,22,74],
+"uavobjecttemplate_8m.html#a642db902c10b284834220079d223b0e0":[6,0,0,0,0,1,37,22,12],
+"uavobjecttemplate_8m.html#a68fc75536e7a45155ef9f2214915c628":[6,0,0,0,0,1,37,22,73],
+"uavobjecttemplate_8m.html#a6a3730e10b2455e9a8b6599785809fce":[6,0,0,0,0,1,37,22,28],
+"uavobjecttemplate_8m.html#a6f6ccfcf58b31cb6412107d9d5281426":[6,0,0,0,0,1,37,22,41],
+"uavobjecttemplate_8m.html#a70527ee1c468ecb0c36f5a50686d5614":[6,0,0,0,0,1,37,22,30],
+"uavobjecttemplate_8m.html#a770a3d65665549f29ddb8ee060c43cbc":[6,0,0,0,0,1,37,22,4],
+"uavobjecttemplate_8m.html#a79178933c5b76091ca04178d14a5ba98":[6,0,0,0,0,1,37,22,15],
+"uavobjecttemplate_8m.html#a7c4c8356cf27a7aade3cb3016b8ffaa7":[6,0,0,0,0,1,37,22,40],
+"uavobjecttemplate_8m.html#a801097d8e760cb705b4f1cc11d3f62fa":[6,0,0,0,0,1,37,22,62],
+"uavobjecttemplate_8m.html#a81a6b3bb0d87a9f13a703c4526596362":[6,0,0,0,0,1,37,22,20]
 };
