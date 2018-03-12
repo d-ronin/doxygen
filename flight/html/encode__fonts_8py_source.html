@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">283beb9</span>
+   &#160;<span id="projectnumber">21afde4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="title">encode_fonts.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="encode__fonts_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python</span></div>
+<a href="encode__fonts_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python3</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="stringliteral">**</span></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">import</span> os.path <span class="keyword">as</span> op</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">from</span> string <span class="keyword">import</span> Template</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">from</span> itertools <span class="keyword">import</span> izip, chain, repeat</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">from</span> itertools <span class="keyword">import</span> chain, repeat</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div>
@@ -230,14 +230,14 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7">  119</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7">grouper</a>(n, iterable, padvalue=None):</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="stringliteral">&quot;grouper(3, &#39;abcdefg&#39;, &#39;x&#39;) --&gt; (&#39;a&#39;,&#39;b&#39;,&#39;c&#39;), (&#39;d&#39;,&#39;e&#39;,&#39;f&#39;), (&#39;g&#39;,&#39;x&#39;,&#39;x&#39;)&quot;</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> izip(*[chain(iterable, repeat(padvalue, n-1))]*n)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> zip(*[chain(iterable, repeat(padvalue, n-1))]*n)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html#aa4b57a9fca0cbe587a97ff068ec8e25c">  124</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceencode__fonts.html#aa4b57a9fca0cbe587a97ff068ec8e25c">encode_font</a>(fname, start, last):</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    img = img=mpimg.imread(fname)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    height, width, depth = img.shape</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    font_height = height / 16</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    font_width = width / 16</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    font_height = int(height / 16)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    font_width = int(width / 16)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> font_width * 16 != width <span class="keywordflow">or</span> font_height * 16 != height:</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">raise</span> RuntimeError(<span class="stringliteral">&quot;width or height of image is not divisable by 16!&quot;</span>)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    gray = np.max(img[:, :, :3], axis=-1)</div>
@@ -254,13 +254,13 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    lookup = np.zeros(256, dtype=np.uint8)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    lookup.fill(255)</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">for</span> ii <span class="keywordflow">in</span> range(start, last + 1):</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        row = ii / 16 * font_height</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        row = int(ii / 16) * font_height</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        col = (ii % 16) * font_width</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span> np.sum(mask[row:row + font_height, col:col + font_width]) &gt; 0:</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            lookup[ii] = pos</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            pos += 1</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    n_active = pos + 1</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">print</span> <span class="stringliteral">&#39;Encoding %s: %d x %d pixels / character. Active characters: %d&#39;</span> % (fname, font_width, font_height, n_active)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a>(<span class="stringliteral">&#39;Encoding %s: %d x %d pixels / character. Active characters: %d&#39;</span> % (fname, font_width, font_height, n_active))</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    out_height = n_active * font_height</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment"># width in bytes</span></div>
@@ -277,14 +277,14 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> entry == 255:</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">continue</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">for</span> row <span class="keywordflow">in</span> range(0, font_height):</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            row_in = ii / 16 * font_height + row</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">for</span> col <span class="keywordflow">in</span> xrange(font_width):</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            row_in = int(ii / 16) * font_height + row</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">for</span> col <span class="keywordflow">in</span> range(font_width):</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                col_in = (ii % 16) * font_width + col</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="keywordflow">if</span> mask[row_in, col_in]:</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    pos = col / 8</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    pos = int(col / 8)</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    mask_buffer[row_out, pos] |= 0x01 &lt;&lt; (7 - (col % 8))</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    level_buffer[row_out, pos] |= ~bw[row_in, col_in] &lt;&lt; (7 - (col % 8))</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    pos = col / 4</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    pos = int(col / 4)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    data_buffer[row_out, pos] |= (bw[row_in, col_in] &lt;&lt; (7 - 2 * (col % 4))) | (0x01 &lt;&lt; (6 - 2 * (col % 4)))</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            row_out += 1</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    </div>
@@ -318,10 +318,10 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">for</span> byte <span class="keywordflow">in</span> row:</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    fid.write(<span class="stringliteral">&#39;0x%0.2X, &#39;</span> % byte)</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">elif</span> word_size == 16:</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">for</span> pos <span class="keywordflow">in</span> range(len(row) / 2):</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">for</span> pos <span class="keywordflow">in</span> range(int(len(row) / 2)):</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    fid.write(<span class="stringliteral">&#39;0x%0.2X%0.2X, &#39;</span> % (row[2 * pos], row[2 * pos + 1]))</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">elif</span> word_size == 32:</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    <span class="keywordflow">for</span> pos <span class="keywordflow">in</span> range(len(row) / 4):</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    <span class="keywordflow">for</span> pos <span class="keywordflow">in</span> range(int(len(row) / 4)):</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        value = (row[4 * pos], row[4 * pos + 1], row[4 * pos + 2], row[4 * pos + 3])</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        fid.write(<span class="stringliteral">&#39;0x%0.2X%0.2X%0.2X%0.2X, &#39;</span> % value)</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">if</span> ii &lt; n_rows - 1:</div>
@@ -348,7 +348,7 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html#aa78c89bc313e453285b8a167e116b71a">  237</a></span>&#160;    in_files = args</div>
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="namespaceencode__fonts.html#ac077bfbbacbe705ddc6ddf47d9cf00e8">  238</a></span>&#160;    names = [fname[:-4] <span class="keywordflow">for</span> fname <span class="keywordflow">in</span> in_files]</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">print</span> <span class="stringliteral">&#39;Input fonts: %s&#39;</span> % str(in_files)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a>(<span class="stringliteral">&#39;Input fonts: %s&#39;</span> % str(in_files))</div>
 <div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="group___on_screen_display.html#ga453d85b4420536db4f90b231a4020ac9">  240</a></span>&#160;    fonts = dict()</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">for</span> name,fname <span class="keywordflow">in</span> zip(names, in_files):</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        fonts[name] = <a class="code" href="namespaceencode__font.html">encode_font</a>(fname, options.start, options.last)</div>
@@ -388,6 +388,7 @@ $(document).ready(function(){initNavTree('encode__fonts_8py_source.html','');});
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            content += <span class="stringliteral">&#39;&amp;font_&#39;</span> + name + <span class="stringliteral">&#39;, &#39;</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        content = content[:-2]</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        fid.write(font_c_table.substitute(CONTENT=content))</div>
+<div class="ttc" id="group___p_i_o_s_html_ga3e674fecee68caf4578c95e85ba38253"><div class="ttname"><a href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a></div><div class="ttdeci">static int print(char **out, const char *format, va_list args)</div><div class="ttdef"><b>Definition:</b> <a href="printf-stdarg_8c_source.html#l00135">printf-stdarg.c:135</a></div></div>
 <div class="ttc" id="namespaceencode__fonts_html_aa4b57a9fca0cbe587a97ff068ec8e25c"><div class="ttname"><a href="namespaceencode__fonts.html#aa4b57a9fca0cbe587a97ff068ec8e25c">encode_fonts.encode_font</a></div><div class="ttdeci">def encode_font</div><div class="ttdef"><b>Definition:</b> <a href="encode__fonts_8py_source.html#l00124">encode_fonts.py:124</a></div></div>
 <div class="ttc" id="namespaceencode__font_html"><div class="ttname"><a href="namespaceencode__font.html">encode_font</a></div><div class="ttdef"><b>Definition:</b> <a href="encode__font_8py_source.html#l00001">encode_font.py:1</a></div></div>
 <div class="ttc" id="namespaceencode__fonts_html_aee1e46ab90f657763b6ba507083a16f7"><div class="ttname"><a href="namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7">encode_fonts.grouper</a></div><div class="ttdeci">def grouper</div><div class="ttdef"><b>Definition:</b> <a href="encode__fonts_8py_source.html#l00119">encode_fonts.py:119</a></div></div>

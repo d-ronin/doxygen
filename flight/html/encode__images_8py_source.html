@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">283beb9</span>
+   &#160;<span id="projectnumber">21afde4</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('encode__images_8py_source.html','');})
 <div class="title">encode_images.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="encode__images_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceencode__images.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python</span></div>
+<a href="encode__images_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceencode__images.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python3</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> string <span class="keyword">import</span> Template</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> itertools <span class="keyword">import</span> izip, chain, repeat</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> itertools <span class="keyword">import</span> chain, repeat</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div>
@@ -161,12 +161,12 @@ $(document).ready(function(){initNavTree('encode__images_8py_source.html','');})
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee">   50</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee">grouper</a>(n, iterable, padvalue=None):</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="stringliteral">&quot;grouper(3, &#39;abcdefg&#39;, &#39;x&#39;) --&gt; (&#39;a&#39;,&#39;b&#39;,&#39;c&#39;), (&#39;d&#39;,&#39;e&#39;,&#39;f&#39;), (&#39;g&#39;,&#39;x&#39;,&#39;x&#39;)&quot;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> izip(*[chain(iterable, repeat(padvalue, n-1))]*n)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> zip(*[chain(iterable, repeat(padvalue, n-1))]*n)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespaceencode__images.html#accbd5dd8cf671a68c8fc7a55eb599310">   54</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceencode__images.html#accbd5dd8cf671a68c8fc7a55eb599310">encode_image</a>(fname):</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    img = img=mpimg.imread(fname)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    height, width, depth = img.shape</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">print</span> <span class="stringliteral">&#39;Encoding %s: %d x %d pixels&#39;</span> % (fname, width, height)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a>(<span class="stringliteral">&#39;Encoding %s: %d x %d pixels&#39;</span> % (fname, width, height))</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    gray = np.max(img[:, :, :3], axis=-1)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    bw = gray &gt; 0.9</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
@@ -185,13 +185,13 @@ $(document).ready(function(){initNavTree('encode__images_8py_source.html','');})
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    byte_width = int(np.ceil(width / float(4)))</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    data_buffer = np.zeros((height, byte_width), dtype=np.uint8)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> row <span class="keywordflow">in</span> xrange(height):</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> col <span class="keywordflow">in</span> xrange(width):</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> row <span class="keywordflow">in</span> range(height):</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> col <span class="keywordflow">in</span> range(width):</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> mask[row, col]:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                pos = col / 8</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                pos = int(col / 8)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                mask_buffer[row, pos] |= 0x01 &lt;&lt; (7 - (col % 8))</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                level_buffer[row, pos] |= bw[row, col] &lt;&lt; (7 - (col % 8))</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                pos = col / 4</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                pos = int(col / 4)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                data_buffer[row, pos] |= (bw[row, col] &lt;&lt; (7 - 2 * (col % 4))) | (0x01 &lt;&lt; (6 - 2 * (col % 4)))</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    image = dict(width=4*byte_width, width_split=8*byte_width_split, height=height, mask=mask_buffer,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                 level=level_buffer, data=data_buffer)</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('encode__images_8py_source.html','');})
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    options, args = parser.parse_args()</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespaceencode__images.html#a617d64666908a4532dd57e1fbd9f483d">  114</a></span>&#160;    in_files = args</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">print</span> <span class="stringliteral">&#39;Input images: %s&#39;</span> % str(in_files)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a>(<span class="stringliteral">&#39;Input images: %s&#39;</span> % str(in_files))</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="namespaceencode__images.html#a4f6d53f9f2db194edcfe528a61b3b8ac">  116</a></span>&#160;    images = dict()</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">for</span> fname <span class="keywordflow">in</span> in_files:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        images[fname[:-4]] = <a class="code" href="namespaceencode__images.html#accbd5dd8cf671a68c8fc7a55eb599310">encode_image</a>(fname)</div>
@@ -233,19 +233,20 @@ $(document).ready(function(){initNavTree('encode__images_8py_source.html','');})
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        fid.write(<span class="stringliteral">&#39;#ifndef IMAGES_H\n#define IMAGES_H\n&#39;</span>)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        fid.write(<span class="stringliteral">&#39;#if defined(PIOS_VIDEO_SPLITBUFFER)\n&#39;</span>)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        fid.write(img_c_typedef_split)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span> name, image <span class="keywordflow">in</span> images.iteritems():</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span> name, image <span class="keywordflow">in</span> images.items():</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="namespaceencode__images.html#a8ffcc3503846cd705eb5442040320909">c_format_image</a>(fid, name, image, buffers=(<span class="stringliteral">&#39;level&#39;</span>, <span class="stringliteral">&#39;mask&#39;</span>))</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            fid.write(img_c_template_split.substitute(width=image[<span class="stringliteral">&#39;width_split&#39;</span>],</div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="namespaceencode__images.html#a3a31a374b9a94a60ed743ca84db41cfc">  127</a></span>&#160;                                                      height=image[<span class="stringliteral">&#39;height&#39;</span>], name=name))</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        fid.write(<span class="stringliteral">&#39;#else /* defined(PIOS_VIDEO_SPLITBUFFER) */\n&#39;</span>)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        fid.write(img_c_typedef)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> name, image <span class="keywordflow">in</span> images.iteritems():</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> name, image <span class="keywordflow">in</span> images.items():</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="namespaceencode__images.html#a8ffcc3503846cd705eb5442040320909">c_format_image</a>(fid, name, image, buffers=(<span class="stringliteral">&#39;data&#39;</span>,))</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            fid.write(img_c_template.substitute(width=image[<span class="stringliteral">&#39;width&#39;</span>],</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                                height=image[<span class="stringliteral">&#39;height&#39;</span>], name=name))</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        fid.write(<span class="stringliteral">&#39;#endif /* defined(PIOS_VIDEO_SPLITBUFFER) */\n&#39;</span>)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        fid.write(<span class="stringliteral">&#39;#endif /* IMAGES_H */\n&#39;</span>)</div>
 <div class="ttc" id="namespaceencode__images_html_a8da5d82c63e960bd24f44a2e960ee8ee"><div class="ttname"><a href="namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee">encode_images.grouper</a></div><div class="ttdeci">def grouper</div><div class="ttdef"><b>Definition:</b> <a href="encode__images_8py_source.html#l00050">encode_images.py:50</a></div></div>
+<div class="ttc" id="group___p_i_o_s_html_ga3e674fecee68caf4578c95e85ba38253"><div class="ttname"><a href="group___p_i_o_s.html#ga3e674fecee68caf4578c95e85ba38253">print</a></div><div class="ttdeci">static int print(char **out, const char *format, va_list args)</div><div class="ttdef"><b>Definition:</b> <a href="printf-stdarg_8c_source.html#l00135">printf-stdarg.c:135</a></div></div>
 <div class="ttc" id="namespaceencode__images_html_a8ffcc3503846cd705eb5442040320909"><div class="ttname"><a href="namespaceencode__images.html#a8ffcc3503846cd705eb5442040320909">encode_images.c_format_image</a></div><div class="ttdeci">def c_format_image</div><div class="ttdef"><b>Definition:</b> <a href="encode__images_8py_source.html#l00090">encode_images.py:90</a></div></div>
 <div class="ttc" id="namespaceencode__images_html_accbd5dd8cf671a68c8fc7a55eb599310"><div class="ttname"><a href="namespaceencode__images.html#accbd5dd8cf671a68c8fc7a55eb599310">encode_images.encode_image</a></div><div class="ttdeci">def encode_image</div><div class="ttdef"><b>Definition:</b> <a href="encode__images_8py_source.html#l00054">encode_images.py:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
