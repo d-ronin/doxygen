@@ -1,5 +1,16 @@
 var NAVTREEINDEX123 =
 {
+"structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688":[2,4,29,5,14],
+"structhott__gps__message.html#a68a220eec8a62c0650ce4eecc852ee35":[2,4,29,5,25],
+"structhott__gps__message.html#a69c2b8f4c6190a403a2410ea82931717":[2,4,29,5,28],
+"structhott__gps__message.html#a6c7c53b173d5d2b19ff3b235303acc5a":[2,4,29,5,0],
+"structhott__gps__message.html#a758f27812f282cd2311e971cd97ed749":[2,4,29,5,35],
+"structhott__gps__message.html#a76a13473a41d87403d74a548433f5c06":[2,4,29,5,30],
+"structhott__gps__message.html#a78c41171232507500bab008de7065a4f":[2,4,29,5,16],
+"structhott__gps__message.html#a7bbbfc989843e86665e73202778dc1c4":[2,4,29,5,9],
+"structhott__gps__message.html#a8109cc81e797fa2d88438663b22ff0d7":[2,4,29,5,2],
+"structhott__gps__message.html#a89cad2a670a70c01f538e97aa995afea":[2,4,29,5,1],
+"structhott__gps__message.html#a902c9b63ce90d41d8e09d51849afcd31":[2,4,29,5,32],
 "structhott__gps__message.html#a95f3d7cae0bdcf2d2ae251bd14c03b23":[2,4,29,5,13],
 "structhott__gps__message.html#aaaa567bd312301ebe7de31224a6dbe98":[2,4,29,5,24],
 "structhott__gps__message.html#ab228f11ed4c17fe6d73a1fd5d328ef3d":[2,4,29,5,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX123 =
 "structmsp__servo__conf.html#a84e75b57c4d2ba0df2bd65ad0ff6df6d":[2,1,2,31,0],
 "structmsp__set__box.html":[2,1,2,21],
 "structmsp__set__box.html#ace3fc17845fa9c4e84a9c72a4633edfd":[2,1,2,21,0],
-"structmsp__set__head.html":[2,1,2,33],
-"structmsp__set__head.html#ae73e6e45fd6f29ea51e8df47606eb369":[2,1,2,33,0],
-"structmsp__set__misc.html":[2,1,2,23],
-"structmsp__set__misc.html#a37555c685db60a4b4b0af4b8c7e5d9e8":[2,1,2,23,4],
-"structmsp__set__misc.html#a4166f147f944dfe8fcc394792061e1ed":[2,1,2,23,2],
-"structmsp__set__misc.html#a4f1215ffa0b32cc4b2c707e9cbe6954d":[2,1,2,23,5],
-"structmsp__set__misc.html#a6892df66bedd99553abb5e6e0e473fc9":[2,1,2,23,9],
-"structmsp__set__misc.html#a69b455dcac03260007f33ddbe8b789d7":[2,1,2,23,3],
-"structmsp__set__misc.html#a76085607fbbac6c83c18c6dd1cbfe569":[2,1,2,23,11],
-"structmsp__set__misc.html#a777483f102218ef424c3e4d3aee66b22":[2,1,2,23,0],
-"structmsp__set__misc.html#aa5228043a0b65e1b624553f6b4d53553":[2,1,2,23,7],
-"structmsp__set__misc.html#aa95de497f608d23085729438cc65526d":[2,1,2,23,6]
+"structmsp__set__head.html":[2,1,2,33]
 };

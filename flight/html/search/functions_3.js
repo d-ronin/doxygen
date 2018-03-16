@@ -17,6 +17,7 @@ var searchData=
   ['cfvert_5freset',['cfvert_reset',['../group___attitude_module.html#gafd957020bc37a03983ab93527452020b',1,'attitude.c']]],
   ['cfvert_5fupdate_5fbaro',['cfvert_update_baro',['../group___attitude_module.html#ga81b931361fcb4f10bde85a5623b411e0',1,'attitude.c']]],
   ['channel_5ffailsafe_5fvalue',['channel_failsafe_value',['../group___actuator_module.html#ga7a3267eb69f45df86b17705f760373af',1,'actuator.c']]],
+  ['channel_5fis_5fconfigured',['channel_is_configured',['../group___control.html#gaf4522c3f5a63d3dd77cf5e593bf2c3c9',1,'transmitter_control.c']]],
   ['channelsetup_5fdshot',['ChannelSetup_DShot',['../group___p_i_o_s___s_e_r_v_o.html#gaa54e85a87a93c87d914c24dec6120d44',1,'pios_servo.c']]],
   ['charonscreendisplayinitialize',['CharOnScreenDisplayInitialize',['../group___char_o_s_d.html#ga4788848a76c0657baf71fa5768403f71',1,'charonscreendisplay.c']]],
   ['charonscreendisplaystart',['CharOnScreenDisplayStart',['../group___char_o_s_d.html#ga9c8e02bdc4f70eea3c46bdf18f5f2ae0',1,'charonscreendisplay.c']]],

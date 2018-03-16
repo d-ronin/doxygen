@@ -1,8 +1,9 @@
 var sensors_8c =
 [
-    [ "MAX_TIME_BETWEEN_VALID_BARO_DATAS_MS", "sensors_8c.html#gafb9e43c8c182eff348ecd412a4a214b8", null ],
+    [ "MAX_SENSOR_PERIOD", "sensors_8c.html#ga5f237800078fddf004a29e81ea0c24c5", null ],
+    [ "MAX_TIME_BETWEEN_VALID_BARO_DATAS_US", "sensors_8c.html#ga70b9f3582d60632b8c38ac47bad16004", null ],
+    [ "MAX_TIME_BETWEEN_VALID_MAG_DATAS_US", "sensors_8c.html#ga4d659e6e41cb8a715b0462f75eb733f2", null ],
     [ "REQUIRED_GOOD_CYCLES", "sensors_8c.html#ga3e6e968c6bc5695cc2dc301c12a9f935", null ],
-    [ "SENSOR_PERIOD", "sensors_8c.html#ga8eb684c424469466e72c0bbfb506e458", null ],
     [ "mag_calibration_algo", "sensors_8c.html#gaa4a9d2444da0ad9373dc8d8fc3d851c8", [
       [ "MAG_CALIBRATION_PRELEMARI", "sensors_8c.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8acb8ba365d61808f93588f4f6ab773121", null ],
       [ "MAG_CALIBRATION_NORMALIZE_LENGTH", "sensors_8c.html#ggaa4a9d2444da0ad9373dc8d8fc3d851c8a566b052171d9d352158b7d7652b4280a", null ]

@@ -45,6 +45,7 @@ var group___control =
     ] ],
     [ "applyDeadband", "group___control.html#gaaa3e3ee54d554b51684e485fdeb9f3a9", null ],
     [ "arming_position", "group___control.html#ga1f5288e5f2aa7c30c4fb6f26cd54333a", null ],
+    [ "channel_is_configured", "group___control.html#gaf4522c3f5a63d3dd77cf5e593bf2c3c9", null ],
     [ "check_receiver_timer", "group___control.html#gabfa7190c4cd9bc78c79f397495d72703", null ],
     [ "control_source_select", "group___control.html#ga5e0cfaff8777cef85564c6db20469bf9", null ],
     [ "disarm_commanded", "group___control.html#ga99905d65c37db16cfac787446e23967f", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">21afde4</span>
+   &#160;<span id="projectnumber">302e035</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -134,12 +134,14 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga8eb684c424469466e72c0bbfb506e458"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga8eb684c424469466e72c0bbfb506e458">SENSOR_PERIOD</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ga8eb684c424469466e72c0bbfb506e458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f237800078fddf004a29e81ea0c24c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga5f237800078fddf004a29e81ea0c24c5">MAX_SENSOR_PERIOD</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ga5f237800078fddf004a29e81ea0c24c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e6e968c6bc5695cc2dc301c12a9f935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga3e6e968c6bc5695cc2dc301c12a9f935">REQUIRED_GOOD_CYCLES</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:ga3e6e968c6bc5695cc2dc301c12a9f935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb9e43c8c182eff348ecd412a4a214b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gafb9e43c8c182eff348ecd412a4a214b8">MAX_TIME_BETWEEN_VALID_BARO_DATAS_MS</a>&#160;&#160;&#160;100*1000</td></tr>
-<tr class="separator:gafb9e43c8c182eff348ecd412a4a214b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70b9f3582d60632b8c38ac47bad16004"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga70b9f3582d60632b8c38ac47bad16004">MAX_TIME_BETWEEN_VALID_BARO_DATAS_US</a>&#160;&#160;&#160;(100*1000)</td></tr>
+<tr class="separator:ga70b9f3582d60632b8c38ac47bad16004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d659e6e41cb8a715b0462f75eb733f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga4d659e6e41cb8a715b0462f75eb733f2">MAX_TIME_BETWEEN_VALID_MAG_DATAS_US</a>&#160;&#160;&#160;(300*1000)</td></tr>
+<tr class="separator:ga4d659e6e41cb8a715b0462f75eb733f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga623ec78b7909090dbedac4af1d52abb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga623ec78b7909090dbedac4af1d52abb4">MAX_QUEUE_SIZE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga623ec78b7909090dbedac4af1d52abb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba6b61bd4ff2677b6d5f6be4c5d8725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">STACK_SIZE_BYTES</a>&#160;&#160;&#160;1200</td></tr>
@@ -234,6 +236,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga472bec063ff4dd41b0b24883a9cb0488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56b8cbab2a7d849f0ecd55aaf958b12f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga56b8cbab2a7d849f0ecd55aaf958b12f">DONT_BUILD_IF</a> ((<a class="el" href="group___stabilization_module.html#ggabc5c98fcc1211af2b80116dd6e0a035da0c6a71c56e424e9e8dbece3cc8b6e247">PID_RATE_YAW</a>+0!=<a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a60ae774ecd1cf97a0e91f76970d64491">YAW</a>)||(PID_ATT_YAW!=<a class="el" href="group___stabilization_module.html#ggabc5c98fcc1211af2b80116dd6e0a035dac4b3164cea87275e35d6f4f473a3e360">PID_GROUP_ATT</a>+<a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a60ae774ecd1cf97a0e91f76970d64491">YAW</a>), stabAxisPidEnumMapping3)</td></tr>
 <tr class="separator:ga56b8cbab2a7d849f0ecd55aaf958b12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e80aaf9fb4f8b27b0d0f931fb489a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae9e80aaf9fb4f8b27b0d0f931fb489a8">DONT_BUILD_IF</a> (STABILIZATIONSETTINGS_MAXLEVELANGLE_ROLL!=<a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>+0, LevelAngleConstantRoll)</td></tr>
+<tr class="separator:gae9e80aaf9fb4f8b27b0d0f931fb489a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65bd5436ab7391543f788078be86eab8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga65bd5436ab7391543f788078be86eab8">DONT_BUILD_IF</a> (STABILIZATIONSETTINGS_MAXLEVELANGLE_PITCH!=<a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388aa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>+0, LevelAngleConstantPitch)</td></tr>
+<tr class="separator:ga65bd5436ab7391543f788078be86eab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78d25370d0fd4e3c56320a7ce71372dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#ga78d25370d0fd4e3c56320a7ce71372dc">DONT_BUILD_IF</a> (STABILIZATIONSETTINGS_MAXLEVELANGLE_YAW!=<a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a60ae774ecd1cf97a0e91f76970d64491">YAW</a>+0, LevelAngleConstantYaw)</td></tr>
+<tr class="separator:ga78d25370d0fd4e3c56320a7ce71372dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa96452721032acd43f9b128a04406aad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gaa96452721032acd43f9b128a04406aad">stabilizationTask</a> (void *parameters)</td></tr>
 <tr class="separator:gaa96452721032acd43f9b128a04406aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8fb9284605593ba78f215bf5546cef6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___stabilization_module.html#gae8fb9284605593ba78f215bf5546cef6">zero_pids</a> (void)</td></tr>
@@ -401,7 +409,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00173">173</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00180">180</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -435,17 +443,45 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafb9e43c8c182eff348ecd412a4a214b8"></a>
+<a class="anchor" id="ga5f237800078fddf004a29e81ea0c24c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_TIME_BETWEEN_VALID_BARO_DATAS_MS&#160;&#160;&#160;100*1000</td>
+          <td class="memname">#define MAX_SENSOR_PERIOD&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensors_8c_source.html#l00064">64</a> of file <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga70b9f3582d60632b8c38ac47bad16004"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TIME_BETWEEN_VALID_BARO_DATAS_US&#160;&#160;&#160;(100*1000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sensors_8c_source.html#l00066">66</a> of file <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d659e6e41cb8a715b0462f75eb733f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TIME_BETWEEN_VALID_MAG_DATAS_US&#160;&#160;&#160;(300*1000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sensors_8c_source.html#l00067">67</a> of file <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
 
 </div>
 </div>
@@ -460,20 +496,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sensors_8c_source.html#l00065">65</a> of file <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8eb684c424469466e72c0bbfb506e458"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SENSOR_PERIOD&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sensors_8c_source.html#l00064">64</a> of file <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
 
 </div>
 </div>
@@ -700,7 +722,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00304">304</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00311">311</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -726,7 +748,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01315">1315</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01326">1326</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -774,7 +796,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00398">398</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00408">408</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -800,7 +822,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01415">1415</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01426">1426</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -908,6 +930,84 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae9e80aaf9fb4f8b27b0d0f931fb489a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">STABILIZATIONSETTINGS_MAXLEVELANGLE_ROLL!&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a2eeb9fef8a6a516fa6437a44a6efbd52">ROLL</a>+0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LevelAngleConstantRoll&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga65bd5436ab7391543f788078be86eab8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">STABILIZATIONSETTINGS_MAXLEVELANGLE_PITCH!&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388aa4ed247aa19723caf868d2b2dd5cf4ff">PITCH</a>+0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LevelAngleConstantPitch&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga78d25370d0fd4e3c56320a7ce71372dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DONT_BUILD_IF </td>
+          <td>(</td>
+          <td class="paramtype">STABILIZATIONSETTINGS_MAXLEVELANGLE_YAW!&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="group___stabilization_module.html#gga385c44f6fb256e5716a2302a5b940388a60ae774ecd1cf97a0e91f76970d64491">YAW</a>+0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LevelAngleConstantYaw&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ga1af047cbbb03e56a0ad3e8fe2b118961"></a>
 <div class="memitem">
 <div class="memproto">
@@ -940,7 +1040,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00178">178</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00185">185</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1146,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01299">1299</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01310">1310</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1256,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00247">247</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00254">254</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1374,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module initialization </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00215">215</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00222">222</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1392,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module initialization </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00200">200</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00207">207</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1419,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Module task </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00586">586</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00596">596</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1480,7 +1580,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01426">1426</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01437">1437</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1544,7 +1644,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Clear the accumulators and derivatives for all the axes </p>
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01289">1289</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l01300">1300</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1655,7 +1755,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00142">142</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00149">149</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1791,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00163">163</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00170">170</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1837,7 +1937,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00140">140</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00147">147</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +1981,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00147">147</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00154">154</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1971,7 +2071,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00143">143</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00150">150</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -1993,7 +2093,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00144">144</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00151">151</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2015,7 +2115,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00148">148</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00155">155</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2037,7 +2137,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00159">159</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00166">166</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2059,7 +2159,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00160">160</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00167">167</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2127,7 +2227,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00135">135</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00142">142</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2171,7 +2271,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00138">138</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00145">145</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2193,7 +2293,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00129">129</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00136">136</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2207,7 +2307,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00149">149</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00156">156</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2321,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00149">149</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00156">156</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2267,7 +2367,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00136">136</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00143">143</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2389,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00145">145</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00152">152</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -2311,7 +2411,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00146">146</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization_8c_source.html#l00153">153</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>

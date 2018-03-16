@@ -1,5 +1,16 @@
 var NAVTREEINDEX128 =
 {
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaf3b8b1e6b618d4055bb98abcb4b16159":[5,0,0,5,3,1,2,11],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaf5d5f32c3a2c9f19c94deb70406d96e4":[5,0,0,5,3,1,2,40],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaf6410feddf16870e3e65d6a2631f1f51":[5,0,0,5,3,1,2,34],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaf730749ee9284efdad9a53e3f9de9418":[5,0,0,5,3,1,2,17],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[5,0,0,5,3,1,2,56],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafc809d2cdef7438cdb9abda6ea55f372":[5,0,0,5,3,1,2,7],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gafd42c6e3ae013294396f05fd9760bbf7":[5,0,0,5,3,1,2,30],
+"targets_2brainre1_2board-info_2pios__board_8h.html#gaffe7c0cd799a61d0dbaed25e9496c4bb":[5,0,0,5,3,1,2,20],
+"targets_2brainre1_2board-info_2pios__board_8h_source.html":[5,0,0,5,3,1,2],
+"targets_2brainre1_2fw_2pios__config_8h.html":[5,0,0,5,3,2,2],
+"targets_2brainre1_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098":[5,0,0,5,3,2,2,13],
 "targets_2brainre1_2fw_2pios__config_8h.html#ga17770c6ce8b226b81956cc58b5b9b1f8":[5,0,0,5,3,2,2,25],
 "targets_2brainre1_2fw_2pios__config_8h.html#ga1e15b364af56c864f6214ade28ffdfc4":[5,0,0,5,3,2,2,8],
 "targets_2brainre1_2fw_2pios__config_8h.html#ga221b4e9f9650231f108d4cbb538bf9fd":[5,0,0,5,3,2,2,14],
@@ -238,16 +249,5 @@ var NAVTREEINDEX128 =
 "targets_2flyingpio_2fw_2pios__config_8h.html#gaf5008f32ca587c01a06316f630f9d29e":[5,0,0,5,7,1,1,4],
 "targets_2flyingpio_2fw_2pios__config_8h.html#gaf8a678a8ce2142cdd87b127b78a89add":[5,0,0,5,7,1,1,2],
 "targets_2flyingpio_2fw_2pios__config_8h_source.html":[5,0,0,5,7,1,1],
-"targets_2lux_2bl_2pios__config_8h.html":[5,0,0,5,8,0,1],
-"targets_2lux_2bl_2pios__config_8h.html#ga3442464c6b8e8869621e4b7103782cec":[5,0,0,5,8,0,1,4],
-"targets_2lux_2bl_2pios__config_8h.html#ga464462d5068d115f79148efdffefb418":[5,0,0,5,8,0,1,0],
-"targets_2lux_2bl_2pios__config_8h.html#ga609bad0a7167d95b8aa65c05cd6cf739":[5,0,0,5,8,0,1,7],
-"targets_2lux_2bl_2pios__config_8h.html#ga71ac5951782a849bcc916fe21f1df092":[5,0,0,5,8,0,1,8],
-"targets_2lux_2bl_2pios__config_8h.html#ga95aafc3f5062ea4c6f0b33bd678371a8":[5,0,0,5,8,0,1,6],
-"targets_2lux_2bl_2pios__config_8h.html#gaa481fbc97c64c579738c2bf6ea8482d0":[5,0,0,5,8,0,1,1],
-"targets_2lux_2bl_2pios__config_8h.html#gaab491daf240fca6cc9e3243ce8e8712d":[5,0,0,5,8,0,1,2],
-"targets_2lux_2bl_2pios__config_8h.html#gabaec4c77cf420cd9ad55c5f96a10b192":[5,0,0,5,8,0,1,3],
-"targets_2lux_2bl_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379":[5,0,0,5,8,0,1,5],
-"targets_2lux_2bl_2pios__config_8h_source.html":[5,0,0,5,8,0,1],
-"targets_2lux_2board-info_2pios__board_8h.html":[5,0,0,5,8,1,2]
+"targets_2lux_2bl_2pios__config_8h.html":[5,0,0,5,8,0,1]
 };

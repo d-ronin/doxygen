@@ -37,6 +37,7 @@ var group___revo_mini =
     [ "PIOS_HSUM_MAX_DEVS", "group___revo_mini.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "group___revo_mini.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___revo_mini.html#ga464462d5068d115f79148efdffefb418", null ],
+    [ "PIOS_INCLUDE_BMP280_SPI", "group___revo_mini.html#ga9f4391f6affd1768e1158448f12accc5", null ],
     [ "PIOS_INCLUDE_COM_MSG", "group___revo_mini.html#gaa481fbc97c64c579738c2bf6ea8482d0", null ],
     [ "PIOS_INCLUDE_FASTHEAP", "group___revo_mini.html#ga9342ac55ca81b9d977fec30f45813847", null ],
     [ "PIOS_INCLUDE_FLASH", "group___revo_mini.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],

@@ -9,6 +9,7 @@ var transmitter__control_8c =
     [ "THRUST_BIDIR_THRESH", "transmitter__control_8c.html#ga1c9296e1c9bcec91ad215695869d066d", null ],
     [ "applyDeadband", "transmitter__control_8c.html#gaaa3e3ee54d554b51684e485fdeb9f3a9", null ],
     [ "arming_position", "transmitter__control_8c.html#ga1f5288e5f2aa7c30c4fb6f26cd54333a", null ],
+    [ "channel_is_configured", "transmitter__control_8c.html#gaf4522c3f5a63d3dd77cf5e593bf2c3c9", null ],
     [ "check_receiver_timer", "transmitter__control_8c.html#gabfa7190c4cd9bc78c79f397495d72703", null ],
     [ "disarm_commanded", "transmitter__control_8c.html#ga99905d65c37db16cfac787446e23967f", null ],
     [ "disarming_position", "transmitter__control_8c.html#ga61f6be7a4f6b447a9a56dad2e5d3f9b4", null ],

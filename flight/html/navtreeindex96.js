@@ -1,5 +1,12 @@
 var NAVTREEINDEX96 =
 {
+"misc__math_2unittest_8cpp.html#ga836b829d17fee8b1db6d0f71308103ff":[5,0,0,6,4,0,0],
+"misc__math_2unittest_8cpp.html#ga857a45ca3522f2d7196ecac21eb2f528":[5,0,0,6,4,0,15],
+"misc__math_2unittest_8cpp.html#ga986be87cb393efd719a76239fd440609":[5,0,0,6,4,0,19],
+"misc__math_2unittest_8cpp.html#gaa62459355b2c84ef788d4bb84f924458":[5,0,0,6,4,0,5],
+"misc__math_2unittest_8cpp.html#gab74bc4a71915e6b66efa543d8162af35":[5,0,0,6,4,0,11],
+"misc__math_2unittest_8cpp.html#gadd176ad6c420571ec24f5b96f9578e5b":[5,0,0,6,4,0,8],
+"misc__math_2unittest_8cpp.html#gae9b10024a005563e17340713ce445a15":[5,0,0,6,4,0,13],
 "misc__math_2unittest_8cpp_source.html":[5,0,0,6,4,0],
 "misc__math_8c.html":[5,0,0,1,2,6],
 "misc__math_8c.html#ga359c9fd8d5e519cd4ac2f7707ad1f670":[5,0,0,1,2,6,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX96 =
 "msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a860308dabaadca2db1d44bf4163f3346":[5,0,0,1,4,2,0,40],
 "msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a89c1005bbab30818a65eb96889313227":[5,0,0,1,4,2,0,36],
 "msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a8a72baae2f8fac9d27be02c830f7be4a":[5,0,0,1,4,2,0,50],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a8f79821921aaca2a2e3ea89b066d481f":[5,0,0,1,4,2,0,4],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a9d2111b3cf1d0e52cd1a56d5705095a9":[5,0,0,1,4,2,0,21],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99aa666bda24dd558f50b8e6b54e87e54de":[5,0,0,1,4,2,0,2],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99ab4b8a96c73767cc94f0de4d8a7e7ba51":[5,0,0,1,4,2,0,25],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99ab6ec2586f8ee2b2ea1720b549b5ba05d":[5,0,0,1,4,2,0,30],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99abfb28ad0e2387c67bc4160f9f3b577f2":[5,0,0,1,4,2,0,15],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99ac5c6e9c8474960fc236c99d6a90216ed":[5,0,0,1,4,2,0,41],
-"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99ac8fc25fa58bb306d6bebe25edc4dfc41":[5,0,0,1,4,2,0,46]
+"msp__messages_8h.html#gga5ad03669ffe4f99e8bc789de25b17a99a8f79821921aaca2a2e3ea89b066d481f":[5,0,0,1,4,2,0,4]
 };
