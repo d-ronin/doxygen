@@ -9,7 +9,6 @@ var searchData=
   ['sha1_5fblock_5fsize',['SHA1_BLOCK_SIZE',['../sha1_8h.html#a4be887a15639aa78e6a129b9c8f4d2b9',1,'sha1.h']]],
   ['smoothcontrol_5fchamfer_5fstart',['SMOOTHCONTROL_CHAMFER_START',['../smoothcontrol_8h.html#a05d4df3b3a13a12bd8ae4ca788cb307c',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fduty_5fcycle',['SMOOTHCONTROL_DUTY_CYCLE',['../smoothcontrol_8h.html#a4cfe64fc9d6e9a8f05f9d84de471d127',1,'smoothcontrol.h']]],
-  ['smoothcontrol_5fextended_5fduty_5fcycle',['SMOOTHCONTROL_EXTENDED_DUTY_CYCLE',['../smoothcontrol_8h.html#a5a5b6c0a93ab47c510abc5ad987f7bc8',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fpredictor_5fslope',['SMOOTHCONTROL_PREDICTOR_SLOPE',['../smoothcontrol_8h.html#a46b5627b43a6823c675b29edaaad5f00',1,'smoothcontrol.h']]],
   ['smoothcontrol_5ftimebomb',['SMOOTHCONTROL_TIMEBOMB',['../smoothcontrol_8h.html#abb523eb30c3d86933d2cd4a4e1f71fb7',1,'smoothcontrol.h']]],
   ['sphsn',['SPHSN',['../tranmerc_8c.html#a9db8790397c162fd7050c1092891234a',1,'tranmerc.c']]],

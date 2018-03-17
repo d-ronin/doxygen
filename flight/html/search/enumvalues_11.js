@@ -6,7 +6,7 @@ var searchData=
   ['shot_5fdshot300',['SHOT_DSHOT300',['../group___p_i_o_s___s_e_r_v_o.html#gga917cc8820f8432b25b61e24c0d619904a8402114565c5dd907758816b1c425089',1,'pios_servo.h']]],
   ['shot_5fdshot600',['SHOT_DSHOT600',['../group___p_i_o_s___s_e_r_v_o.html#gga917cc8820f8432b25b61e24c0d619904a88674977b35c46a483a43b5cf823e0f4',1,'pios_servo.h']]],
   ['shot_5foneshot',['SHOT_ONESHOT',['../group___p_i_o_s___s_e_r_v_o.html#gga917cc8820f8432b25b61e24c0d619904afc1ceb7daf6b455efa6c9dd731fe9588',1,'pios_servo.h']]],
-  ['smoothcontrol_5fextended',['SMOOTHCONTROL_EXTENDED',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae65e95787944be1a5ae8ed327a078a62',1,'smoothcontrol.h']]],
+  ['smoothcontrol_5flinear',['SMOOTHCONTROL_LINEAR',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ec28a0c8145db1d8f887ae4752c2e28',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fnone',['SMOOTHCONTROL_NONE',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf20fb982a93c75492f10eb3675d8a91c',1,'smoothcontrol.h']]],
   ['smoothcontrol_5fnormal',['SMOOTHCONTROL_NORMAL',['../smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2c9234fcb35045cd0fbdd6357d9ba2aa',1,'smoothcontrol.h']]],
   ['start',['start',['../group___common_f1.html#gga3758da4ce9164f008216ba0fc2a82edca0e97c69c73117f6c0109b2d7d1d9cedc',1,'common.h']]],

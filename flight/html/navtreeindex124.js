@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"structmsp__set__head.html":[2,1,2,33],
 "structmsp__set__head.html#ae73e6e45fd6f29ea51e8df47606eb369":[2,1,2,33,0],
 "structmsp__set__misc.html":[2,1,2,23],
 "structmsp__set__misc.html#a37555c685db60a4b4b0af4b8c7e5d9e8":[2,1,2,23,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "structpios__internal__adc__simple__cfg.html#afa452c4e41d7c54ab3c3bff3faffdeee":[2,0,53,6,2],
 "structpios__lis3mdl__cfg.html":[2,0,22,0],
 "structpios__lis3mdl__cfg.html#a617710474e70b7ea86e99d2c0ba8c2ac":[2,0,22,0,0],
-"structpios__mpu__cfg.html":[2,0,25,0],
-"structpios__mpu__cfg.html#a3a8ff0f9e918a3951f9cb1be0311ec6a":[2,0,25,0,3]
+"structpios__mpu__cfg.html":[2,0,25,0]
 };

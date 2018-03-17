@@ -79,7 +79,7 @@ var searchData=
   ['modulesettings_5ffrskyacceldata_5fattitudeangles',['MODULESETTINGS_FRSKYACCELDATA_ATTITUDEANGLES',['../group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#gae72aa7aef9e4feba89e34d33d7676ee3',1,'UAVOFrSKYSensorHubBridge.c']]],
   ['mon',['mon',['../group___libraries.html#gae27dff85db06aa28b04e73dc6834fa23',1,'__attribute__']]],
   ['mon_5fver',['mon_ver',['../union_u_b_x_payload.html#a3ed58d1ceda81eee16e681404dc2b551',1,'UBXPayload']]],
-  ['month',['month',['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#afd4af98336281bae2375714238392070',1,'UBX_NAV_TIMEUTC::month()'],['../struct_w_m_mtype___date.html#a7f47a103df8618aac10b109fd5b149c4',1,'WMMtype_Date::Month()']]],
+  ['month',['Month',['../struct_w_m_mtype___date.html#a7f47a103df8618aac10b109fd5b149c4',1,'WMMtype_Date::Month()'],['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#afd4af98336281bae2375714238392070',1,'UBX_NAV_TIMEUTC::month()']]],
   ['morse_5ftable',['morse_table',['../morsel_8c.html#abebad527c81169ea5158ab4e8a5ca7d9',1,'morsel.c']]],
   ['mosi',['mosi',['../structpios__spi__cfg.html#adaf88353246da685e0f82e927d72eaed',1,'pios_spi_cfg']]],
   ['motor',['motor',['../structmsp__motor.html#a7eb90d6170329e136d8fd1ed5fa16439',1,'msp_motor::motor()'],['../structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18',1,'msp_set_motor::motor()'],['../msp__messages_8h.html#adcc2a40c274cb6f3003557633251d4da',1,'motor():&#160;msp_messages.h']]],

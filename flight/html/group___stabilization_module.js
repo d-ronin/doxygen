@@ -61,7 +61,7 @@ var group___stabilization_module =
     [ "sensors_init", "group___stabilization_module.html#ga4a6be989571629f866eef0e8f330254a", null ],
     [ "sensors_settings_update", "group___stabilization_module.html#gae4a9b3081d01dd794323729ce85b591b", null ],
     [ "sensors_step", "group___stabilization_module.html#ga5deff28f9052bf4e18c4077091252b7e", null ],
-    [ "stabilization_failsafe_checks", "group___stabilization_module.html#gad4f9c597cc7e801e46ab76d2cb551e2d", null ],
+    [ "stabilization_failsafe_checks", "group___stabilization_module.html#gaa31ba9a7ee78529314ed0413de38de3a", null ],
     [ "stabilization_virtual_flybar", "group___stabilization_module.html#ga4d4e94ea99a3cf6e48241364faa65bf2", null ],
     [ "stabilization_virtual_flybar_pirocomp", "group___stabilization_module.html#ga286dd4b805297b12acd0aa9a69780a75", null ],
     [ "StabilizationInitialize", "group___stabilization_module.html#ga0271ad4d56816c408814d99db9d15b8b", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">302e035</span>
+   &#160;<span id="projectnumber">260ca23</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -124,8 +124,6 @@ Macros</h2></td></tr>
 <tr class="separator:abb523eb30c3d86933d2cd4a4e1f71fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cfe64fc9d6e9a8f05f9d84de471d127"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a4cfe64fc9d6e9a8f05f9d84de471d127">SMOOTHCONTROL_DUTY_CYCLE</a>&#160;&#160;&#160;0.5f</td></tr>
 <tr class="separator:a4cfe64fc9d6e9a8f05f9d84de471d127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b6c0a93ab47c510abc5ad987f7bc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a5a5b6c0a93ab47c510abc5ad987f7bc8">SMOOTHCONTROL_EXTENDED_DUTY_CYCLE</a>&#160;&#160;&#160;0.75f</td></tr>
-<tr class="separator:a5a5b6c0a93ab47c510abc5ad987f7bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46b5627b43a6823c675b29edaaad5f00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a46b5627b43a6823c675b29edaaad5f00">SMOOTHCONTROL_PREDICTOR_SLOPE</a>&#160;&#160;&#160;0.8f</td></tr>
 <tr class="separator:a46b5627b43a6823c675b29edaaad5f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d4df3b3a13a12bd8ae4ca788cb307c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a05d4df3b3a13a12bd8ae4ca788cb307c">SMOOTHCONTROL_CHAMFER_START</a>&#160;&#160;&#160;0.75f</td></tr>
@@ -141,7 +139,7 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf20fb982a93c75492f10eb3675d8a91c">SMOOTHCONTROL_NONE</a>, 
 <a class="el" href="smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2c9234fcb35045cd0fbdd6357d9ba2aa">SMOOTHCONTROL_NORMAL</a>, 
-<a class="el" href="smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae65e95787944be1a5ae8ed327a078a62">SMOOTHCONTROL_EXTENDED</a>
+<a class="el" href="smoothcontrol_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ec28a0c8145db1d8f887ae4752c2e28">SMOOTHCONTROL_LINEAR</a>
  }</td></tr>
 <tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,14 +151,16 @@ Functions</h2></td></tr>
 <tr class="separator:ab6f7c0c8766b49951ca8f0a6746ae8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac837b84ff0bfe12b096a2d30ea4dbbb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#ac837b84ff0bfe12b096a2d30ea4dbbb9">smoothcontrol_next</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>)</td></tr>
 <tr class="separator:ac837b84ff0bfe12b096a2d30ea4dbbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3548a80d8935204777628ea9ade8e643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a3548a80d8935204777628ea9ade8e643">smoothcontrol_run</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, uint8_t axis_num, float *new_signal, float limit)</td></tr>
-<tr class="separator:a3548a80d8935204777628ea9ade8e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30077b594c9ce1a7946206f38b88d46f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a30077b594c9ce1a7946206f38b88d46f">smoothcontrol_run</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, uint8_t axis_num, float *new_signal)</td></tr>
+<tr class="separator:a30077b594c9ce1a7946206f38b88d46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361aee1d0125a04da6459594a9e1aa1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a361aee1d0125a04da6459594a9e1aa1f">smoothcontrol_run_thrust</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, float *new_signal)</td></tr>
 <tr class="separator:a361aee1d0125a04da6459594a9e1aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16e175b650aeebdfccaeb03a070fbe21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a16e175b650aeebdfccaeb03a070fbe21">smoothcontrol_reinit</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, uint8_t axis_num, float new_signal)</td></tr>
 <tr class="separator:a16e175b650aeebdfccaeb03a070fbe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a8ae93c493cbe7f28e66ca55b3e9ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#ab5a8ae93c493cbe7f28e66ca55b3e9ef">smoothcontrol_set_mode</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, uint8_t axis_num, uint8_t <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>)</td></tr>
-<tr class="separator:ab5a8ae93c493cbe7f28e66ca55b3e9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6fc8e5b1973895342a0bd57812409e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#acd6fc8e5b1973895342a0bd57812409e">smoothcontrol_reinit_thrust</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, float new_signal)</td></tr>
+<tr class="separator:acd6fc8e5b1973895342a0bd57812409e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6dd4934eab5edf975ac0e50ba89624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a5a6dd4934eab5edf975ac0e50ba89624">smoothcontrol_set_mode</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>, uint8_t axis_num, uint8_t <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga9b9989d29283df24c5b281ec32b3b1c7">mode</a>, uint8_t duty_cycle)</td></tr>
+<tr class="separator:a5a6dd4934eab5edf975ac0e50ba89624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a865b7994813c359609a545ef2f5fdd19"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smoothcontrol_8h.html#a865b7994813c359609a545ef2f5fdd19">smoothcontrol_get_ringer</a> (<a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a> <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>)</td></tr>
 <tr class="separator:a865b7994813c359609a545ef2f5fdd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00018">18</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00015">15</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
 
 </div>
 </div>
@@ -193,20 +193,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a5b6c0a93ab47c510abc5ad987f7bc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SMOOTHCONTROL_EXTENDED_DUTY_CYCLE&#160;&#160;&#160;0.75f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00012">12</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a46b5627b43a6823c675b29edaaad5f00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +203,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00015">15</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00012">12</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +232,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00032">32</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00029">29</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
 
 </div>
 </div>
@@ -265,11 +251,11 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba2c9234fcb35045cd0fbdd6357d9ba2aa"></a>SMOOTHCONTROL_NORMAL</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55bae65e95787944be1a5ae8ed327a078a62"></a>SMOOTHCONTROL_EXTENDED</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba1ec28a0c8145db1d8f887ae4752c2e28"></a>SMOOTHCONTROL_LINEAR</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00020">20</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8h_source.html#l00017">17</a> of file <a class="el" href="smoothcontrol_8h_source.html">smoothcontrol.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +274,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00185">185</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00198">198</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
@@ -306,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00174">174</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00187">187</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
@@ -324,7 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00149">149</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00162">162</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
@@ -358,11 +344,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00072">72</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00079">79</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3548a80d8935204777628ea9ade8e643"></a>
+<a class="anchor" id="acd6fc8e5b1973895342a0bd57812409e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void smoothcontrol_reinit_thrust </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="smoothcontrol_8h.html#a3cf78fbc7825f6871364db5956e6b503">smoothcontrol_state</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>new_signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00090">90</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30077b594c9ce1a7946206f38b88d46f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -382,13 +396,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>new_signal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>limit</em>&#160;</td>
+          <td class="paramname"><em>new_signal</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -398,7 +406,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00091">91</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00104">104</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
@@ -426,11 +434,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00118">118</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00131">131</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab5a8ae93c493cbe7f28e66ca55b3e9ef"></a>
+<a class="anchor" id="a5a6dd4934eab5edf975ac0e50ba89624"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -450,7 +458,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>duty_cycle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -460,7 +474,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00083">83</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00096">96</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>
@@ -488,7 +502,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00167">167</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
+<p>Definition at line <a class="el" href="smoothcontrol_8c_source.html#l00180">180</a> of file <a class="el" href="smoothcontrol_8c_source.html">smoothcontrol.c</a>.</p>
 
 </div>
 </div>

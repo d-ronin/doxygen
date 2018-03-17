@@ -1,5 +1,6 @@
 var NAVTREEINDEX123 =
 {
+"structhott__gps__message.html#a5093b17238c5109684185c9c7977a5bf":[2,4,29,5,6],
 "structhott__gps__message.html#a66da8d37604475ac681ff68845c2f688":[2,4,29,5,14],
 "structhott__gps__message.html#a68a220eec8a62c0650ce4eecc852ee35":[2,4,29,5,25],
 "structhott__gps__message.html#a69c2b8f4c6190a403a2410ea82931717":[2,4,29,5,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX123 =
 "structmsp__servo__conf.html":[2,1,2,31],
 "structmsp__servo__conf.html#a84e75b57c4d2ba0df2bd65ad0ff6df6d":[2,1,2,31,0],
 "structmsp__set__box.html":[2,1,2,21],
-"structmsp__set__box.html#ace3fc17845fa9c4e84a9c72a4633edfd":[2,1,2,21,0],
-"structmsp__set__head.html":[2,1,2,33]
+"structmsp__set__box.html#ace3fc17845fa9c4e84a9c72a4633edfd":[2,1,2,21,0]
 };

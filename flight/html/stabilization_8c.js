@@ -37,7 +37,7 @@ var stabilization_8c =
     [ "get_throttle", "stabilization_8c.html#ga1af047cbbb03e56a0ad3e8fe2b118961", null ],
     [ "MODULE_HIPRI_INITCALL", "stabilization_8c.html#gad619c15b0c0589e754d5937b6f7ec557", null ],
     [ "remap_smoothing_mode", "stabilization_8c.html#ga3782701fb17bad618b59523be488b7ac", null ],
-    [ "stabilization_failsafe_checks", "stabilization_8c.html#gad4f9c597cc7e801e46ab76d2cb551e2d", null ],
+    [ "stabilization_failsafe_checks", "stabilization_8c.html#gaa31ba9a7ee78529314ed0413de38de3a", null ],
     [ "StabilizationInitialize", "stabilization_8c.html#ga0271ad4d56816c408814d99db9d15b8b", null ],
     [ "StabilizationStart", "stabilization_8c.html#ga6190a7e200476bf20da7b47ac4107973", null ],
     [ "stabilizationTask", "stabilization_8c.html#gaa96452721032acd43f9b128a04406aad", null ],

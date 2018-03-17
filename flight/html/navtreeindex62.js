@@ -210,6 +210,7 @@ var NAVTREEINDEX62 =
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,6,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,7,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,8,0,2,2],
+"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,9,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,10,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,11,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,3,0,2,5],
@@ -232,14 +233,12 @@ var NAVTREEINDEX62 =
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,15,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,0,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,0,0,2,5],
-"group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,9,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,3,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,5,1,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,6,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,7,0,2,5],
 "group___s_t_m32_f0xx___system___private___function_prototypes.html":[2,6,8,0,2,5],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,9,0,2,6],
-"group___s_t_m32_f0xx___system___private___functions.html":[2,6,10,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,11,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,3,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,12,0,2,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX62 =
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,14,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,5,7,0,2,6],
 "group___s_t_m32_f0xx___system___private___functions.html":[2,6,15,0,2,6],
-"group___s_t_m32_f0xx___system___private___functions.html":[2,6,16,0,2,6]
+"group___s_t_m32_f0xx___system___private___functions.html":[2,6,16,0,2,6],
+"group___s_t_m32_f0xx___system___private___functions.html":[2,5,8,0,2,6]
 };

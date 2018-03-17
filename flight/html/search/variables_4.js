@@ -122,6 +122,7 @@ var searchData=
   ['dt_5fexpected',['dT_expected',['../group___attitude_module.html#ga50463f9755fec2828ef442d6d3b20e6c',1,'attitude.c']]],
   ['due',['due',['../struct_object_event_entry_throttled.html#a61b88b80f405c93a5ffae5a756abf723',1,'ObjectEventEntryThrottled']]],
   ['dummy',['dummy',['../structhott__esc__message.html#aa72443ca18a2c089a44d1be0396e0c61',1,'hott_esc_message::dummy()'],['../group___v_t_x_config.html#gae0b7746cd2a5ecc22d8875fa742406e7',1,'__attribute__::dummy()']]],
+  ['duty_5fcycle',['duty_cycle',['../structsmoothcontrol__state__internal.html#a3a908cfdab2b251757a6f75e4c90d624',1,'smoothcontrol_state_internal']]],
   ['duty_5fcycle_5f0',['duty_cycle_0',['../group___p_i_o_s___d_m_a_shot.html#ga24a79f221f5d4e3c6cb21403f751ae02',1,'servo_timer']]],
   ['duty_5fcycle_5f1',['duty_cycle_1',['../group___p_i_o_s___d_m_a_shot.html#ga5bcb76c935ace0818e7818da9e54c01a',1,'servo_timer']]],
   ['dwdterate',['dwDTERate',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gabba439cd113503e9223c9d61865319d2',1,'usb_cdc_line_coding::dwDTERate()'],['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga1c7eaa2f09ca8253de1711d01e05e02c',1,'dwDTERate():&#160;pios_usb_defs.h']]],

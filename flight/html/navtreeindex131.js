@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[5,0,0,5,12,1,2,7],
+"targets_2playuavosd_2board-info_2pios__board_8h.html#ga86167cdf7eaace383bf74d35f23cb49e":[5,0,0,5,12,1,2,36],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9":[5,0,0,5,12,1,2,10],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga89e68cdd07ab84568fe168af24311299":[5,0,0,5,12,1,2,26],
 "targets_2playuavosd_2board-info_2pios__board_8h.html#ga8f592a960a21018006bd68f30692ab5b":[5,0,0,5,12,1,2,23],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "targets_2revolution_2fw_2pios__config_8h.html#ga9342ac55ca81b9d977fec30f45813847":[5,0,0,5,14,2,2,3],
 "targets_2revolution_2fw_2pios__config_8h.html#ga973471206d11c2565dc93487f965c6e9":[5,0,0,5,14,2,2,11],
 "targets_2revolution_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf":[5,0,0,5,14,2,2,1],
-"targets_2revolution_2fw_2pios__config_8h.html#ga9c23f32c100ee25c973b1be91fab56dd":[5,0,0,5,14,2,2,9],
-"targets_2revolution_2fw_2pios__config_8h.html#ga9f4391f6affd1768e1158448f12accc5":[5,0,0,5,14,2,2,2],
-"targets_2revolution_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2":[5,0,0,5,14,2,2,26]
+"targets_2revolution_2fw_2pios__config_8h.html#ga9c23f32c100ee25c973b1be91fab56dd":[5,0,0,5,14,2,2,9]
 };
