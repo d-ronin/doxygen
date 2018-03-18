@@ -25,7 +25,7 @@ var searchData=
   ['vtol_5ffollower_5fcontrol_5fland',['vtol_follower_control_land',['../group___vtol_path_follower.html#ga3bb184686da274df1ce2c02d0b7d5484',1,'vtol_follower_control.c']]],
   ['vtol_5ffollower_5fcontrol_5floiter',['vtol_follower_control_loiter',['../group___vtol_path_follower.html#ga5e66d16b252c7eb235b845dca9216d66',1,'vtol_follower_control.c']]],
   ['vtol_5ffollower_5fcontrol_5fpath',['vtol_follower_control_path',['../group___vtol_path_follower.html#gaa888e9f4c0744cc967fdea6fc25024b7',1,'vtol_follower_control.c']]],
-  ['vtol_5ffollower_5fcontrol_5fsettings_5fupdated',['vtol_follower_control_settings_updated',['../group___vtol_path_follower.html#ga11c00ff1937f75fc54067a5e4a7e9631',1,'vtol_follower_control.c']]],
+  ['vtol_5ffollower_5fcontrol_5fsettings_5fupdated',['vtol_follower_control_settings_updated',['../group___vtol_path_follower.html#gab2b7b1598c99b00325b9dd571bddf9ab',1,'vtol_follower_control.c']]],
   ['vtol_5ffollower_5ffsm_5factivate_5fgoal',['vtol_follower_fsm_activate_goal',['../group___vtol_path_follower.html#ga039469a77d5cf372122c15b804f556ac',1,'vtol_follower_fsm.c']]],
   ['vtol_5ffollower_5ffsm_5fupdate',['vtol_follower_fsm_update',['../group___vtol_path_follower.html#gaf39bd45642b5b246242f59102ed2e828',1,'vtol_follower_fsm.c']]],
   ['vtol_5ffsm_5fenter_5fstate',['vtol_fsm_enter_state',['../group___vtol_navigation_fsm_methods.html#ga847b6252891a5697dfa112492a0974ba',1,'vtol_follower_fsm.c']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"gpsdisplaygadgetfactory_8cpp.html":[6,0,0,0,0,1,14,6],
 "gpsdisplaygadgetfactory_8cpp_source.html":[6,0,0,0,0,1,14,6],
 "gpsdisplaygadgetfactory_8h.html":[6,0,0,0,0,1,14,7],
 "gpsdisplaygadgetfactory_8h_source.html":[6,0,0,0,0,1,14,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "group___boards___quantec.html#gaa9c1abb7238239aaad2f75099b4801f0":[3,2,9,12],
 "group___boards___quantec.html#gab687582af9051f5955c3c797244dcb64":[3,2,9,1,13],
 "group___boards___quantec.html#gab687582af9051f5955c3c797244dcb64":[3,2,9,14],
-"group___boards___quantec.html#gabf4519ffd0e2aaa2c692d9ec58b3bfd1":[3,2,9,1,4],
-"group___boards___quantec.html#gabf4519ffd0e2aaa2c692d9ec58b3bfd1":[3,2,9,4]
+"group___boards___quantec.html#gabf4519ffd0e2aaa2c692d9ec58b3bfd1":[3,2,9,1,4]
 };

@@ -238,7 +238,7 @@ var searchData=
   ['isstick',['isStick',['../group___config_plugin.html#ga50267a5fad8630ae483fa70101c9fd8e',1,'ConfigInputWidget::ArmingMethod']]],
   ['isswitch',['isSwitch',['../group___config_plugin.html#ga95ed300cb0a7a92ee7e427f25f3015c0',1,'ConfigInputWidget::ArmingMethod']]],
   ['istext',['isText',['../group___u_a_v_objects_plugin.html#ga813ef5de6918f1f57b2b7cd7aa7da3ab',1,'UAVObjectField']]],
-  ['isusbsupported',['isUSBSupported',['../group___core_plugin.html#gab83a82cdcbbecdb300e944b744a94729',1,'Core::IBoardType']]],
+  ['isusbsupported',['isUSBSupported',['../class_simulation.html#aa4cc5dc5cbca7ad74f04c5196d8630ca',1,'Simulation::isUSBSupported()'],['../group___core_plugin.html#gab83a82cdcbbecdb300e944b744a94729',1,'Core::IBoardType::isUSBSupported()']]],
   ['isvalidthrottlecurve',['isValidThrottleCurve',['../group___config_plugin.html#ga92da8cda852e8b2f1974cac57fbaa99f',1,'VehicleConfig']]],
   ['isvalidversion',['isValidVersion',['../class_extension_system_1_1_internal_1_1_plugin_spec_private.html#a7233cda395b9d7ee44734541958ee82c',1,'ExtensionSystem::Internal::PluginSpecPrivate']]],
   ['isview',['isView',['../group___core_plugin.html#gac5f0d73d9c3c17c18b5175bc96676b39',1,'Core::Internal::SplitterOrView']]],

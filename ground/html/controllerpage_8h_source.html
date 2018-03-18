@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">260ca23</span>
+   &#160;<span id="projectnumber">d475d3b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('controllerpage_8h_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setupDeviceList();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> setControllerType(<a class="code" href="class_core_1_1_i_board_type.html">Core::IBoardType</a> *);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a> *m_connectionManager;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_telemetry_manager.html">TelemetryManager</a> *m_telemtryManager;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_telemetry_manager.html">TelemetryManager</a> *m_telemetryManager;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> devicesChanged(QLinkedList&lt;Core::DevListItem&gt; devices);</div>
@@ -167,20 +167,20 @@ $(document).ready(function(){initNavTree('controllerpage_8h_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // CONTROLLERPAGE_H</span></div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gaf9c2ad04637cf0961bd7bb5d5d5200c4"><div class="ttname"><a href="group___setup_wizard.html#gaf9c2ad04637cf0961bd7bb5d5d5200c4">ControllerPage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00067">controllerpage.cpp:67</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gaf9c2ad04637cf0961bd7bb5d5d5200c4"><div class="ttname"><a href="group___setup_wizard.html#gaf9c2ad04637cf0961bd7bb5d5d5200c4">ControllerPage::initializePage</a></div><div class="ttdeci">void initializePage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00070">controllerpage.cpp:70</a></div></div>
 <div class="ttc" id="class_controller_page_html"><div class="ttname"><a href="class_controller_page.html">ControllerPage</a></div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8h_source.html#l00043">controllerpage.h:43</a></div></div>
 <div class="ttc" id="class_telemetry_manager_html"><div class="ttname"><a href="class_telemetry_manager.html">TelemetryManager</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetrymanager_8h_source.html#l00041">telemetrymanager.h:41</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga91bcb88db666a8d5585553520d1247b9"><div class="ttname"><a href="group___setup_wizard.html#ga91bcb88db666a8d5585553520d1247b9">ControllerPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00090">controllerpage.cpp:90</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga91bcb88db666a8d5585553520d1247b9"><div class="ttname"><a href="group___setup_wizard.html#ga91bcb88db666a8d5585553520d1247b9">ControllerPage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00098">controllerpage.cpp:98</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga8a5a3ef54cac791463bb4506d8b27da5"><div class="ttname"><a href="group___setup_wizard.html#ga8a5a3ef54cac791463bb4506d8b27da5">ControllerPage::ControllerPage</a></div><div class="ttdeci">ControllerPage(SetupWizard *wizard, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00037">controllerpage.cpp:37</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_gae5ede361df9cdf86bf53ce39ef72267c"><div class="ttname"><a href="group___setup_wizard.html#gae5ede361df9cdf86bf53ce39ef72267c">ControllerPage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00078">controllerpage.cpp:78</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gae5ede361df9cdf86bf53ce39ef72267c"><div class="ttname"><a href="group___setup_wizard.html#gae5ede361df9cdf86bf53ce39ef72267c">ControllerPage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00081">controllerpage.cpp:81</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
 <div class="ttc" id="iboardtype_8h_html"><div class="ttname"><a href="iboardtype_8h.html">iboardtype.h</a></div></div>
 <div class="ttc" id="telemetrymanager_8h_html"><div class="ttname"><a href="telemetrymanager_8h.html">telemetrymanager.h</a></div></div>
 <div class="ttc" id="class_core_1_1_i_board_type_html"><div class="ttname"><a href="class_core_1_1_i_board_type.html">Core::IBoardType</a></div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00052">iboardtype.h:52</a></div></div>
-<div class="ttc" id="group___setup_wizard_html_ga5573a5d2568f7e15528658e32de887d3"><div class="ttname"><a href="group___setup_wizard.html#ga5573a5d2568f7e15528658e32de887d3">ControllerPage::~ControllerPage</a></div><div class="ttdeci">~ControllerPage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00062">controllerpage.cpp:62</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_ga5573a5d2568f7e15528658e32de887d3"><div class="ttname"><a href="group___setup_wizard.html#ga5573a5d2568f7e15528658e32de887d3">ControllerPage::~ControllerPage</a></div><div class="ttdeci">~ControllerPage()</div><div class="ttdef"><b>Definition:</b> <a href="controllerpage_8cpp_source.html#l00065">controllerpage.cpp:65</a></div></div>
 <div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
 <div class="ttc" id="setupwizard_8h_html"><div class="ttname"><a href="setupwizard_8h.html">setupwizard.h</a></div></div>
-<div class="ttc" id="class_core_1_1_connection_manager_html"><div class="ttname"><a href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8h_source.html#l00095">connectionmanager.h:95</a></div></div>
+<div class="ttc" id="class_core_1_1_connection_manager_html"><div class="ttname"><a href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8h_source.html#l00100">connectionmanager.h:100</a></div></div>
 <div class="ttc" id="connectionmanager_8h_html"><div class="ttname"><a href="connectionmanager_8h.html">connectionmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

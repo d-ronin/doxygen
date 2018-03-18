@@ -22,8 +22,9 @@ var vtol__follower__priv_8h =
     [ "vtol_follower_control_land", "vtol__follower__priv_8h.html#ga3bb184686da274df1ce2c02d0b7d5484", null ],
     [ "vtol_follower_control_loiter", "vtol__follower__priv_8h.html#ga5e66d16b252c7eb235b845dca9216d66", null ],
     [ "vtol_follower_control_path", "vtol__follower__priv_8h.html#gaa888e9f4c0744cc967fdea6fc25024b7", null ],
-    [ "vtol_follower_control_settings_updated", "vtol__follower__priv_8h.html#ga11c00ff1937f75fc54067a5e4a7e9631", null ],
+    [ "vtol_follower_control_settings_updated", "vtol__follower__priv_8h.html#gab2b7b1598c99b00325b9dd571bddf9ab", null ],
     [ "vtol_follower_fsm_activate_goal", "vtol__follower__priv_8h.html#ga039469a77d5cf372122c15b804f556ac", null ],
     [ "vtol_follower_fsm_update", "vtol__follower__priv_8h.html#gaf39bd45642b5b246242f59102ed2e828", null ],
-    [ "DT", "vtol__follower__priv_8h.html#ga6017ffae59f47b16d8bf2070452f1405", null ]
+    [ "vtol_dT", "vtol__follower__priv_8h.html#ga9f29799de1d80977fed8b083150362c1", null ],
+    [ "vtol_guidanceSettings", "vtol__follower__priv_8h.html#ga0413396f7322791eb4b31bf2ee634496", null ]
 ];

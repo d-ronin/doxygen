@@ -1,5 +1,7 @@
 var group___targets =
 [
+    [ "SP Racing F3 Evo", "group___s_p_r_f3_e.html", "group___s_p_r_f3_e" ],
+    [ "OpenPilot Revolution Mini", "group___revo_mini.html", "group___revo_mini" ],
     [ "Aeroquad AQ32", "group___a_q32.html", "group___a_q32" ],
     [ "BrainFPV", "group___brain.html", "group___brain" ],
     [ "BrainFPV RE1", "group___brain_r_e1.html", "group___brain_r_e1" ],
@@ -12,10 +14,8 @@ var group___targets =
     [ "PipXtreme Radio", "group___pip_x.html", "group___pip_x" ],
     [ "PlayUAV OSD", "group___play_u_a_v_o_s_d.html", "group___play_u_a_v_o_s_d" ],
     [ "Quantec Quanton", "group___quanton.html", "group___quanton" ],
-    [ "OpenPilot Revolution Mini", "group___revo_mini.html", "group___revo_mini" ],
     [ "Tau Labs Sparky", "group___sparky.html", "group___sparky" ],
     [ "Tau Labs Sparky2", "group___sparky2.html", "group___sparky2" ],
-    [ "SP Racing F3 Evo", "group___s_p_r_f3_e.html", "group___s_p_r_f3_e" ],
     [ "__early_init", "group___targets.html#ga32c73ccd62cbae6568272cc6949531f2", null ],
     [ "boardInit", "group___targets.html#ga48edc646a1de1ba488bbe7d786df9bae", null ],
     [ "check_bor", "group___targets.html#ga7b0ed4e8687557e464541def703918fe", null ],

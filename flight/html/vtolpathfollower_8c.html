@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">260ca23</span>
+   &#160;<span id="projectnumber">d475d3b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -162,16 +162,20 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga0413396f7322791eb4b31bf2ee634496"><td class="memItemLeft" align="right" valign="top">VtolPathFollowerSettingsData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga0413396f7322791eb4b31bf2ee634496">vtol_guidanceSettings</a></td></tr>
+<tr class="separator:ga0413396f7322791eb4b31bf2ee634496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f29799de1d80977fed8b083150362c1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga9f29799de1d80977fed8b083150362c1">vtol_dT</a> = 0.050f</td></tr>
+<tr class="separator:ga9f29799de1d80977fed8b083150362c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga199fcee97cd90f6dacc6eb22cc6f9125"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__thread.html">pios_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga199fcee97cd90f6dacc6eb22cc6f9125">pathfollowerTaskHandle</a></td></tr>
 <tr class="separator:ga199fcee97cd90f6dacc6eb22cc6f9125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad96f7dbb8c0b5508b220f0aa0874b44e"><td class="memItemLeft" align="right" valign="top">static VtolPathFollowerSettingsData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e">guidanceSettings</a></td></tr>
-<tr class="separator:gad96f7dbb8c0b5508b220f0aa0874b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30">queue</a></td></tr>
 <tr class="separator:ga99a334ed9cdb3e7a7c694d5519d08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a40b3b298ebb34ef7da48a31631e2ac"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga8a40b3b298ebb34ef7da48a31631e2ac">module_enabled</a> = false</td></tr>
 <tr class="separator:ga8a40b3b298ebb34ef7da48a31631e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc513a71374f3eb19fdce6b8584b73f4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpid.html">pid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#gadc513a71374f3eb19fdce6b8584b73f4">vtol_pids</a> [<a class="el" href="group___vtol_path_follower.html#ggaa1cc793c473ad52ad906c7feecdb3a37ac92fcbf75f1c93775999e6788aa2342d">VTOL_PID_NUM</a>]</td></tr>
 <tr class="separator:gadc513a71374f3eb19fdce6b8584b73f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20f7441302496e7d3b819a5939a36b14"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___vtol_path_follower.html#ga20f7441302496e7d3b819a5939a36b14">settings_updated</a> = true</td></tr>
+<tr class="separator:ga20f7441302496e7d3b819a5939a36b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute attitude to achieve a path for VTOL aircrafts. </p>

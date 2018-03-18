@@ -1,5 +1,6 @@
 var dir_163c5e075476eb55d43b8244821902e1 =
 [
+    [ "mcuconf.h", "_s_t_m32_f4xx_2inc_2mcuconf_8h.html", "_s_t_m32_f4xx_2inc_2mcuconf_8h" ],
     [ "pios_chibios_transition_priv.h", "_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html", "_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h" ],
     [ "pios_dac.h", "pios__dac_8h.html", "pios__dac_8h" ],
     [ "pios_dmashot.h", "pios__dmashot_8h.html", "pios__dmashot_8h" ],

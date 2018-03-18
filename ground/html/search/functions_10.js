@@ -58,7 +58,7 @@ var searchData=
   ['pointlatlng',['PointLatLng',['../group___t_l_map_widget.html#ga1e0b690c0014f60cf7b9444345110709',1,'internals::PointLatLng::PointLatLng()'],['../group___t_l_map_widget.html#ga9d9ccecdc15490db949e762a8d5bfd25',1,'internals::PointLatLng::PointLatLng(const double &amp;lat, const double &amp;lng)']]],
   ['populatewidgets',['populateWidgets',['../group___u_a_v_object_widget_utils.html#gaa3d55f7941db619b9872b0ffdc78ebde',1,'ConfigTaskWidget']]],
   ['populatewidgetsrequested',['populateWidgetsRequested',['../group___u_a_v_object_widget_utils.html#gacc1be196d23d5e483f68a990d8ebfae6',1,'ConfigTaskWidget']]],
-  ['popup',['popUp',['../class_popup_widget.html#aeeb28e179c0ea393affeba6e7d9ce9c0',1,'PopupWidget::popUp()'],['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)']]],
+  ['popup',['popup',['../group___core_plugin.html#ga96646cdb720d2f1a819147ffc22748cb',1,'Core::IOutputPane::popup()'],['../group___core_plugin.html#ga37eda05403e637a641e31a221f4f16fd',1,'Core::IOutputPane::popup(bool withFocus)'],['../class_popup_widget.html#aeeb28e179c0ea393affeba6e7d9ce9c0',1,'PopupWidget::popUp()']]],
   ['popupcurve',['PopupCurve',['../group___config_plugin.html#gaec9845f3048d0bb15ba6b31f4659888f',1,'MixerCurve']]],
   ['popupwidget',['PopupWidget',['../class_popup_widget.html#ad4a60db09d398ad490bba95640b99523',1,'PopupWidget']]],
   ['pos',['Pos',['../group___t_l_map_widget.html#ga1c62f80ba95a32840e72ccfa745f503f',1,'core::RawTile']]],

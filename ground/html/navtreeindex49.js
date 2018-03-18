@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"opmapgadgetfactory_8h.html":[6,0,0,0,0,1,23,13],
+"opmapgadgetfactory_8h_source.html":[6,0,0,0,0,1,23,13],
+"opmapgadgetoptionspage_8cpp.html":[6,0,0,0,0,1,23,14],
 "opmapgadgetoptionspage_8cpp_source.html":[6,0,0,0,0,1,23,14],
 "opmapgadgetoptionspage_8h.html":[6,0,0,0,0,1,23,15],
 "opmapgadgetoptionspage_8h_source.html":[6,0,0,0,0,1,23,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "qwineventnotifier__p_8h.html":[6,0,0,0,0,0,5,21],
 "qwineventnotifier__p_8h_source.html":[6,0,0,0,0,0,5,21],
 "radioprobepage_8cpp.html":[6,0,0,0,0,1,28,0,8],
-"radioprobepage_8cpp_source.html":[6,0,0,0,0,1,28,0,8],
-"radioprobepage_8h.html":[6,0,0,0,0,1,28,0,9],
-"radioprobepage_8h_source.html":[6,0,0,0,0,1,28,0,9],
-"rawhid_8cpp.html":[6,0,0,0,0,1,27,0]
+"radioprobepage_8cpp_source.html":[6,0,0,0,0,1,28,0,8]
 };

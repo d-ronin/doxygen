@@ -18,6 +18,5 @@ var misc__math_2unittest_8cpp =
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga857a45ca3522f2d7196ecac21eb2f528", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga30a3881db0cac65935c82be5b0dd3e1b", null ],
     [ "TEST_F", "misc__math_2unittest_8cpp.html#ga807bdb259e011f13174697abd6976345", null ],
-    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga738243bc5546f2f76e3cfdcc38f4c6a8", null ],
-    [ "simple_4x4", "misc__math_2unittest_8cpp.html#ga986be87cb393efd719a76239fd440609", null ]
+    [ "TEST_F", "misc__math_2unittest_8cpp.html#ga738243bc5546f2f76e3cfdcc38f4c6a8", null ]
 ];

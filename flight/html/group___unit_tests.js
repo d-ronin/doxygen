@@ -214,6 +214,5 @@ var group___unit_tests =
     [ "pios_flash_partition_table", "group___unit_tests.html#gacda4321240c5016d2a02b0ab650dd34a", null ],
     [ "pios_flash_partition_table_size", "group___unit_tests.html#gade34406a722159fcbf8a28e01c06cc91", null ],
     [ "pios_posix_flash_id", "group___unit_tests.html#ga43594b58cc2c0720f86a34578af27cb1", null ],
-    [ "simple_4x4", "group___unit_tests.html#ga986be87cb393efd719a76239fd440609", null ],
     [ "state", "group___unit_tests.html#ga97f95fa5c6d4f1297acfc0860244cc18", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">260ca23</span>
+   &#160;<span id="projectnumber">d475d3b</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -151,10 +151,11 @@ $(document).ready(function(){initNavTree('simulation_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="group___boards__d_ronin.html#ga7576cb69193b4d902e26afb83b040f65">queryMaxGyroRate</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QWidget *<a class="code" href="group___boards__d_ronin.html#ga141102c49568d73a2d78b92b594c37e8">getBoardConfiguration</a>(QWidget *parent, <span class="keywordtype">bool</span> connected);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="group___boards__d_ronin.html#ga1ef0b45c64f6dbefe501c331b5e0a9b0">hasAnnunciator</a>(<a class="code" href="group___core_plugin.html#ga615a5aa573c867267162df009eb6496e">AnnunciatorType</a> annunc);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // SIMULATION_H_</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_simulation.html#aa4cc5dc5cbca7ad74f04c5196d8630ca">   51</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_simulation.html#aa4cc5dc5cbca7ad74f04c5196d8630ca">isUSBSupported</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // SIMULATION_H_</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga667548fa3df6cebd9ed2ce799000defe"><div class="ttname"><a href="group___boards__d_ronin.html#ga667548fa3df6cebd9ed2ce799000defe">Simulation::shortName</a></div><div class="ttdeci">virtual QString shortName()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cpp_source.html#l00055">simulation.cpp:55</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga01b09218f2a13aaeee6db007ac6bd967"><div class="ttname"><a href="group___core_plugin.html#ga01b09218f2a13aaeee6db007ac6bd967">Core::IBoardType::BoardCapabilities</a></div><div class="ttdeci">BoardCapabilities</div><div class="ttdoc">Types of capabilities boards can support. </div><div class="ttdef"><b>Definition:</b> <a href="iboardtype_8h_source.html#l00092">iboardtype.h:92</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga403a8cc66f5c5bf9e054324deb63ff3b"><div class="ttname"><a href="group___boards__d_ronin.html#ga403a8cc66f5c5bf9e054324deb63ff3b">Simulation::queryCapabilities</a></div><div class="ttdeci">virtual bool queryCapabilities(BoardCapabilities capability)</div><div class="ttdoc">Query capabilities of the board. </div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cpp_source.html#l00065">simulation.cpp:65</a></div></div>
@@ -170,6 +171,7 @@ $(document).ready(function(){initNavTree('simulation_8h_source.html','');});
 <div class="ttc" id="group___boards__d_ronin_html_ga7576cb69193b4d902e26afb83b040f65"><div class="ttname"><a href="group___boards__d_ronin.html#ga7576cb69193b4d902e26afb83b040f65">Simulation::queryMaxGyroRate</a></div><div class="ttdeci">virtual int queryMaxGyroRate()</div><div class="ttdoc">Query the board for the currently set max rate of the gyro. </div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cpp_source.html#l00095">simulation.cpp:95</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_ga2904880da48467107b164d2da8df10e0"><div class="ttname"><a href="group___boards__d_ronin.html#ga2904880da48467107b164d2da8df10e0">Simulation::getHwUAVO</a></div><div class="ttdeci">virtual QString getHwUAVO()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cpp_source.html#l00084">simulation.cpp:84</a></div></div>
 <div class="ttc" id="group___boards__d_ronin_html_gae41d91345929ced6cefd0cc29995e24a"><div class="ttname"><a href="group___boards__d_ronin.html#gae41d91345929ced6cefd0cc29995e24a">Simulation::getBoardPicture</a></div><div class="ttdeci">virtual QPixmap getBoardPicture()</div><div class="ttdoc">getBoardPicture </div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cpp_source.html#l00079">simulation.cpp:79</a></div></div>
+<div class="ttc" id="class_simulation_html_aa4cc5dc5cbca7ad74f04c5196d8630ca"><div class="ttname"><a href="class_simulation.html#aa4cc5dc5cbca7ad74f04c5196d8630ca">Simulation::isUSBSupported</a></div><div class="ttdeci">virtual bool isUSBSupported()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00051">simulation.h:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

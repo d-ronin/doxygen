@@ -189,7 +189,6 @@ var searchData=
   ['group',['group',['../structrcvr__activity__fsm.html#a734a4dabb33f34467848db90882fc877',1,'rcvr_activity_fsm']]],
   ['grouper',['grouper',['../namespaceencode__fonts.html#aee1e46ab90f657763b6ba507083a16f7',1,'encode_fonts.grouper()'],['../namespaceencode__images.html#a8da5d82c63e960bd24f44a2e960ee8ee',1,'encode_images.grouper()']]],
   ['gspeed',['gSpeed',['../struct_u_b_x___n_a_v___v_e_l_n_e_d.html#a1c5f6e6ddf0495f4c308b520ae809266',1,'UBX_NAV_VELNED']]],
-  ['guidancesettings',['guidanceSettings',['../group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e',1,'guidanceSettings():&#160;vtol_follower_control.c'],['../group___vtol_path_follower.html#gad96f7dbb8c0b5508b220f0aa0874b44e',1,'guidanceSettings():&#160;vtolpathfollower.c']]],
   ['gv',['GV',['../struct_w_m_mtype___geo_magnetic_elements.html#aa1d50824f5887167ee93d075222f9deb',1,'WMMtype_GeoMagneticElements']]],
   ['gvdot',['GVdot',['../struct_w_m_mtype___geo_magnetic_elements.html#ab653a08b7f24f25dd253ff9f16f3b01e',1,'WMMtype_GeoMagneticElements']]],
   ['gyro',['Gyro',['../structtelemetrydata.html#a4776f706ecc0cc2551b4f8be46d8fab1',1,'telemetrydata']]],
