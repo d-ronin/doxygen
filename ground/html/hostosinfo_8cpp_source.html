@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">250f618</span>
+   &#160;<span id="projectnumber">1614ebb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -112,67 +112,104 @@ $(document).ready(function(){initNavTree('hostosinfo_8cpp_source.html','');});
 <div class="contents">
 <a href="hostosinfo_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** Contact: http://www.qt-project.org/legal</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">** This file is part of Qt Creator.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">** Commercial License Usage</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">** Licensees holding valid commercial Qt licenses may use this file in</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">** accordance with the commercial license agreement provided with the</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">** Software or, alternatively, in accordance with the terms contained in</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">** a written agreement between you and Digia.  For licensing terms and</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">** conditions see http://qt.digia.com/licensing.  For further information</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">** use the contact form at http://qt.digia.com/contact-us.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">** GNU Lesser General Public License Usage</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">** Alternatively, this file may be used under the terms of the GNU Lesser</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">** General Public License version 2.1 as published by the Free Software</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">** Foundation and appearing in the file LICENSE.LGPL included in the</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">** packaging of this file.  Please review the following information to</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">** ensure the GNU Lesser General Public License version 2.1 requirements</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">** In addition, as a special exception, Digia gives you certain additional</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">** rights.  These rights are described in the Digia Qt LGPL Exception</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">****************************************************************************/</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hostosinfo_8h.html">hostosinfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">   38</a></span>&#160;<a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5">HostOsInfo::HostArchitecture</a> <a class="code" href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">HostOsInfo::hostArchitecture</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>    SYSTEM_INFO info;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GetNativeSystemInfo(&amp;info);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">switch</span> (info.wProcessorArchitecture) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_AMD64:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ac94270d957b9fd3e6a3d689e253fa862">HostOsInfo::HostArchitectureAMD64</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_INTEL:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef">HostOsInfo::HostArchitectureX86</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_IA64:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5addf8b529cbd3bf1dbe63e5d91c3d9f7d">HostOsInfo::HostArchitectureItanium</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_ARM:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ab41d06389395fd1a158161c359b86efa">HostOsInfo::HostArchitectureArm</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6">HostOsInfo::HostArchitectureUnknown</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6">HostOsInfo::HostArchitectureUnknown</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="class_utils_1_1_host_os_info_html_add53003a1ae38f377ec473a8703c6a0b"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">Utils::HostOsInfo::hostArchitecture</a></div><div class="ttdeci">static HostArchitecture hostArchitecture()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8cpp_source.html#l00038">hostosinfo.cpp:38</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Copyright (C) 2018 dRonin, http://dronin.org</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Contact: http://www.qt-project.org/legal</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">** This file is part of Qt Creator.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">** Commercial License Usage</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">** Licensees holding valid commercial Qt licenses may use this file in</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">** accordance with the commercial license agreement provided with the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">** Software or, alternatively, in accordance with the terms contained in</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">** a written agreement between you and Digia.  For licensing terms and</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">** conditions see http://qt.digia.com/licensing.  For further information</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">** use the contact form at http://qt.digia.com/contact-us.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">** GNU Lesser General Public License Usage</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">** Alternatively, this file may be used under the terms of the GNU Lesser</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">** General Public License version 2.1 as published by the Free Software</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">** Foundation and appearing in the file LICENSE.LGPL included in the</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">** packaging of this file.  Please review the following information to</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">** ensure the GNU Lesser General Public License version 2.1 requirements</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">** In addition, as a special exception, Digia gives you certain additional</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">** rights.  These rights are described in the Digia Qt LGPL Exception</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hostosinfo_8h.html">hostosinfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef Q_OS_MAC</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   include &lt;sys/sysctl.h&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#   include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#   include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">   47</a></span>&#160;<a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5">HostOsInfo::HostArchitecture</a> <a class="code" href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">HostOsInfo::hostArchitecture</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>    SYSTEM_INFO info;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    GetNativeSystemInfo(&amp;info);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">switch</span> (info.wProcessorArchitecture) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_AMD64:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ac94270d957b9fd3e6a3d689e253fa862">HostOsInfo::HostArchitectureAMD64</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_INTEL:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef">HostOsInfo::HostArchitectureX86</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_IA64:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5addf8b529cbd3bf1dbe63e5d91c3d9f7d">HostOsInfo::HostArchitectureItanium</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">case</span> PROCESSOR_ARCHITECTURE_ARM:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ab41d06389395fd1a158161c359b86efa">HostOsInfo::HostArchitectureArm</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6">HostOsInfo::HostArchitectureUnknown</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6">HostOsInfo::HostArchitectureUnknown</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#a49ec3c3412fdd858aa1efc81836aeafa">   69</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_host_os_info.html#a49ec3c3412fdd858aa1efc81836aeafa">HostOsInfo::debuggerPresent</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef Q_OS_MAC</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>    <span class="comment">/*</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     * Based on Apple example &quot;How do I determine if I&#39;m being run under the debugger?&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     * https://developer.apple.com/library/content/qa/qa1361/_index.html</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> mib[4] = {CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">struct </span>kinfo_proc info;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    memset(&amp;info, 0, <span class="keyword">sizeof</span>(info));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// tell sysctl how much it has to play with</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">size_t</span> size = <span class="keyword">sizeof</span>(info);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (sysctl(mib, <span class="keyword">sizeof</span>(mib) / <span class="keyword">sizeof</span>(*mib), &amp;info, &amp;size, NULL, 0) != 0) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;sysctl failed!&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> (info.kp_proc.p_flag &amp; P_TRACED) != 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#elif defined(Q_OS_WIN)</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> IsDebuggerPresent();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span>    qWarning() &lt;&lt; <span class="stringliteral">&quot;debuggerPresent not implemented!&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="class_utils_1_1_host_os_info_html_add53003a1ae38f377ec473a8703c6a0b"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#add53003a1ae38f377ec473a8703c6a0b">Utils::HostOsInfo::hostArchitecture</a></div><div class="ttdeci">static HostArchitecture hostArchitecture()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8cpp_source.html#l00047">hostosinfo.cpp:47</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5ab41d06389395fd1a158161c359b86efa"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ab41d06389395fd1a158161c359b86efa">Utils::HostOsInfo::HostArchitectureArm</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00053">hostosinfo.h:53</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5ac94270d957b9fd3e6a3d689e253fa862"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5ac94270d957b9fd3e6a3d689e253fa862">Utils::HostOsInfo::HostArchitectureAMD64</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5">Utils::HostOsInfo::HostArchitecture</a></div><div class="ttdeci">HostArchitecture</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef">Utils::HostOsInfo::HostArchitectureX86</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>
+<div class="ttc" id="class_utils_1_1_host_os_info_html_a49ec3c3412fdd858aa1efc81836aeafa"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#a49ec3c3412fdd858aa1efc81836aeafa">Utils::HostOsInfo::debuggerPresent</a></div><div class="ttdeci">static bool debuggerPresent()</div><div class="ttdoc">Is debugger connected to this process? </div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8cpp_source.html#l00069">hostosinfo.cpp:69</a></div></div>
 <div class="ttc" id="hostosinfo_8h_html"><div class="ttname"><a href="hostosinfo_8h.html">hostosinfo.h</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a8758ad9b769dedff8ca59a14b08493b6">Utils::HostOsInfo::HostArchitectureUnknown</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00053">hostosinfo.h:53</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5addf8b529cbd3bf1dbe63e5d91c3d9f7d"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5addf8b529cbd3bf1dbe63e5d91c3d9f7d">Utils::HostOsInfo::HostArchitectureItanium</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>

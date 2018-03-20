@@ -7,6 +7,7 @@ var searchData=
   ['debuggadget',['DebugGadget',['../group___debug_gadget_plugin.html#ga7be62d051066d559e2147db9decb6a73',1,'DebugGadget']]],
   ['debuggadgetfactory',['DebugGadgetFactory',['../group___debug_gadget_plugin.html#ga4aa50d019193a2c53212b58a22fc4c6a',1,'DebugGadgetFactory']]],
   ['debuggadgetwidget',['DebugGadgetWidget',['../group___debug_gadget_plugin.html#ga07f1597d4ea9159cbb5b0ad1c80aea6b',1,'DebugGadgetWidget']]],
+  ['debuggerpresent',['debuggerPresent',['../class_utils_1_1_host_os_info.html#a49ec3c3412fdd858aa1efc81836aeafa',1,'Utils::HostOsInfo']]],
   ['declare_5fsound',['DECLARE_SOUND',['../group___notify_plugin.html#gafd8fcfb284be8c92e29aba742748d4b8',1,'NotificationItem']]],
   ['decrypt',['decrypt',['../group___t_l_map_widget.html#ga2c0b2f47b7d7991410d2180b60c14f49',1,'core::ProviderStrings']]],
   ['defaultgroups',['defaultGroups',['../group___core_plugin.html#ga83364e44abe77408ac169e851f7d998f',1,'Core::Internal::ActionManagerPrivate']]],

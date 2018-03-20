@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">250f618</span>
+   &#160;<span id="projectnumber">1614ebb</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -192,45 +192,47 @@ $(document).ready(function(){initNavTree('hostosinfo_8h_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> isMacHost() ? Qt::MetaModifier : Qt::ControlModifier;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">   85</a></span>&#160;<a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3">HostOsInfo::HostOs</a> <a class="code" href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">HostOsInfo::hostOs</a>()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if defined(Q_OS_WIN)</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa21c52d7234fbb273e79998d8074dc2c">HostOsWindows</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#elif defined(Q_OS_LINUX)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa5a0945244c98df20ec3ad6e596049d3">HostOsLinux</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#elif defined(Q_OS_MAC)</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3a1964032334dc0b3b7e2cde8dee0b1bd7">HostOsMac</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#elif defined(Q_OS_UNIX)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3a71d16c50b6af846c38d632368c590305">HostOsOtherUnix</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3abb6c46a56bb3120d7c515c9cd4361ce2">HostOsOther</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">  100</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">HostOsInfo::isAnyUnixHost</a>()</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // HOSTOSINFO_H</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> debuggerPresent();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">   91</a></span>&#160;<a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3">HostOsInfo::HostOs</a> <a class="code" href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">HostOsInfo::hostOs</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#if defined(Q_OS_WIN)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa21c52d7234fbb273e79998d8074dc2c">HostOsWindows</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#elif defined(Q_OS_LINUX)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa5a0945244c98df20ec3ad6e596049d3">HostOsLinux</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#elif defined(Q_OS_MAC)</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3a1964032334dc0b3b7e2cde8dee0b1bd7">HostOsMac</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#elif defined(Q_OS_UNIX)</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3a71d16c50b6af846c38d632368c590305">HostOsOtherUnix</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3abb6c46a56bb3120d7c515c9cd4361ce2">HostOsOther</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">  106</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">HostOsInfo::isAnyUnixHost</a>()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // HOSTOSINFO_H</span></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aaa75e5156550807775d4e5fe7b6574c8"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aaa75e5156550807775d4e5fe7b6574c8">Utils::HostOsInfo::appendExecutableSuffix</a></div><div class="ttdeci">static QString appendExecutableSuffix(const QString &amp;executable)</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00061">hostosinfo.h:61</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_adcb93341b50ff0fc54f0d3c7c573afd3aa21c52d7234fbb273e79998d8074dc2c"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa21c52d7234fbb273e79998d8074dc2c">Utils::HostOsInfo::HostOsWindows</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00049">hostosinfo.h:49</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_abd8e4bc2544978b0df784860bcbdbe7c"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#abd8e4bc2544978b0df784860bcbdbe7c">Utils::HostOsInfo::controlModifier</a></div><div class="ttdeci">static Qt::KeyboardModifier controlModifier()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00079">hostosinfo.h:79</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_ac793877ff871fc135d3ee3a127fe0aa3"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#ac793877ff871fc135d3ee3a127fe0aa3">Utils::HostOsInfo::fileNameCaseSensitivity</a></div><div class="ttdeci">static Qt::CaseSensitivity fileNameCaseSensitivity()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00069">hostosinfo.h:69</a></div></div>
-<div class="ttc" id="class_utils_1_1_host_os_info_html_aabb254c617b61462de478078be5ff342"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">Utils::HostOsInfo::hostOs</a></div><div class="ttdeci">static HostOs hostOs()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00085">hostosinfo.h:85</a></div></div>
+<div class="ttc" id="class_utils_1_1_host_os_info_html_aabb254c617b61462de478078be5ff342"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aabb254c617b61462de478078be5ff342">Utils::HostOsInfo::hostOs</a></div><div class="ttdeci">static HostOs hostOs()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00091">hostosinfo.h:91</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_adcb93341b50ff0fc54f0d3c7c573afd3a1964032334dc0b3b7e2cde8dee0b1bd7"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3a1964032334dc0b3b7e2cde8dee0b1bd7">Utils::HostOsInfo::HostOsMac</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00049">hostosinfo.h:49</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_adcb93341b50ff0fc54f0d3c7c573afd3aa5a0945244c98df20ec3ad6e596049d3"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#adcb93341b50ff0fc54f0d3c7c573afd3aa5a0945244c98df20ec3ad6e596049d3">Utils::HostOsInfo::HostOsLinux</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00049">hostosinfo.h:49</a></div></div>
 <div class="ttc" id="utils__global_8h_html"><div class="ttname"><a href="utils__global_8h.html">utils_global.h</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5">Utils::HostOsInfo::HostArchitecture</a></div><div class="ttdeci">HostArchitecture</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>
-<div class="ttc" id="class_utils_1_1_host_os_info_html_a024a4ba755f6b713ee895cfb2de8fe33"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">Utils::HostOsInfo::isAnyUnixHost</a></div><div class="ttdeci">static bool isAnyUnixHost()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00100">hostosinfo.h:100</a></div></div>
+<div class="ttc" id="class_utils_1_1_host_os_info_html_a024a4ba755f6b713ee895cfb2de8fe33"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#a024a4ba755f6b713ee895cfb2de8fe33">Utils::HostOsInfo::isAnyUnixHost</a></div><div class="ttdeci">static bool isAnyUnixHost()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00106">hostosinfo.h:106</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa14395856094d34e1d80bba6f83aa7f5a4a7bc5839a661834055b56960ab378ef">Utils::HostOsInfo::HostArchitectureX86</a></div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00052">hostosinfo.h:52</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_aa8143edf05ba242f21799022bcc29fb6"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#aa8143edf05ba242f21799022bcc29fb6">Utils::HostOsInfo::isMacHost</a></div><div class="ttdeci">static bool isMacHost()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00058">hostosinfo.h:58</a></div></div>
 <div class="ttc" id="class_utils_1_1_host_os_info_html_af08b3171678174d9c8a7df0b185b9d11"><div class="ttname"><a href="class_utils_1_1_host_os_info.html#af08b3171678174d9c8a7df0b185b9d11">Utils::HostOsInfo::pathListSeparator</a></div><div class="ttdeci">static QChar pathListSeparator()</div><div class="ttdef"><b>Definition:</b> <a href="hostosinfo_8h_source.html#l00074">hostosinfo.h:74</a></div></div>
