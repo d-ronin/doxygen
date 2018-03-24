@@ -46,7 +46,7 @@ var searchData=
   ['gps_5fspeed',['gps_speed',['../structhott__gps__message.html#abe8425941e1ce32be83bbd44da5ec030',1,'hott_gps_message']]],
   ['gpsfix',['gpsFix',['../struct_u_b_x___n_a_v___s_t_a_t_u_s.html#a9ada0b00d91062449f398439afec8e70',1,'UBX_NAV_STATUS::gpsFix()'],['../struct_u_b_x___n_a_v___s_o_l.html#ae821898e9ca043790d8f58da75355f38',1,'UBX_NAV_SOL::gpsFix()']]],
   ['gpsnew',['gpsNew',['../group___airspeed_module.html#ga92e7d8d768e91460a03e1f0ef2c9a443',1,'airspeed.c']]],
-  ['gpsport',['gpsPort',['../group___g_p_s_module.html#ga7492c1a9b8d72163101508e606191c01',1,'GPS.c']]],
+  ['gpsport',['gpsPort',['../group___g_p_s_module.html#ga5d7753ec6aafb582f802640ab5811e75',1,'GPS.c']]],
   ['gpsqueue',['gpsQueue',['../group___attitude_module.html#ga21f485db66f0826599238a79b756d805',1,'attitude.c']]],
   ['gpsrxchksumerror',['gpsRxChkSumError',['../struct_g_p_s___r_x___s_t_a_t_s.html#a1a89019cb1163e32575738685ef79317',1,'GPS_RX_STATS']]],
   ['gpsrxoverflow',['gpsRxOverflow',['../struct_g_p_s___r_x___s_t_a_t_s.html#a1820743f7205c836af17a100834732b4',1,'GPS_RX_STATS']]],

@@ -249,7 +249,7 @@ var group___g_p_s_module =
     [ "updateSettings", "group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80", null ],
     [ "gps_rx_buffer", "group___g_p_s_module.html#gadcbee7ce2a433d4da763cf292e09db91", null ],
     [ "gps_rx_buffer", "group___g_p_s_module.html#gadcbee7ce2a433d4da763cf292e09db91", null ],
-    [ "gpsPort", "group___g_p_s_module.html#ga7492c1a9b8d72163101508e606191c01", null ],
+    [ "gpsPort", "group___g_p_s_module.html#ga5d7753ec6aafb582f802640ab5811e75", null ],
     [ "gpsRxStats", "group___g_p_s_module.html#ga3ce6788f6e1ead91c5b977ceb388273e", null ],
     [ "gpsTaskHandle", "group___g_p_s_module.html#gabc368df5148afd542f828444881d7587", null ],
     [ "module_enabled", "group___g_p_s_module.html#ga8a40b3b298ebb34ef7da48a31631e2ac", null ],
