@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">f42eaef</span>
+   &#160;<span id="projectnumber">066c854</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -1136,10 +1136,10 @@ $(document).ready(function(){initNavTree('configtaskwidget_8cpp_source.html','')
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        comboBox-&gt;setCurrentIndex(comboBox-&gt;findData(value.toString()));</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (QLabel *label = qobject_cast&lt;QLabel *&gt;(widget)) {</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="keywordflow">if</span> (scale == 0)</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="keywordflow">if</span> ((scale == 0) || (scale == 1))</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;            label-&gt;setText(value.toString() + units);</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;            label-&gt;setText(QString::number(value.toDouble() / scale, <span class="charliteral">&#39;g&#39;</span>, 3) + units);</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;            label-&gt;setText(QString::number(value.toDouble() / scale, <span class="charliteral">&#39;f&#39;</span>, 1) + units);</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (QDoubleSpinBox *dblSpinBox = qobject_cast&lt;QDoubleSpinBox *&gt;(widget)) {</div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        dblSpinBox-&gt;setValue(value.toDouble() / scale);</div>
