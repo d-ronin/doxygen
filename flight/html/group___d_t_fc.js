@@ -74,6 +74,7 @@ var group___d_t_fc =
     [ "PIOS_USB_ENABLED", "group___d_t_fc.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___d_t_fc.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___d_t_fc.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___d_t_fc.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "USB_LED_OFF", "group___d_t_fc.html#ga132bbd1ad203692acb9be1d7234bf655", null ],
     [ "USB_LED_ON", "group___d_t_fc.html#gaf3768e561e7395f80d0558515c972a7c", null ],
     [ "USB_LED_TOGGLE", "group___d_t_fc.html#ga99ee0fa132865acda6cc6efb09e85043", null ],

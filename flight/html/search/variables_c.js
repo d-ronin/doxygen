@@ -60,6 +60,7 @@ var searchData=
   ['lower_5fid',['lower_id',['../structpios__adc__dev.html#a5de4f5a712c49d24e96019074ed0cfc6',1,'pios_adc_dev']]],
   ['lowthrottlezerointegral',['lowThrottleZeroIntegral',['../group___stabilization_module.html#gaf67afab9d5822cab800d87ee04512e53',1,'stabilization.c']]],
   ['lpfilter_5fbutterworth_5ffactors',['lpfilter_butterworth_factors',['../group___flight_math.html#ga20a6f64830b56bb49252c50dc893b93e',1,'lpfilter.c']]],
+  ['lqr',['lqr',['../structlqg__state.html#a0474b96d212645e6da8d4db589e9b8a9',1,'lqg_state']]],
   ['lsb_5fvoltage',['lsb_voltage',['../structpios__adc__driver.html#aa8f2a490dbdc85d4c79e049269f239b7',1,'pios_adc_driver']]],
   ['ltr2_5fhigh_5fvalue',['ltr2_high_value',['../struct_u_p_s___constant___value.html#a021706a6a3ce57c2098e42d25c91206a',1,'UPS_Constant_Value']]],
   ['ltr2_5flow_5fvalue',['ltr2_low_value',['../struct_u_p_s___constant___value.html#a53f4a5c90f198dacaef8cb6fc333d172',1,'UPS_Constant_Value']]],

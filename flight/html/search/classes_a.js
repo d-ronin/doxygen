@@ -11,5 +11,7 @@ var searchData=
   ['lpfilter_5fbiquad',['lpfilter_biquad',['../structlpfilter__biquad.html',1,'']]],
   ['lpfilter_5fbiquad_5fstate',['lpfilter_biquad_state',['../structlpfilter__biquad__state.html',1,'']]],
   ['lpfilter_5ffirst_5forder',['lpfilter_first_order',['../structlpfilter__first__order.html',1,'']]],
-  ['lpfilter_5fstate',['lpfilter_state',['../structlpfilter__state.html',1,'']]]
+  ['lpfilter_5fstate',['lpfilter_state',['../structlpfilter__state.html',1,'']]],
+  ['lqg_5fstate',['lqg_state',['../structlqg__state.html',1,'']]],
+  ['lqr_5fstate',['lqr_state',['../structlqr__state.html',1,'']]]
 ];

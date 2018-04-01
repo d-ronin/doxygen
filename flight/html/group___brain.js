@@ -106,6 +106,7 @@ var group___brain =
     [ "PIOS_VIDEO_TIM4_COUNTER", "group___brain.html#ga52804fcdee0d6927e4c5f45fc74d8b48", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___brain.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___brain.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___brain.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "VREF_PLUS", "group___brain.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___brain.html#gabda03501745560ca9e546079e20bb392", null ],
     [ "level_bits", "group___brain.html#ga11c0902226e4d67fbe3c03915a5621e2", null ],

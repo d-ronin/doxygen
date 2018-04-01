@@ -14,6 +14,7 @@ var targets_2omnibusf3_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_SPI", "targets_2omnibusf3_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_INCLUDE_WS2811", "targets_2omnibusf3_2fw_2pios__config_8h.html#ga2989b6f1854d52ff08b9933bfb9b35fd", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2omnibusf3_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ],
+    [ "STABILIZATION_LQG", "targets_2omnibusf3_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "targets_2omnibusf3_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "WDG_STATS_DIAGNOSTICS", "targets_2omnibusf3_2fw_2pios__config_8h.html#ga92db595596a0136d6e663f929418cbf4", null ]
 ];

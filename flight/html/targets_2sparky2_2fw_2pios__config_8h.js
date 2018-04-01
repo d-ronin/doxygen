@@ -23,5 +23,6 @@ var targets_2sparky2_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_RFM22B_COM", "targets_2sparky2_2fw_2pios__config_8h.html#gace1ff3845bfdc37404abe261c6316ea2", null ],
     [ "PIOS_INCLUDE_RFM22B_RCVR", "targets_2sparky2_2fw_2pios__config_8h.html#gaf6410b66dc97290a31c4ca57170cc771", null ],
     [ "PIOS_INCLUDE_SPI", "targets_2sparky2_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
-    [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2sparky2_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ]
+    [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2sparky2_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
+    [ "STABILIZATION_LQG", "targets_2sparky2_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ]
 ];

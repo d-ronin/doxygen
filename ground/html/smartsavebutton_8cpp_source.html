@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -225,14 +225,14 @@ $(document).ready(function(){initNavTree('smartsavebutton_8cpp_source.html','');
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        timer.start(1000);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        loop.exec();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (!timer.isActive())</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Upload timeout for object&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            qInfo() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Upload timeout for object&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        timer.stop();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        disconnect(obj, SIGNAL(transactionCompleted(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>)), <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                   SLOT(transaction_finished(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *, <span class="keywordtype">bool</span>)));</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        disconnect(&amp;timer, SIGNAL(timeout()), &amp;loop, SLOT(quit()));</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (upload_result == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            qDebug() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Object upload error:&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            qInfo() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Object upload error:&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">if</span> (mandatoryList.value(obj, <span class="keyword">true</span>))</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                failedUploads.append(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>());</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">continue</span>;</div>
@@ -265,14 +265,14 @@ $(document).ready(function(){initNavTree('smartsavebutton_8cpp_source.html','');
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            timer.start(2000);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            loop.exec();</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">if</span> (!timer.isActive())</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                qDebug() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Saving timeout for object&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                qInfo() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] Saving timeout for object&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            timer.stop();</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            disconnect(utilMngr, SIGNAL(saveCompleted(<span class="keywordtype">int</span>, <span class="keywordtype">bool</span>)), <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                       SLOT(saving_finished(<span class="keywordtype">int</span>, <span class="keywordtype">bool</span>)));</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            disconnect(&amp;timer, SIGNAL(timeout()), &amp;loop, SLOT(quit()));</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">if</span> (save_result == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                qDebug() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] failed to save:&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                qInfo() &lt;&lt; <span class="stringliteral">&quot;[smartsavebutton.cpp] failed to save:&quot;</span> &lt;&lt; obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">if</span> (mandatoryList.value(obj, <span class="keyword">true</span>))</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    failedSaves.append(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>());</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>

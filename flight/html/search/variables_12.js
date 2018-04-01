@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['r',['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
+  ['r',['R',['../structrtkf__state.html#ab5115cc1e5b19ffd761bb68070afb809',1,'rtkf_state::R()'],['../struct_w_m_mtype___coord_spherical.html#ad7a66b81a59d40782c0618c94256073f',1,'WMMtype_CoordSpherical::r()'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps14state.c'],['../group___libraries.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7',1,'R():&#160;insgps16state.c']]],
   ['raceband_5ffreqs',['RACEBAND_FREQS',['../group___v_t_x_config.html#ga3fe8dcefb84eae270dfa806c290cd13f',1,'VTXConfig.c']]],
   ['radioeventqueue',['radioEventQueue',['../group___radio_com_bridge_module.html#ga6b7aaa5ae15499fdeb823730418ef967',1,'RadioComBridgeData']]],
   ['radiorxtaskhandle',['radioRxTaskHandle',['../group___radio_com_bridge_module.html#gafbe49bdb4a85ec4a694d3672f5b9b117',1,'RadioComBridgeData']]],
@@ -78,6 +78,7 @@ var searchData=
   ['rth_5fclimb_5fspeed',['RTH_CLIMB_SPEED',['../group___vtol_path_follower.html#ga1ce224574fa2fb728c835a2d3e970bb3',1,'vtol_follower_fsm.c']]],
   ['rth_5fmin_5faltitude',['RTH_MIN_ALTITUDE',['../group___vtol_path_follower.html#ga9f24404bb693281ef2d7b11347f4c235',1,'vtol_follower_fsm.c']]],
   ['rth_5fmin_5frise',['RTH_MIN_RISE',['../group___vtol_path_follower.html#ga18e5a0c5d15678325576a5097696affc',1,'vtol_follower_fsm.c']]],
+  ['rtkf',['rtkf',['../structlqg__state.html#a70f96158665ed6bab58e742620d503a2',1,'lqg_state']]],
   ['runningpython3',['runningPython3',['../namespacepx__uploader.html#a9328944406132fa9969b6773b2627bc6',1,'px_uploader']]],
   ['rw',['rw',['../structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821',1,'pios_i2c_txn']]],
   ['rx',['rx',['../structpios__can__cfg.html#a070fa7e71f07dc07535c25cc217eaad1',1,'pios_can_cfg::rx()'],['../structstm32__dma.html#a967c78ffd2d021ac268f1d8c0a2c7e30',1,'stm32_dma::rx()'],['../structpios__usart__cfg.html#a8d393f43a5f748de6580907c5f7d0a48',1,'pios_usart_cfg::rx()']]],

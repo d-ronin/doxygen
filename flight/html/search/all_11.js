@@ -1,7 +1,16 @@
 var searchData=
 [
   ['queue_20abstraction',['Queue Abstraction',['../group___p_i_o_s___queue.html',1,'']]],
-  ['q',['Q',['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps14state.c'],['../group___libraries.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps16state.c']]],
+  ['q',['Q',['../structrtkf__state.html#af8e7511a8a2816fa559c2273b8aba3be',1,'rtkf_state::Q()'],['../structlqr__state.html#a3b7e710c6b77111ff82a9c66e1e4f566',1,'lqr_state::Q()'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps14state.c'],['../group___libraries.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps13state.c'],['../group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645',1,'Q():&#160;insgps16state.c']]],
+  ['q00',['Q00',['../group___flight_math.html#gaa070611aceceab6976d41423e092da9f',1,'lqg.c']]],
+  ['q01',['Q01',['../group___flight_math.html#gada4630d1056a70b2e8e0b5efa86f3c5e',1,'lqg.c']]],
+  ['q02',['Q02',['../group___flight_math.html#ga68e8c3b92d1880e54905caf103e93236',1,'lqg.c']]],
+  ['q10',['Q10',['../group___flight_math.html#ga693e3a9063a1e7582e682ffd4fe06f46',1,'lqg.c']]],
+  ['q11',['Q11',['../group___flight_math.html#ga2667934cffb93b5b656fbb9b11495d52',1,'lqg.c']]],
+  ['q12',['Q12',['../group___flight_math.html#gaa17f3fc65627eb4768c42c6b3c0e45c2',1,'lqg.c']]],
+  ['q20',['Q20',['../group___flight_math.html#ga81b513e8af18f9217399d0806cbdfb0e',1,'lqg.c']]],
+  ['q21',['Q21',['../group___flight_math.html#ga99bb24769f4834ade22b53029ef59fea',1,'lqg.c']]],
+  ['q22',['Q22',['../group___flight_math.html#gae92799bea6457224d138516adeeb30c1',1,'lqg.c']]],
   ['q_5flen',['q_len',['../structpios__queue.html#a63a93bedf4d2817dea4e5447e5a7ee50',1,'pios_queue']]],
   ['quality',['quality',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#a3d99d4c098bc0ba52408def4080330c5',1,'UBX_NAV_SVINFO_SV::quality()'],['../group___p_i_o_s___s_e_n_s_o_r_s.html#gab43224d206c2684b43a0222465a465cf',1,'pios_sensor_optical_flow_data::quality()']]],
   ['quantec_20quanton',['Quantec Quanton',['../group___quanton.html',1,'']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -694,6 +694,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>stabilization_failsafe_checks()
 : <a class="el" href="group___stabilization_module.html#gaa31ba9a7ee78529314ed0413de38de3a">stabilization.c</a>
 </li>
+<li>STABILIZATION_LQG
+: <a class="el" href="group___a_q32.html#ga02110c152ec1a097f4ff145b650b6309">pios_config.h</a>
+</li>
 <li>stabilization_virtual_flybar()
 : <a class="el" href="group___stabilization_module.html#ga4d4e94ea99a3cf6e48241364faa65bf2">virtualflybar.h</a>
 </li>
@@ -714,7 +717,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="group___sim.html#ga7a789e7b91612099a4a1f355b9e97c24">main.c</a>
 </li>
 <li>STACK_SIZE_BYTES
-: <a class="el" href="group___actuator_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">actuator.c</a>
+: <a class="el" href="group___radio_com_bridge_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">RadioComBridge.c</a>
+, <a class="el" href="group___stabilization_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">stabilization.c</a>
+, <a class="el" href="group___storm32bgc.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">storm32bgc.c</a>
+, <a class="el" href="group___system_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">systemmod.c</a>
+, <a class="el" href="group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">telemetry.c</a>
+, <a class="el" href="group___u_a_v_o_mavlink_bridge.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">UAVOMavlinkBridge.c</a>
+, <a class="el" href="group___vibration_analysis_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">vibrationanalysis.c</a>
+, <a class="el" href="group___vtol_path_follower.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">vtolpathfollower.c</a>
+, <a class="el" href="group___v_t_x_config.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">VTXConfig.c</a>
+, <a class="el" href="group___actuator_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">actuator.c</a>
 , <a class="el" href="group___airspeed_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">airspeed.c</a>
 , <a class="el" href="group___attitude_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">attitude.c</a>
 , <a class="el" href="group___battery_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">battery.c</a>
@@ -728,15 +740,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="group___msp_uavo_bridge.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">mspuavobridge.c</a>
 , <a class="el" href="group___on_screen_display.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">onscreendisplay.c</a>
 , <a class="el" href="group___path_planner_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">pathplanner.c</a>
-, <a class="el" href="group___radio_com_bridge_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">RadioComBridge.c</a>
-, <a class="el" href="group___stabilization_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">stabilization.c</a>
-, <a class="el" href="group___storm32bgc.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">storm32bgc.c</a>
-, <a class="el" href="group___system_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">systemmod.c</a>
-, <a class="el" href="group___telemetry_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">telemetry.c</a>
-, <a class="el" href="group___u_a_v_o_mavlink_bridge.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">UAVOMavlinkBridge.c</a>
-, <a class="el" href="group___vibration_analysis_module.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">vibrationanalysis.c</a>
-, <a class="el" href="group___vtol_path_follower.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">vtolpathfollower.c</a>
-, <a class="el" href="group___v_t_x_config.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725">VTXConfig.c</a>
 </li>
 <li>start
 : <a class="el" href="group___common_f1.html#gga3758da4ce9164f008216ba0fc2a82edca0e97c69c73117f6c0109b2d7d1d9cedc">common.h</a>
@@ -747,12 +750,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>STARTUP_LOG_ENABLED
 : <a class="el" href="group___pip_x.html#gac446a4880b98dfebb3ef3ecf17c064c8">pios_config.h</a>
 </li>
+<li>STATE
+: <a class="el" href="group___v_t_x_config.html#ga275a67132f10277ada3a0ee3d616b647">VTXConfig.c</a>
+</li>
 <li>state
 : <a class="el" href="group___autotuning_module.html#gaa82516ca4c90ad2473dda6f2eb43bb98">autotune.c</a>
 , <a class="el" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">pios_flashfs_logfs.c</a>
-</li>
-<li>STATE
-: <a class="el" href="group___v_t_x_config.html#ga275a67132f10277ada3a0ee3d616b647">VTXConfig.c</a>
 </li>
 <li>StateEq()
 : <a class="el" href="group___i_n_s_g_p_s.html#ga48e6b0dab3d99bfc5cef7b24b773f533">insgps14state.c</a>
@@ -840,11 +843,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>STATUS_NORMAL
 : <a class="el" href="group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231ad98b0fc232d7ddd6d4d6402764bdf576">control.h</a>
 </li>
-<li>status_rep
-: <a class="el" href="bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b">bl_messages.h</a>
-</li>
 <li>Status_Rep
 : <a class="el" href="group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa5bb01c5e992ff81a80920c2cd7e1afbf">common.h</a>
+</li>
+<li>status_rep
+: <a class="el" href="bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b">bl_messages.h</a>
 </li>
 <li>status_req
 : <a class="el" href="bl__messages_8h.html#acc38b6455ded1e1b21a8fc6bce548326">bl_messages.h</a>
@@ -1030,7 +1033,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#ga09f92055e4901d4dc7613422ff8ca83e">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI5_9_IRQ_PRIORITY
-: <a class="el" href="group___s_p_r_f3_e.html#gafb8ec40127fee7c2c398e9e2ec096a71">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#gafb8ec40127fee7c2c398e9e2ec096a71">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM11_IRQ_PRIORITY
 : <a class="el" href="group___revo_mini.html#gaa4b3131ca12f2d5a12047abb987961a4">mcuconf.h</a>
@@ -1105,7 +1108,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga2ae899fce9dc050c533cf90d97599d27">mcuconf.h</a>
 </li>
 <li>STM32_HPRE
-: <a class="el" href="group___revo_mini.html#ga035ea0d8259c0f89306c6a7d344705f2">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga035ea0d8259c0f89306c6a7d344705f2">mcuconf.h</a>
 </li>
 <li>STM32_HSE_ENABLED
 : <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#ad94c4a0da6c8c7a3d0b800fdc0dbebfa">mcuconf.h</a>
@@ -1270,7 +1273,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#gab395c2abfb2e6fd501ce4529bf09a05f">mcuconf.h</a>
 </li>
 <li>STM32_NO_INIT
-: <a class="el" href="group___s_p_r_f3_e.html#gaffb519ca907542b6bff9104700c0009d">mcuconf.h</a>
+: <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#affb519ca907542b6bff9104700c0009d">mcuconf.h</a>
 </li>
 <li>STM32_PLLI2SN_VALUE
 : <a class="el" href="group___revo_mini.html#gaa2179285dbf70d5d5a370c3353737813">mcuconf.h</a>
@@ -1279,10 +1282,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#gaa6385bafac509e5ef0926a722fc54adb">mcuconf.h</a>
 </li>
 <li>STM32_PLLMUL_VALUE
-: <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#a0015fc8f73017358a7025ba57a265a11">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga0015fc8f73017358a7025ba57a265a11">mcuconf.h</a>
 </li>
 <li>STM32_PLLSRC
-: <a class="el" href="group___revo_mini.html#ga811cfbd049f0ab00976def9593849d32">mcuconf.h</a>
+: <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#a811cfbd049f0ab00976def9593849d32">mcuconf.h</a>
 </li>
 <li>STM32_PLS
 : <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#a6f4f9c19c6b1a1c3694278a542e3c60d">mcuconf.h</a>
@@ -1300,7 +1303,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#gab70d9b5c3764aac6282d594d8f6a88ec">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM1_IRQ_PRIORITY
-: <a class="el" href="group___revo_mini.html#gae631e1c4b6541c9d67de9d009196b770">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#gae631e1c4b6541c9d67de9d009196b770">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM2_IRQ_PRIORITY
 : <a class="el" href="group___s_p_r_f3_e.html#ga01b2a27910cfaed8a40043c8efe1e9a4">mcuconf.h</a>
@@ -1309,13 +1312,13 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#ga8b4f8d9d4308f0503738704437284592">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM4_IRQ_PRIORITY
-: <a class="el" href="group___revo_mini.html#ga072aabc3f06ec1702c1fc5eb3c6b01f8">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga072aabc3f06ec1702c1fc5eb3c6b01f8">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM5_IRQ_PRIORITY
 : <a class="el" href="group___revo_mini.html#gab5e7265edffef2f0b796b755ca4cfbad">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM8_IRQ_PRIORITY
-: <a class="el" href="group___revo_mini.html#gab879e56e8632bb4beb029c28133cc504">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#gab879e56e8632bb4beb029c28133cc504">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM9_IRQ_PRIORITY
 : <a class="el" href="group___revo_mini.html#ga6f416a1eac8b8cea90cc80535a8269dd">mcuconf.h</a>
@@ -1324,7 +1327,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#ga554728f749ad9aca0102d189cc6bb9e7">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM1
-: <a class="el" href="group___s_p_r_f3_e.html#ga6f066eafb341c481f419dc609e1cd147">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#ga6f066eafb341c481f419dc609e1cd147">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM2
 : <a class="el" href="group___s_p_r_f3_e.html#ga061e9a31faab6d787c73d7f21893e483">mcuconf.h</a>
@@ -1363,7 +1366,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga562945e4ccd2bca4a4277eaa05ae70a0">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART3_PRIORITY
-: <a class="el" href="group___s_p_r_f3_e.html#ga228a6b5e5aed69db051dcea1ef58232a">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#ga228a6b5e5aed69db051dcea1ef58232a">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART6_PRIORITY
 : <a class="el" href="group___revo_mini.html#gad4450f9b0b7a50cdf4f86c67a67d030b">mcuconf.h</a>
@@ -1378,7 +1381,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_p_r_f3_e.html#ga7f657adda8b7f6aa955f0806a29b0b9d">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART2
-: <a class="el" href="group___s_p_r_f3_e.html#gacf6b4949732fac0a1ded862174aabba7">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#gacf6b4949732fac0a1ded862174aabba7">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART3
 : <a class="el" href="group___s_p_r_f3_e.html#ga59976b6c28b2561d2b6bd7e3940ea377">mcuconf.h</a>
@@ -1405,7 +1408,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga90bd623120d1e54038094fba54ba05c0">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_IRQ_PRIORITY
-: <a class="el" href="group___revo_mini.html#ga47d90eaca23f3eea99d74d1bb3539541">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga47d90eaca23f3eea99d74d1bb3539541">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_RX_DMA_STREAM
 : <a class="el" href="group___revo_mini.html#gaa499e5a7c6352b58178e0651483d88ee">mcuconf.h</a>
@@ -1414,7 +1417,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga9aefcd7246075d08426d5bc833e86b97">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_DMA_PRIORITY
-: <a class="el" href="group___s_p_r_f3_e.html#ga0330335b8223bb2fd7b30a8bf6748a25">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#ga0330335b8223bb2fd7b30a8bf6748a25">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_IRQ_PRIORITY
 : <a class="el" href="group___revo_mini.html#ga311306228435a4ddb879e8f0d80e3c10">mcuconf.h</a>
@@ -1429,13 +1432,13 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#gaf105fbdfb7b9076472b373ed0c7b3fef">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI2
-: <a class="el" href="group___s_p_r_f3_e.html#ga626416dc22cf5f3deff2a8c7d8efa5b2">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#ga626416dc22cf5f3deff2a8c7d8efa5b2">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI3
 : <a class="el" href="group___revo_mini.html#gafe588bf112fc8f8a22c767aa3d3bcbb7">mcuconf.h</a>
 </li>
 <li>STM32_SW
-: <a class="el" href="group___s_p_r_f3_e.html#ga29204b81c265dd6e124fbcf12a2c8d6f">mcuconf.h</a>
+: <a class="el" href="_s_t_m32_f10x_2mcuconf_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f">mcuconf.h</a>
 </li>
 <li>STM32_TIM1SW
 : <a class="el" href="group___s_p_r_f3_e.html#ga27fd8ee5368f1d18800f60f190b53d44">mcuconf.h</a>
@@ -1477,10 +1480,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga9b92c8345705d855f58f3cc0a3610175">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_DMA_PRIORITY
-: <a class="el" href="group___s_p_r_f3_e.html#ga8307c6c43bf456405efe19e5908d5a25">mcuconf.h</a>
+: <a class="el" href="group___revo_mini.html#ga8307c6c43bf456405efe19e5908d5a25">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_IRQ_PRIORITY
-: <a class="el" href="group___revo_mini.html#ga050fc59913309402f34dd2ea6ab3cdf8">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga050fc59913309402f34dd2ea6ab3cdf8">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_RX_DMA_STREAM
 : <a class="el" href="group___revo_mini.html#ga969b79cb637b8b69cec9257705d74484">mcuconf.h</a>
@@ -1531,13 +1534,13 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___revo_mini.html#ga51645272d956b6e1ec578bdcd88c88b0">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART1
-: <a class="el" href="group___revo_mini.html#ga7b366b1eb660467c7ef9667705ad8308">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga7b366b1eb660467c7ef9667705ad8308">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART2
-: <a class="el" href="group___revo_mini.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#gad9f8b9dcf8dd01e163b8d47c56cee1aa">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART3
-: <a class="el" href="group___revo_mini.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c">mcuconf.h</a>
+: <a class="el" href="group___s_p_r_f3_e.html#ga42b1761cd3b7e70eb3c5c90d9b92f52c">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART6
 : <a class="el" href="group___revo_mini.html#ga6f5d3dfc7539503f8639d4be5b81928d">mcuconf.h</a>
@@ -1696,7 +1699,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___stabilization_module.html#gae091cf31131159bb3112653237a9d3cf">stabilization.c</a>
 </li>
 <li>Suspend()
-: <a class="el" href="pios__usb__hid__pwr_8h.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.h</a>
+: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.c</a>
+, <a class="el" href="pios__usb__hid__pwr_8h.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.h</a>
 , <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__pwr_8c.html#a1eb60d4c13f2c21d00ddc5fe6ad57f40">pios_usb_hid_pwr.c</a>
 </li>
 <li>SUSPENDED
@@ -1718,8 +1722,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___common_f1.html#gac9cf28c40cee906b9405cb32f16b1fa2">main.c</a>
 </li>
 <li>synBytes
-: <a class="el" href="ecc_8h.html#a5dd915356908211565387e01d4a9cd8d">ecc.h</a>
-, <a class="el" href="rs_8c.html#a5dd915356908211565387e01d4a9cd8d">rs.c</a>
+: <a class="el" href="rs_8c.html#a5dd915356908211565387e01d4a9cd8d">rs.c</a>
+, <a class="el" href="ecc_8h.html#a5dd915356908211565387e01d4a9cd8d">ecc.h</a>
 </li>
 <li>SYNC_DSHOT_1200
 : <a class="el" href="group___p_i_o_s___s_e_r_v_o.html#ga111eee63a72c9eb868af0b90d31aa096">pios_servo.c</a>
@@ -1740,8 +1744,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___s_t_m32_f10x___system___private___defines.html#ga69649cc38f34627cfb48b51062ebd390">cmsis_system.c</a>
 </li>
 <li>system_annunc_custom_string()
-: <a class="el" href="group___p_i_o_s___modules.html#gac374c4b31e49061afbb7dd23bcd1a3f7">pios_modules.h</a>
-, <a class="el" href="group___system_module.html#gac374c4b31e49061afbb7dd23bcd1a3f7">systemmod.c</a>
+: <a class="el" href="group___system_module.html#gac374c4b31e49061afbb7dd23bcd1a3f7">systemmod.c</a>
+, <a class="el" href="group___p_i_o_s___modules.html#gac374c4b31e49061afbb7dd23bcd1a3f7">pios_modules.h</a>
 </li>
 <li>SYSTEM_HALT_HOOK
 : <a class="el" href="group__config.html#ga71e0932757a8180816104fa313171c9a">chconf.h</a>
@@ -1759,23 +1763,25 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group___libraries.html#ga2d3bb27ef6cc29ecd8bb4e97512c8fef">alarms.h</a>
 </li>
 <li>SystemCoreClock
-: <a class="el" href="group___s_t_m32_f4xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6">cmsis_system.c</a>
+: <a class="el" href="group___s_t_m32_f30x___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6">cmsis_system.c</a>
 , <a class="el" href="group___s_t_m32_f0xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6">system_stm32f0xx.c</a>
-, <a class="el" href="group___s_t_m32_f4xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6">cmsis_system.c</a>
+, <a class="el" href="group___s_t_m32_f30x___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6">cmsis_system.c</a>
 </li>
 <li>SystemCoreClockUpdate()
-: <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">system_stm32f0xx.c</a>
+: <a class="el" href="group___s_t_m32_f10x___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">cmsis_system.c</a>
+, <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">system_stm32f0xx.c</a>
 , <a class="el" href="group___s_t_m32_f30x___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">cmsis_system.c</a>
 </li>
 <li>SystemInit()
-: <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">system_stm32f0xx.c</a>
-, <a class="el" href="group___s_t_m32_f30x___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">cmsis_system.c</a>
+: <a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">cmsis_system.c</a>
+, <a class="el" href="group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">system_stm32f0xx.c</a>
+, <a class="el" href="group___s_t_m32_f10x___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">cmsis_system.c</a>
 </li>
 <li>systemmod_process_rgb_leds()
 : <a class="el" href="group___system_module.html#ga107237204bc679179166c17b330533a5">rgbleds.h</a>
 </li>
 <li>SYSTEMMOD_RGBLED_SUPPORT
-: <a class="el" href="group___revo_mini.html#gaabf5c613fb366d3da49a87e7114a09e2">pios_config.h</a>
+: <a class="el" href="group___o_m_n_i_b_u_s_f3.html#gaabf5c613fb366d3da49a87e7114a09e2">pios_config.h</a>
 </li>
 <li>SYSTEMMOD_RGBLED_VIDEO_HACK
 : <a class="el" href="group___seppuku.html#ga8ff5d57d64df909a2e57a54fca3e4d5f">pios_config.h</a>

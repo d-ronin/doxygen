@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -336,119 +336,120 @@ $(document).ready(function(){initNavTree('alarms_8c_source.html','');});
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        [SYSTEMALARMS_CONFIGERROR_DUPLICATEPORTCFG] = <span class="stringliteral">&quot;CFG:DUP PORT&quot;</span>,</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        [SYSTEMALARMS_CONFIGERROR_NAVFILTER] = <span class="stringliteral">&quot;CFG:NAVFILTER&quot;</span>,</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        [SYSTEMALARMS_CONFIGERROR_UNSAFETOARM] = <span class="stringliteral">&quot;CFG:UNSAFE&quot;</span>,</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        [SYSTEMALARMS_CONFIGERROR_UNDEFINED] = <span class="stringliteral">&quot;CFG:UNDEF&quot;</span>,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        [SYSTEMALARMS_CONFIGERROR_NONE] = {0},</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;};</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">// DONT_BUILD_IF(NELEMENTS(CONFIG_ERROR_NAMES) != SYSTEMALARMS_CONFIGERROR_NUMELEM, AlarmArrayMismatch);</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">  291</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">manual_control_names</a>[][13] = {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_SETTINGS] = <span class="stringliteral">&quot;MAN:SETTINGS&quot;</span>,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_NORX] = <span class="stringliteral">&quot;MAN:NO RX&quot;</span>,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_ACCESSORY] = <span class="stringliteral">&quot;MAN:ACC&quot;</span>,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_ALTITUDEHOLD] = <span class="stringliteral">&quot;MAN:A-HOLD&quot;</span>,</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_PATHFOLLOWER] = <span class="stringliteral">&quot;MAN:PATH-F&quot;</span>,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_CHANNELCONFIGURATION] = <span class="stringliteral">&quot;MAN:INPUT&quot;</span>,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_UNDEFINED] = <span class="stringliteral">&quot;MAN:UNDEF&quot;</span>,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_NONE] = {0},</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;};</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">// DONT_BUILD_IF(NELEMENTS(MANUAL_CONTROL_NAMES) != SYSTEMALARMS_MANUALCONTROL_NUMELEM, AlarmArrayMismatch);</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">  304</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">boot_reason_names</a>[][16] = {</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_BROWNOUT] = <span class="stringliteral">&quot;BOOT:BROWNOUT&quot;</span>,</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_PINRESET] = <span class="stringliteral">&quot;BOOT:PIN RESET&quot;</span>,</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_POWERONRESET] = <span class="stringliteral">&quot;BOOT:PWR ON RST&quot;</span>,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_SOFTWARERESET] = <span class="stringliteral">&quot;BOOT:SW RESET&quot;</span>,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_INDEPENDENTWATCHDOG] = <span class="stringliteral">&quot;BOOT:INDY WDOG&quot;</span>,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_WINDOWWATCHDOG] = <span class="stringliteral">&quot;BOOT:WIN WDOG&quot;</span>,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_LOWPOWER] = <span class="stringliteral">&quot;BOOT:LOW POWER&quot;</span>,</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_UNDEFINED] = <span class="stringliteral">&quot;BOOT:UNDEFINED&quot;</span>,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;};</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">  315</a></span>&#160;<span class="preprocessor">#define LONGEST_MESSAGE 17</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<a class="code" href="group___libraries.html#ga3b0090a668a361b14c9833616d9afc8e">DONT_BUILD_IF</a>((<a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*config_error_names)</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;               || <a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*manual_control_names)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;               || <a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*boot_reason_names)),</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;              InsufficientBufferage);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group___libraries.html#ga47354e86580ad415802963e09b3e408a">AlarmBootReason</a>(uint8_t reason) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span> (reason &gt;= <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(boot_reason_names)) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">return</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>*)&amp;boot_reason_names[SYSTEMALARMS_REBOOTCAUSE_UNDEFINED];</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>*)&amp;boot_reason_names[reason];</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;int32_t <a class="code" href="group___libraries.html#gaa522ae041a9cda97c5db1fbe1e60c360">AlarmString</a>(SystemAlarmsData *alarm, <span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> buflen, <span class="keywordtype">bool</span> <a class="code" href="group___on_screen_display.html#ga399ff0c757d88aeaa2439212f073f380">blink</a>, uint8_t *<a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        *state = SYSTEMALARMS_ALARM_OK;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        buf[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a> = 0;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">// TODO(dustin): sort the alarms by severity.  Alarm messages</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// will get truncated.  We want the most urgent stuff to show</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="comment">// up first, having warnings show up only if there&#39;s space.</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; SYSTEMALARMS_ALARM_NUMELEM; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <span class="keywordflow">if</span> (((alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_WARNING) ||</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                     (alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_ERROR) ||</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                     (alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_CRITICAL))) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        <span class="keywordflow">if</span> (!<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>][0]) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                <span class="comment">// zero-length alarm names indicate the alarm is</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                <span class="comment">// explicitly ignored</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        <span class="comment">// Returned state is the worst state.</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="keywordflow">if</span> (alarm-&gt;Alarm[i] &gt; *state) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                *state = alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>];</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                        <span class="keywordtype">char</span> current_msg[<a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a>+1] = {0};</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        <span class="keywordflow">switch</span> (i) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                        <span class="keywordflow">case</span> SYSTEMALARMS_ALARM_SYSTEMCONFIGURATION:</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                strncpy(current_msg,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                        (<span class="keyword">const</span> <span class="keywordtype">char</span>*)config_error_names[alarm-&gt;ConfigError],</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                        <span class="keyword">sizeof</span>(*config_error_names));</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*config_error_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                        <span class="keywordflow">case</span> SYSTEMALARMS_ALARM_MANUALCONTROL:</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                strncpy(current_msg,</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                                        (<span class="keyword">const</span> <span class="keywordtype">char</span>*)manual_control_names[alarm-&gt;ManualControl],</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                        <span class="keyword">sizeof</span>(*manual_control_names));</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*manual_control_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                                strncpy(current_msg, (<span class="keyword">const</span> <span class="keywordtype">char</span>*)<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>[i], <span class="keyword">sizeof</span>(*<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>));</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*alarm_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                        }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                        <span class="keywordtype">int</span> this_len = strlen(current_msg);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                        <span class="keywordflow">if</span> (pos + this_len + 2 &gt;= buflen) {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                        }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                        <span class="keywordflow">if</span> ((alarm-&gt;Alarm[i] != SYSTEMALARMS_ALARM_WARNING) &amp;&amp; !blink) {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                this_len += 1;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                <span class="keywordflow">while</span> (this_len &gt; 0) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                        buf[pos++] = <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                        this_len--;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                        }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                        memcpy(&amp;buf[pos], current_msg, this_len);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                        pos += this_len;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        buf[pos++] = <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        buf[<a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        [SYSTEMALARMS_CONFIGERROR_LQG] = <span class="stringliteral">&quot;CFG:LQG&quot;</span>,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        [SYSTEMALARMS_CONFIGERROR_UNDEFINED] = <span class="stringliteral">&quot;CFG:UNDEF&quot;</span>,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        [SYSTEMALARMS_CONFIGERROR_NONE] = {0},</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;};</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">// DONT_BUILD_IF(NELEMENTS(CONFIG_ERROR_NAMES) != SYSTEMALARMS_CONFIGERROR_NUMELEM, AlarmArrayMismatch);</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">  292</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">manual_control_names</a>[][13] = {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_SETTINGS] = <span class="stringliteral">&quot;MAN:SETTINGS&quot;</span>,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_NORX] = <span class="stringliteral">&quot;MAN:NO RX&quot;</span>,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_ACCESSORY] = <span class="stringliteral">&quot;MAN:ACC&quot;</span>,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_ALTITUDEHOLD] = <span class="stringliteral">&quot;MAN:A-HOLD&quot;</span>,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_PATHFOLLOWER] = <span class="stringliteral">&quot;MAN:PATH-F&quot;</span>,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_CHANNELCONFIGURATION] = <span class="stringliteral">&quot;MAN:INPUT&quot;</span>,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_UNDEFINED] = <span class="stringliteral">&quot;MAN:UNDEF&quot;</span>,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        [SYSTEMALARMS_MANUALCONTROL_NONE] = {0},</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;};</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">// DONT_BUILD_IF(NELEMENTS(MANUAL_CONTROL_NAMES) != SYSTEMALARMS_MANUALCONTROL_NUMELEM, AlarmArrayMismatch);</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">  305</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">boot_reason_names</a>[][16] = {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_BROWNOUT] = <span class="stringliteral">&quot;BOOT:BROWNOUT&quot;</span>,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_PINRESET] = <span class="stringliteral">&quot;BOOT:PIN RESET&quot;</span>,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_POWERONRESET] = <span class="stringliteral">&quot;BOOT:PWR ON RST&quot;</span>,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_SOFTWARERESET] = <span class="stringliteral">&quot;BOOT:SW RESET&quot;</span>,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_INDEPENDENTWATCHDOG] = <span class="stringliteral">&quot;BOOT:INDY WDOG&quot;</span>,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_WINDOWWATCHDOG] = <span class="stringliteral">&quot;BOOT:WIN WDOG&quot;</span>,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_LOWPOWER] = <span class="stringliteral">&quot;BOOT:LOW POWER&quot;</span>,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        [SYSTEMALARMS_REBOOTCAUSE_UNDEFINED] = <span class="stringliteral">&quot;BOOT:UNDEFINED&quot;</span>,</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;};</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">  316</a></span>&#160;<span class="preprocessor">#define LONGEST_MESSAGE 17</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<a class="code" href="group___libraries.html#ga3b0090a668a361b14c9833616d9afc8e">DONT_BUILD_IF</a>((<a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*config_error_names)</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;               || <a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*manual_control_names)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;               || <a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a> &lt;= <span class="keyword">sizeof</span>(*boot_reason_names)),</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              InsufficientBufferage);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group___libraries.html#ga47354e86580ad415802963e09b3e408a">AlarmBootReason</a>(uint8_t reason) {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (reason &gt;= <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(boot_reason_names)) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">return</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>*)&amp;boot_reason_names[SYSTEMALARMS_REBOOTCAUSE_UNDEFINED];</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">return</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>*)&amp;boot_reason_names[reason];</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;int32_t <a class="code" href="group___libraries.html#gaa522ae041a9cda97c5db1fbe1e60c360">AlarmString</a>(SystemAlarmsData *alarm, <span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> buflen, <span class="keywordtype">bool</span> <a class="code" href="group___on_screen_display.html#ga399ff0c757d88aeaa2439212f073f380">blink</a>, uint8_t *<a class="code" href="pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630">state</a>) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        *state = SYSTEMALARMS_ALARM_OK;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        buf[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a> = 0;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// TODO(dustin): sort the alarms by severity.  Alarm messages</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="comment">// will get truncated.  We want the most urgent stuff to show</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">// up first, having warnings show up only if there&#39;s space.</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> &lt; SYSTEMALARMS_ALARM_NUMELEM; <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>++) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keywordflow">if</span> (((alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_WARNING) ||</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                     (alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_ERROR) ||</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                     (alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] == SYSTEMALARMS_ALARM_CRITICAL))) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                        <span class="keywordflow">if</span> (!<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>][0]) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                <span class="comment">// zero-length alarm names indicate the alarm is</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                                <span class="comment">// explicitly ignored</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="comment">// Returned state is the worst state.</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        <span class="keywordflow">if</span> (alarm-&gt;Alarm[i] &gt; *state) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                *state = alarm-&gt;Alarm[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>];</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        <span class="keywordtype">char</span> current_msg[<a class="code" href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a>+1] = {0};</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                        <span class="keywordflow">switch</span> (i) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                        <span class="keywordflow">case</span> SYSTEMALARMS_ALARM_SYSTEMCONFIGURATION:</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                strncpy(current_msg,</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                        (<span class="keyword">const</span> <span class="keywordtype">char</span>*)config_error_names[alarm-&gt;ConfigError],</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                        <span class="keyword">sizeof</span>(*config_error_names));</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*config_error_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                        <span class="keywordflow">case</span> SYSTEMALARMS_ALARM_MANUALCONTROL:</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                                strncpy(current_msg,</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                        (<span class="keyword">const</span> <span class="keywordtype">char</span>*)manual_control_names[alarm-&gt;ManualControl],</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                        <span class="keyword">sizeof</span>(*manual_control_names));</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*manual_control_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                strncpy(current_msg, (<span class="keyword">const</span> <span class="keywordtype">char</span>*)<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>[i], <span class="keyword">sizeof</span>(*<a class="code" href="group___libraries.html#ga96f7a133068b65f9b5c72ee949d47d5d">alarm_names</a>));</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                                current_msg[<span class="keyword">sizeof</span>(*alarm_names)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                        }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                        <span class="keywordtype">int</span> this_len = strlen(current_msg);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                        <span class="keywordflow">if</span> (pos + this_len + 2 &gt;= buflen) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                        }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                        <span class="keywordflow">if</span> ((alarm-&gt;Alarm[i] != SYSTEMALARMS_ALARM_WARNING) &amp;&amp; !blink) {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                this_len += 1;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                <span class="keywordflow">while</span> (this_len &gt; 0) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                        buf[pos++] = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                        this_len--;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                        }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                        memcpy(&amp;buf[pos], current_msg, this_len);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        pos += this_len;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        buf[pos++] = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        buf[<a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
 <div class="ttc" id="group___libraries_html_ga80202f5db85c05e86e4d5d4889961c2c"><div class="ttname"><a href="group___libraries.html#ga80202f5db85c05e86e4d5d4889961c2c">hasSeverity</a></div><div class="ttdeci">static int32_t hasSeverity(SystemAlarmsAlarmOptions severity)</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00219">alarms.c:219</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_gga9ff6496d789d35c55d64a5ba351e640aa72fc008832d7b03207dfa235296d0fd0"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#gga9ff6496d789d35c55d64a5ba351e640aa72fc008832d7b03207dfa235296d0fd0">PIOS_RESET_FLAG_POWERON</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__reset_8h_source.html#l00037">pios_reset.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_gga9ff6496d789d35c55d64a5ba351e640aa2aed0f1352234b48e2947c946c021485"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#gga9ff6496d789d35c55d64a5ba351e640aa2aed0f1352234b48e2947c946c021485">PIOS_RESET_FLAG_INDEPENDENT_WATCHDOG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__reset_8h_source.html#l00039">pios_reset.h:39</a></div></div>
@@ -456,7 +457,7 @@ $(document).ready(function(){initNavTree('alarms_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_gga9ff6496d789d35c55d64a5ba351e640aac32e9c6c984bf4886b4d3fc545c9df8b"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#gga9ff6496d789d35c55d64a5ba351e640aac32e9c6c984bf4886b4d3fc545c9df8b">PIOS_RESET_FLAG_LOW_POWER</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__reset_8h_source.html#l00041">pios_reset.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_ga1ab704544c4dbc14b946b4fd53151580"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#ga1ab704544c4dbc14b946b4fd53151580">PIOS_RESET_GetResetReason</a></div><div class="ttdeci">int16_t PIOS_RESET_GetResetReason(void)</div><div class="ttdoc">PIOS_RESET_GetResetReason Does nothing on POSIX systems. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__reset_8c_source.html#l00047">pios_reset.c:47</a></div></div>
 <div class="ttc" id="group___on_screen_display_html_ga399ff0c757d88aeaa2439212f073f380"><div class="ttname"><a href="group___on_screen_display.html#ga399ff0c757d88aeaa2439212f073f380">blink</a></div><div class="ttdeci">static bool blink</div><div class="ttdef"><b>Definition:</b> <a href="onscreendisplay_8c_source.html#l00198">onscreendisplay.c:198</a></div></div>
-<div class="ttc" id="group___libraries_html_ga79f31f98e2f2138c55fe1086951c955d"><div class="ttname"><a href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">manual_control_names</a></div><div class="ttdeci">static const char manual_control_names[][13]</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00291">alarms.c:291</a></div></div>
+<div class="ttc" id="group___libraries_html_ga79f31f98e2f2138c55fe1086951c955d"><div class="ttname"><a href="group___libraries.html#ga79f31f98e2f2138c55fe1086951c955d">manual_control_names</a></div><div class="ttdeci">static const char manual_control_names[][13]</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00292">alarms.c:292</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_gga9ff6496d789d35c55d64a5ba351e640aafb73795cf488b3df7c8c8ca7f5a004c4"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#gga9ff6496d789d35c55d64a5ba351e640aafb73795cf488b3df7c8c8ca7f5a004c4">PIOS_RESET_FLAG_WINDOW_WATCHDOG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__reset_8h_source.html#l00040">pios_reset.h:40</a></div></div>
 <div class="ttc" id="group___libraries_html_gadd1139478e7c6bc1b6afaaa0d1d114dd"><div class="ttname"><a href="group___libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd">AlarmsSet</a></div><div class="ttdeci">int32_t AlarmsSet(SystemAlarmsAlarmElem alarm, SystemAlarmsAlarmOptions severity)</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00097">alarms.c:97</a></div></div>
 <div class="ttc" id="group___p_i_o_s___mutex_html_ga797ea008335af18d3a3c90b627630654"><div class="ttname"><a href="group___p_i_o_s___mutex.html#ga797ea008335af18d3a3c90b627630654">PIOS_Mutex_Unlock</a></div><div class="ttdeci">bool PIOS_Mutex_Unlock(struct pios_mutex *mtx)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__mutex_8c_source.html#l00104">pios_mutex.c:104</a></div></div>
@@ -464,10 +465,10 @@ $(document).ready(function(){initNavTree('alarms_8c_source.html','');});
 <div class="ttc" id="group___libraries_html_ga9a68c7084ffef47a37ebf1a0284ecc41"><div class="ttname"><a href="group___libraries.html#ga9a68c7084ffef47a37ebf1a0284ecc41">AlarmsClearAll</a></div><div class="ttdeci">void AlarmsClearAll()</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00179">alarms.c:179</a></div></div>
 <div class="ttc" id="group___libraries_html_gac64f9397e3f3004dae0c839fcaf0894d"><div class="ttname"><a href="group___libraries.html#gac64f9397e3f3004dae0c839fcaf0894d">config_error_names</a></div><div class="ttdeci">static const char config_error_names[][15]</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00275">alarms.c:275</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_e_s_e_t_html_gga9ff6496d789d35c55d64a5ba351e640aac72d4474a839ec488e3ac118239f5b0f"><div class="ttname"><a href="group___p_i_o_s___r_e_s_e_t.html#gga9ff6496d789d35c55d64a5ba351e640aac72d4474a839ec488e3ac118239f5b0f">PIOS_RESET_FLAG_UNDEFINED</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__reset_8h_source.html#l00034">pios_reset.h:34</a></div></div>
-<div class="ttc" id="group___libraries_html_ga1e47dafe2b99500ad6fa4ed3e83f9203"><div class="ttname"><a href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">boot_reason_names</a></div><div class="ttdeci">static const char boot_reason_names[][16]</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00304">alarms.c:304</a></div></div>
+<div class="ttc" id="group___libraries_html_ga1e47dafe2b99500ad6fa4ed3e83f9203"><div class="ttname"><a href="group___libraries.html#ga1e47dafe2b99500ad6fa4ed3e83f9203">boot_reason_names</a></div><div class="ttdeci">static const char boot_reason_names[][16]</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00305">alarms.c:305</a></div></div>
 <div class="ttc" id="group___libraries_html_ga3b0090a668a361b14c9833616d9afc8e"><div class="ttname"><a href="group___libraries.html#ga3b0090a668a361b14c9833616d9afc8e">DONT_BUILD_IF</a></div><div class="ttdeci">DONT_BUILD_IF(NELEMENTS(alarm_names)!=SYSTEMALARMS_ALARM_NUMELEM, AlarmArrayMismatch)</div></div>
 <div class="ttc" id="msp__messages_8h_html_a2b376d9440c388efe8207bfba3558a5a"><div class="ttname"><a href="msp__messages_8h.html#a2b376d9440c388efe8207bfba3558a5a">pos</a></div><div class="ttdeci">struct _msp_pid_item pos</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00100">msp_messages.h:100</a></div></div>
-<div class="ttc" id="group___libraries_html_ga1b621f9acff685fd554b1788d45a4601"><div class="ttname"><a href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a></div><div class="ttdeci">#define LONGEST_MESSAGE</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00315">alarms.c:315</a></div></div>
+<div class="ttc" id="group___libraries_html_ga1b621f9acff685fd554b1788d45a4601"><div class="ttname"><a href="group___libraries.html#ga1b621f9acff685fd554b1788d45a4601">LONGEST_MESSAGE</a></div><div class="ttdeci">#define LONGEST_MESSAGE</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00316">alarms.c:316</a></div></div>
 <div class="ttc" id="group___libraries_html_ga9daaea9cc9394928db79c5d475b5e621"><div class="ttname"><a href="group___libraries.html#ga9daaea9cc9394928db79c5d475b5e621">AlarmsDefaultAll</a></div><div class="ttdeci">void AlarmsDefaultAll()</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00157">alarms.c:157</a></div></div>
 <div class="ttc" id="alarms_8h_html"><div class="ttname"><a href="alarms_8h.html">alarms.h</a></div><div class="ttdoc">Include file of the alarm library. </div></div>
 <div class="ttc" id="group___libraries_html_ga0f241880ab969542907c4216fe85aa70"><div class="ttname"><a href="group___libraries.html#ga0f241880ab969542907c4216fe85aa70">AlarmsHasCritical</a></div><div class="ttdeci">int32_t AlarmsHasCritical()</div><div class="ttdef"><b>Definition:</b> <a href="alarms_8c_source.html#l00210">alarms.c:210</a></div></div>

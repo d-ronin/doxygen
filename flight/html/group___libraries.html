@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -379,6 +379,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6209acbff7034720890b0398f8517743"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga6209acbff7034720890b0398f8517743">check_safe_autonomous</a> ()</td></tr>
 <tr class="memdesc:ga6209acbff7034720890b0398f8517743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the system is safe for autonomous flight.  <a href="#ga6209acbff7034720890b0398f8517743">More...</a><br/></td></tr>
 <tr class="separator:ga6209acbff7034720890b0398f8517743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga279b33822f3276cd85eefabb7c20c996"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga279b33822f3276cd85eefabb7c20c996">lqg_sysident_check</a> ()</td></tr>
+<tr class="separator:ga279b33822f3276cd85eefabb7c20c996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb4ee43ed017a2dc95ffa619e34e9cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#gabb4ee43ed017a2dc95ffa619e34e9cef">DONT_BUILD_IF</a> (MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!=MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_NUMELEM, StabSettingsNumElem)</td></tr>
 <tr class="separator:gabb4ee43ed017a2dc95ffa619e34e9cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga377bdf29072c428603281201592be0a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___libraries.html#ga377bdf29072c428603281201592be0a7">DONT_BUILD_IF</a> (MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_NUMELEM!=MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_NUMELEM, StabSettingsNumElem2)</td></tr>
@@ -563,7 +565,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="alarms_8c_source.html#l00315">315</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
+<p>Definition at line <a class="el" href="alarms_8c_source.html#l00316">316</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1075,7 @@ Variables</h2></td></tr>
 <p>Check the system is safe for autonomous flight. </p>
 <p>If an autonomous mode is available, make sure all the configurations are valid for it </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00304">304</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00339">339</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1104,7 @@ Variables</h2></td></tr>
 <p>If the system is disarmed, look for a variety of conditions that make it unsafe to arm (that might not be dangerous to engage once flying).</p>
 <p>Note this does not check every possible situation that prevents arming. In particular, transmitter_control checks for failsafe and ranges and switch arming configuration to allow/prevent arming. </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00263">263</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00292">292</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1133,7 @@ Variables</h2></td></tr>
 <p>Check the rates achieved via stabilization are ones that can be tracked by the gyros as configured. </p>
 <dl class="section return"><dt>Returns</dt><dd>error code if not </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00333">333</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00368">368</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1185,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SYSTEMALARMS_CONFIGERROR_NONE or SYSTEMALARMS_CONFIGERROR_MULTIROTOR </dd></dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00192">192</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00214">214</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1203,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Run a preflight check over the hardware configuration and currently active modules </p>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00069">69</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00085">85</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -1950,6 +1952,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga279b33822f3276cd85eefabb7c20c996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lqg_sysident_check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00066">66</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaca3696f8c0cc70efb18eb3896b2d9176"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2422,7 +2441,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00354">354</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
+<p>Definition at line <a class="el" href="sanitycheck_8c_source.html#l00389">389</a> of file <a class="el" href="sanitycheck_8c_source.html">sanitycheck.c</a>.</p>
 
 </div>
 </div>
@@ -3352,7 +3371,7 @@ Variables</h2></td></tr>
 <div class="line">        [SYSTEMALARMS_REBOOTCAUSE_UNDEFINED] = <span class="stringliteral">&quot;BOOT:UNDEFINED&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="alarms_8c_source.html#l00304">304</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
+<p>Definition at line <a class="el" href="alarms_8c_source.html#l00305">305</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
 
 </div>
 </div>
@@ -3405,6 +3424,7 @@ Variables</h2></td></tr>
 <div class="line">        [SYSTEMALARMS_CONFIGERROR_DUPLICATEPORTCFG] = <span class="stringliteral">&quot;CFG:DUP PORT&quot;</span>,</div>
 <div class="line">        [SYSTEMALARMS_CONFIGERROR_NAVFILTER] = <span class="stringliteral">&quot;CFG:NAVFILTER&quot;</span>,</div>
 <div class="line">        [SYSTEMALARMS_CONFIGERROR_UNSAFETOARM] = <span class="stringliteral">&quot;CFG:UNSAFE&quot;</span>,</div>
+<div class="line">        [SYSTEMALARMS_CONFIGERROR_LQG] = <span class="stringliteral">&quot;CFG:LQG&quot;</span>,</div>
 <div class="line">        [SYSTEMALARMS_CONFIGERROR_UNDEFINED] = <span class="stringliteral">&quot;CFG:UNDEF&quot;</span>,</div>
 <div class="line">        [SYSTEMALARMS_CONFIGERROR_NONE] = {0},</div>
 <div class="line">}</div>
@@ -3697,7 +3717,7 @@ Variables</h2></td></tr>
 <div class="line">        [SYSTEMALARMS_MANUALCONTROL_NONE] = {0},</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="alarms_8c_source.html#l00291">291</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
+<p>Definition at line <a class="el" href="alarms_8c_source.html#l00292">292</a> of file <a class="el" href="alarms_8c_source.html">alarms.c</a>.</p>
 
 </div>
 </div>

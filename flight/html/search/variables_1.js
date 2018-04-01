@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['a',['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid']]],
+  ['a',['A',['../structrtkf__state.html#a1102fcc1c986b891ff2cbd8e0cfea00a',1,'rtkf_state::A()'],['../structlqr__state.html#a59aebad73e32212fc5450c632bbcf60e',1,'lqr_state::A()'],['../struct_w_m_mtype___ellipsoid.html#a9bcd028638f788a140352852646f5bf8',1,'WMMtype_Ellipsoid::a()']]],
   ['a1',['a1',['../group___flight_math.html#ga113ae77a5e37c0a78b1b3c1c4457db22',1,'lpfilter_biquad']]],
   ['a2',['a2',['../group___flight_math.html#ga49fb8824c4ef1a6445cbcdb32666c872',1,'lpfilter_biquad']]],
   ['acc_5frange',['acc_range',['../group___p_i_o_s___b_m_i160.html#ga1389307be8c175c2dd6a6f7bf93fbaa2',1,'pios_bmi160_cfg']]],
@@ -113,7 +113,7 @@ var searchData=
   ['available',['available',['../structcharosd__state__t.html#a631762c2d9c6930142875585bd6cd36b',1,'charosd_state_t::available()'],['../structpios__adc__driver.html#a35544674ddd8c465240663b2ac161642',1,'pios_adc_driver::available()'],['../structpios__com__driver.html#adca3cddb8dee4b725dbd7b4106b79a55',1,'pios_com_driver::available()']]],
   ['averaging',['Averaging',['../structpios__hmc5983__cfg.html#a44df092d13754a8a2d4a0f987d76706a',1,'pios_hmc5983_cfg']]],
   ['avg_5fcurrent_5flpf_5ffor_5ftime',['avg_current_lpf_for_time',['../group___battery_module.html#ga8f8d2dcff8999112ce80a130faa8fa9b',1,'battery.c']]],
-  ['axis',['axis',['../structsmoothcontrol__state__internal.html#ab3a8d4c9578cc5933312ea587ea6404f',1,'smoothcontrol_state_internal']]],
+  ['axis',['axis',['../structlqg__state.html#aa9640f2bc3f085c05bb872afff4b6028',1,'lqg_state::axis()'],['../structsmoothcontrol__state__internal.html#ab3a8d4c9578cc5933312ea587ea6404f',1,'smoothcontrol_state_internal::axis()']]],
   ['axis_5flock_5faccum',['axis_lock_accum',['../group___stabilization_module.html#gacef7acd86d1d86bb50b2513cdde406db',1,'stabilization.c']]],
   ['azim',['azim',['../struct_u_b_x___n_a_v___s_v_i_n_f_o___s_v.html#a74c4856a9ce3011e1de4fb51a80062dc',1,'UBX_NAV_SVINFO_SV']]]
 ];

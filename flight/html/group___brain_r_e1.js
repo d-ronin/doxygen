@@ -111,6 +111,7 @@ var group___brain_r_e1 =
     [ "PIOS_WATCHDOG_TIMEOUT", "group___brain_r_e1.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___brain_r_e1.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
     [ "RS_ECC_NPARITY", "group___brain_r_e1.html#ga75691040c0909ea4c06cd3d87f3f01b2", null ],
+    [ "STABILIZATION_LQG", "group___brain_r_e1.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___brain_r_e1.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "VREF_PLUS", "group___brain_r_e1.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "pios_re1fpga_buzzer_types", "group___brain_r_e1.html#ga479d0fd7fd0b0c24672ecc33589245b7", [

@@ -82,6 +82,7 @@ var group___a_q32 =
     [ "PIOS_WATCHDOG_TIMEOUT", "group___a_q32.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___a_q32.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
     [ "REVOLUTION", "group___a_q32.html#ga57eece07b3e190605072adb6c7072917", null ],
+    [ "STABILIZATION_LQG", "group___a_q32.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___a_q32.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "VREF_PLUS", "group___a_q32.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___a_q32.html#gabda03501745560ca9e546079e20bb392", null ],

@@ -30,5 +30,6 @@ var targets_2brainre1_2fw_2pios__config_8h =
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2brainre1_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ],
     [ "PIOS_VIDEO_BITS_PER_PIXEL", "targets_2brainre1_2fw_2pios__config_8h.html#gac96210783dfbb04a7ccbf548d0399ea4", null ],
     [ "PIOS_VIDEO_QUADSPI_Y_OFFSET", "targets_2brainre1_2fw_2pios__config_8h.html#gacec38855484b076c4407bf2e6e856352", null ],
+    [ "STABILIZATION_LQG", "targets_2brainre1_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "targets_2brainre1_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2", null ]
 ];

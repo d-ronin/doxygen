@@ -80,6 +80,7 @@ var group___piko_b_l_x =
     [ "PIOS_USB_ENABLED", "group___piko_b_l_x.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___piko_b_l_x.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___piko_b_l_x.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___piko_b_l_x.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "VREF_PLUS", "group___piko_b_l_x.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "hack_rx_pin", "group___piko_b_l_x.html#ga83e928a230b4000fc9eee377b0b9c25e", null ],
     [ "PIOS_Board_Init", "group___piko_b_l_x.html#gabda03501745560ca9e546079e20bb392", null ],

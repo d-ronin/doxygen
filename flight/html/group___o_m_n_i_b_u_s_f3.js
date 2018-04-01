@@ -76,6 +76,7 @@ var group___o_m_n_i_b_u_s_f3 =
     [ "PIOS_USB_ENABLED", "group___o_m_n_i_b_u_s_f3.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___o_m_n_i_b_u_s_f3.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___o_m_n_i_b_u_s_f3.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___o_m_n_i_b_u_s_f3.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___o_m_n_i_b_u_s_f3.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "VREF_PLUS", "group___o_m_n_i_b_u_s_f3.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "WDG_STATS_DIAGNOSTICS", "group___o_m_n_i_b_u_s_f3.html#ga92db595596a0136d6e663f929418cbf4", null ],

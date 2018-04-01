@@ -95,6 +95,7 @@ var group___sparky2 =
     [ "PIOS_WDG_REGISTER", "group___sparky2.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
     [ "RS_ECC_NPARITY", "group___sparky2.html#ga75691040c0909ea4c06cd3d87f3f01b2", null ],
     [ "SPARKY2_V2_0", "group___sparky2.html#ga8cf509525c6f0e6c2b2a88f9a4cc34d7", null ],
+    [ "STABILIZATION_LQG", "group___sparky2.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "VREF_PLUS", "group___sparky2.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "get_servo_cfg", "group___sparky2.html#ga77a4d80816a920a71e6ab8700b3e92cb", null ],
     [ "get_usart_rcvr_cfg", "group___sparky2.html#gaa363a58e3ee9c224103a8bf63b844d67", null ],

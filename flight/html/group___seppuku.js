@@ -95,6 +95,7 @@ var group___seppuku =
     [ "PIOS_VIDEO_TIM4_COUNTER", "group___seppuku.html#ga52804fcdee0d6927e4c5f45fc74d8b48", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___seppuku.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___seppuku.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___seppuku.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___seppuku.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "SYSTEMMOD_RGBLED_VIDEO_HACK", "group___seppuku.html#ga8ff5d57d64df909a2e57a54fca3e4d5f", null ],
     [ "VREF_PLUS", "group___seppuku.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],

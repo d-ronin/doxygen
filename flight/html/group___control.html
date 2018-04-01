@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -416,7 +416,9 @@ Variables</h2></td></tr>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_RATE      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_RATE)       &amp;&amp; \</div>
 <div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_AXISLOCK  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK)       &amp;&amp; \</div>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_WEAKLEVELING      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_WEAKLEVELING)       &amp;&amp; \</div>
-<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)      \</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)      &amp;&amp;\</div>
+<div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_LQG  == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_LQG)      &amp;&amp;\</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION1SETTINGS_ATTITUDELQG  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDELQG)      \</div>
 <div class="line">)</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00049">49</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
@@ -438,10 +440,12 @@ Variables</h2></td></tr>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_RATE      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_RATE)      &amp;&amp; \</div>
 <div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_AXISLOCK  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK)       &amp;&amp; \</div>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_WEAKLEVELING      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_WEAKLEVELING)       &amp;&amp; \</div>
-<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)     \</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)     &amp;&amp;\</div>
+<div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_LQG  == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_LQG)     &amp;&amp;\</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION2SETTINGS_ATTITUDELQG  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDELQG)     \</div>
 <div class="line">)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00058">58</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00060">60</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
 
 </div>
 </div>
@@ -460,10 +464,12 @@ Variables</h2></td></tr>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_RATE      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_RATE)      &amp;&amp; \</div>
 <div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_AXISLOCK  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_AXISLOCK)       &amp;&amp; \</div>
 <div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_WEAKLEVELING      == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_WEAKLEVELING)       &amp;&amp; \</div>
-<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)     \</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_ATTITUDE  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDE)     &amp;&amp;\</div>
+<div class="line">((int)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_LQG  == (<span class="keywordtype">int</span>)STABILIZATIONDESIRED_STABILIZATIONMODE_LQG)     &amp;&amp;\</div>
+<div class="line">((<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_STABILIZATION3SETTINGS_ATTITUDELQG  == (int)STABILIZATIONDESIRED_STABILIZATIONMODE_ATTITUDELQG)     \</div>
 <div class="line">)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00067">67</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00071">71</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +489,7 @@ Variables</h2></td></tr>
 <div class="line">( (<span class="keywordtype">int</span>)MANUALCONTROLCOMMAND_CHANNEL_NUMELEM == (int)MANUALCONTROLSETTINGS_CHANNELMAX_NUMELEM ) &amp;&amp; \</div>
 <div class="line">( (int)MANUALCONTROLCOMMAND_CHANNEL_NUMELEM == (<span class="keywordtype">int</span>)MANUALCONTROLSETTINGS_CHANNELNEUTRAL_NUMELEM ) )</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00090">90</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00096">96</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +516,7 @@ Variables</h2></td></tr>
 <div class="line">( (int)MANUALCONTROLSETTINGS_FLIGHTMODEPOSITION_RETURNTOHOME == (<span class="keywordtype">int</span>) FLIGHTSTATUS_FLIGHTMODE_RETURNTOHOME) \</div>
 <div class="line">)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00076">76</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00082">82</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +602,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00103">103</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8h_source.html#l00109">109</a> of file <a class="el" href="transmitter__control_8h_source.html">transmitter_control.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +644,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00697">697</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00701">701</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -777,7 +783,7 @@ Variables</h2></td></tr>
 
 <p>Apply deadband to Roll/Pitch/Yaw channels. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01281">1281</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01302">1302</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -820,7 +826,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Check sticks to determine if they are in the arming position </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00603">603</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00607">607</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -872,7 +878,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00705">705</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00709">709</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -943,7 +949,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00666">666</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00670">670</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -986,7 +992,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Check sticks to determine if they are in the disarmed position </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00639">639</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00643">643</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1593,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00742">742</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00746">746</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1612,7 +1618,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00701">701</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00705">705</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1638,7 +1644,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00858">858</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00862">862</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1705,7 +1711,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00994">994</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00998">998</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1748,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Convert channel from servo pulse duration (microseconds) to scaled -1/+1 range. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01195">1195</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01216">1216</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1769,7 +1775,7 @@ Variables</h2></td></tr>
 
 <p>Determine which of N positions the flight mode switch is in and set flight mode accordingly. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00844">844</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00848">848</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1795,7 +1801,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01178">1178</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01199">1199</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1828,7 +1834,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01303">1303</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01324">1324</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1976,7 +1982,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01228">1228</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01249">1249</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -1996,7 +2002,7 @@ Variables</h2></td></tr>
 <p>Query what the flight mode <em>would</em> be if this is selected. </p>
 <p>Determine which of N positions the flight mode switch is in but do not set it. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00590">590</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00594">594</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2016,7 +2022,7 @@ Variables</h2></td></tr>
 <p>Get any control events. </p>
 <p>Get the control &amp; arming status. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00584">584</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00588">588</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2121,7 +2127,7 @@ Variables</h2></td></tr>
 
 <p>In stabilization mode, set stabilization desired. </p>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01033">1033</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01039">1039</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2147,7 +2153,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00942">942</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00946">946</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2183,7 +2189,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00887">887</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00891">891</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2225,7 +2231,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00880">880</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00884">884</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2270,7 +2276,7 @@ Variables</h2></td></tr>
 <p>Determine if the manual input value is within acceptable limits. </p>
 <dl class="section return"><dt>Returns</dt><dd>return TRUE if so, otherwise return FALSE </dd></dl>
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01239">1239</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l01260">1260</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>
@@ -2549,7 +2555,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00699">699</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
+<p>Definition at line <a class="el" href="transmitter__control_8c_source.html#l00703">703</a> of file <a class="el" href="transmitter__control_8c_source.html">transmitter_control.c</a>.</p>
 
 </div>
 </div>

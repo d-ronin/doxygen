@@ -34,6 +34,7 @@ var targets_2seppuku_2fw_2pios__config_8h =
     [ "PIOS_VIDEO_INPUT_FILTER", "targets_2seppuku_2fw_2pios__config_8h.html#ga2fbcb9de63a7854c4e8fc3c6c474455a", null ],
     [ "PIOS_VIDEO_SPLITBUFFER", "targets_2seppuku_2fw_2pios__config_8h.html#gad5cf9eb7ddd2ec621eba2cb43828557a", null ],
     [ "PIOS_VIDEO_TIM4_COUNTER", "targets_2seppuku_2fw_2pios__config_8h.html#ga52804fcdee0d6927e4c5f45fc74d8b48", null ],
+    [ "STABILIZATION_LQG", "targets_2seppuku_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "targets_2seppuku_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "SYSTEMMOD_RGBLED_VIDEO_HACK", "targets_2seppuku_2fw_2pios__config_8h.html#ga8ff5d57d64df909a2e57a54fca3e4d5f", null ]
 ];

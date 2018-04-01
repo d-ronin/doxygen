@@ -31,6 +31,13 @@ var searchData=
   ['rssi_5fupdate',['RSSI_update',['../group___char_o_s_d.html#gabe1e5ec56736cab69b039fa8089ef58e',1,'panel.c']]],
   ['rssiflag_5fupdate',['RSSIFLAG_update',['../group___char_o_s_d.html#ga118e92f4ffa77715471b477d7f770ec8',1,'panel.c']]],
   ['rssitype_5fto_5fchannelgroup',['rssitype_to_channelgroup',['../group___control.html#ga73eb0a5c9401e151b5fd0a3003ce45dd',1,'transmitter_control.c']]],
+  ['rtkf_5fcalculate_5fcovariance_5f3x3',['rtkf_calculate_covariance_3x3',['../group___flight_math.html#ga1ad6e702c34b118d4f9db7eb6d445bc2',1,'lqg.c']]],
+  ['rtkf_5fcreate',['rtkf_create',['../group___flight_math.html#ga7e9d482db29da35ebe8c2c78b7e58278',1,'lqg.c']]],
+  ['rtkf_5finitialize_5fmatrices_5fint',['rtkf_initialize_matrices_int',['../group___flight_math.html#gacaead781b2123d17bb02d52a973dec3f',1,'lqg.c']]],
+  ['rtkf_5fis_5fsolved',['rtkf_is_solved',['../group___flight_math.html#gae8cceae24d23efcb4cb2a0ca4a854972',1,'lqg.c']]],
+  ['rtkf_5fpredict_5faxis',['rtkf_predict_axis',['../group___flight_math.html#ga05efb217998562804d47e5e23d6cc18a',1,'lqg.c']]],
+  ['rtkf_5fprediction_5fstep',['rtkf_prediction_step',['../group___flight_math.html#ga9c047ca34710994dcd8fa96479580b9f',1,'lqg.c']]],
+  ['rtkf_5fstabilize_5fcovariance',['rtkf_stabilize_covariance',['../group___flight_math.html#ga7782671ecc5f2f9656c3ef3c88237fd4',1,'lqg.c']]],
   ['rungekutta',['RungeKutta',['../group___i_n_s_g_p_s.html#gac5eaabdd6d05ef0667c934d4ef59eafa',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps14state.c'],['../group___libraries.html#ga46ea4d984cf502eab4575602fcba7721',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps13state.c']]],
   ['rv2rot',['Rv2Rot',['../group___flight_math.html#ga43ed3db7237f03a6488c8dd7b987b1bd',1,'coordinate_conversions.c']]]
 ];

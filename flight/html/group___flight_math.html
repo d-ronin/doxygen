@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -120,6 +120,12 @@ Files</h2></td></tr>
 <tr class="memitem:coordinate__conversions_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coordinate__conversions_8h.html">coordinate_conversions.h</a></td></tr>
 <tr class="memdesc:coordinate__conversions_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for Coordinate conversions library in <a class="el" href="coordinate__conversions_8c.html" title="General conversions with different coordinate systems. ">coordinate_conversions.c</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:lqg_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lqg_8c.html">lqg.c</a></td></tr>
+<tr class="memdesc:lqg_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LQG Control algorithm. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:lqg_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lqg_8h.html">lqg.h</a></td></tr>
+<tr class="memdesc:lqg_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">LQG Control algorithm. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pid_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html">pid.c</a></td></tr>
 <tr class="memdesc:pid_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID Control algorithms. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +143,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlpfilter__state.html">lpfilter_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtkf__state.html">rtkf_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlqr__state.html">lqr_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlqg__state.html">lqg_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpid__deadband.html">pid_deadband</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpid.html">pid</a></td></tr>
@@ -146,6 +158,82 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga2a6adfb867e0b12469adf0052f333986"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga2a6adfb867e0b12469adf0052f333986">MAX_FILTER_WIDTH</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ga2a6adfb867e0b12469adf0052f333986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aecda96d7c71118c7907b674490a3e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga7aecda96d7c71118c7907b674490a3e6">RTKF_SOLUTION_LIMIT</a>&#160;&#160;&#160;150</td></tr>
+<tr class="separator:ga7aecda96d7c71118c7907b674490a3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58f13c75497f1761e13cbf39acf83abc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga58f13c75497f1761e13cbf39acf83abc">LQR_SOLUTION_LIMIT</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:ga58f13c75497f1761e13cbf39acf83abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacea7ad10699d00bfb1215301dd1d6c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gacea7ad10699d00bfb1215301dd1d6c39">P00</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][0]</td></tr>
+<tr class="separator:gacea7ad10699d00bfb1215301dd1d6c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bb9f89248afa8d7e5a821fd459b085f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga5bb9f89248afa8d7e5a821fd459b085f">P10</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][0]</td></tr>
+<tr class="separator:ga5bb9f89248afa8d7e5a821fd459b085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33f788605a598e63ac41746fa80a2748"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga33f788605a598e63ac41746fa80a2748">P20</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][0]</td></tr>
+<tr class="separator:ga33f788605a598e63ac41746fa80a2748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bf72b9e10032d0e1ac2a371bcec73d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga4bf72b9e10032d0e1ac2a371bcec73d5">P01</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][1]</td></tr>
+<tr class="separator:ga4bf72b9e10032d0e1ac2a371bcec73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca6db006bc37d2b337fca225a79856c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaca6db006bc37d2b337fca225a79856c8">P11</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][1]</td></tr>
+<tr class="separator:gaca6db006bc37d2b337fca225a79856c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga570de0df41df22c97e76c020be10ebe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga570de0df41df22c97e76c020be10ebe5">P21</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][1]</td></tr>
+<tr class="separator:ga570de0df41df22c97e76c020be10ebe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e90f508a7fea35178f4e797316bea02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga1e90f508a7fea35178f4e797316bea02">P02</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][2]</td></tr>
+<tr class="separator:ga1e90f508a7fea35178f4e797316bea02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20c70bba8105b63590b5a49d99f563b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga20c70bba8105b63590b5a49d99f563b5">P12</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][2]</td></tr>
+<tr class="separator:ga20c70bba8105b63590b5a49d99f563b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad2e9e6463865ce4ee5c0fdb487ae564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaad2e9e6463865ce4ee5c0fdb487ae564">P22</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][2]</td></tr>
+<tr class="separator:gaad2e9e6463865ce4ee5c0fdb487ae564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29ab8f304572bfb421e3f7666da0fe4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga29ab8f304572bfb421e3f7666da0fe4d">A00</a>&#160;&#160;&#160;A[0][0]</td></tr>
+<tr class="separator:ga29ab8f304572bfb421e3f7666da0fe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c8a71816927936216695bafcec4a75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaa9c8a71816927936216695bafcec4a75">A10</a>&#160;&#160;&#160;A[1][0]</td></tr>
+<tr class="separator:gaa9c8a71816927936216695bafcec4a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f72c217c2cac6efbfe84fbb41afb298"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga0f72c217c2cac6efbfe84fbb41afb298">A20</a>&#160;&#160;&#160;A[2][0]</td></tr>
+<tr class="separator:ga0f72c217c2cac6efbfe84fbb41afb298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga105b3dbbda7ff665ef1369a7ea42f29d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga105b3dbbda7ff665ef1369a7ea42f29d">A01</a>&#160;&#160;&#160;A[0][1]</td></tr>
+<tr class="separator:ga105b3dbbda7ff665ef1369a7ea42f29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8394a82104d1917c30c5e017ccf6176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaa8394a82104d1917c30c5e017ccf6176">A11</a>&#160;&#160;&#160;A[1][1]</td></tr>
+<tr class="separator:gaa8394a82104d1917c30c5e017ccf6176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa464bb5d73d5326f59cfe1e6d2b38a2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaa464bb5d73d5326f59cfe1e6d2b38a2b">A21</a>&#160;&#160;&#160;A[2][1]</td></tr>
+<tr class="separator:gaa464bb5d73d5326f59cfe1e6d2b38a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5663784dabb95a65df02aa05f514f61a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga5663784dabb95a65df02aa05f514f61a">A02</a>&#160;&#160;&#160;A[0][2]</td></tr>
+<tr class="separator:ga5663784dabb95a65df02aa05f514f61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84e5fa24b6bb47717a091f89de79b601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga84e5fa24b6bb47717a091f89de79b601">A12</a>&#160;&#160;&#160;A[1][2]</td></tr>
+<tr class="separator:ga84e5fa24b6bb47717a091f89de79b601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69da8b81ea4b9ca7dd631a4320794884"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga69da8b81ea4b9ca7dd631a4320794884">A22</a>&#160;&#160;&#160;A[2][2]</td></tr>
+<tr class="separator:ga69da8b81ea4b9ca7dd631a4320794884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa070611aceceab6976d41423e092da9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaa070611aceceab6976d41423e092da9f">Q00</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][0]</td></tr>
+<tr class="separator:gaa070611aceceab6976d41423e092da9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga693e3a9063a1e7582e682ffd4fe06f46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga693e3a9063a1e7582e682ffd4fe06f46">Q10</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][0]</td></tr>
+<tr class="separator:ga693e3a9063a1e7582e682ffd4fe06f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81b513e8af18f9217399d0806cbdfb0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga81b513e8af18f9217399d0806cbdfb0e">Q20</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][0]</td></tr>
+<tr class="separator:ga81b513e8af18f9217399d0806cbdfb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada4630d1056a70b2e8e0b5efa86f3c5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gada4630d1056a70b2e8e0b5efa86f3c5e">Q01</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][1]</td></tr>
+<tr class="separator:gada4630d1056a70b2e8e0b5efa86f3c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2667934cffb93b5b656fbb9b11495d52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga2667934cffb93b5b656fbb9b11495d52">Q11</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][1]</td></tr>
+<tr class="separator:ga2667934cffb93b5b656fbb9b11495d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99bb24769f4834ade22b53029ef59fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga99bb24769f4834ade22b53029ef59fea">Q21</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][1]</td></tr>
+<tr class="separator:ga99bb24769f4834ade22b53029ef59fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68e8c3b92d1880e54905caf103e93236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga68e8c3b92d1880e54905caf103e93236">Q02</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][2]</td></tr>
+<tr class="separator:ga68e8c3b92d1880e54905caf103e93236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa17f3fc65627eb4768c42c6b3c0e45c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaa17f3fc65627eb4768c42c6b3c0e45c2">Q12</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][2]</td></tr>
+<tr class="separator:gaa17f3fc65627eb4768c42c6b3c0e45c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae92799bea6457224d138516adeeb30c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gae92799bea6457224d138516adeeb30c1">Q22</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][2]</td></tr>
+<tr class="separator:gae92799bea6457224d138516adeeb30c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a03ef52aa4926d1d75cb647ac768622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga8a03ef52aa4926d1d75cb647ac768622">B0</a>&#160;&#160;&#160;B[0]</td></tr>
+<tr class="separator:ga8a03ef52aa4926d1d75cb647ac768622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b21d6a6a4573b4997b1f04b01cd4efb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga7b21d6a6a4573b4997b1f04b01cd4efb">B1</a>&#160;&#160;&#160;B[1]</td></tr>
+<tr class="separator:ga7b21d6a6a4573b4997b1f04b01cd4efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6945d50f798e1fde624d70c74457090e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga6945d50f798e1fde624d70c74457090e">B2</a>&#160;&#160;&#160;B[2]</td></tr>
+<tr class="separator:ga6945d50f798e1fde624d70c74457090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8476f4a8de2c191433342c9ce896986a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga8476f4a8de2c191433342c9ce896986a">X0</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[0]</td></tr>
+<tr class="separator:ga8476f4a8de2c191433342c9ce896986a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1964818ccd90a6173ea48cecb652feeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga1964818ccd90a6173ea48cecb652feeb">X1</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[1]</td></tr>
+<tr class="separator:ga1964818ccd90a6173ea48cecb652feeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79ae03a0214cb30e57b9e8835f2a0019"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga79ae03a0214cb30e57b9e8835f2a0019">X2</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[2]</td></tr>
+<tr class="separator:ga79ae03a0214cb30e57b9e8835f2a0019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga307c72605e3713972b4f4fb2d53ea20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga307c72605e3713972b4f4fb2d53ea20e">K0</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[0]</td></tr>
+<tr class="separator:ga307c72605e3713972b4f4fb2d53ea20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadecb1977e30da2f62766f1fcb8b1f95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaadecb1977e30da2f62766f1fcb8b1f95">K1</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[1]</td></tr>
+<tr class="separator:gaadecb1977e30da2f62766f1fcb8b1f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6d0e745059aded06587e4b6933bca0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gab6d0e745059aded06587e4b6933bca0b">K2</a>&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[2]</td></tr>
+<tr class="separator:gab6d0e745059aded06587e4b6933bca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(a, b)&#160;&#160;&#160;({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a &gt; _b ? _a : _b; })</td></tr>
 <tr class="separator:gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a, b)&#160;&#160;&#160;({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a &lt; _b ? _a : _b; })</td></tr>
@@ -178,6 +266,12 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga3562b89ca3d1c3b285bbb5662380ec03"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlpfilter__state.html">lpfilter_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga3562b89ca3d1c3b285bbb5662380ec03">lpfilter_state_t</a></td></tr>
 <tr class="separator:ga3562b89ca3d1c3b285bbb5662380ec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga506bde267554d0f719127bceeeda98d0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrtkf__state.html">rtkf_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a></td></tr>
+<tr class="separator:ga506bde267554d0f719127bceeeda98d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24ec3d5cf383d82d4735d6efb729556e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlqr__state.html">lqr_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a></td></tr>
+<tr class="separator:ga24ec3d5cf383d82d4735d6efb729556e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabddd39dfffa3ddf892e56c4957abe71e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlqg__state.html">lqg_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a></td></tr>
+<tr class="separator:gabddd39dfffa3ddf892e56c4957abe71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -223,6 +317,52 @@ Functions</h2></td></tr>
 <tr class="separator:gaf3ad02d229b1a43feb6bc193f82827b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1d279504b7cb05cc2f721854395489f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gad1d279504b7cb05cc2f721854395489f">lpfilter_run</a> (<a class="el" href="group___flight_math.html#ga3562b89ca3d1c3b285bbb5662380ec03">lpfilter_state_t</a> filter, float *sample)</td></tr>
 <tr class="separator:gad1d279504b7cb05cc2f721854395489f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ad6e702c34b118d4f9db7eb6d445bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga1ad6e702c34b118d4f9db7eb6d445bc2">rtkf_calculate_covariance_3x3</a> (float A[3][3], float <a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[3], float <a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[3][3], float <a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[3][3], float <a class="el" href="group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a>)</td></tr>
+<tr class="separator:ga1ad6e702c34b118d4f9db7eb6d445bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7782671ecc5f2f9656c3ef3c88237fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga7782671ecc5f2f9656c3ef3c88237fd4">rtkf_stabilize_covariance</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf, int iterations)</td></tr>
+<tr class="separator:ga7782671ecc5f2f9656c3ef3c88237fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c047ca34710994dcd8fa96479580b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga9c047ca34710994dcd8fa96479580b9f">rtkf_prediction_step</a> (float A[3][3], float B[3], float <a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[3], float <a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[3], float signal, float input)</td></tr>
+<tr class="separator:ga9c047ca34710994dcd8fa96479580b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05efb217998562804d47e5e23d6cc18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga05efb217998562804d47e5e23d6cc18a">rtkf_predict_axis</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf, float signal, float input, float Xout[3])</td></tr>
+<tr class="separator:ga05efb217998562804d47e5e23d6cc18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacaead781b2123d17bb02d52a973dec3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gacaead781b2123d17bb02d52a973dec3f">rtkf_initialize_matrices_int</a> (float A[3][3], float B[3], float beta, float tau, float Ts)</td></tr>
+<tr class="separator:gacaead781b2123d17bb02d52a973dec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e9d482db29da35ebe8c2c78b7e58278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga7e9d482db29da35ebe8c2c78b7e58278">rtkf_create</a> (float beta, float tau, float Ts, float <a class="el" href="group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a>, float q1, float q2, float q3, float biaslim)</td></tr>
+<tr class="separator:ga7e9d482db29da35ebe8c2c78b7e58278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8cceae24d23efcb4cb2a0ca4a854972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gae8cceae24d23efcb4cb2a0ca4a854972">rtkf_is_solved</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf)</td></tr>
+<tr class="separator:gae8cceae24d23efcb4cb2a0ca4a854972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ec0dc27c9b22e24e3402e68b981e311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga0ec0dc27c9b22e24e3402e68b981e311">lqr_calculate_covariance_2x2</a> (float A[2][2], float B[2], float <a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][2], float <a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][2])</td></tr>
+<tr class="separator:ga0ec0dc27c9b22e24e3402e68b981e311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f5682e60984701ee8bb04ac6627855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga39f5682e60984701ee8bb04ac6627855">lqr_calculate_gains_int</a> (float A[2][2], float B[2], float <a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][2], float <a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[2])</td></tr>
+<tr class="separator:ga39f5682e60984701ee8bb04ac6627855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa8a4d4c5867f0c1079530e359dd9d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gafa8a4d4c5867f0c1079530e359dd9d82">lqr_stabilize_covariance</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, int iterations)</td></tr>
+<tr class="separator:gafa8a4d4c5867f0c1079530e359dd9d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4de1a48d5eda65f9f4408c83a47ccb12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga4de1a48d5eda65f9f4408c83a47ccb12">lqr_is_solved</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr)</td></tr>
+<tr class="separator:ga4de1a48d5eda65f9f4408c83a47ccb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85e57012ad2344c917e68e7152fcba9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga85e57012ad2344c917e68e7152fcba9c">lqr_initialize_matrices_int</a> (float A[2][2], float B[2], float beta, float tau, float Ts)</td></tr>
+<tr class="separator:ga85e57012ad2344c917e68e7152fcba9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff1d205d8a084b068b0478b24288425f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gaff1d205d8a084b068b0478b24288425f">lqr_create</a> (float beta, float tau, float Ts, float q1, float q2)</td></tr>
+<tr class="separator:gaff1d205d8a084b068b0478b24288425f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4af82421cc98549fe739d7a8464a438a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga4af82421cc98549fe739d7a8464a438a">lqr_update</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, float q1, float q2)</td></tr>
+<tr class="separator:ga4af82421cc98549fe739d7a8464a438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38d510514079e13279aeb8231945d971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga38d510514079e13279aeb8231945d971">lqr_get_gains</a> (<a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr, float <a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[2])</td></tr>
+<tr class="separator:ga38d510514079e13279aeb8231945d971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga285430f44ab2578fa8b890a051a0ce94"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga285430f44ab2578fa8b890a051a0ce94">lqg_controller</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg, float signal, float setpoint)</td></tr>
+<tr class="separator:ga285430f44ab2578fa8b890a051a0ce94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1eb6dd704623f47aef263a9cbf55561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gac1eb6dd704623f47aef263a9cbf55561">lqg_create</a> (<a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf, <a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr)</td></tr>
+<tr class="separator:gac1eb6dd704623f47aef263a9cbf55561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga502766f4c789280a257096ed8aff3c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga502766f4c789280a257096ed8aff3c3b">lqg_get_rtkf_state</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg, float *<a class="el" href="flyingpio__messages_8h.html#a1c9c70c1732a780f440d526a6b7ef271">rate</a>, float *torque, float *bias)</td></tr>
+<tr class="separator:ga502766f4c789280a257096ed8aff3c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga536a61d891026a08fcc40c855d1e21a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga536a61d891026a08fcc40c855d1e21a7">lqg_set_x0</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg, float x0)</td></tr>
+<tr class="separator:ga536a61d891026a08fcc40c855d1e21a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49e1cb9d119c0af92c6a35839b00aed6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga49e1cb9d119c0af92c6a35839b00aed6">lqg_is_solved</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
+<tr class="separator:ga49e1cb9d119c0af92c6a35839b00aed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c51a43685fb151a21bb055a4d3fcef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga18c51a43685fb151a21bb055a4d3fcef">lqg_get_rtkf</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
+<tr class="separator:ga18c51a43685fb151a21bb055a4d3fcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8af68f18f918749f0badcfe9c39aeaf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga8af68f18f918749f0badcfe9c39aeaf1">lqg_get_lqr</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg)</td></tr>
+<tr class="separator:ga8af68f18f918749f0badcfe9c39aeaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e9b30062b984f6d99412200fa7f8f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga97e9b30062b984f6d99412200fa7f8f8">lqg_run_covariance</a> (<a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg, int iter)</td></tr>
+<tr class="separator:ga97e9b30062b984f6d99412200fa7f8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7fa5c4383337339fe17371cd78d7264"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gae7fa5c4383337339fe17371cd78d7264">bound_min_max</a> (float val, float <a class="el" href="flyingpio__messages_8h.html#a1a1f4624f66ab0b2eb0b98316514c369">min</a>, float <a class="el" href="flyingpio__messages_8h.html#ac66b569507cc273bbf83ce5dd5f70e84">max</a>)</td></tr>
 <tr class="memdesc:gae7fa5c4383337339fe17371cd78d7264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bound input value between min and max.  <a href="#gae7fa5c4383337339fe17371cd78d7264">More...</a><br/></td></tr>
 <tr class="separator:gae7fa5c4383337339fe17371cd78d7264"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,6 +495,174 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga29ab8f304572bfb421e3f7666da0fe4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A00&#160;&#160;&#160;A[0][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00063">63</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga105b3dbbda7ff665ef1369a7ea42f29d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A01&#160;&#160;&#160;A[0][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00066">66</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5663784dabb95a65df02aa05f514f61a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A02&#160;&#160;&#160;A[0][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00069">69</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa9c8a71816927936216695bafcec4a75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A10&#160;&#160;&#160;A[1][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00064">64</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa8394a82104d1917c30c5e017ccf6176"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A11&#160;&#160;&#160;A[1][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00067">67</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga84e5fa24b6bb47717a091f89de79b601"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A12&#160;&#160;&#160;A[1][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00070">70</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0f72c217c2cac6efbfe84fbb41afb298"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A20&#160;&#160;&#160;A[2][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00065">65</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa464bb5d73d5326f59cfe1e6d2b38a2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A21&#160;&#160;&#160;A[2][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00068">68</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga69da8b81ea4b9ca7dd631a4320794884"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A22&#160;&#160;&#160;A[2][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00071">71</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8a03ef52aa4926d1d75cb647ac768622"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B0&#160;&#160;&#160;B[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00083">83</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7b21d6a6a4573b4997b1f04b01cd4efb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B1&#160;&#160;&#160;B[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00084">84</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6945d50f798e1fde624d70c74457090e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B2&#160;&#160;&#160;B[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00085">85</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga676fea0678945be0b1da32705b938e1a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -380,6 +688,62 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="misc__math_8h_source.html#l00577">577</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga307c72605e3713972b4f4fb2d53ea20e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define K0&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00091">91</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaadecb1977e30da2f62766f1fcb8b1f95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define K1&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00092">92</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab6d0e745059aded06587e4b6933bca0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define K2&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga1a9a9b26f7cab8703fc488c6cc258490">K</a>[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00093">93</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga58f13c75497f1761e13cbf39acf83abc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LQR_SOLUTION_LIMIT&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00050">50</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
 
 </div>
 </div>
@@ -728,6 +1092,132 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gacea7ad10699d00bfb1215301dd1d6c39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P00&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00053">53</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4bf72b9e10032d0e1ac2a371bcec73d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P01&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00056">56</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1e90f508a7fea35178f4e797316bea02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P02&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[0][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00059">59</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5bb9f89248afa8d7e5a821fd459b085f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P10&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00054">54</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaca6db006bc37d2b337fca225a79856c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P11&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00057">57</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga20c70bba8105b63590b5a49d99f563b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P12&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[1][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00060">60</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga33f788605a598e63ac41746fa80a2748"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P20&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00055">55</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga570de0df41df22c97e76c020be10ebe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P21&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00058">58</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaad2e9e6463865ce4ee5c0fdb487ae564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P22&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#gaa4dd4832559078fffbbe0afa316c216c">P</a>[2][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00061">61</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga16f6be8c451da8978e1885d0924e0be9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -753,6 +1243,146 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="misc__math_8h_source.html#l00404">404</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa070611aceceab6976d41423e092da9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q00&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00073">73</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gada4630d1056a70b2e8e0b5efa86f3c5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q01&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00076">76</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga68e8c3b92d1880e54905caf103e93236"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q02&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[0][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00079">79</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga693e3a9063a1e7582e682ffd4fe06f46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q10&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00074">74</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2667934cffb93b5b656fbb9b11495d52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q11&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00077">77</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa17f3fc65627eb4768c42c6b3c0e45c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q12&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[1][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00080">80</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga81b513e8af18f9217399d0806cbdfb0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q20&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00075">75</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga99bb24769f4834ade22b53029ef59fea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q21&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00078">78</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae92799bea6457224d138516adeeb30c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Q22&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga9403e530c40ea2ed78fba00336d98645">Q</a>[2][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00081">81</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7aecda96d7c71118c7907b674490a3e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RTKF_SOLUTION_LIMIT&#160;&#160;&#160;150</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00049">49</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
 
 </div>
 </div>
@@ -790,6 +1420,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga8476f4a8de2c191433342c9ce896986a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X0&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00087">87</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1964818ccd90a6173ea48cecb652feeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X1&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00088">88</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga79ae03a0214cb30e57b9e8835f2a0019"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X2&#160;&#160;&#160;<a class="el" href="group___i_n_s_g_p_s.html#ga878335db1805364cefebddb5eccfc282">X</a>[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00089">89</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ga3562b89ca3d1c3b285bbb5662380ec03"></a>
 <div class="memitem">
@@ -802,6 +1474,48 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lpfilter_8h_source.html#l00033">33</a> of file <a class="el" href="lpfilter_8h_source.html">lpfilter.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabddd39dfffa3ddf892e56c4957abe71e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structlqg__state.html">lqg_state</a>* <a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8h_source.html#l00039">39</a> of file <a class="el" href="lqg_8h_source.html">lqg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga24ec3d5cf383d82d4735d6efb729556e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structlqr__state.html">lqr_state</a>* <a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8h_source.html#l00037">37</a> of file <a class="el" href="lqg_8h_source.html">lqg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga506bde267554d0f719127bceeeda98d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structrtkf__state.html">rtkf_state</a>* <a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8h_source.html#l00036">36</a> of file <a class="el" href="lqg_8h_source.html">lqg.h</a>.</p>
 
 </div>
 </div>
@@ -1613,6 +2327,498 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lpfilter_8c_source.html#l00177">177</a> of file <a class="el" href="lpfilter_8c_source.html">lpfilter.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga285430f44ab2578fa8b890a051a0ce94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lqg_controller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>setpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00441">441</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac1eb6dd704623f47aef263a9cbf55561"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a> lqg_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td>
+          <td class="paramname"><em>rtkf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td>
+          <td class="paramname"><em>lqr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00460">460</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8af68f18f918749f0badcfe9c39aeaf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqg_get_lqr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00499">499</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga18c51a43685fb151a21bb055a4d3fcef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> lqg_get_rtkf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00494">494</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga502766f4c789280a257096ed8aff3c3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqg_get_rtkf_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>torque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00475">475</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga49e1cb9d119c0af92c6a35839b00aed6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lqg_is_solved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00489">489</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga97e9b30062b984f6d99412200fa7f8f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqg_run_covariance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00504">504</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga536a61d891026a08fcc40c855d1e21a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqg_set_x0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e">lqg_t</a>&#160;</td>
+          <td class="paramname"><em>lqg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00482">482</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0ec0dc27c9b22e24e3402e68b981e311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_calculate_covariance_2x2 </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[2][2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>B</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>P</em>[2][2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Q</em>[2][2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00255">255</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga39f5682e60984701ee8bb04ac6627855"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_calculate_gains_int </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[2][2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>B</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>P</em>[2][2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>K</em>[2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00316">316</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaff1d205d8a084b068b0478b24288425f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a> lqr_create </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00387">387</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga38d510514079e13279aeb8231945d971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_get_gains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td>
+          <td class="paramname"><em>lqr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>K</em>[2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00412">412</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga85e57012ad2344c917e68e7152fcba9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_initialize_matrices_int </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[2][2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>B</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Ts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00369">369</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4de1a48d5eda65f9f4408c83a47ccb12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lqr_is_solved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td>
+          <td class="paramname"><em>lqr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00355">355</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafa8a4d4c5867f0c1079530e359dd9d82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_stabilize_covariance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td>
+          <td class="paramname"><em>lqr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00342">342</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4af82421cc98549fe739d7a8464a438a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lqr_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e">lqr_t</a>&#160;</td>
+          <td class="paramname"><em>lqr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00403">403</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
 
 </div>
 </div>
@@ -2913,6 +4119,300 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="coordinate__conversions_8c_source.html#l00108">108</a> of file <a class="el" href="coordinate__conversions_8c_source.html">coordinate_conversions.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1ad6e702c34b118d4f9db7eb6d445bc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtkf_calculate_covariance_3x3 </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>K</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>P</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Q</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00102">102</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7e9d482db29da35ebe8c2c78b7e58278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a> rtkf_create </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>biaslim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00229">229</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacaead781b2123d17bb02d52a973dec3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtkf_initialize_matrices_int </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>B</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Ts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00210">210</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae8cceae24d23efcb4cb2a0ca4a854972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rtkf_is_solved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td>
+          <td class="paramname"><em>rtkf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00245">245</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga05efb217998562804d47e5e23d6cc18a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtkf_predict_axis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td>
+          <td class="paramname"><em>rtkf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Xout</em>[3]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00188">188</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9c047ca34710994dcd8fa96479580b9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtkf_prediction_step </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>A</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>B</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>K</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>X</em>[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00174">174</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7782671ecc5f2f9656c3ef3c88237fd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rtkf_stabilize_covariance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___flight_math.html#ga506bde267554d0f719127bceeeda98d0">rtkf_t</a>&#160;</td>
+          <td class="paramname"><em>rtkf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lqg_8c_source.html#l00160">160</a> of file <a class="el" href="lqg_8c_source.html">lqg.c</a>.</p>
 
 </div>
 </div>

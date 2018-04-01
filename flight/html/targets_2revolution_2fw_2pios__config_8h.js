@@ -26,5 +26,6 @@ var targets_2revolution_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_WS2811", "targets_2revolution_2fw_2pios__config_8h.html#ga2989b6f1854d52ff08b9933bfb9b35fd", null ],
     [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2revolution_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
     [ "PIOS_TOLERATE_MISSING_SENSORS", "targets_2revolution_2fw_2pios__config_8h.html#ga245666dd976970e45363b17f9e55d5bf", null ],
+    [ "STABILIZATION_LQG", "targets_2revolution_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "targets_2revolution_2fw_2pios__config_8h.html#gaabf5c613fb366d3da49a87e7114a09e2", null ]
 ];

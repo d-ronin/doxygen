@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">066c854</span>
+   &#160;<span id="projectnumber">4dfba85</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -625,7 +625,7 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="comment">// Constants, to possibly go into a UAVO</span></div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> MIN_NORM_DIFFERENCE = 50;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> B2[3] = {0, 0, 0};</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="group___flight_math.html#ga6945d50f798e1fde624d70c74457090e">B2</a>[3] = {0, 0, 0};</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        MagBiasData magBias;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        MagBiasGet(&amp;magBias);</div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        }</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordtype">float</span> B1[3] = {mag-&gt;x, mag-&gt;y, mag-&gt;z};</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="group___flight_math.html#ga7b21d6a6a4573b4997b1f04b01cd4efb">B1</a>[3] = {mag-&gt;x, mag-&gt;y, mag-&gt;z};</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="keywordtype">float</span> norm_diff = sqrtf(powf(B2[0] - B1[0],2) + powf(B2[1] - B1[1],2) + powf(B2[2] - B1[2],2));</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">if</span> (norm_diff &gt; MIN_NORM_DIFFERENCE) {</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                <span class="keywordtype">float</span> norm_b1 = sqrtf(B1[0]*B1[0] + B1[1]*B1[1] + B1[2]*B1[2]);</div>
@@ -808,6 +808,7 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="ttc" id="group___stabilization_module_html_ga3e6e968c6bc5695cc2dc301c12a9f935"><div class="ttname"><a href="group___stabilization_module.html#ga3e6e968c6bc5695cc2dc301c12a9f935">REQUIRED_GOOD_CYCLES</a></div><div class="ttdeci">#define REQUIRED_GOOD_CYCLES</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00065">sensors.c:65</a></div></div>
 <div class="ttc" id="group___stabilization_module_html_ga4d659e6e41cb8a715b0462f75eb733f2"><div class="ttname"><a href="group___stabilization_module.html#ga4d659e6e41cb8a715b0462f75eb733f2">MAX_TIME_BETWEEN_VALID_MAG_DATAS_US</a></div><div class="ttdeci">#define MAX_TIME_BETWEEN_VALID_MAG_DATAS_US</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00067">sensors.c:67</a></div></div>
 <div class="ttc" id="group___flight_math_html_ga81a64437be6edb2654bfebcc14321964"><div class="ttname"><a href="group___flight_math.html#ga81a64437be6edb2654bfebcc14321964">RPY2Quaternion</a></div><div class="ttdeci">void RPY2Quaternion(const float rpy[3], float q[4])</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8c_source.html#l00108">coordinate_conversions.c:108</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga6945d50f798e1fde624d70c74457090e"><div class="ttname"><a href="group___flight_math.html#ga6945d50f798e1fde624d70c74457090e">B2</a></div><div class="ttdeci">#define B2</div><div class="ttdef"><b>Definition:</b> <a href="lqg_8c_source.html#l00085">lqg.c:85</a></div></div>
 <div class="ttc" id="group___stabilization_module_html_ga670dd870c2d79522f3686b1af18a02d7"><div class="ttname"><a href="group___stabilization_module.html#ga670dd870c2d79522f3686b1af18a02d7">gyro_coeff_y</a></div><div class="ttdeci">static float gyro_coeff_y[4]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00118">sensors.c:118</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ggadad1b67d985a6c9c150a70d23aac96a0a096fe67d0ebaf4f26e8d550217d57859">PIOS_SENSOR_RANGEFINDER</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00092">pios_sensors.h:92</a></div></div>
 <div class="ttc" id="group___i_n_s_g_p_s_html_ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7"><div class="ttname"><a href="group___i_n_s_g_p_s.html#ga06fb8e491fbcc3c8cbe00ccaa0aa1aa7">R</a></div><div class="ttdeci">float R[NUMV]</div><div class="ttdef"><b>Definition:</b> <a href="insgps14state_8c_source.html#l00067">insgps14state.c:67</a></div></div>
@@ -829,6 +830,7 @@ $(document).ready(function(){initNavTree('sensors_8c_source.html','');});
 <div class="ttc" id="group___stabilization_module_html_ga9ac885eb5f47362f09dc7585258027b3"><div class="ttname"><a href="group___stabilization_module.html#ga9ac885eb5f47362f09dc7585258027b3">mag_bias</a></div><div class="ttdeci">static float mag_bias[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00112">sensors.c:112</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_gaca4d8c0b343ce63582396c429244e028"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#gaca4d8c0b343ce63582396c429244e028">pios_sensor_rangefinder_data::range</a></div><div class="ttdeci">float range</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00071">pios_sensors.h:71</a></div></div>
 <div class="ttc" id="group___stabilization_module_html_ga0ce75f6556b56ffcfee6db75c310c8d8"><div class="ttname"><a href="group___stabilization_module.html#ga0ce75f6556b56ffcfee6db75c310c8d8">accel_bias</a></div><div class="ttdeci">static float accel_bias[3]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00114">sensors.c:114</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga7b21d6a6a4573b4997b1f04b01cd4efb"><div class="ttname"><a href="group___flight_math.html#ga7b21d6a6a4573b4997b1f04b01cd4efb">B1</a></div><div class="ttdeci">#define B1</div><div class="ttdef"><b>Definition:</b> <a href="lqg_8c_source.html#l00084">lqg.c:84</a></div></div>
 <div class="ttc" id="struct_rotation_html_ae1ce8bd8745c5c396f35ba042c0c4eab"><div class="ttname"><a href="struct_rotation.html#ae1ce8bd8745c5c396f35ba042c0c4eab">Rotation::pitch_D100</a></div><div class="ttdeci">int16_t pitch_D100</div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00029">pios_px4flow_priv.h:29</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_n_s_o_r_s_html_ga43ba219138a0c31669a1af1b45f7a7f6"><div class="ttname"><a href="group___p_i_o_s___s_e_n_s_o_r_s.html#ga43ba219138a0c31669a1af1b45f7a7f6">pios_sensor_baro_data::pressure</a></div><div class="ttdeci">float pressure</div><div class="ttdef"><b>Definition:</b> <a href="pios__sensors_8h_source.html#l00080">pios_sensors.h:80</a></div></div>
 <div class="ttc" id="group___stabilization_module_html_gad81934e91709c529c7a5966288d46301"><div class="ttname"><a href="group___stabilization_module.html#gad81934e91709c529c7a5966288d46301">gyro_coeff_x</a></div><div class="ttdeci">static float gyro_coeff_x[4]</div><div class="ttdef"><b>Definition:</b> <a href="sensors_8c_source.html#l00117">sensors.c:117</a></div></div>

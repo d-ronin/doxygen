@@ -90,6 +90,7 @@ var group___revo_mini =
     [ "PIOS_WATCHDOG_TIMEOUT", "group___revo_mini.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___revo_mini.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
     [ "RS_ECC_NPARITY", "group___revo_mini.html#ga75691040c0909ea4c06cd3d87f3f01b2", null ],
+    [ "STABILIZATION_LQG", "group___revo_mini.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "STM32_ADC_ADC1_DMA_IRQ_PRIORITY", "group___revo_mini.html#ga19080c8c395ae24df995fa57a2291465", null ],
     [ "STM32_ADC_ADC1_DMA_PRIORITY", "group___revo_mini.html#gad19de93466026d8b03a895cae792bce9", null ],
     [ "STM32_ADC_ADC1_DMA_STREAM", "group___revo_mini.html#ga5a1f7bc818507d43f4d6592bff2ad486", null ],

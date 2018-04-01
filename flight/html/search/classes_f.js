@@ -10,5 +10,6 @@ var searchData=
   ['rfm22b_5fstats',['rfm22b_stats',['../structrfm22b__stats.html',1,'']]],
   ['rnefromllatest',['RneFromLLATest',['../class_rne_from_l_l_a_test.html',1,'']]],
   ['rotation',['Rotation',['../struct_rotation.html',1,'']]],
-  ['rtc_5fcallback_5fentry',['rtc_callback_entry',['../structrtc__callback__entry.html',1,'']]]
+  ['rtc_5fcallback_5fentry',['rtc_callback_entry',['../structrtc__callback__entry.html',1,'']]],
+  ['rtkf_5fstate',['rtkf_state',['../structrtkf__state.html',1,'']]]
 ];

@@ -7,5 +7,6 @@ var sanitycheck_8c =
     [ "configuration_check", "sanitycheck_8c.html#gabcb80832a82e492c119a231984eba10a", null ],
     [ "DONT_BUILD_IF", "sanitycheck_8c.html#gabb4ee43ed017a2dc95ffa619e34e9cef", null ],
     [ "DONT_BUILD_IF", "sanitycheck_8c.html#ga377bdf29072c428603281201592be0a7", null ],
+    [ "lqg_sysident_check", "sanitycheck_8c.html#ga279b33822f3276cd85eefabb7c20c996", null ],
     [ "set_config_error", "sanitycheck_8c.html#gae62c697d4457674e78e13375fc1dabc2", null ]
 ];

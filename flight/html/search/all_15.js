@@ -10,7 +10,7 @@ var searchData=
   ['usb_20hid_20functions',['USB HID Functions',['../group___p_i_o_s___u_s_b___h_i_d.html',1,'']]],
   ['usb_20utility_20functions',['USB utility functions',['../group___p_i_o_s___u_s_b___u_t_i_l.html',1,'']]],
   ['usb_20glue_20code',['USB glue code',['../group___p_i_o_s___u_s_b_h_o_o_k.html',1,'']]],
-  ['u',['u',['../structat__measurement.html#a3a4f52090383fbf677bc56dbe649421a',1,'at_measurement']]],
+  ['u',['u',['../structlqr__state.html#a58aaaf468f6763ec5c3c989fcabe364e',1,'lqr_state::u()'],['../structat__measurement.html#a3a4f52090383fbf677bc56dbe649421a',1,'at_measurement::u()']]],
   ['u16_5fchars1',['U16_CHARS1',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga5ee5b688830f3ab08a8c0be1b2f14bcc',1,'pios_usb_board_data.c']]],
   ['u16_5fchars10',['U16_CHARS10',['../group___p_i_o_s___u_s_b___d_e_s_c.html#ga9b91b71143ea0688f959ace6323b3238',1,'pios_usb_board_data.c']]],
   ['u16_5fchars11',['U16_CHARS11',['../group___p_i_o_s___u_s_b___d_e_s_c.html#gaece082cbaab0e9e7ccfe84e46e479e6e',1,'pios_usb_board_data.c']]],

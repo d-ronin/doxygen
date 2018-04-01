@@ -77,6 +77,7 @@ var group___s_p_r_f3_e =
     [ "PIOS_USB_ENABLED", "group___s_p_r_f3_e.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___s_p_r_f3_e.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___s_p_r_f3_e.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___s_p_r_f3_e.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "STM32_ADC12PRES", "group___s_p_r_f3_e.html#ga53ddc8ca0ba8befeb086fbf9f1e529e0", null ],
     [ "STM32_ADC34PRES", "group___s_p_r_f3_e.html#gae8ffecb53d7e6d0986cbb875cd98e0e8", null ],
     [ "STM32_ADC_ADC12_CLOCK_MODE", "group___s_p_r_f3_e.html#ga0968c7cfcac38e436458339dc846291e", null ],

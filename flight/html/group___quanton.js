@@ -84,6 +84,7 @@ var group___quanton =
     [ "PIOS_USB_ENABLED", "group___quanton.html#gac6f2f934014b1b5a79f6a26cdd75e6ca", null ],
     [ "PIOS_WATCHDOG_TIMEOUT", "group___quanton.html#ga89e68cdd07ab84568fe168af24311299", null ],
     [ "PIOS_WDG_REGISTER", "group___quanton.html#ga359750ecdbec9fcd99d86d9b1cd11110", null ],
+    [ "STABILIZATION_LQG", "group___quanton.html#ga02110c152ec1a097f4ff145b650b6309", null ],
     [ "SYSTEMMOD_RGBLED_SUPPORT", "group___quanton.html#gaabf5c613fb366d3da49a87e7114a09e2", null ],
     [ "VREF_PLUS", "group___quanton.html#ga645df4566a90656d8b02ee4e63a54dfe", null ],
     [ "PIOS_Board_Init", "group___quanton.html#gabda03501745560ca9e546079e20bb392", null ],

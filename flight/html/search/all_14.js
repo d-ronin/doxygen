@@ -35,6 +35,7 @@ var searchData=
   ['taskmonitorqueryrunning',['TaskMonitorQueryRunning',['../group___libraries.html#ga2212575f7dbf4b2452fb7baa81b48115',1,'taskmonitor.c']]],
   ['taskmonitorremove',['TaskMonitorRemove',['../group___libraries.html#ga6c09782e470b26f4506a57ada8037664',1,'taskmonitor.c']]],
   ['taskmonitorupdateall',['TaskMonitorUpdateAll',['../group___libraries.html#ga35c7698b89cc04a2fce87ed36b155fc0',1,'taskmonitor.c']]],
+  ['tau',['tau',['../structlqr__state.html#a171f2bb48d3868be0d9101c896d02058',1,'lqr_state']]],
   ['taulink_5fversion_5fmodule',['TAULINK_VERSION_MODULE',['../group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c',1,'pios_board.h']]],
   ['taulink_5fversion_5fstick',['TAULINK_VERSION_STICK',['../group___pip_x.html#ga1918a9e4f13227a648f0d018e48e416d',1,'pios_board.h']]],
   ['tbs_5fch',['TBS_CH',['../group___v_t_x_config.html#gad398ee28b78ed0b35f6392e03c9258e7',1,'tbs_smartaudio.c']]],
