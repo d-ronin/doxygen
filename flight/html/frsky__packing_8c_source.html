@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">ce10873</span>
+   &#160;<span id="projectnumber">e109916</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -214,15 +214,15 @@ $(document).ready(function(){initNavTree('frsky__packing_8c_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="frsky__packing_8h.html#ad6d5c6ab9846c1e3fa8538c2d8b754ac">  153</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="frsky__packing_8c.html#ad6d5c6ab9846c1e3fa8538c2d8b754ac">frsky_encode_cells</a>(<span class="keyword">struct</span> <a class="code" href="structfrsky__settings.html">frsky_settings</a> *frsky, uint32_t *<a class="code" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, <span class="keywordtype">bool</span> test_presence_only, uint32_t arg)</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> ((frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> == 0) || (frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> - 1) &lt; (arg * 2))</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (test_presence_only)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        uint8_t cellCount = 0;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        FlightBatteryStateDetectedCellCountGet(&amp;cellCount);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>(cellCount)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> = cellCount;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        uint8_t cellCount = 0;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        FlightBatteryStateDetectedCellCountGet(&amp;cellCount);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span>(cellCount)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> = cellCount;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> ((frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> == 0) || (frsky-&gt;<a class="code" href="structfrsky__settings.html#aa5a1365805cb68d2f691a80015b11093">batt_cell_count</a> - 1) &lt; (arg * 2))</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (test_presence_only)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="pios__crossfire_8h.html#a8e84682150888ae78b9a41959ca02c7b">voltage</a> = 0;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        FlightBatteryStateVoltageGet(&amp;voltage);</div>
