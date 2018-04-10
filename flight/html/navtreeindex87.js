@@ -1,7 +1,5 @@
 var NAVTREEINDEX87 =
 {
-"pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca1329655f3ccad8f507c2337d329d07d7":[5,0,0,4,1,58,9,4],
-"pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca44e09c68ee414995a034a8bb492af748":[5,0,0,4,1,58,9,2],
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca4becae476ce8a7c1104ceff2ca78dddf":[5,0,0,4,1,58,9,1],
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca6653a7665f7eaffaf1e4d047b844d69f":[5,0,0,4,1,58,9,0],
 "pios__mpu_8h.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca6ad7fdc121b7f51cb2fdffb1da5fb50d":[5,0,0,4,1,58,9,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX87 =
 "pios__rcvr__priv_8h.html#gafc878e038b0988e158d4bf4c2810faa1":[5,0,0,4,1,77,2],
 "pios__rcvr__priv_8h_source.html":[5,0,0,4,1,77],
 "pios__reset_8h.html":[5,0,0,4,1,78],
-"pios__reset_8h.html#ga1ab704544c4dbc14b946b4fd53151580":[5,0,0,4,1,78,2]
+"pios__reset_8h.html#ga1ab704544c4dbc14b946b4fd53151580":[5,0,0,4,1,78,2],
+"pios__reset_8h.html#ga9ff6496d789d35c55d64a5ba351e640a":[5,0,0,4,1,78,0],
+"pios__reset_8h.html#gab4e9e64d655ca4b452a47838a3a9dc60":[5,0,0,4,1,78,1]
 };

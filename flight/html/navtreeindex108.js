@@ -1,7 +1,5 @@
 var NAVTREEINDEX108 =
 {
-"targets_2revolution_2board-info_2pios__board_8h.html#ga7faa93f4a0aaaeeff604e8207d1531c2":[5,0,0,5,14,1,2,25],
-"targets_2revolution_2board-info_2pios__board_8h.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[5,0,0,5,14,1,2,8],
 "targets_2revolution_2board-info_2pios__board_8h.html#ga86167cdf7eaace383bf74d35f23cb49e":[5,0,0,5,14,1,2,52],
 "targets_2revolution_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9":[5,0,0,5,14,1,2,12],
 "targets_2revolution_2board-info_2pios__board_8h.html#ga89e68cdd07ab84568fe168af24311299":[5,0,0,5,14,1,2,41],
@@ -249,5 +247,7 @@ var NAVTREEINDEX108 =
 "targets_2sparky2_2board-info_2pios__board_8h.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[5,0,0,5,17,1,2,59],
 "targets_2sparky2_2board-info_2pios__board_8h.html#gaffe7c0cd799a61d0dbaed25e9496c4bb":[5,0,0,5,17,1,2,21],
 "targets_2sparky2_2board-info_2pios__board_8h_source.html":[5,0,0,5,17,1,2],
-"targets_2sparky2_2fw_2pios__config_8h.html":[5,0,0,5,17,2,1]
+"targets_2sparky2_2fw_2pios__config_8h.html":[5,0,0,5,17,2,1],
+"targets_2sparky2_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309":[5,0,0,5,17,2,1,24],
+"targets_2sparky2_2fw_2pios__config_8h.html#ga028c4481fbfca2b3a6ccd75c0aec3098":[5,0,0,5,17,2,1,6]
 };

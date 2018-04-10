@@ -95,8 +95,6 @@ var group___vtol_path_follower =
     [ "queue", "group___vtol_path_follower.html#ga99a334ed9cdb3e7a7c694d5519d08d30", null ],
     [ "RTH_ALT_ERROR", "group___vtol_path_follower.html#gac6d43aa5291ed72b6f65a07ba5ef632d", null ],
     [ "RTH_CLIMB_SPEED", "group___vtol_path_follower.html#ga1ce224574fa2fb728c835a2d3e970bb3", null ],
-    [ "RTH_MIN_ALTITUDE", "group___vtol_path_follower.html#ga9f24404bb693281ef2d7b11347f4c235", null ],
-    [ "RTH_MIN_RISE", "group___vtol_path_follower.html#ga18e5a0c5d15678325576a5097696affc", null ],
     [ "settings_updated", "group___vtol_path_follower.html#ga20f7441302496e7d3b819a5939a36b14", null ],
     [ "vtol_dT", "group___vtol_path_follower.html#ga9f29799de1d80977fed8b083150362c1", null ],
     [ "vtol_dT", "group___vtol_path_follower.html#ga9f29799de1d80977fed8b083150362c1", null ],

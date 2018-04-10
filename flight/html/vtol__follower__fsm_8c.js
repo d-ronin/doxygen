@@ -51,8 +51,6 @@ var vtol__follower__fsm_8c =
     [ "fsm_land_home", "vtol__follower__fsm_8c.html#ga3e128e1d10aedb247940407f46d888a1", null ],
     [ "RTH_ALT_ERROR", "vtol__follower__fsm_8c.html#gac6d43aa5291ed72b6f65a07ba5ef632d", null ],
     [ "RTH_CLIMB_SPEED", "vtol__follower__fsm_8c.html#ga1ce224574fa2fb728c835a2d3e970bb3", null ],
-    [ "RTH_MIN_ALTITUDE", "vtol__follower__fsm_8c.html#ga9f24404bb693281ef2d7b11347f4c235", null ],
-    [ "RTH_MIN_RISE", "vtol__follower__fsm_8c.html#ga18e5a0c5d15678325576a5097696affc", null ],
     [ "vtol_fsm_path_desired", "vtol__follower__fsm_8c.html#ga631993f2295bc9a2d6fabc06a1a03e0c", null ],
     [ "vtol_fsm_timer_expiration", "vtol__follower__fsm_8c.html#ga7a9fc8af7285b342984342ffdbcc3f7e", null ],
     [ "vtol_hold_position_ned", "vtol__follower__fsm_8c.html#ga3134ccac9942f3853378990349f2ddf2", null ]

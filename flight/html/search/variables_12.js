@@ -76,8 +76,6 @@ var searchData=
   ['rtc_5fcallback_5flist',['rtc_callback_list',['../group___p_i_o_s___d_e_l_a_y.html#ga4cb0707cdd245f2578d3f444bd852fd7',1,'pios_delay.c']]],
   ['rth_5falt_5ferror',['RTH_ALT_ERROR',['../group___vtol_path_follower.html#gac6d43aa5291ed72b6f65a07ba5ef632d',1,'vtol_follower_fsm.c']]],
   ['rth_5fclimb_5fspeed',['RTH_CLIMB_SPEED',['../group___vtol_path_follower.html#ga1ce224574fa2fb728c835a2d3e970bb3',1,'vtol_follower_fsm.c']]],
-  ['rth_5fmin_5faltitude',['RTH_MIN_ALTITUDE',['../group___vtol_path_follower.html#ga9f24404bb693281ef2d7b11347f4c235',1,'vtol_follower_fsm.c']]],
-  ['rth_5fmin_5frise',['RTH_MIN_RISE',['../group___vtol_path_follower.html#ga18e5a0c5d15678325576a5097696affc',1,'vtol_follower_fsm.c']]],
   ['rtkf',['rtkf',['../structlqg__state.html#a70f96158665ed6bab58e742620d503a2',1,'lqg_state']]],
   ['runningpython3',['runningPython3',['../namespacepx__uploader.html#a9328944406132fa9969b6773b2627bc6',1,'px_uploader']]],
   ['rw',['rw',['../structpios__i2c__txn.html#a604f5e93b6ae3da9573915bc03bb1821',1,'pios_i2c_txn']]],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"structat__flash__header.html#aedccbc0fdfb74428ab5c34c5bcdc0bad":[2,4,3,1,2],
-"structat__measurement.html":[2,4,3,2],
 "structat__measurement.html#a1ec018779068c1467218a9049f5861c0":[2,4,3,2,1],
 "structat__measurement.html#a3a4f52090383fbf677bc56dbe649421a":[2,4,3,2,0],
 "structbl__fsm__context.html":[2,6,1,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX98 =
 "structhott__gam__message.html#aa6a29556ab81f7cee303212ea7a4f6b5":[2,4,29,6,18],
 "structhott__gam__message.html#aa9176d82e54c406ab1746c3cba461c12":[2,4,29,6,32],
 "structhott__gam__message.html#aaf612153c3592f8128b6321b7735114d":[2,4,29,6,11],
-"structhott__gam__message.html#ab689e11f295c6fb8e94a8de63164a780":[2,4,29,6,19]
+"structhott__gam__message.html#ab689e11f295c6fb8e94a8de63164a780":[2,4,29,6,19],
+"structhott__gam__message.html#acd723a5ed81424f7ac06a6664df0ef20":[2,4,29,6,13],
+"structhott__gam__message.html#ad194ea79eb64c10249a37914ff4cc1f9":[2,4,29,6,8]
 };

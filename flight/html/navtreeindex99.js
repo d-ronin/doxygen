@@ -1,7 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"structhott__gam__message.html#acd723a5ed81424f7ac06a6664df0ef20":[2,4,29,6,13],
-"structhott__gam__message.html#ad194ea79eb64c10249a37914ff4cc1f9":[2,4,29,6,8],
 "structhott__gam__message.html#ad82cb5dc1961d4b9ed8c13a542dfd449":[2,4,29,6,3],
 "structhott__gam__message.html#adaa18479d5d5b8e56c3432b8b60c2d09":[2,4,29,6,9],
 "structhott__gam__message.html#adedbdbc55f2ba3c17845efe17c38947e":[2,4,29,6,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX99 =
 "structmsp__pidnames.html":[2,1,2,26],
 "structmsp__pidnames.html#a5771e6e85272902094b15f82e4c90e19":[2,1,2,26,0],
 "structmsp__raw__gps.html":[2,1,2,9],
-"structmsp__raw__gps.html#a2fa5634b27c916363e71f167128a4031":[2,1,2,9,0]
+"structmsp__raw__gps.html#a2fa5634b27c916363e71f167128a4031":[2,1,2,9,0],
+"structmsp__raw__gps.html#a5bab24cf66400caa7996decd88370858":[2,1,2,9,3],
+"structmsp__raw__gps.html#a801dfbe079a392becd0b7c3617500bc3":[2,1,2,9,6]
 };

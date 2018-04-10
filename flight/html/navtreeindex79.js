@@ -1,7 +1,5 @@
 var NAVTREEINDEX79 =
 {
-"msp__messages_8h.html#a1a1f4624f66ab0b2eb0b98316514c369":[5,0,0,1,4,2,49],
-"msp__messages_8h.html#a1d1b8389f4f4798b3b9c001c642212c2":[5,0,0,1,4,2,88],
 "msp__messages_8h.html#a20d05d3afb0d30e228fd865aeb02cc0d":[5,0,0,1,4,2,89],
 "msp__messages_8h.html#a23deb5b8eae4c97c4a8d80e3ee26172c":[5,0,0,1,4,2,83],
 "msp__messages_8h.html#a2477271bdcef3f051e5cc11c782abc73":[5,0,0,1,4,2,80],
@@ -169,8 +167,8 @@ var NAVTREEINDEX79 =
 "namespacemembers_vars.html":[3,1,2],
 "namespacepx__mkfw.html":[4,0,3],
 "namespacepx__mkfw.html":[3,0,3],
-"namespacepx__uploader.html":[4,0,4],
 "namespacepx__uploader.html":[3,0,4],
+"namespacepx__uploader.html":[4,0,4],
 "namespaces.html":[3,0],
 "omnibusf3_2bl_2pios__board_8c.html":[5,0,0,5,9,0,0],
 "omnibusf3_2bl_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,5,9,0,0,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX79 =
 "onscreendisplay_8c.html#ga914ea1f35d558fc1d52c407f8e27620f":[5,0,0,3,18,2,18],
 "onscreendisplay_8c.html#ga93cae68ddab9b53ebd8f68a815ed919a":[5,0,0,3,18,2,60],
 "onscreendisplay_8c.html#ga9a74968247664c52970de66612764244":[5,0,0,3,18,2,67],
-"onscreendisplay_8c.html#ga9a8d6bf9206cc466d1a8bdcac3f704d4":[5,0,0,3,18,2,65]
+"onscreendisplay_8c.html#ga9a8d6bf9206cc466d1a8bdcac3f704d4":[5,0,0,3,18,2,65],
+"onscreendisplay_8c.html#ga9ab738925834f9f467784b422904903c":[5,0,0,3,18,2,48],
+"onscreendisplay_8c.html#ga9fad378d3538885ffce2b40a29334fbb":[5,0,0,3,18,2,0]
 };
