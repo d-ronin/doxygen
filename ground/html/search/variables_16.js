@@ -24,5 +24,8 @@ var searchData=
   ['versionyahoomap',['VersionYahooMap',['../group___t_l_map_widget.html#ga3846cf6d2412f72a3c10be8d4066f7fc',1,'core::ProviderStrings']]],
   ['versionyahoosatellite',['VersionYahooSatellite',['../group___t_l_map_widget.html#ga41e9afc6aa6f634642d2aaa246c1a60e',1,'core::ProviderStrings']]],
   ['versionyandexmap',['VersionYandexMap',['../group___t_l_map_widget.html#ga4e8dc0424dc67c6a4248f5bb6a770403',1,'core::ProviderStrings']]],
+  ['vertposkp',['vertPosKp',['../group___config_plugin.html#ga90cb2babbfa943a14425aa36590a0b13',1,'AutotunedValues']]],
+  ['vertspeedki',['vertSpeedKi',['../group___config_plugin.html#gae8e4d0d19604af681ecd33d5131baecc',1,'AutotunedValues']]],
+  ['vertspeedkp',['vertSpeedKp',['../group___config_plugin.html#gaa290ea452456e4b810f36d9db8993c16',1,'AutotunedValues']]],
   ['vgps',['Vgps',['../_o_p_plots_8m.html#ab441b3f8e4278847ca7f9bfdd0e42cd2',1,'OPPlots.m']]]
 ];

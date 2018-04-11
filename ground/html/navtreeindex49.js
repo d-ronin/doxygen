@@ -1,5 +1,11 @@
 var NAVTREEINDEX49 =
 {
+"opmapgadgetconfiguration_8cpp.html":[6,0,0,0,0,1,23,10],
+"opmapgadgetconfiguration_8cpp_source.html":[6,0,0,0,0,1,23,10],
+"opmapgadgetconfiguration_8h.html":[6,0,0,0,0,1,23,11],
+"opmapgadgetconfiguration_8h_source.html":[6,0,0,0,0,1,23,11],
+"opmapgadgetfactory_8cpp.html":[6,0,0,0,0,1,23,12],
+"opmapgadgetfactory_8cpp_source.html":[6,0,0,0,0,1,23,12],
 "opmapgadgetfactory_8h.html":[6,0,0,0,0,1,23,13],
 "opmapgadgetfactory_8h_source.html":[6,0,0,0,0,1,23,13],
 "opmapgadgetoptionspage_8cpp.html":[6,0,0,0,0,1,23,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX49 =
 "quantecplugin_8h.html":[6,0,0,0,0,1,6,1],
 "quantecplugin_8h_source.html":[6,0,0,0,0,1,6,1],
 "quanton_8cpp.html":[6,0,0,0,0,1,6,2],
-"quanton_8cpp_source.html":[6,0,0,0,0,1,6,2],
-"quanton_8h.html":[6,0,0,0,0,1,6,3],
-"quanton_8h_source.html":[6,0,0,0,0,1,6,3],
-"qwineventnotifier__p_8h.html":[6,0,0,0,0,0,5,21],
-"qwineventnotifier__p_8h_source.html":[6,0,0,0,0,0,5,21],
-"radioprobepage_8cpp.html":[6,0,0,0,0,1,28,0,8],
-"radioprobepage_8cpp_source.html":[6,0,0,0,0,1,28,0,8]
+"quanton_8cpp_source.html":[6,0,0,0,0,1,6,2]
 };

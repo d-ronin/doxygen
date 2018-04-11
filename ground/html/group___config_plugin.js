@@ -92,7 +92,10 @@ var group___config_plugin =
       [ "outerKi", "group___config_plugin.html#ga2044e8d543b407b0442948ab6d722867", null ],
       [ "outerKp", "group___config_plugin.html#ga973511ccdf21f62b2ba1d2f91806e628", null ],
       [ "tau", "group___config_plugin.html#ga02387dc8a031d4e249d535eb1602fc59", null ],
-      [ "valid", "group___config_plugin.html#ga910b4a179ab4461aedd2bcf1c0ce7ae3", null ]
+      [ "valid", "group___config_plugin.html#ga910b4a179ab4461aedd2bcf1c0ce7ae3", null ],
+      [ "vertPosKp", "group___config_plugin.html#ga90cb2babbfa943a14425aa36590a0b13", null ],
+      [ "vertSpeedKi", "group___config_plugin.html#gae8e4d0d19604af681ecd33d5131baecc", null ],
+      [ "vertSpeedKp", "group___config_plugin.html#gaa290ea452456e4b810f36d9db8993c16", null ]
     ] ],
     [ "AutotuneBeginningPage", "class_autotune_beginning_page.html", [
       [ "AutotuneBeginningPage", "group___config_plugin.html#gacdd095686675cd982b03d4e7a0406222", null ],
@@ -737,6 +740,9 @@ var group___config_plugin =
     [ "uavoOption", "group___config_plugin.html#ga3c35124dde789d121bc1a0140c0b682e", null ],
     [ "Used", "group___config_plugin.html#ga9fda1ee21effccd7fcbad04816734eac", null ],
     [ "valid", "group___config_plugin.html#ga910b4a179ab4461aedd2bcf1c0ce7ae3", null ],
+    [ "vertPosKp", "group___config_plugin.html#ga90cb2babbfa943a14425aa36590a0b13", null ],
+    [ "vertSpeedKi", "group___config_plugin.html#gae8e4d0d19604af681ecd33d5131baecc", null ],
+    [ "vertSpeedKp", "group___config_plugin.html#gaa290ea452456e4b810f36d9db8993c16", null ],
     [ "wiggle_points", "group___config_plugin.html#ga9d8a979b2b56d299e9806218716eeb7a", null ],
     [ "y", "group___config_plugin.html#ga90b82bf1853b5cfe727ce84c4fa4d071", null ],
     [ "autopilotConnected", "group___config_plugin.html#ga5c7aaec226341fec654b07be4cdcd807", null ],

@@ -18,5 +18,8 @@ var struct_autotuned_values =
     [ "outerKi", "group___config_plugin.html#ga2044e8d543b407b0442948ab6d722867", null ],
     [ "outerKp", "group___config_plugin.html#ga973511ccdf21f62b2ba1d2f91806e628", null ],
     [ "tau", "group___config_plugin.html#ga02387dc8a031d4e249d535eb1602fc59", null ],
-    [ "valid", "group___config_plugin.html#ga910b4a179ab4461aedd2bcf1c0ce7ae3", null ]
+    [ "valid", "group___config_plugin.html#ga910b4a179ab4461aedd2bcf1c0ce7ae3", null ],
+    [ "vertPosKp", "group___config_plugin.html#ga90cb2babbfa943a14425aa36590a0b13", null ],
+    [ "vertSpeedKi", "group___config_plugin.html#gae8e4d0d19604af681ecd33d5131baecc", null ],
+    [ "vertSpeedKp", "group___config_plugin.html#gaa290ea452456e4b810f36d9db8993c16", null ]
 ];
