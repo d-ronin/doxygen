@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -168,16 +168,14 @@ $(document).ready(function(){initNavTree('targets_2flightd_2fw_2pios__board_8h_s
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___sim.html#gad6409f51ab61c676f1a82e4d50b1fd68">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_OPENLOG                        (pios_com_openlog_id)</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___sim.html#ga88f1b74712df62b9970b6cbc6bb262e9">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_LIGHTTELEMETRY                 (pios_com_lighttelemetry_id)</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___sim.html#ga7f93f74c93a49c6f7b372dbb55b851f6">   72</a></span>&#160;<span class="preprocessor">#define PIOS_GCSRCVR_TIMEOUT_MS 200</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifndef DEBUG_LEVEL</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___sim.html#gac2d33ccaf63f5d5b66552b95426c0137">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEBUG_LEVEL 2</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifndef DEBUG_LEVEL</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___sim.html#gac2d33ccaf63f5d5b66552b95426c0137">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEBUG_LEVEL 2</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___sim.html#gaa2230ce045fa6f32269efa3202144ffd">   76</a></span>&#160;<span class="preprocessor">#define DEBUG_PRINTF(level, ...) do { if ((level) &lt;= DEBUG_LEVEL) { fprintf(stderr, __VA_ARGS__); } } while (0)</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___sim.html#gaa2230ce045fa6f32269efa3202144ffd">   78</a></span>&#160;<span class="preprocessor">#define DEBUG_PRINTF(level, ...) do { if ((level) &lt;= DEBUG_LEVEL) { fprintf(stderr, __VA_ARGS__); } } while (0)</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_BOARD_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_BOARD_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___sim_html_ga14dc9e3d330b80a37a9699c2112358e0"><div class="ttname"><a href="group___sim.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></div><div class="ttdeci">uintptr_t pios_com_debug_id</div><div class="ttdef"><b>Definition:</b> <a href="flightd_2fw_2pios__board_8c_source.html#l00077">pios_board.c:77</a></div></div>
 <div class="ttc" id="group___a_q32_html_gaba34640b239b01884e1a4b0b3fe16c31"><div class="ttname"><a href="group___a_q32.html#gaba34640b239b01884e1a4b0b3fe16c31">pios_com_lighttelemetry_id</a></div><div class="ttdeci">uintptr_t pios_com_lighttelemetry_id</div></div>
 <div class="ttc" id="group___sim_html_gae48e848f715b08971e23528feee79339"><div class="ttname"><a href="group___sim.html#gae48e848f715b08971e23528feee79339">pios_com_telem_rf_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_rf_id</div><div class="ttdef"><b>Definition:</b> <a href="flightd_2fw_2pios__board_8c_source.html#l00079">pios_board.c:79</a></div></div>

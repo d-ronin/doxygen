@@ -8,6 +8,7 @@ var pios__thread_8h =
       [ "PIOS_THREAD_PRIO_HIGH", "pios__thread_8h.html#ggaaf67f9ea6e212bc198f6d4302ea21e54abbe1aff2d1bfe2d5c2aeae36e422909d", null ],
       [ "PIOS_THREAD_PRIO_HIGHEST", "pios__thread_8h.html#ggaaf67f9ea6e212bc198f6d4302ea21e54a4a6e161529db001f89563fc43fbada3e", null ]
     ] ],
+    [ "PIOS_Thread_ChangePriority", "pios__thread_8h.html#ga411e62a999ddaa46f753024d8b912bd7", null ],
     [ "PIOS_Thread_Create", "pios__thread_8h.html#ga30d4f0b56bb65cb60cb99b7e8f6b759e", null ],
     [ "PIOS_Thread_Delete", "pios__thread_8h.html#gac0a7798537bda9c830ce5bf7ed4d3451", null ],
     [ "PIOS_Thread_Get_Runtime", "pios__thread_8h.html#ga09d287bd6511f4991e2119402a9a7b34", null ],
@@ -17,5 +18,6 @@ var pios__thread_8h =
     [ "PIOS_Thread_Scheduler_Suspend", "pios__thread_8h.html#ga7708d1e49572566decf6908b891c8ea6", null ],
     [ "PIOS_Thread_Sleep", "pios__thread_8h.html#ga2c639e61f21eac6cb54580eb5e1b85de", null ],
     [ "PIOS_Thread_Sleep_Until", "pios__thread_8h.html#ga2b57ee25cb47d455143fa9f009d8e937", null ],
-    [ "PIOS_Thread_Systime", "pios__thread_8h.html#gaf10c64545c5d65a1426957c432aaadb3", null ]
+    [ "PIOS_Thread_Systime", "pios__thread_8h.html#gaf10c64545c5d65a1426957c432aaadb3", null ],
+    [ "PIOS_Thread_WrapCurrentThread", "pios__thread_8h.html#ga800a1ff05ca786a87ddb7fc7d0246ee9", null ]
 ];

@@ -65,7 +65,6 @@ var group___pip_x =
     [ "PIOS_FLASH_EEPROM_START_ADDR", "group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5", null ],
     [ "PIOS_FLASH_PAGE_SIZE", "group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3", null ],
     [ "PIOS_FLASH_SIZE", "group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___pip_x.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___pip_x.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___pip_x.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "group___pip_x.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],

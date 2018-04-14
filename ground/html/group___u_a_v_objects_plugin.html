@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -189,8 +189,16 @@ Functions</h2></td></tr>
 <tr class="separator:gae075ec1715d23e8bff81e913bc1dd303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga241aeafcb174351ac76df2ff55b019e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">UAVDataObject::getIsPresentOnHardware</a> () const </td></tr>
 <tr class="separator:ga241aeafcb174351ac76df2ff55b019e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b84e427e29108e21861266a4397b7a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">UAVDataObject::setIsPresentOnHardware</a> (bool value)</td></tr>
-<tr class="separator:ga8b84e427e29108e21861266a4397b7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa90a6ad99ab78ba3232de9b3faf0e11f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#gaa90a6ad99ab78ba3232de9b3faf0e11f">UAVDataObject::getPresenceKnown</a> () const </td></tr>
+<tr class="separator:gaa90a6ad99ab78ba3232de9b3faf0e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6896d9d10907836a699da9e4f4d1c4eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga6896d9d10907836a699da9e4f4d1c4eb">UAVDataObject::setReceived</a> ()</td></tr>
+<tr class="separator:ga6896d9d10907836a699da9e4f4d1c4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5768c896ea5cc0dd2d4e9304434ba866"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga5768c896ea5cc0dd2d4e9304434ba866">UAVDataObject::getReceived</a> ()</td></tr>
+<tr class="separator:ga5768c896ea5cc0dd2d4e9304434ba866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc17046a1aff7eff81eaebfa4ae4a204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#gafc17046a1aff7eff81eaebfa4ae4a204">UAVDataObject::setIsPresentOnHardware</a> (bool value=true)</td></tr>
+<tr class="separator:gafc17046a1aff7eff81eaebfa4ae4a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65790c37eca581d43f3023f4f848efc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga65790c37eca581d43f3023f4f848efc7">UAVDataObject::resetIsPresentOnHardware</a> ()</td></tr>
+<tr class="separator:ga65790c37eca581d43f3023f4f848efc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82e8ae42383522ae0507b881d11abba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#ga82e8ae42383522ae0507b881d11abba5">UAVMetaObject::UAVMetaObject</a> (quint32 objID, const QString &amp;name, <a class="el" href="class_u_a_v_object.html">UAVObject</a> *parent)</td></tr>
 <tr class="separator:ga82e8ae42383522ae0507b881d11abba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabfdc167657f1b0eae61e412313785e7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_v_object.html">UAVObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a> ()</td></tr>
@@ -891,7 +899,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Emit the instanceRemoved event </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00353">353</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00351">351</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +918,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Emit the newInstance event </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00345">345</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00343">343</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -929,7 +937,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>(overloaded) Emit the transactionCompleted event (used by the <a class="el" href="class_u_a_v_talk.html">UAVTalk</a> plugin) </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00329">329</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00327">327</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -958,7 +966,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>(overloaded) Emit the transactionCompletedNack event </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00337">337</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00335">335</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1203,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the description of the object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00141">141</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00139">139</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1388,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 <p>Get a specific field </p>
 <dl class="section return"><dt>Returns</dt><dd>The field or NULL if not found </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00238">238</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00236">236</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1406,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the object's fields </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00198">198</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00196">196</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1474,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the access type </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00379">379</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00377">377</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1500,7 +1508,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the telemetry acked boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00419">419</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00417">417</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1542,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the telemetry update mode </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00459">459</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00457">457</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1568,7 +1576,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the GCS access type </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00399">399</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00397">397</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1627,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the telemetry acked boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00439">439</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00437">437</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1653,7 +1661,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the GCS telemetry update mode </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00481">481</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00479">479</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1725,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the instance ID </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00117">117</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00115">115</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1742,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00103">103</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00112">112</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1752,7 +1760,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the JSON representation of the object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00206">206</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00204">204</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1838,7 +1846,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 
 <p>Implements <a class="el" href="group___u_a_v_objects_plugin.html#gaadeb5af3a70679bcb2b6360274e9c7de">UAVObject</a>.</p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00087">87</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00090">90</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +1889,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the metaobject </p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00099">99</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00102">102</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1962,7 +1970,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the name of the object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00133">133</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00131">131</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -1997,7 +2005,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the total number of bytes of the object's data </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00157">157</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00155">155</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2032,7 +2040,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the number of fields held by this object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00190">190</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00188">188</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2255,7 +2263,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Get the object ID </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00109">109</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00107">107</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2291,6 +2299,40 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 <p>Get the parent object </p>
 
 <p>Definition at line <a class="el" href="uavmetaobject_8cpp_source.html#l00072">72</a> of file <a class="el" href="uavmetaobject_8cpp_source.html">uavmetaobject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa90a6ad99ab78ba3232de9b3faf0e11f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UAVDataObject::getPresenceKnown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00107">107</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5768c896ea5cc0dd2d4e9304434ba866"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UAVDataObject::getReceived </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00130">130</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2415,7 +2457,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Initialize instance ID and assign a metaobject </p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00052">52</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00055">55</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2434,7 +2476,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Assign a metaobject </p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00061">61</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00064">64</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2600,7 +2642,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Returns true if this is a data object holding module settings </p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00069">69</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00072">72</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2618,7 +2660,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Returns true if this is a single instance object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00125">125</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00123">123</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2729,7 +2771,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00362">362</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00360">360</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2803,7 +2845,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 <p>Pack the object data into a byte array </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes copied </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00257">257</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00255">255</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2852,6 +2894,23 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 <p>Register an object with the manager. This function must be called for all newly created instances. A new instance can be created directly by instantiating a new object or by calling <a class="el" href="group___u_a_v_objects_plugin.html#gab86084dd3556b645fa8020dc33776d88">clone()</a> of an existing object. The object will be registered and will be properly initialized so that it can accept updates. </p>
 
 <p>Definition at line <a class="el" href="uavobjectmanager_8cpp_source.html#l00056">56</a> of file <a class="el" href="uavobjectmanager_8cpp_source.html">uavobjectmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga65790c37eca581d43f3023f4f848efc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> UAVDataObject::resetIsPresentOnHardware </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00151">151</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2913,7 +2972,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Set the description of the object </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00149">149</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00147">147</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -2985,7 +3044,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00389">389</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00387">387</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3029,7 +3088,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00429">429</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00427">427</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3073,7 +3132,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00470">470</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00468">468</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3117,7 +3176,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00409">409</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00407">407</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3161,7 +3220,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00449">449</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00447">447</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3205,7 +3264,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00492">492</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00490">490</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3237,7 +3296,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 
 </div>
 </div>
-<a class="anchor" id="ga8b84e427e29108e21861266a4397b7a9"></a>
+<a class="anchor" id="gafc17046a1aff7eff81eaebfa4ae4a204"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3245,13 +3304,13 @@ Object definition file: . This is an automatically generated file. DO NOT modify
           <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> UAVDataObject::setIsPresentOnHardware </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>value</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00108">108</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00135">135</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3309,7 +3368,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 
 <p>Implements <a class="el" href="group___u_a_v_objects_plugin.html#ga6cca5e5bf5d4f7ecfb03ef7cc9a93a95">UAVObject</a>.</p>
 
-<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00077">77</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00080">80</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3336,6 +3395,23 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="group___u_a_v_objects_plugin.html#ga968c4e54cd5088bed83546338e44de6b">UAVDataObject</a>, and <a class="el" href="group___u_a_v_objects_plugin.html#ga714e256632f9fbd0aba5c6a9aaae422a">UAVMetaObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6896d9d10907836a699da9e4f4d1c4eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___u_a_v_objects_plugin.html#ga444cf2ff3f0ecbe028adce838d373f5c">void</a> UAVDataObject::setReceived </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uavdataobject_8cpp_source.html#l00118">118</a> of file <a class="el" href="uavdataobject_8cpp_source.html">uavdataobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3398,7 +3474,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Return a string with the object information </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00289">289</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00287">287</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3416,7 +3492,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Return a string with the object information (only the header) </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00300">300</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00298">298</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3434,7 +3510,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Return a string with the object information (only the data) </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00315">315</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00313">313</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -3797,7 +3873,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 <p>Unpack the object data from a byte array </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes copied </dd></dl>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00272">272</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00270">270</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -4669,7 +4745,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Request that this object is updated with the latest values from the autopilot </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00165">165</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00163">163</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -4695,7 +4771,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Request that this object and all it's instances updated with the latest values from the autopilot </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00173">173</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00171">171</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>
@@ -4721,7 +4797,7 @@ Object definition file: . This is an automatically generated file. DO NOT modify
 </div><div class="memdoc">
 <p>Signal that the object has been updated </p>
 
-<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00181">181</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="uavobject_8cpp_source.html#l00179">179</a> of file <a class="el" href="uavobject_8cpp_source.html">uavobject.cpp</a>.</p>
 
 </div>
 </div>

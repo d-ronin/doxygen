@@ -35,7 +35,6 @@ var group___piko_b_l_x =
     [ "PIOS_DMA_MAX_HANDLERS_PER_CHANNEL", "group___piko_b_l_x.html#ga6b94edc71b12bbba8f4d137995e20e43", null ],
     [ "PIOS_DSM_NUM_INPUTS", "group___piko_b_l_x.html#gabf39f1bc59b5af7e8f138bb394770300", null ],
     [ "PIOS_EVENTDISPATCHER_STACK_SIZE", "group___piko_b_l_x.html#ga8de02d8defc3d19ac2f9ad75fc5441c1", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___piko_b_l_x.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_HSUM_MAX_DEVS", "group___piko_b_l_x.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "group___piko_b_l_x.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___piko_b_l_x.html#ga464462d5068d115f79148efdffefb418", null ],

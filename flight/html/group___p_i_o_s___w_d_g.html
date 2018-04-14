@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -170,10 +170,10 @@ Variables</h2></td></tr>
 <tr class="separator:gaab238daf4f2906dc7691f92d408cee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37fde3d7139a4739308ac7a214dbe965"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#ga37fde3d7139a4739308ac7a214dbe965">wdg_updated_flags</a></td></tr>
 <tr class="separator:ga37fde3d7139a4739308ac7a214dbe965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7916cddacca6aeceed27c3a2a5f238d2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#ga7916cddacca6aeceed27c3a2a5f238d2">wdg_cleared_time</a></td></tr>
-<tr class="separator:ga7916cddacca6aeceed27c3a2a5f238d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5d707b03121ce7360f560ebda3fd46b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#gaf5d707b03121ce7360f560ebda3fd46b">wdg_last_update_time</a></td></tr>
-<tr class="separator:gaf5d707b03121ce7360f560ebda3fd46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad5cc53775aac9ab18240ee4dec36b8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#gaad5cc53775aac9ab18240ee4dec36b8b">wdg_cleared_time</a></td></tr>
+<tr class="separator:gaad5cc53775aac9ab18240ee4dec36b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5616f0e41f5d938c7f1c4c490582bcfe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#ga5616f0e41f5d938c7f1c4c490582bcfe">wdg_last_update_time</a></td></tr>
+<tr class="separator:ga5616f0e41f5d938c7f1c4c490582bcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50e5c0c02e49b9be478e347b82eb7f2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___w_d_g.html#ga50e5c0c02e49b9be478e347b82eb7f2f">wdg_expired</a></td></tr>
 <tr class="separator:ga50e5c0c02e49b9be478e347b82eb7f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -330,7 +330,7 @@ Variables</h2></td></tr>
 
 <p>This function returns true if the watchdog would have expired. </p>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00148">148</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00155">155</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Variables</h2></td></tr>
 <p>Clear the watchdog timer. </p>
 <p>This function must be called at the appropriate delay to prevent a reset event occuring </p>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00140">140</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00147">147</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Variables</h2></td></tr>
 <p>For external monitoring</p>
 <dl class="section return"><dt>Returns</dt><dd>The active flags register </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00130">130</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00137">137</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Variables</h2></td></tr>
 <p>This is used for diagnostics, if only one flag not set this was likely the module that wasn't running before reset</p>
 <dl class="section return"><dt>Returns</dt><dd>The active flags register from bootup </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00118">118</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00125">125</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Variables</h2></td></tr>
 <p>For the STM32 nominal clock rate is 32 khz, but for the maximum clock rate of 60 khz and a prescaler of 4 yields a clock rate of 15 khz. The delay that is set in the watchdog assumes the nominal clock rate, but the delay for RTOS to use is 75% of the minimal delay.</p>
 <dl class="section return"><dt>Returns</dt><dd>Maximum recommended delay between updates based on PIOS_WATCHDOG_TIMEOUT constant </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00061">61</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00063">63</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if that bit is unregistered </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00082">82</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00086">86</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -480,22 +480,22 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the watchdog cleared, false if flags are pending </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00098">98</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00102">102</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ga7916cddacca6aeceed27c3a2a5f238d2"></a>
+<a class="anchor" id="gaad5cc53775aac9ab18240ee4dec36b8b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int wdg_cleared_time</td>
+          <td class="memname">uint32_t wdg_cleared_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00038">38</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00039">39</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -509,21 +509,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00040">40</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00042">42</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaf5d707b03121ce7360f560ebda3fd46b"></a>
+<a class="anchor" id="ga5616f0e41f5d938c7f1c4c490582bcfe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int wdg_last_update_time</td>
+          <td class="memname">uint32_t wdg_last_update_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00039">39</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00040">40</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00036">36</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00037">37</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00037">37</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__wdg_8c_source.html#l00038">38</a> of file <a class="el" href="posix_2pios__wdg_8c_source.html">pios_wdg.c</a>.</p>
 
 </div>
 </div>

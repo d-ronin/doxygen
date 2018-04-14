@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -265,78 +265,77 @@ $(document).ready(function(){initNavTree('targets_2sprf3e_2board-info_2pios__boa
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">// See also pios_board.c</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">//------------------------</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gad9504d2174472de2d678814e430678c9">  168</a></span>&#160;<span class="preprocessor">#define PIOS_RCVR_MAX_CHANNELS                  12</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga7f93f74c93a49c6f7b372dbb55b851f6">  169</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GCSRCVR_TIMEOUT_MS                 100</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">// Receiver PPM input</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga288a8e6f061b1dbd7930b5ffdf805c69">  174</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS                             12</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// Receiver PWM input</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga24c6da05c7d0a33b87b0c66cca0700d6">  179</a></span>&#160;<span class="preprocessor">#define PIOS_PWM_NUM_INPUTS             1</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">// Receiver DSM input</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gabf39f1bc59b5af7e8f138bb394770300">  184</a></span>&#160;<span class="preprocessor">#define PIOS_DSM_NUM_INPUTS                             12</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">// Receiver HSUM input</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gad59135d54dcccdf2854a3b39fb0494f5">  189</a></span>&#160;<span class="preprocessor">#define PIOS_HSUM_MAX_DEVS                              2</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga2a5b4da2757e6727567656c3a9025ccd">  190</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HSUM_NUM_INPUTS                    32</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">// Receiver S.Bus input</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga7abaa7b2a334f64bfc43df02807d0f3f">  195</a></span>&#160;<span class="preprocessor">#define PIOS_SBUS_NUM_INPUTS                    (16+2)</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">// Servo outputs</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gaaf11e7ae7e32bacf0180ba8d6f144488">  200</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">  201</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION    0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">// Timer controller settings</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gabed34fab9b2b2c4c92ecc825c75c9244">  206</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                               8</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// ADC</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">// ADC0 : PA4 ADC2_IN1  VBat</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">// ADC1 : PA5 ADC2_IN2  Current</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">// ADC2 : PB2 ADC2_IN12 RSSI</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga8e66b285628ba1cb8e22932297f4b952">  214</a></span>&#160;<span class="preprocessor">#define PIOS_INTERNAL_ADC_MAX_INSTANCES          4</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gac543c87b4e6f3cdae8e28df658fa42b3">  215</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INTERNAL_ADC_COUNT                  4</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga0c26ccb35355e18dad04a55f4549deec">  216</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INTERNAL_ADC_MAPPING                { ADC1, ADC2, ADC3, ADC4 }</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t <a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#define PIOS_INTERNAL_ADC                               (pios_internal_adc_id)</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga2be0b313025f4a19c9ac7d5f05d94000">  222</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_ADC_SUB_DRIVER_MAX_INSTANCES       3</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga645df4566a90656d8b02ee4e63a54dfe">  224</a></span>&#160;<span class="preprocessor">#define VREF_PLUS                               3.3</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">// DMA</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gab49a10e72bc5f331b5e3b3a92671e069">  229</a></span>&#160;<span class="preprocessor">#define PIOS_DMA_MAX_CHANNELS                   12</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga6b94edc71b12bbba8f4d137995e20e43">  230</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_DMA_MAX_HANDLERS_PER_CHANNEL       3</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gad33869b41ed36381d09ca776fec2ca64">  231</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_DMA_CHANNELS {DMA1_Channel1, DMA1_Channel2, DMA1_Channel3, DMA1_Channel4, DMA1_Channel5, DMA1_Channel6, DMA1_Channel7, DMA2_Channel1, DMA2_Channel2, DMA2_Channel3, DMA2_Channel4, DMA2_Channel5}</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">// USB</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  236</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                                1 </span><span class="comment">/* Should remove all references to this */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F30X_sprf3e_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">// Receiver PPM input</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga288a8e6f061b1dbd7930b5ffdf805c69">  173</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS                             12</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">// Receiver PWM input</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga24c6da05c7d0a33b87b0c66cca0700d6">  178</a></span>&#160;<span class="preprocessor">#define PIOS_PWM_NUM_INPUTS             1</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">// Receiver DSM input</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gabf39f1bc59b5af7e8f138bb394770300">  183</a></span>&#160;<span class="preprocessor">#define PIOS_DSM_NUM_INPUTS                             12</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// Receiver HSUM input</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gad59135d54dcccdf2854a3b39fb0494f5">  188</a></span>&#160;<span class="preprocessor">#define PIOS_HSUM_MAX_DEVS                              2</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga2a5b4da2757e6727567656c3a9025ccd">  189</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HSUM_NUM_INPUTS                    32</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">// Receiver S.Bus input</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga7abaa7b2a334f64bfc43df02807d0f3f">  194</a></span>&#160;<span class="preprocessor">#define PIOS_SBUS_NUM_INPUTS                    (16+2)</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">// Servo outputs</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gaaf11e7ae7e32bacf0180ba8d6f144488">  199</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">  200</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION    0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">// Timer controller settings</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gabed34fab9b2b2c4c92ecc825c75c9244">  205</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                               8</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">// ADC</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// ADC0 : PA4 ADC2_IN1  VBat</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">// ADC1 : PA5 ADC2_IN2  Current</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">// ADC2 : PB2 ADC2_IN12 RSSI</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga8e66b285628ba1cb8e22932297f4b952">  213</a></span>&#160;<span class="preprocessor">#define PIOS_INTERNAL_ADC_MAX_INSTANCES          4</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gac543c87b4e6f3cdae8e28df658fa42b3">  214</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INTERNAL_ADC_COUNT                  4</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga0c26ccb35355e18dad04a55f4549deec">  215</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INTERNAL_ADC_MAPPING                { ADC1, ADC2, ADC3, ADC4 }</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t <a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#define PIOS_INTERNAL_ADC                               (pios_internal_adc_id)</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga2be0b313025f4a19c9ac7d5f05d94000">  221</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_ADC_SUB_DRIVER_MAX_INSTANCES       3</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga645df4566a90656d8b02ee4e63a54dfe">  223</a></span>&#160;<span class="preprocessor">#define VREF_PLUS                               3.3</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">// DMA</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gab49a10e72bc5f331b5e3b3a92671e069">  228</a></span>&#160;<span class="preprocessor">#define PIOS_DMA_MAX_CHANNELS                   12</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#ga6b94edc71b12bbba8f4d137995e20e43">  229</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_DMA_MAX_HANDLERS_PER_CHANNEL       3</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gad33869b41ed36381d09ca776fec2ca64">  230</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_DMA_CHANNELS {DMA1_Channel1, DMA1_Channel2, DMA1_Channel3, DMA1_Channel4, DMA1_Channel5, DMA1_Channel6, DMA1_Channel7, DMA2_Channel1, DMA2_Channel2, DMA2_Channel3, DMA2_Channel4, DMA2_Channel5}</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// USB</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___s_p_r_f3_e.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  235</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                                1 </span><span class="comment">/* Should remove all references to this */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32F30X_sprf3e_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga5c6ed92207820d514741140f5dec7f8a"><div class="ttname"><a href="group___a_q32.html#ga5c6ed92207820d514741140f5dec7f8a">pios_com_frsky_sensor_hub_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sensor_hub_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga2d0de5022c647a603359c8a7514c658e"><div class="ttname"><a href="group___a_q32.html#ga2d0de5022c647a603359c8a7514c658e">pios_com_telem_serial_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_serial_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00123">pios_hal.c:123</a></div></div>

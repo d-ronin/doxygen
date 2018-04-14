@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -136,6 +136,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga22c308fc25c3d44deab081be3d8bdbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac75848cc936540bc3b825fa4af173ef6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___queue.html#gac75848cc936540bc3b825fa4af173ef6">PIOS_Queue_GetItemSize</a> (struct <a class="el" href="structpios__queue.html">pios_queue</a> *queuep)</td></tr>
 <tr class="separator:gac75848cc936540bc3b825fa4af173ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75544952b41ec8c727831330ece164e6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___queue.html#ga75544952b41ec8c727831330ece164e6">PIOS_Queue_Send_Impl</a> (struct <a class="el" href="structpios__queue.html">pios_queue</a> *queuep, const void *itemp, uint32_t timeout_ms)</td></tr>
+<tr class="separator:ga75544952b41ec8c727831330ece164e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cb46ad82f28d21161ec6ca7fcf72776"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___queue.html#ga5cb46ad82f28d21161ec6ca7fcf72776">PIOS_Queue_Receive_Impl</a> (struct <a class="el" href="structpios__queue.html">pios_queue</a> *queuep, void *itemp, uint32_t timeout_ms)</td></tr>
+<tr class="separator:ga5cb46ad82f28d21161ec6ca7fcf72776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Abstracts the concept of a queue to hide different implementations. </p>
@@ -196,7 +200,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>free up the queue buf </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>free up the queue buf </dd></dl>
 
 <p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00089">89</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
 
@@ -216,7 +220,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00193">193</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00235">235</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
 
 </div>
 </div>
@@ -250,7 +254,49 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00153">153</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00213">213</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5cb46ad82f28d21161ec6ca7fcf72776"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool PIOS_Queue_Receive_Impl </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
+          <td class="paramname"><em>queuep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>itemp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00175">175</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
 
 </div>
 </div>
@@ -284,7 +330,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00101">101</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00141">141</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
 
 </div>
 </div>
@@ -318,7 +364,49 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00141">141</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00163">163</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga75544952b41ec8c727831330ece164e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool PIOS_Queue_Send_Impl </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structpios__queue.html">pios_queue</a> *&#160;</td>
+          <td class="paramname"><em>queuep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>itemp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2pios__queue_8c_source.html#l00101">101</a> of file <a class="el" href="posix_2pios__queue_8c_source.html">pios_queue.c</a>.</p>
 
 </div>
 </div>

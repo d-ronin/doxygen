@@ -58,7 +58,7 @@ var searchData=
   ['compute_5fmixer',['compute_mixer',['../group___actuator_module.html#ga4d51fb0c28b55d3e210c48503788a594',1,'actuator.c']]],
   ['compute_5fmodified_5fomega',['compute_modified_omega',['../berlekamp_8c.html#a4271137cd45b58ebcfd7d9828bb9cccc',1,'berlekamp.c']]],
   ['compute_5fnext_5fomega',['compute_next_omega',['../berlekamp_8c.html#a7048a07eb92991d559cb5508bc9a07ae',1,'berlekamp.c']]],
-  ['compute_5fone_5fmixer',['compute_one_mixer',['../group___actuator_module.html#ga568206810bad83d13f36a0d7d5fc232d',1,'actuator.c']]],
+  ['compute_5fone_5fmixer',['compute_one_mixer',['../group___actuator_module.html#gab0596cd92056ccbaa3a0998f3eddb1d0',1,'actuator.c']]],
   ['comusbbridgeinitialize',['comUsbBridgeInitialize',['../group___com_usb_bridge_module.html#ga57dc9d638d90570da27e4e5ccad5d9cc',1,'ComUsbBridge.c']]],
   ['comusbbridgestart',['comUsbBridgeStart',['../group___com_usb_bridge_module.html#gae9d920339ab8c87f41795a2196f7eec9',1,'ComUsbBridge.c']]],
   ['configuration_5fcheck',['configuration_check',['../group___libraries.html#gabcb80832a82e492c119a231984eba10a',1,'sanitycheck.c']]],

@@ -3,9 +3,7 @@ var searchData=
   ['pi',['PI',['../mgrs_8c.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;mgrs.c'],['../polarst_8c.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;polarst.c'],['../tranmerc_8c.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;tranmerc.c'],['../ups_8c.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;ups.c'],['../utm_8c.html#a598a3330b3c21701223ee0ca14316eca',1,'PI():&#160;utm.c']]],
   ['pi_5fover',['PI_OVER',['../ups_8c.html#a3f3edde323315851fb48026ca6e79ec3',1,'ups.c']]],
   ['pi_5fover_5f2',['PI_OVER_2',['../mgrs_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;mgrs.c'],['../polarst_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;polarst.c'],['../tranmerc_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;tranmerc.c']]],
-  ['pios_5fassert',['PIOS_Assert',['../tests_2logfs_2pios_8h.html#ac5ae1bcc3f2aa6a7d0512ee4f68fdecd',1,'pios.h']]],
   ['pios_5fboard_5finfo_5fblob_5fmagic',['PIOS_BOARD_INFO_BLOB_MAGIC',['../pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938',1,'pios_board_info.h']]],
-  ['pios_5fdebug_5fassert',['PIOS_DEBUG_Assert',['../tests_2logfs_2pios_8h.html#afca1e09a17d48fd6a636edfb1d9d5689',1,'pios.h']]],
   ['pios_5fdsm_5fnum_5finputs',['PIOS_DSM_NUM_INPUTS',['../dsm_8h.html#abf39f1bc59b5af7e8f138bb394770300',1,'dsm.h']]],
   ['pios_5ffileout_5ftx_5fbuffer_5fsize',['PIOS_FILEOUT_TX_BUFFER_SIZE',['../pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895',1,'pios_fileout_priv.h']]],
   ['pios_5finclude_5f4way',['PIOS_INCLUDE_4WAY',['../pios__flight__config_8h.html#ad830410b5e6793203bad6382c5242746',1,'pios_flight_config.h']]],
@@ -16,11 +14,11 @@ var searchData=
   ['pios_5finclude_5fchibios',['PIOS_INCLUDE_CHIBIOS',['../pios__flight__config_8h.html#a161aa898042f41e015d602a72a618d87',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fcom',['PIOS_INCLUDE_COM',['../pios__flight__config_8h.html#af8a678a8ce2142cdd87b127b78a89add',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fcrossfire',['PIOS_INCLUDE_CROSSFIRE',['../pios__flight__config_8h.html#a0715ab2ae2b78b086672041ca0731dc3',1,'pios_flight_config.h']]],
+  ['pios_5finclude_5fdelay',['PIOS_INCLUDE_DELAY',['../tests_2logfs_2pios__config_8h.html#a609c3fff40cb5d2fbeb6aa2e1c5b6951',1,'pios_config.h']]],
   ['pios_5finclude_5fdsm',['PIOS_INCLUDE_DSM',['../pios__flight__config_8h.html#a543ec4a4aa105d7090ebe2dd3a4dad3b',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fexti',['PIOS_INCLUDE_EXTI',['../pios__flight__config_8h.html#ae97f0380f771f6caf94de4982ab00f8c',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fflash',['PIOS_INCLUDE_FLASH',['../pios__flight__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d',1,'PIOS_INCLUDE_FLASH():&#160;pios_flight_config.h'],['../tests_2logfs_2pios__config_8h.html#aab491daf240fca6cc9e3243ce8e8712d',1,'PIOS_INCLUDE_FLASH():&#160;pios_config.h']]],
   ['pios_5finclude_5fflash_5finternal',['PIOS_INCLUDE_FLASH_INTERNAL',['../pios__flight__config_8h.html#abaec4c77cf420cd9ad55c5f96a10b192',1,'pios_flight_config.h']]],
-  ['pios_5finclude_5ffreertos',['PIOS_INCLUDE_FREERTOS',['../tests_2logfs_2pios__config_8h.html#abd880a17cefda480b9e4dd2625c05b80',1,'pios_config.h']]],
   ['pios_5finclude_5ffrsky_5fsensor_5fhub',['PIOS_INCLUDE_FRSKY_SENSOR_HUB',['../pios__flight__config_8h.html#a56becb5b760c6b41904f324bf16b1aa2',1,'pios_flight_config.h']]],
   ['pios_5finclude_5ffrsky_5fsport_5ftelemetry',['PIOS_INCLUDE_FRSKY_SPORT_TELEMETRY',['../pios__flight__config_8h.html#a6be60167c37a490b8240548f86841e7e',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fgcsrcvr',['PIOS_INCLUDE_GCSRCVR',['../pios__flight__config_8h.html#af9438740f04ee4c48c717dd2ed484e95',1,'pios_flight_config.h']]],
@@ -49,6 +47,7 @@ var searchData=
   ['pios_5finclude_5fusb_5fcdc',['PIOS_INCLUDE_USB_CDC',['../pios__flight__config_8h.html#a259509d5729961139b455f83b21406a3',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fusb_5fhid',['PIOS_INCLUDE_USB_HID',['../pios__flight__config_8h.html#a71ac5951782a849bcc916fe21f1df092',1,'pios_flight_config.h']]],
   ['pios_5finclude_5fwdg',['PIOS_INCLUDE_WDG',['../pios__flight__config_8h.html#ac32d1b30633c310fbeea61674a514850',1,'pios_flight_config.h']]],
+  ['pios_5fno_5fhw',['PIOS_NO_HW',['../tests_2logfs_2pios__config_8h.html#a3db362d74144659402734eca8acd5651',1,'pios_config.h']]],
   ['pios_5fservo_5fnum_5foutputs',['PIOS_SERVO_NUM_OUTPUTS',['../pios__posix_8h.html#ad402ef43fab77a45eecba0b90f1e4a0b',1,'pios_posix.h']]],
   ['pios_5fservo_5fnum_5ftimers',['PIOS_SERVO_NUM_TIMERS',['../pios__posix_8h.html#a8c4f93e592e9dc7341265971fb626f6f',1,'pios_posix.h']]],
   ['polar_5fa_5ferror',['POLAR_A_ERROR',['../polarst_8h.html#aa04a96588bc04ec01555b0aff01af2eb',1,'polarst.h']]],
@@ -63,6 +62,5 @@ var searchData=
   ['polar_5fpow',['POLAR_POW',['../polarst_8c.html#ac93e05257a848c4e6881bf95aded4e5e',1,'polarst.c']]],
   ['polar_5fradius_5ferror',['POLAR_RADIUS_ERROR',['../polarst_8h.html#aafe9eef22f206e822190c57c47c8cf5f',1,'polarst.h']]],
   ['ppoly',['PPOLY',['../galois_8c.html#a3b4bb064a8584f5bd089708f846fefb6',1,'galois.c']]],
-  ['pvd_5firqhandler',['PVD_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h']]],
-  ['pvportmalloc',['pvPortMalloc',['../_free_r_t_o_s_8h.html#a54fda4bafe462bc8771cc220d566c199',1,'FreeRTOS.h']]]
+  ['pvd_5firqhandler',['PVD_IRQHandler',['../_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f30x_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h'],['../_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#a045476dfaec8c84f5e16b06b937c0c18',1,'PVD_IRQHandler():&#160;pios_chibios_transition_priv.h']]]
 ];

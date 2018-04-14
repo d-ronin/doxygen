@@ -25,7 +25,7 @@ var actuator_8c =
     [ "channel_failsafe_value", "actuator_8c.html#ga7a3267eb69f45df86b17705f760373af", null ],
     [ "collective_curve", "actuator_8c.html#gaf68bce9df87514badace08f793262388", null ],
     [ "compute_mixer", "actuator_8c.html#ga4d51fb0c28b55d3e210c48503788a594", null ],
-    [ "compute_one_mixer", "actuator_8c.html#ga568206810bad83d13f36a0d7d5fc232d", null ],
+    [ "compute_one_mixer", "actuator_8c.html#gab0596cd92056ccbaa3a0998f3eddb1d0", null ],
     [ "DONT_BUILD_IF", "actuator_8c.html#ga5665843aba35d577b6358ed5ab0497fa", null ],
     [ "DONT_BUILD_IF", "actuator_8c.html#ga79c4dc6a758b6ec23a2a6838b1c5322e", null ],
     [ "DONT_BUILD_IF", "actuator_8c.html#ga206c99c9d0d1ab609b08531e73b6ed83", null ],
@@ -39,7 +39,6 @@ var actuator_8c =
     [ "set_failsafe", "actuator_8c.html#ga6e8c5a2f546ec4906bbeb387959a7b8d", null ],
     [ "__attribute__", "actuator_8c.html#ga45737103949f8579385cc29d2d6c51f9", null ],
     [ "actuator_interlock", "actuator_8c.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ],
-    [ "actuator_settings_updated", "actuator_8c.html#gacb12ed460451faae4bc03f774fe95933", null ],
     [ "actuatorSettings", "actuator_8c.html#ga5d6ccb3c032d3f09fd5128c847ec674b", null ],
     [ "airframe_type", "actuator_8c.html#ga2850723437c013e81ea5232f44b5e7f1", null ],
     [ "cur_cmd", "actuator_8c.html#gae7cf5fbb92e85eb753a489d4d30b2120", null ],
@@ -49,10 +48,10 @@ var actuator_8c =
     [ "flight_status_updated", "actuator_8c.html#ga66f2cde210a84b3f404f0dd94f8c62ea", null ],
     [ "hangtime_leakybucket_timeconstant", "actuator_8c.html#gac5e293fba6cbbad2ebd5182b3d9fa3e5", null ],
     [ "manual_control_cmd_updated", "actuator_8c.html#gac06e984663724f37717398baaaaef6b7", null ],
-    [ "mixer_settings_updated", "actuator_8c.html#ga33c0776f38e10ccb9b721c1568ab3bbe", null ],
     [ "motor_mixer", "actuator_8c.html#gaeea8740d6daee7a45e6cd419f92cf913", null ],
     [ "pending_cmd", "actuator_8c.html#gac5209ca6655df19899970a4a9176ab8d", null ],
     [ "queue", "actuator_8c.html#ga99a334ed9cdb3e7a7c694d5519d08d30", null ],
+    [ "settings_updated", "actuator_8c.html#ga20f7441302496e7d3b819a5939a36b14", null ],
     [ "taskHandle", "actuator_8c.html#gaa0ed8350d96aa81aa079fa3c8d5a134e", null ],
     [ "types_mixer", "actuator_8c.html#gaa8bd39157086bab21c5b5ecc55a39bdb", null ]
 ];

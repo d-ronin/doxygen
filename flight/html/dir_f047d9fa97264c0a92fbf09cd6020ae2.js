@@ -20,7 +20,7 @@ var dir_f047d9fa97264c0a92fbf09cd6020ae2 =
     [ "pios_gcsrcvr.c", "pios__gcsrcvr_8c.html", null ],
     [ "pios_hal.c", "pios__hal_8c.html", "pios__hal_8c" ],
     [ "pios_hcsr04.c", "pios__hcsr04_8c.html", null ],
-    [ "pios_heap.c", "_pi_o_s_2_common_2pios__heap_8c.html", "_pi_o_s_2_common_2pios__heap_8c" ],
+    [ "pios_heap.c", "_common_2pios__heap_8c.html", "_common_2pios__heap_8c" ],
     [ "pios_hmc5883.c", "pios__hmc5883_8c.html", null ],
     [ "pios_hmc5983.c", "pios__hmc5983_8c.html", null ],
     [ "pios_hmc5983_i2c.c", "pios__hmc5983__i2c_8c.html", null ],

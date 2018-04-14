@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('pios__dac_8c_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_DAC)</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;pios.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios_8h.html">pios.h</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__stm32_8h.html">pios_stm32.h</a>&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_tim.h&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__tim__priv_8h.html">pios_tim_priv.h</a>&quot;</span></div>
@@ -354,11 +354,12 @@ $(document).ready(function(){initNavTree('pios__dac_8c_source.html','');});
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_DAC */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="pios__stm32_8h_html"><div class="ttname"><a href="pios__stm32_8h.html">pios_stm32.h</a></div><div class="ttdoc">Types that are specific to the STM32 peripherals. </div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga5662158f04cd1f3772b35899a6eb21bb"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga5662158f04cd1f3772b35899a6eb21bb">PIOS_IRQ_Enable</a></div><div class="ttdeci">int32_t PIOS_IRQ_Enable(void)</div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__irq_8c_source.html#l00053">pios_irq.c:53</a></div></div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="structpios__dac__cfg_html"><div class="ttname"><a href="structpios__dac__cfg.html">pios_dac_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__dac_8h_source.html#l00042">pios_dac.h:42</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga3f2176d0aa8eff62d26ef3e3bc0fdec1"><div class="ttname"><a href="group___p_i_o_s.html#ga3f2176d0aa8eff62d26ef3e3bc0fdec1">PIOS_DAC_install_callback</a></div><div class="ttdeci">bool PIOS_DAC_install_callback(dac_dev_t dev, uint8_t priority, fill_dma_cb cb, void *ctx)</div></div>
 <div class="ttc" id="misc__math_8h_html"><div class="ttname"><a href="misc__math_8h.html">misc_math.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
-<div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="pios__dac_8h_html"><div class="ttname"><a href="pios__dac_8h.html">pios_dac.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga6ac589f6cd807d6bc4285ae0f1469987"><div class="ttname"><a href="group___p_i_o_s.html#ga6ac589f6cd807d6bc4285ae0f1469987">PIOS_DAC_init</a></div><div class="ttdeci">int PIOS_DAC_init(dac_dev_t *dev_out, const struct pios_dac_cfg *cfg)</div><div class="ttdoc">Allocate and initialise DAC device. </div></div>

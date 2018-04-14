@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -191,8 +191,6 @@ Functions</h2></td></tr>
 <tr class="separator:gad0b9bd8f45359133da342c354426cb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga079a96905407622d10643ce69c08b288"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga079a96905407622d10643ce69c08b288">getComPort</a> ()</td></tr>
 <tr class="separator:ga079a96905407622d10643ce69c08b288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadefbd4671bb99ddde5f4003872f332dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gadefbd4671bb99ddde5f4003872f332dd">session_managing_updated</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:gadefbd4671bb99ddde5f4003872f332dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f">update_object_instances</a> (uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint32_t inst_id)</td></tr>
 <tr class="separator:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga449e738a53e7d2140ef399bd51e2511d"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga449e738a53e7d2140ef399bd51e2511d">fileReqCallback</a> (void *ctx, uint8_t *buf, uint32_t <a class="el" href="pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc">file_id</a>, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint32_t len)</td></tr>
@@ -205,10 +203,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga058925ecc8ea2cd938fb3e9d21edb2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644">ackResendOrTimeout</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, int idx)</td></tr>
 <tr class="separator:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
-<tr class="separator:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga007b6d628b2388d567eda733a38e953b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga007b6d628b2388d567eda733a38e953b">sendRequestedObjs</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
-<tr class="separator:ga007b6d628b2388d567eda733a38e953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb0bcf94b657d0f75acaa18bae5b480d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafb0bcf94b657d0f75acaa18bae5b480d">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:gafb0bcf94b657d0f75acaa18bae5b480d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280a48bbd05288c56e6815670cede89a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga280a48bbd05288c56e6815670cede89a">sendRequestedObjs</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:ga280a48bbd05288c56e6815670cede89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe9341b34dfb706c0f819455fd6445bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb">gcsTelemetryStatsUpdated</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
 <tr class="separator:gafe9341b34dfb706c0f819455fd6445bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -229,7 +227,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00074">74</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00073">73</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -243,7 +241,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00069">69</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00068">68</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -257,7 +255,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00072">72</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00071">71</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -271,7 +269,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00062">62</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00061">61</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -285,7 +283,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00073">73</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00072">72</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -299,7 +297,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00066">66</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00065">65</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -313,7 +311,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00063">63</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00062">62</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -327,7 +325,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00068">68</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00067">67</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -341,7 +339,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00064">64</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00063">63</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -355,7 +353,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00065">65</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00064">64</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -369,7 +367,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00054">54</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00053">53</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -383,7 +381,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00058">58</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00057">57</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -397,7 +395,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00070">70</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00069">69</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -412,7 +410,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00115">115</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00114">114</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -464,11 +462,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00521">521</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00520">520</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga659839ec018f0e5accebd2ae20ef5e58"></a>
+<a class="anchor" id="gafb0bcf94b657d0f75acaa18bae5b480d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -476,7 +474,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ackHousekeeping </td>
+          <td class="memname">static bool ackHousekeeping </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a>&#160;</td>
           <td class="paramname"><em>telem</em></td><td>)</td>
@@ -497,7 +495,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00362">362</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00356">356</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -541,7 +539,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00316">316</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00310">310</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -593,7 +591,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Consider nicer wakeup mechanism here. </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00384">384</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00383">383</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -658,7 +656,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes filled, 0 on EOF, negative on error. </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00440">440</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00439">439</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -708,7 +706,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Called each time the GCS telemetry stats object is updated. Trigger a flight telemetry stats update if a connection is not yet established. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00799">799</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00811">811</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -734,7 +732,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Determine input/output com port as highest priority available </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00919">919</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00931">931</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -771,7 +769,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Processes queue events </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00557">557</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00556">556</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -814,7 +812,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00223">223</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00217">217</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -840,7 +838,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00141">141</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00138">138</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -891,11 +889,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00489">489</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00488">488</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga007b6d628b2388d567eda733a38e953b"></a>
+<a class="anchor" id="ga280a48bbd05288c56e6815670cede89a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -903,7 +901,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void sendRequestedObjs </td>
+          <td class="memname">static bool sendRequestedObjs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a>&#160;</td>
           <td class="paramname"><em>telem</em></td><td>)</td>
@@ -917,56 +915,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00602">602</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gadefbd4671bb99ddde5f4003872f332dd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void session_managing_updated </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *&#160;</td>
-          <td class="paramname"><em>ev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>SessionManaging object updated callback </p>
-
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00944">944</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00601">601</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +968,7 @@ Variables</h2></td></tr>
 <dd>
 -1 Failure </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00782">782</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00794">794</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +990,7 @@ Variables</h2></td></tr>
 <dd>
 0 on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00184">184</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00181">181</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1068,7 +1017,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Telemetry transmit task. Processes queue events and periodic updates. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00726">726</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00738">738</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1039,7 @@ Variables</h2></td></tr>
 <dd>
 0 on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00150">150</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00147">147</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1066,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Telemetry transmit task </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00645">645</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00657">657</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1119,7 @@ Variables</h2></td></tr>
 <dd>
 number of bytes transmitted on success </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00763">763</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00775">775</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1213,8 +1162,9 @@ number of bytes transmitted on success </dd></dl>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>just send the new instance, reqack. </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00971">971</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00959">959</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1213,7 @@ number of bytes transmitted on success </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00256">256</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00250">250</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1239,7 @@ number of bytes transmitted on success </dd></dl>
 </div><div class="memdoc">
 <p>Update the telemetry settings, called on startup. </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00905">905</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00917">917</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1266,7 @@ number of bytes transmitted on success </dd></dl>
 </div><div class="memdoc">
 <p>Update telemetry statistics and handle connection handshake </p>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00813">813</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00825">825</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1289,7 @@ number of bytes transmitted on success </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00109">109</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00108">108</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>

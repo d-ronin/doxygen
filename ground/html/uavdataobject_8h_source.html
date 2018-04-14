@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -150,19 +150,25 @@ $(document).ready(function(){initNavTree('uavdataobject_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<a class="code" href="group___u_a_v_objects_plugin.html#ga46e0ca858c7ae3bd991cbd13319515f6">dirtyClone</a>() = 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> getIsPresentOnHardware() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> setIsPresentOnHardware(<span class="keywordtype">bool</span> value);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;signals:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> presentOnHardwareChanged(<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> presentOnHardwareChanged(<span class="keywordtype">bool</span> present);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> getPresenceKnown() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> setReceived();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> getReceived();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setIsPresentOnHardware(<span class="keywordtype">bool</span> value = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> resetIsPresentOnHardware();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_u_a_v_meta_object.html">UAVMetaObject</a> *mobj;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> isSet;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> isPresentOnHardware;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // UAVDATAOBJECT_H</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;signals:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> presentOnHardwareChanged(<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> presentOnHardwareChanged(<span class="keywordtype">bool</span> present);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_u_a_v_meta_object.html">UAVMetaObject</a> *mobj;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> isSet;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">enum</span> presence { notPresent, unknownPresent, isPresent, isPresentAndReceived }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                isPresentOnHardware;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // UAVDATAOBJECT_H</span></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga6cca5e5bf5d4f7ecfb03ef7cc9a93a95"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga6cca5e5bf5d4f7ecfb03ef7cc9a93a95">UAVObject::setMetadata</a></div><div class="ttdeci">virtual void setMetadata(const Metadata &amp;mdata)=0</div></div>
 <div class="ttc" id="uavobjects__global_8h_html"><div class="ttname"><a href="uavobjects__global_8h.html">uavobjects_global.h</a></div></div>
 <div class="ttc" id="uavobjectfield_8h_html"><div class="ttname"><a href="uavobjectfield_8h.html">uavobjectfield.h</a></div></div>

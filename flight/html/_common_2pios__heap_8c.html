@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/PiOS/posix/pios_heap.c File Reference</title>
+<title>dRonin: flight/PiOS/Common/pios_heap.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('_pi_o_s_2posix_2pios__heap_8c.html','');});
+$(document).ready(function(){initNavTree('_common_2pios__heap_8c.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('_pi_o_s_2posix_2pios__heap_8c.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -114,12 +115,19 @@ $(document).ready(function(){initNavTree('_pi_o_s_2posix_2pios__heap_8c.html',''
 <div class="title">pios_heap.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;pios.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="pios_8h_source.html">pios.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__heap_8h_source.html">pios_heap.h</a>&quot;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
 </div>
-<p><a href="_pi_o_s_2posix_2pios__heap_8c_source.html">Go to the source code of this file.</a></p>
+<p><a href="_common_2pios__heap_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__heap.html">pios_heap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga1d49c59b00a54e119c54ba3cc919eb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga1d49c59b00a54e119c54ba3cc919eb59">DEBUG_MALLOC_FAILURES</a>&#160;&#160;&#160;0</td></tr>
@@ -127,61 +135,66 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga875b97781ef559d3e8e7b9eb3555cc19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pi_o_s_2posix_2pios__heap_8c.html#ga875b97781ef559d3e8e7b9eb3555cc19">malloc_failed_hook</a> (void)</td></tr>
+<tr class="memitem:ga875b97781ef559d3e8e7b9eb3555cc19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga875b97781ef559d3e8e7b9eb3555cc19">malloc_failed_hook</a> (void)</td></tr>
 <tr class="separator:ga875b97781ef559d3e8e7b9eb3555cc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43be76671b59015bf879afe2c38267a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga43be76671b59015bf879afe2c38267a3">PIOS_heap_malloc_failed_p</a> (void)</td></tr>
 <tr class="separator:ga43be76671b59015bf879afe2c38267a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga652f00de3dd4045772af1e734819e4d4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga652f00de3dd4045772af1e734819e4d4">is_ptr_in_heap_p</a> (const struct <a class="el" href="structpios__heap.html">pios_heap</a> *heap, void *buf)</td></tr>
+<tr class="separator:ga652f00de3dd4045772af1e734819e4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad10107cdc1269b95bdaacea8d44e538c"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gad10107cdc1269b95bdaacea8d44e538c">simple_malloc</a> (struct <a class="el" href="structpios__heap.html">pios_heap</a> *heap, size_t size)</td></tr>
+<tr class="separator:gad10107cdc1269b95bdaacea8d44e538c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8be16187ca7e296042624e07126b2ef2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga8be16187ca7e296042624e07126b2ef2">simple_free</a> (struct <a class="el" href="structpios__heap.html">pios_heap</a> *heap, void *buf)</td></tr>
+<tr class="separator:ga8be16187ca7e296042624e07126b2ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab35020da25ae4f2ca6e7724abbf66d93"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gab35020da25ae4f2ca6e7724abbf66d93">simple_get_free_bytes</a> (struct <a class="el" href="structpios__heap.html">pios_heap</a> *heap)</td></tr>
+<tr class="separator:gab35020da25ae4f2ca6e7724abbf66d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6991f0e5c903a845181615d857cc1bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gac6991f0e5c903a845181615d857cc1bd">simple_extend_heap</a> (struct <a class="el" href="structpios__heap.html">pios_heap</a> *heap, size_t <a class="el" href="storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9">bytes</a>)</td></tr>
+<tr class="separator:gac6991f0e5c903a845181615d857cc1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79dd6b255a06cb7cb43adc98d8a3c8df"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga79dd6b255a06cb7cb43adc98d8a3c8df">pvPortMalloc</a> (size_t size) <a class="el" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_malloc&quot;)</td></tr>
+<tr class="separator:ga79dd6b255a06cb7cb43adc98d8a3c8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadfdacf339bee3a83f6d164cc0f21ea43"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a> (size_t size)</td></tr>
 <tr class="separator:gadfdacf339bee3a83f6d164cc0f21ea43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf68ad55bd0dd2b1561d544a45d3c9533"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gaf68ad55bd0dd2b1561d544a45d3c9533">PIOS_malloc_no_dma</a> (size_t size)</td></tr>
 <tr class="separator:gaf68ad55bd0dd2b1561d544a45d3c9533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55ae4353195ca5dae6aa2e45f7bf9b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga55ae4353195ca5dae6aa2e45f7bf9b93">vPortFree</a> (void *buf) <a class="el" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_free&quot;)))</td></tr>
+<tr class="separator:ga55ae4353195ca5dae6aa2e45f7bf9b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28f859a3f736ce01c398002505b53b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga28f859a3f736ce01c398002505b53b76">PIOS_free</a> (void *buf)</td></tr>
 <tr class="separator:ga28f859a3f736ce01c398002505b53b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f346e5307fcbe8b926b8a996442d57c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga9f346e5307fcbe8b926b8a996442d57c">PIOS_heap_initialize_blocks</a> (void)</td></tr>
-<tr class="separator:ga9f346e5307fcbe8b926b8a996442d57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8bb6ac86bf47b7be6720a845e6e5fad3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga8bb6ac86bf47b7be6720a845e6e5fad3">PIOS_heap_get_free_size</a> (void)</td></tr>
-<tr class="separator:ga8bb6ac86bf47b7be6720a845e6e5fad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c28a12b313bc248be0cb7a37ed81bb7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga0c28a12b313bc248be0cb7a37ed81bb7">xPortGetFreeHeapSize</a> (void)</td></tr>
+<tr class="separator:ga0c28a12b313bc248be0cb7a37ed81bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0e27b38031438c40b33247d9edfdb29"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gae0e27b38031438c40b33247d9edfdb29">PIOS_fastheap_get_free_size</a> (void)</td></tr>
 <tr class="separator:gae0e27b38031438c40b33247d9edfdb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f346e5307fcbe8b926b8a996442d57c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga9f346e5307fcbe8b926b8a996442d57c">PIOS_heap_initialize_blocks</a> (void)</td></tr>
+<tr class="separator:ga9f346e5307fcbe8b926b8a996442d57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18a8f50dca1e6b6a6e000ccdf6955629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga18a8f50dca1e6b6a6e000ccdf6955629">PIOS_heap_increase_size</a> (size_t <a class="el" href="storm32bgc_8c.html#aea539738daceba8bf54f30dbb1601eb9">bytes</a>)</td></tr>
+<tr class="separator:ga18a8f50dca1e6b6a6e000ccdf6955629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53794c5117195586a0b3d4ee7be2f458"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga53794c5117195586a0b3d4ee7be2f458">_sbrk</a> (int incr)</td></tr>
+<tr class="separator:ga53794c5117195586a0b3d4ee7be2f458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:gaaa23bba1b76fc12ec0795058f999c05d"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gaaa23bba1b76fc12ec0795058f999c05d">malloc_failed_flag</a> = false</td></tr>
 <tr class="separator:gaaa23bba1b76fc12ec0795058f999c05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1860210b6468004dddc9233b10bfdb8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__heap.html">pios_heap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gad1860210b6468004dddc9233b10bfdb8">__attribute__</a></td></tr>
+<tr class="separator:gad1860210b6468004dddc9233b10bfdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29d5545f69b3b7a8e74185728a24829e"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#ga29d5545f69b3b7a8e74185728a24829e">_eheap</a></td></tr>
+<tr class="separator:ga29d5545f69b3b7a8e74185728a24829e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6f393fffef8d9e51e5ed1ab62261076"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gab6f393fffef8d9e51e5ed1ab62261076">_sheap</a></td></tr>
+<tr class="separator:gab6f393fffef8d9e51e5ed1ab62261076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac37388438964332fa663ddcf91f80a52"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__heap.html">pios_heap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gac37388438964332fa663ddcf91f80a52">pios_standard_heap</a></td></tr>
+<tr class="separator:gac37388438964332fa663ddcf91f80a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf66f77446c31149307d114f4e52e89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gacf66f77446c31149307d114f4e52e89a">weak</a></td></tr>
+<tr class="separator:gacf66f77446c31149307d114f4e52e89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8a65c33cedc1aca97b7454787b0e9d4"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gaa8a65c33cedc1aca97b7454787b0e9d4">sbrk_pool</a> [1024]</td></tr>
+<tr class="separator:gaa8a65c33cedc1aca97b7454787b0e9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab216d5e2678c3e3f7a63294dd35c0c74"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___h_e_a_p.html#gab216d5e2678c3e3f7a63294dd35c0c74">brk_ptr</a> = (uintptr_t) <a class="el" href="group___p_i_o_s___h_e_a_p.html#gaa8a65c33cedc1aca97b7454787b0e9d4">sbrk_pool</a></td></tr>
+<tr class="separator:gab216d5e2678c3e3f7a63294dd35c0c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga875b97781ef559d3e8e7b9eb3555cc19"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void malloc_failed_hook </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_pi_o_s_2posix_2pios__heap_8c_source.html#l00035">35</a> of file <a class="el" href="_pi_o_s_2posix_2pios__heap_8c_source.html">pios_heap.c</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_6575c3929beb1e734d50be16048eac24.html">posix</a></li><li class="navelem"><a class="el" href="_pi_o_s_2posix_2pios__heap_8c.html">pios_heap.c</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_f047d9fa97264c0a92fbf09cd6020ae2.html">Common</a></li><li class="navelem"><a class="el" href="_common_2pios__heap_8c.html">pios_heap.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"spectrogramplotdata_8h_source.html":[6,0,0,0,0,1,29,1,3],
+"spectrogramscopeconfig_8cpp.html":[6,0,0,0,0,1,29,1,4],
 "spectrogramscopeconfig_8cpp_source.html":[6,0,0,0,0,1,29,1,4],
 "spectrogramscopeconfig_8h.html":[6,0,0,0,0,1,29,1,5],
 "spectrogramscopeconfig_8h_source.html":[6,0,0,0,0,1,29,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "taulinkgadgetwidget_8h_source.html":[6,0,0,0,0,1,34,5],
 "taulinkplugin_8cpp.html":[6,0,0,0,0,1,34,6],
 "taulinkplugin_8cpp_source.html":[6,0,0,0,0,1,34,6],
-"taulinkplugin_8h.html":[6,0,0,0,0,1,34,7],
-"taulinkplugin_8h_source.html":[6,0,0,0,0,1,34,7],
-"telemetry_8cpp.html":[6,0,0,0,0,1,41,0]
+"taulinkplugin_8h.html":[6,0,0,0,0,1,34,7]
 };

@@ -22,7 +22,6 @@ var targets_2lux_2board_info_2pios__board_8h =
     [ "PIOS_DMA_MAX_CHANNELS", "targets_2lux_2board-info_2pios__board_8h.html#gab49a10e72bc5f331b5e3b3a92671e069", null ],
     [ "PIOS_DMA_MAX_HANDLERS_PER_CHANNEL", "targets_2lux_2board-info_2pios__board_8h.html#ga6b94edc71b12bbba8f4d137995e20e43", null ],
     [ "PIOS_DSM_NUM_INPUTS", "targets_2lux_2board-info_2pios__board_8h.html#gabf39f1bc59b5af7e8f138bb394770300", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "targets_2lux_2board-info_2pios__board_8h.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_HSUM_MAX_DEVS", "targets_2lux_2board-info_2pios__board_8h.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "targets_2lux_2board-info_2pios__board_8h.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_INTERNAL_ADC_COUNT", "targets_2lux_2board-info_2pios__board_8h.html#gac543c87b4e6f3cdae8e28df658fa42b3", null ],

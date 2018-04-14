@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('pios__fileout_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Project Includes */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;pios.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios_8h.html">pios.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__fileout__priv_8h.html">pios_fileout_priv.h</a>&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__thread_8h.html">pios_thread.h</a>&quot;</span></div>
@@ -222,9 +222,10 @@ $(document).ready(function(){initNavTree('pios__fileout_8c_source.html','');});
 <div class="ttc" id="structpios__fileout__dev_html_a3b47f5686f3c1c369a829ce2ccb8e185"><div class="ttname"><a href="structpios__fileout__dev.html#a3b47f5686f3c1c369a829ce2ccb8e185">pios_fileout_dev::fh</a></div><div class="ttdeci">FILE * fh</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout__priv_8h_source.html#l00043">pios_fileout_priv.h:43</a></div></div>
 <div class="ttc" id="structpios__fileout__dev_html_ab91b60fece94660f602d33d02375fe0a"><div class="ttname"><a href="structpios__fileout__dev.html#ab91b60fece94660f602d33d02375fe0a">pios_fileout_dev::tx_out_context</a></div><div class="ttdeci">uintptr_t tx_out_context</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout__priv_8h_source.html#l00045">pios_fileout_priv.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_ga1f250524dba77a4edc9d8bf56d5b0baf"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#ga1f250524dba77a4edc9d8bf56d5b0baf">PIOS_FILEOUT_TxStart</a></div><div class="ttdeci">static void PIOS_FILEOUT_TxStart(uintptr_t udp_id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00085">pios_fileout.c:85</a></div></div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="group___p_i_o_s___f_i_l_e_o_u_t_html_gaa7d42c4c6c196836914b6a4490b47ccf"><div class="ttname"><a href="group___p_i_o_s___f_i_l_e_o_u_t.html#gaa7d42c4c6c196836914b6a4490b47ccf">find_file_dev_by_id</a></div><div class="ttdeci">static pios_fileout_dev * find_file_dev_by_id(uintptr_t tcp)</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout_8c_source.html#l00056">pios_fileout.c:56</a></div></div>
 <div class="ttc" id="pios__fileout__priv_8h_html_a44c0a85dffa2a9f2a424935155f7e895"><div class="ttname"><a href="pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895">PIOS_FILEOUT_TX_BUFFER_SIZE</a></div><div class="ttdeci">#define PIOS_FILEOUT_TX_BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout__priv_8h_source.html#l00037">pios_fileout_priv.h:37</a></div></div>
-<div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_pi_o_s_2_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="structpios__fileout__dev_html_a0ecf88e652322a1f25bcf99f264faf46"><div class="ttname"><a href="structpios__fileout__dev.html#a0ecf88e652322a1f25bcf99f264faf46">pios_fileout_dev::tx_buffer</a></div><div class="ttdeci">uint8_t tx_buffer[PIOS_FILEOUT_TX_BUFFER_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout__priv_8h_source.html#l00047">pios_fileout_priv.h:47</a></div></div>
 <div class="ttc" id="pios__crossfire_8h_html_ab2b3adeb2a67e656ff030b56727fd0ac"><div class="ttname"><a href="pios__crossfire_8h.html#ab2b3adeb2a67e656ff030b56727fd0ac">length</a></div><div class="ttdeci">uint8_t length</div><div class="ttdef"><b>Definition:</b> <a href="pios__crossfire_8h_source.html#l00047">pios_crossfire.h:47</a></div></div>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,10 +135,10 @@ $(document).ready(function(){initNavTree('pios__video__quadspi_8c_source.html','
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* !defined(PIOS_VIDEO_QUADSPI_Y_OFFSET) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_FREERTOS)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_free_r_t_o_s_8h.html">FreeRTOS.h</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;FreeRTOS.h&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PIOS_INCLUDE_FREERTOS) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;pios.h&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios_8h.html">pios.h</a>&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__video_8h.html">pios_video.h</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__semaphore_8h.html">pios_semaphore.h</a>&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -421,6 +421,7 @@ $(document).ready(function(){initNavTree('pios__video__quadspi_8c_source.html','
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga0807849219adb9ef2b5e589e7fabe4ca"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga0807849219adb9ef2b5e589e7fabe4ca">pios_video_type_boundary_act</a></div><div class="ttdeci">const struct pios_video_type_boundary * pios_video_type_boundary_act</div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gac63eaa7410fb308909ea4bcaef4a0996"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gac63eaa7410fb308909ea4bcaef4a0996">pios_video_cfg::vsync</a></div><div class="ttdeci">const struct pios_exti_cfg * vsync</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00103">pios_video.h:103</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gac46f2715467f7b9af717ab4cace06d77"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gac46f2715467f7b9af717ab4cace06d77">PIOS_Video_SetXScale</a></div><div class="ttdeci">void PIOS_Video_SetXScale(uint8_t x_scale)</div></div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="structpios__semaphore_html"><div class="ttname"><a href="structpios__semaphore.html">pios_semaphore</a></div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__semaphore_8c_source.html#l00029">pios_semaphore.c:29</a></div></div>
 <div class="ttc" id="structpios__video__type__boundary_html"><div class="ttname"><a href="structpios__video__type__boundary.html">pios_video_type_boundary</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00039">pios_video.h:39</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga1b3f48374f2b276c5d6b57fe2c5890d6"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga1b3f48374f2b276c5d6b57fe2c5890d6">pios_video_type_cfg::graphics_line_start</a></div><div class="ttdeci">uint8_t graphics_line_start</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00089">pios_video.h:89</a></div></div>
@@ -451,7 +452,6 @@ $(document).ready(function(){initNavTree('pios__video__quadspi_8c_source.html','
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gac1d2f9e5919fe49a0cf46cea8bc9591f"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gac1d2f9e5919fe49a0cf46cea8bc9591f">PIOS_Video_GetLines</a></div><div class="ttdeci">uint16_t PIOS_Video_GetLines(void)</div></div>
 <div class="ttc" id="structpios__video__type__cfg_html"><div class="ttname"><a href="structpios__video__type__cfg.html">pios_video_type_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00086">pios_video.h:86</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga16fa09f7a7da64a561ab74ea0f78e62d"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga16fa09f7a7da64a561ab74ea0f78e62d">PIOS_Video_SetLevels</a></div><div class="ttdeci">void PIOS_Video_SetLevels(uint8_t, uint8_t)</div></div>
-<div class="ttc" id="_free_r_t_o_s_8h_html"><div class="ttname"><a href="_free_r_t_o_s_8h.html">FreeRTOS.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga2a69394ccec630effe28538abf5a0e8d"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga2a69394ccec630effe28538abf5a0e8d">SWAP_BUFFS</a></div><div class="ttdeci">#define SWAP_BUFFS(tmp, a, b)</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00152">pios_video.h:152</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_gacf32f403bbd5564027438bf64b33c0b1"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#gacf32f403bbd5564027438bf64b33c0b1">BUFFER_WIDTH</a></div><div class="ttdeci">#define BUFFER_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="pios__video_8h_source.html#l00147">pios_video.h:147</a></div></div>
 <div class="ttc" id="group___p_i_o_s___v_i_d_e_o_html_ga85b37fc7c59ec730520859920f0e1efb"><div class="ttname"><a href="group___p_i_o_s___v_i_d_e_o.html#ga85b37fc7c59ec730520859920f0e1efb">PIOS_Vsync_ISR</a></div><div class="ttdeci">bool PIOS_Vsync_ISR()</div></div>

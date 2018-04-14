@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('platform_8h_source.html','');});
 <a href="platform_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BF_PLATFORM_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BF_PLATFORM_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;pios.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios_8h.html">pios.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__thread_8h.html">pios_thread.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_4WAY</span></div>
@@ -308,8 +308,9 @@ $(document).ready(function(){initNavTree('platform_8h_source.html','');});
 <div class="ttc" id="pios__inlinedelay_8h_html"><div class="ttname"><a href="pios__inlinedelay_8h.html">pios_inlinedelay.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_i_o_html_gaeb25a4987801b7afae0d4d9477963e14"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#gaeb25a4987801b7afae0d4d9477963e14">dio_low</a></div><div class="ttdeci">static void dio_low(dio_tag_t t)</div><div class="ttdoc">Sets an output GPIO low. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00205">pios_dio.h:205</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_l_a_y_html_ga069586911fc7a5a023d4f58d340ad909"><div class="ttname"><a href="group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909">PIOS_DELAY_GetuS</a></div><div class="ttdeci">uint32_t PIOS_DELAY_GetuS()</div><div class="ttdoc">Query the Delay timer for the current uS. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__delay_8c_source.html#l00173">pios_delay.c:173</a></div></div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="group___p_i_o_s___d_i_o_html_ga499c616ea7a11c877f32ceb9a5c7b0fe"><div class="ttname"><a href="group___p_i_o_s___d_i_o.html#ga499c616ea7a11c877f32ceb9a5c7b0fe">dio_set_input</a></div><div class="ttdeci">static void dio_set_input(dio_tag_t t, enum dio_pull pull)</div><div class="ttdoc">Configures a GPIO as an input. </div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2inc_2pios__dio_8h_source.html#l00376">pios_dio.h:376</a></div></div>
-<div class="ttc" id="group___p_i_o_s___w_d_g_html_ga49f0e0259a9db3551d437e5d74fd48a1"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a></div><div class="ttdeci">void PIOS_WDG_Clear(void)</div><div class="ttdoc">Clear the watchdog timer. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00140">pios_wdg.c:140</a></div></div>
+<div class="ttc" id="group___p_i_o_s___w_d_g_html_ga49f0e0259a9db3551d437e5d74fd48a1"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a></div><div class="ttdeci">void PIOS_WDG_Clear(void)</div><div class="ttdoc">Clear the watchdog timer. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00147">pios_wdg.c:147</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_e_r_v_o_html_gac6dc42811aebe0e74f9cbfd3b62df862"><div class="ttname"><a href="group___p_i_o_s___s_e_r_v_o.html#gac6dc42811aebe0e74f9cbfd3b62df862">PIOS_Servo_GetPins</a></div><div class="ttdeci">int PIOS_Servo_GetPins(dio_tag_t *dios, int max_dio)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_2pios__servo_8c_source.html#l00163">pios_servo.c:163</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga5e15e044cb0abca89b5655a359d1ef03"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga5e15e044cb0abca89b5655a359d1ef03">PIOS_COM_ReceiveBuffer</a></div><div class="ttdeci">uint16_t PIOS_COM_ReceiveBuffer(uintptr_t com_id, uint8_t *buf, uint16_t buf_len, uint32_t timeout_ms)</div></div>

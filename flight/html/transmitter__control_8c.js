@@ -17,7 +17,7 @@ var transmitter__control_8c =
     [ "is_low_throttle_for_arming", "transmitter__control_8c.html#ga84bf951a81f53c4d25d2de935085449f", null ],
     [ "ok_to_arm", "transmitter__control_8c.html#gab4d9e85efcf5f9dafe0083f8599dfcf9", null ],
     [ "perform_tc_settings_update", "transmitter__control_8c.html#gae35c4cd93249576871dfca4cd9c4a23e", null ],
-    [ "process_transmitter_events", "transmitter__control_8c.html#gafb9e17073cd7678d8f700cd4e5ddb137", null ],
+    [ "process_transmitter_events", "transmitter__control_8c.html#gafd44aa61e11eb5db3d3234198cff198b", null ],
     [ "reset_receiver_timer", "transmitter__control_8c.html#gae7668231582cbe152c919d7523277376", null ],
     [ "resetRcvrActivity", "transmitter__control_8c.html#ga33384f5974fe891d5deb5ed3fac3842d", null ],
     [ "rssitype_to_channelgroup", "transmitter__control_8c.html#ga73eb0a5c9401e151b5fd0a3003ce45dd", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('led__pwm_8c_source.html','');});
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pios.h&quot;</span>               <span class="comment">/* PIOS_LED_* -- FIXME: include is too coarse */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios_8h.html">pios.h</a>&quot;</span>               <span class="comment">/* PIOS_LED_* -- FIXME: include is too coarse */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led__pwm_8h.html">led_pwm.h</a>&quot;</span>            <span class="comment">/* API definition */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group___common.html#gabebd4b64d3f024e81d276b97661914b3">   29</a></span>&#160;<span class="keyword">static</span> uint32_t <a class="code" href="group___common.html#gabebd4b64d3f024e81d276b97661914b3">led_pwm_on_p</a>(uint32_t pwm_period, uint32_t pwm_sweep_steps, uint32_t uptime, uint8_t *fraction) {</div>
@@ -245,6 +245,7 @@ $(document).ready(function(){initNavTree('led__pwm_8c_source.html','');});
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="ttc" id="group___common_html_gabebd4b64d3f024e81d276b97661914b3"><div class="ttname"><a href="group___common.html#gabebd4b64d3f024e81d276b97661914b3">led_pwm_on_p</a></div><div class="ttdeci">static uint32_t led_pwm_on_p(uint32_t pwm_period, uint32_t pwm_sweep_steps, uint32_t uptime, uint8_t *fraction)</div><div class="ttdef"><b>Definition:</b> <a href="led__pwm_8c_source.html#l00029">led_pwm.c:29</a></div></div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="group___common_html_ga3f824c1ee5eb9b7f632c2a371abb1407"><div class="ttname"><a href="group___common.html#ga3f824c1ee5eb9b7f632c2a371abb1407">led_pwm_update_leds</a></div><div class="ttdeci">bool led_pwm_update_leds(struct led_pwm_state *leds)</div><div class="ttdef"><b>Definition:</b> <a href="led__pwm_8c_source.html#l00082">led_pwm.c:82</a></div></div>
 <div class="ttc" id="structled__pwm__state_html_a689ddd487a2599dd4829ffd8ac3ed4e0"><div class="ttname"><a href="structled__pwm__state.html#a689ddd487a2599dd4829ffd8ac3ed4e0">led_pwm_state::pwm_2_sweep_steps</a></div><div class="ttdeci">uint32_t pwm_2_sweep_steps</div><div class="ttdef"><b>Definition:</b> <a href="led__pwm_8h_source.html#l00041">led_pwm.h:41</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_gaec0f5ba8e0745b50dd791e12cc04d8aa"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a></div><div class="ttdeci">void PIOS_ANNUNC_Off(uint32_t annunc_id)</div></div>

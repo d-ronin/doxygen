@@ -73,7 +73,7 @@ var group___control =
     [ "MODULE_HIPRI_INITCALL", "group___control.html#gae763f46f543e67fc1ca8e5fe41f67d63", null ],
     [ "ok_to_arm", "group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9", null ],
     [ "perform_tc_settings_update", "group___control.html#gae35c4cd93249576871dfca4cd9c4a23e", null ],
-    [ "process_transmitter_events", "group___control.html#gafb9e17073cd7678d8f700cd4e5ddb137", null ],
+    [ "process_transmitter_events", "group___control.html#gafd44aa61e11eb5db3d3234198cff198b", null ],
     [ "reset_receiver_timer", "group___control.html#gae7668231582cbe152c919d7523277376", null ],
     [ "resetRcvrActivity", "group___control.html#ga33384f5974fe891d5deb5ed3fac3842d", null ],
     [ "rssitype_to_channelgroup", "group___control.html#ga73eb0a5c9401e151b5fd0a3003ce45dd", null ],

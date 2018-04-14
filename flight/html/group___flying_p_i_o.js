@@ -4,7 +4,6 @@ var group___flying_p_i_o =
     [ "system_stm32f0xx.c", "system__stm32f0xx_8c.html", null ],
     [ "PIOS_ADC_SUB_DRIVER_MAX_INSTANCES", "group___flying_p_i_o.html#ga2be0b313025f4a19c9ac7d5f05d94000", null ],
     [ "PIOS_DSM_NUM_INPUTS", "group___flying_p_i_o.html#gabf39f1bc59b5af7e8f138bb394770300", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___flying_p_i_o.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_HSUM_MAX_DEVS", "group___flying_p_i_o.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "group___flying_p_i_o.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_INCLUDE_ADC", "group___flying_p_i_o.html#ga28ae61b1409ab23bb43878990ee0d625", null ],

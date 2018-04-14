@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -322,58 +322,57 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">// See also pios_board.c</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">//------------------------</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad9504d2174472de2d678814e430678c9">  225</a></span>&#160;<span class="preprocessor">#define PIOS_RCVR_MAX_CHANNELS      12</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga7f93f74c93a49c6f7b372dbb55b851f6">  226</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GCSRCVR_TIMEOUT_MS     100</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">// Receiver PPM input</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga288a8e6f061b1dbd7930b5ffdf805c69">  231</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS   8</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">// Servo outputs</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaf11e7ae7e32bacf0180ba8d6f144488">  236</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">  237</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION            0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">// Timer controller settings</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="group___pip_x.html#gabed34fab9b2b2c4c92ecc825c75c9244">  242</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                       3</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">// USB</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  247</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                        1</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga97076c74cb197efc31d8700031501a69">  248</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_GPIO_PORT               GPIOC</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga084db9081fd3d7c0a14863acfcc1af7c">  249</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_GPIO_PIN                GPIO_Pin_15</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad74175c4c77c23fb1045cf101ae97dcc">  250</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_EXTI_LINE               EXTI_Line15</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">// RFM22</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RFM22B)</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t pios_rfm22b_id;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">// Reed-Solomon ECC</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga75691040c0909ea4c06cd3d87f3f01b2">  264</a></span>&#160;<span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  270</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  271</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  272</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  273</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  274</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">// Receiver PPM input</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga288a8e6f061b1dbd7930b5ffdf805c69">  230</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS   8</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// Servo outputs</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaf11e7ae7e32bacf0180ba8d6f144488">  235</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">  236</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION            0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// Timer controller settings</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="group___pip_x.html#gabed34fab9b2b2c4c92ecc825c75c9244">  241</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                       3</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">// USB</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="group___pip_x.html#gac6f2f934014b1b5a79f6a26cdd75e6ca">  246</a></span>&#160;<span class="preprocessor">#define PIOS_USB_ENABLED                        1</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga97076c74cb197efc31d8700031501a69">  247</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_GPIO_PORT               GPIOC</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga084db9081fd3d7c0a14863acfcc1af7c">  248</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_GPIO_PIN                GPIO_Pin_15</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad74175c4c77c23fb1045cf101ae97dcc">  249</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_EXTI_LINE               EXTI_Line15</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">// RFM22</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RFM22B)</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t pios_rfm22b_id;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">// Reed-Solomon ECC</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga75691040c0909ea4c06cd3d87f3f01b2">  263</a></span>&#160;<span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  269</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  270</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  271</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  272</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  273</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___pip_x_html_ga7bf37c2a11a82f3cee715b9e09638dce"><div class="ttname"><a href="group___pip_x.html#ga7bf37c2a11a82f3cee715b9e09638dce">pios_com_radio_id</a></div><div class="ttdeci">uintptr_t pios_com_radio_id</div></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___pip_x_html_ga921f0eb0351c5bfb72fa30333cd8dbe1"><div class="ttname"><a href="group___pip_x.html#ga921f0eb0351c5bfb72fa30333cd8dbe1">pios_com_telem_uart_telem_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_uart_telem_id</div></div>

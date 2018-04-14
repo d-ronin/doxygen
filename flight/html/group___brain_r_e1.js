@@ -53,7 +53,6 @@ var group___brain_r_e1 =
     [ "PIOS_COM_TELEM_USB", "group___brain_r_e1.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "group___brain_r_e1.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_DSM_NUM_INPUTS", "group___brain_r_e1.html#gabf39f1bc59b5af7e8f138bb394770300", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "group___brain_r_e1.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_HSUM_MAX_DEVS", "group___brain_r_e1.html#gad59135d54dcccdf2854a3b39fb0494f5", null ],
     [ "PIOS_HSUM_NUM_INPUTS", "group___brain_r_e1.html#ga2a5b4da2757e6727567656c3a9025ccd", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___brain_r_e1.html#ga464462d5068d115f79148efdffefb418", null ],

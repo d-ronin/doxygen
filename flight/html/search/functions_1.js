@@ -4,7 +4,7 @@ var searchData=
   ['accumulate_5fgyro_5fcompute',['accumulate_gyro_compute',['../group___attitude_module.html#ga495f3b515a8ba755fdce36d7ec488b1c',1,'attitude.c']]],
   ['accumulate_5fgyro_5fzero',['accumulate_gyro_zero',['../group___attitude_module.html#gaa5f9a078fc70b1ba078054b1b947176f',1,'attitude.c']]],
   ['ackcallback',['ackCallback',['../group___telemetry_module.html#ga302dc289b3b63d73a01282976f718e78',1,'telemetry.c']]],
-  ['ackhousekeeping',['ackHousekeeping',['../group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58',1,'telemetry.c']]],
+  ['ackhousekeeping',['ackHousekeeping',['../group___telemetry_module.html#gafb0bcf94b657d0f75acaa18bae5b480d',1,'telemetry.c']]],
   ['ackresendortimeout',['ackResendOrTimeout',['../group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644',1,'telemetry.c']]],
   ['activatewaypoint',['activateWaypoint',['../group___path_planner_module.html#ga2979049a21c756329e5ce3d218cd7ca6',1,'pathplanner.c']]],
   ['actuator_5fget_5fdshot_5fcommand',['actuator_get_dshot_command',['../group___actuator_module.html#ga164a8a953140af4d2f724a74c1ca9b01',1,'actuator.c']]],

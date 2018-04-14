@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/tests/logfs/pios_flash_posix_priv.h Source File</title>
+<title>dRonin: flight/PiOS/posix/inc/pios_flash_posix_priv.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -117,24 +117,28 @@ $(document).ready(function(){initNavTree('pios__flash__posix__priv_8h_source.htm
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structpios__flash__posix__cfg.html#a2500c9104009ee9994022a50992362de">    5</a></span>&#160;        uint32_t <a class="code" href="structpios__flash__posix__cfg.html#a2500c9104009ee9994022a50992362de">size_of_sector</a>;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;};</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;int32_t <a class="code" href="pios__flash__posix__priv_8h.html#ae8cee4b9a0f2ff6a3c77a5aff6218b96">PIOS_Flash_Posix_Init</a>(uintptr_t * chip_id, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pios__flash__posix__priv_8h.html#ab789826bd7675af15f06c45f3986cf47">PIOS_Flash_Posix_Destroy</a>(uintptr_t chip_id);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__flash__driver.html">pios_flash_driver</a> <a class="code" href="pios__flash__posix__priv_8h.html#a58db917e3f558dfd8fd912aa4454a087">pios_posix_flash_driver</a>;</div>
-<div class="ttc" id="pios__flash__posix__priv_8h_html_ab789826bd7675af15f06c45f3986cf47"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#ab789826bd7675af15f06c45f3986cf47">PIOS_Flash_Posix_Destroy</a></div><div class="ttdeci">void PIOS_Flash_Posix_Destroy(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00062">pios_flash_posix.c:62</a></div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;int32_t <a class="code" href="pios__flash__posix__priv_8h.html#ad295641fe76394a3bd067f57c5b8bcc9">PIOS_Flash_Posix_Init</a>(uintptr_t * chip_id,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a> * <a class="code" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                <span class="keywordtype">bool</span> force_recreate);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pios__flash__posix__priv_8h.html#ab789826bd7675af15f06c45f3986cf47">PIOS_Flash_Posix_Destroy</a>(uintptr_t chip_id);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pios__flash__posix__priv_8h.html#a2cbd31eb54e75861f03ab588ec3f5bc1">PIOS_Flash_Posix_SetFName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__flash__driver.html">pios_flash_driver</a> <a class="code" href="pios__flash__posix__priv_8h.html#a58db917e3f558dfd8fd912aa4454a087">pios_posix_flash_driver</a>;</div>
+<div class="ttc" id="pios__flash__posix__priv_8h_html_ab789826bd7675af15f06c45f3986cf47"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#ab789826bd7675af15f06c45f3986cf47">PIOS_Flash_Posix_Destroy</a></div><div class="ttdeci">void PIOS_Flash_Posix_Destroy(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00096">pios_flash_posix.c:96</a></div></div>
+<div class="ttc" id="pios__flash__posix__priv_8h_html_a2cbd31eb54e75861f03ab588ec3f5bc1"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#a2cbd31eb54e75861f03ab588ec3f5bc1">PIOS_Flash_Posix_SetFName</a></div><div class="ttdeci">void PIOS_Flash_Posix_SetFName(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00040">pios_flash_posix.c:40</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga2ed726ef287ca5aba87d97c4b83051da"><div class="ttname"><a href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a></div><div class="ttdeci">static struct flyingpicmd_cfg_fa cfg</div><div class="ttdef"><b>Definition:</b> <a href="flyingpio_2fw_2main_8c_source.html#l00049">main.c:49</a></div></div>
 <div class="ttc" id="structpios__flash__posix__cfg_html_a2500c9104009ee9994022a50992362de"><div class="ttname"><a href="structpios__flash__posix__cfg.html#a2500c9104009ee9994022a50992362de">pios_flash_posix_cfg::size_of_sector</a></div><div class="ttdeci">uint32_t size_of_sector</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix__priv_8h_source.html#l00005">pios_flash_posix_priv.h:5</a></div></div>
 <div class="ttc" id="structpios__flash__posix__cfg_html"><div class="ttname"><a href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix__priv_8h_source.html#l00003">pios_flash_posix_priv.h:3</a></div></div>
-<div class="ttc" id="pios__flash__posix__priv_8h_html_a58db917e3f558dfd8fd912aa4454a087"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#a58db917e3f558dfd8fd912aa4454a087">pios_posix_flash_driver</a></div><div class="ttdeci">const struct pios_flash_driver pios_posix_flash_driver</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00179">pios_flash_posix.c:179</a></div></div>
+<div class="ttc" id="pios__flash__posix__priv_8h_html_a58db917e3f558dfd8fd912aa4454a087"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#a58db917e3f558dfd8fd912aa4454a087">pios_posix_flash_driver</a></div><div class="ttdeci">const struct pios_flash_driver pios_posix_flash_driver</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00204">pios_flash_posix.c:204</a></div></div>
 <div class="ttc" id="structpios__flash__posix__cfg_html_aa5c6b28764ca6dd0694817c639b79d7f"><div class="ttname"><a href="structpios__flash__posix__cfg.html#aa5c6b28764ca6dd0694817c639b79d7f">pios_flash_posix_cfg::size_of_flash</a></div><div class="ttdeci">uint32_t size_of_flash</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix__priv_8h_source.html#l00004">pios_flash_posix_priv.h:4</a></div></div>
-<div class="ttc" id="pios__flash__posix__priv_8h_html_ae8cee4b9a0f2ff6a3c77a5aff6218b96"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#ae8cee4b9a0f2ff6a3c77a5aff6218b96">PIOS_Flash_Posix_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Posix_Init(uintptr_t *chip_id, const struct pios_flash_posix_cfg *cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00031">pios_flash_posix.c:31</a></div></div>
+<div class="ttc" id="pios__flash__posix__priv_8h_html_ad295641fe76394a3bd067f57c5b8bcc9"><div class="ttname"><a href="pios__flash__posix__priv_8h.html#ad295641fe76394a3bd067f57c5b8bcc9">PIOS_Flash_Posix_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Posix_Init(uintptr_t *chip_id, const struct pios_flash_posix_cfg *cfg, bool force_recreate)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__posix_8c_source.html#l00045">pios_flash_posix.c:45</a></div></div>
 <div class="ttc" id="structpios__flash__driver_html"><div class="ttname"><a href="structpios__flash__driver.html">pios_flash_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00035">pios_flash_priv.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_80f31eee9cf89edb960fe823c08758ad.html">tests</a></li><li class="navelem"><a class="el" href="dir_1875f0b3136189a8248579f8768ded47.html">logfs</a></li><li class="navelem"><a class="el" href="pios__flash__posix__priv_8h.html">pios_flash_posix_priv.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_6575c3929beb1e734d50be16048eac24.html">posix</a></li><li class="navelem"><a class="el" href="dir_02e49bd200f4a664c3b24fc6e8b414e0.html">inc</a></li><li class="navelem"><a class="el" href="pios__flash__posix__priv_8h.html">pios_flash_posix_priv.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

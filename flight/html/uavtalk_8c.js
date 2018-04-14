@@ -4,7 +4,7 @@ var uavtalk_8c =
     [ "objectTransaction", "uavtalk_8c.html#gac290a55b79dee2a5c6962d1db57cbe7c", null ],
     [ "receiveObject", "uavtalk_8c.html#ga7be15a892a916e588e1c015511509cd5", null ],
     [ "sendBuf", "uavtalk_8c.html#ga0d6eae6da855dfa4726ef1e117954f3b", null ],
-    [ "sendNack", "uavtalk_8c.html#ga785f0ff49141c3ea29f2ce0cd6daae7b", null ],
+    [ "sendNack", "uavtalk_8c.html#ga796d9e606d3d44333f0adab89d997e4e", null ],
     [ "sendObject", "uavtalk_8c.html#gaf205977dac5bb5a934208bf76283174c", null ],
     [ "sendSingleObject", "uavtalk_8c.html#ga45b80b79cff88fa5fe2cd745f79c252a", null ],
     [ "UAVTalkGetPacketInstId", "uavtalk_8c.html#gab86910d482482ca00111ce24dfbc6685", null ],
@@ -16,7 +16,7 @@ var uavtalk_8c =
     [ "UAVTalkReceiveObject", "uavtalk_8c.html#gacf4b4d60a3186b655c6bde6f9ee69b56", null ],
     [ "UAVTalkRelayInputStream", "uavtalk_8c.html#ga11bfbe431f2e79f43a4321b942dc94c8", null ],
     [ "UAVTalkRelayPacket", "uavtalk_8c.html#ga4b6fda53a32a7c37c5c695ebfa7e864e", null ],
-    [ "UAVTalkSendNack", "uavtalk_8c.html#ga2ef859d444a819ed3e3bb4ea36761c69", null ],
+    [ "UAVTalkSendNack", "uavtalk_8c.html#ga4da94d692e247e8c79baabc88f852e15", null ],
     [ "UAVTalkSendObject", "uavtalk_8c.html#gaf0029ef4e286bd483bb24d3aff89c371", null ],
     [ "UAVTalkSendObjectTimestamped", "uavtalk_8c.html#gacc0cb5c44deb938d85504b133882407a", null ]
 ];

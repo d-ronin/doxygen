@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_5ffonts',['n_fonts',['../namespaceencode__fonts.html#a71189484d890843dfcae386080529882',1,'encode_fonts']]],
-  ['name',['name',['../structpios__thread.html#a970f291be267c776b1df3fb0a2e16fa9',1,'pios_thread']]],
+  ['name',['name',['../structpios__thread.html#a0db5d99006090f5325a1c1440122a817',1,'pios_thread']]],
   ['names',['names',['../namespaceencode__fonts.html#ac077bfbbacbe705ddc6ddf47d9cf00e8',1,'encode_fonts']]],
   ['nano',['nano',['../struct_u_b_x___n_a_v___t_i_m_e_u_t_c.html#a2d187aede7b05688f29eacfd6bd57ecc',1,'UBX_NAV_TIMEUTC']]],
   ['nav_5fdop',['nav_dop',['../union_u_b_x_payload.html#aabf42aafbe0f26fe6224cd255ddfcbd3',1,'UBXPayload']]],

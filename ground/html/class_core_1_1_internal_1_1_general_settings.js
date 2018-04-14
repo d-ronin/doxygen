@@ -33,7 +33,5 @@ var class_core_1_1_internal_1_1_general_settings =
     [ "setWeight", "group___core_plugin.html#ga800784b262a329b8d8a80f4223a598ff", null ],
     [ "trCategory", "group___core_plugin.html#ga58870a0e7f11e7805de16107c84770aa", null ],
     [ "trName", "group___core_plugin.html#ga683217bd4278a43c5da4ae02f496e4be", null ],
-    [ "useExpertMode", "group___core_plugin.html#ga264b9f5010a2928592a8175416a25f47", null ],
-    [ "useSessionManaging", "group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de", null ],
-    [ "useUDPMirror", "group___core_plugin.html#ga90989a592d1a849b628a7108bf4ec9ed", null ]
+    [ "useExpertMode", "group___core_plugin.html#ga264b9f5010a2928592a8175416a25f47", null ]
 ];

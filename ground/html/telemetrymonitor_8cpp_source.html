@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -135,647 +135,450 @@ $(document).ready(function(){initNavTree('telemetrymonitor_8cpp_source.html','')
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="icore_8h.html">coreplugin/icore.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;firmwareiapobj.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Number of retries for initial session object fetching</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// This is needed because sometimes the object is lost when asked right uppon connection</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define SESSION_INIT_RETRIES 3</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="comment">// Delay between initial session object fetching retries (number of times defined above)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define SESSION_INITIAL_RETRIEVE_TIMEOUT 500</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="comment">// Timeout for the all session negotiation, the system will go to failsafe after it</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define SESSION_RETRIEVE_TIMEOUT 20000</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="comment">// Number of retries for the session object fetching during negotiation</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define SESSION_OBJ_RETRIEVE_RETRIES 3</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="comment">// Timeout for the object fetching phase, the system will stop fetching objects and emit connected</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// after this</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define OBJECT_RETRIEVE_TIMEOUT 20000</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="comment">// IAP object is very important, retry if not able to get it the first time</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define IAP_OBJECT_RETRIES 3</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifdef TELEMETRYMONITOR_DEBUG</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEMETRYMONITOR_QXTLOG_DEBUG(...) qDebug() &lt;&lt; __VA_ARGS__</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // TELEMETRYMONITOR_DEBUG</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEMETRYMONITOR_QXTLOG_DEBUG(...)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // TELEMETRYMONITOR_DEBUG</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084">   62</a></span>&#160;<a class="code" href="group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084">TelemetryMonitor::TelemetryMonitor</a>(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr, <a class="code" href="class_telemetry.html">Telemetry</a> *tel,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                   QHash&lt;quint16, <a class="code" href="class_q_list.html">QList&lt;objStruc&gt;</a>&gt; sessions)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    : connectionStatus(CON_DISCONNECTED)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    , objMngr(objMngr)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    , tel(tel)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    , numberOfObjects(0)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    , retries(0)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    , requestsInFlight(0)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    , isManaged(true)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    , sessions(sessions)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    sessionID = QDateTime::currentDateTime().toTime_t();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    this-&gt;connectionTimer = <span class="keyword">new</span> QTime();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Get stats objects</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    gcsStatsObj = GCSTelemetryStats::GetInstance(objMngr);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    flightStatsObj = FlightTelemetryStats::GetInstance(objMngr);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    sessionObj = SessionManaging::GetInstance(objMngr);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Listen for flight stats updates</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    connect(flightStatsObj, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a>, <span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Start update timer</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    statsTimer = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    objectRetrieveTimeout = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    objectRetrieveTimeout-&gt;setSingleShot(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    sessionInitialRetrieveTimeout = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    sessionInitialRetrieveTimeout-&gt;setSingleShot(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    connect(statsTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    connect(sessionInitialRetrieveTimeout, &amp;QTimer::timeout, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            &amp;TelemetryMonitor::sessionInitialRetrieveTimeoutCB);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    connect(objectRetrieveTimeout, &amp;QTimer::timeout, <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            &amp;TelemetryMonitor::objectRetrieveTimeoutCB);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    statsTimer-&gt;start(STATS_CONNECT_PERIOD_MS);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a> *cm = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#gab606d10ae8f0f9575d0e8ffb6e776ac7">connectionManager</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a>, cm, &amp;<a class="code" href="group___core_plugin.html#ga4de138b49205db93c52a0b23f9147099">Core::ConnectionManager::telemetryConnected</a>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a>, cm,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            &amp;<a class="code" href="group___core_plugin.html#ga4ab94ed9731bab394302b0d9e86712d4">Core::ConnectionManager::telemetryDisconnected</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">TelemetryMonitor::telemetryUpdated</a>, cm,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            &amp;<a class="code" href="group___core_plugin.html#ga71e85da70aaddce0e037f95505cbc054">Core::ConnectionManager::telemetryUpdated</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    connect(sessionObj, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga2b9ae613f54e59b358dbf2e31d32d9ad">UAVObject::objectUnpacked</a>, <span class="keyword">this</span>, &amp;TelemetryMonitor::sessionObjUnpackedCB);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    connect(objMngr, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga7787ebe5de616d95116d5a4b360b6773">UAVObjectManager::newInstance</a>, <span class="keyword">this</span>, &amp;TelemetryMonitor::newInstanceSlot);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    settings = pm-&gt;getObject&lt;<a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a>&gt;();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">  110</a></span>&#160;<a class="code" href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a>()</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Before saying goodbye, set the GCS connection status to disconnected too:</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    gcsStats.Status = GCSTelemetryStats::STATUS_DISCONNECTED;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (settings-&gt;<a class="code" href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">useSessionManaging</a>()) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span> (dobj)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Set data</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    gcsStatsObj-&gt;setData(gcsStats);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::startRetrievingObjects()</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        QString(<span class="stringliteral">&quot;%0 connectionStatus changed to CON_RETRIEVING_OBJECT&quot;</span>).arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    connectionStatus = CON_RETRIEVING_OBJECTS;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Get all objects, add metaobjects, settings and data objects with OnChange update mode to the</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// queue</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    queue.clear();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    retries = 0;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    objectRetrieveTimeout-&gt;start(OBJECT_RETRIEVE_TIMEOUT);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>().values()) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = map.first();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span> (obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>() == SessionManaging::OBJID) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        UAVObject::Metadata mdata = obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaadeb5af3a70679bcb2b6360274e9c7de">getMetadata</a>();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (dobj != NULL) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (!dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">getIsPresentOnHardware</a>()) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 %1 not present on hardware, skipping&quot;</span>)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                  .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                  .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            queue.enqueue(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gae14c5b7e20f137db436d3c1e7d1949ec">getMetaObject</a>());</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">isSettings</a>() || (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>() == FirmwareIAPObj::OBJID)) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    QString(<span class="stringliteral">&quot;%0 queing settings object %1&quot;</span>).arg(Q_FUNC_INFO).arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                queue.enqueue(obj);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga6cd43aaa339c4bd8beead8988bb9f1a6">UAVObject::GetFlightTelemetryUpdateMode</a>(mdata)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    == <a class="code" href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a>) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 queing UPDATEMODE_ONCHANGE object %1&quot;</span>)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                      .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                                      .arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    queue.enqueue(obj);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                        QString(<span class="stringliteral">&quot;%0 skipping %1, not settings nor metadata or UPDATEMODE_ONCHANGE&quot;</span>)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                            .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                            .arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// Start retrieving</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        QString(</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            tr(<span class="stringliteral">&quot;Starting to retrieve meta and settings objects from the autopilot (%1 objects)&quot;</span>))</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            .arg(queue.length()));</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    retrieveNextObject();</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::changeObjectInstances(quint32 objID, quint32 instID, <span class="keywordtype">bool</span> delayed)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        QString(<span class="stringliteral">&quot;%0 OBJID:%1 INSTID:%2&quot;</span>).arg(Q_FUNC_INFO).arg(objID).arg(instID));</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objID);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span> (obj) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = NULL;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (dobj == NULL) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>()) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        quint32 currentInstances = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(objID);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">if</span> (currentInstances != instID) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                QString(<span class="stringliteral">&quot;%0 Object %1 has %2 instances on hw and %3 on the GCS&quot;</span>)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    .arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    .arg(sessionObj-&gt;getObjectInstances())</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    .arg(currentInstances));</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (currentInstances &lt; sessionObj-&gt;getObjectInstances()) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    QString(<span class="stringliteral">&quot;%0 cloned and registered object %1 INSTID=%2&quot;</span>)</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        .arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        .arg(instID - 1));</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *instobj = dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9c113847ecf6bd99cf7efe3535620e66">clone</a>(instID - 1);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">registerObject</a>(instobj);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 unregistered object %1 INSTID=%2&quot;</span>)</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                                  .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                                  .arg(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                                  .arg(instID));</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obji = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objID, instID);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobji = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obji);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">if</span> (dobji) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga308aa598ad6f8161f13c6f8b612c4259">unRegisterObject</a>(dobji);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = 0; <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> &lt; objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(objID); ++<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objID, <a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>));</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">if</span> (dobj) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">if</span> (delayed)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    delayedUpdate.append(dobj);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::retrieveNextObject()</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">// If queue is empty return</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span> (queue.isEmpty() &amp;&amp; requestsInFlight == 0) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 Object retrieval completed&quot;</span>).arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (isManaged) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                QString(<span class="stringliteral">&quot;%0 connectionStatus set to CON_CONNECTED_MANAGED( %1 )&quot;</span>)</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    .arg(connectionStatus));</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            connectionStatus = CON_CONNECTED_MANAGED;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                QString(<span class="stringliteral">&quot;%0 connectionStatus set to CON_CONNECTED_UNMANAGED( %1 )&quot;</span>)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    .arg(connectionStatus));</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            connectionStatus = CON_CONNECTED_UNMANAGED;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *uavo, delayedUpdate) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            uavo-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        delayedUpdate.clear();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        emit <a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">connected</a>();</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        sessionInitialRetrieveTimeout-&gt;stop();</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        objectRetrieveTimeout-&gt;stop();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    objectRetrieveTimeout-&gt;stop();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    objectRetrieveTimeout-&gt;start(OBJECT_RETRIEVE_TIMEOUT);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Timeout for the object fetching phase, the system will stop fetching objects and emit connected</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// after this</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define OBJECT_RETRIEVE_TIMEOUT 20000</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="comment">// IAP object is very important, retry if not able to get it the first time</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define IAP_OBJECT_RETRIES 3</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef TELEMETRYMONITOR_DEBUG</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEMETRYMONITOR_QXTLOG_DEBUG(...) qDebug() &lt;&lt; __VA_ARGS__</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // TELEMETRYMONITOR_DEBUG</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TELEMETRYMONITOR_QXTLOG_DEBUG(...)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // TELEMETRYMONITOR_DEBUG</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> TelemetryMonitor::queueCompare(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *left, <a class="code" href="class_u_a_v_object.html">UAVObject</a> *right)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* Should return true if right should be dequeued before left. */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* It&#39;s advantageous to dequeue multi-instance objs first, so if</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     * there&#39;s many IDs we can be doing the round trips while other</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     * objects arrive (instead of getting stuck round-trip bound */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (left-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>() &amp;&amp; (!right-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>())) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((!left-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>() &amp;&amp; right-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>())) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/* It&#39;s advantageous to dequeue metaobjects last, because we</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * probably know about their existance by this stage. */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *leftD = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(left);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *rightD = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(right);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (leftD &amp;&amp; (!rightD)) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">/* Right is a metaobj */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((!leftD) &amp;&amp; (rightD)) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">/* Right is NOT a metaobj */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">/* At this point either both are meta or both are not meta */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (leftD) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">/* It&#39;s advantageous to dequeue settings next, since they&#39;re</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">         * not auto-telemetered and we won&#39;t find out about them by</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">         * serendipity */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> ((!leftD-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">isSettings</a>()) &amp;&amp; (rightD-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">isSettings</a>())) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((leftD-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">isSettings</a>()) &amp;&amp; (!rightD-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">isSettings</a>())) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">/* Fall back to name last, because it&#39;s pleasing to retrieve in order */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> left-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>() &gt; right-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#gad2af9cb530ef07a84cc9992d6458111f">   96</a></span>&#160;<a class="code" href="group___u_a_v_talk_plugin.html#gad2af9cb530ef07a84cc9992d6458111f">TelemetryMonitor::TelemetryMonitor</a>(<a class="code" href="class_u_a_v_object_manager.html">UAVObjectManager</a> *objMngr, <a class="code" href="class_telemetry.html">Telemetry</a> *tel)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    : connectionStatus(CON_DISCONNECTED)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    , objMngr(objMngr)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    , tel(tel)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    , queue(decltype(queue)(queueCompare))</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    , requestsInFlight(0)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    this-&gt;connectionTimer = <span class="keyword">new</span> QTime();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Get stats objects</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    gcsStatsObj = GCSTelemetryStats::GetInstance(objMngr);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    flightStatsObj = FlightTelemetryStats::GetInstance(objMngr);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Listen for flight stats updates</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    connect(flightStatsObj, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a>, <span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Start update timer</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    statsTimer = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    objectRetrieveTimeout = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    objectRetrieveTimeout-&gt;setSingleShot(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    connect(statsTimer, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    connect(objectRetrieveTimeout, &amp;QTimer::timeout, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            &amp;TelemetryMonitor::objectRetrieveTimeoutCB);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    statsTimer-&gt;start(STATS_CONNECT_PERIOD_MS);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a> *cm = <a class="code" href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a>()-&gt;<a class="code" href="group___core_plugin.html#gab606d10ae8f0f9575d0e8ffb6e776ac7">connectionManager</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a>, cm, &amp;<a class="code" href="group___core_plugin.html#ga4de138b49205db93c52a0b23f9147099">Core::ConnectionManager::telemetryConnected</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a>, cm,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            &amp;<a class="code" href="group___core_plugin.html#ga4ab94ed9731bab394302b0d9e86712d4">Core::ConnectionManager::telemetryDisconnected</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">TelemetryMonitor::telemetryUpdated</a>, cm,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            &amp;<a class="code" href="group___core_plugin.html#ga71e85da70aaddce0e037f95505cbc054">Core::ConnectionManager::telemetryUpdated</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    connect(objMngr, &amp;<a class="code" href="group___u_a_v_objects_plugin.html#ga7787ebe5de616d95116d5a4b360b6773">UAVObjectManager::newInstance</a>, <span class="keyword">this</span>, &amp;TelemetryMonitor::newInstanceSlot);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">  129</a></span>&#160;<a class="code" href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a>()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// Before saying goodbye, set the GCS connection status to disconnected too:</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    gcsStats.Status = GCSTelemetryStats::STATUS_DISCONNECTED;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">if</span> (dobj)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga65790c37eca581d43f3023f4f848efc7">resetIsPresentOnHardware</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// Set data</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    gcsStatsObj-&gt;setData(gcsStats);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::startRetrievingObjects()</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        QString(<span class="stringliteral">&quot;%0 connectionStatus changed to CON_RETRIEVING_OBJECT&quot;</span>).arg(Q_FUNC_INFO));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    connectionStatus = CON_RETRIEVING_OBJECTS;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">/* Clear the queue */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    queue = decltype(queue)(queueCompare);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    objectRetrieveTimeout-&gt;start(OBJECT_RETRIEVE_TIMEOUT);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>().values()) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = map.first();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="comment">/* Enqueue everything; decide later whether to bother retrieving. */</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        queue.push(obj);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Start retrieving</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        QString(</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            tr(<span class="stringliteral">&quot;Starting to retrieve objects from the autopilot (%1 objects)&quot;</span>))</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            .arg(queue.size()));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    retrieveNextObject();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::retrieveNextObject()</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// If queue is empty return</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (queue.empty() &amp;&amp; requestsInFlight == 0) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 Object retrieval completed&quot;</span>).arg(Q_FUNC_INFO));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            QString(<span class="stringliteral">&quot;%0 connectionStatus set to CON_CONNECTED_MANAGED( %1 )&quot;</span>)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                .arg(Q_FUNC_INFO)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                .arg(connectionStatus));</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        connectionStatus = CON_CONNECTED_MANAGED;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        emit <a class="code" href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">connected</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        objectRetrieveTimeout-&gt;stop();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    objectRetrieveTimeout-&gt;stop();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    objectRetrieveTimeout-&gt;start(OBJECT_RETRIEVE_TIMEOUT);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">while</span> (requestsInFlight &lt; MAX_REQUESTS_IN_FLIGHT) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span> (queue.empty()) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="comment">// Get next object from the queue</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = queue.top();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        queue.pop();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">if</span> (dobj) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga5768c896ea5cc0dd2d4e9304434ba866">getReceived</a>() &amp;&amp; dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>()) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="comment">/* We got it already.  That&#39;s easy! */</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaa90a6ad99ab78ba3232de9b3faf0e11f">getPresenceKnown</a>() &amp;&amp; (!dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">getIsPresentOnHardware</a>())) {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 %1 not present on hardware, skipping&quot;</span>)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                                  .arg(Q_FUNC_INFO)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                                  .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="comment">/* For metaobjects, skip if data object not there */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <a class="code" href="class_u_a_v_meta_object.html">UAVMetaObject</a> *mobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_meta_object.html">UAVMetaObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span> (mobj) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *pobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        mobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">getParentObject</a>());</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keywordflow">if</span> (pobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaa90a6ad99ab78ba3232de9b3faf0e11f">getPresenceKnown</a>() &amp;&amp; (!pobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">getIsPresentOnHardware</a>())) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                    TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 %1 not present on hardware, skipping associated meta obj&quot;</span>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                                      .arg(Q_FUNC_INFO)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                                      .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>()));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="comment">// Connect to object</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 requesting %1 from board INSTID:%2&quot;</span>)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                          .arg(Q_FUNC_INFO)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                          .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                                          .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>()));</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        requestsInFlight++;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        connect(obj, QOverload&lt;UAVObject *, bool, bool&gt;::of(&amp;<a class="code" href="group___u_a_v_objects_plugin.html#gafac716c4828b4506f6982f79fc7827c2">UAVObject::transactionCompleted</a>), <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga29e4461cd3bb02909a6e52ce3991b4d4">TelemetryMonitor::transactionCompleted</a>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="comment">// Request update</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0">requestUpdate</a>();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga29e4461cd3bb02909a6e52ce3991b4d4">  253</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga29e4461cd3bb02909a6e52ce3991b4d4">TelemetryMonitor::transactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success, <span class="keywordtype">bool</span> nacked)</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 received %1 OBJID:%2 result:%3&quot;</span>)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                      .arg(Q_FUNC_INFO)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                      .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                      .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>())</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                      .arg(success));</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    Q_UNUSED(success);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span> (nacked) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (dobj) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>()) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gafc17046a1aff7eff81eaebfa4ae4a204">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordtype">int</span> instId = dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">while</span> (requestsInFlight &lt; MAX_REQUESTS_IN_FLIGHT) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (queue.isEmpty()) {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// Get next object from the queue</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = queue.dequeue();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="comment">// Connect to object</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 requestiong %1 from board INSTID:%2&quot;</span>)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                          .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                          .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                          .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>()));</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        requestsInFlight++;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        connect(obj, QOverload&lt;UAVObject *, bool&gt;::of(&amp;<a class="code" href="group___u_a_v_objects_plugin.html#gafac716c4828b4506f6982f79fc7827c2">UAVObject::transactionCompleted</a>), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                &amp;<a class="code" href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">TelemetryMonitor::transactionCompleted</a>);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="comment">// Request update</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga0a1e84e69bf26a58ffab4245b27b5ac4">requestUpdateAllInstances</a>();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">  297</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">TelemetryMonitor::transactionCompleted</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, <span class="keywordtype">bool</span> success)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 received %1 OBJID:%2 result:%3&quot;</span>)</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                      .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                      .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                      .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>())</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                      .arg(success));</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    Q_UNUSED(success);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">if</span> (obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>() == FirmwareIAPObj::OBJID) {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">if</span> (!success &amp;&amp; (retries &lt; IAP_OBJECT_RETRIES)) {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            ++retries;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0">requestUpdate</a>();</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// Disconnect from sending object</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    requestsInFlight--;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    obj-&gt;disconnect(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// Process next object if telemetry is still available</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED) {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        connectionStatus = CON_RETRIEVING_OBJECTS;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        retrieveNextObject();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        qInfo() &lt;&lt;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            QString(<span class="stringliteral">&quot;%0 connection lost while retrieving objects, stopped object retrievel&quot;</span>)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                .arg(Q_FUNC_INFO);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        queue.clear();</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        objectRetrieveTimeout-&gt;stop();</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        sessionInitialRetrieveTimeout-&gt;stop();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        connectionStatus = CON_DISCONNECTED;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">  338</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    Q_UNUSED(obj);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// Force update if not yet connected</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    FlightTelemetryStats::DataFields flightStats = flightStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status != GCSTelemetryStats::STATUS_CONNECTED</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        || flightStats.Status != FlightTelemetryStats::STATUS_CONNECTED) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">processStatsUpdates</a>();</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::sessionObjUnpackedCB(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    sessionObjRetries = 0;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">switch</span> (connectionStatus) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">case</span> CON_INITIALIZING:</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">if</span> (sessions.contains(sessionObj-&gt;getSessionID())</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            &amp;&amp; (sessions.value(sessionObj-&gt;getSessionID()).count()</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                == sessionObj-&gt;getNumberOfObjects())) {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            sessionID = sessionObj-&gt;getSessionID();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            numberOfObjects = sessionObj-&gt;getNumberOfObjects();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                QString(<span class="stringliteral">&quot;%0 status:%1 session already known startRetrievingObjects&quot;</span>)</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                    .arg(connectionStatus));</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordflow">foreach</span> (objStruc objs, sessions.value(sessionObj-&gt;getSessionID())) {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(objs.objID));</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <span class="keywordflow">if</span> (dobj) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                    <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>()) {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                        changeObjectInstances(objs.objID, objs.instID, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                }</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            startRetrievingObjects();</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                QString(<span class="stringliteral">&quot;%0 new session startSessionRetrieving HWsessionID=%1 GCSsessionID=%2 &quot;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                        <span class="stringliteral">&quot;HWnumberofobjs=%3 GCSnumberofobjs=%4&quot;</span>)</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                    .arg(sessionObj-&gt;getSessionID())</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                    .arg(sessionID)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                    .arg(sessionObj-&gt;getNumberOfObjects())</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                    .arg(sessions.value(sessionObj-&gt;getSessionID()).count()));</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            startSessionRetrieving(NULL);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">case</span> CON_CONNECTED_MANAGED:</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        qDebug() &lt;&lt; QString(<span class="stringliteral">&quot;HW=%0 GCS=%1 GCS_ADJ=%2&quot;</span>)</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        .arg(sessionObj-&gt;getSessionID())</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        .arg(sessionID)</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                        .arg(sessionID + 1);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">if</span> (sessionObj-&gt;getSessionID() == sessionID</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            &amp;&amp; numberOfObjects == sessionObj-&gt;getNumberOfObjects())</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sessionObj-&gt;getSessionID() == (sessionID + 1)) <span class="comment">// number of instances changed</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        {</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                QString(<span class="stringliteral">&quot;%0 received sessionID shift by one, this signal that a multi instance &quot;</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        <span class="stringliteral">&quot;object changed number of instances&quot;</span>)</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    .arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            changeObjectInstances(sessionObj-&gt;getObjectID(), sessionObj-&gt;getObjectInstances(),</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                  <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            sessionID = sessionID + 1;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            saveSession();</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!sessions.contains(sessionObj-&gt;getSessionID())) {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                QString(<span class="stringliteral">&quot;%0 new session during CONNECTED? startSessionRetrieving&quot;</span>)</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                    .arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            startSessionRetrieving(NULL);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        }</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">case</span> CON_SESSION_INITIALIZING:</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        startSessionRetrieving(obj);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">case</span> CON_RETRIEVING_OBJECTS:</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            QString(</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <span class="stringliteral">&quot;%0 received sessionManaging object during object retrievel, this shouldn&#39;t happen&quot;</span>)</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                .arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">case</span> CON_CONNECTED_UNMANAGED:</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">case</span> CON_DISCONNECTED:</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::objectRetrieveTimeoutCB()</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    qInfo() &lt;&lt;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        QString(<span class="stringliteral">&quot;%0 reached timeout for object retrieval, clearing queue&quot;</span>)</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        .arg(Q_FUNC_INFO);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    queue.clear();</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::sessionInitialRetrieveTimeoutCB()</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;{</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">if</span> ((connectionStatus == CON_INITIALIZING) || (connectionStatus == CON_SESSION_INITIALIZING)) {</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">if</span> (sessionObjRetries &lt; SESSION_OBJ_RETRIEVE_RETRIES) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                QString(<span class="stringliteral">&quot;%0 session retrieve timeout try=%1, going to retry&quot;</span>)</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                    .arg(sessionObjRetries));</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            ++sessionObjRetries;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            sessionObj-&gt;updated();</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            sessionInitialRetrieveTimeout-&gt;start(SESSION_INITIAL_RETRIEVE_TIMEOUT);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        }</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::saveSession()</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;{</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">if</span> (isManaged) {</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <a class="code" href="class_q_list.html">QList&lt;objStruc&gt;</a> list;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>().values()) {</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map) {</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                <span class="keywordflow">if</span> (dobj) {</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                    <span class="keywordflow">if</span> (dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">getIsPresentOnHardware</a>() &amp;&amp; dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>() == 0) {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                        objStruc objs;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                        objs.<a class="code" href="group___u_a_v_objects_plugin.html#gafc50acdaa311c9fd9aaddf90fd578c14">objID</a> = dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>();</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                        objs.instID = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>());</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                        list.append(objs);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                    }</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                }</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            }</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        }</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        sessions.insert(sessionID, list);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    }</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;}</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::newInstanceSlot(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;{</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">if</span> (!dobj)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="keywordflow">if</span> (!isManaged)</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::startSessionRetrieving(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *session)</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;{</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> currentIndex = 0;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> objectCount = 0;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> sessionNegotiationRetries = 0;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="keywordflow">if</span> (session == NULL) {</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 NULL new session start&quot;</span>).arg(Q_FUNC_INFO));</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <span class="keywordflow">if</span> (dobj)</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            }</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        }</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        currentIndex = 0;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        objectCount = 0;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        sessionObjRetries = 0;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        connectionStatus = CON_SESSION_INITIALIZING;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        sessionObj-&gt;setSessionID(0);</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        sessionObj-&gt;updated();</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sessionObj-&gt;getSessionID() == 0) {</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        objectCount = sessionObj-&gt;getNumberOfObjects();</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keywordflow">if</span> (objectCount == 0)</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        sessionID = QDateTime::currentDateTime().toTime_t();</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        sessionObj-&gt;setSessionID(sessionID);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        sessionObj-&gt;setObjectOfInterestIndex(0);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            QString(<span class="stringliteral">&quot;%0 SESSION SETUP with numberofobjects:%1 and sessionID:%2&quot;</span>)</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                .arg(objectCount)</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                .arg(sessionID));</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        sessionObj-&gt;updated();</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sessionObj-&gt;getSessionID() == sessionID) {</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">if</span> (sessionObj-&gt;getObjectOfInterestIndex() != currentIndex) {</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                QString(<span class="stringliteral">&quot;%0 RECEIVED WRONG INDEX RETRY current retries:%1&quot;</span>)</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                    .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                    .arg(sessionNegotiationRetries));</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            <span class="keywordflow">if</span> (sessionNegotiationRetries &lt; SESSION_INIT_RETRIES) {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                sessionObj-&gt;setObjectOfInterestIndex(currentIndex);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                ++sessionNegotiationRetries;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                sessionObj-&gt;updated();</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            }</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            sessionNegotiationRetries = 0;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        }</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(sessionObj-&gt;getObjectID());</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">if</span> (obj) {</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(QString(<span class="stringliteral">&quot;%0 RECEIVED INDEX:%1 object:%2 instances:%3&quot;</span>)</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                              .arg(Q_FUNC_INFO)</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                                              .arg(sessionObj-&gt;getObjectOfInterestIndex())</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                                              .arg(obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">getName</a>())</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                                              .arg(sessionObj-&gt;getObjectInstances()));</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            <span class="keywordflow">if</span> (dobj) {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            }</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordflow">if</span> ((sessionObj-&gt;getObjectInstances() &gt; 1) &amp;&amp; !obj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>()) {</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                changeObjectInstances(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>(), sessionObj-&gt;getObjectInstances(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            }</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        ++currentIndex;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordflow">if</span> (currentIndex &lt; objectCount) {</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;            TELEMETRYMONITOR_QXTLOG_DEBUG(</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                QString(<span class="stringliteral">&quot;%0 ASKING BOARD FOR INDEX:%1&quot;</span>).arg(Q_FUNC_INFO).arg(currentIndex));</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            sessionObj-&gt;setObjectOfInterestIndex(currentIndex);</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            sessionObj-&gt;updated();</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            saveSession();</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;            startRetrievingObjects();</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        }</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    }</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">  560</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a>()</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;{</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">// Get telemetry stats</span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    FlightTelemetryStats::DataFields flightStats = flightStatsObj-&gt;getData();</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <a class="code" href="struct_telemetry_1_1_telemetry_stats.html">Telemetry::TelemetryStats</a> telStats = tel-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402">getStats</a>();</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="comment">// Update stats object</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    gcsStats.RxDataRate = (float)telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gadda927fbb6858f5e60b6daf16d5bc94e">rxBytes</a> / ((<span class="keywordtype">float</span>)statsTimer-&gt;interval() / 1000.0);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    gcsStats.TxDataRate = (float)telStats.<a class="code" href="group___u_a_v_talk_plugin.html#ga349d8c0f2aac815d79b13e54f818658c">txBytes</a> / ((<span class="keywordtype">float</span>)statsTimer-&gt;interval() / 1000.0);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    gcsStats.RxFailures += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gaf07e5e11a7f3b4c277a26fa5dba7d3fa">rxErrors</a>;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    gcsStats.TxFailures += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gad6930d8f0e5a3c2e251c9600d1264c1a">txErrors</a>;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    gcsStats.TxRetries += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#ga071780b1d6a06aa36a41efaa190e97ec">txRetries</a>;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="comment">// Check for a connection timeout</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordtype">bool</span> connectionTimeout;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordflow">if</span> (telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gacd544f271fc6ee0f5eb72dc101a23c21">rxObjects</a> &gt; 0) {</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        connectionTimer-&gt;start();</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    }</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">if</span> (connectionTimer-&gt;elapsed() &gt; CONNECTION_TIMEOUT_MS) {</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        connectionTimeout = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        connectionTimeout = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    }</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="comment">// Update connection state</span></div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordtype">int</span> oldStatus = gcsStats.Status;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_DISCONNECTED) {</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="comment">// Request connection</span></div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        gcsStats.Status = GCSTelemetryStats::STATUS_HANDSHAKEREQ;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_HANDSHAKEREQ) {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="comment">// Check for connection acknowledge</span></div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">if</span> (flightStats.Status == FlightTelemetryStats::STATUS_HANDSHAKEACK) {</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;            gcsStats.Status = GCSTelemetryStats::STATUS_CONNECTED;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        }</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED) {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="comment">// Check if the connection is still active and the the autopilot is still connected</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordflow">if</span> (flightStats.Status == FlightTelemetryStats::STATUS_DISCONNECTED || connectionTimeout) {</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            gcsStats.Status = GCSTelemetryStats::STATUS_DISCONNECTED;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        }</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">telemetryUpdated</a>((<span class="keywordtype">double</span>)gcsStats.TxDataRate, (<span class="keywordtype">double</span>)gcsStats.RxDataRate);</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="comment">// Set data</span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    gcsStatsObj-&gt;setData(gcsStats);</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="comment">// Force telemetry update if not yet connected</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status != GCSTelemetryStats::STATUS_CONNECTED</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        || flightStats.Status != FlightTelemetryStats::STATUS_CONNECTED) {</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        gcsStatsObj-&gt;updated();</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    }</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="comment">// Act on new connections or disconnections</span></div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED &amp;&amp; gcsStats.Status != oldStatus) {</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        statsTimer-&gt;setInterval(STATS_UPDATE_PERIOD_MS);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Connection with the autopilot established&quot;</span>;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        connectionStatus = CON_INITIALIZING;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        sessionInitialRetrieveTimeout-&gt;start(SESSION_INITIAL_RETRIEVE_TIMEOUT);</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        sessionObj-&gt;requestUpdate();</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        isManaged = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    }</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_DISCONNECTED &amp;&amp; gcsStats.Status != oldStatus) {</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        statsTimer-&gt;setInterval(STATS_CONNECT_PERIOD_MS);</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        connectionStatus = CON_DISCONNECTED;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <a class="code" href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a> *pm = ExtensionSystem::PluginManager::instance();</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a> *settings =</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            pm-&gt;getObject&lt;<a class="code" href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a>&gt;();</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <span class="keywordflow">if</span> (settings-&gt;<a class="code" href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">useSessionManaging</a>()) {</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                    <span class="keywordflow">if</span> (dobj)</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                        dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                }</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            }</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        }</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        emit <a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">disconnected</a>();</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    }</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;}</div>
-<div class="ttc" id="class_core_1_1_internal_1_1_general_settings_html"><div class="ttname"><a href="class_core_1_1_internal_1_1_general_settings.html">Core::Internal::GeneralSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8h_source.html#l00046">generalsettings.h:46</a></div></div>
-<div class="ttc" id="group___core_plugin_html_gaae6597a648e04583059a23fdcdd7d0de"><div class="ttname"><a href="group___core_plugin.html#gaae6597a648e04583059a23fdcdd7d0de">Core::Internal::GeneralSettings::useSessionManaging</a></div><div class="ttdeci">bool useSessionManaging() const </div><div class="ttdef"><b>Definition:</b> <a href="generalsettings_8cpp_source.html#l00286">generalsettings.cpp:286</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga6018820b37db308fb1ee1b3c3ff4f9a0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0">UAVObject::requestUpdate</a></div><div class="ttdeci">void requestUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00165">uavobject.cpp:165</a></div></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">if</span> (instId &lt;= 0) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gafc17046a1aff7eff81eaebfa4ae4a204">setIsPresentOnHardware</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    <span class="comment">/* Multi-instance, shrink instance count down.  Inst</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">                     * ID must be 1, so getNumInstances should be 2 or</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">                     * larger */</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                    <span class="keywordtype">int</span> <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                    idx = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">getNumInstances</a>(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>());</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    <span class="keywordflow">while</span> (idx &gt; instId) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        idx--;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        qInfo() &lt;&lt; QString(<span class="stringliteral">&quot;Got nak instID %1 removing %2&quot;</span>).arg(instId).arg(idx);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <a class="code" href="class_u_a_v_object.html">UAVObject</a> *objR = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>(),</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                <a class="code" href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a>);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobjR = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(objR);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        <span class="keywordflow">if</span> (dobjR) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                            objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga308aa598ad6f8161f13c6f8b612c4259">unRegisterObject</a>(dobjR);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (success) {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span> (dobj &amp;&amp; (!dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">isSingleInstance</a>())) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="comment">/* multi-instance... temporarily register and enqueue next</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">             * instance</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">             */</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordtype">int</span> new_idx = dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">getInstID</a>() + 1;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <a class="code" href="class_u_a_v_object.html">UAVObject</a> *instObj = objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">getObject</a>(dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">getObjID</a>(),</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    new_idx);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *instdObj;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordflow">if</span> (instObj == NULL)  {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                instdObj = dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9c113847ecf6bd99cf7efe3535620e66">clone</a>(new_idx);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">registerObject</a>(instdObj);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                instdObj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(instObj);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            queue.push(instdObj);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// Disconnect from sending object</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    requestsInFlight--;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    obj-&gt;disconnect(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">// Process next object if telemetry is still available</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED) {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        connectionStatus = CON_RETRIEVING_OBJECTS;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        retrieveNextObject();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        qInfo() &lt;&lt;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            QString(<span class="stringliteral">&quot;%0 connection lost while retrieving objects, stopped object retrievel&quot;</span>)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                .arg(Q_FUNC_INFO);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">/* Clear the queue */</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        queue = decltype(queue)(queueCompare);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        objectRetrieveTimeout-&gt;stop();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        connectionStatus = CON_DISCONNECTED;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">  342</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a>(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    Q_UNUSED(obj);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// Force update if not yet connected</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    FlightTelemetryStats::DataFields flightStats = flightStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status != GCSTelemetryStats::STATUS_CONNECTED</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        || flightStats.Status != FlightTelemetryStats::STATUS_CONNECTED) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">processStatsUpdates</a>();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::objectRetrieveTimeoutCB()</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    qInfo() &lt;&lt;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        QString(<span class="stringliteral">&quot;%0 reached timeout for object retrieval, clearing queue&quot;</span>)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        .arg(Q_FUNC_INFO);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">/* Clear the queue */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    queue = decltype(queue)(queueCompare);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordtype">void</span> TelemetryMonitor::newInstanceSlot(<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (!dobj)</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#gafc17046a1aff7eff81eaebfa4ae4a204">setIsPresentOnHardware</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">  376</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a>()</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="comment">// Get telemetry stats</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    GCSTelemetryStats::DataFields gcsStats = gcsStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    FlightTelemetryStats::DataFields flightStats = flightStatsObj-&gt;getData();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="struct_telemetry_1_1_telemetry_stats.html">Telemetry::TelemetryStats</a> telStats = tel-&gt;<a class="code" href="group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402">getStats</a>();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// Update stats object</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    gcsStats.RxDataRate = (float)telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gadda927fbb6858f5e60b6daf16d5bc94e">rxBytes</a> / ((<span class="keywordtype">float</span>)statsTimer-&gt;interval() / 1000.0);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    gcsStats.TxDataRate = (float)telStats.<a class="code" href="group___u_a_v_talk_plugin.html#ga349d8c0f2aac815d79b13e54f818658c">txBytes</a> / ((<span class="keywordtype">float</span>)statsTimer-&gt;interval() / 1000.0);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    gcsStats.RxFailures += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gaf07e5e11a7f3b4c277a26fa5dba7d3fa">rxErrors</a>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    gcsStats.TxFailures += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gad6930d8f0e5a3c2e251c9600d1264c1a">txErrors</a>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    gcsStats.TxRetries += telStats.<a class="code" href="group___u_a_v_talk_plugin.html#ga071780b1d6a06aa36a41efaa190e97ec">txRetries</a>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">// Check for a connection timeout</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">bool</span> connectionTimeout;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">if</span> (telStats.<a class="code" href="group___u_a_v_talk_plugin.html#gacd544f271fc6ee0f5eb72dc101a23c21">rxObjects</a> &gt; 0) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        connectionTimer-&gt;start();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">if</span> (connectionTimer-&gt;elapsed() &gt; CONNECTION_TIMEOUT_MS) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        connectionTimeout = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        connectionTimeout = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// Update connection state</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">int</span> oldStatus = gcsStats.Status;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_DISCONNECTED) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="comment">// Request connection</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        gcsStats.Status = GCSTelemetryStats::STATUS_HANDSHAKEREQ;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_HANDSHAKEREQ) {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="comment">// Check for connection acknowledge</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">if</span> (flightStats.Status == FlightTelemetryStats::STATUS_HANDSHAKEACK) {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            gcsStats.Status = GCSTelemetryStats::STATUS_CONNECTED;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED) {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="comment">// Check if the connection is still active and the the autopilot is still connected</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordflow">if</span> (flightStats.Status == FlightTelemetryStats::STATUS_DISCONNECTED || connectionTimeout) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            gcsStats.Status = GCSTelemetryStats::STATUS_DISCONNECTED;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    emit <a class="code" href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">telemetryUpdated</a>((<span class="keywordtype">double</span>)gcsStats.TxDataRate, (<span class="keywordtype">double</span>)gcsStats.RxDataRate);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// Set data</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    gcsStatsObj-&gt;setData(gcsStats);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="comment">// Force telemetry update if not yet connected</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status != GCSTelemetryStats::STATUS_CONNECTED</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        || flightStats.Status != FlightTelemetryStats::STATUS_CONNECTED) {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        gcsStatsObj-&gt;updated();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">// Act on new connections or disconnections</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_CONNECTED &amp;&amp; gcsStats.Status != oldStatus) {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        statsTimer-&gt;setInterval(STATS_UPDATE_PERIOD_MS);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Connection with the autopilot established&quot;</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        connectionStatus = CON_INITIALIZING;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        startRetrievingObjects();</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gcsStats.Status == GCSTelemetryStats::STATUS_DISCONNECTED &amp;&amp; gcsStats.Status != oldStatus) {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        statsTimer-&gt;setInterval(STATS_CONNECT_PERIOD_MS);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        connectionStatus = CON_DISCONNECTED;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">foreach</span> (<a class="code" href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a> map, objMngr-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">getObjects</a>()) {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_u_a_v_object.html">UAVObject</a> *obj, map.values()) {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *dobj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_u_a_v_data_object.html">UAVDataObject</a> *<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                <span class="keywordflow">if</span> (dobj)</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                    dobj-&gt;<a class="code" href="group___u_a_v_objects_plugin.html#ga65790c37eca581d43f3023f4f848efc7">resetIsPresentOnHardware</a>();</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        emit <a class="code" href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">disconnected</a>();</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga29e4461cd3bb02909a6e52ce3991b4d4"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga29e4461cd3bb02909a6e52ce3991b4d4">TelemetryMonitor::transactionCompleted</a></div><div class="ttdeci">void transactionCompleted(UAVObject *obj, bool success, bool nacked)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00253">telemetrymonitor.cpp:253</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_gad2af9cb530ef07a84cc9992d6458111f"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gad2af9cb530ef07a84cc9992d6458111f">TelemetryMonitor::TelemetryMonitor</a></div><div class="ttdeci">TelemetryMonitor(UAVObjectManager *objMngr, Telemetry *tel)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00096">telemetrymonitor.cpp:96</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga6018820b37db308fb1ee1b3c3ff4f9a0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga6018820b37db308fb1ee1b3c3ff4f9a0">UAVObject::requestUpdate</a></div><div class="ttdeci">void requestUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00163">uavobject.cpp:163</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gac4e867b78642d4f1fe27c5fc97468ce7"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gac4e867b78642d4f1fe27c5fc97468ce7">TelemetryMonitor::connected</a></div><div class="ttdeci">void connected()</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga77932d3af8bd55182bbc39af1f01f447"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">UAVDataObject::isSettings</a></div><div class="ttdeci">bool isSettings()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00069">uavdataobject.cpp:69</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga77932d3af8bd55182bbc39af1f01f447"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga77932d3af8bd55182bbc39af1f01f447">UAVDataObject::isSettings</a></div><div class="ttdeci">bool isSettings()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00072">uavdataobject.cpp:72</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga349d8c0f2aac815d79b13e54f818658c"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga349d8c0f2aac815d79b13e54f818658c">Telemetry::TelemetryStats::txBytes</a></div><div class="ttdeci">quint32 txBytes</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00073">telemetry.h:73</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga6cd43aaa339c4bd8beead8988bb9f1a6"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga6cd43aaa339c4bd8beead8988bb9f1a6">UAVObject::GetFlightTelemetryUpdateMode</a></div><div class="ttdeci">static UpdateMode GetFlightTelemetryUpdateMode(const Metadata &amp;meta)</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00459">uavobject.cpp:459</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga738d6ac5554d0f9d1c6adecbbca967a1"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga738d6ac5554d0f9d1c6adecbbca967a1">UAVObjectManager::ObjectMap</a></div><div class="ttdeci">QMap&lt; quint32, UAVObject * &gt; ObjectMap</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00053">uavobjectmanager.h:53</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gad71bd0967de227335d5fec0b599a54e3"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gad71bd0967de227335d5fec0b599a54e3">UAVObjectManager::registerObject</a></div><div class="ttdeci">bool registerObject(UAVDataObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00056">uavobjectmanager.cpp:56</a></div></div>
-<div class="ttc" id="class_extension_system_1_1_plugin_manager_html"><div class="ttname"><a href="class_extension_system_1_1_plugin_manager.html">ExtensionSystem::PluginManager</a></div><div class="ttdoc">Core plugin system that manages the plugins, their life cycle and their registered objects...</div><div class="ttdef"><b>Definition:</b> <a href="pluginmanager_8h_source.html#l00053">pluginmanager.h:53</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gabfdc167657f1b0eae61e412313785e7b"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gabfdc167657f1b0eae61e412313785e7b">UAVMetaObject::getParentObject</a></div><div class="ttdeci">UAVObject * getParentObject()</div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8cpp_source.html#l00072">uavmetaobject.cpp:72</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga7787ebe5de616d95116d5a4b360b6773"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga7787ebe5de616d95116d5a4b360b6773">UAVObjectManager::newInstance</a></div><div class="ttdeci">void newInstance(UAVObject *obj)</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga2b9ae613f54e59b358dbf2e31d32d9ad"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga2b9ae613f54e59b358dbf2e31d32d9ad">UAVObject::objectUnpacked</a></div><div class="ttdeci">void objectUnpacked(UAVObject *obj)</div><div class="ttdoc">objectUnpacked: triggered whenever an object is unpacked (i.e. arrives from the telemetry link) ...</div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga6e462b0a7fbd8f611a0ec628b97f0084"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga6e462b0a7fbd8f611a0ec628b97f0084">TelemetryMonitor::TelemetryMonitor</a></div><div class="ttdeci">TelemetryMonitor(UAVObjectManager *objMngr, Telemetry *tel, QHash&lt; quint16, QList&lt; objStruc &gt;&gt; sessions)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00062">telemetrymonitor.cpp:62</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga31c0b7ae632d68a5584d1f0696e35766"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a></div><div class="ttdeci">void flightStatsUpdated(UAVObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00338">telemetrymonitor.cpp:338</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga5768c896ea5cc0dd2d4e9304434ba866"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga5768c896ea5cc0dd2d4e9304434ba866">UAVDataObject::getReceived</a></div><div class="ttdeci">bool getReceived()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00130">uavdataobject.cpp:130</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga31c0b7ae632d68a5584d1f0696e35766"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga31c0b7ae632d68a5584d1f0696e35766">TelemetryMonitor::flightStatsUpdated</a></div><div class="ttdeci">void flightStatsUpdated(UAVObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00342">telemetrymonitor.cpp:342</a></div></div>
+<div class="ttc" id="class_u_a_v_meta_object_html"><div class="ttname"><a href="class_u_a_v_meta_object.html">UAVMetaObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavmetaobject_8h_source.html#l00033">uavmetaobject.h:33</a></div></div>
 <div class="ttc" id="group___core_plugin_html_gab606d10ae8f0f9575d0e8ffb6e776ac7"><div class="ttname"><a href="group___core_plugin.html#gab606d10ae8f0f9575d0e8ffb6e776ac7">Core::ICore::connectionManager</a></div><div class="ttdeci">virtual ConnectionManager * connectionManager() const =0</div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9aac3ae5395f63249cd821e0e5be5bf2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9aac3ae5395f63249cd821e0e5be5bf2">UAVObject::objectUpdated</a></div><div class="ttdeci">void objectUpdated(UAVObject *obj)</div><div class="ttdoc">Signal sent whenever any field of the object is updated. </div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaf465e2bde7a1e41ba94c19eac2ba9b80"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">UAVObject::getInstID</a></div><div class="ttdeci">quint32 getInstID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00117">uavobject.cpp:117</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaf465e2bde7a1e41ba94c19eac2ba9b80"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaf465e2bde7a1e41ba94c19eac2ba9b80">UAVObject::getInstID</a></div><div class="ttdeci">quint32 getInstID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00115">uavobject.cpp:115</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga4ab94ed9731bab394302b0d9e86712d4"><div class="ttname"><a href="group___core_plugin.html#ga4ab94ed9731bab394302b0d9e86712d4">Core::ConnectionManager::telemetryDisconnected</a></div><div class="ttdeci">void telemetryDisconnected()</div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8cpp_source.html#l00303">connectionmanager.cpp:303</a></div></div>
 <div class="ttc" id="icore_8h_html"><div class="ttname"><a href="icore_8h.html">icore.h</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaadeb5af3a70679bcb2b6360274e9c7de"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaadeb5af3a70679bcb2b6360274e9c7de">UAVObject::getMetadata</a></div><div class="ttdeci">virtual Metadata getMetadata()=0</div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gae14c5b7e20f137db436d3c1e7d1949ec"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gae14c5b7e20f137db436d3c1e7d1949ec">UAVDataObject::getMetaObject</a></div><div class="ttdeci">UAVMetaObject * getMetaObject()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00099">uavdataobject.cpp:99</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2b5452341c351cd2d67c46469b855607"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2b5452341c351cd2d67c46469b855607">TelemetryMonitor::transactionCompleted</a></div><div class="ttdeci">void transactionCompleted(UAVObject *obj, bool success)</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00297">telemetrymonitor.cpp:297</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gafac716c4828b4506f6982f79fc7827c2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gafac716c4828b4506f6982f79fc7827c2">UAVObject::transactionCompleted</a></div><div class="ttdeci">void transactionCompleted(UAVObject *obj, bool success)</div><div class="ttdoc">transactionCompleted. Triggered by a call to emitTransactionCompleted - done in telemetry.cpp whenever a transaction finishes. </div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gac05d3c2bd0fd07947707562f66ddfc18"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">UAVObject::isSingleInstance</a></div><div class="ttdeci">bool isSingleInstance()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00125">uavobject.cpp:125</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gac05d3c2bd0fd07947707562f66ddfc18"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gac05d3c2bd0fd07947707562f66ddfc18">UAVObject::isSingleInstance</a></div><div class="ttdeci">bool isSingleInstance()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00123">uavobject.cpp:123</a></div></div>
 <div class="ttc" id="telemetrymonitor_8h_html"><div class="ttname"><a href="telemetrymonitor_8h.html">telemetrymonitor.h</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga071780b1d6a06aa36a41efaa190e97ec"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga071780b1d6a06aa36a41efaa190e97ec">Telemetry::TelemetryStats::txRetries</a></div><div class="ttdeci">quint32 txRetries</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00081">telemetry.h:81</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga71099762904aac0b404fcd1f93bdc83e"><div class="ttname"><a href="group___core_plugin.html#ga71099762904aac0b404fcd1f93bdc83e">Core::ICore::instance</a></div><div class="ttdeci">static ICore * instance()</div><div class="ttdef"><b>Definition:</b> <a href="coreimpl_8cpp_source.html#l00046">coreimpl.cpp:46</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga71e85da70aaddce0e037f95505cbc054"><div class="ttname"><a href="group___core_plugin.html#ga71e85da70aaddce0e037f95505cbc054">Core::ConnectionManager::telemetryUpdated</a></div><div class="ttdeci">void telemetryUpdated(double txRate, double rxRate)</div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8cpp_source.html#l00321">connectionmanager.cpp:321</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_gabe2f26f1992e78356a82b135aeac951e"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a></div><div class="ttdeci">~TelemetryMonitor()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00110">telemetrymonitor.cpp:110</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga241aeafcb174351ac76df2ff55b019e2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">UAVDataObject::getIsPresentOnHardware</a></div><div class="ttdeci">bool getIsPresentOnHardware() const </div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00103">uavdataobject.cpp:103</a></div></div>
-<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2e16b3d1a298f851879d22749d1e38e9"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a></div><div class="ttdeci">void processStatsUpdates()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00560">telemetrymonitor.cpp:560</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_gabe2f26f1992e78356a82b135aeac951e"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gabe2f26f1992e78356a82b135aeac951e">TelemetryMonitor::~TelemetryMonitor</a></div><div class="ttdeci">~TelemetryMonitor()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00129">telemetrymonitor.cpp:129</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga241aeafcb174351ac76df2ff55b019e2"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga241aeafcb174351ac76df2ff55b019e2">UAVDataObject::getIsPresentOnHardware</a></div><div class="ttdeci">bool getIsPresentOnHardware() const </div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00112">uavdataobject.cpp:112</a></div></div>
+<div class="ttc" id="group___u_a_v_talk_plugin_html_ga2e16b3d1a298f851879d22749d1e38e9"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga2e16b3d1a298f851879d22749d1e38e9">TelemetryMonitor::processStatsUpdates</a></div><div class="ttdeci">void processStatsUpdates()</div><div class="ttdef"><b>Definition:</b> <a href="telemetrymonitor_8cpp_source.html#l00376">telemetrymonitor.cpp:376</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9caf6a3227049b9cf62a320824b5df11"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9caf6a3227049b9cf62a320824b5df11">UAVObjectManager::getObjects</a></div><div class="ttdeci">QHash&lt; quint32, QMap&lt; quint32, UAVObject * &gt; &gt; getObjects()</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00164">uavobjectmanager.cpp:164</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gaad45ab83a511083bfe60df0c244e9b88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">UAVObject::getObjID</a></div><div class="ttdeci">quint32 getObjID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00109">uavobject.cpp:109</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga65790c37eca581d43f3023f4f848efc7"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga65790c37eca581d43f3023f4f848efc7">UAVDataObject::resetIsPresentOnHardware</a></div><div class="ttdeci">void resetIsPresentOnHardware()</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00151">uavdataobject.cpp:151</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaad45ab83a511083bfe60df0c244e9b88"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaad45ab83a511083bfe60df0c244e9b88">UAVObject::getObjID</a></div><div class="ttdeci">quint32 getObjID()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00107">uavobject.cpp:107</a></div></div>
 <div class="ttc" id="class_telemetry_html"><div class="ttname"><a href="class_telemetry.html">Telemetry</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00066">telemetry.h:66</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gac7898d4b74305c568adefb289da72ebc"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gac7898d4b74305c568adefb289da72ebc">TelemetryMonitor::telemetryUpdated</a></div><div class="ttdeci">void telemetryUpdated(double txRate, double rxRate)</div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gaf07e5e11a7f3b4c277a26fa5dba7d3fa"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gaf07e5e11a7f3b4c277a26fa5dba7d3fa">Telemetry::TelemetryStats::rxErrors</a></div><div class="ttdeci">quint32 rxErrors</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00080">telemetry.h:80</a></div></div>
 <div class="ttc" id="class_u_a_v_data_object_html"><div class="ttname"><a href="class_u_a_v_data_object.html">UAVDataObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8h_source.html#l00037">uavdataobject.h:37</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gadda927fbb6858f5e60b6daf16d5bc94e"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gadda927fbb6858f5e60b6daf16d5bc94e">Telemetry::TelemetryStats::rxBytes</a></div><div class="ttdeci">quint32 rxBytes</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00074">telemetry.h:74</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga8b84e427e29108e21861266a4397b7a9"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga8b84e427e29108e21861266a4397b7a9">UAVDataObject::setIsPresentOnHardware</a></div><div class="ttdeci">void setIsPresentOnHardware(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00108">uavdataobject.cpp:108</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gafc50acdaa311c9fd9aaddf90fd578c14"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gafc50acdaa311c9fd9aaddf90fd578c14">UAVObject::objID</a></div><div class="ttdeci">quint32 objID</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00245">uavobject.h:245</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga92eb502fc16ba82b924a430acaa55f46"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">UAVObject::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00133">uavobject.cpp:133</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_ga92eb502fc16ba82b924a430acaa55f46"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga92eb502fc16ba82b924a430acaa55f46">UAVObject::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00131">uavobject.cpp:131</a></div></div>
 <div class="ttc" id="class_u_a_v_object_manager_html"><div class="ttname"><a href="class_u_a_v_object_manager.html">UAVObjectManager</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8h_source.html#l00046">uavobjectmanager.h:46</a></div></div>
 <div class="ttc" id="class_u_a_v_object_html"><div class="ttname"><a href="class_u_a_v_object.html">UAVObject</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00065">uavobject.h:65</a></div></div>
 <div class="ttc" id="group___core_plugin_html_ga4de138b49205db93c52a0b23f9147099"><div class="ttname"><a href="group___core_plugin.html#ga4de138b49205db93c52a0b23f9147099">Core::ConnectionManager::telemetryConnected</a></div><div class="ttdeci">void telemetryConnected()</div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8cpp_source.html#l00289">connectionmanager.cpp:289</a></div></div>
-<div class="ttc" id="class_q_list_html"><div class="ttname"><a href="class_q_list.html">QList</a></div><div class="ttdef"><b>Definition:</b> <a href="icore_8h_source.html#l00039">icore.h:39</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gga08c0580992fcd51c2b44734e2d24cac6a118268aa016a1f371149d6180bd9a366">UAVObject::UPDATEMODE_ONCHANGE</a></div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8h_source.html#l00076">uavobject.h:76</a></div></div>
+<div class="ttc" id="uavobjecttemplate_8m_html_a49654e4709f40aecccada266daa32fc6"><div class="ttname"><a href="uavobjecttemplate_8m.html#a49654e4709f40aecccada266daa32fc6">idx</a></div><div class="ttdeci">idx</div><div class="ttdef"><b>Definition:</b> <a href="uavobjecttemplate_8m_source.html#l00359">uavobjecttemplate.m:359</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gad6930d8f0e5a3c2e251c9600d1264c1a"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gad6930d8f0e5a3c2e251c9600d1264c1a">Telemetry::TelemetryStats::txErrors</a></div><div class="ttdeci">quint32 txErrors</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00079">telemetry.h:79</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga9c113847ecf6bd99cf7efe3535620e66"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga9c113847ecf6bd99cf7efe3535620e66">UAVDataObject::clone</a></div><div class="ttdeci">virtual UAVDataObject * clone(quint32 instID=0)=0</div></div>
-<div class="ttc" id="_o_p_plots_8m_html_a9336ebf25087d91c818ee6e9ec29f8c1"><div class="ttname"><a href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> <a href="_o_p_plots_8m_source.html#l00100">OPPlots.m:100</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gaa90a6ad99ab78ba3232de9b3faf0e11f"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gaa90a6ad99ab78ba3232de9b3faf0e11f">UAVDataObject::getPresenceKnown</a></div><div class="ttdeci">bool getPresenceKnown() const </div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00107">uavdataobject.cpp:107</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gada44cdbfa55a281b78d41abcc6834dc0"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gada44cdbfa55a281b78d41abcc6834dc0">UAVObjectManager::getObject</a></div><div class="ttdeci">UAVObject * getObject(const QString &amp;name, quint32 instId=0)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00215">uavobjectmanager.cpp:215</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga9f456df92180138a0adebc5e3afc3402"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga9f456df92180138a0adebc5e3afc3402">Telemetry::getStats</a></div><div class="ttdeci">TelemetryStats getStats()</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8cpp_source.html#l00708">telemetry.cpp:708</a></div></div>
 <div class="ttc" id="class_core_1_1_connection_manager_html"><div class="ttname"><a href="class_core_1_1_connection_manager.html">Core::ConnectionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="connectionmanager_8h_source.html#l00100">connectionmanager.h:100</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_gacd544f271fc6ee0f5eb72dc101a23c21"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#gacd544f271fc6ee0f5eb72dc101a23c21">Telemetry::TelemetryStats::rxObjects</a></div><div class="ttdeci">quint32 rxObjects</div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00077">telemetry.h:77</a></div></div>
 <div class="ttc" id="connectionmanager_8h_html"><div class="ttname"><a href="connectionmanager_8h.html">connectionmanager.h</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_ga308aa598ad6f8161f13c6f8b612c4259"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga308aa598ad6f8161f13c6f8b612c4259">UAVObjectManager::unRegisterObject</a></div><div class="ttdeci">bool unRegisterObject(UAVDataObject *obj)</div><div class="ttdoc">unregisters an object instance and all instances bigger than the one passed as argument from the mana...</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00122">uavobjectmanager.cpp:122</a></div></div>
-<div class="ttc" id="group___u_a_v_objects_plugin_html_ga0a1e84e69bf26a58ffab4245b27b5ac4"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#ga0a1e84e69bf26a58ffab4245b27b5ac4">UAVObject::requestUpdateAllInstances</a></div><div class="ttdeci">void requestUpdateAllInstances()</div><div class="ttdef"><b>Definition:</b> <a href="uavobject_8cpp_source.html#l00173">uavobject.cpp:173</a></div></div>
 <div class="ttc" id="struct_telemetry_1_1_telemetry_stats_html"><div class="ttname"><a href="struct_telemetry_1_1_telemetry_stats.html">Telemetry::TelemetryStats</a></div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00071">telemetry.h:71</a></div></div>
+<div class="ttc" id="group___u_a_v_objects_plugin_html_gafc17046a1aff7eff81eaebfa4ae4a204"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gafc17046a1aff7eff81eaebfa4ae4a204">UAVDataObject::setIsPresentOnHardware</a></div><div class="ttdeci">void setIsPresentOnHardware(bool value=true)</div><div class="ttdef"><b>Definition:</b> <a href="uavdataobject_8cpp_source.html#l00135">uavdataobject.cpp:135</a></div></div>
 <div class="ttc" id="group___u_a_v_objects_plugin_html_gab285ecd0299f701264d624cad6e51ef1"><div class="ttname"><a href="group___u_a_v_objects_plugin.html#gab285ecd0299f701264d624cad6e51ef1">UAVObjectManager::getNumInstances</a></div><div class="ttdeci">qint32 getNumInstances(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="uavobjectmanager_8cpp_source.html#l00279">uavobjectmanager.cpp:279</a></div></div>
 <div class="ttc" id="group___u_a_v_talk_plugin_html_ga8445fbd983df4d054bb798c760ba0640"><div class="ttname"><a href="group___u_a_v_talk_plugin.html#ga8445fbd983df4d054bb798c760ba0640">TelemetryMonitor::disconnected</a></div><div class="ttdeci">void disconnected()</div></div>
 </div><!-- fragment --></div><!-- contents -->

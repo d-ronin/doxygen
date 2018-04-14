@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/tests/logfs/pios_flash_posix_priv.h File Reference</title>
+<title>dRonin: flight/PiOS/posix/inc/pios_flash_posix_priv.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -125,10 +125,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae8cee4b9a0f2ff6a3c77a5aff6218b96"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__flash__posix__priv_8h.html#ae8cee4b9a0f2ff6a3c77a5aff6218b96">PIOS_Flash_Posix_Init</a> (uintptr_t *chip_id, const struct <a class="el" href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>)</td></tr>
-<tr class="separator:ae8cee4b9a0f2ff6a3c77a5aff6218b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad295641fe76394a3bd067f57c5b8bcc9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__flash__posix__priv_8h.html#ad295641fe76394a3bd067f57c5b8bcc9">PIOS_Flash_Posix_Init</a> (uintptr_t *chip_id, const struct <a class="el" href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a> *<a class="el" href="group___flying_p_i_o.html#ga2ed726ef287ca5aba87d97c4b83051da">cfg</a>, bool force_recreate)</td></tr>
+<tr class="separator:ad295641fe76394a3bd067f57c5b8bcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab789826bd7675af15f06c45f3986cf47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__flash__posix__priv_8h.html#ab789826bd7675af15f06c45f3986cf47">PIOS_Flash_Posix_Destroy</a> (uintptr_t chip_id)</td></tr>
 <tr class="separator:ab789826bd7675af15f06c45f3986cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cbd31eb54e75861f03ab588ec3f5bc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__flash__posix__priv_8h.html#a2cbd31eb54e75861f03ab588ec3f5bc1">PIOS_Flash_Posix_SetFName</a> (const char *name)</td></tr>
+<tr class="separator:a2cbd31eb54e75861f03ab588ec3f5bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -150,11 +152,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00062">62</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00096">96</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae8cee4b9a0f2ff6a3c77a5aff6218b96"></a>
+<a class="anchor" id="ad295641fe76394a3bd067f57c5b8bcc9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -168,7 +170,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const struct <a class="el" href="structpios__flash__posix__cfg.html">pios_flash_posix_cfg</a> *&#160;</td>
-          <td class="paramname"><em>cfg</em>&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_recreate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -178,7 +186,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00031">31</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00045">45</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cbd31eb54e75861f03ab588ec3f5bc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_Flash_Posix_SetFName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00040">40</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +219,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00179">179</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
+<p>Definition at line <a class="el" href="pios__flash__posix_8c_source.html#l00204">204</a> of file <a class="el" href="pios__flash__posix_8c_source.html">pios_flash_posix.c</a>.</p>
 
 </div>
 </div>
@@ -202,7 +228,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_80f31eee9cf89edb960fe823c08758ad.html">tests</a></li><li class="navelem"><a class="el" href="dir_1875f0b3136189a8248579f8768ded47.html">logfs</a></li><li class="navelem"><a class="el" href="pios__flash__posix__priv_8h.html">pios_flash_posix_priv.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_6575c3929beb1e734d50be16048eac24.html">posix</a></li><li class="navelem"><a class="el" href="dir_02e49bd200f4a664c3b24fc6e8b414e0.html">inc</a></li><li class="navelem"><a class="el" href="pios__flash__posix__priv_8h.html">pios_flash_posix_priv.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

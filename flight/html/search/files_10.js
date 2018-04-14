@@ -2,8 +2,7 @@ var searchData=
 [
   ['tablet_5fcontrol_2ec',['tablet_control.c',['../tablet__control_8c.html',1,'']]],
   ['tablet_5fcontrol_2eh',['tablet_control.h',['../tablet__control_8h.html',1,'']]],
-  ['task_2eh',['task.h',['../logfs_2task_8h.html',1,'']]],
-  ['task_2eh',['task.h',['../dsm_2task_8h.html',1,'']]],
+  ['task_2eh',['task.h',['../task_8h.html',1,'']]],
   ['taskmonitor_2ec',['taskmonitor.c',['../taskmonitor_8c.html',1,'']]],
   ['taskmonitor_2eh',['taskmonitor.h',['../taskmonitor_8h.html',1,'']]],
   ['tbs_5fsmartaudio_2ec',['tbs_smartaudio.c',['../tbs__smartaudio_8c.html',1,'']]],

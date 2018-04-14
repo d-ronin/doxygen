@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -164,54 +164,53 @@ $(document).ready(function(){initNavTree('targets_2flyingpio_2board-info_2pios__
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// See also pios_board.c</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//------------------------</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gad9504d2174472de2d678814e430678c9">   66</a></span>&#160;<span class="preprocessor">#define PIOS_RCVR_MAX_CHANNELS                  12</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga7f93f74c93a49c6f7b372dbb55b851f6">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GCSRCVR_TIMEOUT_MS                 100</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// Receiver PPM input</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga288a8e6f061b1dbd7930b5ffdf805c69">   72</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS                             12</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// Receiver DSM input</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gabf39f1bc59b5af7e8f138bb394770300">   77</a></span>&#160;<span class="preprocessor">#define PIOS_DSM_NUM_INPUTS                             12</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// Reciever HSUM input</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gad59135d54dcccdf2854a3b39fb0494f5">   82</a></span>&#160;<span class="preprocessor">#define PIOS_HSUM_MAX_DEVS                              1</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga2a5b4da2757e6727567656c3a9025ccd">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HSUM_NUM_INPUTS                    32</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">// Receiver S.Bus input</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga7abaa7b2a334f64bfc43df02807d0f3f">   88</a></span>&#160;<span class="preprocessor">#define PIOS_SBUS_NUM_INPUTS                    (16+2)</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">// Servo outputs</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gaaf11e7ae7e32bacf0180ba8d6f144488">   93</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">   94</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION    0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// Timer controller settings</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//--------------------------</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gabed34fab9b2b2c4c92ecc825c75c9244">   99</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                               3</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">// ADC</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t <a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define pios_internal_adc_id                                    (pios_internal_adc_id)</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga2be0b313025f4a19c9ac7d5f05d94000">  109</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_ADC_SUB_DRIVER_MAX_INSTANCES               1</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga645df4566a90656d8b02ee4e63a54dfe">  111</a></span>&#160;<span class="preprocessor">#define VREF_PLUS                                                               3.3</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FLYINGPIO_PIOS_BOARD_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// Receiver PPM input</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga288a8e6f061b1dbd7930b5ffdf805c69">   71</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS                             12</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// Receiver DSM input</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gabf39f1bc59b5af7e8f138bb394770300">   76</a></span>&#160;<span class="preprocessor">#define PIOS_DSM_NUM_INPUTS                             12</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Reciever HSUM input</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gad59135d54dcccdf2854a3b39fb0494f5">   81</a></span>&#160;<span class="preprocessor">#define PIOS_HSUM_MAX_DEVS                              1</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga2a5b4da2757e6727567656c3a9025ccd">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HSUM_NUM_INPUTS                    32</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// Receiver S.Bus input</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga7abaa7b2a334f64bfc43df02807d0f3f">   87</a></span>&#160;<span class="preprocessor">#define PIOS_SBUS_NUM_INPUTS                    (16+2)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// Servo outputs</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gaaf11e7ae7e32bacf0180ba8d6f144488">   92</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">   93</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVOS_INITIAL_POSITION    0 </span><span class="comment">/* dont want to start motors, have no pulse till settings loaded */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// Timer controller settings</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">//--------------------------</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#gabed34fab9b2b2c4c92ecc825c75c9244">   98</a></span>&#160;<span class="preprocessor">#define PIOS_TIM_MAX_DEVS                               3</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// ADC</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t <a class="code" href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define pios_internal_adc_id                                    (pios_internal_adc_id)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga2be0b313025f4a19c9ac7d5f05d94000">  108</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_ADC_SUB_DRIVER_MAX_INSTANCES               1</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___flying_p_i_o.html#ga645df4566a90656d8b02ee4e63a54dfe">  110</a></span>&#160;<span class="preprocessor">#define VREF_PLUS                                                               3.3</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FLYINGPIO_PIOS_BOARD_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___a_q32_html_gafb354658d0ba22815d8632d97c062c0b"><div class="ttname"><a href="group___a_q32.html#gafb354658d0ba22815d8632d97c062c0b">pios_internal_adc_id</a></div><div class="ttdeci">uintptr_t pios_internal_adc_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2fw_2pios__board_8c_source.html#l00051">pios_board.c:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

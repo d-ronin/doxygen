@@ -21,5 +21,6 @@ var group___targets =
     [ "check_bor", "group___targets.html#ga7b0ed4e8687557e464541def703918fe", null ],
     [ "initTask", "group___targets.html#ga2827c35853700cba9dab0b58ed4e0498", null ],
     [ "main", "group___targets.html#gae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "Stack_Change", "group___targets.html#ga7a789e7b91612099a4a1f355b9e97c24", null ]
+    [ "Stack_Change", "group___targets.html#ga7a789e7b91612099a4a1f355b9e97c24", null ],
+    [ "system_task", "group___targets.html#ga68e9365f4b4a4922ae761a90e16bf5ea", null ]
 ];

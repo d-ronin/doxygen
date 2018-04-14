@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('pios__dma_8c_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along </span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;pios.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios_8h.html">pios.h</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pios__dma_8c.html#a0a391b0ee006e80f23e36069abc1bbd7">PIOS_DMA_Default_Handler</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -152,14 +152,15 @@ $(document).ready(function(){initNavTree('pios__dma_8c_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> -2;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="pios__dma_8c_html_a0a391b0ee006e80f23e36069abc1bbd7"><div class="ttname"><a href="pios__dma_8c.html#a0a391b0ee006e80f23e36069abc1bbd7">PIOS_DMA_Default_Handler</a></div><div class="ttdeci">void PIOS_DMA_Default_Handler(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__dma_8c_source.html#l00036">pios_dma.c:36</a></div></div>
 <div class="ttc" id="pios__dma_8c_html_a5f61e6f0af52160f6f5e483c857892a3"><div class="ttname"><a href="pios__dma_8c.html#a5f61e6f0af52160f6f5e483c857892a3">dma_channels</a></div><div class="ttdeci">static const DMA_Channel_TypeDef * dma_channels[]</div><div class="ttdef"><b>Definition:</b> <a href="pios__dma_8c_source.html#l00034">pios_dma.c:34</a></div></div>
-<div class="ttc" id="group___d_t_fc_html_gad33869b41ed36381d09ca776fec2ca64"><div class="ttname"><a href="group___d_t_fc.html#gad33869b41ed36381d09ca776fec2ca64">PIOS_DMA_CHANNELS</a></div><div class="ttdeci">#define PIOS_DMA_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00237">pios_board.h:237</a></div></div>
+<div class="ttc" id="group___d_t_fc_html_gad33869b41ed36381d09ca776fec2ca64"><div class="ttname"><a href="group___d_t_fc.html#gad33869b41ed36381d09ca776fec2ca64">PIOS_DMA_CHANNELS</a></div><div class="ttdeci">#define PIOS_DMA_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00236">pios_board.h:236</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="pios__dma_8c_html_a88e56c9266e75dfbe8f4e4447fba3acd"><div class="ttname"><a href="pios__dma_8c.html#a88e56c9266e75dfbe8f4e4447fba3acd">PIOS_DMA_Install_Interrupt_handler</a></div><div class="ttdeci">int8_t PIOS_DMA_Install_Interrupt_handler(DMA_Channel_TypeDef *channel, void *function)</div><div class="ttdef"><b>Definition:</b> <a href="pios__dma_8c_source.html#l00040">pios_dma.c:40</a></div></div>
 <div class="ttc" id="pios__dma_8c_html_a697f6daba514fea6fcc3846c91c43b2d"><div class="ttname"><a href="pios__dma_8c.html#a697f6daba514fea6fcc3846c91c43b2d">pios_dma_handler_map</a></div><div class="ttdeci">void(* pios_dma_handler_map[PIOS_DMA_MAX_CHANNELS][PIOS_DMA_MAX_HANDLERS_PER_CHANNEL])(void)</div><div class="ttdef"><b>Definition:</b> <a href="pios__dma_8c_source.html#l00032">pios_dma.c:32</a></div></div>
-<div class="ttc" id="group___d_t_fc_html_ga6b94edc71b12bbba8f4d137995e20e43"><div class="ttname"><a href="group___d_t_fc.html#ga6b94edc71b12bbba8f4d137995e20e43">PIOS_DMA_MAX_HANDLERS_PER_CHANNEL</a></div><div class="ttdeci">#define PIOS_DMA_MAX_HANDLERS_PER_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00236">pios_board.h:236</a></div></div>
-<div class="ttc" id="group___d_t_fc_html_gab49a10e72bc5f331b5e3b3a92671e069"><div class="ttname"><a href="group___d_t_fc.html#gab49a10e72bc5f331b5e3b3a92671e069">PIOS_DMA_MAX_CHANNELS</a></div><div class="ttdeci">#define PIOS_DMA_MAX_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00235">pios_board.h:235</a></div></div>
+<div class="ttc" id="group___d_t_fc_html_ga6b94edc71b12bbba8f4d137995e20e43"><div class="ttname"><a href="group___d_t_fc.html#ga6b94edc71b12bbba8f4d137995e20e43">PIOS_DMA_MAX_HANDLERS_PER_CHANNEL</a></div><div class="ttdeci">#define PIOS_DMA_MAX_HANDLERS_PER_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00235">pios_board.h:235</a></div></div>
+<div class="ttc" id="group___d_t_fc_html_gab49a10e72bc5f331b5e3b3a92671e069"><div class="ttname"><a href="group___d_t_fc.html#gab49a10e72bc5f331b5e3b3a92671e069">PIOS_DMA_MAX_CHANNELS</a></div><div class="ttdeci">#define PIOS_DMA_MAX_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2dtfc_2board-info_2pios__board_8h_source.html#l00234">pios_board.h:234</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

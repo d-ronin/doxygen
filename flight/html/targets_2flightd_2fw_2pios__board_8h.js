@@ -13,7 +13,6 @@ var targets_2flightd_2fw_2pios__board_8h =
     [ "PIOS_COM_OPENLOG", "targets_2flightd_2fw_2pios__board_8h.html#gad6409f51ab61c676f1a82e4d50b1fd68", null ],
     [ "PIOS_COM_TELEM_RF", "targets_2flightd_2fw_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "targets_2flightd_2fw_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
-    [ "PIOS_GCSRCVR_TIMEOUT_MS", "targets_2flightd_2fw_2pios__board_8h.html#ga7f93f74c93a49c6f7b372dbb55b851f6", null ],
     [ "PIOS_LED_ALARM", "targets_2flightd_2fw_2pios__board_8h.html#gae4912a499d71db827918d7908055ce05", null ],
     [ "PIOS_LED_HEARTBEAT", "targets_2flightd_2fw_2pios__board_8h.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],
     [ "PIOS_SERIAL_RX_BUFFER_SIZE", "targets_2flightd_2fw_2pios__board_8h.html#gaace4e409560409ac9dd0a0ff97a4aab1", null ],

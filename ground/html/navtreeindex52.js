@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"taulinkplugin_8h_source.html":[6,0,0,0,0,1,34,7],
+"telemetry_8cpp.html":[6,0,0,0,0,1,41,0],
 "telemetry_8cpp_source.html":[6,0,0,0,0,1,41,0],
 "telemetry_8h.html":[6,0,0,0,0,1,41,1],
 "telemetry_8h_source.html":[6,0,0,0,0,1,41,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "uavobjecttemplate_8m.html#a57beaa96718bd8adf411aff9f04d717c":[6,0,0,0,0,1,37,22,2],
 "uavobjecttemplate_8m.html#a5a187172ec19a6a62d3f6965b71939f4":[6,0,0,0,0,1,37,22,18],
 "uavobjecttemplate_8m.html#a5b68c0ce1664726d2f24f81746f622bf":[6,0,0,0,0,1,37,22,49],
-"uavobjecttemplate_8m.html#a5e36941b3d856737e81516acd45edc50":[6,0,0,0,0,1,37,22,39],
-"uavobjecttemplate_8m.html#a6219c46730d06d3988d873698318eada":[6,0,0,0,0,1,37,22,74],
-"uavobjecttemplate_8m.html#a642db902c10b284834220079d223b0e0":[6,0,0,0,0,1,37,22,12]
+"uavobjecttemplate_8m.html#a5e36941b3d856737e81516acd45edc50":[6,0,0,0,0,1,37,22,39]
 };

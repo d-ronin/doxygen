@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">4ec2dbb</span>
+   &#160;<span id="projectnumber">7e1292a</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -124,7 +124,6 @@ $(document).ready(function(){initNavTree('telemetry_8c.html','');});
 <code>#include &quot;flighttelemetrystats.h&quot;</code><br/>
 <code>#include &quot;gcstelemetrystats.h&quot;</code><br/>
 <code>#include &quot;modulesettings.h&quot;</code><br/>
-<code>#include &quot;sessionmanaging.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__thread_8h_source.html">pios_thread.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__mutex_8h_source.html">pios_mutex.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pios__queue_8h_source.html">pios_queue.h</a>&quot;</code><br/>
@@ -206,8 +205,6 @@ Functions</h2></td></tr>
 <tr class="separator:gad0b9bd8f45359133da342c354426cb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga079a96905407622d10643ce69c08b288"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga079a96905407622d10643ce69c08b288">getComPort</a> ()</td></tr>
 <tr class="separator:ga079a96905407622d10643ce69c08b288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadefbd4671bb99ddde5f4003872f332dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gadefbd4671bb99ddde5f4003872f332dd">session_managing_updated</a> (<a class="el" href="struct_u_a_v_obj_event.html">UAVObjEvent</a> *ev, void *ctx, void *obj, int len)</td></tr>
-<tr class="separator:gadefbd4671bb99ddde5f4003872f332dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga52bb8385670941f7c5b78c973d2ce66f">update_object_instances</a> (uint32_t <a class="el" href="pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556">obj_id</a>, uint32_t inst_id)</td></tr>
 <tr class="separator:ga52bb8385670941f7c5b78c973d2ce66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga449e738a53e7d2140ef399bd51e2511d"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga449e738a53e7d2140ef399bd51e2511d">fileReqCallback</a> (void *ctx, uint8_t *buf, uint32_t <a class="el" href="pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc">file_id</a>, uint32_t <a class="el" href="group___common_f1.html#gaa9fff43968831437a312428836cab362">offset</a>, uint32_t len)</td></tr>
@@ -220,10 +217,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga058925ecc8ea2cd938fb3e9d21edb2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga4ab4c9d78fdc236b072a3857f7fb3644">ackResendOrTimeout</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem, int idx)</td></tr>
 <tr class="separator:ga4ab4c9d78fdc236b072a3857f7fb3644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga659839ec018f0e5accebd2ae20ef5e58">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
-<tr class="separator:ga659839ec018f0e5accebd2ae20ef5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga007b6d628b2388d567eda733a38e953b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga007b6d628b2388d567eda733a38e953b">sendRequestedObjs</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
-<tr class="separator:ga007b6d628b2388d567eda733a38e953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb0bcf94b657d0f75acaa18bae5b480d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafb0bcf94b657d0f75acaa18bae5b480d">ackHousekeeping</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:gafb0bcf94b657d0f75acaa18bae5b480d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280a48bbd05288c56e6815670cede89a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#ga280a48bbd05288c56e6815670cede89a">sendRequestedObjs</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
+<tr class="separator:ga280a48bbd05288c56e6815670cede89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe9341b34dfb706c0f819455fd6445bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___telemetry_module.html#gafe9341b34dfb706c0f819455fd6445bb">gcsTelemetryStatsUpdated</a> (<a class="el" href="group___telemetry_module.html#gaf96d05b24c74c23babb77afcd9a72bbd">telem_t</a> telem)</td></tr>
 <tr class="separator:gafe9341b34dfb706c0f819455fd6445bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
