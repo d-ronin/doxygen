@@ -29,7 +29,6 @@ var searchData=
   ['gpio',['gpio',['../structstm32__gpio.html#a3d54b128262b814ecf0ad412093b6402',1,'stm32_gpio::gpio()'],['../group___p_i_o_s___s_e_r_v_o.html#gaf73feb9f87520480ed9dd7c264cd47cc',1,'dshot_info::gpio()'],['../group___p_i_o_s.html#ga9f00a167ec05194a200822f3281bc4ed',1,'pios_dac_cfg::gpio()']]],
   ['gpio_5fclk_5ffunc',['gpio_clk_func',['../structpios__sbus__cfg.html#a66cb660c4fe8979c218032c477b12a93',1,'pios_sbus_cfg']]],
   ['gpio_5fclk_5fperiph',['gpio_clk_periph',['../structpios__sbus__cfg.html#af2100d98daffabe98836f12519330975',1,'pios_sbus_cfg']]],
-  ['gpio_5fdirection',['gpio_direction',['../structpios__rfm22b__cfg.html#ac8a55d600d26585b2fb4d58c4e197f9b',1,'pios_rfm22b_cfg']]],
   ['gpio_5finit',['gpio_init',['../structpios__servo__cfg.html#a41b9d93e4e94a3a0c5e40a4e42c6d117',1,'pios_servo_cfg']]],
   ['gpio_5finv_5fdisable',['gpio_inv_disable',['../structpios__sbus__cfg.html#a843ec7deaae570eeab1dc5770e77dafe',1,'pios_sbus_cfg']]],
   ['gpio_5finv_5fenable',['gpio_inv_enable',['../structpios__sbus__cfg.html#ab2b1ec166136b6e8ecfc96fa0c1319b5',1,'pios_sbus_cfg']]],

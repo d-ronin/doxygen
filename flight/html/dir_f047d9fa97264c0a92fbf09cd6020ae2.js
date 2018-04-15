@@ -1,6 +1,6 @@
 var dir_f047d9fa97264c0a92fbf09cd6020ae2 =
 [
-    [ "pios_adc.c", "pios__adc_8c.html", "pios__adc_8c" ],
+    [ "pios_adc.c", "pios__adc_8c.html", null ],
     [ "pios_annuncdac.c", "pios__annuncdac_8c.html", null ],
     [ "pios_bmi160.c", "pios__bmi160_8c.html", null ],
     [ "pios_bmm150.c", "pios__bmm150_8c.html", null ],
@@ -42,9 +42,6 @@ var dir_f047d9fa97264c0a92fbf09cd6020ae2 =
     [ "pios_px4flow.c", "pios__px4flow_8c.html", null ],
     [ "pios_queue.c", "_common_2pios__queue_8c.html", null ],
     [ "pios_rcvr.c", "pios__rcvr_8c.html", null ],
-    [ "pios_rfm22b.c", "pios__rfm22b_8c.html", null ],
-    [ "pios_rfm22b_com.c", "pios__rfm22b__com_8c.html", null ],
-    [ "pios_rfm22b_rcvr.c", "pios__rfm22b__rcvr_8c.html", null ],
     [ "pios_sbus.c", "pios__sbus_8c.html", null ],
     [ "pios_semaphore.c", "_common_2pios__semaphore_8c.html", "_common_2pios__semaphore_8c" ],
     [ "pios_sensors.c", "pios__sensors_8c.html", "pios__sensors_8c" ],

@@ -19,9 +19,6 @@ var targets_2sparky2_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_OPENLRS", "targets_2sparky2_2fw_2pios__config_8h.html#ga66ca692c3616d468a144a072ea6ddbd6", null ],
     [ "PIOS_INCLUDE_OPENLRS_RCVR", "targets_2sparky2_2fw_2pios__config_8h.html#ga7448277b4e8b562edab90b017696189b", null ],
     [ "PIOS_INCLUDE_PWM", "targets_2sparky2_2fw_2pios__config_8h.html#gabad4c3dcdc9a7f45bc23006b85854f0d", null ],
-    [ "PIOS_INCLUDE_RFM22B", "targets_2sparky2_2fw_2pios__config_8h.html#ga878b6c7a5e981959c4f41d654f9342db", null ],
-    [ "PIOS_INCLUDE_RFM22B_COM", "targets_2sparky2_2fw_2pios__config_8h.html#gace1ff3845bfdc37404abe261c6316ea2", null ],
-    [ "PIOS_INCLUDE_RFM22B_RCVR", "targets_2sparky2_2fw_2pios__config_8h.html#gaf6410b66dc97290a31c4ca57170cc771", null ],
     [ "PIOS_INCLUDE_SPI", "targets_2sparky2_2fw_2pios__config_8h.html#gacc93b5bb2caa11a16122f6eb0c619379", null ],
     [ "PIOS_LOGFLASH_SECT_SIZE", "targets_2sparky2_2fw_2pios__config_8h.html#gae78ef0099e559f8b4cd423bb2c0f3b5a", null ],
     [ "STABILIZATION_LQG", "targets_2sparky2_2fw_2pios__config_8h.html#ga02110c152ec1a097f4ff145b650b6309", null ]

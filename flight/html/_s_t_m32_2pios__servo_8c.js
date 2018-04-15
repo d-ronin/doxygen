@@ -30,7 +30,7 @@ var _s_t_m32_2pios__servo_8c =
     [ "DS_GPIOC", "_s_t_m32_2pios__servo_8c.html#ga5c6a0069049793bc604f72f85ea8f506", null ],
     [ "dshot", "_s_t_m32_2pios__servo_8c.html#gaf5c6f4a8f5545b7b2a2bff79aac38b96", null ],
     [ "dshot_in_use", "_s_t_m32_2pios__servo_8c.html#ga0bc6674ccb22e0f24478e227f21131a2", null ],
-    [ "i", "_s_t_m32_2pios__servo_8c.html#ga228afb5a399881f085cfa091e7d91215", null ],
+    [ "i", "_s_t_m32_2pios__servo_8c.html#ga36deb24fb531735a17e6f39d10299d0d", null ],
     [ "mode", "_s_t_m32_2pios__servo_8c.html#ga9b9989d29283df24c5b281ec32b3b1c7", null ],
     [ "output_channels", "_s_t_m32_2pios__servo_8c.html#ga809ddb8b3a5e737e13c1f5d9f1394ebd", null ],
     [ "pwm_res", "_s_t_m32_2pios__servo_8c.html#gaf76078ad3a81e9760694550485b6e590", null ],

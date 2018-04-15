@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['abstractwizardpage_2ecpp',['abstractwizardpage.cpp',['../rfmbindwizard_2pages_2abstractwizardpage_8cpp.html',1,'']]],
-  ['abstractwizardpage_2ecpp',['abstractwizardpage.cpp',['../setupwizard_2pages_2abstractwizardpage_8cpp.html',1,'']]],
-  ['abstractwizardpage_2eh',['abstractwizardpage.h',['../rfmbindwizard_2pages_2abstractwizardpage_8h.html',1,'']]],
-  ['abstractwizardpage_2eh',['abstractwizardpage.h',['../setupwizard_2pages_2abstractwizardpage_8h.html',1,'']]],
+  ['abstractwizardpage_2ecpp',['abstractwizardpage.cpp',['../abstractwizardpage_8cpp.html',1,'']]],
+  ['abstractwizardpage_2eh',['abstractwizardpage.h',['../abstractwizardpage_8h.html',1,'']]],
   ['accessmode_2eh',['accessmode.h',['../accessmode_8h.html',1,'']]],
   ['actioncontainer_2ecpp',['actioncontainer.cpp',['../actioncontainer_8cpp.html',1,'']]],
   ['actioncontainer_2eh',['actioncontainer.h',['../actioncontainer_8h.html',1,'']]],

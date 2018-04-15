@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -225,106 +225,106 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga81fbad142b003248686d741feb03eabe"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___common.html#ga54adf70880c786a1fecf7859d48b01f0">dfu_partition_label</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga81fbad142b003248686d741feb03eabe">__attribute__</a> ((packed))</td></tr>
 <tr class="separator:ga81fbad142b003248686d741feb03eabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adecf47ce4e8997006a5cca83db7a50f7"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:ab3b1becf018491d40a5b9d40264fa4cc"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_req</b> {</td></tr>
-<tr class="memitem:ab682eca3d9a92ccd83367fae9e5b975c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
-<tr class="separator:ab682eca3d9a92ccd83367fae9e5b975c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbfa48262d198d72526bb57bce72f53d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
-<tr class="separator:abbfa48262d198d72526bb57bce72f53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3b1becf018491d40a5b9d40264fa4cc"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af45659caaf8461a74d58eb049574736c">cap_req</a></td></tr>
-<tr class="separator:ab3b1becf018491d40a5b9d40264fa4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad190091a60b45bb32bbd22889bb5f5ed"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_rep_all</b> {</td></tr>
-<tr class="memitem:aebf4a0562c3c6fcfb36d331822ef79cd"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
-<tr class="separator:aebf4a0562c3c6fcfb36d331822ef79cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e33c265e9dd6c220c1123a29a6262b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a05dd22df3a20a5e174f44d5a4529eb98">number_of_devices</a></td></tr>
-<tr class="separator:ae2e33c265e9dd6c220c1123a29a6262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2075450c91b18b48d45289d63e22e70c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a8205f7f47c37570f998de5a707413c34">wrflags</a></td></tr>
-<tr class="separator:a2075450c91b18b48d45289d63e22e70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad190091a60b45bb32bbd22889bb5f5ed"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#aeb8c9cff85dc2433318e4b2464e174a8">cap_rep_all</a></td></tr>
-<tr class="separator:ad190091a60b45bb32bbd22889bb5f5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92887144356323e6a42c5d55d9784fa"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_rep_specific</b> {</td></tr>
-<tr class="memitem:ac0e036e64aff7dc1b6108db6a7a12b88"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c">fw_size</a></td></tr>
-<tr class="separator:ac0e036e64aff7dc1b6108db6a7a12b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54fe3e5aa7475c383057fb8d636271a6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
-<tr class="separator:a54fe3e5aa7475c383057fb8d636271a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac7da096cc74f1fe4eb980e72b51040c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2c3553355f2f3caf0d0e9c625cdcede2">bl_version</a></td></tr>
-<tr class="separator:aac7da096cc74f1fe4eb980e72b51040c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe29f7b8767091f5fe86444c534f792"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a1230df60fc7c74f8ed9ce9dbd85d98c7">desc_size</a></td></tr>
-<tr class="separator:abbe29f7b8767091f5fe86444c534f792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5486737a30c32bb11289e96827e4db"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37">board_rev</a></td></tr>
-<tr class="separator:a1c5486737a30c32bb11289e96827e4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2c415c907502ae2d3802065ac4943f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6">fw_crc</a></td></tr>
-<tr class="separator:a4e2c415c907502ae2d3802065ac4943f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1bd0af0e0b2f7ef95e1b81c1131aa20"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#adc401e0e7465eda38f9444eeb6169a10">device_id</a></td></tr>
-<tr class="separator:ae1bd0af0e0b2f7ef95e1b81c1131aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7c2ecd8eba7331360ac7e47cc5fbd4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a388d6c197242b0c799200ee185d7ac2a">cap_extension_magic</a></td></tr>
-<tr class="separator:a5f7c2ecd8eba7331360ac7e47cc5fbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ea680c985d51dd95250b7f7be4d4f9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a637558772fb6f10ca64b91342244b8f7">partition_sizes</a> [10]</td></tr>
-<tr class="separator:ac2ea680c985d51dd95250b7f7be4d4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92887144356323e6a42c5d55d9784fa"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a506254a55ee104dfecb1ccfab633648d">cap_rep_specific</a></td></tr>
-<tr class="separator:aa92887144356323e6a42c5d55d9784fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b07b3dc138f79e0fb2628b9f4d5e4a"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_enter_dfu</b> {</td></tr>
-<tr class="memitem:af3a1a2d39b626c68c81b1fabeb8faf8d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
-<tr class="separator:af3a1a2d39b626c68c81b1fabeb8faf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee9bc9559d02c66974e345ba3ad2ac1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
-<tr class="separator:aeee9bc9559d02c66974e345ba3ad2ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b07b3dc138f79e0fb2628b9f4d5e4a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942">enter_dfu</a></td></tr>
-<tr class="separator:a37b07b3dc138f79e0fb2628b9f4d5e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a0ece913c6628ef5ebc01d48ca91cb"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_jump_fw</b> {</td></tr>
-<tr class="memitem:a63ec0fe2c6ffc4abc7ed83c29affbfa1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
-<tr class="separator:a63ec0fe2c6ffc4abc7ed83c29affbfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da763a812a967dbb4a7437fbf1974d2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2a1867588202035ba686a2b92b5f7e3f">unused2</a> [2]</td></tr>
-<tr class="separator:a5da763a812a967dbb4a7437fbf1974d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca0f89adb2b14dae746c8a244da4747"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a53c2fece0d9cc7136ed1ad90ac8937c0">safe_word</a></td></tr>
-<tr class="separator:a0ca0f89adb2b14dae746c8a244da4747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a0ece913c6628ef5ebc01d48ca91cb"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a12303b9462f75ecf38e2f7a1a77f4cd6">jump_fw</a></td></tr>
-<tr class="separator:ac2a0ece913c6628ef5ebc01d48ca91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ec74d887f386ab057c8813c5d55b60"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_reset</b> {</td></tr>
-<tr class="memitem:af0ec74d887f386ab057c8813c5d55b60"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a6f86af865b628b71939d86976b12c869">reset</a></td></tr>
-<tr class="separator:af0ec74d887f386ab057c8813c5d55b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ae4d0c7806dd3320e0b0df23bc031d"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_op_abort</b> {</td></tr>
-<tr class="memitem:a22ae4d0c7806dd3320e0b0df23bc031d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a11ad5dcda7bc1629b5c023003ff74a79">op_abort</a></td></tr>
-<tr class="separator:a22ae4d0c7806dd3320e0b0df23bc031d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20abc973d326ab25fe7cec768799742a"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_op_end</b> {</td></tr>
-<tr class="memitem:a20abc973d326ab25fe7cec768799742a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a66f0227632a7be5df1edbcae25e1abae">op_end</a></td></tr>
-<tr class="separator:a20abc973d326ab25fe7cec768799742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae65802b3279153795ef2f46a7a0b7e2c"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_xfer_start</b> {</td></tr>
-<tr class="memitem:a029f6577becf8adc3c4ed1ba6c0295c9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2ce293e7aaed3b08d790f9bb3bc91d8c">packets_in_transfer</a></td></tr>
-<tr class="separator:a029f6577becf8adc3c4ed1ba6c0295c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855ec68f0d81175c58764003f205cdb8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;enum <a class="el" href="group___common.html#ga54adf70880c786a1fecf7859d48b01f0">dfu_partition_label</a>&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a7f20e5e6d040b27590626b45e3e7e1a2">label</a></td></tr>
-<tr class="separator:a855ec68f0d81175c58764003f205cdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172540a43649ed891fc31250c69c759f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af924e397105c343e4ee770b251548b43">words_in_last_packet</a></td></tr>
-<tr class="separator:a172540a43649ed891fc31250c69c759f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1e25f54bdd9eacb99610e804745bb8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a82957fb8e23bf7be8248680c4ff71dca">expected_crc</a></td></tr>
-<tr class="separator:a2a1e25f54bdd9eacb99610e804745bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae65802b3279153795ef2f46a7a0b7e2c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ab268e0d223074055685e24fa505ce8e5">xfer_start</a></td></tr>
-<tr class="separator:ae65802b3279153795ef2f46a7a0b7e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad971100b3898c5438c805f581ab5100c"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_xfer_cont</b> {</td></tr>
-<tr class="memitem:aedd3dc86a808642d878c4457e7c34e0f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#aa7e645a20d87c598de27989885264009">current_packet_number</a></td></tr>
-<tr class="separator:aedd3dc86a808642d878c4457e7c34e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad271b6d79b948811c2c31311799fc74e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a> [<a class="el" href="bl__messages_8h.html#addc8d17a310ae3b7210607397ce04c6a">XFER_BYTES_PER_PACKET</a>]</td></tr>
-<tr class="separator:ad271b6d79b948811c2c31311799fc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad971100b3898c5438c805f581ab5100c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a4ebca71a8794690a48f09f55cedcf0ea">xfer_cont</a></td></tr>
-<tr class="separator:ad971100b3898c5438c805f581ab5100c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9479cf3b8e0661b9202ae674b903fae"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_status_req</b> {</td></tr>
-<tr class="memitem:af9479cf3b8e0661b9202ae674b903fae"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#acc38b6455ded1e1b21a8fc6bce548326">status_req</a></td></tr>
-<tr class="separator:af9479cf3b8e0661b9202ae674b903fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3013d011c6c60d2c0cba5753a181200a"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_status_rep</b> {</td></tr>
-<tr class="memitem:a863409a0dcdea5bb0dc83bae836615ca"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a></td></tr>
-<tr class="separator:a863409a0dcdea5bb0dc83bae836615ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c7c4464a4e398db79460833a4762c3"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac559654865b2d48ea0b77b1a1f4a097b">current_state</a></td></tr>
-<tr class="separator:af1c7c4464a4e398db79460833a4762c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3013d011c6c60d2c0cba5753a181200a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b">status_rep</a></td></tr>
-<tr class="separator:a3013d011c6c60d2c0cba5753a181200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9c197844ea5b18f0dd20a538a82e053"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_wipe_partition</b> {</td></tr>
-<tr class="memitem:ac57071420caa21b0cb8306464ce568e5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;enum <a class="el" href="group___common.html#ga54adf70880c786a1fecf7859d48b01f0">dfu_partition_label</a>&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a7f20e5e6d040b27590626b45e3e7e1a2">label</a></td></tr>
-<tr class="separator:ac57071420caa21b0cb8306464ce568e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9c197844ea5b18f0dd20a538a82e053"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ab426e0bbe0065eaefcd43d85b8802490">wipe_partition</a></td></tr>
-<tr class="separator:af9c197844ea5b18f0dd20a538a82e053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a37de1b60a6b71f40a99e21b723edb3"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a37ecc3f4db089b864443e57949e36c7f">pad</a> [62]</td></tr>
-<tr class="separator:a0a37de1b60a6b71f40a99e21b723edb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adecf47ce4e8997006a5cca83db7a50f7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bl__messages_8h.html#adecf47ce4e8997006a5cca83db7a50f7">__attribute__</a> ((aligned(1))) v</td></tr>
-<tr class="separator:adecf47ce4e8997006a5cca83db7a50f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94deaecaa0c67f14cf5cf03d916d0a5"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a908999e380fb462adab2b90af957b202"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_req</b> {</td></tr>
+<tr class="memitem:aca661543c1e6263fb63cdc06d1272c63"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
+<tr class="separator:aca661543c1e6263fb63cdc06d1272c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017eb7143f1cbb915106b8f6c26bc5c4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
+<tr class="separator:a017eb7143f1cbb915106b8f6c26bc5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908999e380fb462adab2b90af957b202"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af45659caaf8461a74d58eb049574736c">cap_req</a></td></tr>
+<tr class="separator:a908999e380fb462adab2b90af957b202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b5a1d0f4aa2cbcc399a7f939dbbe57"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_rep_all</b> {</td></tr>
+<tr class="memitem:ae10d0869a31124e4ec8140db5d6314b2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
+<tr class="separator:ae10d0869a31124e4ec8140db5d6314b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f761070d886e64ddad0dbf476b135b8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a05dd22df3a20a5e174f44d5a4529eb98">number_of_devices</a></td></tr>
+<tr class="separator:a9f761070d886e64ddad0dbf476b135b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06280ff6560f62191b30361c806ff721"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a8205f7f47c37570f998de5a707413c34">wrflags</a></td></tr>
+<tr class="separator:a06280ff6560f62191b30361c806ff721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b5a1d0f4aa2cbcc399a7f939dbbe57"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#aeb8c9cff85dc2433318e4b2464e174a8">cap_rep_all</a></td></tr>
+<tr class="separator:a25b5a1d0f4aa2cbcc399a7f939dbbe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b84745e80a6a17420def877a389c6e0"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_capabilities_rep_specific</b> {</td></tr>
+<tr class="memitem:a97e21f2a45433f27df64139196826043"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c">fw_size</a></td></tr>
+<tr class="separator:a97e21f2a45433f27df64139196826043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85878b1d10a635a5738552fd3b163fec"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
+<tr class="separator:a85878b1d10a635a5738552fd3b163fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1484e37a95d374947e2e2875ac01a4b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2c3553355f2f3caf0d0e9c625cdcede2">bl_version</a></td></tr>
+<tr class="separator:ae1484e37a95d374947e2e2875ac01a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e92bf88a510906bba6dd95f17d5ba30"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a1230df60fc7c74f8ed9ce9dbd85d98c7">desc_size</a></td></tr>
+<tr class="separator:a1e92bf88a510906bba6dd95f17d5ba30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac911f804bfc3f1402ed2096224edc89"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a9ab76e2043a7668f9ad6ffb17d88be37">board_rev</a></td></tr>
+<tr class="separator:aac911f804bfc3f1402ed2096224edc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916801d5345ae62a5d0fca941c76b613"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6">fw_crc</a></td></tr>
+<tr class="separator:a916801d5345ae62a5d0fca941c76b613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135d3677e5b6e8718a871bd64e493e6f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#adc401e0e7465eda38f9444eeb6169a10">device_id</a></td></tr>
+<tr class="separator:a135d3677e5b6e8718a871bd64e493e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d17d6fb6287a74db4482b0aef36ccb4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a388d6c197242b0c799200ee185d7ac2a">cap_extension_magic</a></td></tr>
+<tr class="separator:a0d17d6fb6287a74db4482b0aef36ccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d5c39d4c3e2cba66e2d0bb346c46d2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a637558772fb6f10ca64b91342244b8f7">partition_sizes</a> [10]</td></tr>
+<tr class="separator:ae5d5c39d4c3e2cba66e2d0bb346c46d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b84745e80a6a17420def877a389c6e0"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a506254a55ee104dfecb1ccfab633648d">cap_rep_specific</a></td></tr>
+<tr class="separator:a7b84745e80a6a17420def877a389c6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab853dd6b2fd558152fcc0e3af82fdb86"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_enter_dfu</b> {</td></tr>
+<tr class="memitem:aba4c41f0d1a28de749ff0bf459859fa8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
+<tr class="separator:aba4c41f0d1a28de749ff0bf459859fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a56a1d35faf2ed1d19d76e98e9184a4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a94a5b213a782dfaf7bc95f8ec314e8cd">device_number</a></td></tr>
+<tr class="separator:a4a56a1d35faf2ed1d19d76e98e9184a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab853dd6b2fd558152fcc0e3af82fdb86"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942">enter_dfu</a></td></tr>
+<tr class="separator:ab853dd6b2fd558152fcc0e3af82fdb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac435b31073f2e70dd88e6a11ddb42c56"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_jump_fw</b> {</td></tr>
+<tr class="memitem:a042961cc1740f76b6d2c74b30ad69a22"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a> [4]</td></tr>
+<tr class="separator:a042961cc1740f76b6d2c74b30ad69a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee887cc2d06779164dd05c40f708e02d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2a1867588202035ba686a2b92b5f7e3f">unused2</a> [2]</td></tr>
+<tr class="separator:aee887cc2d06779164dd05c40f708e02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c16f5cf980dc529f1c2f11cb3461ab6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a53c2fece0d9cc7136ed1ad90ac8937c0">safe_word</a></td></tr>
+<tr class="separator:a3c16f5cf980dc529f1c2f11cb3461ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac435b31073f2e70dd88e6a11ddb42c56"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a12303b9462f75ecf38e2f7a1a77f4cd6">jump_fw</a></td></tr>
+<tr class="separator:ac435b31073f2e70dd88e6a11ddb42c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1bf9ec2dc63bd90e11a78c0d985af0"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_reset</b> {</td></tr>
+<tr class="memitem:a7c1bf9ec2dc63bd90e11a78c0d985af0"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a6f86af865b628b71939d86976b12c869">reset</a></td></tr>
+<tr class="separator:a7c1bf9ec2dc63bd90e11a78c0d985af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899e0e5ac3b077e50230e1d8dd42e6e6"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_op_abort</b> {</td></tr>
+<tr class="memitem:a899e0e5ac3b077e50230e1d8dd42e6e6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a11ad5dcda7bc1629b5c023003ff74a79">op_abort</a></td></tr>
+<tr class="separator:a899e0e5ac3b077e50230e1d8dd42e6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e8ac528ed6921ff71ed2111459f5de"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_op_end</b> {</td></tr>
+<tr class="memitem:a96e8ac528ed6921ff71ed2111459f5de"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a66f0227632a7be5df1edbcae25e1abae">op_end</a></td></tr>
+<tr class="separator:a96e8ac528ed6921ff71ed2111459f5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fbc77e8e705cbe86d9a40c4f1f172d"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_xfer_start</b> {</td></tr>
+<tr class="memitem:ae663add9420ad7d2f86b32f01be87a04"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a2ce293e7aaed3b08d790f9bb3bc91d8c">packets_in_transfer</a></td></tr>
+<tr class="separator:ae663add9420ad7d2f86b32f01be87a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4c73cd7c0d42f85050dd34773c1c4b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;enum <a class="el" href="group___common.html#ga54adf70880c786a1fecf7859d48b01f0">dfu_partition_label</a>&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a7f20e5e6d040b27590626b45e3e7e1a2">label</a></td></tr>
+<tr class="separator:a3c4c73cd7c0d42f85050dd34773c1c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f7f0170451c31a140d72f79f4a2215"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#af924e397105c343e4ee770b251548b43">words_in_last_packet</a></td></tr>
+<tr class="separator:af4f7f0170451c31a140d72f79f4a2215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf668435bf830fbc352a9f3451b3b685"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a82957fb8e23bf7be8248680c4ff71dca">expected_crc</a></td></tr>
+<tr class="separator:acf668435bf830fbc352a9f3451b3b685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fbc77e8e705cbe86d9a40c4f1f172d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ab268e0d223074055685e24fa505ce8e5">xfer_start</a></td></tr>
+<tr class="separator:a08fbc77e8e705cbe86d9a40c4f1f172d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319bdb2c0160817512dd568d6592ca6a"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_xfer_cont</b> {</td></tr>
+<tr class="memitem:acd7712f0861a1e2acdfd4a7e037ecc05"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#aa7e645a20d87c598de27989885264009">current_packet_number</a></td></tr>
+<tr class="separator:acd7712f0861a1e2acdfd4a7e037ecc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b4cea414743d40ea75221ab09a0544"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ae634662f1116dcacc7a47136a87bb07b">data</a> [<a class="el" href="bl__messages_8h.html#addc8d17a310ae3b7210607397ce04c6a">XFER_BYTES_PER_PACKET</a>]</td></tr>
+<tr class="separator:a17b4cea414743d40ea75221ab09a0544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319bdb2c0160817512dd568d6592ca6a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a4ebca71a8794690a48f09f55cedcf0ea">xfer_cont</a></td></tr>
+<tr class="separator:a319bdb2c0160817512dd568d6592ca6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7063f84f893b95da9df5ee402dd8f9e"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_status_req</b> {</td></tr>
+<tr class="memitem:ab7063f84f893b95da9df5ee402dd8f9e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#acc38b6455ded1e1b21a8fc6bce548326">status_req</a></td></tr>
+<tr class="separator:ab7063f84f893b95da9df5ee402dd8f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecb6e09b52ba9eb09e31be8c625ffde"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_status_rep</b> {</td></tr>
+<tr class="memitem:ab60933819632ef7a5ad37ebc946bb5ef"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac0544a0a50047efef4eb9dee1db56d01">unused</a></td></tr>
+<tr class="separator:ab60933819632ef7a5ad37ebc946bb5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec59c0f2701a0d820d38ccc8fe7b4755"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac559654865b2d48ea0b77b1a1f4a097b">current_state</a></td></tr>
+<tr class="separator:aec59c0f2701a0d820d38ccc8fe7b4755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecb6e09b52ba9eb09e31be8c625ffde"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ac7ae1dab57a0b1e8186f27b021d4976b">status_rep</a></td></tr>
+<tr class="separator:a4ecb6e09b52ba9eb09e31be8c625ffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882598dd341a6caa349b5fe35aeccd2c"><td class="memItemLeft" >&#160;&#160;&#160;struct <b>msg_wipe_partition</b> {</td></tr>
+<tr class="memitem:a6e339c2cebfc2d27fa32e1dbbbf656be"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;enum <a class="el" href="group___common.html#ga54adf70880c786a1fecf7859d48b01f0">dfu_partition_label</a>&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a7f20e5e6d040b27590626b45e3e7e1a2">label</a></td></tr>
+<tr class="separator:a6e339c2cebfc2d27fa32e1dbbbf656be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882598dd341a6caa349b5fe35aeccd2c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#ab426e0bbe0065eaefcd43d85b8802490">wipe_partition</a></td></tr>
+<tr class="separator:a882598dd341a6caa349b5fe35aeccd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156ed380279811d3b7028e49ec68ff74"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="bl__messages_8h.html#a37ecc3f4db089b864443e57949e36c7f">pad</a> [62]</td></tr>
+<tr class="separator:a156ed380279811d3b7028e49ec68ff74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94deaecaa0c67f14cf5cf03d916d0a5"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bl__messages_8h.html#ab94deaecaa0c67f14cf5cf03d916d0a5">__attribute__</a> ((aligned(1))) v</td></tr>
+<tr class="separator:ab94deaecaa0c67f14cf5cf03d916d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -408,12 +408,12 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="adecf47ce4e8997006a5cca83db7a50f7"></a>
+<a class="anchor" id="ab94deaecaa0c67f14cf5cf03d916d0a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union @32 __attribute__::__attribute__ </td>
+          <td class="memname">union @24 __attribute__::__attribute__ </td>
           <td>(</td>
           <td class="paramtype">(aligned(1))&#160;</td>
           <td class="paramname"></td><td>)</td>

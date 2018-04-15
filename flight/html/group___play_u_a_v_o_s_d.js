@@ -34,7 +34,6 @@ var group___play_u_a_v_o_s_d =
     [ "PIOS_COM_HOTT", "group___play_u_a_v_o_s_d.html#gab5089b27d40c7040560009d8b82a7f67", null ],
     [ "PIOS_COM_LIGHTTELEMETRY", "group___play_u_a_v_o_s_d.html#ga88f1b74712df62b9970b6cbc6bb262e9", null ],
     [ "PIOS_COM_MAVLINK", "group___play_u_a_v_o_s_d.html#gacc9b34fbd61773571dbe45ac3a3ca081", null ],
-    [ "PIOS_COM_TELEM_RF", "group___play_u_a_v_o_s_d.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "group___play_u_a_v_o_s_d.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "group___play_u_a_v_o_s_d.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_INCLUDE_ANNUNC", "group___play_u_a_v_o_s_d.html#ga464462d5068d115f79148efdffefb418", null ],

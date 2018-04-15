@@ -12,7 +12,6 @@ var targets_2playuavosd_2board_info_2pios__board_8h =
     [ "PIOS_COM_HOTT", "targets_2playuavosd_2board-info_2pios__board_8h.html#gab5089b27d40c7040560009d8b82a7f67", null ],
     [ "PIOS_COM_LIGHTTELEMETRY", "targets_2playuavosd_2board-info_2pios__board_8h.html#ga88f1b74712df62b9970b6cbc6bb262e9", null ],
     [ "PIOS_COM_MAVLINK", "targets_2playuavosd_2board-info_2pios__board_8h.html#gacc9b34fbd61773571dbe45ac3a3ca081", null ],
-    [ "PIOS_COM_TELEM_RF", "targets_2playuavosd_2board-info_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "targets_2playuavosd_2board-info_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "targets_2playuavosd_2board-info_2pios__board_8h.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_IRQ_PRIO_HIGH", "targets_2playuavosd_2board-info_2pios__board_8h.html#gab5f09e1f881124b5131fd88fc013fddd", null ],

@@ -12,6 +12,7 @@ var group___p_i_o_s___d_e_l_a_y =
     [ "PIOS_DELAY_DiffuS2", "group___p_i_o_s___d_e_l_a_y.html#ga572b82db7964223cc415c3ecd49ec192", null ],
     [ "PIOS_DELAY_GetRaw", "group___p_i_o_s___d_e_l_a_y.html#gafcf436aa29b4693c87e33843959edd80", null ],
     [ "PIOS_DELAY_GetuS", "group___p_i_o_s___d_e_l_a_y.html#ga069586911fc7a5a023d4f58d340ad909", null ],
+    [ "PIOS_DELAY_GetuSExpired", "group___p_i_o_s___d_e_l_a_y.html#ga5d1fe3965c7d688e1454a6eec29f174e", null ],
     [ "PIOS_DELAY_GetuSSince", "group___p_i_o_s___d_e_l_a_y.html#gaf474339ea05285a6a4fe90ff4328893b", null ],
     [ "PIOS_DELAY_Init", "group___p_i_o_s___d_e_l_a_y.html#ga0d086bac039cb8236edb457b7d4da0fa", null ],
     [ "PIOS_DELAY_Systick_Handler", "group___p_i_o_s___d_e_l_a_y.html#gac61b7a531b084244760d548c71c839fc", null ],

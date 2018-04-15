@@ -12,6 +12,5 @@ var searchData=
   ['stm32_5firq',['stm32_irq',['../structstm32__irq.html',1,'']]],
   ['streamfs_5fcfg',['streamfs_cfg',['../structstreamfs__cfg.html',1,'']]],
   ['streamfs_5ffooter',['streamfs_footer',['../structstreamfs__footer.html',1,'']]],
-  ['streamfs_5fstate',['streamfs_state',['../structstreamfs__state.html',1,'']]],
-  ['sub_5fdevice_5flist_5f',['sub_device_list_',['../structsub__device__list__.html',1,'']]]
+  ['streamfs_5fstate',['streamfs_state',['../structstreamfs__state.html',1,'']]]
 ];

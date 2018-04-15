@@ -1,5 +1,6 @@
 var pios__hal_8h =
 [
+    [ "PIOS_COM_TELEM_SER", "pios__hal_8h.html#ab150703d15175368d90a7ffb725de42b", null ],
     [ "pios_hal_panic", "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53b", [
       [ "PIOS_HAL_PANIC_IMU", "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53bad597a3b4fd20023d634e773c66207c22", null ],
       [ "PIOS_HAL_PANIC_MAG", "pios__hal_8h.html#aafe5055d05a85237ff35d915dff9a53ba98022b48aadda9cb1e78744fccbdd426", null ],

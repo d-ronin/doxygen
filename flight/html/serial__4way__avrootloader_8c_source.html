@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('serial__4way__avrootloader_8c_source.h
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// start bit</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    start_time = <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga2e284e47514cc1f27a554f915ce5e1f0">PIOS_INLINEDELAY_GetCycleCnt</a>();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    btime = start_time + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga231b3a72c8372951d583e14e4a06c7c5">PIOS_INLINEDELAY_NsToCycles</a>(START_BIT_TIME * 1000);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    btime = start_time + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#gaebbb42987b1c26610abef0aa8366f868">PIOS_INLINEDELAY_NsToCycles</a>(START_BIT_TIME * 1000);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    uint16_t bitmask = 0;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint8_t bit = 0;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('serial__4way__avrootloader_8c_source.h
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            bitmask |= (1 &lt;&lt; bit);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        btime = btime + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga231b3a72c8372951d583e14e4a06c7c5">PIOS_INLINEDELAY_NsToCycles</a>(BIT_TIME * 1000);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        btime = btime + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#gaebbb42987b1c26610abef0aa8366f868">PIOS_INLINEDELAY_NsToCycles</a>(BIT_TIME * 1000);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        bit++;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (bit == 10) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('serial__4way__avrootloader_8c_source.h
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="serial__4way__impl_8h.html#a4066ee8be5b4fa96d40b52bb989d56b1">ESC_SET_LO</a>; <span class="comment">// 0</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        btime = btime + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga231b3a72c8372951d583e14e4a06c7c5">PIOS_INLINEDELAY_NsToCycles</a>(BIT_TIME * 1000);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        btime = btime + <a class="code" href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#gaebbb42987b1c26610abef0aa8366f868">PIOS_INLINEDELAY_NsToCycles</a>(BIT_TIME * 1000);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        bitmask = (bitmask &gt;&gt; 1);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (bitmask == 0) <span class="keywordflow">break</span>; <span class="comment">// stopbit shifted out - but don&#39;t wait</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
@@ -1033,6 +1033,7 @@ $(document).ready(function(){initNavTree('serial__4way__avrootloader_8c_source.h
 <div class="ttc" id="serial__4way__avrootloader_8h_html_afab0558b88539f689c3dee9d68495d61"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#afab0558b88539f689c3dee9d68495d61">brERRORCRC</a></div><div class="ttdeci">#define brERRORCRC</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way__avrootloader_8h_source.html#l00026">serial_4way_avrootloader.h:26</a></div></div>
 <div class="ttc" id="serial__4way_8h_html_abca83c071e6b8255c0846dde648b662d"><div class="ttname"><a href="serial__4way_8h.html#abca83c071e6b8255c0846dde648b662d">uint8_32_u</a></div><div class="ttdeci">uint8_32_u</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way_8h_source.html#l00047">serial_4way.h:47</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_ae0e8336ee85dc13d6b430a8c18ee3f05"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#ae0e8336ee85dc13d6b430a8c18ee3f05">BL_ReadEEprom</a></div><div class="ttdeci">uint8_t BL_ReadEEprom(ioMem_t *pMem)</div></div>
+<div class="ttc" id="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y_html_gaebbb42987b1c26610abef0aa8366f868"><div class="ttname"><a href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#gaebbb42987b1c26610abef0aa8366f868">PIOS_INLINEDELAY_NsToCycles</a></div><div class="ttdeci">static uint32_t PIOS_INLINEDELAY_NsToCycles(uint32_t ns)</div><div class="ttdef"><b>Definition:</b> <a href="pios__inlinedelay_8h_source.html#l00049">pios_inlinedelay.h:49</a></div></div>
 <div class="ttc" id="serial__4way__impl_8h_html_a4066ee8be5b4fa96d40b52bb989d56b1"><div class="ttname"><a href="serial__4way__impl_8h.html#a4066ee8be5b4fa96d40b52bb989d56b1">ESC_SET_LO</a></div><div class="ttdeci">#define ESC_SET_LO</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way__impl_8h_source.html#l00040">serial_4way_impl.h:40</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a325d3c0d7039c3a9669dd792cec5b982"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a325d3c0d7039c3a9669dd792cec5b982">BL_SendCMDRunRestartBootloader</a></div><div class="ttdeci">void BL_SendCMDRunRestartBootloader(uint8_32_u *pDeviceInfo)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div></div>
@@ -1059,7 +1060,6 @@ $(document).ready(function(){initNavTree('serial__4way__avrootloader_8c_source.h
 <div class="ttc" id="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y_html_ga2e284e47514cc1f27a554f915ce5e1f0"><div class="ttname"><a href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga2e284e47514cc1f27a554f915ce5e1f0">PIOS_INLINEDELAY_GetCycleCnt</a></div><div class="ttdeci">static uint32_t PIOS_INLINEDELAY_GetCycleCnt()</div><div class="ttdef"><b>Definition:</b> <a href="pios__inlinedelay_8h_source.html#l00068">pios_inlinedelay.h:68</a></div></div>
 <div class="ttc" id="serial__4way_8h_html"><div class="ttname"><a href="serial__4way_8h.html">serial_4way.h</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_aadcb3add74d98ef10ba7c9ddb8aaddc9"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#aadcb3add74d98ef10ba7c9ddb8aaddc9">BL_WriteFlash</a></div><div class="ttdeci">uint8_t BL_WriteFlash(ioMem_t *pMem)</div></div>
-<div class="ttc" id="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y_html_ga231b3a72c8372951d583e14e4a06c7c5"><div class="ttname"><a href="group___p_i_o_s___i_n_l_i_n_e_d_e_l_a_y.html#ga231b3a72c8372951d583e14e4a06c7c5">PIOS_INLINEDELAY_NsToCycles</a></div><div class="ttdeci">static uint32_t PIOS_INLINEDELAY_NsToCycles(uint16_t ns)</div><div class="ttdef"><b>Definition:</b> <a href="pios__inlinedelay_8h_source.html#l00049">pios_inlinedelay.h:49</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a92dda163f1ceb7e6e87925ca08f9a4ca"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a92dda163f1ceb7e6e87925ca08f9a4ca">brNONE</a></div><div class="ttdeci">#define brNONE</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way__avrootloader_8h_source.html#l00027">serial_4way_avrootloader.h:27</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a251747c8049540fe73462845efa990b6"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a251747c8049540fe73462845efa990b6">brERRORCOMMAND</a></div><div class="ttdeci">#define brERRORCOMMAND</div><div class="ttdef"><b>Definition:</b> <a href="serial__4way__avrootloader_8h_source.html#l00025">serial_4way_avrootloader.h:25</a></div></div>
 <div class="ttc" id="serial__4way__avrootloader_8h_html_a782f4926b62f4d9cdc6e6497fafff573"><div class="ttname"><a href="serial__4way__avrootloader_8h.html#a782f4926b62f4d9cdc6e6497fafff573">BL_ConnectEx</a></div><div class="ttdeci">uint8_t BL_ConnectEx(uint8_32_u *pDeviceInfo)</div></div>

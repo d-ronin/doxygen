@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['setup_20wizard',['Setup Wizard',['../group___rfm_bind_wizard.html',1,'']]],
   ['scope_20gadget_20plugin',['Scope Gadget Plugin',['../group___scope_plugin.html',1,'']]],
   ['serial_20connection_20plugin',['Serial Connection Plugin',['../group___serial_plugin.html',1,'']]],
   ['setup_20wizard',['Setup Wizard',['../group___setup_wizard.html',1,'']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -129,10 +129,10 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios_8h.html">pios.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;openpilot.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;board_hw_defs.c&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;modulesettings.h&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;hwtaulink.h&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__hal_8h.html">pios_hal.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;rfm22bstatus.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;manualcontrolsettings.h&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;modulesettings.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;hwtaulink.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__hal_8h.html">pios_hal.h</a>&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">   39</a></span>&#160;uintptr_t <a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_PPM)</span></div>
@@ -192,202 +192,209 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RTC */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        HwTauLinkInitialize();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RFM22B)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>        RFM22BStatusInitialize();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_TIM)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Set up pulse timers */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___d_t_fc.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#ga0b6f7586d1c7a594c67b267ae2a52e76">tim_2_cfg</a>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#ga55af106ce8c8f61b05b8e580f159eb5e">tim_4_cfg</a>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_TIM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">/* Initialize board specific USB data */</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a>();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// Configure the main port</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        HwTauLinkData hwTauLink;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        HwTauLinkGet(&amp;hwTauLink);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_TIM)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span>        <span class="comment">/* Set up pulse timers */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___d_t_fc.html#gae8998ae2740c83f160a18fd0d447c3d9">tim_1_cfg</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#ga0b6f7586d1c7a594c67b267ae2a52e76">tim_2_cfg</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a>(&amp;<a class="code" href="group___a_q32.html#ga55af106ce8c8f61b05b8e580f159eb5e">tim_4_cfg</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_TIM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">/* Initialize board specific USB data */</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b___b_o_a_r_d.html#ga5efd94ab761f254827f38dba474cf642">PIOS_USB_BOARD_DATA_Init</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">// Configure the main port</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        HwTauLinkData hwTauLink;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        HwTauLinkGet(&amp;hwTauLink);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">/* Flags to determine if various USB interfaces are advertised */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">bool</span> usb_cdc_present = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">/* Flags to determine if various USB interfaces are advertised */</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">bool</span> usb_cdc_present = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_CDC)</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga15a9a7a662d2bce8263b132b33753d75">PIOS_USB_DESC_HID_CDC_Init</a>()) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        usb_cdc_present = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a>()) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">/*Initialize the USB device */</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        uintptr_t pios_usb_id;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a>(&amp;pios_usb_id, &amp;pios_usb_main_cfg);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd">PIOS_HAL_ConfigureHID</a>(HWSHARED_USB_HIDPORT_USBTELEMETRY, pios_usb_id, &amp;<a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">/* Configure the USB virtual com port (VCP) */</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_CDC)</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (usb_cdc_present) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <a class="code" href="pios__hal_8h.html#a6dcb0f1c109e2ca59aef625031a5b9bb">PIOS_HAL_ConfigureCDC</a>(hwTauLink.VCPPort, pios_usb_id, &amp;<a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a>);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        PIOS_HAL_ConfigurePort(hwTauLink.MainPort,   <span class="comment">// port type protocol</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                        &amp;pios_usart_serial_cfg,              <span class="comment">// usart_port_cfg</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                        NULL,                                <span class="comment">// i2c_id</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        NULL,                                <span class="comment">// i2c_cfg</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        <a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>,                      <span class="comment">// led_id</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        NULL,                                <span class="comment">// dsm_cfg</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        0,                                   <span class="comment">// dsm_mode</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        NULL);                               <span class="comment">// sbus_cfg</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        ModuleSettingsInitialize();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        ModuleSettingsData moduleSettings;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        ModuleSettingsGet(&amp;moduleSettings);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_CDC)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga15a9a7a662d2bce8263b132b33753d75">PIOS_USB_DESC_HID_CDC_Init</a>()) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        usb_cdc_present = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_b___d_e_s_c.html#ga92ea05b354edae76dd1315a1e389d506">PIOS_USB_DESC_HID_ONLY_Init</a>()) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">/*Initialize the USB device */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        uintptr_t pios_usb_id;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a>(&amp;pios_usb_id, &amp;pios_usb_main_cfg);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="pios__hal_8h.html#a08801aba33501d19d79d2be3362e15dd">PIOS_HAL_ConfigureHID</a>(HWSHARED_USB_HIDPORT_USBTELEMETRY, pios_usb_id, &amp;<a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">/* Configure the USB virtual com port (VCP) */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_CDC)</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (usb_cdc_present) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <a class="code" href="pios__hal_8h.html#a6dcb0f1c109e2ca59aef625031a5b9bb">PIOS_HAL_ConfigureCDC</a>(hwTauLink.VCPPort, pios_usb_id, &amp;<a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        PIOS_HAL_ConfigurePort(hwTauLink.MainPort,   <span class="comment">// port type protocol</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                        &amp;pios_usart_serial_cfg,              <span class="comment">// usart_port_cfg</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,              <span class="comment">// com_driver</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        NULL,                                <span class="comment">// i2c_id</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                        NULL,                                <span class="comment">// i2c_cfg</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        NULL,                                <span class="comment">// ppm_cfg</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                        NULL,                                <span class="comment">// pwm_cfg</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        <a class="code" href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a>,                      <span class="comment">// led_id</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        NULL,                                <span class="comment">// dsm_cfg</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        0,                                   <span class="comment">// dsm_mode</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        NULL);                               <span class="comment">// sbus_cfg</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        ModuleSettingsInitialize();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        ModuleSettingsData moduleSettings;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        ModuleSettingsGet(&amp;moduleSettings);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        moduleSettings.ComUsbBridgeSpeed = hwTauLink.ComSpeed;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        moduleSettings.TelemetrySpeed = hwTauLink.ComSpeed;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        moduleSettings.ComUsbBridgeSpeed = hwTauLink.ComSpeed;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        moduleSettings.TelemetrySpeed = hwTauLink.ComSpeed;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        ModuleSettingsSet(&amp;moduleSettings);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        ModuleSettingsSet(&amp;moduleSettings);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_OPENLRS</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor"></span>        <span class="keyword">const</span> <span class="keyword">struct </span>pios_openlrs_cfg *openlrs_cfg = PIOS_BOARD_HW_DEFS_GetOpenLRSCfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="comment">// Since we don&#39;t expose the ModuleSettings object from TauLink to the GCS</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">// we just map the baud rate from HwTauLink into this object</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__rfm22b__cfg.html">pios_rfm22b_cfg</a> *rfm22b_cfg = PIOS_BOARD_HW_DEFS_GetRfm22Cfg(bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        PIOS_HAL_ConfigureRFM22B(hwTauLink.Radio, pios_spi_rfm22b_id,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>, hwTauLink.MaxRfPower,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        hwTauLink.MaxRfSpeed, hwTauLink.RfBand, NULL, rfm22b_cfg,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        hwTauLink.MinChannel, hwTauLink.MaxChannel,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        hwTauLink.CoordID, 0);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span> (bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a> == <a class="code" href="group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c">TAULINK_VERSION_MODULE</a>) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="comment">// Configure the main serial port function</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structpios__usart__params.html">pios_usart_params</a> pios_usart_bluetooth_params = {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                        .<a class="code" href="structpios__usart__params.html#ab3a5ed4cd3be5db6556fcaef3ad66a21">init</a> = {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                .USART_BaudRate = 9600,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                .USART_WordLength = USART_WordLength_8b,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                .USART_Parity = USART_Parity_No,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                .USART_StopBits = USART_StopBits_1,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                .USART_HardwareFlowControl = USART_HardwareFlowControl_None,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                .USART_Mode = USART_Mode_Rx | USART_Mode_Tx,</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                        },</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                };</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keywordflow">switch</span> (hwTauLink.BTPort) {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_TELEMETRY:</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        <span class="comment">// Note: if the main port is also on telemetry the bluetooth</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                        <span class="comment">// port will take precedence</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        uintptr_t pios_usart2_id;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">PIOS_USART_Init</a>(&amp;pios_usart2_id, &amp;pios_usart_bluetooth_cfg, &amp;pios_usart_bluetooth_params)) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        PIOS_HAL_ConfigureRFM22B(pios_spi_rfm22b_id,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">board_type</a>,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a>,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        hwTauLink.RfBand, openlrs_cfg, &amp;openlrs_handle);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (bdinfo-&gt;<a class="code" href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">board_rev</a> == <a class="code" href="group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c">TAULINK_VERSION_MODULE</a>) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="comment">// Configure the main serial port function</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structpios__usart__params.html">pios_usart_params</a> pios_usart_bluetooth_params = {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        .<a class="code" href="structpios__usart__params.html#ab3a5ed4cd3be5db6556fcaef3ad66a21">init</a> = {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                .USART_BaudRate = 9600,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                .USART_WordLength = USART_WordLength_8b,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                .USART_Parity = USART_Parity_No,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                .USART_StopBits = USART_StopBits_1,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                .USART_HardwareFlowControl = USART_HardwareFlowControl_None,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                .USART_Mode = USART_Mode_Rx | USART_Mode_Tx,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        },</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                };</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">switch</span> (hwTauLink.BTPort) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_TELEMETRY:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                        <span class="comment">// Note: if the main port is also on telemetry the bluetooth</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                        <span class="comment">// port will take precedence</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                        uintptr_t pios_usart2_id;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">PIOS_USART_Init</a>(&amp;pios_usart2_id, &amp;pios_usart_bluetooth_cfg, &amp;pios_usart_bluetooth_params)) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>, pios_usart2_id,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                        <a class="code" href="group___pip_x.html#ga72fba9a6207ae120b32478460b4c5981">PIOS_COM_TELEM_RX_BUF_LEN</a>,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                        <a class="code" href="group___pip_x.html#ga613bd56cf5ba01d14a29e23ea0679526">PIOS_COM_TELEM_TX_BUF_LEN</a>)) {</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>, pios_usart2_id,</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                        <a class="code" href="group___pip_x.html#ga72fba9a6207ae120b32478460b4c5981">PIOS_COM_TELEM_RX_BUF_LEN</a>,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                        <a class="code" href="group___pip_x.html#ga613bd56cf5ba01d14a29e23ea0679526">PIOS_COM_TELEM_TX_BUF_LEN</a>)) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_COMBRIDGE:</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        <span class="comment">// Note: if the main port is also on telemetry the bluetooth</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        <span class="comment">// port will take precedence</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                        uintptr_t pios_usart2_id;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">PIOS_USART_Init</a>(&amp;pios_usart2_id, &amp;pios_usart_bluetooth_cfg, &amp;pios_usart_bluetooth_params)) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_COMBRIDGE:</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <span class="comment">// Note: if the main port is also on telemetry the bluetooth</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        <span class="comment">// port will take precedence</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        uintptr_t pios_usart2_id;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">PIOS_USART_Init</a>(&amp;pios_usart2_id, &amp;pios_usart_bluetooth_cfg, &amp;pios_usart_bluetooth_params)) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>, pios_usart2_id,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                        <a class="code" href="group___pip_x.html#ga72fba9a6207ae120b32478460b4c5981">PIOS_COM_TELEM_RX_BUF_LEN</a>,</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                        <a class="code" href="group___pip_x.html#ga613bd56cf5ba01d14a29e23ea0679526">PIOS_COM_TELEM_TX_BUF_LEN</a>)) {</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                        }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___c_o_m.html#ga9caa4742456fa958de6f07962d4893c0">PIOS_COM_Init</a>(&amp;<a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>, pios_usart2_id,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                        <a class="code" href="group___pip_x.html#ga72fba9a6207ae120b32478460b4c5981">PIOS_COM_TELEM_RX_BUF_LEN</a>,</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                        <a class="code" href="group___pip_x.html#ga613bd56cf5ba01d14a29e23ea0679526">PIOS_COM_TELEM_TX_BUF_LEN</a>)) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        <a class="code" href="group___p_i_o_s___h_a_l.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a> = <a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_DISABLED:</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">// Configure the flexi port</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structpios__usart__params.html">pios_usart_params</a> pios_usart_sport_params = {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                .<a class="code" href="structpios__usart__params.html#ab3a5ed4cd3be5db6556fcaef3ad66a21">init</a> = {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                        .USART_BaudRate            = 57600,</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        .USART_WordLength          = USART_WordLength_8b,</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                        .USART_Parity              = USART_Parity_No,</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        .USART_StopBits            = USART_StopBits_1,</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                        .USART_HardwareFlowControl = USART_HardwareFlowControl_None,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        .USART_Mode                = USART_Mode_Tx,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                },</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        };</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">switch</span> (hwTauLink.PPMPort) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_PPM:</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_PPM)</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span>                <span class="comment">/* PPM input is configured on the coordinator modem and sent in the RFM22BReceiver UAVO. */</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                uintptr_t pios_ppm_id;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <a class="code" href="group___p_i_o_s___p_p_m.html#ga9a361b816f4a65086de0fbd10f3687ce">PIOS_PPM_Init</a>(&amp;pios_ppm_id, &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a>(&amp;<a class="code" href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a>, &amp;<a class="code" href="group___p_i_o_s___p_p_m.html#ga7f973b24121b1d367d00ce6aab89d3e2">pios_ppm_rcvr_driver</a>, pios_ppm_id)) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PPM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_SPORT:</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_TARANIS_SPORT)</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor"></span>                PIOS_HAL_ConfigureCom(&amp;pios_usart_sport_cfg, &amp;pios_usart_sport_params, 0, <a class="code" href="group___pip_x.html#ga76670f6f00fd1ab8bf1ea11589f377f8">PIOS_COM_FRSKYSPORT_TX_BUF_LEN</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                &amp;<a class="code" href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a>);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_TARANIS_SPORT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        <a class="code" href="group___p_i_o_s___h_a_l.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a> = <a class="code" href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">case</span> HWTAULINK_BTPORT_DISABLED:</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// Configure the flexi port</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structpios__usart__params.html">pios_usart_params</a> pios_usart_sport_params = {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                .<a class="code" href="structpios__usart__params.html#ab3a5ed4cd3be5db6556fcaef3ad66a21">init</a> = {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        .USART_BaudRate            = 57600,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                        .USART_WordLength          = USART_WordLength_8b,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        .USART_Parity              = USART_Parity_No,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        .USART_StopBits            = USART_StopBits_1,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        .USART_HardwareFlowControl = USART_HardwareFlowControl_None,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                        .USART_Mode                = USART_Mode_Tx,</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                },</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        };</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_GCSRCVR)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span>        GCSReceiverInitialize();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        uintptr_t pios_gcsrcvr_id;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c">PIOS_GCSRCVR_Init</a>(&amp;pios_gcsrcvr_id);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        uintptr_t pios_gcsrcvr_rcvr_id;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a>(&amp;pios_gcsrcvr_rcvr_id, &amp;<a class="code" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga05df21a11af3217d085cd5928583a35e">pios_gcsrcvr_rcvr_driver</a>, pios_gcsrcvr_id)) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="group___control.html#ga212c9643d0c95cf1626bc0ec451f399d">pios_rcvr_group_map</a>[MANUALCONTROLSETTINGS_CHANNELGROUPS_GCS] = pios_gcsrcvr_rcvr_id;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif    </span><span class="comment">/* PIOS_INCLUDE_GCSRCVR */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">switch</span> (hwTauLink.PPMPort) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_PPM:</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_PPM)</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor"></span>                <span class="comment">/* PPM input is configured on the coordinator modem and sent in the RFM22BReceiver UAVO. */</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                uintptr_t pios_ppm_id;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <a class="code" href="group___p_i_o_s___p_p_m.html#ga9a361b816f4a65086de0fbd10f3687ce">PIOS_PPM_Init</a>(&amp;pios_ppm_id, &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a>(&amp;<a class="code" href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a>, &amp;<a class="code" href="group___p_i_o_s___p_p_m.html#ga7f973b24121b1d367d00ce6aab89d3e2">pios_ppm_rcvr_driver</a>, pios_ppm_id)) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <a class="code" href="group___control.html#ga212c9643d0c95cf1626bc0ec451f399d">pios_rcvr_group_map</a>[MANUALCONTROLSETTINGS_CHANNELGROUPS_PPM] = <a class="code" href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PPM */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_PPMSPORT:</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_SPORT:</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_TARANIS_SPORT)</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span>                PIOS_HAL_ConfigureCom(&amp;pios_usart_sport_cfg, &amp;pios_usart_sport_params, 0, <a class="code" href="group___pip_x.html#ga76670f6f00fd1ab8bf1ea11589f377f8">PIOS_COM_FRSKYSPORT_TX_BUF_LEN</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                &amp;<a class="code" href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a>);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_TARANIS_SPORT */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_INCLUDE_PPM)</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span>                <span class="comment">/* PPM input is configured on the coordinator modem and sent in the RFM22BReceiver UAVO. */</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                uintptr_t pios_ppm_id;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <a class="code" href="group___p_i_o_s___p_p_m.html#ga9a361b816f4a65086de0fbd10f3687ce">PIOS_PPM_Init</a>(&amp;pios_ppm_id, &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a>(&amp;<a class="code" href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a>, &amp;<a class="code" href="group___p_i_o_s___p_p_m.html#ga7f973b24121b1d367d00ce6aab89d3e2">pios_ppm_rcvr_driver</a>, pios_ppm_id)) {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PPM */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_DISABLED:</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">/* Remap AFIO pin */</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        GPIO_PinRemapConfig( GPIO_Remap_SWJ_NoJTRST, ENABLE);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_ADC</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_PPMSPORT:</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_TARANIS_SPORT)</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>                PIOS_HAL_ConfigureCom(&amp;pios_usart_sport_cfg, &amp;pios_usart_sport_params, 0, <a class="code" href="group___pip_x.html#ga76670f6f00fd1ab8bf1ea11589f377f8">PIOS_COM_FRSKYSPORT_TX_BUF_LEN</a>, &amp;<a class="code" href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a>,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                &amp;<a class="code" href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_TARANIS_SPORT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(PIOS_INCLUDE_PPM)</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span>                <span class="comment">/* PPM input is configured on the coordinator modem and sent in the RFM22BReceiver UAVO. */</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                uintptr_t pios_ppm_id;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <a class="code" href="group___p_i_o_s___p_p_m.html#ga9a361b816f4a65086de0fbd10f3687ce">PIOS_PPM_Init</a>(&amp;pios_ppm_id, &amp;<a class="code" href="structpios__ppm__cfg.html">pios_ppm_cfg</a>);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a>(&amp;<a class="code" href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a>, &amp;<a class="code" href="group___p_i_o_s___p_p_m.html#ga7f973b24121b1d367d00ce6aab89d3e2">pios_ppm_rcvr_driver</a>, pios_ppm_id)) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_PPM */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">case</span> HWTAULINK_PPMPORT_DISABLED:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">/* Remap AFIO pin */</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        GPIO_PinRemapConfig( GPIO_Remap_SWJ_NoJTRST, ENABLE);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_ADC</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a>();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="ttc" id="group___pip_x_html_gacc1dbf8f50b327b1428dff93961c0e8e"><div class="ttname"><a href="group___pip_x.html#gacc1dbf8f50b327b1428dff93961c0e8e">pios_com_telem_uart_bluetooth_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_uart_bluetooth_id</div><div class="ttdef"><b>Definition:</b> <a href="pipxtreme_2fw_2pios__board_8c_source.html#l00039">pios_board.c:39</a></div></div>
 <div class="ttc" id="pios__flash__internal__priv_8h_html_a3d5cb37f9b8a2d915e2a51d0b9c9f587"><div class="ttname"><a href="pios__flash__internal__priv_8h.html#a3d5cb37f9b8a2d915e2a51d0b9c9f587">PIOS_Flash_Internal_Init</a></div><div class="ttdeci">int32_t PIOS_Flash_Internal_Init(uintptr_t *flash_id, const struct pios_flash_internal_cfg *cfg)</div></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
@@ -396,13 +403,16 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="ttc" id="group___pip_x_html_ga72fba9a6207ae120b32478460b4c5981"><div class="ttname"><a href="group___pip_x.html#ga72fba9a6207ae120b32478460b4c5981">PIOS_COM_TELEM_RX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_TELEM_RX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pipxtreme_2fw_2pios__board_8c_source.html#l00046">pios_board.c:46</a></div></div>
 <div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="pios__hal_8h_html"><div class="ttname"><a href="pios__hal_8h.html">pios_hal.h</a></div></div>
+<div class="ttc" id="group___control_html_ga212c9643d0c95cf1626bc0ec451f399d"><div class="ttname"><a href="group___control.html#ga212c9643d0c95cf1626bc0ec451f399d">pios_rcvr_group_map</a></div><div class="ttdeci">uintptr_t pios_rcvr_group_map[]</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00069">pios_hal.c:69</a></div></div>
 <div class="ttc" id="structpios__flash__partition_html"><div class="ttname"><a href="structpios__flash__partition.html">pios_flash_partition</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00082">pios_flash_priv.h:82</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
 <div class="ttc" id="structpios__board__info_html_a7c5ba691095b534927e3f0b6cc7202d6"><div class="ttname"><a href="structpios__board__info.html#a7c5ba691095b534927e3f0b6cc7202d6">pios_board_info::board_rev</a></div><div class="ttdeci">uint8_t board_rev</div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00011">pios_board_info.h:11</a></div></div>
 <div class="ttc" id="group___a_q32_html_gab060f441dd600b08386c0ca1b487217a"><div class="ttname"><a href="group___a_q32.html#gab060f441dd600b08386c0ca1b487217a">pios_uavo_settings_fs_id</a></div><div class="ttdeci">uintptr_t pios_uavo_settings_fs_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2fw_2pios__board_8c_source.html#l00050">pios_board.c:50</a></div></div>
 <div class="ttc" id="group___p_i_o_s___a_n_n_u_n_c_html_gaec0f5ba8e0745b50dd791e12cc04d8aa"><div class="ttname"><a href="group___p_i_o_s___a_n_n_u_n_c.html#gaec0f5ba8e0745b50dd791e12cc04d8aa">PIOS_ANNUNC_Off</a></div><div class="ttdeci">void PIOS_ANNUNC_Off(uint32_t annunc_id)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_f_s_html_gac15fb3840a3295f0f0b938c7421f2914"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h_f_s.html#gac15fb3840a3295f0f0b938c7421f2914">PIOS_FLASHFS_Logfs_Init</a></div><div class="ttdeci">int32_t PIOS_FLASHFS_Logfs_Init(uintptr_t *fs_id, const struct flashfs_logfs_cfg *cfg, enum pios_flash_partition_labels partition_label)</div><div class="ttdoc">Initialize the flash object setting FS. </div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00485">pios_flashfs_logfs.c:485</a></div></div>
+<div class="ttc" id="group___p_i_o_s___g_c_s_r_c_v_r_html_ga6a374abf68f36f70072d5d14929f9b4c"><div class="ttname"><a href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c">PIOS_GCSRCVR_Init</a></div><div class="ttdeci">int32_t PIOS_GCSRCVR_Init(uintptr_t *gcsrcvr_id)</div></div>
 <div class="ttc" id="group___pip_x_html_ga76670f6f00fd1ab8bf1ea11589f377f8"><div class="ttname"><a href="group___pip_x.html#ga76670f6f00fd1ab8bf1ea11589f377f8">PIOS_COM_FRSKYSPORT_TX_BUF_LEN</a></div><div class="ttdeci">#define PIOS_COM_FRSKYSPORT_TX_BUF_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pipxtreme_2fw_2pios__board_8c_source.html#l00048">pios_board.c:48</a></div></div>
+<div class="ttc" id="group___p_i_o_s___g_c_s_r_c_v_r_html_ga05df21a11af3217d085cd5928583a35e"><div class="ttname"><a href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga05df21a11af3217d085cd5928583a35e">pios_gcsrcvr_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_gcsrcvr_rcvr_driver</div></div>
 <div class="ttc" id="pios__board__info_8h_html_ae44044441c2e7618a5ebc9b4e377793b"><div class="ttname"><a href="pios__board__info_8h.html#ae44044441c2e7618a5ebc9b4e377793b">pios_board_info_blob</a></div><div class="ttdeci">const struct pios_board_info pios_board_info_blob</div></div>
 <div class="ttc" id="structpios__usart__params_html_ab3a5ed4cd3be5db6556fcaef3ad66a21"><div class="ttname"><a href="structpios__usart__params.html#ab3a5ed4cd3be5db6556fcaef3ad66a21">pios_usart_params::init</a></div><div class="ttdeci">USART_InitTypeDef init</div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00048">pios_usart_priv.h:48</a></div></div>
 <div class="ttc" id="group___a_q32_html_gae4912a499d71db827918d7908055ce05"><div class="ttname"><a href="group___a_q32.html#gae4912a499d71db827918d7908055ce05">PIOS_LED_ALARM</a></div><div class="ttdeci">#define PIOS_LED_ALARM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00086">pios_board.h:86</a></div></div>
@@ -410,7 +420,6 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="ttc" id="group___a_q32_html_ga55af106ce8c8f61b05b8e580f159eb5e"><div class="ttname"><a href="group___a_q32.html#ga55af106ce8c8f61b05b8e580f159eb5e">tim_4_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_4_cfg</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2board__hw__defs_8c_source.html#l00893">board_hw_defs.c:893</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_a_r_t_html_gaa18aa39830281e33f66deabc31c2a86e"><div class="ttname"><a href="group___p_i_o_s___u_s_a_r_t.html#gaa18aa39830281e33f66deabc31c2a86e">pios_usart_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_usart_com_driver</div></div>
 <div class="ttc" id="structpios__usart__params_html"><div class="ttname"><a href="structpios__usart__params.html">pios_usart_params</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00047">pios_usart_priv.h:47</a></div></div>
-<div class="ttc" id="structpios__rfm22b__cfg_html"><div class="ttname"><a href="structpios__rfm22b__cfg.html">pios_rfm22b_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rfm22b_8h_source.html#l00043">pios_rfm22b.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___t_i_m_html_ga091c161ba7b19b91067616f0cbd768fc"><div class="ttname"><a href="group___p_i_o_s___t_i_m.html#ga091c161ba7b19b91067616f0cbd768fc">PIOS_TIM_InitClock</a></div><div class="ttdeci">int32_t PIOS_TIM_InitClock(const struct pios_tim_clock_cfg *cfg)</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2pios__tim_8c_source.html#l00062">pios_tim.c:62</a></div></div>
 <div class="ttc" id="group___p_i_o_s___r_c_v_r_html_ga1e39d33a3e7a747a3032bdd2457a840a"><div class="ttname"><a href="group___p_i_o_s___r_c_v_r.html#ga1e39d33a3e7a747a3032bdd2457a840a">PIOS_RCVR_Init</a></div><div class="ttdeci">int32_t PIOS_RCVR_Init(uintptr_t *rcvr_id, const struct pios_rcvr_driver *driver, const uintptr_t lower_id)</div></div>
 <div class="ttc" id="structpios__usb__cdc__cfg_html"><div class="ttname"><a href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usb__cdc__priv_8h_source.html#l00034">pios_usb_cdc_priv.h:34</a></div></div>
@@ -433,11 +442,11 @@ $(document).ready(function(){initNavTree('pipxtreme_2fw_2pios__board_8c_source.h
 <div class="ttc" id="structpios__board__info_html_a5aff4607db694a6885c0ce5361afa9bb"><div class="ttname"><a href="structpios__board__info.html#a5aff4607db694a6885c0ce5361afa9bb">pios_board_info::board_type</a></div><div class="ttdeci">uint8_t board_type</div><div class="ttdef"><b>Definition:</b> <a href="pios__board__info_8h_source.html#l00010">pios_board_info.h:10</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_b_html_gadef7295623a029e8d2384dd88f034d16"><div class="ttname"><a href="group___p_i_o_s___u_s_b.html#gadef7295623a029e8d2384dd88f034d16">PIOS_USB_Init</a></div><div class="ttdeci">int32_t PIOS_USB_Init(uintptr_t *usb_id, const struct pios_usb_cfg *cfg)</div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga1ffcba6811cce798c0a6bc014a691dc7"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga1ffcba6811cce798c0a6bc014a691dc7">PIOS_WDG_Init</a></div><div class="ttdeci">uint16_t PIOS_WDG_Init()</div><div class="ttdoc">Initialize the watchdog timer for a specified timeout. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00063">pios_wdg.c:63</a></div></div>
-<div class="ttc" id="group___p_i_o_s___a_d_c_html_ga8a9178a11e2ccd209eed618a63eb552c"><div class="ttname"><a href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_ADC_Init(uintptr_t *adc_id, const struct pios_adc_driver *driver, uintptr_t lower_id)</div><div class="ttdoc">Initializes an ADC device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8c_source.html#l00091">pios_adc.c:91</a></div></div>
+<div class="ttc" id="group___p_i_o_s___a_d_c_html_ga8a9178a11e2ccd209eed618a63eb552c"><div class="ttname"><a href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_ADC_Init(uintptr_t *adc_id, const struct pios_adc_driver *driver, uintptr_t lower_id)</div></div>
 <div class="ttc" id="group___a_q32_html_gaf14eff61e8f08bddf3904d6fc4f17f15"><div class="ttname"><a href="group___a_q32.html#gaf14eff61e8f08bddf3904d6fc4f17f15">tim_3_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_3_cfg</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2board__hw__defs_8c_source.html#l00880">board_hw_defs.c:880</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_f_s_html_ga9dccc10d534e33e6b52df18f60d27a58"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h_f_s.html#ga9dccc10d534e33e6b52df18f60d27a58">PIOS_FLASHFS_Format</a></div><div class="ttdeci">int32_t PIOS_FLASHFS_Format(uintptr_t fs_id)</div><div class="ttdoc">Erases all filesystem arenas and activate the first arena. </div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l01055">pios_flashfs_logfs.c:1055</a></div></div>
 <div class="ttc" id="group___p_i_o_s___p_p_m_html_ga7f973b24121b1d367d00ce6aab89d3e2"><div class="ttname"><a href="group___p_i_o_s___p_p_m.html#ga7f973b24121b1d367d00ce6aab89d3e2">pios_ppm_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_ppm_rcvr_driver</div></div>
-<div class="ttc" id="group___p_i_o_s___h_a_l_html_gac040f05fa048688ee0269c2768698a14"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a></div><div class="ttdeci">uintptr_t pios_com_bridge_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00081">pios_hal.c:81</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_a_l_html_gac040f05fa048688ee0269c2768698a14"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a></div><div class="ttdeci">uintptr_t pios_com_bridge_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00077">pios_hal.c:77</a></div></div>
 <div class="ttc" id="group___a_q32_html_ga0b6f7586d1c7a594c67b267ae2a52e76"><div class="ttname"><a href="group___a_q32.html#ga0b6f7586d1c7a594c67b267ae2a52e76">tim_2_cfg</a></div><div class="ttdeci">static const struct pios_tim_clock_cfg tim_2_cfg</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2board-info_2board__hw__defs_8c_source.html#l00867">board_hw_defs.c:867</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="group___pip_x_html_ga4a59a79c24481761e5103d5ec54b497c"><div class="ttname"><a href="group___pip_x.html#ga4a59a79c24481761e5103d5ec54b497c">TAULINK_VERSION_MODULE</a></div><div class="ttdeci">#define TAULINK_VERSION_MODULE</div><div class="ttdef"><b>Definition:</b> <a href="targets_2pipxtreme_2board-info_2pios__board_8h_source.html#l00034">pios_board.h:34</a></div></div>

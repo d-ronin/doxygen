@@ -10,9 +10,12 @@ var misc__math_8c =
     [ "expoM", "misc__math_8c.html#gaa176231c25bcf83877304a735c40f177", null ],
     [ "interpolate_value", "misc__math_8c.html#ga6aa2e2cb3fc435bafa5b3a4c4a4a53b6", null ],
     [ "linear_interpolate", "misc__math_8c.html#gaa491e6b9634fc7e05afd03b8a56ec135", null ],
-    [ "randomize_int", "misc__math_8c.html#gac61b11af4ba8da6fab0e5addf1fe3588", null ],
+    [ "randomize_addseed", "misc__math_8c.html#ga48118c67bee43bd4b0d89ab8eeca7103", null ],
+    [ "randomize_int", "misc__math_8c.html#gac0bf3a76acd6dcffaa2ace73d95bb304", null ],
+    [ "randomize_int32", "misc__math_8c.html#ga98cd2bfd709fb0eeea6fa2388d026ee6", null ],
     [ "vector2_clip", "misc__math_8c.html#ga359c9fd8d5e519cd4ac2f7707ad1f670", null ],
     [ "vector2_rotate", "misc__math_8c.html#gac3abccd20807aab13249846171233abf", null ],
     [ "vector3_distances", "misc__math_8c.html#ga776eeeaf240601aab0c3544a13116f8b", null ],
-    [ "vectorn_magnitude", "misc__math_8c.html#ga620e572440496e3ca154909081f80ebc", null ]
+    [ "vectorn_magnitude", "misc__math_8c.html#ga620e572440496e3ca154909081f80ebc", null ],
+    [ "random_state", "misc__math_8c.html#gaa74b18f7a52df3a5c29213daa7f60b79", null ]
 ];

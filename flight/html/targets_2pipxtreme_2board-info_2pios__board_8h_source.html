@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -177,10 +177,10 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//------------------------</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga89e68cdd07ab84568fe168af24311299">   79</a></span>&#160;<span class="preprocessor">#define PIOS_WATCHDOG_TIMEOUT    500</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga359750ecdbec9fcd99d86d9b1cd11110">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_REGISTER        BKP_DR4</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6442cd35f954e58c5457255895fb2ec0">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_TELEMETRY       0x0001</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8936d3ae119bc178f5033de407a2bd74">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_RADIORX         0x0002</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3895339f613f2e95e620f07929243050">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_RADIOTX         0x0004</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga9ebd3d94a18f23c6f8eb63d5e50816f9">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_RFM22B          0x0008</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga6442cd35f954e58c5457255895fb2ec0">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_TELEMETRY       0x0100</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga8936d3ae119bc178f5033de407a2bd74">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_RADIORX         0x0200</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga9ebd3d94a18f23c6f8eb63d5e50816f9">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_RFM22B          0x0400</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga59e8ccf5db4da16df7f67c67ceeb078b">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_SYSTEM          0x0800</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//------------------------</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">// PIOS_LED</span></div>
@@ -267,7 +267,7 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaffe7c0cd799a61d0dbaed25e9496c4bb">  168</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_VCP               (pios_com_vcp_id)</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga90f3d4dc6bd056e049c23be962747064">  169</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_TELEMETRY         (pios_com_telem_serial_id)</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga331e928969979bce99d9037027d9853b">  170</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_BRIDGE            (pios_com_bridge_id)</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga066ea00739405cf7c4688aea4efbfab6">  171</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_RFM22B            (pios_com_rf_id)</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaf6884fac61f1d40d5e8ce2b4f62ced05">  171</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_RADIOBRIDGE       (pios_com_rf_id)</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga5c5d128cb7b63aeaf4282c20be9dca7c">  172</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_PPM_RECEIVER          (pios_ppm_rcvr_id)</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="group___pip_x.html#gadbe2bc366ea08ebb85a0c8ca4c7800e0">  173</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_DEBUG             (pios_com_debug_id)</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group___pip_x.html#gacd240b3acb49442511a220647c7d2e4f">  174</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_COM_FRSKY_SPORT       (pios_com_frsky_sport_id)</span></div>
@@ -327,8 +327,8 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">// Receiver PPM input</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga288a8e6f061b1dbd7930b5ffdf805c69">  230</a></span>&#160;<span class="preprocessor">#define PIOS_PPM_NUM_INPUTS   8</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">//-------------------------</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga7abaa7b2a334f64bfc43df02807d0f3f">  231</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SBUS_NUM_INPUTS         (16+2)</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span><span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// Servo outputs</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaf11e7ae7e32bacf0180ba8d6f144488">  235</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_UPDATE_HZ                    50</span></div>
@@ -348,31 +348,17 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="group___pip_x.html#gad74175c4c77c23fb1045cf101ae97dcc">  249</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_USB_DETECT_EXTI_LINE               EXTI_Line15</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">// RFM22</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">//-------------------------</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RFM22B)</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> uintptr_t pios_rfm22b_id;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RFM22B */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">// Reed-Solomon ECC</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga75691040c0909ea4c06cd3d87f3f01b2">  263</a></span>&#160;<span class="preprocessor">#define RS_ECC_NPARITY 4</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">// Flash EEPROM Emulation</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//-------------------------</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  269</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  270</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  271</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  272</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  273</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga38d6d481307c5ebcad8c7f626b1959cb">  255</a></span>&#160;<span class="preprocessor">#define PIOS_FLASH_SIZE 0x20000</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaaef6f023cf268bdc4dc42e1d08e9f6d5">  256</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_START_ADDR 0x08000000</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga3e665bca6b220ec8f873603ef659e8e3">  257</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_PAGE_SIZE 1024</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group___pip_x.html#ga076309d2727bbeb39e1c2626a0682024">  258</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_ADDR (PIOS_FLASH_EEPROM_START_ADDR + PIOS_FLASH_SIZE - PIOS_FLASH_PAGE_SIZE)</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group___pip_x.html#gaa932bf6d91ada69030e040ad529637ee">  259</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_FLASH_EEPROM_LEN PIOS_FLASH_PAGE_SIZE</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STM32103CB_PIPXTREME_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___pip_x_html_ga7bf37c2a11a82f3cee715b9e09638dce"><div class="ttname"><a href="group___pip_x.html#ga7bf37c2a11a82f3cee715b9e09638dce">pios_com_radio_id</a></div><div class="ttdeci">uintptr_t pios_com_radio_id</div></div>
 <div class="ttc" id="group___a_q32_html_gaef90e208bce2777c1821abfa2dbe5688"><div class="ttname"><a href="group___a_q32.html#gaef90e208bce2777c1821abfa2dbe5688">pios_com_frsky_sport_id</a></div><div class="ttdeci">uintptr_t pios_com_frsky_sport_id</div></div>
 <div class="ttc" id="group___pip_x_html_ga921f0eb0351c5bfb72fa30333cd8dbe1"><div class="ttname"><a href="group___pip_x.html#ga921f0eb0351c5bfb72fa30333cd8dbe1">pios_com_telem_uart_telem_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_uart_telem_id</div></div>
@@ -380,7 +366,7 @@ $(document).ready(function(){initNavTree('targets_2pipxtreme_2board-info_2pios__
 <div class="ttc" id="group___sim_html_ga14dc9e3d330b80a37a9699c2112358e0"><div class="ttname"><a href="group___sim.html#ga14dc9e3d330b80a37a9699c2112358e0">pios_com_debug_id</a></div><div class="ttdeci">uintptr_t pios_com_debug_id</div><div class="ttdef"><b>Definition:</b> <a href="flightd_2fw_2pios__board_8c_source.html#l00077">pios_board.c:77</a></div></div>
 <div class="ttc" id="group___pip_x_html_ga97dbb4b940ab0701eaeaf3058d8dc9db"><div class="ttname"><a href="group___pip_x.html#ga97dbb4b940ab0701eaeaf3058d8dc9db">pios_ppm_rcvr_id</a></div><div class="ttdeci">uintptr_t pios_ppm_rcvr_id</div></div>
 <div class="ttc" id="group___a_q32_html_ga513cc36d72b76de2fcb75ff233a79a4a"><div class="ttname"><a href="group___a_q32.html#ga513cc36d72b76de2fcb75ff233a79a4a">pios_com_telem_usb_id</a></div><div class="ttdeci">uintptr_t pios_com_telem_usb_id</div><div class="ttdef"><b>Definition:</b> <a href="aq32_2bl_2pios__board_8c_source.html#l00042">pios_board.c:42</a></div></div>
-<div class="ttc" id="group___a_q32_html_gac040f05fa048688ee0269c2768698a14"><div class="ttname"><a href="group___a_q32.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a></div><div class="ttdeci">uintptr_t pios_com_bridge_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00081">pios_hal.c:81</a></div></div>
+<div class="ttc" id="group___a_q32_html_gac040f05fa048688ee0269c2768698a14"><div class="ttname"><a href="group___a_q32.html#gac040f05fa048688ee0269c2768698a14">pios_com_bridge_id</a></div><div class="ttdeci">uintptr_t pios_com_bridge_id</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l00077">pios_hal.c:77</a></div></div>
 <div class="ttc" id="group___pip_x_html_ga5ed4d9bd0cbb6a88a61f0f4a1e13bcff"><div class="ttname"><a href="group___pip_x.html#ga5ed4d9bd0cbb6a88a61f0f4a1e13bcff">pios_com_rf_id</a></div><div class="ttdeci">uintptr_t pios_com_rf_id</div></div>
 <div class="ttc" id="group___a_q32_html_gaaeb3e0d65ed5c6e7b921c54e1ad905db"><div class="ttname"><a href="group___a_q32.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db">pios_com_vcp_id</a></div><div class="ttdeci">uintptr_t pios_com_vcp_id</div></div>
 </div><!-- fragment --></div><!-- contents -->

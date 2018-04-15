@@ -9,10 +9,8 @@ var group___setup_wizard =
       [ "stopChannelOutput", "group___setup_wizard.html#ga82c5762c4c3caeebb767eff46035ba59", null ]
     ] ],
     [ "AbstractWizardPage", "class_abstract_wizard_page.html", [
-      [ "AbstractWizardPage", "group___rfm_bind_wizard.html#ga4a894fc41931213e24dc8aa111476d9c", null ],
       [ "AbstractWizardPage", "group___setup_wizard.html#ga7db2cc193f59ca4ec0e10e08e0838072", null ],
       [ "getControllerType", "group___setup_wizard.html#ga1281703a86599499c25a650e5226c7b9", null ],
-      [ "getWizard", "group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228", null ],
       [ "getWizard", "group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1", null ]
     ] ],
     [ "BiasCalibrationPage", "class_bias_calibration_page.html", [
@@ -101,14 +99,10 @@ var group___setup_wizard =
       [ "~SurfacePage", "group___setup_wizard.html#ga5a8e3eacbff6da1ddd215db6456358c8", null ]
     ] ],
     [ "TLEndPage", "class_t_l_end_page.html", [
-      [ "TLEndPage", "group___rfm_bind_wizard.html#gac611f8819f4bab75f4a648ec566669fa", null ],
-      [ "~TLEndPage", "group___rfm_bind_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab", null ],
       [ "TLEndPage", "group___setup_wizard.html#gabbd50aaee6c67d23454af09cf9703cbd", null ],
       [ "~TLEndPage", "group___setup_wizard.html#ga0cc3b0df91e2874402e9bd4baa3bbaab", null ]
     ] ],
     [ "TLStartPage", "class_t_l_start_page.html", [
-      [ "TLStartPage", "group___rfm_bind_wizard.html#ga5c0386f31db38b673bc3b9687e165629", null ],
-      [ "~TLStartPage", "group___rfm_bind_wizard.html#ga606e920bac9f48e424476731be8f983b", null ],
       [ "TLStartPage", "group___setup_wizard.html#ga9d6bcf336fbf662f9ac4980ba0bb3714", null ],
       [ "~TLStartPage", "group___setup_wizard.html#ga606e920bac9f48e424476731be8f983b", null ]
     ] ],

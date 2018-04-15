@@ -9,7 +9,7 @@ var group___u_a_v_object_handling =
     [ "ObjectEventEntry", "struct_object_event_entry.html", [
       [ "cb", "struct_object_event_entry.html#a202f15e5d4be2ca706b2f9ed6fa27d81", null ],
       [ "cbCtx", "struct_object_event_entry.html#a999fe73dad2faa0ca431839fa067b635", null ],
-      [ "cbInfo", "struct_object_event_entry.html#ad54d4661559ed5ab21227ee2e4cb97db", null ],
+      [ "cbInfo", "struct_object_event_entry.html#a296c12ce518ee1f19ad6bfcbf8acc282", null ],
       [ "eventMask", "struct_object_event_entry.html#a7943bff77f5f644659a1cb59d7f0b176", null ],
       [ "hasThrottle", "struct_object_event_entry.html#a7734ba2555249f40564901e8fa141b89", null ],
       [ "next", "struct_object_event_entry.html#af10cb19d61193416975d2cb2c78bf620", null ],
@@ -18,6 +18,7 @@ var group___u_a_v_object_handling =
     [ "ObjectEventEntryThrottled", "struct_object_event_entry_throttled.html", [
       [ "due", "struct_object_event_entry_throttled.html#a61b88b80f405c93a5ffae5a756abf723", null ],
       [ "entry", "struct_object_event_entry_throttled.html#a55b4d6b43b204db478e2165a94fd02b2", null ],
+      [ "inhibited", "struct_object_event_entry_throttled.html#aa3cfbafcd419ea5dce8efc1c82d32920", null ],
       [ "interval", "struct_object_event_entry_throttled.html#a7312ca50c03dde85928b997bdfcaa2b8", null ]
     ] ],
     [ "UAVOBase", "struct_u_a_v_o_base.html", [
@@ -144,6 +145,7 @@ var group___u_a_v_object_handling =
     [ "UAVObjSetMetadata", "group___u_a_v_object_handling.html#ga0e590d06148882b63affa37888f043df", null ],
     [ "UAVObjSetTelemetryAcked", "group___u_a_v_object_handling.html#ga43e002d9dd75b34a4392308763d6bb35", null ],
     [ "UAVObjSetTelemetryUpdateMode", "group___u_a_v_object_handling.html#ga383e4286d101cd29646b5e4b0e4b6199", null ],
+    [ "UAVObjUnblockThrottle", "group___u_a_v_object_handling.html#ga9964be94d5ce50f0b9b72875a36c7c4c", null ],
     [ "UAVObjUnpack", "group___u_a_v_object_handling.html#gae54216880f0d6f603497b8fad60d0c95", null ],
     [ "UAVObjUpdated", "group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57", null ],
     [ "cb_stack", "group___u_a_v_object_handling.html#ga71adca5b140c651d3f31cbe9a6a2a9c4", null ],

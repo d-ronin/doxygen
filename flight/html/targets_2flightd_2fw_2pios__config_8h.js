@@ -9,6 +9,7 @@ var targets_2flightd_2fw_2pios__config_8h =
     [ "IRQSTACK_LIMIT_CRITICAL", "targets_2flightd_2fw_2pios__config_8h.html#gab45890a416f5e2177b434d93d89c362f", null ],
     [ "IRQSTACK_LIMIT_WARNING", "targets_2flightd_2fw_2pios__config_8h.html#gae97115db8cae2e29462308550992c153", null ],
     [ "PIOS_GCSRCVR_MAX_DEVS", "targets_2flightd_2fw_2pios__config_8h.html#gaabace8a48f34ff0dcedf34ff7bd4917f", null ],
+    [ "PIOS_INCLUDE_ADC", "targets_2flightd_2fw_2pios__config_8h.html#ga28ae61b1409ab23bb43878990ee0d625", null ],
     [ "PIOS_INCLUDE_ANNUNC", "targets_2flightd_2fw_2pios__config_8h.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "targets_2flightd_2fw_2pios__config_8h.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
     [ "PIOS_INCLUDE_COM", "targets_2flightd_2fw_2pios__config_8h.html#gaf8a678a8ce2142cdd87b127b78a89add", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -101,7 +101,6 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___r_f_m22b.html','');}
 
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -112,40 +111,22 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___r_f_m22b.html','');}
 <p>Deals with the RFM22b module.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:pios__rfm22b__rcvr_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__rfm22b__rcvr_8c.html">pios_rfm22b_rcvr.c</a></td></tr>
-<tr class="memdesc:pios__rfm22b__rcvr_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFM22B Rcvr function. This catches UAVO updates from the remote RFM22B (normally from PPM) that are in the form of a UAVO and presents them as a PIOS_RCVR interface. This is almost identical to PIOS_GCSRCVR but looks at a different object. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pios__rfm22b__rcvr__priv_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__rfm22b__rcvr__priv_8h.html">pios_rfm22b_rcvr_priv.h</a></td></tr>
-<tr class="memdesc:pios__rfm22b__rcvr__priv_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">TauLabs Link receiver private functions. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pios__rfm22b__rcvr__priv_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pios__rfm22b__rcvr__priv_8h.html">pios_rfm22b_rcvr_priv.h</a></td></tr>
-<tr class="memdesc:pios__rfm22b__rcvr__priv_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">TauLabs Link receiver private functions. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga07fd16f5b9b8e5d144f74816c64d9955"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga07fd16f5b9b8e5d144f74816c64d9955">PIOS_OpenLRS_Rcvr_Init</a> (uintptr_t *openlrs_rcvr_id, uintptr_t openlrs_id)</td></tr>
-<tr class="separator:ga07fd16f5b9b8e5d144f74816c64d9955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb50c3312e40a7b5c028b535cde440db"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#gacb50c3312e40a7b5c028b535cde440db">PIOS_OpenLRS_Rcvr_Init</a> (uintptr_t *openlrs_rcvr_id, pios_openlrs_t openlrs_id)</td></tr>
+<tr class="separator:gacb50c3312e40a7b5c028b535cde440db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21fb1840c65b2544e3cd0226b357f585"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga21fb1840c65b2544e3cd0226b357f585">PIOS_OpenLRS_Rcvr_UpdateChannels</a> (uintptr_t openlrs_rcvr_id, int16_t *channels)</td></tr>
 <tr class="separator:ga21fb1840c65b2544e3cd0226b357f585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b3355f4beecda150f5c95c1cca34fd2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga2b3355f4beecda150f5c95c1cca34fd2">PIOS_RFM22B_Rcvr_Init</a> (uintptr_t *rfm22b_rcvr_id, uint32_t rfm22b_id)</td></tr>
-<tr class="separator:ga2b3355f4beecda150f5c95c1cca34fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e7c20293e03f232ee97a9c07dc522a5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga1e7c20293e03f232ee97a9c07dc522a5">PIOS_RFM22B_Rcvr_UpdateChannels</a> (uintptr_t rfm22b_rcvr_id, int16_t *channels)</td></tr>
-<tr class="separator:ga1e7c20293e03f232ee97a9c07dc522a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga7b7e2b4602dffb9e6c0b1f72e4a29235"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__rcvr__driver.html">pios_rcvr_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga7b7e2b4602dffb9e6c0b1f72e4a29235">pios_openlrs_rcvr_driver</a></td></tr>
 <tr class="separator:ga7b7e2b4602dffb9e6c0b1f72e4a29235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32cac40cdf1c102a644fefb0924ad0cf"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__rcvr__driver.html">pios_rcvr_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___r_f_m22b.html#ga32cac40cdf1c102a644fefb0924ad0cf">pios_rfm22b_rcvr_driver</a></td></tr>
-<tr class="separator:ga32cac40cdf1c102a644fefb0924ad0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Deals with the RFM22b module. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga07fd16f5b9b8e5d144f74816c64d9955"></a>
+<a class="anchor" id="gacb50c3312e40a7b5c028b535cde440db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -158,7 +139,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramtype">pios_openlrs_t&#160;</td>
           <td class="paramname"><em>openlrs_id</em>&#160;</td>
         </tr>
         <tr>
@@ -197,58 +178,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2b3355f4beecda150f5c95c1cca34fd2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t PIOS_RFM22B_Rcvr_Init </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t *&#160;</td>
-          <td class="paramname"><em>rfm22b_rcvr_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>rfm22b_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga1e7c20293e03f232ee97a9c07dc522a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t PIOS_RFM22B_Rcvr_UpdateChannels </td>
-          <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>rfm22b_rcvr_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t *&#160;</td>
-          <td class="paramname"><em>channels</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ga7b7e2b4602dffb9e6c0b1f72e4a29235"></a>
 <div class="memitem">
@@ -256,18 +185,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const struct <a class="el" href="structpios__rcvr__driver.html">pios_rcvr_driver</a> pios_openlrs_rcvr_driver</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga32cac40cdf1c102a644fefb0924ad0cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="structpios__rcvr__driver.html">pios_rcvr_driver</a> pios_rfm22b_rcvr_driver</td>
         </tr>
       </table>
 </div><div class="memdoc">

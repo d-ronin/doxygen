@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -399,13 +399,17 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="group___u_a_v_object_handling.html#ga383e4286d101cd29646b5e4b0e4b6199">uavobjectmanager.h</a>
 , <a class="el" href="group___u_a_v_object_handling.html#ga383e4286d101cd29646b5e4b0e4b6199">uavobjectmanager.c</a>
 </li>
+<li>UAVObjUnblockThrottle()
+: <a class="el" href="group___u_a_v_object_handling.html#ga9964be94d5ce50f0b9b72875a36c7c4c">uavobjectmanager.h</a>
+, <a class="el" href="group___u_a_v_object_handling.html#ga9964be94d5ce50f0b9b72875a36c7c4c">uavobjectmanager.c</a>
+</li>
 <li>UAVObjUnpack()
 : <a class="el" href="group___u_a_v_object_handling.html#gae54216880f0d6f603497b8fad60d0c95">uavobjectmanager.h</a>
 , <a class="el" href="group___u_a_v_object_handling.html#gae54216880f0d6f603497b8fad60d0c95">uavobjectmanager.c</a>
 </li>
 <li>UAVObjUpdated()
-: <a class="el" href="group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57">uavobjectmanager.h</a>
-, <a class="el" href="group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57">uavobjectmanager.c</a>
+: <a class="el" href="group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57">uavobjectmanager.c</a>
+, <a class="el" href="group___u_a_v_object_handling.html#gaadcab3b60f3004ccba0c5efa5c5bfb57">uavobjectmanager.h</a>
 </li>
 <li>uavoMavlinkBridgeInitialize()
 : <a class="el" href="group___u_a_v_o_mavlink_bridge.html#gafe7b7ec53bf7665ec9f01e00f2fdbbea">UAVOMavlinkBridge.c</a>
@@ -554,9 +558,6 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>updatePIDs()
 : <a class="el" href="group___tx_p_i_d_module.html#gaf8393d7267577ee01fd7083983d03bfb">txpid.c</a>
 </li>
-<li>updateRadioComBridgeStats()
-: <a class="el" href="group___radio_com_bridge_module.html#gadc6b3a8165145940130d13b02d373c6e">RadioComBridge.c</a>
-</li>
 <li>updateRcvrActivity()
 : <a class="el" href="group___control.html#gaf8e9c1f83d82625a00f42db7a40d4d8f">transmitter_control.c</a>
 </li>
@@ -566,16 +567,12 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>updateRcvrActivitySample()
 : <a class="el" href="group___control.html#ga595d7ebc121be98581bb9816478a6d3a">transmitter_control.c</a>
 </li>
-<li>updateRfm22bStats()
-: <a class="el" href="group___system_module.html#gaee0f14515d88d6cdfba7968c0ab4dc58">systemmod.c</a>
-</li>
 <li>updateSettings()
-: <a class="el" href="group___logging.html#gad0b9bd8f45359133da342c354426cb80">logging.c</a>
-, <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
+: <a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">telemetry.c</a>
 , <a class="el" href="group___g_p_s_module.html#gad0b9bd8f45359133da342c354426cb80">GPS.c</a>
-, <a class="el" href="group___telemetry_module.html#gad0b9bd8f45359133da342c354426cb80">telemetry.c</a>
+, <a class="el" href="group___logging.html#gad0b9bd8f45359133da342c354426cb80">logging.c</a>
+, <a class="el" href="group___com_usb_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">ComUsbBridge.c</a>
 , <a class="el" href="group___u_a_v_o_mavlink_bridge.html#gad0b9bd8f45359133da342c354426cb80">UAVOMavlinkBridge.c</a>
-, <a class="el" href="group___radio_com_bridge_module.html#gad0b9bd8f45359133da342c354426cb80">RadioComBridge.c</a>
 </li>
 <li>updateStats()
 : <a class="el" href="group___system_module.html#ga8bb5aa227c84456ab4205dd2fc89816e">systemmod.c</a>
@@ -605,7 +602,7 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="pios__usb__hid__istr_8h.html#ab084f8c2574dd1fef2ef68123f5e90ab">pios_usb_hid_istr.h</a>
 </li>
 <li>USB_LP_CAN1_RX0_IRQHandler()
-: <a class="el" href="_s_t_m32_f10x_2pios__usb__hid__istr_8c.html#af57bde854fa2b396f29664995a502b19">pios_usb_hid_istr.c</a>
+: <a class="el" href="_s_t_m32_f30x_2pios__usb__hid__istr_8c.html#af57bde854fa2b396f29664995a502b19">pios_usb_hid_istr.c</a>
 </li>
 <li>UTM_To_MGRS()
 : <a class="el" href="mgrs_8c.html#a9d00ab2c40e0c74e469182ed332f3420">mgrs.c</a>

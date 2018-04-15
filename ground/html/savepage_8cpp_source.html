@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('savepage_8cpp_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> SavePage::writeToController()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;<a class="code" href="group___rfm_bind_wizard.html#gad2e66af5a14d68564eaa95e76636cdff">getConnectionManager</a>()-&gt;isConnected()) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;getConnectionManager()-&gt;isConnected()) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QMessageBox msgBox;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        msgBox.setText(tr(<span class="stringliteral">&quot;An OpenPilot controller must be connected to your computer to save the &quot;</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                          <span class="stringliteral">&quot;configuration.\nPlease connect your OpenPilot controller to your &quot;</span></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('savepage_8cpp_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    enableButtons(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_vehicle_configuration_helper.html">VehicleConfigurationHelper</a> helper(<a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_vehicle_configuration_helper.html">VehicleConfigurationHelper</a> helper(<a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    connect(&amp;helper, &amp;<a class="code" href="group___setup_wizard.html#ga7ec52f13c4dee3a474698106c2ca3bf4">VehicleConfigurationHelper::saveProgress</a>, <span class="keyword">this</span>, &amp;SavePage::saveProgress);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    m_successfulWrite = helper.setupVehicle();</div>
@@ -187,10 +187,10 @@ $(document).ready(function(){initNavTree('savepage_8cpp_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> SavePage::enableButtons(<span class="keywordtype">bool</span> enable)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    ui-&gt;saveButton-&gt;setEnabled(enable);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;button(QWizard::NextButton)-&gt;setEnabled(enable);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;button(QWizard::CancelButton)-&gt;setEnabled(enable);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;button(QWizard::BackButton)-&gt;setEnabled(enable);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">getWizard</a>()-&gt;button(QWizard::CustomButton1)-&gt;setEnabled(enable);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;button(QWizard::NextButton)-&gt;setEnabled(enable);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;button(QWizard::CancelButton)-&gt;setEnabled(enable);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;button(QWizard::BackButton)-&gt;setEnabled(enable);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">getWizard</a>()-&gt;button(QWizard::CustomButton1)-&gt;setEnabled(enable);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QApplication::processEvents();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -210,11 +210,10 @@ $(document).ready(function(){initNavTree('savepage_8cpp_source.html','');});
 <div class="ttc" id="savepage_8h_html"><div class="ttname"><a href="savepage_8h.html">savepage.h</a></div></div>
 <div class="ttc" id="class_setup_wizard_html"><div class="ttname"><a href="class_setup_wizard.html">SetupWizard</a></div><div class="ttdoc">The SetupWizard class is the main interface to the setup wizard. It provides selects the sequence of ...</div><div class="ttdef"><b>Definition:</b> <a href="setupwizard_8h_source.html#l00047">setupwizard.h:47</a></div></div>
 <div class="ttc" id="class_save_page_html"><div class="ttname"><a href="class_save_page.html">SavePage</a></div><div class="ttdef"><b>Definition:</b> <a href="savepage_8h_source.html#l00037">savepage.h:37</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_ga9df5a6ccc5c11f35a7fa764c57700228"><div class="ttname"><a href="group___rfm_bind_wizard.html#ga9df5a6ccc5c11f35a7fa764c57700228">AbstractWizardPage::getWizard</a></div><div class="ttdeci">RfmBindWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00044">abstractwizardpage.h:44</a></div></div>
-<div class="ttc" id="group___rfm_bind_wizard_html_gad2e66af5a14d68564eaa95e76636cdff"><div class="ttname"><a href="group___rfm_bind_wizard.html#gad2e66af5a14d68564eaa95e76636cdff">getConnectionManager</a></div><div class="ttdeci">Core::ConnectionManager * getConnectionManager()</div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_8h_source.html#l00070">rfmbindwizard.h:70</a></div></div>
+<div class="ttc" id="group___setup_wizard_html_gabcd1c897e235b0da46ca5f032229b4c1"><div class="ttname"><a href="group___setup_wizard.html#gabcd1c897e235b0da46ca5f032229b4c1">AbstractWizardPage::getWizard</a></div><div class="ttdeci">SetupWizard * getWizard() const </div><div class="ttdef"><b>Definition:</b> <a href="abstractwizardpage_8h_source.html#l00046">abstractwizardpage.h:46</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_gaa7deb093bcc11a89af590b7b4e32b01c"><div class="ttname"><a href="group___setup_wizard.html#gaa7deb093bcc11a89af590b7b4e32b01c">SavePage::isComplete</a></div><div class="ttdeci">bool isComplete() const </div><div class="ttdef"><b>Definition:</b> <a href="savepage_8cpp_source.html#l00053">savepage.cpp:53</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_gad4c1a470c72a8807dff85b13ea2faf7f"><div class="ttname"><a href="group___setup_wizard.html#gad4c1a470c72a8807dff85b13ea2faf7f">SavePage::validatePage</a></div><div class="ttdeci">bool validatePage()</div><div class="ttdef"><b>Definition:</b> <a href="savepage_8cpp_source.html#l00048">savepage.cpp:48</a></div></div>
-<div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="rfmbindwizard_2pages_2abstractwizardpage_8h_source.html#l00034">abstractwizardpage.h:34</a></div></div>
+<div class="ttc" id="class_abstract_wizard_page_html"><div class="ttname"><a href="class_abstract_wizard_page.html">AbstractWizardPage</a></div><div class="ttdef"><b>Definition:</b> <a href="abstractwizardpage_8h_source.html#l00036">abstractwizardpage.h:36</a></div></div>
 <div class="ttc" id="setupwizard_8h_html"><div class="ttname"><a href="setupwizard_8h.html">setupwizard.h</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga7065bd4228b7cdd30c014d43e02dc527"><div class="ttname"><a href="group___setup_wizard.html#ga7065bd4228b7cdd30c014d43e02dc527">SavePage::~SavePage</a></div><div class="ttdeci">~SavePage()</div><div class="ttdef"><b>Definition:</b> <a href="savepage_8cpp_source.html#l00043">savepage.cpp:43</a></div></div>
 <div class="ttc" id="group___setup_wizard_html_ga7ec52f13c4dee3a474698106c2ca3bf4"><div class="ttname"><a href="group___setup_wizard.html#ga7ec52f13c4dee3a474698106c2ca3bf4">VehicleConfigurationHelper::saveProgress</a></div><div class="ttdeci">void saveProgress(int total, int current, QString description)</div></div>

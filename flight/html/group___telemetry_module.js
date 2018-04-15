@@ -13,12 +13,16 @@ var group___telemetry_module =
       [ "valid", "structpending__req.html#a0f4e4c66407896e6623399eb97ae7581", null ]
     ] ],
     [ "telemetry_state", "structtelemetry__state.html", [
+      [ "access_sem", "structtelemetry__state.html#a2466b50c3af4f88b2750f09e7840ce91", null ],
       [ "acks", "structtelemetry__state.html#a117d825a002b8624962067ee0becced6", null ],
       [ "queue", "structtelemetry__state.html#aa009247b2bf06f229ac643e6286f15d6", null ],
       [ "reqack_mutex", "structtelemetry__state.html#ac87454caa79b6a5f16fb3f7d953f50f8", null ],
       [ "reqs", "structtelemetry__state.html#ab8f16fb399fc98d554059fd459a84ea3", null ],
+      [ "request_inhibit", "structtelemetry__state.html#a620826ab6103b6efa6255b6e27a9d2c1", null ],
+      [ "rx_inhibited", "structtelemetry__state.html#a98263b392c02c8b13a3191f844c77971", null ],
       [ "time_of_last_update", "structtelemetry__state.html#a5dd07ea97e720687eb5134c619c7d8c7", null ],
       [ "tx_errors", "structtelemetry__state.html#a3fa25c5612dc7096843e8079996a5c1e", null ],
+      [ "tx_inhibited", "structtelemetry__state.html#a52bfa5adf205c50ba61a10d7ac277cb1", null ],
       [ "tx_retries", "structtelemetry__state.html#a3aa3f6c1f863529438ea5abcc9dc6c0b", null ],
       [ "uavTalkCon", "structtelemetry__state.html#a2db283098560c9057e07116a4a1e84c4", null ]
     ] ],
@@ -50,6 +54,7 @@ var group___telemetry_module =
     [ "reqCallback", "group___telemetry_module.html#ga6726f16909707a822e9ba3ab6b0613d2", null ],
     [ "sendRequestedObjs", "group___telemetry_module.html#ga280a48bbd05288c56e6815670cede89a", null ],
     [ "setUpdatePeriod", "group___telemetry_module.html#gaea219686dbd914c9afcd488b0c93de13", null ],
+    [ "telemetry_set_inhibit", "group___telemetry_module.html#ga49a0a52f9a18c8e89df4476d7b952c96", null ],
     [ "TelemetryInitialize", "group___telemetry_module.html#ga058925ecc8ea2cd938fb3e9d21edb2ac", null ],
     [ "telemetryRxTask", "group___telemetry_module.html#ga9da5e87898e909e36976b43920385fb7", null ],
     [ "TelemetryStart", "group___telemetry_module.html#ga251dc0181b1a02544cdee5e599bfc240", null ],

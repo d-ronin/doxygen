@@ -28,6 +28,7 @@ var telemetry_8c =
     [ "reqCallback", "telemetry_8c.html#ga6726f16909707a822e9ba3ab6b0613d2", null ],
     [ "sendRequestedObjs", "telemetry_8c.html#ga280a48bbd05288c56e6815670cede89a", null ],
     [ "setUpdatePeriod", "telemetry_8c.html#gaea219686dbd914c9afcd488b0c93de13", null ],
+    [ "telemetry_set_inhibit", "telemetry_8c.html#ga49a0a52f9a18c8e89df4476d7b952c96", null ],
     [ "TelemetryInitialize", "telemetry_8c.html#ga058925ecc8ea2cd938fb3e9d21edb2ac", null ],
     [ "telemetryRxTask", "telemetry_8c.html#ga9da5e87898e909e36976b43920385fb7", null ],
     [ "TelemetryStart", "telemetry_8c.html#ga251dc0181b1a02544cdee5e599bfc240", null ],

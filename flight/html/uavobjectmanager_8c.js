@@ -87,6 +87,7 @@ var uavobjectmanager_8c =
     [ "UAVObjSetMetadata", "uavobjectmanager_8c.html#ga0e590d06148882b63affa37888f043df", null ],
     [ "UAVObjSetTelemetryAcked", "uavobjectmanager_8c.html#ga43e002d9dd75b34a4392308763d6bb35", null ],
     [ "UAVObjSetTelemetryUpdateMode", "uavobjectmanager_8c.html#ga383e4286d101cd29646b5e4b0e4b6199", null ],
+    [ "UAVObjUnblockThrottle", "uavobjectmanager_8c.html#ga9964be94d5ce50f0b9b72875a36c7c4c", null ],
     [ "UAVObjUnpack", "uavobjectmanager_8c.html#gae54216880f0d6f603497b8fad60d0c95", null ],
     [ "UAVObjUpdated", "uavobjectmanager_8c.html#gaadcab3b60f3004ccba0c5efa5c5bfb57", null ],
     [ "base", "uavobjectmanager_8c.html#af41894f299b7a692a649d63f02c30e35", null ],

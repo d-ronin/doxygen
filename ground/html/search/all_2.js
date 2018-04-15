@@ -38,7 +38,6 @@ var searchData=
   ['biascalibrationpage_2eh',['biascalibrationpage.h',['../biascalibrationpage_8h.html',1,'']]],
   ['bigger',['BIGGER',['../class_u_a_v_object_field.html#ab90b52ee80a0622d280a4c2fc8e601cba8bf45653fc3846d52b51b1bad7ca342e',1,'UAVObjectField::BIGGER()'],['../group___notify_plugin.html#gga34227f73910758af2e38d62c0abe685ea0645a6aff2f8f76e753f1eaf08fd4cb0',1,'NotifyPluginOptionsPage::bigger()']]],
   ['bin',['BIN',['../class_u_a_v_object_field.html#a5d9a38b351b148a6a0429bc4d95d7c4eacdea43e50837631084a658ed0b0dcf83',1,'UAVObjectField']]],
-  ['bindradio',['bindRadio',['../group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce',1,'Revolution::bindRadio()'],['../group___boards___tau_labs_plugin.html#ga51a98f9d324a17a8160d59f3111e6279',1,'Sparky2::bindRadio()'],['../group___boards___tau_labs_plugin.html#ga429112c10ffe2695d47bec1dbaad98fb',1,'TauLink::bindRadio()'],['../group___core_plugin.html#ga28f83e8abfc251aa17fdde2d08df0644',1,'Core::IBoardType::bindRadio()']]],
   ['bingmapsclienttoken',['BingMapsClientToken',['../group___t_l_map_widget.html#ga4c3a944c12deba7b13251f0c04685ac6',1,'core::ProviderStrings']]],
   ['bitfield',['BITFIELD',['../class_u_a_v_object_field.html#a74498368bc91f3ed74beacb096744cf3a1a5788021526d853b18af9b5fd11f46d',1,'UAVObjectField']]],
   ['bl_5fbusy',['BL_BUSY',['../namespaceuploader.html#aae5cd9d9abc36fb9bb59f55a29f5f690a71fc8eb4458bbae2d4773e7bd9209575',1,'uploader']]],

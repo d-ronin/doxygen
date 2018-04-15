@@ -4,6 +4,7 @@ var searchData=
   ['pi_5fover',['PI_OVER',['../ups_8c.html#a3f3edde323315851fb48026ca6e79ec3',1,'ups.c']]],
   ['pi_5fover_5f2',['PI_OVER_2',['../mgrs_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;mgrs.c'],['../polarst_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;polarst.c'],['../tranmerc_8c.html#a27d2bea15134ae7c7f7a2d11379bde53',1,'PI_OVER_2():&#160;tranmerc.c']]],
   ['pios_5fboard_5finfo_5fblob_5fmagic',['PIOS_BOARD_INFO_BLOB_MAGIC',['../pios__board__info_8h.html#a22eb81843da44aeb3d34b85c75719938',1,'pios_board_info.h']]],
+  ['pios_5fcom_5ftelem_5fser',['PIOS_COM_TELEM_SER',['../pios__hal_8h.html#ab150703d15175368d90a7ffb725de42b',1,'pios_hal.h']]],
   ['pios_5fdsm_5fnum_5finputs',['PIOS_DSM_NUM_INPUTS',['../dsm_8h.html#abf39f1bc59b5af7e8f138bb394770300',1,'dsm.h']]],
   ['pios_5ffileout_5ftx_5fbuffer_5fsize',['PIOS_FILEOUT_TX_BUFFER_SIZE',['../pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895',1,'pios_fileout_priv.h']]],
   ['pios_5finclude_5f4way',['PIOS_INCLUDE_4WAY',['../pios__flight__config_8h.html#ad830410b5e6793203bad6382c5242746',1,'pios_flight_config.h']]],

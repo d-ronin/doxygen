@@ -109,7 +109,7 @@ var group___u_a_v_object_widget_utils =
       [ "useUnits", "group___u_a_v_object_widget_utils.html#gae76fc33278266a95724eb32874ad3277", null ]
     ] ],
     [ "Edge", "class_edge.html", [
-      [ "Type", "group___u_a_v_object_widget_utils.html#ggabe84f7d77a80ac487e172958c8200b57a59a3ef5ffd963601ffda52bb7bf42b3c", null ],
+      [ "Type", "group___u_a_v_object_widget_utils.html#ggac68f5590c9ffef7843f6d556e4b6961ea59a3ef5ffd963601ffda52bb7bf42b3c", null ],
       [ "Edge", "group___u_a_v_object_widget_utils.html#gaaaf462ed746395725efc1ecc8ea00ec4", null ],
       [ "~Edge", "group___u_a_v_object_widget_utils.html#ga2f37b72f044427961d6730943daf10e0", null ],
       [ "adjust", "group___u_a_v_object_widget_utils.html#gab554a765fd7a57fcdf289aa51b4df328", null ],
@@ -177,7 +177,7 @@ var group___u_a_v_object_widget_utils =
       [ "setObjects", "group___u_a_v_object_widget_utils.html#gabc52b717610cbaa7e592ca114e280a7a", null ]
     ] ],
     [ "UAVObjectWidgetUtilsPlugin", "class_u_a_v_object_widget_utils_plugin.html", [
-      [ "Type", "group___u_a_v_object_widget_utils.html#ggabe84f7d77a80ac487e172958c8200b57a59a3ef5ffd963601ffda52bb7bf42b3c", null ]
+      [ "Type", "group___u_a_v_object_widget_utils.html#ggac68f5590c9ffef7843f6d556e4b6961ea59a3ef5ffd963601ffda52bb7bf42b3c", null ]
     ] ],
     [ "buttonTypeEnum", "group___u_a_v_object_widget_utils.html#gacf8aa6ed9da799d1973519df03d1ecfa", [
       [ "none", "group___u_a_v_object_widget_utils.html#ggacf8aa6ed9da799d1973519df03d1ecfaa5ba945be96884ca1ea4e0019425b3fd1", null ],
@@ -214,7 +214,7 @@ var group___u_a_v_object_widget_utils =
     [ "reload_button", "group___u_a_v_object_widget_utils.html#ggacf8aa6ed9da799d1973519df03d1ecfaae3d77626c54b30f24b9342696d4155ee", null ],
     [ "save_button", "group___u_a_v_object_widget_utils.html#ggacf8aa6ed9da799d1973519df03d1ecfaad57389b40e61729debc6f0e8fd4cbde2", null ],
     [ "SETTINGS_METADATA_ONLY", "group___u_a_v_object_widget_utils.html#ggaf06dbd27444c4e9864e702d7c00b0a62ac3b6f184c1551bd23d264999d0330302", null ],
-    [ "Type", "group___u_a_v_object_widget_utils.html#ggabe84f7d77a80ac487e172958c8200b57a59a3ef5ffd963601ffda52bb7bf42b3c", null ],
+    [ "Type", "group___u_a_v_object_widget_utils.html#ggac68f5590c9ffef7843f6d556e4b6961ea59a3ef5ffd963601ffda52bb7bf42b3c", null ],
     [ "activateCommand", "group___u_a_v_object_widget_utils.html#gad39c4c8427b031af1e9042f750301ec8", null ],
     [ "addApplyButton", "group___u_a_v_object_widget_utils.html#gab4059d84ec9c8e40beed303a7ad8550a", null ],
     [ "addButtons", "group___u_a_v_object_widget_utils.html#gaf6869cfd1fefcbd90df4481101aedae0", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <a class="code" href="group___p_i_o_s___modules.html#ga039145f6fcbc2953d363dc6dc7ad73ea">PIOS_Modules_Enable</a>(<a class="code" href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00">PIOS_MODULE_UAVOLIGHTTELEMETRYBRIDGE</a>);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <a class="code" href="group___a_q32.html#ga88f1b74712df62b9970b6cbc6bb262e9">PIOS_COM_LIGHTTELEMETRY</a> = com_id;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;telemetry&quot;</span>)) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <a class="code" href="group___a_q32.html#ga5e05655f08ac72b3e0d51c4b7a030c43">PIOS_COM_TELEM_RF</a> = com_id;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <a class="code" href="pios__hal_8h.html#ab150703d15175368d90a7ffb725de42b">PIOS_COM_TELEM_SER</a> = com_id;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_OMNIP</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor"></span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(drv_name, <span class="stringliteral">&quot;omnip&quot;</span>)) {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <a class="code" href="group___p_i_o_s___o_m_n_i_p.html#ga67900e82f01e6898a3b0890213007a77">omnip_dev_t</a> dontcare;</div>
@@ -764,253 +764,255 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;HW serial number-- hex: %s\n&quot;</span>, ser_text);</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        }</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_RTC</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___r_t_c.html#ga0edcdea74daf967c3ebbf09d14f21f95">PIOS_RTC_Init</a>();</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;Pseudo-RTC started\n&quot;</span>);</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="preprocessor">#if !(defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="preprocessor"></span>        <span class="keyword">struct </span>sigaction sa_int = {</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                .sa_sigaction = sigint_handler,</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                .sa_flags = SA_SIGINFO,</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        };</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordtype">int</span> rc = sigaction(SIGINT, &amp;sa_int, NULL);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        assert(rc == 0);</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        <span class="keywordflow">if</span> (debug_fpe) {</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                <span class="keyword">struct </span>sigaction sa_fpe = {</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                        .sa_sigaction = sigfpe_handler,</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                        .sa_flags = SA_SIGINFO,</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                };</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                rc = sigaction(SIGFPE, &amp;sa_fpe, NULL);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                assert(rc == 0);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                <span class="comment">// Underflow is fairly harmless, do we even care in debug</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                <span class="comment">// mode?</span></div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="preprocessor">#ifndef __APPLE__</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="preprocessor"></span>                feenableexcept(FE_DIVBYZERO | FE_UNDERFLOW | FE_OVERFLOW |</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                        FE_INVALID);</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="preprocessor"></span>                <span class="comment">// XXX need the right magic</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;UNABLE TO DBEUG FPE ON OSX!\n&quot;</span>);</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                exit(1);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="comment">/* TODO: initialize random number generator */</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_RTC</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="preprocessor"></span>        <a class="code" href="group___p_i_o_s___r_t_c.html#ga0edcdea74daf967c3ebbf09d14f21f95">PIOS_RTC_Init</a>();</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <a class="code" href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;Pseudo-RTC started\n&quot;</span>);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;<span class="preprocessor">#if !(defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="preprocessor"></span>        <span class="keyword">struct </span>sigaction sa_int = {</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                .sa_sigaction = sigint_handler,</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                .sa_flags = SA_SIGINFO,</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        };</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordtype">int</span> rc = sigaction(SIGINT, &amp;sa_int, NULL);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        assert(rc == 0);</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">if</span> (debug_fpe) {</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                <span class="keyword">struct </span>sigaction sa_fpe = {</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                        .sa_sigaction = sigfpe_handler,</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                        .sa_flags = SA_SIGINFO,</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                };</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                rc = sigaction(SIGFPE, &amp;sa_fpe, NULL);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                assert(rc == 0);</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                <span class="comment">// Underflow is fairly harmless, do we even care in debug</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                <span class="comment">// mode?</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="preprocessor">#ifndef __APPLE__</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor"></span>                feenableexcept(FE_DIVBYZERO | FE_UNDERFLOW | FE_OVERFLOW |</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                        FE_INVALID);</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="preprocessor"></span>                <span class="comment">// XXX need the right magic</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                <a class="code" href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;UNABLE TO DBEUG FPE ON OSX!\n&quot;</span>);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                exit(1);</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;{</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <span class="keywordtype">char</span> *argv[128];</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="comment">/* Sigh, ensure NULL termination of array like execvpe(3) expects*/</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="keywordtype">int</span> num = saved_argc;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">if</span> (num &gt; 128) {</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                num = 127;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        }</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; num; i++) {</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = saved_argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>];</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        }</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2acb35c64cd66c4e731cea5a2c855de0">PIOS_SYS_Reset</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;{</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordtype">char</span> *argv[128];</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="comment">/* Sigh, ensure NULL termination of array like execvpe(3) expects*/</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="keywordtype">int</span> num = saved_argc;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a> = 0;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <span class="keywordflow">if</span> (num &gt; 128) {</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                num = 127;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        }</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; num; i++) {</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = saved_argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>];</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        }</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="comment">// Close out all fds-- open or not.</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="comment">// We don&#39;t want our existing listening socket leaking, etc.</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="comment">// Note that we should really be using FD_CLOEXEC, but it&#39;s really</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="comment">// tricky.. and even if we do, we should leave this to be safe.</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">for</span> (i = STDERR_FILENO+1; i &lt; 1024; i++) {</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                close(i);</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        }</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        execvp(argv[0], argv);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        argv[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="comment">// Close out all fds-- open or not.</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="comment">// We don&#39;t want our existing listening socket leaking, etc.</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="comment">// Note that we should really be using FD_CLOEXEC, but it&#39;s really</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="comment">// tricky.. and even if we do, we should leave this to be safe.</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="keywordflow">for</span> (i = STDERR_FILENO+1; i &lt; 1024; i++) {</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                close(i);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        }</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        abort();</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        execvp(argv[0], argv);</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;}</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint64_t find_ser_in_buf(<span class="keyword">const</span> <span class="keywordtype">char</span> *buf)</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;{</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <span class="keywordtype">char</span> *serial = strstr(buf, <span class="stringliteral">&quot;Serial&quot;</span>);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keywordflow">if</span> (!serial) {</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        }</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        serial += 6;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        abort();</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;}</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint64_t find_ser_in_buf(<span class="keyword">const</span> <span class="keywordtype">char</span> *buf)</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;{</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keywordtype">char</span> *serial = strstr(buf, <span class="stringliteral">&quot;Serial&quot;</span>);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordflow">if</span> (!serial) {</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        }</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordflow">while</span> ((*serial) &amp;&amp; (isblank(*serial))) {</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                serial++;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        }</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        <span class="keywordflow">if</span> (*serial != <span class="charliteral">&#39;:&#39;</span>) {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        }</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        serial++;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        serial += 6;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <span class="keywordflow">while</span> ((*serial) &amp;&amp; (isblank(*serial))) {</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                serial++;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        }</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <span class="keywordflow">if</span> (*serial != <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        }</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">while</span> (isblank(*serial)) {</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                serial++;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        }</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordtype">char</span> *endptr;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        serial++;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">while</span> (isblank(*serial)) {</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                serial++;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        uint64_t ret = strtoull(serial, &amp;endptr, 16);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <span class="keywordtype">char</span> *endptr;</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        }</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keywordflow">if</span> (*endptr != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; (!*endptr)) {</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        }</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;}</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<a class="code" href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a>(<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> &lt; 12, cpuSerLen);</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        uint64_t ret = strtoull(serial, &amp;endptr, 16);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        <span class="keywordflow">if</span> (*endptr != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; (!*endptr)) {</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        }</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;}</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a>(uint8_t *array)</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;{</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        uint8_t buf[8192];</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordtype">int</span> fd;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordtype">int</span> len;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        uint64_t ret = 0;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<a class="code" href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a>(<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> &lt; 12, cpuSerLen);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a>(uint8_t *array)</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;{</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        uint8_t buf[8192];</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="keywordtype">int</span> fd;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keywordtype">int</span> len;</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        fd = open(<span class="stringliteral">&quot;/proc/cpuinfo&quot;</span>, O_RDONLY);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        uint64_t ret = 0;</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordflow">if</span> (fd &gt;= 0) {</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                len = read(fd, buf, <span class="keyword">sizeof</span>(buf) - 1);</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                <span class="keywordflow">if</span> (len &gt;= 0) {</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                        buf[len] = 0;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                        ret = find_ser_in_buf((<span class="keyword">const</span> <span class="keywordtype">char</span> *) buf);</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                }</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                close(fd);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        fd = open(<span class="stringliteral">&quot;/proc/cpuinfo&quot;</span>, O_RDONLY);</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        <span class="keywordflow">if</span> (fd &gt;= 0) {</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                len = read(fd, buf, <span class="keyword">sizeof</span>(buf) - 1);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                <span class="keywordflow">if</span> (len &gt;= 0) {</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                        buf[len] = 0;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                        ret = find_ser_in_buf((<span class="keyword">const</span> <span class="keywordtype">char</span> *) buf);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                }</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                <span class="keywordflow">if</span> (ret) {</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                        array[0] = <span class="charliteral">&#39;C&#39;</span>;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                        array[1] = <span class="charliteral">&#39;P&#39;</span>;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                        array[2] = <span class="charliteral">&#39;U&#39;</span>;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                        array[3] = <span class="charliteral">&#39;:&#39;</span>;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 4; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                                array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = ret &gt;&gt; 56;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                                ret &lt;&lt;= 8;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                        }</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                }</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        }</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        fd = open(<span class="stringliteral">&quot;/sys/class/dmi/id/board_serial&quot;</span>, O_RDONLY);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                close(fd);</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                <span class="keywordflow">if</span> (ret) {</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                        array[0] = <span class="charliteral">&#39;C&#39;</span>;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                        array[1] = <span class="charliteral">&#39;P&#39;</span>;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                        array[2] = <span class="charliteral">&#39;U&#39;</span>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                        array[3] = <span class="charliteral">&#39;:&#39;</span>;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 4; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                                array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = ret &gt;&gt; 56;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                                ret &lt;&lt;= 8;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                        }</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                }</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        }</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <span class="keywordflow">if</span> (fd &gt;= 0) {</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                len = read(fd, buf, <span class="keyword">sizeof</span>(buf) - 1);</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                <span class="keywordflow">if</span> (len &gt; 0) {</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                        <span class="comment">/* Chomp newline */</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                        <span class="keywordflow">if</span> (buf[len-1] == <span class="charliteral">&#39;\n&#39;</span>) {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                                len--;</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                        }</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                        <span class="keywordflow">if</span> (len &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>) {</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                                memcpy(array, buf, len);</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = len; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                                                i++) {</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                                        array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                                }</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                                <span class="comment">/* Too long to all fit in.  So put the prefix of the</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;<span class="comment">                                 * serial number, and then hash the rest.</span></div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="comment">                                 */</span></div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                                memcpy(array, buf, <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4);</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                                <a class="code" href="struct_s_h_a1___c_t_x.html">SHA1_CTX</a> ctx;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                                <a class="code" href="sha1_8c.html#ac76f432bbb54af1e40dec5d695e5c6dc">sha1_init</a>(&amp;ctx);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                                <a class="code" href="sha1_8c.html#a5eef8fbc279a72b61ca07fae2ce3f9d7">sha1_update</a>(&amp;ctx,</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                                        buf + <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4,</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                                        len - <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> + 4);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                                uint8_t hash[<a class="code" href="sha1_8h.html#a4be887a15639aa78e6a129b9c8f4d2b9">SHA1_BLOCK_SIZE</a>];</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                                <a class="code" href="sha1_8c.html#a81c0538c322ff66ca03b753ca8733782">sha1_final</a>(&amp;ctx, hash);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4] = hash[0];</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 3] = hash[1];</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 2] = hash[2];</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 1] = hash[3];</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                        }</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                }</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        }</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        <span class="comment">/* Last resort: all zeroes */</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        }</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;}</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">char</span> nibble_to_hex(uint8_t c)</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;{</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keywordflow">if</span> (c &lt; 10) {</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                <span class="keywordflow">return</span> c + <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        }</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="keywordflow">return</span> c + <span class="charliteral">&#39;A&#39;</span> - 10;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;}</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;<a class="code" href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a>(<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> * 2 != <a class="code" href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a>,</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                serLenMismatch);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da">PIOS_SYS_SerialNumberGet</a>(<span class="keywordtype">char</span> *str)</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;{</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        uint8_t array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>];</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        <span class="keywordtype">int</span> ret = <a class="code" href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a>(array);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        fd = open(<span class="stringliteral">&quot;/sys/class/dmi/id/board_serial&quot;</span>, O_RDONLY);</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <span class="keywordflow">if</span> (fd &gt;= 0) {</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                len = read(fd, buf, <span class="keyword">sizeof</span>(buf) - 1);</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                <span class="keywordflow">if</span> (len &gt; 0) {</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                        <span class="comment">/* Chomp newline */</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                        <span class="keywordflow">if</span> (buf[len-1] == <span class="charliteral">&#39;\n&#39;</span>) {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                                len--;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                        }</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                        <span class="keywordflow">if</span> (len &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>) {</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                                memcpy(array, buf, len);</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = len; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                                                i++) {</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                                        array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                                }</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                                <span class="comment">/* Too long to all fit in.  So put the prefix of the</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;<span class="comment">                                 * serial number, and then hash the rest.</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="comment">                                 */</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                                memcpy(array, buf, <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4);</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                                <a class="code" href="struct_s_h_a1___c_t_x.html">SHA1_CTX</a> ctx;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                                <a class="code" href="sha1_8c.html#ac76f432bbb54af1e40dec5d695e5c6dc">sha1_init</a>(&amp;ctx);</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                                <a class="code" href="sha1_8c.html#a5eef8fbc279a72b61ca07fae2ce3f9d7">sha1_update</a>(&amp;ctx,</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                                        buf + <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4,</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                                        len - <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> + 4);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                                uint8_t hash[<a class="code" href="sha1_8h.html#a4be887a15639aa78e6a129b9c8f4d2b9">SHA1_BLOCK_SIZE</a>];</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                                <a class="code" href="sha1_8c.html#a81c0538c322ff66ca03b753ca8733782">sha1_final</a>(&amp;ctx, hash);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 4] = hash[0];</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 3] = hash[1];</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 2] = hash[2];</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                                array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> - 1] = hash[3];</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                        }</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                }</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        }</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="comment">/* Last resort: all zeroes */</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                array[<a class="code" href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>] = 0;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        }</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;}</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">char</span> nibble_to_hex(uint8_t c)</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;{</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">if</span> (c &lt; 10) {</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                <span class="keywordflow">return</span> c + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        }</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="keywordflow">return</span> c + <span class="charliteral">&#39;A&#39;</span> - 10;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;}</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;<a class="code" href="morsel_8c.html#aebddcae7f50eeca200c88ea15dd27094">DONT_BUILD_IF</a>(<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a> * 2 != <a class="code" href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a>,</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                serLenMismatch);</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;int32_t <a class="code" href="group___p_i_o_s___s_y_s.html#ga06a0b401f67617fc771fa8b32d43e7da">PIOS_SYS_SerialNumberGet</a>(<span class="keywordtype">char</span> *str)</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;{</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        uint8_t array[<a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>];</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <span class="keywordflow">if</span> (ret) {</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        }</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                str[i * 2]     = nibble_to_hex(array[i] &gt;&gt; 4);</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                str[i * 2 + 1] = nibble_to_hex(array[i] &amp; 0xf);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        }</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        str[<a class="code" href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a>] = 0;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <span class="keywordtype">int</span> ret = <a class="code" href="group___p_i_o_s___s_y_s.html#ga2e1f3aaafed672c51239e5a84d752b1f">PIOS_SYS_SerialNumberGetBinary</a>(array);</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        <span class="keywordflow">if</span> (ret) {</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        }</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a>; i++) {</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                str[i * 2]     = nibble_to_hex(array[i] &gt;&gt; 4);</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                str[i * 2 + 1] = nibble_to_hex(array[i] &amp; 0xf);</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        }</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <span class="comment">/* No error */</span></div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;}</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;{</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;}</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;{</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;}</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        str[<a class="code" href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a>] = 0;</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        <span class="comment">/* No error */</span></div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;}</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;{</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;}</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="group___p_i_o_s___s_y_s.html#ga0e7c8023b675c51e2b70d4c41035fca4">PIOS_SYS_OsStackUnused</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;{</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;}</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__spi__cfg_html_a69fc950007087c1670baf71ebfe61d5d"><div class="ttname"><a href="structpios__spi__cfg.html#a69fc950007087c1670baf71ebfe61d5d">pios_spi_cfg::base_path</a></div><div class="ttdeci">char base_path[PATH_MAX]</div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__posix__priv_8h_source.html#l00012">pios_spi_posix_priv.h:12</a></div></div>
 <div class="ttc" id="pios__omnip_8h_html"><div class="ttname"><a href="pios__omnip_8h.html">pios_omnip.h</a></div></div>
 <div class="ttc" id="pios__ms5611__priv_8h_html"><div class="ttname"><a href="pios__ms5611__priv_8h.html">pios_ms5611_priv.h</a></div><div class="ttdoc">MS5611 functions header. </div></div>
@@ -1025,7 +1027,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="pios__serial__priv_8h_html_a21381275290d0ef9e23bf65d1baec3da"><div class="ttname"><a href="pios__serial__priv_8h.html#a21381275290d0ef9e23bf65d1baec3da">PIOS_SERIAL_InitFromFd</a></div><div class="ttdeci">int32_t PIOS_SERIAL_InitFromFd(uintptr_t *serial_id, int readfd, int writefd, bool dont_touch_line)</div></div>
 <div class="ttc" id="structpios__ms5611__cfg_html_a9e5737bd6a7bb20da4ac013fb0726845"><div class="ttname"><a href="structpios__ms5611__cfg.html#a9e5737bd6a7bb20da4ac013fb0726845">pios_ms5611_cfg::temperature_interleaving</a></div><div class="ttdeci">uint32_t temperature_interleaving</div><div class="ttdoc">How many samples of pressure for each temperature measurement. </div><div class="ttdef"><b>Definition:</b> <a href="pios__ms5611__priv_8h_source.html#l00049">pios_ms5611_priv.h:49</a></div></div>
 <div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>
-<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga63b3a99ba0001c1a79a69bf39afecf8b"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga63b3a99ba0001c1a79a69bf39afecf8b">PIOS_HAL_ConfigureExternalBaro</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalBaro(HwSharedExtBaroOptions baro, pios_i2c_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01355">pios_hal.c:1355</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga63b3a99ba0001c1a79a69bf39afecf8b"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga63b3a99ba0001c1a79a69bf39afecf8b">PIOS_HAL_ConfigureExternalBaro</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalBaro(HwSharedExtBaroOptions baro, pios_i2c_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01235">pios_hal.c:1235</a></div></div>
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_gad0461f7e88780d03da011b938d5de887"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#gad0461f7e88780d03da011b938d5de887">PIOS_BMM150_SPI_Init</a></div><div class="ttdeci">int32_t PIOS_BMM150_SPI_Init(pios_bmm150_dev_t *dev, pios_spi_t spi_id, uint32_t slave_mag, const struct pios_bmm150_cfg *cfg)</div><div class="ttdoc">Initialize the BMM-xxxx 6/9-axis sensor on SPI. </div></div>
 <div class="ttc" id="pios__fileout__priv_8h_html_a44c0a85dffa2a9f2a424935155f7e895"><div class="ttname"><a href="pios__fileout__priv_8h.html#a44c0a85dffa2a9f2a424935155f7e895">PIOS_FILEOUT_TX_BUFFER_SIZE</a></div><div class="ttdeci">#define PIOS_FILEOUT_TX_BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="pios__fileout__priv_8h_source.html#l00037">pios_fileout_priv.h:37</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_i_g_h_t_g_e_a_r_html_ga8f27923734cafdfda2dccfe27c8bc4ca"><div class="ttname"><a href="group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html#ga8f27923734cafdfda2dccfe27c8bc4ca">PIOS_FLIGHTGEAR_Init</a></div><div class="ttdeci">int32_t PIOS_FLIGHTGEAR_Init(flightgear_dev_t *dev, uint16_t port)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flightgear_8c_source.html#l00162">pios_flightgear.c:162</a></div></div>
@@ -1036,7 +1038,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="pios__flightgear_8h_html"><div class="ttname"><a href="pios__flightgear_8h.html">pios_flightgear.h</a></div><div class="ttdoc">FlightGear driver header. </div></div>
 <div class="ttc" id="group___p_i_o_s___modules_html_ga039145f6fcbc2953d363dc6dc7ad73ea"><div class="ttname"><a href="group___p_i_o_s___modules.html#ga039145f6fcbc2953d363dc6dc7ad73ea">PIOS_Modules_Enable</a></div><div class="ttdeci">void PIOS_Modules_Enable(enum pios_modules module)</div><div class="ttdef"><b>Definition:</b> <a href="pios__modules_8c_source.html#l00034">pios_modules.c:34</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
-<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga968645163d5add29facfd6bdc32cb3bd"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalMag(HwSharedMagOptions mag, HwSharedMagOrientationOptions orientation, pios_i2c_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01411">pios_hal.c:1411</a></div></div>
+<div class="ttc" id="group___p_i_o_s___h_a_l_html_ga968645163d5add29facfd6bdc32cb3bd"><div class="ttname"><a href="group___p_i_o_s___h_a_l.html#ga968645163d5add29facfd6bdc32cb3bd">PIOS_HAL_ConfigureExternalMag</a></div><div class="ttdeci">int PIOS_HAL_ConfigureExternalMag(HwSharedMagOptions mag, HwSharedMagOrientationOptions orientation, pios_i2c_t *i2c_id, const struct pios_i2c_adapter_cfg *i2c_cfg)</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8c_source.html#l01291">pios_hal.c:1291</a></div></div>
 <div class="ttc" id="pios__adc__priv_8h_html"><div class="ttname"><a href="pios__adc__priv_8h.html">pios_adc_priv.h</a></div><div class="ttdoc">ADC private definitions. </div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga47eb865f372e29cffdc77c25eed2e15f"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga47eb865f372e29cffdc77c25eed2e15f">PIOS_SYS_SERIAL_NUM_BINARY_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_BINARY_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00036">pios_sys.h:36</a></div></div>
@@ -1047,13 +1049,14 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="group___p_i_o_s___b_m_x055_html_ggaff22ef86d336d60bec130dbec43b0a41a7afb37e007f0484fe04fb70081a82711"><div class="ttname"><a href="group___p_i_o_s___b_m_x055.html#ggaff22ef86d336d60bec130dbec43b0a41a7afb37e007f0484fe04fb70081a82711">PIOS_BMM_TOP_90DEG</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150_8h_source.html#l00035">pios_bmm150.h:35</a></div></div>
 <div class="ttc" id="structpios__ms5611__cfg_html"><div class="ttname"><a href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a></div><div class="ttdoc">Configuration structure for the MS5611 driver. </div><div class="ttdef"><b>Definition:</b> <a href="pios__ms5611__priv_8h_source.html#l00043">pios_ms5611_priv.h:43</a></div></div>
 <div class="ttc" id="posix_2inc_2pios__i2c__priv_8h_html_a4638989ec4e4f44464061eb000f4d702"><div class="ttname"><a href="posix_2inc_2pios__i2c__priv_8h.html#a4638989ec4e4f44464061eb000f4d702">PIOS_I2C_Init</a></div><div class="ttdeci">int32_t PIOS_I2C_Init(pios_i2c_t *i2c_id, const char *path)</div></div>
+<div class="ttc" id="pios__hal_8h_html_ab150703d15175368d90a7ffb725de42b"><div class="ttname"><a href="pios__hal_8h.html#ab150703d15175368d90a7ffb725de42b">PIOS_COM_TELEM_SER</a></div><div class="ttdeci">#define PIOS_COM_TELEM_SER</div><div class="ttdef"><b>Definition:</b> <a href="pios__hal_8h_source.html#l00058">pios_hal.h:58</a></div></div>
 <div class="ttc" id="structpios__ms5611__cfg_html_a07e19545d4961ed113e3413ad0c4965c"><div class="ttname"><a href="structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c">pios_ms5611_cfg::oversampling</a></div><div class="ttdeci">enum pios_ms5611_osr oversampling</div><div class="ttdef"><b>Definition:</b> <a href="pios__ms5611__priv_8h_source.html#l00046">pios_ms5611_priv.h:46</a></div></div>
-<div class="ttc" id="group___sim_html_ga32c0f54785c0988feeea5771f412d22a"><div class="ttname"><a href="group___sim.html#ga32c0f54785c0988feeea5771f412d22a">PIOS_COM_MSP</a></div><div class="ttdeci">#define PIOS_COM_MSP</div><div class="ttdef"><b>Definition:</b> <a href="targets_2flightd_2fw_2pios__board_8h_source.html#l00067">pios_board.h:67</a></div></div>
+<div class="ttc" id="group___sim_html_ga32c0f54785c0988feeea5771f412d22a"><div class="ttname"><a href="group___sim.html#ga32c0f54785c0988feeea5771f412d22a">PIOS_COM_MSP</a></div><div class="ttdeci">#define PIOS_COM_MSP</div><div class="ttdef"><b>Definition:</b> <a href="targets_2flightd_2fw_2pios__board_8h_source.html#l00066">pios_board.h:66</a></div></div>
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_ga1e93fbf23a8e6780569ad5de1668db17"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#ga1e93fbf23a8e6780569ad5de1668db17">PIOS_SYS_SERIAL_NUM_ASCII_LEN</a></div><div class="ttdeci">#define PIOS_SYS_SERIAL_NUM_ASCII_LEN</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__sys_8h_source.html#l00037">pios_sys.h:37</a></div></div>
 <div class="ttc" id="pios__spi__posix__priv_8h_html"><div class="ttname"><a href="pios__spi__posix__priv_8h.html">pios_spi_posix_priv.h</a></div></div>
-<div class="ttc" id="group___a_q32_html_ga88f1b74712df62b9970b6cbc6bb262e9"><div class="ttname"><a href="group___a_q32.html#ga88f1b74712df62b9970b6cbc6bb262e9">PIOS_COM_LIGHTTELEMETRY</a></div><div class="ttdeci">#define PIOS_COM_LIGHTTELEMETRY</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00121">pios_board.h:121</a></div></div>
+<div class="ttc" id="group___a_q32_html_ga88f1b74712df62b9970b6cbc6bb262e9"><div class="ttname"><a href="group___a_q32.html#ga88f1b74712df62b9970b6cbc6bb262e9">PIOS_COM_LIGHTTELEMETRY</a></div><div class="ttdeci">#define PIOS_COM_LIGHTTELEMETRY</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00120">pios_board.h:120</a></div></div>
 <div class="ttc" id="group___p_i_o_s___modules_html_gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00"><div class="ttname"><a href="group___p_i_o_s___modules.html#gga0c75b61e067ee5be01eb6682ce7c8f60a6eb98eb4e2f76e2a36488f79768b6a00">PIOS_MODULE_UAVOLIGHTTELEMETRYBRIDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__modules_8h_source.html#l00040">pios_modules.h:40</a></div></div>
-<div class="ttc" id="group___a_q32_html_gad6409f51ab61c676f1a82e4d50b1fd68"><div class="ttname"><a href="group___a_q32.html#gad6409f51ab61c676f1a82e4d50b1fd68">PIOS_COM_OPENLOG</a></div><div class="ttdeci">#define PIOS_COM_OPENLOG</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00123">pios_board.h:123</a></div></div>
+<div class="ttc" id="group___a_q32_html_gad6409f51ab61c676f1a82e4d50b1fd68"><div class="ttname"><a href="group___a_q32.html#gad6409f51ab61c676f1a82e4d50b1fd68">PIOS_COM_OPENLOG</a></div><div class="ttdeci">#define PIOS_COM_OPENLOG</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00122">pios_board.h:122</a></div></div>
 <div class="ttc" id="group___quanton_html_gacbbeed759a2489db90c23f94394b5e7b"><div class="ttname"><a href="group___quanton.html#gacbbeed759a2489db90c23f94394b5e7b">external_i2c_adapter_id</a></div><div class="ttdeci">pios_i2c_t external_i2c_adapter_id</div><div class="ttdef"><b>Definition:</b> <a href="quanton_2fw_2pios__board_8c_source.html#l00053">pios_board.c:53</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_y_i_n_g_p_i_o_html_ga80118359fe8586c63fe5e7d397af3a1b"><div class="ttname"><a href="group___p_i_o_s___f_l_y_i_n_g_p_i_o.html#ga80118359fe8586c63fe5e7d397af3a1b">PIOS_FLYINGPIO_SPI_Init</a></div><div class="ttdeci">int32_t PIOS_FLYINGPIO_SPI_Init(pios_flyingpio_dev_t *dev, pios_spi_t spi_id, uint32_t slave_idx)</div><div class="ttdoc">Initialize the FlyingPIO programmed-IO expander. </div></div>
 <div class="ttc" id="pios__bmm150__priv_8h_html"><div class="ttname"><a href="pios__bmm150__priv_8h.html">pios_bmm150_priv.h</a></div></div>
@@ -1068,7 +1071,6 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="pios__flash__posix__priv_8h_html"><div class="ttname"><a href="pios__flash__posix__priv_8h.html">pios_flash_posix_priv.h</a></div></div>
 <div class="ttc" id="group___p_i_o_s___o_m_n_i_p_html_ga6961b6133bff93468c53ed2f465c515b"><div class="ttname"><a href="group___p_i_o_s___o_m_n_i_p.html#ga6961b6133bff93468c53ed2f465c515b">PIOS_OMNIP_Init</a></div><div class="ttdeci">int32_t PIOS_OMNIP_Init(omnip_dev_t *dev, const struct pios_com_driver *driver, uintptr_t lower_id)</div><div class="ttdoc">Allocate and initialise OMNIP device. </div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
-<div class="ttc" id="group___a_q32_html_ga5e05655f08ac72b3e0d51c4b7a030c43"><div class="ttname"><a href="group___a_q32.html#ga5e05655f08ac72b3e0d51c4b7a030c43">PIOS_COM_TELEM_RF</a></div><div class="ttdeci">#define PIOS_COM_TELEM_RF</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00115">pios_board.h:115</a></div></div>
 <div class="ttc" id="pios__serial__priv_8h_html"><div class="ttname"><a href="pios__serial__priv_8h.html">pios_serial_priv.h</a></div><div class="ttdoc">SERIAL private definitions. </div></div>
 <div class="ttc" id="group___p_i_o_s___r_t_c_html_ga0edcdea74daf967c3ebbf09d14f21f95"><div class="ttname"><a href="group___p_i_o_s___r_t_c.html#ga0edcdea74daf967c3ebbf09d14f21f95">PIOS_RTC_Init</a></div><div class="ttdeci">void PIOS_RTC_Init(const struct pios_rtc_cfg *cfg)</div></div>
 <div class="ttc" id="pios__serial__priv_8h_html_a69d61c65fae2028c70135677e630d139"><div class="ttname"><a href="pios__serial__priv_8h.html#a69d61c65fae2028c70135677e630d139">pios_serial_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_serial_com_driver</div></div>
@@ -1095,7 +1097,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="group___p_i_o_s___s_y_s_html_gabe3d4185af99f853a9970f58420f6595"><div class="ttname"><a href="group___p_i_o_s___s_y_s.html#gabe3d4185af99f853a9970f58420f6595">PIOS_SYS_IrqStackUnused</a></div><div class="ttdeci">size_t PIOS_SYS_IrqStackUnused(void)</div></div>
 <div class="ttc" id="sha1_8c_html_a81c0538c322ff66ca03b753ca8733782"><div class="ttname"><a href="sha1_8c.html#a81c0538c322ff66ca03b753ca8733782">sha1_final</a></div><div class="ttdeci">void sha1_final(SHA1_CTX *ctx, uint8_t hash[])</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8c_source.html#l00108">sha1.c:108</a></div></div>
 <div class="ttc" id="structpios__tcp__cfg_html_a480f68a9cbfca2d202f307202c9a1378"><div class="ttname"><a href="structpios__tcp__cfg.html#a480f68a9cbfca2d202f307202c9a1378">pios_tcp_cfg::ip</a></div><div class="ttdeci">const char * ip</div><div class="ttdef"><b>Definition:</b> <a href="pios__tcp__priv_8h_source.html#l00052">pios_tcp_priv.h:52</a></div></div>
-<div class="ttc" id="group___p_i_o_s___a_d_c_html_ga8a9178a11e2ccd209eed618a63eb552c"><div class="ttname"><a href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_ADC_Init(uintptr_t *adc_id, const struct pios_adc_driver *driver, uintptr_t lower_id)</div><div class="ttdoc">Initializes an ADC device. </div><div class="ttdef"><b>Definition:</b> <a href="pios__adc_8c_source.html#l00091">pios_adc.c:91</a></div></div>
+<div class="ttc" id="group___p_i_o_s___a_d_c_html_ga8a9178a11e2ccd209eed618a63eb552c"><div class="ttname"><a href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a></div><div class="ttdeci">int32_t PIOS_ADC_Init(uintptr_t *adc_id, const struct pios_adc_driver *driver, uintptr_t lower_id)</div></div>
 <div class="ttc" id="group___a_q32_html_gacc93b5bb2caa11a16122f6eb0c619379"><div class="ttname"><a href="group___a_q32.html#gacc93b5bb2caa11a16122f6eb0c619379">PIOS_INCLUDE_SPI</a></div><div class="ttdeci">#define PIOS_INCLUDE_SPI</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2bl_2pios__config_8h_source.html#l00036">pios_config.h:36</a></div></div>
 <div class="ttc" id="group___p_i_o_s_html_ga98631211a4a8aee62f572375d5b637be"><div class="ttname"><a href="group___p_i_o_s.html#ga98631211a4a8aee62f572375d5b637be">printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="printf-stdarg_8c_source.html#l00201">printf-stdarg.c:201</a></div></div>
 <div class="ttc" id="pios__tcp__priv_8h_html_afa0a127d6bd2c3c49858c3e21fa9dc8e"><div class="ttname"><a href="pios__tcp__priv_8h.html#afa0a127d6bd2c3c49858c3e21fa9dc8e">pios_tcp_com_driver</a></div><div class="ttdeci">const struct pios_com_driver pios_tcp_com_driver</div></div>
@@ -1106,7 +1108,7 @@ $(document).ready(function(){initNavTree('posix_2pios__sys_8c_source.html','');}
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="structpios__bmm150__cfg_html"><div class="ttname"><a href="structpios__bmm150__cfg.html">pios_bmm150_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150_8h_source.html#l00044">pios_bmm150.h:44</a></div></div>
 <div class="ttc" id="structpios__px4flow__cfg_html"><div class="ttname"><a href="structpios__px4flow__cfg.html">pios_px4flow_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__px4flow__priv_8h_source.html#l00033">pios_px4flow_priv.h:33</a></div></div>
-<div class="ttc" id="group___sim_html_ga73d02ccef77cc8bad13d281e320d7112"><div class="ttname"><a href="group___sim.html#ga73d02ccef77cc8bad13d281e320d7112">PIOS_INCLUDE_SIMSENSORS_YASIM</a></div><div class="ttdeci">#define PIOS_INCLUDE_SIMSENSORS_YASIM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2flightd_2fw_2pios__config_8h_source.html#l00116">pios_config.h:116</a></div></div>
+<div class="ttc" id="group___sim_html_ga73d02ccef77cc8bad13d281e320d7112"><div class="ttname"><a href="group___sim.html#ga73d02ccef77cc8bad13d281e320d7112">PIOS_INCLUDE_SIMSENSORS_YASIM</a></div><div class="ttdeci">#define PIOS_INCLUDE_SIMSENSORS_YASIM</div><div class="ttdef"><b>Definition:</b> <a href="targets_2flightd_2fw_2pios__config_8h_source.html#l00117">pios_config.h:117</a></div></div>
 <div class="ttc" id="group___a_q32_html_gaf3b8b1e6b618d4055bb98abcb4b16159"><div class="ttname"><a href="group___a_q32.html#gaf3b8b1e6b618d4055bb98abcb4b16159">PIOS_COM_GPS</a></div><div class="ttdeci">#define PIOS_COM_GPS</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00113">pios_board.h:113</a></div></div>
 <div class="ttc" id="pios__thread_8h_html"><div class="ttname"><a href="pios__thread_8h.html">pios_thread.h</a></div></div>
 <div class="ttc" id="structpios__bmm150__cfg_html_a67c3d1df70d0bba88ee7b8dbb4e500cb"><div class="ttname"><a href="structpios__bmm150__cfg.html#a67c3d1df70d0bba88ee7b8dbb4e500cb">pios_bmm150_cfg::orientation</a></div><div class="ttdeci">enum pios_bmm150_orientation orientation</div><div class="ttdef"><b>Definition:</b> <a href="pios__bmm150_8h_source.html#l00045">pios_bmm150.h:45</a></div></div>

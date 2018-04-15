@@ -6,6 +6,6 @@ var searchData=
   ['x_5fdot',['x_dot',['../structpios__px4flow__data.html#a8228a5c5ef0f05b151af73fd4be122be',1,'pios_px4flow_data::x_dot()'],['../group___p_i_o_s___s_e_n_s_o_r_s.html#ga1490814b888f340b9e51b047f6822ec0',1,'pios_sensor_optical_flow_data::x_dot()']]],
   ['xdot',['Xdot',['../struct_w_m_mtype___geo_magnetic_elements.html#a58fb30f1b03a7cace00a55fb28f6752f',1,'WMMtype_GeoMagneticElements']]],
   ['xfer',['xfer',['../structbl__fsm__context.html#ab0cbc9209156c7c0526454f747613840',1,'bl_fsm_context']]],
-  ['xfer_5fcont',['xfer_cont',['../structbl__messages.html#a286e6753e0d26a6a1e8d2295ecb2cea8',1,'bl_messages::xfer_cont()'],['../bl__messages_8h.html#a4ebca71a8794690a48f09f55cedcf0ea',1,'xfer_cont():&#160;bl_messages.h']]],
-  ['xfer_5fstart',['xfer_start',['../structbl__messages.html#a1c44b900fbaa7de20e47ce2d1590495f',1,'bl_messages::xfer_start()'],['../bl__messages_8h.html#ab268e0d223074055685e24fa505ce8e5',1,'xfer_start():&#160;bl_messages.h']]]
+  ['xfer_5fcont',['xfer_cont',['../structbl__messages.html#aa8cb5143e601d406e735e4e9ff616b2f',1,'bl_messages::xfer_cont()'],['../bl__messages_8h.html#a4ebca71a8794690a48f09f55cedcf0ea',1,'xfer_cont():&#160;bl_messages.h']]],
+  ['xfer_5fstart',['xfer_start',['../structbl__messages.html#ae852393821472eb65957950691843a96',1,'bl_messages::xfer_start()'],['../bl__messages_8h.html#ab268e0d223074055685e24fa505ce8e5',1,'xfer_start():&#160;bl_messages.h']]]
 ];

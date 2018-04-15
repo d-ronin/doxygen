@@ -41,6 +41,7 @@ var group___p_i_o_s___modules =
     [ "PIOS_Modules_Enable", "group___p_i_o_s___modules.html#ga039145f6fcbc2953d363dc6dc7ad73ea", null ],
     [ "PIOS_Modules_IsEnabled", "group___p_i_o_s___modules.html#gac1560fe3947f8270b373a7ea54b393dc", null ],
     [ "system_annunc_custom_string", "group___p_i_o_s___modules.html#gac374c4b31e49061afbb7dd23bcd1a3f7", null ],
+    [ "telemetry_set_inhibit", "group___p_i_o_s___modules.html#ga49a0a52f9a18c8e89df4476d7b952c96", null ],
     [ "actuator_interlock", "group___p_i_o_s___modules.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ],
     [ "modules_enabled", "group___p_i_o_s___modules.html#gac1284d23cb62644a25ef984759ddf5a4", null ]
 ];

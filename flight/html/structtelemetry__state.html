@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -130,6 +130,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab8f16fb399fc98d554059fd459a84ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87454caa79b6a5f16fb3f7d953f50f8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__mutex.html">pios_mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#ac87454caa79b6a5f16fb3f7d953f50f8">reqack_mutex</a></td></tr>
 <tr class="separator:ac87454caa79b6a5f16fb3f7d953f50f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2466b50c3af4f88b2750f09e7840ce91"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__semaphore.html">pios_semaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#a2466b50c3af4f88b2750f09e7840ce91">access_sem</a></td></tr>
+<tr class="separator:a2466b50c3af4f88b2750f09e7840ce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620826ab6103b6efa6255b6e27a9d2c1"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#a620826ab6103b6efa6255b6e27a9d2c1">request_inhibit</a></td></tr>
+<tr class="separator:a620826ab6103b6efa6255b6e27a9d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bfa5adf205c50ba61a10d7ac277cb1"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#a52bfa5adf205c50ba61a10d7ac277cb1">tx_inhibited</a></td></tr>
+<tr class="separator:a52bfa5adf205c50ba61a10d7ac277cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98263b392c02c8b13a3191f844c77971"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#a98263b392c02c8b13a3191f844c77971">rx_inhibited</a></td></tr>
+<tr class="separator:a98263b392c02c8b13a3191f844c77971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db283098560c9057e07116a4a1e84c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___u_a_v_talk.html#gaeff1721eaebd4ab306057b4017f23f36">UAVTalkConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtelemetry__state.html#a2db283098560c9057e07116a4a1e84c4">uavTalkCon</a></td></tr>
 <tr class="separator:a2db283098560c9057e07116a4a1e84c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -137,6 +145,20 @@ Data Fields</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="telemetry_8c_source.html#l00093">93</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a2466b50c3af4f88b2750f09e7840ce91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structpios__semaphore.html">pios_semaphore</a>* telemetry_state::access_sem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00105">105</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a117d825a002b8624962067ee0becced6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,6 +215,34 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a620826ab6103b6efa6255b6e27a9d2c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool telemetry_state::request_inhibit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00106">106</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98263b392c02c8b13a3191f844c77971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool telemetry_state::rx_inhibited</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00106">106</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5dd07ea97e720687eb5134c619c7d8c7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -221,6 +271,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a52bfa5adf205c50ba61a10d7ac277cb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool telemetry_state::tx_inhibited</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00106">106</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3aa3f6c1f863529438ea5abcc9dc6c0b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +309,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00105">105</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00108">108</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>

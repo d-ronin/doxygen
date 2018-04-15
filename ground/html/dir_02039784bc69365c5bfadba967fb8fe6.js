@@ -1,7 +1,7 @@
 var dir_02039784bc69365c5bfadba967fb8fe6 =
 [
-    [ "abstractwizardpage.cpp", "setupwizard_2pages_2abstractwizardpage_8cpp.html", null ],
-    [ "abstractwizardpage.h", "setupwizard_2pages_2abstractwizardpage_8h.html", null ],
+    [ "abstractwizardpage.cpp", "abstractwizardpage_8cpp.html", null ],
+    [ "abstractwizardpage.h", "abstractwizardpage_8h.html", null ],
     [ "biascalibrationpage.cpp", "biascalibrationpage_8cpp.html", null ],
     [ "biascalibrationpage.h", "biascalibrationpage_8h.html", null ],
     [ "boardtype_unknown.cpp", "boardtype__unknown_8cpp.html", null ],
@@ -32,10 +32,10 @@ var dir_02039784bc69365c5bfadba967fb8fe6 =
     [ "summarypage.h", "summarypage_8h.html", null ],
     [ "surfacepage.cpp", "surfacepage_8cpp.html", null ],
     [ "surfacepage.h", "surfacepage_8h.html", null ],
-    [ "tlendpage.cpp", "setupwizard_2pages_2tlendpage_8cpp.html", null ],
-    [ "tlendpage.h", "setupwizard_2pages_2tlendpage_8h.html", null ],
-    [ "tlstartpage.cpp", "setupwizard_2pages_2tlstartpage_8cpp.html", null ],
-    [ "tlstartpage.h", "setupwizard_2pages_2tlstartpage_8h.html", null ],
+    [ "tlendpage.cpp", "tlendpage_8cpp.html", null ],
+    [ "tlendpage.h", "tlendpage_8h.html", null ],
+    [ "tlstartpage.cpp", "tlstartpage_8cpp.html", null ],
+    [ "tlstartpage.h", "tlstartpage_8h.html", null ],
     [ "vehiclepage.cpp", "vehiclepage_8cpp.html", null ],
     [ "vehiclepage.h", "vehiclepage_8h.html", null ]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['radioprobepage_2ecpp',['radioprobepage.cpp',['../radioprobepage_8cpp.html',1,'']]],
-  ['radioprobepage_2eh',['radioprobepage.h',['../radioprobepage_8h.html',1,'']]],
   ['rawhid_2ecpp',['rawhid.cpp',['../rawhid_8cpp.html',1,'']]],
   ['rawhid_2eh',['rawhid.h',['../rawhid_8h.html',1,'']]],
   ['rawhid_5fconst_2eh',['rawhid_const.h',['../rawhid__const_8h.html',1,'']]],
@@ -18,10 +16,6 @@ var searchData=
   ['rectlatlng_2eh',['rectlatlng.h',['../rectlatlng_8h.html',1,'']]],
   ['revolution_2ecpp',['revolution.cpp',['../revolution_8cpp.html',1,'']]],
   ['revolution_2eh',['revolution.h',['../revolution_8h.html',1,'']]],
-  ['rfmbindwizard_2ecpp',['rfmbindwizard.cpp',['../rfmbindwizard_8cpp.html',1,'']]],
-  ['rfmbindwizard_2eh',['rfmbindwizard.h',['../rfmbindwizard_8h.html',1,'']]],
-  ['rfmbindwizardplugin_2ecpp',['rfmbindwizardplugin.cpp',['../rfmbindwizardplugin_8cpp.html',1,'']]],
-  ['rfmbindwizardplugin_2eh',['rfmbindwizardplugin.h',['../rfmbindwizardplugin_8h.html',1,'']]],
   ['runguard_2ecpp',['runguard.cpp',['../runguard_8cpp.html',1,'']]],
   ['runguard_2eh',['runguard.h',['../runguard_8h.html',1,'']]],
   ['runguard_5fglobal_2eh',['runguard_global.h',['../runguard__global_8h.html',1,'']]]

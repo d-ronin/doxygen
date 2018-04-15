@@ -11,7 +11,6 @@ var targets_2flightd_2fw_2pios__board_8h =
     [ "PIOS_COM_MAX_DEVS", "targets_2flightd_2fw_2pios__board_8h.html#gafd295f189e9b66da45200956eff03607", null ],
     [ "PIOS_COM_MSP", "targets_2flightd_2fw_2pios__board_8h.html#ga32c0f54785c0988feeea5771f412d22a", null ],
     [ "PIOS_COM_OPENLOG", "targets_2flightd_2fw_2pios__board_8h.html#gad6409f51ab61c676f1a82e4d50b1fd68", null ],
-    [ "PIOS_COM_TELEM_RF", "targets_2flightd_2fw_2pios__board_8h.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "targets_2flightd_2fw_2pios__board_8h.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_LED_ALARM", "targets_2flightd_2fw_2pios__board_8h.html#gae4912a499d71db827918d7908055ce05", null ],
     [ "PIOS_LED_HEARTBEAT", "targets_2flightd_2fw_2pios__board_8h.html#ga2a94396f6c828bcf3a1c79e82a3d738a", null ],
@@ -23,6 +22,6 @@ var targets_2flightd_2fw_2pios__board_8h =
     [ "pios_com_lighttelemetry_id", "targets_2flightd_2fw_2pios__board_8h.html#gaba34640b239b01884e1a4b0b3fe16c31", null ],
     [ "pios_com_msp_id", "targets_2flightd_2fw_2pios__board_8h.html#ga6690d9c86ec3d5a4194f4efe16ebc366", null ],
     [ "pios_com_openlog_id", "targets_2flightd_2fw_2pios__board_8h.html#ga952e1f17c9f32da55907c4ffc3f5cd69", null ],
-    [ "pios_com_telem_rf_id", "targets_2flightd_2fw_2pios__board_8h.html#gae48e848f715b08971e23528feee79339", null ],
+    [ "pios_com_telem_serial_id", "targets_2flightd_2fw_2pios__board_8h.html#ga2d0de5022c647a603359c8a7514c658e", null ],
     [ "pios_com_telem_usb_id", "targets_2flightd_2fw_2pios__board_8h.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ]
 ];

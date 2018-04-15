@@ -21,9 +21,6 @@ var searchData=
   ['fflastfilteredattitude',['FFlastFilteredAttitude',['../struct_camera_stab__data.html#a0e9b6f63782d0f88c8c65fa7e7ae9652',1,'CameraStab_data']]],
   ['fh',['fh',['../structpios__fileout__dev.html#a3b47f5686f3c1c369a829ce2ccb8e185',1,'pios_fileout_dev']]],
   ['fields',['fields',['../unionmorsel__packed__state.html#a712c79f888c00e4bb7e27783fc4f7eac',1,'morsel_packed_state']]],
-  ['fifo_5foverflow',['fifo_overflow',['../unionrfm22b__device__status__reg.html#ac067ec43cfe55b6c0c79c38cc3cd5e8b',1,'rfm22b_device_status_reg']]],
-  ['fifo_5funderflow',['fifo_underflow',['../unionrfm22b__device__status__reg.html#a335d5ca76a082f15dde96a613efc7b60',1,'rfm22b_device_status_reg']]],
-  ['fifo_5funderoverflow_5ferror',['fifo_underoverflow_error',['../unionrfm22b__int__status__1.html#a743e1fc0a6f409fcc758e7fc1e057df4',1,'rfm22b_int_status_1']]],
   ['file_5fheader',['file_header',['../namespaceencode__fonts.html#a77f6ab9e083920f670f4bebf89d0d684',1,'encode_fonts']]],
   ['file_5fid',['file_id',['../structstreamfs__footer.html#a42abe082c28d0238e3e464d9c36b40ea',1,'streamfs_footer::file_id()'],['../pios__streamfs_8c.html#a15475e71af8a3f99a5c78251ac0561fc',1,'file_id():&#160;pios_streamfs.c']]],
   ['file_5fopen_5freading',['file_open_reading',['../structstreamfs__state.html#a63305c4ec30b6e32692d67bac6e11afd',1,'streamfs_state']]],
@@ -75,8 +72,6 @@ var searchData=
   ['free_5faddr',['free_addr',['../structpios__heap.html#a2e4fe3ec1628d6dca8cc4de8f029794c',1,'pios_heap']]],
   ['freq0',['freq0',['../group___v_t_x_config.html#ga9416d7007d8bff8dcec3ed9a3167ce23',1,'__attribute__']]],
   ['freq1',['freq1',['../group___v_t_x_config.html#ga01c075dd85d00ee477a3a836ffbd908f',1,'__attribute__']]],
-  ['frequency_5ferror',['frequency_error',['../unionrfm22b__device__status__reg.html#ad40abd73b10b947a110d7e0f2074b295',1,'rfm22b_device_status_reg']]],
-  ['frequency_5fstep_5fsize',['frequency_step_size',['../structpios__rfm22b__dev.html#a8cc9611e61bcaf29852b83cffa87ccd6',1,'pios_rfm22b_dev']]],
   ['fs_5fid',['fs_id',['../group___unit_tests.html#gaa47f085754c3a15dd69bcfbde0d804d7',1,'LogfsTestCooked']]],
   ['fs_5fid_5fa',['fs_id_a',['../group___unit_tests.html#gadeab2644468b89d495d396f0e55524e6',1,'LogfsTestCookedMultiPart']]],
   ['fs_5fid_5fb',['fs_id_b',['../group___unit_tests.html#ga2398cf58e337f70603e12a997936f0c9',1,'LogfsTestCookedMultiPart']]],
@@ -94,7 +89,7 @@ var searchData=
   ['full_5fflag',['full_flag',['../structpios__internal__adc__cfg.html#aaf65057cc3e9e3db9c075162b8ecfe1b',1,'pios_internal_adc_cfg']]],
   ['fw',['fw',['../group___p_i_o_s___d_m_a_shot.html#ga9d3a34b025e268b244dcad9f62905294',1,'dma_buffer::fw()'],['../namespacepx__uploader.html#ae5d92eff34708b8893d1a525749758ca',1,'px_uploader.fw()']]],
   ['fw_5fbase',['fw_base',['../structpios__board__info.html#ab478e3140ec858f6347f061cf10d8cf5',1,'pios_board_info::fw_base()'],['../pios__board__info_8h.html#a3356e77d605b19f45bdc28482e4fb7f0',1,'fw_base():&#160;pios_board_info.h']]],
-  ['fw_5fcrc',['fw_crc',['../structbl__messages.html#a10d18056bdd8e6ba7a4237db2c25a149',1,'bl_messages::fw_crc()'],['../structmsg__capabilities__rep__specific.html#ab39e24535eb819b5dd4ec0c420d11c1f',1,'msg_capabilities_rep_specific::fw_crc()'],['../struct_device.html#a676a5d429497021b5ad095b527f935cc',1,'Device::FW_Crc()'],['../bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6',1,'fw_crc():&#160;bl_messages.h']]],
+  ['fw_5fcrc',['FW_Crc',['../struct_device.html#a676a5d429497021b5ad095b527f935cc',1,'Device::FW_Crc()'],['../structbl__messages.html#a10d18056bdd8e6ba7a4237db2c25a149',1,'bl_messages::fw_crc()'],['../structmsg__capabilities__rep__specific.html#ab39e24535eb819b5dd4ec0c420d11c1f',1,'msg_capabilities_rep_specific::fw_crc()'],['../bl__messages_8h.html#ad8be5f7c397289cfe6671bf6c6ec8ac6',1,'fw_crc():&#160;bl_messages.h']]],
   ['fw_5fmaxsize',['fw_maxsize',['../classpx__uploader_1_1uploader.html#af7c42c1ffa8198c562791ebdffb7185e',1,'px_uploader::uploader']]],
   ['fw_5fsize',['fw_size',['../structpios__board__info.html#a0b8e1fae0f06a06384829d6f2dfe5f20',1,'pios_board_info::fw_size()'],['../structbl__messages.html#a50b08001cff6d49c63c0d137ce2f76ce',1,'bl_messages::fw_size()'],['../structmsg__capabilities__rep__specific.html#a180295391516d9662144d8db179ebf2a',1,'msg_capabilities_rep_specific::fw_size()'],['../pios__board__info_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c',1,'fw_size():&#160;pios_board_info.h'],['../bl__messages_8h.html#af5cd6e64f27555b8896b4608e9cb0c6c',1,'fw_size():&#160;bl_messages.h']]]
 ];

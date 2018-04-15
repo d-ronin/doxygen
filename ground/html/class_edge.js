@@ -1,6 +1,6 @@
 var class_edge =
 [
-    [ "Type", "group___u_a_v_object_widget_utils.html#ggabe84f7d77a80ac487e172958c8200b57a59a3ef5ffd963601ffda52bb7bf42b3c", null ],
+    [ "Type", "group___u_a_v_object_widget_utils.html#ggac68f5590c9ffef7843f6d556e4b6961ea59a3ef5ffd963601ffda52bb7bf42b3c", null ],
     [ "Edge", "group___u_a_v_object_widget_utils.html#gaaaf462ed746395725efc1ecc8ea00ec4", null ],
     [ "~Edge", "group___u_a_v_object_widget_utils.html#ga2f37b72f044427961d6730943daf10e0", null ],
     [ "adjust", "group___u_a_v_object_widget_utils.html#gab554a765fd7a57fcdf289aa51b4df328", null ],

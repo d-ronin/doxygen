@@ -25,5 +25,6 @@ var pios__modules_8h =
     [ "PIOS_Modules_Enable", "pios__modules_8h.html#ga039145f6fcbc2953d363dc6dc7ad73ea", null ],
     [ "PIOS_Modules_IsEnabled", "pios__modules_8h.html#gac1560fe3947f8270b373a7ea54b393dc", null ],
     [ "system_annunc_custom_string", "pios__modules_8h.html#gac374c4b31e49061afbb7dd23bcd1a3f7", null ],
+    [ "telemetry_set_inhibit", "pios__modules_8h.html#ga49a0a52f9a18c8e89df4476d7b952c96", null ],
     [ "actuator_interlock", "pios__modules_8h.html#ga01b4b4c6b9d6afa6a8451f17439074d2", null ]
 ];

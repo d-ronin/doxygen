@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -103,9 +103,7 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___a_d_c.html','');});
   <div class="summary">
 <a href="#files">Files</a> &#124;
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ADC Functions<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
@@ -131,106 +129,25 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__adc__dev.html">pios_adc_dev</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsub__device__list__.html">sub_device_list_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__adc__driver.html">pios_adc_driver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gad4639b786d45b213ac842a0c4cf3e78d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#gad4639b786d45b213ac842a0c4cf3e78d">pios_adc_dev_magic</a> { <a class="el" href="group___p_i_o_s___a_d_c.html#ggad4639b786d45b213ac842a0c4cf3e78dab432edba8e4a3348b2f28cf7edf94f79">PIOS_ADC_DEV_MAGIC</a> = 0x58375169
- }</td></tr>
-<tr class="separator:gad4639b786d45b213ac842a0c4cf3e78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3f88d2b5c8038eb36d2aec1bdf982c9c"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga3f88d2b5c8038eb36d2aec1bdf982c9c">PIOS_ADC_Allocate</a> (void)</td></tr>
-<tr class="memdesc:ga3f88d2b5c8038eb36d2aec1bdf982c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates an ADC device in memory.  <a href="#ga3f88d2b5c8038eb36d2aec1bdf982c9c">More...</a><br/></td></tr>
-<tr class="separator:ga3f88d2b5c8038eb36d2aec1bdf982c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfdd6f2a96032400e8ea191d9350f89e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#gabfdd6f2a96032400e8ea191d9350f89e">PIOS_ADC_validate</a> (struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a> *dev)</td></tr>
-<tr class="memdesc:gabfdd6f2a96032400e8ea191d9350f89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the ADC device.  <a href="#gabfdd6f2a96032400e8ea191d9350f89e">More...</a><br/></td></tr>
-<tr class="separator:gabfdd6f2a96032400e8ea191d9350f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a9178a11e2ccd209eed618a63eb552c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a> (uintptr_t *<a class="el" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, const struct <a class="el" href="structpios__adc__driver.html">pios_adc_driver</a> *driver, uintptr_t lower_id)</td></tr>
-<tr class="memdesc:ga8a9178a11e2ccd209eed618a63eb552c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an ADC device.  <a href="#ga8a9178a11e2ccd209eed618a63eb552c">More...</a><br/></td></tr>
-<tr class="separator:ga8a9178a11e2ccd209eed618a63eb552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99e9080cf4eb3114f15ad00364a5b4d0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga99e9080cf4eb3114f15ad00364a5b4d0">PIOS_ADC_DevicePinGet</a> (uintptr_t <a class="el" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, uint32_t device_pin)</td></tr>
-<tr class="memdesc:ga99e9080cf4eb3114f15ad00364a5b4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ADC value of the given pin of the device.  <a href="#ga99e9080cf4eb3114f15ad00364a5b4d0">More...</a><br/></td></tr>
 <tr class="separator:ga99e9080cf4eb3114f15ad00364a5b4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f5f671e8a6057b26861ce21789f3733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga3f5f671e8a6057b26861ce21789f3733">PIOS_ADC_Available</a> (uintptr_t <a class="el" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, uint32_t device_pin)</td></tr>
-<tr class="memdesc:ga3f5f671e8a6057b26861ce21789f3733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given pin is available on the given device.  <a href="#ga3f5f671e8a6057b26861ce21789f3733">More...</a><br/></td></tr>
 <tr class="separator:ga3f5f671e8a6057b26861ce21789f3733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabc5ba93d4758f49252f94b8429e1c8a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#gaabc5ba93d4758f49252f94b8429e1c8a">PIOS_ADC_GetChannelRaw</a> (uint32_t channel)</td></tr>
-<tr class="memdesc:gaabc5ba93d4758f49252f94b8429e1c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from an ADC channel this is an abstraction of the lower devices channels are sequentially added from the lower devices available pins Warning this function is not as efficient as directly getting the device channel in the order of initialization.  <a href="#gaabc5ba93d4758f49252f94b8429e1c8a">More...</a><br/></td></tr>
 <tr class="separator:gaabc5ba93d4758f49252f94b8429e1c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2644c0d549a6795f303fbe4e667bf3d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga2644c0d549a6795f303fbe4e667bf3d1">PIOS_ADC_GetChannelVolt</a> (uint32_t channel)</td></tr>
-<tr class="memdesc:ga2644c0d549a6795f303fbe4e667bf3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from an ADC channel and returns value in voltage seen at pin this is an abstraction of the lower devices channels are sequentially added from the lower devices available pins Warning this function is not as efficient as directly getting the device channel in the order of initialization.  <a href="#ga2644c0d549a6795f303fbe4e667bf3d1">More...</a><br/></td></tr>
 <tr class="separator:ga2644c0d549a6795f303fbe4e667bf3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:gab32db3584e1b8779726fcabc7aa2dc9a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#gab32db3584e1b8779726fcabc7aa2dc9a">pios_adc_dev</a></td></tr>
-<tr class="separator:gab32db3584e1b8779726fcabc7aa2dc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3879188928794830d595d88f5be01c9"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structsub__device__list__.html">sub_device_list_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#gac3879188928794830d595d88f5be01c9">sub_device_list</a></td></tr>
-<tr class="separator:gac3879188928794830d595d88f5be01c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a9178a11e2ccd209eed618a63eb552c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___a_d_c.html#ga8a9178a11e2ccd209eed618a63eb552c">PIOS_ADC_Init</a> (uintptr_t *<a class="el" href="group___flying_p_i_o.html#ga6ad95269bc3dda039d8f335cb7520abc">adc_id</a>, const struct <a class="el" href="structpios__adc__driver.html">pios_adc_driver</a> *driver, uintptr_t lower_id)</td></tr>
+<tr class="separator:ga8a9178a11e2ccd209eed618a63eb552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Upper level Analog to Digital converter layer. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gad4639b786d45b213ac842a0c4cf3e78d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___p_i_o_s___a_d_c.html#gad4639b786d45b213ac842a0c4cf3e78d">pios_adc_dev_magic</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggad4639b786d45b213ac842a0c4cf3e78dab432edba8e4a3348b2f28cf7edf94f79"></a>PIOS_ADC_DEV_MAGIC</em>&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00032">32</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga3f88d2b5c8038eb36d2aec1bdf982c9c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a> * PIOS_ADC_Allocate </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocates an ADC device in memory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pointer</td><td>to the newly created device </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00072">72</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga3f5f671e8a6057b26861ce21789f3733"></a>
 <div class="memitem">
 <div class="memproto">
@@ -254,18 +171,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Checks if a given pin is available on the given device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adc_id</td><td>handle of the device to read </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_pin</td><td>pin to check if available </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if available </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00137">137</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
 
 </div>
 </div>
@@ -293,18 +198,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the ADC value of the given pin of the device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adc_id</td><td>pointer to the device to read from </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_pin</td><td>pin from device to be read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the value of the pin or -1 if error </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00118">118</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="gaabc5ba93d4758f49252f94b8429e1c8a"></a>
@@ -321,17 +214,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reads from an ADC channel this is an abstraction of the lower devices channels are sequentially added from the lower devices available pins Warning this function is not as efficient as directly getting the device channel in the order of initialization. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>channel to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>value of the channel or -1 if error </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00159">159</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ga2644c0d549a6795f303fbe4e667bf3d1"></a>
@@ -347,17 +229,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads from an ADC channel and returns value in voltage seen at pin this is an abstraction of the lower devices channels are sequentially added from the lower devices available pins Warning this function is not as efficient as directly getting the device channel in the order of initialization. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>channel to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>value of the channel or -1 if error </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00187">187</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
 
 </div>
 </div>
@@ -389,89 +260,6 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Initializes an ADC device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">adc_id</td><td>handle to the device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">driver</td><td>drive to use with the device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lower_id</td><td>handle to the lower level device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt; 0 if deviced initialization failed </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00091">91</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gabfdd6f2a96032400e8ea191d9350f89e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool PIOS_ADC_validate </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a> *&#160;</td>
-          <td class="paramname"><em>dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Validates the ADC device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>pointer to device structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if valid </dd></dl>
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00059">59</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="gab32db3584e1b8779726fcabc7aa2dc9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a>* <a class="el" href="structpios__adc__dev.html">pios_adc_dev</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pios__adc_8c_source.html#l00042">42</a> of file <a class="el" href="pios__adc_8c_source.html">pios_adc.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gac3879188928794830d595d88f5be01c9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structsub__device__list__.html">sub_device_list_</a>  sub_device_list</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

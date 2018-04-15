@@ -1,20 +1,8 @@
 var searchData=
 [
-  ['uavobjaccesstype',['UAVObjAccessType',['../uavobjectmanager_8h.html#a04b37fd239d7727a21668d35d11ad7df',1,'uavobjectmanager.h']]],
-  ['uavobjeventtype',['UAVObjEventType',['../uavobjectmanager_8h.html#a34a55b89fda6526f21cfdcab529d0f99',1,'uavobjectmanager.h']]],
-  ['uavobjupdatemode',['UAVObjUpdateMode',['../uavobjectmanager_8h.html#afd571f69747daf7681eb869270e27208',1,'uavobjectmanager.h']]],
-  ['uavtalkrxstate',['UAVTalkRxState',['../group___u_a_v_talk.html#ga8a49dc52ac01b5d0782811f284df691c',1,'uavtalk.h']]],
-  ['usb_5fcdc_5fdesc_5fsubtypes',['usb_cdc_desc_subtypes',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gadb2dd8c2f3bfb704ccb6629b322f8703',1,'pios_usb_defs.h']]],
-  ['usb_5fcdc_5fline_5fcoding_5fparity',['usb_cdc_line_coding_parity',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gabc1f843b2823e8539facdbfeb734a5ad',1,'pios_usb_defs.h']]],
-  ['usb_5fcdc_5fline_5fcoding_5fstop',['usb_cdc_line_coding_stop',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga233bd6f23d9895af9b693654d48af682',1,'pios_usb_defs.h']]],
-  ['usb_5fcdc_5fnotification',['usb_cdc_notification',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga43113e1b9daab7bfc6e5fe6ff65b0fc7',1,'pios_usb_defs.h']]],
-  ['usb_5fcdc_5frequests',['usb_cdc_requests',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga3544e22c57aa46b457ffbb09822caf9c',1,'pios_usb_defs.h']]],
-  ['usb_5fdesc_5ftypes',['usb_desc_types',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga15dc30e657ffe4355ba53c2254eb28b5',1,'pios_usb_defs.h']]],
-  ['usb_5fep_5fattr',['usb_ep_attr',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga15c24f2eca3cd0a9c359f4e66cb82523',1,'pios_usb_defs.h']]],
-  ['usb_5fhid_5frequests',['usb_hid_requests',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga69bf8b3c0303204ae256d0d0304e9a1a',1,'pios_usb_defs.h']]],
-  ['usb_5finterface_5fclass',['usb_interface_class',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga8c0df0a6c06d39e56e7b15ba8e9d699e',1,'pios_usb_defs.h']]],
-  ['usb_5fop_5fboard_5fids',['usb_op_board_ids',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gaa03fd2fa7b7aa69d420bfea86dc519d3',1,'pios_usb_defs.h']]],
-  ['usb_5fop_5fboard_5fmodes',['usb_op_board_modes',['../group___p_i_o_s___u_s_b___d_e_f_s.html#gafbdcb00e985ba79973c56e1da0a87635',1,'pios_usb_defs.h']]],
-  ['usb_5fstandard_5frequests',['usb_standard_requests',['../group___p_i_o_s___u_s_b___d_e_f_s.html#ga656cd9a1af7abe6ec812f6ee50b223f9',1,'pios_usb_defs.h']]],
-  ['usb_5fstring_5fdesc',['usb_string_desc',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga5a1ae5206971f0c296fa30b24e8725da',1,'pios_usbhook.h']]]
+  ['vtol_5ffsm_5fevent',['vtol_fsm_event',['../group___vtol_path_follower.html#ga0cb5a99d49a425cbdeb852658dd4f05f',1,'vtol_follower_fsm.c']]],
+  ['vtol_5ffsm_5fstate',['vtol_fsm_state',['../group___vtol_path_follower.html#gaae52e42ee6e9f92eb6ff431f3c7f7a99',1,'vtol_follower_fsm.c']]],
+  ['vtol_5fgoals',['vtol_goals',['../group___vtol_path_follower.html#gaac48ec6a7965fc739d8e41b4c4beb595',1,'vtol_follower_priv.h']]],
+  ['vtol_5fpid',['vtol_pid',['../group___vtol_path_follower.html#gaa1cc793c473ad52ad906c7feecdb3a37',1,'vtol_follower_priv.h']]],
+  ['vtxtype',['VTXTYPE',['../group___v_t_x_config.html#ga3569fa46b91e549f77a3baee0e3638b6',1,'VTXConfig.c']]]
 ];

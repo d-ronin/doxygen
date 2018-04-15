@@ -5,7 +5,6 @@ var searchData=
   ['uavo_5flist',['uavo_list',['../group___u_a_v_object_handling.html#ga41bc89103a03ee52df38e34f6c0d7935',1,'uavobjectmanager.c']]],
   ['uavomavlinkbridgetaskhandle',['uavoMavlinkBridgeTaskHandle',['../group___u_a_v_o_mavlink_bridge.html#gac39117147e02e0bf6947b739bc842381',1,'UAVOMavlinkBridge.c']]],
   ['uavtalkcon',['uavTalkCon',['../structtelemetry__state.html#a2db283098560c9057e07116a4a1e84c4',1,'telemetry_state::uavTalkCon()'],['../group___logging.html#ga81cb5e5f3ffe893707f4f80599c1904f',1,'uavTalkCon():&#160;logging.c']]],
-  ['uavtalkeventqueue',['uavtalkEventQueue',['../group___radio_com_bridge_module.html#ga05dec3b438d4b78dfcfbc34c67246f19',1,'RadioComBridgeData']]],
   ['ubloxtxck_5fa',['ubloxTxCK_A',['../group___g_p_s_module.html#gacd42795ff6042970c6a6de48f00f07e5',1,'ubx_cfg.c']]],
   ['ubloxtxck_5fb',['ubloxTxCK_B',['../group___g_p_s_module.html#ga6499bea1e512fb004a237283d802b855',1,'ubx_cfg.c']]],
   ['uint8_5f16_5fu',['uint8_16_u',['../serial__4way_8h.html#aa35c53197c8dc6d8588f0c4230facf7d',1,'serial_4way.h']]],

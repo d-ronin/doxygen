@@ -16,8 +16,6 @@ var group___p_i_o_s___h_a_l =
     [ "PIOS_COM_MSP_RX_BUF_LEN", "group___p_i_o_s___h_a_l.html#ga1b07fcd2fb7143e4cbe4c454dae96e96", null ],
     [ "PIOS_COM_MSP_TX_BUF_LEN", "group___p_i_o_s___h_a_l.html#ga678321001dfa71557e788123653f025b", null ],
     [ "PIOS_COM_OPENLOG_TX_BUF_LEN", "group___p_i_o_s___h_a_l.html#gadacbbe5c70c1cde1889fb1fae380db33", null ],
-    [ "PIOS_COM_RFM22B_RF_RX_BUF_LEN", "group___p_i_o_s___h_a_l.html#gafae65f122836cc5d5709d7525b8fc1e4", null ],
-    [ "PIOS_COM_RFM22B_RF_TX_BUF_LEN", "group___p_i_o_s___h_a_l.html#ga899b01557d204cd8cfe05254a25cfdc1", null ],
     [ "PIOS_COM_STORM32BGC_RX_BUF_LEN", "group___p_i_o_s___h_a_l.html#gab515a88eb826005906602d23e590fb11", null ],
     [ "PIOS_COM_STORM32BGC_TX_BUF_LEN", "group___p_i_o_s___h_a_l.html#gad6a7e6bafb8759a0ef15c382cbdc1b84", null ],
     [ "PIOS_COM_TBSVTXCONFIG_RX_BUF_LEN", "group___p_i_o_s___h_a_l.html#ga106b1def54d7875d1bb094ae0b9976a0", null ],

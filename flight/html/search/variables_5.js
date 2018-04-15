@@ -23,7 +23,7 @@ var searchData=
   ['encode_5fvalue',['encode_value',['../structfrsky__value__item.html#a41495522ac868df2d37fde180a91fcf9',1,'frsky_value_item']]],
   ['end_5faddr',['end_addr',['../structpios__heap.html#a42a79e2acc3c6bd6eaa8a305a57f582f',1,'pios_heap']]],
   ['end_5ftransaction',['end_transaction',['../group___p_i_o_s___f_l_a_s_h.html#ga402f673d2837c885dee54a2898cccb29',1,'pios_flash_driver']]],
-  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#a50589427ec9a275224f2ef8afd42c754',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
+  ['enter_5fdfu',['enter_dfu',['../structbl__messages.html#a629553ea50905667e3762536196540ea',1,'bl_messages::enter_dfu()'],['../bl__messages_8h.html#a19fd33d9ab0568ceedb9de4f326ee942',1,'enter_dfu():&#160;bl_messages.h']]],
   ['entry',['entry',['../struct_object_event_entry_throttled.html#a55b4d6b43b204db478e2165a94fd02b2',1,'ObjectEventEntryThrottled']]],
   ['entry_5ffn',['entry_fn',['../group___modules.html#gaee6622bae804f1c41177facffb8ca7b3',1,'vtol_fsm_transition::entry_fn()'],['../structbl__transition.html#a313c9c672fccbdb1e07b173fe4b068d7',1,'bl_transition::entry_fn()']]],
   ['entry_5foffset',['entry_offset',['../structloadable__extension.html#a44fa83b73923e63a1c3976eb4b498a57',1,'loadable_extension']]],
@@ -35,7 +35,6 @@ var searchData=
   ['erasurelocs',['ErasureLocs',['../berlekamp_8c.html#ad9992d2758ed0bca408ce97c63fed107',1,'berlekamp.c']]],
   ['error',['error',['../structpath__status.html#a673ce13b12050e471c15f386e8193ac7',1,'path_status::error()'],['../structpios__i2c__adapter__cfg.html#a5e418625b07806a90c8f5a55cc1165eb',1,'pios_i2c_adapter_cfg::error()']]],
   ['errorlocs',['ErrorLocs',['../berlekamp_8c.html#ae09cb9bf932c3f2be9e053859c764cc5',1,'berlekamp.c']]],
-  ['errors',['errors',['../structpios__rfm22b__dev.html#a538dcdf62ddc3430e172d88eb252dc0d',1,'pios_rfm22b_dev']]],
   ['es',['es',['../polarst_8c.html#a1c8e4c27784e06b5c04fe7b8c84abe56',1,'polarst.c']]],
   ['es_5fover_5f2',['es_OVER_2',['../polarst_8c.html#ab5ed32cf513d870381be60c311c07399',1,'polarst.c']]],
   ['est_5falt',['est_alt',['../structmsp__altitude.html#a1c1219ac82d3577f7ff851ff7c0e1f09',1,'msp_altitude::est_alt()'],['../msp__messages_8h.html#a2cc78cf2b385ecaec4f45725b5256961',1,'est_alt():&#160;msp_messages.h']]],
@@ -55,10 +54,8 @@ var searchData=
   ['expected',['expected',['../structmsp__bridge.html#a6a778e9de6462c93ebdcd0bf5db3f4cb',1,'msp_bridge']]],
   ['expected_5fcrc',['expected_crc',['../structbl__messages.html#ae7d52910bdf2435742a962a4f28fac75',1,'bl_messages::expected_crc()'],['../structmsg__xfer__start.html#ad4ee32f96cd036e1f07392302946dfdc',1,'msg_xfer_start::expected_crc()'],['../bl__messages_8h.html#a82957fb8e23bf7be8248680c4ff71dca',1,'expected_crc():&#160;bl_messages.h'],['../group___common_f1.html#ga94f31f25ef279f9c71f72fc084e684dc',1,'Expected_CRC():&#160;op_dfu.c']]],
   ['external_5fi2c_5fadapter_5fid',['external_i2c_adapter_id',['../group___quanton.html#gacbbeed759a2489db90c23f94394b5e7b',1,'external_i2c_adapter_id():&#160;pios_board.c'],['../group___seppuku.html#ga8b288aad98fe1c6cf3a3bb557e7158a1',1,'external_i2c_adapter_id():&#160;pios_board.c']]],
-  ['external_5finterrupt',['external_interrupt',['../unionrfm22b__int__status__1.html#aae3ffe945b944eeac748ede4b7ce1e8d',1,'rfm22b_int_status_1']]],
   ['exti',['exti',['../structpios__exti__cfg.html#a2e23a11b2a84a08143b9e5ac6a3fe36b',1,'pios_exti_cfg']]],
-  ['exti_5fcfg',['exti_cfg',['../group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa',1,'pios_bmi160_cfg::exti_cfg()'],['../structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612',1,'pios_hmc5883_cfg::exti_cfg()'],['../structpios__hmc5983__cfg.html#aeaf174c5656702b3d07ea4a9f315284c',1,'pios_hmc5983_cfg::exti_cfg()'],['../structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676',1,'pios_mpu_cfg::exti_cfg()'],['../structpios__rfm22b__cfg.html#a6bcf5f8439fb5d778aeb93e21b4a4873',1,'pios_rfm22b_cfg::exti_cfg()']]],
+  ['exti_5fcfg',['exti_cfg',['../group___p_i_o_s___b_m_i160.html#ga8672e30b8699958482a8a5885e965caa',1,'pios_bmi160_cfg::exti_cfg()'],['../structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612',1,'pios_hmc5883_cfg::exti_cfg()'],['../structpios__hmc5983__cfg.html#aeaf174c5656702b3d07ea4a9f315284c',1,'pios_hmc5983_cfg::exti_cfg()'],['../structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676',1,'pios_mpu_cfg::exti_cfg()']]],
   ['exti_5fenable',['EXTI_Enable',['../group___p_i_o_s___u_s_b_h_o_o_k.html#ga80e4a20c4f7576283232cda440c47694',1,'pios_usbhook.c']]],
-  ['extra',['extra',['../struct_u_b_x___m_o_n___v_e_r.html#af1f7473fa678fececf00d0774252fb84',1,'UBX_MON_VER']]],
-  ['ezmac_5fstatus',['ezmac_status',['../structrfm22b__device__status.html#a623b1593e03195daa52aa5b7729a4133',1,'rfm22b_device_status']]]
+  ['extra',['extra',['../struct_u_b_x___m_o_n___v_e_r.html#af1f7473fa678fececf00d0774252fb84',1,'UBX_MON_VER']]]
 ];

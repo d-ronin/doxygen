@@ -1,7 +1,6 @@
 var searchData=
 [
   ['obj_5fupdated_5fcallback',['obj_updated_callback',['../group___logging.html#gaabf90923185f524e4da3c059361a848b',1,'logging.c']]],
-  ['objectpersistenceupdatedcb',['objectPersistenceUpdatedCb',['../group___radio_com_bridge_module.html#ga2f0a2f213f513d8adb8ac50014cf1181',1,'RadioComBridge.c']]],
   ['objecttransaction',['objectTransaction',['../group___u_a_v_talk.html#gac290a55b79dee2a5c6962d1db57cbe7c',1,'uavtalk.c']]],
   ['objectupdatedcb',['objectUpdatedCb',['../group___system_module.html#gaf33480c6b247620915026fc37bb9232a',1,'systemmod.c']]],
   ['ok_5fto_5farm',['ok_to_arm',['../group___control.html#gab4d9e85efcf5f9dafe0083f8599dfcf9',1,'manualcontrol.c']]],

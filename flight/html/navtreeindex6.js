@@ -1,17 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"actuator_8c.html#ga66f2cde210a84b3f404f0dd94f8c62ea":[5,0,0,3,0,0,45],
-"actuator_8c.html#ga6e58deb47f86039abf936ab1c6f4aae9":[5,0,0,3,0,0,31],
-"actuator_8c.html#ga6e8c5a2f546ec4906bbeb387959a7b8d":[5,0,0,3,0,0,36],
-"actuator_8c.html#ga77035023a47441d44c9d72b8b28770f4":[5,0,0,3,0,0,3],
-"actuator_8c.html#ga79c4dc6a758b6ec23a2a6838b1c5322e":[5,0,0,3,0,0,27],
-"actuator_8c.html#ga7a3267eb69f45df86b17705f760373af":[5,0,0,3,0,0,22],
-"actuator_8c.html#ga7c686e3a2dfa84c375e555ee4b494c44":[5,0,0,3,0,0,43],
-"actuator_8c.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[5,0,0,3,0,0,14],
-"actuator_8c.html#ga862c7ff05fff688ff8bcdd52249aaa51":[5,0,0,3,0,0,42],
-"actuator_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[5,0,0,3,0,0,13],
-"actuator_8c.html#ga963e45ec159f02253cb5a56e6af61d76":[5,0,0,3,0,0,32],
-"actuator_8c.html#ga99a334ed9cdb3e7a7c694d5519d08d30":[5,0,0,3,0,0,50],
 "actuator_8c.html#gaa0ed8350d96aa81aa079fa3c8d5a134e":[5,0,0,3,0,0,52],
 "actuator_8c.html#gaa23ed2bf1c2252218764708ac5d8b2fb":[5,0,0,3,0,0,20],
 "actuator_8c.html#gaa8bd39157086bab21c5b5ecc55a39bdb":[5,0,0,3,0,0,53],
@@ -249,5 +237,17 @@ var NAVTREEINDEX6 =
 "battery_8c.html#ga5a5af537fbeabfb8fcb0535af26b6214":[5,0,0,3,4,0,8],
 "battery_8c.html#ga6e07fcdcbfd804ec4554e366808d38d2":[5,0,0,3,4,0,5],
 "battery_8c.html#ga7b17e88a845679ff9a532e4771050dc3":[5,0,0,3,4,0,9],
-"battery_8c.html#ga820ef3ee96badd1176c7715940a7d15b":[5,0,0,3,4,0,11]
+"battery_8c.html#ga820ef3ee96badd1176c7715940a7d15b":[5,0,0,3,4,0,11],
+"battery_8c.html#ga82dd0a9ae27bdb2c3cdd33bb7804861c":[5,0,0,3,4,0,2],
+"battery_8c.html#ga8a40b3b298ebb34ef7da48a31631e2ac":[5,0,0,3,4,0,10],
+"battery_8c.html#ga8ba6b61bd4ff2677b6d5f6be4c5d8725":[5,0,0,3,4,0,1],
+"battery_8c.html#ga8f8d2dcff8999112ce80a130faa8fa9b":[5,0,0,3,4,0,6],
+"battery_8c.html#gafde0a91566f74d38cdffe80c6635576d":[5,0,0,3,4,0,0],
+"battery_8c_source.html":[5,0,0,3,4,0],
+"berlekamp_8c.html":[5,0,0,1,5,0],
+"berlekamp_8c.html#a04c0acd83f26ff4d737fc48c11cada16":[5,0,0,1,5,0,9],
+"berlekamp_8c.html#a073add66a2de6c9dfffd6cf0d3d645f6":[5,0,0,1,5,0,1],
+"berlekamp_8c.html#a0d8487e9f148d13ed395d1362dd459b6":[5,0,0,1,5,0,17],
+"berlekamp_8c.html#a3fa9c2ccc35637876cbb5117bc52fad2":[5,0,0,1,5,0,8],
+"berlekamp_8c.html#a4069950fa80c5dd0b12ff06ba4374f27":[5,0,0,1,5,0,6]
 };

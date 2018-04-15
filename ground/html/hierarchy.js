@@ -354,7 +354,6 @@ var hierarchy =
           [ "QmlViewGadget", "class_qml_view_gadget.html", null ],
           [ "ScopeGadget", "class_scope_gadget.html", null ],
           [ "SystemHealthGadget", "class_system_health_gadget.html", null ],
-          [ "TauLinkGadget", "class_tau_link_gadget.html", null ],
           [ "TelemetrySchedulerGadget", "class_telemetry_scheduler_gadget.html", null ],
           [ "UAVObjectBrowser", "class_u_a_v_object_browser.html", null ],
           [ "uploader::UploaderGadget", "classuploader_1_1_uploader_gadget.html", null ]
@@ -431,7 +430,6 @@ var hierarchy =
         [ "QmlViewGadgetFactory", "class_qml_view_gadget_factory.html", null ],
         [ "ScopeGadgetFactory", "class_scope_gadget_factory.html", null ],
         [ "SystemHealthGadgetFactory", "class_system_health_gadget_factory.html", null ],
-        [ "TauLinkGadgetFactory", "class_tau_link_gadget_factory.html", null ],
         [ "TelemetrySchedulerGadgetFactory", "class_telemetry_scheduler_gadget_factory.html", null ],
         [ "UAVObjectBrowserFactory", "class_u_a_v_object_browser_factory.html", null ],
         [ "uploader::UploaderGadgetFactory", "classuploader_1_1_uploader_gadget_factory.html", null ]
@@ -488,14 +486,12 @@ var hierarchy =
         [ "QmlViewPlugin", "class_qml_view_plugin.html", null ],
         [ "QuantecPlugin", "class_quantec_plugin.html", null ],
         [ "RawHIDPlugin", "class_raw_h_i_d_plugin.html", null ],
-        [ "RfmBindWizardPlugin", "class_rfm_bind_wizard_plugin.html", null ],
         [ "ScopePlugin", "class_scope_plugin.html", null ],
         [ "SerialPlugin", "class_serial_plugin.html", null ],
         [ "SetupWizardPlugin", "class_setup_wizard_plugin.html", null ],
         [ "SysAlarmsMessagingPlugin", "class_sys_alarms_messaging_plugin.html", null ],
         [ "SystemHealthPlugin", "class_system_health_plugin.html", null ],
         [ "TauLabsPlugin", "class_tau_labs_plugin.html", null ],
-        [ "TauLinkPlugin", "class_tau_link_plugin.html", null ],
         [ "TelemetrySchedulerPlugin", "class_telemetry_scheduler_plugin.html", null ],
         [ "UAVObjectsPlugin", "class_u_a_v_objects_plugin.html", null ],
         [ "UAVObjectUtilPlugin", "class_u_a_v_object_util_plugin.html", null ],
@@ -678,7 +674,6 @@ var hierarchy =
         [ "SeppukuConfiguration", "class_seppuku_configuration.html", null ],
         [ "SimulationConfiguration", "class_simulation_configuration.html", null ],
         [ "Sprf3eConfiguration", "class_sprf3e_configuration.html", null ],
-        [ "TauLinkGadgetWidget", "class_tau_link_gadget_widget.html", null ],
         [ "VehicleConfig", "class_vehicle_config.html", [
           [ "ConfigCcpmWidget", "class_config_ccpm_widget.html", null ],
           [ "ConfigFixedWingWidget", "class_config_fixed_wing_widget.html", null ],
@@ -714,7 +709,6 @@ var hierarchy =
       [ "AbstractWizardPage", "class_abstract_wizard_page.html", [
         [ "BiasCalibrationPage", "class_bias_calibration_page.html", null ],
         [ "BoardtypeUnknown", "class_boardtype_unknown.html", null ],
-        [ "ConfigurePage", "class_configure_page.html", null ],
         [ "ControllerPage", "class_controller_page.html", null ],
         [ "FixedWingPage", "class_fixed_wing_page.html", null ],
         [ "HeliPage", "class_heli_page.html", null ],
@@ -724,21 +718,14 @@ var hierarchy =
         [ "NotYetImplementedPage", "class_not_yet_implemented_page.html", null ],
         [ "OutputCalibrationPage", "class_output_calibration_page.html", null ],
         [ "OutputPage", "class_output_page.html", null ],
-        [ "RadioProbePage", "class_radio_probe_page.html", [
-          [ "CoordinatedPage", "class_coordinated_page.html", null ],
-          [ "CoordinatorPage", "class_coordinator_page.html", null ]
-        ] ],
         [ "RebootPage", "class_reboot_page.html", null ],
         [ "SavePage", "class_save_page.html", null ],
         [ "SummaryPage", "class_summary_page.html", null ],
         [ "SurfacePage", "class_surface_page.html", null ],
         [ "TLEndPage", "class_t_l_end_page.html", null ],
-        [ "TLEndPage", "class_t_l_end_page.html", null ],
-        [ "TLStartPage", "class_t_l_start_page.html", null ],
         [ "TLStartPage", "class_t_l_start_page.html", null ],
         [ "VehiclePage", "class_vehicle_page.html", null ]
       ] ],
-      [ "AbstractWizardPage", "class_abstract_wizard_page.html", null ],
       [ "AutotuneBeginningPage", "class_autotune_beginning_page.html", null ],
       [ "AutotuneFinalPage", "class_autotune_final_page.html", null ],
       [ "AutotuneMeasuredPropertiesPage", "class_autotune_measured_properties_page.html", null ],

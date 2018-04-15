@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -136,19 +136,15 @@ $(document).ready(function(){initNavTree('pios__wdg_8h_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#ga2a144a73b10a9457613b2d81bfc309c6">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_ATTITUDE        0x0004</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#gae4ef7bf1e30f15798fd614ed0c7ba5fd">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_MANUAL          0x0008</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#gacf486906223201d5f03105351d5ea280">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_SENSORS         0x0010</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#ga66502e89490dc27c35986c30c8c77bdd">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_PPMINPUT        0x0040</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#ga0d7d5d3fe0ad7035e31d94be54294d23">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_SERIALRX        0x0080</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#gab2c8d788be28f13dd29c2833e672cb15">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_TELEMETRYTX     0x0100</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___p_i_o_s___w_d_g.html#ga85a1d33bdb636331b5a944404c87b524">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_WDG_TELEMETRYRX     0x0200</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga1ffcba6811cce798c0a6bc014a691dc7">PIOS_WDG_Init</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga181128f13ffdec27ea07e13fc4a4e1ab">PIOS_WDG_RegisterFlag</a>(uint16_t flag_requested);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a>(uint16_t <a class="code" href="msp__messages_8h.html#a8fac2498fe5bd106b35d43af5bc91f6f">flag</a>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga0cb157cf1f3763126ab097d9bf67658b">PIOS_WDG_GetBootupFlags</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga725a2e6282c5cb3c63d5c022204aec22">PIOS_WDG_GetActiveFlags</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga1ffcba6811cce798c0a6bc014a691dc7">PIOS_WDG_Init</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga181128f13ffdec27ea07e13fc4a4e1ab">PIOS_WDG_RegisterFlag</a>(uint16_t flag_requested);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a>(uint16_t <a class="code" href="msp__messages_8h.html#a8fac2498fe5bd106b35d43af5bc91f6f">flag</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga0cb157cf1f3763126ab097d9bf67658b">PIOS_WDG_GetBootupFlags</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;uint16_t <a class="code" href="group___p_i_o_s___w_d_g.html#ga725a2e6282c5cb3c63d5c022204aec22">PIOS_WDG_GetActiveFlags</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___p_i_o_s___w_d_g.html#ga49f0e0259a9db3551d437e5d74fd48a1">PIOS_WDG_Clear</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga181128f13ffdec27ea07e13fc4a4e1ab"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga181128f13ffdec27ea07e13fc4a4e1ab">PIOS_WDG_RegisterFlag</a></div><div class="ttdeci">bool PIOS_WDG_RegisterFlag(uint16_t flag_requested)</div><div class="ttdoc">Register a module against the watchdog. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00086">pios_wdg.c:86</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga4698d93015624e320b5c7c980c4edecd"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga4698d93015624e320b5c7c980c4edecd">PIOS_WDG_UpdateFlag</a></div><div class="ttdeci">bool PIOS_WDG_UpdateFlag(uint16_t flag)</div><div class="ttdoc">Function called by modules to indicate they are still running. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00102">pios_wdg.c:102</a></div></div>
 <div class="ttc" id="group___p_i_o_s___w_d_g_html_ga0cb157cf1f3763126ab097d9bf67658b"><div class="ttname"><a href="group___p_i_o_s___w_d_g.html#ga0cb157cf1f3763126ab097d9bf67658b">PIOS_WDG_GetBootupFlags</a></div><div class="ttdeci">uint16_t PIOS_WDG_GetBootupFlags()</div><div class="ttdoc">Returns the flags that were set at bootup. </div><div class="ttdef"><b>Definition:</b> <a href="posix_2pios__wdg_8c_source.html#l00125">pios_wdg.c:125</a></div></div>

@@ -27,7 +27,6 @@ var group___piko_b_l_x =
     [ "PIOS_COM_MAVLINK", "group___piko_b_l_x.html#gacc9b34fbd61773571dbe45ac3a3ca081", null ],
     [ "PIOS_COM_OPENLOG", "group___piko_b_l_x.html#gad6409f51ab61c676f1a82e4d50b1fd68", null ],
     [ "PIOS_COM_STORM32BGC", "group___piko_b_l_x.html#gae5a564af92abdc31f0b0d55ac78a379b", null ],
-    [ "PIOS_COM_TELEM_RF", "group___piko_b_l_x.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "group___piko_b_l_x.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "group___piko_b_l_x.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_DMA_CHANNELS", "group___piko_b_l_x.html#gad33869b41ed36381d09ca776fec2ca64", null ],

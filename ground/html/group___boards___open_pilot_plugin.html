@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">7e1292a</span>
+   &#160;<span id="projectnumber">cd7a75d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -157,10 +157,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5fa5aedb391862ff1c3e871f638d6f9b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___open_pilot_plugin.html#ga5fa5aedb391862ff1c3e871f638d6f9b">Revolution::queryMaxGyroRate</a> ()</td></tr>
 <tr class="memdesc:ga5fa5aedb391862ff1c3e871f638d6f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the board for the currently set max rate of the gyro.  <a href="#ga5fa5aedb391862ff1c3e871f638d6f9b">More...</a><br/></td></tr>
 <tr class="separator:ga5fa5aedb391862ff1c3e871f638d6f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2c7c889a364e3554503fed7f39746c7"><td class="memItemLeft" align="right" valign="top">virtual quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___open_pilot_plugin.html#gaa2c7c889a364e3554503fed7f39746c7">Revolution::getRfmID</a> ()</td></tr>
-<tr class="separator:gaa2c7c889a364e3554503fed7f39746c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae817d5bb64ac8975d9e0d1f8bf2399ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___open_pilot_plugin.html#gae817d5bb64ac8975d9e0d1f8bf2399ce">Revolution::bindRadio</a> (quint32 id, quint32 baud_rate, float rf_power, <a class="el" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a> linkMode, quint8 min, quint8 max)</td></tr>
-<tr class="separator:gae817d5bb64ac8975d9e0d1f8bf2399ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga697a10130452671c38b33842b825821b"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___open_pilot_plugin.html#ga697a10130452671c38b33842b825821b">Revolution::getAdcNames</a> ()</td></tr>
 <tr class="separator:ga697a10130452671c38b33842b825821b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d5afd738d9de98255227748771ffc38"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___boards___open_pilot_plugin.html#ga6d5afd738d9de98255227748771ffc38">Revolution::hasAnnunciator</a> (AnnunciatorType annunc)</td></tr>
@@ -170,70 +166,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Plugin to support boards by the OP project. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gae817d5bb64ac8975d9e0d1f8bf2399ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Revolution::bindRadio </td>
-          <td>(</td>
-          <td class="paramtype">quint32&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">quint32&#160;</td>
-          <td class="paramname"><em>baud_rate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rf_power</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___core_plugin.html#ga4ea096d9369e2535cca49f9ee93ba04d">Core::IBoardType::LinkMode</a>&#160;</td>
-          <td class="paramname"><em>linkMode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">quint8&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">quint8&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the coordinator ID. If set to zero this device will be a coordinator. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if successful or false if not </dd></dl>
-
-<p>Reimplemented from <a class="el" href="group___core_plugin.html#ga28f83e8abfc251aa17fdde2d08df0644">Core::IBoardType</a>.</p>
-
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00342">342</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga8f2a18257adeeb2cd190e4150cf5cc01"></a>
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +190,7 @@ Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="group___core_plugin.html#gad4ab160d20fd133acd9df87eaa398e8f">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00089">89</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00088">88</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +217,7 @@ Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga65e348e3dfcb1d2dde42c7e7fb0700df">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00423">423</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00319">319</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +248,7 @@ Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="group___core_plugin.html#gaf2965319c1d15dcb3563dd224add7858">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00112">112</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00111">111</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,7 +306,7 @@ Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="group___core_plugin.html#ga265636c3ae87d360bcddaa13cf4d2ce4">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00117">117</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00116">116</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -407,36 +339,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga8f63ece9a43be02feb6a544057621429">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00207">207</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaa2c7c889a364e3554503fed7f39746c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">quint32 Revolution::getRfmID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the RFM22b device ID this modem </p>
-<dl class="section return"><dt>Returns</dt><dd>RFM22B device ID or 0 if not supported </dd></dl>
-
-<p>Reimplemented from <a class="el" href="group___core_plugin.html#gadb43e205d3e79948ffa5b21d64da0642">Core::IBoardType</a>.</p>
-
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00324">324</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00206">206</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -455,7 +358,7 @@ the selected input type </dd></dl>
 
 <p>Get the settings object. </p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00123">123</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00122">122</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -493,7 +396,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga97fa9b3e61a56a7e60429978ebdbe6a8">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00429">429</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00325">325</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -523,7 +426,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga5b20cc6b2703da7094c9165e7659cb6f">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00134">134</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00133">133</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +455,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#gafc2bbf1a6e9c7e6256525f81be828129">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00079">79</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00078">78</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +485,7 @@ the selected input type </dd></dl>
 
 <p>Implements <a class="el" href="group___core_plugin.html#gac4aef79d19d7ee487afee6655808e722">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00095">95</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00094">94</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +515,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#ga36d6cb7f9e73a7a25fd355c78f0861d4">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00293">293</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00292">292</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -632,7 +535,7 @@ the selected input type </dd></dl>
 
 <p><a class="el" href="group___boards___open_pilot_plugin.html#gad4ecc2008e08f7c54b4fe92215c77bbb" title="Revolution::Revolution This is the Revolution board definition. ">Revolution::Revolution</a> This is the <a class="el" href="class_revolution.html">Revolution</a> board definition. </p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00047">47</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00046">46</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -675,7 +578,7 @@ the selected input type </dd></dl>
 
 <p>Reimplemented from <a class="el" href="group___core_plugin.html#gaf4ccf9642217d1e6c2c4313ee8e824ff">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00151">151</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00150">150</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -703,7 +606,7 @@ the selected input type </dd></dl>
 
 <p>Implements <a class="el" href="group___core_plugin.html#gab7a5ac1921113d9ab3a8181acb704c08">Core::IBoardType</a>.</p>
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00084">84</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00083">83</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>
@@ -728,7 +631,7 @@ the selected input type </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00075">75</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
+<p>Definition at line <a class="el" href="revolution_8cpp_source.html#l00074">74</a> of file <a class="el" href="revolution_8cpp_source.html">revolution.cpp</a>.</p>
 
 </div>
 </div>

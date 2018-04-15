@@ -26,7 +26,6 @@ var group___sparky =
     [ "PIOS_COM_MAVLINK", "group___sparky.html#gacc9b34fbd61773571dbe45ac3a3ca081", null ],
     [ "PIOS_COM_OPENLOG", "group___sparky.html#gad6409f51ab61c676f1a82e4d50b1fd68", null ],
     [ "PIOS_COM_STORM32BGC", "group___sparky.html#gae5a564af92abdc31f0b0d55ac78a379b", null ],
-    [ "PIOS_COM_TELEM_RF", "group___sparky.html#ga5e05655f08ac72b3e0d51c4b7a030c43", null ],
     [ "PIOS_COM_TELEM_USB", "group___sparky.html#ga56a8269d844919f3d657754bcdb33ecf", null ],
     [ "PIOS_COM_VCP", "group___sparky.html#gaffe7c0cd799a61d0dbaed25e9496c4bb", null ],
     [ "PIOS_DMA_CHANNELS", "group___sparky.html#gad33869b41ed36381d09ca776fec2ca64", null ],
