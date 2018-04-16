@@ -7,7 +7,6 @@ var flightd_2fw_2pios__board_8c =
     [ "Stack_Change", "flightd_2fw_2pios__board_8c.html#ga7a789e7b91612099a4a1f355b9e97c24", null ],
     [ "pios_com_debug_id", "flightd_2fw_2pios__board_8c.html#ga14dc9e3d330b80a37a9699c2112358e0", null ],
     [ "pios_com_openlog_id", "flightd_2fw_2pios__board_8c.html#ga952e1f17c9f32da55907c4ffc3f5cd69", null ],
-    [ "pios_com_telem_serial_id", "flightd_2fw_2pios__board_8c.html#ga2d0de5022c647a603359c8a7514c658e", null ],
     [ "pios_com_telem_usb_id", "flightd_2fw_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_tcp_telem_cfg", "flightd_2fw_2pios__board_8c.html#ga3c891452abcbf5474447318fead11cf8", null ],
     [ "pios_uavo_settings_fs_id", "flightd_2fw_2pios__board_8c.html#gab060f441dd600b08386c0ca1b487217a", null ]

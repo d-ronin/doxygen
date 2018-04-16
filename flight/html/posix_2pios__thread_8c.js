@@ -8,6 +8,7 @@ var posix_2pios__thread_8c =
     [ "PIOS_Thread_FakeClock_UpdateBarrier", "posix_2pios__thread_8c.html#gacf3f50e2f8116228c8f2cf826647ced9", null ],
     [ "PIOS_Thread_Get_Runtime", "posix_2pios__thread_8c.html#ga09d287bd6511f4991e2119402a9a7b34", null ],
     [ "PIOS_Thread_Get_Stack_Usage", "posix_2pios__thread_8c.html#gaab2b02e46c65db61a9d6f1591cb7b463", null ],
+    [ "PIOS_Thread_GetClock_Impl", "posix_2pios__thread_8c.html#ga33859edf21d0c384e130a85d30d4147c", null ],
     [ "PIOS_Thread_Period_Elapsed", "posix_2pios__thread_8c.html#gae9bea383f568e575d7d7c2d3da855831", null ],
     [ "PIOS_Thread_Sleep", "posix_2pios__thread_8c.html#ga2c639e61f21eac6cb54580eb5e1b85de", null ],
     [ "PIOS_Thread_Sleep_Until", "posix_2pios__thread_8c.html#ga2b57ee25cb47d455143fa9f009d8e937", null ],

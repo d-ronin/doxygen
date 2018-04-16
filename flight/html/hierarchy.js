@@ -180,6 +180,7 @@ var hierarchy =
     [ "pios_sensor_mag_data", "structpios__sensor__mag__data.html", null ],
     [ "pios_sensor_optical_flow_data", "structpios__sensor__optical__flow__data.html", null ],
     [ "pios_sensor_rangefinder_data", "structpios__sensor__rangefinder__data.html", null ],
+    [ "pios_ser_dev", "structpios__ser__dev.html", null ],
     [ "pios_servo_callbacks", "structpios__servo__callbacks.html", null ],
     [ "pios_servo_cfg", "structpios__servo__cfg.html", null ],
     [ "pios_spi_cfg", "structpios__spi__cfg.html", null ],

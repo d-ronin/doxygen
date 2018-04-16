@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cd7a75d</span>
+   &#160;<span id="projectnumber">b66307d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -135,44 +135,50 @@ $(document).ready(function(){initNavTree('pios__posix_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a9f528d42f3b5ac13e386fd1b18276956">   35</a></span>&#160;<span class="preprocessor">#define FILEINFO FILE*</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#ad402ef43fab77a45eecba0b90f1e4a0b">   37</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_NUM_OUTPUTS 8</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a8c4f93e592e9dc7341265971fb626f6f">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVO_NUM_TIMERS PIOS_SERVO_NUM_OUTPUTS</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if (defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;ws2tcpip.h&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dronin-strsep_8h.html">dronin-strsep.h</a>&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef PIOS_INCLUDE_SIMSENSORS</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TARGET_MAY_HAVE_BARO</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TARGET_MAY_HAVE_BARO</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a9f528d42f3b5ac13e386fd1b18276956">   41</a></span>&#160;<span class="preprocessor">#define FILEINFO FILE*</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#ad402ef43fab77a45eecba0b90f1e4a0b">   43</a></span>&#160;<span class="preprocessor">#define PIOS_SERVO_NUM_OUTPUTS 8</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a8c4f93e592e9dc7341265971fb626f6f">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_SERVO_NUM_TIMERS PIOS_SERVO_NUM_OUTPUTS</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __MACH__</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;mach/mach_time.h&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __MACH__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/* OSX &lt; 10.12 doesn&#39;t include clock_gettime and friends */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef CLOCK_MONOTONIC</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a6fb83f5e91e704391ff796553d5e0f46">   54</a></span>&#160;<span class="preprocessor">#define CLOCK_MONOTONIC 2</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if (defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;winsock2.h&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;ws2tcpip.h&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dronin-strsep_8h.html">dronin-strsep.h</a>&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef __MACH__</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;mach/mach_time.h&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __MACH__ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifndef CLOCK_REALTIME</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CLOCK_REALTIME 1</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* OSX &lt; 10.12 doesn&#39;t include clock_gettime and friends */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifndef CLOCK_MONOTONIC</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">   60</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d">   62</a></span>&#160;<span class="preprocessor">#define DRONIN_GETTIME</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">struct </span>timespec;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a>(<a class="code" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a> clk_id, <span class="keyword">struct</span> timespec *t);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a6fb83f5e91e704391ff796553d5e0f46">   60</a></span>&#160;<span class="preprocessor">#define CLOCK_MONOTONIC 2</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifndef CLOCK_REALTIME</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a922ce1ae64374c9410c8a999e25e82af">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CLOCK_REALTIME 1</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">   66</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="pios__posix_8h.html#af4a0b85de88f5247c70f84416989c95d">   68</a></span>&#160;<span class="preprocessor">#define DRONIN_GETTIME</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">struct </span>timespec;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a>(<a class="code" href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a> clk_id, <span class="keyword">struct</span> timespec *t);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios__posix_8h_html_a4c144c721b7558fcea0a0b9920246fda"><div class="ttname"><a href="pios__posix_8h.html#a4c144c721b7558fcea0a0b9920246fda">clock_gettime</a></div><div class="ttdeci">int clock_gettime(clockid_t clk_id, struct timespec *t)</div></div>
-<div class="ttc" id="pios__posix_8h_html_a6dcac6a5cea7d9c842145e1444d91e22"><div class="ttname"><a href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a></div><div class="ttdeci">int clockid_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__posix_8h_source.html#l00060">pios_posix.h:60</a></div></div>
+<div class="ttc" id="pios__posix_8h_html_a6dcac6a5cea7d9c842145e1444d91e22"><div class="ttname"><a href="pios__posix_8h.html#a6dcac6a5cea7d9c842145e1444d91e22">clockid_t</a></div><div class="ttdeci">int clockid_t</div><div class="ttdef"><b>Definition:</b> <a href="pios__posix_8h_source.html#l00066">pios_posix.h:66</a></div></div>
 <div class="ttc" id="dronin-strsep_8h_html"><div class="ttname"><a href="dronin-strsep_8h.html">dronin-strsep.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

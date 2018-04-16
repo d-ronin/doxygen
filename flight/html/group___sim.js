@@ -73,7 +73,6 @@ var group___sim =
     [ "pios_com_openlog_id", "group___sim.html#ga952e1f17c9f32da55907c4ffc3f5cd69", null ],
     [ "pios_com_openlog_id", "group___sim.html#ga952e1f17c9f32da55907c4ffc3f5cd69", null ],
     [ "pios_com_telem_serial_id", "group___sim.html#ga2d0de5022c647a603359c8a7514c658e", null ],
-    [ "pios_com_telem_serial_id", "group___sim.html#ga2d0de5022c647a603359c8a7514c658e", null ],
     [ "pios_com_telem_usb_id", "group___sim.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_telem_usb_id", "group___sim.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_tcp_telem_cfg", "group___sim.html#ga3c891452abcbf5474447318fead11cf8", null ],

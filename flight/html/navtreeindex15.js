@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012a212188919cef420e2de9232d9029a92b":[2,4,3,6,0],
 "group___autotuning_module.html#ggaccf89780733911b196b1df6702d71012aaf059a2d0fa090f804f246b0c8ffdc89":[2,4,3,6,1],
 "group___battery_module.html":[2,4,4],
 "group___battery_module.html#ga15a98c2af1d0d0351b8b870c68f889f8":[2,4,4,5],
@@ -92,8 +91,8 @@ var NAVTREEINDEX15 =
 "group___brain.html#ga4caa6d012da62089a2e424c8e2328e84":[2,6,3,111],
 "group___brain.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[2,5,3,65],
 "group___brain.html#ga4f21d78d9c6d8c65a1b4278ca726e0d7":[2,6,3,65],
-"group___brain.html#ga513cc36d72b76de2fcb75ff233a79a4a":[2,5,3,126],
 "group___brain.html#ga513cc36d72b76de2fcb75ff233a79a4a":[2,5,3,127],
+"group___brain.html#ga513cc36d72b76de2fcb75ff233a79a4a":[2,5,3,126],
 "group___brain.html#ga513cc36d72b76de2fcb75ff233a79a4a":[2,6,3,127],
 "group___brain.html#ga513cc36d72b76de2fcb75ff233a79a4a":[2,6,3,126],
 "group___brain.html#ga52804fcdee0d6927e4c5f45fc74d8b48":[2,5,3,101],
@@ -138,8 +137,8 @@ var NAVTREEINDEX15 =
 "group___brain.html#ga848fc544dbf2ea8c5b0536418f61e1c9":[2,6,3,33],
 "group___brain.html#ga86167cdf7eaace383bf74d35f23cb49e":[2,5,3,121],
 "group___brain.html#ga86167cdf7eaace383bf74d35f23cb49e":[2,5,3,122],
-"group___brain.html#ga86167cdf7eaace383bf74d35f23cb49e":[2,6,3,121],
 "group___brain.html#ga86167cdf7eaace383bf74d35f23cb49e":[2,6,3,122],
+"group___brain.html#ga86167cdf7eaace383bf74d35f23cb49e":[2,6,3,121],
 "group___brain.html#ga88d8898b87dd36e904ef44a757344a14":[2,5,3,119],
 "group___brain.html#ga88d8898b87dd36e904ef44a757344a14":[2,6,3,119],
 "group___brain.html#ga88f1b74712df62b9970b6cbc6bb262e9":[2,5,3,37],
@@ -218,8 +217,8 @@ var NAVTREEINDEX15 =
 "group___brain.html#gac7edbfa43685b86203f055c78fdcea8b":[2,6,3,61],
 "group___brain.html#gaca770eaaaa3f1a7e1d64128a50e5680f":[2,5,3,124],
 "group___brain.html#gaca770eaaaa3f1a7e1d64128a50e5680f":[2,6,3,124],
-"group___brain.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,5,3,70],
 "group___brain.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,5,3,71],
+"group___brain.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,5,3,70],
 "group___brain.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,6,3,71],
 "group___brain.html#gacc93b5bb2caa11a16122f6eb0c619379":[2,6,3,70],
 "group___brain.html#gacc9b34fbd61773571dbe45ac3a3ca081":[2,5,3,38],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "group___brain.html#gae4912a499d71db827918d7908055ce05":[2,5,3,81],
 "group___brain.html#gae4912a499d71db827918d7908055ce05":[2,6,3,81],
 "group___brain.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,5,3,40],
-"group___brain.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,6,3,40]
+"group___brain.html#gae5a564af92abdc31f0b0d55ac78a379b":[2,6,3,40],
+"group___brain.html#gae78ef0099e559f8b4cd423bb2c0f3b5a":[2,5,3,85]
 };

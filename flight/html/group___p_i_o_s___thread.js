@@ -20,6 +20,7 @@ var group___p_i_o_s___thread =
     [ "PIOS_Thread_FakeClock_UpdateBarrier", "group___p_i_o_s___thread.html#gacf3f50e2f8116228c8f2cf826647ced9", null ],
     [ "PIOS_Thread_Get_Runtime", "group___p_i_o_s___thread.html#ga09d287bd6511f4991e2119402a9a7b34", null ],
     [ "PIOS_Thread_Get_Stack_Usage", "group___p_i_o_s___thread.html#gaab2b02e46c65db61a9d6f1591cb7b463", null ],
+    [ "PIOS_Thread_GetClock_Impl", "group___p_i_o_s___thread.html#ga33859edf21d0c384e130a85d30d4147c", null ],
     [ "PIOS_Thread_Period_Elapsed", "group___p_i_o_s___thread.html#gae9bea383f568e575d7d7c2d3da855831", null ],
     [ "PIOS_Thread_Scheduler_Resume", "group___p_i_o_s___thread.html#ga7bdc0bfc37230d1d6f906db197f5492c", null ],
     [ "PIOS_Thread_Scheduler_Suspend", "group___p_i_o_s___thread.html#ga7708d1e49572566decf6908b891c8ea6", null ],

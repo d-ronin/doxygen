@@ -18,7 +18,7 @@ var dir_6575c3929beb1e734d50be16048eac24 =
     [ "pios_reset.c", "posix_2pios__reset_8c.html", "posix_2pios__reset_8c" ],
     [ "pios_rtc.c", "posix_2pios__rtc_8c.html", null ],
     [ "pios_semaphore.c", "posix_2pios__semaphore_8c.html", "posix_2pios__semaphore_8c" ],
-    [ "pios_serial.c", "pios__serial_8c.html", null ],
+    [ "pios_serial.c", "pios__serial_8c.html", "pios__serial_8c" ],
     [ "pios_servo.c", "posix_2pios__servo_8c.html", null ],
     [ "pios_spi.c", "posix_2pios__spi_8c.html", null ],
     [ "pios_sys.c", "posix_2pios__sys_8c.html", "posix_2pios__sys_8c" ],

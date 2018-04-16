@@ -47,6 +47,7 @@ var searchData=
   ['eventqueueerrors',['eventQueueErrors',['../struct_u_a_v_obj_stats.html#a0dc695f48120e441e86ad99fe656627a',1,'UAVObjStats']]],
   ['events_5funused',['events_unused',['../group___u_a_v_object_handling.html#gae5645196e1c9d31a908edaca191f2cb6',1,'uavobjectmanager.c']]],
   ['events_5funused_5fthrottled',['events_unused_throttled',['../group___u_a_v_object_handling.html#ga6ac18a07a98d0f36e29e967d48f10703',1,'uavobjectmanager.c']]],
+  ['ever_5fused_5fcustom_5frate',['ever_used_custom_rate',['../structpios__ser__dev.html#a7e65f22f22fa4cf480dfa8bda519cbb7',1,'pios_ser_dev']]],
   ['evinfo',['evInfo',['../struct_periodic_object_list_struct.html#aa9f3d67a5c62c87059e84abb1cfb857b',1,'PeriodicObjectListStruct']]],
   ['expect_5fcapacity',['expect_capacity',['../group___p_i_o_s___f_l_a_s_h.html#ga33911ac74387cebdbc4bb2fe3d5541a6',1,'pios_flash_jedec_cfg']]],
   ['expect_5fmanufacturer',['expect_manufacturer',['../group___p_i_o_s___f_l_a_s_h.html#gab7416f66a2c392cc5a27e12cbf4e9a07',1,'pios_flash_jedec_cfg']]],

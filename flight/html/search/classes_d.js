@@ -63,6 +63,7 @@ var searchData=
   ['pios_5fsensor_5fmag_5fdata',['pios_sensor_mag_data',['../structpios__sensor__mag__data.html',1,'']]],
   ['pios_5fsensor_5foptical_5fflow_5fdata',['pios_sensor_optical_flow_data',['../structpios__sensor__optical__flow__data.html',1,'']]],
   ['pios_5fsensor_5frangefinder_5fdata',['pios_sensor_rangefinder_data',['../structpios__sensor__rangefinder__data.html',1,'']]],
+  ['pios_5fser_5fdev',['pios_ser_dev',['../structpios__ser__dev.html',1,'']]],
   ['pios_5fservo_5fcallbacks',['pios_servo_callbacks',['../structpios__servo__callbacks.html',1,'']]],
   ['pios_5fservo_5fcfg',['pios_servo_cfg',['../structpios__servo__cfg.html',1,'']]],
   ['pios_5fspi_5fcfg',['pios_spi_cfg',['../structpios__spi__cfg.html',1,'']]],

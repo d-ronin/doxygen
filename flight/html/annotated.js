@@ -193,6 +193,7 @@ var annotated =
     [ "pios_sensor_mag_data", "structpios__sensor__mag__data.html", "structpios__sensor__mag__data" ],
     [ "pios_sensor_optical_flow_data", "structpios__sensor__optical__flow__data.html", "structpios__sensor__optical__flow__data" ],
     [ "pios_sensor_rangefinder_data", "structpios__sensor__rangefinder__data.html", "structpios__sensor__rangefinder__data" ],
+    [ "pios_ser_dev", "structpios__ser__dev.html", "structpios__ser__dev" ],
     [ "pios_servo_callbacks", "structpios__servo__callbacks.html", "structpios__servo__callbacks" ],
     [ "pios_servo_cfg", "structpios__servo__cfg.html", "structpios__servo__cfg" ],
     [ "pios_spi_cfg", "structpios__spi__cfg.html", "structpios__spi__cfg" ],

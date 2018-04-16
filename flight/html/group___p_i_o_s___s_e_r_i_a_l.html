@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">cd7a75d</span>
+   &#160;<span id="projectnumber">b66307d</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -100,10 +100,397 @@ $(document).ready(function(){initNavTree('group___p_i_o_s___s_e_r_i_a_l.html',''
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Serial Driver<div class="ingroups"><a class="el" href="group___p_i_o_s.html">PIOS Core hardware abstraction layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpios__ser__dev.html">pios_ser_dev</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga43f07821dcd7a1d054da4e6e338dbe50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga43f07821dcd7a1d054da4e6e338dbe50">PIOS_SERIAL_RegisterRxCallback</a> (uintptr_t udp_id, <a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> rx_in_cb, uintptr_t context)</td></tr>
+<tr class="separator:ga43f07821dcd7a1d054da4e6e338dbe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3e77a3b4d4f1e4bef79dd0834b92f84"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#gad3e77a3b4d4f1e4bef79dd0834b92f84">PIOS_SERIAL_RegisterTxCallback</a> (uintptr_t udp_id, <a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a> tx_out_cb, uintptr_t context)</td></tr>
+<tr class="separator:gad3e77a3b4d4f1e4bef79dd0834b92f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e64f7e3d2c5acdf2968f8a51ccd591a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga2e64f7e3d2c5acdf2968f8a51ccd591a">PIOS_SERIAL_TxStart</a> (uintptr_t udp_id, uint16_t tx_bytes_avail)</td></tr>
+<tr class="separator:ga2e64f7e3d2c5acdf2968f8a51ccd591a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12e5e9b43788396ee455ee249451d3d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga12e5e9b43788396ee455ee249451d3d6">PIOS_SERIAL_RxStart</a> (uintptr_t udp_id, uint16_t rx_bytes_avail)</td></tr>
+<tr class="separator:ga12e5e9b43788396ee455ee249451d3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50bb7e05f39d37291e860a2beae40aa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structpios__ser__dev.html">pios_ser_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga50bb7e05f39d37291e860a2beae40aa0">find_ser_dev_by_id</a> (uintptr_t serial)</td></tr>
+<tr class="separator:ga50bb7e05f39d37291e860a2beae40aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58fcd4d2430ee61a25b474d69dd59c59"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga58fcd4d2430ee61a25b474d69dd59c59">rx_do_cb</a> (<a class="el" href="structpios__ser__dev.html">pios_ser_dev</a> *ser_dev, uint8_t *incoming_buffer, int len)</td></tr>
+<tr class="separator:ga58fcd4d2430ee61a25b474d69dd59c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga738df07a73590fec1c3a9d0655c6da68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga738df07a73590fec1c3a9d0655c6da68">PIOS_SERIAL_RxTask</a> (void *ser_dev_n)</td></tr>
+<tr class="separator:ga738df07a73590fec1c3a9d0655c6da68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21381275290d0ef9e23bf65d1baec3da"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga21381275290d0ef9e23bf65d1baec3da">PIOS_SERIAL_InitFromFd</a> (uintptr_t *serial_id, int readfd, int writefd, bool dont_touch_line)</td></tr>
+<tr class="separator:ga21381275290d0ef9e23bf65d1baec3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacef67275a59302a5f9100cab90e5e84c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#gacef67275a59302a5f9100cab90e5e84c">PIOS_SERIAL_Init</a> (uintptr_t *serial_id, const char *path)</td></tr>
+<tr class="separator:gacef67275a59302a5f9100cab90e5e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga69d61c65fae2028c70135677e630d139"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__com__driver.html">pios_com_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___s_e_r_i_a_l.html#ga69d61c65fae2028c70135677e630d139">pios_serial_com_driver</a></td></tr>
+<tr class="separator:ga69d61c65fae2028c70135677e630d139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga50bb7e05f39d37291e860a2beae40aa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structpios__ser__dev.html">pios_ser_dev</a>* find_ser_dev_by_id </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>serial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00090">90</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacef67275a59302a5f9100cab90e5e84c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t PIOS_SERIAL_Init </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t *&#160;</td>
+          <td class="paramname"><em>serial_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00182">182</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga21381275290d0ef9e23bf65d1baec3da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t PIOS_SERIAL_InitFromFd </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t *&#160;</td>
+          <td class="paramname"><em>serial_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>readfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>writefd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dont_touch_line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Open SERIAL connection </p>
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00151">151</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga43f07821dcd7a1d054da4e6e338dbe50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PIOS_SERIAL_RegisterRxCallback </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>udp_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a>&#160;</td>
+          <td class="paramname"><em>rx_in_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00375">375</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad3e77a3b4d4f1e4bef79dd0834b92f84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PIOS_SERIAL_RegisterTxCallback </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>udp_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a>&#160;</td>
+          <td class="paramname"><em>tx_out_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00385">385</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga12e5e9b43788396ee455ee249451d3d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PIOS_SERIAL_RxStart </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>udp_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>rx_bytes_avail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00340">340</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga738df07a73590fec1c3a9d0655c6da68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PIOS_SERIAL_RxTask </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ser_dev_n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>RxTask </p>
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00111">111</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2e64f7e3d2c5acdf2968f8a51ccd591a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PIOS_SERIAL_TxStart </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>udp_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tx_bytes_avail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>we send everything directly whenever notified of data to send</p>
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00344">344</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga58fcd4d2430ee61a25b474d69dd59c59"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void rx_do_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpios__ser__dev.html">pios_ser_dev</a> *&#160;</td>
+          <td class="paramname"><em>ser_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>incoming_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00095">95</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ga69d61c65fae2028c70135677e630d139"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structpios__com__driver.html">pios_com_driver</a> pios_serial_com_driver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">        .tx_start   = <a class="code" href="group___p_i_o_s___s_e_r_i_a_l.html#ga2e64f7e3d2c5acdf2968f8a51ccd591a">PIOS_SERIAL_TxStart</a>,</div>
+<div class="line">        .rx_start   = <a class="code" href="group___p_i_o_s___s_e_r_i_a_l.html#ga12e5e9b43788396ee455ee249451d3d6">PIOS_SERIAL_RxStart</a>,</div>
+<div class="line">        .bind_tx_cb = <a class="code" href="group___p_i_o_s___s_e_r_i_a_l.html#gad3e77a3b4d4f1e4bef79dd0834b92f84">PIOS_SERIAL_RegisterTxCallback</a>,</div>
+<div class="line">        .bind_rx_cb = <a class="code" href="group___p_i_o_s___s_e_r_i_a_l.html#ga43f07821dcd7a1d054da4e6e338dbe50">PIOS_SERIAL_RegisterRxCallback</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="group___p_i_o_s___s_e_r_i_a_l_html_ga43f07821dcd7a1d054da4e6e338dbe50"><div class="ttname"><a href="group___p_i_o_s___s_e_r_i_a_l.html#ga43f07821dcd7a1d054da4e6e338dbe50">PIOS_SERIAL_RegisterRxCallback</a></div><div class="ttdeci">static void PIOS_SERIAL_RegisterRxCallback(uintptr_t udp_id, pios_com_callback rx_in_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__serial_8c_source.html#l00375">pios_serial.c:375</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_r_i_a_l_html_ga2e64f7e3d2c5acdf2968f8a51ccd591a"><div class="ttname"><a href="group___p_i_o_s___s_e_r_i_a_l.html#ga2e64f7e3d2c5acdf2968f8a51ccd591a">PIOS_SERIAL_TxStart</a></div><div class="ttdeci">static void PIOS_SERIAL_TxStart(uintptr_t udp_id, uint16_t tx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__serial_8c_source.html#l00344">pios_serial.c:344</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_r_i_a_l_html_gad3e77a3b4d4f1e4bef79dd0834b92f84"><div class="ttname"><a href="group___p_i_o_s___s_e_r_i_a_l.html#gad3e77a3b4d4f1e4bef79dd0834b92f84">PIOS_SERIAL_RegisterTxCallback</a></div><div class="ttdeci">static void PIOS_SERIAL_RegisterTxCallback(uintptr_t udp_id, pios_com_callback tx_out_cb, uintptr_t context)</div><div class="ttdef"><b>Definition:</b> <a href="pios__serial_8c_source.html#l00385">pios_serial.c:385</a></div></div>
+<div class="ttc" id="group___p_i_o_s___s_e_r_i_a_l_html_ga12e5e9b43788396ee455ee249451d3d6"><div class="ttname"><a href="group___p_i_o_s___s_e_r_i_a_l.html#ga12e5e9b43788396ee455ee249451d3d6">PIOS_SERIAL_RxStart</a></div><div class="ttdeci">static void PIOS_SERIAL_RxStart(uintptr_t udp_id, uint16_t rx_bytes_avail)</div><div class="ttdef"><b>Definition:</b> <a href="pios__serial_8c_source.html#l00340">pios_serial.c:340</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pios__serial_8c_source.html#l00080">80</a> of file <a class="el" href="pios__serial_8c_source.html">pios_serial.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

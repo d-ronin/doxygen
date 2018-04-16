@@ -202,14 +202,13 @@ var NAVTREEINDEX11 =
 "flightd_2fw_2pios__board_8c.html#ga01c7d40a3ca879b679f2cd1d886c98ca":[5,0,0,5,6,0,1,2],
 "flightd_2fw_2pios__board_8c.html#ga14dc9e3d330b80a37a9699c2112358e0":[5,0,0,5,6,0,1,5],
 "flightd_2fw_2pios__board_8c.html#ga26c0d186420f2a028ebc09e009edf983":[5,0,0,5,6,0,1,0],
-"flightd_2fw_2pios__board_8c.html#ga2d0de5022c647a603359c8a7514c658e":[5,0,0,5,6,0,1,7],
 "flightd_2fw_2pios__board_8c.html#ga3010e7f4b4def67c978e083c50e5b901":[5,0,0,5,6,0,1,1],
-"flightd_2fw_2pios__board_8c.html#ga3c891452abcbf5474447318fead11cf8":[5,0,0,5,6,0,1,9],
-"flightd_2fw_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,5,6,0,1,8],
+"flightd_2fw_2pios__board_8c.html#ga3c891452abcbf5474447318fead11cf8":[5,0,0,5,6,0,1,8],
+"flightd_2fw_2pios__board_8c.html#ga513cc36d72b76de2fcb75ff233a79a4a":[5,0,0,5,6,0,1,7],
 "flightd_2fw_2pios__board_8c.html#ga7a789e7b91612099a4a1f355b9e97c24":[5,0,0,5,6,0,1,4],
 "flightd_2fw_2pios__board_8c.html#ga902009c5b1cb57d9f9d60092eb7cacfb":[5,0,0,5,6,0,1,3],
 "flightd_2fw_2pios__board_8c.html#ga952e1f17c9f32da55907c4ffc3f5cd69":[5,0,0,5,6,0,1,6],
-"flightd_2fw_2pios__board_8c.html#gab060f441dd600b08386c0ca1b487217a":[5,0,0,5,6,0,1,10],
+"flightd_2fw_2pios__board_8c.html#gab060f441dd600b08386c0ca1b487217a":[5,0,0,5,6,0,1,9],
 "flightd_2fw_2pios__board_8c_source.html":[5,0,0,5,6,0,1],
 "flightlib_2pios__board_8h.html":[5,0,0,0,0],
 "flightlib_2pios__board_8h.html#a75691040c0909ea4c06cd3d87f3f01b2":[5,0,0,0,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "flyingpio_2fw_2main_8c.html#ga0bf60da545bf36717bd2c9ce3d13bf81":[5,0,0,5,7,1,0,12],
 "flyingpio_2fw_2main_8c.html#ga25bd4019d12cde5075363591eea4611a":[5,0,0,5,7,1,0,20],
 "flyingpio_2fw_2main_8c.html#ga2755613ce2121dbba8e757c3ca76efa4":[5,0,0,5,7,1,0,2],
-"flyingpio_2fw_2main_8c.html#ga2ed726ef287ca5aba87d97c4b83051da":[5,0,0,5,7,1,0,18]
+"flyingpio_2fw_2main_8c.html#ga2ed726ef287ca5aba87d97c4b83051da":[5,0,0,5,7,1,0,18],
+"flyingpio_2fw_2main_8c.html#ga3690beeb87da77da92fe8c3cf85210ec":[5,0,0,5,7,1,0,1]
 };

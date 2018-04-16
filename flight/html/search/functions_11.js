@@ -40,5 +40,6 @@ var searchData=
   ['rtkf_5fprediction_5fstep',['rtkf_prediction_step',['../group___flight_math.html#ga9c047ca34710994dcd8fa96479580b9f',1,'lqg.c']]],
   ['rtkf_5fstabilize_5fcovariance',['rtkf_stabilize_covariance',['../group___flight_math.html#ga7782671ecc5f2f9656c3ef3c88237fd4',1,'lqg.c']]],
   ['rungekutta',['RungeKutta',['../group___i_n_s_g_p_s.html#gac5eaabdd6d05ef0667c934d4ef59eafa',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps14state.c'],['../group___libraries.html#ga46ea4d984cf502eab4575602fcba7721',1,'RungeKutta(float X[NUMX], float U[NUMU], float dT):&#160;insgps13state.c']]],
-  ['rv2rot',['Rv2Rot',['../group___flight_math.html#ga43ed3db7237f03a6488c8dd7b987b1bd',1,'coordinate_conversions.c']]]
+  ['rv2rot',['Rv2Rot',['../group___flight_math.html#ga43ed3db7237f03a6488c8dd7b987b1bd',1,'coordinate_conversions.c']]],
+  ['rx_5fdo_5fcb',['rx_do_cb',['../group___p_i_o_s___s_e_r_i_a_l.html#ga58fcd4d2430ee61a25b474d69dd59c59',1,'pios_serial.c']]]
 ];

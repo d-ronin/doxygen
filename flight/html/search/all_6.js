@@ -52,6 +52,7 @@ var searchData=
   ['fill_5fdma_5fcb',['fill_dma_cb',['../group___p_i_o_s.html#gaa2ea90307e93894c81eb334f031c4b09',1,'pios_dac.h']]],
   ['find_5ffile_5fdev_5fby_5fid',['find_file_dev_by_id',['../group___p_i_o_s___f_i_l_e_o_u_t.html#gaa7d42c4c6c196836914b6a4490b47ccf',1,'pios_fileout.c']]],
   ['find_5froots',['Find_Roots',['../berlekamp_8c.html#a4069950fa80c5dd0b12ff06ba4374f27',1,'berlekamp.c']]],
+  ['find_5fser_5fdev_5fby_5fid',['find_ser_dev_by_id',['../group___p_i_o_s___s_e_r_i_a_l.html#ga50bb7e05f39d37291e860a2beae40aa0',1,'pios_serial.c']]],
   ['firmware',['firmware',['../classpx__uploader_1_1firmware.html',1,'px_uploader']]],
   ['firmwareiap_2ec',['firmwareiap.c',['../firmwareiap_8c.html',1,'']]],
   ['firmwareiap_2eh',['firmwareiap.h',['../firmwareiap_8h.html',1,'']]],

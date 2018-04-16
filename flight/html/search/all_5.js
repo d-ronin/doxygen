@@ -130,6 +130,7 @@ var searchData=
   ['events_5funused',['events_unused',['../group___u_a_v_object_handling.html#gae5645196e1c9d31a908edaca191f2cb6',1,'uavobjectmanager.c']]],
   ['events_5funused_5fthrottled',['events_unused_throttled',['../group___u_a_v_object_handling.html#ga6ac18a07a98d0f36e29e967d48f10703',1,'uavobjectmanager.c']]],
   ['eventstats',['EventStats',['../struct_event_stats.html',1,'']]],
+  ['ever_5fused_5fcustom_5frate',['ever_used_custom_rate',['../structpios__ser__dev.html#a7e65f22f22fa4cf480dfa8bda519cbb7',1,'pios_ser_dev']]],
   ['evinfo',['evInfo',['../struct_periodic_object_list_struct.html#aa9f3d67a5c62c87059e84abb1cfb857b',1,'PeriodicObjectListStruct']]],
   ['exception_5fstack_5fpc_5foffset',['EXCEPTION_STACK_PC_OFFSET',['../group___modules.html#ga902ddace2ba27b4af39e16e301b28c89',1,'loadable.c']]],
   ['expapprox',['expapprox',['../group___flight_math.html#gaf400ecfa0d2805d9cd0159c47f716740',1,'misc_math.h']]],

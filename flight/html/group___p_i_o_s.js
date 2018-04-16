@@ -76,7 +76,7 @@ var group___p_i_o_s =
     [ "WS2811 Functions", "group___p_i_o_s___w_s2811.html", "group___p_i_o_s___w_s2811" ],
     [ "File Output Driver", "group___p_i_o_s___f_i_l_e_o_u_t.html", "group___p_i_o_s___f_i_l_e_o_u_t" ],
     [ "FlightGear driver", "group___p_i_o_s___f_l_i_g_h_t_g_e_a_r.html", "group___p_i_o_s___f_l_i_g_h_t_g_e_a_r" ],
-    [ "Serial Driver", "group___p_i_o_s___s_e_r_i_a_l.html", null ],
+    [ "Serial Driver", "group___p_i_o_s___s_e_r_i_a_l.html", "group___p_i_o_s___s_e_r_i_a_l" ],
     [ "TCP Driver", "group___p_i_o_s___t_c_p.html", null ],
     [ "ChibiOS Interface", "group___chibi_o_s.html", "group___chibi_o_s" ],
     [ "Digital IO subsystem", "group___p_i_o_s___d_i_o.html", "group___p_i_o_s___d_i_o" ],
