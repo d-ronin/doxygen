@@ -43,7 +43,6 @@ var group___control =
       [ "STATUS_ARM_VALID", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a30a4eec847c46f4e7d6b81fa1db80e15", null ],
       [ "STATUS_INVALID_FOR_DISARMED", "group___control.html#gga1b6a1d5c5701f7bd6c4cf4c4a6a2f231a7cc80e4fae135676e49fdf9b30027032", null ]
     ] ],
-    [ "applyDeadband", "group___control.html#gaaa3e3ee54d554b51684e485fdeb9f3a9", null ],
     [ "arming_position", "group___control.html#ga1f5288e5f2aa7c30c4fb6f26cd54333a", null ],
     [ "channel_is_configured", "group___control.html#gaf4522c3f5a63d3dd77cf5e593bf2c3c9", null ],
     [ "check_receiver_timer", "group___control.html#gabfa7190c4cd9bc78c79f397495d72703", null ],

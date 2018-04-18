@@ -39,7 +39,7 @@ var searchData=
   ['alarmsset',['AlarmsSet',['../group___libraries.html#gadd1139478e7c6bc1b6afaaa0d1d114dd',1,'alarms.c']]],
   ['alarmstring',['AlarmString',['../group___libraries.html#gaa522ae041a9cda97c5db1fbe1e60c360',1,'alarms.h']]],
   ['apply_5faccel_5ffilter',['apply_accel_filter',['../group___attitude_module.html#gaaf179d2bdeba73684f425664481b78b7',1,'attitude.c']]],
-  ['applydeadband',['applyDeadband',['../group___control.html#gaaa3e3ee54d554b51684e485fdeb9f3a9',1,'transmitter_control.c']]],
+  ['apply_5fchannel_5fdeadband',['apply_channel_deadband',['../group___flight_math.html#ga12db239ad82c9e80aaf78e561ddba82f',1,'misc_math.c']]],
   ['applyff',['applyFF',['../group___camera_stab.html#ga1f237b22b58b962ec6dd33ab78623717',1,'camerastab.c']]],
   ['armedflag_5fupdate',['ARMEDFLAG_update',['../group___char_o_s_d.html#gacee12cae48509c0b5bcd6af2af75b529',1,'panel.c']]],
   ['arming_5fposition',['arming_position',['../group___control.html#ga1f5288e5f2aa7c30c4fb6f26cd54333a',1,'transmitter_control.c']]],

@@ -155,7 +155,7 @@ var searchData=
   ['annuncdac_5fdev_5ft',['annuncdac_dev_t',['../group___p_i_o_s___a_n_n_u_n_c_d_a_c.html#ga3d58f5c9238257a0a2e9d946013840f7',1,'pios_annuncdac.h']]],
   ['annunciators',['annunciators',['../structpios__annunc__cfg.html#abd4fb61998ab7fc0cc6c0ec418c645e1',1,'pios_annunc_cfg']]],
   ['apply_5faccel_5ffilter',['apply_accel_filter',['../group___attitude_module.html#gaaf179d2bdeba73684f425664481b78b7',1,'attitude.c']]],
-  ['applydeadband',['applyDeadband',['../group___control.html#gaaa3e3ee54d554b51684e485fdeb9f3a9',1,'transmitter_control.c']]],
+  ['apply_5fchannel_5fdeadband',['apply_channel_deadband',['../group___flight_math.html#ga12db239ad82c9e80aaf78e561ddba82f',1,'misc_math.c']]],
   ['applyff',['applyFF',['../group___camera_stab.html#ga1f237b22b58b962ec6dd33ab78623717',1,'camerastab.c']]],
   ['aeroquad_20aq32',['Aeroquad AQ32',['../group___a_q32.html',1,'']]],
   ['arena_5fheader',['arena_header',['../structarena__header.html',1,'']]],

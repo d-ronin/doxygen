@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/PiOS/inc/pios_gcsrcvr_priv.h Source File</title>
+<title>dRonin: flight/PiOS/inc/pios_uavtalkrcvr_priv.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('pios__gcsrcvr__priv_8h_source.html','');});
+$(document).ready(function(){initNavTree('pios__uavtalkrcvr__priv_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,10 +107,10 @@ $(document).ready(function(){initNavTree('pios__gcsrcvr__priv_8h_source.html',''
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pios_gcsrcvr_priv.h</div>  </div>
+<div class="title">pios_uavtalkrcvr_priv.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="pios__gcsrcvr__priv_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="pios__uavtalkrcvr__priv_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -126,30 +126,30 @@ $(document).ready(function(){initNavTree('pios__gcsrcvr__priv_8h_source.html',''
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * with this program; if not, see &lt;http://www.gnu.org/licenses/&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef PIOS_GCSRCVR_PRIV_H</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GCSRCVR_PRIV_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef PIOS_UAVTALKRCVR_PRIV_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_UAVTALKRCVR_PRIV_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios_8h.html">pios.h</a>&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uavobjectmanager_8h.html">uavobjectmanager.h</a>&quot;</span>   <span class="comment">/* UAVObj* */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;gcsreceiver.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;uavtalkreceiver.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__rcvr__driver.html">pios_rcvr_driver</a> <a class="code" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga05df21a11af3217d085cd5928583a35e">pios_gcsrcvr_rcvr_driver</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__rcvr__driver.html">pios_rcvr_driver</a> <a class="code" href="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r.html#ga3b55162b94386bd924aaea4b02879f71">pios_uavtalk_rcvr_driver</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c">PIOS_GCSRCVR_Init</a>(uintptr_t *gcsrcvr_id);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r.html#ga9abc07f1e71874eb0e51ae25dfa85fe5">PIOS_UAVTALKRCVR_Init</a>(uintptr_t *gcsrcvr_id);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_GCSRCVR_PRIV_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_UAVTALKRCVR_PRIV_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
-<div class="ttc" id="group___p_i_o_s___g_c_s_r_c_v_r_html_ga6a374abf68f36f70072d5d14929f9b4c"><div class="ttname"><a href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c">PIOS_GCSRCVR_Init</a></div><div class="ttdeci">int32_t PIOS_GCSRCVR_Init(uintptr_t *gcsrcvr_id)</div></div>
-<div class="ttc" id="group___p_i_o_s___g_c_s_r_c_v_r_html_ga05df21a11af3217d085cd5928583a35e"><div class="ttname"><a href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga05df21a11af3217d085cd5928583a35e">pios_gcsrcvr_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_gcsrcvr_rcvr_driver</div></div>
 <div class="ttc" id="structpios__rcvr__driver_html"><div class="ttname"><a href="structpios__rcvr__driver.html">pios_rcvr_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__rcvr_8h_source.html#l00033">pios_rcvr.h:33</a></div></div>
+<div class="ttc" id="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r_html_ga9abc07f1e71874eb0e51ae25dfa85fe5"><div class="ttname"><a href="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r.html#ga9abc07f1e71874eb0e51ae25dfa85fe5">PIOS_UAVTALKRCVR_Init</a></div><div class="ttdeci">int32_t PIOS_UAVTALKRCVR_Init(uintptr_t *gcsrcvr_id)</div></div>
+<div class="ttc" id="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r_html_ga3b55162b94386bd924aaea4b02879f71"><div class="ttname"><a href="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r.html#ga3b55162b94386bd924aaea4b02879f71">pios_uavtalk_rcvr_driver</a></div><div class="ttdeci">const struct pios_rcvr_driver pios_uavtalk_rcvr_driver</div></div>
 <div class="ttc" id="uavobjectmanager_8h_html"><div class="ttname"><a href="uavobjectmanager_8h.html">uavobjectmanager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_fad6fa281ca7e047076b33e1c7de279c.html">inc</a></li><li class="navelem"><a class="el" href="pios__gcsrcvr__priv_8h.html">pios_gcsrcvr_priv.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_fad6fa281ca7e047076b33e1c7de279c.html">inc</a></li><li class="navelem"><a class="el" href="pios__uavtalkrcvr__priv_8h.html">pios_uavtalkrcvr_priv.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

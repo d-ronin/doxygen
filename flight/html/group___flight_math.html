@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -401,6 +401,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga98cd2bfd709fb0eeea6fa2388d026ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0bf3a76acd6dcffaa2ace73d95bb304"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gac0bf3a76acd6dcffaa2ace73d95bb304">randomize_int</a> (uint32_t interval)</td></tr>
 <tr class="separator:gac0bf3a76acd6dcffaa2ace73d95bb304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12db239ad82c9e80aaf78e561ddba82f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga12db239ad82c9e80aaf78e561ddba82f">apply_channel_deadband</a> (float *<a class="el" href="storm32bgc_8c.html#a17956fe0129d3d4c94ebc06cfef2ad82">value</a>, float deadband)</td></tr>
+<tr class="memdesc:ga12db239ad82c9e80aaf78e561ddba82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply deadband to Roll/Pitch/Yaw channels.  <a href="#ga12db239ad82c9e80aaf78e561ddba82f">More...</a><br/></td></tr>
+<tr class="separator:ga12db239ad82c9e80aaf78e561ddba82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2cad9810e0c0c09e0988b17159e4d1c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#gab2cad9810e0c0c09e0988b17159e4d1c">IS_NOT_FINITE</a> (float x)</td></tr>
 <tr class="separator:gab2cad9810e0c0c09e0988b17159e4d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f4d4e368bc5b651d7c0b006db570bfd"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___flight_math.html#ga5f4d4e368bc5b651d7c0b006db570bfd">sin_approx</a> (int32_t x)</td></tr>
@@ -679,7 +682,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00536">536</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00537">537</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -693,7 +696,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00578">578</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00579">579</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -801,9 +804,9 @@ Variables</h2></td></tr>
 <div class="line">                float (*my_out)[rows*cols] = &amp;(out); <a class="code" href="group___flight_math.html#ga9df8de687673ab525cc81a7fef38b295">\</a></div>
 <div class="line"><a class="code" href="group___flight_math.html#ga9df8de687673ab525cc81a7fef38b295">		matrix_add</a>(*my_a, *my_b, *my_out, rows, cols) \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0);</div>
-<div class="ttc" id="group___flight_math_html_ga9df8de687673ab525cc81a7fef38b295"><div class="ttname"><a href="group___flight_math.html#ga9df8de687673ab525cc81a7fef38b295">matrix_add</a></div><div class="ttdeci">static void matrix_add(const float *a, const float *b, float *out, int rows, int cols)</div><div class="ttdoc">Adds two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled) ...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00215">misc_math.h:215</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga9df8de687673ab525cc81a7fef38b295"><div class="ttname"><a href="group___flight_math.html#ga9df8de687673ab525cc81a7fef38b295">matrix_add</a></div><div class="ttdeci">static void matrix_add(const float *a, const float *b, float *out, int rows, int cols)</div><div class="ttdoc">Adds two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled) ...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00216">misc_math.h:216</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00463">463</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00464">464</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -861,9 +864,9 @@ Variables</h2></td></tr>
 <div class="line">                float (*my_out)[arows*bcols] = &amp;(out); <a class="code" href="group___flight_math.html#gab066fad7258a2674ce1e4452f52ea72c">\</a></div>
 <div class="line"><a class="code" href="group___flight_math.html#gab066fad7258a2674ce1e4452f52ea72c">		matrix_mul</a>(*my_a, *my_b, *my_out, arows, acolsbrows, bcols); \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0);</div>
-<div class="ttc" id="group___flight_math_html_gab066fad7258a2674ce1e4452f52ea72c"><div class="ttname"><a href="group___flight_math.html#gab066fad7258a2674ce1e4452f52ea72c">matrix_mul</a></div><div class="ttdeci">static void matrix_mul(const float *a, const float *b, float *out, int arows, int acolsbrows, int bcols)</div><div class="ttdoc">Multiplies out = a b. </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00120">misc_math.h:120</a></div></div>
+<div class="ttc" id="group___flight_math_html_gab066fad7258a2674ce1e4452f52ea72c"><div class="ttname"><a href="group___flight_math.html#gab066fad7258a2674ce1e4452f52ea72c">matrix_mul</a></div><div class="ttdeci">static void matrix_mul(const float *a, const float *b, float *out, int arows, int acolsbrows, int bcols)</div><div class="ttdoc">Multiplies out = a b. </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00121">misc_math.h:121</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00446">446</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00447">447</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -914,9 +917,9 @@ Variables</h2></td></tr>
 <div class="line">                float (*my_out)[rows*cols] = &amp;(out); <a class="code" href="group___flight_math.html#ga7351518c8117b810205f2644e096af14">\</a></div>
 <div class="line"><a class="code" href="group___flight_math.html#ga7351518c8117b810205f2644e096af14">		matrix_mul_scalar</a>(*my_a, scalar, my_out, rows, cols); \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0);</div>
-<div class="ttc" id="group___flight_math_html_ga7351518c8117b810205f2644e096af14"><div class="ttname"><a href="group___flight_math.html#ga7351518c8117b810205f2644e096af14">matrix_mul_scalar</a></div><div class="ttdeci">static void matrix_mul_scalar(const float *a, float scalar, float *out, int rows, int cols)</div><div class="ttdoc">Multiplies a matrix by a scalar Can safely be done in-place. (e.g. is slow and not vectorized/unrolle...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00192">misc_math.h:192</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga7351518c8117b810205f2644e096af14"><div class="ttname"><a href="group___flight_math.html#ga7351518c8117b810205f2644e096af14">matrix_mul_scalar</a></div><div class="ttdeci">static void matrix_mul_scalar(const float *a, float scalar, float *out, int rows, int cols)</div><div class="ttdoc">Multiplies a matrix by a scalar Can safely be done in-place. (e.g. is slow and not vectorized/unrolle...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00193">misc_math.h:193</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00455">455</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00456">456</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -968,9 +971,9 @@ Variables</h2></td></tr>
 <div class="line">                float (*my_out)[rows*cols] = &amp;(out); <a class="code" href="group___flight_math.html#gaddd594bcd5fc2db0faae806b23039000">\</a></div>
 <div class="line"><a class="code" href="group___flight_math.html#gaddd594bcd5fc2db0faae806b23039000">		matrix_sub</a>(*my_a, *my_b, *my_out, rows, cols) \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0);</div>
-<div class="ttc" id="group___flight_math_html_gaddd594bcd5fc2db0faae806b23039000"><div class="ttname"><a href="group___flight_math.html#gaddd594bcd5fc2db0faae806b23039000">matrix_sub</a></div><div class="ttdeci">static void matrix_sub(const float *a, const float *b, float *out, int rows, int cols)</div><div class="ttdoc">Subtracts two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled) ...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00240">misc_math.h:240</a></div></div>
+<div class="ttc" id="group___flight_math_html_gaddd594bcd5fc2db0faae806b23039000"><div class="ttname"><a href="group___flight_math.html#gaddd594bcd5fc2db0faae806b23039000">matrix_sub</a></div><div class="ttdeci">static void matrix_sub(const float *a, const float *b, float *out, int rows, int cols)</div><div class="ttdoc">Subtracts two matrices Can safely be done in-place. (e.g. is slow and not vectorized/unrolled) ...</div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00241">misc_math.h:241</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00472">472</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00473">473</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1022,9 +1025,9 @@ Variables</h2></td></tr>
 <div class="line">                float (*my_out)[rows*cols] = &amp;(out); <a class="code" href="group___flight_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">\</a></div>
 <div class="line"><a class="code" href="group___flight_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">		matrix_transpose</a>(*my_a, *my_b, *my_out, rows, cols) \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0);</div>
-<div class="ttc" id="group___flight_math_html_ga7db4bbfcdc84fac92fffadcc240ed626"><div class="ttname"><a href="group___flight_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">matrix_transpose</a></div><div class="ttdeci">static void matrix_transpose(const float *a, float *out, int arows, int acols)</div><div class="ttdoc">Transposes a matrix. </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00264">misc_math.h:264</a></div></div>
+<div class="ttc" id="group___flight_math_html_ga7db4bbfcdc84fac92fffadcc240ed626"><div class="ttname"><a href="group___flight_math.html#ga7db4bbfcdc84fac92fffadcc240ed626">matrix_transpose</a></div><div class="ttdeci">static void matrix_transpose(const float *a, float *out, int arows, int acols)</div><div class="ttdoc">Transposes a matrix. </div><div class="ttdef"><b>Definition:</b> <a href="misc__math_8h_source.html#l00265">misc_math.h:265</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00481">481</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00482">482</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1237,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00577">577</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00578">578</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1251,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00405">405</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00406">406</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1425,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00274">274</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00275">275</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1526,6 +1529,36 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga12db239ad82c9e80aaf78e561ddba82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_channel_deadband </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deadband</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply deadband to Roll/Pitch/Yaw channels. </p>
+
+<p>Definition at line <a class="el" href="misc__math_8c_source.html#l00373">373</a> of file <a class="el" href="misc__math_8c_source.html">misc_math.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gae7fa5c4383337339fe17371cd78d7264"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1914,7 +1947,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00571">571</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00572">572</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +1973,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00540">540</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00541">541</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -1976,7 +2009,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00565">565</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00566">566</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -2002,7 +2035,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00553">553</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00554">554</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -2073,7 +2106,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00080">80</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00081">81</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -2891,7 +2924,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00215">215</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00216">216</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -2943,7 +2976,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00387">387</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00388">388</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3017,7 +3050,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00120">120</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00121">121</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3083,7 +3116,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00192">192</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00193">193</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3145,7 +3178,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if a good pseudoinverse was found, false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00422">422</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00423">423</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3199,7 +3232,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00279">279</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00280">280</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3247,7 +3280,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00353">353</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00354">354</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3314,7 +3347,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00240">240</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00241">241</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -3374,7 +3407,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00264">264</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00265">265</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>
@@ -4525,7 +4558,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>approximately sin(x / 2^15 * 2 * PI) in Q12 form </dd></dl>
 
-<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00089">89</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
+<p>Definition at line <a class="el" href="misc__math_8h_source.html#l00090">90</a> of file <a class="el" href="misc__math_8h_source.html">misc_math.h</a>.</p>
 
 </div>
 </div>

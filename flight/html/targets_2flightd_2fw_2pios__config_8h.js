@@ -8,13 +8,11 @@ var targets_2flightd_2fw_2pios__config_8h =
     [ "IDLE_COUNTS_PER_SEC_AT_NO_LOAD", "targets_2flightd_2fw_2pios__config_8h.html#ga9be33d810838161edf9412377209a4cf", null ],
     [ "IRQSTACK_LIMIT_CRITICAL", "targets_2flightd_2fw_2pios__config_8h.html#gab45890a416f5e2177b434d93d89c362f", null ],
     [ "IRQSTACK_LIMIT_WARNING", "targets_2flightd_2fw_2pios__config_8h.html#gae97115db8cae2e29462308550992c153", null ],
-    [ "PIOS_GCSRCVR_MAX_DEVS", "targets_2flightd_2fw_2pios__config_8h.html#gaabace8a48f34ff0dcedf34ff7bd4917f", null ],
     [ "PIOS_INCLUDE_ADC", "targets_2flightd_2fw_2pios__config_8h.html#ga28ae61b1409ab23bb43878990ee0d625", null ],
     [ "PIOS_INCLUDE_ANNUNC", "targets_2flightd_2fw_2pios__config_8h.html#ga464462d5068d115f79148efdffefb418", null ],
     [ "PIOS_INCLUDE_BL_HELPER", "targets_2flightd_2fw_2pios__config_8h.html#ga88ebbd46d7ad2cb2374e4886c3194b5e", null ],
     [ "PIOS_INCLUDE_COM", "targets_2flightd_2fw_2pios__config_8h.html#gaf8a678a8ce2142cdd87b127b78a89add", null ],
     [ "PIOS_INCLUDE_FLASH", "targets_2flightd_2fw_2pios__config_8h.html#gaab491daf240fca6cc9e3243ce8e8712d", null ],
-    [ "PIOS_INCLUDE_GCSRCVR", "targets_2flightd_2fw_2pios__config_8h.html#gaf9438740f04ee4c48c717dd2ed484e95", null ],
     [ "PIOS_INCLUDE_GPS", "targets_2flightd_2fw_2pios__config_8h.html#ga2439a3372d8825b721a19c1bba571b0a", null ],
     [ "PIOS_INCLUDE_GPS_NMEA_PARSER", "targets_2flightd_2fw_2pios__config_8h.html#gaab8c5635b668265d63540a4f3daed710", null ],
     [ "PIOS_INCLUDE_GPS_UBX_PARSER", "targets_2flightd_2fw_2pios__config_8h.html#gaa3918665ab627c1af88867276f1f204b", null ],
@@ -33,8 +31,8 @@ var targets_2flightd_2fw_2pios__config_8h =
     [ "PIOS_INCLUDE_SIMSENSORS_YASIM", "targets_2flightd_2fw_2pios__config_8h.html#ga73d02ccef77cc8bad13d281e320d7112", null ],
     [ "PIOS_INCLUDE_SYS", "targets_2flightd_2fw_2pios__config_8h.html#ga95aafc3f5062ea4c6f0b33bd678371a8", null ],
     [ "PIOS_INCLUDE_TCP", "targets_2flightd_2fw_2pios__config_8h.html#ga27e83ecf992e5685416437279db758e4", null ],
+    [ "PIOS_INCLUDE_UAVTALKRCVR", "targets_2flightd_2fw_2pios__config_8h.html#ga8c903973cb8a1624a67af5625e512838", null ],
     [ "PIOS_INCLUDE_UDP", "targets_2flightd_2fw_2pios__config_8h.html#ga360ac5e44a96f7b92ac6427b4c7e217e", null ],
     [ "PIOS_RCVR_MAX_CHANNELS", "targets_2flightd_2fw_2pios__config_8h.html#gad9504d2174472de2d678814e430678c9", null ],
-    [ "PIOS_RCVR_MAX_DEVS", "targets_2flightd_2fw_2pios__config_8h.html#ga78aa2952a1e1e2bf0a2128a8e297c557", null ],
     [ "PIOS_TELEM_STACK_SIZE", "targets_2flightd_2fw_2pios__config_8h.html#ga8e7da2e5a9c1811977f1878761b0f74d", null ]
 ];

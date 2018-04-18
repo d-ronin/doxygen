@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('targets_2flightd_2fw_2pios__config_8h_
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___sim.html#ga360ac5e44a96f7b92ac6427b4c7e217e">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_UDP</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___sim.html#ga48264c60bf3326bbbb3d3d9057cde39c">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SERVO</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___sim.html#gac34deb93cfe0b86c0c3f3fdd297af181">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RCVR</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___sim.html#gaf9438740f04ee4c48c717dd2ed484e95">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_GCSRCVR</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___sim.html#ga8c903973cb8a1624a67af5625e512838">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_UAVTALKRCVR</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___sim.html#ga3442464c6b8e8869621e4b7103782cec">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_IAP</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___sim.html#ga88ebbd46d7ad2cb2374e4886c3194b5e">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BL_HELPER</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___sim.html#gaab491daf240fca6cc9e3243ce8e8712d">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLASH</span></div>
@@ -158,66 +158,64 @@ $(document).ready(function(){initNavTree('targets_2flightd_2fw_2pios__config_8h_
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___sim.html#gaa16397b163ac65bc5fc212b03e69dfa8">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_RTC</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___sim.html#gad9504d2174472de2d678814e430678c9">   61</a></span>&#160;<span class="preprocessor">#define PIOS_RCVR_MAX_CHANNELS                  12</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group___sim.html#ga78aa2952a1e1e2bf0a2128a8e297c557">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_RCVR_MAX_DEVS              3</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___sim.html#gaabace8a48f34ff0dcedf34ff7bd4917f">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_GCSRCVR_MAX_DEVS           3</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* COM Module */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___sim.html#ga8e7da2e5a9c1811977f1878761b0f74d">   66</a></span>&#160;<span class="preprocessor">#define PIOS_TELEM_STACK_SIZE           PIOS_THREAD_STACK_SIZE_MIN</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* Stabilization options */</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___sim.html#ga6e7afec1958cbda03ec47ff50da7b749">   70</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING              4000</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___sim.html#gad3537a058b1f030fb6243c09a2532112">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             1000</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___sim.html#gae97115db8cae2e29462308550992c153">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          150</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___sim.html#gab45890a416f5e2177b434d93d89c362f">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         80</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___sim.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           80</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___sim.html#ga33b8e7ed32bafe7b1e55e18b832854ce">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* COM Module */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___sim.html#ga8e7da2e5a9c1811977f1878761b0f74d">   64</a></span>&#160;<span class="preprocessor">#define PIOS_TELEM_STACK_SIZE           PIOS_THREAD_STACK_SIZE_MIN</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* Stabilization options */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___sim.html#ga6e7afec1958cbda03ec47ff50da7b749">   68</a></span>&#160;<span class="preprocessor">#define HEAP_LIMIT_WARNING              4000</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___sim.html#gad3537a058b1f030fb6243c09a2532112">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEAP_LIMIT_CRITICAL             1000</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___sim.html#gae97115db8cae2e29462308550992c153">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_WARNING          150</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___sim.html#gab45890a416f5e2177b434d93d89c362f">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IRQSTACK_LIMIT_CRITICAL         80</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___sim.html#ga08ff1c9a9c1942647c4ee60b087e4ca6">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_WARNING           80</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___sim.html#ga33b8e7ed32bafe7b1e55e18b832854ce">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CPULOAD_LIMIT_CRITICAL          95</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___sim.html#ga9be33d810838161edf9412377209a4cf">   75</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD 9959</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___sim.html#ga9be33d810838161edf9412377209a4cf">   77</a></span>&#160;<span class="preprocessor">#define IDLE_COUNTS_PER_SEC_AT_NO_LOAD 9959</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Enable POI tracking mode for camera stabilization</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___sim.html#gaf4039c0d196379cbfb36489300f94ffe">   80</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="comment">/* Disabled by default-- for sim, provide a log file on command line</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * Still have the capability to enable here if you&#39;re working on / developing</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * streamfs</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/* Hardware support on Linux only */</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SERIAL</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_I2C</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SPI</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_RANGEFINDER</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPTICALFLOW</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MS5611</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MS5611_SPI</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMM150</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMX055</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OMNIP</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLYINGPIO</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PX4FLOW</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HMC5883_NO_EXTI</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___sim.html#gaf159b3948a9d1cc2f7ec6d3ba148bd31">  113</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group___sim.html#ga28ae61b1409ab23bb43878990ee0d625">  114</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ADC</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if !(defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___sim.html#ga73d02ccef77cc8bad13d281e320d7112">  117</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS_YASIM</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Enable POI tracking mode for camera stabilization</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___sim.html#gaf4039c0d196379cbfb36489300f94ffe">   78</a></span>&#160;<span class="preprocessor">#define CAMERASTAB_POI_MODE</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span><span class="comment">/* Disabled by default-- for sim, provide a log file on command line</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * Still have the capability to enable here if you&#39;re working on / developing</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * streamfs</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_LOG_TO_FLASH</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_LOGFLASH_SECT_SIZE 0x10000   </span><span class="comment">/* 64kb */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/* Hardware support on Linux only */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SERIAL</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_I2C</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SPI</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_RANGEFINDER</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OPTICALFLOW</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_MS5611</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_MS5611_SPI</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMP280</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMM150</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_BMX055</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_OMNIP</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_FLYINGPIO</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_PX4FLOW</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5883</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_HMC5883_NO_EXTI</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_HMC5983</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group___sim.html#gaf159b3948a9d1cc2f7ec6d3ba148bd31">  111</a></span>&#160;<span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group___sim.html#ga28ae61b1409ab23bb43878990ee0d625">  112</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_ADC</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if !(defined(_WIN32) || defined(WIN32) || defined(__MINGW32__))</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___sim.html#ga73d02ccef77cc8bad13d281e320d7112">  115</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PIOS_INCLUDE_SIMSENSORS_YASIM</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_POSIX_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_CONFIG_POSIX_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

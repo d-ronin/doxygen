@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>dRonin: flight/PiOS/inc/pios_gcsrcvr_priv.h File Reference</title>
+<title>dRonin: flight/PiOS/Common/pios_uavtalkrcvr.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('pios__gcsrcvr__priv_8h.html','');});
+$(document).ready(function(){initNavTree('pios__uavtalkrcvr_8c.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,46 +106,32 @@ $(document).ready(function(){initNavTree('pios__gcsrcvr__priv_8h.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">pios_gcsrcvr_priv.h File Reference<div class="ingroups"><a class="el" href="group___p_i_o_s___g_c_s_r_c_v_r.html">GCS Receiver Input Functions</a></div></div>  </div>
+<div class="title">pios_uavtalkrcvr.c File Reference<div class="ingroups"><a class="el" href="group___p_i_o_s___u_a_v_t_a_l_k_r_c_v_r.html">Receiver-over-UAVTALK Input Functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>GCS receiver private functions.  
+<p>GCS/UAVTalk Input functions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="pios_8h_source.html">pios.h</a>&gt;</code><br/>
-<code>#include &quot;<a class="el" href="uavobjectmanager_8h_source.html">uavobjectmanager.h</a>&quot;</code><br/>
-<code>#include &quot;gcsreceiver.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="pios_8h_source.html">pios.h</a>&quot;</code><br/>
 </div>
-<p><a href="pios__gcsrcvr__priv_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga6a374abf68f36f70072d5d14929f9b4c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga6a374abf68f36f70072d5d14929f9b4c">PIOS_GCSRCVR_Init</a> (uintptr_t *gcsrcvr_id)</td></tr>
-<tr class="separator:ga6a374abf68f36f70072d5d14929f9b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga05df21a11af3217d085cd5928583a35e"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structpios__rcvr__driver.html">pios_rcvr_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___g_c_s_r_c_v_r.html#ga05df21a11af3217d085cd5928583a35e">pios_gcsrcvr_rcvr_driver</a></td></tr>
-<tr class="separator:ga05df21a11af3217d085cd5928583a35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p><a href="pios__uavtalkrcvr_8c_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GCS receiver private functions. </p>
+<div class="textblock"><p>GCS/UAVTalk Input functions. </p>
 <dl class="section author"><dt>Author</dt><dd>The OpenPilot Team, <a href="http://www.openpilot.org">http://www.openpilot.org</a> Copyright (C) 2010. </dd>
 <dd>
-Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2012-2013 </dd></dl>
+Tau Labs, <a href="http://taulabs.org,">http://taulabs.org,</a> Copyright (C) 2013 </dd>
+<dd>
+dRonin, <a href="http://dronin.org">http://dronin.org</a> Copyright (C) 2015-2018 </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>The GNU Public License (GPL) Version 3 </dd></dl>
 
-<p>Definition in file <a class="el" href="pios__gcsrcvr__priv_8h_source.html">pios_gcsrcvr_priv.h</a>.</p>
+<p>Definition in file <a class="el" href="pios__uavtalkrcvr_8c_source.html">pios_uavtalkrcvr.c</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_fad6fa281ca7e047076b33e1c7de279c.html">inc</a></li><li class="navelem"><a class="el" href="pios__gcsrcvr__priv_8h.html">pios_gcsrcvr_priv.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aa98a92d0ee4a874a8da6d1a4d95ab49.html">flight</a></li><li class="navelem"><a class="el" href="dir_ac3fbb36119e65880e303e3064eb8ec4.html">PiOS</a></li><li class="navelem"><a class="el" href="dir_f047d9fa97264c0a92fbf09cd6020ae2.html">Common</a></li><li class="navelem"><a class="el" href="pios__uavtalkrcvr_8c.html">pios_uavtalkrcvr.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>

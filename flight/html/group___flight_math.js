@@ -127,6 +127,7 @@ var group___flight_math =
     [ "lqg_t", "group___flight_math.html#gabddd39dfffa3ddf892e56c4957abe71e", null ],
     [ "lqr_t", "group___flight_math.html#ga24ec3d5cf383d82d4735d6efb729556e", null ],
     [ "rtkf_t", "group___flight_math.html#ga506bde267554d0f719127bceeeda98d0", null ],
+    [ "apply_channel_deadband", "group___flight_math.html#ga12db239ad82c9e80aaf78e561ddba82f", null ],
     [ "bound_min_max", "group___flight_math.html#gae7fa5c4383337339fe17371cd78d7264", null ],
     [ "bound_sym", "group___flight_math.html#gab53f96ff60025bfea084300f2cec575e", null ],
     [ "circular_modulus_deg", "group___flight_math.html#gab7dbfea1a0ae1bd6758c2cb07b278ebf", null ],

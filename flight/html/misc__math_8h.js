@@ -16,6 +16,7 @@ var misc__math_8h =
     [ "s_qP", "misc__math_8h.html#a5da054c0df014f54c84ea22657f0e625", null ],
     [ "sign", "misc__math_8h.html#gac740756f75e53153605d2702b30d2a9d", null ],
     [ "TOL_EPS", "misc__math_8h.html#gaa3abbb071ff91dece199dfaa18dbb1ac", null ],
+    [ "apply_channel_deadband", "misc__math_8h.html#ga12db239ad82c9e80aaf78e561ddba82f", null ],
     [ "bound_min_max", "misc__math_8h.html#gae7fa5c4383337339fe17371cd78d7264", null ],
     [ "bound_sym", "misc__math_8h.html#gab53f96ff60025bfea084300f2cec575e", null ],
     [ "circular_modulus_deg", "misc__math_8h.html#gab7dbfea1a0ae1bd6758c2cb07b278ebf", null ],

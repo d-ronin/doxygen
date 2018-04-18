@@ -1,5 +1,6 @@
 var NAVTREEINDEX82 =
 {
+"pios__crc_8h.html#ga9b8334c23865f134520837d58406e224":[5,0,0,4,1,21,0],
 "pios__crc_8h.html#gaa0719ccb53a4a29e7123ff950364e2b5":[5,0,0,4,1,21,1],
 "pios__crc_8h_source.html":[5,0,0,4,1,21],
 "pios__crossfire_8c.html":[5,0,0,4,0,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX82 =
 "pios__flashfs__logfs_8c.html":[5,0,0,4,0,15],
 "pios__flashfs__logfs_8c.html#a0d20c5513f9d5200fcb8f203df48b0e9":[5,0,0,4,0,15,41],
 "pios__flashfs__logfs_8c.html#a13a6109e91ad12705df96a0f2743c630":[5,0,0,4,0,15,44],
-"pios__flashfs__logfs_8c.html#a431ff00458feadb3820732c6bc71e78b":[5,0,0,4,0,15,42],
-"pios__flashfs__logfs_8c.html#a4901f00431a2c948153bd4f187fce556":[5,0,0,4,0,15,37]
+"pios__flashfs__logfs_8c.html#a431ff00458feadb3820732c6bc71e78b":[5,0,0,4,0,15,42]
 };

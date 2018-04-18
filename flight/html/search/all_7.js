@@ -202,7 +202,6 @@ var searchData=
   ['gyrx',['gyrx',['../structmsp__raw__imu.html#acf18466ea9fd4a648e0b436930ed2a79',1,'msp_raw_imu::gyrx()'],['../msp__messages_8h.html#a52187113855feb7ce3c5cee420e1dff8',1,'gyrx():&#160;msp_messages.h']]],
   ['gyry',['gyry',['../structmsp__raw__imu.html#a43db29e01b471e6835e5572445876010',1,'msp_raw_imu::gyry()'],['../msp__messages_8h.html#aaffb9141fb142e3517d92f79a08f8baf',1,'gyry():&#160;msp_messages.h']]],
   ['gyrz',['gyrz',['../structmsp__raw__imu.html#a6c8a484db4588166dd270d20e2b8d026',1,'msp_raw_imu::gyrz()'],['../msp__messages_8h.html#a832daa78045bcf2249c49412c05112bd',1,'gyrz():&#160;msp_messages.h']]],
-  ['gcs_20receiver_20input_20functions',['GCS Receiver Input Functions',['../group___p_i_o_s___g_c_s_r_c_v_r.html',1,'']]],
   ['graupner_20hott_20receiver_20functions',['Graupner HoTT receiver functions',['../group___p_i_o_s___h_s_u_m.html',1,'']]],
   ['generic_20initcall_20macros',['Generic Initcall Macros',['../group___p_i_o_s___i_n_i_t_c_a_l_l.html',1,'']]],
   ['generic_20sensor_20interface_20functions',['Generic sensor interface functions',['../group___p_i_o_s___s_e_n_s_o_r_s.html',1,'']]]

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('gcscontrol_8cpp_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    manControlSettingsUAVO = ManualControlSettings::GetInstance(objMngr);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_ASSERT(manControlSettingsUAVO);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_gcsReceiver = GCSReceiver::GetInstance(objMngr);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_gcsReceiver = UAVTalkReceiver::GetInstance(objMngr);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_ASSERT(m_gcsReceiver);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('gcscontrol_8cpp_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        inverseMapping[<a class="code" href="_o_p_plots_8m.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>] = <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// Assign this channel to GCS control</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        manControlSettingsUAVO-&gt;setChannelGroups(x, ManualControlSettings::CHANNELGROUPS_GCS);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        manControlSettingsUAVO-&gt;setChannelGroups(x, ManualControlSettings::CHANNELGROUPS_UAVTALK);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// Set the ranges to match what the widget produces</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        manControlSettingsUAVO-&gt;setChannelNumber(x, <a class="code" href="_o_p_plots_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> + 1);</div>
@@ -313,7 +313,7 @@ $(document).ready(function(){initNavTree('gcscontrol_8cpp_source.html','');});
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    uint8_t channel = inverseMapping[channeltype];</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">if</span> (value &gt; 1 || value &lt; -1 || channel &gt;= GCSReceiver::CHANNEL_NUMELEM || !hasControl)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">if</span> (value &gt; 1 || value &lt; -1 || channel &gt;= UAVTalkReceiver::CHANNEL_NUMELEM || !hasControl)</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    quint16 pwmValue;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span> (value &gt;= 0)</div>

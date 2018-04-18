@@ -1,5 +1,8 @@
 var NAVTREEINDEX94 =
 {
+"serial__4way_8h.html#a0644f1121715e03abce3dc3cf6fa3450":[5,0,0,3,32,0,0,0,4],
+"serial__4way_8h.html#a1570ef030af710b938185adbb8de586a":[5,0,0,3,32,0,0,0,5],
+"serial__4way_8h.html#a33236cebdffb32b66da07bba4072e622":[5,0,0,3,32,0,0,0,0],
 "serial__4way_8h.html#a36231bb94ed3926e19ea6a54ecc93a9d":[5,0,0,3,32,0,0,0,6],
 "serial__4way_8h.html#a798e875f129248d449af0684b619cc34":[5,0,0,3,32,0,0,0,3],
 "serial__4way_8h.html#a91cf331b57d9cd511b1b9c562edb1cd7":[5,0,0,3,32,0,0,0,12],
@@ -145,8 +148,8 @@ var NAVTREEINDEX94 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,17,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,17,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,17,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,9],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,10],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,17,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,17,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,17,1,3,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX94 =
 "stabilization_8c.html#ga56b8cbab2a7d849f0ecd55aaf958b12f":[5,0,0,3,21,4,30],
 "stabilization_8c.html#ga58a015fd4d36073a9ac7d9c342da93c7":[5,0,0,3,21,4,56],
 "stabilization_8c.html#ga6190a7e200476bf20da7b47ac4107973":[5,0,0,3,21,4,39],
-"stabilization_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,3,21,4,5],
-"stabilization_8c.html#ga65bd5436ab7391543f788078be86eab8":[5,0,0,3,21,4,32],
-"stabilization_8c.html#ga6c8999e5e09a2051669e97456ba1676d":[5,0,0,3,21,4,27],
-"stabilization_8c.html#ga78d25370d0fd4e3c56320a7ce71372dc":[5,0,0,3,21,4,33]
+"stabilization_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,3,21,4,5]
 };

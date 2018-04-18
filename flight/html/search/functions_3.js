@@ -28,7 +28,7 @@ var searchData=
   ['check_5fsafe_5fautonomous',['check_safe_autonomous',['../group___libraries.html#ga6209acbff7034720890b0398f8517743',1,'sanitycheck.c']]],
   ['check_5fsafe_5fto_5farm',['check_safe_to_arm',['../group___libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c',1,'sanitycheck.c']]],
   ['check_5fstabilization_5frates',['check_stabilization_rates',['../group___libraries.html#ga01463951db48cdec6bf0f5172c4d5314',1,'sanitycheck.c']]],
-  ['check_5fstabilization_5fsettings',['check_stabilization_settings',['../group___libraries.html#ga60c5e9627f313afd5461477ff3dd6f8d',1,'sanitycheck.c']]],
+  ['check_5fstabilization_5fsettings',['check_stabilization_settings',['../group___libraries.html#gadd6c95f5fd14d4ae70c1ee9335d9883a',1,'sanitycheck.c']]],
   ['check_5fsyndrome',['check_syndrome',['../ecc_8h.html#a75555933650a50987a9c5b39aff2b26a',1,'check_syndrome(void):&#160;rs.c'],['../rs_8c.html#a75555933650a50987a9c5b39aff2b26a',1,'check_syndrome(void):&#160;rs.c']]],
   ['check_5fzone',['Check_Zone',['../mgrs_8c.html#a350aca95307433acfa308431610fb89c',1,'mgrs.c']]],
   ['checkposition',['checkPosition',['../group___geo_fence.html#ga2634f0ac928ab60b7ec86a668d51884e',1,'geofence.c']]],

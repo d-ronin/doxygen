@@ -29,6 +29,7 @@ var group___p_i_o_s___h_a_l =
     [ "PIOS_HAL_ConfigureSerialSpeed", "group___p_i_o_s___h_a_l.html#gab68be40fb4878e02c12c06d84755933c", null ],
     [ "PIOS_HAL_CriticalError", "group___p_i_o_s___h_a_l.html#gab9a9f4422da783012950ae6468130423", null ],
     [ "PIOS_HAL_Err2811", "group___p_i_o_s___h_a_l.html#ga5bfd22af27c57f8ca40362ee858f256f", null ],
+    [ "PIOS_HAL_InitUAVTalkReceiver", "group___p_i_o_s___h_a_l.html#ga45620cf44066e9c2d165f8295bacc6c1", null ],
     [ "PIOS_HAL_SetTarget", "group___p_i_o_s___h_a_l.html#ga85a99e6ec539bd6c3514265cfbc3d068", null ],
     [ "pios_com_bridge_id", "group___p_i_o_s___h_a_l.html#gac040f05fa048688ee0269c2768698a14", null ],
     [ "pios_com_gps_id", "group___p_i_o_s___h_a_l.html#ga05dca72c42c6c2b33fa62b8ee0fcb2ea", null ],

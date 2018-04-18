@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">b66307d</span>
+   &#160;<span id="projectnumber">2742cac</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -2249,262 +2249,255 @@ $(document).ready(function(){initNavTree('quanton_2board-info_2board__hw__defs_8
 <div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;</div>
 <div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;<span class="preprocessor">#endif //PPM</span></div>
 <div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;</div>
-<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_GCSRCVR)</span></div>
-<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__gcsrcvr__priv_8h.html">pios_gcsrcvr_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_GCSRCVR */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;</div>
-<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RCVR)</span></div>
-<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__rcvr__priv_8h.html">pios_rcvr_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RCVR */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;</div>
-<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB)</span></div>
-<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__usb__priv_8h.html">pios_usb_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;</div>
-<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cfg.html">pios_usb_cfg</a> pios_usb_main_cfg = {</div>
-<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;        .<a class="code" href="structpios__usb__cfg.html#acf35c94952c92310b680586289e5b5b0">irq</a> = {</div>
-<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;                .<a class="code" href="structstm32__irq.html#aef3e74e894b4025023b6be1ab8b4348f">init</a>    = {</div>
-<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;                        .NVIC_IRQChannel                   = OTG_FS_IRQn,</div>
-<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
-<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
-<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;                        .NVIC_IRQChannelCmd                = ENABLE,</div>
-<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;                },</div>
-<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;        },</div>
-<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        .vsense = {</div>
-<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                .gpio = GPIOA,</div>
-<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;                .init = {</div>
-<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;                        .GPIO_Pin   = GPIO_Pin_9,</div>
-<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;                        .GPIO_Speed = GPIO_Speed_25MHz,</div>
-<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
-<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP,</div>
-<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;                },</div>
-<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;        }</div>
-<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;};</div>
-<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;</div>
-<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cfg.html">pios_usb_cfg</a> * PIOS_BOARD_HW_DEFS_GetUsbCfg (uint32_t <a class="code" href="group___flying_p_i_o.html#gafd500425ba7592375fa8c030c9bb8113">board_revision</a>)</div>
-<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;{</div>
-<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;        <span class="keywordflow">return</span> &amp;pios_usb_main_cfg;</div>
-<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;}</div>
-<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;</div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__board__data__priv_8h.html">pios_usb_board_data_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__desc__hid__cdc__priv_8h.html">pios_usb_desc_hid_cdc_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__desc__hid__only__priv_8h.html">pios_usb_desc_hid_only_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usbhook_8h.html">pios_usbhook.h</a>&quot;</span></div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;</div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_COM_MSG)</span></div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__com__msg__priv_8h.html">pios_com_msg_priv.h</a>&gt;</span></div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;</div>
-<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_COM_MSG */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; !defined(PIOS_INCLUDE_USB_CDC)</span></div>
-<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a>&gt;</span></div>
-<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;</div>
-<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a> <a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a> = {</div>
-<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;        .<a class="code" href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">data_if</a> = 0,</div>
-<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;        .data_rx_ep = 1,</div>
-<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;        .data_tx_ep = 1,</div>
-<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;};</div>
-<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; !PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; defined(PIOS_INCLUDE_USB_CDC)</span></div>
-<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__usb__cdc__priv_8h.html">pios_usb_cdc_priv.h</a>&gt;</span></div>
-<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;</div>
-<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a> <a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a> = {</div>
-<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;        .<a class="code" href="structpios__usb__cdc__cfg.html#a2a35b38ff91a638b973191977eab30e1">ctrl_if</a> = 0,</div>
-<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;        .ctrl_tx_ep = 2,</div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_RCVR)</span></div>
+<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__rcvr__priv_8h.html">pios_rcvr_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_RCVR */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB)</span></div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__usb__priv_8h.html">pios_usb_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;</div>
+<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cfg.html">pios_usb_cfg</a> pios_usb_main_cfg = {</div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;        .<a class="code" href="structpios__usb__cfg.html#acf35c94952c92310b680586289e5b5b0">irq</a> = {</div>
+<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;                .<a class="code" href="structstm32__irq.html#aef3e74e894b4025023b6be1ab8b4348f">init</a>    = {</div>
+<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;                        .NVIC_IRQChannel                   = OTG_FS_IRQn,</div>
+<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga6ac74d56f67f74f449b252c6ba6bbd61">PIOS_IRQ_PRIO_HIGHEST</a>,</div>
+<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;                        .NVIC_IRQChannelSubPriority        = 0,</div>
+<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;                        .NVIC_IRQChannelCmd                = ENABLE,</div>
+<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;                },</div>
+<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;        },</div>
+<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;        .vsense = {</div>
+<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;                .gpio = GPIOA,</div>
+<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;                .init = {</div>
+<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;                        .GPIO_Pin   = GPIO_Pin_9,</div>
+<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;                        .GPIO_Speed = GPIO_Speed_25MHz,</div>
+<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;                        .GPIO_Mode  = GPIO_Mode_IN,</div>
+<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;                        .GPIO_PuPd  = GPIO_PuPd_UP,</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                },</div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;        }</div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;};</div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;</div>
+<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cfg.html">pios_usb_cfg</a> * PIOS_BOARD_HW_DEFS_GetUsbCfg (uint32_t <a class="code" href="group___flying_p_i_o.html#gafd500425ba7592375fa8c030c9bb8113">board_revision</a>)</div>
+<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;{</div>
+<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;        <span class="keywordflow">return</span> &amp;pios_usb_main_cfg;</div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;}</div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;</div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__board__data__priv_8h.html">pios_usb_board_data_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__desc__hid__cdc__priv_8h.html">pios_usb_desc_hid_cdc_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usb__desc__hid__only__priv_8h.html">pios_usb_desc_hid_only_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__usbhook_8h.html">pios_usbhook.h</a>&quot;</span></div>
+<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;</div>
+<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_COM_MSG)</span></div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__com__msg__priv_8h.html">pios_com_msg_priv.h</a>&gt;</span></div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;</div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_COM_MSG */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; !defined(PIOS_INCLUDE_USB_CDC)</span></div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a>&gt;</span></div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;</div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a> <a class="code" href="structpios__usb__hid__cfg.html">pios_usb_hid_cfg</a> = {</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;        .<a class="code" href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">data_if</a> = 0,</div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;        .data_rx_ep = 1,</div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;        .data_tx_ep = 1,</div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;};</div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; !PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_USB_HID) &amp;&amp; defined(PIOS_INCLUDE_USB_CDC)</span></div>
+<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="pios__usb__cdc__priv_8h.html">pios_usb_cdc_priv.h</a>&gt;</span></div>
+<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;</div>
+<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a> <a class="code" href="structpios__usb__cdc__cfg.html">pios_usb_cdc_cfg</a> = {</div>
+<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;        .<a class="code" href="structpios__usb__cdc__cfg.html#a2a35b38ff91a638b973191977eab30e1">ctrl_if</a> = 0,</div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;        .ctrl_tx_ep = 2,</div>
+<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;</div>
+<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;        .data_if = 1,</div>
+<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;        .data_rx_ep = 3,</div>
+<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;        .data_tx_ep = 3,</div>
+<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;};</div>
+<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;</div>
+<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a>&gt;</span></div>
 <div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;</div>
-<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;        .data_if = 1,</div>
-<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;        .data_rx_ep = 3,</div>
-<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;        .data_tx_ep = 3,</div>
-<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;};</div>
-<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;</div>
-<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pios__usb__hid__priv_8h.html">pios_usb_hid_priv.h</a>&gt;</span></div>
-<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;</div>
-<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span>pios_usb_hid_cfg pios_usb_hid_cfg = {</div>
-<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;        .<a class="code" href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">data_if</a> = 2,</div>
-<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;        .data_rx_ep = 1,</div>
-<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;        .data_tx_ep = 1,</div>
-<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;};</div>
-<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
-<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__adc__priv_8h.html">pios_adc_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__internal__adc__priv_8h.html">pios_internal_adc_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;</div>
-<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;<span class="keywordtype">void</span> PIOS_ADC_DMA_irq_handler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ae2db7510e2a167e06cbdbb9a3053e34e">DMA2_Stream0_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_ADC_DMA_irq_handler&quot;)));</div>
-<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;struct <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> pios_adc_cfg = {</div>
-<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;        .<a class="code" href="structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281">adc_dev_master</a> = ADC1,</div>
-<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;        .dma = {</div>
-<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160;                .irq = {</div>
-<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;                        .flags = (DMA_FLAG_TCIF0 | DMA_FLAG_TEIF0 | DMA_FLAG_HTIF0),</div>
-<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;                        .init = {</div>
-<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;                                .NVIC_IRQChannel = DMA2_Stream0_IRQn,</div>
-<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;                                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
-<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;                                .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;                                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;<span class="keyword">const</span> <span class="keyword">struct </span>pios_usb_hid_cfg pios_usb_hid_cfg = {</div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;        .<a class="code" href="structpios__usb__hid__cfg.html#abd31d71097757582b57064851a5c576a">data_if</a> = 2,</div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;        .data_rx_ep = 1,</div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;        .data_tx_ep = 1,</div>
+<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;};</div>
+<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* PIOS_INCLUDE_USB_HID &amp;&amp; PIOS_INCLUDE_USB_CDC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_ADC)</span></div>
+<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__adc__priv_8h.html">pios_adc_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pios__internal__adc__priv_8h.html">pios_internal_adc_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;</div>
+<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;<span class="keywordtype">void</span> PIOS_ADC_DMA_irq_handler(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ae2db7510e2a167e06cbdbb9a3053e34e">DMA2_Stream0_IRQHandler</a>(<span class="keywordtype">void</span>) <a class="code" href="struct____attribute____.html">__attribute__</a>((alias(&quot;PIOS_ADC_DMA_irq_handler&quot;)));</div>
+<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;struct <a class="code" href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a> pios_adc_cfg = {</div>
+<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;        .<a class="code" href="structpios__internal__adc__cfg.html#ac7b103c963e512c7104bbcd2b6dc3281">adc_dev_master</a> = ADC1,</div>
+<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;        .dma = {</div>
+<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;                .irq = {</div>
+<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;                        .flags = (DMA_FLAG_TCIF0 | DMA_FLAG_TEIF0 | DMA_FLAG_HTIF0),</div>
+<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;                        .init = {</div>
+<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;                                .NVIC_IRQChannel = DMA2_Stream0_IRQn,</div>
+<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;                                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
+<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;                                .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;                                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160;                        },</div>
+<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;                },</div>
+<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;                .rx = {</div>
+<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;                        .channel = DMA2_Stream0,</div>
+<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;                        .init = {</div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;                                .DMA_Channel = DMA_Channel_0,</div>
+<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;                                .DMA_PeripheralBaseAddr = (uint32_t)&amp;ADC1-&gt;DR</div>
 <div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;                        },</div>
-<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;                },</div>
-<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;                .rx = {</div>
-<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;                        .channel = DMA2_Stream0,</div>
-<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;                        .init = {</div>
-<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;                                .DMA_Channel = DMA_Channel_0,</div>
-<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                                .DMA_PeripheralBaseAddr = (uint32_t)&amp;ADC1-&gt;DR</div>
-<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                        },</div>
-<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;                }</div>
-<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;        },</div>
-<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;        .half_flag = DMA_IT_HTIF0,</div>
-<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;        .full_flag = DMA_IT_TCIF0,</div>
-<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;        .adc_pins = {                                                                                 \</div>
-<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;                { GPIOA, GPIO_Pin_0,     ADC_Channel_0 },                                                 \</div>
-<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;                { GPIOA, GPIO_Pin_1,     ADC_Channel_1 },                                                 \</div>
-<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;                { NULL,  0,              ADC_Channel_Vrefint },           <span class="comment">/* Voltage reference */</span>         \</div>
-<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;                { NULL,  0,              ADC_Channel_TempSensor },        <span class="comment">/* Temperature sensor */</span>        \</div>
-<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;        },</div>
-<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;        .adc_pin_count = 4</div>
-<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;};</div>
-<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;</div>
-<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;<span class="keywordtype">void</span> PIOS_ADC_DMA_irq_handler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;{</div>
-<div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;        <span class="comment">/* Call into the generic code to handle the IRQ for this specific device */</span></div>
-<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga5bd59140ceb564b00a50f2f7a499bb7b">PIOS_INTERNAL_ADC_DMA_Handler</a>();</div>
-<div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;}</div>
-<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;</div>
-<div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
-<div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&quot;</span></div>
-<div class="line"><a name="l02293"></a><span class="lineno"> 2293</span>&#160;</div>
-<div class="line"><a name="l02294"></a><span class="lineno"> 2294</span>&#160;<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> <a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>;</div>
-<div class="line"><a name="l02295"></a><span class="lineno"> 2295</span>&#160;</div>
-<div class="line"><a name="l02296"></a><span class="lineno"> 2296</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ab02a4d7ad3f3dce551947ec2f7ae6913">DMA2_Stream6_IRQHandler</a>() {</div>
-<div class="line"><a name="l02297"></a><span class="lineno"> 2297</span>&#160;        <a class="code" href="group___p_i_o_s___w_s2811.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(pios_ws2811);</div>
-<div class="line"><a name="l02298"></a><span class="lineno"> 2298</span>&#160;}</div>
-<div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;</div>
-<div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> = {</div>
-<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;        .<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a> = TIM1,</div>
-<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;        .clock_cfg = {</div>
-<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB2_COUNTER_CLOCK / 12000000) - 1,</div>
-<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
-<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
-<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                .TIM_Period = 25,       <span class="comment">/* 2.083us/bit */</span></div>
-<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;        },</div>
-<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;        .<a class="code" href="structpios__ws2811__cfg.html#a890d1ea2ffa5de7e360923948b6a9710">interrupt</a> = {</div>
-<div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;                .NVIC_IRQChannel = DMA2_Stream6_IRQn,</div>
-<div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
-<div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l02312"></a><span class="lineno"> 2312</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l02313"></a><span class="lineno"> 2313</span>&#160;        },</div>
-<div class="line"><a name="l02314"></a><span class="lineno"> 2314</span>&#160;        .bit_clear_dma_tcif = DMA_IT_TCIF6,</div>
-<div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;        .fall_time_l = 5,                       <span class="comment">/* 333ns */</span></div>
-<div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;        .fall_time_h = 11,                      <span class="comment">/* 833ns */</span></div>
-<div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;        .led_gpio = GPIOA,</div>
-<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;        .gpio_pin = GPIO_Pin_10,                <span class="comment">/* PA10 / IN1 */</span></div>
-<div class="line"><a name="l02319"></a><span class="lineno"> 2319</span>&#160;        .bit_set_dma_stream = DMA2_Stream4,</div>
-<div class="line"><a name="l02320"></a><span class="lineno"> 2320</span>&#160;        .bit_set_dma_channel = DMA_Channel_6,   <span class="comment">/* 2/S4/C6: TIM1 CH4|TRIG|COM */</span></div>
-<div class="line"><a name="l02321"></a><span class="lineno"> 2321</span>&#160;        .bit_clear_dma_stream = DMA2_Stream6,</div>
-<div class="line"><a name="l02322"></a><span class="lineno"> 2322</span>&#160;        .bit_clear_dma_channel = DMA_Channel_0, <span class="comment">/* 0/S6/C0: TIM1 CH1|CH2|CH3 */</span></div>
-<div class="line"><a name="l02323"></a><span class="lineno"> 2323</span>&#160;};</div>
-<div class="line"><a name="l02324"></a><span class="lineno"> 2324</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l02325"></a><span class="lineno"> 2325</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
-<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__mpu_8h.html">pios_mpu.h</a>&quot;</span></div>
-<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_mpu_cfg <a class="code" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">__exti_config</a> = {</div>
-<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;        .vector = <a class="code" href="group___p_i_o_s___m_p_u.html#ga2c48f0dc4c8d21a6a9d7704f11662df5">PIOS_MPU_IRQHandler</a>,</div>
-<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160;        .line = EXTI_Line0,</div>
-<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160;        .pin = {</div>
-<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160;                .init = {</div>
-<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160;                        .GPIO_Pin = GPIO_Pin_0,</div>
-<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
-<div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l02341"></a><span class="lineno"> 2341</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
-<div class="line"><a name="l02342"></a><span class="lineno"> 2342</span>&#160;                },</div>
-<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;        },</div>
-<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;        .irq = {</div>
-<div class="line"><a name="l02345"></a><span class="lineno"> 2345</span>&#160;                .init = {</div>
-<div class="line"><a name="l02346"></a><span class="lineno"> 2346</span>&#160;                        .NVIC_IRQChannel = EXTI0_IRQn,</div>
-<div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#gab5f09e1f881124b5131fd88fc013fddd">PIOS_IRQ_PRIO_HIGH</a>,</div>
-<div class="line"><a name="l02348"></a><span class="lineno"> 2348</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l02349"></a><span class="lineno"> 2349</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160;                },</div>
-<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;        },</div>
-<div class="line"><a name="l02352"></a><span class="lineno"> 2352</span>&#160;        .exti = {</div>
-<div class="line"><a name="l02353"></a><span class="lineno"> 2353</span>&#160;                .init = {</div>
-<div class="line"><a name="l02354"></a><span class="lineno"> 2354</span>&#160;                        .EXTI_Line = EXTI_Line0, <span class="comment">// matches above GPIO pin</span></div>
-<div class="line"><a name="l02355"></a><span class="lineno"> 2355</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
-<div class="line"><a name="l02356"></a><span class="lineno"> 2356</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
-<div class="line"><a name="l02357"></a><span class="lineno"> 2357</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
-<div class="line"><a name="l02358"></a><span class="lineno"> 2358</span>&#160;                },</div>
-<div class="line"><a name="l02359"></a><span class="lineno"> 2359</span>&#160;        },</div>
-<div class="line"><a name="l02360"></a><span class="lineno"> 2360</span>&#160;};</div>
-<div class="line"><a name="l02361"></a><span class="lineno"> 2361</span>&#160;</div>
-<div class="line"><a name="l02362"></a><span class="lineno"> 2362</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> <a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> = {</div>
-<div class="line"><a name="l02363"></a><span class="lineno"> 2363</span>&#160;        .<a class="code" href="structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676">exti_cfg</a> = &amp;pios_exti_mpu_cfg,</div>
-<div class="line"><a name="l02364"></a><span class="lineno"> 2364</span>&#160;        .default_samplerate = 1000,</div>
-<div class="line"><a name="l02365"></a><span class="lineno"> 2365</span>&#160;        .orientation = <a class="code" href="group___p_i_o_s___m_p_u.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca44e09c68ee414995a034a8bb492af748">PIOS_MPU_TOP_180DEG</a></div>
-<div class="line"><a name="l02366"></a><span class="lineno"> 2366</span>&#160;};</div>
-<div class="line"><a name="l02367"></a><span class="lineno"> 2367</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MPU */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02368"></a><span class="lineno"> 2368</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02369"></a><span class="lineno"> 2369</span>&#160;</div>
-<div class="line"><a name="l02373"></a><span class="lineno"> 2373</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_HMC5883)</span></div>
-<div class="line"><a name="l02374"></a><span class="lineno"> 2374</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__hmc5883__priv_8h.html">pios_hmc5883_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_hmc5883_internal_cfg __exti_config = {</div>
-<div class="line"><a name="l02376"></a><span class="lineno"> 2376</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___h_m_c5883.html#gab0704d6b1a42b8adb4d8918fc1b19fc4">PIOS_HMC5883_IRQHandler</a>,</div>
-<div class="line"><a name="l02377"></a><span class="lineno"> 2377</span>&#160;        .line = EXTI_Line1,</div>
-<div class="line"><a name="l02378"></a><span class="lineno"> 2378</span>&#160;        .pin = {</div>
-<div class="line"><a name="l02379"></a><span class="lineno"> 2379</span>&#160;                .gpio = GPIOC,</div>
-<div class="line"><a name="l02380"></a><span class="lineno"> 2380</span>&#160;                .init = {</div>
-<div class="line"><a name="l02381"></a><span class="lineno"> 2381</span>&#160;                        .GPIO_Pin = GPIO_Pin_1,</div>
-<div class="line"><a name="l02382"></a><span class="lineno"> 2382</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
-<div class="line"><a name="l02383"></a><span class="lineno"> 2383</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
-<div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
-<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
-<div class="line"><a name="l02386"></a><span class="lineno"> 2386</span>&#160;                },</div>
-<div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160;        },</div>
-<div class="line"><a name="l02388"></a><span class="lineno"> 2388</span>&#160;        .irq = {</div>
-<div class="line"><a name="l02389"></a><span class="lineno"> 2389</span>&#160;                .init = {</div>
-<div class="line"><a name="l02390"></a><span class="lineno"> 2390</span>&#160;                        .NVIC_IRQChannel = EXTI1_IRQn,</div>
-<div class="line"><a name="l02391"></a><span class="lineno"> 2391</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
-<div class="line"><a name="l02392"></a><span class="lineno"> 2392</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
-<div class="line"><a name="l02393"></a><span class="lineno"> 2393</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
-<div class="line"><a name="l02394"></a><span class="lineno"> 2394</span>&#160;                },</div>
-<div class="line"><a name="l02395"></a><span class="lineno"> 2395</span>&#160;        },</div>
-<div class="line"><a name="l02396"></a><span class="lineno"> 2396</span>&#160;        .exti = {</div>
-<div class="line"><a name="l02397"></a><span class="lineno"> 2397</span>&#160;                .init = {</div>
-<div class="line"><a name="l02398"></a><span class="lineno"> 2398</span>&#160;                        .EXTI_Line = EXTI_Line1, <span class="comment">// matches above GPIO pin</span></div>
-<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
-<div class="line"><a name="l02400"></a><span class="lineno"> 2400</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
-<div class="line"><a name="l02401"></a><span class="lineno"> 2401</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
-<div class="line"><a name="l02402"></a><span class="lineno"> 2402</span>&#160;                },</div>
-<div class="line"><a name="l02403"></a><span class="lineno"> 2403</span>&#160;        },</div>
-<div class="line"><a name="l02404"></a><span class="lineno"> 2404</span>&#160;};</div>
-<div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;</div>
-<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__hmc5883__cfg.html">pios_hmc5883_cfg</a> pios_hmc5883_internal_cfg = {</div>
-<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;        .<a class="code" href="structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612">exti_cfg</a> = &amp;pios_exti_hmc5883_internal_cfg,</div>
-<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;        .M_ODR = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga5f28bb715ab7110308770dfcc0566ca6">PIOS_HMC5883_ODR_75</a>,</div>
-<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160;        .Meas_Conf = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga52046d9a3fa5df1a77f9afe526d64df0">PIOS_HMC5883_MEASCONF_NORMAL</a>,</div>
-<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;        .Gain = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga419255a8ada8101facfac6c59682c605">PIOS_HMC5883_GAIN_1_9</a>,</div>
-<div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;        .Mode = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga1275acab4f5f3dd22f62bf1524dbe931">PIOS_HMC5883_MODE_CONTINUOUS</a>,</div>
-<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;        .Default_Orientation = <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353">PIOS_HMC5883_TOP_90DEG</a>,</div>
-<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;};</div>
-<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02419"></a><span class="lineno"> 2419</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
-<div class="line"><a name="l02420"></a><span class="lineno"> 2420</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ms5611__priv_8h.html">pios_ms5611_priv.h</a>&quot;</span></div>
-<div class="line"><a name="l02421"></a><span class="lineno"> 2421</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a> <a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a> = {</div>
-<div class="line"><a name="l02422"></a><span class="lineno"> 2422</span>&#160;        .<a class="code" href="structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c">oversampling</a> = <a class="code" href="group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3a26d56baed9a0b84d0b05eb809f9a5596">MS5611_OSR_1024</a>,</div>
-<div class="line"><a name="l02423"></a><span class="lineno"> 2423</span>&#160;        .temperature_interleaving = 1,</div>
-<div class="line"><a name="l02424"></a><span class="lineno"> 2424</span>&#160;};</div>
-<div class="line"><a name="l02425"></a><span class="lineno"> 2425</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MS5611 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02426"></a><span class="lineno"> 2426</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;                }</div>
+<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;        },</div>
+<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;        .half_flag = DMA_IT_HTIF0,</div>
+<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;        .full_flag = DMA_IT_TCIF0,</div>
+<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;        .adc_pins = {                                                                                 \</div>
+<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                { GPIOA, GPIO_Pin_0,     ADC_Channel_0 },                                                 \</div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                { GPIOA, GPIO_Pin_1,     ADC_Channel_1 },                                                 \</div>
+<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;                { NULL,  0,              ADC_Channel_Vrefint },           <span class="comment">/* Voltage reference */</span>         \</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;                { NULL,  0,              ADC_Channel_TempSensor },        <span class="comment">/* Temperature sensor */</span>        \</div>
+<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;        },</div>
+<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;        .adc_pin_count = 4</div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;};</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;</div>
+<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;<span class="keywordtype">void</span> PIOS_ADC_DMA_irq_handler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;{</div>
+<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;        <span class="comment">/* Call into the generic code to handle the IRQ for this specific device */</span></div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;        <a class="code" href="group___p_i_o_s___i_n_t_e_r_n_a_l___a_d_c.html#ga5bd59140ceb564b00a50f2f7a499bb7b">PIOS_INTERNAL_ADC_DMA_Handler</a>();</div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;}</div>
+<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;</div>
+<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_ADC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_WS2811)</span></div>
+<div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ws2811_8h.html">pios_ws2811.h</a>&quot;</span></div>
+<div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;</div>
+<div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;<a class="code" href="structws2811__dev__s.html">ws2811_dev_t</a> <a class="code" href="group___brain_r_e1.html#ga6989625716018e17ce36590971457436">pios_ws2811</a>;</div>
+<div class="line"><a name="l02288"></a><span class="lineno"> 2288</span>&#160;</div>
+<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_t_m32_f4xx_2inc_2pios__chibios__transition__priv_8h.html#ab02a4d7ad3f3dce551947ec2f7ae6913">DMA2_Stream6_IRQHandler</a>() {</div>
+<div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160;        <a class="code" href="group___p_i_o_s___w_s2811.html#ga9ff4e6655cbf956d974132eb979f8fe6">PIOS_WS2811_dma_interrupt_handler</a>(pios_ws2811);</div>
+<div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;}</div>
+<div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;</div>
+<div class="line"><a name="l02293"></a><span class="lineno"> 2293</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> <a class="code" href="structpios__ws2811__cfg.html">pios_ws2811_cfg</a> = {</div>
+<div class="line"><a name="l02294"></a><span class="lineno"> 2294</span>&#160;        .<a class="code" href="group___p_i_o_s___w_s2811.html#ga5ffa5b6470f20d95297a8f5dfa7903bc">timer</a> = TIM1,</div>
+<div class="line"><a name="l02295"></a><span class="lineno"> 2295</span>&#160;        .clock_cfg = {</div>
+<div class="line"><a name="l02296"></a><span class="lineno"> 2296</span>&#160;                .TIM_Prescaler = (PIOS_PERIPHERAL_APB2_COUNTER_CLOCK / 12000000) - 1,</div>
+<div class="line"><a name="l02297"></a><span class="lineno"> 2297</span>&#160;                .TIM_ClockDivision = TIM_CKD_DIV1,</div>
+<div class="line"><a name="l02298"></a><span class="lineno"> 2298</span>&#160;                .TIM_CounterMode = TIM_CounterMode_Up,</div>
+<div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;                .TIM_Period = 25,       <span class="comment">/* 2.083us/bit */</span></div>
+<div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;        },</div>
+<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;        .<a class="code" href="structpios__ws2811__cfg.html#a890d1ea2ffa5de7e360923948b6a9710">interrupt</a> = {</div>
+<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;                .NVIC_IRQChannel = DMA2_Stream6_IRQn,</div>
+<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
+<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;        },</div>
+<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;        .bit_clear_dma_tcif = DMA_IT_TCIF6,</div>
+<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;        .fall_time_l = 5,                       <span class="comment">/* 333ns */</span></div>
+<div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;        .fall_time_h = 11,                      <span class="comment">/* 833ns */</span></div>
+<div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;        .led_gpio = GPIOA,</div>
+<div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;        .gpio_pin = GPIO_Pin_10,                <span class="comment">/* PA10 / IN1 */</span></div>
+<div class="line"><a name="l02312"></a><span class="lineno"> 2312</span>&#160;        .bit_set_dma_stream = DMA2_Stream4,</div>
+<div class="line"><a name="l02313"></a><span class="lineno"> 2313</span>&#160;        .bit_set_dma_channel = DMA_Channel_6,   <span class="comment">/* 2/S4/C6: TIM1 CH4|TRIG|COM */</span></div>
+<div class="line"><a name="l02314"></a><span class="lineno"> 2314</span>&#160;        .bit_clear_dma_stream = DMA2_Stream6,</div>
+<div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;        .bit_clear_dma_channel = DMA_Channel_0, <span class="comment">/* 0/S6/C0: TIM1 CH1|CH2|CH3 */</span></div>
+<div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;};</div>
+<div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02322"></a><span class="lineno"> 2322</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MPU)</span></div>
+<div class="line"><a name="l02323"></a><span class="lineno"> 2323</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__mpu_8h.html">pios_mpu.h</a>&quot;</span></div>
+<div class="line"><a name="l02324"></a><span class="lineno"> 2324</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_mpu_cfg <a class="code" href="group___p_i_o_s___e_x_t_i.html#gab9cc1b2b3233d1228a96fd81446ecb6f">__exti_config</a> = {</div>
+<div class="line"><a name="l02325"></a><span class="lineno"> 2325</span>&#160;        .vector = <a class="code" href="group___p_i_o_s___m_p_u.html#ga2c48f0dc4c8d21a6a9d7704f11662df5">PIOS_MPU_IRQHandler</a>,</div>
+<div class="line"><a name="l02326"></a><span class="lineno"> 2326</span>&#160;        .line = EXTI_Line0,</div>
+<div class="line"><a name="l02327"></a><span class="lineno"> 2327</span>&#160;        .pin = {</div>
+<div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;                .init = {</div>
+<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;                        .GPIO_Pin = GPIO_Pin_0,</div>
+<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
+<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
+<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;                },</div>
+<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160;        },</div>
+<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160;        .irq = {</div>
+<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;                .init = {</div>
+<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;                        .NVIC_IRQChannel = EXTI0_IRQn,</div>
+<div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#gab5f09e1f881124b5131fd88fc013fddd">PIOS_IRQ_PRIO_HIGH</a>,</div>
+<div class="line"><a name="l02341"></a><span class="lineno"> 2341</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l02342"></a><span class="lineno"> 2342</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;                },</div>
+<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;        },</div>
+<div class="line"><a name="l02345"></a><span class="lineno"> 2345</span>&#160;        .exti = {</div>
+<div class="line"><a name="l02346"></a><span class="lineno"> 2346</span>&#160;                .init = {</div>
+<div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;                        .EXTI_Line = EXTI_Line0, <span class="comment">// matches above GPIO pin</span></div>
+<div class="line"><a name="l02348"></a><span class="lineno"> 2348</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
+<div class="line"><a name="l02349"></a><span class="lineno"> 2349</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
+<div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
+<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;                },</div>
+<div class="line"><a name="l02352"></a><span class="lineno"> 2352</span>&#160;        },</div>
+<div class="line"><a name="l02353"></a><span class="lineno"> 2353</span>&#160;};</div>
+<div class="line"><a name="l02354"></a><span class="lineno"> 2354</span>&#160;</div>
+<div class="line"><a name="l02355"></a><span class="lineno"> 2355</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> <a class="code" href="structpios__mpu__cfg.html">pios_mpu_cfg</a> = {</div>
+<div class="line"><a name="l02356"></a><span class="lineno"> 2356</span>&#160;        .<a class="code" href="structpios__mpu__cfg.html#a98ac98911cbf8e5acbd51f7dd5bab676">exti_cfg</a> = &amp;pios_exti_mpu_cfg,</div>
+<div class="line"><a name="l02357"></a><span class="lineno"> 2357</span>&#160;        .default_samplerate = 1000,</div>
+<div class="line"><a name="l02358"></a><span class="lineno"> 2358</span>&#160;        .orientation = <a class="code" href="group___p_i_o_s___m_p_u.html#ggacc99e7ae5662bb8d1cd9141f2798a20ca44e09c68ee414995a034a8bb492af748">PIOS_MPU_TOP_180DEG</a></div>
+<div class="line"><a name="l02359"></a><span class="lineno"> 2359</span>&#160;};</div>
+<div class="line"><a name="l02360"></a><span class="lineno"> 2360</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MPU */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02361"></a><span class="lineno"> 2361</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02362"></a><span class="lineno"> 2362</span>&#160;</div>
+<div class="line"><a name="l02366"></a><span class="lineno"> 2366</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_HMC5883)</span></div>
+<div class="line"><a name="l02367"></a><span class="lineno"> 2367</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__hmc5883__priv_8h.html">pios_hmc5883_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02368"></a><span class="lineno"> 2368</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__exti__cfg.html">pios_exti_cfg</a> pios_exti_hmc5883_internal_cfg __exti_config = {</div>
+<div class="line"><a name="l02369"></a><span class="lineno"> 2369</span>&#160;        .<a class="code" href="structpios__exti__cfg.html#a7fb58b83fd0a79e8aa956a683317723c">vector</a> = <a class="code" href="group___p_i_o_s___h_m_c5883.html#gab0704d6b1a42b8adb4d8918fc1b19fc4">PIOS_HMC5883_IRQHandler</a>,</div>
+<div class="line"><a name="l02370"></a><span class="lineno"> 2370</span>&#160;        .line = EXTI_Line1,</div>
+<div class="line"><a name="l02371"></a><span class="lineno"> 2371</span>&#160;        .pin = {</div>
+<div class="line"><a name="l02372"></a><span class="lineno"> 2372</span>&#160;                .gpio = GPIOC,</div>
+<div class="line"><a name="l02373"></a><span class="lineno"> 2373</span>&#160;                .init = {</div>
+<div class="line"><a name="l02374"></a><span class="lineno"> 2374</span>&#160;                        .GPIO_Pin = GPIO_Pin_1,</div>
+<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;                        .GPIO_Speed = GPIO_Speed_100MHz,</div>
+<div class="line"><a name="l02376"></a><span class="lineno"> 2376</span>&#160;                        .GPIO_Mode = GPIO_Mode_IN,</div>
+<div class="line"><a name="l02377"></a><span class="lineno"> 2377</span>&#160;                        .GPIO_OType = GPIO_OType_OD,</div>
+<div class="line"><a name="l02378"></a><span class="lineno"> 2378</span>&#160;                        .GPIO_PuPd = GPIO_PuPd_NOPULL,</div>
+<div class="line"><a name="l02379"></a><span class="lineno"> 2379</span>&#160;                },</div>
+<div class="line"><a name="l02380"></a><span class="lineno"> 2380</span>&#160;        },</div>
+<div class="line"><a name="l02381"></a><span class="lineno"> 2381</span>&#160;        .irq = {</div>
+<div class="line"><a name="l02382"></a><span class="lineno"> 2382</span>&#160;                .init = {</div>
+<div class="line"><a name="l02383"></a><span class="lineno"> 2383</span>&#160;                        .NVIC_IRQChannel = EXTI1_IRQn,</div>
+<div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;                        .NVIC_IRQChannelPreemptionPriority = <a class="code" href="group___a_q32.html#ga7faa93f4a0aaaeeff604e8207d1531c2">PIOS_IRQ_PRIO_LOW</a>,</div>
+<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                        .NVIC_IRQChannelSubPriority = 0,</div>
+<div class="line"><a name="l02386"></a><span class="lineno"> 2386</span>&#160;                        .NVIC_IRQChannelCmd = ENABLE,</div>
+<div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160;                },</div>
+<div class="line"><a name="l02388"></a><span class="lineno"> 2388</span>&#160;        },</div>
+<div class="line"><a name="l02389"></a><span class="lineno"> 2389</span>&#160;        .exti = {</div>
+<div class="line"><a name="l02390"></a><span class="lineno"> 2390</span>&#160;                .init = {</div>
+<div class="line"><a name="l02391"></a><span class="lineno"> 2391</span>&#160;                        .EXTI_Line = EXTI_Line1, <span class="comment">// matches above GPIO pin</span></div>
+<div class="line"><a name="l02392"></a><span class="lineno"> 2392</span>&#160;                        .EXTI_Mode = EXTI_Mode_Interrupt,</div>
+<div class="line"><a name="l02393"></a><span class="lineno"> 2393</span>&#160;                        .EXTI_Trigger = EXTI_Trigger_Rising,</div>
+<div class="line"><a name="l02394"></a><span class="lineno"> 2394</span>&#160;                        .EXTI_LineCmd = ENABLE,</div>
+<div class="line"><a name="l02395"></a><span class="lineno"> 2395</span>&#160;                },</div>
+<div class="line"><a name="l02396"></a><span class="lineno"> 2396</span>&#160;        },</div>
+<div class="line"><a name="l02397"></a><span class="lineno"> 2397</span>&#160;};</div>
+<div class="line"><a name="l02398"></a><span class="lineno"> 2398</span>&#160;</div>
+<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__hmc5883__cfg.html">pios_hmc5883_cfg</a> pios_hmc5883_internal_cfg = {</div>
+<div class="line"><a name="l02400"></a><span class="lineno"> 2400</span>&#160;        .<a class="code" href="structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612">exti_cfg</a> = &amp;pios_exti_hmc5883_internal_cfg,</div>
+<div class="line"><a name="l02401"></a><span class="lineno"> 2401</span>&#160;        .M_ODR = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga5f28bb715ab7110308770dfcc0566ca6">PIOS_HMC5883_ODR_75</a>,</div>
+<div class="line"><a name="l02402"></a><span class="lineno"> 2402</span>&#160;        .Meas_Conf = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga52046d9a3fa5df1a77f9afe526d64df0">PIOS_HMC5883_MEASCONF_NORMAL</a>,</div>
+<div class="line"><a name="l02403"></a><span class="lineno"> 2403</span>&#160;        .Gain = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga419255a8ada8101facfac6c59682c605">PIOS_HMC5883_GAIN_1_9</a>,</div>
+<div class="line"><a name="l02404"></a><span class="lineno"> 2404</span>&#160;        .Mode = <a class="code" href="group___p_i_o_s___h_m_c5883.html#ga1275acab4f5f3dd22f62bf1524dbe931">PIOS_HMC5883_MODE_CONTINUOUS</a>,</div>
+<div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;        .Default_Orientation = <a class="code" href="group___p_i_o_s___h_m_c5883.html#gga9b5f48f8223effbfd7dbb15297957119ac6e8b95b0acf44c225caf2898d1cb353">PIOS_HMC5883_TOP_90DEG</a>,</div>
+<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;};</div>
+<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_HMC5883 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;<span class="preprocessor">#if defined(PIOS_INCLUDE_MS5611)</span></div>
+<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pios__ms5611__priv_8h.html">pios_ms5611_priv.h</a>&quot;</span></div>
+<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a> <a class="code" href="structpios__ms5611__cfg.html">pios_ms5611_cfg</a> = {</div>
+<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;        .<a class="code" href="structpios__ms5611__cfg.html#a07e19545d4961ed113e3413ad0c4965c">oversampling</a> = <a class="code" href="group___p_i_o_s___m_s5611.html#ggab2c6484befa4b5993218d392d4db0bd3a26d56baed9a0b84d0b05eb809f9a5596">MS5611_OSR_1024</a>,</div>
+<div class="line"><a name="l02416"></a><span class="lineno"> 2416</span>&#160;        .temperature_interleaving = 1,</div>
+<div class="line"><a name="l02417"></a><span class="lineno"> 2417</span>&#160;};</div>
+<div class="line"><a name="l02418"></a><span class="lineno"> 2418</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PIOS_INCLUDE_MS5611 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02419"></a><span class="lineno"> 2419</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="structpios__annunc_html_a88b452f9d510fde12b2592105e992b34"><div class="ttname"><a href="structpios__annunc.html#a88b452f9d510fde12b2592105e992b34">pios_annunc::pin</a></div><div class="ttdeci">struct stm32_gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="pios__annunc__priv_8h_source.html#l00039">pios_annunc_priv.h:39</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_gab7416f66a2c392cc5a27e12cbf4e9a07"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#gab7416f66a2c392cc5a27e12cbf4e9a07">pios_flash_jedec_cfg::expect_manufacturer</a></div><div class="ttdeci">uint8_t expect_manufacturer</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__jedec__priv_8h_source.html#l00047">pios_flash_jedec_priv.h:47</a></div></div>
 <div class="ttc" id="structpios__hmc5883__cfg_html_aae44047c48ea4cc3ac2ee01cad886612"><div class="ttname"><a href="structpios__hmc5883__cfg.html#aae44047c48ea4cc3ac2ee01cad886612">pios_hmc5883_cfg::exti_cfg</a></div><div class="ttdeci">const struct pios_exti_cfg * exti_cfg</div><div class="ttdef"><b>Definition:</b> <a href="pios__hmc5883__priv_8h_source.html#l00113">pios_hmc5883_priv.h:113</a></div></div>
@@ -2514,7 +2507,6 @@ $(document).ready(function(){initNavTree('quanton_2board-info_2board__hw__defs_8
 <div class="ttc" id="group___quanton_html_gab21d9960e57e1814f4cf850cf0922d29"><div class="ttname"><a href="group___quanton.html#gab21d9960e57e1814f4cf850cf0922d29">tim_10_11_time_base</a></div><div class="ttdeci">static const TIM_TimeBaseInitTypeDef tim_10_11_time_base</div><div class="ttdef"><b>Definition:</b> <a href="quanton_2board-info_2board__hw__defs_8c_source.html#l01078">board_hw_defs.c:1078</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_m_c5883_html_ga5f28bb715ab7110308770dfcc0566ca6"><div class="ttname"><a href="group___p_i_o_s___h_m_c5883.html#ga5f28bb715ab7110308770dfcc0566ca6">PIOS_HMC5883_ODR_75</a></div><div class="ttdeci">#define PIOS_HMC5883_ODR_75</div><div class="ttdef"><b>Definition:</b> <a href="pios__hmc5883__priv_8h_source.html#l00062">pios_hmc5883_priv.h:62</a></div></div>
 <div class="ttc" id="structpios__internal__adc__cfg_html"><div class="ttname"><a href="structpios__internal__adc__cfg.html">pios_internal_adc_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__internal__adc__priv_8h_source.html#l00054">pios_internal_adc_priv.h:54</a></div></div>
-<div class="ttc" id="pios__gcsrcvr__priv_8h_html"><div class="ttname"><a href="pios__gcsrcvr__priv_8h.html">pios_gcsrcvr_priv.h</a></div><div class="ttdoc">GCS receiver private functions. </div></div>
 <div class="ttc" id="structpios__usart__cfg_html"><div class="ttname"><a href="structpios__usart__cfg.html">pios_usart_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00039">pios_usart_priv.h:39</a></div></div>
 <div class="ttc" id="group___quanton_html_gafd8bf1347faa0684d8737445f2fa5f28"><div class="ttname"><a href="group___quanton.html#gafd8bf1347faa0684d8737445f2fa5f28">pios_tim_servoport_rcvrport_PPM_pins</a></div><div class="ttdeci">static const struct pios_tim_channel pios_tim_servoport_rcvrport_PPM_pins[]</div><div class="ttdef"><b>Definition:</b> <a href="quanton_2board-info_2board__hw__defs_8c_source.html#l01304">board_hw_defs.c:1304</a></div></div>
 <div class="ttc" id="structpios__spi__dev_html"><div class="ttname"><a href="structpios__spi__dev.html">pios_spi_dev</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__spi__priv_8h_source.html#l00038">pios_spi_priv.h:38</a></div></div>

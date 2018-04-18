@@ -154,7 +154,7 @@ var group___libraries =
     [ "check_safe_autonomous", "group___libraries.html#ga6209acbff7034720890b0398f8517743", null ],
     [ "check_safe_to_arm", "group___libraries.html#ga08f1806dd1c0c40a7b8ec179690f883c", null ],
     [ "check_stabilization_rates", "group___libraries.html#ga01463951db48cdec6bf0f5172c4d5314", null ],
-    [ "check_stabilization_settings", "group___libraries.html#ga60c5e9627f313afd5461477ff3dd6f8d", null ],
+    [ "check_stabilization_settings", "group___libraries.html#gadd6c95f5fd14d4ae70c1ee9335d9883a", null ],
     [ "configuration_check", "group___libraries.html#gabcb80832a82e492c119a231984eba10a", null ],
     [ "CovariancePrediction", "group___libraries.html#ga9d0a534dd25bcd432804e56518620795", null ],
     [ "date_from_timestamp", "group___libraries.html#ga69c006c2a42ec890584877c7c0e2f72f", null ],
