@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">fba14e8</span>
+   &#160;<span id="projectnumber">6624bd9</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;GCS</div>
   </td>
@@ -422,8 +422,12 @@ $(document).ready(function(){initNavTree('configattitudewidget_8cpp_source.html'
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        m_ui-&gt;cbCalibrateAccels-&gt;setChecked(have_accel);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        m_ui-&gt;cbCalibrateMags-&gt;setChecked(have_mag);</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (have_accel || have_mag) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        configureSixPoint();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="ttc" id="class_calibration_html_abf64232b5acd7d93c98cf1394b0547d8"><div class="ttname"><a href="class_calibration.html#abf64232b5acd7d93c98cf1394b0547d8">Calibration::updatePlane</a></div><div class="ttdeci">void updatePlane(int position)</div><div class="ttdoc">Change the UAV visualization. </div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_ga945551d9d4d280fe2cd14bc2646d8fbf"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#ga945551d9d4d280fe2cd14bc2646d8fbf">ConfigTaskWidget::autoLoadWidgets</a></div><div class="ttdeci">void autoLoadWidgets()</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00715">configtaskwidget.cpp:715</a></div></div>
 <div class="ttc" id="group___u_a_v_object_widget_utils_html_gae75127fbfffe10458defc31a6a18c0f8"><div class="ttname"><a href="group___u_a_v_object_widget_utils.html#gae75127fbfffe10458defc31a6a18c0f8">ConfigTaskWidget::setDirty</a></div><div class="ttdeci">void setDirty(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="configtaskwidget_8cpp_source.html#l00542">configtaskwidget.cpp:542</a></div></div>
