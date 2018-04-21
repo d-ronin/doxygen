@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6624bd9</span>
+   &#160;<span id="projectnumber">73c52d5</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -586,6 +586,8 @@ TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memitem:ga19adea83f637e9c47997ee9cd0b89756"><td class="memItemLeft" align="right" valign="top">static const struct <br class="typebreak"/>
 <a class="el" href="structpios__tim__channel.html">pios_tim_channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_r_f3_e.html#ga19adea83f637e9c47997ee9cd0b89756">pios_tim_servoport_pins</a> []</td></tr>
 <tr class="separator:ga19adea83f637e9c47997ee9cd0b89756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacce35e1843680882ef80c4f80d41ed5c"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structpios__servo__cfg.html">pios_servo_cfg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_r_f3_e.html#gacce35e1843680882ef80c4f80d41ed5c">pios_servo_cfg</a></td></tr>
+<tr class="separator:gacce35e1843680882ef80c4f80d41ed5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d0de5022c647a603359c8a7514c658e"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_r_f3_e.html#ga2d0de5022c647a603359c8a7514c658e">pios_com_telem_serial_id</a></td></tr>
 <tr class="separator:ga2d0de5022c647a603359c8a7514c658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05dca72c42c6c2b33fa62b8ee0fcb2ea"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_r_f3_e.html#ga05dca72c42c6c2b33fa62b8ee0fcb2ea">pios_com_gps_id</a></td></tr>
@@ -3787,6 +3789,45 @@ TIM_TimeBaseInitTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sprf3e_2fw_2pios__board_8c_source.html#l00060">60</a> of file <a class="el" href="sprf3e_2fw_2pios__board_8c_source.html">pios_board.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacce35e1843680882ef80c4f80d41ed5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structpios__servo__cfg.html">pios_servo_cfg</a> <a class="el" href="structpios__servo__cfg.html">pios_servo_cfg</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        .tim_oc_init = {</div>
+<div class="line">                .TIM_OCMode = TIM_OCMode_PWM1,</div>
+<div class="line">                .TIM_OutputState = TIM_OutputState_Enable,</div>
+<div class="line">                .TIM_OutputNState = TIM_OutputNState_Disable,</div>
+<div class="line">                .TIM_Pulse = <a class="code" href="group___a_q32.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">PIOS_SERVOS_INITIAL_POSITION</a>,</div>
+<div class="line">                .TIM_OCPolarity = TIM_OCPolarity_High,</div>
+<div class="line">                .TIM_OCNPolarity = TIM_OCPolarity_High,</div>
+<div class="line">                .TIM_OCIdleState = TIM_OCIdleState_Reset,</div>
+<div class="line">                .TIM_OCNIdleState = TIM_OCNIdleState_Reset,</div>
+<div class="line">        },</div>
+<div class="line">        .channels = <a class="code" href="group___s_p_r_f3_e.html#ga19adea83f637e9c47997ee9cd0b89756">pios_tim_servoport_pins</a>,</div>
+<div class="line">        .num_channels = <a class="code" href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a>(<a class="code" href="group___s_p_r_f3_e.html#ga19adea83f637e9c47997ee9cd0b89756">pios_tim_servoport_pins</a>),</div>
+<div class="line">}</div>
+<div class="ttc" id="group___p_i_o_s_html_ga012a11e78fa6eb27613a473e530348e2"><div class="ttname"><a href="group___p_i_o_s.html#ga012a11e78fa6eb27613a473e530348e2">NELEMENTS</a></div><div class="ttdeci">#define NELEMENTS(x)</div><div class="ttdef"><b>Definition:</b> <a href="pios_8h_source.html#l00192">pios.h:192</a></div></div>
+<div class="ttc" id="group___a_q32_html_gaf5d5f32c3a2c9f19c94deb70406d96e4"><div class="ttname"><a href="group___a_q32.html#gaf5d5f32c3a2c9f19c94deb70406d96e4">PIOS_SERVOS_INITIAL_POSITION</a></div><div class="ttdeci">#define PIOS_SERVOS_INITIAL_POSITION</div><div class="ttdef"><b>Definition:</b> <a href="targets_2aq32_2board-info_2pios__board_8h_source.html#l00210">pios_board.h:210</a></div></div>
+<div class="ttc" id="group___s_p_r_f3_e_html_ga19adea83f637e9c47997ee9cd0b89756"><div class="ttname"><a href="group___s_p_r_f3_e.html#ga19adea83f637e9c47997ee9cd0b89756">pios_tim_servoport_pins</a></div><div class="ttdeci">static const struct pios_tim_channel pios_tim_servoport_pins[]</div><div class="ttdef"><b>Definition:</b> <a href="sprf3e_2board-info_2board__hw__defs_8c_source.html#l00619">board_hw_defs.c:619</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="sprf3e_2board-info_2board__hw__defs_8c_source.html#l00755">755</a> of file <a class="el" href="sprf3e_2board-info_2board__hw__defs_8c_source.html">board_hw_defs.c</a>.</p>
 
 </div>
 </div>

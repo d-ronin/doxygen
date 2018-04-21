@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">6624bd9</span>
+   &#160;<span id="projectnumber">73c52d5</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -349,58 +349,61 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usart_8c_source.h
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> PIOS_USART_generic_irq_handler(uintptr_t usart_id)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keyword">struct </span>pios_usart_dev * usart_dev = (<span class="keyword">struct </span>pios_usart_dev *)usart_id;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USART_validate(usart_dev);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">/* Force read of dr after sr to make sure to clear error flags */</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keyword">volatile</span> uint16_t sr = usart_dev-&gt;cfg-&gt;regs-&gt;SR;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">volatile</span> uint8_t dr = usart_dev-&gt;cfg-&gt;regs-&gt;DR;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">/* Check if RXNE flag is set */</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">bool</span> rx_need_yield = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (sr &amp; USART_SR_RXNE) {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                uint8_t byte = dr;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                <span class="keywordflow">if</span> (usart_dev-&gt;rx_in_cb) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        uint16_t rc;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        rc = (usart_dev-&gt;rx_in_cb)(usart_dev-&gt;rx_in_context, &amp;byte, 1, NULL, &amp;rx_need_yield);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        <span class="keywordflow">if</span> (rc &lt; 1) {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                <span class="comment">/* Lost bytes on rx */</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                usart_dev-&gt;rx_dropped += 1;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="comment">/* Check if TXE flag is set */</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordtype">bool</span> tx_need_yield = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">if</span> (sr &amp; USART_SR_TXE) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="keywordflow">if</span> (usart_dev-&gt;tx_out_cb) {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                        uint8_t b;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        uint16_t bytes_to_send;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        bytes_to_send = (usart_dev-&gt;tx_out_cb)(usart_dev-&gt;tx_out_context, &amp;b, 1, NULL, &amp;tx_need_yield);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                        <span class="keywordflow">if</span> (bytes_to_send &gt; 0) {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                <span class="comment">/* Send the byte we&#39;ve been given */</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                usart_dev-&gt;cfg-&gt;regs-&gt;DR = b;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                <span class="comment">/* No bytes to send, disable TXE interrupt */</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                USART_ITConfig(usart_dev-&gt;cfg-&gt;regs, USART_IT_TXE, DISABLE);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                        }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                        <span class="comment">/* No bytes to send, disable TXE interrupt */</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        USART_ITConfig(usart_dev-&gt;cfg-&gt;regs, USART_IT_TXE, DISABLE);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keyword">struct </span>pios_usart_dev * usart_dev = (<span class="keyword">struct </span>pios_usart_dev *)usart_id;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordtype">bool</span> valid = PIOS_USART_validate(usart_dev);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(valid);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">/* Force read of dr after sr to make sure to clear error flags */</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">volatile</span> uint16_t sr = usart_dev-&gt;cfg-&gt;regs-&gt;SR;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keyword">volatile</span> uint8_t dr = usart_dev-&gt;cfg-&gt;regs-&gt;DR;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">/* Check if RXNE flag is set */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">bool</span> rx_need_yield = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span> (sr &amp; USART_SR_RXNE) {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                uint8_t byte = dr;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="keywordflow">if</span> (usart_dev-&gt;rx_in_cb) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        uint16_t rc;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        rc = (usart_dev-&gt;rx_in_cb)(usart_dev-&gt;rx_in_context, &amp;byte, 1, NULL, &amp;rx_need_yield);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keywordflow">if</span> (rc &lt; 1) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                <span class="comment">/* Lost bytes on rx */</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                usart_dev-&gt;rx_dropped += 1;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">/* Check if TXE flag is set */</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordtype">bool</span> tx_need_yield = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span> (sr &amp; USART_SR_TXE) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                <span class="keywordflow">if</span> (usart_dev-&gt;tx_out_cb) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        uint8_t b;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        uint16_t bytes_to_send;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                        bytes_to_send = (usart_dev-&gt;tx_out_cb)(usart_dev-&gt;tx_out_context, &amp;b, 1, NULL, &amp;tx_need_yield);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        <span class="keywordflow">if</span> (bytes_to_send &gt; 0) {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                <span class="comment">/* Send the byte we&#39;ve been given */</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                usart_dev-&gt;cfg-&gt;regs-&gt;DR = b;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                <span class="comment">/* No bytes to send, disable TXE interrupt */</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                USART_ITConfig(usart_dev-&gt;cfg-&gt;regs, USART_IT_TXE, DISABLE);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                        }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        <span class="comment">/* No bytes to send, disable TXE interrupt */</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        USART_ITConfig(usart_dev-&gt;cfg-&gt;regs, USART_IT_TXE, DISABLE);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                }</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a>();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="pios_8h_html"><div class="ttname"><a href="pios_8h.html">pios.h</a></div><div class="ttdoc">Main PiOS header to include all the compiled in PiOS options. </div></div>
 <div class="ttc" id="structpios__usart__cfg_html"><div class="ttname"><a href="structpios__usart__cfg.html">pios_usart_cfg</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__usart__priv_8h_source.html#l00039">pios_usart_priv.h:39</a></div></div>
 <div class="ttc" id="group___flying_p_i_o_html_ga7139cd4baabbbcbab0c1fe6d7d4ae1cc"><div class="ttname"><a href="group___flying_p_i_o.html#ga7139cd4baabbbcbab0c1fe6d7d4ae1cc">USART1_IRQHandler</a></div><div class="ttdeci">void USART1_IRQHandler(void)</div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga5203189b7f78a32deccfb4c03a759063"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a></div><div class="ttdeci">#define PIOS_DEBUG_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00051">pios_debug.h:51</a></div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_ga3491c147532970a1048b0c8b97224ea8"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#ga3491c147532970a1048b0c8b97224ea8">PIOS_IRQ_Epilogue</a></div><div class="ttdeci">#define PIOS_IRQ_Epilogue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00046">pios_irq.h:46</a></div></div>
 <div class="ttc" id="group___p_i_o_s___h_e_a_p_html_gadfdacf339bee3a83f6d164cc0f21ea43"><div class="ttname"><a href="group___p_i_o_s___h_e_a_p.html#gadfdacf339bee3a83f6d164cc0f21ea43">PIOS_malloc</a></div><div class="ttdeci">void * PIOS_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="_common_2pios__heap_8c_source.html#l00125">pios_heap.c:125</a></div></div>
 <div class="ttc" id="structpios__com__driver_html"><div class="ttname"><a href="structpios__com__driver.html">pios_com_driver</a></div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00043">pios_com.h:43</a></div></div>
 <div class="ttc" id="struct____attribute_____html"><div class="ttname"><a href="struct____attribute____.html">__attribute__</a></div><div class="ttdef"><b>Definition:</b> <a href="timeutils_8h_source.html#l00033">timeutils.h:33</a></div></div>
@@ -413,6 +416,7 @@ $(document).ready(function(){initNavTree('_s_t_m32_f10x_2pios__usart_8c_source.h
 <div class="ttc" id="_s_t_m32_f10x_2pios__chibios__transition__priv_8h_html_a8a246e61ab1022b289c251e48f7094aa"><div class="ttname"><a href="_s_t_m32_f10x_2pios__chibios__transition__priv_8h.html#a8a246e61ab1022b289c251e48f7094aa">USART3_IRQHandler</a></div><div class="ttdeci">#define USART3_IRQHandler</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_m32_f10x_2pios__chibios__transition__priv_8h_source.html#l00064">pios_chibios_transition_priv.h:64</a></div></div>
 <div class="ttc" id="pios__flashfs__logfs_8c_html_a57f54349f4fd1cbbb52058812e146af2"><div class="ttname"><a href="pios__flashfs__logfs_8c.html#a57f54349f4fd1cbbb52058812e146af2">magic</a></div><div class="ttdeci">uint32_t magic</div><div class="ttdef"><b>Definition:</b> <a href="pios__flashfs__logfs_8c_source.html#l00072">pios_flashfs_logfs.c:72</a></div></div>
 <div class="ttc" id="group___p_i_o_s___u_s_a_r_t_html_ga24d5df335fd859a76e054646cf634314"><div class="ttname"><a href="group___p_i_o_s___u_s_a_r_t.html#ga24d5df335fd859a76e054646cf634314">PIOS_USART_Init</a></div><div class="ttdeci">int32_t PIOS_USART_Init(uintptr_t *usart_id, const struct pios_usart_cfg *cfg, struct pios_usart_params *params)</div></div>
+<div class="ttc" id="group___p_i_o_s___i_r_q_html_gafba4bc6d53190354086ba90fd5ccb4a0"><div class="ttname"><a href="group___p_i_o_s___i_r_q.html#gafba4bc6d53190354086ba90fd5ccb4a0">PIOS_IRQ_Prologue</a></div><div class="ttdeci">#define PIOS_IRQ_Prologue()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__irq_8h_source.html#l00045">pios_irq.h:45</a></div></div>
 <div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_gaec9900a29855911a9cfbfdd1cf7501b6"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a></div><div class="ttdeci">#define PIOS_Assert(test)</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00052">pios_debug.h:52</a></div></div>
 <div class="ttc" id="group___p_i_o_s___c_o_m_html_ga528568aa0f3011cafec5c453fc030e15"><div class="ttname"><a href="group___p_i_o_s___c_o_m.html#ga528568aa0f3011cafec5c453fc030e15">pios_com_callback</a></div><div class="ttdeci">uint16_t(* pios_com_callback)(uintptr_t context, uint8_t *buf, uint16_t buf_len, uint16_t *headroom, bool *task_woken)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00041">pios_com.h:41</a></div></div>
 <div class="ttc" id="structpios__com__driver_html_aa61ed5772ad75e899e6b26cea762cc25"><div class="ttname"><a href="structpios__com__driver.html#aa61ed5772ad75e899e6b26cea762cc25">pios_com_driver::set_baud</a></div><div class="ttdeci">void(* set_baud)(uintptr_t id, uint32_t baud)</div><div class="ttdef"><b>Definition:</b> <a href="pios__com_8h_source.html#l00044">pios_com.h:44</a></div></div>

@@ -1,5 +1,6 @@
 var sprf3e_2board_info_2board__hw__defs_8c =
 [
+    [ "pios_servo_cfg", "sprf3e_2board-info_2board__hw__defs_8c.html#gacce35e1843680882ef80c4f80d41ed5c", null ],
     [ "pios_tim_servoport_pins", "sprf3e_2board-info_2board__hw__defs_8c.html#ga19adea83f637e9c47997ee9cd0b89756", null ],
     [ "tim_15_cfg", "sprf3e_2board-info_2board__hw__defs_8c.html#gad4ba982563803a6ee75e293e27ea571a", null ],
     [ "tim_16_cfg", "sprf3e_2board-info_2board__hw__defs_8c.html#gaa150315660db35b61bd4dbfef4bd0413", null ],

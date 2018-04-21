@@ -1,5 +1,8 @@
 var NAVTREEINDEX95 =
 {
+"stabilization_8c.html#ga58a015fd4d36073a9ac7d9c342da93c7":[5,0,0,3,21,4,56],
+"stabilization_8c.html#ga6190a7e200476bf20da7b47ac4107973":[5,0,0,3,21,4,39],
+"stabilization_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,3,21,4,5],
 "stabilization_8c.html#ga65bd5436ab7391543f788078be86eab8":[5,0,0,3,21,4,32],
 "stabilization_8c.html#ga6c8999e5e09a2051669e97456ba1676d":[5,0,0,3,21,4,27],
 "stabilization_8c.html#ga78d25370d0fd4e3c56320a7ce71372dc":[5,0,0,3,21,4,33],
@@ -92,12 +95,12 @@ var NAVTREEINDEX95 =
 "struct____attribute____.html":[2,4,36,3],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,4,36,3,19],
 "struct____attribute____.html#a07d69a32a8cbb34c8dc822e7bf30f73e":[2,1,19,19],
-"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,4,36,3,4],
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,1,19,4],
+"struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,4,36,3,4],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,1,19,7],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,4,36,3,7],
-"struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,1,19,10],
 "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,4,36,3,10],
+"struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,1,19,10],
 "struct__msp__pid__item.html":[2,1,2,17],
 "struct__msp__pid__item.html#a779053d5efa4b01b9ff45403ac99adc5":[2,1,2,17,0],
 "struct__msp__pid__item.html#a7ef1a04ff0318e96b1df02410d599e0f":[2,1,2,17,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX95 =
 "struct_u_a_v_talk_connection_data.html#ac81dea7c4ec7ecc0fb400374796e4caf":[2,2,0,9,9],
 "struct_u_a_v_talk_connection_data.html#aced0920927be4acbed96623c736b6f39":[2,2,0,9,0],
 "struct_u_a_v_talk_input_processor.html":[2,2,0,8],
-"struct_u_a_v_talk_input_processor.html#a02e62fc516bd524be74fd36898116d52":[2,2,0,8,5],
-"struct_u_a_v_talk_input_processor.html#a21adf6a8fc9bfc307b883a7b8ff412d1":[2,2,0,8,6],
-"struct_u_a_v_talk_input_processor.html#a39d9853a0ea6695927ffe0930225cfbe":[2,2,0,8,8],
-"struct_u_a_v_talk_input_processor.html#a478ba62595ad5977cbc9c0897e11ee10":[2,2,0,8,7]
+"struct_u_a_v_talk_input_processor.html#a02e62fc516bd524be74fd36898116d52":[2,2,0,8,5]
 };

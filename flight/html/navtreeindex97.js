@@ -1,5 +1,8 @@
 var NAVTREEINDEX97 =
 {
+"structbl__transition.html":[2,6,1,4],
+"structbl__transition.html#a313c9c672fccbdb1e07b173fe4b068d7":[2,6,1,4,0],
+"structbl__transition.html#a965629351798a74ff69aed9a3f8f72d6":[2,6,1,4,1],
 "structcfvert.html":[2,4,2,2],
 "structcfvert.html#a1dec2436b9b320194875265b1c43e663":[2,4,2,2,0],
 "structcfvert.html#a225da070926ec6c6600c47ab0358c59b":[2,4,2,2,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX97 =
 "structhott__text__message.html":[2,4,29,9],
 "structhott__text__message.html#a04361587c85b91297d3b592d1d25650a":[2,4,29,9,5],
 "structhott__text__message.html#a26f2893ab10ba5d7e06c3d002d0a512a":[2,4,29,9,1],
-"structhott__text__message.html#a4026c6d179b2fc72e4acff6794123251":[2,4,29,9,2],
-"structhott__text__message.html#a5bed02a69b8050cbc2e04c0a395e62e7":[2,4,29,9,0],
-"structhott__text__message.html#a860eef8b42a560f9893a1242344a8460":[2,4,29,9,3],
-"structhott__text__message.html#ad98bc9bad3871b767b1a10145cf224cf":[2,4,29,9,4]
+"structhott__text__message.html#a4026c6d179b2fc72e4acff6794123251":[2,4,29,9,2]
 };

@@ -98,7 +98,7 @@ var searchData=
   ['pios_5fsbus_5frcvr_5fdriver',['pios_sbus_rcvr_driver',['../group___p_i_o_s___s_bus.html#gae62eb9f5c8bd04153a8950ba4a75c781',1,'pios_sbus_priv.h']]],
   ['pios_5fserial_5fcom_5fdriver',['pios_serial_com_driver',['../group___p_i_o_s___s_e_r_i_a_l.html#ga69d61c65fae2028c70135677e630d139',1,'pios_serial_com_driver():&#160;pios_serial.c'],['../group___p_i_o_s___s_e_r_i_a_l.html#ga69d61c65fae2028c70135677e630d139',1,'pios_serial_com_driver():&#160;pios_serial.c']]],
   ['pios_5fservo_5f8_5fcfg',['pios_servo_8_cfg',['../group___sparky2.html#ga3fab6b851cf50d78b68e2635a913f704',1,'board_hw_defs.c']]],
-  ['pios_5fservo_5fcfg',['pios_servo_cfg',['../group___sparky2.html#gacce35e1843680882ef80c4f80d41ed5c',1,'board_hw_defs.c']]],
+  ['pios_5fservo_5fcfg',['pios_servo_cfg',['../group___sparky2.html#gacce35e1843680882ef80c4f80d41ed5c',1,'pios_servo_cfg():&#160;board_hw_defs.c'],['../group___s_p_r_f3_e.html#gacce35e1843680882ef80c4f80d41ed5c',1,'pios_servo_cfg():&#160;board_hw_defs.c']]],
   ['pios_5fsrxl_5frcvr_5fdriver',['pios_srxl_rcvr_driver',['../group___p_i_o_s___s_r_x_l.html#gad0d268d3f8dbcbe7374802f83d03886e',1,'pios_srxl.h']]],
   ['pios_5fstandard_5fheap',['pios_standard_heap',['../group___p_i_o_s___h_e_a_p.html#gac37388438964332fa663ddcf91f80a52',1,'pios_heap.c']]],
   ['pios_5fstreamfs_5fcom_5fdriver',['pios_streamfs_com_driver',['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga33fff315cd4bb9d862cd08711a0bbc6c',1,'pios_streamfs_com_driver():&#160;pios_streamfs.c'],['../group___p_i_o_s___f_l_a_s_h_f_s.html#ga33fff315cd4bb9d862cd08711a0bbc6c',1,'pios_streamfs_com_driver():&#160;pios_streamfs.c']]],

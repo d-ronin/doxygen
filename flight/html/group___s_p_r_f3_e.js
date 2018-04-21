@@ -230,6 +230,7 @@ var group___s_p_r_f3_e =
     [ "pios_com_telem_usb_id", "group___s_p_r_f3_e.html#ga513cc36d72b76de2fcb75ff233a79a4a", null ],
     [ "pios_com_vcp_id", "group___s_p_r_f3_e.html#gaaeb3e0d65ed5c6e7b921c54e1ad905db", null ],
     [ "pios_internal_adc_id", "group___s_p_r_f3_e.html#gafb354658d0ba22815d8632d97c062c0b", null ],
+    [ "pios_servo_cfg", "group___s_p_r_f3_e.html#gacce35e1843680882ef80c4f80d41ed5c", null ],
     [ "pios_tim_servoport_pins", "group___s_p_r_f3_e.html#ga19adea83f637e9c47997ee9cd0b89756", null ],
     [ "pios_uavo_settings_fs_id", "group___s_p_r_f3_e.html#gab060f441dd600b08386c0ca1b487217a", null ],
     [ "tim_15_cfg", "group___s_p_r_f3_e.html#gad4ba982563803a6ee75e293e27ea571a", null ],

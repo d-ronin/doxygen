@@ -35,7 +35,6 @@ var dir_fad6fa281ca7e047076b33e1c7de279c =
     [ "pios_flashfs.h", "pios__flashfs_8h.html", "pios__flashfs_8h" ],
     [ "pios_flashfs_logfs_priv.h", "pios__flashfs__logfs__priv_8h.html", "pios__flashfs__logfs__priv_8h" ],
     [ "pios_flight_config.h", "pios__flight__config_8h.html", "pios__flight__config_8h" ],
-    [ "pios_flyingpio.h", "pios__flyingpio_8h.html", "pios__flyingpio_8h" ],
     [ "pios_flyingpio_priv.h", "pios__flyingpio__priv_8h.html", null ],
     [ "pios_fskdac.h", "pios__fskdac_8h.html", "pios__fskdac_8h" ],
     [ "pios_hal.h", "pios__hal_8h.html", "pios__hal_8h" ],

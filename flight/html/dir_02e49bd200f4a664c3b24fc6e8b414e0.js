@@ -6,6 +6,7 @@ var dir_02e49bd200f4a664c3b24fc6e8b414e0 =
     [ "pios_fileout_priv.h", "pios__fileout__priv_8h.html", "pios__fileout__priv_8h" ],
     [ "pios_flash_posix_priv.h", "pios__flash__posix__priv_8h.html", "pios__flash__posix__priv_8h" ],
     [ "pios_flightgear.h", "pios__flightgear_8h.html", "pios__flightgear_8h" ],
+    [ "pios_flyingpio.h", "pios__flyingpio_8h.html", "pios__flyingpio_8h" ],
     [ "pios_i2c_priv.h", "posix_2inc_2pios__i2c__priv_8h.html", "posix_2inc_2pios__i2c__priv_8h" ],
     [ "pios_initcall.h", "posix_2inc_2pios__initcall_8h.html", "posix_2inc_2pios__initcall_8h" ],
     [ "pios_irq.h", "posix_2inc_2pios__irq_8h.html", "posix_2inc_2pios__irq_8h" ],

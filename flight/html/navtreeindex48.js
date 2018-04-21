@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"group___s_p_r_f3_e.html#gafb8ec40127fee7c2c398e9e2ec096a71":[2,5,0,105],
+"group___s_p_r_f3_e.html#gafb8ec40127fee7c2c398e9e2ec096a71":[2,6,17,105],
 "group___s_p_r_f3_e.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[2,6,17,224],
 "group___s_p_r_f3_e.html#gafbc6816a3f67d49dc16b726bfbaf75a3":[2,5,0,224],
 "group___s_p_r_f3_e.html#gafc809d2cdef7438cdb9abda6ea55f372":[2,5,0,12],
@@ -28,8 +30,8 @@ var NAVTREEINDEX48 =
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,14,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,5,15,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,0,0,2,2],
-"group___s_t_m32_f0xx___system___private___defines.html":[2,6,3,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,6,0,2,2],
+"group___s_t_m32_f0xx___system___private___defines.html":[2,6,3,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,7,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,8,0,2,2],
 "group___s_t_m32_f0xx___system___private___defines.html":[2,6,9,0,2,2],
@@ -220,13 +222,13 @@ var NAVTREEINDEX48 =
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,10,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,11,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,12,0,2,3],
-"group___s_t_m32_f0xx___system___private___macros.html":[2,6,6,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,13,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,14,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,5,15,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,0,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,3,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,7,0,2,3],
+"group___s_t_m32_f0xx___system___private___macros.html":[2,6,6,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,8,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,9,0,2,3],
 "group___s_t_m32_f0xx___system___private___macros.html":[2,6,10,0,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,9,0,2,1],
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,10,0,2,1],
 "group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,11,0,2,1],
-"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,12,0,2,1],
-"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,13,0,2,1],
-"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,14,0,2,1]
+"group___s_t_m32_f0xx___system___private___types_definitions.html":[2,5,12,0,2,1]
 };

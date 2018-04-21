@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"led__pwm_8c_source.html":[5,0,0,5,1,0,3],
+"led__pwm_8h.html":[5,0,0,5,1,0,4],
 "led__pwm_8h.html#ga316161ec9e0698bb42f258f84ba91236":[5,0,0,5,1,0,4,0],
 "led__pwm_8h.html#ga3f824c1ee5eb9b7f632c2a371abb1407":[5,0,0,5,1,0,4,2],
 "led__pwm_8h.html#gaa3e648497eec1e79a9ebda5f44eedb5e":[5,0,0,5,1,0,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "lux_2fw_2pios__board_8c.html#gafb354658d0ba22815d8632d97c062c0b":[5,0,0,5,8,2,0,5],
 "lux_2fw_2pios__board_8c.html#gafff91b6d9bd153dbcd8222ea2d4f3c52":[5,0,0,5,8,2,0,3],
 "lux_2fw_2pios__board_8c_source.html":[5,0,0,5,8,2,0],
-"manualcontrol_8c.html":[5,0,0,3,16,3],
-"manualcontrol_8c.html#a33b63bf1972b3dad943ab7e31454959f":[5,0,0,3,16,3,0],
-"manualcontrol_8c.html#ga4e8e7d6fdd1f5c6f8a0f341e4b61f025":[5,0,0,3,16,3,3]
+"manualcontrol_8c.html":[5,0,0,3,16,3]
 };

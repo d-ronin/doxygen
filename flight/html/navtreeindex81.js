@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"pios__bmm150__priv_8h_source.html":[5,0,0,4,1,9],
+"pios__bmp280_8c.html":[5,0,0,4,0,4],
 "pios__bmp280_8c_source.html":[5,0,0,4,0,4],
 "pios__bmp280_8h.html":[5,0,0,4,1,10],
 "pios__bmp280_8h_source.html":[5,0,0,4,1,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX81 =
 "pios__crc_8h.html#ga26ddbe84d2b3c7c295d740bed0a7bc08":[5,0,0,4,1,21,2],
 "pios__crc_8h.html#ga377c7e542bd4d088e213ca5376afaf9b":[5,0,0,4,1,21,4],
 "pios__crc_8h.html#ga3ee1918a6a3be58dc0554a7c99529f7b":[5,0,0,4,1,21,3],
-"pios__crc_8h.html#ga641f0d2880fbc0d860af0483b46bc77b":[5,0,0,4,1,21,7],
-"pios__crc_8h.html#ga76c5afc1db85ddf9511c4d993714d094":[5,0,0,4,1,21,6],
-"pios__crc_8h.html#ga7a3781ede0c0bbd4c15f6513597e09f8":[5,0,0,4,1,21,5]
+"pios__crc_8h.html#ga641f0d2880fbc0d860af0483b46bc77b":[5,0,0,4,1,21,7]
 };
