@@ -84,7 +84,7 @@ var searchData=
   ['reserved',['reserved',['../structloadable__extension.html#a6d599bfcf04c2aea8075e2c77fe4e7f7',1,'loadable_extension::reserved()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa6136a0872216f91100b42ea04333af70',1,'Reserved():&#160;common.h']]],
   ['reserved1',['reserved1',['../struct_u_b_x___n_a_v___s_o_l.html#aa1df4884b23e42bf16bc237341d5001c',1,'UBX_NAV_SOL']]],
   ['reserved2',['reserved2',['../struct_u_b_x___n_a_v___s_o_l.html#a2367f145076ebc428ec4ef901cdda367',1,'UBX_NAV_SOL::reserved2()'],['../struct_u_b_x___n_a_v___s_v_i_n_f_o.html#a2c5c4d3b1882220da507ddacbe43159b',1,'UBX_NAV_SVINFO::reserved2()']]],
-  ['reset',['reset',['../structbl__messages.html#a95bb7ce4dcabdcbf423dfeb41f91d807',1,'bl_messages::reset()'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa92793663441ced378f4676b8a6524385',1,'Reset():&#160;common.h'],['../bl__messages_8h.html#a6f86af865b628b71939d86976b12c869',1,'reset():&#160;bl_messages.h']]],
+  ['reset',['reset',['../structbl__messages.html#a95bb7ce4dcabdcbf423dfeb41f91d807',1,'bl_messages::reset()'],['../bl__messages_8h.html#a6f86af865b628b71939d86976b12c869',1,'reset():&#160;bl_messages.h'],['../group___common_f1.html#gga882a151e21837eb51e9459f7c213918fa92793663441ced378f4676b8a6524385',1,'Reset():&#160;common.h']]],
   ['reset_5fcount',['reset_count',['../group___firmware_i_a_p_module.html#ga7e8f2a34c998c86308f69623a2836286',1,'firmwareiap.c']]],
   ['reset_5fdelay_5fms',['RESET_DELAY_MS',['../group___firmware_i_a_p_module.html#ga327cb8c305882a51e4a7566ac3b2e773',1,'firmwareiap.c']]],
   ['reset_5freceiver_5ftimer',['reset_receiver_timer',['../group___control.html#gae7668231582cbe152c919d7523277376',1,'transmitter_control.c']]],

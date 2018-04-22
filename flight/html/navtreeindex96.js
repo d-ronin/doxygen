@@ -1,5 +1,9 @@
 var NAVTREEINDEX96 =
 {
+"struct_u_a_v_talk_connection_data.html#ac81dea7c4ec7ecc0fb400374796e4caf":[2,2,0,9,9],
+"struct_u_a_v_talk_connection_data.html#aced0920927be4acbed96623c736b6f39":[2,2,0,9,0],
+"struct_u_a_v_talk_input_processor.html":[2,2,0,8],
+"struct_u_a_v_talk_input_processor.html#a02e62fc516bd524be74fd36898116d52":[2,2,0,8,5],
 "struct_u_a_v_talk_input_processor.html#a21adf6a8fc9bfc307b883a7b8ff412d1":[2,2,0,8,6],
 "struct_u_a_v_talk_input_processor.html#a39d9853a0ea6695927ffe0930225cfbe":[2,2,0,8,8],
 "struct_u_a_v_talk_input_processor.html#a478ba62595ad5977cbc9c0897e11ee10":[2,2,0,8,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX96 =
 "structbl__messages.html#ad2fb9a70a6046e9121fc9b24e5ea81c1":[2,6,1,0,1],
 "structbl__messages.html#ada5c09027ee9d5a63a231dcbb5bbc8a5":[2,6,1,0,20],
 "structbl__messages.html#ae01591c1d800f4fbb8e842c10f8d18f4":[2,6,1,0,32],
-"structbl__messages.html#ae7689be481fd66d39dba79fa2aa5886d":[2,6,1,0,5],
-"structbl__messages.html#ae7d52910bdf2435742a962a4f28fac75":[2,6,1,0,14],
-"structbl__messages.html#ae852393821472eb65957950691843a96":[2,6,1,0,37],
-"structbl__messages.html#aef1ca30462970538fac7363db02bb55e":[2,6,1,0,8],
-"structbl__messages.html#af8699ac99df299374857c7305530e4df":[2,6,1,0,33]
+"structbl__messages.html#ae7689be481fd66d39dba79fa2aa5886d":[2,6,1,0,5]
 };

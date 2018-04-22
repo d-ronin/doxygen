@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">73c52d5</span>
+   &#160;<span id="projectnumber">5035a2e</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('pios__flash_8c_source.html','');});
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">if</span> (!pios_flash_partition_get_chip_extents(partition,</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                                &amp;chip_start_offset,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                                                &amp;chip_end_offset))</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#ga4d4d9cf526bca6438e5244a07e41469c">PIOS_Abort</a>();</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(partition-&gt;<a class="code" href="group___p_i_o_s___f_l_a_s_h.html#ga8006a52a9ea3070781bbdc09eb64db58">chip_offset</a> == chip_start_offset);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(partition-&gt;<a class="code" href="group___p_i_o_s___f_l_a_s_h.html#gab0d9d7639c42a8911c2eb90048ee686a">size</a> == (chip_end_offset - chip_start_offset + 1));</div>
@@ -568,6 +568,7 @@ $(document).ready(function(){initNavTree('pios__flash_8c_source.html','');});
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga402f673d2837c885dee54a2898cccb29"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga402f673d2837c885dee54a2898cccb29">pios_flash_driver::end_transaction</a></div><div class="ttdeci">int32_t(* end_transaction)(uintptr_t chip_id)</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00037">pios_flash_priv.h:37</a></div></div>
 <div class="ttc" id="msp__messages_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="msp__messages_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdef"><b>Definition:</b> <a href="msp__messages_8h_source.html#l00097">msp_messages.h:97</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga53e2b427af23650c06c526ca5ad5ca25"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga53e2b427af23650c06c526ca5ad5ca25">pios_flash_partition::last_sector</a></div><div class="ttdeci">uint16_t last_sector</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00086">pios_flash_priv.h:86</a></div></div>
+<div class="ttc" id="group___p_i_o_s___d_e_b_u_g_html_ga4d4d9cf526bca6438e5244a07e41469c"><div class="ttname"><a href="group___p_i_o_s___d_e_b_u_g.html#ga4d4d9cf526bca6438e5244a07e41469c">PIOS_Abort</a></div><div class="ttdeci">#define PIOS_Abort()</div><div class="ttdef"><b>Definition:</b> <a href="inc_2pios__debug_8h_source.html#l00055">pios_debug.h:55</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga8d12d95c9902d85f21d486b6af80bbd2"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga8d12d95c9902d85f21d486b6af80bbd2">PIOS_FLASH_erase_range</a></div><div class="ttdeci">int32_t PIOS_FLASH_erase_range(uintptr_t partition_id, uint32_t start_offset, uint32_t size)</div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga54f595478ecc371d8fb796448cde0137"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga54f595478ecc371d8fb796448cde0137">pios_flash_sector_range::last_sector</a></div><div class="ttdeci">uint16_t last_sector</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00050">pios_flash_priv.h:50</a></div></div>
 <div class="ttc" id="group___p_i_o_s___f_l_a_s_h_html_ga68f210e44c44a3709111eeda2c107f26"><div class="ttname"><a href="group___p_i_o_s___f_l_a_s_h.html#ga68f210e44c44a3709111eeda2c107f26">pios_flash_sector_range::sector_size</a></div><div class="ttdeci">uint32_t sector_size</div><div class="ttdef"><b>Definition:</b> <a href="pios__flash__priv_8h_source.html#l00051">pios_flash_priv.h:51</a></div></div>

@@ -1,5 +1,6 @@
 var inc_2pios__debug_8h =
 [
+    [ "PIOS_Abort", "inc_2pios__debug_8h.html#ga4d4d9cf526bca6438e5244a07e41469c", null ],
     [ "PIOS_Assert", "inc_2pios__debug_8h.html#gaec9900a29855911a9cfbfdd1cf7501b6", null ],
     [ "PIOS_DEBUG_Assert", "inc_2pios__debug_8h.html#ga5203189b7f78a32deccfb4c03a759063", null ],
     [ "PIOS_DEBUG_Init", "inc_2pios__debug_8h.html#ga798f6007adad3e5de566d49c17695899", null ],

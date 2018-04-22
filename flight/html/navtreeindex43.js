@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"group___quanton.html#ga645df4566a90656d8b02ee4e63a54dfe":[2,6,12,84],
+"group___quanton.html#ga6ac74d56f67f74f449b252c6ba6bbd61":[2,5,13,62],
 "group___quanton.html#ga6ac74d56f67f74f449b252c6ba6bbd61":[2,6,12,62],
 "group___quanton.html#ga6b142cb12de118cee37c8b497d3a1909":[2,5,13,108],
 "group___quanton.html#ga6b142cb12de118cee37c8b497d3a1909":[2,6,12,108],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "group___revo_mini.html#ga22b733cbda9a4d21a53651971aa06372":[2,6,13,111],
 "group___revo_mini.html#ga22b733cbda9a4d21a53651971aa06372":[2,5,1,111],
 "group___revo_mini.html#ga22d3ce19419dc8bbc47f94c065f3271c":[2,6,13,231],
-"group___revo_mini.html#ga22d3ce19419dc8bbc47f94c065f3271c":[2,5,1,231],
-"group___revo_mini.html#ga245666dd976970e45363b17f9e55d5bf":[2,6,13,80],
-"group___revo_mini.html#ga245666dd976970e45363b17f9e55d5bf":[2,5,1,80]
+"group___revo_mini.html#ga22d3ce19419dc8bbc47f94c065f3271c":[2,5,1,231]
 };

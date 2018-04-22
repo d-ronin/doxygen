@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="icon_128x128.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dRonin
-   &#160;<span id="projectnumber">73c52d5</span>
+   &#160;<span id="projectnumber">5035a2e</span>
    </div>
    <div id="projectbrief">dRonin&nbsp;firmware</div>
   </td>
@@ -128,10 +128,14 @@ Macros</h2></td></tr>
 <tr class="separator:ga5203189b7f78a32deccfb4c03a759063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec9900a29855911a9cfbfdd1cf7501b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(test)&#160;&#160;&#160;do { <a class="el" href="group___u_a_v_o_fr_s_k_y_sensor_hub_bridge.html#ga611a2042a4f6bfb1a9351fd7945e69f8">if</a> (!(test)) <a class="el" href="group___p_i_o_s___d_e_b_u_g.html#ga0b99ad95012ef56f8f490902384f07e3">PIOS_DEBUG_Panic</a>(NULL); } while (0)</td></tr>
 <tr class="separator:gaec9900a29855911a9cfbfdd1cf7501b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d4d9cf526bca6438e5244a07e41469c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_e_b_u_g.html#ga4d4d9cf526bca6438e5244a07e41469c">PIOS_Abort</a>()&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0)</td></tr>
+<tr class="separator:ga4d4d9cf526bca6438e5244a07e41469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec9900a29855911a9cfbfdd1cf7501b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(test)&#160;&#160;&#160;assert(test)</td></tr>
 <tr class="separator:gaec9900a29855911a9cfbfdd1cf7501b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5203189b7f78a32deccfb4c03a759063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_e_b_u_g.html#ga5203189b7f78a32deccfb4c03a759063">PIOS_DEBUG_Assert</a>(test)</td></tr>
 <tr class="separator:ga5203189b7f78a32deccfb4c03a759063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d4d9cf526bca6438e5244a07e41469c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o_s___d_e_b_u_g.html#ga4d4d9cf526bca6438e5244a07e41469c">PIOS_Abort</a>()&#160;&#160;&#160;abort()</td></tr>
+<tr class="separator:ga4d4d9cf526bca6438e5244a07e41469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -164,6 +168,40 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Debugging functionality. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga4d4d9cf526bca6438e5244a07e41469c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_Abort</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;abort()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="posix_2inc_2pios__debug_8h_source.html#l00053">53</a> of file <a class="el" href="posix_2inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d4d9cf526bca6438e5244a07e41469c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIOS_Abort</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group___p_i_o_s___d_e_b_u_g.html#gaec9900a29855911a9cfbfdd1cf7501b6">PIOS_Assert</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="inc_2pios__debug_8h_source.html#l00055">55</a> of file <a class="el" href="inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaec9900a29855911a9cfbfdd1cf7501b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +216,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2inc_2pios__debug_8h_source.html#l00044">44</a> of file <a class="el" href="posix_2inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
+<p>Definition at line <a class="el" href="posix_2inc_2pios__debug_8h_source.html#l00045">45</a> of file <a class="el" href="posix_2inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="posix_2inc_2pios__debug_8h_source.html#l00049">49</a> of file <a class="el" href="posix_2inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
+<p>Definition at line <a class="el" href="posix_2inc_2pios__debug_8h_source.html#l00050">50</a> of file <a class="el" href="posix_2inc_2pios__debug_8h_source.html">pios_debug.h</a>.</p>
 
 </div>
 </div>
@@ -237,25 +275,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gabbc10ed2b3c2b4a793433668661c37c1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PIOS_DEBUG_Init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initialise Debug-features </p>
-
-<p>Definition at line <a class="el" href="posix_2pios__debug_8c_source.html#l00041">41</a> of file <a class="el" href="posix_2pios__debug_8c_source.html">pios_debug.c</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga798f6007adad3e5de566d49c17695899"></a>
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +301,25 @@ Variables</h2></td></tr>
 <p>Initialise Debug-features </p>
 
 <p>Definition at line <a class="el" href="_s_t_m32_2pios__debug_8c_source.html#l00044">44</a> of file <a class="el" href="_s_t_m32_2pios__debug_8c_source.html">pios_debug.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabbc10ed2b3c2b4a793433668661c37c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PIOS_DEBUG_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise Debug-features </p>
+
+<p>Definition at line <a class="el" href="posix_2pios__debug_8c_source.html#l00041">41</a> of file <a class="el" href="posix_2pios__debug_8c_source.html">pios_debug.c</a>.</p>
 
 </div>
 </div>

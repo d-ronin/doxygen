@@ -1,5 +1,6 @@
 var posix_2inc_2pios__debug_8h =
 [
+    [ "PIOS_Abort", "posix_2inc_2pios__debug_8h.html#ga4d4d9cf526bca6438e5244a07e41469c", null ],
     [ "PIOS_Assert", "posix_2inc_2pios__debug_8h.html#gaec9900a29855911a9cfbfdd1cf7501b6", null ],
     [ "PIOS_DEBUG_Assert", "posix_2inc_2pios__debug_8h.html#ga5203189b7f78a32deccfb4c03a759063", null ],
     [ "PIOS_DEBUG_Init", "posix_2inc_2pios__debug_8h.html#gabbc10ed2b3c2b4a793433668661c37c1", null ],

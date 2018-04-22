@@ -1,5 +1,9 @@
 var NAVTREEINDEX95 =
 {
+"stabilization_8c.html#ga3782701fb17bad618b59523be488b7ac":[5,0,0,3,21,4,36],
+"stabilization_8c.html#ga472bec063ff4dd41b0b24883a9cb0488":[5,0,0,3,21,4,29],
+"stabilization_8c.html#ga50858e76836ece0d48f2f319744d5c7c":[5,0,0,3,21,4,2],
+"stabilization_8c.html#ga56b8cbab2a7d849f0ecd55aaf958b12f":[5,0,0,3,21,4,30],
 "stabilization_8c.html#ga58a015fd4d36073a9ac7d9c342da93c7":[5,0,0,3,21,4,56],
 "stabilization_8c.html#ga6190a7e200476bf20da7b47ac4107973":[5,0,0,3,21,4,39],
 "stabilization_8c.html#ga623ec78b7909090dbedac4af1d52abb4":[5,0,0,3,21,4,5],
@@ -99,8 +103,8 @@ var NAVTREEINDEX95 =
 "struct____attribute____.html#a2c5106312c60da8340d95ea8f201e8f2":[2,4,36,3,4],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,1,19,7],
 "struct____attribute____.html#a6725d1b44961129705dbb1f209ba7b8d":[2,4,36,3,7],
-"struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,4,36,3,10],
 "struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,1,19,10],
+"struct____attribute____.html#a85a81b55d67790a728b95eee989f17ed":[2,4,36,3,10],
 "struct__msp__pid__item.html":[2,1,2,17],
 "struct__msp__pid__item.html#a779053d5efa4b01b9ff45403ac99adc5":[2,1,2,17,0],
 "struct__msp__pid__item.html#a7ef1a04ff0318e96b1df02410d599e0f":[2,1,2,17,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX95 =
 "struct_u_a_v_talk_connection_data.html#a7fcfd5eef5b464048953ae8a62995142":[2,2,0,9,1],
 "struct_u_a_v_talk_connection_data.html#a87acd60d4ce12fee04c02f3dd25e4a0c":[2,2,0,9,5],
 "struct_u_a_v_talk_connection_data.html#aa032a7b051df7fcc53accec1d7ba602b":[2,2,0,9,4],
-"struct_u_a_v_talk_connection_data.html#ac5889ba31f5862e7e723d6f8727f0cf6":[2,2,0,9,6],
-"struct_u_a_v_talk_connection_data.html#ac81dea7c4ec7ecc0fb400374796e4caf":[2,2,0,9,9],
-"struct_u_a_v_talk_connection_data.html#aced0920927be4acbed96623c736b6f39":[2,2,0,9,0],
-"struct_u_a_v_talk_input_processor.html":[2,2,0,8],
-"struct_u_a_v_talk_input_processor.html#a02e62fc516bd524be74fd36898116d52":[2,2,0,8,5]
+"struct_u_a_v_talk_connection_data.html#ac5889ba31f5862e7e723d6f8727f0cf6":[2,2,0,9,6]
 };

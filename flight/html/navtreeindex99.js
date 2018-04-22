@@ -1,5 +1,9 @@
 var NAVTREEINDEX99 =
 {
+"structmsp__set__misc.html#ac0f754f233eec76fb70f6906d1f0a45b":[2,1,2,23,10],
+"structmsp__set__misc.html#ad70b116e73d1a117bc27516992d9ff1c":[2,1,2,23,1],
+"structmsp__set__motor.html":[2,1,2,6],
+"structmsp__set__motor.html#a5c602c79e9a88915f8704130c14d8c18":[2,1,2,6,0],
 "structmsp__set__pid.html":[2,1,2,19],
 "structmsp__set__pid.html#a17aed73cd9e549410b4acd21a2f003a1":[2,1,2,19,8],
 "structmsp__set__pid.html#a3aad6014cece38c2391c445a121e35de":[2,1,2,19,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX99 =
 "structpios__ppm__cfg.html#af794b04692c8fdb2e06b8a58601c99ce":[2,0,56,3,0],
 "structpios__pwm__cfg.html":[2,0,58,3],
 "structpios__pwm__cfg.html#a7f64d325db8aca0d737d94648b079b36":[2,0,58,3,2],
-"structpios__pwm__cfg.html#acf9d41bfa9ce5ee489fcb27a98605e5c":[2,0,58,3,1],
-"structpios__pwm__cfg.html#af31383785c675e1d43b4e517b1d323ae":[2,0,58,3,0],
-"structpios__px4flow__cfg.html":[2,0,31,2],
-"structpios__px4flow__cfg.html#ab61446cc0c6dee60a6332568cc97018e":[2,0,31,2,0],
-"structpios__px4flow__data.html":[2,0,31,3]
+"structpios__pwm__cfg.html#acf9d41bfa9ce5ee489fcb27a98605e5c":[2,0,58,3,1]
 };

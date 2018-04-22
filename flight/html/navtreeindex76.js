@@ -1,5 +1,8 @@
 var NAVTREEINDEX76 =
 {
+"led__pwm_8c.html#ga3f824c1ee5eb9b7f632c2a371abb1407":[5,0,0,5,1,0,3,3],
+"led__pwm_8c.html#gaa3e648497eec1e79a9ebda5f44eedb5e":[5,0,0,5,1,0,3,1],
+"led__pwm_8c.html#gabebd4b64d3f024e81d276b97661914b3":[5,0,0,5,1,0,3,2],
 "led__pwm_8c_source.html":[5,0,0,5,1,0,3],
 "led__pwm_8h.html":[5,0,0,5,1,0,4],
 "led__pwm_8h.html#ga316161ec9e0698bb42f258f84ba91236":[5,0,0,5,1,0,4,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX76 =
 "lux_2fw_2pios__board_8c.html#ga86167cdf7eaace383bf74d35f23cb49e":[5,0,0,5,8,2,0,4],
 "lux_2fw_2pios__board_8c.html#gab060f441dd600b08386c0ca1b487217a":[5,0,0,5,8,2,0,6],
 "lux_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,5,8,2,0,0],
-"lux_2fw_2pios__board_8c.html#gafb354658d0ba22815d8632d97c062c0b":[5,0,0,5,8,2,0,5],
-"lux_2fw_2pios__board_8c.html#gafff91b6d9bd153dbcd8222ea2d4f3c52":[5,0,0,5,8,2,0,3],
-"lux_2fw_2pios__board_8c_source.html":[5,0,0,5,8,2,0],
-"manualcontrol_8c.html":[5,0,0,3,16,3]
+"lux_2fw_2pios__board_8c.html#gafb354658d0ba22815d8632d97c062c0b":[5,0,0,5,8,2,0,5]
 };

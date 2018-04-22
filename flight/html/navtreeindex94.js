@@ -1,5 +1,9 @@
 var NAVTREEINDEX94 =
 {
+"seppuku_2fw_2pios__board_8c.html#gabda03501745560ca9e546079e20bb392":[5,0,0,5,15,2,0,0],
+"seppuku_2fw_2pios__board_8c.html#gafb354658d0ba22815d8632d97c062c0b":[5,0,0,5,15,2,0,3],
+"seppuku_2fw_2pios__board_8c_source.html":[5,0,0,5,15,2,0],
+"serial__4way_8c.html":[5,0,0,3,32,0,2],
 "serial__4way_8c_source.html":[5,0,0,3,32,0,2],
 "serial__4way_8h.html":[5,0,0,3,32,0,0,0],
 "serial__4way_8h.html#a0644f1121715e03abce3dc3cf6fa3450":[5,0,0,3,32,0,0,0,4],
@@ -150,8 +154,8 @@ var NAVTREEINDEX94 =
 "sparky2_2board-info_2usb__conf_8h.html#ga14cd9811fb5f3a70e2043f4d8ed66e28":[5,0,0,5,17,1,3,11],
 "sparky2_2board-info_2usb__conf_8h.html#ga2877e6e9de0b5b363604bdecf1a60c9e":[5,0,0,5,17,1,3,12],
 "sparky2_2board-info_2usb__conf_8h.html#ga6cdceb8d052ea78e07b2e7423da7dbf1":[5,0,0,5,17,1,3,7],
-"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,10],
+"sparky2_2board-info_2usb__conf_8h.html#ga6f747c70ca4e7bed8767794904c3ee5c":[5,0,0,5,17,1,3,9],
 "sparky2_2board-info_2usb__conf_8h.html#ga76a9fa8f88128d0f1f15ee3854cb57ac":[5,0,0,5,17,1,3,6],
 "sparky2_2board-info_2usb__conf_8h.html#ga8b374c2c4c44e27335ab7bca651371f8":[5,0,0,5,17,1,3,0],
 "sparky2_2board-info_2usb__conf_8h.html#ga8e636a33b83aa2e43f5ea6ffa4f1f713":[5,0,0,5,17,1,3,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX94 =
 "stabilization_8c.html#ga0f43a6de9003f69ea7ebe8878e35aebf":[5,0,0,3,21,4,26],
 "stabilization_8c.html#ga1af047cbbb03e56a0ad3e8fe2b118961":[5,0,0,3,21,4,34],
 "stabilization_8c.html#ga1b7c75ff9222444babfe603f25b91233":[5,0,0,3,21,4,50],
-"stabilization_8c.html#ga31e7b34d02a31718075e75ab2528204e":[5,0,0,3,21,4,51],
-"stabilization_8c.html#ga3782701fb17bad618b59523be488b7ac":[5,0,0,3,21,4,36],
-"stabilization_8c.html#ga472bec063ff4dd41b0b24883a9cb0488":[5,0,0,3,21,4,29],
-"stabilization_8c.html#ga50858e76836ece0d48f2f319744d5c7c":[5,0,0,3,21,4,2],
-"stabilization_8c.html#ga56b8cbab2a7d849f0ecd55aaf958b12f":[5,0,0,3,21,4,30]
+"stabilization_8c.html#ga31e7b34d02a31718075e75ab2528204e":[5,0,0,3,21,4,51]
 };
